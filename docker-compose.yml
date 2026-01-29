@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  jinbeh-staging:
+      build:
+            context: .
+                  dockerfile: Dockerfile
+                      container_name: jinbeh-staging
+                          restart: unless-stopped
+                              ports:
+                                    - "3001:3000"
+                                        environment:
+                                              - NODE_ENV=production
+                                                  networks:
+                                                        - web
+                                                        networks:
+                                                          web:
+                                                              external: true
