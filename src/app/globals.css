@@ -497,3 +497,34 @@ a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ======================================
+   MagicUI Animation Keyframes
+   ====================================== */
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer var(--shimmer-duration, 2.5s) infinite linear;
+}
+
+/* Number Ticker Animation */
+@keyframes ticker-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.animate-ticker {
+  animation: ticker-bounce 0.3s ease-out;
+}
