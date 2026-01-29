@@ -193,13 +193,15 @@ export default function HomePage() {
 
         {/* Hero Section - Full Screen with Image Background */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          {/* Background Image - using local image for faster loading */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "url('/images/photoshoot/hibachi-plate-shrimp.jpg')",
-            }}
+          {/* Background Image - Next.js optimized with priority loading */}
+          <Image
+            src="/images/photoshoot/hibachi-plate-shrimp.jpg"
+            alt="Jinbeh hibachi plate with shrimp, fried rice, and vegetables"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+            quality={85}
           />
 
           {/* Dark Overlay for text contrast */}

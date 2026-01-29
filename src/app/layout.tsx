@@ -112,13 +112,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Fonts - loaded via link tags for reliability */}
+        {/* Theme color for mobile browsers */}
+        <meta name="theme-color" content="#1a1a1a" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+        {/* Google Fonts with display=swap for better LCP */}
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+
+        {/* Preload critical hero image for faster LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/photoshoot/hibachi-plate-shrimp.jpg"
+          type="image/jpeg"
+        />
+
+        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
