@@ -231,15 +231,18 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal delay={200}>
-              <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic drop-shadow-2xl"
-                  style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7), 0 0 40px rgba(0,0,0,0.5)' }}>
+              <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic"
+                  style={{
+                    textShadow: '3px 3px 0px rgba(0,0,0,0.9), 6px 6px 10px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.8)',
+                    WebkitTextStroke: '1px rgba(0,0,0,0.3)'
+                  }}>
                 Dinner and a Show
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delay={300}>
-              <p className="text-xl md:text-2xl text-warm-ivory mb-6 font-light drop-shadow-lg"
-                 style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+              <p className="text-xl md:text-2xl text-warm-ivory mb-6 font-medium"
+                 style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
                 Authentic Japanese Hibachi & Sushi in North Texas
               </p>
             </ScrollReveal>
