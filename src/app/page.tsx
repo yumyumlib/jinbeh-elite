@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import CountUp from "@/components/CountUp";
+import NumberTicker from "@/components/ui/number-ticker";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useState } from "react";
 
@@ -218,17 +218,23 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Trust Signals - Proof on fold */}
+            {/* Trust Signals - Proof on fold with Animated Numbers */}
             <ScrollReveal delay={100}>
               <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-6 text-white/90 text-sm">
                 <span className="flex items-center gap-2 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
                   <svg className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <span className="font-medium">4.5+ Stars on Google</span>
+                  <span className="font-medium">
+                    <NumberTicker value={4.5} decimalPlaces={1} className="font-bold" />+ Stars on Google
+                  </span>
                 </span>
-                <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">1000+ 5-Star Reviews</span>
-                <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">37+ Years of Excellence</span>
+                <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <NumberTicker value={1000} className="font-bold" />+ 5-Star Reviews
+                </span>
+                <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <NumberTicker value={37} className="font-bold" />+ Years of Excellence
+                </span>
               </div>
             </ScrollReveal>
 
@@ -272,7 +278,7 @@ export default function HomePage() {
                     <div className="flex flex-col gap-3">
                       <Link
                         href="/frisco#reserve"
-                        className="inline-flex items-center justify-center gap-2 bg-accent-red hover:bg-accent-red-hover text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red hover:bg-accent-red-hover text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -304,7 +310,7 @@ export default function HomePage() {
                     <div className="flex flex-col gap-3">
                       <Link
                         href="/lewisville#reserve"
-                        className="inline-flex items-center justify-center gap-2 bg-accent-red hover:bg-accent-red-hover text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red hover:bg-accent-red-hover text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -409,14 +415,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Stats Section with Animated CountUp */}
+        {/* Stats Section with Animated NumberTicker */}
         <section className="py-16 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
               <ScrollReveal delay={0}>
                 <div>
                   <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
-                    <CountUp end={37} suffix="+" />
+                    <NumberTicker value={37} suffix="+" delay={0.2} />
                   </div>
                   <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
                     Years Serving DFW
@@ -426,7 +432,7 @@ export default function HomePage() {
               <ScrollReveal delay={100}>
                 <div>
                   <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
-                    <CountUp end={1000} suffix="+" />
+                    <NumberTicker value={1000} suffix="+" delay={0.3} />
                   </div>
                   <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
                     5-Star Reviews
@@ -436,7 +442,7 @@ export default function HomePage() {
               <ScrollReveal delay={200}>
                 <div>
                   <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
-                    <CountUp end={68000} suffix="+" />
+                    <NumberTicker value={68000} suffix="+" delay={0.4} />
                   </div>
                   <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
                     Meals Served Annually
@@ -446,7 +452,7 @@ export default function HomePage() {
               <ScrollReveal delay={300}>
                 <div>
                   <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
-                    <CountUp end={2} />
+                    <NumberTicker value={2} delay={0.5} />
                   </div>
                   <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
                     Convenient Locations
@@ -644,7 +650,7 @@ export default function HomePage() {
                   <div className="flex flex-col gap-3">
                     <Link
                       href="/frisco#reserve"
-                      className="inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-lg font-semibold transition-all shadow-lg"
+                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -670,7 +676,7 @@ export default function HomePage() {
                   <div className="flex flex-col gap-3">
                     <Link
                       href="/lewisville#reserve"
-                      className="inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-lg font-semibold transition-all shadow-lg"
+                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
