@@ -74,17 +74,71 @@ const restaurantSchema = {
   hasMenu: location.menus.lunch,
 };
 
+// FAQ Schema for rich snippets
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are Jinbeh Lewisville's hours?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Lewisville is open for lunch Monday-Friday 11am-2pm, Saturday-Sunday 11:30am-2:30pm. Dinner hours are Sunday-Thursday 5pm-9pm, and Friday-Saturday 5pm-10pm.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Lewisville take reservations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! We recommend reservations, especially for hibachi tables on weekends. You can call us at (214) 618-9798 to reserve your table.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Jinbeh Lewisville located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Lewisville is located at 2440 S Stemmons Fwy #A, Lewisville, TX 75067, with easy access from I-35E near Vista Ridge Mall.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Lewisville have hibachi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! Our Lewisville location features authentic teppanyaki hibachi dining with skilled chefs who cook your meal tableside with impressive showmanship.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Jinbeh Lewisville good for families?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely! Jinbeh Lewisville is perfect for families. Kids love watching the hibachi chefs perform, and we have options for all ages. It's a great spot for family celebrations.",
+      },
+    },
+  ],
+};
+
 export default function LewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
 
       <main className="min-h-screen">
-        {/* JSON-LD Schema */}
+        {/* JSON-LD Schemas */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(restaurantSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
           }}
         />
 
@@ -363,25 +417,25 @@ export default function LewisvillePage() {
                 <span className="font-medium text-charcoal">View Menu</span>
               </Link>
               <Link
-                href="/lewisville/happy-hour"
+                href="/happy-hour"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🍹</span>
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
               <Link
-                href="/lewisville/catering"
+                href="/catering"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🎊</span>
                 <span className="font-medium text-charcoal">Catering</span>
               </Link>
               <Link
-                href="/lewisville/private-dining"
+                href="/celebrations"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🏮</span>
-                <span className="font-medium text-charcoal">Private Dining</span>
+                <span className="font-medium text-charcoal">Celebrations</span>
               </Link>
             </div>
           </div>

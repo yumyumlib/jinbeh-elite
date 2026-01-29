@@ -74,17 +74,71 @@ const restaurantSchema = {
   hasMenu: location.menus.dinner,
 };
 
+// FAQ Schema for rich snippets
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are Jinbeh Frisco's hours?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Frisco is open for lunch Monday-Friday 11am-2pm, Saturday-Sunday 11:30am-2:30pm. Dinner hours are Sunday-Thursday 5pm-9pm, and Friday-Saturday 5pm-10pm.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Frisco take reservations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! We highly recommend reservations, especially for dinner and weekends. You can reserve online through OpenTable or call us at (214) 618-9888.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Jinbeh Frisco located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Frisco is located at 2693 Preston Rd Suite 1040, Frisco, TX 75034, near Stonebriar Centre Mall with ample parking.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Frisco have hibachi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! Jinbeh Frisco features exciting teppanyaki hibachi dining where skilled chefs prepare your meal tableside with impressive knife skills and the famous onion volcano.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Jinbeh good for birthday celebrations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely! Jinbeh Frisco is perfect for birthday celebrations. Our hibachi experience is especially popular for birthdays with tableside entertainment that makes any celebration memorable.",
+      },
+    },
+  ],
+};
+
 export default function FriscoPage() {
   return (
     <>
       <Header location="frisco" />
 
       <main className="min-h-screen">
-        {/* JSON-LD Schema */}
+        {/* JSON-LD Schemas */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(restaurantSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
           }}
         />
 
@@ -372,25 +426,25 @@ export default function FriscoPage() {
                 <span className="font-medium text-charcoal">View Menu</span>
               </Link>
               <Link
-                href="/frisco/happy-hour"
+                href="/happy-hour"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🍹</span>
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
               <Link
-                href="/frisco/catering"
+                href="/catering"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🎊</span>
                 <span className="font-medium text-charcoal">Catering</span>
               </Link>
               <Link
-                href="/frisco/private-dining"
+                href="/celebrations"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🏮</span>
-                <span className="font-medium text-charcoal">Private Dining</span>
+                <span className="font-medium text-charcoal">Celebrations</span>
               </Link>
             </div>
           </div>

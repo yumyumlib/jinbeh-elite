@@ -61,7 +61,7 @@ export default function Footer() {
                 aria-label="Yelp"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326zM12.4 8.32V3.073A1.073 1.073 0 0 0 11.1 2.05a9.318 9.318 0 0 0-3.873 2.108 1.072 1.072 0 0 0 .14 1.694l4.074 2.948c.82.593 1.96-.131 1.96-1.18l-.001-.3zM5.78 9.61a1.073 1.073 0 0 0 .34 1.613l4.4 2.428c.88.487 1.86-.392 1.476-1.326L9.937 7.47a1.072 1.072 0 0 0-1.6-.453 9.196 9.196 0 0 0-2.557 2.593zm.676 6.747a9.265 9.265 0 0 0 1.593 3.728 1.073 1.073 0 0 0 1.643.104l3.386-3.554c.673-.707.147-1.857-.795-1.736l-4.979.663a1.073 1.073 0 0 0-.848 1.295z"/>
+                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326zM12.4 8.32V3.073A1.073 1.073 0 0 0 11.1 2.05a9.318 9.318 0 0 0-3.873 2.108 1.072 1.072 0 0 0 .14 1.694l4.074 2.948c.82.593 1.96-.131 1.96-1.18l-.001-.3zM5.78 9.61a1.073 1.073 0 0 0 .34 1.613l4.4 2.428c.88.487 1.86-.392 1.476-1.326L9.937 7.47a1.072 1.072 0 0 0-1.6-.453 9.196 9.196 0 0 0-2.557 2.593zm.676 6.747a9.265 9.265 0 0 0 1.593 3.728 1.073 1.073 0 0 0 1.643.104l3.386-3.554c.673-.707.147-1.857-.795-1.736l-4.979.663a1.073 1.073 0 0 0-.848 1.295z" />
                 </svg>
               </a>
             </div>
@@ -78,13 +78,17 @@ export default function Footer() {
               <p>
                 {frisco.address.city}, {frisco.address.state} {frisco.address.zip}
               </p>
-              <a
-                href={`tel:${frisco.phoneClean}`}
-                className="block text-accent-red hover:text-soft-gold transition-colors mt-3"
-              >
-                {frisco.phone}
-              </a>
             </address>
+            {/* Prominent Call Button */}
+            <a
+              href={`tel:${frisco.phoneClean}`}
+              className="inline-flex items-center gap-2 mt-4 bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              {frisco.phone}
+            </a>
             <div className="mt-4 space-y-1 text-sm text-warm-ivory/60">
               <p>Lunch: Mon-Fri {frisco.hours.lunch.weekday.display}</p>
               <p>Weekend: {frisco.hours.lunch.weekend.display}</p>
@@ -93,7 +97,7 @@ export default function Footer() {
             </div>
             <Link
               href="/frisco"
-              className="inline-block mt-4 text-accent-red hover:text-soft-gold transition-colors"
+              className="inline-block mt-4 text-soft-gold hover:text-warm-ivory transition-colors"
             >
               View Frisco Page →
             </Link>
@@ -111,13 +115,17 @@ export default function Footer() {
                 {lewisville.address.city}, {lewisville.address.state}{" "}
                 {lewisville.address.zip}
               </p>
-              <a
-                href={`tel:${lewisville.phoneClean}`}
-                className="block text-accent-red hover:text-soft-gold transition-colors mt-3"
-              >
-                {lewisville.phone}
-              </a>
             </address>
+            {/* Prominent Call Button */}
+            <a
+              href={`tel:${lewisville.phoneClean}`}
+              className="inline-flex items-center gap-2 mt-4 bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              {lewisville.phone}
+            </a>
             <div className="mt-4 space-y-1 text-sm text-warm-ivory/60">
               <p>Lunch: Mon-Fri {lewisville.hours.lunch.weekday.display}</p>
               <p>Weekend: {lewisville.hours.lunch.weekend.display}</p>
@@ -126,7 +134,7 @@ export default function Footer() {
             </div>
             <Link
               href="/lewisville"
-              className="inline-block mt-4 text-accent-red hover:text-soft-gold transition-colors"
+              className="inline-block mt-4 text-soft-gold hover:text-warm-ivory transition-colors"
             >
               View Lewisville Page →
             </Link>
@@ -139,7 +147,7 @@ export default function Footer() {
             </h3>
             <nav className="space-y-3">
               <Link
-                href="/frisco/menu"
+                href="/menu"
                 className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
               >
                 View Menu
@@ -151,19 +159,13 @@ export default function Footer() {
                 Celebrations & Events
               </Link>
               <Link
-                href="/frisco/catering"
+                href="/catering"
                 className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
               >
                 Catering Services
               </Link>
               <Link
-                href="/frisco/private-dining"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                Private Dining
-              </Link>
-              <Link
-                href="/frisco/happy-hour"
+                href="/happy-hour"
                 className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
               >
                 Happy Hour

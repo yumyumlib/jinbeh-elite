@@ -1,0 +1,74 @@
+{
+  "categories": [
+    {
+      "id": "best-of-guides",
+      "name": "Best Of Guides",
+      "slug": "best-of",
+      "description": "Discover the best hibachi, sushi, and dining experiences across DFW",
+      "icon": "trophy",
+      "articles": [
+        "best-hibachi-dallas",
+        "best-sushi-frisco",
+        "best-happy-hour-frisco",
+        "best-japanese-lewisville",
+        "best-seafood-dallas"
+      ]
+    },
+    {
+      "id": "celebrations",
+      "name": "Celebrations & Events",
+      "slug": "celebrations",
+      "description": "Plan the perfect birthday, anniversary, or special occasion",
+      "icon": "cake",
+      "articles": [
+        "hibachi-birthday-party-ideas",
+        "anniversary-dinner-ideas",
+        "bachelorette-party-venues",
+        "group-dining-guide"
+      ]
+    },
+    {
+      "id": "japanese-cuisine",
+      "name": "Japanese Cuisine",
+      "slug": "cuisine",
+      "description": "Learn about sushi, hibachi, and authentic Japanese flavors",
+      "icon": "utensils",
+      "articles": [
+        "types-of-sushi-rolls",
+        "what-is-hibachi",
+        "sushi-for-beginners",
+        "japanese-drinks",
+        "omakase-experience"
+      ]
+    },
+    {
+      "id": "local-guides",
+      "name": "Local Guides",
+      "slug": "local",
+      "description": "Explore dining and activities in Frisco, Lewisville, and DFW",
+      "icon": "map-pin",
+      "articles": [
+        "restaurants-near-stonebriar",
+        "things-to-do-frisco",
+        "dining-lewisville"
+      ]
+    },
+    {
+      "id": "health-wellness",
+      "name": "Health & Wellness",
+      "slug": "health",
+      "description": "Nutrition guides and healthy dining options",
+      "icon": "heart",
+      "articles": [
+        "hibachi-calories-nutrition",
+        "healthy-sushi-options"
+      ]
+    }
+  ],
+  "featuredArticles": [
+    "best-hibachi-dallas",
+    "hibachi-birthday-party-ideas",
+    "types-of-sushi-rolls",
+    "best-sushi-frisco"
+  ]
+}
