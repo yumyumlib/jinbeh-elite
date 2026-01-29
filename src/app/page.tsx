@@ -193,12 +193,12 @@ export default function HomePage() {
 
         {/* Hero Section - Full Screen with Image Background */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          {/* Background Image */}
+          {/* Background Image - using local image for faster loading */}
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://jinbeh.com/wp-content/uploads/2023/01/sushi-background.jpg')",
+                "url('/images/photoshoot/hibachi-plate-shrimp.jpg')",
             }}
           />
 
