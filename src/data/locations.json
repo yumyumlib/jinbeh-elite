@@ -1,0 +1,132 @@
+{
+  "locations": {
+    "frisco": {
+      "id": "frisco",
+      "name": "Jinbeh Frisco",
+      "displayName": "Frisco",
+      "fullName": "Jinbeh Japanese Restaurant - Frisco",
+      "address": {
+        "street": "2693 Preston Rd",
+        "suite": "Suite 1040",
+        "city": "Frisco",
+        "state": "TX",
+        "zip": "75034",
+        "formatted": "2693 Preston Rd Suite 1040, Frisco, TX 75034"
+      },
+      "geo": {
+        "latitude": 33.101485,
+        "longitude": -96.806657
+      },
+      "phone": "(214) 619-1200",
+      "phoneClean": "2146191200",
+      "fax": null,
+      "email": "frisco@jinbeh.com",
+      "neighborhood": {
+        "description": "Near Stonebriar Centre, minutes from Legacy West",
+        "landmarks": ["Stonebriar Centre Mall", "Legacy West", "Highway 121"],
+        "parking": "Ample parking in the shopping center lot"
+      },
+      "hours": {
+        "lunch": {
+          "weekday": { "open": "11:00", "close": "14:00", "display": "11:00 am – 2:00 pm" },
+          "weekend": { "open": "11:30", "close": "14:30", "display": "11:30 am – 2:30 pm" }
+        },
+        "dinner": {
+          "sunThurs": { "open": "17:00", "close": "21:00", "display": "5:00 pm – 9:00 pm" },
+          "friSat": { "open": "17:00", "close": "22:00", "display": "5:00 pm – 10:00 pm" }
+        }
+      },
+      "orderOnline": {
+        "grubhub": "https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-frisco-2693-preston-rd-frisco/2134962",
+        "ubereats": "https://www.ubereats.com/store/jinbeh-frisco/0oug5xCoWo6bu5zODsyi_A/15b0bf12-93ff-47a1-bff2-439f0a6e9905"
+      },
+      "reservation": {
+        "provider": "opentable",
+        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-frisco"
+      },
+      "menus": {
+        "lunch": "https://jinbeh.com/wp-content/uploads/2023/12/Jinbeh-Frisco-Lunch.pdf",
+        "dinner": "https://jinbeh.com/wp-content/uploads/2025/05/Jinbeh-Frisco-Dinner-4.pdf",
+        "sushi": "https://jinbeh.com/wp-content/uploads/2023/04/2023-Frisco-Official-Sushi-Menu.pdf"
+      },
+      "seo": {
+        "title": "Jinbeh Frisco | Hibachi & Sushi Restaurant near Stonebriar",
+        "description": "Experience authentic Japanese hibachi and sushi at Jinbeh Frisco. Dinner and a show near Stonebriar Centre. Family-owned since 1987. Reserve your table today!",
+        "keywords": ["hibachi frisco", "sushi frisco", "japanese restaurant frisco", "teppanyaki frisco", "stonebriar dining"]
+      },
+      "socialVoice": "The heart of Frisco's restaurant scene"
+    },
+    "lewisville": {
+      "id": "lewisville",
+      "name": "Jinbeh Lewisville",
+      "displayName": "Lewisville",
+      "fullName": "Jinbeh Japanese Restaurant - Lewisville",
+      "address": {
+        "street": "2440 S Stemmons Fwy",
+        "suite": "#A",
+        "city": "Lewisville",
+        "state": "TX",
+        "zip": "75067",
+        "formatted": "2440 S Stemmons Fwy #A, Lewisville, TX 75067"
+      },
+      "geo": {
+        "latitude": 33.0286,
+        "longitude": -96.9942
+      },
+      "phone": "(214) 488-2224",
+      "phoneClean": "2144882224",
+      "fax": "(214) 488-8345",
+      "email": "lewisville@jinbeh.com",
+      "neighborhood": {
+        "description": "Easy access from I-35E, near Vista Ridge Mall",
+        "landmarks": ["Vista Ridge Mall", "I-35E", "Medical City Lewisville"],
+        "parking": "Convenient strip mall parking"
+      },
+      "hours": {
+        "lunch": {
+          "weekday": { "open": "11:00", "close": "14:00", "display": "11:00 am – 2:00 pm" },
+          "weekend": { "open": "11:30", "close": "14:30", "display": "11:30 am – 2:30 pm" }
+        },
+        "dinner": {
+          "sunThurs": { "open": "17:00", "close": "21:00", "display": "5:00 pm – 9:00 pm" },
+          "friSat": { "open": "17:00", "close": "22:00", "display": "5:00 pm – 10:00 pm" }
+        }
+      },
+      "orderOnline": {
+        "grubhub": "https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2440-s-stemmons-fwy-a-lewisville/2135139",
+        "ubereats": "https://www.ubereats.com/store/jinbeh-lewisville/aOk96KHMSICHj8jsdZOAWA"
+      },
+      "reservation": {
+        "provider": "opentable",
+        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-lewisville"
+      },
+      "menus": {
+        "lunch": "https://jinbeh.com/wp-content/uploads/2026/01/Lewisville-Lunch-Hibachi-2.pdf",
+        "dinner": null,
+        "sushi": "https://jinbeh.com/wp-content/uploads/2023/07/Lewisville-Sushi.pdf"
+      },
+      "seo": {
+        "title": "Jinbeh Lewisville | Hibachi & Sushi Restaurant off I-35E",
+        "description": "Authentic Japanese hibachi and sushi at Jinbeh Lewisville. Family-owned tradition since 1987. Easy access from I-35E near Vista Ridge Mall. Reserve now!",
+        "keywords": ["hibachi lewisville", "sushi lewisville", "japanese restaurant lewisville", "teppanyaki lewisville", "vista ridge dining"]
+      },
+      "socialVoice": "Lewisville's go-to for Japanese cuisine"
+    }
+  },
+  "business": {
+    "name": "Jinbeh Japanese Restaurant",
+    "legalName": "Jinbeh Hibachi and Sushi Bar",
+    "tagline": "Experience Japanese Cuisine",
+    "established": 1987,
+    "yearsInBusiness": 38,
+    "heritage": "Family-owned since 1987, serving North Texas for over 37 years",
+    "cuisine": ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
+    "priceRange": "$$",
+    "website": "https://jinbeh.com",
+    "social": {
+      "instagram": "@JinbehRestaurant",
+      "facebook": "JinbehRestaurant",
+      "hashtag": "#JinbehMoments"
+    }
+  }
+}
