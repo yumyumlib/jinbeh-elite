@@ -125,7 +125,7 @@ h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--charcoal);
+  color: inherit;
   line-height: 1.2;
 }
 
@@ -151,13 +151,26 @@ p {
 }
 
 a {
-  color: var(--deep-indigo);
+  color: inherit;
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-transition);
 }
 
 a:hover {
   color: var(--accent-red);
+}
+
+/* Links on dark backgrounds - ensure visibility */
+.section-dark a,
+.bg-charcoal a,
+footer a {
+  color: var(--soft-gold);
+}
+
+.section-dark a:hover,
+.bg-charcoal a:hover,
+footer a:hover {
+  color: var(--warm-ivory);
 }
 
 /* Mobile Typography */

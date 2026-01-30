@@ -574,8 +574,8 @@ export default function HomePage() {
               </ScrollReveal>
               <ScrollReveal delay={350} className="gallery-item aspect-square">
                 <Image
-                  src="/images/photoshoot/sizzling-plate.jpg"
-                  alt="Sizzling hot plate fresh from the grill"
+                  src="/images/photoshoot/sashimi-platter.jpg"
+                  alt="Premium sashimi platter with fresh fish and uni in traditional lacquered bowl"
                   fill
                   className="object-cover"
                 />
