@@ -2,7 +2,18 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PhotoGallery from "@/components/PhotoGallery";
 import locations from "@/data/locations.json";
+
+// Gallery items for Lewisville
+const galleryItems = [
+  { src: "/images/lewisville/IMG_1910.jpg", alt: "Fresh sushi platter with decorative flowers", caption: "Artful Sushi Presentation" },
+  { src: "/videos/lewisville/hibachi-fire-01.mp4", alt: "Hibachi fire show", caption: "Hibachi Fire Show", type: "video" as const },
+  { src: "/images/lewisville/IMG_1712.jpg", alt: "Salmon sashimi", caption: "Fresh Salmon Sashimi" },
+  { src: "/images/lewisville/IMG_2178.jpg", alt: "Whole red fish", caption: "Premium Fresh Fish" },
+  { src: "/videos/lewisville/hibachi-fire-02.mp4", alt: "Onion volcano flame", caption: "Famous Onion Volcano", type: "video" as const },
+  { src: "/images/lewisville/IMG_2081.jpg", alt: "Sushi selection", caption: "Chef's Selection" },
+];
 
 const location = locations.locations.lewisville;
 
@@ -142,14 +153,18 @@ export default function LewisvillePage() {
           }}
         />
 
-        {/* Hero Section */}
+        {/* Hero Section with Video */}
         <section className="hero relative bg-charcoal">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/images/lewisville-interior.jpg')",
-            }}
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            poster="/images/lewisville/IMG_1910.jpg"
+          >
+            <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay" />
 
           <div className="hero-content max-w-4xl mx-auto">
@@ -401,6 +416,14 @@ export default function LewisvillePage() {
             </div>
           </div>
         </section>
+
+        {/* Photo & Video Gallery */}
+        <PhotoGallery
+          items={galleryItems}
+          title="Experience Jinbeh Lewisville"
+          subtitle="Savor the sights of our fresh sushi, sizzling hibachi, and the famous fire show that makes every meal an experience."
+          columns={3}
+        />
 
         {/* Quick Links */}
         <section className="py-16 bg-warm-ivory">

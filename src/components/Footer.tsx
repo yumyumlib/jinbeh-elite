@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import locations from "@/data/locations.json";
 
 export default function Footer() {
@@ -15,18 +16,17 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-cedar-brown rounded-lg flex items-center justify-center">
-                <span className="text-warm-ivory font-bold text-xl">金</span>
-              </div>
-              <div>
-                <span className="font-heading text-xl font-semibold">
-                  JINBEH
-                </span>
-                <span className="block text-sm text-cedar-brown italic">
-                  {business.tagline}
-                </span>
-              </div>
+              <Image
+                src="/images/logos/jinbeh-logo-white.png"
+                alt="Jinbeh Japanese Restaurant"
+                width={160}
+                height={70}
+                className="h-12 w-auto"
+              />
             </div>
+            <p className="text-warm-ivory/60 text-sm italic mb-4">
+              {business.tagline}
+            </p>
             <p className="text-warm-ivory/80 mb-4">
               {business.heritage}
             </p>

@@ -72,7 +72,8 @@ const menuCategories = [
     id: "hibachi",
     title: "Hibachi Teppanyaki",
     description: "Dinner and a show! Expertly grilled tableside by our master chefs.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg",
+    image: "/images/food/hibachi-grill.jpg",
+    videoUrl: "/videos/lewisville/hibachi-fire-01.mp4",
     items: [
       { name: "Filet Mignon", description: "Premium beef tenderloin, perfectly seared" },
       { name: "Chicken Teriyaki", description: "Tender chicken with house teriyaki glaze" },
@@ -80,14 +81,14 @@ const menuCategories = [
       { name: "Lobster Tail", description: "Succulent lobster, butter-grilled" },
       { name: "Vegetable Hibachi", description: "Fresh seasonal vegetables with tofu" },
     ],
-    pdfUrl: "https://jinbeh.com/wp-content/uploads/2025/05/Jinbeh-Lewisville-Dinner-4.pdf",
+    pdfUrl: "/menus/lewisville/dinner-menu.pdf",
     note: "All hibachi dinners include soup, salad, fried rice, and grilled vegetables",
   },
   {
     id: "sushi",
     title: "Sushi & Sashimi",
     description: "Fresh, artfully crafted, and bursting with flavor.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg",
+    image: "/images/lewisville/IMG_1910.jpg",
     items: [
       { name: "Signature Rolls", description: "House specialty creations" },
       { name: "Classic Rolls", description: "Traditional favorites" },
@@ -95,28 +96,28 @@ const menuCategories = [
       { name: "Nigiri", description: "Hand-pressed sushi rice with fresh fish" },
       { name: "Omakase", description: "Chef's tasting menu (reservation required)" },
     ],
-    pdfUrl: "https://jinbeh.com/wp-content/uploads/2023/04/2023-Lewisville-Official-Sushi-Menu.pdf",
+    pdfUrl: "/menus/lewisville/sushi-menu.pdf",
     note: "Ask about today's fresh fish selection",
   },
   {
     id: "lunch",
     title: "Lunch Specials",
     description: "Weekday specials served Monday-Friday, 11am-2pm.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/lunch-special.jpg",
+    image: "/images/food/BentoBoxLunchSet.png",
     items: [
       { name: "Lunch Hibachi Combo", description: "Choice of protein with soup, salad, rice" },
       { name: "Bento Box", description: "Assorted Japanese favorites" },
       { name: "Lunch Sushi Roll Combo", description: "2-3 rolls with soup and salad" },
       { name: "Teriyaki Bowl", description: "Rice bowl with teriyaki protein" },
     ],
-    pdfUrl: "https://jinbeh.com/wp-content/uploads/2023/12/Jinbeh-Lewisville-Lunch.pdf",
+    pdfUrl: "/menus/lewisville/lunch-menu.pdf",
     note: "Weekend lunch hours: 11:30am-2:30pm",
   },
   {
     id: "drinks",
     title: "Drinks & Sake",
     description: "Full bar with premium sake, Japanese beer, and craft cocktails.",
-    image: "https://jinbeh.com/wp-content/uploads/2022/11/lewisville-bg.jpg",
+    image: "/images/food/JinbehPunchBeverageDrink.png",
     items: [
       { name: "Premium Sake", description: "Hot or cold, by the glass or carafe" },
       { name: "Japanese Beer", description: "Sapporo, Asahi, Kirin" },
@@ -138,21 +139,27 @@ export default function LewisvilleMenuPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
 
-        {/* Hero Section */}
+        {/* Hero Section with Video */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://jinbeh.com/wp-content/uploads/2023/01/sushi-background.jpg')" }}
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            poster="/images/lewisville/IMG_1910.jpg"
+          >
+            <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
               Jinbeh Lewisville
             </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               Our Menu
             </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto">
+            <p className="text-lg text-warm-ivory/90 max-w-2xl mx-auto">
               Fresh ingredients, expert preparation, and flavors that transport you to Japan.
             </p>
           </div>

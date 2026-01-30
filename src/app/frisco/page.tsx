@@ -1,8 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PhotoGallery from "@/components/PhotoGallery";
 import locations from "@/data/locations.json";
+
+// Gallery items for Frisco
+const galleryItems = [
+  { src: "/images/frisco/JinbehFrisco_SushiBar.jpg", alt: "Jinbeh Frisco sushi bar", caption: "Our Premium Sushi Bar" },
+  { src: "/images/food/OnionVolcanoDemo.png", alt: "Onion volcano hibachi show", caption: "Famous Onion Volcano" },
+  { src: "/images/food/SamaraiRollCloseup.png", alt: "Samurai roll closeup", caption: "Signature Samurai Roll" },
+  { src: "/images/frisco/JinbehFriscoTables.jpg", alt: "Jinbeh Frisco dining area", caption: "Elegant Dining Space" },
+  { src: "/images/food/HibachiComboNYStripAndColossalShrimp.png", alt: "Hibachi combo", caption: "Hibachi NY Strip & Shrimp" },
+  { src: "/images/food/FreshSushiAndDessertsAtSushiBar.png", alt: "Fresh sushi and desserts", caption: "Fresh Daily Selection" },
+];
 
 const location = locations.locations.frisco;
 
@@ -144,11 +156,12 @@ export default function FriscoPage() {
 
         {/* Hero Section */}
         <section className="hero relative bg-charcoal">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/images/frisco-interior.jpg')",
-            }}
+          <Image
+            src="/images/frisco/JinbehFriscoTables.jpg"
+            alt="Jinbeh Frisco dining interior"
+            fill
+            className="object-cover"
+            priority
           />
           <div className="hero-overlay" />
 
@@ -410,6 +423,14 @@ export default function FriscoPage() {
             </div>
           </div>
         </section>
+
+        {/* Photo Gallery */}
+        <PhotoGallery
+          items={galleryItems}
+          title="Experience Jinbeh Frisco"
+          subtitle="From sizzling hibachi shows to artfully crafted sushi, every visit is an experience to remember."
+          columns={3}
+        />
 
         {/* Quick Links */}
         <section className="py-16 bg-warm-ivory">

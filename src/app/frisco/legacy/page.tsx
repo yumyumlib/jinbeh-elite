@@ -1,0 +1,426 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Japanese Restaurant Near Legacy West | Jinbeh Frisco | Hibachi & Sushi",
+  description:
+    "Looking for hibachi or sushi near Legacy West? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese cuisine in Frisco, TX.",
+  keywords: [
+    "japanese restaurant near legacy west",
+    "hibachi near legacy frisco",
+    "sushi restaurants legacy west frisco",
+    "teppanyaki near legacy",
+    "best japanese food legacy frisco",
+    "restaurants near legacy west frisco",
+    "japanese food legacy west",
+    "hibachi frisco legacy",
+  ],
+  openGraph: {
+    title: "Japanese Restaurant Near Legacy West | Jinbeh Frisco",
+    description: "Fresh sushi & exciting hibachi just minutes from Legacy West in Frisco, TX.",
+    url: "https://jinbeh.com/frisco/legacy",
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/frisco/legacy",
+  },
+};
+
+// Local Business Schema
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://jinbeh.com/frisco#restaurant",
+  name: "Jinbeh Japanese Restaurant - Frisco (Near Legacy West)",
+  image: "https://jinbeh.com/wp-content/uploads/2023/01/frisco-exterior.jpg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "2693 Preston Rd, Suite 1040",
+    addressLocality: "Frisco",
+    addressRegion: "TX",
+    postalCode: "75034",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 33.1351,
+    longitude: -96.8233,
+  },
+  url: "https://jinbeh.com/frisco",
+  telephone: "(214) 618-9888",
+  servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
+  priceRange: "$$",
+  areaServed: {
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: 33.1195,
+      longitude: -96.8083,
+    },
+    geoRadius: "5000",
+  },
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How far is Jinbeh from Legacy West?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Frisco is just 3-5 minutes (about 1 mile) from Legacy West. It's the perfect spot for dinner before or after exploring the shops and restaurants in the area!",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there parking near Jinbeh Frisco at Legacy West location?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! Jinbeh Frisco has convenient free parking in the shopping center lot directly in front of our restaurant. Plenty of spaces available for your visit.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What makes Jinbeh special compared to other Japanese restaurants near Legacy West?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh combines over 37 years of culinary excellence with authentic hibachi entertainment, fresh daily sushi, and a full bar. Our talented chefs provide tableside teppanyaki shows with the famous onion volcano, creating an unforgettable dining experience.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What's the best time to visit Jinbeh near Legacy West?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We recommend visiting on weekday evenings for a more relaxed atmosphere, or weekend dining for our full hibachi entertainment experience. Happy hour runs daily, and we recommend reservations for all visits, especially during peak times.",
+      },
+    },
+  ],
+};
+
+const nearbyAttractions = [
+  {
+    name: "Legacy West",
+    distance: "3-5 min drive",
+    description: "Vibrant mixed-use development with shops, dining, and entertainment",
+  },
+  {
+    name: "The Star in Frisco",
+    distance: "10 min drive",
+    description: "Dallas Cowboys headquarters and premium entertainment venue",
+  },
+  {
+    name: "Dr Pepper Ballpark",
+    distance: "8 min drive",
+    description: "Home of the Frisco RoughRiders professional baseball team",
+  },
+  {
+    name: "Stonebriar Centre",
+    distance: "10 min drive",
+    description: "Premier shopping destination with 165+ stores and restaurants",
+  },
+];
+
+export default function LegacyPage() {
+  return (
+    <>
+      <Header location="frisco" />
+      <main className="min-h-screen">
+        {/* Schemas */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+
+        {/* Hero Section */}
+        <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('https://jinbeh.com/wp-content/uploads/2023/01/frisco-interior.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+          <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
+              Just Minutes from Legacy West
+            </p>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+              Japanese Restaurant Near Legacy West
+            </h1>
+            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
+              Experience authentic hibachi entertainment and fresh sushi at Jinbeh Frisco –
+              your perfect dining destination in the heart of Frisco&apos;s dining scene!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/frisco#reserve"
+                className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
+              >
+                Reserve Your Table
+              </Link>
+              <Link
+                href="/frisco/menu"
+                className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl"
+              >
+                View Menu
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Jinbeh Section */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
+                    The Best Hibachi & Sushi Near Legacy West
+                  </h2>
+                  <p className="text-lg text-charcoal/70 mb-6">
+                    Located just minutes from Legacy West on Preston Road, Jinbeh has been
+                    serving authentic Japanese cuisine to the Frisco community for over 37 years.
+                    Whether you&apos;re celebrating a special occasion, enjoying a casual dinner with friends,
+                    or exploring Legacy West&apos;s vibrant dining scene, our expert chefs deliver
+                    an unforgettable experience.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-accent-red flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <div>
+                        <span className="font-semibold text-charcoal">Exciting Teppanyaki Shows</span>
+                        <p className="text-charcoal/70 text-sm">Watch skilled chefs perform tableside with flames and the famous onion volcano</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-accent-red flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <div>
+                        <span className="font-semibold text-charcoal">Fresh Sushi Daily</span>
+                        <p className="text-charcoal/70 text-sm">Hand-crafted rolls and sashimi from our experienced sushi chefs</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-accent-red flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <div>
+                        <span className="font-semibold text-charcoal">Free Convenient Parking</span>
+                        <p className="text-charcoal/70 text-sm">Ample parking directly in front of the restaurant</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link
+                    href="/frisco"
+                    className="inline-flex items-center gap-2 text-accent-red font-semibold hover:gap-3 transition-all"
+                  >
+                    Learn More About Jinbeh Frisco
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+                <div className="relative">
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+                      alt="Hibachi chef at Jinbeh Frisco near Legacy West"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 -z-10 w-full h-full rounded-2xl bg-accent-red/20" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nearby Attractions */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">
+                Conveniently Located Near Frisco&apos;s Best Attractions
+              </h2>
+              <p className="text-lg text-charcoal/70">
+                Jinbeh Frisco is perfectly positioned near all the action at Legacy West and beyond
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {nearbyAttractions.map((attraction) => (
+                <div
+                  key={attraction.name}
+                  className="bg-warm-ivory rounded-xl p-6 text-center hover:shadow-lg transition-shadow"
+                >
+                  <div className="w-12 h-12 mx-auto mb-4 bg-accent-red/10 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="font-heading font-semibold text-charcoal mb-1">{attraction.name}</h3>
+                  <p className="text-accent-red font-medium text-sm mb-2">{attraction.distance}</p>
+                  <p className="text-charcoal/60 text-sm">{attraction.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* What We Offer */}
+        <section className="py-16 bg-charcoal text-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl font-heading font-bold text-center mb-12">
+                What to Expect at Jinbeh
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="text-center p-6">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-accent-red/20 rounded-full flex items-center justify-center">
+                    <span className="text-3xl">🔥</span>
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold mb-3">Hibachi Entertainment</h3>
+                  <p className="text-warm-ivory/70">
+                    Our skilled teppanyaki chefs put on a show with flames, knife tricks, and the
+                    famous onion volcano – dinner and entertainment in one!
+                  </p>
+                </div>
+                <div className="text-center p-6">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-deep-indigo/40 rounded-full flex items-center justify-center">
+                    <span className="text-3xl">🍣</span>
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold mb-3">Fresh Sushi Bar</h3>
+                  <p className="text-warm-ivory/70">
+                    From classic nigiri to creative specialty rolls, our sushi chefs craft
+                    each piece with precision using the freshest ingredients.
+                  </p>
+                </div>
+                <div className="text-center p-6">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-soft-gold/20 rounded-full flex items-center justify-center">
+                    <span className="text-3xl">🍶</span>
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold mb-3">Full Bar & Sake</h3>
+                  <p className="text-warm-ivory/70">
+                    Complement your meal with premium sake, Japanese beer, cocktails, or
+                    take advantage of our happy hour specials.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-heading font-bold text-charcoal text-center mb-12">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-6">
+                {faqSchema.mainEntity.map((faq, index) => (
+                  <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+                    <h3 className="font-heading font-semibold text-charcoal mb-3">
+                      {faq.name}
+                    </h3>
+                    <p className="text-charcoal/70">
+                      {faq.acceptedAnswer.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Ready for Authentic Japanese Cuisine?
+            </h2>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
+              Reserve your table at Jinbeh Frisco today. Just minutes from Legacy West!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Link
+                href="/frisco#reserve"
+                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
+              >
+                Make a Reservation
+              </Link>
+              <a
+                href="tel:2146189888"
+                className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
+              >
+                Call (214) 618-9888
+              </a>
+            </div>
+            <p className="text-white/70 text-sm">
+              2693 Preston Rd, Suite 1040, Frisco, TX 75034
+            </p>
+          </div>
+        </section>
+
+        {/* Explore More */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal text-center mb-8">
+              Explore More at Jinbeh
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <Link
+                href="/frisco"
+                className="bg-warm-ivory rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+              >
+                <span className="text-2xl mb-2 block">🏠</span>
+                <span className="font-medium text-charcoal text-sm">Frisco Home</span>
+              </Link>
+              <Link
+                href="/frisco/menu"
+                className="bg-warm-ivory rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+              >
+                <span className="text-2xl mb-2 block">📖</span>
+                <span className="font-medium text-charcoal text-sm">Full Menu</span>
+              </Link>
+              <Link
+                href="/happy-hour"
+                className="bg-warm-ivory rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+              >
+                <span className="text-2xl mb-2 block">🍹</span>
+                <span className="font-medium text-charcoal text-sm">Happy Hour</span>
+              </Link>
+              <Link
+                href="/celebrations"
+                className="bg-warm-ivory rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+              >
+                <span className="text-2xl mb-2 block">🎉</span>
+                <span className="font-medium text-charcoal text-sm">Celebrations</span>
+              </Link>
+              <Link
+                href="/catering"
+                className="bg-warm-ivory rounded-xl p-4 text-center hover:shadow-lg transition-shadow"
+              >
+                <span className="text-2xl mb-2 block">🎊</span>
+                <span className="font-medium text-charcoal text-sm">Catering</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

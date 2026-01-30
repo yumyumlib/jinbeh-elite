@@ -96,25 +96,20 @@ export default function Header({ location }: HeaderProps) {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center group">
             <Image
-              src="/images/logos/jinbehlogo-black.svg"
+              src="/images/logos/jinbeh-logo.png"
               alt="Jinbeh Japanese Restaurant"
-              width={48}
-              height={48}
+              width={160}
+              height={70}
               className="h-12 w-auto transition-transform group-hover:scale-105"
               priority
             />
-            <div className="hidden sm:block">
-              <span className="font-heading text-xl font-semibold text-charcoal">
-                JINBEH
+            {location && (
+              <span className="hidden sm:block ml-3 text-sm text-cedar-brown capitalize font-medium border-l border-cedar-brown/30 pl-3">
+                {location}
               </span>
-              {location && (
-                <span className="block text-sm text-cedar-brown capitalize font-medium">
-                  {location}
-                </span>
-              )}
-            </div>
+            )}
           </Link>
 
           {/* Desktop Navigation */}
@@ -178,18 +173,18 @@ export default function Header({ location }: HeaderProps) {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            {/* Order Online */}
-            <a
-              href={location === "lewisville"
-                ? "https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2440-s-stemmons-fwy-a-lewisville/2135139"
-                : "https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-frisco-2693-preston-rd-frisco/2134962"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
-            >
-              Order Online
-            </a>
+            {/* Phone Number - Only show on location pages */}
+            {location && (
+              <a
+                href={location === "lewisville" ? "tel:2146189798" : "tel:2146189888"}
+                className="inline-flex items-center gap-2 px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
+              </a>
+            )}
 
             <Link
               href={`/${loc}#reserve`}
@@ -292,18 +287,19 @@ export default function Header({ location }: HeaderProps) {
               ))}
 
               <div className="mt-4 space-y-3 px-4">
-                <a
-                  href={location === "lewisville"
-                    ? "https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2440-s-stemmons-fwy-a-lewisville/2135139"
-                    : "https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-frisco-2693-preston-rd-frisco/2134962"
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full text-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Order Online
-                </a>
+                {/* Phone Number - Only show on location pages */}
+                {location && (
+                  <a
+                    href={location === "lewisville" ? "tel:2146189798" : "tel:2146189888"}
+                    className="flex items-center justify-center gap-2 w-full py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
+                  </a>
+                )}
                 <Link
                   href={`/${loc}#reserve`}
                   className="block w-full btn btn-primary btn-shimmer text-center"

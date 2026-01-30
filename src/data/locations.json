@@ -45,9 +45,9 @@
         "url": "https://www.opentable.com/jinbeh-japanese-restaurant-frisco"
       },
       "menus": {
-        "lunch": "https://jinbeh.com/wp-content/uploads/2023/12/Jinbeh-Frisco-Lunch.pdf",
-        "dinner": "https://jinbeh.com/wp-content/uploads/2025/05/Jinbeh-Frisco-Dinner-4.pdf",
-        "sushi": "https://jinbeh.com/wp-content/uploads/2023/04/2023-Frisco-Official-Sushi-Menu.pdf"
+        "lunch": "/menus/frisco/lunch-menu.pdf",
+        "dinner": "/menus/frisco/dinner-menu.pdf",
+        "sushi": "/menus/frisco/sushi-menu.pdf"
       },
       "seo": {
         "title": "Jinbeh Frisco | Hibachi & Sushi Restaurant near Stonebriar",
@@ -101,9 +101,9 @@
         "url": "https://www.opentable.com/jinbeh-japanese-restaurant-lewisville"
       },
       "menus": {
-        "lunch": "https://jinbeh.com/wp-content/uploads/2026/01/Lewisville-Lunch-Hibachi-2.pdf",
-        "dinner": null,
-        "sushi": "https://jinbeh.com/wp-content/uploads/2023/07/Lewisville-Sushi.pdf"
+        "lunch": "/menus/lewisville/lunch-menu.pdf",
+        "dinner": "/menus/lewisville/dinner-menu.pdf",
+        "sushi": "/menus/lewisville/sushi-menu.pdf"
       },
       "seo": {
         "title": "Jinbeh Lewisville | Hibachi & Sushi Restaurant off I-35E",
@@ -124,8 +124,8 @@
     "priceRange": "$$",
     "website": "https://jinbeh.com",
     "social": {
-      "instagram": "@JinbehRestaurant",
-      "facebook": "JinbehRestaurant",
+      "instagram": "jinbehfrisco",
+      "facebook": "Jinbeh",
       "hashtag": "#JinbehMoments"
     }
   }
