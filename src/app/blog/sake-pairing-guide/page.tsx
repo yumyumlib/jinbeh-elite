@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "The Complete Sake Pairing Guide: From Sushi to Hibachi",
         description: "Elevate your Japanese dining experience with expert sake pairing recommendations.",
-        images: ["/images/blog/sake-pairing-hero.jpg"],
+        images: ["/images/drinks/cocktail.jpg"],
     },
 };
 
@@ -36,7 +36,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "The Complete Sake Pairing Guide: From Sushi to Hibachi",
     description: "Master sake pairings with Japanese cuisine—learn which sake styles complement sushi, hibachi, appetizers, and more.",
-    image: "https://jinbeh.com/images/blog/sake-pairing-hero.jpg",
+    image: "https://jinbeh.com/images/drinks/cocktail.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-01-29",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -98,7 +98,7 @@ export default function SakePairingGuide() {
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden bg-gradient-to-b from-charcoal to-charcoal/80">
                 <div className="absolute inset-0 opacity-40" style={{
-                    backgroundImage: "url('/images/blog/sake-pairing-bg.jpg')",
+                    backgroundImage: "url('/images/drinks/cocktail.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center"
                 }} />
