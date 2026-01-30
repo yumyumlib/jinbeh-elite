@@ -348,8 +348,8 @@ export default function HomePage() {
             <ScrollReveal delay={400}>
               <p className="text-lg text-warm-ivory/90 max-w-3xl mx-auto mb-12 leading-relaxed drop-shadow-md"
                  style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
-                For over 37 years, we have been creating unforgettable dining experiences.
-                Watch our master chefs perform tableside, then savor expertly crafted sushi.
+                For over 37 years, we&apos;ve served families across Frisco, Lewisville, and DFW.
+                <span className="block mt-2">Watch our master hibachi chefs perform tableside, then savor fresh, expertly crafted sushi.</span>
               </p>
             </ScrollReveal>
 
@@ -461,10 +461,10 @@ export default function HomePage() {
               <div className="text-center mb-20">
                 <span className="inline-block w-16 h-1 bg-gradient-to-r from-accent-red to-soft-gold rounded-full mb-6" />
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6 italic">
-                  The Jinbeh Experience
+                  Hibachi & Sushi in Frisco & Lewisville
                 </h2>
                 <p className="text-xl text-charcoal/70 max-w-4xl mx-auto leading-relaxed">
-                  More than a meal — it&apos;s entertainment, artistry, and tradition served at your table
+                  More than a meal — it&apos;s entertainment, artistry, and tradition served tableside at Jinbeh
                 </p>
               </div>
             </ScrollReveal>
@@ -484,7 +484,7 @@ export default function HomePage() {
                     and the legendary onion volcano.
                   </p>
                   <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
-                    Explore Hibachi
+                    Hibachi Dining Guide
                     <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -499,14 +499,14 @@ export default function HomePage() {
                     <span className="text-4xl filter drop-shadow-md">🍣</span>
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    Sushi Artistry
+                    Fresh Sushi & Rolls
                   </h3>
                   <p className="text-charcoal/70 leading-relaxed mb-6">
                     Pristine fish, expertly crafted rolls, and creative
                     presentations where tradition meets innovation.
                   </p>
                   <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
-                    Explore Sushi
+                    Sushi Menu & Guide
                     <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -521,14 +521,14 @@ export default function HomePage() {
                     <span className="text-4xl filter drop-shadow-md">🎉</span>
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    Celebrate Together
+                    Birthday & Party Events
                   </h3>
                   <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Birthdays, anniversaries, graduations — we make every occasion
-                    unforgettable.
+                    Birthdays, anniversaries, graduations — we make every celebration
+                    unforgettable at Jinbeh.
                   </p>
                   <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
-                    Plan Your Event
+                    Plan a Celebration
                     <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -802,7 +802,7 @@ export default function HomePage() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-sm">from 1,247 Google reviews</span>
+                  <span className="text-sm">from <strong className="font-semibold">1,247</strong> Google reviews</span>
                 </div>
               </div>
 

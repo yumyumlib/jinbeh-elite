@@ -506,6 +506,11 @@ footer a:hover {
    Sticky Mobile CTA
    ====================================== */
 
+/* Hide on desktop by default */
+.sticky-cta-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .sticky-cta-mobile {
     display: flex;
@@ -517,16 +522,46 @@ footer a:hover {
     background-color: var(--white);
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
     z-index: 50;
-    gap: var(--space-sm);
+    gap: var(--space-md);
   }
 
   .sticky-cta-mobile .btn {
     flex: 1;
+    text-align: center;
   }
 
   body {
     padding-bottom: 80px;
   }
+}
+
+/* ======================================
+   Button Color Overrides for Dark Sections
+   ====================================== */
+
+/* White buttons with colored text */
+.btn.bg-white {
+  color: var(--charcoal);
+}
+
+.btn.text-accent-red,
+.btn[class*="text-accent-red"] {
+  color: var(--accent-red) !important;
+}
+
+/* Ensure buttons in dark sections maintain their colors */
+.section-dark .btn-primary,
+.bg-charcoal .btn-primary,
+[class*="bg-gradient"] .btn-primary {
+  color: var(--white);
+}
+
+/* Card links should be fully clickable */
+.card {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 /* ======================================

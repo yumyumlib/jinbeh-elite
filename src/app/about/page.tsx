@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/about",
     images: [
       {
-        url: "https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg",
+        url: "https://jinbeh.com/images/about/chef-flames.jpg",
         width: 1200,
         height: 630,
-        alt: "Jinbeh chef cooking hibachi",
+        alt: "Jinbeh hibachi chef cooking with flames and Las Colinas restaurant building",
       },
     ],
   },
@@ -80,7 +80,7 @@ const organizationSchema = {
   "name": "Jinbeh Japanese Restaurant",
   "alternateName": "Jinbeh Hibachi and Sushi Bar",
   "url": "https://jinbeh.com",
-  "logo": "https://jinbeh.com/wp-content/uploads/2022/03/jinbehlogo-black.svg",
+  "logo": "https://jinbeh.com/images/logos/jinbeh-logo.png",
   "foundingDate": "1988",
   "description": "Family-owned Japanese restaurant serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988.",
   "sameAs": [
@@ -104,30 +104,24 @@ export default function AboutPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
 
-        {/* Hero Section with Video */}
+        {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
-          >
-            <source
-              src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <Image
+            src="/images/about/chef-flames.jpg"
+            alt="Jinbeh hibachi chef cooking with flames and Las Colinas restaurant building - a tribute to our heritage since 1988"
+            fill
+            className="object-cover"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4 animate-fade-in">
+            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
               Family-Owned Since 1988
             </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
               Our Story
             </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto">
+            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
               Welcome to the table. For over 37 years, we&apos;ve been creating
               unforgettable moments for families across North Texas.
             </p>
@@ -188,16 +182,16 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://jinbeh.com/wp-content/uploads/2022/11/frisco-bg.jpg"
-                      alt="Jinbeh Frisco bar interior"
+                      src="/images/interior/FriscoLocation_Bar_Front.jpg"
+                      alt="Jinbeh Frisco bar and dining area"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg"
-                      alt="Fresh sushi platter"
+                      src="/images/photoshoot/sushi-tower.jpg"
+                      alt="Fresh sushi tower"
                       fill
                       className="object-cover"
                     />
@@ -206,16 +200,16 @@ export default function AboutPage() {
                 <div className="space-y-4 pt-8">
                   <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
-                      alt="Hibachi chef with flames"
+                      src="/images/food/OnionVolcanoDemo.jpg"
+                      alt="Hibachi chef performing the famous onion volcano"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://jinbeh.com/wp-content/uploads/2023/01/family-dining.jpg"
-                      alt="Family dining at Jinbeh"
+                      src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
+                      alt="Birthday celebration at Jinbeh"
                       fill
                       className="object-cover"
                     />
@@ -226,8 +220,60 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Values Section */}
+        {/* The Name Jinbeh - Heritage Story */}
         <section className="py-20 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+              {/* Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/about/rice-workers-heritage.webp"
+                  alt="Traditional Japanese rice farmers working in paddy fields - the humble origins that inspired the name Jinbeh"
+                  width={800}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+
+              {/* Story Content */}
+              <div>
+                <p className="text-soft-gold font-medium tracking-wider uppercase mb-3">
+                  The Meaning Behind Our Name
+                </p>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
+                  What is &quot;Jinbeh&quot;?
+                </h2>
+                <div className="space-y-5 text-charcoal/80 leading-relaxed">
+                  <p>
+                    The name <em>Jinbeh</em> was once a common surname among Japanese
+                    farmers and peasants during the feudal medieval ages of Japan. These
+                    hardworking people cultivated the rice paddies that fed entire villages,
+                    embodying values of humility, honesty, and dedication.
+                  </p>
+                  <p>
+                    When Ben Matsuda opened our first restaurant in Las Colinas in 1988,
+                    he chose this name deliberately. Coming from humble beginnings himself,
+                    the name serves as a daily reminder of where he came from and the
+                    values that built this family business.
+                  </p>
+                  <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
+                    &quot;He came from a poor family, and he created all of this and was
+                    successful; the name for him is a daily reminder of where he came from.&quot;
+                    <span className="block text-sm text-charcoal/60 mt-2 not-italic">— Aya Matsuda</span>
+                  </p>
+                  <p>
+                    Today, those same values guide everything we do: serving every guest
+                    with genuine warmth, preparing every dish with honest craftsmanship,
+                    and working hard to create moments worth celebrating.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values Section */}
+        <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
@@ -326,9 +372,16 @@ export default function AboutPage() {
               </a>
             </div>
 
-            {/* Instagram Grid Placeholder */}
+            {/* Instagram Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 max-w-6xl mx-auto">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
+              {[
+                "/images/food/SamaraiRollCloseup.jpg",
+                "/images/photoshoot/hibachi-plate-shrimp.jpg",
+                "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+                "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
+                "/images/photoshoot/sashimi-platter.jpg",
+                "/images/drinks/JinbehPunchBeverageDrink.jpg",
+              ].map((src, i) => (
                 <a
                   key={i}
                   href="https://www.instagram.com/jinbehfrisco/"
@@ -337,8 +390,8 @@ export default function AboutPage() {
                   className="relative aspect-square rounded-lg overflow-hidden group"
                 >
                   <Image
-                    src={`https://jinbeh.com/wp-content/uploads/2023/01/gallery-${i}.jpg`}
-                    alt={`Jinbeh Instagram photo ${i}`}
+                    src={src}
+                    alt={`Jinbeh food and drinks ${i + 1}`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Category configuration
 const categories = {
@@ -100,40 +102,63 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { category: string } }): Metadata {
-  const category = categories[params.category as CategoryKey];
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  const { category: categorySlug } = await params;
+  const category = categories[categorySlug as CategoryKey];
   if (!category) {
-    return { title: "Category Not Found" };
+    return { title: "Category Not Found | Jinbeh Blog" };
   }
 
+  const seoKeywords: Record<CategoryKey, string[]> = {
+    sushi: ["sushi frisco", "best sushi dallas", "japanese sushi near me", "sushi rolls guide", "sashimi dallas tx"],
+    hibachi: ["hibachi frisco", "teppanyaki dallas", "hibachi restaurant near me", "hibachi grill texas", "hibachi chef show"],
+    celebrations: ["birthday party restaurant frisco", "private dining dallas", "celebration venue japanese", "group dining hibachi"],
+    "happy-hour": ["happy hour frisco tx", "sake bar dallas", "japanese cocktails", "drink specials near me"],
+    "local-guide": ["japanese restaurant frisco tx", "best restaurants dallas", "asian food near me", "date night frisco"],
+  };
+
   return {
-    title: `${category.title} | Jinbeh Blog`,
+    title: `${category.title} | Jinbeh Japanese Restaurant Blog`,
     description: category.description,
+    keywords: seoKeywords[categorySlug as CategoryKey] || [],
     openGraph: {
       title: `${category.title} | Jinbeh Japanese Restaurant`,
       description: category.description,
+      url: `https://jinbeh.com/blog/category/${categorySlug}`,
+      type: "website",
+    },
+    alternates: {
+      canonical: `https://jinbeh.com/blog/category/${categorySlug}`,
     },
   };
 }
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const category = categories[params.category as CategoryKey];
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category: categorySlug } = await params;
+  const category = categories[categorySlug as CategoryKey];
 
   if (!category) {
     return (
-      <main className="min-h-screen bg-warm-ivory py-20">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl font-heading font-bold text-charcoal mb-4">Category Not Found</h1>
-          <Link href="/blog" className="text-accent-red hover:underline">
-            ← Back to Blog
-          </Link>
-        </div>
-      </main>
+      <>
+        <Header />
+        <main className="min-h-screen bg-warm-ivory py-20">
+          <div className="container mx-auto px-6 text-center">
+            <h1 className="text-4xl font-heading font-bold text-charcoal mb-4">Category Not Found</h1>
+            <p className="text-charcoal/70 mb-6">The category you&apos;re looking for doesn&apos;t exist.</p>
+            <Link href="/blog" className="btn btn-primary">
+              ← Back to Blog
+            </Link>
+          </div>
+        </main>
+        <Footer />
+      </>
     );
   }
 
   return (
-    <main className="min-h-screen bg-warm-ivory">
+    <>
+      <Header />
+      <main className="min-h-screen bg-warm-ivory">
       {/* Hero Section */}
       <section className={`relative py-20 bg-gradient-to-r ${category.color}`}>
         <div className="container mx-auto px-6 text-center text-white">
@@ -217,5 +242,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 }

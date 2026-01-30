@@ -36,6 +36,28 @@ export default function Header({ location }: HeaderProps) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Close mobile menu with Escape key and lock body scroll
+  useEffect(() => {
+    function handleEscapeKey(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMobileMenuOpen(false);
+        setActiveDropdown(null);
+      }
+    }
+
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      document.addEventListener("keydown", handleEscapeKey);
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, [mobileMenuOpen]);
+
   const loc = location || "frisco";
 
   const navItems: NavItem[] = [
@@ -120,8 +142,11 @@ export default function Header({ location }: HeaderProps) {
                   <>
                     <button
                       onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
-                      className={`flex items-center gap-1 px-4 py-2 rounded-lg text-charcoal hover:text-accent-red hover:bg-warm-ivory/50 transition-all font-medium ${activeDropdown === item.label ? "text-accent-red bg-warm-ivory/50" : ""
-                        }`}
+                      className={`flex items-center gap-1 px-4 py-2 rounded-lg hover:text-accent-red hover:bg-warm-ivory/50 transition-all font-medium ${
+                        activeDropdown === item.label ? "text-accent-red bg-warm-ivory/50" :
+                        (item.label === "Locations" && location) ? "text-accent-red" :
+                        "text-charcoal"
+                      }`}
                     >
                       {item.label}
                       <svg
@@ -138,23 +163,39 @@ export default function Header({ location }: HeaderProps) {
                     {activeDropdown === item.label && (
                       <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                         <div className="p-2">
-                          {item.dropdown.map((subItem) => (
-                            <Link
-                              key={subItem.label}
-                              href={subItem.href}
-                              className="block px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
-                              onClick={() => setActiveDropdown(null)}
-                            >
-                              <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors">
-                                {subItem.label}
-                              </span>
-                              {subItem.description && (
-                                <span className="block text-sm text-charcoal/60 mt-0.5">
-                                  {subItem.description}
+                          {item.dropdown.map((subItem) => {
+                            // Check if this is the current location
+                            const isActiveLocation = item.label === "Locations" &&
+                              location &&
+                              subItem.label.toLowerCase() === location;
+
+                            return (
+                              <Link
+                                key={subItem.label}
+                                href={subItem.href}
+                                className={`block px-4 py-3 rounded-lg transition-colors group ${
+                                  isActiveLocation
+                                    ? "bg-accent-red/10 border-l-4 border-accent-red"
+                                    : "hover:bg-warm-ivory"
+                                }`}
+                                onClick={() => setActiveDropdown(null)}
+                              >
+                                <span className={`font-medium transition-colors ${
+                                  isActiveLocation
+                                    ? "text-accent-red"
+                                    : "text-charcoal group-hover:text-accent-red"
+                                }`}>
+                                  {subItem.label}
+                                  {isActiveLocation && <span className="ml-2 text-xs">(You are here)</span>}
                                 </span>
-                              )}
-                            </Link>
-                          ))}
+                                {subItem.description && (
+                                  <span className="block text-sm text-charcoal/60 mt-0.5">
+                                    {subItem.description}
+                                  </span>
+                                )}
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     )}
@@ -173,8 +214,8 @@ export default function Header({ location }: HeaderProps) {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            {/* Phone Number - Only show on location pages */}
-            {location && (
+            {/* Phone Number - Always visible */}
+            {location ? (
               <a
                 href={location === "lewisville" ? "tel:2146189798" : "tel:2146189888"}
                 className="inline-flex items-center gap-2 px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
@@ -184,6 +225,43 @@ export default function Header({ location }: HeaderProps) {
                 </svg>
                 {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
               </a>
+            ) : (
+              <div className="relative">
+                <button
+                  onClick={() => setActiveDropdown(activeDropdown === "phone" ? null : "phone")}
+                  className="inline-flex items-center gap-2 px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  Call Us
+                  <svg className={`w-3 h-3 transition-transform ${activeDropdown === "phone" ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {activeDropdown === "phone" && (
+                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-50">
+                    <div className="p-2">
+                      <a
+                        href="tel:2146189888"
+                        className="block px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        <span className="font-medium text-charcoal group-hover:text-accent-red">Frisco</span>
+                        <span className="block text-sm text-charcoal/60">(214) 618-9888</span>
+                      </a>
+                      <a
+                        href="tel:2146189798"
+                        className="block px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        <span className="font-medium text-charcoal group-hover:text-accent-red">Lewisville</span>
+                        <span className="block text-sm text-charcoal/60">(214) 618-9798</span>
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
             )}
 
             <Link
@@ -287,8 +365,8 @@ export default function Header({ location }: HeaderProps) {
               ))}
 
               <div className="mt-4 space-y-3 px-4">
-                {/* Phone Number - Only show on location pages */}
-                {location && (
+                {/* Phone Numbers - Always visible */}
+                {location ? (
                   <a
                     href={location === "lewisville" ? "tel:2146189798" : "tel:2146189888"}
                     className="flex items-center justify-center gap-2 w-full py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all"
@@ -297,8 +375,31 @@ export default function Header({ location }: HeaderProps) {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
+                    Call {location === "lewisville" ? "Lewisville" : "Frisco"}: {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
                   </a>
+                ) : (
+                  <div className="flex gap-2">
+                    <a
+                      href="tel:2146189888"
+                      className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all text-sm"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      <svg className="w-4 h-4 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      Frisco
+                    </a>
+                    <a
+                      href="tel:2146189798"
+                      className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all text-sm"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      <svg className="w-4 h-4 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      Lewisville
+                    </a>
+                  </div>
                 )}
                 <Link
                   href={`/${loc}#reserve`}
