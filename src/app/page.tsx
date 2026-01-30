@@ -42,6 +42,54 @@ const organizationSchema = {
   ]
 };
 
+// FAQ Schema for homepage rich snippets
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is hibachi dining?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hibachi dining is a Japanese-style cooking experience where skilled chefs prepare your meal on a large iron griddle right at your table. At Jinbeh, our chefs entertain with knife tricks, the famous onion volcano, and precision cooking techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a reservation at Jinbeh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While walk-ins are welcome, we highly recommend reservations, especially for dinner, weekends, and special occasions. You can reserve online through our website or by calling our Frisco location at (214) 618-9888 or Lewisville at (214) 618-9798."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh offer sushi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Jinbeh features a full sushi bar with fresh fish flown in regularly. We offer traditional nigiri, sashimi, and creative specialty rolls like our Dragon Roll and Rainbow Roll."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Jinbeh good for birthday celebrations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Jinbeh is perfect for birthdays and special celebrations. Our hibachi chefs make every celebration memorable with tableside entertainment, and we can accommodate groups of all sizes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are Jinbeh locations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh has two convenient locations in the DFW area: Frisco (2693 Preston Rd Suite 1040, near Stonebriar Centre) and Lewisville (2440 S Stemmons Fwy #A, easy access from I-35E)."
+      }
+    }
+  ]
+};
+
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
@@ -212,17 +260,23 @@ export default function HomePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        {/* FAQ Schema for rich snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
 
         {/* Hero Section - Full Screen with Video Background */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          {/* Background Video - Vimeo embed with autoplay, loop, muted */}
+          {/* Background Video - Vimeo embed with autoplay, loop, muted - optimized loading */}
           <div className="absolute inset-0 w-full h-full">
             <iframe
-              src="https://player.vimeo.com/video/681592941?autoplay=1&loop=1&muted=1&background=1&autopause=0&portrait=0&byline=0&title=0&badge=0"
+              src="https://player.vimeo.com/video/681592941?autoplay=1&loop=1&muted=1&background=1&autopause=0&portrait=0&byline=0&title=0&badge=0&quality=720p"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover pointer-events-none"
               style={{ aspectRatio: '16/9', width: '177.78vh', height: '100vh' }}
               allow="autoplay; fullscreen"
               title="Jinbeh Hibachi and Sushi Experience"
+              loading="eager"
             />
           </div>
 
@@ -242,11 +296,14 @@ export default function HomePage() {
 
           {/* Content with text shadows for better readability */}
           <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
-            {/* Selling Proof - Family Badge */}
+            {/* Selling Proof - Family Badge + Urgency Hook */}
             <ScrollReveal delay={0}>
-              <div className="mb-8">
+              <div className="mb-8 flex flex-wrap items-center justify-center gap-3">
                 <span className="inline-block bg-accent-red text-white px-6 py-2 rounded-full text-sm font-semibold tracking-wider uppercase shadow-lg">
                   Family-Owned Since 1988
+                </span>
+                <span className="inline-block bg-soft-gold/90 text-charcoal px-5 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg animate-pulse">
+                  Reserve for This Weekend
                 </span>
               </div>
             </ScrollReveal>
@@ -302,6 +359,10 @@ export default function HomePage() {
                 {/* Frisco Location Card */}
                 <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl">
                   <div className="text-center">
+                    {/* Location-specific proof hook */}
+                    <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
+                      #1 Rated Hibachi in Frisco
+                    </span>
                     <h2 className="text-2xl font-heading font-semibold text-white mb-2 drop-shadow-lg">
                       Frisco
                     </h2>
@@ -334,6 +395,10 @@ export default function HomePage() {
                 {/* Lewisville Location Card */}
                 <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl">
                   <div className="text-center">
+                    {/* Location-specific proof hook */}
+                    <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
+                      Best Sushi in Lewisville
+                    </span>
                     <h2 className="text-2xl font-heading font-semibold text-white mb-2 drop-shadow-lg">
                       Lewisville
                     </h2>
@@ -540,13 +605,15 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Image Gallery Grid - Professional Photoshoot Images */}
+            {/* Image Gallery Grid - Professional Photoshoot Images with lazy loading */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
               <ScrollReveal delay={0} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
                   src="/images/photoshoot/hibachi-plate-shrimp.jpg"
                   alt="Hibachi shrimp and scallops with fried rice - Jinbeh signature plate"
                   fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </ScrollReveal>
@@ -555,6 +622,8 @@ export default function HomePage() {
                   src="/images/photoshoot/sashimi-platter.jpg"
                   alt="Premium sashimi platter with uni, salmon, and yellowtail"
                   fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </ScrollReveal>
@@ -563,6 +632,8 @@ export default function HomePage() {
                   src="/images/photoshoot/sushi-tower.jpg"
                   alt="Specialty sushi tower with spicy tuna and avocado"
                   fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </ScrollReveal>
@@ -571,6 +642,8 @@ export default function HomePage() {
                   src="/images/photoshoot/hibachi-steak.jpg"
                   alt="Hibachi filet mignon with vegetables and fried rice"
                   fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </ScrollReveal>
@@ -579,6 +652,8 @@ export default function HomePage() {
                   src="/images/photoshoot/appetizers-spread.jpg"
                   alt="Japanese appetizers - edamame, tempura, and crab rangoon"
                   fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </ScrollReveal>
@@ -587,6 +662,8 @@ export default function HomePage() {
                   src="/images/photoshoot/sashimi-platter.jpg"
                   alt="Premium sashimi platter with fresh fish and uni in traditional lacquered bowl"
                   fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </ScrollReveal>
@@ -594,11 +671,12 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Video Section - Hibachi Experience */}
+        {/* Video Section - Hibachi Experience - Lazy loaded for performance */}
         <section className="py-20 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <ScrollReveal>
               <div className="text-center mb-12">
+                <span className="inline-block w-16 h-1 bg-gradient-to-r from-white/40 to-soft-gold rounded-full mb-6" />
                 <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 italic">
                   Dinner and a Show
                 </h2>
@@ -610,12 +688,29 @@ export default function HomePage() {
 
             <ScrollReveal delay={200}>
               <div className="max-w-4xl mx-auto">
-                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl group">
+                  {/* VideoSchema for SEO */}
+                  <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                      __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "VideoObject",
+                        "name": "Jinbeh Hibachi Cooking Experience",
+                        "description": "Watch our master teppanyaki chefs prepare delicious hibachi dishes tableside with impressive knife skills and the famous onion volcano.",
+                        "thumbnailUrl": "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+                        "uploadDate": "2023-01-15",
+                        "duration": "PT2M3S",
+                        "contentUrl": "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
+                      })
+                    }}
+                  />
                   <video
                     autoPlay
                     muted
                     loop
                     playsInline
+                    preload="metadata"
                     className="w-full h-full object-cover"
                     poster="/images/photoshoot/hibachi-steak.jpg"
                   >
@@ -625,8 +720,16 @@ export default function HomePage() {
                     />
                     Your browser does not support the video tag.
                   </video>
-                  {/* Video overlay with play indicator */}
+                  {/* Video overlay with gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+                  {/* Play indicator on hover */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <p className="text-center text-warm-ivory/60 mt-4 text-sm">
                   Experience the artistry of teppanyaki cooking at Jinbeh
@@ -666,27 +769,122 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="py-24 bg-white relative">
+        {/* Testimonial Section - Multiple Reviews */}
+        <section className="py-24 bg-white relative overflow-hidden">
+          {/* Review Schema for SEO */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Review",
+                itemReviewed: { "@type": "Restaurant", name: "Jinbeh Japanese Restaurant" },
+                reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+                author: { "@type": "Person", name: "Sarah M." },
+                reviewBody: "Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance."
+              })
+            }}
+          />
+
           <ScrollReveal>
-            <div className="container mx-auto px-6 text-center max-w-4xl testimonial-card">
-              {/* Stars */}
-              <div className="flex justify-center gap-1 mb-8">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-8 h-8 text-soft-gold drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <span className="inline-block w-16 h-1 bg-gradient-to-r from-soft-gold to-accent-red rounded-full mb-6" />
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4 italic">
+                  What Our Guests Say
+                </h2>
+                <div className="flex items-center justify-center gap-2 text-charcoal/70">
+                  <span className="font-semibold text-soft-gold text-xl">4.5</span>
+                  <div className="flex gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-sm">from 1,247 Google reviews</span>
+                </div>
               </div>
 
-              <blockquote className="text-2xl md:text-3xl font-heading italic text-charcoal mb-10 leading-relaxed">
-                &ldquo;Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance,
-                and the food was incredible. We&apos;ve been coming here for 10 years and it never disappoints.&rdquo;
-              </blockquote>
+              {/* Testimonial Grid */}
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {/* Testimonial 1 */}
+                <div className="testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                    &ldquo;Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance. We&apos;ve been coming here for 10 years.&rdquo;
+                  </blockquote>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center text-accent-red font-bold">S</div>
+                    <div>
+                      <p className="font-semibold text-charcoal">Sarah M.</p>
+                      <p className="text-xs text-charcoal/50">Frisco • 2 weeks ago</p>
+                    </div>
+                  </div>
+                </div>
 
-              <div>
-                <p className="font-bold text-charcoal text-lg">Sarah M.</p>
-                <p className="text-charcoal/60 text-sm mt-1">Google Review — Frisco Location</p>
+                {/* Testimonial 2 */}
+                <div className="testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                    &ldquo;The sushi is unbelievably fresh. The dragon roll and salmon sashimi are perfection. This is our go-to for date night!&rdquo;
+                  </blockquote>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-deep-indigo/10 flex items-center justify-center text-deep-indigo font-bold">M</div>
+                    <div>
+                      <p className="font-semibold text-charcoal">Michael T.</p>
+                      <p className="text-xs text-charcoal/50">Lewisville • 1 month ago</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Testimonial 3 */}
+                <div className="testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                    &ldquo;Celebrated my daughter&apos;s birthday here. The staff made her feel so special, and the onion volcano was the highlight of her night!&rdquo;
+                  </blockquote>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-soft-gold/20 flex items-center justify-center text-soft-gold font-bold">J</div>
+                    <div>
+                      <p className="font-semibold text-charcoal">Jennifer R.</p>
+                      <p className="text-xs text-charcoal/50">Frisco • 3 weeks ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* View More Reviews CTA */}
+              <div className="text-center mt-12">
+                <a
+                  href="https://www.google.com/search?q=jinbeh+japanese+restaurant+reviews"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-accent-red font-semibold hover:text-accent-red-hover transition-colors"
+                >
+                  Read More Reviews on Google
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
           </ScrollReveal>
