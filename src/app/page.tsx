@@ -465,7 +465,7 @@ export default function HomePage() {
         </section>
 
         {/* Stats Section with Animated NumberTicker */}
-        <section className="py-20 bg-charcoal text-white relative overflow-hidden">
+        <section className="py-28 md:py-36 bg-charcoal text-white relative overflow-hidden">
           {/* Subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-deep-indigo/30" />
 
