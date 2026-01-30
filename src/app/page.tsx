@@ -213,16 +213,27 @@ export default function HomePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
 
-        {/* Hero Section - Full Screen with Image Background */}
+        {/* Hero Section - Full Screen with Video Background */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          {/* Background Image - Next.js optimized with priority loading */}
+          {/* Background Video - Vimeo embed with autoplay, loop, muted */}
+          <div className="absolute inset-0 w-full h-full">
+            <iframe
+              src="https://player.vimeo.com/video/681592941?autoplay=1&loop=1&muted=1&background=1&autopause=0&portrait=0&byline=0&title=0&badge=0"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover pointer-events-none"
+              style={{ aspectRatio: '16/9', width: '177.78vh', height: '100vh' }}
+              allow="autoplay; fullscreen"
+              title="Jinbeh Hibachi and Sushi Experience"
+            />
+          </div>
+
+          {/* Fallback Image for slow connections */}
           <Image
             src="/images/photoshoot/hibachi-plate-shrimp.jpg"
             alt="Jinbeh hibachi plate with shrimp, fried rice, and vegetables"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-center -z-10"
             quality={85}
           />
 
