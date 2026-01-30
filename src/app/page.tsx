@@ -387,9 +387,8 @@ export default function HomePage() {
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6 italic">
                   The Jinbeh Experience
                 </h2>
-                <p className="text-xl text-charcoal/70 max-w-2xl mx-auto leading-relaxed">
-                  More than a meal — it&apos;s entertainment, artistry, and tradition
-                  served at your table
+                <p className="text-xl text-charcoal/70 max-w-4xl mx-auto leading-relaxed">
+                  More than a meal — it&apos;s entertainment, artistry, and tradition served at your table
                 </p>
               </div>
             </ScrollReveal>
