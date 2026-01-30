@@ -1,20 +1,57 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Hibachi Catering DFW: Party & Event Services | Jinbeh",
     description: "Hibachi catering for parties, corporate events, and weddings in DFW. Jinbeh brings the sizzle to you with on-site chefs and authentic Japanese cuisine.",
     keywords: ["hibachi catering", "japanese catering dallas", "event catering frisco", "party catering dfw"],
+    openGraph: {
+        title: "Hibachi Catering DFW: Party & Event Services",
+        description: "Professional hibachi catering for corporate events, private parties, and celebrations in DFW.",
+        images: ["/images/blog/6-C060324-6405.jpg"],
+    },
 };
 
-const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Hibachi Catering DFW", datePublished: "2026-01-24", author: { "@type": "Organization", name: "Jinbeh" } },
+const faqs = [
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "Does Jinbeh offer catering?", acceptedAnswer: { "@type": "Answer", text: "Yes! We offer hibachi catering for private events, corporate functions, and celebrations. Contact us for custom packages." } },
-            { "@type": "Question", name: "How much is hibachi catering?", acceptedAnswer: { "@type": "Answer", text: "Pricing depends on group size and menu selection. Contact us for a custom quote for your event." } }
-        ]
+        question: "Does Jinbeh offer hibachi catering?",
+        answer: "Yes! We offer professional hibachi catering for private events, corporate functions, weddings, and celebrations. Our experienced chefs bring the full Jinbeh dining experience to your location with fresh ingredients and entertaining table-side cooking.",
+    },
+    {
+        question: "How much does hibachi catering cost?",
+        answer: "Pricing depends on your group size, menu selection (beef, chicken, shrimp, etc.), and venue location. We offer customized packages to fit different budgets. Contact us or visit our catering page for a detailed quote.",
+    },
+    {
+        question: "What's the minimum guest count for catering?",
+        answer: "Our catering works best for groups of 20 or more. However, we encourage smaller groups to contact us directly—we may be able to accommodate intimate gatherings depending on availability.",
+    },
+    {
+        question: "How far in advance should I book catering?",
+        answer: "We recommend booking at least 2-3 weeks in advance to ensure availability, especially during busy seasons like holidays and summer weekends. For large events, earlier booking is appreciated.",
+    },
+    {
+        question: "Do you provide catering equipment?",
+        answer: "Yes! We can provide portable hibachi grills and all necessary cooking equipment for on-site events. We handle the setup, cooking, and cleanup. You just need to provide the venue and seating.",
+    },
+    {
+        question: "Can you accommodate dietary restrictions?",
+        answer: "Absolutely! Let us know about any allergies or dietary preferences (vegetarian, gluten-free, etc.) when you book, and our chefs will customize the menu accordingly.",
+    },
+];
+
+const schemas = [
+    { "@context": "https://schema.org", "@type": "Article", headline: "Hibachi Catering DFW: Party & Event Services", datePublished: "2026-01-24", author: { "@type": "Organization", name: "Jinbeh" } },
+    {
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
     }
 ];
 
@@ -45,6 +82,7 @@ export default function HibachiCatering() {
 
                             <div className="bg-gradient-to-br from-green-600/10 to-soft-gold/10 border-l-4 border-green-600 rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Our catering team brings the full Jinbeh experience to your location—complete with skilled chefs, fresh ingredients, and the entertainment that makes hibachi unforgettable."</p>
+                                <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎉 Catering Options</h2>
@@ -58,51 +96,45 @@ export default function HibachiCatering() {
                                 ))}
                             </div>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">📋 What's Included</h2>
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">📋 What's Included in Our Catering</h2>
                             <ul className="space-y-2 text-charcoal/80 my-6">
-                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Professional hibachi chef</li>
-                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Fresh ingredients and proteins</li>
-                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Cooking equipment (if needed)</li>
-                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Entertainment and showmanship</li>
-                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Sushi platters available as add-on</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Experienced hibachi chef(s)</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Fresh, high-quality ingredients and proteins</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Portable hibachi cooking equipment</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Full table-side cooking and entertainment</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Complete meal service (soup, salad, vegetables, protein, fried rice)</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Sushi platters and appetizers available as add-ons</li>
+                                <li className="flex items-center gap-2"><span className="text-green-600">✓</span>Setup and cleanup assistance</li>
                             </ul>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-3">
-                                {[
-                                    { q: "How far in advance should I book?", a: "We recommend booking at least 2-3 weeks in advance for catering events, especially during busy seasons." },
-                                    { q: "Minimum guest count?", a: "Our catering works best for groups of 20+, but contact us for smaller events—we may be able to accommodate." },
-                                    { q: "Do you provide equipment?", a: "Yes! We can bring portable hibachi grills for on-site cooking at your venue." }
-                                ].map((f, i) => (
+                                {faqs.map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
-                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.q}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                        <div className="px-5 pb-5 text-charcoal/80">{f.a}</div>
+                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                        <div className="px-5 pb-5 text-charcoal/80">{f.answer}</div>
                                     </details>
                                 ))}
                             </div>
 
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Catering at Our Restaurants</h2>
+                            <p className="text-charcoal/80 mb-6">
+                                Can't host an event at home? Visit us at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations for private dining options. We also offer full hibachi catering for off-site events. Learn more about <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline">hibachi dining</Link> and why Jinbeh is the best choice for your celebration.
+                            </p>
+
                             <div className="mt-12 p-8 bg-gradient-to-r from-green-600 to-deep-indigo rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍴 Get a Catering Quote</h3>
-                                <p className="text-white/80 mb-6">Tell us about your event and we'll create a custom package.</p>
+                                <h3 className="text-2xl font-heading font-bold mb-4">🍴 Ready to Plan Your Catered Event?</h3>
+                                <p className="text-white/80 mb-6">Let us create an unforgettable hibachi experience for your celebration.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/catering" className="bg-white text-green-600 px-6 py-3 rounded-xl font-semibold">Request Quote</Link>
-                                    <a href="tel:+19726187010" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Call (972) 618-7010</a>
+                                    <Link href="/catering" className="bg-white text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Request Custom Quote</Link>
+                                    <a href="tel:+19726187010" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">Call for Details</a>
                                 </div>
                             </div>
                         </article>
 
                         <aside>
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="font-heading font-bold mb-4">Related</h3>
-                                <div className="space-y-3">
-                                    {[{ t: "Group Dining Guide", s: "/blog/group-dining-venues", i: "/images/blog/22-C060324-6829.jpg" },
-                                    { t: "Hibachi Birthday Ideas", s: "/blog/hibachi-birthday-party-ideas", i: "/images/blog/1-C060324-6328.jpg" }].map(r => (
-                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
-                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                        </Link>
-                                    ))}
-                                </div>
+                            <div className="sticky top-24">
+                                <RelatedArticles currentSlug="hibachi-catering-dfw" />
                             </div>
                         </aside>
                     </div>

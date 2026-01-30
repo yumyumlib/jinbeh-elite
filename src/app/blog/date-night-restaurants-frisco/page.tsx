@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Date Night Restaurants in Frisco TX | Best Romantic Dining",
@@ -29,7 +30,7 @@ const articleSchema = {
     headline: "Best Date Night Restaurants Frisco TX: Create Unforgettable Memories",
     description:
         "Your complete guide to the best romantic date night restaurants in Frisco, including Jinbeh's intimate hibachi experience.",
-    image: "https://jinbeh.com/images/blog/date-night-hero.jpg",
+    image: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-01-29",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -93,8 +94,8 @@ export default function DateNightRestaurantsFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/date-night-hero.jpg"
-                    alt="Romantic date night dinner at Jinbeh"
+                    src="/images/exterior/JinbehFriscoStorefrontSign.jpg"
+                    alt="Jinbeh Japanese Restaurant Frisco storefront for romantic date night dining"
                     fill
                     className="object-cover"
                     priority
@@ -407,7 +408,7 @@ export default function DateNightRestaurantsFrisco() {
                                         </summary>
                                         <div className="px-6 pb-6 text-charcoal/80">
                                             <p>
-                                                Jinbeh combines intimate ambiance with interactive hibachi theater. The chef performs right in front of you, creating an engaging experience while you enjoy fresh sushi and premium sake. Our dim lighting, romantic setting, and personalized service make it ideal for couples looking to create memorable moments.
+                                                Welcome to the table! Jinbeh combines intimate ambiance with interactive hibachi theater. The chef performs right in front of you, creating dinner and a show while you enjoy fresh and flavorful sushi and premium sake. Our dim lighting, romantic setting, and personalized service make it ideal for couples. Call (214) 618-9888 to reserve your perfect date night.
                                             </p>
                                         </div>
                                     </details>
@@ -455,7 +456,7 @@ export default function DateNightRestaurantsFrisco() {
                                         </summary>
                                         <div className="px-6 pb-6 text-charcoal/80">
                                             <p>
-                                                Yes! We offer semi-private hibachi tables and full private dining options for special occasions like anniversaries and proposals. Contact us to arrange a customized date night experience with a dedicated chef and personalized service. Visit our <Link href="/private-dining" className="text-accent-red hover:underline">private dining page</Link> for details.
+                                                Yes! We offer semi-private hibachi tables and full private dining options for special occasions like anniversaries and proposals. Contact us to arrange a customized date night experience with a dedicated chef and personalized service. Visit our <Link href="/private-dining" className="text-accent-red hover:underline">private dining page</Link> for details or make a <Link href="/reservations" className="text-accent-red hover:underline">reservation</Link>.
                                             </p>
                                         </div>
                                     </details>
@@ -519,68 +520,7 @@ export default function DateNightRestaurantsFrisco() {
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Quick Links</h3>
-                                <div className="space-y-4 mb-8">
-                                    <Link href="/frisco#reserve" className="flex items-center gap-3 p-3 rounded-xl bg-accent-red/10 hover:bg-accent-red/20 transition-colors group">
-                                        <span className="text-xl">📅</span>
-                                        <span className="text-charcoal font-semibold group-hover:text-accent-red">Make a Reservation</span>
-                                    </Link>
-
-                                    <Link href="/frisco/menu" className="flex items-center gap-3 p-3 rounded-xl bg-soft-gold/10 hover:bg-soft-gold/20 transition-colors group">
-                                        <span className="text-xl">🍽️</span>
-                                        <span className="text-charcoal font-semibold group-hover:text-soft-gold">View Full Menu</span>
-                                    </Link>
-
-                                    <Link href="/frisco" className="flex items-center gap-3 p-3 rounded-xl bg-warm-ivory hover:bg-soft-gold/10 transition-colors group">
-                                        <span className="text-xl">📍</span>
-                                        <span className="text-charcoal font-semibold group-hover:text-accent-red">Frisco Location</span>
-                                    </Link>
-                                </div>
-
-                                <div className="bg-warm-ivory rounded-2xl p-6">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Related Articles</h3>
-                                    <div className="space-y-4">
-                                        <Link href="/blog/sake-pairing-guide" className="flex gap-4 group">
-                                            <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-soft-gold">
-                                                <div className="w-full h-full bg-gradient-to-br from-soft-gold to-accent-red flex items-center justify-center text-2xl">🍶</div>
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Pairing Guide</h4>
-                                            </div>
-                                        </Link>
-
-                                        <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
-                                            <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                                <div className="w-full h-full bg-gradient-to-br from-warm-ivory to-soft-gold flex items-center justify-center text-2xl">🍣</div>
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-accent-red">📍 Locations</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi Frisco TX</h4>
-                                            </div>
-                                        </Link>
-
-                                        <Link href="/celebrations/anniversary" className="flex gap-4 group">
-                                            <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-accent-red/10">
-                                                <div className="w-full h-full bg-gradient-to-br from-accent-red to-soft-gold flex items-center justify-center text-2xl">💕</div>
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-accent-red">🎉 Events</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Anniversary Celebrations</h4>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=tips-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-accent-red/10 text-accent-red hover:bg-accent-red/20">💕 Romance & Dining</Link>
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-soft-gold/10">📍 Locations</Link>
-                                    </div>
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="date-night-restaurants-frisco" />
                         </aside>
                     </div>
                 </div>

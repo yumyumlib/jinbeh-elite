@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Best Happy Hour Frisco TX: Top Spots to Visit | Jinbeh",
@@ -275,14 +276,38 @@ export default function BestHappyHourFrisco() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Reservations aren't required for happy hour, but we recommend them for groups of
-                                                    4 or more, especially on Fridays. Walk-ins are welcome and bar seating is
-                                                    first-come, first-served.
+                                                    Reservations aren't required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins welcome! Bar seating is first-come, first-served. Welcome to the table!
+                                                </p>
+                                            </div>
+                                        </details>
+
+                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                Is Jinbeh's happy hour family-friendly?
+                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                            </summary>
+                                            <div className="px-6 pb-6 text-charcoal/80">
+                                                <p>
+                                                    Absolutely! We treat every guest like family. Kids are welcome during happy hour. We have a children's menu, and parents enjoy discounted drinks while kids enjoy sushi and appetizers. It's a celebration for everyone!
+                                                </p>
+                                            </div>
+                                        </details>
+
+                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                Can I pair happy hour with dinner?
+                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                            </summary>
+                                            <div className="px-6 pb-6 text-charcoal/80">
+                                                <p>
+                                                    Fresh and flavorful! Yes, enjoy happy hour specials before or with dinner. Our fresh sushi and sake pair beautifully with any hibachi or sushi selection. Dinner and a show awaits you at Jinbeh!
                                                 </p>
                                             </div>
                                         </details>
                                     </div>
                                 </div>
+
+                                <RelatedArticles currentSlug="best-happy-hour-frisco-tx" />
 
                                 {/* CTA */}
                                 <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">

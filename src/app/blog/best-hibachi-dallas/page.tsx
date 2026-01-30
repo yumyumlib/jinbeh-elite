@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh",
@@ -26,27 +27,32 @@ const faqs = [
   {
     question: "What is the difference between hibachi and teppanyaki?",
     answer:
-      "While often used interchangeably in the US, hibachi traditionally refers to a Japanese heating device with an open grill, while teppanyaki means cooking on a flat iron griddle. Most Dallas 'hibachi' restaurants actually serve teppanyaki-style food, where chefs perform entertaining cooking shows at your table on a large flat grill.",
+      "While often used interchangeably in the US, hibachi traditionally refers to a Japanese heating device with an open grill, while teppanyaki means cooking on a flat iron griddle. Most Dallas 'hibachi' restaurants actually serve teppanyaki-style food, where chefs perform entertaining cooking shows at your table on a large flat grill. Fresh and flavorful—that's our promise!",
   },
   {
     question: "How much does hibachi dinner cost in Dallas?",
     answer:
-      "Hibachi dinner prices in Dallas typically range from $25-$45 per person for entrees like chicken, steak, or shrimp. Premium options like filet mignon or lobster can run $40-$60+. Lunch specials offer better value, often $15-$25 per person. At Jinbeh, our lunch hibachi starts at just $12.95.",
+      "Hibachi dinner prices in Dallas typically range from $25-$45 per person for entrees like chicken, steak, or shrimp. Premium options like filet mignon or lobster can run $40-$60+. Lunch specials offer better value, often $15-$25 per person. At Jinbeh, our lunch hibachi starts at just $12.95. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for pricing details.",
   },
   {
     question: "Do I need reservations for hibachi in Dallas?",
     answer:
-      "Reservations are highly recommended for hibachi dining, especially on weekends and for groups of 4 or more. Popular Dallas hibachi spots like Jinbeh can fill up quickly for Friday and Saturday dinner service. Calling ahead or booking online ensures you get seated together at the same grill.",
+      "Reservations are highly recommended for hibachi dining, especially on weekends and for groups of 4 or more. Popular Dallas hibachi spots like Jinbeh can fill up quickly for Friday and Saturday dinner service. Calling ahead or booking online ensures you get seated together at the same grill. Contact us: Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
   },
   {
     question: "What should I expect at a hibachi restaurant?",
     answer:
-      "Expect dinner and a show! You'll sit around a large flat grill with other diners while a skilled chef prepares your meal in front of you. Common entertainment includes the famous 'onion volcano,' knife tricks, shrimp tossing, and fire displays. Most hibachi meals include soup, salad, fried rice, vegetables, and your choice of protein.",
+      "Expect dinner and a show! You'll sit around a large flat grill with other diners while a skilled chef prepares your meal in front of you. Common entertainment includes the famous 'onion volcano,' knife tricks, shrimp tossing, and fire displays. Most hibachi meals include soup, salad, fried rice, vegetables, and your choice of protein. It's a celebration!",
   },
   {
     question: "Which Dallas hibachi restaurant is best for birthdays?",
     answer:
-      "Jinbeh Japanese Restaurant is consistently rated the best for birthday celebrations in Dallas. Our chefs make birthdays special with personalized entertainment, and we've been the go-to destination for family celebrations since 1988. We accommodate groups of all sizes and can arrange special seating.",
+      "Welcome to the table! Jinbeh Japanese Restaurant is consistently rated the best for birthday celebrations in Dallas. Our chefs make birthdays special with personalized entertainment and sing-alongs. We've been the go-to destination for family celebrations since 1988. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to arrange your celebration.",
+  },
+  {
+    question: "Can I book a private hibachi table for a large group?",
+    answer:
+      "Absolutely! We accommodate groups of all sizes with customizable seating and menus. Contact us to discuss your group needs, preferred dates, and any special requests. Our team will ensure everyone has an unforgettable experience. Frisco: (214) 618-9888 or Lewisville: (214) 618-9798.",
   },
 ];
 
@@ -55,7 +61,7 @@ export default function BestHibachiDallasPage() {
     <ArticleLayout
       title="Best Hibachi Dallas TX: Top Restaurants & Experiences"
       metaDescription="Looking for the best hibachi in Dallas? Whether you're celebrating a birthday, planning a date night, or just craving sizzling teppanyaki, our local guide reveals where skilled chefs put on an unforgettable show."
-      heroImage="/images/photoshoot/hibachi-plate-shrimp.jpg"
+      heroImage="/images/blog/3-C060324-6364.jpg"
       heroAlt="Hibachi chef preparing shrimp and steak at Jinbeh Japanese Restaurant in Dallas"
       category="Best Of Guides"
       categorySlug="best-of"
@@ -237,7 +243,7 @@ export default function BestHibachiDallasPage() {
 
       <p>
         <Link
-          href="/celebrations/group-dining"
+          href="/blog/group-dining-venues"
           className="text-accent-red hover:underline"
         >
           Planning a group dinner? See our group dining guide →
@@ -283,7 +289,7 @@ export default function BestHibachiDallasPage() {
       <p>
         At Jinbeh, we blend both worlds: the entertainment Americans love with
         authentic Japanese flavors and techniques our chefs trained in. Our{" "}
-        <Link href="/menu/sushi" className="text-accent-red hover:underline">
+        <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">
           sushi bar
         </Link>{" "}
         offers a more traditional experience for guests seeking something
@@ -295,7 +301,7 @@ export default function BestHibachiDallasPage() {
       <p>
         Here's a local secret: hibachi lunch is often the best deal in town.
         At Jinbeh, our{" "}
-        <Link href="/frisco/lunch" className="text-accent-red hover:underline">
+        <Link href="/lunch-specials" className="text-accent-red hover:underline">
           lunch specials
         </Link>{" "}
         start at just $12.95 for the same quality hibachi experience you'd get
@@ -352,6 +358,8 @@ export default function BestHibachiDallasPage() {
           <li>✓ Rated "Best Hibachi in DFW" by guests</li>
         </ul>
       </div>
+
+      <RelatedArticles currentSlug="best-hibachi-dallas" />
     </ArticleLayout>
   );
 }

@@ -9,11 +9,11 @@ import locations from "@/data/locations.json";
 // Gallery items for Frisco
 const galleryItems = [
   { src: "/images/frisco/JinbehFrisco_SushiBar.jpg", alt: "Jinbeh Frisco sushi bar", caption: "Our Premium Sushi Bar" },
-  { src: "/images/food/OnionVolcanoDemo.png", alt: "Onion volcano hibachi show", caption: "Famous Onion Volcano" },
-  { src: "/images/food/SamaraiRollCloseup.png", alt: "Samurai roll closeup", caption: "Signature Samurai Roll" },
+  { src: "/images/food/OnionVolcanoDemo.jpg", alt: "Onion volcano hibachi show", caption: "Famous Onion Volcano" },
+  { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll closeup", caption: "Signature Samurai Roll" },
   { src: "/images/frisco/JinbehFriscoTables.jpg", alt: "Jinbeh Frisco dining area", caption: "Elegant Dining Space" },
-  { src: "/images/food/HibachiComboNYStripAndColossalShrimp.png", alt: "Hibachi combo", caption: "Hibachi NY Strip & Shrimp" },
-  { src: "/images/food/FreshSushiAndDessertsAtSushiBar.png", alt: "Fresh sushi and desserts", caption: "Fresh Daily Selection" },
+  { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo", caption: "Hibachi NY Strip & Shrimp" },
+  { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi and desserts", caption: "Fresh Daily Selection" },
 ];
 
 const location = locations.locations.frisco;

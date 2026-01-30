@@ -1,20 +1,53 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Discover Teppanyaki: A Culinary Art Form | Jinbeh",
     description: "Learn about teppanyaki, the Japanese art of iron griddle cooking. Discover its history, techniques, and where to experience authentic teppanyaki in DFW.",
     keywords: ["teppanyaki", "hibachi vs teppanyaki", "japanese grill", "teppanyaki restaurant"],
+    openGraph: {
+        title: "Discover Teppanyaki: A Culinary Art Form",
+        description: "Learn about teppanyaki, the Japanese art of iron griddle cooking in DFW.",
+        images: ["/images/blog/5-C060324-6397.jpg"],
+    },
 };
 
-const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Discover Teppanyaki", datePublished: "2026-01-21", author: { "@type": "Organization", name: "Jinbeh" } },
+const faqs = [
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What is teppanyaki?", acceptedAnswer: { "@type": "Answer", text: "Teppanyaki is Japanese cooking on a flat iron griddle, featuring chef performance with knife skills and flames." } },
-            { "@type": "Question", name: "Hibachi vs teppanyaki?", acceptedAnswer: { "@type": "Answer", text: "Hibachi uses charcoal; teppanyaki uses a flat iron plate. In America, 'hibachi restaurants' usually serve teppanyaki-style." } }
-        ]
+        question: "What is teppanyaki?",
+        answer: "Teppanyaki (鉄板焼き) is the Japanese art of cooking on a large, flat iron griddle. It combines skilled knife work, precise ingredient preparation, and theatrical presentation. The chef cooks directly in front of diners, creating an entertaining and interactive dining experience.",
+    },
+    {
+        question: "What's the difference between hibachi and teppanyaki?",
+        answer: "Technically, hibachi refers to a small charcoal grill used at home, while teppanyaki uses a large flat iron griddle for restaurant cooking. In America, the terms are often used interchangeably, but what's typically called 'hibachi restaurants' is actually teppanyaki-style cooking with chef entertainment.",
+    },
+    {
+        question: "Is teppanyaki good for groups?",
+        answer: "Absolutely! Teppanyaki is perfect for group dining. The shared table seating brings 8-10 people together, making it ideal for birthdays, team dinners, and celebrations. Learn more about hosting group events at Jinbeh.",
+    },
+    {
+        question: "What should I expect during a teppanyaki meal?",
+        answer: "You'll sit around a large griddle while the chef prepares your meal in front of you. Expect knife tricks, precise cooking techniques, and theatrical flourishes like onion volcanoes and flaming dishes. The meal typically includes soup, salad, vegetables, your choice of protein, and fried rice.",
+    },
+    {
+        question: "Can I find authentic teppanyaki in the DFW area?",
+        answer: "Yes! Jinbeh offers authentic teppanyaki experiences at our Frisco and Lewisville locations. Our chefs are trained in traditional Japanese cooking techniques and provide an engaging, family-friendly dining experience.",
+    },
+];
+
+const schemas = [
+    { "@context": "https://schema.org", "@type": "Article", headline: "Discover Teppanyaki: A Culinary Art Form", datePublished: "2026-01-21", author: { "@type": "Organization", name: "Jinbeh" } },
+    {
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
     }
 ];
 
@@ -45,6 +78,7 @@ export default function DiscoverTeppanyaki() {
 
                             <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"At Jinbeh, our teppanyaki chefs train for years to perfect their craft. It's not just about the food—it's about creating unforgettable moments around the grill."</p>
+                                <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔥 Hibachi vs Teppanyaki</h2>
@@ -74,41 +108,34 @@ export default function DiscoverTeppanyaki() {
                                 <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/5-C060324-6397.jpg" alt="Grill" fill className="object-cover" /></div>
                             </div>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-3">
-                                {[
-                                    { q: "What is teppanyaki?", a: "Japanese cooking on a flat iron griddle featuring chef performance with knife skills and flames." },
-                                    { q: "Hibachi vs teppanyaki?", a: "Hibachi uses charcoal; teppanyaki uses a flat iron plate. In US, terms used interchangeably." },
-                                    { q: "Is teppanyaki good for groups?", a: "Perfect! Shared tables seat 8-10, making it ideal for celebrations and team dinners." }
-                                ].map((f, i) => (
+                                {faqs.map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
-                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.q}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                        <div className="px-5 pb-5 text-charcoal/80">{f.a}</div>
+                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                        <div className="px-5 pb-5 text-charcoal/80">{f.answer}</div>
                                     </details>
                                 ))}
                             </div>
 
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Experience Authentic Teppanyaki in DFW</h2>
+                            <p className="text-charcoal/80 mb-6">
+                                Ready to experience the art of teppanyaki? Visit Jinbeh at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Our expert chefs will delight you with authentic cooking techniques, entertainment, and delicious Japanese cuisine. We also offer <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">hibachi catering</Link> for corporate events and private celebrations.
+                            </p>
+
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🔥 Experience Teppanyaki at Jinbeh</h3>
+                                <h3 className="text-2xl font-heading font-bold mb-4">🔥 Ready for Teppanyaki?</h3>
+                                <p className="text-white/90 mb-6">Experience the perfect blend of cuisine and entertainment</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Reserve Frisco</Link>
+                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">Reserve Lewisville</Link>
                                 </div>
                             </div>
                         </article>
 
                         <aside>
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="font-heading font-bold mb-4">Related</h3>
-                                <div className="space-y-3">
-                                    {[{ t: "Best Hibachi Dallas", s: "/blog/best-hibachi-dallas-tx", i: "/images/blog/1-C060324-6328.jpg" },
-                                    { t: "Hibachi Birthday Ideas", s: "/blog/hibachi-birthday-party-ideas", i: "/images/blog/22-C060324-6829.jpg" }].map(r => (
-                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
-                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                        </Link>
-                                    ))}
-                                </div>
+                            <div className="sticky top-24">
+                                <RelatedArticles currentSlug="discover-teppanyaki" />
                             </div>
                         </aside>
                     </div>

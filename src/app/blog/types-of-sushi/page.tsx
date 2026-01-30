@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Types of Sushi: Must-Try Varieties & Rolls Guide | Jinbeh",
@@ -31,35 +32,18 @@ const articleSchema = {
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
+const faqs = [
+    { question: "What's the difference between nigiri and sashimi?", answer: "Nigiri is raw fish on rice. Sashimi is raw fish, no rice. Both showcase fish quality. Nigiri adds rice texture and flavor." },
+    { question: "What sushi is best for beginners?", answer: "Welcome to sushi! Try California Roll, Shrimp Tempura, or Philadelphia Roll. They're cooked and mild. Easy way to start exploring." },
+    { question: "What's the most popular sushi roll?", answer: "California Roll is America's favorite. At Jinbeh, our Dragon Roll and Spicy Tuna are customer favorites too. Our chefs can recommend your perfect roll." },
+    { question: "What's fresh and flavorful sushi?", answer: "We use fresh, never-frozen fish. Our sushi chefs are trained for years. Proper rice seasoning, expert knife work, traditional technique." },
+    { question: "Can I try different sushi at Jinbeh?", answer: "Yes! We have rolls, nigiri, sashimi, specialty creations. Sushi bar seating lets you watch our chefs work. Frisco (214) 618-9888 or Lewisville (214) 618-9798." },
+];
+
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-        {
-            "@type": "Question",
-            name: "What is the difference between nigiri and sashimi?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Nigiri is a slice of raw fish placed on top of a small mound of seasoned rice, while sashimi is just the raw fish without any rice. Both showcase the quality of the fish, but nigiri offers the added texture and flavor of the rice.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "What sushi is best for beginners?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "We recommend starting with cooked rolls like the California Roll (crab, avocado, cucumber), Shrimp Tempura Roll, or the Philadelphia Roll (smoked salmon, cream cheese). These are milder in flavor and help newcomers ease into sushi.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "What is the most popular sushi roll?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "The California Roll is the most popular sushi roll in America. At Jinbeh, our Dragon Roll (eel, avocado, unagi sauce) and Spicy Tuna Roll are also customer favorites.",
-            },
-        },
-    ],
+    mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
 };
 
 export default function TypesOfSushi() {
@@ -266,6 +250,29 @@ export default function TypesOfSushi() {
                                     </table>
                                 </div>
 
+                                {/* Internal Links - Sushi Cluster */}
+                                <div className="my-12 p-6 bg-accent-red/10 rounded-2xl border-2 border-accent-red/30">
+                                    <h3 className="font-heading font-bold text-lg text-charcoal mb-4">Explore Related Sushi Articles:</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <Link href="/blog/sashimi-vs-sushi" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Sashimi vs Sushi</p>
+                                            <p className="text-sm text-charcoal/70">Understand the key differences</p>
+                                        </Link>
+                                        <Link href="/blog/how-to-eat-sushi-guide" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">How to Eat Sushi Guide</p>
+                                            <p className="text-sm text-charcoal/70">Master proper etiquette & tips</p>
+                                        </Link>
+                                        <Link href="/blog/sushi-identification-chart" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Sushi Identification Chart</p>
+                                            <p className="text-sm text-charcoal/70">Complete sushi reference guide</p>
+                                        </Link>
+                                        <Link href="/blog/what-is-omakase" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">What is Omakase?</p>
+                                            <p className="text-sm text-charcoal/70">Discover the ultimate sushi experience</p>
+                                        </Link>
+                                    </div>
+                                </div>
+
                                 {/* Image Gallery */}
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                     <div className="relative aspect-square rounded-xl overflow-hidden group">
@@ -391,62 +398,35 @@ export default function TypesOfSushi() {
                                         Discover your new favorite sushi at Jinbeh. Fresh fish, expert rolls, unforgettable flavors.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            View Sushi Menu
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                            Reserve Now
                                         </Link>
-                                        <Link href="/frisco#reserve" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            Reserve Your Table
+                                        <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                            View Frisco Menu
+                                        </Link>
+                                        <Link href="/lewisville/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                            View Lewisville Menu
                                         </Link>
                                     </div>
+                                </div>
+
+                                {/* Location Links */}
+                                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <Link href="/frisco" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 Jinbeh Frisco</h3>
+                                        <p className="text-charcoal/70 text-sm">Visit our Frisco location for authentic sushi and Japanese cuisine</p>
+                                    </Link>
+                                    <Link href="/lewisville" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 Jinbeh Lewisville</h3>
+                                        <p className="text-charcoal/70 text-sm">Experience fine dining at our Lewisville Japanese restaurant</p>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Related Articles</h3>
-                                <div className="space-y-4">
-                                    <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi Frisco" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi Frisco TX</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/sake-sushi-pairing" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-purple-600">🍶 Beverages</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Sushi Pairing Guide</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/japanese-omakase" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/15-C060324-6663.jpg" alt="Omakase" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-orange-500">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Japanese Omakase Experience</h4>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-orange-500/10 text-orange-500">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍶 Beverages</Link>
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📍 Locations</Link>
-                                    </div>
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="types-of-sushi" />
                         </aside>
                     </div>
                 </div>

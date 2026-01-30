@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Best Hibachi Dallas TX: Top Restaurants & Experiences | Jinbeh",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Best Hibachi Dallas TX: Top Restaurants & Experiences",
         description: "Your guide to the best hibachi restaurants in Dallas-Fort Worth.",
-        images: ["/images/blog/1-C060324-6328.jpg"],
+        images: ["/images/blog/4-C060324-6380.jpg"],
     },
 };
 
@@ -31,35 +32,40 @@ const articleSchema = {
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
+const faqs = [
+    {
+        question: "What is the difference between hibachi and teppanyaki?",
+        answer: "In America, the terms are often used interchangeably, but technically hibachi refers to a small charcoal grill, while teppanyaki means cooking on a flat iron griddle. What most people call 'hibachi' in restaurants is actually teppanyaki-style cooking with the chef performing at your table.",
+    },
+    {
+        question: "How much does hibachi cost in Dallas?",
+        answer: "Hibachi dinners in Dallas typically range from $20-45 per person, depending on the protein selection. At Jinbeh, our hibachi entrees include soup, salad, vegetables, fried rice, and the entertaining chef show—all for great value.",
+    },
+    {
+        question: "Do I need reservations for hibachi?",
+        answer: "We highly recommend reservations for hibachi dining, especially on weekends and for groups. Visit our Frisco or Lewisville location pages to reserve online.",
+    },
+    {
+        question: "Is hibachi good for large groups and celebrations?",
+        answer: "Absolutely! Hibachi is perfect for birthdays, anniversaries, team dinners, and corporate events. The shared table experience creates unforgettable memories. Jinbeh specializes in group celebrations.",
+    },
+    {
+        question: "Can I order hibachi for catering or private events?",
+        answer: "Yes! We offer hibachi catering for private events and corporate functions. Our on-site chefs bring the full dining experience to you. Contact us or visit our catering page for custom packages.",
+    },
+];
+
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-        {
-            "@type": "Question",
-            name: "What is the difference between hibachi and teppanyaki?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "In America, the terms are often used interchangeably, but technically hibachi refers to a small charcoal grill, while teppanyaki means cooking on a flat iron griddle. What most people call 'hibachi' in restaurants is actually teppanyaki-style cooking with the chef performing at your table.",
-            },
+    mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
         },
-        {
-            "@type": "Question",
-            name: "How much does hibachi cost in Dallas?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Hibachi dinners in Dallas typically range from $20-45 per person, depending on the protein selection. At Jinbeh, our hibachi entrees include soup, salad, vegetables, fried rice, and the entertaining chef show—all for great value.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "Do I need reservations for hibachi?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "We highly recommend reservations for hibachi dining, especially on weekends and for groups. At Jinbeh, you can make reservations online through OpenTable or by calling our Frisco or Lewisville locations directly.",
-            },
-        },
-    ],
+    })),
 };
 
 export default function BestHibachiDallas() {
@@ -231,9 +237,10 @@ export default function BestHibachiDallas() {
 
                                     <ul className="space-y-2">
                                         <li><strong>Family-owned since 1988</strong> — We're not a franchise. Every meal is personal.</li>
-                                        <li><strong>Two convenient DFW locations</strong> — Frisco (near Stonebriar) and Lewisville (off I-35E)</li>
+                                        <li><strong>Two convenient DFW locations</strong> — <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> (near Stonebriar) and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> (off I-35E)</li>
                                         <li><strong>Hibachi + Sushi under one roof</strong> — Can't decide? Get both.</li>
-                                        <li><strong>Perfect for celebrations</strong> — Birthdays, anniversaries, team dinners</li>
+                                        <li><strong>Perfect for celebrations</strong> — <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">Birthdays</Link>, anniversaries, team dinners</li>
+                                        <li><strong>Catering services available</strong> — Bring the show to your <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">corporate events or private parties</Link></li>
                                     </ul>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -264,49 +271,17 @@ export default function BestHibachiDallas() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What is the difference between hibachi and teppanyaki?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    In America, the terms are often used interchangeably, but technically <strong>hibachi</strong> refers
-                                                    to a small charcoal grill, while <strong>teppanyaki</strong> means cooking on a flat iron griddle.
-                                                    What most people call "hibachi" in restaurants is actually teppanyaki-style cooking with
-                                                    the chef performing at your table.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How much does hibachi cost in Dallas?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Hibachi dinners in Dallas typically range from <strong>$20-45 per person</strong>, depending
-                                                    on the protein selection. At Jinbeh, our hibachi entrees include soup, salad, vegetables,
-                                                    fried rice, and the entertaining chef show—all for great value.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Do I need reservations for hibachi?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    We <strong>highly recommend reservations</strong> for hibachi dining, especially on weekends
-                                                    and for groups. At Jinbeh, you can make reservations online through OpenTable or by calling
-                                                    our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or
-                                                    <Link href="/lewisville" className="text-accent-red hover:underline"> Lewisville</Link> locations directly.
-                                                </p>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, index) => (
+                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
                                     </div>
                                 </div>
 
@@ -328,50 +303,10 @@ export default function BestHibachiDallas() {
                             </div>
                         </article>
 
-                        {/* Sidebar */}
+                        {/* Sidebar with Related Articles */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Related Articles</h3>
-                                <div className="space-y-4">
-                                    <Link href="/blog/hibachi-birthday-party-ideas" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/22-C060324-6829.jpg" alt="Birthday" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-accent-red">🎉 Celebrations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Hibachi Birthday Party Ideas</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/discover-teppanyaki" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/3-C060324-6364.jpg" alt="Teppanyaki" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Discover Teppanyaki: A Culinary Art</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/best-sushi-dallas" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/8-C060324-6462.jpg" alt="Sushi Dallas" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi Dallas: Top Spots</h4>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo">📍 Locations</Link>
-                                        <Link href="/blog?category=celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🎉 Celebrations</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍣 Cuisine</Link>
-                                    </div>
-                                </div>
+                            <div className="sticky top-24">
+                                <RelatedArticles currentSlug="best-hibachi-dallas-tx" />
                             </div>
                         </aside>
                     </div>

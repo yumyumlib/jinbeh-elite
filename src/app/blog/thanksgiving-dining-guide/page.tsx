@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Thanksgiving Dining Guide | Japanese Catering Frisco, DFW | Jinbeh",
@@ -22,16 +23,24 @@ export const metadata: Metadata = {
         title: "Thanksgiving Dining at Jinbeh | Japanese Catering & Dine-In Options",
         description:
             "Experience a unique Thanksgiving with Japanese cuisine. Catering, dine-in, and special holiday menu options available at Jinbeh Frisco & Lewisville.",
-        images: ["/images/blog/thanksgiving-dining-hero.jpg"],
+        images: ["/images/blog/24-C060324-6852.jpg"],
     },
 };
+
+const faqs = [
+    { question: "Does Jinbeh offer Thanksgiving catering?", answer: "Yes! We offer catering for Frisco and DFW. Customizable menus, delivery, and full setups for any size group. Call us for quotes and packages." },
+    { question: "What's the ordering deadline for Thanksgiving catering?", answer: "Order 7-10 days ahead for best options. Late orders may work depending on bookings. Call us directly for availability." },
+    { question: "Are you open on Thanksgiving Day?", answer: "Jinbeh is usually open Thanksgiving for dine-in service. Hours vary by location. Call (214) 618-9888 Frisco or (214) 618-9798 Lewisville to confirm." },
+    { question: "Why choose Japanese for Thanksgiving?", answer: "It's a celebration! Japanese cuisine offers variety and interactive dining like hibachi. Lighter options and a fresh take on the holiday. Perfect for families!" },
+    { question: "Can you accommodate dietary restrictions?", answer: "Absolutely! We specialize in gluten-free, vegetarian, vegan, and allergy-friendly options. Tell us when ordering and we'll create the perfect menu." }
+];
 
 const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "The Ultimate Thanksgiving Dining Guide | Japanese Alternatives & Catering in Frisco & DFW",
     description: "Explore unique Thanksgiving dining options at Jinbeh: catering services, dine-in availability, special menu suggestions, and ordering deadlines for the Frisco and DFW areas.",
-    image: "https://jinbeh.com/images/blog/thanksgiving-dining-hero.jpg",
+    image: "https://jinbeh.com/images/blog/24-C060324-6852.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-01-29",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -99,14 +108,13 @@ export default function ThanksgivingDiningGuide() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden bg-gradient-to-b from-charcoal to-charcoal/80">
-                <div
-                    className="absolute inset-0 opacity-40"
-                    style={{
-                        backgroundImage: "url('/images/blog/thanksgiving-dining-bg.jpg')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                    }}
+            <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
+                <Image
+                    src="/images/blog/24-C060324-6852.jpg"
+                    alt="Birthday celebration at Jinbeh hibachi restaurant"
+                    fill
+                    className="object-cover"
+                    priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-transparent" />
 
@@ -120,7 +128,9 @@ export default function ThanksgivingDiningGuide() {
                             Blog
                         </Link>
                         <span>/</span>
-                        <span className="text-warm-ivory">Thanksgiving</span>
+                        <Link href="/celebrations" className="hover:text-white transition-colors">
+                            Celebrations
+                        </Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -629,101 +639,17 @@ export default function ThanksgivingDiningGuide() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                What areas do you deliver catering to for Thanksgiving?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    We deliver throughout the Frisco and greater Dallas-Fort Worth (DFW) area. For specific delivery
-                                                    locations or large events requiring specialized logistics, contact our catering team for a custom quote.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                Do you offer vegetarian or vegan Thanksgiving catering?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    Absolutely! We specialize in customizable catering. We offer vegetarian and vegan options including:
-                                                </p>
-                                                <ul className="list-disc list-inside space-y-1 text-sm">
-                                                    <li>Vegetable tempura and gyoza</li>
-                                                    <li>Vegetable sushi rolls and rolls with plant-based proteins</li>
-                                                    <li>Edamame and seaweed salad</li>
-                                                    <li>Vegetable-based soups and sides</li>
-                                                </ul>
-                                                <p className="mt-3">
-                                                    Tell us your dietary preferences when ordering, and we'll create a delicious menu everyone enjoys.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                Can we customize our catering menu for Thanksgiving?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Yes! Customization is one of our strengths. We work with you to create a menu that fits your group's
-                                                    tastes, dietary needs, and budget. Whether you want specific proteins, certain dishes excluded, or
-                                                    unique flavor profiles, our team will accommodate you.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                How far in advance should we make a dine-in reservation?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    We recommend reservations 2-3 weeks in advance for Thanksgiving Day. Our locations fill up quickly
-                                                    during the holiday season. That said, we try to accommodate walk-ins and last-minute reservations
-                                                    when possible—call ahead to check availability.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                What payment methods do you accept for Thanksgiving catering?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    We accept all major credit cards, debit cards, and bank transfers. A deposit is typically required
-                                                    to secure your catering order, with the balance due upon delivery or pickup. Discuss payment terms
-                                                    with our catering coordinator.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                Are allergies and dietary restrictions handled carefully?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    Yes, we take allergies and dietary restrictions very seriously. Please inform us of any allergies or
-                                                    restrictions when placing your order. Our kitchen team uses proper food handling procedures to prevent
-                                                    cross-contamination. Common accommodations include:
-                                                </p>
-                                                <ul className="list-disc list-inside space-y-1 text-sm">
-                                                    <li>Gluten-free options</li>
-                                                    <li>Shellfish-free preparations</li>
-                                                    <li>Nut-free selections</li>
-                                                    <li>Dairy-free alternatives</li>
-                                                </ul>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, i) => (
+                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -775,8 +701,9 @@ export default function ThanksgivingDiningGuide() {
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">📚 In This Guide</h3>
+                            <div>
+                                <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24 mb-8">
+                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-6">📚 In This Guide</h3>
                                 <nav className="space-y-3">
                                     <a
                                         href="#why-japanese"
@@ -923,6 +850,9 @@ export default function ThanksgivingDiningGuide() {
                                         </Link>
                                     </div>
                                 </div>
+                            </div>
+
+                            <RelatedArticles currentSlug="thanksgiving-dining-guide" />
                             </div>
                         </aside>
                     </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "How to Eat Sushi: Complete Etiquette & Eating Tips Guide | Jinbeh",
@@ -32,6 +33,14 @@ const articleSchema = {
     dateModified: "2026-01-29",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
+
+const faqs = [
+    { question: "Should I eat sushi with chopsticks or fingers?", answer: "Both work! Hands are traditional for nigiri sushi. Chopsticks are better for rolls. Use whichever you're comfortable with." },
+    { question: "Which side should I dip in soy sauce?", answer: "Dip the fish side, not the rice. Light dip only. Too much soy overpowers the chef's seasoned rice." },
+    { question: "How do I use wasabi and ginger?", answer: "Pickled ginger cleans your palate between bites. Use wasabi on the fish or mix it lightly. Don't pile it on like ketchup!" },
+    { question: "What are common sushi etiquette mistakes?", answer: "Don't use spoons for soy sauce. Never rub chopsticks together. Don't stick chopsticks in rice upright. Never waste food." },
+    { question: "Should I eat sushi in one bite?", answer: "Yes, when possible! One bite lets all flavors blend. This is the traditional way. It's perfect for your palate." }
+];
 
 const faqSchema = {
     "@context": "https://schema.org",
@@ -680,87 +689,17 @@ export default function HowToEatSushi() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Is it better to eat sushi with chopsticks or fingers?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Both are completely acceptable! In Japan, using your fingers for nigiri is actually traditional and preferred.
-                                                    Chopsticks are better for rolls and sashimi. Choose whichever method makes you most comfortable.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Which side of sushi should I dip in soy sauce?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Always dip the <strong>fish side</strong>, never the rice side. The rice is already seasoned by the chef.
-                                                    Dipping the rice absorbs too much soy sauce and ruins the carefully balanced seasoning. Just a light dip is enough!
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How should I use wasabi and ginger when eating sushi?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Use <strong>pickled ginger as a palate cleanser</strong> between different pieces of sushi. Apply <strong>wasabi sparingly</strong>,
-                                                    either directly to the fish or dab a tiny amount on the side of your soy sauce. Avoid piling wasabi like a topping
-                                                    or mixing it with soy sauce into a paste.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What are the most common sushi etiquette mistakes?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Common mistakes include: (1) Dipping the rice side instead of fish, (2) Over-applying wasabi,
-                                                    (3) Mixing soy sauce and wasabi into a paste, (4) Taking tiny bites instead of one bite,
-                                                    (5) Using ginger as a topping, (6) Rubbing chopsticks together, and (7) Wasting food.
-                                                    Now you'll avoid them all!
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Can I eat sushi with my hands?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Yes! In Japan, it's traditional to eat nigiri sushi with your hands. This is completely acceptable
-                                                    and often preferred. It gives you better control and allows you to feel the temperature of the fish.
-                                                    Rolls are typically eaten with chopsticks.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Should I eat sushi in one bite?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Yes, try to eat nigiri in one bite when possible. This allows all the flavors—fish, rice, and any toppings—
-                                                    to blend together. If a piece is too large, two bites are acceptable, but avoid nibbling or breaking it apart.
-                                                </p>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, i) => (
+                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
                                     </div>
                                 </div>
 
@@ -781,25 +720,44 @@ export default function HowToEatSushi() {
                                     </div>
                                 </div>
 
-                                {/* Additional CTA - Blog Links */}
-                                <div className="mt-12 p-8 bg-warm-ivory rounded-2xl">
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">Want to Learn More?</h3>
+                                {/* Sushi Cluster Links */}
+                                <div className="mt-12 p-8 bg-accent-red/10 rounded-2xl border-2 border-accent-red/30">
+                                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">🍣 Complete Your Sushi Education</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <Link href="/blog/types-of-sushi" className="p-4 border-2 border-orange-500 rounded-xl hover:bg-orange-500/10 transition-colors">
+                                        <Link href="/blog/types-of-sushi" className="p-4 border-2 border-accent-red rounded-xl hover:bg-accent-red/10 transition-colors">
                                             <p className="font-semibold text-charcoal">Types of Sushi</p>
                                             <p className="text-charcoal/70 text-sm mt-1">Explore nigiri, rolls, and specialty creations</p>
                                         </Link>
-                                        <Link href="/blog/sashimi-vs-sushi" className="p-4 border-2 border-orange-500 rounded-xl hover:bg-orange-500/10 transition-colors">
+                                        <Link href="/blog/sashimi-vs-sushi" className="p-4 border-2 border-accent-red rounded-xl hover:bg-accent-red/10 transition-colors">
                                             <p className="font-semibold text-charcoal">Sashimi vs Sushi</p>
                                             <p className="text-charcoal/70 text-sm mt-1">Understand the key differences</p>
                                         </Link>
-                                        <Link href="/blog/sake-pairing-guide" className="p-4 border-2 border-orange-500 rounded-xl hover:bg-orange-500/10 transition-colors">
-                                            <p className="font-semibold text-charcoal">Sake Pairing Guide</p>
-                                            <p className="text-charcoal/70 text-sm mt-1">Perfect your sushi with sake</p>
+                                        <Link href="/blog/sushi-identification-chart" className="p-4 border-2 border-accent-red rounded-xl hover:bg-accent-red/10 transition-colors">
+                                            <p className="font-semibold text-charcoal">Sushi Identification Chart</p>
+                                            <p className="text-charcoal/70 text-sm mt-1">Complete reference guide to all sushi</p>
                                         </Link>
-                                        <Link href="/blog/sushi-for-beginners" className="p-4 border-2 border-orange-500 rounded-xl hover:bg-orange-500/10 transition-colors">
-                                            <p className="font-semibold text-charcoal">Sushi for Beginners</p>
-                                            <p className="text-charcoal/70 text-sm mt-1">Start your sushi journey right</p>
+                                        <Link href="/blog/what-is-omakase" className="p-4 border-2 border-accent-red rounded-xl hover:bg-accent-red/10 transition-colors">
+                                            <p className="font-semibold text-charcoal">What is Omakase?</p>
+                                            <p className="text-charcoal/70 text-sm mt-1">Discover the ultimate dining experience</p>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                {/* Location CTA */}
+                                <div className="mt-12 p-8 bg-gradient-to-r from-orange-500/10 to-soft-gold/10 rounded-2xl border-l-4 border-orange-500">
+                                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">📍 Ready to Practice Your Etiquette?</h3>
+                                    <p className="text-charcoal/80 mb-6">
+                                        Visit Jinbeh in Frisco or Lewisville and put your sushi knowledge to work. Our expert chefs will appreciate your respect for the craft.
+                                    </p>
+                                    <div className="flex flex-col sm:flex-row gap-4">
+                                        <Link href="/frisco" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
+                                            Visit Frisco
+                                        </Link>
+                                        <Link href="/lewisville" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
+                                            Visit Lewisville
+                                        </Link>
+                                        <Link href="/reservations" className="flex-1 bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors text-center">
+                                            Reserve Your Table
                                         </Link>
                                     </div>
                                 </div>
@@ -808,59 +766,7 @@ export default function HowToEatSushi() {
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Related Articles</h3>
-                                <div className="space-y-4">
-                                    <Link href="/blog/types-of-sushi" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Types of sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-orange-500">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sushi Guide</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/sashimi-vs-sushi" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Sashimi vs sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-orange-500">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sashimi vs Sushi Explained</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/sake-pairing-guide" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-purple-600">🍶 Beverages</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Pairing Guide</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/13-C060324-6582.jpg" alt="Best sushi Frisco" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi in Frisco</h4>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-orange-500/10 text-orange-500">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍶 Beverages</Link>
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📍 Locations</Link>
-                                    </div>
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="how-to-eat-sushi-guide" />
                         </aside>
                     </div>
                 </div>

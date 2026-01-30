@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Sashimi vs Sushi: Key Differences Explained | Jinbeh",
@@ -12,6 +13,14 @@ export const metadata: Metadata = {
     }
 };
 
+const faqs = [
+    { question: "What's the difference between sashimi and sushi?", answer: "Sashimi is sliced raw fish, no rice. Sushi combines rice with fish and vegetables. Sashimi focuses on pure fish flavor. Sushi is a complete dish." },
+    { question: "Is sashimi always raw?", answer: "Yes, traditional sashimi is raw. We use fresh and flavorful sushi-grade fish. Some cooked options exist, like shrimp sashimi. Our chefs ensure highest standards." },
+    { question: "Can I order sashimi without rice?", answer: "Yes! Sashimi is meant without rice. Served on ice with soy sauce, wasabi, and pickled ginger. It's lighter and protein-focused. Perfect for you." },
+    { question: "Is sashimi healthier than sushi?", answer: "Sashimi is higher protein, lower calories—no rice. About 30-50 calories per serving. Sushi rolls are 200-300 calories. Both are delicious and healthy!" },
+    { question: "How do I eat sashimi?", answer: "Dip lightly in soy sauce mixed with wasabi. Eat in one bite. Experience the fish flavor fully. Our bartenders show you how if you're new to sashimi." },
+];
+
 const schemas = [
     {
         "@context": "https://schema.org",
@@ -20,55 +29,12 @@ const schemas = [
         description: "Complete guide to understanding the differences between sashimi and sushi",
         datePublished: "2026-01-29",
         dateModified: "2026-01-29",
-        author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
-        publisher: { "@type": "Organization", name: "Jinbeh", logo: { "@type": "ImageObject", url: "https://jinbeh.com/logo.png", width: 250, height: 60 } },
-        image: "/images/blog/sashimi-vs-sushi.jpg"
+        author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }
     },
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: [
-            {
-                "@type": "Question",
-                name: "What is the main difference between sashimi and sushi?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "The main difference is that sashimi is sliced raw fish without rice, while sushi combines rice with various ingredients including fish, vegetables, and seafood. Sashimi focuses on the pure flavor of the fish, whereas sushi is a complete dish with rice as the foundation."
-                }
-            },
-            {
-                "@type": "Question",
-                name: "Is sashimi always raw?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, traditional sashimi is always raw. The quality and freshness of the fish are paramount. However, some cooked variations exist, such as cooked shrimp sashimi or octopus sashimi. At Jinbeh, we ensure all our sashimi-grade fish meets the highest standards."
-                }
-            },
-            {
-                "@type": "Question",
-                name: "Can I order sashimi without rice?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes! Sashimi is specifically designed to be enjoyed without rice. It's typically served on a bed of ice with soy sauce, wasabi, and pickled ginger. Many customers prefer sashimi for a lighter, protein-focused meal."
-                }
-            },
-            {
-                "@type": "Question",
-                name: "Which has more nutritional value, sashimi or sushi?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Sashimi is typically higher in protein and lower in calories since it has no rice. A typical sashimi serving (6 pieces) has about 30-50 calories, while sushi rolls can range from 200-300 calories depending on ingredients."
-                }
-            },
-            {
-                "@type": "Question",
-                name: "What is the best way to eat sashimi?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Sashimi is best enjoyed by dipping each slice lightly in soy sauce mixed with wasabi, then eating it in one bite. This allows you to experience the full flavor profile of the fish without overwhelming your palate."
-                }
-            }
-        ]
+        mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } }))
     }
 ];
 
@@ -429,108 +395,52 @@ export default function SashimiVsSushi() {
                                 </div>
                             </div>
 
+                            {/* Related Sushi Cluster Articles */}
+                            <div className="my-12 p-6 bg-accent-red/10 rounded-2xl border-2 border-accent-red/30">
+                                <h3 className="font-heading font-bold text-lg text-charcoal mb-4">📚 Complete Your Sushi Knowledge:</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <Link href="/blog/types-of-sushi" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                        <p className="font-semibold text-charcoal">Types of Sushi</p>
+                                        <p className="text-sm text-charcoal/70">Explore nigiri, rolls, and specialty varieties</p>
+                                    </Link>
+                                    <Link href="/blog/how-to-eat-sushi-guide" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                        <p className="font-semibold text-charcoal">How to Eat Sushi</p>
+                                        <p className="text-sm text-charcoal/70">Master etiquette and proper techniques</p>
+                                    </Link>
+                                    <Link href="/blog/sushi-identification-chart" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                        <p className="font-semibold text-charcoal">Sushi Identification Chart</p>
+                                        <p className="text-sm text-charcoal/70">Complete reference for all sushi types</p>
+                                    </Link>
+                                    <Link href="/blog/what-is-omakase" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                        <p className="font-semibold text-charcoal">What is Omakase?</p>
+                                        <p className="text-sm text-charcoal/70">Experience the ultimate sushi dining</p>
+                                    </Link>
+                                </div>
+                            </div>
+
                             {/* Internal Links Section */}
                             <div className="mt-12 pt-8 border-t-2 border-charcoal/10">
-                                <h3 className="text-xl font-bold text-charcoal mb-4">Explore More</h3>
+                                <h3 className="text-xl font-bold text-charcoal mb-4">Visit Jinbeh Today</h3>
                                 <div className="grid sm:grid-cols-2 gap-4">
-                                    <Link href="/menu" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        → Full Menu
-                                    </Link>
-                                    <Link href="/blog" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        → All Blog Posts
-                                    </Link>
                                     <Link href="/frisco" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        → Frisco Location
+                                        📍 Frisco Location
                                     </Link>
                                     <Link href="/lewisville" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        → Lewisville Location
+                                        📍 Lewisville Location
+                                    </Link>
+                                    <Link href="/reservations" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
+                                        🎯 Make a Reservation
+                                    </Link>
+                                    <Link href="/frisco/menu" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
+                                        🍽️ View Our Menu
                                     </Link>
                                 </div>
                             </div>
                         </article>
 
                         {/* Sidebar */}
-                        <aside>
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="font-heading font-bold text-lg text-charcoal mb-4">Related Articles</h3>
-                                <div className="space-y-4">
-                                    {[
-                                        {
-                                            title: "Types of Sushi Explained",
-                                            slug: "/blog/types-of-sushi",
-                                            image: "/images/blog/12-C060324-6551.jpg"
-                                        },
-                                        {
-                                            title: "Best Sushi in Frisco",
-                                            slug: "/blog/best-sushi-frisco",
-                                            image: "/images/blog/best-sushi-frisco.jpg"
-                                        },
-                                        {
-                                            title: "Japanese Drinks Guide",
-                                            slug: "/blog/japanese-drinks",
-                                            image: "/images/blog/japanese-drinks.jpg"
-                                        },
-                                        {
-                                            title: "Discover Teppanyaki",
-                                            slug: "/blog/discover-teppanyaki",
-                                            image: "/images/blog/discover-teppanyaki.jpg"
-                                        },
-                                        {
-                                            title: "Best Japanese Lewisville",
-                                            slug: "/blog/japanese-restaurants-lewisville",
-                                            image: "/images/blog/japanese-restaurants-lewisville.jpg"
-                                        }
-                                    ].map((article) => (
-                                        <Link
-                                            key={article.slug}
-                                            href={article.slug}
-                                            className="flex gap-3 group hover:opacity-80 transition"
-                                        >
-                                            <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                                                <Image
-                                                    src={article.image}
-                                                    alt={article.title}
-                                                    fill
-                                                    className="object-cover"
-                                                />
-                                            </div>
-                                            <span className="text-sm text-charcoal/80 group-hover:text-accent-red font-medium leading-tight">
-                                                {article.title}
-                                            </span>
-                                        </Link>
-                                    ))}
-                                </div>
-
-                                {/* Quick Stats Box */}
-                                <div className="mt-8 p-4 bg-warm-ivory rounded-xl border-2 border-accent-red/20">
-                                    <h4 className="font-bold text-charcoal mb-3">Quick Facts</h4>
-                                    <div className="space-y-2 text-sm text-charcoal/80">
-                                        <div>
-                                            <span className="font-semibold">Sashimi Calories:</span> 30-50 per serving
-                                        </div>
-                                        <div>
-                                            <span className="font-semibold">Sushi Calories:</span> 200-300 per roll
-                                        </div>
-                                        <div>
-                                            <span className="font-semibold">Fish Grade:</span> Sashimi-grade only
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* CTA Card */}
-                                <div className="mt-6 p-5 bg-accent-red/10 rounded-xl border-2 border-accent-red">
-                                    <h4 className="font-bold text-charcoal mb-2">Visit Us Today</h4>
-                                    <p className="text-sm text-charcoal/80 mb-4">
-                                        Experience authentic sashimi and sushi at Jinbeh
-                                    </p>
-                                    <Link
-                                        href="/frisco/menu"
-                                        className="block w-full text-center bg-accent-red text-white py-2 rounded-lg font-semibold hover:bg-accent-red/90 transition"
-                                    >
-                                        Reserve Now
-                                    </Link>
-                                </div>
-                            </div>
+                        <aside className="lg:col-span-1">
+                            <RelatedArticles currentSlug="sashimi-vs-sushi" />
                         </aside>
                     </div>
                 </div>

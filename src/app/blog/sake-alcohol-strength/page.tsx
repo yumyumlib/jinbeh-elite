@@ -1,20 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Sake Alcohol Strength: ABV & Types | Jinbeh",
-    description: "Learn about sake alcohol content, ABV, and types. From junmai to daiginjo. Explore Jinbeh's sake selection.",
-    keywords: ["sake alcohol content", "sake abv", "types of sake", "sake strength"],
+    description: "Learn about sake alcohol content, ABV, and types. From junmai to daiginjo. Explore Jinbeh's sake selection and premium offerings.",
+    keywords: ["sake alcohol content", "sake abv", "types of sake", "sake strength", "sake guide", "sake pairing"],
+    openGraph: {
+        title: "Sake Alcohol Strength: ABV & Complete Guide",
+        description: "Master sake alcohol content and discover which types suit your taste.",
+        images: ["/images/drinks/JinbehPunchBeverageDrink.jpg"],
+    },
 };
+
+const faqs = [
+    { question: "How strong is sake?", answer: "Welcome to sake! It's 15-17% ABV, similar to wine. It's brewed like beer but stronger. Not as strong as whiskey." },
+    { question: "Should I serve sake hot or cold?", answer: "Premium sake cold. Fuller sake can be warm. Our bartenders will suggest the perfect temperature for your selection." },
+    { question: "What's the difference between sake types?", answer: "Junmai is fuller. Daiginjo is lighter. Nigori is cloudy and sweet. Honjozo is smooth. Our staff can match your preference." },
+    { question: "Does Jinbeh have sake?", answer: "Yes! We offer sake flights, premium selections, and sake bombs. Our bartenders know how to pair sake with food. Ask for recommendations." },
+    { question: "What sake pairs with sushi?", answer: "Junmai or Nigori work well. Daiginjo is elegant. Sake bombs are fun for celebrations. Come try our sake selection at Jinbeh." },
+];
 
 const schemas = [
     { "@context": "https://schema.org", "@type": "Article", headline: "Sake Alcohol Strength Guide", datePublished: "2026-01-20", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "How strong is sake?", acceptedAnswer: { "@type": "Answer", text: "Sake is 15-17% ABV, similar to wine but lower than spirits." } },
-            { "@type": "Question", name: "Serve sake hot or cold?", acceptedAnswer: { "@type": "Answer", text: "Premium daiginjo cold; fuller junmai can be warm." } }
-        ]
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } }))
     }
 ];
 
@@ -76,12 +87,14 @@ export default function SakeGuide() {
                                 </div>
                             </div>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-3">
                                 {[
-                                    { q: "How strong is sake vs wine?", a: "Sake is 15-17% ABV, slightly stronger than wine (12-14%)." },
-                                    { q: "What's a sake bomb?", a: "Shot of sake dropped into beer—fun party drink! Half-price at Jinbeh happy hour." },
-                                    { q: "Best food with sake?", a: "Light sakes pair with sashimi; richer junmai complements hibachi." }
+                                    { q: "How strong is sake compared to wine?", a: "Sake typically contains 15-17% ABV, making it slightly stronger than wine (12-14% ABV) but lower than spirits like whiskey (40% ABV). This makes sake an excellent middle ground for those seeking a balanced alcohol content." },
+                                    { q: "Does sake alcohol strength vary by type?", a: "Yes. Sparkling sake ranges from 5-12% ABV with a lighter feel, while traditional types like Junmai, Ginjo, and Daiginjo hover around 15-17% ABV. The alcohol content is influenced by brewing methods and sugar fermentation." },
+                                    { q: "What's the best sake for beginners?", a: "Honjozo or entry-level Junmai sake (15-16% ABV) are excellent starting points. They offer approachable flavors and balanced strength without overwhelming newcomers. Visit Jinbeh's happy hour to sample different varieties at special prices." },
+                                    { q: "What is sake bombing and where can I try it?", a: "Sake bombing involves dropping a shot glass of sake into a beer. It's a fun party drink combining both beverages. Jinbeh offers sake bombs at happy hour with special pricing—a perfect way to experience this playful tradition." },
+                                    { q: "How does sake alcohol affect food pairing?", a: "Higher ABV sakes (16-17%) pair with bold, grilled hibachi dishes, while lower ABV varieties work with delicate sashimi. Temperature also matters—warm sake (104-113°F) intensifies umami with rich foods, while chilled sake (50-55°F) pairs with light dishes." }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
                                         <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.q}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
@@ -91,27 +104,18 @@ export default function SakeGuide() {
                             </div>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-purple-600 to-deep-indigo rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍶 Explore Our Sake Selection</h3>
+                                <h3 className="text-2xl font-heading font-bold mb-4">🍶 Experience Premium Sake at Jinbeh</h3>
+                                <p className="mb-6 text-white/90">Discover our curated sake selection at both Frisco and Lewisville locations. Whether you're interested in sake bombs at happy hour or pairing the perfect sake with sushi or hibachi, our knowledgeable staff is ready to guide you.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-purple-600 px-6 py-3 rounded-xl font-semibold">View Menu</Link>
-                                    <Link href="/happy-hour" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Happy Hour</Link>
+                                    <Link href="/frisco/menu" className="bg-white text-purple-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
+                                    <Link href="/happy-hour" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Happy Hour Specials</Link>
                                 </div>
                             </div>
                         </article>
 
-                        <aside>
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="font-heading font-bold mb-4">Related</h3>
-                                <div className="space-y-3">
-                                    {[{ t: "Best Happy Hour Frisco", s: "/blog/best-happy-hour-frisco-tx", i: "/images/blog/10-C060324-6501.jpg" },
-                                    { t: "Types of Sushi", s: "/blog/types-of-sushi", i: "/images/blog/12-C060324-6551.jpg" }].map(r => (
-                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
-                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
+                        <aside className="lg:col-span-1">
+                            <RelatedArticles currentSlug="sake-alcohol-strength" />
                         </aside>
                     </div>
                 </div>

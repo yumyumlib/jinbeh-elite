@@ -1,0 +1,121 @@
+{
+  "locations": [
+    {
+      "slug": "frisco",
+      "name": "Frisco",
+      "neighborhood": "Near Stonebriar Centre, minutes from Legacy West",
+      "parking": "Ample parking in the shopping center lot",
+      "tagline": "The heart of Frisco's restaurant scene",
+      "phone": "(214) 618-9888"
+    },
+    {
+      "slug": "lewisville",
+      "name": "Lewisville",
+      "neighborhood": "Easy access from I-35E, near Vista Ridge Mall",
+      "parking": "Convenient strip mall parking",
+      "tagline": "Lewisville's go-to for Japanese cuisine",
+      "phone": "(214) 618-9798"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "hibachi",
+      "name": "Hibachi",
+      "voice": "Entertainment, fire show, family fun, onion volcano",
+      "visual": "Action shots, flames, chef tricks",
+      "keywords": ["hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"]
+    },
+    {
+      "slug": "sushi-rolls",
+      "name": "Sushi Rolls",
+      "voice": "Craftsmanship, freshness, artistry",
+      "visual": "Close-ups, sushi bar, chef hands",
+      "keywords": ["sushi rolls", "specialty rolls", "maki", "uramaki"]
+    },
+    {
+      "slug": "sashimi",
+      "name": "Sashimi",
+      "voice": "Purity, premium fish, elegant simplicity",
+      "visual": "Pristine cuts, beautiful presentation",
+      "keywords": ["sashimi", "raw fish", "sashimi platter", "fresh fish"]
+    },
+    {
+      "slug": "appetizers",
+      "name": "Appetizers",
+      "voice": "Shareability, group dining, perfect starters",
+      "visual": "Plating, variety, social eating",
+      "keywords": ["japanese appetizers", "starters", "small plates"]
+    },
+    {
+      "slug": "cocktails",
+      "name": "Cocktails & Sake",
+      "voice": "Celebration, happy hour, Asian-inspired",
+      "visual": "Glassware, garnishes, bar ambiance",
+      "keywords": ["japanese cocktails", "sake", "asian drinks", "happy hour"]
+    }
+  ],
+  "menuItems": {
+    "hibachi": [
+      {"slug": "filet-mignon", "name": "Filet Mignon", "description": "Premium beef tenderloin, perfectly seared on the teppan grill", "price": "$34.95"},
+      {"slug": "ny-strip", "name": "NY Strip Steak", "description": "Hand-cut New York strip with savory soy glaze", "price": "$32.95"},
+      {"slug": "ribeye", "name": "Ribeye Steak", "description": "Marbled ribeye with rich, beefy flavor", "price": "$35.95"},
+      {"slug": "chicken-teriyaki", "name": "Chicken Teriyaki", "description": "Tender chicken breast with house teriyaki glaze", "price": "$24.95"},
+      {"slug": "shrimp", "name": "Jumbo Shrimp", "description": "Succulent jumbo shrimp, flame-kissed to perfection", "price": "$28.95"},
+      {"slug": "scallops", "name": "Sea Scallops", "description": "Plump sea scallops seared with garlic butter", "price": "$32.95"},
+      {"slug": "lobster-tail", "name": "Lobster Tail", "description": "Sweet Maine lobster tail, butter-grilled", "price": "$44.95"},
+      {"slug": "salmon", "name": "Hibachi Salmon", "description": "Fresh Atlantic salmon with citrus teriyaki", "price": "$28.95"},
+      {"slug": "vegetable-tofu", "name": "Vegetable & Tofu", "description": "Fresh seasonal vegetables with crispy tofu", "price": "$19.95"},
+      {"slug": "combo-steak-shrimp", "name": "Steak & Shrimp Combo", "description": "Filet mignon paired with jumbo shrimp", "price": "$38.95"},
+      {"slug": "combo-steak-chicken", "name": "Steak & Chicken Combo", "description": "Filet mignon with chicken teriyaki", "price": "$36.95"},
+      {"slug": "combo-steak-lobster", "name": "Steak & Lobster Combo", "description": "Surf and turf perfection", "price": "$54.95"},
+      {"slug": "combo-seafood", "name": "Seafood Trio", "description": "Shrimp, scallops, and lobster", "price": "$52.95"},
+      {"slug": "imperial-dinner", "name": "Imperial Dinner", "description": "Filet mignon, lobster tail, and shrimp", "price": "$64.95"}
+    ],
+    "sushi-rolls": [
+      {"slug": "dragon-roll", "name": "Dragon Roll", "description": "Eel and cucumber topped with avocado and eel sauce", "price": "$16.95"},
+      {"slug": "rainbow-roll", "name": "Rainbow Roll", "description": "California roll topped with assorted sashimi", "price": "$17.95"},
+      {"slug": "spider-roll", "name": "Spider Roll", "description": "Soft shell crab with cucumber and spicy mayo", "price": "$15.95"},
+      {"slug": "caterpillar-roll", "name": "Caterpillar Roll", "description": "Eel roll topped with avocado slices", "price": "$15.95"},
+      {"slug": "volcano-roll", "name": "Volcano Roll", "description": "Spicy crab and avocado with baked seafood topping", "price": "$16.95"},
+      {"slug": "tiger-roll", "name": "Tiger Roll", "description": "Shrimp tempura with spicy tuna and jalapeño", "price": "$17.95"},
+      {"slug": "butterfly-kiss", "name": "Butterfly Kiss Roll", "description": "House specialty with cream cheese and crab", "price": "$18.95"},
+      {"slug": "ahi-tower", "name": "Ahi Tuna Tower", "description": "Layered ahi tuna, avocado, and crispy wonton", "price": "$19.95"},
+      {"slug": "philly-roll", "name": "Philadelphia Roll", "description": "Smoked salmon with cream cheese and cucumber", "price": "$12.95"},
+      {"slug": "spicy-tuna-roll", "name": "Spicy Tuna Roll", "description": "Fresh tuna with spicy mayo and scallions", "price": "$11.95"},
+      {"slug": "california-roll", "name": "California Roll", "description": "Crab, avocado, and cucumber classic", "price": "$9.95"},
+      {"slug": "shrimp-tempura-roll", "name": "Shrimp Tempura Roll", "description": "Crispy shrimp tempura with avocado", "price": "$13.95"},
+      {"slug": "vegas-roll", "name": "Vegas Roll", "description": "Deep-fried roll with spicy crab and cream cheese", "price": "$14.95"},
+      {"slug": "yellowtail-jalapeno", "name": "Yellowtail Jalapeño Roll", "description": "Fresh yellowtail with jalapeño and ponzu", "price": "$16.95"}
+    ],
+    "sashimi": [
+      {"slug": "salmon-sashimi", "name": "Salmon Sashimi", "description": "Fresh Atlantic salmon, sliced to perfection", "price": "$14.95"},
+      {"slug": "tuna-sashimi", "name": "Tuna Sashimi", "description": "Premium ahi tuna, melt-in-your-mouth tender", "price": "$16.95"},
+      {"slug": "yellowtail-sashimi", "name": "Yellowtail Sashimi", "description": "Buttery hamachi with delicate flavor", "price": "$15.95"},
+      {"slug": "octopus-sashimi", "name": "Octopus Sashimi", "description": "Tender tako with subtle sweetness", "price": "$14.95"},
+      {"slug": "sashimi-deluxe", "name": "Sashimi Deluxe Platter", "description": "Chef's selection of premium fish", "price": "$32.95"},
+      {"slug": "chirashi", "name": "Chirashi Bowl", "description": "Assorted sashimi over sushi rice", "price": "$28.95"},
+      {"slug": "omakase", "name": "Omakase Selection", "description": "Chef's choice tasting of the day's best", "price": "Market"}
+    ],
+    "appetizers": [
+      {"slug": "edamame", "name": "Edamame", "description": "Steamed soybeans with sea salt", "price": "$5.95"},
+      {"slug": "gyoza", "name": "Gyoza", "description": "Pan-fried pork dumplings with dipping sauce", "price": "$8.95"},
+      {"slug": "tempura", "name": "Shrimp Tempura", "description": "Light and crispy fried shrimp", "price": "$12.95"},
+      {"slug": "soft-shell-crab", "name": "Soft Shell Crab", "description": "Crispy fried soft shell crab", "price": "$14.95"},
+      {"slug": "tuna-tartare", "name": "Tuna Tartare", "description": "Diced ahi tuna with avocado and ponzu", "price": "$15.95"},
+      {"slug": "seared-tuna", "name": "Seared Ahi Tuna", "description": "Pepper-crusted ahi with wasabi aioli", "price": "$16.95"}
+    ],
+    "cocktails": [
+      {"slug": "sake-bomb", "name": "Sake Bomb", "description": "Classic sake dropped into cold beer", "price": "$8.00"},
+      {"slug": "jinbeh-punch", "name": "Jinbeh Punch", "description": "House specialty tropical cocktail", "price": "$12.00"},
+      {"slug": "tokyo-mule", "name": "Tokyo Mule", "description": "Japanese whiskey with ginger and lime", "price": "$14.00"},
+      {"slug": "lychee-martini", "name": "Lychee Martini", "description": "Vodka with lychee and a floral finish", "price": "$13.00"},
+      {"slug": "sake-flight", "name": "Sake Flight", "description": "Tasting of three premium sakes", "price": "$18.00"}
+    ]
+  },
+  "intents": [
+    {"slug": "best", "template": "Best {item} in {location}"},
+    {"slug": "authentic", "template": "Authentic {item} near {location}"},
+    {"slug": "birthday", "template": "{item} for birthday celebration in {location}"},
+    {"slug": "date-night", "template": "{item} for date night in {location}"}
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "categories": {
+    "hibachi": {
+      "hero": [
+        "/images/blog/3-C060324-6364.jpg",
+        "/images/blog/4-C060324-6380.jpg",
+        "/images/blog/5-C060324-6397.jpg",
+        "/images/blog/6-C060324-6405.jpg",
+        "/images/blog/8-C060324-6462.jpg"
+      ],
+      "inline": [
+        "/images/blog/7-C060324-6447.jpg",
+        "/images/blog/9-C060324-6484.jpg",
+        "/images/blog/10-C060324-6501.jpg",
+        "/images/blog/11-C060324-6544.jpg",
+        "/images/blog/12-C060324-6551.jpg"
+      ],
+      "video": [
+        "/videos/LOCAL-FRI-HIBACHI-chef-cooking-fire-family-01.mp4",
+        "/videos/LOCAL-FRI-HIBACHI-chef-red-hat-grill-prep-01.mp4",
+        "/videos/lewisville/hibachi-fire-01.mp4"
+      ],
+      "alt": "Jinbeh hibachi chef performing teppanyaki cooking show"
+    },
+    "sushi": {
+      "hero": [
+        "/images/blog/16-C060324-6670.jpg",
+        "/images/blog/17-C060324-6708.jpg",
+        "/images/blog/18-C060324-6732.jpg",
+        "/images/blog/19-C060324-6754.jpg",
+        "/images/blog/20-C060324-6766.jpg"
+      ],
+      "inline": [
+        "/images/blog/21-C060324-6777.jpg",
+        "/images/blog/22-C060324-6829.jpg",
+        "/images/blog/23-C060324-6842.jpg",
+        "/images/food/SpicyTunaAndCaliforniaRollCloseups.png"
+      ],
+      "video": [
+        "/videos/carpacio salmon,madai,hamachi yellowtail video.mp4",
+        "/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4"
+      ],
+      "alt": "Fresh sushi and sashimi platter at Jinbeh Japanese Restaurant"
+    },
+    "sake-drinks": {
+      "hero": [
+        "/images/drinks/cocktail.jpg",
+        "/images/drinks/JinbehPunchBeverageDrink.png",
+        "/images/drinks/MangoTangoDrinks.png",
+        "/images/drinks/SpicyMargaritaBeverageDrink.png",
+        "/images/drinks/MuleSummerSignatureCocktail.png"
+      ],
+      "inline": [
+        "/images/drinks/cocktail.jpg",
+        "/images/drinks/JinbehPunchBeverageDrink.png"
+      ],
+      "alt": "Japanese sake and signature cocktails at Jinbeh"
+    },
+    "celebrations": {
+      "hero": [
+        "/images/celebrations/CelebrateYourBirthdayAtJinbeh.png",
+        "/images/celebrations/jinbeh_group.jpg",
+        "/images/blog/24-C060324-6852.jpg",
+        "/images/blog/25-C060324-6856.jpg",
+        "/images/blog/26-C060324-6874.jpg"
+      ],
+      "inline": [
+        "/images/blog/27-C060324-6888.jpg",
+        "/images/blog/28-C060324-6899.jpg",
+        "/images/blog/29-C060324-6922.jpg",
+        "/images/blog/30-C060324-6930.jpg"
+      ],
+      "video": [
+        "/videos/LOCAL-FRI-HIBACHI-birthday-celebration-candles-01.mp4"
+      ],
+      "alt": "Birthday celebration at Jinbeh hibachi restaurant"
+    },
+    "location": {
+      "hero": [
+        "/images/exterior/JinbehFriscoStorefrontSign.png",
+        "/images/blog/1-C060324-6328.jpg",
+        "/images/blog/2-C060324-6341.jpg",
+        "/images/blog/13-C060324-6582.jpg",
+        "/images/blog/14-C060324-6596.jpg"
+      ],
+      "inline": [
+        "/images/blog/15-C060324-6663.jpg",
+        "/images/food/jinbeh_seating.jpg"
+      ],
+      "alt": "Jinbeh Japanese Restaurant dining room"
+    },
+    "food-general": {
+      "hero": [
+        "/images/food/jinbeh_bento_box.jpg",
+        "/images/food/Mochi.png",
+        "/images/food/ArchivedHappyHour_JinbehSpecials.png"
+      ],
+      "inline": [
+        "/images/food/jinbeh_bento_box.jpg"
+      ],
+      "alt": "Japanese cuisine at Jinbeh Restaurant"
+    }
+  },
+  "articleImageMap": {
+    "best-hibachi-dallas": { "category": "hibachi", "heroIndex": 0 },
+    "best-hibachi-dallas-tx": { "category": "hibachi", "heroIndex": 1 },
+    "discover-teppanyaki": { "category": "hibachi", "heroIndex": 2 },
+    "hibachi-vs-teppanyaki-explained": { "category": "hibachi", "heroIndex": 3 },
+    "hibachi-birthday-party-ideas": { "category": "celebrations", "heroIndex": 0 },
+    "hibachi-calories-guide": { "category": "hibachi", "heroIndex": 4 },
+    "hibachi-dining-experience": { "category": "hibachi", "heroIndex": 0 },
+    "hibachi-lunch-ideas": { "category": "hibachi", "heroIndex": 1 },
+    "hibachi-menu-guide": { "category": "hibachi", "heroIndex": 2 },
+    "hibachi-catering-dfw": { "category": "hibachi", "heroIndex": 3 },
+    "offsite-hibachi-catering": { "category": "hibachi", "heroIndex": 4 },
+    "types-of-sushi": { "category": "sushi", "heroIndex": 0 },
+    "sashimi-vs-sushi": { "category": "sushi", "heroIndex": 1 },
+    "how-to-eat-sushi-guide": { "category": "sushi", "heroIndex": 2 },
+    "beginner-sushi-tips": { "category": "sushi", "heroIndex": 3 },
+    "best-sushi-dallas": { "category": "sushi", "heroIndex": 4 },
+    "best-sushi-frisco": { "category": "sushi", "heroIndex": 0 },
+    "best-salmon-sashimi": { "category": "sushi", "heroIndex": 1 },
+    "sushi-lunch-specials": { "category": "sushi", "heroIndex": 2 },
+    "what-is-omakase": { "category": "sushi", "heroIndex": 3 },
+    "omakase-dining-guide": { "category": "sushi", "heroIndex": 4 },
+    "sushi-identification-chart": { "category": "sushi", "heroIndex": 0 },
+    "sushi-cooking-classes": { "category": "sushi", "heroIndex": 1 },
+    "sake-pairing-guide": { "category": "sake-drinks", "heroIndex": 0 },
+    "sake-alcohol-strength": { "category": "sake-drinks", "heroIndex": 1 },
+    "types-of-sake-explained": { "category": "sake-drinks", "heroIndex": 2 },
+    "japanese-cocktails": { "category": "sake-drinks", "heroIndex": 3 },
+    "japanese-whiskey-guide": { "category": "sake-drinks", "heroIndex": 4 },
+    "yamazaki-whiskey-guide": { "category": "sake-drinks", "heroIndex": 0 },
+    "japanese-beverages-guide": { "category": "sake-drinks", "heroIndex": 1 },
+    "ramune-soda-guide": { "category": "sake-drinks", "heroIndex": 2 },
+    "best-happy-hour-frisco": { "category": "sake-drinks", "heroIndex": 3 },
+    "best-happy-hour-frisco-tx": { "category": "sake-drinks", "heroIndex": 4 },
+    "sake-sushi-menu-pairings": { "category": "sake-drinks", "heroIndex": 0 },
+    "sake-taste-profile": { "category": "sake-drinks", "heroIndex": 1 },
+    "unique-kids-birthday-party-places": { "category": "celebrations", "heroIndex": 1 },
+    "baby-shower-venues": { "category": "celebrations", "heroIndex": 2 },
+    "bridal-shower-venues": { "category": "celebrations", "heroIndex": 3 },
+    "romantic-anniversary-dinners": { "category": "celebrations", "heroIndex": 4 },
+    "free-birthday-food-deals": { "category": "celebrations", "heroIndex": 0 },
+    "bachelorette-restaurants-dallas": { "category": "celebrations", "heroIndex": 1 },
+    "thanksgiving-dining-guide": { "category": "celebrations", "heroIndex": 2 },
+    "birthday-celebration-restaurants": { "category": "celebrations", "heroIndex": 3 },
+    "adult-birthday-party-ideas": { "category": "celebrations", "heroIndex": 4 },
+    "restaurants-private-rooms": { "category": "location", "heroIndex": 0 },
+    "large-group-dining": { "category": "location", "heroIndex": 1 },
+    "group-dining-venues": { "category": "location", "heroIndex": 2 },
+    "fine-dining-frisco": { "category": "location", "heroIndex": 3 },
+    "top-frisco-restaurants": { "category": "location", "heroIndex": 4 },
+    "date-night-restaurants-frisco": { "category": "location", "heroIndex": 0 },
+    "best-asian-food-dallas": { "category": "food-general", "heroIndex": 0 },
+    "asian-cuisine-dallas": { "category": "food-general", "heroIndex": 1 },
+    "best-seafood-dallas": { "category": "food-general", "heroIndex": 2 },
+    "best-steak-near-me": { "category": "hibachi", "heroIndex": 0 },
+    "popular-japanese-culture": { "category": "food-general", "heroIndex": 0 },
+    "japanese-restaurants-near-me": { "category": "location", "heroIndex": 1 },
+    "japanese-restaurants-lewisville": { "category": "location", "heroIndex": 2 },
+    "seafood-lewisville": { "category": "sushi", "heroIndex": 2 },
+    "jinbeh-gift-cards-guide": { "category": "location", "heroIndex": 0 },
+    "jinbeh-catering-services": { "category": "hibachi", "heroIndex": 1 }
+  },
+  "relatedArticles": {
+    "hibachi": [
+      { "slug": "hibachi-birthday-party-ideas", "title": "Hibachi Birthday Party Ideas" },
+      { "slug": "discover-teppanyaki", "title": "Discover Teppanyaki" },
+      { "slug": "hibachi-vs-teppanyaki-explained", "title": "Hibachi vs Teppanyaki" },
+      { "slug": "best-hibachi-dallas", "title": "Best Hibachi in Dallas" }
+    ],
+    "sushi": [
+      { "slug": "types-of-sushi", "title": "Types of Sushi" },
+      { "slug": "how-to-eat-sushi-guide", "title": "How to Eat Sushi" },
+      { "slug": "sashimi-vs-sushi", "title": "Sashimi vs Sushi" },
+      { "slug": "best-sushi-frisco", "title": "Best Sushi in Frisco" }
+    ],
+    "sake-drinks": [
+      { "slug": "sake-pairing-guide", "title": "Sake Pairing Guide" },
+      { "slug": "types-of-sake-explained", "title": "Types of Sake" },
+      { "slug": "japanese-cocktails", "title": "Japanese Cocktails" },
+      { "slug": "best-happy-hour-frisco-tx", "title": "Best Happy Hour Frisco" }
+    ],
+    "celebrations": [
+      { "slug": "hibachi-birthday-party-ideas", "title": "Hibachi Birthday Party Ideas" },
+      { "slug": "unique-kids-birthday-party-places", "title": "Kids Birthday Party Places" },
+      { "slug": "bridal-shower-venues", "title": "Bridal Shower Venues" },
+      { "slug": "romantic-anniversary-dinners", "title": "Romantic Anniversary Dinners" }
+    ],
+    "location": [
+      { "slug": "fine-dining-frisco", "title": "Fine Dining in Frisco" },
+      { "slug": "date-night-restaurants-frisco", "title": "Date Night Restaurants Frisco" },
+      { "slug": "restaurants-private-rooms", "title": "Restaurants with Private Rooms" },
+      { "slug": "group-dining-venues", "title": "Group Dining Venues" }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Best Sushi Frisco TX: Top Spots to Savor Fresh Flavors | Jinbeh",
@@ -36,35 +37,40 @@ const articleSchema = {
     },
 };
 
+const faqs = [
+    {
+        question: "What is the best sushi restaurant in Frisco?",
+        answer: "Welcome to the table! Jinbeh has 4.7 stars on Google. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
+    },
+    {
+        question: "Does Jinbeh have happy hour specials?",
+        answer: "Yes! We offer happy hour with discounted sushi rolls, sake, and appetizers. Hours vary by location. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798. It's a great way to try different drinks and rolls.",
+    },
+    {
+        question: "Is Jinbeh good for families with kids?",
+        answer: "Absolutely! Families love us. Kids are fascinated by our hibachi chef show. We have a children's menu with fun options and traditional favorites. It's a celebration every time a family visits.",
+    },
+    {
+        question: "Can I order sushi for takeout or delivery?",
+        answer: "Yes! Order takeout directly or through GrubHub and UberEats. Call ahead to place a pickup order. For the full hibachi experience, though, you'll want to dine in—it's dinner and a show!",
+    },
+    {
+        question: "Where is Jinbeh located in Frisco?",
+        answer: "We're at 2693 Preston Road in Frisco, near Stonebriar Centre. Plenty of parking right outside. Just minutes from Legacy West and the Dallas North Tollway. Call (214) 618-9888 to confirm hours.",
+    },
+];
+
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-        {
-            "@type": "Question",
-            name: "What is the best sushi restaurant in Frisco?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Jinbeh is consistently rated among the best sushi restaurants in Frisco, with 4.7 stars on Google and nearly four decades of serving authentic Japanese cuisine. Located near Stonebriar Centre, we're known for fresh fish, expert knife work, and a welcoming atmosphere.",
-            },
+    mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
         },
-        {
-            "@type": "Question",
-            name: "Does Jinbeh have sushi happy hour?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Yes! Jinbeh offers happy hour specials including discounted sushi rolls, sake, and appetizers. Check our happy hour page for current times and deals at both Frisco and Lewisville locations.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "Is Jinbeh good for kids?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Absolutely! Families love Jinbeh. Our hibachi tables are especially popular with kids who enjoy watching the chef show. For sushi-bar seating, we have a kids menu with familiar favorites alongside adventurous options for budding sushi lovers.",
-            },
-        },
-    ],
+    })),
 };
 
 export default function BestSushiFrisco() {
@@ -300,83 +306,46 @@ export default function BestSushiFrisco() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What is the best sushi restaurant in Frisco?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    <strong>Jinbeh</strong> is consistently rated among the best sushi restaurants in Frisco,
-                                                    with 4.7 stars on Google and nearly four decades of serving authentic Japanese cuisine.
-                                                    Located near Stonebriar Centre, we're known for fresh fish, expert knife work, and a
-                                                    welcoming atmosphere.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Does Jinbeh have sushi happy hour?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Yes! Jinbeh offers <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour specials</Link> including
-                                                    discounted sushi rolls, sake, and appetizers. Check our happy hour page for current times and deals.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Is Jinbeh good for families with kids?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Absolutely! Families love Jinbeh. Our hibachi tables are especially popular with kids
-                                                    who enjoy watching the chef show. We also have a kids menu with familiar favorites
-                                                    alongside adventurous options for budding sushi lovers.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Can I order sushi for takeout or delivery?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Yes! Jinbeh offers takeout and delivery through GrubHub and UberEats.
-                                                    You can also call ahead to place a pickup order directly with us.
-                                                </p>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, index) => (
+                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
                                     </div>
                                 </div>
 
                                 {/* CTA */}
                                 <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🍣 Ready to Taste the Best Sushi in Frisco?
+                                        🍣 Experience Fresh Sushi at Jinbeh
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Experience why Frisco locals have trusted Jinbeh since 1988. Reserve your table today.
+                                        Welcome to the table! Jinbeh has served Frisco since 1988. Fresh fish. Expert chefs. Welcoming atmosphere.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
                                             href="/frisco#reserve"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
-                                            Reserve at Frisco
+                                            Reserve Frisco
+                                        </Link>
+                                        <Link
+                                            href="/lewisville#reserve"
+                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
+                                        >
+                                            Reserve Lewisville
                                         </Link>
                                         <Link
                                             href="/frisco/menu"
                                             className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
                                         >
-                                            View Sushi Menu
+                                            View Menu
                                         </Link>
                                     </div>
                                 </div>
@@ -385,49 +354,7 @@ export default function BestSushiFrisco() {
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Related Articles</h3>
-                                <div className="space-y-4">
-                                    <Link href="/blog/types-of-sushi" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi types" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sushi: Must-Try Varieties</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/best-sushi-dallas" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/8-C060324-6462.jpg" alt="Sushi Dallas" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi Dallas: Top Spots</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/best-happy-hour-frisco-tx" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Happy hour" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-accent-red">✨ Tips & Guides</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Happy Hour Frisco TX</h4>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=tips-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">✨ Tips</Link>
-                                    </div>
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="best-sushi-frisco" />
                         </aside>
                     </div>
                 </div>

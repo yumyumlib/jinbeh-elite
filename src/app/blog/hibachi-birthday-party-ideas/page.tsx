@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide | Jinbeh",
@@ -26,27 +27,32 @@ const faqs = [
   {
     question: "How far in advance should I book a hibachi birthday party?",
     answer:
-      "We recommend booking at least 1-2 weeks in advance for weeknight celebrations and 2-3 weeks for Friday or Saturday parties. For groups larger than 12 or during peak seasons (summer, December), booking 3-4 weeks ahead ensures you'll get your preferred time slot.",
+      "Welcome to the table! It's a celebration! We recommend booking at least 1-2 weeks in advance for weeknight celebrations and 2-3 weeks for Friday or Saturday parties. For groups larger than 12, book 3-4 weeks ahead. Call us: Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
   },
   {
     question: "Can hibachi restaurants accommodate dietary restrictions?",
     answer:
-      "Yes! Most hibachi restaurants, including Jinbeh, can accommodate common dietary needs. We offer vegetarian hibachi with tofu and extra vegetables, can prepare items without soy or gluten upon request, and provide kid-friendly portions. Let us know when booking so we can prepare.",
+      "Yes! Jinbeh accommodates common dietary needs. We offer vegetarian hibachi with tofu and extra vegetables, can prepare items without soy or gluten upon request, and provide kid-friendly portions. Tell us when booking so our chefs can prepare perfectly.",
   },
   {
     question: "What age is hibachi appropriate for?",
     answer:
-      "Hibachi is family-friendly for all ages! Kids as young as 2-3 love watching the flames and catching rice in their mouths. Our chefs adjust their shows based on the audience—more playful for kids' parties, more skilled demonstrations for adults. The communal experience works great for mixed-age gatherings.",
+      "Hibachi is family-friendly for all ages! Kids as young as 2-3 love the flames and interactive show. Our chefs adjust their performances—playful for kids' parties, skilled demonstrations for adults. The communal experience creates memories for mixed-age gatherings.",
   },
   {
     question: "Do hibachi restaurants do anything special for birthdays?",
     answer:
-      "At Jinbeh, we treat birthdays as celebrations, not interruptions. Our chefs give the birthday person extra attention during the show, and we make the whole experience feel special. Some restaurants offer desserts or small gifts—call ahead to ask about specific offerings.",
+      "At Jinbeh, birthdays are celebrations! Our chefs give the birthday person extra attention with personalized entertainment, and we make the whole experience special. Fresh and flavorful food paired with an unforgettable show—that's our promise for your celebration.",
   },
   {
     question: "How much should I budget for a hibachi birthday party?",
     answer:
-      "For a group of 8-10 at dinner, expect to spend $300-$500 including food, drinks, tax, and tip. Lunch parties can run 30-40% less. At Jinbeh, our hibachi entrees range from $18-$45, with lunch specials starting at $12.95. Kids portions are available at lower prices.",
+      "For a group of 8-10 at dinner, expect $300-$500 including food, drinks, tax, and tip. Lunch parties cost 30-40% less. At Jinbeh, hibachi entrees range from $18-$45, with lunch specials starting at $12.95. Kids portions available at lower prices.",
+  },
+  {
+    question: "Can we bring decorations or special items for the birthday person?",
+    answer:
+      "We love celebrating! Bring signs, balloons, or special items. Let us know in advance about any decorations so we can help incorporate them into the experience. Our team will work with you to make the birthday person feel extra special.",
   },
 ];
 
@@ -55,7 +61,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
     <ArticleLayout
       title="Hibachi Birthday Party Ideas: Ultimate Planning Guide"
       metaDescription="Fire shoots up from the onion volcano. The whole table gasps, then laughs. The birthday kid's eyes go wide as the chef flips a shrimp toward their plate. This is why hibachi makes birthdays unforgettable."
-      heroImage="/images/photoshoot/celebration-table.jpg"
+      heroImage="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
       heroAlt="Family celebrating birthday at Jinbeh hibachi restaurant in Frisco TX"
       category="Celebrations"
       categorySlug="celebrations"
@@ -475,6 +481,8 @@ export default function HibachiBirthdayPartyIdeasPage() {
         Tell us about your celebration when you call—we'll make sure it's
         one to remember.
       </p>
+
+      <RelatedArticles currentSlug="hibachi-birthday-party-ideas" />
     </ArticleLayout>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems | Jinbeh",
@@ -68,15 +69,58 @@ export default function BestSushiDallas() {
                                 ))}
                             </div>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>
-                            <details className="group bg-warm-ivory rounded-xl mb-3">
-                                <summary className="p-5 cursor-pointer font-semibold flex justify-between">Best sushi value in Dallas area?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                <div className="px-5 pb-5 text-charcoal/80">Jinbeh offers top-quality fresh sushi at moderate prices, plus you can combine sushi and hibachi in one visit—something most upscale spots don't offer.</div>
-                            </details>
-                            <details className="group bg-warm-ivory rounded-xl">
-                                <summary className="p-5 cursor-pointer font-semibold flex justify-between">Omakase in Dallas?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                <div className="px-5 pb-5 text-charcoal/80">Uchi and Tei-An offer excellent omakase. For a less formal experience, ask your Jinbeh sushi chef for their recommendations—they love guiding adventurous eaters!</div>
-                            </details>
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
+                            <div className="space-y-4">
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        Is the sushi at Jinbeh fresh?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Fresh and flavorful—that's our promise. We receive fish deliveries multiple times per week. Our sushi chefs slice each piece to order. You can watch them work at our sushi bar.</p>
+                                    </div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        What sushi do you recommend for beginners?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Welcome to the world of sushi! Start with our California Roll or Shrimp Tempura Roll—they're mild and delicious. Salmon rolls are also crowd-pleasers. Our servers are happy to guide you through the menu.</p>
+                                    </div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        What is omakase and do you offer it?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Omakase means 'I'll leave it to you'—the chef chooses your courses. It's a wonderful way to experience sushi. At Jinbeh, ask about our chef's selection for a curated tasting experience.</p>
+                                    </div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        Do you have vegetarian sushi options?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Yes! We offer several vegetarian rolls including cucumber roll, avocado roll, and vegetable tempura roll. Just let your server know about any dietary needs. We're happy to accommodate.</p>
+                                    </div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        Can I order sushi for takeout or delivery?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Absolutely! Our sushi travels well for takeout. Order online or call us directly. For the freshest experience, we recommend dining in at our sushi bar—it's worth the trip.</p>
+                                    </div>
+                                </details>
+                            </div>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍣 Worth the Drive from Dallas</h3>
@@ -89,18 +133,7 @@ export default function BestSushiDallas() {
                         </article>
 
                         <aside>
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="font-heading font-bold mb-4">Related</h3>
-                                <div className="space-y-3">
-                                    {[{ t: "Best Sushi Frisco", s: "/blog/best-sushi-frisco", i: "/images/blog/7-C060324-6447.jpg" },
-                                    { t: "Types of Sushi", s: "/blog/types-of-sushi", i: "/images/blog/12-C060324-6551.jpg" }].map(r => (
-                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
-                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="best-sushi-dallas" />
                         </aside>
                     </div>
                 </div>

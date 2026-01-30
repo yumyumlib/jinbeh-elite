@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Group Dining Venues DFW: Best for Large Parties | Jinbeh",
@@ -22,8 +23,8 @@ export default function GroupDiningVenues() {
         <main className="min-h-screen bg-warm-ivory">
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
-            <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/blog/5-C060324-6397.jpg" alt="Group dining" fill className="object-cover" priority />
+            <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
+                <Image src="/images/blog/2-C060324-6341.jpg" alt="Jinbeh Japanese Restaurant group dining room" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -70,12 +71,83 @@ export default function GroupDiningVenues() {
                                 <li className="flex gap-2"><span className="text-green-600">✓</span>Corporate accounts available for repeat business</li>
                             </ul>
 
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Planning Your Group Celebration</h2>
+                            <p className="text-charcoal/80 mb-6">When planning group dining, consider these factors to ensure success:</p>
+
+                            <div className="grid md:grid-cols-2 gap-4 my-6">
+                                <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-deep-indigo">
+                                    <h3 className="font-bold text-charcoal mb-2">Group Size</h3>
+                                    <p className="text-sm text-charcoal/70">Jinbeh accommodates groups from 8 to 50+ guests with flexible seating arrangements.</p>
+                                </div>
+                                <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-accent-red">
+                                    <h3 className="font-bold text-charcoal mb-2">Advance Notice</h3>
+                                    <p className="text-sm text-charcoal/70">Book 2-4 weeks ahead for optimal coordination and menu customization.</p>
+                                </div>
+                                <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-soft-gold">
+                                    <h3 className="font-bold text-charcoal mb-2">Menu Selection</h3>
+                                    <p className="text-sm text-charcoal/70">Choose from family-style, set menus, or customized options accommodating dietary needs.</p>
+                                </div>
+                                <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-charcoal">
+                                    <h3 className="font-bold text-charcoal mb-2">Entertainment Value</h3>
+                                    <p className="text-sm text-charcoal/70">Hibachi performances add excitement and engagement for all attendees.</p>
+                                </div>
+                            </div>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
+                            <div className="space-y-3">
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">What's the minimum group size for Jinbeh reservations?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">While we welcome all sizes, groups of 8+ benefit from our group dining expertise. Contact us for coordination details.</div>
+                                </details>
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">Can we customize the menu for our group?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">Absolutely! Our culinary team works with groups to create customized menus accommodating dietary preferences and group size.</div>
+                                </details>
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">How do hibachi tables work for groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">8-10 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment.</div>
+                                </details>
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">What makes Jinbeh special for groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">Family-owned since 1988, we combine professional coordination, premium ingredients, and hibachi entertainment creating unforgettable experiences. We treat every guest like family!</div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">How do I book a group at Jinbeh?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">Welcome to the table! Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 at least 2-4 weeks ahead. We'll coordinate menu, timing, and special requests for your celebration!</div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">Are there private rooms for large groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">Yes! It's a celebration! Our private dining areas and group hibachi tables provide semi-private settings. Perfect for corporate events, family reunions, and milestone celebrations. Fresh and flavorful dining awaits!</div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-xl">
+                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">Can kids join group hibachi dining?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                    <div className="px-5 pb-5 text-charcoal/80">Absolutely! Kids love hibachi! Our chefs entertain while cooking, and children enjoy watching the show. We offer a kids menu and treat every guest like family. Dinner and a show for all ages!</div>
+                                </details>
+                            </div>
+
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">👥 Plan Your Group Event</h3>
-                                <p className="text-white/80 mb-6">Contact us for group reservations and corporate dining.</p>
+                                <p className="text-white/80 mb-6">Contact us for group reservations and corporate dining at our Frisco and Lewisville locations.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville</Link>
+                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
+                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                </div>
+                            </div>
+
+                            <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
+                                <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Jinbeh Locations</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Frisco Location</h4>
+                                        <p className="text-charcoal/70 text-sm">Near Stonebriar Centre, convenient for North Texas group events and celebrations.</p>
+                                    </Link>
+                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Lewisville Location</h4>
+                                        <p className="text-charcoal/70 text-sm">Off I-35E near Vista Ridge Mall, perfect for Lewisville and North DFW group dining.</p>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
@@ -92,6 +164,8 @@ export default function GroupDiningVenues() {
                                         </Link>
                                     ))}
                                 </div>
+
+                                <RelatedArticles currentSlug="group-dining-venues" />
                             </div>
                         </aside>
                     </div>

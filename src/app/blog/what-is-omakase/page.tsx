@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "What is Omakase? A Complete Guide to the Japanese Sushi Experience | Jinbeh",
@@ -22,6 +23,14 @@ export const metadata: Metadata = {
         images: ["/images/blog/15-C060324-6663.jpg"],
     },
 };
+
+const faqs = [
+    { question: "What does omakase mean?", answer: "Omakase means 'I trust you' in Japanese. You entrust the sushi chef to select and prepare dishes, showcasing their expertise and the freshest ingredients available that day." },
+    { question: "How much does omakase cost?", answer: "Prices vary by restaurant. Casual omakase: $50-150 per person. High-end: $200+ per person. Premium options with rare fish cost more." },
+    { question: "What's included in omakase?", answer: "Usually 10-20 pieces of sushi. The chef selects seasonal fish, starting with lighter flavors and progressing to richer ones. Each piece is prepared fresh and eaten immediately." },
+    { question: "Is omakase better than regular sushi?", answer: "Different experience, not better. Omakase showcases the chef's expertise and freshest daily ingredients. Regular sushi lets you choose. Many enjoy both for different reasons." },
+    { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to arrange your experience." }
+];
 
 const articleSchema = {
     "@context": "https://schema.org",
@@ -516,115 +525,40 @@ export default function WhatIsOmakase() {
                                 {/* FAQ Section */}
                                 <div className="mt-8">
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What does omakase mean?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    <strong>Omakase</strong> means "I trust you" in Japanese. When you order omakase, you're entrusting
-                                                    the sushi chef to select and prepare dishes that showcase their expertise and the day's finest
-                                                    ingredients, creating a personalized culinary journey.
-                                                </p>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, i) => (
+                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
+                                    </div>
+                                </div>
 
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How much does omakase typically cost?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Omakase prices vary widely. Casual restaurants offer $50-100 per person, mid-range establishments
-                                                    charge $100-150, and high-end restaurants run $150-250+. Premium Tokyo-level experiences can exceed
-                                                    $300 per person. Always ask about pricing before ordering.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What is included in an omakase experience?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Typical omakase includes 10-20 pieces of sushi, starting with delicate flavors and progressing to richer ones.
-                                                    Pieces are freshly prepared to order and may include nigiri, specialty items, uni, and sometimes cooked or torched pieces.
-                                                    Many experiences end with a palate cleanser like tamago (egg) or soup.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How do I order omakase for the first time?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Sit at the sushi bar and say "omakase onegaishimasu" (omakase, please). Mention any allergies or strong dislikes upfront.
-                                                    If this is your first time, tell the chef—most will explain each piece and adjust their pace. Stay engaged, ask questions,
-                                                    and eat each piece immediately after it's served.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Can I specify what fish I want or don't want?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    You can mention strong dislikes or allergies before starting. However, the spirit of omakase is to trust the chef's selection.
-                                                    If you request specific items or exclude many things, you're diminishing the omakase experience. Regular sushi ordering
-                                                    gives you more control if that's your preference.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Can I have omakase if I'm vegetarian or have dietary restrictions?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Yes, with advance notice. Call the restaurant and discuss your dietary needs. Professional chefs can create omakase
-                                                    experiences with cooked items, vegetables, and other accommodations. Some restaurants may have limitations, so it's important
-                                                    to coordinate ahead of time to ensure they can fulfill your request properly.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How long does an omakase meal typically last?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Most omakase experiences last 45 minutes to an hour. This allows the chef to carefully prepare each piece, explain their selection,
-                                                    and read your reactions. Rushing an omakase defeats its purpose. Plan accordingly and treat it as a special occasion worth your full time investment.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What should I drink with omakase?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Traditional pairings include sake, beer, or wine. Many chefs recommend premium sake that complements the delicate flavors of the fish.
-                                                    Green tea or sparkling water are also excellent choices. Ask the chef for recommendations—they often know which beverages work best with their selection.
-                                                </p>
-                                            </div>
-                                        </details>
+                                {/* Related Sushi Cluster Articles */}
+                                <div className="my-12 p-6 bg-accent-red/10 rounded-2xl border-2 border-accent-red/30">
+                                    <h3 className="font-heading font-bold text-lg text-charcoal mb-4">📚 Explore More Sushi Knowledge:</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <Link href="/blog/types-of-sushi" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Types of Sushi</p>
+                                            <p className="text-sm text-charcoal/70">Discover nigiri, rolls, and specialty varieties</p>
+                                        </Link>
+                                        <Link href="/blog/sashimi-vs-sushi" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Sashimi vs Sushi</p>
+                                            <p className="text-sm text-charcoal/70">Learn the key differences</p>
+                                        </Link>
+                                        <Link href="/blog/how-to-eat-sushi-guide" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">How to Eat Sushi</p>
+                                            <p className="text-sm text-charcoal/70">Master proper etiquette & techniques</p>
+                                        </Link>
+                                        <Link href="/blog/omakase-dining-guide" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Omakase Dining Guide</p>
+                                            <p className="text-sm text-charcoal/70">Complete guide to the omakase experience</p>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -638,7 +572,7 @@ export default function WhatIsOmakase() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve Your Omakase
@@ -647,7 +581,13 @@ export default function WhatIsOmakase() {
                                             href="/frisco/menu"
                                             className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
                                         >
-                                            View Our Menu
+                                            View Frisco Menu
+                                        </Link>
+                                        <Link
+                                            href="/lewisville/menu"
+                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
+                                        >
+                                            View Lewisville Menu
                                         </Link>
                                     </div>
                                 </div>
@@ -656,49 +596,7 @@ export default function WhatIsOmakase() {
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Related Articles</h3>
-                                <div className="space-y-4">
-                                    <Link href="/blog/types-of-sushi" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi types" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-orange-500">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sushi: Must-Try Varieties</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Best sushi Frisco" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi Frisco TX</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/best-happy-hour-frisco-tx" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Happy hour" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-accent-red">✨ Tips & Guides</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Happy Hour Frisco TX</h4>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-orange-500/10 text-orange-500 hover:bg-orange-500/20 transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=tips-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">✨ Tips</Link>
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">📍 Locations</Link>
-                                    </div>
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="what-is-omakase" />
                         </aside>
                     </div>
                 </div>

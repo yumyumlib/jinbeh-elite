@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Sake Pairing Guide: Best Pairings with Sushi & Hibachi | Jinbeh",
@@ -21,6 +22,14 @@ export const metadata: Metadata = {
         images: ["/images/blog/sake-pairing-hero.jpg"],
     },
 };
+
+const faqs = [
+    { question: "What sake pairs best with sushi?", answer: "Welcome to sake! Junmai and Ginjo sakes work wonderfully. Ginjo is crisp and delicate with raw fish. Junmai is fuller with earthy notes. Choose dry sake (Karakuchi) for nigiri." },
+    { question: "Should sake be served hot or cold?", answer: "Premium sakes like Ginjo are best chilled (50-55°F). Junmai can be warm (104-113°F) or room temperature. Warmer service brings richer flavors. Chilled feels refreshing." },
+    { question: "What sake pairs with hibachi?", answer: "Go fuller-bodied! Junmai or Honjozo complement grilled proteins and vegetables. These robust sakes match the bold, grilled flavors. Warm sake intensifies the pairing." },
+    { question: "Can sake pair with appetizers?", answer: "Absolutely! Sparkling sake (Hana Awaka) works with fried appetizers. Dry Honjozo complements edamame and gyoza. Match intensity: lighter apps get lighter sake." },
+    { question: "How do I order sake at Jinbeh?", answer: "Our bartenders are happy to guide you! Tell them your preferences. We have sake flights for tasting. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to ask about selections." }
+];
 
 const articleSchema = {
     "@context": "https://schema.org",
@@ -529,102 +538,17 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                What is SMV (Sake Meter Value) and why does it matter?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    SMV is a number (usually -10 to +10) that indicates whether sake tastes dry or sweet:
-                                                </p>
-                                                <ul className="space-y-2 list-disc list-inside">
-                                                    <li><strong>+3 to +6 (Dry):</strong> Great with savory, umami-rich dishes</li>
-                                                    <li><strong>0 (Neutral):</strong> Versatile, works with most foods</li>
-                                                    <li><strong>-3 to 0 (Slightly Sweet):</strong> Pairs well with spicy or rich dishes</li>
-                                                    <li><strong>-5 to -10 (Sweet):</strong> Think dessert pairing or on its own</li>
-                                                </ul>
-                                                <p className="mt-3">
-                                                    For food pairing, dry sakes (positive SMV) are your safest bet. They complement savory dishes without competing for attention.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                Can I pair sake with Western-style Japanese dishes?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    Absolutely! Sake is versatile. Here are some creative pairings:
-                                                </p>
-                                                <ul className="space-y-2 list-disc list-inside">
-                                                    <li><strong>Spicy tuna rolls with mayo:</strong> Slightly sweet Junmai cools the heat</li>
-                                                    <li><strong>Philadelphia rolls (cream cheese):</strong> Honjozo cuts through the richness</li>
-                                                    <li><strong>Grilled steak hibachi:</strong> Warm Junmai matches the boldness</li>
-                                                    <li><strong>Tempura appetizers:</strong> Light Ginjo keeps things elegant</li>
-                                                </ul>
-                                                <p className="mt-3">
-                                                    The key is matching intensity. Bold dishes get fuller-bodied sakes; delicate dishes get refined ones.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                How do I know if a sake has good pairing potential?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    Look for these indicators on the label:
-                                                </p>
-                                                <ul className="space-y-2 list-disc list-inside">
-                                                    <li><strong>Rice polishing ratio (Seimai Buai):</strong> Lower % = more refined (Ginjo)</li>
-                                                    <li><strong>Acidity level:</strong> Higher acidity pairs well with fatty foods</li>
-                                                    <li><strong>SMV:</strong> Dry (+) pairs with savory, sweet (-) with rich</li>
-                                                    <li><strong>Amino acid content (Aminosan):</strong> Higher = deeper umami flavors</li>
-                                                </ul>
-                                                <p className="mt-3">
-                                                    Pro tip: Ask the sake seller or restaurant staff. They can tell you all this in seconds!
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                What's the best sake for sake bombing (beer + sake)?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    If you're going for sake bombs, choose a lighter Honjozo or affordable Junmai. Save your premium Ginjo
-                                                    for sipping—it deserves better. At Jinbeh, we're happy to pair either way. Ask your server what works
-                                                    best for your preference!
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                Does sake pair well with dessert?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p className="mb-3">
-                                                    Yes! Consider these options:
-                                                </p>
-                                                <ul className="space-y-2 list-disc list-inside">
-                                                    <li><strong>Sweet sake (Amazake):</strong> Pairs beautifully with mochi or light pastries</li>
-                                                    <li><strong>Sparkling sake:</strong> Fresh and celebratory with fruit desserts</li>
-                                                    <li><strong>Aged Koshu:</strong> Works with rich chocolate or caramel desserts</li>
-                                                </ul>
-                                                <p className="mt-3">
-                                                    Avoid bone-dry sake with sweet desserts—the contrast can feel harsh.
-                                                </p>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, i) => (
+                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -670,7 +594,7 @@ export default function SakePairingGuide() {
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-accent-red/20 rounded-2xl p-8 text-center">
                                         <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Ready to Master Sake Pairing?</h3>
                                         <p className="text-charcoal/80 mb-6 text-lg">
-                                            Visit Jinbeh and let our team help you find your next favorite sake and dish combination.
+                                            Visit Jinbeh and let our team help you find your next favorite sake and dish combination. Book your reservation today and experience sake pairing as a true gracious host would.
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-3 justify-center">
                                             <Link href="/frisco" className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
@@ -678,6 +602,9 @@ export default function SakePairingGuide() {
                                             </Link>
                                             <Link href="/lewisville" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
                                                 Lewisville Location
+                                            </Link>
+                                            <Link href="#reserve" className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
+                                                Make a Reservation
                                             </Link>
                                         </div>
                                     </div>
@@ -698,38 +625,7 @@ export default function SakePairingGuide() {
                                 </nav>
 
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-6">🍣 Related Articles</h3>
-                                    <div className="space-y-4">
-                                        <Link href="/blog/sake-alcohol-strength" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🍶
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-deep-indigo">🍷 Beverages</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Alcohol Strength Explained</h4>
-                                            </div>
-                                        </Link>
-
-                                        <Link href="/blog/best-hibachi-dallas-tx" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🔥
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-accent-red">📍 Dining</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Hibachi Dallas</h4>
-                                            </div>
-                                        </Link>
-
-                                        <Link href="/menu" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🍱
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-deep-indigo">🍣 Menu</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Explore Jinbeh Menu</h4>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <RelatedArticles currentSlug="sake-pairing-guide" />
                                 </div>
 
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">

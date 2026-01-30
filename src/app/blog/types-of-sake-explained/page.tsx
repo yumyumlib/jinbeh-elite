@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh",
     description:
-        "Master sake varieties and types. Learn the difference between Junmai, Ginjo, Daiginjo, Honjozo & more. Complete guide to choosing the right sake for your palate.",
+        "Master sake varieties and types. Learn the difference between Junmai, Ginjo, Daiginjo, Honjozo & more. Complete guide to choosing the right sake for your palate and preferences.",
     keywords: [
         "types of sake",
         "sake varieties",
@@ -15,11 +16,13 @@ export const metadata: Metadata = {
         "ginjo sake",
         "sake guide",
         "sake types explained",
+        "sake pairing guide",
+        "best sake for beginners",
     ],
     openGraph: {
         title: "Complete Guide to Types of Sake: From Junmai to Daiginjo",
-        description: "Discover the different kinds of sake and what makes each variety unique.",
-        images: ["/images/blog/types-of-sake-hero.jpg"],
+        description: "Discover the different kinds of sake and what makes each variety unique. Expert guide to sake selection.",
+        images: ["/images/drinks/MangoTangoDrinks.png"],
     },
 };
 
@@ -795,13 +798,13 @@ export default function TypesOfSakeExplained() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p className="mb-3">
-                                                    Absolutely! Sake tasting and exploration is fun. Many diners enjoy sampling multiple varieties during one meal.
+                                                    Absolutely! It's a celebration! Sake tasting and exploration is fun. Many diners enjoy sampling multiple varieties during one meal.
                                                 </p>
                                                 <p className="mb-3">
                                                     <strong>Pro tip:</strong> Taste from lightest to boldest (Ginjo first, then Junmai). This prevents heavier flavors from overwhelming delicate ones.
                                                 </p>
                                                 <p>
-                                                    At Jinbeh, our happy hour is perfect for sampling different sake types at reasonable prices.
+                                                    At Jinbeh, our happy hour is perfect for sampling different sake types at reasonable prices. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for hours and details.
                                                 </p>
                                             </div>
                                         </details>
@@ -866,90 +869,7 @@ export default function TypesOfSakeExplained() {
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">📚 In This Article</h3>
-                                <nav className="space-y-3">
-                                    <a href="#classification" className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium text-sm">Classification System</a>
-                                    <a href="#main-types" className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium text-sm">Main Sake Types</a>
-                                    <a href="#junmai-daiginjo" className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium text-sm">Junmai vs Daiginjo</a>
-                                    <a href="#flavor-profiles" className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium text-sm">Flavor Profiles</a>
-                                    <a href="#choosing" className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium text-sm">How to Choose</a>
-                                    <a href="#faq" className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium text-sm">FAQs</a>
-                                </nav>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-6">🍣 Related Articles</h3>
-                                    <div className="space-y-4">
-                                        <Link href="/blog/sake-pairing-guide" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🍶
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-deep-indigo">🍷 Beverages</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Pairing Guide</h4>
-                                            </div>
-                                        </Link>
-
-                                        <Link href="/blog/sake-alcohol-strength" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                📊
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-accent-red">🍷 Beverages</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Alcohol Strength</h4>
-                                            </div>
-                                        </Link>
-
-                                        <Link href="/menu" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🍱
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-deep-indigo">🍣 Menu</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Explore Jinbeh Menu</h4>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">📍 Visit Us</h3>
-                                    <div className="space-y-2 text-sm text-charcoal/70">
-                                        <div className="flex gap-2">
-                                            <span className="flex-shrink-0">📍</span>
-                                            <div>
-                                                <p className="font-medium text-charcoal">Frisco</p>
-                                                <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors text-xs">View location</Link>
-                                            </div>
-                                        </div>
-                                        <div className="flex gap-2">
-                                            <span className="flex-shrink-0">📍</span>
-                                            <div>
-                                                <p className="font-medium text-charcoal">Lewisville</p>
-                                                <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors text-xs">View location</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍷 Beverages</Link>
-                                    </div>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">⏰ Happy Hour</h3>
-                                    <p className="text-sm text-charcoal/70 mb-3">
-                                        Explore sake varieties at great prices during happy hour.
-                                    </p>
-                                    <Link href="/happy-hour" className="text-accent-red font-semibold hover:text-deep-indigo transition-colors text-sm inline-flex items-center gap-1">
-                                        Learn more <span>→</span>
-                                    </Link>
-                                </div>
-                            </div>
+                            <RelatedArticles currentSlug="types-of-sake-explained" />
                         </aside>
                     </div>
                 </div>

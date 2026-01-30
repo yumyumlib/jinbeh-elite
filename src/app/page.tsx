@@ -19,7 +19,7 @@ const organizationSchema = {
   "description": "Family-owned Japanese restaurant serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988.",
   "sameAs": [
     "https://www.instagram.com/jinbehfrisco/",
-    "https://www.facebook.com/JinbehFrisco/",
+    "https://www.facebook.com/Jinbeh/",
     "https://www.yelp.com/biz/jinbeh-japanese-restaurant-frisco"
   ],
   "address": [
@@ -87,26 +87,48 @@ export default function HomePage() {
                 </svg>
               </button>
               {blogDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-stone-200 py-2 z-50">
-                  <Link href="/blog" className="block px-4 py-2 text-charcoal hover:bg-warm-ivory transition-colors font-medium">
-                    All Articles
+                <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-stone-200 py-3 z-50">
+                  <Link href="/blog" className="flex items-center gap-3 px-4 py-2.5 text-charcoal hover:bg-warm-ivory transition-colors font-semibold border-b border-stone-100 mb-2">
+                    <span className="text-lg">📖</span>
+                    <span>All Articles</span>
                   </Link>
-                  <div className="border-t border-stone-100 my-1"></div>
-                  <Link href="/blog/best-sushi-frisco" className="block px-4 py-2 text-charcoal/80 hover:bg-warm-ivory transition-colors text-sm">
-                    🍣 Best Sushi in Frisco
-                  </Link>
-                  <Link href="/blog/best-hibachi-dallas-tx" className="block px-4 py-2 text-charcoal/80 hover:bg-warm-ivory transition-colors text-sm">
-                    🔥 Best Hibachi in Dallas
-                  </Link>
-                  <Link href="/blog/best-happy-hour-frisco-tx" className="block px-4 py-2 text-charcoal/80 hover:bg-warm-ivory transition-colors text-sm">
-                    🍹 Happy Hour Guide
-                  </Link>
-                  <Link href="/blog/hibachi-birthday-party-ideas" className="block px-4 py-2 text-charcoal/80 hover:bg-warm-ivory transition-colors text-sm">
-                    🎂 Birthday Party Ideas
-                  </Link>
-                  <Link href="/blog/types-of-sushi" className="block px-4 py-2 text-charcoal/80 hover:bg-warm-ivory transition-colors text-sm">
-                    📚 Types of Sushi Guide
-                  </Link>
+                  <div className="px-2">
+                    <Link href="/blog/category/sushi" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🍣</span>
+                      <div>
+                        <span className="font-medium">Sushi Guide</span>
+                        <p className="text-xs text-charcoal/60">Types, tips & recommendations</p>
+                      </div>
+                    </Link>
+                    <Link href="/blog/category/hibachi" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🔥</span>
+                      <div>
+                        <span className="font-medium">Hibachi Guide</span>
+                        <p className="text-xs text-charcoal/60">Teppanyaki dining experience</p>
+                      </div>
+                    </Link>
+                    <Link href="/blog/category/celebrations" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🎂</span>
+                      <div>
+                        <span className="font-medium">Celebrations</span>
+                        <p className="text-xs text-charcoal/60">Birthdays, parties & events</p>
+                      </div>
+                    </Link>
+                    <Link href="/blog/category/happy-hour" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🍹</span>
+                      <div>
+                        <span className="font-medium">Happy Hour & Drinks</span>
+                        <p className="text-xs text-charcoal/60">Specials & cocktail guide</p>
+                      </div>
+                    </Link>
+                    <Link href="/blog/category/local-guide" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">📍</span>
+                      <div>
+                        <span className="font-medium">Local Guide</span>
+                        <p className="text-xs text-charcoal/60">Best restaurants in DFW</p>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -239,7 +261,7 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal delay={200}>
-              <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic"
+              <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white"
                   style={{
                     textShadow: '3px 3px 0px rgba(0,0,0,0.9), 6px 6px 10px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.8)',
                     WebkitTextStroke: '1px rgba(0,0,0,0.3)'
@@ -352,109 +374,139 @@ export default function HomePage() {
         </section>
 
         {/* Experience Section */}
-        <section className="py-20 bg-warm-ivory">
-          <div className="container mx-auto px-6">
+        <section className="py-24 bg-warm-ivory relative overflow-hidden">
+          {/* Subtle decorative pattern */}
+          <div className="absolute inset-0 opacity-[0.02]" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0L60 30L30 60L0 30z M30 10L50 30L30 50L10 30z' fill='%231F1F1F' fill-opacity='1'/%3E%3C/svg%3E")`
+          }} />
+
+          <div className="container mx-auto px-6 relative z-10">
             <ScrollReveal>
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4 italic">
+              <div className="text-center mb-20">
+                <span className="inline-block w-16 h-1 bg-gradient-to-r from-accent-red to-soft-gold rounded-full mb-6" />
+                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6 italic">
                   The Jinbeh Experience
                 </h2>
-                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  More than a meal - it is entertainment, artistry, and tradition
+                <p className="text-xl text-charcoal/70 max-w-2xl mx-auto leading-relaxed">
+                  More than a meal — it&apos;s entertainment, artistry, and tradition
                   served at your table
                 </p>
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
               {/* Hibachi */}
               <ScrollReveal delay={0}>
-                <div className="group text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent-red to-orange-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <Link href="/blog/category/hibachi" className="group block feature-card text-center">
+                  <div className="icon-circle icon-circle-fire mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    <span className="text-4xl filter drop-shadow-md">🔥</span>
                   </div>
-                  <h3 className="font-heading text-2xl font-semibold text-charcoal mb-3">
+                  <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
                     Hibachi Theater
                   </h3>
-                  <p className="text-charcoal/70 leading-relaxed">
+                  <p className="text-charcoal/70 leading-relaxed mb-6">
                     Watch our master chefs dazzle with flames, precision knife work,
                     and the legendary onion volcano.
                   </p>
-                </div>
+                  <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
+                    Explore Hibachi
+                    <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </Link>
               </ScrollReveal>
 
               {/* Sushi */}
               <ScrollReveal delay={150}>
-                <div className="group text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-deep-indigo to-blue-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <Link href="/blog/category/sushi" className="group block feature-card text-center">
+                  <div className="icon-circle icon-circle-sushi mx-auto mb-8 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
+                    <span className="text-4xl filter drop-shadow-md">🍣</span>
                   </div>
-                  <h3 className="font-heading text-2xl font-semibold text-charcoal mb-3">
+                  <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
                     Sushi Artistry
                   </h3>
-                  <p className="text-charcoal/70 leading-relaxed">
+                  <p className="text-charcoal/70 leading-relaxed mb-6">
                     Pristine fish, expertly crafted rolls, and creative
                     presentations where tradition meets innovation.
                   </p>
-                </div>
+                  <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
+                    Explore Sushi
+                    <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </Link>
               </ScrollReveal>
 
               {/* Celebrations */}
               <ScrollReveal delay={300}>
-                <div className="group text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-soft-gold to-amber-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <Link href="/blog/category/celebrations" className="group block feature-card text-center">
+                  <div className="icon-circle icon-circle-celebration mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    <span className="text-4xl filter drop-shadow-md">🎉</span>
                   </div>
-                  <h3 className="font-heading text-2xl font-semibold text-charcoal mb-3">
+                  <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
                     Celebrate Together
                   </h3>
-                  <p className="text-charcoal/70 leading-relaxed">
-                    Birthdays, anniversaries, graduations - we make every occasion
+                  <p className="text-charcoal/70 leading-relaxed mb-6">
+                    Birthdays, anniversaries, graduations — we make every occasion
                     unforgettable.
                   </p>
-                </div>
+                  <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
+                    Plan Your Event
+                    <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </Link>
               </ScrollReveal>
             </div>
           </div>
         </section>
 
         {/* Stats Section with Animated NumberTicker */}
-        <section className="py-16 bg-charcoal text-white">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+        <section className="py-20 bg-charcoal text-white relative overflow-hidden">
+          {/* Subtle gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-deep-indigo/30" />
+
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-5xl mx-auto text-center">
               <ScrollReveal delay={0}>
-                <div>
-                  <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
+                <div className="group">
+                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
                     <NumberTicker value={37} suffix="+" delay={0.2} />
                   </div>
-                  <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
+                  <p className="stat-label">
                     Years Serving DFW
                   </p>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={100}>
-                <div>
-                  <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
+                <div className="group">
+                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
                     <NumberTicker value={1000} suffix="+" delay={0.3} />
                   </div>
-                  <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
+                  <p className="stat-label">
                     5-Star Reviews
                   </p>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={200}>
-                <div>
-                  <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
+                <div className="group">
+                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
                     <NumberTicker value={68000} suffix="+" delay={0.4} />
                   </div>
-                  <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
+                  <p className="stat-label">
                     Meals Served Annually
                   </p>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={300}>
-                <div>
-                  <div className="text-4xl md:text-5xl font-heading font-bold text-accent-red mb-2">
+                <div className="group">
+                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
                     <NumberTicker value={2} delay={0.5} />
                   </div>
-                  <p className="text-warm-ivory/70 text-sm uppercase tracking-wider">
+                  <p className="stat-label">
                     Convenient Locations
                   </p>
                 </div>
@@ -464,67 +516,68 @@ export default function HomePage() {
         </section>
 
         {/* Gallery Preview Section */}
-        <section className="py-20 bg-warm-ivory">
+        <section className="py-24 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <ScrollReveal>
-              <div className="text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4 italic">
+              <div className="text-center mb-16">
+                <span className="inline-block w-16 h-1 bg-gradient-to-r from-soft-gold to-accent-red rounded-full mb-6" />
+                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6 italic">
                   A Feast for the Eyes
                 </h2>
-                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                <p className="text-xl text-charcoal/70 max-w-2xl mx-auto">
                   Every dish is crafted with care and presented with pride
                 </p>
               </div>
             </ScrollReveal>
 
             {/* Image Gallery Grid - Professional Photoshoot Images */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-              <ScrollReveal delay={0} className="relative aspect-[4/3] md:col-span-2 rounded-2xl overflow-hidden group">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
+              <ScrollReveal delay={0} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
                   src="/images/photoshoot/hibachi-plate-shrimp.jpg"
                   alt="Hibachi shrimp and scallops with fried rice - Jinbeh signature plate"
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
               </ScrollReveal>
-              <ScrollReveal delay={100} className="relative aspect-[4/3] md:col-span-2 rounded-2xl overflow-hidden group">
+              <ScrollReveal delay={100} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
                   src="/images/photoshoot/sashimi-platter.jpg"
                   alt="Premium sashimi platter with uni, salmon, and yellowtail"
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
               </ScrollReveal>
-              <ScrollReveal delay={200} className="relative aspect-square rounded-2xl overflow-hidden group">
+              <ScrollReveal delay={200} className="gallery-item aspect-square">
                 <Image
                   src="/images/photoshoot/sushi-tower.jpg"
                   alt="Specialty sushi tower with spicy tuna and avocado"
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
               </ScrollReveal>
-              <ScrollReveal delay={250} className="relative aspect-square rounded-2xl overflow-hidden group">
+              <ScrollReveal delay={250} className="gallery-item aspect-square">
                 <Image
                   src="/images/photoshoot/hibachi-steak.jpg"
                   alt="Hibachi filet mignon with vegetables and fried rice"
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
               </ScrollReveal>
-              <ScrollReveal delay={300} className="relative aspect-square rounded-2xl overflow-hidden group">
+              <ScrollReveal delay={300} className="gallery-item aspect-square">
                 <Image
                   src="/images/photoshoot/appetizers-spread.jpg"
                   alt="Japanese appetizers - edamame, tempura, and crab rangoon"
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
               </ScrollReveal>
-              <ScrollReveal delay={350} className="relative aspect-square rounded-2xl overflow-hidden group">
+              <ScrollReveal delay={350} className="gallery-item aspect-square">
                 <Image
                   src="/images/photoshoot/sizzling-plate.jpg"
                   alt="Sizzling hot plate fresh from the grill"
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                 />
               </ScrollReveal>
             </div>
@@ -582,14 +635,14 @@ export default function HomePage() {
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg>
                 <h2 className="text-2xl font-heading font-bold text-charcoal">
-                  Follow Us @JinbehRestaurant
+                  Follow Us @JinbehFrisco
                 </h2>
               </div>
               <p className="text-charcoal/70 mb-8">
                 Share your #JinbehMoments with us on Instagram
               </p>
               <a
-                href="https://instagram.com/JinbehRestaurant"
+                href="https://instagram.com/JinbehFrisco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg"
@@ -604,39 +657,44 @@ export default function HomePage() {
         </section>
 
         {/* Testimonial Section */}
-        <section className="py-20 bg-white">
+        <section className="py-24 bg-white relative">
           <ScrollReveal>
-            <div className="container mx-auto px-6 text-center max-w-4xl">
+            <div className="container mx-auto px-6 text-center max-w-4xl testimonial-card">
               {/* Stars */}
-              <div className="flex justify-center gap-1 mb-6">
+              <div className="flex justify-center gap-1 mb-8">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-8 h-8 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-8 h-8 text-soft-gold drop-shadow-sm" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
 
-              <blockquote className="text-2xl md:text-3xl font-heading italic text-charcoal mb-8 leading-relaxed">
+              <blockquote className="text-2xl md:text-3xl font-heading italic text-charcoal mb-10 leading-relaxed">
                 &ldquo;Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance,
-                and the food was incredible. We have been coming here for 10 years and it never disappoints.&rdquo;
+                and the food was incredible. We&apos;ve been coming here for 10 years and it never disappoints.&rdquo;
               </blockquote>
 
               <div>
-                <p className="font-semibold text-charcoal">Sarah M.</p>
-                <p className="text-charcoal/60 text-sm">Google Review - Frisco Location</p>
+                <p className="font-bold text-charcoal text-lg">Sarah M.</p>
+                <p className="text-charcoal/60 text-sm mt-1">Google Review — Frisco Location</p>
               </div>
             </div>
           </ScrollReveal>
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
+        <section className="py-24 cta-gradient text-white relative overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+
           <ScrollReveal>
-            <div className="container mx-auto px-6 text-center">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+            <div className="container mx-auto px-6 text-center relative z-10">
+              <span className="inline-block w-16 h-1 bg-gradient-to-r from-white/40 to-soft-gold rounded-full mb-8" />
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 italic">
                 Ready for an Experience?
               </h2>
-              <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
+              <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
                 Join us at either location for a dining experience that will create
                 memories to last a lifetime.
               </p>
@@ -644,13 +702,13 @@ export default function HomePage() {
               {/* Two Location Cards */}
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 {/* Frisco */}
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                <div className="cta-card p-8">
                   <h3 className="text-2xl font-heading font-bold mb-2">Frisco</h3>
-                  <p className="text-white/80 text-sm mb-6">Near Stonebriar Centre</p>
-                  <div className="flex flex-col gap-3">
+                  <p className="text-white/70 text-sm mb-6">Near Stonebriar Centre</p>
+                  <div className="flex flex-col gap-4">
                     <Link
                       href="/frisco#reserve"
-                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
+                      className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -659,7 +717,7 @@ export default function HomePage() {
                     </Link>
                     <a
                       href="tel:2146189888"
-                      className="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-all border-2 border-white/50"
+                      className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -670,13 +728,13 @@ export default function HomePage() {
                 </div>
 
                 {/* Lewisville */}
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                <div className="cta-card p-8">
                   <h3 className="text-2xl font-heading font-bold mb-2">Lewisville</h3>
-                  <p className="text-white/80 text-sm mb-6">Easy access from I-35E</p>
-                  <div className="flex flex-col gap-3">
+                  <p className="text-white/70 text-sm mb-6">Easy access from I-35E</p>
+                  <div className="flex flex-col gap-4">
                     <Link
                       href="/lewisville#reserve"
-                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
+                      className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -685,7 +743,7 @@ export default function HomePage() {
                     </Link>
                     <a
                       href="tel:2146189798"
-                      className="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-all border-2 border-white/50"
+                      className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

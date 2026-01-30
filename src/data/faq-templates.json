@@ -1,0 +1,167 @@
+{
+  "voiceGuidelines": {
+    "tone": "Gracious Host - warm, welcoming, like a friend inviting you in",
+    "readingLevel": "6th-8th grade, short sentences (10-20 words)",
+    "signaturePhrases": [
+      "Welcome to the table!",
+      "It's a celebration!",
+      "Dinner and a show",
+      "Fresh and flavorful",
+      "We treat every guest like family"
+    ],
+    "avoid": [
+      "Cold/formal corporate language",
+      "Excessive exclamation marks",
+      "Generic restaurant phrases",
+      "ALL CAPS"
+    ]
+  },
+  "faqsByCategory": {
+    "hibachi": [
+      {
+        "question": "What is hibachi and how is it different from teppanyaki?",
+        "answer": "Welcome to the table! Hibachi is Japanese-style grilling where our chefs cook your meal right before your eyes. At Jinbeh, you'll enjoy the full teppanyaki experience—fire tricks, the famous onion volcano, and perfectly seasoned meats and vegetables. It's dinner and a show!"
+      },
+      {
+        "question": "What comes with a hibachi dinner at Jinbeh?",
+        "answer": "Our hibachi dinners are a complete experience. You'll get Japanese onion soup, fresh salad with ginger dressing, fried rice cooked on the grill, sautéed vegetables, and your choice of protein. Plus, our chefs put on an entertaining show while they cook."
+      },
+      {
+        "question": "Is hibachi good for kids and families?",
+        "answer": "Absolutely! Families love our hibachi tables. Kids are fascinated by the fire tricks and onion volcano. We have a children's menu, and our chefs are great at making little ones smile. It's a celebration every time."
+      },
+      {
+        "question": "How much does hibachi dinner cost at Jinbeh?",
+        "answer": "Our hibachi dinners start around $18 for chicken and go up to $45 for premium options like filet mignon or lobster tail. Kids' hibachi is even more affordable. Check our full menu for current prices."
+      },
+      {
+        "question": "Do I need reservations for hibachi?",
+        "answer": "We recommend reservations, especially on weekends and for groups. Hibachi tables seat 8-10 guests, so we often combine parties—you might make new friends! Call our Frisco location at (214) 618-9888 or Lewisville at (214) 618-9798."
+      }
+    ],
+    "sushi": [
+      {
+        "question": "Is the sushi at Jinbeh fresh?",
+        "answer": "Fresh and flavorful—that's our promise. We receive fish deliveries multiple times per week. Our sushi chefs slice each piece to order. You can watch them work at our sushi bar."
+      },
+      {
+        "question": "What sushi do you recommend for beginners?",
+        "answer": "Welcome to the world of sushi! Start with our California Roll or Shrimp Tempura Roll—they're mild and delicious. Salmon rolls are also crowd-pleasers. Our servers are happy to guide you through the menu."
+      },
+      {
+        "question": "What is omakase and do you offer it?",
+        "answer": "Omakase means 'I'll leave it to you'—the chef chooses your courses. It's a wonderful way to experience sushi. At Jinbeh, ask about our chef's selection for a curated tasting experience."
+      },
+      {
+        "question": "Do you have vegetarian sushi options?",
+        "answer": "Yes! We offer several vegetarian rolls including cucumber roll, avocado roll, and vegetable tempura roll. Just let your server know about any dietary needs. We're happy to accommodate."
+      },
+      {
+        "question": "Can I order sushi for takeout or delivery?",
+        "answer": "Absolutely! Our sushi travels well for takeout. Order online or call us directly. For the freshest experience, we recommend dining in at our sushi bar—it's worth the trip."
+      }
+    ],
+    "sake-drinks": [
+      {
+        "question": "What sake do you recommend for beginners?",
+        "answer": "Welcome to sake! Start with a Junmai or Nigori (cloudy sake)—they're smooth and approachable. Our bartenders can suggest pairings based on what you're eating. Don't be shy to ask."
+      },
+      {
+        "question": "What is a sake bomb and do you serve them?",
+        "answer": "A sake bomb is a fun tradition—a shot of sake dropped into a beer. Yes, we serve them! They're popular during happy hour and celebrations. It's a celebration waiting to happen."
+      },
+      {
+        "question": "Do you have happy hour specials?",
+        "answer": "Yes! Our happy hour features discounted sake, beer, and cocktails plus appetizer specials. Hours vary by location, so call us for current times. It's a great way to try different drinks."
+      },
+      {
+        "question": "What Japanese cocktails do you serve?",
+        "answer": "Our bar crafts Japanese-inspired cocktails including our Jinbeh Punch, Tokyo Mule, and Lychee Martini. We also feature Japanese whisky selections. Ask your server for recommendations."
+      },
+      {
+        "question": "Can I do a sake tasting at Jinbeh?",
+        "answer": "Try our sake flight! It includes several sake varieties so you can discover your preferences. Our staff will explain each one. It's a wonderful introduction to Japanese beverages."
+      }
+    ],
+    "celebrations": [
+      {
+        "question": "Do you do birthday celebrations at Jinbeh?",
+        "answer": "It's a celebration! We love birthdays. Let us know when you book, and we'll help make it special. Many guests choose hibachi for the entertainment—our chefs love celebrating with you."
+      },
+      {
+        "question": "Is there a free birthday dessert or meal?",
+        "answer": "Yes! We offer a complimentary birthday treat for the guest of honor. Just mention it's a birthday when you arrive. We want every celebration to feel special."
+      },
+      {
+        "question": "Can you accommodate large groups or private parties?",
+        "answer": "Absolutely! We welcome groups and can arrange semi-private or private dining for special occasions. Corporate events, graduations, anniversaries—we've hosted them all. Call ahead so we can prepare."
+      },
+      {
+        "question": "Is Jinbeh good for date night?",
+        "answer": "Perfect for date night! Our sushi bar offers an intimate setting, while hibachi is fun and interactive. Either way, you're in for great food and a memorable evening together."
+      },
+      {
+        "question": "Do you offer catering for events?",
+        "answer": "Yes, we cater! From sushi platters to full hibachi experiences, we can bring Jinbeh to your venue. Contact us for custom menus and pricing. We love being part of your celebrations."
+      }
+    ],
+    "location-frisco": [
+      {
+        "question": "Where is Jinbeh Frisco located?",
+        "answer": "We're at 2693 Preston Road in Frisco, near Stonebriar Centre. Just minutes from Legacy West and the Dallas North Tollway. Plenty of parking right outside."
+      },
+      {
+        "question": "What are your Frisco hours?",
+        "answer": "We're open for lunch and dinner daily. Hours may vary, so we recommend calling (214) 618-9888 to confirm. We look forward to welcoming you."
+      },
+      {
+        "question": "Do you take reservations at the Frisco location?",
+        "answer": "Yes! Reservations are recommended, especially for hibachi on weekends. Call (214) 618-9888 or book online. We'll save your spot at the table."
+      },
+      {
+        "question": "Is there parking at Jinbeh Frisco?",
+        "answer": "Plenty of parking! We're in a shopping center with a large parking lot right outside our door. No meters, no stress—just easy access."
+      }
+    ],
+    "location-lewisville": [
+      {
+        "question": "Where is Jinbeh Lewisville located?",
+        "answer": "We're at 2440 S. Stemmons Freeway in Lewisville, near Vista Ridge Mall. Easy access from I-35E, with convenient parking right outside."
+      },
+      {
+        "question": "What are your Lewisville hours?",
+        "answer": "We're open for lunch and dinner daily. Hours may vary, so call (214) 618-9798 to confirm. Welcome to the table!"
+      },
+      {
+        "question": "Do you take reservations at the Lewisville location?",
+        "answer": "Yes! Reservations are recommended for hibachi, especially on weekends. Call (214) 618-9798 or book online. We treat every guest like family."
+      },
+      {
+        "question": "Is there parking at Jinbeh Lewisville?",
+        "answer": "Yes! We have convenient parking in our shopping center lot. No garages or meters—just easy access right to our door."
+      }
+    ],
+    "general": [
+      {
+        "question": "What type of restaurant is Jinbeh?",
+        "answer": "Jinbeh is an authentic Japanese steakhouse and sushi bar. We're known for our hibachi shows—dinner and a show—plus fresh sushi crafted at our bar. Family-friendly and perfect for celebrations."
+      },
+      {
+        "question": "Is Jinbeh family-friendly?",
+        "answer": "Absolutely! Families love us. Kids are entertained by our hibachi chefs, we have children's menus, and our atmosphere is welcoming to all ages. We treat every guest like family."
+      },
+      {
+        "question": "Does Jinbeh have a kids menu?",
+        "answer": "Yes! Our children's menu includes kid-friendly hibachi options, teriyaki dishes, and simple sushi. Portions are sized just right for little ones."
+      },
+      {
+        "question": "Can you accommodate food allergies?",
+        "answer": "Please let us know about any allergies when you arrive. Our chefs can adjust many dishes. Common accommodations include gluten-free options and nut-free preparations. Your safety is important to us."
+      },
+      {
+        "question": "Do you offer takeout and delivery?",
+        "answer": "Yes! Sushi and many menu items are available for takeout. We also partner with delivery services. For the hibachi experience, though, you'll want to dine in—it's dinner and a show!"
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "clusters": {
+    "hibachi": {
+      "name": "Hibachi & Teppanyaki",
+      "pillarPage": "/blog/discover-teppanyaki",
+      "description": "Everything about hibachi dining, teppanyaki shows, and the Japanese steakhouse experience",
+      "keywords": ["hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill", "onion volcano"],
+      "articles": [
+        { "slug": "what-is-hibachi", "title": "What is Hibachi?", "priority": 1 },
+        { "slug": "discover-teppanyaki", "title": "Discover Teppanyaki", "priority": 1 },
+        { "slug": "hibachi-vs-teppanyaki-explained", "title": "Hibachi vs Teppanyaki Explained", "priority": 2 },
+        { "slug": "hibachi-birthday-party-ideas", "title": "Hibachi Birthday Party Ideas", "priority": 2 },
+        { "slug": "hibachi-calories-nutrition", "title": "Hibachi Calories & Nutrition", "priority": 3 },
+        { "slug": "hibachi-calories-guide", "title": "Hibachi Calories Guide 2025", "priority": 3 },
+        { "slug": "hibachi-dining-experience", "title": "Hibachi Dining Experience", "priority": 2 },
+        { "slug": "hibachi-lunch-ideas", "title": "Hibachi Lunch Ideas", "priority": 3 },
+        { "slug": "hibachi-menu-guide", "title": "Hibachi Menu Guide", "priority": 2 },
+        { "slug": "best-hibachi-dallas", "title": "Best Hibachi in Dallas", "priority": 1 },
+        { "slug": "best-hibachi-dallas-tx", "title": "Best Hibachi Dallas TX", "priority": 2 }
+      ]
+    },
+    "sushi": {
+      "name": "Sushi & Sashimi",
+      "pillarPage": "/blog/types-of-sushi",
+      "description": "Comprehensive guides to sushi, sashimi, rolls, and Japanese seafood",
+      "keywords": ["sushi", "sashimi", "sushi rolls", "nigiri", "maki", "omakase"],
+      "articles": [
+        { "slug": "types-of-sushi", "title": "Types of Sushi", "priority": 1 },
+        { "slug": "types-of-sushi-rolls", "title": "Types of Sushi Rolls", "priority": 2 },
+        { "slug": "sashimi-vs-sushi", "title": "Sashimi vs Sushi", "priority": 2 },
+        { "slug": "how-to-eat-sushi-guide", "title": "How to Eat Sushi", "priority": 2 },
+        { "slug": "sushi-for-beginners", "title": "Sushi for Beginners", "priority": 2 },
+        { "slug": "beginner-sushi-tips", "title": "Beginner Sushi Tips", "priority": 3 },
+        { "slug": "best-sushi-dallas", "title": "Best Sushi in Dallas", "priority": 1 },
+        { "slug": "best-sushi-frisco", "title": "Best Sushi in Frisco", "priority": 1 },
+        { "slug": "best-salmon-sashimi", "title": "Best Salmon Sashimi", "priority": 3 },
+        { "slug": "sushi-lunch-specials", "title": "Sushi Lunch Specials", "priority": 3 },
+        { "slug": "what-is-omakase", "title": "What is Omakase?", "priority": 2 },
+        { "slug": "omakase-dining-guide", "title": "Omakase Dining Guide", "priority": 2 }
+      ]
+    },
+    "sake-drinks": {
+      "name": "Sake & Japanese Drinks",
+      "pillarPage": "/blog/sake-pairing-guide",
+      "description": "Guide to sake, Japanese whiskey, cocktails, and authentic beverages",
+      "keywords": ["sake", "japanese whiskey", "japanese cocktails", "ramune", "shochu"],
+      "articles": [
+        { "slug": "sake-pairing-guide", "title": "Sake Pairing Guide", "priority": 1 },
+        { "slug": "sake-alcohol-strength", "title": "Sake Alcohol Strength", "priority": 2 },
+        { "slug": "types-of-sake-explained", "title": "Types of Sake Explained", "priority": 2 },
+        { "slug": "japanese-cocktails", "title": "Japanese Cocktails", "priority": 2 },
+        { "slug": "japanese-whiskey-guide", "title": "Japanese Whiskey Guide", "priority": 2 },
+        { "slug": "yamazaki-whiskey-guide", "title": "Yamazaki Whiskey Guide", "priority": 3 },
+        { "slug": "japanese-beverages-guide", "title": "Japanese Beverages Guide", "priority": 2 },
+        { "slug": "japanese-drinks", "title": "Japanese Drinks", "priority": 3 },
+        { "slug": "ramune-soda-guide", "title": "Ramune Soda Guide", "priority": 3 },
+        { "slug": "best-happy-hour-frisco", "title": "Best Happy Hour Frisco", "priority": 2 },
+        { "slug": "best-happy-hour-frisco-tx", "title": "Happy Hour Frisco TX", "priority": 3 }
+      ]
+    },
+    "celebrations": {
+      "name": "Celebrations & Special Events",
+      "pillarPage": "/celebrations",
+      "description": "Birthday parties, anniversaries, showers, and special occasion dining",
+      "keywords": ["birthday party", "anniversary dinner", "baby shower", "bridal shower", "graduation"],
+      "articles": [
+        { "slug": "hibachi-birthday-party-ideas", "title": "Hibachi Birthday Party Ideas", "priority": 1 },
+        { "slug": "unique-kids-birthday-party-places", "title": "Unique Kids Birthday Party Places", "priority": 2 },
+        { "slug": "baby-shower-venues", "title": "Baby Shower Venues", "priority": 2 },
+        { "slug": "bridal-shower-venues", "title": "Bridal Shower Venues", "priority": 2 },
+        { "slug": "romantic-anniversary-dinners", "title": "Romantic Anniversary Dinners", "priority": 2 },
+        { "slug": "free-birthday-food-deals", "title": "Free Birthday Food Deals", "priority": 3 },
+        { "slug": "bachelorette-restaurants-dallas", "title": "Bachelorette Restaurants Dallas", "priority": 2 },
+        { "slug": "thanksgiving-dining-guide", "title": "Thanksgiving Dining Guide", "priority": 3 }
+      ]
+    },
+    "private-dining": {
+      "name": "Private Dining & Groups",
+      "pillarPage": "/private-dining",
+      "description": "Private rooms, large party venues, and group dining options",
+      "keywords": ["private dining", "group dining", "large party", "private room"],
+      "articles": [
+        { "slug": "restaurants-private-rooms", "title": "Restaurants with Private Rooms", "priority": 1 },
+        { "slug": "large-group-dining", "title": "Large Group Dining", "priority": 2 },
+        { "slug": "group-dining-venues", "title": "Group Dining Venues", "priority": 2 }
+      ]
+    },
+    "catering": {
+      "name": "Catering Services",
+      "pillarPage": "/catering",
+      "description": "Hibachi catering, off-site events, and party catering services",
+      "keywords": ["hibachi catering", "japanese catering", "event catering", "offsite catering"],
+      "articles": [
+        { "slug": "hibachi-catering-dfw", "title": "Hibachi Catering DFW", "priority": 1 },
+        { "slug": "jinbeh-catering-services", "title": "Jinbeh Catering Services", "priority": 1 },
+        { "slug": "offsite-hibachi-catering", "title": "Offsite Hibachi Catering", "priority": 2 }
+      ]
+    },
+    "frisco": {
+      "name": "Frisco Dining Guide",
+      "pillarPage": "/frisco",
+      "description": "Best restaurants and dining experiences in Frisco, TX",
+      "keywords": ["frisco restaurants", "dining frisco tx", "stonebriar mall restaurants"],
+      "articles": [
+        { "slug": "best-sushi-frisco", "title": "Best Sushi in Frisco", "priority": 1 },
+        { "slug": "fine-dining-frisco", "title": "Fine Dining in Frisco", "priority": 2 },
+        { "slug": "top-frisco-restaurants", "title": "Top Frisco Restaurants", "priority": 1 },
+        { "slug": "restaurants-near-stonebriar", "title": "Restaurants Near Stonebriar", "priority": 2 },
+        { "slug": "best-happy-hour-frisco", "title": "Best Happy Hour Frisco", "priority": 2 },
+        { "slug": "date-night-restaurants-frisco", "title": "Date Night Restaurants Frisco", "priority": 2 },
+        { "slug": "things-to-do-frisco", "title": "Things to Do in Frisco", "priority": 3 }
+      ]
+    },
+    "lewisville": {
+      "name": "Lewisville Dining Guide",
+      "pillarPage": "/lewisville",
+      "description": "Best restaurants and dining experiences in Lewisville, TX",
+      "keywords": ["lewisville restaurants", "dining lewisville tx", "japanese restaurant lewisville"],
+      "articles": [
+        { "slug": "best-japanese-lewisville", "title": "Best Japanese in Lewisville", "priority": 1 },
+        { "slug": "japanese-restaurants-lewisville", "title": "Japanese Restaurants Lewisville", "priority": 1 },
+        { "slug": "seafood-lewisville", "title": "Seafood in Lewisville", "priority": 2 }
+      ]
+    },
+    "dallas-dining": {
+      "name": "Dallas Dining & Culture",
+      "pillarPage": "/blog/best-asian-food-dallas",
+      "description": "Dallas restaurant guides and Japanese food culture",
+      "keywords": ["dallas restaurants", "asian food dallas", "japanese culture"],
+      "articles": [
+        { "slug": "best-asian-food-dallas", "title": "Best Asian Food in Dallas", "priority": 1 },
+        { "slug": "asian-cuisine-dallas", "title": "Asian Cuisine in Dallas", "priority": 2 },
+        { "slug": "best-seafood-dallas", "title": "Best Seafood in Dallas", "priority": 2 },
+        { "slug": "best-steak-near-me", "title": "Best Steak Near Me", "priority": 3 },
+        { "slug": "popular-japanese-culture", "title": "Popular Japanese Culture", "priority": 3 },
+        { "slug": "japanese-restaurants-near-me", "title": "Japanese Restaurants Near Me", "priority": 2 }
+      ]
+    },
+    "jinbeh-services": {
+      "name": "Jinbeh Services & Info",
+      "pillarPage": "/about",
+      "description": "Jinbeh-specific services, gift cards, and information",
+      "keywords": ["jinbeh", "gift cards", "reservations"],
+      "articles": [
+        { "slug": "jinbeh-gift-cards-guide", "title": "Jinbeh Gift Cards Guide", "priority": 2 },
+        { "slug": "jinbeh-catering-services", "title": "Jinbeh Catering Services", "priority": 1 }
+      ]
+    }
+  },
+  "interlinkingRules": {
+    "description": "Rules for internal linking between articles",
+    "rules": [
+      "Each article should link to its pillar page at least once",
+      "Articles in the same cluster should cross-link to 2-3 related articles",
+      "Priority 1 articles should be linked from multiple Priority 2-3 articles",
+      "Location articles (Frisco/Lewisville) should always link to respective location pages",
+      "Celebration articles should link to /celebrations and respective location pages",
+      "All articles should have a CTA linking to /frisco#reserve or /lewisville#reserve"
+    ]
+  }
+}

@@ -594,3 +594,586 @@ a:hover {
 .animate-ticker {
   animation: ticker-bounce 0.3s ease-out;
 }
+
+/* ======================================
+   Section Dividers & Transitions
+   ====================================== */
+
+/* Wave Divider */
+.section-divider-wave {
+  position: relative;
+}
+
+.section-divider-wave::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.1,94.63,108.24,89.11,155.52,77.85,229.47,61,293.63,60.08,321.39,56.44Z' fill='%23F6F1E8'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+/* Slant Divider */
+.section-divider-slant {
+  position: relative;
+}
+
+.section-divider-slant::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right bottom, transparent 49.5%, var(--warm-ivory) 50%);
+}
+
+/* ======================================
+   Enhanced Card Animations
+   ====================================== */
+
+.card-hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Image Zoom on Hover */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* ======================================
+   Floating Animation for Elements
+   ====================================== */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(193, 18, 31, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(193, 18, 31, 0);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ======================================
+   Video Container Styles
+   ====================================== */
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(31, 31, 31, 0.3) 50%,
+    rgba(31, 31, 31, 0.8) 100%
+  );
+  pointer-events: none;
+}
+
+/* Video Carousel Dots */
+.video-carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.video-carousel-dot.active {
+  background: var(--accent-red);
+  transform: scale(1.2);
+}
+
+/* ======================================
+   Gradient Text Effects
+   ====================================== */
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--soft-gold), #E8C547, var(--soft-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, var(--accent-red), #E63946, var(--accent-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ======================================
+   Button Improvements
+   ====================================== */
+
+/* Larger touch targets and better spacing */
+.btn-lg {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: 18px;
+  gap: var(--space-md);
+}
+
+/* Icon button enhancement */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.btn-icon svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-icon:hover svg {
+  transform: translateX(4px);
+}
+
+/* ======================================
+   Glass Morphism Cards
+   ====================================== */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-xl);
+}
+
+.glass-card-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+}
+
+/* ======================================
+   Soft Shadow Utilities
+   ====================================== */
+
+.shadow-soft {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 10px 20px -5px rgba(0, 0, 0, 0.08),
+    0 20px 40px -10px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-elevated {
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.08),
+    0 20px 30px -10px rgba(0, 0, 0, 0.1),
+    0 30px 50px -15px rgba(0, 0, 0, 0.05);
+}
+
+/* ======================================
+   Japanese-Inspired Decorative Elements
+   ====================================== */
+
+/* Subtle pattern overlay */
+.pattern-asanoha {
+  position: relative;
+}
+
+.pattern-asanoha::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0L60 30L30 60L0 30z M30 10L50 30L30 50L10 30z' fill='%231F1F1F' fill-opacity='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Red accent line */
+.accent-line {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-red);
+  border-radius: 2px;
+}
+
+.accent-line-gold {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--soft-gold), #E8C547);
+  border-radius: 2px;
+}
+
+/* Japanese-style section header */
+.section-header-jp {
+  position: relative;
+  display: inline-block;
+}
+
+.section-header-jp::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+}
+
+/* ======================================
+   Enhanced Hero Styles
+   ====================================== */
+
+.hero-gradient-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+/* Animated scroll indicator */
+@keyframes scroll-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-12px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-6px) translateX(-50%);
+  }
+}
+
+.scroll-indicator {
+  animation: scroll-bounce 2s ease infinite;
+}
+
+/* Location card hover effect */
+.location-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+/* ======================================
+   Section Spacing Utilities
+   ====================================== */
+
+.section-padding-sm {
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+}
+
+.section-padding-md {
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
+}
+
+.section-padding-lg {
+  padding-top: calc(var(--space-4xl) * 1.5);
+  padding-bottom: calc(var(--space-4xl) * 1.5);
+}
+
+/* ======================================
+   Feature Cards with Border Animation
+   ====================================== */
+
+.feature-card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-red), var(--soft-gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-elevated);
+}
+
+/* ======================================
+   Icon Circle Styles
+   ====================================== */
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+.icon-circle-fire {
+  background: linear-gradient(135deg, var(--accent-red), #FF6B35);
+  box-shadow: 0 8px 20px -4px rgba(193, 18, 31, 0.4);
+}
+
+.icon-circle-sushi {
+  background: linear-gradient(135deg, var(--deep-indigo), #3A5A8C);
+  box-shadow: 0 8px 20px -4px rgba(30, 42, 68, 0.4);
+}
+
+.icon-circle-celebration {
+  background: linear-gradient(135deg, var(--soft-gold), #E8C547);
+  box-shadow: 0 8px 20px -4px rgba(201, 162, 39, 0.4);
+}
+
+/* ======================================
+   Stats Counter Styling
+   ====================================== */
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--accent-red), #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(246, 241, 232, 0.7);
+}
+
+/* ======================================
+   Gallery Grid Enhancements
+   ====================================== */
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+.gallery-item img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* ======================================
+   Testimonial Card Styling
+   ====================================== */
+
+.testimonial-card {
+  position: relative;
+  padding: var(--space-2xl);
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-family: Georgia, serif;
+  font-size: 120px;
+  line-height: 1;
+  color: var(--soft-gold);
+  opacity: 0.2;
+}
+
+/* ======================================
+   CTA Section Enhancements
+   ====================================== */
+
+.cta-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--accent-red) 0%,
+    #A60F1A 30%,
+    var(--deep-indigo) 100%
+  );
+}
+
+.cta-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-xl);
+  transition: all 0.3s ease;
+}
+
+.cta-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+/* ======================================
+   Responsive Image Aspect Ratios
+   ====================================== */
+
+.aspect-16-10 {
+  aspect-ratio: 16 / 10;
+}
+
+.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* ======================================
+   Mobile Safe Area
+   ====================================== */
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* ======================================
+   Loading Skeleton
+   ====================================== */
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.06) 25%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.06) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+/* ======================================
+   Enhanced Focus States
+   ====================================== */
+
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.3);
+}
+
+/* ======================================
+   Smooth Section Transitions
+   ====================================== */
+
+.section-transition {
+  position: relative;
+}
+
+.section-transition::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    var(--warm-ivory) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}

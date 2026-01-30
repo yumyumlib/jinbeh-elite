@@ -103,7 +103,7 @@ const menuCategories = [
     id: "lunch",
     title: "Lunch Specials",
     description: "Weekday specials served Monday-Friday, 11am-2pm.",
-    image: "/images/food/BentoBoxLunchSet.png",
+    image: "/images/food/BentoBoxLunchSet.jpg",
     items: [
       { name: "Lunch Hibachi Combo", description: "Choice of protein with soup, salad, rice" },
       { name: "Bento Box", description: "Assorted Japanese favorites" },
@@ -117,7 +117,7 @@ const menuCategories = [
     id: "drinks",
     title: "Drinks & Sake",
     description: "Full bar with premium sake, Japanese beer, and craft cocktails.",
-    image: "/images/food/JinbehPunchBeverageDrink.png",
+    image: "/images/food/JinbehPunchBeverageDrink.jpg",
     items: [
       { name: "Premium Sake", description: "Hot or cold, by the glass or carafe" },
       { name: "Japanese Beer", description: "Sapporo, Asahi, Kirin" },

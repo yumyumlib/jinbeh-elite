@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions | Jinbeh",
@@ -25,29 +26,29 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What is the main difference between hibachi and teppanyaki?",
+    question: "What's the difference between hibachi and teppanyaki?",
     answer:
-      "The primary difference is the cooking vessel. Hibachi uses a traditional charcoal-burning Japanese heating device with an open grill, while teppanyaki uses a large flat iron griddle powered by gas or electricity. In Japan, both cooking methods are distinct. However, in the United States, most 'hibachi restaurants' actually serve teppanyaki-style cooking with chef performances, creating confusion between the two terms.",
+      "Hibachi is a small charcoal grill. Teppanyaki is a large flat iron griddle. In America, 'hibachi restaurants' serve teppanyaki-style cooking with chef performances. It's confusing! At Jinbeh, we do teppanyaki with the full show.",
   },
   {
-    question: "Why are American 'hibachi restaurants' actually teppanyaki?",
+    question: "Is hibachi or teppanyaki more entertaining?",
     answer:
-      "When teppanyaki cooking arrived in America in the 1960s, restaurateurs used the term 'hibachi' to describe the dining experience because it was more recognizable to Western audiences. The large flat griddle used in these restaurants is actually a teppan (teppanyaki griddle), not a traditional hibachi. Over time, Americans adopted 'hibachi' as the colloquial term for this style of interactive table-top cooking, even though it's technically teppanyaki.",
+      "Teppanyaki is the show! Our chefs do knife tricks, spatula juggling, and the famous onion volcano. Fire, flames, and shrimp-tossing. It's dinner and a show. Traditional hibachi is more quiet and focused on the food.",
   },
   {
-    question: "Which is more theatrical—hibachi or teppanyaki?",
+    question: "What should I expect at Jinbeh?",
     answer:
-      "Teppanyaki is significantly more theatrical. Teppanyaki chefs are trained performers who engage the table with knife tricks, spatula juggling, fire displays, and the famous 'onion volcano' and shrimp-tossing tricks. Traditional hibachi, while still enjoyable, is less performance-oriented—the focus is more on the cooking itself and the quality of the food. That said, what you experience at most 'hibachi restaurants' is teppanyaki with full entertainment.",
+      "Welcome to the table! You'll sit at a shared table with other guests. Our chef cooks your meal right in front of you. Vegetables, your choice of protein, fried rice. Entertainment, fire, and fresh, never-frozen ingredients. It's a celebration every time.",
   },
   {
-    question: "What should I expect at an authentic hibachi restaurant?",
+    question: "Does teppanyaki taste as good as hibachi?",
     answer:
-      "If you visit a true hibachi restaurant in Japan or a traditional Japanese hibachi spot, expect a more intimate, quieter experience focused on high-quality ingredients and cooking technique. You'll likely sit at a counter or small table, and the chef works with minimal fanfare. However, if you're visiting what Americans call a 'hibachi restaurant' (like Jinbeh), you'll experience teppanyaki: a large shared table, a theatrical chef performance, interactive entertainment, and a communal dining atmosphere that makes it perfect for celebrations and groups.",
+      "Both can be delicious! At Jinbeh, we deliver excellent flavor and entertainment. Our chefs are trained for years. Fresh ingredients. Expert technique. Your meal is customized right at the table. You get the best of both.",
   },
   {
-    question: "Which cooking style produces better-tasting food?",
+    question: "Can I book a teppanyaki table at Jinbeh?",
     answer:
-      "Both can produce excellent food—the difference is more about experience than flavor. Traditional hibachi allows for precise temperature control and often features premium, high-end ingredients cooked with reverent attention to detail. Teppanyaki delivers great taste while prioritizing entertainment and the social experience. At Jinbeh, we've perfected our teppanyaki to deliver both exceptional flavor and unforgettable entertainment, using fresh, never-frozen ingredients and techniques trained for years.",
+      "Yes! Teppanyaki tables seat 8-10 guests. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798. We recommend reservations, especially on weekends. We sometimes combine smaller parties—you might make new friends!",
   },
 ];
 
@@ -56,7 +57,7 @@ export default function HibachiVsTeppanyakiPage() {
     <ArticleLayout
       title="Hibachi vs Teppanyaki: Explained - Differences & Definitions"
       metaDescription="Confused about hibachi vs teppanyaki? Discover the key differences between these Japanese cooking styles, their origins, and what to expect at each."
-      heroImage="/images/blog/3-C060324-6364.jpg"
+      heroImage="/images/blog/6-C060324-6405.jpg"
       heroAlt="Teppanyaki chef performing at Jinbeh Japanese Restaurant with flames and knife skills on the griddle"
       category="Japanese Cuisine"
       categorySlug="cuisine"

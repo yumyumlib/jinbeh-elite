@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Japanese Restaurants Lewisville TX: Top Picks | Jinbeh",
@@ -8,12 +9,18 @@ export const metadata: Metadata = {
     keywords: ["japanese restaurant lewisville", "sushi lewisville tx", "hibachi lewisville", "asian food lewisville"],
 };
 
+const faqs = [
+    { question: "What's the best Japanese restaurant in Lewisville?", answer: "Welcome to the table! Jinbeh has served Lewisville since 1988. 4.7 stars on Google. Hibachi shows, fresh sushi, family-friendly. We treat every guest like family." },
+    { question: "Do you have hibachi in Lewisville?", answer: "Yes! Our hibachi tables seat 8-10 guests. Full chef performance. Dinner and a show. Fire tricks, onion volcano, perfectly cooked proteins. Perfect for celebrations and groups." },
+    { question: "Can you handle large groups?", answer: "Absolutely! We specialize in groups. Hibachi tables, flexible seating, customized menus. Call (214) 618-9798 to arrange your party. We love making celebrations special." },
+    { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful—that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
+    { question: "Where is Jinbeh Lewisville located?", answer: "We're at 2440 S. Stemmons Freeway, near Vista Ridge Mall. Easy I-35E access. Convenient parking right outside. Call (214) 618-9798 to confirm hours." },
+];
+
 const schemas = [
     { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Restaurants Lewisville TX", datePublished: "2026-01-23", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "Best Japanese restaurant in Lewisville?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh is a top choice, offering both hibachi and sushi under one roof since 1988. Located off I-35E near Vista Ridge Mall." } }
-        ]
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } }))
     }
 ];
 
@@ -22,8 +29,8 @@ export default function JapaneseRestaurantsLewisville() {
         <main className="min-h-screen bg-warm-ivory">
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
-            <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/blog/6-C060324-6405.jpg" alt="Jinbeh Lewisville" fill className="object-cover" priority />
+            <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
+                <Image src="/images/blog/2-C060324-6341.jpg" alt="Jinbeh Japanese Restaurant Lewisville dining room" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -67,27 +74,50 @@ export default function JapaneseRestaurantsLewisville() {
                                 ))}
                             </div>
 
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions About Japanese Dining in Lewisville</h2>
+                            <div className="space-y-3">
+                                {faqs.map((faq, i) => (
+                                    <details key={i} className="group bg-warm-ivory rounded-xl">
+                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{faq.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
+                                        <div className="px-5 pb-5 text-charcoal/80">{faq.answer}</div>
+                                    </details>
+                                ))}
+                            </div>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Other Dining Options in Lewisville</h2>
+                            <p className="text-charcoal/80 mb-6">While Jinbeh is our top recommendation for Japanese dining, Lewisville has other options. However, for authentic hibachi performances, fresh sushi, and professional service combined, <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> stands out as the premier choice.</p>
+
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍱 Visit Jinbeh Lewisville</h3>
-                                <p className="text-white/80 mb-2">250 E Round Grove Rd, Lewisville, TX 75067</p>
-                                <p className="text-white/80 mb-6">(972) 315-3744</p>
-                                <Link href="/lewisville#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold inline-block">Reserve Your Table</Link>
+                                <p className="text-white/80 mb-2"><strong>Address:</strong> 250 E Round Grove Rd, Lewisville, TX 75067</p>
+                                <p className="text-white/80 mb-6"><strong>Phone:</strong> (972) 315-3744</p>
+                                <div className="flex flex-wrap gap-4 justify-center">
+                                    <Link href="/lewisville#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Make a Reservation</Link>
+                                    <Link href="/lewisville/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">View Menu</Link>
+                                    <Link href="/private-dining" className="bg-white/20 border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition">Private Dining Info</Link>
+                                </div>
+                            </div>
+
+                            <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
+                                <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Explore Both Jinbeh Locations</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Jinbeh Lewisville</h4>
+                                        <p className="text-charcoal/70 text-sm mb-4">Off I-35E near Vista Ridge Mall. Convenient for local community and group dining.</p>
+                                        <span className="inline-block text-accent-red font-semibold">Lewisville Info →</span>
+                                    </Link>
+
+                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Jinbeh Frisco</h4>
+                                        <p className="text-charcoal/70 text-sm mb-4">Near Stonebriar Centre. Perfect for North Texas fine dining and celebrations.</p>
+                                        <span className="inline-block text-accent-red font-semibold">Frisco Info →</span>
+                                    </Link>
+                                </div>
                             </div>
                         </article>
 
-                        <aside>
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="font-heading font-bold mb-4">Related</h3>
-                                <div className="space-y-3">
-                                    {[{ t: "Best Hibachi Dallas", s: "/blog/best-hibachi-dallas-tx", i: "/images/blog/1-C060324-6328.jpg" },
-                                    { t: "Best Sushi Dallas", s: "/blog/best-sushi-dallas", i: "/images/blog/8-C060324-6462.jpg" }].map(r => (
-                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
-                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
+                        <aside className="lg:col-span-1">
+                            <RelatedArticles currentSlug="japanese-restaurants-lewisville" />
                         </aside>
                     </div>
                 </div>
