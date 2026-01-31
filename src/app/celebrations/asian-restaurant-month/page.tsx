@@ -415,7 +415,7 @@ export default function AsianRestaurantMonthPage() {
                 href="https://g.page/r/jinbeh-frisco/review"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-6 py-3 rounded-xl font-semibold"
+                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold"
               >
                 Review Frisco on Google
               </a>
@@ -423,7 +423,7 @@ export default function AsianRestaurantMonthPage() {
                 href="https://g.page/r/jinbeh-lewisville/review"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-6 py-3 rounded-xl font-semibold"
+                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold"
               >
                 Review Lewisville on Google
               </a>

@@ -72,28 +72,28 @@ const cateringOptions = [
   {
     title: "Sushi Platters",
     description: "Beautifully arranged assortments of our freshest sushi and rolls.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg",
+    image: "/images/photoshoot/sashimi-platter.jpg",
     includes: ["Signature Rolls", "Classic Rolls", "Nigiri Selection", "Sashimi (optional)"],
     ideal: "Perfect for cocktail parties, corporate meetings, and elegant gatherings.",
   },
   {
     title: "Appetizer Trays",
     description: "Japanese-style appetizers that wow any crowd.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/appetizers.jpg",
+    image: "/images/photoshoot/appetizers-spread.jpg",
     includes: ["Edamame", "Gyoza", "Tempura", "Spring Rolls", "Chicken Teriyaki Bites"],
     ideal: "Great for office lunches, casual parties, and game day events.",
   },
   {
     title: "Hibachi Party Trays",
     description: "Teppanyaki-style proteins with fried rice and vegetables.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg",
+    image: "/images/food/hibachi-grill.jpg",
     includes: ["Chicken Teriyaki", "Steak", "Shrimp", "Fried Rice", "Grilled Vegetables"],
     ideal: "Ideal for family gatherings, graduation parties, and celebrations.",
   },
   {
     title: "Custom Menus",
     description: "Let us create a tailored menu for your special event.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg",
+    image: "/images/about/chef-flames.jpg",
     includes: ["Consultation with our team", "Custom menu design", "Dietary accommodations", "Full-service options available"],
     ideal: "Weddings, corporate retreats, and milestone celebrations.",
   },
@@ -114,7 +114,7 @@ export default function CateringPage() {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://jinbeh.com/wp-content/uploads/2023/01/sushi-background.jpg')" }}
+            style={{ backgroundImage: "url('/images/photoshoot/sushi-tower.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
@@ -346,7 +346,7 @@ export default function CateringPage() {
                 <div className="text-center">
                   <a
                     href="mailto:frisco@jinbeh.com?subject=Catering%20Inquiry"
-                    className="btn bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
+                    className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
                   >
                     Send Catering Inquiry
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

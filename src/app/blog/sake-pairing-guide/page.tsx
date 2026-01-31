@@ -603,7 +603,7 @@ export default function SakePairingGuide() {
                                             <Link href="/lewisville" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
                                                 Lewisville Location
                                             </Link>
-                                            <Link href="#reserve" className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
+                                            <Link href="#reserve" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
                                                 Make a Reservation
                                             </Link>
                                         </div>

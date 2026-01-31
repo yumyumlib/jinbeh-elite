@@ -498,7 +498,7 @@ export default function CorporateCateringPage() {
                   </p>
                   <a
                     href="mailto:catering@jinbeh.com?subject=Corporate%20Catering%20Inquiry"
-                    className="btn bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
+                    className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
                   >
                     Send Corporate Catering Inquiry
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -344,7 +344,7 @@ export default function MothersDayPage() {
             </p>
             <Link
               href="/gift-cards"
-              className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-3 rounded-xl font-semibold shadow-lg inline-block"
+              className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg inline-block"
             >
               Shop Gift Cards
             </Link>

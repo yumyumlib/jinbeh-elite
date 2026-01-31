@@ -354,7 +354,7 @@ export default function ThanksgivingPage() {
                 href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-frisco-2693-preston-rd-frisco/2134962"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-6 py-3 rounded-xl font-semibold shadow-lg inline-block"
+                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold shadow-lg inline-block"
               >
                 Order Frisco Takeout
               </a>
@@ -362,7 +362,7 @@ export default function ThanksgivingPage() {
                 href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2693-preston-rd-lewisville/2134962"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-6 py-3 rounded-xl font-semibold shadow-lg inline-block"
+                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold shadow-lg inline-block"
               >
                 Order Lewisville Takeout
               </a>
