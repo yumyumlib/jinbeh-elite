@@ -5,10 +5,13 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
-  title: "Best Restaurants Near The Picklr Lewisville | Post-Pickleball Dining | Jinbeh",
+  title: "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh",
   description:
-    "Play pickleball at The Picklr Lewisville, then walk 2 doors down to Jinbeh for hibachi or sushi! The perfect pickleball date night or team outing in Lewisville, TX.",
+    "Looking for restaurants near pickleball in Lewisville? Jinbeh is just 2 doors from The Picklr! Enjoy hibachi or sushi after your game. Perfect for date nights & team dinners.",
   keywords: [
+    "restaurants near pickleball lewisville",
+    "restaurants near pickleball in lewisville",
+    "pickleball restaurant lewisville",
     "restaurants near the picklr lewisville",
     "the picklr lewisville food",
     "where to eat after pickleball lewisville",
@@ -19,8 +22,9 @@ export const metadata: Metadata = {
     "pickleball restaurants nearby",
     "japanese restaurant lewisville tx",
     "hibachi near the picklr",
-    "sushi after pickleball",
+    "sushi after pickleball lewisville",
     "best restaurants stemmons freeway lewisville",
+    "dining near pickleball courts lewisville",
   ],
   openGraph: {
     title: "Pickleball + Japanese Dining: The Perfect Lewisville Combo",
@@ -34,6 +38,11 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    question: "What are the best restaurants near pickleball in Lewisville TX?",
+    answer:
+      "Jinbeh Japanese Restaurant is the top choice for restaurants near pickleball in Lewisville. Located just 2 doors from The Picklr at 2450 S Stemmons Fwy, it's less than a 1-minute walk from the courts. Jinbeh offers hibachi, sushi, and sake—perfect for refueling after your game.",
+  },
   {
     question: "How far is Jinbeh from The Picklr Lewisville?",
     answer:
@@ -70,20 +79,24 @@ export default function PickleballRestaurantsLewisvillePage() {
   const slug = "pickleball-restaurants-lewisville";
   return (
     <ArticleLayout
-      title="Pickleball + Japanese Dining: The Perfect Lewisville Combo"
-      metaDescription="Play pickleball at The Picklr, then walk 2 doors down to Jinbeh for the best hibachi and sushi in Lewisville. The ultimate 'active + delicious' experience on Stemmons Freeway."
+      title="Best Restaurants Near Pickleball in Lewisville TX"
+      metaDescription="Looking for restaurants near pickleball in Lewisville? Jinbeh Japanese Restaurant is just 2 doors from The Picklr! Enjoy hibachi or sushi after your game."
       heroImage="/images/photoshoot/hibachi-steak.jpg"
-      heroAlt="Jinbeh hibachi chef creating flames at the grill table - perfect dinner after pickleball at The Picklr Lewisville"
+      heroAlt="Jinbeh hibachi chef creating flames at the grill table - the best restaurant near pickleball courts in Lewisville TX"
       category="Local Guide"
       categorySlug="local"
       publishDate="January 2026"
       readTime="5 min read"
       faqs={faqs}
     >
-      <h2>The Ultimate Lewisville Activity: Pickleball + Japanese Food</h2>
+      <h2>The Best Restaurant Near Pickleball in Lewisville</h2>
 
       <p>
-        Looking for something fun to do in Lewisville? Here's the perfect combo: <strong>play pickleball at The Picklr</strong>, then walk literally 2 doors down to <strong>Jinbeh Japanese Restaurant</strong> for an incredible hibachi show or fresh sushi. It's the ultimate "active + delicious" experience that's become a local favorite.
+        Looking for <strong>restaurants near pickleball in Lewisville</strong>? You've found the perfect spot. <strong>Jinbeh Japanese Restaurant</strong> is literally 2 doors down from The Picklr—making it the most convenient and delicious post-game dining option in the area. Whether you're craving hibachi, sushi, or sake after your match, we've got you covered.
+      </p>
+
+      <p>
+        As the top <strong>pickleball restaurant in Lewisville</strong>, Jinbeh has become a favorite gathering spot for players looking to refuel after a game. The combination of physical activity followed by incredible Japanese cuisine creates the ultimate "active + delicious" experience.
       </p>
 
       <p>
@@ -103,7 +116,7 @@ export default function PickleballRestaurantsLewisvillePage() {
         </p>
       </div>
 
-      <h2>Why Pickleball + Hibachi is the Perfect Match</h2>
+      <h2>Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville</h2>
 
       <p>
         There's something magical about combining physical activity with a great meal. Here's why this combo works so well:
