@@ -396,7 +396,7 @@ export default function HomePage() {
                     <div className="flex flex-col gap-3">
                       <Link
                         href="/frisco#reserve"
-                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red hover:bg-accent-red-hover text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -433,7 +433,7 @@ export default function HomePage() {
                     <div className="flex flex-col gap-3">
                       <Link
                         href="/lewisville#reserve"
-                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red hover:bg-accent-red-hover text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -730,31 +730,16 @@ export default function HomePage() {
                       })
                     }}
                   />
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    className="w-full h-full object-cover"
-                    poster="/images/food/onion-volcano.jpg"
-                  >
-                    <source
-                      src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  {/* Video overlay with gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
-                  {/* Play indicator on hover */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
+                  <Image
+                    src="/images/food/onion-volcano.jpg"
+                    alt="Jinbeh hibachi chef creating the famous onion volcano with flames at the teppanyaki grill"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    priority
+                  />
+                  {/* Subtle overlay for text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
                 </div>
                 <p className="text-center text-warm-ivory/60 mt-4 text-sm">
                   Experience the artistry of teppanyaki cooking at Jinbeh
@@ -838,7 +823,7 @@ export default function HomePage() {
                 {/* Gradient Fade Right */}
                 <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
-                <Marquee pauseOnHover duration={80}>
+                <Marquee pauseOnHover duration={150}>
                   {/* Testimonial 1 - Verified Google Review */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} colorFrom="#C1121F" colorTo="#C9A227" />
