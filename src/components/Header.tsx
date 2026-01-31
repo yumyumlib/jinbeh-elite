@@ -217,13 +217,13 @@ export default function Header({ location }: HeaderProps) {
             {/* Phone Number - Always visible */}
             {location ? (
               <a
-                href={location === "lewisville" ? "tel:2146189798" : "tel:2146189888"}
+                href={location === "lewisville" ? "tel:2144882224" : "tel:2146191200"}
                 className="inline-flex items-center gap-2 px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
+                {location === "lewisville" ? "(214) 488-2224" : "(214) 619-1200"}
               </a>
             ) : (
               <div className="relative">
@@ -243,20 +243,20 @@ export default function Header({ location }: HeaderProps) {
                   <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-50">
                     <div className="p-2">
                       <a
-                        href="tel:2146189888"
+                        href="tel:2146191200"
                         className="block px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
                         onClick={() => setActiveDropdown(null)}
                       >
                         <span className="font-medium text-charcoal group-hover:text-accent-red">Frisco</span>
-                        <span className="block text-sm text-charcoal/60">(214) 618-9888</span>
+                        <span className="block text-sm text-charcoal/60">(214) 619-1200</span>
                       </a>
                       <a
-                        href="tel:2146189798"
+                        href="tel:2144882224"
                         className="block px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
                         onClick={() => setActiveDropdown(null)}
                       >
                         <span className="font-medium text-charcoal group-hover:text-accent-red">Lewisville</span>
-                        <span className="block text-sm text-charcoal/60">(214) 618-9798</span>
+                        <span className="block text-sm text-charcoal/60">(214) 488-2224</span>
                       </a>
                     </div>
                   </div>
@@ -368,19 +368,19 @@ export default function Header({ location }: HeaderProps) {
                 {/* Phone Numbers - Always visible */}
                 {location ? (
                   <a
-                    href={location === "lewisville" ? "tel:2146189798" : "tel:2146189888"}
+                    href={location === "lewisville" ? "tel:2144882224" : "tel:2146191200"}
                     className="flex items-center justify-center gap-2 w-full py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    Call {location === "lewisville" ? "Lewisville" : "Frisco"}: {location === "lewisville" ? "(214) 618-9798" : "(214) 618-9888"}
+                    Call {location === "lewisville" ? "Lewisville" : "Frisco"}: {location === "lewisville" ? "(214) 488-2224" : "(214) 619-1200"}
                   </a>
                 ) : (
                   <div className="flex gap-2">
                     <a
-                      href="tel:2146189888"
+                      href="tel:2146191200"
                       className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all text-sm"
                       onClick={() => setMobileMenuOpen(false)}
                     >
@@ -390,7 +390,7 @@ export default function Header({ location }: HeaderProps) {
                       Frisco
                     </a>
                     <a
-                      href="tel:2146189798"
+                      href="tel:2144882224"
                       className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all text-sm"
                       onClick={() => setMobileMenuOpen(false)}
                     >

@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "Why celebrate at Jinbeh for your birthday?",
     answer:
-      "Welcome to the table! We offer complimentary birthday treats, special songs, and our famous hibachi entertainment. Dinner and a show! Call Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
+      "Welcome to the table! We offer complimentary birthday treats, special songs, and our famous hibachi entertainment. Dinner and a show! Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
   },
   {
     question: "Can I combine birthday deals with other promotions?",
@@ -248,14 +248,14 @@ export default function FreeBirthdayFoodDealsPage() {
       <ul>
         <li>
           <strong>Frisco:</strong>{" "}
-          <a href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <a href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </a>
         </li>
         <li>
           <strong>Lewisville:</strong>{" "}
-          <a href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <a href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </a>
         </li>
       </ul>

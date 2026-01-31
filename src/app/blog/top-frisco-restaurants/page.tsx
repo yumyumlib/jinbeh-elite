@@ -354,7 +354,7 @@ export default function TopFriscoRestaurants() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    It's a celebration! Jinbeh specializes in large groups with hibachi tables and private dining rooms. Welcome to the table. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for group reservations and custom arrangements.
+                                                    It's a celebration! Jinbeh specializes in large groups with hibachi tables and private dining rooms. Welcome to the table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for group reservations and custom arrangements.
                                                 </p>
                                             </div>
                                         </details>

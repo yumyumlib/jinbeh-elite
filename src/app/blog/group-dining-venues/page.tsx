@@ -114,7 +114,7 @@ export default function GroupDiningVenues() {
 
                                 <details className="group bg-warm-ivory rounded-xl">
                                     <summary className="p-5 cursor-pointer font-semibold flex justify-between">How do I book a group at Jinbeh?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                    <div className="px-5 pb-5 text-charcoal/80">Welcome to the table! Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 at least 2-4 weeks ahead. We'll coordinate menu, timing, and special requests for your celebration!</div>
+                                    <div className="px-5 pb-5 text-charcoal/80">Welcome to the table! Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 at least 2-4 weeks ahead. We'll coordinate menu, timing, and special requests for your celebration!</div>
                                 </details>
 
                                 <details className="group bg-warm-ivory rounded-xl">

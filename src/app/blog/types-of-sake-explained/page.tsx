@@ -804,7 +804,7 @@ export default function TypesOfSakeExplained() {
                                                     <strong>Pro tip:</strong> Taste from lightest to boldest (Ginjo first, then Junmai). This prevents heavier flavors from overwhelming delicate ones.
                                                 </p>
                                                 <p>
-                                                    At Jinbeh, our happy hour is perfect for sampling different sake types at reasonable prices. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for hours and details.
+                                                    At Jinbeh, our happy hour is perfect for sampling different sake types at reasonable prices. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for hours and details.
                                                 </p>
                                             </div>
                                         </details>

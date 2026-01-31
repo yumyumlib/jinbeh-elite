@@ -60,7 +60,7 @@ const faqSchema = {
       "name": "Do I need a reservation at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "While walk-ins are welcome, we highly recommend reservations, especially for dinner, weekends, and special occasions. You can reserve online through our website or by calling our Frisco location at (214) 618-9888 or Lewisville at (214) 618-9798."
+        "text": "While walk-ins are welcome, we highly recommend reservations, especially for dinner, weekends, and special occasions. You can reserve online through our website or by calling our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224."
       }
     },
     {
@@ -186,7 +186,7 @@ export default function HomePage() {
             </Link>
             <div className="flex items-center gap-3">
               <a
-                href="tel:2146189888"
+                href="tel:2146191200"
                 className="flex items-center gap-2 text-charcoal font-medium hover:text-accent-red transition-colors"
                 title="Call Frisco"
               >
@@ -227,7 +227,7 @@ export default function HomePage() {
                 <p className="text-sm text-charcoal/60 mb-3 font-medium">Call to Reserve:</p>
                 <div className="grid grid-cols-2 gap-3">
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="flex items-center justify-center gap-2 bg-charcoal text-white px-4 py-3 rounded-lg font-semibold"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -236,7 +236,7 @@ export default function HomePage() {
                     Frisco
                   </a>
                   <a
-                    href="tel:2146189798"
+                    href="tel:2144882224"
                     className="flex items-center justify-center gap-2 bg-charcoal text-white px-4 py-3 rounded-lg font-semibold"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -380,13 +380,13 @@ export default function HomePage() {
                         Reserve a Table
                       </Link>
                       <a
-                        href="tel:2146189888"
+                        href="tel:2146191200"
                         className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        (214) 618-9888
+                        (214) 619-1200
                       </a>
                     </div>
                   </div>
@@ -416,13 +416,13 @@ export default function HomePage() {
                         Reserve a Table
                       </Link>
                       <a
-                        href="tel:2146189798"
+                        href="tel:2144882224"
                         className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        (214) 618-9798
+                        (214) 488-2224
                       </a>
                     </div>
                   </div>
@@ -924,13 +924,13 @@ export default function HomePage() {
                       Reserve Online
                     </Link>
                     <a
-                      href="tel:2146189888"
+                      href="tel:2146191200"
                       className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
-                      Call (214) 618-9888
+                      Call (214) 619-1200
                     </a>
                   </div>
                 </div>
@@ -950,13 +950,13 @@ export default function HomePage() {
                       Reserve Online
                     </Link>
                     <a
-                      href="tel:2146189798"
+                      href="tel:2144882224"
                       className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
-                      Call (214) 618-9798
+                      Call (214) 488-2224
                     </a>
                   </div>
                 </div>
@@ -971,7 +971,7 @@ export default function HomePage() {
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-stone-200 shadow-2xl safe-area-bottom">
         <div className="grid grid-cols-2 divide-x divide-stone-200">
           <a
-            href="tel:2146189888"
+            href="tel:2146191200"
             className="flex items-center justify-center gap-2 py-4 text-charcoal font-semibold hover:bg-warm-ivory transition-colors"
           >
             <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Rainbow Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "California roll topped with assorted sashimi Enjoy Rainbow Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 618-9798 to reserve.",
+  description: "California roll topped with assorted sashimi Enjoy Rainbow Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
   keywords: ["rainbow roll","rainbow roll lewisville","sushi rolls lewisville","jinbeh rainbow roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
   openGraph: {
     title: "Rainbow Roll | Jinbeh Lewisville",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Can I order Rainbow Roll for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 618-9798 to order."
+        "text": "Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
       }
     },
     {
@@ -179,8 +179,8 @@ export default function RainbowRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189798" className="text-accent-red hover:underline">
-                          (214) 618-9798
+                        <a href="tel:2144882224" className="text-accent-red hover:underline">
+                          (214) 488-2224
                         </a>
                       </td>
                     </tr>
@@ -204,10 +204,10 @@ export default function RainbowRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189798"
+                    href="tel:2144882224"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9798
+                    Call (214) 488-2224
                   </a>
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function RainbowRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 618-9798 to order.
+                      Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

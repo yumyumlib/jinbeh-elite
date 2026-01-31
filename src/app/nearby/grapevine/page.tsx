@@ -119,7 +119,7 @@ const faqSchema = {
       name: "Can I book a sushi reservation from Grapevine?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can reserve a table at our fresh sushi bar online through OpenTable or call our Frisco location at (214) 618-9888. Reservations are recommended for dinner service.",
+        text: "Absolutely! You can reserve a table at our fresh sushi bar online through OpenTable or call our Frisco location at (214) 619-1200. Reservations are recommended for dinner service.",
       },
     },
     {
@@ -135,7 +135,7 @@ const faqSchema = {
       name: "Do you have sushi happy hour near Grapevine?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Ask about our Happy Hour specials featuring discounted sushi rolls, appetizers, and drinks. It's a great way to enjoy premium sushi at special prices. Call Frisco at (214) 618-9888 for details.",
+        text: "Yes! Ask about our Happy Hour specials featuring discounted sushi rolls, appetizers, and drinks. It's a great way to enjoy premium sushi at special prices. Call Frisco at (214) 619-1200 for details.",
       },
     },
     {
@@ -525,7 +525,7 @@ export default function GrapevineNearbyPage() {
                   </svg>
                 </summary>
                 <p className="text-charcoal/70 mt-4">
-                  Absolutely! You can reserve a table at our sushi bar online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Frisco at (214) 618-9888 or Lewisville at (214) 618-9798.
+                  Absolutely! You can reserve a table at our sushi bar online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224.
                 </p>
               </details>
 

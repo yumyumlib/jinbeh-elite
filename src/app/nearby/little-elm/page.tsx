@@ -119,7 +119,7 @@ const faqSchema = {
       name: "Can I make a Japanese food reservation from Little Elm?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can reserve online through OpenTable or call our Lewisville location at (214) 618-9798. We recommend reservations, especially for dinner and weekends.",
+        text: "Absolutely! You can reserve online through OpenTable or call our Lewisville location at (214) 488-2224. We recommend reservations, especially for dinner and weekends.",
       },
     },
     {
@@ -525,7 +525,7 @@ export default function LittleElmNearbyPage() {
                   </svg>
                 </summary>
                 <p className="text-charcoal/70 mt-4">
-                  Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Lewisville at (214) 618-9798 or Frisco at (214) 618-9888.
+                  Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Lewisville at (214) 488-2224 or Frisco at (214) 619-1200.
                 </p>
               </details>
 

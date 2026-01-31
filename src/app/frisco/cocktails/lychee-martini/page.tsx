@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Lychee Martini | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "Vodka with lychee and a floral finish Enjoy Lychee Martini at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Vodka with lychee and a floral finish Enjoy Lychee Martini at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["lychee martini","lychee martini frisco","cocktails & sake frisco","jinbeh lychee martini","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
   openGraph: {
     title: "Lychee Martini | Jinbeh Frisco",
@@ -171,8 +171,8 @@ export default function LycheeMartiniFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -196,10 +196,10 @@ export default function LycheeMartiniFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>

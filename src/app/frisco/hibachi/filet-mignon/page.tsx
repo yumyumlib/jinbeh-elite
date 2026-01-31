@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Filet Mignon | Jinbeh Frisco Hibachi Menu",
-  description: "Premium beef tenderloin, perfectly seared on the teppan grill Enjoy Filet Mignon at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Premium beef tenderloin, perfectly seared on the teppan grill Enjoy Filet Mignon at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["filet mignon","filet mignon frisco","hibachi frisco","jinbeh filet mignon","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
   openGraph: {
     title: "Filet Mignon | Jinbeh Frisco",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Filet Mignon hibachi good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 618-9888 to reserve for your special event."
+        "text": "Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
       }
     },
     {
@@ -179,8 +179,8 @@ export default function FiletMignonFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -208,10 +208,10 @@ export default function FiletMignonFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>
@@ -271,7 +271,7 @@ export default function FiletMignonFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 618-9888 to reserve for your special event.
+                      Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

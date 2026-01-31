@@ -24,7 +24,7 @@ const faqs = [
     { question: "Where can I find authentic Asian cuisine in Dallas?", answer: "Royal China has authentic Chinese. Korean BBQ House offers traditional Korean. Thai Orchid serves Thai dishes. Jinbeh brings authentic Japanese hibachi and sushi." },
     { question: "Why should I choose Jinbeh for Asian dining?", answer: "We combine authentic Japanese techniques with fresh ingredients. Our hibachi chefs put on a show while cooking. Dinner and a show!" },
     { question: "Is Jinbeh family-friendly?", answer: "Absolutely! Families love us. Kids are fascinated by hibachi fire tricks. We have children's menus and a welcoming atmosphere for all ages." },
-    { question: "How do I make a reservation at Jinbeh?", answer: "Call our Frisco location at (214) 618-9888 or Lewisville at (214) 618-9798. We recommend reservations for hibachi tables, especially weekends." }
+    { question: "How do I make a reservation at Jinbeh?", answer: "Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224. We recommend reservations for hibachi tables, especially weekends." }
 ];
 
 export default function AsianCuisineDallas() {

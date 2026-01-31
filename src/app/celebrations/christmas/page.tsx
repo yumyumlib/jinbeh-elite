@@ -41,7 +41,7 @@ const faqSchema = {
       name: "Is Jinbeh open on Christmas Day?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hours may vary on Christmas Day. Please contact your preferred location directly to confirm holiday hours. Frisco: (214) 618-9888, Lewisville: (214) 618-9798.",
+        text: "Hours may vary on Christmas Day. Please contact your preferred location directly to confirm holiday hours. Frisco: (214) 619-1200, Lewisville: (214) 488-2224.",
       },
     },
     {
@@ -116,12 +116,12 @@ export default function ChristmasPage() {
             <p className="font-medium">
               <span>Celebrate the holidays at Jinbeh!</span>{" "}
               <span className="font-bold">Reserve your family&apos;s table early.</span>{" "}
-              <a href="tel:2146189888" className="underline hover:no-underline">
-                Frisco (214) 618-9888
+              <a href="tel:2146191200" className="underline hover:no-underline">
+                Frisco (214) 619-1200
               </a>{" "}
               |{" "}
-              <a href="tel:2146189798" className="underline hover:no-underline">
-                Lewisville (214) 618-9798
+              <a href="tel:2144882224" className="underline hover:no-underline">
+                Lewisville (214) 488-2224
               </a>
             </p>
           </div>
@@ -251,7 +251,7 @@ export default function ChristmasPage() {
                 {[
                   {
                     q: "What are your Christmas Eve/Day hours?",
-                    a: "Hours may vary during the holidays. Please call your preferred location to confirm: Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
+                    a: "Hours may vary during the holidays. Please call your preferred location to confirm: Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
                   },
                   {
                     q: "How far in advance should I book?",
@@ -289,16 +289,16 @@ export default function ChristmasPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:2146189888"
+                  href="tel:2146191200"
                   className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
-                  <span>📞</span> Frisco: (214) 618-9888
+                  <span>📞</span> Frisco: (214) 619-1200
                 </a>
                 <a
-                  href="tel:2146189798"
+                  href="tel:2144882224"
                   className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
-                  <span>📞</span> Lewisville: (214) 618-9798
+                  <span>📞</span> Lewisville: (214) 488-2224
                 </a>
               </div>
             </div>

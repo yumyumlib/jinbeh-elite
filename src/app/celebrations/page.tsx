@@ -525,7 +525,7 @@ export default function CelebrationsPage() {
                     Jinbeh Frisco
                   </h3>
                   <p className="text-charcoal/60 text-sm">Near Stonebriar Centre</p>
-                  <p className="text-accent-red text-sm font-medium">(214) 618-9888</p>
+                  <p className="text-accent-red text-sm font-medium">(214) 619-1200</p>
                 </div>
               </Link>
               <Link
@@ -540,7 +540,7 @@ export default function CelebrationsPage() {
                     Jinbeh Lewisville
                   </h3>
                   <p className="text-charcoal/60 text-sm">Near Vista Ridge Mall</p>
-                  <p className="text-deep-indigo text-sm font-medium">(214) 618-9798</p>
+                  <p className="text-deep-indigo text-sm font-medium">(214) 488-2224</p>
                 </div>
               </Link>
             </div>
@@ -561,16 +561,16 @@ export default function CelebrationsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:2146189888"
+                href="tel:2146191200"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center justify-center gap-2"
               >
-                <span>📞</span> Frisco: (214) 618-9888
+                <span>📞</span> Frisco: (214) 619-1200
               </a>
               <a
-                href="tel:2146189798"
+                href="tel:2144882224"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center justify-center gap-2"
               >
-                <span>📞</span> Lewisville: (214) 618-9798
+                <span>📞</span> Lewisville: (214) 488-2224
               </a>
             </div>
             <p className="mt-8 text-white/70 text-sm">

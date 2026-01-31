@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Vegetable & Tofu | Jinbeh Lewisville Hibachi Menu",
-  description: "Fresh seasonal vegetables with crispy tofu Enjoy Vegetable & Tofu at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 618-9798 to reserve.",
+  description: "Fresh seasonal vegetables with crispy tofu Enjoy Vegetable & Tofu at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
   keywords: ["vegetable & tofu","vegetable & tofu lewisville","hibachi lewisville","jinbeh vegetable & tofu","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
   openGraph: {
     title: "Vegetable & Tofu | Jinbeh Lewisville",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Vegetable & Tofu hibachi good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Vegetable & Tofu is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 618-9798 to reserve for your special event."
+        "text": "Absolutely! Vegetable & Tofu is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
       }
     },
     {
@@ -179,8 +179,8 @@ export default function VegetableTofuLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189798" className="text-accent-red hover:underline">
-                          (214) 618-9798
+                        <a href="tel:2144882224" className="text-accent-red hover:underline">
+                          (214) 488-2224
                         </a>
                       </td>
                     </tr>
@@ -208,10 +208,10 @@ export default function VegetableTofuLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189798"
+                    href="tel:2144882224"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9798
+                    Call (214) 488-2224
                   </a>
                 </div>
               </div>
@@ -271,7 +271,7 @@ export default function VegetableTofuLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Vegetable & Tofu is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 618-9798 to reserve for your special event.
+                      Absolutely! Vegetable & Tofu is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

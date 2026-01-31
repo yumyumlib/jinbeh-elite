@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Can Jinbeh accommodate dietary restrictions?",
     answer:
-      "Absolutely! We treat every guest like family. Call us at Frisco (214) 618-9888 or Lewisville (214) 618-9798 to discuss vegetarian, allergy, or special requests. Fresh and flavorful options for everyone.",
+      "Absolutely! We treat every guest like family. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to discuss vegetarian, allergy, or special requests. Fresh and flavorful options for everyone.",
   },
   {
     question: "What's the budget for a baby shower venue?",
@@ -345,14 +345,14 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       <ul>
         <li>
           <strong>Frisco (near Stonebriar):</strong>{" "}
-          <a href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <a href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </a>
         </li>
         <li>
           <strong>Lewisville (off I-35E):</strong>{" "}
-          <a href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <a href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </a>
         </li>
       </ul>

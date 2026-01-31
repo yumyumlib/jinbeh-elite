@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "Can I book a teppanyaki table at Jinbeh?",
     answer:
-      "Yes! Teppanyaki tables seat 8-10 guests. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798. We recommend reservations, especially on weekends. We sometimes combine smaller parties—you might make new friends!",
+      "Yes! Teppanyaki tables seat 8-10 guests. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We recommend reservations, especially on weekends. We sometimes combine smaller parties—you might make new friends!",
   },
 ];
 

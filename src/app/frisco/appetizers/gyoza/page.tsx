@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Gyoza | Jinbeh Frisco Appetizers Menu",
-  description: "Pan-fried pork dumplings with dipping sauce Enjoy Gyoza at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Pan-fried pork dumplings with dipping sauce Enjoy Gyoza at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["gyoza","gyoza frisco","appetizers frisco","jinbeh gyoza","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
   openGraph: {
     title: "Gyoza | Jinbeh Frisco",
@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Can I order Gyoza for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Gyoza are featured during our happy hour. Call (214) 618-9888 for current specials."
+        "text": "Check our happy hour specials! Many appetizers including items similar to Gyoza are featured during our happy hour. Call (214) 619-1200 for current specials."
       }
     },
     {
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Gyoza available for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Gyoza travels well for takeout. Call (214) 618-9888 directly or order online."
+        "text": "Yes, Gyoza travels well for takeout. Call (214) 619-1200 directly or order online."
       }
     }
   ]
@@ -171,8 +171,8 @@ export default function GyozaFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -196,10 +196,10 @@ export default function GyozaFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function GyozaFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Check our happy hour specials! Many appetizers including items similar to Gyoza are featured during our happy hour. Call (214) 618-9888 for current specials.
+                      Check our happy hour specials! Many appetizers including items similar to Gyoza are featured during our happy hour. Call (214) 619-1200 for current specials.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -259,7 +259,7 @@ export default function GyozaFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes, Gyoza travels well for takeout. Call (214) 618-9888 directly or order online.
+                      Yes, Gyoza travels well for takeout. Call (214) 619-1200 directly or order online.
                     </p>
                   </details>
                 </div>

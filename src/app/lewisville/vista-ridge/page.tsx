@@ -49,7 +49,7 @@ const localBusinessSchema = {
     longitude: -96.9942,
   },
   url: "https://jinbeh.com/lewisville",
-  telephone: "(214) 618-9798",
+  telephone: "(214) 488-2224",
   servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
   priceRange: "$$",
   areaServed: {
@@ -89,7 +89,7 @@ const faqSchema = {
       name: "Do I need reservations for hibachi near Vista Ridge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We highly recommend reservations for hibachi dining, especially on weekends and holidays. You can book online through OpenTable or call us at (214) 618-9798 to reserve your hibachi table.",
+        text: "We highly recommend reservations for hibachi dining, especially on weekends and holidays. You can book online through OpenTable or call us at (214) 488-2224 to reserve your hibachi table.",
       },
     },
     {
@@ -361,10 +361,10 @@ export default function VistaRidgePage() {
                 Make a Reservation
               </Link>
               <a
-                href="tel:2146189798"
+                href="tel:2144882224"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
-                Call (214) 618-9798
+                Call (214) 488-2224
               </a>
             </div>
             <p className="text-white/70 text-sm">

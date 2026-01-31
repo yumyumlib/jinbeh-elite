@@ -36,7 +36,7 @@ const articleSchema = {
 const faqs = [
     { question: "What makes Jinbeh special for birthday celebrations?", answer: "It's a celebration! Our hibachi chefs perform right before your eyes. We give complimentary birthday desserts and sing special birthday songs. Perfect for group celebrations with interactive fun." },
     { question: "Should I make a reservation for a birthday party?", answer: "Yes, we recommend reservations in advance. It ensures your table, preferred timing, and lets us prepare special touches for your celebration." },
-    { question: "Do restaurants offer birthday discounts or free items?", answer: "We offer birthday specials including complimentary desserts and special songs. Call (214) 618-9888 Frisco or (214) 618-9798 Lewisville to confirm offerings." },
+    { question: "Do restaurants offer birthday discounts or free items?", answer: "We offer birthday specials including complimentary desserts and special songs. Call (214) 619-1200 Frisco or (214) 488-2224 Lewisville to confirm offerings." },
     { question: "What atmosphere is best for a birthday celebration?", answer: "It depends on you! Jinbeh offers lively, interactive hibachi shows. We're perfect for families and groups who want dinner and a show for their birthday." },
     { question: "How many people can we have at Jinbeh for a birthday?", answer: "We welcome small groups and large parties. Hibachi tables seat 8-10. Call ahead for larger groups and we'll arrange the perfect setup." }
 ];

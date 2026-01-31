@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Where can I find hibachi lunch specials in Frisco and Lewisville?",
     answer:
-      "Welcome to the table at Jinbeh! We offer exceptional hibachi lunch specials at both locations. Frisco (214) 618-9888 or Lewisville (214) 618-9798. Fresh and flavorful plates available 11 AM-3 PM weekdays.",
+      "Welcome to the table at Jinbeh! We offer exceptional hibachi lunch specials at both locations. Frisco (214) 619-1200 or Lewisville (214) 488-2224. Fresh and flavorful plates available 11 AM-3 PM weekdays.",
   },
   {
     question: "How much does hibachi lunch cost at Jinbeh?",

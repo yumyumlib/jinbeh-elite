@@ -110,7 +110,7 @@ const faqSchema = {
       name: "Does Jinbeh Lewisville take reservations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We recommend reservations, especially for hibachi tables on weekends. You can call us at (214) 618-9798 to reserve your table.",
+        text: "Yes! We recommend reservations, especially for hibachi tables on weekends. You can call us at (214) 488-2224 to reserve your table.",
       },
     },
     {

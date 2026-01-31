@@ -14,7 +14,7 @@ const faqs = [
     { question: "What makes Japanese cuisine authentic?", answer: "Authentic food focuses on fresh, seasonal ingredients with simple presentation. Key items: quality rice, fresh fish and seafood, traditional noodles, soy products, and vegetables prepared with respect for the craft." },
     { question: "Is Jinbeh a good choice for Japanese dining?", answer: "Welcome to the table! Jinbeh serves authentic Japanese cuisine since 1988. We offer hibachi entertainment, fresh sushi, and a family-friendly atmosphere. Locations in Frisco and Lewisville." },
     { question: "What's the difference between sushi and sashimi?", answer: "Sushi is rice topped with fish or other ingredients. Sashimi is sliced raw fish without rice. Both are fresh and flavorful. Try both at Jinbeh!" },
-    { question: "How do I make a reservation at a Japanese restaurant?", answer: "Call ahead! For Jinbeh, call Frisco (214) 618-9888 or Lewisville (214) 618-9798. Reservations ensure your table and let us prepare special touches." }
+    { question: "How do I make a reservation at a Japanese restaurant?", answer: "Call ahead! For Jinbeh, call Frisco (214) 619-1200 or Lewisville (214) 488-2224. Reservations ensure your table and let us prepare special touches." }
 ];
 
 const schemas = [

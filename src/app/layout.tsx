@@ -90,7 +90,7 @@ const organizationSchema = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+1-214-618-9888",
+      telephone: "+1-214-619-1200",
       contactType: "reservations",
       areaServed: "US",
       availableLanguage: ["English"],
@@ -98,7 +98,7 @@ const organizationSchema = {
     },
     {
       "@type": "ContactPoint",
-      telephone: "+1-214-618-9798",
+      telephone: "+1-214-488-2224",
       contactType: "reservations",
       areaServed: "US",
       availableLanguage: ["English"],
@@ -122,7 +122,7 @@ const friscoRestaurantSchema = {
   name: "Jinbeh Japanese Restaurant - Frisco",
   image: "https://jinbeh.com/images/frisco-exterior.jpg",
   url: "https://jinbeh.com/frisco",
-  telephone: "+1-214-618-9888",
+  telephone: "+1-214-619-1200",
   priceRange: "$$",
   servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
   address: {
@@ -162,7 +162,7 @@ const lewisvilleRestaurantSchema = {
   name: "Jinbeh Japanese Restaurant - Lewisville",
   image: "https://jinbeh.com/images/lewisville-exterior.jpg",
   url: "https://jinbeh.com/lewisville",
-  telephone: "+1-214-618-9798",
+  telephone: "+1-214-488-2224",
   priceRange: "$$",
   servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
   address: {

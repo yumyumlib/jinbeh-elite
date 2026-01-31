@@ -350,16 +350,16 @@ export default function AsianRestaurantMonthPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:2146189888"
+                  href="tel:2146191200"
                   className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
-                  <span>📞</span> Frisco: (214) 618-9888
+                  <span>📞</span> Frisco: (214) 619-1200
                 </a>
                 <a
-                  href="tel:2146189798"
+                  href="tel:2144882224"
                   className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
-                  <span>📞</span> Lewisville: (214) 618-9798
+                  <span>📞</span> Lewisville: (214) 488-2224
                 </a>
               </div>
             </div>

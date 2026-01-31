@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Tiger Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Shrimp tempura with spicy tuna and jalapeño Enjoy Tiger Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Shrimp tempura with spicy tuna and jalapeño Enjoy Tiger Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["tiger roll","tiger roll frisco","sushi rolls frisco","jinbeh tiger roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
   openGraph: {
     title: "Tiger Roll | Jinbeh Frisco",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Can I order Tiger Roll for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 618-9888 to order."
+        "text": "Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
       }
     },
     {
@@ -179,8 +179,8 @@ export default function TigerRollFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -204,10 +204,10 @@ export default function TigerRollFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function TigerRollFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 618-9888 to order.
+                      Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

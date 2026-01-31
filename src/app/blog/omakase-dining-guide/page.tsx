@@ -194,7 +194,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Yes! The popularity of omakase has spread worldwide. Authentic omakase restaurants, including Jinbeh in Dallas, maintain the core principles while bringing this experience to international audiences. Call our Frisco location at (214) 618-9888 or Lewisville at (214) 618-9798 to book your omakase experience.</p>
+                                        <p>Yes! The popularity of omakase has spread worldwide. Authentic omakase restaurants, including Jinbeh in Dallas, maintain the core principles while bringing this experience to international audiences. Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224 to book your omakase experience.</p>
                                     </div>
                                 </details>
 
@@ -204,7 +204,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Welcome to the table! Call us directly to arrange your omakase experience. We recommend booking at least 1-2 weeks in advance. Frisco: (214) 618-9888 or Lewisville: (214) 618-9798. Tell us about your dietary preferences so our chef can prepare the perfect menu.</p>
+                                        <p>Welcome to the table! Call us directly to arrange your omakase experience. We recommend booking at least 1-2 weeks in advance. Frisco: (214) 619-1200 or Lewisville: (214) 488-2224. Tell us about your dietary preferences so our chef can prepare the perfect menu.</p>
                                     </div>
                                 </details>
                             </div>

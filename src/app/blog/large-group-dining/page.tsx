@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const faqs = [
     { question: "What are benefits of dining out with large groups?", answer: "Welcome to the table! No cooking. No cleanup. Diverse menu options. Professional service. Festive atmosphere. Restaurants experienced with groups ensure smooth coordination." },
     { question: "How far in advance should I book for a large group?", answer: "Book 2-4 weeks ahead. This lets us reserve space and coordinate with our kitchen. Larger groups (50+) should book earlier if possible." },
-    { question: "Does Jinbeh accommodate large group reservations?", answer: "Absolutely! Hibachi tables are perfect for parties. We offer flexible seating, custom menus, and professional coordination. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798." },
+    { question: "Does Jinbeh accommodate large group reservations?", answer: "Absolutely! Hibachi tables are perfect for parties. We offer flexible seating, custom menus, and professional coordination. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224." },
     { question: "What makes Jinbeh great for group dining?", answer: "Hibachi means dinner and a show! Our chefs entertain while cooking. Communal seating builds group energy. We handle 15+ guests with ease and warmth." },
     { question: "Can we customize menus for our group?", answer: "Yes! We work with groups on menus. Let us know dietary needs and preferences. We treat every guest like family and accommodate most requests." }
 ];

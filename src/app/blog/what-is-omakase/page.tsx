@@ -29,7 +29,7 @@ const faqs = [
     { question: "How much does omakase cost?", answer: "Prices vary by restaurant. Casual omakase: $50-150 per person. High-end: $200+ per person. Premium options with rare fish cost more." },
     { question: "What's included in omakase?", answer: "Usually 10-20 pieces of sushi. The chef selects seasonal fish, starting with lighter flavors and progressing to richer ones. Each piece is prepared fresh and eaten immediately." },
     { question: "Is omakase better than regular sushi?", answer: "Different experience, not better. Omakase showcases the chef's expertise and freshest daily ingredients. Regular sushi lets you choose. Many enjoy both for different reasons." },
-    { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to arrange your experience." }
+    { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your experience." }
 ];
 
 const articleSchema = {

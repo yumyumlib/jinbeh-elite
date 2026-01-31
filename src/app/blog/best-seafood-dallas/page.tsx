@@ -14,7 +14,7 @@ const faqs = [
     { question: "Where can I find fresh sushi in Dallas?", answer: "Jinbeh is your spot! We source the highest quality fish. Every sushi piece is expertly crafted by our chefs. Locations in Frisco and Lewisville." },
     { question: "How often is fish delivered to Jinbeh?", answer: "We receive fish deliveries multiple times per week. Our sushi chefs slice each piece fresh to order. Watch them work at our sushi bar." },
     { question: "Can I buy fresh seafood to cook at home?", answer: "Yes! Dallas Fish Market and Captain Dave's offer fresh fish and shellfish. But why cook when we can prepare dinner and a show for you at Jinbeh?" },
-    { question: "Do you take reservations for seafood dining?", answer: "Absolutely! We recommend reservations. Call Frisco at (214) 618-9888 or Lewisville at (214) 618-9798. We treat every guest like family." }
+    { question: "Do you take reservations for seafood dining?", answer: "Absolutely! We recommend reservations. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224. We treat every guest like family." }
 ];
 
 const schemas = [

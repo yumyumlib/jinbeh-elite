@@ -44,7 +44,7 @@ const faqs = [
     },
     {
         question: "Does Jinbeh have happy hour specials?",
-        answer: "Yes! We offer happy hour with discounted sushi rolls, sake, and appetizers. Hours vary by location. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798. It's a great way to try different drinks and rolls.",
+        answer: "Yes! We offer happy hour with discounted sushi rolls, sake, and appetizers. Hours vary by location. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. It's a great way to try different drinks and rolls.",
     },
     {
         question: "Is Jinbeh good for families with kids?",
@@ -56,7 +56,7 @@ const faqs = [
     },
     {
         question: "Where is Jinbeh located in Frisco?",
-        answer: "We're at 2693 Preston Road in Frisco, near Stonebriar Centre. Plenty of parking right outside. Just minutes from Legacy West and the Dallas North Tollway. Call (214) 618-9888 to confirm hours.",
+        answer: "We're at 2693 Preston Road in Frisco, near Stonebriar Centre. Plenty of parking right outside. Just minutes from Legacy West and the Dallas North Tollway. Call (214) 619-1200 to confirm hours.",
     },
 ];
 

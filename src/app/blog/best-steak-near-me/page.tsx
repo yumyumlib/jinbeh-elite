@@ -137,7 +137,7 @@ export default function BestSteakNearMe() {
 
                             <details className="group bg-warm-ivory rounded-xl">
                                 <summary className="p-5 cursor-pointer font-semibold flex justify-between">Can I make reservations for hibachi steak?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                <div className="px-5 pb-5 text-charcoal/80">Welcome to the table! Yes, we recommend reservations for hibachi, especially weekends. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798. We treat every guest like family and ensure your celebration is perfect!</div>
+                                <div className="px-5 pb-5 text-charcoal/80">Welcome to the table! Yes, we recommend reservations for hibachi, especially weekends. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We treat every guest like family and ensure your celebration is perfect!</div>
                             </details>
 
                             <details className="group bg-warm-ivory rounded-xl">

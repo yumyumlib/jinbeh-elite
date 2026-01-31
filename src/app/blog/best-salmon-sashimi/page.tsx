@@ -56,7 +56,7 @@ const faqs = [
     },
     {
         question: "How do I order salmon sashimi at Jinbeh?",
-        answer: "Call us to reserve a sushi bar seat. Frisco: (214) 618-9888. Lewisville: (214) 618-9798. Our chefs will prepare your sashimi to order. You'll see them work their magic at the bar.",
+        answer: "Call us to reserve a sushi bar seat. Frisco: (214) 619-1200. Lewisville: (214) 488-2224. Our chefs will prepare your sashimi to order. You'll see them work their magic at the bar.",
     },
 ];
 

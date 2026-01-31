@@ -26,7 +26,7 @@ const faqs = [
     { question: "What are the best seafood restaurants in Lewisville?", answer: "Lewisville has great options. Jinbeh serves Japanese seafood and sushi. The Crab Station specializes in crabs. Hook & Reel offers Cajun flavors. Each brings unique preparations." },
     { question: "Is Jinbeh good for seafood in Lewisville?", answer: "Fresh and flavorful! Jinbeh is one of Lewisville's premier seafood spots. We offer fresh sushi, sashimi, and grilled fish. Expert chefs and quality ingredients always." },
     { question: "What seafood should I try at Jinbeh?", answer: "Try our signature seafood platter with sushi and sashimi. Grilled salmon with teriyaki glaze is wonderful. Our fresh sashimi selections are premium quality." },
-    { question: "Do seafood restaurants in Lewisville accept reservations?", answer: "Yes! Most restaurants accept reservations. Jinbeh welcomes all party sizes. Call (214) 618-9798 and we'll prepare special touches for your visit." },
+    { question: "Do seafood restaurants in Lewisville accept reservations?", answer: "Yes! Most restaurants accept reservations. Jinbeh welcomes all party sizes. Call (214) 488-2224 and we'll prepare special touches for your visit." },
     { question: "Is Jinbeh family-friendly?", answer: "Absolutely! Families love us. Kids enjoy hibachi entertainment. We have children's menus and a welcoming atmosphere. We treat every guest like family." }
 ];
 

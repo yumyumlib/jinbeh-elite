@@ -45,7 +45,7 @@ const faqs = [
   {
     question: "How do I make a hibachi reservation?",
     answer:
-      "Call us! Frisco: (214) 618-9888. Lewisville: (214) 618-9798. We recommend reservations for hibachi, especially weekends. Tables seat 8-10 guests.",
+      "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We recommend reservations for hibachi, especially weekends. Tables seat 8-10 guests.",
   },
 ];
 

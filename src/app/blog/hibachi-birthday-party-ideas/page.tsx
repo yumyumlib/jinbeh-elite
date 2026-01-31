@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How far in advance should I book a hibachi birthday party?",
     answer:
-      "Welcome to the table! It's a celebration! We recommend booking at least 1-2 weeks in advance for weeknight celebrations and 2-3 weeks for Friday or Saturday parties. For groups larger than 12, book 3-4 weeks ahead. Call us: Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
+      "Welcome to the table! It's a celebration! We recommend booking at least 1-2 weeks in advance for weeknight celebrations and 2-3 weeks for Friday or Saturday parties. For groups larger than 12, book 3-4 weeks ahead. Call us: Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
   },
   {
     question: "Can hibachi restaurants accommodate dietary restrictions?",
@@ -183,8 +183,8 @@ export default function HibachiBirthdayPartyIdeasPage() {
         <Link href="/lewisville" className="text-accent-red hover:underline">
           Lewisville location
         </Link>{" "}
-        both accommodate groups of various sizes. Call us at (214) 618-9888
-        (Frisco) or (214) 618-9798 (Lewisville) to discuss your party needs.
+        both accommodate groups of various sizes. Call us at (214) 619-1200
+        (Frisco) or (214) 488-2224 (Lewisville) to discuss your party needs.
       </p>
 
       <h3>Step 3: Set Expectations with Guests</h3>
@@ -465,14 +465,14 @@ export default function HibachiBirthdayPartyIdeasPage() {
       <ul>
         <li>
           <strong>Frisco (near Stonebriar):</strong>{" "}
-          <a href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <a href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </a>
         </li>
         <li>
           <strong>Lewisville (off I-35E):</strong>{" "}
-          <a href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <a href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </a>
         </li>
       </ul>

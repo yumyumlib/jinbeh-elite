@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Can Jinbeh bring a hibachi chef to my home?",
     answer:
-      "It's a celebration! Jinbeh specializes in offsite hibachi catering. Our skilled chefs travel with equipment and ingredients for a complete interactive experience. Setup, cooking, service, and cleanup included. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
+      "It's a celebration! Jinbeh specializes in offsite hibachi catering. Our skilled chefs travel with equipment and ingredients for a complete interactive experience. Setup, cooking, service, and cleanup included. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
   },
   {
     question: "What areas does Jinbeh service for catering?",
@@ -387,14 +387,14 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       <ul>
         <li>
           Frisco:{" "}
-          <Link href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <Link href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </Link>
         </li>
         <li>
           Lewisville:{" "}
-          <Link href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <Link href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </Link>
         </li>
       </ul>

@@ -32,12 +32,12 @@ const faqs = [
   {
     question: "How much does hibachi dinner cost in Dallas?",
     answer:
-      "Hibachi dinner prices in Dallas typically range from $25-$45 per person for entrees like chicken, steak, or shrimp. Premium options like filet mignon or lobster can run $40-$60+. Lunch specials offer better value, often $15-$25 per person. At Jinbeh, our lunch hibachi starts at just $12.95. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for pricing details.",
+      "Hibachi dinner prices in Dallas typically range from $25-$45 per person for entrees like chicken, steak, or shrimp. Premium options like filet mignon or lobster can run $40-$60+. Lunch specials offer better value, often $15-$25 per person. At Jinbeh, our lunch hibachi starts at just $12.95. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for pricing details.",
   },
   {
     question: "Do I need reservations for hibachi in Dallas?",
     answer:
-      "Reservations are highly recommended for hibachi dining, especially on weekends and for groups of 4 or more. Popular Dallas hibachi spots like Jinbeh can fill up quickly for Friday and Saturday dinner service. Calling ahead or booking online ensures you get seated together at the same grill. Contact us: Frisco (214) 618-9888 or Lewisville (214) 618-9798.",
+      "Reservations are highly recommended for hibachi dining, especially on weekends and for groups of 4 or more. Popular Dallas hibachi spots like Jinbeh can fill up quickly for Friday and Saturday dinner service. Calling ahead or booking online ensures you get seated together at the same grill. Contact us: Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
   },
   {
     question: "What should I expect at a hibachi restaurant?",
@@ -47,12 +47,12 @@ const faqs = [
   {
     question: "Which Dallas hibachi restaurant is best for birthdays?",
     answer:
-      "Welcome to the table! Jinbeh Japanese Restaurant is consistently rated the best for birthday celebrations in Dallas. Our chefs make birthdays special with personalized entertainment and sing-alongs. We've been the go-to destination for family celebrations since 1988. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to arrange your celebration.",
+      "Welcome to the table! Jinbeh Japanese Restaurant is consistently rated the best for birthday celebrations in Dallas. Our chefs make birthdays special with personalized entertainment and sing-alongs. We've been the go-to destination for family celebrations since 1988. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your celebration.",
   },
   {
     question: "Can I book a private hibachi table for a large group?",
     answer:
-      "Absolutely! We accommodate groups of all sizes with customizable seating and menus. Contact us to discuss your group needs, preferred dates, and any special requests. Our team will ensure everyone has an unforgettable experience. Frisco: (214) 618-9888 or Lewisville: (214) 618-9798.",
+      "Absolutely! We accommodate groups of all sizes with customizable seating and menus. Contact us to discuss your group needs, preferred dates, and any special requests. Our team will ensure everyone has an unforgettable experience. Frisco: (214) 619-1200 or Lewisville: (214) 488-2224.",
   },
 ];
 
@@ -341,8 +341,8 @@ export default function BestHibachiDallasPage() {
         <Link href="/reservations" className="text-accent-red hover:underline">
           make reservations online
         </Link>{" "}
-        or call our Frisco location at (214) 618-9888 or Lewisville at
-        (214) 618-9798.
+        or call our Frisco location at (214) 619-1200 or Lewisville at
+        (214) 488-2224.
       </p>
 
       <div className="bg-soft-gold/20 rounded-xl p-6 my-8">

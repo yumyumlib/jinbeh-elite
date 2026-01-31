@@ -353,7 +353,7 @@ export default function BacheloretteRestaurantsDallas() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Welcome to the table! It's a celebration! Jinbeh is perfect for bachelorette parties. Our hibachi shows provide interactive entertainment and dinner and a show all in one. We offer customizable group menus, dedicated service, and a festive atmosphere. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to arrange your special night.
+                                                    Welcome to the table! It's a celebration! Jinbeh is perfect for bachelorette parties. Our hibachi shows provide interactive entertainment and dinner and a show all in one. We offer customizable group menus, dedicated service, and a festive atmosphere. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your special night.
                                                 </p>
                                             </div>
                                         </details>

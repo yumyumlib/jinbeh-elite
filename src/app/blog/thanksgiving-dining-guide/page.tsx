@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const faqs = [
     { question: "Does Jinbeh offer Thanksgiving catering?", answer: "Yes! We offer catering for Frisco and DFW. Customizable menus, delivery, and full setups for any size group. Call us for quotes and packages." },
     { question: "What's the ordering deadline for Thanksgiving catering?", answer: "Order 7-10 days ahead for best options. Late orders may work depending on bookings. Call us directly for availability." },
-    { question: "Are you open on Thanksgiving Day?", answer: "Jinbeh is usually open Thanksgiving for dine-in service. Hours vary by location. Call (214) 618-9888 Frisco or (214) 618-9798 Lewisville to confirm." },
+    { question: "Are you open on Thanksgiving Day?", answer: "Jinbeh is usually open Thanksgiving for dine-in service. Hours vary by location. Call (214) 619-1200 Frisco or (214) 488-2224 Lewisville to confirm." },
     { question: "Why choose Japanese for Thanksgiving?", answer: "It's a celebration! Japanese cuisine offers variety and interactive dining like hibachi. Lighter options and a fresh take on the holiday. Perfect for families!" },
     { question: "Can you accommodate dietary restrictions?", answer: "Absolutely! We specialize in gluten-free, vegetarian, vegan, and allergy-friendly options. Tell us when ordering and we'll create the perfect menu." }
 ];

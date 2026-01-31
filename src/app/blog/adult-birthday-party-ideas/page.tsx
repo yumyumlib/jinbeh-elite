@@ -40,7 +40,7 @@ const faqs = [
     },
     {
         question: "Can I host a birthday party at Jinbeh?",
-        answer: "Absolutely! Hibachi tables seat 8-10 guests, so we can host your whole group. Call us to book. Frisco: (214) 618-9888. Lewisville: (214) 618-9798. We love celebrating with you.",
+        answer: "Absolutely! Hibachi tables seat 8-10 guests, so we can host your whole group. Call us to book. Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We love celebrating with you.",
     },
     {
         question: "What comes with a hibachi birthday experience?",

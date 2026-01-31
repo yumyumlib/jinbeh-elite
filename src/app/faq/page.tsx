@@ -48,7 +48,7 @@ const faqSchema = {
       name: "How do I make a reservation at Jinbeh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can make reservations online through OpenTable at our website, by phone at Frisco: (214) 618-9888 or Lewisville: (214) 618-9798, or by visiting either location in person.",
+        text: "You can make reservations online through OpenTable at our website, by phone at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224, or by visiting either location in person.",
       },
     },
     {
@@ -144,7 +144,7 @@ const faqSchema = {
       name: "Can I book a private event at Jinbeh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer private dining experiences for groups of 8 to 60+ guests. Visit our Private Dining page or call Frisco: (214) 618-9888 or Lewisville: (214) 618-9798 to discuss your event.",
+        text: "Yes! We offer private dining experiences for groups of 8 to 60+ guests. Visit our Private Dining page or call Frisco: (214) 619-1200 or Lewisville: (214) 488-2224 to discuss your event.",
       },
     },
     {
@@ -185,7 +185,7 @@ const faqCategories = [
     questions: [
       {
         q: "How do I make a reservation?",
-        a: "You can reserve online through OpenTable via our website, call Frisco: (214) 618-9888 or Lewisville: (214) 618-9798, or visit in person. Reservations are recommended, especially for large groups.",
+        a: "You can reserve online through OpenTable via our website, call Frisco: (214) 619-1200 or Lewisville: (214) 488-2224, or visit in person. Reservations are recommended, especially for large groups.",
       },
       {
         q: "Do you accept walk-ins?",
@@ -280,7 +280,7 @@ const faqCategories = [
       },
       {
         q: "Can I place an order over the phone?",
-        a: "Yes! Call your preferred location directly. Frisco: (214) 618-9888 or Lewisville: (214) 618-9798.",
+        a: "Yes! Call your preferred location directly. Frisco: (214) 619-1200 or Lewisville: (214) 488-2224.",
       },
     ],
   },
@@ -322,7 +322,7 @@ const faqCategories = [
       },
       {
         q: "What's your cancellation policy for reservations?",
-        a: "Please cancel reservations as soon as possible if your plans change. Call us directly at Frisco: (214) 618-9888 or Lewisville: (214) 618-9798.",
+        a: "Please cancel reservations as soon as possible if your plans change. Call us directly at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224.",
       },
       {
         q: "Is there a gratuity added to large parties?",
@@ -427,10 +427,10 @@ export default function FAQPage() {
                   Frisco
                 </p>
                 <a
-                  href="tel:2146189888"
+                  href="tel:2146191200"
                   className="inline-block text-2xl font-bold text-soft-gold hover:text-soft-gold/80 transition-colors"
                 >
-                  (214) 618-9888
+                  (214) 619-1200
                 </a>
               </div>
               <div>
@@ -438,10 +438,10 @@ export default function FAQPage() {
                   Lewisville
                 </p>
                 <a
-                  href="tel:2146189798"
+                  href="tel:2144882224"
                   className="inline-block text-2xl font-bold text-soft-gold hover:text-soft-gold/80 transition-colors"
                 >
-                  (214) 618-9798
+                  (214) 488-2224
                 </a>
               </div>
             </div>

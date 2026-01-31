@@ -175,13 +175,13 @@ export default function AnniversaryPage() {
                   href="/frisco"
                   className="inline-block bg-amber-600 text-white px-8 py-3 rounded hover:bg-amber-700 transition-colors"
                 >
-                  Frisco: (214) 618-9888
+                  Frisco: (214) 619-1200
                 </Link>
                 <Link
                   href="/lewisville"
                   className="inline-block bg-stone-700 text-white px-8 py-3 rounded hover:bg-stone-800 transition-colors"
                 >
-                  Lewisville: (214) 618-9798
+                  Lewisville: (214) 488-2224
                 </Link>
               </div>
             </div>

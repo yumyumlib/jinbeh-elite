@@ -408,7 +408,7 @@ export default function DateNightRestaurantsFrisco() {
                                         </summary>
                                         <div className="px-6 pb-6 text-charcoal/80">
                                             <p>
-                                                Welcome to the table! Jinbeh combines intimate ambiance with interactive hibachi theater. The chef performs right in front of you, creating dinner and a show while you enjoy fresh and flavorful sushi and premium sake. Our dim lighting, romantic setting, and personalized service make it ideal for couples. Call (214) 618-9888 to reserve your perfect date night.
+                                                Welcome to the table! Jinbeh combines intimate ambiance with interactive hibachi theater. The chef performs right in front of you, creating dinner and a show while you enjoy fresh and flavorful sushi and premium sake. Our dim lighting, romantic setting, and personalized service make it ideal for couples. Call (214) 619-1200 to reserve your perfect date night.
                                             </p>
                                         </div>
                                     </details>

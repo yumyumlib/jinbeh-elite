@@ -397,7 +397,7 @@ export default function SakeTasteProfile() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Welcome to the table! Try our sake flights at Jinbeh to discover your preferences. Our staff explains each one. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to reserve your tasting experience.
+                                                    Welcome to the table! Try our sake flights at Jinbeh to discover your preferences. Our staff explains each one. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to reserve your tasting experience.
                                                 </p>
                                             </div>
                                         </details>

@@ -41,7 +41,7 @@ const faqSchema = {
       name: "Should I make Father's Day reservations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Definitely! Father's Day is very popular. Call Frisco at (214) 618-9888 or Lewisville at (214) 618-9798 at least 1-2 weeks in advance to secure your table.",
+        text: "Definitely! Father's Day is very popular. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224 at least 1-2 weeks in advance to secure your table.",
       },
     },
     {
@@ -116,12 +116,12 @@ export default function FathersDayPage() {
             <p className="font-medium">
               <span>Father&apos;s Day tables go fast!</span>{" "}
               <span className="font-bold">Book early to treat Dad right.</span>{" "}
-              <a href="tel:2146189888" className="underline hover:no-underline">
-                Frisco (214) 618-9888
+              <a href="tel:2146191200" className="underline hover:no-underline">
+                Frisco (214) 619-1200
               </a>{" "}
               |{" "}
-              <a href="tel:2146189798" className="underline hover:no-underline">
-                Lewisville (214) 618-9798
+              <a href="tel:2144882224" className="underline hover:no-underline">
+                Lewisville (214) 488-2224
               </a>
             </p>
           </div>
@@ -309,16 +309,16 @@ export default function FathersDayPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:2146189888"
+                  href="tel:2146191200"
                   className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
-                  <span>📞</span> Frisco: (214) 618-9888
+                  <span>📞</span> Frisco: (214) 619-1200
                 </a>
                 <a
-                  href="tel:2146189798"
+                  href="tel:2144882224"
                   className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
-                  <span>📞</span> Lewisville: (214) 618-9798
+                  <span>📞</span> Lewisville: (214) 488-2224
                 </a>
               </div>
             </div>

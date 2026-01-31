@@ -406,7 +406,7 @@ export default function RestaurantsPrivateRooms() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining rooms</Link> accommodate groups from 8-10 to 50+ guests. It's a celebration! Welcome to the table. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to discuss your specific needs.
+                                                    Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining rooms</Link> accommodate groups from 8-10 to 50+ guests. It's a celebration! Welcome to the table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to discuss your specific needs.
                                                 </p>
                                             </div>
                                         </details>

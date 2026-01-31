@@ -111,7 +111,7 @@ const faqSchema = {
       name: "Does Jinbeh Frisco take reservations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We highly recommend reservations, especially for dinner and weekends. You can reserve online through OpenTable or call us at (214) 618-9888.",
+        text: "Yes! We highly recommend reservations, especially for dinner and weekends. You can reserve online through OpenTable or call us at (214) 619-1200.",
       },
     },
     {

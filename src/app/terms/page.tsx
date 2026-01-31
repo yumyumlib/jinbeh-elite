@@ -143,7 +143,7 @@ export default function TermsOfServicePage() {
                 <strong>Jinbeh Japanese Restaurant</strong><br />
                 2693 Preston Rd Suite 1040<br />
                 Frisco, TX 75034<br />
-                Phone: (214) 618-9888
+                Phone: (214) 619-1200
               </p>
             </section>
           </div>

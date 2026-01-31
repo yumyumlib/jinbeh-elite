@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Imperial Dinner | Jinbeh Frisco Hibachi Menu",
-  description: "Filet mignon, lobster tail, and shrimp Enjoy Imperial Dinner at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Filet mignon, lobster tail, and shrimp Enjoy Imperial Dinner at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["imperial dinner","imperial dinner frisco","hibachi frisco","jinbeh imperial dinner","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
   openGraph: {
     title: "Imperial Dinner | Jinbeh Frisco",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Imperial Dinner hibachi good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Imperial Dinner is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 618-9888 to reserve for your special event."
+        "text": "Absolutely! Imperial Dinner is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
       }
     },
     {
@@ -179,8 +179,8 @@ export default function ImperialDinnerFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -208,10 +208,10 @@ export default function ImperialDinnerFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>
@@ -271,7 +271,7 @@ export default function ImperialDinnerFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Imperial Dinner is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 618-9888 to reserve for your special event.
+                      Absolutely! Imperial Dinner is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "How do I check my gift card balance?",
-    answer: "Call us! Frisco (214) 618-9888 or Lewisville (214) 618-9798. Have your card number ready. We're happy to help.",
+    answer: "Call us! Frisco (214) 619-1200 or Lewisville (214) 488-2224. Have your card number ready. We're happy to help.",
   },
   {
     question: "Can I combine gift cards with coupons?",
@@ -103,15 +103,15 @@ export default function JinbehGiftCardsGuidePage() {
 
       <p>
         <strong>Frisco Location:</strong><br />
-        <Link href="tel:2146189888" className="text-accent-red hover:underline">
-          (214) 618-9888
+        <Link href="tel:2146191200" className="text-accent-red hover:underline">
+          (214) 619-1200
         </Link>
       </p>
 
       <p>
         <strong>Lewisville Location:</strong><br />
-        <Link href="tel:2146189798" className="text-accent-red hover:underline">
-          (214) 618-9798
+        <Link href="tel:2144882224" className="text-accent-red hover:underline">
+          (214) 488-2224
         </Link>
       </p>
 
@@ -156,14 +156,14 @@ export default function JinbehGiftCardsGuidePage() {
       <ul>
         <li>
           Frisco:{" "}
-          <Link href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <Link href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </Link>
         </li>
         <li>
           Lewisville:{" "}
-          <Link href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <Link href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </Link>
         </li>
       </ul>
@@ -461,14 +461,14 @@ export default function JinbehGiftCardsGuidePage() {
           <ul>
             <li>
               Frisco:{" "}
-              <Link href="tel:2146189888" className="text-accent-red hover:underline">
-                (214) 618-9888
+              <Link href="tel:2146191200" className="text-accent-red hover:underline">
+                (214) 619-1200
               </Link>
             </li>
             <li>
               Lewisville:{" "}
-              <Link href="tel:2146189798" className="text-accent-red hover:underline">
-                (214) 618-9798
+              <Link href="tel:2144882224" className="text-accent-red hover:underline">
+                (214) 488-2224
               </Link>
             </li>
           </ul>

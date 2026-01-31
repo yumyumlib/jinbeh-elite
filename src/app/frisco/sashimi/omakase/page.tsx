@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Omakase Selection | Jinbeh Frisco Sashimi Menu",
-  description: "Chef\'s choice tasting of the day\'s best Enjoy Omakase Selection at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Chef\'s choice tasting of the day\'s best Enjoy Omakase Selection at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["omakase selection","omakase selection frisco","sashimi frisco","jinbeh omakase selection","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
   openGraph: {
     title: "Omakase Selection | Jinbeh Frisco",
@@ -179,8 +179,8 @@ export default function OmakaseFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -204,10 +204,10 @@ export default function OmakaseFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>

@@ -127,7 +127,7 @@ const faqSchema = {
       name: "Can I make a reservation from Highland Village?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can reserve online through OpenTable or call our Frisco location at (214) 618-9888. We highly recommend reservations, especially for dinner and weekends.",
+        text: "Absolutely! You can reserve online through OpenTable or call our Frisco location at (214) 619-1200. We highly recommend reservations, especially for dinner and weekends.",
       },
     },
     {
@@ -135,7 +135,7 @@ const faqSchema = {
       name: "Does Jinbeh offer private dining for Highland Village groups?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer private hibachi dining perfect for corporate events, family celebrations, and group gatherings. Contact us at (214) 618-9888 to arrange your private event.",
+        text: "Yes! We offer private hibachi dining perfect for corporate events, family celebrations, and group gatherings. Contact us at (214) 619-1200 to arrange your private event.",
       },
     },
     {
@@ -525,7 +525,7 @@ export default function HighlandVillageNearbyPage() {
                   </svg>
                 </summary>
                 <p className="text-charcoal/70 mt-4">
-                  Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Frisco at (214) 618-9888 or Lewisville at (214) 618-9798.
+                  Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224.
                 </p>
               </details>
 

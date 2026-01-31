@@ -127,7 +127,7 @@ const faqSchema = {
       name: "Can I make a reservation from Flower Mound?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can reserve online through OpenTable or call our Lewisville location at (214) 618-9798. We highly recommend reservations, especially for dinner and weekends.",
+        text: "Absolutely! You can reserve online through OpenTable or call our Lewisville location at (214) 488-2224. We highly recommend reservations, especially for dinner and weekends.",
       },
     },
     {
@@ -135,7 +135,7 @@ const faqSchema = {
       name: "Does Jinbeh have private dining for Flower Mound groups?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer private hibachi dining perfect for corporate events, family celebrations, and group gatherings. Contact us at (214) 618-9798 to arrange your private event.",
+        text: "Yes! We offer private hibachi dining perfect for corporate events, family celebrations, and group gatherings. Contact us at (214) 488-2224 to arrange your private event.",
       },
     },
     {
@@ -565,7 +565,7 @@ export default function FlowerMoundNearbyPage() {
                   </svg>
                 </summary>
                 <p className="text-charcoal/70 mt-4">
-                  Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Lewisville at (214) 618-9798 or Frisco at (214) 618-9888.
+                  Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Lewisville at (214) 488-2224 or Frisco at (214) 619-1200.
                 </p>
               </details>
 

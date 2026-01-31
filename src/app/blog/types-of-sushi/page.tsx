@@ -37,7 +37,7 @@ const faqs = [
     { question: "What sushi is best for beginners?", answer: "Welcome to sushi! Try California Roll, Shrimp Tempura, or Philadelphia Roll. They're cooked and mild. Easy way to start exploring." },
     { question: "What's the most popular sushi roll?", answer: "California Roll is America's favorite. At Jinbeh, our Dragon Roll and Spicy Tuna are customer favorites too. Our chefs can recommend your perfect roll." },
     { question: "What's fresh and flavorful sushi?", answer: "We use fresh, never-frozen fish. Our sushi chefs are trained for years. Proper rice seasoning, expert knife work, traditional technique." },
-    { question: "Can I try different sushi at Jinbeh?", answer: "Yes! We have rolls, nigiri, sashimi, specialty creations. Sushi bar seating lets you watch our chefs work. Frisco (214) 618-9888 or Lewisville (214) 618-9798." },
+    { question: "Can I try different sushi at Jinbeh?", answer: "Yes! We have rolls, nigiri, sashimi, specialty creations. Sushi bar seating lets you watch our chefs work. Frisco (214) 619-1200 or Lewisville (214) 488-2224." },
 ];
 
 const faqSchema = {

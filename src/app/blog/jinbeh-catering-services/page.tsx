@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "How much does Jinbeh catering cost per person?",
     answer:
-      "Jinbeh catering pricing typically ranges from $15-$50 per person depending on menu selection and complexity. Basic menus start around $15-$25 per person, while premium options with live hibachi cooking can reach $40-$50+. We provide transparent pricing and detailed quotes based on your specific event needs. Call (214) 618-9888 or (214) 618-9798 for a quote.",
+      "Jinbeh catering pricing typically ranges from $15-$50 per person depending on menu selection and complexity. Basic menus start around $15-$25 per person, while premium options with live hibachi cooking can reach $40-$50+. We provide transparent pricing and detailed quotes based on your specific event needs. Call (214) 619-1200 or (214) 488-2224 for a quote.",
   },
   {
     question: "What catering options does Jinbeh offer?",
@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "How far in advance should I book catering?",
     answer:
-      "For best availability, book catering at least 2-3 weeks in advance. For large events (100+ guests), we recommend 4-6 weeks. This allows our team to plan menu details, logistics, and special arrangements. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to discuss your event.",
+      "For best availability, book catering at least 2-3 weeks in advance. For large events (100+ guests), we recommend 4-6 weeks. This allows our team to plan menu details, logistics, and special arrangements. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to discuss your event.",
   },
   {
     question: "Can Jinbeh handle dietary restrictions?",
@@ -264,12 +264,12 @@ export default function JinbehCateringServicesPage() {
       <ol className="space-y-3 mb-8">
         <li>
           <strong>Contact Our Team:</strong> Call{" "}
-          <Link href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <Link href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </Link>{" "}
           (Frisco) or{" "}
-          <Link href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <Link href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </Link>{" "}
           (Lewisville), or{" "}
           <Link href="/catering" className="text-accent-red hover:underline">

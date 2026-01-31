@@ -58,7 +58,7 @@ const faqSchema = {
       name: "How do I book a private dining experience at Jinbeh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "To book a private event, please call our events team directly. Frisco: (214) 618-9888, Lewisville: (214) 618-9798. We'll discuss your date, group size, menu preferences, and special requirements to create the perfect experience.",
+        text: "To book a private event, please call our events team directly. Frisco: (214) 619-1200, Lewisville: (214) 488-2224. We'll discuss your date, group size, menu preferences, and special requirements to create the perfect experience.",
       },
     },
     {
@@ -179,7 +179,7 @@ const locations = [
   {
     name: "Frisco",
     address: "2693 Preston Rd, Suite 1040, Frisco, TX 75034",
-    phone: "(214) 618-9888",
+    phone: "(214) 619-1200",
     email: "frisco@jinbeh.com",
     highlights: [
       "Premium location near Stonebriar Centre",
@@ -193,7 +193,7 @@ const locations = [
   {
     name: "Lewisville",
     address: "2440 S Stemmons Fwy #A, Lewisville, TX 75067",
-    phone: "(214) 618-9798",
+    phone: "(214) 488-2224",
     email: "lewisville@jinbeh.com",
     highlights: [
       "Convenient I-35E access",
@@ -634,19 +634,19 @@ export default function PrivateDiningPage() {
                 <div>
                   <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Frisco</p>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg block"
                   >
-                    (214) 618-9888
+                    (214) 619-1200
                   </a>
                 </div>
                 <div>
                   <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Lewisville</p>
                   <a
-                    href="tel:2146189798"
+                    href="tel:2144882224"
                     className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl block"
                   >
-                    (214) 618-9798
+                    (214) 488-2224
                   </a>
                 </div>
               </div>
@@ -699,7 +699,7 @@ export default function PrivateDiningPage() {
                 },
                 {
                   q: "How do I book a private dining experience?",
-                  a: "Simply call our events team at Frisco: (214) 618-9888 or Lewisville: (214) 618-9798. We'll discuss your date, group size, preferences, and special requirements to create the perfect experience.",
+                  a: "Simply call our events team at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224. We'll discuss your date, group size, preferences, and special requirements to create the perfect experience.",
                 },
                 {
                   q: "Can we customize the menu for our private event?",

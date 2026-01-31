@@ -185,7 +185,7 @@ export default function JapaneseCocktails() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Visit Jinbeh in both Frisco and Lewisville for expertly crafted Japanese cocktails. Our mixologists are trained in traditional Japanese techniques and use premium spirits. Call us at Frisco (214) 618-9888 or Lewisville (214) 618-9798. Check our happy hour specials for special pricing!</p>
+                                        <p>Visit Jinbeh in both Frisco and Lewisville for expertly crafted Japanese cocktails. Our mixologists are trained in traditional Japanese techniques and use premium spirits. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224. Check our happy hour specials for special pricing!</p>
                                     </div>
                                 </details>
 

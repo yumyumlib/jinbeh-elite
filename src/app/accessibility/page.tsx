@@ -98,7 +98,7 @@ export default function AccessibilityPage() {
                 for improvement, please contact us:
               </p>
               <p className="mt-4">
-                <strong>Phone:</strong> (214) 618-9888 (Frisco) or (214) 618-9798 (Lewisville)<br />
+                <strong>Phone:</strong> (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville)<br />
                 <strong>Email:</strong> Contact us through our website
               </p>
               <p className="mt-4">

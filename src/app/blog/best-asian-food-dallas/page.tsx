@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const faqs = [
     { question: "What's the best Asian food in Dallas?", answer: "Welcome to the table! Uchi Dallas has modern Japanese fusion. Royal China serves authentic Chinese. Jinbeh brings hibachi and sushi together." },
     { question: "Where can I find authentic Asian cuisine in Dallas?", answer: "Royal China has traditional Chinese dishes. Tei-An specializes in soba noodles. Musume features modern Asian cuisine. Jinbeh combines authentic Japanese techniques with fresh ingredients." },
-    { question: "Is there good Asian food outside downtown?", answer: "Absolutely! Jinbeh has locations in Frisco and Lewisville. Both offer excellent hibachi and sushi. Call (214) 618-9888 for Frisco or (214) 618-9798 for Lewisville." },
+    { question: "Is there good Asian food outside downtown?", answer: "Absolutely! Jinbeh has locations in Frisco and Lewisville. Both offer excellent hibachi and sushi. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville." },
     { question: "Is Jinbeh good for special occasions?", answer: "It's a celebration! We love hosting birthdays, anniversaries, and gatherings. Our hibachi chefs make every meal entertaining and memorable for your group." },
     { question: "What makes hibachi dining special?", answer: "Dinner and a show! Our chefs cook right before your eyes. Fire tricks, the onion volcano, and fresh-cooked meals make it unforgettable." }
 ];

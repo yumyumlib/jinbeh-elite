@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Tokyo Mule | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "Japanese whiskey with ginger and lime Enjoy Tokyo Mule at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 618-9888 to reserve.",
+  description: "Japanese whiskey with ginger and lime Enjoy Tokyo Mule at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
   keywords: ["tokyo mule","tokyo mule frisco","cocktails & sake frisco","jinbeh tokyo mule","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
   openGraph: {
     title: "Tokyo Mule | Jinbeh Frisco",
@@ -171,8 +171,8 @@ export default function TokyoMuleFriscoPage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189888" className="text-accent-red hover:underline">
-                          (214) 618-9888
+                        <a href="tel:2146191200" className="text-accent-red hover:underline">
+                          (214) 619-1200
                         </a>
                       </td>
                     </tr>
@@ -196,10 +196,10 @@ export default function TokyoMuleFriscoPage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189888"
+                    href="tel:2146191200"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9888
+                    Call (214) 619-1200
                   </a>
                 </div>
               </div>

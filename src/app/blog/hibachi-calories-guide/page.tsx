@@ -60,8 +60,8 @@ const faqs = [
 const cta = {
   headline: "Enjoy Delicious Hibachi Your Way",
   description: "At Jinbeh, every meal is customized. Ask your server about nutritional details or dietary accommodations.",
-  friscoPhone: "(214) 618-9888",
-  lewisvillePhone: "(214) 618-9798",
+  friscoPhone: "(214) 619-1200",
+  lewisvillePhone: "(214) 488-2224",
 };
 
 export default function HibachiCaloriesGuidePage() {

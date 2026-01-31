@@ -195,7 +195,7 @@ const faqSchema = {
       "name": "Are reservations needed for hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reservations are recommended, especially for hibachi dining. Call (214) 618-9798 or book online. Walk-ins are welcome based on availability."
+        "text": "Reservations are recommended, especially for hibachi dining. Call (214) 488-2224 or book online. Walk-ins are welcome based on availability."
       }
     },
     {
@@ -203,7 +203,7 @@ const faqSchema = {
       "name": "Does Jinbeh Lewisville offer hibachi for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Most hibachi items are available for takeout and delivery. Call (214) 618-9798 or order online. Note: The hibachi show experience is dine-in only."
+        "text": "Yes! Most hibachi items are available for takeout and delivery. Call (214) 488-2224 or order online. Note: The hibachi show experience is dine-in only."
       }
     },
     {
@@ -585,10 +585,10 @@ export default function HibachiLewisvillePage() {
                   Reserve a Table
                 </Link>
                 <a
-                  href="tel:2146189798"
+                  href="tel:2144882224"
                   className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
-                  Call (214) 618-9798
+                  Call (214) 488-2224
                 </a>
               </div>
             </div>
@@ -639,7 +639,7 @@ export default function HibachiLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Reservations are recommended, especially for hibachi dining. Call (214) 618-9798 or book online. Walk-ins are welcome based on availability.
+                    Reservations are recommended, especially for hibachi dining. Call (214) 488-2224 or book online. Walk-ins are welcome based on availability.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -652,7 +652,7 @@ export default function HibachiLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Yes! Most hibachi items are available for takeout and delivery. Call (214) 618-9798 or order online. Note: The hibachi show experience is dine-in only.
+                    Yes! Most hibachi items are available for takeout and delivery. Call (214) 488-2224 or order online. Note: The hibachi show experience is dine-in only.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">

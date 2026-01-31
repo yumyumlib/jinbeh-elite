@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "How far in advance should I book an anniversary dinner?",
     answer:
-      "Book 2-3 weeks ahead for most restaurants, especially for weekends or holidays. For peak seasons (Valentine's Day, major holidays), book 4-6 weeks in advance. Call Jinbeh: Frisco (214) 618-9888 or Lewisville (214) 618-9798 to secure your preferred time.",
+      "Book 2-3 weeks ahead for most restaurants, especially for weekends or holidays. For peak seasons (Valentine's Day, major holidays), book 4-6 weeks in advance. Call Jinbeh: Frisco (214) 619-1200 or Lewisville (214) 488-2224 to secure your preferred time.",
   },
   {
     question: "What makes Jinbeh romantic for anniversaries?",
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "Do you offer private tables for anniversary dinners?",
     answer:
-      "Yes! We offer semi-private hibachi tables and full private dining for anniversary celebrations. Contact us to arrange a customized romantic experience. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for details.",
+      "Yes! We offer semi-private hibachi tables and full private dining for anniversary celebrations. Contact us to arrange a customized romantic experience. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for details.",
   },
 ];
 
@@ -290,14 +290,14 @@ export default function RomanticAnniversaryDinnersPage() {
       <ul>
         <li>
           <strong>Frisco (near Stonebriar):</strong>{" "}
-          <a href="tel:2146189888" className="text-accent-red hover:underline">
-            (214) 618-9888
+          <a href="tel:2146191200" className="text-accent-red hover:underline">
+            (214) 619-1200
           </a>
         </li>
         <li>
           <strong>Lewisville (off I-35E):</strong>{" "}
-          <a href="tel:2146189798" className="text-accent-red hover:underline">
-            (214) 618-9798
+          <a href="tel:2144882224" className="text-accent-red hover:underline">
+            (214) 488-2224
           </a>
         </li>
       </ul>

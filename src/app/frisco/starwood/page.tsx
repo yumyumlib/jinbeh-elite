@@ -50,7 +50,7 @@ const localBusinessSchema = {
     longitude: -96.8233,
   },
   url: "https://jinbeh.com/frisco",
-  telephone: "(214) 618-9888",
+  telephone: "(214) 619-1200",
   servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
   priceRange: "$$",
   areaServed: {
@@ -90,7 +90,7 @@ const faqSchema = {
       name: "Are reservations recommended for hibachi near Starwood?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, we highly recommend reservations for hibachi dining, especially on weekends and holidays. You can book online or call us at (214) 618-9888 to secure your table.",
+        text: "Yes, we highly recommend reservations for hibachi dining, especially on weekends and holidays. You can book online or call us at (214) 619-1200 to secure your table.",
       },
     },
     {
@@ -363,10 +363,10 @@ export default function StarwoodPage() {
                 Make a Reservation
               </Link>
               <a
-                href="tel:2146189888"
+                href="tel:2146191200"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
-                Call (214) 618-9888
+                Call (214) 619-1200
               </a>
             </div>
             <p className="text-white/70 text-sm">

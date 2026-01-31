@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Yellowtail Sashimi | Jinbeh Lewisville Sashimi Menu",
-  description: "Buttery hamachi with delicate flavor Enjoy Yellowtail Sashimi at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 618-9798 to reserve.",
+  description: "Buttery hamachi with delicate flavor Enjoy Yellowtail Sashimi at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
   keywords: ["yellowtail sashimi","yellowtail sashimi lewisville","sashimi lewisville","jinbeh yellowtail sashimi","best sashimi lewisville","japanese restaurant lewisville","sashimi","raw fish","sashimi platter","fresh fish"],
   openGraph: {
     title: "Yellowtail Sashimi | Jinbeh Lewisville",
@@ -179,8 +179,8 @@ export default function YellowtailSashimiLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2146189798" className="text-accent-red hover:underline">
-                          (214) 618-9798
+                        <a href="tel:2144882224" className="text-accent-red hover:underline">
+                          (214) 488-2224
                         </a>
                       </td>
                     </tr>
@@ -204,10 +204,10 @@ export default function YellowtailSashimiLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2146189798"
+                    href="tel:2144882224"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 618-9798
+                    Call (214) 488-2224
                   </a>
                 </div>
               </div>

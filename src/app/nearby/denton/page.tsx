@@ -119,7 +119,7 @@ const faqSchema = {
       name: "Can I book hibachi from Denton?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can reserve a hibachi table online through OpenTable or call our Lewisville location at (214) 618-9798. Reservations are highly recommended, especially for dinner and weekends.",
+        text: "Absolutely! You can reserve a hibachi table online through OpenTable or call our Lewisville location at (214) 488-2224. Reservations are highly recommended, especially for dinner and weekends.",
       },
     },
     {
@@ -135,7 +135,7 @@ const faqSchema = {
       name: "Do you offer hibachi for corporate team building?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer private hibachi dining perfect for corporate team building, client entertainment, and business celebrations from Denton. Contact us at (214) 618-9798 to arrange your event.",
+        text: "Yes! We offer private hibachi dining perfect for corporate team building, client entertainment, and business celebrations from Denton. Contact us at (214) 488-2224 to arrange your event.",
       },
     },
     {
@@ -525,7 +525,7 @@ export default function DentonNearbyPage() {
                   </svg>
                 </summary>
                 <p className="text-charcoal/70 mt-4">
-                  Absolutely! You can reserve a hibachi table online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Lewisville at (214) 618-9798 or Frisco at (214) 618-9888.
+                  Absolutely! You can reserve a hibachi table online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Lewisville at (214) 488-2224 or Frisco at (214) 619-1200.
                 </p>
               </details>
 
@@ -561,7 +561,7 @@ export default function DentonNearbyPage() {
                   </svg>
                 </summary>
                 <p className="text-charcoal/70 mt-4">
-                  Yes! We offer private hibachi dining perfect for team building, client entertainment, and corporate celebrations. Contact us at (214) 618-9798 to arrange your private hibachi event.
+                  Yes! We offer private hibachi dining perfect for team building, client entertainment, and corporate celebrations. Contact us at (214) 488-2224 to arrange your private hibachi event.
                 </p>
               </details>
 

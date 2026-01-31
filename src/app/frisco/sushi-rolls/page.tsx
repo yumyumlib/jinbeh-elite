@@ -195,7 +195,7 @@ const faqSchema = {
       "name": "Are reservations needed for sushi rolls at Jinbeh Frisco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reservations are recommended, especially for dinner. Call (214) 618-9888 or book online. Walk-ins are welcome based on availability."
+        "text": "Reservations are recommended, especially for dinner. Call (214) 619-1200 or book online. Walk-ins are welcome based on availability."
       }
     },
     {
@@ -203,7 +203,7 @@ const faqSchema = {
       "name": "Does Jinbeh Frisco offer sushi rolls for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Most sushi rolls items are available for takeout and delivery. Call (214) 618-9888 or order online. "
+        "text": "Yes! Most sushi rolls items are available for takeout and delivery. Call (214) 619-1200 or order online. "
       }
     },
     {
@@ -585,10 +585,10 @@ export default function SushiRollsFriscoPage() {
                   Reserve a Table
                 </Link>
                 <a
-                  href="tel:2146189888"
+                  href="tel:2146191200"
                   className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
-                  Call (214) 618-9888
+                  Call (214) 619-1200
                 </a>
               </div>
             </div>
@@ -639,7 +639,7 @@ export default function SushiRollsFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Reservations are recommended, especially for dinner. Call (214) 618-9888 or book online. Walk-ins are welcome based on availability.
+                    Reservations are recommended, especially for dinner. Call (214) 619-1200 or book online. Walk-ins are welcome based on availability.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -652,7 +652,7 @@ export default function SushiRollsFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Yes! Most sushi rolls items are available for takeout and delivery. Call (214) 618-9888 or order online. 
+                    Yes! Most sushi rolls items are available for takeout and delivery. Call (214) 619-1200 or order online. 
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">

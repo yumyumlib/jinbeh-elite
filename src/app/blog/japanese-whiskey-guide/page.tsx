@@ -122,7 +122,7 @@ export default function JapaneseWhiskeyGuide() {
                                 {[
                                     { q: "How does Japanese whiskey compare to Scottish whisky?", a: "Both follow similar production, but Japanese whiskey emphasizes subtlety, precision, and balance. Scotch often features bold flavors, while Japanese whiskey tends toward elegance and harmony. Fresh and flavorful!" },
                                     { q: "What makes Yamazaki famous?", a: "Yamazaki, established in 1923, is Japan's oldest malt whiskey distillery. Its flagship is renowned for delicate fruit and oak balance with notes of honey, peach, and pineapple. A celebration of craftsmanship!" },
-                                    { q: "Where can I try Japanese whiskey in Dallas?", a: "Welcome to the table at Jinbeh! We offer an impressive selection of Japanese whiskeys paired with authentic Japanese cuisine. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798. We treat every guest like family!" },
+                                    { q: "Where can I try Japanese whiskey in Dallas?", a: "Welcome to the table at Jinbeh! We offer an impressive selection of Japanese whiskeys paired with authentic Japanese cuisine. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We treat every guest like family!" },
                                     { q: "Are Japanese whiskeys expensive?", a: "Premium Japanese whiskeys command high prices due to limited production and exceptional quality. However, excellent entry-level options exist at more accessible price points. Dinner and a show at Jinbeh makes it special!" }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">

@@ -19,7 +19,7 @@ const faqs = [
     { question: "Why does Ramune have a marble?", answer: "The marble is a seal that keeps the soda fresh and preserves carbonation. It makes every bottle an interactive, playful experience when you open it." },
     { question: "How do you open Ramune soda?", answer: "Remove the plastic cap and plunger. Place the plunger over the marble. Press down firmly until the marble drops into the bottle's neck." },
     { question: "What flavors does Ramune come in?", answer: "Ramune has many flavors: original lemon-lime, strawberry, melon, grape, blueberry, yuzu, and seasonal limited editions." },
-    { question: "Where can I find Ramune in Dallas?", answer: "Visit Jinbeh! We serve Ramune and other Japanese beverages. Frisco (214) 618-9888 or Lewisville (214) 618-9798. Pair it with your meal!" }
+    { question: "Where can I find Ramune in Dallas?", answer: "Visit Jinbeh! We serve Ramune and other Japanese beverages. Frisco (214) 619-1200 or Lewisville (214) 488-2224. Pair it with your meal!" }
 ];
 
 const schemas = [

@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "What are typical hibachi prices?",
     answer:
-      "Hibachi dinner entrees typically range from $25-$45 per person depending on protein choice. Premium proteins like filet mignon or lobster cost more. Lunch specials offer better value, usually $12-$20. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 for our current menu and pricing.",
+      "Hibachi dinner entrees typically range from $25-$45 per person depending on protein choice. Premium proteins like filet mignon or lobster cost more. Lunch specials offer better value, usually $12-$20. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for our current menu and pricing.",
   },
   {
     question: "Can I order hibachi for takeout?",

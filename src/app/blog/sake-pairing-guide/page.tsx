@@ -28,7 +28,7 @@ const faqs = [
     { question: "Should sake be served hot or cold?", answer: "Premium sakes like Ginjo are best chilled (50-55°F). Junmai can be warm (104-113°F) or room temperature. Warmer service brings richer flavors. Chilled feels refreshing." },
     { question: "What sake pairs with hibachi?", answer: "Go fuller-bodied! Junmai or Honjozo complement grilled proteins and vegetables. These robust sakes match the bold, grilled flavors. Warm sake intensifies the pairing." },
     { question: "Can sake pair with appetizers?", answer: "Absolutely! Sparkling sake (Hana Awaka) works with fried appetizers. Dry Honjozo complements edamame and gyoza. Match intensity: lighter apps get lighter sake." },
-    { question: "How do I order sake at Jinbeh?", answer: "Our bartenders are happy to guide you! Tell them your preferences. We have sake flights for tasting. Call Frisco (214) 618-9888 or Lewisville (214) 618-9798 to ask about selections." }
+    { question: "How do I order sake at Jinbeh?", answer: "Our bartenders are happy to guide you! Tell them your preferences. We have sake flights for tasting. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about selections." }
 ];
 
 const articleSchema = {

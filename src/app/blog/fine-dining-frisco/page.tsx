@@ -49,7 +49,7 @@ const faqs = [
     },
     {
         question: "How do I make a fine dining reservation at Jinbeh?",
-        answer: "Call us! Frisco: (214) 618-9888. Lewisville: (214) 618-9798. We welcome reservations for hibachi and sushi bar seating. Private rooms are available for special occasions and groups.",
+        answer: "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We welcome reservations for hibachi and sushi bar seating. Private rooms are available for special occasions and groups.",
     },
     {
         question: "What drinks does Jinbeh offer?",
