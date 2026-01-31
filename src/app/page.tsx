@@ -821,7 +821,7 @@ export default function HomePage() {
                 {/* Gradient Fade Right */}
                 <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
-                <Marquee pauseOnHover duration={40}>
+                <Marquee pauseOnHover duration={80}>
                   {/* Testimonial 1 - Verified Google Review */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} colorFrom="#C1121F" colorTo="#C9A227" />
