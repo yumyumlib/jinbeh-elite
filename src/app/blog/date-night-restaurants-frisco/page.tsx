@@ -108,7 +108,7 @@ export default function DateNightRestaurantsFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=tips-guides" className="hover:text-white">Tips & Guides</Link>
+                        <Link href="/blog?category=best-of" className="hover:text-white">Tips & Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">

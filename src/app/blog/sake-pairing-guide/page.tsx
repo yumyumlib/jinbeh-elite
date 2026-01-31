@@ -653,7 +653,7 @@ export default function SakePairingGuide() {
                                     <div className="flex flex-wrap gap-2">
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🍣 Cuisine</Link>
                                         <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍷 Beverages</Link>
-                                        <Link href="/blog?category=dining" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍽️ Dining</Link>
+                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍽️ Dining</Link>
                                     </div>
                                 </div>
                             </div>

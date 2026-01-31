@@ -28,7 +28,7 @@ export default function BestSushiDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=locations">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Sushi Dallas TX</h1>

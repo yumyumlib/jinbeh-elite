@@ -103,7 +103,7 @@ export default function FineDiningFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=locations" className="hover:text-white">Dining Guide</Link>
+                        <Link href="/blog?category=local-guides" className="hover:text-white">Dining Guide</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">

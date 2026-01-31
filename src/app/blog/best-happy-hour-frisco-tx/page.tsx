@@ -78,7 +78,7 @@ export default function BestHappyHourFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=tips-guides" className="hover:text-white">Tips & Guides</Link>
+                        <Link href="/blog?category=best-of" className="hover:text-white">Tips & Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -356,9 +356,9 @@ export default function BestHappyHourFrisco() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=tips-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/20 text-soft-gold">✨ Tips & Guides</Link>
+                                        <Link href="/blog?category=best-of" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/20 text-soft-gold">✨ Tips & Guides</Link>
                                         <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍶 Beverages</Link>
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📍 Locations</Link>
+                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📍 Locations</Link>
                                     </div>
                                 </div>
                             </div>

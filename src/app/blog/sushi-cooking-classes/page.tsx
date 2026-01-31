@@ -95,7 +95,7 @@ export default function SushiCookingClasses() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=guides" className="hover:text-white">Guides</Link>
+                        <Link href="/blog?category=cuisine" className="hover:text-white">Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
@@ -428,8 +428,8 @@ export default function SushiCookingClasses() {
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-orange-500/10 text-orange-500">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
-                                        <Link href="/blog?category=learning" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">👨‍🎓 Learning</Link>
+                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
+                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">👨‍🎓 Learning</Link>
                                     </div>
                                 </div>
                             </div>

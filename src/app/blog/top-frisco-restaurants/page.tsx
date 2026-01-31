@@ -106,7 +106,7 @@ export default function TopFriscoRestaurants() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=locations" className="hover:text-white">Dining Guide</Link>
+                        <Link href="/blog?category=local-guides" className="hover:text-white">Dining Guide</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -440,9 +440,9 @@ export default function TopFriscoRestaurants() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=locations" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
+                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=events" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🎉 Events</Link>
+                                        <Link href="/blog?category=celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🎉 Events</Link>
                                     </div>
                                 </div>
                             </div>

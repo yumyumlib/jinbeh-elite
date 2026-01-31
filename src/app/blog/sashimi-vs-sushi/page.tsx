@@ -61,7 +61,7 @@ export default function SashimiVsSushi() {
                         <span>/</span>
                         <Link href="/blog">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=sushi">Sushi Guide</Link>
+                        <Link href="/blog?category=cuisine">Sushi Guide</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">
                         🍣 Sushi Guide

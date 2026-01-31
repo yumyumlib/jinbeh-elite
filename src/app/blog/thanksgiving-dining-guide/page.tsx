@@ -854,13 +854,13 @@ export default function ThanksgivingDiningGuide() {
                                             🍣 Cuisine
                                         </Link>
                                         <Link
-                                            href="/blog?category=dining"
+                                            href="/blog?category=local-guides"
                                             className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
                                         >
                                             🍽️ Dining
                                         </Link>
                                         <Link
-                                            href="/blog?category=events"
+                                            href="/blog?category=celebrations"
                                             className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
                                         >
                                             🎉 Events
