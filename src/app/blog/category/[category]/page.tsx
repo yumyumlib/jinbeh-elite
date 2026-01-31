@@ -153,8 +153,8 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     <main className="min-h-screen bg-warm-ivory">
       {/* Hero Section */}
       <section className={`relative py-20 bg-gradient-to-r ${category.color}`}>
-        <div className="container mx-auto px-6 text-center text-white">
-          <nav className="flex justify-center gap-2 text-sm text-white/70 mb-6">
+        <div className="w-full max-w-7xl mx-auto px-6 flex flex-col items-center text-center text-white">
+          <nav className="flex items-center justify-center gap-2 text-sm text-white/70 mb-6">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <Link href="/blog" className="hover:text-white">Blog</Link>
@@ -166,7 +166,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
             {category.title}
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 max-w-2xl">
             {category.description}
           </p>
         </div>
