@@ -66,8 +66,8 @@ export default async function BlogPage({
                 </div>
             </section>
 
-            {/* Category Filter */}
-            <section className="sticky top-0 z-40 bg-white border-b border-warm-ivory-dark shadow-sm">
+            {/* Category Filter - top-20 to position below header (h-20 = 80px) */}
+            <section className="sticky top-20 z-40 bg-white border-b border-warm-ivory-dark shadow-sm">
                 <div className="container mx-auto px-6">
                     <nav className="flex items-center gap-2 py-4 overflow-x-auto no-scrollbar">
                         <Link
