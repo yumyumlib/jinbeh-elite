@@ -5,7 +5,7 @@
             "name": "Best Of",
             "slug": "best-of",
             "description": "Discover the best hibachi, sushi, and dining experiences across DFW",
-            "icon": "🏆",
+            "icon": "\ud83c\udfc6",
             "color": "#C9A227"
         },
         {
@@ -13,7 +13,7 @@
             "name": "Celebrations",
             "slug": "celebrations",
             "description": "Birthday parties, anniversaries, bridal showers and special events",
-            "icon": "🎉",
+            "icon": "\ud83c\udf89",
             "color": "#C1121F"
         },
         {
@@ -21,7 +21,7 @@
             "name": "Japanese Cuisine",
             "slug": "cuisine",
             "description": "Sushi, hibachi, teppanyaki and Japanese culinary traditions",
-            "icon": "🍣",
+            "icon": "\ud83c\udf63",
             "color": "#7A4E2D"
         },
         {
@@ -29,7 +29,7 @@
             "name": "Local Guides",
             "slug": "local-guides",
             "description": "Explore dining and activities in Frisco, Lewisville, and DFW",
-            "icon": "📍",
+            "icon": "\ud83d\udccd",
             "color": "#1E2A44"
         },
         {
@@ -37,7 +37,7 @@
             "name": "Beverages",
             "slug": "beverages",
             "description": "Sake, Japanese whiskey, cocktails and drink pairings",
-            "icon": "🍶",
+            "icon": "\ud83c\udf76",
             "color": "#C9A227"
         },
         {
@@ -45,7 +45,7 @@
             "name": "Health & Nutrition",
             "slug": "health",
             "description": "Calorie guides, healthy dining options, and nutrition information",
-            "icon": "💚",
+            "icon": "\ud83d\udc9a",
             "color": "#2D7A4E"
         }
     ],
@@ -56,14 +56,22 @@
             "excerpt": "Looking for the best hibachi in Dallas? Our local guide reveals where skilled chefs put on unforgettable shows. From birthday celebrations to date nights.",
             "category": "best-of",
             "primaryKeyword": "best hibachi dallas",
-            "secondaryKeywords": ["hibachi dallas tx", "teppanyaki dallas", "hibachi near me"],
+            "secondaryKeywords": [
+                "hibachi dallas tx",
+                "teppanyaki dallas",
+                "hibachi near me"
+            ],
             "heroImage": "/images/photoshoot/hibachi-plate-shrimp.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-15",
             "readTime": 8,
             "featured": true,
-            "relatedPosts": ["best-sushi-frisco", "hibachi-vs-teppanyaki-explained", "hibachi-birthday-party-ideas"]
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "hibachi-vs-teppanyaki-explained",
+                "hibachi-birthday-party-ideas"
+            ]
         },
         {
             "slug": "best-sushi-frisco",
@@ -71,14 +79,22 @@
             "excerpt": "Discover the freshest sushi in Frisco TX. From signature rolls to omakase experiences near Stonebriar Centre, find your perfect spot.",
             "category": "best-of",
             "primaryKeyword": "best sushi frisco",
-            "secondaryKeywords": ["sushi frisco tx", "sushi near stonebriar", "japanese restaurant frisco"],
+            "secondaryKeywords": [
+                "sushi frisco tx",
+                "sushi near stonebriar",
+                "japanese restaurant frisco"
+            ],
             "heroImage": "/images/photoshoot/sushi-tower.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-16",
             "readTime": 7,
             "featured": true,
-            "relatedPosts": ["types-of-sushi", "beginner-sushi-tips", "best-happy-hour-frisco-tx"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "beginner-sushi-tips",
+                "best-happy-hour-frisco-tx"
+            ]
         },
         {
             "slug": "hibachi-birthday-party-ideas",
@@ -86,14 +102,22 @@
             "excerpt": "Plan the perfect hibachi birthday party! From kids celebrations to adult bashes, discover why hibachi makes birthdays unforgettable with fire, food, and fun.",
             "category": "celebrations",
             "primaryKeyword": "hibachi birthday party",
-            "secondaryKeywords": ["birthday party hibachi", "hibachi birthday frisco", "unique birthday ideas"],
+            "secondaryKeywords": [
+                "birthday party hibachi",
+                "hibachi birthday frisco",
+                "unique birthday ideas"
+            ],
             "heroImage": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-17",
             "readTime": 9,
             "featured": true,
-            "relatedPosts": ["best-hibachi-dallas", "group-dining-guide", "free-birthday-deals"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "group-dining-guide",
+                "free-birthday-deals"
+            ]
         },
         {
             "slug": "best-happy-hour-frisco-tx",
@@ -101,14 +125,22 @@
             "excerpt": "Find the best happy hour deals in Frisco TX. From $5 sake bombs to half-price sushi rolls, discover where locals unwind after work.",
             "category": "best-of",
             "primaryKeyword": "happy hour frisco tx",
-            "secondaryKeywords": ["sushi happy hour frisco", "drink specials frisco", "frisco bars"],
+            "secondaryKeywords": [
+                "sushi happy hour frisco",
+                "drink specials frisco",
+                "frisco bars"
+            ],
             "heroImage": "/images/blog/10-C060324-6501.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-18",
             "readTime": 6,
             "featured": true,
-            "relatedPosts": ["japanese-beverages-guide", "best-sushi-frisco", "top-frisco-restaurants"]
+            "relatedPosts": [
+                "japanese-beverages-guide",
+                "best-sushi-frisco",
+                "top-frisco-restaurants"
+            ]
         },
         {
             "slug": "types-of-sushi",
@@ -116,14 +148,23 @@
             "excerpt": "Your complete guide to sushi types. Learn the difference between nigiri, maki, sashimi, and specialty rolls. Perfect for beginners and sushi enthusiasts.",
             "category": "cuisine",
             "primaryKeyword": "types of sushi",
-            "secondaryKeywords": ["sushi varieties", "sushi rolls", "nigiri vs maki", "sashimi"],
+            "secondaryKeywords": [
+                "sushi varieties",
+                "sushi rolls",
+                "nigiri vs maki",
+                "sashimi"
+            ],
             "heroImage": "/images/photoshoot/sashimi-platter.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-19",
             "readTime": 10,
             "featured": false,
-            "relatedPosts": ["beginner-sushi-tips", "best-sushi-frisco", "omakase-experience"]
+            "relatedPosts": [
+                "beginner-sushi-tips",
+                "best-sushi-frisco",
+                "omakase-experience"
+            ]
         },
         {
             "slug": "hibachi-vs-teppanyaki-explained",
@@ -131,14 +172,22 @@
             "excerpt": "Discover the difference between hibachi and teppanyaki. Learn about the cooking style, what to expect at a hibachi restaurant, and why it's dinner and a show.",
             "category": "cuisine",
             "primaryKeyword": "what is hibachi",
-            "secondaryKeywords": ["teppanyaki vs hibachi", "hibachi cooking", "japanese grill"],
+            "secondaryKeywords": [
+                "teppanyaki vs hibachi",
+                "hibachi cooking",
+                "japanese grill"
+            ],
             "heroImage": "/images/photoshoot/sizzling-plate.jpg",
             "heroVideo": "/videos/hibachi-hero.mp4",
             "author": "Jinbeh",
             "publishedAt": "2026-01-20",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "hibachi-birthday-party-ideas", "hibachi-calories-guide"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "hibachi-birthday-party-ideas",
+                "hibachi-calories-guide"
+            ]
         },
         {
             "slug": "beginner-sushi-tips",
@@ -146,14 +195,22 @@
             "excerpt": "New to sushi? Our beginner's guide covers everything from what to order to how to eat it. Make your first sushi experience memorable, not intimidating.",
             "category": "cuisine",
             "primaryKeyword": "sushi for beginners",
-            "secondaryKeywords": ["first time sushi", "how to eat sushi", "sushi etiquette"],
+            "secondaryKeywords": [
+                "first time sushi",
+                "how to eat sushi",
+                "sushi etiquette"
+            ],
             "heroImage": "/images/photoshoot/appetizers-spread.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-21",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sushi", "best-sushi-frisco", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "best-sushi-frisco",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "japanese-beverages-guide",
@@ -161,14 +218,22 @@
             "excerpt": "Explore Japanese beverages from traditional sake to Sapporo beer. Learn what to drink with sushi, hibachi, and how to order like a pro.",
             "category": "beverages",
             "primaryKeyword": "japanese drinks",
-            "secondaryKeywords": ["sake", "japanese beer", "what to drink with sushi"],
+            "secondaryKeywords": [
+                "sake",
+                "japanese beer",
+                "what to drink with sushi"
+            ],
             "heroImage": "/images/drinks/cocktail.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-22",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["best-happy-hour-frisco-tx", "beginner-sushi-tips", "omakase-experience"]
+            "relatedPosts": [
+                "best-happy-hour-frisco-tx",
+                "beginner-sushi-tips",
+                "omakase-experience"
+            ]
         },
         {
             "slug": "top-frisco-restaurants",
@@ -176,29 +241,22 @@
             "excerpt": "Looking for dining near Stonebriar Centre? Our local guide covers the best restaurants for shopping day lunch, dinner, and everything in between.",
             "category": "local-guides",
             "primaryKeyword": "restaurants near stonebriar",
-            "secondaryKeywords": ["stonebriar mall restaurants", "dining frisco tx", "where to eat frisco"],
+            "secondaryKeywords": [
+                "stonebriar mall restaurants",
+                "dining frisco tx",
+                "where to eat frisco"
+            ],
             "heroImage": "/images/interior/JinbehFriscoTables.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-23",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["best-sushi-frisco", "best-happy-hour-frisco-tx", "top-frisco-restaurants"]
-        },
-        {
-            "slug": "top-frisco-restaurants",
-            "title": "Things to Do in Frisco TX: Local's Guide",
-            "excerpt": "Discover the best activities and dining in Frisco TX. From Stonebriar shopping to family entertainment, plan your perfect day or night out.",
-            "category": "local-guides",
-            "primaryKeyword": "things to do frisco tx",
-            "secondaryKeywords": ["frisco activities", "frisco entertainment", "frisco dining"],
-            "heroImage": "/images/celebrations/jinbeh_group.jpg",
-            "heroVideo": null,
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-24",
-            "readTime": 8,
-            "featured": false,
-            "relatedPosts": ["top-frisco-restaurants", "best-sushi-frisco", "best-happy-hour-frisco-tx"]
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "best-happy-hour-frisco-tx",
+                "top-frisco-restaurants"
+            ]
         },
         {
             "slug": "japanese-restaurants-lewisville",
@@ -206,14 +264,22 @@
             "excerpt": "Find authentic Japanese cuisine in Lewisville TX. From hibachi shows to fresh sushi, discover the best spots near Vista Ridge Mall and I-35E.",
             "category": "local-guides",
             "primaryKeyword": "japanese restaurant lewisville",
-            "secondaryKeywords": ["sushi lewisville tx", "hibachi lewisville", "asian food lewisville"],
+            "secondaryKeywords": [
+                "sushi lewisville tx",
+                "hibachi lewisville",
+                "asian food lewisville"
+            ],
             "heroImage": "/images/photoshoot/hibachi-steak.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-25",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "types-of-sushi", "hibachi-vs-teppanyaki-explained"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "types-of-sushi",
+                "hibachi-vs-teppanyaki-explained"
+            ]
         },
         {
             "slug": "hibachi-calories-guide",
@@ -221,14 +287,22 @@
             "excerpt": "Wondering about hibachi calories? Our nutrition guide breaks down hibachi meals so you can enjoy your favorite dishes while staying on track.",
             "category": "health",
             "primaryKeyword": "hibachi calories",
-            "secondaryKeywords": ["hibachi nutrition", "healthy hibachi", "hibachi diet"],
+            "secondaryKeywords": [
+                "hibachi nutrition",
+                "healthy hibachi",
+                "hibachi diet"
+            ],
             "heroImage": "/images/blog/26-C060324-6874.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-vs-teppanyaki-explained", "beginner-sushi-tips", "best-hibachi-dallas"]
+            "relatedPosts": [
+                "hibachi-vs-teppanyaki-explained",
+                "beginner-sushi-tips",
+                "best-hibachi-dallas"
+            ]
         },
         {
             "slug": "group-dining-guide",
@@ -236,14 +310,22 @@
             "excerpt": "Planning dinner for a large group in DFW? Discover why hibachi is perfect for corporate events, family reunions, and celebrations of 10-50+ guests.",
             "category": "celebrations",
             "primaryKeyword": "large group dining",
-            "secondaryKeywords": ["group restaurants dfw", "private dining", "corporate dining frisco"],
+            "secondaryKeywords": [
+                "group restaurants dfw",
+                "private dining",
+                "corporate dining frisco"
+            ],
             "heroImage": "/images/celebrations/jinbeh_group.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-27",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["hibachi-birthday-party-ideas", "best-hibachi-dallas", "catering-services"]
+            "relatedPosts": [
+                "hibachi-birthday-party-ideas",
+                "best-hibachi-dallas",
+                "catering-services"
+            ]
         },
         {
             "slug": "omakase-experience",
@@ -251,14 +333,22 @@
             "excerpt": "What is omakase? Learn about this premium Japanese dining tradition where the chef creates a personalized tasting menu just for you.",
             "category": "cuisine",
             "primaryKeyword": "omakase",
-            "secondaryKeywords": ["omakase dining", "chef's choice sushi", "premium sushi experience"],
+            "secondaryKeywords": [
+                "omakase dining",
+                "chef's choice sushi",
+                "premium sushi experience"
+            ],
             "heroImage": "/images/photoshoot/sashimi-platter.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-28",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sushi", "best-sushi-frisco", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "best-sushi-frisco",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "free-birthday-deals",
@@ -266,14 +356,22 @@
             "excerpt": "Score free birthday food and deals across Dallas-Fort Worth! From restaurant rewards to special birthday treatments, celebrate without breaking the bank.",
             "category": "celebrations",
             "primaryKeyword": "free birthday food",
-            "secondaryKeywords": ["birthday deals dfw", "free birthday meals", "birthday rewards"],
+            "secondaryKeywords": [
+                "birthday deals dfw",
+                "free birthday meals",
+                "birthday rewards"
+            ],
             "heroImage": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-29",
             "readTime": 5,
             "featured": false,
-            "relatedPosts": ["hibachi-birthday-party-ideas", "best-hibachi-dallas", "group-dining-guide"]
+            "relatedPosts": [
+                "hibachi-birthday-party-ideas",
+                "best-hibachi-dallas",
+                "group-dining-guide"
+            ]
         },
         {
             "slug": "adult-birthday-party-ideas",
@@ -297,7 +395,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 9,
             "featured": true,
-            "relatedPosts": ["best-sushi-frisco", "types-of-sushi"]
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "types-of-sushi"
+            ]
         },
         {
             "slug": "sake-pairing-guide",
@@ -309,7 +410,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 10,
             "featured": false,
-            "relatedPosts": ["japanese-beverages-guide", "types-of-sake-explained"]
+            "relatedPosts": [
+                "japanese-beverages-guide",
+                "types-of-sake-explained"
+            ]
         },
         {
             "slug": "types-of-sake-explained",
@@ -321,7 +425,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["sake-pairing-guide", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "sake-pairing-guide",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "japanese-cocktails",
@@ -333,7 +440,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["sake-pairing-guide", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "sake-pairing-guide",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "japanese-whiskey-guide",
@@ -345,7 +455,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 9,
             "featured": false,
-            "relatedPosts": ["sake-pairing-guide", "japanese-cocktails"]
+            "relatedPosts": [
+                "sake-pairing-guide",
+                "japanese-cocktails"
+            ]
         },
         {
             "slug": "yamazaki-whiskey-guide",
@@ -357,19 +470,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["japanese-whiskey-guide", "sake-pairing-guide"]
-        },
-        {
-            "slug": "hibachi-calories-guide",
-            "title": "Hibachi Calories & Nutrition: What to Know",
-            "excerpt": "Wondering about hibachi calories? Our nutrition guide breaks down hibachi meals so you can enjoy your favorite dishes mindfully.",
-            "category": "health",
-            "heroImage": "/images/photoshoot/hibachi-steak.jpg",
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-26",
-            "readTime": 7,
-            "featured": false,
-            "relatedPosts": ["hibachi-vs-teppanyaki-explained", "best-hibachi-dallas"]
+            "relatedPosts": [
+                "japanese-whiskey-guide",
+                "sake-pairing-guide"
+            ]
         },
         {
             "slug": "what-is-omakase",
@@ -381,7 +485,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["omakase-dining-guide", "best-sushi-frisco"]
+            "relatedPosts": [
+                "omakase-dining-guide",
+                "best-sushi-frisco"
+            ]
         },
         {
             "slug": "omakase-dining-guide",
@@ -393,7 +500,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["what-is-omakase", "best-sushi-dallas"]
+            "relatedPosts": [
+                "what-is-omakase",
+                "best-sushi-dallas"
+            ]
         },
         {
             "slug": "sashimi-vs-sushi",
@@ -405,7 +515,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 5,
             "featured": false,
-            "relatedPosts": ["types-of-sushi", "beginner-sushi-tips"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "beginner-sushi-tips"
+            ]
         },
         {
             "slug": "how-to-eat-sushi-guide",
@@ -417,7 +530,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["beginner-sushi-tips", "types-of-sushi"]
+            "relatedPosts": [
+                "beginner-sushi-tips",
+                "types-of-sushi"
+            ]
         },
         {
             "slug": "discover-teppanyaki",
@@ -429,7 +545,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-vs-teppanyaki-explained", "best-hibachi-dallas"]
+            "relatedPosts": [
+                "hibachi-vs-teppanyaki-explained",
+                "best-hibachi-dallas"
+            ]
         },
         {
             "slug": "date-night-restaurants-frisco",
@@ -441,7 +560,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["top-frisco-restaurants", "best-sushi-frisco"]
+            "relatedPosts": [
+                "top-frisco-restaurants",
+                "best-sushi-frisco"
+            ]
         },
         {
             "slug": "unique-kids-birthday-party-places",
@@ -453,7 +575,10 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-birthday-party-ideas", "free-birthday-deals"]
+            "relatedPosts": [
+                "hibachi-birthday-party-ideas",
+                "free-birthday-deals"
+            ]
         },
         {
             "slug": "asian-cuisine-dallas",
