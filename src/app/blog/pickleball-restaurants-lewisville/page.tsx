@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Pickleball + Japanese Dining: The Perfect Lewisville Combo",
     description:
       "Play at The Picklr, then walk next door to Jinbeh for hibachi or sushi. The ultimate activity + dining experience in Lewisville, TX.",
-    images: ["/images/photoshoot/hibachi-chef-flames.jpg"],
+    images: ["/images/photoshoot/hibachi-steak.jpg"],
   },
   alternates: {
     canonical: "https://jinbeh.com/blog/pickleball-restaurants-lewisville",
@@ -72,7 +72,7 @@ export default function PickleballRestaurantsLewisvillePage() {
     <ArticleLayout
       title="Pickleball + Japanese Dining: The Perfect Lewisville Combo"
       metaDescription="Play pickleball at The Picklr, then walk 2 doors down to Jinbeh for the best hibachi and sushi in Lewisville. The ultimate 'active + delicious' experience on Stemmons Freeway."
-      heroImage="/images/photoshoot/hibachi-chef-flames.jpg"
+      heroImage="/images/photoshoot/hibachi-steak.jpg"
       heroAlt="Jinbeh hibachi chef creating flames at the grill table - perfect dinner after pickleball at The Picklr Lewisville"
       category="Local Guide"
       categorySlug="local"

@@ -237,7 +237,7 @@ export default function BacheloretteRestaurantsDallas() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/3-C060324-6380.jpg"
+                                                src="/images/blog/4-C060324-6380.jpg"
                                                 alt="Hibachi chef performing at Jinbeh"
                                                 fill
                                                 className="object-cover"

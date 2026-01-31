@@ -31,7 +31,7 @@ export default function JapaneseWhiskeyGuide() {
         <main className="min-h-screen bg-warm-ivory">
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/blog/20-C060324-6771.jpg" alt="Japanese whiskey bottles showcasing premium spirits" fill className="object-cover" priority />
+                <Image src="/images/drinks/cocktail.jpg" alt="Japanese whiskey bottles showcasing premium spirits" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -148,7 +148,7 @@ export default function JapaneseWhiskeyGuide() {
                             <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
                                 <h3 className="font-heading font-bold mb-4">Related Reads</h3>
                                 <div className="space-y-3">
-                                    {[{ t: "Find Yamazaki Whiskey Nearby", s: "/blog/yamazaki-whiskey-guide", i: "/images/blog/20-C060324-6771.jpg" },
+                                    {[{ t: "Find Yamazaki Whiskey Nearby", s: "/blog/yamazaki-whiskey-guide", i: "/images/drinks/cocktail.jpg" },
                                     { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6751.jpg" },
                                     { t: "Sake Alcohol Strength Guide", s: "/blog/sake-alcohol-strength", i: "/images/blog/17-C060324-6708.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
