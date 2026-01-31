@@ -8,6 +8,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import WordRotate from "@/components/ui/WordRotate";
 import Marquee from "@/components/ui/Marquee";
 import { BorderBeam } from "@/components/ui/BorderBeam";
+import { RetroGrid } from "@/components/ui/RetroGrid";
+import { AnimatedShinyText } from "@/components/ui/AnimatedShinyText";
 import { useState } from "react";
 
 // Organization Schema for rich snippets
@@ -1349,6 +1351,9 @@ export default function HomePage() {
 
         {/* CTA Section */}
         <section className="py-24 cta-gradient text-white relative overflow-hidden">
+          {/* Premium RetroGrid Background */}
+          <RetroGrid className="opacity-20 [--grid-angle:75deg]" angle={75} />
+
           {/* Decorative elements */}
           <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
@@ -1357,7 +1362,9 @@ export default function HomePage() {
             <div className="container mx-auto px-6 text-center relative z-10">
               <span className="inline-block w-16 h-1 bg-gradient-to-r from-white/40 to-soft-gold rounded-full mb-8" />
               <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 italic">
-                Ready for an Experience?
+                <AnimatedShinyText className="text-white dark:text-white" shimmerWidth={150}>
+                  Ready for an Experience?
+                </AnimatedShinyText>
               </h2>
               <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
                 Join us at either location for a dining experience that will create

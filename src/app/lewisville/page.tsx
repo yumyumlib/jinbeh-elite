@@ -302,6 +302,18 @@ export default function LewisvillePage() {
                 <p className="mt-4 text-sm text-charcoal/60">
                   {location.neighborhood.parking}
                 </p>
+                {/* Nearby Activities Callout */}
+                <div className="mt-4 pt-4 border-t border-stone-200">
+                  <p className="text-sm text-charcoal/70 mb-2">
+                    <span className="font-semibold">🏓 Nearby:</span> The Picklr is 2 doors down!
+                  </p>
+                  <Link
+                    href="/blog/pickleball-restaurants-lewisville"
+                    className="text-sm text-accent-red hover:underline font-medium"
+                  >
+                    Play pickleball, then dine with us →
+                  </Link>
+                </div>
               </div>
 
               {/* Menus Card */}
