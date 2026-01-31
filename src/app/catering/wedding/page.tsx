@@ -240,7 +240,7 @@ export default function WeddingCateringPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/wedding-hero.jpg"
+            poster="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/wedding-celebration.mp4"
@@ -505,7 +505,7 @@ export default function WeddingCateringPage() {
               <div className="rounded-2xl overflow-hidden shadow-lg group">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/wedding-reception-sushi.jpg"
+                    src="/images/photoshoot/sushi-tower.jpg"
                     alt="Wedding reception with sushi platters"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -525,7 +525,7 @@ export default function WeddingCateringPage() {
               <div className="rounded-2xl overflow-hidden shadow-lg group">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-wedding-entertainment.jpg"
+                    src="/images/about/chef-flames.jpg"
                     alt="Hibachi entertainment at wedding celebration"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -545,7 +545,7 @@ export default function WeddingCateringPage() {
               <div className="rounded-2xl overflow-hidden shadow-lg group">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/bridal-shower-catering.jpg"
+                    src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
                     alt="Bridal shower with Japanese appetizers"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

@@ -95,7 +95,7 @@ const localBusinessSchema = {
   name: "Jinbeh Japanese Restaurant - Private Dining",
   description: "Exclusive private dining and event spaces for celebrations and corporate gatherings",
   url: "https://jinbeh.com/private-dining",
-  image: "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg",
+  image: "/images/food/hibachi-grill.jpg",
   areaServed: ["Frisco, TX", "Lewisville, TX", "Dallas, TX"],
   priceRange: "$$",
 };
@@ -188,7 +188,7 @@ const locations = [
       "Full bar service",
       "Ample parking",
     ],
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/frisco-dining.jpg",
+    image: "/images/interior/JinbehFrisco_SushiBar.jpg",
   },
   {
     name: "Lewisville",
@@ -202,7 +202,7 @@ const locations = [
       "Full service bar",
       "Easy parking",
     ],
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/lewisville-dining.jpg",
+    image: "/images/lewisville/IMG_1712.jpg",
   },
 ];
 
@@ -289,7 +289,7 @@ export default function PrivateDiningPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg"
+            poster="/images/food/hibachi-grill.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -520,7 +520,7 @@ export default function PrivateDiningPage() {
               <div className="relative">
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+                    src="/images/about/chef-flames.jpg"
                     alt="Hibachi chef performing at private event"
                     fill
                     className="object-cover"

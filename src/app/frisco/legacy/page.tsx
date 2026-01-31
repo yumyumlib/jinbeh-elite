@@ -34,7 +34,7 @@ const localBusinessSchema = {
   "@type": "Restaurant",
   "@id": "https://jinbeh.com/frisco#restaurant",
   name: "Jinbeh Japanese Restaurant - Frisco (Near Legacy West)",
-  image: "https://jinbeh.com/wp-content/uploads/2023/01/frisco-exterior.jpg",
+  image: "/images/frisco/JinbehFriscoStorefrontSign.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "2693 Preston Rd, Suite 1040",
@@ -145,7 +145,7 @@ export default function LegacyPage() {
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://jinbeh.com/wp-content/uploads/2023/01/frisco-interior.jpg')" }}
+            style={{ backgroundImage: "url('/images/interior/JinbehFrisco_SushiBar.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
@@ -234,7 +234,7 @@ export default function LegacyPage() {
                 <div className="relative">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
-                      src="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+                      src="/images/about/chef-flames.jpg"
                       alt="Hibachi chef at Jinbeh Frisco near Legacy West"
                       fill
                       className="object-cover"

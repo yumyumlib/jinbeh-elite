@@ -198,7 +198,7 @@ export default function ReservationsPage() {
               <div className="bg-gradient-to-br from-warm-ivory to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative h-64 overflow-hidden bg-charcoal">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2022/11/frisco-bg.jpg"
+                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
                     alt="Jinbeh Frisco location"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -298,7 +298,7 @@ export default function ReservationsPage() {
               <div className="bg-gradient-to-br from-warm-ivory to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative h-64 overflow-hidden bg-charcoal">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg"
+                    src="/images/photoshoot/sashimi-platter.jpg"
                     alt="Jinbeh Lewisville location"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"

@@ -17,7 +17,7 @@ const organizationSchema = {
   "name": "Jinbeh Japanese Restaurant",
   "alternateName": "Jinbeh Hibachi and Sushi Bar",
   "url": "https://jinbeh.com",
-  "logo": "https://jinbeh.com/wp-content/uploads/2022/03/jinbehlogo-black.svg",
+  "logo": "/images/logos/JinbehLogo.png",
   "foundingDate": "1988",
   "description": "Family-owned Japanese restaurant serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988.",
   "sameAs": [

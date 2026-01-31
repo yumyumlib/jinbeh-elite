@@ -126,7 +126,7 @@ export default function BirthdayPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+            poster="/images/about/chef-flames.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -197,7 +197,7 @@ export default function BirthdayPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg"
+                    src="/images/food/hibachi-grill.jpg"
                     alt="Hibachi chef preparing food"
                     fill
                     className="object-cover"

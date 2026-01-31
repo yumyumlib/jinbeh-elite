@@ -139,7 +139,7 @@ export default function LunchSpecialsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-accent-red via-deep-indigo to-charcoal" />
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg"
+              src="/images/food/hibachi-grill.jpg"
               alt="Hibachi grill"
               fill
               className="object-cover"

@@ -81,7 +81,7 @@ const corporatePackages = [
   {
     title: "Office Lunches",
     description: "Impress your team with fresh, authentic Japanese cuisine delivered to your office.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg",
+    image: "/images/photoshoot/sashimi-platter.jpg",
     price: "Starting at $18/person",
     includes: [
       "Sushi & roll assortment",
@@ -95,7 +95,7 @@ const corporatePackages = [
   {
     title: "Client Meetings",
     description: "Make a lasting impression with premium catering that shows you value your clients.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/appetizers.jpg",
+    image: "/images/photoshoot/appetizers-spread.jpg",
     price: "Starting at $22/person",
     includes: [
       "Premium sushi platters",
@@ -109,7 +109,7 @@ const corporatePackages = [
   {
     title: "Corporate Events",
     description: "Full-service catering for conferences, retreats, and special celebrations.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg",
+    image: "/images/food/hibachi-grill.jpg",
     price: "Starting at $25/person",
     includes: [
       "Full menu customization",
@@ -123,7 +123,7 @@ const corporatePackages = [
   {
     title: "Team Celebrations",
     description: "Celebrate promotions, launches, and achievements with your entire team.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg",
+    image: "/images/about/chef-flames.jpg",
     price: "Starting at $20/person",
     includes: [
       "Hibachi-style service options",
@@ -184,7 +184,7 @@ export default function CorporateCateringPage() {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('https://jinbeh.com/wp-content/uploads/2023/01/sushi-background.jpg')" }}
+            style={{ backgroundImage: "url('/images/photoshoot/sushi-tower.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">

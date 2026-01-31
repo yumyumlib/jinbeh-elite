@@ -134,7 +134,7 @@ export default function HolidayPartiesPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+            poster="/images/about/chef-flames.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -205,7 +205,7 @@ export default function HolidayPartiesPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg"
+                    src="/images/photoshoot/sashimi-platter.jpg"
                     alt="Festive holiday sushi platter"
                     fill
                     className="object-cover"

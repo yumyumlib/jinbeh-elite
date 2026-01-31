@@ -230,7 +230,7 @@ export default function GraduationPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+            poster="/images/about/chef-flames.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -421,7 +421,7 @@ export default function GraduationPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg"
+                    src="/images/food/hibachi-grill.jpg"
                     alt="Hibachi chef performing at graduation celebration"
                     fill
                     className="object-cover"
@@ -622,7 +622,7 @@ export default function GraduationPage() {
               <div className="relative">
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/family-dining.jpg"
+                    src="/images/food/jinbeh_group.jpg"
                     alt="Graduation party celebration at hibachi table"
                     fill
                     className="object-cover"
