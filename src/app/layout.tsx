@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "7f17acce8ef41abf",
   },
   alternates: {
     canonical: "https://jinbeh.com",
