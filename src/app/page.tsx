@@ -723,7 +723,7 @@ export default function HomePage() {
                         "@type": "VideoObject",
                         "name": "Jinbeh Hibachi Cooking Experience",
                         "description": "Watch our master teppanyaki chefs prepare delicious hibachi dishes tableside with impressive knife skills and the famous onion volcano.",
-                        "thumbnailUrl": "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+                        "thumbnailUrl": "https://jinbeh.com/images/food/onion-volcano.jpg",
                         "uploadDate": "2023-01-15",
                         "duration": "PT2M3S",
                         "contentUrl": "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -737,7 +737,7 @@ export default function HomePage() {
                     playsInline
                     preload="metadata"
                     className="w-full h-full object-cover"
-                    poster="/images/photoshoot/hibachi-steak.jpg"
+                    poster="/images/food/onion-volcano.jpg"
                   >
                     <source
                       src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
