@@ -162,7 +162,7 @@ export default function LargeGroupDining() {
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">🍽️</span>
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Diverse Menu Options</h3>
-                                            <p className="text-charcoal/70 text-sm">With extensive menus, everyone in your party finds dishes they love. Vegetarians, vegans, and those with allergies have plenty of choices, ensuring all guests enjoy their meal.</p>
+                                            <p className="text-charcoal/70 text-sm">With extensive menus, everyone in your party finds dishes they love. Vegetarians, vegans, and those with allergies have plenty of choices. Check out our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to see the options available.</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">👨‍🍳</span>
@@ -229,7 +229,7 @@ export default function LargeGroupDining() {
                                     </p>
 
                                     <p>
-                                        <strong>Family Reunions & Birthday Parties:</strong> Create lasting memories with family gatherings. Kids and adults alike enjoy the entertainment, and our diverse menu satisfies all ages.
+                                        <strong>Family Reunions & Birthday Parties:</strong> Create lasting memories with family gatherings. Kids and adults alike enjoy the entertainment, and our diverse menu satisfies all ages. Learn more about planning a <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party</Link>.
                                     </p>
 
                                     <p>
@@ -285,7 +285,7 @@ export default function LargeGroupDining() {
                                                 href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
-                                                Book Your Group Dinner →
+                                                Make a reservation →
                                             </Link>
                                         </div>
                                     </div>
@@ -361,12 +361,12 @@ export default function LargeGroupDining() {
                                     </p>
 
                                     <ul className="space-y-3 mb-8">
-                                        <li><strong><Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link>:</strong> Located near Stonebriar Centre, perfect for North Texas groups and corporate events.</li>
-                                        <li><strong><Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link>:</strong> Off I-35E near Vista Ridge Mall, conveniently accessible for family reunions and celebrations.</li>
+                                        <li><strong><Link href="/locations/frisco" className="text-accent-red hover:underline">Visit us in Frisco</Link>:</strong> Located near Stonebriar Centre, perfect for North Texas groups and corporate events.</li>
+                                        <li><strong><Link href="/locations/lewisville" className="text-accent-red hover:underline">Visit us in Lewisville</Link>:</strong> Off I-35E near Vista Ridge Mall, conveniently accessible for family reunions and celebrations.</li>
                                     </ul>
 
                                     <p>
-                                        Whether you're planning a corporate gathering, family reunion, or celebration, Jinbeh is equipped to make your large group dining experience seamless and memorable. Learn more about our <Link href="/reservations" className="text-accent-red hover:underline">group reservation process</Link>.
+                                        Whether you're planning a corporate gathering, family reunion, or celebration, Jinbeh is equipped to make your large group dining experience seamless and memorable. We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for private events.
                                     </p>
                                 </div>
 
@@ -404,13 +404,13 @@ export default function LargeGroupDining() {
                                             href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
-                                            Book Large Group Dinner
+                                            Book a Table
                                         </Link>
                                         <Link
-                                            href="/contact"
+                                            href="/catering"
                                             className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
                                         >
-                                            Contact Event Coordinator
+                                            Explore Private Events
                                         </Link>
                                     </div>
                                 </div>

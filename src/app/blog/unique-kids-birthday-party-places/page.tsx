@@ -47,7 +47,7 @@ export default function KidsBirthdayPlaces() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Tired of the same old birthday party spots?</strong> Ditch the pizza chains and bounce houses. A hibachi party at <Link href="/frisco" className="text-deep-indigo hover:text-accent-red font-semibold">Jinbeh</Link> gives kids something they'll actually remember—fire, flying food, and a show that makes them the star.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Tired of the same old birthday party spots?</strong> Ditch the pizza chains and bounce houses. A hibachi party at <Link href="/frisco" className="text-deep-indigo hover:text-accent-red font-semibold">Jinbeh</Link> gives kids something they'll actually remember—fire, flying food, and a show that makes them the star. Or explore more <Link href="/blog/unique-kids-birthday-party-places" className="text-deep-indigo hover:text-accent-red font-semibold">birthday party ideas</Link> tailored for children.</p>
 
                             <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Kids go absolutely crazy for hibachi. Watching their faces light up when the chef does the onion volcano—that's what we live for at Jinbeh."</p>
@@ -81,15 +81,15 @@ export default function KidsBirthdayPlaces() {
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Ask about group seating to keep the party together</li>
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Mention the birthday when booking—we may sing!</li>
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Consider lunch for better availability and pricing</li>
-                                <li className="flex gap-2"><span className="text-accent-red">→</span>Visit our <Link href="/celebrations/birthday" className="text-deep-indigo hover:text-accent-red font-semibold">birthday celebrations guide</Link> for more tips</li>
+                                <li className="flex gap-2"><span className="text-accent-red">→</span>Get ideas from our <Link href="/blog/beginner-sushi-tips" className="text-deep-indigo hover:text-accent-red font-semibold">sushi guide for beginners</Link> to help kids enjoy the menu</li>
                             </ul>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🎂 Book Your Party at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Make their next birthday unforgettable!</p>
+                                <p className="text-white/80 mb-6">Make their next birthday unforgettable! We serve both our <Link href="/locations/frisco" className="text-white hover:underline">Frisco location</Link> and <Link href="/locations/lewisville" className="text-white hover:underline">Lewisville location</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
+                                    <Link href="/catering" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Catering Options</Link>
                                 </div>
                             </div>
                         </article>

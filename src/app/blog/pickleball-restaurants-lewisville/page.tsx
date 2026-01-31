@@ -151,7 +151,7 @@ export default function PickleballRestaurantsLewisvillePage() {
 
       <h3>If You're Starving (High-Protein Recovery)</h3>
       <ul className="list-disc list-inside space-y-2 text-charcoal/80 mb-6">
-        <li><strong>Filet Mignon Hibachi:</strong> Premium cut, cooked to perfection with vegetables and rice</li>
+        <li><strong>Filet Mignon Hibachi:</strong> Premium cut, cooked to perfection with vegetables and rice. See our <Link href="/blog/best-steak-near-me" className="text-accent-red hover:underline font-semibold">steak guide</Link> for more options.</li>
         <li><strong>Chicken & Shrimp Combo:</strong> Best of both worlds, plenty of protein</li>
         <li><strong>Salmon Teriyaki:</strong> Omega-3 packed recovery meal</li>
       </ul>
@@ -178,9 +178,9 @@ export default function PickleballRestaurantsLewisvillePage() {
 
       <ul className="list-disc list-inside space-y-2 text-charcoal/80 mb-6">
         <li><strong>Hibachi Tables:</strong> Seat 8-10 people around one grill for a shared experience</li>
-        <li><strong>Group Reservations:</strong> Call ahead and we'll have everything ready</li>
-        <li><strong>Combination Dinners:</strong> Mix hibachi and sushi for variety</li>
-        <li><strong>Celebratory Sake:</strong> Toast to victories with our premium sake selection</li>
+        <li><strong>Group Reservations:</strong> <Link href="/reservations" className="text-accent-red hover:underline font-semibold">Call ahead</Link> and we'll have everything ready</li>
+        <li><strong>Combination Dinners:</strong> Mix hibachi and sushi for variety. Check our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> guide for options.</li>
+        <li><strong>Celebratory Sake:</strong> Toast to victories with our premium <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-semibold">sake</Link> selection</li>
       </ul>
 
       <p>
@@ -229,14 +229,14 @@ export default function PickleballRestaurantsLewisvillePage() {
       <div className="my-8 p-6 bg-gradient-to-r from-accent-red/10 to-soft-gold/10 rounded-2xl border border-accent-red/20">
         <h3 className="text-xl font-heading font-bold text-charcoal mb-3">🍣 Reserve Your Post-Pickleball Table</h3>
         <p className="text-charcoal/80 mb-4">
-          Make it easy—book your Jinbeh table when you book your court time!
+          Make it easy—<Link href="/reservations" className="text-accent-red hover:underline font-semibold">book your Jinbeh table</Link> when you book your court time!
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
-            href="/lewisville#reserve"
+            href="/locations/lewisville"
             className="inline-flex items-center gap-2 bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors"
           >
-            Reserve at Jinbeh Lewisville
+            Visit Jinbeh Lewisville
           </Link>
           <a
             href="tel:2144882224"

@@ -100,7 +100,7 @@ export default function TypesOfSushi() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Sushi confused?</strong> You're not alone. Between nigiri, sashimi, maki,
                                         and specialty rolls, the sushi menu can feel like reading a foreign language.
-                                        Let's break it down so you can order like a pro—and discover new favorites along the way.
+                                        Let's break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
@@ -291,7 +291,7 @@ export default function TypesOfSushi() {
 
                                 <div className="prose prose-lg max-w-none">
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🌟 Jinbeh's Most Popular Rolls
+                                        🌟 Jinbeh's Most Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Varieties</Link>
                                     </h2>
 
                                     <div className="bg-gradient-to-r from-charcoal to-deep-indigo rounded-2xl p-8 text-white my-8">
@@ -357,7 +357,7 @@ export default function TypesOfSushi() {
                                                 <p>
                                                     We recommend starting with <strong>cooked rolls</strong> like the California Roll,
                                                     Shrimp Tempura Roll, or Philadelphia Roll. These are milder in flavor and help
-                                                    newcomers ease into sushi before trying raw fish.
+                                                    newcomers ease into sushi before trying raw fish. Learn more in our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">beginner sushi tips</Link>.
                                                 </p>
                                             </div>
                                         </details>
@@ -396,6 +396,7 @@ export default function TypesOfSushi() {
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Explore?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Discover your new favorite sushi at Jinbeh. Fresh fish, expert rolls, unforgettable flavors.
+                                        New to sushi? Check out our <Link href="/blog/beginner-sushi-tips" className="text-white hover:underline font-semibold">sushi for beginners</Link> guide.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
@@ -412,12 +413,12 @@ export default function TypesOfSushi() {
 
                                 {/* Location Links */}
                                 <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/frisco" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
-                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 Jinbeh Frisco</h3>
-                                        <p className="text-charcoal/70 text-sm">Visit our Frisco location for authentic sushi and Japanese cuisine</p>
+                                    <Link href="/locations/frisco" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link></h3>
+                                        <p className="text-charcoal/70 text-sm">Visit us in Frisco for authentic sushi and Japanese cuisine</p>
                                     </Link>
-                                    <Link href="/lewisville" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
-                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 Jinbeh Lewisville</h3>
+                                    <Link href="/locations/lewisville" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link></h3>
                                         <p className="text-charcoal/70 text-sm">Experience fine dining at our Lewisville Japanese restaurant</p>
                                     </Link>
                                 </div>

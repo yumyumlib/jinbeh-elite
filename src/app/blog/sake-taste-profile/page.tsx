@@ -233,7 +233,7 @@ export default function SakeTasteProfile() {
                                                 <strong>Common Notes:</strong> Herbs, earth, rice, sometimes with subtle sweet undertones
                                             </p>
                                             <p className="text-charcoal/70">
-                                                <strong>Best For:</strong> Rich foods, hearty dishes, and those who prefer robust flavors
+                                                <strong>Best For:</strong> Rich foods, hearty <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">hibachi dishes</Link>, and those who prefer robust flavors
                                             </p>
                                         </div>
 
@@ -246,7 +246,7 @@ export default function SakeTasteProfile() {
                                                 <strong>Common Notes:</strong> Melon, apple, pear, flowers, citrus, sometimes tropical fruits
                                             </p>
                                             <p className="text-charcoal/70">
-                                                <strong>Best For:</strong> Delicate white fish, sashimi, and refined palates
+                                                <strong>Best For:</strong> Delicate white fish, <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red underline transition-colors">sashimi</Link>, and refined palates
                                             </p>
                                         </div>
 
@@ -317,7 +317,7 @@ export default function SakeTasteProfile() {
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🍚 Pair with Food</h4>
                                             <p className="text-charcoal/70 text-sm">
-                                                Sake truly shines when paired with complementary foods. Try different sake types with various sushi
+                                                Sake truly shines when paired with complementary foods. Try different sake types with various <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red underline transition-colors">sushi</Link>
                                                 and Japanese dishes to discover your favorite combinations.
                                             </p>
                                         </div>
@@ -408,14 +408,14 @@ export default function SakeTasteProfile() {
                                 <div className="mt-16 p-8 bg-gradient-to-br from-purple-600 to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Taste Exceptional Sake at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Visit Jinbeh to experience a curated selection of premium sakes paired with our exceptional sushi and Japanese cuisine.
+                                        Visit Jinbeh to experience a curated selection of premium sakes paired with our exceptional <Link href="/blog/types-of-sushi" className="text-white hover:text-soft-gold underline transition-colors">sushi</Link> and Japanese cuisine.
                                         Let our sommeliers guide you through the world of sake flavors.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                        <Link href="/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             View Our Menu & Sake List
                                         </Link>
-                                        <Link href="/frisco#reserve" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             Make a Reservation
                                         </Link>
                                     </div>

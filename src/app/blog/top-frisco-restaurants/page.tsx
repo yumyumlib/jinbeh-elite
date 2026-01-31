@@ -154,7 +154,7 @@ export default function TopFriscoRestaurants() {
                                     </h3>
 
                                     <p>
-                                        For lovers of Japanese cuisine, Jinbeh is a staple in Frisco. Known for its fresh sushi and entertaining hibachi experience, Jinbeh is a top choice for anyone seeking exceptional food. The chefs here are not only skilled in their culinary craft but also provide a show with their teppanyaki skills, making dining here both a visual and gastronomic delight.
+                                        For lovers of Japanese cuisine, Jinbeh is a staple in Frisco. Known for its fresh sushi and entertaining <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi experience</Link>, Jinbeh is a top choice for anyone seeking exceptional food. The chefs here are not only skilled in their culinary craft but also provide a show with their <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link> skills, making dining here both a visual and gastronomic delight.
                                     </p>
 
                                     <p>
@@ -280,7 +280,7 @@ export default function TopFriscoRestaurants() {
                                     </h3>
 
                                     <p>
-                                        <strong>Japanese:</strong> Jinbeh remains the top choice for sushi and hibachi, offering both casual and fine dining experiences with authentic preparation methods.
+                                        <strong>Japanese:</strong> Jinbeh remains the top choice for <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link> and hibachi, offering both casual and fine dining experiences with authentic preparation methods. Explore our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to see all options.
                                     </p>
 
                                     <p>
@@ -300,7 +300,7 @@ export default function TopFriscoRestaurants() {
                                     </h2>
 
                                     <p>
-                                        Ready to experience Frisco's dining excellence? Visit <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh's Frisco location</Link> for authentic Japanese cuisine and unforgettable hibachi entertainment. For <Link href="/reservations" className="text-accent-red hover:underline">reservations</Link>, visit our location page or explore our <Link href="/private-dining" className="text-accent-red hover:underline">private dining options</Link> for special celebrations.
+                                        Ready to experience Frisco's dining excellence? Visit <Link href="/best-sushi-frisco" className="text-accent-red hover:underline">Jinbeh's Frisco location</Link> for authentic Japanese cuisine and unforgettable hibachi entertainment. For <Link href="/reservations" className="text-accent-red hover:underline">reservations</Link>, visit our location page or explore our <Link href="/catering" className="text-accent-red hover:underline">private events</Link> options for special celebrations.
                                     </p>
                                 </div>
 

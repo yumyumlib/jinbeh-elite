@@ -111,7 +111,7 @@ export default function SushiLunchSpecials() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Looking for great sushi lunch deals?</strong> Sushi lunch specials are one of the best ways to enjoy
                                         high-quality cuisine at affordable prices. Whether you're a sushi aficionado or discovering your favorite roll
-                                        for the first time, lunch specials offer variety, value, and the perfect midday break.
+                                        for the first time, lunch specials offer variety, value, and the perfect midday break. Don't forget to check out our <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline font-semibold">happy hour</Link> specials to maximize your savings even further!
                                     </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-warm-ivory/20 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
@@ -170,7 +170,8 @@ export default function SushiLunchSpecials() {
                                     <p>
                                         Combo platters offer a mix of sushi rolls and nigiri, allowing you to experience multiple flavors
                                         and textures in one meal. Many combos feature the restaurant's signature rolls alongside classic
-                                        favorites, giving you a taste of their culinary style.
+                                        favorites, giving you a taste of their culinary style. If you want to learn more about the wide variety available,
+                                        check out our guide to <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> to discover which rolls might become your new favorites.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -223,10 +224,10 @@ export default function SushiLunchSpecials() {
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/frisco#reserve"
+                                                href="/menu"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
-                                                View Today's Specials →
+                                                View Full Menu →
                                             </Link>
                                         </div>
                                     </div>
@@ -263,7 +264,7 @@ export default function SushiLunchSpecials() {
 
                                     <p>
                                         Don't hesitate to call and ask about today's specials. This is especially helpful during peak lunch
-                                        hours when certain items might sell out. You can also ask about customizations or substitutions.
+                                        hours when certain items might sell out. You can also ask about customizations or substitutions. Better yet, <Link href="/reservations" className="text-accent-red hover:underline font-semibold">make a reservation</Link> to ensure your spot during lunch rush.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -362,16 +363,16 @@ export default function SushiLunchSpecials() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/locations/frisco"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
-                                            Reserve at Frisco
+                                            Visit Frisco Location
                                         </Link>
                                         <Link
-                                            href="/lewisville#reserve"
+                                            href="/locations/lewisville"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
-                                            Reserve at Lewisville
+                                            Visit Lewisville Location
                                         </Link>
                                     </div>
                                 </div>

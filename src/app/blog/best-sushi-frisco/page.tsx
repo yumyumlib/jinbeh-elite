@@ -131,10 +131,10 @@ export default function BestSushiFrisco() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Looking for the best sushi in Frisco?</strong> You're in the right place.
+                                        <strong>Looking for the <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link>?</strong> You're in the right place.
                                         Frisco, Texas has quietly become one of DFW's hottest sushi destinations—and
                                         whether you're craving classic nigiri, creative specialty rolls, or a full
-                                        omakase experience, this guide has you covered.
+                                        omakase experience, this guide has you covered. Explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> guide as well.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
@@ -152,7 +152,7 @@ export default function BestSushiFrisco() {
 
                                     <p>
                                         Frisco isn't just a suburb—it's a culinary hotspot. With a mix of long-established
-                                        family restaurants and trendy newcomers, the sushi scene here rivals Dallas proper.
+                                        family restaurants and trendy newcomers, the sushi scene here rivals Dallas proper. If you're interested in learning more about cuisine styles, check out our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> guide.
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
@@ -283,12 +283,12 @@ export default function BestSushiFrisco() {
                                     </h2>
 
                                     <p>
-                                        If you're shopping at Stonebriar Centre, Jinbeh is just minutes away on Preston Road.
-                                        It's the perfect spot for a sushi lunch break or a celebratory dinner after a day of retail therapy.
+                                        If you're shopping at Stonebriar Centre, our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> is just minutes away on Preston Road.
+                                        It's the perfect spot for a sushi lunch break or a celebratory dinner after a day of retail therapy. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> or check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> online.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
-                                        Popular Sushi Rolls to Try
+                                        Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Rolls</Link> to Try
                                     </h3>
 
                                     <ul className="space-y-2">
@@ -330,22 +330,22 @@ export default function BestSushiFrisco() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
-                                            Reserve Frisco
+                                            Make a Reservation
                                         </Link>
                                         <Link
-                                            href="/lewisville#reserve"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve Lewisville
-                                        </Link>
-                                        <Link
-                                            href="/frisco/menu"
+                                            href="/menu"
                                             className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
                                         >
                                             View Menu
+                                        </Link>
+                                        <Link
+                                            href="/locations/frisco"
+                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
+                                        >
+                                            Frisco Location
                                         </Link>
                                     </div>
                                 </div>

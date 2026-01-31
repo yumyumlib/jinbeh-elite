@@ -185,8 +185,9 @@ export default function AdultBirthdayPartyIdeas() {
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Wine or Beer Tasting</h3>
                                     <p className="text-charcoal/80 mb-6">
                                         Host a wine or beer tasting event where guests can sample a variety of beverages. You can hire
-                                        a sommelier or expert to guide the tasting and provide interesting insights. Pair tastings with
-                                        local cheeses and artisan snacks for a sophisticated celebration.
+                                        a sommelier or expert to guide the tasting and provide interesting insights. Consider pairing with our{" "}
+                                        <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link>{" "}
+                                        options at Jinbeh for a unique Japanese twist on the classic tasting experience.
                                     </p>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -248,7 +249,9 @@ export default function AdultBirthdayPartyIdeas() {
                                         Host a hibachi show at your party for an entertaining and delicious experience. At Jinbeh,
                                         we specialize in bringing the hibachi experience to your celebration. Our skilled chefs perform
                                         impressive knife skills, entertain your guests with fiery tricks, and prepare a customized meal
-                                        right before their eyes. It's a unique combination of entertainment and fine dining.
+                                        right before their eyes. Learn more about the differences between{" "}
+                                        <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link>{" "}
+                                        before booking. It's a unique combination of entertainment and fine dining.
                                     </p>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Silent Disco</h3>
@@ -347,14 +350,11 @@ export default function AdultBirthdayPartyIdeas() {
                                         It's a celebration! Jinbeh offers interactive hibachi experiences, delicious Japanese cuisine, and a festive atmosphere. Your birthday will be truly unforgettable.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco#reserve" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve Frisco
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                            Make a Reservation
                                         </Link>
-                                        <Link href="/lewisville#reserve" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve Lewisville
-                                        </Link>
-                                        <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Our Menu
+                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                            View Our Full Menu
                                         </Link>
                                     </div>
                                 </div>

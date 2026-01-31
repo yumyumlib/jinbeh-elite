@@ -75,7 +75,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki, where chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.
+        Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki—learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.
       </p>
 
       <h2>What to Expect on a Hibachi Menu</h2>
@@ -121,7 +121,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        <strong>Chicken:</strong> For those who prefer poultry, hibachi chicken is a popular option. The chicken is marinated in teriyaki sauce, imparting a sweet and savory taste that is both comforting and satisfying. Cooked to perfection on the hibachi grill, the chicken remains moist and flavorful. <Link href="/lewisville" className="text-accent-red hover:underline">At Jinbeh, our chicken is sourced fresh and prepared with expert precision</Link>.
+        <strong>Chicken:</strong> For those who prefer poultry, hibachi chicken is a popular option. The chicken is marinated in teriyaki sauce, imparting a sweet and savory taste that is both comforting and satisfying. Cooked to perfection on the hibachi grill, the chicken remains moist and flavorful. <Link href="/locations/lewisville" className="text-accent-red hover:underline">At Jinbeh, our chicken is sourced fresh and prepared with expert precision</Link>.
       </p>
 
       <p>
@@ -188,7 +188,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        <strong>Lunch Specials:</strong> Many hibachi restaurants offer lunch specials, providing a more affordable way to enjoy the experience. These specials typically include a smaller portion of the main dishes, allowing you to savor the flavors at a reduced price. <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh's lunch specials</Link> are among the most affordable in the area.
+        <strong>Lunch Specials:</strong> Many hibachi restaurants offer lunch specials, providing a more affordable way to enjoy the experience. These specials typically include a smaller portion of the main dishes, allowing you to savor the flavors at a reduced price. <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh's lunch specials</Link> are among the most affordable in the area.
       </p>
 
       <p>
@@ -214,7 +214,7 @@ export default function HibachiMenuGuidePage() {
       <h2>Beyond Hibachi: Other Menu Options</h2>
 
       <p>
-        While hibachi is a highlight, Japanese steakhouses often offer other dining options. These establishments celebrate the rich culinary traditions of Japan, providing a diverse range of dishes that go beyond the hibachi grill. Sushi, sashimi, and traditional Japanese dishes like ramen or udon are commonly available, providing a wider range of flavors and experiences.
+        While hibachi is a highlight, Japanese steakhouses often offer other dining options. These establishments celebrate the rich culinary traditions of Japan, providing a diverse range of dishes that go beyond the hibachi grill. <Link href="/blog/sushi-identification-chart" className="text-accent-red hover:underline">Sushi and sashimi</Link>, and traditional Japanese dishes like ramen or udon are commonly available, providing a wider range of flavors and experiences.
       </p>
 
       <p>
@@ -224,7 +224,7 @@ export default function HibachiMenuGuidePage() {
       <h2>Discovering Jinbeh's Menu</h2>
 
       <p>
-        One popular destination for hibachi dining is <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Japanese Restaurant</Link>, a well-known establishment that offers an extensive menu featuring classic hibachi dishes. Whether you're craving a juicy steak or fresh seafood, Jinbeh's menu has something to satisfy every palate. Known for its high-quality ingredients and skilled chefs, Jinbeh is a favorite among hibachi enthusiasts looking for an exceptional dining experience.
+        One popular destination for hibachi dining is <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Japanese Restaurant</Link>, a well-known establishment that offers an extensive menu featuring classic hibachi dishes. Whether you're craving a juicy steak or fresh seafood, Jinbeh's <Link href="/menu" className="text-accent-red hover:underline">menu</Link> has something to satisfy every palate. Known for its high-quality ingredients and skilled chefs, Jinbeh is a favorite among hibachi enthusiasts looking for an exceptional dining experience.
       </p>
 
       <p>
@@ -238,7 +238,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        With this guide, you're well-equipped to navigate the world of hibachi and enjoy everything this unique dining experience has to offer. So gather your friends and family, and get ready to embark on a culinary adventure that will leave you craving more. Visit <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> today to experience the hibachi difference.
+        With this guide, you're well-equipped to navigate the world of hibachi and enjoy everything this unique dining experience has to offer. So gather your friends and family, and get ready to embark on a culinary adventure that will leave you craving more. Visit <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> today to <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> and experience the hibachi difference.
       </p>
 
       <RelatedArticles currentSlug="hibachi-menu-guide" />

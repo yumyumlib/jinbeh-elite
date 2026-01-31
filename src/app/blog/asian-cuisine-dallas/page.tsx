@@ -79,7 +79,7 @@ export default function AsianCuisineDallas() {
                             <p className="text-charcoal/80 mb-4">Located in the Arts District, Tei-An is a soba house specializing in handmade soba noodles. The restaurant's minimalist design complements its refined menu, including a variety of sushi and sashimi options. It's about the art of Japanese dining, where simplicity and elegance create a serene dining experience. The delicate flavors and expert craftsmanship make it a must-visit.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Jinbeh Hibachi & Sushi</h3>
-                            <p className="text-charcoal/80 mb-6">Jinbeh combines the art of hibachi cooking with fresh sushi offerings. The lively atmosphere and skilled chefs make dining here memorable. Guests watch as their meals are expertly prepared right in front of them, adding entertainment to the experience. The fusion of flavors combined with vibrant energy makes Jinbeh a standout spot for exploring Asian fusion.</p>
+                            <p className="text-charcoal/80 mb-6">Jinbeh combines the art of <Link href="/blog/hibacci-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> cooking with fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> offerings. The lively atmosphere and skilled chefs make dining here memorable. Guests watch as their meals are expertly prepared right in front of them, adding entertainment to the experience. The fusion of flavors combined with vibrant energy makes Jinbeh a standout spot for exploring Asian fusion.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Traditional Asian Flavors</h2>
                             <p className="text-charcoal/80 mb-6">While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. These establishments offer a taste of familiar, comforting flavors cherished for generations. Traditional Asian cuisine is revered for its emphasis on fresh ingredients, bold spices, and time-honored cooking techniques resulting in dishes rich in flavor and history.</p>
@@ -122,6 +122,10 @@ export default function AsianCuisineDallas() {
                                 ))}
                             </div>
 
+                            <div className="mt-6 p-6 bg-warm-ivory rounded-xl">
+                                <p className="text-charcoal/80">Whether you're new to Japanese dining or a seasoned enthusiast, explore our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> guide or check out the <Link href="/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link> for more recommendations.</p>
+                            </div>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 Asian Cuisine in DFW</h2>
                             <p className="text-charcoal/80 mb-6">The Dallas-Fort Worth area is rich with culinary treasures. Whether searching for the best sushi, noodles, or curry, DFW has it all. The region's diverse culinary landscape testifies to the vibrant cultural tapestry defining DFW, offering dining options catering to every taste and preference.</p>
 
@@ -137,10 +141,10 @@ export default function AsianCuisineDallas() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Asian Culinary Excellence at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Authentic Japanese cuisine blending traditional hibachi cooking with fresh sushi. Experience culinary artistry and entertainment in a vibrant, welcoming atmosphere.</p>
+                                <p className="text-white/80 mb-6">Authentic Japanese cuisine blending traditional hibachi cooking with fresh sushi. Experience culinary artistry and entertainment in a vibrant, welcoming atmosphere at our <Link href="/locations/frisco" className="underline hover:text-warm-ivory">Frisco location</Link> or <Link href="/locations/lewisville" className="underline hover:text-warm-ivory">Lewisville location</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
+                                    <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10">View Our Menu</Link>
                                 </div>
                             </div>
                         </article>

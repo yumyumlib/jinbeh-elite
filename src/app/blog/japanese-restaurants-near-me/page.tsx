@@ -109,21 +109,31 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
-                                    { emoji: "🍣", name: "Sushi Bars", desc: "Specialty venues focusing on sushi, sashimi, and omakase experiences with direct chef interaction." },
+                                    { emoji: "🍣", name: "Sushi Bars", desc: "Specialty venues focusing on sushi, sashimi, and omakase experiences with direct chef interaction. Learn about different ", link: { text: "types of sushi", href: "/blog/types-of-sushi" }, desc2: " and explore our guide for " },
                                     { emoji: "🍜", name: "Ramen Houses", desc: "Casual, cozy spots serving authentic regional ramen styles with rich broths and perfect noodles." },
-                                    { emoji: "🔥", name: "Teppanyaki Steakhouses", desc: "Entertainment dining with chef performances cooking on iron griddles right before you." },
+                                    { emoji: "🔥", name: "Teppanyaki Steakhouses", desc: "Entertainment dining with chef performances cooking on iron griddles right before you. Experience the ", link: { text: "teppanyaki experience", href: "/blog/hibachi-vs-teppanyaki-explained" }, desc2: " firsthand." },
                                     { emoji: "🏮", name: "Izakayas", desc: "Japanese pubs serving small plates, drinks, and casual authentic fare in a social setting." }
                                 ].map(x => (
                                     <div key={x.name} className="bg-warm-ivory rounded-xl p-5">
                                         <span className="text-3xl block mb-2">{x.emoji}</span>
                                         <h3 className="font-bold text-charcoal mb-2">{x.name}</h3>
-                                        <p className="text-sm text-charcoal/70">{x.desc}</p>
+                                        <p className="text-sm text-charcoal/70">
+                                            {x.desc}
+                                            {x.link && (
+                                                <>
+                                                    <Link href={x.link.href} className="text-accent-red hover:underline font-semibold">
+                                                        {x.link.text}
+                                                    </Link>
+                                                    {x.desc2}
+                                                </>
+                                            )}
+                                        </p>
                                     </div>
                                 ))}
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">📞 Making Reservations</h2>
-                            <p className="text-charcoal/80 mb-4">Once you've identified promising options, making reservations is a smart move, especially for steakhouses and popular sushi bars.</p>
+                            <p className="text-charcoal/80 mb-4">Once you've identified promising options, <Link href="/reservations" className="text-accent-red hover:underline font-semibold">making a reservation</Link> is a smart move, especially for steakhouses and popular sushi bars.</p>
 
                             <div className="bg-warm-ivory rounded-xl p-6 my-6 space-y-4">
                                 <div className="flex gap-4">
@@ -185,7 +195,7 @@ export default function JapaneseRestaurantsNearMe() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Discover Authentic Japanese Dining at Jinbeh</h2>
-                            <p className="text-charcoal/80 mb-6">In the Dallas-Fort Worth area? <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh</Link> offers authentic sushi, hibachi performances, and warm hospitality. Family-owned since 1988, we're your neighborhood Japanese restaurant with convenient locations.</p>
+                            <p className="text-charcoal/80 mb-6">In the Dallas-Fort Worth area? <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh</Link> offers authentic sushi, hibachi performances, and warm hospitality. Family-owned since 1988, we're the <Link href="/best-hibachi-dallas-tx" className="text-accent-red hover:underline">best hibachi in Dallas</Link> with convenient locations. Learn more about <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">how to order sushi</Link> to get the most from your visit.</p>
 
                             <div className="grid md:grid-cols-2 gap-6 my-8">
                                 <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">

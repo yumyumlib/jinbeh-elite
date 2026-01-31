@@ -108,8 +108,8 @@ export default function BestHappyHourFrisco() {
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Looking for the best happy hour in Frisco?</strong> Whether you need to
-                                        decompress after work, meet up with friends, or just enjoy some great deals on
-                                        food and drinks, Frisco has you covered. And if you're craving sushi and sake,
+                                        decompress after work, meet up with friends, or just enjoy some great <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> on
+                                        food and drinks, Frisco has you covered. And if you're craving <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi</Link> and <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake recommendations</Link>,
                                         we know exactly where you should go.
                                     </p>
 
@@ -212,9 +212,9 @@ export default function BestHappyHourFrisco() {
                                     </h2>
 
                                     <p>
-                                        Let's be honest—most happy hours are about cheap drinks. But at Jinbeh,
+                                        Let's be honest—most <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour deals</Link> are about cheap drinks. But at Jinbeh,
                                         we combine quality with value. You're not just getting discounts; you're
-                                        getting the same fresh sushi and premium sake we serve at dinner, just
+                                        getting the same fresh <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> and premium <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> options we serve at dinner, just
                                         at friendlier prices.
                                     </p>
 
@@ -230,9 +230,9 @@ export default function BestHappyHourFrisco() {
                                     </h2>
 
                                     <p>
-                                        Jinbeh Frisco is just minutes from Stonebriar Centre on Preston Road—perfect
+                                        <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Jinbeh Frisco location</Link> is just minutes from Stonebriar Centre on Preston Road—perfect
                                         for a post-shopping drink or meeting friends after work. Easy parking and
-                                        a welcoming bar area make it a no-stress stop.
+                                        a welcoming bar area make it a no-stress stop. Visit us to <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> for happy hour.
                                     </p>
                                 </div>
 

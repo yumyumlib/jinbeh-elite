@@ -85,7 +85,7 @@ export default function JapaneseRestaurantsLewisville() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Other Dining Options in Lewisville</h2>
-                            <p className="text-charcoal/80 mb-6">While Jinbeh is our top recommendation for Japanese dining, Lewisville has other options. However, for authentic hibachi performances, fresh sushi, and professional service combined, <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> stands out as the premier choice.</p>
+                            <p className="text-charcoal/80 mb-6">While Jinbeh is our top recommendation for Japanese dining, Lewisville has other options. However, for authentic <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi performances</Link>, fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link>, and professional service combined, <Link href="/locations/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> stands out as the premier choice.</p>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍱 Visit Jinbeh Lewisville</h3>
@@ -101,16 +101,16 @@ export default function JapaneseRestaurantsLewisville() {
                             <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
                                 <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Explore Both Jinbeh Locations</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
-                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Jinbeh Lewisville</h4>
+                                    <Link href="/locations/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Lewisville Location</h4>
                                         <p className="text-charcoal/70 text-sm mb-4">Off I-35E near Vista Ridge Mall. Convenient for local community and group dining.</p>
-                                        <span className="inline-block text-accent-red font-semibold">Lewisville Info →</span>
+                                        <span className="inline-block text-accent-red font-semibold">Visit us in Lewisville →</span>
                                     </Link>
 
-                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
-                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Jinbeh Frisco</h4>
+                                    <Link href="/locations/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Frisco Location</h4>
                                         <p className="text-charcoal/70 text-sm mb-4">Near Stonebriar Centre. Perfect for North Texas fine dining and celebrations.</p>
-                                        <span className="inline-block text-accent-red font-semibold">Frisco Info →</span>
+                                        <span className="inline-block text-accent-red font-semibold">Visit us in Frisco →</span>
                                     </Link>
                                 </div>
                             </div>

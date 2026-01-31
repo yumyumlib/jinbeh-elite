@@ -114,7 +114,7 @@ export default function JapaneseWhiskeyGuide() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 Global Impact</h2>
-                            <p className="text-charcoal/80 mb-6">The rise of Japanese whiskey has profoundly impacted the global whiskey market. As demand continues to grow, distillers are expanding production and exploring new markets, leading to increased competition and innovation that benefits whiskey lovers worldwide.</p>
+                            <p className="text-charcoal/80 mb-6">The rise of Japanese whiskey has profoundly impacted the global whiskey market. As demand continues to grow, distillers are expanding production and exploring new markets, leading to increased competition and innovation that benefits whiskey lovers worldwide. Discover more about premium Japanese beverages in our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link>.</p>
                             <p className="text-charcoal/80 mb-6">Japanese whiskey has reshaped consumer expectations, encouraging deeper appreciation for quality and craftsmanship. This shift has inspired distillers globally to focus on producing premium products, ultimately raising standards across the industry.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
@@ -122,7 +122,7 @@ export default function JapaneseWhiskeyGuide() {
                                 {[
                                     { q: "How does Japanese whiskey compare to Scottish whisky?", a: "Both follow similar production, but Japanese whiskey emphasizes subtlety, precision, and balance. Scotch often features bold flavors, while Japanese whiskey tends toward elegance and harmony. Fresh and flavorful!" },
                                     { q: "What makes Yamazaki famous?", a: "Yamazaki, established in 1923, is Japan's oldest malt whiskey distillery. Its flagship is renowned for delicate fruit and oak balance with notes of honey, peach, and pineapple. A celebration of craftsmanship!" },
-                                    { q: "Where can I try Japanese whiskey in Dallas?", a: "Welcome to the table at Jinbeh! We offer an impressive selection of Japanese whiskeys paired with authentic Japanese cuisine. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We treat every guest like family!" },
+                                    { q: "Where can I try Japanese whiskey in Dallas?", a: "Welcome to the table at Jinbeh! We offer an impressive selection of Japanese whiskeys paired with authentic Japanese cuisine. Visit our <a href=\"/locations/frisco\" className=\"text-deep-indigo underline\">Frisco</a> or <a href=\"/locations/lewisville\" className=\"text-deep-indigo underline\">Lewisville</a> location. We treat every guest like family!" },
                                     { q: "Are Japanese whiskeys expensive?", a: "Premium Japanese whiskeys command high prices due to limited production and exceptional quality. However, excellent entry-level options exist at more accessible price points. Dinner and a show at Jinbeh makes it special!" }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
@@ -136,10 +136,10 @@ export default function JapaneseWhiskeyGuide() {
                                 <h3 className="text-2xl font-heading font-bold mb-4">🥃 Explore Premium Japanese Whiskeys at Jinbeh</h3>
                                 <p className="mb-6 text-white/90">Discover our curated selection of Japanese whiskeys, expertly paired with our exceptional Japanese cuisine and hibachi experiences. Visit either our Frisco or Lewisville location to taste these remarkable spirits with the hospitality of a gracious host.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
-                                    <Link href="/lewisville/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Menu</Link>
-                                    <Link href="/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Visit Frisco</Link>
-                                    <Link href="#reserve" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Make Reservation</Link>
+                                    <Link href="/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
+                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
+                                    <Link href="/locations/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Frisco Location</Link>
+                                    <Link href="/reservations" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Make Reservation</Link>
                                 </div>
                             </div>
                         </article>

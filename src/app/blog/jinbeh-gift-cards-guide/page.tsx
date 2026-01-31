@@ -212,7 +212,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Lunch Specials</h3>
 
       <p>
-        One of the best-kept secrets for maximizing gift card value is hibachi lunch specials. Jinbeh's lunch menu offers exceptional value:
+        One of the best-kept secrets for maximizing gift card value is hibachi lunch specials. Jinbeh's lunch menu offers exceptional value. Check out our detailed guide to <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline font-semibold">sushi lunch specials</Link> for all the best timing and options.
       </p>
 
       <p>
@@ -234,7 +234,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Happy Hour Deals</h3>
 
       <p>
-        If you enjoy beverages with your meal, Jinbeh's happy hour specials offer great drink deals. Your gift card covers food, and happy hour prices apply to beverages.
+        If you enjoy beverages with your meal, Jinbeh's <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline font-semibold">happy hour</Link> specials offer great drink deals. Your gift card covers food, and happy hour prices apply to beverages, stretching your value even further.
       </p>
 
       <h3>Seasonal & Holiday Promotions</h3>
@@ -301,7 +301,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Explore the Full Menu</h3>
 
       <p>
-        Don't just order the same thing every time. Jinbeh's menu includes:
+        Don't just order the same thing every time. Browse our <Link href="/menu" className="text-accent-red hover:underline font-semibold">full menu</Link> to discover new favorites, or learn about the different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> available. Jinbeh's menu includes:
       </p>
 
       <ul>
@@ -329,7 +329,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Make Reservations</h3>
 
       <p>
-        Maximize your experience by making a reservation, especially for:
+        Maximize your experience by <Link href="/reservations" className="text-accent-red hover:underline font-semibold">making a reservation</Link>, especially for:
       </p>
 
       <ul>

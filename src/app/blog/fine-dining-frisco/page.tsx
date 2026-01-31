@@ -186,7 +186,7 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        Jinbeh's hibachi experience is far more than just a meal—it's a performance. Skilled chefs orchestrate a spectacular show, preparing your meal with precision and flair directly before your eyes. The sizzling sounds, tantalizing aromas, and expertly executed techniques create an atmosphere that's as entertaining as it is delicious.
+                                        Jinbeh's <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi experience</Link> is far more than just a meal—it's a performance. Skilled chefs orchestrate a spectacular show, preparing your meal with precision and flair directly before your eyes. The sizzling sounds, tantalizing aromas, and expertly executed techniques create an atmosphere that's as entertaining as it is delicious.
                                     </p>
 
                                     <p className="bg-soft-gold/20 border-l-4 border-soft-gold p-4 rounded-r-lg my-6">
@@ -206,7 +206,7 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        No fine dining experience is complete without the perfect libation. Jinbeh's mixologists craft sophisticated cocktails using fresh ingredients and premium spirits. The restaurant's curated sake selection complements its Japanese cuisine beautifully, with options ranging from traditional varieties to innovative creations featuring exotic fruits and contemporary flavor profiles.
+                                        No fine dining experience is complete without the perfect libation. Jinbeh's mixologists craft sophisticated cocktails using fresh ingredients and premium spirits. The restaurant's curated <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake recommendations</Link> complement its Japanese cuisine beautifully, with options ranging from traditional varieties to innovative creations featuring exotic fruits and contemporary flavor profiles.
                                     </p>
                                 </div>
 
@@ -294,11 +294,11 @@ export default function FineDiningFrisco() {
                                     </h2>
 
                                     <p>
-                                        Visit Jinbeh's <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> for an unforgettable fine dining experience. Located conveniently near Stonebriar Centre, our restaurant combines authentic Japanese tradition with contemporary elegance.
+                                        Visit Jinbeh's <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> for an unforgettable fine dining experience. Located conveniently near Stonebriar Centre, our restaurant combines authentic Japanese tradition with contemporary elegance. Check out our <Link href="/menu" className="text-accent-red hover:underline">view our menu</Link> to see what we're featuring.
                                     </p>
 
                                     <p className="mt-4">
-                                        For special occasions, explore our <Link href="/private-dining" className="text-accent-red hover:underline">private dining rooms</Link> perfect for intimate celebrations, corporate events, and milestone moments. Make your <Link href="/reservations" className="text-accent-red hover:underline">reservation</Link> today.
+                                        For special occasions, explore our <Link href="/catering" className="text-accent-red hover:underline">private events</Link> perfect for intimate celebrations, corporate events, and milestone moments. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> today.
                                     </p>
                                 </div>
 

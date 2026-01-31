@@ -162,7 +162,7 @@ export default function SashimiVsSushi() {
                                 🍜 What is Sushi?
                             </h2>
                             <p className="text-charcoal/80 mb-4">
-                                Sushi (寿司) is a complete dish that combines vinegar-seasoned rice with various toppings and fillings. The term encompasses many styles including nigiri, rolls, and hand-pressed varieties. The rice is the foundation—not just an accompaniment—to sushi.
+                                Sushi (寿司) is a complete dish that combines vinegar-seasoned rice with various toppings and fillings. The term encompasses many styles including nigiri, rolls, and hand-pressed varieties. Learn more about the different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> available. The rice is the foundation—not just an accompaniment—to sushi.
                             </p>
                             <div className="grid md:grid-cols-2 gap-4 my-6 bg-amber-50 rounded-xl p-6 border-2 border-amber-200">
                                 <div>
@@ -243,7 +243,7 @@ export default function SashimiVsSushi() {
                                         </li>
                                         <li className="flex gap-3">
                                             <span className="text-amber-600 text-xl">→</span>
-                                            <span className="text-charcoal/80"><strong>Cooked options</strong> available (tempura, etc.)</span>
+                                            <span className="text-charcoal/80"><strong>Cooked options</strong> available (tempura, etc.). Perfect for <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link></span>
                                         </li>
                                         <li className="flex gap-3">
                                             <span className="text-amber-600 text-xl">→</span>
@@ -262,7 +262,7 @@ export default function SashimiVsSushi() {
                                 🏮 How Jinbeh Serves Both
                             </h2>
                             <p className="text-charcoal/80 mb-6">
-                                At Jinbeh Japanese Restaurant in Frisco and Lewisville, we specialize in authentic Japanese dining including both premium sashimi and expertly crafted sushi. Our commitment to quality is reflected in every dish.
+                                At Jinbeh Japanese Restaurant in our <Link href="/locations/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>, we specialize in authentic Japanese dining including both premium sashimi and expertly crafted sushi. Our commitment to quality is reflected in every dish.
                             </p>
 
                             {/* Sashimi at Jinbeh */}
@@ -383,7 +383,7 @@ export default function SashimiVsSushi() {
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-3xl font-heading font-bold mb-4">Ready to Experience Both?</h3>
                                 <p className="text-lg mb-6 text-white/90">
-                                    Visit Jinbeh Japanese Restaurant and taste the difference between sashimi and sushi made with premium ingredients and authentic techniques.
+                                    Visit Jinbeh Japanese Restaurant and taste the difference between sashimi and sushi made with premium ingredients and authentic techniques. Explore our <Link href="/menu" className="text-white hover:text-warm-ivory underline">full menu</Link> or <Link href="/reservations" className="text-white hover:text-warm-ivory underline">make a reservation</Link>.
                                 </p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/frisco/menu" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">

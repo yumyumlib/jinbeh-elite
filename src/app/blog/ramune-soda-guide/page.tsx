@@ -172,7 +172,7 @@ export default function RamuneSodaGuide() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌏 Cultural Significance</h2>
-                            <p className="text-charcoal/80 mb-6">Ramune is more than just a beverage; it's a cultural icon in Japan. Often associated with summer festivals and childhood memories, this soda embodies nostalgia and fun. Its presence extends beyond Japan to Asian grocery stores and specialty shops worldwide, making it accessible to a global audience eager to experience Japanese culture.</p>
+                            <p className="text-charcoal/80 mb-6">Ramune is more than just a beverage; it's a cultural icon in Japan. Often associated with summer festivals and childhood memories, this soda embodies nostalgia and fun. Its presence extends beyond Japan to Asian grocery stores and specialty shops worldwide, making it accessible to a global audience eager to experience Japanese culture. Pair it with other authentic Japanese beverages like sake—explore our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing recommendations</Link>.</p>
                             <p className="text-charcoal/80 mb-6">The distinctive sound of the marble popping is synonymous with festive occasions, evoking memories of warm summer nights filled with laughter and joy. Ramune's cultural footprint serves as a symbol of Japanese ingenuity and tradition, connecting generations through shared experiences.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🛍️ Where to Buy Ramune Soda</h2>
@@ -199,7 +199,7 @@ export default function RamuneSodaGuide() {
                                 </div>
                             </div>
 
-                            <p className="text-charcoal/80 mb-8">In cities with significant Japanese populations like Dallas, you can find Ramune at local restaurants like <strong>Jinbeh</strong>, where you can enjoy it alongside authentic Japanese cuisine and hibachi experiences.</p>
+                            <p className="text-charcoal/80 mb-8">In cities with significant Japanese populations like Dallas, you can find Ramune at local restaurants like <strong>Jinbeh</strong>, where you can enjoy it alongside authentic Japanese cuisine and <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">hibachi experiences</Link>.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
                             <div className="space-y-3">
@@ -215,10 +215,10 @@ export default function RamuneSodaGuide() {
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍹 Enjoy Ramune at Jinbeh</h3>
                                 <p className="mb-6 text-white/90">Discover Ramune soda and other authentic Japanese beverages at Jinbeh. Pair them with our hibachi entertainment and traditional Japanese cuisine for a complete cultural experience. Visit us in Frisco or Lewisville and enjoy Japanese hospitality at its finest.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
-                                    <Link href="/lewisville/menu" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Lewisville Menu</Link>
-                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Visit Frisco</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Visit Lewisville</Link>
+                                    <Link href="/menu" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
+                                    <Link href="/blog/types-of-sushi" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Sushi Varieties</Link>
+                                    <Link href="/locations/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Frisco Location</Link>
+                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
                                 </div>
                             </div>
                         </article>

@@ -46,7 +46,7 @@ export default function YamazakiWhiskeyGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Finding Yamazaki whiskey feels like a treasure hunt.</strong> Known for rich, complex flavors and a smooth finish, this highly sought-after Japanese whiskey has captured hearts worldwide. Welcome to the table! Whether you're a connoisseur or newcomer, knowing where to buy Yamazaki makes all the difference. At Jinbeh, we treat every guest like family with fresh and flavorful selections.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Finding Yamazaki whiskey feels like a treasure hunt.</strong> Known for rich, complex flavors and a smooth finish, this highly sought-after Japanese whiskey has captured hearts worldwide. Welcome to the table! Whether you're a connoisseur or newcomer, knowing where to buy Yamazaki makes all the difference. Explore <Link href="/blog/japanese-whiskey-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">Japanese whiskey broadly</Link> or enjoy it at Jinbeh, where we treat every guest like family with fresh and flavorful selections.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 Understanding Yamazaki Whiskey</h2>
                             <p className="text-charcoal/80 mb-6">Before exploring where to buy Yamazaki, it's essential to understand what makes this spirit so special and sought after.</p>
@@ -158,7 +158,7 @@ export default function YamazakiWhiskeyGuide() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">⭐ Jinbeh in Dallas: A Special Destination</h2>
                             <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-                                <p className="text-charcoal/80 mb-4">For those in or visiting Dallas, Texas, <strong>Jinbeh is a notable establishment worth mentioning</strong>. Known for an impressive selection of Japanese whiskeys, Jinbeh is a restaurant where patrons can experience Yamazaki whiskey alongside authentic Japanese cuisine.</p>
+                                <p className="text-charcoal/80 mb-4">For those in or visiting Dallas, Texas, <strong>Jinbeh is a notable establishment worth mentioning</strong>. Known for an impressive selection of Japanese whiskeys, Jinbeh is a restaurant where patrons can experience Yamazaki whiskey alongside authentic Japanese cuisine. Try it with our <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red underline transition-colors">premium sushi selections</Link> or <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">hibachi dishes</Link>.</p>
                                 <div className="space-y-3 mb-6">
                                     <div className="flex gap-3">
                                         <span className="text-lg">🥃</span>
@@ -204,10 +204,10 @@ export default function YamazakiWhiskeyGuide() {
                                 <h3 className="text-2xl font-heading font-bold mb-4">🥃 Experience Premium Yamazaki at Jinbeh</h3>
                                 <p className="mb-6 text-white/90">Visit Jinbeh to discover premium Yamazaki whiskey paired with exceptional Japanese hibachi and authentic cuisine, guided by our knowledgeable staff. Whether you choose our Frisco or Lewisville location, we offer the gracious hospitality that makes Yamazaki experiences truly memorable.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                    <Link href="/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Visit Frisco</Link>
-                                    <Link href="#reserve" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Reserve Now</Link>
+                                    <Link href="/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
+                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
+                                    <Link href="/locations/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Frisco Location</Link>
+                                    <Link href="/reservations" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Reserve Now</Link>
                                 </div>
                             </div>
                         </article>

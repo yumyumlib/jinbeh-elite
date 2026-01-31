@@ -68,12 +68,12 @@ export default function BestSteakNearMe() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔥 Unique Steak Experiences</h2>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3">Jinbeh Japanese Steakhouse</h3>
-                            <p className="text-charcoal/80 mb-4">Jinbeh is not your typical steakhouse. It combines the rich flavors of Japan with the classic steakhouse experience, creating a unique fusion that tantalizes the taste buds. Enjoy a hibachi-style meal where chefs cook your steak to perfection while entertaining you with their culinary skills and showmanship.</p>
+                            <p className="text-charcoal/80 mb-4">Jinbeh is not your typical steakhouse. It combines the rich flavors of Japan with the classic steakhouse experience, creating a unique fusion that tantalizes the taste buds. Enjoy a hibachi-style meal where chefs cook your steak to perfection while entertaining you with their culinary skills and showmanship. Learn more about the differences between <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline font-semibold">hibachi vs teppanyaki</Link> cooking styles.</p>
 
                             <p className="text-charcoal/80 mb-4">The atmosphere at Jinbeh is lively and vibrant, with strong emphasis on community and shared experiences. The open seating arrangements allow for social interaction, and the chefs' performances add an element of excitement to the meal. The menu offers a wide variety of steak options, infused with traditional Japanese flavors and techniques.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">The Rustic Grill</h3>
-                            <p className="text-charcoal/80 mb-4">Known for its laid-back vibe and mouthwatering steaks, The Rustic Grill is a favorite among locals. This steakhouse specializes in offering a variety of cuts, from tenderloin to T-bone, all at reasonable prices without compromising on quality. The rustic charm of its outdoor dining area provides a relaxed setting.</p>
+                            <p className="text-charcoal/80 mb-4">Known for its laid-back vibe and mouthwatering steaks, The Rustic Grill is a favorite among locals. This steakhouse specializes in offering a variety of cuts, from tenderloin to T-bone, all at reasonable prices without compromising on quality. The rustic charm of its outdoor dining area provides a relaxed setting. If you're interested in comparing steak with hibachi cooking, check out <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline font-semibold">hibachi vs teppanyaki</Link> to understand the differences.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">The Urban Chophouse</h3>
                             <p className="text-charcoal/80 mb-6">For those seeking a modern twist on traditional steakhouse fare, The Urban Chophouse delivers innovative dishes highlighting natural meat flavors with creative presentations. The sleek, contemporary design and craft cocktails appeal to young professionals and food enthusiasts.</p>
@@ -90,6 +90,9 @@ export default function BestSteakNearMe() {
                             <p className="text-charcoal/80 mb-6">A staple in the community, The Cattleman's Club prides itself on serving the best steak near you. Their famous porterhouse is big enough to share but too delicious to want to, offering a perfect balance of marbling and flavor that steak enthusiasts will appreciate. The warm and inviting atmosphere makes it a beloved destination.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">✨ Why Choose Jinbeh for Steak</h2>
+                            <p className="text-charcoal/80 mb-6">
+                                Beyond just excellent steak, Jinbeh offers complementary dining experiences. Pair your meal with our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">fresh sushi options</Link> or enjoy a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-semibold">sake pairing</Link> to elevate your dinner.
+                            </p>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
                                     { e: "🔥", t: "Expert Cooking", d: "Hibachi chefs master the art of steak preparation" },
@@ -149,8 +152,8 @@ export default function BestSteakNearMe() {
                                 <h3 className="text-2xl font-heading font-bold mb-4">🥩 Premium Steak at Jinbeh</h3>
                                 <p className="text-white/80 mb-6">Experience hibachi-grilled steaks prepared by expert chefs, combined with traditional Japanese technique and entertainment. Perfect for celebrations and group dinners.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/locations/frisco" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Visit Frisco</Link>
+                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Visit Lewisville</Link>
                                 </div>
                             </div>
                         </article>

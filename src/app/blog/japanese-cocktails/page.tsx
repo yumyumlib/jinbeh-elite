@@ -45,10 +45,10 @@ export default function JapaneseCocktails() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>What makes Japanese cocktails special?</strong> They blend delicate balance, intricate presentation, and premium native Japanese spirits into an art form that elevates the entire drinking experience.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>What makes Japanese cocktails special?</strong> They blend delicate balance, intricate presentation, and premium native Japanese spirits into an art form that elevates the entire drinking experience. Whether you're exploring <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> options or enjoying <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">drink deals</Link> at happy hour, Japanese cocktails offer something special.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 The Foundation of Japanese Cocktails</h2>
-                            <p className="text-charcoal/80 mb-6">Japanese cocktails are deeply rooted in tradition and culture, emphasizing precision, quality ingredients, and the art of presentation. To truly appreciate Japanese cocktails, it's essential to understand the foundational spirits used in these drinks.</p>
+                            <p className="text-charcoal/80 mb-6">Japanese cocktails are deeply rooted in tradition and culture, emphasizing precision, quality ingredients, and the art of presentation. To truly appreciate Japanese cocktails, it's essential to understand the foundational spirits used in these drinks. Learn how to match beverages with your meal through our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake recommendations</Link> and dining guides.</p>
 
                             <div className="bg-warm-ivory rounded-xl p-6 mb-8 border-l-4 border-purple-600">
                                 <h3 className="font-bold text-charcoal mb-4">Key Japanese Spirits</h3>
@@ -185,7 +185,7 @@ export default function JapaneseCocktails() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Visit Jinbeh in both Frisco and Lewisville for expertly crafted Japanese cocktails. Our mixologists are trained in traditional Japanese techniques and use premium spirits. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224. Check our happy hour specials for special pricing!</p>
+                                        <p>Visit Jinbeh in both <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco</Link> and <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link> for expertly crafted Japanese cocktails. Our mixologists are trained in traditional Japanese techniques and use premium spirits. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224. Check our <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> for special pricing!</p>
                                     </div>
                                 </details>
 

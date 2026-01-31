@@ -157,7 +157,11 @@ export default function BirthdayCelebrationRestaurants() {
                                         Known for its theatrical cooking style, Jinbeh offers a fun and interactive dining experience.
                                         The skilled chefs not only prepare your meal in front of you but also put on a show with their
                                         knife skills and fiery tricks. For birthdays, Jinbeh often provides a complimentary dessert and
-                                        a special birthday song. The interactive nature of the dining experience ensures that both you
+                                        a special birthday song. Learn more about planning the perfect{" "}
+                                        <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">
+                                          hibachi birthday party
+                                        </Link>
+                                        . The interactive nature of the dining experience ensures that both you
                                         and your guests are entertained throughout the meal.
                                     </p>
                                     <p className="text-charcoal/80 mb-6">
@@ -173,7 +177,11 @@ export default function BirthdayCelebrationRestaurants() {
                                         birthday, the restaurant takes it up a notch by offering a complimentary scoop of ice cream with a
                                         candle. It's a simple yet sweet gesture that makes your dining experience more enjoyable. Plus, with
                                         locations all over, finding a Cheesecake Factory "near me" is often easy, making it a convenient choice
-                                        for birthday celebrations.
+                                        for birthday celebrations. For something more unique with entertainment, consider trying the{" "}
+                                        <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline">
+                                          best hibachi in Dallas
+                                        </Link>
+                                        {" "}instead.
                                     </p>
                                     <p className="text-charcoal/80 mb-6">
                                         In addition to the birthday perks, The Cheesecake Factory is known for its welcoming atmosphere and
@@ -253,7 +261,11 @@ export default function BirthdayCelebrationRestaurants() {
                                             <h3 className="font-heading font-bold text-xl text-charcoal mb-3">📋 Check for Birthday Specials</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Before deciding on a restaurant, call ahead or check their website to see what birthday specials they offer.
-                                                Some restaurants require you to sign up for their rewards program to receive birthday perks.
+                                                Some restaurants require you to sign up for their rewards program to receive birthday perks. At Jinbeh,{" "}
+                                                <Link href="/reservations" className="text-accent-red hover:underline">
+                                                  make a reservation
+                                                </Link>
+                                                {" "}to secure your special celebration.
                                             </p>
                                         </div>
 
@@ -324,12 +336,21 @@ export default function BirthdayCelebrationRestaurants() {
                                     <p className="text-white/90 mb-8 text-lg">
                                         At Jinbeh, we specialize in turning birthday dinners into memorable experiences. Our hibachi chefs,
                                         interactive atmosphere, and special birthday touches ensure your celebration is one you'll remember forever.
+                                        Visit our{" "}
+                                        <Link href="/locations/frisco" className="text-white hover:underline underline">
+                                          Frisco location
+                                        </Link>
+                                        {" "}or{" "}
+                                        <Link href="/locations/lewisville" className="text-white hover:underline underline">
+                                          Lewisville location
+                                        </Link>
+                                        .
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco#reserve" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             Reserve Your Birthday Table
                                         </Link>
-                                        <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             View Our Menu
                                         </Link>
                                     </div>

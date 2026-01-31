@@ -143,7 +143,7 @@ export default function SakePairingGuide() {
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Sake isn't just a drink—it's a bridge between food and flavor.</strong> Whether you're enjoying
-                                        fresh nigiri, watching flames dance on a hibachi grill, or savoring delicate appetizers, the right sake
+                                        fresh <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">nigiri</Link>, watching flames dance on a <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi grill</Link>, or savoring delicate appetizers, the right sake
                                         transforms the entire experience. But with so many styles and temperatures to choose from, where do you start?
                                     </p>
 
@@ -242,8 +242,8 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <p>
-                                        Sushi is sake's most famous partner. But not all sushi calls for the same sake. The type of fish, rice
-                                        preparation, and toppings all influence which sake shines brightest.
+                                        Sushi is sake's most famous partner. But not all <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> call for the same sake. The type of fish, rice
+                                        preparation, and toppings all influence which sake shines brightest. Learn more about different <Link href="/blog/beginner-sushi-tips" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi for beginners</Link> to understand each style better.
                                     </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 my-8">
@@ -318,8 +318,8 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <p>
-                                        Hibachi is all about bold, grilled flavors and interactive theater. The intense heat and char of the grill
-                                        demand a sake with more presence than what you'd pair with delicate sushi.
+                                        <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Hibachi</Link> is all about bold, grilled flavors and interactive theater. The intense heat and char of the grill
+                                        demand a sake with more presence than what you'd pair with delicate sushi. Understanding the <Link href="/blog/hibachi-calories-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi teppanyaki experience</Link> helps you appreciate the cooking method and food better.
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -556,8 +556,8 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <p>
-                                        Want to explore sake pairings without breaking the bank? Jinbeh's Happy Hour is the perfect place to experiment.
-                                        We offer special pricing on select sakes and appetizers—the ideal combination for learning what you love.
+                                        Want to explore sake pairings without breaking the bank? Jinbeh's <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> are the perfect place to experiment.
+                                        We offer special <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">drink deals</Link> on select sakes and appetizers—the ideal combination for learning what you love.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-deep-indigo/10 rounded-2xl p-8 my-8">
@@ -582,7 +582,7 @@ export default function SakePairingGuide() {
 
                                     <p>
                                         Sake pairing isn't complicated—it's about balance, intensity, and exploring what you love. Whether you're a sushi
-                                        purist, a hibachi enthusiast, or somewhere in between, there's a sake waiting to elevate your next meal.
+                                        purist at <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">best sushi in Frisco</Link>, a hibachi enthusiast, or somewhere in between, there's a sake waiting to elevate your next meal.
                                     </p>
 
                                     <p className="mb-8">

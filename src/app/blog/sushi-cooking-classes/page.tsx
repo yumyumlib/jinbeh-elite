@@ -127,7 +127,7 @@ export default function SushiCookingClasses() {
                                         <strong>Are you passionate about sushi</strong> and eager to learn the art of making it yourself?
                                         Whether you're a curious foodie, a culinary enthusiast, or someone looking for a unique experience,
                                         sushi cooking classes offer hands-on learning with skilled instructors who will guide you through
-                                        authentic Japanese techniques.
+                                        authentic Japanese techniques. By the end, you'll understand the nuances of different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> and how to create them at home.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
@@ -149,6 +149,10 @@ export default function SushiCookingClasses() {
                                     </p>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Benefits of Learning Sushi Making</h3>
+
+                                    <p className="text-charcoal/80 mb-6">
+                                        Beyond just mastering technique, learning to make sushi connects you with Japanese culture and culinary traditions. You'll develop an appreciation for quality ingredients, precision, and artistry. Plus, you can explore <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-semibold">sake pairing</Link> to pair your creations perfectly with beverages.
+                                    </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-6">
                                         <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🎯 Skill Development</h4>
@@ -371,11 +375,11 @@ export default function SushiCookingClasses() {
                                         Welcome to the table! Contact Jinbeh to inquire about our sushi making classes. Learn authentic techniques from experienced chefs in a fun, gracious environment.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco#reserve" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             Inquire About Classes
                                         </Link>
-                                        <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Our Menu
+                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                            View Our Full Menu
                                         </Link>
                                     </div>
                                 </div>

@@ -81,7 +81,7 @@ export default function DiscoverTeppanyaki() {
                                 <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Family</span>
                             </div>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔥 Hibachi vs Teppanyaki</h2>
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔥 <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">Hibachi vs Teppanyaki</Link></h2>
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Feature</th><th className="p-3 text-left">Hibachi</th><th className="p-3 text-left">Teppanyaki</th></tr></thead>
                                 <tbody className="text-charcoal/80">
@@ -120,15 +120,15 @@ export default function DiscoverTeppanyaki() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Experience Authentic Teppanyaki in DFW</h2>
                             <p className="text-charcoal/80 mb-6">
-                                Ready to experience the art of teppanyaki? Visit Jinbeh at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Our expert chefs will delight you with authentic cooking techniques, entertainment, and delicious Japanese cuisine. We also offer <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">hibachi catering</Link> for corporate events and private celebrations.
+                                Ready to experience the art of teppanyaki? Visit Jinbeh at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Our expert chefs will delight you with authentic cooking techniques, entertainment, and delicious Japanese cuisine. We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for corporate events and private celebrations.
                             </p>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🔥 Ready for Teppanyaki?</h3>
-                                <p className="text-white/90 mb-6">Experience the perfect blend of cuisine and entertainment</p>
+                                <p className="text-white/90 mb-6">Experience the perfect blend of cuisine and entertainment. Perfect for a <Link href="/blog/hibachi-birthday-party-ideas" className="text-white hover:text-warm-ivory underline">hibachi birthday party</Link> or special occasion.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Make a Reservation</Link>
+                                    <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">View Our Menu</Link>
                                 </div>
                             </div>
                         </article>

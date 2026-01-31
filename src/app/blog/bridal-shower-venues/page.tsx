@@ -163,16 +163,17 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
 
       <p>
         Restaurants like{" "}
-        <Link href="/frisco" className="text-accent-red hover:underline">
+        <Link href="/locations/frisco" className="text-accent-red hover:underline">
           Jinbeh in Frisco
         </Link>{" "}
         and{" "}
-        <Link href="/lewisville" className="text-accent-red hover:underline">
+        <Link href="/locations/lewisville" className="text-accent-red hover:underline">
           Lewisville
         </Link>{" "}
         offer excellent bridal shower options. Private dining spaces provide
         intimate, elegant atmospheres without requiring extensive decoration. You
         can customize menus to accommodate guest preferences and dietary needs.
+        We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for flexible options.
       </p>
 
       <p>
@@ -256,7 +257,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         When selecting a venue, consider its location and accessibility for all
         guests. Ensure ample parking or easy public transportation access. The
         venue should be convenient for most guests, especially if you have
-        attendees traveling from out of town.
+        attendees traveling from out of town. Jinbeh offers convenient locations with ample parking in both our Frisco and Lewisville areas.
       </p>
 
       <h3>Capacity and Amenities</h3>
@@ -326,12 +327,12 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         At Jinbeh, we specialize in creating memorable celebrations. Our
         private dining spaces provide elegant, intimate atmospheres perfect for
         bridal showers. Our professional team handles logistics while you focus
-        on celebrating the bride-to-be.
+        on celebrating the bride-to-be. We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for off-site events.
       </p>
 
       <p>
         <Link href="/reservations" className="text-accent-red hover:underline">
-          Book your bridal shower at Jinbeh today →
+          Make a reservation for your bridal shower →
         </Link>
       </p>
 
@@ -363,6 +364,10 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         Whether you choose an intimate garden gathering, elegant hotel ballroom,
         or unique specialty venue, the key is selecting a space that reflects
         the bride's personality and makes her feel celebrated and loved.
+      </p>
+
+      <p>
+        For an interactive celebration with beautiful ambiance, visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to host your bridal shower at Jinbeh.
       </p>
 
       <p>

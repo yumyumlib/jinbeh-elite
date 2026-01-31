@@ -218,12 +218,12 @@ export default function RestaurantsPrivateRooms() {
                                     </h3>
 
                                     <ul className="space-y-3 mb-8">
-                                        <li><strong>Authentic Japanese Cuisine:</strong> Meticulously crafted dishes using premium ingredients and traditional techniques</li>
+                                        <li><strong>Authentic Japanese Cuisine:</strong> Meticulously crafted dishes using premium ingredients and traditional techniques. Explore our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.</li>
                                         <li><strong>Hibachi Entertainment:</strong> Optional teppanyaki performances that elevate celebrations and special occasions</li>
                                         <li><strong>Flexible Spaces:</strong> Private rooms accommodating groups from 8 to 50+ guests</li>
                                         <li><strong>Customized Menus:</strong> Work with our culinary team to create dining experiences matching your vision</li>
                                         <li><strong>Professional Service:</strong> Dedicated staff trained in private event management and hospitality</li>
-                                        <li><strong>Multiple Locations:</strong> Conveniently situated in both Frisco and Lewisville</li>
+                                        <li><strong>Multiple Locations:</strong> Conveniently situated in both <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link></li>
                                     </ul>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -239,7 +239,7 @@ export default function RestaurantsPrivateRooms() {
                                     </h3>
 
                                     <p>
-                                        Whether it's an anniversary dinner, milestone birthday, or family reunion, Jinbeh's private rooms provide an intimate yet impressive setting. Our hibachi performances add an element of excitement and entertainment that makes celebrations truly special.
+                                        Whether it's an anniversary dinner, milestone <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration</Link>, or family reunion, Jinbeh's private rooms provide an intimate yet impressive setting. Our hibachi performances add an element of excitement and entertainment that makes celebrations truly special.
                                     </p>
                                 </div>
 
@@ -347,12 +347,12 @@ export default function RestaurantsPrivateRooms() {
                                     </p>
 
                                     <ul className="space-y-3 mb-8">
-                                        <li><strong><Link href="/frisco" className="text-accent-red hover:underline">Frisco Location</Link>:</strong> Conveniently situated near Stonebriar Centre, perfect for North Frisco residents and businesses.</li>
-                                        <li><strong><Link href="/lewisville" className="text-accent-red hover:underline">Lewisville Location</Link>:</strong> Accessible off I-35E near Vista Ridge Mall, ideal for Lewisville community gatherings.</li>
+                                        <li><strong><Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco Location</Link>:</strong> Conveniently situated near Stonebriar Centre, perfect for North Frisco residents and businesses.</li>
+                                        <li><strong><Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville Location</Link>:</strong> Accessible off I-35E near Vista Ridge Mall, ideal for Lewisville community gatherings.</li>
                                     </ul>
 
                                     <p>
-                                        Both locations feature private dining capabilities with dedicated event coordinators, flexible menus, and professional service. Learn more about making your <Link href="/reservations" className="text-accent-red hover:underline">reservation</Link> today.
+                                        Both locations feature private dining capabilities with dedicated event coordinators, flexible menus, and professional service. Learn more about <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
                                     </p>
                                 </div>
 
@@ -406,7 +406,7 @@ export default function RestaurantsPrivateRooms() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining rooms</Link> accommodate groups from 8-10 to 50+ guests. It's a celebration! Welcome to the table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to discuss your specific needs.
+                                                    Jinbeh accommodates groups from 8-10 to 50+ guests for <Link href="/catering" className="text-accent-red hover:underline">private dining and catering services</Link>. It's a celebration! Welcome to the table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to discuss your specific needs.
                                                 </p>
                                             </div>
                                         </details>

@@ -67,7 +67,7 @@ export default function HibachiVsTeppanyakiPage() {
     >
       {/* Opening Paragraph */}
       <p>
-        You've heard the terms thrown around interchangeably: "Let's go to a hibachi restaurant." "I love teppanyaki." "The hibachi chef was amazing!" But are hibachi and teppanyaki the same thing? The answer is more nuanced than you might think—and understanding the difference will help you appreciate the Japanese culinary traditions behind your next dining experience.
+        You've heard the terms thrown around interchangeably: "Let's go to a hibachi restaurant." "I love teppanyaki." "The hibachi chef was amazing!" But are <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi and teppanyaki</Link> the same thing? The answer is more nuanced than you might think—and understanding the difference will help you appreciate the Japanese culinary traditions behind your next dining experience.
       </p>
 
       <p>
@@ -321,7 +321,7 @@ export default function HibachiVsTeppanyakiPage() {
       <h2>Jinbeh's Teppanyaki Experience: Blending Tradition with Entertainment</h2>
 
       <p>
-        At Jinbeh Japanese Restaurant in Frisco and Lewisville, we've mastered the art of teppanyaki—what most people call "hibachi dining." Since 1988, we've been crafting experiences where exceptional Japanese cuisine meets genuine entertainment and warm hospitality.
+        At Jinbeh Japanese Restaurant in <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, we've mastered the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>—what most people call "hibachi dining." Since 1988, we've been crafting experiences where exceptional Japanese cuisine meets genuine entertainment and warm hospitality.
       </p>
 
       <p>
@@ -359,7 +359,7 @@ export default function HibachiVsTeppanyakiPage() {
       </div>
 
       <p>
-        When you choose Jinbeh for teppanyaki dining, you're not just getting a meal. You're getting a full sensory experience: the sizzle of the griddle, the aroma of fresh proteins and vegetables, the visual spectacle of the chef's knife skills and flame tricks, and the joy of sharing the moment with your companions around the grill.
+        When you choose Jinbeh for <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki experience</Link> dining, you're not just getting a meal. You're getting a full sensory experience: the sizzle of the griddle, the aroma of fresh proteins and vegetables, the visual spectacle of the chef's knife skills and flame tricks, and the joy of sharing the moment with your companions around the grill. Check out our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> and <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
       </p>
 
       <h3>The Complete Teppanyaki Meal at Jinbeh</h3>
@@ -422,11 +422,11 @@ export default function HibachiVsTeppanyakiPage() {
       <h2>Ready to Experience the Best of Both Worlds?</h2>
 
       <p>
-        While we can't transport you to a traditional hibachi establishment in Kyoto, we can offer you the best of what American teppanyaki has to offer at Jinbeh. Our chefs blend the precision and reverence of Japanese culinary tradition with the entertainment and community that makes teppanyaki special.
+        While we can't transport you to a traditional hibachi establishment in Kyoto, we can offer you the best of what American <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link> has to offer at Jinbeh. Our chefs blend the precision and reverence of Japanese culinary tradition with the entertainment and community that makes teppanyaki special. Whether you're interested in our sushi offerings or want to learn about <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link>, we have something for everyone.
       </p>
 
       <p>
-        Whether you're celebrating a birthday, planning a date night, or just wanting a meal that engages all your senses, we invite you to experience what makes teppanyaki dining unforgettable.
+        Whether you're celebrating a birthday, planning a date night, or just wanting a meal that engages all your senses, we invite you to experience what makes teppanyaki dining unforgettable. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today.
       </p>
 
       {/* Related Content Links */}

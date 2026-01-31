@@ -40,7 +40,7 @@ export default function OmakaseDiningGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Omakase is more than just a meal—it's a performance, an art form, and a testament to the skill and expertise of the chef.</strong> This dining style encourages a deep connection between diner and chef, transforming food into an unforgettable experience.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Omakase is more than just a meal—it's a performance, an art form, and a testament to the skill and expertise of the chef.</strong> This dining style encourages a deep connection between diner and chef, transforming food into an unforgettable experience. Whether you're enjoying <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> or <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link>, omakase showcases culinary artistry at its finest.</p>
 
                             <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Omakase is about trust and artistry. When you sit at the sushi bar and say 'omakase,' you're inviting the chef to showcase their mastery, creativity, and passion for their craft."</p>
@@ -154,7 +154,7 @@ export default function OmakaseDiningGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌟 Why Choose Omakase?</h2>
                             <p className="text-charcoal/80 mb-4">Choosing Omakase is selecting a dining experience that is both personalized and artistic. The chef's expertise ensures that each dish is a masterpiece, crafted to highlight the best of Japanese culinary arts. This level of craftsmanship and attention to detail elevates Omakase above other dining experiences, making it truly special.</p>
 
-                            <p className="text-charcoal/80 mb-4">Omakase offers diners a unique opportunity to explore the depths of Japanese cuisine, experiencing dishes and flavors they might not encounter otherwise. The personalized nature ensures each experience is unique, offering a fresh perspective on the art of cooking and food appreciation.</p>
+                            <p className="text-charcoal/80 mb-4">Omakase offers diners a unique opportunity to explore the depths of Japanese cuisine, experiencing dishes and flavors they might not encounter otherwise. The personalized nature ensures each experience is unique, offering a fresh perspective on the art of cooking and food appreciation. Pair your omakase with our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> selections for an elevated experience.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-4">
@@ -194,7 +194,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Yes! The popularity of omakase has spread worldwide. Authentic omakase restaurants, including Jinbeh in Dallas, maintain the core principles while bringing this experience to international audiences. Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224 to book your omakase experience.</p>
+                                        <p>Yes! The popularity of omakase has spread worldwide. Authentic omakase restaurants, including Jinbeh in Dallas, maintain the core principles while bringing this experience to international audiences. Call our <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> at (214) 619-1200 or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link> at (214) 488-2224 to book your omakase experience.</p>
                                     </div>
                                 </details>
 
@@ -204,7 +204,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Welcome to the table! Call us directly to arrange your omakase experience. We recommend booking at least 1-2 weeks in advance. Frisco: (214) 619-1200 or Lewisville: (214) 488-2224. Tell us about your dietary preferences so our chef can prepare the perfect menu.</p>
+                                        <p>Welcome to the table! Call us directly to arrange your omakase experience. We recommend booking at least 1-2 weeks in advance. <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco</Link>: (214) 619-1200 or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link>: (214) 488-2224. Tell us about your dietary preferences so our chef can prepare the perfect menu. You can also <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> online.</p>
                                     </div>
                                 </details>
                             </div>

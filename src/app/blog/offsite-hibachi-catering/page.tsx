@@ -166,7 +166,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
           <strong>Hibachi Chicken:</strong> Lean, flavorful, and versatile
         </li>
         <li>
-          <strong>Premium Steak:</strong> Filet mignon, ribeye, or NY strip
+          <strong>Premium Steak:</strong> Filet mignon, ribeye, or NY strip. Explore our <Link href="/blog/best-steak-near-me" className="text-accent-red hover:underline font-semibold">steak guide</Link> for pairing options.
         </li>
         <li>
           <strong>Fresh Seafood:</strong> Shrimp, salmon, scallops
@@ -186,7 +186,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       </p>
 
       <p>
-        <strong>Sushi Selections:</strong> Fresh, expertly crafted sushi rolls paired with the hibachi experience.
+        <strong>Sushi Selections:</strong> Fresh, expertly crafted sushi rolls paired with the hibachi experience. Learn about the different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> we can feature at your event.
       </p>
 
       <p>
@@ -210,9 +210,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       </p>
 
       <p>
-        <Link href="/celebrations/birthday" className="text-accent-red hover:underline">
-          Discover our birthday party packages →
-        </Link>
+        Discover our <Link href="/catering" className="text-accent-red hover:underline font-semibold">catering services</Link> for comprehensive package details and customization options.
       </p>
 
       <h3>Corporate Events & Team Building</h3>
@@ -405,10 +403,10 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
 
       <ul>
         <li>
-          <strong>Frisco Location:</strong> <Link href="/frisco#reserve" className="text-accent-red hover:underline">Reserve at Frisco</Link>
+          <strong>Frisco Location:</strong> <Link href="/locations/frisco" className="text-accent-red hover:underline">Visit Frisco</Link>
         </li>
         <li>
-          <strong>Lewisville Location:</strong> <Link href="/lewisville#reserve" className="text-accent-red hover:underline">Reserve at Lewisville</Link>
+          <strong>Lewisville Location:</strong> <Link href="/locations/lewisville" className="text-accent-red hover:underline">Visit Lewisville</Link>
         </li>
       </ul>
 

@@ -285,7 +285,7 @@ export default function BestSalmonSashimi() {
                                         Making sashimi at home is rewarding but requires attention to detail. Always source sushi-grade
                                         salmon, invest in a sharp knife, maintain proper temperature control, and serve immediately.
                                         The practice of slicing and presenting sashimi becomes a meditative process that deepens your
-                                        appreciation for the craft.
+                                        appreciation for the craft. Or simply <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> at Jinbeh and let our experts handle it.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -295,7 +295,7 @@ export default function BestSalmonSashimi() {
                                     <p>
                                         While salmon is beloved, don't miss exploring other sashimi options. Tuna sashimi offers
                                         different flavor profiles, and assorted platters allow you to sample multiple types of fish
-                                        in one elegant presentation.
+                                        in one elegant presentation. Check out our <Link href="/blog/sushi-identification-chart" className="text-accent-red hover:underline">sushi identification chart</Link> to learn about all available varieties.
                                     </p>
                                 </div>
 
@@ -326,7 +326,7 @@ export default function BestSalmonSashimi() {
                                         🍣 Fresh and Flavorful Salmon Sashimi
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Experience premium sashimi prepared with expert knife work at Jinbeh. Watch our chefs at the sushi bar.
+                                        Experience premium sashimi prepared with expert knife work at Jinbeh. Watch our chefs at the sushi bar. Learn the proper way to enjoy it with our <Link href="/blog/how-to-eat-sushi-guide" className="text-white hover:text-warm-ivory underline">sushi eating guide</Link>.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link

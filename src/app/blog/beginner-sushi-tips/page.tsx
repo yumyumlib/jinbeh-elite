@@ -78,7 +78,7 @@ export default function BeginnerSushiTipsPage() {
       <h2>Understanding Sushi Basics</h2>
 
       <p>
-        Before immersing yourself in the art of sushi-making, it's crucial to grasp the basics. Sushi is primarily composed of vinegared rice, complemented by various ingredients like seafood, vegetables, and occasionally tropical fruits. Understanding these foundational types opens the door to a wide array of possibilities.
+        Before immersing yourself in the art of sushi-making, it's crucial to grasp the basics. Sushi is primarily composed of vinegared rice, complemented by various ingredients like seafood, vegetables, and occasionally tropical fruits. Understanding these foundational <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link> opens the door to a wide array of possibilities.
       </p>
 
       <p>
@@ -90,7 +90,7 @@ export default function BeginnerSushiTipsPage() {
       </p>
 
       <p>
-        Both styles offer unique experiences, and mastering them can provide a solid base for exploring more complex sushi dishes as your confidence grows. For beginners, maki rolls are typically the best starting point since they're more forgiving than nigiri.
+        Both styles offer unique experiences, and mastering them can provide a solid base for exploring more complex <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> as your confidence grows. For beginners, maki rolls are typically the best starting point since they're more forgiving than nigiri. Learn more about <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> to expand your knowledge.
       </p>
 
       <h2>Essential Tools & Ingredients</h2>
@@ -264,7 +264,7 @@ export default function BeginnerSushiTipsPage() {
       <h2>Exploring Sushi Variations</h2>
 
       <p>
-        Once you've mastered the basics, you can start experimenting with different flavors and techniques. This exploration allows you to personalize your sushi and discover new combinations that delight your taste buds.
+        Once you've mastered the basics, you can start experimenting with different flavors and techniques. This exploration allows you to personalize your sushi and discover new combinations that delight your taste buds. Our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">complete sushi guide</Link> covers all the <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link> to inspire your creations.
       </p>
 
       <h3>Try Different Fillings</h3>
@@ -284,7 +284,7 @@ export default function BeginnerSushiTipsPage() {
       </p>
 
       <p>
-        Temaki is a fun, interactive style that allows for more casual dining, while chirashi presents an opportunity to highlight the quality and variety of your ingredients. Exploring these styles not only broadens your sushi-making capabilities but also enriches your understanding of Japanese culinary traditions.
+        Temaki is a fun, interactive style that allows for more casual dining, while chirashi presents an opportunity to highlight the quality and variety of your ingredients. Exploring these styles not only broadens your sushi-making capabilities but also enriches your understanding of Japanese culinary traditions. Ready to order from professionals? <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> at Jinbeh to see expert sushi craftsmanship.
       </p>
 
       <h2>When to Visit Professional Sushi Chefs</h2>
@@ -300,7 +300,7 @@ export default function BeginnerSushiTipsPage() {
       <h2>Conclusion: Your Sushi Journey Starts Now</h2>
 
       <p>
-        Making sushi at home can be a rewarding and enjoyable experience. By starting with simple recipes and gradually expanding your skills, you'll soon be able to create beautiful and delicious sushi rolls that rival those from your favorite restaurant.
+        Making sushi at home can be a rewarding and enjoyable experience. By starting with simple recipes and gradually expanding your skills, you'll soon be able to create beautiful and delicious sushi rolls that rival those from your favorite restaurant. Or take a break from cooking and try our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> of fresh options.
       </p>
 
       <p>
@@ -308,7 +308,7 @@ export default function BeginnerSushiTipsPage() {
       </p>
 
       <p>
-        Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create—perfect or not! And whenever you want to enjoy professional-grade sushi made by expert chefs, <Link href="/frisco#reserve" className="text-accent-red hover:underline">Jinbeh Frisco</Link> and <Link href="/lewisville#reserve" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> are here to serve you authentic, delicious sushi in a welcoming atmosphere.
+        Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create—perfect or not! And whenever you want to enjoy professional-grade sushi made by expert chefs, visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to <Link href="/reservations" className="text-accent-red hover:underline">book a table</Link> and enjoy authentic, delicious sushi in a welcoming atmosphere.
       </p>
     </ArticleLayout>
     </>

@@ -82,7 +82,8 @@ export default function BestHibachiDallasPage() {
         makes a great hibachi experience. It's not just about the food—though
         fresh, flavorful ingredients are essential. It's about creating memories
         around a shared table, watching a skilled chef transform dinner into
-        entertainment.
+        entertainment. Beyond our <Link href="/blog/best-hibachi-dallas" className="text-accent-red hover:underline">best hibachi in Dallas</Link> offerings,
+        we also offer a full <Link href="/menu" className="text-accent-red hover:underline">menu</Link> including <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link>.
       </p>
 
       <h2>What Makes Dallas Hibachi Special?</h2>
@@ -191,12 +192,10 @@ export default function BestHibachiDallasPage() {
 
       <p>
         A local favorite in several DFW suburbs, Osaka balances quality hibachi
-        with an extensive{" "}
-        <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
+        with an extensive <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
           sushi menu
-        </Link>
-        . The experience varies by location, so check reviews for your specific
-        neighborhood.
+        </Link>. The experience varies by location, so check reviews for your specific
+        neighborhood. For a consistently excellent experience across both hibachi and sushi, visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link>.
       </p>
 
       <h2>How to Choose the Right Hibachi Restaurant</h2>
@@ -289,25 +288,17 @@ export default function BestHibachiDallasPage() {
 
       <p>
         At Jinbeh, we blend both worlds: the entertainment Americans love with
-        authentic Japanese flavors and techniques our chefs trained in. Our{" "}
-        <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">
-          sushi bar
-        </Link>{" "}
-        offers a more traditional experience for guests seeking something
-        quieter, while the hibachi grills deliver dinner and a show.
+        authentic Japanese flavors and techniques our chefs trained in. Our sushi bar offers a more traditional experience for guests seeking something
+        quieter, while the hibachi grills deliver dinner and a show. Explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
       </p>
 
       <h2>Best Value: Hibachi Lunch Specials</h2>
 
       <p>
         Here's a local secret: hibachi lunch is often the best deal in town.
-        At Jinbeh, our{" "}
-        <Link href="/lunch-specials" className="text-accent-red hover:underline">
-          lunch specials
-        </Link>{" "}
-        start at just $12.95 for the same quality hibachi experience you'd get
+        At Jinbeh, our lunch specials start at just $12.95 for the same quality hibachi experience you'd get
         at dinner—just slightly smaller portions. You still get the show, the
-        soup, the salad, everything.
+        soup, the salad, everything. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all options.
       </p>
 
       <p>
@@ -338,11 +329,9 @@ export default function BestHibachiDallasPage() {
       </ul>
 
       <p>
-        At Jinbeh, you can{" "}
-        <Link href="/reservations" className="text-accent-red hover:underline">
-          make reservations online
-        </Link>{" "}
-        or call our Frisco location at (214) 619-1200 or Lewisville at
+        At Jinbeh, you can <Link href="/reservations" className="text-accent-red hover:underline">
+          make a reservation
+        </Link> online or call our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> at (214) 619-1200 or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link> at
         (214) 488-2224.
       </p>
 

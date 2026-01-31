@@ -83,7 +83,7 @@ export default function HibachiCaloriesGuidePage() {
       </p>
 
       <p>
-        Understanding the nutritional content of your favorite dishes is the key to enjoying restaurant meals mindfully. At Jinbeh, our hibachi-style cooking is naturally well-suited to health-conscious dining. High-temperature grilling requires minimal added fats, ingredients are fresh and visible, and you control portion sizes and sauces.
+        Understanding the nutritional content of your favorite dishes is the key to enjoying restaurant meals mindfully. At Jinbeh, our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi vs teppanyaki</Link> cooking methods are naturally well-suited to health-conscious dining. High-temperature grilling requires minimal added fats, ingredients are fresh and visible, and you control portion sizes and sauces.
       </p>
 
       <p>
@@ -479,11 +479,11 @@ export default function HibachiCaloriesGuidePage() {
       </div>
 
       <p>
-        You don't have to choose between enjoying restaurant dining and meeting your nutritional goals. By understanding hibachi calories, choosing lean proteins, requesting extra vegetables, controlling sauces, and managing portions mindfully, you can enjoy{" "}
-        <Link href="/" className="text-accent-red hover:underline">
+        You don't have to choose between enjoying restaurant dining and meeting your nutritional goals. By understanding <Link href="/blog/hibachi-calories-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi calories</Link>, choosing lean proteins, requesting extra vegetables, controlling sauces, and managing portions mindfully, you can enjoy{" "}
+        <Link href="/menu" className="text-accent-red hover:underline font-medium">
           Jinbeh's exceptional Japanese cuisine
         </Link>{" "}
-        while staying aligned with your health objectives.
+        while staying aligned with your health objectives. Explore our <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville location</Link> to dine with us.
       </p>
 
       <p>

@@ -184,7 +184,8 @@ export default function ThanksgivingDiningGuide() {
                                     <p>
                                         Thanksgiving celebrates three things: gratitude, togetherness, and great food. Japanese dining
                                         philosophy aligns perfectly with these values. Japanese cuisine emphasizes balance, seasonality, and
-                                        the art of bringing people together around shared meals.
+                                        the art of bringing people together around shared meals. If you're interested in learning more about
+                                        Japanese cuisine, check out our guide on <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link> and other traditional dishes.
                                     </p>
 
                                     <p>
@@ -195,7 +196,7 @@ export default function ThanksgivingDiningGuide() {
                                         <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🎭 Interactive Dining</h3>
                                             <p className="text-charcoal/80 text-sm">
-                                                Hibachi experiences turn dinner into entertainment. Watch skilled chefs perform while cooking
+                                                <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">Hibachi experiences</Link> turn dinner into entertainment. Watch skilled chefs perform while cooking
                                                 your meal right in front of you—creating memories and conversation.
                                             </p>
                                         </div>
@@ -370,12 +371,20 @@ export default function ThanksgivingDiningGuide() {
                                         </div>
                                     </div>
 
-                                    <Link
-                                        href="/catering"
-                                        className="inline-block bg-accent-red text-white px-8 py-4 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors my-6"
-                                    >
-                                        Explore Full Catering Services →
-                                    </Link>
+                                    <div className="flex flex-col sm:flex-row gap-4 my-6">
+                                        <Link
+                                            href="/catering"
+                                            className="inline-block bg-accent-red text-white px-8 py-4 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors"
+                                        >
+                                            Explore Full Catering Services →
+                                        </Link>
+                                        <Link
+                                            href="/reservations"
+                                            className="inline-block bg-deep-indigo text-white px-8 py-4 rounded-xl font-semibold hover:bg-deep-indigo/90 transition-colors"
+                                        >
+                                            Make a Reservation →
+                                        </Link>
+                                    </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍽️ Dine-In Availability on Thanksgiving
@@ -513,6 +522,10 @@ export default function ThanksgivingDiningGuide() {
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-6">For Sushi Lovers</h3>
 
+                                    <p className="text-charcoal/80 mb-6">
+                                        New to sushi? Check out our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi tips for beginners</Link> before your Thanksgiving dinner.
+                                    </p>
+
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-8">
                                         <div className="space-y-4">
                                             <div className="flex gap-4">
@@ -551,6 +564,10 @@ export default function ThanksgivingDiningGuide() {
                                     </div>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-6">For Hibachi Enthusiasts</h3>
+
+                                    <p className="text-charcoal/80 mb-6">
+                                        Interested in sake pairings with your hibachi meal? Explore our <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing guide</Link> for perfect combinations.
+                                    </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-8">
                                         <div className="space-y-4">

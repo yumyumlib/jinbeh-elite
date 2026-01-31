@@ -119,15 +119,15 @@ export default function HibachiCatering() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Catering at Our Restaurants</h2>
                             <p className="text-charcoal/80 mb-6">
-                                Can't host an event at home? Visit us at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations for private dining options. We also offer full hibachi catering for off-site events. Learn more about <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline">hibachi dining</Link> and why Jinbeh is the best choice for your celebration.
+                                Can't host an event at home? Visit us at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> for private dining and <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> options. We also offer full hibachi catering for off-site events. Learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">difference between hibachi and teppanyaki</Link> and why Jinbeh is the best choice for your celebration.
                             </p>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-green-600 to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍴 Ready to Plan Your Catered Event?</h3>
-                                <p className="text-white/80 mb-6">Let us create an unforgettable hibachi experience for your celebration.</p>
+                                <p className="text-white/80 mb-6">Let us create an unforgettable hibachi experience for your celebration. Browse our <Link href="/menu" className="text-white hover:underline">full menu</Link> or explore our <Link href="/catering" className="text-white hover:underline">catering services</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/catering" className="bg-white text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Request Custom Quote</Link>
-                                    <a href="tel:+19726187010" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">Call for Details</a>
+                                    <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">Make a Reservation</Link>
                                 </div>
                             </div>
                         </article>

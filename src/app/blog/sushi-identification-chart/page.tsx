@@ -147,7 +147,7 @@ export default function SushiIdentificationChart() {
                                         Before diving into specific types, it's essential to understand what sushi actually is. Traditionally,
                                         sushi consists of seasoned sushi rice combined with various ingredients like raw or cooked fish,
                                         vegetables, and seafood. The rice is the foundation, seasoned with vinegar, sugar, and salt to create
-                                        its distinctive flavor.
+                                        its distinctive flavor. If you're new to this world, our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline font-semibold">sushi for beginners guide</Link> is a great starting point.
                                     </p>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -163,10 +163,10 @@ export default function SushiIdentificationChart() {
                                     </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 my-6">
-                                        <p className="text-charcoal/80 mb-2"><strong>Common Nigiri Varieties:</strong></p>
+                                        <p className="text-charcoal/80 mb-2"><strong>Common Nigiri Varieties:</strong> Explore more <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link> and their unique characteristics.</p>
                                         <ul className="text-charcoal/70 text-sm space-y-2">
                                             <li>🐟 <strong>Maguro (Tuna)</strong> - Deep red, rich flavor, buttery texture</li>
-                                            <li>🐠 <strong>Sake (Salmon)</strong> - Orange-pink, mild and slightly sweet</li>
+                                            <li>🐠 <strong>Sake (Salmon)</strong> - Orange-pink, mild and slightly sweet. Discover more about <Link href="/blog/best-salmon-sashimi" className="text-accent-red hover:underline">premium salmon sashimi</Link></li>
                                             <li>⚪ <strong>Ebi (Shrimp)</strong> - Sweet, delicate flavor with firm texture</li>
                                             <li>🦑 <strong>Ika (Squid)</strong> - Chewy texture, subtle sweet flavor</li>
                                             <li>🌾 <strong>Tamago (Egg)</strong> - Sweet, fluffy omelet on rice</li>
@@ -176,7 +176,7 @@ export default function SushiIdentificationChart() {
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Sashimi</h3>
                                     <p className="text-charcoal/80 mb-6">
                                         <strong>Sashimi</strong> is often mistaken for sushi, but it is actually a distinct dish. It consists
-                                        of thinly sliced raw fish, served without rice. The art of sashimi lies in the precision of the cut.
+                                        of thinly sliced raw fish, served without rice. Learn more about the key differences in our <Link href="/blog/sashimi-vs-sushi" className="text-accent-red hover:underline font-semibold">sashimi vs sushi comparison</Link>. The art of sashimi lies in the precision of the cut.
                                         Chefs use special knives to slice the fish at specific angles, ensuring the perfect thickness and
                                         texture. Sashimi is typically served with garnishes like daikon radish and shiso leaves, adding visual
                                         appeal and subtle flavor notes.
@@ -410,7 +410,7 @@ export default function SushiIdentificationChart() {
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Experience Sushi at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Ready to explore these sushi types in person? Visit Jinbeh to taste authentic preparations from
-                                        expert chefs. Our menu features all these varieties and more.
+                                        expert chefs. Check our <Link href="/menu" className="text-white hover:text-warm-ivory">full menu</Link> to see all varieties we offer.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">

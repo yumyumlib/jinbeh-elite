@@ -80,7 +80,7 @@ export default function BestSeafoodDallas() {
                             <p className="text-charcoal/80 mb-4">Jinbeh seamlessly blends traditional Japanese culinary techniques with contemporary influences, creating a menu that is both familiar and exciting. Diners can enjoy classic sushi and sashimi offerings alongside innovative dishes that showcase the chef's creativity and expertise.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Fresh Sushi and Sashimi</h3>
-                            <p className="text-charcoal/80 mb-4">Their sushi and sashimi are exceptionally fresh, thanks to Jinbeh's commitment to sourcing the highest quality fish. Each piece is expertly crafted to highlight the natural flavors of the seafood, providing a truly authentic Japanese dining experience.</p>
+                            <p className="text-charcoal/80 mb-4">Their <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link> and sashimi are exceptionally fresh, thanks to Jinbeh's commitment to sourcing the highest quality fish. Each piece is expertly crafted to highlight the natural flavors of the seafood, providing a truly <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">authentic Japanese dining experience</Link>.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Signature Seafood Platter</h3>
                             <p className="text-charcoal/80 mb-6">The Jinbeh Seafood Platter is a must-try for anyone looking to indulge in a variety of flavors. This signature dish features an assortment of fresh seafood, including sushi, sashimi, and other delicacies, beautifully presented for a visually stunning and delicious experience.</p>
@@ -109,6 +109,10 @@ export default function BestSeafoodDallas() {
                                 ))}
                             </div>
 
+                            <div className="mt-6 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+                                <p className="text-charcoal/80">Discover more about our offerings at <Link href="/locations/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>. Check out our <Link href="/menu" className="text-accent-red hover:underline font-semibold">full menu</Link> and <Link href="/reservations" className="text-accent-red hover:underline font-semibold">make a reservation</Link> today.</p>
+                            </div>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏪 Seafood Markets Worth Exploring</h2>
                             <p className="text-charcoal/80 mb-6">For those who prefer to cook seafood at home, Dallas offers several top-notch seafood markets where you can find fresh, high-quality products and learn new preparation techniques.</p>
 
@@ -128,10 +132,10 @@ export default function BestSeafoodDallas() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍣 Premium Seafood at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Fresh sushi, sashimi, and seafood platters prepared with traditional Japanese expertise. Experience fine seafood dining at its finest.</p>
+                                <p className="text-white/80 mb-6">Fresh sushi, sashimi, and seafood platters prepared with traditional Japanese expertise. Experience fine seafood dining at its finest with our <Link href="/blog/sake-pairing-guide" className="underline hover:text-warm-ivory">sake pairing</Link> options.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Book a Table</Link>
+                                    <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10">View Our Menu</Link>
                                 </div>
                             </div>
                         </article>

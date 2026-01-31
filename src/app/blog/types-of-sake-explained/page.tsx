@@ -207,7 +207,7 @@ export default function TypesOfSakeExplained() {
                                                         <strong>Alcohol Content:</strong> 15-16% ABV (typical)
                                                     </p>
                                                     <p className="text-charcoal/80">
-                                                        <strong>Best For:</strong> Grilled hibachi dishes, rich appetizers, sashimi with fatty fish, warm or room temperature serving
+                                                        <strong>Best For:</strong> Grilled <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">hibachi dishes</Link>, rich appetizers, sashimi with fatty fish, warm or room temperature serving
                                                     </p>
                                                 </div>
                                             </div>
@@ -231,7 +231,7 @@ export default function TypesOfSakeExplained() {
                                                         <strong>Alcohol Content:</strong> 15-16% ABV
                                                     </p>
                                                     <p className="text-charcoal/80">
-                                                        <strong>Best For:</strong> Nigiri sushi, white fish, light appetizers, premium sashimi, chilled serving (50-55°F)
+                                                        <strong>Best For:</strong> <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red underline transition-colors">Nigiri sushi</Link>, white fish, light appetizers, premium sashimi, chilled serving (50-55°F)
                                                     </p>
                                                 </div>
                                             </div>
@@ -604,7 +604,7 @@ export default function TypesOfSakeExplained() {
                                                 <strong>Match Intensity:</strong> Bold food = fuller-bodied sake (Junmai). Delicate food = refined sake (Ginjo/Daiginjo).
                                             </p>
                                             <p className="text-charcoal/80">
-                                                Junmai with hibachi, sashimi with Ginjo, grilled proteins with warm Junmai.
+                                                Junmai with <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">hibachi</Link>, sashimi with Ginjo, grilled proteins with warm Junmai.
                                             </p>
                                         </div>
                                     </div>
@@ -614,7 +614,7 @@ export default function TypesOfSakeExplained() {
                                     </h2>
 
                                     <p className="mb-6">
-                                        At Jinbeh, we've thoughtfully selected sake varieties to complement every dish on our menu. Whether you're dining at our Frisco or Lewisville location, our staff is trained in sake types and can guide your choice.
+                                        At Jinbeh, we've thoughtfully selected sake varieties to complement every dish on our <Link href="/menu" className="text-deep-indigo hover:text-accent-red underline transition-colors">menu</Link>. Whether you're dining at our <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red underline transition-colors">Frisco</Link> or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red underline transition-colors">Lewisville</Link> location, our staff is trained in sake types and can guide your choice.
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -861,7 +861,7 @@ export default function TypesOfSakeExplained() {
                                     </div>
 
                                     <p className="text-charcoal/60 text-sm mt-12 pt-8 border-t border-warm-ivory-dark">
-                                        Learn more about sake at our blog. Explore <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors underline">our sake pairing guide</Link> and <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red transition-colors underline">sake alcohol strength explained</Link>.
+                                        Learn more about sake at our blog. Explore <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors underline">our sake pairing guide</Link>, <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red transition-colors underline">sake alcohol strength explained</Link>, and discover more <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors underline">sushi pairing options</Link>.
                                     </p>
                                 </div>
                             </div>

@@ -168,7 +168,7 @@ export default function HowToEatSushi() {
                                     </h2>
 
                                     <p className="text-charcoal/80">
-                                        Let's walk through the basic steps to eat sushi properly, from preparation to the final bite.
+                                        Let's walk through the basic steps to eat sushi properly, from preparation to the final bite. Whether you're exploring <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">different types of sushi</Link>, learning about <Link href="/blog/sashimi-vs-sushi" className="text-accent-red hover:underline font-semibold">sashimi vs sushi</Link>, or understanding proper etiquette, we've got you covered.
                                     </p>
                                 </div>
 
@@ -708,7 +708,7 @@ export default function HowToEatSushi() {
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Dine with Confidence?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Now that you know the etiquette, experience authentic sushi at Jinbeh. Our chefs prepare every piece with care,
-                                        and our team ensures your meal is unforgettable.
+                                        and our team ensures your meal is unforgettable. Visit our <Link href="/locations/frisco" className="text-white hover:text-warm-ivory underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-white hover:text-warm-ivory underline">Lewisville location</Link> to practice what you've learned.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/frisco/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
@@ -747,13 +747,13 @@ export default function HowToEatSushi() {
                                 <div className="mt-12 p-8 bg-gradient-to-r from-orange-500/10 to-soft-gold/10 rounded-2xl border-l-4 border-orange-500">
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">📍 Ready to Practice Your Etiquette?</h3>
                                     <p className="text-charcoal/80 mb-6">
-                                        Visit Jinbeh in Frisco or Lewisville and put your sushi knowledge to work. Our expert chefs will appreciate your respect for the craft.
+                                        Visit Jinbeh in Frisco or Lewisville and put your sushi knowledge to work. Our expert chefs will appreciate your respect for the craft. Consider pairing your meal with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for an enhanced dining experience.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <Link href="/frisco" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
+                                        <Link href="/locations/frisco" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
                                             Visit Frisco
                                         </Link>
-                                        <Link href="/lewisville" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
+                                        <Link href="/locations/lewisville" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
                                             Visit Lewisville
                                         </Link>
                                         <Link href="/reservations" className="flex-1 bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors text-center">

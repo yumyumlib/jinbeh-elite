@@ -137,7 +137,7 @@ export default function DateNightRestaurantsFrisco() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Planning a special date night in Frisco?</strong> Finding the right restaurant is about more than just food—it's about creating an atmosphere where you can connect, celebrate, and make memories together. Whether you're looking for an anniversary dinner, a first date, or just a romantic escape from the everyday, Frisco offers some truly magical dining experiences. And if you're craving something truly special, we know exactly where you should go.
+                                        <strong>Planning a special date night in Frisco?</strong> Finding the right restaurant is about more than just food—it's about creating an atmosphere where you can connect, celebrate, and make memories together. Whether you're looking for an anniversary dinner, a first date, or just a romantic escape from the everyday, Frisco offers some truly magical dining experiences. And if you're craving <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi experience</Link> combined with <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">best sushi in Frisco</Link>, we know exactly where you should go.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/20 to-warm-ivory border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
@@ -169,7 +169,7 @@ export default function DateNightRestaurantsFrisco() {
                                     </h2>
 
                                     <p>
-                                        A great date night at Jinbeh unfolds like a performance. Your evening begins the moment you walk in—greeted warmly, seated thoughtfully, and guided through an experience that balances culinary artistry with genuine connection. Here's what makes it special:
+                                        A great date night at Jinbeh unfolds like a performance. Your evening begins the moment you walk in—greeted warmly, seated thoughtfully, and guided through an experience that balances culinary artistry with genuine connection. Enjoy our <Link href="/menu" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">full menu</Link> of premium options. Here's what makes it special:
                                     </p>
                                 </div>
 
@@ -204,7 +204,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <span className="text-4xl flex-shrink-0">🍶</span>
                                             <div>
                                                 <h3 className="text-xl font-heading font-bold mb-2">Perfect Pairings</h3>
-                                                <p className="text-white/90">Our sake experts will recommend perfect pairings—premium sake, craft beers, or curated wines to complement your meal.</p>
+                                                <p className="text-white/90">Our <Link href="/blog/sake-pairing-guide" className="text-white hover:text-warm-ivory transition-colors font-medium">sake pairing</Link> experts will recommend perfect pairings—premium sake, craft beers, or curated wines to complement your meal.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -328,7 +328,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <strong>Put Away the Phone</strong> — Seriously. This time is about each other. Take one photo to remember, then enjoy the moment.
                                         </li>
                                         <li>
-                                            <strong>Ask About Special Requests</strong> — Celebrating an anniversary? First date? Let our team know. We love adding special touches—a complimentary dessert, sake pairing recommendations, or a quiet table.
+                                            <strong>Ask About Special Requests</strong> — Celebrating an anniversary? First date? Let our team know. We love adding special touches—a complimentary dessert, <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing recommendations</Link>, or a quiet table.
                                         </li>
                                         <li>
                                             <strong>Arrive Hungry</strong> — Our portions are generous and meant for sharing. Come ready to savor and linger.
@@ -468,7 +468,7 @@ export default function DateNightRestaurantsFrisco() {
                                         </summary>
                                         <div className="px-6 pb-6 text-charcoal/80">
                                             <p>
-                                                Absolutely! Our sake experts specialize in pairings. We offer sake flights, premium selections, and curated recommendations to complement your meal. Tell us about your preferences when you book, and we'll prepare the perfect selection. Check our <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing guide</Link> for inspiration.
+                                                Absolutely! Our sake experts specialize in pairings. We offer <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> flights, premium selections, and curated <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake recommendations</Link> to complement your meal. Tell us about your preferences when you book, and we'll prepare the perfect selection.
                                             </p>
                                         </div>
                                     </details>

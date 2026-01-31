@@ -215,7 +215,11 @@ export default function FreeBirthdayFoodDealsPage() {
       <p>
         If you're a Japanese cuisine fan, Jinbeh offers a fantastic option—a
         complimentary birthday meal. This is a perfect choice for those seeking
-        to enjoy sushi or hibachi experiences on their special day.
+        to enjoy{" "}
+        <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
+          types of sushi
+        </Link>{" "}
+        or hibachi experiences on their special day.
       </p>
 
       <p>
@@ -234,7 +238,7 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <p>
         The hibachi experience at Jinbeh is interactive and entertaining, making
-        it perfect for birthday celebrations. Watching skilled chefs prepare
+        it perfect for <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebrations</Link>. Watching skilled chefs prepare
         your meal with flair adds excitement and spectacle to your dining.
         Jinbeh's warm hospitality and elegant setting create memorable
         experiences beyond just food—attention to detail in service and
@@ -399,7 +403,10 @@ export default function FreeBirthdayFoodDealsPage() {
         your birthday offers. Don't forget to share your birthday experiences
         and let others know where they can find the best birthday freebies. By
         celebrating with free treats each year, you build lasting traditions
-        becoming cherished memories. Here's to a year filled with joy, happiness,
+        becoming cherished memories. If you'd like to plan something more special,
+        check out our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration ideas</Link> or{" "}
+        <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> at
+        Jinbeh for an unforgettable experience. Here's to a year filled with joy, happiness,
         and plenty of free birthday treats!
       </p>
     </ArticleLayout>

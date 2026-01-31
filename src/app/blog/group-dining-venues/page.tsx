@@ -58,7 +58,7 @@ export default function GroupDiningVenues() {
                                 <tbody className="text-charcoal/80">
                                     <tr className="border-b"><td className="p-3 font-semibold">Corporate Team Dinner</td><td className="p-3">Builds camaraderie, everyone engaged</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Family Reunion</td><td className="p-3">All ages entertained, shared tables</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Birthday Party</td><td className="p-3">Interactive, memorable, celebratory</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold"><Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">Birthday Party</Link></td><td className="p-3">Interactive, memorable, celebratory</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Sports Team</td><td className="p-3">Hearty portions, group seating</td></tr>
                                     <tr><td className="p-3 font-semibold">Holiday Gathering</td><td className="p-3">Festive atmosphere, no cooking cleanup!</td></tr>
                                 </tbody>
@@ -77,7 +77,7 @@ export default function GroupDiningVenues() {
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-deep-indigo">
                                     <h3 className="font-bold text-charcoal mb-2">Group Size</h3>
-                                    <p className="text-sm text-charcoal/70">Jinbeh accommodates groups from 8 to 50+ guests with flexible seating arrangements.</p>
+                                    <p className="text-sm text-charcoal/70">Jinbeh accommodates groups from 8 to 50+ guests with flexible seating arrangements. Perfect for <Link href="/blog/large-group-dining" className="text-accent-red hover:underline">large group dining</Link>.</p>
                                 </div>
                                 <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-accent-red">
                                     <h3 className="font-bold text-charcoal mb-2">Advance Notice</h3>
@@ -130,22 +130,22 @@ export default function GroupDiningVenues() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">👥 Plan Your Group Event</h3>
-                                <p className="text-white/80 mb-6">Contact us for group reservations and corporate dining at our Frisco and Lewisville locations.</p>
+                                <p className="text-white/80 mb-6">Contact us for group reservations, <Link href="/catering" className="text-white hover:underline underline">catering services</Link>, and corporate dining at our Frisco and Lewisville locations.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Book a Table</Link>
+                                    <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">View Our Menu</Link>
                                 </div>
                             </div>
 
                             <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
                                 <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Jinbeh Locations</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
-                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Frisco Location</h4>
+                                    <Link href="/locations/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Visit us in Frisco</h4>
                                         <p className="text-charcoal/70 text-sm">Near Stonebriar Centre, convenient for North Texas group events and celebrations.</p>
                                     </Link>
-                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
-                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Lewisville Location</h4>
+                                    <Link href="/locations/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Visit us in Lewisville</h4>
                                         <p className="text-charcoal/70 text-sm">Off I-35E near Vista Ridge Mall, perfect for Lewisville and North DFW group dining.</p>
                                     </Link>
                                 </div>

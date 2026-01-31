@@ -162,12 +162,12 @@ export default function BacheloretteRestaurantsDallas() {
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">🎪</span>
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Entertainment</h3>
-                                            <p className="text-charcoal/70 text-sm">Interactive dining experiences like hibachi shows, live music, or unique themes</p>
+                                            <p className="text-charcoal/70 text-sm">Interactive dining experiences like hibachi shows, live music, or unique themes. Jinbeh offers the best <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki experience</Link> in Dallas.</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">🍽️</span>
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Diverse Menu</h3>
-                                            <p className="text-charcoal/70 text-sm">Options for all dietary preferences and tastes within the group</p>
+                                            <p className="text-charcoal/70 text-sm">Options for all dietary preferences and tastes within the group. Check out our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">🎊</span>
@@ -267,14 +267,14 @@ export default function BacheloretteRestaurantsDallas() {
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>Both hibachi and sushi bar options</span>
+                                                    <span>Both hibachi and <Link href="/blog/types-of-sushi" className="text-white hover:underline">sushi varieties</Link></span>
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/frisco#reserve"
+                                                href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
-                                                Book Your Celebration →
+                                                Make a Reservation →
                                             </Link>
                                         </div>
                                     </div>
@@ -302,7 +302,7 @@ export default function BacheloretteRestaurantsDallas() {
                                     <p>
                                         Gather information about any dietary restrictions within your group. Whether someone is vegetarian,
                                         vegan, gluten-free, or has allergies, communicate this to your restaurant in advance. Restaurants like
-                                        Jinbeh are happy to accommodate special dietary needs.
+                                        Jinbeh are happy to accommodate special dietary needs. If your group enjoys sushi, explore our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">how to order sushi</Link> guide.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -398,16 +398,16 @@ export default function BacheloretteRestaurantsDallas() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
-                                            Reserve at Frisco
+                                            Book a Table
                                         </Link>
                                         <Link
-                                            href="/lewisville#reserve"
+                                            href="/menu"
                                             className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
                                         >
-                                            Reserve at Lewisville
+                                            View Our Menu
                                         </Link>
                                     </div>
                                 </div>

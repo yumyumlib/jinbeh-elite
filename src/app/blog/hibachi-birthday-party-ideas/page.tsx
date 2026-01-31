@@ -92,8 +92,8 @@ export default function HibachiBirthdayPartyIdeasPage() {
       <p>
         Most restaurants offer food. Hibachi offers an experience. When you
         book a birthday at a{" "}
-        <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">
-          teppanyaki restaurant
+        <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">
+          hibachi vs teppanyaki experience
         </Link>
         , you're not just choosing a menu—you're choosing entertainment that
         brings everyone together.
@@ -133,7 +133,12 @@ export default function HibachiBirthdayPartyIdeasPage() {
         A 7-year-old's eyes light up watching flames dance. A 70-year-old
         appreciates the theatrical knife skills. Hibachi bridges generations
         in a way few dining experiences can. We regularly host parties where
-        the youngest guest is 3 and the oldest is 83.
+        the youngest guest is 3 and the oldest is 83. Looking for dining
+        venues suitable for{" "}
+        <Link href="/blog/group-dining-venues" className="text-accent-red hover:underline">
+          group dining
+        </Link>
+        ? Hibachi is ideal for any gathering.
       </p>
 
       <h2>Planning Your Hibachi Birthday Party</h2>
@@ -292,16 +297,16 @@ export default function HibachiBirthdayPartyIdeasPage() {
 
       <ul>
         <li>
-          Start with sake or{" "}
-          <Link href="/blog/japanese-drinks" className="text-accent-red hover:underline">
-            Japanese cocktails
+          Start with{" "}
+          <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">
+            sake recommendations
           </Link>{" "}
           at the bar before your table is ready
         </li>
         <li>
           Order family-style{" "}
           <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
-            sushi
+            types of sushi
           </Link>{" "}
           as an appetizer for the table to share
         </li>
@@ -310,8 +315,8 @@ export default function HibachiBirthdayPartyIdeasPage() {
         </li>
         <li>
           Take advantage of{" "}
-          <Link href="/blog/best-happy-hour-frisco" className="text-accent-red hover:underline">
-            happy hour
+          <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">
+            happy hour specials
           </Link>{" "}
           if timing works
         </li>
@@ -358,7 +363,11 @@ export default function HibachiBirthdayPartyIdeasPage() {
         </li>
         <li>
           <strong>Sushi platter:</strong> A showstopping centerpiece before
-          the hibachi begins
+          the hibachi begins. Learn more about{" "}
+          <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">
+            how to order sushi
+          </Link>
+          {" "}if your guests are new to Japanese dining.
         </li>
       </ul>
 
@@ -449,15 +458,18 @@ export default function HibachiBirthdayPartyIdeasPage() {
       <h2>Make Your Reservation</h2>
 
       <p>
-        Ready to book your hibachi birthday celebration? At Jinbeh, we've
-        been the "go-to destination for birthdays" since 1988. Our chefs
-        don't just go through the motions—they read the room and make sure
+        Ready to book your{" "}
+        <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">
+          hibachi birthday party
+        </Link>
+        ? At Jinbeh, we've been the "go-to destination for birthdays" since 1988.
+        Our chefs don't just go through the motions—they read the room and make sure
         every birthday person feels like the star.
       </p>
 
       <p>
         <Link href="/reservations" className="text-accent-red hover:underline">
-          Book online
+          Make a reservation
         </Link>{" "}
         or call us:
       </p>
