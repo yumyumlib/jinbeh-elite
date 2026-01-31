@@ -8,8 +8,6 @@ import ScrollReveal from "@/components/ScrollReveal";
 import WordRotate from "@/components/ui/WordRotate";
 import Marquee from "@/components/ui/Marquee";
 import { BorderBeam } from "@/components/ui/BorderBeam";
-import { RetroGrid } from "@/components/ui/RetroGrid";
-import { AnimatedShinyText } from "@/components/ui/AnimatedShinyText";
 import { useState } from "react";
 
 // Organization Schema for rich snippets
@@ -1351,20 +1349,25 @@ export default function HomePage() {
 
         {/* CTA Section */}
         <section className="py-24 cta-gradient text-white relative overflow-hidden">
-          {/* Premium RetroGrid Background */}
-          <RetroGrid className="opacity-20 [--grid-angle:75deg]" angle={75} />
+          {/* Warm Japanese Seigaiha Wave Pattern Background */}
+          <div
+            className="absolute inset-0 opacity-[0.06]"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'%3E%3Cpath d='M0 25 Q25 0 50 25 Q75 50 100 25 L100 50 L0 50 Z' fill='%23C9A227' fill-opacity='0.5'/%3E%3Cpath d='M0 25 Q25 0 50 25 Q75 50 100 25' stroke='%23F6F1E8' stroke-width='1' fill='none' stroke-opacity='0.3'/%3E%3C/svg%3E")`,
+              backgroundSize: '100px 50px'
+            }}
+          />
 
-          {/* Decorative elements */}
-          <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+          {/* Soft warm glow decorations */}
+          <div className="absolute top-0 left-0 w-64 h-64 bg-soft-gold/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-red/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-soft-gold/5 rounded-full blur-3xl" />
 
           <ScrollReveal>
             <div className="container mx-auto px-6 text-center relative z-10">
               <span className="inline-block w-16 h-1 bg-gradient-to-r from-white/40 to-soft-gold rounded-full mb-8" />
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 italic">
-                <AnimatedShinyText className="text-white dark:text-white" shimmerWidth={150}>
-                  Ready for an Experience?
-                </AnimatedShinyText>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 italic text-white drop-shadow-lg">
+                Ready for an Experience?
               </h2>
               <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
                 Join us at either location for a dining experience that will create
