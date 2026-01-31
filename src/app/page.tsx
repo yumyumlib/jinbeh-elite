@@ -8,7 +8,18 @@ import ScrollReveal from "@/components/ScrollReveal";
 import WordRotate from "@/components/ui/WordRotate";
 import Marquee from "@/components/ui/Marquee";
 import { BorderBeam } from "@/components/ui/BorderBeam";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+// Helper to get dynamic reservation CTA based on day of week
+function getReservationCTA(): string {
+  const day = new Date().getDay();
+  // Friday (5), Saturday (6), Sunday (0) = "This Weekend"
+  // Monday (1) - Thursday (4) = "This Week"
+  if (day === 5 || day === 6 || day === 0) {
+    return "Reserve for This Weekend";
+  }
+  return "Reserve This Week";
+}
 
 // Organization Schema for rich snippets
 const organizationSchema = {
@@ -96,6 +107,12 @@ const faqSchema = {
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
+  const [reservationCTA, setReservationCTA] = useState("Reserve for This Weekend");
+
+  // Update reservation CTA based on day of week (client-side only)
+  useEffect(() => {
+    setReservationCTA(getReservationCTA());
+  }, []);
 
   return (
     <>
@@ -306,7 +323,7 @@ export default function HomePage() {
                   Family-Owned Since 1988
                 </span>
                 <span className="inline-block bg-soft-gold/90 text-charcoal px-5 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg animate-pulse">
-                  Reserve for This Weekend
+                  {reservationCTA}
                 </span>
               </div>
             </ScrollReveal>
