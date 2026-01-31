@@ -5,6 +5,9 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import NumberTicker from "@/components/ui/number-ticker";
 import ScrollReveal from "@/components/ScrollReveal";
+import WordRotate from "@/components/ui/WordRotate";
+import Marquee from "@/components/ui/Marquee";
+import { BorderBeam } from "@/components/ui/BorderBeam";
 import { useState } from "react";
 
 // Organization Schema for rich snippets
@@ -334,7 +337,10 @@ export default function HomePage() {
                     textShadow: '3px 3px 0px rgba(0,0,0,0.9), 6px 6px 10px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.8)',
                     WebkitTextStroke: '1px rgba(0,0,0,0.3)'
                   }}>
-                Dinner and a Show
+                <WordRotate
+                  words={["Dinner and a Show", "A Warm Welcome", "Where Memories Are Made", "The Art of Hibachi"]}
+                  duration={4000}
+                />
               </h1>
             </ScrollReveal>
 
@@ -357,7 +363,8 @@ export default function HomePage() {
             <ScrollReveal delay={500}>
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 {/* Frisco Location Card */}
-                <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl">
+                <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
+                  <BorderBeam size={120} duration={8} colorFrom="#C9A227" colorTo="#C1121F" />
                   <div className="text-center">
                     {/* Location-specific proof hook */}
                     <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
@@ -393,7 +400,8 @@ export default function HomePage() {
                 </div>
 
                 {/* Lewisville Location Card */}
-                <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl">
+                <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
+                  <BorderBeam size={120} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
                     {/* Location-specific proof hook */}
                     <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
@@ -806,70 +814,124 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Testimonial Grid */}
-              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                {/* Testimonial 1 */}
-                <div className="testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                    &ldquo;Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance. We&apos;ve been coming here for 10 years.&rdquo;
-                  </blockquote>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center text-accent-red font-bold">S</div>
-                    <div>
-                      <p className="font-semibold text-charcoal">Sarah M.</p>
-                      <p className="text-xs text-charcoal/50">Frisco • 2 weeks ago</p>
-                    </div>
-                  </div>
-                </div>
+              {/* Testimonial Marquee - Premium Scrolling Effect */}
+              <div className="relative">
+                {/* Gradient Fade Left */}
+                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+                {/* Gradient Fade Right */}
+                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
-                {/* Testimonial 2 */}
-                <div className="testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                    &ldquo;The sushi is unbelievably fresh. The dragon roll and salmon sashimi are perfection. This is our go-to for date night!&rdquo;
-                  </blockquote>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-deep-indigo/10 flex items-center justify-center text-deep-indigo font-bold">M</div>
-                    <div>
-                      <p className="font-semibold text-charcoal">Michael T.</p>
-                      <p className="text-xs text-charcoal/50">Lewisville • 1 month ago</p>
+                <Marquee pauseOnHover duration={40}>
+                  {/* Testimonial 1 */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} colorFrom="#C1121F" colorTo="#C9A227" />
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance. We&apos;ve been coming here for 10 years.&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center text-accent-red font-bold">S</div>
+                      <div>
+                        <p className="font-semibold text-charcoal">Sarah M.</p>
+                        <p className="text-xs text-charcoal/50">Frisco • 2 weeks ago</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Testimonial 3 */}
-                <div className="testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                    &ldquo;Celebrated my daughter&apos;s birthday here. The staff made her feel so special, and the onion volcano was the highlight of her night!&rdquo;
-                  </blockquote>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-soft-gold/20 flex items-center justify-center text-soft-gold font-bold">J</div>
-                    <div>
-                      <p className="font-semibold text-charcoal">Jennifer R.</p>
-                      <p className="text-xs text-charcoal/50">Frisco • 3 weeks ago</p>
+                  {/* Testimonial 2 */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} delay={2} colorFrom="#C9A227" colorTo="#C1121F" />
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;The sushi is unbelievably fresh. The dragon roll and salmon sashimi are perfection. This is our go-to for date night!&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-deep-indigo/10 flex items-center justify-center text-deep-indigo font-bold">M</div>
+                      <div>
+                        <p className="font-semibold text-charcoal">Michael T.</p>
+                        <p className="text-xs text-charcoal/50">Lewisville • 1 month ago</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+
+                  {/* Testimonial 3 */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;Celebrated my daughter&apos;s birthday here. The staff made her feel so special, and the onion volcano was the highlight of her night!&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-soft-gold/20 flex items-center justify-center text-soft-gold font-bold">J</div>
+                      <div>
+                        <p className="font-semibold text-charcoal">Jennifer R.</p>
+                        <p className="text-xs text-charcoal/50">Frisco • 3 weeks ago</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 4 - New */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} delay={6} colorFrom="#C9A227" colorTo="#C1121F" />
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;We drove 45 minutes from Plano and it was worth every mile. The filet mignon hibachi was cooked to absolute perfection!&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-cedar-brown/10 flex items-center justify-center text-cedar-brown font-bold">D</div>
+                      <div>
+                        <p className="font-semibold text-charcoal">David K.</p>
+                        <p className="text-xs text-charcoal/50">Plano • 1 week ago</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 5 - New */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} delay={8} colorFrom="#C1121F" colorTo="#C9A227" />
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;Family-owned feel in every bite. Our server remembered us from last visit. That&apos;s the Jinbeh difference!&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center text-accent-red font-bold">L</div>
+                      <div>
+                        <p className="font-semibold text-charcoal">Lisa W.</p>
+                        <p className="text-xs text-charcoal/50">Frisco • 5 days ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </Marquee>
               </div>
 
               {/* View More Reviews CTA */}
