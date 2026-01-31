@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src="/images/logos/JinbehLogo.png"
+                src="/images/logos/jinbeh-logo-dark.png"
                 alt="Jinbeh Japanese Restaurant"
                 width={160}
                 height={70}
