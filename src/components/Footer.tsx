@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src="/images/logos/jinbeh-logo.avif"
+                src="/images/logos/JinbehLogo.png"
                 alt="Jinbeh Japanese Restaurant"
                 width={160}
                 height={70}
@@ -67,10 +67,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Frisco Location */}
+          {/* Frisco */}
           <div>
             <h3 className="font-heading text-base font-semibold mb-4 text-soft-gold whitespace-nowrap">
-              Frisco Location
+              Frisco
             </h3>
             <address className="not-italic text-warm-ivory/80 space-y-2">
               <p>{frisco.address.street}</p>
@@ -103,10 +103,10 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Lewisville Location */}
+          {/* Lewisville */}
           <div>
             <h3 className="font-heading text-base font-semibold mb-4 text-soft-gold whitespace-nowrap">
-              Lewisville Location
+              Lewisville
             </h3>
             <address className="not-italic text-warm-ivory/80 space-y-2">
               <p>{lewisville.address.street}</p>
