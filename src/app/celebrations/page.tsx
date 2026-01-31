@@ -192,22 +192,22 @@ const groupEvents = [
     icon: "🏢",
   },
   {
-    title: "Team Building",
-    description: "Bond over shared hibachi experiences and build team culture.",
-    href: "/celebrations/team-building",
-    icon: "👥",
+    title: "Baby Shower",
+    description: "Celebrate new arrivals with hibachi fun for the whole family.",
+    href: "/celebrations/baby-shower",
+    icon: "👶",
+  },
+  {
+    title: "Rehearsal Dinner",
+    description: "Celebrate the night before with close family and friends.",
+    href: "/celebrations/rehearsal-dinner",
+    icon: "💒",
   },
   {
     title: "Holiday Parties",
     description: "Host your company holiday party with hibachi entertainment.",
     href: "/celebrations/holiday-parties",
     icon: "🎉",
-  },
-  {
-    title: "Rehearsal Dinner",
-    description: "Celebrate the night before with close family and friends.",
-    href: "/celebrations/rehearsal-dinner",
-    icon: "💍",
   },
   {
     title: "Family Gatherings",

@@ -641,7 +641,11 @@ export default function FriscoPage() {
                 <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Father&apos;s Day</span>
               </Link>
             </div>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-3 max-w-4xl mx-auto">
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 max-w-5xl mx-auto">
+              <Link href="/celebrations/date-night" className="group bg-warm-ivory rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">🌹</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Date Night</span>
+              </Link>
               <Link href="/celebrations/thanksgiving" className="group bg-warm-ivory rounded-lg p-3 text-center hover:shadow-md transition-all">
                 <span className="text-xl mb-1 block">🦃</span>
                 <span className="text-xs text-charcoal group-hover:text-accent-red">Thanksgiving</span>
@@ -661,6 +665,18 @@ export default function FriscoPage() {
               <Link href="/celebrations/anniversary" className="group bg-warm-ivory rounded-lg p-3 text-center hover:shadow-md transition-all">
                 <span className="text-xl mb-1 block">💍</span>
                 <span className="text-xs text-charcoal group-hover:text-accent-red">Anniversary</span>
+              </Link>
+              <Link href="/celebrations/rehearsal-dinner" className="group bg-warm-ivory rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">💒</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Rehearsal Dinner</span>
+              </Link>
+              <Link href="/celebrations/baby-shower" className="group bg-warm-ivory rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">👶</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Baby Shower</span>
+              </Link>
+              <Link href="/celebrations/corporate-events" className="group bg-warm-ivory rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">💼</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Corporate Events</span>
               </Link>
               <Link href="/celebrations" className="group bg-accent-red/10 rounded-lg p-3 text-center hover:shadow-md transition-all">
                 <span className="text-xl mb-1 block">🎉</span>
