@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PhotoGallery from "@/components/PhotoGallery";
+import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import locations from "@/data/locations.json";
 
 // Gallery items for Frisco
@@ -724,8 +725,8 @@ export default function FriscoPage() {
             </div>
             <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
               <Link href="/frisco/hibachi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Menu</Link>
-              <Link href="/frisco/sushi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
-              <Link href="/menu/specialty-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Specialty Rolls</Link>
+              <Link href="/frisco/sushi-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
+              <Link href="/frisco/sashimi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi</Link>
               <Link href="/gift-cards" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/lewisville" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Lewisville Location</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
@@ -734,6 +735,15 @@ export default function FriscoPage() {
             </div>
           </div>
         </section>
+
+        {/* Related Blog Posts */}
+        <RelatedBlogPosts
+          categories={["local-guides", "best-of"]}
+          limit={3}
+          title="Frisco Dining Guides"
+          subtitle="Discover the best hibachi, sushi, and dining experiences in Frisco and North Texas."
+          bgColor="white"
+        />
 
         {/* Sticky Mobile CTA */}
         <div className="sticky-cta-mobile">

@@ -161,39 +161,39 @@ export default function HomePage() {
                     <span>All Articles</span>
                   </Link>
                   <div className="px-2">
-                    <Link href="/blog/category/sushi" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                    <Link href="/blog?category=best-of" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🏆</span>
+                      <div>
+                        <span className="font-medium">Best Of</span>
+                        <p className="text-xs text-charcoal/60">Top picks & recommendations</p>
+                      </div>
+                    </Link>
+                    <Link href="/blog?category=cuisine" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
                       <span className="text-xl group-hover:scale-110 transition-transform">🍣</span>
                       <div>
-                        <span className="font-medium">Sushi Guide</span>
-                        <p className="text-xs text-charcoal/60">Types, tips & recommendations</p>
+                        <span className="font-medium">Japanese Cuisine</span>
+                        <p className="text-xs text-charcoal/60">Sushi, hibachi & more</p>
                       </div>
                     </Link>
-                    <Link href="/blog/category/hibachi" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🔥</span>
-                      <div>
-                        <span className="font-medium">Hibachi Guide</span>
-                        <p className="text-xs text-charcoal/60">Teppanyaki dining experience</p>
-                      </div>
-                    </Link>
-                    <Link href="/blog/category/celebrations" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🎂</span>
+                    <Link href="/blog?category=celebrations" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🎉</span>
                       <div>
                         <span className="font-medium">Celebrations</span>
-                        <p className="text-xs text-charcoal/60">Birthdays, parties & events</p>
+                        <p className="text-xs text-charcoal/60">Party ideas & guides</p>
                       </div>
                     </Link>
-                    <Link href="/blog/category/happy-hour" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🍹</span>
-                      <div>
-                        <span className="font-medium">Happy Hour & Drinks</span>
-                        <p className="text-xs text-charcoal/60">Specials & cocktail guide</p>
-                      </div>
-                    </Link>
-                    <Link href="/blog/category/local-guide" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                    <Link href="/blog?category=local-guides" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
                       <span className="text-xl group-hover:scale-110 transition-transform">📍</span>
                       <div>
-                        <span className="font-medium">Local Guide</span>
-                        <p className="text-xs text-charcoal/60">Best restaurants in DFW</p>
+                        <span className="font-medium">Local Guides</span>
+                        <p className="text-xs text-charcoal/60">Frisco, Lewisville & DFW</p>
+                      </div>
+                    </Link>
+                    <Link href="/blog?category=beverages" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
+                      <span className="text-xl group-hover:scale-110 transition-transform">🍶</span>
+                      <div>
+                        <span className="font-medium">Beverages</span>
+                        <p className="text-xs text-charcoal/60">Sake, whiskey & cocktails</p>
                       </div>
                     </Link>
                   </div>

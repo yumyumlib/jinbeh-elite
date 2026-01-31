@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PhotoGallery from "@/components/PhotoGallery";
+import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import locations from "@/data/locations.json";
 
 // Gallery items for Lewisville
@@ -727,8 +728,8 @@ export default function LewisvillePage() {
             </div>
             <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
               <Link href="/lewisville/hibachi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Menu</Link>
-              <Link href="/lewisville/sushi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
-              <Link href="/menu/specialty-rolls" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Specialty Rolls</Link>
+              <Link href="/lewisville/sushi-rolls" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
+              <Link href="/lewisville/sashimi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi</Link>
               <Link href="/gift-cards" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/frisco" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Frisco Location</Link>
               <Link href="/nearby/flower-mound" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Flower Mound</Link>
@@ -737,6 +738,15 @@ export default function LewisvillePage() {
             </div>
           </div>
         </section>
+
+        {/* Related Blog Posts */}
+        <RelatedBlogPosts
+          slugs={["japanese-restaurants-lewisville", "pickleball-restaurants-lewisville", "seafood-lewisville"]}
+          limit={3}
+          title="Lewisville Dining Guides"
+          subtitle="Discover the best Japanese restaurants and dining experiences in Lewisville and North Texas."
+          bgColor="ivory"
+        />
 
         {/* Sticky Mobile CTA */}
         <div className="sticky-cta-mobile">

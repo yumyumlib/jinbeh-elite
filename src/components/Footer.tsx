@@ -1,17 +1,225 @@
 import Link from "next/link";
 import Image from "next/image";
 import locations from "@/data/locations.json";
+import blogData from "@/data/blog-posts.json";
 
 export default function Footer() {
   const { frisco, lewisville } = locations.locations;
   const { business } = locations;
-
   const currentYear = new Date().getFullYear();
+
+  // Get featured articles for the footer
+  const featuredPosts = blogData.posts
+    .filter((post) => post.featured)
+    .slice(0, 4);
+
+  // Blog categories from actual data
+  const blogCategories = blogData.categories;
 
   return (
     <footer className="bg-charcoal text-warm-ivory">
-      {/* Main Footer */}
-      <div className="container mx-auto px-6 py-16">
+      {/* Upper Footer - Comprehensive Navigation */}
+      <div className="container mx-auto px-6 py-12 border-b border-warm-ivory/10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          {/* Explore Menu */}
+          <div>
+            <h3 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+              Explore Menu
+            </h3>
+            <nav className="space-y-2 text-sm">
+              <Link href="/frisco/hibachi" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Hibachi Grill
+              </Link>
+              <Link href="/frisco/sushi-rolls" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Sushi Rolls
+              </Link>
+              <Link href="/frisco/sashimi" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Sashimi
+              </Link>
+              <Link href="/frisco/appetizers" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Appetizers
+              </Link>
+              <Link href="/frisco/cocktails" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Cocktails & Sake
+              </Link>
+              <Link href="/happy-hour" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Happy Hour
+              </Link>
+              <Link href="/lunch-specials" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Lunch Specials
+              </Link>
+            </nav>
+          </div>
+
+          {/* Celebrations */}
+          <div>
+            <h3 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+              Celebrations
+            </h3>
+            <nav className="space-y-2 text-sm">
+              <Link href="/celebrations/birthday" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Birthday Parties
+              </Link>
+              <Link href="/celebrations/anniversary" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Anniversary Dinners
+              </Link>
+              <Link href="/celebrations/graduation" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Graduation
+              </Link>
+              <Link href="/celebrations/corporate-events" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Corporate Events
+              </Link>
+              <Link href="/celebrations/date-night" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Date Night
+              </Link>
+              <Link href="/celebrations/holiday-parties" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Holiday Parties
+              </Link>
+              <Link href="/celebrations" className="block text-warm-ivory/70 hover:text-accent-red transition-colors font-medium">
+                View All →
+              </Link>
+            </nav>
+          </div>
+
+          {/* Blog Categories */}
+          <div>
+            <h3 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+              Blog & Guides
+            </h3>
+            <nav className="space-y-2 text-sm">
+              {blogCategories.map((cat) => (
+                <Link
+                  key={cat.id}
+                  href={`/blog?category=${cat.id}`}
+                  className="block text-warm-ivory/70 hover:text-accent-red transition-colors"
+                >
+                  {cat.icon} {cat.name}
+                </Link>
+              ))}
+              <Link href="/blog" className="block text-warm-ivory/70 hover:text-accent-red transition-colors font-medium">
+                All Articles →
+              </Link>
+            </nav>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+              Services
+            </h3>
+            <nav className="space-y-2 text-sm">
+              <Link href="/catering" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Catering
+              </Link>
+              <Link href="/catering/corporate" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Corporate Catering
+              </Link>
+              <Link href="/catering/wedding" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Wedding Catering
+              </Link>
+              <Link href="/private-dining" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Private Dining
+              </Link>
+              <Link href="/gift-cards" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Gift Cards
+              </Link>
+              <Link href="/takeout" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Order Takeout
+              </Link>
+            </nav>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+              Service Areas
+            </h3>
+            <nav className="space-y-2 text-sm">
+              <Link href="/frisco" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Frisco
+              </Link>
+              <Link href="/lewisville" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Lewisville
+              </Link>
+              <Link href="/nearby/plano" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Plano
+              </Link>
+              <Link href="/nearby/mckinney" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                McKinney
+              </Link>
+              <Link href="/nearby/the-colony" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                The Colony
+              </Link>
+              <Link href="/nearby/allen" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Allen
+              </Link>
+              <Link href="/nearby/flower-mound" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Flower Mound
+              </Link>
+            </nav>
+          </div>
+
+          {/* Information */}
+          <div>
+            <h3 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+              Information
+            </h3>
+            <nav className="space-y-2 text-sm">
+              <Link href="/about" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                About Us
+              </Link>
+              <Link href="/contact" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Contact
+              </Link>
+              <Link href="/faq" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                FAQ
+              </Link>
+              <Link href="/reservations" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Reservations
+              </Link>
+              <Link href="/menu" className="block text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Full Menu
+              </Link>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      {/* Popular Articles Section */}
+      <div className="container mx-auto px-6 py-8 border-b border-warm-ivory/10">
+        <h3 className="font-heading text-sm font-semibold mb-6 text-soft-gold uppercase tracking-wider">
+          Popular Articles
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {featuredPosts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group flex items-start gap-3 p-3 rounded-lg hover:bg-warm-ivory/5 transition-colors"
+            >
+              <div className="flex-1 min-w-0">
+                <h4 className="text-sm font-medium text-warm-ivory/90 group-hover:text-accent-red transition-colors line-clamp-2">
+                  {post.title}
+                </h4>
+                <p className="text-xs text-warm-ivory/50 mt-1">
+                  {post.readTime} min read
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-4">
+          <Link
+            href="/blog"
+            className="text-sm text-soft-gold hover:text-warm-ivory transition-colors"
+          >
+            Browse all articles →
+          </Link>
+        </div>
+      </div>
+
+      {/* Location Details */}
+      <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div>
@@ -27,7 +235,7 @@ export default function Footer() {
             <p className="text-warm-ivory/70 text-sm italic mb-4">
               {business.tagline}
             </p>
-            <p className="text-warm-ivory/80 mb-4">
+            <p className="text-warm-ivory/80 mb-4 text-sm">
               {business.heritage}
             </p>
             <div className="flex gap-4">
@@ -70,26 +278,25 @@ export default function Footer() {
           {/* Frisco */}
           <div>
             <h3 className="font-heading text-base font-semibold mb-4 text-soft-gold whitespace-nowrap">
-              Frisco
+              Frisco Location
             </h3>
-            <address className="not-italic text-warm-ivory/80 space-y-2">
+            <address className="not-italic text-warm-ivory/80 space-y-1 text-sm">
               <p>{frisco.address.street}</p>
               <p>{frisco.address.suite}</p>
               <p>
                 {frisco.address.city}, {frisco.address.state} {frisco.address.zip}
               </p>
             </address>
-            {/* Prominent Call Button */}
             <a
               href={`tel:${frisco.phoneClean}`}
-              className="inline-flex items-center gap-2 mt-4 bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+              className="inline-flex items-center gap-2 mt-4 bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               {frisco.phone}
             </a>
-            <div className="mt-4 space-y-1 text-sm text-warm-ivory/70">
+            <div className="mt-4 space-y-1 text-xs text-warm-ivory/60">
               <p>Lunch: Mon-Fri {frisco.hours.lunch.weekday.display}</p>
               <p>Weekend: {frisco.hours.lunch.weekend.display}</p>
               <p>Dinner: Sun-Thu {frisco.hours.dinner.sunThurs.display}</p>
@@ -97,7 +304,7 @@ export default function Footer() {
             </div>
             <Link
               href="/frisco"
-              className="inline-block mt-4 text-soft-gold hover:text-warm-ivory transition-colors"
+              className="inline-block mt-3 text-sm text-soft-gold hover:text-warm-ivory transition-colors"
             >
               View Frisco Page →
             </Link>
@@ -106,9 +313,9 @@ export default function Footer() {
           {/* Lewisville */}
           <div>
             <h3 className="font-heading text-base font-semibold mb-4 text-soft-gold whitespace-nowrap">
-              Lewisville
+              Lewisville Location
             </h3>
-            <address className="not-italic text-warm-ivory/80 space-y-2">
+            <address className="not-italic text-warm-ivory/80 space-y-1 text-sm">
               <p>{lewisville.address.street}</p>
               <p>{lewisville.address.suite}</p>
               <p>
@@ -116,17 +323,16 @@ export default function Footer() {
                 {lewisville.address.zip}
               </p>
             </address>
-            {/* Prominent Call Button */}
             <a
               href={`tel:${lewisville.phoneClean}`}
-              className="inline-flex items-center gap-2 mt-4 bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+              className="inline-flex items-center gap-2 mt-4 bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               {lewisville.phone}
             </a>
-            <div className="mt-4 space-y-1 text-sm text-warm-ivory/70">
+            <div className="mt-4 space-y-1 text-xs text-warm-ivory/60">
               <p>Lunch: Mon-Fri {lewisville.hours.lunch.weekday.display}</p>
               <p>Weekend: {lewisville.hours.lunch.weekend.display}</p>
               <p>Dinner: Sun-Thu {lewisville.hours.dinner.sunThurs.display}</p>
@@ -134,55 +340,43 @@ export default function Footer() {
             </div>
             <Link
               href="/lewisville"
-              className="inline-block mt-4 text-soft-gold hover:text-warm-ivory transition-colors"
+              className="inline-block mt-3 text-sm text-soft-gold hover:text-warm-ivory transition-colors"
             >
               View Lewisville Page →
             </Link>
           </div>
 
-          {/* Quick Links */}
+          {/* More Service Areas */}
           <div>
             <h3 className="font-heading text-base font-semibold mb-4 text-soft-gold whitespace-nowrap">
-              Quick Links
+              Also Serving
             </h3>
-            <nav className="space-y-3">
-              <Link
-                href="/menu"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                View Menu
+            <nav className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+              <Link href="/nearby/carrollton" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Carrollton
               </Link>
-              <Link
-                href="/celebrations"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                Celebrations & Events
+              <Link href="/nearby/coppell" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Coppell
               </Link>
-              <Link
-                href="/catering"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                Catering Services
+              <Link href="/nearby/denton" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Denton
               </Link>
-              <Link
-                href="/happy-hour"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                Happy Hour
+              <Link href="/nearby/grapevine" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Grapevine
               </Link>
-              <Link
-                href="/about"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                About Us
+              <Link href="/nearby/highland-village" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Highland Village
               </Link>
-              <Link
-                href="/blog"
-                className="block text-warm-ivory/80 hover:text-accent-red transition-colors"
-              >
-                Blog
+              <Link href="/nearby/little-elm" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Little Elm
+              </Link>
+              <Link href="/nearby/richardson" className="text-warm-ivory/70 hover:text-accent-red transition-colors">
+                Richardson
               </Link>
             </nav>
+            <p className="mt-4 text-xs text-warm-ivory/50">
+              Conveniently located for all of North Texas
+            </p>
           </div>
         </div>
       </div>
@@ -194,7 +388,7 @@ export default function Footer() {
             <p>
               © {currentYear} Jinbeh Japanese Restaurant. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <Link
                 href="/privacy"
                 className="hover:text-warm-ivory transition-colors"
@@ -212,6 +406,12 @@ export default function Footer() {
                 className="hover:text-warm-ivory transition-colors"
               >
                 Accessibility
+              </Link>
+              <Link
+                href="/sitemap.xml"
+                className="hover:text-warm-ivory transition-colors"
+              >
+                Sitemap
               </Link>
             </div>
           </div>

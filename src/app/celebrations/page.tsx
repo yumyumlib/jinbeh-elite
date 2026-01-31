@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -580,6 +581,15 @@ export default function CelebrationsPage() {
         </section>
 
         {/* Related Content Links - SEO Internal Linking */}
+        {/* Related Blog Posts */}
+        <RelatedBlogPosts
+          categories={["celebrations"]}
+          limit={3}
+          title="Celebration Planning Guides"
+          subtitle="Expert tips and ideas for planning the perfect celebration at Jinbeh."
+          bgColor="white"
+        />
+
         <section className="py-12 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <h3 className="font-heading font-bold text-charcoal mb-6 text-center">
