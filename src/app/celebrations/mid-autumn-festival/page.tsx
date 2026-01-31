@@ -329,6 +329,41 @@ export default function MidAutumnFestivalPage() {
           </div>
         </section>
 
+        {/* Related Celebrations - SEO Internal Linking */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h3 className="text-2xl font-heading font-bold text-charcoal text-center mb-8">
+              More Cultural Celebrations at Jinbeh
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+              <Link href="/celebrations/lunar-new-year" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">🐍</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Lunar New Year</span>
+              </Link>
+              <Link href="/celebrations/diwali" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">🪔</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Diwali</span>
+              </Link>
+              <Link href="/celebrations/asian-restaurant-month" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">🎌</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Asian Restaurant Month</span>
+              </Link>
+              <Link href="/celebrations" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">🎉</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">All Celebrations</span>
+              </Link>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
+              <Link href="/frisco/sushi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Frisco Sushi</Link>
+              <Link href="/menu/sashimi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi Platters</Link>
+              <Link href="/menu/sake" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sake Selection</Link>
+              <Link href="/private-dining" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Private Dining</Link>
+              <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
+              <Link href="/nearby/allen" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Allen</Link>
+            </div>
+          </div>
+        </section>
+
         {/* Gift Card CTA */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-6 text-center">

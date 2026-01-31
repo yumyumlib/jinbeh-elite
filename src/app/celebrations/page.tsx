@@ -5,22 +5,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Celebrations | Jinbeh Japanese Restaurant | Birthday, Anniversary & Events",
+  title: "Celebrations & Events | Jinbeh Japanese Restaurant Frisco & Lewisville TX",
   description:
-    "Celebrate life's special moments at Jinbeh! Birthday parties, anniversary dinners, graduations, and group events with hibachi entertainment and fresh sushi in Frisco & Lewisville.",
+    "Celebrate birthdays, anniversaries, holidays & special occasions at Jinbeh! Hibachi entertainment, fresh sushi, private dining. Valentine's Day, Mother's Day, Thanksgiving & more in Frisco & Lewisville TX.",
   keywords: [
     "birthday dinner frisco",
-    "anniversary restaurant frisco",
+    "anniversary restaurant frisco tx",
     "celebration restaurant near me",
     "hibachi birthday party",
-    "group dining frisco",
+    "valentines day dinner frisco",
+    "mothers day restaurant lewisville",
+    "thanksgiving dinner frisco",
+    "christmas dinner lewisville",
+    "lunar new year restaurant dfw",
     "private dining japanese",
     "special occasion restaurant dfw",
-    "birthday restaurants frisco tx",
   ],
   openGraph: {
-    title: "Celebrations | Jinbeh Japanese Restaurant",
-    description: "Make your special moments unforgettable with hibachi entertainment and fresh sushi.",
+    title: "Celebrations & Events | Jinbeh Japanese Restaurant",
+    description: "Make every celebration unforgettable with hibachi entertainment and fresh sushi. Frisco & Lewisville TX.",
     url: "https://jinbeh.com/celebrations",
   },
   alternates: {
@@ -32,63 +35,185 @@ export const metadata: Metadata = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
+  mainEntity: [
     {
       "@type": "Question",
-      "name": "Is Jinbeh good for birthday celebrations?",
-      "acceptedAnswer": {
+      name: "Is Jinbeh good for birthday celebrations?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Absolutely! Jinbeh is perfect for birthday celebrations. Our hibachi chefs create entertainment at your table, and we can accommodate groups of all sizes. The interactive dining experience makes birthdays memorable for all ages.",
+        text: "Absolutely! Jinbeh is perfect for birthday celebrations. Our hibachi chefs create entertainment at your table, and we can accommodate groups of all sizes. The interactive dining experience makes birthdays memorable for all ages.",
       },
     },
     {
       "@type": "Question",
-      "name": "Can Jinbeh accommodate large groups?",
-      "acceptedAnswer": {
+      name: "Is Jinbeh open on holidays like Thanksgiving and Christmas?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Yes! Both our Frisco and Lewisville locations can accommodate large groups and private parties. We recommend making reservations in advance for groups of 8 or more to ensure we can seat you together at a hibachi table.",
+        text: "Yes! Jinbeh is open on most major holidays including Thanksgiving and Christmas Eve. Call ahead to confirm hours and make reservations as holiday tables fill up quickly.",
       },
     },
     {
       "@type": "Question",
-      "name": "Does Jinbeh do anything special for birthdays?",
-      "acceptedAnswer": {
+      name: "Can Jinbeh accommodate large groups for celebrations?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Yes! Let us know you're celebrating a birthday when you make your reservation or when you arrive. Our hibachi chefs love entertaining birthday guests with special performances.",
+        text: "Yes! Both our Frisco and Lewisville locations can accommodate large groups and private parties. Our hibachi tables seat 8-10 people for a shared experience. For groups of 10+ or private events, call us directly.",
       },
     },
     {
       "@type": "Question",
-      "name": "Can I book a private event at Jinbeh?",
-      "acceptedAnswer": {
+      name: "What holidays does Jinbeh celebrate?",
+      acceptedAnswer: {
         "@type": "Answer",
-        "text": "Yes! Contact us directly to discuss private event options, including corporate gatherings, graduation parties, and milestone celebrations. We can create custom menus and arrangements for your group.",
+        text: "Jinbeh welcomes guests celebrating Valentine's Day, Mother's Day, Father's Day, Thanksgiving, Christmas, Lunar New Year, Diwali, Mid-Autumn Festival, and all special occasions. Our hibachi entertainment makes any celebration memorable.",
       },
     },
   ],
 };
 
-const celebrationTypes = [
+// Personal Celebrations
+const personalCelebrations = [
   {
     title: "Birthday Parties",
     description: "Make it a birthday to remember with hibachi entertainment and the legendary onion volcano!",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/family-dining.jpg",
+    image: "/images/food/OnionVolcanoDemo.jpg",
     href: "/celebrations/birthday",
-    features: ["Hibachi chef entertainment", "Group seating available", "Special birthday touches", "All ages welcome"],
+    keywords: "hibachi birthday party, birthday dinner frisco",
   },
   {
     title: "Anniversary Dinners",
-    description: "Celebrate your love with an intimate dining experience featuring fresh sushi and elegant service.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/sushi-platter.jpg",
+    description: "Celebrate your love with fresh sushi, premium sake, and intimate dining at our sushi bar.",
+    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
     href: "/celebrations/anniversary",
-    features: ["Romantic atmosphere", "Premium sushi & sake", "Bar seating for couples", "Special occasion touches"],
+    keywords: "anniversary restaurant frisco, romantic dinner lewisville",
   },
   {
-    title: "Group & Corporate Events",
-    description: "Team dinners, client entertainment, or company celebrations – we've got you covered.",
-    image: "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-grill.jpg",
-    href: "/celebrations/groups",
-    features: ["Large group seating", "Custom menus available", "Private dining options", "Corporate catering"],
+    title: "Date Night",
+    description: "From sushi bar romance to hibachi excitement — the perfect date night awaits.",
+    image: "/images/food/SamaraiRollCloseup.jpg",
+    href: "/celebrations/date-night",
+    keywords: "date night restaurants frisco, romantic dinner",
+  },
+  {
+    title: "Graduation",
+    description: "Honor academic achievements with a celebration the whole family will enjoy.",
+    image: "/images/food/HibachiFriedRiceVegetables.jpg",
+    href: "/celebrations/graduation",
+    keywords: "graduation dinner frisco, celebration restaurant",
+  },
+];
+
+// Holiday Celebrations
+const holidayCelebrations = [
+  {
+    title: "Valentine's Day",
+    description: "Romance meets flavor — celebrate love with hibachi fire or intimate sushi dining.",
+    image: "/images/food/SamaraiRollCloseup.jpg",
+    href: "/celebrations/valentines-day",
+    month: "February",
+    color: "bg-pink-50 border-pink-200",
+  },
+  {
+    title: "Mother's Day",
+    description: "Give Mom a day off! Let us cook while she relaxes and enjoys.",
+    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+    href: "/celebrations/mothers-day",
+    month: "May",
+    color: "bg-purple-50 border-purple-200",
+  },
+  {
+    title: "Father's Day",
+    description: "Treat Dad to premium steak, hibachi entertainment, and Japanese beer.",
+    image: "/images/food/HibachiSteakMealCloseup.jpg",
+    href: "/celebrations/fathers-day",
+    month: "June",
+    color: "bg-blue-50 border-blue-200",
+  },
+  {
+    title: "Thanksgiving",
+    description: "Skip the cooking! Gather the family for stress-free hibachi dining.",
+    image: "/images/food/HibachiFriedRiceVegetables.jpg",
+    href: "/celebrations/thanksgiving",
+    month: "November",
+    color: "bg-orange-50 border-orange-200",
+  },
+  {
+    title: "Christmas",
+    description: "Make holiday magic with sizzling hibachi flames and family memories.",
+    image: "/images/food/OnionVolcanoDemo.jpg",
+    href: "/celebrations/christmas",
+    month: "December",
+    color: "bg-red-50 border-red-200",
+  },
+  {
+    title: "Lunar New Year",
+    description: "Ring in the Year of the Snake with lucky dishes and family gathering.",
+    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+    href: "/celebrations/lunar-new-year",
+    month: "January/February",
+    color: "bg-red-50 border-red-200",
+  },
+];
+
+// Cultural & Specialty Events
+const culturalCelebrations = [
+  {
+    title: "Asian Restaurant Month",
+    description: "Celebrate AAPI Heritage Month in May — support 37 years of family tradition.",
+    href: "/celebrations/asian-restaurant-month",
+    month: "May",
+  },
+  {
+    title: "Diwali",
+    description: "Festival of Lights meets hibachi flames — perfect for family gatherings.",
+    href: "/celebrations/diwali",
+    month: "October/November",
+  },
+  {
+    title: "Mid-Autumn Festival",
+    description: "Gather under the harvest moon for a family feast.",
+    href: "/celebrations/mid-autumn-festival",
+    month: "September/October",
+  },
+  {
+    title: "National Fried Rice Day",
+    description: "September 20th — celebrate with the best hibachi fried rice in DFW!",
+    href: "/celebrations/national-fried-rice-day",
+    month: "September 20",
+  },
+];
+
+// Group Events
+const groupEvents = [
+  {
+    title: "Corporate Events",
+    description: "Team dinners, client entertainment, and company celebrations.",
+    href: "/celebrations/corporate-events",
+    icon: "🏢",
+  },
+  {
+    title: "Team Building",
+    description: "Bond over shared hibachi experiences and build team culture.",
+    href: "/celebrations/team-building",
+    icon: "👥",
+  },
+  {
+    title: "Holiday Parties",
+    description: "Host your company holiday party with hibachi entertainment.",
+    href: "/celebrations/holiday-parties",
+    icon: "🎉",
+  },
+  {
+    title: "Rehearsal Dinner",
+    description: "Celebrate the night before with close family and friends.",
+    href: "/celebrations/rehearsal-dinner",
+    icon: "💍",
+  },
+  {
+    title: "Family Gatherings",
+    description: "Reunions, family milestones, and multi-generational celebrations.",
+    href: "/celebrations/family-gatherings",
+    icon: "👨‍👩‍👧‍👦",
   },
 ];
 
@@ -111,78 +236,191 @@ export default function CelebrationsPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
+            poster="/images/food/OnionVolcanoDemo.jpg"
+            aria-label="Hibachi chef creating onion volcano flame at Jinbeh"
           >
             <source
-              src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
+              src="/videos/lewisville/hibachi-fire-02.mp4"
               type="video/mp4"
             />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              It&apos;s a Celebration!
+              Birthdays • Anniversaries • Holidays • Events
             </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              Celebrate With Us
+            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
+              Celebrate at Jinbeh
             </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto">
-              Birthdays, anniversaries, graduations, promotions – every milestone
-              deserves dinner and a show at Jinbeh.
+            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
+              Every milestone deserves dinner and a show. From{" "}
+              <Link href="/celebrations/birthday" className="underline hover:text-soft-gold">birthday parties</Link> to{" "}
+              <Link href="/celebrations/thanksgiving" className="underline hover:text-soft-gold">Thanksgiving feasts</Link>,
+              we make celebrations unforgettable.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/frisco#reserve"
+                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
+              >
+                Reserve Frisco
+              </Link>
+              <Link
+                href="/lewisville#reserve"
+                className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
+              >
+                Reserve Lewisville
+              </Link>
+            </div>
           </div>
         </section>
 
-        {/* Celebration Types */}
+        {/* Holiday Celebrations Section */}
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                What Are You Celebrating?
+                Holiday Celebrations
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Every occasion is special at Jinbeh. Choose your celebration type to learn more.
+                Skip the cooking and celebrate holidays at Jinbeh. Our{" "}
+                <Link href="/frisco/hibachi" className="text-accent-red hover:underline">hibachi chefs</Link> and{" "}
+                <Link href="/menu" className="text-accent-red hover:underline">fresh sushi</Link> make every
+                holiday special.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {celebrationTypes.map((type) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {holidayCelebrations.map((holiday) => (
                 <Link
-                  key={type.title}
-                  href={type.href}
-                  className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                  key={holiday.title}
+                  href={holiday.href}
+                  className={`group p-6 rounded-2xl border-2 ${holiday.color} hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
                 >
-                  <div className="relative h-56 overflow-hidden">
+                  <span className="text-xs font-medium text-charcoal/50 uppercase tracking-wider">
+                    {holiday.month}
+                  </span>
+                  <h3 className="text-xl font-heading font-bold text-charcoal mt-1 mb-2 group-hover:text-accent-red transition-colors">
+                    {holiday.title}
+                  </h3>
+                  <p className="text-charcoal/70 text-sm mb-4">{holiday.description}</p>
+                  <span className="inline-flex items-center gap-1 text-accent-red font-medium text-sm group-hover:gap-2 transition-all">
+                    Learn More →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Personal Celebrations */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                Personal Celebrations
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                Life&apos;s special moments deserve special dining. Whether it&apos;s a{" "}
+                <Link href="/celebrations/birthday" className="text-accent-red hover:underline">hibachi birthday</Link>,{" "}
+                <Link href="/celebrations/anniversary" className="text-accent-red hover:underline">anniversary dinner</Link>, or{" "}
+                <Link href="/celebrations/date-night" className="text-accent-red hover:underline">romantic date night</Link> —
+                we&apos;ve got you covered.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {personalCelebrations.map((celebration) => (
+                <Link
+                  key={celebration.title}
+                  href={celebration.href}
+                  className="group bg-warm-ivory rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                >
+                  <div className="relative h-48 overflow-hidden">
                     <Image
-                      src={type.image}
-                      alt={type.title}
+                      src={celebration.image}
+                      alt={celebration.title}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <h3 className="absolute bottom-4 left-6 right-6 font-heading text-2xl font-bold text-white">
-                      {type.title}
+                    <h3 className="absolute bottom-4 left-4 right-4 font-heading text-xl font-bold text-white">
+                      {celebration.title}
                     </h3>
                   </div>
-                  <div className="p-6">
-                    <p className="text-charcoal/70 mb-6">{type.description}</p>
-                    <ul className="space-y-2 mb-6">
-                      {type.features.map((feature) => (
-                        <li key={feature} className="flex items-center gap-2 text-sm text-charcoal/80">
-                          <svg className="w-4 h-4 text-accent-red flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <span className="inline-flex items-center gap-2 text-accent-red font-medium group-hover:gap-3 transition-all">
-                      Learn More
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
+                  <div className="p-5">
+                    <p className="text-charcoal/70 text-sm mb-3">{celebration.description}</p>
+                    <span className="inline-flex items-center gap-1 text-accent-red font-medium text-sm group-hover:gap-2 transition-all">
+                      Plan Your Celebration →
                     </span>
                   </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Cultural & Specialty Events */}
+        <section className="py-20 bg-charcoal text-white">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Cultural & Specialty Events
+              </h2>
+              <p className="text-lg text-warm-ivory/70 max-w-2xl mx-auto">
+                Celebrate cultural traditions and food holidays with authentic{" "}
+                <Link href="/menu" className="text-soft-gold hover:underline">Japanese cuisine</Link>. As an{" "}
+                <Link href="/celebrations/asian-restaurant-month" className="text-soft-gold hover:underline">Asian-owned restaurant</Link>{" "}
+                since 1988, we honor traditions from across cultures.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {culturalCelebrations.map((event) => (
+                <Link
+                  key={event.title}
+                  href={event.href}
+                  className="group bg-white/10 backdrop-blur rounded-xl p-6 hover:bg-white/20 transition-all"
+                >
+                  <span className="text-xs font-medium text-soft-gold uppercase tracking-wider">
+                    {event.month}
+                  </span>
+                  <h3 className="text-lg font-heading font-bold text-white mt-1 mb-2 group-hover:text-soft-gold transition-colors">
+                    {event.title}
+                  </h3>
+                  <p className="text-warm-ivory/70 text-sm">{event.description}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Group Events */}
+        <section className="py-20 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                Group & Corporate Events
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                Need <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> or{" "}
+                <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">catering</Link> for
+                your group? Our hibachi tables seat 8-10, perfect for shared experiences.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+              {groupEvents.map((event) => (
+                <Link
+                  key={event.title}
+                  href={event.href}
+                  className="group bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all hover:-translate-y-1"
+                >
+                  <span className="text-3xl mb-3 block">{event.icon}</span>
+                  <h3 className="font-heading font-bold text-charcoal mb-2 group-hover:text-accent-red transition-colors">
+                    {event.title}
+                  </h3>
+                  <p className="text-charcoal/60 text-xs">{event.description}</p>
                 </Link>
               ))}
             </div>
@@ -197,68 +435,114 @@ export default function CelebrationsPage() {
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
                   Why Celebrate at Jinbeh?
                 </h2>
-                <p className="text-lg text-charcoal/70 mb-8">
-                  It&apos;s more than dinner – it&apos;s dinner and a show! Our hibachi chefs
-                  bring entertainment and excitement to every celebration, making
-                  memories that last a lifetime.
+                <p className="text-lg text-charcoal/70 mb-6">
+                  Since 1988, families have trusted Jinbeh for life&apos;s biggest moments.
+                  Our <Link href="/frisco/hibachi" className="text-accent-red hover:underline">teppanyaki chefs</Link> bring
+                  entertainment to every table, and our{" "}
+                  <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">fresh sushi</Link> satisfies
+                  the most discerning palates.
                 </p>
 
-                <div className="space-y-6">
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-accent-red/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                      </svg>
+                <div className="space-y-4 mb-8">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 bg-accent-red/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      🔥
                     </div>
                     <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Live Entertainment</h3>
+                      <h3 className="font-semibold text-charcoal">Live Hibachi Entertainment</h3>
                       <p className="text-charcoal/70 text-sm">
-                        Hibachi chefs perform tableside with flames, tricks, and the famous onion volcano.
+                        Flames, tricks, and the famous{" "}
+                        <Link href="/celebrations/national-fried-rice-day" className="text-accent-red hover:underline">onion volcano</Link>.
                       </p>
                     </div>
                   </div>
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 bg-deep-indigo/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      👨‍👩‍👧‍👦
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-charcoal">Group-Friendly Seating</h3>
+                      <p className="text-charcoal/70 text-sm">
+                        Communal tables seat 8-10 for shared celebrations.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 bg-soft-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      🍣
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-charcoal">Fresh Sushi Daily</h3>
+                      <p className="text-charcoal/70 text-sm">
+                        From <Link href="/frisco/sashimi" className="text-accent-red hover:underline">sashimi</Link> to{" "}
+                        <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-deep-indigo/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-deep-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Group-Friendly</h3>
-                      <p className="text-charcoal/70 text-sm">
-                        Communal hibachi tables seat 8-10 people, perfect for celebrating together.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-soft-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Special Touches</h3>
-                      <p className="text-charcoal/70 text-sm">
-                        Let us know you&apos;re celebrating and we&apos;ll make it extra special.
-                      </p>
-                    </div>
-                  </div>
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/menu" className="btn bg-charcoal text-white hover:bg-charcoal/90 px-6 py-3 rounded-xl font-semibold">
+                    View Menu
+                  </Link>
+                  <Link href="/private-dining" className="btn bg-warm-ivory text-charcoal hover:bg-warm-ivory/80 px-6 py-3 rounded-xl font-semibold">
+                    Private Dining
+                  </Link>
                 </div>
               </div>
 
               <div className="relative">
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://jinbeh.com/wp-content/uploads/2023/01/chef-flames.jpg"
-                    alt="Hibachi chef creating flames at Jinbeh"
+                    src="/images/food/OnionVolcanoDemo.jpg"
+                    alt="Hibachi chef creating onion volcano at Jinbeh celebration"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 -z-10 w-full h-full rounded-2xl bg-accent-red/10" />
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Locations Quick Links */}
+        <section className="py-16 bg-deep-indigo/5">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal text-center mb-8">
+              Two Convenient Locations
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link
+                href="/frisco"
+                className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all flex items-center gap-4"
+              >
+                <div className="w-16 h-16 bg-accent-red/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-accent-red/20 transition-colors">
+                  <span className="text-2xl">📍</span>
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors">
+                    Jinbeh Frisco
+                  </h3>
+                  <p className="text-charcoal/60 text-sm">Near Stonebriar Centre</p>
+                  <p className="text-accent-red text-sm font-medium">(214) 618-9888</p>
+                </div>
+              </Link>
+              <Link
+                href="/lewisville"
+                className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all flex items-center gap-4"
+              >
+                <div className="w-16 h-16 bg-deep-indigo/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-deep-indigo/20 transition-colors">
+                  <span className="text-2xl">📍</span>
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-deep-indigo transition-colors">
+                    Jinbeh Lewisville
+                  </h3>
+                  <p className="text-charcoal/60 text-sm">Near Vista Ridge Mall</p>
+                  <p className="text-deep-indigo text-sm font-medium">(214) 618-9798</p>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -270,26 +554,75 @@ export default function CelebrationsPage() {
               Ready to Celebrate?
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
-              Reserve your table and let us help make your special occasion unforgettable.
-              For large groups, call us directly for the best seating arrangements.
+              Reserve your table for any occasion. From{" "}
+              <Link href="/celebrations/birthday" className="underline hover:text-soft-gold">birthdays</Link> to{" "}
+              <Link href="/celebrations/christmas" className="underline hover:text-soft-gold">Christmas</Link>,
+              we&apos;ll make it unforgettable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/frisco#reserve"
-                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
+              <a
+                href="tel:2146189888"
+                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center justify-center gap-2"
               >
-                Reserve at Frisco
-              </Link>
-              <Link
-                href="/lewisville#reserve"
-                className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
+                <span>📞</span> Frisco: (214) 618-9888
+              </a>
+              <a
+                href="tel:2146189798"
+                className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center justify-center gap-2"
               >
-                Reserve at Lewisville
-              </Link>
+                <span>📞</span> Lewisville: (214) 618-9798
+              </a>
             </div>
             <p className="mt-8 text-white/70 text-sm">
-              For groups of 10+ or private events, call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224
+              <Link href="/gift-cards" className="underline hover:text-soft-gold">Gift cards</Link> available for the perfect celebration gift!
             </p>
+          </div>
+        </section>
+
+        {/* Related Content Links - SEO Internal Linking */}
+        <section className="py-12 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h3 className="font-heading font-bold text-charcoal mb-6 text-center">
+              Explore More
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto text-sm">
+              <Link href="/menu" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Full Menu
+              </Link>
+              <Link href="/frisco/hibachi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Hibachi Menu
+              </Link>
+              <Link href="/frisco/sushi-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Sushi Rolls
+              </Link>
+              <Link href="/happy-hour" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Happy Hour
+              </Link>
+              <Link href="/lunch-specials" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Lunch Specials
+              </Link>
+              <Link href="/private-dining" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Private Dining
+              </Link>
+              <Link href="/blog/hibachi-birthday-party-ideas" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Birthday Party Ideas
+              </Link>
+              <Link href="/blog/romantic-anniversary-dinners" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Anniversary Ideas
+              </Link>
+              <Link href="/blog/thanksgiving-dining-guide" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Thanksgiving Guide
+              </Link>
+              <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Near Plano
+              </Link>
+              <Link href="/nearby/mckinney" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Near McKinney
+              </Link>
+              <Link href="/nearby/flower-mound" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Near Flower Mound
+              </Link>
+            </div>
           </div>
         </section>
       </main>

@@ -85,8 +85,8 @@ const restaurantSchema = {
   hasMenu: location.menus.lunch,
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.6",
-    reviewCount: "482",
+    ratingValue: "4.4",
+    reviewCount: "650",
     bestRating: "5",
     worstRating: "1",
   },
@@ -208,52 +208,69 @@ export default function LewisvillePage() {
         {/* Trust Signals Bar */}
         <section className="py-6 bg-white border-b border-warm-ivory-dark">
           <div className="container mx-auto px-6">
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
               {/* Google Rating */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                <div className="flex text-soft-gold">
+                  {[...Array(4)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                  <svg className="w-4 h-4 fill-current opacity-40" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-semibold text-charcoal text-sm">4.4 Google</p>
+                </div>
+              </div>
+
+              {/* OpenTable Rating */}
+              <div className="flex items-center gap-2">
                 <div className="flex text-soft-gold">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
                 <div>
-                  <p className="font-semibold text-charcoal">4.6 Stars</p>
-                  <p className="text-xs text-charcoal/60">480+ Google Reviews</p>
+                  <p className="font-semibold text-charcoal text-sm">4.8 OpenTable</p>
+                </div>
+              </div>
+
+              {/* Grubhub Rating */}
+              <div className="flex items-center gap-2">
+                <div className="flex text-soft-gold">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <div>
+                  <p className="font-semibold text-charcoal text-sm">4.8 Grubhub</p>
                 </div>
               </div>
 
               {/* Years in Business */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-deep-indigo/10 rounded-full flex items-center justify-center">
-                  <span className="text-xl">🏆</span>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-deep-indigo/10 rounded-full flex items-center justify-center">
+                  <span className="text-lg">🏆</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-charcoal">Since 1988</p>
-                  <p className="text-xs text-charcoal/60">37+ Years of Excellence</p>
+                  <p className="font-semibold text-charcoal text-sm">Since 1988</p>
                 </div>
               </div>
 
               {/* Family Owned */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-accent-red/10 rounded-full flex items-center justify-center">
-                  <span className="text-xl">👨‍👩‍👧‍👦</span>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-accent-red/10 rounded-full flex items-center justify-center">
+                  <span className="text-lg">👨‍👩‍👧‍👦</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-charcoal">Family-Owned</p>
-                  <p className="text-xs text-charcoal/60">Local DFW Tradition</p>
-                </div>
-              </div>
-
-              {/* Best Sushi */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-soft-gold/20 rounded-full flex items-center justify-center">
-                  <span className="text-xl">🍣</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-charcoal">Best Sushi</p>
-                  <p className="text-xs text-charcoal/60">Lewisville, Texas</p>
+                  <p className="font-semibold text-charcoal text-sm">Family-Owned</p>
                 </div>
               </div>
             </div>
@@ -588,13 +605,69 @@ export default function LewisvillePage() {
           </div>
         </section>
 
-        {/* Quick Links */}
+        {/* Popular Celebrations at Lewisville */}
         <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-4">
+              Celebrate Special Occasions
+            </h2>
+            <p className="text-center text-charcoal/70 mb-12 max-w-2xl mx-auto">
+              From birthdays to holidays, Jinbeh Lewisville is the perfect place to create lasting memories
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+              <Link href="/celebrations/birthday" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all">
+                <span className="text-2xl mb-2 block">🎂</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Birthday Parties</span>
+              </Link>
+              <Link href="/celebrations/valentines-day" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all">
+                <span className="text-2xl mb-2 block">💕</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Valentine&apos;s Day</span>
+              </Link>
+              <Link href="/celebrations/mothers-day" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all">
+                <span className="text-2xl mb-2 block">💐</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Mother&apos;s Day</span>
+              </Link>
+              <Link href="/celebrations/fathers-day" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all">
+                <span className="text-2xl mb-2 block">👔</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Father&apos;s Day</span>
+              </Link>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-3 max-w-4xl mx-auto">
+              <Link href="/celebrations/thanksgiving" className="group bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">🦃</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Thanksgiving</span>
+              </Link>
+              <Link href="/celebrations/christmas" className="group bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">🎄</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Christmas</span>
+              </Link>
+              <Link href="/celebrations/lunar-new-year" className="group bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">🐍</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Lunar New Year</span>
+              </Link>
+              <Link href="/celebrations/graduation" className="group bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">🎓</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Graduation</span>
+              </Link>
+              <Link href="/celebrations/anniversary" className="group bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">💍</span>
+                <span className="text-xs text-charcoal group-hover:text-accent-red">Anniversary</span>
+              </Link>
+              <Link href="/celebrations" className="group bg-accent-red/10 rounded-lg p-3 text-center hover:shadow-md transition-all">
+                <span className="text-xl mb-1 block">🎉</span>
+                <span className="text-xs text-accent-red font-medium">All Events</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Links */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-6">
             <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Explore More
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
               <Link
                 href="/lewisville/menu"
                 className="card text-center hover:border-accent-red"
@@ -617,12 +690,22 @@ export default function LewisvillePage() {
                 <span className="font-medium text-charcoal">Catering</span>
               </Link>
               <Link
-                href="/celebrations"
+                href="/private-dining"
                 className="card text-center hover:border-accent-red"
               >
                 <span className="text-3xl mb-2 block">🏮</span>
-                <span className="font-medium text-charcoal">Celebrations</span>
+                <span className="font-medium text-charcoal">Private Dining</span>
               </Link>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
+              <Link href="/lewisville/hibachi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Menu</Link>
+              <Link href="/lewisville/sushi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
+              <Link href="/menu/specialty-rolls" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Specialty Rolls</Link>
+              <Link href="/gift-cards" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
+              <Link href="/frisco" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Frisco Location</Link>
+              <Link href="/nearby/flower-mound" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Flower Mound</Link>
+              <Link href="/nearby/highland-village" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Highland Village</Link>
+              <Link href="/nearby/carrollton" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
           </div>
         </section>

@@ -381,6 +381,41 @@ export default function ValentinesDayPage() {
             </Link>
           </div>
         </section>
+
+        {/* Related Celebrations - SEO Internal Linking */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h3 className="text-2xl font-heading font-bold text-charcoal text-center mb-8">
+              More Ways to Celebrate at Jinbeh
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+              <Link href="/celebrations/date-night" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">💕</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Date Night</span>
+              </Link>
+              <Link href="/celebrations/anniversary" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">💍</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Anniversary</span>
+              </Link>
+              <Link href="/celebrations/mothers-day" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">💐</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">Mother&apos;s Day</span>
+              </Link>
+              <Link href="/celebrations" className="group bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all">
+                <span className="text-2xl mb-2 block">🎉</span>
+                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors text-sm">All Celebrations</span>
+              </Link>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
+              <Link href="/frisco/sushi-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Rolls</Link>
+              <Link href="/frisco/sashimi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Fresh Sashimi</Link>
+              <Link href="/happy-hour" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Happy Hour</Link>
+              <Link href="/blog/date-night-restaurants-frisco" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Date Night Guide</Link>
+              <Link href="/blog/romantic-anniversary-dinners" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Anniversary Ideas</Link>
+              <Link href="/blog/sake-sushi-menu-pairings" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sake Pairings</Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
