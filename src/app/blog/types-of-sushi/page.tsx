@@ -33,17 +33,51 @@ const articleSchema = {
 };
 
 const faqs = [
-    { question: "What's the difference between nigiri and sashimi?", answer: "Nigiri is raw fish on rice. Sashimi is raw fish, no rice. Both showcase fish quality. Nigiri adds rice texture and flavor." },
-    { question: "What sushi is best for beginners?", answer: "Welcome to sushi! Try California Roll, Shrimp Tempura, or Philadelphia Roll. They're cooked and mild. Easy way to start exploring." },
-    { question: "What's the most popular sushi roll?", answer: "California Roll is America's favorite. At Jinbeh, our Dragon Roll and Spicy Tuna are customer favorites too. Our chefs can recommend your perfect roll." },
-    { question: "What's fresh and flavorful sushi?", answer: "We use fresh, never-frozen fish. Our sushi chefs are trained for years. Proper rice seasoning, expert knife work, traditional technique." },
-    { question: "Can I try different sushi at Jinbeh?", answer: "Yes! We have rolls, nigiri, sashimi, specialty creations. Sushi bar seating lets you watch our chefs work. Frisco (214) 619-1200 or Lewisville (214) 488-2224." },
+    {
+        question: "What's the difference between nigiri and sashimi?",
+        answer: "Nigiri is a slice of raw fish placed on top of a small mound of seasoned rice, while sashimi is pure raw fish sliced thin with no rice. Both showcase the quality and freshness of the fish, but nigiri adds the texture and subtle sweetness of properly seasoned sushi rice. Nigiri is more filling, while sashimi is lighter and lower-carb. Both are excellent ways to appreciate premium fish!"
+    },
+    {
+        question: "What sushi is best for beginners?",
+        answer: "Welcome to sushi! We recommend starting with cooked rolls like California Roll, Philadelphia Roll, or Shrimp Tempura Roll—they're milder in flavor and help newcomers ease into sushi before trying raw fish. You can also try cooked nigiri options like tamago (egg) or cooked shrimp. At Jinbeh, our experienced staff can guide you through our menu based on your comfort level and taste preferences."
+    },
+    {
+        question: "What's the most popular sushi roll?",
+        answer: "The California Roll is America's most beloved sushi roll. At Jinbeh, our Dragon Roll (eel, cucumber, avocado with unagi sauce), Spicy Tuna Roll, and Rainbow Roll are customer favorites. Our chefs can recommend the perfect roll based on your preferences—whether you like cooked or raw fish, spicy or mild flavors, or adventurous combinations."
+    },
+    {
+        question: "How do I order fresh, high-quality sushi?",
+        answer: "Quality sushi starts with fresh, never-frozen fish and expert preparation. At Jinbeh, we source premium fish daily and our sushi chefs train for years to master proper rice seasoning, knife work, and traditional hand-rolling techniques. Ask our staff about our fish selection, or sit at the sushi bar to watch the chefs work their magic. Our commitment to quality is evident in every piece."
+    },
+    {
+        question: "Can I try different sushi types at Jinbeh?",
+        answer: "Absolutely! We offer nigiri, sashimi, maki rolls, specialty rolls, hand rolls, and omakase experiences. You can order à la carte or try our sushi platters that showcase multiple varieties. Sit at the sushi bar to watch our chefs prepare each piece, or relax at a table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about specials, or visit our menu online."
+    },
+    {
+        question: "What's the proper way to eat sushi?",
+        answer: "You can use chopsticks or your fingers—both are acceptable! Dip the fish side (not the rice) lightly into soy sauce to avoid it getting soggy. Eat nigiri in one bite if possible to enjoy all the flavors together. Use pickled ginger as a palate cleanser between pieces, not as a topping. Wasabi is optional—add it directly to your soy sauce or the sushi itself based on your spice preference."
+    },
+    {
+        question: "Are there vegetarian sushi options?",
+        answer: "Yes! We offer plenty of vegetarian rolls including cucumber roll (Kappa Maki), avocado roll, vegetable tempura roll, and creative specialty rolls with vegetables and fruits. Vegetarian nigiri options include tamago (egg) and cooked items. Let our staff know your vegetarian preferences, and we'll guide you to delicious options that showcase great flavors and technique."
+    },
+    {
+        question: "What's the difference between sushi and sashimi platters?",
+        answer: "A sushi platter typically includes nigiri and rolls (rice-based dishes), while a sashimi platter features only sliced raw fish. Sushi platters are more filling and offer variety in preparation styles. Sashimi platters are perfect for fish lovers who want to focus on the quality and flavor of premium fish without rice. Many guests order both to explore different aspects of Japanese cuisine!"
+    },
 ];
 
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+    mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+        },
+    })),
 };
 
 export default function TypesOfSushi() {
@@ -334,60 +368,17 @@ export default function TypesOfSushi() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What is the difference between nigiri and sashimi?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    <strong>Nigiri</strong> is a slice of raw fish placed on top of a small mound of seasoned rice,
-                                                    while <strong>sashimi</strong> is just the raw fish without any rice. Both showcase the quality
-                                                    of the fish, but nigiri offers the added texture and flavor of the rice.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What sushi is best for beginners?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    We recommend starting with <strong>cooked rolls</strong> like the California Roll,
-                                                    Shrimp Tempura Roll, or Philadelphia Roll. These are milder in flavor and help
-                                                    newcomers ease into sushi before trying raw fish. Learn more in our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">beginner sushi tips</Link>.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What is the most popular sushi roll?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    The <strong>California Roll</strong> is the most popular sushi roll in America.
-                                                    At Jinbeh, our Dragon Roll and Spicy Tuna Roll are also customer favorites.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How do I eat sushi properly?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Dip the <strong>fish side</strong> (not the rice) lightly into soy sauce.
-                                                    Eat in one bite if possible. Use ginger as a palate cleanser between pieces,
-                                                    not as a topping. And chopsticks or fingers are both acceptable for nigiri!
-                                                </p>
-                                            </div>
-                                        </details>
+                                        {faqs.map((faq, index) => (
+                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                                    {faq.question}
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                                </summary>
+                                                <div className="px-6 pb-6 text-charcoal/80">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            </details>
+                                        ))}
                                     </div>
                                 </div>
 

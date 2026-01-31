@@ -24,11 +24,38 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-    { question: "What sake pairs best with sushi?", answer: "Welcome to sake! Junmai and Ginjo sakes work wonderfully. Ginjo is crisp and delicate with raw fish. Junmai is fuller with earthy notes. Choose dry sake (Karakuchi) for nigiri." },
-    { question: "Should sake be served hot or cold?", answer: "Premium sakes like Ginjo are best chilled (50-55°F). Junmai can be warm (104-113°F) or room temperature. Warmer service brings richer flavors. Chilled feels refreshing." },
-    { question: "What sake pairs with hibachi?", answer: "Go fuller-bodied! Junmai or Honjozo complement grilled proteins and vegetables. These robust sakes match the bold, grilled flavors. Warm sake intensifies the pairing." },
-    { question: "Can sake pair with appetizers?", answer: "Absolutely! Sparkling sake (Hana Awaka) works with fried appetizers. Dry Honjozo complements edamame and gyoza. Match intensity: lighter apps get lighter sake." },
-    { question: "How do I order sake at Jinbeh?", answer: "Our bartenders are happy to guide you! Tell them your preferences. We have sake flights for tasting. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about selections." }
+    {
+        question: "What sake pairs best with sushi?",
+        answer: "Junmai and Ginjo sakes are excellent choices with sushi. Ginjo's crisp, delicate flavors complement raw fish beautifully without overpowering it, while Junmai offers fuller body with earthy notes that work well with richer fish like toro. For nigiri specifically, choose a dry sake (Karakuchi) and serve well-chilled at 50-55°F. For sashimi, a premium Ginjo or fruity Junmai shines. The key is matching the sake's intensity to the fish's delicacy."
+    },
+    {
+        question: "Should sake be served hot or cold?",
+        answer: "Temperature matters! Premium sakes like Ginjo and Daiginjo are best served chilled (50-55°F) to highlight their delicate, fruity aromatics. Junmai and Honjozo can be enjoyed warm (104-113°F) or at room temperature, depending on the food. Warmer sake brings out richer, earthier flavors that complement grilled and fried dishes. Chilled sake feels refreshing with light appetizers and sashimi. Experiment to find your preference!"
+    },
+    {
+        question: "What sake pairs with hibachi and grilled foods?",
+        answer: "Go fuller-bodied! Junmai or Honjozo are ideal for hibachi's bold, grilled flavors. These robust sakes with more character won't get lost next to the intense heat and caramelized notes from the grill. Serve warm (104-113°F) to intensify the pairing—the warmth mirrors the heat of the grill and brings out umami. The combination is especially delicious with grilled proteins and fried rice."
+    },
+    {
+        question: "Can sake pair with appetizers and small plates?",
+        answer: "Absolutely! Sparkling sake (Hana Awaka) works wonderfully with fried appetizers and spring rolls due to its light bubbles and refreshing quality. Dry Honjozo complements edamame and gyoza. Aged Koshu pairs beautifully with rich, cream-based appetizers. The key is matching intensity—lighter appetizers pair with delicate sakes, heavier fried foods pair with fuller-bodied options. Let our staff help you find the perfect match!"
+    },
+    {
+        question: "How do I order sake at Jinbeh?",
+        answer: "Our trained bartenders love helping guests discover their perfect sake! Tell them your preferences—what foods you're ordering, whether you like delicate or bold flavors, and your preferred temperature. We offer sake flights for tasting multiple styles, glass pours, and bottle selections. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about our current sake selections and special pairings."
+    },
+    {
+        question: "What does SMV (Sake Meter Value) mean?",
+        answer: "SMV indicates whether sake is dry or sweet. A positive SMV (+) means drier sake, negative SMV (-) means sweeter. For example, SMV +5 is quite dry, while SMV -3 is sweetish. For food pairing, dry sakes (SMV +3 to +6) work well with most savory dishes and sushi, while slightly sweet sakes (SMV -3 to 0) pair nicely with spicy dishes, fried foods, or rich appetizers. Ask our staff to explain the SMV of any sake you're considering!"
+    },
+    {
+        question: "Is there a difference between premium and regular sake?",
+        answer: "Yes! Premium sakes like Ginjo and Daiginjo are refined through polishing more rice away, resulting in delicate, fruity, floral profiles—perfect for sushi. Regular sakes like Honjozo are more approachable, crisper, and pair well with everyday meals and fried foods. Fuller-bodied Junmai offers earthier flavors ideal for grilled foods. Price and quality both matter, but the 'best' sake depends on what you're eating. Our staff can guide you through options at any price point!"
+    },
+    {
+        question: "Can I bring sake to Jinbeh, or should I order from your list?",
+        answer: "We have a thoughtfully curated sake selection specifically chosen to pair with our menu. We recommend exploring our offerings with the guidance of our knowledgeable staff. However, regarding outside bottles, please contact us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about our corkage policy. Either way, we're committed to enhancing your Japanese dining experience with the perfect beverage!"
+    },
 ];
 
 const articleSchema = {
@@ -45,48 +72,14 @@ const articleSchema = {
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-        {
-            "@type": "Question",
-            name: "What is the best sake for sushi pairing?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Junmai and Ginjo sakes are excellent with sushi. Junmai offers fuller body and earthy notes, while Ginjo's crisp, delicate flavors complement raw fish beautifully. For nigiri, choose a dry sake (Karakuchi). For sashimi, a slightly fruity Ginjo works wonderfully.",
-            },
+    mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
         },
-        {
-            "@type": "Question",
-            name: "Should sake be served hot or cold?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Premium sakes like Ginjo and Daiginjo are best served chilled (50-55°F). Junmai and regular sake can be enjoyed warm (104-113°F) or at room temperature, depending on preference and the dish. Warmer service brings out richer flavors, while chilled sake feels more refreshing.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "What sake pairs best with hibachi?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "For hibachi's bold, grilled flavors, choose a fuller-bodied sake like Junmai or Honjozo. These earthier, more robust sakes complement grilled proteins and vegetables better than delicate sakes. Warm sake intensifies the pairing experience.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "Can I pair sake with Western Japanese appetizers?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "Absolutely! Sparkling sake (Hana Awaka) works with fried appetizers and spring rolls. Aged sake (Koshu) pairs well with rich appetizers. Dry Honjozo complements edamame and gyoza. The key is matching intensity—lighter appetizers get lighter sakes, heavier ones get fuller-bodied options.",
-            },
-        },
-        {
-            "@type": "Question",
-            name: "What does sake's SMV (Sake Meter Value) mean?",
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: "SMV indicates dryness or sweetness. Positive SMV (+) means drier sake, negative SMV (-) means sweeter. For food pairing, dry sakes (SMV +3 to +6) work with most savory dishes, while slightly sweet sakes (SMV -3 to 0) pair well with spicy or rich dishes.",
-            },
-        },
-    ],
+    })),
 };
 
 export default function SakePairingGuide() {
@@ -534,13 +527,13 @@ export default function SakePairingGuide() {
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        ❓ Frequently Asked Questions About Sake Pairing
+                                        ❓ Frequently Asked Questions
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
+                                        {faqs.map((faq, index) => (
+                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory/80 transition-colors">
                                                     {faq.question}
                                                     <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                                 </summary>

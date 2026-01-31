@@ -52,7 +52,7 @@ export default function GiftCardsPage() {
                         <div className="grid md:grid-cols-2 gap-8 mb-16">
                             {/* In-Store */}
                             <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-                                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent-red to-orange-500 rounded-2xl flex items-center justify-center">
+                                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent-red to-cedar-brown rounded-2xl flex items-center justify-center">
                                     <span className="text-4xl">🏯</span>
                                 </div>
                                 <h3 className="text-2xl font-heading font-semibold text-charcoal mb-3">
@@ -79,7 +79,7 @@ export default function GiftCardsPage() {
 
                             {/* By Phone */}
                             <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-                                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-deep-indigo to-blue-500 rounded-2xl flex items-center justify-center">
+                                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-deep-indigo to-charcoal rounded-2xl flex items-center justify-center">
                                     <span className="text-4xl">📞</span>
                                 </div>
                                 <h3 className="text-2xl font-heading font-semibold text-charcoal mb-3">

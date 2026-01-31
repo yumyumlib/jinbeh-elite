@@ -35,23 +35,35 @@ const articleSchema = {
 const faqs = [
     {
         question: "What is the difference between hibachi and teppanyaki?",
-        answer: "In America, the terms are often used interchangeably, but technically hibachi refers to a small charcoal grill, while teppanyaki means cooking on a flat iron griddle. What most people call 'hibachi' in restaurants is actually teppanyaki-style cooking with the chef performing at your table.",
+        answer: "In America, the terms are often used interchangeably, but technically hibachi refers to a small charcoal grill, while teppanyaki means cooking on a flat iron griddle. What most people call 'hibachi' in restaurants is actually teppanyaki-style cooking with the chef performing at your table right in front of you for the full entertainment experience.",
     },
     {
         question: "How much does hibachi cost in Dallas?",
-        answer: "Hibachi dinners in Dallas typically range from $20-45 per person, depending on the protein selection. At Jinbeh, our hibachi entrees include soup, salad, vegetables, fried rice, and the entertaining chef show—all for great value.",
+        answer: "Hibachi dinners in Dallas typically range from $20-45 per person, depending on the protein selection (chicken, shrimp, steak, or combination). At Jinbeh, our hibachi entrees include miso soup, house salad, grilled vegetables, fried rice, and the entertaining chef show—all for great value. Premium proteins like wagyu cost more but deliver exceptional quality.",
     },
     {
-        question: "Do I need reservations for hibachi?",
-        answer: "We highly recommend reservations for hibachi dining, especially on weekends and for groups. Visit our Frisco or Lewisville location pages to reserve online.",
+        question: "Do I need reservations for hibachi in Dallas?",
+        answer: "Yes, we highly recommend reservations for hibachi dining, especially on weekends and for groups. Teppanyaki tables seat 8-10 people, and we want to ensure you get the best experience. Visit our Frisco or Lewisville location pages to reserve online, or call us directly. First-time guests are always welcome!",
     },
     {
         question: "Is hibachi good for large groups and celebrations?",
-        answer: "Absolutely! Hibachi is perfect for birthdays, anniversaries, team dinners, and corporate events. The shared table experience creates unforgettable memories. Jinbeh specializes in group celebrations.",
+        answer: "Absolutely! Hibachi is perfect for birthdays, anniversaries, team dinners, bachelor/bachelorette parties, and corporate events. The shared table experience creates unforgettable memories as you watch the chef's incredible skill and interact with fellow diners. Jinbeh specializes in celebrating special moments with you.",
     },
     {
         question: "Can I order hibachi for catering or private events?",
-        answer: "Yes! We offer hibachi catering for private events and corporate functions. Our on-site chefs bring the full dining experience to you. Contact us or visit our catering page for custom packages.",
+        answer: "Yes! We offer hibachi catering for private events and corporate functions. Our skilled chefs bring the full teppanyaki dining experience to your location—whether it's your home, office, or venue. Contact our catering team at Frisco (214) 619-1200 or Lewisville (214) 488-2224 for custom packages and availability.",
+    },
+    {
+        question: "What makes Jinbeh's hibachi different from other Dallas restaurants?",
+        answer: "Jinbeh has been perfecting hibachi since 1988—nearly four decades of family tradition. We use only fresh, never-frozen ingredients, our chefs train extensively for years, and we're locally owned with two convenient DFW locations. Plus, we combine hibachi and sushi under one roof, so you get variety and expertise in both cuisines.",
+    },
+    {
+        question: "Can kids enjoy hibachi at Jinbeh?",
+        answer: "Absolutely! Hibachi is a family-friendly experience that kids love. The chef's tricks, flying shrimp, and onion volcano create an exciting, memorable dining experience. We offer kid-sized portions and can customize proteins based on preferences. Parents appreciate the entertainment value as much as the food!",
+    },
+    {
+        question: "What time should we arrive for hibachi dinner?",
+        answer: "We recommend arriving 10-15 minutes before your reservation time. This gives you time to check in, be seated, review the menu, and settle in before the chef arrives. Dinner service typically lasts 45-60 minutes per table, so plan accordingly for special occasions.",
     },
 ];
 
@@ -165,46 +177,52 @@ export default function BestHibachiDallas() {
                                 </div>
 
                                 {/* Comparison Table */}
-                                <div className="overflow-x-auto my-8">
+                                <div className="overflow-x-auto my-12">
                                     <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
                                         <thead className="bg-charcoal text-white">
                                             <tr>
                                                 <th className="p-4 text-left font-heading">Restaurant</th>
                                                 <th className="p-4 text-left font-heading">Location</th>
-                                                <th className="p-4 text-left font-heading">Best For</th>
-                                                <th className="p-4 text-left font-heading">Price</th>
+                                                <th className="p-4 text-left font-heading">Specialty</th>
+                                                <th className="p-4 text-left font-heading">Price Range</th>
+                                                <th className="p-4 text-left font-heading">Why Choose</th>
                                             </tr>
                                         </thead>
                                         <tbody className="text-charcoal/80">
                                             <tr className="border-b border-warm-ivory bg-soft-gold/10">
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh Frisco</td>
-                                                <td className="p-4">Frisco (near Stonebriar)</td>
-                                                <td className="p-4">Authentic experience, families</td>
-                                                <td className="p-4">$$</td>
+                                                <td className="p-4">Frisco (near Stonebriar Mall)</td>
+                                                <td className="p-4">Hibachi + Sushi</td>
+                                                <td className="p-4">$$ (fair value)</td>
+                                                <td className="p-4">Family-owned since 1988, fresh never-frozen ingredients, expert chefs, best ambiance</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory bg-soft-gold/10">
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh Lewisville</td>
                                                 <td className="p-4">Lewisville (off I-35E)</td>
-                                                <td className="p-4">Groups, celebrations</td>
-                                                <td className="p-4">$$</td>
+                                                <td className="p-4">Hibachi + Sushi</td>
+                                                <td className="p-4">$$ (fair value)</td>
+                                                <td className="p-4">Perfect for groups, celebrations, catering available, convenient location</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Benihana</td>
                                                 <td className="p-4">Dallas, Plano</td>
-                                                <td className="p-4">Chain reliability</td>
-                                                <td className="p-4">$$$</td>
+                                                <td className="p-4">Hibachi (National Chain)</td>
+                                                <td className="p-4">$$$ (premium)</td>
+                                                <td className="p-4">Consistent experience, reliable, extensive locations, but less personal</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Kobe Steakhouse</td>
-                                                <td className="p-4">Various locations</td>
-                                                <td className="p-4">Large groups</td>
-                                                <td className="p-4">$$</td>
+                                                <td className="p-4">Various DFW locations</td>
+                                                <td className="p-4">Hibachi (Japanese Steakhouse)</td>
+                                                <td className="p-4">$$ to $$$</td>
+                                                <td className="p-4">Large group-friendly, decent quality, but formulaic experience</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Teppo</td>
-                                                <td className="p-4">Dallas Greenville</td>
-                                                <td className="p-4">Robatayaki style</td>
-                                                <td className="p-4">$$$</td>
+                                                <td className="p-4">Dallas Greenville Avenue</td>
+                                                <td className="p-4">Robatayaki (Counter-style grilling)</td>
+                                                <td className="p-4">$$$ (upscale)</td>
+                                                <td className="p-4">Different grilling style, trendy, upscale vibe, premium prices</td>
                                             </tr>
                                         </tbody>
                                     </table>

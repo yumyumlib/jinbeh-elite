@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/frisco/menu`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
         { url: `${baseUrl}/lewisville/menu`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
         { url: `${baseUrl}/happy-hour`, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 0.8 },
+        { url: `${baseUrl}/bar`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
         { url: `${baseUrl}/lunch-specials`, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 0.7 },
         { url: `${baseUrl}/catering`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },
         { url: `${baseUrl}/private-dining`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },

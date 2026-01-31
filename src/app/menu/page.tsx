@@ -44,7 +44,7 @@ export default function MenuPage() {
                                     className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all hover:-translate-y-1"
                                 >
                                     <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-16 h-16 bg-gradient-to-br from-accent-red to-orange-500 rounded-2xl flex items-center justify-center">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-accent-red to-cedar-brown rounded-2xl flex items-center justify-center">
                                             <span className="text-3xl">🏯</span>
                                         </div>
                                         <div>
@@ -75,7 +75,7 @@ export default function MenuPage() {
                                     className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all hover:-translate-y-1"
                                 >
                                     <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-16 h-16 bg-gradient-to-br from-deep-indigo to-blue-500 rounded-2xl flex items-center justify-center">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-deep-indigo to-charcoal rounded-2xl flex items-center justify-center">
                                             <span className="text-3xl">🍣</span>
                                         </div>
                                         <div>

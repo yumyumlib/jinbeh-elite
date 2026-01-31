@@ -1053,7 +1053,7 @@ footer a:hover {
 }
 
 .icon-circle-fire {
-  background: linear-gradient(135deg, var(--accent-red), #FF6B35);
+  background: linear-gradient(135deg, var(--accent-red), var(--cedar-brown));
   box-shadow: 0 8px 20px -4px rgba(193, 18, 31, 0.4);
 }
 
@@ -1076,7 +1076,7 @@ footer a:hover {
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 1;
-  background: linear-gradient(135deg, var(--accent-red), #FF6B35);
+  background: linear-gradient(135deg, var(--accent-red), var(--cedar-brown));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
