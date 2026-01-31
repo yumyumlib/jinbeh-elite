@@ -63,7 +63,7 @@
             "publishedAt": "2026-01-15",
             "readTime": 8,
             "featured": true,
-            "relatedPosts": ["best-sushi-frisco", "what-is-hibachi", "hibachi-birthday-party-ideas"]
+            "relatedPosts": ["best-sushi-frisco", "hibachi-vs-teppanyaki-explained", "hibachi-birthday-party-ideas"]
         },
         {
             "slug": "best-sushi-frisco",
@@ -78,7 +78,7 @@
             "publishedAt": "2026-01-16",
             "readTime": 7,
             "featured": true,
-            "relatedPosts": ["types-of-sushi-rolls", "sushi-for-beginners", "best-happy-hour-frisco"]
+            "relatedPosts": ["types-of-sushi", "beginner-sushi-tips", "best-happy-hour-frisco-tx"]
         },
         {
             "slug": "hibachi-birthday-party-ideas",
@@ -96,7 +96,7 @@
             "relatedPosts": ["best-hibachi-dallas", "group-dining-guide", "free-birthday-deals"]
         },
         {
-            "slug": "best-happy-hour-frisco",
+            "slug": "best-happy-hour-frisco-tx",
             "title": "Best Happy Hour Frisco TX: Top Spots & Deals",
             "excerpt": "Find the best happy hour deals in Frisco TX. From $5 sake bombs to half-price sushi rolls, discover where locals unwind after work.",
             "category": "best-of",
@@ -108,10 +108,10 @@
             "publishedAt": "2026-01-18",
             "readTime": 6,
             "featured": true,
-            "relatedPosts": ["japanese-drinks", "best-sushi-frisco", "restaurants-near-stonebriar"]
+            "relatedPosts": ["japanese-beverages-guide", "best-sushi-frisco", "top-frisco-restaurants"]
         },
         {
-            "slug": "types-of-sushi-rolls",
+            "slug": "types-of-sushi",
             "title": "Types of Sushi: Complete Guide to Rolls & Varieties",
             "excerpt": "Your complete guide to sushi types. Learn the difference between nigiri, maki, sashimi, and specialty rolls. Perfect for beginners and sushi enthusiasts.",
             "category": "cuisine",
@@ -123,10 +123,10 @@
             "publishedAt": "2026-01-19",
             "readTime": 10,
             "featured": false,
-            "relatedPosts": ["sushi-for-beginners", "best-sushi-frisco", "omakase-experience"]
+            "relatedPosts": ["beginner-sushi-tips", "best-sushi-frisco", "omakase-experience"]
         },
         {
-            "slug": "what-is-hibachi",
+            "slug": "hibachi-vs-teppanyaki-explained",
             "title": "What is Hibachi? The Art of Japanese Teppanyaki",
             "excerpt": "Discover the difference between hibachi and teppanyaki. Learn about the cooking style, what to expect at a hibachi restaurant, and why it's dinner and a show.",
             "category": "cuisine",
@@ -138,10 +138,10 @@
             "publishedAt": "2026-01-20",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "hibachi-birthday-party-ideas", "hibachi-calories-nutrition"]
+            "relatedPosts": ["best-hibachi-dallas", "hibachi-birthday-party-ideas", "hibachi-calories-guide"]
         },
         {
-            "slug": "sushi-for-beginners",
+            "slug": "beginner-sushi-tips",
             "title": "Sushi for Beginners: Your First Time Guide",
             "excerpt": "New to sushi? Our beginner's guide covers everything from what to order to how to eat it. Make your first sushi experience memorable, not intimidating.",
             "category": "cuisine",
@@ -153,10 +153,10 @@
             "publishedAt": "2026-01-21",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sushi-rolls", "best-sushi-frisco", "japanese-drinks"]
+            "relatedPosts": ["types-of-sushi", "best-sushi-frisco", "japanese-beverages-guide"]
         },
         {
-            "slug": "japanese-drinks",
+            "slug": "japanese-beverages-guide",
             "title": "Japanese Drinks: Sake, Beer, and Beyond",
             "excerpt": "Explore Japanese beverages from traditional sake to Sapporo beer. Learn what to drink with sushi, hibachi, and how to order like a pro.",
             "category": "beverages",
@@ -168,10 +168,10 @@
             "publishedAt": "2026-01-22",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["best-happy-hour-frisco", "sushi-for-beginners", "omakase-experience"]
+            "relatedPosts": ["best-happy-hour-frisco-tx", "beginner-sushi-tips", "omakase-experience"]
         },
         {
-            "slug": "restaurants-near-stonebriar",
+            "slug": "top-frisco-restaurants",
             "title": "Best Restaurants Near Stonebriar Mall Frisco TX",
             "excerpt": "Looking for dining near Stonebriar Centre? Our local guide covers the best restaurants for shopping day lunch, dinner, and everything in between.",
             "category": "local-guides",
@@ -183,10 +183,10 @@
             "publishedAt": "2026-01-23",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["best-sushi-frisco", "best-happy-hour-frisco", "things-to-do-frisco"]
+            "relatedPosts": ["best-sushi-frisco", "best-happy-hour-frisco-tx", "top-frisco-restaurants"]
         },
         {
-            "slug": "things-to-do-frisco",
+            "slug": "top-frisco-restaurants",
             "title": "Things to Do in Frisco TX: Local's Guide",
             "excerpt": "Discover the best activities and dining in Frisco TX. From Stonebriar shopping to family entertainment, plan your perfect day or night out.",
             "category": "local-guides",
@@ -198,10 +198,10 @@
             "publishedAt": "2026-01-24",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["restaurants-near-stonebriar", "best-sushi-frisco", "best-happy-hour-frisco"]
+            "relatedPosts": ["top-frisco-restaurants", "best-sushi-frisco", "best-happy-hour-frisco-tx"]
         },
         {
-            "slug": "best-japanese-lewisville",
+            "slug": "japanese-restaurants-lewisville",
             "title": "Best Japanese Restaurants Lewisville TX",
             "excerpt": "Find authentic Japanese cuisine in Lewisville TX. From hibachi shows to fresh sushi, discover the best spots near Vista Ridge Mall and I-35E.",
             "category": "local-guides",
@@ -213,10 +213,10 @@
             "publishedAt": "2026-01-25",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "types-of-sushi-rolls", "what-is-hibachi"]
+            "relatedPosts": ["best-hibachi-dallas", "types-of-sushi", "hibachi-vs-teppanyaki-explained"]
         },
         {
-            "slug": "hibachi-calories-nutrition",
+            "slug": "hibachi-calories-guide",
             "title": "Hibachi Calories & Nutrition: What to Know",
             "excerpt": "Wondering about hibachi calories? Our nutrition guide breaks down hibachi meals so you can enjoy your favorite dishes while staying on track.",
             "category": "health",
@@ -228,7 +228,7 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["what-is-hibachi", "sushi-for-beginners", "best-hibachi-dallas"]
+            "relatedPosts": ["hibachi-vs-teppanyaki-explained", "beginner-sushi-tips", "best-hibachi-dallas"]
         },
         {
             "slug": "group-dining-guide",
@@ -258,7 +258,7 @@
             "publishedAt": "2026-01-28",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sushi-rolls", "best-sushi-frisco", "japanese-drinks"]
+            "relatedPosts": ["types-of-sushi", "best-sushi-frisco", "japanese-beverages-guide"]
         },
         {
             "slug": "free-birthday-deals",
