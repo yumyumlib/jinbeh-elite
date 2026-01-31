@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 // Category configuration
 const categories = {
@@ -139,26 +137,20 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
 
   if (!category) {
     return (
-      <>
-        <Header />
-        <main className="min-h-screen bg-warm-ivory py-20">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl font-heading font-bold text-charcoal mb-4">Category Not Found</h1>
-            <p className="text-charcoal/70 mb-6">The category you&apos;re looking for doesn&apos;t exist.</p>
-            <Link href="/blog" className="btn btn-primary">
-              ← Back to Blog
-            </Link>
-          </div>
-        </main>
-        <Footer />
-      </>
+      <main className="min-h-screen bg-warm-ivory py-20">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="text-4xl font-heading font-bold text-charcoal mb-4">Category Not Found</h1>
+          <p className="text-charcoal/70 mb-6">The category you&apos;re looking for doesn&apos;t exist.</p>
+          <Link href="/blog" className="btn btn-primary">
+            ← Back to Blog
+          </Link>
+        </div>
+      </main>
     );
   }
 
   return (
-    <>
-      <Header />
-      <main className="min-h-screen bg-warm-ivory">
+    <main className="min-h-screen bg-warm-ivory">
       {/* Hero Section */}
       <section className={`relative py-20 bg-gradient-to-r ${category.color}`}>
         <div className="container mx-auto px-6 text-center text-white">
@@ -242,7 +234,5 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         </div>
       </section>
     </main>
-    <Footer />
-    </>
   );
 }
