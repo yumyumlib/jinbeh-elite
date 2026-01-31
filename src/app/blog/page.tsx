@@ -2,8 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import blogData from "@/data/blog-posts.json";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "Blog | Jinbeh Japanese Restaurant",
@@ -52,8 +50,6 @@ export default async function BlogPage({
     const featuredPosts = allPosts.filter((post) => post.featured);
 
     return (
-        <>
-        <Header />
         <main className="min-h-screen bg-warm-ivory">
             {/* Hero Header */}
             <section className="bg-charcoal text-white py-16">
@@ -247,7 +243,5 @@ export default async function BlogPage({
                 </div>
             </section>
         </main>
-        <Footer />
-        </>
     );
 }
