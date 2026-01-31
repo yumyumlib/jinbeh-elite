@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Corporate Dinner & Team Events Frisco TX | Private Dining | Jinbeh Japanese Restaurant",
@@ -76,10 +78,12 @@ const faqSchema = {
 export default function CorporateEventsPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <Header />
+      <main className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
 
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center text-white py-20">
@@ -400,6 +404,8 @@ export default function CorporateEventsPage() {
           </div>
         </div>
       </section>
+      </main>
+      <Footer />
     </>
   );
 }
