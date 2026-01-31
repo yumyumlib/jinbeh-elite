@@ -98,7 +98,7 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-lewisville"
+        "url": "https://www.opentable.com/jinbeh-lewisville"
       },
       "menus": {
         "lunch": "/menus/lewisville/lunch-menu.pdf",
