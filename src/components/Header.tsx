@@ -84,7 +84,8 @@ export default function Header({ location }: HeaderProps) {
       href: "#",
       dropdown: [
         { label: "Happy Hour", href: "/happy-hour", description: "Daily specials at the bar" },
-        { label: "Private Dining", href: `/${loc}/private-dining`, description: "Groups & events" },
+        { label: "Lunch Specials", href: "/lunch-specials", description: "Weekday deals" },
+        { label: "Private Dining", href: "/private-dining", description: "Groups & events" },
         { label: "Catering", href: "/catering", description: "Bring Jinbeh to you" },
       ],
     },
@@ -92,9 +93,12 @@ export default function Header({ location }: HeaderProps) {
       label: "Celebrations",
       href: "/celebrations",
       dropdown: [
+        { label: "All Celebrations", href: "/celebrations", description: "Browse all events" },
         { label: "Birthday Parties", href: "/celebrations/birthday", description: "Make it memorable" },
         { label: "Anniversary Dinners", href: "/celebrations/anniversary", description: "Romantic experiences" },
-        { label: "Group Events", href: "/celebrations/corporate-events", description: "Corporate & family gatherings" },
+        { label: "Graduation", href: "/celebrations/graduation", description: "Celebrate achievements" },
+        { label: "Corporate Events", href: "/celebrations/corporate-events", description: "Team building & parties" },
+        { label: "Holiday Parties", href: "/celebrations/holiday-parties", description: "Christmas & more" },
       ],
     },
     {
@@ -102,12 +106,12 @@ export default function Header({ location }: HeaderProps) {
       href: "/blog",
       dropdown: [
         { label: "All Articles", href: "/blog", description: "Latest from Jinbeh" },
+        { label: "🏆 Best Of", href: "/blog?category=best-of", description: "Top picks & recommendations" },
         { label: "🎉 Celebrations", href: "/blog?category=celebrations", description: "Party ideas & guides" },
-        { label: "📍 Locations", href: "/blog?category=locations", description: "Frisco, Lewisville & DFW" },
-        { label: "🍣 Cuisine", href: "/blog?category=cuisine", description: "Sushi, hibachi & more" },
+        { label: "🍣 Japanese Cuisine", href: "/blog?category=cuisine", description: "Sushi, hibachi & more" },
+        { label: "📍 Local Guides", href: "/blog?category=local-guides", description: "Frisco, Lewisville & DFW" },
         { label: "🍶 Beverages", href: "/blog?category=beverages", description: "Sake, whiskey & cocktails" },
-        { label: "🍱 Catering", href: "/blog?category=catering", description: "Events & private dining" },
-        { label: "✨ Tips & Guides", href: "/blog?category=tips-guides", description: "Happy hour & more" },
+        { label: "💚 Health & Nutrition", href: "/blog?category=health", description: "Calorie guides & tips" },
       ],
     },
     { label: "About", href: "/about" },
@@ -166,7 +170,7 @@ export default function Header({ location }: HeaderProps) {
                       <div
                         role="menu"
                         aria-label={`${item.label} submenu`}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-[100]">
                         <div className="p-2">
                           {item.dropdown.map((subItem) => {
                             // Check if this is the current location
@@ -245,7 +249,7 @@ export default function Header({ location }: HeaderProps) {
                   </svg>
                 </button>
                 {activeDropdown === "phone" && (
-                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-50">
+                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-[100]">
                     <div className="p-2">
                       <a
                         href="tel:2146191200"
