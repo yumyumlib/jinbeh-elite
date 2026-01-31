@@ -27,7 +27,7 @@ const menuItemSchema = {
     "price": "14.00",
     "priceCurrency": "USD"
   },
-  "menuAddOn": {
+  "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
     "address": {

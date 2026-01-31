@@ -375,13 +375,13 @@ export default function AboutPage() {
             {/* Instagram Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 max-w-6xl mx-auto">
               {[
-                "/images/food/SamaraiRollCloseup.jpg",
-                "/images/photoshoot/hibachi-plate-shrimp.jpg",
-                "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
-                "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
-                "/images/photoshoot/sashimi-platter.jpg",
-                "/images/drinks/JinbehPunchBeverageDrink.jpg",
-              ].map((src, i) => (
+                { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll specialty sushi with fresh fish and avocado" },
+                { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi grilled shrimp with vegetables and fried rice" },
+                { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi selection and Japanese desserts at the bar" },
+                { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo with NY strip steak and colossal shrimp" },
+                { src: "/images/photoshoot/sashimi-platter.jpg", alt: "Premium sashimi platter with salmon, tuna, and yellowtail" },
+                { src: "/images/drinks/JinbehPunchBeverageDrink.jpg", alt: "Jinbeh Punch signature cocktail with tropical flavors" },
+              ].map((item, i) => (
                 <a
                   key={i}
                   href="https://www.instagram.com/jinbehfrisco/"
@@ -390,8 +390,8 @@ export default function AboutPage() {
                   className="relative aspect-square rounded-lg overflow-hidden group"
                 >
                   <Image
-                    src={src}
-                    alt={`Jinbeh food and drinks ${i + 1}`}
+                    src={item.src}
+                    alt={item.alt}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />

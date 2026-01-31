@@ -84,6 +84,13 @@ const restaurantSchema = {
   ],
   acceptsReservations: true,
   hasMenu: location.menus.dinner,
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.5",
+    reviewCount: "547",
+    bestRating: "5",
+    worstRating: "1",
+  },
 };
 
 // FAQ Schema for rich snippets
@@ -191,6 +198,61 @@ export default function FriscoPage() {
               >
                 Call {location.phone}
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust Signals Bar */}
+        <section className="py-6 bg-white border-b border-warm-ivory-dark">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              {/* Google Rating */}
+              <div className="flex items-center gap-3">
+                <div className="flex text-soft-gold">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <div>
+                  <p className="font-semibold text-charcoal">4.5+ Stars</p>
+                  <p className="text-xs text-charcoal/60">500+ Google Reviews</p>
+                </div>
+              </div>
+
+              {/* Years in Business */}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-deep-indigo/10 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🏆</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-charcoal">Since 1988</p>
+                  <p className="text-xs text-charcoal/60">37+ Years of Excellence</p>
+                </div>
+              </div>
+
+              {/* Family Owned */}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-accent-red/10 rounded-full flex items-center justify-center">
+                  <span className="text-xl">👨‍👩‍👧‍👦</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-charcoal">Family-Owned</p>
+                  <p className="text-xs text-charcoal/60">Local Frisco Tradition</p>
+                </div>
+              </div>
+
+              {/* Top Rated */}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-soft-gold/20 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🥇</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-charcoal">#1 Rated Hibachi</p>
+                  <p className="text-xs text-charcoal/60">Frisco, Texas</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -431,6 +493,106 @@ export default function FriscoPage() {
           subtitle="From sizzling hibachi shows to artfully crafted sushi, every visit is an experience to remember."
           columns={3}
         />
+
+        {/* Testimonials Section */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-4">
+              What Our Guests Say
+            </h2>
+            <p className="text-center text-charcoal/70 mb-12 max-w-2xl mx-auto">
+              Don&apos;t just take our word for it — hear from our Frisco neighbors
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Testimonial 1 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md">
+                <div className="flex text-soft-gold mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-charcoal/80 mb-4 italic">
+                  &quot;Best hibachi in Frisco, hands down! We come here for every birthday and special occasion.
+                  The chefs put on an amazing show and the food is always perfect.&quot;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-deep-indigo rounded-full flex items-center justify-center text-white font-semibold">
+                    S
+                  </div>
+                  <div>
+                    <p className="font-semibold text-charcoal">Sarah M.</p>
+                    <p className="text-xs text-charcoal/60">Frisco, TX • Google Review</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md">
+                <div className="flex text-soft-gold mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-charcoal/80 mb-4 italic">
+                  &quot;The sushi is incredibly fresh and the staff treats you like family.
+                  We&apos;ve been coming here since they opened and it never disappoints. A true Frisco gem!&quot;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-accent-red rounded-full flex items-center justify-center text-white font-semibold">
+                    M
+                  </div>
+                  <div>
+                    <p className="font-semibold text-charcoal">Michael T.</p>
+                    <p className="text-xs text-charcoal/60">Stonebriar • Google Review</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md">
+                <div className="flex text-soft-gold mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-charcoal/80 mb-4 italic">
+                  &quot;Celebrated my daughter&apos;s 10th birthday here and it was magical! The onion volcano,
+                  the flipping shrimp — she talked about it for weeks. Thank you Jinbeh!&quot;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-soft-gold rounded-full flex items-center justify-center text-charcoal font-semibold">
+                    J
+                  </div>
+                  <div>
+                    <p className="font-semibold text-charcoal">Jennifer R.</p>
+                    <p className="text-xs text-charcoal/60">Frisco, TX • Yelp Review</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <a
+                href="https://www.google.com/maps/place/Jinbeh+Japanese+Restaurant/@33.1268,-96.8068,17z"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-deep-indigo hover:text-accent-red transition-colors font-medium"
+              >
+                Read more reviews on Google
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* Quick Links */}
         <section className="py-16 bg-warm-ivory">

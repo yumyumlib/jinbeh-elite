@@ -27,7 +27,7 @@ const menuItemSchema = {
     "price": "64.95",
     "priceCurrency": "USD"
   },
-  "menuAddOn": {
+  "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
     "address": {
