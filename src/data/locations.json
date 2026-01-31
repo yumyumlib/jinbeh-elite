@@ -42,7 +42,7 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-frisco"
+        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
       },
       "menus": {
         "lunch": "/menus/frisco/lunch-menu.pdf",

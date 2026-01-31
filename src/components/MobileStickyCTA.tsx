@@ -39,8 +39,8 @@ export default function MobileStickyCTA({
     }, [lastScrollY]);
 
     const reserveHref = location === "lewisville"
-        ? "https://www.opentable.com/jinbeh-japanese-steak-seafood-and-sushi-house"
-        : "https://www.opentable.com/jinbeh-japanese-restaurant-frisco";
+        ? "https://www.opentable.com/jinbeh-lewisville"
+        : "https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco";
 
     const phoneClean = phone.replace(/[^0-9]/g, "");
 

@@ -36,7 +36,7 @@ const localBusinessSchema = {
   image: "https://jinbeh.com/images/lewisville-exterior.jpg",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "2401 S Stemmons Fwy, Suite 2049",
+    streetAddress: "2440 S Stemmons Fwy #A",
     addressLocality: "Lewisville",
     addressRegion: "TX",
     postalCode: "75067",
@@ -44,19 +44,19 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 32.8343,
-    longitude: -96.9657,
+    latitude: 33.0286,
+    longitude: -96.9942,
   },
   url: "https://jinbeh.com/lewisville",
-  telephone: "(972) 221-6888",
+  telephone: "(214) 488-2224",
   servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
   priceRange: "$$",
   areaServed: {
     "@type": "GeoCircle",
     geoMidpoint: {
       "@type": "GeoCoordinates",
-      latitude: 32.8343,
-      longitude: -96.9657,
+      latitude: 33.0286,
+      longitude: -96.9942,
     },
     geoRadius: "5000",
   },
@@ -88,7 +88,7 @@ const faqSchema = {
       name: "Are reservations recommended for dining near Castle Hills?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, we strongly recommend making reservations for hibachi tables, especially on weekends and holidays. You can book online or call us at (972) 221-6888 to secure your table.",
+        text: "Yes, we strongly recommend making reservations for hibachi tables, especially on weekends and holidays. You can book online or call us at (214) 488-2224 to secure your table.",
       },
     },
     {
@@ -373,11 +373,11 @@ export default function CastleHillsPage() {
                 href="tel:9722216888"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
-                Call (972) 221-6888
+                Call (214) 488-2224
               </a>
             </div>
             <p className="text-white/70 text-sm">
-              2401 S Stemmons Fwy, Suite 2049, Lewisville, TX 75067
+              2440 S Stemmons Fwy #A, Lewisville, TX 75067
             </p>
           </div>
         </section>
