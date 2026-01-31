@@ -27,6 +27,65 @@ export const metadata: Metadata = {
   },
 };
 
+// Menu Schema for structured data
+const menuSchema = {
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Jinbeh Frisco Menu",
+  "description": "Hibachi teppanyaki, fresh sushi, sashimi, and Japanese cuisine at Jinbeh Japanese Restaurant in Frisco, TX.",
+  "url": "https://jinbeh.com/frisco/menu",
+  "mainEntityOfPage": "https://jinbeh.com/frisco/menu",
+  "inLanguage": "en-US",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Hibachi Teppanyaki",
+      "description": "Expertly grilled tableside by our master chefs with soup, salad, fried rice, and vegetables",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Filet Mignon", "description": "Premium beef tenderloin, perfectly seared" },
+        { "@type": "MenuItem", "name": "Chicken Teriyaki", "description": "Tender chicken with house teriyaki glaze" },
+        { "@type": "MenuItem", "name": "Shrimp & Scallops", "description": "Fresh seafood duo, flame-kissed" },
+        { "@type": "MenuItem", "name": "Lobster Tail", "description": "Succulent lobster, butter-grilled" },
+        { "@type": "MenuItem", "name": "Vegetable Hibachi", "description": "Fresh seasonal vegetables with tofu" },
+      ],
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Sushi & Sashimi",
+      "description": "Fresh, artfully crafted sushi and sashimi",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Signature Rolls", "description": "House specialty creations" },
+        { "@type": "MenuItem", "name": "Classic Rolls", "description": "Traditional favorites" },
+        { "@type": "MenuItem", "name": "Sashimi Platter", "description": "Chef's selection of pristine fish" },
+        { "@type": "MenuItem", "name": "Nigiri", "description": "Hand-pressed sushi rice with fresh fish" },
+        { "@type": "MenuItem", "name": "Omakase", "description": "Chef's tasting menu" },
+      ],
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Lunch Specials",
+      "description": "Weekday specials served Monday-Friday, 11am-2pm",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Lunch Hibachi Combo", "description": "Choice of protein with soup, salad, rice" },
+        { "@type": "MenuItem", "name": "Bento Box", "description": "Assorted Japanese favorites" },
+        { "@type": "MenuItem", "name": "Lunch Sushi Roll Combo", "description": "2-3 rolls with soup and salad" },
+        { "@type": "MenuItem", "name": "Teriyaki Bowl", "description": "Rice bowl with teriyaki protein" },
+      ],
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Drinks & Sake",
+      "description": "Full bar with premium sake, Japanese beer, and craft cocktails",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Premium Sake", "description": "Hot or cold, by the glass or carafe" },
+        { "@type": "MenuItem", "name": "Japanese Beer", "description": "Sapporo, Asahi, Kirin" },
+        { "@type": "MenuItem", "name": "Signature Cocktails", "description": "Japanese-inspired creations" },
+        { "@type": "MenuItem", "name": "Wine Selection", "description": "Red, white, and sparkling options" },
+      ],
+    },
+  ],
+};
+
 // FAQ Schema for menu page
 const faqSchema = {
   "@context": "https://schema.org",
@@ -133,6 +192,10 @@ export default function FriscoMenuPage() {
       <Header location="frisco" />
       <main className="min-h-screen">
         {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(menuSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
