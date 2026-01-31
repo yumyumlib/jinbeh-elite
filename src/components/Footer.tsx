@@ -230,9 +230,6 @@ export default function Footer() {
                 <Link href="/faq" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                   FAQ
                 </Link>
-                <Link href="/careers" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                  Careers
-                </Link>
               </nav>
             </div>
           </div>

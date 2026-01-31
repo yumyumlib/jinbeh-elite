@@ -67,7 +67,7 @@ export default function NumberTicker({
       {Intl.NumberFormat("en-US", {
         minimumFractionDigits: decimalPlaces,
         maximumFractionDigits: decimalPlaces,
-      }).format(direction === "down" ? value : 0)}
+      }).format(value)}
       {suffix}
     </span>
   );
