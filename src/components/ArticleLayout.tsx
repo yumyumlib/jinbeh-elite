@@ -176,7 +176,7 @@ export default function ArticleLayout({
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <Link
-                  href="/blog/types-of-sushi-rolls"
+                  href="/blog/types-of-sushi"
                   className="group bg-warm-ivory/30 rounded-xl p-6 hover:bg-warm-ivory/50 transition-colors"
                 >
                   <span className="text-accent-red text-sm font-medium">
@@ -198,7 +198,7 @@ export default function ArticleLayout({
                   </h3>
                 </Link>
                 <Link
-                  href="/blog/what-is-hibachi"
+                  href="/blog/discover-teppanyaki"
                   className="group bg-warm-ivory/30 rounded-xl p-6 hover:bg-warm-ivory/50 transition-colors"
                 >
                   <span className="text-accent-red text-sm font-medium">

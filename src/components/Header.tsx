@@ -94,7 +94,7 @@ export default function Header({ location }: HeaderProps) {
       dropdown: [
         { label: "Birthday Parties", href: "/celebrations/birthday", description: "Make it memorable" },
         { label: "Anniversary Dinners", href: "/celebrations/anniversary", description: "Romantic experiences" },
-        { label: "Group Events", href: "/celebrations/groups", description: "Corporate & family gatherings" },
+        { label: "Group Events", href: "/celebrations/corporate-events", description: "Corporate & family gatherings" },
       ],
     },
     {
@@ -142,6 +142,8 @@ export default function Header({ location }: HeaderProps) {
                   <>
                     <button
                       onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
+                      aria-expanded={activeDropdown === item.label}
+                      aria-haspopup="menu"
                       className={`flex items-center gap-1 px-4 py-2 rounded-lg hover:text-accent-red hover:bg-warm-ivory/50 transition-all font-medium ${
                         activeDropdown === item.label ? "text-accent-red bg-warm-ivory/50" :
                         (item.label === "Locations" && location) ? "text-accent-red" :
@@ -161,7 +163,10 @@ export default function Header({ location }: HeaderProps) {
 
                     {/* Dropdown Menu */}
                     {activeDropdown === item.label && (
-                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div
+                        role="menu"
+                        aria-label={`${item.label} submenu`}
+                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                         <div className="p-2">
                           {item.dropdown.map((subItem) => {
                             // Check if this is the current location
@@ -189,7 +194,7 @@ export default function Header({ location }: HeaderProps) {
                                   {isActiveLocation && <span className="ml-2 text-xs">(You are here)</span>}
                                 </span>
                                 {subItem.description && (
-                                  <span className="block text-sm text-charcoal/60 mt-0.5">
+                                  <span className="block text-sm text-charcoal/70 mt-0.5">
                                     {subItem.description}
                                   </span>
                                 )}

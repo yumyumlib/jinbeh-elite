@@ -89,7 +89,7 @@ export default function BestHibachiDallasPage() {
 
       <p>
         Dallas has become a hub for exceptional{" "}
-        <Link href="/blog/what-is-hibachi" className="text-accent-red hover:underline">
+        <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">
           teppanyaki dining
         </Link>
         . Unlike quick-service restaurants where food appears from a hidden
@@ -191,7 +191,7 @@ export default function BestHibachiDallasPage() {
       <p>
         A local favorite in several DFW suburbs, Osaka balances quality hibachi
         with an extensive{" "}
-        <Link href="/blog/types-of-sushi-rolls" className="text-accent-red hover:underline">
+        <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
           sushi menu
         </Link>
         . The experience varies by location, so check reviews for your specific

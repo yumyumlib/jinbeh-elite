@@ -24,7 +24,7 @@ export default function Footer() {
                 className="h-12 w-auto"
               />
             </div>
-            <p className="text-warm-ivory/60 text-sm italic mb-4">
+            <p className="text-warm-ivory/70 text-sm italic mb-4">
               {business.tagline}
             </p>
             <p className="text-warm-ivory/80 mb-4">
@@ -89,7 +89,7 @@ export default function Footer() {
               </svg>
               {frisco.phone}
             </a>
-            <div className="mt-4 space-y-1 text-sm text-warm-ivory/60">
+            <div className="mt-4 space-y-1 text-sm text-warm-ivory/70">
               <p>Lunch: Mon-Fri {frisco.hours.lunch.weekday.display}</p>
               <p>Weekend: {frisco.hours.lunch.weekend.display}</p>
               <p>Dinner: Sun-Thu {frisco.hours.dinner.sunThurs.display}</p>
@@ -126,7 +126,7 @@ export default function Footer() {
               </svg>
               {lewisville.phone}
             </a>
-            <div className="mt-4 space-y-1 text-sm text-warm-ivory/60">
+            <div className="mt-4 space-y-1 text-sm text-warm-ivory/70">
               <p>Lunch: Mon-Fri {lewisville.hours.lunch.weekday.display}</p>
               <p>Weekend: {lewisville.hours.lunch.weekend.display}</p>
               <p>Dinner: Sun-Thu {lewisville.hours.dinner.sunThurs.display}</p>
@@ -190,7 +190,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-warm-ivory/10">
         <div className="container mx-auto px-6 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-warm-ivory/60">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-warm-ivory/70">
             <p>
               © {currentYear} Jinbeh Japanese Restaurant. All rights reserved.
             </p>

@@ -92,7 +92,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
       <p>
         Most restaurants offer food. Hibachi offers an experience. When you
         book a birthday at a{" "}
-        <Link href="/blog/what-is-hibachi" className="text-accent-red hover:underline">
+        <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">
           teppanyaki restaurant
         </Link>
         , you're not just choosing a menu—you're choosing entertainment that
@@ -300,7 +300,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
         </li>
         <li>
           Order family-style{" "}
-          <Link href="/blog/types-of-sushi-rolls" className="text-accent-red hover:underline">
+          <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
             sushi
           </Link>{" "}
           as an appetizer for the table to share
