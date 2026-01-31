@@ -183,7 +183,8 @@ export default function BestHibachiDallasPage() {
         Located in Richardson, Shogun offers generous portions at competitive
         prices. The space accommodates large parties well, making it a practical
         choice for big gatherings where keeping costs down matters more than
-        ambiance.
+        ambiance. However, some reviewers have noted concerns about inconsistent
+        food quality and service standards, so experiences may vary.
       </p>
 
       <h3>5. Osaka Japanese Restaurant</h3>
