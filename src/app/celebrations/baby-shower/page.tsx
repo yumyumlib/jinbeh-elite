@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Baby Shower Venues Frisco TX | Baby Shower Restaurant | Jinbeh Japanese",
   description: "Host your baby shower at Jinbeh Japanese Restaurant! Fun hibachi entertainment, delicious food & memorable celebration. Baby shower venues in Frisco & Lewisville TX.",
   keywords: [
     "baby shower venues frisco",
+    "baby shower venues near me",
     "baby shower restaurant frisco tx",
+    "baby shower restaurant near me",
     "baby shower lewisville",
     "baby shower hibachi",
-    "baby shower restaurant near me",
-    "baby shower lunch venues",
+    "baby shower lunch venues frisco",
+    "baby shower brunch restaurant",
     "baby shower dinner frisco",
-    "gender reveal dinner",
+    "gender reveal dinner frisco",
+    "gender reveal restaurant",
     "baby shower near plano",
-    "baby shower party restaurant",
-    "private baby shower venue",
-    "baby shower mckinney"
+    "baby shower party restaurant dfw",
+    "private baby shower venue frisco",
+    "baby shower mckinney",
+    "restaurants for baby showers",
+    "baby shower venue allen tx",
+    "sip and see venue"
   ],
   openGraph: {
     title: "Baby Shower Venues | Jinbeh Japanese Restaurant",
@@ -73,8 +80,15 @@ export default function BabyShowerPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-pink-400 to-blue-400 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative min-h-[60vh] flex items-center text-white py-20">
+        <Image
+          src="/images/celebrations/jinbeh_group.jpg"
+          alt="Happy group celebration at Jinbeh Japanese Restaurant - perfect venue for baby showers"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-pink-500/60 via-purple-500/40 to-blue-500/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">

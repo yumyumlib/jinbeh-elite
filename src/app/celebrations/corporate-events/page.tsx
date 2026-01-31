@@ -1,24 +1,31 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Corporate Dinner & Team Events Frisco TX | Private Dining | Jinbeh Japanese Restaurant",
   description: "Host memorable corporate dinners, team building events & business celebrations at Jinbeh. Private hibachi tables, group sushi platters & professional service in Frisco & Lewisville TX.",
   keywords: [
     "corporate dinner frisco",
+    "corporate dinner near me",
     "team building restaurant frisco tx",
+    "team building dinner dfw",
     "business dinner lewisville",
     "private dining frisco",
+    "private dining room frisco tx",
     "corporate events japanese restaurant",
     "team dinner hibachi",
     "company celebration dinner",
     "business lunch frisco",
     "group dining frisco tx",
     "corporate catering japanese",
-    "office party restaurant",
+    "office party restaurant frisco",
     "client dinner frisco",
-    "executive dining",
-    "team outing restaurant"
+    "client entertainment restaurant dfw",
+    "executive dining frisco tx",
+    "team outing restaurant",
+    "company holiday party restaurant frisco",
+    "corporate event venue frisco"
   ],
   openGraph: {
     title: "Corporate Events & Team Dinners | Jinbeh Japanese Restaurant",
@@ -75,8 +82,15 @@ export default function CorporateEventsPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20">
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative min-h-[60vh] flex items-center text-white py-20">
+        <Image
+          src="/images/celebrations/jinbeh_group.jpg"
+          alt="Corporate team dinner at Jinbeh Japanese Restaurant hibachi table"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">

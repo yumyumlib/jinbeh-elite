@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Rehearsal Dinner Venues Frisco TX | Wedding Rehearsal Restaurant | Jinbeh",
   description: "Host your wedding rehearsal dinner at Jinbeh Japanese Restaurant. Private hibachi tables, memorable entertainment & delicious cuisine. Perfect rehearsal dinner venues in Frisco & Lewisville TX.",
   keywords: [
     "rehearsal dinner venues frisco",
+    "rehearsal dinner venues near me",
     "rehearsal dinner restaurant frisco tx",
     "wedding rehearsal dinner lewisville",
     "rehearsal dinner hibachi",
     "private dining rehearsal dinner",
     "rehearsal dinner near plano",
-    "wedding party dinner",
+    "wedding party dinner frisco",
     "rehearsal dinner ideas",
     "rehearsal dinner venues dfw",
     "japanese rehearsal dinner",
     "hibachi rehearsal dinner",
-    "rehearsal dinner mckinney"
+    "rehearsal dinner mckinney",
+    "engagement dinner frisco tx",
+    "pre wedding dinner venue",
+    "rehearsal dinner allen tx",
+    "wedding weekend dinner ideas",
+    "intimate rehearsal dinner venue"
   ],
   openGraph: {
     title: "Rehearsal Dinner Venues | Jinbeh Japanese Restaurant",
@@ -73,14 +80,25 @@ export default function RehearsalDinnerPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-rose-900 to-rose-800 text-white py-20">
-        <div className="absolute inset-0 bg-black/30"></div>
+      <section className="relative min-h-[60vh] flex items-center text-white py-20">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          poster="/images/food/OnionVolcanoDemo.jpg"
+          aria-label="Hibachi chef performing fire show for celebration at Jinbeh"
+        >
+          <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-rose-900/70 via-black/50 to-rose-900/70"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Rehearsal Dinner at Jinbeh
             </h1>
-            <p className="text-xl md:text-2xl text-rose-100 mb-8">
+            <p className="text-xl md:text-2xl text-white/90 mb-8">
               Start your wedding celebration with an unforgettable hibachi experience for your closest family and friends.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

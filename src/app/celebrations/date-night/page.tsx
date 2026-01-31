@@ -9,13 +9,21 @@ export const metadata: Metadata = {
   description: "Plan the perfect date night at Jinbeh! Romantic hibachi dinner, sushi, sake & cocktails in Frisco and Lewisville TX. Impress your date with tableside entertainment.",
   keywords: [
     "date night restaurant frisco",
+    "date night restaurants near me",
     "romantic dinner frisco tx",
+    "romantic dinner near me",
     "date night lewisville",
     "couples dinner frisco",
     "romantic restaurant near me",
     "date night ideas frisco",
     "hibachi date night",
     "sushi date night",
+    "date night plano",
+    "anniversary dinner frisco",
+    "special occasion restaurant dfw",
+    "intimate dinner frisco tx",
+    "sake bar date night",
+    "best date night restaurant dfw"
   ],
   openGraph: {
     title: "Date Night Restaurant | Romantic Dinner at Jinbeh",
