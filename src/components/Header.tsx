@@ -120,7 +120,7 @@ export default function Header({ location }: HeaderProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="/images/logos/jinbeh-logo.avif"
+              src="/images/logos/JinbehLogo.png"
               alt="Jinbeh Japanese Restaurant"
               width={160}
               height={70}
