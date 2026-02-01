@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Jinbeh | Family-Owned Japanese Restaurant Since 1988 | Frisco & Lewisville TX",
+  title: "About Jinbeh | Family-Owned Japanese Restaurant Since 1988",
   description:
-    "Discover the Jinbeh story. Family-owned Japanese restaurant serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988. Experience 37+ years of tradition, quality, and hospitality.",
+    "Discover the Jinbeh story. Family-owned hibachi and sushi restaurant in Frisco & Lewisville TX since 1988. 37+ years of tradition and hospitality.",
   keywords: [
     "about jinbeh",
     "japanese restaurant history frisco",

@@ -20,7 +20,9 @@ const galleryItems = [
 const location = locations.locations.frisco;
 
 export const metadata: Metadata = {
-  title: location.seo.title,
+  title: {
+    absolute: location.seo.title,
+  },
   description: location.seo.description,
   keywords: location.seo.keywords,
   alternates: {

@@ -5,11 +5,11 @@ import MobileStickyCTA from "@/components/MobileStickyCTA";
 export const metadata: Metadata = {
   metadataBase: new URL("https://jinbeh.com"),
   title: {
-    default: "Jinbeh Japanese Restaurant | Hibachi & Sushi in Frisco & Lewisville TX",
+    default: "Jinbeh Japanese Restaurant | Hibachi & Sushi | Frisco TX",
     template: "%s | Jinbeh Japanese Restaurant",
   },
   description:
-    "Experience authentic Japanese hibachi and sushi at Jinbeh. Family-owned since 1988, serving Frisco and Lewisville, TX. Dinner and a show – where memories are made. Reserve your table today!",
+    "Authentic Japanese hibachi & sushi at Jinbeh. Family-owned since 1988 in Frisco & Lewisville TX. Dinner and a show – reserve your table today!",
   keywords: [
     "hibachi",
     "sushi",
