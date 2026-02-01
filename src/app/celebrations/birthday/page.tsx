@@ -339,7 +339,7 @@ export default function BirthdayPage() {
                 Anniversary Dinners
               </Link>
               <Link
-                href="/celebrations/corporate-events"
+                href="/celebrations/groups"
                 className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md"
               >
                 Group Events

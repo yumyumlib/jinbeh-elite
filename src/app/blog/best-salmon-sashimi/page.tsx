@@ -88,7 +88,7 @@ export default function BestSalmonSashimi() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/21-C060324-6802.jpg"
+                    src="/images/blog/7-C060324-6447.jpg"
                     alt="Fresh salmon sashimi platter"
                     fill
                     className="object-cover"

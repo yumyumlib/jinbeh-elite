@@ -109,8 +109,10 @@ export default function SakeBombFriscoPage() {
         </nav>
 
         {/* Hero Section */}
-        <section className="relative py-16 bg-charcoal text-white">
-          <div className="container mx-auto px-6">
+        <section className="relative py-16 text-white overflow-hidden">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/drinks/cocktail.jpg')" }} />
+          <div className="absolute inset-0 bg-charcoal/80" />
+          <div className="relative z-10 container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
                 Cocktails & Sake • Jinbeh Frisco

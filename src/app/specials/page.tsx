@@ -524,8 +524,8 @@ export default function SpecialsPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/photoshoot/sizzling-plate.jpg"
-                    alt="Jinbeh Frisco specials sizzling plate"
+                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
+                    alt="Jinbeh Frisco location"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />

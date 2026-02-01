@@ -199,8 +199,8 @@ export default function HappyHourSpecialsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-deep-indigo via-charcoal to-accent-red" />
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="/images/photoshoot/appetizers-spread.jpg"
-              alt="Happy hour appetizers"
+              src="/images/photoshoot/sashimi-platter.jpg"
+              alt="Sushi"
               fill
               className="object-cover"
             />
@@ -381,8 +381,8 @@ export default function HappyHourSpecialsPage() {
               <div className="relative">
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/food/JinbehAhiTower.jpg"
-                    alt="Jinbeh premium Ahi tower"
+                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
+                    alt="Jinbeh bar atmosphere"
                     fill
                     className="object-cover"
                   />

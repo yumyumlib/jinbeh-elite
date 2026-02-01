@@ -352,7 +352,7 @@ export default function RestaurantsPrivateRooms() {
                                     </ul>
 
                                     <p>
-                                        Both locations feature private dining capabilities with dedicated event coordinators, flexible menus, and professional service. Learn more about <Link href="/blog/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
+                                        Both locations feature private dining capabilities with dedicated event coordinators, flexible menus, and professional service. Learn more about <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
                                     </p>
                                 </div>
 

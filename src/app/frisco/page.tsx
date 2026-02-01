@@ -14,7 +14,7 @@ const galleryItems = [
   { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll closeup", caption: "Signature Samurai Roll" },
   { src: "/images/frisco/JinbehFriscoTables.jpg", alt: "Jinbeh Frisco dining area", caption: "Elegant Dining Space" },
   { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo", caption: "Hibachi NY Strip & Shrimp" },
-  { src: "/images/photoshoot/appetizers-spread.jpg", alt: "Japanese appetizers spread", caption: "Appetizer Selection" },
+  { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi and desserts", caption: "Fresh Daily Selection" },
 ];
 
 const location = locations.locations.frisco;

@@ -174,7 +174,7 @@ export default function AllenNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/frisco-interior.jpg')",
+              backgroundImage: "url('/images/food/JinbehFriscoStorefrontSign.jpg')",
             }}
           />
           <div className="hero-overlay" />

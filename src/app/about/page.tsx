@@ -379,7 +379,7 @@ export default function AboutPage() {
                 { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi grilled shrimp with vegetables and fried rice" },
                 { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi selection and Japanese desserts at the bar" },
                 { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo with NY strip steak and colossal shrimp" },
-                { src: "/images/photoshoot/appetizers-detail.jpg", alt: "Detailed close-up of Japanese appetizers" },
+                { src: "/images/photoshoot/sashimi-platter.jpg", alt: "Premium sashimi platter with salmon, tuna, and yellowtail" },
                 { src: "/images/drinks/JinbehPunchBeverageDrink.jpg", alt: "Jinbeh Punch signature cocktail with tropical flavors" },
               ].map((item, i) => (
                 <a

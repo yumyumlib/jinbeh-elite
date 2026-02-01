@@ -52,7 +52,7 @@ export default function JinbehGiftCardsGuidePage() {
     <ArticleLayout
       title="Maximize Your Jinbeh Gift Card: Deals, Tips & Birthday Club Benefits"
       metaDescription="Your ultimate guide to getting maximum value from your Jinbeh gift card. Discover current promotions, birthday club perks, balance checking, and dining strategies."
-      heroImage="/images/photoshoot/specialty-roll.jpg"
+      heroImage="/images/exterior/JinbehFriscoStorefrontSign.jpg"
       heroAlt="Jinbeh hibachi celebration with chef entertaining guests at table"
       category="Deals & Promos"
       categorySlug="deals"

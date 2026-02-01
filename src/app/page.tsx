@@ -497,7 +497,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
               {/* Hibachi */}
               <ScrollReveal delay={0}>
-                <Link href="/blog?category=hibachi" className="group block feature-card text-center">
+                <Link href="/blog/category/hibachi" className="group block feature-card text-center">
                   <div className="icon-circle icon-circle-fire mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                     <span className="text-4xl filter drop-shadow-md">🔥</span>
                   </div>
@@ -519,7 +519,7 @@ export default function HomePage() {
 
               {/* Sushi */}
               <ScrollReveal delay={150}>
-                <Link href="/blog?category=sushi" className="group block feature-card text-center">
+                <Link href="/blog/category/sushi" className="group block feature-card text-center">
                   <div className="icon-circle icon-circle-sushi mx-auto mb-8 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
                     <span className="text-4xl filter drop-shadow-md">🍣</span>
                   </div>
@@ -541,7 +541,7 @@ export default function HomePage() {
 
               {/* Celebrations */}
               <ScrollReveal delay={300}>
-                <Link href="/blog?category=celebrations" className="group block feature-card text-center">
+                <Link href="/blog/category/celebrations" className="group block feature-card text-center">
                   <div className="icon-circle icon-circle-celebration mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                     <span className="text-4xl filter drop-shadow-md">🎉</span>
                   </div>
@@ -644,8 +644,8 @@ export default function HomePage() {
               </ScrollReveal>
               <ScrollReveal delay={100} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/photoshoot/specialty-roll.jpg"
-                  alt="Specialty sushi roll with premium ingredients and artistic presentation"
+                  src="/images/photoshoot/sashimi-platter.jpg"
+                  alt="Premium sashimi platter with uni, salmon, and yellowtail"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -684,8 +684,8 @@ export default function HomePage() {
               </ScrollReveal>
               <ScrollReveal delay={350} className="gallery-item aspect-square">
                 <Image
-                  src="/images/photoshoot/sizzling-plate.jpg"
-                  alt="Sizzling hibachi plate fresh off the chef's griddle"
+                  src="/images/photoshoot/sashimi-platter.jpg"
+                  alt="Premium sashimi platter with fresh fish and uni in traditional lacquered bowl"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"

@@ -133,7 +133,7 @@ const eventTypes = [
   {
     title: "Baby Showers",
     description: "Create joyful memories with fresh sushi and a welcoming atmosphere.",
-    image: "/images/food/FreshSpicyLoverRoll.jpg",
+    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
     href: "/celebrations/baby-shower",
     icon: "👶",
   },
@@ -684,7 +684,7 @@ export default function EventsPage() {
                 { src: "/images/food/OnionVolcanoDemo.jpg", alt: "Hibachi onion volcano entertainment" },
                 { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi cooked meal" },
                 { src: "/images/photoshoot/sushi-tower.jpg", alt: "Fresh sushi tower" },
-                { src: "/images/food/FreshSpicyLoverRoll.jpg", alt: "Spicy Lover roll specialty sushi" },
+                { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Sushi bar selection" },
                 { src: "/images/interior/FriscoLocation_Bar_Front.jpg", alt: "Frisco restaurant interior" },
                 { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi shrimp and vegetables" },
                 { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll specialty sushi" },
