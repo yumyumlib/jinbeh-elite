@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Vegetable & Tofu | Jinbeh Frisco Hibachi Menu",
-  description: "Fresh seasonal vegetables with crispy tofu Enjoy Vegetable & Tofu at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["vegetable & tofu","vegetable & tofu frisco","hibachi frisco","jinbeh vegetable & tofu","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Vegetable & Tofu Hibachi Frisco | Vegan Teppanyaki Option",
+  description: "Fresh seasonal vegetables with crispy tofu. 180-220 calories, high protein plant-based. Vegan-friendly hibachi. Includes soup, salad, rice, grilled vegetables.",
+  keywords: ["vegetable tofu hibachi frisco","vegan hibachi frisco tx","plant-based teppanyaki restaurant frisco","best hibachi near me frisco","tofu protein nutrition","vegetarian japanese steakhouse frisco","healthy hibachi options","best hibachi frisco tx"],
   openGraph: {
     title: "Vegetable & Tofu | Jinbeh Frisco",
     description: "Fresh seasonal vegetables with crispy tofu",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Vegetable & Tofu hibachi at Jinbeh Frisco?",
+      "name": "How many calories in hibachi Vegetable & Tofu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vegetable & Tofu at Jinbeh Frisco is fresh seasonal vegetables with crispy tofu. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $19.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Vegetable & Tofu contains approximately 180-220 calories with 14-18g plant-based protein from crispy tofu and vegetables. The complete hibachi dinner totals 550-700 calories. It's the most affordable hibachi option at $19.95."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Vegetable & Tofu prepared at Jinbeh?",
+      "name": "Is Vegetable & Tofu vegan and plant-based?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Vegetable & Tofu on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! Our Vegetable & Tofu is completely vegan and plant-based. Crispy tofu provides complete protein with all essential amino acids. Ask about vegetable broth for soup and oil usage to ensure 100% vegan preparation."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Vegetable & Tofu hibachi dinner?",
+      "name": "What vegetables are included?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Vegetable & Tofu hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your plate features seasonal fresh vegetables including zucchini, onions, mushrooms, broccoli, cabbage, and more depending on season. Crispy tofu cubes grilled on teppan, plus Japanese onion soup, salad, and fried rice."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Vegetable & Tofu hibachi good for special occasions?",
+      "name": "Can I customize the vegetables or skip rice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Vegetable & Tofu is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Absolutely! Request additional vegetables instead of fried rice for a lower-carb option. Choose specific vegetables you prefer. Our chefs will customize your plate with extra grilled vegetables and tofu."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Vegetable & Tofu hibachi for a group?",
+      "name": "Is Vegetable & Tofu good for weight loss diets?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Vegetable & Tofu experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Yes! At only 180-220 calories with 14-18g protein and high fiber from vegetables, it's excellent for weight management. Request light oil, skip fried rice, and ask for extra grilled vegetables for an optimal low-calorie meal."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function VegetableTofuFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$19.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$19.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

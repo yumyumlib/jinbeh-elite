@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sake Bomb | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "Classic sake dropped into cold beer Enjoy Sake Bomb at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["sake bomb","sake bomb frisco","cocktails & sake frisco","jinbeh sake bomb","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Sake Bomb Frisco - Classic Japanese Beer Cocktail",
+  description: "Traditional sake bomb with cold Japanese beer at Jinbeh Frisco. Best happy hour cocktails. Reserve at our Japanese restaurant (214) 619-1200.",
+  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","sake bomb","beer cocktails","jinbeh frisco","japanese restaurant","drinks near stonebriar"],
   openGraph: {
-    title: "Sake Bomb | Jinbeh Frisco",
-    description: "Classic sake dropped into cold beer",
+    title: "Sake Bomb | Classic Japanese Beer Cocktail Frisco",
+    description: "Traditional sake bomb with cold Japanese beer. Best happy hour specials.",
     url: "https://jinbeh.com/frisco/cocktails/sake-bomb",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Sake Bomb at Jinbeh?",
+      "name": "What is a Sake Bomb drink?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sake Bomb at Jinbeh Frisco is classic sake dropped into cold beer. At $8.00, it's one of our signature bar offerings."
+        "text": "A Sake Bomb is a traditional Japanese drinking experience where a shot glass of premium sake is dropped into a glass of cold Japanese beer (typically Kirin or Sapporo). The combination creates a unique taste profile."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Sake Bomb available during happy hour?",
+      "name": "How many calories are in a Sake Bomb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many of our cocktails including options like Sake Bomb are featured during happy hour at discounted prices. Visit Jinbeh Frisco for current happy hour specials."
+        "text": "A Sake Bomb typically contains 150-200 calories, varying by the specific sake and beer used. The calorie content comes from both the alcohol and residual sugars in the ingredients."
       }
     },
     {
       "@type": "Question",
-      "name": "What food pairs with Sake Bomb?",
+      "name": "What is the alcohol content of a Sake Bomb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sake Bomb pairs beautifully with our sushi and appetizers. Our bartenders can suggest the perfect food pairing to complement your drink."
+        "text": "A Sake Bomb contains approximately 10-12% alcohol by volume total, combining sake (15-20% ABV) with beer (5% ABV). This creates a stronger drink than beer alone."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Sake Bomb at the bar?",
+      "name": "What are the ingredients in a Sake Bomb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco has a full bar where you can enjoy Sake Bomb and watch our sushi chefs at work. No reservation needed for bar seating."
+        "text": "A Sake Bomb consists of two main components: premium Japanese sake (typically futsushu table sake) and cold Japanese beer (Kirin, Sapporo, or Asahi). The sake shot is dropped into the beer before consuming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sake Bomb good for happy hour?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Sake Bomb is featured during our happy hour at Jinbeh Frisco with special pricing. It's perfect for celebrating with friends and experiencing authentic Japanese drinking culture."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function SakeBombFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$8.00</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$8.00</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

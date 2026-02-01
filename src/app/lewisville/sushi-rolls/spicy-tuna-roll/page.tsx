@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Spicy Tuna Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Fresh tuna with spicy mayo and scallions Enjoy Spicy Tuna Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["spicy tuna roll","spicy tuna roll lewisville","sushi rolls lewisville","jinbeh spicy tuna roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Spicy Tuna Roll Lewisville | Fresh Tuna Spicy Mayo",
+  description: "Spicy Tuna Roll at Jinbeh Lewisville: Fresh tuna, spicy mayo, 260-350 cal. Premium sushi near I-35E. Made fresh to order. Call (972) 221-3888.",
+  keywords: ["spicy tuna roll","spicy tuna roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","jinbeh spicy tuna roll","best sushi rolls lewisville"],
   openGraph: {
     title: "Spicy Tuna Roll | Jinbeh Lewisville",
     description: "Fresh tuna with spicy mayo and scallions",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Spicy Tuna Roll at Jinbeh Lewisville?",
+      "name": "How many calories in Spicy Tuna Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Spicy Tuna Roll at Jinbeh is fresh tuna with spicy mayo and scallions. Priced at $11.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Spicy Tuna Roll at Jinbeh contains approximately 260-350 calories per serving. The exact count varies based on portion size and the amount of spicy mayo used in the preparation."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Spicy Tuna Roll made fresh?",
+      "name": "What is in Spicy Tuna Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Spicy Tuna Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Spicy Tuna Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Spicy Tuna Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Spicy Tuna Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Spicy Tuna Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Our Spicy Tuna Roll features fresh sushi-grade tuna mixed with spicy mayo, sriracha, scallions, cucumber, avocado, sushi rice, and nori. The perfect balance of heat and fresh fish flavor."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Spicy Tuna Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Spicy Tuna Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Spicy Tuna Roll may contain gluten in soy sauce and some seasonings. Please inform your server of dietary restrictions and our chefs can recommend gluten-free soy sauce options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How spicy is Spicy Tuna Roll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Spicy Tuna Roll offers a medium heat level from sriracha and chili seasonings. If you prefer milder or extra spicy, our chefs can customize it to your taste preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it made with fresh tuna?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We use sushi-grade tuna delivered daily. All rolls at Jinbeh Lewisville are prepared fresh to order by experienced sushi chefs."
       }
     }
   ]
@@ -168,7 +168,18 @@ export default function SpicyTunaRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$11.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$11.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~260-350 per serving</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Heat Level</td>
+                      <td className="py-4 text-right text-charcoal/80">Medium-Spicy</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +192,8 @@ export default function SpicyTunaRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +217,10 @@ export default function SpicyTunaRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -222,7 +233,7 @@ export default function SpicyTunaRollLewisvillePage() {
                 <div className="space-y-6">
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">What is the Spicy Tuna Roll at Jinbeh Lewisville?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">How many calories in Spicy Tuna Roll?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -230,12 +241,12 @@ export default function SpicyTunaRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      The Spicy Tuna Roll at Jinbeh is fresh tuna with spicy mayo and scallions. Priced at \$11.95, it\'s handcrafted by our sushi chefs using the freshest ingredients delivered daily.
+                      Spicy Tuna Roll at Jinbeh contains approximately 260-350 calories per serving. The exact count varies based on portion size and the amount of spicy mayo used in the preparation.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">Is the Spicy Tuna Roll made fresh?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">What is in Spicy Tuna Roll?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -243,33 +254,7 @@ export default function SpicyTunaRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! All sushi at Jinbeh Lewisville is made to order. Our Spicy Tuna Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry.
-                    </p>
-                  </details>
-                  <details className="group border-b border-warm-ivory pb-4">
-                    <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">What pairs well with Spicy Tuna Roll?</h3>
-                      <span className="text-accent-red group-open:rotate-180 transition-transform">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </span>
-                    </summary>
-                    <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      We recommend pairing Spicy Tuna Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal.
-                    </p>
-                  </details>
-                  <details className="group border-b border-warm-ivory pb-4">
-                    <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">Can I order Spicy Tuna Roll for takeout?</h3>
-                      <span className="text-accent-red group-open:rotate-180 transition-transform">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </span>
-                    </summary>
-                    <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Spicy Tuna Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Our Spicy Tuna Roll features fresh sushi-grade tuna mixed with spicy mayo, sriracha, scallions, cucumber, avocado, sushi rice, and nori. The perfect balance of heat and fresh fish flavor.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -282,7 +267,33 @@ export default function SpicyTunaRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Some ingredients in Spicy Tuna Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives.
+                      Spicy Tuna Roll may contain gluten in soy sauce and some seasonings. Please inform your server of dietary restrictions and our chefs can recommend gluten-free soy sauce options.
+                    </p>
+                  </details>
+                  <details className="group border-b border-warm-ivory pb-4">
+                    <summary className="flex justify-between items-center cursor-pointer list-none">
+                      <h3 className="font-medium text-charcoal pr-4">How spicy is Spicy Tuna Roll?</h3>
+                      <span className="text-accent-red group-open:rotate-180 transition-transform">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <p className="mt-4 text-charcoal/70 leading-relaxed">
+                      Our Spicy Tuna Roll offers a medium heat level from sriracha and chili seasonings. If you prefer milder or extra spicy, our chefs can customize it to your taste preference.
+                    </p>
+                  </details>
+                  <details className="group border-b border-warm-ivory pb-4">
+                    <summary className="flex justify-between items-center cursor-pointer list-none">
+                      <h3 className="font-medium text-charcoal pr-4">Is it made with fresh tuna?</h3>
+                      <span className="text-accent-red group-open:rotate-180 transition-transform">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <p className="mt-4 text-charcoal/70 leading-relaxed">
+                      Yes! We use sushi-grade tuna delivered daily. All rolls at Jinbeh Lewisville are prepared fresh to order by experienced sushi chefs.
                     </p>
                   </details>
                 </div>

@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yellowtail Jalapeño Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Fresh yellowtail with jalapeño and ponzu Enjoy Yellowtail Jalapeño Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["yellowtail jalapeño roll","yellowtail jalapeño roll lewisville","sushi rolls lewisville","jinbeh yellowtail jalapeño roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Yellowtail Jalapeño Sushi Lewisville | Hamachi Roll",
+  description: "Yellowtail Jalapeño at Jinbeh Lewisville: Fresh hamachi, jalapeño, ponzu sauce, scallions. Premium raw fish. Call (972) 221-3888.",
+  keywords: ["yellowtail jalapeno","yellowtail jalapeno lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","spicy yellowtail","jinbeh yellowtail"],
   openGraph: {
     title: "Yellowtail Jalapeño Roll | Jinbeh Lewisville",
     description: "Fresh yellowtail with jalapeño and ponzu",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Yellowtail Jalapeño Roll at Jinbeh Lewisville?",
+      "name": "What is in Yellowtail Jalapeño Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Yellowtail Jalapeño Roll at Jinbeh is fresh yellowtail with jalapeño and ponzu. Priced at $16.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Yellowtail Jalapeño features fresh sushi-grade yellowtail (hamachi), thin-sliced fresh jalapeño, scallions, sushi rice, and nori, finished with ponzu sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Yellowtail Jalapeño Roll made fresh?",
+      "name": "Is it raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Yellowtail Jalapeño Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "Yes, this is a raw fish roll featuring fresh sushi-grade yellowtail. The fresh jalapeño adds a spicy kick that complements the mild, buttery yellowtail perfectly."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Yellowtail Jalapeño Roll?",
+      "name": "What is yellowtail?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Yellowtail Jalapeño Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Yellowtail, also called hamachi, is a premium Japanese fish with a mild, buttery flavor and delicate texture. It's highly prized in sushi and pairs beautifully with ponzu."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Yellowtail Jalapeño Roll for takeout?",
+      "name": "Is it gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Yellowtail Jalapeño Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Yellowtail Jalapeño is mostly gluten-free, but ponzu sauce may contain gluten. Request tamari or gluten-free ponzu sauce for a gluten-free option."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Yellowtail Jalapeño Roll gluten-free?",
+      "name": "Can I order for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Yellowtail Jalapeño Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Yes! Yellowtail Jalapeño Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function YellowtailJalapenoLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$16.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Protein</td>
+                      <td className="py-4 text-right text-charcoal/80">Fresh Hamachi</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function YellowtailJalapenoLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function YellowtailJalapenoLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function YellowtailJalapenoLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Yellowtail Jalapeño Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Yellowtail Jalapeño Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

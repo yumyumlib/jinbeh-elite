@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Philadelphia Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Smoked salmon with cream cheese and cucumber Enjoy Philadelphia Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["philadelphia roll","philadelphia roll frisco","sushi rolls frisco","jinbeh philadelphia roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Philadelphia Roll Frisco | Salmon Cream Cheese",
+  description: "Philadelphia Roll at Jinbeh Frisco: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near Legacy West. Call (214) 619-1200.",
+  keywords: ["philadelphia roll","philadelphia roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","salmon sushi roll","jinbeh philadelphia roll"],
   openGraph: {
     title: "Philadelphia Roll | Jinbeh Frisco",
     description: "Smoked salmon with cream cheese and cucumber",
@@ -44,26 +44,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Philadelphia Roll at Jinbeh Frisco?",
+      "name": "How many calories in Philadelphia Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Philadelphia Roll at Jinbeh is smoked salmon with cream cheese and cucumber. Priced at $12.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Philadelphia Roll at Jinbeh contains approximately 273 calories per serving. It features smoked salmon, cream cheese, and cucumber with sushi rice and nori."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Philadelphia Roll made fresh?",
+      "name": "What is in Philadelphia Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Philadelphia Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "Our Philadelphia Roll includes smoked salmon, cream cheese, fresh cucumber, sushi rice, and seaweed (nori). Some variations include avocado or scallions for added texture."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Philadelphia Roll?",
+      "name": "Is Philadelphia Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Philadelphia Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Philadelphia Roll is mostly gluten-free, but soy sauce and some seasonings may contain gluten. Request gluten-free soy sauce to make it fully gluten-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Philadelphia Roll made fresh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! All sushi at Jinbeh Frisco is made to order using fresh smoked salmon. Our skilled sushi chefs prepare each roll with precision and care."
       }
     },
     {
@@ -72,14 +80,6 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Philadelphia Roll gluten-free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some ingredients in Philadelphia Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function PhillyRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$12.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$12.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~273 per serving</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -222,7 +229,7 @@ export default function PhillyRollFriscoPage() {
                 <div className="space-y-6">
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">What is the Philadelphia Roll at Jinbeh Frisco?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">How many calories in Philadelphia Roll?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -230,7 +237,7 @@ export default function PhillyRollFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      The Philadelphia Roll at Jinbeh is smoked salmon with cream cheese and cucumber. Priced at \$12.95, it\'s handcrafted by our sushi chefs using the freshest ingredients delivered daily.
+                      Philadelphia Roll at Jinbeh contains approximately 273 calories per serving. It features smoked salmon, cream cheese, and cucumber with sushi rice and nori.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -248,7 +255,7 @@ export default function PhillyRollFriscoPage() {
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">What pairs well with Philadelphia Roll?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">What is in Philadelphia Roll?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -256,7 +263,7 @@ export default function PhillyRollFriscoPage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      We recommend pairing Philadelphia Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal.
+                      Our Philadelphia Roll includes smoked salmon, cream cheese, fresh cucumber, sushi rice, and seaweed (nori). Some variations include avocado or scallions for added texture.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

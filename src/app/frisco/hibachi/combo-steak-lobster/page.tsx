@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Steak & Lobster Combo | Jinbeh Frisco Hibachi Menu",
-  description: "Surf and turf perfection Enjoy Steak & Lobster Combo at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["steak & lobster combo","steak & lobster combo frisco","hibachi frisco","jinbeh steak & lobster combo","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Steak & Lobster Combo Hibachi Frisco | Luxury Surf Turf",
+  description: "Premium filet mignon and Maine lobster tail. 430-480 calories, 55-60g protein. Luxury special occasion combo. Includes soup, salad, rice, grilled vegetables.",
+  keywords: ["steak lobster combo hibachi frisco","lobster filet mignon teppanyaki frisco","luxury surf and turf frisco tx","best hibachi near me frisco","special occasion dinner hibachi","premium protein combo","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Steak & Lobster Combo | Jinbeh Frisco",
     description: "Surf and turf perfection",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Steak & Lobster Combo hibachi at Jinbeh Frisco?",
+      "name": "What's included in Steak & Lobster Combo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steak & Lobster Combo at Jinbeh Frisco is surf and turf perfection. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $54.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Premium combo features filet mignon (5oz, 250 cal, 28g protein) and Maine lobster tail (5oz, 180 cal, 28g protein) for 430-480 total calories with 55-60g protein. The ultimate luxury hibachi experience."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Steak & Lobster Combo prepared at Jinbeh?",
+      "name": "Is Steak & Lobster ideal for celebrations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Steak & Lobster Combo on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Absolutely! At $54.95, this is our most celebrated combo for anniversaries, engagements, and special occasions. Filet mignon represents elegance, lobster symbolizes luxury. Perfect for unforgettable moments."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Steak & Lobster Combo hibachi dinner?",
+      "name": "How does steak & lobster compare nutritionally?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Steak & Lobster Combo hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Outstanding! 55-60g protein with 430-480 calories provides exceptional macronutrient ratio. Filet supplies iron and B vitamins, lobster adds minerals and omega-3s. Luxury proteins for health."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Steak & Lobster Combo hibachi good for special occasions?",
+      "name": "Why is Steak & Lobster more expensive?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Steak & Lobster Combo is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "At $54.95, it combines filet mignon ($34.95) and Maine lobster ($44.95). The price reflects premium quality and scarcity. Bundle value saves versus ordering separately while providing luxury surf-and-turf."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Steak & Lobster Combo hibachi for a group?",
+      "name": "Can I modify portions or proteins?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Steak & Lobster Combo experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Contact us for customization! We can substitute NY Strip or Ribeye for filet, or adjust lobster portion. Our chefs are happy to personalize your luxury meal for dietary preferences."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function ComboSteakLobsterFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$54.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$54.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

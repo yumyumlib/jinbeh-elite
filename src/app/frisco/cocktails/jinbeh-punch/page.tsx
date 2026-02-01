@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Jinbeh Punch | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "House specialty tropical cocktail Enjoy Jinbeh Punch at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["jinbeh punch","jinbeh punch frisco","cocktails & sake frisco","jinbeh jinbeh punch","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Jinbeh Punch Frisco - Japanese Tropical Cocktails",
+  description: "Signature tropical cocktail at Jinbeh Frisco. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (214) 619-1200.",
+  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","jinbeh punch","tropical cocktails","jinbeh frisco","japanese restaurant frisco","cocktails near stonebriar"],
   openGraph: {
-    title: "Jinbeh Punch | Jinbeh Frisco",
-    description: "House specialty tropical cocktail",
+    title: "Jinbeh Punch | Frisco Japanese Cocktails",
+    description: "Signature tropical cocktail at Jinbeh. Fresh, handcrafted Japanese beverages.",
     url: "https://jinbeh.com/frisco/cocktails/jinbeh-punch",
   },
   alternates: {
@@ -44,18 +44,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Jinbeh Punch at Jinbeh?",
+      "name": "What is the Jinbeh Punch cocktail?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Jinbeh Punch at Jinbeh Frisco is house specialty tropical cocktail. At $12.00, it's one of our signature bar offerings."
+        "text": "Jinbeh Punch is our signature tropical cocktail at Jinbeh Frisco. This house specialty combines fresh tropical fruits and premium spirits in a refreshing blend perfect for celebrating with friends."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Jinbeh Punch available during happy hour?",
+      "name": "How many calories are in Jinbeh Punch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many of our cocktails including options like Jinbeh Punch are featured during happy hour at discounted prices. Visit Jinbeh Frisco for current happy hour specials."
+        "text": "Tropical cocktails typically range from 150-250 calories depending on specific ingredients and mixers used. Ask our bartenders for nutritional details on the Jinbeh Punch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the ingredients in Jinbeh Punch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Jinbeh Punch features fresh tropical fruits, premium spirits, and carefully selected mixers to create a balanced, refreshing flavor profile. Our bartenders craft each drink to order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Jinbeh Punch available during happy hour in Frisco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Jinbeh Punch is featured during our happy hour at discounted prices. Call (214) 619-1200 or visit our website for current happy hour specials and times."
       }
     },
     {
@@ -63,15 +79,7 @@ const faqSchema = {
       "name": "What food pairs with Jinbeh Punch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jinbeh Punch pairs beautifully with our sushi and appetizers. Our bartenders can suggest the perfect food pairing to complement your drink."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I get Jinbeh Punch at the bar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco has a full bar where you can enjoy Jinbeh Punch and watch our sushi chefs at work. No reservation needed for bar seating."
+        "text": "Jinbeh Punch pairs beautifully with our sushi rolls, appetizers, and Japanese cuisine. Our bartenders recommend pairing with light appetizers to complement the tropical flavors."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function JinbehPunchFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$12.00</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$12.00</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Seared Ahi Tuna | Jinbeh Frisco Appetizers Menu",
-  description: "Pepper-crusted ahi with wasabi aioli Enjoy Seared Ahi Tuna at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["seared ahi tuna","seared ahi tuna frisco","appetizers frisco","jinbeh seared ahi tuna","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
+  title: "Seared Ahi Tuna Frisco | Pepper-Crusted Premium Fish",
+  description: "Seared ahi tuna with wasabi aioli at Jinbeh Frisco. 100-150 calories, 20g protein, omega-3 rich. Premium appetizer with healthy benefits.",
+  keywords: ["japanese appetizers frisco","seared tuna frisco","best sushi frisco tx","ahi tuna appetizer","pepper-crusted tuna","healthy appetizer frisco","tuna tartare"],
   openGraph: {
-    title: "Seared Ahi Tuna | Jinbeh Frisco",
-    description: "Pepper-crusted ahi with wasabi aioli",
+    title: "Seared Ahi Tuna Frisco | Premium Pepper-Crusted Fish",
+    description: "Seared ahi tuna with wasabi aioli at Jinbeh Frisco. 100-150 calories, 20g protein.",
     url: "https://jinbeh.com/frisco/appetizers/seared-tuna",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Seared Ahi Tuna at Jinbeh?",
+      "name": "How many calories in Seared Ahi Tuna?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Seared Ahi Tuna at Jinbeh Frisco is pepper-crusted ahi with wasabi aioli. At $16.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Seared Ahi Tuna at Jinbeh contains approximately 100-150 calories per serving with 20 grams of protein and 4 grams of healthy omega-3 fats."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Seared Ahi Tuna good for sharing?",
+      "name": "What are the health benefits of seared tuna?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Seared Ahi Tuna is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Frisco."
+        "text": "Seared tuna offers lean protein, omega-3 fatty acids for heart and brain health, vitamins B12 and D, and selenium. The rare-seared center preserves nutrients."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Seared Ahi Tuna for happy hour?",
+      "name": "What makes the pepper crust and wasabi aioli special?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Seared Ahi Tuna are featured during our happy hour. Call (214) 619-1200 for current specials."
+        "text": "The black pepper crust adds spice and texture while keeping the center rare. Wasabi aioli brings Japanese heat and creamy richness, complementing the premium tuna."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Seared Ahi Tuna available for takeout?",
+      "name": "Is Seared Ahi Tuna good for groups and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Seared Ahi Tuna travels well for takeout. Call (214) 619-1200 directly or order online."
+        "text": "Absolutely! At $16.95, Seared Ahi Tuna is perfect for sharing and elegant enough for special occasions. Featured in many happy hour specials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order Seared Ahi Tuna for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! For best quality and flavor, pick up quickly. The seared exterior and rare center are preserved best when enjoyed fresh. Call (214) 619-1200."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function SearedTunaFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$16.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

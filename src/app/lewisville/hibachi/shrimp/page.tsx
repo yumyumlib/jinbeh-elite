@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Jumbo Shrimp | Jinbeh Lewisville Hibachi Menu",
-  description: "Succulent jumbo shrimp, flame-kissed to perfection Enjoy Jumbo Shrimp at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["jumbo shrimp","jumbo shrimp lewisville","hibachi lewisville","jinbeh jumbo shrimp","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Jumbo Shrimp Hibachi Lewisville | Best Seafood Teppanyaki",
+  description: "Jumbo shrimp seared tableside. 120-150 calories per serving, 22-25g protein. Low-carb, protein-rich seafood option. Includes soup, salad, rice, vegetables.",
+  keywords: ["jumbo shrimp hibachi lewisville","shrimp teppanyaki lewisville tx","best hibachi near me lewisville","seafood hibachi lewisville","shrimp calories nutrition facts","low carb hibachi options","japanese steakhouse lewisville","best hibachi lewisville tx"],
   openGraph: {
     title: "Jumbo Shrimp | Jinbeh Lewisville",
     description: "Succulent jumbo shrimp, flame-kissed to perfection",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Jumbo Shrimp hibachi good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Jumbo Shrimp is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
+        "text": "Absolutely! Jumbo Shrimp is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event."
       }
     },
     {
@@ -168,7 +168,10 @@ export default function ShrimpLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$28.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$28.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +184,8 @@ export default function ShrimpLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -210,10 +213,10 @@ export default function ShrimpLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -273,7 +276,7 @@ export default function ShrimpLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Jumbo Shrimp is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
+                      Absolutely! Jumbo Shrimp is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

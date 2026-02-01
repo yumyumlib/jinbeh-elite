@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yellowtail Sashimi | Jinbeh Lewisville Sashimi Menu",
-  description: "Buttery hamachi with delicate flavor Enjoy Yellowtail Sashimi at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["yellowtail sashimi","yellowtail sashimi lewisville","sashimi lewisville","jinbeh yellowtail sashimi","best sashimi lewisville","japanese restaurant lewisville","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Yellowtail Sashimi Lewisville | Buttery Hamachi Delicacy",
+  description: "Premium hamachi (yellowtail) sashimi at Jinbeh Lewisville. 150 calories, 20g protein, omega-3 rich with heart-healthy benefits.",
+  keywords: ["sashimi near me lewisville","yellowtail sashimi lewisville","hamachi sashimi","best sushi lewisville tx","japanese appetizer lewisville","omega-3 fish lewisville","japanese restaurant lewisville"],
   openGraph: {
     title: "Yellowtail Sashimi | Jinbeh Lewisville",
     description: "Buttery hamachi with delicate flavor",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Yellowtail Sashimi at Jinbeh?",
+      "name": "How many calories are in Yellowtail Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Yellowtail Sashimi is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Lewisville, we take pride in serving only the highest-quality sashimi."
+        "text": "Yellowtail (Hamachi) Sashimi at Jinbeh contains approximately 150 calories per 3-ounce serving with 20 grams of protein and 7 grams of healthy fats."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Yellowtail Sashimi sashimi?",
+      "name": "What are the health benefits of Hamachi sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yellowtail Sashimi at Jinbeh is buttery hamachi with delicate flavor. Priced at $15.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Hamachi is rich in omega-3 fatty acids that support heart and brain health, packed with B vitamins and minerals. It's excellent for reducing inflammation and promoting cardiovascular wellness."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Yellowtail Sashimi sashimi?",
+      "name": "Is Yellowtail Sashimi safe to eat raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Yellowtail Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our hamachi is premium sushi-grade quality, sourced from trusted suppliers, delivered fresh multiple times weekly, and prepared safely by trained chefs."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Yellowtail Sashimi sashimi safe to eat?",
+      "name": "How is Yellowtail Sashimi best served?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Yellowtail Sashimi is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Lewisville follows strict food safety protocols."
+        "text": "Hamachi's buttery, delicate flavor is best appreciated with a light dip of soy sauce and wasabi. Its subtle sweetness shines when served simply and fresh."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Yellowtail Sashimi as part of a platter?",
+      "name": "Can I order Hamachi in a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Yellowtail Sashimi is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Yellowtail Sashimi is available individually at $15.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Featured in our Omakase selections."
       }
     }
   ]
@@ -150,10 +150,10 @@ export default function YellowtailSashimiLewisvillePage() {
                 </h2>
                 <p className="text-charcoal/80 leading-relaxed mb-6">
                   Experience the exceptional Yellowtail Sashimi at Jinbeh Lewisville.
-                  Buttery hamachi with delicate flavor Our skilled chefs craft this dish with precision and artistry.
+                  Buttery hamachi with delicate flavor. Our skilled chefs craft this dish with precision and artistry.
                 </p>
                 <p className="text-charcoal/80 leading-relaxed">
-                  Easy access from I-35E, near Vista Ridge Mall. Lewisville\'s go-to for Japanese cuisine.
+                  Near Vista Ridge Mall, minutes from I-35E. The heart of Lewisville\'s restaurant scene.
                   Whether you&apos;re celebrating a special occasion or enjoying a night out,
                   Yellowtail Sashimi is a guest favorite that delivers on both flavor and presentation.
                 </p>
@@ -168,7 +168,12 @@ export default function YellowtailSashimiLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$15.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$15.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +186,8 @@ export default function YellowtailSashimiLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +211,10 @@ export default function YellowtailSashimiLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>

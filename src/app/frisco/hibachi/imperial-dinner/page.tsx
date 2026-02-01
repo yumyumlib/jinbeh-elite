@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Imperial Dinner | Jinbeh Frisco Hibachi Menu",
-  description: "Filet mignon, lobster tail, and shrimp Enjoy Imperial Dinner at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["imperial dinner","imperial dinner frisco","hibachi frisco","jinbeh imperial dinner","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Imperial Dinner Hibachi Frisco | Surf Turf Premium Combo",
+  description: "Ultimate trio: filet mignon, Maine lobster tail, jumbo shrimp. 600+ calories total protein combo. Premium special occasion dinners near Frisco TX.",
+  keywords: ["imperial dinner hibachi frisco","surf and turf combo frisco tx","best hibachi near me frisco","luxury hibachi dinner frisco","protein combo meal","special occasion hibachi","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Imperial Dinner | Jinbeh Frisco",
     description: "Filet mignon, lobster tail, and shrimp",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Imperial Dinner hibachi at Jinbeh Frisco?",
+      "name": "What's in Imperial Dinner and total protein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Imperial Dinner at Jinbeh Frisco is filet mignon, lobster tail, and shrimp. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $64.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Imperial Dinner features filet mignon (5oz), Maine lobster tail (5oz), and jumbo shrimp (3oz) for an ultimate protein trio. Total approximately 75-85g protein with 900-1000 calories complete dinner. Perfect for protein-focused diets."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Imperial Dinner prepared at Jinbeh?",
+      "name": "Why is Imperial Dinner at $64.95?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Imperial Dinner on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "At $64.95, Imperial Dinner combines three premium proteins: filet mignon ($34.95), lobster tail ($44.95), and jumbo shrimp ($28.95). The value bundle saves versus ordering separately, offering ultimate hibachi variety experience."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Imperial Dinner hibachi dinner?",
+      "name": "What makes Imperial Dinner special for occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Imperial Dinner hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Imperial Dinner offers the ultimate hibachi theater with three proteins cooked tableside simultaneously. Filet mignon, sweet lobster, and succulent shrimp provide variety and luxury. Unforgettable for anniversaries, proposals, and milestone celebrations."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Imperial Dinner hibachi good for special occasions?",
+      "name": "Is Imperial Dinner healthy and high-protein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Imperial Dinner is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Yes! Imperial Dinner provides 75-85g protein from three lean protein sources. Filet (25-30g), lobster (25-30g), and shrimp (22-25g). Balance macronutrient ratio with included vegetables for optimal nutrition."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Imperial Dinner hibachi for a group?",
+      "name": "Can I customize portions or proteins?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Imperial Dinner experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Contact us for modifications. Most diners appreciate the three-protein variety. You can request different cuts (NY Strip, Ribeye) or additional vegetables. Our chefs accommodate special requests for dietary needs."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function ImperialDinnerFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$64.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$64.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

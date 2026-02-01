@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Soft Shell Crab | Jinbeh Frisco Appetizers Menu",
-  description: "Crispy fried soft shell crab Enjoy Soft Shell Crab at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["soft shell crab","soft shell crab frisco","appetizers frisco","jinbeh soft shell crab","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
+  title: "Soft Shell Crab Frisco | Crispy Whole Crab Appetizer",
+  description: "Crispy tempura soft shell crab at Jinbeh Frisco. 555 calories, 23.8g protein, edible shells, tender meat. Japanese specialty.",
+  keywords: ["japanese appetizers frisco","soft shell crab frisco","best sushi frisco tx","crispy crab","seafood appetizer frisco","tempura crab","japanese specialty"],
   openGraph: {
-    title: "Soft Shell Crab | Jinbeh Frisco",
-    description: "Crispy fried soft shell crab",
+    title: "Soft Shell Crab Frisco | Crispy Edible Shell Crab",
+    description: "Crispy tempura soft shell crab at Jinbeh Frisco. 555 calories, 23.8g protein.",
     url: "https://jinbeh.com/frisco/appetizers/soft-shell-crab",
   },
   alternates: {
@@ -44,10 +44,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Soft Shell Crab at Jinbeh?",
+      "name": "How many calories in Soft Shell Crab?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Soft Shell Crab at Jinbeh Frisco is crispy fried soft shell crab. At $14.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Soft Shell Crab at Jinbeh contains approximately 555 calories per serving with 23.8 grams of protein, 39.7g fat, and 31.7g carbohydrates from the crispy batter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the nutrition and health benefits of soft shell crab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Soft shell crab provides lean protein, vitamin B12, selenium, and minerals. The whole edible shell adds calcium. While tempura adds calories from frying, crab itself is nutritious."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes soft shell crab special?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Soft shell crabs are caught during molting when their entire shell is edible and tender. Our tempura preparation creates a crispy, golden exterior while keeping the meat succulent."
       }
     },
     {
@@ -55,23 +71,15 @@ const faqSchema = {
       "name": "Is Soft Shell Crab good for sharing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Soft Shell Crab is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Frisco."
+        "text": "Absolutely! At $14.95, Soft Shell Crab is perfect for sharing and is one of our most requested appetizers. Featured in many happy hour specials."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Soft Shell Crab for happy hour?",
+      "name": "Can I order Soft Shell Crab for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Soft Shell Crab are featured during our happy hour. Call (214) 619-1200 for current specials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Soft Shell Crab available for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Soft Shell Crab travels well for takeout. Call (214) 619-1200 directly or order online."
+        "text": "Yes! For best quality, pick up quickly to maintain crispness. Call (214) 619-1200 or order online for convenient takeout."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function SoftShellCrabFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$14.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

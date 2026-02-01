@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Volcano Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Spicy crab and avocado with baked seafood topping Enjoy Volcano Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["volcano roll","volcano roll frisco","sushi rolls frisco","jinbeh volcano roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Volcano Roll Frisco | Baked Spicy Seafood Lava",
+  description: "Volcano Roll at Jinbeh Frisco: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (214) 619-1200.",
+  keywords: ["volcano roll","volcano roll frisco","sushi near me frisco","best sushi frisco tx","baked sushi roll","specialty sushi"],
   openGraph: {
     title: "Volcano Roll | Jinbeh Frisco",
     description: "Spicy crab and avocado with baked seafood topping",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Volcano Roll at Jinbeh Frisco?",
+      "name": "What is in Volcano Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Volcano Roll at Jinbeh is spicy crab and avocado with baked seafood topping. Priced at $16.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Volcano Roll features a base of California roll (crab, avocado), topped with baked spicy crab and shrimp mixture mixed with cream cheese, sriracha, mayo, and yum yum sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Volcano Roll made fresh?",
+      "name": "Why is it called Volcano Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Volcano Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Volcano Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Volcano Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Volcano Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Volcano Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "The name comes from the dramatic presentation - the warm, spicy baked topping looks like lava flowing over the roll, creating a 'volcano eruption' effect."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Volcano Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Volcano Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Volcano Roll may contain gluten in soy sauce and some ingredients. Request gluten-free soy sauce and verify topping ingredients with your server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How spicy is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Volcano Roll has a medium to medium-hot spice level from the baked topping. The heat is balanced with creamy mayo, making it flavorful without being overwhelming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Volcano Roll is available for takeout and delivery. For the best hot presentation, we recommend dining in at our sushi bar. Call (214) 619-1200."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function VolcanoRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$16.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Preparation</td>
+                      <td className="py-4 text-right text-charcoal/80">Baked Topping</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Seafood Trio | Jinbeh Lewisville Hibachi Menu",
-  description: "Shrimp, scallops, and lobster Enjoy Seafood Trio at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["seafood trio","seafood trio lewisville","hibachi lewisville","jinbeh seafood trio","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Seafood Trio Hibachi Lewisville | Premium Mixed Seafood",
+  description: "Jumbo shrimp, sea scallops, Maine lobster tail. 380-420 calories, 60-65g protein. Healthiest hibachi combo option. Includes soup, salad, rice, grilled vegetables.",
+  keywords: ["seafood trio hibachi lewisville","mixed seafood teppanyaki lewisville tx","best hibachi near me lewisville","healthy seafood combo lewisville","shrimp scallops lobster combo","premium seafood hibachi","japanese steakhouse lewisville","best hibachi lewisville tx"],
   openGraph: {
     title: "Seafood Trio | Jinbeh Lewisville",
     description: "Shrimp, scallops, and lobster",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Seafood Trio hibachi good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Seafood Trio is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
+        "text": "Absolutely! Seafood Trio is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event."
       }
     },
     {
@@ -168,7 +168,10 @@ export default function ComboSeafoodLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$52.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$52.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +184,8 @@ export default function ComboSeafoodLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -210,10 +213,10 @@ export default function ComboSeafoodLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -273,7 +276,7 @@ export default function ComboSeafoodLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Seafood Trio is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
+                      Absolutely! Seafood Trio is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

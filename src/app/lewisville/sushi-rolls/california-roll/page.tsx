@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "California Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Crab, avocado, and cucumber classic Enjoy California Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["california roll","california roll lewisville","sushi rolls lewisville","jinbeh california roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "California Roll Sushi Lewisville | Best Crab & Avocado",
+  description: "California Roll at Jinbeh Lewisville: 250 cal, crab, avocado, cucumber. Fresh handmade sushi near I-35E. Dine in or takeout. Call (972) 221-3888.",
+  keywords: ["california roll","california roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","jinbeh california roll","best sushi rolls lewisville","japanese restaurant lewisville"],
   openGraph: {
     title: "California Roll | Jinbeh Lewisville",
     description: "Crab, avocado, and cucumber classic",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the California Roll at Jinbeh Lewisville?",
+      "name": "How many calories in California Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The California Roll at Jinbeh is crab, avocado, and cucumber classic. Priced at $9.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "A California Roll at Jinbeh contains approximately 250-300 calories per 8-piece serving. It features crab, avocado, and cucumber with sushi rice and nori, making it a lighter sushi option."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the California Roll made fresh?",
+      "name": "What is California Roll made of?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our California Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with California Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing California Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order California Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! California Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "California Roll includes imitation crab, fresh avocado, crisp cucumber, sushi rice, and seaweed (nori). Some versions include sesame seeds or tobiko. Our chefs at Jinbeh craft each roll with premium ingredients."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is California Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in California Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Most California Roll ingredients are naturally gluten-free, but soy sauce and some seasonings may contain gluten. Please inform your server of dietary restrictions and our chefs can accommodate requests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is California Roll made fresh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our California Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order California Roll for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! California Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function CaliforniaRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$9.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$9.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~250-300 per serving</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function CaliforniaRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function CaliforniaRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function CaliforniaRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! California Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! California Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

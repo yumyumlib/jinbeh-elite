@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Shrimp Tempura | Jinbeh Lewisville Appetizers Menu",
-  description: "Light and crispy fried shrimp Enjoy Shrimp Tempura at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["shrimp tempura","shrimp tempura lewisville","appetizers lewisville","jinbeh shrimp tempura","best appetizers lewisville","japanese restaurant lewisville","japanese appetizers","starters","small plates"],
+  title: "Shrimp Tempura Lewisville | Crispy Fried Shrimp Appetizer",
+  description: "Crispy tempura battered shrimp at Jinbeh Lewisville. 200-300 calories, 12-15g protein, light, airy batter. Japanese classic appetizer.",
+  keywords: ["japanese appetizers lewisville","shrimp tempura lewisville","best sushi lewisville tx","fried shrimp","tempura appetizer","crispy shrimp lewisville","japanese starter"],
   openGraph: {
     title: "Shrimp Tempura | Jinbeh Lewisville",
     description: "Light and crispy fried shrimp",
@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Can I order Shrimp Tempura for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Shrimp Tempura are featured during our happy hour. Call (214) 488-2224 for current specials."
+        "text": "Check our happy hour specials! Many appetizers including items similar to Shrimp Tempura are featured during our happy hour. Call (972) 221-3888 for current specials."
       }
     },
     {
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Shrimp Tempura available for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Shrimp Tempura travels well for takeout. Call (214) 488-2224 directly or order online."
+        "text": "Yes, Shrimp Tempura travels well for takeout. Call (972) 221-3888 directly or order online."
       }
     }
   ]
@@ -173,8 +173,8 @@ export default function TempuraLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -198,10 +198,10 @@ export default function TempuraLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function TempuraLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Check our happy hour specials! Many appetizers including items similar to Shrimp Tempura are featured during our happy hour. Call (214) 488-2224 for current specials.
+                      Check our happy hour specials! Many appetizers including items similar to Shrimp Tempura are featured during our happy hour. Call (972) 221-3888 for current specials.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -261,7 +261,7 @@ export default function TempuraLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes, Shrimp Tempura travels well for takeout. Call (214) 488-2224 directly or order online.
+                      Yes, Shrimp Tempura travels well for takeout. Call (972) 221-3888 directly or order online.
                     </p>
                   </details>
                 </div>

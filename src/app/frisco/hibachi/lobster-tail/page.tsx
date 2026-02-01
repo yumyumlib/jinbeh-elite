@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lobster Tail | Jinbeh Frisco Hibachi Menu",
-  description: "Sweet Maine lobster tail, butter-grilled Enjoy Lobster Tail at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["lobster tail","lobster tail frisco","hibachi frisco","jinbeh lobster tail","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Lobster Tail Hibachi Frisco | Luxury Maine Lobster Teppanyaki",
+  description: "Sweet Maine lobster tail cooked tableside butter. 180-220 calories per 5oz, 25-30g protein. Premium special occasion hibachi. Includes soup, salad, rice, vegetables.",
+  keywords: ["lobster tail hibachi frisco","maine lobster teppanyaki frisco tx","best hibachi near me frisco","luxury seafood hibachi frisco","lobster tail calories protein","special occasion dinner frisco","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Lobster Tail | Jinbeh Frisco",
     description: "Sweet Maine lobster tail, butter-grilled",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Lobster Tail hibachi at Jinbeh Frisco?",
+      "name": "How many calories in hibachi Lobster Tail?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lobster Tail at Jinbeh Frisco is sweet maine lobster tail, butter-grilled. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $44.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "A 5oz Maine lobster tail contains approximately 180-220 calories with 25-30g protein and only 1-2g fat. The complete hibachi dinner totals 650-800 calories. Lobster is one of the leanest, most protein-rich seafood options available."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Lobster Tail prepared at Jinbeh?",
+      "name": "Is Maine Lobster Tail healthy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Lobster Tail on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! Lobster is exceptionally healthy - high in protein, very low in fat, and packed with minerals including copper, selenium, and zinc. Contains omega-3 fatty acids supporting heart and brain health. Request butter on the side to control calories."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Lobster Tail hibachi dinner?",
+      "name": "What's included with Lobster Tail hibachi dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Lobster Tail hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your lobster dinner features Japanese onion soup, house salad with ginger dressing, sweet Maine lobster tail butter-grilled on the teppan, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and sauce choice."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Lobster Tail hibachi good for special occasions?",
+      "name": "Why is Lobster Tail the most expensive hibachi item?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Lobster Tail is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "At $44.95, Maine lobster tail is premium due to scarcity, quality, and cost. It offers unmatched sweetness and tender texture. One of the finest proteins available. Perfect for anniversaries, proposals, or milestone celebrations."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Lobster Tail hibachi for a group?",
+      "name": "Is Lobster Tail better than other seafood?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Lobster Tail experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Lobster offers unique flavor and texture compared to shrimp or scallops. Similar calorie count (180-220 cal) to other seafood but superior taste and luxurious experience. Ideal for special occasions and celebrations."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function LobsterTailFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$44.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$44.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

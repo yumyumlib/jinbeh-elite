@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Vegas Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Deep-fried roll with spicy crab and cream cheese Enjoy Vegas Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["vegas roll","vegas roll frisco","sushi rolls frisco","jinbeh vegas roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Vegas Roll Frisco | Deep Fried Salmon Jalapeño",
+  description: "Vegas Roll at Jinbeh Frisco: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (214) 619-1200.",
+  keywords: ["vegas roll","vegas roll frisco","sushi near me frisco","best sushi frisco tx","deep fried sushi","fusion sushi roll"],
   openGraph: {
     title: "Vegas Roll | Jinbeh Frisco",
     description: "Deep-fried roll with spicy crab and cream cheese",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Vegas Roll at Jinbeh Frisco?",
+      "name": "What is in Vegas Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Vegas Roll at Jinbeh is deep-fried roll with spicy crab and cream cheese. Priced at $14.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Vegas Roll features salmon, jalapeño, cream cheese, and avocado inside, then the entire roll is deep-fried in Japanese-style tempura batter. Topped with spicy mayo and eel sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Vegas Roll made fresh?",
+      "name": "Why is it deep-fried?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Vegas Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Vegas Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Vegas Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Vegas Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Vegas Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "The deep-frying creates a crispy, golden exterior while keeping the interior fresh. This contrast of hot, crispy outside and cool, creamy inside makes Vegas Roll unique."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Vegas Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Vegas Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Vegas Roll contains gluten in the tempura batter and soy sauce. Request alternative batters and gluten-free soy sauce with your server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How spicy is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vegas Roll has a mild to medium spice from the jalapeño and sriracha mayo. We can adjust the heat level to your preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Vegas Roll is available for takeout and delivery. For the crispiest experience, we recommend dining in fresh at our sushi bar. Call (214) 619-1200."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function VegasRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$14.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Preparation</td>
+                      <td className="py-4 text-right text-charcoal/80">Deep-Fried</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

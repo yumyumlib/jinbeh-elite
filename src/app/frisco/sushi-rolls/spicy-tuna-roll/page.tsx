@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Spicy Tuna Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Fresh tuna with spicy mayo and scallions Enjoy Spicy Tuna Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["spicy tuna roll","spicy tuna roll frisco","sushi rolls frisco","jinbeh spicy tuna roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Spicy Tuna Roll Frisco | Fresh Tuna Spicy Mayo",
+  description: "Spicy Tuna Roll at Jinbeh Frisco: Fresh tuna, spicy mayo, 260-350 cal. Premium sushi near Legacy West. Made fresh to order. Call (214) 619-1200.",
+  keywords: ["spicy tuna roll","spicy tuna roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","jinbeh spicy tuna roll","best sushi rolls frisco"],
   openGraph: {
     title: "Spicy Tuna Roll | Jinbeh Frisco",
     description: "Fresh tuna with spicy mayo and scallions",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Spicy Tuna Roll at Jinbeh Frisco?",
+      "name": "How many calories in Spicy Tuna Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Spicy Tuna Roll at Jinbeh is fresh tuna with spicy mayo and scallions. Priced at $11.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Spicy Tuna Roll at Jinbeh contains approximately 260-350 calories per serving. The exact count varies based on portion size and the amount of spicy mayo used in the preparation."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Spicy Tuna Roll made fresh?",
+      "name": "What is in Spicy Tuna Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Spicy Tuna Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Spicy Tuna Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Spicy Tuna Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Spicy Tuna Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Spicy Tuna Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "Our Spicy Tuna Roll features fresh sushi-grade tuna mixed with spicy mayo, sriracha, scallions, cucumber, avocado, sushi rice, and nori. The perfect balance of heat and fresh fish flavor."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Spicy Tuna Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Spicy Tuna Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Spicy Tuna Roll may contain gluten in soy sauce and some seasonings. Please inform your server of dietary restrictions and our chefs can recommend gluten-free soy sauce options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How spicy is Spicy Tuna Roll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Spicy Tuna Roll offers a medium heat level from sriracha and chili seasonings. If you prefer milder or extra spicy, our chefs can customize it to your taste preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it made with fresh tuna?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We use sushi-grade tuna delivered daily. All rolls at Jinbeh Frisco are prepared fresh to order by experienced sushi chefs."
       }
     }
   ]
@@ -168,7 +168,18 @@ export default function SpicyTunaRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$11.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$11.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~260-350 per serving</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Heat Level</td>
+                      <td className="py-4 text-right text-charcoal/80">Medium-Spicy</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

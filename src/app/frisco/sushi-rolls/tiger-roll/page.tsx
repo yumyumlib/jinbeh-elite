@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tiger Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Shrimp tempura with spicy tuna and jalapeño Enjoy Tiger Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["tiger roll","tiger roll frisco","sushi rolls frisco","jinbeh tiger roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Tiger Roll Frisco | Tempura Shrimp Spicy Tuna",
+  description: "Tiger Roll at Jinbeh Frisco: Tempura shrimp, spicy tuna, cucumber, avocado, sesame. Eel and spicy mayo drizzle. Call (214) 619-1200.",
+  keywords: ["tiger roll","tiger roll frisco","sushi near me frisco","best sushi frisco tx","spicy tuna sushi","tempura shrimp roll"],
   openGraph: {
     title: "Tiger Roll | Jinbeh Frisco",
     description: "Shrimp tempura with spicy tuna and jalapeño",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Tiger Roll at Jinbeh Frisco?",
+      "name": "What is in Tiger Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Tiger Roll at Jinbeh is shrimp tempura with spicy tuna and jalapeño. Priced at $17.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Tiger Roll features tempura shrimp, cucumber, avocado, spicy tuna mix, sushi rice, and nori. Topped with sesame seeds, eel sauce, and spicy mayo drizzle."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Tiger Roll made fresh?",
+      "name": "Is it spicy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Tiger Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Tiger Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Tiger Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Tiger Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "Yes, Tiger Roll has a moderate to medium spice level from the spicy tuna and sriracha drizzle. We can adjust the heat level to your preference."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Tiger Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Tiger Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Tiger Roll contains gluten in the tempura flour and soy sauce. Request gluten-free tempura and tamari sauce for gluten-free preparation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is in the spicy mayo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our spicy mayo combines mayonnaise with sriracha, gochujang, and other Japanese seasonings for a perfect balance of heat and flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Tiger Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (214) 619-1200."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function TigerRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$17.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$17.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Heat Level</td>
+                      <td className="py-4 text-right text-charcoal/80">Medium-Spicy</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

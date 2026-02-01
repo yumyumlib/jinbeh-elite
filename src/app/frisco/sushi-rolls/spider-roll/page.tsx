@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Spider Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Soft shell crab with cucumber and spicy mayo Enjoy Spider Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["spider roll","spider roll frisco","sushi rolls frisco","jinbeh spider roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Spider Roll Frisco | Soft Shell Crab Sushi",
+  description: "Spider Roll at Jinbeh Frisco: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near Legacy West. Call (214) 619-1200.",
+  keywords: ["spider roll","spider roll frisco","sushi near me frisco","best sushi frisco tx","soft shell crab sushi","specialty sushi roll"],
   openGraph: {
     title: "Spider Roll | Jinbeh Frisco",
     description: "Soft shell crab with cucumber and spicy mayo",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Spider Roll at Jinbeh Frisco?",
+      "name": "What is in Spider Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Spider Roll at Jinbeh is soft shell crab with cucumber and spicy mayo. Priced at $15.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Spider Roll features tempura soft-shell crab, cucumber, avocado, and spicy mayo, all rolled in sushi rice and nori. The crab legs stick out from the roll, resembling a spider."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Spider Roll made fresh?",
+      "name": "What makes it a spider roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Spider Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Spider Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Spider Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Spider Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Spider Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "The name comes from the soft-shell crab's legs that protrude from the ends of the roll, resembling spider legs. It's a beautifully visual and delicious specialty roll."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Spider Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Spider Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Spider Roll may contain gluten in tempura flour and spicy mayo. Request gluten-free alternatives and verify ingredients with your server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it made with real crab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We use authentic soft-shell crab tempura-fried fresh. The soft shells make the entire crab edible, and we use seasonal soft-shell crabs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Spider Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function SpiderRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$15.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$15.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Protein</td>
+                      <td className="py-4 text-right text-charcoal/80">Soft Shell Crab</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuna Tartare | Jinbeh Frisco Appetizers Menu",
-  description: "Diced ahi tuna with avocado and ponzu Enjoy Tuna Tartare at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["tuna tartare","tuna tartare frisco","appetizers frisco","jinbeh tuna tartare","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
+  title: "Tuna Tartare Frisco | Diced Ahi with Avocado Ponzu",
+  description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Frisco. 100-150 calories, 20g protein, omega-3 healthy. Premium raw fish.",
+  keywords: ["japanese appetizers frisco","tuna tartare frisco","best sushi frisco tx","ahi tuna appetizer","raw fish tartare","healthy appetizer frisco","sashimi style"],
   openGraph: {
-    title: "Tuna Tartare | Jinbeh Frisco",
-    description: "Diced ahi tuna with avocado and ponzu",
+    title: "Tuna Tartare Frisco | Premium Diced Ahi Tuna",
+    description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Frisco. 100-150 calories, 20g protein.",
     url: "https://jinbeh.com/frisco/appetizers/tuna-tartare",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Tuna Tartare at Jinbeh?",
+      "name": "How many calories in Tuna Tartare?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tuna Tartare at Jinbeh Frisco is diced ahi tuna with avocado and ponzu. At $15.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Tuna Tartare at Jinbeh contains approximately 100-150 calories per serving with 20 grams of protein and 4 grams of healthy omega-3 fats from premium ahi tuna."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Tuna Tartare good for sharing?",
+      "name": "What are the health benefits of tuna tartare?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Tuna Tartare is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Frisco."
+        "text": "Tuna tartare provides lean protein, omega-3 fatty acids for heart and brain health, vitamins B12 and D, selenium, plus healthy fats from avocado. Excellent for muscle and bone health."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Tuna Tartare for happy hour?",
+      "name": "What is Tartare and how is it different from sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Tuna Tartare are featured during our happy hour. Call (214) 619-1200 for current specials."
+        "text": "Tartare is diced fine and tossed with avocado, ponzu sauce, and seasonings, offering a creamy texture. Sashimi is sliced thin. Both are premium raw fish preparations."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Tuna Tartare available for takeout?",
+      "name": "Is Tuna Tartare good for sharing and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Tuna Tartare travels well for takeout. Call (214) 619-1200 directly or order online."
+        "text": "Absolutely! At $15.95, Tuna Tartare is perfect for sharing and featured in many happy hour specials. An elegant appetizer for groups and special occasions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Tuna Tartare safe and available for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our tartare is made from premium sushi-grade tuna, handled safely by trained chefs. Best enjoyed fresh, so order for quick pickup. Call (214) 619-1200."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function TunaTartareFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$15.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$15.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

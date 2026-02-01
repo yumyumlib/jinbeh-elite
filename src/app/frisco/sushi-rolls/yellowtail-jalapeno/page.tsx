@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yellowtail Jalapeño Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Fresh yellowtail with jalapeño and ponzu Enjoy Yellowtail Jalapeño Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["yellowtail jalapeño roll","yellowtail jalapeño roll frisco","sushi rolls frisco","jinbeh yellowtail jalapeño roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Yellowtail Jalapeño Sushi Frisco | Hamachi Roll",
+  description: "Yellowtail Jalapeño at Jinbeh Frisco: Fresh hamachi, jalapeño, ponzu sauce, scallions. Premium raw fish. Call (214) 619-1200.",
+  keywords: ["yellowtail jalapeño roll","yellowtail jalapeño roll frisco","sushi near me frisco","best sushi frisco tx","hamachi sushi roll","fresh fish sushi"],
   openGraph: {
     title: "Yellowtail Jalapeño Roll | Jinbeh Frisco",
     description: "Fresh yellowtail with jalapeño and ponzu",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Yellowtail Jalapeño Roll at Jinbeh Frisco?",
+      "name": "What is in Yellowtail Jalapeño Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Yellowtail Jalapeño Roll at Jinbeh is fresh yellowtail with jalapeño and ponzu. Priced at $16.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Yellowtail Jalapeño features fresh sushi-grade yellowtail (hamachi), thin-sliced fresh jalapeño, scallions, sushi rice, and nori, finished with ponzu sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Yellowtail Jalapeño Roll made fresh?",
+      "name": "Is it raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Yellowtail Jalapeño Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "Yes, this is a raw fish roll featuring fresh sushi-grade yellowtail. The fresh jalapeño adds a spicy kick that complements the mild, buttery yellowtail perfectly."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Yellowtail Jalapeño Roll?",
+      "name": "What is yellowtail?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Yellowtail Jalapeño Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Yellowtail, also called hamachi, is a premium Japanese fish with a mild, buttery flavor and delicate texture. It's highly prized in sushi and pairs beautifully with ponzu."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Yellowtail Jalapeño Roll for takeout?",
+      "name": "Is it gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Yellowtail Jalapeño Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "Yellowtail Jalapeño is mostly gluten-free, but ponzu sauce may contain gluten. Request tamari or gluten-free ponzu sauce for a gluten-free option."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Yellowtail Jalapeño Roll gluten-free?",
+      "name": "Can I order for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Yellowtail Jalapeño Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Yes! Yellowtail Jalapeño Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function YellowtailJalapenoFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$16.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Protein</td>
+                      <td className="py-4 text-right text-charcoal/80">Fresh Hamachi</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

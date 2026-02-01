@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Chicken Teriyaki | Jinbeh Lewisville Hibachi Menu",
-  description: "Tender chicken breast with house teriyaki glaze Enjoy Chicken Teriyaki at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["chicken teriyaki","chicken teriyaki lewisville","hibachi lewisville","jinbeh chicken teriyaki","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Hibachi Chicken Teriyaki | Best Japanese Steakhouse Lewisville TX",
+  description: "Hibachi chicken teriyaki: 300 cal, 26g protein. Grilled tableside with teriyaki glaze. Complete dinner $24.95. Reserve at Jinbeh Lewisville today!",
+  keywords: ["hibachi chicken teriyaki lewisville","hibachi chicken calories","is hibachi chicken healthy","hibachi near me lewisville tx","japanese steakhouse lewisville","teriyaki chicken dinner","teppanyaki chicken"],
   openGraph: {
     title: "Chicken Teriyaki | Jinbeh Lewisville",
     description: "Tender chicken breast with house teriyaki glaze",
@@ -44,42 +44,50 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Chicken Teriyaki hibachi at Jinbeh Lewisville?",
+      "name": "How many calories are in hibachi chicken teriyaki?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chicken Teriyaki at Jinbeh Lewisville is tender chicken breast with house teriyaki glaze. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $24.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Hibachi chicken teriyaki contains approximately 200-300 calories per serving (6 oz), with 26g of protein and 11-12g of fat. The complete dinner with soup, salad, fried rice, and vegetables totals around 600-800 calories. At Jinbeh, we use minimal oil for a lighter preparation."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Chicken Teriyaki prepared at Jinbeh?",
+      "name": "Is hibachi chicken teriyaki healthy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Chicken Teriyaki on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Hibachi chicken can be a healthy choice! Skinless chicken breast provides lean protein, B vitamins, and selenium. For a healthier meal, request less teriyaki sauce (it contains sugar and sodium), ask for steamed rice instead of fried, and load up on grilled vegetables."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Chicken Teriyaki hibachi dinner?",
+      "name": "What is the difference between hibachi and teriyaki chicken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Chicken Teriyaki hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Hibachi refers to the grilling style on a flat iron griddle, while teriyaki is the sweet soy-based glaze. At Jinbeh, our chicken teriyaki is hibachi-grilled (less fat than pan-fried) then finished with our house-made teriyaki sauce. The result is tender, caramelized chicken with a perfect sweet-savory balance."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Chicken Teriyaki hibachi good for special occasions?",
+      "name": "What comes with hibachi chicken teriyaki dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Chicken Teriyaki is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
+        "text": "Your Chicken Teriyaki dinner ($24.95) includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and dipping sauces. It's our most popular family-friendly hibachi option."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Chicken Teriyaki hibachi for a group?",
+      "name": "Can I make hibachi chicken teriyaki lower in sodium?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Lewisville specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Chicken Teriyaki experience together. Easy access from I-35E, near Vista Ridge Mall."
+        "text": "Yes! Ask for teriyaki sauce on the side to control the amount (regular teriyaki sauce can have 1000mg+ sodium). Choose steamed rice over fried rice, and request minimal soy sauce during cooking. Our chefs can accommodate dietary preferences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is hibachi chicken teriyaki good for kids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chicken teriyaki is our most popular choice for kids and families! The mild sweet flavor appeals to children, and the tableside cooking show entertains all ages. We also offer a kids' portion. Call (972) 221-3888 for reservations."
       }
     }
   ]
@@ -168,7 +176,10 @@ export default function ChickenTeriyakiLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$24.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$24.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +192,8 @@ export default function ChickenTeriyakiLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -210,10 +221,10 @@ export default function ChickenTeriyakiLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -273,7 +284,7 @@ export default function ChickenTeriyakiLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Chicken Teriyaki is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
+                      Absolutely! Chicken Teriyaki is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

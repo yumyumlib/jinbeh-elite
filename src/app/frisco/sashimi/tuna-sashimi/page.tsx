@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuna Sashimi | Jinbeh Frisco Sashimi Menu",
-  description: "Premium ahi tuna, melt-in-your-mouth tender Enjoy Tuna Sashimi at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["tuna sashimi","tuna sashimi frisco","sashimi frisco","jinbeh tuna sashimi","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Tuna Sashimi Frisco | Lean Protein Ahi Tuna",
+  description: "Premium ahi tuna sashimi at Jinbeh Frisco. 94 calories, 20g protein, zero carbs. High in omega-3s and heart-healthy nutrients.",
+  keywords: ["sashimi near me frisco","tuna sashimi frisco","best sushi frisco tx","ahi tuna sashimi calories","lean protein sashimi","japanese restaurant frisco","sushi-grade tuna","raw fish frisco"],
   openGraph: {
-    title: "Tuna Sashimi | Jinbeh Frisco",
-    description: "Premium ahi tuna, melt-in-your-mouth tender",
+    title: "Tuna Sashimi Frisco | Premium Lean Protein Fish",
+    description: "Premium ahi tuna sashimi at Jinbeh Frisco. 94 calories, 20g protein, zero carbs.",
     url: "https://jinbeh.com/frisco/sashimi/tuna-sashimi",
   },
   alternates: {
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Tuna Sashimi at Jinbeh?",
+      "name": "How many calories does Tuna Sashimi have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Tuna Sashimi is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Frisco, we take pride in serving only the highest-quality sashimi."
+        "text": "Tuna Sashimi at Jinbeh contains approximately 94 calories per 3-ounce serving with 20 grams of protein and zero grams of carbohydrates, making it ideal for low-carb diets."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Tuna Sashimi sashimi?",
+      "name": "What are the health benefits of Tuna Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tuna Sashimi at Jinbeh is premium ahi tuna, melt-in-your-mouth tender. Priced at $16.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Tuna Sashimi is leaner than salmon with high protein and low fat content. It's rich in omega-3 fatty acids (EPA and DHA) that reduce inflammation, support heart health, improve cholesterol levels, and provide selenium and B12."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Tuna Sashimi sashimi?",
+      "name": "Is Tuna Sashimi safe to eat raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Tuna Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our premium ahi tuna is sushi-grade quality, sourced fresh multiple times weekly, properly stored at precise temperatures, and prepared by trained chefs following strict food safety standards."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Tuna Sashimi sashimi safe to eat?",
+      "name": "How do you serve Tuna Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Tuna Sashimi is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Frisco follows strict food safety protocols."
+        "text": "Tuna Sashimi is best enjoyed lightly dipped in soy sauce with a touch of wasabi and ginger. The clean, delicate flavor of premium ahi tuna is best appreciated with minimal accompaniment."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Tuna Sashimi as part of a platter?",
+      "name": "Can I order Tuna Sashimi with other dishes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Tuna Sashimi is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Tuna Sashimi is available individually at $16.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Ask about our Omakase for premium selections."
       }
     }
   ]
@@ -168,7 +168,12 @@ export default function TunaSashimiFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$16.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

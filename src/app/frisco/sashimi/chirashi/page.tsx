@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Chirashi Bowl | Jinbeh Frisco Sashimi Menu",
-  description: "Assorted sashimi over sushi rice Enjoy Chirashi Bowl at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["chirashi bowl","chirashi bowl frisco","sashimi frisco","jinbeh chirashi bowl","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Chirashi Bowl Frisco | Scattered Sushi Rice Deluxe",
+  description: "Scattered sushi bowl with premium assorted sashimi at Jinbeh Frisco. 400-500 calories, 23g protein, omega-3 rich with vegetables.",
+  keywords: ["sashimi near me frisco","chirashi bowl frisco","best sushi frisco tx","scattered sushi rice","japanese appetizers frisco","sushi rice bowl frisco"],
   openGraph: {
-    title: "Chirashi Bowl | Jinbeh Frisco",
-    description: "Assorted sashimi over sushi rice",
+    title: "Chirashi Bowl Frisco | Premium Sashimi Rice Bowl",
+    description: "Scattered sushi bowl with premium sashimi at Jinbeh Frisco. 400-500 calories, 23g protein.",
     url: "https://jinbeh.com/frisco/sashimi/chirashi",
   },
   alternates: {
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Chirashi Bowl at Jinbeh?",
+      "name": "How many calories are in a Chirashi Bowl?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Chirashi Bowl is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Frisco, we take pride in serving only the highest-quality sashimi."
+        "text": "A Chirashi Bowl at Jinbeh contains approximately 400-500 calories with 23-24 grams of protein, healthy fats, and carbohydrates from sushi rice, vegetables, and premium sashimi."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Chirashi Bowl sashimi?",
+      "name": "What health benefits does Chirashi Bowl offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chirashi Bowl at Jinbeh is assorted sashimi over sushi rice. Priced at $28.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Chirashi Bowl combines omega-3 fatty acids from fish for heart and brain health, complete protein for muscle repair, B vitamins, selenium, and fiber from vegetables for overall wellness."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Chirashi Bowl sashimi?",
+      "name": "Is Chirashi Bowl safe to eat raw fish?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Chirashi Bowl in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our sashimi is premium sushi-grade quality, sourced fresh multiple times weekly, properly stored, and prepared by trained chefs following strict food safety protocols."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Chirashi Bowl sashimi safe to eat?",
+      "name": "What makes Chirashi different from sushi rolls?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Chirashi Bowl is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Frisco follows strict food safety protocols."
+        "text": "Chirashi means 'scattered sushi.' It features assorted fresh sashimi, vegetables, and garnishes scattered over seasoned sushi rice, offering a customizable, healthier option without mayonnaise or fried ingredients."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Chirashi Bowl as part of a platter?",
+      "name": "Can I customize my Chirashi Bowl?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Chirashi Bowl is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Our Chirashi Bowl at $28.95 can be customized with your choice of sashimi. Speak with our staff about preferences. Ask about our Omakase options for premium selections."
       }
     }
   ]
@@ -168,7 +168,12 @@ export default function ChirashiFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$28.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$28.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuna Tartare | Jinbeh Lewisville Appetizers Menu",
-  description: "Diced ahi tuna with avocado and ponzu Enjoy Tuna Tartare at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["tuna tartare","tuna tartare lewisville","appetizers lewisville","jinbeh tuna tartare","best appetizers lewisville","japanese restaurant lewisville","japanese appetizers","starters","small plates"],
+  title: "Tuna Tartare Lewisville | Diced Ahi with Avocado Ponzu",
+  description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Lewisville. 100-150 calories, 20g protein, omega-3 healthy. Premium raw fish.",
+  keywords: ["japanese appetizers lewisville","tuna tartare lewisville","best sushi lewisville tx","ahi tuna appetizer","raw fish tartare","healthy appetizer lewisville","sashimi style"],
   openGraph: {
     title: "Tuna Tartare | Jinbeh Lewisville",
     description: "Diced ahi tuna with avocado and ponzu",
@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Can I order Tuna Tartare for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Tuna Tartare are featured during our happy hour. Call (214) 488-2224 for current specials."
+        "text": "Check our happy hour specials! Many appetizers including items similar to Tuna Tartare are featured during our happy hour. Call (972) 221-3888 for current specials."
       }
     },
     {
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Tuna Tartare available for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Tuna Tartare travels well for takeout. Call (214) 488-2224 directly or order online."
+        "text": "Yes, Tuna Tartare travels well for takeout. Call (972) 221-3888 directly or order online."
       }
     }
   ]
@@ -173,8 +173,8 @@ export default function TunaTartareLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -198,10 +198,10 @@ export default function TunaTartareLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function TunaTartareLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Check our happy hour specials! Many appetizers including items similar to Tuna Tartare are featured during our happy hour. Call (214) 488-2224 for current specials.
+                      Check our happy hour specials! Many appetizers including items similar to Tuna Tartare are featured during our happy hour. Call (972) 221-3888 for current specials.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -261,7 +261,7 @@ export default function TunaTartareLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes, Tuna Tartare travels well for takeout. Call (214) 488-2224 directly or order online.
+                      Yes, Tuna Tartare travels well for takeout. Call (972) 221-3888 directly or order online.
                     </p>
                   </details>
                 </div>

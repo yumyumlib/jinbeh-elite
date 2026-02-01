@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sake Flight | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "Tasting of three premium sakes Enjoy Sake Flight at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["sake flight","sake flight frisco","cocktails & sake frisco","jinbeh sake flight","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Premium Sake Flight Frisco - Japanese Tasting",
+  description: "Three premium sake tasting flight at Jinbeh Frisco. Experience authentic Japanese sakes with expert guidance. Best sake selection near Stonebriar (214) 619-1200.",
+  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","sake flight","premium sake","sake tasting","jinbeh frisco","japanese restaurant"],
   openGraph: {
-    title: "Sake Flight | Jinbeh Frisco",
-    description: "Tasting of three premium sakes",
+    title: "Sake Flight | Premium Japanese Tasting Frisco",
+    description: "Three premium sake tasting flight. Expert-curated selection.",
     url: "https://jinbeh.com/frisco/cocktails/sake-flight",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Sake Flight at Jinbeh?",
+      "name": "What is a sake flight tasting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sake Flight at Jinbeh Frisco is tasting of three premium sakes. At $18.00, it's one of our signature bar offerings."
+        "text": "A sake flight is a curated selection of three premium sakes served in small 2-3 oz portions. This tasting experience allows you to explore different sake styles, from light and delicate to rich and complex flavors."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Sake Flight available during happy hour?",
+      "name": "How many calories are in a sake flight?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many of our cocktails including options like Sake Flight are featured during happy hour at discounted prices. Visit Jinbeh Frisco for current happy hour specials."
+        "text": "A typical sake flight (3 x 1.5 oz servings) contains approximately 150-210 calories total. Premium sakes contain about 50-70 calories per 1.5 oz serving, with most calories from alcohol."
       }
     },
     {
       "@type": "Question",
-      "name": "What food pairs with Sake Flight?",
+      "name": "What is the alcohol content of sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sake Flight pairs beautifully with our sushi and appetizers. Our bartenders can suggest the perfect food pairing to complement your drink."
+        "text": "Premium sake typically ranges from 15-17% alcohol by volume. Our curated flights showcase the complexity of different sake styles while maintaining consistent alcohol content across selections."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Sake Flight at the bar?",
+      "name": "What sakes are included in our flight?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco has a full bar where you can enjoy Sake Flight and watch our sushi chefs at work. No reservation needed for bar seating."
+        "text": "Our Sake Flight features three premium selections that showcase different styles: typically a delicate Ginjo, a balanced Junmai, and a unique specialty sake. Ask our staff for current selections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What food pairs with sake flight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sake flights pair wonderfully with sushi, sashimi, appetizers, and light Japanese dishes. Our sommelier recommends enjoying it with our chef's special rolls for the ultimate tasting experience."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function SakeFlightFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$18.00</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$18.00</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

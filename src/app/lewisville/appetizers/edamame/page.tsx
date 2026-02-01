@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Edamame | Jinbeh Lewisville Appetizers Menu",
-  description: "Steamed soybeans with sea salt Enjoy Edamame at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["edamame","edamame lewisville","appetizers lewisville","jinbeh edamame","best appetizers lewisville","japanese restaurant lewisville","japanese appetizers","starters","small plates"],
+  title: "Edamame Lewisville | Plant-Based Protein Soybeans",
+  description: "Steamed edamame with sea salt at Jinbeh Lewisville. 18.5g protein per cup, complete amino acids, low calorie plant-based appetizer.",
+  keywords: ["japanese appetizers lewisville","edamame lewisville","best sushi lewisville tx","steamed soybeans","healthy appetizers lewisville","plant based protein lewisville","japanese starter"],
   openGraph: {
     title: "Edamame | Jinbeh Lewisville",
     description: "Steamed soybeans with sea salt",
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Edamame at Jinbeh?",
+      "name": "How many calories and protein in Edamame?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Edamame at Jinbeh Lewisville is steamed soybeans with sea salt. At $5.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Steamed Edamame at Jinbeh provides 121 calories per 100g with 18.5 grams of complete plant-based protein per cup, making it a nutritious, low-calorie appetizer."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Edamame good for sharing?",
+      "name": "What are the health benefits of Edamame?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Edamame is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Lewisville."
+        "text": "Edamame is a complete plant protein with all 9 essential amino acids, high in fiber for digestion, rich in vitamins and minerals. Supports weight loss, heart health, and bone strength."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Edamame for happy hour?",
+      "name": "Is Edamame vegetarian and vegan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Edamame are featured during our happy hour. Call (214) 488-2224 for current specials."
+        "text": "Yes! Edamame is completely plant-based, vegetarian, vegan, and gluten-free. Perfect for diners with dietary restrictions."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Edamame available for takeout?",
+      "name": "How is Edamame best served and eaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Edamame travels well for takeout. Call (214) 488-2224 directly or order online."
+        "text": "Our Edamame is steamed with sea salt and served hot. Pop the beans directly from the pod with your teeth or remove them by hand. Perfect for sharing!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Edamame available for takeout and specials?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Edamame at $5.95 travels well for takeout and is featured in our happy hour specials. Call (972) 221-3888 or order online."
       }
     }
   ]
@@ -142,10 +150,10 @@ export default function EdamameLewisvillePage() {
                 </h2>
                 <p className="text-charcoal/80 leading-relaxed mb-6">
                   Experience the exceptional Edamame at Jinbeh Lewisville.
-                  Steamed soybeans with sea salt Our skilled chefs craft this dish with precision and artistry.
+                  Steamed soybeans with sea salt. Our skilled chefs craft this dish with precision and artistry.
                 </p>
                 <p className="text-charcoal/80 leading-relaxed">
-                  Easy access from I-35E, near Vista Ridge Mall. Lewisville\'s go-to for Japanese cuisine.
+                  Near Vista Ridge Mall, minutes from I-35E. The heart of Lewisville\'s restaurant scene.
                   Whether you&apos;re celebrating a special occasion or enjoying a night out,
                   Edamame is a guest favorite that delivers on both flavor and presentation.
                 </p>
@@ -160,7 +168,12 @@ export default function EdamameLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$5.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$5.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -173,8 +186,8 @@ export default function EdamameLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -198,10 +211,10 @@ export default function EdamameLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -248,7 +261,7 @@ export default function EdamameLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Check our happy hour specials! Many appetizers including items similar to Edamame are featured during our happy hour. Call (214) 488-2224 for current specials.
+                      Check our happy hour specials! Many appetizers including items similar to Edamame are featured during our happy hour. Call (972) 221-3888 for current specials.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -261,7 +274,7 @@ export default function EdamameLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes, Edamame travels well for takeout. Call (214) 488-2224 directly or order online.
+                      Yes, Edamame travels well for takeout. Call (972) 221-3888 directly or order online.
                     </p>
                   </details>
                 </div>

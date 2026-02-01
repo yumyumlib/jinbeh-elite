@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "NY Strip Steak | Jinbeh Lewisville Hibachi Menu",
-  description: "Hand-cut New York strip with savory soy glaze Enjoy NY Strip Steak at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["ny strip steak","ny strip steak lewisville","hibachi lewisville","jinbeh ny strip steak","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "NY Strip Steak Hibachi Lewisville | Best Japanese Steakhouse",
+  description: "Premium hand-cut NY Strip grilled tableside. 250-300 calories per 5oz. Includes soup, salad, rice, vegetables. Best hibachi near Lewisville TX.",
+  keywords: ["ny strip steak hibachi lewisville","best hibachi near me lewisville","japanese steakhouse lewisville tx","teppanyaki restaurant lewisville","hibachi ny strip calories","ny strip steak nutrition facts","hibachi near me lewisville","best hibachi lewisville tx"],
   openGraph: {
     title: "NY Strip Steak | Jinbeh Lewisville",
     description: "Hand-cut New York strip with savory soy glaze",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is NY Strip Steak hibachi at Jinbeh Lewisville?",
+      "name": "How many calories in hibachi NY Strip Steak?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NY Strip Steak at Jinbeh Lewisville is hand-cut new york strip with savory soy glaze. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $32.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "A 5oz NY Strip Steak serving contains approximately 250-300 calories with 28-32g protein and 12-15g fat. The complete hibachi dinner including soup, salad, fried rice, and vegetables totals 700-850 calories. NY Strip is leaner than ribeye but more flavorful than filet mignon."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the NY Strip Steak prepared at Jinbeh?",
+      "name": "Is hibachi NY Strip healthy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare NY Strip Steak on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! NY Strip is an excellent choice for health-conscious diners. It's high in protein (28-32g), rich in iron, zinc, and B vitamins. Request minimal butter to keep additional calories under control. The grilled vegetables add fiber and antioxidants for balance."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with NY Strip Steak hibachi dinner?",
+      "name": "What comes with NY Strip hibachi dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your NY Strip Steak hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your NY Strip hibachi dinner includes Japanese onion soup, house salad with ginger dressing, perfectly seared NY Strip, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of yum yum sauce or mustard sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is NY Strip Steak hibachi good for special occasions?",
+      "name": "What's the difference between NY Strip and filet mignon hibachi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! NY Strip Steak is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
+        "text": "NY Strip has more marbling and flavor than filet mignon but is less tender. It's more affordable at $32.95 vs $34.95. NY Strip contains more flavorful fat and is preferred by those who love rich beef taste. Both are premium cuts cooked tableside."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get NY Strip Steak hibachi for a group?",
+      "name": "Can I customize my NY Strip hibachi order?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Lewisville specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the NY Strip Steak experience together. Easy access from I-35E, near Vista Ridge Mall."
+        "text": "Absolutely! Request your steak cooked to your preferred doneness. You can ask for minimal butter, extra vegetables, or sauce on the side. Our chefs accommodate dietary preferences while maintaining the theatrical hibachi experience."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function NyStripLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$32.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$32.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +184,8 @@ export default function NyStripLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -210,10 +213,10 @@ export default function NyStripLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -273,7 +276,7 @@ export default function NyStripLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! NY Strip Steak is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
+                      Absolutely! NY Strip Steak is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

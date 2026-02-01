@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Soft Shell Crab | Jinbeh Lewisville Appetizers Menu",
-  description: "Crispy fried soft shell crab Enjoy Soft Shell Crab at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["soft shell crab","soft shell crab lewisville","appetizers lewisville","jinbeh soft shell crab","best appetizers lewisville","japanese restaurant lewisville","japanese appetizers","starters","small plates"],
+  title: "Soft Shell Crab Lewisville | Crispy Whole Crab Appetizer",
+  description: "Crispy tempura soft shell crab at Jinbeh Lewisville. 555 calories, 23.8g protein, edible shells, tender meat. Japanese specialty.",
+  keywords: ["japanese appetizers lewisville","soft shell crab lewisville","best sushi lewisville tx","crispy crab","seafood appetizer lewisville","tempura crab","japanese specialty"],
   openGraph: {
     title: "Soft Shell Crab | Jinbeh Lewisville",
     description: "Crispy fried soft shell crab",
@@ -63,7 +63,7 @@ const faqSchema = {
       "name": "Can I order Soft Shell Crab for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Soft Shell Crab are featured during our happy hour. Call (214) 488-2224 for current specials."
+        "text": "Check our happy hour specials! Many appetizers including items similar to Soft Shell Crab are featured during our happy hour. Call (972) 221-3888 for current specials."
       }
     },
     {
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Soft Shell Crab available for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Soft Shell Crab travels well for takeout. Call (214) 488-2224 directly or order online."
+        "text": "Yes, Soft Shell Crab travels well for takeout. Call (972) 221-3888 directly or order online."
       }
     }
   ]
@@ -173,8 +173,8 @@ export default function SoftShellCrabLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -198,10 +198,10 @@ export default function SoftShellCrabLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function SoftShellCrabLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Check our happy hour specials! Many appetizers including items similar to Soft Shell Crab are featured during our happy hour. Call (214) 488-2224 for current specials.
+                      Check our happy hour specials! Many appetizers including items similar to Soft Shell Crab are featured during our happy hour. Call (972) 221-3888 for current specials.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -261,7 +261,7 @@ export default function SoftShellCrabLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes, Soft Shell Crab travels well for takeout. Call (214) 488-2224 directly or order online.
+                      Yes, Soft Shell Crab travels well for takeout. Call (972) 221-3888 directly or order online.
                     </p>
                   </details>
                 </div>

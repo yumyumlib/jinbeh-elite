@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Philadelphia Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Smoked salmon with cream cheese and cucumber Enjoy Philadelphia Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["philadelphia roll","philadelphia roll lewisville","sushi rolls lewisville","jinbeh philadelphia roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Philadelphia Roll Lewisville | Salmon Cream Cheese",
+  description: "Philadelphia Roll at Jinbeh Lewisville: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near I-35E. Call (972) 221-3888.",
+  keywords: ["philadelphia roll","philadelphia roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","salmon sushi roll","jinbeh philadelphia roll"],
   openGraph: {
     title: "Philadelphia Roll | Jinbeh Lewisville",
     description: "Smoked salmon with cream cheese and cucumber",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Philadelphia Roll at Jinbeh Lewisville?",
+      "name": "How many calories in Philadelphia Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Philadelphia Roll at Jinbeh is smoked salmon with cream cheese and cucumber. Priced at $12.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Philadelphia Roll at Jinbeh contains approximately 273 calories per serving. It features smoked salmon, cream cheese, and cucumber with sushi rice and nori."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Philadelphia Roll made fresh?",
+      "name": "What is in Philadelphia Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Philadelphia Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Philadelphia Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Philadelphia Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Philadelphia Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Our Philadelphia Roll includes smoked salmon, cream cheese, fresh cucumber, sushi rice, and seaweed (nori). Some variations include avocado or scallions for added texture."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Philadelphia Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Philadelphia Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Philadelphia Roll is mostly gluten-free, but soy sauce and some seasonings may contain gluten. Request gluten-free soy sauce to make it fully gluten-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Philadelphia Roll made fresh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! All sushi at Jinbeh Lewisville is made to order using fresh smoked salmon. Our skilled sushi chefs prepare each roll with precision and care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order Philadelphia Roll for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function PhillyRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$12.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$12.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~273 per serving</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function PhillyRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function PhillyRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function PhillyRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Steak & Chicken Combo | Jinbeh Frisco Hibachi Menu",
-  description: "Filet mignon with chicken teriyaki Enjoy Steak & Chicken Combo at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["steak & chicken combo","steak & chicken combo frisco","hibachi frisco","jinbeh steak & chicken combo","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Steak & Chicken Combo Hibachi Frisco | Dual Protein",
+  description: "Filet mignon paired with chicken teriyaki. 450-500 calories, 45-50g protein. Balanced meat combo. Includes soup, salad, rice, grilled vegetables.",
+  keywords: ["steak chicken combo hibachi frisco","dual protein teppanyaki frisco tx","best hibachi near me frisco","meat combo hibachi frisco","filet mignon chicken","protein combination dinner","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Steak & Chicken Combo | Jinbeh Frisco",
     description: "Filet mignon with chicken teriyaki",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Steak & Chicken Combo hibachi at Jinbeh Frisco?",
+      "name": "How many calories in Steak & Chicken Combo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steak & Chicken Combo at Jinbeh Frisco is filet mignon with chicken teriyaki. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $36.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "The Steak & Chicken Combo contains approximately 450-500 calories with 45-50g protein. Filet (25-30g) plus chicken teriyaki (20-25g) provides balanced dual-protein nutrition. Complete hibachi dinner totals 800-950 calories."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Steak & Chicken Combo prepared at Jinbeh?",
+      "name": "Why choose combo instead of single protein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Steak & Chicken Combo on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Combos offer variety and balance! Filet mignon provides rich beef flavor, while chicken adds leaner protein. At $36.95, it's more affordable than filet ($34.95) plus chicken ($24.95) ordered separately."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Steak & Chicken Combo hibachi dinner?",
+      "name": "What's the difference in meat flavors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Steak & Chicken Combo hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Filet mignon is tender, mild beef. Chicken teriyaki is lighter, glazed with sweet-savory teriyaki sauce. Together they provide contrasting textures and flavors on one plate for ultimate hibachi experience."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Steak & Chicken Combo hibachi good for special occasions?",
+      "name": "Is Steak & Chicken Combo healthy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Steak & Chicken Combo is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Yes! Dual proteins provide balanced amino acid profile. Filet is rich in iron and B vitamins, chicken in lean protein. Balanced combination supports muscle health and recovery after workouts."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Steak & Chicken Combo hibachi for a group?",
+      "name": "Can I request different proteins in the combo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Steak & Chicken Combo experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Contact us about customization options. We can substitute NY Strip or Ribeye for filet, or salmon/shrimp for chicken. Our chefs accommodate special requests for your preferred protein pairing."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function ComboSteakChickenFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$36.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$36.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

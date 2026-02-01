@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Jumbo Shrimp | Jinbeh Frisco Hibachi Menu",
-  description: "Succulent jumbo shrimp, flame-kissed to perfection Enjoy Jumbo Shrimp at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["jumbo shrimp","jumbo shrimp frisco","hibachi frisco","jinbeh jumbo shrimp","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Jumbo Shrimp Hibachi Frisco | Best Seafood Teppanyaki",
+  description: "Jumbo shrimp seared tableside. 120-150 calories per serving, 22-25g protein. Low-carb, protein-rich seafood option. Includes soup, salad, rice, vegetables.",
+  keywords: ["jumbo shrimp hibachi frisco","shrimp teppanyaki frisco tx","best hibachi near me frisco","seafood hibachi frisco","shrimp calories nutrition facts","low carb hibachi options","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Jumbo Shrimp | Jinbeh Frisco",
     description: "Succulent jumbo shrimp, flame-kissed to perfection",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Jumbo Shrimp hibachi at Jinbeh Frisco?",
+      "name": "How many calories are in hibachi Jumbo Shrimp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jumbo Shrimp at Jinbeh Frisco is succulent jumbo shrimp, flame-kissed to perfection. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $28.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Jumbo shrimp serves approximately 120-150 calories per 4oz serving with 22-25g protein and only 1g fat. The complete hibachi dinner totals 550-700 calories. Shrimp is among the leanest protein options, perfect for low-carb and keto diets."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Jumbo Shrimp prepared at Jinbeh?",
+      "name": "Is hibachi Jumbo Shrimp healthy and low-carb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Jumbo Shrimp on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! Shrimp is an excellent choice for health-conscious diners. It's extremely low in calories and fat while being high in protein and B vitamins. Contains selenium for thyroid health. Ask to skip or minimize fried rice for a lower-carb option."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Jumbo Shrimp hibachi dinner?",
+      "name": "What's included with Jumbo Shrimp hibachi dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Jumbo Shrimp hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your shrimp dinner includes Japanese onion soup, house salad with ginger dressing, succulent jumbo shrimp seared on the teppan, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and choice of sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Jumbo Shrimp hibachi good for special occasions?",
+      "name": "Why choose Jumbo Shrimp over steak or salmon?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Jumbo Shrimp is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Shrimp offers the lowest calorie count (120-150 cal) compared to salmon (200-250 cal) or steak (250-350 cal), while providing the highest protein percentage. Perfect for weight loss, keto, or paleo diets without sacrificing flavor."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Jumbo Shrimp hibachi for a group?",
+      "name": "Can I request extra vegetables instead of fried rice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Jumbo Shrimp experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Absolutely! You can request additional grilled vegetables instead of fried rice to keep your meal low-carb. Our chefs will happily customize your plate with extra zucchini, mushrooms, onions, and peppers."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function ShrimpFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$28.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$28.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

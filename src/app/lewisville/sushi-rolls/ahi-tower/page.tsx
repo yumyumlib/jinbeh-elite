@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ahi Tuna Tower | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Layered ahi tuna, avocado, and crispy wonton Enjoy Ahi Tuna Tower at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["ahi tuna tower","ahi tuna tower lewisville","sushi rolls lewisville","jinbeh ahi tuna tower","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Ahi Tuna Tower Lewisville | Premium Spicy Ahi Tuna",
+  description: "Ahi Tower at Jinbeh Lewisville: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (972) 221-3888.",
+  keywords: ["ahi tower","ahi tower lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","tuna stack","jinbeh ahi tower"],
   openGraph: {
     title: "Ahi Tuna Tower | Jinbeh Lewisville",
     description: "Layered ahi tuna, avocado, and crispy wonton",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Ahi Tuna Tower at Jinbeh Lewisville?",
+      "name": "What is in Ahi Tuna Tower?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Ahi Tuna Tower at Jinbeh is layered ahi tuna, avocado, and crispy wonton. Priced at $19.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Ahi Tower features sushi-grade ahi tuna mixed with spicy sriracha mayo, mango salsa, cucumber, avocado mash, sesame oil, and fresh ginger. Served as an artistic tower presentation."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Ahi Tuna Tower made fresh?",
+      "name": "Is Ahi Tower raw or cooked?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Ahi Tuna Tower is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "Ahi Tower is raw sushi-grade ahi tuna, hand-selected for freshness and flavor. Perfect for tuna lovers who prefer premium raw fish preparations."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Ahi Tuna Tower?",
+      "name": "Is it gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Ahi Tuna Tower with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Ahi Tower is mostly gluten-free, but verify sriracha and soy sauce ingredients with your server. Request gluten-free alternatives for dietary needs."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Ahi Tuna Tower for takeout?",
+      "name": "How much does it serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Ahi Tuna Tower is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Ahi Tower is typically served as a premium appetizer. Our chefs can advise on portion sizing and recommend additional items for your party."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Ahi Tuna Tower gluten-free?",
+      "name": "Can I order for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Ahi Tuna Tower may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Yes! Ahi Tower makes a stunning presentation for celebrations. Call (972) 221-3888 to arrange for special events or gatherings."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function AhiTowerLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$19.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$19.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Type</td>
+                      <td className="py-4 text-right text-charcoal/80">Premium Appetizer</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function AhiTowerLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function AhiTowerLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function AhiTowerLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Ahi Tuna Tower is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Ahi Tuna Tower is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

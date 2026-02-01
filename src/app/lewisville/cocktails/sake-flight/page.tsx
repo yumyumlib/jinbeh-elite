@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sake Flight | Jinbeh Lewisville Cocktails & Sake Menu",
-  description: "Tasting of three premium sakes Enjoy Sake Flight at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["sake flight","sake flight lewisville","cocktails & sake lewisville","jinbeh sake flight","best cocktails & sake lewisville","japanese restaurant lewisville","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Premium Sake Flight Lewisville - Japanese Tasting",
+  description: "Three premium sake tasting flight at Jinbeh Lewisville. Experience authentic Japanese sakes with expert guidance. Best sake selection near Vista Ridge (972) 221-3888.",
+  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","sake flight","premium sake","sake tasting","jinbeh lewisville","japanese restaurant"],
   openGraph: {
     title: "Sake Flight | Jinbeh Lewisville",
     description: "Tasting of three premium sakes",
@@ -173,8 +173,8 @@ export default function SakeFlightLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -198,10 +198,10 @@ export default function SakeFlightLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>

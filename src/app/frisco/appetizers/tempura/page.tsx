@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Shrimp Tempura | Jinbeh Frisco Appetizers Menu",
-  description: "Light and crispy fried shrimp Enjoy Shrimp Tempura at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["shrimp tempura","shrimp tempura frisco","appetizers frisco","jinbeh shrimp tempura","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
+  title: "Shrimp Tempura Frisco | Crispy Fried Shrimp Appetizer",
+  description: "Crispy tempura battered shrimp at Jinbeh Frisco. 200-300 calories, 12-15g protein, light, airy batter. Japanese classic appetizer.",
+  keywords: ["japanese appetizers frisco","shrimp tempura frisco","best sushi frisco tx","fried shrimp","tempura appetizer","crispy shrimp frisco","japanese starter"],
   openGraph: {
-    title: "Shrimp Tempura | Jinbeh Frisco",
-    description: "Light and crispy fried shrimp",
+    title: "Shrimp Tempura Frisco | Crispy Fried Shrimp",
+    description: "Crispy tempura battered shrimp at Jinbeh Frisco. 200-300 calories, 12-15g protein.",
     url: "https://jinbeh.com/frisco/appetizers/tempura",
   },
   alternates: {
@@ -44,10 +44,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Shrimp Tempura at Jinbeh?",
+      "name": "How many calories in Shrimp Tempura?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shrimp Tempura at Jinbeh Frisco is light and crispy fried shrimp. At $12.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Shrimp Tempura at Jinbeh contains approximately 200-300 calories per serving with 12-15 grams of protein, depending on the number of pieces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the health benefits of shrimp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shrimp provides lean protein, omega-3 fatty acids for heart health, selenium, and B vitamins. While tempura adds calories from frying, the shrimp is nutrient-dense."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Tempura and grilled shrimp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tempura is lightly battered and fried for a crispy, airy exterior with tender interior. Grilled shrimp is lower in calories but tempura offers a unique Japanese flavor."
       }
     },
     {
@@ -55,23 +71,15 @@ const faqSchema = {
       "name": "Is Shrimp Tempura good for sharing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Shrimp Tempura is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Frisco."
+        "text": "Absolutely! At $12.95, Shrimp Tempura is perfect for sharing and is one of our most popular appetizers. Featured in happy hour specials."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Shrimp Tempura for happy hour?",
+      "name": "Can I order Shrimp Tempura for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Shrimp Tempura are featured during our happy hour. Call (214) 619-1200 for current specials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Shrimp Tempura available for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Shrimp Tempura travels well for takeout. Call (214) 619-1200 directly or order online."
+        "text": "Yes! Shrimp Tempura travels well for takeout. For best quality, pick up quickly. Call (214) 619-1200 or order online."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function TempuraFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$12.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$12.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

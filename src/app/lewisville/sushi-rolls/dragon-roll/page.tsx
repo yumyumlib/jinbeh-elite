@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Dragon Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Eel and cucumber topped with avocado and eel sauce Enjoy Dragon Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["dragon roll","dragon roll lewisville","sushi rolls lewisville","jinbeh dragon roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Dragon Roll Sushi | Best Specialty Rolls Lewisville TX | Jinbeh",
+  description: "Dragon Roll: eel, cucumber, avocado with eel sauce. 410-500 calories. Fresh sushi made to order at Jinbeh Lewisville. Reserve or order takeout today!",
+  keywords: ["dragon roll sushi lewisville","best sushi near me lewisville","dragon roll calories","specialty sushi rolls lewisville tx","eel avocado roll","uramaki sushi lewisville","sushi restaurants lewisville"],
   openGraph: {
     title: "Dragon Roll | Jinbeh Lewisville",
     description: "Eel and cucumber topped with avocado and eel sauce",
@@ -44,42 +44,50 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Dragon Roll at Jinbeh Lewisville?",
+      "name": "How many calories are in a dragon roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Dragon Roll at Jinbeh is eel and cucumber topped with avocado and eel sauce. Priced at $16.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "A dragon roll typically contains 410-500 calories per roll, with approximately 20g of fat, 45g of carbs, and 15g of protein. The calories come primarily from the eel, avocado, and eel sauce. It's one of the richer sushi rolls due to the creamy avocado and sweet eel sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Dragon Roll made fresh?",
+      "name": "What is in a dragon roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Dragon Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "A dragon roll contains grilled freshwater eel (unagi) and cucumber inside, topped with thin slices of avocado arranged to look like dragon scales. It's finished with sweet eel sauce (unagi sauce) and sesame seeds. At Jinbeh, we use premium eel imported from Japan."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Dragon Roll?",
+      "name": "Is dragon roll healthy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Dragon Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Dragon roll is moderately healthy. The avocado provides heart-healthy fats and the eel offers omega-3s and protein. However, the eel sauce is high in sugar and sodium. For a healthier option, ask for sauce on the side. Compared to fried rolls, dragon roll is a better choice."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Dragon Roll for takeout?",
+      "name": "Is dragon roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Dragon Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Traditional dragon roll is NOT gluten-free. The eel sauce contains soy sauce (which has wheat) and the eel may be glazed with wheat-based ingredients. Ask our chefs about gluten-free alternatives using tamari sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Dragon Roll gluten-free?",
+      "name": "What does dragon roll taste like?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Dragon Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Dragon roll has a sweet, savory, and slightly smoky flavor. The grilled eel is tender with a caramelized edge from the sauce. The avocado adds creaminess while the cucumber provides a fresh crunch. It's perfect for those who enjoy rich, flavorful sushi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order dragon roll for takeout at Jinbeh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Dragon Roll is available for takeout. Call (972) 221-3888 to order. For the freshest experience, we recommend dining at our sushi bar where you can watch our chefs prepare your roll to order."
       }
     }
   ]
@@ -168,7 +176,10 @@ export default function DragonRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$16.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +192,8 @@ export default function DragonRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +217,10 @@ export default function DragonRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -222,7 +233,7 @@ export default function DragonRollLewisvillePage() {
                 <div className="space-y-6">
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">What is the Dragon Roll at Jinbeh Lewisville?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">How many calories are in a dragon roll?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -230,12 +241,12 @@ export default function DragonRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      The Dragon Roll at Jinbeh is eel and cucumber topped with avocado and eel sauce. Priced at \$16.95, it\'s handcrafted by our sushi chefs using the freshest ingredients delivered daily.
+                      A dragon roll typically contains 410-500 calories per roll, with approximately 20g of fat, 45g of carbs, and 15g of protein. The calories come primarily from the eel, avocado, and eel sauce. It's one of the richer sushi rolls due to the creamy avocado and sweet eel sauce.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">Is the Dragon Roll made fresh?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">What is in a dragon roll?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -243,12 +254,12 @@ export default function DragonRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! All sushi at Jinbeh Lewisville is made to order. Our Dragon Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry.
+                      A dragon roll contains grilled freshwater eel (unagi) and cucumber inside, topped with thin slices of avocado arranged to look like dragon scales. It's finished with sweet eel sauce (unagi sauce) and sesame seeds. At Jinbeh, we use premium eel imported from Japan.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">What pairs well with Dragon Roll?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">Is dragon roll healthy?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -256,12 +267,12 @@ export default function DragonRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      We recommend pairing Dragon Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal.
+                      Dragon roll is moderately healthy. The avocado provides heart-healthy fats and the eel offers omega-3s and protein. However, the eel sauce is high in sugar and sodium. For a healthier option, ask for sauce on the side. Compared to fried rolls, dragon roll is a better choice.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">Can I order Dragon Roll for takeout?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">What does dragon roll taste like?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -269,12 +280,12 @@ export default function DragonRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Dragon Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Dragon roll has a sweet, savory, and slightly smoky flavor. The grilled eel is tender with a caramelized edge from the sauce. The avocado adds creaminess while the cucumber provides a fresh crunch. It's perfect for those who enjoy rich, flavorful sushi.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
                     <summary className="flex justify-between items-center cursor-pointer list-none">
-                      <h3 className="font-medium text-charcoal pr-4">Is Dragon Roll gluten-free?</h3>
+                      <h3 className="font-medium text-charcoal pr-4">Can I order dragon roll for takeout at Jinbeh?</h3>
                       <span className="text-accent-red group-open:rotate-180 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -282,7 +293,7 @@ export default function DragonRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Some ingredients in Dragon Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives.
+                      Yes! Dragon Roll is available for takeout. Call (972) 221-3888 to order. For the freshest experience, we recommend dining at our sushi bar where you can watch our chefs prepare your roll to order.
                     </p>
                   </details>
                 </div>

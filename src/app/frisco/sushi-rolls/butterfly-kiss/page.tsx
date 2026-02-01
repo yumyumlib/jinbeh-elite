@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Butterfly Kiss Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "House specialty with cream cheese and crab Enjoy Butterfly Kiss Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["butterfly kiss roll","butterfly kiss roll frisco","sushi rolls frisco","jinbeh butterfly kiss roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Butterfly Kiss Sushi Roll Frisco | House Specialty",
+  description: "Butterfly Kiss Roll at Jinbeh Frisco: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (214) 619-1200.",
+  keywords: ["butterfly kiss roll","butterfly kiss roll frisco","sushi near me frisco","best sushi frisco tx","house specialty sushi","salmon mango roll"],
   openGraph: {
     title: "Butterfly Kiss Roll | Jinbeh Frisco",
     description: "House specialty with cream cheese and crab",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Butterfly Kiss Roll at Jinbeh Frisco?",
+      "name": "What's in Butterfly Kiss Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Butterfly Kiss Roll at Jinbeh is house specialty with cream cheese and crab. Priced at $18.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Butterfly Kiss is our house specialty featuring salmon, mango, crab mix, ponzu, jalapeño, and sriracha. It combines sweet mango with spicy sriracha heat and fresh salmon for a unique flavor."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Butterfly Kiss Roll made fresh?",
+      "name": "How spicy is Butterfly Kiss Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Butterfly Kiss Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Butterfly Kiss Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Butterfly Kiss Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Butterfly Kiss Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Butterfly Kiss Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "Butterfly Kiss has a moderate spice level from the sriracha and fresh jalapeño. If you prefer milder or extra spicy, our chefs can customize it to your taste."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Butterfly Kiss Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Butterfly Kiss Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Butterfly Kiss may contain gluten in sriracha and soy sauce. Request tamari and verify sriracha ingredients with your server for a gluten-free option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes it a house specialty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Butterfly Kiss Roll is crafted with a unique blend of salmon, mango, and house-made ponzu sauce. It's a favorite among our regular guests and showcases our chefs' creativity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order Butterfly Kiss Roll for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Butterfly Kiss Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function ButterflyKissFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$18.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$18.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Type</td>
+                      <td className="py-4 text-right text-charcoal/80">House Specialty</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

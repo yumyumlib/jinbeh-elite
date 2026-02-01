@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Shrimp Tempura Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Crispy shrimp tempura with avocado Enjoy Shrimp Tempura Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["shrimp tempura roll","shrimp tempura roll frisco","sushi rolls frisco","jinbeh shrimp tempura roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Shrimp Tempura Roll Frisco | Crispy Fried Shrimp",
+  description: "Shrimp Tempura Roll at Jinbeh Frisco: 450-500 cal, crispy tempura shrimp, avocado. Fresh made daily. Call (214) 619-1200.",
+  keywords: ["shrimp tempura roll","shrimp tempura roll frisco","sushi near me frisco","best sushi frisco tx","tempura sushi roll","crispy sushi"],
   openGraph: {
     title: "Shrimp Tempura Roll | Jinbeh Frisco",
     description: "Crispy shrimp tempura with avocado",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Shrimp Tempura Roll at Jinbeh Frisco?",
+      "name": "What is in Shrimp Tempura Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Shrimp Tempura Roll at Jinbeh is crispy shrimp tempura with avocado. Priced at $13.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Shrimp Tempura Roll features crispy tempura-battered shrimp, cucumber, avocado, sushi rice, and seaweed. Often topped with spicy mayo, sesame seeds, and crispy fried onions."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Shrimp Tempura Roll made fresh?",
+      "name": "How many calories in Shrimp Tempura Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Shrimp Tempura Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Shrimp Tempura Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Shrimp Tempura Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Shrimp Tempura Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Shrimp Tempura Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "Shrimp Tempura Roll contains approximately 450-500 calories per 8-piece serving. The higher count comes from the crispy tempura batter and spicy mayo."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Shrimp Tempura Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Shrimp Tempura Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Shrimp Tempura Roll contains gluten in the tempura flour coating and soy sauce. Inform your server for gluten-free accommodations or alternative coatings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it made with real shrimp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We use fresh, premium shrimp tempura-fried to crispy perfection. All ingredients are prepared fresh to order by our experienced sushi chefs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Shrimp Tempura Roll is available for takeout and delivery. For the crispiest experience, we recommend dining in at our sushi bar. Call (214) 619-1200."
       }
     }
   ]
@@ -168,7 +168,18 @@ export default function ShrimpTempuraRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$13.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$13.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~450-500 per serving</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Type</td>
+                      <td className="py-4 text-right text-charcoal/80">Crispy Tempura</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

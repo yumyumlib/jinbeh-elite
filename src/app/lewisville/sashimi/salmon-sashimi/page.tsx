@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Salmon Sashimi | Jinbeh Lewisville Sashimi Menu",
-  description: "Fresh Atlantic salmon, sliced to perfection Enjoy Salmon Sashimi at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["salmon sashimi","salmon sashimi lewisville","sashimi lewisville","jinbeh salmon sashimi","best sashimi lewisville","japanese restaurant lewisville","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Salmon Sashimi Lewisville | Omega-3 Rich Sliced Raw Fish",
+  description: "Premium Atlantic salmon sashimi at Jinbeh Lewisville. 121 calories per serving, 17g protein, rich in omega-3s. Sushi-grade quality near Vista Ridge Mall.",
+  keywords: ["sashimi near me lewisville","salmon sashimi lewisville","best sushi lewisville tx","salmon sashimi calories","omega-3 sashimi","raw salmon lewisville","japanese restaurant lewisville","fresh fish sashimi","sushi-grade salmon"],
   openGraph: {
     title: "Salmon Sashimi | Jinbeh Lewisville",
     description: "Fresh Atlantic salmon, sliced to perfection",
@@ -150,10 +150,10 @@ export default function SalmonSashimiLewisvillePage() {
                 </h2>
                 <p className="text-charcoal/80 leading-relaxed mb-6">
                   Experience the exceptional Salmon Sashimi at Jinbeh Lewisville.
-                  Fresh Atlantic salmon, sliced to perfection Our skilled chefs craft this dish with precision and artistry.
+                  Fresh Atlantic salmon, sliced to perfection. Our skilled chefs craft this dish with precision and artistry.
                 </p>
                 <p className="text-charcoal/80 leading-relaxed">
-                  Easy access from I-35E, near Vista Ridge Mall. Lewisville\'s go-to for Japanese cuisine.
+                  Near Vista Ridge Mall, minutes from I-35E. The heart of Lewisville\'s restaurant scene.
                   Whether you&apos;re celebrating a special occasion or enjoying a night out,
                   Salmon Sashimi is a guest favorite that delivers on both flavor and presentation.
                 </p>
@@ -168,7 +168,12 @@ export default function SalmonSashimiLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$14.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +186,8 @@ export default function SalmonSashimiLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +211,10 @@ export default function SalmonSashimiLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>

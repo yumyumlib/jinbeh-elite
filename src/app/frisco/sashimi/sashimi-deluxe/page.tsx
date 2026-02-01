@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sashimi Deluxe Platter | Jinbeh Frisco Sashimi Menu",
-  description: "Chef\'s selection of premium fish Enjoy Sashimi Deluxe Platter at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["sashimi deluxe platter","sashimi deluxe platter frisco","sashimi frisco","jinbeh sashimi deluxe platter","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Sashimi Deluxe Platter Frisco | Premium Fish Assortment",
+  description: "Chef's premium sashimi selection with tuna, salmon, yellowtail at Jinbeh Frisco. 329 calories, 36g protein, omega-3 rich.",
+  keywords: ["sashimi near me frisco","best sushi frisco tx","sashimi deluxe platter","assorted raw fish","japanese appetizers frisco","chef selection sashimi","premium fish frisco"],
   openGraph: {
-    title: "Sashimi Deluxe Platter | Jinbeh Frisco",
-    description: "Chef\'s selection of premium fish",
+    title: "Sashimi Deluxe Platter Frisco | Premium Chef Selection",
+    description: "Chef's premium sashimi selection at Jinbeh Frisco. 329 calories, 36g protein.",
     url: "https://jinbeh.com/frisco/sashimi/sashimi-deluxe",
   },
   alternates: {
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Sashimi Deluxe Platter at Jinbeh?",
+      "name": "How many calories in Sashimi Deluxe Platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Sashimi Deluxe Platter is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Frisco, we take pride in serving only the highest-quality sashimi."
+        "text": "Sashimi Deluxe Platter at Jinbeh contains approximately 329 calories with 36 grams of protein, 20 grams of healthy fats, and zero carbohydrates."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Sashimi Deluxe Platter sashimi?",
+      "name": "What fish varieties are in the Deluxe Platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sashimi Deluxe Platter at Jinbeh is chef's selection of premium fish. Priced at $32.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Chef's selection typically includes premium cuts of tuna (maguro), salmon (sake), yellowtail (hamachi), and rotating seasonal selections. All are sushi-grade quality sourced fresh."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Sashimi Deluxe Platter sashimi?",
+      "name": "What are the health benefits of this sashimi platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Sashimi Deluxe Platter in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "The variety ensures diverse omega-3 fatty acids, complete proteins, B vitamins, selenium, and iodine. Perfect for heart health, muscle repair, and anti-inflammatory benefits."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Sashimi Deluxe Platter sashimi safe to eat?",
+      "name": "Is it safe to eat the Deluxe Platter raw fish?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Sashimi Deluxe Platter is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Frisco follows strict food safety protocols."
+        "text": "Absolutely! All our fish is premium sushi-grade, sourced from trusted suppliers, delivered fresh multiple times weekly, properly stored, and prepared by trained chefs."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Sashimi Deluxe Platter as part of a platter?",
+      "name": "What makes this platter 'deluxe'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Sashimi Deluxe Platter is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Our Sashimi Deluxe at $32.95 features chef's premium selections of the highest-quality fish cuts, generous portions, and seasonal variety. Perfect for experiencing premium sashimi."
       }
     }
   ]
@@ -168,7 +168,12 @@ export default function SashimiDeluxeFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$32.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$32.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

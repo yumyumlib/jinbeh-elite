@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ahi Tuna Tower | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Layered ahi tuna, avocado, and crispy wonton Enjoy Ahi Tuna Tower at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["ahi tuna tower","ahi tuna tower frisco","sushi rolls frisco","jinbeh ahi tuna tower","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Ahi Tuna Tower Frisco | Premium Spicy Ahi Tuna",
+  description: "Ahi Tower at Jinbeh Frisco: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (214) 619-1200.",
+  keywords: ["ahi tuna tower","ahi tuna tower frisco","sushi near me frisco","best sushi frisco tx","tuna appetizer","premium sushi"],
   openGraph: {
     title: "Ahi Tuna Tower | Jinbeh Frisco",
     description: "Layered ahi tuna, avocado, and crispy wonton",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Ahi Tuna Tower at Jinbeh Frisco?",
+      "name": "What is in Ahi Tuna Tower?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Ahi Tuna Tower at Jinbeh is layered ahi tuna, avocado, and crispy wonton. Priced at $19.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Ahi Tower features sushi-grade ahi tuna mixed with spicy sriracha mayo, mango salsa, cucumber, avocado mash, sesame oil, and fresh ginger. Served as an artistic tower presentation."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Ahi Tuna Tower made fresh?",
+      "name": "Is Ahi Tower raw or cooked?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Ahi Tuna Tower is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "Ahi Tower is raw sushi-grade ahi tuna, hand-selected for freshness and flavor. Perfect for tuna lovers who prefer premium raw fish preparations."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Ahi Tuna Tower?",
+      "name": "Is it gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Ahi Tuna Tower with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Ahi Tower is mostly gluten-free, but verify sriracha and soy sauce ingredients with your server. Request gluten-free alternatives for dietary needs."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Ahi Tuna Tower for takeout?",
+      "name": "How much does it serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Ahi Tuna Tower is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
+        "text": "Ahi Tower is typically served as a premium appetizer. Our chefs can advise on portion sizing and recommend additional items for your party."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Ahi Tuna Tower gluten-free?",
+      "name": "Can I order for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Ahi Tuna Tower may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Yes! Ahi Tower makes a stunning presentation for celebrations. Call (214) 619-1200 to arrange for special events or gatherings."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function AhiTowerFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$19.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$19.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Type</td>
+                      <td className="py-4 text-right text-charcoal/80">Premium Appetizer</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

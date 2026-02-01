@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Filet Mignon | Jinbeh Lewisville Hibachi Menu",
-  description: "Premium beef tenderloin, perfectly seared on the teppan grill Enjoy Filet Mignon at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["filet mignon","filet mignon lewisville","hibachi lewisville","jinbeh filet mignon","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Filet Mignon Hibachi | Best Teppanyaki Steak Lewisville TX",
+  description: "Premium filet mignon seared on our teppan grill. 200 cal, 25g protein. Hibachi dinner includes soup, salad, fried rice. Reserve at Jinbeh Lewisville.",
+  keywords: ["filet mignon hibachi lewisville","best hibachi lewisville tx","hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi filet mignon calories","japanese steakhouse lewisville","hibachi steak dinner","beef tenderloin hibachi"],
   openGraph: {
     title: "Filet Mignon | Jinbeh Lewisville",
     description: "Premium beef tenderloin, perfectly seared on the teppan grill",
@@ -44,42 +44,50 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Filet Mignon hibachi at Jinbeh Lewisville?",
+      "name": "How many calories are in hibachi filet mignon?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Filet Mignon at Jinbeh Lewisville is premium beef tenderloin, perfectly seared on the teppan grill. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $34.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "A typical hibachi filet mignon serving (4-6 oz) contains approximately 200-300 calories, with 25-30g of protein and 10-15g of fat. At Jinbeh, our filet mignon is prepared with minimal oil for a healthier option. The complete dinner with soup, salad, fried rice, and vegetables totals around 650-800 calories."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Filet Mignon prepared at Jinbeh?",
+      "name": "What is the difference between hibachi and teppanyaki?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Filet Mignon on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Hibachi refers to the style of grilling, while teppanyaki describes cooking on a flat iron griddle. At Jinbeh, we use authentic teppanyaki grills where our chefs perform tableside with knife tricks, the onion volcano, and flame shows. Both terms are often used interchangeably in American Japanese steakhouses."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Filet Mignon hibachi dinner?",
+      "name": "What comes with hibachi filet mignon dinner at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Filet Mignon hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your Filet Mignon hibachi dinner ($34.95) includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces including yum yum sauce and mustard sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Filet Mignon hibachi good for special occasions?",
+      "name": "Is hibachi filet mignon healthy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
+        "text": "Hibachi filet mignon can be a healthy choice! It's high in protein (25-30g per serving), rich in iron and B vitamins, and lower in fat than other steak cuts. Request minimal butter and sauce on the side to reduce sodium and calories. The grilled vegetables add fiber and nutrients."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Filet Mignon hibachi for a group?",
+      "name": "What cut of beef is hibachi steak at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Lewisville specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Filet Mignon experience together. Easy access from I-35E, near Vista Ridge Mall."
+        "text": "Jinbeh offers premium cuts including Filet Mignon (tenderloin - our most tender cut), NY Strip (balanced marbling and flavor), and Ribeye (rich marbling for maximum flavor). All are USDA Choice grade or higher, hand-selected for quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I make a reservation for hibachi at Jinbeh Lewisville?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Reservations are highly recommended, especially for weekends and special occasions. Our hibachi tables seat 8-10 guests. Reserve online or call (972) 221-3888. We're located near Vista Ridge Mall in Lewisville, TX."
       }
     }
   ]
@@ -168,7 +176,10 @@ export default function FiletMignonLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$34.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$34.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +192,8 @@ export default function FiletMignonLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -210,10 +221,10 @@ export default function FiletMignonLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -273,7 +284,7 @@ export default function FiletMignonLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
+                      Absolutely! Filet Mignon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

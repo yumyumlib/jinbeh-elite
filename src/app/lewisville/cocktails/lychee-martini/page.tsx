@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lychee Martini | Jinbeh Lewisville Cocktails & Sake Menu",
-  description: "Vodka with lychee and a floral finish Enjoy Lychee Martini at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["lychee martini","lychee martini lewisville","cocktails & sake lewisville","jinbeh lychee martini","best cocktails & sake lewisville","japanese restaurant lewisville","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Lychee Martini - Best Japanese Cocktails Lewisville",
+  description: "Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Lewisville. Happy hour specials. Reserve today (972) 221-3888.",
+  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","lychee martini","vodka cocktails","jinbeh lewisville","martini near vista ridge","japanese restaurant"],
   openGraph: {
     title: "Lychee Martini | Jinbeh Lewisville",
     description: "Vodka with lychee and a floral finish",
@@ -173,8 +173,8 @@ export default function LycheeMartiniLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -198,10 +198,10 @@ export default function LycheeMartiniLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>

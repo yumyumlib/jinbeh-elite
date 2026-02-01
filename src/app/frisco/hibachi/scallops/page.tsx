@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sea Scallops | Jinbeh Frisco Hibachi Menu",
-  description: "Plump sea scallops seared with garlic butter Enjoy Sea Scallops at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["sea scallops","sea scallops frisco","hibachi frisco","jinbeh sea scallops","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Sea Scallops Hibachi Frisco | Premium Seared Scallops",
+  description: "Plump sea scallops seared garlic butter tableside. 140-180 calories, 20-22g protein. Delicate, premium seafood. Includes soup, salad, rice, vegetables.",
+  keywords: ["sea scallops hibachi frisco","scallops teppanyaki frisco tx","best hibachi near me frisco","premium seafood hibachi frisco","scallops calories nutrition","ocean scallop recipes","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Sea Scallops | Jinbeh Frisco",
     description: "Plump sea scallops seared with garlic butter",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Sea Scallops hibachi at Jinbeh Frisco?",
+      "name": "How many calories are in hibachi Sea Scallops?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sea Scallops at Jinbeh Frisco is plump sea scallops seared with garlic butter. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $32.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Sea scallops contain approximately 140-180 calories per 4oz serving with 20-22g protein and minimal fat (1-2g). The complete hibachi dinner totals 600-750 calories. Scallops are a premium lean protein choice that's naturally low-carb."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Sea Scallops prepared at Jinbeh?",
+      "name": "Are Sea Scallops healthy and nutritious?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Sea Scallops on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! Scallops are exceptionally healthy with high protein, low fat, and rich minerals. They contain selenium, vitamin B12, and phosphorus supporting bone health. Scallops provide heart-healthy omega-3 fatty acids and are ideal for paleo diets."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Sea Scallops hibachi dinner?",
+      "name": "What's included with Sea Scallops hibachi dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Sea Scallops hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your scallop dinner features Japanese onion soup, house salad with ginger dressing, plump sea scallops seared with garlic butter on the teppan, hibachi vegetables, fried rice, and choice of dipping sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Sea Scallops hibachi good for special occasions?",
+      "name": "Why choose scallops over shrimp or fish?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Sea Scallops is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Scallops offer a unique delicate texture and mild sweet flavor distinct from shrimp or fish. While similar in calories to shrimp (140-180 cal), scallops provide a more refined, premium dining experience for special occasions."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Sea Scallops hibachi for a group?",
+      "name": "Can scallops be prepared a certain way?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Sea Scallops experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Our chefs will prepare scallops to your preference. Request lighter butter usage or lemon instead. Scallops cook quickly on the hot teppan for perfect texture - tender and slightly sweet."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function ScallopsFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$32.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$32.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

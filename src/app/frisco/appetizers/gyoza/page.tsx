@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Gyoza | Jinbeh Frisco Appetizers Menu",
-  description: "Pan-fried pork dumplings with dipping sauce Enjoy Gyoza at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["gyoza","gyoza frisco","appetizers frisco","jinbeh gyoza","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
+  title: "Gyoza Frisco | Pan-Fried Pork Dumplings Appetizer",
+  description: "Pan-fried pork gyoza dumplings at Jinbeh Frisco. 230 calories, 10g protein, crispy exterior, tender filling. Classic Japanese appetizer.",
+  keywords: ["japanese appetizers frisco","gyoza dumplings frisco","best sushi frisco tx","pan-fried dumplings","pork gyoza","appetizer frisco","japanese starter"],
   openGraph: {
-    title: "Gyoza | Jinbeh Frisco",
-    description: "Pan-fried pork dumplings with dipping sauce",
+    title: "Gyoza Frisco | Crispy Pan-Fried Pork Dumplings",
+    description: "Pan-fried pork gyoza dumplings at Jinbeh Frisco. 230 calories, 10g protein.",
     url: "https://jinbeh.com/frisco/appetizers/gyoza",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Gyoza at Jinbeh?",
+      "name": "How many calories are in Gyoza dumplings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gyoza at Jinbeh Frisco is pan-fried pork dumplings with dipping sauce. At $8.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Pan-fried Gyoza at Jinbeh contains approximately 230 calories per 6-piece serving with 10 grams of protein, depending on preparation method."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Gyoza good for sharing?",
+      "name": "What are the ingredients in Gyoza?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Gyoza is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Frisco."
+        "text": "Our Gyoza features seasoned pork filling, delicate dumpling wrappers, and is pan-fried until golden. Served with tangy dipping sauce for authentic Japanese flavor."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Gyoza for happy hour?",
+      "name": "Are Gyoza steamed or pan-fried?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Gyoza are featured during our happy hour. Call (214) 619-1200 for current specials."
+        "text": "Our Gyoza are pan-fried to create a crispy, golden exterior while keeping the filling tender and juicy. Steamed versions available upon request."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Gyoza available for takeout?",
+      "name": "Is Gyoza good for sharing and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Gyoza travels well for takeout. Call (214) 619-1200 directly or order online."
+        "text": "Absolutely! Gyoza at $8.95 is perfect for sharing and featured in our happy hour specials. Great starter for groups. Call (214) 619-1200 for specials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order Gyoza for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Gyoza travels well for takeout and maintains its quality. Call (214) 619-1200 or order online for quick, easy pickup."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function GyozaFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$8.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$8.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

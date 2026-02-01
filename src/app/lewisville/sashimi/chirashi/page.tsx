@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Chirashi Bowl | Jinbeh Lewisville Sashimi Menu",
-  description: "Assorted sashimi over sushi rice Enjoy Chirashi Bowl at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["chirashi bowl","chirashi bowl lewisville","sashimi lewisville","jinbeh chirashi bowl","best sashimi lewisville","japanese restaurant lewisville","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Chirashi Bowl Lewisville | Scattered Sushi Rice Deluxe",
+  description: "Scattered sushi bowl with premium assorted sashimi at Jinbeh Lewisville. 400-500 calories, 23g protein, omega-3 rich with vegetables.",
+  keywords: ["sashimi near me lewisville","chirashi bowl lewisville","best sushi lewisville tx","scattered sushi rice","japanese appetizers lewisville","sushi rice bowl lewisville"],
   openGraph: {
     title: "Chirashi Bowl | Jinbeh Lewisville",
     description: "Assorted sashimi over sushi rice",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Chirashi Bowl at Jinbeh?",
+      "name": "How many calories are in a Chirashi Bowl?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Chirashi Bowl is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Lewisville, we take pride in serving only the highest-quality sashimi."
+        "text": "A Chirashi Bowl at Jinbeh contains approximately 400-500 calories with 23-24 grams of protein, healthy fats, and carbohydrates from sushi rice, vegetables, and premium sashimi."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Chirashi Bowl sashimi?",
+      "name": "What health benefits does Chirashi Bowl offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chirashi Bowl at Jinbeh is assorted sashimi over sushi rice. Priced at $28.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Chirashi Bowl combines omega-3 fatty acids from fish for heart and brain health, complete protein for muscle repair, B vitamins, selenium, and fiber from vegetables for overall wellness."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Chirashi Bowl sashimi?",
+      "name": "Is Chirashi Bowl safe to eat raw fish?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Chirashi Bowl in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our sashimi is premium sushi-grade quality, sourced fresh multiple times weekly, properly stored, and prepared by trained chefs following strict food safety protocols."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Chirashi Bowl sashimi safe to eat?",
+      "name": "What makes Chirashi different from sushi rolls?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Chirashi Bowl is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Lewisville follows strict food safety protocols."
+        "text": "Chirashi means 'scattered sushi.' It features assorted fresh sashimi, vegetables, and garnishes scattered over seasoned sushi rice, offering a customizable, healthier option without mayonnaise or fried ingredients."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Chirashi Bowl as part of a platter?",
+      "name": "Can I customize my Chirashi Bowl?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Chirashi Bowl is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Our Chirashi Bowl at $28.95 can be customized with your choice of sashimi. Speak with our staff about preferences. Ask about our Omakase options for premium selections."
       }
     }
   ]
@@ -150,10 +150,10 @@ export default function ChirashiLewisvillePage() {
                 </h2>
                 <p className="text-charcoal/80 leading-relaxed mb-6">
                   Experience the exceptional Chirashi Bowl at Jinbeh Lewisville.
-                  Assorted sashimi over sushi rice Our skilled chefs craft this dish with precision and artistry.
+                  Assorted sashimi over sushi rice. Our skilled chefs craft this dish with precision and artistry.
                 </p>
                 <p className="text-charcoal/80 leading-relaxed">
-                  Easy access from I-35E, near Vista Ridge Mall. Lewisville\'s go-to for Japanese cuisine.
+                  Near Vista Ridge Mall, minutes from I-35E. The heart of Lewisville\'s restaurant scene.
                   Whether you&apos;re celebrating a special occasion or enjoying a night out,
                   Chirashi Bowl is a guest favorite that delivers on both flavor and presentation.
                 </p>
@@ -168,7 +168,12 @@ export default function ChirashiLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$28.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$28.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +186,8 @@ export default function ChirashiLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +211,10 @@ export default function ChirashiLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>

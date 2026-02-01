@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Seafood Trio | Jinbeh Frisco Hibachi Menu",
-  description: "Shrimp, scallops, and lobster Enjoy Seafood Trio at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["seafood trio","seafood trio frisco","hibachi frisco","jinbeh seafood trio","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Seafood Trio Hibachi Frisco | Premium Mixed Seafood",
+  description: "Jumbo shrimp, sea scallops, Maine lobster tail. 380-420 calories, 60-65g protein. Healthiest hibachi combo option. Includes soup, salad, rice, grilled vegetables.",
+  keywords: ["seafood trio hibachi frisco","mixed seafood teppanyaki frisco tx","best hibachi near me frisco","healthy seafood combo frisco","shrimp scallops lobster combo","premium seafood hibachi","japanese steakhouse frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Seafood Trio | Jinbeh Frisco",
     description: "Shrimp, scallops, and lobster",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Seafood Trio hibachi at Jinbeh Frisco?",
+      "name": "What proteins are in the Seafood Trio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Seafood Trio at Jinbeh Frisco is shrimp, scallops, and lobster. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $52.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Premium seafood trio features jumbo shrimp (22-25g protein), sea scallops (20-22g protein), and Maine lobster tail (25-28g protein). Combined 380-420 calories with 60-65g complete protein - healthiest hibachi option."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Seafood Trio prepared at Jinbeh?",
+      "name": "Is Seafood Trio the healthiest hibachi choice?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Seafood Trio on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! All three seafood proteins are ultra-lean with high protein, low fat, and omega-3 fatty acids. At only 380-420 calories with 60-65g protein, it's unbeatable for health-conscious diners and weight management."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Seafood Trio hibachi dinner?",
+      "name": "What makes Seafood Trio special?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Seafood Trio hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Ultimate variety! Each protein has unique flavor and texture. Shrimp is firm and sweet, scallops are delicate, lobster is luxurious. Three distinct seafood experiences on one plate prepared tableside."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Seafood Trio hibachi good for special occasions?",
+      "name": "Is Seafood Trio good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Seafood Trio is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Absolutely! At $52.95, it's luxurious yet affordable compared to steak combos. Perfect for anniversaries, engagements, or celebrations. Three premium proteins showcase the ultimate hibachi experience."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Seafood Trio hibachi for a group?",
+      "name": "Can I request substitutions in the Seafood Trio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Seafood Trio experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Contact us about customization! We can adjust portions or substitute different seafood. Want extra lobster? More scallops? Our chefs will personalize your seafood experience based on preferences."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function ComboSeafoodFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$52.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$52.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

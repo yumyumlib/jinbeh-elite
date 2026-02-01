@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Edamame | Jinbeh Frisco Appetizers Menu",
-  description: "Steamed soybeans with sea salt Enjoy Edamame at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["edamame","edamame frisco","appetizers frisco","jinbeh edamame","best appetizers frisco","japanese restaurant frisco","japanese appetizers","starters","small plates"],
+  title: "Edamame Frisco | Plant-Based Protein Soybeans",
+  description: "Steamed edamame with sea salt at Jinbeh Frisco. 18.5g protein per cup, complete amino acids, low calorie plant-based appetizer.",
+  keywords: ["japanese appetizers frisco","edamame frisco","best sushi frisco tx","steamed soybeans","healthy appetizers frisco","plant based protein frisco","japanese starter"],
   openGraph: {
-    title: "Edamame | Jinbeh Frisco",
-    description: "Steamed soybeans with sea salt",
+    title: "Edamame Frisco | Complete Plant Protein Appetizer",
+    description: "Steamed edamame with sea salt at Jinbeh Frisco. 18.5g protein per cup, plant-based.",
     url: "https://jinbeh.com/frisco/appetizers/edamame",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Edamame at Jinbeh?",
+      "name": "How many calories and protein in Edamame?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Edamame at Jinbeh Frisco is steamed soybeans with sea salt. At $5.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Steamed Edamame at Jinbeh provides 121 calories per 100g with 18.5 grams of complete plant-based protein per cup, making it a nutritious, low-calorie appetizer."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Edamame good for sharing?",
+      "name": "What are the health benefits of Edamame?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Edamame is designed for sharing. It's one of our most popular starters for groups dining at Jinbeh Frisco."
+        "text": "Edamame is a complete plant protein with all 9 essential amino acids, high in fiber for digestion, rich in vitamins and minerals. Supports weight loss, heart health, and bone strength."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I order Edamame for happy hour?",
+      "name": "Is Edamame vegetarian and vegan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Edamame are featured during our happy hour. Call (214) 619-1200 for current specials."
+        "text": "Yes! Edamame is completely plant-based, vegetarian, vegan, and gluten-free. Perfect for diners with dietary restrictions."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Edamame available for takeout?",
+      "name": "How is Edamame best served and eaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Edamame travels well for takeout. Call (214) 619-1200 directly or order online."
+        "text": "Our Edamame is steamed with sea salt and served hot. Pop the beans directly from the pod with your teeth or remove them by hand. Perfect for sharing!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Edamame available for takeout and specials?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Edamame at $5.95 travels well for takeout and is featured in our happy hour specials. Call (214) 619-1200 or order online."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function EdamameFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$5.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$5.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Octopus Sashimi | Jinbeh Frisco Sashimi Menu",
-  description: "Tender tako with subtle sweetness Enjoy Octopus Sashimi at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["octopus sashimi","octopus sashimi frisco","sashimi frisco","jinbeh octopus sashimi","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Octopus Sashimi Frisco | Low-Fat High-Protein Tako",
+  description: "Tender octopus (tako) sashimi at Jinbeh Frisco. 93 calories, 29g protein, rich in B12 & selenium. Lean choice for healthy eating.",
+  keywords: ["sashimi near me frisco","octopus sashimi frisco","best sushi frisco tx","tako sashimi calories","lean protein sashimi","japanese restaurant frisco","high protein low fat sashimi"],
   openGraph: {
-    title: "Octopus Sashimi | Jinbeh Frisco",
-    description: "Tender tako with subtle sweetness",
+    title: "Octopus Sashimi Frisco | Lean Protein Tako",
+    description: "Tender octopus sashimi at Jinbeh Frisco. 93 calories, 29g protein, rich in B12 & selenium.",
     url: "https://jinbeh.com/frisco/sashimi/octopus-sashimi",
   },
   alternates: {
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Octopus Sashimi at Jinbeh?",
+      "name": "What are the nutritional facts for Octopus Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Octopus Sashimi is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Frisco, we take pride in serving only the highest-quality sashimi."
+        "text": "Octopus Sashimi at Jinbeh contains approximately 93 calories per serving with 29 grams of protein and extremely low fat content, making it one of our leanest options."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Octopus Sashimi sashimi?",
+      "name": "What health benefits does octopus sashimi provide?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Octopus Sashimi at Jinbeh is tender tako with subtle sweetness. Priced at $14.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Octopus Sashimi is rich in vitamin B12, iron, selenium, and other essential minerals. Its high protein-to-calorie ratio makes it excellent for muscle building and weight management without excess fat."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Octopus Sashimi sashimi?",
+      "name": "Is Octopus Sashimi safe to eat raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Octopus Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our octopus (tako) is sushi-grade quality, sourced from premium suppliers, delivered fresh multiple times weekly, and prepared by trained chefs following strict safety standards."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Octopus Sashimi sashimi safe to eat?",
+      "name": "How should I eat Octopus Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Octopus Sashimi is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Frisco follows strict food safety protocols."
+        "text": "Octopus Sashimi is best enjoyed with a light dip of soy sauce and a touch of wasabi. The tender, subtly sweet texture is appreciated best with minimal accompaniment."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Octopus Sashimi as part of a platter?",
+      "name": "Can I include Octopus Sashimi in a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Octopus Sashimi is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Octopus Sashimi is available individually at $14.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. It's a signature item in our Omakase selections."
       }
     }
   ]
@@ -168,7 +168,12 @@ export default function OctopusSashimiFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$14.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

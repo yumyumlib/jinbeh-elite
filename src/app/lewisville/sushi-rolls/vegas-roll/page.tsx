@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Vegas Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Deep-fried roll with spicy crab and cream cheese Enjoy Vegas Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["vegas roll","vegas roll lewisville","sushi rolls lewisville","jinbeh vegas roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Vegas Roll Lewisville | Deep Fried Salmon Jalapeño",
+  description: "Vegas Roll at Jinbeh Lewisville: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (972) 221-3888.",
+  keywords: ["vegas roll","vegas roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","beef sushi roll","jinbeh vegas roll"],
   openGraph: {
     title: "Vegas Roll | Jinbeh Lewisville",
     description: "Deep-fried roll with spicy crab and cream cheese",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Vegas Roll at Jinbeh Lewisville?",
+      "name": "What is in Vegas Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Vegas Roll at Jinbeh is deep-fried roll with spicy crab and cream cheese. Priced at $14.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Vegas Roll features salmon, jalapeño, cream cheese, and avocado inside, then the entire roll is deep-fried in Japanese-style tempura batter. Topped with spicy mayo and eel sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Vegas Roll made fresh?",
+      "name": "Why is it deep-fried?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Vegas Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Vegas Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Vegas Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Vegas Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Vegas Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "The deep-frying creates a crispy, golden exterior while keeping the interior fresh. This contrast of hot, crispy outside and cool, creamy inside makes Vegas Roll unique."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Vegas Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Vegas Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Vegas Roll contains gluten in the tempura batter and soy sauce. Request alternative batters and gluten-free soy sauce with your server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How spicy is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vegas Roll has a mild to medium spice from the jalapeño and sriracha mayo. We can adjust the heat level to your preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Vegas Roll is available for takeout and delivery. For the crispiest experience, we recommend dining in fresh at our sushi bar. Call (972) 221-3888."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function VegasRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$14.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Preparation</td>
+                      <td className="py-4 text-right text-charcoal/80">Deep-Fried</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function VegasRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function VegasRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function VegasRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Vegas Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Vegas Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

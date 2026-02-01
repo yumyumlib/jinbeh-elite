@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Salmon Sashimi | Jinbeh Frisco Sashimi Menu",
-  description: "Fresh Atlantic salmon, sliced to perfection Enjoy Salmon Sashimi at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["salmon sashimi","salmon sashimi frisco","sashimi frisco","jinbeh salmon sashimi","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Salmon Sashimi Frisco | Omega-3 Rich Sliced Raw Fish",
+  description: "Premium Atlantic salmon sashimi at Jinbeh Frisco. 121 calories per serving, 17g protein, rich in omega-3s. Sushi-grade quality near Stonebriar Centre.",
+  keywords: ["sashimi near me frisco","salmon sashimi frisco","best sushi frisco tx","salmon sashimi calories","omega-3 sashimi","raw salmon frisco","japanese restaurant frisco","fresh fish sashimi","sushi-grade salmon"],
   openGraph: {
-    title: "Salmon Sashimi | Jinbeh Frisco",
-    description: "Fresh Atlantic salmon, sliced to perfection",
+    title: "Salmon Sashimi Frisco | Premium Omega-3 Rich Fish",
+    description: "Premium Atlantic salmon sashimi at Jinbeh Frisco. 121 calories per serving, 17g protein, rich in omega-3s.",
     url: "https://jinbeh.com/frisco/sashimi/salmon-sashimi",
   },
   alternates: {
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Salmon Sashimi at Jinbeh?",
+      "name": "How many calories are in Salmon Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Salmon Sashimi is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Frisco, we take pride in serving only the highest-quality sashimi."
+        "text": "Salmon Sashimi at Jinbeh contains approximately 121 calories per 3-ounce serving, with 17 grams of protein and 5 grams of healthy omega-3 fatty acids per serving."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Salmon Sashimi sashimi?",
+      "name": "What are the health benefits of eating Salmon Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Salmon Sashimi at Jinbeh is fresh atlantic salmon, sliced to perfection. Priced at $14.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Salmon Sashimi is rich in omega-3 fatty acids that promote cardiovascular health, complete protein with all essential amino acids, B vitamins, and selenium for bone health. Ideal for low-carb and muscle-building diets."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Salmon Sashimi sashimi?",
+      "name": "Is Salmon Sashimi safe to eat raw at Jinbeh Frisco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Salmon Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our Salmon Sashimi is sushi-grade quality, sourced from premium suppliers, properly stored at precise temperatures, and prepared by trained chefs following strict food safety protocols."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Salmon Sashimi sashimi safe to eat?",
+      "name": "How is Salmon Sashimi best served and eaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Salmon Sashimi is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Frisco follows strict food safety protocols."
+        "text": "We recommend lightly dipping Salmon Sashimi in soy sauce with a touch of wasabi and ginger. Let the natural flavors shine—fresh, premium sashimi needs minimal accompaniment to truly appreciate its quality."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Salmon Sashimi as part of a platter?",
+      "name": "Can I order Salmon Sashimi as part of a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Salmon Sashimi is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Salmon Sashimi is available individually at $14.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Ask about our Omakase for premium selections."
       }
     }
   ]
@@ -168,7 +168,12 @@ export default function SalmonSashimiFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$14.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

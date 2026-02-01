@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tiger Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Shrimp tempura with spicy tuna and jalapeño Enjoy Tiger Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["tiger roll","tiger roll lewisville","sushi rolls lewisville","jinbeh tiger roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Tiger Roll Lewisville | Tempura Shrimp Spicy Tuna",
+  description: "Tiger Roll at Jinbeh Lewisville: Tempura shrimp, spicy tuna, cucumber, avocado, sesame. Eel and spicy mayo drizzle. Call (972) 221-3888.",
+  keywords: ["tiger roll","tiger roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","shrimp and tuna","jinbeh tiger roll"],
   openGraph: {
     title: "Tiger Roll | Jinbeh Lewisville",
     description: "Shrimp tempura with spicy tuna and jalapeño",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Tiger Roll at Jinbeh Lewisville?",
+      "name": "What is in Tiger Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Tiger Roll at Jinbeh is shrimp tempura with spicy tuna and jalapeño. Priced at $17.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Tiger Roll features tempura shrimp, cucumber, avocado, spicy tuna mix, sushi rice, and nori. Topped with sesame seeds, eel sauce, and spicy mayo drizzle."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Tiger Roll made fresh?",
+      "name": "Is it spicy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Tiger Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Tiger Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Tiger Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Tiger Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Yes, Tiger Roll has a moderate to medium spice level from the spicy tuna and sriracha drizzle. We can adjust the heat level to your preference."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Tiger Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Tiger Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Tiger Roll contains gluten in the tempura flour and soy sauce. Request gluten-free tempura and tamari sauce for gluten-free preparation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is in the spicy mayo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our spicy mayo combines mayonnaise with sriracha, gochujang, and other Japanese seasonings for a perfect balance of heat and flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Tiger Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (972) 221-3888."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function TigerRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$17.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$17.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Heat Level</td>
+                      <td className="py-4 text-right text-charcoal/80">Medium-Spicy</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function TigerRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function TigerRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function TigerRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Tiger Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

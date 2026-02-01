@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ribeye Steak | Jinbeh Frisco Hibachi Menu",
-  description: "Marbled ribeye with rich, beefy flavor Enjoy Ribeye Steak at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["ribeye steak","ribeye steak frisco","hibachi frisco","jinbeh ribeye steak","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Ribeye Steak Hibachi Frisco | Premium Marbled Beef",
+  description: "Richly marbled ribeye seared tableside. 300-350 calories per 5oz with 25-28g protein. Includes soup, salad, rice, vegetables. Premium Japanese steakhouse.",
+  keywords: ["ribeye steak hibachi frisco","best hibachi near me frisco","marbled beef teppanyaki frisco","japanese steakhouse frisco tx","hibachi ribeye calories","ribeye nutrition facts","hibachi near me frisco","best hibachi frisco tx"],
   openGraph: {
     title: "Ribeye Steak | Jinbeh Frisco",
     description: "Marbled ribeye with rich, beefy flavor",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Ribeye Steak hibachi at Jinbeh Frisco?",
+      "name": "How many calories in hibachi Ribeye Steak?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ribeye Steak at Jinbeh Frisco is marbled ribeye with rich, beefy flavor. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $35.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "A 5oz Ribeye contains approximately 300-350 calories with 25-28g protein and 20-24g fat. The complete hibachi dinner totals 750-900 calories. Ribeye has the most marbling of premium steaks, providing exceptional flavor and richness. Perfect for special occasions."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Ribeye Steak prepared at Jinbeh?",
+      "name": "Is Ribeye healthier than other steak cuts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Ribeye Steak on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "While higher in fat than NY Strip or filet, Ribeye contains mostly monounsaturated fats (the healthy kind). It's rich in iron, zinc, selenium, and B vitamins. The fat content enhances satiety and nutrient absorption. Balance with the included vegetables for optimal nutrition."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Ribeye Steak hibachi dinner?",
+      "name": "What makes Ribeye special at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Ribeye Steak hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Our ribeyes are hand-selected USDA Choice or higher, featuring premium marbling for maximum flavor. Cooked tableside on a 400°F teppanyaki grill at your table with entertaining knife work and the famous onion volcano show."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Ribeye Steak hibachi good for special occasions?",
+      "name": "Why is Ribeye more expensive than NY Strip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Ribeye Steak is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Ribeye ($35.95) is priced higher than NY Strip ($32.95) due to superior marbling and richer flavor profile. The intramuscular fat (marbling) provides tenderness, juiciness, and taste that's exceptional. It's ideal for those who want the ultimate hibachi experience."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Ribeye Steak hibachi for a group?",
+      "name": "Can I request how Ribeye is cooked?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Ribeye Steak experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Yes! Our teppanyaki chefs will prepare your ribeye to your exact preference - rare, medium-rare, medium, medium-well, or well-done. Request minimal butter or sauce on the side based on dietary needs."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function RibeyeFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$35.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$35.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

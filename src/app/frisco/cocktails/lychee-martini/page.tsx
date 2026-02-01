@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lychee Martini | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "Vodka with lychee and a floral finish Enjoy Lychee Martini at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["lychee martini","lychee martini frisco","cocktails & sake frisco","jinbeh lychee martini","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Lychee Martini - Best Japanese Cocktails Frisco",
+  description: "Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Frisco. Happy hour specials. Reserve today (214) 619-1200.",
+  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","lychee martini","vodka cocktails","jinbeh frisco","martini near stonebriar","japanese restaurant"],
   openGraph: {
-    title: "Lychee Martini | Jinbeh Frisco",
-    description: "Vodka with lychee and a floral finish",
+    title: "Lychee Martini | Best Japanese Cocktails Frisco",
+    description: "Premium lychee martini with vodka & floral finish. Handcrafted Japanese cocktails.",
     url: "https://jinbeh.com/frisco/cocktails/lychee-martini",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Lychee Martini at Jinbeh?",
+      "name": "What is a Lychee Martini cocktail?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Lychee Martini at Jinbeh Frisco is vodka with lychee and a floral finish. At $13.00, it's one of our signature bar offerings."
+        "text": "The Lychee Martini is a premium cocktail made with vodka, lychee liqueur or syrup, and a hint of floral notes. This refreshing Japanese-inspired martini offers a perfect balance of sweet and sophisticated flavors."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Lychee Martini available during happy hour?",
+      "name": "How many calories are in a Lychee Martini?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many of our cocktails including options like Lychee Martini are featured during happy hour at discounted prices. Visit Jinbeh Frisco for current happy hour specials."
+        "text": "A Lychee Martini typically contains 140-260 calories depending on the recipe. The calorie content varies based on the amount of lychee syrup, vodka, and vermouth used in preparation."
       }
     },
     {
       "@type": "Question",
-      "name": "What food pairs with Lychee Martini?",
+      "name": "What ingredients are in our Lychee Martini?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lychee Martini pairs beautifully with our sushi and appetizers. Our bartenders can suggest the perfect food pairing to complement your drink."
+        "text": "Our Lychee Martini features premium vodka, lychee juice or liqueur, and a delicate touch of vermouth, garnished with fresh lychee fruit for an elegant presentation."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Lychee Martini at the bar?",
+      "name": "What is the alcohol content of Lychee Martini?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco has a full bar where you can enjoy Lychee Martini and watch our sushi chefs at work. No reservation needed for bar seating."
+        "text": "The Lychee Martini contains approximately 17-20% alcohol by volume, depending on the specific recipe and ingredients used."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What food pairs best with Lychee Martini?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Lychee Martini pairs beautifully with Japanese appetizers, light sushi rolls, and delicate seafood dishes. Its floral sweetness complements sashimi and vegetable-based rolls perfectly."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function LycheeMartiniFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$13.00</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$13.00</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

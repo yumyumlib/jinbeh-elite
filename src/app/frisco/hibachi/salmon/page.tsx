@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Hibachi Salmon | Jinbeh Frisco Hibachi Menu",
-  description: "Fresh Atlantic salmon with citrus teriyaki Enjoy Hibachi Salmon at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["hibachi salmon","hibachi salmon frisco","hibachi frisco","jinbeh hibachi salmon","best hibachi frisco","japanese restaurant frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Hibachi Salmon Frisco | Fresh Atlantic Salmon Teppanyaki",
+  description: "Fresh Atlantic salmon grilled tableside. 200-250 calories per 5oz with 25-28g protein. Omega-3 rich, healthy choice. Includes soup, salad, rice, vegetables.",
+  keywords: ["hibachi salmon frisco","salmon teppanyaki restaurant frisco tx","best hibachi near me frisco","japanese steakhouse frisco","hibachi salmon calories","omega-3 salmon health benefits","fresh fish hibachi","best hibachi frisco tx"],
   openGraph: {
     title: "Hibachi Salmon | Jinbeh Frisco",
     description: "Fresh Atlantic salmon with citrus teriyaki",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Hibachi Salmon hibachi at Jinbeh Frisco?",
+      "name": "How many calories in hibachi Salmon?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hibachi Salmon at Jinbeh Frisco is fresh atlantic salmon with citrus teriyaki. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $28.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "A 5oz Atlantic salmon serving contains approximately 200-250 calories with 25-28g protein and 10-12g fat. The complete hibachi dinner totals 650-800 calories. Salmon is one of the healthiest protein choices, rich in heart-healthy omega-3 fatty acids."
       }
     },
     {
       "@type": "Question",
-      "name": "How is the Hibachi Salmon prepared at Jinbeh?",
+      "name": "Is hibachi Salmon good for your heart?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our skilled hibachi chefs prepare Hibachi Salmon on a 400°F teppanyaki grill right at your table. You'll experience the dramatic flames, precise knife work, and the famous onion volcano while your meal is cooked to perfection."
+        "text": "Yes! Atlantic salmon is excellent for heart health. It's packed with EPA and DHA omega-3 fatty acids that reduce inflammation, support heart function, and promote brain health. Pair with grilled vegetables for a nutrient-dense, anti-inflammatory meal."
       }
     },
     {
       "@type": "Question",
-      "name": "What comes with Hibachi Salmon hibachi dinner?",
+      "name": "What's included with Hibachi Salmon dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Hibachi Salmon hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces. It's a complete dining experience."
+        "text": "Your salmon dinner includes Japanese onion soup, house salad with ginger dressing, fresh Atlantic salmon seared tableside, hibachi vegetables, fried rice, and your choice of yum yum or ginger sauce for authentic flavor."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Hibachi Salmon hibachi good for special occasions?",
+      "name": "Is hibachi Salmon better than steak for health?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Hibachi Salmon is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 619-1200 to reserve for your special event."
+        "text": "Both are healthy but different. Salmon offers omega-3s, lower cholesterol, and anti-inflammatory benefits. Steak provides iron, zinc, and B vitamins. Salmon has fewer calories (200-250) than ribeye (300-350), making it ideal for calorie-conscious diners."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Hibachi Salmon hibachi for a group?",
+      "name": "Can I customize my salmon preparation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Hibachi Salmon experience together. Near Stonebriar Centre, minutes from Legacy West."
+        "text": "Absolutely! Request your salmon cooked to your preference - we can prepare it to any doneness level. Ask for minimal butter or sauce on the side, extra vegetables, or any specific dietary modifications."
       }
     }
   ]
@@ -168,7 +168,10 @@ export default function SalmonFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$28.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$28.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

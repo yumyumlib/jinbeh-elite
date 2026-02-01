@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yellowtail Sashimi | Jinbeh Frisco Sashimi Menu",
-  description: "Buttery hamachi with delicate flavor Enjoy Yellowtail Sashimi at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["yellowtail sashimi","yellowtail sashimi frisco","sashimi frisco","jinbeh yellowtail sashimi","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Yellowtail Sashimi Frisco | Buttery Hamachi Delicacy",
+  description: "Premium hamachi (yellowtail) sashimi at Jinbeh Frisco. 150 calories, 20g protein, omega-3 rich with heart-healthy benefits.",
+  keywords: ["sashimi near me frisco","yellowtail sashimi frisco","hamachi sashimi","best sushi frisco tx","japanese appetizer frisco","omega-3 fish frisco","japanese restaurant frisco"],
   openGraph: {
-    title: "Yellowtail Sashimi | Jinbeh Frisco",
-    description: "Buttery hamachi with delicate flavor",
+    title: "Yellowtail Sashimi Frisco | Premium Hamachi Fish",
+    description: "Premium hamachi sashimi at Jinbeh Frisco. 150 calories, 20g protein, omega-3 rich.",
     url: "https://jinbeh.com/frisco/sashimi/yellowtail-sashimi",
   },
   alternates: {
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Yellowtail Sashimi at Jinbeh?",
+      "name": "How many calories are in Yellowtail Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Yellowtail Sashimi is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Frisco, we take pride in serving only the highest-quality sashimi."
+        "text": "Yellowtail (Hamachi) Sashimi at Jinbeh contains approximately 150 calories per 3-ounce serving with 20 grams of protein and 7 grams of healthy fats."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Yellowtail Sashimi sashimi?",
+      "name": "What are the health benefits of Hamachi sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yellowtail Sashimi at Jinbeh is buttery hamachi with delicate flavor. Priced at $15.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Hamachi is rich in omega-3 fatty acids that support heart and brain health, packed with B vitamins and minerals. It's excellent for reducing inflammation and promoting cardiovascular wellness."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Yellowtail Sashimi sashimi?",
+      "name": "Is Yellowtail Sashimi safe to eat raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Yellowtail Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our hamachi is premium sushi-grade quality, sourced from trusted suppliers, delivered fresh multiple times weekly, and prepared safely by trained chefs."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Yellowtail Sashimi sashimi safe to eat?",
+      "name": "How is Yellowtail Sashimi best served?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Yellowtail Sashimi is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Frisco follows strict food safety protocols."
+        "text": "Hamachi's buttery, delicate flavor is best appreciated with a light dip of soy sauce and wasabi. Its subtle sweetness shines when served simply and fresh."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Yellowtail Sashimi as part of a platter?",
+      "name": "Can I order Hamachi in a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Yellowtail Sashimi is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Yellowtail Sashimi is available individually at $15.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Featured in our Omakase selections."
       }
     }
   ]
@@ -168,7 +168,12 @@ export default function YellowtailSashimiFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$15.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$15.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

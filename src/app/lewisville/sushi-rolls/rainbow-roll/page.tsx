@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Rainbow Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "California roll topped with assorted sashimi Enjoy Rainbow Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["rainbow roll","rainbow roll lewisville","sushi rolls lewisville","jinbeh rainbow roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Rainbow Roll Lewisville | Assorted Sashimi Topping",
+  description: "Rainbow Roll at Jinbeh Lewisville: California roll with salmon, tuna, yellowtail. Premium sushi near I-35E. Call (972) 221-3888.",
+  keywords: ["rainbow roll","rainbow roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","colorful sushi roll","jinbeh rainbow roll"],
   openGraph: {
     title: "Rainbow Roll | Jinbeh Lewisville",
     description: "California roll topped with assorted sashimi",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Rainbow Roll at Jinbeh Lewisville?",
+      "name": "What is in Rainbow Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Rainbow Roll at Jinbeh is california roll topped with assorted sashimi. Priced at $17.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Rainbow Roll features a California roll base with imitation crab and avocado, topped with assorted fresh sashimi: salmon, tuna, yellowtail, and white fish arranged in a beautiful rainbow pattern."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Rainbow Roll made fresh?",
+      "name": "What sashimi is on top?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Rainbow Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Rainbow Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Rainbow Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Rainbow Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "The toppings include fresh salmon, tuna, yellowtail, and white fish (shiromi). Some variations include avocado slices and tobiko or masago (fish roe) for color and texture."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Rainbow Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Rainbow Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Rainbow Roll is mostly gluten-free, but soy sauce and some seasonings may contain gluten. Request gluten-free soy sauce to make it fully gluten-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it made with fresh fish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We use premium sushi-grade fish delivered daily. All Rainbow Rolls are prepared fresh to order by our experienced sushi chefs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order Rainbow Roll for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function RainbowRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$17.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$17.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Specialty</td>
+                      <td className="py-4 text-right text-charcoal/80">Premium Sashimi Topping</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function RainbowRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function RainbowRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function RainbowRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

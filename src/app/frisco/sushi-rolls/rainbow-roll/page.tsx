@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Rainbow Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "California roll topped with assorted sashimi Enjoy Rainbow Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["rainbow roll","rainbow roll frisco","sushi rolls frisco","jinbeh rainbow roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Rainbow Roll Frisco | Assorted Sashimi Topping",
+  description: "Rainbow Roll at Jinbeh Frisco: California roll with salmon, tuna, yellowtail. Premium sushi near Legacy West. Call (214) 619-1200.",
+  keywords: ["rainbow roll","rainbow roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","specialty sushi roll"],
   openGraph: {
     title: "Rainbow Roll | Jinbeh Frisco",
     description: "California roll topped with assorted sashimi",
@@ -44,26 +44,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Rainbow Roll at Jinbeh Frisco?",
+      "name": "What is in Rainbow Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Rainbow Roll at Jinbeh is california roll topped with assorted sashimi. Priced at $17.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Rainbow Roll features a California roll base with imitation crab and avocado, topped with assorted fresh sashimi: salmon, tuna, yellowtail, and white fish arranged in a beautiful rainbow pattern."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Rainbow Roll made fresh?",
+      "name": "What sashimi is on top?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our Rainbow Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
+        "text": "The toppings include fresh salmon, tuna, yellowtail, and white fish (shiromi). Some variations include avocado slices and tobiko or masago (fish roe) for color and texture."
       }
     },
     {
       "@type": "Question",
-      "name": "What pairs well with Rainbow Roll?",
+      "name": "Is Rainbow Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend pairing Rainbow Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
+        "text": "Rainbow Roll is mostly gluten-free, but soy sauce and some seasonings may contain gluten. Request gluten-free soy sauce to make it fully gluten-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it made with fresh fish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We use premium sushi-grade fish delivered daily. All Rainbow Rolls are prepared fresh to order by our experienced sushi chefs."
       }
     },
     {
@@ -72,14 +80,6 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes! Rainbow Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Rainbow Roll gluten-free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some ingredients in Rainbow Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function RainbowRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$17.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$17.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Specialty</td>
+                      <td className="py-4 text-right text-charcoal/80">Premium Sashimi Topping</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

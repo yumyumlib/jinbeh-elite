@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Volcano Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Spicy crab and avocado with baked seafood topping Enjoy Volcano Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["volcano roll","volcano roll lewisville","sushi rolls lewisville","jinbeh volcano roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Volcano Roll Lewisville | Baked Spicy Seafood Lava",
+  description: "Volcano Roll at Jinbeh Lewisville: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (972) 221-3888.",
+  keywords: ["volcano roll","volcano roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","spicy baked roll","jinbeh volcano roll"],
   openGraph: {
     title: "Volcano Roll | Jinbeh Lewisville",
     description: "Spicy crab and avocado with baked seafood topping",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Volcano Roll at Jinbeh Lewisville?",
+      "name": "What is in Volcano Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Volcano Roll at Jinbeh is spicy crab and avocado with baked seafood topping. Priced at $16.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Volcano Roll features a base of California roll (crab, avocado), topped with baked spicy crab and shrimp mixture mixed with cream cheese, sriracha, mayo, and yum yum sauce."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Volcano Roll made fresh?",
+      "name": "Why is it called Volcano Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Volcano Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Volcano Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Volcano Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Volcano Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Volcano Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "The name comes from the dramatic presentation - the warm, spicy baked topping looks like lava flowing over the roll, creating a 'volcano eruption' effect."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Volcano Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Volcano Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Volcano Roll may contain gluten in soy sauce and some ingredients. Request gluten-free soy sauce and verify topping ingredients with your server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How spicy is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Volcano Roll has a medium to medium-hot spice level from the baked topping. The heat is balanced with creamy mayo, making it flavorful without being overwhelming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Volcano Roll is available for takeout and delivery. For the best hot presentation, we recommend dining in at our sushi bar. Call (972) 221-3888."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function VolcanoRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$16.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Preparation</td>
+                      <td className="py-4 text-right text-charcoal/80">Baked Topping</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function VolcanoRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function VolcanoRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function VolcanoRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Volcano Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Volcano Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

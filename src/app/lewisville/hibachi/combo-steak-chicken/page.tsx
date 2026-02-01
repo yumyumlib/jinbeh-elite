@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Steak & Chicken Combo | Jinbeh Lewisville Hibachi Menu",
-  description: "Filet mignon with chicken teriyaki Enjoy Steak & Chicken Combo at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["steak & chicken combo","steak & chicken combo lewisville","hibachi lewisville","jinbeh steak & chicken combo","best hibachi lewisville","japanese restaurant lewisville","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  title: "Steak & Chicken Combo Hibachi Lewisville | Dual Protein",
+  description: "Filet mignon paired with chicken teriyaki. 450-500 calories, 45-50g protein. Balanced meat combo. Includes soup, salad, rice, grilled vegetables.",
+  keywords: ["steak chicken combo hibachi lewisville","dual protein teppanyaki lewisville tx","best hibachi near me lewisville","meat combo hibachi lewisville","filet mignon chicken","protein combination dinner","japanese steakhouse lewisville","best hibachi lewisville tx"],
   openGraph: {
     title: "Steak & Chicken Combo | Jinbeh Lewisville",
     description: "Filet mignon with chicken teriyaki",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Is Steak & Chicken Combo hibachi good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Steak & Chicken Combo is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event."
+        "text": "Absolutely! Steak & Chicken Combo is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event."
       }
     },
     {
@@ -168,7 +168,10 @@ export default function ComboSteakChickenLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$36.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$36.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +184,8 @@ export default function ComboSteakChickenLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -210,10 +213,10 @@ export default function ComboSteakChickenLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -273,7 +276,7 @@ export default function ComboSteakChickenLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Absolutely! Steak & Chicken Combo is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (214) 488-2224 to reserve for your special event.
+                      Absolutely! Steak & Chicken Combo is one of our most popular choices for birthdays, anniversaries, and celebrations. The interactive cooking show makes any meal memorable. Call (972) 221-3888 to reserve for your special event.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

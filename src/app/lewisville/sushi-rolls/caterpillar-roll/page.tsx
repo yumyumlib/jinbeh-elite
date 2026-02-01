@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Caterpillar Roll | Jinbeh Lewisville Sushi Rolls Menu",
-  description: "Eel roll topped with avocado slices Enjoy Caterpillar Roll at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["caterpillar roll","caterpillar roll lewisville","sushi rolls lewisville","jinbeh caterpillar roll","best sushi rolls lewisville","japanese restaurant lewisville","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "Caterpillar Roll Lewisville | Eel Avocado Sushi",
+  description: "Caterpillar Roll at Jinbeh Lewisville: Grilled eel, cucumber, avocado topping, sesame. Premium sushi near I-35E. Call (972) 221-3888.",
+  keywords: ["caterpillar roll","caterpillar roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","unique sushi roll","jinbeh caterpillar roll"],
   openGraph: {
     title: "Caterpillar Roll | Jinbeh Lewisville",
     description: "Eel roll topped with avocado slices",
@@ -44,34 +44,18 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Caterpillar Roll at Jinbeh Lewisville?",
+      "name": "What is in Caterpillar Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Caterpillar Roll at Jinbeh is eel roll topped with avocado slices. Priced at $15.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "Caterpillar Roll features unagi kabayaki (grilled eel) and cucumber inside, topped with overlapping avocado slices arranged like a caterpillar. Sesame seeds and eel sauce complete the presentation."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Caterpillar Roll made fresh?",
+      "name": "Is it made with real eel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! All sushi at Jinbeh Lewisville is made to order. Our Caterpillar Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with Caterpillar Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing Caterpillar Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I order Caterpillar Roll for takeout?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! Caterpillar Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
+        "text": "Yes! Our Caterpillar Roll uses premium unagi kabayaki (grilled eel) freshly prepared. The eel is glazed with a savory-sweet sauce before being rolled with cucumber."
       }
     },
     {
@@ -79,7 +63,23 @@ const faqSchema = {
       "name": "Is Caterpillar Roll gluten-free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some ingredients in Caterpillar Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
+        "text": "Caterpillar Roll may contain gluten in the eel sauce and soy sauce. Request tamari or gluten-free soy sauce, and ask about eel sauce ingredients for a gluten-free version."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many calories in Caterpillar Roll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Caterpillar Roll calories vary based on portion size, typically ranging from 400-700 calories depending on avocado amount and preparation style."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order Caterpillar Roll for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Caterpillar Roll is available for takeout and delivery. For the best presentation and taste, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function CaterpillarRollLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$15.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$15.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Main Ingredient</td>
+                      <td className="py-4 text-right text-charcoal/80">Grilled Eel</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +188,8 @@ export default function CaterpillarRollLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +213,10 @@ export default function CaterpillarRollLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>
@@ -269,7 +276,7 @@ export default function CaterpillarRollLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      Yes! Caterpillar Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order.
+                      Yes! Caterpillar Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">

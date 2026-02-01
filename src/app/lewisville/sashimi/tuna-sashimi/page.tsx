@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuna Sashimi | Jinbeh Lewisville Sashimi Menu",
-  description: "Premium ahi tuna, melt-in-your-mouth tender Enjoy Tuna Sashimi at Jinbeh Japanese Restaurant in Lewisville, TX. Easy access from I-35E, near Vista Ridge Mall. Call (214) 488-2224 to reserve.",
-  keywords: ["tuna sashimi","tuna sashimi lewisville","sashimi lewisville","jinbeh tuna sashimi","best sashimi lewisville","japanese restaurant lewisville","sashimi","raw fish","sashimi platter","fresh fish"],
+  title: "Tuna Sashimi Lewisville | Lean Protein Ahi Tuna",
+  description: "Premium ahi tuna sashimi at Jinbeh Lewisville. 94 calories, 20g protein, zero carbs. High in omega-3s and heart-healthy nutrients.",
+  keywords: ["sashimi near me lewisville","tuna sashimi lewisville","best sushi lewisville tx","ahi tuna sashimi calories","lean protein sashimi","japanese restaurant lewisville","sushi-grade tuna","raw fish lewisville"],
   openGraph: {
     title: "Tuna Sashimi | Jinbeh Lewisville",
     description: "Premium ahi tuna, melt-in-your-mouth tender",
@@ -44,42 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How fresh is the Tuna Sashimi at Jinbeh?",
+      "name": "How many calories does Tuna Sashimi have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Tuna Sashimi is sourced from premium suppliers and delivered fresh multiple times per week. At Jinbeh Lewisville, we take pride in serving only the highest-quality sashimi."
+        "text": "Tuna Sashimi at Jinbeh contains approximately 94 calories per 3-ounce serving with 20 grams of protein and zero grams of carbohydrates, making it ideal for low-carb diets."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Tuna Sashimi sashimi?",
+      "name": "What are the health benefits of Tuna Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tuna Sashimi at Jinbeh is premium ahi tuna, melt-in-your-mouth tender. Priced at $16.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Tuna Sashimi is leaner than salmon with high protein and low fat content. It's rich in omega-3 fatty acids (EPA and DHA) that reduce inflammation, support heart health, improve cholesterol levels, and provide selenium and B12."
       }
     },
     {
       "@type": "Question",
-      "name": "How should I eat Tuna Sashimi sashimi?",
+      "name": "Is Tuna Sashimi safe to eat raw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Tuna Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "Absolutely! Our premium ahi tuna is sushi-grade quality, sourced fresh multiple times weekly, properly stored at precise temperatures, and prepared by trained chefs following strict food safety standards."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Tuna Sashimi sashimi safe to eat?",
+      "name": "How do you serve Tuna Sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Tuna Sashimi is sushi-grade quality, properly stored at precise temperatures, and prepared by trained chefs. Jinbeh Lewisville follows strict food safety protocols."
+        "text": "Tuna Sashimi is best enjoyed lightly dipped in soy sauce with a touch of wasabi and ginger. The clean, delicate flavor of premium ahi tuna is best appreciated with minimal accompaniment."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Tuna Sashimi as part of a platter?",
+      "name": "Can I order Tuna Sashimi with other dishes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Tuna Sashimi is available individually or as part of our Sashimi Deluxe Platter or Chirashi Bowl. Ask about our Omakase for the best selection."
+        "text": "Yes! Tuna Sashimi is available individually at $16.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Ask about our Omakase for premium selections."
       }
     }
   ]
@@ -150,10 +150,10 @@ export default function TunaSashimiLewisvillePage() {
                 </h2>
                 <p className="text-charcoal/80 leading-relaxed mb-6">
                   Experience the exceptional Tuna Sashimi at Jinbeh Lewisville.
-                  Premium ahi tuna, melt-in-your-mouth tender Our skilled chefs craft this dish with precision and artistry.
+                  Premium ahi tuna, melt-in-your-mouth tender. Our skilled chefs craft this dish with precision and artistry.
                 </p>
                 <p className="text-charcoal/80 leading-relaxed">
-                  Easy access from I-35E, near Vista Ridge Mall. Lewisville\'s go-to for Japanese cuisine.
+                  Near Vista Ridge Mall, minutes from I-35E. The heart of Lewisville\'s restaurant scene.
                   Whether you&apos;re celebrating a special occasion or enjoying a night out,
                   Tuna Sashimi is a guest favorite that delivers on both flavor and presentation.
                 </p>
@@ -168,7 +168,12 @@ export default function TunaSashimiLewisvillePage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$16.95</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$16.95</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
@@ -181,8 +186,8 @@ export default function TunaSashimiLewisvillePage() {
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Phone</td>
                       <td className="py-4 text-right">
-                        <a href="tel:2144882224" className="text-accent-red hover:underline">
-                          (214) 488-2224
+                        <a href="tel:9722213888" className="text-accent-red hover:underline">
+                          (972) 221-3888
                         </a>
                       </td>
                     </tr>
@@ -206,10 +211,10 @@ export default function TunaSashimiLewisvillePage() {
                     Reserve a Table
                   </Link>
                   <a
-                    href="tel:2144882224"
+                    href="tel:9722213888"
                     className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-3 font-semibold rounded-xl"
                   >
-                    Call (214) 488-2224
+                    Call (972) 221-3888
                   </a>
                 </div>
               </div>

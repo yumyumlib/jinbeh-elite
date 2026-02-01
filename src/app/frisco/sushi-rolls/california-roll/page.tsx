@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "California Roll | Jinbeh Frisco Sushi Rolls Menu",
-  description: "Crab, avocado, and cucumber classic Enjoy California Roll at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["california roll","california roll frisco","sushi rolls frisco","jinbeh california roll","best sushi rolls frisco","japanese restaurant frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  title: "California Roll Sushi Frisco | Best Crab & Avocado",
+  description: "California Roll at Jinbeh Frisco: 250 cal, crab, avocado, cucumber. Fresh handmade sushi near Legacy West. Dine in or takeout. Call (214) 619-1200.",
+  keywords: ["california roll","california roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","jinbeh california roll","best sushi rolls frisco","japanese restaurant frisco"],
   openGraph: {
     title: "California Roll | Jinbeh Frisco",
     description: "Crab, avocado, and cucumber classic",
@@ -44,26 +44,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the California Roll at Jinbeh Frisco?",
+      "name": "How many calories in California Roll?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The California Roll at Jinbeh is crab, avocado, and cucumber classic. Priced at $9.95, it's handcrafted by our sushi chefs using the freshest ingredients delivered daily."
+        "text": "A California Roll at Jinbeh contains approximately 250-300 calories per 8-piece serving. It features crab, avocado, and cucumber with sushi rice and nori, making it a lighter sushi option."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the California Roll made fresh?",
+      "name": "What is California Roll made of?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California Roll includes imitation crab, fresh avocado, crisp cucumber, sushi rice, and seaweed (nori). Some versions include sesame seeds or tobiko. Our chefs at Jinbeh craft each roll with premium ingredients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is California Roll gluten-free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most California Roll ingredients are naturally gluten-free, but soy sauce and some seasonings may contain gluten. Please inform your server of dietary restrictions and our chefs can accommodate requests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is California Roll made fresh?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes! All sushi at Jinbeh Frisco is made to order. Our California Roll is prepared by skilled sushi chefs who slice, roll, and plate each piece with precision and artistry."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What pairs well with California Roll?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We recommend pairing California Roll with premium sake, Japanese beer (Sapporo, Asahi), or one of our signature cocktails. Our staff can suggest the perfect beverage pairing for your meal."
       }
     },
     {
@@ -72,14 +80,6 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes! California Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 619-1200 to order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is California Roll gluten-free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some ingredients in California Roll may contain gluten. Please inform your server of any dietary restrictions and our chefs can accommodate most requests or suggest alternatives."
       }
     }
   ]
@@ -168,7 +168,14 @@ export default function CaliforniaRollFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$9.95</td>
+                      <td className="py-4 text-right">
+                        <span className="text-accent-red font-bold">$9.95</span>
+                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-medium text-charcoal">Calories</td>
+                      <td className="py-4 text-right text-charcoal/80">~250-300 per serving</td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>

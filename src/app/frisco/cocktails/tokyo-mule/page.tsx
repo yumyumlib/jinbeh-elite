@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tokyo Mule | Jinbeh Frisco Cocktails & Sake Menu",
-  description: "Japanese whiskey with ginger and lime Enjoy Tokyo Mule at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["tokyo mule","tokyo mule frisco","cocktails & sake frisco","jinbeh tokyo mule","best cocktails & sake frisco","japanese restaurant frisco","japanese cocktails","sake","asian drinks","happy hour"],
+  title: "Tokyo Mule - Japanese Whiskey Cocktails Frisco",
+  description: "Tokyo Mule with Japanese whiskey, ginger & lime at Jinbeh Frisco. Premium happy hour cocktails. Best Japanese restaurant drinks. Call (214) 619-1200.",
+  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","tokyo mule","whiskey cocktails","ginger beer","jinbeh frisco","japanese restaurant"],
   openGraph: {
-    title: "Tokyo Mule | Jinbeh Frisco",
-    description: "Japanese whiskey with ginger and lime",
+    title: "Tokyo Mule | Japanese Whiskey Cocktail Frisco",
+    description: "Tokyo Mule with premium Japanese whiskey, ginger & lime.",
     url: "https://jinbeh.com/frisco/cocktails/tokyo-mule",
   },
   alternates: {
@@ -44,34 +44,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the Tokyo Mule at Jinbeh?",
+      "name": "What is a Tokyo Mule cocktail?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Tokyo Mule at Jinbeh Frisco is japanese whiskey with ginger and lime. At $14.00, it's one of our signature bar offerings."
+        "text": "The Tokyo Mule is a Japanese twist on the classic Moscow Mule. Made with premium Japanese whiskey, crisp ginger beer, fresh lime juice, and a cucumber garnish, it delivers bold ginger spice with subtle whiskey warmth."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Tokyo Mule available during happy hour?",
+      "name": "How many calories are in a Tokyo Mule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many of our cocktails including options like Tokyo Mule are featured during happy hour at discounted prices. Visit Jinbeh Frisco for current happy hour specials."
+        "text": "A Tokyo Mule typically contains 180-215 calories, with 15-21g of carbohydrates and approximately 15-17g of sugar. The exact amount varies based on the ginger beer and whiskey proportions used."
       }
     },
     {
       "@type": "Question",
-      "name": "What food pairs with Tokyo Mule?",
+      "name": "What ingredients are in our Tokyo Mule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tokyo Mule pairs beautifully with our sushi and appetizers. Our bartenders can suggest the perfect food pairing to complement your drink."
+        "text": "Our Tokyo Mule features premium Japanese whiskey, spicy ginger beer, fresh squeezed lime juice, and is garnished with a cucumber slice for authentic flavor and presentation."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I get Tokyo Mule at the bar?",
+      "name": "What is the alcohol content of Tokyo Mule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Frisco has a full bar where you can enjoy Tokyo Mule and watch our sushi chefs at work. No reservation needed for bar seating."
+        "text": "The Tokyo Mule contains approximately 12-15% alcohol by volume. Japanese whiskey typically ranges from 40-43% ABV, blended with ginger beer and lime juice to create a balanced, sippable cocktail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What food pairs best with Tokyo Mule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The spicy ginger flavors pair excellently with our sushi rolls, especially spicy tuna and dynamite rolls. It also complements Japanese appetizers like gyoza, edamame, and tempura perfectly."
       }
     }
   ]
@@ -160,7 +168,12 @@ export default function TokyoMuleFriscoPage() {
                   <tbody className="divide-y divide-warm-ivory">
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$14.00</td>
+                      <td className="py-4 text-right">
+                        <div>
+                          <p className="text-accent-red font-bold">$14.00</p>
+                          <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
