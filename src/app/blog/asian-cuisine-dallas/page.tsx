@@ -33,7 +33,7 @@ export default function AsianCuisineDallas() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/blog/8-C060324-6462.jpg" alt="Asian Cuisine Dallas" fill className="object-cover" priority />
+                <Image src="/images/blog/24-C060324-6886.jpg" alt="Asian Cuisine Dallas" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -79,7 +79,7 @@ export default function AsianCuisineDallas() {
                             <p className="text-charcoal/80 mb-4">Located in the Arts District, Tei-An is a soba house specializing in handmade soba noodles. The restaurant's minimalist design complements its refined menu, including a variety of sushi and sashimi options. It's about the art of Japanese dining, where simplicity and elegance create a serene dining experience. The delicate flavors and expert craftsmanship make it a must-visit.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Jinbeh Hibachi & Sushi</h3>
-                            <p className="text-charcoal/80 mb-6">Jinbeh combines the art of <Link href="/blog/hibacci-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> cooking with fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> offerings. The lively atmosphere and skilled chefs make dining here memorable. Guests watch as their meals are expertly prepared right in front of them, adding entertainment to the experience. The fusion of flavors combined with vibrant energy makes Jinbeh a standout spot for exploring Asian fusion.</p>
+                            <p className="text-charcoal/80 mb-6">Jinbeh combines the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> cooking with fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> offerings. The lively atmosphere and skilled chefs make dining here memorable. Guests watch as their meals are expertly prepared right in front of them, adding entertainment to the experience. The fusion of flavors combined with vibrant energy makes Jinbeh a standout spot for exploring Asian fusion.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Traditional Asian Flavors</h2>
                             <p className="text-charcoal/80 mb-6">While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. These establishments offer a taste of familiar, comforting flavors cherished for generations. Traditional Asian cuisine is revered for its emphasis on fresh ingredients, bold spices, and time-honored cooking techniques resulting in dishes rich in flavor and history.</p>
@@ -123,7 +123,7 @@ export default function AsianCuisineDallas() {
                             </div>
 
                             <div className="mt-6 p-6 bg-warm-ivory rounded-xl">
-                                <p className="text-charcoal/80">Whether you're new to Japanese dining or a seasoned enthusiast, explore our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> guide or check out the <Link href="/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link> for more recommendations.</p>
+                                <p className="text-charcoal/80">Whether you're new to Japanese dining or a seasoned enthusiast, explore our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> guide or check out the <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link> for more recommendations.</p>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 Asian Cuisine in DFW</h2>

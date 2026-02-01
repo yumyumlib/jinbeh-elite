@@ -82,7 +82,7 @@ export default function SushiIdentificationChart() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/16-C060324-6670.jpg"
+                    src="/images/blog/13-C060324-6582.jpg"
                     alt="Fresh sushi and sashimi platter at Jinbeh Japanese Restaurant"
                     fill
                     className="object-cover"

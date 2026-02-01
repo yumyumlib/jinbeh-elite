@@ -34,7 +34,7 @@ const localBusinessSchema = {
   "@type": "Restaurant",
   "@id": "https://jinbeh.com/frisco#restaurant",
   name: "Jinbeh Japanese Restaurant - Frisco (Near Legacy West)",
-  image: "/images/frisco/JinbehFriscoStorefrontSign.jpg",
+  image: "/images/photoshoot/hibachi-steak.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "2693 Preston Rd, Suite 1040",

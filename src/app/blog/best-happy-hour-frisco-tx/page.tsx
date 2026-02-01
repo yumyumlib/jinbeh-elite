@@ -64,7 +64,7 @@ export default function BestHappyHourFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/10-C060324-6501.jpg"
+                    src="/images/blog/17-C060324-6708.jpg"
                     alt="Happy hour drinks at Jinbeh"
                     fill
                     className="object-cover"

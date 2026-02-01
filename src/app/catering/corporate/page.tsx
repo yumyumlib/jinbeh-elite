@@ -81,7 +81,7 @@ const corporatePackages = [
   {
     title: "Office Lunches",
     description: "Impress your team with fresh, authentic Japanese cuisine delivered to your office.",
-    image: "/images/photoshoot/sashimi-platter.jpg",
+    image: "/images/food/BentoBoxLunchSet.jpg",
     price: "Starting at $18/person",
     includes: [
       "Sushi & roll assortment",

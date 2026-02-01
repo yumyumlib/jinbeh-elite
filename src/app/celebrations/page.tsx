@@ -77,14 +77,14 @@ const personalCelebrations = [
   {
     title: "Birthday Parties",
     description: "Make it a birthday to remember with hibachi entertainment and the legendary onion volcano!",
-    image: "/images/food/OnionVolcanoDemo.jpg",
+    image: "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
     href: "/celebrations/birthday",
     keywords: "hibachi birthday party, birthday dinner frisco",
   },
   {
     title: "Anniversary Dinners",
     description: "Celebrate your love with fresh sushi, premium sake, and intimate dining at our sushi bar.",
-    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+    image: "/images/food/RoyalFlameRoll.jpg",
     href: "/celebrations/anniversary",
     keywords: "anniversary restaurant frisco, romantic dinner lewisville",
   },
@@ -117,7 +117,7 @@ const holidayCelebrations = [
   {
     title: "Mother's Day",
     description: "Give Mom a day off! Let us cook while she relaxes and enjoys.",
-    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+    image: "/images/food/JinbehAhiTower.jpg",
     href: "/celebrations/mothers-day",
     month: "May",
     color: "bg-purple-50 border-purple-200",
@@ -141,7 +141,7 @@ const holidayCelebrations = [
   {
     title: "Christmas",
     description: "Make holiday magic with sizzling hibachi flames and family memories.",
-    image: "/images/food/OnionVolcanoDemo.jpg",
+    image: "/images/food/HappyNewYear.jpg",
     href: "/celebrations/christmas",
     month: "December",
     color: "bg-red-50 border-red-200",
@@ -149,7 +149,7 @@ const holidayCelebrations = [
   {
     title: "Lunar New Year",
     description: "Ring in the Year of the Snake with lucky dishes and family gathering.",
-    image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+    image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
     href: "/celebrations/lunar-new-year",
     month: "January/February",
     color: "bg-red-50 border-red-200",
@@ -237,7 +237,7 @@ export default function CelebrationsPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/food/OnionVolcanoDemo.jpg"
+            poster="/images/photoshoot/hibachi-plate-shrimp.jpg"
             aria-label="Hibachi chef creating onion volcano flame at Jinbeh"
           >
             <source
@@ -495,7 +495,7 @@ export default function CelebrationsPage() {
               <div className="relative">
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/food/OnionVolcanoDemo.jpg"
+                    src="/images/celebrations/jinbeh_group.jpg"
                     alt="Hibachi chef creating onion volcano at Jinbeh celebration"
                     fill
                     className="object-cover"

@@ -89,7 +89,7 @@ export default function FineDiningFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/7-C060324-6447.jpg"
+                    src="/images/blog/19-C060324-6757.jpg"
                     alt="Fine dining experience at Jinbeh Frisco"
                     fill
                     className="object-cover"

@@ -176,8 +176,8 @@ export default function TakeoutPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-deep-indigo via-charcoal to-deep-indigo" />
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="/images/photoshoot/sashimi-platter.jpg"
-              alt="Sushi"
+              src="/images/food/BentoBoxLunchSet.jpg"
+              alt="Takeout bento box meal"
               fill
               className="object-cover"
             />

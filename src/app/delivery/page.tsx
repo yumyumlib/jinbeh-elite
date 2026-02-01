@@ -104,7 +104,7 @@ export default function DeliveryPage() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/food/FreshSushiAndDessertsAtSushiBar.jpg"
+            src="/images/food/BentoBoxLunchSet.jpg"
             alt="Fresh sushi delivery from Jinbeh Japanese restaurant in Frisco and Lewisville"
             fill
             className="object-cover"

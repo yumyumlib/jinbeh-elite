@@ -155,7 +155,7 @@ export default function ValentinesDayPage() {
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="relative h-48">
                   <Image
-                    src="/images/food/OnionVolcanoDemo.jpg"
+                    src="/images/food/HappyValentinesDay.jpg"
                     alt="Romantic hibachi dinner with flames"
                     fill
                     className="object-cover"

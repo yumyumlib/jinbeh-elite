@@ -205,8 +205,8 @@ export default function HolidayPartiesPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/photoshoot/sashimi-platter.jpg"
-                    alt="Festive holiday sushi platter"
+                    src="/images/photoshoot/specialty-roll.jpg"
+                    alt="Festive holiday specialty roll platter"
                     fill
                     className="object-cover"
                   />

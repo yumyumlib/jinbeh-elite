@@ -72,7 +72,7 @@ const cateringOptions = [
   {
     title: "Sushi Platters",
     description: "Beautifully arranged assortments of our freshest sushi and rolls.",
-    image: "/images/photoshoot/sashimi-platter.jpg",
+    image: "/images/photoshoot/sizzling-plate.jpg",
     includes: ["Signature Rolls", "Classic Rolls", "Nigiri Selection", "Sashimi (optional)"],
     ideal: "Perfect for cocktail parties, corporate meetings, and elegant gatherings.",
   },

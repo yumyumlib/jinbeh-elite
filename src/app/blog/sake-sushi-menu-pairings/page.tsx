@@ -83,7 +83,7 @@ export default function SakeSushiMenuPairings() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/10-C060324-6501.jpg"
+                    poster="/images/blog/12-C060324-6551.jpg"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>

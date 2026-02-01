@@ -92,7 +92,7 @@ export default function TopFriscoRestaurants() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/8-C060324-6462.jpg"
+                    src="/images/blog/15-C060324-6638.jpg"
                     alt="Top restaurants in Frisco"
                     fill
                     className="object-cover"
@@ -300,7 +300,7 @@ export default function TopFriscoRestaurants() {
                                     </h2>
 
                                     <p>
-                                        Ready to experience Frisco's dining excellence? Visit <Link href="/best-sushi-frisco" className="text-accent-red hover:underline">Jinbeh's Frisco location</Link> for authentic Japanese cuisine and unforgettable hibachi entertainment. For <Link href="/reservations" className="text-accent-red hover:underline">reservations</Link>, visit our location page or explore our <Link href="/catering" className="text-accent-red hover:underline">private events</Link> options for special celebrations.
+                                        Ready to experience Frisco's dining excellence? Visit <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">Jinbeh's Frisco location</Link> for authentic Japanese cuisine and unforgettable hibachi entertainment. For <Link href="/reservations" className="text-accent-red hover:underline">reservations</Link>, visit our location page or explore our <Link href="/catering" className="text-accent-red hover:underline">private events</Link> options for special celebrations.
                                     </p>
                                 </div>
 

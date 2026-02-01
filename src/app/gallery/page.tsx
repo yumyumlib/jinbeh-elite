@@ -124,10 +124,10 @@ const galleryImages: GalleryImage[] = [
     title: "Sushi Tower",
   },
   {
-    src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
-    alt: "Fresh sushi selection and Japanese desserts at the bar",
+    src: "/images/food/OkinawaIslandRollCloseup.jpg",
+    alt: "Okinawa Island roll - unique sushi creation",
     category: "Sushi & Rolls",
-    title: "Sushi Bar Selection",
+    title: "Okinawa Island Roll",
   },
   {
     src: "/images/food/SamaraiRollCloseup.jpg",
@@ -148,10 +148,10 @@ const galleryImages: GalleryImage[] = [
     title: "Okinawa Island Roll",
   },
   {
-    src: "/images/photoshoot/sashimi-platter.jpg",
-    alt: "Premium sashimi platter with salmon, tuna, and yellowtail",
+    src: "/images/food/FreshSpicyLoverRoll.jpg",
+    alt: "Fresh Spicy Lover roll with vibrant fresh ingredients",
     category: "Sushi & Rolls",
-    title: "Sashimi Platter",
+    title: "Spicy Lover Roll",
   },
 
   // Dining Experience

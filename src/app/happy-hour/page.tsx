@@ -110,7 +110,7 @@ export default function HappyHourPage() {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/frisco/JinbehFriscoStorefrontSign.jpg')" }}
+            style={{ backgroundImage: "url('/images/food/FreshSpicyLoverRoll.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
@@ -191,8 +191,8 @@ export default function HappyHourPage() {
               <div className="bg-warm-ivory rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative h-48">
                   <Image
-                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
-                    alt="Jinbeh Frisco bar"
+                    src="/images/photoshoot/hibachi-steak.jpg"
+                    alt="Jinbeh Frisco hibachi bar"
                     fill
                     className="object-cover"
                   />
@@ -301,8 +301,8 @@ export default function HappyHourPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
-                    alt="Jinbeh bar interior"
+                    src="/images/food/RoyalFlameRoll.jpg"
+                    alt="Jinbeh happy hour specialty rolls"
                     fill
                     className="object-cover"
                   />
