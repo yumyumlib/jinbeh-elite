@@ -159,7 +159,6 @@ export default function LunchSpecialsPage() {
               <span className="text-3xl">💰</span>
               <span className="text-lg font-semibold">Save on Lunch Entrees!</span>
             </div>
-          </div>
         </section>
 
         {/* Lunch Hours */}
@@ -207,7 +206,6 @@ export default function LunchSpecialsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Lunch Specials Menu */}
@@ -269,7 +267,6 @@ export default function LunchSpecialsPage() {
                 </Link>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Choose Jinbeh for Lunch */}
@@ -298,7 +295,6 @@ export default function LunchSpecialsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Lunch Recommendations */}
@@ -368,7 +364,6 @@ export default function LunchSpecialsPage() {
                 ))}
               </div>
             </div>
-          </div>
         </section>
 
         {/* Lunch Menu Downloads */}
@@ -409,7 +404,6 @@ export default function LunchSpecialsPage() {
                 PDF files open in a new window. Prices and items subject to change.
               </p>
             </div>
-          </div>
         </section>
 
         {/* CTA */}
@@ -466,7 +460,6 @@ export default function LunchSpecialsPage() {
                 </Link>
               ))}
             </div>
-          </div>
         </section>
       </main>
       <Footer />

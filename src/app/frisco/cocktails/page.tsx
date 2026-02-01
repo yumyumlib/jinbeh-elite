@@ -177,7 +177,6 @@ export default function CocktailsFriscoPage() {
                 Reserve Your Table
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -294,7 +293,6 @@ export default function CocktailsFriscoPage() {
                 </div>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -322,7 +320,6 @@ export default function CocktailsFriscoPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -400,7 +397,6 @@ export default function CocktailsFriscoPage() {
                 </details>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Other Categories */}
@@ -440,7 +436,6 @@ export default function CocktailsFriscoPage() {
                 <h3 className="font-heading font-bold text-charcoal">Appetizers</h3>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

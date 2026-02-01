@@ -115,7 +115,6 @@ export default function DateNightPage() {
                 Reserve Lewisville
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Banner */}
@@ -335,7 +334,6 @@ export default function DateNightPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -370,7 +368,6 @@ export default function DateNightPage() {
               <Link href="/blog/date-night-restaurants-frisco" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Date Night Guide</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
             </div>
-          </div>
         </section>
 
         {/* Gift Card CTA */}

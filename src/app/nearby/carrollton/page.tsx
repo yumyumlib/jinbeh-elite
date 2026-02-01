@@ -203,7 +203,6 @@ export default function CarrolltonNearbyPage() {
                 Call {lewisvilleLocation.phone}
               </a>
             </div>
-          </div>
         </section>
 
         {/* Distance & Directions Section */}
@@ -223,7 +222,6 @@ export default function CarrolltonNearbyPage() {
                 <p className="text-lg text-white/90">Lewisville & Frisco</p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -293,7 +291,6 @@ export default function CarrolltonNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Nearby Attractions Section */}
@@ -342,7 +339,6 @@ export default function CarrolltonNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Locations Section */}
@@ -490,7 +486,6 @@ export default function CarrolltonNearbyPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* What We Offer Section */}
@@ -544,7 +539,6 @@ export default function CarrolltonNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -629,7 +623,6 @@ export default function CarrolltonNearbyPage() {
                 </p>
               </details>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -659,7 +652,6 @@ export default function CarrolltonNearbyPage() {
                 Reserve at Frisco
               </a>
             </div>
-          </div>
         </section>
 
         {/* Quick Links */}
@@ -698,7 +690,6 @@ export default function CarrolltonNearbyPage() {
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Sticky Mobile CTA */}

@@ -267,7 +267,6 @@ export default function SushiRollsFriscoPage() {
                 Reserve Your Table
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -564,7 +563,6 @@ export default function SushiRollsFriscoPage() {
                 </div>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -592,7 +590,6 @@ export default function SushiRollsFriscoPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -670,7 +667,6 @@ export default function SushiRollsFriscoPage() {
                 </details>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Other Categories */}
@@ -710,7 +706,6 @@ export default function SushiRollsFriscoPage() {
                 <h3 className="font-heading font-bold text-charcoal">Cocktails & Sake</h3>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

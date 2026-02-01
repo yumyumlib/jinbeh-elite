@@ -200,7 +200,6 @@ export default function CateringPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Why Choose Jinbeh Catering */}
@@ -255,7 +254,6 @@ export default function CateringPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Contact Form Section */}
@@ -356,7 +354,6 @@ export default function CateringPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Dine-In CTA */}
@@ -382,7 +379,6 @@ export default function CateringPage() {
                 Reserve at Lewisville
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

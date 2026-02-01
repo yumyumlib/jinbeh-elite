@@ -127,7 +127,6 @@ export default function SakeFlightFriscoPage() {
                 $18.00
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -313,7 +312,6 @@ export default function SakeFlightFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

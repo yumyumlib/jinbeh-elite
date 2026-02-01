@@ -127,7 +127,6 @@ export default function GyozaFriscoPage() {
                 $8.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -313,7 +312,6 @@ export default function GyozaFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

@@ -203,7 +203,6 @@ export default function LewisvillePage() {
                 Call {location.phone}
               </a>
             </div>
-          </div>
         </section>
 
         {/* Trust Signals Bar */}
@@ -275,7 +274,6 @@ export default function LewisvillePage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Info Section */}
@@ -399,7 +397,6 @@ export default function LewisvillePage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Hours Section */}
@@ -443,7 +440,6 @@ export default function LewisvillePage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Experience Section */}
@@ -507,7 +503,6 @@ export default function LewisvillePage() {
                 Explore Our Full Menu
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Photo & Video Gallery */}
@@ -615,7 +610,6 @@ export default function LewisvillePage() {
                 </svg>
               </a>
             </div>
-          </div>
         </section>
 
         {/* Popular Celebrations at Lewisville */}
@@ -687,7 +681,6 @@ export default function LewisvillePage() {
                 <span className="text-xs text-accent-red font-medium">All Events</span>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Quick Links */}
@@ -736,7 +729,6 @@ export default function LewisvillePage() {
               <Link href="/nearby/highland-village" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Highland Village</Link>
               <Link href="/nearby/carrollton" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
-          </div>
         </section>
 
         {/* Related Blog Posts */}

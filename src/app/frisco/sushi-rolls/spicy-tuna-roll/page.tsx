@@ -135,8 +135,6 @@ export default function SpicyTunaRollFriscoPage() {
                 $11.95
               </p>
             </div>
-          </div>
-        </div>
         </section>
 
         {/* Main Content */}
@@ -335,7 +333,6 @@ export default function SpicyTunaRollFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

@@ -135,7 +135,6 @@ export default function OctopusSashimiFriscoPage() {
                 $14.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -334,7 +333,6 @@ export default function OctopusSashimiFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

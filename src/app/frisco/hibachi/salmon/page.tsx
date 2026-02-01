@@ -135,7 +135,6 @@ export default function SalmonFriscoPage() {
                 $28.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -338,7 +337,6 @@ export default function SalmonFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

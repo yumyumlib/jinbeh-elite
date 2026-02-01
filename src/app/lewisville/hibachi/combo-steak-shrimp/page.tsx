@@ -135,7 +135,6 @@ export default function ComboSteakShrimpLewisvillePage() {
                 $38.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -338,7 +337,6 @@ export default function ComboSteakShrimpLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

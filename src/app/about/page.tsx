@@ -217,7 +217,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* The Name Jinbeh - Heritage Story */}
@@ -269,7 +268,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Values Section */}
@@ -345,7 +343,6 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Instagram Feed Section */}
@@ -403,7 +400,6 @@ export default function AboutPage() {
                 </a>
               ))}
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -430,7 +426,6 @@ export default function AboutPage() {
                 Reserve at Lewisville
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

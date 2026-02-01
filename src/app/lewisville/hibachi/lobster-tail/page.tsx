@@ -135,7 +135,6 @@ export default function LobsterTailLewisvillePage() {
                 $44.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -338,7 +337,6 @@ export default function LobsterTailLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

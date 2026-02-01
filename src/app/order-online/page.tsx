@@ -2,30 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-// Note: Metadata is defined at the bottom after the component for proper export
-
-export const metadata: Metadata = {
-    title: "Order Online | Jinbeh Japanese Restaurant - Food Delivery",
-    description: "Order Jinbeh's authentic hibachi and sushi online for delivery. Available on DoorDash, UberEats, and Grubhub. Quick phone ordering available at Frisco (972-668-1100) and Lewisville (972-315-3982).",
-    keywords: [
-        "jinbeh order online",
-        "hibachi delivery",
-        "sushi delivery frisco",
-        "japanese food delivery lewisville",
-        "doordash",
-        "ubereats",
-        "grubhub",
-    ],
-    openGraph: {
-        title: "Order Online | Jinbeh Japanese Restaurant",
-        description: "Order authentic Japanese hibachi and sushi online for delivery or phone ordering.",
-        url: "https://jinbeh.com/order-online",
-    },
-};
 
 // JSON-LD Schema for Restaurant and Menu
 const restaurantSchema = {

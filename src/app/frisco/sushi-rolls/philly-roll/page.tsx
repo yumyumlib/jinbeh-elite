@@ -135,8 +135,6 @@ export default function PhillyRollFriscoPage() {
                 $12.95
               </p>
             </div>
-          </div>
-        </div>
         </section>
 
         {/* Main Content */}
@@ -335,7 +333,6 @@ export default function PhillyRollFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

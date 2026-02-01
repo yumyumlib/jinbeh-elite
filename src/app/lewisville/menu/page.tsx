@@ -242,7 +242,6 @@ export default function LewisvilleMenuPage() {
                 </a>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Menu Categories */}
@@ -341,7 +340,6 @@ export default function LewisvilleMenuPage() {
                 Order on UberEats
               </a>
             </div>
-          </div>
         </section>
 
         {/* Reserve CTA */}

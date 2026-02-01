@@ -135,8 +135,6 @@ export default function VegasRollFriscoPage() {
                 $14.95
               </p>
             </div>
-          </div>
-        </div>
         </section>
 
         {/* Main Content */}
@@ -335,7 +333,6 @@ export default function VegasRollFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

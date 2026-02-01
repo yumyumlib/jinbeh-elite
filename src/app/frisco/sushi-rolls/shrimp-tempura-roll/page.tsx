@@ -135,8 +135,6 @@ export default function ShrimpTempuraRollFriscoPage() {
                 $13.95
               </p>
             </div>
-          </div>
-        </div>
         </section>
 
         {/* Main Content */}
@@ -335,7 +333,6 @@ export default function ShrimpTempuraRollFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

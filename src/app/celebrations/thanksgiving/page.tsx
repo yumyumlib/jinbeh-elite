@@ -107,7 +107,6 @@ export default function ThanksgivingPage() {
                 Reserve Lewisville
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Banner */}
@@ -302,7 +301,6 @@ export default function ThanksgivingPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -337,7 +335,6 @@ export default function ThanksgivingPage() {
               <Link href="/blog/large-group-dining" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Group Dining</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
             </div>
-          </div>
         </section>
 
         {/* Takeout Option */}
@@ -367,7 +364,6 @@ export default function ThanksgivingPage() {
                 Order Lewisville Takeout
               </a>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

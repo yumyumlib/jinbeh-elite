@@ -115,7 +115,6 @@ export default function ValentinesDayPage() {
                 Reserve Lewisville
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Urgency Banner */}
@@ -361,7 +360,6 @@ export default function ValentinesDayPage() {
                 </Link>
               </p>
             </div>
-          </div>
         </section>
 
         {/* Gift Card Suggestion */}
@@ -414,7 +412,6 @@ export default function ValentinesDayPage() {
               <Link href="/blog/romantic-anniversary-dinners" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Anniversary Ideas</Link>
               <Link href="/blog/sake-sushi-menu-pairings" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sake Pairings</Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

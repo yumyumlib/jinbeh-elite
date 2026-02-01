@@ -127,7 +127,6 @@ export default function SakeFlightLewisvillePage() {
                 $18.00
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -313,7 +312,6 @@ export default function SakeFlightLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

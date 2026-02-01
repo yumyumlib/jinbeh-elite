@@ -138,7 +138,6 @@ export default function BarPage() {
                 Full Bar • No Reservation Needed • Sushi Bar View
               </p>
             </div>
-          </div>
         </section>
 
         {/* Sake Menu Section */}
@@ -265,7 +264,6 @@ export default function BarPage() {
                 </ul>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Japanese Whisky Section */}
@@ -383,7 +381,6 @@ export default function BarPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Signature Cocktails Section */}
@@ -474,7 +471,6 @@ export default function BarPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Beer Section */}
@@ -545,7 +541,6 @@ export default function BarPage() {
                 </ul>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Wine & Non-Alcoholic Section */}
@@ -630,7 +625,6 @@ export default function BarPage() {
                 </ul>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Happy Hour Callout */}
@@ -661,7 +655,6 @@ export default function BarPage() {
                 </Link>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -736,7 +729,6 @@ export default function BarPage() {
                 </details>
               ))}
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}

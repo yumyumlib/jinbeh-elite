@@ -203,7 +203,6 @@ export default function FlowerMoundNearbyPage() {
                 Call {lewisvilleLocation.phone}
               </a>
             </div>
-          </div>
         </section>
 
         {/* Distance & Directions Section */}
@@ -223,7 +222,6 @@ export default function FlowerMoundNearbyPage() {
                 <p className="text-lg text-white/90">Lewisville & Frisco</p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Nearby Attractions Section */}
@@ -263,7 +261,6 @@ export default function FlowerMoundNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -333,7 +330,6 @@ export default function FlowerMoundNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Locations Section */}
@@ -481,7 +477,6 @@ export default function FlowerMoundNearbyPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* What We Offer Section */}
@@ -535,7 +530,6 @@ export default function FlowerMoundNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -620,7 +614,6 @@ export default function FlowerMoundNearbyPage() {
                 </p>
               </details>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -650,7 +643,6 @@ export default function FlowerMoundNearbyPage() {
                 Reserve at Frisco
               </a>
             </div>
-          </div>
         </section>
 
         {/* Quick Links */}
@@ -689,7 +681,6 @@ export default function FlowerMoundNearbyPage() {
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Sticky Mobile CTA */}

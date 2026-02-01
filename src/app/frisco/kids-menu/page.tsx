@@ -309,7 +309,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Kids Hibachi Section */}
@@ -386,7 +385,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Kids Sushi Section */}
@@ -459,7 +457,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Sides & Soups Section */}
@@ -499,7 +496,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Desserts Section */}
@@ -532,7 +528,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Fun Facts Section */}
@@ -577,7 +572,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Birthday Party Section */}
@@ -630,7 +624,6 @@ export default function KidsMenuFriscoPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -733,7 +726,6 @@ export default function KidsMenuFriscoPage() {
                 </details>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Contact/Reservation CTA */}

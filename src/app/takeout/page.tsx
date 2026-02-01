@@ -291,7 +291,6 @@ export default function TakeoutPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Popular Takeout Items */}
@@ -347,7 +346,6 @@ export default function TakeoutPage() {
                 Lewisville Menu
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Why Order from Jinbeh */}
@@ -376,7 +374,6 @@ export default function TakeoutPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Tips for Better Takeout */}
@@ -415,7 +412,6 @@ export default function TakeoutPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Delivery Coverage */}
@@ -446,7 +442,6 @@ export default function TakeoutPage() {
                 Check GrubHub or Uber Eats for exact delivery availability to your address.
               </p>
             </div>
-          </div>
         </section>
 
         {/* FAQ for Takeout */}
@@ -499,7 +494,6 @@ export default function TakeoutPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* CTA */}

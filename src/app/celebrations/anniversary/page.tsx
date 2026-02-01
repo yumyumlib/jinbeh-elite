@@ -185,7 +185,6 @@ export default function AnniversaryPage() {
                 </Link>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -204,7 +203,6 @@ export default function AnniversaryPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
       </main>
       <Footer />

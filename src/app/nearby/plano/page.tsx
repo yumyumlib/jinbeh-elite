@@ -203,7 +203,6 @@ export default function PlanoNearbyPage() {
                 Call {friscoLocation.phone}
               </a>
             </div>
-          </div>
         </section>
 
         {/* Distance & Directions Section */}
@@ -223,7 +222,6 @@ export default function PlanoNearbyPage() {
                 <p className="text-lg text-white/90">Frisco & Lewisville</p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -293,7 +291,6 @@ export default function PlanoNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Locations Section */}
@@ -441,7 +438,6 @@ export default function PlanoNearbyPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* What We Offer Section */}
@@ -495,7 +491,6 @@ export default function PlanoNearbyPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -580,7 +575,6 @@ export default function PlanoNearbyPage() {
                 </p>
               </details>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -610,7 +604,6 @@ export default function PlanoNearbyPage() {
                 Reserve at Lewisville
               </a>
             </div>
-          </div>
         </section>
 
         {/* Quick Links */}
@@ -649,7 +642,6 @@ export default function PlanoNearbyPage() {
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Sticky Mobile CTA */}

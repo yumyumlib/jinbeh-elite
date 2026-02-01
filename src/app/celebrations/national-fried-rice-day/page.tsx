@@ -107,7 +107,6 @@ export default function NationalFriedRiceDayPage() {
                 Reserve Lewisville
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Fun Banner */}
@@ -321,7 +320,6 @@ export default function NationalFriedRiceDayPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -356,7 +354,6 @@ export default function NationalFriedRiceDayPage() {
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
               <Link href="/nearby/carrollton" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
-          </div>
         </section>
 
         {/* Order Online */}
@@ -387,7 +384,6 @@ export default function NationalFriedRiceDayPage() {
                 Order Lewisville on GrubHub
               </a>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

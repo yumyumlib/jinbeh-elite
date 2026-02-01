@@ -135,7 +135,6 @@ export default function YellowtailSashimiLewisvillePage() {
                 $15.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -334,7 +333,6 @@ export default function YellowtailSashimiLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

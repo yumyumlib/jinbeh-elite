@@ -135,7 +135,6 @@ export default function RainbowRollLewisvillePage() {
                 $17.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -334,7 +333,6 @@ export default function RainbowRollLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

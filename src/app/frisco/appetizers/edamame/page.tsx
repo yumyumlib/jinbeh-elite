@@ -127,7 +127,6 @@ export default function EdamameFriscoPage() {
                 $5.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -313,7 +312,6 @@ export default function EdamameFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

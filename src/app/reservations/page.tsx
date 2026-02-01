@@ -178,7 +178,6 @@ export default function ReservationsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Location Cards with Booking */}
@@ -394,7 +393,6 @@ export default function ReservationsPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Dining Experiences */}
@@ -452,7 +450,6 @@ export default function ReservationsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Reservation Tips */}
@@ -492,7 +489,6 @@ export default function ReservationsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Special Occasions */}
@@ -555,7 +551,6 @@ export default function ReservationsPage() {
                 Contact Us
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

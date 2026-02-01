@@ -301,7 +301,6 @@ export default function WeddingCateringPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Menu Options */}
@@ -362,7 +361,6 @@ export default function WeddingCateringPage() {
                 </span>
               </p>
             </div>
-          </div>
         </section>
 
         {/* Planning Process */}
@@ -401,7 +399,6 @@ export default function WeddingCateringPage() {
                 ))}
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Choose Jinbeh */}
@@ -486,7 +483,6 @@ export default function WeddingCateringPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Testimonials / Gallery */}
@@ -562,7 +558,6 @@ export default function WeddingCateringPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Consultation CTA */}
@@ -627,7 +622,6 @@ export default function WeddingCateringPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQs */}
@@ -673,7 +667,6 @@ export default function WeddingCateringPage() {
                 </details>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Internal Links */}
@@ -720,7 +713,6 @@ export default function WeddingCateringPage() {
                 Visit Lewisville
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

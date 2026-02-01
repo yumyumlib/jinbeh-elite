@@ -127,7 +127,6 @@ export default function TokyoMuleLewisvillePage() {
                 $14.00
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -313,7 +312,6 @@ export default function TokyoMuleLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

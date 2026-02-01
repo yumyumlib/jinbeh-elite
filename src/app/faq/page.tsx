@@ -369,7 +369,6 @@ export default function FAQPage() {
                 </a>
               ))}
             </div>
-          </div>
         </section>
 
         {/* FAQ Sections */}
@@ -409,7 +408,6 @@ export default function FAQPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Still Have Questions */}
@@ -477,7 +475,6 @@ export default function FAQPage() {
                 View Locations
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

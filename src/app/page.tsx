@@ -561,7 +561,6 @@ export default function HomePage() {
                 </Link>
               </ScrollReveal>
             </div>
-          </div>
         </section>
 
         {/* Stats Section with Animated NumberTicker */}
@@ -612,7 +611,6 @@ export default function HomePage() {
                 </div>
               </ScrollReveal>
             </div>
-          </div>
         </section>
 
         {/* Gallery Preview Section */}
@@ -693,7 +691,6 @@ export default function HomePage() {
                 />
               </ScrollReveal>
             </div>
-          </div>
         </section>
 
         {/* Video Section - Hibachi Experience - Lazy loaded for performance */}

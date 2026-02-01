@@ -107,7 +107,6 @@ export default function LunarNewYearPage() {
                 Reserve Lewisville
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Banner */}
@@ -326,7 +325,6 @@ export default function LunarNewYearPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -361,7 +359,6 @@ export default function LunarNewYearPage() {
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
               <Link href="/nearby/carrollton" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
-          </div>
         </section>
 
         {/* Gift Card CTA */}

@@ -187,7 +187,6 @@ export default function BirthdayPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Experience Section */}
@@ -239,7 +238,6 @@ export default function BirthdayPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Menu Preview */}
@@ -291,7 +289,6 @@ export default function BirthdayPage() {
                 </svg>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Reserve Section */}
@@ -351,7 +348,6 @@ export default function BirthdayPage() {
                 Catering Services
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

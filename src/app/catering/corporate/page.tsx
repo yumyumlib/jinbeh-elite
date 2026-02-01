@@ -239,7 +239,6 @@ export default function CorporateCateringPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Corporate Packages */}
@@ -305,7 +304,6 @@ export default function CorporateCateringPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Trust & Testimonial Section */}
@@ -357,7 +355,6 @@ export default function CorporateCateringPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -404,7 +401,6 @@ export default function CorporateCateringPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Contact/Inquiry Section */}
@@ -508,7 +504,6 @@ export default function CorporateCateringPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Internal Navigation Links */}
@@ -566,7 +561,6 @@ export default function CorporateCateringPage() {
                 <p className="text-charcoal/70 text-sm">Reserve at our Frisco location</p>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Final CTA */}
@@ -592,7 +586,6 @@ export default function CorporateCateringPage() {
                 Call Frisco: (214) 619-1200
               </a>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

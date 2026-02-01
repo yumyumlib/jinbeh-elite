@@ -129,7 +129,6 @@ export default function FriscoSpecialsPage() {
                 <p className="text-lg font-bold">See specials below</p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Main Specials */}
@@ -207,7 +206,6 @@ export default function FriscoSpecialsPage() {
                 {frisco.phone}
               </a>
             </div>
-          </div>
         </section>
 
         {/* Happy Hour Details */}
@@ -274,7 +272,6 @@ export default function FriscoSpecialsPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Lunch Details */}
@@ -361,7 +358,6 @@ export default function FriscoSpecialsPage() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Choose Frisco */}
@@ -396,7 +392,6 @@ export default function FriscoSpecialsPage() {
                 ))}
               </div>
             </div>
-          </div>
         </section>
 
         {/* Newsletter & Contact */}
@@ -452,7 +447,6 @@ export default function FriscoSpecialsPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Final CTA */}
@@ -478,7 +472,6 @@ export default function FriscoSpecialsPage() {
                 Full Frisco Details
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Back to Main Specials */}

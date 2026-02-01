@@ -173,7 +173,6 @@ export default function VistaRidgePage() {
                 View Menu
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -243,7 +242,6 @@ export default function VistaRidgePage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Nearby Attractions */}
@@ -275,7 +273,6 @@ export default function VistaRidgePage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* What We Offer */}
@@ -318,7 +315,6 @@ export default function VistaRidgePage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -341,7 +337,6 @@ export default function VistaRidgePage() {
                 ))}
               </div>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -409,7 +404,6 @@ export default function VistaRidgePage() {
                 <span className="font-medium text-charcoal text-sm">Catering</span>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Internal Links Section */}
@@ -436,7 +430,6 @@ export default function VistaRidgePage() {
                 <p className="text-charcoal/60 text-sm mt-2">Near Stonebriar</p>
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

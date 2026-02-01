@@ -187,7 +187,6 @@ export default function AppetizersFriscoPage() {
                 Reserve Your Table
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -324,7 +323,6 @@ export default function AppetizersFriscoPage() {
                 </div>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* CTA Section */}
@@ -352,7 +350,6 @@ export default function AppetizersFriscoPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* FAQ Section */}
@@ -430,7 +427,6 @@ export default function AppetizersFriscoPage() {
                 </details>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Other Categories */}
@@ -470,7 +466,6 @@ export default function AppetizersFriscoPage() {
                 <h3 className="font-heading font-bold text-charcoal">Cocktails & Sake</h3>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

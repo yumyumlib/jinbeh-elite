@@ -284,7 +284,6 @@ export default function FamilyGatheringsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Family-Friendly Features */}
@@ -317,7 +316,6 @@ export default function FamilyGatheringsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Why Families Love Jinbeh */}
@@ -350,7 +348,6 @@ export default function FamilyGatheringsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Menu Preview */}
@@ -410,7 +407,6 @@ export default function FamilyGatheringsPage() {
                 </svg>
               </Link>
             </div>
-          </div>
         </section>
 
         {/* The Family Experience */}
@@ -462,7 +458,6 @@ export default function FamilyGatheringsPage() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Reserve Section */}
@@ -523,7 +518,6 @@ export default function FamilyGatheringsPage() {
                 </div>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Other Celebrations */}
@@ -552,7 +546,6 @@ export default function FamilyGatheringsPage() {
                 All Celebrations
               </Link>
             </div>
-          </div>
         </section>
       </main>
       <Footer />

@@ -127,8 +127,6 @@ export default function JinbehPunchFriscoPage() {
                 $12.00
               </p>
             </div>
-          </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -314,7 +312,6 @@ export default function JinbehPunchFriscoPage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

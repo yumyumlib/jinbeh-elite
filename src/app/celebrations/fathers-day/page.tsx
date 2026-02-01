@@ -107,7 +107,6 @@ export default function FathersDayPage() {
                 Reserve Lewisville
               </Link>
             </div>
-          </div>
         </section>
 
         {/* Urgency Banner */}
@@ -322,7 +321,6 @@ export default function FathersDayPage() {
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -357,7 +355,6 @@ export default function FathersDayPage() {
               <Link href="/gift-cards" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
             </div>
-          </div>
         </section>
 
         {/* Gift Card Suggestion */}

@@ -135,7 +135,6 @@ export default function SpiderRollLewisvillePage() {
                 $15.95
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -334,7 +333,6 @@ export default function SpiderRollLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

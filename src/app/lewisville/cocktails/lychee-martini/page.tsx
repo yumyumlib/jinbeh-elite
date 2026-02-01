@@ -127,7 +127,6 @@ export default function LycheeMartiniLewisvillePage() {
                 $13.00
               </p>
             </div>
-          </div>
         </section>
 
         {/* Main Content */}
@@ -313,7 +312,6 @@ export default function LycheeMartiniLewisvillePage() {
               </div>
 
             </div>
-          </div>
         </section>
 
         {/* Cross-Location Link */}

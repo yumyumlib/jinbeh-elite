@@ -238,7 +238,6 @@ export default function FriscoMenuPage() {
                 </a>
               ))}
             </div>
-          </div>
         </section>
 
         {/* Menu Categories */}
@@ -337,7 +336,6 @@ export default function FriscoMenuPage() {
                 Order on UberEats
               </a>
             </div>
-          </div>
         </section>
 
         {/* Reserve CTA */}
