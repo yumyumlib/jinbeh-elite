@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Japanese Cocktails: Art, Recipes & Mixology Guide",
         description: "Master the art of Japanese cocktails. Learn recipes, techniques, and traditions from expert mixologists.",
-        images: ["/images/drinks/SpicyMargaritaBeverageDrink.jpg"],
+        images: ["/images/beverages/JinbehPunch.jpg"],
     },
 };
 
@@ -30,7 +30,7 @@ export default function JapaneseCocktails() {
         <main className="min-h-screen bg-warm-ivory">
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/drinks/JinbehPunchBeverageDrink.jpg" alt="Japanese cocktails with artistic presentation" fill className="object-cover" priority />
+                <Image src="/images/beverages/JinbehPunch.jpg" alt="Japanese cocktails with artistic presentation" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sake Taste & Flavor Profile | Complete Guide",
         description: "Discover the complex flavors of sake with our comprehensive tasting guide.",
-        images: ["/images/blog/10-C060324-6501.jpg"],
+        images: ["/images/beverages/JinbehPunch.jpg"],
     },
 };
 
@@ -28,7 +28,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Sake Taste: Explore its Complex Flavors",
     description: "Comprehensive guide to understanding sake taste, flavor profiles, and tasting techniques.",
-    image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
+    image: "https://jinbeh.com/images/beverages/JinbehPunch.jpg",
     datePublished: "2026-01-30",
     dateModified: "2026-01-30",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },

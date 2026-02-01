@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sake Sushi Menu Pairings | Perfect Combinations",
         description: "Master the art of sake and sushi pairings with expert recommendations.",
-        images: ["/images/blog/10-C060324-6501.jpg"],
+        images: ["/images/beverages/JinbehCocktail.jpg"],
     },
 };
 
@@ -27,7 +27,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Sake Sushi Menu Guide: Perfect Pairings Explored",
     description: "Complete guide to pairing sake with sushi for an enhanced dining experience.",
-    image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
+    image: "https://jinbeh.com/images/beverages/JinbehCocktail.jpg",
     datePublished: "2026-01-30",
     dateModified: "2026-01-30",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },

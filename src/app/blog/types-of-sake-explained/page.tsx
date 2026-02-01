@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Complete Guide to Types of Sake: From Junmai to Daiginjo",
         description: "Discover the different kinds of sake and what makes each variety unique. Expert guide to sake selection.",
-        images: ["/images/drinks/MangoTangoDrinks.png"],
+        images: ["/images/beverages/LewisvilleBar.jpg"],
     },
 };
 
@@ -31,7 +31,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Types of Sake Explained: Junmai vs Daiginjo & Complete Sake Varieties Guide",
     description: "Learn about different kinds of sake, their characteristics, and how to choose the right variety for your preferences.",
-    image: "https://jinbeh.com/images/blog/types-of-sake-hero.jpg",
+    image: "https://jinbeh.com/images/beverages/LewisvilleBar.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-01-29",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -93,7 +93,7 @@ export default function TypesOfSakeExplained() {
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden bg-gradient-to-b from-charcoal to-charcoal/80">
                 <div className="absolute inset-0 opacity-40" style={{
-                    backgroundImage: "url('/images/blog/types-of-sake-bg.jpg')",
+                    backgroundImage: "url('/images/beverages/LewisvilleBar.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center"
                 }} />

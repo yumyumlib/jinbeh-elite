@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Ramune Soda: Unique Flavors & Marble Magic Guide",
         description: "Experience Ramune soda. Learn about flavors, the iconic marble seal, and where to find it.",
-        images: ["/images/drinks/MangoTangoDrinks.png"],
+        images: ["/images/beverages/RamuneSoda.webp"],
     },
 };
 
@@ -39,7 +39,7 @@ export default function RamuneSodaGuide() {
         <main className="min-h-screen bg-warm-ivory">
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/drinks/MangoTangoDrinks.png" alt="Ramune soda bottles with iconic marble seal" fill className="object-cover" priority />
+                <Image src="/images/beverages/RamuneSoda.webp" alt="Ramune soda bottles with iconic marble seal" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
