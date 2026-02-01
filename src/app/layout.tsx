@@ -5,7 +5,7 @@ import MobileStickyCTA from "@/components/MobileStickyCTA";
 export const metadata: Metadata = {
   metadataBase: new URL("https://jinbeh.com"),
   title: {
-    default: "Jinbeh Japanese Restaurant | Hibachi & Sushi | Frisco TX",
+    default: "Jinbeh | Japanese Hibachi & Sushi | Frisco & Lewisville TX",
     template: "%s | Jinbeh Japanese Restaurant",
   },
   description:

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Jinbeh | Family-Owned Japanese Since 1988",
+    absolute: "About Jinbeh | Family-Owned Since 1988 | Frisco & Lewisville",
   },
   description:
     "Discover the Jinbeh story. Family-owned hibachi and sushi restaurant in Frisco & Lewisville TX since 1988. 37+ years of tradition and hospitality.",
