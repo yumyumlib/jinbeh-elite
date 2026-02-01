@@ -254,6 +254,7 @@ export default function PartyCateringPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Party Catering Options */}
@@ -308,6 +309,7 @@ export default function PartyCateringPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* How It Works */}
@@ -363,6 +365,7 @@ export default function PartyCateringPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Party Planning Tips */}
@@ -419,6 +422,7 @@ export default function PartyCateringPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Contact Section */}
@@ -517,6 +521,7 @@ export default function PartyCateringPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Related Catering Services */}
@@ -545,6 +550,7 @@ export default function PartyCateringPage() {
                 Wedding Catering
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

@@ -127,6 +127,7 @@ export default function TokyoMuleFriscoPage() {
                 $14.00
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -312,6 +313,7 @@ export default function TokyoMuleFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

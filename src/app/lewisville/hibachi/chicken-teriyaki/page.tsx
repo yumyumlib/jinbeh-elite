@@ -135,6 +135,7 @@ export default function ChickenTeriyakiLewisvillePage() {
                 $24.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -337,6 +338,7 @@ export default function ChickenTeriyakiLewisvillePage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

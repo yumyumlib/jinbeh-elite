@@ -172,6 +172,7 @@ export default function CastleHillsPage() {
                 View Menu
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Lewisville Section */}
@@ -251,6 +252,7 @@ export default function CastleHillsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Nearby Attractions */}
@@ -282,6 +284,7 @@ export default function CastleHillsPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* What We Offer */}
@@ -324,6 +327,7 @@ export default function CastleHillsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -346,6 +350,7 @@ export default function CastleHillsPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -413,6 +418,7 @@ export default function CastleHillsPage() {
                 <span className="font-medium text-charcoal text-sm">Catering</span>
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

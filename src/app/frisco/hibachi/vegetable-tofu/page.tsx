@@ -135,6 +135,7 @@ export default function VegetableTofuFriscoPage() {
                 $19.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -337,6 +338,7 @@ export default function VegetableTofuFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

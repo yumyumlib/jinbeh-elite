@@ -127,6 +127,7 @@ export default function TunaTartareFriscoPage() {
                 $15.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -312,6 +313,7 @@ export default function TunaTartareFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

@@ -107,6 +107,7 @@ export default function AsianRestaurantMonthPage() {
                 Reserve Lewisville
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Banner */}
@@ -362,6 +363,7 @@ export default function AsianRestaurantMonthPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -396,6 +398,7 @@ export default function AsianRestaurantMonthPage() {
               <Link href="/gift-cards" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/blog" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Blog</Link>
             </div>
+          </div>
         </section>
 
         {/* Leave a Review CTA */}
@@ -425,6 +428,7 @@ export default function AsianRestaurantMonthPage() {
                 Review Lewisville on Google
               </a>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

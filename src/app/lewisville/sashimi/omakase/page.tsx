@@ -135,6 +135,7 @@ export default function OmakaseLewisvillePage() {
                 Market
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -333,6 +334,7 @@ export default function OmakaseLewisvillePage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

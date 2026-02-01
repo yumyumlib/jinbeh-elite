@@ -343,6 +343,7 @@ export default function EventsPage() {
                 </Link>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Private Dining Rooms */}
@@ -495,6 +496,7 @@ export default function EventsPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Event Packages */}
@@ -570,6 +572,7 @@ export default function EventsPage() {
                 Request a Custom Quote →
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Catering Section */}
@@ -659,6 +662,7 @@ export default function EventsPage() {
                 />
               </div>
             </div>
+          </div>
         </section>
 
         {/* Event Gallery */}
@@ -696,6 +700,7 @@ export default function EventsPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Testimonials */}
@@ -743,6 +748,7 @@ export default function EventsPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Event Inquiry Form Section */}
@@ -852,6 +858,7 @@ export default function EventsPage() {
                 </p>
               </form>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -902,6 +909,7 @@ export default function EventsPage() {
                 Contact Our Events Team →
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Final CTA */}
@@ -927,6 +935,7 @@ export default function EventsPage() {
                 Call Lewisville (972) 221-3888
               </a>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

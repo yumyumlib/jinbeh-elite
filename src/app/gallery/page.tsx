@@ -444,6 +444,7 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Photo Description Section */}
@@ -521,6 +522,7 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -579,6 +581,7 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

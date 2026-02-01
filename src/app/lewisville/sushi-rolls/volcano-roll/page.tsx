@@ -135,6 +135,7 @@ export default function VolcanoRollLewisvillePage() {
                 $16.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -333,6 +334,7 @@ export default function VolcanoRollLewisvillePage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

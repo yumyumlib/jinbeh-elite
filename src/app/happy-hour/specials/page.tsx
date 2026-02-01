@@ -260,6 +260,7 @@ export default function HappyHourSpecialsPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* Featured Specials */}
@@ -306,6 +307,7 @@ export default function HappyHourSpecialsPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Drink Menu */}
@@ -340,6 +342,7 @@ export default function HappyHourSpecialsPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Why Happy Hour */}
@@ -368,6 +371,7 @@ export default function HappyHourSpecialsPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Atmosphere & Experience */}
@@ -427,6 +431,7 @@ export default function HappyHourSpecialsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Location Details */}
@@ -540,6 +545,7 @@ export default function HappyHourSpecialsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA */}
@@ -566,6 +572,7 @@ export default function HappyHourSpecialsPage() {
                 Contact Us
               </Link>
             </div>
+          </div>
         </section>
 
         {/* More Ways to Enjoy */}
@@ -593,6 +600,7 @@ export default function HappyHourSpecialsPage() {
                 </Link>
               ))}
             </div>
+          </div>
         </section>
       </main>
       <Footer />

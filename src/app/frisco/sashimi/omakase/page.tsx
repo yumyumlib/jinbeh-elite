@@ -135,6 +135,7 @@ export default function OmakaseFriscoPage() {
                 Market
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -333,6 +334,7 @@ export default function OmakaseFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

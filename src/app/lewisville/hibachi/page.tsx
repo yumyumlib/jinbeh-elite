@@ -267,6 +267,7 @@ export default function HibachiLewisvillePage() {
                 Reserve Your Table
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -563,6 +564,7 @@ export default function HibachiLewisvillePage() {
                 </div>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -590,6 +592,7 @@ export default function HibachiLewisvillePage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -667,6 +670,7 @@ export default function HibachiLewisvillePage() {
                 </details>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Other Categories */}
@@ -706,6 +710,7 @@ export default function HibachiLewisvillePage() {
                 <h3 className="font-heading font-bold text-charcoal">Cocktails & Sake</h3>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

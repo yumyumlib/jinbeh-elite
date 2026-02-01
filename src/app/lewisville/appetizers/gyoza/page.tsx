@@ -127,6 +127,7 @@ export default function GyozaLewisvillePage() {
                 $8.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -312,6 +313,7 @@ export default function GyozaLewisvillePage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

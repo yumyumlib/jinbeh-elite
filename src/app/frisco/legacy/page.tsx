@@ -173,6 +173,7 @@ export default function LegacyPage() {
                 View Menu
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -243,6 +244,7 @@ export default function LegacyPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Nearby Attractions */}
@@ -274,6 +276,7 @@ export default function LegacyPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* What We Offer */}
@@ -316,6 +319,7 @@ export default function LegacyPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -338,6 +342,7 @@ export default function LegacyPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -412,6 +417,7 @@ export default function LegacyPage() {
                 <span className="font-medium text-charcoal text-sm">Catering</span>
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

@@ -5,6 +5,8 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Note: Metadata is defined at the bottom after the component for proper export
+
 // JSON-LD Schema for Restaurant and Menu
 const restaurantSchema = {
     "@context": "https://schema.org",

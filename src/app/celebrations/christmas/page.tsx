@@ -107,6 +107,7 @@ export default function ChristmasPage() {
                 Reserve Lewisville
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Banner */}
@@ -301,6 +302,7 @@ export default function ChristmasPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -335,6 +337,7 @@ export default function ChristmasPage() {
               <Link href="/nearby/mckinney" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near McKinney</Link>
               <Link href="/nearby/the-colony" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near The Colony</Link>
             </div>
+          </div>
         </section>
 
         {/* Gift Card CTA */}

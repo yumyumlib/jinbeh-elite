@@ -290,6 +290,7 @@ export default function GraduationPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Graduation Packages */}
@@ -362,6 +363,7 @@ export default function GraduationPage() {
                 Frisco: (214) 619-1200 • Lewisville: (214) 488-2224
               </p>
             </div>
+          </div>
         </section>
 
         {/* Graduation Party Planning */}
@@ -409,6 +411,7 @@ export default function GraduationPage() {
                 </li>
               </ul>
             </div>
+          </div>
         </section>
 
         {/* What's Included Section */}
@@ -480,6 +483,7 @@ export default function GraduationPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Menu Highlights */}
@@ -539,6 +543,7 @@ export default function GraduationPage() {
                 </svg>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Catering & Group Options */}
@@ -626,6 +631,7 @@ export default function GraduationPage() {
                 <div className="absolute -bottom-6 -right-6 -z-10 w-full h-full rounded-2xl bg-accent-red/10" />
               </div>
             </div>
+          </div>
         </section>
 
         {/* Reserve Section */}
@@ -673,6 +679,7 @@ export default function GraduationPage() {
                 Parties of 20+ recommended for direct call to ensure perfect seating arrangements
               </p>
             </div>
+          </div>
         </section>
 
         {/* Other Celebrations & Links */}
@@ -771,6 +778,7 @@ export default function GraduationPage() {
                 </p>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* FAQ Preview */}
@@ -816,6 +824,7 @@ export default function GraduationPage() {
                 Have other questions? <Link href="/contact" className="text-accent-red hover:underline font-medium">Contact us</Link> or call us directly!
               </p>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

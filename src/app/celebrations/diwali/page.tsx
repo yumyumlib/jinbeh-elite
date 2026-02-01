@@ -107,6 +107,7 @@ export default function DiwaliPage() {
                 Reserve Lewisville
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Banner */}
@@ -302,6 +303,7 @@ export default function DiwaliPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -336,6 +338,7 @@ export default function DiwaliPage() {
               <Link href="/nearby/flower-mound" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Flower Mound</Link>
               <Link href="/nearby/highland-village" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Highland Village</Link>
             </div>
+          </div>
         </section>
 
         {/* Gift Card CTA */}

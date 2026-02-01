@@ -135,6 +135,7 @@ export default function VolcanoRollFriscoPage() {
                 $16.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -333,6 +334,7 @@ export default function VolcanoRollFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

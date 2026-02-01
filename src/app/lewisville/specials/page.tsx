@@ -129,6 +129,7 @@ export default function LewisvilleSpecialsPage() {
                 <p className="text-lg font-bold">See specials below</p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Main Specials */}
@@ -206,6 +207,7 @@ export default function LewisvilleSpecialsPage() {
                 {lewisville.phone}
               </a>
             </div>
+          </div>
         </section>
 
         {/* Happy Hour Details */}
@@ -272,6 +274,7 @@ export default function LewisvilleSpecialsPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Lunch Details */}
@@ -358,6 +361,7 @@ export default function LewisvilleSpecialsPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Why Choose Lewisville */}
@@ -392,6 +396,7 @@ export default function LewisvilleSpecialsPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* Newsletter & Contact */}
@@ -447,6 +452,7 @@ export default function LewisvilleSpecialsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Final CTA */}
@@ -472,6 +478,7 @@ export default function LewisvilleSpecialsPage() {
                 Full Lewisville Details
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Back to Main Specials */}

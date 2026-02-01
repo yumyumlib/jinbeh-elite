@@ -195,6 +195,7 @@ export default function TeamBuildingPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Why Hibachi Works */}
@@ -246,6 +247,7 @@ export default function TeamBuildingPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* What's Included */}
@@ -327,6 +329,7 @@ export default function TeamBuildingPage() {
                 </ul>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Reserve Section */}
@@ -384,6 +387,7 @@ export default function TeamBuildingPage() {
                 Corporate Catering
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

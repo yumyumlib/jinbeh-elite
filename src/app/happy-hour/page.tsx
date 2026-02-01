@@ -129,6 +129,7 @@ export default function HappyHourPage() {
                 Monday – Friday • Check with location for times
               </p>
             </div>
+          </div>
         </section>
 
         {/* Drink Categories */}
@@ -170,6 +171,7 @@ export default function HappyHourPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Locations */}
@@ -251,6 +253,7 @@ export default function HappyHourPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Bar Atmosphere */}
@@ -307,6 +310,7 @@ export default function HappyHourPage() {
                 <div className="absolute -bottom-4 -right-4 -z-10 w-full h-full rounded-2xl bg-soft-gold/20" />
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA */}
@@ -333,6 +337,7 @@ export default function HappyHourPage() {
                 Lewisville Location
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

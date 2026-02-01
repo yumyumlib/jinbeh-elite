@@ -173,6 +173,7 @@ export default function StonebriarPage() {
                 View Menu
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -242,6 +243,7 @@ export default function StonebriarPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Nearby Attractions */}
@@ -273,6 +275,7 @@ export default function StonebriarPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* What We Offer */}
@@ -315,6 +318,7 @@ export default function StonebriarPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -337,6 +341,7 @@ export default function StonebriarPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -404,6 +409,7 @@ export default function StonebriarPage() {
                 <span className="font-medium text-charcoal text-sm">Catering</span>
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

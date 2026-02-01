@@ -203,6 +203,7 @@ export default function AllenNearbyPage() {
                 Call {friscoLocation.phone}
               </a>
             </div>
+          </div>
         </section>
 
         {/* Distance & Directions Section */}
@@ -222,6 +223,7 @@ export default function AllenNearbyPage() {
                 <p className="text-lg text-white/90">Frisco & Lewisville</p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -291,6 +293,7 @@ export default function AllenNearbyPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Nearby Attractions Section */}
@@ -356,6 +359,7 @@ export default function AllenNearbyPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Locations Section */}
@@ -503,6 +507,7 @@ export default function AllenNearbyPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* What We Offer Section */}
@@ -556,6 +561,7 @@ export default function AllenNearbyPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -652,6 +658,7 @@ export default function AllenNearbyPage() {
                 </p>
               </details>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -681,6 +688,7 @@ export default function AllenNearbyPage() {
                 Reserve at Lewisville
               </a>
             </div>
+          </div>
         </section>
 
         {/* Quick Links */}
@@ -719,6 +727,7 @@ export default function AllenNearbyPage() {
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Sticky Mobile CTA */}

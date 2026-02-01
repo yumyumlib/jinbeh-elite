@@ -135,6 +135,7 @@ export default function ComboSteakLobsterFriscoPage() {
                 $54.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -337,6 +338,7 @@ export default function ComboSteakLobsterFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

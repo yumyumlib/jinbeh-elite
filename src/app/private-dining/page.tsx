@@ -355,6 +355,7 @@ export default function PrivateDiningPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Amenities & Features */}
@@ -382,6 +383,7 @@ export default function PrivateDiningPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Locations Section */}
@@ -472,6 +474,7 @@ export default function PrivateDiningPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Booking Process Section */}
@@ -507,6 +510,7 @@ export default function PrivateDiningPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* Why Choose Jinbeh */}
@@ -612,6 +616,7 @@ export default function PrivateDiningPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -671,6 +676,7 @@ export default function PrivateDiningPage() {
                 Visit Our Locations
               </Link>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -723,6 +729,7 @@ export default function PrivateDiningPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
       </main>
       <Footer />

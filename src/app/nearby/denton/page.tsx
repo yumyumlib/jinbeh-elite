@@ -203,6 +203,7 @@ export default function DentonNearbyPage() {
                 Call {lewisvilleLocation.phone}
               </a>
             </div>
+          </div>
         </section>
 
         {/* Distance & Directions Section */}
@@ -222,6 +223,7 @@ export default function DentonNearbyPage() {
                 <p className="text-lg text-white/90">Lewisville & Frisco</p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -291,6 +293,7 @@ export default function DentonNearbyPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Locations Section */}
@@ -438,6 +441,7 @@ export default function DentonNearbyPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* What We Offer Section */}
@@ -491,6 +495,7 @@ export default function DentonNearbyPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -575,6 +580,7 @@ export default function DentonNearbyPage() {
                 </p>
               </details>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -604,6 +610,7 @@ export default function DentonNearbyPage() {
                 Reserve at Frisco
               </a>
             </div>
+          </div>
         </section>
 
         {/* Quick Links */}
@@ -642,6 +649,7 @@ export default function DentonNearbyPage() {
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Sticky Mobile CTA */}

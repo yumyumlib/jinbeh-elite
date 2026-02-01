@@ -273,6 +273,7 @@ export default function CelebrationsPage() {
                 Reserve Lewisville
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Holiday Celebrations Section */}
@@ -310,6 +311,7 @@ export default function CelebrationsPage() {
                 </Link>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Personal Celebrations */}
@@ -356,6 +358,7 @@ export default function CelebrationsPage() {
                 </Link>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Cultural & Specialty Events */}
@@ -390,6 +393,7 @@ export default function CelebrationsPage() {
                 </Link>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Group Events */}
@@ -421,6 +425,7 @@ export default function CelebrationsPage() {
                 </Link>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Why Celebrate at Jinbeh */}
@@ -499,6 +504,7 @@ export default function CelebrationsPage() {
                 <div className="absolute -bottom-6 -left-6 -z-10 w-full h-full rounded-2xl bg-accent-red/10" />
               </div>
             </div>
+          </div>
         </section>
 
         {/* Locations Quick Links */}
@@ -539,6 +545,7 @@ export default function CelebrationsPage() {
                 </div>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Reserve CTA */}
@@ -626,6 +633,7 @@ export default function CelebrationsPage() {
                 Near Flower Mound
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

@@ -187,6 +187,7 @@ export default function AppetizersLewisvillePage() {
                 Reserve Your Table
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -323,6 +324,7 @@ export default function AppetizersLewisvillePage() {
                 </div>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -350,6 +352,7 @@ export default function AppetizersLewisvillePage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -427,6 +430,7 @@ export default function AppetizersLewisvillePage() {
                 </details>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Other Categories */}
@@ -466,6 +470,7 @@ export default function AppetizersLewisvillePage() {
                 <h3 className="font-heading font-bold text-charcoal">Cocktails & Sake</h3>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

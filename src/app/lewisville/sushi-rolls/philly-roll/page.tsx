@@ -135,6 +135,7 @@ export default function PhillyRollLewisvillePage() {
                 $12.95
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -333,6 +334,7 @@ export default function PhillyRollLewisvillePage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

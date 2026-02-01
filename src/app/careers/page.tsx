@@ -401,6 +401,7 @@ export default function CareersPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Culture Section */}
@@ -442,6 +443,7 @@ export default function CareersPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Open Positions Section */}
@@ -531,6 +533,7 @@ export default function CareersPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* How to Apply Section */}
@@ -642,6 +645,7 @@ export default function CareersPage() {
                 </li>
               </ul>
             </div>
+          </div>
         </section>
 
         {/* FAQs Section */}
@@ -684,6 +688,7 @@ export default function CareersPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Still Have Questions */}
@@ -751,6 +756,7 @@ export default function CareersPage() {
                 Learn Our Story
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

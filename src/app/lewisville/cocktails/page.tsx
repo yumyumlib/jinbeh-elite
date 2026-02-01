@@ -177,6 +177,7 @@ export default function CocktailsLewisvillePage() {
                 Reserve Your Table
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -293,6 +294,7 @@ export default function CocktailsLewisvillePage() {
                 </div>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -320,6 +322,7 @@ export default function CocktailsLewisvillePage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -397,6 +400,7 @@ export default function CocktailsLewisvillePage() {
                 </details>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Other Categories */}
@@ -436,6 +440,7 @@ export default function CocktailsLewisvillePage() {
                 <h3 className="font-heading font-bold text-charcoal">Appetizers</h3>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

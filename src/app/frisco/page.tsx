@@ -200,6 +200,7 @@ export default function FriscoPage() {
                 Call {location.phone}
               </a>
             </div>
+          </div>
         </section>
 
         {/* Trust Signals Bar */}
@@ -274,6 +275,7 @@ export default function FriscoPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Info Section */}
@@ -394,6 +396,7 @@ export default function FriscoPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Hours Section */}
@@ -437,6 +440,7 @@ export default function FriscoPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Experience Section */}
@@ -500,6 +504,7 @@ export default function FriscoPage() {
                 Explore Our Full Menu
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Photo Gallery */}
@@ -607,6 +612,7 @@ export default function FriscoPage() {
                 </svg>
               </a>
             </div>
+          </div>
         </section>
 
         {/* Popular Celebrations at Frisco */}
@@ -678,6 +684,7 @@ export default function FriscoPage() {
                 <span className="text-xs text-accent-red font-medium">All Events</span>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Quick Links */}
@@ -726,6 +733,7 @@ export default function FriscoPage() {
               <Link href="/nearby/mckinney" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near McKinney</Link>
               <Link href="/nearby/allen" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Allen</Link>
             </div>
+          </div>
         </section>
 
         {/* Related Blog Posts */}

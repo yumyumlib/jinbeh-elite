@@ -174,6 +174,7 @@ export default function StarwoodPage() {
                 View Menu
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -244,6 +245,7 @@ export default function StarwoodPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Nearby Attractions */}
@@ -275,6 +277,7 @@ export default function StarwoodPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* What We Offer */}
@@ -317,6 +320,7 @@ export default function StarwoodPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -339,6 +343,7 @@ export default function StarwoodPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -406,6 +411,7 @@ export default function StarwoodPage() {
                 <span className="font-medium text-charcoal text-sm">Catering</span>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Additional Links Section */}
@@ -437,6 +443,7 @@ export default function StarwoodPage() {
                 <span className="font-medium text-charcoal">Lewisville</span>
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

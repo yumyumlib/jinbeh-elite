@@ -203,6 +203,7 @@ export default function CoppellNearbyPage() {
                 Call {friscoLocation.phone}
               </a>
             </div>
+          </div>
         </section>
 
         {/* Distance & Directions Section */}
@@ -222,6 +223,7 @@ export default function CoppellNearbyPage() {
                 <p className="text-lg text-white/90">Frisco & Lewisville</p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Why Jinbeh Section */}
@@ -291,6 +293,7 @@ export default function CoppellNearbyPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Locations Section */}
@@ -438,6 +441,7 @@ export default function CoppellNearbyPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* What We Offer Section */}
@@ -491,6 +495,7 @@ export default function CoppellNearbyPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -575,6 +580,7 @@ export default function CoppellNearbyPage() {
                 </p>
               </details>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -604,6 +610,7 @@ export default function CoppellNearbyPage() {
                 Reserve at Lewisville
               </a>
             </div>
+          </div>
         </section>
 
         {/* Quick Links */}
@@ -642,6 +649,7 @@ export default function CoppellNearbyPage() {
                 <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Sticky Mobile CTA */}

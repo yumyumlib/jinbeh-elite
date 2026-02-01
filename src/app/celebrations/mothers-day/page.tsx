@@ -107,6 +107,7 @@ export default function MothersDayPage() {
                 Reserve Lewisville
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Urgency Banner */}
@@ -294,6 +295,7 @@ export default function MothersDayPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Related Celebrations - SEO Internal Linking */}
@@ -328,6 +330,7 @@ export default function MothersDayPage() {
               <Link href="/gift-cards" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/nearby/mckinney" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near McKinney</Link>
             </div>
+          </div>
         </section>
 
         {/* Gift Card Suggestion */}

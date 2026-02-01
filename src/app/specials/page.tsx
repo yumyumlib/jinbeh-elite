@@ -203,6 +203,7 @@ export default function SpecialsPage() {
             <div className="inline-block bg-accent-red text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl">
               Save Big Every Day
             </div>
+          </div>
         </section>
 
         {/* Quick Navigation to Specials */}
@@ -230,6 +231,7 @@ export default function SpecialsPage() {
                 </a>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Happy Hour Section */}
@@ -301,6 +303,7 @@ export default function SpecialsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Lunch Specials Section */}
@@ -348,6 +351,7 @@ export default function SpecialsPage() {
                 View Full Lunch Menu →
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Weekly Specials Section */}
@@ -409,6 +413,7 @@ export default function SpecialsPage() {
                 </Link>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Seasonal/Holiday Specials */}
@@ -465,6 +470,7 @@ export default function SpecialsPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Newsletter Signup Section */}
@@ -495,6 +501,7 @@ export default function SpecialsPage() {
                 We respect your privacy. Unsubscribe at any time.
               </p>
             </div>
+          </div>
         </section>
 
         {/* Location Links */}
@@ -566,6 +573,7 @@ export default function SpecialsPage() {
                 </div>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Final CTA */}
@@ -591,6 +599,7 @@ export default function SpecialsPage() {
                 Call Lewisville
               </a>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

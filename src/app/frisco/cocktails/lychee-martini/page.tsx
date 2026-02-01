@@ -127,6 +127,7 @@ export default function LycheeMartiniFriscoPage() {
                 $13.00
               </p>
             </div>
+          </div>
         </section>
 
         {/* Main Content */}
@@ -312,6 +313,7 @@ export default function LycheeMartiniFriscoPage() {
               </div>
 
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

@@ -197,6 +197,7 @@ export default function SashimiFriscoPage() {
                 Reserve Your Table
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Menu Items Grid */}
@@ -353,6 +354,7 @@ export default function SashimiFriscoPage() {
                 </div>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -380,6 +382,7 @@ export default function SashimiFriscoPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -457,6 +460,7 @@ export default function SashimiFriscoPage() {
                 </details>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Other Categories */}
@@ -496,6 +500,7 @@ export default function SashimiFriscoPage() {
                 <h3 className="font-heading font-bold text-charcoal">Cocktails & Sake</h3>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Cross-Location Link */}

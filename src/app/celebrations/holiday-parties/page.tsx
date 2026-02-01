@@ -195,6 +195,7 @@ export default function HolidayPartiesPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* Holiday Options */}
@@ -261,6 +262,7 @@ export default function HolidayPartiesPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Holiday Menu Preview */}
@@ -327,6 +329,7 @@ export default function HolidayPartiesPage() {
                 </svg>
               </Link>
             </div>
+          </div>
         </section>
 
         {/* Reserve Section */}
@@ -386,6 +389,7 @@ export default function HolidayPartiesPage() {
                 Catering Services
               </Link>
             </div>
+          </div>
         </section>
       </main>
       <Footer />

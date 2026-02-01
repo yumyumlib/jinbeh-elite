@@ -216,6 +216,7 @@ export default function DeliveryPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Delivery Coverage Areas */}
@@ -280,6 +281,7 @@ export default function DeliveryPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Menu Highlights for Delivery */}
@@ -373,6 +375,7 @@ export default function DeliveryPage() {
                 </a>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Why Choose Jinbeh Delivery */}
@@ -444,6 +447,7 @@ export default function DeliveryPage() {
                 </p>
               </div>
             </div>
+          </div>
         </section>
 
         {/* Delivery FAQs */}
@@ -511,6 +515,7 @@ export default function DeliveryPage() {
                 ))}
               </div>
             </div>
+          </div>
         </section>
 
         {/* How It Works */}
@@ -566,6 +571,7 @@ export default function DeliveryPage() {
                 </div>
               ))}
             </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -603,6 +609,7 @@ export default function DeliveryPage() {
                 Order on Grubhub
               </a>
             </div>
+          </div>
         </section>
 
         {/* Contact Info */}
@@ -646,6 +653,7 @@ export default function DeliveryPage() {
                 </div>
               </div>
             </div>
+          </div>
         </section>
       </main>
       <Footer />
