@@ -92,6 +92,12 @@ const galleryImages: GalleryImage[] = [
     title: "Steak Preparation",
   },
   {
+    src: "/images/photoshoot/hibachi-flame-action.jpg",
+    alt: "Hibachi chef creating dramatic flames with onion volcano and fresh ingredients",
+    category: "Hibachi Action",
+    title: "Flame Show",
+  },
+  {
     src: "/images/photoshoot/hibachi-chicken.jpg",
     alt: "Hibachi chef grilling tender chicken with expert technique",
     category: "Hibachi Action",

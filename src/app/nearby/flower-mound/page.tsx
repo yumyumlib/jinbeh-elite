@@ -174,7 +174,7 @@ export default function FlowerMoundNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/food/JinbehFriscoStorefrontSign.jpg')",
+              backgroundImage: "url('/images/lewisville/IMG_1975.jpg')",
             }}
           />
           <div className="hero-overlay" />

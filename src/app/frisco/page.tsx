@@ -13,7 +13,7 @@ const galleryItems = [
   { src: "/images/food/OnionVolcanoDemo.jpg", alt: "Onion volcano hibachi show", caption: "Famous Onion Volcano" },
   { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll closeup", caption: "Signature Samurai Roll" },
   { src: "/images/frisco/JinbehFriscoTables.jpg", alt: "Jinbeh Frisco dining area", caption: "Elegant Dining Space" },
-  { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo", caption: "Hibachi NY Strip & Shrimp" },
+  { src: "/images/interior/FriscoLocation_Bar_Front.jpg", alt: "Frisco bar interior", caption: "Frisco Bar Front" },
   { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi and desserts", caption: "Fresh Daily Selection" },
 ];
 

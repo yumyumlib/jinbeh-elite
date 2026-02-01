@@ -174,7 +174,7 @@ export default function CarrolltonNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/food/JinbehFriscoStorefrontSign.jpg')",
+              backgroundImage: "url('/images/catalog/22-C060324-6829.jpg')",
             }}
           />
           <div className="hero-overlay" />

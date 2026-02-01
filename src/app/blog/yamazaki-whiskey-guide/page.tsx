@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Find Yamazaki Whiskey Nearby: Complete Buying Guide",
         description: "Your guide to finding Yamazaki whiskey. Learn where to buy, tasting notes, and visit Jinbeh.",
-        images: ["/images/drinks/cocktail.jpg"],
+        images: ["/images/catalog/8-C060324-6462.jpg"],
     },
 };
 
@@ -31,7 +31,7 @@ export default function YamazakiWhiskeyGuide() {
         <main className="min-h-screen bg-warm-ivory">
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/drinks/cocktail.jpg" alt="Yamazaki whiskey bottle elegant presentation" fill className="object-cover" priority />
+                <Image src="/images/catalog/8-C060324-6462.jpg" alt="Yamazaki whiskey bottle elegant presentation" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

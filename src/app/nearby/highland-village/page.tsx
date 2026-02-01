@@ -174,7 +174,7 @@ export default function HighlandVillageNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/food/JinbehFriscoStorefrontSign.jpg')",
+              backgroundImage: "url('/images/interior/FriscoLocation_Bar_Front.jpg')",
             }}
           />
           <div className="hero-overlay" />

@@ -174,7 +174,7 @@ export default function RichardsonNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/food/JinbehFriscoStorefrontSign.jpg')",
+              backgroundImage: "url('/images/catalog/27-C060324-6888.jpg')",
             }}
           />
           <div className="hero-overlay" />

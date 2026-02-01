@@ -174,7 +174,7 @@ export default function CoppellNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/food/JinbehFriscoStorefrontSign.jpg')",
+              backgroundImage: "url('/images/lewisville/IMG_2081.jpg')",
             }}
           />
           <div className="hero-overlay" />

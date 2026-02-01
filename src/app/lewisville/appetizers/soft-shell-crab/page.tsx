@@ -110,7 +110,7 @@ export default function SoftShellCrabLewisvillePage() {
 
         {/* Hero Section */}
         <section className="relative py-16 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/photoshoot/appetizers-spread.jpg')" }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/catalog/FB-LEW-Specialty-Flaming-Seafood-Shell.jpg')" }} />
           <div className="absolute inset-0 bg-charcoal/80" />
           <div className="relative z-10 container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">

@@ -140,7 +140,7 @@ const eventTypes = [
   {
     title: "Team Building",
     description: "Interactive hibachi experiences that bring teams together and build camaraderie.",
-    image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
+    image: "/images/catalog/14-C060324-6596.jpg",
     href: "/celebrations/team-building",
     icon: "🤝",
   },
