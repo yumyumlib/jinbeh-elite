@@ -4,7 +4,7 @@ import locations from "@/data/locations.json";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Contact Jinbeh | Reservations & Catering in Frisco TX",
+        absolute: "Contact Jinbeh | Reservations & Catering | Frisco & Lewisville",
     },
     description: "Contact Jinbeh Japanese Restaurant for reservations, catering, or feedback. Family-owned hibachi & sushi in Frisco and Lewisville TX. Call today!",
     keywords: ["jinbeh contact", "japanese restaurant phone", "jinbeh reservations", "jinbeh catering inquiry"],
