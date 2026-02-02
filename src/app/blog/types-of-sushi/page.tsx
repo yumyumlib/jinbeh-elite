@@ -1,7 +1,7 @@
-import Link from &quot;next/link&quot;;
-import Image from &quot;next/image&quot;;
-import type { Metadata } from &quot;next&quot;;
-import RelatedArticles from &quot;@/components/RelatedArticles&quot;;
+import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export const metadata: Metadata = {
     title: "Types of Sushi: Must-Try Varieties & Rolls Guide | Jinbeh",
@@ -17,19 +17,19 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Types of Sushi: Must-Try Varieties & Rolls",
         description: "Your complete guide to sushi types, from traditional to modern rolls.",
-        images: [&quot;/images/blog/12-C060324-6551.jpg&quot;],
+        images: ["/images/blog/12-C060324-6551.jpg"],
     },
 };
 
 const articleSchema = {
-    &quot;@context&quot;: "https://schema.org",
-    &quot;@type&quot;: "Article",
+    "@context": "https://schema.org",
+    "@type": "Article",
     headline: "Types of Sushi: Must-Try Varieties & Rolls Guide",
     description: "Comprehensive guide to different types of sushi, their origins, and how to enjoy them.",
     image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
     datePublished: "2026-01-18",
     dateModified: "2026-01-29",
-    author: { &quot;@type&quot;: "Organization&quot;, name: &quot;Jinbeh Japanese Restaurant" },
+    author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
 const faqs = [
@@ -76,13 +76,13 @@ const faqs = [
 ];
 
 const faqSchema = {
-    &quot;@context&quot;: "https://schema.org",
-    &quot;@type&quot;: "FAQPage",
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-        &quot;@type&quot;: "Question",
+        "@type": "Question",
         name: faq.question,
         acceptedAnswer: {
-            &quot;@type&quot;: "Answer",
+            "@type": "Answer",
             text: faq.answer,
         },
     })),
@@ -90,39 +90,39 @@ const faqSchema = {
 
 export default function TypesOfSushi() {
     return (
-        <main className=&quot;min-h-screen bg-warm-ivory&quot;>
-            <script type=&quot;application/ld+json&quot; dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-            <script type=&quot;application/ld+json&quot; dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* Hero */}
-            <section className=&quot;relative h-[60vh] min-h-[500px] flex items-end overflow-hidden&quot;>
+            <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
                     poster="/images/blog/12-C060324-6551.jpg"
                 >
-                    <source src=&quot;/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4&quot; type=&quot;video/mp4&quot; />
+                    <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>
-                <div className=&quot;absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent&quot; />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
 
-                <div className=&quot;relative z-10 container mx-auto px-6 pb-12&quot;>
-                    <nav className=&quot;flex items-center gap-2 text-sm text-warm-ivory/70 mb-4&quot;>
-                        <Link href=&quot;/&quot; className=&quot;hover:text-white&quot;>Home</Link>
+                <div className="relative z-10 container mx-auto px-6 pb-12">
+                    <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">
+                        <Link href="/" className="hover:text-white">Home</Link>
                         <span>/</span>
-                        <Link href=&quot;/blog&quot; className=&quot;hover:text-white&quot;>Blog</Link>
+                        <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href=&quot;/blog?category=cuisine&quot; className=&quot;hover:text-white&quot;>Cuisine</Link>
+                        <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
-                    <span className=&quot;inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4&quot;>
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
                         🍣 Cuisine
                     </span>
 
-                    <h1 className=&quot;text-4xl md:text-6xl font-heading font-bold text-white max-w-4xl hero-headline mb-4&quot;>
+                    <h1 className="text-4xl md:text-6xl font-heading font-bold text-white max-w-4xl hero-headline mb-4">
                         Types of Sushi: Your Complete Guide
                     </h1>
 
-                    <div className=&quot;flex items-center gap-4 text-warm-ivory/70 text-sm&quot;>
+                    <div className="flex items-center gap-4 text-warm-ivory/70 text-sm">
                         <span>By Jinbeh</span>
                         <span>•</span>
                         <span>January 18, 2026</span>
@@ -133,238 +133,238 @@ export default function TypesOfSushi() {
             </section>
 
             {/* Content */}
-            <section className=&quot;py-16&quot;>
-                <div className=&quot;container mx-auto px-6&quot;>
-                    <div className=&quot;grid grid-cols-1 lg:grid-cols-3 gap-12&quot;>
-                        <article className=&quot;lg:col-span-2&quot;>
-                            <div className=&quot;bg-white rounded-3xl shadow-xl p-8 md:p-12&quot;>
-                                <div className=&quot;prose prose-lg max-w-none&quot;>
-                                    <p className=&quot;text-xl text-charcoal/80 leading-relaxed mb-8&quot;>
+            <section className="py-16">
+                <div className="container mx-auto px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <article className="lg:col-span-2">
+                            <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                                <div className="prose prose-lg max-w-none">
+                                    <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Sushi confused?</strong> You&apos;re not alone. Between nigiri, sashimi, maki,
                                         and specialty rolls, the sushi menu can feel like reading a foreign language.
-                                        Let&apos;s break it down so you can order like a pro—and discover new <Link href=&quot;/blog/types-of-sushi&quot; className=&quot;text-accent-red hover:underline&quot;>sushi varieties</Link> along the way.
+                                        Let&apos;s break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
 
-                                    <div className=&quot;bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8&quot;>
-                                        <p className=&quot;text-charcoal font-medium italic text-lg&quot;>
+                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                        <p className="text-charcoal font-medium italic text-lg">
                                             "Every sushi order at Jinbeh starts with fresh fish and ends with a smile.
                                             Whether you&apos;re trying nigiri for the first time or you&apos;re a seasoned omakase
                                             enthusiast, we&apos;re here to guide your journey."
                                         </p>
-                                        <span className=&quot;text-sm text-charcoal/60 mt-2 block&quot;>— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
-                                    <h2 className=&quot;text-3xl font-heading font-bold text-charcoal mt-12 mb-6&quot;>
+                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍱 The Main Types of Sushi
                                     </h2>
                                 </div>
 
                                 {/* Sushi Types Grid */}
-                                <div className=&quot;grid grid-cols-1 md:grid-cols-2 gap-6 my-8&quot;>
-                                    <div className=&quot;bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow&quot;>
-                                        <div className=&quot;flex items-start gap-4&quot;>
-                                            <span className=&quot;text-4xl&quot;>🍣</span>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                                    <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-4xl">🍣</span>
                                             <div>
-                                                <h3 className=&quot;font-heading font-bold text-xl text-charcoal mb-2&quot;>Nigiri</h3>
-                                                <p className=&quot;text-charcoal/70 text-sm&quot;>
+                                                <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Nigiri</h3>
+                                                <p className="text-charcoal/70 text-sm">
                                                     A slice of raw fish draped over a small mound of seasoned rice.
                                                     Simple, elegant, and all about the fish quality.
                                                 </p>
-                                                <p className=&quot;text-xs text-accent-red mt-2&quot;>Popular: Salmon, Tuna, Yellowtail</p>
+                                                <p className="text-xs text-accent-red mt-2">Popular: Salmon, Tuna, Yellowtail</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className=&quot;bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow&quot;>
-                                        <div className=&quot;flex items-start gap-4&quot;>
-                                            <span className=&quot;text-4xl&quot;>🐟</span>
+                                    <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-4xl">🐟</span>
                                             <div>
-                                                <h3 className=&quot;font-heading font-bold text-xl text-charcoal mb-2&quot;>Sashimi</h3>
-                                                <p className=&quot;text-charcoal/70 text-sm&quot;>
+                                                <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Sashimi</h3>
+                                                <p className="text-charcoal/70 text-sm">
                                                     Pure, pristine slices of raw fish—no rice involved.
                                                     The ultimate test of fish freshness and chef skill.
                                                 </p>
-                                                <p className=&quot;text-xs text-accent-red mt-2&quot;>Popular: Salmon, Tuna, Scallop</p>
+                                                <p className="text-xs text-accent-red mt-2">Popular: Salmon, Tuna, Scallop</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className=&quot;bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow&quot;>
-                                        <div className=&quot;flex items-start gap-4&quot;>
-                                            <span className=&quot;text-4xl&quot;>🍙</span>
+                                    <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-4xl">🍙</span>
                                             <div>
-                                                <h3 className=&quot;font-heading font-bold text-xl text-charcoal mb-2&quot;>Maki (Rolls)</h3>
-                                                <p className=&quot;text-charcoal/70 text-sm&quot;>
+                                                <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Maki (Rolls)</h3>
+                                                <p className="text-charcoal/70 text-sm">
                                                     Rice and fillings wrapped in seaweed (nori). Can be thin (hosomaki)
                                                     or thick (futomaki).
                                                 </p>
-                                                <p className=&quot;text-xs text-accent-red mt-2&quot;>Popular: Spicy Tuna, Cucumber</p>
+                                                <p className="text-xs text-accent-red mt-2">Popular: Spicy Tuna, Cucumber</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className=&quot;bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow&quot;>
-                                        <div className=&quot;flex items-start gap-4&quot;>
-                                            <span className=&quot;text-4xl&quot;>🌀</span>
+                                    <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-4xl">🌀</span>
                                             <div>
-                                                <h3 className=&quot;font-heading font-bold text-xl text-charcoal mb-2&quot;>Uramaki (Inside-Out)</h3>
-                                                <p className=&quot;text-charcoal/70 text-sm&quot;>
+                                                <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Uramaki (Inside-Out)</h3>
+                                                <p className="text-charcoal/70 text-sm">
                                                     Rice on the outside, seaweed on the inside.
                                                     American invention that birthed the California Roll.
                                                 </p>
-                                                <p className=&quot;text-xs text-accent-red mt-2&quot;>Popular: California, Dragon, Rainbow</p>
+                                                <p className="text-xs text-accent-red mt-2">Popular: California, Dragon, Rainbow</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className=&quot;bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow&quot;>
-                                        <div className=&quot;flex items-start gap-4&quot;>
-                                            <span className=&quot;text-4xl&quot;>🔥</span>
+                                    <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-4xl">🔥</span>
                                             <div>
-                                                <h3 className=&quot;font-heading font-bold text-xl text-charcoal mb-2&quot;>Specialty Rolls</h3>
-                                                <p className=&quot;text-charcoal/70 text-sm&quot;>
+                                                <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Specialty Rolls</h3>
+                                                <p className="text-charcoal/70 text-sm">
                                                     Creative, often chef-inspired rolls with multiple ingredients,
                                                     sauces, and sometimes torched or baked tops.
                                                 </p>
-                                                <p className=&quot;text-xs text-accent-red mt-2&quot;>Popular: Dragon Roll, Volcano Roll</p>
+                                                <p className="text-xs text-accent-red mt-2">Popular: Dragon Roll, Volcano Roll</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className=&quot;bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow&quot;>
-                                        <div className=&quot;flex items-start gap-4&quot;>
-                                            <span className=&quot;text-4xl&quot;>🥢</span>
+                                    <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                                        <div className="flex items-start gap-4">
+                                            <span className="text-4xl">🥢</span>
                                             <div>
-                                                <h3 className=&quot;font-heading font-bold text-xl text-charcoal mb-2&quot;>Temaki (Hand Roll)</h3>
-                                                <p className=&quot;text-charcoal/70 text-sm&quot;>
+                                                <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Temaki (Hand Roll)</h3>
+                                                <p className="text-charcoal/70 text-sm">
                                                     Cone-shaped seaweed filled with rice, fish, and vegetables.
                                                     Best eaten immediately before the nori gets soft.
                                                 </p>
-                                                <p className=&quot;text-xs text-accent-red mt-2&quot;>Popular: Spicy Tuna Hand Roll</p>
+                                                <p className="text-xs text-accent-red mt-2">Popular: Spicy Tuna Hand Roll</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Comparison Table */}
-                                <div className=&quot;overflow-x-auto my-12&quot;>
-                                    <table className=&quot;w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md&quot;>
-                                        <thead className=&quot;bg-charcoal text-white&quot;>
+                                <div className="overflow-x-auto my-12">
+                                    <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
+                                        <thead className="bg-charcoal text-white">
                                             <tr>
-                                                <th className=&quot;p-4 text-left font-heading&quot;>Type</th>
-                                                <th className=&quot;p-4 text-left font-heading&quot;>Best For</th>
-                                                <th className=&quot;p-4 text-left font-heading&quot;>Rice?</th>
-                                                <th className=&quot;p-4 text-left font-heading&quot;>Skill Level</th>
+                                                <th className="p-4 text-left font-heading">Type</th>
+                                                <th className="p-4 text-left font-heading">Best For</th>
+                                                <th className="p-4 text-left font-heading">Rice?</th>
+                                                <th className="p-4 text-left font-heading">Skill Level</th>
                                             </tr>
                                         </thead>
-                                        <tbody className=&quot;text-charcoal/80&quot;>
-                                            <tr className=&quot;border-b border-warm-ivory&quot;>
-                                                <td className=&quot;p-4 font-semibold&quot;>Nigiri</td>
-                                                <td className=&quot;p-4&quot;>Experiencing pure fish flavor</td>
-                                                <td className=&quot;p-4&quot;>Yes</td>
-                                                <td className=&quot;p-4&quot;>⭐⭐⭐ Adventurous</td>
+                                        <tbody className="text-charcoal/80">
+                                            <tr className="border-b border-warm-ivory">
+                                                <td className="p-4 font-semibold">Nigiri</td>
+                                                <td className="p-4">Experiencing pure fish flavor</td>
+                                                <td className="p-4">Yes</td>
+                                                <td className="p-4">⭐⭐⭐ Adventurous</td>
                                             </tr>
-                                            <tr className=&quot;border-b border-warm-ivory bg-warm-ivory/30&quot;>
-                                                <td className=&quot;p-4 font-semibold&quot;>Sashimi</td>
-                                                <td className=&quot;p-4&quot;>Low-carb, fish purists</td>
-                                                <td className=&quot;p-4&quot;>No</td>
-                                                <td className=&quot;p-4&quot;>⭐⭐⭐ Adventurous</td>
+                                            <tr className="border-b border-warm-ivory bg-warm-ivory/30">
+                                                <td className="p-4 font-semibold">Sashimi</td>
+                                                <td className="p-4">Low-carb, fish purists</td>
+                                                <td className="p-4">No</td>
+                                                <td className="p-4">⭐⭐⭐ Adventurous</td>
                                             </tr>
-                                            <tr className=&quot;border-b border-warm-ivory&quot;>
-                                                <td className=&quot;p-4 font-semibold&quot;>Maki Rolls</td>
-                                                <td className=&quot;p-4&quot;>Classic sushi experience</td>
-                                                <td className=&quot;p-4&quot;>Yes</td>
-                                                <td className=&quot;p-4&quot;>⭐⭐ Intermediate</td>
+                                            <tr className="border-b border-warm-ivory">
+                                                <td className="p-4 font-semibold">Maki Rolls</td>
+                                                <td className="p-4">Classic sushi experience</td>
+                                                <td className="p-4">Yes</td>
+                                                <td className="p-4">⭐⭐ Intermediate</td>
                                             </tr>
-                                            <tr className=&quot;border-b border-warm-ivory bg-warm-ivory/30&quot;>
-                                                <td className=&quot;p-4 font-semibold&quot;>Specialty Rolls</td>
-                                                <td className=&quot;p-4&quot;>Flavor exploration, sharing</td>
-                                                <td className=&quot;p-4&quot;>Yes</td>
-                                                <td className=&quot;p-4&quot;>⭐ Beginner-friendly</td>
+                                            <tr className="border-b border-warm-ivory bg-warm-ivory/30">
+                                                <td className="p-4 font-semibold">Specialty Rolls</td>
+                                                <td className="p-4">Flavor exploration, sharing</td>
+                                                <td className="p-4">Yes</td>
+                                                <td className="p-4">⭐ Beginner-friendly</td>
                                             </tr>
                                             <tr>
-                                                <td className=&quot;p-4 font-semibold&quot;>Hand Rolls</td>
-                                                <td className=&quot;p-4&quot;>Quick, casual eating</td>
-                                                <td className=&quot;p-4&quot;>Yes</td>
-                                                <td className=&quot;p-4&quot;>⭐ Beginner-friendly</td>
+                                                <td className="p-4 font-semibold">Hand Rolls</td>
+                                                <td className="p-4">Quick, casual eating</td>
+                                                <td className="p-4">Yes</td>
+                                                <td className="p-4">⭐ Beginner-friendly</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
 
                                 {/* Internal Links - Sushi Cluster */}
-                                <div className=&quot;my-12 p-6 bg-accent-red/10 rounded-2xl border-2 border-accent-red/30&quot;>
-                                    <h3 className=&quot;font-heading font-bold text-lg text-charcoal mb-4&quot;>Explore Related Sushi Articles:</h3>
-                                    <div className=&quot;grid grid-cols-1 md:grid-cols-2 gap-4&quot;>
-                                        <Link href=&quot;/blog/sashimi-vs-sushi&quot; className=&quot;p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red&quot;>
-                                            <p className=&quot;font-semibold text-charcoal&quot;>Sashimi vs Sushi</p>
-                                            <p className=&quot;text-sm text-charcoal/70&quot;>Understand the key differences</p>
+                                <div className="my-12 p-6 bg-accent-red/10 rounded-2xl border-2 border-accent-red/30">
+                                    <h3 className="font-heading font-bold text-lg text-charcoal mb-4">Explore Related Sushi Articles:</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <Link href="/blog/sashimi-vs-sushi" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Sashimi vs Sushi</p>
+                                            <p className="text-sm text-charcoal/70">Understand the key differences</p>
                                         </Link>
-                                        <Link href=&quot;/blog/how-to-eat-sushi-guide&quot; className=&quot;p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red&quot;>
-                                            <p className=&quot;font-semibold text-charcoal&quot;>How to Eat Sushi Guide</p>
-                                            <p className=&quot;text-sm text-charcoal/70&quot;>Master proper etiquette & tips</p>
+                                        <Link href="/blog/how-to-eat-sushi-guide" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">How to Eat Sushi Guide</p>
+                                            <p className="text-sm text-charcoal/70">Master proper etiquette & tips</p>
                                         </Link>
-                                        <Link href=&quot;/blog/sushi-identification-chart&quot; className=&quot;p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red&quot;>
-                                            <p className=&quot;font-semibold text-charcoal&quot;>Sushi Identification Chart</p>
-                                            <p className=&quot;text-sm text-charcoal/70&quot;>Complete sushi reference guide</p>
+                                        <Link href="/blog/sushi-identification-chart" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">Sushi Identification Chart</p>
+                                            <p className="text-sm text-charcoal/70">Complete sushi reference guide</p>
                                         </Link>
-                                        <Link href=&quot;/blog/what-is-omakase&quot; className=&quot;p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red&quot;>
-                                            <p className=&quot;font-semibold text-charcoal&quot;>What is Omakase?</p>
-                                            <p className=&quot;text-sm text-charcoal/70&quot;>Discover the ultimate sushi experience</p>
+                                        <Link href="/blog/what-is-omakase" className="p-3 rounded-lg bg-white hover:shadow-md transition-shadow border-l-4 border-accent-red">
+                                            <p className="font-semibold text-charcoal">What is Omakase?</p>
+                                            <p className="text-sm text-charcoal/70">Discover the ultimate sushi experience</p>
                                         </Link>
                                     </div>
                                 </div>
 
                                 {/* Image Gallery */}
-                                <div className=&quot;grid grid-cols-2 md:grid-cols-4 gap-4 my-12&quot;>
-                                    <div className=&quot;relative aspect-square rounded-xl overflow-hidden group&quot;>
-                                        <Image src=&quot;/images/blog/7-C060324-6447.jpg&quot; alt=&quot;Sushi platter&quot; fill className=&quot;object-cover group-hover:scale-105 transition-transform&quot; />
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                        <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
-                                    <div className=&quot;relative aspect-square rounded-xl overflow-hidden group&quot;>
-                                        <Image src=&quot;/images/blog/11-C060324-6544.jpg&quot; alt=&quot;Sushi chef&quot; fill className=&quot;object-cover group-hover:scale-105 transition-transform&quot; />
+                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                        <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi chef" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
-                                    <div className=&quot;relative aspect-square rounded-xl overflow-hidden group&quot;>
-                                        <Image src=&quot;/images/blog/13-C060324-6582.jpg&quot; alt=&quot;Sushi roll&quot; fill className=&quot;object-cover group-hover:scale-105 transition-transform&quot; />
+                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                        <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi roll" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
-                                    <div className=&quot;relative aspect-square rounded-xl overflow-hidden group&quot;>
-                                        <Image src=&quot;/images/blog/14-C060324-6596.jpg&quot; alt=&quot;Sashimi&quot; fill className=&quot;object-cover group-hover:scale-105 transition-transform&quot; />
+                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                        <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
                                 </div>
 
-                                <div className=&quot;prose prose-lg max-w-none&quot;>
-                                    <h2 className=&quot;text-3xl font-heading font-bold text-charcoal mt-12 mb-6&quot;>
-                                        🌟 Jinbeh&apos;s Most Popular <Link href=&quot;/blog/types-of-sushi&quot; className=&quot;text-accent-red hover:underline&quot;>Sushi Varieties</Link>
+                                <div className="prose prose-lg max-w-none">
+                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+                                        🌟 Jinbeh&apos;s Most Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Varieties</Link>
                                     </h2>
 
-                                    <div className=&quot;bg-gradient-to-r from-charcoal to-deep-indigo rounded-2xl p-8 text-white my-8&quot;>
-                                        <h3 className=&quot;font-heading font-bold text-xl mb-6&quot;>Customer Favorites:</h3>
-                                        <div className=&quot;grid grid-cols-1 md:grid-cols-2 gap-4&quot;>
-                                            <div className=&quot;flex items-center gap-3&quot;>
-                                                <span className=&quot;text-2xl&quot;>🐉</span>
+                                    <div className="bg-gradient-to-r from-charcoal to-deep-indigo rounded-2xl p-8 text-white my-8">
+                                        <h3 className="font-heading font-bold text-xl mb-6">Customer Favorites:</h3>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-2xl">🐉</span>
                                                 <div>
-                                                    <span className=&quot;font-semibold&quot;>Dragon Roll</span>
-                                                    <p className=&quot;text-sm text-white/70&quot;>Eel, cucumber, avocado, unagi sauce</p>
+                                                    <span className="font-semibold">Dragon Roll</span>
+                                                    <p className="text-sm text-white/70">Eel, cucumber, avocado, unagi sauce</p>
                                                 </div>
                                             </div>
-                                            <div className=&quot;flex items-center gap-3&quot;>
-                                                <span className=&quot;text-2xl&quot;>🌈</span>
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-2xl">🌈</span>
                                                 <div>
-                                                    <span className=&quot;font-semibold&quot;>Rainbow Roll</span>
-                                                    <p className=&quot;text-sm text-white/70&quot;>California roll topped with assorted sashimi</p>
+                                                    <span className="font-semibold">Rainbow Roll</span>
+                                                    <p className="text-sm text-white/70">California roll topped with assorted sashimi</p>
                                                 </div>
                                             </div>
-                                            <div className=&quot;flex items-center gap-3&quot;>
-                                                <span className=&quot;text-2xl&quot;>🌋</span>
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-2xl">🌋</span>
                                                 <div>
-                                                    <span className=&quot;font-semibold&quot;>Volcano Roll</span>
-                                                    <p className=&quot;text-sm text-white/70&quot;>Baked spicy crab on California roll</p>
+                                                    <span className="font-semibold">Volcano Roll</span>
+                                                    <p className="text-sm text-white/70">Baked spicy crab on California roll</p>
                                                 </div>
                                             </div>
-                                            <div className=&quot;flex items-center gap-3&quot;>
-                                                <span className=&quot;text-2xl&quot;>🔥</span>
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-2xl">🔥</span>
                                                 <div>
-                                                    <span className=&quot;font-semibold&quot;>Spicy Tuna Roll</span>
-                                                    <p className=&quot;text-sm text-white/70&quot;>Fresh tuna with spicy mayo</p>
+                                                    <span className="font-semibold">Spicy Tuna Roll</span>
+                                                    <p className="text-sm text-white/70">Fresh tuna with spicy mayo</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,17 +372,17 @@ export default function TypesOfSushi() {
                                 </div>
 
                                 {/* FAQ Section */}
-                                <div className=&quot;mt-16&quot;>
-                                    <h2 className=&quot;text-3xl font-heading font-bold text-charcoal mb-8&quot;>❓ Frequently Asked Questions</h2>
+                                <div className="mt-16">
+                                    <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
-                                    <div className=&quot;space-y-4&quot;>
+                                    <div className="space-y-4">
                                         {faqs.map((faq, index) => (
-                                            <details key={index} className=&quot;group bg-warm-ivory rounded-2xl overflow-hidden&quot;>
-                                                <summary className=&quot;flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal&quot;>
+                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
                                                     {faq.question}
-                                                    <span className=&quot;text-accent-red group-open:rotate-180 transition-transform&quot;>▼</span>
+                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                                 </summary>
-                                                <div className=&quot;px-6 pb-6 text-charcoal/80&quot;>
+                                                <div className="px-6 pb-6 text-charcoal/80">
                                                     <p>{faq.answer}</p>
                                                 </div>
                                             </details>
@@ -391,42 +391,42 @@ export default function TypesOfSushi() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className=&quot;mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center&quot;>
-                                    <h3 className=&quot;text-3xl font-heading font-bold text-white mb-4&quot;>🍣 Ready to Explore?</h3>
-                                    <p className=&quot;text-white/90 mb-8 text-lg&quot;>
+                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Explore?</h3>
+                                    <p className="text-white/90 mb-8 text-lg">
                                         Discover your new favorite sushi at Jinbeh. Fresh fish, expert rolls, unforgettable flavors.
-                                        New to sushi? Check out our <Link href=&quot;/blog/beginner-sushi-tips&quot; className=&quot;text-white hover:underline font-semibold&quot;>sushi for beginners</Link> guide.
+                                        New to sushi? Check out our <Link href="/blog/beginner-sushi-tips" className="text-white hover:underline font-semibold">sushi for beginners</Link> guide.
                                     </p>
-                                    <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-                                        <Link href=&quot;/reservations&quot; className=&quot;btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg&quot;>
+                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             Reserve Now
                                         </Link>
-                                        <Link href=&quot;/frisco/menu&quot; className=&quot;btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg&quot;>
+                                        <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             View Frisco Menu
                                         </Link>
-                                        <Link href=&quot;/lewisville/menu&quot; className=&quot;btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg&quot;>
+                                        <Link href="/lewisville/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             View Lewisville Menu
                                         </Link>
                                     </div>
                                 </div>
 
                                 {/* Location Links */}
-                                <div className=&quot;mt-12 grid grid-cols-1 md:grid-cols-2 gap-6&quot;>
-                                    <Link href=&quot;/locations/frisco&quot; className=&quot;p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10&quot;>
-                                        <h3 className=&quot;font-heading font-bold text-lg text-charcoal mb-2&quot;>📍 <Link href=&quot;/locations/frisco&quot; className=&quot;text-accent-red hover:underline&quot;>Frisco location</Link></h3>
-                                        <p className=&quot;text-charcoal/70 text-sm&quot;>Visit us in Frisco for authentic sushi and Japanese cuisine</p>
+                                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <Link href="/locations/frisco" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link></h3>
+                                        <p className="text-charcoal/70 text-sm">Visit us in Frisco for authentic sushi and Japanese cuisine</p>
                                     </Link>
-                                    <Link href=&quot;/locations/lewisville&quot; className=&quot;p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10&quot;>
-                                        <h3 className=&quot;font-heading font-bold text-lg text-charcoal mb-2&quot;>📍 <Link href=&quot;/locations/lewisville&quot; className=&quot;text-accent-red hover:underline&quot;>Lewisville location</Link></h3>
-                                        <p className=&quot;text-charcoal/70 text-sm&quot;>Experience fine dining at our Lewisville Japanese restaurant</p>
+                                    <Link href="/locations/lewisville" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link></h3>
+                                        <p className="text-charcoal/70 text-sm">Experience fine dining at our Lewisville Japanese restaurant</p>
                                     </Link>
                                 </div>
                             </div>
                         </article>
 
                         {/* Sidebar */}
-                        <aside className=&quot;lg:col-span-1&quot;>
-                            <RelatedArticles currentSlug=&quot;types-of-sushi&quot; />
+                        <aside className="lg:col-span-1">
+                            <RelatedArticles currentSlug="types-of-sushi" />
                         </aside>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
-import Link from &quot;next/link&quot;;
-import type { Metadata } from &quot;next&quot;;
-import Header from &quot;@/components/Header&quot;;
-import Footer from &quot;@/components/Footer&quot;;
-import locations from &quot;@/data/locations.json&quot;;
+import Link from "next/link";
+import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import locations from "@/data/locations.json";
 
 const friscoLocation = locations.locations.frisco;
 const lewisvilleLocation = locations.locations.lewisville;
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
 
 // JSON-LD Schema for LocalBusiness pointing to Frisco
 const localBusinessSchema = {
-  &quot;@context&quot;: "https://schema.org",
-  &quot;@type&quot;: "LocalBusiness",
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
   name: "Jinbeh Japanese Restaurant Near Allen",
   image: "https://jinbeh.com/images/frisco-interior.jpg",
   description: "Authentic Japanese hibachi and sushi restaurant serving Allen residents. Located in Frisco, just minutes away.",
   address: {
-    &quot;@type&quot;: "PostalAddress",
+    "@type": "PostalAddress",
     streetAddress: `${friscoLocation.address.street} ${friscoLocation.address.suite}`,
     addressLocality: friscoLocation.address.city,
     addressRegion: friscoLocation.address.state,
@@ -46,37 +46,37 @@ const localBusinessSchema = {
     addressCountry: "US",
   },
   geo: {
-    &quot;@type&quot;: "GeoCoordinates",
+    "@type": "GeoCoordinates",
     latitude: friscoLocation.geo.latitude,
     longitude: friscoLocation.geo.longitude,
   },
   url: "https://jinbeh.com/frisco",
   telephone: friscoLocation.phone,
-  servesCuisine: ["Japanese&quot;, &quot;Sushi&quot;, &quot;Hibachi&quot;, &quot;Teppanyaki"],
+  servesCuisine: ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
   priceRange: "$$",
-  areaServed: ["Allen&quot;, &quot;Frisco&quot;, &quot;Lewisville&quot;, &quot;Dallas&quot;, &quot;Texas"],
+  areaServed: ["Allen", "Frisco", "Lewisville", "Dallas", "Texas"],
   openingHoursSpecification: [
     {
-      &quot;@type&quot;: "OpeningHoursSpecification",
-      dayOfWeek: ["Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday"],
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "11:00",
       closes: "14:00",
     },
     {
-      &quot;@type&quot;: "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday&quot;, &quot;Sunday"],
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday", "Sunday"],
       opens: "11:30",
       closes: "14:30",
     },
     {
-      &quot;@type&quot;: "OpeningHoursSpecification",
-      dayOfWeek: ["Sunday&quot;, &quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday"],
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
       opens: "17:00",
       closes: "21:00",
     },
     {
-      &quot;@type&quot;: "OpeningHoursSpecification",
-      dayOfWeek: ["Friday&quot;, &quot;Saturday"],
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Friday", "Saturday"],
       opens: "17:00",
       closes: "22:00",
     },
@@ -87,78 +87,78 @@ const localBusinessSchema = {
 
 // FAQ Schema targeting Allen keywords
 const faqSchema = {
-  &quot;@context&quot;: "https://schema.org",
-  &quot;@type&quot;: "FAQPage",
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
   mainEntity: [
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "How far is Jinbeh from Allen?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Jinbeh Frisco is located just 8 minutes from downtown Allen, making it the closest premium hibachi and sushi restaurant for Allen residents. Jinbeh Lewisville is also available, about 20 minutes away.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Is there hibachi near Allen, TX?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Yes! Jinbeh offers authentic teppanyaki hibachi dining with skilled chefs who cook your meal tableside. Our Frisco location is just 8 minutes from Allen.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Where is the best sushi restaurant near Allen?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Jinbeh Frisco features a fresh sushi bar with master chefs preparing premium rolls, nigiri, and sashimi. Located just minutes from Allen at 2693 Preston Rd Suite 1040, Frisco, TX 75034.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Why should Allen residents choose Jinbeh?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Jinbeh offers authentic Japanese cuisine prepared by skilled chefs, exciting hibachi tableside shows, a fresh sushi bar, full bar service, and family-friendly atmosphere. Family-owned since 1988 with nearly 40 years of tradition.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Can I make a reservation from Allen?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Absolutely! You can reserve online through OpenTable or call our Frisco location at (214) 619-1200. We highly recommend reservations, especially for dinner and weekends.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "What nearby attractions are near Jinbeh from Allen?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Jinbeh Frisco is conveniently located near Allen Premium Outlets, Watters Creek shopping and dining, Allen Event Center, and Celebration Park. Perfect for combining dining with entertainment or shopping.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Does Jinbeh have private dining for Allen groups?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Yes! We offer private hibachi dining perfect for corporate events, family celebrations, and group gatherings. Contact us at (214) 619-1200 to arrange your private event.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Is there a Japanese restaurant near Allen, TX?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "Yes! Jinbeh is a premier Japanese restaurant near Allen, TX, located in Frisco just 8 minutes away. We offer authentic hibachi, fresh sushi, and full bar service with nearly 40 years of family tradition.",
       },
     },
     {
-      &quot;@type&quot;: "Question",
+      "@type": "Question",
       name: "Does Jinbeh deliver to Allen?",
       acceptedAnswer: {
-        &quot;@type&quot;: "Answer",
+        "@type": "Answer",
         text: "We offer takeout service from both our Frisco and Lewisville locations. For delivery options to Allen, please call us directly at (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville) to inquire about current delivery availability.",
       },
     },
@@ -170,7 +170,7 @@ export default function AllenNearbyPage() {
     <>
       <Header />
 
-      <main className=&quot;min-h-screen&quot;>
+      <main className="min-h-screen">
         {/* JSON-LD Schemas */}
         <script
           type="application/ld+json"
@@ -186,26 +186,26 @@ export default function AllenNearbyPage() {
         />
 
         {/* Hero Section */}
-        <section className=&quot;hero relative bg-charcoal&quot;>
+        <section className="hero relative bg-charcoal">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('/images/lewisville/IMG_2142.jpg')",
             }}
           />
-          <div className=&quot;hero-overlay&quot; />
+          <div className="hero-overlay" />
 
-          <div className=&quot;hero-content max-w-4xl mx-auto&quot;>
-            <h1 className=&quot;text-4xl md:text-6xl font-heading font-bold mb-4&quot;>
+          <div className="hero-content max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4">
               Allen&apos;s Favorite Japanese Restaurant<br />Is Just Minutes Away
             </h1>
-            <p className=&quot;text-xl text-warm-ivory/90 mb-6&quot;>
+            <p className="text-xl text-warm-ivory/90 mb-6">
               Only 8 minutes from downtown Allen
             </p>
-            <p className=&quot;text-lg text-warm-ivory/80 max-w-2xl mx-auto mb-8&quot;>
+            <p className="text-lg text-warm-ivory/80 max-w-2xl mx-auto mb-8">
               Experience authentic Japanese hibachi and sushi at Jinbeh, conveniently located in Frisco. Watch skilled chefs perform exciting tableside shows while enjoying fresh, expertly prepared cuisine.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#reserve"
                 className="btn btn-primary btn-shimmer"
@@ -223,88 +223,88 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* Distance & Directions Section */}
-        <section className=&quot;py-16 bg-accent-red text-white&quot;>
-          <div className=&quot;container mx-auto px-6&quot;>
-            <div className=&quot;grid grid-cols-1 md:grid-cols-3 gap-8 text-center&quot;>
+        <section className="py-16 bg-accent-red text-white">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className=&quot;text-5xl font-bold mb-2&quot;>8 mins</div>
-                <p className=&quot;text-lg text-white/90&quot;>From Downtown Allen</p>
+                <div className="text-5xl font-bold mb-2">8 mins</div>
+                <p className="text-lg text-white/90">From Downtown Allen</p>
               </div>
               <div>
-                <div className=&quot;text-5xl font-bold mb-2&quot;>4.8 miles</div>
-                <p className=&quot;text-lg text-white/90&quot;>Direct Route</p>
+                <div className="text-5xl font-bold mb-2">4.8 miles</div>
+                <p className="text-lg text-white/90">Direct Route</p>
               </div>
               <div>
-                <div className=&quot;text-5xl font-bold mb-2&quot;>2 Locations</div>
-                <p className=&quot;text-lg text-white/90&quot;>Frisco & Lewisville</p>
+                <div className="text-5xl font-bold mb-2">2 Locations</div>
+                <p className="text-lg text-white/90">Frisco & Lewisville</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Why Jinbeh Section */}
-        <section className=&quot;py-16 bg-warm-ivory&quot;>
-          <div className=&quot;container mx-auto px-6&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold text-charcoal text-center mb-12&quot;>
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Why Allen Residents Choose Jinbeh
             </h2>
-            <div className=&quot;grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto&quot;>
-              <div className=&quot;card&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🔥</div>
-                <h3 className=&quot;font-heading text-xl font-semibold text-charcoal mb-3&quot;>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="card">
+                <div className="text-4xl mb-4">🔥</div>
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   Authentic Hibachi Shows
                 </h3>
-                <p className=&quot;text-charcoal/70&quot;>
+                <p className="text-charcoal/70">
                   Watch our skilled teppanyaki chefs perform dazzling tricks right at your table, including the famous onion volcano. Entertainment and amazing food in one experience.
                 </p>
               </div>
 
-              <div className=&quot;card&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🍣</div>
-                <h3 className=&quot;font-heading text-xl font-semibold text-charcoal mb-3&quot;>
+              <div className="card">
+                <div className="text-4xl mb-4">🍣</div>
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   Fresh Sushi Bar
                 </h3>
-                <p className=&quot;text-charcoal/70&quot;>
+                <p className="text-charcoal/70">
                   Master sushi chefs prepare premium rolls, nigiri, and sashimi daily. Choose from creative specialty rolls or classic favorites prepared with the finest ingredients.
                 </p>
               </div>
 
-              <div className=&quot;card&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🏆</div>
-                <h3 className=&quot;font-heading text-xl font-semibold text-charcoal mb-3&quot;>
+              <div className="card">
+                <div className="text-4xl mb-4">🏆</div>
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   37 Years of Excellence
                 </h3>
-                <p className=&quot;text-charcoal/70&quot;>
+                <p className="text-charcoal/70">
                   Family-owned since 1988, we&apos;ve been serving North Texas families for nearly four decades with authentic Japanese cuisine and exceptional service.
                 </p>
               </div>
 
-              <div className=&quot;card&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🎉</div>
-                <h3 className=&quot;font-heading text-xl font-semibold text-charcoal mb-3&quot;>
+              <div className="card">
+                <div className="text-4xl mb-4">🎉</div>
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   Perfect for Celebrations
                 </h3>
-                <p className=&quot;text-charcoal/70&quot;>
+                <p className="text-charcoal/70">
                   Birthdays, anniversaries, and special events become unforgettable at Jinbeh. Our tableside hibachi shows make every celebration memorable.
                 </p>
               </div>
 
-              <div className=&quot;card&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🍸</div>
-                <h3 className=&quot;font-heading text-xl font-semibold text-charcoal mb-3&quot;>
+              <div className="card">
+                <div className="text-4xl mb-4">🍸</div>
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   Full Bar & Happy Hour
                 </h3>
-                <p className=&quot;text-charcoal/70&quot;>
+                <p className="text-charcoal/70">
                   Enjoy premium sake, craft cocktails, and select wines. Ask about our Happy Hour specials featuring discounted appetizers and drinks.
                 </p>
               </div>
 
-              <div className=&quot;card&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>👨‍👩‍👧‍👦</div>
-                <h3 className=&quot;font-heading text-xl font-semibold text-charcoal mb-3&quot;>
+              <div className="card">
+                <div className="text-4xl mb-4">👨‍👩‍👧‍👦</div>
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   Family-Friendly Atmosphere
                 </h3>
-                <p className=&quot;text-charcoal/70&quot;>
+                <p className="text-charcoal/70">
                   Kids love watching the hibachi shows, and we have options for all ages. A favorite dining destination for Allen families.
                 </p>
               </div>
@@ -313,62 +313,62 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* Nearby Attractions Section */}
-        <section className=&quot;py-16 bg-white&quot;>
-          <div className=&quot;container mx-auto px-6&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold text-charcoal text-center mb-12&quot;>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Nearby Attractions from Jinbeh
             </h2>
-            <div className=&quot;grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto&quot;>
-              <div className=&quot;card border-l-4 border-accent-red&quot;>
-                <div className=&quot;flex items-start gap-4&quot;>
-                  <div className=&quot;text-3xl&quot;>🛍️</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="card border-l-4 border-accent-red">
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl">🛍️</div>
                   <div>
-                    <h3 className=&quot;font-heading text-lg font-bold text-charcoal mb-2&quot;>
+                    <h3 className="font-heading text-lg font-bold text-charcoal mb-2">
                       Allen Premium Outlets
                     </h3>
-                    <p className=&quot;text-charcoal/70 text-sm&quot;>
+                    <p className="text-charcoal/70 text-sm">
                       Just minutes away! Combine dinner with shopping at this premier outlet mall with designer brands and dining options.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className=&quot;card border-l-4 border-cedar-brown&quot;>
-                <div className=&quot;flex items-start gap-4&quot;>
-                  <div className=&quot;text-3xl&quot;>🏬</div>
+              <div className="card border-l-4 border-cedar-brown">
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl">🏬</div>
                   <div>
-                    <h3 className=&quot;font-heading text-lg font-bold text-charcoal mb-2&quot;>
+                    <h3 className="font-heading text-lg font-bold text-charcoal mb-2">
                       Watters Creek
                     </h3>
-                    <p className=&quot;text-charcoal/70 text-sm&quot;>
+                    <p className="text-charcoal/70 text-sm">
                       Upscale shopping and dining destination. Perfect for an evening combining shopping, dining, and entertainment with Jinbeh nearby.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className=&quot;card border-l-4 border-accent-red&quot;>
-                <div className=&quot;flex items-start gap-4&quot;>
-                  <div className=&quot;text-3xl&quot;>🎭</div>
+              <div className="card border-l-4 border-accent-red">
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl">🎭</div>
                   <div>
-                    <h3 className=&quot;font-heading text-lg font-bold text-charcoal mb-2&quot;>
+                    <h3 className="font-heading text-lg font-bold text-charcoal mb-2">
                       Allen Event Center
                     </h3>
-                    <p className=&quot;text-charcoal/70 text-sm&quot;>
+                    <p className="text-charcoal/70 text-sm">
                       Host community events and concerts. Grab dinner at Jinbeh before or after enjoying live entertainment at the event center.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className=&quot;card border-l-4 border-cedar-brown&quot;>
-                <div className=&quot;flex items-start gap-4&quot;>
-                  <div className=&quot;text-3xl&quot;>🎪</div>
+              <div className="card border-l-4 border-cedar-brown">
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl">🎪</div>
                   <div>
-                    <h3 className=&quot;font-heading text-lg font-bold text-charcoal mb-2&quot;>
+                    <h3 className="font-heading text-lg font-bold text-charcoal mb-2">
                       Celebration Park
                     </h3>
-                    <p className=&quot;text-charcoal/70 text-sm&quot;>
+                    <p className="text-charcoal/70 text-sm">
                       Family-friendly park with splash pad and recreational activities. Perfect for a day of family fun ending with dinner at Jinbeh.
                     </p>
                   </div>
@@ -379,33 +379,33 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* Locations Section */}
-        <section className=&quot;py-16 bg-warm-ivory&quot;>
-          <div className=&quot;container mx-auto px-6&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold text-charcoal text-center mb-12&quot;>
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Choose Your Nearest Location
             </h2>
-            <div className=&quot;grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto&quot;>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Frisco Location */}
-              <div className=&quot;card border-2 border-accent-red&quot;>
-                <div className=&quot;flex items-start gap-4 mb-6&quot;>
-                  <div className=&quot;text-4xl&quot;>📍</div>
+              <div className="card border-2 border-accent-red">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="text-4xl">📍</div>
                   <div>
-                    <h3 className=&quot;font-heading text-2xl font-bold text-charcoal&quot;>
+                    <h3 className="font-heading text-2xl font-bold text-charcoal">
                       Jinbeh Frisco
                     </h3>
-                    <p className=&quot;text-accent-red font-semibold&quot;>
+                    <p className="text-accent-red font-semibold">
                       Closest to Allen - 8 minutes
                     </p>
                   </div>
                 </div>
 
-                <address className=&quot;not-italic text-charcoal/80 mb-6 space-y-2&quot;>
-                  <p className=&quot;font-medium&quot;>{friscoLocation.address.street}</p>
+                <address className="not-italic text-charcoal/80 mb-6 space-y-2">
+                  <p className="font-medium">{friscoLocation.address.street}</p>
                   <p>{friscoLocation.address.suite}</p>
                   <p>
                     {friscoLocation.address.city}, {friscoLocation.address.state} {friscoLocation.address.zip}
                   </p>
-                  <p className=&quot;text-sm text-charcoal/60&quot;>
+                  <p className="text-sm text-charcoal/60">
                     Near Stonebriar Centre Mall, Legacy West
                   </p>
                 </address>
@@ -417,23 +417,23 @@ export default function AllenNearbyPage() {
                   {friscoLocation.phone}
                 </a>
 
-                <div className=&quot;space-y-3 mb-6&quot;>
+                <div className="space-y-3 mb-6">
                   <div>
-                    <p className=&quot;text-sm font-semibold text-charcoal/60 mb-1&quot;>LUNCH</p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Mon-Fri:</span> {friscoLocation.hours.lunch.weekday.display}
+                    <p className="text-sm font-semibold text-charcoal/60 mb-1">LUNCH</p>
+                    <p className="text-charcoal">
+                      <span className="font-medium">Mon-Fri:</span> {friscoLocation.hours.lunch.weekday.display}
                     </p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Sat-Sun:</span> {friscoLocation.hours.lunch.weekend.display}
+                    <p className="text-charcoal">
+                      <span className="font-medium">Sat-Sun:</span> {friscoLocation.hours.lunch.weekend.display}
                     </p>
                   </div>
                   <div>
-                    <p className=&quot;text-sm font-semibold text-charcoal/60 mb-1&quot;>DINNER</p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Sun-Thu:</span> {friscoLocation.hours.dinner.sunThurs.display}
+                    <p className="text-sm font-semibold text-charcoal/60 mb-1">DINNER</p>
+                    <p className="text-charcoal">
+                      <span className="font-medium">Sun-Thu:</span> {friscoLocation.hours.dinner.sunThurs.display}
                     </p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Fri-Sat:</span> {friscoLocation.hours.dinner.friSat.display}
+                    <p className="text-charcoal">
+                      <span className="font-medium">Fri-Sat:</span> {friscoLocation.hours.dinner.friSat.display}
                     </p>
                   </div>
                 </div>
@@ -455,26 +455,26 @@ export default function AllenNearbyPage() {
               </div>
 
               {/* Lewisville Location */}
-              <div className=&quot;card&quot;>
-                <div className=&quot;flex items-start gap-4 mb-6&quot;>
-                  <div className=&quot;text-4xl&quot;>📍</div>
+              <div className="card">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="text-4xl">📍</div>
                   <div>
-                    <h3 className=&quot;font-heading text-2xl font-bold text-charcoal&quot;>
+                    <h3 className="font-heading text-2xl font-bold text-charcoal">
                       Jinbeh Lewisville
                     </h3>
-                    <p className=&quot;text-cedar-brown font-semibold&quot;>
+                    <p className="text-cedar-brown font-semibold">
                       Alternative Option - 20 minutes
                     </p>
                   </div>
                 </div>
 
-                <address className=&quot;not-italic text-charcoal/80 mb-6 space-y-2&quot;>
-                  <p className=&quot;font-medium&quot;>{lewisvilleLocation.address.street}</p>
+                <address className="not-italic text-charcoal/80 mb-6 space-y-2">
+                  <p className="font-medium">{lewisvilleLocation.address.street}</p>
                   <p>{lewisvilleLocation.address.suite}</p>
                   <p>
                     {lewisvilleLocation.address.city}, {lewisvilleLocation.address.state} {lewisvilleLocation.address.zip}
                   </p>
-                  <p className=&quot;text-sm text-charcoal/60&quot;>
+                  <p className="text-sm text-charcoal/60">
                     Easy access from I-35E, Vista Ridge Mall area
                   </p>
                 </address>
@@ -486,23 +486,23 @@ export default function AllenNearbyPage() {
                   {lewisvilleLocation.phone}
                 </a>
 
-                <div className=&quot;space-y-3 mb-6&quot;>
+                <div className="space-y-3 mb-6">
                   <div>
-                    <p className=&quot;text-sm font-semibold text-charcoal/60 mb-1&quot;>LUNCH</p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Mon-Fri:</span> {lewisvilleLocation.hours.lunch.weekday.display}
+                    <p className="text-sm font-semibold text-charcoal/60 mb-1">LUNCH</p>
+                    <p className="text-charcoal">
+                      <span className="font-medium">Mon-Fri:</span> {lewisvilleLocation.hours.lunch.weekday.display}
                     </p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Sat-Sun:</span> {lewisvilleLocation.hours.lunch.weekend.display}
+                    <p className="text-charcoal">
+                      <span className="font-medium">Sat-Sun:</span> {lewisvilleLocation.hours.lunch.weekend.display}
                     </p>
                   </div>
                   <div>
-                    <p className=&quot;text-sm font-semibold text-charcoal/60 mb-1&quot;>DINNER</p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Sun-Thu:</span> {lewisvilleLocation.hours.dinner.sunThurs.display}
+                    <p className="text-sm font-semibold text-charcoal/60 mb-1">DINNER</p>
+                    <p className="text-charcoal">
+                      <span className="font-medium">Sun-Thu:</span> {lewisvilleLocation.hours.dinner.sunThurs.display}
                     </p>
-                    <p className=&quot;text-charcoal&quot;>
-                      <span className=&quot;font-medium&quot;>Fri-Sat:</span> {lewisvilleLocation.hours.dinner.friSat.display}
+                    <p className="text-charcoal">
+                      <span className="font-medium">Fri-Sat:</span> {lewisvilleLocation.hours.dinner.friSat.display}
                     </p>
                   </div>
                 </div>
@@ -527,52 +527,52 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* What We Offer Section */}
-        <section className=&quot;py-16 bg-charcoal text-warm-ivory&quot;>
-          <div className=&quot;container mx-auto px-6 text-center&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold mb-6&quot;>
+        <section className="py-16 bg-charcoal text-warm-ivory">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="font-heading text-3xl font-bold mb-6">
               What We Offer
             </h2>
-            <p className=&quot;text-warm-ivory/80 max-w-3xl mx-auto mb-12&quot;>
+            <p className="text-warm-ivory/80 max-w-3xl mx-auto mb-12">
               From our skilled teppanyaki chefs to our fresh sushi bar, every experience at Jinbeh is crafted to exceed expectations. We combine authentic Japanese traditions with exceptional hospitality.
             </p>
 
-            <div className=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto&quot;>
-              <div className=&quot;p-6 bg-charcoal border border-warm-ivory/20 rounded-xl&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🔪</div>
-                <h3 className=&quot;font-heading text-lg font-semibold mb-2&quot;>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              <div className="p-6 bg-charcoal border border-warm-ivory/20 rounded-xl">
+                <div className="text-4xl mb-4">🔪</div>
+                <h3 className="font-heading text-lg font-semibold mb-2">
                   Hibachi Tableside
                 </h3>
-                <p className=&quot;text-warm-ivory/70 text-sm&quot;>
+                <p className="text-warm-ivory/70 text-sm">
                   Watch skilled chefs grill your meal with impressive knife skills and exciting showmanship.
                 </p>
               </div>
 
-              <div className=&quot;p-6 bg-charcoal border border-warm-ivory/20 rounded-xl&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🍣</div>
-                <h3 className=&quot;font-heading text-lg font-semibold mb-2&quot;>
+              <div className="p-6 bg-charcoal border border-warm-ivory/20 rounded-xl">
+                <div className="text-4xl mb-4">🍣</div>
+                <h3 className="font-heading text-lg font-semibold mb-2">
                   Sushi & Sashimi
                 </h3>
-                <p className=&quot;text-warm-ivory/70 text-sm&quot;>
+                <p className="text-warm-ivory/70 text-sm">
                   Premium rolls, nigiri, and sashimi prepared fresh by master sushi chefs daily.
                 </p>
               </div>
 
-              <div className=&quot;p-6 bg-charcoal border border-warm-ivory/20 rounded-xl&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🍶</div>
-                <h3 className=&quot;font-heading text-lg font-semibold mb-2&quot;>
+              <div className="p-6 bg-charcoal border border-warm-ivory/20 rounded-xl">
+                <div className="text-4xl mb-4">🍶</div>
+                <h3 className="font-heading text-lg font-semibold mb-2">
                   Premium Sake
                 </h3>
-                <p className=&quot;text-warm-ivory/70 text-sm&quot;>
+                <p className="text-warm-ivory/70 text-sm">
                   Curated selection of sake, wines, and craft cocktails to complement your meal.
                 </p>
               </div>
 
-              <div className=&quot;p-6 bg-charcoal border border-warm-ivory/20 rounded-xl&quot;>
-                <div className=&quot;text-4xl mb-4&quot;>🎂</div>
-                <h3 className=&quot;font-heading text-lg font-semibold mb-2&quot;>
+              <div className="p-6 bg-charcoal border border-warm-ivory/20 rounded-xl">
+                <div className="text-4xl mb-4">🎂</div>
+                <h3 className="font-heading text-lg font-semibold mb-2">
                   Special Events
                 </h3>
-                <p className=&quot;text-warm-ivory/70 text-sm&quot;>
+                <p className="text-warm-ivory/70 text-sm">
                   Perfect for birthdays, anniversaries, celebrations, and corporate events.
                 </p>
               </div>
@@ -581,92 +581,92 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className=&quot;py-16 bg-warm-ivory&quot;>
-          <div className=&quot;container mx-auto px-6&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold text-charcoal text-center mb-12&quot;>
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Frequently Asked Questions
             </h2>
-            <div className=&quot;max-w-3xl mx-auto space-y-4&quot;>
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+            <div className="max-w-3xl mx-auto space-y-4">
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>How far is Jinbeh from Allen?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Jinbeh Frisco is just 8 minutes from downtown Allen (approximately 4.8 miles), making it the closest premium hibachi and sushi restaurant for Allen residents. Jinbeh Lewisville is an alternative option about 20 minutes away.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>Do you take reservations from Allen?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Absolutely! You can reserve online through OpenTable or call us directly. We recommend reservations, especially for dinner and weekends. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>Is hibachi good for family celebrations?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Yes! Hibachi is perfect for birthdays, anniversaries, and family celebrations. Kids especially love watching the chefs perform tricks like the famous onion volcano. Our staff creates a festive atmosphere that makes every celebration memorable.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>What makes Jinbeh different from other Japanese restaurants?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Jinbeh combines nearly 40 years of family tradition with authentic Japanese cuisine, skilled teppanyaki chefs, a fresh sushi bar, and a commitment to exceptional service. We&apos;re not just a restaurant—we&apos;re an experience that creates lasting memories.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>What attractions are near Jinbeh that Allen residents enjoy?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Jinbeh Frisco is near several popular Allen destinations including Allen Premium Outlets for shopping, Watters Creek for upscale dining and entertainment, Allen Event Center for concerts and events, and Celebration Park for family recreation. Perfect for combining a day out with dinner at Jinbeh.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>Do you offer private dining for corporate events?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Yes! We offer private hibachi dining perfect for team building, client entertainment, and corporate celebrations. Contact us to discuss your event requirements and customize the perfect experience.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>What are your lunch and dinner hours?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   <strong>Frisco Lunch:</strong> Mon-Fri 11am-2pm, Sat-Sun 11:30am-2:30pm<br />
                   <strong>Frisco Dinner:</strong> Sun-Thu 5pm-9pm, Fri-Sat 5pm-10pm<br />
                   <strong>Lewisville Lunch:</strong> Mon-Fri 11am-2pm, Sat-Sun 11:30am-2:30pm<br />
@@ -674,26 +674,26 @@ export default function AllenNearbyPage() {
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>Is there a Japanese restaurant near Allen, TX?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   Yes! Jinbeh is a premier Japanese restaurant near Allen, TX, located in Frisco just 8 minutes away. We offer authentic hibachi, fresh sushi, and full bar service with nearly 40 years of family tradition.
                 </p>
               </details>
 
-              <details className=&quot;group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors&quot;>
-                <summary className=&quot;flex items-center justify-between font-semibold text-charcoal&quot;>
+              <details className="group border border-charcoal/20 rounded-lg p-6 cursor-pointer hover:border-accent-red transition-colors">
+                <summary className="flex items-center justify-between font-semibold text-charcoal">
                   <span>Does Jinbeh deliver to Allen?</span>
-                  <svg className=&quot;w-5 h-5 text-accent-red group-open:rotate-180 transition-transform&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
-                    <path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth={2} d=&quot;M19 14l-7 7m0 0l-7-7m7 7V3&quot; />
+                  <svg className="w-5 h-5 text-accent-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </summary>
-                <p className=&quot;text-charcoal/70 mt-4&quot;>
+                <p className="text-charcoal/70 mt-4">
                   We offer takeout service from both our Frisco and Lewisville locations. For delivery options to Allen, please call us directly at (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville) to inquire about current delivery availability.
                 </p>
               </details>
@@ -702,15 +702,15 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* CTA Section */}
-        <section className=&quot;py-16 bg-deep-indigo text-warm-ivory&quot;>
-          <div className=&quot;container mx-auto px-6 text-center&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold mb-6&quot;>
+        <section className="py-16 bg-deep-indigo text-warm-ivory">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="font-heading text-3xl font-bold mb-6">
               Ready to Experience Jinbeh?
             </h2>
-            <p className=&quot;text-warm-ivory/80 max-w-2xl mx-auto mb-8&quot;>
+            <p className="text-warm-ivory/80 max-w-2xl mx-auto mb-8">
               Just 8 minutes from downtown Allen. Reserve your table today and discover why Allen residents love Jinbeh for hibachi, sushi, and unforgettable dining experiences.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={friscoLocation.reservation.url}
                 target="_blank"
@@ -732,46 +732,46 @@ export default function AllenNearbyPage() {
         </section>
 
         {/* Quick Links */}
-        <section className=&quot;py-16 bg-warm-ivory&quot;>
-          <div className=&quot;container mx-auto px-6&quot;>
-            <h2 className=&quot;font-heading text-3xl font-bold text-charcoal text-center mb-12&quot;>
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Explore More
             </h2>
-            <div className=&quot;grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto&quot;>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
               <Link
                 href="/frisco/menu"
                 className="card text-center hover:border-accent-red"
               >
-                <span className=&quot;text-3xl mb-2 block&quot;>📖</span>
-                <span className=&quot;font-medium text-charcoal&quot;>Frisco Menu</span>
+                <span className="text-3xl mb-2 block">📖</span>
+                <span className="font-medium text-charcoal">Frisco Menu</span>
               </Link>
               <Link
                 href="/lewisville/menu"
                 className="card text-center hover:border-accent-red"
               >
-                <span className=&quot;text-3xl mb-2 block&quot;>📋</span>
-                <span className=&quot;font-medium text-charcoal&quot;>Lewisville Menu</span>
+                <span className="text-3xl mb-2 block">📋</span>
+                <span className="font-medium text-charcoal">Lewisville Menu</span>
               </Link>
               <Link
                 href="/celebrations"
                 className="card text-center hover:border-accent-red"
               >
-                <span className=&quot;text-3xl mb-2 block&quot;>🎉</span>
-                <span className=&quot;font-medium text-charcoal&quot;>Celebrations</span>
+                <span className="text-3xl mb-2 block">🎉</span>
+                <span className="font-medium text-charcoal">Celebrations</span>
               </Link>
               <Link
                 href="/happy-hour"
                 className="card text-center hover:border-accent-red"
               >
-                <span className=&quot;text-3xl mb-2 block&quot;>🍹</span>
-                <span className=&quot;font-medium text-charcoal&quot;>Happy Hour</span>
+                <span className="text-3xl mb-2 block">🍹</span>
+                <span className="font-medium text-charcoal">Happy Hour</span>
               </Link>
             </div>
           </div>
         </section>
 
         {/* Sticky Mobile CTA */}
-        <div className=&quot;sticky-cta-mobile&quot;>
+        <div className="sticky-cta-mobile">
           <a
             href={friscoLocation.reservation.url}
             target="_blank"
