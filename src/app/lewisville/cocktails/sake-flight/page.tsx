@@ -22,11 +22,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Sake Flight",
   "description": "Tasting of three premium sakes",
-  "offers": {
-    "@type": "Offer",
-    "price": "18.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -47,7 +42,7 @@ const faqSchema = {
       "name": "What is the Sake Flight at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sake Flight at Jinbeh Lewisville is tasting of three premium sakes. At $18.00, it's one of our signature bar offerings."
+        "text": "The Sake Flight at Jinbeh Lewisville is a tasting of three premium sakes. It's one of our signature bar offerings. Check our beverage menu for current pricing."
       }
     },
     {
@@ -120,11 +115,8 @@ export default function SakeFlightLewisvillePage() {
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
                 Sake Flight
               </h1>
-              <p className="text-xl text-warm-ivory/90 mb-4">
+              <p className="text-xl text-warm-ivory/90">
                 Tasting of three premium sakes
-              </p>
-              <p className="text-3xl font-bold text-soft-gold">
-                $18.00
               </p>
             </div>
           </div>
@@ -158,10 +150,6 @@ export default function SakeFlightLewisvillePage() {
                 </h2>
                 <table className="w-full">
                   <tbody className="divide-y divide-warm-ivory">
-                    <tr>
-                      <td className="py-4 font-medium text-charcoal">Price</td>
-                      <td className="py-4 text-right text-accent-red font-bold">$18.00</td>
-                    </tr>
                     <tr>
                       <td className="py-4 font-medium text-charcoal">Category</td>
                       <td className="py-4 text-right text-charcoal/80">Cocktails & Sake</td>
@@ -222,7 +210,7 @@ export default function SakeFlightLewisvillePage() {
                       </span>
                     </summary>
                     <p className="mt-4 text-charcoal/70 leading-relaxed">
-                      The Sake Flight at Jinbeh Lewisville is tasting of three premium sakes. At \$18.00, it\'s one of our signature bar offerings.
+                      The Sake Flight at Jinbeh Lewisville is a tasting of three premium sakes. It's one of our signature bar offerings. Check our beverage menu for current pricing.
                     </p>
                   </details>
                   <details className="group border-b border-warm-ivory pb-4">
@@ -278,28 +266,24 @@ export default function SakeFlightLewisvillePage() {
                     className="block p-4 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"
                   >
                     <h3 className="font-medium text-charcoal">Sake Bomb</h3>
-                    <p className="text-sm text-accent-red font-bold mt-1">$8.00</p>
                   </Link>
                   <Link
                     href="/lewisville/cocktails/jinbeh-punch"
                     className="block p-4 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"
                   >
                     <h3 className="font-medium text-charcoal">Jinbeh Punch</h3>
-                    <p className="text-sm text-accent-red font-bold mt-1">$12.00</p>
                   </Link>
                   <Link
                     href="/lewisville/cocktails/tokyo-mule"
                     className="block p-4 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"
                   >
                     <h3 className="font-medium text-charcoal">Tokyo Mule</h3>
-                    <p className="text-sm text-accent-red font-bold mt-1">$14.00</p>
                   </Link>
                   <Link
                     href="/lewisville/cocktails/lychee-martini"
                     className="block p-4 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"
                   >
                     <h3 className="font-medium text-charcoal">Lychee Martini</h3>
-                    <p className="text-sm text-accent-red font-bold mt-1">$13.00</p>
                   </Link>
                 </div>
                 <div className="mt-6 text-center">

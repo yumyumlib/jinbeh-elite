@@ -58,7 +58,7 @@ const faqSchema = {
             name: "Does Jinbeh have a sake menu?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes! Jinbeh offers a premium sake selection with over 120 sake labels to choose from. Our curated collection includes Junmai, Ginjo, Daiginjo, and Nigori varieties. We offer sake tastings to help you discover your perfect pairing. Visit our menu page or ask our staff for recommendations tailored to your meal.",
+                text: "Yes! Jinbeh offers a curated sake selection featuring premium cold sakes including Nigori and Ginjo varieties, traditional hot sake, and festive sake bombs. Our staff can guide you to the perfect pairing for your meal. Visit our menu page or ask for recommendations.",
             },
         },
         {
@@ -485,7 +485,7 @@ export default function SakeSushiMenuPairings() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Yes! Jinbeh offers a premium sake selection with over 120 sake labels to choose from. Our curated collection includes Junmai, Ginjo, Daiginjo, and Nigori varieties. We offer sake tastings to help you discover your perfect pairing. Visit our menu page or ask our staff for recommendations tailored to your meal.
+                                                    Yes! Jinbeh offers a curated sake selection featuring premium cold sakes including Nigori and Ginjo varieties, traditional hot sake, and festive sake bombs. Our staff can guide you to the perfect pairing for your meal. Visit our menu page or ask for recommendations.
                                                 </p>
                                             </div>
                                         </details>

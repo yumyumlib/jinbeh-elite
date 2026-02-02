@@ -343,6 +343,15 @@ export default function LewisvillePage() {
                     <span className="font-medium text-charcoal">Sushi Menu</span>
                     <span className="block text-sm text-charcoal/60">PDF Download</span>
                   </a>
+                  <a
+                    href="/menus/lewisville-beverage-menu.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
+                  >
+                    <span className="font-medium text-charcoal">Beverage Menu</span>
+                    <span className="block text-sm text-charcoal/60">Wine, Sake & Cocktails</span>
+                  </a>
                 </div>
               </div>
 
