@@ -31,7 +31,7 @@ export default function OmakaseDiningGuide() {
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
                         <Link href="/" className="hover:text-white">Home</Link>/<Link href="/blog" className="hover:text-white">Blog</Link>/<Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
-                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-orange-500 mb-4">🍣 Omakase Dining</span>
+                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍣 Omakase Dining</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Omakase: Unraveling the Unique Dining Art</h1>
                 </div>
             </section>
@@ -42,7 +42,7 @@ export default function OmakaseDiningGuide() {
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Omakase is more than just a meal—it's a performance, an art form, and a testament to the skill and expertise of the chef.</strong> This dining style encourages a deep connection between diner and chef, transforming food into an unforgettable experience. Whether you're enjoying <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> or <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link>, omakase showcases culinary artistry at its finest.</p>
 
-                            <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-xl p-6 my-8">
+                            <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Omakase is about trust and artistry. When you sit at the sushi bar and say 'omakase,' you're inviting the chef to showcase their mastery, creativity, and passion for their craft."</p>
                                 <span className="text-sm text-charcoal/60">— Jinbeh Omakase Philosophy</span>
                             </div>
@@ -73,28 +73,28 @@ export default function OmakaseDiningGuide() {
                                 <h3 className="font-bold text-charcoal mb-4">📋 Typical Omakase Course Structure</h3>
                                 <div className="space-y-3">
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold">1</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">1</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Starter</h4>
                                             <p className="text-sm text-charcoal/70">Light appetizer like salad or sashimi to awaken the palate</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold">2</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">2</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Main Courses</h4>
                                             <p className="text-sm text-charcoal/70">Series of sushi pieces, tempura, grilled fish, each served individually with attention to balance and presentation</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold">3</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">3</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Palate Cleanser</h4>
                                             <p className="text-sm text-charcoal/70">Miso or clear soup to cleanse the palate and provide reflective interlude</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold">4</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">4</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Dessert</h4>
                                             <p className="text-sm text-charcoal/70">Matcha creation or fruit-based dessert providing gentle, satisfying conclusion</p>
@@ -232,11 +232,11 @@ export default function OmakaseDiningGuide() {
                                 </div>
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-orange-500 to-accent-red rounded-2xl text-center text-white">
+                            <div className="mt-12 p-8 bg-gradient-to-r from-soft-gold to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍣 Experience Authentic Omakase at Jinbeh</h3>
                                 <p className="text-white/80 mb-6">Our chefs are dedicated to preserving the authenticity of omakase, providing a dining experience that mirrors those found in Japan. Reserve your seat at our sushi bar today.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-orange-500 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Reserve Now</Link>
+                                    <Link href="/reservations" className="bg-white text-soft-gold px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Reserve Now</Link>
                                     <Link href="/frisco" className="bg-white/20 text-white border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-colors">Frisco Location</Link>
                                     <Link href="/lewisville" className="bg-white/20 text-white border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-colors">Lewisville Location</Link>
                                 </div>

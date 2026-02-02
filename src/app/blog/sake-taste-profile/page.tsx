@@ -99,7 +99,7 @@ export default function SakeTasteProfile() {
                         <Link href="/blog?category=beverages" className="hover:text-white">Beverages</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-purple-600 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
                         🍶 Sake Guide
                     </span>
 
@@ -131,7 +131,7 @@ export default function SakeTasteProfile() {
                                         or alcohol burn. Let's explore the fascinating world of sake flavors.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-purple-500/10 to-soft-gold/10 border-l-4 border-purple-600 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Sake is like a symphony of flavors. Each sip reveals different taste elements, from fruity and
                                             floral notes to earthy undertones. Learning to appreciate sake is a journey of discovery."
@@ -224,7 +224,7 @@ export default function SakeTasteProfile() {
                                     </h2>
 
                                     <div className="space-y-6 my-8">
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Junmai (Pure Rice)</h4>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Full-bodied, earthy, with pronounced rice character
@@ -237,7 +237,7 @@ export default function SakeTasteProfile() {
                                             </p>
                                         </div>
 
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Ginjo (Premium)</h4>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Delicate, fruity, floral with bright acidity
@@ -250,7 +250,7 @@ export default function SakeTasteProfile() {
                                             </p>
                                         </div>
 
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Daiginjo (Ultra-Premium)</h4>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Ultra-delicate, elegant, with complex aromatics
@@ -263,7 +263,7 @@ export default function SakeTasteProfile() {
                                             </p>
                                         </div>
 
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Nigori (Cloudy)</h4>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Sweet, creamy, with thicker mouthfeel
@@ -405,7 +405,7 @@ export default function SakeTasteProfile() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-purple-600 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Taste Exceptional Sake at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Visit Jinbeh to experience a curated selection of premium sakes paired with our exceptional <Link href="/blog/types-of-sushi" className="text-white hover:text-soft-gold underline transition-colors">sushi</Link> and Japanese cuisine.

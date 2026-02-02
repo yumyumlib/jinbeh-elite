@@ -156,7 +156,7 @@ export default function TypesOfSakeExplained() {
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/5 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">📊 Factor 1: Ingredients</h3>
                                             <p className="text-charcoal/80 text-sm mb-2">
                                                 <strong>Pure Rice (Junmai):</strong> Only rice, koji, and water. No additives.
@@ -166,7 +166,7 @@ export default function TypesOfSakeExplained() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-soft-gold/10 to-amber-500/10 rounded-2xl p-6 border-l-4 border-soft-gold">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/5 rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">✨ Factor 2: Rice Polishing</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 Rice polishing percentage (Seimai Buai) shows how much of the rice grain is removed. <strong>Lower percentage = more polishing = more refined sake.</strong>
@@ -189,7 +189,7 @@ export default function TypesOfSakeExplained() {
                                     </h2>
 
                                     <div className="space-y-6 my-8">
-                                        <div className="bg-gradient-to-br from-accent-red/10 to-orange-500/10 rounded-2xl p-6 border-l-4 border-accent-red">
+                                        <div className="bg-gradient-to-br from-accent-red/10 to-accent-red/5 rounded-2xl p-6 border-l-4 border-accent-red">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">🍂</div>
                                                 <div className="flex-1">
@@ -213,7 +213,7 @@ export default function TypesOfSakeExplained() {
                                             </div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/5 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">✨</div>
                                                 <div className="flex-1">
@@ -237,7 +237,7 @@ export default function TypesOfSakeExplained() {
                                             </div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-soft-gold/10 to-amber-500/10 rounded-2xl p-6 border-l-4 border-soft-gold">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/5 rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">🏆</div>
                                                 <div className="flex-1">
@@ -261,7 +261,7 @@ export default function TypesOfSakeExplained() {
                                             </div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-2xl p-6 border-l-4 border-blue-500">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">🌊</div>
                                                 <div className="flex-1">
@@ -285,7 +285,7 @@ export default function TypesOfSakeExplained() {
                                             </div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 rounded-2xl p-6 border-l-4 border-purple-500">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">🍷</div>
                                                 <div className="flex-1">
@@ -309,7 +309,7 @@ export default function TypesOfSakeExplained() {
                                             </div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-lime-500/10 to-yellow-500/10 rounded-2xl p-6 border-l-4 border-lime-500">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-yellow-500/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">✨</div>
                                                 <div className="flex-1">
@@ -333,7 +333,7 @@ export default function TypesOfSakeExplained() {
                                             </div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-pink-500/10 to-red-500/10 rounded-2xl p-6 border-l-4 border-pink-500">
+                                        <div className="bg-gradient-to-br from-accent-red/10 to-red-500/10 rounded-2xl p-6 border-l-4 border-accent-red">
                                             <div className="flex items-start gap-4">
                                                 <div className="text-3xl flex-shrink-0">🌸</div>
                                                 <div className="flex-1">
@@ -516,23 +516,23 @@ export default function TypesOfSakeExplained() {
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-4">🌊 Honjozo Flavors</h3>
                                             <ul className="space-y-2 text-charcoal/80">
                                                 <li className="flex gap-2">
-                                                    <span className="text-blue-500">•</span>
+                                                    <span className="text-deep-indigo">•</span>
                                                     <span>Crisp, clean character</span>
                                                 </li>
                                                 <li className="flex gap-2">
-                                                    <span className="text-blue-500">•</span>
+                                                    <span className="text-deep-indigo">•</span>
                                                     <span>Good acidity and balance</span>
                                                 </li>
                                                 <li className="flex gap-2">
-                                                    <span className="text-blue-500">•</span>
+                                                    <span className="text-deep-indigo">•</span>
                                                     <span>Light body, approachable</span>
                                                 </li>
                                                 <li className="flex gap-2">
-                                                    <span className="text-blue-500">•</span>
+                                                    <span className="text-deep-indigo">•</span>
                                                     <span>Versatile with many dishes</span>
                                                 </li>
                                                 <li className="flex gap-2">
-                                                    <span className="text-blue-500">•</span>
+                                                    <span className="text-deep-indigo">•</span>
                                                     <span>Clean, dry finish</span>
                                                 </li>
                                             </ul>
@@ -578,7 +578,7 @@ export default function TypesOfSakeExplained() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-r from-purple-500/10 to-transparent rounded-2xl p-6 border-l-4 border-purple-500">
+                                        <div className="bg-gradient-to-r from-deep-indigo/10 to-transparent rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">If You're a Wine Lover</h3>
                                             <p className="text-charcoal/80 mb-3">
                                                 <strong>Choose: Daiginjo or Aged Koshu</strong>
@@ -588,7 +588,7 @@ export default function TypesOfSakeExplained() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-r from-blue-500/10 to-transparent rounded-2xl p-6 border-l-4 border-blue-500">
+                                        <div className="bg-gradient-to-r from-deep-indigo/10 to-transparent rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">If You're Celebrating or Want Something Special</h3>
                                             <p className="text-charcoal/80 mb-3">
                                                 <strong>Choose: Daiginjo, Sparkling Sake, or Premium Ginjo</strong>
@@ -598,7 +598,7 @@ export default function TypesOfSakeExplained() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-r from-lime-500/10 to-transparent rounded-2xl p-6 border-l-4 border-lime-500">
+                                        <div className="bg-gradient-to-r from-soft-gold/10 to-transparent rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">If You're Pairing with Food</h3>
                                             <p className="text-charcoal/80 mb-3">
                                                 <strong>Match Intensity:</strong> Bold food = fuller-bodied sake (Junmai). Delicate food = refined sake (Ginjo/Daiginjo).
@@ -648,12 +648,12 @@ export default function TypesOfSakeExplained() {
                                             </Link>
                                         </div>
 
-                                        <div className="bg-white border-2 border-purple-500/20 rounded-2xl p-6">
+                                        <div className="bg-white border-2 border-deep-indigo/20 rounded-2xl p-6">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">✨ Premium Collections</h3>
                                             <p className="text-charcoal/80 text-sm mb-4">
                                                 Discover rare and specialty sake selections for discerning palates and special occasions.
                                             </p>
-                                            <Link href="/menu" className="text-purple-500 font-semibold hover:text-accent-red transition-colors inline-flex items-center gap-2">
+                                            <Link href="/menu" className="text-deep-indigo font-semibold hover:text-accent-red transition-colors inline-flex items-center gap-2">
                                                 Premium options <span>→</span>
                                             </Link>
                                         </div>

@@ -138,7 +138,7 @@ export default function BirthdayCelebrationRestaurants() {
                                         special songs, and experiences that go beyond ordinary meals.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Your birthday deserves more than just good food. It deserves an experience
                                             that celebrates YOU. Whether you want an interactive hibachi show or an intimate dinner,
@@ -331,7 +331,7 @@ export default function BirthdayCelebrationRestaurants() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🎉 Make Your Birthday Unforgettable</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         At Jinbeh, we specialize in turning birthday dinners into memorable experiences. Our hibachi chefs,

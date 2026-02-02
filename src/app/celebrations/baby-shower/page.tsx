@@ -92,7 +92,7 @@ export default function BabyShowerPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-pink-500/60 via-purple-500/40 to-blue-500/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-accent-red/60 via-deep-indigo/40 to-deep-indigo/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -173,30 +173,30 @@ export default function BabyShowerPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* For the Mom-to-Be */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-pink-500 text-white p-4">
+                <div className="bg-accent-red text-white p-4">
                   <h3 className="text-xl font-bold">For Mom-to-Be 🤰</h3>
                   <p className="text-pink-100">Pregnancy-Safe Favorites</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-500">✓</span>
+                      <span className="text-accent-red">✓</span>
                       <span><strong>Hibachi Chicken or Steak</strong> – Thoroughly cooked at your table</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-500">✓</span>
+                      <span className="text-accent-red">✓</span>
                       <span><strong>Shrimp & Vegetable Tempura</strong> – Crispy and delicious</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-500">✓</span>
+                      <span className="text-accent-red">✓</span>
                       <span><strong>Cooked Sushi Rolls</strong> – California roll, shrimp tempura roll</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-500">✓</span>
+                      <span className="text-accent-red">✓</span>
                       <span><strong>Hibachi Fried Rice</strong> – A crowd favorite</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-500">✓</span>
+                      <span className="text-accent-red">✓</span>
                       <span><strong>Miso Soup & Salad</strong> – Fresh starters</span>
                     </li>
                   </ul>
@@ -205,30 +205,30 @@ export default function BabyShowerPage() {
 
               {/* For the Guests */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-blue-500 text-white p-4">
+                <div className="bg-deep-indigo text-white p-4">
                   <h3 className="text-xl font-bold">For Your Guests 👨‍👩‍👧‍👦</h3>
                   <p className="text-blue-100">Full Menu Available</p>
                 </div>
                 <div className="p-6">
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-500">✓</span>
+                      <span className="text-deep-indigo">✓</span>
                       <span><strong>Full Hibachi Selection</strong> – Filet mignon, lobster, salmon</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-500">✓</span>
+                      <span className="text-deep-indigo">✓</span>
                       <span><strong>Sushi & Sashimi</strong> – Fresh rolls and nigiri</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-500">✓</span>
+                      <span className="text-deep-indigo">✓</span>
                       <span><strong>Sake & Cocktails</strong> – For the non-pregnant guests!</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-500">✓</span>
+                      <span className="text-deep-indigo">✓</span>
                       <span><strong>Kids' Hibachi</strong> – Chicken with fried rice</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-500">✓</span>
+                      <span className="text-deep-indigo">✓</span>
                       <span><strong>Vegetarian Options</strong> – Tofu and veggie hibachi</span>
                     </li>
                   </ul>
@@ -268,7 +268,7 @@ export default function BabyShowerPage() {
             
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">1</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Choose Your Date & Time</h3>
                   <p className="text-gray-700">
@@ -279,7 +279,7 @@ export default function BabyShowerPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">2</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Confirm Guest Count</h3>
                   <p className="text-gray-700">
@@ -290,7 +290,7 @@ export default function BabyShowerPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">3</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Plan Your Menu</h3>
                   <p className="text-gray-700">
@@ -301,7 +301,7 @@ export default function BabyShowerPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">4</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Celebrate!</h3>
                   <p className="text-gray-700">
@@ -397,7 +397,7 @@ export default function BabyShowerPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 to-blue-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-accent-red to-deep-indigo text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Plan Your Baby Shower?

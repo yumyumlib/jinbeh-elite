@@ -45,7 +45,7 @@ export default function RamuneSodaGuide() {
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
                         <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
                     </nav>
-                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-blue-600 mb-4">🍹 Beverages</span>
+                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍹 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Ramune Soda: Unique Flavors & Marble Magic</h1>
                 </div>
             </section>
@@ -60,7 +60,7 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">Originating from Japan, Ramune has been enjoyed for generations. The name "Ramune" is derived from the English word "lemonade," reflecting its original citrus flavor. Over the years, Ramune has expanded its flavor offerings, captivating consumers worldwide with an array of tastes ranging from fruity to floral.</p>
                             <p className="text-charcoal/80 mb-6">The evolution of its flavors mirrors the dynamic nature of Japanese cuisine, which often blends traditional ingredients with modern tastes. Today, Ramune's appeal extends beyond its flavors, capturing the imagination of those who appreciate novelty and cultural connection in their beverages.</p>
 
-                            <div className="bg-blue-50 rounded-xl p-6 mb-8 border-l-4 border-blue-600">
+                            <div className="bg-blue-50 rounded-xl p-6 mb-8 border-l-4 border-deep-indigo">
                                 <h3 className="font-bold text-charcoal mb-2">Cultural Icon</h3>
                                 <p className="text-charcoal/80 text-sm">Ramune is synonymous with Japanese summer festivals and childhood memories. The distinctive sound of the marble popping evokes nostalgia and joy, making it an integral part of Japanese pop culture worldwide.</p>
                             </div>
@@ -85,27 +85,27 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">Opening a Ramune bottle is an experience in itself. Follow these simple steps to enjoy this distinctive soda:</p>
 
                             <div className="space-y-4 my-8">
-                                <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-blue-600">
+                                <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-deep-indigo">
                                     <div className="flex gap-4 items-start">
-                                        <span className="text-3xl font-bold text-blue-600 flex-shrink-0">1</span>
+                                        <span className="text-3xl font-bold text-deep-indigo flex-shrink-0">1</span>
                                         <div>
                                             <h3 className="font-bold text-charcoal mb-2">Remove the Plastic Cap</h3>
                                             <p className="text-charcoal/80 text-sm">The cap comes with a small plastic plunger. Detach the plunger and set it aside. This initial step prepares you for the unique opening process.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-blue-600">
+                                <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-deep-indigo">
                                     <div className="flex gap-4 items-start">
-                                        <span className="text-3xl font-bold text-blue-600 flex-shrink-0">2</span>
+                                        <span className="text-3xl font-bold text-deep-indigo flex-shrink-0">2</span>
                                         <div>
                                             <h3 className="font-bold text-charcoal mb-2">Pop the Marble</h3>
                                             <p className="text-charcoal/80 text-sm">Place the plunger over the marble and press down firmly until it drops into the bottle's neck. This releases the carbonation with a satisfying pop and you can start sipping.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-blue-600">
+                                <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-deep-indigo">
                                     <div className="flex gap-4 items-start">
-                                        <span className="text-3xl font-bold text-blue-600 flex-shrink-0">3</span>
+                                        <span className="text-3xl font-bold text-deep-indigo flex-shrink-0">3</span>
                                         <div>
                                             <h3 className="font-bold text-charcoal mb-2">Enjoy</h3>
                                             <p className="text-charcoal/80 text-sm">Tilt the bottle slightly while drinking to ensure the marble doesn't block the liquid flow. This adds a playful challenge, keeping you engaged and entertained.</p>
@@ -157,11 +157,11 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">The marble's role in the Ramune bottle is both functional and scientifically elegant. The Codd-neck design uses the marble to seal in carbonation effectively:</p>
 
                             <div className="space-y-4 my-8">
-                                <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-600">
+                                <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-deep-indigo">
                                     <h4 className="font-bold text-charcoal mb-2">Preservation</h4>
                                     <p className="text-charcoal/80 text-sm">The marble maintains the soda's carbonation, keeping it fresh and fizzy until you're ready to enjoy it. This aspect is crucial, as effervescence is key to Ramune's refreshing appeal.</p>
                                 </div>
-                                <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-600">
+                                <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-deep-indigo">
                                     <h4 className="font-bold text-charcoal mb-2">Pressure Dynamics</h4>
                                     <p className="text-charcoal/80 text-sm">The pressure from carbonated liquid holds the marble in place, preventing it from rolling back into the bottle's neck once opened. This clever engineering maintains product quality.</p>
                                 </div>
@@ -211,12 +211,12 @@ export default function RamuneSodaGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl text-center text-white">
+                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-blue-800 rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍹 Enjoy Ramune at Jinbeh</h3>
                                 <p className="mb-6 text-white/90">Discover Ramune soda and other authentic Japanese beverages at Jinbeh. Pair them with our hibachi entertainment and traditional Japanese cuisine for a complete cultural experience. Visit us in Frisco or Lewisville and enjoy Japanese hospitality at its finest.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/menu" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/blog/types-of-sushi" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Sushi Varieties</Link>
+                                    <Link href="/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
+                                    <Link href="/blog/types-of-sushi" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Sushi Varieties</Link>
                                     <Link href="/locations/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Frisco Location</Link>
                                     <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
                                 </div>

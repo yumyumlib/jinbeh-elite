@@ -340,7 +340,7 @@ export default function OrderOnlinePage() {
                                 {/* Frisco Location */}
                                 <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                                     {/* Header */}
-                                    <div className="bg-gradient-to-r from-accent-red to-orange-500 p-8 text-white">
+                                    <div className="bg-gradient-to-r from-accent-red to-soft-gold p-8 text-white">
                                         <h3 className="text-3xl font-heading font-bold mb-2">🏯 Frisco</h3>
                                         <p className="text-white/90">3200 Dallas Pkwy Suite 115</p>
                                         <p className="text-white/80">Near Stonebriar Centre</p>
@@ -430,7 +430,7 @@ export default function OrderOnlinePage() {
                                 {/* Lewisville Location */}
                                 <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                                     {/* Header */}
-                                    <div className="bg-gradient-to-r from-deep-indigo to-blue-600 p-8 text-white">
+                                    <div className="bg-gradient-to-r from-deep-indigo to-deep-indigo p-8 text-white">
                                         <h3 className="text-3xl font-heading font-bold mb-2">🍣 Lewisville</h3>
                                         <p className="text-white/90">400 W Main St Suite 115</p>
                                         <p className="text-white/80">Off I-35E</p>
@@ -651,7 +651,7 @@ export default function OrderOnlinePage() {
                 </section>
 
                 {/* Final CTA */}
-                <section className="py-20 bg-gradient-to-r from-accent-red to-orange-500 text-white">
+                <section className="py-20 bg-gradient-to-r from-accent-red to-soft-gold text-white">
                     <div className="container mx-auto px-6">
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">

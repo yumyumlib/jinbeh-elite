@@ -123,7 +123,7 @@ export default function HowToEatSushi() {
                         <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
                         🍣 Cuisine
                     </span>
 
@@ -154,7 +154,7 @@ export default function HowToEatSushi() {
                                         no pressure to be perfect. Let's walk through the proper way to eat sushi so you can dine with confidence.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Sushi is not just about the food—it's about respect, tradition, and the experience.
                                             At Jinbeh, we believe everyone should feel comfortable enjoying sushi their own way,
@@ -174,10 +174,10 @@ export default function HowToEatSushi() {
 
                                 {/* Step-by-Step Guide */}
                                 <div className="space-y-6 my-12">
-                                    <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-2xl p-6 border-l-4 border-orange-500">
+                                    <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-bold">1</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">1</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Prepare Your Station</h3>
@@ -190,10 +190,10 @@ export default function HowToEatSushi() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-2xl p-6 border-l-4 border-orange-500">
+                                    <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-bold">2</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">2</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Start with Mild Flavors</h3>
@@ -206,10 +206,10 @@ export default function HowToEatSushi() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-2xl p-6 border-l-4 border-orange-500">
+                                    <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-bold">3</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">3</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Dip (Lightly!) the Fish Side</h3>
@@ -222,10 +222,10 @@ export default function HowToEatSushi() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-2xl p-6 border-l-4 border-orange-500">
+                                    <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-bold">4</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">4</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Eat in One Bite (If Possible)</h3>
@@ -237,10 +237,10 @@ export default function HowToEatSushi() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-2xl p-6 border-l-4 border-orange-500">
+                                    <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-bold">5</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">5</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Cleanse Your Palate</h3>
@@ -252,10 +252,10 @@ export default function HowToEatSushi() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-2xl p-6 border-l-4 border-orange-500">
+                                    <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-heading font-bold">6</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">6</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Enjoy the Experience</h3>
@@ -399,7 +399,7 @@ export default function HowToEatSushi() {
                                 </div>
 
                                 {/* Soy Sauce Guide */}
-                                <div className="bg-gradient-to-br from-soft-gold/20 to-orange-500/10 rounded-2xl p-8 my-8 border-l-4 border-orange-500">
+                                <div className="bg-gradient-to-br from-soft-gold/20 to-soft-gold/10 rounded-2xl p-8 my-8 border-l-4 border-soft-gold">
                                     <h3 className="font-heading font-bold text-xl text-charcoal mb-6">The Golden Rules of Soy Sauce</h3>
                                     <div className="space-y-4">
                                         <div className="flex gap-4">
@@ -469,7 +469,7 @@ export default function HowToEatSushi() {
 
                                 {/* Wasabi vs Ginger */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-                                    <div className="bg-gradient-to-br from-accent-red/10 to-orange-500/10 rounded-2xl p-6 border-2 border-accent-red">
+                                    <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 rounded-2xl p-6 border-2 border-accent-red">
                                         <h3 className="font-heading font-bold text-xl text-charcoal mb-4">🌶️ Wasabi</h3>
                                         <div className="space-y-4">
                                             <div>
@@ -496,7 +496,7 @@ export default function HowToEatSushi() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-deep-indigo/10 to-purple-500/10 rounded-2xl p-6 border-2 border-deep-indigo">
+                                    <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-2 border-deep-indigo">
                                         <h3 className="font-heading font-bold text-xl text-charcoal mb-4">🍋 Pickled Ginger</h3>
                                         <div className="space-y-4">
                                             <div>
@@ -641,42 +641,42 @@ export default function HowToEatSushi() {
 
                                 {/* Pro Tips */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-                                    <div className="bg-gradient-to-br from-soft-gold/30 to-orange-500/20 rounded-xl p-6">
+                                    <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #1: Respect the Sushi Chef</p>
                                         <p className="text-charcoal/80 text-sm">
                                             Every piece is crafted with care. Eating with intention and appreciation honors their work.
                                         </p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/30 to-orange-500/20 rounded-xl p-6">
+                                    <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #2: Order Progressively</p>
                                         <p className="text-charcoal/80 text-sm">
                                             Start mild, end bold. White fish, then tuna, then spicy rolls. This builds the experience.
                                         </p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/30 to-orange-500/20 rounded-xl p-6">
+                                    <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #3: Sit at the Counter</p>
                                         <p className="text-charcoal/80 text-sm">
                                             If possible, eat at the sushi bar. You'll get the freshest pieces and can interact with the chef.
                                         </p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/30 to-orange-500/20 rounded-xl p-6">
+                                    <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #4: No Photos, Just Moments</p>
                                         <p className="text-charcoal/80 text-sm">
                                             A quick photo is fine, but eat while the sushi is fresh. Cold sushi loses its delicate flavors.
                                         </p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/30 to-orange-500/20 rounded-xl p-6">
+                                    <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #5: Ask the Chef's Recommendation</p>
                                         <p className="text-charcoal/80 text-sm">
                                             "What's fresh today?" Chef's specials are often the best—they know quality when they see it.
                                         </p>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/30 to-orange-500/20 rounded-xl p-6">
+                                    <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #6: Don't Rush</p>
                                         <p className="text-charcoal/80 text-sm">
                                             Sushi is not fast food. Savor each bite, pause, appreciate. Rushing ruins the experience.
@@ -704,7 +704,7 @@ export default function HowToEatSushi() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Dine with Confidence?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Now that you know the etiquette, experience authentic sushi at Jinbeh. Our chefs prepare every piece with care,
@@ -744,7 +744,7 @@ export default function HowToEatSushi() {
                                 </div>
 
                                 {/* Location CTA */}
-                                <div className="mt-12 p-8 bg-gradient-to-r from-orange-500/10 to-soft-gold/10 rounded-2xl border-l-4 border-orange-500">
+                                <div className="mt-12 p-8 bg-gradient-to-r from-soft-gold/10 to-soft-gold/10 rounded-2xl border-l-4 border-soft-gold">
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">📍 Ready to Practice Your Etiquette?</h3>
                                     <p className="text-charcoal/80 mb-6">
                                         Visit Jinbeh in Frisco or Lewisville and put your sushi knowledge to work. Our expert chefs will appreciate your respect for the craft. Consider pairing your meal with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for an enhanced dining experience.

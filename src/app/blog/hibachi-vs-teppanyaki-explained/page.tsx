@@ -270,46 +270,46 @@ export default function HibachiVsTeppanyakiPage() {
 
       <h3>At an American "Hibachi" Restaurant (Actually Teppanyaki)</h3>
 
-      <div className="bg-orange-500/10 rounded-xl p-6 my-6 border-l-4 border-orange-500">
+      <div className="bg-soft-gold/10 rounded-xl p-6 my-6 border-l-4 border-soft-gold">
         <ul className="space-y-3 text-charcoal/80">
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Communal seating</strong> — Large flat griddle with 6-10 diners seated around it
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Interactive entertainment</strong> — Chefs perform tricks: onion volcanos, fire displays, knife skills
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Social atmosphere</strong> — Celebration-friendly environment with laughter and energy
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Complete meal included</strong> — Typically soup, salad, fried rice, vegetables, and protein
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Generous portions</strong> — Large servings designed for satisfaction and leftovers
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Moderate pricing</strong> — Generally $25-$45 per person for a full dinner experience
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-orange-500 font-bold">•</span>
+            <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Clean, bright flavors</strong> — Flat-top griddle cooking produces well-seared exteriors and tender interiors
             </span>
@@ -430,7 +430,7 @@ export default function HibachiVsTeppanyakiPage() {
       </p>
 
       {/* Related Content Links */}
-      <div className="bg-gradient-to-r from-soft-gold/20 to-orange-500/10 rounded-xl p-6 my-8">
+      <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-xl p-6 my-8">
         <h3 className="font-heading font-bold text-charcoal mb-4">Learn More About Japanese Dining</h3>
         <ul className="space-y-2 text-charcoal/80">
           <li>

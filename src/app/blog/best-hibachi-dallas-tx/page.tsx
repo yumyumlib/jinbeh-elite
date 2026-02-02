@@ -158,17 +158,17 @@ export default function BestHibachiDallas() {
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
-                                        <div className="bg-gradient-to-br from-accent-red to-orange-500 rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
+                                        <div className="bg-gradient-to-br from-accent-red to-soft-gold rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
                                             <span className="text-4xl mb-3 block">🔥</span>
                                             <h3 className="font-heading font-bold text-lg mb-2">The Show</h3>
                                             <p className="text-sm text-white/90">Knife tricks, fire, flying food</p>
                                         </div>
-                                        <div className="bg-gradient-to-br from-deep-indigo to-blue-500 rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
+                                        <div className="bg-gradient-to-br from-deep-indigo to-deep-indigo rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
                                             <span className="text-4xl mb-3 block">🥩</span>
                                             <h3 className="font-heading font-bold text-lg mb-2">Fresh Cuts</h3>
                                             <p className="text-sm text-white/90">Quality steak, shrimp, chicken</p>
                                         </div>
-                                        <div className="bg-gradient-to-br from-soft-gold to-amber-500 rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
+                                        <div className="bg-gradient-to-br from-soft-gold to-soft-gold rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
                                             <span className="text-4xl mb-3 block">👨‍👩‍👧‍👦</span>
                                             <h3 className="font-heading font-bold text-lg mb-2">Community</h3>
                                             <p className="text-sm text-white/90">Shared tables, shared memories</p>

@@ -130,7 +130,7 @@ export default function SakeSushiMenuPairings() {
                         <Link href="/blog?category=beverages" className="hover:text-white">Beverages</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-purple-600 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
                         🍶 Sake Pairings
                     </span>
 
@@ -162,7 +162,7 @@ export default function SakeSushiMenuPairings() {
                                         culinary moments.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-purple-500/10 to-soft-gold/10 border-l-4 border-purple-600 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "The harmonious relationship between sake and sushi is rooted in centuries of Japanese culinary
                                             tradition. When you understand the principles of pairing, you unlock a new dimension of flavor."
@@ -234,7 +234,7 @@ export default function SakeSushiMenuPairings() {
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">General Pairing Tips</h3>
 
                                     <div className="space-y-6 my-8">
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Match Intensity</h4>
                                             <p className="text-charcoal/70">
                                                 Pair light sakes with delicate sushi flavors and rich sakes with robust fish. A delicate white
@@ -243,7 +243,7 @@ export default function SakeSushiMenuPairings() {
                                             </p>
                                         </div>
 
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Consider the Rice</h4>
                                             <p className="text-charcoal/70">
                                                 Since both sushi and sake are rice-based, finding a harmony in their textures creates a more
@@ -252,7 +252,7 @@ export default function SakeSushiMenuPairings() {
                                             </p>
                                         </div>
 
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Balance Flavors</h4>
                                             <p className="text-charcoal/70">
                                                 Use sake to counterbalance sushi flavors, such as using sweet Nigori to complement spicy rolls,
@@ -260,7 +260,7 @@ export default function SakeSushiMenuPairings() {
                                             </p>
                                         </div>
 
-                                        <div className="border-l-4 border-orange-500 pl-6">
+                                        <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Acidity and Sweetness</h4>
                                             <p className="text-charcoal/70">
                                                 Pay attention to the sake&apos;s acidity level. Higher acidity provides a refreshing palate cleanser
@@ -507,7 +507,7 @@ export default function SakeSushiMenuPairings() {
                                 <RelatedArticles currentSlug="sake-sushi-menu-pairings" />
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-purple-600 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Explore Sake Pairings at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Visit Jinbeh to experience expertly curated sake and sushi pairings. Our sommeliers can recommend
@@ -535,7 +535,7 @@ export default function SakeSushiMenuPairings() {
                                             <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-purple-600">🍶 Beverages</span>
+                                            <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>
                                             <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Pairing Guide</h4>
                                         </div>
                                     </Link>
@@ -555,7 +555,7 @@ export default function SakeSushiMenuPairings() {
                                             <Image src="/images/blog/12-C060324-6551.jpg" alt="Best sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-orange-500">📍 Locations</span>
+                                            <span className="text-xs font-medium text-soft-gold">📍 Locations</span>
                                             <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi in Frisco</h4>
                                         </div>
                                     </Link>
@@ -564,7 +564,7 @@ export default function SakeSushiMenuPairings() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-purple-500/10 text-purple-600">🍶 Beverages</Link>
+                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo">🍶 Beverages</Link>
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍣 Cuisine</Link>
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
                                     </div>

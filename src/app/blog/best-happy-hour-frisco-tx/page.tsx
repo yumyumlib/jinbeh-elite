@@ -347,7 +347,7 @@ export default function BestHappyHourFrisco() {
                                             <Image src="/images/blog/17-C060324-6708.jpg" alt="Sake" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-purple-600">🍶 Beverages</span>
+                                            <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>
                                             <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Alcohol Strength Guide</h4>
                                         </div>
                                     </Link>

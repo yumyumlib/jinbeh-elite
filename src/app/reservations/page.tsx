@@ -38,7 +38,7 @@ const reservationMethods = [
     title: "Online Reservation",
     icon: "🌐",
     description: "Book online through OpenTable for instant confirmation.",
-    color: "from-deep-indigo to-blue-600",
+    color: "from-deep-indigo to-deep-indigo",
   },
   {
     title: "Call Us",

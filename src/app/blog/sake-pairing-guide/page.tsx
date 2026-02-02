@@ -169,7 +169,7 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                                        <div className="bg-gradient-to-br from-accent-red/10 to-orange-500/10 rounded-2xl p-6 border-l-4 border-accent-red">
+                                        <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-accent-red">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🍂 Junmai (Pure Rice Sake)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 Made only from rice, koji, and water. Fuller-bodied with earthy, rice-forward flavors.
@@ -179,7 +179,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">✨ Ginjo (Premium Grade)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 Highly refined with at least 40% of rice removed. Delicate, fruity, floral aromas.
@@ -189,7 +189,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-soft-gold/10 to-amber-500/10 rounded-2xl p-6 border-l-4 border-soft-gold">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🏆 Daiginjo (Ultra-Premium)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 Over 50% of rice removed. Incredibly elegant with subtle, complex flavors and fragrance.
@@ -199,7 +199,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-accent-red/10 to-pink-500/10 rounded-2xl p-6 border-l-4 border-accent-red">
+                                        <div className="bg-gradient-to-br from-accent-red/10 to-accent-red/10 rounded-2xl p-6 border-l-4 border-accent-red">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🌊 Honjozo (Brewer's Alcohol Added)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 Brewers add a touch of distilled alcohol. Crisp, light, and clean with good acidity.
@@ -209,7 +209,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-purple-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🍷 Koshu (Aged Sake)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 Stored for years, developing rich amber color and complex, aged flavors (sherry-like).
@@ -219,7 +219,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-soft-gold/10 to-lime-500/10 rounded-2xl p-6 border-l-4 border-soft-gold">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">✨ Sparkling Sake (Hana Awaka)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 Carbonated sake with light, refreshing bubbles and subtle sweetness. Perfect for celebrations.
@@ -316,7 +316,7 @@ export default function SakePairingGuide() {
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                                        <div className="bg-gradient-to-br from-accent-red/10 to-orange-500/10 rounded-2xl p-6">
+                                        <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 rounded-2xl p-6">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Grilled Proteins (Steak, Chicken, Shrimp)</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 <strong>Top choice:</strong> Junmai or Honjozo served warm (104-113°F)
@@ -329,7 +329,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Grilled Vegetables & Fried Rice</h3>
                                             <p className="text-charcoal/80 text-sm mb-3">
                                                 <strong>Top choice:</strong> Warm Junmai or aged Koshu
@@ -419,7 +419,7 @@ export default function SakePairingGuide() {
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                                        <div className="bg-gradient-to-br from-accent-red to-orange-500 rounded-2xl p-6 text-white">
+                                        <div className="bg-gradient-to-br from-accent-red to-soft-gold rounded-2xl p-6 text-white">
                                             <h3 className="font-heading font-bold text-lg mb-2">❄️ Chilled (50-55°F)</h3>
                                             <p className="text-sm text-white/90 mb-3">
                                                 <strong>Best for:</strong> Ginjo, Daiginjo, and sparkling sake
@@ -430,7 +430,7 @@ export default function SakePairingGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo to-blue-500 rounded-2xl p-6 text-white">
+                                        <div className="bg-gradient-to-br from-deep-indigo to-deep-indigo rounded-2xl p-6 text-white">
                                             <h3 className="font-heading font-bold text-lg mb-2">❄️ Cool (55-65°F)</h3>
                                             <p className="text-sm text-white/90 mb-3">
                                                 <strong>Best for:</strong> Light Honjozo and some Junmai

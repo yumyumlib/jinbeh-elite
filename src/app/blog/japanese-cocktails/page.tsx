@@ -36,7 +36,7 @@ export default function JapaneseCocktails() {
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
                         <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
                     </nav>
-                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-purple-600 mb-4">🍹 Beverages</span>
+                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍹 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Cocktails: Art, Recipes & Mixology</h1>
                 </div>
             </section>
@@ -50,7 +50,7 @@ export default function JapaneseCocktails() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 The Foundation of Japanese Cocktails</h2>
                             <p className="text-charcoal/80 mb-6">Japanese cocktails are deeply rooted in tradition and culture, emphasizing precision, quality ingredients, and the art of presentation. To truly appreciate Japanese cocktails, it's essential to understand the foundational spirits used in these drinks. Learn how to match beverages with your meal through our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake recommendations</Link> and dining guides.</p>
 
-                            <div className="bg-warm-ivory rounded-xl p-6 mb-8 border-l-4 border-purple-600">
+                            <div className="bg-warm-ivory rounded-xl p-6 mb-8 border-l-4 border-deep-indigo">
                                 <h3 className="font-bold text-charcoal mb-4">Key Japanese Spirits</h3>
                                 <div className="space-y-4">
                                     <div>
@@ -210,14 +210,14 @@ export default function JapaneseCocktails() {
                                 </details>
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-purple-600 to-deep-indigo rounded-2xl text-center text-white">
+                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍹 Experience Japanese Cocktails at Jinbeh</h3>
                                 <p className="mb-6 text-white/90">Discover the art and flavor of authentic Japanese cocktails crafted by our skilled mixologists using premium spirits and traditional techniques. Whether you're at our Frisco or Lewisville location, experience cocktails prepared with the precision and care of a gracious host.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-purple-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
+                                    <Link href="/frisco/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
                                     <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
                                     <Link href="/happy-hour" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Happy Hour Specials</Link>
-                                    <Link href="#reserve" className="bg-soft-gold text-purple-600 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Make Reservation</Link>
+                                    <Link href="#reserve" className="bg-soft-gold text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Make Reservation</Link>
                                 </div>
                             </div>
                         </article>

@@ -98,7 +98,7 @@ export default function SushiCookingClasses() {
                         <Link href="/blog?category=cuisine" className="hover:text-white">Guides</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
                         🍣 Culinary Arts
                     </span>
 
@@ -130,7 +130,7 @@ export default function SushiCookingClasses() {
                                         authentic Japanese techniques. By the end, you'll understand the nuances of different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> and how to create them at home.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Learning to make sushi is not just about creating food—it's about understanding
                                             a centuries-old culinary tradition. Our instructors are passionate about sharing this knowledge
@@ -200,7 +200,7 @@ export default function SushiCookingClasses() {
                                         fundamentals in a supportive environment where instructors provide step-by-step guidance.
                                     </p>
 
-                                    <p className="text-charcoal/80 mb-6 pl-6 border-l-4 border-orange-500">
+                                    <p className="text-charcoal/80 mb-6 pl-6 border-l-4 border-soft-gold">
                                         <strong>Topics covered:</strong><br/>
                                         • Preparing and seasoning sushi rice<br/>
                                         • Selecting, handling, and slicing fresh fish<br/>
@@ -216,7 +216,7 @@ export default function SushiCookingClasses() {
                                         creative applications. These courses emphasize precision, artistry, and professional-level skills.
                                     </p>
 
-                                    <p className="text-charcoal/80 mb-6 pl-6 border-l-4 border-orange-500">
+                                    <p className="text-charcoal/80 mb-6 pl-6 border-l-4 border-soft-gold">
                                         <strong>Advanced topics include:</strong><br/>
                                         • Creating intricate specialty rolls<br/>
                                         • Nigiri preparation with perfect proportions<br/>
@@ -369,7 +369,7 @@ export default function SushiCookingClasses() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Learn Sushi?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Welcome to the table! Contact Jinbeh to inquire about our sushi making classes. Learn authentic techniques from experienced chefs in a fun, gracious environment.
@@ -398,7 +398,7 @@ export default function SushiCookingClasses() {
                                             <Image src="/images/blog/12-C060324-6551.jpg" alt="Types of sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-orange-500">🍣 Cuisine</span>
+                                            <span className="text-xs font-medium text-soft-gold">🍣 Cuisine</span>
                                             <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sushi Guide</h4>
                                         </div>
                                     </Link>
@@ -418,7 +418,7 @@ export default function SushiCookingClasses() {
                                             <Image src="/images/blog/14-C060324-6596.jpg" alt="Beginner tips" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-purple-600">👨‍🎓 Learning</span>
+                                            <span className="text-xs font-medium text-deep-indigo">👨‍🎓 Learning</span>
                                             <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Beginner Sushi Tips</h4>
                                         </div>
                                     </Link>
@@ -427,7 +427,7 @@ export default function SushiCookingClasses() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-orange-500/10 text-orange-500">🍣 Cuisine</Link>
+                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/10 text-soft-gold">🍣 Cuisine</Link>
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
                                         <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">👨‍🎓 Learning</Link>
                                     </div>

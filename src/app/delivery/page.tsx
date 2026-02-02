@@ -193,7 +193,7 @@ export default function DeliveryPage() {
 
               {/* Grubhub */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-32 bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center">
+                <div className="h-32 bg-gradient-to-br from-red-500 to-soft-gold flex items-center justify-center">
                   <svg className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" />
                   </svg>
@@ -338,7 +338,7 @@ export default function DeliveryPage() {
                   name: "Chicken Teriyaki",
                   description: "Grilled chicken with savory teriyaki glaze",
                   icon: "🍗",
-                  color: "from-yellow-600 to-amber-500",
+                  color: "from-yellow-600 to-soft-gold",
                 },
                 {
                   name: "Veggie Deluxe",

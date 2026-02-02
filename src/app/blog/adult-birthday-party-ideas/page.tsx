@@ -127,7 +127,7 @@ export default function AdultBirthdayPartyIdeas() {
                                         celebrate in style.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Your birthday is a chance to celebrate who you are and create memories that last.
                                             Whether you choose an elegant masquerade, an interactive hibachi experience, or an
@@ -344,7 +344,7 @@ export default function AdultBirthdayPartyIdeas() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🎉 Host Your Birthday Bash at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         It's a celebration! Jinbeh offers interactive hibachi experiences, delicious Japanese cuisine, and a festive atmosphere. Your birthday will be truly unforgettable.

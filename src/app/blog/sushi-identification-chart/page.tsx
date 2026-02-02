@@ -99,7 +99,7 @@ export default function SushiIdentificationChart() {
                         <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
                         🍣 Cuisine Guide
                     </span>
 
@@ -131,7 +131,7 @@ export default function SushiIdentificationChart() {
                                         vibrant world of sushi with confidence.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Understanding sushi types enhances your dining experience. Each style has its own story,
                                             preparation method, and flavor profile. Let's explore the world of sushi together."
@@ -301,7 +301,7 @@ export default function SushiIdentificationChart() {
                                     </h2>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                                        <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 rounded-2xl p-6">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 rounded-2xl p-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Raw Fish Options</h4>
                                             <ul className="text-charcoal/70 text-sm space-y-2">
                                                 <li><strong>Tuna:</strong> Rich, robust, clean flavor</li>
@@ -311,7 +311,7 @@ export default function SushiIdentificationChart() {
                                             </ul>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-purple-500/10 rounded-2xl p-6">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Cooked Options</h4>
                                             <ul className="text-charcoal/70 text-sm space-y-2">
                                                 <li><strong>Eel (Unagi):</strong> Sweet, smoky, savory</li>
@@ -406,7 +406,7 @@ export default function SushiIdentificationChart() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Experience Sushi at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Ready to explore these sushi types in person? Visit Jinbeh to taste authentic preparations from

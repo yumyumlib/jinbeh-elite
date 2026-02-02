@@ -193,7 +193,7 @@ export default function ThanksgivingDiningGuide() {
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🎭 Interactive Dining</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">Hibachi experiences</Link> turn dinner into entertainment. Watch skilled chefs perform while cooking
@@ -201,7 +201,7 @@ export default function ThanksgivingDiningGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-accent-red/10 to-orange-500/10 rounded-2xl p-6 border-l-4 border-accent-red">
+                                        <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-accent-red">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🌾 Variety & Customization</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 Unlike traditional Thanksgiving meals, Japanese menus offer proteins, vegetables, seafood, and
@@ -209,7 +209,7 @@ export default function ThanksgivingDiningGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-soft-gold/10 to-amber-500/10 rounded-2xl p-6 border-l-4 border-soft-gold">
+                                        <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🍣 Lighter, Fresher Flavors</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 Japanese cuisine emphasizes fresh, high-quality ingredients without heavy cream sauces.
@@ -217,7 +217,7 @@ export default function ThanksgivingDiningGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-purple-500/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
+                                        <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 border-l-4 border-deep-indigo">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🤝 Bringing People Together</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 Communal dining is central to Japanese culture. Shared platters, hibachi tables, and family-style
@@ -225,7 +225,7 @@ export default function ThanksgivingDiningGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-warm-gold/10 to-pink-500/10 rounded-2xl p-6 border-l-4 border-warm-gold">
+                                        <div className="bg-gradient-to-br from-warm-gold/10 to-accent-red/10 rounded-2xl p-6 border-l-4 border-warm-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">✨ Celebration Atmosphere</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 Jinbeh's ambiance—warm lighting, thoughtful design, skilled service—creates a festive setting
@@ -341,7 +341,7 @@ export default function ThanksgivingDiningGuide() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-gradient-to-br from-accent-red/20 to-orange-500/20 rounded-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-accent-red/20 to-soft-gold/20 rounded-2xl p-6 my-8">
                                         <h3 className="font-heading font-bold text-lg text-charcoal mb-3">📋 All Packages Include:</h3>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-charcoal/80 text-sm">
                                             <div className="flex gap-2">
@@ -395,7 +395,7 @@ export default function ThanksgivingDiningGuide() {
                                         and Lewisville locations on Thanksgiving Day!
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-deep-indigo/10 to-blue-500/10 rounded-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6 my-8">
                                         <h3 className="font-heading font-bold text-lg text-charcoal mb-4">📅 Thanksgiving Day Service Details</h3>
                                         <div className="space-y-4 text-charcoal/80">
                                             <div className="flex gap-4">
@@ -685,7 +685,7 @@ export default function ThanksgivingDiningGuide() {
                                         the people you love.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-accent-red/20 to-orange-500/20 rounded-2xl p-8 text-center">
+                                    <div className="bg-gradient-to-br from-accent-red/20 to-soft-gold/20 rounded-2xl p-8 text-center">
                                         <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Ready to Celebrate Thanksgiving at Jinbeh?</h3>
                                         <p className="text-charcoal/80 mb-6 text-lg">
                                             Explore our catering options or make a dine-in reservation for Thanksgiving Day. Contact us today to start

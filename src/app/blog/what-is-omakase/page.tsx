@@ -134,7 +134,7 @@ export default function WhatIsOmakase() {
                         <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
                         🍣 Cuisine
                     </span>
 
@@ -166,7 +166,7 @@ export default function WhatIsOmakase() {
                                         between you, the chef, and the art of sushi.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Omakase is trust in its purest form. You're saying to the chef, 'I believe in your judgment,
                                             your taste, and your commitment to excellence.' That's why it transforms a meal into an

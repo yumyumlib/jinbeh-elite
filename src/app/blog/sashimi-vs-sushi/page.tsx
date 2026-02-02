@@ -142,10 +142,10 @@ export default function SashimiVsSushi() {
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-3">Key Characteristics</h3>
                                     <ul className="space-y-2 text-charcoal/80">
-                                        <li className="flex gap-2"><span className="text-blue-600 font-bold">✓</span> Raw, never cooked</li>
-                                        <li className="flex gap-2"><span className="text-blue-600 font-bold">✓</span> Sashimi-grade fish</li>
-                                        <li className="flex gap-2"><span className="text-blue-600 font-bold">✓</span> Thin, uniform slices</li>
-                                        <li className="flex gap-2"><span className="text-blue-600 font-bold">✓</span> Served on ice or daikon</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo font-bold">✓</span> Raw, never cooked</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo font-bold">✓</span> Sashimi-grade fish</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo font-bold">✓</span> Thin, uniform slices</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo font-bold">✓</span> Served on ice or daikon</li>
                                     </ul>
                                 </div>
                                 <div>
@@ -179,10 +179,10 @@ export default function SashimiVsSushi() {
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-3">Popular Styles</h3>
                                     <ul className="space-y-2 text-charcoal/80">
-                                        <li className="flex gap-2"><span className="text-purple-600">◆</span> Nigiri (hand-pressed)</li>
-                                        <li className="flex gap-2"><span className="text-purple-600">◆</span> Maki (rolled)</li>
-                                        <li className="flex gap-2"><span className="text-purple-600">◆</span> Uramaki (inside-out)</li>
-                                        <li className="flex gap-2"><span className="text-purple-600">◆</span> Temaki (hand rolls)</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo">◆</span> Nigiri (hand-pressed)</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo">◆</span> Maki (rolled)</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo">◆</span> Uramaki (inside-out)</li>
+                                        <li className="flex gap-2"><span className="text-deep-indigo">◆</span> Temaki (hand rolls)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -210,23 +210,23 @@ export default function SashimiVsSushi() {
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Order Sashimi If You Want:</h3>
                                     <ul className="space-y-3">
                                         <li className="flex gap-3">
-                                            <span className="text-blue-600 text-xl">→</span>
+                                            <span className="text-deep-indigo text-xl">→</span>
                                             <span className="text-charcoal/80"><strong>Pure fish flavor</strong> without rice interference</span>
                                         </li>
                                         <li className="flex gap-3">
-                                            <span className="text-blue-600 text-xl">→</span>
+                                            <span className="text-deep-indigo text-xl">→</span>
                                             <span className="text-charcoal/80"><strong>Lower calorie option</strong> than sushi</span>
                                         </li>
                                         <li className="flex gap-3">
-                                            <span className="text-blue-600 text-xl">→</span>
+                                            <span className="text-deep-indigo text-xl">→</span>
                                             <span className="text-charcoal/80"><strong>Lighter meal</strong> focused on protein</span>
                                         </li>
                                         <li className="flex gap-3">
-                                            <span className="text-blue-600 text-xl">→</span>
+                                            <span className="text-deep-indigo text-xl">→</span>
                                             <span className="text-charcoal/80"><strong>Showcase premium fish</strong> quality</span>
                                         </li>
                                         <li className="flex gap-3">
-                                            <span className="text-blue-600 text-xl">→</span>
+                                            <span className="text-deep-indigo text-xl">→</span>
                                             <span className="text-charcoal/80"><strong>Appetizer course</strong> or pairing with sake</span>
                                         </li>
                                     </ul>
@@ -268,30 +268,30 @@ export default function SashimiVsSushi() {
                             </p>
 
                             {/* Sashimi at Jinbeh */}
-                            <div className="bg-blue-50 rounded-xl p-6 mb-6 border-l-4 border-blue-500">
+                            <div className="bg-blue-50 rounded-xl p-6 mb-6 border-l-4 border-deep-indigo">
                                 <h3 className="text-xl font-heading font-bold text-charcoal mb-3">Premium Sashimi Selection</h3>
                                 <ul className="space-y-2 text-charcoal/80">
                                     <li className="flex gap-3">
-                                        <span className="text-blue-600">✓</span>
+                                        <span className="text-deep-indigo">✓</span>
                                         <span><strong>Sashimi-grade fish only</strong> imported from trusted Japanese suppliers</span>
                                     </li>
                                     <li className="flex gap-3">
-                                        <span className="text-blue-600">✓</span>
+                                        <span className="text-deep-indigo">✓</span>
                                         <span><strong>Daily fresh deliveries</strong> ensure peak quality and flavor</span>
                                     </li>
                                     <li className="flex gap-3">
-                                        <span className="text-blue-600">✓</span>
+                                        <span className="text-deep-indigo">✓</span>
                                         <span><strong>Expert slicing technique</strong> maximizes texture and presentation</span>
                                     </li>
                                     <li className="flex gap-3">
-                                        <span className="text-blue-600">✓</span>
+                                        <span className="text-deep-indigo">✓</span>
                                         <span><strong>Artful presentation</strong> on ice with complementary daikon arrangements</span>
                                     </li>
                                 </ul>
                             </div>
 
                             {/* Sushi at Jinbeh */}
-                            <div className="bg-amber-50 rounded-xl p-6 mb-6 border-l-4 border-amber-500">
+                            <div className="bg-amber-50 rounded-xl p-6 mb-6 border-l-4 border-soft-gold">
                                 <h3 className="text-xl font-heading font-bold text-charcoal mb-3">Expertly Crafted Sushi</h3>
                                 <ul className="space-y-2 text-charcoal/80">
                                     <li className="flex gap-3">

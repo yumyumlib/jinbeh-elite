@@ -8,7 +8,7 @@ const categories = {
     title: "Sushi Guide",
     icon: "🍣",
     description: "Everything you need to know about sushi - from beginner tips to expert recommendations. Discover the best sushi in North Texas.",
-    color: "from-orange-500 to-red-500",
+    color: "from-soft-gold to-red-500",
     articles: [
       { slug: "best-sushi-frisco", title: "Best Sushi in Frisco", image: "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg" },
       { slug: "best-sushi-dallas", title: "Best Sushi in Dallas", image: "/images/food/SamaraiRollCloseup.jpg" },
@@ -25,7 +25,7 @@ const categories = {
     title: "Hibachi Guide",
     icon: "🔥",
     description: "Master the art of hibachi dining. Learn about teppanyaki, chef performances, and what makes Jinbeh's hibachi experience special.",
-    color: "from-red-500 to-orange-500",
+    color: "from-red-500 to-soft-gold",
     articles: [
       { slug: "best-hibachi-dallas-tx", title: "Best Hibachi in Dallas", image: "/images/photoshoot/hibachi-plate-shrimp.jpg" },
       { slug: "hibachi-vs-teppanyaki-explained", title: "Hibachi vs Teppanyaki", image: "/images/food/OnionVolcanoDemo.jpg" },
@@ -41,7 +41,7 @@ const categories = {
     title: "Celebrations & Events",
     icon: "🎂",
     description: "Plan the perfect celebration at Jinbeh. From birthday parties to corporate events, we make every occasion special.",
-    color: "from-pink-500 to-purple-500",
+    color: "from-accent-red to-deep-indigo",
     articles: [
       { slug: "hibachi-birthday-party-ideas", title: "Hibachi Birthday Party Ideas", image: "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg" },
       { slug: "birthday-celebration-restaurants", title: "Birthday Celebration Restaurants", image: "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg" },
@@ -59,7 +59,7 @@ const categories = {
     title: "Happy Hour & Drinks",
     icon: "🍹",
     description: "Discover Jinbeh's drink specials, sake selections, and cocktail menu. Learn about Japanese beverages and happy hour deals.",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-deep-indigo to-deep-indigo",
     articles: [
       { slug: "best-happy-hour-frisco-tx", title: "Best Happy Hour in Frisco", image: "/images/drinks/MuleSummerSignatureCocktail.jpg" },
       { slug: "sake-pairing-guide", title: "Sake Pairing Guide", image: "/images/drinks/cocktail.jpg" },
@@ -77,7 +77,7 @@ const categories = {
     title: "Local Guide",
     icon: "📍",
     description: "Find the best Japanese restaurants and dining experiences in the Dallas-Fort Worth area. Your guide to local eats.",
-    color: "from-green-500 to-teal-500",
+    color: "from-green-500 to-deep-indigo",
     articles: [
       { slug: "top-frisco-restaurants", title: "Top Frisco Restaurants", image: "/images/exterior/JinbehFriscoStorefrontSign.jpg" },
       { slug: "japanese-restaurants-near-me", title: "Japanese Restaurants Near Me", image: "/images/exterior/JinbehFriscoStorefrontSign.jpg" },

@@ -114,7 +114,7 @@ export default function TypesOfSushi() {
                         <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-orange-500 mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
                         🍣 Cuisine
                     </span>
 
@@ -145,7 +145,7 @@ export default function TypesOfSushi() {
                                         Let&apos;s break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-orange-500/10 to-soft-gold/10 border-l-4 border-orange-500 rounded-r-2xl p-6 my-8">
+                                    <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Every sushi order at Jinbeh starts with fresh fish and ends with a smile.
                                             Whether you&apos;re trying nigiri for the first time or you&apos;re a seasoned omakase
@@ -391,7 +391,7 @@ export default function TypesOfSushi() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-orange-500 to-accent-red rounded-3xl text-center">
+                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Explore?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Discover your new favorite sushi at Jinbeh. Fresh fish, expert rolls, unforgettable flavors.
