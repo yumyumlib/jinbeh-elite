@@ -143,7 +143,7 @@ export default function BestSalmonSashimi() {
                                             is paramount. We source premium salmon daily and handle it with care to preserve
                                             its natural flavors."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— Jinbeh Sushi Chefs</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Sushi Chefs</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

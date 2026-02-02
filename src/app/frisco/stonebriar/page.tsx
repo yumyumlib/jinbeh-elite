@@ -271,7 +271,7 @@ export default function StonebriarPage() {
                   </div>
                   <h3 className="font-heading font-semibold text-charcoal mb-1">{attraction.name}</h3>
                   <p className="text-accent-red font-medium text-sm mb-2">{attraction.distance}</p>
-                  <p className="text-charcoal/60 text-sm">{attraction.description}</p>
+                  <p className="text-charcoal/80 text-sm">{attraction.description}</p>
                 </div>
               ))}
             </div>

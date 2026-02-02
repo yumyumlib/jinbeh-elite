@@ -302,7 +302,7 @@ export default function LewisvillePage() {
                 >
                   {location.phone}
                 </a>
-                <p className="mt-4 text-sm text-charcoal/60">
+                <p className="mt-4 text-sm text-charcoal/80">
                   {location.neighborhood.parking}
                 </p>
                 {/* Nearby Activities Callout */}
@@ -332,7 +332,7 @@ export default function LewisvillePage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Lunch Menu</span>
-                    <span className="block text-sm text-charcoal/60">PDF Download</span>
+                    <span className="block text-sm text-charcoal/80">PDF Download</span>
                   </a>
                   <a
                     href={location.menus.sushi || "#"}
@@ -341,7 +341,7 @@ export default function LewisvillePage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Sushi Menu</span>
-                    <span className="block text-sm text-charcoal/60">PDF Download</span>
+                    <span className="block text-sm text-charcoal/80">PDF Download</span>
                   </a>
                   <a
                     href="/menus/lewisville-beverage-menu.pdf"
@@ -350,7 +350,7 @@ export default function LewisvillePage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Beverage Menu</span>
-                    <span className="block text-sm text-charcoal/60">Wine, Sake & Cocktails</span>
+                    <span className="block text-sm text-charcoal/80">Wine, Sake & Cocktails</span>
                   </a>
                 </div>
               </div>
@@ -371,7 +371,7 @@ export default function LewisvillePage() {
                 >
                   Find a Table
                 </a>
-                <p className="mt-4 text-sm text-charcoal/60 text-center">
+                <p className="mt-4 text-sm text-charcoal/80 text-center">
                   Or call us at{" "}
                   <a
                     href={`tel:${location.phoneClean}`}
@@ -559,7 +559,7 @@ export default function LewisvillePage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal">David L.</p>
-                    <p className="text-xs text-charcoal/60">Flower Mound • Google Review</p>
+                    <p className="text-xs text-charcoal/80">Flower Mound • Google Review</p>
                   </div>
                 </div>
               </div>
@@ -583,7 +583,7 @@ export default function LewisvillePage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal">Amanda K.</p>
-                    <p className="text-xs text-charcoal/60">Lewisville • Google Review</p>
+                    <p className="text-xs text-charcoal/80">Lewisville • Google Review</p>
                   </div>
                 </div>
               </div>
@@ -607,7 +607,7 @@ export default function LewisvillePage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal">Robert M.</p>
-                    <p className="text-xs text-charcoal/60">Highland Village • Yelp Review</p>
+                    <p className="text-xs text-charcoal/80">Highland Village • Yelp Review</p>
                   </div>
                 </div>
               </div>

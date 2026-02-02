@@ -211,7 +211,7 @@ export default function ReservationsPage() {
 
                 <div className="p-8">
                   <div className="mb-6">
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Address
                     </p>
                     <p className="text-charcoal font-semibold">
@@ -228,7 +228,7 @@ export default function ReservationsPage() {
 
                   <div className="mb-6 flex gap-4">
                     <div className="flex-1">
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                         Phone
                       </p>
                       <a
@@ -239,7 +239,7 @@ export default function ReservationsPage() {
                       </a>
                     </div>
                     <div className="flex-1">
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                         Email
                       </p>
                       <a
@@ -252,7 +252,7 @@ export default function ReservationsPage() {
                   </div>
 
                   <div className="mb-8">
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-3">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-3">
                       Hours
                     </p>
                     <div className="space-y-1 text-sm text-charcoal/80">
@@ -311,7 +311,7 @@ export default function ReservationsPage() {
 
                 <div className="p-8">
                   <div className="mb-6">
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Address
                     </p>
                     <p className="text-charcoal font-semibold">
@@ -328,7 +328,7 @@ export default function ReservationsPage() {
 
                   <div className="mb-6 flex gap-4">
                     <div className="flex-1">
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                         Phone
                       </p>
                       <a
@@ -339,7 +339,7 @@ export default function ReservationsPage() {
                       </a>
                     </div>
                     <div className="flex-1">
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                         Email
                       </p>
                       <a
@@ -352,7 +352,7 @@ export default function ReservationsPage() {
                   </div>
 
                   <div className="mb-8">
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-3">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-3">
                       Hours
                     </p>
                     <div className="space-y-1 text-sm text-charcoal/80">
@@ -421,7 +421,7 @@ export default function ReservationsPage() {
                   </h3>
                   <p className="text-charcoal/70 mb-6 text-sm">{type.description}</p>
                   <div className="mb-6">
-                    <p className="text-charcoal/60 text-xs uppercase tracking-wide mb-3">
+                    <p className="text-charcoal/80 text-xs uppercase tracking-wide mb-3">
                       Features
                     </p>
                     <ul className="space-y-2">

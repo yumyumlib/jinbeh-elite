@@ -143,7 +143,7 @@ export default function BestSushiFrisco() {
                                             crafting sushi in Frisco since 1988—long before the sushi boom hit
                                             North Texas. Our secret? We never compromise on quality."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

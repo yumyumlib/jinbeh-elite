@@ -151,7 +151,7 @@ export default function LargeGroupDining() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "The best group dining experiences happen when logistics are seamless and everyone feels welcomed. At venues like Jinbeh, large parties aren't just accommodated—they're celebrated with professional coordination and exceptional food."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— Event Planning Expert</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— Event Planning Expert</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

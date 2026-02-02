@@ -258,7 +258,7 @@ export default function LunarNewYearPage() {
                     2026 promises a year of thoughtful growth and positive change. Start it right with
                     a memorable celebration at Jinbeh!
                   </p>
-                  <p className="text-sm text-charcoal/60">
+                  <p className="text-sm text-charcoal/80">
                     <strong>Lunar New Year 2026:</strong> February 17th (Snake year begins)
                   </p>
                 </div>

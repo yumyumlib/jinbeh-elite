@@ -154,7 +154,7 @@ export default function HappyHourPage() {
                   <h3 className="font-heading text-xl font-semibold text-charcoal mb-2 text-center">
                     {category.name}
                   </h3>
-                  <p className="text-sm text-charcoal/60 text-center mb-6">
+                  <p className="text-sm text-charcoal/80 text-center mb-6">
                     {category.description}
                   </p>
                   <ul className="space-y-2">

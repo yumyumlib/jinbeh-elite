@@ -115,7 +115,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
           the whole fam! The chefs are very entertaining. They always put on
           an excellent show!"
         </p>
-        <p className="text-sm text-charcoal/60">— Jinbeh Guest Review</p>
+        <p className="text-sm text-charcoal/80">— Jinbeh Guest Review</p>
       </div>
 
       <h3>Everyone Eats Together</h3>
@@ -414,7 +414,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
             <span>Total</span>
             <span>$445</span>
           </div>
-          <p className="text-sm text-charcoal/60 mt-4">
+          <p className="text-sm text-charcoal/80 mt-4">
             * Prices based on Jinbeh dinner menu. Lunch runs 30-40% less.
           </p>
         </div>

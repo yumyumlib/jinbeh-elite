@@ -97,7 +97,7 @@ export default function PhotoGallery({
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 )}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors duration-300" />
                 {item.type === "video" && (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
@@ -121,7 +121,7 @@ export default function PhotoGallery({
       {/* Lightbox */}
       {lightboxOpen && (
         <div
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
+          className="fixed inset-0 z-[100] bg-charcoal/95 flex items-center justify-center"
           onClick={closeLightbox}
         >
           {/* Close Button */}

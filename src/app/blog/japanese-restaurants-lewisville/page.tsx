@@ -49,7 +49,7 @@ export default function JapaneseRestaurantsLewisville() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Our Lewisville location has been serving the community since 1988. We've watched families grow up around our hibachi tables. That's what makes this special."</p>
-                                <span className="text-sm text-charcoal/60">— The Jinbeh Family</span>
+                                <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍱 Top Japanese Spots in Lewisville</h2>

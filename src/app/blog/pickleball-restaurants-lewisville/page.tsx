@@ -151,7 +151,7 @@ export default function PickleballRestaurantsLewisvillePage() {
           <li><strong>6:15 PM:</strong> Grab a seat at our sushi bar for intimate dining, or book a hibachi table for the show</li>
           <li><strong>7:30 PM:</strong> Leave with full bellies and great memories</li>
         </ol>
-        <p className="mt-4 text-sm text-charcoal/60 italic">
+        <p className="mt-4 text-sm text-charcoal/80 italic">
           Pro tip: Make a reservation at Jinbeh when you book your court time!
         </p>
       </div>

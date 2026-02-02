@@ -112,7 +112,7 @@ const holidayCelebrations = [
     image: "/images/food/SamaraiRollCloseup.jpg",
     href: "/celebrations/valentines-day",
     month: "February",
-    color: "bg-pink-50 border-pink-200",
+    color: "bg-accent-red/10 border-accent-red/30",
   },
   {
     title: "Mother's Day",
@@ -120,7 +120,7 @@ const holidayCelebrations = [
     image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
     href: "/celebrations/mothers-day",
     month: "May",
-    color: "bg-purple-50 border-purple-200",
+    color: "bg-deep-indigo/10 border-deep-indigo/30",
   },
   {
     title: "Father's Day",
@@ -128,7 +128,7 @@ const holidayCelebrations = [
     image: "/images/food/HibachiSteakMealCloseup.jpg",
     href: "/celebrations/fathers-day",
     month: "June",
-    color: "bg-blue-50 border-blue-200",
+    color: "bg-deep-indigo/10 border-deep-indigo/30",
   },
   {
     title: "Thanksgiving",
@@ -298,7 +298,7 @@ export default function CelebrationsPage() {
                   href={holiday.href}
                   className={`group p-6 rounded-2xl border-2 ${holiday.color} hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
                 >
-                  <span className="text-xs font-medium text-charcoal/50 uppercase tracking-wider">
+                  <span className="text-xs font-medium text-charcoal/70 uppercase tracking-wider">
                     {holiday.month}
                   </span>
                   <h3 className="text-xl font-heading font-bold text-charcoal mt-1 mb-2 group-hover:text-accent-red transition-colors">
@@ -421,7 +421,7 @@ export default function CelebrationsPage() {
                   <h3 className="font-heading font-bold text-charcoal mb-2 group-hover:text-accent-red transition-colors">
                     {event.title}
                   </h3>
-                  <p className="text-charcoal/60 text-xs">{event.description}</p>
+                  <p className="text-charcoal/80 text-xs">{event.description}</p>
                 </Link>
               ))}
             </div>
@@ -525,7 +525,7 @@ export default function CelebrationsPage() {
                   <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors">
                     Jinbeh Frisco
                   </h3>
-                  <p className="text-charcoal/60 text-sm">Near Stonebriar Centre</p>
+                  <p className="text-charcoal/80 text-sm">Near Stonebriar Centre</p>
                   <p className="text-accent-red text-sm font-medium">(214) 619-1200</p>
                 </div>
               </Link>
@@ -540,7 +540,7 @@ export default function CelebrationsPage() {
                   <h3 className="font-heading font-bold text-charcoal group-hover:text-deep-indigo transition-colors">
                     Jinbeh Lewisville
                   </h3>
-                  <p className="text-charcoal/60 text-sm">Near Vista Ridge Mall</p>
+                  <p className="text-charcoal/80 text-sm">Near Vista Ridge Mall</p>
                   <p className="text-deep-indigo text-sm font-medium">(214) 488-2224</p>
                 </div>
               </Link>

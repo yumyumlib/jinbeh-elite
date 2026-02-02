@@ -158,7 +158,7 @@ export default function MidAutumnFestivalPage() {
                     Observed across many Asian cultures including Chinese, Vietnamese, Korean, and Japanese,
                     it&apos;s a time for families to reunite and give thanks for the autumn harvest.
                   </p>
-                  <p className="text-charcoal/60 text-sm">
+                  <p className="text-charcoal/80 text-sm">
                     <strong>2025 Date:</strong> October 6, 2025
                   </p>
                 </div>

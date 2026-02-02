@@ -73,11 +73,11 @@ export default function JapaneseCocktails() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥄 Signature Techniques</h2>
                             <div className="grid md:grid-cols-2 gap-6 my-8">
-                                <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-6 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-3">The Hard Shake</h3>
                                     <p className="text-charcoal/80 text-sm">A signature technique popularized by legendary bartender Kazuo Uyeda. This three-step shaking motion creates a smoother texture and enhances the cocktail's flavors.</p>
                                 </div>
-                                <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-6 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-3">Precision & Presentation</h3>
                                     <p className="text-charcoal/80 text-sm">Exact measurements and meticulously placed garnishes ensure each drink is a work of art. Presentation is as important as taste, with elegant glassware and delicate garnishes.</p>
                                 </div>

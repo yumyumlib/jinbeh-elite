@@ -176,7 +176,7 @@ export default function LunchSpecialsPage() {
                   </h3>
                   <div className="space-y-4 mb-6">
                     <div>
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-1">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-1">
                         Weekday Lunch
                       </p>
                       <p className="text-lg font-semibold text-charcoal">
@@ -184,7 +184,7 @@ export default function LunchSpecialsPage() {
                       </p>
                     </div>
                     <div>
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-1">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-1">
                         Weekend Lunch
                       </p>
                       <p className="text-lg font-semibold text-charcoal">
@@ -192,7 +192,7 @@ export default function LunchSpecialsPage() {
                       </p>
                     </div>
                     <div>
-                      <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-1">
+                      <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-1">
                         Location
                       </p>
                       <p className="text-charcoal/80 text-sm">{info.address}</p>
@@ -240,7 +240,7 @@ export default function LunchSpecialsPage() {
                       <p className="text-accent-red font-bold text-lg">
                         {special.price}
                       </p>
-                      <p className="text-charcoal/60 text-xs">{special.time}</p>
+                      <p className="text-charcoal/80 text-xs">{special.time}</p>
                     </div>
                     <svg className="w-6 h-6 text-deep-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -405,7 +405,7 @@ export default function LunchSpecialsPage() {
                   </a>
                 </div>
               </div>
-              <p className="text-charcoal/60 text-sm">
+              <p className="text-charcoal/80 text-sm">
                 PDF files open in a new window. Prices and items subject to change.
               </p>
             </div>

@@ -52,7 +52,7 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"At Jinbeh, we're proud to be a trusted Japanese restaurant where families and friends come to experience authentic cuisine and memorable moments. We've been serving our communities since 1988 with dedication to quality."</p>
-                                <span className="text-sm text-charcoal/60">— Jinbeh Family</span>
+                                <span className="text-sm text-charcoal/80">— Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔍 What Makes Japanese Cuisine Authentic</h2>

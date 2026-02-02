@@ -51,7 +51,7 @@ export default function MenuPage() {
                                             <h3 className="text-2xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors">
                                                 Frisco
                                             </h3>
-                                            <p className="text-charcoal/60">Near Stonebriar Centre</p>
+                                            <p className="text-charcoal/80">Near Stonebriar Centre</p>
                                         </div>
                                     </div>
 
@@ -82,7 +82,7 @@ export default function MenuPage() {
                                             <h3 className="text-2xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors">
                                                 Lewisville
                                             </h3>
-                                            <p className="text-charcoal/60">Off I-35E</p>
+                                            <p className="text-charcoal/80">Off I-35E</p>
                                         </div>
                                     </div>
 

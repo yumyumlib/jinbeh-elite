@@ -136,7 +136,7 @@ export default function SushiIdentificationChart() {
                                             "Understanding sushi types enhances your dining experience. Each style has its own story,
                                             preparation method, and flavor profile. Let's explore the world of sushi together."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

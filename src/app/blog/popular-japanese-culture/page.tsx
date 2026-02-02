@@ -48,7 +48,7 @@ export default function PopularJapaneseCulture() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Japanese culture represents a unique harmony between honoring the past and embracing the future. Every tradition, from tea ceremonies to anime, tells a story of respect, creativity, and innovation."</p>
-                                <span className="text-sm text-charcoal/60">— Jinbeh Cultural Insight</span>
+                                <span className="text-sm text-charcoal/80">— Jinbeh Cultural Insight</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Japanese Cuisine: Art on a Plate</h2>

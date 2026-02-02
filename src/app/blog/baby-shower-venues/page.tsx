@@ -136,7 +136,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
           was absolutely perfect. The beautiful setting required minimal
           decoration, and the staff took care of everything while we celebrated."
         </p>
-        <p className="text-sm text-charcoal/60">— Jinbeh Guest</p>
+        <p className="text-sm text-charcoal/80">— Jinbeh Guest</p>
       </div>
 
       <p>

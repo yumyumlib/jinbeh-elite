@@ -40,7 +40,7 @@ export default function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
             <li key={index} className="flex items-center">
               {index > 0 && (
                 <svg
-                  className="w-4 h-4 mx-2 text-charcoal/40"
+                  className="w-4 h-4 mx-2 text-charcoal/80"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ export default function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
               {item.href ? (
                 <Link
                   href={item.href}
-                  className="text-charcoal/70 hover:text-accent-red transition-colors"
+                  className="text-charcoal/80 hover:text-accent-red transition-colors"
                 >
                   {item.label}
                 </Link>

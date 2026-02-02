@@ -302,7 +302,7 @@ export default function FriscoPage() {
                 >
                   {location.phone}
                 </a>
-                <p className="mt-4 text-sm text-charcoal/60">
+                <p className="mt-4 text-sm text-charcoal/80">
                   {location.neighborhood.parking}
                 </p>
               </div>
@@ -320,7 +320,7 @@ export default function FriscoPage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Lunch Menu</span>
-                    <span className="block text-sm text-charcoal/60">PDF Download</span>
+                    <span className="block text-sm text-charcoal/80">PDF Download</span>
                   </a>
                   <a
                     href={location.menus.dinner || "#"}
@@ -329,7 +329,7 @@ export default function FriscoPage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Dinner Menu</span>
-                    <span className="block text-sm text-charcoal/60">PDF Download</span>
+                    <span className="block text-sm text-charcoal/80">PDF Download</span>
                   </a>
                   <a
                     href={location.menus.sushi || "#"}
@@ -338,7 +338,7 @@ export default function FriscoPage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Sushi Menu</span>
-                    <span className="block text-sm text-charcoal/60">PDF Download</span>
+                    <span className="block text-sm text-charcoal/80">PDF Download</span>
                   </a>
                   <a
                     href="/menus/frisco-beverage-menu.pdf"
@@ -347,7 +347,7 @@ export default function FriscoPage() {
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Beverage Menu</span>
-                    <span className="block text-sm text-charcoal/60">Wine, Sake & Cocktails</span>
+                    <span className="block text-sm text-charcoal/80">Wine, Sake & Cocktails</span>
                   </a>
                 </div>
               </div>
@@ -368,7 +368,7 @@ export default function FriscoPage() {
                 >
                   Find a Table
                 </a>
-                <p className="mt-4 text-sm text-charcoal/60 text-center">
+                <p className="mt-4 text-sm text-charcoal/80 text-center">
                   Or call us at{" "}
                   <a
                     href={`tel:${location.phoneClean}`}
@@ -556,7 +556,7 @@ export default function FriscoPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal">Sarah M.</p>
-                    <p className="text-xs text-charcoal/60">Frisco, TX • Google Review</p>
+                    <p className="text-xs text-charcoal/80">Frisco, TX • Google Review</p>
                   </div>
                 </div>
               </div>
@@ -580,7 +580,7 @@ export default function FriscoPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal">Michael T.</p>
-                    <p className="text-xs text-charcoal/60">Stonebriar • Google Review</p>
+                    <p className="text-xs text-charcoal/80">Stonebriar • Google Review</p>
                   </div>
                 </div>
               </div>
@@ -604,7 +604,7 @@ export default function FriscoPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal">Jennifer R.</p>
-                    <p className="text-xs text-charcoal/60">Frisco, TX • Yelp Review</p>
+                    <p className="text-xs text-charcoal/80">Frisco, TX • Yelp Review</p>
                   </div>
                 </div>
               </div>

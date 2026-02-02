@@ -165,35 +165,35 @@ export default function HomePage() {
                       <span className="text-xl group-hover:scale-110 transition-transform">🏆</span>
                       <div>
                         <span className="font-medium">Best Of</span>
-                        <p className="text-xs text-charcoal/60">Top picks & recommendations</p>
+                        <p className="text-xs text-charcoal/80">Top picks & recommendations</p>
                       </div>
                     </Link>
                     <Link href="/blog?category=cuisine" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
                       <span className="text-xl group-hover:scale-110 transition-transform">🍣</span>
                       <div>
                         <span className="font-medium">Japanese Cuisine</span>
-                        <p className="text-xs text-charcoal/60">Sushi, hibachi & more</p>
+                        <p className="text-xs text-charcoal/80">Sushi, hibachi & more</p>
                       </div>
                     </Link>
                     <Link href="/blog?category=celebrations" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
                       <span className="text-xl group-hover:scale-110 transition-transform">🎉</span>
                       <div>
                         <span className="font-medium">Celebrations</span>
-                        <p className="text-xs text-charcoal/60">Party ideas & guides</p>
+                        <p className="text-xs text-charcoal/80">Party ideas & guides</p>
                       </div>
                     </Link>
                     <Link href="/blog?category=local-guides" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
                       <span className="text-xl group-hover:scale-110 transition-transform">📍</span>
                       <div>
                         <span className="font-medium">Local Guides</span>
-                        <p className="text-xs text-charcoal/60">Frisco, Lewisville & DFW</p>
+                        <p className="text-xs text-charcoal/80">Frisco, Lewisville & DFW</p>
                       </div>
                     </Link>
                     <Link href="/blog?category=beverages" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
                       <span className="text-xl group-hover:scale-110 transition-transform">🍶</span>
                       <div>
                         <span className="font-medium">Beverages</span>
-                        <p className="text-xs text-charcoal/60">Sake, whiskey & cocktails</p>
+                        <p className="text-xs text-charcoal/80">Sake, whiskey & cocktails</p>
                       </div>
                     </Link>
                   </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
               <Link href="/blog" className="text-charcoal font-medium">Blog</Link>
               <Link href="/about" className="text-charcoal font-medium">About</Link>
               <div className="border-t border-stone-200 pt-4 mt-2">
-                <p className="text-sm text-charcoal/60 mb-3 font-medium">Call to Reserve:</p>
+                <p className="text-sm text-charcoal/80 mb-3 font-medium">Call to Reserve:</p>
                 <div className="grid grid-cols-2 gap-3">
                   <a
                     href="tel:2146191200"
@@ -331,7 +331,7 @@ export default function HomePage() {
             {/* Trust Signals - Proof on fold with Animated Numbers */}
             <ScrollReveal delay={100}>
               <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-6 text-white/90 text-sm">
-                <span className="flex items-center gap-2 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+                <span className="flex items-center gap-2 bg-charcoal/30 backdrop-blur-sm px-4 py-2 rounded-full">
                   <svg className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
@@ -339,10 +339,10 @@ export default function HomePage() {
                     <NumberTicker value={4.5} decimalPlaces={1} className="font-bold" />+ Stars on Google
                   </span>
                 </span>
-                <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+                <span className="bg-charcoal/30 backdrop-blur-sm px-4 py-2 rounded-full">
                   <NumberTicker value={1000} className="font-bold" />+ 5-Star Reviews
                 </span>
-                <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+                <span className="bg-charcoal/30 backdrop-blur-sm px-4 py-2 rounded-full">
                   <NumberTicker value={37} className="font-bold" />+ Years of Excellence
                 </span>
               </div>
@@ -380,7 +380,7 @@ export default function HomePage() {
             <ScrollReveal delay={500}>
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 {/* Frisco Location Card */}
-                <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
                   <BorderBeam size={120} duration={8} colorFrom="#C9A227" colorTo="#C1121F" />
                   <div className="text-center">
                     {/* Location-specific proof hook */}
@@ -417,7 +417,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Lewisville Location Card */}
-                <div className="group relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
                   <BorderBeam size={120} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
                     {/* Location-specific proof hook */}
@@ -459,7 +459,7 @@ export default function HomePage() {
           {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg
-              className="w-8 h-8 text-white/60"
+              className="w-8 h-8 text-white/80"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -741,7 +741,7 @@ export default function HomePage() {
                   {/* Subtle overlay for text readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
                 </div>
-                <p className="text-center text-warm-ivory/60 mt-4 text-sm">
+                <p className="text-center text-warm-ivory/80 mt-4 text-sm">
                   Experience the artistry of teppanyaki cooking at Jinbeh
                 </p>
               </div>
@@ -843,7 +843,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Google Review</p>
-                        <p className="text-xs text-charcoal/50">Verified • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -867,7 +867,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Yelp Review</p>
-                        <p className="text-xs text-charcoal/50">Verified • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -894,7 +894,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Google Review</p>
-                        <p className="text-xs text-charcoal/50">Verified • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -918,7 +918,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Yelp Review</p>
-                        <p className="text-xs text-charcoal/50">Verified • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -940,7 +940,7 @@ export default function HomePage() {
                       <div className="w-10 h-10 rounded-full bg-[#F63440]/10 flex items-center justify-center text-[#F63440] font-bold text-sm">GH</div>
                       <div>
                         <p className="font-semibold text-charcoal">K. Kristin</p>
-                        <p className="text-xs text-charcoal/50">Grubhub • Nov 2024</p>
+                        <p className="text-xs text-charcoal/70">Grubhub • Nov 2024</p>
                       </div>
                     </div>
                   </div>
@@ -964,7 +964,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Yelp Review</p>
-                        <p className="text-xs text-charcoal/50">Verified • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -988,7 +988,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">MrMl23</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1012,7 +1012,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Jailen R</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1036,7 +1036,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Tania T</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1060,7 +1060,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Chuck</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1084,7 +1084,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Brittany P</p>
-                        <p className="text-xs text-charcoal/50">Google Review • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Review • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1108,7 +1108,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Alaina T</p>
-                        <p className="text-xs text-charcoal/50">Google Review • 17 Years of Birthdays</p>
+                        <p className="text-xs text-charcoal/70">Google Review • 17 Years of Birthdays</p>
                       </div>
                     </div>
                   </div>
@@ -1132,7 +1132,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Tatiana M</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • 76 reviews</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • 76 reviews</p>
                       </div>
                     </div>
                   </div>
@@ -1156,7 +1156,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Mahfam M</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1180,7 +1180,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Bryant H</p>
-                        <p className="text-xs text-charcoal/50">Google Review • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Review • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1204,7 +1204,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">LaTosha S</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • 1,127 reviews</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • 1,127 reviews</p>
                       </div>
                     </div>
                   </div>
@@ -1228,7 +1228,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Daniel B</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Frisco</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
                       </div>
                     </div>
                   </div>
@@ -1252,7 +1252,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Tori R</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Kid-Friendly</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Kid-Friendly</p>
                       </div>
                     </div>
                   </div>
@@ -1276,7 +1276,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Robin M</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • 145 reviews</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • 145 reviews</p>
                       </div>
                     </div>
                   </div>
@@ -1300,7 +1300,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Iyali R</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • 51 reviews</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • 51 reviews</p>
                       </div>
                     </div>
                   </div>
@@ -1324,7 +1324,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Samantha M</p>
-                        <p className="text-xs text-charcoal/50">Google Local Guide • Anniversary</p>
+                        <p className="text-xs text-charcoal/70">Google Local Guide • Anniversary</p>
                       </div>
                     </div>
                   </div>

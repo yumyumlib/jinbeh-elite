@@ -405,7 +405,7 @@ export default function AllenNearbyPage() {
                   <p>
                     {friscoLocation.address.city}, {friscoLocation.address.state} {friscoLocation.address.zip}
                   </p>
-                  <p className="text-sm text-charcoal/60">
+                  <p className="text-sm text-charcoal/80">
                     Near Stonebriar Centre Mall, Legacy West
                   </p>
                 </address>
@@ -419,7 +419,7 @@ export default function AllenNearbyPage() {
 
                 <div className="space-y-3 mb-6">
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">LUNCH</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Mon-Fri:</span> {friscoLocation.hours.lunch.weekday.display}
                     </p>
@@ -428,7 +428,7 @@ export default function AllenNearbyPage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">DINNER</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Sun-Thu:</span> {friscoLocation.hours.dinner.sunThurs.display}
                     </p>
@@ -474,7 +474,7 @@ export default function AllenNearbyPage() {
                   <p>
                     {lewisvilleLocation.address.city}, {lewisvilleLocation.address.state} {lewisvilleLocation.address.zip}
                   </p>
-                  <p className="text-sm text-charcoal/60">
+                  <p className="text-sm text-charcoal/80">
                     Easy access from I-35E, Vista Ridge Mall area
                   </p>
                 </address>
@@ -488,7 +488,7 @@ export default function AllenNearbyPage() {
 
                 <div className="space-y-3 mb-6">
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">LUNCH</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Mon-Fri:</span> {lewisvilleLocation.hours.lunch.weekday.display}
                     </p>
@@ -497,7 +497,7 @@ export default function AllenNearbyPage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">DINNER</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Sun-Thu:</span> {lewisvilleLocation.hours.dinner.sunThurs.display}
                     </p>

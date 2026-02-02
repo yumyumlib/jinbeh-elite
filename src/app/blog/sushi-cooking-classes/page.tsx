@@ -136,7 +136,7 @@ export default function SushiCookingClasses() {
                                             a centuries-old culinary tradition. Our instructors are passionate about sharing this knowledge
                                             with students of all levels."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

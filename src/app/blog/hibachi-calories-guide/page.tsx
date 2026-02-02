@@ -124,7 +124,7 @@ export default function HibachiCaloriesGuidePage() {
         <p className="italic text-charcoal/80 mb-2">
           "I was surprised how well hibachi fit into my diet. Fresh ingredients, visible cooking, reasonable portions. I can enjoy a delicious meal out and still meet my health goals."
         </p>
-        <p className="text-sm text-charcoal/60">— Verified Jinbeh Guest</p>
+        <p className="text-sm text-charcoal/80">— Verified Jinbeh Guest</p>
       </div>
 
       <h2>Hibachi Protein Calories & Nutrition</h2>

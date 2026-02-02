@@ -127,6 +127,23 @@ h6 {
   letter-spacing: -0.02em;
   /* color controlled by Tailwind classes - no override needed */
   line-height: 1.2;
+  text-wrap: balance;
+}
+
+/* Visual Hierarchy - Clear heading distinction */
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 {
@@ -1199,6 +1216,72 @@ footer a:hover {
 }
 
 /* ======================================
+   Mobile-First Responsive Utilities
+   ====================================== */
+
+/* Prevent horizontal overflow on mobile */
+.container {
+  overflow-x: hidden;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better text wrapping for long words */
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
+/* Responsive padding for sections */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Reduce heading sizes on mobile for better readability */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Ensure tables are scrollable on mobile */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Better button spacing on mobile */
+@media (max-width: 640px) {
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* ======================================
    Loading Skeleton
    ====================================== */
 
@@ -1230,6 +1313,57 @@ footer a:hover {
 .focus-ring:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.3);
+}
+
+/* Improved focus states for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-red);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(193, 18, 31, 0.15);
+}
+
+/* High contrast focus for dark backgrounds */
+.section-dark a:focus-visible,
+.section-dark button:focus-visible,
+.bg-charcoal a:focus-visible,
+.bg-charcoal button:focus-visible,
+footer a:focus-visible,
+footer button:focus-visible {
+  outline: 2px solid var(--soft-gold);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.2);
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent-red);
+  color: white;
+  padding: 8px 16px;
+  z-index: 9999;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Ensure proper contrast for muted text */
+.text-muted {
+  color: rgba(31, 31, 31, 0.75);
+}
+
+.text-muted-dark {
+  color: rgba(246, 241, 232, 0.8);
 }
 
 /* ======================================
@@ -1388,4 +1522,79 @@ footer a:hover {
 
 .animate-orbit {
   animation: orbit var(--duration, 10s) linear infinite;
+}
+
+/* ======================================
+   Visual Hierarchy Utilities
+   ====================================== */
+
+/* Section headings with consistent styling */
+.section-heading {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+}
+
+.section-subheading {
+  font-size: 1.125rem;
+  color: rgba(31, 31, 31, 0.8);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Content spacing for articles */
+.prose-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.prose-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Card content hierarchy */
+.card-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: rgba(31, 31, 31, 0.75);
+  line-height: 1.6;
+}
+
+/* Badge hierarchy */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-primary {
+  background-color: rgba(193, 18, 31, 0.1);
+  color: var(--accent-red);
+}
+
+.badge-secondary {
+  background-color: rgba(30, 42, 68, 0.1);
+  color: var(--deep-indigo);
+}
+
+.badge-gold {
+  background-color: rgba(201, 162, 39, 0.1);
+  color: var(--soft-gold);
 }

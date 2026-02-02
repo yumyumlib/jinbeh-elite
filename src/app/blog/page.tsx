@@ -158,7 +158,7 @@ export default async function BlogPage({
                                 ? "All Articles"
                                 : categories.find((c) => c.id === activeCategory)?.name}
                         </h2>
-                        <span className="text-charcoal/60">
+                        <span className="text-charcoal/80">
                             {filteredPosts.length} article{filteredPosts.length !== 1 && "s"}
                         </span>
                     </div>
@@ -196,7 +196,7 @@ export default async function BlogPage({
                                                 <p className="text-charcoal/70 text-sm line-clamp-2 mb-4">
                                                     {post.excerpt}
                                                 </p>
-                                                <div className="flex items-center justify-between text-xs text-charcoal/50">
+                                                <div className="flex items-center justify-between text-xs text-charcoal/70">
                                                     <span>{new Date(post.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
                                                     <span>{post.readTime} min read</span>
                                                 </div>
@@ -208,7 +208,7 @@ export default async function BlogPage({
                         </div>
                     ) : (
                         <div className="text-center py-16">
-                            <p className="text-charcoal/60 text-lg">
+                            <p className="text-charcoal/80 text-lg">
                                 No articles in this category yet. Check back soon!
                             </p>
                         </div>

@@ -75,7 +75,7 @@ export default function SakeGuide() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌡️ Hot vs Cold</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
-                                <div className="bg-blue-50 rounded-xl p-5 border-2 border-blue-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-5 border-2 border-deep-indigo/30">
                                     <span className="text-3xl">❄️</span>
                                     <h3 className="font-bold mt-2">Serve Cold</h3>
                                     <p className="text-sm text-charcoal/70">Daiginjo, Ginjo, Sparkling</p>

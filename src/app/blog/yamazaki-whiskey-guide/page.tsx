@@ -64,11 +64,11 @@ export default function YamazakiWhiskeyGuide() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏆 Why Yamazaki Is So Popular</h2>
                             <div className="grid md:grid-cols-3 gap-4 my-8">
-                                <div className="bg-blue-50 rounded-xl p-5 border-2 border-blue-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-5 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-2">Quality & Craftsmanship</h3>
                                     <p className="text-charcoal/80 text-sm">Meticulous attention to detail and unparalleled craftsmanship in every bottle.</p>
                                 </div>
-                                <div className="bg-purple-50 rounded-xl p-5 border-2 border-purple-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-5 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-2">Awards & Recognition</h3>
                                     <p className="text-charcoal/80 text-sm">Numerous international awards have boosted its reputation as a top-tier whiskey.</p>
                                 </div>
@@ -142,11 +142,11 @@ export default function YamazakiWhiskeyGuide() {
                             <p className="text-charcoal/80 mb-6">When searching for "Yamazaki whiskey nearby" or "Yamazaki 12 near me," these tactics enhance your chances of success:</p>
 
                             <div className="space-y-4 mb-8">
-                                <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-deep-indigo">
+                                <div className="bg-deep-indigo/10 rounded-lg p-5 border-l-4 border-deep-indigo">
                                     <h3 className="font-bold text-charcoal mb-2">✓ Utilize Store Locators</h3>
                                     <p className="text-charcoal/80 text-sm">Many liquor stores and large retailers have online locators. Enter your zip code or city to find nearest locations carrying Yamazaki whiskey.</p>
                                 </div>
-                                <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-deep-indigo">
+                                <div className="bg-deep-indigo/10 rounded-lg p-5 border-l-4 border-deep-indigo">
                                     <h3 className="font-bold text-charcoal mb-2">✓ Join Whiskey Enthusiast Groups</h3>
                                     <p className="text-charcoal/80 text-sm">Online forums and social media groups share tips on where members found rare bottles. Engaging with these communities leads to unexpected discoveries.</p>
                                 </div>

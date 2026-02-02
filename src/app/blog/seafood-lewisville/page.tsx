@@ -152,7 +152,7 @@ export default function SeafoodLewisville() {
                                             "Lewisville's seafood restaurants have elevated the dining scene in our community. We're proud
                                             to be part of that growth, bringing authentic Japanese seafood traditions to North Texas since 1988."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Family</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

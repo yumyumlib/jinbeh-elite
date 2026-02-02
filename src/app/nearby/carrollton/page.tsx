@@ -311,7 +311,7 @@ export default function CarrolltonNearbyPage() {
                 <p className="text-warm-ivory/80 text-sm mb-3">
                   Explore charming shops, galleries, and historic architecture in the heart of Carrollton. Perfect for an afternoon stroll before dinner.
                 </p>
-                <p className="text-warm-ivory/60 text-xs">
+                <p className="text-warm-ivory/80 text-xs">
                   ~3 miles from Jinbeh Lewisville
                 </p>
               </div>
@@ -324,7 +324,7 @@ export default function CarrolltonNearbyPage() {
                 <p className="text-warm-ivory/80 text-sm mb-3">
                   Enjoy walking trails, picnic areas, and beautiful lake views. Great for families or a peaceful pre-dinner walk.
                 </p>
-                <p className="text-warm-ivory/60 text-xs">
+                <p className="text-warm-ivory/80 text-xs">
                   ~4 miles from Jinbeh Lewisville
                 </p>
               </div>
@@ -337,7 +337,7 @@ export default function CarrolltonNearbyPage() {
                 <p className="text-warm-ivory/80 text-sm mb-3">
                   Scenic waterfront park with hiking trails, fishing spots, and relaxing outdoor recreation perfect for the whole family.
                 </p>
-                <p className="text-warm-ivory/60 text-xs">
+                <p className="text-warm-ivory/80 text-xs">
                   ~5 miles from Jinbeh Lewisville
                 </p>
               </div>
@@ -372,7 +372,7 @@ export default function CarrolltonNearbyPage() {
                   <p>
                     {lewisvilleLocation.address.city}, {lewisvilleLocation.address.state} {lewisvilleLocation.address.zip}
                   </p>
-                  <p className="text-sm text-charcoal/60">
+                  <p className="text-sm text-charcoal/80">
                     Easy access from I-35E, Vista Ridge Mall area
                   </p>
                 </address>
@@ -386,7 +386,7 @@ export default function CarrolltonNearbyPage() {
 
                 <div className="space-y-3 mb-6">
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">LUNCH</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Mon-Fri:</span> {lewisvilleLocation.hours.lunch.weekday.display}
                     </p>
@@ -395,7 +395,7 @@ export default function CarrolltonNearbyPage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">DINNER</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Sun-Thu:</span> {lewisvilleLocation.hours.dinner.sunThurs.display}
                     </p>
@@ -441,7 +441,7 @@ export default function CarrolltonNearbyPage() {
                   <p>
                     {friscoLocation.address.city}, {friscoLocation.address.state} {friscoLocation.address.zip}
                   </p>
-                  <p className="text-sm text-charcoal/60">
+                  <p className="text-sm text-charcoal/80">
                     Near Stonebriar Centre Mall, Legacy West
                   </p>
                 </address>
@@ -455,7 +455,7 @@ export default function CarrolltonNearbyPage() {
 
                 <div className="space-y-3 mb-6">
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">LUNCH</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Mon-Fri:</span> {friscoLocation.hours.lunch.weekday.display}
                     </p>
@@ -464,7 +464,7 @@ export default function CarrolltonNearbyPage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-charcoal/60 mb-1">DINNER</p>
+                    <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
                     <p className="text-charcoal">
                       <span className="font-medium">Sun-Thu:</span> {friscoLocation.hours.dinner.sunThurs.display}
                     </p>

@@ -36,7 +36,7 @@ export default function ArticleLayout({
       {/* Breadcrumb */}
       <nav className="bg-soft-white border-b border-warm-ivory">
         <div className="container mx-auto px-6 py-3">
-          <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+          <ol className="flex items-center gap-2 text-sm text-charcoal/80">
             <li>
               <Link href="/" className="hover:text-accent-red transition-colors">
                 Home
@@ -76,16 +76,16 @@ export default function ArticleLayout({
               >
                 {category}
               </Link>
-              <span className="text-charcoal/50 text-sm">{readTime}</span>
-              <span className="text-charcoal/50 text-sm">•</span>
-              <time className="text-charcoal/50 text-sm">{publishDate}</time>
+              <span className="text-charcoal/70 text-sm">{readTime}</span>
+              <span className="text-charcoal/70 text-sm">•</span>
+              <time className="text-charcoal/70 text-sm">{publishDate}</time>
             </div>
 
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
               {title}
             </h1>
 
-            <p className="text-xl text-charcoal/70 leading-relaxed">
+            <p className="text-xl text-charcoal/80 leading-relaxed">
               {metaDescription}
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function ArticleLayout({
                           </svg>
                         </span>
                       </summary>
-                      <p className="mt-4 text-charcoal/70 leading-relaxed">
+                      <p className="mt-4 text-charcoal/80 leading-relaxed">
                         {faq.answer}
                       </p>
                     </details>

@@ -131,7 +131,7 @@ export default function BestHibachiDallasPage() {
           the cook was fun, approachable, knowledgeable & charismatic. We highly
           recommend them and will return soon!"
         </p>
-        <p className="text-sm text-charcoal/60">— Verified Guest Review</p>
+        <p className="text-sm text-charcoal/80">— Verified Guest Review</p>
       </div>
 
       <p>

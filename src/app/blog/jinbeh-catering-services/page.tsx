@@ -109,7 +109,7 @@ export default function JinbehCateringServicesPage() {
         <p className="italic text-charcoal/80 mb-2">
           "The presentation was beautiful, the food was amazing, and the catering team was professional and courteous throughout the entire event. Jinbeh made our celebration truly special."
         </p>
-        <p className="text-sm text-charcoal/60">— Verified Customer</p>
+        <p className="text-sm text-charcoal/80">— Verified Customer</p>
       </div>
 
       <h2>Customizable Menu Options</h2>

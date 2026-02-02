@@ -387,7 +387,7 @@ export default function SpecialsPage() {
                   <p className="text-white/80 text-sm mb-3">
                     {special.description}
                   </p>
-                  <p className="text-white/60 text-xs italic">
+                  <p className="text-white/80 text-xs italic">
                     {special.details}
                   </p>
                 </div>
@@ -446,7 +446,7 @@ export default function SpecialsPage() {
                     <h3 className="font-heading text-xl font-bold text-charcoal mb-2">
                       {item.label}
                     </h3>
-                    <p className="text-charcoal/60">{item.desc}</p>
+                    <p className="text-charcoal/80">{item.desc}</p>
                   </div>
                 ))}
               </div>

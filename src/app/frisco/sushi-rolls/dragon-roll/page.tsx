@@ -110,7 +110,7 @@ export default function DragonRollFriscoPage() {
         {/* Breadcrumb */}
         <nav className="bg-white border-b border-warm-ivory-dark">
           <div className="container mx-auto px-6 py-3">
-            <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+            <ol className="flex items-center gap-2 text-sm text-charcoal/80">
               <li><Link href="/" className="hover:text-accent-red">Home</Link></li>
               <li>/</li>
               <li><Link href="/frisco" className="hover:text-accent-red">Frisco</Link></li>
@@ -178,7 +178,7 @@ export default function DragonRollFriscoPage() {
                       <td className="py-4 font-medium text-charcoal">Price</td>
                       <td className="py-4 text-right">
                         <span className="text-accent-red font-bold">$16.95</span>
-                        <span className="text-charcoal/50 text-xs block">*Pricing may vary. Specials available.</span>
+                        <span className="text-charcoal/70 text-xs block">*Pricing may vary. Specials available.</span>
                       </td>
                     </tr>
                     <tr>

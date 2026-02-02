@@ -106,7 +106,7 @@ export default function CorporateEventsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/frisco"
-                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                className="bg-accent-red hover:bg-accent-red-hover text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
               >
                 Book Frisco Location
               </Link>
@@ -129,21 +129,21 @@ export default function CorporateEventsPage() {
               Why Companies Choose Jinbeh
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-50 p-6 rounded-xl">
+              <div className="bg-warm-ivory p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">🔥 Interactive Entertainment</h3>
                 <p className="text-gray-700">
                   Hibachi chefs create an engaging show that breaks the ice and gets conversations flowing. 
                   Perfect for team building and client entertainment where you want memorable shared experiences.
                 </p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-xl">
+              <div className="bg-warm-ivory p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">👔 Professional Service</h3>
                 <p className="text-gray-700">
                   Our experienced staff understands corporate hospitality. Expect attentive, professional 
                   service that reflects well on your organization when hosting important clients or executives.
                 </p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-xl">
+              <div className="bg-warm-ivory p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">📋 Flexible Group Options</h3>
                 <p className="text-gray-700">
                   From intimate client dinners to large team celebrations, we accommodate groups of all sizes. 
@@ -151,7 +151,7 @@ export default function CorporateEventsPage() {
                   flexible seating arrangements for your specific needs.
                 </p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-xl">
+              <div className="bg-warm-ivory p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">💼 Convenient Locations</h3>
                 <p className="text-gray-700">
                   Located in Frisco and Lewisville with easy access from major highways. Perfect for teams 
@@ -164,7 +164,7 @@ export default function CorporateEventsPage() {
       </section>
 
       {/* Event Types */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-warm-ivory">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -248,7 +248,7 @@ export default function CorporateEventsPage() {
             
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">1</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Contact Us Early</h3>
                   <p className="text-gray-700">
@@ -260,7 +260,7 @@ export default function CorporateEventsPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">2</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Discuss Menu Options</h3>
                   <p className="text-gray-700">
@@ -271,7 +271,7 @@ export default function CorporateEventsPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">3</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Share Dietary Needs</h3>
                   <p className="text-gray-700">
@@ -282,7 +282,7 @@ export default function CorporateEventsPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">4</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Confirm Details</h3>
                   <p className="text-gray-700">
@@ -297,7 +297,7 @@ export default function CorporateEventsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-warm-ivory">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -327,41 +327,41 @@ export default function CorporateEventsPage() {
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Link href="/celebrations/birthday" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎂</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Birthday Celebrations</span>
               </Link>
-              <Link href="/celebrations/date-night" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/date-night" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💕</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Date Night</span>
               </Link>
-              <Link href="/celebrations/anniversary" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💍</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Anniversary Dinner</span>
               </Link>
-              <Link href="/celebrations/graduation" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎓</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Graduation Party</span>
               </Link>
-              <Link href="/celebrations/christmas" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/christmas" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎄</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Holiday Parties</span>
               </Link>
-              <Link href="/celebrations/thanksgiving" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/thanksgiving" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🦃</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Thanksgiving</span>
               </Link>
-              <Link href="/celebrations/rehearsal-dinner" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/rehearsal-dinner" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💒</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Rehearsal Dinner</span>
               </Link>
-              <Link href="/celebrations/mothers-day" className="bg-gray-50 hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">👩</span>
                 <span className="font-medium text-gray-900 group-hover:text-red-600">Mother's Day</span>
               </Link>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 text-center">
+            <div className="bg-warm-ivory rounded-xl p-8 text-center">
               <p className="text-gray-700 mb-4">
                 Beyond corporate events, Jinbeh is the perfect venue for <Link href="/celebrations/birthday" className="text-red-600 hover:text-red-700 font-medium">birthday celebrations</Link>, 
                 <Link href="/celebrations/anniversary" className="text-red-600 hover:text-red-700 font-medium"> anniversary dinners</Link>, and 

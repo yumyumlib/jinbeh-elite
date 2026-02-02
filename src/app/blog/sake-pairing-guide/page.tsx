@@ -145,7 +145,7 @@ export default function SakePairingGuide() {
                                             "At Jinbeh, we've curated our sake selection to complement every dish on our menu. Our staff can guide you
                                             through the perfect pairing, whether it's your first sake experience or you're a seasoned connoisseur."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

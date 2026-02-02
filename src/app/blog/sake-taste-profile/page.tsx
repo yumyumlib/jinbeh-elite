@@ -136,7 +136,7 @@ export default function SakeTasteProfile() {
                                             "Sake is like a symphony of flavors. Each sip reveals different taste elements, from fruity and
                                             floral notes to earthy undertones. Learning to appreciate sake is a journey of discovery."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

@@ -199,7 +199,7 @@ export default function Header({ location }: HeaderProps) {
                                   {isActiveLocation && <span className="ml-2 text-xs">(You are here)</span>}
                                 </span>
                                 {subItem.description && (
-                                  <span className="block text-sm text-charcoal/70 mt-0.5">
+                                  <span className="block text-sm text-charcoal/80 mt-0.5">
                                     {subItem.description}
                                   </span>
                                 )}
@@ -259,7 +259,7 @@ export default function Header({ location }: HeaderProps) {
                         onClick={() => setActiveDropdown(null)}
                       >
                         <span className="font-medium text-charcoal group-hover:text-accent-red">Frisco</span>
-                        <span className="block text-sm text-charcoal/60">(214) 619-1200</span>
+                        <span className="block text-sm text-charcoal/80">(214) 619-1200</span>
                       </a>
                       <a
                         href="tel:2144882224"
@@ -267,7 +267,7 @@ export default function Header({ location }: HeaderProps) {
                         onClick={() => setActiveDropdown(null)}
                       >
                         <span className="font-medium text-charcoal group-hover:text-accent-red">Lewisville</span>
-                        <span className="block text-sm text-charcoal/60">(214) 488-2224</span>
+                        <span className="block text-sm text-charcoal/80">(214) 488-2224</span>
                       </a>
                     </div>
                   </div>
@@ -320,7 +320,7 @@ export default function Header({ location }: HeaderProps) {
             <nav className="flex flex-col gap-2">
               {/* Location Switcher Mobile */}
               <div className="flex items-center gap-2 px-4 py-3 bg-warm-ivory rounded-lg mb-4">
-                <span className="text-sm text-charcoal/70 font-medium">Location:</span>
+                <span className="text-sm text-charcoal/80 font-medium">Location:</span>
                 <Link
                   href="/frisco"
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${location === "frisco"
@@ -347,7 +347,7 @@ export default function Header({ location }: HeaderProps) {
                 <div key={item.label}>
                   {item.dropdown ? (
                     <div className="mb-2">
-                      <span className="px-4 py-2 text-sm font-semibold text-charcoal/50 uppercase tracking-wider">
+                      <span className="px-4 py-2 text-sm font-semibold text-charcoal/70 uppercase tracking-wider">
                         {item.label}
                       </span>
                       <div className="mt-1 space-y-1">

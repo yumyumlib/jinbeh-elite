@@ -163,7 +163,7 @@ export default function BarPage() {
                 <h3 className="font-heading text-xl font-bold text-charcoal mb-3 text-center">
                   Premium Sake
                 </h3>
-                <p className="text-sm text-charcoal/60 text-center mb-6">
+                <p className="text-sm text-charcoal/80 text-center mb-6">
                   Finest Japanese craftsmanship
                 </p>
                 <ul className="space-y-3">
@@ -192,21 +192,21 @@ export default function BarPage() {
                 <h3 className="font-heading text-xl font-bold text-charcoal mb-3 text-center">
                   House Sake
                 </h3>
-                <p className="text-sm text-charcoal/60 text-center mb-6">
+                <p className="text-sm text-charcoal/80 text-center mb-6">
                   Perfect for every occasion
                 </p>
                 <ul className="space-y-3">
                   <li className="text-charcoal/80 flex items-start gap-2">
                     <span className="text-deep-indigo mt-1">✦</span>
-                    <span><span className="font-medium">Hot Sake</span><br /><span className="text-xs text-charcoal/60">Warming & smooth</span></span>
+                    <span><span className="font-medium">Hot Sake</span><br /><span className="text-xs text-charcoal/80">Warming & smooth</span></span>
                   </li>
                   <li className="text-charcoal/80 flex items-start gap-2">
                     <span className="text-deep-indigo mt-1">✦</span>
-                    <span><span className="font-medium">Cold Sake</span><br /><span className="text-xs text-charcoal/60">Crisp & refreshing</span></span>
+                    <span><span className="font-medium">Cold Sake</span><br /><span className="text-xs text-charcoal/80">Crisp & refreshing</span></span>
                   </li>
                   <li className="text-charcoal/80 flex items-start gap-2">
                     <span className="text-deep-indigo mt-1">✦</span>
-                    <span><span className="font-medium">Glass or Carafe</span><br /><span className="text-xs text-charcoal/60">Share with friends</span></span>
+                    <span><span className="font-medium">Glass or Carafe</span><br /><span className="text-xs text-charcoal/80">Share with friends</span></span>
                   </li>
                 </ul>
               </div>
@@ -217,7 +217,7 @@ export default function BarPage() {
                 <h3 className="font-heading text-xl font-bold text-charcoal mb-3 text-center">
                   Sake Flights
                 </h3>
-                <p className="text-sm text-charcoal/60 text-center mb-6">
+                <p className="text-sm text-charcoal/80 text-center mb-6">
                   Explore & compare varieties
                 </p>
                 <ul className="space-y-3">
@@ -246,21 +246,21 @@ export default function BarPage() {
                 <h3 className="font-heading text-xl font-bold text-charcoal mb-3 text-center">
                   Nigori
                 </h3>
-                <p className="text-sm text-charcoal/60 text-center mb-6">
+                <p className="text-sm text-charcoal/80 text-center mb-6">
                   Unfiltered & creamy
                 </p>
                 <ul className="space-y-3">
                   <li className="text-charcoal/80 flex items-start gap-2">
                     <span className="text-soft-gold mt-1">✦</span>
-                    <span><span className="font-medium">Sweet & Rich</span><br /><span className="text-xs text-charcoal/60">Milky appearance</span></span>
+                    <span><span className="font-medium">Sweet & Rich</span><br /><span className="text-xs text-charcoal/80">Milky appearance</span></span>
                   </li>
                   <li className="text-charcoal/80 flex items-start gap-2">
                     <span className="text-soft-gold mt-1">✦</span>
-                    <span><span className="font-medium">Smooth Finish</span><br /><span className="text-xs text-charcoal/60">Creamy texture</span></span>
+                    <span><span className="font-medium">Smooth Finish</span><br /><span className="text-xs text-charcoal/80">Creamy texture</span></span>
                   </li>
                   <li className="text-charcoal/80 flex items-start gap-2">
                     <span className="text-soft-gold mt-1">✦</span>
-                    <span><span className="font-medium">Sake Desserts</span><br /><span className="text-xs text-charcoal/60">Perfect nightcap</span></span>
+                    <span><span className="font-medium">Sake Desserts</span><br /><span className="text-xs text-charcoal/80">Perfect nightcap</span></span>
                   </li>
                 </ul>
               </div>
@@ -413,7 +413,7 @@ export default function BarPage() {
                   Japanese whisky, yuzu juice, fresh ginger, and spicy ginger beer served over ice with a lime twist.
                 </p>
                 <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                  <p className="text-xs text-warm-ivory/60 uppercase tracking-wide mb-2">
+                  <p className="text-xs text-warm-ivory/80 uppercase tracking-wide mb-2">
                     Perfect With
                   </p>
                   <p className="text-warm-ivory font-medium">Spicy Tuna Roll, Gyoza</p>
@@ -431,7 +431,7 @@ export default function BarPage() {
                   Premium vodka, sakura (cherry blossom) liqueur, lychee juice, and a hint of rose with a sugared rim.
                 </p>
                 <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                  <p className="text-xs text-warm-ivory/60 uppercase tracking-wide mb-2">
+                  <p className="text-xs text-warm-ivory/80 uppercase tracking-wide mb-2">
                     Perfect With
                   </p>
                   <p className="text-warm-ivory font-medium">Delicate Sashimi, Light Rolls</p>
@@ -449,7 +449,7 @@ export default function BarPage() {
                   Japanese whisky, fresh yuzu juice, lime, simple syrup, and a touch of egg white for a silky texture.
                 </p>
                 <div className="bg-charcoal/10 backdrop-blur rounded-lg p-4">
-                  <p className="text-xs text-charcoal/60 uppercase tracking-wide mb-2">
+                  <p className="text-xs text-charcoal/80 uppercase tracking-wide mb-2">
                     Perfect With
                   </p>
                   <p className="text-charcoal font-medium">Sashimi Appetizers, Light Sushi</p>
@@ -467,7 +467,7 @@ export default function BarPage() {
                   Japanese single malt whisky, bitters, sugar, Japanese orange peel, and a large ice cube for elegant sipping.
                 </p>
                 <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                  <p className="text-xs text-warm-ivory/60 uppercase tracking-wide mb-2">
+                  <p className="text-xs text-warm-ivory/80 uppercase tracking-wide mb-2">
                     Perfect With
                   </p>
                   <p className="text-warm-ivory font-medium">Rich Hibachi, Wagyu</p>
@@ -502,19 +502,19 @@ export default function BarPage() {
                 <ul className="space-y-4">
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Sapporo</p>
-                    <p className="text-sm text-charcoal/60">Japan's oldest beer - crisp and clean</p>
+                    <p className="text-sm text-charcoal/80">Japan's oldest beer - crisp and clean</p>
                   </li>
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Asahi Super Dry</p>
-                    <p className="text-sm text-charcoal/60">Light, refreshing, perfectly balanced</p>
+                    <p className="text-sm text-charcoal/80">Light, refreshing, perfectly balanced</p>
                   </li>
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Kirin Ichiban</p>
-                    <p className="text-sm text-charcoal/60">Premium brewing process - smooth taste</p>
+                    <p className="text-sm text-charcoal/80">Premium brewing process - smooth taste</p>
                   </li>
                   <li>
                     <p className="font-semibold text-charcoal">Orion</p>
-                    <p className="text-sm text-charcoal/60">Okinawan premium lager - tropical notes</p>
+                    <p className="text-sm text-charcoal/80">Okinawan premium lager - tropical notes</p>
                   </li>
                 </ul>
               </div>
@@ -528,19 +528,19 @@ export default function BarPage() {
                 <ul className="space-y-4">
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Bud Light</p>
-                    <p className="text-sm text-charcoal/60">Light and refreshing classic</p>
+                    <p className="text-sm text-charcoal/80">Light and refreshing classic</p>
                   </li>
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Coors Light</p>
-                    <p className="text-sm text-charcoal/60">Crisp and cold mountain water</p>
+                    <p className="text-sm text-charcoal/80">Crisp and cold mountain water</p>
                   </li>
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Miller High Life</p>
-                    <p className="text-sm text-charcoal/60">The champagne of beers</p>
+                    <p className="text-sm text-charcoal/80">The champagne of beers</p>
                   </li>
                   <li>
                     <p className="font-semibold text-charcoal">Texas Craft Selection</p>
-                    <p className="text-sm text-charcoal/60">Rotating local favorites</p>
+                    <p className="text-sm text-charcoal/80">Rotating local favorites</p>
                   </li>
                 </ul>
               </div>
@@ -600,7 +600,7 @@ export default function BarPage() {
                     <span>
                       <span className="text-charcoal font-semibold">Ramune</span>
                       <br />
-                      <span className="text-sm text-charcoal/60">Iconic Japanese soda in glass bottles</span>
+                      <span className="text-sm text-charcoal/80">Iconic Japanese soda in glass bottles</span>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -608,7 +608,7 @@ export default function BarPage() {
                     <span>
                       <span className="text-charcoal font-semibold">Japanese Sodas</span>
                       <br />
-                      <span className="text-sm text-charcoal/60">Yuzu, melon, and seasonal flavors</span>
+                      <span className="text-sm text-charcoal/80">Yuzu, melon, and seasonal flavors</span>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -616,7 +616,7 @@ export default function BarPage() {
                     <span>
                       <span className="text-charcoal font-semibold">Japanese Tea</span>
                       <br />
-                      <span className="text-sm text-charcoal/60">Green tea, oolong, and matcha options</span>
+                      <span className="text-sm text-charcoal/80">Green tea, oolong, and matcha options</span>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -624,7 +624,7 @@ export default function BarPage() {
                     <span>
                       <span className="text-charcoal font-semibold">Soft Drinks</span>
                       <br />
-                      <span className="text-sm text-charcoal/60">Classic and contemporary beverages</span>
+                      <span className="text-sm text-charcoal/80">Classic and contemporary beverages</span>
                     </span>
                   </li>
                 </ul>

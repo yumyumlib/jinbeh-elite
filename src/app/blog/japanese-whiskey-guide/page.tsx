@@ -61,11 +61,11 @@ export default function JapaneseWhiskeyGuide() {
                             <p className="text-charcoal/80 mb-6">Japanese whiskey has evolved dramatically since its inception. Initially, distillers focused on emulating Scotch whiskey, but over time they developed their own distinct style. This evolution was driven by a desire to not only replicate but innovate, creating whiskey embodying the precision and artistry Japan is renowned for.</p>
 
                             <div className="grid md:grid-cols-2 gap-6 my-8">
-                                <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-6 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-3">Scottish Influence</h3>
                                     <p className="text-charcoal/80 text-sm">Japanese whiskey makers adopted pot stills and double distillation techniques to create smooth, refined spirits. Yet they incorporated unique Japanese elements that set their whiskey apart.</p>
                                 </div>
-                                <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-6 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-3">Japanese Innovation</h3>
                                     <p className="text-charcoal/80 text-sm">The use of local ingredients like Japanese barley and pure mountain water imparts distinctive tastes. Distillers also experiment with Mizunara oak, which creates unique flavor profiles.</p>
                                 </div>

@@ -158,7 +158,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                 <span>/</span>
                             </>
                         )}
-                        <span className="text-warm-ivory/50 truncate max-w-[200px]">{post.title}</span>
+                        <span className="text-warm-ivory/70 truncate max-w-[200px]">{post.title}</span>
                     </nav>
 
                     {/* Category Badge */}
@@ -302,7 +302,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                             );
                                         })
                                     ) : (
-                                        <p className="text-charcoal/60 text-sm">More articles coming soon!</p>
+                                        <p className="text-charcoal/80 text-sm">More articles coming soon!</p>
                                     )}
                                 </div>
 

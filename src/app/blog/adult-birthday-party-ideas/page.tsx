@@ -133,7 +133,7 @@ export default function AdultBirthdayPartyIdeas() {
                                             Whether you choose an elegant masquerade, an interactive hibachi experience, or an
                                             adventurous escape room, make it uniquely yours."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

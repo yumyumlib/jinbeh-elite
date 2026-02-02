@@ -104,7 +104,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
         <p className="italic text-charcoal/80 mb-2">
           "Jinbeh came to our backyard and created the most incredible event. The chef was entertaining, skilled, and made everyone feel included. Our guests still talk about it months later!"
         </p>
-        <p className="text-sm text-charcoal/60">— Sarah M., Birthday Celebration Host</p>
+        <p className="text-sm text-charcoal/80">— Sarah M., Birthday Celebration Host</p>
       </div>
 
       <h3>Why Choose Hibachi for Your Event?</h3>

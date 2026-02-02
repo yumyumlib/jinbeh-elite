@@ -186,7 +186,7 @@ export default function LewisvilleSpecialsPage() {
                   className="bg-gradient-to-br from-warm-ivory to-white rounded-2xl p-8 border-2 border-charcoal/10 hover:border-accent-red/50 hover:shadow-lg transition-all"
                 >
                   <div className="text-6xl mb-4">{promo.emoji}</div>
-                  <p className="text-sm uppercase tracking-wider font-bold text-charcoal/60 mb-2">
+                  <p className="text-sm uppercase tracking-wider font-bold text-charcoal/80 mb-2">
                     {promo.day}
                   </p>
                   <h3 className="text-xl font-heading font-bold text-charcoal mb-3">

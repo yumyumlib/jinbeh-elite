@@ -52,7 +52,7 @@ export default function BestAsianFoodDallas() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"From authentic Japanese hibachi to regional Asian specialties, Dallas's food scene celebrates the rich traditions of Asia while embracing innovative culinary creativity."</p>
-                                <span className="text-sm text-charcoal/60">— Food Culture Dallas</span>
+                                <span className="text-sm text-charcoal/80">— Food Culture Dallas</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Asian Fusion Restaurants</h2>

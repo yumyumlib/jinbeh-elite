@@ -138,7 +138,7 @@ export default function SashimiVsSushi() {
                             <p className="text-charcoal/80 mb-4">
                                 Sashimi (刺身) literally means "pierced body" in Japanese, referring to the technique of slicing. It represents the purest form of Japanese fish appreciation: premium-quality, sashimi-grade fish sliced into thin, elegant pieces and served without rice.
                             </p>
-                            <div className="grid md:grid-cols-2 gap-4 my-6 bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
+                            <div className="grid md:grid-cols-2 gap-4 my-6 bg-deep-indigo/10 rounded-xl p-6 border-2 border-deep-indigo/30">
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-3">Key Characteristics</h3>
                                     <ul className="space-y-2 text-charcoal/80">
@@ -268,7 +268,7 @@ export default function SashimiVsSushi() {
                             </p>
 
                             {/* Sashimi at Jinbeh */}
-                            <div className="bg-blue-50 rounded-xl p-6 mb-6 border-l-4 border-deep-indigo">
+                            <div className="bg-deep-indigo/10 rounded-xl p-6 mb-6 border-l-4 border-deep-indigo">
                                 <h3 className="text-xl font-heading font-bold text-charcoal mb-3">Premium Sashimi Selection</h3>
                                 <ul className="space-y-2 text-charcoal/80">
                                     <li className="flex gap-3">

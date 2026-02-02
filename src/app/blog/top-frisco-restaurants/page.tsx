@@ -142,7 +142,7 @@ export default function TopFriscoRestaurants() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Frisco has something for everyone. From Japanese hibachi to Southern comfort food, our city's restaurants showcase diverse cuisines and exceptional quality. The result? A dining destination that keeps locals coming back and attracts visitors from across Texas."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— Frisco Dining Guide</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— Frisco Dining Guide</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

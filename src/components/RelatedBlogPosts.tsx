@@ -221,7 +221,7 @@ export default function RelatedBlogPosts({
                     <h3 className="font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2 mt-1">
                       {post.title}
                     </h3>
-                    <span className="text-xs text-charcoal/50 mt-1 block">
+                    <span className="text-xs text-charcoal/70 mt-1 block">
                       {post.readTime} min read
                     </span>
                   </div>

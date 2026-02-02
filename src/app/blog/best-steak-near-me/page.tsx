@@ -44,7 +44,7 @@ export default function BestSteakNearMe() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"A perfect steak begins with premium cuts, expert cooking, and attention to detail. Whether you prefer classic preparations or innovative techniques, the right steakhouse elevates every bite."</p>
-                                <span className="text-sm text-charcoal/60">— Steakhouse Excellence</span>
+                                <span className="text-sm text-charcoal/80">— Steakhouse Excellence</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥩 Classic Steakhouse Experiences</h2>

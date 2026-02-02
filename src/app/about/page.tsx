@@ -166,15 +166,15 @@ export default function AboutPage() {
                 <div className="grid grid-cols-3 gap-6 mt-10">
                   <div className="text-center p-4">
                     <span className="block text-4xl font-bold text-accent-red">37+</span>
-                    <span className="text-sm text-charcoal/60">Years of Tradition</span>
+                    <span className="text-sm text-charcoal/80">Years of Tradition</span>
                   </div>
                   <div className="text-center p-4">
                     <span className="block text-4xl font-bold text-deep-indigo">2</span>
-                    <span className="text-sm text-charcoal/60">DFW Locations</span>
+                    <span className="text-sm text-charcoal/80">DFW Locations</span>
                   </div>
                   <div className="text-center p-4">
                     <span className="block text-4xl font-bold text-soft-gold">4.5★</span>
-                    <span className="text-sm text-charcoal/60">Average Rating</span>
+                    <span className="text-sm text-charcoal/80">Average Rating</span>
                   </div>
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function AboutPage() {
                   <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
                     &quot;He came from a poor family, and he created all of this and was
                     successful; the name for him is a daily reminder of where he came from.&quot;
-                    <span className="block text-sm text-charcoal/60 mt-2 not-italic">— Aya Matsuda</span>
+                    <span className="block text-sm text-charcoal/80 mt-2 not-italic">— Aya Matsuda</span>
                   </p>
                   <p>
                     Today, those same values guide everything we do: serving every guest
@@ -397,7 +397,7 @@ export default function AboutPage() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors flex items-center justify-center">
                     <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
                     </svg>

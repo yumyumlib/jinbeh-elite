@@ -193,7 +193,7 @@ export default function RehearsalDinnerPage() {
       </section>
 
       {/* Rehearsal Dinner Experience */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-warm-ivory">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -203,7 +203,7 @@ export default function RehearsalDinnerPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Hibachi Option */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-red-600 text-white p-4">
+                <div className="bg-accent-red text-white p-4">
                   <h3 className="text-xl font-bold">Hibachi Rehearsal Dinner</h3>
                   <p className="text-red-100">Interactive & Entertaining</p>
                 </div>
@@ -317,7 +317,7 @@ export default function RehearsalDinnerPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-warm-ivory">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -347,35 +347,35 @@ export default function RehearsalDinnerPage() {
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Link href="/celebrations/anniversary" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💍</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Anniversary Dinner</span>
               </Link>
-              <Link href="/celebrations/date-night" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/date-night" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💕</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Date Night</span>
               </Link>
-              <Link href="/celebrations/valentines-day" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/valentines-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">❤️</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Valentine's Day</span>
               </Link>
-              <Link href="/celebrations/birthday" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎂</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Birthday</span>
               </Link>
-              <Link href="/celebrations/graduation" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎓</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Graduation</span>
               </Link>
-              <Link href="/celebrations/baby-shower" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/baby-shower" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">👶</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Baby Shower</span>
               </Link>
-              <Link href="/celebrations/mothers-day" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">👩</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Mother's Day</span>
               </Link>
-              <Link href="/celebrations/fathers-day" className="bg-gray-50 hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/fathers-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">👨</span>
                 <span className="font-medium text-gray-900 group-hover:text-rose-600">Father's Day</span>
               </Link>

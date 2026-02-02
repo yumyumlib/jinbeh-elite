@@ -94,7 +94,7 @@ export default function LycheeMartiniLewisvillePage() {
         {/* Breadcrumb */}
         <nav className="bg-white border-b border-warm-ivory-dark">
           <div className="container mx-auto px-6 py-3">
-            <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+            <ol className="flex items-center gap-2 text-sm text-charcoal/80">
               <li><Link href="/" className="hover:text-accent-red">Home</Link></li>
               <li>/</li>
               <li><Link href="/lewisville" className="hover:text-accent-red">Lewisville</Link></li>

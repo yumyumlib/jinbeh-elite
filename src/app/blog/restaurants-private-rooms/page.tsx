@@ -143,7 +143,7 @@ export default function RestaurantsPrivateRooms() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Private dining removes the ordinary restaurant experience and replaces it with something truly special. It's about creating an exclusive atmosphere where your group feels valued and the details are crafted for you."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— Private Dining Specialist</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— Private Dining Specialist</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

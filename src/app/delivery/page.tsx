@@ -159,7 +159,7 @@ export default function DeliveryPage() {
                     href="https://www.doordash.com/search/jinbeh"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block bg-accent-red hover:bg-accent-red-hover text-white px-8 py-3 rounded-xl font-semibold transition-colors"
                   >
                     Order on DoorDash
                   </a>
@@ -184,7 +184,7 @@ export default function DeliveryPage() {
                     href="https://www.ubereats.com/search?q=jinbeh"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block bg-charcoal hover:bg-gray-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
                   >
                     Order on UberEats
                   </a>
@@ -209,7 +209,7 @@ export default function DeliveryPage() {
                     href="https://www.grubhub.com/search?q=jinbeh"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block bg-accent-red hover:bg-accent-red-hover text-white px-8 py-3 rounded-xl font-semibold transition-colors"
                   >
                     Order on Grubhub
                   </a>
@@ -267,7 +267,7 @@ export default function DeliveryPage() {
                         </div>
                         <div>
                           <p className="font-semibold text-charcoal">{area.city}</p>
-                          <p className="text-sm text-charcoal/60">{area.detail}</p>
+                          <p className="text-sm text-charcoal/80">{area.detail}</p>
                         </div>
                       </div>
                     ))}

@@ -335,7 +335,7 @@ export default function KidsMenuLewisvillePage() {
                     Tender, juicy chicken breast cooked right at your table with vegetables and fried rice
                   </p>
                   <div className="space-y-2 mb-6">
-                    <p className="text-sm text-charcoal/60">
+                    <p className="text-sm text-charcoal/80">
                       ✓ Fried Rice<br />
                       ✓ Vegetables<br />
                       ✓ Butter & Soy Sauce
@@ -357,7 +357,7 @@ export default function KidsMenuLewisvillePage() {
                     Tender steak cooked to perfection on the teppan grill with vegetables and fried rice
                   </p>
                   <div className="space-y-2 mb-6">
-                    <p className="text-sm text-charcoal/60">
+                    <p className="text-sm text-charcoal/80">
                       ✓ Fried Rice<br />
                       ✓ Vegetables<br />
                       ✓ Butter & Soy Sauce
@@ -376,7 +376,7 @@ export default function KidsMenuLewisvillePage() {
                     Succulent jumbo shrimp cooked on the teppan grill with vegetables and fried rice
                   </p>
                   <div className="space-y-2 mb-6">
-                    <p className="text-sm text-charcoal/60">
+                    <p className="text-sm text-charcoal/80">
                       ✓ Fried Rice<br />
                       ✓ Vegetables<br />
                       ✓ Butter & Soy Sauce
@@ -411,7 +411,7 @@ export default function KidsMenuLewisvillePage() {
                     The perfect starter sushi! Imitation crab, cucumber, and creamy avocado rolled in rice
                   </p>
                   <div className="space-y-2 mb-6">
-                    <p className="text-sm text-charcoal/60">
+                    <p className="text-sm text-charcoal/80">
                       ✓ Imitation Crab<br />
                       ✓ Cucumber<br />
                       ✓ Avocado
@@ -430,7 +430,7 @@ export default function KidsMenuLewisvillePage() {
                     Simple, refreshing, and perfect for sushi beginners. Just cucumber with a mild taste!
                   </p>
                   <div className="space-y-2 mb-6">
-                    <p className="text-sm text-charcoal/60">
+                    <p className="text-sm text-charcoal/80">
                       ✓ Cucumber<br />
                       ✓ Rice<br />
                       ✓ Seaweed
@@ -449,7 +449,7 @@ export default function KidsMenuLewisvillePage() {
                     Fresh, creamy avocado rolled perfectly. A mild, delicious choice for young palates
                   </p>
                   <div className="space-y-2 mb-6">
-                    <p className="text-sm text-charcoal/60">
+                    <p className="text-sm text-charcoal/80">
                       ✓ Avocado<br />
                       ✓ Rice<br />
                       ✓ Seaweed

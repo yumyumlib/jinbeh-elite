@@ -44,7 +44,7 @@ export default function OmakaseDiningGuide() {
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Omakase is about trust and artistry. When you sit at the sushi bar and say 'omakase,' you're inviting the chef to showcase their mastery, creativity, and passion for their craft."</p>
-                                <span className="text-sm text-charcoal/60">— Jinbeh Omakase Philosophy</span>
+                                <span className="text-sm text-charcoal/80">— Jinbeh Omakase Philosophy</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Understanding Omakase</h2>

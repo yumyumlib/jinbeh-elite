@@ -123,7 +123,7 @@ export default function JinbehGiftCardsGuidePage() {
         <p className="italic text-charcoal/80 mb-2">
           "I got a Jinbeh gift card and it was one of the best gifts ever. I could experience premium hibachi dining without worrying about cost. Plus I found deals that made it stretch even further!"
         </p>
-        <p className="text-sm text-charcoal/60">— Verified Gift Recipient</p>
+        <p className="text-sm text-charcoal/80">— Verified Gift Recipient</p>
       </div>
 
       <h2>Checking Your Gift Card Balance</h2>

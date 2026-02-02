@@ -78,7 +78,7 @@ export default function DiscoverTeppanyaki() {
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"At Jinbeh, our teppanyaki chefs train for years to perfect their craft. It's not just about the food—it's about creating unforgettable moments around the grill."</p>
-                                <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Family</span>
+                                <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔥 <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">Hibachi vs Teppanyaki</Link></h2>

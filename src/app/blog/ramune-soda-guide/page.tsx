@@ -60,7 +60,7 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">Originating from Japan, Ramune has been enjoyed for generations. The name "Ramune" is derived from the English word "lemonade," reflecting its original citrus flavor. Over the years, Ramune has expanded its flavor offerings, captivating consumers worldwide with an array of tastes ranging from fruity to floral.</p>
                             <p className="text-charcoal/80 mb-6">The evolution of its flavors mirrors the dynamic nature of Japanese cuisine, which often blends traditional ingredients with modern tastes. Today, Ramune's appeal extends beyond its flavors, capturing the imagination of those who appreciate novelty and cultural connection in their beverages.</p>
 
-                            <div className="bg-blue-50 rounded-xl p-6 mb-8 border-l-4 border-deep-indigo">
+                            <div className="bg-deep-indigo/10 rounded-xl p-6 mb-8 border-l-4 border-deep-indigo">
                                 <h3 className="font-bold text-charcoal mb-2">Cultural Icon</h3>
                                 <p className="text-charcoal/80 text-sm">Ramune is synonymous with Japanese summer festivals and childhood memories. The distinctive sound of the marble popping evokes nostalgia and joy, making it an integral part of Japanese pop culture worldwide.</p>
                             </div>
@@ -69,7 +69,7 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">One of the most intriguing features of Ramune soda is the glass marble, often referred to as the "jinbeh." You might wonder, "Why is there a marble in Ramune?" This marble serves both practical and magical purposes.</p>
 
                             <div className="grid md:grid-cols-2 gap-6 my-8">
-                                <div className="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
+                                <div className="bg-deep-indigo/10 rounded-xl p-6 border-2 border-deep-indigo/30">
                                     <h3 className="font-bold text-charcoal mb-3">The Science</h3>
                                     <p className="text-charcoal/80 text-sm mb-3">The marble is an essential part of the Codd-neck bottle design, invented in 1879 by Hiram Codd. It acts as a seal, preventing the soda from going flat and maintaining its carbonation.</p>
                                     <p className="text-charcoal/70 text-xs">The pressure from carbonated liquid holds the marble in place, ensuring freshness until you're ready to enjoy it.</p>
@@ -143,7 +143,7 @@ export default function RamuneSodaGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎉 Limited Edition Flavors</h2>
                             <p className="text-charcoal/80 mb-6">In addition to its regular lineup, Ramune frequently releases limited edition flavors worth seeking out. These special releases showcase Japan's innovative approach to flavor creation:</p>
 
-                            <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-6 border-2 border-pink-200 mb-8">
+                            <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-6 border-2 border-accent-red/30 mb-8">
                                 <ul className="text-charcoal/80 text-sm space-y-2">
                                     <li>✨ <strong>Seasonal Specialties:</strong> Sakura (cherry blossom) in spring, themed editions for summer festivals</li>
                                     <li>✨ <strong>Holiday Collections:</strong> Chocolate-mint blends for winter, seasonal fruit combinations</li>
@@ -157,11 +157,11 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">The marble's role in the Ramune bottle is both functional and scientifically elegant. The Codd-neck design uses the marble to seal in carbonation effectively:</p>
 
                             <div className="space-y-4 my-8">
-                                <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-deep-indigo">
+                                <div className="bg-deep-indigo/10 rounded-lg p-5 border-l-4 border-deep-indigo">
                                     <h4 className="font-bold text-charcoal mb-2">Preservation</h4>
                                     <p className="text-charcoal/80 text-sm">The marble maintains the soda's carbonation, keeping it fresh and fizzy until you're ready to enjoy it. This aspect is crucial, as effervescence is key to Ramune's refreshing appeal.</p>
                                 </div>
-                                <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-deep-indigo">
+                                <div className="bg-deep-indigo/10 rounded-lg p-5 border-l-4 border-deep-indigo">
                                     <h4 className="font-bold text-charcoal mb-2">Pressure Dynamics</h4>
                                     <p className="text-charcoal/80 text-sm">The pressure from carbonated liquid holds the marble in place, preventing it from rolling back into the bottle's neck once opened. This clever engineering maintains product quality.</p>
                                 </div>
@@ -179,7 +179,7 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">If you're wondering where to buy Ramune soda, you're in luck—it's readily available in many locations:</p>
 
                             <div className="grid md:grid-cols-2 gap-4 my-8">
-                                <div className="bg-warm-ivory rounded-lg p-5 border-2 border-blue-200">
+                                <div className="bg-warm-ivory rounded-lg p-5 border-2 border-deep-indigo/30">
                                     <h4 className="font-bold text-charcoal mb-2">Physical Locations</h4>
                                     <ul className="text-charcoal/80 text-sm space-y-2">
                                         <li>• Asian markets</li>
@@ -188,7 +188,7 @@ export default function RamuneSodaGuide() {
                                         <li>• International food stores</li>
                                     </ul>
                                 </div>
-                                <div className="bg-warm-ivory rounded-lg p-5 border-2 border-blue-200">
+                                <div className="bg-warm-ivory rounded-lg p-5 border-2 border-deep-indigo/30">
                                     <h4 className="font-bold text-charcoal mb-2">Online Options</h4>
                                     <ul className="text-charcoal/80 text-sm space-y-2">
                                         <li>• Amazon</li>

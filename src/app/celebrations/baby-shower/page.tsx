@@ -104,7 +104,7 @@ export default function BabyShowerPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/frisco"
-                className="bg-white text-pink-600 hover:bg-pink-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                className="bg-white text-accent-red hover:bg-accent-red/10 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
               >
                 Book Frisco Location
               </Link>
@@ -127,7 +127,7 @@ export default function BabyShowerPage() {
               Why Host Your Baby Shower at Jinbeh
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-pink-50 p-6 rounded-xl">
+              <div className="bg-accent-red/10 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">🎉 Built-In Entertainment</h3>
                 <p className="text-gray-700">
                   Skip the party games—our hibachi chefs provide non-stop entertainment! Guests of all 
@@ -135,14 +135,14 @@ export default function BabyShowerPage() {
                   engaged and having fun.
                 </p>
               </div>
-              <div className="bg-blue-50 p-6 rounded-xl">
+              <div className="bg-deep-indigo/10 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">👨‍👩‍👧‍👦 Group-Friendly Seating</h3>
                 <p className="text-gray-700">
                   Hibachi tables seat 8-10 guests around the grill, creating a party atmosphere where 
                   everyone can see and talk to each other. Much better than scattered restaurant tables!
                 </p>
               </div>
-              <div className="bg-yellow-50 p-6 rounded-xl">
+              <div className="bg-soft-gold/10 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">🍱 Something for Everyone</h3>
                 <p className="text-gray-700">
                   From the adventurous sushi lover to the picky eater, our menu has options everyone 
@@ -150,7 +150,7 @@ export default function BabyShowerPage() {
                   shrimp, and specialty rolls.
                 </p>
               </div>
-              <div className="bg-green-50 p-6 rounded-xl">
+              <div className="bg-cedar-brown/10 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">🤰 Pregnancy-Safe Options</h3>
                 <p className="text-gray-700">
                   Mom-to-be has plenty of delicious options! Our hibachi items are cooked thoroughly 
@@ -163,7 +163,7 @@ export default function BabyShowerPage() {
       </section>
 
       {/* Menu Ideas */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-warm-ivory">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -316,7 +316,7 @@ export default function BabyShowerPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-warm-ivory">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -346,44 +346,44 @@ export default function BabyShowerPage() {
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Link href="/celebrations/birthday" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎂</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Birthday Party</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Birthday Party</span>
               </Link>
-              <Link href="/celebrations/graduation" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎓</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Graduation</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Graduation</span>
               </Link>
-              <Link href="/celebrations/mothers-day" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">👩</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Mother's Day</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Mother's Day</span>
               </Link>
-              <Link href="/celebrations/fathers-day" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/fathers-day" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">👨</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Father's Day</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Father's Day</span>
               </Link>
-              <Link href="/celebrations/anniversary" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💍</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Anniversary</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Anniversary</span>
               </Link>
-              <Link href="/celebrations/christmas" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/christmas" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🎄</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Holidays</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Holidays</span>
               </Link>
-              <Link href="/celebrations/thanksgiving" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/thanksgiving" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">🦃</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Thanksgiving</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Thanksgiving</span>
               </Link>
-              <Link href="/celebrations/rehearsal-dinner" className="bg-gray-50 hover:bg-pink-50 p-4 rounded-xl text-center transition-colors group">
+              <Link href="/celebrations/rehearsal-dinner" className="bg-warm-ivory hover:bg-accent-red/10 p-4 rounded-xl text-center transition-colors group">
                 <span className="text-3xl mb-2 block">💒</span>
-                <span className="font-medium text-gray-900 group-hover:text-pink-600">Rehearsal Dinner</span>
+                <span className="font-medium text-gray-900 group-hover:text-accent-red">Rehearsal Dinner</span>
               </Link>
             </div>
 
-            <div className="bg-pink-50 rounded-xl p-8 text-center">
+            <div className="bg-accent-red/10 rounded-xl p-8 text-center">
               <p className="text-gray-700 mb-4">
                 Jinbeh is perfect for every stage of family life! After the baby shower, bring the little one 
-                back for their first <Link href="/celebrations/birthday" className="text-pink-600 hover:text-pink-700 font-medium">birthday celebration</Link>, 
+                back for their first <Link href="/celebrations/birthday" className="text-accent-red hover:text-pink-700 font-medium">birthday celebration</Link>, 
                 then <Link href="/celebrations/graduation" className="text-red-600 hover:text-red-700 font-medium">graduation parties</Link> years down the road.
               </p>
               <p className="text-gray-700">
@@ -409,7 +409,7 @@ export default function BabyShowerPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/frisco"
-              className="bg-white text-pink-600 hover:bg-pink-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+              className="bg-white text-accent-red hover:bg-accent-red/10 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
             >
               Book Frisco Location
             </Link>

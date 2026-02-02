@@ -271,7 +271,7 @@ export default function VistaRidgePage() {
                   </div>
                   <h3 className="font-heading font-semibold text-charcoal mb-1">{attraction.name}</h3>
                   <p className="text-accent-red font-medium text-sm mb-2">{attraction.distance}</p>
-                  <p className="text-charcoal/60 text-sm">{attraction.description}</p>
+                  <p className="text-charcoal/80 text-sm">{attraction.description}</p>
                 </div>
               ))}
             </div>
@@ -425,7 +425,7 @@ export default function VistaRidgePage() {
               >
                 <span className="text-3xl mb-2 block">🏮</span>
                 <span className="font-medium text-charcoal">Jinbeh Lewisville</span>
-                <p className="text-charcoal/60 text-sm mt-2">Main Location</p>
+                <p className="text-charcoal/80 text-sm mt-2">Main Location</p>
               </Link>
               <Link
                 href="/frisco"
@@ -433,7 +433,7 @@ export default function VistaRidgePage() {
               >
                 <span className="text-3xl mb-2 block">🍽️</span>
                 <span className="font-medium text-charcoal">Jinbeh Frisco</span>
-                <p className="text-charcoal/60 text-sm mt-2">Near Stonebriar</p>
+                <p className="text-charcoal/80 text-sm mt-2">Near Stonebriar</p>
               </Link>
             </div>
           </div>

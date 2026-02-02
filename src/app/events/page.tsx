@@ -696,7 +696,7 @@ export default function EventsPage() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors" />
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors" />
                 </div>
               ))}
             </div>
@@ -743,7 +743,7 @@ export default function EventsPage() {
 
                   <div>
                     <p className="font-semibold text-charcoal">{testimonial.name}</p>
-                    <p className="text-charcoal/60 text-sm">{testimonial.role}</p>
+                    <p className="text-charcoal/80 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
               ))}

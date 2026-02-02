@@ -172,7 +172,7 @@ export default function WhatIsOmakase() {
                                             your taste, and your commitment to excellence.' That's why it transforms a meal into an
                                             unforgettable experience."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Culinary Philosophy</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Culinary Philosophy</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

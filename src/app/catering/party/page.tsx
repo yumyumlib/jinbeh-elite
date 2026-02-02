@@ -284,7 +284,7 @@ export default function PartyCateringPage() {
                       <p className="text-lg text-charcoal/80 mb-6">
                         {option.description}
                       </p>
-                      <p className="text-sm font-semibold text-charcoal/60">
+                      <p className="text-sm font-semibold text-charcoal/80">
                         {option.ideal}
                       </p>
                     </div>

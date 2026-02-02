@@ -136,7 +136,7 @@ export default function RomanticAnniversaryDinnersPage() {
           atmosphere, beautiful presentation, and attentive service made it
           truly special. We'll definitely celebrate here again!"
         </p>
-        <p className="text-sm text-charcoal/60">— Jinbeh Anniversar Guest</p>
+        <p className="text-sm text-charcoal/80">— Jinbeh Anniversar Guest</p>
       </div>
 
       <p>

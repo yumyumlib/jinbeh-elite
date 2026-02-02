@@ -167,7 +167,7 @@ export default function SakeSushiMenuPairings() {
                                             "The harmonious relationship between sake and sushi is rooted in centuries of Japanese culinary
                                             tradition. When you understand the principles of pairing, you unlock a new dimension of flavor."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -190,7 +190,7 @@ export default function SakeSushiMenuPairings() {
                                                 Pure rice sake with no additional alcohol. It is full-bodied and pairs well with robust fish flavors
                                                 like maguro (tuna). The rich, earthy undertones complement fatty fish beautifully.
                                             </p>
-                                            <p className="text-xs text-charcoal/60"><strong>Best with:</strong> Tuna, eel, rich rolls</p>
+                                            <p className="text-xs text-charcoal/80"><strong>Best with:</strong> Tuna, eel, rich rolls</p>
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
@@ -199,7 +199,7 @@ export default function SakeSushiMenuPairings() {
                                                 A premium sake with a fruity and floral aroma, offering a delicate palate that matches perfectly
                                                 with white fish and sashimi. The aromatic qualities enhance the fish's natural flavors.
                                             </p>
-                                            <p className="text-xs text-charcoal/60"><strong>Best with:</strong> White fish, sashimi, delicate rolls</p>
+                                            <p className="text-xs text-charcoal/80"><strong>Best with:</strong> White fish, sashimi, delicate rolls</p>
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
@@ -208,7 +208,7 @@ export default function SakeSushiMenuPairings() {
                                                 An even more refined version of Ginjo with a higher polishing rate, providing an ultra-delicate
                                                 flavor profile. Its elegance pairs with the finest sushi preparations.
                                             </p>
-                                            <p className="text-xs text-charcoal/60"><strong>Best with:</strong> Premium nigiri, omakase</p>
+                                            <p className="text-xs text-charcoal/80"><strong>Best with:</strong> Premium nigiri, omakase</p>
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
@@ -217,7 +217,7 @@ export default function SakeSushiMenuPairings() {
                                                 A cloudy sake with a sweet and creamy texture, ideal for balancing spicy sushi rolls. Its
                                                 richness creates a complementary contrast.
                                             </p>
-                                            <p className="text-xs text-charcoal/60"><strong>Best with:</strong> Spicy rolls, tempura sushi</p>
+                                            <p className="text-xs text-charcoal/80"><strong>Best with:</strong> Spicy rolls, tempura sushi</p>
                                         </div>
                                     </div>
 

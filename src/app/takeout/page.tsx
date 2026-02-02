@@ -222,7 +222,7 @@ export default function TakeoutPage() {
                     href={frisco.orderOnline.grubhub}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block w-full btn bg-red-600 text-white hover:bg-red-700 py-3 rounded-xl font-semibold transition-colors mb-3"
+                    className="inline-block w-full btn bg-accent-red text-white hover:bg-accent-red-hover py-3 rounded-xl font-semibold transition-colors mb-3"
                   >
                     Frisco on GrubHub
                   </a>
@@ -230,7 +230,7 @@ export default function TakeoutPage() {
                     href={lewisville.orderOnline.grubhub}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block w-full btn bg-red-600 text-white hover:bg-red-700 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block w-full btn bg-accent-red text-white hover:bg-accent-red-hover py-3 rounded-xl font-semibold transition-colors"
                   >
                     Lewisville on GrubHub
                   </a>
@@ -251,7 +251,7 @@ export default function TakeoutPage() {
                     href={frisco.orderOnline.ubereats}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block w-full btn bg-black text-white hover:bg-gray-900 py-3 rounded-xl font-semibold transition-colors mb-3"
+                    className="inline-block w-full btn bg-charcoal text-white hover:bg-charcoal-light py-3 rounded-xl font-semibold transition-colors mb-3"
                   >
                     Frisco on Uber Eats
                   </a>
@@ -259,7 +259,7 @@ export default function TakeoutPage() {
                     href={lewisville.orderOnline.ubereats}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block w-full btn bg-black text-white hover:bg-gray-900 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block w-full btn bg-charcoal text-white hover:bg-charcoal-light py-3 rounded-xl font-semibold transition-colors"
                   >
                     Lewisville on Uber Eats
                   </a>
@@ -442,7 +442,7 @@ export default function TakeoutPage() {
                   </p>
                 </div>
               </div>
-              <p className="text-charcoal/60 text-sm">
+              <p className="text-charcoal/80 text-sm">
                 Check GrubHub or Uber Eats for exact delivery availability to your address.
               </p>
             </div>

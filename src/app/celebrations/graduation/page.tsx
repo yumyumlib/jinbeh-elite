@@ -348,7 +348,7 @@ export default function GraduationPage() {
                     <h3 className="font-heading text-2xl font-bold text-charcoal mb-2">
                       {pkg.name}
                     </h3>
-                    <p className="text-sm text-charcoal/60 mb-4">{pkg.size}</p>
+                    <p className="text-sm text-charcoal/80 mb-4">{pkg.size}</p>
                     <p className="text-3xl font-bold text-accent-red mb-2">{pkg.price}</p>
                     <p className="text-charcoal/70 text-sm mb-8">{pkg.description}</p>
 
@@ -693,7 +693,7 @@ export default function GraduationPage() {
                   <p className="font-medium">Frisco Location</p>
                   <p className="text-lg text-soft-gold">(214) 619-1200</p>
                 </div>
-                <div className="hidden sm:block text-white/50">•</div>
+                <div className="hidden sm:block text-white/70">•</div>
                 <div>
                   <p className="font-medium">Lewisville Location</p>
                   <p className="text-lg text-soft-gold">(214) 488-2224</p>

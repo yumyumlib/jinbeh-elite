@@ -52,7 +52,7 @@ export default function BestSeafoodDallas() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Dallas's seafood scene blends global culinary influences, creating innovative dishes that honor traditional preparation methods while embracing contemporary techniques."</p>
-                                <span className="text-sm text-charcoal/60">— DFW Food Culture</span>
+                                <span className="text-sm text-charcoal/80">— DFW Food Culture</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🦪 Upscale Seafood Dining</h2>

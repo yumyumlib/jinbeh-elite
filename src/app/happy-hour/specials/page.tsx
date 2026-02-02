@@ -237,7 +237,7 @@ export default function HappyHourSpecialsPage() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-1">
+                        <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-1">
                           Days
                         </p>
                         <p className="text-lg font-semibold text-charcoal">
@@ -245,7 +245,7 @@ export default function HappyHourSpecialsPage() {
                         </p>
                       </div>
                       <div>
-                        <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-1">
+                        <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-1">
                           Time
                         </p>
                         <p className="text-2xl font-bold text-accent-red">
@@ -454,7 +454,7 @@ export default function HappyHourSpecialsPage() {
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Address
                     </p>
                     <p className="text-charcoal font-semibold">
@@ -469,7 +469,7 @@ export default function HappyHourSpecialsPage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Phone
                     </p>
                     <a
@@ -480,7 +480,7 @@ export default function HappyHourSpecialsPage() {
                     </a>
                   </div>
                   <div>
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Happy Hour
                     </p>
                     <p className="text-charcoal font-semibold">
@@ -503,7 +503,7 @@ export default function HappyHourSpecialsPage() {
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Address
                     </p>
                     <p className="text-charcoal font-semibold">
@@ -518,7 +518,7 @@ export default function HappyHourSpecialsPage() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Phone
                     </p>
                     <a
@@ -529,7 +529,7 @@ export default function HappyHourSpecialsPage() {
                     </a>
                   </div>
                   <div>
-                    <p className="text-charcoal/60 text-sm uppercase tracking-wide mb-2">
+                    <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-2">
                       Happy Hour
                     </p>
                     <p className="text-charcoal font-semibold">

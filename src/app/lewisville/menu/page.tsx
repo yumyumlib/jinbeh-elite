@@ -283,7 +283,7 @@ export default function LewisvilleMenuPage() {
                       <div key={item.name} className="flex justify-between items-start border-b border-charcoal/10 pb-3">
                         <div>
                           <h3 className="font-medium text-charcoal">{item.name}</h3>
-                          <p className="text-sm text-charcoal/60">{item.description}</p>
+                          <p className="text-sm text-charcoal/80">{item.description}</p>
                         </div>
                       </div>
                     ))}

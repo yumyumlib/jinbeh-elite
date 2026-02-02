@@ -49,7 +49,7 @@ export default function JapaneseBeveragesGuide() {
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-deep-indigo/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Japanese beverages reflect our commitment to detail and dedication to quality. Whether it's a carefully whisked matcha or a refreshing Ramune, each drink is crafted with intention and care."</p>
-                                <span className="text-sm text-charcoal/60">— Jinbeh Beverage Philosophy</span>
+                                <span className="text-sm text-charcoal/80">— Jinbeh Beverage Philosophy</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍵 Traditional Tea & Spirits</h2>

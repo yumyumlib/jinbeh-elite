@@ -52,7 +52,7 @@ export default function NotFound() {
 
                 {/* Quick Links */}
                 <div className="border-t border-charcoal/10 pt-8">
-                    <p className="text-sm text-charcoal/60 mb-4">Looking for something specific?</p>
+                    <p className="text-sm text-charcoal/80 mb-4">Looking for something specific?</p>
                     <div className="flex flex-wrap gap-4 justify-center text-sm">
                         <Link href="/frisco" className="text-accent-red hover:underline">
                             Frisco Location

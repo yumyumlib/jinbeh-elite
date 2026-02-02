@@ -358,7 +358,7 @@ export default function OrderOnlinePage() {
                                             <span>📱</span>
                                             Call (972) 668-1100
                                         </a>
-                                        <p className="text-sm text-charcoal/60 mt-3">
+                                        <p className="text-sm text-charcoal/80 mt-3">
                                             Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
                                         </p>
                                     </div>
@@ -378,7 +378,7 @@ export default function OrderOnlinePage() {
                                                 <span className="text-3xl">🍔</span>
                                                 <div className="flex-1">
                                                     <p className="font-semibold text-charcoal">DoorDash</p>
-                                                    <p className="text-sm text-charcoal/60">30-45 min delivery</p>
+                                                    <p className="text-sm text-charcoal/80">30-45 min delivery</p>
                                                 </div>
                                                 <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -394,7 +394,7 @@ export default function OrderOnlinePage() {
                                                 <span className="text-3xl">🚗</span>
                                                 <div className="flex-1">
                                                     <p className="font-semibold text-charcoal">UberEats</p>
-                                                    <p className="text-sm text-charcoal/60">25-40 min delivery</p>
+                                                    <p className="text-sm text-charcoal/80">25-40 min delivery</p>
                                                 </div>
                                                 <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -410,7 +410,7 @@ export default function OrderOnlinePage() {
                                                 <span className="text-3xl">🍕</span>
                                                 <div className="flex-1">
                                                     <p className="font-semibold text-charcoal">Grubhub</p>
-                                                    <p className="text-sm text-charcoal/60">30-50 min delivery</p>
+                                                    <p className="text-sm text-charcoal/80">30-50 min delivery</p>
                                                 </div>
                                                 <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -448,7 +448,7 @@ export default function OrderOnlinePage() {
                                             <span>📱</span>
                                             Call (972) 315-3982
                                         </a>
-                                        <p className="text-sm text-charcoal/60 mt-3">
+                                        <p className="text-sm text-charcoal/80 mt-3">
                                             Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
                                         </p>
                                     </div>
@@ -468,7 +468,7 @@ export default function OrderOnlinePage() {
                                                 <span className="text-3xl">🍔</span>
                                                 <div className="flex-1">
                                                     <p className="font-semibold text-charcoal">DoorDash</p>
-                                                    <p className="text-sm text-charcoal/60">25-40 min delivery</p>
+                                                    <p className="text-sm text-charcoal/80">25-40 min delivery</p>
                                                 </div>
                                                 <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -484,7 +484,7 @@ export default function OrderOnlinePage() {
                                                 <span className="text-3xl">🚗</span>
                                                 <div className="flex-1">
                                                     <p className="font-semibold text-charcoal">UberEats</p>
-                                                    <p className="text-sm text-charcoal/60">20-35 min delivery</p>
+                                                    <p className="text-sm text-charcoal/80">20-35 min delivery</p>
                                                 </div>
                                                 <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -500,7 +500,7 @@ export default function OrderOnlinePage() {
                                                 <span className="text-3xl">🍕</span>
                                                 <div className="flex-1">
                                                     <p className="font-semibold text-charcoal">Grubhub</p>
-                                                    <p className="text-sm text-charcoal/60">30-45 min delivery</p>
+                                                    <p className="text-sm text-charcoal/80">30-45 min delivery</p>
                                                 </div>
                                                 <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

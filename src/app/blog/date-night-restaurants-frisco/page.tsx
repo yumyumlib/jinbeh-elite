@@ -144,7 +144,7 @@ export default function DateNightRestaurantsFrisco() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Date night isn't just about the meal—it's about the moment. It's the laughter across the table, the surprise of a perfectly crafted dish, the sparkle of genuine connection. That's what we create at Jinbeh."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -228,7 +228,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <p><strong>Fresh Sashimi Platter</strong> — Premium cuts of salmon, tuna, and white fish</p>
                                             <p><strong>Edamame</strong> — Perfectly salted, ready to share</p>
                                             <p><strong>Cucumber Salad</strong> — Fresh, light, and refreshing</p>
-                                            <p className="text-sm italic text-charcoal/60 mt-3">Perfect for: First bites, light conversation, setting the mood</p>
+                                            <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: First bites, light conversation, setting the mood</p>
                                         </div>
                                     </div>
 
@@ -238,7 +238,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <p><strong>Premium Steak or Filet Mignon</strong> — Cooked to perfection on the teppan</p>
                                             <p><strong>Lobster Tail</strong> — Tender and buttery</p>
                                             <p><strong>Fried Rice & Vegetables</strong> — With theatrical flair</p>
-                                            <p className="text-sm italic text-charcoal/60 mt-3">Perfect for: Main course, the chef's performance, shared excitement</p>
+                                            <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: Main course, the chef's performance, shared excitement</p>
                                         </div>
                                     </div>
 
@@ -248,7 +248,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <p><strong>Chef's Special Roll</strong> — Unique flavors you can't get anywhere else</p>
                                             <p><strong>Spicy Tuna & Dragon Roll</strong> — Bold and sophisticated</p>
                                             <p><strong>Nigiri Selection</strong> — Hand-selected by our sushi masters</p>
-                                            <p className="text-sm italic text-charcoal/60 mt-3">Perfect for: Sushi enthusiasts, adventurous palates, intimate conversations</p>
+                                            <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: Sushi enthusiasts, adventurous palates, intimate conversations</p>
                                         </div>
                                     </div>
 
@@ -258,7 +258,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <p><strong>Green Tea or Mango Cheesecake</strong> — Light and refreshing</p>
                                             <p><strong>Sake Bomb or Premium Sake</strong> — Toast to the evening</p>
                                             <p><strong>Japanese Ice Cream</strong> — Sweet ending to a sweet night</p>
-                                            <p className="text-sm italic text-charcoal/60 mt-3">Perfect for: Sweet finale, celebration, ending on a high note</p>
+                                            <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: Sweet finale, celebration, ending on a high note</p>
                                         </div>
                                     </div>
                                 </div>

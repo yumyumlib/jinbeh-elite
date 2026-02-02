@@ -27,7 +27,7 @@ export default function Footer() {
                 className="h-14 w-auto"
               />
             </Link>
-            <p className="text-warm-ivory/60 text-sm leading-relaxed mb-6 max-w-xs">
+            <p className="text-warm-ivory/80 text-sm leading-relaxed mb-6 max-w-xs">
               {business.tagline}
             </p>
             <div className="flex gap-3">
@@ -87,7 +87,7 @@ export default function Footer() {
               </svg>
               {frisco.phone}
             </a>
-            <div className="mt-3 text-xs text-warm-ivory/50 space-y-0.5">
+            <div className="mt-3 text-xs text-warm-ivory/70 space-y-0.5">
               <p>Mon-Fri: {frisco.hours.lunch.weekday.display}</p>
               <p>Sat-Sun: {frisco.hours.lunch.weekend.display}</p>
             </div>
@@ -119,7 +119,7 @@ export default function Footer() {
               </svg>
               {lewisville.phone}
             </a>
-            <div className="mt-3 text-xs text-warm-ivory/50 space-y-0.5">
+            <div className="mt-3 text-xs text-warm-ivory/70 space-y-0.5">
               <p>Mon-Fri: {lewisville.hours.lunch.weekday.display}</p>
               <p>Sat-Sun: {lewisville.hours.lunch.weekend.display}</p>
             </div>
@@ -236,8 +236,8 @@ export default function Footer() {
 
           {/* Service Areas - Compact */}
           <div className="mt-10 pt-8 border-t border-warm-ivory/10">
-            <p className="text-xs text-warm-ivory/50 mb-3">Also Serving</p>
-            <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-warm-ivory/40">
+            <p className="text-xs text-warm-ivory/70 mb-3">Also Serving</p>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-warm-ivory/80">
               <Link href="/nearby/plano" className="hover:text-warm-ivory/70 transition-colors">Plano</Link>
               <span className="text-warm-ivory/20">•</span>
               <Link href="/nearby/mckinney" className="hover:text-warm-ivory/70 transition-colors">McKinney</Link>
@@ -261,7 +261,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-warm-ivory/10 bg-charcoal/50">
         <div className="container mx-auto px-6 py-5">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-warm-ivory/50">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-warm-ivory/70">
             <p>© {currentYear} Jinbeh Japanese Restaurant. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/privacy" className="hover:text-warm-ivory/80 transition-colors">

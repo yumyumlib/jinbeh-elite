@@ -119,7 +119,7 @@ export default function BestHappyHourFrisco() {
                                             great food and drinks in a welcoming atmosphere. Our regulars know: the
                                             sushi is fresh, the sake is cold, and the vibes are perfect."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

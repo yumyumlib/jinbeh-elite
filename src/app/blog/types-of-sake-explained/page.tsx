@@ -144,7 +144,7 @@ export default function TypesOfSakeExplained() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "At Jinbeh, we stock diverse sake varieties so every guest finds their perfect match. Our staff is trained in sake classification and can guide you through your preferences."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -860,7 +860,7 @@ export default function TypesOfSakeExplained() {
                                         </div>
                                     </div>
 
-                                    <p className="text-charcoal/60 text-sm mt-12 pt-8 border-t border-warm-ivory-dark">
+                                    <p className="text-charcoal/80 text-sm mt-12 pt-8 border-t border-warm-ivory-dark">
                                         Learn more about sake at our blog. Explore <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors underline">our sake pairing guide</Link>, <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red transition-colors underline">sake alcohol strength explained</Link>, and discover more <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors underline">sushi pairing options</Link>.
                                     </p>
                                 </div>

@@ -158,7 +158,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
           beautiful private space, and attentive service made the bride feel so
           special and celebrated."
         </p>
-        <p className="text-sm text-charcoal/60">— Bridal Shower Host</p>
+        <p className="text-sm text-charcoal/80">— Bridal Shower Host</p>
       </div>
 
       <p>

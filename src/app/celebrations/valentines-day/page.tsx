@@ -350,7 +350,7 @@ export default function ValentinesDayPage() {
                   <span>📞</span> Lewisville: (214) 488-2224
                 </a>
               </div>
-              <p className="mt-6 text-sm text-charcoal/60">
+              <p className="mt-6 text-sm text-charcoal/80">
                 Or reserve online:{" "}
                 <Link href="/frisco#reserve" className="text-deep-indigo hover:underline">
                   Frisco OpenTable

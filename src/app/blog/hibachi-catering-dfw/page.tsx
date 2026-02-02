@@ -69,7 +69,7 @@ export default function HibachiCatering() {
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
                         <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=best-of">Catering</Link>
                     </nav>
-                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-green-600 mb-4">🍴 Catering</span>
+                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-cedar-brown mb-4">🍴 Catering</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Hibachi Catering DFW</h1>
                 </div>
             </section>
@@ -82,7 +82,7 @@ export default function HibachiCatering() {
 
                             <div className="bg-gradient-to-br from-green-600/10 to-soft-gold/10 border-l-4 border-green-600 rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Our catering team brings the full Jinbeh experience to your location—complete with skilled chefs, fresh ingredients, and the entertainment that makes hibachi unforgettable."</p>
-                                <span className="text-sm text-charcoal/60 mt-2 block">— The Jinbeh Family</span>
+                                <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎉 Catering Options</h2>

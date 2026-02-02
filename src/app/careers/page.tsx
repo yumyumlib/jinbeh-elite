@@ -435,7 +435,7 @@ export default function CareersPage() {
                   </p>
                   <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
                     "The best part of working at Jinbeh is the family atmosphere. Everyone here genuinely cares about each other and wants each other to succeed."
-                    <span className="block text-sm text-charcoal/60 mt-2 not-italic">— Jinbeh Team Member</span>
+                    <span className="block text-sm text-charcoal/80 mt-2 not-italic">— Jinbeh Team Member</span>
                   </p>
                   <p>
                     From day one, you'll be supported by experienced mentors who are invested in your success. We believe in promoting from within and creating pathways for career advancement.
@@ -560,7 +560,7 @@ export default function CareersPage() {
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <p className="text-sm text-charcoal/60 uppercase mb-1">Frisco</p>
+                    <p className="text-sm text-charcoal/80 uppercase mb-1">Frisco</p>
                     <a
                       href="tel:2146191200"
                       className="text-accent-red hover:text-accent-red/80 font-bold text-lg"
@@ -569,7 +569,7 @@ export default function CareersPage() {
                     </a>
                   </div>
                   <div>
-                    <p className="text-sm text-charcoal/60 uppercase mb-1">Lewisville</p>
+                    <p className="text-sm text-charcoal/80 uppercase mb-1">Lewisville</p>
                     <a
                       href="tel:2144882224"
                       className="text-accent-red hover:text-accent-red/80 font-bold text-lg"
@@ -591,7 +591,7 @@ export default function CareersPage() {
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <p className="text-sm text-charcoal/60 uppercase mb-2">Frisco</p>
+                    <p className="text-sm text-charcoal/80 uppercase mb-2">Frisco</p>
                     <p className="text-sm text-charcoal/75 mb-2">2693 Preston Rd, Suite 1040</p>
                     <Link
                       href="/frisco"

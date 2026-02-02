@@ -139,7 +139,7 @@ export default function FineDiningFrisco() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Fine dining isn't just about exceptional food—it's about creating memories through an unforgettable experience. At Jinbeh, we combine authentic Japanese tradition with contemporary elegance, delivering culinary artistry in every dish."
                                         </p>
-                                        <span className="text-sm text-charcoal/60 mt-2 block">— Jinbeh Fine Dining Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Fine Dining Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

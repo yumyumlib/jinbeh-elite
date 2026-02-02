@@ -209,7 +209,7 @@ export default function FreeBirthdayFoodDealsPage() {
           meal was incredible, and the hibachi show made it truly special. I'll
           definitely celebrate here again next year!"
         </p>
-        <p className="text-sm text-charcoal/60">— Jinbeh Birthday Guest</p>
+        <p className="text-sm text-charcoal/80">— Jinbeh Birthday Guest</p>
       </div>
 
       <p>

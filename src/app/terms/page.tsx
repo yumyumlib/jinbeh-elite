@@ -30,7 +30,7 @@ export default function TermsOfServicePage() {
           </h1>
 
           <div className="prose prose-lg max-w-none text-charcoal/80">
-            <p className="text-sm text-charcoal/60 mb-8">Last updated: January 2026</p>
+            <p className="text-sm text-charcoal/80 mb-8">Last updated: January 2026</p>
 
             <section className="mb-8">
               <h2 className="text-2xl font-heading font-semibold text-charcoal mb-4">
