@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Image from "next/image";
-import Link from "next/link";
+import type { Metadata } from &quot;next&quot;;
+import Header from &quot;@/components/Header&quot;;
+import Footer from &quot;@/components/Footer&quot;;
+import Image from &quot;next/image&quot;;
+import Link from &quot;next/link&quot;;
 
 export const metadata: Metadata = {
   title: "Private Dining at Jinbeh | Exclusive Events in Frisco & Lewisville",
@@ -34,55 +34,79 @@ export const metadata: Metadata = {
 
 // FAQ Schema for private dining
 const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+  &quot;@context&quot;: "https://schema.org",
+  &quot;@type&quot;: "FAQPage",
   mainEntity: [
     {
-      "@type": "Question",
+      &quot;@type&quot;: "Question",
       name: "What is the minimum spend for private dining at Jinbeh?",
       acceptedAnswer: {
-        "@type": "Answer",
+        &quot;@type&quot;: "Answer",
         text: "Minimum spend requirements vary based on the size of your group and which room you book. Please contact us directly for specific details. For groups of 8-10, we can often accommodate you at a private hibachi table with a reasonable per-person minimum.",
       },
     },
     {
-      "@type": "Question",
+      &quot;@type&quot;: "Question",
       name: "How many people can Jinbeh accommodate for private events?",
       acceptedAnswer: {
-        "@type": "Answer",
+        &quot;@type&quot;: "Answer",
         text: "Our private dining spaces can accommodate groups from 8 to 60+ guests. We have multiple private hibachi tables and exclusive dining areas at both our Frisco and Lewisville locations. Contact us to discuss your specific group size.",
       },
     },
     {
-      "@type": "Question",
+      &quot;@type&quot;: "Question",
       name: "How do I book a private dining experience at Jinbeh?",
       acceptedAnswer: {
-        "@type": "Answer",
+        &quot;@type&quot;: "Answer",
         text: "To book a private event, please call our events team directly. Frisco: (214) 619-1200, Lewisville: (214) 488-2224. We'll discuss your date, group size, menu preferences, and special requirements to create the perfect experience.",
       },
     },
     {
-      "@type": "Question",
+      &quot;@type&quot;: "Question",
       name: "Can we customize the menu for our private event?",
       acceptedAnswer: {
-        "@type": "Answer",
+        &quot;@type&quot;: "Answer",
         text: "Absolutely! We offer custom menu options for private dining events. Our culinary team can work with you to create a personalized menu featuring your favorite sushi, hibachi, and specialty dishes tailored to your event.",
       },
     },
     {
-      "@type": "Question",
+      &quot;@type&quot;: "Question",
       name: "Are hibachi chefs included in private dining experiences?",
       acceptedAnswer: {
-        "@type": "Answer",
+        &quot;@type&quot;: "Answer",
         text: "Yes! Private hibachi tables include our skilled chefs who perform tableside cooking with entertainment. For larger private dining areas, we can arrange additional entertainment options based on your preferences.",
       },
     },
     {
-      "@type": "Question",
+      &quot;@type&quot;: "Question",
       name: "What types of events can we host at Jinbeh?",
       acceptedAnswer: {
-        "@type": "Answer",
+        &quot;@type&quot;: "Answer",
         text: "We host a variety of events including birthday parties, anniversary celebrations, corporate dinners, team building events, graduation celebrations, wedding rehearsal dinners, and intimate gatherings. Each event is customized to meet your specific needs.",
+      },
+    },
+    {
+      &quot;@type&quot;: "Question",
+      name: "Does Jinbeh have private dining rooms?",
+      acceptedAnswer: {
+        &quot;@type&quot;: "Answer",
+        text: "Yes! We have semi-private rooms and exclusive private dining spaces at both our Frisco and Lewisville locations. Our private areas can be customized with your menu choices and accommodated for groups from 8 to 60+ guests. Contact us to learn more about our available private spaces.",
+      },
+    },
+    {
+      &quot;@type&quot;: "Question",
+      name: "What is the minimum for private dining at Jinbeh?",
+      acceptedAnswer: {
+        &quot;@type&quot;: "Answer",
+        text: "Minimum requirements vary based on your group size and the private space you select. We offer flexible group dining options with advance reservations to accommodate different party sizes and budgets. Please contact us directly to discuss specifics for your event.",
+      },
+    },
+    {
+      &quot;@type&quot;: "Question",
+      name: "Can I book a private hibachi table?",
+      acceptedAnswer: {
+        &quot;@type&quot;: "Answer",
+        text: "Absolutely! Our private hibachi tables seat 8-10 guests and feature a dedicated hibachi chef for tableside cooking and entertainment. This is perfect for group seating and a private hibachi experience. We recommend booking at least 2-3 weeks in advance to secure your preferred date.",
       },
     },
   ],
@@ -90,13 +114,13 @@ const faqSchema = {
 
 // Local Business Schema
 const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  &quot;@context&quot;: "https://schema.org",
+  &quot;@type&quot;: "LocalBusiness",
   name: "Jinbeh Japanese Restaurant - Private Dining",
   description: "Exclusive private dining and event spaces for celebrations and corporate gatherings",
   url: "https://jinbeh.com/private-dining",
   image: "/images/food/hibachi-grill.jpg",
-  areaServed: ["Frisco, TX", "Lewisville, TX", "Dallas, TX"],
+  areaServed: ["Frisco, TX&quot;, &quot;Lewisville, TX&quot;, &quot;Dallas, TX"],
   priceRange: "$$",
 };
 
@@ -270,7 +294,7 @@ export default function PrivateDiningPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main className=&quot;min-h-screen&quot;>
         {/* Schema */}
         <script
           type="application/ld+json"
@@ -282,7 +306,7 @@ export default function PrivateDiningPage() {
         />
 
         {/* Hero Section */}
-        <section className="relative h-[65vh] min-h-[550px] flex items-center justify-center overflow-hidden">
+        <section className=&quot;relative h-[65vh] min-h-[550px] flex items-center justify-center overflow-hidden&quot;>
           <video
             autoPlay
             muted
@@ -296,15 +320,15 @@ export default function PrivateDiningPage() {
               type="video/mp4"
             />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/75" />
-          <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
+          <div className=&quot;absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/75&quot; />
+          <div className=&quot;relative z-10 text-center text-white px-6 max-w-4xl mx-auto&quot;>
+            <p className=&quot;text-soft-gold font-medium tracking-wider uppercase mb-4&quot;>
               Exclusive Experiences
             </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
+            <h1 className=&quot;text-4xl md:text-6xl font-heading font-bold mb-6&quot;>
               Private Dining for Your Special Occasion
             </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-warm-ivory/90 max-w-2xl mx-auto&quot;>
               Host your celebration in elegant private spaces with hibachi entertainment,
               custom menus, and impeccable service.
             </p>
@@ -312,31 +336,31 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* Event Types Grid */}
-        <section className="py-20 bg-warm-ivory">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+        <section className=&quot;py-20 bg-warm-ivory&quot;>
+          <div className=&quot;container mx-auto px-6&quot;>
+            <div className=&quot;text-center mb-16&quot;>
+              <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4&quot;>
                 Perfect for Every Occasion
               </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+              <p className=&quot;text-lg text-charcoal/70 max-w-2xl mx-auto&quot;>
                 From intimate celebrations to grand corporate events, we create unforgettable experiences.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto&quot;>
               {eventTypes.map((event) => (
                 <div
                   key={event.title}
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="text-5xl mb-4">{event.icon}</div>
-                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
+                  <div className=&quot;text-5xl mb-4&quot;>{event.icon}</div>
+                  <h3 className=&quot;text-2xl font-heading font-bold text-charcoal mb-3&quot;>
                     {event.title}
                   </h3>
-                  <p className="text-charcoal/70 mb-6">{event.description}</p>
-                  <ul className="space-y-2">
+                  <p className=&quot;text-charcoal/70 mb-6&quot;>{event.description}</p>
+                  <ul className=&quot;space-y-2&quot;>
                     {event.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-3 text-sm text-charcoal/80">
+                      <li key={feature} className=&quot;flex items-start gap-3 text-sm text-charcoal/80&quot;>
                         <svg
                           className="w-5 h-5 text-accent-red flex-shrink-0 mt-0.5"
                           fill="currentColor"
@@ -359,26 +383,26 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* Amenities & Features */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+        <section className=&quot;py-20 bg-white&quot;>
+          <div className=&quot;container mx-auto px-6&quot;>
+            <div className=&quot;text-center mb-16&quot;>
+              <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4&quot;>
                 Premium Amenities & Features
               </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+              <p className=&quot;text-lg text-charcoal/70 max-w-2xl mx-auto&quot;>
                 Every detail is thoughtfully curated to create an exceptional private dining experience.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+            <div className=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16&quot;>
               {amenities.map((amenity) => (
-                <div key={amenity.title} className="flex gap-6">
-                  <div className="text-4xl flex-shrink-0">{amenity.icon}</div>
+                <div key={amenity.title} className=&quot;flex gap-6&quot;>
+                  <div className=&quot;text-4xl flex-shrink-0&quot;>{amenity.icon}</div>
                   <div>
-                    <h3 className="text-xl font-heading font-bold text-charcoal mb-2">
+                    <h3 className=&quot;text-xl font-heading font-bold text-charcoal mb-2&quot;>
                       {amenity.title}
                     </h3>
-                    <p className="text-charcoal/70">{amenity.description}</p>
+                    <p className=&quot;text-charcoal/70&quot;>{amenity.description}</p>
                   </div>
                 </div>
               ))}
@@ -387,58 +411,58 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* Locations Section */}
-        <section className="py-20 bg-charcoal">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+        <section className=&quot;py-20 bg-charcoal&quot;>
+          <div className=&quot;container mx-auto px-6&quot;>
+            <div className=&quot;text-center mb-16&quot;>
+              <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold text-white mb-4&quot;>
                 Private Dining at Both Locations
               </h2>
-              <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              <p className=&quot;text-lg text-white/70 max-w-2xl mx-auto&quot;>
                 Each location features exclusive private dining spaces designed for your comfort and enjoyment.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div className=&quot;grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto&quot;>
               {locations.map((location) => (
-                <div key={location.name} className="bg-charcoal border border-white/10 rounded-2xl overflow-hidden hover:border-soft-gold/50 transition-all duration-300">
-                  <div className="relative h-64 overflow-hidden">
+                <div key={location.name} className=&quot;bg-charcoal border border-white/10 rounded-2xl overflow-hidden hover:border-soft-gold/50 transition-all duration-300&quot;>
+                  <div className=&quot;relative h-64 overflow-hidden&quot;>
                     <Image
                       src={location.image}
                       alt={`${location.name} private dining`}
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent" />
-                    <h3 className="absolute bottom-6 left-6 right-6 text-3xl font-heading font-bold text-white">
+                    <div className=&quot;absolute inset-0 bg-gradient-to-t from-charcoal to-transparent&quot; />
+                    <h3 className=&quot;absolute bottom-6 left-6 right-6 text-3xl font-heading font-bold text-white&quot;>
                       Jinbeh {location.name}
                     </h3>
                   </div>
-                  <div className="p-8">
-                    <div className="mb-6">
-                      <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Address</p>
-                      <p className="text-white font-semibold">{location.address}</p>
+                  <div className=&quot;p-8&quot;>
+                    <div className=&quot;mb-6&quot;>
+                      <p className=&quot;text-white/80 text-sm uppercase tracking-wide mb-2&quot;>Address</p>
+                      <p className=&quot;text-white font-semibold&quot;>{location.address}</p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4 mb-8">
+                    <div className=&quot;grid grid-cols-2 gap-4 mb-8&quot;>
                       <div>
-                        <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Phone</p>
-                        <a href={`tel:${location.phone.replace(/\D/g, "")}`} className="text-soft-gold hover:text-soft-gold/80 font-semibold">
+                        <p className=&quot;text-white/80 text-sm uppercase tracking-wide mb-2&quot;>Phone</p>
+                        <a href={`tel:${location.phone.replace(/\D/g, &quot;&quot;)}`} className=&quot;text-soft-gold hover:text-soft-gold/80 font-semibold&quot;>
                           {location.phone}
                         </a>
                       </div>
                       <div>
-                        <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Email</p>
-                        <a href={`mailto:${location.email}`} className="text-soft-gold hover:text-soft-gold/80 font-semibold text-sm">
+                        <p className=&quot;text-white/80 text-sm uppercase tracking-wide mb-2&quot;>Email</p>
+                        <a href={`mailto:${location.email}`} className=&quot;text-soft-gold hover:text-soft-gold/80 font-semibold text-sm&quot;>
                           {location.email}
                         </a>
                       </div>
                     </div>
 
-                    <div className="mb-8">
-                      <p className="text-white/80 text-sm uppercase tracking-wide mb-3">Highlights</p>
-                      <ul className="space-y-2">
+                    <div className=&quot;mb-8&quot;>
+                      <p className=&quot;text-white/80 text-sm uppercase tracking-wide mb-3&quot;>Highlights</p>
+                      <ul className=&quot;space-y-2&quot;>
                         {location.highlights.map((highlight) => (
-                          <li key={highlight} className="flex items-start gap-3 text-white/90">
+                          <li key={highlight} className=&quot;flex items-start gap-3 text-white/90&quot;>
                             <svg
                               className="w-5 h-5 text-soft-gold flex-shrink-0 mt-0.5"
                               fill="currentColor"
@@ -457,11 +481,11 @@ export default function PrivateDiningPage() {
                     </div>
 
                     <Link
-                      href={location.name === "Frisco" ? "/frisco" : "/lewisville"}
+                      href={location.name === &quot;Frisco&quot; ? &quot;/frisco&quot; : "/lewisville"}
                       className="inline-flex items-center gap-2 text-soft-gold hover:text-soft-gold/80 font-semibold transition-colors"
                     >
                       Learn More
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className=&quot;w-5 h-5&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -478,32 +502,32 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* Booking Process Section */}
-        <section className="py-20 bg-warm-ivory">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+        <section className=&quot;py-20 bg-warm-ivory&quot;>
+          <div className=&quot;container mx-auto px-6&quot;>
+            <div className=&quot;text-center mb-16&quot;>
+              <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4&quot;>
                 Simple Booking Process
               </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+              <p className=&quot;text-lg text-charcoal/70 max-w-2xl mx-auto&quot;>
                 Planning your private event is easy. Follow these steps to book your exclusive experience.
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=&quot;max-w-4xl mx-auto&quot;>
+              <div className=&quot;grid grid-cols-1 md:grid-cols-2 gap-8&quot;>
                 {bookingSteps.map((step) => (
-                  <div key={step.number} className="relative">
-                    <div className="flex gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-16 w-16 rounded-full bg-accent-red text-white font-heading font-bold text-xl">
+                  <div key={step.number} className=&quot;relative&quot;>
+                    <div className=&quot;flex gap-6&quot;>
+                      <div className=&quot;flex-shrink-0&quot;>
+                        <div className=&quot;flex items-center justify-center h-16 w-16 rounded-full bg-accent-red text-white font-heading font-bold text-xl&quot;>
                           {step.number}
                         </div>
                       </div>
-                      <div className="pt-2">
-                        <h3 className="text-xl font-heading font-bold text-charcoal mb-2">
+                      <div className=&quot;pt-2&quot;>
+                        <h3 className=&quot;text-xl font-heading font-bold text-charcoal mb-2&quot;>
                           {step.title}
                         </h3>
-                        <p className="text-charcoal/70">{step.description}</p>
+                        <p className=&quot;text-charcoal/70&quot;>{step.description}</p>
                       </div>
                     </div>
                   </div>
@@ -514,11 +538,11 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* Why Choose Jinbeh */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-              <div className="relative">
-                <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
+        <section className=&quot;py-20 bg-white&quot;>
+          <div className=&quot;container mx-auto px-6&quot;>
+            <div className=&quot;grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto&quot;>
+              <div className=&quot;relative&quot;>
+                <div className=&quot;relative aspect-square rounded-2xl overflow-hidden shadow-2xl&quot;>
                   <Image
                     src="/images/about/chef-flames.jpg"
                     alt="Hibachi chef performing at private event"
@@ -526,21 +550,21 @@ export default function PrivateDiningPage() {
                     className="object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -left-6 -z-10 w-full h-full rounded-2xl bg-soft-gold/10" />
+                <div className=&quot;absolute -bottom-6 -left-6 -z-10 w-full h-full rounded-2xl bg-soft-gold/10&quot; />
               </div>
 
               <div>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
+                <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6&quot;>
                   Why Choose Jinbeh for Private Dining?
                 </h2>
-                <p className="text-lg text-charcoal/70 mb-8">
+                <p className=&quot;text-lg text-charcoal/70 mb-8&quot;>
                   For nearly four decades, Jinbeh has been creating memorable moments and celebrations. Our commitment to exceptional cuisine, skilled hibachi chefs, and personalized service makes us the premier choice for private events in North Texas.
                 </p>
 
-                <div className="space-y-6">
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-accent-red/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className=&quot;space-y-6&quot;>
+                  <div className=&quot;flex gap-4&quot;>
+                    <div className=&quot;w-12 h-12 bg-accent-red/10 rounded-xl flex items-center justify-center flex-shrink-0&quot;>
+                      <svg className=&quot;w-6 h-6 text-accent-red&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -550,16 +574,16 @@ export default function PrivateDiningPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Decades of Excellence</h3>
-                      <p className="text-charcoal/70 text-sm">
+                      <h3 className=&quot;font-semibold text-charcoal mb-1&quot;>Decades of Excellence</h3>
+                      <p className=&quot;text-charcoal/70 text-sm&quot;>
                         Family-owned since 1988, with proven expertise in hosting memorable celebrations and events.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-deep-indigo/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-deep-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className=&quot;flex gap-4&quot;>
+                    <div className=&quot;w-12 h-12 bg-deep-indigo/10 rounded-xl flex items-center justify-center flex-shrink-0&quot;>
+                      <svg className=&quot;w-6 h-6 text-deep-indigo&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -569,16 +593,16 @@ export default function PrivateDiningPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Customization</h3>
-                      <p className="text-charcoal/70 text-sm">
+                      <h3 className=&quot;font-semibold text-charcoal mb-1&quot;>Customization</h3>
+                      <p className=&quot;text-charcoal/70 text-sm&quot;>
                         Every event is unique. We work closely with you to design custom experiences tailored to your vision.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-soft-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className=&quot;flex gap-4&quot;>
+                    <div className=&quot;w-12 h-12 bg-soft-gold/20 rounded-xl flex items-center justify-center flex-shrink-0&quot;>
+                      <svg className=&quot;w-6 h-6 text-soft-gold&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -588,16 +612,16 @@ export default function PrivateDiningPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Entertainment & Chef Performance</h3>
-                      <p className="text-charcoal/70 text-sm">
+                      <h3 className=&quot;font-semibold text-charcoal mb-1&quot;>Entertainment & Chef Performance</h3>
+                      <p className=&quot;text-charcoal/70 text-sm&quot;>
                         Our skilled hibachi chefs bring excitement and artistry to every private event with live cooking performances.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="w-12 h-12 bg-deep-indigo/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-deep-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className=&quot;flex gap-4&quot;>
+                    <div className=&quot;w-12 h-12 bg-deep-indigo/10 rounded-xl flex items-center justify-center flex-shrink-0&quot;>
+                      <svg className=&quot;w-6 h-6 text-deep-indigo&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;>
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -607,8 +631,8 @@ export default function PrivateDiningPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Premium Quality</h3>
-                      <p className="text-charcoal/70 text-sm">
+                      <h3 className=&quot;font-semibold text-charcoal mb-1&quot;>Premium Quality</h3>
+                      <p className=&quot;text-charcoal/70 text-sm&quot;>
                         Fresh ingredients, expertly prepared dishes, and premium sake selection for an unforgettable culinary experience.
                       </p>
                     </div>
@@ -620,19 +644,19 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+        <section className=&quot;py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white&quot;>
+          <div className=&quot;container mx-auto px-6 text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold mb-6&quot;>
               Ready to Plan Your Private Event?
             </h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
+            <p className=&quot;text-xl text-white/90 max-w-2xl mx-auto mb-10&quot;>
               Let our events team help you create an unforgettable celebration. Contact us today to discuss your vision and book your exclusive dining experience.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <div className="flex flex-col items-center gap-3 sm:gap-6 sm:flex-row">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center mb-10&quot;>
+              <div className=&quot;flex flex-col items-center gap-3 sm:gap-6 sm:flex-row&quot;>
                 <div>
-                  <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Frisco</p>
+                  <p className=&quot;text-white/80 text-sm uppercase tracking-wide mb-2&quot;>Frisco</p>
                   <a
                     href="tel:2146191200"
                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg block"
@@ -641,7 +665,7 @@ export default function PrivateDiningPage() {
                   </a>
                 </div>
                 <div>
-                  <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Lewisville</p>
+                  <p className=&quot;text-white/80 text-sm uppercase tracking-wide mb-2&quot;>Lewisville</p>
                   <a
                     href="tel:2144882224"
                     className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl block"
@@ -652,11 +676,11 @@ export default function PrivateDiningPage() {
               </div>
             </div>
 
-            <p className="text-white/70 text-sm mb-8">
-              Email inquiries: <a href="mailto:frisco@jinbeh.com" className="text-soft-gold hover:text-soft-gold/80">frisco@jinbeh.com</a> | <a href="mailto:lewisville@jinbeh.com" className="text-soft-gold hover:text-soft-gold/80">lewisville@jinbeh.com</a>
+            <p className=&quot;text-white/70 text-sm mb-8&quot;>
+              Email inquiries: <a href=&quot;mailto:frisco@jinbeh.com&quot; className=&quot;text-soft-gold hover:text-soft-gold/80&quot;>frisco@jinbeh.com</a> | <a href=&quot;mailto:lewisville@jinbeh.com&quot; className=&quot;text-soft-gold hover:text-soft-gold/80&quot;>lewisville@jinbeh.com</a>
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-sm">
+            <div className=&quot;grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-sm&quot;>
               <Link
                 href="/celebrations"
                 className="text-white/90 hover:text-soft-gold transition-colors underline underline-offset-4"
@@ -680,18 +704,18 @@ export default function PrivateDiningPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-warm-ivory">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+        <section className=&quot;py-20 bg-warm-ivory&quot;>
+          <div className=&quot;container mx-auto px-6&quot;>
+            <div className=&quot;text-center mb-16&quot;>
+              <h2 className=&quot;text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4&quot;>
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-charcoal/70">
+              <p className=&quot;text-lg text-charcoal/70&quot;>
                 Have questions about private dining? We've got answers.
               </p>
             </div>
 
-            <div className="max-w-3xl mx-auto space-y-6">
+            <div className=&quot;max-w-3xl mx-auto space-y-6&quot;>
               {[
                 {
                   q: "What is the minimum spend for private dining at Jinbeh?",
@@ -710,8 +734,8 @@ export default function PrivateDiningPage() {
                   a: "Yes! Private hibachi tables include our skilled chefs who cook tableside with entertainment. For larger private dining areas, we can discuss additional entertainment and service options.",
                 },
                 {
-                  q: "What's the maximum group size you can accommodate?",
-                  a: "We can host groups from 8 to 60+ guests depending on your preferences. Contact us to discuss your specific group size and we'll recommend the best private dining option.",
+                  q: "What&apos;s the maximum group size you can accommodate?",
+                  a: "We can host groups from 8 to 60+ guests depending on your preferences. Contact us to discuss your specific group size and we&apos;ll recommend the best private dining option.",
                 },
                 {
                   q: "How far in advance should we book?",
@@ -722,10 +746,10 @@ export default function PrivateDiningPage() {
                   key={idx}
                   className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-lg font-heading font-bold text-charcoal mb-3">
+                  <h3 className=&quot;text-lg font-heading font-bold text-charcoal mb-3&quot;>
                     {item.q}
                   </h3>
-                  <p className="text-charcoal/70">{item.a}</p>
+                  <p className=&quot;text-charcoal/70&quot;>{item.a}</p>
                 </div>
               ))}
             </div>

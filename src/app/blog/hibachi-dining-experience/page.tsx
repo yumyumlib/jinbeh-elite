@@ -47,6 +47,21 @@ const faqs = [
     answer:
       "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We recommend reservations for hibachi, especially weekends. Tables seat 8-10 guests.",
   },
+  {
+    question: "What tricks do hibachi chefs perform?",
+    answer:
+      "Our hibachi chefs are skilled performers! Watch for the Beating Heart trick (creating a pulsating egg), the Egg Roll flip into the chef's hat, the famous Onion Volcano (flaming onions stacked into a volcano), spatula juggling, and incredible shrimp-tossing where they catch shrimp in your mouth. Every show is entertaining and unique!",
+  },
+  {
+    question: "Is hibachi entertainment worth it for families?",
+    answer:
+      "Absolutely! Families love it. Kids are amazed by the fire tricks, onion volcano, and chef's acrobatic spatula skills. The interactive experience keeps everyone engaged and entertained. It's not just a meal—it's a show. Parents love that kids stay engaged throughout dinner. Perfect for birthdays and celebrations!",
+  },
+  {
+    question: "How long does a hibachi dinner take?",
+    answer:
+      "A typical hibachi dinner takes 45-60 minutes. The experience includes soup, fresh salad, appetizer, the chef's cooking show where they prepare your protein and sides right before you, and dessert. It's a leisurely, entertaining pace that allows you to savor both the food and the spectacular performance. Well worth the time!",
+  },
 ];
 
 export default function HibachiDiningExperiencePage() {
@@ -65,7 +80,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>The Art of Hibachi Dining</h2>
 
       <p>
-        The art of hibachi dining offers a unique blend of culinary skill and entertainment that has delighted diners for generations. From the tantalizing aroma of sizzling ingredients to the mesmerizing performance of chefs, hibachi experiences are a feast for the senses. Whether you're a seasoned hibachi enthusiast or a curious newcomer, exploring the vast array of hibachi menus can be a rewarding culinary adventure. Each visit promises not only a delightful meal but also an experience filled with excitement and wonder, as skilled chefs transform simple ingredients into tantalizing dishes right before your eyes.
+        The art of hibachi dining offers a unique blend of culinary skill and entertainment that has delighted diners for generations. From the tantalizing aroma of sizzling ingredients to the mesmerizing performance of chefs, hibachi experiences are a feast for the senses. Whether you&apos;re a seasoned hibachi enthusiast or a curious newcomer, exploring the vast array of hibachi menus can be a rewarding culinary adventure. Each visit promises not only a delightful meal but also an experience filled with excitement and wonder, as skilled chefs transform simple ingredients into tantalizing dishes right before your eyes.
       </p>
 
       <p>

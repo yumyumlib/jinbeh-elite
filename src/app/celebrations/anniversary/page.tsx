@@ -28,26 +28,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Is Jinbeh a good anniversary dinner spot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Jinbeh is the perfect anniversary dinner restaurant. Since 1987, we&apos;ve hosted countless special celebrations in an upscale, intimate setting with floor-to-ceiling windows overlooking the area. Our hibachi tables offer interactive chef-prepared dining, while our sushi bar provides quiet conversation spaces. Every detail is designed to create a cherished memory for your special occasion.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Can I request something special for an anniversary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Call ahead to let us know you&apos;re celebrating an anniversary, and we&apos;ll help make your evening truly special. Our Michelin-starred quality Japanese cuisine, combined with our attentive service and romantic atmosphere, ensures your anniversary will be unforgettable. We can accommodate requests for preferred seating and special touches when available.",
+      },
+    },
+    {
+      "@type": "Question",
       "name": "Is Jinbeh a good restaurant for an anniversary dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes! Jinbeh is perfect for anniversary celebrations. Our hibachi tables offer an interactive dining experience with tableside entertainment, while our sushi bar provides a more intimate setting for couples.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Can I request a special setup for our anniversary?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely! Call ahead to let us know you're celebrating an anniversary, and we'll help make your evening special. We can accommodate requests for preferred seating when available.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer any anniversary specials?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Contact us directly to discuss anniversary celebrations. We're happy to help create a memorable experience for your special occasion.",
       },
     },
     {
@@ -102,7 +102,7 @@ export default function AnniversaryPage() {
                 Your Perfect Anniversary Awaits
               </h2>
               <p className="text-lg text-stone-600 leading-relaxed">
-                Whether you're celebrating your first anniversary or your fiftieth,
+                Whether you&apos;re celebrating your first anniversary or your fiftieth,
                 Jinbeh provides the perfect setting for a romantic evening. Our family-owned
                 restaurant has been hosting special celebrations since 1987, and we understand
                 how important these moments are.
@@ -167,8 +167,8 @@ export default function AnniversaryPage() {
                 Make Your Reservation
               </h3>
               <p className="text-stone-600 mb-6">
-                Call ahead to let us know you're celebrating an anniversary,
-                and we'll help make your evening special.
+                Call ahead to let us know you&apos;re celebrating an anniversary,
+                and we&apos;ll help make your evening special.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

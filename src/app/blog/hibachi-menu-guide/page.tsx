@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "What is the difference between hibachi and teppanyaki menus?",
     answer:
-      "While the terms are often used interchangeably, hibachi traditionally refers to a heating device, while teppanyaki means cooking on a flat iron griddle. Most American 'hibachi' restaurants serve teppanyaki-style food with interactive chef performances at your table. Fresh and flavorful—that's our approach at Jinbeh!",
+      "While the terms are often used interchangeably, hibachi traditionally refers to a heating device, while teppanyaki means cooking on a flat iron griddle. Most American 'hibachi' restaurants serve teppanyaki-style food with interactive chef performances at your table. Fresh and flavorful—that&apos;s our approach at Jinbeh!",
   },
   {
     question: "What should I expect to find on a hibachi menu?",
@@ -49,9 +49,34 @@ const faqs = [
       "Yes! Many hibachi restaurants offer takeout, though dinner and a show is best enjoyed dining in. Takeout meals include the same quality fresh and flavorful ingredients. At Jinbeh, we ensure takeout orders arrive hot and fresh. Order online or call for your next celebration.",
   },
   {
-    question: "What are the best dishes to order if I'm new to hibachi?",
+    question: "What are the best dishes to order if I&apos;m new to hibachi?",
     answer:
-      "Welcome to the table! Try our hibachi chicken or shrimp first—they're crowd favorites and milder in flavor. Add fried rice and grilled vegetables as sides. Don't skip the soup and salad that come with your meal. Our servers are happy to recommend dishes based on your preferences.",
+      "Welcome to the table! Try our hibachi chicken or shrimp first—they&apos;re crowd favorites and milder in flavor. Add fried rice and grilled vegetables as sides. Don't skip the soup and salad that come with your meal. Our servers are happy to recommend dishes based on your preferences.",
+  },
+  {
+    question: "What comes with a hibachi dinner at Jinbeh?",
+    answer:
+      "Every hibachi dinner includes a complete experience: soup to start, fresh salad, shrimp appetizer, your choice of grilled protein (steak, chicken, shrimp, scallops, or lobster), hibachi fried rice, grilled vegetables, and a sweet dessert. Everything is prepared fresh on the grill right before you. It's a full culinary journey!",
+  },
+  {
+    question: "How much does filet mignon hibachi cost?",
+    answer:
+      "Filet mignon hibachi is one of our premium offerings, typically priced at $35 or higher, depending on the cut and portion size. It includes all the classic hibachi sides: soup, salad, shrimp appetizer, fried rice, vegetables, and dessert. For current pricing and any specials, call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
+  },
+  {
+    question: "Can I get lobster at hibachi restaurants?",
+    answer:
+      "Absolutely! Lobster hibachi is a premium option available at most hibachi restaurants, including Jinbeh. Fresh lobster tail is grilled to perfection with our signature seasonings. It's often served as a Surf and Turf combination with steak, making it an elegant choice for special occasions. Call ahead to confirm availability.",
+  },
+  {
+    question: "What is the best protein choice for hibachi?",
+    answer:
+      "The best protein depends on your preference! Filet mignon is perfect for steak lovers seeking tenderness. Shrimp offers a lighter, sweet flavor. Lobster and scallops provide premium seafood options. Chicken is a milder, crowd-pleasing choice. Many diners enjoy combination platters to try multiple proteins. Our chefs recommend based on your taste preferences.",
+  },
+  {
+    question: "How many calories are in hibachi fried rice?",
+    answer:
+      "Hibachi fried rice typically contains 200-300 calories per serving, though the exact amount depends on preparation. It's cooked with butter, soy sauce, eggs, and vegetables, giving it a savory, rich flavor. For a lighter option, you can request less butter or oil when ordering. Ask your chef to customize it to your preferences!",
   },
 ];
 
@@ -71,11 +96,11 @@ export default function HibachiMenuGuidePage() {
       <h2>Understanding Hibachi Dining</h2>
 
       <p>
-        When it comes to dining experiences, few things compare to the excitement and flavor of a hibachi meal. The sizzling sounds, the aromatic flavors wafting through the air, and the captivating performance by skilled chefs make hibachi dining a memorable event. Whether you're planning a night out with friends, a family gathering, or considering a cozy takeout option, understanding the variety and intricacies of hibachi menus can enhance your culinary adventure.
+        When it comes to dining experiences, few things compare to the excitement and flavor of a hibachi meal. The sizzling sounds, the aromatic flavors wafting through the air, and the captivating performance by skilled chefs make hibachi dining a memorable event. Whether you&apos;re planning a night out with friends, a family gathering, or considering a cozy takeout option, understanding the variety and intricacies of hibachi menus can enhance your culinary adventure.
       </p>
 
       <p>
-        Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki—learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.
+        Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki—learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs&apos; culinary skills but also creates a lively atmosphere that enhances the dining experience.
       </p>
 
       <h2>What to Expect on a Hibachi Menu</h2>
@@ -188,7 +213,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        <strong>Lunch Specials:</strong> Many hibachi restaurants offer lunch specials, providing a more affordable way to enjoy the experience. These specials typically include a smaller portion of the main dishes, allowing you to savor the flavors at a reduced price. <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh's lunch specials</Link> are among the most affordable in the area.
+        <strong>Lunch Specials:</strong> Many hibachi restaurants offer lunch specials, providing a more affordable way to enjoy the experience. These specials typically include a smaller portion of the main dishes, allowing you to savor the flavors at a reduced price. <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh&apos;s lunch specials</Link> are among the most affordable in the area.
       </p>
 
       <p>
@@ -206,7 +231,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <ul>
-        <li><strong>Check Availability:</strong> Not all dishes may be available for takeout, so it's wise to check the menu ahead of time.</li>
+        <li><strong>Check Availability:</strong> Not all dishes may be available for takeout, so it&apos;s wise to check the menu ahead of time.</li>
         <li><strong>Plan for Cooking Time:</strong> Hibachi dishes are best enjoyed fresh, so plan your pickup time accordingly to ensure the best experience.</li>
         <li><strong>Order Online:</strong> Many restaurants offer online ordering for convenience, allowing you to skip the line.</li>
       </ul>
@@ -218,17 +243,17 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        Whether you're in the mood for the delicate taste of raw fish or the comforting warmth of a noodle soup, these options ensure there's something for everyone to enjoy.
+        Whether you&apos;re in the mood for the delicate taste of raw fish or the comforting warmth of a noodle soup, these options ensure there&apos;s something for everyone to enjoy.
       </p>
 
-      <h2>Discovering Jinbeh's Menu</h2>
+      <h2>Discovering Jinbeh&apos;s Menu</h2>
 
       <p>
-        One popular destination for hibachi dining is <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Japanese Restaurant</Link>, a well-known establishment that offers an extensive menu featuring classic hibachi dishes. Whether you're craving a juicy steak or fresh seafood, Jinbeh's <Link href="/menu" className="text-accent-red hover:underline">menu</Link> has something to satisfy every palate. Known for its high-quality ingredients and skilled chefs, Jinbeh is a favorite among hibachi enthusiasts looking for an exceptional dining experience.
+        One popular destination for hibachi dining is <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Japanese Restaurant</Link>, a well-known establishment that offers an extensive menu featuring classic hibachi dishes. Whether you&apos;re craving a juicy steak or fresh seafood, Jinbeh&apos;s <Link href="/menu" className="text-accent-red hover:underline">menu</Link> has something to satisfy every palate. Known for its high-quality ingredients and skilled chefs, Jinbeh is a favorite among hibachi enthusiasts looking for an exceptional dining experience.
       </p>
 
       <p>
-        Highlights from Jinbeh's menu include signature steaks with expert grilling, fresh seafood selections, customizable combinations, and a commitment to quality and innovation that makes it a standout choice for hibachi dining.
+        Highlights from Jinbeh&apos;s menu include signature steaks with expert grilling, fresh seafood selections, customizable combinations, and a commitment to quality and innovation that makes it a standout choice for hibachi dining.
       </p>
 
       <h2>Conclusion: Your Hibachi Adventure Awaits</h2>
@@ -238,7 +263,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        With this guide, you're well-equipped to navigate the world of hibachi and enjoy everything this unique dining experience has to offer. So gather your friends and family, and get ready to embark on a culinary adventure that will leave you craving more. Visit <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> today to <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> and experience the hibachi difference.
+        With this guide, you&apos;re well-equipped to navigate the world of hibachi and enjoy everything this unique dining experience has to offer. So gather your friends and family, and get ready to embark on a culinary adventure that will leave you craving more. Visit <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> today to <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> and experience the hibachi difference.
       </p>
 
       <RelatedArticles currentSlug="hibachi-menu-guide" />

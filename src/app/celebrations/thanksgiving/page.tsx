@@ -33,7 +33,23 @@ const faqSchema = {
       name: "Is Jinbeh open on Thanksgiving?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Both Jinbeh locations (Frisco and Lewisville) are open on Thanksgiving Day. We welcome families who want to skip the cooking and enjoy a special meal together.",
+        text: "Yes! Both Jinbeh locations (Frisco and Lewisville) are open on Thanksgiving Day. We welcome families who want to skip the cooking and enjoy a special meal together. It's the perfect Thanksgiving restaurant alternative in Frisco and Lewisville.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh offer Thanksgiving catering?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! Jinbeh offers holiday catering for Thanksgiving gatherings. Whether you need hibachi catering for a large group or sushi platters for your home celebration, our team can create a customized Thanksgiving catering menu. Call us to discuss your catering needs and book your holiday event.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What should I order at Jinbeh on Thanksgiving?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For a Japanese Thanksgiving dinner, try our hibachi specials with filet mignon, lobster tail, and fresh vegetables. Pair with sake or Japanese beer. For sushi lovers, our signature rolls and sashimi platters make excellent additions. Hibachi fried rice is a holiday crowd favorite. Our staff can help you choose the perfect Thanksgiving menu.",
       },
     },
     {
@@ -250,8 +266,16 @@ export default function ThanksgivingPage() {
               <div className="space-y-4 max-w-3xl mx-auto">
                 {[
                   {
-                    q: "Are you really open on Thanksgiving Day?",
-                    a: "Yes! We're open on Thanksgiving to serve families who want to skip the cooking and enjoy a special meal together.",
+                    q: "Is Jinbeh open on Thanksgiving?",
+                    a: "Yes! Both our Frisco and Lewisville locations are open on Thanksgiving Day. We're one of the best Thanksgiving restaurants open in the area, welcoming families who want to skip the cooking and enjoy a special meal together.",
+                  },
+                  {
+                    q: "Does Jinbeh offer Thanksgiving catering?",
+                    a: "Yes! We offer holiday catering for your Thanksgiving celebration. Whether you need hibachi catering for a large group or sushi platters for your home, we can create a customized Thanksgiving catering menu. Call us to discuss your needs.",
+                  },
+                  {
+                    q: "What should I order at Jinbeh on Thanksgiving?",
+                    a: "For a Japanese Thanksgiving dinner, try our hibachi specials with filet mignon and lobster tail. Our signature rolls and sashimi platters are perfect for sushi lovers. Hibachi fried rice is always a holiday crowd favorite. Our staff can help you build the perfect Thanksgiving menu.",
                   },
                   {
                     q: "How far in advance should I book?",

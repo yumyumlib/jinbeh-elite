@@ -283,12 +283,20 @@ export default function DateNightPage() {
               <div className="space-y-4 max-w-3xl mx-auto">
                 {[
                   {
-                    q: "Is Jinbeh a good date spot?",
-                    a: "Absolutely! Whether you choose the excitement of hibachi or the intimacy of our sushi bar, Jinbeh creates memorable date nights. The food, atmosphere, and service are all designed to impress.",
+                    q: "Is Jinbeh good for date night?",
+                    a: "Absolutely! Jinbeh offers a unique dining experience perfect for couples. Choose from our intimate sushi bar for a quieter vibe, or the lively hibachi tables for entertainment. Both create memorable date nights with exceptional food and atmosphere.",
                   },
                   {
-                    q: "Should we sit at hibachi or sushi bar?",
-                    a: "It depends on your vibe! Hibachi is lively and entertaining — great for breaking the ice. The sushi bar is quieter and more intimate — perfect for deep conversation.",
+                    q: "What makes Jinbeh romantic for couples?",
+                    a: "Our restaurant combines upscale dining with genuine Japanese hospitality. Whether you're at a hibachi table with interactive chef entertainment or enjoying intimate sushi bar seating, the atmosphere is designed for romance. Our attentive service and curated sake/cocktail selections complete the perfect couples dinner experience.",
+                  },
+                  {
+                    q: "Should I sit at hibachi or sushi bar for a date?",
+                    a: "It depends on your vibe! Hibachi offers lively entertainment and shared excitement — perfect for couples who enjoy interaction and fun. The sushi bar provides a quieter, more intimate setting ideal for meaningful conversation and connection. Both options are equally romantic in different ways.",
+                  },
+                  {
+                    q: "Is Jinbeh a good date spot?",
+                    a: "Absolutely! Whether you choose the excitement of hibachi or the intimacy of our sushi bar, Jinbeh creates memorable date nights. The food, atmosphere, and service are all designed to impress.",
                   },
                   {
                     q: "Do you take reservations for two?",
