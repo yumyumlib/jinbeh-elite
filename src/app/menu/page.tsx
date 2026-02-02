@@ -13,7 +13,7 @@ export default function MenuPage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-warm-ivory">
+            <main id="main-content" className="min-h-screen bg-warm-ivory">
                 {/* Hero */}
                 <section className="py-20 bg-gradient-to-br from-charcoal to-deep-indigo text-white">
                     <div className="container mx-auto px-6 text-center">

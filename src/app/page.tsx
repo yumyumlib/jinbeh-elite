@@ -274,7 +274,7 @@ export default function HomePage() {
         )}
       </header>
 
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Organization Schema */}
         <script
           type="application/ld+json"
