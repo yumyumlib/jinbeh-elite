@@ -337,7 +337,7 @@ export default function McKinneyNearbyPage() {
         </section>
 
         {/* Locations Section */}
-        <section className="py-16 bg-white">
+        <section id="reserve" className="py-16 bg-white scroll-mt-20">
           <div className="container mx-auto px-6">
             <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
               Choose Your Nearest Location

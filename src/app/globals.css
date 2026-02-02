@@ -287,6 +287,8 @@ footer a:hover {
   left: -100%;
   width: 100%;
   height: 100%;
+  z-index: 0;
+  pointer-events: none;
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -294,6 +296,12 @@ footer a:hover {
     transparent 100%
   );
   animation: shimmer-slide 3s infinite;
+}
+
+/* Ensure button content is above shimmer overlay */
+.shimmer-cta > * {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes shimmer-slide {

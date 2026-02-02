@@ -1373,10 +1373,10 @@ export default function HomePage() {
                       href="/frisco#reserve"
                       className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
                     >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
-                      Reserve Online
+                      <span className="relative z-10">Reserve Online</span>
                     </Link>
                     <a
                       href="tel:2146191200"
@@ -1399,10 +1399,10 @@ export default function HomePage() {
                       href="/lewisville#reserve"
                       className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-white text-accent-red hover:bg-warm-ivory px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
                     >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
-                      Reserve Online
+                      <span className="relative z-10">Reserve Online</span>
                     </Link>
                     <a
                       href="tel:2144882224"
