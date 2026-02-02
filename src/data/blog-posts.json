@@ -246,7 +246,7 @@
                 "dining frisco tx",
                 "where to eat frisco"
             ],
-            "heroImage": "/images/interior/JinbehFriscoTables.jpg",
+            "heroImage": "/images/exterior/JinbehFriscoStorefrontSign.jpg",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-23",
@@ -292,7 +292,7 @@
                 "healthy hibachi",
                 "hibachi diet"
             ],
-            "heroImage": "/images/blog/26-C060324-6874.jpg",
+            "heroImage": "/images/blog/illustrations/hibachi-nutrition-guide.png",
             "heroVideo": null,
             "author": "Jinbeh",
             "publishedAt": "2026-01-26",
@@ -390,7 +390,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["hibachi-birthday-party-ideas", "unique-kids-birthday-party-places", "birthday-celebration-restaurants"]
+            "relatedPosts": [
+                "hibachi-birthday-party-ideas",
+                "unique-kids-birthday-party-places",
+                "birthday-celebration-restaurants"
+            ]
         },
         {
             "slug": "best-sushi-dallas",
@@ -699,7 +703,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "best-sushi-dallas", "best-asian-food-dallas"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "best-sushi-dallas",
+                "best-asian-food-dallas"
+            ]
         },
         {
             "slug": "baby-shower-venues",
@@ -718,7 +726,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["bridal-shower-venues", "group-dining-guide", "restaurants-private-rooms"]
+            "relatedPosts": [
+                "bridal-shower-venues",
+                "group-dining-guide",
+                "restaurants-private-rooms"
+            ]
         },
         {
             "slug": "bachelorette-restaurants-dallas",
@@ -737,7 +749,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["bridal-shower-venues", "group-dining-guide", "best-happy-hour-frisco-tx"]
+            "relatedPosts": [
+                "bridal-shower-venues",
+                "group-dining-guide",
+                "best-happy-hour-frisco-tx"
+            ]
         },
         {
             "slug": "best-asian-food-dallas",
@@ -756,7 +772,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "best-sushi-dallas", "asian-cuisine-dallas"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "best-sushi-dallas",
+                "asian-cuisine-dallas"
+            ]
         },
         {
             "slug": "best-hibachi-dallas-tx",
@@ -775,7 +795,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "hibachi-vs-teppanyaki-explained", "hibachi-birthday-party-ideas"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "hibachi-vs-teppanyaki-explained",
+                "hibachi-birthday-party-ideas"
+            ]
         },
         {
             "slug": "best-salmon-sashimi",
@@ -794,7 +818,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["sashimi-vs-sushi", "types-of-sushi", "best-sushi-frisco"]
+            "relatedPosts": [
+                "sashimi-vs-sushi",
+                "types-of-sushi",
+                "best-sushi-frisco"
+            ]
         },
         {
             "slug": "best-seafood-dallas",
@@ -813,7 +841,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-sushi-dallas", "seafood-lewisville", "types-of-sushi"]
+            "relatedPosts": [
+                "best-sushi-dallas",
+                "seafood-lewisville",
+                "types-of-sushi"
+            ]
         },
         {
             "slug": "best-steak-near-me",
@@ -832,7 +864,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "hibachi-menu-guide", "fine-dining-frisco"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "hibachi-menu-guide",
+                "fine-dining-frisco"
+            ]
         },
         {
             "slug": "birthday-celebration-restaurants",
@@ -851,7 +887,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-birthday-party-ideas", "adult-birthday-party-ideas", "free-birthday-deals"]
+            "relatedPosts": [
+                "hibachi-birthday-party-ideas",
+                "adult-birthday-party-ideas",
+                "free-birthday-deals"
+            ]
         },
         {
             "slug": "bridal-shower-venues",
@@ -870,7 +910,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["baby-shower-venues", "bachelorette-restaurants-dallas", "group-dining-guide"]
+            "relatedPosts": [
+                "baby-shower-venues",
+                "bachelorette-restaurants-dallas",
+                "group-dining-guide"
+            ]
         },
         {
             "slug": "fine-dining-frisco",
@@ -889,7 +933,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-sushi-frisco", "top-frisco-restaurants", "date-night-restaurants-frisco"]
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "top-frisco-restaurants",
+                "date-night-restaurants-frisco"
+            ]
         },
         {
             "slug": "free-birthday-food-deals",
@@ -908,7 +956,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["free-birthday-deals", "hibachi-birthday-party-ideas", "birthday-celebration-restaurants"]
+            "relatedPosts": [
+                "free-birthday-deals",
+                "hibachi-birthday-party-ideas",
+                "birthday-celebration-restaurants"
+            ]
         },
         {
             "slug": "group-dining-venues",
@@ -927,7 +979,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["group-dining-guide", "restaurants-private-rooms", "hibachi-birthday-party-ideas"]
+            "relatedPosts": [
+                "group-dining-guide",
+                "restaurants-private-rooms",
+                "hibachi-birthday-party-ideas"
+            ]
         },
         {
             "slug": "hibachi-catering-dfw",
@@ -946,7 +1002,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["offsite-hibachi-catering", "group-dining-guide", "jinbeh-catering-services"]
+            "relatedPosts": [
+                "offsite-hibachi-catering",
+                "group-dining-guide",
+                "jinbeh-catering-services"
+            ]
         },
         {
             "slug": "hibachi-dining-experience",
@@ -965,7 +1025,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-vs-teppanyaki-explained", "hibachi-menu-guide", "discover-teppanyaki"]
+            "relatedPosts": [
+                "hibachi-vs-teppanyaki-explained",
+                "hibachi-menu-guide",
+                "discover-teppanyaki"
+            ]
         },
         {
             "slug": "hibachi-lunch-ideas",
@@ -984,7 +1048,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["sushi-lunch-specials", "hibachi-menu-guide", "best-hibachi-dallas"]
+            "relatedPosts": [
+                "sushi-lunch-specials",
+                "hibachi-menu-guide",
+                "best-hibachi-dallas"
+            ]
         },
         {
             "slug": "hibachi-menu-guide",
@@ -1003,7 +1071,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-vs-teppanyaki-explained", "hibachi-calories-guide", "best-hibachi-dallas"]
+            "relatedPosts": [
+                "hibachi-vs-teppanyaki-explained",
+                "hibachi-calories-guide",
+                "best-hibachi-dallas"
+            ]
         },
         {
             "slug": "japanese-restaurants-near-me",
@@ -1022,7 +1094,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["best-hibachi-dallas", "best-sushi-frisco", "japanese-restaurants-lewisville"]
+            "relatedPosts": [
+                "best-hibachi-dallas",
+                "best-sushi-frisco",
+                "japanese-restaurants-lewisville"
+            ]
         },
         {
             "slug": "jinbeh-catering-services",
@@ -1041,7 +1117,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-catering-dfw", "offsite-hibachi-catering", "group-dining-guide"]
+            "relatedPosts": [
+                "hibachi-catering-dfw",
+                "offsite-hibachi-catering",
+                "group-dining-guide"
+            ]
         },
         {
             "slug": "jinbeh-gift-cards-guide",
@@ -1060,7 +1140,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 5,
             "featured": false,
-            "relatedPosts": ["free-birthday-deals", "hibachi-birthday-party-ideas", "best-sushi-frisco"]
+            "relatedPosts": [
+                "free-birthday-deals",
+                "hibachi-birthday-party-ideas",
+                "best-sushi-frisco"
+            ]
         },
         {
             "slug": "large-group-dining",
@@ -1079,7 +1163,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["group-dining-guide", "group-dining-venues", "hibachi-birthday-party-ideas"]
+            "relatedPosts": [
+                "group-dining-guide",
+                "group-dining-venues",
+                "hibachi-birthday-party-ideas"
+            ]
         },
         {
             "slug": "offsite-hibachi-catering",
@@ -1098,7 +1186,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["hibachi-catering-dfw", "jinbeh-catering-services", "group-dining-guide"]
+            "relatedPosts": [
+                "hibachi-catering-dfw",
+                "jinbeh-catering-services",
+                "group-dining-guide"
+            ]
         },
         {
             "slug": "pickleball-restaurants-lewisville",
@@ -1117,7 +1209,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 5,
             "featured": false,
-            "relatedPosts": ["japanese-restaurants-lewisville", "seafood-lewisville", "best-hibachi-dallas"]
+            "relatedPosts": [
+                "japanese-restaurants-lewisville",
+                "seafood-lewisville",
+                "best-hibachi-dallas"
+            ]
         },
         {
             "slug": "popular-japanese-culture",
@@ -1136,7 +1232,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 8,
             "featured": false,
-            "relatedPosts": ["types-of-sushi", "hibachi-vs-teppanyaki-explained", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "hibachi-vs-teppanyaki-explained",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "ramune-soda-guide",
@@ -1155,7 +1255,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["japanese-beverages-guide", "beginner-sushi-tips", "types-of-sushi"]
+            "relatedPosts": [
+                "japanese-beverages-guide",
+                "beginner-sushi-tips",
+                "types-of-sushi"
+            ]
         },
         {
             "slug": "restaurants-private-rooms",
@@ -1174,7 +1278,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["group-dining-guide", "group-dining-venues", "large-group-dining"]
+            "relatedPosts": [
+                "group-dining-guide",
+                "group-dining-venues",
+                "large-group-dining"
+            ]
         },
         {
             "slug": "romantic-anniversary-dinners",
@@ -1193,7 +1301,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["date-night-restaurants-frisco", "best-sushi-frisco", "best-happy-hour-frisco-tx"]
+            "relatedPosts": [
+                "date-night-restaurants-frisco",
+                "best-sushi-frisco",
+                "best-happy-hour-frisco-tx"
+            ]
         },
         {
             "slug": "sake-alcohol-strength",
@@ -1212,7 +1324,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sake-explained", "sake-pairing-guide", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "types-of-sake-explained",
+                "sake-pairing-guide",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "sake-sushi-menu-pairings",
@@ -1231,7 +1347,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["sake-pairing-guide", "types-of-sake-explained", "types-of-sushi"]
+            "relatedPosts": [
+                "sake-pairing-guide",
+                "types-of-sake-explained",
+                "types-of-sushi"
+            ]
         },
         {
             "slug": "sake-taste-profile",
@@ -1250,7 +1370,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sake-explained", "sake-pairing-guide", "japanese-beverages-guide"]
+            "relatedPosts": [
+                "types-of-sake-explained",
+                "sake-pairing-guide",
+                "japanese-beverages-guide"
+            ]
         },
         {
             "slug": "seafood-lewisville",
@@ -1269,7 +1393,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["japanese-restaurants-lewisville", "pickleball-restaurants-lewisville", "best-sushi-frisco"]
+            "relatedPosts": [
+                "japanese-restaurants-lewisville",
+                "pickleball-restaurants-lewisville",
+                "best-sushi-frisco"
+            ]
         },
         {
             "slug": "sushi-cooking-classes",
@@ -1288,7 +1416,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sushi", "beginner-sushi-tips", "how-to-eat-sushi-guide"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "beginner-sushi-tips",
+                "how-to-eat-sushi-guide"
+            ]
         },
         {
             "slug": "sushi-identification-chart",
@@ -1307,7 +1439,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["types-of-sushi", "beginner-sushi-tips", "sashimi-vs-sushi"]
+            "relatedPosts": [
+                "types-of-sushi",
+                "beginner-sushi-tips",
+                "sashimi-vs-sushi"
+            ]
         },
         {
             "slug": "sushi-lunch-specials",
@@ -1326,7 +1462,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 6,
             "featured": false,
-            "relatedPosts": ["hibachi-lunch-ideas", "best-sushi-frisco", "types-of-sushi"]
+            "relatedPosts": [
+                "hibachi-lunch-ideas",
+                "best-sushi-frisco",
+                "types-of-sushi"
+            ]
         },
         {
             "slug": "thanksgiving-dining-guide",
@@ -1345,7 +1485,11 @@
             "publishedAt": "2026-01-26",
             "readTime": 7,
             "featured": false,
-            "relatedPosts": ["group-dining-guide", "best-hibachi-dallas", "romantic-anniversary-dinners"]
+            "relatedPosts": [
+                "group-dining-guide",
+                "best-hibachi-dallas",
+                "romantic-anniversary-dinners"
+            ]
         }
     ]
 }

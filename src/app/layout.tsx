@@ -5,11 +5,11 @@ import MobileStickyCTA from "@/components/MobileStickyCTA";
 export const metadata: Metadata = {
   metadataBase: new URL("https://jinbeh.com"),
   title: {
-    default: "Jinbeh | Japanese Hibachi & Sushi | Frisco & Lewisville TX",
+    default: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Japanese Restaurant",
     template: "%s | Jinbeh Japanese Restaurant",
   },
   description:
-    "Authentic Japanese hibachi & sushi at Jinbeh. Family-owned since 1988 in Frisco & Lewisville TX. Dinner and a show – reserve your table today!",
+    "Experience authentic teppanyaki hibachi & fresh sushi near Stonebriar in Frisco or off I-35E in Lewisville. Family-owned Japanese restaurant since 1988. Reserve your hibachi table today!",
   keywords: [
     "hibachi",
     "sushi",
@@ -22,6 +22,19 @@ export const metadata: Metadata = {
     "birthday dinner",
     "family dining",
     "japanese steakhouse",
+    "japanese food",
+    "hibachi near me",
+    "sushi near me",
+    "teppanyaki restaurant",
+    "asian cuisine",
+    "hibachi restaurant",
+    "sushi bar",
+    "stonebriar restaurants",
+    "japanese restaurant near me",
+    "hibachi frisco",
+    "sushi lewisville",
+    "best hibachi dallas",
+    "best sushi frisco",
   ],
   authors: [{ name: "Jinbeh Japanese Restaurant" }],
   creator: "Jinbeh Japanese Restaurant",
@@ -36,9 +49,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://jinbeh.com",
     siteName: "Jinbeh Japanese Restaurant",
-    title: "Jinbeh Japanese Restaurant | Hibachi & Sushi in Frisco & Lewisville TX",
+    title: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Japanese Restaurant",
     description:
-      "Experience authentic Japanese hibachi and sushi at Jinbeh. Family-owned since 1988. Dinner and a show – where memories are made.",
+      "Experience authentic teppanyaki hibachi & fresh sushi near Stonebriar in Frisco or off I-35E in Lewisville. Family-owned Japanese restaurant since 1988.",
     images: [
       {
         url: "/images/og-image.jpg",

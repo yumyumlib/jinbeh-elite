@@ -348,8 +348,15 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
+            {/* SEO-optimized H1 (visually hidden, read by search engines) */}
+            <h1 className="sr-only">
+              Japanese Restaurant in Frisco & Lewisville TX - Hibachi & Sushi
+            </h1>
+
             <ScrollReveal delay={200}>
-              <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white"
+              <p className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white"
+                  role="heading"
+                  aria-level={2}
                   style={{
                     textShadow: '3px 3px 0px rgba(0,0,0,0.9), 6px 6px 10px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.8)',
                     WebkitTextStroke: '1px rgba(0,0,0,0.3)'
@@ -358,13 +365,13 @@ export default function HomePage() {
                   words={["Dinner and a Show", "A Warm Welcome", "Where Memories Are Made", "The Art of Hibachi"]}
                   duration={4000}
                 />
-              </h1>
+              </p>
             </ScrollReveal>
 
             <ScrollReveal delay={300}>
               <p className="text-xl md:text-2xl text-warm-ivory mb-6 font-medium"
                  style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
-                Authentic Japanese Hibachi & Sushi in North Texas
+                Authentic Japanese Restaurant in Frisco & Lewisville – Fresh Hibachi & Sushi
               </p>
             </ScrollReveal>
 
