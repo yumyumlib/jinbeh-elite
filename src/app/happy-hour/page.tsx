@@ -110,7 +110,7 @@ export default function HappyHourPage() {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/frisco/JinbehFriscoStorefrontSign.jpg')" }}
+            style={{ backgroundImage: "url('/images/interior/FriscoLocation_Bar_Front.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
