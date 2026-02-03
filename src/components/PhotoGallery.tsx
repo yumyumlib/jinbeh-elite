@@ -77,6 +77,7 @@ export default function PhotoGallery({
                 key={index}
                 onClick={() => openLightbox(index)}
                 className="group relative aspect-square overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-accent-red focus:ring-offset-2"
+                aria-label={item.type === "video" ? `View video: ${item.alt}` : `View image: ${item.alt}`}
               >
                 {item.type === "video" ? (
                   <video

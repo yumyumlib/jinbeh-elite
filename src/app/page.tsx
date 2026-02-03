@@ -8,6 +8,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import WordRotate from "@/components/ui/WordRotate";
 import Marquee from "@/components/ui/Marquee";
 import { BorderBeam } from "@/components/ui/BorderBeam";
+import FirstTimerFAQ from "@/components/FirstTimerFAQ";
+import JinbehExperience from "@/components/JinbehExperience";
 import { useState, useEffect } from "react";
 
 // Helper to get dynamic reservation CTA based on day of week
@@ -107,6 +109,8 @@ const faqSchema = {
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
+  const [locationsOpen, setLocationsOpen] = useState(false);
+  const [celebrationsOpen, setCelebrationsOpen] = useState(false);
   const [reservationCTA, setReservationCTA] = useState("Reserve for This Weekend");
 
   // Update reservation CTA based on day of week (client-side only)
@@ -227,6 +231,7 @@ export default function HomePage() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 text-charcoal"
+            aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -238,11 +243,51 @@ export default function HomePage() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-stone-200 py-4 px-6">
             <div className="flex flex-col gap-4">
-              <Link href="/frisco" className="text-charcoal font-medium">Frisco</Link>
-              <Link href="/lewisville" className="text-charcoal font-medium">Lewisville</Link>
-              <Link href="/menu" className="text-charcoal font-medium">Menu</Link>
-              <Link href="/blog" className="text-charcoal font-medium">Blog</Link>
-              <Link href="/about" className="text-charcoal font-medium">About</Link>
+              {/* Locations Dropdown */}
+              <div>
+                <button
+                  onClick={() => setLocationsOpen(!locationsOpen)}
+                  className="w-full text-left font-medium flex items-center justify-between text-charcoal py-2"
+                  aria-expanded={locationsOpen}
+                >
+                  Locations
+                  <svg className={`w-4 h-4 transition-transform ${locationsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {locationsOpen && (
+                  <div className="pl-4 mt-2 flex flex-col gap-2 text-sm">
+                    <Link href="/frisco" className="text-charcoal/70 py-2">Frisco</Link>
+                    <Link href="/lewisville" className="text-charcoal/70 py-2">Lewisville</Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Celebrations Dropdown */}
+              <div>
+                <button
+                  onClick={() => setCelebrationsOpen(!celebrationsOpen)}
+                  className="w-full text-left font-medium flex items-center justify-between text-charcoal py-2"
+                  aria-expanded={celebrationsOpen}
+                >
+                  Celebrations
+                  <svg className={`w-4 h-4 transition-transform ${celebrationsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {celebrationsOpen && (
+                  <div className="pl-4 mt-2 flex flex-col gap-2 text-sm">
+                    <Link href="/celebrations/birthday" className="text-charcoal/70 py-2">Birthdays</Link>
+                    <Link href="/celebrations/anniversary" className="text-charcoal/70 py-2">Anniversaries</Link>
+                    <Link href="/celebrations/group-dining" className="text-charcoal/70 py-2">Group Dining</Link>
+                    <Link href="/celebrations/private-events" className="text-charcoal/70 py-2">Private Events</Link>
+                  </div>
+                )}
+              </div>
+
+              <Link href="/menu" className="text-charcoal font-medium py-2">Menu</Link>
+              <Link href="/blog" className="text-charcoal font-medium py-2">Blog</Link>
+              <Link href="/about" className="text-charcoal font-medium py-2">About</Link>
               <div className="border-t border-stone-200 pt-4 mt-2">
                 <p className="text-sm text-charcoal/80 mb-3 font-medium">Call to Reserve:</p>
                 <div className="grid grid-cols-2 gap-3">
@@ -509,11 +554,10 @@ export default function HomePage() {
                     <span className="text-4xl filter drop-shadow-md">🔥</span>
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    Hibachi Theater
+                    The Birthday Your Kid Will Remember Forever
                   </h3>
                   <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Watch our master chefs dazzle with flames, precision knife work,
-                    and the legendary onion volcano.
+                    Picture this: Your child's eyes light up as flames erupt from the grill. The chef tosses a shrimp toward them—they catch it! Everyone at the table cheers. Over 1,247 families chose Jinbeh for their celebration last year.
                   </p>
                   <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
                     Hibachi Dining Guide
@@ -531,11 +575,10 @@ export default function HomePage() {
                     <span className="text-4xl filter drop-shadow-md">🍣</span>
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    Fresh Sushi & Rolls
+                    The Sushi Your Family Will Talk About for Weeks
                   </h3>
                   <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Pristine fish, expertly crafted rolls, and creative
-                    presentations where tradition meets innovation.
+                    Our master sushi chefs have been perfecting their craft since 1988. Every roll is a work of art, every bite an experience. This isn't grocery store sushi—this is why families drive 30 minutes to Jinbeh.
                   </p>
                   <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
                     Sushi Menu & Guide
@@ -553,11 +596,10 @@ export default function HomePage() {
                     <span className="text-4xl filter drop-shadow-md">🎉</span>
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    Birthday & Party Events
+                    Celebrations That Feel Like Coming Home
                   </h3>
                   <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Birthdays, anniversaries, graduations — we make every celebration
-                    unforgettable at Jinbeh.
+                    Whether it's your daughter's 8th birthday or your 25th anniversary, we treat every celebration like it matters. Our chefs personalize the show, the table sings along, and you leave with memories that last a lifetime.
                   </p>
                   <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
                     Plan a Celebration
@@ -570,6 +612,12 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* First Timer FAQ - New Section */}
+        <FirstTimerFAQ />
+
+        {/* Jinbeh Experience Walkthrough - New Section */}
+        <JinbehExperience />
 
         {/* Stats Section with Animated NumberTicker */}
         <section className="py-28 md:py-36 bg-charcoal text-white relative overflow-hidden">
