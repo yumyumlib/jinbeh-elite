@@ -8,7 +8,6 @@ import ScrollReveal from "@/components/ScrollReveal";
 import WordRotate from "@/components/ui/WordRotate";
 import Marquee from "@/components/ui/Marquee";
 import { BorderBeam } from "@/components/ui/BorderBeam";
-import FirstTimerFAQ from "@/components/FirstTimerFAQ";
 import JinbehExperience from "@/components/JinbehExperience";
 import { useState, useEffect } from "react";
 
@@ -613,59 +612,93 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* First Timer FAQ - New Section */}
-        <FirstTimerFAQ />
-
-        {/* Jinbeh Experience Walkthrough - New Section */}
+        {/* Jinbeh Experience Walkthrough - Reimagined with Working Images */}
         <JinbehExperience />
 
-        {/* Stats Section with Animated NumberTicker */}
-        <section className="py-28 md:py-36 bg-charcoal text-white relative overflow-hidden">
-          {/* Subtle gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-deep-indigo/30" />
+        {/* Stats Section - Redesigned with Strong Visual Contrast */}
+        <section className="py-20 md:py-32 bg-gradient-to-br from-soft-gold/10 via-warm-ivory to-soft-gold/5 relative overflow-hidden border-y-4 border-soft-gold/20">
+          {/* Decorative background pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'radial-gradient(circle, #C9A227 1.5px, transparent 1.5px)',
+              backgroundSize: '50px 50px'
+            }} />
+          </div>
 
           <div className="container mx-auto px-6 relative z-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-5xl mx-auto text-center">
+            {/* Header for context */}
+            <div className="text-center mb-16">
+              <span className="inline-block bg-cedar-brown/10 text-cedar-brown text-sm font-semibold px-6 py-2 rounded-full mb-4 border border-cedar-brown/20 tracking-wide">
+                TRUSTED BY FAMILIES ACROSS DFW
+              </span>
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-charcoal mb-4">
+                37 Years of Excellence
+              </h2>
+              <p className="text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto">
+                Family-owned, community-loved, and serving unforgettable experiences since 1988
+              </p>
+            </div>
+
+            {/* Stats grid with enhanced visual hierarchy */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-6xl mx-auto">
               <ScrollReveal delay={0}>
-                <div className="group">
-                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
-                    <NumberTicker value={37} suffix="+" delay={0.2} />
+                <div className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-soft-gold/20 hover:border-soft-gold hover:scale-105">
+                  <div className="text-center">
+                    <div className="text-5xl md:text-7xl font-bold text-cedar-brown mb-3 group-hover:text-accent-red transition-colors">
+                      <NumberTicker value={37} suffix="+" delay={0.2} />
+                    </div>
+                    <p className="text-base md:text-lg font-semibold text-charcoal/80 leading-snug">
+                      Years Serving<br />DFW Families
+                    </p>
                   </div>
-                  <p className="stat-label">
-                    Years Serving DFW
-                  </p>
                 </div>
               </ScrollReveal>
+
               <ScrollReveal delay={100}>
-                <div className="group">
-                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
-                    <NumberTicker value={1000} suffix="+" delay={0.3} />
+                <div className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-soft-gold/20 hover:border-soft-gold hover:scale-105">
+                  <div className="text-center">
+                    <div className="text-5xl md:text-7xl font-bold text-cedar-brown mb-3 group-hover:text-accent-red transition-colors">
+                      <NumberTicker value={1000} suffix="+" delay={0.3} />
+                    </div>
+                    <p className="text-base md:text-lg font-semibold text-charcoal/80 leading-snug">
+                      5-Star<br />Reviews
+                    </p>
                   </div>
-                  <p className="stat-label">
-                    5-Star Reviews
-                  </p>
                 </div>
               </ScrollReveal>
+
               <ScrollReveal delay={200}>
-                <div className="group">
-                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
-                    <NumberTicker value={68000} suffix="+" delay={0.4} />
+                <div className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-soft-gold/20 hover:border-soft-gold hover:scale-105">
+                  <div className="text-center">
+                    <div className="text-5xl md:text-7xl font-bold text-cedar-brown mb-3 group-hover:text-accent-red transition-colors">
+                      <NumberTicker value={68000} suffix="+" delay={0.4} />
+                    </div>
+                    <p className="text-base md:text-lg font-semibold text-charcoal/80 leading-snug">
+                      Meals Served<br />Annually
+                    </p>
                   </div>
-                  <p className="stat-label">
-                    Meals Served Annually
-                  </p>
                 </div>
               </ScrollReveal>
+
               <ScrollReveal delay={300}>
-                <div className="group">
-                  <div className="stat-number mb-3 group-hover:scale-105 transition-transform">
-                    <NumberTicker value={2} delay={0.5} />
+                <div className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-soft-gold/20 hover:border-soft-gold hover:scale-105">
+                  <div className="text-center">
+                    <div className="text-5xl md:text-7xl font-bold text-cedar-brown mb-3 group-hover:text-accent-red transition-colors">
+                      <NumberTicker value={2} delay={0.5} />
+                    </div>
+                    <p className="text-base md:text-lg font-semibold text-charcoal/80 leading-snug">
+                      Convenient<br />Locations
+                    </p>
                   </div>
-                  <p className="stat-label">
-                    Convenient Locations
-                  </p>
                 </div>
               </ScrollReveal>
+            </div>
+
+            {/* Tagline reinforcement */}
+            <div className="text-center mt-16">
+              <p className="text-xl md:text-2xl font-heading italic text-cedar-brown/90 max-w-3xl mx-auto">
+                "When it matters, families choose Jinbeh"
+              </p>
             </div>
           </div>
         </section>
