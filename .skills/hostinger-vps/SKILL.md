@@ -38,7 +38,7 @@ Expert guide for managing Jinbeh's Hostinger VPS deployment, Docker operations, 
 
 ### Project Location
 ```
-/root/jinbeh-staging/          # Main project directory (NOT /domains/...)
+/opt/jinbeh-elite/          # Main project directory (NOT /domains/...)
 ├── .git/                       # Git repository
 ├── src/                        # Next.js source code
 ├── public/                     # Static assets
@@ -47,20 +47,20 @@ Expert guide for managing Jinbeh's Hostinger VPS deployment, Docker operations, 
 └── package.json                # Dependencies
 ```
 
-**Common Mistake:** Trying to use `/domains/staging.jinbeh.com/public_html/` - this path doesn't exist on this VPS.
+**Common Mistake:** Trying to use `/root/jinbeh-staging/` or `/domains/staging.jinbeh.com/public_html/` - these paths don't exist. The correct path is `/opt/jinbeh-elite/`.
 
 ## Standard Deployment Workflow
 
 ### 1. Check Current Status
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git status
 docker ps
 ```
 
 ### 2. Pull Latest Code
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git pull origin main
 ```
 
@@ -82,7 +82,7 @@ docker compose down && docker compose up -d --build
   - `npm ci` - Install dependencies
   - `npm run build` - Build Next.js (~70s)
   - Export and copy artifacts (~20s)
-- Final output: `Container "jinbeh-staging" Started`
+- Final output: `Container "jinbeh-elite" Started`
 - Status: `Running 2/2`
 
 ### Docker Build Output Example
@@ -94,14 +94,14 @@ docker compose down && docker compose up -d --build
  => [runner 7/7] COPY --from=builder /app/.next/static
  => exporting layers                               22.0s
 [+] Running 2/2
- ✔ Container jinbeh-staging  Started
+ ✔ Container jinbeh-elite  Started
 ```
 
 ## Common Operations
 
 ### View Logs
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 docker compose logs -f --tail=100
 ```
 
@@ -195,7 +195,7 @@ Before deploying:
 - [ ] Terminal access ready (know it expires quickly)
 
 During deployment:
-- [ ] Navigate to `/root/jinbeh-staging`
+- [ ] Navigate to `/opt/jinbeh-elite`
 - [ ] Pull latest: `git pull origin main`
 - [ ] Build and deploy: `docker compose down && docker compose up -d --build`
 - [ ] Wait 2-3 minutes for build
@@ -235,7 +235,7 @@ git commit -m "Description"
 git push origin main
 
 # Then on VPS
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git pull origin main
 docker compose down && docker compose up -d --build
 ```
@@ -258,13 +258,13 @@ After any production deployment, also deploy to staging to keep environments ali
 
 ### Site Down - Quick Recovery
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 docker compose restart
 ```
 
 ### Broken Deployment - Rollback
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git log --oneline -5  # Find last working commit
 git reset --hard <commit-hash>
 docker compose down && docker compose up -d --build
@@ -272,7 +272,7 @@ docker compose down && docker compose up -d --build
 
 ### Complete Reset
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git fetch origin
 git reset --hard origin/main
 docker compose down -v
@@ -285,7 +285,7 @@ Based on actual deployment sessions:
 
 1. **Terminal tokens are extremely short-lived** - Plan for manual execution or immediate automation
 2. **Build times are consistent** - 120-140 seconds for full rebuild
-3. **Directory structure is simple** - Just `/root/jinbeh-staging`, not complex subdirectories
+3. **Directory structure is simple** - Just `/opt/jinbeh-elite`, not complex subdirectories
 4. **Git divergence happens** - Use `git reset --hard origin/main` confidently when needed
 5. **Docker is reliable** - Once deployed, containers run stably
 
@@ -293,7 +293,7 @@ Based on actual deployment sessions:
 
 ### Standard Deployment (Most Common)
 ```bash
-cd /root/jinbeh-staging && \
+cd /opt/jinbeh-elite && \
 git pull origin main && \
 docker compose down && \
 docker compose up -d --build
@@ -301,7 +301,7 @@ docker compose up -d --build
 
 ### Force Sync + Deploy
 ```bash
-cd /root/jinbeh-staging && \
+cd /opt/jinbeh-elite && \
 git fetch origin && \
 git reset --hard origin/main && \
 docker compose down && \
@@ -310,7 +310,7 @@ docker compose up -d --build
 
 ### Check Everything
 ```bash
-cd /root/jinbeh-staging && \
+cd /opt/jinbeh-elite && \
 git status && \
 git log -1 && \
 docker ps && \

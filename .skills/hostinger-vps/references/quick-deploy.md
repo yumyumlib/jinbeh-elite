@@ -5,7 +5,7 @@ Fast reference for common Hostinger VPS deployment scenarios.
 ## 🚀 Standard Deployment (Most Common)
 
 ```bash
-cd /root/jinbeh-staging && git pull origin main && docker compose down && docker compose up -d --build
+cd /opt/jinbeh-elite && git pull origin main && docker compose down && docker compose up -d --build
 ```
 
 **Time:** ~3 minutes
@@ -16,7 +16,7 @@ cd /root/jinbeh-staging && git pull origin main && docker compose down && docker
 ## 🔄 Force Sync Deployment
 
 ```bash
-cd /root/jinbeh-staging && git reset --hard origin/main && docker compose down && docker compose up -d --build
+cd /opt/jinbeh-elite && git reset --hard origin/main && docker compose down && docker compose up -d --build
 ```
 
 **Time:** ~3 minutes
@@ -27,7 +27,7 @@ cd /root/jinbeh-staging && git reset --hard origin/main && docker compose down &
 ## ⚡ Quick Restart (No Rebuild)
 
 ```bash
-cd /root/jinbeh-staging && docker compose restart
+cd /opt/jinbeh-elite && docker compose restart
 ```
 
 **Time:** ~10 seconds
@@ -38,7 +38,7 @@ cd /root/jinbeh-staging && docker compose restart
 ## 🔍 Status Check
 
 ```bash
-cd /root/jinbeh-staging && git status && docker ps
+cd /opt/jinbeh-elite && git status && docker ps
 ```
 
 **Time:** Instant
@@ -49,7 +49,7 @@ cd /root/jinbeh-staging && git status && docker ps
 ## 📋 View Recent Logs
 
 ```bash
-cd /root/jinbeh-staging && docker compose logs -f --tail=100
+cd /opt/jinbeh-elite && docker compose logs -f --tail=100
 ```
 
 **When to use:** Debugging, monitoring after deployment
@@ -60,7 +60,7 @@ cd /root/jinbeh-staging && docker compose logs -f --tail=100
 
 ```bash
 # 1. Find last working commit
-cd /root/jinbeh-staging && git log --oneline -10
+cd /opt/jinbeh-elite && git log --oneline -10
 
 # 2. Rollback to specific commit
 git reset --hard <commit-hash> && docker compose down && docker compose up -d --build

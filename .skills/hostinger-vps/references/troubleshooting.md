@@ -56,7 +56,7 @@ fatal: Need to specify how to reconcile divergent branches.
 
 **Solution:**
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git fetch origin
 git reset --hard origin/main
 ```
@@ -72,16 +72,17 @@ git reset --hard origin/main
 **Symptoms:**
 ```
 cd: no such file or directory: domains/staging.jinbeh.com/public_html
+cd: no such file or directory: /root/jinbeh-staging
 ```
 
 **Root Cause:** Using wrong directory path
 
 **Solution:** Use correct path
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 ```
 
-**Remember:** Project is at `/root/jinbeh-staging`, NOT in `/domains/`
+**Remember:** Project is at `/opt/jinbeh-elite`, NOT in `/domains/` or `/root/`
 
 ---
 
@@ -149,7 +150,7 @@ docker compose up -d --build
 
 **Solution 3 - Verify Git:**
 ```bash
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git log -1  # Should show your latest commit
 git pull origin main  # Make sure fully synced
 ```
@@ -332,7 +333,7 @@ sudo docker compose up -d --build
 
 **Or:** Fix permissions
 ```bash
-sudo chown -R $USER:$USER /root/jinbeh-staging
+sudo chown -R $USER:$USER /opt/jinbeh-elite
 ```
 
 ---
@@ -355,7 +356,7 @@ docker compose down -v
 docker system prune -a -f --volumes
 
 # 3. Reset to GitHub
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git fetch origin
 git reset --hard origin/main
 
@@ -384,7 +385,7 @@ docker --version
 docker compose version
 
 # Git status
-cd /root/jinbeh-staging
+cd /opt/jinbeh-elite
 git status
 git log -1
 
