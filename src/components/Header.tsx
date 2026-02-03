@@ -170,8 +170,8 @@ export default function Header({ location }: HeaderProps) {
                       <div
                         role="menu"
                         aria-label={`${item.label} submenu`}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden z-[100]"
-                        style={{ opacity: 1, transform: 'translateY(0)' }}>
+                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-warm-ivory-dark overflow-visible z-[999]"
+                        style={{ opacity: 1, transform: 'translateY(0)', pointerEvents: 'auto' }}>
                         <div className="p-2">
                           {item.dropdown.map((subItem) => {
                             // Check if this is the current location
@@ -250,8 +250,8 @@ export default function Header({ location }: HeaderProps) {
                   </svg>
                 </button>
                 {activeDropdown === "phone" && (
-                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-warm-ivory-dark overflow-hidden z-[100]"
-                       style={{ opacity: 1, transform: 'translateY(0)' }}>
+                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-warm-ivory-dark overflow-visible z-[999]"
+                       style={{ opacity: 1, transform: 'translateY(0)', pointerEvents: 'auto' }}>
                     <div className="p-2">
                       <a
                         href="tel:2146191200"

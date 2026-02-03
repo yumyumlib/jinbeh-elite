@@ -298,7 +298,7 @@ export default function HibachiLewisvillePage() {
                     Premium beef tenderloin, perfectly seared on the teppan grill
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$34.95</span>
+                    <span className="hidden">$34.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -318,7 +318,7 @@ export default function HibachiLewisvillePage() {
                     Hand-cut New York strip with savory soy glaze
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$32.95</span>
+                    <span className="hidden">$32.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export default function HibachiLewisvillePage() {
                     Marbled ribeye with rich, beefy flavor
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$35.95</span>
+                    <span className="hidden">$35.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -358,7 +358,7 @@ export default function HibachiLewisvillePage() {
                     Tender chicken breast with house teriyaki glaze
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$24.95</span>
+                    <span className="hidden">$24.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -378,7 +378,7 @@ export default function HibachiLewisvillePage() {
                     Succulent jumbo shrimp, flame-kissed to perfection
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$28.95</span>
+                    <span className="hidden">$28.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -398,7 +398,7 @@ export default function HibachiLewisvillePage() {
                     Plump sea scallops seared with garlic butter
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$32.95</span>
+                    <span className="hidden">$32.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -418,7 +418,7 @@ export default function HibachiLewisvillePage() {
                     Sweet Maine lobster tail, butter-grilled
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$44.95</span>
+                    <span className="hidden">$44.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -438,7 +438,7 @@ export default function HibachiLewisvillePage() {
                     Fresh Atlantic salmon with citrus teriyaki
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$28.95</span>
+                    <span className="hidden">$28.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -458,7 +458,7 @@ export default function HibachiLewisvillePage() {
                     Fresh seasonal vegetables with crispy tofu
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$19.95</span>
+                    <span className="hidden">$19.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -478,7 +478,7 @@ export default function HibachiLewisvillePage() {
                     Filet mignon paired with jumbo shrimp
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$38.95</span>
+                    <span className="hidden">$38.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -498,7 +498,7 @@ export default function HibachiLewisvillePage() {
                     Filet mignon with chicken teriyaki
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$36.95</span>
+                    <span className="hidden">$36.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -518,7 +518,7 @@ export default function HibachiLewisvillePage() {
                     Surf and turf perfection
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$54.95</span>
+                    <span className="hidden">$54.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -538,7 +538,7 @@ export default function HibachiLewisvillePage() {
                     Shrimp, scallops, and lobster
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$52.95</span>
+                    <span className="hidden">$52.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -558,7 +558,7 @@ export default function HibachiLewisvillePage() {
                     Filet mignon, lobster tail, and shrimp
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$64.95</span>
+                    <span className="hidden">$64.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>

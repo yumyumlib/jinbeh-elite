@@ -132,14 +132,12 @@ export default function JapaneseWhiskeyGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-amber-700 to-amber-900 rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🥃 Explore Premium Japanese Whiskeys at Jinbeh</h3>
+                            <div className="mt-12 p-8 bg-accent-red rounded-2xl text-center text-white">
+                                <h3 className="text-2xl font-heading font-bold mb-4">Explore Premium Japanese Whiskeys at Jinbeh</h3>
                                 <p className="mb-6 text-white/90">Discover our curated selection of Japanese whiskeys, expertly paired with our exceptional Japanese cuisine and hibachi experiences. Visit either our Frisco or Lewisville location to taste these remarkable spirits with the hospitality of a gracious host.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                    <Link href="/locations/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Frisco Location</Link>
-                                    <Link href="/reservations" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Make Reservation</Link>
+                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-8 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Reserve a Table</Link>
+                                    <a href="tel:2146191200" className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/20 transition">Call (214) 619-1200</a>
                                 </div>
                             </div>
                         </article>
