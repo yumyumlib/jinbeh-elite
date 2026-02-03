@@ -57,8 +57,8 @@ export default function HibachiVsTeppanyakiPage() {
     <ArticleLayout
       title="Hibachi vs Teppanyaki: Explained - Differences & Definitions"
       metaDescription="Confused about hibachi vs teppanyaki? Discover the key differences between these Japanese cooking styles, their origins, and what to expect at each."
-      heroImage="/images/blog/6-C060324-6405.jpg"
-      heroAlt="Teppanyaki chef performing at Jinbeh Japanese Restaurant with flames and knife skills on the griddle"
+      heroImage="/images/photoshoot/hibachi-onion-volcano-flame.jpg"
+      heroAlt="Jinbeh hibachi chef creating dramatic onion volcano with flames on the tableside grill, demonstrating authentic teppanyaki cooking style"
       category="Japanese Cuisine"
       categorySlug="cuisine"
       publishDate="January 2026"

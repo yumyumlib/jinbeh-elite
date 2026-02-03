@@ -28,7 +28,7 @@ const categories = {
     color: "from-red-500 to-soft-gold",
     articles: [
       { slug: "best-hibachi-dallas-tx", title: "Best Hibachi in Dallas", image: "/images/photoshoot/hibachi-plate-shrimp.jpg" },
-      { slug: "hibachi-vs-teppanyaki-explained", title: "Hibachi vs Teppanyaki", image: "/images/food/OnionVolcanoDemo.jpg" },
+      { slug: "hibachi-vs-teppanyaki-explained", title: "Hibachi vs Teppanyaki", image: "/images/photoshoot/hibachi-onion-volcano-flame.jpg" },
       { slug: "discover-teppanyaki", title: "Discover Teppanyaki", image: "/images/photoshoot/hibachi-plate-shrimp.jpg" },
       { slug: "hibachi-dining-experience", title: "Hibachi Dining Experience", image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg" },
       { slug: "hibachi-menu-guide", title: "Hibachi Menu Guide", image: "/images/photoshoot/hibachi-plate-shrimp.jpg" },
