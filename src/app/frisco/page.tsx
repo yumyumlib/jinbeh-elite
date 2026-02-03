@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PhotoGallery from "@/components/PhotoGallery";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
+import OpenTableWidget from "@/components/OpenTableWidget";
 import locations from "@/data/locations.json";
 
 // Gallery items for Frisco
@@ -189,12 +190,12 @@ export default function FriscoPage() {
               of Japan. Come on in and let us take you on a culinary journey through Japan!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#reserve"
-                className="btn btn-primary btn-shimmer"
-              >
-                Reserve Your Table
-              </a>
+              <OpenTableWidget
+                restaurantId={location.reservation.rid}
+                location="frisco"
+                buttonText="Reserve Your Table"
+                variant="primary"
+              />
               <a
                 href={`tel:${location.phoneClean}`}
                 className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal"
@@ -358,16 +359,15 @@ export default function FriscoPage() {
                   Make a Reservation
                 </h3>
                 <p className="text-charcoal/70 mb-4">
-                  Reserve your table through OpenTable for the best hibachi experience.
+                  Reserve your table for the best hibachi experience – your seat awaits!
                 </p>
-                <a
-                  href={location.reservation.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary w-full"
-                >
-                  Find a Table
-                </a>
+                <OpenTableWidget
+                  restaurantId={location.reservation.rid}
+                  location="frisco"
+                  buttonText="Find a Table"
+                  variant="primary"
+                  className="w-full"
+                />
                 <p className="mt-4 text-sm text-charcoal/80 text-center">
                   Or call us at{" "}
                   <a
@@ -758,12 +758,13 @@ export default function FriscoPage() {
 
         {/* Sticky Mobile CTA */}
         <div className="sticky-cta-mobile">
-          <a
-            href="#reserve"
-            className="btn btn-primary flex-1"
-          >
-            Reserve Table
-          </a>
+          <OpenTableWidget
+            restaurantId={location.reservation.rid}
+            location="frisco"
+            buttonText="Reserve Table"
+            variant="primary"
+            className="flex-1"
+          />
           <a
             href={`tel:${location.phoneClean}`}
             className="btn btn-secondary flex-1"

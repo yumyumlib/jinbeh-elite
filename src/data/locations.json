@@ -42,7 +42,8 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
+        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco",
+        "rid": "1056652"
       },
       "menus": {
         "lunch": "/menus/frisco/lunch-menu.pdf",
@@ -98,7 +99,8 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/jinbeh-lewisville"
+        "url": "https://www.opentable.com/jinbeh-lewisville",
+        "rid": "1056663"
       },
       "menus": {
         "lunch": "/menus/lewisville/lunch-menu.pdf",
