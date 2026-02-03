@@ -115,7 +115,7 @@
             "featured": true,
             "relatedPosts": [
                 "best-hibachi-dallas",
-                "group-dining-guide",
+                "large-group-dining",
                 "free-birthday-deals"
             ]
         },
@@ -305,7 +305,7 @@
             ]
         },
         {
-            "slug": "group-dining-guide",
+            "slug": "large-group-dining",
             "title": "Large Group Dining: Best Restaurants for Parties",
             "excerpt": "Planning dinner for a large group in DFW? Discover why hibachi is perfect for corporate events, family reunions, and celebrations of 10-50+ guests.",
             "category": "celebrations",
@@ -370,7 +370,7 @@
             "relatedPosts": [
                 "hibachi-birthday-party-ideas",
                 "best-hibachi-dallas",
-                "group-dining-guide"
+                "large-group-dining"
             ]
         },
         {
@@ -728,7 +728,7 @@
             "featured": false,
             "relatedPosts": [
                 "bridal-shower-venues",
-                "group-dining-guide",
+                "large-group-dining",
                 "restaurants-private-rooms"
             ]
         },
@@ -751,7 +751,7 @@
             "featured": false,
             "relatedPosts": [
                 "bridal-shower-venues",
-                "group-dining-guide",
+                "large-group-dining",
                 "best-happy-hour-frisco-tx"
             ]
         },
@@ -913,7 +913,7 @@
             "relatedPosts": [
                 "baby-shower-venues",
                 "bachelorette-restaurants-dallas",
-                "group-dining-guide"
+                "large-group-dining"
             ]
         },
         {
@@ -980,7 +980,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "group-dining-guide",
+                "large-group-dining",
                 "restaurants-private-rooms",
                 "hibachi-birthday-party-ideas"
             ]
@@ -1004,7 +1004,7 @@
             "featured": false,
             "relatedPosts": [
                 "offsite-hibachi-catering",
-                "group-dining-guide",
+                "large-group-dining",
                 "jinbeh-catering-services"
             ]
         },
@@ -1120,7 +1120,7 @@
             "relatedPosts": [
                 "hibachi-catering-dfw",
                 "offsite-hibachi-catering",
-                "group-dining-guide"
+                "large-group-dining"
             ]
         },
         {
@@ -1164,7 +1164,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "group-dining-guide",
+                "large-group-dining",
                 "group-dining-venues",
                 "hibachi-birthday-party-ideas"
             ]
@@ -1189,7 +1189,7 @@
             "relatedPosts": [
                 "hibachi-catering-dfw",
                 "jinbeh-catering-services",
-                "group-dining-guide"
+                "large-group-dining"
             ]
         },
         {
@@ -1279,7 +1279,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "group-dining-guide",
+                "large-group-dining",
                 "group-dining-venues",
                 "large-group-dining"
             ]
@@ -1486,7 +1486,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "group-dining-guide",
+                "large-group-dining",
                 "best-hibachi-dallas",
                 "romantic-anniversary-dinners"
             ]
