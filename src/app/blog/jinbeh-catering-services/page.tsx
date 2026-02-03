@@ -62,8 +62,8 @@ export default function JinbehCateringServicesPage() {
     <ArticleLayout
       title="Jinbeh at Home: Experience Jinbeh Catering's Unique Japanese Flavors"
       metaDescription="Experience authentic Japanese flavors with Jinbeh Catering. From sushi platters to interactive hibachi stations, bring Jinbeh's culinary excellence to your next event."
-      heroImage="/images/blog/4-C060324-6380.jpg"
-      heroAlt="Jinbeh hibachi chef preparing fresh ingredients for catering event"
+      heroImage="/images/photoshoot/hibachi-plate-shrimp.jpg"
+      heroAlt="Premium catered hibachi meal ready for home event"
       category="Services & Guides"
       categorySlug="services"
       publishDate="January 2026"

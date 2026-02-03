@@ -88,8 +88,8 @@ export default function BestSushiFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/7-C060324-6447.jpg"
-                    alt="Fresh sushi platter at Jinbeh Frisco"
+                    src="/images/photoshoot/specialty-roll.jpg"
+                    alt="Artfully plated specialty sushi roll with fresh ingredients"
                     fill
                     className="object-cover"
                     priority

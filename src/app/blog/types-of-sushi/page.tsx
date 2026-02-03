@@ -99,7 +99,7 @@ export default function TypesOfSushi() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/12-C060324-6551.jpg"
+                    poster="/images/photoshoot/sushi-tower.jpg"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>
