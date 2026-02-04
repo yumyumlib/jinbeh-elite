@@ -57,6 +57,7 @@ export default function OpenTableWidget({
               otDiv.style.display = 'flex';
               otDiv.style.justifyContent = 'center';
               otDiv.style.alignItems = 'flex-start';
+              otDiv.style.minHeight = '500px';
             }
 
             if (otIframe) {
@@ -64,6 +65,9 @@ export default function OpenTableWidget({
               otIframe.style.top = '0';
               otIframe.style.left = '0';
               otIframe.style.margin = '0 auto';
+              otIframe.style.minHeight = '500px';
+              otIframe.style.height = '550px';
+              otIframe.style.display = 'block';
             }
           }, 500);
         };
@@ -171,7 +175,7 @@ export default function OpenTableWidget({
               )}
 
               {/* OpenTable Widget will be injected here */}
-              <div id="ot-widget-mount" className="w-full flex justify-center"></div>
+              <div id="ot-widget-mount" className="w-full flex justify-center min-h-[550px]"></div>
             </div>
 
             {/* Modal Footer */}
