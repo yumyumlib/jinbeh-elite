@@ -132,7 +132,7 @@ export default function OpenTableWidget({
             </div>
 
             {/* Modal Body - OpenTable Widget Mount Point */}
-            <div className="relative bg-warm-ivory min-h-[600px]">
+            <div className="relative bg-warm-ivory min-h-[600px] flex items-start justify-center p-6">
               {/* Loading State */}
               {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-warm-ivory z-10">
@@ -144,7 +144,7 @@ export default function OpenTableWidget({
               )}
 
               {/* OpenTable Widget will be injected here */}
-              <div id="ot-widget-mount" className="w-full"></div>
+              <div id="ot-widget-mount" className="w-full flex justify-center"></div>
             </div>
 
             {/* Modal Footer */}
