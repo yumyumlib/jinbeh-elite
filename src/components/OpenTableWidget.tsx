@@ -36,9 +36,29 @@ export default function OpenTableWidget({
         script.async = true;
         script.src = `https://www.opentable.com/widget/reservation/loader?rid=${encodeURIComponent(restaurantId)}&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US`;
 
-        // Hide loading indicator once script loads
+        // Hide loading indicator and fix positioning once script loads
         script.onload = () => {
-          setTimeout(() => setIsLoading(false), 500);
+          setTimeout(() => {
+            setIsLoading(false);
+
+            // Fix OpenTable widget positioning
+            const otDiv = mountPoint.querySelector('div');
+            const otIframe = mountPoint.querySelector('iframe');
+
+            if (otDiv) {
+              otDiv.style.position = 'relative';
+              otDiv.style.display = 'flex';
+              otDiv.style.justifyContent = 'center';
+              otDiv.style.alignItems = 'flex-start';
+            }
+
+            if (otIframe) {
+              otIframe.style.position = 'relative';
+              otIframe.style.top = '0';
+              otIframe.style.left = '0';
+              otIframe.style.margin = '0 auto';
+            }
+          }, 500);
         };
 
         mountPoint.appendChild(script);
