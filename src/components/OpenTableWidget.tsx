@@ -18,34 +18,40 @@ export default function OpenTableWidget({
   variant = 'primary',
 }: OpenTableWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  // OpenTable widget URL
-  const widgetUrl = `https://www.opentable.com/restref/client/?rid=${restaurantId}&restref=${restaurantId}&partysize=2&datetime=${getCurrentDateTime()}`;
-
-  function getCurrentDateTime() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    const hour = '19'; // Default to 7 PM
-    const minute = '00';
-    return `${year}-${month}-${day}T${hour}:${minute}`;
-  }
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (isOpen) {
       // Prevent body scroll when modal is open
       document.body.style.overflow = 'hidden';
-      setIsLoaded(true);
+
+      // Clear and inject OpenTable widget loader script
+      const mountPoint = document.getElementById('ot-widget-mount');
+      if (mountPoint) {
+        mountPoint.innerHTML = ''; // Clear any previous widget
+
+        // Create and inject the OpenTable widget loader script
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = `https://www.opentable.com/widget/reservation/loader?rid=${encodeURIComponent(restaurantId)}&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US`;
+
+        // Hide loading indicator once script loads
+        script.onload = () => {
+          setTimeout(() => setIsLoading(false), 500);
+        };
+
+        mountPoint.appendChild(script);
+      }
     } else {
       document.body.style.overflow = '';
+      setIsLoading(true);
     }
 
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isOpen]);
+  }, [isOpen, restaurantId]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -126,11 +132,11 @@ export default function OpenTableWidget({
               </div>
             </div>
 
-            {/* Modal Body - OpenTable iFrame */}
-            <div className="relative bg-warm-ivory">
+            {/* Modal Body - OpenTable Widget Mount Point */}
+            <div className="relative bg-warm-ivory min-h-[600px]">
               {/* Loading State */}
-              {!isLoaded && (
-                <div className="absolute inset-0 flex items-center justify-center bg-warm-ivory">
+              {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-warm-ivory z-10">
                   <div className="text-center">
                     <div className="w-16 h-16 border-4 border-soft-gold border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <p className="text-charcoal/70">Loading reservation options...</p>
@@ -138,14 +144,8 @@ export default function OpenTableWidget({
                 </div>
               )}
 
-              {/* OpenTable iFrame */}
-              <iframe
-                src={widgetUrl}
-                className="w-full h-[600px] border-0"
-                title="OpenTable Reservation Widget"
-                onLoad={() => setIsLoaded(true)}
-                allow="payment"
-              />
+              {/* OpenTable Widget will be injected here */}
+              <div id="ot-widget-mount" className="w-full"></div>
             </div>
 
             {/* Modal Footer */}
