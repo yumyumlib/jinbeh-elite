@@ -55,7 +55,6 @@ export default function OpenTableWidget({
 
   const handleClose = () => {
     setIsOpen(false);
-    setIsLoaded(false);
   };
 
   const buttonVariants = {
