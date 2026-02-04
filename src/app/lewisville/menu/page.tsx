@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import OpenTableWidget from "@/components/OpenTableWidget";
+import locationsData from "@/data/locations.json";
 
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Lewisville | Hibachi & Sushi Menu Near Vista Ridge Mall",
@@ -353,12 +355,13 @@ export default function LewisvilleMenuPage() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
               Reserve your table and prepare for dinner and a show!
             </p>
-            <Link
-              href="/lewisville#reserve"
-              className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
-            >
-              Reserve at Lewisville
-            </Link>
+            <OpenTableWidget
+              restaurantId={locationsData.locations.lewisville.reservation.rid}
+              location="lewisville"
+              buttonText="Reserve at Lewisville"
+              variant="primary"
+              className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-block"
+            />
           </div>
         </section>
       </main>

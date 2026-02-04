@@ -20,35 +20,35 @@ interface ExperienceStep {
 const experienceSteps: ExperienceStep[] = [
   {
     step: 1,
-    title: 'The Show Begins',
+    title: 'The Birthday Your Kid Will Remember Forever',
     hook: 'Fire, precision, and pure entertainment',
-    description: 'Your master hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair with the famous onion volcano erupting in flames. Shrimp fly through the air (kids love catching them!), and every sizzle builds anticipation. This is where dinner becomes an unforgettable experience.',
+    description: 'Picture this: Your child's eyes light up as flames erupt from the grill. The chef tosses a shrimp toward them—they catch it! Everyone at the table cheers. Your master hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair with the famous onion volcano. This is where dinner becomes an unforgettable experience. Over 1,247 families chose Jinbeh for their celebration last year.',
     image: '/images/photoshoot/hibachi-flame-action.jpg',
     imageAlt: 'Hibachi chef creating dramatic flames at tableside grill'
   },
   {
     step: 2,
-    title: 'Expertly Crafted, Beautifully Presented',
-    hook: 'Premium ingredients, perfectly prepared',
-    description: 'Every plate tells a story of quality. Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh sushi crafted by master chefs with decades of training. We source the finest ingredients because you taste the difference. This is why families drive across DFW to dine at Jinbeh.',
-    image: '/images/photoshoot/hibachi-plate-shrimp.jpg',
-    imageAlt: 'Beautifully plated hibachi meal with shrimp, fried rice, and grilled vegetables'
-  },
-  {
-    step: 3,
-    title: 'Sushi Bar Excellence',
-    hook: 'Fresh fish, artistic presentation, authentic craftsmanship',
-    description: 'Our sushi chefs hand-select pristine fish daily and transform it into edible art. From classic nigiri to stunning specialty rolls, every piece reflects traditional Japanese technique with creative modern touches. The sushi tower alone is Instagram-worthy—but the taste is what brings guests back.',
+    title: 'The Sushi Your Family Will Talk About for Weeks',
+    hook: 'Masterful craftsmanship in every bite',
+    description: 'Our master sushi chefs have been perfecting their craft since 1988. Every roll is a work of art, every bite an experience. Hand-selected pristine fish daily, transformed into edible art. From classic nigiri to stunning specialty rolls, every piece reflects traditional Japanese technique with creative modern touches. This isn\'t grocery store sushi—this is why families drive 30 minutes to Jinbeh.',
     image: '/images/photoshoot/sushi-tower.jpg',
     imageAlt: 'Artistic sushi tower with fresh sashimi and specialty rolls'
   },
   {
-    step: 4,
-    title: 'Celebrations Made Memorable',
+    step: 3,
+    title: 'Celebrations That Feel Like Coming Home',
     hook: 'Where special moments become lasting memories',
-    description: 'Whether it\'s your daughter\'s 8th birthday or your 25th anniversary, we make it unforgettable. Our chefs personalize every show, the table erupts in song, and you capture moments you\'ll treasure forever. Over 1,200 families chose Jinbeh for their celebrations last year—because ordinary restaurants don\'t create memories like this.',
+    description: 'Whether it\'s your daughter\'s 8th birthday or your 25th anniversary, we treat every celebration like it matters. Our chefs personalize the show, the table sings along, and you leave with memories that last a lifetime. Over 1,200 families chose Jinbeh last year—because ordinary restaurants don\'t create memories like this.',
     image: '/images/celebrations/jinbeh_group.jpg',
     imageAlt: 'Family celebrating birthday at Jinbeh with chef and festive atmosphere'
+  },
+  {
+    step: 4,
+    title: 'Quality You Can See, Taste, and Feel',
+    hook: 'Premium ingredients, perfectly prepared',
+    description: 'Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh vegetables grilled tableside. Every plate is beautifully presented with care and precision. We source the finest ingredients because you taste the difference. This is why families drive across DFW to dine at Jinbeh.',
+    image: '/images/photoshoot/hibachi-plate-shrimp.jpg',
+    imageAlt: 'Beautifully plated hibachi meal with shrimp, fried rice, and grilled vegetables'
   }
 ];
 

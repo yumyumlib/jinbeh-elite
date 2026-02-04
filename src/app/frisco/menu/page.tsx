@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import OpenTableWidget from "@/components/OpenTableWidget";
+import locationsData from "@/data/locations.json";
 
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Frisco | Hibachi & Sushi Menu Near Stonebriar",
@@ -349,12 +351,13 @@ export default function FriscoMenuPage() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
               Reserve your table and prepare for dinner and a show!
             </p>
-            <Link
-              href="/frisco#reserve"
-              className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
-            >
-              Reserve at Frisco
-            </Link>
+            <OpenTableWidget
+              restaurantId={locationsData.locations.frisco.reservation.rid}
+              location="frisco"
+              buttonText="Reserve at Frisco"
+              variant="primary"
+              className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-block"
+            />
           </div>
         </section>
       </main>

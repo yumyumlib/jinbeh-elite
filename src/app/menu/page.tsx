@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import OpenTableWidget from "@/components/OpenTableWidget";
+import locationsData from "@/data/locations.json";
 
 export const metadata: Metadata = {
     title: "Menu | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -154,18 +156,20 @@ export default function MenuPage() {
                             Make a reservation and experience the Jinbeh difference.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
-                                href="/frisco#reserve"
+                            <OpenTableWidget
+                                restaurantId={locationsData.locations.frisco.reservation.rid}
+                                location="frisco"
+                                buttonText="Reserve at Frisco"
+                                variant="primary"
                                 className="btn btn-primary px-8 py-4 text-lg"
-                            >
-                                Reserve at Frisco
-                            </Link>
-                            <Link
-                                href="/lewisville#reserve"
+                            />
+                            <OpenTableWidget
+                                restaurantId={locationsData.locations.lewisville.reservation.rid}
+                                location="lewisville"
+                                buttonText="Reserve at Lewisville"
+                                variant="primary"
                                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 text-lg"
-                            >
-                                Reserve at Lewisville
-                            </Link>
+                            />
                         </div>
                     </div>
                 </section>

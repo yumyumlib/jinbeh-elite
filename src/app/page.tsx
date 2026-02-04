@@ -9,6 +9,8 @@ import WordRotate from "@/components/ui/WordRotate";
 import Marquee from "@/components/ui/Marquee";
 import { BorderBeam } from "@/components/ui/BorderBeam";
 import JinbehExperience from "@/components/JinbehExperience";
+import OpenTableWidget from "@/components/OpenTableWidget";
+import locationsData from "@/data/locations.json";
 import { useState, useEffect } from "react";
 
 // Helper to get dynamic reservation CTA based on day of week
@@ -218,12 +220,13 @@ export default function HomePage() {
                 </svg>
                 <span className="hidden lg:inline">Call</span>
               </a>
-              <Link
-                href="/frisco#reserve"
+              <OpenTableWidget
+                restaurantId={locationsData.locations.frisco.reservation.rid}
+                location="frisco"
+                buttonText="Reserve Now"
+                variant="primary"
                 className="bg-accent-red text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-red-hover transition-colors shadow-md"
-              >
-                Reserve Now
-              </Link>
+              />
             </div>
           </div>
           {/* Mobile menu button */}
@@ -310,9 +313,13 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
-              <Link href="/frisco#reserve" className="bg-accent-red text-white px-4 py-3 rounded-lg text-center font-semibold mt-2">
-                Reserve Online
-              </Link>
+              <OpenTableWidget
+                restaurantId={locationsData.locations.frisco.reservation.rid}
+                location="frisco"
+                buttonText="Reserve Online"
+                variant="primary"
+                className="bg-accent-red text-white px-4 py-3 rounded-lg text-center font-semibold mt-2 w-full"
+              />
             </div>
           </div>
         )}
@@ -445,15 +452,13 @@ export default function HomePage() {
                       Near Stonebriar Centre
                     </p>
                     <div className="flex flex-col gap-3">
-                      <Link
-                        href="/frisco#reserve"
+                      <OpenTableWidget
+                        restaurantId={locationsData.locations.frisco.reservation.rid}
+                        location="frisco"
+                        buttonText="Reserve a Table"
+                        variant="primary"
                         className="shimmer-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        Reserve a Table
-                      </Link>
+                      />
                       <a
                         href="tel:2146191200"
                         className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
@@ -482,15 +487,13 @@ export default function HomePage() {
                       Easy access from I-35E
                     </p>
                     <div className="flex flex-col gap-3">
-                      <Link
-                        href="/lewisville#reserve"
+                      <OpenTableWidget
+                        restaurantId={locationsData.locations.lewisville.reservation.rid}
+                        location="lewisville"
+                        buttonText="Reserve a Table"
+                        variant="primary"
                         className="shimmer-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        Reserve a Table
-                      </Link>
+                      />
                       <a
                         href="tel:2144882224"
                         className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
@@ -525,94 +528,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Experience Section */}
-        <section className="py-24 bg-warm-ivory relative overflow-hidden">
-          {/* Subtle decorative pattern */}
-          <div className="absolute inset-0 opacity-[0.02]" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0L60 30L30 60L0 30z M30 10L50 30L30 50L10 30z' fill='%231F1F1F' fill-opacity='1'/%3E%3C/svg%3E")`
-          }} />
-
-          <div className="container mx-auto px-6 relative z-10">
-            <ScrollReveal>
-              <div className="text-center mb-20">
-                <span className="inline-block w-16 h-1 bg-gradient-to-r from-accent-red to-soft-gold rounded-full mb-6" />
-                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6 italic">
-                  Hibachi & Sushi in Frisco & Lewisville
-                </h2>
-                <p className="text-xl text-charcoal/70 max-w-4xl mx-auto leading-relaxed">
-                  More than a meal — it&apos;s entertainment, artistry, and tradition served tableside at Jinbeh
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
-              {/* Hibachi */}
-              <ScrollReveal delay={0}>
-                <Link href="/blog/category/hibachi" className="group block feature-card text-center">
-                  <div className="icon-circle icon-circle-fire mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                    <span className="text-4xl filter drop-shadow-md">🔥</span>
-                  </div>
-                  <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    The Birthday Your Kid Will Remember Forever
-                  </h3>
-                  <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Picture this: Your child's eyes light up as flames erupt from the grill. The chef tosses a shrimp toward them—they catch it! Everyone at the table cheers. Over 1,247 families chose Jinbeh for their celebration last year.
-                  </p>
-                  <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
-                    Hibachi Dining Guide
-                    <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </Link>
-              </ScrollReveal>
-
-              {/* Sushi */}
-              <ScrollReveal delay={150}>
-                <Link href="/blog/category/sushi" className="group block feature-card text-center">
-                  <div className="icon-circle icon-circle-sushi mx-auto mb-8 group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
-                    <span className="text-4xl filter drop-shadow-md">🍣</span>
-                  </div>
-                  <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    The Sushi Your Family Will Talk About for Weeks
-                  </h3>
-                  <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Our master sushi chefs have been perfecting their craft since 1988. Every roll is a work of art, every bite an experience. This isn't grocery store sushi—this is why families drive 30 minutes to Jinbeh.
-                  </p>
-                  <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
-                    Sushi Menu & Guide
-                    <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </Link>
-              </ScrollReveal>
-
-              {/* Celebrations */}
-              <ScrollReveal delay={300}>
-                <Link href="/blog/category/celebrations" className="group block feature-card text-center">
-                  <div className="icon-circle icon-circle-celebration mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                    <span className="text-4xl filter drop-shadow-md">🎉</span>
-                  </div>
-                  <h3 className="font-heading text-2xl font-bold text-charcoal mb-4">
-                    Celebrations That Feel Like Coming Home
-                  </h3>
-                  <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Whether it's your daughter's 8th birthday or your 25th anniversary, we treat every celebration like it matters. Our chefs personalize the show, the table sings along, and you leave with memories that last a lifetime.
-                  </p>
-                  <span className="inline-flex items-center text-accent-red font-semibold text-sm group-hover:gap-3 transition-all">
-                    Plan a Celebration
-                    <svg className="w-5 h-5 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </Link>
-              </ScrollReveal>
-            </div>
-          </div>
-        </section>
-
-        {/* Jinbeh Experience Walkthrough - Reimagined with Working Images */}
+        {/* Jinbeh Experience - Merged Section with Best Elements */}
         <JinbehExperience />
 
         {/* Stats Section - Redesigned with Strong Visual Contrast */}
@@ -722,8 +638,8 @@ export default function HomePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
               <ScrollReveal delay={0} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/photoshoot/hibachi-plate-shrimp.jpg"
-                  alt="Hibachi shrimp and scallops with fried rice - Jinbeh signature plate"
+                  src="/images/photoshoot/hibachi-flame-action.jpg"
+                  alt="Hibachi chef performing flame show at Jinbeh"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -1457,15 +1373,13 @@ export default function HomePage() {
                   <h3 className="text-2xl font-heading font-bold mb-2">Frisco</h3>
                   <p className="text-white/70 text-sm mb-6">Near Stonebriar Centre</p>
                   <div className="flex flex-col gap-4">
-                    <Link
-                      href="/frisco#reserve"
+                    <OpenTableWidget
+                      restaurantId={locationsData.locations.frisco.reservation.rid}
+                      location="frisco"
+                      buttonText="Reserve Online"
+                      variant="primary"
                       className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <span className="relative z-10">Reserve Online</span>
-                    </Link>
+                    />
                     <a
                       href="tel:2146191200"
                       className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
@@ -1483,15 +1397,13 @@ export default function HomePage() {
                   <h3 className="text-2xl font-heading font-bold mb-2">Lewisville</h3>
                   <p className="text-white/70 text-sm mb-6">Easy access from I-35E</p>
                   <div className="flex flex-col gap-4">
-                    <Link
-                      href="/lewisville#reserve"
+                    <OpenTableWidget
+                      restaurantId={locationsData.locations.lewisville.reservation.rid}
+                      location="lewisville"
+                      buttonText="Reserve Online"
+                      variant="primary"
                       className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <span className="relative z-10">Reserve Online</span>
-                    </Link>
+                    />
                     <a
                       href="tel:2144882224"
                       className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
@@ -1522,15 +1434,13 @@ export default function HomePage() {
             </svg>
             Call Now
           </a>
-          <Link
-            href="/frisco#reserve"
-            className="flex items-center justify-center gap-2 py-4 bg-accent-red text-white font-semibold hover:bg-accent-red-hover transition-colors"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            Reserve
-          </Link>
+          <OpenTableWidget
+            restaurantId={locationsData.locations.frisco.reservation.rid}
+            location="frisco"
+            buttonText="Reserve"
+            variant="primary"
+            className="flex items-center justify-center gap-2 py-4 bg-accent-red text-white font-semibold hover:bg-accent-red-hover transition-colors w-full"
+          />
         </div>
       </div>
 
