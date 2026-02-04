@@ -638,8 +638,8 @@ export default function HomePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
               <ScrollReveal delay={0} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/photoshoot/hibachi-flame-action.jpg"
-                  alt="Hibachi chef performing flame show at Jinbeh"
+                  src="/images/photoshoot/hibachi-plate-shrimp.jpg"
+                  alt="Hibachi shrimp and scallops with fried rice - Jinbeh signature plate"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -688,7 +688,7 @@ export default function HomePage() {
               </ScrollReveal>
               <ScrollReveal delay={350} className="gallery-item aspect-square">
                 <Image
-                  src="/images/blog/30-C060324-6930.jpg"
+                  src="/images/photoshoot/sushi-beer-background.jpg"
                   alt="Hibachi grill with Sapporo beer - the perfect pairing for Japanese cuisine"
                   fill
                   loading="lazy"
