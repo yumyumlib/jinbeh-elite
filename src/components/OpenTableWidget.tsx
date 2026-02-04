@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 interface OpenTableWidgetProps {
   restaurantId: string;
@@ -19,6 +20,12 @@ export default function OpenTableWidget({
 }: OpenTableWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Ensure we're mounted (for SSR safety)
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -107,8 +114,8 @@ export default function OpenTableWidget({
         {buttonText}
       </button>
 
-      {/* Modal Overlay */}
-      {isOpen && (
+      {/* Modal Overlay - Portaled to document.body */}
+      {isMounted && isOpen && createPortal(
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-charcoal/80 backdrop-blur-sm animate-fade-in"
           onClick={handleClose}
@@ -180,7 +187,8 @@ export default function OpenTableWidget({
               </p>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       <style jsx>{`
