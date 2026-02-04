@@ -32,57 +32,20 @@ export default function OpenTableWidget({
       // Prevent body scroll when modal is open
       document.body.style.overflow = 'hidden';
 
-      // Clear and inject OpenTable widget loader script
-      const mountPoint = document.getElementById('ot-widget-mount');
-      if (mountPoint) {
-        mountPoint.innerHTML = ''; // Clear any previous widget
+      // Hide loading indicator after a brief delay
+      const loadTimer = setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
 
-        // Create and inject the OpenTable widget loader script
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = `https://www.opentable.com/widget/reservation/loader?rid=${encodeURIComponent(restaurantId)}&type=standard&theme=standard&domain=com&lang=en-US`;
-
-        // Hide loading indicator and fix positioning once script loads
-        script.onload = () => {
-          setTimeout(() => {
-            setIsLoading(false);
-
-            // Fix OpenTable widget positioning
-            const otDiv = mountPoint.querySelector('div');
-            const otIframe = mountPoint.querySelector('iframe');
-
-            if (otDiv) {
-              otDiv.style.position = 'relative';
-              otDiv.style.display = 'flex';
-              otDiv.style.justifyContent = 'center';
-              otDiv.style.alignItems = 'flex-start';
-              otDiv.style.minHeight = '500px';
-            }
-
-            if (otIframe) {
-              otIframe.style.position = 'relative';
-              otIframe.style.top = '0';
-              otIframe.style.left = '0';
-              otIframe.style.margin = '0 auto';
-              otIframe.style.minHeight = '500px';
-              otIframe.style.height = '550px';
-              otIframe.style.display = 'block';
-            }
-          }, 500);
-        };
-
-        mountPoint.appendChild(script);
-      }
+      return () => {
+        clearTimeout(loadTimer);
+        document.body.style.overflow = '';
+      };
     } else {
       document.body.style.overflow = '';
       setIsLoading(true);
     }
-
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen, restaurantId]);
+  }, [isOpen]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -174,8 +137,13 @@ export default function OpenTableWidget({
                 </div>
               )}
 
-              {/* OpenTable Widget will be injected here */}
-              <div id="ot-widget-mount" className="w-full flex justify-center min-h-[550px]"></div>
+              {/* OpenTable Widget iframe */}
+              <iframe
+                src={`https://www.opentable.com/restref/client/?rid=${restaurantId}&lang=en-US&ot_source=Restaurant%20website`}
+                className="w-full h-[600px] border-0 rounded-lg"
+                title="OpenTable Reservation Widget"
+                allow="payment"
+              />
             </div>
 
             {/* Modal Footer */}
