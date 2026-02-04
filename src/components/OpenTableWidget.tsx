@@ -41,7 +41,7 @@ export default function OpenTableWidget({
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.async = true;
-        script.src = `https://www.opentable.com/widget/reservation/loader?rid=${encodeURIComponent(restaurantId)}&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US`;
+        script.src = `https://www.opentable.com/widget/reservation/loader?rid=${encodeURIComponent(restaurantId)}&type=standard&theme=standard&domain=com&lang=en-US`;
 
         // Hide loading indicator and fix positioning once script loads
         script.onload = () => {
