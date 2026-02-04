@@ -22,7 +22,7 @@ const experienceSteps: ExperienceStep[] = [
     step: 1,
     title: 'The Birthday Your Kid Will Remember Forever',
     hook: 'Fire, precision, and pure entertainment',
-    description: 'Picture this: Your child's eyes light up as flames erupt from the grill. The chef tosses a shrimp toward them—they catch it! Everyone at the table cheers. Your master hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair with the famous onion volcano. This is where dinner becomes an unforgettable experience. Over 1,247 families chose Jinbeh for their celebration last year.',
+    description: 'Picture this: Your child\'s eyes light up as flames erupt from the grill. The chef tosses a shrimp toward them—they catch it! Everyone at the table cheers. Your master hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair with the famous onion volcano. This is where dinner becomes an unforgettable experience. Over 1,247 families chose Jinbeh for their celebration last year.',
     image: '/images/photoshoot/hibachi-flame-action.jpg',
     imageAlt: 'Hibachi chef creating dramatic flames at tableside grill'
   },
