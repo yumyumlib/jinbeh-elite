@@ -621,7 +621,7 @@ export default function HomePage() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-sm">from <strong className="font-semibold">1,247</strong> Google reviews</span>
+                  <span className="text-sm">from <strong className="font-semibold">1,200+</strong> reviews on Google &amp; Yelp</span>
                 </div>
               </div>
 
@@ -749,6 +749,54 @@ export default function HomePage() {
                       <div>
                         <p className="font-semibold text-charcoal">Jailen R</p>
                         <p className="text-xs text-charcoal/70">Google Review</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 6 - Mark L. (9/10) - Best Benihana comparison line */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} delay={10} colorFrom="#C9A227" colorTo="#C1121F" />
+                    <div className="flex gap-1 mb-4" aria-hidden="true">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;Benihana has always been the standard, but this beats it. The sashimi was fresh and flavorful; fried rice was awesome and everything else completely on point. You cannot go wrong here.&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-[#FF1A1A]/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-[#FF1A1A]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326z"/></svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-charcoal">Mark L.</p>
+                        <p className="text-xs text-charcoal/70">Yelp Review</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 7 - Terri B. (9/10) - Names 4 competitors, biggest claim */}
+                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
+                    <BorderBeam size={150} duration={10} delay={12} colorFrom="#C1121F" colorTo="#C9A227" />
+                    <div className="flex gap-1 mb-4" aria-hidden="true">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
+                      &ldquo;Absolutely the best #1 Japanese Hibachi in the world! I&apos;ve experienced Kobe&apos;s, Japon, Benihana and Shogun... Jinbeh by far beats them all in quality, atmosphere, cleanliness, customers all nice, Food is spectacular!!!&rdquo;
+                    </blockquote>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-[#FF1A1A]/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-[#FF1A1A]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326z"/></svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-charcoal">Terri B.</p>
+                        <p className="text-xs text-charcoal/70">Yelp Review</p>
                       </div>
                     </div>
                   </div>
