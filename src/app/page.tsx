@@ -599,8 +599,8 @@ export default function HomePage() {
                 "@type": "Review",
                 itemReviewed: { "@type": "Restaurant", name: "Jinbeh Japanese Restaurant" },
                 reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-                author: { "@type": "Person", name: "Sarah M." },
-                reviewBody: "Best hibachi experience in DFW! The kids were absolutely mesmerized by the chef performance."
+                author: { "@type": "Person", name: "Alaina Thompson" },
+                reviewBody: "I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be."
               })
             }}
           />
@@ -633,7 +633,7 @@ export default function HomePage() {
                 <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
                 <Marquee pauseOnHover duration={150}>
-                  {/* Testimonial 1 - Verified Google Review */}
+                  {/* Testimonial 1 - Alaina Thompson (9.5/10) - 17 years of loyalty */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} colorFrom="#C1121F" colorTo="#C9A227" />
                     <div className="flex gap-1 mb-4" aria-hidden="true">
@@ -644,20 +644,20 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Best hibachi in DFW! The chefs are very entertaining—they always put on an excellent show! We&apos;ve been coming here for years and it never disappoints.&rdquo;
+                      &ldquo;I have gone here for my birthday every year since I was at least 7. I&apos;m 24 now and celebrated my 24th there. Truly my favorite place to be.&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                       </div>
                       <div>
-                        <p className="font-semibold text-charcoal">Google Review</p>
-                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
+                        <p className="font-semibold text-charcoal">Alaina Thompson</p>
+                        <p className="text-xs text-charcoal/70">Google Review</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Testimonial 2 - Verified Yelp Review */}
+                  {/* Testimonial 2 - Tatiana Maskaron (8.5/10) - Family + Benihana comparison */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} delay={2} colorFrom="#C9A227" colorTo="#C1121F" />
                     <div className="flex gap-1 mb-4" aria-hidden="true">
@@ -668,20 +668,20 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Amazing food. My wife and I were blown away by the Filet and Lobster tail. 10/10 food. The ginger sauce and appetizer soup were terrific as well.&rdquo;
+                      &ldquo;Best steak and entertainment in town. My kids love every bit! They have great steak hibachi and the chefs are always entertaining. I&apos;d say quality is better than Benihana.&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#FF1A1A]/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-[#FF1A1A]" viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326z"/></svg>
+                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                       </div>
                       <div>
-                        <p className="font-semibold text-charcoal">Yelp Review</p>
-                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
+                        <p className="font-semibold text-charcoal">Tatiana Maskaron</p>
+                        <p className="text-xs text-charcoal/70">Google Review</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Testimonial 3 - Verified Google Review */}
+                  {/* Testimonial 3 - Iyali Ruiz (8.5/10) - Sushi + hibachi + drinks + date night */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                     <div className="flex gap-1 mb-4" aria-hidden="true">
@@ -692,20 +692,20 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;From the sushi to the shrimp to the steak... it was perfection! Service is fantastic and the cook was fun, approachable, and charismatic.&rdquo;
+                      &ldquo;Best sushi across many states! The drinks are some of the best I&apos;ve had too. And don&apos;t even get me started on the hibachi teriyaki steak—it&apos;s delicious! This sushi place is a must have!&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                       </div>
                       <div>
-                        <p className="font-semibold text-charcoal">Google Review</p>
-                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
+                        <p className="font-semibold text-charcoal">Iyali Ruiz</p>
+                        <p className="text-xs text-charcoal/70">Google Review</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Testimonial 4 - Verified Yelp Review */}
+                  {/* Testimonial 4 - Chuck (8/10) - Punchy, covers all bases */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} delay={6} colorFrom="#C9A227" colorTo="#C1121F" />
                     <div className="flex gap-1 mb-4" aria-hidden="true">
@@ -716,20 +716,20 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;It&apos;s truly the perfect place for kids, birthdays, and entertaining the whole fam! We&apos;ve been coming here for over 20 years and will return soon.&rdquo;
+                      &ldquo;Hands down the best Hibachi in town. Super friendly staff, great performance from chefs, and ingredients used are top notch super fresh. I had a great time here, would def come back again. Love it!&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#FF1A1A]/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-[#FF1A1A]" viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326z"/></svg>
+                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                       </div>
                       <div>
-                        <p className="font-semibold text-charcoal">Yelp Review</p>
-                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
+                        <p className="font-semibold text-charcoal">Chuck</p>
+                        <p className="text-xs text-charcoal/70">Google Review</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Testimonial 5 - Verified Grubhub Review */}
+                  {/* Testimonial 5 - Jailen R (8/10) - Favorite restaurant of all time + specific rolls */}
                   <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
                     <BorderBeam size={150} duration={10} delay={8} colorFrom="#C1121F" colorTo="#C9A227" />
                     <div className="flex gap-1 mb-4" aria-hidden="true">
@@ -740,15 +740,15 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;I actually prefer this place over Benihana. Best steak I&apos;ve ever had. 10/10... food touched my soul. The portions are generous too!&rdquo;
+                      &ldquo;Literally my favorite sushi place, I would go to say favorite restaurant in general, of all time! Highly recommend the Summer Bliss Breeze and the Samurai Roll.&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
                       </div>
                       <div>
-                        <p className="font-semibold text-charcoal">Grubhub Review</p>
-                        <p className="text-xs text-charcoal/70">Verified • Lewisville</p>
+                        <p className="font-semibold text-charcoal">Jailen R</p>
+                        <p className="text-xs text-charcoal/70">Google Review</p>
                       </div>
                     </div>
                   </div>
