@@ -121,11 +121,11 @@ export default function AboutPage() {
               Family-Owned Since 1988
             </p>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
-              Our Story
+              Where Every Guest Becomes Family
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-              Welcome to the table. For over 37 years, we&apos;ve been creating
-              unforgettable moments for families across North Texas.
+              Since 1988, Jinbeh has been more than a restaurant—it&apos;s where families gather,
+              celebrations ignite, and every meal comes with a show worth remembering.
             </p>
           </div>
         </section>
@@ -137,28 +137,25 @@ export default function AboutPage() {
               {/* Text Content */}
               <div>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
-                  A Legacy of Flavor & Hospitality
+                  Our Family's Journey to Your Table
                 </h2>
                 <div className="space-y-6 text-charcoal/80 leading-relaxed">
                   <p>
-                    In 1988, our family opened the doors to Jinbeh with a simple
-                    mission: to share the joy of authentic Japanese cuisine with
-                    our North Texas neighbors. What started as a small hibachi
-                    restaurant has grown into a beloved tradition for generations
-                    of families across the DFW metroplex.
+                    When Ben Matsuda opened Jinbeh in 1988, he didn&apos;t just open a restaurant—he
+                    brought a vision home. He wanted to share the warmth of authentic Japanese hospitality,
+                    the artistry of teppanyaki, and the precision of sushi craftsmanship with his North Texas
+                    community. What began in a small space has blossomed into a multi-generational tradition that families
+                    keep coming back to after 20, 25, even 30+ years.
                   </p>
                   <p>
-                    The name &quot;Jinbeh&quot; reflects our commitment to warmth and
-                    hospitality. From the moment you walk through our doors, you
-                    become part of our family. Our chefs don&apos;t just prepare food
-                    – they create experiences, turning every meal into dinner and
-                    a show.
+                    Unlike the impersonal corporate chains out there, Jinbeh feels different from your first visit.
+                    You&apos;re not just ordering dinner—you&apos;re joining a celebration. Our chefs become entertainers, your table becomes a stage,
+                    and the onion volcano? That&apos;s just the beginning of the show. Yes, the food is exceptional. Yes, our sushi is fresh and our steaks are premium.
+                    But what truly sets us apart is how we make you feel: welcomed, celebrated, and part of something special.
                   </p>
                   <p>
-                    Today, with locations in both Frisco and Lewisville, we
-                    continue the tradition our family started over three decades
-                    ago. Fresh ingredients, skilled craftsmanship, and genuine
-                    hospitality remain at the heart of everything we do.
+                    Today, with locations in Frisco and Lewisville, we&apos;re still family-owned, still committed to those original values,
+                    and still determined to create the kind of dining experience that lingers long after the last bite. That&apos;s the Jinbeh difference.
                   </p>
                 </div>
 
@@ -284,10 +281,10 @@ export default function AboutPage() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                What Makes Jinbeh Special
+                Why Guests Keep Coming Back
               </h2>
               <p className="text-lg text-charcoal/70">
-                Every detail matters when it comes to creating memorable dining experiences.
+                We&apos;re not a chain. We&apos;re your gracious hosts. Here&apos;s what makes every visit special.
               </p>
             </div>
 
@@ -300,10 +297,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
-                  Quality Ingredients
+                  Premium, Fresh Ingredients
                 </h3>
                 <p className="text-charcoal/70 text-sm">
-                  We source the freshest fish and premium ingredients daily to ensure every dish meets our high standards.
+                  We source the finest, freshest fish daily. No shortcuts. When you taste the difference, you understand why guests prefer us over chain restaurants.
                 </p>
               </div>
 
@@ -315,10 +312,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
-                  Master Chefs
+                  Spirited Hibachi Shows
                 </h3>
                 <p className="text-charcoal/70 text-sm">
-                  Our hibachi chefs bring years of experience and showmanship to every performance at your table.
+                  Skilled chefs bring artistry and entertainment to every table. The onion volcano, the flying shrimp, the flames—it&apos;s dinner and a show, every time.
                 </p>
               </div>
 
@@ -330,10 +327,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
-                  Family Owned
+                  Warm, Genuine Hospitality
                 </h3>
                 <p className="text-charcoal/70 text-sm">
-                  From our family to yours, we treat every guest with the warmth and care they deserve.
+                  Family-owned and operated. You won&apos;t feel like a transaction—you&apos;ll feel like a guest in our home. That&apos;s the difference authenticity makes.
                 </p>
               </div>
 
@@ -345,10 +342,10 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
-                  Celebrations
+                  Birthdays & Special Moments
                 </h3>
                 <p className="text-charcoal/70 text-sm">
-                  Birthdays, anniversaries, graduations – we make every occasion unforgettable.
+                  Birthdays, anniversaries, graduations, proposals—Jinbeh is where celebrations come alive. We make every milestone unforgettable.
                 </p>
               </div>
             </div>
@@ -418,11 +415,11 @@ export default function AboutPage() {
         <section className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Ready to Experience Jinbeh?
+              Join the Jinbeh Family
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
-              Join us at either location for a meal you won&apos;t forget.
-              It&apos;s a celebration waiting to happen!
+              Experience the warmth, the spirited shows, and the authentic hospitality that guests have been coming back for over 20 years.
+              A warm welcome and a show with every meal—that&apos;s our promise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

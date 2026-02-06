@@ -20,33 +20,33 @@ interface ExperienceStep {
 const experienceSteps: ExperienceStep[] = [
   {
     step: 1,
-    title: 'The Birthday Your Kid Will Remember Forever',
-    hook: 'Fire, precision, and pure entertainment',
-    description: 'Picture this: Your child\'s eyes light up as flames erupt from the grill. The chef tosses a shrimp toward them—they catch it! Everyone at the table cheers. Your master hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair with the famous onion volcano. This is where dinner becomes an unforgettable experience. Over 1,247 families chose Jinbeh for their celebration last year.',
+    title: 'The Show That Starts Your Celebration',
+    hook: 'Fire, laughter, and a standing ovation—every single night',
+    description: 'Your hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair: the famous onion volcano erupts, shrimp fly through the air, and your whole table erupts in laughter. This isn\'t dinner at a restaurant. It\'s dinner and a show that families talk about for weeks. As one guest put it: "The chefs are very entertaining! They always put on an excellent show!"',
     image: '/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-003-orig-IMG_1845-1200w.webp',
     imageAlt: 'Jinbeh hibachi chef performing dramatic flame show at teppanyaki grill in Lewisville TX restaurant'
   },
   {
     step: 2,
-    title: 'The Sushi Your Family Will Talk About for Weeks',
-    hook: 'Masterful craftsmanship in every bite',
-    description: 'Our master sushi chefs have been perfecting their craft since 1988. Every roll is a work of art, every bite an experience. Hand-selected pristine fish daily, transformed into edible art. From classic nigiri to stunning specialty rolls, every piece reflects traditional Japanese technique with creative modern touches. This isn\'t grocery store sushi—this is why families drive 30 minutes to Jinbeh.',
+    title: 'Sushi Crafted by Masters, Not Machines',
+    hook: 'Hand-selected fish. Traditional technique. Modern artistry.',
+    description: 'Since 1988, our sushi chefs have perfected the balance of tradition and creativity. Every roll is hand-crafted with pristine fish, precise knife work, and an artist\'s eye for presentation. From classic nigiri to signature specialty rolls, each piece reflects decades of mastery. This isn\'t chain restaurant sushi—this is why sushi lovers drive from across DFW to Jinbeh. As one regular said: "Everything is so yummy and so fresh!"',
     image: '/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp',
     imageAlt: 'Fresh sushi and sashimi presentation at Jinbeh Japanese Restaurant Lewisville TX'
   },
   {
     step: 3,
-    title: 'Celebrations That Feel Like Coming Home',
-    hook: 'Where special moments become lasting memories',
-    description: 'Whether it\'s your daughter\'s 8th birthday or your 25th anniversary, we treat every celebration like it matters. Our chefs personalize the show, the table sings along, and you leave with memories that last a lifetime. Over 1,200 families chose Jinbeh last year—because ordinary restaurants don\'t create memories like this.',
+    title: 'Where Birthdays Become Unforgettable',
+    hook: 'The birthday spot families come back to, year after year',
+    description: 'Whether it\'s your daughter\'s 8th birthday, your parents\' anniversary, or a graduation dinner, Jinbeh makes every celebration feel special. Our chefs personalize the show, the table sings along, and the birthday guest goes home with memories (and a full belly). It\'s why families have been celebrating here for 37 years. In their words: "It\'s truly the perfect place for kids, birthdays, and entertaining the whole fam!"',
     image: '/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-1200w.webp',
     imageAlt: 'Jinbeh hibachi chef creating artistic heart-shaped fried rice at Lewisville TX location'
   },
   {
     step: 4,
-    title: 'Quality You Can See, Taste, and Feel',
-    hook: 'Premium ingredients, perfectly prepared',
-    description: 'Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh vegetables grilled tableside. Every plate is beautifully presented with care and precision. We source the finest ingredients because you taste the difference. This is why families drive across DFW to dine at Jinbeh.',
+    title: 'Premium Quality, Generous Portions',
+    hook: 'Come hungry. Leave with leftovers.',
+    description: 'Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh vegetables grilled tableside with butter and garlic. Every plate is generous—most guests leave with a to-go box. We source the finest ingredients because after 37 years, we know: you taste the difference. And at Jinbeh, the food always delivers. As one guest raved: "Best steak I\'ve ever had. 10/10... food touched my soul."',
     image: '/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp',
     imageAlt: 'Beautifully plated hibachi dinner with shrimp, steak, fried rice and vegetables at Jinbeh Lewisville TX'
   }
@@ -72,12 +72,12 @@ export default function JinbehExperience() {
             WHAT MAKES JINBEH DIFFERENT
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
-            More Than a Meal—
+            Not Just Dinner—
             <br />
-            <span className="text-soft-gold">An Experience</span>
+            <span className="text-soft-gold">A Memory</span>
           </h2>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Picture this: You walk in as strangers around a table. You leave with full bellies, huge smiles, and memories you'll talk about for years.
+            Walk in as strangers sharing a table. Leave as friends sharing a story. That's the Jinbeh difference—and it's been happening here since 1988.
           </p>
         </div>
 
@@ -172,10 +172,10 @@ export default function JinbehExperience() {
         {/* CTA with stronger visual hierarchy */}
         <div className="text-center bg-gradient-to-br from-deep-indigo to-charcoal rounded-3xl p-10 md:p-12 border-2 border-soft-gold/20 shadow-2xl">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Ready to Experience It Yourself?
+            See What the Buzz Is About
           </h3>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Don't just take our word for it. See why families across DFW choose Jinbeh for their most memorable meals.
+            Over 1,000 five-star reviews. 37 years of tradition. Two locations in DFW. Your table is waiting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
