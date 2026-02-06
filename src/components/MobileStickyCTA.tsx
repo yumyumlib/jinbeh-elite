@@ -53,7 +53,7 @@ export default function MobileStickyCTA({
             <div className="h-4 bg-gradient-to-t from-charcoal to-transparent" />
 
             {/* Button container */}
-            <div className="bg-charcoal py-4 px-6 flex gap-3 shadow-lg shadow-black/20">
+            <div className="bg-charcoal py-4 px-6 pb-[max(1rem,env(safe-area-inset-bottom))] flex gap-3 shadow-lg shadow-black/20">
                 {/* Reserve Button - Primary */}
                 <Link
                     href={reserveHref}

@@ -23,7 +23,17 @@ interface NavItem {
 export default function Header({ location }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Track scroll position for enhanced glass effect
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 20);
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -106,33 +116,39 @@ export default function Header({ location }: HeaderProps) {
       href: "/blog",
       dropdown: [
         { label: "All Articles", href: "/blog", description: "Latest from Jinbeh" },
-        { label: "🏆 Best Of", href: "/blog?category=best-of", description: "Top picks & recommendations" },
-        { label: "🎉 Celebrations", href: "/blog?category=celebrations", description: "Party ideas & guides" },
-        { label: "🍣 Japanese Cuisine", href: "/blog?category=cuisine", description: "Sushi, hibachi & more" },
-        { label: "📍 Local Guides", href: "/blog?category=local-guides", description: "Frisco, Lewisville & DFW" },
-        { label: "🍶 Beverages", href: "/blog?category=beverages", description: "Sake, whiskey & cocktails" },
-        { label: "💚 Health & Nutrition", href: "/blog?category=health", description: "Calorie guides & tips" },
+        { label: "Best Of", href: "/blog?category=best-of", description: "Top picks & recommendations" },
+        { label: "Celebrations", href: "/blog?category=celebrations", description: "Party ideas & guides" },
+        { label: "Japanese Cuisine", href: "/blog?category=cuisine", description: "Sushi, hibachi & more" },
+        { label: "Local Guides", href: "/blog?category=local-guides", description: "Frisco, Lewisville & DFW" },
+        { label: "Beverages", href: "/blog?category=beverages", description: "Sake, whiskey & cocktails" },
+        { label: "Health & Nutrition", href: "/blog?category=health", description: "Calorie guides & tips" },
       ],
     },
     { label: "About", href: "/about" },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-warm-ivory-dark shadow-sm">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-charcoal/50 backdrop-blur-xl shadow-lg border-b border-white/10"
+          : "bg-charcoal/25 backdrop-blur-lg border-b border-white/5"
+      }`}
+    >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
               src="/images/logos/JinbehLogo.png"
               alt="Jinbeh Japanese Restaurant"
-              width={160}
-              height={70}
-              className="h-12 w-auto transition-transform group-hover:scale-105"
+              width={140}
+              height={60}
+              className="h-10 w-auto transition-transform group-hover:scale-105 drop-shadow-lg"
               priority
             />
             {location && (
-              <span className="hidden sm:block ml-3 text-sm text-cedar-brown capitalize font-medium border-l border-cedar-brown/30 pl-3">
+              <span className="hidden sm:block ml-3 text-sm text-white/80 capitalize font-medium border-l border-white/30 pl-3 [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]">
                 {location}
               </span>
             )}
@@ -148,10 +164,10 @@ export default function Header({ location }: HeaderProps) {
                       onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
                       aria-expanded={activeDropdown === item.label}
                       aria-haspopup="menu"
-                      className={`flex items-center gap-1 px-4 py-2 rounded-lg hover:text-accent-red hover:bg-warm-ivory/50 transition-all font-medium ${
-                        activeDropdown === item.label ? "text-accent-red bg-warm-ivory/50" :
-                        (item.label === "Locations" && location) ? "text-accent-red" :
-                        "text-charcoal"
+                      className={`flex items-center gap-1 px-3 py-1.5 rounded-lg hover:text-soft-gold hover:bg-white/10 transition-all font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] ${
+                        activeDropdown === item.label ? "text-soft-gold bg-white/10" :
+                        (item.label === "Locations" && location) ? "text-soft-gold" :
+                        "text-white"
                       }`}
                     >
                       {item.label}
@@ -213,7 +229,7 @@ export default function Header({ location }: HeaderProps) {
                 ) : (
                   <Link
                     href={item.href}
-                    className="px-4 py-2 rounded-lg text-charcoal hover:text-accent-red hover:bg-warm-ivory/50 transition-all font-medium"
+                    className="px-3 py-1.5 rounded-lg text-white hover:text-soft-gold hover:bg-white/10 transition-all font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
                   >
                     {item.label}
                   </Link>
@@ -228,7 +244,7 @@ export default function Header({ location }: HeaderProps) {
             {location ? (
               <a
                 href={location === "lewisville" ? "tel:2144882224" : "tel:2146191200"}
-                className="inline-flex items-center gap-2 px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
+                className="inline-flex items-center gap-2 px-3 py-1.5 text-white hover:text-soft-gold transition-colors font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -239,7 +255,7 @@ export default function Header({ location }: HeaderProps) {
               <div className="relative">
                 <button
                   onClick={() => setActiveDropdown(activeDropdown === "phone" ? null : "phone")}
-                  className="inline-flex items-center gap-2 px-4 py-2 text-charcoal hover:text-accent-red transition-colors font-medium"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 text-white hover:text-soft-gold transition-colors font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -277,7 +293,7 @@ export default function Header({ location }: HeaderProps) {
 
             <Link
               href={`/${loc}#reserve`}
-              className="btn btn-primary btn-shimmer"
+              className="btn btn-primary btn-shimmer text-sm py-2 px-5"
             >
               Reserve a Table
             </Link>
@@ -285,12 +301,12 @@ export default function Header({ location }: HeaderProps) {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-lg hover:bg-warm-ivory transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             <svg
-              className="w-6 h-6 text-charcoal"
+              className="w-6 h-6 text-white drop-shadow-md"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -316,16 +332,16 @@ export default function Header({ location }: HeaderProps) {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-6 border-t border-warm-ivory-dark animate-in fade-in slide-in-from-top-4 duration-300">
+          <div className="lg:hidden py-6 border-t border-white/10 animate-in fade-in slide-in-from-top-4 duration-300">
             <nav className="flex flex-col gap-2">
               {/* Location Switcher Mobile */}
-              <div className="flex items-center gap-2 px-4 py-3 bg-warm-ivory rounded-lg mb-4">
-                <span className="text-sm text-charcoal/80 font-medium">Location:</span>
+              <div className="flex items-center gap-2 px-4 py-3 bg-white/10 rounded-lg mb-4">
+                <span className="text-sm text-white/80 font-medium">Location:</span>
                 <Link
                   href="/frisco"
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${location === "frisco"
-                      ? "bg-deep-indigo text-white shadow-md"
-                      : "bg-white text-charcoal hover:bg-warm-ivory-dark"
+                      ? "bg-soft-gold text-charcoal shadow-md"
+                      : "bg-white/20 text-white hover:bg-white/30"
                     }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -334,8 +350,8 @@ export default function Header({ location }: HeaderProps) {
                 <Link
                   href="/lewisville"
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${location === "lewisville"
-                      ? "bg-deep-indigo text-white shadow-md"
-                      : "bg-white text-charcoal hover:bg-warm-ivory-dark"
+                      ? "bg-soft-gold text-charcoal shadow-md"
+                      : "bg-white/20 text-white hover:bg-white/30"
                     }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -347,7 +363,7 @@ export default function Header({ location }: HeaderProps) {
                 <div key={item.label}>
                   {item.dropdown ? (
                     <div className="mb-2">
-                      <span className="px-4 py-2 text-sm font-semibold text-charcoal/70 uppercase tracking-wider">
+                      <span className="px-4 py-2 text-sm font-semibold text-white/70 uppercase tracking-wider">
                         {item.label}
                       </span>
                       <div className="mt-1 space-y-1">
@@ -355,7 +371,7 @@ export default function Header({ location }: HeaderProps) {
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className="block px-4 py-3 text-charcoal hover:text-accent-red hover:bg-warm-ivory/50 rounded-lg transition-colors font-medium"
+                            className="block px-4 py-3 text-white hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             {subItem.label}
@@ -366,7 +382,7 @@ export default function Header({ location }: HeaderProps) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-4 py-3 text-charcoal hover:text-accent-red hover:bg-warm-ivory/50 rounded-lg transition-colors font-medium"
+                      className="block px-4 py-3 text-white hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -380,7 +396,7 @@ export default function Header({ location }: HeaderProps) {
                 {location ? (
                   <a
                     href={location === "lewisville" ? "tel:2144882224" : "tel:2146191200"}
-                    className="flex items-center justify-center gap-2 w-full py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all"
+                    className="flex items-center justify-center gap-2 w-full py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -392,7 +408,7 @@ export default function Header({ location }: HeaderProps) {
                   <div className="flex gap-2">
                     <a
                       href="tel:2146191200"
-                      className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all text-sm"
+                      className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all text-sm"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       <svg className="w-4 h-4 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -402,7 +418,7 @@ export default function Header({ location }: HeaderProps) {
                     </a>
                     <a
                       href="tel:2144882224"
-                      className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-charcoal text-charcoal rounded-xl font-semibold hover:bg-charcoal hover:text-white transition-all text-sm"
+                      className="flex-1 flex flex-col items-center justify-center py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all text-sm"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       <svg className="w-4 h-4 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

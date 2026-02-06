@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NumberTicker from "@/components/ui/number-ticker";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -108,10 +109,6 @@ const faqSchema = {
 };
 
 export default function HomePage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
-  const [locationsOpen, setLocationsOpen] = useState(false);
-  const [celebrationsOpen, setCelebrationsOpen] = useState(false);
   const [reservationCTA, setReservationCTA] = useState("Reserve for This Weekend");
 
   // Update reservation CTA based on day of week (client-side only)
@@ -121,211 +118,10 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Sticky Navigation Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
-        <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <Image
-              src="/images/logos/jinbehlogo-black.svg"
-              alt="Jinbeh Japanese Restaurant"
-              width={44}
-              height={44}
-              className="transition-transform group-hover:scale-105"
-              priority
-            />
-            <span className="font-heading text-xl font-bold text-charcoal tracking-wide hidden sm:inline">
-              JINBEH
-            </span>
-          </Link>
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/frisco" className="text-charcoal font-medium hover:text-accent-red transition-colors">
-              Frisco
-            </Link>
-            <Link href="/lewisville" className="text-charcoal font-medium hover:text-accent-red transition-colors">
-              Lewisville
-            </Link>
-            <Link href="/menu" className="text-charcoal font-medium hover:text-accent-red transition-colors">
-              Menu
-            </Link>
+      {/* Global Navigation Header */}
+      <Header />
 
-            {/* Blog Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setBlogDropdownOpen(!blogDropdownOpen)}
-                className="text-charcoal font-medium hover:text-accent-red transition-colors flex items-center gap-1"
-              >
-                Blog
-                <svg className={`w-4 h-4 transition-transform ${blogDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {blogDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-stone-200 py-3 z-50">
-                  <Link href="/blog" className="flex items-center gap-3 px-4 py-2.5 text-charcoal hover:bg-warm-ivory transition-colors font-semibold border-b border-stone-100 mb-2">
-                    <span className="text-lg">📖</span>
-                    <span>All Articles</span>
-                  </Link>
-                  <div className="px-2">
-                    <Link href="/blog?category=best-of" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🏆</span>
-                      <div>
-                        <span className="font-medium">Best Of</span>
-                        <p className="text-xs text-charcoal/80">Top picks & recommendations</p>
-                      </div>
-                    </Link>
-                    <Link href="/blog?category=cuisine" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🍣</span>
-                      <div>
-                        <span className="font-medium">Japanese Cuisine</span>
-                        <p className="text-xs text-charcoal/80">Sushi, hibachi & more</p>
-                      </div>
-                    </Link>
-                    <Link href="/blog?category=celebrations" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🎉</span>
-                      <div>
-                        <span className="font-medium">Celebrations</span>
-                        <p className="text-xs text-charcoal/80">Party ideas & guides</p>
-                      </div>
-                    </Link>
-                    <Link href="/blog?category=local-guides" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">📍</span>
-                      <div>
-                        <span className="font-medium">Local Guides</span>
-                        <p className="text-xs text-charcoal/80">Frisco, Lewisville & DFW</p>
-                      </div>
-                    </Link>
-                    <Link href="/blog?category=beverages" className="flex items-center gap-3 px-3 py-2.5 text-charcoal/90 hover:bg-accent-red/10 hover:text-accent-red transition-colors rounded-lg group">
-                      <span className="text-xl group-hover:scale-110 transition-transform">🍶</span>
-                      <div>
-                        <span className="font-medium">Beverages</span>
-                        <p className="text-xs text-charcoal/80">Sake, whiskey & cocktails</p>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link href="/about" className="text-charcoal font-medium hover:text-accent-red transition-colors">
-              About
-            </Link>
-            <div className="flex items-center gap-3">
-              <a
-                href="tel:2146191200"
-                className="flex items-center gap-2 text-charcoal font-medium hover:text-accent-red transition-colors"
-                title="Call Frisco"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span className="hidden lg:inline">Call</span>
-              </a>
-              <OpenTableWidget
-                restaurantId={locationsData.locations.frisco.reservation.rid}
-                location="frisco"
-                buttonText="Reserve Now"
-                variant="primary"
-                className="bg-accent-red text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-red-hover transition-colors shadow-md"
-              />
-            </div>
-          </div>
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-charcoal"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </nav>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-stone-200 py-4 px-6">
-            <div className="flex flex-col gap-4">
-              {/* Locations Dropdown */}
-              <div>
-                <button
-                  onClick={() => setLocationsOpen(!locationsOpen)}
-                  className="w-full text-left font-medium flex items-center justify-between text-charcoal py-2"
-                  aria-expanded={locationsOpen}
-                >
-                  Locations
-                  <svg className={`w-4 h-4 transition-transform ${locationsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {locationsOpen && (
-                  <div className="pl-4 mt-2 flex flex-col gap-2 text-sm">
-                    <Link href="/frisco" className="text-charcoal/70 py-2">Frisco</Link>
-                    <Link href="/lewisville" className="text-charcoal/70 py-2">Lewisville</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Celebrations Dropdown */}
-              <div>
-                <button
-                  onClick={() => setCelebrationsOpen(!celebrationsOpen)}
-                  className="w-full text-left font-medium flex items-center justify-between text-charcoal py-2"
-                  aria-expanded={celebrationsOpen}
-                >
-                  Celebrations
-                  <svg className={`w-4 h-4 transition-transform ${celebrationsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {celebrationsOpen && (
-                  <div className="pl-4 mt-2 flex flex-col gap-2 text-sm">
-                    <Link href="/celebrations/birthday" className="text-charcoal/70 py-2">Birthdays</Link>
-                    <Link href="/celebrations/anniversary" className="text-charcoal/70 py-2">Anniversaries</Link>
-                    <Link href="/celebrations/group-dining" className="text-charcoal/70 py-2">Group Dining</Link>
-                    <Link href="/celebrations/private-events" className="text-charcoal/70 py-2">Private Events</Link>
-                  </div>
-                )}
-              </div>
-
-              <Link href="/menu" className="text-charcoal font-medium py-2">Menu</Link>
-              <Link href="/blog" className="text-charcoal font-medium py-2">Blog</Link>
-              <Link href="/about" className="text-charcoal font-medium py-2">About</Link>
-              <div className="border-t border-stone-200 pt-4 mt-2">
-                <p className="text-sm text-charcoal/80 mb-3 font-medium">Call to Reserve:</p>
-                <div className="grid grid-cols-2 gap-3">
-                  <a
-                    href="tel:2146191200"
-                    className="flex items-center justify-center gap-2 bg-charcoal text-white px-4 py-3 rounded-lg font-semibold"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Frisco
-                  </a>
-                  <a
-                    href="tel:2144882224"
-                    className="flex items-center justify-center gap-2 bg-charcoal text-white px-4 py-3 rounded-lg font-semibold"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Lewisville
-                  </a>
-                </div>
-              </div>
-              <OpenTableWidget
-                restaurantId={locationsData.locations.frisco.reservation.rid}
-                location="frisco"
-                buttonText="Reserve Online"
-                variant="primary"
-                className="bg-accent-red text-white px-4 py-3 rounded-lg text-center font-semibold mt-2 w-full"
-              />
-            </div>
-          </div>
-        )}
-      </header>
-
-      <main id="main-content" className="min-h-screen">
+      <main id="main-content" className="min-h-screen -mt-14">
         {/* Organization Schema */}
         <script
           type="application/ld+json"
@@ -944,488 +740,227 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Good food and good prices! Wonderful customer service and food all around 10/10.&rdquo;
+                      &ldquo;Absolutely fantastic hibachi experience. The chef made the whole evening entertaining with amazing food quality.&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#F63440]/10 flex items-center justify-center text-[#F63440] font-bold text-sm">GH</div>
-                      <div>
-                        <p className="font-semibold text-charcoal">K. Kristin</p>
-                        <p className="text-xs text-charcoal/70">Grubhub • Nov 2024</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 6 - Verified Yelp Review - Beats All Competitors */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={10} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Best hibachi! I&apos;ve tried Kobe&apos;s, Japon, Benihana, and Shogun... Jinbeh by far beats them all in quality, atmosphere, and cleanliness.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#FF1A1A]/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-[#FF1A1A]" viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326z"/></svg>
+                      <div className="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
                       </div>
                       <div>
-                        <p className="font-semibold text-charcoal">Yelp Review</p>
-                        <p className="text-xs text-charcoal/70">Verified • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 7 - Verified Google Local Guide Review */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={12} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;This has become my favorite hibachi place! The chicken fried rice with ginger sauce is so delicious – enough for two meals. The soup is fire. Always great service.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">MrMl23</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 8 - Verified Google Local Guide - Favorite Restaurant */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={14} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Literally my favorite restaurant of all time! Alex and Kevin are amazing. Highly recommend the Summer Bliss Breeze and Samurai Roll. Nate and Christine are amazing servers!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Jailen R</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 9 - Verified Google Local Guide - Best in Town */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={16} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Best Japanese food in town! Love their calamari and steak fried rice. The Hot Mama sushi roll was sooooo good! Amazing service and super cute atmosphere.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Tania T</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 10 - Verified Google Local Guide - Best Hibachi */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={18} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Hands down the best Hibachi in town! Super friendly staff, great performance from chefs, and ingredients are top notch super fresh. Would def come back again!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Chuck</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 11 - Verified Google Review - Date Night */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={20} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;All I have to say is wow! After years of coming here, tonight was exceptional. The vibes, the music, friendly bartender – Friday date night was lovely. Thank you Jinbeh!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Brittany P</p>
-                        <p className="text-xs text-charcoal/70">Google Review • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 12 - Verified Google Review - 17 Year Legacy */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={22} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;I&apos;ve gone here for my birthday every year since I was 7. I&apos;m 24 now and just celebrated my 24th here. Truly my favorite place to be!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Alaina T</p>
-                        <p className="text-xs text-charcoal/70">Google Review • 17 Years of Birthdays</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 13 - Better than Benihana - Family Focused */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={24} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Best steak and entertainment in town! My kids love every bit. Great hibachi, chefs are always entertaining. Quality is better than Benihana!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Tatiana M</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • 76 reviews</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 14 - Best in North Dallas */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={26} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Great atmosphere, authentic food – simply the best Japanese food in North Dallas. Highly recommend the Spider Roll and Steak Fried Rice!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Mahfam M</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 15 - Found My Sushi Spot */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={28} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;New to Texas and been searching for a good sushi spot – I finally found it! Delicious food, great atmosphere, and the owner was super nice.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Bryant H</p>
-                        <p className="text-xs text-charcoal/70">Google Review • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 16 - Both Locations + Full Experience */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={30} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Been to Lewisville, now tried Frisco – both amazing! No wait, friendly servers, and the hibachi chef was funny with fun tricks. Plentiful portions!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">LaTosha S</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • 1,127 reviews</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 17 - Better Teppanyaki than Benihana */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={32} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Hard to find great teppanyaki that isn&apos;t Benihana – this is one of the great ones! Chefs are charismatic and fun to watch. Fresh, well-priced food.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Daniel B</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Frisco</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 18 - Kid-Friendly */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={34} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;So fun with the best hibachi food! Chefs make the show entertaining for kids (and adults too)! Quick seating even without a reservation.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Tori R</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Kid-Friendly</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 19 - Best Japanese Steakhouse in Texas */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={36} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;One of the better Japanese Steakhouses I&apos;ve been to since living in Texas! The host made us feel so welcome. Attention to detail is amazing.&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Robin M</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • 145 reviews</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 20 - Best Across Many States */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={38} colorFrom="#C9A227" colorTo="#C1121F" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Best sushi across many states! The drinks are some of the best I&apos;ve had. The hibachi teriyaki steak is delicious. This sushi place is a must!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Iyali R</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • 51 reviews</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Testimonial 21 - Wedding Anniversary */}
-                  <div className="relative testimonial-card p-8 bg-warm-ivory rounded-2xl border border-stone-200 w-[350px] mx-4 group overflow-hidden">
-                    <BorderBeam size={150} duration={10} delay={40} colorFrom="#C1121F" colorTo="#C9A227" />
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Best sushi EVER! We live 2 hours away but always come back for our wedding anniversary. The waitress was so sweet – always feel welcomed!&rdquo;
-                    </blockquote>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-accent-red" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-charcoal">Samantha M</p>
-                        <p className="text-xs text-charcoal/70">Google Local Guide • Anniversary</p>
+                        <p className="font-semibold text-charcoal">Grubhub Review</p>
+                        <p className="text-xs text-charcoal/70">Verified • Lewisville</p>
                       </div>
                     </div>
                   </div>
                 </Marquee>
               </div>
-
             </div>
           </ScrollReveal>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-24 cta-gradient text-white relative overflow-hidden">
-          {/* Warm Japanese Seigaiha Wave Pattern Background */}
-          <div
-            className="absolute inset-0 opacity-[0.06]"
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'%3E%3Cpath d='M0 25 Q25 0 50 25 Q75 50 100 25 L100 50 L0 50 Z' fill='%23C9A227' fill-opacity='0.5'/%3E%3Cpath d='M0 25 Q25 0 50 25 Q75 50 100 25' stroke='%23F6F1E8' stroke-width='1' fill='none' stroke-opacity='0.3'/%3E%3C/svg%3E")`,
-              backgroundSize: '100px 50px'
-            }}
-          />
+        {/* Final CTA Section - Action Oriented Closing */}
+        <section className="relative py-24 md:py-32 bg-gradient-to-br from-charcoal via-cedar-brown/20 to-charcoal text-white overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-soft-gold rounded-full mix-blend-multiply filter blur-3xl" />
+            <div className="absolute bottom-10 right-10 w-72 h-72 bg-accent-red rounded-full mix-blend-multiply filter blur-3xl" />
+          </div>
 
-          {/* Soft warm glow decorations */}
-          <div className="absolute top-0 left-0 w-64 h-64 bg-soft-gold/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-red/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-soft-gold/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
+            <ScrollReveal>
+              <div className="max-w-3xl mx-auto text-center">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 italic">
+                  Ready for Your Experience?
+                </h2>
+                <p className="text-xl md:text-2xl text-warm-ivory/90 mb-12 leading-relaxed">
+                  Join thousands of families who have made memories at Jinbeh. Whether it&apos;s a casual dinner or a special celebration, our hibachi chefs are ready to dazzle you.
+                </p>
 
-          <ScrollReveal>
-            <div className="container mx-auto px-6 text-center relative z-10">
-              <span className="inline-block w-16 h-1 bg-gradient-to-r from-white/40 to-soft-gold rounded-full mb-8" />
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 italic text-white drop-shadow-lg">
-                Ready for an Experience?
-              </h2>
-              <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
-                Join us at either location for a dining experience that will create
-                memories to last a lifetime.
-              </p>
-
-              {/* Two Location Cards */}
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {/* Frisco */}
-                <div className="cta-card p-8">
-                  <h3 className="text-2xl font-heading font-bold mb-2">Frisco</h3>
-                  <p className="text-white/70 text-sm mb-6">Near Stonebriar Centre</p>
-                  <div className="flex flex-col gap-4">
-                    <OpenTableWidget
-                      restaurantId={locationsData.locations.frisco.reservation.rid}
-                      location="frisco"
-                      buttonText="Reserve Online"
-                      variant="primary"
-                      className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
-                    />
-                    <a
-                      href="tel:2146191200"
-                      className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                      Call (214) 619-1200
-                    </a>
-                  </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <OpenTableWidget
+                    restaurantId={locationsData.locations.frisco.reservation.rid}
+                    location="frisco"
+                    buttonText={reservationCTA}
+                    variant="primary"
+                    className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-2xl hover:scale-105"
+                  />
+                  <a
+                    href="tel:2146191200"
+                    className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl font-semibold transition-all border border-white/40 hover:border-white/60"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Call Frisco
+                  </a>
                 </div>
 
-                {/* Lewisville */}
-                <div className="cta-card p-8">
-                  <h3 className="text-2xl font-heading font-bold mb-2">Lewisville</h3>
-                  <p className="text-white/70 text-sm mb-6">Easy access from I-35E</p>
-                  <div className="flex flex-col gap-4">
-                    <OpenTableWidget
-                      restaurantId={locationsData.locations.lewisville.reservation.rid}
-                      location="lewisville"
-                      buttonText="Reserve Online"
-                      variant="primary"
-                      className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
-                    />
-                    <a
-                      href="tel:2144882224"
-                      className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                      Call (214) 488-2224
-                    </a>
+                <div className="mt-12 pt-12 border-t border-white/20">
+                  <p className="text-sm text-warm-ivory/70 mb-4">
+                    Can&apos;t decide? Visit both locations for different atmospheres
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+                    <div>
+                      <p className="font-semibold mb-2">Frisco</p>
+                      <a
+                        href="tel:2146191200"
+                        className="text-soft-gold hover:text-soft-gold/80 transition-colors"
+                      >
+                        (214) 619-1200
+                      </a>
+                    </div>
+                    <div>
+                      <p className="font-semibold mb-2">Lewisville</p>
+                      <a
+                        href="tel:2144882224"
+                        className="text-soft-gold hover:text-soft-gold/80 transition-colors"
+                      >
+                        (214) 488-2224
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
         </section>
 
+        {/* Lewisville Location CTA */}
+        <section className="py-20 md:py-24 bg-gradient-to-b from-soft-gold/5 to-warm-ivory border-t-2 border-soft-gold/30">
+          <div className="container mx-auto px-6">
+            <ScrollReveal>
+              <div className="max-w-2xl mx-auto">
+                <h3 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4 italic">
+                  Visit Lewisville
+                </h3>
+                <p className="text-charcoal/70 text-lg mb-8">
+                  Our Lewisville location offers the same exceptional hibachi and sushi experience with easy access from I-35E
+                </p>
+
+                <div className="flex flex-col gap-4">
+                  <OpenTableWidget
+                    restaurantId={locationsData.locations.lewisville.reservation.rid}
+                    location="lewisville"
+                    buttonText="Reserve Online"
+                    variant="primary"
+                    className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
+                  />
+                  <a
+                    href="tel:2144882224"
+                    className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Call (214) 488-2224
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Frisco Location CTA */}
+        <section className="py-20 md:py-24 bg-gradient-to-b from-warm-ivory to-soft-gold/5 border-t-2 border-soft-gold/30">
+          <div className="container mx-auto px-6">
+            <ScrollReveal>
+              <div className="max-w-2xl mx-auto">
+                <h3 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4 italic">
+                  Visit Frisco
+                </h3>
+                <p className="text-charcoal/70 text-lg mb-8">
+                  Conveniently located near Stonebriar Centre, our Frisco location is perfect for families and celebrations
+                </p>
+
+                <div className="flex flex-col gap-4">
+                  <OpenTableWidget
+                    restaurantId={locationsData.locations.frisco.reservation.rid}
+                    location="frisco"
+                    buttonText="Reserve Online"
+                    variant="primary"
+                    className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-4 rounded-xl font-semibold transition-all shadow-lg hover:scale-105"
+                  />
+                  <a
+                    href="tel:2146191200"
+                    className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all border border-white/30 hover:border-white/50"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Call (214) 619-1200
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* More Location Details Section */}
+        <section className="py-20 md:py-24 bg-charcoal text-white">
+          <div className="container mx-auto px-6">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 italic">
+                  Location Details
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+              {/* Frisco Details */}
+              <ScrollReveal delay={0}>
+                <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-soft-gold/50 transition-all">
+                  <h3 className="text-2xl font-heading font-semibold text-white mb-4">
+                    Frisco
+                  </h3>
+                  <div className="space-y-4 text-warm-ivory/80">
+                    <p>
+                      <strong className="text-white">Address:</strong><br />
+                      2693 Preston Rd Suite 1040<br />
+                      Frisco, TX 75034
+                    </p>
+                    <p>
+                      <strong className="text-white">Phone:</strong><br />
+                      <a href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+                        (214) 619-1200
+                      </a>
+                    </p>
+                    <p>
+                      <strong className="text-white">Location:</strong><br />
+                      Near Stonebriar Centre
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Lewisville Details */}
+              <ScrollReveal delay={100}>
+                <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-soft-gold/50 transition-all">
+                  <h3 className="text-2xl font-heading font-semibold text-white mb-4">
+                    Lewisville
+                  </h3>
+                  <div className="space-y-4 text-warm-ivory/80">
+                    <p>
+                      <strong className="text-white">Address:</strong><br />
+                      2440 S Stemmons Fwy #A<br />
+                      Lewisville, TX 75067
+                    </p>
+                    <p>
+                      <strong className="text-white">Phone:</strong><br />
+                      <a href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+                        (214) 488-2224
+                      </a>
+                    </p>
+                    <p>
+                      <strong className="text-white">Location:</strong><br />
+                      Easy access from I-35E
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Sticky Mobile CTA Bar - Fixed at bottom on mobile */}
