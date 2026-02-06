@@ -7,14 +7,14 @@ import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locations from "@/data/locations.json";
 
-// Gallery items for Lewisville
+// Gallery items for Lewisville - Feb 2026 Professional Photoshoot
 const galleryItems = [
-  { src: "/images/lewisville/IMG_1910.jpg", alt: "Fresh sushi platter with decorative flowers", caption: "Artful Sushi Presentation" },
-  { src: "/videos/lewisville/hibachi-fire-01.mp4", alt: "Hibachi fire show", caption: "Hibachi Fire Show", type: "video" as const },
-  { src: "/images/lewisville/IMG_1712.jpg", alt: "Salmon sashimi", caption: "Fresh Salmon Sashimi" },
-  { src: "/images/lewisville/IMG_2178.jpg", alt: "Whole red fish", caption: "Premium Fresh Fish" },
-  { src: "/videos/lewisville/hibachi-fire-02.mp4", alt: "Onion volcano flame", caption: "Famous Onion Volcano", type: "video" as const },
-  { src: "/images/lewisville/IMG_2081.jpg", alt: "Sushi selection", caption: "Chef's Selection" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp", alt: "Jinbeh hibachi chef performing spectacular flame show at Lewisville TX teppanyaki grill", caption: "Spectacular Hibachi Flame Show" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp", alt: "Beautifully plated hibachi dinner with steak shrimp and fried rice at Jinbeh Lewisville TX", caption: "Signature Hibachi Dinner Plate" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp", alt: "Fresh sushi and sashimi presentation at Jinbeh Japanese Restaurant Lewisville TX", caption: "Fresh Sushi Presentation" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-1200w.webp", alt: "Jinbeh hibachi chef creating artistic heart-shaped fried rice at Lewisville TX location", caption: "Artistic Fried Rice Creation" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-1200w.webp", alt: "Professional hibachi chef cooking on teppanyaki grill at Jinbeh Lewisville TX", caption: "Master Chef at the Grill" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp", alt: "Warm inviting interior of Jinbeh Japanese Restaurant hibachi dining room Lewisville TX", caption: "Warm Restaurant Ambiance" },
 ];
 
 const location = locations.locations.lewisville;
@@ -41,7 +41,11 @@ const restaurantSchema = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   name: location.fullName,
-  image: "https://jinbeh.com/images/lewisville-exterior.jpg",
+  image: [
+    "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp",
+    "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp",
+    "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp"
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: `${location.address.street} ${location.address.suite}`,

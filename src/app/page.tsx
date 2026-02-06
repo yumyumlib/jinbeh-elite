@@ -634,66 +634,72 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Image Gallery Grid - Professional Photoshoot Images with lazy loading */}
+            {/* Image Gallery Grid - Professional Photoshoot Images with lazy loading and responsive srcset */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
               <ScrollReveal delay={0} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/photoshoot/hibachi-plate-shrimp.jpg"
-                  alt="Hibachi shrimp and scallops with fried rice - Jinbeh signature plate"
+                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp"
+                  alt="Jinbeh hibachi chef performing spectacular flame show at teppanyaki grill Lewisville TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
+                  quality={85}
                 />
               </ScrollReveal>
               <ScrollReveal delay={100} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/photoshoot/sashimi-platter.jpg"
-                  alt="Premium sashimi platter with uni, salmon, and yellowtail"
+                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp"
+                  alt="Beautifully plated hibachi dinner with steak, shrimp, and fried rice at Jinbeh Japanese Restaurant"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
+                  quality={85}
                 />
               </ScrollReveal>
               <ScrollReveal delay={200} className="gallery-item aspect-square">
                 <Image
-                  src="/images/photoshoot/sushi-tower.jpg"
-                  alt="Specialty sushi tower with spicy tuna and avocado"
+                  src="/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-800w.webp"
+                  alt="Fresh sushi and sashimi presentation at Jinbeh Japanese Restaurant Lewisville TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
+                  quality={82}
                 />
               </ScrollReveal>
               <ScrollReveal delay={250} className="gallery-item aspect-square">
                 <Image
-                  src="/images/photoshoot/hibachi-steak.jpg"
-                  alt="Hibachi filet mignon with vegetables and fried rice"
+                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-grill-cooking-lewisville-015-orig-IMG_1930-800w.webp"
+                  alt="Close-up of fresh ingredients cooking on Jinbeh hibachi grill in Lewisville TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
+                  quality={82}
                 />
               </ScrollReveal>
               <ScrollReveal delay={300} className="gallery-item aspect-square">
                 <Image
-                  src="/images/photoshoot/appetizers-spread.jpg"
-                  alt="Japanese appetizers - edamame, tempura, and crab rangoon"
+                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-800w.webp"
+                  alt="Jinbeh hibachi chef creating artistic fried rice design on teppanyaki grill Lewisville TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
+                  quality={82}
                 />
               </ScrollReveal>
               <ScrollReveal delay={350} className="gallery-item aspect-square">
                 <Image
-                  src="/images/photoshoot/sushi-beer-background.jpg"
-                  alt="Hibachi grill with Sapporo beer - the perfect pairing for Japanese cuisine"
+                  src="/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-800w.webp"
+                  alt="Warm interior ambiance of Jinbeh Japanese Restaurant hibachi dining room Lewisville TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
+                  quality={82}
                 />
               </ScrollReveal>
             </div>

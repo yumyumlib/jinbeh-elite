@@ -270,12 +270,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
 
-        {/* Preload critical hero image for faster LCP */}
+        {/* Preload critical hero fallback image for faster LCP */}
         <link
           rel="preload"
           as="image"
-          href="/images/photoshoot/hibachi-plate-shrimp.jpg"
-          type="image/jpeg"
+          href="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp"
+          type="image/webp"
           fetchPriority="high"
         />
 

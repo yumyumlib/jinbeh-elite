@@ -129,9 +129,10 @@ export function LocalBusinessSchemaLewisville() {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
     "image": [
-      "https://jinbeh.com/images/locations/lewisville-exterior.jpg",
-      "https://jinbeh.com/images/locations/lewisville-interior.jpg",
-      "https://jinbeh.com/images/food/hibachi-flames.jpg"
+      "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp",
+      "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp",
+      "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+      "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp"
     ],
     "address": {
       "@type": "PostalAddress",
