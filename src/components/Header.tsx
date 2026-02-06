@@ -25,6 +25,7 @@ export default function Header({ location }: HeaderProps) {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Track scroll position for enhanced glass effect
   useEffect(() => {
@@ -67,6 +68,28 @@ export default function Header({ location }: HeaderProps) {
       document.removeEventListener("keydown", handleEscapeKey);
     };
   }, [mobileMenuOpen]);
+
+  // Desktop hover handlers for dropdowns
+  const handleMouseEnter = (label: string) => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    setActiveDropdown(label);
+  };
+
+  const handleMouseLeave = () => {
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 200);
+  };
+
+  // Cleanup hover timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    };
+  }, []);
 
   const loc = location || "frisco";
 
@@ -128,14 +151,17 @@ export default function Header({ location }: HeaderProps) {
   ];
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-charcoal/50 backdrop-blur-xl shadow-lg border-b border-white/10"
-          : "bg-charcoal/25 backdrop-blur-lg border-b border-white/5"
-      }`}
-    >
-      <div className="container mx-auto px-6">
+    <header className="sticky top-0 z-50 overflow-visible">
+      {/* Background blur layer — kept separate so it doesn't create a containing block for dropdowns */}
+      <div
+        className={`absolute inset-0 transition-all duration-300 pointer-events-none ${
+          scrolled
+            ? "bg-charcoal/50 backdrop-blur-xl shadow-lg border-b border-white/10"
+            : "bg-charcoal/25 backdrop-blur-lg border-b border-white/5"
+        }`}
+        aria-hidden="true"
+      />
+      <div className="relative container mx-auto px-6">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
@@ -157,7 +183,12 @@ export default function Header({ location }: HeaderProps) {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1" ref={dropdownRef}>
             {navItems.map((item) => (
-              <div key={item.label} className="relative">
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={() => item.dropdown && handleMouseEnter(item.label)}
+                onMouseLeave={() => item.dropdown && handleMouseLeave()}
+              >
                 {item.dropdown ? (
                   <>
                     <button
@@ -186,11 +217,12 @@ export default function Header({ location }: HeaderProps) {
                       <div
                         role="menu"
                         aria-label={`${item.label} submenu`}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-warm-ivory-dark overflow-visible z-[999]"
-                        style={{ opacity: 1, transform: 'translateY(0)', pointerEvents: 'auto' }}>
+                        className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-2xl border border-warm-ivory-dark z-[9999]"
+                        onMouseEnter={() => handleMouseEnter(item.label)}
+                        onMouseLeave={handleMouseLeave}
+                      >
                         <div className="p-2">
                           {item.dropdown.map((subItem) => {
-                            // Check if this is the current location
                             const isActiveLocation = item.label === "Locations" &&
                               location &&
                               subItem.label.toLowerCase() === location;
@@ -252,7 +284,11 @@ export default function Header({ location }: HeaderProps) {
                 {location === "lewisville" ? "(214) 488-2224" : "(214) 619-1200"}
               </a>
             ) : (
-              <div className="relative">
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter("phone")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <button
                   onClick={() => setActiveDropdown(activeDropdown === "phone" ? null : "phone")}
                   className="inline-flex items-center gap-2 px-3 py-1.5 text-white hover:text-soft-gold transition-colors font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
@@ -266,8 +302,11 @@ export default function Header({ location }: HeaderProps) {
                   </svg>
                 </button>
                 {activeDropdown === "phone" && (
-                  <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-warm-ivory-dark overflow-visible z-[999]"
-                       style={{ opacity: 1, transform: 'translateY(0)', pointerEvents: 'auto' }}>
+                  <div
+                    className="absolute top-full right-0 mt-1 w-56 bg-white rounded-xl shadow-2xl border border-warm-ivory-dark z-[9999]"
+                    onMouseEnter={() => handleMouseEnter("phone")}
+                    onMouseLeave={handleMouseLeave}
+                  >
                     <div className="p-2">
                       <a
                         href="tel:2146191200"

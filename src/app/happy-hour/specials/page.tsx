@@ -381,8 +381,8 @@ export default function HappyHourSpecialsPage() {
               <div className="relative">
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
-                    alt="Jinbeh bar atmosphere"
+                    src="/images/frisco/FriscoLocation_Bar_Front.jpg"
+                    alt="Jinbeh bar interior with warm Japanese ambiance"
                     fill
                     className="object-cover"
                   />

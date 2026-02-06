@@ -191,8 +191,8 @@ export default function HappyHourPage() {
               <div className="bg-warm-ivory rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative h-48">
                   <Image
-                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
-                    alt="Jinbeh Frisco bar"
+                    src="/images/frisco/FriscoLocation_Bar_Front.jpg"
+                    alt="Jinbeh Frisco bar interior with warm wooden decor and pendant lighting"
                     fill
                     className="object-cover"
                   />
@@ -224,8 +224,8 @@ export default function HappyHourPage() {
               <div className="bg-warm-ivory rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative h-48">
                   <Image
-                    src="/images/interior/JinbehFrisco_SushiBar.jpg"
-                    alt="Jinbeh Lewisville bar"
+                    src="/images/interior/bar.jpg"
+                    alt="Jinbeh Lewisville bar with premium spirits and Japanese-inspired decor"
                     fill
                     className="object-cover"
                   />
@@ -301,8 +301,8 @@ export default function HappyHourPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/frisco/JinbehFriscoStorefrontSign.jpg"
-                    alt="Jinbeh bar interior"
+                    src="/images/frisco/FriscoLocation_Bar_Front.jpg"
+                    alt="Jinbeh bar interior with warm Japanese ambiance"
                     fill
                     className="object-cover"
                   />
