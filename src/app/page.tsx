@@ -147,15 +147,15 @@ export default function HomePage() {
             />
           </div>
 
-          {/* Fallback Image for slow connections */}
+          {/* Fallback Image for slow connections - Professional Studio Quality */}
           <Image
-            src="/images/photoshoot/hibachi-plate-shrimp.jpg"
-            alt="Jinbeh hibachi plate with shrimp, fried rice, and vegetables"
+            src="/images/catalog/12-C060324-6551.jpg"
+            alt="Premium hibachi dinner with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant"
             fill
             priority
             sizes="100vw"
             className="object-cover object-center -z-10"
-            quality={85}
+            quality={90}
           />
 
           {/* Dark Overlay for text contrast */}
@@ -234,8 +234,8 @@ export default function HomePage() {
             <ScrollReveal delay={500}>
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 {/* Frisco Location Card */}
-                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
-                  <BorderBeam size={120} duration={8} colorFrom="#C9A227" colorTo="#C1121F" />
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-6 min-w-[260px] shadow-2xl hover:border-accent-red/50 transition-all duration-300">
+                  <BorderBeam size={120} duration={8} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
                     {/* Location-specific proof hook */}
                     <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
@@ -253,7 +253,7 @@ export default function HomePage() {
                         location="frisco"
                         buttonText="Reserve a Table"
                         variant="primary"
-                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                       />
                       <a
                         href="tel:2146191200"
@@ -269,7 +269,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Lewisville Location Card */}
-                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-8 min-w-[280px] shadow-2xl hover:border-soft-gold/50 transition-all duration-300">
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-6 min-w-[260px] shadow-2xl hover:border-accent-red/50 transition-all duration-300">
                   <BorderBeam size={120} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
                     {/* Location-specific proof hook */}
@@ -288,7 +288,7 @@ export default function HomePage() {
                         location="lewisville"
                         buttonText="Reserve a Table"
                         variant="primary"
-                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                       />
                       <a
                         href="tel:2144882224"
@@ -430,72 +430,75 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Image Gallery Grid - Professional Photoshoot Images with lazy loading and responsive srcset */}
+            {/* Image Gallery Grid - Professional Studio Quality Images */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-6xl mx-auto">
+              {/* Row 1: Hero Images - Stunning Plated Dishes */}
               <ScrollReveal delay={0} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp"
-                  alt="Jinbeh hibachi chef performing spectacular flame show at teppanyaki grill Lewisville TX"
+                  src="/images/catalog/12-C060324-6551.jpg"
+                  alt="Premium hibachi dinner plate with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant Texas"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
-                  quality={85}
+                  quality={90}
                 />
               </ScrollReveal>
               <ScrollReveal delay={100} className="gallery-item md:col-span-2 aspect-[16/10]">
                 <Image
-                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp"
-                  alt="Beautifully plated hibachi dinner with steak, shrimp, and fried rice at Jinbeh Japanese Restaurant"
+                  src="/images/catalog/6-C060324-6405.jpg"
+                  alt="Fresh sushi and sashimi presentation with salmon, tuna, and yellowtail at Jinbeh Japanese Restaurant Frisco TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
-                  quality={85}
+                  quality={90}
                 />
               </ScrollReveal>
+
+              {/* Row 2: Mix of Hibachi Action and Sushi Artistry */}
               <ScrollReveal delay={200} className="gallery-item aspect-square">
                 <Image
-                  src="/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-800w.webp"
-                  alt="Fresh sushi and sashimi presentation at Jinbeh Japanese Restaurant Lewisville TX"
+                  src="/images/catalog/8-C060324-6462.jpg"
+                  alt="Hibachi chef cooking premium steak and seafood on teppanyaki grill at Jinbeh Japanese Restaurant Texas"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
-                  quality={82}
+                  quality={88}
                 />
               </ScrollReveal>
               <ScrollReveal delay={250} className="gallery-item aspect-square">
                 <Image
-                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-grill-cooking-lewisville-015-orig-IMG_1930-800w.webp"
-                  alt="Close-up of fresh ingredients cooking on Jinbeh hibachi grill in Lewisville TX"
+                  src="/images/catalog/14-C060324-6596.jpg"
+                  alt="Perfectly grilled hibachi shrimp and vegetables plated with artistic presentation at Jinbeh Frisco TX"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
-                  quality={82}
+                  quality={88}
                 />
               </ScrollReveal>
               <ScrollReveal delay={300} className="gallery-item aspect-square">
                 <Image
-                  src="/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-800w.webp"
-                  alt="Jinbeh hibachi chef creating artistic fried rice design on teppanyaki grill Lewisville TX"
+                  src="/images/catalog/FB-LEW-Sashimi-Platter-Salmon-Tuna-Yellowtail.jpg"
+                  alt="Premium sashimi platter with fresh salmon, tuna, and yellowtail at Jinbeh Japanese Restaurant Frisco Texas"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
-                  quality={82}
+                  quality={88}
                 />
               </ScrollReveal>
               <ScrollReveal delay={350} className="gallery-item aspect-square">
                 <Image
-                  src="/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-800w.webp"
-                  alt="Warm interior ambiance of Jinbeh Japanese Restaurant hibachi dining room Lewisville TX"
+                  src="/images/catalog/5-C060324-6397.jpg"
+                  alt="Beautifully plated sushi rolls and nigiri with artistic garnish at Jinbeh Japanese Restaurant Texas"
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
-                  quality={82}
+                  quality={88}
                 />
               </ScrollReveal>
             </div>
@@ -755,162 +758,199 @@ export default function HomePage() {
           </ScrollReveal>
         </section>
 
-        {/* Final CTA Section - Action Oriented Closing */}
-        <section className="relative py-24 md:py-32 bg-gradient-to-br from-charcoal via-cedar-brown/20 to-charcoal text-white overflow-hidden">
-          {/* Animated background elements */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-soft-gold rounded-full mix-blend-multiply filter blur-3xl" />
-            <div className="absolute bottom-10 right-10 w-72 h-72 bg-accent-red rounded-full mix-blend-multiply filter blur-3xl" />
+        {/* Visit Us - Immersive Location Showcase */}
+        <section className="relative py-20 md:py-28 bg-charcoal text-white overflow-hidden">
+          {/* Subtle Japanese pattern background */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'radial-gradient(circle, #C9A227 1px, transparent 1px)',
+              backgroundSize: '40px 40px'
+            }} />
           </div>
 
           <div className="container mx-auto px-6 relative z-10">
             <ScrollReveal>
-              <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 italic">
-                  Your Table Is Waiting
+              <div className="text-center mb-16">
+                <span className="inline-block bg-soft-gold/20 text-soft-gold text-sm font-semibold px-6 py-2 rounded-full mb-6 border border-soft-gold/30 tracking-wide">
+                  TWO LOCATIONS IN DFW
+                </span>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+                  Find Your <span className="text-soft-gold">Jinbeh</span>
                 </h2>
-                <p className="text-xl md:text-2xl text-warm-ivory/90 mb-12 leading-relaxed">
-                  Every week, hundreds of families choose Jinbeh for their celebrations, date nights, and casual dinners. Prime time hibachi tables (6-8pm) fill up fast—especially on weekends. Don&apos;t miss out on DFW&apos;s favorite dinner and a show.
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <OpenTableWidget
-                    restaurantId={locationsData.locations.frisco.reservation.rid}
-                    location="frisco"
-                    buttonText={reservationCTA}
-                    variant="primary"
-                    className="shimmer-cta glow-cta inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-2xl hover:scale-105"
-                  />
-                  <a
-                    href="tel:2146191200"
-                    className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl font-semibold transition-all border border-white/40 hover:border-white/60"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Call Frisco
-                  </a>
-                </div>
-
-                <div className="mt-12 pt-12 border-t border-white/20">
-                  <p className="text-sm text-warm-ivory/70 mb-4">
-                    Can&apos;t decide? Visit both locations for different atmospheres
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto">
-                    <div>
-                      <p className="font-semibold mb-2">Frisco</p>
-                      <a
-                        href="tel:2146191200"
-                        className="text-soft-gold hover:text-soft-gold/80 transition-colors"
-                      >
-                        (214) 619-1200
-                      </a>
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-2">Lewisville</p>
-                      <a
-                        href="tel:2144882224"
-                        className="text-soft-gold hover:text-soft-gold/80 transition-colors"
-                      >
-                        (214) 488-2224
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
-        {/* Both Locations - Clean Combined Section */}
-        <section className="py-16 md:py-20 bg-warm-ivory border-t border-stone-200">
-          <div className="container mx-auto px-6">
-            <ScrollReveal>
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-3 italic">
-                  Two Locations, One Unforgettable Experience
-                </h2>
-                <p className="text-charcoal/70 text-lg max-w-2xl mx-auto">
-                  Both locations serve the same award-winning menu with the same passionate chefs. Choose the one closest to you.
+                <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+                  Same award-winning menu. Same family tradition since 1988. Pick the location nearest you.
                 </p>
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Frisco */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* Frisco Location Card */}
               <ScrollReveal delay={0}>
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-stone-200 hover:border-soft-gold/50 hover:shadow-xl transition-all">
-                  <h3 className="text-2xl font-heading font-semibold text-charcoal mb-2">Jinbeh Frisco</h3>
-                  <p className="text-cedar-brown font-medium text-sm mb-4">Near Stonebriar Centre</p>
-                  <div className="space-y-2 text-charcoal/70 text-sm mb-6">
-                    <p>2693 Preston Rd Suite 1040, Frisco, TX 75034</p>
-                    <p>
-                      <a href="tel:2146191200" className="text-accent-red hover:text-accent-red/80 font-semibold transition-colors">
-                        (214) 619-1200
-                      </a>
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <OpenTableWidget
-                      restaurantId={locationsData.locations.frisco.reservation.rid}
-                      location="frisco"
-                      buttonText="Reserve at Frisco"
-                      variant="primary"
-                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
+                <div className="group bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-soft-gold/40 transition-all duration-500 h-full flex flex-col">
+                  {/* Location Image */}
+                  <div className="aspect-[16/10] relative overflow-hidden">
+                    <Image
+                      src="/images/frisco/FriscoLocation_Bar_Front.jpg"
+                      alt="Jinbeh Frisco interior - warm wooden bar with pendant lighting and authentic Japanese ambiance near Stonebriar Centre"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      quality={85}
                     />
-                    <a
-                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 text-charcoal/70 hover:text-charcoal text-sm font-medium transition-colors"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent" />
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <h3 className="text-3xl md:text-4xl font-heading font-bold text-white">Jinbeh Frisco</h3>
+                      <p className="text-soft-gold font-medium mt-1">Near Stonebriar Centre &amp; Legacy West</p>
+                    </div>
+                  </div>
+
+                  {/* Location Details */}
+                  <div className="p-8 flex-1 flex flex-col">
+                    <p className="text-white/80 mb-6 leading-relaxed">
+                      Our flagship location with a stunning sushi bar, intimate hibachi tables, and warm ambiance perfect for date nights and celebrations.
+                    </p>
+
+                    {/* Hours */}
+                    <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
+                      <div>
+                        <p className="text-soft-gold font-semibold mb-1">Lunch</p>
+                        <p className="text-white/70">Mon–Fri: 11am – 2pm</p>
+                        <p className="text-white/70">Sat–Sun: 11:30am – 2:30pm</p>
+                      </div>
+                      <div>
+                        <p className="text-soft-gold font-semibold mb-1">Dinner</p>
+                        <p className="text-white/70">Sun–Thu: 5pm – 9pm</p>
+                        <p className="text-white/70">Fri–Sat: 5pm – 10pm</p>
+                      </div>
+                    </div>
+
+                    {/* Address & Phone */}
+                    <div className="flex items-start gap-3 mb-8 text-white/70 text-sm">
+                      <svg className="w-5 h-5 text-soft-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      Get Directions
-                    </a>
+                      <div>
+                        <p>2693 Preston Rd Suite 1040, Frisco, TX 75034</p>
+                        <a href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 font-semibold transition-colors">
+                          (214) 619-1200
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* CTAs */}
+                    <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                      <OpenTableWidget
+                        restaurantId={locationsData.locations.frisco.reservation.rid}
+                        location="frisco"
+                        buttonText="Reserve Frisco"
+                        variant="primary"
+                        className="shimmer-cta flex-1 inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3.5 rounded-xl font-semibold transition-all shadow-lg hover:scale-105 hover:shadow-accent-red/30"
+                      />
+                      <a
+                        href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3.5 rounded-xl font-semibold transition-all border border-white/20 hover:border-white/40"
+                      >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Get Directions
+                      </a>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
 
-              {/* Lewisville */}
+              {/* Lewisville Location Card */}
               <ScrollReveal delay={100}>
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-stone-200 hover:border-soft-gold/50 hover:shadow-xl transition-all">
-                  <h3 className="text-2xl font-heading font-semibold text-charcoal mb-2">Jinbeh Lewisville</h3>
-                  <p className="text-cedar-brown font-medium text-sm mb-4">Easy I-35E Access</p>
-                  <div className="space-y-2 text-charcoal/70 text-sm mb-6">
-                    <p>2440 S Stemmons Fwy #A, Lewisville, TX 75067</p>
-                    <p>
-                      <a href="tel:2144882224" className="text-accent-red hover:text-accent-red/80 font-semibold transition-colors">
-                        (214) 488-2224
-                      </a>
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <OpenTableWidget
-                      restaurantId={locationsData.locations.lewisville.reservation.rid}
-                      location="lewisville"
-                      buttonText="Reserve at Lewisville"
-                      variant="primary"
-                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
+                <div className="group bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-soft-gold/40 transition-all duration-500 h-full flex flex-col">
+                  {/* Location Image */}
+                  <div className="aspect-[16/10] relative overflow-hidden">
+                    <Image
+                      src="/images/interior/bar.jpg"
+                      alt="Jinbeh Lewisville bar area with premium spirits, wine glasses, and Japanese-inspired decor near Vista Ridge Mall"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      quality={85}
                     />
-                    <a
-                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 text-charcoal/70 hover:text-charcoal text-sm font-medium transition-colors"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent" />
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <h3 className="text-3xl md:text-4xl font-heading font-bold text-white">Jinbeh Lewisville</h3>
+                      <p className="text-soft-gold font-medium mt-1">Easy I-35E Access &bull; Near Vista Ridge</p>
+                    </div>
+                  </div>
+
+                  {/* Location Details */}
+                  <div className="p-8 flex-1 flex flex-col">
+                    <p className="text-white/80 mb-6 leading-relaxed">
+                      A local favorite with a lively bar, generous hibachi portions, and some of the freshest sushi in North Texas. The go-to spot for groups and celebrations.
+                    </p>
+
+                    {/* Hours */}
+                    <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
+                      <div>
+                        <p className="text-soft-gold font-semibold mb-1">Lunch</p>
+                        <p className="text-white/70">Mon–Fri: 11am – 2pm</p>
+                        <p className="text-white/70">Sat–Sun: 11:30am – 2:30pm</p>
+                      </div>
+                      <div>
+                        <p className="text-soft-gold font-semibold mb-1">Dinner</p>
+                        <p className="text-white/70">Sun–Thu: 5pm – 9pm</p>
+                        <p className="text-white/70">Fri–Sat: 5pm – 10pm</p>
+                      </div>
+                    </div>
+
+                    {/* Address & Phone */}
+                    <div className="flex items-start gap-3 mb-8 text-white/70 text-sm">
+                      <svg className="w-5 h-5 text-soft-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      Get Directions
-                    </a>
+                      <div>
+                        <p>2440 S Stemmons Fwy #A, Lewisville, TX 75067</p>
+                        <a href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 font-semibold transition-colors">
+                          (214) 488-2224
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* CTAs */}
+                    <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                      <OpenTableWidget
+                        restaurantId={locationsData.locations.lewisville.reservation.rid}
+                        location="lewisville"
+                        buttonText="Reserve Lewisville"
+                        variant="primary"
+                        className="shimmer-cta flex-1 inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3.5 rounded-xl font-semibold transition-all shadow-lg hover:scale-105 hover:shadow-accent-red/30"
+                      />
+                      <a
+                        href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3.5 rounded-xl font-semibold transition-all border border-white/20 hover:border-white/40"
+                      >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Get Directions
+                      </a>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
             </div>
+
+            {/* Bottom tagline */}
+            <ScrollReveal delay={200}>
+              <p className="text-center text-white/50 text-sm mt-12">
+                Family-owned &amp; operated since 1988 &bull; Over 1,000 five-star reviews across both locations
+              </p>
+            </ScrollReveal>
           </div>
         </section>
       </main>

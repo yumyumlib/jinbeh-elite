@@ -23,32 +23,32 @@ const experienceSteps: ExperienceStep[] = [
     title: 'The Show That Starts Your Celebration',
     hook: 'Fire, laughter, and a standing ovation—every single night',
     description: 'Your hibachi chef doesn\'t just cook—they perform. Watch as expert knife work meets theatrical flair: the famous onion volcano erupts, shrimp fly through the air, and your whole table erupts in laughter. This isn\'t dinner at a restaurant. It\'s dinner and a show that families talk about for weeks. As one guest put it: "The chefs are very entertaining! They always put on an excellent show!"',
-    image: '/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-003-orig-IMG_1845-1200w.webp',
-    imageAlt: 'Jinbeh hibachi chef performing dramatic flame show at teppanyaki grill in Lewisville TX restaurant'
+    image: '/images/catalog/9-C060324-6484.jpg',
+    imageAlt: 'Hibachi chef performing tableside cooking with flames and theatrical presentation at Jinbeh Japanese Restaurant Frisco TX'
   },
   {
     step: 2,
     title: 'Sushi Crafted by Masters, Not Machines',
     hook: 'Hand-selected fish. Traditional technique. Modern artistry.',
     description: 'Since 1988, our sushi chefs have perfected the balance of tradition and creativity. Every roll is hand-crafted with pristine fish, precise knife work, and an artist\'s eye for presentation. From classic nigiri to signature specialty rolls, each piece reflects decades of mastery. This isn\'t chain restaurant sushi—this is why sushi lovers drive from across DFW to Jinbeh. As one regular said: "Everything is so yummy and so fresh!"',
-    image: '/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp',
-    imageAlt: 'Fresh sushi and sashimi presentation at Jinbeh Japanese Restaurant Lewisville TX'
+    image: '/images/catalog/6-C060324-6405.jpg',
+    imageAlt: 'Premium fresh sushi and sashimi presentation with salmon, tuna, yellowtail at Jinbeh Japanese Restaurant Texas'
   },
   {
     step: 3,
     title: 'Where Birthdays Become Unforgettable',
     hook: 'The birthday spot families come back to, year after year',
     description: 'Whether it\'s your daughter\'s 8th birthday, your parents\' anniversary, or a graduation dinner, Jinbeh makes every celebration feel special. Our chefs personalize the show, the table sings along, and the birthday guest goes home with memories (and a full belly). It\'s why families have been celebrating here for 37 years. In their words: "It\'s truly the perfect place for kids, birthdays, and entertaining the whole fam!"',
-    image: '/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-1200w.webp',
-    imageAlt: 'Jinbeh hibachi chef creating artistic heart-shaped fried rice at Lewisville TX location'
+    image: '/images/catalog/7-C060324-6447.jpg',
+    imageAlt: 'Hibachi chef cooking premium ingredients tableside at Jinbeh Japanese Restaurant Frisco Texas - perfect for celebrations'
   },
   {
     step: 4,
     title: 'Premium Quality, Generous Portions',
     hook: 'Come hungry. Leave with leftovers.',
     description: 'Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh vegetables grilled tableside with butter and garlic. Every plate is generous—most guests leave with a to-go box. We source the finest ingredients because after 37 years, we know: you taste the difference. And at Jinbeh, the food always delivers. As one guest raved: "Best steak I\'ve ever had. 10/10... food touched my soul."',
-    image: '/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp',
-    imageAlt: 'Beautifully plated hibachi dinner with shrimp, steak, fried rice and vegetables at Jinbeh Lewisville TX'
+    image: '/images/catalog/12-C060324-6551.jpg',
+    imageAlt: 'Premium hibachi dinner with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant'
   }
 ];
 
