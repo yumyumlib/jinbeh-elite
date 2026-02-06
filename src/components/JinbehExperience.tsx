@@ -46,7 +46,7 @@ const experienceSteps: ExperienceStep[] = [
     step: 4,
     title: 'Premium Quality, Generous Portions',
     hook: 'Come hungry. Leave with leftovers.',
-    description: 'Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh vegetables grilled tableside with butter and garlic. Every plate is generous—most guests leave with a to-go box. We source the finest ingredients because after 37 years, we know: you taste the difference. And at Jinbeh, the food always delivers. As one guest raved: "Best steak I\'ve ever had. 10/10... food touched my soul."',
+    description: 'Tender filet mignon seared to perfection. Jumbo shrimp with the perfect char. Fresh vegetables grilled tableside with our house-made garlic butter. Even the Yum Yum sauce and every dipping sauce are made in-house daily—because at a family restaurant, the details matter. Every plate is generous and most guests leave with a to-go box. As one guest raved: "Best steak I\'ve ever had. 10/10... food touched my soul."',
     image: '/images/catalog/12-C060324-6551.jpg',
     imageAlt: 'Premium hibachi dinner with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant'
   }

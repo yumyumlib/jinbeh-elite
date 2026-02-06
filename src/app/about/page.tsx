@@ -150,7 +150,7 @@ export default function AboutPage() {
                   <p>
                     Unlike the impersonal corporate chains out there, Jinbeh feels different from your first visit.
                     You&apos;re not just ordering dinner—you&apos;re joining a celebration. Our chefs become entertainers, your table becomes a stage,
-                    and the onion volcano? That&apos;s just the beginning of the show. Yes, the food is exceptional. Yes, our sushi is fresh and our steaks are premium.
+                    and the onion volcano? That&apos;s just the beginning of the show. Yes, the food is exceptional—our sushi is fresh, our steaks are premium, and every sauce from the Yum Yum to the garlic butter is made in-house daily.
                     But what truly sets us apart is how we make you feel: welcomed, celebrated, and part of something special.
                   </p>
                   <p>
@@ -300,7 +300,7 @@ export default function AboutPage() {
                   Premium, Fresh Ingredients
                 </h3>
                 <p className="text-charcoal/70 text-sm">
-                  We source the finest, freshest fish daily. No shortcuts. When you taste the difference, you understand why guests prefer us over chain restaurants.
+                  We source the finest, freshest fish daily. Our Yum Yum sauce, dipping sauces, and garlic butter are all made in-house—no shortcuts. When you taste the difference, you understand why guests prefer us over chains.
                 </p>
               </div>
 
