@@ -96,6 +96,7 @@ export default function PhotoGallery({
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    quality={80}
                   />
                 )}
                 <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors duration-300" />
@@ -184,6 +185,7 @@ export default function PhotoGallery({
                 width={1200}
                 height={800}
                 className="max-w-full max-h-[80vh] w-auto h-auto mx-auto rounded-lg object-contain"
+                quality={80}
               />
             )}
             {items[activeIndex].caption && (

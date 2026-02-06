@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Header from "@/components/Header";
 import blogData from "@/data/blog-posts.json";
 
 export const metadata: Metadata = {
@@ -50,8 +51,10 @@ export default async function BlogPage({
     const featuredPosts = allPosts.filter((post) => post.featured);
 
     return (
-        <main className="min-h-screen bg-warm-ivory">
-            {/* Hero Header */}
+        <>
+            <Header />
+            <main className="min-h-screen bg-warm-ivory">
+                {/* Hero Header */}
             <section className="bg-charcoal text-white py-16">
                 <div className="container mx-auto px-6">
                     <div className="max-w-3xl mx-auto text-center">
@@ -121,6 +124,7 @@ export default async function BlogPage({
                                                 src={post.heroImage}
                                                 alt={post.title}
                                                 fill
+                                                quality={80}
                                                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
@@ -178,6 +182,7 @@ export default async function BlogPage({
                                                     src={post.heroImage}
                                                     alt={post.title}
                                                     fill
+                                                    quality={80}
                                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                                 />
                                                 {category && (
@@ -242,6 +247,7 @@ export default async function BlogPage({
                     </div>
                 </div>
             </section>
-        </main>
+            </main>
+        </>
     );
 }

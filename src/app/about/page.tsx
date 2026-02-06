@@ -188,6 +188,7 @@ export default function AboutPage() {
                       alt="Jinbeh Frisco bar and dining area"
                       fill
                       className="object-cover"
+                      quality={80}
                     />
                   </div>
                   <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
@@ -196,6 +197,7 @@ export default function AboutPage() {
                       alt="Fresh sushi tower"
                       fill
                       className="object-cover"
+                      quality={80}
                     />
                   </div>
                 </div>
@@ -206,6 +208,7 @@ export default function AboutPage() {
                       alt="Hibachi chef performing the famous onion volcano"
                       fill
                       className="object-cover"
+                      quality={80}
                     />
                   </div>
                   <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
@@ -214,6 +217,7 @@ export default function AboutPage() {
                       alt="Birthday celebration at Jinbeh"
                       fill
                       className="object-cover"
+                      quality={80}
                     />
                   </div>
                 </div>
@@ -234,6 +238,7 @@ export default function AboutPage() {
                   width={800}
                   height={500}
                   className="w-full h-auto"
+                  quality={80}
                 />
               </div>
 
@@ -396,6 +401,7 @@ export default function AboutPage() {
                     alt={item.alt}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    quality={80}
                   />
                   <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors flex items-center justify-center">
                     <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
