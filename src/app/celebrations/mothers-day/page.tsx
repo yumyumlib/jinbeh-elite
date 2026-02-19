@@ -63,6 +63,16 @@ const faqSchema = {
   ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Mothers Day" },
+  ],
+};
 export default function MothersDayPage() {
   return (
     <>
@@ -71,6 +81,10 @@ export default function MothersDayPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
         {/* Hero Section */}
@@ -95,13 +109,13 @@ export default function MothersDayPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Lewisville
@@ -350,7 +364,33 @@ export default function MothersDayPage() {
             </Link>
           </div>
         </section>
-      </main>
+      
+        {/* Related Blog Articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
+              Make Mom's Day Extra Special
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/romantic-anniversary-dinners" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Fine Dining</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Romantic Dinner Ideas in DFW
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Treat mom to an unforgettable fine dining experience she deserves.</p>
+              </Link>
+              <Link href="/blog/sake-pairing-guide" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Drinks</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Sake Pairing Guide: Perfect Matches
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Elevate her dinner with perfectly paired sake for every course.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        </main>
       <Footer />
     </>
   );

@@ -234,7 +234,7 @@ export default function RelatedBlogPosts({
         {/* View All Link */}
         <div className="mt-10 text-center">
           <Link
-            href={categories && categories.length === 1 ? `/blog?category=${categories[0]}` : "/blog"}
+            href={categories && categories.length === 1 ? `/blog/category/${categories[0]}` : "/blog"}
             className={`inline-flex items-center gap-2 font-medium ${
               bgColor === "charcoal"
                 ? "text-soft-gold hover:text-warm-ivory"

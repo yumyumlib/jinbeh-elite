@@ -63,6 +63,16 @@ const faqSchema = {
   ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Asian Restaurant Month" },
+  ],
+};
 export default function AsianRestaurantMonthPage() {
   return (
     <>
@@ -71,6 +81,10 @@ export default function AsianRestaurantMonthPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
         {/* Hero Section */}
@@ -95,13 +109,13 @@ export default function AsianRestaurantMonthPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Lewisville
@@ -430,7 +444,33 @@ export default function AsianRestaurantMonthPage() {
             </div>
           </div>
         </section>
-      </main>
+      
+        {/* Related Blog Articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
+              Explore Japanese Cuisine
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/best-sushi-frisco" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Sushi Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Best Sushi in Frisco TX
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Discover why Jinbeh is a top sushi destination near Stonebriar Centre.</p>
+              </Link>
+              <Link href="/blog/types-of-sushi" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Sushi 101</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Types of Sushi: Complete Guide
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">From nigiri to rolls — explore every style of sushi you can try at Jinbeh.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        </main>
       <Footer />
     </>
   );

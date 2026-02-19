@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Jinbeh Hibachi Restaurant Near Coppell",
-  image: "https://jinbeh.com/images/frisco-interior.jpg",
+  image: "https://jinbeh.com/images/interior/JinbehFrisco_SushiBar.jpg",
   description: "Authentic Japanese hibachi and sushi restaurant serving Coppell residents. Located in Frisco, just minutes away for exciting teppanyaki shows.",
   address: {
     "@type": "PostalAddress",

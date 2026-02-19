@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Jinbeh Japanese Food Near Little Elm",
-  image: "https://jinbeh.com/images/frisco-interior.jpg",
+  image: "https://jinbeh.com/images/interior/JinbehFrisco_SushiBar.jpg",
   description: "Authentic Japanese hibachi and sushi restaurant serving Little Elm residents. Located in Lewisville and Frisco, just minutes away.",
   address: {
     "@type": "PostalAddress",

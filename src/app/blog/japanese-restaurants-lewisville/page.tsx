@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Japanese Restaurants Lewisville TX: Top Picks | Jinbeh",
     description: "Find the best Japanese restaurants in Lewisville TX! From hibachi to sushi, discover authentic dining. Jinbeh offers family-friendly hibachi and fresh sushi.",
     keywords: ["japanese restaurant lewisville", "sushi lewisville tx", "hibachi lewisville", "asian food lewisville"],
+  openGraph: {
+    title: "Best Japanese Restaurants Lewisville TX",
+    description: "Find authentic Japanese cuisine in Lewisville TX. From hibachi shows to fresh sushi, discover the best spots near Vista Ridge Mall and I-35E.",
+    url: "https://jinbeh.com/blog/japanese-restaurants-lewisville",
+    type: "article",
+    images: ["/images/photoshoot/hibachi-steak.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/japanese-restaurants-lewisville",
+  },
 };
 
 const faqs = [
@@ -24,9 +34,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Best Japanese Restaurants Lewisville TX" },
+  ],
+};
+
 export default function JapaneseRestaurantsLewisville() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
@@ -34,7 +57,7 @@ export default function JapaneseRestaurantsLewisville() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Restaurants Lewisville TX</h1>
@@ -85,14 +108,14 @@ export default function JapaneseRestaurantsLewisville() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Other Dining Options in Lewisville</h2>
-                            <p className="text-charcoal/80 mb-6">While Jinbeh is our top recommendation for Japanese dining, Lewisville has other options. However, for authentic <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi performances</Link>, fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link>, and professional service combined, <Link href="/locations/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> stands out as the premier choice.</p>
+                            <p className="text-charcoal/80 mb-6">While Jinbeh is our top recommendation for Japanese dining, Lewisville has other options. However, for authentic <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi performances</Link>, fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link>, and professional service combined, <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> stands out as the premier choice.</p>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍱 Visit Jinbeh Lewisville</h3>
                                 <p className="text-white/80 mb-2"><strong>Address:</strong> 250 E Round Grove Rd, Lewisville, TX 75067</p>
                                 <p className="text-white/80 mb-6"><strong>Phone:</strong> (972) 315-3744</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/lewisville#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Make a Reservation</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Make a Reservation</Link>
                                     <Link href="/lewisville/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">View Menu</Link>
                                     <Link href="/private-dining" className="bg-white/20 border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition">Private Dining Info</Link>
                                 </div>
@@ -101,13 +124,13 @@ export default function JapaneseRestaurantsLewisville() {
                             <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
                                 <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Explore Both Jinbeh Locations</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/locations/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
                                         <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Lewisville Location</h4>
                                         <p className="text-charcoal/70 text-sm mb-4">Off I-35E near Vista Ridge Mall. Convenient for local community and group dining.</p>
                                         <span className="inline-block text-accent-red font-semibold">Visit us in Lewisville →</span>
                                     </Link>
 
-                                    <Link href="/locations/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
                                         <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Frisco Location</h4>
                                         <p className="text-charcoal/70 text-sm mb-4">Near Stonebriar Centre. Perfect for North Texas fine dining and celebrations.</p>
                                         <span className="inline-block text-accent-red font-semibold">Visit us in Frisco →</span>

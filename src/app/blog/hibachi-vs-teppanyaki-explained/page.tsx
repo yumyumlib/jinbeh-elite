@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Confused about hibachi vs teppanyaki? Learn the key differences between these Japanese cooking styles and what to expect at each.",
     images: ["/images/blog/3-C060324-6364.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-vs-teppanyaki-explained",
+  },
 };
 
 const faqs = [
@@ -52,6 +55,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function HibachiVsTeppanyakiPage() {
   return (
     <ArticleLayout
@@ -61,6 +66,7 @@ export default function HibachiVsTeppanyakiPage() {
       heroAlt="Jinbeh hibachi chef creating dramatic onion volcano with flames on the tableside grill, demonstrating authentic teppanyaki cooking style"
       category="Japanese Cuisine"
       categorySlug="cuisine"
+      slug="hibachi-vs-teppanyaki-explained"
       publishDate="January 2026"
       readTime="7 min read"
       faqs={faqs}
@@ -321,7 +327,7 @@ export default function HibachiVsTeppanyakiPage() {
       <h2>Jinbeh's Teppanyaki Experience: Blending Tradition with Entertainment</h2>
 
       <p>
-        At Jinbeh Japanese Restaurant in <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, we've mastered the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>—what most people call "hibachi dining." Since 1988, we've been crafting experiences where exceptional Japanese cuisine meets genuine entertainment and warm hospitality.
+        At Jinbeh Japanese Restaurant in <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, we've mastered the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>—what most people call "hibachi dining." Since 1988, we've been crafting experiences where exceptional Japanese cuisine meets genuine entertainment and warm hospitality.
       </p>
 
       <p>
@@ -426,7 +432,7 @@ export default function HibachiVsTeppanyakiPage() {
       </p>
 
       <p>
-        Whether you're celebrating a birthday, planning a date night, or just wanting a meal that engages all your senses, we invite you to experience what makes teppanyaki dining unforgettable. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today.
+        Whether you're celebrating a birthday, planning a date night, or just wanting a meal that engages all your senses, we invite you to experience what makes teppanyaki dining unforgettable. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today.
       </p>
 
       {/* Related Content Links */}

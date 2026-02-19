@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     description: "Make Valentine's Day unforgettable with hibachi, sushi, and sake at Jinbeh. Two locations in Frisco & Lewisville.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://jinbeh.com/celebrations/valentines-day",
+  },
 };
 
 const faqSchema = {
@@ -71,15 +74,36 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Valentine's Day" },
+  ],
+};
+
 export default function ValentinesDayPage() {
   return (
     <>
       <Header />
       <main className="min-h-screen bg-warm-ivory">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+        {/* Breadcrumb */}
+        <nav className="bg-white border-b border-warm-ivory">
+          <div className="container mx-auto px-6 py-3">
+            <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+              <li><Link href="/" className="hover:text-accent-red">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/celebrations" className="hover:text-accent-red">Celebrations</Link></li>
+              <li>/</li>
+              <li className="text-charcoal font-medium">Valentine&apos;s Day</li>
+            </ol>
+          </div>
+        </nav>
 
         {/* Hero Section */}
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -103,13 +127,13 @@ export default function ValentinesDayPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Lewisville
@@ -352,11 +376,11 @@ export default function ValentinesDayPage() {
               </div>
               <p className="mt-6 text-sm text-charcoal/80">
                 Or reserve online:{" "}
-                <Link href="/frisco#reserve" className="text-deep-indigo hover:underline">
+                <Link href="/reservations" className="text-deep-indigo hover:underline">
                   Frisco OpenTable
                 </Link>{" "}
                 |{" "}
-                <Link href="/lewisville#reserve" className="text-deep-indigo hover:underline">
+                <Link href="/reservations" className="text-deep-indigo hover:underline">
                   Lewisville
                 </Link>
               </p>

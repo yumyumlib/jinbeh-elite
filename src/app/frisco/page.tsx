@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PhotoGallery from "@/components/PhotoGallery";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
+import HeritageCounter from "@/components/HeritageCounter";
 import locations from "@/data/locations.json";
 
 // Gallery items for Frisco
@@ -42,7 +43,7 @@ const restaurantSchema = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   name: location.fullName,
-  image: "https://jinbeh.com/images/frisco-exterior.jpg",
+  image: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: `${location.address.street} ${location.address.suite}`,
@@ -145,6 +146,15 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Frisco" },
+  ],
+};
+
 export default function FriscoPage() {
   return (
     <>
@@ -162,6 +172,12 @@ export default function FriscoPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(faqSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema),
           }}
         />
 
@@ -747,6 +763,11 @@ export default function FriscoPage() {
               <Link href="/nearby/allen" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Allen</Link>
             </div>
           </div>
+        </section>
+
+        {/* Heritage Counter */}
+        <section className="py-12 bg-warm-ivory">
+          <HeritageCounter className="" />
         </section>
 
         {/* Related Blog Posts */}

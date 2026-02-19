@@ -13,9 +13,11 @@ interface ArticleLayoutProps {
   heroAlt?: string;
   category: string;
   categorySlug: string;
+  slug: string;
   publishDate: string;
   readTime: string;
   faqs?: FAQItem[];
+  keyTakeaway?: string;
   children: React.ReactNode;
 }
 
@@ -26,13 +28,55 @@ export default function ArticleLayout({
   heroAlt,
   category,
   categorySlug,
+  slug,
   publishDate,
   readTime,
   faqs,
+  keyTakeaway,
   children,
 }: ArticleLayoutProps) {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": category, "item": `https://jinbeh.com/blog/category/${categorySlug}` },
+      { "@type": "ListItem", "position": 4, "name": title },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": metaDescription,
+    "image": heroImage ? `https://jinbeh.com${heroImage}` : "https://jinbeh.com/images/jinbeh-og.jpg",
+    "datePublished": publishDate,
+    "author": { "@type": "Organization", "name": "Jinbeh Japanese Restaurant" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Jinbeh Japanese Restaurant",
+      "logo": { "@type": "ImageObject", "url": "https://jinbeh.com/images/logos/jinbeh-logo.png" },
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `https://jinbeh.com/blog/${slug}` },
+  };
+
+  const faqSchema = faqs && faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
+    })),
+  } : null;
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {/* Breadcrumb */}
       <nav className="bg-soft-white border-b border-warm-ivory">
         <div className="container mx-auto px-6 py-3">
@@ -51,7 +95,7 @@ export default function ArticleLayout({
             <li>/</li>
             <li>
               <Link
-                href={`/blog?category=${categorySlug}`}
+                href={`/blog/category/${categorySlug}`}
                 className="hover:text-accent-red transition-colors"
               >
                 {category}
@@ -71,7 +115,7 @@ export default function ArticleLayout({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-6">
               <Link
-                href={`/blog?category=${categorySlug}`}
+                href={`/blog/category/${categorySlug}`}
                 className="bg-accent-red/10 text-accent-red px-4 py-1 rounded-full text-sm font-medium hover:bg-accent-red/20 transition-colors"
               >
                 {category}
@@ -112,6 +156,18 @@ export default function ArticleLayout({
         <div className="container mx-auto px-6 pb-16">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg prose-charcoal max-w-none">
+              {/* Key Takeaway Box */}
+              {keyTakeaway && (
+                <div className="not-prose bg-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 mb-10">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">💡</span>
+                    <div>
+                      <p className="font-heading font-bold text-charcoal text-sm uppercase tracking-wider mb-1">Key Takeaway</p>
+                      <p className="text-charcoal/80 leading-relaxed">{keyTakeaway}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
               {children}
             </div>
 

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Your guide to finding Yamazaki whiskey. Learn where to buy, tasting notes, and visit Jinbeh.",
         images: ["/images/beverages/JapaneseWhiskey.webp"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/yamazaki-whiskey-guide",
+  },
 };
 
 const schemas = [
@@ -26,16 +29,29 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+    { "@type": "ListItem", "position": 4, "name": "Yamazaki Whiskey: Complete Tasting Guide" },
+  ],
+};
+
 export default function YamazakiWhiskeyGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/JapaneseWhiskey.webp" alt="Yamazaki whiskey bottle elegant presentation" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-amber-700 mb-4">🥃 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Find Yamazaki Whiskey Nearby</h1>
@@ -125,7 +141,7 @@ export default function YamazakiWhiskeyGuide() {
 
                                 <div className="border-l-4 border-accent-red pl-6 py-4">
                                     <h3 className="text-lg font-bold text-charcoal mb-3">Bars & Restaurants</h3>
-                                    <p className="text-charcoal/80 mb-3">If you're not ready to commit to a full bottle, sampling Yamazaki at a local bar or restaurant is excellent. Many establishments with robust whiskey selections offer Yamazaki by the glass.</p>
+                                    <p className="text-charcoal/80 mb-3">If you're not ready to commit to a full bottle, sampling Yamazaki at a local bar or restaurant is excellent. Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link> features a curated Japanese whisky selection including Yamazaki by the glass.</p>
                                     <div className="bg-warm-ivory rounded-lg p-4 text-sm">
                                         <p className="font-semibold text-charcoal mb-2">Why This Works:</p>
                                         <ul className="text-charcoal/80 space-y-1">
@@ -182,7 +198,7 @@ export default function YamazakiWhiskeyGuide() {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-charcoal/80">A visit to Jinbeh is a delightful way to enjoy Yamazaki whiskey in a unique, sophisticated setting with professional guidance.</p>
+                                <p className="text-charcoal/80">A visit to Jinbeh is a delightful way to enjoy Yamazaki whiskey in a unique, sophisticated setting with professional guidance. Stop by during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits.</p>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
@@ -205,8 +221,8 @@ export default function YamazakiWhiskeyGuide() {
                                 <p className="mb-6 text-white/90">Visit Jinbeh to discover premium Yamazaki whiskey paired with exceptional Japanese hibachi and authentic cuisine, guided by our knowledgeable staff. Whether you choose our Frisco or Lewisville location, we offer the gracious hospitality that makes Yamazaki experiences truly memorable.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                    <Link href="/locations/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Frisco Location</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
+                                    <Link href="/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Frisco Location</Link>
                                     <Link href="/reservations" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Reserve Now</Link>
                                 </div>
                             </div>
@@ -216,11 +232,11 @@ export default function YamazakiWhiskeyGuide() {
                             <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
                                 <h3 className="font-heading font-bold mb-4">Related Reads</h3>
                                 <div className="space-y-3">
-                                    {[{ t: "Japanese Whiskey's Global Rise", s: "/blog/japanese-whiskey-guide", i: "/images/blog/20-C060324-6771.jpg" },
-                                    { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6751.jpg" },
+                                    {[{ t: "Japanese Whiskey's Global Rise", s: "/blog/japanese-whiskey-guide", i: "/images/blog/20-C060324-6766.jpg" },
+                                    { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6754.jpg" },
                                     { t: "Best Happy Hour Frisco", s: "/blog/best-happy-hour-frisco-tx", i: "/images/blog/10-C060324-6501.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt="" fill className="object-cover" /></div>
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
                                             <span className="text-sm group-hover:text-accent-red transition">{r.t}</span>
                                         </Link>
                                     ))}

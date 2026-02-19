@@ -69,31 +69,35 @@ export default function JinbehExperience() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block bg-soft-gold/20 text-soft-gold text-sm font-semibold px-6 py-2 rounded-full mb-6 border border-soft-gold/30 tracking-wide">
-            WHAT MAKES JINBEH DIFFERENT
+            WHY JINBEH
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
             Not Just Dinner—
             <br />
             <span className="text-soft-gold">A Memory</span>
           </h2>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Family-owned since 1988. Never a chain. Here&apos;s why over 1,200 reviewers give us five stars.
+          <p className="text-lg text-white/80 max-w-xl mx-auto">
+            Family-owned since &apos;88. Over 1,200 five-star reviews.
           </p>
         </div>
 
         {/* Desktop: Side-by-side layout with image transition */}
         <div className="hidden lg:grid lg:grid-cols-2 gap-16 items-center mb-16">
-          {/* Left: Image */}
+          {/* Left: Image with crossfade */}
           <div className="relative">
             <div className="aspect-[4/3] relative rounded-3xl overflow-hidden shadow-2xl border-4 border-soft-gold/40 transform hover:scale-[1.02] transition-transform duration-500">
-              <Image
-                src={reasons[activeReason].image}
-                alt={reasons[activeReason].imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority={activeReason === 0}
-              />
+              {reasons.map((reason, index) => (
+                <Image
+                  key={index}
+                  src={reason.image}
+                  alt={reason.imageAlt}
+                  fill
+                  className={`object-cover transition-opacity duration-700 ease-in-out ${activeReason === index ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority={index === 0}
+                />
+              ))}
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -117,11 +121,10 @@ export default function JinbehExperience() {
                 <button
                   key={index}
                   onClick={() => setActiveReason(index)}
-                  className={`py-4 px-4 rounded-xl font-bold transition-all duration-300 text-sm ${
-                    activeReason === index
-                      ? 'bg-soft-gold text-charcoal shadow-xl scale-105'
-                      : 'bg-white/10 text-white hover:bg-white/20 hover:scale-102'
-                  }`}
+                  className={`py-4 px-4 rounded-xl font-bold transition-all duration-300 text-sm ${activeReason === index
+                    ? 'bg-soft-gold text-charcoal shadow-xl scale-105'
+                    : 'bg-white/10 text-white hover:bg-white/20 hover:scale-102'
+                    }`}
                   aria-label={`View: ${reason.label}`}
                 >
                   {reason.label}
@@ -167,14 +170,14 @@ export default function JinbehExperience() {
         {/* CTA */}
         <div className="text-center bg-gradient-to-br from-deep-indigo to-charcoal rounded-3xl p-10 md:p-12 border-2 border-soft-gold/20 shadow-2xl">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            See What the Buzz Is About
+            Your Table Is Waiting
           </h3>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Over 1,200 five-star reviews. 37 years of tradition. Two locations in DFW.
+          <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
+            1,200+ five-star reviews. Two locations. One unforgettable night.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/frisco#reserve"
+              href="/reservations"
               className="inline-flex items-center justify-center gap-3 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-8 py-5 rounded-xl font-bold text-lg transition-all shadow-2xl hover:scale-105 hover:shadow-soft-gold/50"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Best Seafood Restaurants in Dallas TX: Top Picks | Jinbeh",
     description: "Discover the best seafood restaurants in Dallas, from upscale dining at The Oceanaire to fresh markets. Explore top seafood spots and Japanese sushi at Jinbeh.",
     keywords: ["best seafood dallas", "seafood restaurants dallas tx", "fresh sushi dallas", "seafood dining dallas"],
+  openGraph: {
+    title: "Best Seafood Restaurants in Dallas TX",
+    description: "Craving fresh seafood in Dallas? From sushi-grade fish to grilled catches, discover the best seafood restaurants across DFW.",
+    url: "https://jinbeh.com/blog/best-seafood-dallas",
+    type: "article",
+    images: ["/images/blog/19-C060324-6754.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/best-seafood-dallas",
+  },
 };
 
 const faqs = [
@@ -27,9 +37,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Best Seafood Restaurants in Dallas TX" },
+  ],
+};
+
 export default function BestSeafoodDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -37,7 +60,7 @@ export default function BestSeafoodDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Dining</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Dining</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🦞 Seafood Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Seafood Restaurants in Dallas TX</h1>
@@ -110,7 +133,7 @@ export default function BestSeafoodDallas() {
                             </div>
 
                             <div className="mt-6 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-                                <p className="text-charcoal/80">Discover more about our offerings at <Link href="/locations/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>. Check out our <Link href="/menu" className="text-accent-red hover:underline font-semibold">full menu</Link> and <Link href="/reservations" className="text-accent-red hover:underline font-semibold">make a reservation</Link> today.</p>
+                                <p className="text-charcoal/80">Discover more about our offerings at <Link href="/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>. Check out our <Link href="/menu" className="text-accent-red hover:underline font-semibold">full menu</Link> and <Link href="/reservations" className="text-accent-red hover:underline font-semibold">make a reservation</Link> today.</p>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏪 Seafood Markets Worth Exploring</h2>

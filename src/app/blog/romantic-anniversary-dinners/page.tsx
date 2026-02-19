@@ -18,7 +18,10 @@ export const metadata: Metadata = {
     title: "Romantic Anniversary Dinners Near Me: Top Spots",
     description:
       "Find the perfect romantic restaurant for your anniversary. Discover intimate venues with exquisite cuisine and unforgettable atmosphere.",
-    images: ["/images/photoshoot/celebration-table.jpg"],
+    images: ["/images/instagram/lobster-spread-overhead.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/romantic-anniversary-dinners",
   },
 };
 
@@ -55,6 +58,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function RomanticAnniversaryDinnersPage() {
   return (
     <ArticleLayout
@@ -64,6 +69,7 @@ export default function RomanticAnniversaryDinnersPage() {
       heroAlt="Romantic candlelit dinner table with elegant place settings and soft lighting"
       category="Celebrations"
       categorySlug="celebrations"
+      slug="romantic-anniversary-dinners"
       publishDate="January 2026"
       readTime="8 min read"
       faqs={faqs}
@@ -102,7 +108,7 @@ export default function RomanticAnniversaryDinnersPage() {
         Consider the cuisine you both enjoy. Whether it's Italian, French, Asian
         fusion, or something unexpected, finding a menu catering to your tastes
         is important. Discuss with your partner what cuisine excites you both
-        most. Exploring new cuisines can add an adventurous twist, surprising
+        most. For an unforgettable experience, explore the best <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date night restaurants in Frisco</Link>. Exploring new cuisines can add an adventurous twist, surprising
         and delighting your partner.
       </p>
 
@@ -156,9 +162,9 @@ export default function RomanticAnniversaryDinnersPage() {
       <p>
         The modern decor and serene atmosphere create an intimate setting ideal
         for celebrating your love. Whether you choose sushi, sashimi, or the
-        captivating hibachi experience, Jinbeh promises an unforgettable
+        captivating <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi experience</Link>, Jinbeh promises an unforgettable
         culinary journey. Each dish is crafted with precision, highlighting the
-        delicate balance of flavors Japanese cuisine is renowned for.
+        delicate balance of flavors Japanese cuisine is renowned for. Complete the experience with a perfect <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> chosen by our knowledgeable staff.
       </p>
 
       <p>
@@ -174,7 +180,7 @@ export default function RomanticAnniversaryDinnersPage() {
         Hibachi dining offers something unique for anniversaries. The
         interactive nature of watching a skilled chef prepare your meal adds
         entertainment and spectacle. Flames dance, knives flash, and food
-        becomes edible art—creating memorable moments you'll share together.
+        becomes edible art—creating memorable moments you'll share together. Planning a birthday instead? Check out our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party ideas</Link>.
       </p>
 
       <p>
@@ -311,7 +317,16 @@ export default function RomanticAnniversaryDinnersPage() {
       <p>
         Mention your anniversary when booking for special touches that make your
         celebration extra memorable. From private dining to personalized service,
-        we're committed to creating a romantic evening you'll treasure.
+        we're committed to creating a romantic evening you'll treasure. Surprise
+        your partner with a{" "}
+        <Link href="/gift-cards" className="text-accent-red hover:underline">
+          Jinbeh gift card
+        </Link>{" "}
+        for a future date night, or check our{" "}
+        <Link href="/specials" className="text-accent-red hover:underline">
+          current specials
+        </Link>{" "}
+        for the best value.
       </p>
 
       <h2>Conclusion</h2>

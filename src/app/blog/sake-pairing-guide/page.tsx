@@ -21,6 +21,9 @@ export const metadata: Metadata = {
         description: "Elevate your Japanese dining experience with expert sake pairing recommendations.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/sake-pairing-guide",
+  },
 };
 
 const faqs = [
@@ -82,9 +85,22 @@ const faqSchema = {
     })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+    { "@type": "ListItem", "position": 4, "name": "Sake Pairing Guide: Perfect Matches for Every Dish" },
+  ],
+};
+
 export default function SakePairingGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -644,9 +660,9 @@ export default function SakePairingGuide() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍷 Beverages</Link>
-                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍽️ Dining</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🍣 Cuisine</Link>
+                                        <Link href="/blog/category/beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍷 Beverages</Link>
+                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍽️ Dining</Link>
                                     </div>
                                 </div>
                             </div>

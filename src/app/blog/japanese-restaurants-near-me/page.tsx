@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Open Japanese Restaurants Near Me: Find the Best | Jinbeh",
     description: "Discover the best open Japanese restaurants near you. Enjoy authentic sushi, ramen, and teppanyaki with our guide and local insights.",
     keywords: ["japanese restaurants near me", "sushi near me", "ramen restaurant", "japanese steakhouse", "teppanyaki near me", "authentic japanese food"],
+  openGraph: {
+    title: "Japanese Restaurants Near Me in DFW",
+    description: "Looking for Japanese restaurants near you in Dallas-Fort Worth? From authentic hibachi to fresh sushi, find the best Japanese dining options.",
+    url: "https://jinbeh.com/blog/japanese-restaurants-near-me",
+    type: "article",
+    images: ["/images/frisco/JinbehFriscoTables.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/japanese-restaurants-near-me",
+  },
 };
 
 const faqs = [
@@ -27,9 +37,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Japanese Restaurants Near Me in DFW" },
+  ],
+};
+
 export default function JapaneseRestaurantsNearMe() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
@@ -37,7 +60,7 @@ export default function JapaneseRestaurantsNearMe() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Restaurants Near Me</h1>
@@ -215,8 +238,8 @@ export default function JapaneseRestaurantsNearMe() {
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍜 Reserve Your Table Today</h3>
                                 <p className="text-white/80 mb-6">Experience authentic Japanese cuisine, hibachi performances, and exceptional service at Jinbeh.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Reservations</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Reservations</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Reservations</Link>
+                                    <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Reservations</Link>
                                     <Link href="/reservations" className="bg-white/20 border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition">View Reservation Info</Link>
                                 </div>
                             </div>

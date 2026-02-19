@@ -19,6 +19,9 @@ export const metadata: Metadata = {
         description: "Your guide to the best happy hour deals in Frisco, Texas.",
         images: ["/images/blog/10-C060324-6501.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/best-happy-hour-frisco-tx",
+  },
 };
 
 const articleSchema = {
@@ -55,9 +58,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+    { "@type": "ListItem", "position": 4, "name": "Best Happy Hour Frisco TX: Top Spots & Deals" },
+  ],
+};
+
 export default function BestHappyHourFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -78,7 +94,7 @@ export default function BestHappyHourFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=best-of" className="hover:text-white">Tips & Guides</Link>
+                        <Link href="/blog/category/best-of" className="hover:text-white">Tips & Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -222,7 +238,7 @@ export default function BestHappyHourFrisco() {
                                         <li><strong>Fresh sushi rolls</strong> — Not pre-made, not sitting out. Made to order.</li>
                                         <li><strong>Real sake selection</strong> — Not just one house option. Multiple premium choices.</li>
                                         <li><strong>Actual savings</strong> — Up to 30% off select items during happy hour.</li>
-                                        <li><strong>Great atmosphere</strong> — Perfect for dates, coworkers, or solo unwinding.</li>
+                                        <li><strong>Great atmosphere</strong> — Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
                                     </ul>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -230,7 +246,7 @@ export default function BestHappyHourFrisco() {
                                     </h2>
 
                                     <p>
-                                        <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Jinbeh Frisco location</Link> is just minutes from Stonebriar Centre on Preston Road—perfect
+                                        <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Jinbeh Frisco location</Link> is just minutes from Stonebriar Centre on Preston Road—perfect
                                         for a post-shopping drink or meeting friends after work. Easy parking and
                                         a welcoming bar area make it a no-stress stop. Visit us to <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> for happy hour.
                                     </p>
@@ -319,7 +335,7 @@ export default function BestHappyHourFrisco() {
                                         <Link href="/happy-hour" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             View Happy Hour Menu
                                         </Link>
-                                        <Link href="/frisco#reserve" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             Reserve a Spot
                                         </Link>
                                     </div>
@@ -356,9 +372,9 @@ export default function BestHappyHourFrisco() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=best-of" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/20 text-soft-gold">✨ Tips & Guides</Link>
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍶 Beverages</Link>
-                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📍 Locations</Link>
+                                        <Link href="/blog/category/best-of" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/20 text-soft-gold">✨ Tips & Guides</Link>
+                                        <Link href="/blog/category/beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍶 Beverages</Link>
+                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📍 Locations</Link>
                                     </div>
                                 </div>
                             </div>

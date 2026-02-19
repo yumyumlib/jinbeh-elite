@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide",
     description:
       "Fire, food, and fun—discover why hibachi makes the perfect birthday celebration for kids and adults alike.",
-    images: ["/images/photoshoot/celebration-table.jpg"],
+    images: ["/images/instagram/lobster-spread-overhead.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-birthday-party-ideas",
   },
 };
 
@@ -56,6 +59,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function HibachiBirthdayPartyIdeasPage() {
   return (
     <ArticleLayout
@@ -65,9 +70,11 @@ export default function HibachiBirthdayPartyIdeasPage() {
       heroAlt="Family celebrating birthday at Jinbeh hibachi restaurant in Frisco TX"
       category="Celebrations"
       categorySlug="celebrations"
+      slug="hibachi-birthday-party-ideas"
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
+      keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect $35–$50 per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
     >
       <p>
         Fire shoots up from the onion volcano. The whole table gasps, then laughs.
@@ -79,7 +86,11 @@ export default function HibachiBirthdayPartyIdeasPage() {
         We've hosted thousands of birthday celebrations at Jinbeh since 1988.
         From 5-year-olds mesmerized by flames to 50th birthday bashes with
         sake toasts, we've seen what makes hibachi parties work—and what can
-        go wrong without proper planning.
+        go wrong without proper planning. Not sure what to give the birthday person? A{" "}
+        <Link href="/gift-cards" className="text-accent-red hover:underline">
+          Jinbeh gift card
+        </Link>{" "}
+        is always the perfect present.
       </p>
 
       <p>
@@ -176,7 +187,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
         <li>Your exact party size (don't estimate—count heads)</li>
         <li>Age of the birthday person (helps chef calibrate the show)</li>
         <li>Any dietary restrictions or allergies</li>
-        <li>If you want the group seated together at one grill</li>
+        <li>If you want the group seated together at one grill—for large parties, ask about our <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options</li>
       </ul>
 
       <p>

@@ -116,7 +116,7 @@
             "relatedPosts": [
                 "best-hibachi-dallas",
                 "large-group-dining",
-                "free-birthday-deals"
+                "free-birthday-food-deals"
             ]
         },
         {
@@ -163,7 +163,7 @@
             "relatedPosts": [
                 "beginner-sushi-tips",
                 "best-sushi-frisco",
-                "omakase-experience"
+                "omakase-dining-guide"
             ]
         },
         {
@@ -232,7 +232,7 @@
             "relatedPosts": [
                 "best-happy-hour-frisco-tx",
                 "beginner-sushi-tips",
-                "omakase-experience"
+                "omakase-dining-guide"
             ]
         },
         {
@@ -328,30 +328,7 @@
             ]
         },
         {
-            "slug": "omakase-experience",
-            "title": "Omakase Experience: The Art of Chef's Choice",
-            "excerpt": "What is omakase? Learn about this premium Japanese dining tradition where the chef creates a personalized tasting menu just for you.",
-            "category": "cuisine",
-            "primaryKeyword": "omakase",
-            "secondaryKeywords": [
-                "omakase dining",
-                "chef's choice sushi",
-                "premium sushi experience"
-            ],
-            "heroImage": "/images/blog/15-C060324-6663.jpg",
-            "heroVideo": null,
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-28",
-            "readTime": 7,
-            "featured": false,
-            "relatedPosts": [
-                "types-of-sushi",
-                "best-sushi-frisco",
-                "japanese-beverages-guide"
-            ]
-        },
-        {
-            "slug": "free-birthday-deals",
+            "slug": "free-birthday-food-deals",
             "title": "Free Birthday Food Deals in DFW",
             "excerpt": "Score free birthday food and deals across Dallas-Fort Worth! From restaurant rewards to special birthday treatments, celebrate without breaking the bank.",
             "category": "celebrations",
@@ -416,7 +393,7 @@
             "relatedPosts": [
                 "best-sushi-frisco",
                 "types-of-sushi",
-                "omakase-experience"
+                "omakase-dining-guide"
             ]
         },
         {
@@ -682,7 +659,7 @@
             "featured": false,
             "relatedPosts": [
                 "hibachi-birthday-party-ideas",
-                "free-birthday-deals",
+                "free-birthday-food-deals",
                 "adult-birthday-party-ideas"
             ]
         },
@@ -890,7 +867,7 @@
             "relatedPosts": [
                 "hibachi-birthday-party-ideas",
                 "adult-birthday-party-ideas",
-                "free-birthday-deals"
+                "free-birthday-food-deals"
             ]
         },
         {
@@ -957,7 +934,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "free-birthday-deals",
+                "free-birthday-food-deals",
                 "hibachi-birthday-party-ideas",
                 "birthday-celebration-restaurants"
             ]
@@ -1141,7 +1118,7 @@
             "readTime": 5,
             "featured": false,
             "relatedPosts": [
-                "free-birthday-deals",
+                "free-birthday-food-deals",
                 "hibachi-birthday-party-ideas",
                 "best-sushi-frisco"
             ]
@@ -1489,6 +1466,190 @@
                 "large-group-dining",
                 "best-hibachi-dallas",
                 "romantic-anniversary-dinners"
+            ]
+        },
+        {
+            "slug": "best-restaurants-stonebriar",
+            "title": "Best Restaurants Near Stonebriar Mall Frisco TX",
+            "excerpt": "Discover the best restaurants near Stonebriar Mall in Frisco TX. From hibachi and sushi at Jinbeh to upscale dining and casual favorites—your complete guide.",
+            "category": "local-guides",
+            "primaryKeyword": "restaurants near stonebriar mall",
+            "secondaryKeywords": [
+                "best restaurants frisco tx",
+                "stonebriar centre dining",
+                "restaurants near stonebriar frisco",
+                "where to eat stonebriar"
+            ],
+            "heroImage": "/images/blog/3-C060324-6364.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 8,
+            "featured": true,
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "best-happy-hour-frisco-tx",
+                "things-to-do-frisco"
+            ]
+        },
+        {
+            "slug": "best-steakhouses-lewisville",
+            "title": "Top Steakhouses in Lewisville TX: Best Steak Spots",
+            "excerpt": "Discover the best steakhouses in Lewisville TX. From Jinbeh's sizzling hibachi filet mignon to classic Texas steakhouse experiences—find your perfect steak dinner.",
+            "category": "local-guides",
+            "primaryKeyword": "steakhouses lewisville tx",
+            "secondaryKeywords": [
+                "best steak lewisville",
+                "steak restaurants lewisville texas",
+                "hibachi steak lewisville",
+                "japanese steakhouse lewisville"
+            ],
+            "heroImage": "/images/blog/5-C060324-6397.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 7,
+            "featured": true,
+            "relatedPosts": [
+                "hibachi-dining-experience",
+                "hibachi-vs-teppanyaki-explained",
+                "best-hibachi-dallas-tx"
+            ]
+        },
+        {
+            "slug": "sushi-platters-near-me",
+            "title": "Sushi Platters Near Me: Party Trays & Catering in DFW",
+            "excerpt": "Order sushi platters near you in DFW! Jinbeh offers party trays, catering platters, and custom sushi selections for events. Fresh fish, expert rolls, since 1988.",
+            "category": "cuisine",
+            "primaryKeyword": "sushi platters near me",
+            "secondaryKeywords": [
+                "sushi party tray",
+                "sushi catering dallas",
+                "sushi platter frisco",
+                "japanese catering near me"
+            ],
+            "heroImage": "/images/blog/7-C060324-6447.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 8,
+            "featured": true,
+            "relatedPosts": [
+                "types-of-sushi",
+                "jinbeh-catering-services",
+                "sushi-identification-chart"
+            ]
+        },
+        {
+            "slug": "japanese-takeout-near-me",
+            "title": "Japanese Takeout Near Me: Your Complete DFW Guide",
+            "excerpt": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbeh.",
+            "category": "local-guides",
+            "primaryKeyword": "japanese takeout near me",
+            "secondaryKeywords": [
+                "sushi takeout frisco",
+                "japanese food delivery",
+                "bento box takeout",
+                "hibachi takeout near me"
+            ],
+            "heroImage": "/images/blog/8-C060324-6462.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "types-of-sushi",
+                "hibachi-lunch-ideas",
+                "sushi-platters-near-me"
+            ]
+        },
+        {
+            "slug": "things-to-do-frisco",
+            "title": "Things to Do in Frisco TX: Your Ultimate Guide",
+            "excerpt": "Discover the best things to do in Frisco TX! From The Star to Stonebriar, top attractions, family activities, and where to eat—end your day at Jinbeh since 1988.",
+            "category": "local-guides",
+            "primaryKeyword": "things to do in frisco tx",
+            "secondaryKeywords": [
+                "frisco texas activities",
+                "frisco tx attractions",
+                "what to do in frisco",
+                "frisco restaurants and activities"
+            ],
+            "heroImage": "/images/blog/15-C060324-6663.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 8,
+            "featured": false,
+            "relatedPosts": [
+                "best-restaurants-stonebriar",
+                "best-sushi-frisco",
+                "best-happy-hour-frisco-tx"
+            ]
+        },
+        {
+            "slug": "beer-hard-seltzer",
+            "title": "Beer & Hard Seltzer: Jinbeh's Japanese Twist",
+            "excerpt": "Explore Jinbeh's Japanese beer and hard seltzer selection. Sapporo on tap, Asahi, Kirin Ichiban, and craft seltzers—perfectly paired with hibachi and sushi.",
+            "category": "beverages",
+            "primaryKeyword": "japanese beer",
+            "secondaryKeywords": [
+                "sapporo beer",
+                "japanese hard seltzer",
+                "beer with sushi",
+                "beer with hibachi"
+            ],
+            "heroImage": "/images/blog/6-C060324-6405.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "sake-pairing-guide",
+                "japanese-cocktails",
+                "international-beer-day"
+            ]
+        },
+        {
+            "slug": "fast-casual-dining-jinbeh",
+            "title": "Fast Casual Japanese Dining at Jinbeh",
+            "excerpt": "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi—without sacrificing quality since 1988.",
+            "category": "cuisine",
+            "primaryKeyword": "fast casual japanese",
+            "secondaryKeywords": [
+                "quick japanese lunch",
+                "japanese restaurant near me",
+                "bento box lunch",
+                "quick sushi lunch"
+            ],
+            "heroImage": "/images/blog/9-C060324-6493.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 5,
+            "featured": false,
+            "relatedPosts": [
+                "hibachi-lunch-ideas",
+                "japanese-takeout-near-me",
+                "types-of-sushi"
+            ]
+        },
+        {
+            "slug": "international-beer-day",
+            "title": "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
+            "excerpt": "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban—perfectly paired with hibachi and sushi since 1988.",
+            "category": "beverages",
+            "primaryKeyword": "international beer day",
+            "secondaryKeywords": [
+                "japanese beer celebration",
+                "sapporo happy hour",
+                "beer day specials",
+                "japanese beer near me"
+            ],
+            "heroImage": "/images/blog/6-C060324-6405.jpg",
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-18",
+            "readTime": 5,
+            "featured": false,
+            "relatedPosts": [
+                "beer-hard-seltzer",
+                "sake-pairing-guide",
+                "japanese-cocktails"
             ]
         }
     ]

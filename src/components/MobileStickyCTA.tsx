@@ -46,7 +46,7 @@ export default function MobileStickyCTA({
 
     return (
         <div
-            className={`fixed bottom-0 left-0 right-0 z-50 lg:hidden transform transition-transform duration-300 ${isVisible ? "translate-y-0" : "translate-y-full"
+            className={`fixed bottom-0 left-0 right-0 z-40 lg:hidden transform transition-transform duration-300 ${isVisible ? "translate-y-0" : "translate-y-full"
                 }`}
         >
             {/* Gradient fade above buttons */}

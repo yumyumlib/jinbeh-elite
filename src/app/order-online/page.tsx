@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 // Note: Metadata is defined at the bottom after the component for proper export
 
@@ -17,7 +18,7 @@ const restaurantSchema = {
     address: [
         {
             "@type": "PostalAddress",
-            streetAddress: "3200 Dallas Pkwy Suite 115",
+            streetAddress: "2693 Preston Rd Suite 1040",
             addressLocality: "Frisco",
             addressRegion: "TX",
             postalCode: "75034",
@@ -25,14 +26,14 @@ const restaurantSchema = {
         },
         {
             "@type": "PostalAddress",
-            streetAddress: "400 W Main St Suite 115",
+            streetAddress: "2440 S Stemmons Fwy #A",
             addressLocality: "Lewisville",
             addressRegion: "TX",
-            postalCode: "75057",
+            postalCode: "75067",
             addressCountry: "US",
         },
     ],
-    telephone: ["+1-972-668-1100", "+1-972-315-3982"],
+    telephone: ["+1-214-619-1200", "+1-214-488-2224"],
     url: "https://jinbeh.com",
     servesCuisine: "Japanese",
     priceRange: "$$",
@@ -40,7 +41,7 @@ const restaurantSchema = {
         "@type": "OrderAction",
         target: {
             "@type": "EntryPoint",
-            urlTemplate: "https://www.doordash.com/store/jinbeh-japanese-restaurant-frisco-2408978/",
+            urlTemplate: "https://www.ubereats.com/store/jinbeh-frisco/0oug5xCoWo6bu5zODsyi_A/15b0bf12-93ff-47a1-bff2-439f0a6e9905",
             actionPlatform: ["DesktopWebPlatform", "MobileWebPlatform"],
         },
     },
@@ -159,11 +160,11 @@ export default function OrderOnlinePage() {
         },
         {
             question: "Is there a minimum order for delivery?",
-            answer: "Minimum order amounts vary by delivery platform and location. DoorDash typically requires $15+ orders, while UberEats requires $20+. These minimums are set by the delivery platforms. We recommend checking your preferred app for current minimums.",
+            answer: "Minimum order amounts vary by delivery platform and location. Minimums are set by the delivery platforms and typically range from $15–$20. We recommend checking Uber Eats or Grubhub for current minimums.",
         },
         {
             question: "Can I order for a large party?",
-            answer: "Absolutely! For orders of 15+ items, we recommend calling directly: Frisco (972-668-1100) or Lewisville (972-315-3982). We can often provide better pricing on bulk orders and ensure everything arrives hot and fresh. We can prepare special requests with advance notice.",
+            answer: "Absolutely! For orders of 15+ items, we recommend calling directly: Frisco (214) 619-1200 or Lewisville (214) 488-2224. We can often provide better pricing on bulk orders and ensure everything arrives hot and fresh. We can prepare special requests with advance notice.",
         },
         {
             question: "What are your delivery hours?",
@@ -171,7 +172,7 @@ export default function OrderOnlinePage() {
         },
         {
             question: "Do you offer curbside pickup?",
-            answer: "Yes! Both locations offer quick curbside pickup. When placing your order via phone, let us know you'll be picking up curbside. We'll have your order ready at the appointed time. Call Frisco (972-668-1100) or Lewisville (972-315-3982).",
+            answer: "Yes! Both locations offer quick curbside pickup. When placing your order via phone, let us know you'll be picking up curbside. We'll have your order ready at the appointed time. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
         },
         {
             question: "Can I customize my order?",
@@ -266,7 +267,7 @@ export default function OrderOnlinePage() {
                 />
 
                 {/* Hero Section */}
-                <section className="relative py-24 bg-gradient-to-br from-charcoal to-deep-indigo text-white overflow-hidden">
+                <HeroSection className="py-24 bg-gradient-to-br from-charcoal to-deep-indigo text-white">
                     {/* Background pattern */}
                     <div className="absolute inset-0 opacity-10">
                         <div className="absolute top-0 right-0 w-96 h-96 bg-accent-red rounded-full mix-blend-multiply blur-3xl"></div>
@@ -276,7 +277,7 @@ export default function OrderOnlinePage() {
                     <div className="relative container mx-auto px-6">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             {/* Left: Text Content */}
-                            <div>
+                            <RevealSection direction="left">
                                 <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
                                     Order Authentic Japanese Cuisine
                                 </h1>
@@ -294,22 +295,24 @@ export default function OrderOnlinePage() {
                                         View Full Menu
                                     </Link>
                                 </div>
-                            </div>
+                            </RevealSection>
 
                             {/* Right: Visual Element */}
-                            <div className="relative h-96 bg-gradient-to-br from-accent-red/20 to-deep-indigo/20 rounded-3xl overflow-hidden border-4 border-soft-gold/30">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="text-center">
-                                        <div className="text-9xl mb-4">🍱</div>
-                                        <p className="text-2xl font-heading font-bold text-white">
-                                            Fresh. Fast. Delicious.
-                                        </p>
+                            <RevealSection direction="right" delay={200}>
+                                <div className="relative h-96 bg-gradient-to-br from-accent-red/20 to-deep-indigo/20 rounded-3xl overflow-hidden border-4 border-soft-gold/30">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="text-center">
+                                            <div className="text-9xl mb-4">🍱</div>
+                                            <p className="text-2xl font-heading font-bold text-white">
+                                                Fresh. Fast. Delicious.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </RevealSection>
                         </div>
                     </div>
-                </section>
+                </HeroSection>
 
                 {/* Quick Order CTA */}
                 <section className="py-8 bg-accent-red text-white">
@@ -329,193 +332,167 @@ export default function OrderOnlinePage() {
                 <section className="py-20">
                     <div className="container mx-auto px-6">
                         <div className="max-w-6xl mx-auto">
-                            <h2 className="text-4xl font-heading font-bold text-charcoal text-center mb-4">
-                                Choose Your Location
-                            </h2>
-                            <p className="text-center text-charcoal/70 text-lg mb-16 max-w-2xl mx-auto">
-                                Select your nearest Jinbeh location to order online or by phone
-                            </p>
+                            <RevealSection>
+                                <h2 className="text-4xl font-heading font-bold text-charcoal text-center mb-4">
+                                    Choose Your Location
+                                </h2>
+                                <p className="text-center text-charcoal/70 text-lg mb-16 max-w-2xl mx-auto">
+                                    Select your nearest Jinbeh location to order online or by phone
+                                </p>
+                            </RevealSection>
 
                             <div className="grid md:grid-cols-2 gap-12">
                                 {/* Frisco Location */}
-                                <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                                    {/* Header */}
-                                    <div className="bg-gradient-to-r from-accent-red to-soft-gold p-8 text-white">
-                                        <h3 className="text-3xl font-heading font-bold mb-2">🏯 Frisco</h3>
-                                        <p className="text-white/90">3200 Dallas Pkwy Suite 115</p>
-                                        <p className="text-white/80">Near Stonebriar Centre</p>
-                                    </div>
+                                <RevealSection delay={100} direction="left">
+                                    <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        {/* Header */}
+                                        <div className="bg-gradient-to-r from-accent-red to-soft-gold p-8 text-white">
+                                            <h3 className="text-3xl font-heading font-bold mb-2">🏯 Frisco</h3>
+                                            <p className="text-white/90">2693 Preston Rd Suite 1040</p>
+                                            <p className="text-white/80">Near Stonebriar Centre</p>
+                                        </div>
 
-                                    {/* Phone Ordering */}
-                                    <div className="p-8 border-b border-warm-ivory">
-                                        <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
-                                            <span className="text-2xl">☎️</span> Phone Ordering
-                                        </h4>
-                                        <a
-                                            href="tel:972-668-1100"
-                                            className="inline-flex items-center gap-2 bg-deep-indigo text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal transition-colors w-full justify-center mb-2"
-                                        >
-                                            <span>📱</span>
-                                            Call (972) 668-1100
-                                        </a>
-                                        <p className="text-sm text-charcoal/80 mt-3">
-                                            Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
-                                        </p>
-                                    </div>
-
-                                    {/* Delivery Apps */}
-                                    <div className="p-8">
-                                        <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
-                                            <span className="text-2xl">🚚</span> Order for Delivery
-                                        </h4>
-                                        <div className="space-y-3">
+                                        {/* Phone Ordering */}
+                                        <div className="p-8 border-b border-warm-ivory">
+                                            <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
+                                                <span className="text-2xl">☎️</span> Phone Ordering
+                                            </h4>
                                             <a
-                                                href="https://www.doordash.com/store/jinbeh-japanese-restaurant-frisco-2408978/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
+                                                href="tel:214-619-1200"
+                                                className="inline-flex items-center gap-2 bg-deep-indigo text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal transition-colors w-full justify-center mb-2"
                                             >
-                                                <span className="text-3xl">🍔</span>
-                                                <div className="flex-1">
-                                                    <p className="font-semibold text-charcoal">DoorDash</p>
-                                                    <p className="text-sm text-charcoal/80">30-45 min delivery</p>
-                                                </div>
-                                                <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
+                                                <span>📱</span>
+                                                Call (214) 619-1200
                                             </a>
+                                            <p className="text-sm text-charcoal/80 mt-3">
+                                                Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
+                                            </p>
+                                        </div>
 
-                                            <a
-                                                href="https://www.ubereats.com/store/jinbeh-japanese-steak-and-sushi/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
-                                            >
-                                                <span className="text-3xl">🚗</span>
-                                                <div className="flex-1">
-                                                    <p className="font-semibold text-charcoal">UberEats</p>
-                                                    <p className="text-sm text-charcoal/80">25-40 min delivery</p>
-                                                </div>
-                                                <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
+                                        {/* Delivery Apps */}
+                                        <div className="p-8">
+                                            <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
+                                                <span className="text-2xl">🚚</span> Order for Delivery
+                                            </h4>
+                                            <div className="space-y-3">
+                                                <a
+                                                    href="https://www.ubereats.com/store/jinbeh-frisco/0oug5xCoWo6bu5zODsyi_A/15b0bf12-93ff-47a1-bff2-439f0a6e9905"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
+                                                >
+                                                    <span className="text-3xl">🚗</span>
+                                                    <div className="flex-1">
+                                                        <p className="font-semibold text-charcoal">Uber Eats</p>
+                                                        <p className="text-sm text-charcoal/80">25-40 min delivery</p>
+                                                    </div>
+                                                    <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                    </svg>
+                                                </a>
 
-                                            <a
-                                                href="https://www.grubhub.com"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
-                                            >
-                                                <span className="text-3xl">🍕</span>
-                                                <div className="flex-1">
-                                                    <p className="font-semibold text-charcoal">Grubhub</p>
-                                                    <p className="text-sm text-charcoal/80">30-50 min delivery</p>
-                                                </div>
-                                                <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
+                                                <a
+                                                    href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-frisco-2693-preston-rd-frisco/2134962"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
+                                                >
+                                                    <span className="text-3xl">🛵</span>
+                                                    <div className="flex-1">
+                                                        <p className="font-semibold text-charcoal">Grubhub</p>
+                                                        <p className="text-sm text-charcoal/80">30-50 min delivery</p>
+                                                    </div>
+                                                    <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        {/* Hours */}
+                                        <div className="bg-charcoal/5 p-6">
+                                            <p className="text-sm text-charcoal/70">
+                                                <strong>Hours:</strong> Lunch 11am-2:30pm | Dinner 5pm-10pm
+                                            </p>
                                         </div>
                                     </div>
-
-                                    {/* Hours */}
-                                    <div className="bg-charcoal/5 p-6">
-                                        <p className="text-sm text-charcoal/70">
-                                            <strong>Hours:</strong> Lunch 11am-2:30pm | Dinner 5pm-10pm
-                                        </p>
-                                    </div>
-                                </div>
+                                </RevealSection>
 
                                 {/* Lewisville Location */}
-                                <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                                    {/* Header */}
-                                    <div className="bg-gradient-to-r from-deep-indigo to-deep-indigo p-8 text-white">
-                                        <h3 className="text-3xl font-heading font-bold mb-2">🍣 Lewisville</h3>
-                                        <p className="text-white/90">400 W Main St Suite 115</p>
-                                        <p className="text-white/80">Off I-35E</p>
-                                    </div>
+                                <RevealSection delay={200} direction="right">
+                                    <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        {/* Header */}
+                                        <div className="bg-gradient-to-r from-deep-indigo to-deep-indigo p-8 text-white">
+                                            <h3 className="text-3xl font-heading font-bold mb-2">🍣 Lewisville</h3>
+                                            <p className="text-white/90">2440 S Stemmons Fwy #A</p>
+                                            <p className="text-white/80">Off I-35E near Vista Ridge</p>
+                                        </div>
 
-                                    {/* Phone Ordering */}
-                                    <div className="p-8 border-b border-warm-ivory">
-                                        <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
-                                            <span className="text-2xl">☎️</span> Phone Ordering
-                                        </h4>
-                                        <a
-                                            href="tel:972-315-3982"
-                                            className="inline-flex items-center gap-2 bg-deep-indigo text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal transition-colors w-full justify-center mb-2"
-                                        >
-                                            <span>📱</span>
-                                            Call (972) 315-3982
-                                        </a>
-                                        <p className="text-sm text-charcoal/80 mt-3">
-                                            Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
-                                        </p>
-                                    </div>
-
-                                    {/* Delivery Apps */}
-                                    <div className="p-8">
-                                        <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
-                                            <span className="text-2xl">🚚</span> Order for Delivery
-                                        </h4>
-                                        <div className="space-y-3">
+                                        {/* Phone Ordering */}
+                                        <div className="p-8 border-b border-warm-ivory">
+                                            <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
+                                                <span className="text-2xl">☎️</span> Phone Ordering
+                                            </h4>
                                             <a
-                                                href="https://www.doordash.com/store/jinbeh-japanese-bistro-lewisville-315108/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
+                                                href="tel:214-488-2224"
+                                                className="inline-flex items-center gap-2 bg-deep-indigo text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal transition-colors w-full justify-center mb-2"
                                             >
-                                                <span className="text-3xl">🍔</span>
-                                                <div className="flex-1">
-                                                    <p className="font-semibold text-charcoal">DoorDash</p>
-                                                    <p className="text-sm text-charcoal/80">25-40 min delivery</p>
-                                                </div>
-                                                <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
+                                                <span>📱</span>
+                                                Call (214) 488-2224
                                             </a>
+                                            <p className="text-sm text-charcoal/80 mt-3">
+                                                Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
+                                            </p>
+                                        </div>
 
-                                            <a
-                                                href="https://www.ubereats.com/store/jinbeh-japanese-bistro/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
-                                            >
-                                                <span className="text-3xl">🚗</span>
-                                                <div className="flex-1">
-                                                    <p className="font-semibold text-charcoal">UberEats</p>
-                                                    <p className="text-sm text-charcoal/80">20-35 min delivery</p>
-                                                </div>
-                                                <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
+                                        {/* Delivery Apps */}
+                                        <div className="p-8">
+                                            <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
+                                                <span className="text-2xl">🚚</span> Order for Delivery
+                                            </h4>
+                                            <div className="space-y-3">
+                                                <a
+                                                    href="https://www.ubereats.com/store/jinbeh-lewisville/aOk96KHMSICHj8jsdZOAWA"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
+                                                >
+                                                    <span className="text-3xl">🚗</span>
+                                                    <div className="flex-1">
+                                                        <p className="font-semibold text-charcoal">Uber Eats</p>
+                                                        <p className="text-sm text-charcoal/80">20-35 min delivery</p>
+                                                    </div>
+                                                    <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                    </svg>
+                                                </a>
 
-                                            <a
-                                                href="https://www.grubhub.com"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
-                                            >
-                                                <span className="text-3xl">🍕</span>
-                                                <div className="flex-1">
-                                                    <p className="font-semibold text-charcoal">Grubhub</p>
-                                                    <p className="text-sm text-charcoal/80">30-45 min delivery</p>
-                                                </div>
-                                                <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
+                                                <a
+                                                    href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2440-s-stemmons-fwy-a-lewisville/2135139"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-3 p-4 bg-warm-ivory hover:bg-soft-gold/20 rounded-xl transition-colors"
+                                                >
+                                                    <span className="text-3xl">🛵</span>
+                                                    <div className="flex-1">
+                                                        <p className="font-semibold text-charcoal">Grubhub</p>
+                                                        <p className="text-sm text-charcoal/80">30-45 min delivery</p>
+                                                    </div>
+                                                    <svg className="w-5 h-5 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        {/* Hours */}
+                                        <div className="bg-charcoal/5 p-6">
+                                            <p className="text-sm text-charcoal/70">
+                                                <strong>Hours:</strong> Lunch 11am-2:30pm | Dinner 5pm-10pm
+                                            </p>
                                         </div>
                                     </div>
-
-                                    {/* Hours */}
-                                    <div className="bg-charcoal/5 p-6">
-                                        <p className="text-sm text-charcoal/70">
-                                            <strong>Hours:</strong> Lunch 11am-2:30pm | Dinner 5pm-10pm
-                                        </p>
-                                    </div>
-                                </div>
+                                </RevealSection>
                             </div>
                         </div>
                     </div>
@@ -525,28 +502,31 @@ export default function OrderOnlinePage() {
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="max-w-6xl mx-auto">
-                            <h2 className="text-4xl font-heading font-bold text-charcoal text-center mb-4">
-                                Popular Items to Order
-                            </h2>
-                            <p className="text-center text-charcoal/70 text-lg mb-16 max-w-2xl mx-auto">
-                                These customer favorites are perfect for delivery. Available at both locations.
-                            </p>
+                            <RevealSection>
+                                <h2 className="text-4xl font-heading font-bold text-charcoal text-center mb-4">
+                                    Popular Items to Order
+                                </h2>
+                                <p className="text-center text-charcoal/70 text-lg mb-16 max-w-2xl mx-auto">
+                                    These customer favorites are perfect for delivery. Available at both locations.
+                                </p>
+                            </RevealSection>
 
                             <div className="grid md:grid-cols-3 gap-8">
                                 {popularItems.map((item, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-warm-ivory rounded-2xl p-8 hover:shadow-lg transition-shadow border-l-4 border-accent-red"
-                                    >
-                                        <div className="text-5xl mb-4">{item.icon}</div>
-                                        <h3 className="text-2xl font-heading font-bold text-charcoal mb-2">
-                                            {item.name}
-                                        </h3>
-                                        <p className="text-charcoal/70 mb-4">{item.description}</p>
-                                        <span className="inline-block px-4 py-2 bg-soft-gold/20 rounded-full text-sm font-semibold text-charcoal">
-                                            {item.category}
-                                        </span>
-                                    </div>
+                                    <RevealSection key={index} delay={index * 100}>
+                                        <div
+                                            className="bg-warm-ivory rounded-2xl p-8 hover:shadow-lg transition-shadow border-l-4 border-accent-red"
+                                        >
+                                            <div className="text-5xl mb-4">{item.icon}</div>
+                                            <h3 className="text-2xl font-heading font-bold text-charcoal mb-2">
+                                                {item.name}
+                                            </h3>
+                                            <p className="text-charcoal/70 mb-4">{item.description}</p>
+                                            <span className="inline-block px-4 py-2 bg-soft-gold/20 rounded-full text-sm font-semibold text-charcoal">
+                                                {item.category}
+                                            </span>
+                                        </div>
+                                    </RevealSection>
                                 ))}
                             </div>
 
@@ -566,12 +546,14 @@ export default function OrderOnlinePage() {
                 <section className="py-20 bg-charcoal text-white">
                     <div className="container mx-auto px-6">
                         <div className="max-w-6xl mx-auto">
-                            <h2 className="text-4xl font-heading font-bold text-center mb-4">
-                                Tips for the Best Delivery Experience
-                            </h2>
-                            <p className="text-center text-white/80 text-lg mb-16 max-w-2xl mx-auto">
-                                Here's how to get the most out of your Jinbeh delivery order
-                            </p>
+                            <RevealSection>
+                                <h2 className="text-4xl font-heading font-bold text-center mb-4">
+                                    Tips for the Best Delivery Experience
+                                </h2>
+                                <p className="text-center text-white/80 text-lg mb-16 max-w-2xl mx-auto">
+                                    Here&apos;s how to get the most out of your Jinbeh delivery order. Check our <Link href="/blog/japanese-takeout-near-me" className="text-soft-gold hover:underline">Japanese takeout guide</Link> for more ideas.
+                                </p>
+                            </RevealSection>
 
                             <div className="grid md:grid-cols-3 gap-8">
                                 {orderingTips.map((tip, index) => (
@@ -597,12 +579,14 @@ export default function OrderOnlinePage() {
                 <section className="py-20 bg-warm-ivory">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-4xl font-heading font-bold text-charcoal text-center mb-4">
-                                Frequently Asked Questions
-                            </h2>
-                            <p className="text-center text-charcoal/70 text-lg mb-16">
-                                Have questions about ordering? We've got answers.
-                            </p>
+                            <RevealSection>
+                                <h2 className="text-4xl font-heading font-bold text-charcoal text-center mb-4">
+                                    Frequently Asked Questions
+                                </h2>
+                                <p className="text-center text-charcoal/70 text-lg mb-16">
+                                    Have questions about ordering? We&apos;ve got answers.
+                                </p>
+                            </RevealSection>
 
                             <div className="space-y-4">
                                 {faqItems.map((item, index) => (
@@ -620,9 +604,8 @@ export default function OrderOnlinePage() {
                                                 {item.question}
                                             </h3>
                                             <svg
-                                                className={`w-6 h-6 text-accent-red flex-shrink-0 transition-transform ${
-                                                    expandedFaq === index ? "rotate-180" : ""
-                                                }`}
+                                                className={`w-6 h-6 text-accent-red flex-shrink-0 transition-transform ${expandedFaq === index ? "rotate-180" : ""
+                                                    }`}
                                                 fill="none"
                                                 stroke="currentColor"
                                                 viewBox="0 0 24 24"
@@ -663,18 +646,18 @@ export default function OrderOnlinePage() {
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
-                                    href="tel:972-668-1100"
+                                    href="tel:214-619-1200"
                                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-10 py-4 text-lg font-semibold transition-all"
                                 >
                                     <span className="mr-2">📱</span>
-                                    Call Frisco: 972-668-1100
+                                    Call Frisco: (214) 619-1200
                                 </a>
                                 <a
-                                    href="tel:972-315-3982"
+                                    href="tel:214-488-2224"
                                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-10 py-4 text-lg font-semibold transition-all"
                                 >
                                     <span className="mr-2">📱</span>
-                                    Call Lewisville: 972-315-3982
+                                    Call Lewisville: (214) 488-2224
                                 </a>
                             </div>
 

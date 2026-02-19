@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import locations from "@/data/locations.json";
+import { HeroSection, RevealSection, ShimmerCTA, ShinyBadge } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
   title: "Make a Reservation | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -45,12 +46,6 @@ const reservationMethods = [
     icon: "📞",
     description: "Speak with our team directly to discuss your preferences.",
     color: "from-accent-red to-orange-600",
-  },
-  {
-    title: "Walk-In",
-    icon: "🚶",
-    description: "Visit us anytime. Available seating subject to current capacity.",
-    color: "from-soft-gold to-yellow-600",
   },
 ];
 
@@ -138,44 +133,54 @@ export default function ReservationsPage() {
       <Header />
       <main className="min-h-screen">
         {/* Hero */}
-        <section className="py-16 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white">
+        <HeroSection className="py-16 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white">
           <div className="container mx-auto px-6 text-center max-w-4xl">
-            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              Plan Your Visit
-            </p>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              Make a Reservation
-            </h1>
-            <p className="text-xl text-white/80">
-              Book your table for an unforgettable hibachi and sushi experience at Jinbeh.
-            </p>
+            <RevealSection>
+              <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
+                <ShinyBadge className="!text-soft-gold">✦ Plan Your Visit ✦</ShinyBadge>
+              </p>
+            </RevealSection>
+            <RevealSection delay={100}>
+              <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+                Make a Reservation
+              </h1>
+            </RevealSection>
+            <RevealSection delay={200}>
+              <p className="text-xl text-white/80">
+                Jinbeh reservations — book a table for an unforgettable hibachi reservation and sushi experience. Browse our restaurant reservation options for Frisco dining and Lewisville dining.
+              </p>
+            </RevealSection>
           </div>
-        </section>
+        </HeroSection>
 
         {/* How to Reserve */}
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Three Easy Ways to Reserve
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Choose the reservation method that works best for you.
-              </p>
-            </div>
+            <RevealSection>
+              <div className="text-center mb-16 max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Two Easy Ways to Reserve
+                </h2>
+                <p className="text-lg text-charcoal/70 mb-3">
+                  Choose the reservation method that works best for you.
+                </p>
+                <p className="text-charcoal/60 text-sm">
+                  Walk-ins are always welcome! During peak times, we may offer seating in our sushi bar area for the best available experience.
+                </p>
+              </div>
+            </RevealSection>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {reservationMethods.map((method) => (
-                <div
-                  key={method.title}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
-                >
-                  <div className="text-5xl mb-6">{method.icon}</div>
-                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
-                    {method.title}
-                  </h3>
-                  <p className="text-charcoal/70 mb-6">{method.description}</p>
-                </div>
+              {reservationMethods.map((method, idx) => (
+                <RevealSection key={method.title} delay={idx * 150}>
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="text-5xl mb-6">{method.icon}</div>
+                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
+                      {method.title}
+                    </h3>
+                    <p className="text-charcoal/70 mb-6">{method.description}</p>
+                  </div>
+                </RevealSection>
               ))}
             </div>
           </div>
@@ -276,14 +281,9 @@ export default function ReservationsPage() {
                   </div>
 
                   <div className="space-y-3">
-                    <a
-                      href={frisco.reservation.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full btn bg-accent-red text-white hover:bg-accent-red/90 text-center py-3 rounded-xl font-semibold transition-colors"
-                    >
+                    <ShimmerCTA href={frisco.reservation.url} className="w-full text-lg">
                       Reserve on OpenTable
-                    </a>
+                    </ShimmerCTA>
                     <Link
                       href="/frisco"
                       className="block w-full btn bg-deep-indigo text-white hover:bg-deep-indigo/90 text-center py-3 rounded-xl font-semibold transition-colors"
@@ -376,14 +376,9 @@ export default function ReservationsPage() {
                   </div>
 
                   <div className="space-y-3">
-                    <a
-                      href={lewisville.reservation.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full btn bg-accent-red text-white hover:bg-accent-red/90 text-center py-3 rounded-xl font-semibold transition-colors"
-                    >
+                    <ShimmerCTA href={lewisville.reservation.url} className="w-full text-lg">
                       Reserve on OpenTable
-                    </a>
+                    </ShimmerCTA>
                     <Link
                       href="/lewisville"
                       className="block w-full btn bg-deep-indigo text-white hover:bg-deep-indigo/90 text-center py-3 rounded-xl font-semibold transition-colors"
@@ -400,56 +395,59 @@ export default function ReservationsPage() {
         {/* Dining Experiences */}
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Choose Your Dining Experience
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Each reservation type offers unique benefits. Let us know your preference!
-              </p>
-            </div>
+            <RevealSection>
+              <div className="text-center mb-16 max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Choose Your Dining Experience
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Each reservation type offers unique benefits. Let us know your preference!
+                </p>
+              </div>
+            </RevealSection>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {diningTypes.map((type) => (
-                <div
-                  key={type.title}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
-                >
-                  <div className="text-5xl mb-4">{type.icon}</div>
-                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
-                    {type.title}
-                  </h3>
-                  <p className="text-charcoal/70 mb-6 text-sm">{type.description}</p>
-                  <div className="mb-6">
-                    <p className="text-charcoal/80 text-xs uppercase tracking-wide mb-3">
-                      Features
-                    </p>
-                    <ul className="space-y-2">
-                      {type.features.map((feature, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-center gap-2 text-sm text-charcoal/80"
-                        >
-                          <svg
-                            className="w-4 h-4 text-accent-red flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
+              {diningTypes.map((type, idx) => (
+                <RevealSection key={type.title} delay={idx * 150}>
+                  <div
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <div className="text-5xl mb-4">{type.icon}</div>
+                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
+                      {type.title}
+                    </h3>
+                    <p className="text-charcoal/70 mb-6 text-sm">{type.description}</p>
+                    <div className="mb-6">
+                      <p className="text-charcoal/80 text-xs uppercase tracking-wide mb-3">
+                        Features
+                      </p>
+                      <ul className="space-y-2">
+                        {type.features.map((feature, idx) => (
+                          <li
+                            key={idx}
+                            className="flex items-center gap-2 text-sm text-charcoal/80"
                           >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                            <svg
+                              className="w-4 h-4 text-accent-red flex-shrink-0"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p className="text-charcoal font-semibold text-lg">
+                      {type.price}
+                    </p>
                   </div>
-                  <p className="text-charcoal font-semibold text-lg">
-                    {type.price}
-                  </p>
-                </div>
+                </RevealSection>
               ))}
             </div>
           </div>
@@ -458,38 +456,39 @@ export default function ReservationsPage() {
         {/* Reservation Tips */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Reservation Tips
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Make the most of your reservation with these helpful tips.
-              </p>
-            </div>
+            <RevealSection>
+              <div className="text-center mb-16 max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Reservation Tips
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Make the most of your reservation with these helpful tips.
+                </p>
+              </div>
+            </RevealSection>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {reservationTips.map((tip, idx) => (
-                <div
-                  key={idx}
-                  className="bg-warm-ivory rounded-2xl p-8 hover:shadow-lg transition-shadow"
-                >
-                  <div className="flex gap-4">
-                    <div className="text-2xl flex-shrink-0">
-                      {idx === 0 && "📅"}
-                      {idx === 1 && "🎯"}
-                      {idx === 2 && "🥘"}
-                      {idx === 3 && "⏰"}
-                      {idx === 4 && "👥"}
-                      {idx === 5 && "🎉"}
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-bold text-charcoal mb-2">
-                        {tip.title}
-                      </h3>
-                      <p className="text-charcoal/70 text-sm">{tip.description}</p>
+                <RevealSection key={idx} delay={idx * 100}>
+                  <div className="bg-warm-ivory rounded-2xl p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div className="flex gap-4">
+                      <div className="text-2xl flex-shrink-0">
+                        {idx === 0 && "📅"}
+                        {idx === 1 && "🎯"}
+                        {idx === 2 && "🥘"}
+                        {idx === 3 && "⏰"}
+                        {idx === 4 && "👥"}
+                        {idx === 5 && "🎉"}
+                      </div>
+                      <div>
+                        <h3 className="font-heading font-bold text-charcoal mb-2">
+                          {tip.title}
+                        </h3>
+                        <p className="text-charcoal/70 text-sm">{tip.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </RevealSection>
               ))}
             </div>
           </div>

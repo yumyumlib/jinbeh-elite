@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     description: "Impress clients and reward your team with an unforgettable hibachi experience. Private tables, group menus & professional service.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://jinbeh.com/celebrations/corporate-events",
+  },
 };
 
 const faqSchema = {
@@ -75,336 +78,391 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Corporate Events" },
+  ],
+};
+
 export default function CorporateEventsPage() {
   return (
     <>
       <Header />
       <main className="min-h-screen">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center text-white py-20">
-        <Image
-          src="/images/celebrations/jinbeh_group.jpg"
-          alt="Corporate team dinner at Jinbeh Japanese Restaurant hibachi table"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Corporate Events & Team Dinners
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8">
-              Impress clients. Reward your team. Build relationships over exceptional Japanese cuisine.
+        {/* Breadcrumb */}
+        <nav className="bg-white border-b border-warm-ivory">
+          <div className="container mx-auto px-6 py-3">
+            <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+              <li><Link href="/" className="hover:text-accent-red">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/celebrations" className="hover:text-accent-red">Celebrations</Link></li>
+              <li>/</li>
+              <li className="text-charcoal font-medium">Corporate Events</li>
+            </ol>
+          </div>
+        </nav>
+
+        {/* Hero Section */}
+        <section className="relative min-h-[60vh] flex items-center text-white py-20">
+          <Image
+            src="/images/celebrations/jinbeh_group.jpg"
+            alt="Corporate team dinner at Jinbeh Japanese Restaurant hibachi table"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+                Corporate Events & Team Dinners
+              </h1>
+              <p className="text-xl md:text-2xl text-warm-ivory/90 mb-8">
+                Impress clients. Reward your team. Build relationships over exceptional Japanese cuisine.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/frisco"
+                  className="bg-accent-red hover:bg-accent-red-hover text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                >
+                  Book Frisco Location
+                </Link>
+                <Link
+                  href="/lewisville"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border border-white/30"
+                >
+                  Book Lewisville Location
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Jinbeh for Corporate Events */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-charcoal mb-12">
+                Why Companies Choose Jinbeh
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-warm-ivory p-6 rounded-xl">
+                  <h3 className="text-xl font-heading font-bold text-charcoal mb-3">🔥 Interactive Entertainment</h3>
+                  <p className="text-charcoal/80">
+                    Hibachi chefs create an engaging show that breaks the ice and gets conversations flowing.
+                    Perfect for team building and client entertainment where you want memorable shared experiences.
+                  </p>
+                </div>
+                <div className="bg-warm-ivory p-6 rounded-xl">
+                  <h3 className="text-xl font-heading font-bold text-charcoal mb-3">👔 Professional Service</h3>
+                  <p className="text-charcoal/80">
+                    Our experienced staff understands corporate hospitality. Expect attentive, professional
+                    service that reflects well on your organization when hosting important clients or executives.
+                  </p>
+                </div>
+                <div className="bg-warm-ivory p-6 rounded-xl">
+                  <h3 className="text-xl font-heading font-bold text-charcoal mb-3">📋 Flexible Group Options</h3>
+                  <p className="text-charcoal/80">
+                    From intimate client dinners to large team celebrations, we accommodate groups of all sizes.
+                    Our <Link href="/frisco" className="text-accent-red hover:underline font-medium">Frisco hibachi restaurant</Link> offers
+                    flexible seating arrangements for your specific needs.
+                  </p>
+                </div>
+                <div className="bg-warm-ivory p-6 rounded-xl">
+                  <h3 className="text-xl font-heading font-bold text-charcoal mb-3">💼 Convenient Locations</h3>
+                  <p className="text-charcoal/80">
+                    Located in Frisco and Lewisville with easy access from major highways. Perfect for teams
+                    coming from Plano, McKinney, Allen, Flower Mound, or anywhere in the DFW metroplex.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Event Types */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-charcoal mb-12">
+                Corporate Event Ideas at Jinbeh
+              </h2>
+
+              <div className="space-y-8">
+                {/* Client Entertainment */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-8">
+                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Client Dinners & Business Entertainment</h3>
+                    <p className="text-gray-700 mb-4">
+                      Make a lasting impression on important clients with an unforgettable dining experience.
+                      The hibachi grill creates natural conversation opportunities while showcasing your
+                      hospitality. Many DFW executives choose Japanese cuisine for client entertainment because
+                      it's impressive yet approachable.
+                    </p>
+                    <p className="text-gray-600 text-sm">
+                      <strong>Best for:</strong> Sales dinners, partnership meetings, vendor appreciation, executive entertaining
+                    </p>
+                  </div>
+                </div>
+
+                {/* Team Building */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Team Building & Employee Appreciation</h3>
+                    <p className="text-gray-700 mb-4">
+                      Reward your hardworking team with a memorable dining experience. Hibachi tables seat
+                      8-10 people, creating intimate group settings where colleagues can bond over shared
+                      entertainment and great food. It's more engaging than a typical restaurant outing.
+                    </p>
+                    <p className="text-gray-600 text-sm">
+                      <strong>Best for:</strong> Quarterly team dinners, project completion celebrations, department outings, employee recognition
+                    </p>
+                  </div>
+                </div>
+
+                {/* Holiday Parties */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Company Holiday Celebrations</h3>
+                    <p className="text-gray-700 mb-4">
+                      Skip the generic hotel ballroom and give your team something special. Our                     <Link href="/celebrations/christmas" className="text-accent-red hover:underline font-medium"> holiday dining experience</Link> offers
+                      festive atmosphere with the excitement of live hibachi cooking. Perfect for year-end
+                      celebrations and <Link href="/celebrations/thanksgiving" className="text-accent-red hover:underline font-medium">Thanksgiving team dinners</Link>.
+                    </p>
+                    <p className="text-gray-600 text-sm">
+                      <strong>Best for:</strong> Holiday parties, year-end celebrations, New Year gatherings, milestone achievements
+                    </p>
+                  </div>
+                </div>
+
+                {/* Retirement & Milestones */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Retirement & Milestone Celebrations</h3>
+                    <p className="text-gray-700 mb-4">
+                      Honor retiring colleagues or celebrate work anniversaries with a special dinner.
+                      The shared hibachi experience creates a celebratory atmosphere that makes the
+                      guest of honor feel truly appreciated by their team.
+                    </p>
+                    <p className="text-gray-600 text-sm">
+                      <strong>Best for:</strong> Retirement dinners, promotion celebrations, work anniversaries, farewell gatherings
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Planning Your Event */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-charcoal mb-12">
+                Planning Your Corporate Event
+              </h2>
+
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">1</div>
+                  <div>
+                    <h3 className="text-xl font-heading font-bold text-charcoal mb-2">Contact Us Early</h3>
+                    <p className="text-charcoal/80">
+                      For groups of 15 or more, we recommend booking 1-2 weeks in advance, especially for
+                      Friday and Saturday evenings. Call our <Link href="/frisco" className="text-accent-red hover:underline font-medium">Frisco location</Link> or
+                      <Link href="/lewisville" className="text-accent-red hover:underline font-medium"> Lewisville location</Link> to discuss your needs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">2</div>
+                  <div>
+                    <h3 className="text-xl font-heading font-bold text-charcoal mb-2">Discuss Menu Options</h3>
+                    <p className="text-charcoal/80">
+                      We can create customized group menus that simplify ordering and billing. Choose from
+                      hibachi packages, sushi platters, or combination options based on your group's preferences.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">3</div>
+                  <div>
+                    <h3 className="text-xl font-heading font-bold text-charcoal mb-2">Share Dietary Needs</h3>
+                    <p className="text-charcoal/80">
+                      Let us know about any dietary restrictions (vegetarian, gluten-free, allergies) so we
+                      can prepare appropriate options for all your guests.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">4</div>
+                  <div>
+                    <h3 className="text-xl font-heading font-bold text-charcoal mb-2">Confirm Details</h3>
+                    <p className="text-charcoal/80">
+                      We'll confirm your reservation, seating arrangement, menu selections, and any special
+                      requests to ensure your event runs smoothly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-charcoal mb-12">
+                Corporate Event FAQs
+              </h2>
+              <div className="space-y-4">
+                {faqSchema.mainEntity.map((faq, index) => (
+                  <details key={index} className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <summary className="flex items-center justify-between cursor-pointer p-6 font-heading text-lg font-bold text-charcoal hover:text-accent-red transition-colors">
+                      <span>{faq.name}</span>
+                      <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div className="px-6 pb-6 text-charcoal/80 border-t border-warm-ivory">
+                      <p className="mt-4 leading-relaxed">{faq.acceptedAnswer.text}</p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Celebrations */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-charcoal mb-4">
+                More Celebrations at Jinbeh
+              </h2>
+              <p className="text-charcoal/70 text-center mb-12 max-w-2xl mx-auto">
+                From personal milestones to seasonal celebrations, discover all the ways to celebrate at Jinbeh.
+              </p>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">🎂</span>
+                  <span className="font-medium text-charcoal group-hover:text-accent-red">Birthday Celebrations</span>
+                </Link>
+                <Link href="/celebrations/date-night" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">💕</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Date Night</span>
+                </Link>
+                <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">💍</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Anniversary Dinner</span>
+                </Link>
+                <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">🎓</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Graduation Party</span>
+                </Link>
+                <Link href="/celebrations/christmas" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">🎄</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Holiday Parties</span>
+                </Link>
+                <Link href="/celebrations/thanksgiving" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">🦃</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Thanksgiving</span>
+                </Link>
+                <Link href="/celebrations/rehearsal-dinner" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">💒</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Rehearsal Dinner</span>
+                </Link>
+                <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">👩</span>
+                  <span className="font-medium text-gray-900 group-hover:text-red-600">Mother's Day</span>
+                </Link>
+              </div>
+
+              <div className="bg-warm-ivory rounded-xl p-8 text-center">
+                <p className="text-gray-700 mb-4">
+                  Beyond corporate events, Jinbeh is the perfect venue for <Link href="/celebrations/birthday" className="text-accent-red hover:underline font-medium">birthday celebrations</Link>,
+                  <Link href="/celebrations/anniversary" className="text-accent-red hover:underline font-medium"> anniversary dinners</Link>, and
+                  <Link href="/celebrations/graduation" className="text-accent-red hover:underline font-medium"> graduation parties</Link>.
+                  Our hibachi experience makes any occasion memorable.
+                </p>
+                <p className="text-charcoal/80">
+                  Visit our <Link href="/frisco" className="text-accent-red hover:underline font-medium">Frisco hibachi restaurant</Link> near
+                  Plano and McKinney, or our <Link href="/lewisville" className="text-accent-red hover:underline font-medium">Lewisville Japanese restaurant</Link> serving
+                  Flower Mound and Highland Village.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Ready to Plan Your Corporate Event?
+            </h2>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Contact us to discuss your group size, preferred date, and menu options.
+              We&apos;ll help make your corporate event a success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco"
-                className="bg-accent-red hover:bg-accent-red-hover text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                href="/reservations"
+                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
               >
-                Book Frisco Location
+                Reserve at Frisco
               </Link>
               <Link
-                href="/lewisville"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border border-white/30"
+                href="/reservations"
+                className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
               >
-                Book Lewisville Location
+                Reserve at Lewisville
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Jinbeh for Corporate Events */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Why Companies Choose Jinbeh
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-warm-ivory p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">🔥 Interactive Entertainment</h3>
-                <p className="text-gray-700">
-                  Hibachi chefs create an engaging show that breaks the ice and gets conversations flowing. 
-                  Perfect for team building and client entertainment where you want memorable shared experiences.
-                </p>
-              </div>
-              <div className="bg-warm-ivory p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">👔 Professional Service</h3>
-                <p className="text-gray-700">
-                  Our experienced staff understands corporate hospitality. Expect attentive, professional 
-                  service that reflects well on your organization when hosting important clients or executives.
-                </p>
-              </div>
-              <div className="bg-warm-ivory p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">📋 Flexible Group Options</h3>
-                <p className="text-gray-700">
-                  From intimate client dinners to large team celebrations, we accommodate groups of all sizes. 
-                  Our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco hibachi restaurant</Link> offers 
-                  flexible seating arrangements for your specific needs.
-                </p>
-              </div>
-              <div className="bg-warm-ivory p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">💼 Convenient Locations</h3>
-                <p className="text-gray-700">
-                  Located in Frisco and Lewisville with easy access from major highways. Perfect for teams 
-                  coming from Plano, McKinney, Allen, Flower Mound, or anywhere in the DFW metroplex.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Event Types */}
-      <section className="py-16 bg-warm-ivory">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Corporate Event Ideas at Jinbeh
-            </h2>
-            
-            <div className="space-y-8">
-              {/* Client Entertainment */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Client Dinners & Business Entertainment</h3>
-                  <p className="text-gray-700 mb-4">
-                    Make a lasting impression on important clients with an unforgettable dining experience. 
-                    The hibachi grill creates natural conversation opportunities while showcasing your 
-                    hospitality. Many DFW executives choose Japanese cuisine for client entertainment because 
-                    it's impressive yet approachable.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    <strong>Best for:</strong> Sales dinners, partnership meetings, vendor appreciation, executive entertaining
-                  </p>
-                </div>
-              </div>
-
-              {/* Team Building */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Team Building & Employee Appreciation</h3>
-                  <p className="text-gray-700 mb-4">
-                    Reward your hardworking team with a memorable dining experience. Hibachi tables seat 
-                    8-10 people, creating intimate group settings where colleagues can bond over shared 
-                    entertainment and great food. It's more engaging than a typical restaurant outing.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    <strong>Best for:</strong> Quarterly team dinners, project completion celebrations, department outings, employee recognition
-                  </p>
-                </div>
-              </div>
-
-              {/* Holiday Parties */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Company Holiday Celebrations</h3>
-                  <p className="text-gray-700 mb-4">
-                    Skip the generic hotel ballroom and give your team something special. Our 
-                    <Link href="/celebrations/christmas" className="text-red-600 hover:text-red-700 font-medium"> holiday dining experience</Link> offers 
-                    festive atmosphere with the excitement of live hibachi cooking. Perfect for year-end 
-                    celebrations and <Link href="/celebrations/thanksgiving" className="text-red-600 hover:text-red-700 font-medium">Thanksgiving team dinners</Link>.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    <strong>Best for:</strong> Holiday parties, year-end celebrations, New Year gatherings, milestone achievements
-                  </p>
-                </div>
-              </div>
-
-              {/* Retirement & Milestones */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Retirement & Milestone Celebrations</h3>
-                  <p className="text-gray-700 mb-4">
-                    Honor retiring colleagues or celebrate work anniversaries with a special dinner. 
-                    The shared hibachi experience creates a celebratory atmosphere that makes the 
-                    guest of honor feel truly appreciated by their team.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    <strong>Best for:</strong> Retirement dinners, promotion celebrations, work anniversaries, farewell gatherings
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Planning Your Event */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Planning Your Corporate Event
-            </h2>
-            
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">1</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Contact Us Early</h3>
-                  <p className="text-gray-700">
-                    For groups of 15 or more, we recommend booking 1-2 weeks in advance, especially for 
-                    Friday and Saturday evenings. Call our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco location</Link> or 
-                    <Link href="/lewisville" className="text-red-600 hover:text-red-700 font-medium"> Lewisville location</Link> to discuss your needs.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">2</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Discuss Menu Options</h3>
-                  <p className="text-gray-700">
-                    We can create customized group menus that simplify ordering and billing. Choose from 
-                    hibachi packages, sushi platters, or combination options based on your group's preferences.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">3</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Share Dietary Needs</h3>
-                  <p className="text-gray-700">
-                    Let us know about any dietary restrictions (vegetarian, gluten-free, allergies) so we 
-                    can prepare appropriate options for all your guests.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-accent-red text-white rounded-full flex items-center justify-center font-bold">4</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Confirm Details</h3>
-                  <p className="text-gray-700">
-                    We'll confirm your reservation, seating arrangement, menu selections, and any special 
-                    requests to ensure your event runs smoothly.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-warm-ivory">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Corporate Event FAQs
-            </h2>
-            <div className="space-y-6">
-              {faqSchema.mainEntity.map((faq, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.name}</h3>
-                  <p className="text-gray-700">{faq.acceptedAnswer.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Celebrations */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-              More Celebrations at Jinbeh
-            </h2>
-            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-              From personal milestones to seasonal celebrations, discover all the ways to celebrate at Jinbeh.
+            <p className="text-white/70 text-sm mt-6">
+              For large groups, call us directly:<br />
+              Frisco: (214) 619-1200 • Lewisville: (214) 488-2224
             </p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">🎂</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Birthday Celebrations</span>
+          </div>
+        </section>
+      
+        {/* Related Blog Articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
+              Plan a Memorable Corporate Event
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/jinbeh-catering-services" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Catering</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Jinbeh Catering Services for Your Event
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Full-service Japanese catering for corporate lunches, dinners, and team events.</p>
               </Link>
-              <Link href="/celebrations/date-night" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">💕</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Date Night</span>
-              </Link>
-              <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">💍</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Anniversary Dinner</span>
-              </Link>
-              <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">🎓</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Graduation Party</span>
-              </Link>
-              <Link href="/celebrations/christmas" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">🎄</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Holiday Parties</span>
-              </Link>
-              <Link href="/celebrations/thanksgiving" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">🦃</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Thanksgiving</span>
-              </Link>
-              <Link href="/celebrations/rehearsal-dinner" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">💒</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Rehearsal Dinner</span>
-              </Link>
-              <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-red-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">👩</span>
-                <span className="font-medium text-gray-900 group-hover:text-red-600">Mother's Day</span>
+              <Link href="/blog/restaurants-private-rooms" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Private Dining</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Restaurants with Private Rooms in DFW
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Find the ideal private dining space for presentations, meetings, and celebrations.</p>
               </Link>
             </div>
-
-            <div className="bg-warm-ivory rounded-xl p-8 text-center">
-              <p className="text-gray-700 mb-4">
-                Beyond corporate events, Jinbeh is the perfect venue for <Link href="/celebrations/birthday" className="text-red-600 hover:text-red-700 font-medium">birthday celebrations</Link>, 
-                <Link href="/celebrations/anniversary" className="text-red-600 hover:text-red-700 font-medium"> anniversary dinners</Link>, and 
-                <Link href="/celebrations/graduation" className="text-red-600 hover:text-red-700 font-medium"> graduation parties</Link>. 
-                Our hibachi experience makes any occasion memorable.
-              </p>
-              <p className="text-gray-700">
-                Visit our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco hibachi restaurant</Link> near 
-                Plano and McKinney, or our <Link href="/lewisville" className="text-red-600 hover:text-red-700 font-medium">Lewisville Japanese restaurant</Link> serving 
-                Flower Mound and Highland Village.
-              </p>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Plan Your Corporate Event?
-          </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-            Contact us to discuss your group size, preferred date, and menu options. 
-            We'll help make your corporate event a success.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/frisco"
-              className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              Contact Frisco
-            </Link>
-            <Link
-              href="/lewisville"
-              className="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              Contact Lewisville
-            </Link>
-          </div>
-        </div>
-      </section>
-      </main>
+        </main>
       <Footer />
     </>
   );

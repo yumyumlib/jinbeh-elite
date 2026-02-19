@@ -18,7 +18,10 @@ export const metadata: Metadata = {
     title: "Free Birthday Food Deals: Where to Get Treats",
     description:
       "Find all the best free birthday food deals! From restaurant meals to desserts and treats, make your birthday celebration special with complimentary offers.",
-    images: ["/images/photoshoot/celebration-table.jpg"],
+    images: ["/images/instagram/lobster-spread-overhead.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/free-birthday-food-deals",
   },
 };
 
@@ -46,9 +49,11 @@ const faqs = [
   {
     question: "Can I combine birthday deals with other promotions?",
     answer:
-      "Most birthday deals can't mix with other coupons. Some restaurants allow happy hour stacking. Always call ahead to ask about combining promotions.",
+      "Most birthday deals can't mix with other coupons. Some restaurants allow happy hour stacking—check out Jinbeh's happy hour. Always call ahead to ask about combining promotions.",
   },
 ];
+
+
 
 export default function FreeBirthdayFoodDealsPage() {
   return (
@@ -59,6 +64,7 @@ export default function FreeBirthdayFoodDealsPage() {
       heroAlt="Birthday celebration with delicious food and festive decorations"
       category="Celebrations"
       categorySlug="celebrations"
+      slug="free-birthday-food-deals"
       publishDate="January 2026"
       readTime="10 min read"
       faqs={faqs}
@@ -407,8 +413,20 @@ export default function FreeBirthdayFoodDealsPage() {
         check out our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration ideas</Link> or{" "}
         <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> at
         Jinbeh for an unforgettable experience. Here's to a year filled with joy, happiness,
-        and plenty of free birthday treats!
+        and plenty of free birthday treats! You can also surprise someone with a{" "}
+        <Link href="/gift-cards" className="text-accent-red hover:underline">
+          Jinbeh gift card
+        </Link>{" "}
+        for a birthday they'll remember.
       </p>
-    </ArticleLayout>
+    
+        {/* Related Reading */}
+        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+          <div className="flex flex-col gap-2">
+              <Link href="/blog/birthday-celebration-restaurants" className="text-accent-red hover:underline font-medium">Best Birthday Celebration Restaurants</Link>
+          </div>
+        </div>
+      </ArticleLayout>
   );
 }

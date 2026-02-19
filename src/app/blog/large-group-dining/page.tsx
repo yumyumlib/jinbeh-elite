@@ -22,6 +22,9 @@ export const metadata: Metadata = {
             "Find the perfect restaurant for your large group. Seamless reservations, diverse menus, and professional service for celebrations and gatherings.",
         images: ["/images/blog/9-C060324-6484.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/large-group-dining",
+  },
 };
 
 const faqs = [
@@ -86,9 +89,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+    { "@type": "ListItem", "position": 4, "name": "Large Group Dining: Best Restaurants for Parties" },
+  ],
+};
+
 export default function LargeGroupDining() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -115,7 +131,7 @@ export default function LargeGroupDining() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=celebrations" className="hover:text-white">Events</Link>
+                        <Link href="/blog/category/celebrations" className="hover:text-white">Events</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -301,7 +317,7 @@ export default function LargeGroupDining() {
                                     </h3>
 
                                     <p>
-                                        Ensure the restaurant can comfortably accommodate your entire group. Consider not just table space but also room for easy movement, mingling, and accessibility for all guests. Restaurants like Jinbeh with varied seating options (hibachi, traditional tables, private areas) offer flexibility.
+                                        Ensure the restaurant can comfortably accommodate your entire group. Consider not just table space but also room for easy movement, mingling, and accessibility for all guests. Restaurants like Jinbeh with varied seating options (hibachi, traditional tables, <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> areas) offer flexibility.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -361,8 +377,8 @@ export default function LargeGroupDining() {
                                     </p>
 
                                     <ul className="space-y-3 mb-8">
-                                        <li><strong><Link href="/locations/frisco" className="text-accent-red hover:underline">Visit us in Frisco</Link>:</strong> Located near Stonebriar Centre, perfect for North Texas groups and corporate events.</li>
-                                        <li><strong><Link href="/locations/lewisville" className="text-accent-red hover:underline">Visit us in Lewisville</Link>:</strong> Off I-35E near Vista Ridge Mall, conveniently accessible for family reunions and celebrations.</li>
+                                        <li><strong><Link href="/frisco" className="text-accent-red hover:underline">Visit us in Frisco</Link>:</strong> Located near Stonebriar Centre, perfect for North Texas groups and corporate events.</li>
+                                        <li><strong><Link href="/lewisville" className="text-accent-red hover:underline">Visit us in Lewisville</Link>:</strong> Off I-35E near Vista Ridge Mall, conveniently accessible for family reunions and celebrations.</li>
                                     </ul>
 
                                     <p>
@@ -397,7 +413,7 @@ export default function LargeGroupDining() {
                                         👥 Plan Your Group Dining Experience at Jinbeh
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Whether it's a corporate event, family reunion, or celebration, Jinbeh specializes in creating unforgettable group dining moments. Professional coordination, exceptional food, and entertainment included.
+                                        Whether it's a corporate event, family reunion, or celebration, Jinbeh specializes in creating unforgettable group dining moments. Professional coordination, exceptional food, and entertainment included. Need a group gift idea? <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift cards</Link> make everyone happy.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link

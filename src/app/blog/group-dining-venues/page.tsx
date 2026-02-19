@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Group Dining Venues DFW: Best for Large Parties | Jinbeh",
     description: "Find the best group dining venues in DFW! Hibachi is perfect for corporate events, family gatherings, and team dinners. Reserve Jinbeh's private space.",
     keywords: ["group dining dfw", "large group restaurants", "private dining frisco", "corporate dining lewisville"],
+  openGraph: {
+    title: "Best Group Dining Venues in DFW",
+    description: "Planning dinner for a large group? Discover the best restaurants in Dallas-Fort Worth that can accommodate parties of 10, 20, or 50+ guests.",
+    url: "https://jinbeh.com/blog/group-dining-venues",
+    type: "article",
+    images: ["/images/frisco/FriscoLocation_Bar_Front.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/group-dining-venues",
+  },
 };
 
 const schemas = [
@@ -18,9 +28,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+    { "@type": "ListItem", "position": 4, "name": "Best Group Dining Venues in DFW" },
+  ],
+};
+
 export default function GroupDiningVenues() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
@@ -28,7 +51,7 @@ export default function GroupDiningVenues() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=celebrations">Celebrations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/celebrations">Celebrations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">🎉 Celebrations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Group Dining Venues DFW</h1>
@@ -39,7 +62,7 @@ export default function GroupDiningVenues() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Planning dinner for a big group?</strong> The challenge is finding a place that works for everyone—kids, adults, picky eaters, and adventurous foodies. Here's why hibachi is the perfect solution.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Planning dinner for a big group?</strong> The challenge is finding a place that works for everyone—kids, adults, picky eaters, and adventurous foodies. Here's why hibachi is the perfect solution. And if you're treating the group, a <Link href="/gift-cards" className="text-accent-red hover:underline font-medium">Jinbeh gift card</Link> makes coordination easy.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Why Hibachi Works for Groups</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -119,7 +142,7 @@ export default function GroupDiningVenues() {
 
                                 <details className="group bg-warm-ivory rounded-xl">
                                     <summary className="p-5 cursor-pointer font-semibold flex justify-between">Are there private rooms for large groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                    <div className="px-5 pb-5 text-charcoal/80">Yes! It's a celebration! Our private dining areas and group hibachi tables provide semi-private settings. Perfect for corporate events, family reunions, and milestone celebrations. Fresh and flavorful dining awaits!</div>
+                                    <div className="px-5 pb-5 text-charcoal/80">Yes! It's a celebration! Our <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> areas and group hibachi tables provide semi-private settings. Perfect for corporate events, family reunions, and milestone celebrations. Fresh and flavorful dining awaits!</div>
                                 </details>
 
                                 <details className="group bg-warm-ivory rounded-xl">
@@ -140,11 +163,11 @@ export default function GroupDiningVenues() {
                             <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
                                 <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Jinbeh Locations</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/locations/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
                                         <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Visit us in Frisco</h4>
                                         <p className="text-charcoal/70 text-sm">Near Stonebriar Centre, convenient for North Texas group events and celebrations.</p>
                                     </Link>
-                                    <Link href="/locations/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
+                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
                                         <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Visit us in Lewisville</h4>
                                         <p className="text-charcoal/70 text-sm">Off I-35E near Vista Ridge Mall, perfect for Lewisville and North DFW group dining.</p>
                                     </Link>
@@ -159,7 +182,7 @@ export default function GroupDiningVenues() {
                                     {[{ t: "Hibachi Catering", s: "/blog/hibachi-catering-dfw", i: "/images/blog/4-C060324-6380.jpg" },
                                     { t: "Hibachi Birthday Ideas", s: "/blog/hibachi-birthday-party-ideas", i: "/images/blog/1-C060324-6328.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
                                             <span className="text-sm group-hover:text-accent-red">{r.t}</span>
                                         </Link>
                                     ))}

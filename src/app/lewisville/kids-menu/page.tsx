@@ -752,16 +752,16 @@ export default function KidsMenuLewisvillePage() {
               <p className="text-lg mb-8">Off I-35E near Vista Ridge Mall</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/lewisville#reserve"
+                  href="/reservations"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all font-heading"
                 >
                   Make a Reservation
                 </Link>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:2144882224"
                   className="bg-white/20 backdrop-blur border-2 border-white text-white hover:bg-white hover:text-accent-red px-8 py-4 text-lg font-semibold rounded-xl transition-all font-heading"
                 >
-                  Call Us
+                  Call (214) 488-2224
                 </a>
               </div>
             </div>

@@ -20,6 +20,9 @@ export const metadata: Metadata = {
             "Explore the finest seafood restaurants in Lewisville. Fresh fish, sushi, and authentic Japanese cuisine await.",
         images: ["/images/blog/10-C060324-6501.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/seafood-lewisville",
+  },
 };
 
 const faqs = [
@@ -84,9 +87,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Best Seafood in Lewisville TX" },
+  ],
+};
+
 export default function SeafoodLewisville() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -113,7 +129,7 @@ export default function SeafoodLewisville() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=local-guides" className="hover:text-white">Locations</Link>
+                        <Link href="/blog/category/local-guides" className="hover:text-white">Locations</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -272,7 +288,7 @@ export default function SeafoodLewisville() {
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/lewisville#reserve"
+                                                href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
                                                 Reserve at Lewisville →
@@ -349,7 +365,7 @@ export default function SeafoodLewisville() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/lewisville#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve at Lewisville

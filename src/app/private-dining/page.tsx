@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
   title: "Private Dining at Jinbeh | Exclusive Events in Frisco & Lewisville",
@@ -42,7 +43,7 @@ const faqSchema = {
       name: "What is the minimum spend for private dining at Jinbeh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Minimum spend requirements vary based on the size of your group and which room you book. Please contact us directly for specific details. For groups of 8-10, we can often accommodate you at a private hibachi table with a reasonable per-person minimum.",
+        text: "Minimum spend requirements vary based on the size of your group and the space you reserve. Please contact us directly for specific details. For groups of 8-10, we can often accommodate you at a private hibachi table with a reasonable per-person minimum.",
       },
     },
     {
@@ -87,10 +88,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Does Jinbeh have private dining rooms?",
+      name: "Does Jinbeh have private dining spaces?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We have semi-private rooms and exclusive private dining spaces at both our Frisco and Lewisville locations. Our private areas can be customized with your menu choices and accommodated for groups from 8 to 60+ guests. Contact us to learn more about our available private spaces.",
+        text: "Yes! We offer private booths in our sushi area and a secluded dining area with dividers in the back of our Frisco hibachi space — perfect for VIP gatherings, celebrations, and intimate events. Both our Frisco and Lewisville locations have semi-private spaces that can be customized for groups from 8 to 60+ guests. Contact us to learn more.",
       },
     },
     {
@@ -208,7 +209,8 @@ const locations = [
     highlights: [
       "Premium location near Stonebriar Centre",
       "Multiple private hibachi tables",
-      "Exclusive private dining room",
+      "Secluded dining area with dividers for VIP groups",
+      "Private booths in sushi area",
       "Full bar service",
       "Ample parking",
     ],
@@ -222,7 +224,7 @@ const locations = [
     highlights: [
       "Convenient I-35E access",
       "Multiple private hibachi experiences",
-      "Intimate private spaces",
+      "Intimate semi-private spaces",
       "Full service bar",
       "Easy parking",
     ],
@@ -237,8 +239,8 @@ const amenities = [
     icon: "🔥",
   },
   {
-    title: "Exclusive Private Rooms",
-    description: "Separate dining spaces perfect for larger groups requiring privacy and distinct experiences",
+    title: "Semi-Private Dining Areas",
+    description: "Private booths in our sushi area and a secluded section with dividers in the back of the Frisco hibachi space — ideal for VIP groups and celebrations",
     icon: "🏠",
   },
   {
@@ -329,8 +331,8 @@ export default function PrivateDiningPage() {
               Private Dining for Your Special Occasion
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto">
-              Host your celebration in elegant private spaces with hibachi entertainment,
-              custom menus, and impeccable service.
+              Looking for private dining Frisco or a private dining room restaurant for your next event? Host your <Link href="/celebrations" className="text-soft-gold hover:underline">celebration</Link> in elegant private spaces with hibachi entertainment,
+              custom menus, and impeccable service. We also offer full-service <Link href="/catering" className="text-soft-gold hover:underline">catering</Link> for off-site events.
             </p>
           </div>
         </section>
@@ -339,12 +341,14 @@ export default function PrivateDiningPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Perfect for Every Occasion
-              </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                From intimate celebrations to grand corporate events, we create unforgettable experiences.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Perfect for Every Occasion
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  As a premier private party venue Frisco and private event space Japanese-style, we welcome groups looking for restaurants with private rooms. From a private hibachi party to corporate dining Frisco celebrations, private event Frisco Texas — we create unforgettable experiences with a private celebration venue for every occasion.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -358,6 +362,12 @@ export default function PrivateDiningPage() {
                     {event.title}
                   </h3>
                   <p className="text-charcoal/70 mb-6">{event.description}</p>
+                  {event.title === 'Birthday Parties' && (
+                    <p className="text-charcoal/70 mb-4 text-sm">Planning a birthday? Explore our <Link href="/celebrations/birthday" className="text-accent-red hover:underline font-medium">birthday celebration</Link> packages and read our <Link href="/blog/birthday-party-venues-frisco" className="text-accent-red hover:underline font-medium">Frisco birthday venue guide</Link>.</p>
+                  )}
+                  {event.title === 'Corporate Events' && (
+                    <p className="text-charcoal/70 mb-4 text-sm">Looking for corporate dining? See our <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">large group dining</Link> tips and <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">private dining options</Link>.</p>
+                  )}
                   <ul className="space-y-2">
                     {event.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-3 text-sm text-charcoal/80">
@@ -386,12 +396,14 @@ export default function PrivateDiningPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Premium Amenities & Features
-              </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Every detail is thoughtfully curated to create an exceptional private dining experience.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Premium Amenities & Features
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  Every detail is thoughtfully curated to create an exceptional private dining experience. See our full <Link href="/menu" className="text-accent-red hover:underline font-medium">menu</Link> for available selections.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
@@ -414,12 +426,14 @@ export default function PrivateDiningPage() {
         <section className="py-20 bg-charcoal">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Private Dining at Both Locations
-              </h2>
-              <p className="text-lg text-white/70 max-w-2xl mx-auto">
-                Each location features exclusive private dining spaces designed for your comfort and enjoyment.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                  Private Dining at Both Locations
+                </h2>
+                <p className="text-lg text-white/70 max-w-2xl mx-auto">
+                  Each location features exclusive private dining spaces designed for your comfort and enjoyment.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -505,12 +519,14 @@ export default function PrivateDiningPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Simple Booking Process
-              </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Planning your private event is easy. Follow these steps to book your exclusive experience.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Simple Booking Process
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  Planning your private event is easy. Follow these steps to book your exclusive experience.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -707,12 +723,14 @@ export default function PrivateDiningPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Have questions about private dining? We've got answers.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Have questions about private dining? We've got answers.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-6">

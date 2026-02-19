@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Appetizers Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Explore Jinbeh Frisco's appetizers menu. Shareability, group dining, perfect starters. 6 delicious options from Edamame to Seared Ahi Tuna. Near Stonebriar Centre, minutes from Legacy West.",
-  keywords: ["appetizers frisco","best appetizers frisco","appetizers menu frisco","jinbeh appetizers","japanese appetizers frisco","japanese appetizers","starters","small plates"],
+  keywords: ["appetizers frisco", "best appetizers frisco", "appetizers menu frisco", "jinbeh appetizers", "japanese appetizers frisco", "japanese appetizers", "starters", "small plates"],
   openGraph: {
     title: "Appetizers Menu | Jinbeh Frisco",
     description: "Shareability, group dining, perfect starters. 6 appetizers options at Jinbeh Frisco.",
@@ -181,7 +182,7 @@ export default function AppetizersFriscoPage() {
                 each crafted with care and the finest ingredients.
               </p>
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
@@ -207,8 +208,14 @@ export default function AppetizersFriscoPage() {
                 href="/frisco/appetizers/edamame"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🥢</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Shishito_Peppers.jpg"
+                    alt="Steamed edamame with sea salt"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -227,8 +234,14 @@ export default function AppetizersFriscoPage() {
                 href="/frisco/appetizers/gyoza"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🥢</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Gyoza_Potstickers.jpg"
+                    alt="Pan-fried gyoza potstickers"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -247,8 +260,14 @@ export default function AppetizersFriscoPage() {
                 href="/frisco/appetizers/tempura"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🥢</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Shrimp_Tempura.jpg"
+                    alt="Shrimp Tempura — light and crispy fried shrimp"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -267,8 +286,14 @@ export default function AppetizersFriscoPage() {
                 href="/frisco/appetizers/soft-shell-crab"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🥢</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Soft_Shell_Crab.jpg"
+                    alt="Crispy soft-shell crab, deep fried"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -287,8 +312,14 @@ export default function AppetizersFriscoPage() {
                 href="/frisco/appetizers/tuna-tartare"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🥢</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Tuna_Sashimi.jpg"
+                    alt="Tuna Tartare — diced ahi tuna with avocado and ponzu"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -307,8 +338,14 @@ export default function AppetizersFriscoPage() {
                 href="/frisco/appetizers/seared-tuna"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🥢</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/food/SmokedSalmonCloseup.jpg"
+                    alt="Seared Ahi Tuna — pepper-crusted ahi with wasabi aioli"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -339,7 +376,7 @@ export default function AppetizersFriscoPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/frisco#reserve"
+                  href="/reservations"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Reserve a Table
@@ -412,7 +449,7 @@ export default function AppetizersFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Yes! Most appetizers items are available for takeout and delivery. Call (214) 619-1200 or order online. 
+                    Yes! Most appetizers items are available for takeout and delivery. Call (214) 619-1200 or order online.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -440,7 +477,7 @@ export default function AppetizersFriscoPage() {
               Explore More at Jinbeh Frisco
             </h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              
+
               <Link
                 href="/frisco/hibachi"
                 className="block p-6 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"

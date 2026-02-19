@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RevealSection, HeroSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -40,7 +41,7 @@ const gallerySchema = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
   "name": "Jinbeh Japanese Restaurant Photo Gallery",
-  "description": "Photo gallery showcasing hibachi action, sushi & rolls, dining experiences, and celebrations at Jinbeh.",
+  "description": "Jinbeh photos Japanese restaurant gallery — browse hibachi restaurant photos, sushi photos, and dining experiences at our Frisco restaurant and Lewisville restaurant locations.",
   "url": "https://jinbeh.com/gallery",
   "image": [
     {
@@ -267,16 +268,22 @@ export default function GalleryPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              Visual Experience
-            </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
-              Our Gallery
-            </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-              Explore the art of hibachi, the craft of sushi, and the moments that
-              make celebrations unforgettable at Jinbeh.
-            </p>
+            <RevealSection>
+              <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
+                Visual Experience
+              </p>
+            </RevealSection>
+            <RevealSection delay={100}>
+              <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
+                Our Gallery
+              </h1>
+            </RevealSection>
+            <RevealSection delay={200}>
+              <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
+                Explore the art of hibachi, the craft of sushi, and the moments that
+                make celebrations unforgettable at Jinbeh.
+              </p>
+            </RevealSection>
           </div>
         </section>
 
@@ -285,9 +292,11 @@ export default function GalleryPage() {
           <div className="container mx-auto px-6">
             {/* Gallery Title */}
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Discover Our World
-              </h2>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Discover Our World
+                </h2>
+              </RevealSection>
               <p className="text-lg text-charcoal/70">
                 From the sizzle of the hibachi griddle to the artistry of our sushi chefs,
                 witness the passion behind every dish at Jinbeh.
@@ -532,9 +541,11 @@ export default function GalleryPage() {
               <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
                 Ready to Experience It Yourself?
               </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Make Your Own Memories at Jinbeh
-              </h2>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                  Make Your Own Memories at Jinbeh
+                </h2>
+              </RevealSection>
               <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
                 Come discover why families across North Texas have trusted Jinbeh for
                 authentic hibachi and sushi for over 37 years.

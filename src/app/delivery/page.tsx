@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
+import { RevealSection, ShinyBadge } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import locations from "@/data/locations.json";
 
 export const metadata: Metadata = {
   title: "Jinbeh Delivery | Japanese Food Delivery Frisco & Lewisville TX",
   description:
-    "Order authentic Japanese sushi and hibachi favorites for delivery in Frisco and Lewisville. Available on DoorDash, UberEats, and Grubhub. Fresh ingredients, fast delivery.",
+    "Order authentic Japanese sushi and hibachi favorites for delivery in Frisco and Lewisville. Available on Uber Eats and Grubhub. Fresh ingredients, fast delivery.",
   keywords: [
     "jinbeh delivery",
     "japanese food delivery frisco",
     "sushi delivery lewisville",
     "japanese restaurant delivery texas",
     "hibachi delivery near me",
-    "doordash uber eats grubhub",
+    "uber eats grubhub",
   ],
   openGraph: {
     title: "Jinbeh Delivery | Japanese Food Delivery Frisco & Lewisville",
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/delivery",
     images: [
       {
-        url: "https://jinbeh.com/images/delivery/delivery-hero.jpg",
+        url: "https://jinbeh.com/images/food/jinbeh_togo.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese food delivery service in Frisco and Lewisville",
@@ -44,7 +46,7 @@ const faqSchema = {
       name: "Does Jinbeh deliver to my area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh delivers to Frisco, Lewisville, and surrounding areas including Carrollton, Coppell, The Colony, and nearby neighborhoods. Check delivery availability on DoorDash, UberEats, or Grubhub.",
+        text: "Jinbeh delivers to Frisco, Lewisville, and surrounding areas including Carrollton, Coppell, The Colony, and nearby neighborhoods. Check delivery availability on Uber Eats or Grubhub.",
       },
     },
     {
@@ -68,7 +70,7 @@ const faqSchema = {
       name: "What's the best way to order?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can order through DoorDash, UberEats, or Grubhub for convenient delivery. All three platforms offer competitive pricing and delivery options.",
+        text: "You can order through Uber Eats or Grubhub for convenient delivery. Both platforms offer competitive pricing and delivery options.",
       },
     },
     {
@@ -112,15 +114,21 @@ export default function DeliveryPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              Quick & Convenient
-            </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
-              Jinbeh Delivered to Your Door
-            </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-              Authentic Japanese sushi and hibachi favorites delivered fresh to your home in Frisco, Lewisville, and surrounding areas.
-            </p>
+            <RevealSection>
+              <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
+                <ShinyBadge className="!text-soft-gold">Quick & Convenient</ShinyBadge>
+              </p>
+            </RevealSection>
+            <RevealSection delay={100}>
+              <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 hero-headline">
+                Jinbeh Delivered to Your Door
+              </h1>
+            </RevealSection>
+            <RevealSection delay={200}>
+              <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
+                Japanese food delivery Frisco and sushi delivery Lewisville — our Japanese restaurant delivery Texas service brings hibachi delivery near me favorites straight to your door via Uber Eats Grubhub and more.
+              </p>
+            </RevealSection>
           </div>
         </section>
 
@@ -128,65 +136,44 @@ export default function DeliveryPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Order Now on Your Favorite Platform
-              </h2>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Order Now on Your Favorite Platform
+                </h2>
+              </RevealSection>
               <p className="text-lg text-charcoal/70">
                 Same great Jinbeh quality, delivered right to you. Choose your preferred platform and enjoy authentic Japanese cuisine at home.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {/* DoorDash */}
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-32 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <circle cx="12" cy="12" r="10" />
-                    <path
-                      d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <div className="p-8 text-center">
-                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
-                    DoorDash
-                  </h3>
-                  <p className="text-charcoal/70 mb-6">
-                    Fast delivery with exclusive DoorDash member benefits.
-                  </p>
-                  <a
-                    href="https://www.doordash.com/search/jinbeh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-accent-red hover:bg-accent-red-hover text-white px-8 py-3 rounded-xl font-semibold transition-colors"
-                  >
-                    Order on DoorDash
-                  </a>
-                </div>
-              </div>
-
-              {/* UberEats */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Uber Eats */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="h-32 bg-gradient-to-br from-black to-gray-800 flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-                  </svg>
+                  <span className="text-5xl">🚗</span>
                 </div>
                 <div className="p-8 text-center">
                   <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
-                    UberEats
+                    Uber Eats
                   </h3>
                   <p className="text-charcoal/70 mb-6">
                     Seamless ordering and reliable delivery to your door.
                   </p>
                   <a
-                    href="https://www.ubereats.com/search?q=jinbeh"
+                    href={locations.locations.frisco.orderOnline.ubereats}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-charcoal hover:bg-gray-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block w-full bg-charcoal hover:bg-gray-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors mb-3"
                   >
-                    Order on UberEats
+                    Frisco on Uber Eats
+                  </a>
+                  <a
+                    href={locations.locations.lewisville.orderOnline.ubereats}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full bg-charcoal/80 hover:bg-gray-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                  >
+                    Lewisville on Uber Eats
                   </a>
                 </div>
               </div>
@@ -194,9 +181,7 @@ export default function DeliveryPage() {
               {/* Grubhub */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="h-32 bg-gradient-to-br from-red-500 to-soft-gold flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" />
-                  </svg>
+                  <span className="text-5xl">🛵</span>
                 </div>
                 <div className="p-8 text-center">
                   <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
@@ -206,12 +191,20 @@ export default function DeliveryPage() {
                     Trusted platform with rewards and special offers.
                   </p>
                   <a
-                    href="https://www.grubhub.com/search?q=jinbeh"
+                    href={locations.locations.frisco.orderOnline.grubhub}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-accent-red hover:bg-accent-red-hover text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                    className="inline-block w-full bg-accent-red hover:bg-accent-red-hover text-white px-8 py-3 rounded-xl font-semibold transition-colors mb-3"
                   >
-                    Order on Grubhub
+                    Frisco on Grubhub
+                  </a>
+                  <a
+                    href={locations.locations.lewisville.orderOnline.grubhub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full bg-accent-red/80 hover:bg-accent-red-hover text-white px-8 py-3 rounded-xl font-semibold transition-colors"
+                  >
+                    Lewisville on Grubhub
                   </a>
                 </div>
               </div>
@@ -275,7 +268,7 @@ export default function DeliveryPage() {
 
                   <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-soft-gold">
                     <p className="text-charcoal/80">
-                      Don't see your area? Check availability on DoorDash, UberEats, or Grubhub—delivery areas expand frequently, and you might be closer than you think!
+                      Don&apos;t see your area? Check availability on Uber Eats or Grubhub—delivery areas expand frequently, and you might be closer than you think!
                     </p>
                   </div>
                 </div>
@@ -366,12 +359,20 @@ export default function DeliveryPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-3">
                 <a
-                  href="https://www.doordash.com/search/jinbeh"
+                  href={locations.locations.frisco.orderOnline.ubereats}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red-hover transition-colors"
                 >
-                  View Full Menu
+                  View Full Menu on Uber Eats
+                </a>
+                <a
+                  href={locations.locations.frisco.orderOnline.grubhub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-colors"
+                >
+                  View Full Menu on Grubhub
                 </a>
               </div>
             </div>
@@ -467,7 +468,7 @@ export default function DeliveryPage() {
                 {[
                   {
                     q: "Does Jinbeh deliver to my area?",
-                    a: "Jinbeh delivers to Frisco, Lewisville, Carrollton, Coppell, The Colony, and surrounding areas. Check availability on DoorDash, UberEats, or Grubhub to confirm your location.",
+                    a: "Jinbeh delivers to Frisco, Lewisville, Carrollton, Coppell, The Colony, and surrounding areas. Check availability on Uber Eats or Grubhub to confirm your location.",
                   },
                   {
                     q: "How long does delivery take?",
@@ -479,7 +480,7 @@ export default function DeliveryPage() {
                   },
                   {
                     q: "What's the best way to order?",
-                    a: "All three platforms (DoorDash, UberEats, Grubhub) are excellent. Choose based on your preference or loyalty program. Each offers competitive pricing and reliable delivery.",
+                    a: "Both platforms (Uber Eats, Grubhub) are excellent. Choose based on your preference or loyalty program. Each offers competitive pricing and reliable delivery.",
                   },
                   {
                     q: "Do you deliver on weekends?",
@@ -491,7 +492,7 @@ export default function DeliveryPage() {
                   },
                   {
                     q: "Are there delivery fees?",
-                    a: "Delivery fees vary by platform and distance. DoorDash, UberEats, and Grubhub all offer their own pricing. Check the app for total costs before ordering.",
+                    a: "Delivery fees vary by platform and distance. Uber Eats and Grubhub each offer their own pricing. Check the app for total costs before ordering.",
                   },
                   {
                     q: "What if I'm not satisfied with my order?",
@@ -535,7 +536,7 @@ export default function DeliveryPage() {
                 {
                   step: "1",
                   title: "Choose Platform",
-                  description: "Open DoorDash, UberEats, or Grubhub and search for Jinbeh.",
+                  description: "Open Uber Eats or Grubhub and search for Jinbeh.",
                   icon: "📱",
                 },
                 {
@@ -585,29 +586,45 @@ export default function DeliveryPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
               <a
-                href="https://www.doordash.com/search/jinbeh"
+                href={locations.locations.frisco.orderOnline.ubereats}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
-                Order on DoorDash
+                Order on Uber Eats
               </a>
               <a
-                href="https://www.ubereats.com/search?q=jinbeh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 text-lg font-semibold rounded-xl transition-all"
-              >
-                Order on UberEats
-              </a>
-              <a
-                href="https://www.grubhub.com/search?q=jinbeh"
+                href={locations.locations.frisco.orderOnline.grubhub}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl transition-all"
               >
                 Order on Grubhub
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Blog Content */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">Explore Our Menu Guides</h2>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/sushi-platters-near-me" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Party Trays</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Sushi Platters & Catering</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Order beautiful sushi platters for parties and group events.</p>
+              </Link>
+              <Link href="/blog/types-of-sushi" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Sushi Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Types of Sushi Explained</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Know your rolls before you order — from nigiri to specialty rolls.</p>
+              </Link>
+              <Link href="/blog/sushi-lunch-specials" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Deals</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Sushi Lunch Specials</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Discover our best lunch deals and combo specials.</p>
+              </Link>
             </div>
           </div>
         </section>
@@ -631,10 +648,10 @@ export default function DeliveryPage() {
                     Near Stonebriar Centre
                   </p>
                   <a
-                    href="tel:+19726187010"
+                    href="tel:+12146191200"
                     className="text-accent-red hover:text-accent-red-hover font-semibold"
                   >
-                    (972) 618-7010
+                    (214) 619-1200
                   </a>
                 </div>
                 <div className="bg-white rounded-xl p-6">
@@ -645,10 +662,10 @@ export default function DeliveryPage() {
                     Off I-35E near Vista Ridge
                   </p>
                   <a
-                    href="tel:+19723153744"
+                    href="tel:+12144882224"
                     className="text-accent-red hover:text-accent-red-hover font-semibold"
                   >
-                    (972) 315-3744
+                    (214) 488-2224
                   </a>
                 </div>
               </div>

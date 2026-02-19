@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RevealSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -346,11 +347,13 @@ export default function FAQPage() {
         {/* Hero */}
         <section className="py-16 bg-gradient-to-br from-deep-indigo to-charcoal text-white">
           <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-              Frequently Asked Questions
-            </h1>
+            <RevealSection>
+              <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+                Frequently Asked Questions
+              </h1>
+            </RevealSection>
             <p className="text-xl text-white/80">
-              Find answers to common questions about Jinbeh, our menu, dining experiences, and services.
+              Your Jinbeh FAQ resource — answers to Japanese restaurant questions about our menu, hibachi dining FAQ, sushi questions, restaurant hours, dietary restrictions, reservation questions, and Frisco Lewisville dining.
             </p>
           </div>
         </section>
@@ -408,6 +411,30 @@ export default function FAQPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Explore Our Guides */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">Dive Deeper</h2>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/hibachi-dining-experience" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Hibachi Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">The Hibachi Experience</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Everything you need to know about dining at a hibachi table.</p>
+              </Link>
+              <Link href="/blog/types-of-sushi" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Sushi Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Types of Sushi</h3>
+                <p className="text-sm text-charcoal/70 mt-2">From nigiri to specialty rolls — discover every style of sushi.</p>
+              </Link>
+              <Link href="/blog/sake-pairing-guide" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Drinks</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Sake Pairing Guide</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Perfect sake matches for every dish on our menu.</p>
+              </Link>
             </div>
           </div>
         </section>

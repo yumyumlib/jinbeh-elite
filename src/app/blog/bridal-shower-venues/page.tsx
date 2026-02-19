@@ -18,7 +18,10 @@ export const metadata: Metadata = {
     title: "Best Places for Bridal Showers Near Me",
     description:
       "Find the perfect bridal shower venue near you. Discover elegant hotels, charming gardens, intimate cafes, and unique spaces for unforgettable celebrations.",
-    images: ["/images/photoshoot/celebration-table.jpg"],
+    images: ["/images/instagram/lobster-spread-overhead.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/bridal-shower-venues",
   },
 };
 
@@ -50,6 +53,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function BridalShowerVenuesPage({ params }: { params: { slug: string } }) {
   const slug = "bridal-shower-venues";
   return (
@@ -60,6 +65,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       heroAlt="Elegant bridal shower celebration at a beautiful venue with flowers and elegant table settings"
       category="Celebrations"
       categorySlug="celebrations"
+      slug="bridal-shower-venues"
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
@@ -163,14 +169,14 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
 
       <p>
         Restaurants like{" "}
-        <Link href="/locations/frisco" className="text-accent-red hover:underline">
+        <Link href="/frisco" className="text-accent-red hover:underline">
           Jinbeh in Frisco
         </Link>{" "}
         and{" "}
-        <Link href="/locations/lewisville" className="text-accent-red hover:underline">
+        <Link href="/lewisville" className="text-accent-red hover:underline">
           Lewisville
         </Link>{" "}
-        offer excellent bridal shower options. Private dining spaces provide
+        offer excellent bridal shower options. <Link href="/private-dining" className="text-accent-red hover:underline">Private dining</Link> spaces provide
         intimate, elegant atmospheres without requiring extensive decoration. You
         can customize menus to accommodate guest preferences and dietary needs.
         We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for flexible options.
@@ -360,14 +366,14 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       <p>
         The perfect bridal shower venue sets the stage for an unforgettable
         celebration. By taking time to explore your options and plan carefully,
-        you'll create a memorable event that the bride will cherish forever.
+        you'll create a memorable event that the bride will cherish forever. Consider a <Link href="/gift-cards" className="text-accent-red hover:underline">Jinbeh gift card</Link> as a shower gift the bride-to-be can enjoy anytime.
         Whether you choose an intimate garden gathering, elegant hotel ballroom,
         or unique specialty venue, the key is selecting a space that reflects
         the bride's personality and makes her feel celebrated and loved.
       </p>
 
       <p>
-        For an interactive celebration with beautiful ambiance, visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to host your bridal shower at Jinbeh.
+        For an interactive celebration with beautiful ambiance, visit our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to host your bridal shower at Jinbeh.
       </p>
 
       <p>
@@ -375,6 +381,15 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       </p>
 
       <RelatedArticles currentSlug={slug} />
-    </ArticleLayout>
+    
+        {/* Related Reading */}
+        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+          <div className="flex flex-col gap-2">
+              <Link href="/blog/bachelorette-restaurants-dallas" className="text-accent-red hover:underline font-medium">Best Bachelorette Restaurants in Dallas</Link>
+              <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">Restaurants with Private Dining Rooms</Link>
+          </div>
+        </div>
+      </ArticleLayout>
   );
 }

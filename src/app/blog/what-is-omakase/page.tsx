@@ -22,6 +22,9 @@ export const metadata: Metadata = {
             "Complete guide to omakase: meaning, history, what to expect, and etiquette for an unforgettable sushi dinner.",
         images: ["/images/blog/15-C060324-6663.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/what-is-omakase",
+  },
 };
 
 const faqs = [
@@ -102,9 +105,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "What is Omakase? The Ultimate Dining Experience" },
+  ],
+};
+
 export default function WhatIsOmakase() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -131,7 +147,7 @@ export default function WhatIsOmakase() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -472,7 +488,7 @@ export default function WhatIsOmakase() {
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/frisco#reserve"
+                                                href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
                                                 Reserve Your Omakase Experience →

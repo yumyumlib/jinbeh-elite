@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Explore iconic Japanese beverages and their cultural significance. From traditional sake to modern Ramune.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/japanese-beverages-guide",
+  },
 };
 
 const schemas = [
@@ -24,9 +27,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+    { "@type": "ListItem", "position": 4, "name": "Japanese Drinks: Sake, Beer, and Beyond" },
+  ],
+};
+
 export default function JapaneseBeveragesGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -34,7 +50,7 @@ export default function JapaneseBeveragesGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=cuisine">Cuisine</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/cuisine">Cuisine</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍵 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Popular Japanese Beverages</h1>
@@ -63,7 +79,7 @@ export default function JapaneseBeveragesGuide() {
 
                                 <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-accent-red">
                                     <h3 className="font-bold text-charcoal mb-2">🍶 Sake: Japan's Iconic Rice Wine</h3>
-                                    <p className="text-charcoal/80">Sake, or "nihonshu," is a traditional rice wine with over 1000 years of history. Brewed using rice, water, yeast, and koji mold, sake varies in flavor and alcohol content. Enjoyed during celebrations and served warm or chilled, sake tasting is an art form like wine appreciation. Family-run breweries hold generations of secrets.</p>
+                                    <p className="text-charcoal/80">Sake, or "nihonshu," is a traditional rice wine with over 1000 years of history. Brewed using rice, water, yeast, and koji mold, sake varies in flavor and alcohol content. Enjoyed during celebrations and served warm or chilled, sake tasting is an art form like wine appreciation. Learn more about <Link href="/blog/sake-taste-profile" className="text-accent-red hover:underline">sake's complex flavor profile</Link> and discover how to match it with food in our <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing guide</Link>. Explore the full selection at Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, or sample sake at special prices during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>.</p>
                                 </div>
 
                                 <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-deep-indigo">
@@ -78,7 +94,7 @@ export default function JapaneseBeveragesGuide() {
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Drink</th><th className="p-3 text-left">Type</th><th className="p-3 text-left">Experience</th></tr></thead>
                                 <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🍹 Ramune</td><td className="p-3">Carbonated Soda</td><td className="p-3">Playful glass marble bottle, nostalgic summer treat</td></tr>
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🍹 <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline">Ramune</Link></td><td className="p-3">Carbonated Soda</td><td className="p-3">Playful glass marble bottle, nostalgic summer treat</td></tr>
                                     <tr className="border-b"><td className="p-3 font-semibold">🥛 Calpis</td><td className="p-3">Cultured Drink</td><td className="p-3">Tangy yogurt-like flavor, refreshing and accessible</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">💪 Pocari Sweat</td><td className="p-3">Sports Drink</td><td className="p-3">Electrolyte replenishment for athletes and activity</td></tr>
                                     <tr className="border-b"><td className="p-3 font-semibold">☕ Canned Coffee</td><td className="p-3">Coffee</td><td className="p-3">Premium quality, various styles from black to creamy</td></tr>
@@ -142,12 +158,12 @@ export default function JapaneseBeveragesGuide() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-soft-gold to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍜 Pair Japanese Beverages with Authentic Cuisine at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Enhance your dining experience with properly paired Japanese beverages, from premium sake with sushi to traditional matcha tea completing your meal. Experience the gracious hospitality of authentic Japanese beverage service at our Frisco or Lewisville locations.</p>
+                                <p className="text-white/80 mb-6">Enhance your dining experience with properly paired Japanese beverages, from premium sake with sushi to traditional matcha tea completing your meal. Explore our <Link href="/blog/japanese-cocktails" className="text-white hover:underline underline">Japanese cocktails</Link> for artful mixology, visit our <Link href="/bar" className="text-white hover:underline underline">bar</Link> for the full selection, or drop by during <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> for special pricing on drinks.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/frisco/menu" className="bg-white text-soft-gold px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
                                     <Link href="/lewisville/menu" className="bg-white text-soft-gold px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Lewisville Menu</Link>
-                                    <Link href="/frisco#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Reserve Frisco</Link>
+                                    <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Reserve Lewisville</Link>
                                 </div>
                             </div>
                         </article>
@@ -162,7 +178,7 @@ export default function JapaneseBeveragesGuide() {
                                         { t: "Best Sushi Dallas", s: "/blog/best-sushi-dallas", i: "/images/blog/1-C060324-6328.jpg" }
                                     ].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt="" fill className="object-cover" /></div>
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
                                             <span className="text-sm group-hover:text-accent-red">{r.t}</span>
                                         </Link>
                                     ))}

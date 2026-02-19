@@ -63,6 +63,16 @@ const faqSchema = {
   ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "National Fried Rice Day" },
+  ],
+};
 export default function NationalFriedRiceDayPage() {
   return (
     <>
@@ -72,12 +82,16 @@ export default function NationalFriedRiceDayPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
 
         {/* Hero Section */}
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-warm-ivory" />
           <Image
-            src="/images/food/HibachiFriedRiceVegetables.jpg"
+            src="/images/instagram/hibachi-steak-plate.jpg"
             alt="Famous hibachi fried rice at Jinbeh"
             fill
             className="object-cover"
@@ -95,13 +109,13 @@ export default function NationalFriedRiceDayPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Lewisville

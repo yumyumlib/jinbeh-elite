@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import PhotoGallery from "@/components/PhotoGallery";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
+import HeritageCounter from "@/components/HeritageCounter";
 import locations from "@/data/locations.json";
 
 // Gallery items for Lewisville - Feb 2026 Professional Photoshoot
@@ -148,6 +149,15 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Lewisville" },
+  ],
+};
+
 export default function LewisvillePage() {
   return (
     <>
@@ -165,6 +175,12 @@ export default function LewisvillePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(faqSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema),
           }}
         />
 
@@ -752,6 +768,11 @@ export default function LewisvillePage() {
               <Link href="/nearby/carrollton" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
           </div>
+        </section>
+
+        {/* Heritage Counter */}
+        <section className="py-12 bg-white">
+          <HeritageCounter className="" />
         </section>
 
         {/* Related Blog Posts */}

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Unique Kids Birthday Party Places DFW | Jinbeh",
     description: "Find unique kids birthday party places in DFW! Hibachi restaurants make unforgettable celebrations with fire, food, and entertainment. Book Jinbeh today!",
     keywords: ["kids birthday party places", "unique birthday ideas", "hibachi birthday party", "dfw birthday venues"],
+  openGraph: {
+    title: "Unique Kids Birthday Party Places Near Me",
+    description: "Find the perfect venue for your child's birthday party. Hibachi restaurants offer entertainment, delicious food, and unforgettable experiences kids love.",
+    url: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
+    type: "article",
+    images: ["/images/blog/27-C060324-6888.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
+  },
 };
 
 const faqs = [
@@ -26,9 +36,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+    { "@type": "ListItem", "position": 4, "name": "Unique Kids Birthday Party Places Near Me" },
+  ],
+};
+
 export default function KidsBirthdayPlaces() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -86,7 +109,7 @@ export default function KidsBirthdayPlaces() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🎂 Book Your Party at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Make their next birthday unforgettable! We serve both our <Link href="/locations/frisco" className="text-white hover:underline">Frisco location</Link> and <Link href="/locations/lewisville" className="text-white hover:underline">Lewisville location</Link>.</p>
+                                <p className="text-white/80 mb-6">Make their next birthday unforgettable! We serve both our <Link href="/frisco" className="text-white hover:underline">Frisco location</Link> and <Link href="/lewisville" className="text-white hover:underline">Lewisville location</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/reservations" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
                                     <Link href="/catering" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Catering Options</Link>

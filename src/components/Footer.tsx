@@ -54,7 +54,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.yelp.com/search?find_desc=Jinbeh+Japanese+Restaurant&find_loc=Frisco%2C+TX"
+                href="https://www.yelp.com/biz/jinbeh-japanese-restaurant-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-warm-ivory/10 rounded-full flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
@@ -197,15 +197,24 @@ export default function Footer() {
                 Guides
               </h4>
               <nav className="space-y-2.5 text-sm">
-                {blogCategories.slice(0, 5).map((cat) => (
-                  <Link
-                    key={cat.id}
-                    href={`/blog?category=${cat.id}`}
-                    className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors"
-                  >
-                    {cat.name}
-                  </Link>
-                ))}
+                <Link href="/blog/category/sushi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  Sushi Guide
+                </Link>
+                <Link href="/blog/category/hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  Hibachi Guide
+                </Link>
+                <Link href="/blog/category/happy-hour" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  Happy Hour & Drinks
+                </Link>
+                <Link href="/blog/category/celebrations" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  Celebrations
+                </Link>
+                <Link href="/blog/category/local-guide" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  Local Guide
+                </Link>
+                <Link href="/blog/category/cuisine" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  Japanese Cuisine
+                </Link>
                 <Link href="/blog" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                   All Articles →
                 </Link>
@@ -253,6 +262,14 @@ export default function Footer() {
               <Link href="/nearby/coppell" className="hover:text-warm-ivory/70 transition-colors">Coppell</Link>
               <span className="text-warm-ivory/20">•</span>
               <Link href="/nearby/grapevine" className="hover:text-warm-ivory/70 transition-colors">Grapevine</Link>
+              <span className="text-warm-ivory/20">•</span>
+              <Link href="/nearby/denton" className="hover:text-warm-ivory/70 transition-colors">Denton</Link>
+              <span className="text-warm-ivory/20">•</span>
+              <Link href="/nearby/highland-village" className="hover:text-warm-ivory/70 transition-colors">Highland Village</Link>
+              <span className="text-warm-ivory/20">•</span>
+              <Link href="/nearby/little-elm" className="hover:text-warm-ivory/70 transition-colors">Little Elm</Link>
+              <span className="text-warm-ivory/20">•</span>
+              <Link href="/nearby/richardson" className="hover:text-warm-ivory/70 transition-colors">Richardson</Link>
             </div>
           </div>
         </div>

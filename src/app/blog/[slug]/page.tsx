@@ -45,6 +45,9 @@ export async function generateMetadata({
         title: post.title,
         description: post.excerpt,
         keywords: [post.primaryKeyword, ...post.secondaryKeywords],
+        alternates: {
+            canonical: `https://jinbeh.com/blog/${post.slug}`,
+        },
         openGraph: {
             title: post.title,
             description: post.excerpt,
@@ -102,7 +105,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             name: "Jinbeh Japanese Restaurant",
             logo: {
                 "@type": "ImageObject",
-                url: "https://jinbeh.com/images/logo.png",
+                url: "https://jinbeh.com/images/logos/jinbeh-logo.png",
             },
         },
         mainEntityOfPage: {
@@ -152,7 +155,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         <span>/</span>
                         {category && (
                             <>
-                                <Link href={`/blog?category=${category.id}`} className="hover:text-white">
+                                <Link href={`/blog/category/${category.slug || category.id}`} className="hover:text-white">
                                     {category.name}
                                 </Link>
                                 <span>/</span>
@@ -164,7 +167,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     {/* Category Badge */}
                     {category && (
                         <Link
-                            href={`/blog?category=${category.id}`}
+                            href={`/blog/category/${category.slug || category.id}`}
                             className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium text-white mb-4"
                             style={{ backgroundColor: category.color }}
                         >
@@ -247,13 +250,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-accent-red hover:bg-warm-ivory px-6 py-3 rounded-xl font-semibold"
                                         >
                                             Reserve at Frisco
                                         </Link>
                                         <Link
-                                            href="/lewisville#reserve"
+                                            href="/reservations"
                                             className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-6 py-3 rounded-xl font-semibold"
                                         >
                                             Reserve at Lewisville
@@ -315,7 +318,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                         {categories.map((cat) => (
                                             <Link
                                                 key={cat.id}
-                                                href={`/blog?category=${cat.id}`}
+                                                href={`/blog/category/${cat.slug || cat.id}`}
                                                 className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors"
                                             >
                                                 {cat.icon} {cat.name}

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import locations from "@/data/locations.json";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
   title: "Specials & Promotions | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
@@ -238,16 +239,19 @@ export default function SpecialsPage() {
         <section id="happy-hour" className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <p className="text-accent-red font-bold tracking-wider uppercase mb-2">
-                🍸 Unwind After Work
-              </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Happy Hour Specials
-              </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Monday – Friday, 4:00 PM – 6:00 PM<br/>
-                <span className="text-accent-red font-bold">Don't Miss Out!</span>
-              </p>
+              <RevealSection>
+                <p className="text-accent-red font-bold tracking-wider uppercase mb-2">
+                  🍸 Unwind After Work
+                </p>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Happy Hour Specials
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  Browse our Japanese restaurant specials — the best Frisco specials and Lewisville specials for restaurant deals and dining specials.
+                  Monday – Friday, 4:00 PM – 6:00 PM<br />
+                  <span className="text-accent-red font-bold">Don&apos;t Miss Out!</span> Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktail</Link> menu.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
@@ -282,7 +286,7 @@ export default function SpecialsPage() {
                     <span className="text-2xl">📍</span> Frisco Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    {frisco.address.street} {frisco.address.suite}<br/>
+                    {frisco.address.street} {frisco.address.suite}<br />
                     {frisco.address.city}, {frisco.address.state} {frisco.address.zip}
                   </p>
                   <a href={`tel:${frisco.phoneClean}`} className="inline-block btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold transition-colors">
@@ -294,7 +298,7 @@ export default function SpecialsPage() {
                     <span className="text-2xl">📍</span> Lewisville Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    {lewisville.address.street} {lewisville.address.suite}<br/>
+                    {lewisville.address.street} {lewisville.address.suite}<br />
                     {lewisville.address.city}, {lewisville.address.state} {lewisville.address.zip}
                   </p>
                   <a href={`tel:${lewisville.phoneClean}`} className="inline-block btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold transition-colors">
@@ -310,17 +314,19 @@ export default function SpecialsPage() {
         <section id="lunch" className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <p className="text-deep-indigo font-bold tracking-wider uppercase mb-2">
-                🍱 Midday Deals
-              </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Lunch Specials
-              </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Monday – Friday, 11:00 AM – 2:30 PM<br/>
-                Weekend 11:30 AM – 2:30 PM<br/>
-                <span className="text-deep-indigo font-bold">Affordable Quality Cuisine</span>
-              </p>
+              <RevealSection>
+                <p className="text-deep-indigo font-bold tracking-wider uppercase mb-2">
+                  🍱 Midday Deals
+                </p>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Lunch Specials
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  Monday – Friday, 11:00 AM – 2:30 PM<br />
+                  Weekend 11:30 AM – 2:30 PM<br />
+                  <span className="text-deep-indigo font-bold">Affordable Quality Cuisine</span> — get inspired with our <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:underline">hibachi lunch ideas</Link>
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
@@ -358,15 +364,17 @@ export default function SpecialsPage() {
         <section id="weekly" className="py-20 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <p className="text-soft-gold font-bold tracking-wider uppercase mb-2">
-                📅 Every Day's Special
-              </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Weekly Specials
-              </h2>
-              <p className="text-lg text-white/80 max-w-2xl mx-auto">
-                Unique promotions throughout the week. Plan your visit!
-              </p>
+              <RevealSection>
+                <p className="text-soft-gold font-bold tracking-wider uppercase mb-2">
+                  📅 Every Day&apos;s Special
+                </p>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Weekly Specials
+                </h2>
+                <p className="text-lg text-white/80 max-w-2xl mx-auto">
+                  Unique promotions throughout the week. Plan your visit! Perfect for a <Link href="/blog/date-night-restaurants-frisco" className="text-soft-gold hover:underline">Frisco date night</Link>.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -420,15 +428,17 @@ export default function SpecialsPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <p className="text-accent-red font-bold tracking-wider uppercase mb-2">
-                🎉 Limited Time Offers
-              </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Seasonal & Holiday Specials
-              </h2>
-              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Check back for special promotions tied to holidays and seasons.
-              </p>
+              <RevealSection>
+                <p className="text-accent-red font-bold tracking-wider uppercase mb-2">
+                  🎉 Limited Time Offers
+                </p>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Seasonal & Holiday Specials
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  Check back for special promotions tied to holidays and seasons.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -459,12 +469,16 @@ export default function SpecialsPage() {
                   Subscribe to our newsletter to receive notifications about upcoming seasonal specials and exclusive promotions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                  <label htmlFor="seasonal-email" className="sr-only">Email address for seasonal specials</label>
                   <input
+                    id="seasonal-email"
+                    name="seasonalEmail"
                     type="email"
                     placeholder="Enter your email"
+                    aria-label="Email address for seasonal specials"
                     className="flex-1 px-4 py-3 rounded-xl border border-charcoal/20 focus:outline-none focus:border-accent-red focus:ring-2 focus:ring-accent-red/30"
                   />
-                  <button className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-bold transition-colors">
+                  <button type="submit" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-bold transition-colors">
                     Subscribe
                   </button>
                 </div>
@@ -484,9 +498,13 @@ export default function SpecialsPage() {
                 Get exclusive deals, early access to specials, and insider information delivered to your inbox.
               </p>
               <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
+                <label htmlFor="newsletter-email" className="sr-only">Email address for newsletter</label>
                 <input
+                  id="newsletter-email"
+                  name="newsletterEmail"
                   type="email"
                   placeholder="Your email address"
+                  aria-label="Email address for newsletter"
                   className="flex-1 px-6 py-4 rounded-xl border-0 text-charcoal focus:outline-none focus:ring-2 focus:ring-soft-gold/50"
                   required
                 />
@@ -508,12 +526,14 @@ export default function SpecialsPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Visit Our Locations
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Both Frisco and Lewisville locations feature all current specials.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Visit Our Locations
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Both Frisco and Lewisville locations feature all current specials.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -535,7 +555,7 @@ export default function SpecialsPage() {
                     Frisco Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    {frisco.address.street} {frisco.address.suite}<br/>
+                    {frisco.address.street} {frisco.address.suite}<br />
                     {frisco.address.city}, {frisco.address.state} {frisco.address.zip}
                   </p>
                   <div className="flex items-center gap-2 text-accent-red font-semibold group-hover:gap-4 transition-all">
@@ -563,7 +583,7 @@ export default function SpecialsPage() {
                     Lewisville Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    {lewisville.address.street} {lewisville.address.suite}<br/>
+                    {lewisville.address.street} {lewisville.address.suite}<br />
                     {lewisville.address.city}, {lewisville.address.state} {lewisville.address.zip}
                   </p>
                   <div className="flex items-center gap-2 text-accent-red font-semibold group-hover:gap-4 transition-all">
@@ -580,12 +600,14 @@ export default function SpecialsPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Specials & Deals FAQ
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Got questions about our happy hour, lunch deals, and weekly specials? Find answers here.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Specials & Deals FAQ
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Got questions about our happy hour, lunch deals, and weekly specials? Find answers here.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">

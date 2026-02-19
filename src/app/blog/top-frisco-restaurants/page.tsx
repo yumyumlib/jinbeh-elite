@@ -21,6 +21,9 @@ export const metadata: Metadata = {
             "Your guide to Frisco's best restaurants. From Japanese hibachi to Southern comfort food, discover where locals eat.",
         images: ["/images/blog/8-C060324-6462.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/top-frisco-restaurants",
+  },
 };
 
 const articleSchema = {
@@ -55,7 +58,7 @@ const faqSchema = {
             name: "Where is the best place to eat in Frisco for a special occasion?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "For special occasions, Jinbeh offers exceptional hibachi dining with entertainment, private dining rooms, and fine cuisine. Alternatively, Dee Lincoln Prime provides upscale steakhouse elegance. Both offer memorable experiences.",
+                text: "For special occasions, Jinbeh offers exceptional hibachi dining with entertainment, semi-private dining spaces, and fine cuisine. Alternatively, Dee Lincoln Prime provides upscale steakhouse elegance. Both offer memorable experiences.",
             },
         },
         {
@@ -77,9 +80,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
+  ],
+};
+
 export default function TopFriscoRestaurants() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -106,7 +122,7 @@ export default function TopFriscoRestaurants() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=local-guides" className="hover:text-white">Dining Guide</Link>
+                        <Link href="/blog/category/local-guides" className="hover:text-white">Dining Guide</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -158,8 +174,8 @@ export default function TopFriscoRestaurants() {
                                     </p>
 
                                     <p>
-                                        <strong>Why visit:</strong> Hibachi entertainment, fresh sushi, 4.7-star rating, extensive menu<br/>
-                                        <strong>Best for:</strong> Celebrations, families, Japanese cuisine enthusiasts<br/>
+                                        <strong>Why visit:</strong> Hibachi entertainment, fresh sushi, 4.7-star rating, extensive menu<br />
+                                        <strong>Best for:</strong> Celebrations, families, Japanese cuisine enthusiasts<br />
                                         <strong>Atmosphere:</strong> Minimalist Japanese design with tranquil ambiance
                                     </p>
 
@@ -245,7 +261,7 @@ export default function TopFriscoRestaurants() {
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/frisco#reserve"
+                                                href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
                                                 Reserve at Jinbeh →
@@ -330,7 +346,7 @@ export default function TopFriscoRestaurants() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    For special occasions, consider Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining rooms</Link>, Dee Lincoln Prime for upscale steakhouse elegance, or The Heritage Table for romantic farm-to-table dining. All offer exceptional experiences.
+                                                    For special occasions, consider Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">semi-private dining spaces</Link>, Dee Lincoln Prime for upscale steakhouse elegance, or The Heritage Table for romantic farm-to-table dining. All offer exceptional experiences.
                                                 </p>
                                             </div>
                                         </details>
@@ -354,7 +370,7 @@ export default function TopFriscoRestaurants() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    It's a celebration! Jinbeh specializes in large groups with hibachi tables and private dining rooms. Welcome to the table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for group reservations and custom arrangements.
+                                                    It's a celebration! Jinbeh specializes in large groups with hibachi tables and semi-private dining spaces. Welcome to the table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for group reservations and custom arrangements.
                                                 </p>
                                             </div>
                                         </details>
@@ -385,7 +401,7 @@ export default function TopFriscoRestaurants() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve at Jinbeh
@@ -432,7 +448,7 @@ export default function TopFriscoRestaurants() {
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-accent-red">🎉 Events</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Private Dining Rooms</h4>
+                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Private Dining</h4>
                                         </div>
                                     </Link>
                                 </div>
@@ -440,9 +456,9 @@ export default function TopFriscoRestaurants() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🎉 Events</Link>
+                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍣 Cuisine</Link>
+                                        <Link href="/blog/category/celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🎉 Events</Link>
                                     </div>
                                 </div>
                             </div>

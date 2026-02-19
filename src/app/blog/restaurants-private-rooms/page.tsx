@@ -22,6 +22,9 @@ export const metadata: Metadata = {
             "Find exclusive private dining rooms perfect for corporate events, celebrations, and intimate gatherings. Professional service and customizable menus.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/restaurants-private-rooms",
+  },
 };
 
 const articleSchema = {
@@ -53,18 +56,18 @@ const faqSchema = {
         },
         {
             "@type": "Question",
-            name: "Does Jinbeh have private dining rooms?",
+            name: "Does Jinbeh have private dining spaces?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes! Jinbeh offers private dining rooms at both Frisco and Lewisville locations. Our spaces are perfect for corporate events, celebrations, and intimate dinners. We provide personalized service, customized menus, and professional setup.",
+                text: "Yes! Jinbeh offers private booths in our sushi area and a secluded dining area with dividers in our Frisco hibachi space. Both our Frisco and Lewisville locations provide semi-private spaces perfect for corporate events, celebrations, and intimate dinners with personalized service and customized menus.",
             },
         },
         {
             "@type": "Question",
-            name: "How many people can private dining rooms accommodate?",
+            name: "How many people can Jinbeh's private dining accommodate?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Jinbeh's private dining rooms range from intimate spaces for small gatherings to larger rooms accommodating 20-50+ guests. Contact us to discuss your specific group size and needs.",
+                text: "Jinbeh's semi-private spaces range from intimate booths for small gatherings to our secluded hibachi area accommodating 20-50+ guests. Contact us to discuss your specific group size and needs.",
             },
         },
         {
@@ -78,9 +81,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+    { "@type": "ListItem", "position": 4, "name": "Restaurants with Private Rooms in DFW: Best Private Dining" },
+  ],
+};
+
 export default function RestaurantsPrivateRooms() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -107,7 +123,7 @@ export default function RestaurantsPrivateRooms() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=celebrations" className="hover:text-white">Events</Link>
+                        <Link href="/blog/category/celebrations" className="hover:text-white">Events</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -210,7 +226,7 @@ export default function RestaurantsPrivateRooms() {
                                     </h2>
 
                                     <p>
-                                        Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for private events. Our private dining rooms combine the sophistication of fine dining with the warmth of Japanese hospitality, creating memorable experiences for every occasion.
+                                        Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for private events. Our semi-private dining spaces — including private booths in the sushi area and a secluded section with dividers in the Frisco hibachi space — combine fine dining sophistication with the warmth of Japanese hospitality.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -220,10 +236,10 @@ export default function RestaurantsPrivateRooms() {
                                     <ul className="space-y-3 mb-8">
                                         <li><strong>Authentic Japanese Cuisine:</strong> Meticulously crafted dishes using premium ingredients and traditional techniques. Explore our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.</li>
                                         <li><strong>Hibachi Entertainment:</strong> Optional teppanyaki performances that elevate celebrations and special occasions</li>
-                                        <li><strong>Flexible Spaces:</strong> Private rooms accommodating groups from 8 to 50+ guests</li>
+                                        <li><strong>Flexible Spaces:</strong> Private booths and secluded dining areas accommodating groups from 8 to 50+ guests</li>
                                         <li><strong>Customized Menus:</strong> Work with our culinary team to create dining experiences matching your vision</li>
                                         <li><strong>Professional Service:</strong> Dedicated staff trained in private event management and hospitality</li>
-                                        <li><strong>Multiple Locations:</strong> Conveniently situated in both <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link></li>
+                                        <li><strong>Multiple Locations:</strong> Conveniently situated in both <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link></li>
                                     </ul>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -239,7 +255,7 @@ export default function RestaurantsPrivateRooms() {
                                     </h3>
 
                                     <p>
-                                        Whether it's an anniversary dinner, milestone <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration</Link>, or family reunion, Jinbeh's private rooms provide an intimate yet impressive setting. Our hibachi performances add an element of excitement and entertainment that makes celebrations truly special.
+                                        Whether it's an anniversary dinner, milestone <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration</Link>, or family reunion, Jinbeh's semi-private dining spaces provide an intimate yet impressive setting. Our hibachi performances add an element of excitement and entertainment that makes celebrations truly special. Need a last-minute gift for the guest of honor? A <Link href="/gift-cards" className="text-accent-red hover:underline">Jinbeh gift card</Link> is always appreciated.
                                     </p>
                                 </div>
 
@@ -259,12 +275,12 @@ export default function RestaurantsPrivateRooms() {
                                                 🎉 Private Dining at Jinbeh
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Make your event unforgettable with Jinbeh's private dining rooms and exceptional Japanese cuisine. Perfect for groups of all sizes.
+                                                Make your event unforgettable with Jinbeh's semi-private dining spaces and exceptional Japanese cuisine. Perfect for groups of all sizes.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
-                                                    <span>Private rooms for intimate to large gatherings</span>
+                                                    <span>Private booths and secluded areas for intimate to large gatherings</span>
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
@@ -272,7 +288,7 @@ export default function RestaurantsPrivateRooms() {
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
-                                                    <span>Customized menus and full bar service</span>
+                                                    <span>Customized menus and full <Link href="/bar" className="text-white hover:underline underline">bar</Link> service</span>
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
@@ -347,8 +363,8 @@ export default function RestaurantsPrivateRooms() {
                                     </p>
 
                                     <ul className="space-y-3 mb-8">
-                                        <li><strong><Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco Location</Link>:</strong> Conveniently situated near Stonebriar Centre, perfect for North Frisco residents and businesses.</li>
-                                        <li><strong><Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville Location</Link>:</strong> Accessible off I-35E near Vista Ridge Mall, ideal for Lewisville community gatherings.</li>
+                                        <li><strong><Link href="/frisco" className="text-accent-red hover:underline">Frisco Location</Link>:</strong> Conveniently situated near Stonebriar Centre, perfect for North Frisco residents and businesses.</li>
+                                        <li><strong><Link href="/lewisville" className="text-accent-red hover:underline">Lewisville Location</Link>:</strong> Accessible off I-35E near Vista Ridge Mall, ideal for Lewisville community gatherings.</li>
                                     </ul>
 
                                     <p>
@@ -377,7 +393,7 @@ export default function RestaurantsPrivateRooms() {
 
                                         <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
                                             <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                How far in advance should I book a private dining room?
+                                                How far in advance should I book private dining?
                                                 <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
@@ -389,7 +405,7 @@ export default function RestaurantsPrivateRooms() {
 
                                         <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
                                             <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Can Jinbeh's private rooms accommodate hibachi performances?
+                                                Can Jinbeh's private dining accommodate hibachi performances?
                                                 <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
@@ -433,7 +449,7 @@ export default function RestaurantsPrivateRooms() {
                                         🎉 Plan Your Private Event at Jinbeh
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Make your next gathering truly special with Jinbeh's private dining rooms, exceptional cuisine, and professional service. Let us help create an unforgettable experience.
+                                        Make your next gathering truly special with Jinbeh's semi-private dining spaces, exceptional cuisine, and professional service. Let us help create an unforgettable experience.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
@@ -492,9 +508,9 @@ export default function RestaurantsPrivateRooms() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🎉 Events</Link>
-                                        <Link href="/blog?category=local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍽️ Dining</Link>
-                                        <Link href="/blog?category=celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">📍 Venues</Link>
+                                        <Link href="/blog/category/celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🎉 Events</Link>
+                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍽️ Dining</Link>
+                                        <Link href="/blog/category/celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">📍 Venues</Link>
                                     </div>
                                 </div>
                             </div>

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Japanese Omakase: Unraveling the Unique Dining Art | Jinbeh",
     description: "Experience the art of Japanese omakase, a personalized dining journey highlighting chef creativity and seasonality. Discover omakase at restaurants like Jinbeh in Dallas.",
     keywords: ["omakase", "omakase dining", "japanese omakase", "sushi omakase", "omakase restaurant", "chef tasting menu"],
+  openGraph: {
+    title: "Omakase Dining Guide: Everything You Need to Know",
+    description: "Your complete guide to the omakase experience - from etiquette to what dishes to expect. Make your first omakase unforgettable.",
+    url: "https://jinbeh.com/blog/omakase-dining-guide",
+    type: "article",
+    images: ["/images/blog/17-C060324-6708.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/omakase-dining-guide",
+  },
 };
 
 const schemas = [
@@ -19,9 +29,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Omakase Dining Guide: Everything You Need to Know" },
+  ],
+};
+
 export default function OmakaseDiningGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -29,7 +52,7 @@ export default function OmakaseDiningGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/" className="hover:text-white">Home</Link>/<Link href="/blog" className="hover:text-white">Blog</Link>/<Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/" className="hover:text-white">Home</Link>/<Link href="/blog" className="hover:text-white">Blog</Link>/<Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍣 Omakase Dining</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Omakase: Unraveling the Unique Dining Art</h1>
@@ -194,7 +217,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Yes! The popularity of omakase has spread worldwide. Authentic omakase restaurants, including Jinbeh in Dallas, maintain the core principles while bringing this experience to international audiences. Call our <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> at (214) 619-1200 or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link> at (214) 488-2224 to book your omakase experience.</p>
+                                        <p>Yes! The popularity of omakase has spread worldwide. Authentic omakase restaurants, including Jinbeh in Dallas, maintain the core principles while bringing this experience to international audiences. Call our <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> at (214) 619-1200 or <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link> at (214) 488-2224 to book your omakase experience.</p>
                                     </div>
                                 </details>
 
@@ -204,7 +227,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Welcome to the table! Call us directly to arrange your omakase experience. We recommend booking at least 1-2 weeks in advance. <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco</Link>: (214) 619-1200 or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link>: (214) 488-2224. Tell us about your dietary preferences so our chef can prepare the perfect menu. You can also <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> online.</p>
+                                        <p>Welcome to the table! Call us directly to arrange your omakase experience. We recommend booking at least 1-2 weeks in advance. <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco</Link>: (214) 619-1200 or <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link>: (214) 488-2224. Tell us about your dietary preferences so our chef can prepare the perfect menu. You can also <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> online.</p>
                                     </div>
                                 </details>
                             </div>

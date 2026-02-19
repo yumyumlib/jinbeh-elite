@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Top Asian Cuisine & Fusion Spots in Dallas TX | Jinbeh",
     description: "Discover the rich tapestry of Asian cuisine in Dallas. From traditional dishes to innovative fusion, explore delightful flavors and culinary creativity at Dallas restaurants.",
     keywords: ["asian cuisine dallas", "asian fusion restaurants", "best asian restaurants dallas tx", "fusion cuisine dallas"],
+  openGraph: {
+    title: "Top Asian Cuisine & Fusion Spots in Dallas TX",
+    description: "From authentic Japanese hibachi to creative Asian fusion, explore the best Asian cuisine restaurants in Dallas. Local favorites and hidden gems.",
+    url: "https://jinbeh.com/blog/asian-cuisine-dallas",
+    type: "article",
+    images: ["/images/food/jinbeh_food_closeup.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/asian-cuisine-dallas",
+  },
 };
 
 const schemas = [
@@ -27,9 +37,22 @@ const faqs = [
     { question: "How do I make a reservation at Jinbeh?", answer: "Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224. We recommend reservations for hibachi tables, especially weekends." }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Top Asian Cuisine & Fusion Spots in Dallas TX" },
+  ],
+};
+
 export default function AsianCuisineDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -37,7 +60,7 @@ export default function AsianCuisineDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=cuisine">Cuisine</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/cuisine">Cuisine</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍜 Culinary Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Top Asian Cuisine & Fusion Spots</h1>
@@ -141,7 +164,7 @@ export default function AsianCuisineDallas() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Asian Culinary Excellence at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Authentic Japanese cuisine blending traditional hibachi cooking with fresh sushi. Experience culinary artistry and entertainment in a vibrant, welcoming atmosphere at our <Link href="/locations/frisco" className="underline hover:text-warm-ivory">Frisco location</Link> or <Link href="/locations/lewisville" className="underline hover:text-warm-ivory">Lewisville location</Link>.</p>
+                                <p className="text-white/80 mb-6">Authentic Japanese cuisine blending traditional hibachi cooking with fresh sushi. Experience culinary artistry and entertainment in a vibrant, welcoming atmosphere at our <Link href="/frisco" className="underline hover:text-warm-ivory">Frisco location</Link> or <Link href="/lewisville" className="underline hover:text-warm-ivory">Lewisville location</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
                                     <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10">View Our Menu</Link>

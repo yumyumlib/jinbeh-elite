@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Discover the excitement of a hibachi restaurant menu, featuring sizzling meats, fresh seafood, and delightful desserts.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-menu-guide",
+  },
 };
 
 const faqs = [
@@ -80,6 +83,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function HibachiMenuGuidePage() {
   return (
     <ArticleLayout
@@ -89,9 +94,11 @@ export default function HibachiMenuGuidePage() {
       heroAlt="Hibachi restaurant menu featuring sizzling steak, shrimp, and vegetables"
       category="Japanese Cuisine"
       categorySlug="cuisine"
+      slug="hibachi-menu-guide"
       publishDate="January 2026"
       readTime="8 min read"
       faqs={faqs}
+      keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment — all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
     >
       <h2>Understanding Hibachi Dining</h2>
 
@@ -146,7 +153,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        <strong>Chicken:</strong> For those who prefer poultry, hibachi chicken is a popular option. The chicken is marinated in teriyaki sauce, imparting a sweet and savory taste that is both comforting and satisfying. Cooked to perfection on the hibachi grill, the chicken remains moist and flavorful. <Link href="/locations/lewisville" className="text-accent-red hover:underline">At Jinbeh, our chicken is sourced fresh and prepared with expert precision</Link>.
+        <strong>Chicken:</strong> For those who prefer poultry, hibachi chicken is a popular option. The chicken is marinated in teriyaki sauce, imparting a sweet and savory taste that is both comforting and satisfying. Cooked to perfection on the hibachi grill, the chicken remains moist and flavorful. <Link href="/lewisville" className="text-accent-red hover:underline">At Jinbeh, our chicken is sourced fresh and prepared with expert precision</Link>.
       </p>
 
       <p>
@@ -213,7 +220,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        <strong>Lunch Specials:</strong> Many hibachi restaurants offer lunch specials, providing a more affordable way to enjoy the experience. These specials typically include a smaller portion of the main dishes, allowing you to savor the flavors at a reduced price. <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh&apos;s lunch specials</Link> are among the most affordable in the area.
+        <strong>Lunch Specials:</strong> Many hibachi restaurants offer lunch specials, providing a more affordable way to enjoy the experience. These specials typically include a smaller portion of the main dishes, allowing you to savor the flavors at a reduced price. <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh&apos;s lunch specials</Link> are among the most affordable in the area.
       </p>
 
       <p>
@@ -249,7 +256,7 @@ export default function HibachiMenuGuidePage() {
       <h2>Discovering Jinbeh&apos;s Menu</h2>
 
       <p>
-        One popular destination for hibachi dining is <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Japanese Restaurant</Link>, a well-known establishment that offers an extensive menu featuring classic hibachi dishes. Whether you&apos;re craving a juicy steak or fresh seafood, Jinbeh&apos;s <Link href="/menu" className="text-accent-red hover:underline">menu</Link> has something to satisfy every palate. Known for its high-quality ingredients and skilled chefs, Jinbeh is a favorite among hibachi enthusiasts looking for an exceptional dining experience.
+        One popular destination for hibachi dining is <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Japanese Restaurant</Link>, a well-known establishment that offers an extensive menu featuring classic hibachi dishes. Whether you&apos;re craving a juicy steak or fresh seafood, Jinbeh&apos;s <Link href="/menu" className="text-accent-red hover:underline">menu</Link> has something to satisfy every palate. Known for its high-quality ingredients and skilled chefs, Jinbeh is a favorite among hibachi enthusiasts looking for an exceptional dining experience.
       </p>
 
       <p>
@@ -263,10 +270,20 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <p>
-        With this guide, you&apos;re well-equipped to navigate the world of hibachi and enjoy everything this unique dining experience has to offer. So gather your friends and family, and get ready to embark on a culinary adventure that will leave you craving more. Visit <Link href="/locations/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> today to <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> and experience the hibachi difference.
+        With this guide, you&apos;re well-equipped to navigate the world of hibachi and enjoy everything this unique dining experience has to offer. So gather your friends and family, and get ready to embark on a culinary adventure that will leave you craving more. Visit <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> today to <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> and experience the hibachi difference.
       </p>
 
       <RelatedArticles currentSlug="hibachi-menu-guide" />
+
+      {/* Related Reading */}
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline font-medium">The Hibachi Dining Experience</Link>
+          <Link href="/blog/hibachi-lunch-ideas" className="text-accent-red hover:underline font-medium">Hibachi Lunch Ideas & Combos</Link>
+          <Link href="/celebrations/national-fried-rice-day" className="text-accent-red hover:underline font-medium">🍚 National Fried Rice Day at Jinbeh</Link>
+        </div>
+      </div>
     </ArticleLayout>
   );
 }

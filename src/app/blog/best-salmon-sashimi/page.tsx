@@ -20,6 +20,9 @@ export const metadata: Metadata = {
             "Find the best salmon sashimi near you. Learn where to source fresh fish and expert tips for enjoying authentic sashimi.",
         images: ["/images/blog/7-C060324-6447.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/best-salmon-sashimi",
+  },
 };
 
 const articleSchema = {
@@ -73,9 +76,22 @@ const faqSchema = {
     })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Best Salmon Sashimi Near Me: Fresh & Premium Quality" },
+  ],
+};
+
 export default function BestSalmonSashimi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -102,7 +118,7 @@ export default function BestSalmonSashimi() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -253,7 +269,7 @@ export default function BestSalmonSashimi() {
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/frisco#reserve"
+                                                href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
                                                 Reserve at Frisco →
@@ -330,13 +346,13 @@ export default function BestSalmonSashimi() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve Frisco
                                         </Link>
                                         <Link
-                                            href="/lewisville#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve Lewisville

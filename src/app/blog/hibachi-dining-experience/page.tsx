@@ -19,6 +19,9 @@ export const metadata: Metadata = {
       "Discover the exciting world of hibachi restaurant menus and the unforgettable dining experience that combines culinary art with live entertainment.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-dining-experience",
+  },
 };
 
 const faqs = [
@@ -64,6 +67,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function HibachiDiningExperiencePage() {
   return (
     <ArticleLayout
@@ -73,9 +78,11 @@ export default function HibachiDiningExperiencePage() {
       heroAlt="Hibachi chef performing at Jinbeh Japanese Restaurant with flames and sizzling grill"
       category="Japanese Cuisine"
       categorySlug="cuisine"
+      slug="hibachi-dining-experience"
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
+      keyTakeaway="Hibachi dining combines live chef performances (knife tricks, onion volcanoes, fire shows) with fresh grilled proteins and sides — all prepared at your table. Plan 90 minutes to 2 hours, make reservations for weekends, and come hungry for generous portions."
     >
       <h2>The Art of Hibachi Dining</h2>
 
@@ -84,7 +91,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <p>
-        Hibachi dining is an immersive experience that combines the pleasures of gastronomy with the thrill of live performance. The interaction between the chef and the diners adds a personal touch that elevates the dining experience beyond the ordinary. The communal setting around the grill fosters a sense of camaraderie among diners, making it an ideal choice for group gatherings and special occasions.
+        Hibachi dining is an immersive experience that combines the pleasures of gastronomy with the thrill of live performance. The interaction between the chef and the diners adds a personal touch that elevates the dining experience beyond the ordinary. The communal setting around the grill fosters a sense of camaraderie among diners, making it an ideal choice for group gatherings and special occasions. Wondering about nutrition? Check out our <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline">hibachi calories guide</Link> for mindful dining tips.
       </p>
 
       <h2>Understanding the Hibachi Experience</h2>
@@ -94,7 +101,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <p>
-        This interactive dining style is perfect for groups and celebrations, offering both delicious food and memorable entertainment. It's a place where food meets art, and every dish tells a story that unfolds in real time.
+        This interactive dining style is perfect for groups and celebrations, offering both delicious food and memorable entertainment. For larger parties, Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options provide a dedicated space with personalized service. It's a place where food meets art, and every dish tells a story that unfolds in real time.
       </p>
 
       <p>
@@ -122,7 +129,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <p>
-        Whether you prefer the rich taste of beef or the delicate sweetness of seafood, the classic hibachi entrees at Jinbeh offer something for everyone to enjoy. Visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to experience our award-winning preparation techniques. Don't miss our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> guide to understand your dining experience.
+        Whether you prefer the rich taste of beef or the delicate sweetness of seafood, the classic hibachi entrees at Jinbeh offer something for everyone to enjoy. Visit our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to experience our award-winning preparation techniques. Don't miss our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> guide to understand your dining experience.
       </p>
 
       <h2>Vegetarian & Plant-Based Options</h2>
@@ -172,11 +179,11 @@ export default function HibachiDiningExperiencePage() {
       <h2>Finding Value in Your Hibachi Experience</h2>
 
       <p>
-        To find the best value, consider visiting during lunch hours when many hibachi restaurants offer discounted menus. Lunch specials at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> feature the same high-quality ingredients and expert preparation as dinner entrees, but at a reduced price. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all lunch options.
+        To find the best value, consider visiting during lunch hours when many hibachi restaurants offer discounted menus. Browse our <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch specials</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> — the same high-quality ingredients and expert preparation as dinner entrees, but at a reduced price. Or stop by during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on drinks to complement your meal. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all options.
       </p>
 
       <p>
-        Additionally, checking for local promotions or specials at your favorite hibachi restaurant can help you enjoy a delicious meal without breaking the bank. Some restaurants offer loyalty programs or special discounts for frequent diners, providing additional savings for those who love hibachi.
+        Additionally, checking for local promotions or specials at your favorite hibachi restaurant can help you enjoy a delicious meal without breaking the bank. Some restaurants offer loyalty programs or special discounts for frequent diners, providing additional savings for those who love hibachi. Need midday inspiration? Browse our <Link href="/blog/hibachi-lunch-ideas" className="text-accent-red hover:underline">hibachi lunch ideas</Link> for affordable options.
       </p>
 
       <p>
@@ -186,7 +193,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>Why Choose Jinbeh for Your Hibachi Experience</h2>
 
       <p>
-        When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. With locations in both <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, Jinbeh has been serving families and celebrations since 1988. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> and <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> options.
+        When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. With locations in both <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, Jinbeh has been serving families and celebrations since 1988. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> and <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> options.
       </p>
 
       <p>
@@ -244,7 +251,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <p>
-        Whether you're celebrating a special occasion or simply enjoying a night out, hibachi dining offers an experience that is as delightful as it is delicious. So gather your friends and family, and embark on a culinary adventure that promises both excellent food and a spectacular show. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today. Or check out <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for your private events.
+        Whether you're celebrating a special occasion or simply enjoying a night out, hibachi dining offers an experience that is as delightful as it is delicious. So gather your friends and family, and embark on a culinary adventure that promises both excellent food and a spectacular show. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today. Or check out <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for your private events.
       </p>
     </ArticleLayout>
   );

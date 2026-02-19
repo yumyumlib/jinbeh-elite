@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Bring Jinbeh's authentic Japanese cuisine to your event with professional catering services. Customizable menus for birthdays, corporate events, and more.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/jinbeh-catering-services",
+  },
 };
 
 const faqs = [
@@ -57,6 +60,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function JinbehCateringServicesPage() {
   return (
     <ArticleLayout
@@ -66,6 +71,7 @@ export default function JinbehCateringServicesPage() {
       heroAlt="Premium catered hibachi meal ready for home event"
       category="Services & Guides"
       categorySlug="services"
+      slug="jinbeh-catering-services"
       publishDate="January 2026"
       readTime="10 min read"
       faqs={faqs}
@@ -76,7 +82,7 @@ export default function JinbehCateringServicesPage() {
       </p>
 
       <p>
-        Jinbeh Catering makes this possible. For over three decades, we've been crafting authentic Japanese meals, and now we bring that same dedication and expertise to events throughout the Dallas-Fort Worth area. Whether you're planning a birthday celebration, corporate gathering, wedding reception, or family holiday dinner, our catering services transform any occasion into an unforgettable culinary experience.
+        Jinbeh Catering makes this possible. For over three decades, we've been crafting authentic Japanese meals, and now we bring that same dedication and expertise to events throughout the Dallas-Fort Worth area. Whether you're planning a birthday celebration, corporate gathering, wedding reception, or family holiday dinner, our <Link href="/blog/offsite-hibachi-catering" className="text-accent-red hover:underline">off-site hibachi catering</Link> services transform any occasion into an unforgettable culinary experience.
       </p>
 
       <h2>Why Choose Jinbeh Catering?</h2>
@@ -125,7 +131,7 @@ export default function JinbehCateringServicesPage() {
       </p>
 
       <p>
-        <strong>Teppanyaki Stations:</strong> Our signature offering features live hibachi cooking where our skilled chefs prepare delicious dishes right before your guests' eyes. This interactive dining experience not only entertains but also allows guests to enjoy freshly prepared meals tailored to their preferences.
+        <strong>Teppanyaki Stations:</strong> Our signature offering features live hibachi cooking where our skilled chefs prepare delicious dishes right before your guests' eyes. This interactive dining experience not only entertains but also allows guests to enjoy freshly prepared meals tailored to their preferences. Learn more about <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">hibachi catering throughout DFW</Link>.
       </p>
 
       <p>
@@ -192,7 +198,7 @@ export default function JinbehCateringServicesPage() {
       <h3>Birthday Parties</h3>
 
       <p>
-        Make your child's special day unforgettable with our fun and delicious birthday catering. Our team creates themed menus and interactive dining experiences that delight children and adults alike. Imagine your child's guests experiencing a live hibachi chef flipping food and putting on a show—that's the Jinbeh difference.
+        Make your child's special day unforgettable with our fun and delicious birthday catering. Our team creates themed menus and interactive dining experiences that delight children and adults alike. Imagine your child's guests experiencing a live hibachi chef flipping food and putting on a show—that's the Jinbeh difference. Get inspired with our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party ideas</Link>.
       </p>
 
       <p>

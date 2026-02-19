@@ -20,6 +20,9 @@ export const metadata: Metadata = {
         description: "Master the art of sake and sushi pairings with expert recommendations.",
         images: ["/images/beverages/JinbehCocktail.jpg"],
     },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sake-sushi-menu-pairings",
+    },
 };
 
 const articleSchema = {
@@ -104,9 +107,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Sake & Sushi Menu Pairings: Perfect Combinations" },
+    ],
+};
+
 export default function SakeSushiMenuPairings() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -127,7 +143,7 @@ export default function SakeSushiMenuPairings() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=beverages" className="hover:text-white">Beverages</Link>
+                        <Link href="/blog/category/beverages" className="hover:text-white">Beverages</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -158,7 +174,7 @@ export default function SakeSushiMenuPairings() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Sake and sushi are like a symphony for your taste buds.</strong> When perfectly paired,
                                         the combination creates a dining experience that transcends the individual components. The delicate
-                                        flavors of premium sushi combined with the nuanced tastes of quality sake create unforgettable
+                                        flavors of premium sushi combined with the nuanced <Link href="/blog/sake-taste-profile" className="text-deep-indigo hover:text-accent-red underline transition-colors">taste profiles of quality sake</Link> create unforgettable
                                         culinary moments.
                                     </p>
 
@@ -177,7 +193,7 @@ export default function SakeSushiMenuPairings() {
                                     <p className="text-charcoal/80 mb-6">
                                         To appreciate the art of sake sushi pairing, it&apos;s essential to understand the basics of sake. Sake,
                                         also known as Japanese rice wine, is crafted through a complex fermentation process that converts
-                                        rice starches into alcohol. The cultural significance of sake in Japan cannot be overstated—it is
+                                        rice starches into alcohol. With <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red underline transition-colors">alcohol content typically around 15-17% ABV</Link>, it sits between wine and spirits. The cultural significance of sake in Japan cannot be overstated—it is
                                         not merely a drink but a symbol of hospitality and tradition.
                                     </p>
 
@@ -511,13 +527,13 @@ export default function SakeSushiMenuPairings() {
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Explore Sake Pairings at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Visit Jinbeh to experience expertly curated sake and sushi pairings. Our sommeliers can recommend
-                                        the perfect sake to complement your meal.
+                                        the perfect sake to complement your meal. Stop by our <Link href="/bar" className="text-white hover:text-soft-gold underline transition-colors">full bar</Link> or start with <Link href="/happy-hour" className="text-white hover:text-soft-gold underline transition-colors">happy hour</Link> specials. Prefer something mixed? Try our <Link href="/blog/japanese-cocktails" className="text-white hover:text-soft-gold underline transition-colors">Japanese cocktails</Link> instead.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                        <Link href="/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             View Menu & Sake Selection
                                         </Link>
-                                        <Link href="/frisco#reserve" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             Reserve Your Table
                                         </Link>
                                     </div>
@@ -564,9 +580,9 @@ export default function SakeSushiMenuPairings() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo">🍶 Beverages</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
+                                        <Link href="/blog/category/beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo">🍶 Beverages</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍣 Cuisine</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
                                     </div>
                                 </div>
                             </div>

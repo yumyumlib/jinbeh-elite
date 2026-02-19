@@ -50,10 +50,10 @@ export function LocalBusinessSchemaFrisco() {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
     "image": [
-      "https://jinbeh.com/images/locations/frisco-exterior.jpg",
-      "https://jinbeh.com/images/locations/frisco-interior.jpg",
-      "https://jinbeh.com/images/food/hibachi-action.jpg",
-      "https://jinbeh.com/images/food/sushi-platter.jpg"
+      "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
+      "https://jinbeh.com/images/interior/JinbehFrisco_SushiBar.jpg",
+      "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+      "https://jinbeh.com/images/instagram/sushi-feast-flatlay.jpg"
     ],
     "address": {
       "@type": "PostalAddress",

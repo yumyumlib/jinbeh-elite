@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
   title: "Careers at Jinbeh | Join Our Family - Frisco & Lewisville, TX",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://jinbeh.com/images/careers/team-cooking.jpg",
+        url: "https://jinbeh.com/images/hq/cooking-on-grill.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh team of chefs and hospitality staff",
@@ -379,26 +380,29 @@ export default function CareersPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Why Work at Jinbeh?
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                For 37 years, we've built more than a restaurant—we've created a family where team members thrive.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Why Work at Jinbeh?
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Jinbeh careers are about more than Japanese restaurant jobs — join our team as a hibachi chef, sushi chef, server, or hospitality professional. We're hiring Jinbeh with hospitality jobs Frisco and server positions Lewisville. For 37 years, we&apos;ve built more than a restaurant—we&apos;ve created a family where team members thrive in the best restaurant careers DFW has to offer. Discover what makes the <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline font-medium">hibachi dining experience</Link> so special.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {benefits.map((benefit, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <div className="text-5xl mb-4">{benefit.icon}</div>
-                  <h3 className="text-xl font-heading font-bold text-charcoal mb-3">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-charcoal/70">{benefit.description}</p>
-                </div>
+                <RevealSection key={idx} delay={idx * 100}>
+                  <div
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <div className="text-5xl mb-4">{benefit.icon}</div>
+                    <h3 className="text-xl font-heading font-bold text-charcoal mb-3">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-charcoal/70">{benefit.description}</p>
+                  </div>
+                </RevealSection>
               ))}
             </div>
           </div>
@@ -409,39 +413,43 @@ export default function CareersPage() {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               {/* Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-xl h-96 md:h-full min-h-[400px]">
-                <Image
-                  src="/images/interior/FriscoLocation_Bar_Front.jpg"
-                  alt="Jinbeh team members working together in our warm, welcoming restaurant"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <RevealSection direction="left">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl h-96 md:h-full min-h-[400px]">
+                  <Image
+                    src="/images/interior/FriscoLocation_Bar_Front.jpg"
+                    alt="Jinbeh team members working together in our warm, welcoming restaurant"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </RevealSection>
 
               {/* Content */}
-              <div>
-                <p className="text-soft-gold font-medium tracking-wider uppercase mb-3">
-                  Our Culture
-                </p>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
-                  More Than a Job
-                </h2>
-                <div className="space-y-5 text-charcoal/80 leading-relaxed">
-                  <p>
-                    Working at Jinbeh means being part of something special. For over three decades, we've maintained the same core values: genuine hospitality, commitment to quality, and treating everyone—guests and team members alike—as family.
+              <RevealSection direction="right" delay={200}>
+                <div>
+                  <p className="text-soft-gold font-medium tracking-wider uppercase mb-3">
+                    Our Culture
                   </p>
-                  <p>
-                    Whether you're flipping hibachi on the griddle, crafting perfect sushi rolls, serving with a smile, or welcoming guests at the door, your contributions matter. We invest in our team members' growth and celebrate their successes.
-                  </p>
-                  <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
-                    "The best part of working at Jinbeh is the family atmosphere. Everyone here genuinely cares about each other and wants each other to succeed."
-                    <span className="block text-sm text-charcoal/80 mt-2 not-italic">— Jinbeh Team Member</span>
-                  </p>
-                  <p>
-                    From day one, you'll be supported by experienced mentors who are invested in your success. We believe in promoting from within and creating pathways for career advancement.
-                  </p>
+                  <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
+                    More Than a Job
+                  </h2>
+                  <div className="space-y-5 text-charcoal/80 leading-relaxed">
+                    <p>
+                      Working at Jinbeh means being part of something special. For over three decades, we've maintained the same core values: genuine hospitality, commitment to quality, and treating everyone—guests and team members alike—as family.
+                    </p>
+                    <p>
+                      Whether you're flipping hibachi on the griddle, crafting perfect sushi rolls, serving with a smile, or welcoming guests at the door, your contributions matter. We invest in our team members' growth and celebrate their successes.
+                    </p>
+                    <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
+                      "The best part of working at Jinbeh is the family atmosphere. Everyone here genuinely cares about each other and wants each other to succeed."
+                      <span className="block text-sm text-charcoal/80 mt-2 not-italic">— Jinbeh Team Member</span>
+                    </p>
+                    <p>
+                      From day one, you'll be supported by experienced mentors who are invested in your success. We believe in promoting from within and creating pathways for career advancement.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </RevealSection>
             </div>
           </div>
         </section>
@@ -450,87 +458,90 @@ export default function CareersPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Open Positions
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                We're currently hiring for exciting opportunities at both our Frisco and Lewisville locations.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Open Positions
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  We&apos;re currently hiring for exciting opportunities at both our Frisco and Lewisville locations.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="space-y-8 max-w-5xl mx-auto">
               {positions.map((position, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-                >
-                  <div className={`${position.color} text-white p-8`}>
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                      <div>
-                        <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">
-                          {position.title}
-                        </h3>
-                        <div className="flex flex-wrap gap-3 text-sm">
-                          <span className="bg-white/20 px-3 py-1 rounded-full">
-                            📍 {position.location}
-                          </span>
-                          <span className="bg-white/20 px-3 py-1 rounded-full">
-                            ⏰ {position.type}
-                          </span>
+                <RevealSection key={idx} delay={idx * 100}>
+                  <div
+                    className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                  >
+                    <div className={`${position.color} text-white p-8`}>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                        <div>
+                          <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">
+                            {position.title}
+                          </h3>
+                          <div className="flex flex-wrap gap-3 text-sm">
+                            <span className="bg-white/20 px-3 py-1 rounded-full">
+                              📍 {position.location}
+                            </span>
+                            <span className="bg-white/20 px-3 py-1 rounded-full">
+                              ⏰ {position.type}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="p-8">
-                    <p className="text-charcoal/80 mb-8">{position.description}</p>
+                    <div className="p-8">
+                      <p className="text-charcoal/80 mb-8">{position.description}</p>
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-8">
-                      <div>
-                        <h4 className="font-heading font-bold text-charcoal mb-4 text-lg">
-                          Key Responsibilities
-                        </h4>
-                        <ul className="space-y-2">
-                          {position.responsibilities.map((resp, i) => (
-                            <li key={i} className="flex gap-3 text-charcoal/75">
-                              <span className="text-accent-red flex-shrink-0">✓</span>
-                              <span>{resp}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                          <h4 className="font-heading font-bold text-charcoal mb-4 text-lg">
+                            Key Responsibilities
+                          </h4>
+                          <ul className="space-y-2">
+                            {position.responsibilities.map((resp, i) => (
+                              <li key={i} className="flex gap-3 text-charcoal/75">
+                                <span className="text-accent-red flex-shrink-0">✓</span>
+                                <span>{resp}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div>
+                          <h4 className="font-heading font-bold text-charcoal mb-4 text-lg">
+                            Required Qualifications
+                          </h4>
+                          <ul className="space-y-2">
+                            {position.qualifications.map((qual, i) => (
+                              <li key={i} className="flex gap-3 text-charcoal/75">
+                                <span className="text-soft-gold flex-shrink-0">→</span>
+                                <span>{qual}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
 
-                      <div>
-                        <h4 className="font-heading font-bold text-charcoal mb-4 text-lg">
-                          Required Qualifications
-                        </h4>
-                        <ul className="space-y-2">
-                          {position.qualifications.map((qual, i) => (
-                            <li key={i} className="flex gap-3 text-charcoal/75">
-                              <span className="text-soft-gold flex-shrink-0">→</span>
-                              <span>{qual}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="flex flex-col sm:flex-row gap-4">
+                        <a
+                          href="#apply"
+                          className="flex-1 btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 text-center rounded-xl font-semibold transition-colors"
+                        >
+                          Apply Now
+                        </a>
+                        <a
+                          href="/contact"
+                          className="flex-1 btn bg-charcoal/10 text-charcoal hover:bg-charcoal/20 px-6 py-3 text-center rounded-xl font-semibold transition-colors"
+                        >
+                          Learn More
+                        </a>
                       </div>
                     </div>
-
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <a
-                        href="#apply"
-                        className="flex-1 btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 text-center rounded-xl font-semibold transition-colors"
-                      >
-                        Apply Now
-                      </a>
-                      <a
-                        href="/contact"
-                        className="flex-1 btn bg-charcoal/10 text-charcoal hover:bg-charcoal/20 px-6 py-3 text-center rounded-xl font-semibold transition-colors"
-                      >
-                        Learn More
-                      </a>
-                    </div>
                   </div>
-                </div>
+                </RevealSection>
               ))}
             </div>
           </div>
@@ -540,12 +551,14 @@ export default function CareersPage() {
         <section id="apply" className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                How to Apply
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                We're excited to learn about you! Choose the method that works best for you.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  How to Apply
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  We&apos;re excited to learn about you! Choose the method that works best for you.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
@@ -652,12 +665,14 @@ export default function CareersPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Have questions about working at Jinbeh? We've got answers.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Have questions about working at Jinbeh? We&apos;ve got answers.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="space-y-16 max-w-4xl mx-auto">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -291,7 +292,7 @@ export default function EventsPage() {
               Make Your Event Unforgettable
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline mb-8">
-              From intimate gatherings to grand celebrations, Jinbeh's private dining venues and hibachi entertainment create memories that last a lifetime.
+              Looking for an event venue Frisco TX or a private party restaurant Frisco families love? From intimate gatherings to grand celebrations, Jinbeh's private dining venues and hibachi entertainment create memories that last a lifetime.
             </p>
             <Link
               href="#inquiry"
@@ -307,10 +308,10 @@ export default function EventsPage() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Events We Host
+                Events We Host at Our Private Dining Room Frisco & Lewisville
               </h2>
               <p className="text-lg text-charcoal/70">
-                Whatever the occasion, Jinbeh is the perfect venue for memorable celebrations.
+                Whatever the occasion — corporate event venue DFW meetings, rehearsal dinner restaurant celebrations, baby shower venue Frisco parties, or team building event Frisco outings — Jinbeh is the perfect venue.
               </p>
             </div>
 
@@ -357,7 +358,7 @@ export default function EventsPage() {
                 Elegant Venues for Every Celebration
               </h2>
               <p className="text-lg text-charcoal/70">
-                Both Jinbeh locations feature dedicated private dining rooms designed for unforgettable events.
+                Both Jinbeh locations feature dedicated private dining rooms designed for unforgettable events, from hibachi catering DFW parties to wedding rehearsal dinner celebrations. Need event catering Lewisville? We handle it all.
               </p>
             </div>
 
@@ -422,7 +423,7 @@ export default function EventsPage() {
                 </div>
 
                 <a
-                  href="tel:+1-972-668-0668"
+                  href="tel:+1-214-619-1200"
                   className="block text-center w-full bg-accent-red hover:bg-accent-red/90 text-white py-3 rounded-xl font-semibold transition-colors"
                 >
                   Contact Frisco Location
@@ -489,7 +490,7 @@ export default function EventsPage() {
                 </div>
 
                 <a
-                  href="tel:+1-972-221-3888"
+                  href="tel:+1-214-488-2224"
                   className="block text-center w-full bg-deep-indigo hover:bg-deep-indigo/90 text-white py-3 rounded-xl font-semibold transition-colors"
                 >
                   Contact Lewisville Location
@@ -506,9 +507,11 @@ export default function EventsPage() {
               <p className="text-soft-gold font-medium tracking-wider uppercase mb-3">
                 Flexible Options
               </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Event Packages & Pricing
-              </h2>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Event Packages & Pricing
+                </h2>
+              </RevealSection>
               <p className="text-lg text-charcoal/70">
                 Customizable packages to fit your event, preferences, and budget.
               </p>
@@ -518,11 +521,10 @@ export default function EventsPage() {
               {eventPackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className={`rounded-2xl p-8 transition-all duration-300 ${
-                    index === 1
-                      ? "bg-charcoal text-white shadow-2xl lg:scale-105"
-                      : "bg-white text-charcoal shadow-lg hover:shadow-xl"
-                  }`}
+                  className={`rounded-2xl p-8 transition-all duration-300 ${index === 1
+                    ? "bg-charcoal text-white shadow-2xl lg:scale-105"
+                    : "bg-white text-charcoal shadow-lg hover:shadow-xl"
+                    }`}
                 >
                   <h3 className="text-2xl font-heading font-bold mb-3">{pkg.name}</h3>
                   <p className={`text-lg font-semibold mb-6 ${index === 1 ? "text-soft-gold" : "text-accent-red"}`}>
@@ -533,9 +535,8 @@ export default function EventsPage() {
                     {pkg.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-3">
                         <svg
-                          className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                            index === 1 ? "text-soft-gold" : "text-accent-red"
-                          }`}
+                          className={`w-5 h-5 flex-shrink-0 mt-0.5 ${index === 1 ? "text-soft-gold" : "text-accent-red"
+                            }`}
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -549,11 +550,10 @@ export default function EventsPage() {
                   </ul>
 
                   <button
-                    className={`w-full py-3 rounded-xl font-semibold transition-colors ${
-                      index === 1
-                        ? "bg-accent-red hover:bg-accent-red/90 text-white"
-                        : "bg-accent-red/10 text-accent-red hover:bg-accent-red/20"
-                    }`}
+                    className={`w-full py-3 rounded-xl font-semibold transition-colors ${index === 1
+                      ? "bg-accent-red hover:bg-accent-red/90 text-white"
+                      : "bg-accent-red/10 text-accent-red hover:bg-accent-red/20"
+                      }`}
                   >
                     Learn More
                   </button>
@@ -767,45 +767,56 @@ export default function EventsPage() {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Your Name</label>
+                    <label htmlFor="event-name" className="block text-sm font-semibold mb-2">Your Name</label>
                     <input
+                      id="event-name"
+                      name="name"
                       type="text"
                       placeholder="John Doe"
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      aria-required="true"
+                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Email Address</label>
+                    <label htmlFor="event-email" className="block text-sm font-semibold mb-2">Email Address</label>
                     <input
+                      id="event-email"
+                      name="email"
                       type="email"
                       placeholder="john@example.com"
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      aria-required="true"
+                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Phone Number</label>
+                    <label htmlFor="event-phone" className="block text-sm font-semibold mb-2">Phone Number</label>
                     <input
+                      id="event-phone"
+                      name="phone"
                       type="tel"
                       placeholder="(555) 123-4567"
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Event Date</label>
+                    <label htmlFor="event-date" className="block text-sm font-semibold mb-2">Event Date</label>
                     <input
+                      id="event-date"
+                      name="eventDate"
                       type="date"
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-white/40 transition-colors"
+                      aria-required="true"
+                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Event Type</label>
-                    <select className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-white/40 transition-colors">
+                    <label htmlFor="event-type" className="block text-sm font-semibold mb-2">Event Type</label>
+                    <select id="event-type" name="eventType" aria-required="true" className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors">
                       <option value="" className="text-charcoal">Select an event type</option>
                       <option value="birthday" className="text-charcoal">Birthday Party</option>
                       <option value="corporate" className="text-charcoal">Corporate Event</option>
@@ -817,46 +828,82 @@ export default function EventsPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Guest Count</label>
+                    <label htmlFor="event-guests" className="block text-sm font-semibold mb-2">Guest Count</label>
                     <input
+                      id="event-guests"
+                      name="guestCount"
                       type="number"
                       placeholder="Number of guests"
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      aria-required="true"
+                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Event Details</label>
+                  <label htmlFor="event-details" className="block text-sm font-semibold mb-2">Event Details</label>
                   <textarea
+                    id="event-details"
+                    name="details"
                     placeholder="Tell us about your event, any special requests, or questions..."
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40 transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors resize-none"
                   />
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <input type="checkbox" id="agree" className="w-5 h-5" />
-                  <label htmlFor="agree" className="text-sm text-white/80">
-                    I'd like to receive updates about my event planning
+                  <input type="checkbox" id="event-updates" name="receiveUpdates" className="w-5 h-5 accent-accent-red" />
+                  <label htmlFor="event-updates" className="text-sm text-white/80">
+                    I&apos;d like to receive updates about my event planning
                   </label>
                 </div>
 
-                <Link
-                  href="/contact"
-                  className="block text-center w-full bg-accent-red hover:bg-accent-red/90 text-white py-4 rounded-xl font-semibold transition-colors"
+                <button
+                  type="submit"
+                  className="block w-full bg-accent-red hover:bg-accent-red/90 text-white py-4 rounded-xl font-bold text-lg transition-all hover:shadow-lg hover:scale-[1.02] btn-shimmer relative overflow-hidden"
                 >
                   Send Event Inquiry
-                </Link>
+                </button>
 
                 <p className="text-center text-sm text-white/70">
                   Or call us directly:
                   <br />
-                  Frisco: <a href="tel:+1-972-668-0668" className="text-soft-gold hover:text-soft-gold/80">(972) 668-0668</a>
+                  Frisco: <a href="tel:+1-214-619-1200" className="text-soft-gold hover:text-soft-gold/80">(214) 619-1200</a>
                   <br />
-                  Lewisville: <a href="tel:+1-972-221-3888" className="text-soft-gold hover:text-soft-gold/80">(972) 221-3888</a>
+                  Lewisville: <a href="tel:+1-214-488-2224" className="text-soft-gold hover:text-soft-gold/80">(214) 488-2224</a>
                 </p>
               </form>
+            </div>
+          </div>
+        </section>
+
+        {/* Event Planning Resources — Blog Cross-Links */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-10 max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-charcoal mb-3">
+                Event Planning Resources
+              </h2>
+              <p className="text-charcoal/70">
+                Tips and guides to help plan your perfect event.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <Link href="/blog/large-group-dining" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Group Dining</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Large Group Dining Guide</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Expert tips for organizing dinners and parties for big groups.</p>
+              </Link>
+              <Link href="/blog/restaurants-private-rooms" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Private Dining</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Private Dining Rooms in DFW</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Find the ideal private dining venue for your next event.</p>
+              </Link>
+              <Link href="/blog/hibachi-catering-dfw" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Catering</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Hibachi Catering in DFW</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Bring the hibachi show to your corporate event or celebration.</p>
+              </Link>
             </div>
           </div>
         </section>
@@ -923,16 +970,16 @@ export default function EventsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+1-972-668-0668"
+                href="tel:+1-214-619-1200"
                 className="inline-block bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
-                Call Frisco (972) 668-0668
+                Call Frisco (214) 619-1200
               </a>
               <a
-                href="tel:+1-972-221-3888"
+                href="tel:+1-214-488-2224"
                 className="inline-block bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl transition-all"
               >
-                Call Lewisville (972) 221-3888
+                Call Lewisville (214) 488-2224
               </a>
             </div>
           </div>

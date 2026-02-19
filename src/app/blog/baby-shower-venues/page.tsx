@@ -18,7 +18,10 @@ export const metadata: Metadata = {
     title: "Top Baby Shower Venues: Best Places to Host",
     description:
       "Find the perfect baby shower venue for your celebration. From intimate homes to elegant restaurants, discover options that create memorable moments.",
-    images: ["/images/photoshoot/celebration-table.jpg"],
+    images: ["/images/instagram/lobster-spread-overhead.jpg"],
+  },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/baby-shower-venues",
   },
 };
 
@@ -50,6 +53,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function BabyShowerVenuesPage({ params }: { params: { slug: string } }) {
   const slug = "baby-shower-venues";
   return (
@@ -60,6 +65,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       heroAlt="Baby shower celebration at an elegant venue with decorations and table settings"
       category="Celebrations"
       categorySlug="celebrations"
+      slug="baby-shower-venues"
       publishDate="January 2026"
       readTime="10 min read"
       faqs={faqs}
@@ -77,7 +83,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
         celebration but also ensures that everyone feels comfortable and at
         ease. Whether you're looking for a cozy indoor setting or a picturesque
         outdoor space, this guide explores the best baby shower venues to help
-        you find the ideal location.
+        you find the ideal location. Planning a <Link href="/blog/bridal-shower-venues" className="text-accent-red hover:underline">bridal shower</Link> instead? We've got a dedicated guide for that too.
       </p>
 
       <h2>Indoor Venues: Comfort and Elegance</h2>
@@ -127,7 +133,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       <p>
         For a more formal setting, hosting a baby shower at a restaurant or café
         offers a delightful dining experience. Many establishments offer private
-        dining rooms perfect for gatherings, ensuring privacy and exclusivity.
+        dining rooms perfect for gatherings, ensuring privacy and exclusivity. Explore our guide to <Link href="/blog/group-dining-venues" className="text-accent-red hover:underline">group dining venues</Link> for more options.
       </p>
 
       <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
@@ -332,10 +338,11 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       </p>
 
       <ul>
-        <li>Private dining rooms with elegant ambiance</li>
+        <li><Link href="/private-dining" className="text-accent-red hover:underline">Semi-private dining spaces</Link> with elegant ambiance</li>
         <li>Customizable menus accommodating dietary preferences</li>
         <li>Professional service handling all logistics</li>
         <li>Beautiful settings minimizing additional decoration needs</li>
+        <li><Link href="/gift-cards" className="text-accent-red hover:underline">Gift cards</Link> available as party favors for guests</li>
       </ul>
 
       <p>
@@ -382,6 +389,14 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       </p>
 
       <RelatedArticles currentSlug={slug} />
-    </ArticleLayout>
+    
+        {/* Related Reading */}
+        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+          <div className="flex flex-col gap-2">
+              <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">Large Group Dining Guide</Link>
+          </div>
+        </div>
+      </ArticleLayout>
   );
 }

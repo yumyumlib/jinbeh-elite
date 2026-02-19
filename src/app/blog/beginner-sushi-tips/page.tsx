@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Discover the joy of beginner sushi-making at home with essential tips and easy recipes for making delicious sushi rolls.",
     images: ["/images/photoshoot/sushi-tower.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/beginner-sushi-tips",
+  },
 };
 
 const faqs = [
@@ -51,9 +54,22 @@ const faqs = [
   },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Sushi for Beginners: Your First Time Guide" },
+  ],
+};
+
 export default function BeginnerSushiTipsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <ArticleLayout
       title="Beginner Sushi Tips: Easy Homemade Sushi Guide"
       metaDescription="Master the art of sushi-making at home with our comprehensive beginner's guide. Learn essential techniques, rolling methods, and recipes for perfect sushi rolls—even on your first try."
@@ -61,6 +77,7 @@ export default function BeginnerSushiTipsPage() {
       heroAlt="Beautifully arranged homemade sushi rolls for beginners"
       category="Japanese Cuisine"
       categorySlug="cuisine"
+      slug="beginner-sushi-tips"
       publishDate="January 2026"
       readTime="10 min read"
       faqs={faqs}
@@ -308,7 +325,7 @@ export default function BeginnerSushiTipsPage() {
       </p>
 
       <p>
-        Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create—perfect or not! And whenever you want to enjoy professional-grade sushi made by expert chefs, visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to <Link href="/reservations" className="text-accent-red hover:underline">book a table</Link> and enjoy authentic, delicious sushi in a welcoming atmosphere.
+        Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create—perfect or not! And whenever you want to enjoy professional-grade sushi made by expert chefs, visit our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to <Link href="/reservations" className="text-accent-red hover:underline">book a table</Link> and enjoy authentic, delicious sushi in a welcoming atmosphere.
       </p>
     </ArticleLayout>
     </>

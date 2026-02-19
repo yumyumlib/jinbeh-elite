@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import locations from "@/data/locations.json";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
   title:
@@ -153,7 +154,7 @@ export default function LunchSpecialsPage() {
               Amazing Lunch Specials
             </h1>
             <p className="text-xl text-white/80 mb-8">
-              Enjoy authentic Japanese cuisine at unbeatable prices. Available 11am-2pm on weekdays, 11:30am-2:30pm on weekends.
+              Enjoy authentic Japanese cuisine at unbeatable prices. Browse our full <Link href="/menu" className="text-soft-gold hover:underline">menu</Link> for even more options, or explore our <Link href="/blog/hibachi-lunch-ideas" className="text-soft-gold hover:underline">hibachi lunch ideas</Link> for inspiration. Available 11am-2pm on weekdays, 11:30am-2:30pm on weekends.
             </p>
             <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur px-6 py-3 rounded-full">
               <span className="text-3xl">💰</span>
@@ -214,12 +215,14 @@ export default function LunchSpecialsPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Featured Lunch Specials
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Delicious options designed for lunch. Quick service, great value, same quality as dinner.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Featured Lunch Specials
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Affordable lunch options including sushi lunch platters, quick lunch combos, and Japanese lunch favorites — available at our Frisco lunch and Lewisville lunch locations. Same quality as dinner, great value. Watching your intake? Check our <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline font-medium">hibachi calories guide</Link> for nutritional info.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
@@ -252,7 +255,7 @@ export default function LunchSpecialsPage() {
 
             <div className="text-center">
               <p className="text-charcoal/70 mb-8 max-w-2xl mx-auto">
-                Prices and availability may vary by location. Check our full menus for complete lunch options and pricing.
+                Prices and availability may vary by location. Check our full menus for complete lunch options and pricing. New to sushi? Our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline font-medium">beginner sushi tips</Link> will help you order like a pro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -276,12 +279,14 @@ export default function LunchSpecialsPage() {
         <section className="py-20 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Why Lunch at Jinbeh?
-              </h2>
-              <p className="text-lg text-white/80">
-                The best lunch break in the DFW metroplex.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Why Lunch at Jinbeh?
+                </h2>
+                <p className="text-lg text-white/80">
+                  The best lunch break in the DFW metroplex.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -329,7 +334,7 @@ export default function LunchSpecialsPage() {
                   {
                     title: "Team Celebrations",
                     description:
-                      "Celebrate birthdays, promotions, or milestones with colleagues at Jinbeh.",
+                      "Celebrate birthdays, promotions, or milestones with colleagues at Jinbeh. See our celebration packages.",
                   },
                   {
                     title: "Dietary Options",
@@ -419,7 +424,7 @@ export default function LunchSpecialsPage() {
               Ready for Your Best Lunch?
             </h2>
             <p className="text-xl text-white/90 mb-10">
-              Stop by Jinbeh for lunch this week. Great food, great value, great company.
+              Stop by Jinbeh for lunch this week. Great food, great value, great company. Stay for <Link href="/happy-hour" className="text-soft-gold hover:underline">happy hour</Link> or grab a <Link href="/gift-cards" className="text-soft-gold hover:underline">gift card</Link> for a friend.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -445,9 +450,11 @@ export default function LunchSpecialsPage() {
         <section className="py-16 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h3 className="text-2xl font-heading font-bold text-charcoal mb-8">
-                Explore More Dining Options
-              </h3>
+              <RevealSection>
+                <h3 className="text-2xl font-heading font-bold text-charcoal mb-8">
+                  Explore More Dining Options
+                </h3>
+              </RevealSection>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[

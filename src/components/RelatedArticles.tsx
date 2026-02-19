@@ -168,7 +168,7 @@ export default function RelatedArticles({ currentSlug, maxArticles = 4 }: Relate
         </p>
         <div className="flex gap-2 justify-center">
           <Link
-            href="/frisco#reserve"
+            href="/reservations"
             className="px-4 py-2 bg-accent-red hover:bg-accent-red/90 rounded-lg text-sm font-medium transition-colors"
           >
             Frisco

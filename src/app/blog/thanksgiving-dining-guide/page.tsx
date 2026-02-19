@@ -25,6 +25,9 @@ export const metadata: Metadata = {
             "Experience a unique Thanksgiving with Japanese cuisine. Catering, dine-in, and special holiday menu options available at Jinbeh Frisco & Lewisville.",
         images: ["/images/blog/24-C060324-6852.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/thanksgiving-dining-guide",
+  },
 };
 
 const faqs = [
@@ -101,9 +104,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+    { "@type": "ListItem", "position": 4, "name": "Thanksgiving Dining Guide: Best Restaurants Open in DFW" },
+  ],
+};
+
 export default function ThanksgivingDiningGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -848,19 +864,19 @@ export default function ThanksgivingDiningGuide() {
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
                                         <Link
-                                            href="/blog?category=cuisine"
+                                            href="/blog/category/cuisine"
                                             className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors"
                                         >
                                             🍣 Cuisine
                                         </Link>
                                         <Link
-                                            href="/blog?category=local-guides"
+                                            href="/blog/category/local-guides"
                                             className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
                                         >
                                             🍽️ Dining
                                         </Link>
                                         <Link
-                                            href="/blog?category=celebrations"
+                                            href="/blog/category/celebrations"
                                             className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
                                         >
                                             🎉 Events

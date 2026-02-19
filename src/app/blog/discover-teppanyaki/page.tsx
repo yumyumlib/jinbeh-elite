@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Learn about teppanyaki, the Japanese art of iron griddle cooking in DFW.",
         images: ["/images/blog/5-C060324-6397.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/discover-teppanyaki",
+  },
 };
 
 const faqs = [
@@ -51,9 +54,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Discover Teppanyaki: The Art of Iron Plate Cooking" },
+  ],
+};
+
 export default function DiscoverTeppanyaki() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -63,7 +79,7 @@ export default function DiscoverTeppanyaki() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=cuisine">Cuisine</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/cuisine">Cuisine</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍣 Cuisine</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Discover Teppanyaki: Culinary Art</h1>
@@ -120,7 +136,7 @@ export default function DiscoverTeppanyaki() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Experience Authentic Teppanyaki in DFW</h2>
                             <p className="text-charcoal/80 mb-6">
-                                Ready to experience the art of teppanyaki? Visit Jinbeh at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Our expert chefs will delight you with authentic cooking techniques, entertainment, and delicious Japanese cuisine. We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for corporate events and private celebrations.
+                                Ready to experience the art of teppanyaki? Visit Jinbeh at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Our expert chefs will delight you with authentic cooking techniques, entertainment, and delicious Japanese cuisine. We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for corporate events and private celebrations.
                             </p>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">

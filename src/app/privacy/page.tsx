@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
             JINBEH
           </Link>
           <Link
-            href="/frisco#reserve"
+            href="/reservations"
             className="bg-accent-red text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-red-hover transition-colors"
           >
             Reserve Now

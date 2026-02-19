@@ -20,8 +20,11 @@ export const metadata: Metadata = {
         title: "Best Date Night Restaurants Frisco TX | Romantic Dining",
         description:
             "Discover the perfect date night spot in Frisco with Jinbeh's intimate hibachi experience and romantic ambiance.",
-        images: ["/images/blog/date-night-hero.jpg"],
+        images: ["/images/instagram/fried-roll-bar-ambiance.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/date-night-restaurants-frisco",
+  },
 };
 
 const articleSchema = {
@@ -85,9 +88,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Best Date Night Restaurants in Frisco TX" },
+  ],
+};
+
 export default function DateNightRestaurantsFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -108,7 +124,7 @@ export default function DateNightRestaurantsFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=best-of" className="hover:text-white">Tips & Guides</Link>
+                        <Link href="/blog/category/best-of" className="hover:text-white">Tips & Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -160,7 +176,7 @@ export default function DateNightRestaurantsFrisco() {
                                         <li><strong>Intimate Ambiance</strong> — Soft lighting, warm colors, and thoughtful design make every table feel special.</li>
                                         <li><strong>Fresh, Premium Ingredients</strong> — We source the finest sushi-grade fish and premium proteins, ensuring every bite is exceptional.</li>
                                         <li><strong>Personalized Service</strong> — Our team understands that this night matters. We treat every couple like VIPs.</li>
-                                        <li><strong>Sake & Beverage Expertise</strong> — Curated sake selections and expert pairings elevate the entire experience.</li>
+                                        <li><strong>Sake & Beverage Expertise</strong> — Curated sake selections at our <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> and expert pairings elevate the entire experience.</li>
                                         <li><strong>Flexible Dining Options</strong> — From hibachi chef's tables to quiet sushi bar seating, choose the vibe that suits your mood.</li>
                                     </ul>
 
@@ -280,7 +296,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <span className="text-3xl">🌅</span>
                                             <h3 className="text-lg font-heading font-bold text-charcoal">Early Evening (5:30-6:30 PM)</h3>
                                         </div>
-                                        <p className="text-charcoal/80">Best for: Pre-theater or concert dates, early risers, a more relaxed pace. Golden hour lighting creates stunning ambiance.</p>
+                                        <p className="text-charcoal/80">Best for: Pre-theater or concert dates, early risers, a more relaxed pace. Start with drinks during <Link href="/happy-hour" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour</Link> before dinner — golden hour lighting creates stunning ambiance.</p>
                                     </div>
 
                                     <div className="bg-white border-l-4 border-soft-gold rounded-r-xl p-6">
@@ -478,10 +494,10 @@ export default function DateNightRestaurantsFrisco() {
                                 <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">💕 Ready for Your Perfect Date Night?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Create unforgettable memories at Jinbeh. Intimate ambiance, fresh cuisine, and genuine hospitality await.
+                                        Create unforgettable memories at Jinbeh. Intimate ambiance, fresh cuisine, and genuine hospitality await. Surprise your partner with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link> for the perfect date night present.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco#reserve" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             Reserve Your Date Night
                                         </Link>
                                         <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">

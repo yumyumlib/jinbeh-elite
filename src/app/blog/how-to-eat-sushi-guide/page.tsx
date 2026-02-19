@@ -21,6 +21,9 @@ export const metadata: Metadata = {
         description: "Master the art of eating sushi. Learn proper techniques, etiquette, and insider tips.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/how-to-eat-sushi-guide",
+  },
 };
 
 const articleSchema = {
@@ -97,9 +100,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "How to Eat Sushi: The Complete Guide" },
+  ],
+};
+
 export default function HowToEatSushi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -120,7 +136,7 @@ export default function HowToEatSushi() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -708,13 +724,13 @@ export default function HowToEatSushi() {
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Dine with Confidence?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Now that you know the etiquette, experience authentic sushi at Jinbeh. Our chefs prepare every piece with care,
-                                        and our team ensures your meal is unforgettable. Visit our <Link href="/locations/frisco" className="text-white hover:text-warm-ivory underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-white hover:text-warm-ivory underline">Lewisville location</Link> to practice what you've learned.
+                                        and our team ensures your meal is unforgettable. Visit our <Link href="/frisco" className="text-white hover:text-warm-ivory underline">Frisco location</Link> or <Link href="/lewisville" className="text-white hover:text-warm-ivory underline">Lewisville location</Link> to practice what you've learned.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/frisco/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             Explore Our Menu
                                         </Link>
-                                        <Link href="/frisco#reserve" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
+                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
                                             Reserve a Table
                                         </Link>
                                     </div>
@@ -750,10 +766,10 @@ export default function HowToEatSushi() {
                                         Visit Jinbeh in Frisco or Lewisville and put your sushi knowledge to work. Our expert chefs will appreciate your respect for the craft. Consider pairing your meal with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for an enhanced dining experience.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <Link href="/locations/frisco" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
+                                        <Link href="/frisco" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
                                             Visit Frisco
                                         </Link>
-                                        <Link href="/locations/lewisville" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
+                                        <Link href="/lewisville" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
                                             Visit Lewisville
                                         </Link>
                                         <Link href="/reservations" className="flex-1 bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors text-center">

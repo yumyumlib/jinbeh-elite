@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Jinbeh Japanese Restaurant Near Highland Village",
-  image: "https://jinbeh.com/images/frisco-interior.jpg",
+  image: "https://jinbeh.com/images/interior/JinbehFrisco_SushiBar.jpg",
   description: "Authentic Japanese hibachi and sushi restaurant serving Highland Village residents. Located in Frisco, just minutes away.",
   address: {
     "@type": "PostalAddress",

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Explore Jinbeh Lewisville's cocktails & sake menu. Celebration, happy hour, Asian-inspired. 5 delicious options from Sake Bomb to Sake Flight. Easy access from I-35E, near Vista Ridge Mall.",
-  keywords: ["cocktails & sake lewisville","best cocktails & sake lewisville","cocktails & sake menu lewisville","jinbeh cocktails & sake","japanese cocktails & sake lewisville","japanese cocktails","sake","asian drinks","happy hour"],
+  keywords: ["cocktails & sake lewisville", "best cocktails & sake lewisville", "cocktails & sake menu lewisville", "jinbeh cocktails & sake", "japanese cocktails & sake lewisville", "japanese cocktails", "sake", "asian drinks", "happy hour"],
   openGraph: {
     title: "Cocktails & Sake Menu | Jinbeh Lewisville",
     description: "Celebration, happy hour, Asian-inspired. 5 cocktails & sake options at Jinbeh Lewisville.",
@@ -171,7 +172,7 @@ export default function CocktailsLewisvillePage() {
                 each crafted with care and the finest ingredients.
               </p>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
@@ -197,8 +198,14 @@ export default function CocktailsLewisvillePage() {
                 href="/lewisville/cocktails/sake-bomb"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍶</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/drinks/SpicyMargaritaBeverageDrink.jpg"
+                    alt="Sake Bomb — classic sake dropped into cold beer"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -217,8 +224,14 @@ export default function CocktailsLewisvillePage() {
                 href="/lewisville/cocktails/jinbeh-punch"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍶</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/drinks/JinbehPunchBeverageDrink.jpg"
+                    alt="Jinbeh Punch — house specialty tropical cocktail"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -237,8 +250,14 @@ export default function CocktailsLewisvillePage() {
                 href="/lewisville/cocktails/tokyo-mule"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍶</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/drinks/MuleSummerSignatureCocktail.jpg"
+                    alt="Tokyo Mule — Japanese whiskey with ginger and lime"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -257,8 +276,14 @@ export default function CocktailsLewisvillePage() {
                 href="/lewisville/cocktails/lychee-martini"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍶</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/drinks/cocktail.jpg"
+                    alt="Lychee Martini — vodka with lychee and a floral finish"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -277,8 +302,14 @@ export default function CocktailsLewisvillePage() {
                 href="/lewisville/cocktails/sake-flight"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍶</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hq/jinbeh-cocktail.jpg"
+                    alt="Sake Flight — tasting of three premium sakes"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -309,7 +340,7 @@ export default function CocktailsLewisvillePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/lewisville#reserve"
+                  href="/reservations"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Reserve a Table
@@ -382,7 +413,7 @@ export default function CocktailsLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Yes! Most cocktails & sake items are available for takeout and delivery. Call (214) 488-2224 or order online. 
+                    Yes! Most cocktails & sake items are available for takeout and delivery. Call (214) 488-2224 or order online.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -410,7 +441,7 @@ export default function CocktailsLewisvillePage() {
               Explore More at Jinbeh Lewisville
             </h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              
+
               <Link
                 href="/lewisville/hibachi"
                 className="block p-6 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"

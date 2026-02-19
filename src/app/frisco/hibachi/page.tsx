@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Hibachi Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Explore Jinbeh Frisco's hibachi menu. Entertainment, fire show, family fun, onion volcano. 14 delicious options from Filet Mignon to Imperial Dinner. Near Stonebriar Centre, minutes from Legacy West.",
-  keywords: ["hibachi frisco","best hibachi frisco","hibachi menu frisco","jinbeh hibachi","japanese hibachi frisco","hibachi","teppanyaki","japanese steakhouse","hibachi grill"],
+  keywords: ["hibachi frisco", "best hibachi frisco", "hibachi menu frisco", "jinbeh hibachi", "japanese hibachi frisco", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
     title: "Hibachi Menu | Jinbeh Frisco",
     description: "Entertainment, fire show, family fun, onion volcano. 14 hibachi options at Jinbeh Frisco.",
@@ -261,7 +262,7 @@ export default function HibachiFriscoPage() {
                 each crafted with care and the finest ingredients.
               </p>
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
@@ -287,8 +288,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/filet-mignon"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-800w.webp"
+                    alt="Filet mignon searing on the teppan grill at Jinbeh"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -307,8 +314,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/ny-strip"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-006-orig-IMG_2006-800w.webp"
+                    alt="NY strip steak cooking on the hibachi grill"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -327,8 +340,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/ribeye"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-004-orig-IMG_2004-800w.webp"
+                    alt="Marbled ribeye steak seared on the teppan grill at Jinbeh"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -347,8 +366,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/chicken-teriyaki"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-010-orig-IMG_2010-800w.webp"
+                    alt="Hibachi chicken teriyaki with fried rice and vegetables"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -367,8 +392,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/shrimp"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/food/garlic-lemon-shrimp.jpg"
+                    alt="Jumbo shrimp grilled on the hibachi at Jinbeh"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -387,8 +418,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/scallops"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-006-orig-IMG_2006-800w.webp"
+                    alt="Sea scallops seared with garlic butter on the hibachi grill"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -407,8 +444,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/lobster-tail"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/food/hibachi-grill.jpg"
+                    alt="Lobster tail grilling on the teppan at Jinbeh"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -427,8 +470,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/salmon"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-008-orig-IMG_2008-800w.webp"
+                    alt="Hibachi salmon with citrus teriyaki on the grill"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -447,8 +496,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/vegetable-tofu"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-010-orig-IMG_2010-800w.webp"
+                    alt="Hibachi vegetables and tofu grilled on the teppan"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -467,8 +522,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/combo-steak-shrimp"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-006-orig-IMG_2006-800w.webp"
+                    alt="Steak and shrimp combo cooking on the hibachi"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -487,8 +548,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/combo-steak-chicken"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-004-orig-IMG_2004-800w.webp"
+                    alt="Steak and chicken combo on the teppan grill"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -507,8 +574,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/combo-steak-lobster"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-800w.webp"
+                    alt="Steak and lobster surf and turf on the hibachi"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -527,8 +600,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/combo-seafood"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-800w.webp"
+                    alt="Seafood trio — shrimp, scallops, and lobster on the grill"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -547,8 +626,14 @@ export default function HibachiFriscoPage() {
                 href="/frisco/hibachi/imperial-dinner"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🔥</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-006-orig-IMG_1881-800w.webp"
+                    alt="Imperial dinner — filet mignon, lobster, and shrimp"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -579,7 +664,7 @@ export default function HibachiFriscoPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/frisco#reserve"
+                  href="/reservations"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Reserve a Table
@@ -680,7 +765,7 @@ export default function HibachiFriscoPage() {
               Explore More at Jinbeh Frisco
             </h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              
+
               <Link
                 href="/frisco/sushi-rolls"
                 className="block p-6 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"

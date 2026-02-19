@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Bring the hibachi experience to your home or venue. Live chefs, customized menus, and entertaining performances perfect for any celebration.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/offsite-hibachi-catering",
+  },
 };
 
 const faqs = [
@@ -57,6 +60,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function OffsiteHibachiCateringPage({ params }: { params: { slug: string } }) {
   const slug = "offsite-hibachi-catering";
   return (
@@ -67,6 +72,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       heroAlt="Hibachi chef performing interactive cooking show at private event"
       category="Services & Guides"
       categorySlug="services"
+      slug="offsite-hibachi-catering"
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
@@ -403,10 +409,10 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
 
       <ul>
         <li>
-          <strong>Frisco Location:</strong> <Link href="/locations/frisco" className="text-accent-red hover:underline">Visit Frisco</Link>
+          <strong>Frisco Location:</strong> <Link href="/frisco" className="text-accent-red hover:underline">Visit Frisco</Link>
         </li>
         <li>
-          <strong>Lewisville Location:</strong> <Link href="/locations/lewisville" className="text-accent-red hover:underline">Visit Lewisville</Link>
+          <strong>Lewisville Location:</strong> <Link href="/lewisville" className="text-accent-red hover:underline">Visit Lewisville</Link>
         </li>
       </ul>
 
@@ -422,6 +428,15 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       </p>
 
       <RelatedArticles currentSlug={slug} />
-    </ArticleLayout>
+    
+        {/* Related Reading */}
+        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+          <div className="flex flex-col gap-2">
+              <Link href="/blog/jinbeh-catering-services" className="text-accent-red hover:underline font-medium">Full Jinbeh Catering Services</Link>
+              <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline font-medium">Hibachi Catering Across DFW</Link>
+          </div>
+        </div>
+      </ArticleLayout>
   );
 }

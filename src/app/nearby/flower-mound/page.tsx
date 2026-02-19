@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Jinbeh Japanese Restaurant Near Flower Mound",
-  image: "https://jinbeh.com/images/lewisville-interior.jpg",
+  image: "https://jinbeh.com/images/interior/bar.jpg",
   description: "Authentic Japanese hibachi and sushi restaurant serving Flower Mound residents. Located in Lewisville, just 10 minutes away.",
   address: {
     "@type": "PostalAddress",

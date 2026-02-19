@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Master sake alcohol content and discover which types suit your taste.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/sake-alcohol-strength",
+  },
 };
 
 const faqs = [
@@ -29,16 +32,29 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+    { "@type": "ListItem", "position": 4, "name": "Sake Alcohol Content & Strength Guide: What to Know" },
+  ],
+};
+
 export default function SakeGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/LewisvilleBar.jpg" alt="Sake" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍶 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Sake Alcohol Strength Guide</h1>
@@ -49,7 +65,7 @@ export default function SakeGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>How strong is sake?</strong> At 15-17% ABV, it's similar to wine but brewed like beer. Let's explore types, serving, and pairings. For a deeper dive into <Link href="/blog/types-of-sake-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake varieties</Link>, check out our comprehensive guide.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>How strong is sake?</strong> At 15-17% ABV, it's similar to wine but brewed like beer. Let's explore types, serving, and pairings. For a deeper dive into <Link href="/blog/types-of-sake-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake varieties</Link>, check out our comprehensive guide, and explore <Link href="/blog/sake-taste-profile" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake's complex flavor profile</Link> to understand what each sip reveals.</p>
 
                             <div className="grid grid-cols-4 gap-3 my-8">
                                 {[{ e: "🍺", n: "Beer", v: "4-6%", c: "amber" }, { e: "🍷", n: "Wine", v: "12-14%", c: "red" }, { e: "🍶", n: "Sake", v: "15-17%", c: "purple" }, { e: "🥃", n: "Whiskey", v: "40%", c: "amber" }].map(x => (
@@ -73,6 +89,7 @@ export default function SakeGuide() {
                                 </tbody>
                             </table>
 
+                            <p className="text-charcoal/80 mb-6">Curious to taste the difference? Visit Jinbeh's <Link href="/bar" className="text-deep-indigo hover:text-accent-red underline transition-colors">bar</Link> to sample varieties across the spectrum—our staff can walk you through a tasting flight. Once you've found your favorites, our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link> will help you match them with the perfect dish.</p>
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌡️ Hot vs Cold</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 <div className="bg-deep-indigo/10 rounded-xl p-5 border-2 border-deep-indigo/30">
@@ -105,10 +122,10 @@ export default function SakeGuide() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍶 Experience Premium Sake at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover our curated sake selection at both Frisco and Lewisville locations. Whether you're interested in sake bombs at happy hour or pairing the perfect sake with sushi or hibachi, our knowledgeable staff is ready to guide you.</p>
+                                <p className="mb-6 text-white/90">Discover our curated sake selection at both Frisco and Lewisville locations. Visit our <Link href="/bar" className="text-white hover:underline underline">bar</Link> for premium pours, or try sake bombs during <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> at special pricing. Prefer cocktails? Explore our <Link href="/blog/japanese-cocktails" className="text-white hover:underline underline">Japanese cocktails</Link> crafted with premium spirits. Our knowledgeable staff pairs the perfect sake with sushi or hibachi.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
                                     <Link href="/blog/best-happy-hour-frisco-tx" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Happy Hour Specials</Link>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HeroSection, RevealSection, CuisineRotator } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -124,20 +125,28 @@ export default function BarPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/60 to-charcoal/40" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-            <p className="text-soft-gold font-medium tracking-widest uppercase mb-4 text-sm md:text-base">
-              Crafted & Curated
-            </p>
-            <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight">
-              Premium Bar
-            </h1>
-            <p className="text-xl md:text-2xl text-warm-ivory/95 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Explore our exceptional selection of Japanese sake, whisky, signature cocktails, and authentic spirits.
-            </p>
-            <div className="inline-block bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-8 py-4 mb-8">
-              <p className="text-lg font-medium text-warm-ivory">
-                Full Bar • No Reservation Needed • Sushi Bar View
+            <RevealSection>
+              <p className="text-soft-gold font-medium tracking-widest uppercase mb-4 text-sm md:text-base">
+                Crafted & Curated
               </p>
-            </div>
+            </RevealSection>
+            <RevealSection delay={100}>
+              <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight">
+                Premium Bar
+              </h1>
+            </RevealSection>
+            <RevealSection delay={200}>
+              <p className="text-xl md:text-2xl text-warm-ivory/95 max-w-3xl mx-auto mb-8 leading-relaxed">
+                Explore our exceptional selection of Japanese sake, whisky, signature cocktails, and authentic spirits.
+              </p>
+            </RevealSection>
+            <RevealSection delay={300}>
+              <div className="inline-block bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-8 py-4 mb-8">
+                <p className="text-lg font-medium text-warm-ivory">
+                  Full Bar • No Reservation Needed • Sushi Bar View
+                </p>
+              </div>
+            </RevealSection>
           </div>
         </section>
 
@@ -148,11 +157,13 @@ export default function BarPage() {
               <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
                 Sake Selection
               </p>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6">
-                Premium Sake
-              </h2>
+              <RevealSection>
+                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6">
+                  Premium Sake
+                </h2>
+              </RevealSection>
               <p className="text-xl text-charcoal/70 max-w-2xl mx-auto">
-                From delicate premium varieties to warming house sake, our curated selection celebrates the art of sake brewing.
+                From delicate premium varieties to warming house sake, our curated selection celebrates the art of sake brewing. New to sake? Our <Link href="/blog/types-of-sake-explained" className="text-accent-red hover:underline font-medium">types of sake guide</Link> explains everything you need to know.
               </p>
             </div>
 
@@ -279,7 +290,7 @@ export default function BarPage() {
                 Japanese Whisky
               </h2>
               <p className="text-xl text-warm-ivory/80 max-w-2xl mx-auto">
-                Award-winning Japanese distilleries representing the pinnacle of craftsmanship and tradition.
+                Award-winning Japanese distilleries representing the pinnacle of craftsmanship and tradition. Discover the story behind these expressions in our <Link href="/blog/japanese-whiskey-guide" className="text-soft-gold hover:underline">Japanese whiskey guide</Link>.
               </p>
             </div>
 
@@ -291,7 +302,7 @@ export default function BarPage() {
                   Yamazaki
                 </h3>
                 <p className="text-warm-ivory/80 text-center mb-6 leading-relaxed">
-                  Japan's oldest malt whisky distillery, located in the foothills of Mount Tenno
+                  Japan's oldest malt whisky distillery, located in the foothills of Mount Tenno. Read our <Link href="/blog/yamazaki-whiskey-guide" className="text-soft-gold hover:underline">Yamazaki tasting guide</Link> to explore every expression.
                 </p>
                 <ul className="space-y-3">
                   <li className="text-warm-ivory flex items-center gap-2">
@@ -366,7 +377,7 @@ export default function BarPage() {
                 Whisky Flights
               </h3>
               <p className="text-warm-ivory/80 mb-6 text-lg">
-                Compare and contrast Japanese whisky expressions with our guided tasting flights
+                Visit the Jinbeh bar for cocktails Frisco style — compare and contrast Japanese whisky expressions including Hibiki whisky with our guided tasting flights
               </p>
               <div className="space-y-3 inline-block">
                 <p className="text-warm-ivory flex items-center gap-2">
@@ -397,7 +408,7 @@ export default function BarPage() {
                 Signature Cocktails
               </h2>
               <p className="text-xl text-charcoal/70 max-w-2xl mx-auto">
-                Artfully crafted with Japanese spirits and authentic ingredients, inspired by the essence of Japan.
+                Artfully crafted with Japanese spirits and authentic ingredients, inspired by the essence of Japan. Learn more in our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline font-medium">Japanese cocktails guide</Link>.
               </p>
             </div>
 
@@ -592,7 +603,7 @@ export default function BarPage() {
                   Refreshing Alternatives
                 </h2>
                 <p className="text-charcoal/70 mb-8 leading-relaxed">
-                  Perfect for designated drivers, non-drinkers, and anyone seeking authentic Japanese beverages. Explore traditional and modern refreshments.
+                  Perfect for designated drivers, non-drinkers, and anyone seeking authentic Japanese beverages. Explore traditional and modern refreshments like the iconic <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline font-medium">Ramune soda</Link>.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -644,7 +655,7 @@ export default function BarPage() {
                 Don't Miss Happy Hour
               </h2>
               <p className="text-xl text-warm-ivory/90 mb-10 leading-relaxed">
-                Unwind at our bar with special prices on premium sake, Japanese whisky, signature cocktails, and appetizers. Monday through Friday during Happy Hour.
+                Unwind at our bar with special prices on premium sake, Japanese whisky, signature cocktails, and appetizers. Monday through Friday during Happy Hour. Explore our <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing guide</Link> to find the perfect drink for your meal.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -654,7 +665,7 @@ export default function BarPage() {
                   View Happy Hour Specials
                 </Link>
                 <Link
-                  href="/frisco#reserve"
+                  href="/reservations"
                   className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl transition-all"
                 >
                   Make a Reservation
@@ -761,7 +772,7 @@ export default function BarPage() {
                   Frisco, TX 75034
                 </p>
                 <Link
-                  href="/frisco#reserve"
+                  href="/reservations"
                   className="inline-block btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-6 py-3 font-semibold rounded-lg"
                 >
                   Reserve at Frisco
@@ -776,7 +787,7 @@ export default function BarPage() {
                   Lewisville, TX 75067
                 </p>
                 <Link
-                  href="/lewisville#reserve"
+                  href="/reservations"
                   className="inline-block btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-6 py-3 font-semibold rounded-lg"
                 >
                   Reserve at Lewisville

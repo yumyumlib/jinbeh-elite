@@ -1,149 +1,178 @@
 import { MetadataRoute } from "next";
+import blogPostsData from "@/data/blog-posts.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://jinbeh.com";
-    const currentDate = new Date().toISOString();
 
-    // Core pages
-    const staticPages = [
-        { url: baseUrl, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 1.0 },
-        { url: `${baseUrl}/frisco`, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 0.9 },
-        { url: `${baseUrl}/lewisville`, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 0.9 },
-        { url: `${baseUrl}/menu`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
-        { url: `${baseUrl}/frisco/menu`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
-        { url: `${baseUrl}/lewisville/menu`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
-        { url: `${baseUrl}/happy-hour`, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 0.8 },
-        { url: `${baseUrl}/bar`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
-        { url: `${baseUrl}/lunch-specials`, lastModified: currentDate, changeFrequency: "weekly" as const, priority: 0.7 },
-        { url: `${baseUrl}/catering`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },
-        { url: `${baseUrl}/private-dining`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },
-        { url: `${baseUrl}/gift-cards`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.6 },
-        { url: `${baseUrl}/reservations`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.8 },
-        { url: `${baseUrl}/takeout`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.6 },
-        { url: `${baseUrl}/about`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.5 },
-        { url: `${baseUrl}/contact`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.5 },
-        { url: `${baseUrl}/faq`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.5 },
-        { url: `${baseUrl}/privacy`, lastModified: currentDate, changeFrequency: "yearly" as const, priority: 0.3 },
-        { url: `${baseUrl}/terms`, lastModified: currentDate, changeFrequency: "yearly" as const, priority: 0.3 },
-        { url: `${baseUrl}/accessibility`, lastModified: currentDate, changeFrequency: "yearly" as const, priority: 0.3 },
-        { url: `${baseUrl}/blog`, lastModified: currentDate, changeFrequency: "daily" as const, priority: 0.8 },
-        { url: `${baseUrl}/celebrations`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },
+    // Tiered dates — most recent for highest-value pages
+    const today = "2026-02-17";  // most important: homepage, locations, menus, reservations
+    const thisWeek = "2026-02-14";  // high-value: specials, happy hour, blog hub
+    const thisMonth = "2026-02-01";  // mid-tier: catering, celebrations, nearby cities
+    const older = "2026-01-15";  // low-churn: legal, about, careers, gallery
+
+    // ─── Core pages ───────────────────────────────────────────────
+    const staticPages: MetadataRoute.Sitemap = [
+        { url: baseUrl, lastModified: today, changeFrequency: "weekly", priority: 1.0 },
+        { url: `${baseUrl}/frisco`, lastModified: today, changeFrequency: "weekly", priority: 0.9 },
+        { url: `${baseUrl}/lewisville`, lastModified: today, changeFrequency: "weekly", priority: 0.9 },
+        { url: `${baseUrl}/menu`, lastModified: today, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${baseUrl}/frisco/menu`, lastModified: today, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${baseUrl}/lewisville/menu`, lastModified: today, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${baseUrl}/reservations`, lastModified: today, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${baseUrl}/happy-hour`, lastModified: thisWeek, changeFrequency: "weekly", priority: 0.8 },
+        { url: `${baseUrl}/happy-hour/specials`, lastModified: thisWeek, changeFrequency: "weekly", priority: 0.7 },
+        { url: `${baseUrl}/bar`, lastModified: thisWeek, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${baseUrl}/lunch-specials`, lastModified: thisWeek, changeFrequency: "weekly", priority: 0.7 },
+        { url: `${baseUrl}/specials`, lastModified: thisWeek, changeFrequency: "weekly", priority: 0.7 },
+        { url: `${baseUrl}/frisco/specials`, lastModified: thisWeek, changeFrequency: "weekly", priority: 0.6 },
+        { url: `${baseUrl}/lewisville/specials`, lastModified: thisWeek, changeFrequency: "weekly", priority: 0.6 },
+        { url: `${baseUrl}/blog`, lastModified: thisWeek, changeFrequency: "daily", priority: 0.8 },
+        { url: `${baseUrl}/catering`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.7 },
+        { url: `${baseUrl}/catering/corporate`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/catering/party`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/catering/wedding`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/private-dining`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.7 },
+        { url: `${baseUrl}/celebrations`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.7 },
+        { url: `${baseUrl}/gift-cards`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/takeout`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/order-online`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/delivery`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/events`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/gallery`, lastModified: older, changeFrequency: "monthly", priority: 0.5 },
+        { url: `${baseUrl}/careers`, lastModified: older, changeFrequency: "monthly", priority: 0.4 },
+        { url: `${baseUrl}/about`, lastModified: older, changeFrequency: "monthly", priority: 0.5 },
+        { url: `${baseUrl}/contact`, lastModified: older, changeFrequency: "monthly", priority: 0.5 },
+        { url: `${baseUrl}/faq`, lastModified: older, changeFrequency: "monthly", priority: 0.5 },
+        { url: `${baseUrl}/privacy`, lastModified: older, changeFrequency: "yearly", priority: 0.3 },
+        { url: `${baseUrl}/terms`, lastModified: older, changeFrequency: "yearly", priority: 0.3 },
+        { url: `${baseUrl}/accessibility`, lastModified: older, changeFrequency: "yearly", priority: 0.3 },
     ];
 
-    // Menu category pages
+    // ─── Kids menu (both locations) ──────────────────────────────
+    const kidsMenuPages: MetadataRoute.Sitemap = [
+        { url: `${baseUrl}/frisco/kids-menu`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.5 },
+        { url: `${baseUrl}/lewisville/kids-menu`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.5 },
+    ];
+
+    // ─── Menu category pages (both locations) ────────────────────
     const menuCategories = [
-        "hibachi", "sushi-rolls", "sashimi", "appetizers", "cocktails"
+        "hibachi", "sushi-rolls", "sashimi", "appetizers", "cocktails",
     ];
-    const menuCategoryPages = menuCategories.flatMap((category) => [
-        { url: `${baseUrl}/frisco/${category}`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },
-        { url: `${baseUrl}/lewisville/${category}`, lastModified: currentDate, changeFrequency: "monthly" as const, priority: 0.7 },
+    const menuCategoryPages: MetadataRoute.Sitemap = menuCategories.flatMap((category) => [
+        { url: `${baseUrl}/frisco/${category}`, lastModified: today, changeFrequency: "monthly" as const, priority: 0.7 },
+        { url: `${baseUrl}/lewisville/${category}`, lastModified: today, changeFrequency: "monthly" as const, priority: 0.7 },
     ]);
 
-    // Celebration pages
+    // ─── Individual menu item pages (both locations) ─────────────
+    const menuItems: Record<string, string[]> = {
+        hibachi: [
+            "chicken-teriyaki", "combo-seafood", "combo-steak-chicken",
+            "combo-steak-lobster", "combo-steak-shrimp", "filet-mignon",
+            "imperial-dinner", "lobster-tail", "ny-strip", "ribeye",
+            "salmon", "scallops", "shrimp", "vegetable-tofu",
+        ],
+        "sushi-rolls": [
+            "ahi-tower", "butterfly-kiss", "california-roll", "caterpillar-roll",
+            "dragon-roll", "philly-roll", "rainbow-roll", "shrimp-tempura-roll",
+            "spicy-tuna-roll", "spider-roll", "tiger-roll", "vegas-roll",
+            "volcano-roll", "yellowtail-jalapeno",
+        ],
+        sashimi: [
+            "chirashi", "octopus-sashimi", "omakase", "salmon-sashimi",
+            "sashimi-deluxe", "tuna-sashimi", "yellowtail-sashimi",
+        ],
+        appetizers: [
+            "edamame", "gyoza", "seared-tuna", "soft-shell-crab",
+            "tempura", "tuna-tartare",
+        ],
+        cocktails: [
+            "jinbeh-punch", "lychee-martini", "sake-bomb",
+            "sake-flight", "tokyo-mule",
+        ],
+    };
+
+    const locations = ["frisco", "lewisville"];
+    const menuItemPages: MetadataRoute.Sitemap = locations.flatMap((location) =>
+        Object.entries(menuItems).flatMap(([category, items]) =>
+            items.map((item) => ({
+                url: `${baseUrl}/${location}/${category}/${item}`,
+                lastModified: thisMonth,
+                changeFrequency: "monthly" as const,
+                priority: 0.5,
+            }))
+        )
+    );
+
+    // ─── Neighborhood / nearby-area pages ────────────────────────
+    const neighborhoodPages: MetadataRoute.Sitemap = [
+        { url: `${baseUrl}/frisco/stonebriar`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/frisco/starwood`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/frisco/legacy`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/lewisville/castle-hills`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/lewisville/vista-ridge`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+    ];
+
+    // ─── Celebration pages ───────────────────────────────────────
     const celebrationSlugs = [
         "anniversary", "asian-restaurant-month", "baby-shower", "birthday",
         "christmas", "corporate-events", "date-night", "diwali",
         "family-gatherings", "fathers-day", "graduation", "holiday-parties",
         "lunar-new-year", "mid-autumn-festival", "mothers-day",
         "national-fried-rice-day", "rehearsal-dinner", "team-building",
-        "thanksgiving", "valentines-day"
+        "thanksgiving", "valentines-day",
     ];
-    const celebrationPages = celebrationSlugs.map((slug) => ({
+    const celebrationPages: MetadataRoute.Sitemap = celebrationSlugs.map((slug) => ({
         url: `${baseUrl}/celebrations/${slug}`,
-        lastModified: currentDate,
+        lastModified: thisMonth,
         changeFrequency: "monthly" as const,
         priority: 0.6,
     }));
 
-    // Nearby city pages
+    // ─── Nearby city pages ───────────────────────────────────────
     const nearbyCities = [
         "allen", "carrollton", "coppell", "denton", "flower-mound",
         "grapevine", "highland-village", "little-elm", "mckinney",
-        "plano", "richardson", "the-colony"
+        "plano", "richardson", "the-colony",
     ];
-    const nearbyPages = nearbyCities.map((city) => ({
+    const nearbyPages: MetadataRoute.Sitemap = nearbyCities.map((city) => ({
         url: `${baseUrl}/nearby/${city}`,
-        lastModified: currentDate,
+        lastModified: thisMonth,
         changeFrequency: "monthly" as const,
         priority: 0.6,
     }));
 
-    // Blog article slugs - comprehensive list
-    const blogSlugs = [
-        "adult-birthday-party-ideas",
-        "asian-cuisine-dallas",
-        "baby-shower-venues",
-        "bachelorette-restaurants-dallas",
-        "beginner-sushi-tips",
-        "best-asian-food-dallas",
-        "best-happy-hour-frisco-tx",
-        "best-hibachi-dallas",
-        "best-hibachi-dallas-tx",
-        "best-salmon-sashimi",
-        "best-seafood-dallas",
-        "best-steak-near-me",
-        "best-sushi-dallas",
-        "best-sushi-frisco",
-        "birthday-celebration-restaurants",
-        "bridal-shower-venues",
-        "date-night-restaurants-frisco",
-        "discover-teppanyaki",
-        "fine-dining-frisco",
-        "free-birthday-food-deals",
-        "group-dining-venues",
-        "hibachi-birthday-party-ideas",
-        "hibachi-calories-guide",
-        "hibachi-catering-dfw",
-        "hibachi-dining-experience",
-        "hibachi-lunch-ideas",
-        "hibachi-menu-guide",
-        "hibachi-vs-teppanyaki-explained",
-        "how-to-eat-sushi-guide",
-        "japanese-beverages-guide",
-        "japanese-cocktails",
-        "japanese-restaurants-lewisville",
-        "japanese-restaurants-near-me",
-        "japanese-whiskey-guide",
-        "jinbeh-catering-services",
-        "jinbeh-gift-cards-guide",
-        "large-group-dining",
-        "offsite-hibachi-catering",
-        "omakase-dining-guide",
-        "pickleball-restaurants-lewisville",
-        "popular-japanese-culture",
-        "ramune-soda-guide",
-        "restaurants-private-rooms",
-        "romantic-anniversary-dinners",
-        "sake-alcohol-strength",
-        "sake-pairing-guide",
-        "sake-sushi-menu-pairings",
-        "sake-taste-profile",
-        "sashimi-vs-sushi",
-        "seafood-lewisville",
-        "sushi-cooking-classes",
-        "sushi-identification-chart",
-        "sushi-lunch-specials",
-        "thanksgiving-dining-guide",
-        "top-frisco-restaurants",
-        "types-of-sake-explained",
-        "types-of-sushi",
-        "unique-kids-birthday-party-places",
-        "what-is-omakase",
-        "yamazaki-whiskey-guide",
+    // ─── Blog category pages ─────────────────────────────────────
+    const blogCategories = [
+        "sushi", "hibachi", "celebrations", "happy-hour", "local-guide",
+        "best-of", "beverages", "cuisine", "health", "local-guides",
     ];
-
-    const blogPages = blogSlugs.map((slug) => ({
-        url: `${baseUrl}/blog/${slug}`,
-        lastModified: currentDate,
-        changeFrequency: "monthly" as const,
-        priority: 0.6,
+    const blogCategoryPages: MetadataRoute.Sitemap = blogCategories.map((cat) => ({
+        url: `${baseUrl}/blog/category/${cat}`,
+        lastModified: thisWeek,
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
     }));
+
+    // ─── Blog article pages (use actual publishedAt dates) ───────
+    const blogPosts = (blogPostsData as unknown as { posts: { slug: string; publishedAt?: string }[] }).posts;
+    const blogPages: MetadataRoute.Sitemap = blogPosts
+        .filter((post) => post.slug)
+        .map((post) => ({
+            url: `${baseUrl}/blog/${post.slug}`,
+            lastModified: post.publishedAt || thisMonth,
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+        }));
 
     return [
         ...staticPages,
+        ...kidsMenuPages,
         ...menuCategoryPages,
+        ...menuItemPages,
+        ...neighborhoodPages,
         ...celebrationPages,
         ...nearbyPages,
+        ...blogCategoryPages,
         ...blogPages,
     ];
 }

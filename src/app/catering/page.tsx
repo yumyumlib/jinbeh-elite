@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { HeroSection, RevealSection, AnimatedGradientText } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -118,25 +120,33 @@ export default function CateringPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-            <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              Bring Jinbeh to You
-            </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              Catering Services
-            </h1>
-            <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
-              From corporate lunches to milestone celebrations, let Jinbeh&apos;s
-              authentic Japanese cuisine make your event unforgettable.
-            </p>
-            <a
-              href="#contact"
-              className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center gap-2"
-            >
-              Request a Quote
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
+            <RevealSection>
+              <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
+                Bring Jinbeh to You
+              </p>
+            </RevealSection>
+            <RevealSection delay={100}>
+              <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
+                <AnimatedGradientText className="text-4xl md:text-6xl font-heading font-bold">Catering Services</AnimatedGradientText>
+              </h1>
+            </RevealSection>
+            <RevealSection delay={200}>
+              <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
+                From corporate lunches to milestone <Link href="/celebrations" className="text-soft-gold hover:underline">celebrations</Link>, let Jinbeh&apos;s
+                authentic Japanese cuisine make your event unforgettable. Whether you need <Link href="/blog/offsite-hibachi-catering" className="text-soft-gold hover:underline">offsite hibachi catering</Link> or an in-house <Link href="/private-dining" className="text-soft-gold hover:underline">private dining</Link> experience, we&apos;ve got you covered.
+              </p>
+            </RevealSection>
+            <RevealSection delay={300}>
+              <a
+                href="#contact"
+                className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center gap-2"
+              >
+                Request a Quote
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </RevealSection>
           </div>
         </section>
 
@@ -145,10 +155,10 @@ export default function CateringPage() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Catering Options
+                Japanese Catering Frisco, Lewisville &amp; DFW
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Choose from our popular catering packages or let us create something custom for your event.
+                Choose from our popular sushi catering Dallas platters, hibachi catering DFW party trays, or let us create something custom for your event. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline font-medium">complete hibachi catering guide</Link> for planning tips.
               </p>
             </div>
 
@@ -156,9 +166,8 @@ export default function CateringPage() {
               {cateringOptions.map((option, index) => (
                 <div
                   key={option.title}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                    }`}
                 >
                   <div className={`relative ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
@@ -223,7 +232,7 @@ export default function CateringPage() {
                   Fresh & Quality
                 </h3>
                 <p className="text-charcoal/70">
-                  The same fresh ingredients and expert preparation you expect from our restaurants.
+                  The same fresh ingredients and expert preparation you expect from our restaurants. See our full <Link href="/menu" className="text-accent-red hover:underline font-medium">menu</Link> for available selections.
                 </p>
               </div>
 
@@ -237,7 +246,7 @@ export default function CateringPage() {
                   On-Time Delivery
                 </h3>
                 <p className="text-charcoal/70">
-                  We understand timing is everything. Count on us for punctual delivery.
+                  We understand timing is everything. Whether it&apos;s corporate catering Frisco TX or party catering Lewisville, count on us for punctual delivery every time.
                 </p>
               </div>
 
@@ -251,7 +260,7 @@ export default function CateringPage() {
                   Any Size Event
                 </h3>
                 <p className="text-charcoal/70">
-                  From intimate gatherings to large corporate events, we scale to fit your needs.
+                  From intimate gatherings to <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">large group dining</Link> events, we scale to fit your needs. We also offer <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">semi-private dining spaces</Link> for more exclusive occasions.
                 </p>
               </div>
             </div>
@@ -267,7 +276,7 @@ export default function CateringPage() {
                   Request a Catering Quote
                 </h2>
                 <p className="text-warm-ivory/70">
-                  Tell us about your event and we&apos;ll create a custom proposal.
+                  Tell us about your event and we&apos;ll create a custom proposal. Looking for catering near me Frisco? We serve the entire DFW metroplex, including wedding catering Japanese-style and thanksgiving catering Frisco holiday menus.
                 </p>
               </div>
 
@@ -359,6 +368,15 @@ export default function CateringPage() {
           </div>
         </section>
 
+        {/* Related Blog Articles */}
+        <RelatedBlogPosts
+          slugs={["hibachi-catering-dfw", "large-group-dining", "restaurants-private-rooms"]}
+          title="Catering Ideas & Inspiration"
+          subtitle="Planning an event? These guides will help you create an unforgettable experience."
+          layout="grid"
+          bgColor="ivory"
+        />
+
         {/* Dine-In CTA */}
         <section className="py-16 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
           <div className="container mx-auto px-6 text-center">
@@ -366,17 +384,17 @@ export default function CateringPage() {
               Prefer to Dine With Us?
             </h2>
             <p className="text-white/90 max-w-2xl mx-auto mb-8">
-              Visit either location for the full Jinbeh experience – hibachi entertainment and all!
+              Visit either location for the full Jinbeh experience – hibachi entertainment and all! Consider a <Link href="/gift-cards" className="text-soft-gold hover:underline">Jinbeh gift card</Link> for the catering lover in your life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl"
               >
                 Reserve at Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 font-semibold rounded-xl"
               >
                 Reserve at Lewisville

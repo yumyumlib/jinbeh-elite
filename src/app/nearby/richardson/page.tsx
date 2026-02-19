@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Jinbeh Sushi Restaurant Near Richardson",
-  image: "https://jinbeh.com/images/frisco-interior.jpg",
+  image: "https://jinbeh.com/images/interior/JinbehFrisco_SushiBar.jpg",
   description: "Premium sushi restaurant and Japanese hibachi serving Richardson residents. Located in Frisco, just minutes away with fresh sushi bar.",
   address: {
     "@type": "PostalAddress",

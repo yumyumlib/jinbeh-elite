@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Master Japanese whiskey. Learn about top brands, tasting notes, and where to enjoy them.",
         images: ["/images/beverages/JapaneseWhiskey.webp"],
     },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/japanese-whiskey-guide",
+    },
 };
 
 const schemas = [
@@ -26,16 +29,29 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Japanese Whiskey Guide: Top Bottles & Tasting Notes" },
+    ],
+};
+
 export default function JapaneseWhiskeyGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/JapaneseWhiskey.webp" alt="Japanese whiskey bottles showcasing premium spirits" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-amber-700 mb-4">🥃 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Whiskey's Global Rise</h1>
@@ -46,7 +62,7 @@ export default function JapaneseWhiskeyGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Japanese whiskey has revolutionized the global spirits market.</strong> From humble origins in 1923 to international acclaim, Japanese distillers have perfected the art of whiskey-making by blending Scottish tradition with Japanese precision and innovation.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Japanese whiskey has revolutionized the global spirits market.</strong> From humble origins in 1923 to international acclaim, Japanese distillers have perfected the art of whiskey-making by blending Scottish tradition with Japanese precision and innovation. Explore our curated selection at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red underline transition-colors">Jinbeh bar</Link>.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 The Origins of Japanese Whiskey</h2>
                             <p className="text-charcoal/80 mb-6">The story of Japanese whiskey begins in the early 20th century with two visionary men: Shinjiro Torii and Masataka Taketsuru. Torii, founder of Suntory, was inspired by Scotch whiskey tradition and sought to create a spirit reflecting the delicate balance and harmony of Japanese culture.</p>
@@ -122,7 +138,7 @@ export default function JapaneseWhiskeyGuide() {
                                 {[
                                     { q: "How does Japanese whiskey compare to Scottish whisky?", a: "Both follow similar production, but Japanese whiskey emphasizes subtlety, precision, and balance. Scotch often features bold flavors, while Japanese whiskey tends toward elegance and harmony. Fresh and flavorful!" },
                                     { q: "What makes Yamazaki famous?", a: "Yamazaki, established in 1923, is Japan's oldest malt whiskey distillery. Its flagship is renowned for delicate fruit and oak balance with notes of honey, peach, and pineapple. A celebration of craftsmanship!" },
-                                    { q: "Where can I try Japanese whiskey in Dallas?", a: "Welcome to the table at Jinbeh! We offer an impressive selection of Japanese whiskeys paired with authentic Japanese cuisine. Visit our <a href=\"/locations/frisco\" className=\"text-deep-indigo underline\">Frisco</a> or <a href=\"/locations/lewisville\" className=\"text-deep-indigo underline\">Lewisville</a> location. We treat every guest like family!" },
+                                    { q: "Where can I try Japanese whiskey in Dallas?", a: "Welcome to the table at Jinbeh! We offer an impressive selection of Japanese whiskeys paired with authentic Japanese cuisine. Visit our Frisco or Lewisville location. We treat every guest like family!" },
                                     { q: "Are Japanese whiskeys expensive?", a: "Premium Japanese whiskeys command high prices due to limited production and exceptional quality. However, excellent entry-level options exist at more accessible price points. Dinner and a show at Jinbeh makes it special!" }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
@@ -134,9 +150,9 @@ export default function JapaneseWhiskeyGuide() {
 
                             <div className="mt-12 p-8 bg-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">Explore Premium Japanese Whiskeys at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover our curated selection of Japanese whiskeys, expertly paired with our exceptional Japanese cuisine and hibachi experiences. Visit either our Frisco or Lewisville location to taste these remarkable spirits with the hospitality of a gracious host.</p>
+                                <p className="mb-6 text-white/90">Discover our curated selection of Japanese whiskeys, expertly paired with our exceptional Japanese cuisine and hibachi experiences. Start with <Link href="/happy-hour" className="text-soft-gold hover:underline">happy hour</Link> for special drink pricing. Visit either our <Link href="/frisco" className="text-white hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-white hover:underline">Lewisville</Link> location to taste these remarkable spirits with the hospitality of a gracious host.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-accent-red px-8 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Reserve a Table</Link>
+                                    <Link href="/reservations" className="bg-white text-accent-red px-8 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Reserve a Table</Link>
                                     <a href="tel:2146191200" className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/20 transition">Call (214) 619-1200</a>
                                 </div>
                             </div>
@@ -147,10 +163,10 @@ export default function JapaneseWhiskeyGuide() {
                                 <h3 className="font-heading font-bold mb-4">Related Reads</h3>
                                 <div className="space-y-3">
                                     {[{ t: "Find Yamazaki Whiskey Nearby", s: "/blog/yamazaki-whiskey-guide", i: "/images/drinks/cocktail.jpg" },
-                                    { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6751.jpg" },
+                                    { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6754.jpg" },
                                     { t: "Sake Alcohol Strength Guide", s: "/blog/sake-alcohol-strength", i: "/images/blog/17-C060324-6708.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt="" fill className="object-cover" /></div>
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
                                             <span className="text-sm group-hover:text-accent-red transition">{r.t}</span>
                                         </Link>
                                     ))}

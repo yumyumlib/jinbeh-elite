@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Elevate your workday with flavorful hibachi lunch ideas, featuring sizzling delights from Lewisville to Frisco.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-lunch-ideas",
+  },
 };
 
 const faqs = [
@@ -50,6 +53,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function HibiachiLunchIdeasPage({ params }: { params: { slug: string } }) {
   const slug = "hibachi-lunch-ideas";
   return (
@@ -60,6 +65,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       heroAlt="Hibachi chef preparing shrimp and vegetables on a hot griddle for lunch"
       category="Japanese Cuisine"
       categorySlug="cuisine"
+      slug="hibachi-lunch-ideas"
       publishDate="January 2026"
       readTime="7 min read"
       faqs={faqs}
@@ -77,7 +83,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       <h2>Why Hibachi Lunch is Perfect for Workdays</h2>
 
       <p>
-        Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, hibachi-style cooking involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors.
+        Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi-style cooking</Link> involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors.
       </p>
 
       <p>
@@ -91,7 +97,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </p>
 
       <p>
-        Additionally, hibachi meals are customizable, allowing you to tailor your lunch to your specific dietary preferences. Whether you're looking for a high-protein meal or something lighter, the combination of proteins, vegetables, and rice ensures a balanced meal that provides energy for the rest of your workday.
+        Additionally, hibachi meals are customizable, allowing you to tailor your lunch to your specific dietary preferences. Whether you're looking for a high-protein meal or something lighter, the combination of proteins, vegetables, and rice ensures a balanced meal that provides energy for the rest of your workday. Curious about nutrition? Our <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline">hibachi calories guide</Link> breaks down each option.
       </p>
 
       <p>
@@ -161,7 +167,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       <h2>Finding Hibachi Lunch Specials</h2>
 
       <p>
-        If you're craving hibachi but don't have the time or resources to prepare it yourself, finding a hibachi lunch special near you is a great alternative. Many restaurants in Lewisville and Frisco offer lunch specials that are perfect for a quick and satisfying meal. These specials often include a selection of hibachi favorites at a reduced price, making them an attractive option for those looking to enjoy a quality meal without breaking the bank.
+        If you're craving hibachi but don't have the time or resources to prepare it yourself, finding a hibachi lunch special near you is a great alternative. Check out Jinbeh's <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch specials</Link> in Lewisville and Frisco for a quick and satisfying meal. These specials often include a selection of hibachi favorites at a reduced price, making them an attractive option for those looking to enjoy a quality meal without breaking the bank.
       </p>
 
       <p>
@@ -183,7 +189,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </p>
 
       <p>
-        Regardless of how you choose to enjoy it, a hibachi lunch is sure to bring a touch of culinary excitement to your workday. The blend of entertainment, flavor, and variety makes hibachi an ideal choice for anyone looking to enhance their lunch routine.
+        Regardless of how you choose to enjoy it, a hibachi lunch is sure to bring a touch of culinary excitement to your workday. The blend of entertainment, flavor, and variety makes hibachi an ideal choice for anyone looking to enhance their lunch routine. Learn more about the full <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi dining experience</Link> at Jinbeh.
       </p>
 
       <p>
@@ -191,6 +197,16 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </p>
 
       <RelatedArticles currentSlug={slug} />
+
+      {/* Related Reading */}
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/hibachi-menu-guide" className="text-accent-red hover:underline font-medium">Complete Hibachi Menu Guide</Link>
+          <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline font-medium">Sushi Lunch Specials</Link>
+          <Link href="/celebrations/national-fried-rice-day" className="text-accent-red hover:underline font-medium">🍚 National Fried Rice Day at Jinbeh</Link>
+        </div>
+      </div>
     </ArticleLayout>
   );
 }

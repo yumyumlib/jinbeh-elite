@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Our local guide to the best hibachi restaurants in Dallas. From birthday celebrations to date nights, find where skilled chefs put on an unforgettable show.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/best-hibachi-dallas",
+  },
 };
 
 const faqs = [
@@ -56,6 +59,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function BestHibachiDallasPage() {
   return (
     <ArticleLayout
@@ -65,9 +70,11 @@ export default function BestHibachiDallasPage() {
       heroAlt="Hibachi chef preparing shrimp and steak at Jinbeh Japanese Restaurant in Dallas"
       category="Best Of Guides"
       categorySlug="best-of"
+      slug="best-hibachi-dallas"
       publishDate="January 2026"
       readTime="8 min read"
       faqs={faqs}
+      keyTakeaway="Jinbeh Japanese Restaurant (Frisco & Lewisville) is consistently rated the best hibachi in DFW — family-owned since 1988 with skilled chefs, fresh ingredients, and generous portions. Book early for weekends, mention birthdays when reserving, and try the lunch specials for the best value."
     >
       {/* Article Body with Show Don't Tell, VOC phrases, Internal Links */}
       <p>
@@ -195,7 +202,7 @@ export default function BestHibachiDallasPage() {
         with an extensive <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
           sushi menu
         </Link>. The experience varies by location, so check reviews for your specific
-        neighborhood. For a consistently excellent experience across both hibachi and sushi, visit our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link>.
+        neighborhood. For a consistently excellent experience across both hibachi and sushi, visit our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link>.
       </p>
 
       <h2>How to Choose the Right Hibachi Restaurant</h2>
@@ -331,7 +338,7 @@ export default function BestHibachiDallasPage() {
       <p>
         At Jinbeh, you can <Link href="/reservations" className="text-accent-red hover:underline">
           make a reservation
-        </Link> online or call our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> at (214) 619-1200 or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville</Link> at
+        </Link> online or call our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> at (214) 619-1200 or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> at
         (214) 488-2224.
       </p>
 

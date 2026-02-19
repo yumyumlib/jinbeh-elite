@@ -83,7 +83,7 @@ const faqSchema = {
       name: "How many guests can Jinbeh accommodate for a rehearsal dinner?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We can comfortably accommodate rehearsal dinner groups of various sizes. Each hibachi table seats 8-10 guests, and we have private rooms available for larger groups or more intimate celebrations. Contact us to discuss your specific headcount and preferred dining arrangement.",
+        text: "We can comfortably accommodate rehearsal dinner groups of various sizes. Each hibachi table seats 8-10 guests, and we have semi-private spaces available for larger groups or more intimate celebrations. Contact us to discuss your specific headcount and preferred dining arrangement.",
       },
     },
     {
@@ -97,6 +97,16 @@ const faqSchema = {
   ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Rehearsal Dinner" },
+  ],
+};
 export default function RehearsalDinnerPage() {
   return (
     <>
@@ -106,324 +116,354 @@ export default function RehearsalDinnerPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
 
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center text-white py-20">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          poster="/images/food/OnionVolcanoDemo.jpg"
-          aria-label="Hibachi chef performing fire show for celebration at Jinbeh"
-        >
-          <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-rose-900/70 via-black/50 to-rose-900/70"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Rehearsal Dinner at Jinbeh
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8">
-              Start your wedding celebration with an unforgettable hibachi experience for your closest family and friends.
+        {/* Hero Section */}
+        <section className="relative min-h-[60vh] flex items-center text-white py-20">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            poster="/images/food/OnionVolcanoDemo.jpg"
+            aria-label="Hibachi chef performing fire show for celebration at Jinbeh"
+          >
+            <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-rose-900/70 via-black/50 to-rose-900/70"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Rehearsal Dinner at Jinbeh
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-8">
+                Start your wedding celebration with an unforgettable hibachi experience for your closest family and friends.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/frisco"
+                  className="bg-white text-rose-700 hover:bg-rose-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                >
+                  Book Frisco Location
+                </Link>
+                <Link
+                  href="/lewisville"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border border-white/30"
+                >
+                  Book Lewisville Location
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Jinbeh */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Why Couples Choose Jinbeh for Rehearsal Dinners
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-rose-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">🎭 Built-In Entertainment</h3>
+                  <p className="text-gray-700">
+                    No awkward silences or forced conversation starters. Our hibachi chefs provide
+                    engaging entertainment that naturally brings people together and gives everyone
+                    something to enjoy—even guests who've never met.
+                  </p>
+                </div>
+                <div className="bg-rose-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">👨‍👩‍👧‍👦 Family-Style Seating</h3>
+                  <p className="text-gray-700">
+                    Hibachi tables seat 8-10 guests around the grill, creating intimate groups perfect
+                    for mixing family members and wedding party. It&apos;s more personal than scattered
+                    restaurant tables.
+                  </p>
+                </div>
+                <div className="bg-rose-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">📸 Memorable Moments</h3>
+                  <p className="text-gray-700">
+                    The hibachi experience creates photo-worthy moments and shared memories before the
+                    wedding day. Guests will be talking about the onion volcano and flying shrimp
+                    throughout the wedding weekend!
+                  </p>
+                </div>
+                <div className="bg-rose-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">🍱 Something for Everyone</h3>
+                  <p className="text-gray-700">
+                    With hibachi, sushi, and traditional Japanese options, there&apos;s something every guest
+                    will love. We accommodate dietary restrictions to ensure all your guests are
+                    well-fed and happy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Rehearsal Dinner Experience */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Your Rehearsal Dinner Experience
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Hibachi Option */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="bg-accent-red text-white p-4">
+                    <h3 className="text-xl font-bold">Hibachi Rehearsal Dinner</h3>
+                    <p className="text-red-100">Interactive & Entertaining</p>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-gray-700 mb-4">
+                      The classic choice for rehearsal dinners! Gather around the hibachi grill and enjoy:
+                    </p>
+                    <ul className="space-y-2 text-gray-600 mb-4">
+                      <li>• Skilled chef entertainment at your table</li>
+                      <li>• Fresh hibachi steak, chicken, shrimp, or salmon</li>
+                      <li>• Fried rice, vegetables, and soup</li>
+                      <li>• Group seating around the grill</li>
+                      <li>• Perfect for groups of any size</li>
+                    </ul>
+                    <p className="text-sm text-gray-500">
+                      Ideal for: Large wedding parties, families meeting for the first time, fun-loving couples
+                    </p>
+                  </div>
+                </div>
+
+                {/* Sushi Option */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="bg-gray-800 text-white p-4">
+                    <h3 className="text-xl font-bold">Sushi Bar Rehearsal Dinner</h3>
+                    <p className="text-gray-300">Elegant & Intimate</p>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-gray-700 mb-4">
+                      For a more intimate rehearsal dinner, our sushi experience offers:
+                    </p>
+                    <ul className="space-y-2 text-gray-600 mb-4">
+                      <li>• Fresh sashimi and specialty rolls</li>
+                      <li>• Omakase-style chef selections</li>
+                      <li>• Premium sake and cocktail pairings</li>
+                      <li>• Quieter atmosphere for conversation</li>
+                      <li>• Ideal for smaller groups</li>
+                    </ul>
+                    <p className="text-sm text-gray-500">
+                      Ideal for: Intimate gatherings, sushi-loving couples, sophisticated celebrations
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-rose-100 rounded-xl p-6 text-center">
+                <p className="text-gray-800 font-medium">
+                  💡 <strong>Pro Tip:</strong> Many couples do a combination—hibachi tables for the larger
+                  group and sushi bar for the wedding party VIPs. Ask us about mixed seating options!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Planning Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Planning Your Rehearsal Dinner
+              </h2>
+
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Book Early</h3>
+                    <p className="text-gray-700">
+                      Contact us 2-4 weeks before your rehearsal dinner date. Friday evenings fill quickly
+                      during wedding season. Call our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco</Link> or
+                      <Link href="/lewisville" className="text-red-600 hover:text-red-700 font-medium"> Lewisville</Link> location to reserve your tables.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Confirm Your Guest Count</h3>
+                    <p className="text-gray-700">
+                      Let us know your final headcount and how you&apos;d like guests seated. We can arrange
+                      hibachi tables so the wedding party sits together or mixed with family members.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Choose Your Menu</h3>
+                    <p className="text-gray-700">
+                      Select from our hibachi options, sushi platters, or a combination. We can create
+                      a simplified menu that works for group ordering and billing.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Share Dietary Needs</h3>
+                    <p className="text-gray-700">
+                      Let us know about any allergies or dietary restrictions (vegetarian, gluten-free,
+                      shellfish allergies) so every guest has great options.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Rehearsal Dinner FAQs
+              </h2>
+              <div className="space-y-6">
+                {faqSchema.mainEntity.map((faq, index) => (
+                  <div key={index} className="bg-white rounded-xl shadow-md p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.name}</h3>
+                    <p className="text-gray-700">{faq.acceptedAnswer.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Celebrations */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                More Wedding & Romance Celebrations
+              </h2>
+              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                From engagement dinners to anniversaries, Jinbeh is the perfect place for romantic milestones.
+              </p>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">💍</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Anniversary Dinner</span>
+                </Link>
+                <Link href="/celebrations/date-night" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">💕</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Date Night</span>
+                </Link>
+                <Link href="/celebrations/valentines-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">❤️</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Valentine's Day</span>
+                </Link>
+                <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">🎂</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Birthday</span>
+                </Link>
+                <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">🎓</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Graduation</span>
+                </Link>
+                <Link href="/celebrations/baby-shower" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">👶</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Baby Shower</span>
+                </Link>
+                <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">👩</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Mother's Day</span>
+                </Link>
+                <Link href="/celebrations/fathers-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
+                  <span className="text-3xl mb-2 block">👨</span>
+                  <span className="font-medium text-gray-900 group-hover:text-rose-600">Father's Day</span>
+                </Link>
+              </div>
+
+              <div className="bg-rose-50 rounded-xl p-8 text-center">
+                <p className="text-gray-700 mb-4">
+                  Planning your wedding journey? Start with a memorable <Link href="/celebrations/date-night" className="text-rose-600 hover:text-rose-700 font-medium">date night</Link> at
+                  Jinbeh, celebrate your engagement with family, then return for your rehearsal dinner. After the wedding,
+                  come back for <Link href="/celebrations/anniversary" className="text-red-600 hover:text-red-700 font-medium">anniversary dinners</Link> year after year!
+                </p>
+                <p className="text-gray-700">
+                  Visit our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco hibachi restaurant</Link> near
+                  Plano and McKinney, or our <Link href="/lewisville" className="text-red-600 hover:text-red-700 font-medium">Lewisville Japanese restaurant</Link> serving
+                  Flower Mound and Highland Village.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-r from-rose-600 to-rose-700 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Book Your Rehearsal Dinner?
+            </h2>
+            <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
+              Contact us to discuss your guest count, preferred date, and menu options.
+              We'll help make your rehearsal dinner the perfect start to your wedding weekend.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/frisco"
-                className="bg-white text-rose-700 hover:bg-rose-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+                className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
               >
                 Book Frisco Location
               </Link>
               <Link
                 href="/lewisville"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border border-white/30"
+                className="bg-rose-800 hover:bg-rose-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
               >
                 Book Lewisville Location
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Why Choose Jinbeh */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Why Couples Choose Jinbeh for Rehearsal Dinners
+        </section>
+      
+        {/* Related Blog Articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
+              Rehearsal Dinner Inspiration
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-rose-50 p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">🎭 Built-In Entertainment</h3>
-                <p className="text-gray-700">
-                  No awkward silences or forced conversation starters. Our hibachi chefs provide 
-                  engaging entertainment that naturally brings people together and gives everyone 
-                  something to enjoy—even guests who've never met.
-                </p>
-              </div>
-              <div className="bg-rose-50 p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">👨‍👩‍👧‍👦 Family-Style Seating</h3>
-                <p className="text-gray-700">
-                  Hibachi tables seat 8-10 guests around the grill, creating intimate groups perfect 
-                  for mixing family members and wedding party. It&apos;s more personal than scattered 
-                  restaurant tables.
-                </p>
-              </div>
-              <div className="bg-rose-50 p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">📸 Memorable Moments</h3>
-                <p className="text-gray-700">
-                  The hibachi experience creates photo-worthy moments and shared memories before the 
-                  wedding day. Guests will be talking about the onion volcano and flying shrimp 
-                  throughout the wedding weekend!
-                </p>
-              </div>
-              <div className="bg-rose-50 p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">🍱 Something for Everyone</h3>
-                <p className="text-gray-700">
-                  With hibachi, sushi, and traditional Japanese options, there&apos;s something every guest 
-                  will love. We accommodate dietary restrictions to ensure all your guests are 
-                  well-fed and happy.
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/restaurants-private-rooms" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Private Dining</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Restaurants with Private Rooms in DFW
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Intimate private dining spaces perfect for rehearsal dinners and bridal parties.</p>
+              </Link>
+              <Link href="/blog/best-sushi-frisco" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Dining Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Best Sushi in Frisco TX
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Discover why Jinbeh is a top choice for pre-wedding celebrations in Frisco.</p>
+              </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Rehearsal Dinner Experience */}
-      <section className="py-16 bg-warm-ivory">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Your Rehearsal Dinner Experience
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Hibachi Option */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-accent-red text-white p-4">
-                  <h3 className="text-xl font-bold">Hibachi Rehearsal Dinner</h3>
-                  <p className="text-red-100">Interactive & Entertaining</p>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-700 mb-4">
-                    The classic choice for rehearsal dinners! Gather around the hibachi grill and enjoy:
-                  </p>
-                  <ul className="space-y-2 text-gray-600 mb-4">
-                    <li>• Skilled chef entertainment at your table</li>
-                    <li>• Fresh hibachi steak, chicken, shrimp, or salmon</li>
-                    <li>• Fried rice, vegetables, and soup</li>
-                    <li>• Group seating around the grill</li>
-                    <li>• Perfect for groups of any size</li>
-                  </ul>
-                  <p className="text-sm text-gray-500">
-                    Ideal for: Large wedding parties, families meeting for the first time, fun-loving couples
-                  </p>
-                </div>
-              </div>
-
-              {/* Sushi Option */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-gray-800 text-white p-4">
-                  <h3 className="text-xl font-bold">Sushi Bar Rehearsal Dinner</h3>
-                  <p className="text-gray-300">Elegant & Intimate</p>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-700 mb-4">
-                    For a more intimate rehearsal dinner, our sushi experience offers:
-                  </p>
-                  <ul className="space-y-2 text-gray-600 mb-4">
-                    <li>• Fresh sashimi and specialty rolls</li>
-                    <li>• Omakase-style chef selections</li>
-                    <li>• Premium sake and cocktail pairings</li>
-                    <li>• Quieter atmosphere for conversation</li>
-                    <li>• Ideal for smaller groups</li>
-                  </ul>
-                  <p className="text-sm text-gray-500">
-                    Ideal for: Intimate gatherings, sushi-loving couples, sophisticated celebrations
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 bg-rose-100 rounded-xl p-6 text-center">
-              <p className="text-gray-800 font-medium">
-                💡 <strong>Pro Tip:</strong> Many couples do a combination—hibachi tables for the larger 
-                group and sushi bar for the wedding party VIPs. Ask us about mixed seating options!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Planning Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Planning Your Rehearsal Dinner
-            </h2>
-            
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Book Early</h3>
-                  <p className="text-gray-700">
-                    Contact us 2-4 weeks before your rehearsal dinner date. Friday evenings fill quickly 
-                    during wedding season. Call our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco</Link> or 
-                    <Link href="/lewisville" className="text-red-600 hover:text-red-700 font-medium"> Lewisville</Link> location to reserve your tables.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Confirm Your Guest Count</h3>
-                  <p className="text-gray-700">
-                    Let us know your final headcount and how you&apos;d like guests seated. We can arrange 
-                    hibachi tables so the wedding party sits together or mixed with family members.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Choose Your Menu</h3>
-                  <p className="text-gray-700">
-                    Select from our hibachi options, sushi platters, or a combination. We can create 
-                    a simplified menu that works for group ordering and billing.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-rose-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Share Dietary Needs</h3>
-                  <p className="text-gray-700">
-                    Let us know about any allergies or dietary restrictions (vegetarian, gluten-free, 
-                    shellfish allergies) so every guest has great options.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-warm-ivory">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Rehearsal Dinner FAQs
-            </h2>
-            <div className="space-y-6">
-              {faqSchema.mainEntity.map((faq, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.name}</h3>
-                  <p className="text-gray-700">{faq.acceptedAnswer.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Celebrations */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-              More Wedding & Romance Celebrations
-            </h2>
-            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-              From engagement dinners to anniversaries, Jinbeh is the perfect place for romantic milestones.
-            </p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Link href="/celebrations/anniversary" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">💍</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Anniversary Dinner</span>
-              </Link>
-              <Link href="/celebrations/date-night" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">💕</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Date Night</span>
-              </Link>
-              <Link href="/celebrations/valentines-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">❤️</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Valentine's Day</span>
-              </Link>
-              <Link href="/celebrations/birthday" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">🎂</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Birthday</span>
-              </Link>
-              <Link href="/celebrations/graduation" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">🎓</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Graduation</span>
-              </Link>
-              <Link href="/celebrations/baby-shower" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">👶</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Baby Shower</span>
-              </Link>
-              <Link href="/celebrations/mothers-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">👩</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Mother's Day</span>
-              </Link>
-              <Link href="/celebrations/fathers-day" className="bg-warm-ivory hover:bg-rose-50 p-4 rounded-xl text-center transition-colors group">
-                <span className="text-3xl mb-2 block">👨</span>
-                <span className="font-medium text-gray-900 group-hover:text-rose-600">Father's Day</span>
-              </Link>
-            </div>
-
-            <div className="bg-rose-50 rounded-xl p-8 text-center">
-              <p className="text-gray-700 mb-4">
-                Planning your wedding journey? Start with a memorable <Link href="/celebrations/date-night" className="text-rose-600 hover:text-rose-700 font-medium">date night</Link> at 
-                Jinbeh, celebrate your engagement with family, then return for your rehearsal dinner. After the wedding, 
-                come back for <Link href="/celebrations/anniversary" className="text-red-600 hover:text-red-700 font-medium">anniversary dinners</Link> year after year!
-              </p>
-              <p className="text-gray-700">
-                Visit our <Link href="/frisco" className="text-red-600 hover:text-red-700 font-medium">Frisco hibachi restaurant</Link> near 
-                Plano and McKinney, or our <Link href="/lewisville" className="text-red-600 hover:text-red-700 font-medium">Lewisville Japanese restaurant</Link> serving 
-                Flower Mound and Highland Village.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-rose-600 to-rose-700 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Book Your Rehearsal Dinner?
-          </h2>
-          <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
-            Contact us to discuss your guest count, preferred date, and menu options. 
-            We'll help make your rehearsal dinner the perfect start to your wedding weekend.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/frisco"
-              className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              Book Frisco Location
-            </Link>
-            <Link
-              href="/lewisville"
-              className="bg-rose-800 hover:bg-rose-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              Book Lewisville Location
-            </Link>
-          </div>
-        </div>
-      </section>
-      </main>
+        </main>
       <Footer />
     </>
   );

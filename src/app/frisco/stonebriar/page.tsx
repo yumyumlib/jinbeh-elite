@@ -34,7 +34,7 @@ const localBusinessSchema = {
   "@type": "Restaurant",
   "@id": "https://jinbeh.com/frisco#restaurant",
   name: "Jinbeh Japanese Restaurant - Frisco (Near Stonebriar)",
-  image: "https://jinbeh.com/images/frisco-exterior.jpg",
+  image: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "2693 Preston Rd, Suite 1040",
@@ -161,7 +161,7 @@ export default function StonebriarPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Your Table
@@ -355,7 +355,7 @@ export default function StonebriarPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Make a Reservation

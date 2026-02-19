@@ -20,6 +20,9 @@ export const metadata: Metadata = {
         description: "Make your birthday special with dining experiences that go beyond ordinary meals.",
         images: ["/images/blog/25-C060324-6856.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/birthday-celebration-restaurants",
+  },
 };
 
 const articleSchema = {
@@ -80,9 +83,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+    { "@type": "ListItem", "position": 4, "name": "Top Birthday Celebration Restaurants in DFW" },
+  ],
+};
+
 export default function BirthdayCelebrationRestaurants() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -159,7 +175,7 @@ export default function BirthdayCelebrationRestaurants() {
                                         knife skills and fiery tricks. For birthdays, Jinbeh often provides a complimentary dessert and
                                         a special birthday song. Learn more about planning the perfect{" "}
                                         <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">
-                                          hibachi birthday party
+                                            hibachi birthday party
                                         </Link>
                                         . The interactive nature of the dining experience ensures that both you
                                         and your guests are entertained throughout the meal.
@@ -179,7 +195,7 @@ export default function BirthdayCelebrationRestaurants() {
                                         locations all over, finding a Cheesecake Factory "near me" is often easy, making it a convenient choice
                                         for birthday celebrations. For something more unique with entertainment, consider trying the{" "}
                                         <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline">
-                                          best hibachi in Dallas
+                                            best hibachi in Dallas
                                         </Link>
                                         {" "}instead.
                                     </p>
@@ -263,7 +279,7 @@ export default function BirthdayCelebrationRestaurants() {
                                                 Before deciding on a restaurant, call ahead or check their website to see what birthday specials they offer.
                                                 Some restaurants require you to sign up for their rewards program to receive birthday perks. At Jinbeh,{" "}
                                                 <Link href="/reservations" className="text-accent-red hover:underline">
-                                                  make a reservation
+                                                    make a reservation
                                                 </Link>
                                                 {" "}to secure your special celebration.
                                             </p>
@@ -336,13 +352,17 @@ export default function BirthdayCelebrationRestaurants() {
                                     <p className="text-white/90 mb-8 text-lg">
                                         At Jinbeh, we specialize in turning birthday dinners into memorable experiences. Our hibachi chefs,
                                         interactive atmosphere, and special birthday touches ensure your celebration is one you'll remember forever.
-                                        Visit our{" "}
-                                        <Link href="/locations/frisco" className="text-white hover:underline underline">
-                                          Frisco location
+                                        Can't decide what to give? A{" "}
+                                        <Link href="/gift-cards" className="text-white hover:underline underline">
+                                            Jinbeh gift card
+                                        </Link>
+                                        {" "}is always the perfect birthday present. Visit our{" "}
+                                        <Link href="/frisco" className="text-white hover:underline underline">
+                                            Frisco location
                                         </Link>
                                         {" "}or{" "}
-                                        <Link href="/locations/lewisville" className="text-white hover:underline underline">
-                                          Lewisville location
+                                        <Link href="/lewisville" className="text-white hover:underline underline">
+                                            Lewisville location
                                         </Link>
                                         .
                                     </p>

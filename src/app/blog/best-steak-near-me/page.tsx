@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Best Steak Near Me: Top 10 Steakhouses to Try | Jinbeh",
     description: "Discover the best steak near you with our guide to top steakhouses. Enjoy premium cuts, unique flavors, and unforgettable dining experiences. Find Jinbeh's Japanese steakhouse experience.",
     keywords: ["best steak near me", "steakhouse dallas", "prime rib restaurants", "steak dinner dallas"],
+    openGraph: {
+        title: "Best Steak Near Me: Top Steakhouses in DFW",
+        description: "Craving a perfectly cooked steak? From Japanese wagyu to filet mignon hibachi, discover the best steakhouses in Dallas-Fort Worth.",
+        url: "https://jinbeh.com/blog/best-steak-near-me",
+        type: "article",
+        images: ["/images/food/HibachiComboNYStripAndColossalShrimp.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-steak-near-me",
+    },
 };
 
 const schemas = [
@@ -19,9 +29,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Steak Near Me: Top Steakhouses in DFW" },
+    ],
+};
+
 export default function BestSteakNearMe() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -29,7 +52,7 @@ export default function BestSteakNearMe() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Dining</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Dining</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🥩 Steakhouse Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Steak Near Me</h1>
@@ -91,7 +114,7 @@ export default function BestSteakNearMe() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">✨ Why Choose Jinbeh for Steak</h2>
                             <p className="text-charcoal/80 mb-6">
-                                Beyond just excellent steak, Jinbeh offers complementary dining experiences. Pair your meal with our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">fresh sushi options</Link> or enjoy a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-semibold">sake pairing</Link> to elevate your dinner.
+                                Beyond just excellent steak, Jinbeh offers complementary dining experiences. Pair your meal with our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">fresh sushi options</Link> from our <Link href="/menu" className="text-accent-red hover:underline font-semibold">full menu</Link>, or enjoy a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-semibold">sake pairing</Link> to elevate your dinner. Planning a group outing? Our <Link href="/celebrations" className="text-accent-red hover:underline font-semibold">celebrations</Link> and <Link href="/private-dining" className="text-accent-red hover:underline font-semibold">private dining</Link> experiences make steak dinners truly memorable.
                             </p>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
@@ -152,8 +175,9 @@ export default function BestSteakNearMe() {
                                 <h3 className="text-2xl font-heading font-bold mb-4">🥩 Premium Steak at Jinbeh</h3>
                                 <p className="text-white/80 mb-6">Experience hibachi-grilled steaks prepared by expert chefs, combined with traditional Japanese technique and entertainment. Perfect for celebrations and group dinners.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/locations/frisco" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Visit Frisco</Link>
-                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Visit Lewisville</Link>
+                                    <Link href="/frisco" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Visit Frisco</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Visit Lewisville</Link>
+                                    <Link href="/reservations" className="border-2 border-soft-gold px-6 py-3 rounded-xl font-semibold text-soft-gold">Make a Reservation</Link>
                                 </div>
                             </div>
                         </article>
@@ -168,7 +192,7 @@ export default function BestSteakNearMe() {
                                         { t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
                                     ].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt="" fill className="object-cover" /></div>
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
                                             <span className="text-sm group-hover:text-accent-red">{r.t}</span>
                                         </Link>
                                     ))}

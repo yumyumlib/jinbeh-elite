@@ -21,6 +21,9 @@ export const metadata: Metadata = {
             "Explore the finest dining experiences in Frisco. From Jinbeh's authentic Japanese cuisine to contemporary American fare.",
         images: ["/images/blog/7-C060324-6447.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/fine-dining-frisco",
+  },
 };
 
 const articleSchema = {
@@ -49,7 +52,7 @@ const faqs = [
     },
     {
         question: "How do I make a fine dining reservation at Jinbeh?",
-        answer: "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We welcome reservations for hibachi and sushi bar seating. Private rooms are available for special occasions and groups.",
+        answer: "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We welcome reservations for hibachi and sushi bar seating. Semi-private dining spaces are available for special occasions and groups.",
     },
     {
         question: "What drinks does Jinbeh offer?",
@@ -74,9 +77,22 @@ const faqSchema = {
     })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+    { "@type": "ListItem", "position": 4, "name": "Fine Dining in Frisco TX: Best Upscale Restaurants" },
+  ],
+};
+
 export default function FineDiningFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -103,7 +119,7 @@ export default function FineDiningFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=local-guides" className="hover:text-white">Dining Guide</Link>
+                        <Link href="/blog/category/local-guides" className="hover:text-white">Dining Guide</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -206,7 +222,7 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        No fine dining experience is complete without the perfect libation. Jinbeh's mixologists craft sophisticated cocktails using fresh ingredients and premium spirits. The restaurant's curated <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake recommendations</Link> complement its Japanese cuisine beautifully, with options ranging from traditional varieties to innovative creations featuring exotic fruits and contemporary flavor profiles.
+                                        No fine dining experience is complete without the perfect libation. Jinbeh's mixologists at our <Link href="/bar" className="text-accent-red hover:underline">bar</Link> craft sophisticated cocktails using fresh ingredients and premium spirits. The restaurant's curated <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake recommendations</Link> complement its Japanese cuisine beautifully, with options ranging from traditional varieties to innovative creations featuring exotic fruits and contemporary flavor profiles.
                                     </p>
                                 </div>
 
@@ -243,7 +259,7 @@ export default function FineDiningFrisco() {
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
-                                                    <span>Private dining rooms available for special occasions</span>
+                                                    <span><Link href="/private-dining" className="text-white hover:underline">Semi-private dining spaces</Link> available for special occasions</span>
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
@@ -251,7 +267,7 @@ export default function FineDiningFrisco() {
                                                 </li>
                                             </ul>
                                             <Link
-                                                href="/frisco#reserve"
+                                                href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
                                                 Reserve Your Fine Dining Experience →
@@ -294,7 +310,7 @@ export default function FineDiningFrisco() {
                                     </h2>
 
                                     <p>
-                                        Visit Jinbeh's <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> for an unforgettable fine dining experience. Located conveniently near Stonebriar Centre, our restaurant combines authentic Japanese tradition with contemporary elegance. Check out our <Link href="/menu" className="text-accent-red hover:underline">view our menu</Link> to see what we're featuring.
+                                        Visit Jinbeh's <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> for an unforgettable fine dining experience. Located conveniently near Stonebriar Centre, our restaurant combines authentic Japanese tradition with contemporary elegance. Check out our <Link href="/menu" className="text-accent-red hover:underline">view our menu</Link> to see what we're featuring.
                                     </p>
 
                                     <p className="mt-4">
@@ -329,17 +345,17 @@ export default function FineDiningFrisco() {
                                         🏯 Welcome to the Table
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Frisco residents choose Jinbeh for important meals. Hibachi shows. Fresh sushi. Expert chefs. We treat every guest like family.
+                                        Frisco residents choose Jinbeh for important meals. Hibachi shows. Fresh sushi. Expert chefs. We treat every guest like family. Start with <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> or surprise someone with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link>.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/frisco#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve Frisco
                                         </Link>
                                         <Link
-                                            href="/lewisville#reserve"
+                                            href="/reservations"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Reserve Lewisville

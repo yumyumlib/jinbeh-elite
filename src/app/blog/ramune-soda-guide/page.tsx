@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Experience Ramune soda. Learn about flavors, the iconic marble seal, and where to find it.",
         images: ["/images/beverages/RamuneSoda.webp"],
     },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/ramune-soda-guide",
+    },
 };
 
 const faqs = [
@@ -34,16 +37,29 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Ramune Soda Guide: How to Open & Enjoy Japan's Iconic Drink" },
+    ],
+};
+
 export default function RamuneSodaGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/RamuneSoda.webp" alt="Ramune soda bottles with iconic marble seal" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍹 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Ramune Soda: Unique Flavors & Marble Magic</h1>
@@ -213,12 +229,12 @@ export default function RamuneSodaGuide() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-blue-800 rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍹 Enjoy Ramune at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover Ramune soda and other authentic Japanese beverages at Jinbeh. Pair them with our hibachi entertainment and traditional Japanese cuisine for a complete cultural experience. Visit us in Frisco or Lewisville and enjoy Japanese hospitality at its finest.</p>
+                                <p className="mb-6 text-white/90">Discover Ramune soda and other authentic Japanese beverages at Jinbeh. Pair them with our hibachi entertainment and traditional Japanese cuisine for a complete cultural experience. Visit us in Frisco or Lewisville and enjoy Japanese hospitality at its finest. <Link href="/reservations" className="text-soft-gold hover:underline">Make a reservation</Link> today.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
                                     <Link href="/blog/types-of-sushi" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Sushi Varieties</Link>
-                                    <Link href="/locations/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Frisco Location</Link>
-                                    <Link href="/locations/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
+                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Frisco Location</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
                                 </div>
                             </div>
                         </article>

@@ -20,6 +20,9 @@ export const metadata: Metadata = {
         description: "Master the art of sushi making with hands-on classes and expert instruction.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sushi-cooking-classes",
+    },
 };
 
 const articleSchema = {
@@ -72,9 +75,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Sushi Cooking Classes Near Me in DFW: Learn to Make Sushi" },
+    ],
+};
+
 export default function SushiCookingClasses() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -95,7 +111,7 @@ export default function SushiCookingClasses() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=cuisine" className="hover:text-white">Guides</Link>
+                        <Link href="/blog/category/cuisine" className="hover:text-white">Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -201,12 +217,12 @@ export default function SushiCookingClasses() {
                                     </p>
 
                                     <p className="text-charcoal/80 mb-6 pl-6 border-l-4 border-soft-gold">
-                                        <strong>Topics covered:</strong><br/>
-                                        • Preparing and seasoning sushi rice<br/>
-                                        • Selecting, handling, and slicing fresh fish<br/>
-                                        • Rolling techniques for maki rolls<br/>
-                                        • Creating hand rolls (temaki)<br/>
-                                        • Food safety and hygiene practices<br/>
+                                        <strong>Topics covered:</strong><br />
+                                        • Preparing and seasoning sushi rice<br />
+                                        • Selecting, handling, and slicing fresh fish<br />
+                                        • Rolling techniques for maki rolls<br />
+                                        • Creating hand rolls (temaki)<br />
+                                        • Food safety and hygiene practices<br />
                                         • Presentation and plating techniques
                                     </p>
 
@@ -217,12 +233,12 @@ export default function SushiCookingClasses() {
                                     </p>
 
                                     <p className="text-charcoal/80 mb-6 pl-6 border-l-4 border-soft-gold">
-                                        <strong>Advanced topics include:</strong><br/>
-                                        • Creating intricate specialty rolls<br/>
-                                        • Nigiri preparation with perfect proportions<br/>
-                                        • Sashimi cutting and presentation<br/>
-                                        • Flavor pairing and ingredient selection<br/>
-                                        • Professional-grade knife techniques<br/>
+                                        <strong>Advanced topics include:</strong><br />
+                                        • Creating intricate specialty rolls<br />
+                                        • Nigiri preparation with perfect proportions<br />
+                                        • Sashimi cutting and presentation<br />
+                                        • Flavor pairing and ingredient selection<br />
+                                        • Professional-grade knife techniques<br />
                                         • Menu development and business aspects
                                     </p>
 
@@ -372,7 +388,7 @@ export default function SushiCookingClasses() {
                                 <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Learn Sushi?</h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Welcome to the table! Contact Jinbeh to inquire about our sushi making classes. Learn authentic techniques from experienced chefs in a fun, gracious environment.
+                                        Welcome to the table! Contact Jinbeh to inquire about our sushi making classes. Learn authentic techniques from experienced chefs at our <Link href="/frisco" className="text-white hover:text-soft-gold underline transition-colors">Frisco</Link> or <Link href="/lewisville" className="text-white hover:text-soft-gold underline transition-colors">Lewisville</Link> location. Check our <Link href="/events" className="text-white hover:text-soft-gold underline transition-colors">events page</Link> for upcoming class dates.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
@@ -427,9 +443,9 @@ export default function SushiCookingClasses() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/10 text-soft-gold">🍣 Cuisine</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
-                                        <Link href="/blog?category=cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">👨‍🎓 Learning</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/10 text-soft-gold">🍣 Cuisine</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
+                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">👨‍🎓 Learning</Link>
                                     </div>
                                 </div>
                             </div>

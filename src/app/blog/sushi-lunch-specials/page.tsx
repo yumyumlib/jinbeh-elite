@@ -20,6 +20,9 @@ export const metadata: Metadata = {
             "Find the best sushi lunch specials with affordable pricing and variety. Discover deals at your favorite sushi restaurants.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/sushi-lunch-specials",
+  },
 };
 
 const articleSchema = {
@@ -51,9 +54,22 @@ const faqSchema = {
     mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Sushi Lunch Specials: Best Deals Near You" },
+  ],
+};
+
 export default function SushiLunchSpecials() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -80,7 +96,7 @@ export default function SushiLunchSpecials() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=best-of" className="hover:text-white">Deals</Link>
+                        <Link href="/blog/category/best-of" className="hover:text-white">Deals</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -363,13 +379,13 @@ export default function SushiLunchSpecials() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link
-                                            href="/locations/frisco"
+                                            href="/frisco"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Visit Frisco Location
                                         </Link>
                                         <Link
-                                            href="/locations/lewisville"
+                                            href="/lewisville"
                                             className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
                                         >
                                             Visit Lewisville Location

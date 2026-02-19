@@ -68,6 +68,16 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Birthday Parties" },
+  ],
+};
+
 const birthdayFeatures = [
   {
     icon: (
@@ -112,11 +122,22 @@ export default function BirthdayPage() {
     <>
       <Header />
       <main className="min-h-screen">
-        {/* Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+        {/* Breadcrumb */}
+        <nav className="bg-white border-b border-warm-ivory">
+          <div className="container mx-auto px-6 py-3">
+            <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+              <li><Link href="/" className="hover:text-accent-red">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/celebrations" className="hover:text-accent-red">Celebrations</Link></li>
+              <li>/</li>
+              <li className="text-charcoal font-medium">Birthday Parties</li>
+            </ol>
+          </div>
+        </nav>
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -242,7 +263,7 @@ export default function BirthdayPage() {
           </div>
         </section>
 
-        {/* Menu Preview */}
+        {/* Birthday Dinner Options */}
         <section className="py-20 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
@@ -254,12 +275,12 @@ export default function BirthdayPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center">
                 <div className="text-5xl mb-4">🔥</div>
                 <h3 className="font-heading text-xl font-semibold mb-3">Hibachi Dinners</h3>
                 <p className="text-warm-ivory/70 text-sm">
-                  Filet mignon, chicken, shrimp, lobster, or combinations – cooked tableside with a show.
+                  Filet mignon, chicken, shrimp, lobster, or combinations – cooked tableside with a show. Includes soup, salad, rice &amp; veggies.
                 </p>
               </div>
 
@@ -267,7 +288,7 @@ export default function BirthdayPage() {
                 <div className="text-5xl mb-4">🍣</div>
                 <h3 className="font-heading text-xl font-semibold mb-3">Sushi & Rolls</h3>
                 <p className="text-warm-ivory/70 text-sm">
-                  Fresh sushi, creative specialty rolls, and traditional favorites for sushi lovers.
+                  Fresh sushi, creative specialty rolls, and traditional favorites – perfect for sharing with the group.
                 </p>
               </div>
 
@@ -275,14 +296,14 @@ export default function BirthdayPage() {
                 <div className="text-5xl mb-4">🧒</div>
                 <h3 className="font-heading text-xl font-semibold mb-3">Kids Menu</h3>
                 <p className="text-warm-ivory/70 text-sm">
-                  Kid-friendly hibachi options and favorites for the younger birthday guests.
+                  Kid-friendly hibachi options and favorites for the younger birthday guests. Chef show included!
                 </p>
               </div>
             </div>
 
             <div className="text-center mt-12">
               <Link
-                href="/frisco/menu"
+                href="/menu"
                 className="inline-flex items-center gap-2 text-soft-gold hover:text-white transition-colors font-medium"
               >
                 View Full Menu
@@ -306,13 +327,13 @@ export default function BirthdayPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve at Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve at Lewisville
@@ -325,6 +346,31 @@ export default function BirthdayPage() {
           </div>
         </section>
 
+        {/* Related Blog Articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
+              Helpful Birthday Planning Reads
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/hibachi-birthday-party-ideas" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Planning Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Hibachi Birthday Party Ideas That Wow Every Guest
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Tips for themes, group seating, and making your hibachi birthday unforgettable.</p>
+              </Link>
+              <Link href="/blog/free-birthday-food-deals" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Birthday Deals</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Free Birthday Food Deals in DFW
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Where to score free birthday food across Dallas-Fort Worth, including Jinbeh specials.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Other Celebrations */}
         <section className="py-16 bg-warm-ivory">
           <div className="container mx-auto px-6 text-center">
@@ -334,19 +380,25 @@ export default function BirthdayPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/celebrations/anniversary"
-                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md"
+                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md font-medium"
               >
                 Anniversary Dinners
               </Link>
               <Link
-                href="/celebrations/groups"
-                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md"
+                href="/celebrations/corporate-events"
+                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md font-medium"
               >
-                Group Events
+                Corporate Events
+              </Link>
+              <Link
+                href="/celebrations/graduation"
+                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md font-medium"
+              >
+                Graduation Dinners
               </Link>
               <Link
                 href="/catering"
-                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md"
+                className="px-6 py-3 bg-white rounded-full text-charcoal hover:bg-deep-indigo hover:text-white transition-all shadow-md font-medium"
               >
                 Catering Services
               </Link>

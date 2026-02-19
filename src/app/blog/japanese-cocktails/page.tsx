@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Master the art of Japanese cocktails. Learn recipes, techniques, and traditions from expert mixologists.",
         images: ["/images/beverages/JinbehPunch.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/japanese-cocktails",
+  },
 };
 
 const schemas = [
@@ -25,16 +28,29 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+    { "@type": "ListItem", "position": 4, "name": "Japanese Cocktails: Classic & Creative Recipes" },
+  ],
+};
+
 export default function JapaneseCocktails() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/JinbehPunch.jpg" alt="Japanese cocktails with artistic presentation" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍹 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Cocktails: Art, Recipes & Mixology</h1>
@@ -69,7 +85,7 @@ export default function JapaneseCocktails() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎨 The Philosophy of Japanese Mixology</h2>
-                            <p className="text-charcoal/80 mb-6">Japanese mixology is often described as a blend of science and art. Mixologists in Japan focus on the harmony of flavors, the aesthetics of the drink, and the overall experience of the consumer. This philosophy is evident in every step of the cocktail-making process, from ingredient selection to the final presentation.</p>
+                            <p className="text-charcoal/80 mb-6">Japanese mixology is often described as a blend of science and art. Mixologists in Japan focus on the harmony of flavors, the aesthetics of the drink, and the overall experience of the consumer. This philosophy is evident in every step of the cocktail-making process, from ingredient selection to the final presentation. At Jinbeh, our <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar program</Link> embraces these principles with every pour.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥄 Signature Techniques</h2>
                             <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -185,7 +201,7 @@ export default function JapaneseCocktails() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Visit Jinbeh in both <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco</Link> and <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link> for expertly crafted Japanese cocktails. Our mixologists are trained in traditional Japanese techniques and use premium spirits. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224. Check our <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> for special pricing!</p>
+                                        <p>Visit Jinbeh in both <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco</Link> and <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville</Link> for expertly crafted Japanese cocktails. Our mixologists are trained in traditional Japanese techniques and use premium spirits. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224. Check our <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> for special pricing!</p>
                                     </div>
                                 </details>
 
@@ -212,7 +228,7 @@ export default function JapaneseCocktails() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍹 Experience Japanese Cocktails at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover the art and flavor of authentic Japanese cocktails crafted by our skilled mixologists using premium spirits and traditional techniques. Whether you're at our Frisco or Lewisville location, experience cocktails prepared with the precision and care of a gracious host.</p>
+                                <p className="mb-6 text-white/90">Discover the art and flavor of authentic Japanese cocktails crafted by our skilled mixologists using premium spirits and traditional techniques. Explore our full <Link href="/bar" className="text-white hover:underline underline">bar menu</Link> featuring curated sake, Japanese whisky, and signature cocktails at Frisco or Lewisville.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/frisco/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
                                     <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>

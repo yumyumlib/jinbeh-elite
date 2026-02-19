@@ -33,7 +33,7 @@ const localBusinessSchema = {
   "@type": "Restaurant",
   "@id": "https://jinbeh.com/lewisville#restaurant",
   name: "Jinbeh Japanese Restaurant - Lewisville (Near Castle Hills)",
-  image: "https://jinbeh.com/images/lewisville-exterior.jpg",
+  image: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "2440 S Stemmons Fwy #A",
@@ -160,7 +160,7 @@ export default function CastleHillsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Your Table
@@ -364,7 +364,7 @@ export default function CastleHillsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Make a Reservation

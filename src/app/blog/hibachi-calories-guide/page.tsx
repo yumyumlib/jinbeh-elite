@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Complete nutritional breakdown of Jinbeh hibachi dishes. Learn calorie counts and make informed dining choices that fit your health goals.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-calories-guide",
+  },
 };
 
 const faqs = [
@@ -64,6 +67,8 @@ const cta = {
   lewisvillePhone: "(214) 488-2224",
 };
 
+
+
 export default function HibachiCaloriesGuidePage() {
   return (
     <ArticleLayout
@@ -73,9 +78,11 @@ export default function HibachiCaloriesGuidePage() {
       heroAlt="Hibachi chef preparing fresh salmon and vegetables with minimal oil"
       category="Nutrition & Guides"
       categorySlug="guides"
+      slug="hibachi-calories-guide"
       publishDate="January 2026"
       readTime="10 min read"
       faqs={faqs}
+      keyTakeaway="Hibachi protein calories range from 150 cal (shrimp) to 450 cal (steak). Swap fried rice for steamed rice to save ~200 calories, load up on vegetables (50–70 cal), and request sauces on the side. A lean hibachi meal can total just 350–400 calories."
     >
       {/* Article Body */}
       <p>
@@ -87,7 +94,7 @@ export default function HibachiCaloriesGuidePage() {
       </p>
 
       <p>
-        This guide breaks down the calories and nutritional content of popular Jinbeh hibachi dishes, explains the health benefits of different proteins and sides, and provides practical strategies for enjoying hibachi while meeting your dietary goals.
+        This guide breaks down the calories and nutritional content of popular Jinbeh hibachi dishes, explains the health benefits of different proteins and sides, and provides practical strategies for enjoying <Link href="/blog/hibachi-dining-experience" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">the hibachi dining experience</Link> while meeting your dietary goals.
       </p>
 
       <h2>Why Hibachi Cooking Can Be Healthy</h2>
@@ -483,11 +490,11 @@ export default function HibachiCaloriesGuidePage() {
         <Link href="/menu" className="text-accent-red hover:underline font-medium">
           Jinbeh's exceptional Japanese cuisine
         </Link>{" "}
-        while staying aligned with your health objectives. Explore our <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville location</Link> to dine with us.
+        while staying aligned with your health objectives. Explore our <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> or <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville location</Link> to dine with us.
       </p>
 
       <p>
-        The key is balance, moderation, and making informed choices. Every visit to Jinbeh can be both delicious and nutritionally responsible. Enjoy your meal!
+        The key is balance, moderation, and making informed choices. Every visit to Jinbeh can be both delicious and nutritionally responsible. Need <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi lunch ideas</Link>? Browse our <Link href="/lunch-specials" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">lunch specials</Link> for affordable healthy options. Ready to try? <Link href="/reservations" className="text-accent-red hover:underline font-medium">Make a reservation</Link> and enjoy your meal!
       </p>
     </ArticleLayout>
   );

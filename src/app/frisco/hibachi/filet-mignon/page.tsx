@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Filet Mignon Hibachi | Best Teppanyaki Steak Frisco TX",
   description: "Premium filet mignon seared on our teppan grill. 200 cal, 25g protein. Hibachi dinner includes soup, salad, fried rice. Reserve at Jinbeh Frisco.",
-  keywords: ["filet mignon hibachi frisco","best hibachi frisco tx","hibachi near me frisco","teppanyaki restaurant frisco","hibachi filet mignon calories","japanese steakhouse frisco","hibachi steak dinner","beef tenderloin hibachi"],
+  keywords: ["filet mignon hibachi frisco", "best hibachi frisco tx", "hibachi near me frisco", "teppanyaki restaurant frisco", "hibachi filet mignon calories", "japanese steakhouse frisco", "hibachi steak dinner", "beef tenderloin hibachi"],
   openGraph: {
     title: "Filet Mignon | Jinbeh Frisco",
     description: "Premium beef tenderloin, perfectly seared on the teppan grill",
@@ -27,6 +27,12 @@ const menuItemSchema = {
     "price": "34.95",
     "priceCurrency": "USD"
   },
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "200-300 calories",
+    "proteinContent": "25-30g",
+    "fatContent": "10-15g"
+  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -36,6 +42,18 @@ const menuItemSchema = {
       "addressRegion": "TX"
     }
   }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Frisco", "item": "https://jinbeh.com/frisco" },
+    { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/frisco/menu" },
+    { "@type": "ListItem", "position": 4, "name": "Hibachi", "item": "https://jinbeh.com/frisco/hibachi" },
+    { "@type": "ListItem", "position": 5, "name": "Filet Mignon" },
+  ],
 };
 
 const faqSchema = {
@@ -105,6 +123,10 @@ export default function FiletMignonFriscoPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
         {/* Breadcrumb */}
@@ -215,7 +237,7 @@ export default function FiletMignonFriscoPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    href="/frisco#reserve"
+                    href="/reservations"
                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-3 font-semibold rounded-xl"
                   >
                     Reserve a Table
@@ -361,6 +383,62 @@ export default function FiletMignonFriscoPage() {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Category Suggestions */}
+        <section className="py-12 bg-soft-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-heading font-bold text-charcoal mb-2 text-center">
+                Complete Your Meal
+              </h2>
+              <p className="text-charcoal/70 text-center mb-8">
+                Pair your hibachi with fresh sushi from our sushi bar
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <Link
+                  href="/frisco/sushi-rolls/dragon-roll"
+                  className="block p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
+                >
+                  <span className="text-xs text-deep-indigo font-medium uppercase tracking-wider">Sushi</span>
+                  <h3 className="font-medium text-charcoal mt-1">Dragon Roll</h3>
+                  <p className="text-sm text-accent-red font-bold mt-1">$16.95</p>
+                </Link>
+                <Link
+                  href="/frisco/sushi-rolls/rainbow-roll"
+                  className="block p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
+                >
+                  <span className="text-xs text-deep-indigo font-medium uppercase tracking-wider">Sushi</span>
+                  <h3 className="font-medium text-charcoal mt-1">Rainbow Roll</h3>
+                  <p className="text-sm text-accent-red font-bold mt-1">$17.95</p>
+                </Link>
+                <Link
+                  href="/frisco/sushi-rolls/spicy-tuna-roll"
+                  className="block p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
+                >
+                  <span className="text-xs text-deep-indigo font-medium uppercase tracking-wider">Sushi</span>
+                  <h3 className="font-medium text-charcoal mt-1">Spicy Tuna Roll</h3>
+                  <p className="text-sm text-accent-red font-bold mt-1">$14.95</p>
+                </Link>
+                <Link
+                  href="/frisco/sushi-rolls/volcano-roll"
+                  className="block p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
+                >
+                  <span className="text-xs text-deep-indigo font-medium uppercase tracking-wider">Sushi</span>
+                  <h3 className="font-medium text-charcoal mt-1">Volcano Roll</h3>
+                  <p className="text-sm text-accent-red font-bold mt-1">$16.95</p>
+                </Link>
+              </div>
+              <div className="mt-6 text-center">
+                <Link
+                  href="/frisco/sushi-rolls"
+                  className="text-deep-indigo hover:text-accent-red font-medium"
+                >
+                  View All Sushi Rolls →
+                </Link>
+              </div>
             </div>
           </div>
         </section>

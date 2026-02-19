@@ -43,7 +43,7 @@ export default function NotFound() {
                         Back to Home
                     </Link>
                     <Link
-                        href="/frisco#reserve"
+                        href="/reservations"
                         className="btn bg-charcoal text-white hover:bg-charcoal-light px-8 py-3 text-lg font-semibold rounded-xl transition-colors"
                     >
                         Make a Reservation

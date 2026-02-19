@@ -10,7 +10,10 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sashimi vs Sushi: Key Differences Explained",
         description: "Discover the difference between sashimi and sushi. Learn what they are, when to order each, and how Jinbeh serves both.",
-    }
+    },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/sashimi-vs-sushi",
+  },
 };
 
 const faqs = [
@@ -40,9 +43,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Sashimi vs Sushi: What's the Difference?" },
+  ],
+};
+
 export default function SashimiVsSushi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => (
                 <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
             ))}
@@ -63,7 +79,7 @@ export default function SashimiVsSushi() {
                         <span>/</span>
                         <Link href="/blog">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=cuisine">Sushi Guide</Link>
+                        <Link href="/blog/category/cuisine">Sushi Guide</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">
                         🍣 Sushi Guide
@@ -264,7 +280,7 @@ export default function SashimiVsSushi() {
                                 🏮 How Jinbeh Serves Both
                             </h2>
                             <p className="text-charcoal/80 mb-6">
-                                At Jinbeh Japanese Restaurant in our <Link href="/locations/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> and <Link href="/locations/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>, we specialize in authentic Japanese dining including both premium sashimi and expertly crafted sushi. Our commitment to quality is reflected in every dish.
+                                At Jinbeh Japanese Restaurant in our <Link href="/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> and <Link href="/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>, we specialize in authentic Japanese dining including both premium sashimi and expertly crafted sushi. Our commitment to quality is reflected in every dish.
                             </p>
 
                             {/* Sashimi at Jinbeh */}

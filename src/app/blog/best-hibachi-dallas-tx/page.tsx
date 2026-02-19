@@ -19,6 +19,9 @@ export const metadata: Metadata = {
         description: "Your guide to the best hibachi restaurants in Dallas-Fort Worth.",
         images: ["/images/blog/4-C060324-6380.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/best-hibachi-dallas-tx",
+  },
 };
 
 const articleSchema = {
@@ -80,9 +83,22 @@ const faqSchema = {
     })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+    { "@type": "ListItem", "position": 4, "name": "Best Hibachi Dallas TX: Top Japanese Steakhouses" },
+  ],
+};
+
 export default function BestHibachiDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -103,7 +119,7 @@ export default function BestHibachiDallas() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=local-guides" className="hover:text-white">Locations</Link>
+                        <Link href="/blog/category/local-guides" className="hover:text-white">Locations</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -310,10 +326,10 @@ export default function BestHibachiDallas() {
                                         Skip the chains. Experience authentic hibachi at Jinbeh—where family tradition meets unforgettable entertainment.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/frisco#reserve" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
+                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
                                             Reserve at Frisco
                                         </Link>
-                                        <Link href="/lewisville#reserve" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
+                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
                                             Reserve at Lewisville
                                         </Link>
                                     </div>

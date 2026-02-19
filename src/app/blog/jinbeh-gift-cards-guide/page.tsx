@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Your complete guide to getting the most from your Jinbeh gift card. Discover promotions, birthday club benefits, and smart dining strategies.",
     images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
   },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/jinbeh-gift-cards-guide",
+  },
 };
 
 const faqs = [
@@ -47,6 +50,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function JinbehGiftCardsGuidePage() {
   return (
     <ArticleLayout
@@ -56,6 +61,7 @@ export default function JinbehGiftCardsGuidePage() {
       heroAlt="Jinbeh hibachi celebration with chef entertaining guests at table"
       category="Deals & Promos"
       categorySlug="deals"
+      slug="jinbeh-gift-cards-guide"
       publishDate="January 2026"
       readTime="8 min read"
       faqs={faqs}
@@ -212,7 +218,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Lunch Specials</h3>
 
       <p>
-        One of the best-kept secrets for maximizing gift card value is hibachi lunch specials. Jinbeh's lunch menu offers exceptional value. Check out our detailed guide to <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline font-semibold">sushi lunch specials</Link> for all the best timing and options.
+        One of the best-kept secrets for maximizing gift card value is hibachi lunch specials. Jinbeh's <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch menu</Link> offers exceptional value. Check out our detailed guide to <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline font-semibold">sushi lunch specials</Link> for all the best timing and options.
       </p>
 
       <p>
@@ -234,7 +240,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Happy Hour Deals</h3>
 
       <p>
-        If you enjoy beverages with your meal, Jinbeh's <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline font-semibold">happy hour</Link> specials offer great drink deals. Your gift card covers food, and happy hour prices apply to beverages, stretching your value even further.
+        If you enjoy beverages with your meal, Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> specials offer great drink deals. Your gift card covers food, and happy hour prices apply to beverages, stretching your value even further. Read our <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline font-semibold">happy hour guide</Link> for full details.
       </p>
 
       <h3>Seasonal & Holiday Promotions</h3>
@@ -318,7 +324,7 @@ export default function JinbehGiftCardsGuidePage() {
           <strong>Chef Specials:</strong> Rotating creative dishes
         </li>
         <li>
-          <strong>Beverages:</strong> Japanese beer, sake, and specialty drinks
+          <strong>Beverages:</strong> Japanese beer, sake, and specialty drinks at our <Link href="/bar" className="text-accent-red hover:underline">bar</Link>
         </li>
       </ul>
 
@@ -479,6 +485,15 @@ export default function JinbehGiftCardsGuidePage() {
       <p>
         Your Jinbeh gift card awaits. Whether you're treating yourself or receiving one as a gift, prepare for authentic Japanese cuisine, skilled chef performances, and memories you'll treasure. We can't wait to see you!
       </p>
-    </ArticleLayout>
+    
+        {/* Related Reading */}
+        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+          <div className="flex flex-col gap-2">
+              <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline font-medium">Best Sushi in Frisco</Link>
+              <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline font-medium">Hibachi Birthday Party Ideas</Link>
+          </div>
+        </div>
+      </ArticleLayout>
   );
 }

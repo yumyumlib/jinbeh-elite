@@ -110,6 +110,16 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Celebrations", "item": "https://jinbeh.com/celebrations" },
+    { "@type": "ListItem", "position": 3, "name": "Graduation Parties" },
+  ],
+};
+
 const graduationFeatures = [
   {
     icon: (
@@ -241,10 +251,21 @@ export default function GraduationPage() {
       <Header />
       <main className="min-h-screen">
         {/* Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+        {/* Breadcrumb */}
+        <nav className="bg-white border-b border-warm-ivory">
+          <div className="container mx-auto px-6 py-3">
+            <ol className="flex items-center gap-2 text-sm text-charcoal/60">
+              <li><Link href="/" className="hover:text-accent-red">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/celebrations" className="hover:text-accent-red">Celebrations</Link></li>
+              <li>/</li>
+              <li className="text-charcoal font-medium">Graduation</li>
+            </ol>
+          </div>
+        </nav>
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -333,11 +354,10 @@ export default function GraduationPage() {
               {packages.map((pkg) => (
                 <div
                   key={pkg.name}
-                  className={`rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ${
-                    pkg.highlight
+                  className={`rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ${pkg.highlight
                       ? "ring-2 ring-accent-red scale-105 md:scale-100 bg-gradient-to-br from-white to-warm-ivory"
                       : "bg-white"
-                  }`}
+                    }`}
                 >
                   {pkg.highlight && (
                     <div className="bg-accent-red text-white py-3 px-6 text-center font-semibold">
@@ -365,11 +385,10 @@ export default function GraduationPage() {
 
                     <Link
                       href={pkg.name === "Full Celebration" ? "#reserve" : "#reserve"}
-                      className={`w-full py-3 rounded-lg font-semibold text-center transition-all inline-block ${
-                        pkg.highlight
+                      className={`w-full py-3 rounded-lg font-semibold text-center transition-all inline-block ${pkg.highlight
                           ? "bg-accent-red text-white hover:bg-accent-red/90"
                           : "bg-warm-ivory text-charcoal hover:bg-accent-red/10"
-                      }`}
+                        }`}
                     >
                       {pkg.name === "Full Celebration" ? "Contact for Pricing" : "Book This Package"}
                     </Link>
@@ -558,7 +577,7 @@ export default function GraduationPage() {
 
             <div className="text-center">
               <Link
-                href="/frisco/menu"
+                href="/menu"
                 className="inline-flex items-center gap-2 text-soft-gold hover:text-white transition-colors font-medium"
               >
                 View Complete Menu
@@ -659,6 +678,32 @@ export default function GraduationPage() {
         </section>
 
         {/* Reserve Section */}
+        
+        {/* Related Blog Articles */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
+              Graduation Celebration Ideas
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/group-dining-venues" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Venues</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Best Group Dining Venues in DFW
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Find the perfect spot for your graduation dinner with family and friends.</p>
+              </Link>
+              <Link href="/blog/jinbeh-catering-services" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Catering</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
+                  Jinbeh Catering for Graduation Parties
+                </h3>
+                <p className="text-sm text-charcoal/70 mt-2">Celebrate the big achievement with Japanese cuisine your whole party will love.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section id="reserve" className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
@@ -673,13 +718,13 @@ export default function GraduationPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve at Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve at Lewisville

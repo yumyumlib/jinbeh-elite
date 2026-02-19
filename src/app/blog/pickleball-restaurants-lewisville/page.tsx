@@ -75,6 +75,8 @@ const faqs = [
   },
 ];
 
+
+
 export default function PickleballRestaurantsLewisvillePage() {
   const slug = "pickleball-restaurants-lewisville";
   return (
@@ -85,6 +87,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       heroAlt="Jinbeh hibachi chef creating flames at the grill table - the best restaurant near pickleball courts in Lewisville TX"
       category="Local Guide"
       categorySlug="local"
+      slug="pickleball-restaurants-lewisville"
       publishDate="January 2026"
       readTime="5 min read"
       faqs={faqs}
@@ -246,7 +249,7 @@ export default function PickleballRestaurantsLewisvillePage() {
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
-            href="/locations/lewisville"
+            href="/lewisville"
             className="inline-flex items-center gap-2 bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors"
           >
             Visit Jinbeh Lewisville
@@ -261,6 +264,15 @@ export default function PickleballRestaurantsLewisvillePage() {
       </div>
 
       <RelatedArticles currentSlug={slug} />
-    </ArticleLayout>
+    
+        {/* Related Reading */}
+        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+          <div className="flex flex-col gap-2">
+              <Link href="/blog/japanese-restaurants-lewisville" className="text-accent-red hover:underline font-medium">Japanese Restaurants in Lewisville</Link>
+              <Link href="/blog/seafood-lewisville" className="text-accent-red hover:underline font-medium">Best Seafood in Lewisville</Link>
+          </div>
+        </div>
+      </ArticleLayout>
   );
 }

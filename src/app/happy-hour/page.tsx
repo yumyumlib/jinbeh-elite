@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { HeroSection, RevealSection, AnimatedGradientText } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -117,12 +119,13 @@ export default function HappyHourPage() {
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
               Unwind After Work
             </p>
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              Happy Hour
-            </h1>
+            <RevealSection delay={100}>
+              <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
+                <AnimatedGradientText className="text-4xl md:text-5xl font-heading font-bold">Happy Hour</AnimatedGradientText>
+              </h1>
+            </RevealSection>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
-              Great drinks. Great company. Great prices.
-              Join us at the bar for Japanese-inspired cocktails and specials.
+              Searching for the best happy hour DFW has to offer? Join us at the <Link href="/bar" className="text-soft-gold hover:underline">bar</Link> for <Link href="/blog/japanese-cocktails" className="text-soft-gold hover:underline">Japanese-inspired cocktails</Link>, sake happy hour specials, and more.
             </p>
             <div className="inline-block bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-8 py-4">
               <p className="text-lg font-medium">
@@ -140,7 +143,7 @@ export default function HappyHourPage() {
                 Happy Hour Favorites
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                From premium sake to signature cocktails, we&apos;ve got your after-work relaxation covered.
+                Our Japanese restaurant happy hour features everything from <Link href="/blog/types-of-sake-explained" className="text-accent-red hover:underline font-medium">premium sake</Link> to signature cocktails — the perfect sushi happy hour near me. New to sake? Read our <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-medium">sake pairing guide</Link> to find your perfect match.
               </p>
             </div>
 
@@ -202,7 +205,7 @@ export default function HappyHourPage() {
                     Frisco Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Near Stonebriar Centre – perfect for after-work drinks or pre-dinner cocktails.
+                    Happy hour Frisco — near Stonebriar Centre, perfect for after-work drinks, happy hour specials Frisco TX, or pre-dinner cocktails.
                   </p>
                   <div className="bg-white rounded-xl p-4 mb-6">
                     <p className="font-medium text-cedar-brown">Address</p>
@@ -235,7 +238,7 @@ export default function HappyHourPage() {
                     Lewisville Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Easy access from I-35E – stop by on your way home for a relaxing evening.
+                    Happy hour Lewisville — easy access from I-35E, stop by for a relaxing happy hour near me on your way home.
                   </p>
                   <div className="bg-white rounded-xl p-4 mb-6">
                     <p className="font-medium text-cedar-brown">Address</p>
@@ -266,9 +269,9 @@ export default function HappyHourPage() {
                 </h2>
                 <p className="text-warm-ivory/80 mb-6 leading-relaxed">
                   Whether you&apos;re unwinding after a long day, catching up with friends,
-                  or enjoying a date night, our bar offers the perfect ambiance.
+                  or enjoying a <Link href="/blog/date-night-restaurants-frisco" className="text-soft-gold hover:underline">date night</Link>, our bar offers the perfect ambiance.
                   Watch our skilled sushi chefs at work while sipping on premium sake
-                  or a creative cocktail.
+                  or a creative cocktail. Explore our full <Link href="/blog/japanese-beverages-guide" className="text-soft-gold hover:underline">Japanese drinks guide</Link> to learn more about what we serve.
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3">
@@ -313,6 +316,15 @@ export default function HappyHourPage() {
           </div>
         </section>
 
+        {/* Related Blog Articles */}
+        <RelatedBlogPosts
+          slugs={["best-happy-hour-frisco-tx", "sake-sushi-menu-pairings", "japanese-cocktails"]}
+          title="Happy Hour Reads"
+          subtitle="Discover more about our drinks, cocktails, and the best after-work spots in DFW."
+          layout="grid"
+          bgColor="ivory"
+        />
+
         {/* CTA */}
         <section className="py-20 bg-gradient-to-br from-deep-indigo to-accent-red text-white">
           <div className="container mx-auto px-6 text-center">
@@ -321,7 +333,7 @@ export default function HappyHourPage() {
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
               No reservation needed – just stop by and grab a seat.
-              Cheers to great drinks and good company!
+              Cheers to great drinks and good company! Check out our current <Link href="/specials" className="text-soft-gold hover:underline">specials</Link> and browse the full <Link href="/menu" className="text-soft-gold hover:underline">menu</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

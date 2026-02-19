@@ -57,8 +57,12 @@ export function BentoCard({
     >
       {/* Background */}
       {background && (
-        <div className="pointer-events-none absolute inset-0 opacity-50 transition-opacity duration-300 group-hover:opacity-70">
-          {background}
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute inset-0 opacity-30 transition-opacity duration-300 group-hover:opacity-50">
+            {background}
+          </div>
+          {/* White gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
         </div>
       )}
 

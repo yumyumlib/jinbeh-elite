@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
+import MenuClient from "./MenuClient";
 
 export const metadata: Metadata = {
     title: "Menu | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -16,135 +17,7 @@ export default function MenuPage() {
         <>
             <Header />
             <main id="main-content" className="min-h-screen bg-warm-ivory">
-                {/* Hero */}
-                <section className="py-20 bg-gradient-to-br from-charcoal to-deep-indigo text-white">
-                    <div className="container mx-auto px-6 text-center">
-                        <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4">
-                            Our Menu
-                        </h1>
-                        <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                            Authentic Japanese cuisine crafted with fresh ingredients and decades of tradition.
-                        </p>
-                    </div>
-                </section>
-
-                {/* Menu Selection */}
-                <section className="py-20">
-                    <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-heading font-bold text-charcoal text-center mb-4">
-                                Select a Location
-                            </h2>
-                            <p className="text-center text-charcoal/70 mb-12">
-                                Each location offers our full menu with slight variations. Choose your location to view the complete menu.
-                            </p>
-
-                            <div className="grid md:grid-cols-2 gap-8">
-                                {/* Frisco */}
-                                <Link
-                                    href="/frisco/menu"
-                                    className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all hover:-translate-y-1"
-                                >
-                                    <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-16 h-16 bg-gradient-to-br from-accent-red to-cedar-brown rounded-2xl flex items-center justify-center">
-                                            <span className="text-3xl">🏯</span>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-2xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors">
-                                                Frisco
-                                            </h3>
-                                            <p className="text-charcoal/80">Near Stonebriar Centre</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="space-y-2 text-charcoal/70 mb-6">
-                                        <p>🍱 Full Hibachi Menu</p>
-                                        <p>🍣 Fresh Sushi & Rolls</p>
-                                        <p>🍶 Sake & Cocktails</p>
-                                    </div>
-
-                                    <span className="inline-flex items-center gap-2 text-accent-red font-semibold group-hover:gap-4 transition-all">
-                                        View Frisco Menu
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                        </svg>
-                                    </span>
-                                </Link>
-
-                                {/* Lewisville */}
-                                <Link
-                                    href="/lewisville/menu"
-                                    className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all hover:-translate-y-1"
-                                >
-                                    <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-16 h-16 bg-gradient-to-br from-deep-indigo to-charcoal rounded-2xl flex items-center justify-center">
-                                            <span className="text-3xl">🍣</span>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-2xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors">
-                                                Lewisville
-                                            </h3>
-                                            <p className="text-charcoal/80">Off I-35E</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="space-y-2 text-charcoal/70 mb-6">
-                                        <p>🍱 Full Hibachi Menu</p>
-                                        <p>🍣 Fresh Sushi & Rolls</p>
-                                        <p>🍶 Sake & Cocktails</p>
-                                    </div>
-
-                                    <span className="inline-flex items-center gap-2 text-accent-red font-semibold group-hover:gap-4 transition-all">
-                                        View Lewisville Menu
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                        </svg>
-                                    </span>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Menu Highlights */}
-                <section className="py-16 bg-white">
-                    <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-heading font-bold text-charcoal text-center mb-12">
-                            Menu Highlights
-                        </h2>
-                        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                            {[
-                                {
-                                    title: "Hibachi Entrees",
-                                    items: ["Filet Mignon", "Salmon Teriyaki", "Chicken & Shrimp Combo"],
-                                    icon: "🔥"
-                                },
-                                {
-                                    title: "Sushi Favorites",
-                                    items: ["Dragon Roll", "Rainbow Roll", "Omakase Selection"],
-                                    icon: "🍣"
-                                },
-                                {
-                                    title: "Specialty Drinks",
-                                    items: ["Premium Sake", "Japanese Whisky", "Signature Cocktails"],
-                                    icon: "🍶"
-                                },
-                            ].map((category) => (
-                                <div key={category.title} className="text-center p-6 bg-warm-ivory rounded-xl">
-                                    <span className="text-4xl block mb-4">{category.icon}</span>
-                                    <h3 className="font-heading font-semibold text-xl text-charcoal mb-4">
-                                        {category.title}
-                                    </h3>
-                                    <ul className="space-y-2 text-charcoal/70">
-                                        {category.items.map((item) => (
-                                            <li key={item}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                <MenuClient />
 
                 {/* CTA */}
                 <section className="py-16 bg-charcoal text-white">
@@ -153,7 +26,7 @@ export default function MenuPage() {
                             Ready to Dine?
                         </h2>
                         <p className="text-white/80 mb-8">
-                            Make a reservation and experience the Jinbeh difference.
+                            Browse the Jinbeh menu — our hibachi menu, sushi menu Frisco platters, and Japanese restaurant menu Lewisville selections await. Explore our <Link href="/blog/types-of-sushi" className="text-soft-gold hover:underline">guide to sushi varieties</Link> or discover the perfect <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing</Link> for your meal.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <OpenTableWidget

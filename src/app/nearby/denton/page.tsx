@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Jinbeh Hibachi Restaurant Near Denton",
-  image: "https://jinbeh.com/images/frisco-interior.jpg",
+  image: "https://jinbeh.com/images/interior/JinbehFrisco_SushiBar.jpg",
   description: "Authentic hibachi teppanyaki restaurant serving Denton residents. Located in Lewisville and Frisco, just minutes away with exciting tableside shows.",
   address: {
     "@type": "PostalAddress",

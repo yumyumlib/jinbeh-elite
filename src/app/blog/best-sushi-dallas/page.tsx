@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems | Jinbeh",
     description: "Find the best sushi in Dallas TX! From authentic omakase to creative rolls. Discover top spots including Jinbeh's fresh sushi near Frisco and Lewisville.",
     keywords: ["best sushi dallas", "sushi dallas tx", "japanese restaurant dallas", "sushi near me dallas"],
+    openGraph: {
+        title: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems",
+        description: "Discover the best sushi restaurants in Dallas TX with our comprehensive guide to fresh rolls, omakase experiences, and hidden gems across DFW.",
+        url: "https://jinbeh.com/blog/best-sushi-dallas",
+        type: "article",
+        images: ["/images/catalog/FB-LEW-Sashimi-Platter-Salmon-Tuna-Yellowtail.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-sushi-dallas",
+    },
 };
 
 const schemas = [
@@ -18,9 +28,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 4, "name": "Best Sushi Dallas TX: Top Restaurants & Hidden Gems" },
+    ],
+};
+
 export default function BestSushiDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -28,7 +51,7 @@ export default function BestSushiDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Sushi Dallas TX</h1>
@@ -39,7 +62,7 @@ export default function BestSushiDallas() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Dallas has incredible sushi.</strong> From upscale omakase experiences downtown to family-friendly spots in the suburbs, here's where to find the freshest fish in DFW.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Dallas has incredible sushi.</strong> From upscale omakase experiences downtown to family-friendly spots in the suburbs, here's where to find the freshest fish in DFW. Not sure which roll to try? Start with our guide to <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link>.</p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"We've been serving fresh sushi in DFW since 1988. While we're in Frisco and Lewisville, our regulars drive from all over Dallas for the quality and value."</p>
@@ -97,7 +120,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Omakase means 'I'll leave it to you'—the chef chooses your courses. It's a wonderful way to experience sushi. At Jinbeh, ask about our chef's selection for a curated tasting experience.</p>
+                                        <p>Omakase means 'I'll leave it to you'—the chef chooses your courses. It's a wonderful way to experience sushi. At Jinbeh, ask about our chef's selection for a curated tasting experience. Learn more in our <Link href="/blog/omakase-dining-guide" className="text-accent-red hover:underline">omakase dining guide</Link>.</p>
                                     </div>
                                 </details>
 
@@ -124,10 +147,11 @@ export default function BestSushiDallas() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍣 Worth the Drive from Dallas</h3>
-                                <p className="text-white/80 mb-6">Fresh sushi, entertaining hibachi, family-friendly vibes—all just north of Dallas.</p>
+                                <p className="text-white/80 mb-6">Fresh sushi, entertaining hibachi, family-friendly vibes—all just north of Dallas. Browse our <Link href="/menu" className="text-white hover:underline underline">full sushi menu</Link> or read about the <Link href="/blog/best-sushi-frisco" className="text-white hover:underline underline">best sushi in Frisco</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
+                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Frisco Location</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville Location</Link>
                                 </div>
                             </div>
                         </article>

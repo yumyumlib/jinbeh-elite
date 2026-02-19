@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Best Asian Food in Dallas TX: Top Restaurants Guide | Jinbeh",
     description: "Discover top Asian food in Dallas, from fusion at Uchi to authentic dishes at Royal China. Explore vibrant Asian restaurants downtown and more.",
     keywords: ["best asian food dallas", "asian restaurants dallas", "japanese restaurant dallas", "asian cuisine dallas tx"],
+    openGraph: {
+        title: "Best Asian Food in Dallas TX",
+        description: "Looking for the best Asian food in Dallas? Our guide covers top Japanese, Chinese, Korean, and Thai restaurants across DFW.",
+        url: "https://jinbeh.com/blog/best-asian-food-dallas",
+        type: "article",
+        images: ["/images/food/garlic-lemon-shrimp.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-asian-food-dallas",
+    },
 };
 
 const faqs = [
@@ -27,9 +37,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Asian Food in Dallas TX" },
+    ],
+};
+
 export default function BestAsianFoodDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -37,7 +60,7 @@ export default function BestAsianFoodDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=local-guides">Dining</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Dining</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍜 Dining Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Asian Food in Dallas TX</h1>
@@ -56,7 +79,7 @@ export default function BestAsianFoodDallas() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Asian Fusion Restaurants</h2>
-                            <p className="text-charcoal/80 mb-4">Asian fusion has become increasingly popular in Dallas, combining traditional Asian flavors with modern techniques and ingredients. This innovative approach creates unique and exciting dishes that attract food enthusiasts from all over the city.</p>
+                            <p className="text-charcoal/80 mb-4">Asian fusion has become increasingly popular in Dallas, combining traditional Asian flavors with modern techniques and ingredients. This innovative approach creates unique and exciting dishes that attract food enthusiasts from all over the city. Looking specifically for seafood? Check our guide to the <Link href="/blog/best-seafood-dallas" className="text-accent-red hover:underline">best seafood in Dallas</Link>.</p>
 
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Experience</th></tr></thead>
@@ -72,7 +95,7 @@ export default function BestAsianFoodDallas() {
                             <p className="text-charcoal/80 mb-6">For those who prefer authentic flavors and time-honored techniques, Dallas has plenty of options that deliver genuine Asian culinary experiences. These restaurants honor traditional preparation methods while maintaining contemporary service standards.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3">Jinbeh Japanese Restaurant</h3>
-                            <p className="text-charcoal/80 mb-4">Jinbeh is a staple in the Dallas Asian dining scene, offering a variety of Japanese dishes including sushi, hibachi, and more. Their hibachi grill is a highlight, providing not only delicious food but also an entertaining dining experience. Perfect for both casual lunches and celebratory dinners.</p>
+                            <p className="text-charcoal/80 mb-4">Jinbeh is a staple in the Dallas Asian dining scene, offering a variety of Japanese dishes including sushi, hibachi, and more. Their hibachi grill is a highlight, providing not only delicious food but also an entertaining <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki dining experience</Link>. Perfect for both casual lunches and celebratory dinners. Voted among the <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link>.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Royal China</h3>
                             <p className="text-charcoal/80 mb-4">A family-owned restaurant serving authentic Chinese cuisine since 1974. Known for its handmade noodles and dumplings made fresh daily, Royal China features a wide range of traditional Chinese dishes.</p>
@@ -124,10 +147,11 @@ export default function BestAsianFoodDallas() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Asian Excellence at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Traditional Japanese cuisine, interactive hibachi cooking, and fresh sushi in a welcoming atmosphere perfect for families and celebrations.</p>
+                                <p className="text-white/80 mb-6">Traditional Japanese cuisine, interactive hibachi cooking, and fresh sushi in a welcoming atmosphere perfect for families and celebrations. Browse our <Link href="/menu" className="text-white hover:underline underline">full menu</Link> to start planning.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
+                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Frisco Location</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville Location</Link>
                                 </div>
                             </div>
                         </article>

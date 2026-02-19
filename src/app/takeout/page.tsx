@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import locations from "@/data/locations.json";
+import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
   title: "Takeout & Delivery | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -199,12 +200,14 @@ export default function TakeoutPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Three Ways to Order
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Choose the ordering method that's most convenient for you.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Three Ways to Order
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Order online, enjoy sushi takeout, or choose Japanese food delivery — whichever ordering method is most convenient for you.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -298,12 +301,14 @@ export default function TakeoutPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Popular Takeout Items
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Browse our menu favorites. Call to place a custom order!
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Popular Takeout Items
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Browse our menu favorites. Call to place a custom order!
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
@@ -354,12 +359,14 @@ export default function TakeoutPage() {
         <section className="py-20 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Why Order from Jinbeh?
-              </h2>
-              <p className="text-lg text-white/80">
-                Experience the same quality and care in every takeout order.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Why Order from Jinbeh?
+                </h2>
+                <p className="text-lg text-white/80">
+                  Experience the same quality and care in every takeout order.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -383,12 +390,14 @@ export default function TakeoutPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Tips for Better Takeout
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Get the best experience from your Jinbeh takeout order.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Tips for Better Takeout
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Get the best experience from your Jinbeh takeout order.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -453,12 +462,14 @@ export default function TakeoutPage() {
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Takeout FAQ
-              </h2>
-              <p className="text-lg text-charcoal/70">
-                Common questions about our takeout and delivery service.
-              </p>
+              <RevealSection>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Takeout FAQ
+                </h2>
+                <p className="text-lg text-charcoal/70">
+                  Common questions about our takeout and delivery service.
+                </p>
+              </RevealSection>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-6">
@@ -498,6 +509,25 @@ export default function TakeoutPage() {
                   <p className="text-charcoal/70">{item.a}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related Guides */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">Helpful Guides</h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              <Link href="/blog/beginner-sushi-tips" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Beginner Guide</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Sushi for Beginners</h3>
+                <p className="text-sm text-charcoal/70 mt-2">New to sushi? Start here — tips on what to order and how to eat it.</p>
+              </Link>
+              <Link href="/blog/how-to-eat-sushi-guide" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Etiquette</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">How to Eat Sushi</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Master sushi etiquette and enjoy your takeout like a pro.</p>
+              </Link>
             </div>
           </div>
         </section>

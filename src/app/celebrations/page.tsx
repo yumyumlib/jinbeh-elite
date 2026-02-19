@@ -98,7 +98,7 @@ const personalCelebrations = [
   {
     title: "Graduation",
     description: "Honor academic achievements with a celebration the whole family will enjoy.",
-    image: "/images/food/HibachiFriedRiceVegetables.jpg",
+    image: "/images/instagram/hibachi-steak-plate.jpg",
     href: "/celebrations/graduation",
     keywords: "graduation dinner frisco, celebration restaurant",
   },
@@ -125,7 +125,7 @@ const holidayCelebrations = [
   {
     title: "Father's Day",
     description: "Treat Dad to premium steak, hibachi entertainment, and Japanese beer.",
-    image: "/images/food/HibachiSteakMealCloseup.jpg",
+    image: "/images/photoshoot/hibachi-steak.jpg",
     href: "/celebrations/fathers-day",
     month: "June",
     color: "bg-deep-indigo/10 border-deep-indigo/30",
@@ -133,7 +133,7 @@ const holidayCelebrations = [
   {
     title: "Thanksgiving",
     description: "Skip the cooking! Gather the family for stress-free hibachi dining.",
-    image: "/images/food/HibachiFriedRiceVegetables.jpg",
+    image: "/images/instagram/hibachi-steak-plate.jpg",
     href: "/celebrations/thanksgiving",
     month: "November",
     color: "bg-orange-50 border-orange-200",
@@ -254,20 +254,20 @@ export default function CelebrationsPage() {
               Celebrate at Jinbeh
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
-              Every milestone deserves dinner and a show. From{" "}
-              <Link href="/celebrations/birthday" className="underline hover:text-soft-gold">birthday parties</Link> to{" "}
+              Your go-to celebration restaurant near me for every milestone. From{" "}
+              <Link href="/celebrations/birthday" className="underline hover:text-soft-gold">hibachi birthday party</Link> fun to{" "}
               <Link href="/celebrations/thanksgiving" className="underline hover:text-soft-gold">Thanksgiving feasts</Link>,
-              we make celebrations unforgettable.
+              we make your special occasion restaurant DFW experience unforgettable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Frisco
               </Link>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Lewisville
@@ -284,7 +284,7 @@ export default function CelebrationsPage() {
                 Holiday Celebrations
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Skip the cooking and celebrate holidays at Jinbeh. Our{" "}
+                Skip the cooking and celebrate holidays at Jinbeh — your destination for valentines day dinner Frisco, mothers day restaurant Lewisville, thanksgiving dinner Frisco, christmas dinner Lewisville, and lunar new year restaurant DFW gatherings. Our{" "}
                 <Link href="/frisco/hibachi" className="text-accent-red hover:underline">hibachi chefs</Link> and{" "}
                 <Link href="/menu" className="text-accent-red hover:underline">fresh sushi</Link> make every
                 holiday special.
@@ -322,9 +322,8 @@ export default function CelebrationsPage() {
                 Personal Celebrations
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Life&apos;s special moments deserve special dining. Whether it&apos;s a{" "}
-                <Link href="/celebrations/birthday" className="text-accent-red hover:underline">hibachi birthday</Link>,{" "}
-                <Link href="/celebrations/anniversary" className="text-accent-red hover:underline">anniversary dinner</Link>, or{" "}
+                Life&apos;s special moments deserve special dining. Whether it&apos;s a birthday dinner Frisco families love, an{" "}
+                <Link href="/celebrations/anniversary" className="text-accent-red hover:underline">anniversary restaurant Frisco TX</Link> date, or a{" "}
                 <Link href="/celebrations/date-night" className="text-accent-red hover:underline">romantic date night</Link> —
                 we&apos;ve got you covered.
               </p>
@@ -405,7 +404,7 @@ export default function CelebrationsPage() {
                 Group & Corporate Events
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Need <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> or{" "}
+                Need <Link href="/private-dining" className="text-accent-red hover:underline">private dining Japanese</Link> style or{" "}
                 <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">catering</Link> for
                 your group? Our hibachi tables seat 8-10, perfect for shared experiences.
               </p>

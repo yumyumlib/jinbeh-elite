@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Explore Jinbeh Lewisville's sashimi menu. Purity, premium fish, elegant simplicity. 7 delicious options from Salmon Sashimi to Omakase Selection. Easy access from I-35E, near Vista Ridge Mall.",
-  keywords: ["sashimi lewisville","best sashimi lewisville","sashimi menu lewisville","jinbeh sashimi","japanese sashimi lewisville","sashimi","raw fish","sashimi platter","fresh fish"],
+  keywords: ["sashimi lewisville", "best sashimi lewisville", "sashimi menu lewisville", "jinbeh sashimi", "japanese sashimi lewisville", "sashimi", "raw fish", "sashimi platter", "fresh fish"],
   openGraph: {
     title: "Sashimi Menu | Jinbeh Lewisville",
     description: "Purity, premium fish, elegant simplicity. 7 sashimi options at Jinbeh Lewisville.",
@@ -191,7 +192,7 @@ export default function SashimiLewisvillePage() {
                 each crafted with care and the finest ingredients.
               </p>
               <Link
-                href="/lewisville#reserve"
+                href="/reservations"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
@@ -217,8 +218,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/salmon-sashimi"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Fresh_Salmon_Sashimi.jpg"
+                    alt="Salmon Sashimi — fresh Atlantic salmon sliced to perfection"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -237,8 +244,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/tuna-sashimi"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Tuna_Sashimi.jpg"
+                    alt="Tuna Sashimi — premium ahi tuna, melt-in-your-mouth tender"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -257,8 +270,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/yellowtail-sashimi"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Yelllow_Tail_Sashimi.jpg"
+                    alt="Yellowtail Sashimi — buttery hamachi with delicate flavor"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -277,8 +296,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/octopus-sashimi"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Octopus_Sashimi.jpg"
+                    alt="Octopus Sashimi — tender tako with subtle sweetness"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -297,8 +322,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/sashimi-deluxe"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Sea_Lovers_Paradise.jpg"
+                    alt="Sashimi Deluxe Platter — chef's selection of premium fish"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -317,8 +348,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/chirashi"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/instagram/sushi-feast-flatlay.jpg"
+                    alt="Chirashi Bowl — assorted sashimi over sushi rice"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -337,8 +374,14 @@ export default function SashimiLewisvillePage() {
                 href="/lewisville/sashimi/omakase"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🐟</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/photoshoot/sashimi-platter.jpg"
+                    alt="Omakase Selection — chef's choice tasting of the day's finest"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -369,7 +412,7 @@ export default function SashimiLewisvillePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/lewisville#reserve"
+                  href="/reservations"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Reserve a Table
@@ -442,7 +485,7 @@ export default function SashimiLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Yes! Most sashimi items are available for takeout and delivery. Call (214) 488-2224 or order online. 
+                    Yes! Most sashimi items are available for takeout and delivery. Call (214) 488-2224 or order online.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -470,7 +513,7 @@ export default function SashimiLewisvillePage() {
               Explore More at Jinbeh Lewisville
             </h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              
+
               <Link
                 href="/lewisville/hibachi"
                 className="block p-6 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"

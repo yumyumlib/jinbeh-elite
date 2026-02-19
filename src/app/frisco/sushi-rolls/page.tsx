@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Explore Jinbeh Frisco's sushi rolls menu. Craftsmanship, freshness, artistry. 14 delicious options from Dragon Roll to Yellowtail Jalapeño Roll. Near Stonebriar Centre, minutes from Legacy West.",
-  keywords: ["sushi rolls frisco","best sushi rolls frisco","sushi rolls menu frisco","jinbeh sushi rolls","japanese sushi rolls frisco","sushi rolls","specialty rolls","maki","uramaki"],
+  keywords: ["sushi rolls frisco", "best sushi rolls frisco", "sushi rolls menu frisco", "jinbeh sushi rolls", "japanese sushi rolls frisco", "sushi rolls", "specialty rolls", "maki", "uramaki"],
   openGraph: {
     title: "Sushi Rolls Menu | Jinbeh Frisco",
     description: "Craftsmanship, freshness, artistry. 14 sushi rolls options at Jinbeh Frisco.",
@@ -261,7 +262,7 @@ export default function SushiRollsFriscoPage() {
                 each crafted with care and the finest ingredients.
               </p>
               <Link
-                href="/frisco#reserve"
+                href="/reservations"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
@@ -287,8 +288,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/dragon-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/food/alaskan-roll.jpg"
+                    alt="Dragon Roll — eel and cucumber topped with avocado and eel sauce"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -307,8 +314,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/rainbow-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Rainbow_Roll.jpg"
+                    alt="Rainbow Roll — California roll topped with assorted sashimi"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -327,8 +340,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/spider-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Spider_Roll.jpg"
+                    alt="Spider Roll — soft shell crab with cucumber and spicy mayo"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -347,8 +366,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/caterpillar-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Catepiller_Roll.jpg"
+                    alt="Caterpillar roll with freshwater eel and avocado"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -367,8 +392,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/volcano-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Volcano_Roll.jpg"
+                    alt="Volcano Roll — spicy crab and avocado with baked seafood topping"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -387,8 +418,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/tiger-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Golden_Tiger_Roll.jpg"
+                    alt="Tiger Roll — shrimp tempura with spicy tuna and jalapeño"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -407,8 +444,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/butterfly-kiss"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Butterfly_Kiss.jpg"
+                    alt="Butterfly Kiss Roll — house specialty with cream cheese and crab"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -427,8 +470,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/ahi-tower"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Ahi_Tower.jpg"
+                    alt="Ahi Tuna Tower — layered ahi tuna, avocado, and crispy wonton"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -447,8 +496,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/philly-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Philadelphia_Roll.jpg"
+                    alt="Philadelphia Roll — smoked salmon with cream cheese and cucumber"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -467,8 +522,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/spicy-tuna-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Spicy_Tuna_Roll.jpg"
+                    alt="Spicy Tuna Roll — fresh tuna with spicy mayo and scallions"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -487,8 +548,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/california-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/California_Roll.jpg"
+                    alt="California Roll — crab, avocado, and cucumber classic"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -507,8 +574,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/shrimp-tempura-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Shrimp_Tempura_Roll.jpg"
+                    alt="Shrimp Tempura Roll — crispy shrimp tempura with avocado"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -527,8 +600,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/vegas-roll"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Fire_Cracker_Roll.jpg"
+                    alt="Vegas Roll — deep-fried roll with spicy crab and cream cheese"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -547,8 +626,14 @@ export default function SushiRollsFriscoPage() {
                 href="/frisco/sushi-rolls/yellowtail-jalapeno"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gradient-to-br from-cedar-brown/20 to-deep-indigo/10 flex items-center justify-center">
-                  <span className="text-4xl">🍣</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Yellowtail_Heaven.jpg"
+                    alt="Yellowtail jalapeño with citrus ponzu"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
@@ -579,7 +664,7 @@ export default function SushiRollsFriscoPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/frisco#reserve"
+                  href="/reservations"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Reserve a Table
@@ -652,7 +737,7 @@ export default function SushiRollsFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Yes! Most sushi rolls items are available for takeout and delivery. Call (214) 619-1200 or order online. 
+                    Yes! Most sushi rolls items are available for takeout and delivery. Call (214) 619-1200 or order online.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -680,7 +765,7 @@ export default function SushiRollsFriscoPage() {
               Explore More at Jinbeh Frisco
             </h2>
             <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              
+
               <Link
                 href="/frisco/hibachi"
                 className="block p-6 bg-warm-ivory rounded-xl hover:bg-warm-ivory-dark transition-colors text-center"

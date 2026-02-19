@@ -20,6 +20,9 @@ export const metadata: Metadata = {
         description: "Transform your birthday celebration with creative themes and unique activities.",
         images: ["/images/blog/26-C060324-6874.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/adult-birthday-party-ideas",
+  },
 };
 
 const articleSchema = {
@@ -69,9 +72,22 @@ const faqSchema = {
     })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+    { "@type": "ListItem", "position": 4, "name": "Unique Adult Birthday Party Ideas & Themes" },
+  ],
+};
+
 export default function AdultBirthdayPartyIdeas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -187,7 +203,7 @@ export default function AdultBirthdayPartyIdeas() {
                                         Host a wine or beer tasting event where guests can sample a variety of beverages. You can hire
                                         a sommelier or expert to guide the tasting and provide interesting insights. Consider pairing with our{" "}
                                         <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link>{" "}
-                                        options at Jinbeh for a unique Japanese twist on the classic tasting experience.
+                                        options at Jinbeh for a unique Japanese twist on the classic tasting experience. Our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> also features discounted sake and appetizers perfect for a pre-party warm up.
                                     </p>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -285,7 +301,7 @@ export default function AdultBirthdayPartyIdeas() {
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
                                             <h3 className="font-heading font-bold text-xl text-charcoal mb-3">🏢 Choose a Venue</h3>
                                             <p className="text-charcoal/70 text-sm">
-                                                Decide whether to host the party at home or rent a venue. Consider the number of guests,
+                                                Decide whether to host the party at home or rent a venue. For groups, ask about <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options. Consider the number of guests,
                                                 the theme, and the type of activities you'll be hosting.
                                             </p>
                                         </div>
@@ -347,7 +363,7 @@ export default function AdultBirthdayPartyIdeas() {
                                 <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🎉 Host Your Birthday Bash at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        It's a celebration! Jinbeh offers interactive hibachi experiences, delicious Japanese cuisine, and a festive atmosphere. Your birthday will be truly unforgettable.
+                                        It's a celebration! Jinbeh offers interactive hibachi experiences, delicious Japanese cuisine, and a festive atmosphere. Surprise the birthday person with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link> they'll love. Your birthday will be truly unforgettable.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">

@@ -24,6 +24,9 @@ export const metadata: Metadata = {
         description: "Discover the different kinds of sake and what makes each variety unique. Expert guide to sake selection.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/types-of-sake-explained",
+  },
 };
 
 const articleSchema = {
@@ -84,9 +87,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+    { "@type": "ListItem", "position": 4, "name": "Types of Sake Explained: Complete Guide" },
+  ],
+};
+
 export default function TypesOfSakeExplained() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -614,7 +630,7 @@ export default function TypesOfSakeExplained() {
                                     </h2>
 
                                     <p className="mb-6">
-                                        At Jinbeh, we've thoughtfully selected sake varieties to complement every dish on our <Link href="/menu" className="text-deep-indigo hover:text-accent-red underline transition-colors">menu</Link>. Whether you're dining at our <Link href="/locations/frisco" className="text-deep-indigo hover:text-accent-red underline transition-colors">Frisco</Link> or <Link href="/locations/lewisville" className="text-deep-indigo hover:text-accent-red underline transition-colors">Lewisville</Link> location, our staff is trained in sake types and can guide your choice.
+                                        At Jinbeh, we've thoughtfully selected sake varieties to complement every dish on our <Link href="/menu" className="text-deep-indigo hover:text-accent-red underline transition-colors">menu</Link>. Whether you're dining at our <Link href="/frisco" className="text-deep-indigo hover:text-accent-red underline transition-colors">Frisco</Link> or <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red underline transition-colors">Lewisville</Link> location, our staff is trained in sake types and can guide your choice.
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">

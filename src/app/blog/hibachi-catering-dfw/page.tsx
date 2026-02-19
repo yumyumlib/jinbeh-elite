@@ -12,6 +12,9 @@ export const metadata: Metadata = {
         description: "Professional hibachi catering for corporate events, private parties, and celebrations in DFW.",
         images: ["/images/blog/6-C060324-6405.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/hibachi-catering-dfw",
+  },
 };
 
 const faqs = [
@@ -55,9 +58,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+    { "@type": "ListItem", "position": 4, "name": "Hibachi Catering in DFW: Events & Corporate Parties" },
+  ],
+};
+
 export default function HibachiCatering() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -67,7 +83,7 @@ export default function HibachiCatering() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=best-of">Catering</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/best-of">Catering</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-cedar-brown mb-4">🍴 Catering</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Hibachi Catering DFW</h1>
@@ -78,7 +94,7 @@ export default function HibachiCatering() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Bring the hibachi show to your event!</strong> Our catering services deliver the same sizzling entertainment and delicious cuisine that's made Jinbeh a DFW favorite since 1988.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Bring the hibachi show to your event!</strong> Our catering services deliver the same sizzling entertainment and delicious cuisine that's made Jinbeh a DFW favorite since 1988. Explore our full <Link href="/blog/jinbeh-catering-services" className="text-accent-red hover:underline">Jinbeh catering services</Link> for menu options and pricing.</p>
 
                             <div className="bg-gradient-to-br from-green-600/10 to-soft-gold/10 border-l-4 border-green-600 rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Our catering team brings the full Jinbeh experience to your location—complete with skilled chefs, fresh ingredients, and the entertainment that makes hibachi unforgettable."</p>
@@ -119,12 +135,12 @@ export default function HibachiCatering() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Catering at Our Restaurants</h2>
                             <p className="text-charcoal/80 mb-6">
-                                Can't host an event at home? Visit us at our <Link href="/locations/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/locations/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> for private dining and <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> options. We also offer full hibachi catering for off-site events. Learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">difference between hibachi and teppanyaki</Link> and why Jinbeh is the best choice for your celebration.
+                                Can't host an event at home? Visit us at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> for private dining and <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> options. We also offer full hibachi catering for off-site events. Learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">difference between hibachi and teppanyaki</Link> and why Jinbeh is the best choice for your celebration.
                             </p>
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-green-600 to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍴 Ready to Plan Your Catered Event?</h3>
-                                <p className="text-white/80 mb-6">Let us create an unforgettable hibachi experience for your celebration. Browse our <Link href="/menu" className="text-white hover:underline">full menu</Link> or explore our <Link href="/catering" className="text-white hover:underline">catering services</Link>.</p>
+                                <p className="text-white/80 mb-6">Let us create an unforgettable hibachi experience for your celebration. Planning for a big group? Check our <Link href="/blog/large-group-dining" className="text-white hover:underline underline">large group dining guide</Link>, browse our <Link href="/menu" className="text-white hover:underline">full menu</Link>, or explore our <Link href="/catering" className="text-white hover:underline">catering services</Link>.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
                                     <Link href="/catering" className="bg-white text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Request Custom Quote</Link>
                                     <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">Make a Reservation</Link>

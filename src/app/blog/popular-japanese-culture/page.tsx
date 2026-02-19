@@ -7,6 +7,16 @@ export const metadata: Metadata = {
     title: "Popular Japanese Things: Iconic Cultural Treasures | Jinbeh",
     description: "Discover popular Japanese things, from sushi and ramen to Ikebana and anime, exploring Japan's cultural treasures and famous landmarks.",
     keywords: ["popular japanese culture", "japanese traditions", "japan landmarks", "japanese cuisine", "japanese arts", "anime", "manga"],
+    openGraph: {
+        title: "Popular Japanese Culture: Food, Traditions & Trends",
+        description: "Explore popular Japanese culture from anime to food traditions. Learn how Japanese cuisine, art, and customs have become global favorites.",
+        url: "https://jinbeh.com/blog/popular-japanese-culture",
+        type: "article",
+        images: ["/images/about/rice-workers-heritage.webp"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/popular-japanese-culture",
+    },
 };
 
 const faqs = [
@@ -23,9 +33,22 @@ const schemas = [
     }
 ];
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 4, "name": "Popular Japanese Culture: Food, Traditions & Trends" },
+    ],
+};
+
 export default function PopularJapaneseCulture() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -33,7 +56,7 @@ export default function PopularJapaneseCulture() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog?category=cuisine">Culture</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/cuisine">Culture</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🎌 Culture</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Popular Japanese Things</h1>
@@ -52,12 +75,12 @@ export default function PopularJapaneseCulture() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Japanese Cuisine: Art on a Plate</h2>
-                            <p className="text-charcoal/80 mb-4">Japanese cuisine is celebrated for its exquisite presentation, delicate flavors, and profound respect for seasonal ingredients. Each dish is a masterpiece reflecting regional cultural influences and natural bounty.</p>
+                            <p className="text-charcoal/80 mb-4">Japanese cuisine is celebrated for its exquisite presentation, delicate flavors, and profound respect for seasonal ingredients. Each dish is a masterpiece reflecting regional cultural influences and natural bounty. Explore the full range of <Link href="/blog/japanese-beverages-guide" className="text-accent-red hover:underline">Japanese beverages</Link> that complement this culinary artistry.</p>
 
                             <div className="grid md:grid-cols-2 gap-4 my-6 bg-warm-ivory rounded-xl p-6">
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-2">🍱 Sushi & Sashimi</h3>
-                                    <p className="text-sm text-charcoal/70">An art form requiring years of dedication. Sushi chefs perfect the balance of rice, fish, and seasoning to create harmonious bites that delight the senses.</p>
+                                    <p className="text-sm text-charcoal/70">An art form requiring years of dedication. Sushi chefs perfect the balance of rice, fish, and seasoning to create harmonious bites. Discover the many <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link> and their origins.</p>
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-2">🍜 Ramen</h3>
@@ -162,10 +185,11 @@ export default function PopularJapaneseCulture() {
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Japanese Culture at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">From authentic sushi crafted by skilled artisans to entertaining hibachi performances, Jinbeh brings Japan's culinary traditions to Dallas.</p>
+                                <p className="text-white/80 mb-6">From authentic sushi crafted by skilled artisans to entertaining <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-white hover:underline underline">hibachi performances</Link>, Jinbeh brings Japan's culinary traditions to Dallas. Explore our <Link href="/menu" className="text-white hover:underline underline">full menu</Link> or learn <Link href="/about" className="text-white hover:underline underline">our story</Link> of 37 years of Japanese hospitality.</p>
                                 <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco#reserve" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Reserve Frisco</Link>
-                                    <Link href="/lewisville#reserve" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Reserve Lewisville</Link>
+                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
+                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Frisco Location</Link>
+                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville Location</Link>
                                 </div>
                             </div>
                         </article>

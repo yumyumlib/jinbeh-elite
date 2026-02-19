@@ -20,6 +20,9 @@ export const metadata: Metadata = {
             "Plan an unforgettable bachelorette celebration in Dallas. Discover top restaurants perfect for your party.",
         images: ["/images/celebrations/jinbeh_group.jpg"],
     },
+  alternates: {
+    canonical: "https://jinbeh.com/blog/bachelorette-restaurants-dallas",
+  },
 };
 
 const articleSchema = {
@@ -28,7 +31,7 @@ const articleSchema = {
     headline: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations",
     description:
         "Your guide to the best bachelorette restaurants and venues in Dallas, Texas.",
-    image: "https://jinbeh.com/images/blog/2-C060324-6364.jpg",
+    image: "https://jinbeh.com/images/blog/3-C060324-6364.jpg",
     datePublished: "2026-01-20",
     dateModified: "2026-01-30",
     author: {
@@ -76,9 +79,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+    { "@type": "ListItem", "position": 4, "name": "Best Bachelorette Restaurants Dallas" },
+  ],
+};
+
 export default function BacheloretteRestaurantsDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -291,7 +307,7 @@ export default function BacheloretteRestaurantsDallas() {
 
                                     <p>
                                         Successful bachelorette celebrations require planning. Book your restaurant 4-6 weeks in advance,
-                                        especially for larger groups. Contact the venue about special requests—many restaurants will customize
+                                        especially for larger groups. Ask about <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options for a more exclusive atmosphere. Contact the venue about special requests—many restaurants will customize
                                         menus, arrange decorations, or create personalized experiences.
                                     </p>
 
@@ -394,7 +410,7 @@ export default function BacheloretteRestaurantsDallas() {
                                         🎉 Ready to Plan Your Bachelorette Celebration?
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Make your bachelorette celebration unforgettable with Jinbeh's interactive hibachi experience.
+                                        Make your bachelorette celebration unforgettable with Jinbeh's interactive hibachi experience. Start with <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> drinks, then enjoy the show. Or surprise the bride with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link> she can use anytime.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link

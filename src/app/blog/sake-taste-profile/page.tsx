@@ -21,6 +21,9 @@ export const metadata: Metadata = {
         description: "Discover the complex flavors of sake with our comprehensive tasting guide.",
         images: ["/images/beverages/JinbehPunch.jpg"],
     },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sake-taste-profile",
+    },
 };
 
 const articleSchema = {
@@ -73,9 +76,22 @@ const faqSchema = {
     ],
 };
 
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Sake Taste Profile Guide: From Sweet to Dry" },
+    ],
+};
+
 export default function SakeTasteProfile() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -96,7 +112,7 @@ export default function SakeTasteProfile() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog?category=beverages" className="hover:text-white">Beverages</Link>
+                        <Link href="/blog/category/beverages" className="hover:text-white">Beverages</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -128,7 +144,7 @@ export default function SakeTasteProfile() {
                                         <strong>Sake is often surrounded by mystery and intrigue,</strong> especially for those new to
                                         Japanese beverages. When people ask "Does sake taste good?" or "What does sake taste like?" they are
                                         often surprised to learn that sake has a complex, nuanced flavor profile far beyond simple sweetness
-                                        or alcohol burn. Let's explore the fascinating world of sake flavors.
+                                        or alcohol burn. Let's explore the fascinating world of sake flavors—and once you know what to look for, our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link> will help you match each style to the perfect dish.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
@@ -195,7 +211,7 @@ export default function SakeTasteProfile() {
 
                                     <p className="text-charcoal/80 mb-6">
                                         The sake tasting experience is not just about sipping the beverage. It involves using all your senses
-                                        to fully appreciate the complexity and craftsmanship behind this traditional Japanese drink.
+                                        to fully appreciate the complexity and craftsmanship behind this traditional Japanese drink. Understanding <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake's alcohol strength</Link> also helps set expectations before your first sip.
                                     </p>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Visual Inspection</h3>
@@ -409,7 +425,7 @@ export default function SakeTasteProfile() {
                                     <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Taste Exceptional Sake at Jinbeh</h3>
                                     <p className="text-white/90 mb-8 text-lg">
                                         Visit Jinbeh to experience a curated selection of premium sakes paired with our exceptional <Link href="/blog/types-of-sushi" className="text-white hover:text-soft-gold underline transition-colors">sushi</Link> and Japanese cuisine.
-                                        Let our sommeliers guide you through the world of sake flavors.
+                                        Let our sommeliers guide you through the world of sake flavors at our <Link href="/bar" className="text-white hover:text-soft-gold underline transition-colors">full bar</Link>. Join us during <Link href="/happy-hour" className="text-white hover:text-soft-gold underline transition-colors">happy hour</Link> for special pricing. Prefer cocktails? Explore our guide to <Link href="/blog/japanese-cocktails" className="text-white hover:text-soft-gold underline transition-colors">Japanese cocktails</Link> instead.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link href="/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
