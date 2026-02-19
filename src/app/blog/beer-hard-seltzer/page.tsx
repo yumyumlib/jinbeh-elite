@@ -135,14 +135,42 @@ export default function BeerHardSeltzer() {
                 Not sure what to order? Here&apos;s our quick pairing guide based on what you&apos;re eating:
             </p>
 
-            <ul>
-                <li><strong>Hibachi steak or chicken</strong> → Sapporo Draft or Asahi Super Dry</li>
-                <li><strong>Hibachi shrimp or seafood</strong> → Kirin Ichiban or citrus seltzer</li>
-                <li><strong>Sushi rolls (classic)</strong> → Sapporo—won&apos;t overpower delicate fish</li>
-                <li><strong>Sushi rolls (spicy)</strong> → Asahi Super Dry to cool the heat</li>
-                <li><strong>Sashimi</strong> → Kirin Ichiban or <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">premium sake</Link></li>
-                <li><strong>Tempura &amp; fried apps</strong> → Asahi Super Dry (cuts through richness)</li>
-            </ul>
+            <div className="overflow-x-auto my-8">
+                <table className="w-full border-collapse text-sm">
+                    <thead>
+                        <tr className="bg-deep-indigo text-white">
+                            <th className="px-4 py-3 text-left font-semibold rounded-tl-lg">Ordering…</th>
+                            <th className="px-4 py-3 text-left font-semibold rounded-tr-lg">Pair With</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="border-b border-warm-ivory-dark bg-white">
+                            <td className="px-4 py-3 font-medium">Hibachi steak or chicken</td>
+                            <td className="px-4 py-3">Sapporo Draft or Asahi Super Dry</td>
+                        </tr>
+                        <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+                            <td className="px-4 py-3 font-medium">Hibachi shrimp or seafood</td>
+                            <td className="px-4 py-3">Kirin Ichiban or citrus seltzer</td>
+                        </tr>
+                        <tr className="border-b border-warm-ivory-dark bg-white">
+                            <td className="px-4 py-3 font-medium">Sushi rolls (classic)</td>
+                            <td className="px-4 py-3">Sapporo — won&apos;t overpower delicate fish</td>
+                        </tr>
+                        <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+                            <td className="px-4 py-3 font-medium">Sushi rolls (spicy)</td>
+                            <td className="px-4 py-3">Asahi Super Dry to cool the heat</td>
+                        </tr>
+                        <tr className="border-b border-warm-ivory-dark bg-white">
+                            <td className="px-4 py-3 font-medium">Sashimi</td>
+                            <td className="px-4 py-3">Kirin Ichiban or <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">premium sake</Link></td>
+                        </tr>
+                        <tr className="bg-warm-ivory/30">
+                            <td className="px-4 py-3 font-medium rounded-bl-lg">Tempura & fried apps</td>
+                            <td className="px-4 py-3 rounded-br-lg">Asahi Super Dry (cuts through richness)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <p>
                 Want to explore beyond beer? Check out our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails guide</Link> or

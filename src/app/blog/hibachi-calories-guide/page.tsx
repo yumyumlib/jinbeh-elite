@@ -140,6 +140,58 @@ export default function HibachiCaloriesGuidePage() {
         The protein you choose is the foundation of your hibachi meal. Here's what you need to know about popular options:
       </p>
 
+      {/* Quick-Reference Comparison Table */}
+      <div className="overflow-x-auto my-8">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-deep-indigo text-white">
+              <th className="px-4 py-3 text-left font-semibold rounded-tl-lg">Protein</th>
+              <th className="px-4 py-3 text-center font-semibold">Calories</th>
+              <th className="px-4 py-3 text-center font-semibold">Protein</th>
+              <th className="px-4 py-3 text-center font-semibold">Fat</th>
+              <th className="px-4 py-3 text-left font-semibold rounded-tr-lg">Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-warm-ivory-dark bg-white">
+              <td className="px-4 py-3 font-medium">🦐 Shrimp</td>
+              <td className="px-4 py-3 text-center text-green-700 font-semibold">150–200</td>
+              <td className="px-4 py-3 text-center">20–25 g</td>
+              <td className="px-4 py-3 text-center">2–3 g</td>
+              <td className="px-4 py-3 text-charcoal/70">Lowest calorie, heart health</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+              <td className="px-4 py-3 font-medium">🐚 Scallops</td>
+              <td className="px-4 py-3 text-center text-green-700 font-semibold">180–220</td>
+              <td className="px-4 py-3 text-center">20–22 g</td>
+              <td className="px-4 py-3 text-center">3–4 g</td>
+              <td className="px-4 py-3 text-charcoal/70">Low-cal seafood, cardiovascular</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-white">
+              <td className="px-4 py-3 font-medium">🍗 Chicken</td>
+              <td className="px-4 py-3 text-center font-semibold">250–300</td>
+              <td className="px-4 py-3 text-center">40–45 g</td>
+              <td className="px-4 py-3 text-center">8–10 g</td>
+              <td className="px-4 py-3 text-charcoal/70">Calorie-conscious, high protein</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+              <td className="px-4 py-3 font-medium">🐟 Salmon</td>
+              <td className="px-4 py-3 text-center font-semibold">350–400</td>
+              <td className="px-4 py-3 text-center">40–45 g</td>
+              <td className="px-4 py-3 text-center">15–20 g</td>
+              <td className="px-4 py-3 text-charcoal/70">Omega-3, healthy fats</td>
+            </tr>
+            <tr className="bg-white">
+              <td className="px-4 py-3 font-medium rounded-bl-lg">🥩 Steak</td>
+              <td className="px-4 py-3 text-center font-semibold">400–450</td>
+              <td className="px-4 py-3 text-center">45–50 g</td>
+              <td className="px-4 py-3 text-center">20–25 g</td>
+              <td className="px-4 py-3 text-charcoal/70 rounded-br-lg">Iron, special occasions</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-xs text-charcoal/50 mt-2 text-center">Per serving, approximate values. Excludes sides and sauces.</p>
+      </div>
       <h3>Hibachi Chicken</h3>
 
       <p>
@@ -230,6 +282,50 @@ export default function HibachiCaloriesGuidePage() {
         Your protein choice significantly impacts meal calories, but sides can make even bigger differences. Here's what you need to know:
       </p>
 
+      {/* Sides & Sauces Quick-Reference Table */}
+      <div className="overflow-x-auto my-8">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-accent-red text-white">
+              <th className="px-4 py-3 text-left font-semibold rounded-tl-lg">Side / Sauce</th>
+              <th className="px-4 py-3 text-center font-semibold">Calories</th>
+              <th className="px-4 py-3 text-left font-semibold rounded-tr-lg">Key Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-warm-ivory-dark bg-white">
+              <td className="px-4 py-3 font-medium">🍚 Fried Rice</td>
+              <td className="px-4 py-3 text-center text-accent-red font-semibold">330–390</td>
+              <td className="px-4 py-3 text-charcoal/70">Calorie multiplier — request smaller portion</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+              <td className="px-4 py-3 font-medium">🍚 Steamed Rice</td>
+              <td className="px-4 py-3 text-center font-semibold">150–200</td>
+              <td className="px-4 py-3 text-charcoal/70">Smart swap — saves ~200 cal vs fried</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-white">
+              <td className="px-4 py-3 font-medium">🥦 Vegetables</td>
+              <td className="px-4 py-3 text-center text-green-700 font-semibold">50–70</td>
+              <td className="px-4 py-3 text-charcoal/70">Load up! High fiber, low calorie</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+              <td className="px-4 py-3 font-medium">Ginger Sauce</td>
+              <td className="px-4 py-3 text-center font-semibold">20–30 / tbsp</td>
+              <td className="px-4 py-3 text-charcoal/70">Lighter choice</td>
+            </tr>
+            <tr className="border-b border-warm-ivory-dark bg-white">
+              <td className="px-4 py-3 font-medium">Soy Sauce</td>
+              <td className="px-4 py-3 text-center text-green-700 font-semibold">10–15 / tbsp</td>
+              <td className="px-4 py-3 text-charcoal/70">Lowest calorie sauce (watch sodium)</td>
+            </tr>
+            <tr className="bg-warm-ivory/30">
+              <td className="px-4 py-3 font-medium rounded-bl-lg">Creamy Sauces</td>
+              <td className="px-4 py-3 text-center text-accent-red font-semibold">50–80 / tbsp</td>
+              <td className="px-4 py-3 text-charcoal/70 rounded-br-lg">Request on the side</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <h3>Fried Rice (The Calorie Multiplier)</h3>
 
       <p>

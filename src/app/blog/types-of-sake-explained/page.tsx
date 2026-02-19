@@ -24,9 +24,9 @@ export const metadata: Metadata = {
         description: "Discover the different kinds of sake and what makes each variety unique. Expert guide to sake selection.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/types-of-sake-explained",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/types-of-sake-explained",
+    },
 };
 
 const articleSchema = {
@@ -89,20 +89,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-    { "@type": "ListItem", "position": 4, "name": "Types of Sake Explained: Complete Guide" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Types of Sake Explained: Complete Guide" },
+    ],
 };
 
 export default function TypesOfSakeExplained() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -204,6 +204,71 @@ export default function TypesOfSakeExplained() {
                                         🍶 The Main Sake Types Explained
                                     </h2>
 
+                                    {/* Quick-Reference Table */}
+                                    <div className="overflow-x-auto my-8">
+                                        <table className="w-full border-collapse text-sm">
+                                            <thead>
+                                                <tr className="bg-deep-indigo text-white">
+                                                    <th className="px-3 py-3 text-left font-semibold rounded-tl-lg">Type</th>
+                                                    <th className="px-3 py-3 text-center font-semibold">ABV</th>
+                                                    <th className="px-3 py-3 text-center font-semibold">Polishing</th>
+                                                    <th className="px-3 py-3 text-left font-semibold">Flavor</th>
+                                                    <th className="px-3 py-3 text-left font-semibold rounded-tr-lg">Best With</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr className="border-b border-warm-ivory-dark bg-white">
+                                                    <td className="px-3 py-3 font-medium">🍂 Junmai</td>
+                                                    <td className="px-3 py-3 text-center">15–16%</td>
+                                                    <td className="px-3 py-3 text-center">30–40%</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Earthy, umami-rich</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Hibachi, grilled</td>
+                                                </tr>
+                                                <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+                                                    <td className="px-3 py-3 font-medium">✨ Ginjo</td>
+                                                    <td className="px-3 py-3 text-center">15–16%</td>
+                                                    <td className="px-3 py-3 text-center">40%</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Fruity, floral</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Nigiri, sashimi</td>
+                                                </tr>
+                                                <tr className="border-b border-warm-ivory-dark bg-white">
+                                                    <td className="px-3 py-3 font-medium">🏆 Daiginjo</td>
+                                                    <td className="px-3 py-3 text-center">15–16%</td>
+                                                    <td className="px-3 py-3 text-center">50%+</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Elegant, complex</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Premium sashimi</td>
+                                                </tr>
+                                                <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+                                                    <td className="px-3 py-3 font-medium">🌊 Honjozo</td>
+                                                    <td className="px-3 py-3 text-center">~15.6%</td>
+                                                    <td className="px-3 py-3 text-center">30%</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Crisp, clean</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Fried food, everyday</td>
+                                                </tr>
+                                                <tr className="border-b border-warm-ivory-dark bg-white">
+                                                    <td className="px-3 py-3 font-medium">🍷 Koshu</td>
+                                                    <td className="px-3 py-3 text-center">15–17%</td>
+                                                    <td className="px-3 py-3 text-center">Varies</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Sherry-like, complex</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Rich appetizers</td>
+                                                </tr>
+                                                <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
+                                                    <td className="px-3 py-3 font-medium">✨ Sparkling</td>
+                                                    <td className="px-3 py-3 text-center">5–8%</td>
+                                                    <td className="px-3 py-3 text-center">Varies</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Light, celebratory</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Appetizers, dessert</td>
+                                                </tr>
+                                                <tr className="bg-white">
+                                                    <td className="px-3 py-3 font-medium rounded-bl-lg">🌸 Nigori</td>
+                                                    <td className="px-3 py-3 text-center">15–17%</td>
+                                                    <td className="px-3 py-3 text-center">Varies</td>
+                                                    <td className="px-3 py-3 text-charcoal/70">Creamy, sweet</td>
+                                                    <td className="px-3 py-3 text-charcoal/70 rounded-br-lg">Cheese, rich foods</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                     <div className="space-y-6 my-8">
                                         <div className="bg-gradient-to-br from-accent-red/10 to-accent-red/5 rounded-2xl p-6 border-l-4 border-accent-red">
                                             <div className="flex items-start gap-4">

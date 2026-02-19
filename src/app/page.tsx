@@ -436,10 +436,14 @@ export default function HomePage() {
             </div>
 
             <ScrollReveal delay={400}>
-              <div className="text-center mt-12">
+              <div className="text-center mt-12 flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/menu" className="inline-flex items-center gap-2 bg-soft-gold text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
                   View Full Menu
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                </Link>
+                <Link href="/order-online" className="inline-flex items-center gap-2 bg-white/10 border-2 border-white/40 text-white hover:bg-white hover:text-charcoal px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" /></svg>
+                  Order Online
                 </Link>
               </div>
             </ScrollReveal>
@@ -697,62 +701,75 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Video Section — Full-Width Immersive Vimeo Embed */}
-        <section className="bg-charcoal text-white relative">
-          {/* VideoSchema for SEO */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "VideoObject",
-                "name": "Jinbeh Hibachi Cooking Experience",
-                "description": "Watch our master teppanyaki chefs prepare delicious hibachi dishes tableside with impressive knife skills and the famous onion volcano.",
-                "thumbnailUrl": "https://jinbeh.com/images/food/onion-volcano.jpg",
-                "uploadDate": "2023-01-15",
-                "duration": "PT2M3S",
-                "contentUrl": "https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
-              })
-            }}
-          />
+        {/* Celebrations & Events — Life's Big Moments */}
+        <section className="py-20 md:py-28 bg-gradient-to-br from-warm-ivory via-white to-soft-gold/10 relative overflow-hidden">
+          {/* Subtle decorative element */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'radial-gradient(circle, #C9A227 1.5px, transparent 1.5px)',
+              backgroundSize: '50px 50px'
+            }} />
+          </div>
 
-          {/* Section Header */}
-          <div className="container mx-auto px-6 pt-20 pb-12">
+          <div className="container mx-auto px-6 relative z-10">
             <ScrollReveal>
-              <div className="text-center">
-                <span className="inline-block w-16 h-1 bg-gradient-to-r from-white/40 to-soft-gold rounded-full mb-6" />
-                <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 italic">
-                  Dinner and a Show
+              <div className="text-center mb-14">
+                <span className="inline-block bg-accent-red/10 text-accent-red text-sm font-semibold px-6 py-2 rounded-full mb-6 border border-accent-red/20 tracking-wide">
+                  CELEBRATE WITH US
+                </span>
+                <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">
+                  Life&apos;s Big Moments, <span className="text-accent-red italic">Our Table</span>
                 </h2>
-                <p className="text-lg text-warm-ivory/70 max-w-2xl mx-auto">
-                  Your whole table, standing ovation. Every. Single. Night.
+                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                  From birthdays to promotions, reunions to date nights — every celebration deserves a show.
                 </p>
               </div>
             </ScrollReveal>
-          </div>
 
-          {/* Full-Width Video Player */}
-          <ScrollReveal delay={200}>
-            <div className="relative w-full aspect-[21/9] md:aspect-[21/9] overflow-hidden">
-              <iframe
-                src="https://player.vimeo.com/video/681592941?autoplay=1&loop=1&muted=1&background=1&autopause=0&portrait=0&byline=0&title=0&badge=0&quality=720p"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto"
-                style={{ aspectRatio: '16/9', width: '177.78vh', height: '56.25vw', minWidth: '100%', minHeight: '100%' }}
-                allow="autoplay; fullscreen"
-                title="Jinbeh Hibachi and Sushi Experience — sushi cutting, hibachi performance, and more"
-                loading="lazy"
-              />
-              {/* Bottom gradient fade into next section */}
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-charcoal to-transparent pointer-events-none" />
-              {/* Top gradient fade from header */}
-              <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-charcoal to-transparent pointer-events-none" />
+            {/* Event Types Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto mb-12">
+              <ScrollReveal delay={0}>
+                <Link href="/celebrations/birthday" className="group bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border border-stone-100 h-full">
+                  <span className="text-4xl block mb-3">🎂</span>
+                  <h3 className="font-heading font-bold text-charcoal mb-1 group-hover:text-accent-red transition-colors">Birthdays</h3>
+                  <p className="text-xs text-charcoal/60">Hibachi flames + birthday song</p>
+                </Link>
+              </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <Link href="/celebrations/anniversary" className="group bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border border-stone-100 h-full">
+                  <span className="text-4xl block mb-3">💍</span>
+                  <h3 className="font-heading font-bold text-charcoal mb-1 group-hover:text-accent-red transition-colors">Anniversaries</h3>
+                  <p className="text-xs text-charcoal/60">Intimate dining for two</p>
+                </Link>
+              </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <Link href="/celebrations/corporate-events" className="group bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border border-stone-100 h-full">
+                  <span className="text-4xl block mb-3">🏢</span>
+                  <h3 className="font-heading font-bold text-charcoal mb-1 group-hover:text-accent-red transition-colors">Corporate</h3>
+                  <p className="text-xs text-charcoal/60">Team dinners & events</p>
+                </Link>
+              </ScrollReveal>
+              <ScrollReveal delay={300}>
+                <Link href="/celebrations/graduation" className="group bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border border-stone-100 h-full">
+                  <span className="text-4xl block mb-3">🎓</span>
+                  <h3 className="font-heading font-bold text-charcoal mb-1 group-hover:text-accent-red transition-colors">Graduations</h3>
+                  <p className="text-xs text-charcoal/60">Celebrate the milestone</p>
+                </Link>
+              </ScrollReveal>
             </div>
-          </ScrollReveal>
 
-          <div className="container mx-auto px-6 pb-6">
-            <p className="text-center text-warm-ivory/50 mt-4 text-sm">
-              Sushi artistry • Hibachi flames • Tableside entertainment
-            </p>
+            {/* CTA */}
+            <ScrollReveal delay={400}>
+              <div className="text-center">
+                <Link href="/celebrations" className="inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                  Plan Your Event
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                </Link>
+                <p className="mt-4 text-sm text-charcoal/50">
+                  Private dining available for groups of 10+ • Call <a href="tel:2146191200" className="text-accent-red font-semibold hover:underline">(214) 619-1200</a>
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
