@@ -134,7 +134,7 @@ export default function HomePage() {
         />
 
         {/* Hero Section - Full Screen with Video Background */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-16">
           {/* Background Video - Vimeo embed with autoplay, loop, muted - optimized loading */}
           <div className="absolute inset-0 w-full h-full">
             <iframe
