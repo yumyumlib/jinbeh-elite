@@ -234,23 +234,24 @@ export default function Header({ location }: HeaderProps) {
         {/* Background blur layer */}
         <div
           className={`absolute inset-0 transition-all duration-300 pointer-events-none ${scrolled
-            ? "bg-charcoal/85 backdrop-blur-xl shadow-lg border-b border-white/10"
-            : "bg-charcoal/40 backdrop-blur-lg border-b border-white/5"
+            ? "bg-charcoal/90 backdrop-blur-xl shadow-lg border-b border-white/10"
+            : "bg-charcoal/30 backdrop-blur-md border-b border-white/5"
             }`}
           aria-hidden="true"
         />
         <div className="relative container mx-auto px-4 lg:px-6">
-          <div className="flex items-center justify-between h-20 py-1">
-            {/* Logo */}
+          <div className="flex items-center justify-between h-16 py-1">
+            {/* Logo — white SVG on transparent bg for seamless dark nav */}
             <Link href="/" className="flex items-center group flex-shrink-0">
               <Image
-                src="/images/logos/JinbehLogo.png"
+                src="/images/logos/jinbehlogo-white.svg"
                 alt="Jinbeh Japanese Restaurant - Home"
-                width={140}
-                height={60}
-                className="h-14 w-auto max-w-[140px] sm:max-w-none transition-transform group-hover:scale-105 drop-shadow-lg"
+                width={44}
+                height={38}
+                className="h-9 w-auto transition-transform group-hover:scale-105 drop-shadow-lg"
                 priority
               />
+              <span className="ml-2 text-white font-heading font-bold text-lg tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_50%)] hidden sm:inline">JINBEH</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -544,11 +545,11 @@ export default function Header({ location }: HeaderProps) {
                 </div>
               )}
 
-              {/* Reserve Button - Location specific */}
+              {/* Reserve Button - Location specific or dropdown */}
               {location ? (
                 <button
                   onClick={() => handleReserveClick(location)}
-                  className="btn-shimmer inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105 relative overflow-hidden"
+                  className="btn-shimmer inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-4 py-2 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105 relative overflow-hidden"
                   aria-label={`Reserve a table at Jinbeh ${location === "lewisville" ? "Lewisville" : "Frisco"}`}
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -557,16 +558,64 @@ export default function Header({ location }: HeaderProps) {
                   Reserve {location === "lewisville" ? "Lewisville" : "Frisco"}
                 </button>
               ) : (
-                <button
-                  onClick={() => setShowReserveModal(true)}
-                  className="btn-shimmer inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105 relative overflow-hidden"
-                  aria-label="Reserve a table"
+                <div
+                  className="relative"
+                  onMouseEnter={() => handleMouseEnter("reserve")}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  Reserve a Table
-                </button>
+                  <button
+                    onClick={() => setActiveDropdown(activeDropdown === "reserve" ? null : "reserve")}
+                    className="btn-shimmer inline-flex items-center gap-1.5 bg-accent-red text-white hover:bg-accent-red/90 px-4 py-2 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105 relative overflow-hidden"
+                    aria-label="Reserve a table"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Reserve
+                    <svg className={`w-3 h-3 transition-transform duration-200 ${activeDropdown === "reserve" ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`absolute top-full right-0 mt-1.5 w-60 bg-white rounded-xl shadow-2xl border border-stone-200 z-[9999] transition-all duration-200 origin-top-right ${activeDropdown === "reserve"
+                      ? "opacity-100 scale-100 pointer-events-auto translate-y-0"
+                      : "opacity-0 scale-95 pointer-events-none -translate-y-2"
+                      }`}
+                    onMouseEnter={() => handleMouseEnter("reserve")}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <div className="p-2">
+                      <button
+                        onClick={() => { handleReserveClick("frisco"); setActiveDropdown(null); }}
+                        className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
+                      >
+                        <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        </span>
+                        <div>
+                          <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Frisco</span>
+                          <span className="block text-xs text-charcoal/60">Near Stonebriar Centre</span>
+                        </div>
+                      </button>
+                      <button
+                        onClick={() => { handleReserveClick("lewisville"); setActiveDropdown(null); }}
+                        className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
+                      >
+                        <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        </span>
+                        <div>
+                          <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Lewisville</span>
+                          <span className="block text-xs text-charcoal/60">Easy access from I-35E</span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
 

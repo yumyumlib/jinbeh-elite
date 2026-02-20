@@ -31,8 +31,8 @@ const reasons: ExperienceReason[] = [
     title: 'House-Made Everything',
     hook: 'Real crab. Fresh fish. Sauces made from scratch, daily.',
     description: 'Our Yum Yum sauce, every dipping sauce, and the garlic butter are all made in-house daily. The sushi is fresh and made daily with quality, delicious ingredients. After 37 years, we know: you taste the difference when every detail is done right.',
-    image: '/images/catalog/6-C060324-6405.jpg',
-    imageAlt: 'Premium fresh sushi and sashimi presentation with salmon, tuna, yellowtail at Jinbeh Japanese Restaurant Texas'
+    image: '/images/catalog/homemade-sauces.jpg',
+    imageAlt: 'Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch'
   },
   {
     label: 'DFW\'s Birthday Spot',

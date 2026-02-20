@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import { Timeline, DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
@@ -151,6 +152,22 @@ export default function HibachiDiningExperiencePage() {
           }
         ]}
       />
+
+      <div className="my-8 max-w-2xl mx-auto">
+        <div className="rounded-2xl overflow-hidden shadow-lg border-2 border-soft-gold/20">
+          <Image
+            src="/images/catalog/homemade-sauces.jpg"
+            alt="Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch"
+            width={800}
+            height={533}
+            className="w-full h-auto"
+            sizes="(max-width: 768px) 100vw, 672px"
+          />
+        </div>
+        <p className="text-center text-sm text-charcoal/60 mt-3 italic">
+          Our signature yum yum sauce and spicy chili sauce — made in-house daily from family recipes
+        </p>
+      </div>
 
       <p>
         This interactive dining style is perfect for groups and celebrations, offering both delicious food and memorable entertainment. For larger parties, Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options provide a dedicated space with personalized service. It's a place where food meets art, and every dish tells a story that unfolds in real time.

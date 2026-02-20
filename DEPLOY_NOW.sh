@@ -68,14 +68,12 @@ git pull origin main
 echo "📦 Installing dependencies..."
 npm install
 
-echo "🏗️  Building production..."
-npm run build
-
-echo "🔄 Restarting PM2..."
-pm2 restart jinbeh-elite
+echo "🐳 Rebuilding Docker container..."
+docker compose down 2>/dev/null || true
+docker compose up -d --build
 
 echo "✅ Deployment complete!"
-pm2 status
+docker ps | grep jinbeh
 EOF
 
 echo ""

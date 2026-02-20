@@ -315,10 +315,14 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {/* Fresh Ingredients */}
               <div className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 mx-auto mb-6 bg-accent-red/10 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                <div className="relative w-full aspect-[3/2] rounded-xl overflow-hidden mb-6 shadow-md">
+                  <Image
+                    src="/images/catalog/homemade-sauces.jpg"
+                    alt="Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                  />
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                   Premium, Fresh Ingredients

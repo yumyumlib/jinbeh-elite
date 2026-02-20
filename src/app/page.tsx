@@ -163,35 +163,20 @@ export default function HomePage() {
 
           {/* Content with text shadows for better readability */}
           <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
-            {/* Selling Proof - Family Badge + Urgency Hook */}
+            {/* Selling Proof — Consolidated trust line */}
             <ScrollReveal delay={0}>
-              <div className="mb-8 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3">
-                <span className="inline-block bg-accent-red text-white px-6 py-2 rounded-full text-sm font-semibold tracking-wider uppercase shadow-lg">
-                  Family-Owned Since 1988
-                </span>
-                <span className="hidden sm:inline-block bg-soft-gold/90 text-charcoal px-5 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg animate-pulse">
-                  {reservationCTA}
-                </span>
-              </div>
-            </ScrollReveal>
-
-            {/* Trust Signals - Proof on fold with Animated Numbers */}
-            <ScrollReveal delay={100}>
-              <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-6 text-white/90 text-sm">
-                <span className="flex items-center gap-2 bg-charcoal/30 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <svg className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                  <span className="font-medium">
-                    <NumberTicker value={4.3} decimalPlaces={1} className="font-bold" /> Stars on Google
+              <div className="mb-6 flex flex-col items-center gap-3">
+                <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
+                  <span className="inline-flex items-center gap-1.5 bg-accent-red/90 text-white px-4 py-1.5 rounded-full font-semibold tracking-wide shadow-lg">
+                    Family-Owned Since 1988
                   </span>
-                </span>
-                <span className="bg-charcoal/30 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <NumberTicker value={1000} className="font-bold" />+ 5-Star Reviews
-                </span>
-                <span className="bg-charcoal/30 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <NumberTicker value={37} className="font-bold" />+ Years of Excellence
-                </span>
+                  <span className="hidden sm:inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white/90 px-4 py-1.5 rounded-full font-medium border border-white/20">
+                    <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    4.3 Stars · 1,000+ Reviews
+                  </span>
+                </div>
               </div>
             </ScrollReveal>
 
@@ -210,54 +195,51 @@ export default function HomePage() {
                   WebkitTextStroke: '1px rgba(0,0,0,0.3)'
                 }}>
                 <WordRotate
-                  words={["Dinner and a Show", "A Warm Welcome", "Where Memories Are Made", "The Art of Hibachi"]}
+                  words={["Where Memories Are Made", "Dinner and a Show", "The Art of Hibachi"]}
                   duration={4000}
                 />
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={300}>
-              <p className="text-xl md:text-2xl text-warm-ivory mb-12 font-medium max-w-2xl mx-auto"
+              <p className="text-xl md:text-2xl text-warm-ivory mb-10 font-medium max-w-2xl mx-auto"
                 style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
-                Fresh sushi. Spectacular flames. The dinner everyone talks about.
+                The dinner your family will talk about for weeks.
               </p>
             </ScrollReveal>
 
             {/* Location Selection Cards */}
             <ScrollReveal delay={500}>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-                {/* Frisco Location Card */}
-                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-6 min-w-[260px] shadow-2xl hover:border-accent-red/50 transition-all duration-300">
-                  <BorderBeam size={120} duration={8} colorFrom="#C1121F" colorTo="#C9A227" />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                {/* Frisco Location Card — compact */}
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-5 py-4 min-w-[240px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
+                  <BorderBeam size={100} duration={8} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
-                    {/* Location-specific proof hook */}
-                    <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
+                    <span className="inline-block bg-soft-gold/20 text-soft-gold text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-2 border border-soft-gold/30 uppercase tracking-wider">
                       #1 Rated Hibachi in Frisco
                     </span>
-                    <h2 className="text-2xl font-heading font-semibold text-white mb-2 drop-shadow-lg">
+                    <h2 className="text-xl font-heading font-semibold text-white mb-0.5 drop-shadow-lg">
                       Frisco
                     </h2>
-                    <p className="text-warm-ivory/80 text-sm mb-5 drop-shadow-md">
+                    <p className="text-warm-ivory/70 text-xs mb-3">
                       Near Stonebriar Centre
                     </p>
-                    <div className="flex flex-col gap-3">
-                      <OpenTableWidget
-                        restaurantId={locationsData.locations.frisco.reservation.rid}
-                        location="frisco"
-                        buttonText="Reserve a Table"
-                        variant="primary"
-                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-                      />
-                      <a
-                        href="tel:2146191200"
-                        className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        (214) 619-1200
-                      </a>
-                    </div>
+                    <OpenTableWidget
+                      restaurantId={locationsData.locations.frisco.reservation.rid}
+                      location="frisco"
+                      buttonText="Reserve a Table"
+                      variant="primary"
+                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 w-full px-4 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                    />
+                    <a
+                      href="tel:2146191200"
+                      className="mt-2 inline-flex items-center justify-center gap-1.5 text-xs text-white/60 hover:text-soft-gold transition-colors"
+                    >
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      (214) 619-1200
+                    </a>
                     <a
                       href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
                       target="_blank"
@@ -273,38 +255,35 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Lewisville Location Card */}
-                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/30 rounded-2xl p-6 min-w-[260px] shadow-2xl hover:border-accent-red/50 transition-all duration-300">
-                  <BorderBeam size={120} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
+                {/* Lewisville Location Card — compact */}
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-5 py-4 min-w-[240px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
+                  <BorderBeam size={100} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
-                    {/* Location-specific proof hook */}
-                    <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-semibold px-3 py-1 rounded-full mb-3 border border-soft-gold/30">
+                    <span className="inline-block bg-soft-gold/20 text-soft-gold text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-2 border border-soft-gold/30 uppercase tracking-wider">
                       Best Sushi in Lewisville
                     </span>
-                    <h2 className="text-2xl font-heading font-semibold text-white mb-2 drop-shadow-lg">
+                    <h2 className="text-xl font-heading font-semibold text-white mb-0.5 drop-shadow-lg">
                       Lewisville
                     </h2>
-                    <p className="text-warm-ivory/80 text-sm mb-5 drop-shadow-md">
+                    <p className="text-warm-ivory/70 text-xs mb-3">
                       Easy access from I-35E
                     </p>
-                    <div className="flex flex-col gap-3">
-                      <OpenTableWidget
-                        restaurantId={locationsData.locations.lewisville.reservation.rid}
-                        location="lewisville"
-                        buttonText="Reserve a Table"
-                        variant="primary"
-                        className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-                      />
-                      <a
-                        href="tel:2144882224"
-                        className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        (214) 488-2224
-                      </a>
-                    </div>
+                    <OpenTableWidget
+                      restaurantId={locationsData.locations.lewisville.reservation.rid}
+                      location="lewisville"
+                      buttonText="Reserve a Table"
+                      variant="primary"
+                      className="shimmer-cta inline-flex items-center justify-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 w-full px-4 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                    />
+                    <a
+                      href="tel:2144882224"
+                      className="mt-2 inline-flex items-center justify-center gap-1.5 text-xs text-white/60 hover:text-soft-gold transition-colors"
+                    >
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      (214) 488-2224
+                    </a>
                   </div>
                 </div>
               </div>

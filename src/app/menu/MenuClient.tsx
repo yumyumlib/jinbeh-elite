@@ -125,6 +125,36 @@ export default function MenuClient() {
                 </div>
             </section>
 
+            {/* Made Fresh Daily callout */}
+            <section className="py-12 bg-charcoal text-white">
+                <div className="container mx-auto px-6">
+                    <ScrollReveal>
+                        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+                            <div className="relative w-full md:w-80 aspect-[3/2] rounded-2xl overflow-hidden shadow-xl ring-2 ring-soft-gold/30 flex-shrink-0">
+                                <Image
+                                    src="/images/catalog/homemade-sauces.jpg"
+                                    alt="Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, 320px"
+                                />
+                            </div>
+                            <div className="text-center md:text-left">
+                                <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-bold px-3 py-1 rounded-full mb-3 border border-soft-gold/30 uppercase tracking-wider">
+                                    Made From Scratch
+                                </span>
+                                <h3 className="text-2xl font-heading font-bold mb-3">
+                                    Sauces Made Fresh Daily
+                                </h3>
+                                <p className="text-white/80 leading-relaxed">
+                                    Our Yum Yum sauce, spicy chili sauce, garlic butter, and every dipping sauce are made in-house daily from family recipes perfected over 37 years. No pre-packaged shortcuts — you taste the difference.
+                                </p>
+                            </div>
+                        </div>
+                    </ScrollReveal>
+                </div>
+            </section>
+
             {/* Menu Highlights with staggered reveal */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-6">
