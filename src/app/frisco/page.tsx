@@ -185,8 +185,8 @@ export default function FriscoPage() {
         {/* Hero Section */}
         <section className="hero relative bg-charcoal">
           <Image
-            src="/images/frisco/JinbehFriscoTables.jpg"
-            alt="Jinbeh Frisco dining interior"
+            src="/images/interior/FriscoLocation_Bar_Front.jpg"
+            alt="Jinbeh Frisco bar and lobby interior"
             fill
             className="object-cover"
             priority

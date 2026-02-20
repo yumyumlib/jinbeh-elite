@@ -717,18 +717,22 @@ export default function GraduationPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link
-                href="/reservations"
+              <a
+                href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve at Frisco
-              </Link>
-              <Link
-                href="/reservations"
+              </a>
+              <a
+                href="https://www.opentable.com/jinbeh-lewisville"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve at Lewisville
-              </Link>
+              </a>
             </div>
 
             <div className="mt-10 pt-10 border-t border-white/30">

@@ -261,18 +261,22 @@ export default function CelebrationsPage() {
               we make your special occasion restaurant DFW experience unforgettable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/reservations"
+              <a
+                href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Frisco
-              </Link>
-              <Link
-                href="/reservations"
+              </a>
+              <a
+                href="https://www.opentable.com/jinbeh-lewisville"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
                 Reserve Lewisville
-              </Link>
+              </a>
             </div>
           </div>
         </section>

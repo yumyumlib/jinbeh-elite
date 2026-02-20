@@ -230,15 +230,10 @@ export default function Header({ location }: HeaderProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-[9999] overflow-visible">
-        {/* Background blur layer */}
-        <div
-          className={`absolute inset-0 transition-all duration-300 pointer-events-none ${scrolled
-            ? "bg-charcoal/90 backdrop-blur-xl shadow-lg border-b border-white/10"
-            : "bg-charcoal/30 backdrop-blur-md border-b border-white/5"
-            }`}
-          aria-hidden="true"
-        />
+      <header className={`sticky top-0 z-[9999] overflow-visible transition-all duration-300 ${scrolled
+        ? "bg-charcoal/90 backdrop-blur-xl shadow-lg border-b border-white/10"
+        : "bg-charcoal/30 backdrop-blur-md border-b border-white/5"
+        }`}>
         <div className="relative container mx-auto px-4 lg:px-6">
           <div className="flex items-center justify-between h-16 py-1">
             {/* Logo — white SVG on transparent bg for seamless dark nav */}

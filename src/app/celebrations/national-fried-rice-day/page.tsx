@@ -108,18 +108,22 @@ export default function NationalFriedRiceDayPage() {
               Celebrate with the best hibachi fried rice in DFW
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/reservations"
-                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg"
+              <a
+                href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
               >
                 Reserve Frisco
-              </Link>
-              <Link
-                href="/reservations"
-                className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold shadow-lg"
+              </a>
+              <a
+                href="https://www.opentable.com/jinbeh-lewisville"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
               >
                 Reserve Lewisville
-              </Link>
+              </a>
             </div>
           </div>
         </section>
