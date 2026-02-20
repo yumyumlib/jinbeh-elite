@@ -364,6 +364,7 @@ export default function Header({ location }: HeaderProps) {
                   onMouseLeave={handleMouseLeave}
                 >
                   <button
+                    ref={(el) => { buttonRefs.current["phone"] = el; }}
                     onClick={() => setActiveDropdown(activeDropdown === "phone" ? null : "phone")}
                     className="inline-flex items-center gap-1.5 px-3 py-2 text-white hover:text-soft-gold transition-colors text-sm font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
                     aria-label="Call us - choose location"
@@ -376,47 +377,6 @@ export default function Header({ location }: HeaderProps) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  <div
-                    className={`absolute top-full right-0 mt-1.5 w-56 bg-white rounded-xl shadow-2xl border border-stone-200 z-[9999] transition-all duration-200 origin-top-right ${activeDropdown === "phone"
-                      ? "opacity-100 scale-100 pointer-events-auto translate-y-0"
-                      : "opacity-0 scale-95 pointer-events-none -translate-y-2"
-                      }`}
-                    onMouseEnter={() => handleMouseEnter("phone")}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <div className="p-2">
-                      <a
-                        href="tel:2146191200"
-                        className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Frisco</span>
-                          <span className="block text-xs text-charcoal/60">(214) 619-1200</span>
-                        </div>
-                      </a>
-                      <a
-                        href="tel:2144882224"
-                        className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group"
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Lewisville</span>
-                          <span className="block text-xs text-charcoal/60">(214) 488-2224</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               )}
 
@@ -439,6 +399,7 @@ export default function Header({ location }: HeaderProps) {
                   onMouseLeave={handleMouseLeave}
                 >
                   <button
+                    ref={(el) => { buttonRefs.current["reserve"] = el; }}
                     onClick={() => setActiveDropdown(activeDropdown === "reserve" ? null : "reserve")}
                     className="btn-shimmer inline-flex items-center gap-1.5 bg-accent-red text-white hover:bg-accent-red/90 px-4 py-2 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105 relative overflow-hidden"
                     aria-label="Reserve a table"
@@ -451,45 +412,6 @@ export default function Header({ location }: HeaderProps) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  <div
-                    className={`absolute top-full right-0 mt-1.5 w-60 bg-white rounded-xl shadow-2xl border border-stone-200 z-[9999] transition-all duration-200 origin-top-right ${activeDropdown === "reserve"
-                      ? "opacity-100 scale-100 pointer-events-auto translate-y-0"
-                      : "opacity-0 scale-95 pointer-events-none -translate-y-2"
-                      }`}
-                    onMouseEnter={() => handleMouseEnter("reserve")}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <div className="p-2">
-                      <button
-                        onClick={() => { handleReserveClick("frisco"); setActiveDropdown(null); }}
-                        className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
-                      >
-                        <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Frisco</span>
-                          <span className="block text-xs text-charcoal/60">Near Stonebriar Centre</span>
-                        </div>
-                      </button>
-                      <button
-                        onClick={() => { handleReserveClick("lewisville"); setActiveDropdown(null); }}
-                        className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
-                      >
-                        <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                        </span>
-                        <div>
-                          <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Lewisville</span>
-                          <span className="block text-xs text-charcoal/60">Easy access from I-35E</span>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               )}
             </div>
@@ -722,6 +644,7 @@ export default function Header({ location }: HeaderProps) {
       {/* Portal-rendered dropdown panels — render at body level to bypass ALL stacking context issues */}
       {portalReady && activeDropdown && dropdownPos && createPortal(
         <>
+          {/* Nav item dropdowns */}
           {navItems.map((item) => {
             if (item.label !== activeDropdown) return null;
 
@@ -731,7 +654,7 @@ export default function Header({ location }: HeaderProps) {
                   key={item.label}
                   role="menu"
                   aria-label={`${item.label} submenu`}
-                  className="fixed w-[680px] bg-white rounded-xl shadow-2xl border border-stone-200 transition-all duration-200 origin-top-right opacity-100 scale-100 pointer-events-auto"
+                  className="fixed w-[680px] bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
                   style={{ top: dropdownPos.top, right: 120, zIndex: 99999 }}
                   onMouseEnter={() => handleMouseEnter(item.label)}
                   onMouseLeave={handleMouseLeave}
@@ -745,7 +668,7 @@ export default function Header({ location }: HeaderProps) {
                         </div>
                         <div className="space-y-0.5">
                           {section.items.map((subItem) => (
-                            <Link
+                            <a
                               key={subItem.label}
                               href={subItem.href}
                               className="block px-2 py-1.5 rounded-md text-sm text-charcoal/80 hover:text-accent-red hover:bg-warm-ivory transition-all"
@@ -753,21 +676,21 @@ export default function Header({ location }: HeaderProps) {
                               onClick={() => setActiveDropdown(null)}
                             >
                               {subItem.label}
-                            </Link>
+                            </a>
                           ))}
                         </div>
                       </div>
                     ))}
                   </div>
                   <div className="border-t border-stone-100 px-4 py-3 bg-warm-ivory/50 rounded-b-xl flex items-center justify-between">
-                    <Link href="/blog" className="text-sm font-semibold text-accent-red hover:text-accent-red/80 transition-colors" onClick={() => setActiveDropdown(null)}>
+                    <a href="/blog" className="text-sm font-semibold text-accent-red hover:text-accent-red/80 transition-colors" onClick={() => setActiveDropdown(null)}>
                       View All Articles &rarr;
-                    </Link>
+                    </a>
                     <div className="flex items-center gap-3">
                       {["Celebrations", "Catering", "Tips"].map((cat) => (
-                        <Link key={cat} href={`/blog/category/${cat.toLowerCase()}`} className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all" onClick={() => setActiveDropdown(null)}>
+                        <a key={cat} href={`/blog/category/${cat.toLowerCase()}`} className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all" onClick={() => setActiveDropdown(null)}>
                           {cat}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -781,30 +704,23 @@ export default function Header({ location }: HeaderProps) {
                   key={item.label}
                   role="menu"
                   aria-label={`${item.label} submenu`}
-                  className="fixed w-72 bg-white rounded-xl shadow-2xl border border-stone-200 transition-all duration-200 origin-top opacity-100 scale-100 pointer-events-auto"
+                  className="fixed w-72 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
                   style={{ top: dropdownPos.top, left: dropdownPos.left, zIndex: 99999 }}
                   onMouseEnter={() => handleMouseEnter(item.label)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  {/* Location pill indicator for Menu dropdown */}
                   {item.label === "Menu" && (
                     <div className="px-3 pt-3 pb-1">
                       <div className="flex items-center gap-1.5 bg-warm-ivory rounded-lg p-1">
                         <button
                           onClick={() => setSelectedLocation("frisco")}
-                          className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "frisco"
-                            ? "bg-accent-red text-white shadow-md"
-                            : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"
-                            }`}
+                          className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "frisco" ? "bg-accent-red text-white shadow-md" : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"}`}
                         >
                           📍 Frisco
                         </button>
                         <button
                           onClick={() => setSelectedLocation("lewisville")}
-                          className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "lewisville"
-                            ? "bg-accent-red text-white shadow-md"
-                            : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"
-                            }`}
+                          className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "lewisville" ? "bg-accent-red text-white shadow-md" : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"}`}
                         >
                           📍 Lewisville
                         </button>
@@ -815,7 +731,7 @@ export default function Header({ location }: HeaderProps) {
                     {item.dropdown.map((subItem) => {
                       const isActiveLocation = item.label === "Locations" && location && subItem.label.toLowerCase().includes(location);
                       return (
-                        <Link
+                        <a
                           key={subItem.label}
                           href={subItem.href}
                           className={`block px-4 py-3 rounded-lg transition-all group ${isActiveLocation ? "bg-accent-red/10 border-l-4 border-accent-red" : "hover:bg-warm-ivory"}`}
@@ -829,22 +745,21 @@ export default function Header({ location }: HeaderProps) {
                           {subItem.description && (
                             <span className="block text-xs text-charcoal/60 mt-0.5">{subItem.description}</span>
                           )}
-                        </Link>
+                        </a>
                       );
                     })}
                   </div>
-                  {/* Footer guide links */}
                   {item.footerLinks && item.footerLinks.length > 0 && (
                     <div className="border-t border-stone-100 px-2 py-2 bg-warm-ivory/50 rounded-b-xl">
                       <span className="block px-4 pt-1 pb-1.5 text-[10px] font-bold text-charcoal/40 uppercase tracking-widest">Popular Guides</span>
                       {item.footerLinks.map((fl) => (
-                        <Link key={fl.label} href={fl.href} className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white transition-all group" role="menuitem" onClick={() => setActiveDropdown(null)}>
+                        <a key={fl.label} href={fl.href} className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white transition-all group" role="menuitem" onClick={() => setActiveDropdown(null)}>
                           <svg className="w-3.5 h-3.5 text-accent-red/60 group-hover:text-accent-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                           </svg>
                           <span className="text-sm text-charcoal/70 group-hover:text-accent-red transition-colors font-medium">{fl.label}</span>
                           {fl.description && <span className="text-xs text-charcoal/40 ml-auto">{fl.description}</span>}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   )}
@@ -854,6 +769,74 @@ export default function Header({ location }: HeaderProps) {
 
             return null;
           })}
+
+          {/* Call Us portal dropdown */}
+          {activeDropdown === "phone" && (
+            <div
+              className="fixed w-56 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
+              style={{ top: dropdownPos.top, right: 80, zIndex: 99999 }}
+              onMouseEnter={() => handleMouseEnter("phone")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="p-2">
+                <a href="tel:2146191200" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => setActiveDropdown(null)}>
+                  <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                  </span>
+                  <div>
+                    <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Frisco</span>
+                    <span className="block text-xs text-charcoal/60">(214) 619-1200</span>
+                  </div>
+                </a>
+                <a href="tel:2144882224" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => setActiveDropdown(null)}>
+                  <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                  </span>
+                  <div>
+                    <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Lewisville</span>
+                    <span className="block text-xs text-charcoal/60">(214) 488-2224</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          )}
+
+          {/* Reserve portal dropdown */}
+          {activeDropdown === "reserve" && (
+            <div
+              className="fixed w-60 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
+              style={{ top: dropdownPos.top, right: 16, zIndex: 99999 }}
+              onMouseEnter={() => handleMouseEnter("reserve")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="p-2">
+                <button
+                  onClick={() => { handleReserveClick("frisco"); setActiveDropdown(null); }}
+                  className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
+                >
+                  <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                  </span>
+                  <div>
+                    <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Frisco</span>
+                    <span className="block text-xs text-charcoal/60">Near Stonebriar Centre</span>
+                  </div>
+                </button>
+                <button
+                  onClick={() => { handleReserveClick("lewisville"); setActiveDropdown(null); }}
+                  className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
+                >
+                  <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                  </span>
+                  <div>
+                    <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Lewisville</span>
+                    <span className="block text-xs text-charcoal/60">Easy access from I-35E</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          )}
         </>,
         document.body
       )}

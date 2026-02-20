@@ -472,8 +472,8 @@ export default function HomePage() {
               <h2 className="text-3xl md:text-5xl font-heading font-bold text-charcoal mb-4">
                 37 Years of Excellence
               </h2>
-              <p className="text-lg md:text-xl text-charcoal/70 max-w-2xl mx-auto">
-                Family-owned, community-loved, and serving unforgettable experiences since 1988
+              <p className="text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto text-center">
+                Family-owned, community-loved, and serving unforgettable experiences since&nbsp;1988
               </p>
             </div>
 
@@ -533,12 +533,14 @@ export default function HomePage() {
             </div>
 
             {/* Tagline reinforcement */}
-            <div className="text-center mt-16">
+            <div className="text-center mt-12">
               <p className="text-xl md:text-2xl font-heading italic text-cedar-brown/90 max-w-3xl mx-auto">
                 &ldquo;We&apos;ve been coming here for over 20 years... and we&apos;ll return soon.&rdquo;
               </p>
-              <p className="mt-3 text-sm font-semibold text-cedar-brown/60 uppercase tracking-wider">
-                — Google Review
+              <p className="mt-3 text-sm font-semibold text-cedar-brown/60 uppercase tracking-wider inline-flex items-center justify-center gap-1.5">
+                —
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" /><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" /><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" /><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" /></svg>
+                Verified Review
               </p>
             </div>
           </div>
@@ -941,7 +943,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-semibold text-charcoal">Alaina Thompson</p>
-                        <p className="text-xs text-charcoal/70">Google Review</p>
+                        <p className="text-xs text-charcoal/70 inline-flex items-center gap-1"><svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" /><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" /><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" /><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" /></svg> Verified</p>
                       </div>
                     </div>
                   </div>
@@ -1284,8 +1286,8 @@ export default function HomePage() {
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
                   Find Your <span className="text-soft-gold">Jinbeh</span>
                 </h2>
-                <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-                  Same award-winning menu. Same family tradition since 1988. Pick the location nearest you.
+                <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed text-center">
+                  Same award-winning menu. Same family tradition since 1988. Pick the location nearest&nbsp;you.
                 </p>
               </div>
             </ScrollReveal>
@@ -1341,7 +1343,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Phone - Prominent */}
-                    <a href="tel:2146191200" className="flex items-center justify-center gap-3 mb-6 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-6 py-3.5 transition-all group">
+                    <a href="tel:2146191200" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-6 py-3 transition-all group">
                       <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
@@ -1349,7 +1351,7 @@ export default function HomePage() {
                     </a>
 
                     {/* CTAs */}
-                    <div className="mt-auto">
+                    <div>
                       <OpenTableWidget
                         restaurantId={locationsData.locations.frisco.reservation.rid}
                         location="frisco"
@@ -1360,7 +1362,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Embedded Google Map */}
-                    <div className="mt-6 rounded-xl overflow-hidden border border-white/10">
+                    <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3!2d-96.8261!3d33.1017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3ca5e3c2ef7b%3A0x5e58e280f2a2e845!2sJinbeh!5e0!3m2!1sen!2sus"
                         width="100%"
@@ -1438,7 +1440,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Phone - Prominent */}
-                    <a href="tel:2144882224" className="flex items-center justify-center gap-3 mb-6 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-6 py-3.5 transition-all group">
+                    <a href="tel:2144882224" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-6 py-3 transition-all group">
                       <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
@@ -1446,7 +1448,7 @@ export default function HomePage() {
                     </a>
 
                     {/* CTAs */}
-                    <div className="mt-auto">
+                    <div>
                       <OpenTableWidget
                         restaurantId={locationsData.locations.lewisville.reservation.rid}
                         location="lewisville"
@@ -1457,7 +1459,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Embedded Google Map */}
-                    <div className="mt-6 rounded-xl overflow-hidden border border-white/10">
+                    <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3!2d-96.9946!3d33.0243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2844e2222a49%3A0x290e34b8b2a9d8a0!2sJinbeh!5e0!3m2!1sen!2sus"
                         width="100%"
@@ -1489,7 +1491,7 @@ export default function HomePage() {
             {/* Bottom tagline */}
             <ScrollReveal delay={200}>
               <p className="text-center text-white/50 text-sm mt-12">
-                Family-owned &amp; operated since 1988 &bull; Over 1,000 five-star reviews across both locations
+                Family-owned &amp; operated since 1988 &bull; Over 1,200+ five-star reviews across both locations
               </p>
             </ScrollReveal>
           </div>
