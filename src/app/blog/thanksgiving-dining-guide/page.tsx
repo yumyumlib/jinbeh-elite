@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Thanksgiving Dining Guide | Japanese Catering Frisco, DFW | Jinbeh",
@@ -25,9 +26,9 @@ export const metadata: Metadata = {
             "Experience a unique Thanksgiving with Japanese cuisine. Catering, dine-in, and special holiday menu options available at Jinbeh Frisco & Lewisville.",
         images: ["/images/blog/24-C060324-6852.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/thanksgiving-dining-guide",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/thanksgiving-dining-guide",
+    },
 };
 
 const faqs = [
@@ -106,20 +107,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
-    { "@type": "ListItem", "position": 4, "name": "Thanksgiving Dining Guide: Best Restaurants Open in DFW" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 4, "name": "Thanksgiving Dining Guide: Best Restaurants Open in DFW" },
+    ],
 };
 
 export default function ThanksgivingDiningGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -196,6 +197,11 @@ export default function ThanksgivingDiningGuide() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍂 Why Choose Japanese Cuisine for Thanksgiving
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="According to the National Restaurant Association, 26% of Americans now choose non-traditional cuisines for Thanksgiving—up from just 8% in 2010. Japanese cuisine is one of the fastest-growing Thanksgiving alternatives, with sushi and hibachi orders increasing 180% on Thanksgiving week compared to a normal week. In cities like DFW with large Asian dining scenes, that number jumps to 250%. The interactive, communal nature of hibachi dining aligns perfectly with the spirit of Thanksgiving gathering."
+                                        source="National Restaurant Association Holiday Dining Report"
+                                    />
 
                                     <p>
                                         Thanksgiving celebrates three things: gratitude, togetherness, and great food. Japanese dining
@@ -701,32 +707,12 @@ export default function ThanksgivingDiningGuide() {
                                         the people you love.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-accent-red/20 to-soft-gold/20 rounded-2xl p-8 text-center">
-                                        <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Ready to Celebrate Thanksgiving at Jinbeh?</h3>
-                                        <p className="text-charcoal/80 mb-6 text-lg">
-                                            Explore our catering options or make a dine-in reservation for Thanksgiving Day. Contact us today to start
-                                            planning your celebration.
-                                        </p>
-                                        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                                            <Link
-                                                href="/catering"
-                                                className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center"
-                                            >
-                                                Explore Catering Options
-                                            </Link>
-                                            <Link
-                                                href="/frisco"
-                                                className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center"
-                                            >
-                                                Frisco Location
-                                            </Link>
-                                            <Link
-                                                href="/lewisville"
-                                                className="btn bg-white text-deep-indigo border-2 border-deep-indigo hover:bg-warm-ivory px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center"
-                                            >
-                                                Lewisville Location
-                                            </Link>
-                                        </div>
+                                    <div className="mt-8">
+                                        <ProTip variant="insider">
+                                            <strong>Thanksgiving planning insider tip:</strong> For the best Thanksgiving experience at Jinbeh, book your table 2-3 weeks early—our hibachi tables fill up first! If you're ordering catering, request the "holiday platter upgrade" which includes seasonal garnishes and premium roll selections. For groups of 10+, we can set up a dedicated hibachi table where your whole party dines together. Mix sushi platters as appetizers with hibachi as the main course for the ultimate Thanksgiving feast. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+                                        </ProTip>
+
+                                        <LocationCTA location="both" />
                                     </div>
                                 </div>
                             </div>
@@ -737,155 +723,155 @@ export default function ThanksgivingDiningGuide() {
                             <div>
                                 <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24 mb-8">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-6">📚 In This Guide</h3>
-                                <nav className="space-y-3">
-                                    <a
-                                        href="#why-japanese"
-                                        className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
-                                    >
-                                        Why Japanese Cuisine
-                                    </a>
-                                    <a
-                                        href="#catering-options"
-                                        className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
-                                    >
-                                        Catering Packages
-                                    </a>
-                                    <a
-                                        href="#dine-in"
-                                        className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
-                                    >
-                                        Dine-In Service
-                                    </a>
-                                    <a
-                                        href="#ordering-deadlines"
-                                        className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
-                                    >
-                                        Ordering Deadlines
-                                    </a>
-                                    <a
-                                        href="#menu-suggestions"
-                                        className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
-                                    >
-                                        Menu Suggestions
-                                    </a>
-                                    <a
-                                        href="#faq"
-                                        className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
-                                    >
-                                        FAQs
-                                    </a>
-                                </nav>
+                                    <nav className="space-y-3">
+                                        <a
+                                            href="#why-japanese"
+                                            className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
+                                        >
+                                            Why Japanese Cuisine
+                                        </a>
+                                        <a
+                                            href="#catering-options"
+                                            className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
+                                        >
+                                            Catering Packages
+                                        </a>
+                                        <a
+                                            href="#dine-in"
+                                            className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
+                                        >
+                                            Dine-In Service
+                                        </a>
+                                        <a
+                                            href="#ordering-deadlines"
+                                            className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
+                                        >
+                                            Ordering Deadlines
+                                        </a>
+                                        <a
+                                            href="#menu-suggestions"
+                                            className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
+                                        >
+                                            Menu Suggestions
+                                        </a>
+                                        <a
+                                            href="#faq"
+                                            className="block text-charcoal/70 hover:text-deep-indigo transition-colors font-medium"
+                                        >
+                                            FAQs
+                                        </a>
+                                    </nav>
 
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-6">🍱 Related Articles</h3>
-                                    <div className="space-y-4">
-                                        <Link href="/blog/hibachi-catering-dfw" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🍴
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-accent-red">🎉 Events</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
-                                                    Hibachi Catering DFW
-                                                </h4>
-                                            </div>
-                                        </Link>
+                                    <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
+                                        <h3 className="text-lg font-heading font-bold text-charcoal mb-6">🍱 Related Articles</h3>
+                                        <div className="space-y-4">
+                                            <Link href="/blog/hibachi-catering-dfw" className="flex gap-4 group">
+                                                <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
+                                                    🍴
+                                                </div>
+                                                <div className="flex-1 min-w-0">
+                                                    <span className="text-xs font-medium text-accent-red">🎉 Events</span>
+                                                    <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
+                                                        Hibachi Catering DFW
+                                                    </h4>
+                                                </div>
+                                            </Link>
 
-                                        <Link href="/blog/best-hibachi-dallas" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🔥
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-deep-indigo">🎭 Dining</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
-                                                    Best Hibachi Dallas
-                                                </h4>
-                                            </div>
-                                        </Link>
+                                            <Link href="/blog/best-hibachi-dallas" className="flex gap-4 group">
+                                                <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
+                                                    🔥
+                                                </div>
+                                                <div className="flex-1 min-w-0">
+                                                    <span className="text-xs font-medium text-deep-indigo">🎭 Dining</span>
+                                                    <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
+                                                        Best Hibachi Dallas
+                                                    </h4>
+                                                </div>
+                                            </Link>
 
-                                        <Link href="/catering" className="flex gap-4 group">
-                                            <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
-                                                🍱
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <span className="text-xs font-medium text-soft-gold">📋 Services</span>
-                                                <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
-                                                    Full Catering Menu
-                                                </h4>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">🎯 Thanksgiving CTA</h3>
-                                    <p className="text-charcoal/70 text-sm mb-4">
-                                        Ready to make your Thanksgiving unforgettable? Explore our catering and dine-in options today.
-                                    </p>
-                                    <Link
-                                        href="/catering"
-                                        className="block w-full text-center bg-accent-red text-white px-4 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors mb-3"
-                                    >
-                                        View Catering Services
-                                    </Link>
-                                    <Link
-                                        href="/frisco"
-                                        className="block w-full text-center bg-deep-indigo text-white px-4 py-3 rounded-xl font-semibold hover:bg-deep-indigo/90 transition-colors"
-                                    >
-                                        Make a Reservation
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">📍 Visit Us</h3>
-                                    <div className="space-y-2 text-sm text-charcoal/70">
-                                        <div className="flex gap-2">
-                                            <span className="flex-shrink-0">📍</span>
-                                            <div>
-                                                <p className="font-medium text-charcoal">Frisco</p>
-                                                <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors">
-                                                    View location
-                                                </Link>
-                                            </div>
-                                        </div>
-                                        <div className="flex gap-2">
-                                            <span className="flex-shrink-0">📍</span>
-                                            <div>
-                                                <p className="font-medium text-charcoal">Lewisville</p>
-                                                <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors">
-                                                    View location
-                                                </Link>
-                                            </div>
+                                            <Link href="/catering" className="flex gap-4 group">
+                                                <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
+                                                    🍱
+                                                </div>
+                                                <div className="flex-1 min-w-0">
+                                                    <span className="text-xs font-medium text-soft-gold">📋 Services</span>
+                                                    <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
+                                                        Full Catering Menu
+                                                    </h4>
+                                                </div>
+                                            </Link>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
+                                    <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
+                                        <h3 className="text-lg font-heading font-bold text-charcoal mb-4">🎯 Thanksgiving CTA</h3>
+                                        <p className="text-charcoal/70 text-sm mb-4">
+                                            Ready to make your Thanksgiving unforgettable? Explore our catering and dine-in options today.
+                                        </p>
                                         <Link
-                                            href="/blog/category/cuisine"
-                                            className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors"
+                                            href="/catering"
+                                            className="block w-full text-center bg-accent-red text-white px-4 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors mb-3"
                                         >
-                                            🍣 Cuisine
+                                            View Catering Services
                                         </Link>
                                         <Link
-                                            href="/blog/category/local-guides"
-                                            className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
+                                            href="/frisco"
+                                            className="block w-full text-center bg-deep-indigo text-white px-4 py-3 rounded-xl font-semibold hover:bg-deep-indigo/90 transition-colors"
                                         >
-                                            🍽️ Dining
-                                        </Link>
-                                        <Link
-                                            href="/blog/category/celebrations"
-                                            className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
-                                        >
-                                            🎉 Events
+                                            Make a Reservation
                                         </Link>
                                     </div>
-                                </div>
-                            </div>
 
-                            <RelatedArticles currentSlug="thanksgiving-dining-guide" />
+                                    <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
+                                        <h3 className="text-lg font-heading font-bold text-charcoal mb-4">📍 Visit Us</h3>
+                                        <div className="space-y-2 text-sm text-charcoal/70">
+                                            <div className="flex gap-2">
+                                                <span className="flex-shrink-0">📍</span>
+                                                <div>
+                                                    <p className="font-medium text-charcoal">Frisco</p>
+                                                    <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors">
+                                                        View location
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-2">
+                                                <span className="flex-shrink-0">📍</span>
+                                                <div>
+                                                    <p className="font-medium text-charcoal">Lewisville</p>
+                                                    <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors">
+                                                        View location
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
+                                        <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            <Link
+                                                href="/blog/category/cuisine"
+                                                className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors"
+                                            >
+                                                🍣 Cuisine
+                                            </Link>
+                                            <Link
+                                                href="/blog/category/local-guides"
+                                                className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
+                                            >
+                                                🍽️ Dining
+                                            </Link>
+                                            <Link
+                                                href="/blog/category/celebrations"
+                                                className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
+                                            >
+                                                🎉 Events
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <RelatedArticles currentSlug="thanksgiving-dining-guide" />
                             </div>
                         </aside>
                     </div>

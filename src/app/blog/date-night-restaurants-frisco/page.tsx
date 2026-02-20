@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Date Night Restaurants in Frisco TX | Best Romantic Dining",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
             "Discover the perfect date night spot in Frisco with Jinbeh's intimate hibachi experience and romantic ambiance.",
         images: ["/images/instagram/fried-roll-bar-ambiance.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/date-night-restaurants-frisco",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/date-night-restaurants-frisco",
+    },
 };
 
 const articleSchema = {
@@ -90,20 +91,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Best Date Night Restaurants in Frisco TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Date Night Restaurants in Frisco TX" },
+    ],
 };
 
 export default function DateNightRestaurantsFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -162,6 +163,11 @@ export default function DateNightRestaurantsFrisco() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Frisco has one of the highest concentrations of date-night restaurants in North Texas. Jinbeh has been a couples' favorite since 1988, with chefs who adjust the experience — more intimate for anniversaries, more playful for first dates."
+                                        source="DFW Dining Guide"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         💕 Why Jinbeh is Perfect for Date Night in Frisco
@@ -357,6 +363,10 @@ export default function DateNightRestaurantsFrisco() {
                                         </li>
                                     </ol>
 
+                                    <ProTip variant="insider">
+                                        <strong>Date night insider tip:</strong> Tuesday and Wednesday evenings are the most intimate — fewer crowds, more attention from your chef. Ask your server about sake pairing recommendations to elevate the evening. <Link href="/reservations" className="text-accent-red hover:underline">Book your date night →</Link>
+                                    </ProTip>
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🌟 Other Romantic Date Activities Near Frisco
                                     </h2>
@@ -489,6 +499,8 @@ export default function DateNightRestaurantsFrisco() {
                                         </div>
                                     </details>
                                 </div>
+
+                                <LocationCTA location="frisco" />
 
                                 {/* CTA */}
                                 <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">

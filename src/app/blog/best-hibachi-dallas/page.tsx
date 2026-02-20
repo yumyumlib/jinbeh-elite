@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, CompareCards, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh",
@@ -92,6 +93,11 @@ export default function BestHibachiDallasPage() {
         entertainment. Beyond our <Link href="/blog/best-hibachi-dallas" className="text-accent-red hover:underline">best hibachi in Dallas</Link> offerings,
         we also offer a full <Link href="/menu" className="text-accent-red hover:underline">menu</Link> including <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link>.
       </p>
+
+      <DidYouKnow
+        fact="What most Americans call 'hibachi' is actually teppanyaki — cooking on a flat iron griddle. True hibachi is a small charcoal grill. Jinbeh has been perfecting the teppanyaki art since 1988, with chefs who train for years."
+        source="Japanese Culinary History"
+      />
 
       <h2>What Makes Dallas Hibachi Special?</h2>
 
@@ -257,6 +263,10 @@ export default function BestHibachiDallasPage() {
         </Link>
       </p>
 
+      <ProTip variant="insider">
+        <strong>Booking tip:</strong> Reserve your hibachi table at least a week in advance for Friday and Saturday nights. Mention birthdays or special occasions when booking — Jinbeh's chefs customize the show for celebrations. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
+      </ProTip>
+
       <h2>What to Expect at Your First Hibachi Dinner</h2>
 
       <p>
@@ -298,6 +308,38 @@ export default function BestHibachiDallasPage() {
         authentic Japanese flavors and techniques our chefs trained in. Our sushi bar offers a more traditional experience for guests seeking something
         quieter, while the hibachi grills deliver dinner and a show. Explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
       </p>
+
+      <CompareCards
+        items={[
+          {
+            icon: "🏢",
+            title: "Chain Hibachi",
+            features: [
+              "Standardized menu and portions",
+              "Rotating staff with varied training",
+              "Pre-portioned, often frozen proteins",
+              "Corporate atmosphere",
+              "Higher price point for brand name"
+            ],
+            highlight: false,
+          },
+          {
+            icon: "🏮",
+            title: "Jinbeh (Family-Owned)",
+            features: [
+              "Fresh, never-frozen ingredients daily",
+              "Chefs trained for years in-house",
+              "Owner-operated since 1988",
+              "Celebrations tailored to your group",
+              "Two convenient DFW locations"
+            ],
+            highlight: true,
+            cta: { label: "Reserve a Table →", href: "/reservations" },
+          }
+        ]}
+        vsLabel="VS"
+      />
+
 
       <h2>Best Value: Hibachi Lunch Specials</h2>
 
@@ -355,6 +397,8 @@ export default function BestHibachiDallasPage() {
           <li>✓ Rated "Best Hibachi in DFW" by guests</li>
         </ul>
       </div>
+
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="best-hibachi-dallas" />
     </ArticleLayout>

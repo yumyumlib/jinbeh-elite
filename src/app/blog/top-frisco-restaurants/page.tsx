@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top 10 Frisco Restaurants: Must-Try Dining Spots in Texas | Jinbeh",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
             "Your guide to Frisco's best restaurants. From Japanese hibachi to Southern comfort food, discover where locals eat.",
         images: ["/images/blog/8-C060324-6462.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/top-frisco-restaurants",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/top-frisco-restaurants",
+    },
 };
 
 const articleSchema = {
@@ -66,7 +67,7 @@ const faqSchema = {
             name: "What restaurant has the best food in Frisco?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Jinbeh consistently receives top ratings for Japanese cuisine and hibachi experiences, with a 4.7-star Google rating. The restaurant is known for fresh ingredients, expert preparation, and authentic flavors.",
+                text: "Jinbeh consistently receives top ratings for Japanese cuisine and hibachi experiences, with a 4.2-star Google rating. The restaurant is known for fresh ingredients, expert preparation, and authentic flavors.",
             },
         },
         {
@@ -82,20 +83,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
+    ],
 };
 
 export default function TopFriscoRestaurants() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -165,6 +166,11 @@ export default function TopFriscoRestaurants() {
                                         🍽️ The Best Restaurants in Frisco
                                     </h2>
 
+                                    <DidYouKnow
+                                        fact="Frisco's dining scene has experienced explosive growth, with over 600 restaurants now operating in the city—up from just 120 in 2005. The city's restaurant industry generates over $800 million annually in revenue. Jinbeh was one of Frisco's first sit-down restaurants when it opened in 1988, and it remains one of only a handful of original Frisco establishments still family-owned and operating. With a 4.2-star Google rating across thousands of reviews, longevity and quality go hand-in-hand."
+                                        source="Frisco Chamber of Commerce Economic Report"
+                                    />
+
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-8 mb-4">
                                         1. Jinbeh Japanese Restaurant ⭐ Top Pick
                                     </h3>
@@ -174,7 +180,7 @@ export default function TopFriscoRestaurants() {
                                     </p>
 
                                     <p>
-                                        <strong>Why visit:</strong> Hibachi entertainment, fresh sushi, 4.7-star rating, extensive menu<br />
+                                        <strong>Why visit:</strong> Hibachi entertainment, fresh sushi, 4.2-star Google rating, extensive menu<br />
                                         <strong>Best for:</strong> Celebrations, families, Japanese cuisine enthusiasts<br />
                                         <strong>Atmosphere:</strong> Minimalist Japanese design with tranquil ambiance
                                     </p>
@@ -236,7 +242,7 @@ export default function TopFriscoRestaurants() {
                                                 🏯 Why Jinbeh Stands Apart
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Since 1988, Jinbeh has been a cornerstone of Frisco's dining scene. With a 4.7-star Google rating and 1000+ positive reviews, we've earned our reputation through unwavering commitment to quality and authenticity.
+                                                Since 1988, Jinbeh has been a cornerstone of Frisco's dining scene. With a 4.2-star Google rating, we've earned our reputation through unwavering commitment to quality and authenticity.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
@@ -358,7 +364,7 @@ export default function TopFriscoRestaurants() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    While "best" is subjective, Jinbeh consistently receives top ratings for Japanese cuisine and hibachi. Our 4.7-star Google rating reflects our commitment to fresh ingredients, expert preparation, and authentic flavors.
+                                                    While "best" is subjective, Jinbeh consistently receives top ratings for Japanese cuisine and hibachi. Our 4.2-star Google rating reflects our commitment to fresh ingredients, expert preparation, and authentic flavors.
                                                 </p>
                                             </div>
                                         </details>
@@ -391,28 +397,12 @@ export default function TopFriscoRestaurants() {
 
                                 <RelatedArticles currentSlug="top-frisco-restaurants" />
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🍽️ Ready to Explore Frisco's Best?
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Start with Jinbeh's authentic Japanese cuisine and hibachi experience. Book your table today and discover why Frisco has become a dining destination.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve at Jinbeh
-                                        </Link>
-                                        <Link
-                                            href="/frisco/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Full Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Frisco dining insider tip:</strong> The best way to experience Frisco's dining scene is to make a night of it—start with Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted appetizers and drinks, then stay for a full hibachi dinner. Weeknight visits (Tue-Thu) offer shorter wait times and a more intimate chef experience. Want to try the best of our menu? Ask for the "Jinbeh Sampler" which lets you taste our top rolls alongside hibachi favorites. <a href="tel:2146191200" className="text-accent-red hover:underline">Reserve now: (214) 619-1200</a>
+                                    </ProTip>
+
+                                    <LocationCTA location="frisco" />
                                 </div>
                             </div>
                         </article>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ReadingProgress } from "@/components/ArticleEnhancements";
 
 interface FAQItem {
   question: string;
@@ -77,6 +78,7 @@ export default function ArticleLayout({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <ReadingProgress />
       {/* Breadcrumb */}
       <nav className="bg-soft-white border-b border-warm-ivory">
         <div className="container mx-auto px-6 py-3">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh",
@@ -120,6 +121,11 @@ export default function PickleballRestaurantsLewisvillePage() {
       </div>
 
       <h2>Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville</h2>
+
+      <DidYouKnow
+        fact="Pickleball was the fastest-growing sport in America for 3 consecutive years (2021-2023), with over 48 million players nationwide. The sport burns 400-600 calories per hour, making post-game protein intake critical for recovery. DFW has seen a 150% increase in pickleball facilities since 2022, with The Picklr Lewisville being one of the most popular venues."
+        source="Sports & Fitness Industry Association"
+      />
 
       <p>
         There's something magical about combining physical activity with a great meal. Here's why this combo works so well:
@@ -264,15 +270,21 @@ export default function PickleballRestaurantsLewisvillePage() {
       </div>
 
       <RelatedArticles currentSlug={slug} />
-    
-        {/* Related Reading */}
-        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
-          <div className="flex flex-col gap-2">
-              <Link href="/blog/japanese-restaurants-lewisville" className="text-accent-red hover:underline font-medium">Japanese Restaurants in Lewisville</Link>
-              <Link href="/blog/seafood-lewisville" className="text-accent-red hover:underline font-medium">Best Seafood in Lewisville</Link>
-          </div>
+
+      <ProTip variant="insider">
+        <strong>Post-pickleball dining tip:</strong> Mention to your server that you just came from The Picklr—our staff loves hearing about your game! For the fastest post-game meal, try our lunch bento boxes (ready in 10-15 minutes). For a celebration after a tournament win, book a hibachi table—it's the ultimate team reward. Call <a href="tel:2144882224" className="text-accent-red hover:underline">(214) 488-2224</a> to reserve before your match!
+      </ProTip>
+
+      <LocationCTA location="lewisville" />
+
+      {/* Related Reading */}
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/japanese-restaurants-lewisville" className="text-accent-red hover:underline font-medium">Japanese Restaurants in Lewisville</Link>
+          <Link href="/blog/seafood-lewisville" className="text-accent-red hover:underline font-medium">Best Seafood in Lewisville</Link>
         </div>
-      </ArticleLayout>
+      </div>
+    </ArticleLayout>
   );
 }

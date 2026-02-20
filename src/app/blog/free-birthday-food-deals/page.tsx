@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
@@ -218,6 +219,11 @@ export default function FreeBirthdayFoodDealsPage() {
         <p className="text-sm text-charcoal/80">— Jinbeh Birthday Guest</p>
       </div>
 
+      <DidYouKnow
+        fact="Over 150 million Americans take advantage of birthday freebies each year, with the average person redeeming 3-5 birthday offers. Restaurant birthday programs increase customer return rates by 40%, and birthday diners spend an average of 65% more than their regular visits because they bring larger groups."
+        source="Loyalty360 & Restaurant Business Online"
+      />
+
       <p>
         If you're a Japanese cuisine fan, Jinbeh offers a fantastic option—a
         complimentary birthday meal. This is a perfect choice for those seeking
@@ -419,14 +425,20 @@ export default function FreeBirthdayFoodDealsPage() {
         </Link>{" "}
         for a birthday they'll remember.
       </p>
-    
-        {/* Related Reading */}
-        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
-          <div className="flex flex-col gap-2">
-              <Link href="/blog/birthday-celebration-restaurants" className="text-accent-red hover:underline font-medium">Best Birthday Celebration Restaurants</Link>
-          </div>
+
+      <ProTip variant="insider">
+        <strong>Birthday freebie insider tip:</strong> At Jinbeh, mention your birthday when making a reservation and our team will prepare a complimentary birthday treat. The hibachi experience itself is the real gift — your chef performs fire tricks, knife skills, and the famous onion volcano right at your table. Pro move: start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks before the show. <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
+      </ProTip>
+
+      <LocationCTA location="both" />
+
+      {/* Related Reading */}
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/birthday-celebration-restaurants" className="text-accent-red hover:underline font-medium">Best Birthday Celebration Restaurants</Link>
         </div>
-      </ArticleLayout>
+      </div>
+    </ArticleLayout>
   );
 }

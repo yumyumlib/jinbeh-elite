@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
@@ -18,9 +19,9 @@ export const metadata: Metadata = {
         description: "Quality Japanese food at fast casual speed—discover Jinbeh's lunch options.",
         images: ["/images/blog/9-C060324-6484.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/fast-casual-dining-jinbeh",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/fast-casual-dining-jinbeh",
+    },
 };
 
 const faqs = [
@@ -77,6 +78,11 @@ export default function FastCasualDiningJinbeh() {
                 <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline"> date night</Link>?
                 Settle in for a full hibachi experience. The choice is yours—and the quality never changes.
             </p>
+
+            <DidYouKnow
+                fact="The fast casual dining segment has grown into a $263 billion industry in the US, growing 10% annually — faster than any other restaurant category. While most fast casual spots sacrifice quality for speed, family-owned restaurants like Jinbeh prove you can have both: fresh, made-to-order Japanese cuisine served at your pace, whether that's a 30-minute sushi lunch or a full evening hibachi experience."
+                source="National Restaurant Association 2025 Industry Report"
+            />
 
             <h2>Quick Lunch Options</h2>
 
@@ -140,12 +146,18 @@ export default function FastCasualDiningJinbeh() {
                 <li><strong>No time to dine in?</strong> → <Link href="/order-online" className="text-accent-red hover:underline">Takeout or delivery</Link></li>
             </ul>
 
+            <ProTip variant="insider">
+                <strong>Lunch break hack:</strong> Call ahead 20 minutes before you leave the office and your sushi or bento order will be ready when you arrive. Reviewers say the chicken teriyaki bento is the best lunch deal in DFW — a complete meal with soup, salad, and rice for under $15. For the ultimate quick sushi lunch, sit at the bar and ask the chef for an "omakase roll" — they'll surprise you with something amazing. <Link href="/reservations" className="text-accent-red hover:underline">Visit for lunch →</Link>
+            </ProTip>
+
             <p>
                 Visit us for lunch Monday through Friday and discover why Jinbeh is the best of both
                 worlds: restaurant-quality Japanese food that works with your schedule. Check our
                 <Link href="/menu" className="text-accent-red hover:underline"> full menu</Link> and see what
                 catches your eye.
             </p>
+
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

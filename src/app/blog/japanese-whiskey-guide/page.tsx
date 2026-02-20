@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Whiskey's Global Rise: A Flavorful Journey | Jinbeh",
@@ -65,6 +66,11 @@ export default function JapaneseWhiskeyGuide() {
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Japanese whiskey has revolutionized the global spirits market.</strong> From humble origins in 1923 to international acclaim, Japanese distillers have perfected the art of whiskey-making by blending Scottish tradition with Japanese precision and innovation. Explore our curated selection at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red underline transition-colors">Jinbeh bar</Link>.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 The Origins of Japanese Whiskey</h2>
+
+                            <DidYouKnow
+                                fact="In 2015, Suntory's Yamazaki Single Malt Sherry Cask was named the World's Best Whisky by Jim Murray's Whisky Bible, shocking the industry and catapulting Japanese whiskey to global fame. Today, rare bottles of Yamazaki 50 Year Old sell for over $300,000 at auction. Japan has over 30 active whiskey distilleries, and demand so far exceeds supply that many age-stated expressions have been discontinued."
+                                source="Jim Murray's Whisky Bible & Sotheby's Auction Records"
+                            />
                             <p className="text-charcoal/80 mb-6">The story of Japanese whiskey begins in the early 20th century with two visionary men: Shinjiro Torii and Masataka Taketsuru. Torii, founder of Suntory, was inspired by Scotch whiskey tradition and sought to create a spirit reflecting the delicate balance and harmony of Japanese culture.</p>
                             <p className="text-charcoal/80 mb-6">Taketsuru, a young visionary, traveled to Scotland to master whiskey-making techniques. He brought back crucial knowledge that would lay the foundation for Japan's whiskey industry. Together, in 1923, they established Yamazaki, Japan's first malt whiskey distillery—a testament to their pioneering spirit and vision.</p>
 
@@ -148,13 +154,12 @@ export default function JapaneseWhiskeyGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">Explore Premium Japanese Whiskeys at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover our curated selection of Japanese whiskeys, expertly paired with our exceptional Japanese cuisine and hibachi experiences. Start with <Link href="/happy-hour" className="text-soft-gold hover:underline">happy hour</Link> for special drink pricing. Visit either our <Link href="/frisco" className="text-white hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-white hover:underline">Lewisville</Link> location to taste these remarkable spirits with the hospitality of a gracious host.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-accent-red px-8 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Reserve a Table</Link>
-                                    <a href="tel:2146191200" className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/20 transition">Call (214) 619-1200</a>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="insider">
+                                    <strong>Japanese whiskey tasting tip:</strong> At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, try the highball—Japan's favorite way to enjoy whiskey. It's Suntory whisky over ice with sparkling water, and it pairs perfectly with hibachi and sushi. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on our Japanese whiskey selection. Ask the bartender for a tasting comparison of Suntory vs. Nikka!
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

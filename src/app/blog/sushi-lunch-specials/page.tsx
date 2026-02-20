@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Lunch Specials Near You Today | Jinbeh",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
             "Find the best sushi lunch specials with affordable pricing and variety. Discover deals at your favorite sushi restaurants.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/sushi-lunch-specials",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sushi-lunch-specials",
+    },
 };
 
 const articleSchema = {
@@ -56,20 +57,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Sushi Lunch Specials: Best Deals Near You" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Sushi Lunch Specials: Best Deals Near You" },
+    ],
 };
 
 export default function SushiLunchSpecials() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -141,6 +142,11 @@ export default function SushiLunchSpecials() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         💰 Why Choose Lunch Specials?
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="The concept of lunch specials at Japanese restaurants originated in post-war Japan with 'teishoku' (set meals). Today, lunchtime is the #1 time Americans try sushi for the first time—70% of first-time sushi eaters order during lunch. The average lunch special saves diners 35-45% compared to dinner pricing, and bento box-style meals have grown 300% in U.S. restaurant popularity since 2015."
+                                        source="National Restaurant Association Trends Report"
+                                    />
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
@@ -369,28 +375,12 @@ export default function SushiLunchSpecials() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🍱 Hungry? Dive Into Our Lunch Specials Today!
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Enjoy premium sushi at unbeatable prices. Visit Jinbeh for lunch today.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/frisco"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Visit Frisco Location
-                                        </Link>
-                                        <Link
-                                            href="/lewisville"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Visit Lewisville Location
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Jinbeh lunch insider tip:</strong> Visit between 11:30 AM and noon for the freshest lunch prep—our chefs prepare a new batch of rice and slice fish specifically for the lunch rush. Ask about the "lunch bento special" which isn't always on the printed menu. For groups of 4+, call ahead and we can have a custom lunch platter ready when you arrive. Pair with a midday <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">sake</Link> for a true Japanese lunch experience. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { RevealSection, HeroSection, ShinyBadge, NumberTickerInline as NumberTicker, AnimatedGradientText } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { QuoteStrip } from "@/components/CustomerVoice";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -287,6 +288,18 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Featured Customer Testimonial Banner */}
+        <section className="py-12 bg-white border-y border-stone-200">
+          <div className="container mx-auto px-6">
+            <RevealSection>
+              <QuoteStrip
+                quote="We've been coming here for over 20 years — we highly recommend them and will return soon!"
+                author="Real Google Review"
+              />
+            </RevealSection>
+          </div>
+        </section>
+
         {/* Values Section */}
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
@@ -313,6 +326,9 @@ export default function AboutPage() {
                 <p className="text-charcoal/70 text-sm">
                   We source the finest, freshest fish daily. Our Yum Yum sauce, dipping sauces, and garlic butter are all made in-house—no shortcuts. Explore our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to see what we serve. When you taste the difference, you understand why guests prefer us over chains.
                 </p>
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                  &ldquo;The food is consistently great and of the highest quality.&rdquo; — Google Review
+                </p>
               </div>
 
               {/* Skilled Chefs */}
@@ -327,6 +343,9 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-charcoal/70 text-sm">
                   Skilled chefs bring artistry and entertainment to every table. The onion volcano, the flying shrimp, the flames—it&apos;s dinner and a show, every time. Discover the rich history of <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline">Japanese culinary culture</Link> behind these traditions.
+                </p>
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                  &ldquo;Chef cooks right in front of you using special effects with fire — always fun!&rdquo; — TripAdvisor Review
                 </p>
               </div>
 
@@ -343,6 +362,9 @@ export default function AboutPage() {
                 <p className="text-charcoal/70 text-sm">
                   Family-owned and operated. You won&apos;t feel like a transaction—you&apos;ll feel like a guest in our home. That&apos;s the difference authenticity makes.
                 </p>
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                  &ldquo;Service is great — cozy and family-like.&rdquo; — Google Review
+                </p>
               </div>
 
               {/* Celebrations */}
@@ -357,6 +379,9 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-charcoal/70 text-sm">
                   Birthdays, anniversaries, graduations, proposals—Jinbeh is where <Link href="/celebrations" className="text-accent-red hover:underline">celebrations come alive</Link>. We offer <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> for your most special moments.
+                </p>
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                  &ldquo;We&apos;ve been coming here for years, celebrating a lot of birthdays.&rdquo; — Google Review
                 </p>
               </div>
             </div>

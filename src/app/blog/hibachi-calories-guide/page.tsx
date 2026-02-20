@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, MenuItemCard } from "@/components/ArticleEnhancements";
+import { MealBuilder } from "@/components/MealBuilder";
 
 export const metadata: Metadata = {
   title: "Jinbeh Hibachi Calories 2025: Complete Nutrition Guide | Teppanyaki Calories",
@@ -134,6 +136,11 @@ export default function HibachiCaloriesGuidePage() {
         <p className="text-sm text-charcoal/80">— Verified Jinbeh Guest</p>
       </div>
 
+      <DidYouKnow
+        fact="Hibachi grills reach temperatures of 400°F or higher — hot enough to sear protein in seconds with minimal added oils. This high-heat cooking method actually preserves more nutrients than boiling or steaming."
+        source="Japanese Culinary Institute"
+      />
+
       <h2>Hibachi Protein Calories & Nutrition</h2>
 
       <p>
@@ -223,6 +230,13 @@ export default function HibachiCaloriesGuidePage() {
       <p>
         <strong>Best for:</strong> Lowest-calorie option, heart health, those prioritizing lean protein
       </p>
+
+      <MenuItemCard item={{
+        name: "Hibachi Shrimp",
+        description: "The leanest protein on Jinbeh's hibachi menu at just 150–200 calories. Guests describe it as 'perfectly cooked' with a sweet, natural flavor. Pair with extra vegetables and steamed rice for a 350-calorie complete meal.",
+        badge: "Lowest Calorie",
+        menuLink: "/frisco/hibachi"
+      }} />
 
       <h3>Hibachi Scallops</h3>
 
@@ -326,6 +340,11 @@ export default function HibachiCaloriesGuidePage() {
           </tbody>
         </table>
       </div>
+
+      <ProTip variant="chef">
+        Jinbeh's garlic butter is pre-made the day before, giving it time to develop an incredible depth of flavor. Ask for it on your hibachi vegetables — it adds about 40 calories but transforms the dish. The key is <strong>controlling sauces</strong>: a light drizzle beats a heavy pour every time.
+      </ProTip>
+
       <h3>Fried Rice (The Calorie Multiplier)</h3>
 
       <p>
@@ -386,11 +405,43 @@ export default function HibachiCaloriesGuidePage() {
         Ginger sauce and soy-based sauces are lighter choices than creamy options.
       </p>
 
+      {/* Interactive Meal Builder */}
+      <MealBuilder />
+
       <h2>Hibachi vs. Other Restaurant Options</h2>
 
       <p>
         How does hibachi compare to other popular restaurant meals? Here's a reality check:
       </p>
+
+      <CompareCards
+        items={[
+          {
+            title: "Hibachi Chicken",
+            icon: "🍗",
+            highlight: true,
+            features: [
+              "400–450 cal with veggies & rice",
+              "40–45g protein",
+              "Fresh, visible cooking",
+              "Customizable portions",
+              "Low added fats",
+            ],
+            cta: { label: "Reserve a Table", href: "/reservations" },
+          },
+          {
+            title: "Fast-Food Burger & Fries",
+            icon: "🍔",
+            features: [
+              "800–1,000 cal",
+              "25–30g protein",
+              "Hidden kitchen prep",
+              "Fixed portions",
+              "Deep-fried sides",
+            ],
+          },
+        ]}
+      />
 
       <h3>Hibachi Chicken with Vegetables</h3>
 
@@ -508,9 +559,9 @@ export default function HibachiCaloriesGuidePage() {
 
       <h3>Strategy 4: Control Sauces</h3>
 
-      <p>
-        Request all sauces on the side. You'll still get the flavor boost without excess calories. Light drizzling of sauce beats heavy coating.
-      </p>
+      <ProTip variant="health">
+        Request all sauces on the side. A light drizzle of ginger sauce (25 cal) gives you 90% of the flavor of a heavy pour of yum yum sauce (80+ cal). Your waistline will thank you.
+      </ProTip>
 
       <h3>Strategy 5: Manage Portions Mindfully</h3>
 
@@ -581,17 +632,28 @@ export default function HibachiCaloriesGuidePage() {
         </ul>
       </div>
 
+      <StatBlock
+        stats={[
+          { value: "150", label: "Lowest Cal Protein", icon: "🦐" },
+          { value: "190", label: "Cal Saved", icon: "🍚" },
+          { value: "40g+", label: "Protein Per Serving", icon: "💪" },
+          { value: "400°F", label: "Grill Temperature", icon: "🔥" },
+        ]}
+      />
+
       <p>
         You don't have to choose between enjoying restaurant dining and meeting your nutritional goals. By understanding <Link href="/blog/hibachi-calories-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi calories</Link>, choosing lean proteins, requesting extra vegetables, controlling sauces, and managing portions mindfully, you can enjoy{" "}
         <Link href="/menu" className="text-accent-red hover:underline font-medium">
           Jinbeh's exceptional Japanese cuisine
         </Link>{" "}
-        while staying aligned with your health objectives. Explore our <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Frisco location</Link> or <Link href="/lewisville" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Lewisville location</Link> to dine with us.
+        while staying aligned with your health objectives.
       </p>
 
       <p>
-        The key is balance, moderation, and making informed choices. Every visit to Jinbeh can be both delicious and nutritionally responsible. Need <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi lunch ideas</Link>? Browse our <Link href="/lunch-specials" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">lunch specials</Link> for affordable healthy options. Ready to try? <Link href="/reservations" className="text-accent-red hover:underline font-medium">Make a reservation</Link> and enjoy your meal!
+        The key is balance, moderation, and making informed choices. Every visit to Jinbeh can be both delicious and nutritionally responsible. Need <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi lunch ideas</Link>? Browse our <Link href="/lunch-specials" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">lunch specials</Link> for affordable healthy options.
       </p>
+
+      <LocationCTA location="both" />
     </ArticleLayout>
   );
 }

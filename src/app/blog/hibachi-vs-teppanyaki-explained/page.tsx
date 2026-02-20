@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, CompareCards, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions | Jinbeh",
@@ -79,6 +80,11 @@ export default function HibachiVsTeppanyakiPage() {
       <p>
         Here's the truth: in Japan, hibachi and teppanyaki are two distinct cooking methods. But in America, the lines have blurred so much that most people use the terms interchangeably. We're here to clear up the confusion and help you understand what you're actually experiencing when you sit down at a table in front of a skilled chef wielding spatulas and flames.
       </p>
+
+      <DidYouKnow
+        fact='The word "hibachi" (火鉢) literally means "fire bowl" in Japanese — and what Americans call "hibachi restaurants" actually serve teppanyaki-style cooking on flat iron griddles, not charcoal grills.'
+        source="Japanese Culinary Traditions"
+      />
 
       {/* History and Origin Section */}
       <h2>A Brief History: Where It All Started</h2>
@@ -227,6 +233,39 @@ export default function HibachiVsTeppanyakiPage() {
           </tbody>
         </table>
       </div>
+
+      <CompareCards
+        items={[
+          {
+            icon: "🔥",
+            title: "Traditional Hibachi",
+            features: [
+              "Small charcoal grill (火鉢)",
+              "1–2 person intimate setting",
+              "Smoky, charred flavor profile",
+              "Quiet, refined atmosphere",
+              "Minimal performance — food-focused",
+              "Common in Japan, rare in the US"
+            ],
+            highlight: false,
+          },
+          {
+            icon: "🎭",
+            title: "Teppanyaki (Jinbeh)",
+            features: [
+              "Large flat iron griddle (鉄板)",
+              "6–10 guests, communal seating",
+              "Clean, precise searing",
+              "Energetic, celebratory vibe",
+              "Onion volcano, fire tricks, shrimp toss",
+              "What Jinbeh has served since 1988"
+            ],
+            highlight: true,
+            cta: { label: "Experience Jinbeh →", href: "/reservations" },
+          }
+        ]}
+        vsLabel="VS"
+      />
 
       {/* What to Expect Section */}
       <h2>What to Expect at Each Experience</h2>
@@ -401,6 +440,10 @@ export default function HibachiVsTeppanyakiPage() {
         </li>
       </ul>
 
+      <ProTip variant="insider">
+        <strong>Insider tip:</strong> Jinbeh's teppanyaki tables seat 8–10 guests, and the chef tailors the show to your group — more playful for kids' birthdays, more refined for date nights. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> and mention your occasion when booking.
+      </ProTip>
+
       {/* Why the Confusion Matters Section */}
       <h2>Why Does This Confusion Matter?</h2>
 
@@ -434,6 +477,8 @@ export default function HibachiVsTeppanyakiPage() {
       <p>
         Whether you're celebrating a birthday, planning a date night, or just wanting a meal that engages all your senses, we invite you to experience what makes teppanyaki dining unforgettable. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today.
       </p>
+
+      <LocationCTA location="both" />
 
       {/* Related Content Links */}
       <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-xl p-6 my-8">

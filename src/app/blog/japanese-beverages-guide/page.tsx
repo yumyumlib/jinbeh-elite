@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Popular Japanese Beverages: Iconic Drinks Guide | Jinbeh",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
         description: "Explore iconic Japanese beverages and their cultural significance. From traditional sake to modern Ramune.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/japanese-beverages-guide",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/japanese-beverages-guide",
+    },
 };
 
 const schemas = [
@@ -29,20 +30,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-    { "@type": "ListItem", "position": 4, "name": "Japanese Drinks: Sake, Beer, and Beyond" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Japanese Drinks: Sake, Beer, and Beyond" },
+    ],
 };
 
 export default function JapaneseBeveragesGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -69,6 +70,11 @@ export default function JapaneseBeveragesGuide() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍵 Traditional Tea & Spirits</h2>
+
+                            <DidYouKnow
+                                fact="Japan has over 5.5 million vending machines—the highest density in the world—serving everything from hot matcha and canned coffee to fresh sake. The Japanese beverage market is worth $150 billion annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
+                                source="Japan Vending Machine Manufacturers Association"
+                            />
                             <p className="text-charcoal/80 mb-4">Japan's tea culture is deeply rooted in history, with beverages that have been perfected over centuries. These drinks offer refreshment, wellness benefits, and cultural significance.</p>
 
                             <div className="space-y-4 my-6">
@@ -156,15 +162,12 @@ export default function JapaneseBeveragesGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-soft-gold to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍜 Pair Japanese Beverages with Authentic Cuisine at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Enhance your dining experience with properly paired Japanese beverages, from premium sake with sushi to traditional matcha tea completing your meal. Explore our <Link href="/blog/japanese-cocktails" className="text-white hover:underline underline">Japanese cocktails</Link> for artful mixology, visit our <Link href="/bar" className="text-white hover:underline underline">bar</Link> for the full selection, or drop by during <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> for special pricing on drinks.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-soft-gold px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
-                                    <Link href="/lewisville/menu" className="bg-white text-soft-gold px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Lewisville Menu</Link>
-                                    <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Reserve Frisco</Link>
-                                    <Link href="/reservations" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Reserve Lewisville</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="chef">
+                                    <strong>Beverage pairing pro tip:</strong> At Jinbeh, ask your server for a sake recommendation to pair with your meal. Dry sake pairs beautifully with sushi and sashimi, while fruity varieties complement hibachi steak. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, try our sake sampler to explore different styles at special prices. Don't miss our Japanese whisky selection and signature <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">cocktails</Link> like the lychee martini!
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

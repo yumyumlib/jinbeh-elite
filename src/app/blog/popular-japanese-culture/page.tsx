@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Popular Japanese Things: Iconic Cultural Treasures | Jinbeh",
@@ -75,6 +76,11 @@ export default function PopularJapaneseCulture() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Japanese Cuisine: Art on a Plate</h2>
+
+                            <DidYouKnow
+                                fact="Japanese cultural exports—including anime, manga, food, and fashion—generate over $100 billion annually in global revenue. Japanese cuisine was designated a UNESCO Intangible Cultural Heritage in 2013, one of only a few national cuisines to receive this honor. Over 160,000 Japanese restaurants operate outside Japan, with sushi being the most popular Japanese food globally."
+                                source="UNESCO & Japan External Trade Organization"
+                            />
                             <p className="text-charcoal/80 mb-4">Japanese cuisine is celebrated for its exquisite presentation, delicate flavors, and profound respect for seasonal ingredients. Each dish is a masterpiece reflecting regional cultural influences and natural bounty. Explore the full range of <Link href="/blog/japanese-beverages-guide" className="text-accent-red hover:underline">Japanese beverages</Link> that complement this culinary artistry.</p>
 
                             <div className="grid md:grid-cols-2 gap-4 my-6 bg-warm-ivory rounded-xl p-6">
@@ -183,14 +189,12 @@ export default function PopularJapaneseCulture() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Japanese Culture at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">From authentic sushi crafted by skilled artisans to entertaining <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-white hover:underline underline">hibachi performances</Link>, Jinbeh brings Japan's culinary traditions to Dallas. Explore our <Link href="/menu" className="text-white hover:underline underline">full menu</Link> or learn <Link href="/about" className="text-white hover:underline underline">our story</Link> of 37 years of Japanese hospitality.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
-                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Frisco Location</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville Location</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="chef">
+                                    <strong>Japanese culture tip:</strong> At Jinbeh, you can experience multiple aspects of Japanese culture in one visit. Watch the artistry of our sushi chefs at the bar, enjoy the theatrical performance of hibachi cooking, and sample traditional beverages like <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake</Link> and <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline">Ramune soda</Link>. For a deeper dive, try our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience—it's the most culturally authentic way to dine!
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

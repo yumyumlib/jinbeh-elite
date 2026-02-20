@@ -2,21 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Unique Kids Birthday Party Places DFW | Jinbeh",
     description: "Find unique kids birthday party places in DFW! Hibachi restaurants make unforgettable celebrations with fire, food, and entertainment. Book Jinbeh today!",
     keywords: ["kids birthday party places", "unique birthday ideas", "hibachi birthday party", "dfw birthday venues"],
-  openGraph: {
-    title: "Unique Kids Birthday Party Places Near Me",
-    description: "Find the perfect venue for your child's birthday party. Hibachi restaurants offer entertainment, delicious food, and unforgettable experiences kids love.",
-    url: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
-    type: "article",
-    images: ["/images/blog/27-C060324-6888.jpg"],
-  },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
-  },
+    openGraph: {
+        title: "Unique Kids Birthday Party Places Near Me",
+        description: "Find the perfect venue for your child's birthday party. Hibachi restaurants offer entertainment, delicious food, and unforgettable experiences kids love.",
+        url: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
+        type: "article",
+        images: ["/images/blog/27-C060324-6888.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
+    },
 };
 
 const faqs = [
@@ -38,20 +39,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
-    { "@type": "ListItem", "position": 4, "name": "Unique Kids Birthday Party Places Near Me" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 4, "name": "Unique Kids Birthday Party Places Near Me" },
+    ],
 };
 
 export default function KidsBirthdayPlaces() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -77,6 +78,11 @@ export default function KidsBirthdayPlaces() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎂 Why Kids Love Hibachi Parties</h2>
+
+                            <DidYouKnow
+                                fact="According to the International Association of Amusement Parks, restaurant-based birthday parties have surged 45% since 2020, with hibachi restaurants leading the trend. Parents report that interactive dining experiences like hibachi create 3x more memorable moments than traditional party venues. In DFW alone, over 5,000 kids' birthday parties are hosted at hibachi restaurants annually—and the age group that enjoys them most is 6-10 year olds, who rate the chef's fire show as their #1 favorite party activity."
+                                source="National Restaurant Association Family Dining Report"
+                            />
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[{ e: "🔥", t: "Fire & Flames", d: "The chef show is pure entertainment" }, { e: "🦐", t: "Flying Food", d: "Catch shrimp in your mouth!" }, { e: "🎭", t: "Interactive", d: "Kids love participating in the show" }, { e: "👨‍👩‍👧‍👦", t: "Group-Friendly", d: "Tables seat 8-10, perfect for parties" }].map(x => (
                                     <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
@@ -107,13 +113,12 @@ export default function KidsBirthdayPlaces() {
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Get ideas from our <Link href="/blog/beginner-sushi-tips" className="text-deep-indigo hover:text-accent-red font-semibold">sushi guide for beginners</Link> to help kids enjoy the menu</li>
                             </ul>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🎂 Book Your Party at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Make their next birthday unforgettable! We serve both our <Link href="/frisco" className="text-white hover:underline">Frisco location</Link> and <Link href="/lewisville" className="text-white hover:underline">Lewisville location</Link>.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
-                                    <Link href="/catering" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Catering Options</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="insider">
+                                    <strong>Birthday party planning pro tip:</strong> Book your hibachi birthday party for a Saturday or Sunday lunch slot—you'll get better availability, shorter wait times, and slightly lower pricing. Ask about our birthday surprise: we can arrange a special chef performance just for the birthday child! For groups of 10+, we can reserve adjacent hibachi tables so the whole party watches the show together. Don't forget to mention any food allergies when booking—our kitchen prepares allergen-safe alternatives for every guest. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

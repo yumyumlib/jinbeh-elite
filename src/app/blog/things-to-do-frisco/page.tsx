@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Things to Do in Frisco TX: Top Activities & Dining | Jinbeh",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Your ultimate guide to Frisco's best attractions, activities, and restaurants.",
         images: ["/images/blog/15-C060324-6663.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/things-to-do-frisco",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/things-to-do-frisco",
+    },
 };
 
 const articleSchema = {
@@ -50,7 +51,7 @@ const faqs = [
     },
     {
         question: "What are the best restaurants in Frisco TX?",
-        answer: "Frisco boasts an incredible dining scene. Jinbeh Japanese Restaurant (since 1988) is a local favorite for hibachi and sushi with 4.7 stars on Google. Other popular spots include Perry's Steakhouse, Cane Rosso for pizza, Dee Lincoln for steaks, and the many options at Legacy West.",
+        answer: "Frisco boasts an incredible dining scene. Jinbeh Japanese Restaurant (since 1988) is a local favorite for hibachi and sushi with 4.2 stars on Google. Other popular spots include Perry's Steakhouse, Cane Rosso for pizza, Dee Lincoln for steaks, and the many options at Legacy West.",
     },
     {
         question: "What family activities are there in Frisco?",
@@ -73,20 +74,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Things to Do in Frisco TX: Your Ultimate Guide" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Things to Do in Frisco TX: Your Ultimate Guide" },
+    ],
 };
 
 export default function ThingsToDoFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -155,6 +156,11 @@ export default function ThingsToDoFrisco() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🏟️ Sports &amp; Entertainment
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Frisco is one of the fastest-growing cities in America, jumping from a population of 33,000 in 2000 to over 230,000 today—a staggering 600% growth in just two decades. The city is now home to 3 professional sports headquarters (Dallas Cowboys, FC Dallas, PGA of America), making it the only city in the U.S. with that distinction. Jinbeh has been part of this Frisco story since 1988, predating most of the city's iconic landmarks."
+                                        source="City of Frisco Economic Development Report"
+                                    />
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
@@ -226,7 +232,7 @@ export default function ThingsToDoFrisco() {
                                             <tr className="border-b border-warm-ivory bg-soft-gold/10">
                                                 <td className="p-4 font-semibold text-charcoal">🔥 Hibachi &amp; Sushi</td>
                                                 <td className="p-4">⭐ Jinbeh</td>
-                                                <td className="p-4">Family-owned since 1988, 4.7 stars, chef shows + sushi bar</td>
+                                                <td className="p-4">Family-owned since 1988, 4.2 stars on Google, chef shows + sushi bar</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">🥩 Fine Dining</td>
@@ -335,20 +341,12 @@ export default function ThingsToDoFrisco() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🏯 Cap Off Your Frisco Day at Jinbeh</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Frisco&apos;s original Japanese restaurant since 1988. Fresh sushi, sizzling hibachi, and the warmest hospitality in town.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Make a Reservation
-                                        </Link>
-                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Frisco insider day plan:</strong> Start with morning activities at The Star or KidZania, grab lunch at one of Legacy West's cafés, then spend the afternoon shopping at Stonebriar Centre. Cap off your perfect Frisco day with dinner at Jinbeh—we're just 3 minutes from Stonebriar! Arrive by 5 PM to snag <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> pricing on apps and drinks before your meal. Weekend reservations fill fast, so <Link href="/reservations" className="text-accent-red hover:underline">book ahead</Link>.
+                                    </ProTip>
+
+                                    <LocationCTA location="frisco" />
                                 </div>
                             </div>
                         </article>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems | Jinbeh",
@@ -69,6 +70,11 @@ export default function BestSushiDallas() {
                                 <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
                             </div>
 
+                            <DidYouKnow
+                                fact="The DFW metroplex has over 400 Japanese restaurants, but Jinbeh is one of only a handful that has been family-owned and operating continuously since 1988 — nearly four decades of serving fresh sushi and hibachi. Reviewers consistently note that the quality rivals downtown Dallas spots at a fraction of the price."
+                                source="Google Maps & DFW Dining Data"
+                            />
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏆 Top Dallas-Area Sushi Spots</h2>
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Price</th></tr></thead>
@@ -91,6 +97,10 @@ export default function BestSushiDallas() {
                                     </div>
                                 ))}
                             </div>
+
+                            <ProTip variant="insider">
+                                <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during happy hour (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                            </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-4">
@@ -145,15 +155,7 @@ export default function BestSushiDallas() {
                                 </details>
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍣 Worth the Drive from Dallas</h3>
-                                <p className="text-white/80 mb-6">Fresh sushi, entertaining hibachi, family-friendly vibes—all just north of Dallas. Browse our <Link href="/menu" className="text-white hover:underline underline">full sushi menu</Link> or read about the <Link href="/blog/best-sushi-frisco" className="text-white hover:underline underline">best sushi in Frisco</Link>.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
-                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Frisco Location</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville Location</Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

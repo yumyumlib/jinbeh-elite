@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Seafood in Lewisville TX: Top Restaurants to Try | Jinbeh",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
             "Explore the finest seafood restaurants in Lewisville. Fresh fish, sushi, and authentic Japanese cuisine await.",
         images: ["/images/blog/10-C060324-6501.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/seafood-lewisville",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/seafood-lewisville",
+    },
 };
 
 const faqs = [
@@ -89,20 +90,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Best Seafood in Lewisville TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Seafood in Lewisville TX" },
+    ],
 };
 
 export default function SeafoodLewisville() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -174,6 +175,11 @@ export default function SeafoodLewisville() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🌊 Lewisville's Emerging Seafood Scene
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Lewisville Lake, covering 29,000 acres, has made Lewisville a surprising inland hub for seafood lovers. The DFW metroplex receives over 40 tons of fresh seafood daily via air freight from both coasts and Japan—the same supply chain that serves coastal cities. As a result, restaurants like Jinbeh in Lewisville can serve sashimi-grade fish that was swimming in the ocean just 24-48 hours earlier."
+                                        source="DFW International Airport Cargo Report"
+                                    />
 
                                     <p>
                                         Lewisville has quietly developed into a destination for quality seafood dining. The city's diverse
@@ -355,28 +361,12 @@ export default function SeafoodLewisville() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🌊 Experience Lewisville's Best Seafood
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Visit Jinbeh for authentic Japanese seafood prepared with expertise and passion.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve at Lewisville
-                                        </Link>
-                                        <Link
-                                            href="/lewisville/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Seafood Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Lewisville seafood insider tip:</strong> At Jinbeh Lewisville, ask for the "chef's selection sashimi"—our chefs pick the freshest fish of the day and you'll get varieties you might not see on the regular menu. Tuesday and Wednesday evenings tend to be less crowded, giving you more time to chat with the sushi chefs. Pair your seafood with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for the ultimate experience. <a href="tel:2144882224" className="text-accent-red hover:underline">Call Lewisville: (214) 488-2224</a>
+                                    </ProTip>
+
+                                    <LocationCTA location="lewisville" />
                                 </div>
                             </div>
                         </article>

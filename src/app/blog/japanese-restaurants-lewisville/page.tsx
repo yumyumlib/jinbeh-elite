@@ -2,25 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Restaurants Lewisville TX: Top Picks | Jinbeh",
     description: "Find the best Japanese restaurants in Lewisville TX! From hibachi to sushi, discover authentic dining. Jinbeh offers family-friendly hibachi and fresh sushi.",
     keywords: ["japanese restaurant lewisville", "sushi lewisville tx", "hibachi lewisville", "asian food lewisville"],
-  openGraph: {
-    title: "Best Japanese Restaurants Lewisville TX",
-    description: "Find authentic Japanese cuisine in Lewisville TX. From hibachi shows to fresh sushi, discover the best spots near Vista Ridge Mall and I-35E.",
-    url: "https://jinbeh.com/blog/japanese-restaurants-lewisville",
-    type: "article",
-    images: ["/images/photoshoot/hibachi-steak.jpg"],
-  },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/japanese-restaurants-lewisville",
-  },
+    openGraph: {
+        title: "Best Japanese Restaurants Lewisville TX",
+        description: "Find authentic Japanese cuisine in Lewisville TX. From hibachi shows to fresh sushi, discover the best spots near Vista Ridge Mall and I-35E.",
+        url: "https://jinbeh.com/blog/japanese-restaurants-lewisville",
+        type: "article",
+        images: ["/images/photoshoot/hibachi-steak.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/japanese-restaurants-lewisville",
+    },
 };
 
 const faqs = [
-    { question: "What's the best Japanese restaurant in Lewisville?", answer: "Welcome to the table! Jinbeh has served Lewisville since 1988. 4.7 stars on Google. Hibachi shows, fresh sushi, family-friendly. We treat every guest like family." },
+    { question: "What's the best Japanese restaurant in Lewisville?", answer: "Welcome to the table! Jinbeh has served Lewisville since 1988. 4.4 stars on Google. Hibachi shows, fresh sushi, family-friendly. We treat every guest like family." },
     { question: "Do you have hibachi in Lewisville?", answer: "Yes! Our hibachi tables seat 8-10 guests. Full chef performance. Dinner and a show. Fire tricks, onion volcano, perfectly cooked proteins. Perfect for celebrations and groups." },
     { question: "Can you handle large groups?", answer: "Absolutely! We specialize in groups. Hibachi tables, flexible seating, customized menus. Call (214) 488-2224 to arrange your party. We love making celebrations special." },
     { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful—that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
@@ -36,20 +37,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Best Japanese Restaurants Lewisville TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Japanese Restaurants Lewisville TX" },
+    ],
 };
 
 export default function JapaneseRestaurantsLewisville() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
@@ -75,6 +76,11 @@ export default function JapaneseRestaurantsLewisville() {
                                 <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
                             </div>
 
+                            <DidYouKnow
+                                fact="Jinbeh has been part of Lewisville's dining community since 1988, making it one of the longest-running Japanese restaurants in the DFW metroplex. With a 4.4-star Google rating from over 900 reviews, many locals say they prefer Jinbeh's family-owned feel over chain hibachi steakhouses."
+                                source="Google Reviews & DFW Dining History"
+                            />
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍱 Top Japanese Spots in Lewisville</h2>
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Style</th><th className="p-3 text-left">Best For</th></tr></thead>
@@ -96,6 +102,10 @@ export default function JapaneseRestaurantsLewisville() {
                                     </div>
                                 ))}
                             </div>
+
+                            <ProTip variant="insider">
+                                <strong>Lewisville regulars' favorites:</strong> Start with the hibachi — it's the signature experience, and reviewers rave about the entertaining chef shows. For sushi, the Dallas Roll and Volcano Roll are consistent crowd favorites. Locals also swear by the crab rangoon, calling them &quot;the best they've ever had.&quot; <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                            </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions About Japanese Dining in Lewisville</h2>
                             <div className="space-y-3">
@@ -121,22 +131,7 @@ export default function JapaneseRestaurantsLewisville() {
                                 </div>
                             </div>
 
-                            <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
-                                <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Explore Both Jinbeh Locations</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/lewisville" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
-                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Lewisville Location</h4>
-                                        <p className="text-charcoal/70 text-sm mb-4">Off I-35E near Vista Ridge Mall. Convenient for local community and group dining.</p>
-                                        <span className="inline-block text-accent-red font-semibold">Visit us in Lewisville →</span>
-                                    </Link>
-
-                                    <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
-                                        <h4 className="text-lg font-heading font-bold text-charcoal group-hover:text-accent-red mb-2">Frisco Location</h4>
-                                        <p className="text-charcoal/70 text-sm mb-4">Near Stonebriar Centre. Perfect for North Texas fine dining and celebrations.</p>
-                                        <span className="inline-block text-accent-red font-semibold">Visit us in Frisco →</span>
-                                    </Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="lewisville" />
                         </article>
 
                         <aside className="lg:col-span-1">

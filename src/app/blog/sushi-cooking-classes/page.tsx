@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sushi Cooking Classes Near Me | Learn Sushi Making Today",
@@ -158,6 +159,11 @@ export default function SushiCookingClasses() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🎓 Why Take Sushi Cooking Classes?
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Traditional sushi apprenticeship in Japan takes 10+ years to complete. Apprentices spend the first 2-3 years just learning to cook and season rice before they're allowed to touch fish. The famous sushi master Jiro Ono (of 'Jiro Dreams of Sushi') trained apprentices for 10 years before allowing them to prepare tamago (egg). Modern cooking classes condense these principles into accessible sessions for enthusiasts."
+                                        source="Japan Sushi Academy"
+                                    />
 
                                     <p className="text-charcoal/80 mb-6">
                                         Sushi cooking classes are more than just a fun activity. They provide a comprehensive introduction
@@ -384,20 +390,12 @@ export default function SushiCookingClasses() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Ready to Learn Sushi?</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Welcome to the table! Contact Jinbeh to inquire about our sushi making classes. Learn authentic techniques from experienced chefs at our <Link href="/frisco" className="text-white hover:text-soft-gold underline transition-colors">Frisco</Link> or <Link href="/lewisville" className="text-white hover:text-soft-gold underline transition-colors">Lewisville</Link> location. Check our <Link href="/events" className="text-white hover:text-soft-gold underline transition-colors">events page</Link> for upcoming class dates.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Inquire About Classes
-                                        </Link>
-                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Our Full Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="chef">
+                                        <strong>Sushi class tip from our chefs:</strong> The most important skill isn't cutting fish—it's making perfect rice. Practice the rice first: use short-grain Japanese rice, rinse until water runs clear, and season with rice vinegar while still warm. At Jinbeh, watch our sushi bar chefs in action during your visit—they're happy to explain techniques. Our <Link href="/events" className="text-accent-red hover:underline">events page</Link> has info on special dining experiences. For private group events, <a href="tel:2146191200" className="text-accent-red hover:underline">call Frisco: (214) 619-1200</a>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
 
                                 <RelatedArticles currentSlug="sushi-cooking-classes" />

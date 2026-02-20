@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sake Pairing Guide: Best Pairings with Sushi & Hibachi | Jinbeh",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
         description: "Elevate your Japanese dining experience with expert sake pairing recommendations.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/sake-pairing-guide",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sake-pairing-guide",
+    },
 };
 
 const faqs = [
@@ -87,20 +88,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-    { "@type": "ListItem", "position": 4, "name": "Sake Pairing Guide: Perfect Matches for Every Dish" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Sake Pairing Guide: Perfect Matches for Every Dish" },
+    ],
 };
 
 export default function SakePairingGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -163,6 +164,11 @@ export default function SakePairingGuide() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Sake has been brewed in Japan for over 1,000 years, with more than 10,000 breweries operating at its peak. Today, about 1,400 breweries remain — each with distinct regional styles. The word 'sake' actually means 'alcoholic beverage' in Japanese; what we call sake is properly known as 'nihonshu' (日本酒)."
+                                        source="Japan Sake & Shochu Makers Association"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍶 Understanding Sake: The Basics
@@ -359,13 +365,9 @@ export default function SakePairingGuide() {
                                         </div>
                                     </div>
 
-                                    <div className="bg-warm-ivory rounded-2xl p-6 my-8">
-                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-4">Pro Pairing Tip for Hibachi Night</h3>
-                                        <p className="text-charcoal/80">
-                                            Order your sake warm and request an extra cup of ice water or tea. Between bites of rich, grilled food,
-                                            alternate sips of warm sake with cool water. This contrast awakens your palate and makes each bite taste fresher.
-                                        </p>
-                                    </div>
+                                    <ProTip variant="insider">
+                                        <strong>Regulars' sake night secret:</strong> Guests love ordering sake flights to sample multiple styles — our bartenders walk you through each one and explain what pairs best with your meal. For hibachi, ask for warm Junmai; reviewers say the warm sake + grilled steak combo is "the perfect match." Between bites, alternate sips with ice water to keep your palate fresh. <Link href="/bar" className="text-accent-red hover:underline">Explore our bar menu →</Link>
+                                    </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🥠 Appetizers & Small Plates Pairing Guide
@@ -600,23 +602,7 @@ export default function SakePairingGuide() {
                                         serving food and drink; we're creating an experience.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/20 to-accent-red/20 rounded-2xl p-8 text-center">
-                                        <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Ready to Master Sake Pairing?</h3>
-                                        <p className="text-charcoal/80 mb-6 text-lg">
-                                            Visit Jinbeh and let our team help you find your next favorite sake and dish combination. Book your reservation today and experience sake pairing as a true gracious host would.
-                                        </p>
-                                        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                                            <Link href="/frisco" className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
-                                                Frisco Location
-                                            </Link>
-                                            <Link href="/lewisville" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
-                                                Lewisville Location
-                                            </Link>
-                                            <Link href="#reserve" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
-                                                Make a Reservation
-                                            </Link>
-                                        </div>
-                                    </div>
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

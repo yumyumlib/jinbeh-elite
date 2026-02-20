@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import { Timeline, DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh",
@@ -90,6 +91,11 @@ export default function HibachiDiningExperiencePage() {
         The art of hibachi dining offers a unique blend of culinary skill and entertainment that has delighted diners for generations. From the tantalizing aroma of sizzling ingredients to the mesmerizing performance of chefs, hibachi experiences are a feast for the senses. Whether you&apos;re a seasoned hibachi enthusiast or a curious newcomer, exploring the vast array of hibachi menus can be a rewarding culinary adventure. Each visit promises not only a delightful meal but also an experience filled with excitement and wonder, as skilled chefs transform simple ingredients into tantalizing dishes right before your eyes.
       </p>
 
+      <DidYouKnow
+        fact="Jinbeh has been serving authentic hibachi and sushi in the DFW area since 1988 — that's over 37 years of perfecting the craft. The word 'hibachi' literally means 'fire bowl' in Japanese, though the American-style tableside cooking is technically called 'teppanyaki.'"
+        source="Jinbeh Japanese Restaurant, est. 1988"
+      />
+
       <p>
         Hibachi dining is an immersive experience that combines the pleasures of gastronomy with the thrill of live performance. The interaction between the chef and the diners adds a personal touch that elevates the dining experience beyond the ordinary. The communal setting around the grill fosters a sense of camaraderie among diners, making it an ideal choice for group gatherings and special occasions. Wondering about nutrition? Check out our <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline">hibachi calories guide</Link> for mindful dining tips.
       </p>
@@ -99,6 +105,52 @@ export default function HibachiDiningExperiencePage() {
       <p>
         Hibachi dining is more than just a meal—it's an experience. In many hibachi restaurants, diners gather around large, flat-top grills where skilled chefs prepare and cook food right before their eyes. The chefs are not only culinary experts but also performers, dazzling guests with knife tricks, flaming onion volcanoes, and playful banter.
       </p>
+
+      <Timeline
+        title="Your Jinbeh Hibachi Experience, Step by Step"
+        steps={[
+          {
+            icon: "🪑",
+            title: "Be Seated at the Grill",
+            description: "You're seated communally around a large teppanyaki grill with 8–10 guests. Your server takes drink orders while you settle in."
+          },
+          {
+            icon: "🍜",
+            title: "Soup & Salad Course",
+            description: "A warm bowl of Jinbeh's Japanese onion soup arrives, followed by a crisp house salad with house-made ginger dressing."
+          },
+          {
+            icon: "🔥",
+            title: "The Chef Arrives",
+            description: "Your hibachi chef fires up the 400°F teppan grill and begins the show — spatula juggling, egg tricks, and the famous Beating Heart."
+          },
+          {
+            icon: "🌋",
+            title: "The Onion Volcano",
+            description: "Stacked onion rings erupt in a dramatic flame — the crowd-favorite moment. Kids and adults alike cheer every time."
+          },
+          {
+            icon: "🍳",
+            title: "Fried Rice & Vegetables",
+            description: "Your chef prepares fried rice with egg and grilled vegetables (zucchini, onions, mushrooms) in house-made garlic butter — pre-made the day before for maximum flavor."
+          },
+          {
+            icon: "🥩",
+            title: "Protein Perfection",
+            description: "Your chosen protein is cooked to order: filet mignon, jumbo shrimp, chicken teriyaki, salmon, or one of our famous combos like Steak & Shrimp."
+          },
+          {
+            icon: "🦐",
+            title: "The Shrimp Toss",
+            description: "The grand finale — your chef tosses shrimp through the air for you to catch in your mouth. A signature Jinbeh moment!"
+          },
+          {
+            icon: "🍽️",
+            title: "Enjoy & Dessert",
+            description: "Dig into your perfectly plated meal with house-made yum yum sauce and dipping sauces. Save room for dessert!"
+          }
+        ]}
+      />
 
       <p>
         This interactive dining style is perfect for groups and celebrations, offering both delicious food and memorable entertainment. For larger parties, Jinbeh's <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options provide a dedicated space with personalized service. It's a place where food meets art, and every dish tells a story that unfolds in real time.
@@ -131,6 +183,10 @@ export default function HibachiDiningExperiencePage() {
       <p>
         Whether you prefer the rich taste of beef or the delicate sweetness of seafood, the classic hibachi entrees at Jinbeh offer something for everyone to enjoy. Visit our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> to experience our award-winning preparation techniques. Don't miss our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> guide to understand your dining experience.
       </p>
+
+      <ProTip variant="insider">
+        <strong>Planning your visit?</strong> Weekends fill up fast — call ahead to reserve, especially for groups of 4 or more. Jinbeh's hibachi tables seat 8–10 guests, so you might share the grill with another party. That's part of the fun! Frisco: (214) 619-1200 · Lewisville: (214) 488-2224.
+      </ProTip>
 
       <h2>Vegetarian & Plant-Based Options</h2>
 
@@ -253,6 +309,8 @@ export default function HibachiDiningExperiencePage() {
       <p>
         Whether you're celebrating a special occasion or simply enjoying a night out, hibachi dining offers an experience that is as delightful as it is delicious. So gather your friends and family, and embark on a culinary adventure that promises both excellent food and a spectacular show. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today. Or check out <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for your private events.
       </p>
+
+      <LocationCTA location="both" />
     </ArticleLayout>
   );
 }

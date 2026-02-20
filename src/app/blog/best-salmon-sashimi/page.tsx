@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Salmon Sashimi Near Me: Top Picks & Tips | Jinbeh",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
             "Find the best salmon sashimi near you. Learn where to source fresh fish and expert tips for enjoying authentic sashimi.",
         images: ["/images/blog/7-C060324-6447.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-salmon-sashimi",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-salmon-sashimi",
+    },
 };
 
 const articleSchema = {
@@ -78,20 +79,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Best Salmon Sashimi Near Me: Fresh & Premium Quality" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Best Salmon Sashimi Near Me: Fresh & Premium Quality" },
+    ],
 };
 
 export default function BestSalmonSashimi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -162,6 +163,11 @@ export default function BestSalmonSashimi() {
                                         <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Sushi Chefs</span>
                                     </div>
 
+                                    <DidYouKnow
+                                        fact="Salmon wasn't traditionally used in Japanese sashimi until the 1980s! Japanese chefs considered Pacific salmon too fatty and prone to parasites. It was actually a Norwegian marketing campaign called 'Project Japan' that convinced Japanese restaurants to try Atlantic salmon — and it became so popular that salmon is now the #1 sushi topping in Japan, surpassing tuna."
+                                        source="Norwegian Seafood Council & Japan Times"
+                                    />
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🐟 What Makes Premium Salmon Sashimi?
                                     </h2>
@@ -193,6 +199,18 @@ export default function BestSalmonSashimi() {
                                             <p className="text-charcoal/70 text-sm">Precise cuts that enhance texture and presentation</p>
                                         </div>
                                     </div>
+
+                                    <IngredientSpotlight ingredient={{
+                                        name: "Atlantic Salmon",
+                                        japaneseName: "Sake (鮭)",
+                                        icon: "🐟",
+                                        origin: "Norway, Scotland, Alaska",
+                                        season: "Year-round (peak: September–November)",
+                                        flavor: "Buttery, rich, subtle sweetness with clean omega-3 finish",
+                                        pairsWith: "Light soy, fresh wasabi, shiso leaf, Junmai sake",
+                                        jinbehDish: "Salmon Sashimi — sliced to order at the sushi bar",
+                                        jinbehDishLink: "/frisco/sashimi/salmon-sashimi"
+                                    }} />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🛒 Where to Find Quality Salmon Sashimi
@@ -313,6 +331,10 @@ export default function BestSalmonSashimi() {
                                         different flavor profiles, and assorted platters allow you to sample multiple types of fish
                                         in one elegant presentation. Check out our <Link href="/blog/sushi-identification-chart" className="text-accent-red hover:underline">sushi identification chart</Link> to learn about all available varieties.
                                     </p>
+
+                                    <ProTip variant="insider">
+                                        <strong>Sashimi lover's secret:</strong> Sit at the sushi bar at Jinbeh to watch our chefs slice your salmon to order — reviewers say it's "melt-in-your-mouth" fresh. Ask for the sashimi sampler plate to try salmon alongside tuna and yellowtail. Regulars recommend pairing it with a cold Junmai sake for the ultimate experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                    </ProTip>
                                 </div>
 
                                 {/* FAQ Section */}
@@ -336,35 +358,7 @@ export default function BestSalmonSashimi() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🍣 Fresh and Flavorful Salmon Sashimi
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Experience premium sashimi prepared with expert knife work at Jinbeh. Watch our chefs at the sushi bar. Learn the proper way to enjoy it with our <Link href="/blog/how-to-eat-sushi-guide" className="text-white hover:text-warm-ivory underline">sushi eating guide</Link>.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve Frisco
-                                        </Link>
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve Lewisville
-                                        </Link>
-                                        <Link
-                                            href="/frisco/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Menu
-                                        </Link>
-                                    </div>
-                                </div>
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

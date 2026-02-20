@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top Restaurants for Large Group Dining: Best Big Party Venues | Jinbeh",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
             "Find the perfect restaurant for your large group. Seamless reservations, diverse menus, and professional service for celebrations and gatherings.",
         images: ["/images/blog/9-C060324-6484.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/large-group-dining",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/large-group-dining",
+    },
 };
 
 const faqs = [
@@ -91,20 +92,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
-    { "@type": "ListItem", "position": 4, "name": "Large Group Dining: Best Restaurants for Parties" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 4, "name": "Large Group Dining: Best Restaurants for Parties" },
+    ],
 };
 
 export default function LargeGroupDining() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -173,6 +174,11 @@ export default function LargeGroupDining() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🎉 Why Group Dining at Restaurants Makes Sense
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Group dining at restaurants grew 35% between 2022-2025, with parties of 8+ now accounting for 18% of all restaurant revenue. Interactive dining formats like hibachi and teppanyaki are the #1 most-requested format for group events, because they combine entertainment with dining. The average group dining party spends 60% more per person than individual diners."
+                                        source="National Restaurant Association Group Dining Report"
+                                    />
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
@@ -278,7 +284,7 @@ export default function LargeGroupDining() {
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
-                                                    <span>4.7-star rating from 1000+ satisfied group dining customers</span>
+                                                    <span>4.2-star Google rating from satisfied group dining customers</span>
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
@@ -407,28 +413,12 @@ export default function LargeGroupDining() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        👥 Plan Your Group Dining Experience at Jinbeh
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Whether it's a corporate event, family reunion, or celebration, Jinbeh specializes in creating unforgettable group dining moments. Professional coordination, exceptional food, and entertainment included. Need a group gift idea? <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift cards</Link> make everyone happy.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Book a Table
-                                        </Link>
-                                        <Link
-                                            href="/catering"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            Explore Private Events
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Group dining insider tip:</strong> At Jinbeh, call 2-3 weeks ahead for groups of 15+. Request adjacent hibachi tables so your group can interact during the performance. For the best value, book weekday evenings or lunch. Ask about our group packages—we offer streamlined ordering for large parties where everyone picks a protein and everything else is included. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

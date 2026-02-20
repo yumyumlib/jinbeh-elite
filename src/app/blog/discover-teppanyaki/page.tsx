@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Discover Teppanyaki: A Culinary Art Form | Jinbeh",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
         description: "Learn about teppanyaki, the Japanese art of iron griddle cooking in DFW.",
         images: ["/images/blog/5-C060324-6397.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/discover-teppanyaki",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/discover-teppanyaki",
+    },
 };
 
 const faqs = [
@@ -56,20 +57,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Discover Teppanyaki: The Art of Iron Plate Cooking" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Discover Teppanyaki: The Art of Iron Plate Cooking" },
+    ],
 };
 
 export default function DiscoverTeppanyaki() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -96,6 +97,11 @@ export default function DiscoverTeppanyaki() {
                                 <p className="text-charcoal italic">"At Jinbeh, our teppanyaki chefs train for years to perfect their craft. It's not just about the food—it's about creating unforgettable moments around the grill."</p>
                                 <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                             </div>
+
+                            <DidYouKnow
+                                fact="Teppanyaki was invented in 1945 at a restaurant called Misono in Kobe, Japan — specifically to appeal to Western visitors. The communal flat-griddle format was designed so foreign diners could watch their food being prepared, building trust in unfamiliar cuisine."
+                                source="Japanese Culinary History"
+                            />
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔥 <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">Hibachi vs Teppanyaki</Link></h2>
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
@@ -124,6 +130,10 @@ export default function DiscoverTeppanyaki() {
                                 <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/5-C060324-6397.jpg" alt="Grill" fill className="object-cover" /></div>
                             </div>
 
+                            <ProTip variant="insider">
+                                <strong>Planning a celebration?</strong> Guests consistently say Jinbeh's chefs make birthdays unforgettable — they tailor the show to your group and amp up the entertainment for special occasions. Our teppanyaki tables seat 8–10, and reviewers often mention preferring us over chain steakhouses for the personal, family-owned touch. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a teppanyaki table →</Link>
+                            </ProTip>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-3">
                                 {faqs.map((f, i) => (
@@ -138,6 +148,8 @@ export default function DiscoverTeppanyaki() {
                             <p className="text-charcoal/80 mb-6">
                                 Ready to experience the art of teppanyaki? Visit Jinbeh at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Our expert chefs will delight you with authentic cooking techniques, entertainment, and delicious Japanese cuisine. We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for corporate events and private celebrations.
                             </p>
+
+                            <LocationCTA location="both" />
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🔥 Ready for Teppanyaki?</h3>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
@@ -79,6 +80,11 @@ export default function InternationalBeerDay() {
 
             <h2>Why Japanese Beer Deserves a Spot in Your Celebration</h2>
 
+            <DidYouKnow
+                fact="International Beer Day is celebrated in over 80 countries and 207 cities worldwide. Japanese beers have won more World Beer Awards than any other Asian brewing nation, with Sapporo, Asahi, and Kirin collectively producing over 5 billion liters annually. The Japanese brewing tradition dates to 1876, and Japan is now the 7th largest beer-consuming nation globally."
+                source="International Beer Day Foundation & World Beer Awards"
+            />
+
             <p>
                 Japanese brewers have been perfecting their craft since the 1870s, creating some of the
                 world&apos;s most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are
@@ -144,6 +150,12 @@ export default function InternationalBeerDay() {
                 Jinbeh family for an evening of great beer, incredible food from our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>, and hospitality that&apos;s
                 been welcoming DFW since 1988. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> today. 🍻
             </p>
+
+            <ProTip variant="chef">
+                <strong>International Beer Day pro tip:</strong> Arrive during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted Sapporo drafts, then stay for hibachi. Ask your server for a "Japanese beer flight" — we'll pour samples of all three (Sapporo, Asahi, Kirin) so you can compare side by side with your meal. The best pairing? Sapporo with hibachi steak, Asahi with tempura, and Kirin with sashimi. Kanpai! 🍺
+            </ProTip>
+
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

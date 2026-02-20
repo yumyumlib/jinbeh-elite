@@ -120,8 +120,8 @@ const organizationSchema = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.5",
-    reviewCount: "1247",
+    ratingValue: "4.3",
+    reviewCount: "1653",
     bestRating: "5",
     worstRating: "1",
   },
@@ -153,8 +153,8 @@ const friscoRestaurantSchema = {
   },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.6",
-    reviewCount: "823",
+    ratingValue: "4.2",
+    reviewCount: "752",
     bestRating: "5",
     worstRating: "1",
   },
@@ -194,7 +194,7 @@ const lewisvilleRestaurantSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.4",
-    reviewCount: "424",
+    reviewCount: "901",
     bestRating: "5",
     worstRating: "1",
   },

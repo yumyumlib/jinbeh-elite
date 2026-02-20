@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Ramune Soda: Unique Flavors & Marble Magic | Jinbeh",
@@ -82,6 +83,11 @@ export default function RamuneSodaGuide() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎱 The Charm of the Marble</h2>
+
+                            <DidYouKnow
+                                fact="Over 1 billion bottles of Ramune are sold worldwide each year, with peak sales during Japan's summer festival season (June-August). The Codd-neck bottle design with the marble seal dates back to 1884 in Japan, making Ramune one of the oldest continuously-produced soft drinks. There are over 40 flavors of Ramune available, including unusual varieties like wasabi, curry, and takoyaki (octopus ball)."
+                                source="Japan Soft Drink Association"
+                            />
                             <p className="text-charcoal/80 mb-6">One of the most intriguing features of Ramune soda is the glass marble, often referred to as the "jinbeh." You might wonder, "Why is there a marble in Ramune?" This marble serves both practical and magical purposes.</p>
 
                             <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -227,15 +233,12 @@ export default function RamuneSodaGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-blue-800 rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍹 Enjoy Ramune at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover Ramune soda and other authentic Japanese beverages at Jinbeh. Pair them with our hibachi entertainment and traditional Japanese cuisine for a complete cultural experience. Visit us in Frisco or Lewisville and enjoy Japanese hospitality at its finest. <Link href="/reservations" className="text-soft-gold hover:underline">Make a reservation</Link> today.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/blog/types-of-sushi" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Sushi Varieties</Link>
-                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Frisco Location</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="chef">
+                                    <strong>Ramune pairing tip:</strong> At Jinbeh, Ramune is the perfect non-alcoholic companion for spicy dishes. The carbonation and sweetness cut through the heat of our wasabi and spicy tuna rolls. Kids love it too—ask your server for a Ramune to make the meal extra fun! For adults, pair your Ramune with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake sampler</Link> for a complete Japanese beverage experience.
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

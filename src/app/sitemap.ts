@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/order-online`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
         { url: `${baseUrl}/delivery`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
         { url: `${baseUrl}/events`, lastModified: thisMonth, changeFrequency: "monthly", priority: 0.6 },
+        { url: `${baseUrl}/allergy-friendly-dining`, lastModified: today, changeFrequency: "monthly", priority: 0.6 },
         { url: `${baseUrl}/gallery`, lastModified: older, changeFrequency: "monthly", priority: 0.5 },
         { url: `${baseUrl}/careers`, lastModified: older, changeFrequency: "monthly", priority: 0.4 },
         { url: `${baseUrl}/about`, lastModified: older, changeFrequency: "monthly", priority: 0.5 },

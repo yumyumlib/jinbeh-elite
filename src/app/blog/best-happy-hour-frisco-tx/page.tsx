@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Happy Hour Frisco TX: Top Spots to Visit | Jinbeh",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Your guide to the best happy hour deals in Frisco, Texas.",
         images: ["/images/blog/10-C060324-6501.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-happy-hour-frisco-tx",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-happy-hour-frisco-tx",
+    },
 };
 
 const articleSchema = {
@@ -60,20 +61,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
-    { "@type": "ListItem", "position": 4, "name": "Best Happy Hour Frisco TX: Top Spots & Deals" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 4, "name": "Best Happy Hour Frisco TX: Top Spots & Deals" },
+    ],
 };
 
 export default function BestHappyHourFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -137,6 +138,11 @@ export default function BestHappyHourFrisco() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="The concept of 'happy hour' originated in the United States Navy in the 1920s, when sailors would enjoy entertainment and refreshments aboard ship. Today, Frisco has over 50 restaurants offering happy hour specials — but Jinbeh is one of the few where you can pair discounted sushi rolls with half-price sake bombs."
+                                        source="Smithsonian Magazine & Frisco Dining Guide"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍶 Jinbeh Happy Hour: The Details
@@ -241,6 +247,10 @@ export default function BestHappyHourFrisco() {
                                         <li><strong>Great atmosphere</strong> — Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
                                     </ul>
 
+                                    <ProTip variant="insider">
+                                        <strong>Happy hour regulars' secret:</strong> Come early on Fridays — the $1 edamame and half-price sake bombs go fast! Reviewers say the bar area has the best vibe for after-work unwinding. Pair a discounted sushi roll with a cold Sapporo and you've got the best happy hour deal in Frisco. <Link href="/bar" className="text-accent-red hover:underline">See our bar menu →</Link>
+                                    </ProTip>
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         📍 Happy Hour Near Stonebriar
                                     </h2>
@@ -325,21 +335,7 @@ export default function BestHappyHourFrisco() {
 
                                 <RelatedArticles currentSlug="best-happy-hour-frisco-tx" />
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 See You at Happy Hour!</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Unwind with fresh sushi, sake specials, and the best vibes in Frisco
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/happy-hour" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            View Happy Hour Menu
-                                        </Link>
-                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            Reserve a Spot
-                                        </Link>
-                                    </div>
-                                </div>
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

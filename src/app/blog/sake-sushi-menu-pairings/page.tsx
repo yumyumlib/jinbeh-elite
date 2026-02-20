@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sake Sushi Menu Pairings | Perfect Flavor Combinations",
@@ -189,6 +190,11 @@ export default function SakeSushiMenuPairings() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍶 Understanding Sake Basics
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="The tradition of pairing sake with sushi dates back to the Edo period (1603-1868), when sushi transformed from a fermented rice preservation method to the fresh, hand-pressed art form we know today. In Japan, sake sommeliers (called 'kikisake-shi') undergo years of training to master the art of pairing. There are over 10,000 different sake labels produced in Japan annually, each with unique pairing potential."
+                                        source="Japan Sake Sommelier Association"
+                                    />
 
                                     <p className="text-charcoal/80 mb-6">
                                         To appreciate the art of sake sushi pairing, it&apos;s essential to understand the basics of sake. Sake,
@@ -522,21 +528,12 @@ export default function SakeSushiMenuPairings() {
 
                                 <RelatedArticles currentSlug="sake-sushi-menu-pairings" />
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Explore Sake Pairings at Jinbeh</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Visit Jinbeh to experience expertly curated sake and sushi pairings. Our sommeliers can recommend
-                                        the perfect sake to complement your meal. Stop by our <Link href="/bar" className="text-white hover:text-soft-gold underline transition-colors">full bar</Link> or start with <Link href="/happy-hour" className="text-white hover:text-soft-gold underline transition-colors">happy hour</Link> specials. Prefer something mixed? Try our <Link href="/blog/japanese-cocktails" className="text-white hover:text-soft-gold underline transition-colors">Japanese cocktails</Link> instead.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            View Menu & Sake Selection
-                                        </Link>
-                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            Reserve Your Table
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="chef">
+                                        <strong>Sake pairing insider tip:</strong> At Jinbeh, ask our staff for the "sake exploration" approach: order one cold sake and one warm sake to taste the same variety at different temperatures. You'll be amazed at how flavors change! For sushi pairings, start with Ginjo for your appetizer rolls, switch to Junmai for main courses, and finish with Nigori as a dessert sake. Our <Link href="/bar" className="text-accent-red hover:underline">bar staff</Link> can customize a tasting flight based on your meal. <Link href="/happy-hour" className="text-accent-red hover:underline">Happy hour pricing</Link> makes exploration affordable!
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

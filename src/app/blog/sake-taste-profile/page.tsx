@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sake Taste & Flavor Profile | Complete Tasting Guide",
@@ -158,6 +159,11 @@ export default function SakeTasteProfile() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍶 The Basic Taste Elements of Sake
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Sake contains over 400 identified flavor compounds—more than wine (approximately 200). The flavor complexity comes from the unique parallel fermentation process where rice starch converts to sugar and alcohol simultaneously. Master sake brewers (toji) can identify over 100 distinct flavor notes in a single sake, and Japan's National Research Institute of Brewing has developed a 'sake flavor wheel' with 170 descriptors."
+                                        source="National Research Institute of Brewing, Japan"
+                                    />
 
                                     <p className="text-charcoal/80 mb-6">
                                         Sake is composed of five basic taste elements that work together to create its overall flavor profile:
@@ -420,21 +426,12 @@ export default function SakeTasteProfile() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍶 Taste Exceptional Sake at Jinbeh</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Visit Jinbeh to experience a curated selection of premium sakes paired with our exceptional <Link href="/blog/types-of-sushi" className="text-white hover:text-soft-gold underline transition-colors">sushi</Link> and Japanese cuisine.
-                                        Let our sommeliers guide you through the world of sake flavors at our <Link href="/bar" className="text-white hover:text-soft-gold underline transition-colors">full bar</Link>. Join us during <Link href="/happy-hour" className="text-white hover:text-soft-gold underline transition-colors">happy hour</Link> for special pricing. Prefer cocktails? Explore our guide to <Link href="/blog/japanese-cocktails" className="text-white hover:text-soft-gold underline transition-colors">Japanese cocktails</Link> instead.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/menu" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            View Our Menu & Sake List
-                                        </Link>
-                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            Make a Reservation
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="chef">
+                                        <strong>Sake tasting at Jinbeh:</strong> Ask our bartenders for the "flavor discovery" flight—three sakes specifically chosen to showcase the spectrum from sweet to dry. Start with Nigori (sweet, creamy), then Junmai (full, umami-rich), and finish with Daiginjo (light, floral). Between sips, cleanse your palate with pickled ginger. Our <Link href="/bar" className="text-accent-red hover:underline">bar team</Link> will explain the tasting notes for each pour. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, flights are specially priced!
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

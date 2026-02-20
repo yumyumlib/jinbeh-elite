@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, CompareCards, IngredientSpotlight, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Frisco TX: Top Spots to Savor Fresh Flavors | Jinbeh",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
             "Your guide to Frisco's best sushi restaurants. Fresh fish, expert rolls, and the authentic Japanese experience at Jinbeh.",
         images: ["/images/blog/7-C060324-6447.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-sushi-frisco",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-sushi-frisco",
+    },
 };
 
 const articleSchema = {
@@ -43,7 +44,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What is the best sushi restaurant in Frisco?",
-        answer: "Welcome to the table! Jinbeh has 4.7 stars on Google. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
+        answer: "Welcome to the table! Jinbeh has 4.2 stars on Google. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
     },
     {
         question: "Does Jinbeh have happy hour specials?",
@@ -78,20 +79,63 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
-    { "@type": "ListItem", "position": 4, "name": "Best Sushi Frisco TX: Top Spots Near Stonebriar" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 4, "name": "Best Sushi Frisco TX: Top Spots Near Stonebriar" },
+    ],
+};
+
+const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Top Sushi Restaurants in Frisco TX",
+    "description": "Ranked list of the best sushi restaurants near Stonebriar Centre in Frisco, Texas.",
+    "numberOfItems": 5,
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "Restaurant",
+                "name": "Jinbeh Japanese Restaurant",
+                "servesCuisine": "Japanese",
+                "priceRange": "$$",
+                "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "752" },
+                "url": "https://jinbeh.com/frisco",
+            },
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": { "@type": "Restaurant", "name": "Umiya", "servesCuisine": "Japanese Fusion", "priceRange": "$$" },
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": { "@type": "Restaurant", "name": "Sakura Sushi", "servesCuisine": "Japanese", "priceRange": "$$" },
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item": { "@type": "Restaurant", "name": "Shoji", "servesCuisine": "Japanese", "priceRange": "$$" },
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item": { "@type": "Restaurant", "name": "Edoko", "servesCuisine": "Japanese", "priceRange": "$$$" },
+        },
+    ],
 };
 
 export default function BestSushiFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -171,6 +215,11 @@ export default function BestSushiFrisco() {
                                         family restaurants and trendy newcomers, the sushi scene here rivals Dallas proper. If you're interested in learning more about cuisine styles, check out our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> guide.
                                     </p>
 
+                                    <DidYouKnow
+                                        fact="The word 'sushi' doesn't actually mean 'raw fish' — it refers to the vinegared rice that forms the base of every piece. In fact, many popular sushi rolls like the Dragon Roll (eel and avocado) and Shrimp Tempura Roll contain no raw fish at all. Jinbeh's 14-roll sushi menu includes both raw and cooked options for every comfort level."
+                                        source="Japanese Culinary Arts — Jinbeh Menu"
+                                    />
+
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">🐟</span>
@@ -215,7 +264,7 @@ export default function BestSushiFrisco() {
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
                                                 <td className="p-4">Authentic experience, hibachi + sushi</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4">4.7 ⭐</td>
+                                                <td className="p-4">4.2 ⭐</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Umiya</td>
@@ -268,7 +317,7 @@ export default function BestSushiFrisco() {
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>4.7 stars on Google (1000+ reviews)</span>
+                                                    <span>4.2 stars on Google (752 reviews)</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
@@ -303,6 +352,10 @@ export default function BestSushiFrisco() {
                                         It's the perfect spot for a sushi lunch break or a celebratory dinner after a day of retail therapy. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> or check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> online.
                                     </p>
 
+                                    <ProTip variant="insider">
+                                        <strong>Sushi lover's secret:</strong> Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted sushi rolls, sake, and appetizers. Ask your server about the day's fresh catch — Jinbeh sources fish with daily deliveries, so availability can vary. Try the Sake Flight for a tasting of three premium sakes alongside your rolls.
+                                    </ProTip>
+
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
                                         Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Rolls</Link> to Try
                                     </h3>
@@ -313,6 +366,47 @@ export default function BestSushiFrisco() {
                                         <li><strong>Spicy Tuna Roll</strong> — A classic crowd-pleaser</li>
                                         <li><strong>Jinbeh Special</strong> — Our signature creation (ask your server!)</li>
                                     </ul>
+
+                                    <CompareCards
+                                        items={[
+                                            {
+                                                icon: "🐉",
+                                                title: "Jinbeh Dragon Roll",
+                                                highlight: true,
+                                                features: [
+                                                    "Fresh eel, cucumber, avocado, house-made eel sauce",
+                                                    "Hand-rolled to order by trained sushi chef",
+                                                    "Day-fresh seasoned sushi rice",
+                                                    "Made at the sushi bar — watch it being prepared",
+                                                ],
+                                                cta: { label: "View Sushi Menu", href: "/frisco/sushi-rolls" },
+                                            },
+                                            {
+                                                icon: "🏭",
+                                                title: "Generic Chain Sushi",
+                                                features: [
+                                                    "Pre-packaged with imitation crab, often frozen",
+                                                    "Mass-produced, sitting in a display case",
+                                                    "Over-seasoned or stale rice",
+                                                    "Grab-and-go, no customization",
+                                                ],
+                                            },
+                                        ]}
+                                    />
+
+                                    <IngredientSpotlight
+                                        ingredient={{
+                                            icon: "🍶",
+                                            name: "Sake Flight",
+                                            japaneseName: "日本酒 (nihonshu)",
+                                            origin: "Japan",
+                                            season: "Year-round",
+                                            flavor: "Ranges from crisp and dry to smooth and floral",
+                                            pairsWith: "Sashimi, Yellowtail Jalapeño Roll, lighter nigiri",
+                                            jinbehDish: "Sake Flight — tasting of three premium sakes",
+                                            jinbehDishLink: "/frisco/cocktails/sake-flight",
+                                        }}
+                                    />
                                 </div>
 
                                 {/* FAQ Section */}
@@ -365,6 +459,8 @@ export default function BestSushiFrisco() {
                                         </Link>
                                     </div>
                                 </div>
+
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

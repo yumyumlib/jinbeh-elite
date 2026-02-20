@@ -6,6 +6,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import HeritageCounter from "@/components/HeritageCounter";
+import { CustomerVoiceSection } from "@/components/CustomerVoice";
 import locations from "@/data/locations.json";
 
 // Gallery items for Lewisville - Feb 2026 Professional Photoshoot
@@ -95,7 +96,7 @@ const restaurantSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.4",
-    reviewCount: "650",
+    reviewCount: "901",
     bestRating: "5",
     worstRating: "1",
   },
@@ -432,6 +433,33 @@ export default function LewisvillePage() {
             </div>
           </div>
         </section>
+
+        {/* Customer Testimonials */}
+        <CustomerVoiceSection
+          heading="What Lewisville Guests Say"
+          subheading="Real reviews from our Lewisville dining community"
+          className="bg-white"
+          quotes={[
+            {
+              quote: "Excellent place for a great hibachi experience with very friendly staff. We always have a wonderful time here.",
+              author: "Lewisville Regular",
+              platform: "Google",
+              category: "Full Experience",
+            },
+            {
+              quote: "Watching the chef cook was a delight — the kids were mesmerized. Great food and entertainment combined.",
+              author: "Lewisville Family",
+              platform: "Google",
+              category: "Chef Show",
+            },
+            {
+              quote: "Best sushi and hibachi in the Lewisville area. Fresh fish, generous portions, and the staff treats you like family.",
+              author: "Local Sushi Lover",
+              platform: "Yelp",
+              category: "Best in Area",
+            },
+          ]}
+        />
 
         {/* Hours Section */}
         <section className="py-16 bg-white">

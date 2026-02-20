@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
@@ -133,6 +134,11 @@ export default function JinbehGiftCardsGuidePage() {
       </div>
 
       <h2>Checking Your Gift Card Balance</h2>
+
+      <DidYouKnow
+        fact="The restaurant gift card market in the US is worth over $40 billion annually, with the average American buying 3-4 restaurant gift cards per year. Studies show gift card recipients spend 20-40% more than the card's face value when dining, making them one of the best restaurant promotions for both customers and businesses."
+        source="National Retail Federation Gift Card Survey"
+      />
 
       <p>
         Keeping track of your balance ensures you're always ready for your next Jinbeh celebration. Checking is easy and secure:
@@ -485,15 +491,22 @@ export default function JinbehGiftCardsGuidePage() {
       <p>
         Your Jinbeh gift card awaits. Whether you're treating yourself or receiving one as a gift, prepare for authentic Japanese cuisine, skilled chef performances, and memories you'll treasure. We can't wait to see you!
       </p>
-    
-        {/* Related Reading */}
-        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
-          <div className="flex flex-col gap-2">
-              <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline font-medium">Best Sushi in Frisco</Link>
-              <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline font-medium">Hibachi Birthday Party Ideas</Link>
-          </div>
+
+      {/* Related Reading */}
+
+      <ProTip variant="insider">
+        <strong>Gift card insider tip:</strong> The best strategy for maximizing your Jinbeh gift card is to visit during <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch</Link> when hibachi specials start at $12.95. A $50 gift card covers two full lunch experiences! Combine with our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks, and stack with Birthday Club benefits during your birthday month for maximum value.
+      </ProTip>
+
+      <LocationCTA location="both" />
+
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline font-medium">Best Sushi in Frisco</Link>
+          <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline font-medium">Hibachi Birthday Party Ideas</Link>
         </div>
-      </ArticleLayout>
+      </div>
+    </ArticleLayout>
   );
 }

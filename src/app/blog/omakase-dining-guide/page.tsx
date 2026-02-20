@@ -2,21 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Omakase: Unraveling the Unique Dining Art | Jinbeh",
     description: "Experience the art of Japanese omakase, a personalized dining journey highlighting chef creativity and seasonality. Discover omakase at restaurants like Jinbeh in Dallas.",
     keywords: ["omakase", "omakase dining", "japanese omakase", "sushi omakase", "omakase restaurant", "chef tasting menu"],
-  openGraph: {
-    title: "Omakase Dining Guide: Everything You Need to Know",
-    description: "Your complete guide to the omakase experience - from etiquette to what dishes to expect. Make your first omakase unforgettable.",
-    url: "https://jinbeh.com/blog/omakase-dining-guide",
-    type: "article",
-    images: ["/images/blog/17-C060324-6708.jpg"],
-  },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/omakase-dining-guide",
-  },
+    openGraph: {
+        title: "Omakase Dining Guide: Everything You Need to Know",
+        description: "Your complete guide to the omakase experience - from etiquette to what dishes to expect. Make your first omakase unforgettable.",
+        url: "https://jinbeh.com/blog/omakase-dining-guide",
+        type: "article",
+        images: ["/images/blog/17-C060324-6708.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/omakase-dining-guide",
+    },
 };
 
 const schemas = [
@@ -31,20 +32,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Omakase Dining Guide: Everything You Need to Know" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Omakase Dining Guide: Everything You Need to Know" },
+    ],
 };
 
 export default function OmakaseDiningGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -69,6 +70,11 @@ export default function OmakaseDiningGuide() {
                                 <p className="text-charcoal italic">"Omakase is about trust and artistry. When you sit at the sushi bar and say 'omakase,' you're inviting the chef to showcase their mastery, creativity, and passion for their craft."</p>
                                 <span className="text-sm text-charcoal/80">— Jinbeh Omakase Philosophy</span>
                             </div>
+
+                            <DidYouKnow
+                                fact="The world's most famous omakase chef, Jiro Ono of Tokyo's Sukiyabashi Jiro, has been perfecting his craft for over 70 years and was awarded 3 Michelin stars. His restaurant seats only 10 people, and reservations must be made months in advance — proving that omakase is truly about the intimate chef-diner connection, not the size of the restaurant."
+                                source="Michelin Guide & 'Jiro Dreams of Sushi'"
+                            />
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Understanding Omakase</h2>
                             <p className="text-charcoal/80 mb-4">The term "Omakase" translates to "I leave it up to you." This phrase signifies a dining experience where the chef takes full control, crafting a bespoke menu that highlights the freshest ingredients and showcases their culinary prowess. The diner places their trust in the chef, allowing them to guide the meal with expertise and creativity.</p>
@@ -174,6 +180,10 @@ export default function OmakaseDiningGuide() {
                                 </div>
                             </div>
 
+                            <ProTip variant="insider">
+                                <strong>Omakase at Jinbeh:</strong> For the most authentic experience, sit at the sushi bar and let our chefs know you'd like omakase. Regulars say the chef interaction is what makes it special — they'll explain each piece and tailor the progression to your tastes. Reviewers describe it as "a personal culinary journey" that's worth every bite. Call ahead to arrange your experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                            </ProTip>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌟 Why Choose Omakase?</h2>
                             <p className="text-charcoal/80 mb-4">Choosing Omakase is selecting a dining experience that is both personalized and artistic. The chef's expertise ensures that each dish is a masterpiece, crafted to highlight the best of Japanese culinary arts. This level of craftsmanship and attention to detail elevates Omakase above other dining experiences, making it truly special.</p>
 
@@ -255,15 +265,7 @@ export default function OmakaseDiningGuide() {
                                 </div>
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-soft-gold to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍣 Experience Authentic Omakase at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Our chefs are dedicated to preserving the authenticity of omakase, providing a dining experience that mirrors those found in Japan. Reserve your seat at our sushi bar today.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-soft-gold px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors">Reserve Now</Link>
-                                    <Link href="/frisco" className="bg-white/20 text-white border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-colors">Frisco Location</Link>
-                                    <Link href="/lewisville" className="bg-white/20 text-white border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-colors">Lewisville Location</Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

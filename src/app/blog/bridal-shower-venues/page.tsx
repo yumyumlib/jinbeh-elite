@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Places for Bridal Showers Near Me | Jinbeh",
@@ -166,6 +167,11 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         </p>
         <p className="text-sm text-charcoal/80">— Bridal Shower Host</p>
       </div>
+
+      <DidYouKnow
+        fact="The bridal shower industry is worth $2.8 billion annually in the US. Restaurant-hosted bridal showers have surged 55% since 2020, with 68% of maid-of-honor hosts preferring venues that handle food and service. The average bridal shower costs $2,500-$5,000, with venue and catering being the largest expenses at 40-50% of the total budget."
+        source="The Knot & WeddingWire"
+      />
 
       <p>
         Restaurants like{" "}
@@ -380,16 +386,22 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         Happy planning, and here's to a wonderful bridal shower celebration!
       </p>
 
+      <ProTip variant="insider">
+        <strong>Bridal shower venue insider tip:</strong> Jinbeh's private dining areas are perfect for bridal showers of 15-40 guests. Book a weekend lunch for the best value — you'll get the same elegant ambiance with more availability. Our team can customize the menu to accommodate dietary needs across your group. Mention it's a bridal shower when booking and we'll help create a special experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bridal shower →</Link>
+      </ProTip>
+
+      <LocationCTA location="both" />
+
       <RelatedArticles currentSlug={slug} />
-    
-        {/* Related Reading */}
-        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
-          <div className="flex flex-col gap-2">
-              <Link href="/blog/bachelorette-restaurants-dallas" className="text-accent-red hover:underline font-medium">Best Bachelorette Restaurants in Dallas</Link>
-              <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">Restaurants with Private Dining Rooms</Link>
-          </div>
+
+      {/* Related Reading */}
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/bachelorette-restaurants-dallas" className="text-accent-red hover:underline font-medium">Best Bachelorette Restaurants in Dallas</Link>
+          <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">Restaurants with Private Dining Rooms</Link>
         </div>
-      </ArticleLayout>
+      </div>
+    </ArticleLayout>
   );
 }

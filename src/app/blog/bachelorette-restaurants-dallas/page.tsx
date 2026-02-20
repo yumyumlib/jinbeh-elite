@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations | Jinbeh",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
             "Plan an unforgettable bachelorette celebration in Dallas. Discover top restaurants perfect for your party.",
         images: ["/images/celebrations/jinbeh_group.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/bachelorette-restaurants-dallas",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/bachelorette-restaurants-dallas",
+    },
 };
 
 const articleSchema = {
@@ -81,20 +82,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
-    { "@type": "ListItem", "position": 4, "name": "Best Bachelorette Restaurants Dallas" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 4, "name": "Best Bachelorette Restaurants Dallas" },
+    ],
 };
 
 export default function BacheloretteRestaurantsDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -169,6 +170,11 @@ export default function BacheloretteRestaurantsDallas() {
                                         🎭 What Makes a Great Bachelorette Restaurant?
                                     </h2>
 
+                                    <DidYouKnow
+                                        fact="The average bachelorette party costs $1,800 per person, with dinner being the centerpiece event for 92% of celebrations. Interactive dining experiences like hibachi have become the fastest-growing bachelorette dinner format, growing 85% since 2021. Dallas ranks as the #4 most popular bachelorette destination in the US, behind Nashville, Scottsdale, and Miami."
+                                        source="The Knot & Brides Magazine"
+                                    />
+
                                     <p>
                                         When selecting a restaurant for a bachelorette party, several factors make all the difference.
                                         The right venue combines great food with atmosphere, entertainment, and accommodations for groups.
@@ -218,7 +224,7 @@ export default function BacheloretteRestaurantsDallas() {
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
                                                 <td className="p-4">Interactive hibachi shows, group celebrations</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4">4.7 ⭐</td>
+                                                <td className="p-4">4.2 ⭐</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Sixty Vines</td>
@@ -405,27 +411,12 @@ export default function BacheloretteRestaurantsDallas() {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🎉 Ready to Plan Your Bachelorette Celebration?
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Make your bachelorette celebration unforgettable with Jinbeh's interactive hibachi experience. Start with <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> drinks, then enjoy the show. Or surprise the bride with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link> she can use anytime.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Book a Table
-                                        </Link>
-                                        <Link
-                                            href="/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Our Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Bachelorette party insider tip:</strong> Start your celebration with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> sake cocktails at the bar, then move to the hibachi table for dinner and a show. For groups of 8+, ask about our semi-private dining area for a more exclusive experience. Our lychee martini is a bride-squad favorite — reviewers call it "a must-order." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bachelorette dinner →</Link>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

@@ -107,8 +107,8 @@ export function LocalBusinessSchemaFrisco() {
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "1247",
+      "ratingValue": "4.2",
+      "reviewCount": "752",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -186,8 +186,8 @@ export function LocalBusinessSchemaLewisville() {
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "1247",
+      "ratingValue": "4.4",
+      "reviewCount": "901",
       "bestRating": "5",
       "worstRating": "1"
     },

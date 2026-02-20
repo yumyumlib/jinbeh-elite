@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sushi Platters Near Me: Party Trays & Catering | Jinbeh DFW",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Order fresh sushi platters and party trays from Jinbeh Japanese Restaurant in DFW.",
         images: ["/images/blog/7-C060324-6447.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/sushi-platters-near-me",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sushi-platters-near-me",
+    },
 };
 
 const articleSchema = {
@@ -77,20 +78,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Sushi Platters Near Me: Party Trays & Catering in DFW" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Sushi Platters Near Me: Party Trays & Catering in DFW" },
+    ],
 };
 
 export default function SushiPlattersNearMe() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -159,6 +160,11 @@ export default function SushiPlattersNearMe() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍣 Types of Sushi Platters
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="The sushi catering market in the U.S. has grown 340% since 2010, making sushi platters the fastest-growing catering category in the country. In DFW alone, over 15,000 sushi platters are ordered monthly for corporate events, parties, and celebrations. The average sushi party platter feeds 8-10 people and typically includes 6-8 different roll varieties—a trend that started in Japan's 'osechi' (New Year) tradition of beautifully arranged food boxes."
+                                        source="Technomic Foodservice Trends Report"
+                                    />
 
                                     <p>
                                         Not sure what kind of platter to order? Here&apos;s a breakdown of the most popular options
@@ -365,20 +371,12 @@ export default function SushiPlattersNearMe() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Order Your Sushi Platter Today</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Fresh rolls, expert craftsmanship, and 37 years of sushi tradition. Your party deserves Jinbeh.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/order-online" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Order Online
-                                        </Link>
-                                        <Link href="/catering" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
-                                            Catering Services
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Platter ordering pro tips from our catering team:</strong> For the best presentation, order specialty rolls (Dragon, Rainbow) alongside classics—the color contrast makes your platter Instagram-worthy. Ask about our "event garnish" option for special occasions: we add decorative sashimi flowers and edible garnishes that elevate the wow factor. For corporate orders over $200, we include complimentary chopstick sets and soy sauce dishes. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

@@ -16,10 +16,18 @@ interface DropdownItem {
   isExternal?: boolean;
 }
 
+interface MegaMenuSection {
+  title: string;
+  icon: string;
+  items: DropdownItem[];
+}
+
 interface NavItem {
   label: string;
   href: string;
   dropdown?: DropdownItem[];
+  megaMenu?: MegaMenuSection[];
+  footerLinks?: DropdownItem[];
 }
 
 export default function Header({ location }: HeaderProps) {
@@ -133,6 +141,10 @@ export default function Header({ location }: HeaderProps) {
         { label: "Kids Menu", href: `/${loc}/kids-menu`, description: "For our younger guests" },
         { label: "Lunch Specials", href: "/lunch-specials", description: "Weekday specials" },
       ],
+      footerLinks: [
+        { label: "Hibachi Menu Guide", href: "/blog/hibachi-menu-guide", description: "How to order" },
+        { label: "Types of Sushi", href: "/blog/types-of-sushi", description: "Visual guide" },
+      ],
     },
     {
       label: "Dining",
@@ -142,6 +154,10 @@ export default function Header({ location }: HeaderProps) {
         { label: "Private Dining", href: "/private-dining", description: "Groups & events" },
         { label: "Catering", href: "/catering", description: "Bring Jinbeh to you" },
         { label: "Order Online", href: "/order-online", description: "Delivery & takeout" },
+      ],
+      footerLinks: [
+        { label: "Catering Guide", href: "/blog/hibachi-catering-dfw", description: "Plan your event" },
+        { label: "Group Dining Tips", href: "/blog/group-dining-venues", description: "Venues & ideas" },
       ],
     },
     {
@@ -159,18 +175,53 @@ export default function Header({ location }: HeaderProps) {
       ],
     },
     {
-      label: "Blog",
+      label: "Explore",
       href: "/blog",
-      dropdown: [
-        { label: "All Articles", href: "/blog", description: "Latest from Jinbeh" },
-        { label: "Hibachi Guides", href: "/blog/category/hibachi", description: "Everything teppanyaki" },
-        { label: "Sushi Guides", href: "/blog/category/sushi", description: "Fish, rolls & more" },
-        { label: "Best Of DFW", href: "/blog/category/best-of", description: "Top picks & rankings" },
-        { label: "Japanese Cuisine", href: "/blog/category/cuisine", description: "Culture & food guides" },
-        { label: "Celebrations", href: "/blog/category/celebrations", description: "Party ideas & guides" },
-        { label: "Happy Hour", href: "/blog/category/happy-hour", description: "Drinks & specials" },
-        { label: "Beverages", href: "/blog/category/beverages", description: "Sake, whiskey & cocktails" },
-        { label: "Local Guides", href: "/blog/category/local-guide", description: "Frisco, Lewisville & DFW" },
+      megaMenu: [
+        {
+          title: "Cuisine & Sushi",
+          icon: "🍣",
+          items: [
+            { label: "How to Eat Sushi", href: "/blog/how-to-eat-sushi-guide" },
+            { label: "Types of Sushi", href: "/blog/types-of-sushi" },
+            { label: "Sushi Identification", href: "/blog/sushi-identification-chart" },
+            { label: "Beginner Sushi Tips", href: "/blog/beginner-sushi-tips" },
+            { label: "What is Omakase?", href: "/blog/omakase-dining-guide" },
+          ],
+        },
+        {
+          title: "Hibachi & Teppanyaki",
+          icon: "🔥",
+          items: [
+            { label: "Hibachi Menu Guide", href: "/blog/hibachi-menu-guide" },
+            { label: "Hibachi vs Teppanyaki", href: "/blog/hibachi-vs-teppanyaki-explained" },
+            { label: "The Hibachi Experience", href: "/blog/hibachi-dining-experience" },
+            { label: "Hibachi Calories Guide", href: "/blog/hibachi-calories-guide" },
+            { label: "Discover Teppanyaki", href: "/blog/discover-teppanyaki" },
+          ],
+        },
+        {
+          title: "Drinks & Sake",
+          icon: "🍶",
+          items: [
+            { label: "Types of Sake", href: "/blog/types-of-sake-explained" },
+            { label: "Sake Pairing Guide", href: "/blog/sake-pairing-guide" },
+            { label: "Japanese Whiskey", href: "/blog/japanese-whiskey-guide" },
+            { label: "Japanese Cocktails", href: "/blog/japanese-cocktails" },
+            { label: "Sake Taste Profiles", href: "/blog/sake-taste-profile" },
+          ],
+        },
+        {
+          title: "Local & Best Of",
+          icon: "📍",
+          items: [
+            { label: "Best Sushi Frisco", href: "/blog/best-sushi-frisco" },
+            { label: "Best Hibachi Dallas", href: "/blog/best-hibachi-dallas" },
+            { label: "Top Frisco Restaurants", href: "/blog/top-frisco-restaurants" },
+            { label: "Best Happy Hour Frisco", href: "/blog/best-happy-hour-frisco-tx" },
+            { label: "Things to Do Frisco", href: "/blog/things-to-do-frisco" },
+          ],
+        },
       ],
     },
     { label: "About", href: "/about" },
@@ -208,10 +259,88 @@ export default function Header({ location }: HeaderProps) {
                 <div
                   key={item.label}
                   className="relative"
-                  onMouseEnter={() => item.dropdown && handleMouseEnter(item.label)}
-                  onMouseLeave={() => item.dropdown && handleMouseLeave()}
+                  onMouseEnter={() => (item.dropdown || item.megaMenu) && handleMouseEnter(item.label)}
+                  onMouseLeave={() => (item.dropdown || item.megaMenu) && handleMouseLeave()}
                 >
-                  {item.dropdown ? (
+                  {item.megaMenu ? (
+                    <>
+                      <button
+                        onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
+                        aria-expanded={activeDropdown === item.label}
+                        aria-haspopup="menu"
+                        className={`flex items-center gap-1 px-3 py-2 rounded-lg hover:text-soft-gold hover:bg-white/10 transition-all text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] ${activeDropdown === item.label ? "text-soft-gold bg-white/10" : "text-white"}`}
+                      >
+                        {item.label}
+                        <svg
+                          className={`w-3.5 h-3.5 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""}`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+
+                      {/* Mega Menu Panel */}
+                      <div
+                        role="menu"
+                        aria-label={`${item.label} submenu`}
+                        className={`absolute top-full right-0 mt-1.5 w-[680px] bg-white rounded-xl shadow-2xl border border-stone-200 z-[9999] transition-all duration-200 origin-top-right ${activeDropdown === item.label
+                          ? "opacity-100 scale-100 pointer-events-auto translate-y-0"
+                          : "opacity-0 scale-95 pointer-events-none -translate-y-2"
+                          }`}
+                        onMouseEnter={() => handleMouseEnter(item.label)}
+                        onMouseLeave={handleMouseLeave}
+                      >
+                        <div className="grid grid-cols-4 gap-0 p-4">
+                          {item.megaMenu.map((section) => (
+                            <div key={section.title} className="px-2">
+                              <div className="flex items-center gap-1.5 mb-3 pb-2 border-b border-stone-100">
+                                <span className="text-base" aria-hidden="true">{section.icon}</span>
+                                <span className="text-xs font-bold text-charcoal/80 uppercase tracking-wider">{section.title}</span>
+                              </div>
+                              <div className="space-y-0.5">
+                                {section.items.map((subItem) => (
+                                  <Link
+                                    key={subItem.label}
+                                    href={subItem.href}
+                                    className="block px-2 py-1.5 rounded-md text-sm text-charcoal/80 hover:text-accent-red hover:bg-warm-ivory transition-all"
+                                    role="menuitem"
+                                    onClick={() => setActiveDropdown(null)}
+                                  >
+                                    {subItem.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        {/* Mega menu footer */}
+                        <div className="border-t border-stone-100 px-4 py-3 bg-warm-ivory/50 rounded-b-xl flex items-center justify-between">
+                          <Link
+                            href="/blog"
+                            className="text-sm font-semibold text-accent-red hover:text-accent-red/80 transition-colors"
+                            onClick={() => setActiveDropdown(null)}
+                          >
+                            View All Articles &rarr;
+                          </Link>
+                          <div className="flex items-center gap-3">
+                            {["Celebrations", "Catering", "Tips"].map((cat) => (
+                              <Link
+                                key={cat}
+                                href={`/blog/category/${cat.toLowerCase()}`}
+                                className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all"
+                                onClick={() => setActiveDropdown(null)}
+                              >
+                                {cat}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  ) : item.dropdown ? (
                     <>
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
@@ -303,6 +432,27 @@ export default function Header({ location }: HeaderProps) {
                             );
                           })}
                         </div>
+                        {/* Footer guide links */}
+                        {item.footerLinks && item.footerLinks.length > 0 && (
+                          <div className="border-t border-stone-100 px-2 py-2 bg-warm-ivory/50 rounded-b-xl">
+                            <span className="block px-4 pt-1 pb-1.5 text-[10px] font-bold text-charcoal/40 uppercase tracking-widest">Popular Guides</span>
+                            {item.footerLinks.map((fl) => (
+                              <Link
+                                key={fl.label}
+                                href={fl.href}
+                                className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white transition-all group"
+                                role="menuitem"
+                                onClick={() => setActiveDropdown(null)}
+                              >
+                                <svg className="w-3.5 h-3.5 text-accent-red/60 group-hover:text-accent-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                                <span className="text-sm text-charcoal/70 group-hover:text-accent-red transition-colors font-medium">{fl.label}</span>
+                                {fl.description && <span className="text-xs text-charcoal/40 ml-auto">{fl.description}</span>}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </>
                   ) : (
@@ -476,7 +626,57 @@ export default function Header({ location }: HeaderProps) {
 
               {navItems.map((item) => (
                 <div key={item.label}>
-                  {item.dropdown ? (
+                  {item.megaMenu ? (
+                    <div className="mb-2">
+                      <button
+                        onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
+                        className="w-full flex items-center justify-between px-4 py-2 text-sm font-bold text-white/90 uppercase tracking-wider hover:text-soft-gold transition-colors"
+                        aria-expanded={activeDropdown === item.label}
+                      >
+                        {item.label}
+                        <svg
+                          className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""}`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                      <div
+                        className={`mt-1 pl-2 border-l-2 border-soft-gold/30 ml-4 transition-all duration-200 ${activeDropdown === item.label
+                          ? "max-h-[1000px] opacity-100"
+                          : "max-h-0 opacity-0 overflow-hidden"
+                          }`}
+                      >
+                        {item.megaMenu.map((section) => (
+                          <div key={section.title} className="mb-3">
+                            <span className="block px-4 py-1.5 text-xs font-bold text-soft-gold/80 uppercase tracking-wider">
+                              {section.icon} {section.title}
+                            </span>
+                            {section.items.map((subItem) => (
+                              <Link
+                                key={subItem.label}
+                                href={subItem.href}
+                                className="block px-4 py-2 text-white hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium text-sm"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {subItem.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                        <Link
+                          href="/blog"
+                          className="block px-4 py-3 text-soft-gold hover:text-white font-semibold text-sm border-t border-white/10 mt-2"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          View All Articles &rarr;
+                        </Link>
+                      </div>
+                    </div>
+                  ) : item.dropdown ? (
                     <div className="mb-2">
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
@@ -513,6 +713,21 @@ export default function Header({ location }: HeaderProps) {
                             )}
                           </Link>
                         ))}
+                        {item.footerLinks && item.footerLinks.length > 0 && (
+                          <div className="border-t border-white/10 mt-2 pt-2">
+                            <span className="block px-4 py-1 text-[10px] font-bold text-white/40 uppercase tracking-widest">Guides</span>
+                            {item.footerLinks.map((fl) => (
+                              <Link
+                                key={fl.label}
+                                href={fl.href}
+                                className="block px-4 py-2 text-white/70 hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium text-sm"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                📖 {fl.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   ) : (

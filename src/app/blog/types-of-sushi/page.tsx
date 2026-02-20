@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Types of Sushi: Must-Try Varieties & Rolls Guide | Jinbeh",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Your complete guide to sushi types, from traditional to modern rolls.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/types-of-sushi",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/types-of-sushi",
+    },
 };
 
 const articleSchema = {
@@ -93,20 +94,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Types of Sushi: Complete Guide to Rolls & Varieties" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Types of Sushi: Complete Guide to Rolls & Varieties" },
+    ],
 };
 
 export default function TypesOfSushi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -169,6 +170,11 @@ export default function TypesOfSushi() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Modern sushi as we know it was invented by Hanaya Yohei in 1820s Tokyo. Before that, 'sushi' was actually a method of preserving fish by packing it in fermented rice for months — the rice was discarded! Yohei's genius was serving fresh fish on vinegared rice as fast food from street stalls, creating the nigiri we love today."
+                                        source="Smithsonian National Museum of American History"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍱 The Main Types of Sushi
@@ -347,6 +353,10 @@ export default function TypesOfSushi() {
                                     </div>
                                 </div>
 
+                                <ProTip variant="insider">
+                                    <strong>Not sure where to start?</strong> Jinbeh regulars recommend the Volcano Roll and Spider Roll as "must-tries" for both beginners and sushi veterans. For the freshest experience, grab a seat at the sushi bar — you'll watch our chefs hand-roll each piece, and they love helping newcomers pick the perfect roll. One reviewer called it a "delightful" way to discover new favorites. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                </ProTip>
+
                                 <div className="prose prose-lg max-w-none">
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🌟 Jinbeh&apos;s Most Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Varieties</Link>
@@ -426,17 +436,7 @@ export default function TypesOfSushi() {
                                     </div>
                                 </div>
 
-                                {/* Location Links */}
-                                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Link href="/frisco" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
-                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link></h3>
-                                        <p className="text-charcoal/70 text-sm">Visit us in Frisco for authentic sushi and Japanese cuisine</p>
-                                    </Link>
-                                    <Link href="/lewisville" className="p-6 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-2 border-charcoal/10">
-                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-2">📍 <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link></h3>
-                                        <p className="text-charcoal/70 text-sm">Experience fine dining at our Lewisville Japanese restaurant</p>
-                                    </Link>
-                                </div>
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

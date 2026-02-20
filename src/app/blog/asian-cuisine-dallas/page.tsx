@@ -2,21 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top Asian Cuisine & Fusion Spots in Dallas TX | Jinbeh",
     description: "Discover the rich tapestry of Asian cuisine in Dallas. From traditional dishes to innovative fusion, explore delightful flavors and culinary creativity at Dallas restaurants.",
     keywords: ["asian cuisine dallas", "asian fusion restaurants", "best asian restaurants dallas tx", "fusion cuisine dallas"],
-  openGraph: {
-    title: "Top Asian Cuisine & Fusion Spots in Dallas TX",
-    description: "From authentic Japanese hibachi to creative Asian fusion, explore the best Asian cuisine restaurants in Dallas. Local favorites and hidden gems.",
-    url: "https://jinbeh.com/blog/asian-cuisine-dallas",
-    type: "article",
-    images: ["/images/food/jinbeh_food_closeup.jpg"],
-  },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/asian-cuisine-dallas",
-  },
+    openGraph: {
+        title: "Top Asian Cuisine & Fusion Spots in Dallas TX",
+        description: "From authentic Japanese hibachi to creative Asian fusion, explore the best Asian cuisine restaurants in Dallas. Local favorites and hidden gems.",
+        url: "https://jinbeh.com/blog/asian-cuisine-dallas",
+        type: "article",
+        images: ["/images/food/jinbeh_food_closeup.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/asian-cuisine-dallas",
+    },
 };
 
 const schemas = [
@@ -39,20 +40,20 @@ const faqs = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Top Asian Cuisine & Fusion Spots in Dallas TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Top Asian Cuisine & Fusion Spots in Dallas TX" },
+    ],
 };
 
 export default function AsianCuisineDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -77,6 +78,11 @@ export default function AsianCuisineDallas() {
                                 <p className="text-charcoal italic">"Dallas's culinary scene is continually evolving with chefs experimenting with flavors and techniques, ensuring there's always something new to discover. Whether enjoying comforting ramen or savory Thai curry, the city offers rich tapestry of Asian flavors."</p>
                                 <span className="text-sm text-charcoal/80">— DFW Food Culture</span>
                             </div>
+
+                            <DidYouKnow
+                                fact="The Dallas-Fort Worth metroplex has the 4th largest Asian-American population of any metro area in the South, with over 400,000 residents of Asian descent. This vibrant community has fueled an explosion of authentic Asian restaurants — DFW now has more than 2,500 Asian dining establishments, ranging from family-run noodle shops to Michelin-recognized fine dining."
+                                source="U.S. Census Bureau & DFW Asian-American Chamber of Commerce"
+                            />
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍱 Asian Fusion Innovation</h2>
                             <p className="text-charcoal/80 mb-6">Asian fusion has become increasingly popular in Dallas, blending traditional Asian ingredients with Western culinary techniques. This culinary trend reflects a larger global movement towards fusion cuisine, where chefs take elements from different culinary traditions to create something entirely new. This approach allows chefs to create unique and exciting dishes that push the boundaries of conventional Asian cooking.</p>
@@ -145,9 +151,9 @@ export default function AsianCuisineDallas() {
                                 ))}
                             </div>
 
-                            <div className="mt-6 p-6 bg-warm-ivory rounded-xl">
-                                <p className="text-charcoal/80">Whether you're new to Japanese dining or a seasoned enthusiast, explore our <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> guide or check out the <Link href="/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link> for more recommendations.</p>
-                            </div>
+                            <ProTip variant="insider">
+                                <strong>Local insider tip:</strong> While Dallas has amazing Asian dining downtown, Jinbeh's Frisco location offers the same premium quality without the city traffic and parking hassle. Reviewers call the hibachi "dinner and a show" and say "we prefer Jinbeh over Benihana any day." Try the chicken and shrimp combo for the best value, or the Filet and Lobster Tail for a treat. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                            </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 Asian Cuisine in DFW</h2>
                             <p className="text-charcoal/80 mb-6">The Dallas-Fort Worth area is rich with culinary treasures. Whether searching for the best sushi, noodles, or curry, DFW has it all. The region's diverse culinary landscape testifies to the vibrant cultural tapestry defining DFW, offering dining options catering to every taste and preference.</p>
@@ -162,14 +168,7 @@ export default function AsianCuisineDallas() {
                                 </details>
                             ))}
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Asian Culinary Excellence at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Authentic Japanese cuisine blending traditional hibachi cooking with fresh sushi. Experience culinary artistry and entertainment in a vibrant, welcoming atmosphere at our <Link href="/frisco" className="underline hover:text-warm-ivory">Frisco location</Link> or <Link href="/lewisville" className="underline hover:text-warm-ivory">Lewisville location</Link>.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
-                                    <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10">View Our Menu</Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

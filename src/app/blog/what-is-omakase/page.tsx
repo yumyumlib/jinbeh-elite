@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "What is Omakase? A Complete Guide to the Japanese Sushi Experience | Jinbeh",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
             "Complete guide to omakase: meaning, history, what to expect, and etiquette for an unforgettable sushi dinner.",
         images: ["/images/blog/15-C060324-6663.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/what-is-omakase",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/what-is-omakase",
+    },
 };
 
 const faqs = [
@@ -107,20 +108,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "What is Omakase? The Ultimate Dining Experience" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "What is Omakase? The Ultimate Dining Experience" },
+    ],
 };
 
 export default function WhatIsOmakase() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -194,6 +195,11 @@ export default function WhatIsOmakase() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍣 What Does Omakase Mean?
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Omakase dining has exploded in popularity in the U.S., with a 400% increase in omakase-offering restaurants since 2015. The average omakase experience lasts 45-90 minutes and features 12-20 courses. In Japan, master sushi chefs (itamae) typically train for 10+ years before being trusted to lead an omakase service. The tradition of sitting at the sushi bar dates back to Edo-period Tokyo (1603-1868), when street vendors served fresh fish directly to standing customers—the earliest form of omakase."
+                                        source="Japan National Tourism Organization"
+                                    />
 
                                     <p>
                                         The word "omakase" (お任せ) translates directly to "I trust you" in Japanese. More specifically,
@@ -440,7 +446,7 @@ export default function WhatIsOmakase() {
                                     </p>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🏮 Why Try Omakase at Jinbeh?
+                                        🏮 The Omakase Spirit at Jinbeh
                                     </h2>
                                 </div>
 
@@ -457,13 +463,15 @@ export default function WhatIsOmakase() {
                                         </div>
                                         <div className="flex-1">
                                             <h3 className="text-2xl font-heading font-bold mb-4">
-                                                🏯 Authentic Omakase at Jinbeh
+                                                🏯 The Omakase Experience at Jinbeh
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Since 1988, Jinbeh has been perfecting the art of Japanese hospitality and sushi craftsmanship.
-                                                Our expert chefs trained in Tokyo bring decades of experience to every piece they craft. When you
-                                                sit at our sushi bar and order omakase, you're not just getting sushi—you're getting a masterclass
-                                                in flavor, technique, and culinary philosophy.
+                                                While Jinbeh doesn&apos;t offer a formal omakase menu, we embrace the
+                                                spirit of omakase — <strong>trust, exploration, and creativity</strong> — in
+                                                everything we do. Our sushi chefs at the bar regularly encourage guests
+                                                to try new dishes, explore unfamiliar flavors, and step outside their
+                                                comfort zone. Just sit at the bar, tell the chef what you like, and
+                                                let them surprise you.
                                             </p>
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
@@ -472,7 +480,7 @@ export default function WhatIsOmakase() {
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>Fresh fish delivered daily from premium suppliers</span>
+                                                    <span>Fresh fish delivered multiple times per week from premium suppliers</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
@@ -480,19 +488,52 @@ export default function WhatIsOmakase() {
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>Curated omakase experiences tailored to your preferences</span>
+                                                    <span>Chefs tailor suggestions to your taste and adventurousness</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>4.7★ Google rating from thousands of satisfied diners</span>
+                                                    <span>Customer-created rolls can become permanent menu items</span>
                                                 </li>
                                             </ul>
                                             <Link
                                                 href="/reservations"
                                                 className="inline-block bg-white text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition-colors"
                                             >
-                                                Reserve Your Omakase Experience →
+                                                Reserve a Sushi Bar Seat →
                                             </Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Dallas Back 9 Roll Story */}
+                                <div className="bg-warm-ivory rounded-2xl border border-stone-200 p-8 my-12">
+                                    <div className="flex items-start gap-4">
+                                        <span className="text-3xl flex-shrink-0">🍣</span>
+                                        <div>
+                                            <h3 className="text-xl font-heading font-bold text-charcoal mb-3">
+                                                When Guests Become the Chef: The Dallas Back 9 Roll
+                                            </h3>
+                                            <p className="text-charcoal/70 mb-4 leading-relaxed">
+                                                At Jinbeh, the omakase spirit goes both ways. Our owner has said:
+                                            </p>
+                                            <blockquote className="border-l-4 border-accent-red pl-4 mb-4 italic text-charcoal/80">
+                                                &ldquo;If customers can create their own rolls, and if we like it
+                                                we put it up on the board. And if enough people order it we then
+                                                transfer it to our permanent menu.&rdquo;
+                                            </blockquote>
+                                            <p className="text-charcoal/70 mb-4 leading-relaxed">
+                                                That&apos;s exactly how the <strong>Dallas Back 9 Roll</strong> was
+                                                born — shrimp tempura, crab, cream cheese, and jalapeño topped
+                                                with salmon, guacamole, spicy mayo, and eel sauce. A customer
+                                                created it, other guests kept ordering it, and it became one of
+                                                Jinbeh&apos;s most popular items.
+                                            </p>
+                                            <p className="text-charcoal/70 leading-relaxed">
+                                                This collaborative creativity is the essence of the omakase
+                                                philosophy — a conversation between chef and diner where trust
+                                                flows in both directions. At Jinbeh, <strong>your taste
+                                                    matters</strong>, and it might just end up on the menu.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -578,34 +619,12 @@ export default function WhatIsOmakase() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🍣 Ready to Experience Authentic Omakase?
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Discover the art and philosophy of omakase at Jinbeh. Our expert chefs are ready to take you on an unforgettable culinary journey.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve Your Omakase
-                                        </Link>
-                                        <Link
-                                            href="/frisco/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Frisco Menu
-                                        </Link>
-                                        <Link
-                                            href="/lewisville/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Lewisville Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="chef">
+                                        <strong>First-time omakase tip from our sushi chefs:</strong> For the best omakase experience at Jinbeh, sit at the sushi bar and let our chef know it's your first time—they'll pace the experience perfectly and explain each piece as it's served. Avoid wearing strong cologne/perfume (it interferes with the delicate aromas). Come on an empty stomach for the full 12+ piece journey. If you're nervous about raw fish, mention it—our chefs can include some lightly torched or cooked pieces while maintaining the omakase spirit. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>
@@ -616,7 +635,7 @@ export default function WhatIsOmakase() {
                         </aside>
                     </div>
                 </div>
-            </section>
-        </main>
+            </section >
+        </main >
     );
 }

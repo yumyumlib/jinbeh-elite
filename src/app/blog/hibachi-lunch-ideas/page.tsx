@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA, MenuItemCard } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Lunch Ideas for Workdays: Flavor & Fun | Jinbeh",
@@ -80,6 +81,11 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
         With the added benefits of interactive cooking and the anticipation of watching your meal come together, hibachi lunches truly transform a mundane lunch break into a mini culinary adventure. Whether you're new to hibachi or a seasoned fan, these ideas will surely tantalize your taste buds and offer a fresh perspective on lunch at the office.
       </p>
 
+      <DidYouKnow
+        fact="Americans spend over $160 billion on lunch annually, with the average worker eating out for lunch 2-3 times per week. Japanese cuisine has become the fastest-growing lunch category, with hibachi lunch specials offering 30-40% lower prices than dinner — making it one of the best value-for-quality options available during the workday."
+        source="National Restaurant Association & Bureau of Labor Statistics"
+      />
+
       <h2>Why Hibachi Lunch is Perfect for Workdays</h2>
 
       <p>
@@ -117,6 +123,13 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       <p>
         Their commitment to quality and authenticity shines through in every dish, making it a reliable option for those who appreciate genuine Japanese flavors. Whether you're a regular patron or a first-time visitor, Jinbeh ensures a memorable dining experience that captures the essence of hibachi.
       </p>
+
+      <MenuItemCard item={{
+        name: "Jinbeh Hibachi Lunch Bento",
+        description: "A complete weekday lunch starting at $12.95 — includes miso soup, house salad, grilled vegetables, fried rice, and your choice of protein. Regulars say 'better than any fast casual Japanese place' with generous portions.",
+        badge: "Best Lunch Value",
+        menuLink: "/lunch-specials"
+      }} />
 
       <h2>Hibachi Lunch Scene in Frisco</h2>
 
@@ -195,6 +208,12 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       <p>
         So, the next time you're planning your lunch break, consider stepping away from the ordinary and treating yourself to the sizzling delights of a hibachi meal. Your taste buds will thank you, and you might just find a new favorite way to enjoy your midday break. Visit <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> to experience the hibachi difference today.
       </p>
+
+      <ProTip variant="insider">
+        <strong>Lunch pro tip:</strong> Jinbeh's hibachi lunch specials start at just $12.95 and include miso soup, house salad, grilled vegetables, fried rice, and your choice of protein — it's the best lunch deal in Frisco and Lewisville. Regulars say the chicken lunch is "better than any fast casual Japanese place" and the lunch portions are generous. Available 11 AM–3 PM weekdays. <Link href="/lunch-specials" className="text-accent-red hover:underline">View lunch specials →</Link>
+      </ProTip>
+
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

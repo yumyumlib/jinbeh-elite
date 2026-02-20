@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PhotoGallery from "@/components/PhotoGallery";
+import { CustomerVoiceSection } from "@/components/CustomerVoice";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import HeritageCounter from "@/components/HeritageCounter";
@@ -92,7 +93,7 @@ const restaurantSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.2",
-    reviewCount: "850",
+    reviewCount: "752",
     bestRating: "5",
     worstRating: "1",
   },
@@ -427,6 +428,33 @@ export default function FriscoPage() {
             </div>
           </div>
         </section>
+
+        {/* Customer Testimonials */}
+        <CustomerVoiceSection
+          heading="What Frisco Guests Say"
+          subheading="Real reviews from our Frisco dining community"
+          className="bg-white"
+          quotes={[
+            {
+              quote: "For me this is the best HIBACHI so far in North Dallas. Great food, great service, great entertainment.",
+              author: "Frisco Diner",
+              platform: "Google",
+              category: "Best Hibachi",
+            },
+            {
+              quote: "Might not be the easiest to find being tucked away from the highway, but it's worth it. The food is outstanding and the chefs are amazing.",
+              author: "Local Regular",
+              platform: "Google",
+              category: "Hidden Gem",
+            },
+            {
+              quote: "Absolutely the best hibachi grill around. Quality is better than Benihana — we keep coming back.",
+              author: "Frisco Family",
+              platform: "Yelp",
+              category: "Top Rated",
+            },
+          ]}
+        />
 
         {/* Hours Section */}
         <section className="py-16 bg-white">

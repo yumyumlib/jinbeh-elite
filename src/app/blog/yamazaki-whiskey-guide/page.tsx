@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Find Yamazaki Whiskey Nearby: Your Complete Guide | Jinbeh",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
         description: "Your guide to finding Yamazaki whiskey. Learn where to buy, tasting notes, and visit Jinbeh.",
         images: ["/images/beverages/JapaneseWhiskey.webp"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/yamazaki-whiskey-guide",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/yamazaki-whiskey-guide",
+    },
 };
 
 const schemas = [
@@ -31,20 +32,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-    { "@type": "ListItem", "position": 4, "name": "Yamazaki Whiskey: Complete Tasting Guide" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Yamazaki Whiskey: Complete Tasting Guide" },
+    ],
 };
 
 export default function YamazakiWhiskeyGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/JapaneseWhiskey.webp" alt="Yamazaki whiskey bottle elegant presentation" fill className="object-cover" priority />
@@ -65,6 +66,11 @@ export default function YamazakiWhiskeyGuide() {
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Finding Yamazaki whiskey feels like a treasure hunt.</strong> Known for rich, complex flavors and a smooth finish, this highly sought-after Japanese whiskey has captured hearts worldwide. Welcome to the table! Whether you're a connoisseur or newcomer, knowing where to buy Yamazaki makes all the difference. Explore <Link href="/blog/japanese-whiskey-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">Japanese whiskey broadly</Link> or enjoy it at Jinbeh, where we treat every guest like family with fresh and flavorful selections.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 Understanding Yamazaki Whiskey</h2>
+
+                            <DidYouKnow
+                                fact="Japanese whiskey has become one of the most sought-after spirits globally, with sales growing 300% since 2014. The Yamazaki Sherry Cask 2013 was famously named 'Best Whisky in the World' by Jim Murray's Whisky Bible, shocking the Scotch-dominated industry. Yamazaki 12 Year Old now sells for 3-5x its original retail price on secondary markets. Suntory founder Shinjiro Torii chose the Yamazaki location in 1923 specifically for its unique convergence of three rivers, which creates ideal humidity for aging whiskey—a detail that makes every bottle truly one-of-a-kind."
+                                source="Suntory Heritage Foundation"
+                            />
                             <p className="text-charcoal/80 mb-6">Before exploring where to buy Yamazaki, it's essential to understand what makes this spirit so special and sought after.</p>
 
                             <div className="bg-amber-50 rounded-xl p-6 mb-8 border-l-4 border-amber-700">
@@ -216,15 +222,12 @@ export default function YamazakiWhiskeyGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-amber-700 to-amber-900 rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🥃 Experience Premium Yamazaki at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Visit Jinbeh to discover premium Yamazaki whiskey paired with exceptional Japanese hibachi and authentic cuisine, guided by our knowledgeable staff. Whether you choose our Frisco or Lewisville location, we offer the gracious hospitality that makes Yamazaki experiences truly memorable.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/menu" className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                    <Link href="/frisco" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Frisco Location</Link>
-                                    <Link href="/reservations" className="bg-soft-gold text-amber-800 px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Reserve Now</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="insider">
+                                    <strong>Japanese whiskey tasting tip:</strong> The best way to appreciate Yamazaki is the Japanese "mizuwari" style—mix one part whiskey with two parts water and a single large ice cube. This is how most Japanese drink their premium whiskey, and it opens up delicate flavors you'd miss drinking it neat. At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, ask our bartender to prepare a mizuwari or try our whiskey flight to compare expressions. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

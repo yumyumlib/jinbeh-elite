@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sushi Identification Chart | Complete Guide to Types & Flavors",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
         description: "Discover every type of sushi with our detailed identification chart.",
         images: ["/images/blog/13-C060324-6582.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/sushi-identification-chart",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sushi-identification-chart",
+    },
 };
 
 const articleSchema = {
@@ -78,20 +79,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Sushi Identification Chart: Visual Guide to Every Type" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Sushi Identification Chart: Visual Guide to Every Type" },
+    ],
 };
 
 export default function SushiIdentificationChart() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -158,6 +159,11 @@ export default function SushiIdentificationChart() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍱 Understanding Sushi Basics
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="The word 'sushi' actually refers to the seasoned rice, not the fish! It comes from an archaic Japanese term meaning 'sour taste,' referencing the vinegar-seasoned rice. There are over 30 distinct types of sushi recognized in Japan, and the average sushi chef in Tokyo uses more than 80 different fish species throughout the year. The California Roll, invented in the 1960s in North America, was the gateway that popularized sushi in the Western world."
+                                        source="Smithsonian National Museum of American History"
+                                    />
 
                                     <p className="text-charcoal/80 mb-6">
                                         Before diving into specific types, it's essential to understand what sushi actually is. Traditionally,
@@ -421,24 +427,12 @@ export default function SushiIdentificationChart() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🍣 Experience Sushi at Jinbeh</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Ready to explore these sushi types in person? Visit Jinbeh to taste authentic preparations from
-                                        expert chefs. Check our <Link href="/menu" className="text-white hover:text-warm-ivory">full menu</Link> to see all varieties we offer.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve Now
-                                        </Link>
-                                        <Link href="/frisco/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Frisco Menu
-                                        </Link>
-                                        <Link href="/lewisville/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Lewisville Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Sushi ordering pro tip:</strong> At Jinbeh, use this chart as your guide! Start with something familiar like a California Roll, then try one nigiri to appreciate pure fish flavor. Ask your sushi chef "What's freshest today?"—they love sharing their best picks. For the adventurous, request omakase (chef's choice) and let our masters surprise you. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to preview options before your visit.
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Top Baby Shower Venues: Best Places to Host | Jinbeh",
@@ -144,6 +145,11 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
         </p>
         <p className="text-sm text-charcoal/80">— Jinbeh Guest</p>
       </div>
+
+      <DidYouKnow
+        fact="Baby showers are a $3.5 billion industry in the United States, with the average shower costing between $1,500-$4,000. Restaurant-hosted baby showers have grown 45% in popularity since 2020, as hosts realize the convenience of letting professionals handle food, service, and cleanup. The average restaurant baby shower saves hosts 15-20 hours of preparation time compared to home events."
+        source="WeddingWire & The Knot"
+      />
 
       <p>
         Restaurant venues like{" "}
@@ -388,15 +394,21 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
         years to come.
       </p>
 
+      <ProTip variant="insider">
+        <strong>Baby shower venue insider tip:</strong> Jinbeh's semi-private dining areas are ideal for baby showers of 15-30 guests. Book a lunch slot for the best value — you'll get the same elegant setting with lower per-person costs. Our team handles all food, service, and cleanup so the host can actually enjoy the party. Mention it's a baby shower when booking and we'll help arrange a special menu. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your space →</Link>
+      </ProTip>
+
+      <LocationCTA location="both" />
+
       <RelatedArticles currentSlug={slug} />
-    
-        {/* Related Reading */}
-        <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-          <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
-          <div className="flex flex-col gap-2">
-              <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">Large Group Dining Guide</Link>
-          </div>
+
+      {/* Related Reading */}
+      <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
+        <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">Large Group Dining Guide</Link>
         </div>
-      </ArticleLayout>
+      </div>
+    </ArticleLayout>
   );
 }

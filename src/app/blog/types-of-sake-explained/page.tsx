@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh",
@@ -163,9 +164,26 @@ export default function TypesOfSakeExplained() {
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
 
+                                    <IngredientSpotlight ingredient={{
+                                        name: "Sake (Rice Wine)",
+                                        japaneseName: "Nihonshu (日本酒)",
+                                        icon: "🍶",
+                                        origin: "Japan — Niigata, Fushimi (Kyoto), Nada (Kobe)",
+                                        season: "Autumn (new sake season: October–February)",
+                                        flavor: "Ranges from crisp & dry (Junmai) to floral & fruity (Daiginjo)",
+                                        pairsWith: "Sashimi, hibachi, tempura, grilled fish",
+                                        jinbehDish: "Sake Flight — sample 3 varieties curated by our staff",
+                                        jinbehDishLink: "/frisco/cocktails/sake-flight"
+                                    }} />
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🌾 The Sake Classification System
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Japan produces over 1,400 active sake breweries (kura), yet the global sake market has grown 12% annually since 2018, reaching $8.2 billion in 2024. The U.S. is now the largest sake market outside Japan, with Texas ranking in the top 10 states for sake consumption. Interestingly, sake predates wine and beer—archaeological evidence suggests rice fermentation in Japan dates back over 2,000 years. The rice polishing machine, invented in 1930, revolutionized sake and created the modern classification system we use today."
+                                        source="Sake Brewers Association of Japan"
+                                    />
 
                                     <p>
                                         Sake classification is based on two main factors: <strong>ingredients</strong> and <strong>rice polishing percentage</strong>. Understanding these fundamentals unlocks the world of sake varieties.
@@ -926,19 +944,12 @@ export default function TypesOfSakeExplained() {
                                         The best part? You don't have to figure it out alone. At Jinbeh, our staff is passionate about sake and trained in all varieties. Tell us what you're eating or what flavors you enjoy, and we'll recommend the perfect type for your experience.
                                     </p>
 
-                                    <div className="bg-gradient-to-br from-soft-gold/20 to-accent-red/20 rounded-2xl p-8 text-center">
-                                        <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Ready to Discover Your Sake Type?</h3>
-                                        <p className="text-charcoal/80 mb-6 text-lg">
-                                            Visit Jinbeh and explore our curated sake selection. Let our team help you find the perfect variety for your palate.
-                                        </p>
-                                        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                                            <Link href="/frisco" className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
-                                                Visit Frisco
-                                            </Link>
-                                            <Link href="/lewisville" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">
-                                                Visit Lewisville
-                                            </Link>
-                                        </div>
+                                    <div className="mt-12">
+                                        <ProTip variant="chef">
+                                            <strong>Sake exploration tip from our team:</strong> The fastest way to discover your sake preference is to order a "sake flight" during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>—you'll taste 3-4 varieties side-by-side and immediately understand the differences between Junmai, Ginjo, and Daiginjo. Ask our bartender to arrange them light-to-bold for the best tasting experience. Temperature matters enormously: try the same Junmai both warm and chilled to experience how it transforms. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                        </ProTip>
+
+                                        <LocationCTA location="both" />
                                     </div>
 
                                     <p className="text-charcoal/80 text-sm mt-12 pt-8 border-t border-warm-ivory-dark">

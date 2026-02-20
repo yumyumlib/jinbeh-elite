@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Steak Near Me: Top 10 Steakhouses to Try | Jinbeh",
@@ -69,6 +70,11 @@ export default function BestSteakNearMe() {
                                 <p className="text-charcoal italic">"A perfect steak begins with premium cuts, expert cooking, and attention to detail. Whether you prefer classic preparations or innovative techniques, the right steakhouse elevates every bite."</p>
                                 <span className="text-sm text-charcoal/80">— Steakhouse Excellence</span>
                             </div>
+
+                            <DidYouKnow
+                                fact="The process of dry-aging steak — which concentrates flavor and tenderizes the meat — can take anywhere from 21 to 120 days. During this time, the steak loses up to 30% of its weight through moisture evaporation, which is why dry-aged cuts cost more. At a hibachi-style restaurant like Jinbeh, the high-heat iron grill creates a perfect Maillard reaction crust while keeping the interior juicy."
+                                source="American Meat Science Association"
+                            />
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥩 Classic Steakhouse Experiences</h2>
 
@@ -142,6 +148,10 @@ export default function BestSteakNearMe() {
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Check Reviews and Ratings</h3>
                             <p className="text-charcoal/80 mb-6">Before making a reservation, read reviews and ratings from other diners. This provides valuable insights into the quality of food, service, and overall experience. Pay attention to patterns in feedback and how management responds to reviews, as this indicates their commitment to customer satisfaction.</p>
 
+                            <ProTip variant="insider">
+                                <strong>Steak lover's secret:</strong> Jinbeh's hibachi filet mignon is a crowd favorite — reviewers consistently say it's "cooked to perfection" and the chef show makes it "dinner and entertainment combined." For the best experience, order the Filet and Lobster Tail combo and pair it with a Japanese whisky. Weekend reservations fill fast! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
+                            </ProTip>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>
                             <details className="group bg-warm-ivory rounded-xl mb-3">
                                 <summary className="p-5 cursor-pointer font-semibold flex justify-between">Where can I find the best steak near me?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
@@ -171,15 +181,7 @@ export default function BestSteakNearMe() {
                                 <div className="px-5 pb-5 text-charcoal/80">Absolutely! It's a celebration! Hibachi tables seat 8-10 guests sharing the experience together. Our chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners.</div>
                             </details>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🥩 Premium Steak at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Experience hibachi-grilled steaks prepared by expert chefs, combined with traditional Japanese technique and entertainment. Perfect for celebrations and group dinners.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Visit Frisco</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Visit Lewisville</Link>
-                                    <Link href="/reservations" className="border-2 border-soft-gold px-6 py-3 rounded-xl font-semibold text-soft-gold">Make a Reservation</Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

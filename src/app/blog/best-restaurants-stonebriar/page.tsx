@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Restaurants Near Stonebriar Mall Frisco TX | Jinbeh",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Your complete guide to the best dining near Stonebriar Centre in Frisco, Texas.",
         images: ["/images/blog/1-C060324-6328.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-restaurants-stonebriar",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-restaurants-stonebriar",
+    },
 };
 
 const articleSchema = {
@@ -38,7 +39,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What are the best restaurants near Stonebriar Mall?",
-        answer: "Jinbeh Japanese Restaurant is a top-rated choice just minutes from Stonebriar on Preston Road, serving hibachi and sushi since 1988. Other popular options include Perry's Steakhouse, The Cheesecake Factory, and Cane Rosso for pizza. For the most authentic Japanese experience with entertainment, Jinbeh is the local favorite with 4.7 stars on Google.",
+        answer: "Jinbeh Japanese Restaurant is a top-rated choice just minutes from Stonebriar on Preston Road, serving hibachi and sushi since 1988. Other popular options include Perry's Steakhouse, The Cheesecake Factory, and Cane Rosso for pizza. For the most authentic Japanese experience with entertainment, Jinbeh is the local favorite with 4.2 stars on Google.",
     },
     {
         question: "Is there a good hibachi restaurant near Stonebriar Centre?",
@@ -73,20 +74,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
+    ],
 };
 
 export default function BestRestaurantsStonebriar() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -150,6 +151,11 @@ export default function BestRestaurantsStonebriar() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Stonebriar Centre opened in August 2000 and quickly transformed the Preston Road corridor into one of North Texas's premier dining districts. Today, there are over 100 restaurants within a 2-mile radius of the mall — but Jinbeh predates all of them, having served Frisco families since 1988, nearly 12 years before the mall even opened."
+                                        source="Stonebriar Centre History & Frisco Chamber of Commerce"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍽️ Why the Stonebriar Area Is a Dining Destination
@@ -276,7 +282,7 @@ export default function BestRestaurantsStonebriar() {
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>4.7 stars on Google (1,000+ reviews)</span>
+                                                    <span>4.2 stars on Google</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
@@ -351,6 +357,10 @@ export default function BestRestaurantsStonebriar() {
                                         <li><strong>Happy hour deals</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh&apos;s happy hour</Link> or other spots for discounted drinks and appetizers before dinner.</li>
                                         <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
                                     </ul>
+
+                                    <ProTip variant="insider">
+                                        <strong>Post-shopping pro tip:</strong> Skip the mall food court and head to Jinbeh — it's just 3 minutes down Preston Road. Reviewers say the hibachi is "dinner and a show" that kids love after a long shopping day. The Filet and Lobster Tail combo is the crowd favorite, and the crab rangoons are "the best I've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                    </ProTip>
                                 </div>
 
                                 {/* FAQ Section */}
@@ -372,21 +382,7 @@ export default function BestRestaurantsStonebriar() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🏯 Visit the Stonebriar Area&apos;s Best-Kept Secret</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Skip the chain restaurant wait. Experience authentic Japanese cuisine at Jinbeh—where 37 years of family tradition meets unforgettable entertainment.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve at Frisco
-                                        </Link>
-                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Menu
-                                        </Link>
-                                    </div>
-                                </div>
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

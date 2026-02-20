@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sashimi vs Sushi: Key Differences Explained | Jinbeh",
@@ -11,9 +12,9 @@ export const metadata: Metadata = {
         title: "Sashimi vs Sushi: Key Differences Explained",
         description: "Discover the difference between sashimi and sushi. Learn what they are, when to order each, and how Jinbeh serves both.",
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/sashimi-vs-sushi",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sashimi-vs-sushi",
+    },
 };
 
 const faqs = [
@@ -45,20 +46,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Sashimi vs Sushi: What's the Difference?" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Sashimi vs Sushi: What's the Difference?" },
+    ],
 };
 
 export default function SashimiVsSushi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => (
                 <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
             ))}
@@ -100,6 +101,11 @@ export default function SashimiVsSushi() {
                             <p className="text-xl text-charcoal/80 mb-8">
                                 <strong>Confused about the difference between sashimi and sushi?</strong> While both are iconic Japanese dishes featuring raw fish, they are fundamentally different. Discover what makes each unique, when to order them, and how Jinbeh Japanese Restaurant serves the finest versions of both.
                             </p>
+
+                            <DidYouKnow
+                                fact="The traditional sashimi knife, called a 'yanagiba' (柳刃), literally means 'willow blade' — a single-beveled blade that can be over 12 inches long. Sushi chefs in Japan train for at least 3 years just to master fish preparation and knife skills before they're allowed to serve customers. Each cut must be precise to preserve texture and flavor."
+                                source="Japanese Culinary Academy"
+                            />
 
                             {/* Quick Comparison Table */}
                             <div className="my-12 bg-gradient-to-br from-accent-red/5 to-purple-50 p-6 rounded-2xl border-2 border-accent-red/20">
@@ -329,6 +335,10 @@ export default function SashimiVsSushi() {
                                 </ul>
                             </div>
 
+                            <ProTip variant="insider">
+                                <strong>Jinbeh sashimi insider tip:</strong> Sit at the sushi bar to watch our chefs slice each piece to order — regulars say it's the best way to experience sashimi at its freshest. Reviewers consistently praise the salmon sashimi as "melt-in-your-mouth," and the tuna is a close second. If you can't decide between sushi and sashimi, ask for a combination platter — one reviewer called it "the best of both worlds." <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                            </ProTip>
+
                             {/* FAQs Section */}
                             <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                 ❓ Frequently Asked Questions
@@ -436,24 +446,7 @@ export default function SashimiVsSushi() {
                                 </div>
                             </div>
 
-                            {/* Internal Links Section */}
-                            <div className="mt-12 pt-8 border-t-2 border-charcoal/10">
-                                <h3 className="text-xl font-bold text-charcoal mb-4">Visit Jinbeh Today</h3>
-                                <div className="grid sm:grid-cols-2 gap-4">
-                                    <Link href="/frisco" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        📍 Frisco Location
-                                    </Link>
-                                    <Link href="/lewisville" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        📍 Lewisville Location
-                                    </Link>
-                                    <Link href="/reservations" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        🎯 Make a Reservation
-                                    </Link>
-                                    <Link href="/frisco/menu" className="p-4 rounded-lg bg-warm-ivory hover:bg-charcoal/5 transition border border-charcoal/10 text-charcoal hover:text-accent-red font-semibold">
-                                        🍽️ View Our Menu
-                                    </Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         {/* Sidebar */}

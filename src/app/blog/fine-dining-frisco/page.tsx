@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh | Japanese Excellence",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
             "Explore the finest dining experiences in Frisco. From Jinbeh's authentic Japanese cuisine to contemporary American fare.",
         images: ["/images/blog/7-C060324-6447.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/fine-dining-frisco",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/fine-dining-frisco",
+    },
 };
 
 const articleSchema = {
@@ -79,20 +80,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Fine Dining in Frisco TX: Best Upscale Restaurants" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Fine Dining in Frisco TX: Best Upscale Restaurants" },
+    ],
 };
 
 export default function FineDiningFrisco() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -157,6 +158,11 @@ export default function FineDiningFrisco() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Fine Dining Team</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Frisco's population has exploded from just 33,000 in 2000 to over 230,000 today, making it one of the fastest-growing cities in America. This growth has attracted over 500 restaurants to the area — but Jinbeh has been a Frisco dining institution since 1988, predating most of the city's modern development by over a decade."
+                                        source="U.S. Census Bureau & City of Frisco"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍽️ Why Frisco is a Fine Dining Destination
@@ -242,7 +248,7 @@ export default function FineDiningFrisco() {
                                                 🏯 Why Choose Jinbeh for Fine Dining?
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Jinbeh has been a cornerstone of Frisco's dining scene since 1988. We've earned a 4.7-star rating on Google through unwavering commitment to quality, authenticity, and hospitality.
+                                                Jinbeh has been a cornerstone of Frisco's dining scene since 1988. We've earned a 4.2-star Google rating through unwavering commitment to quality, authenticity, and hospitality.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
@@ -305,6 +311,10 @@ export default function FineDiningFrisco() {
                                         Whether you're celebrating an anniversary, hosting a corporate event, or marking a milestone birthday, fine dining restaurants in Frisco—especially Jinbeh—can customize the experience to your preferences.
                                     </p>
 
+                                    <ProTip variant="insider">
+                                        <strong>Fine dining insider tip:</strong> For special occasions, request the sushi bar for an intimate experience watching master chefs work, or book a hibachi table for group celebrations. Reviewers rave that Jinbeh's sake flights pair perfectly with sushi omakase. Ask about semi-private dining for corporate events — it's Frisco's best-kept fine dining secret. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your experience →</Link>
+                                    </ProTip>
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         📍 Experience Fine Dining at Jinbeh Frisco
                                     </h2>
@@ -339,35 +349,7 @@ export default function FineDiningFrisco() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-deep-indigo to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">
-                                        🏯 Welcome to the Table
-                                    </h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Frisco residents choose Jinbeh for important meals. Hibachi shows. Fresh sushi. Expert chefs. We treat every guest like family. Start with <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> or surprise someone with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link>.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve Frisco
-                                        </Link>
-                                        <Link
-                                            href="/reservations"
-                                            className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg"
-                                        >
-                                            Reserve Lewisville
-                                        </Link>
-                                        <Link
-                                            href="/frisco/menu"
-                                            className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg"
-                                        >
-                                            View Menu
-                                        </Link>
-                                    </div>
-                                </div>
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

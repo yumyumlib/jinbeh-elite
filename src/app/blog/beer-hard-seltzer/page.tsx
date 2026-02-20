@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist | Jinbeh DFW",
@@ -81,6 +82,11 @@ export default function BeerHardSeltzer() {
             <p>
                 Explore our complete beverage program at the <Link href="/bar" className="text-accent-red hover:underline">Jinbeh bar</Link>, where our bartenders can guide you through Japanese beers, craft cocktails, and premium sake selections.
             </p>
+
+            <DidYouKnow
+                fact="The Japanese beer market is worth over $20 billion globally, with Sapporo, Asahi, and Kirin controlling 90% of the market. Interestingly, Japanese beers use rice as a key ingredient — giving them their distinctively clean, crisp taste that pairs better with food than Western-style hoppy beers. Sapporo is the oldest beer brand in Japan, having been brewed continuously since 1876."
+                source="Japan Brewers Association & IBISWorld"
+            />
 
             <h2>Our Japanese Beer Selection</h2>
 
@@ -192,6 +198,12 @@ export default function BeerHardSeltzer() {
                 are happy to guide you to the perfect drink for your meal. That&apos;s been the Jinbeh
                 way since 1988.
             </p>
+
+            <ProTip variant="chef">
+                <strong>Bartender's recommendation:</strong> Start with a Sapporo draft — it's our #1 seller for a reason. If you're having hibachi, order your beer when the chef starts cooking; the cold crispness is perfect alongside sizzling steak and fried rice. For sushi, try Kirin Ichiban — its slightly fuller body pairs beautifully with raw fish. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, Sapporo drafts are discounted, making it the perfect time to explore our Japanese beer lineup.
+            </ProTip>
+
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

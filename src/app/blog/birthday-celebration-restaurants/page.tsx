@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top Birthday Celebration Restaurants | Special Moments at Jinbeh",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
         description: "Make your birthday special with dining experiences that go beyond ordinary meals.",
         images: ["/images/blog/25-C060324-6856.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/birthday-celebration-restaurants",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/birthday-celebration-restaurants",
+    },
 };
 
 const articleSchema = {
@@ -85,20 +86,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
-    { "@type": "ListItem", "position": 4, "name": "Top Birthday Celebration Restaurants in DFW" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 4, "name": "Top Birthday Celebration Restaurants in DFW" },
+    ],
 };
 
 export default function BirthdayCelebrationRestaurants() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -166,6 +167,11 @@ export default function BirthdayCelebrationRestaurants() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🎂 Top Restaurants With Birthday Specials
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="Birthday dining is a $4.3 billion annual market in the US. Restaurants that offer interactive entertainment like hibachi shows see 3x higher birthday booking rates than traditional restaurants. The average birthday dinner group spends 40% more per person than regular diners, making birthdays the most profitable celebration type for restaurants."
+                                        source="National Restaurant Association"
+                                    />
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Jinbeh</h3>
                                     <p className="text-charcoal/80 mb-6">
@@ -346,34 +352,12 @@ export default function BirthdayCelebrationRestaurants() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🎉 Make Your Birthday Unforgettable</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        At Jinbeh, we specialize in turning birthday dinners into memorable experiences. Our hibachi chefs,
-                                        interactive atmosphere, and special birthday touches ensure your celebration is one you'll remember forever.
-                                        Can't decide what to give? A{" "}
-                                        <Link href="/gift-cards" className="text-white hover:underline underline">
-                                            Jinbeh gift card
-                                        </Link>
-                                        {" "}is always the perfect birthday present. Visit our{" "}
-                                        <Link href="/frisco" className="text-white hover:underline underline">
-                                            Frisco location
-                                        </Link>
-                                        {" "}or{" "}
-                                        <Link href="/lewisville" className="text-white hover:underline underline">
-                                            Lewisville location
-                                        </Link>
-                                        .
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve Your Birthday Table
-                                        </Link>
-                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Our Menu
-                                        </Link>
-                                    </div>
+                                <div className="mt-16">
+                                    <ProTip variant="insider">
+                                        <strong>Birthday dining insider tip:</strong> Jinbeh offers complimentary birthday desserts and special birthday songs for the guest of honor. Book a hibachi table for the best experience — your chef becomes the entertainment! For groups of 8+, call ahead to ensure adjacent tables. Weekend dinner slots fill fast, so reserve 1-2 weeks in advance for Friday/Saturday birthdays. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your birthday table →</Link>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

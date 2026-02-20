@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Unique Adult Birthday Party Ideas & Themes | Jinbeh Events",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
         description: "Transform your birthday celebration with creative themes and unique activities.",
         images: ["/images/blog/26-C060324-6874.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/adult-birthday-party-ideas",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/adult-birthday-party-ideas",
+    },
 };
 
 const articleSchema = {
@@ -74,20 +75,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
-    { "@type": "ListItem", "position": 4, "name": "Unique Adult Birthday Party Ideas & Themes" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 4, "name": "Unique Adult Birthday Party Ideas & Themes" },
+    ],
 };
 
 export default function AdultBirthdayPartyIdeas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -155,6 +156,11 @@ export default function AdultBirthdayPartyIdeas() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🎭 Creative Themes for Adult Birthday Parties
                                     </h2>
+
+                                    <DidYouKnow
+                                        fact="A survey by Eventbrite found that 78% of millennials and Gen-Xers prefer experiential celebrations over traditional gift-focused parties. Demand for 'experience-based' birthday celebrations has grown 67% since 2019, with interactive dining experiences like hibachi ranking as the #2 most-requested birthday activity behind escape rooms."
+                                        source="Eventbrite & Event Marketing Institute"
+                                    />
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Masquerade Ball</h3>
                                     <p className="text-charcoal/80 mb-6">
@@ -359,20 +365,12 @@ export default function AdultBirthdayPartyIdeas() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
                                 <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🎉 Host Your Birthday Bash at Jinbeh</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        It's a celebration! Jinbeh offers interactive hibachi experiences, delicious Japanese cuisine, and a festive atmosphere. Surprise the birthday person with a <Link href="/gift-cards" className="text-white hover:underline underline">Jinbeh gift card</Link> they'll love. Your birthday will be truly unforgettable.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Make a Reservation
-                                        </Link>
-                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Our Full Menu
-                                        </Link>
-                                    </div>
+                                    <ProTip variant="insider">
+                                        <strong>Birthday celebration insider tip:</strong> Book your hibachi birthday at Jinbeh for the ultimate adults-only experience. Start with sake cocktails at the bar during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, then move to the hibachi table where your chef becomes the entertainment. For milestone birthdays (30th, 40th, 50th), our team arranges special touches — just mention it when you call. Groups of 8+ should book 2-3 weeks ahead for weekend dates. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
+                                    </ProTip>
+
+                                    <LocationCTA location="both" />
                                 </div>
                             </div>
                         </article>

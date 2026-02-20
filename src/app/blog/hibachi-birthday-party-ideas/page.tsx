@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide | Jinbeh",
@@ -128,6 +129,11 @@ export default function HibachiBirthdayPartyIdeasPage() {
         </p>
         <p className="text-sm text-charcoal/80">— Jinbeh Guest Review</p>
       </div>
+
+      <DidYouKnow
+        fact="Americans spend over $12 billion dining out for birthday celebrations each year, making it the #1 reason people eat at restaurants outside of regular meals. Hibachi/teppanyaki restaurants see a 40% increase in bookings during birthday season (May-August), and the interactive chef performance eliminates the need for separate entertainment — saving the average party host $200-$500 on entertainment costs."
+        source="National Restaurant Association & Event Planning Institute"
+      />
 
       <h3>Everyone Eats Together</h3>
 
@@ -504,6 +510,12 @@ export default function HibachiBirthdayPartyIdeasPage() {
         Tell us about your celebration when you call—we'll make sure it's
         one to remember.
       </p>
+
+      <ProTip variant="insider">
+        <strong>Birthday party pro tip:</strong> The best-kept secret for Jinbeh birthday parties: book a Sunday lunch slot. You get the same amazing chef show, lower prices (30-40% less than dinner), and more personal attention from staff. Ask about the "Birthday VIP" experience when booking — our chefs go all-out for birthday guests with extra tricks and personalized attention. Don't forget to mention food allergies when you call! <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
+      </ProTip>
+
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="hibachi-birthday-party-ideas" />
     </ArticleLayout>

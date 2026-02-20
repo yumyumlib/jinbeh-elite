@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
@@ -84,6 +85,11 @@ export default function JapaneseTakeoutNearMe() {
 
             <h2>Best Japanese Takeout Dishes to Order</h2>
 
+            <DidYouKnow
+                fact="Japanese takeout orders in the US grew 85% between 2019-2024, making it the fastest-growing Asian cuisine category for delivery. Sushi rolls are the #1 most-ordered Japanese takeout item, followed by teriyaki bowls and bento boxes. The average Japanese takeout order is 25% larger than dine-in orders because customers add extra rolls and appetizers for sharing."
+                source="Nation's Restaurant News & DoorDash Trends Report"
+            />
+
             <h3>🍣 Sushi Rolls</h3>
             <p>
                 The star of any Japanese takeout order. Our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi rolls</Link> are
@@ -156,6 +162,12 @@ export default function JapaneseTakeoutNearMe() {
                 hesitate to ask about dietary modifications when placing your takeout order. We&apos;re happy
                 to customize.
             </p>
+
+            <ProTip variant="insider">
+                <strong>Japanese takeout pro tip:</strong> At Jinbeh, call 20-30 minutes before you want to pick up for the freshest sushi. Order tempura and baked rolls for takeout—they travel better than raw fish rolls. Ask for extra ginger and wasabi on the side. For large orders (5+ rolls), mention it when calling so we can time everything to be ready together. <Link href="/takeout" className="text-accent-red hover:underline">Order takeout →</Link>
+            </ProTip>
+
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

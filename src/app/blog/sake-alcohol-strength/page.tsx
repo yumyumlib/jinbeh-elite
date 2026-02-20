@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sake Alcohol Strength: ABV & Types | Jinbeh",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
         description: "Master sake alcohol content and discover which types suit your taste.",
         images: ["/images/beverages/LewisvilleBar.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/sake-alcohol-strength",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/sake-alcohol-strength",
+    },
 };
 
 const faqs = [
@@ -34,20 +35,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-    { "@type": "ListItem", "position": 4, "name": "Sake Alcohol Content & Strength Guide: What to Know" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Sake Alcohol Content & Strength Guide: What to Know" },
+    ],
 };
 
 export default function SakeGuide() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/LewisvilleBar.jpg" alt="Sake" fill className="object-cover" priority />
@@ -78,6 +79,11 @@ export default function SakeGuide() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 Sake Types</h2>
+
+                            <DidYouKnow
+                                fact="Sake has been brewed in Japan for over 2,000 years, making it one of the world's oldest alcoholic beverages. Despite being called 'rice wine,' sake is actually brewed more like beer through a parallel fermentation process. Japan has over 1,400 active sake breweries, and the premium sake market has grown 25% globally since 2020 as international appreciation expands."
+                                source="Japan Sake and Shochu Makers Association"
+                            />
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Type</th><th className="p-3">ABV</th><th className="p-3 text-left">Profile</th></tr></thead>
                                 <tbody className="text-charcoal/80">
@@ -120,14 +126,12 @@ export default function SakeGuide() {
                                 ))}
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-deep-indigo rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍶 Experience Premium Sake at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover our curated sake selection at both Frisco and Lewisville locations. Visit our <Link href="/bar" className="text-white hover:underline underline">bar</Link> for premium pours, or try sake bombs during <Link href="/happy-hour" className="text-white hover:underline underline">happy hour</Link> at special pricing. Prefer cocktails? Explore our <Link href="/blog/japanese-cocktails" className="text-white hover:underline underline">Japanese cocktails</Link> crafted with premium spirits. Our knowledgeable staff pairs the perfect sake with sushi or hibachi.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Full Menu</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                    <Link href="/blog/best-happy-hour-frisco-tx" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Happy Hour Specials</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="chef">
+                                    <strong>Sake tasting tip:</strong> New to sake? Start with a sake flight at Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">full bar</Link>—our bartenders will walk you through 3-4 varieties from light to bold. The best beginner sake is Honjozo (smooth, approachable) or Nigori (sweet, creamy). During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, try a sake bomb for a fun introduction. Ask about our seasonal selections—they change quarterly!
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

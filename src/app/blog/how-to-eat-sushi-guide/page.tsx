@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "How to Eat Sushi: Complete Etiquette & Eating Tips Guide | Jinbeh",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
         description: "Master the art of eating sushi. Learn proper techniques, etiquette, and insider tips.",
         images: ["/images/blog/12-C060324-6551.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/how-to-eat-sushi-guide",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/how-to-eat-sushi-guide",
+    },
 };
 
 const articleSchema = {
@@ -102,22 +103,75 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "How to Eat Sushi: The Complete Guide" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "How to Eat Sushi: The Complete Guide" },
+    ],
+};
+
+const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Eat Sushi: Complete Etiquette Guide",
+    "description": "Learn the proper way to eat sushi, from handling chopsticks to dipping techniques. A step-by-step guide to enjoying sushi like a pro.",
+    "totalTime": "PT5M",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Choose Your Eating Style",
+            "text": "Sushi can be eaten with chopsticks or fingers — both are acceptable in Japanese tradition. Nigiri is traditionally eaten by hand, while sashimi is best with chopsticks."
+        },
+        {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Pick Up the Sushi Correctly",
+            "text": "For nigiri, turn it on its side and gently grip between thumb and middle finger with index finger on top. For maki rolls, use chopsticks to grab from the top."
+        },
+        {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Dip the Fish Side in Soy Sauce",
+            "text": "Dip only the fish side of nigiri into soy sauce — never the rice. A light touch is all you need. Too much soy sauce overpowers the chef's carefully seasoned rice."
+        },
+        {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Eat in One Bite",
+            "text": "Try to eat each piece in one bite so all the flavors blend together. If a piece is too large, two bites are acceptable, but avoid nibbling."
+        },
+        {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Use Ginger as a Palate Cleanser",
+            "text": "Eat a small slice of pickled ginger between different types of sushi to cleanse your palate. Do not place ginger on top of sushi."
+        },
+        {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Apply Wasabi Sparingly",
+            "text": "If your sushi doesn't already contain wasabi, add a tiny amount directly to the fish. Avoid mixing wasabi into soy sauce — this is considered improper etiquette."
+        },
+        {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Eat in the Right Order",
+            "text": "Start with lighter, milder fish (white fish, then salmon) and progress to richer, fattier cuts. End with tamago (egg) as a sweet finish."
+        },
+    ],
 };
 
 export default function HowToEatSushi() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
@@ -178,6 +232,11 @@ export default function HowToEatSushi() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact='The word "sushi" doesn’t mean raw fish — it refers to the seasoned vinegared rice. "Su" means vinegar and "shi" comes from "meshi" (rice). You can have sushi without any raw fish at all.'
+                                        source="Japanese Etymology"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         📖 Sushi Etiquette Step-by-Step
@@ -700,6 +759,10 @@ export default function HowToEatSushi() {
                                     </div>
                                 </div>
 
+                                <ProTip variant="insider">
+                                    <strong>First time at Jinbeh?</strong> Regulars swear by the sushi bar — you get chef interaction and the freshest cuts. Ask what's good that day; one recent reviewer called the experience &quot;delightful&quot; and said the Volcano Roll and Spider Roll are must-tries. Don't be shy about being a beginner — our chefs love guiding newcomers. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a seat at the bar →</Link>
+                                </ProTip>
+
                                 {/* FAQ Section */}
                                 <div className="mt-16">
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
@@ -759,25 +822,9 @@ export default function HowToEatSushi() {
                                     </div>
                                 </div>
 
-                                {/* Location CTA */}
-                                <div className="mt-12 p-8 bg-gradient-to-r from-soft-gold/10 to-soft-gold/10 rounded-2xl border-l-4 border-soft-gold">
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">📍 Ready to Practice Your Etiquette?</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Visit Jinbeh in Frisco or Lewisville and put your sushi knowledge to work. Our expert chefs will appreciate your respect for the craft. Consider pairing your meal with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for an enhanced dining experience.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4">
-                                        <Link href="/frisco" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
-                                            Visit Frisco
-                                        </Link>
-                                        <Link href="/lewisville" className="flex-1 bg-charcoal text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal/90 transition-colors text-center">
-                                            Visit Lewisville
-                                        </Link>
-                                        <Link href="/reservations" className="flex-1 bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors text-center">
-                                            Reserve Your Table
-                                        </Link>
-                                    </div>
-                                </div>
                             </div>
+
+                            <LocationCTA location="both" />
                         </article>
 
                         {/* Sidebar */}

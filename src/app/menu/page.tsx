@@ -13,8 +13,53 @@ export const metadata: Metadata = {
 };
 
 export default function MenuPage() {
+    const menuSchema = {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Jinbeh Japanese Restaurant",
+        "url": "https://jinbeh.com",
+        "hasMenu": {
+            "@type": "Menu",
+            "name": "Jinbeh Full Menu",
+            "url": "https://jinbeh.com/menu",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "Hibachi",
+                    "description": "Teppanyaki-grilled entrées cooked tableside by our chefs",
+                    "url": "https://jinbeh.com/frisco/hibachi",
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Sushi Rolls",
+                    "description": "Signature and classic maki rolls handcrafted by our sushi chefs",
+                    "url": "https://jinbeh.com/frisco/sushi-rolls",
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Sashimi",
+                    "description": "Premium sliced raw fish including omakase selections",
+                    "url": "https://jinbeh.com/frisco/sashimi",
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Appetizers",
+                    "description": "Japanese starters including edamame, gyoza, tempura, and more",
+                    "url": "https://jinbeh.com/frisco/appetizers",
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Cocktails & Drinks",
+                    "description": "Japanese-inspired cocktails, sake flights, and craft beverages",
+                    "url": "https://jinbeh.com/frisco/cocktails",
+                },
+            ],
+        },
+    };
+
     return (
         <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuSchema) }} />
             <Header />
             <main id="main-content" className="min-h-screen bg-warm-ivory">
                 <MenuClient />

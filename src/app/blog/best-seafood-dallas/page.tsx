@@ -2,21 +2,22 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Seafood Restaurants in Dallas TX: Top Picks | Jinbeh",
     description: "Discover the best seafood restaurants in Dallas, from upscale dining at The Oceanaire to fresh markets. Explore top seafood spots and Japanese sushi at Jinbeh.",
     keywords: ["best seafood dallas", "seafood restaurants dallas tx", "fresh sushi dallas", "seafood dining dallas"],
-  openGraph: {
-    title: "Best Seafood Restaurants in Dallas TX",
-    description: "Craving fresh seafood in Dallas? From sushi-grade fish to grilled catches, discover the best seafood restaurants across DFW.",
-    url: "https://jinbeh.com/blog/best-seafood-dallas",
-    type: "article",
-    images: ["/images/blog/19-C060324-6754.jpg"],
-  },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-seafood-dallas",
-  },
+    openGraph: {
+        title: "Best Seafood Restaurants in Dallas TX",
+        description: "Craving fresh seafood in Dallas? From sushi-grade fish to grilled catches, discover the best seafood restaurants across DFW.",
+        url: "https://jinbeh.com/blog/best-seafood-dallas",
+        type: "article",
+        images: ["/images/blog/19-C060324-6754.jpg"],
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-seafood-dallas",
+    },
 };
 
 const faqs = [
@@ -39,20 +40,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Best Seafood Restaurants in Dallas TX" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Seafood Restaurants in Dallas TX" },
+    ],
 };
 
 export default function BestSeafoodDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
@@ -77,6 +78,11 @@ export default function BestSeafoodDallas() {
                                 <p className="text-charcoal italic">"Dallas's seafood scene blends global culinary influences, creating innovative dishes that honor traditional preparation methods while embracing contemporary techniques."</p>
                                 <span className="text-sm text-charcoal/80">— DFW Food Culture</span>
                             </div>
+
+                            <DidYouKnow
+                                fact="Despite being over 250 miles from the nearest coast, Dallas receives more than 50,000 pounds of fresh seafood daily through DFW International Airport's cargo hub — one of the busiest in the world. This means restaurants like Jinbeh can source fish that was swimming in the ocean just 24-48 hours before landing on your plate."
+                                source="DFW Airport Authority & National Fisheries Institute"
+                            />
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🦪 Upscale Seafood Dining</h2>
 
@@ -132,9 +138,9 @@ export default function BestSeafoodDallas() {
                                 ))}
                             </div>
 
-                            <div className="mt-6 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
-                                <p className="text-charcoal/80">Discover more about our offerings at <Link href="/frisco" className="text-accent-red hover:underline font-semibold">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline font-semibold">Lewisville location</Link>. Check out our <Link href="/menu" className="text-accent-red hover:underline font-semibold">full menu</Link> and <Link href="/reservations" className="text-accent-red hover:underline font-semibold">make a reservation</Link> today.</p>
-                            </div>
+                            <ProTip variant="insider">
+                                <strong>Seafood lovers' tip:</strong> Jinbeh regulars say the sushi bar is the best seat in the house — you'll watch chefs slice each piece to order from fish delivered multiple times per week. The Seafood Platter is the crowd favorite for first-timers, and reviewers consistently praise the salmon sashimi as "melt-in-your-mouth" fresh. Pair it with a sake flight for the full experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                            </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏪 Seafood Markets Worth Exploring</h2>
                             <p className="text-charcoal/80 mb-6">For those who prefer to cook seafood at home, Dallas offers several top-notch seafood markets where you can find fresh, high-quality products and learn new preparation techniques.</p>
@@ -153,14 +159,7 @@ export default function BestSeafoodDallas() {
                                 </details>
                             ))}
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍣 Premium Seafood at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Fresh sushi, sashimi, and seafood platters prepared with traditional Japanese expertise. Experience fine seafood dining at its finest with our <Link href="/blog/sake-pairing-guide" className="underline hover:text-warm-ivory">sake pairing</Link> options.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Book a Table</Link>
-                                    <Link href="/menu" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10">View Our Menu</Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

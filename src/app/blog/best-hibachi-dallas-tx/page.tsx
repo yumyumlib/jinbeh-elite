@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Hibachi Dallas TX: Top Restaurants & Experiences | Jinbeh",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Your guide to the best hibachi restaurants in Dallas-Fort Worth.",
         images: ["/images/blog/4-C060324-6380.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-hibachi-dallas-tx",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-hibachi-dallas-tx",
+    },
 };
 
 const articleSchema = {
@@ -85,20 +86,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-    { "@type": "ListItem", "position": 4, "name": "Best Hibachi Dallas TX: Top Japanese Steakhouses" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 4, "name": "Best Hibachi Dallas TX: Top Japanese Steakhouses" },
+    ],
 };
 
 export default function BestHibachiDallas() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -162,6 +163,11 @@ export default function BestHibachiDallas() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Teppanyaki-style cooking was invented by Shigeji Fujioka in 1945 at his restaurant Misono in Kobe, Japan. He designed it specifically to entertain Western tourists who were fascinated by watching food being prepared. Today, the average teppanyaki chef trains for 2-3 years before performing solo — mastering not just cooking, but the theatrical skills that make hibachi dining unforgettable."
+                                        source="Japanese Culinary History Archives"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🔥 What Makes Great Hibachi
@@ -298,6 +304,10 @@ export default function BestHibachiDallas() {
                                             <li>✓ Chef entertainment</li>
                                         </ul>
                                     </div>
+
+                                    <ProTip variant="insider">
+                                        <strong>Hibachi regulars' tip:</strong> Arrive 10-15 minutes early to settle in and order drinks before the chef starts. Reviewers say the filet mignon and shrimp combo is the "best value on the menu," and kids absolutely love the onion volcano trick. For birthday celebrations, let us know in advance — our chefs make it extra special! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
+                                    </ProTip>
                                 </div>
 
                                 {/* FAQ Section */}
@@ -319,21 +329,7 @@ export default function BestHibachiDallas() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🔥 Ready for the Best Hibachi in Dallas?</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Skip the chains. Experience authentic hibachi at Jinbeh—where family tradition meets unforgettable entertainment.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve at Frisco
-                                        </Link>
-                                        <Link href="/reservations" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
-                                            Reserve at Lewisville
-                                        </Link>
-                                    </div>
-                                </div>
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

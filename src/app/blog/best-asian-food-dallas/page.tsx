@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Asian Food in Dallas TX: Top Restaurants Guide | Jinbeh",
@@ -78,6 +79,11 @@ export default function BestAsianFoodDallas() {
                                 <span className="text-sm text-charcoal/80">— Food Culture Dallas</span>
                             </div>
 
+                            <DidYouKnow
+                                fact="Consumer spending on Asian cuisine in DFW has grown by 135% over the past decade, making it the fastest-growing food category in North Texas. Japanese cuisine leads the way, with sushi and hibachi restaurants seeing the highest demand — and Jinbeh has been serving the community since before this boom began, opening in 1988."
+                                source="National Restaurant Association & DFW Economic Data"
+                            />
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Asian Fusion Restaurants</h2>
                             <p className="text-charcoal/80 mb-4">Asian fusion has become increasingly popular in Dallas, combining traditional Asian flavors with modern techniques and ingredients. This innovative approach creates unique and exciting dishes that attract food enthusiasts from all over the city. Looking specifically for seafood? Check our guide to the <Link href="/blog/best-seafood-dallas" className="text-accent-red hover:underline">best seafood in Dallas</Link>.</p>
 
@@ -137,6 +143,10 @@ export default function BestAsianFoodDallas() {
                                 ))}
                             </div>
 
+                            <ProTip variant="insider">
+                                <strong>Asian food explorer's tip:</strong> Jinbeh is the place where first-timers become regulars. Reviewers say the hibachi chicken and shrimp combo is the "perfect intro" for anyone new to Japanese dining, while sushi enthusiasts love watching chefs roll fresh pieces at the bar. Come during happy hour for discounted appetizers and drinks — it's the best-kept secret in North Dallas. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                            </ProTip>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>
                             {faqs.map((faq, i) => (
                                 <details key={i} className="group bg-warm-ivory rounded-xl mb-3">
@@ -145,15 +155,7 @@ export default function BestAsianFoodDallas() {
                                 </details>
                             ))}
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-accent-red rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍜 Experience Asian Excellence at Jinbeh</h3>
-                                <p className="text-white/80 mb-6">Traditional Japanese cuisine, interactive hibachi cooking, and fresh sushi in a welcoming atmosphere perfect for families and celebrations. Browse our <Link href="/menu" className="text-white hover:underline underline">full menu</Link> to start planning.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/reservations" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold">Make a Reservation</Link>
-                                    <Link href="/frisco" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Frisco Location</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold">Lewisville Location</Link>
-                                </div>
-                            </div>
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
+import { CustomerVoiceSection } from "@/components/CustomerVoice";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -275,6 +276,33 @@ export default function CelebrationsPage() {
             </div>
           </div>
         </section>
+
+        {/* Celebration Social Proof */}
+        <CustomerVoiceSection
+          heading="Why Families Choose Jinbeh"
+          subheading="Hear from guests who celebrated their special moments with us"
+          className="bg-white"
+          quotes={[
+            {
+              quote: "I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be.",
+              author: "Alaina T.",
+              platform: "Google",
+              category: "Birthday Tradition",
+            },
+            {
+              quote: "We've been coming here for years, celebrating a lot of birthdays. The hibachi show is always a hit with kids and adults alike.",
+              author: "Celebration Regular",
+              platform: "Google",
+              category: "Family Celebrations",
+            },
+            {
+              quote: "Perfect for our anniversary dinner — the sushi was fresh, the atmosphere was warm, and the staff made us feel special.",
+              author: "Date Night Couple",
+              platform: "Yelp",
+              category: "Anniversary",
+            },
+          ]}
+        />
 
         {/* Holiday Celebrations Section */}
         <section className="py-20 bg-warm-ivory">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Cocktails: Art, Recipes & Mixology | Jinbeh Dallas",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
         description: "Master the art of Japanese cocktails. Learn recipes, techniques, and traditions from expert mixologists.",
         images: ["/images/beverages/JinbehPunch.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/japanese-cocktails",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/japanese-cocktails",
+    },
 };
 
 const schemas = [
@@ -30,20 +31,20 @@ const schemas = [
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-    { "@type": "ListItem", "position": 4, "name": "Japanese Cocktails: Classic & Creative Recipes" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 4, "name": "Japanese Cocktails: Classic & Creative Recipes" },
+    ],
 };
 
 export default function JapaneseCocktails() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/JinbehPunch.jpg" alt="Japanese cocktails with artistic presentation" fill className="object-cover" priority />
@@ -64,6 +65,11 @@ export default function JapaneseCocktails() {
                             <p className="text-xl text-charcoal/80 mb-8"><strong>What makes Japanese cocktails special?</strong> They blend delicate balance, intricate presentation, and premium native Japanese spirits into an art form that elevates the entire drinking experience. Whether you're exploring <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> options or enjoying <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">drink deals</Link> at happy hour, Japanese cocktails offer something special.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 The Foundation of Japanese Cocktails</h2>
+
+                            <DidYouKnow
+                                fact="Japanese cocktail bars consistently dominate the World's 50 Best Bars list, with Tokyo's Bar High Five and Bar Benfiddich ranking among the top 10 globally. The 'hard shake' technique, invented by Kazuo Uyeda in the 1990s, revolutionized cocktail making worldwide. Japanese whisky outsells Scotch in premium categories in over 15 countries."
+                                source="World's 50 Best Bars & Drinks International"
+                            />
                             <p className="text-charcoal/80 mb-6">Japanese cocktails are deeply rooted in tradition and culture, emphasizing precision, quality ingredients, and the art of presentation. To truly appreciate Japanese cocktails, it's essential to understand the foundational spirits used in these drinks. Learn how to match beverages with your meal through our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake recommendations</Link> and dining guides.</p>
 
                             <div className="bg-warm-ivory rounded-xl p-6 mb-8 border-l-4 border-deep-indigo">
@@ -226,15 +232,12 @@ export default function JapaneseCocktails() {
                                 </details>
                             </div>
 
-                            <div className="mt-12 p-8 bg-gradient-to-r from-deep-indigo to-deep-indigo rounded-2xl text-center text-white">
-                                <h3 className="text-2xl font-heading font-bold mb-4">🍹 Experience Japanese Cocktails at Jinbeh</h3>
-                                <p className="mb-6 text-white/90">Discover the art and flavor of authentic Japanese cocktails crafted by our skilled mixologists using premium spirits and traditional techniques. Explore our full <Link href="/bar" className="text-white hover:underline underline">bar menu</Link> featuring curated sake, Japanese whisky, and signature cocktails at Frisco or Lewisville.</p>
-                                <div className="flex flex-wrap gap-4 justify-center">
-                                    <Link href="/frisco/menu" className="bg-white text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-warm-ivory transition">Frisco Menu</Link>
-                                    <Link href="/lewisville" className="border-2 border-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">Lewisville Location</Link>
-                                    <Link href="/happy-hour" className="bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition">Happy Hour Specials</Link>
-                                    <Link href="#reserve" className="bg-soft-gold text-deep-indigo px-6 py-3 rounded-xl font-semibold hover:bg-soft-gold/90 transition">Make Reservation</Link>
-                                </div>
+                            <div className="mt-12">
+                                <ProTip variant="insider">
+                                    <strong>Japanese cocktail insider tip:</strong> At Jinbeh, our lychee martini is legendary—it's the most-ordered cocktail on our menu. Start your evening at the <Link href="/bar" className="text-accent-red hover:underline">bar</Link> during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on sake cocktails and Japanese whisky pours. Ask your bartender to recommend a sake-based cocktail paired with your dinner order—they're trained to match flavors!
+                                </ProTip>
+
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

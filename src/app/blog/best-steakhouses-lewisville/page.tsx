@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
+import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top Steakhouses in Lewisville TX: Best Steak Spots | Jinbeh",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
         description: "Your guide to the best steak restaurants in Lewisville, Texas.",
         images: ["/images/blog/5-C060324-6397.jpg"],
     },
-  alternates: {
-    canonical: "https://jinbeh.com/blog/best-steakhouses-lewisville",
-  },
+    alternates: {
+        canonical: "https://jinbeh.com/blog/best-steakhouses-lewisville",
+    },
 };
 
 const articleSchema = {
@@ -73,20 +74,20 @@ const faqSchema = {
 
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-    { "@type": "ListItem", "position": 4, "name": "Top Steakhouses in Lewisville TX: Best Steak Spots" },
-  ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 4, "name": "Top Steakhouses in Lewisville TX: Best Steak Spots" },
+    ],
 };
 
 export default function BestSteakhousesLewisville() {
     return (
         <main className="min-h-screen bg-warm-ivory">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -151,6 +152,11 @@ export default function BestSteakhousesLewisville() {
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
+
+                                    <DidYouKnow
+                                        fact="Texans consume an estimated 46 pounds of beef per person per year — more than any other state and nearly double the national average. The tradition of steak-focused dining runs deep in North Texas, but the rise of Japanese teppanyaki steakhouses like Jinbeh has added an exciting new dimension: the same premium cuts, but cooked with theatrical flair right at your table."
+                                        source="Texas Beef Council & USDA"
+                                    />
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🥩 Why Lewisville Is a Great Steak Town
@@ -328,6 +334,10 @@ export default function BestSteakhousesLewisville() {
                                         steak quality <em>plus</em> a live chef performance. If you want your dinner to be an event—especially
                                         for celebrations or group outings—hibachi-style steak dining is the clear winner.
                                     </p>
+
+                                    <ProTip variant="insider">
+                                        <strong>Lewisville steak tip:</strong> Jinbeh guests consistently say they "prefer Jinbeh over Benihana" for the more personal service and better-tasting food. Ask for the Filet and Colossal Shrimp combo — it's the best-seller. For birthday celebrations, the chefs put on an extra-special show. Book the Lewisville location for typically shorter wait times than Frisco on weekends. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                    </ProTip>
                                 </div>
 
                                 {/* FAQ Section */}
@@ -349,21 +359,7 @@ export default function BestSteakhousesLewisville() {
                                     </div>
                                 </div>
 
-                                {/* CTA */}
-                                <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">
-                                    <h3 className="text-3xl font-heading font-bold text-white mb-4">🔥 Ready for the Best Steak in Lewisville?</h3>
-                                    <p className="text-white/90 mb-8 text-lg">
-                                        Skip the ordinary. Experience steak the Jinbeh way—sizzling, entertaining, and unforgettable since 1988.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <Link href="/reservations" className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 rounded-xl font-semibold text-lg shadow-lg">
-                                            Reserve at Lewisville
-                                        </Link>
-                                        <Link href="/menu" className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 rounded-xl font-semibold text-lg">
-                                            View Menu
-                                        </Link>
-                                    </div>
-                                </div>
+                                <LocationCTA location="lewisville" />
                             </div>
                         </article>
 
