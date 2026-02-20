@@ -134,7 +134,7 @@ export default function HomePage() {
         />
 
         {/* Hero Section - Full Screen with Video Background */}
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-16">
+        <section className="relative flex items-center justify-center overflow-hidden py-24 md:py-32">
           {/* Background Video - Vimeo embed with autoplay, loop, muted - optimized loading */}
           <div className="absolute inset-0 w-full h-full">
             <iframe
@@ -210,7 +210,7 @@ export default function HomePage() {
 
             {/* Location Selection Cards */}
             <ScrollReveal delay={500}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-start mb-8">
                 {/* Frisco Location Card — compact */}
                 <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-6 py-5 w-[280px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
                   <BorderBeam size={100} duration={8} colorFrom="#C1121F" colorTo="#C9A227" />
@@ -538,7 +538,7 @@ export default function HomePage() {
                 &ldquo;We&apos;ve been coming here for over 20 years... and we&apos;ll return soon.&rdquo;
               </p>
               <p className="mt-3 text-sm font-semibold text-cedar-brown/60 uppercase tracking-wider">
-                — Real Google Review
+                — Google Review
               </p>
             </div>
           </div>
