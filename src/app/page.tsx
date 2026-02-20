@@ -210,9 +210,9 @@ export default function HomePage() {
 
             {/* Location Selection Cards */}
             <ScrollReveal delay={500}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 {/* Frisco Location Card — compact */}
-                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-5 py-4 min-w-[240px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-5 py-4 w-fit shadow-xl hover:border-accent-red/50 transition-all duration-300">
                   <BorderBeam size={100} duration={8} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
                     <span className="inline-block bg-soft-gold/20 text-soft-gold text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-2 border border-soft-gold/30 uppercase tracking-wider">
@@ -256,7 +256,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Lewisville Location Card — compact */}
-                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-5 py-4 min-w-[240px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
+                <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-5 py-4 w-fit shadow-xl hover:border-accent-red/50 transition-all duration-300">
                   <BorderBeam size={100} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                   <div className="text-center">
                     <span className="inline-block bg-soft-gold/20 text-soft-gold text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-2 border border-soft-gold/30 uppercase tracking-wider">
