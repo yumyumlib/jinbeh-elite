@@ -230,7 +230,7 @@ export default function Header({ location }: HeaderProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-50 overflow-visible">
+      <header className="sticky top-0 z-[9999] overflow-visible">
         {/* Background blur layer */}
         <div
           className={`absolute inset-0 transition-all duration-300 pointer-events-none ${scrolled
