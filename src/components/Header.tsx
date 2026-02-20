@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 import locationsData from "@/data/locations.json";
 
 interface HeaderProps {
@@ -33,11 +34,29 @@ interface NavItem {
 export default function Header({ location }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [scrolled, setScrolled] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState<"frisco" | "lewisville">(location || "frisco");
   const [showReserveModal, setShowReserveModal] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [selectedLocation, setSelectedLocation] = useState<"frisco" | "lewisville">(location || "frisco");
+  const dropdownRef = useRef<HTMLElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+  const buttonRefs = useRef<Record<string, HTMLButtonElement | HTMLDivElement | null>>({});
+  const [dropdownPos, setDropdownPos] = useState<{ top: number; left: number; right?: number } | null>(null);
+  const [portalReady, setPortalReady] = useState(false);
+
+  // Portal readiness check
+  useEffect(() => {
+    setPortalReady(true);
+  }, []);
+
+  // Update dropdown position when activeDropdown changes
+  useEffect(() => {
+    if (activeDropdown && buttonRefs.current[activeDropdown]) {
+      const rect = buttonRefs.current[activeDropdown]!.getBoundingClientRect();
+      setDropdownPos({ top: rect.bottom + 6, left: rect.left, right: undefined });
+    } else {
+      setDropdownPos(null);
+    }
+  }, [activeDropdown]);
 
   // Track scroll position for enhanced glass effect
   useEffect(() => {
@@ -256,16 +275,21 @@ export default function Header({ location }: HeaderProps) {
 
             {/* Desktop Navigation */}
             <nav className="hidden xl:flex items-center gap-0.5" ref={dropdownRef} aria-label="Main navigation">
-              {navItems.map((item) => (
+              {navItems.map((item, idx) => (
                 <div
                   key={item.label}
-                  className="relative"
+                  className="relative flex items-center"
                   onMouseEnter={() => (item.dropdown || item.megaMenu) && handleMouseEnter(item.label)}
                   onMouseLeave={() => (item.dropdown || item.megaMenu) && handleMouseLeave()}
                 >
+                  {/* Visual separator before About */}
+                  {item.label === "About" && (
+                    <span className="text-white/30 mx-1 select-none" aria-hidden="true">|</span>
+                  )}
                   {item.megaMenu ? (
                     <>
                       <button
+                        ref={(el) => { buttonRefs.current[item.label] = el; }}
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
                         aria-expanded={activeDropdown === item.label}
                         aria-haspopup="menu"
@@ -282,68 +306,11 @@ export default function Header({ location }: HeaderProps) {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                       </button>
-
-                      {/* Mega Menu Panel */}
-                      <div
-                        role="menu"
-                        aria-label={`${item.label} submenu`}
-                        className={`absolute top-full right-0 mt-1.5 w-[680px] bg-white rounded-xl shadow-2xl border border-stone-200 z-[9999] transition-all duration-200 origin-top-right ${activeDropdown === item.label
-                          ? "opacity-100 scale-100 pointer-events-auto translate-y-0"
-                          : "opacity-0 scale-95 pointer-events-none -translate-y-2"
-                          }`}
-                        onMouseEnter={() => handleMouseEnter(item.label)}
-                        onMouseLeave={handleMouseLeave}
-                      >
-                        <div className="grid grid-cols-4 gap-0 p-4">
-                          {item.megaMenu.map((section) => (
-                            <div key={section.title} className="px-2">
-                              <div className="flex items-center gap-1.5 mb-3 pb-2 border-b border-stone-100">
-                                <span className="text-base" aria-hidden="true">{section.icon}</span>
-                                <span className="text-xs font-bold text-charcoal/80 uppercase tracking-wider">{section.title}</span>
-                              </div>
-                              <div className="space-y-0.5">
-                                {section.items.map((subItem) => (
-                                  <Link
-                                    key={subItem.label}
-                                    href={subItem.href}
-                                    className="block px-2 py-1.5 rounded-md text-sm text-charcoal/80 hover:text-accent-red hover:bg-warm-ivory transition-all"
-                                    role="menuitem"
-                                    onClick={() => setActiveDropdown(null)}
-                                  >
-                                    {subItem.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                        {/* Mega menu footer */}
-                        <div className="border-t border-stone-100 px-4 py-3 bg-warm-ivory/50 rounded-b-xl flex items-center justify-between">
-                          <Link
-                            href="/blog"
-                            className="text-sm font-semibold text-accent-red hover:text-accent-red/80 transition-colors"
-                            onClick={() => setActiveDropdown(null)}
-                          >
-                            View All Articles &rarr;
-                          </Link>
-                          <div className="flex items-center gap-3">
-                            {["Celebrations", "Catering", "Tips"].map((cat) => (
-                              <Link
-                                key={cat}
-                                href={`/blog/category/${cat.toLowerCase()}`}
-                                className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all"
-                                onClick={() => setActiveDropdown(null)}
-                              >
-                                {cat}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
                     </>
                   ) : item.dropdown ? (
                     <>
                       <button
+                        ref={(el) => { buttonRefs.current[item.label] = el; }}
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
                         aria-expanded={activeDropdown === item.label}
                         aria-haspopup="menu"
@@ -363,98 +330,6 @@ export default function Header({ location }: HeaderProps) {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                       </button>
-
-                      {/* Dropdown Menu - CSS transition for smooth show/hide */}
-                      <div
-                        role="menu"
-                        aria-label={`${item.label} submenu`}
-                        className={`absolute top-full left-0 mt-1.5 w-72 bg-white rounded-xl shadow-2xl border border-stone-200 z-[9999] transition-all duration-200 origin-top ${activeDropdown === item.label
-                          ? "opacity-100 scale-100 pointer-events-auto translate-y-0"
-                          : "opacity-0 scale-95 pointer-events-none -translate-y-2"
-                          }`}
-                        onMouseEnter={() => handleMouseEnter(item.label)}
-                        onMouseLeave={handleMouseLeave}
-                      >
-                        {/* Location pill indicator for Menu dropdown */}
-                        {item.label === "Menu" && (
-                          <div className="px-3 pt-3 pb-1">
-                            <div className="flex items-center gap-1.5 bg-warm-ivory rounded-lg p-1">
-                              <button
-                                onClick={() => setSelectedLocation("frisco")}
-                                className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "frisco"
-                                  ? "bg-accent-red text-white shadow-md"
-                                  : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"
-                                  }`}
-                              >
-                                📍 Frisco
-                              </button>
-                              <button
-                                onClick={() => setSelectedLocation("lewisville")}
-                                className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "lewisville"
-                                  ? "bg-accent-red text-white shadow-md"
-                                  : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"
-                                  }`}
-                              >
-                                📍 Lewisville
-                              </button>
-                            </div>
-                          </div>
-                        )}
-                        <div className="p-2">
-                          {item.dropdown.map((subItem) => {
-                            const isActiveLocation = item.label === "Locations" &&
-                              location &&
-                              subItem.label.toLowerCase().includes(location);
-
-                            return (
-                              <Link
-                                key={subItem.label}
-                                href={subItem.href}
-                                className={`block px-4 py-3 rounded-lg transition-all group ${isActiveLocation
-                                  ? "bg-accent-red/10 border-l-4 border-accent-red"
-                                  : "hover:bg-warm-ivory"
-                                  }`}
-                                role="menuitem"
-                                onClick={() => setActiveDropdown(null)}
-                              >
-                                <span className={`font-semibold text-sm transition-colors ${isActiveLocation
-                                  ? "text-accent-red"
-                                  : "text-charcoal group-hover:text-accent-red"
-                                  }`}>
-                                  {subItem.label}
-                                  {isActiveLocation && <span className="ml-2 text-xs font-normal">(Current)</span>}
-                                </span>
-                                {subItem.description && (
-                                  <span className="block text-xs text-charcoal/60 mt-0.5">
-                                    {subItem.description}
-                                  </span>
-                                )}
-                              </Link>
-                            );
-                          })}
-                        </div>
-                        {/* Footer guide links */}
-                        {item.footerLinks && item.footerLinks.length > 0 && (
-                          <div className="border-t border-stone-100 px-2 py-2 bg-warm-ivory/50 rounded-b-xl">
-                            <span className="block px-4 pt-1 pb-1.5 text-[10px] font-bold text-charcoal/40 uppercase tracking-widest">Popular Guides</span>
-                            {item.footerLinks.map((fl) => (
-                              <Link
-                                key={fl.label}
-                                href={fl.href}
-                                className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white transition-all group"
-                                role="menuitem"
-                                onClick={() => setActiveDropdown(null)}
-                              >
-                                <svg className="w-3.5 h-3.5 text-accent-red/60 group-hover:text-accent-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                                </svg>
-                                <span className="text-sm text-charcoal/70 group-hover:text-accent-red transition-colors font-medium">{fl.label}</span>
-                                {fl.description && <span className="text-xs text-charcoal/40 ml-auto">{fl.description}</span>}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
                     </>
                   ) : (
                     <Link
@@ -843,6 +718,145 @@ export default function Header({ location }: HeaderProps) {
           </div>
         </div>
       </header>
+
+      {/* Portal-rendered dropdown panels — render at body level to bypass ALL stacking context issues */}
+      {portalReady && activeDropdown && dropdownPos && createPortal(
+        <>
+          {navItems.map((item) => {
+            if (item.label !== activeDropdown) return null;
+
+            if (item.megaMenu) {
+              return (
+                <div
+                  key={item.label}
+                  role="menu"
+                  aria-label={`${item.label} submenu`}
+                  className="fixed w-[680px] bg-white rounded-xl shadow-2xl border border-stone-200 transition-all duration-200 origin-top-right opacity-100 scale-100 pointer-events-auto"
+                  style={{ top: dropdownPos.top, right: 120, zIndex: 99999 }}
+                  onMouseEnter={() => handleMouseEnter(item.label)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="grid grid-cols-4 gap-0 p-4">
+                    {item.megaMenu.map((section) => (
+                      <div key={section.title} className="px-2">
+                        <div className="flex items-center gap-1.5 mb-3 pb-2 border-b border-stone-100">
+                          <span className="text-base" aria-hidden="true">{section.icon}</span>
+                          <span className="text-xs font-bold text-charcoal/80 uppercase tracking-wider">{section.title}</span>
+                        </div>
+                        <div className="space-y-0.5">
+                          {section.items.map((subItem) => (
+                            <Link
+                              key={subItem.label}
+                              href={subItem.href}
+                              className="block px-2 py-1.5 rounded-md text-sm text-charcoal/80 hover:text-accent-red hover:bg-warm-ivory transition-all"
+                              role="menuitem"
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="border-t border-stone-100 px-4 py-3 bg-warm-ivory/50 rounded-b-xl flex items-center justify-between">
+                    <Link href="/blog" className="text-sm font-semibold text-accent-red hover:text-accent-red/80 transition-colors" onClick={() => setActiveDropdown(null)}>
+                      View All Articles &rarr;
+                    </Link>
+                    <div className="flex items-center gap-3">
+                      {["Celebrations", "Catering", "Tips"].map((cat) => (
+                        <Link key={cat} href={`/blog/category/${cat.toLowerCase()}`} className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all" onClick={() => setActiveDropdown(null)}>
+                          {cat}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            if (item.dropdown) {
+              return (
+                <div
+                  key={item.label}
+                  role="menu"
+                  aria-label={`${item.label} submenu`}
+                  className="fixed w-72 bg-white rounded-xl shadow-2xl border border-stone-200 transition-all duration-200 origin-top opacity-100 scale-100 pointer-events-auto"
+                  style={{ top: dropdownPos.top, left: dropdownPos.left, zIndex: 99999 }}
+                  onMouseEnter={() => handleMouseEnter(item.label)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {/* Location pill indicator for Menu dropdown */}
+                  {item.label === "Menu" && (
+                    <div className="px-3 pt-3 pb-1">
+                      <div className="flex items-center gap-1.5 bg-warm-ivory rounded-lg p-1">
+                        <button
+                          onClick={() => setSelectedLocation("frisco")}
+                          className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "frisco"
+                            ? "bg-accent-red text-white shadow-md"
+                            : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"
+                            }`}
+                        >
+                          📍 Frisco
+                        </button>
+                        <button
+                          onClick={() => setSelectedLocation("lewisville")}
+                          className={`flex-1 px-3 py-1.5 rounded-md text-xs font-bold tracking-wide transition-all ${selectedLocation === "lewisville"
+                            ? "bg-accent-red text-white shadow-md"
+                            : "text-charcoal/60 hover:text-charcoal hover:bg-white/80"
+                            }`}
+                        >
+                          📍 Lewisville
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                  <div className="p-2">
+                    {item.dropdown.map((subItem) => {
+                      const isActiveLocation = item.label === "Locations" && location && subItem.label.toLowerCase().includes(location);
+                      return (
+                        <Link
+                          key={subItem.label}
+                          href={subItem.href}
+                          className={`block px-4 py-3 rounded-lg transition-all group ${isActiveLocation ? "bg-accent-red/10 border-l-4 border-accent-red" : "hover:bg-warm-ivory"}`}
+                          role="menuitem"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          <span className={`font-semibold text-sm transition-colors ${isActiveLocation ? "text-accent-red" : "text-charcoal group-hover:text-accent-red"}`}>
+                            {subItem.label}
+                            {isActiveLocation && <span className="ml-2 text-xs font-normal">(Current)</span>}
+                          </span>
+                          {subItem.description && (
+                            <span className="block text-xs text-charcoal/60 mt-0.5">{subItem.description}</span>
+                          )}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                  {/* Footer guide links */}
+                  {item.footerLinks && item.footerLinks.length > 0 && (
+                    <div className="border-t border-stone-100 px-2 py-2 bg-warm-ivory/50 rounded-b-xl">
+                      <span className="block px-4 pt-1 pb-1.5 text-[10px] font-bold text-charcoal/40 uppercase tracking-widest">Popular Guides</span>
+                      {item.footerLinks.map((fl) => (
+                        <Link key={fl.label} href={fl.href} className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white transition-all group" role="menuitem" onClick={() => setActiveDropdown(null)}>
+                          <svg className="w-3.5 h-3.5 text-accent-red/60 group-hover:text-accent-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                          <span className="text-sm text-charcoal/70 group-hover:text-accent-red transition-colors font-medium">{fl.label}</span>
+                          {fl.description && <span className="text-xs text-charcoal/40 ml-auto">{fl.description}</span>}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            return null;
+          })}
+        </>,
+        document.body
+      )}
 
       {/* Reservation Location Picker Modal */}
       {showReserveModal && (

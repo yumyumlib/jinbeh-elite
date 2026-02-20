@@ -764,16 +764,45 @@ export default function HomePage() {
               </ScrollReveal>
             </div>
 
-            {/* CTA */}
+            {/* CTA with group photo */}
             <ScrollReveal delay={400}>
-              <div className="text-center">
-                <Link href="/celebrations" className="inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
-                  Plan Your Event
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-                </Link>
-                <p className="mt-4 text-sm text-charcoal/50">
-                  Private dining available for groups of 10+ • Call <a href="tel:2146191200" className="text-accent-red font-semibold hover:underline">(214) 619-1200</a>
-                </p>
+              <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                {/* Group photo background */}
+                <div className="relative h-64 md:h-72">
+                  <Image
+                    src="/images/celebrations/jinbeh_group.jpg"
+                    alt="Group of friends enjoying hibachi dining experience at Jinbeh"
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    className="object-cover"
+                    quality={85}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+
+                  {/* Content overlay */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 px-6">
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
+                      Plan Your Event
+                    </h3>
+                    <p className="text-white/80 text-sm mb-5 text-center max-w-lg">
+                      Private dining rooms available for groups of 10+ • Hibachi, sushi bar, or full buyout
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <Link href="/frisco#private-dining" className="inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                        📍 Frisco
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                      </Link>
+                      <Link href="/lewisville#private-dining" className="inline-flex items-center gap-2 bg-white text-charcoal hover:bg-warm-ivory px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                        📍 Lewisville
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                      </Link>
+                    </div>
+                    <p className="mt-4 text-xs text-white/60">
+                      Or call <a href="tel:2146191200" className="text-soft-gold font-semibold hover:underline">(214) 619-1200</a> for Frisco • <a href="tel:2144882224" className="text-soft-gold font-semibold hover:underline">(214) 488-2224</a> for Lewisville
+                    </p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
           </div>
