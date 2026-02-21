@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     description: "Celebrate your new arrival with hibachi entertainment and delicious cuisine. Perfect baby shower venue in Frisco & Lewisville.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://jinbeh.com/celebrations/baby-shower",
+  },
 };
 
 const faqSchema = {

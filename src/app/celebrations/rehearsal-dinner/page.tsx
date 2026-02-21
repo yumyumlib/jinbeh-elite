@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     description: "Make your rehearsal dinner unforgettable with hibachi entertainment and exceptional cuisine. Private tables for your wedding party.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://jinbeh.com/celebrations/rehearsal-dinner",
+  },
 };
 
 const faqSchema = {

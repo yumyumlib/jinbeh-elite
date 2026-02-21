@@ -121,7 +121,7 @@ export default function AnniversaryPage() {
               Create lasting memories with exceptional Japanese cuisine, tableside entertainment, and the warmth of Jinbeh hospitality.
             </p>
             <Link
-              href="#reserve"
+              href="/reservations"
               className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center gap-2"
             >
               Reserve Your Anniversary Dinner

@@ -37,6 +37,7 @@ export default function Header({ location }: HeaderProps) {
   const [showReserveModal, setShowReserveModal] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState<"frisco" | "lewisville">(location || "frisco");
   const dropdownRef = useRef<HTMLElement>(null);
+  const portalRef = useRef<HTMLDivElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const buttonRefs = useRef<Record<string, HTMLButtonElement | HTMLDivElement | null>>({});
@@ -70,7 +71,12 @@ export default function Header({ location }: HeaderProps) {
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      // Check both the header nav AND the portal container (which renders at document.body level)
+      if (
+        dropdownRef.current && !dropdownRef.current.contains(target) &&
+        (!portalRef.current || !portalRef.current.contains(target))
+      ) {
         setActiveDropdown(null);
       }
     }
@@ -284,7 +290,7 @@ export default function Header({ location }: HeaderProps) {
                 >
                   {/* Visual separator before About */}
                   {item.label === "About" && (
-                    <span className="text-white/30 mx-1 select-none" aria-hidden="true">|</span>
+                    <span className="text-white/20 mx-2 select-none text-lg" aria-hidden="true">·</span>
                   )}
                   {item.megaMenu ? (
                     <>
@@ -616,24 +622,30 @@ export default function Header({ location }: HeaderProps) {
 
                 {/* Reserve buttons - clearly labeled per location */}
                 <div className="flex gap-2">
-                  <button
-                    onClick={() => { handleReserveClick("frisco"); setMobileMenuOpen(false); }}
+                  <a
+                    href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileMenuOpen(false)}
                     className="flex-1 btn-shimmer bg-accent-red text-white py-3.5 rounded-xl font-bold text-sm text-center shadow-lg relative overflow-hidden"
                   >
                     <svg className="w-4 h-4 inline-block mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     Reserve Frisco
-                  </button>
-                  <button
-                    onClick={() => { handleReserveClick("lewisville"); setMobileMenuOpen(false); }}
+                  </a>
+                  <a
+                    href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileMenuOpen(false)}
                     className="flex-1 btn-shimmer bg-deep-indigo text-white py-3.5 rounded-xl font-bold text-sm text-center shadow-lg relative overflow-hidden"
                   >
                     <svg className="w-4 h-4 inline-block mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     Reserve Lewisville
-                  </button>
+                  </a>
                 </div>
               </div>
             </nav>
@@ -643,7 +655,7 @@ export default function Header({ location }: HeaderProps) {
 
       {/* Portal-rendered dropdown panels — render at body level to bypass ALL stacking context issues */}
       {portalReady && activeDropdown && dropdownPos && createPortal(
-        <>
+        <div ref={portalRef}>
           {/* Nav item dropdowns */}
           {navItems.map((item) => {
             if (item.label !== activeDropdown) return null;
@@ -774,10 +786,11 @@ export default function Header({ location }: HeaderProps) {
           {activeDropdown === "phone" && (
             <div
               className="fixed w-56 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
-              style={{ top: dropdownPos.top, right: 80, zIndex: 99999 }}
+              style={{ top: dropdownPos.top, left: Math.max(16, dropdownPos.left - 120), zIndex: 99999 }}
               onMouseEnter={() => handleMouseEnter("phone")}
               onMouseLeave={handleMouseLeave}
             >
+
               <div className="p-2">
                 <a href="tel:2146191200" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => setActiveDropdown(null)}>
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
@@ -805,13 +818,17 @@ export default function Header({ location }: HeaderProps) {
           {activeDropdown === "reserve" && (
             <div
               className="fixed w-60 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
-              style={{ top: dropdownPos.top, right: 16, zIndex: 99999 }}
+              style={{ top: dropdownPos.top, left: Math.max(16, dropdownPos.left - 120), zIndex: 99999 }}
               onMouseEnter={() => handleMouseEnter("reserve")}
               onMouseLeave={handleMouseLeave}
             >
+
               <div className="p-2">
-                <button
-                  onClick={() => { handleReserveClick("frisco"); setActiveDropdown(null); }}
+                <a
+                  href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setActiveDropdown(null)}
                   className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
                 >
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
@@ -821,9 +838,12 @@ export default function Header({ location }: HeaderProps) {
                     <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Frisco</span>
                     <span className="block text-xs text-charcoal/60">Near Stonebriar Centre</span>
                   </div>
-                </button>
-                <button
-                  onClick={() => { handleReserveClick("lewisville"); setActiveDropdown(null); }}
+                </a>
+                <a
+                  href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setActiveDropdown(null)}
                   className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
                 >
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
@@ -833,11 +853,11 @@ export default function Header({ location }: HeaderProps) {
                     <span className="font-semibold text-sm text-charcoal group-hover:text-accent-red transition-colors">Lewisville</span>
                     <span className="block text-xs text-charcoal/60">Easy access from I-35E</span>
                   </div>
-                </button>
+                </a>
               </div>
             </div>
           )}
-        </>,
+        </div>,
         document.body
       )}
 
@@ -886,8 +906,11 @@ export default function Header({ location }: HeaderProps) {
 
             {/* Location buttons */}
             <div className="space-y-3">
-              <button
-                onClick={() => handleReserveClick("frisco")}
+              <a
+                href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowReserveModal(false)}
                 className="w-full group flex items-center gap-4 p-5 bg-warm-ivory hover:bg-accent-red hover:text-white rounded-xl border-2 border-stone-200 hover:border-accent-red transition-all duration-200"
               >
                 <div className="w-12 h-12 rounded-full bg-accent-red/10 group-hover:bg-white/20 flex items-center justify-center flex-shrink-0 transition-colors">
@@ -900,10 +923,13 @@ export default function Header({ location }: HeaderProps) {
                 <svg className="w-5 h-5 ml-auto text-charcoal/30 group-hover:text-white/60 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
+              </a>
 
-              <button
-                onClick={() => handleReserveClick("lewisville")}
+              <a
+                href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setShowReserveModal(false)}
                 className="w-full group flex items-center gap-4 p-5 bg-warm-ivory hover:bg-deep-indigo hover:text-white rounded-xl border-2 border-stone-200 hover:border-deep-indigo transition-all duration-200"
               >
                 <div className="w-12 h-12 rounded-full bg-deep-indigo/10 group-hover:bg-white/20 flex items-center justify-center flex-shrink-0 transition-colors">
@@ -916,7 +942,7 @@ export default function Header({ location }: HeaderProps) {
                 <svg className="w-5 h-5 ml-auto text-charcoal/30 group-hover:text-white/60 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
+              </a>
             </div>
 
             {/* Footer trust signal */}

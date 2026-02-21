@@ -168,7 +168,7 @@ export default function HolidayPartiesPage() {
               of Jinbeh. Perfect for Christmas dinners and New Year's Eve celebrations.
             </p>
             <Link
-              href="#reserve"
+              href="/reservations"
               className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center gap-2"
             >
               Book Your Holiday Party

@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     description: "Let us handle Thanksgiving dinner! Hibachi, sushi, and family dining at Jinbeh. Two locations in Frisco & Lewisville.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://jinbeh.com/celebrations/thanksgiving",
+  },
 };
 
 const faqSchema = {
@@ -128,7 +131,7 @@ export default function ThanksgivingPage() {
                 href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=""
+                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Frisco
               </a>
@@ -136,7 +139,7 @@ export default function ThanksgivingPage() {
                 href="https://www.opentable.com/jinbeh-lewisville"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=""
+                className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve Lewisville
               </a>

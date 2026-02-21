@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     description: "Celebrate the holidays with hibachi, sushi, and family at Jinbeh. Two locations in Frisco & Lewisville.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://jinbeh.com/celebrations/christmas",
+  },
 };
 
 const faqSchema = {
@@ -112,7 +115,7 @@ export default function ChristmasPage() {
                 href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=""
+                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Frisco
               </a>
@@ -120,7 +123,7 @@ export default function ChristmasPage() {
                 href="https://www.opentable.com/jinbeh-lewisville"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=""
+                className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve Lewisville
               </a>
@@ -375,7 +378,7 @@ export default function ChristmasPage() {
             </Link>
           </div>
         </section>
-      
+
         {/* Related Blog Articles */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-6">
@@ -401,7 +404,7 @@ export default function ChristmasPage() {
           </div>
         </section>
 
-        </main>
+      </main>
       <Footer />
     </>
   );

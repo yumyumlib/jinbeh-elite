@@ -191,7 +191,7 @@ export default function GrapevineNearbyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#reserve"
+                href="/reservations"
                 className="btn btn-primary btn-shimmer"
               >
                 Reserve Your Table

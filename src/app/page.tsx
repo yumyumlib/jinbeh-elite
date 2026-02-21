@@ -534,7 +534,7 @@ export default function HomePage() {
 
             {/* Tagline reinforcement */}
             <div className="text-center mt-12">
-              <p className="text-xl md:text-2xl font-heading italic text-cedar-brown/90 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl font-heading italic text-cedar-brown/90 max-w-4xl mx-auto whitespace-nowrap">
                 &ldquo;We&apos;ve been coming here for over 20 years... and we&apos;ll return soon.&rdquo;
               </p>
               <p className="mt-3 text-sm font-semibold text-cedar-brown/60 uppercase tracking-wider inline-flex items-center justify-center gap-1.5">
@@ -791,11 +791,11 @@ export default function HomePage() {
                       Private dining rooms available for groups of 10+ • Hibachi, sushi bar, or full buyout
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <Link href="/frisco#private-dining" className="inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                      <Link href="/private-dining" className="inline-flex items-center gap-2 bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105">
                         📍 Frisco
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                       </Link>
-                      <Link href="/lewisville#private-dining" className="inline-flex items-center gap-2 bg-white text-charcoal hover:bg-warm-ivory px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                      <Link href="/private-dining" className="inline-flex items-center gap-2 bg-white text-charcoal hover:bg-warm-ivory px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105">
                         📍 Lewisville
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                       </Link>
@@ -1314,44 +1314,52 @@ export default function HomePage() {
                   </div>
 
                   {/* Location Details */}
-                  <div className="p-8 flex-1 flex flex-col">
-                    <p className="text-white/80 mb-6 leading-relaxed">
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-white/80 mb-5 leading-relaxed text-sm">
                       Our flagship location with a stunning sushi bar, intimate hibachi tables, and warm ambiance perfect for date nights and celebrations.
                     </p>
 
                     {/* Hours */}
-                    <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
+                    <div className="grid grid-cols-2 gap-3 mb-5 text-sm">
                       <div>
                         <p className="text-soft-gold font-semibold mb-1">Lunch</p>
-                        <p className="text-white/70">Mon–Fri: 11am – 2pm</p>
-                        <p className="text-white/70">Sat–Sun: 11:30am – 2:30pm</p>
+                        <p className="text-white/70 text-xs">Mon–Fri: 11am – 2pm</p>
+                        <p className="text-white/70 text-xs">Sat–Sun: 11:30am – 2:30pm</p>
                       </div>
                       <div>
                         <p className="text-soft-gold font-semibold mb-1">Dinner</p>
-                        <p className="text-white/70">Sun–Thu: 5pm – 9pm</p>
-                        <p className="text-white/70">Fri–Sat: 5pm – 10pm</p>
+                        <p className="text-white/70 text-xs">Sun–Thu: 5pm – 9pm</p>
+                        <p className="text-white/70 text-xs">Fri–Sat: 5pm – 10pm</p>
                       </div>
                     </div>
 
-                    {/* Address */}
-                    <div className="flex items-start gap-3 mb-4 text-white/70 text-sm">
-                      <svg className="w-5 h-5 text-soft-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    {/* Address + Directions */}
+                    <a
+                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 mb-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group"
+                    >
+                      <svg className="w-5 h-5 text-soft-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      <p>2693 Preston Rd Suite 1040, Frisco, TX 75034</p>
-                    </div>
+                      <div>
+                        <p className="text-white/80 text-sm">2693 Preston Rd Suite 1040, Frisco, TX 75034</p>
+                        <p className="text-soft-gold text-xs font-medium group-hover:text-white transition-colors">Get Directions →</p>
+                      </div>
+                    </a>
 
-                    {/* Phone - Prominent */}
-                    <a href="tel:2146191200" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-6 py-3 transition-all group">
-                      <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    {/* Phone */}
+                    <a href="tel:2146191200" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-5 py-2.5 transition-all group">
+                      <svg className="w-4 h-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <span className="text-lg font-bold text-soft-gold group-hover:text-white transition-colors">(214) 619-1200</span>
                     </a>
 
-                    {/* CTAs */}
-                    <div>
+                    {/* Reserve CTA */}
+                    <div className="mt-auto">
                       <OpenTableWidget
                         restaurantId={locationsData.locations.frisco.reservation.rid}
                         location="frisco"
@@ -1361,31 +1369,19 @@ export default function HomePage() {
                       />
                     </div>
 
-                    {/* Embedded Google Map */}
+                    {/* Compact Map */}
                     <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3!2d-96.8261!3d33.1017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3ca5e3c2ef7b%3A0x5e58e280f2a2e845!2sJinbeh!5e0!3m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.5!2d-96.8235!3d33.0986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3caa4f01e94d%3A0x1e3c3a5f6b5a5a5a!2sJinbeh%20Japanese%20Restaurant%20-%20Frisco!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                         width="100%"
-                        height="200"
-                        style={{ border: 0, filter: 'contrast(1.1) brightness(0.85)' }}
+                        height="160"
+                        style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Jinbeh Frisco location map — 2693 Preston Rd, Frisco TX"
+                        title="Jinbeh Frisco location map"
                       />
                     </div>
-                    <a
-                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-white/60 hover:text-soft-gold transition-colors"
-                    >
-                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      Get Directions →
-                    </a>
                   </div>
                 </div>
               </ScrollReveal>
@@ -1411,44 +1407,52 @@ export default function HomePage() {
                   </div>
 
                   {/* Location Details */}
-                  <div className="p-8 flex-1 flex flex-col">
-                    <p className="text-white/80 mb-6 leading-relaxed">
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-white/80 mb-5 leading-relaxed text-sm">
                       A local favorite with a lively bar, generous hibachi portions, and some of the freshest sushi in North Texas. The go-to spot for groups and celebrations.
                     </p>
 
                     {/* Hours */}
-                    <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
+                    <div className="grid grid-cols-2 gap-3 mb-5 text-sm">
                       <div>
                         <p className="text-soft-gold font-semibold mb-1">Lunch</p>
-                        <p className="text-white/70">Mon–Fri: 11am – 2pm</p>
-                        <p className="text-white/70">Sat–Sun: 11:30am – 2:30pm</p>
+                        <p className="text-white/70 text-xs">Mon–Fri: 11am – 2pm</p>
+                        <p className="text-white/70 text-xs">Sat–Sun: 11:30am – 2:30pm</p>
                       </div>
                       <div>
                         <p className="text-soft-gold font-semibold mb-1">Dinner</p>
-                        <p className="text-white/70">Sun–Thu: 5pm – 9pm</p>
-                        <p className="text-white/70">Fri–Sat: 5pm – 10pm</p>
+                        <p className="text-white/70 text-xs">Sun–Thu: 5pm – 9pm</p>
+                        <p className="text-white/70 text-xs">Fri–Sat: 5pm – 10pm</p>
                       </div>
                     </div>
 
-                    {/* Address */}
-                    <div className="flex items-start gap-3 mb-4 text-white/70 text-sm">
-                      <svg className="w-5 h-5 text-soft-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    {/* Address + Directions */}
+                    <a
+                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 mb-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group"
+                    >
+                      <svg className="w-5 h-5 text-soft-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      <p>2440 S Stemmons Fwy #A, Lewisville, TX 75067</p>
-                    </div>
+                      <div>
+                        <p className="text-white/80 text-sm">2440 S Stemmons Fwy #A, Lewisville, TX 75067</p>
+                        <p className="text-soft-gold text-xs font-medium group-hover:text-white transition-colors">Get Directions →</p>
+                      </div>
+                    </a>
 
-                    {/* Phone - Prominent */}
-                    <a href="tel:2144882224" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-6 py-3 transition-all group">
-                      <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    {/* Phone */}
+                    <a href="tel:2144882224" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-5 py-2.5 transition-all group">
+                      <svg className="w-4 h-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <span className="text-lg font-bold text-soft-gold group-hover:text-white transition-colors">(214) 488-2224</span>
                     </a>
 
-                    {/* CTAs */}
-                    <div>
+                    {/* Reserve CTA */}
+                    <div className="mt-auto">
                       <OpenTableWidget
                         restaurantId={locationsData.locations.lewisville.reservation.rid}
                         location="lewisville"
@@ -1458,31 +1462,19 @@ export default function HomePage() {
                       />
                     </div>
 
-                    {/* Embedded Google Map */}
+                    {/* Compact Map */}
                     <div className="mt-4 rounded-xl overflow-hidden border border-white/10">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3!2d-96.9946!3d33.0243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2844e2222a49%3A0x290e34b8b2a9d8a0!2sJinbeh!5e0!3m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.2!2d-96.9941!3d33.0185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2831d3e4a3e7%3A0x2e3c3d5f7b5a5b5b!2sJinbeh%20Japanese%20Restaurant%20-%20Lewisville!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                         width="100%"
-                        height="200"
-                        style={{ border: 0, filter: 'contrast(1.1) brightness(0.85)' }}
+                        height="160"
+                        style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Jinbeh Lewisville location map — 2440 S Stemmons Fwy, Lewisville TX"
+                        title="Jinbeh Lewisville location map"
                       />
                     </div>
-                    <a
-                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-white/60 hover:text-soft-gold transition-colors"
-                    >
-                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      Get Directions →
-                    </a>
                   </div>
                 </div>
               </ScrollReveal>
