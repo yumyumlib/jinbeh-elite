@@ -84,7 +84,7 @@ export default function PickleballRestaurantsLewisvillePage() {
     <ArticleLayout
       title="Best Restaurants Near Pickleball in Lewisville TX"
       metaDescription="Looking for restaurants near pickleball in Lewisville? Jinbeh Japanese Restaurant is just 2 doors from The Picklr! Enjoy hibachi or sushi after your game."
-      heroImage="/images/photoshoot/hibachi-flame-action.jpg"
+      heroImage="/images/lewisville/IMG_2065.jpg"
       heroAlt="Jinbeh hibachi chef creating flames at the grill table - the best restaurant near pickleball courts in Lewisville TX"
       category="Local Guide"
       categorySlug="local"

@@ -76,7 +76,7 @@ export default function HibachiDiningExperiencePage() {
     <ArticleLayout
       title="Hibachi Restaurant Menu: Discover Flavor & Fun"
       metaDescription="Immerse yourself in the art of hibachi dining. From sizzling proteins to creative vegetarian options, explore why hibachi combines culinary excellence with unforgettable entertainment for every occasion."
-      heroImage="/images/blog/3-C060324-6364.jpg"
+      heroImage="/images/hq/cooking-on-grill.jpg"
       heroAlt="Hibachi chef performing at Jinbeh Japanese Restaurant with flames and sizzling grill"
       category="Japanese Cuisine"
       categorySlug="cuisine"

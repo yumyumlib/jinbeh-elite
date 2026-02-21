@@ -69,7 +69,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
     <ArticleLayout
       title="Jinbeh Offsite Events Catering: Hibachi at Home"
       metaDescription="Transform your next event with Jinbeh's interactive offsite hibachi catering. Professional chefs, customized menus, and unforgettable entertainment delivered to your location."
-      heroImage="/images/blog/8-C060324-6462.jpg"
+      heroImage="/images/photoshoot/hibachi-steak.jpg"
       heroAlt="Hibachi chef performing interactive cooking show at private event"
       category="Services & Guides"
       categorySlug="services"

@@ -76,7 +76,7 @@ export default function HibachiCaloriesGuidePage() {
     <ArticleLayout
       title="Jinbeh Hibachi Calories 2025: Complete Nutrition Guide"
       metaDescription="Learn the calorie content of Jinbeh hibachi dishes and make informed dietary choices. Discover healthy options that fit your lifestyle without sacrificing flavor."
-      heroImage="/images/blog/3-C060324-6364.jpg"
+      heroImage="/images/photoshoot/hibachi-chicken.jpg"
       heroAlt="Hibachi chef preparing fresh salmon and vegetables with minimal oil"
       category="Nutrition & Guides"
       categorySlug="guides"

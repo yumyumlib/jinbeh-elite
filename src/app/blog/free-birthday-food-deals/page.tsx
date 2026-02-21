@@ -61,7 +61,7 @@ export default function FreeBirthdayFoodDealsPage() {
     <ArticleLayout
       title="Free Birthday Food Deals: Where to Get Treats"
       metaDescription="Celebrate your birthday with free food! Find complimentary meals, desserts, and treats from restaurants and businesses offering birthday freebies. Make your special day sweeter!"
-      heroImage="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
+      heroImage="/images/instagram/lobster-spread-overhead.jpg"
       heroAlt="Birthday celebration with delicious food and festive decorations"
       category="Celebrations"
       categorySlug="celebrations"
