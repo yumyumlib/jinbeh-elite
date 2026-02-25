@@ -60,7 +60,25 @@ echo ""
 echo "🌐 Deploying to staging.jinbeh.com..."
 echo ""
 
-ssh root@72.61.15.71 << 'EOF'
+# Load log.env file if it exists
+if [ -f "log.env" ]; then
+    export $(grep -v '^#' log.env | xargs)
+fi
+
+# Determine SSH command (use sshpass if password is provided in .env)
+if [ -n "$VPS_PASSWORD" ]; then
+    if ! command -v sshpass &> /dev/null; then
+        echo "⚠️  sshpass is not installed. Please install it (brew install sshpass) or it will ask for your password manually."
+        SSH_CMD="ssh root@72.61.15.71"
+    else
+        export SSHPASS="$VPS_PASSWORD"
+        SSH_CMD="sshpass -e ssh -o StrictHostKeyChecking=no root@72.61.15.71"
+    fi
+else
+    SSH_CMD="ssh root@72.61.15.71"
+fi
+
+$SSH_CMD << 'EOF'
 cd /opt/jinbeh-elite
 echo "📥 Pulling latest changes..."
 git pull origin main
