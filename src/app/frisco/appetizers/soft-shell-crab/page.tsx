@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Soft Shell Crab Frisco | Crispy Whole Crab Appetizer",
+  title: "Soft Shell Crab Frisco | Crispy Whole Crab Appetizer | Jinbeh",
   description: "Crispy tempura soft shell crab at Jinbeh Frisco. 555 calories, 23.8g protein, edible shells, tender meat. Japanese specialty.",
   keywords: ["japanese appetizers frisco","soft shell crab frisco","best sushi frisco tx","crispy crab","seafood appetizer frisco","tempura crab","japanese specialty"],
   openGraph: {

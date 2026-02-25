@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Sake Sushi Menu Pairings | Perfect Flavor Combinations",
@@ -51,7 +52,7 @@ const faqSchema = {
         },
         {
             "@type": "Question",
-            name: "What&apos;s the difference between Junmai and Daiginjo sake?",
+            name: "What's the difference between Junmai and Daiginjo sake?",
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Junmai is pure rice sake with no added alcohol, offering a full-bodied, robust flavor that pairs well with rich fish. Daiginjo is ultra-refined sake with a higher polishing rate (at least 50% of the rice is removed), creating a delicate, fruity, and elegant profile. For food pairing, Junmai complements hearty dishes while Daiginjo pairs with premium nigiri and delicate sashimi.",
@@ -115,7 +116,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Sake & Sushi Menu Pairings: Perfect Combinations" },
     ],
 };
@@ -144,7 +145,7 @@ export default function SakeSushiMenuPairings() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/beverages" className="hover:text-white">Beverages</Link>
+                        <Link href="/bar" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -197,7 +198,7 @@ export default function SakeSushiMenuPairings() {
                                     />
 
                                     <p className="text-charcoal/80 mb-6">
-                                        To appreciate the art of sake sushi pairing, it&apos;s essential to understand the basics of sake. Sake,
+                                        To appreciate the art of sake sushi pairing, it's essential to understand the basics of sake. Sake,
                                         also known as Japanese rice wine, is crafted through a complex fermentation process that converts
                                         rice starches into alcohol. With <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red underline transition-colors">alcohol content typically around 15-17% ABV</Link>, it sits between wine and spirits. The cultural significance of sake in Japan cannot be overstated—it is
                                         not merely a drink but a symbol of hospitality and tradition.
@@ -285,7 +286,7 @@ export default function SakeSushiMenuPairings() {
                                         <div className="border-l-4 border-soft-gold pl-6">
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Acidity and Sweetness</h4>
                                             <p className="text-charcoal/70">
-                                                Pay attention to the sake&apos;s acidity level. Higher acidity provides a refreshing palate cleanser
+                                                Pay attention to the sake's acidity level. Higher acidity provides a refreshing palate cleanser
                                                 between bites, while lower acidity creates a smoother drinking experience.
                                             </p>
                                         </div>
@@ -350,20 +351,28 @@ export default function SakeSushiMenuPairings() {
                                         </div>
                                     </div>
 
-                                    {/* Image Gallery */}
+                                    
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                                        <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi and sake" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake selection" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/14-C060324-6596.jpg" alt="Premium sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -459,14 +468,14 @@ export default function SakeSushiMenuPairings() {
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
                                                     Both! Cold sake highlights crispness and is ideal with sushi. Warm sake brings out deeper
-                                                    flavors. Premium sake should be served cold to appreciate the quality. It&apos;s a celebration!
+                                                    flavors. Premium sake should be served cold to appreciate the quality. It's a celebration!
                                                 </p>
                                             </div>
                                         </details>
 
                                         <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
                                             <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Can I pair sake with Jinbeh&apos;s hibachi menu?
+                                                Can I pair sake with Jinbeh's hibachi menu?
                                                 <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
@@ -490,7 +499,7 @@ export default function SakeSushiMenuPairings() {
 
                                         <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
                                             <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What&apos;s the difference between Junmai and Daiginjo sake?
+                                                What's the difference between Junmai and Daiginjo sake?
                                                 <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
@@ -533,6 +542,7 @@ export default function SakeSushiMenuPairings() {
                                         <strong>Sake pairing insider tip:</strong> At Jinbeh, ask our staff for the "sake exploration" approach: order one cold sake and one warm sake to taste the same variety at different temperatures. You'll be amazed at how flavors change! For sushi pairings, start with Ginjo for your appetizer rolls, switch to Junmai for main courses, and finish with Nigori as a dessert sake. Our <Link href="/bar" className="text-accent-red hover:underline">bar staff</Link> can customize a tasting flight based on your meal. <Link href="/happy-hour" className="text-accent-red hover:underline">Happy hour pricing</Link> makes exploration affordable!
                                     </ProTip>
 
+                                    <PillarCTA type="vip" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>
@@ -577,9 +587,9 @@ export default function SakeSushiMenuPairings() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog/category/beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo">🍶 Beverages</Link>
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍣 Cuisine</Link>
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
+                                        <Link href="/bar" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo">🍶 Beverages</Link>
+                                        <Link href="/menu" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">🍣 Cuisine</Link>
+                                        <Link href="/menu" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
                                     </div>
                                 </div>
                             </div>

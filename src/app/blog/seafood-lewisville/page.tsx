@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Best Seafood in Lewisville TX: Top Restaurants to Try | Jinbeh",
@@ -95,7 +96,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Locations", "item": "https://jinbeh.com/#locations" },
         { "@type": "ListItem", "position": 4, "name": "Best Seafood in Lewisville TX" },
     ],
 };
@@ -130,7 +131,7 @@ export default function SeafoodLewisville() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Locations</Link>
+                        <Link href="/#locations" className="hover:text-white">Locations</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -347,17 +348,7 @@ export default function SeafoodLewisville() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -366,6 +357,7 @@ export default function SeafoodLewisville() {
                                         <strong>Lewisville seafood insider tip:</strong> At Jinbeh Lewisville, ask for the "chef's selection sashimi"—our chefs pick the freshest fish of the day and you'll get varieties you might not see on the regular menu. Tuesday and Wednesday evenings tend to be less crowded, giving you more time to chat with the sushi chefs. Pair your seafood with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for the ultimate experience. <a href="tel:2144882224" className="text-accent-red hover:underline">Call Lewisville: (214) 488-2224</a>
                                     </ProTip>
 
+                                    <PillarCTA type="catering" />
                                     <LocationCTA location="lewisville" />
                                 </div>
                             </div>

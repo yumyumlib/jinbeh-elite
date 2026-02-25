@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Top Baby Shower Venues: Best Places to Host | Jinbeh",
@@ -398,7 +398,8 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
         <strong>Baby shower venue insider tip:</strong> Jinbeh's semi-private dining areas are ideal for baby showers of 15-30 guests. Book a lunch slot for the best value — you'll get the same elegant setting with lower per-person costs. Our team handles all food, service, and cleanup so the host can actually enjoy the party. Mention it's a baby shower when booking and we'll help arrange a special menu. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your space →</Link>
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

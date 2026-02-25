@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Top Birthday Celebration Restaurants | Special Moments at Jinbeh",
@@ -91,7 +93,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 3, "name": "Private Events", "item": "https://jinbeh.com/private-dining" },
         { "@type": "ListItem", "position": 4, "name": "Top Birthday Celebration Restaurants in DFW" },
     ],
 };
@@ -120,7 +122,7 @@ export default function BirthdayCelebrationRestaurants() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/celebrations" className="hover:text-white">Celebrations</Link>
+                        <Link href="/celebrations" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -316,20 +318,28 @@ export default function BirthdayCelebrationRestaurants() {
                                         </div>
                                     </div>
 
-                                    {/* Image Gallery */}
+                                    
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                                        <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/7-C060324-6447.jpg" alt="Birthday celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi birthday" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/13-C060324-6582.jpg" alt="Birthday dessert" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday dinner" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
                                     </div>
                                 </div>
 
@@ -338,17 +348,7 @@ export default function BirthdayCelebrationRestaurants() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -357,6 +357,7 @@ export default function BirthdayCelebrationRestaurants() {
                                         <strong>Birthday dining insider tip:</strong> Jinbeh offers complimentary birthday desserts and special birthday songs for the guest of honor. Book a hibachi table for the best experience — your chef becomes the entertainment! For groups of 8+, call ahead to ensure adjacent tables. Weekend dinner slots fill fast, so reserve 1-2 weeks in advance for Friday/Saturday birthdays. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your birthday table →</Link>
                                     </ProTip>
 
+                                    <PillarCTA type="vip" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

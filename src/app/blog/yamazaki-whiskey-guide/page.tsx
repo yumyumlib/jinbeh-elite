@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Find Yamazaki Whiskey Nearby: Your Complete Guide | Jinbeh",
@@ -37,7 +37,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Yamazaki Whiskey: Complete Tasting Guide" },
     ],
 };
@@ -52,7 +52,7 @@ export default function YamazakiWhiskeyGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/bar">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-amber-700 mb-4">🥃 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Find Yamazaki Whiskey Nearby</h1>
@@ -227,7 +227,8 @@ export default function YamazakiWhiskeyGuide() {
                                     <strong>Japanese whiskey tasting tip:</strong> The best way to appreciate Yamazaki is the Japanese "mizuwari" style—mix one part whiskey with two parts water and a single large ice cube. This is how most Japanese drink their premium whiskey, and it opens up delicate flavors you'd miss drinking it neat. At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, ask our bartender to prepare a mizuwari or try our whiskey flight to compare expressions. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, CompareCards, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, CompareCards, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions | Jinbeh",
@@ -13,9 +13,11 @@ export const metadata: Metadata = {
     "hibachi vs teppanyaki",
     "difference between hibachi and teppanyaki",
     "what is teppanyaki",
+    "what is hibachi",
     "hibachi cooking style",
     "hibachi vs teppanyaki difference",
     "teppanyaki vs hibachi",
+    "hibachi meaning",
   ],
   openGraph: {
     title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions",
@@ -478,6 +480,7 @@ export default function HibachiVsTeppanyakiPage() {
         Whether you're celebrating a birthday, planning a date night, or just wanting a meal that engages all your senses, we invite you to experience what makes teppanyaki dining unforgettable. <Link href="/reservations" className="text-accent-red hover:underline">Book a table</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today.
       </p>
 
+      <PillarCTA type="catering" />
       <LocationCTA location="both" />
 
       {/* Related Content Links */}

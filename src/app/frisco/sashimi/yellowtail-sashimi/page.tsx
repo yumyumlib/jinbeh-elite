@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yellowtail Sashimi Frisco | Buttery Hamachi Delicacy",
+  title: "Yellowtail Sashimi Frisco | Buttery Hamachi Delicacy | Jinbeh",
   description: "Premium hamachi (yellowtail) sashimi at Jinbeh Frisco. 150 calories, 20g protein, omega-3 rich with heart-healthy benefits.",
   keywords: ["sashimi near me frisco","yellowtail sashimi frisco","hamachi sashimi","best sushi frisco tx","japanese appetizer frisco","omega-3 fish frisco","japanese restaurant frisco"],
   openGraph: {

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Octopus Sashimi Frisco | Low-Fat High-Protein Tako",
+  title: "Octopus Sashimi Frisco | Low-Fat High-Protein Tako | Jinbeh",
   description: "Tender octopus (tako) sashimi at Jinbeh Frisco. 93 calories, 29g protein, rich in B12 & selenium. Lean choice for healthy eating.",
   keywords: ["sashimi near me frisco","octopus sashimi frisco","best sushi frisco tx","tako sashimi calories","lean protein sashimi","japanese restaurant frisco","high protein low fat sashimi"],
   openGraph: {

@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, ComparisonTable , PillarCTA } from "@/components/ArticleEnhancements";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Sushi Identification Chart | Complete Guide to Types & Flavors",
@@ -84,7 +85,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/menu" },
         { "@type": "ListItem", "position": 4, "name": "Sushi Identification Chart: Visual Guide to Every Type" },
     ],
 };
@@ -113,7 +114,7 @@ export default function SushiIdentificationChart() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/menu" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -257,65 +258,46 @@ export default function SushiIdentificationChart() {
                                     </div>
 
                                     {/* Comparison Table */}
-                                    <div className="overflow-x-auto my-12">
-                                        <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
-                                            <thead className="bg-charcoal text-white">
-                                                <tr>
-                                                    <th className="p-4 text-left font-heading">Type</th>
-                                                    <th className="p-4 text-left font-heading">Composition</th>
-                                                    <th className="p-4 text-left font-heading">Best For</th>
-                                                    <th className="p-4 text-left font-heading">Skill Level</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="text-charcoal/80 text-sm">
-                                                <tr className="border-b border-warm-ivory">
-                                                    <td className="p-4 font-semibold">Nigiri</td>
-                                                    <td className="p-4">Fish on rice</td>
-                                                    <td className="p-4">Pure fish flavor</td>
-                                                    <td className="p-4">⭐⭐⭐ Advanced</td>
-                                                </tr>
-                                                <tr className="border-b border-warm-ivory bg-warm-ivory/30">
-                                                    <td className="p-4 font-semibold">Sashimi</td>
-                                                    <td className="p-4">Sliced fish only</td>
-                                                    <td className="p-4">Low-carb, purists</td>
-                                                    <td className="p-4">⭐⭐⭐ Advanced</td>
-                                                </tr>
-                                                <tr className="border-b border-warm-ivory">
-                                                    <td className="p-4 font-semibold">Maki Rolls</td>
-                                                    <td className="p-4">Rice wrapped in nori</td>
-                                                    <td className="p-4">Classic experience</td>
-                                                    <td className="p-4">⭐⭐ Intermediate</td>
-                                                </tr>
-                                                <tr className="border-b border-warm-ivory bg-warm-ivory/30">
-                                                    <td className="p-4 font-semibold">Temaki</td>
-                                                    <td className="p-4">Cone-shaped roll</td>
-                                                    <td className="p-4">Interactive eating</td>
-                                                    <td className="p-4">⭐ Beginner</td>
-                                                </tr>
-                                                <tr>
-                                                    <td className="p-4 font-semibold">Specialty Rolls</td>
-                                                    <td className="p-4">Creative combinations</td>
-                                                    <td className="p-4">Adventurous palates</td>
-                                                    <td className="p-4">⭐ Beginner</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div className="my-12">
+                                        <ComparisonTable
+                                            columns={[
+                                                { header: "Type", accessorKey: "type" },
+                                                { header: "Composition", accessorKey: "composition" },
+                                                { header: "Best For", accessorKey: "bestFor" },
+                                                { header: "Skill Level", accessorKey: "skillLevel" }
+                                            ]}
+                                            data={[
+                                                { type: "Nigiri", composition: "Fish on rice", bestFor: "Pure fish flavor", skillLevel: "⭐⭐⭐ Advanced" },
+                                                { type: "Sashimi", composition: "Sliced fish only", bestFor: "Low-carb, purists", skillLevel: "⭐⭐⭐ Advanced" },
+                                                { type: "Maki Rolls", composition: "Rice wrapped in nori", bestFor: "Classic experience", skillLevel: "⭐⭐ Intermediate" },
+                                                { type: "Temaki", composition: "Cone-shaped roll", bestFor: "Interactive eating", skillLevel: "⭐ Beginner" },
+                                                { type: "Specialty Rolls", composition: "Creative combinations", bestFor: "Adventurous palates", skillLevel: "⭐ Beginner" }
+                                            ]}
+                                        />
                                     </div>
 
-                                    {/* Image Gallery */}
+
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi rolls" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
+                                        <BlurFade delay={0.1}>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
+                                        <BlurFade delay={0.2}>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
+                                        <BlurFade delay={0.3}>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi rolls" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
+                                        <BlurFade delay={0.4}>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -432,6 +414,7 @@ export default function SushiIdentificationChart() {
                                         <strong>Sushi ordering pro tip:</strong> At Jinbeh, use this chart as your guide! Start with something familiar like a California Roll, then try one nigiri to appreciate pure fish flavor. Ask your sushi chef "What's freshest today?"—they love sharing their best picks. For the adventurous, request omakase (chef's choice) and let our masters surprise you. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to preview options before your visit.
                                     </ProTip>
 
+                                    <PillarCTA type="hub" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki",
@@ -439,7 +439,8 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
         <strong>Offsite catering insider tip:</strong> When booking Jinbeh for offsite hibachi, request a tasting consultation at either our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> restaurant first. You'll see exactly what your guests will experience. For best results, book 3-4 weeks out for weekend events. Pro hack: add a sushi station alongside hibachi for variety—guests love having both options!
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
 
       {/* Related Reading */}
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">

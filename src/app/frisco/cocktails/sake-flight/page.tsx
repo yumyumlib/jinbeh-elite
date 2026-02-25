@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Premium Sake Flight Frisco - Japanese Tasting",
+  title: "Premium Sake Flight Frisco - Japanese Tasting | Jinbeh",
   description: "Three premium sake tasting flight at Jinbeh Frisco. Experience authentic Japanese sakes with expert guidance. Best sake selection near Stonebriar (214) 619-1200.",
   keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","sake flight","premium sake","sake tasting","jinbeh frisco","japanese restaurant"],
   openGraph: {

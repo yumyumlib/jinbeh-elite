@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems | Jinbeh",
@@ -36,7 +36,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://jinbeh.com/blog" },
         { "@type": "ListItem", "position": 4, "name": "Best Sushi Dallas TX: Top Restaurants & Hidden Gems" },
     ],
 };
@@ -52,7 +52,7 @@ export default function BestSushiDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/#locations">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Sushi Dallas TX</h1>
@@ -89,12 +89,12 @@ export default function BestSushiDallas() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Why North Dallas Loves Jinbeh</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
-                                {[{ e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Kids love the hibachi show; parents love the sushi" }, { e: "💰", t: "Great Value", d: "Fresh quality without downtown prices" }, { e: "🎂", t: "Celebrations", d: "Hibachi + sushi = perfect for parties" }, { e: "⏱️", t: "Convenient", d: "Easy parking, quick from 121/DNT" }].map(x => (
-                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                        <span className="text-3xl block mb-2">{x.e}</span>
-                                        <h3 className="font-bold">{x.t}</h3>
-                                        <p className="text-sm text-charcoal/70">{x.d}</p>
-                                    </div>
+                                {[{ e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Kids love the hibachi show; parents love the sushi" }, {e: "💰", t: "Great Value", d: "Fresh quality without downtown prices" }, {e: "🎂", t: "Celebrations", d: "Hibachi + sushi = perfect for parties" }, {e: "⏱️", t: "Convenient", d: "Easy parking, quick from 121/DNT" }].map(x => (
+                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                    <span className="text-3xl block mb-2">{x.e}</span>
+                                    <h3 className="font-bold">{x.t}</h3>
+                                    <p className="text-sm text-charcoal/70">{x.d}</p>
+                                </div>
                                 ))}
                             </div>
 
@@ -155,7 +155,8 @@ export default function BestSushiDallas() {
                                 </details>
                             </div>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         <aside>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Places for Bridal Showers Near Me | Jinbeh",
@@ -390,7 +390,8 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         <strong>Bridal shower venue insider tip:</strong> Jinbeh's private dining areas are perfect for bridal showers of 15-40 guests. Book a weekend lunch for the best value — you'll get the same elegant ambiance with more availability. Our team can customize the menu to accommodate dietary needs across your group. Mention it's a bridal shower when booking and we'll help create a special experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bridal shower →</Link>
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

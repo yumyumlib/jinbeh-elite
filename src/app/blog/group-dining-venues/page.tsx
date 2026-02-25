@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Group Dining Venues DFW: Best for Large Parties | Jinbeh",
@@ -36,7 +36,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://jinbeh.com/blog" },
         { "@type": "ListItem", "position": 4, "name": "Best Group Dining Venues in DFW" },
     ],
 };
@@ -52,7 +52,7 @@ export default function GroupDiningVenues() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/celebrations">Celebrations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/private-dining">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">🎉 Celebrations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Group Dining Venues DFW</h1>
@@ -161,7 +161,8 @@ export default function GroupDiningVenues() {
                                 <strong>Group booking insider tip:</strong> For groups of 12+, call Jinbeh directly rather than booking online — our team will arrange adjacent hibachi tables so your whole group can enjoy the experience together. Weeknight dinners (Tuesday-Thursday) give you more space and personal attention. Corporate groups love our set-menu packages that simplify ordering and billing. Ask about corporate account perks for repeat bookings! <Link href="/reservations" className="text-accent-red hover:underline">Reserve for your group →</Link>
                             </ProTip>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
 
                             <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
                                 <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Jinbeh Locations</h3>

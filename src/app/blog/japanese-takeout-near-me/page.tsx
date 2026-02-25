@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
@@ -69,17 +69,17 @@ export default function JapaneseTakeoutNearMe() {
             <p>
                 Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth—and
                 for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety,
-                and hibachi plates reheat beautifully. Whether you&apos;re working from home, hosting a casual
+                and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual
                 gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits
                 different.
             </p>
 
             <p>
-                At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, we&apos;ve been
+                At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, we've been
                 serving DFW since 1988—and our takeout game is just as strong as our dine-in experience.
                 Browse our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> and order via
                 our <Link href="/takeout" className="text-accent-red hover:underline">takeout</Link> or <Link href="/delivery" className="text-accent-red hover:underline">delivery</Link> pages.
-                Our guests say our food is &quot;tasty and enjoyable&quot; whether it&apos;s eaten at the restaurant
+                Our guests say our food is "tasty and enjoyable" whether it's eaten at the restaurant
                 or at home.
             </p>
 
@@ -99,7 +99,7 @@ export default function JapaneseTakeoutNearMe() {
                 <li><strong>California Roll</strong> — The classic crowd-pleaser, travels perfectly</li>
                 <li><strong>Spicy Tuna Roll</strong> — Bold flavor that holds up during delivery</li>
                 <li><strong>Dragon Roll</strong> — Eel and avocado—a Jinbeh guest favorite</li>
-                <li><strong>Dallas Roll</strong> — Our signature creation guests call &quot;amazing&quot;</li>
+                <li><strong>Dallas Roll</strong> — Our signature creation guests call "amazing"</li>
                 <li><strong>Tempura Rolls</strong> — Crispy texture that works great for takeout</li>
             </ul>
 
@@ -113,20 +113,20 @@ export default function JapaneseTakeoutNearMe() {
             <h3>🔥 Hibachi Platters</h3>
             <p>
                 Craving <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link> but
-                can&apos;t make it in? Our hibachi takeout includes your choice of protein with fried rice,
+                can't make it in? Our hibachi takeout includes your choice of protein with fried rice,
                 grilled vegetables, and our signature sauces. The <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline">calorie-conscious</Link> can
                 request lighter preparations.
             </p>
 
             <h3>🥟 Appetizers &amp; Sides</h3>
             <p>
-                Don&apos;t forget the extras that make a Japanese meal complete:
+                Don't forget the extras that make a Japanese meal complete:
             </p>
             <ul>
                 <li><strong>Edamame</strong> — Steamed and salted, a healthy starter</li>
                 <li><strong>Miso Soup</strong> — Comforting and traditional</li>
                 <li><strong>Gyoza</strong> — Pan-fried pork dumplings</li>
-                <li><strong>Crab Rangoons</strong> — Guests say ours are &quot;the best I&apos;ve ever had&quot;</li>
+                <li><strong>Crab Rangoons</strong> — Guests say ours are "the best I've ever had"</li>
                 <li><strong>Ahi Tower</strong> — A beautiful layered tuna appetizer</li>
             </ul>
 
@@ -153,13 +153,13 @@ export default function JapaneseTakeoutNearMe() {
             <p>
                 Many chain Japanese restaurants use pre-made or frozen components for their takeout.
                 At Jinbeh, every dish—whether dine-in or takeout—is prepared fresh to order by the same
-                skilled chefs who&apos;ve been serving DFW families for over 37 years. That&apos;s the difference
-                between &quot;fine&quot; and &quot;fantastic.&quot;
+                skilled chefs who've been serving DFW families for over 37 years. That's the difference
+                between "fine" and "fantastic."
             </p>
 
             <p>
-                Our guests consistently note that we &quot;accommodate allergies really well&quot;—so don&apos;t
-                hesitate to ask about dietary modifications when placing your takeout order. We&apos;re happy
+                Our guests consistently note that we "accommodate allergies really well"—so don't
+                hesitate to ask about dietary modifications when placing your takeout order. We're happy
                 to customize.
             </p>
 
@@ -167,7 +167,8 @@ export default function JapaneseTakeoutNearMe() {
                 <strong>Japanese takeout pro tip:</strong> At Jinbeh, call 20-30 minutes before you want to pick up for the freshest sushi. Order tempura and baked rolls for takeout—they travel better than raw fish rolls. Ask for extra ginger and wasabi on the side. For large orders (5+ rolls), mention it when calling so we can time everything to be ready together. <Link href="/takeout" className="text-accent-red hover:underline">Order takeout →</Link>
             </ProTip>
 
-            <LocationCTA location="both" />
+            <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Date Night Restaurants in Frisco TX | Best Romantic Dining",
@@ -96,7 +96,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Locations", "item": "https://jinbeh.com/#locations" },
         { "@type": "ListItem", "position": 4, "name": "Best Date Night Restaurants in Frisco TX" },
     ],
 };
@@ -125,7 +125,7 @@ export default function DateNightRestaurantsFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/best-of" className="hover:text-white">Tips & Guides</Link>
+                        <Link href="/blog" className="hover:text-white">Tips & Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -500,7 +500,8 @@ export default function DateNightRestaurantsFrisco() {
                                     </details>
                                 </div>
 
-                                <LocationCTA location="frisco" />
+                                <PillarCTA type="catering" />
+                                    <LocationCTA location="frisco" />
 
                                 {/* CTA */}
                                 <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">

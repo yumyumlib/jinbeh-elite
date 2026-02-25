@@ -5,31 +5,13 @@ import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import locationsData from "@/data/locations.json";
+import { getNavItems } from "@/data/navigation";
 
 interface HeaderProps {
   location?: "frisco" | "lewisville";
 }
 
-interface DropdownItem {
-  label: string;
-  href: string;
-  description?: string;
-  isExternal?: boolean;
-}
 
-interface MegaMenuSection {
-  title: string;
-  icon: string;
-  items: DropdownItem[];
-}
-
-interface NavItem {
-  label: string;
-  href: string;
-  dropdown?: DropdownItem[];
-  megaMenu?: MegaMenuSection[];
-  footerLinks?: DropdownItem[];
-}
 
 export default function Header({ location }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -144,114 +126,7 @@ export default function Header({ location }: HeaderProps) {
     setShowReserveModal(false);
   }, []);
 
-  const navItems: NavItem[] = [
-    {
-      label: "Locations",
-      href: "#",
-      dropdown: [
-        { label: "Jinbeh Frisco", href: "/frisco", description: "Near Stonebriar Centre • (214) 619-1200" },
-        { label: "Jinbeh Lewisville", href: "/lewisville", description: "Off I-35E near Vista Ridge • (214) 488-2224" },
-      ],
-    },
-    {
-      label: "Menu",
-      href: `/${loc}/menu`,
-      dropdown: [
-        { label: "Full Menu", href: `/${loc}/menu`, description: "Browse our complete menu" },
-        { label: "Hibachi", href: `/${loc}/hibachi`, description: "Teppanyaki grilled tableside" },
-        { label: "Sushi & Rolls", href: `/${loc}/sushi-rolls`, description: "Fresh rolls & nigiri" },
-        { label: "Sashimi", href: `/${loc}/sashimi`, description: "Premium fresh cuts" },
-        { label: "Appetizers", href: `/${loc}/appetizers`, description: "Start your experience" },
-        { label: "Drinks & Sake", href: `/${loc}/cocktails`, description: "Full bar & sake selection" },
-        { label: "Kids Menu", href: `/${loc}/kids-menu`, description: "For our younger guests" },
-        { label: "Lunch Specials", href: "/lunch-specials", description: "Weekday specials" },
-      ],
-      footerLinks: [
-        { label: "Hibachi Menu Guide", href: "/blog/hibachi-menu-guide", description: "How to order" },
-        { label: "Types of Sushi", href: "/blog/types-of-sushi", description: "Visual guide" },
-      ],
-    },
-    {
-      label: "Dining",
-      href: "#",
-      dropdown: [
-        { label: "Happy Hour", href: "/happy-hour", description: "Daily specials at the bar" },
-        { label: "Private Dining", href: "/private-dining", description: "Groups & events" },
-        { label: "Catering", href: "/catering", description: "Bring Jinbeh to you" },
-        { label: "Order Online", href: "/order-online", description: "Delivery & takeout" },
-      ],
-      footerLinks: [
-        { label: "Catering Guide", href: "/blog/hibachi-catering-dfw", description: "Plan your event" },
-        { label: "Group Dining Tips", href: "/blog/group-dining-venues", description: "Venues & ideas" },
-      ],
-    },
-    {
-      label: "Celebrations",
-      href: "/celebrations",
-      dropdown: [
-        { label: "All Celebrations", href: "/celebrations", description: "Browse all events" },
-        { label: "Birthday Parties", href: "/celebrations/birthday", description: "Make it memorable" },
-        { label: "Anniversary Dinners", href: "/celebrations/anniversary", description: "Romantic experiences" },
-        { label: "Date Night", href: "/celebrations/date-night", description: "Perfect evening out" },
-        { label: "Graduation", href: "/celebrations/graduation", description: "Celebrate achievements" },
-        { label: "Corporate Events", href: "/celebrations/corporate-events", description: "Team building & parties" },
-        { label: "Holiday Parties", href: "/celebrations/holiday-parties", description: "Seasonal celebrations" },
-        { label: "Private Dining", href: "/private-dining", description: "Exclusive group dining" },
-      ],
-    },
-    {
-      label: "Explore",
-      href: "/blog",
-      megaMenu: [
-        {
-          title: "Cuisine & Sushi",
-          icon: "🍣",
-          items: [
-            { label: "How to Eat Sushi", href: "/blog/how-to-eat-sushi-guide" },
-            { label: "Types of Sushi", href: "/blog/types-of-sushi" },
-            { label: "Sushi Identification", href: "/blog/sushi-identification-chart" },
-            { label: "Beginner Sushi Tips", href: "/blog/beginner-sushi-tips" },
-            { label: "What is Omakase?", href: "/blog/omakase-dining-guide" },
-          ],
-        },
-        {
-          title: "Hibachi & Teppanyaki",
-          icon: "🔥",
-          items: [
-            { label: "Hibachi Menu Guide", href: "/blog/hibachi-menu-guide" },
-            { label: "Hibachi vs Teppanyaki", href: "/blog/hibachi-vs-teppanyaki-explained" },
-            { label: "The Hibachi Experience", href: "/blog/hibachi-dining-experience" },
-            { label: "Hibachi Calories Guide", href: "/blog/hibachi-calories-guide" },
-            { label: "Discover Teppanyaki", href: "/blog/discover-teppanyaki" },
-          ],
-        },
-        {
-          title: "Drinks & Sake",
-          icon: "🍶",
-          items: [
-            { label: "Types of Sake", href: "/blog/types-of-sake-explained" },
-            { label: "Sake Pairing Guide", href: "/blog/sake-pairing-guide" },
-            { label: "Japanese Whiskey", href: "/blog/japanese-whiskey-guide" },
-            { label: "Japanese Cocktails", href: "/blog/japanese-cocktails" },
-            { label: "Sake Taste Profiles", href: "/blog/sake-taste-profile" },
-          ],
-        },
-        {
-          title: "Local & Best Of",
-          icon: "📍",
-          items: [
-            { label: "Best Sushi Frisco", href: "/blog/best-sushi-frisco" },
-            { label: "Best Hibachi Dallas", href: "/blog/best-hibachi-dallas" },
-            { label: "Top Frisco Restaurants", href: "/blog/top-frisco-restaurants" },
-            { label: "Best Happy Hour Frisco", href: "/blog/best-happy-hour-frisco-tx" },
-            { label: "Things to Do Frisco", href: "/blog/things-to-do-frisco" },
-          ],
-        },
-      ],
-    },
-    { label: "About", href: "/about" },
-    { label: "Gift Cards", href: "/gift-cards" },
-  ];
+  const navItems = getNavItems(loc);
 
   return (
     <>
@@ -281,7 +156,7 @@ export default function Header({ location }: HeaderProps) {
 
             {/* Desktop Navigation */}
             <nav className="hidden xl:flex items-center gap-0.5" ref={dropdownRef} aria-label="Main navigation">
-              {navItems.map((item, idx) => (
+              {navItems.map((item) => (
                 <div
                   key={item.label}
                   className="relative flex items-center"
@@ -298,8 +173,8 @@ export default function Header({ location }: HeaderProps) {
                         ref={(el) => { buttonRefs.current[item.label] = el; }}
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
                         aria-expanded={activeDropdown === item.label}
-                        aria-haspopup="menu"
-                        className={`flex items-center gap-1 px-3 py-2 rounded-lg hover:text-soft-gold hover:bg-white/10 transition-all text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] ${activeDropdown === item.label ? "text-soft-gold bg-white/10" : "text-white"}`}
+                        aria-label={activeDropdown === item.label ? `Close ${item.label} menu` : `Open ${item.label} menu`}
+                        className={`flex items-center gap-1 px-3 py-2 rounded-lg hover:text-soft-gold hover:bg-white/10 transition-all duration-300 hover:-translate-y-0.5 text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] ${activeDropdown === item.label ? "text-soft-gold bg-white/10" : "text-white"}`}
                       >
                         {item.label}
                         <svg
@@ -319,8 +194,8 @@ export default function Header({ location }: HeaderProps) {
                         ref={(el) => { buttonRefs.current[item.label] = el; }}
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
                         aria-expanded={activeDropdown === item.label}
-                        aria-haspopup="menu"
-                        className={`flex items-center gap-1 px-3 py-2 rounded-lg hover:text-soft-gold hover:bg-white/10 transition-all text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] ${activeDropdown === item.label ? "text-soft-gold bg-white/10" :
+                        aria-label={activeDropdown === item.label ? `Close ${item.label} menu` : `Open ${item.label} menu`}
+                        className={`flex items-center gap-1 px-3 py-2 rounded-lg hover:text-soft-gold hover:bg-white/10 transition-all duration-300 hover:-translate-y-0.5 text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] ${activeDropdown === item.label ? "text-soft-gold bg-white/10" :
                           (item.label === "Locations" && location) ? "text-soft-gold" :
                             "text-white"
                           }`}
@@ -340,7 +215,7 @@ export default function Header({ location }: HeaderProps) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="px-3 py-2 rounded-lg text-white hover:text-soft-gold hover:bg-white/10 transition-all text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
+                      className="inline-block px-3 md:mx-1 py-2 rounded-lg text-white hover:text-soft-gold hover:bg-white/10 transition-all duration-300 hover:-translate-y-0.5 text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
                     >
                       {item.label}
                     </Link>
@@ -716,7 +591,7 @@ export default function Header({ location }: HeaderProps) {
                   key={item.label}
                   role="menu"
                   aria-label={`${item.label} submenu`}
-                  className="fixed w-72 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
+                  className="hidden xl:block fixed w-72 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
                   style={{ top: dropdownPos.top, left: dropdownPos.left, zIndex: 99999 }}
                   onMouseEnter={() => handleMouseEnter(item.label)}
                   onMouseLeave={handleMouseLeave}
@@ -825,7 +700,7 @@ export default function Header({ location }: HeaderProps) {
 
               <div className="p-2">
                 <a
-                  href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+                  href={`https://www.opentable.com/restref/client/?rid=${locationsData.locations.frisco.reservation.rid}&lang=en-US&ot_source=Restaurant%20website`}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setActiveDropdown(null)}
@@ -840,7 +715,7 @@ export default function Header({ location }: HeaderProps) {
                   </div>
                 </a>
                 <a
-                  href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+                  href={`https://www.opentable.com/restref/client/?rid=${locationsData.locations.lewisville.reservation.rid}&lang=en-US&ot_source=Restaurant%20website`}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setActiveDropdown(null)}

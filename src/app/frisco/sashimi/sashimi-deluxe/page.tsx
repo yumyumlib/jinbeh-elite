@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sashimi Deluxe Platter Frisco | Premium Fish Assortment",
+  title: "Sashimi Deluxe Platter Frisco | Premium Fish Assortment | Jinbeh",
   description: "Chef's premium sashimi selection with tuna, salmon, yellowtail at Jinbeh Frisco. 329 calories, 36g protein, omega-3 rich.",
   keywords: ["sashimi near me frisco","best sushi frisco tx","sashimi deluxe platter","assorted raw fish","japanese appetizers frisco","chef selection sashimi","premium fish frisco"],
   openGraph: {

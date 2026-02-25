@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuna Sashimi Frisco | Lean Protein Ahi Tuna",
+  title: "Tuna Sashimi Frisco | Lean Protein Ahi Tuna | Jinbeh",
   description: "Premium ahi tuna sashimi at Jinbeh Frisco. 94 calories, 20g protein, zero carbs. High in omega-3s and heart-healthy nutrients.",
   keywords: ["sashimi near me frisco","tuna sashimi frisco","best sushi frisco tx","ahi tuna sashimi calories","lean protein sashimi","japanese restaurant frisco","sushi-grade tuna","raw fish frisco"],
   openGraph: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Jinbeh at Home: Experience Jinbeh Catering's Unique Japanese Flavors",
@@ -330,7 +330,8 @@ export default function JinbehCateringServicesPage() {
         <strong>Event planning insider tip:</strong> The most popular Jinbeh catering package for corporate events is the "Premium Teppanyaki Experience" — it includes a live chef performance, premium proteins, and full setup/cleanup. For the best prices, ask about weekday event rates (Monday-Thursday saves 15-20%). Clients consistently rate Jinbeh catering 5 stars, saying "the live cooking was the highlight of our event." <Link href="/catering" className="text-accent-red hover:underline">Request a custom quote →</Link>
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="jinbeh-catering-services" />
     </ArticleLayout>

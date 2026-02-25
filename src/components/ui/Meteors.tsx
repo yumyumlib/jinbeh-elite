@@ -17,13 +17,15 @@ export function Meteors({ number = 20, className }: MeteorsProps) {
   }>>([]);
 
   useEffect(() => {
-    const styles = [...Array(number)].map(() => ({
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
-      animationDelay: `${Math.random() * 5}s`,
-      animationDuration: `${Math.random() * 8 + 4}s`,
-    }));
-    setMeteorStyles(styles);
+    // Generate styles only on the client side after mounting to avoid hydration mismatch
+    setMeteorStyles(
+      [...Array(number)].map(() => ({
+        top: `${Math.random() * 100}%`,
+        left: `${Math.random() * 100}%`,
+        animationDelay: `${Math.random() * 5}s`,
+        animationDuration: `${Math.random() * 8 + 4}s`,
+      }))
+    );
   }, [number]);
 
   return (

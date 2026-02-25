@@ -5,7 +5,6 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
 
 interface FAQItem {
   icon: string;
@@ -67,8 +66,6 @@ const faqs: FAQItem[] = [
 ];
 
 export default function FirstTimerFAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   return (
     <section className="py-20 bg-gradient-to-b from-warm-ivory to-white">
       <div className="max-w-5xl mx-auto px-6">

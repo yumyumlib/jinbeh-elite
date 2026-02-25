@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, CompareCards, IngredientSpotlight, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, CompareCards, IngredientSpotlight, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Best Sushi Frisco TX: Top Spots to Savor Fresh Flavors | Jinbeh",
@@ -68,67 +69,67 @@ const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
+        "@type": " Question ",
+name: faq.question,
+    acceptedAnswer: {
+            " @type": " Answer ",
+    text: faq.answer,
         },
     })),
 };
 
 
 const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
-        { "@type": "ListItem", "position": 4, "name": "Best Sushi Frisco TX: Top Spots Near Stonebriar" },
-    ],
+    " @context": " https://schema.org",
+    " @type": " BreadcrumbList ",
+    " itemListElement ": [
+    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 3, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 4, " name ": " Best Sushi Frisco TX: Top Spots Near Stonebriar " },
+],
 };
 
 const itemListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Top Sushi Restaurants in Frisco TX",
-    "description": "Ranked list of the best sushi restaurants near Stonebriar Centre in Frisco, Texas.",
-    "numberOfItems": 5,
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-                "@type": "Restaurant",
-                "name": "Jinbeh Japanese Restaurant",
-                "servesCuisine": "Japanese",
-                "priceRange": "$$",
-                "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "752" },
-                "url": "https://jinbeh.com/frisco",
+    " @context": " https://schema.org",
+    " @type": " ItemList ",
+    " name ": "Top Sushi Restaurants in Frisco TX ",
+    " description ": "Ranked list of the best sushi restaurants near Stonebriar Centre in Frisco, Texas.",
+    " numberOfItems ": 5,
+    " itemListElement ": [
+    {
+            " @type ": " ListItem ",
+            " position ": 1,
+            " item ": {
+                " @type ": " Restaurant ",
+                " name ": " Jinbeh Japanese Restaurant ",
+                " servesCuisine ": " Japanese ",
+                " priceRange ": " $$ ",
+                " aggregateRating ": { " @type ": " AggregateRating ", " ratingValue ": " 4.2 ", " reviewCount ": " 752 " },
+                " url ": " https://jinbeh.com/frisco",
             },
         },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "item": { "@type": "Restaurant", "name": "Umiya", "servesCuisine": "Japanese Fusion", "priceRange": "$$" },
+    {
+            " @type ": " ListItem ",
+            " position ": 2,
+            " item ": { " @type ": " Restaurant ", " name ": " Umiya ", " servesCuisine ": " Japanese Fusion ", " priceRange ": " $$ " },
         },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "item": { "@type": "Restaurant", "name": "Sakura Sushi", "servesCuisine": "Japanese", "priceRange": "$$" },
+    {
+            " @type ": " ListItem ",
+            " position ": 3,
+            " item ": { " @type ": " Restaurant ", " name ": " Sakura Sushi ", " servesCuisine ": " Japanese ", " priceRange ": " $$ " },
         },
-        {
-            "@type": "ListItem",
-            "position": 4,
-            "item": { "@type": "Restaurant", "name": "Shoji", "servesCuisine": "Japanese", "priceRange": "$$" },
+    {
+            " @type ": " ListItem ",
+            " position ": 4,
+            " item ": { " @type ": " Restaurant ", " name ": " Shoji ", " servesCuisine ": " Japanese ", " priceRange ": " $$ " },
         },
-        {
-            "@type": "ListItem",
-            "position": 5,
-            "item": { "@type": "Restaurant", "name": "Edoko", "servesCuisine": "Japanese", "priceRange": "$$$" },
+    {
+            " @type ": " ListItem ",
+            " position ": 5,
+            " item ": { " @type ": " Restaurant ", " name ": " Edoko ", " servesCuisine ": " Japanese ", " priceRange ": " $$$ " },
         },
-    ],
+],
 };
 
 export default function BestSushiFrisco() {
@@ -162,7 +163,7 @@ export default function BestSushiFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Locations</Link>
+                        <Link href="/#locations" className="hover:text-white">Locations</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -416,17 +417,7 @@ export default function BestSushiFrisco() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -460,7 +451,8 @@ export default function BestSushiFrisco() {
                                     </div>
                                 </div>
 
-                                <LocationCTA location="frisco" />
+                                <PillarCTA type="catering" />
+                                    <LocationCTA location="frisco" />
                             </div>
                         </article>
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Steak Near Me: Top 10 Steakhouses to Try | Jinbeh",
@@ -37,7 +37,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Locations", "item": "https://jinbeh.com/#locations" },
         { "@type": "ListItem", "position": 4, "name": "Best Steak Near Me: Top Steakhouses in DFW" },
     ],
 };
@@ -53,7 +53,7 @@ export default function BestSteakNearMe() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Dining</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/#locations">Dining</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🥩 Steakhouse Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Steak Near Me</h1>
@@ -125,15 +125,15 @@ export default function BestSteakNearMe() {
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
                                     { e: "🔥", t: "Expert Cooking", d: "Hibachi chefs master the art of steak preparation" },
-                                    { e: "🎭", t: "Entertainment", d: "Watch your steak cook with spectacular showmanship" },
-                                    { e: "🌟", t: "Premium Quality", d: "Highest quality beef cooked to perfection" },
-                                    { e: "👨‍👩‍👧‍👦", t: "Great for Groups", d: "Perfect for families, celebrations, and gatherings" }
+                                {e: "🎭", t: "Entertainment", d: "Watch your steak cook with spectacular showmanship" },
+                                {e: "🌟", t: "Premium Quality", d: "Highest quality beef cooked to perfection" },
+                                {e: "👨‍👩‍👧‍👦", t: "Great for Groups", d: "Perfect for families, celebrations, and gatherings" }
                                 ].map(x => (
-                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                        <span className="text-3xl block mb-2">{x.e}</span>
-                                        <h3 className="font-bold text-charcoal">{x.t}</h3>
-                                        <p className="text-sm text-charcoal/70">{x.d}</p>
-                                    </div>
+                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                    <span className="text-3xl block mb-2">{x.e}</span>
+                                    <h3 className="font-bold text-charcoal">{x.t}</h3>
+                                    <p className="text-sm text-charcoal/70">{x.d}</p>
+                                </div>
                                 ))}
                             </div>
 
@@ -181,7 +181,8 @@ export default function BestSteakNearMe() {
                                 <div className="px-5 pb-5 text-charcoal/80">Absolutely! It's a celebration! Hibachi tables seat 8-10 guests sharing the experience together. Our chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners.</div>
                             </details>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         <aside>
@@ -189,14 +190,14 @@ export default function BestSteakNearMe() {
                                 <h3 className="font-heading font-bold mb-4">Related Articles</h3>
                                 <div className="space-y-3">
                                     {[
-                                        { t: "Best Hibachi Dallas", s: "/blog/best-hibachi-dallas", i: "/images/blog/8-C060324-6462.jpg" },
-                                        { t: "Best Asian Food Dallas", s: "/blog/best-asian-food-dallas", i: "/images/blog/7-C060324-6447.jpg" },
-                                        { t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
+                                        { t: " Best Hibachi Dallas", s: "/blog/best-hibachi-dallas", i: "/images/blog/8-C060324-6462.jpg" },
+                                    {t: "Best Asian Food Dallas", s: "/blog/best-asian-food-dallas", i: "/images/blog/7-C060324-6447.jpg" },
+                                    {t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
                                     ].map(r => (
-                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
-                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                        </Link>
+                                    <Link key={r.s} href={r.s} className="flex gap-3 group">
+                                        <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
+                                        <span className="text-sm group-hover:text-accent-red">{r.t}</span>
+                                    </Link>
                                     ))}
                                 </div>
                             </div>

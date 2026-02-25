@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Whiskey's Global Rise: A Flavorful Journey | Jinbeh",
@@ -37,7 +37,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Japanese Whiskey Guide: Top Bottles & Tasting Notes" },
     ],
 };
@@ -52,7 +52,7 @@ export default function JapaneseWhiskeyGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/bar">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-amber-700 mb-4">🥃 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Whiskey's Global Rise</h1>
@@ -159,7 +159,8 @@ export default function JapaneseWhiskeyGuide() {
                                     <strong>Japanese whiskey tasting tip:</strong> At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, try the highball—Japan's favorite way to enjoy whiskey. It's Suntory whisky over ice with sparkling water, and it pairs perfectly with hibachi and sushi. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on our Japanese whiskey selection. Ask the bartender for a tasting comparison of Suntory vs. Nikka!
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

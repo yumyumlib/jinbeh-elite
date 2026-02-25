@@ -41,6 +41,16 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/join",
+        destination: "/vip",
+        permanent: true,
+      },
+      {
+        source: "/vip-club",
+        destination: "/vip",
+        permanent: true,
+      },
     ];
   },
 
@@ -61,6 +71,10 @@ const nextConfig: NextConfig = {
           {
             key: "Referrer-Policy",
             value: "origin-when-cross-origin",
+          },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
           },
         ],
       },

@@ -21,7 +21,7 @@ function generateImageSitemap(): string {
       pageUrl: `${baseUrl}/`,
       images: [
         {
-          loc: `${baseUrl}/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp`,
+          loc: `${baseUrl}/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp`,
           caption: 'Jinbeh hibachi chef performing spectacular flame show at teppanyaki grill',
           title: 'Jinbeh Hibachi Flame Show - Lewisville TX',
         },

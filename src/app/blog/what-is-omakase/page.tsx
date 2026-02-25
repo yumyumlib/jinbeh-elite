@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "What is Omakase? A Complete Guide to the Japanese Sushi Experience | Jinbeh",
@@ -113,7 +114,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/menu" },
         { "@type": "ListItem", "position": 4, "name": "What is Omakase? The Ultimate Dining Experience" },
     ],
 };
@@ -148,7 +149,7 @@ export default function WhatIsOmakase() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/menu" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -466,7 +467,7 @@ export default function WhatIsOmakase() {
                                                 🏯 The Omakase Experience at Jinbeh
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                While Jinbeh doesn&apos;t offer a formal omakase menu, we embrace the
+                                                While Jinbeh doesn't offer a formal omakase menu, we embrace the
                                                 spirit of omakase — <strong>trust, exploration, and creativity</strong> — in
                                                 everything we do. Our sushi chefs at the bar regularly encourage guests
                                                 to try new dishes, explore unfamiliar flavors, and step outside their
@@ -522,11 +523,11 @@ export default function WhatIsOmakase() {
                                                 transfer it to our permanent menu.&rdquo;
                                             </blockquote>
                                             <p className="text-charcoal/70 mb-4 leading-relaxed">
-                                                That&apos;s exactly how the <strong>Dallas Back 9 Roll</strong> was
+                                                That's exactly how the <strong>Dallas Back 9 Roll</strong> was
                                                 born — shrimp tempura, crab, cream cheese, and jalapeño topped
                                                 with salmon, guacamole, spicy mayo, and eel sauce. A customer
                                                 created it, other guests kept ordering it, and it became one of
-                                                Jinbeh&apos;s most popular items.
+                                                Jinbeh's most popular items.
                                             </p>
                                             <p className="text-charcoal/70 leading-relaxed">
                                                 This collaborative creativity is the essence of the omakase
@@ -582,17 +583,7 @@ export default function WhatIsOmakase() {
                                 {/* FAQ Section */}
                                 <div className="mt-8">
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -624,6 +615,7 @@ export default function WhatIsOmakase() {
                                         <strong>First-time omakase tip from our sushi chefs:</strong> For the best omakase experience at Jinbeh, sit at the sushi bar and let our chef know it's your first time—they'll pace the experience perfectly and explain each piece as it's served. Avoid wearing strong cologne/perfume (it interferes with the delicate aromas). Come on an empty stomach for the full 12+ piece journey. If you're nervous about raw fish, mention it—our chefs can include some lightly torched or cooked pieces while maintaining the omakase spirit. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                     </ProTip>
 
+                                    <PillarCTA type="reservations" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

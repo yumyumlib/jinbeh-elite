@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Gyoza Frisco | Pan-Fried Pork Dumplings Appetizer",
+  title: "Gyoza Frisco | Pan-Fried Pork Dumplings Appetizer | Jinbeh",
   description: "Pan-fried pork gyoza dumplings at Jinbeh Frisco. 230 calories, 10g protein, crispy exterior, tender filling. Classic Japanese appetizer.",
   keywords: ["japanese appetizers frisco","gyoza dumplings frisco","best sushi frisco tx","pan-fried dumplings","pork gyoza","appetizer frisco","japanese starter"],
   openGraph: {

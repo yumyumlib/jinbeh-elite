@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
-import { Timeline, DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { Timeline, DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh",
@@ -89,7 +89,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>The Art of Hibachi Dining</h2>
 
       <p>
-        The art of hibachi dining offers a unique blend of culinary skill and entertainment that has delighted diners for generations. From the tantalizing aroma of sizzling ingredients to the mesmerizing performance of chefs, hibachi experiences are a feast for the senses. Whether you&apos;re a seasoned hibachi enthusiast or a curious newcomer, exploring the vast array of hibachi menus can be a rewarding culinary adventure. Each visit promises not only a delightful meal but also an experience filled with excitement and wonder, as skilled chefs transform simple ingredients into tantalizing dishes right before your eyes.
+        The art of hibachi dining offers a unique blend of culinary skill and entertainment that has delighted diners for generations. From the tantalizing aroma of sizzling ingredients to the mesmerizing performance of chefs, hibachi experiences are a feast for the senses. Whether you're a seasoned hibachi enthusiast or a curious newcomer, exploring the vast array of hibachi menus can be a rewarding culinary adventure. Each visit promises not only a delightful meal but also an experience filled with excitement and wonder, as skilled chefs transform simple ingredients into tantalizing dishes right before your eyes.
       </p>
 
       <DidYouKnow
@@ -327,7 +327,8 @@ export default function HibachiDiningExperiencePage() {
         Whether you're celebrating a special occasion or simply enjoying a night out, hibachi dining offers an experience that is as delightful as it is delicious. So gather your friends and family, and embark on a culinary adventure that promises both excellent food and a spectacular show. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> today. Or check out <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for your private events.
       </p>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
     </ArticleLayout>
   );
 }

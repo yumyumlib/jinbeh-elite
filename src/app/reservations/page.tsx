@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import locations from "@/data/locations.json";
 import { HeroSection, RevealSection, ShimmerCTA, ShinyBadge } from "@/components/MagicUI";
+import { MiniTestimonials } from "@/components/MiniTestimonials";
 
 export const metadata: Metadata = {
   title: "Make a Reservation | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -165,7 +166,7 @@ export default function ReservationsPage() {
                   Choose the reservation method that works best for you.
                 </p>
                 <p className="text-charcoal/60 text-sm">
-                  Walk-ins are always welcome! During peak times, we may offer seating in our sushi bar area for the best available experience.
+                  Walk-ins are always welcome! <span className="text-charcoal/80 font-medium">Pro tip:</span> Our sushi bar area is usually available for immediate seating — order anything from the full menu without the wait.
                 </p>
               </div>
             </RevealSection>
@@ -281,6 +282,9 @@ export default function ReservationsPage() {
                   </div>
 
                   <div className="space-y-3">
+                    <div className="text-center mb-1">
+                      <span className="text-xs font-medium text-charcoal/60 bg-warm-ivory py-1 px-3 rounded-full">✨ Free, no-hassle cancellation</span>
+                    </div>
                     <ShimmerCTA href={frisco.reservation.url} className="w-full text-lg">
                       Reserve on OpenTable
                     </ShimmerCTA>
@@ -290,6 +294,15 @@ export default function ReservationsPage() {
                     >
                       View Frisco Details
                     </Link>
+                    <div className="mt-4 pt-4 border-t border-stone-100/50">
+                      <MiniTestimonials
+                        intervalMs={5000}
+                        quotes={[
+                          { quote: "Every birthday we come here to celebrate!", author: "S.M." },
+                          { quote: "Best hibachi experience in Frisco.", author: "T.J." },
+                        ]}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -376,6 +389,9 @@ export default function ReservationsPage() {
                   </div>
 
                   <div className="space-y-3">
+                    <div className="text-center mb-1">
+                      <span className="text-xs font-medium text-charcoal/60 bg-warm-ivory py-1 px-3 rounded-full">✨ Free, no-hassle cancellation</span>
+                    </div>
                     <ShimmerCTA href={lewisville.reservation.url} className="w-full text-lg">
                       Reserve on OpenTable
                     </ShimmerCTA>
@@ -385,6 +401,15 @@ export default function ReservationsPage() {
                     >
                       View Lewisville Details
                     </Link>
+                    <div className="mt-4 pt-4 border-t border-stone-100/50">
+                      <MiniTestimonials
+                        intervalMs={5500}
+                        quotes={[
+                          { quote: "Our go-to place for weekly family dinners.", author: "L.D." },
+                          { quote: "The kids absolutely love the fire show.", author: "A.K." },
+                        ]}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -500,9 +525,12 @@ export default function ReservationsPage() {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
               Celebrating Something Special?
             </h2>
-            <p className="text-lg text-white/80 mb-10">
+            <p className="text-lg text-white/80 mb-8">
               Tell us about your birthday, anniversary, graduation, or celebration when you book.
               Our team will add special touches to make your experience unforgettable.
+            </p>
+            <p className="text-sm text-soft-gold/90 font-medium mb-10">
+              🎂 Thousands of birthdays celebrated since 1988 — let us make yours special.
             </p>
             <div className="grid sm:grid-cols-2 gap-6 mb-10">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur">

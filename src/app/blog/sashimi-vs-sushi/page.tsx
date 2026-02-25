@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, ComparisonTable , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sashimi vs Sushi: Key Differences Explained | Jinbeh",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-    { question: "What&apos;s the difference between sashimi and sushi?", answer: "Sashimi is sliced raw fish, no rice. Sushi combines rice with fish and vegetables. Sashimi focuses on pure fish flavor. Sushi is a complete dish." },
+    { question: "What's the difference between sashimi and sushi?", answer: "Sashimi is sliced raw fish, no rice. Sushi combines rice with fish and vegetables. Sashimi focuses on pure fish flavor. Sushi is a complete dish." },
     { question: "Is sashimi always raw?", answer: "Yes, traditional sashimi is raw. We use fresh and flavorful sushi-grade fish. Some cooked options exist, like shrimp sashimi. Our chefs ensure highest standards." },
-    { question: "Can I order sashimi without rice?", answer: "Yes! Sashimi is meant without rice. Served on ice with soy sauce, wasabi, and pickled ginger. It&apos;s lighter and protein-focused. Perfect for you." },
+    { question: "Can I order sashimi without rice?", answer: "Yes! Sashimi is meant without rice. Served on ice with soy sauce, wasabi, and pickled ginger. It's lighter and protein-focused. Perfect for you." },
     { question: "Is sashimi healthier than sushi?", answer: "Sashimi is higher protein, lower calories—no rice. About 30-50 calories per serving. Sushi rolls are 200-300 calories. Both are delicious and healthy! Sashimi offers a no-rice option perfect for those focusing on protein intake." },
     { question: "What fish is best for sashimi?", answer: "Premium sashimi-grade fish is essential. The best choices include fresh tuna (maguro), which offers a buttery texture and rich flavor; salmon (sake), known for its beautiful color and delicate taste; and hamachi (yellowtail), prized for its tender quality. At Jinbeh, we source only sashimi-grade fish from trusted suppliers, ensuring each slice meets strict freshness and quality standards." },
     { question: "Can you get sashimi at Jinbeh?", answer: "Absolutely! We serve premium fresh sashimi at both our Frisco and Lewisville locations. Our sashimi platters feature carefully selected sashimi-grade fish sliced expertly by our chefs. We offer individual selections or beautiful sashimi platters perfect for sharing. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to inquire about our daily sashimi selection." },
-    { question: "How do I eat sashimi?", answer: "Dip lightly in soy sauce mixed with wasabi. Eat in one bite. Experience the fish flavor fully. Our bartenders show you how if you&apos;re new to sashimi." },
+    { question: "How do I eat sashimi?", answer: "Dip lightly in soy sauce mixed with wasabi. Eat in one bite. Experience the fish flavor fully. Our bartenders show you how if you're new to sashimi." },
 ];
 
 const schemas = [
@@ -51,7 +51,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Frisco Sushi Menu", "item": "https://jinbeh.com/frisco/sushi-rolls" },
         { "@type": "ListItem", "position": 4, "name": "Sashimi vs Sushi: What's the Difference?" },
     ],
 };
@@ -80,7 +80,7 @@ export default function SashimiVsSushi() {
                         <span>/</span>
                         <Link href="/blog">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine">Sushi Guide</Link>
+                        <Link href="/frisco/sushi-rolls">Sushi Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">
                         🍣 Sushi Guide
@@ -109,48 +109,22 @@ export default function SashimiVsSushi() {
 
                             {/* Quick Comparison Table */}
                             <div className="my-12 bg-gradient-to-br from-accent-red/5 to-purple-50 p-6 rounded-2xl border-2 border-accent-red/20">
-                                <h2 className="text-2xl font-heading font-bold text-charcoal mb-6">Quick Comparison</h2>
-                                <table className="w-full text-charcoal/90">
-                                    <thead>
-                                        <tr className="border-b-2 border-accent-red/30">
-                                            <th className="text-left py-3 px-4 font-bold">Aspect</th>
-                                            <th className="text-left py-3 px-4 font-bold">Sashimi</th>
-                                            <th className="text-left py-3 px-4 font-bold">Sushi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr className="border-b border-accent-red/10">
-                                            <td className="py-4 px-4"><strong>Main Ingredient</strong></td>
-                                            <td className="py-4 px-4">Raw fish only</td>
-                                            <td className="py-4 px-4">Rice + fish/ingredients</td>
-                                        </tr>
-                                        <tr className="border-b border-accent-red/10 bg-white/50">
-                                            <td className="py-4 px-4"><strong>Preparation</strong></td>
-                                            <td className="py-4 px-4">Sliced thin pieces</td>
-                                            <td className="py-4 px-4">Rolled or pressed with rice</td>
-                                        </tr>
-                                        <tr className="border-b border-accent-red/10">
-                                            <td className="py-4 px-4"><strong>Typical Serving</strong></td>
-                                            <td className="py-4 px-4">6-12 slices on ice</td>
-                                            <td className="py-4 px-4">6-8 pieces per roll</td>
-                                        </tr>
-                                        <tr className="border-b border-accent-red/10 bg-white/50">
-                                            <td className="py-4 px-4"><strong>Calories (per serving)</strong></td>
-                                            <td className="py-4 px-4">30-50 cal</td>
-                                            <td className="py-4 px-4">200-300 cal</td>
-                                        </tr>
-                                        <tr className="border-b border-accent-red/10">
-                                            <td className="py-4 px-4"><strong>Best For</strong></td>
-                                            <td className="py-4 px-4">Pure fish flavor</td>
-                                            <td className="py-4 px-4">Complete meal</td>
-                                        </tr>
-                                        <tr className="bg-white/50">
-                                            <td className="py-4 px-4"><strong>Pairs With</strong></td>
-                                            <td className="py-4 px-4">Soy sauce, wasabi</td>
-                                            <td className="py-4 px-4">Soy sauce, pickled ginger</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <ComparisonTable
+                                    title="Quick Comparison"
+                                    columns={[
+                                        { header: "Aspect", accessorKey: "aspect" },
+                                        { header: "Sashimi", accessorKey: "sashimi" },
+                                        { header: "Sushi", accessorKey: "sushi" }
+                                    ]}
+                                    data={[
+                                        { aspect: "Main Ingredient", sashimi: "Raw fish only", sushi: "Rice + fish/ingredients" },
+                                        { aspect: "Preparation", sashimi: "Sliced thin pieces", sushi: "Rolled or pressed with rice" },
+                                        { aspect: "Typical Serving", sashimi: "6-12 slices on ice", sushi: "6-8 pieces per roll" },
+                                        { aspect: "Calories (per serving)", sashimi: "30-50 cal", sushi: "200-300 cal" },
+                                        { aspect: "Best For", sashimi: "Pure fish flavor", sushi: "Complete meal" },
+                                        { aspect: "Pairs With", sashimi: "Soy sauce, wasabi", sushi: "Soy sauce, pickled ginger" }
+                                    ]}
+                                />
                             </div>
 
                             {/* What is Sashimi Section */}
@@ -182,6 +156,14 @@ export default function SashimiVsSushi() {
                             </div>
 
                             {/* What is Sushi Section */}
+                            <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg">
+                                <Image
+                                    src="/images/instagram/sushi-feast-overhead.jpg"
+                                    alt="Overhead view of a massive sushi feast at Jinbeh"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                             <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                 🍜 What is Sushi?
                             </h2>
@@ -218,7 +200,7 @@ export default function SashimiVsSushi() {
                             </p>
                             <div className="bg-accent-red/10 border-2 border-accent-red/30 rounded-xl p-6 my-6">
                                 <p className="text-charcoal/90 font-semibold">
-                                    Think of it this way: All sashimi is raw fish, but not all raw fish is sashimi. And while sushi can include raw fish, it&apos;s fundamentally a rice dish. Some sushi uses cooked ingredients like shrimp tempura, imitation crab, or grilled tuna.
+                                    Think of it this way: All sashimi is raw fish, but not all raw fish is sashimi. And while sushi can include raw fish, it's fundamentally a rice dish. Some sushi uses cooked ingredients like shrimp tempura, imitation crab, or grilled tuna.
                                 </p>
                             </div>
 
@@ -282,6 +264,14 @@ export default function SashimiVsSushi() {
                             </div>
 
                             {/* How Jinbeh Serves Both */}
+                            <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg">
+                                <Image
+                                    src="/images/instagram/branded-sushi-plate.jpg"
+                                    alt="Jinbeh branded sushi plate with fresh rolls"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                             <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                 🏮 How Jinbeh Serves Both
                             </h2>
@@ -350,7 +340,7 @@ export default function SashimiVsSushi() {
                                         a: "Yes, traditional sashimi is always raw. The quality of the fish is paramount. However, some variations include cooked options like grilled or seared sashimi. At Jinbeh, our traditional sashimi features premium raw fish that meets strict food safety standards."
                                     },
                                     {
-                                        q: "Can I get sashimi if I&apos;m afraid of raw fish?",
+                                        q: "Can I get sashimi if I'm afraid of raw fish?",
                                         a: "Absolutely! Many customers prefer cooked options. Try our cooked shrimp sashimi, grilled fish varieties, or our extensive sushi selection which offers many cooked and vegetarian rolls."
                                     },
                                     {
@@ -358,7 +348,7 @@ export default function SashimiVsSushi() {
                                         a: "A typical sashimi appetizer serving is 6 pieces. For a light meal, order 12-18 pieces. Most customers enjoy combining sashimi with sushi rolls for a well-rounded experience."
                                     },
                                     {
-                                        q: "What&apos;s the best way to eat sashimi?",
+                                        q: "What's the best way to eat sashimi?",
                                         a: "Dip each slice lightly in soy sauce mixed with a tiny amount of wasabi, then eat in one bite. Use the pickled ginger between pieces to cleanse your palate."
                                     },
                                     {
@@ -446,7 +436,8 @@ export default function SashimiVsSushi() {
                                 </div>
                             </div>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         {/* Sidebar */}

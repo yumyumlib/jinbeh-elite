@@ -6,12 +6,13 @@ import PhotoGallery from "@/components/PhotoGallery";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import HeritageCounter from "@/components/HeritageCounter";
+import { MiniTestimonials } from "@/components/MiniTestimonials";
 import { CustomerVoiceSection } from "@/components/CustomerVoice";
 import locations from "@/data/locations.json";
 
 // Gallery items for Lewisville - Feb 2026 Professional Photoshoot
 const galleryItems = [
-  { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp", alt: "Jinbeh hibachi chef performing spectacular flame show at Lewisville TX teppanyaki grill", caption: "Spectacular Hibachi Flame Show" },
+  { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp", alt: "Jinbeh hibachi chef performing spectacular flame show at Lewisville TX teppanyaki grill", caption: "Spectacular Hibachi Flame Show" },
   { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp", alt: "Beautifully plated hibachi dinner with steak shrimp and fried rice at Jinbeh Lewisville TX", caption: "Signature Hibachi Dinner Plate" },
   { src: "/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp", alt: "Fresh sushi and sashimi presentation at Jinbeh Japanese Restaurant Lewisville TX", caption: "Fresh Sushi Presentation" },
   { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-1200w.webp", alt: "Jinbeh hibachi chef creating artistic heart-shaped fried rice at Lewisville TX location", caption: "Artistic Fried Rice Creation" },
@@ -44,7 +45,7 @@ const restaurantSchema = {
   "@type": "Restaurant",
   name: location.fullName,
   image: [
-    "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp",
+    "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp",
     "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp",
     "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp"
   ],
@@ -165,6 +166,8 @@ export default function LewisvillePage() {
       <Header location="lewisville" />
 
       <main id="main-content" className="min-h-screen">
+        <link rel="preload" href="/images/lewisville/IMG_1910.jpg" as="image" />
+
         {/* JSON-LD Schemas */}
         <script
           type="application/ld+json"
@@ -208,10 +211,7 @@ export default function LewisvillePage() {
               {location.neighborhood.description}
             </p>
             <p className="text-lg text-warm-ivory/80 max-w-2xl mx-auto mb-8">
-              Experience the exquisite flavors of Japan with our culinary offerings
-              that are sure to tantalize your taste buds. Indulge in perfectly crafted
-              hibachi steaks and delectable sushi that will transport you to the streets
-              of Japan. Come on in and let us take you on a culinary journey through Japan!
+              DFW&apos;s Premier Japanese, Hibachi, and Premium Sushi Experience. Join us in Lewisville for unforgettable tableside entertainment, masterfully crafted sushi rolls, and the highest quality ingredients in North Texas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <OpenTableWidget
@@ -247,7 +247,7 @@ export default function LewisvillePage() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-charcoal text-sm">4.4 Google</p>
+                  <p className="font-semibold text-charcoal text-sm">4.4 Google <span className="text-charcoal/50 font-normal">(885+ reviews)</span></p>
                 </div>
               </div>
 
@@ -347,33 +347,34 @@ export default function LewisvillePage() {
                   Menus
                 </h3>
                 <div className="space-y-3">
-                  <a
-                    href={location.menus.lunch || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/lewisville/menu#lunch"
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Lunch Menu</span>
-                    <span className="block text-sm text-charcoal/80">PDF Download</span>
-                  </a>
-                  <a
-                    href={location.menus.sushi || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    <span className="block text-sm text-charcoal/80">View Menu</span>
+                  </Link>
+                  <Link
+                    href="/lewisville/menu#dinner"
+                    className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
+                  >
+                    <span className="font-medium text-charcoal">Dinner Menu</span>
+                    <span className="block text-sm text-charcoal/80">View Menu</span>
+                  </Link>
+                  <Link
+                    href="/lewisville/menu#sushi"
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Sushi Menu</span>
-                    <span className="block text-sm text-charcoal/80">PDF Download</span>
-                  </a>
-                  <a
-                    href="/menus/lewisville-beverage-menu.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    <span className="block text-sm text-charcoal/80">View Menu</span>
+                  </Link>
+                  <Link
+                    href="/lewisville/cocktails"
                     className="block p-3 bg-warm-ivory rounded-lg hover:bg-warm-ivory-dark transition-colors"
                   >
                     <span className="font-medium text-charcoal">Beverage Menu</span>
                     <span className="block text-sm text-charcoal/80">Wine, Sake & Cocktails</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -433,33 +434,6 @@ export default function LewisvillePage() {
             </div>
           </div>
         </section>
-
-        {/* Customer Testimonials */}
-        <CustomerVoiceSection
-          heading="What Lewisville Guests Say"
-          subheading="Real reviews from our Lewisville dining community"
-          className="bg-white"
-          quotes={[
-            {
-              quote: "Excellent place for a great hibachi experience with very friendly staff. We always have a wonderful time here.",
-              author: "Lewisville Regular",
-              platform: "Google",
-              category: "Full Experience",
-            },
-            {
-              quote: "Watching the chef cook was a delight — the kids were mesmerized. Great food and entertainment combined.",
-              author: "Lewisville Family",
-              platform: "Google",
-              category: "Chef Show",
-            },
-            {
-              quote: "Best sushi and hibachi in the Lewisville area. Fresh fish, generous portions, and the staff treats you like family.",
-              author: "Local Sushi Lover",
-              platform: "Yelp",
-              category: "Best in Area",
-            },
-          ]}
-        />
 
         {/* Hours Section */}
         <section className="py-16 bg-white">
@@ -576,106 +550,6 @@ export default function LewisvillePage() {
           subtitle="Savor the sights of our fresh sushi, sizzling hibachi, and the famous fire show that makes every meal an experience."
           columns={3}
         />
-
-        {/* Testimonials Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-6">
-            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-4">
-              What Our Guests Say
-            </h2>
-            <p className="text-center text-charcoal/70 mb-12 max-w-2xl mx-auto">
-              Don&apos;t just take our word for it — hear from our Lewisville neighbors
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Testimonial 1 */}
-              <div className="bg-warm-ivory rounded-2xl p-6 shadow-md">
-                <div className="flex text-soft-gold mb-4" aria-hidden="true">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-charcoal/80 mb-4 italic">
-                  &quot;We drive from Flower Mound every time we want great hibachi. The fire show is always entertaining
-                  and the kids absolutely love it. Worth every penny!&quot;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-deep-indigo rounded-full flex items-center justify-center text-white font-semibold">
-                    D
-                  </div>
-                  <div>
-                    <p className="font-semibold text-charcoal">David L.</p>
-                    <p className="text-xs text-charcoal/80">Flower Mound • Google Review</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Testimonial 2 */}
-              <div className="bg-warm-ivory rounded-2xl p-6 shadow-md">
-                <div className="flex text-soft-gold mb-4" aria-hidden="true">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-charcoal/80 mb-4 italic">
-                  &quot;Best sushi in Lewisville, no question! Fresh fish, beautiful presentation, and the staff
-                  remembers us by name. This has been our go-to spot for years.&quot;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-accent-red rounded-full flex items-center justify-center text-white font-semibold">
-                    A
-                  </div>
-                  <div>
-                    <p className="font-semibold text-charcoal">Amanda K.</p>
-                    <p className="text-xs text-charcoal/80">Lewisville • Google Review</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Testimonial 3 */}
-              <div className="bg-warm-ivory rounded-2xl p-6 shadow-md">
-                <div className="flex text-soft-gold mb-4" aria-hidden="true">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-charcoal/80 mb-4 italic">
-                  &quot;Had my anniversary dinner here and it was perfect. The ambiance, the sake selection,
-                  the attentive service — Jinbeh made our celebration truly special.&quot;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-soft-gold rounded-full flex items-center justify-center text-charcoal font-semibold">
-                    R
-                  </div>
-                  <div>
-                    <p className="font-semibold text-charcoal">Robert M.</p>
-                    <p className="text-xs text-charcoal/80">Highland Village • Yelp Review</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-8">
-              <a
-                href="https://www.google.com/maps/place/Jinbeh+Japanese+Restaurant/@33.0358,-97.0107,17z"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-deep-indigo hover:text-accent-red transition-colors font-medium"
-              >
-                Read more reviews on Google
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
 
         {/* Popular Celebrations at Lewisville */}
         <section className="py-16 bg-warm-ivory">
@@ -828,7 +702,7 @@ export default function LewisvillePage() {
             Call Now
           </a>
         </div>
-      </main>
+      </main >
 
       <Footer />
     </>

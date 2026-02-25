@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Hibachi Catering DFW: Party & Event Services | Jinbeh",
@@ -66,7 +67,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://jinbeh.com/blog" },
         { "@type": "ListItem", "position": 4, "name": "Hibachi Catering in DFW: Events & Corporate Parties" },
     ],
 };
@@ -84,7 +85,7 @@ export default function HibachiCatering() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/best-of">Catering</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog">Catering</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-cedar-brown mb-4">🍴 Catering</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Hibachi Catering DFW</h1>
@@ -135,20 +136,16 @@ export default function HibachiCatering() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-3">
-                                {faqs.map((f, i) => (
-                                    <details key={i} className="group bg-warm-ivory rounded-xl">
-                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                        <div className="px-5 pb-5 text-charcoal/80">{f.answer}</div>
-                                    </details>
-                                ))}
+                                <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Catering at Our Restaurants</h2>
                             <p className="text-charcoal/80 mb-6">
-                                Can't host an event at home? Visit us at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> for private dining and <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> options. We also offer full hibachi catering for off-site events. Learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">difference between hibachi and teppanyaki</Link> and why Jinbeh is the best choice for your celebration.
+                                Can't host an event at home? Visit us at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville location</Link> for private dining and <Link href="/blog/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> options. We also offer full hibachi catering for off-site events. Learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">difference between hibachi and teppanyaki</Link> and why Jinbeh is the best choice for your celebration.
                             </p>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         <aside>

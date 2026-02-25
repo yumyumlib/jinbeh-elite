@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Best Salmon Sashimi Near Me: Top Picks & Tips | Jinbeh",
@@ -84,7 +85,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Frisco Sushi Menu", "item": "https://jinbeh.com/frisco/sushi-rolls" },
         { "@type": "ListItem", "position": 4, "name": "Best Salmon Sashimi Near Me: Fresh & Premium Quality" },
     ],
 };
@@ -119,7 +120,7 @@ export default function BestSalmonSashimi() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/frisco/sushi-rolls" className="hover:text-white">Frisco Sushi Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -211,6 +212,15 @@ export default function BestSalmonSashimi() {
                                         jinbehDish: "Salmon Sashimi — sliced to order at the sushi bar",
                                         jinbehDishLink: "/frisco/sashimi/salmon-sashimi"
                                     }} />
+
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
+                                        <Image
+                                            src="/images/instagram/lobster-spread-overhead.jpg"
+                                            alt="Overhead spread of fresh seafood and salmon sashimi at Jinbeh"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🛒 Where to Find Quality Salmon Sashimi
@@ -344,21 +354,12 @@ export default function BestSalmonSashimi() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

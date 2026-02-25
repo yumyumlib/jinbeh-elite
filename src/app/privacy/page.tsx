@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Privacy Policy | Jinbeh Japanese Restaurant",
   description: "Privacy policy for Jinbeh Japanese Restaurant. Learn how we collect, use, and protect your personal information.",
+  keywords: ["jinbeh privacy policy", "jinbeh data protection", "restaurant privacy policy"],
 };
 
 export default function PrivacyPolicyPage() {

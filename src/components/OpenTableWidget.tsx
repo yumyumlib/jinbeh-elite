@@ -10,8 +10,7 @@ interface OpenTableWidgetProps {
 
 export default function OpenTableWidget({
   restaurantId,
-  location,
-  className = '',
+className = '',
   buttonText = 'Reserve Your Table',
   variant = 'primary',
 }: OpenTableWidgetProps) {

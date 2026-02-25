@@ -1,0 +1,280 @@
+
+> jinbeh-elite@0.1.0 lint
+> eslint
+
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/audit-links.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix-categories.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix-cross-links.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix_entities.js
+  1:12  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  2:14  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  8:9   warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix_eslint.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix_links.js
+  1:12  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  2:14  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  9:9   warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix_quotes.js
+  1:12  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  2:14  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  8:9   warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/fix_spaced_entities.js
+  1:12  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  2:14  error    A `require()` style import is forbidden                                @typescript-eslint/no-require-imports
+  8:9   warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/run-audit.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:22  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/add-celebration-crosslinks.js
+  6:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  7:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/blog-cluster-crosslinks.js
+  5:12  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+  6:14  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+  7:7   warning  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  7:14  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/dist/generate-menu-pages.js
+  462:0  error  Parsing error: Unterminated template literal
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/fix-eslint-entities-2.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/fix-eslint-entities.js
+   1:12  error    A `require()` style import is forbidden               @typescript-eslint/no-require-imports
+   2:14  error    A `require()` style import is forbidden               @typescript-eslint/no-require-imports
+  34:11  warning  'apostropheRegex' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/fix-menu-emojis.mjs
+  59:7  warning  'imagePattern' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/fix-og-tags.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  5:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/generate-category-pages.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  4:19  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/generate-pages.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  4:19  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/list-needs-work.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/seo-harden.js
+   7:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+   8:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  72:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/seo-inject-breadcrumb.js
+  6:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  7:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/update-articles.js
+   1:12  error    A `require()` style import is forbidden               @typescript-eslint/no-require-imports
+   2:14  error    A `require()` style import is forbidden               @typescript-eslint/no-require-imports
+   4:22  error    A `require()` style import is forbidden               @typescript-eslint/no-require-imports
+  25:9   warning  'originalContent' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/scripts/verify-links.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/about/page.tsx
+  2:25  warning  'HeroSection' is defined but never used           @typescript-eslint/no-unused-vars
+  2:86  warning  'AnimatedGradientText' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/api/vip-club/route.ts
+  56:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/bar/page.tsx
+  2:10  warning  'HeroSection' is defined but never used     @typescript-eslint/no-unused-vars
+  2:38  warning  'CuisineRotator' is defined but never used  @typescript-eslint/no-unused-vars
+  6:8   warning  'Image' is defined but never used           @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/baby-shower-venues/page.tsx
+  59:48  warning  'params' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/beginner-sushi-tips/page.tsx
+  4:8  warning  'RelatedArticles' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/best-hibachi-dallas/page.tsx
+  3:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/bridal-shower-venues/page.tsx
+  59:50  warning  'params' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/hibachi-birthday-party-ideas/page.tsx
+  3:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/hibachi-calories-guide/page.tsx
+   3:8  warning  'Image' is defined but never used            @typescript-eslint/no-unused-vars
+   5:8  warning  'RelatedArticles' is defined but never used  @typescript-eslint/no-unused-vars
+  65:7  warning  'cta' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/hibachi-catering-dfw/page.tsx
+  2:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/hibachi-lunch-ideas/page.tsx
+  59:50  warning  'params' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/hibachi-vs-teppanyaki-explained/page.tsx
+  3:8  warning  'Image' is defined but never used            @typescript-eslint/no-unused-vars
+  5:8  warning  'RelatedArticles' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/how-to-eat-sushi-guide/page.tsx
+  2:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/jinbeh-catering-services/page.tsx
+  3:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/jinbeh-gift-cards-guide/page.tsx
+  3:8  warning  'Image' is defined but never used            @typescript-eslint/no-unused-vars
+  5:8  warning  'RelatedArticles' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/offsite-hibachi-catering/page.tsx
+   3:8   warning  'Image' is defined but never used   @typescript-eslint/no-unused-vars
+  66:54  warning  'params' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/pickleball-restaurants-lewisville/page.tsx
+  3:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/sake-pairing-guide/page.tsx
+  2:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/blog/types-of-sake-explained/page.tsx
+  2:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/careers/page.tsx
+  6:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/catering/page.tsx
+  2:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/catering/party/page.tsx
+  4:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/celebrations/rehearsal-dinner/page.tsx
+  3:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/events/page.tsx
+  2:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/frisco/kids-menu/page.tsx
+  5:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/frisco/menu/page.tsx
+  5:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/frisco/specials/page.tsx
+  4:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/gallery/page.tsx
+    2:25  warning  'HeroSection' is defined but never used          @typescript-eslint/no-unused-vars
+  241:7   warning  'categories' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/happy-hour/page.tsx
+  2:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/lewisville/kids-menu/page.tsx
+  5:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/lewisville/menu/page.tsx
+  5:8  warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/lewisville/specials/page.tsx
+  4:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/lunch-specials/page.tsx
+  7:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/private-dining/page.tsx
+  6:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/sitemap.ts
+    2:8   warning  'locations' is defined but never used     @typescript-eslint/no-unused-vars
+  130:39  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  139:35  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/specials/page.tsx
+  7:10  warning  'HeroSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/app/takeout/page.tsx
+   7:10  warning  'HeroSection' is defined but never used               @typescript-eslint/no-unused-vars
+  39:7   warning  'orderingMethods' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/CountUp.tsx
+  30:13  error    Error: Cannot access variable before it is declared
+
+`animateCount` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/CountUp.tsx:30:13
+  28 |           if (entry.isIntersecting && !hasAnimated) {
+  29 |             setHasAnimated(true);
+> 30 |             animateCount();
+     |             ^^^^^^^^^^^^ `animateCount` accessed before it is declared
+  31 |           }
+  32 |         });
+  33 |       },
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/CountUp.tsx:44:3
+  42 |   }, [hasAnimated]);
+  43 |
+> 44 |   const animateCount = () => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 45 |     const startTime = performance.now();
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 46 |     const startValue = 0;
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 63 |     requestAnimationFrame(updateCount);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 64 |   };
+     | ^^^^^ `animateCount` is declared here
+  65 |
+  66 |   return (
+  67 |     <span ref={ref} className={className}>  react-hooks/immutability
+  42:6   warning  React Hook useEffect has a missing dependency: 'animateCount'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react-hooks/exhaustive-deps
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/Footer.tsx
+  4:8  warning  'blogData' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/Header.tsx
+  13:23  warning  'NavItem' is defined but never used          @typescript-eslint/no-unused-vars
+  13:32  warning  'DropdownItem' is defined but never used     @typescript-eslint/no-unused-vars
+  13:46  warning  'MegaMenuSection' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/OpenTableWidget.tsx
+  13:3  warning  'location' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/lighthaven/Documents/jinbeh-elite-phase1/src/components/VipClubForm.tsx
+  30:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 114 problems (53 errors, 61 warnings)
+

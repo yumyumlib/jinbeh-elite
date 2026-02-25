@@ -377,8 +377,8 @@ export default function LunarNewYearPage() {
             <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
               <Link href="/frisco/sushi-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Frisco Sushi</Link>
               <Link href="/lewisville/sushi-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Lewisville Sushi</Link>
-              <Link href="/menu/sashimi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi</Link>
-              <Link href="/menu/sake" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Premium Sake</Link>
+              <Link href="/menu" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi</Link>
+              <Link href="/frisco/cocktails" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Premium Sake</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
               <Link href="/nearby/carrollton" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
@@ -402,7 +402,7 @@ export default function LunarNewYearPage() {
             </Link>
           </div>
         </section>
-      
+
         {/* Related Blog Articles */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-6">
@@ -428,7 +428,7 @@ export default function LunarNewYearPage() {
           </div>
         </section>
 
-        </main>
+      </main>
       <Footer />
     </>
   );

@@ -175,6 +175,9 @@ export default function BirthdayPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
+            <p className="mt-6 text-warm-ivory/70 text-sm font-medium">
+              🎂 Thousands of birthdays celebrated since 1988
+            </p>
           </div>
         </section>
 

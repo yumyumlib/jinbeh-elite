@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Best Restaurants Near Stonebriar Mall Frisco TX | Jinbeh",
@@ -63,25 +64,25 @@ const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
+        "@type": " Question ",
+name: faq.question,
+    acceptedAnswer: {
+            " @type": " Answer ",
+    text: faq.answer,
         },
     })),
 };
 
 
 const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-        { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
-    ],
+    " @context": " https://schema.org",
+    " @type": " BreadcrumbList ",
+    " itemListElement ": [
+    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
+    { " @type ": " ListItem ", " position ": 4, " name ": " Best Restaurants Near Stonebriar Mall Frisco TX " },
+],
 };
 
 export default function BestRestaurantsStonebriar() {
@@ -108,7 +109,7 @@ export default function BestRestaurantsStonebriar() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Local Guides</Link>
+                        <Link href="/#locations" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -137,17 +138,17 @@ export default function BestRestaurantsStonebriar() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Done shopping at Stonebriar Centre?</strong> You&apos;re in the heart of Frisco&apos;s
-                                        best dining district. Whether you&apos;re craving sizzling <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link>, fresh sushi, wood-fired pizza, or a perfectly grilled steak,
-                                        the restaurants around Stonebriar Mall cater to every taste and occasion. Here&apos;s our
+                                        <strong>Done shopping at Stonebriar Centre?</strong> You're in the heart of Frisco's
+                                        best dining district. Whether you're craving sizzling <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link>, fresh sushi, wood-fired pizza, or a perfectly grilled steak,
+                                        the restaurants around Stonebriar Mall cater to every taste and occasion. Here's our
                                         insider guide to the best spots within minutes of the mall.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            &quot;We&apos;ve been feeding Frisco families since 1988—long before Stonebriar
-                                            was even built. Our guests tell us we&apos;re &apos;better than the chains&apos; because
-                                            every meal here is personal. That&apos;s the Jinbeh difference.&quot;
+                                            "We've been feeding Frisco families since 1988—long before Stonebriar
+                                            was even built. Our guests tell us we're 'better than the chains' because
+                                            every meal here is personal. That's the Jinbeh difference."
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
@@ -162,9 +163,9 @@ export default function BestRestaurantsStonebriar() {
                                     </h2>
 
                                     <p>
-                                        The Preston Road corridor around Stonebriar Centre has evolved into one of North Texas&apos;s most
+                                        The Preston Road corridor around Stonebriar Centre has evolved into one of North Texas's most
                                         vibrant restaurant scenes. From family-owned gems with decades of heritage to trendy newcomers,
-                                        you&apos;ll find everything from authentic <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki grilling</Link> to creative Italian
+                                        you'll find everything from authentic <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki grilling</Link> to creative Italian
                                         and upscale American cuisine—all within a short drive of the mall.
                                     </p>
 
@@ -212,7 +213,7 @@ export default function BestRestaurantsStonebriar() {
                                                 <td className="p-4">3 min</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Perry&apos;s Steakhouse</td>
+                                                <td className="p-4 font-semibold text-charcoal">Perry's Steakhouse</td>
                                                 <td className="p-4">American Steakhouse</td>
                                                 <td className="p-4">Fine dining, business meals</td>
                                                 <td className="p-4">$$$$</td>
@@ -240,14 +241,14 @@ export default function BestRestaurantsStonebriar() {
                                                 <td className="p-4">8 min</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Gloria&apos;s Latin Cuisine</td>
+                                                <td className="p-4 font-semibold text-charcoal">Gloria's Latin Cuisine</td>
                                                 <td className="p-4">Salvadoran / Tex-Mex</td>
                                                 <td className="p-4">Lively atmosphere, cocktails</td>
                                                 <td className="p-4">$$</td>
                                                 <td className="p-4">6 min</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 font-semibold text-charcoal">Uncle Julio&apos;s</td>
+                                                <td className="p-4 font-semibold text-charcoal">Uncle Julio's</td>
                                                 <td className="p-4">Mexican</td>
                                                 <td className="p-4">Fajitas, margaritas, family dining</td>
                                                 <td className="p-4">$$</td>
@@ -273,9 +274,9 @@ export default function BestRestaurantsStonebriar() {
                                                 🏯 Jinbeh: The Local Favorite Since 1988
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                While the chains come and go, Jinbeh has been the Stonebriar area&apos;s go-to Japanese
-                                                restaurant for over 37 years. Guests consistently rave about our &quot;fantastic service,&quot;
-                                                call our crab rangoons &quot;the best I&apos;ve ever had,&quot; and love that we accommodate
+                                                While the chains come and go, Jinbeh has been the Stonebriar area's go-to Japanese
+                                                restaurant for over 37 years. Guests consistently rave about our "fantastic service,"
+                                                call our crab rangoons "the best I've ever had," and love that we accommodate
                                                 allergies with care. Unlike corporate chains with long waits and impersonal service,
                                                 every meal at Jinbeh is personal.
                                             </p>
@@ -313,18 +314,18 @@ export default function BestRestaurantsStonebriar() {
                                     </h2>
 
                                     <p>
-                                        With so many options near Stonebriar, here&apos;s how to pick the right spot for your outing:
+                                        With so many options near Stonebriar, here's how to pick the right spot for your outing:
                                     </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 my-8">
                                         <h3 className="font-heading font-bold text-lg text-charcoal mb-4">🎯 Quick Decision Guide:</h3>
                                         <ul className="space-y-2 text-charcoal/80">
                                             <li>🎉 <strong>Celebrating?</strong> → Jinbeh (hibachi chef show + group seating)</li>
-                                            <li>🥩 <strong>Upscale steak dinner?</strong> → Perry&apos;s Steakhouse</li>
-                                            <li>🍕 <strong>Casual with kids?</strong> → Cane Rosso or Uncle Julio&apos;s</li>
+                                            <li>🥩 <strong>Upscale steak dinner?</strong> → Perry's Steakhouse</li>
+                                            <li>🍕 <strong>Casual with kids?</strong> → Cane Rosso or Uncle Julio's</li>
                                             <li>🍣 <strong>Fresh sushi craving?</strong> → <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">Jinbeh sushi bar</Link></li>
-                                            <li>🌍 <strong>Something different?</strong> → Platia Greek or Gloria&apos;s Latin</li>
-                                            <li>🍰 <strong>Can&apos;t decide?</strong> → The Cheesecake Factory (200+ menu items)</li>
+                                            <li>🌍 <strong>Something different?</strong> → Platia Greek or Gloria's Latin</li>
+                                            <li>🍰 <strong>Can't decide?</strong> → The Cheesecake Factory (200+ menu items)</li>
                                         </ul>
                                     </div>
 
@@ -333,16 +334,16 @@ export default function BestRestaurantsStonebriar() {
                                     </h2>
 
                                     <p>
-                                        Don&apos;t just take our word for it. Here&apos;s what real guests say about dining near Stonebriar:
+                                        Don't just take our word for it. Here's what real guests say about dining near Stonebriar:
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">&quot;The Filet and Lobster Tail at Jinbeh are must-tries. Fantastic service every single time.&quot;</p>
+                                            <p className="text-charcoal/80 italic mb-3">"The Filet and Lobster Tail at Jinbeh are must-tries. Fantastic service every single time."</p>
                                             <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Frisco</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">&quot;Best crab rangoons I&apos;ve ever had. The kids love watching the hibachi chef—it&apos;s dinner and a show!&quot;</p>
+                                            <p className="text-charcoal/80 italic mb-3">"Best crab rangoons I've ever had. The kids love watching the hibachi chef—it's dinner and a show!"</p>
                                             <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Frisco</p>
                                         </div>
                                     </div>
@@ -353,8 +354,8 @@ export default function BestRestaurantsStonebriar() {
 
                                     <ul className="space-y-2">
                                         <li><strong>Make reservations for weekends</strong> — The popular spots fill up fast, especially Friday and Saturday evenings.</li>
-                                        <li><strong>Try lunch specials</strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh&apos;s lunch menu</Link>, offer the same quality at lower prices.</li>
-                                        <li><strong>Happy hour deals</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh&apos;s happy hour</Link> or other spots for discounted drinks and appetizers before dinner.</li>
+                                        <li><strong>Try lunch specials</strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
+                                        <li><strong>Happy hour deals</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> or other spots for discounted drinks and appetizers before dinner.</li>
                                         <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
                                     </ul>
 
@@ -368,21 +369,12 @@ export default function BestRestaurantsStonebriar() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
-                                <LocationCTA location="frisco" />
+                                <PillarCTA type="hub" />
+                                    <LocationCTA location="frisco" />
                             </div>
                         </article>
 

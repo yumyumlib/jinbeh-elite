@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh",
@@ -95,7 +95,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Types of Sake Explained: Complete Guide" },
     ],
 };
@@ -949,7 +949,8 @@ export default function TypesOfSakeExplained() {
                                             <strong>Sake exploration tip from our team:</strong> The fastest way to discover your sake preference is to order a "sake flight" during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>—you'll taste 3-4 varieties side-by-side and immediately understand the differences between Junmai, Ginjo, and Daiginjo. Ask our bartender to arrange them light-to-bold for the best tasting experience. Temperature matters enormously: try the same Junmai both warm and chilled to experience how it transforms. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                         </ProTip>
 
-                                        <LocationCTA location="both" />
+                                        <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                                     </div>
 
                                     <p className="text-charcoal/80 text-sm mt-12 pt-8 border-t border-warm-ivory-dark">

@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "How to Eat Sushi: Complete Etiquette & Eating Tips Guide | Jinbeh",
@@ -108,7 +109,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/menu" },
         { "@type": "ListItem", "position": 4, "name": "How to Eat Sushi: The Complete Guide" },
     ],
 };
@@ -190,7 +191,7 @@ export default function HowToEatSushi() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/menu" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -234,7 +235,7 @@ export default function HowToEatSushi() {
                                     </div>
 
                                     <DidYouKnow
-                                        fact='The word "sushi" doesn’t mean raw fish — it refers to the seasoned vinegared rice. "Su" means vinegar and "shi" comes from "meshi" (rice). You can have sushi without any raw fish at all.'
+                                        fact={`The word "sushi" doesn't mean raw fish — it refers to the seasoned vinegared rice. "Su" means vinegar and "shi" comes from "meshi" (rice). You can have sushi without any raw fish at all.`}
                                         source="Japanese Etymology"
                                     />
 
@@ -760,7 +761,7 @@ export default function HowToEatSushi() {
                                 </div>
 
                                 <ProTip variant="insider">
-                                    <strong>First time at Jinbeh?</strong> Regulars swear by the sushi bar — you get chef interaction and the freshest cuts. Ask what's good that day; one recent reviewer called the experience &quot;delightful&quot; and said the Volcano Roll and Spider Roll are must-tries. Don't be shy about being a beginner — our chefs love guiding newcomers. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a seat at the bar →</Link>
+                                    <strong>First time at Jinbeh?</strong> Regulars swear by the sushi bar — you get chef interaction and the freshest cuts. Ask what's good that day; one recent reviewer called the experience "delightful" and said the Volcano Roll and Spider Roll are must-tries. Don't be shy about being a beginner — our chefs love guiding newcomers. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a seat at the bar →</Link>
                                 </ProTip>
 
                                 {/* FAQ Section */}
@@ -768,17 +769,7 @@ export default function HowToEatSushi() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -824,7 +815,8 @@ export default function HowToEatSushi() {
 
                             </div>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         {/* Sidebar */}

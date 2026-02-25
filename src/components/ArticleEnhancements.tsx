@@ -460,3 +460,160 @@ export function MenuItemCard({ item }: { item: MenuItemInfo }) {
         </div>
     );
 }
+
+/* ─────────────────────────────────────────────
+   11. ComparisonTable — Structured data for scannability
+   ───────────────────────────────────────────── */
+interface TableColumn {
+    header: string;
+    accessorKey: string;
+}
+
+interface TableProps {
+    title?: string;
+    description?: string;
+    columns: TableColumn[];
+    data: Record<string, any>[];
+}
+
+export function ComparisonTable({ title, description, columns, data }: TableProps) {
+    return (
+        <div className="my-10">
+            {(title || description) && (
+                <div className="mb-6">
+                    {title && <h3 className="text-2xl font-heading font-bold text-charcoal mb-2">{title}</h3>}
+                    {description && <p className="text-charcoal/70">{description}</p>}
+                </div>
+            )}
+            <div className="overflow-x-auto rounded-xl border border-warm-ivory bg-white shadow-sm">
+                <table className="w-full text-left border-collapse min-w-[600px]">
+                    <thead>
+                        <tr className="bg-warm-ivory/50 text-charcoal font-heading">
+                            {columns.map((col, i) => (
+                                <th key={i} className="p-4 border-b border-warm-ivory font-bold">{col.header}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody className="divide-y divide-warm-ivory">
+                        {data.map((row, i) => (
+                            <tr key={i} className="hover:bg-warm-ivory/30 transition-colors">
+                                {columns.map((col, j) => (
+                                    <td key={j} className="p-4 text-charcoal/80">
+                                        {row[col.accessorKey]}
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+}
+
+/* ─────────────────────────────────────────────
+   12. PillarCTA — Contextual conversion link
+   ───────────────────────────────────────────── */
+interface PillarCTAProps {
+    type: "reservations" | "catering" | "vip" | "hub";
+    title?: string;
+    description?: string;
+    linkText?: string;
+    href?: string;
+    image?: string;
+}
+
+export function PillarCTA({ type, title, description, linkText, href, image }: PillarCTAProps) {
+    const defaultContent = {
+        reservations: {
+            title: "Experience Jinbeh Elite",
+            description: "Ready to taste the freshest sushi in DFW? Reserve your table at our Frisco or Lewisville locations for an unforgettable dining experience.",
+            linkText: "Book Your Table",
+            href: "/reservations",
+            icon: "🥢",
+            bgClass: "from-accent-red/10 to-charcoal/5",
+            borderClass: "border-accent-red/30"
+        },
+        catering: {
+            title: "Elevate Your Next Event",
+            description: "Bring the theater of hibachi and the elegance of premium sushi to your next private party or corporate gathering.",
+            linkText: "Explore Catering Options",
+            href: "/catering",
+            icon: "🍱",
+            bgClass: "from-soft-gold/10 to-amber-50",
+            borderClass: "border-soft-gold/30"
+        },
+        vip: {
+            title: "Join the Jinbeh VIP Club",
+            description: "Unlock exclusive birthday rewards, seasonal menu previews, and priority seating by joining our elite dining club.",
+            linkText: "Become a VIP",
+            href: "/vip",
+            icon: "✨",
+            bgClass: "from-deep-indigo/10 to-charcoal/5",
+            borderClass: "border-deep-indigo/30"
+        },
+        hub: {
+            title: "Explore Our Locations",
+            description: "Discover the unique atmosphere and specialized menus at our premier DFW dining destinations.",
+            linkText: "View Locations",
+            href: "/#locations",
+            icon: "🏛️",
+            bgClass: "from-warm-ivory to-white",
+            borderClass: "border-warm-ivory-dark"
+        }
+    };
+
+    const content = defaultContent[type];
+    const finalTitle = title || content.title;
+    const finalDesc = description || content.description;
+    const finalLink = href || content.href;
+    const finalLinkText = linkText || content.linkText;
+
+    // Structured Data for the CTA link (improves contextual relevance for search engines)
+    const ctaSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPageElement",
+        "name": finalTitle,
+        "description": finalDesc,
+        "url": `https://jinbeh.com${finalLink}`
+    };
+
+    return (
+        <aside className={`not-prose my-12 bg-gradient-to-br ${content.bgClass} border-2 ${content.borderClass} rounded-2xl overflow-hidden shadow-md flex flex-col sm:flex-row items-center w-full`}>
+            {/* SEO Structured Data */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ctaSchema) }} />
+
+            {/* Optional Image */}
+            {image && (
+                <div className="relative w-full sm:w-1/3 aspect-[4/3] sm:aspect-auto sm:h-full min-h-[200px] flex-shrink-0">
+                    <Image src={image} alt={finalTitle} fill className="object-cover" sizes="(max-width: 640px) 100vw, 33vw" />
+                </div>
+            )}
+
+            {/* Content Area */}
+            <div className="p-6 md:p-8 flex-1 w-full text-center sm:text-left flex flex-col justify-center">
+                <div className="flex items-center justify-center sm:justify-start gap-3 mb-3">
+                    <span className="text-3xl" aria-hidden="true">{content.icon}</span>
+                    <h3 className="text-2xl font-heading font-bold text-charcoal leading-tight">
+                        {finalTitle}
+                    </h3>
+                </div>
+                <p className="text-charcoal/80 mb-6 max-w-xl text-base leading-relaxed">
+                    {finalDesc}
+                </p>
+                <div className="mt-auto">
+                    <Link
+                        href={finalLink}
+                        className="inline-flex items-center justify-center px-6 py-3 bg-charcoal text-white font-semibold rounded-xl hover:bg-accent-red hover:shadow-lg transition-all duration-300 group w-full sm:w-auto text-sm sm:text-base border border-charcoal/20"
+                        title={finalLinkText} // Added explicit title attribute for SEO
+                    >
+                        {finalLinkText}
+                        <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </Link>
+                </div>
+            </div>
+        </aside>
+    );
+}

@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Unique Adult Birthday Party Ideas & Themes | Jinbeh Events",
@@ -80,7 +82,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 3, "name": "Private Events", "item": "https://jinbeh.com/private-dining" },
         { "@type": "ListItem", "position": 4, "name": "Unique Adult Birthday Party Ideas & Themes" },
     ],
 };
@@ -109,7 +111,7 @@ export default function AdultBirthdayPartyIdeas() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/celebrations" className="hover:text-white">Celebrations</Link>
+                        <Link href="/celebrations" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -329,20 +331,28 @@ export default function AdultBirthdayPartyIdeas() {
                                         </div>
                                     </div>
 
-                                    {/* Image Gallery */}
+                                    
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                                        <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi party" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/7-C060324-6447.jpg" alt="Party celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/13-C060324-6582.jpg" alt="Themed party" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday gathering" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
                                     </div>
                                 </div>
 
@@ -351,17 +361,7 @@ export default function AdultBirthdayPartyIdeas() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -370,6 +370,7 @@ export default function AdultBirthdayPartyIdeas() {
                                         <strong>Birthday celebration insider tip:</strong> Book your hibachi birthday at Jinbeh for the ultimate adults-only experience. Start with sake cocktails at the bar during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, then move to the hibachi table where your chef becomes the entertainment. For milestone birthdays (30th, 40th, 50th), our team arranges special touches — just mention it when you call. Groups of 8+ should book 2-3 weeks ahead for weekend dates. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
                                     </ProTip>
 
+                                    <PillarCTA type="catering" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

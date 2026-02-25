@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Accessibility | Jinbeh Japanese Restaurant",
   description: "Accessibility statement for Jinbeh Japanese Restaurant. We are committed to ensuring our website and restaurants are accessible to everyone.",
+  keywords: ["jinbeh accessibility", "accessible restaurant frisco", "wheelchair accessible japanese restaurant", "accessible dining lewisville"],
 };
 
 export default function AccessibilityPage() {

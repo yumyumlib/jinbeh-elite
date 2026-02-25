@@ -373,7 +373,7 @@ export default function FathersDayPage() {
             <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto text-sm">
               <Link href="/frisco/hibachi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Frisco Hibachi</Link>
               <Link href="/menu/steak" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Steak</Link>
-              <Link href="/menu/sake" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sake & Beer</Link>
+              <Link href="/frisco/cocktails" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sake & Beer</Link>
               <Link href="/private-dining" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Private Dining</Link>
               <Link href="/gift-cards" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
@@ -398,7 +398,7 @@ export default function FathersDayPage() {
             </Link>
           </div>
         </section>
-      
+
         {/* Related Blog Articles */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-6">
@@ -424,7 +424,7 @@ export default function FathersDayPage() {
           </div>
         </section>
 
-        </main>
+      </main>
       <Footer />
     </>
   );

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, MenuItemCard } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Beginner Sushi Tips: Easy Homemade Sushi Guide | Jinbeh",
@@ -333,7 +333,8 @@ export default function BeginnerSushiTipsPage() {
           Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create—perfect or not!
         </p>
 
-        <LocationCTA location="both" />
+        <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
       </ArticleLayout>
     </>
   );

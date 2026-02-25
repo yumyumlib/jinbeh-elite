@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Lewisville Japanese Restaurant",
-  description: "Explore Jinbeh Lewisville's sushi rolls menu. Craftsmanship, freshness, artistry. 14 delicious options from Dragon Roll to Yellowtail Jalapeño Roll. Easy access from I-35E, near Vista Ridge Mall.",
+  description: "Discover Jinbeh Lewisville's fresh sushi rolls including Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Premium ingredients, hand-crafted daily near Vista Ridge Mall.s menu. Craftsmanship, freshness, artistry. 14 delicious options from Dragon Roll to Yellowtail Jalapeño Roll. Easy access from I-35E, near Vista Ridge Mall.",
   keywords: ["sushi rolls lewisville", "best sushi rolls lewisville", "sushi rolls menu lewisville", "jinbeh sushi rolls", "japanese sushi rolls lewisville", "sushi rolls", "specialty rolls", "maki", "uramaki"],
   openGraph: {
     title: "Sushi Rolls Menu | Jinbeh Lewisville",
@@ -166,6 +166,36 @@ const menuSchema = {
           "price": "16.95",
           "priceCurrency": "USD"
         }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Sunshine Roll",
+        "description": "House specialty roll with fresh ingredients",
+        "offers": {
+          "@type": "Offer",
+          "price": "16.95",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Hot Mama Roll",
+        "description": "Spicy specialty roll bursting with flavor",
+        "offers": {
+          "@type": "Offer",
+          "price": "16.95",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "Back 9 \"Dallas\" Roll",
+        "description": "Signature local favorite roll",
+        "offers": {
+          "@type": "Offer",
+          "price": "17.95",
+          "priceCurrency": "USD"
+        }
       }
     ]
   }
@@ -180,7 +210,7 @@ const faqSchema = {
       "name": "What sushi rolls does Jinbeh Lewisville serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jinbeh Lewisville offers an extensive sushi rolls menu with 14 options including favorites like Dragon Roll, Rainbow Roll, Spider Roll, and more. All prepared fresh by our skilled chefs."
+        "text": "Jinbeh Lewisville offers an extensive sushi rolls menu with 17 options including favorites like Dragon Roll, Rainbow Roll, Spider Roll, and more. All prepared fresh by our skilled chefs."
       }
     },
     {
@@ -258,7 +288,7 @@ export default function SushiRollsLewisvillePage() {
                 Sushi Rolls
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
-                Craftsmanship, freshness, artistry. Explore our 14 sushi rolls options,
+                Craftsmanship, freshness, artistry. Explore our 17 sushi rolls options,
                 each crafted with care and the finest ingredients.
               </p>
               <Link
@@ -279,7 +309,7 @@ export default function SushiRollsLewisvillePage() {
                 Our Sushi Rolls Selection
               </h2>
               <p className="text-charcoal/70 max-w-2xl mx-auto">
-                14 options ranging from 9.95 to 19.95
+                17 options ranging from 9.95 to 19.95
               </p>
             </div>
 
@@ -306,6 +336,84 @@ export default function SushiRollsLewisvillePage() {
                   </p>
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold text-accent-red">$16.95</span>
+                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="/lewisville/sushi-rolls/sunshine-roll"
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Sunshine_Roll.jpg"
+                    alt="Sunshine Roll"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
+                    Sunshine Roll
+                  </h3>
+                  <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
+                    House specialty roll with fresh ingredients
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-accent-red">$16.95</span>
+                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="/lewisville/sushi-rolls/hot-mama-roll"
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Hot_Mama_Roll.jpg"
+                    alt="Hot Mama Roll"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
+                    Hot Mama Roll
+                  </h3>
+                  <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
+                    Spicy specialty roll bursting with flavor
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-accent-red">$16.95</span>
+                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="/lewisville/sushi-rolls/back-9-dallas-roll"
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/menu-photos/Back_9_Dallas_Roll.jpg"
+                    alt="Back 9 Dallas Roll"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
+                    Back 9 &quot;Dallas&quot; Roll
+                  </h3>
+                  <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
+                    Signature local favorite roll
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-accent-red">$17.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -390,8 +498,9 @@ export default function SushiRollsLewisvillePage() {
               </Link>
               <Link
                 href="/lewisville/sushi-rolls/volcano-roll"
-                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative"
               >
+                <div className="absolute top-3 left-3 z-10 bg-accent-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">🔥 Most Popular</div>
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Volcano_Roll.jpg"
@@ -468,8 +577,9 @@ export default function SushiRollsLewisvillePage() {
               </Link>
               <Link
                 href="/lewisville/sushi-rolls/ahi-tower"
-                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative"
               >
+                <div className="absolute top-3 left-3 z-10 bg-soft-gold text-charcoal text-xs font-bold px-3 py-1 rounded-full shadow-md">👨‍🍳 Chef&apos;s Pick</div>
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Ahi_Tower.jpg"

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Hibachi Menu | Jinbeh Lewisville Japanese Restaurant",
-  description: "Explore Jinbeh Lewisville's hibachi menu. Entertainment, fire show, family fun, onion volcano. 14 delicious options from Filet Mignon to Imperial Dinner. Easy access from I-35E, near Vista Ridge Mall.",
+  description: "Explore Jinbeh Lewisville's hibachi menu featuring 14 teppanyaki options. Entertainment, fire show, family fun, and onion volcano. From Filet Mignon to Imperial Dinner near Vista Ridge Mall. menu. Entertainment, fire show, family fun, onion volcano. 14 delicious options from Filet Mignon to Imperial Dinner. Easy access from I-35E, near Vista Ridge Mall.",
   keywords: ["hibachi lewisville", "best hibachi lewisville", "hibachi menu lewisville", "jinbeh hibachi", "japanese hibachi lewisville", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
     title: "Hibachi Menu | Jinbeh Lewisville",
@@ -602,7 +602,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-800w.webp"
+                    src="/images/catalog_v7/hibachi/jinbeh-hibachi-action-shot.webp"
                     alt="Seafood trio flame show at Jinbeh Lewisville"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"

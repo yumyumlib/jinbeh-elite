@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Edamame Frisco | Plant-Based Protein Soybeans",
+  title: "Edamame Frisco | Plant-Based Protein Soybeans | Jinbeh",
   description: "Steamed edamame with sea salt at Jinbeh Frisco. 18.5g protein per cup, complete amino acids, low calorie plant-based appetizer.",
   keywords: ["japanese appetizers frisco","edamame frisco","best sushi frisco tx","steamed soybeans","healthy appetizers frisco","plant based protein frisco","japanese starter"],
   openGraph: {

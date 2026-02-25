@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Lewisville Japanese Restaurant",
-  description: "Explore Jinbeh Lewisville's cocktails & sake menu. Celebration, happy hour, Asian-inspired. 5 delicious options from Sake Bomb to Sake Flight. Easy access from I-35E, near Vista Ridge Mall.",
+  description: "Discover Jinbeh Lewisville's sake, cocktails, and Japanese beverages. From sake flights and Tokyo Mules to lychee martinis and Jinbeh Punch. Happy hour specials near Vista Ridge Mall.s & sake menu. Celebration, happy hour, Asian-inspired. 5 delicious options from Sake Bomb to Sake Flight. Easy access from I-35E, near Vista Ridge Mall.",
   keywords: ["cocktails & sake lewisville", "best cocktails & sake lewisville", "cocktails & sake menu lewisville", "jinbeh cocktails & sake", "japanese cocktails & sake lewisville", "japanese cocktails", "sake", "asian drinks", "happy hour"],
   openGraph: {
     title: "Cocktails & Sake Menu | Jinbeh Lewisville",

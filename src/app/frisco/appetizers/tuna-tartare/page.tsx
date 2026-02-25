@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tuna Tartare Frisco | Diced Ahi with Avocado Ponzu",
+  title: "Tuna Tartare Frisco | Diced Ahi with Avocado Ponzu | Jinbeh",
   description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Frisco. 100-150 calories, 20g protein, omega-3 healthy. Premium raw fish.",
   keywords: ["japanese appetizers frisco","tuna tartare frisco","best sushi frisco tx","ahi tuna appetizer","raw fish tartare","healthy appetizer frisco","sashimi style"],
   openGraph: {

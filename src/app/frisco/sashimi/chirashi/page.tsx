@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Chirashi Bowl Frisco | Scattered Sushi Rice Deluxe",
+  title: "Chirashi Bowl Frisco | Scattered Sushi Rice Deluxe | Jinbeh",
   description: "Scattered sushi bowl with premium assorted sashimi at Jinbeh Frisco. 400-500 calories, 23g protein, omega-3 rich with vegetables.",
   keywords: ["sashimi near me frisco","chirashi bowl frisco","best sushi frisco tx","scattered sushi rice","japanese appetizers frisco","sushi rice bowl frisco"],
   openGraph: {

@@ -599,6 +599,8 @@ export default function OrderOnlinePage() {
                                                 setExpandedFaq(expandedFaq === index ? null : index)
                                             }
                                             className="w-full px-8 py-6 flex items-center justify-between hover:bg-charcoal/5 transition-colors text-left"
+                                            aria-expanded={expandedFaq === index}
+                                            aria-label={`Toggle answer: ${item.question}`}
                                         >
                                             <h3 className="text-lg font-heading font-semibold text-charcoal pr-4">
                                                 {item.question}

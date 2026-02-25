@@ -22,6 +22,28 @@ export default function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    const animateCount = () => {
+      const startTime = performance.now();
+      const startValue = 0;
+
+      const updateCount = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Easing function for smooth animation
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        const currentValue = Math.floor(startValue + (end - startValue) * easeOutQuart);
+
+        setCount(currentValue);
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCount);
+        }
+      };
+
+      requestAnimationFrame(updateCount);
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,29 +61,7 @@ export default function CountUp({
     }
 
     return () => observer.disconnect();
-  }, [hasAnimated]);
-
-  const animateCount = () => {
-    const startTime = performance.now();
-    const startValue = 0;
-
-    const updateCount = (currentTime: number) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-
-      // Easing function for smooth animation
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-      const currentValue = Math.floor(startValue + (end - startValue) * easeOutQuart);
-
-      setCount(currentValue);
-
-      if (progress < 1) {
-        requestAnimationFrame(updateCount);
-      }
-    };
-
-    requestAnimationFrame(updateCount);
-  };
+  }, [hasAnimated, duration, end]);
 
   return (
     <span ref={ref} className={className}>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Omakase: Unraveling the Unique Dining Art | Jinbeh",
@@ -37,7 +37,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/menu" },
         { "@type": "ListItem", "position": 4, "name": "Omakase Dining Guide: Everything You Need to Know" },
     ],
 };
@@ -53,7 +53,7 @@ export default function OmakaseDiningGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/" className="hover:text-white">Home</Link>/<Link href="/blog" className="hover:text-white">Blog</Link>/<Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/" className="hover:text-white">Home</Link>/<Link href="/blog" className="hover:text-white">Blog</Link>/<Link href="/menu" className="hover:text-white">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍣 Omakase Dining</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Omakase: Unraveling the Unique Dining Art</h1>
@@ -265,7 +265,8 @@ export default function OmakaseDiningGuide() {
                                 </div>
                             </div>
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         <aside>

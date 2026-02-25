@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Event Hosting | Private Dining Venue | Jinbeh Japanese Restaurant Frisco & Lewisville",
+  title: "Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
     "Host your corporate event, wedding rehearsal, baby shower, or team building at Jinbeh! Private dining rooms in Frisco (40 guests) & Lewisville (30 guests). Hibachi entertainment, catering, and unforgettable experiences.",
   keywords: [
@@ -554,6 +554,7 @@ export default function EventsPage() {
                       ? "bg-accent-red hover:bg-accent-red/90 text-white"
                       : "bg-accent-red/10 text-accent-red hover:bg-accent-red/20"
                       }`}
+                    aria-label={`Learn more about ${pkg.name}`}
                   >
                     Learn More
                   </button>

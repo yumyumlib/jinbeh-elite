@@ -5,13 +5,17 @@ import Header from "@/components/Header";
 import blogData from "@/data/blog-posts.json";
 
 export const metadata: Metadata = {
-    title: "Blog | Jinbeh Japanese Restaurant",
+    title: "Blog | Jinbeh Japanese Restaurant – Hibachi, Sushi & DFW Dining Guides",
     description:
-        "Explore Japanese cuisine, hibachi tips, sushi guides, sake pairings and more. Discover the art of Japanese dining at Jinbeh.",
+        "Explore Japanese cuisine guides, hibachi tips, sushi tutorials, sake pairings, and local DFW dining recommendations from Jinbeh Japanese Restaurant in Frisco and Lewisville.",
+    keywords: ["japanese food blog", "hibachi tips", "sushi guide", "sake pairing", "japanese cuisine", "DFW dining guide", "frisco restaurant blog", "lewisville food blog"],
     openGraph: {
         title: "Jinbeh Blog | Japanese Dining Tips & Guides",
-        description: "Your guide to hibachi, sushi, sake and Japanese cuisine.",
+        description: "Your guide to hibachi, sushi, sake and Japanese cuisine from Jinbeh in Frisco & Lewisville.",
         url: "https://jinbeh.com/blog",
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/blog",
     },
 };
 

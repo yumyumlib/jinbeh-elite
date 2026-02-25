@@ -7,7 +7,7 @@ import locations from "@/data/locations.json";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
-  title: "Specials & Promotions | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
+  title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
     "Explore amazing specials at Jinbeh! Happy Hour deals, lunch specials, weekly promotions, and seasonal offers at our Frisco and Lewisville Japanese restaurants.",
   keywords: [

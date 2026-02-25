@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
@@ -498,7 +498,8 @@ export default function JinbehGiftCardsGuidePage() {
         <strong>Gift card insider tip:</strong> The best strategy for maximizing your Jinbeh gift card is to visit during <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch</Link> when hibachi specials start at $12.95. A $50 gift card covers two full lunch experiences! Combine with our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks, and stack with Birthday Club benefits during your birthday month for maximum value.
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
 
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
         <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>

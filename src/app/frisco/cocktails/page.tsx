@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Explore Jinbeh Frisco's cocktails & sake menu. Celebration, happy hour, Asian-inspired. 5 delicious options from Sake Bomb to Sake Flight. Near Stonebriar Centre, minutes from Legacy West.",
+  description: "Discover Jinbeh Frisco's sake, cocktails, and Japanese beverages. From sake flights and Tokyo Mules to lychee martinis and Jinbeh Punch. Happy hour specials near Stonebriar Centre.s & sake menu. Celebration, happy hour, Asian-inspired. 5 delicious options from Sake Bomb to Sake Flight. Near Stonebriar Centre, minutes from Legacy West.",
   keywords: ["cocktails & sake frisco", "best cocktails & sake frisco", "cocktails & sake menu frisco", "jinbeh cocktails & sake", "japanese cocktails & sake frisco", "japanese cocktails", "sake", "asian drinks", "happy hour"],
   openGraph: {
     title: "Cocktails & Sake Menu | Jinbeh Frisco",

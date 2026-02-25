@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Shrimp Tempura Frisco | Crispy Fried Shrimp Appetizer",
+  title: "Shrimp Tempura Frisco | Crispy Fried Shrimp Appetizer | Jinbeh",
   description: "Crispy tempura battered shrimp at Jinbeh Frisco. 200-300 calories, 12-15g protein, light, airy batter. Japanese classic appetizer.",
   keywords: ["japanese appetizers frisco","shrimp tempura frisco","best sushi frisco tx","fried shrimp","tempura appetizer","crispy shrimp frisco","japanese starter"],
   openGraph: {

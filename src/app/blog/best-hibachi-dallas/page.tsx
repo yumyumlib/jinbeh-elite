@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, CompareCards, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, CompareCards, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh",
@@ -398,7 +398,8 @@ export default function BestHibachiDallasPage() {
         </ul>
       </div>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="best-hibachi-dallas" />
     </ArticleLayout>

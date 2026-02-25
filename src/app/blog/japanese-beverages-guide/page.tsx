@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Popular Japanese Beverages: Iconic Drinks Guide | Jinbeh",
@@ -35,7 +35,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Japanese Drinks: Sake, Beer, and Beyond" },
     ],
 };
@@ -51,7 +51,7 @@ export default function JapaneseBeveragesGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/cuisine">Cuisine</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/menu">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍵 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Popular Japanese Beverages</h1>
@@ -167,7 +167,8 @@ export default function JapaneseBeveragesGuide() {
                                     <strong>Beverage pairing pro tip:</strong> At Jinbeh, ask your server for a sake recommendation to pair with your meal. Dry sake pairs beautifully with sushi and sashimi, while fruity varieties complement hibachi steak. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, try our sake sampler to explore different styles at special prices. Don't miss our Japanese whisky selection and signature <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">cocktails</Link> like the lychee martini!
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

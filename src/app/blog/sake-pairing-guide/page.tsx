@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Sake Pairing Guide: Best Pairings with Sushi & Hibachi | Jinbeh",
@@ -77,24 +78,24 @@ const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
+        "@type": " Question ",
+name: faq.question,
+    acceptedAnswer: {
+            " @type": " Answer ",
+    text: faq.answer,
         },
     })),
 };
 
 
 const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
-        { "@type": "ListItem", "position": 4, "name": "Sake Pairing Guide: Perfect Matches for Every Dish" },
+    " @context": " https://schema.org",
+    " @type": " BreadcrumbList ",
+    " itemListElement ": [
+    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 3, " name ": " Bar & Beverages ", " item ": " https://jinbeh.com/bar" },
+    { " @type ": " ListItem ", " position ": 4, " name ": " Sake Pairing Guide: Perfect Matches for Every Dish " },
     ],
 };
 
@@ -549,17 +550,7 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory/80 transition-colors">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -602,6 +593,7 @@ export default function SakePairingGuide() {
                                         serving food and drink; we're creating an experience.
                                     </p>
 
+                                    <PillarCTA type="catering" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>
@@ -646,9 +638,9 @@ export default function SakePairingGuide() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog/category/beverages" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍷 Beverages</Link>
-                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍽️ Dining</Link>
+                                        <Link href="/menu" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🍣 Cuisine</Link>
+                                        <Link href="/bar" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍷 Beverages</Link>
+                                        <Link href="/#locations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors">🍽️ Dining</Link>
                                     </div>
                                 </div>
                             </div>

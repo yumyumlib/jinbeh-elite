@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Unique Kids Birthday Party Places DFW | Jinbeh",
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 3, "name": "Private Events", "item": "https://jinbeh.com/private-dining" },
         { "@type": "ListItem", "position": 4, "name": "Unique Kids Birthday Party Places Near Me" },
     ],
 };
@@ -60,7 +60,7 @@ export default function KidsBirthdayPlaces() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/celebrations">Celebrations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/celebrations">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">🎉 Celebrations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Unique Kids Birthday Party Places</h1>
@@ -118,7 +118,8 @@ export default function KidsBirthdayPlaces() {
                                     <strong>Birthday party planning pro tip:</strong> Book your hibachi birthday party for a Saturday or Sunday lunch slot—you'll get better availability, shorter wait times, and slightly lower pricing. Ask about our birthday surprise: we can arrange a special chef performance just for the birthday child! For groups of 10+, we can reserve adjacent hibachi tables so the whole party watches the show together. Don't forget to mention any food allergies when booking—our kitchen prepares allergen-safe alternatives for every guest. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

@@ -389,7 +389,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <main className="min-h-screen bg-warm-ivory py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl font-heading font-bold text-charcoal mb-4">Category Not Found</h1>
-          <p className="text-charcoal/70 mb-6">The category you&apos;re looking for doesn&apos;t exist.</p>
+          <p className="text-charcoal/70 mb-6">The category you're looking for doesn't exist.</p>
           <Link href="/blog" className="btn btn-primary">
             ← Back to Blog
           </Link>

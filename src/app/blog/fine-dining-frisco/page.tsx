@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh | Japanese Excellence",
@@ -69,25 +70,25 @@ const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
+        "@type": " Question ",
+name: faq.question,
+    acceptedAnswer: {
+            " @type": " Answer ",
+    text: faq.answer,
         },
     })),
 };
 
 
 const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-        { "@type": "ListItem", "position": 4, "name": "Fine Dining in Frisco TX: Best Upscale Restaurants" },
-    ],
+    " @context": " https://schema.org",
+    " @type": " BreadcrumbList ",
+    " itemListElement ": [
+    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
+    { " @type ": " ListItem ", " position ": 4, " name ": " Fine Dining in Frisco TX: Best Upscale Restaurants " },
+],
 };
 
 export default function FineDiningFrisco() {
@@ -120,7 +121,7 @@ export default function FineDiningFrisco() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Dining Guide</Link>
+                        <Link href="/#locations" className="hover:text-white">Dining Guide</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -335,21 +336,12 @@ export default function FineDiningFrisco() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
-                                <LocationCTA location="frisco" />
+                                <PillarCTA type="reservations" />
+                                    <LocationCTA location="frisco" />
                             </div>
                         </article>
 

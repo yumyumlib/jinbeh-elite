@@ -22,7 +22,7 @@ export function AnimatedList({
         setVisibleItems((prev) => [...prev, index]);
       }, index * delay);
     });
-  }, [children.length, delay]);
+  }, [children, delay]);
 
   return (
     <ul className={cn("space-y-3", className)}>

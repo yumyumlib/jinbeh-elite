@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Top Restaurants for Large Group Dining: Best Big Party Venues | Jinbeh",
@@ -97,7 +98,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 3, "name": "Celebrations & Events", "item": "https://jinbeh.com/celebrations" },
         { "@type": "ListItem", "position": 4, "name": "Large Group Dining: Best Restaurants for Parties" },
     ],
 };
@@ -132,7 +133,7 @@ export default function LargeGroupDining() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/celebrations" className="hover:text-white">Events</Link>
+                        <Link href="/celebrations" className="hover:text-white">Events Overview</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -171,6 +172,15 @@ export default function LargeGroupDining() {
                                         <span className="text-sm text-charcoal/80 mt-2 block">— Event Planning Expert</span>
                                     </div>
 
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
+                                        <Image
+                                            src="/images/instagram/sushi-feast-flatlay.jpg"
+                                            alt="Large sushi feast perfect for group dining"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🎉 Why Group Dining at Restaurants Makes Sense
                                     </h2>
@@ -201,6 +211,15 @@ export default function LargeGroupDining() {
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Festive Ambiance</h3>
                                             <p className="text-charcoal/70 text-sm">Restaurants create atmospheres designed for celebration. Good lighting, music, and space layout enhance the group dining experience naturally.</p>
                                         </div>
+                                    </div>
+
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
+                                        <Image
+                                            src="/images/instagram/crab-pinwheel-roll.jpg"
+                                            alt="Crab pinwheel roll available for large group event menus"
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -241,6 +260,15 @@ export default function LargeGroupDining() {
                                             <span><strong>Multiple Locations:</strong> Groups in Frisco and Lewisville both benefit from our professional group dining services.</span>
                                         </li>
                                     </ul>
+
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
+                                        <Image
+                                            src="/images/instagram/mochi-desserts.jpg"
+                                            alt="Mochi ice cream desserts perfect for group celebrations"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-8 mb-4">
                                         Perfect for Various Occasions
@@ -399,17 +427,7 @@ export default function LargeGroupDining() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -418,6 +436,7 @@ export default function LargeGroupDining() {
                                         <strong>Group dining insider tip:</strong> At Jinbeh, call 2-3 weeks ahead for groups of 15+. Request adjacent hibachi tables so your group can interact during the performance. For the best value, book weekday evenings or lunch. Ask about our group packages—we offer streamlined ordering for large parties where everyone picks a protein and everything else is included. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
                                     </ProTip>
 
+                                    <PillarCTA type="reservations" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

@@ -23,17 +23,37 @@
       "email": "frisco@jinbeh.com",
       "neighborhood": {
         "description": "Near Stonebriar Centre, minutes from Legacy West",
-        "landmarks": ["Stonebriar Centre Mall", "Legacy West", "Highway 121"],
+        "landmarks": [
+          "Stonebriar Centre Mall",
+          "Legacy West",
+          "Highway 121"
+        ],
         "parking": "Ample parking in the shopping center lot"
       },
       "hours": {
         "lunch": {
-          "weekday": { "open": "11:00", "close": "14:00", "display": "11:00 am – 2:00 pm" },
-          "weekend": { "open": "11:30", "close": "14:30", "display": "11:30 am – 2:30 pm" }
+          "weekday": {
+            "open": "11:00",
+            "close": "14:00",
+            "display": "11:00 am – 2:00 pm"
+          },
+          "weekend": {
+            "open": "11:30",
+            "close": "14:30",
+            "display": "11:30 am – 2:30 pm"
+          }
         },
         "dinner": {
-          "sunThurs": { "open": "17:00", "close": "21:00", "display": "5:00 pm – 9:00 pm" },
-          "friSat": { "open": "17:00", "close": "22:00", "display": "5:00 pm – 10:00 pm" }
+          "sunThurs": {
+            "open": "17:00",
+            "close": "21:00",
+            "display": "5:00 pm – 9:00 pm"
+          },
+          "friSat": {
+            "open": "17:00",
+            "close": "22:00",
+            "display": "5:00 pm – 10:00 pm"
+          }
         }
       },
       "orderOnline": {
@@ -51,9 +71,21 @@
         "sushi": "/menus/frisco/sushi-menu.pdf"
       },
       "seo": {
-        "title": "Jinbeh Frisco | Hibachi & Sushi near Stonebriar Centre",
-        "description": "Experience authentic Japanese hibachi and sushi at Jinbeh Frisco. Dinner and a show near Stonebriar Centre. Family-owned since 1988. Reserve your table today!",
-        "keywords": ["hibachi frisco", "sushi frisco", "japanese restaurant frisco", "teppanyaki frisco", "stonebriar dining"]
+        "title": "Jinbeh Frisco | Japanese, Hibachi & Sushi near Stonebriar Centre",
+        "description": "Experience authentic Japanese hibachi and premium sushi at Jinbeh Frisco. Dinner and a show near Stonebriar Centre. Family-owned since 1988. Reserve your table today!",
+        "keywords": [
+          "hibachi frisco",
+          "sushi frisco",
+          "japanese restaurant frisco",
+          "teppanyaki frisco",
+          "stonebriar dining",
+          "hibachi near me",
+          "best sushi frisco tx",
+          "japanese steakhouse frisco",
+          "sushi near stonebriar",
+          "hibachi frisco tx",
+          "japanese food frisco"
+        ]
       },
       "socialVoice": "The heart of Frisco's restaurant scene"
     },
@@ -80,17 +112,37 @@
       "email": "lewisville@jinbeh.com",
       "neighborhood": {
         "description": "Easy access from I-35E, near Vista Ridge Mall",
-        "landmarks": ["Vista Ridge Mall", "I-35E", "Medical City Lewisville"],
+        "landmarks": [
+          "Vista Ridge Mall",
+          "I-35E",
+          "Medical City Lewisville"
+        ],
         "parking": "Convenient strip mall parking"
       },
       "hours": {
         "lunch": {
-          "weekday": { "open": "11:00", "close": "14:00", "display": "11:00 am – 2:00 pm" },
-          "weekend": { "open": "11:30", "close": "14:30", "display": "11:30 am – 2:30 pm" }
+          "weekday": {
+            "open": "11:00",
+            "close": "14:00",
+            "display": "11:00 am – 2:00 pm"
+          },
+          "weekend": {
+            "open": "11:30",
+            "close": "14:30",
+            "display": "11:30 am – 2:30 pm"
+          }
         },
         "dinner": {
-          "sunThurs": { "open": "17:00", "close": "21:00", "display": "5:00 pm – 9:00 pm" },
-          "friSat": { "open": "17:00", "close": "22:00", "display": "5:00 pm – 10:00 pm" }
+          "sunThurs": {
+            "open": "17:00",
+            "close": "21:00",
+            "display": "5:00 pm – 9:00 pm"
+          },
+          "friSat": {
+            "open": "17:00",
+            "close": "22:00",
+            "display": "5:00 pm – 10:00 pm"
+          }
         }
       },
       "orderOnline": {
@@ -108,9 +160,21 @@
         "sushi": "/menus/lewisville/sushi-menu.pdf"
       },
       "seo": {
-        "title": "Jinbeh Lewisville | Hibachi & Sushi near Vista Ridge",
-        "description": "Authentic Japanese hibachi and sushi at Jinbeh Lewisville. Family-owned tradition since 1988. Easy access from I-35E near Vista Ridge Mall. Reserve now!",
-        "keywords": ["hibachi lewisville", "sushi lewisville", "japanese restaurant lewisville", "teppanyaki lewisville", "vista ridge dining"]
+        "title": "Jinbeh Lewisville | Japanese, Hibachi & Sushi near Vista Ridge",
+        "description": "Authentic Japanese hibachi and premium sushi at Jinbeh Lewisville. Family-owned tradition since 1988. Easy access from I-35E near Vista Ridge Mall. Reserve now!",
+        "keywords": [
+          "hibachi lewisville",
+          "sushi lewisville",
+          "japanese restaurant lewisville",
+          "teppanyaki lewisville",
+          "vista ridge dining",
+          "hibachi near me",
+          "sushi lewisville tx",
+          "japanese steakhouse lewisville",
+          "hibachi lewisville tx",
+          "japanese food lewisville",
+          "best sushi lewisville"
+        ]
       },
       "socialVoice": "Lewisville's go-to for Japanese cuisine"
     }
@@ -122,7 +186,12 @@
     "established": 1988,
     "yearsInBusiness": 38,
     "heritage": "Family-owned since 1988, serving North Texas for over 37 years",
-    "cuisine": ["Japanese", "Sushi", "Hibachi", "Teppanyaki"],
+    "cuisine": [
+      "Japanese",
+      "Sushi",
+      "Hibachi",
+      "Teppanyaki"
+    ],
     "priceRange": "$$",
     "website": "https://jinbeh.com",
     "social": {

@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Types of Sushi: Must-Try Varieties & Rolls Guide | Jinbeh",
@@ -38,23 +40,23 @@ const articleSchema = {
 
 const faqs = [
     {
-        question: "What&apos;s the difference between nigiri and sashimi?",
+        question: "What's the difference between nigiri and sashimi?",
         answer: "Nigiri is a slice of raw fish placed on top of a small mound of seasoned rice, while sashimi is pure raw fish sliced thin with no rice. Both showcase the quality and freshness of the fish, but nigiri adds the texture and subtle sweetness of properly seasoned sushi rice. Nigiri is more filling, while sashimi is lighter and lower-carb. Both are excellent ways to appreciate premium fish!"
     },
     {
         question: "What sushi is best for beginners?",
-        answer: "Welcome to sushi! We recommend starting with cooked rolls like California Roll, Philadelphia Roll, or Shrimp Tempura Roll—they&apos;re milder in flavor and help newcomers ease into sushi before trying raw fish. You can also try cooked nigiri options like tamago (egg) or cooked shrimp. At Jinbeh, our experienced staff can guide you through our menu based on your comfort level and taste preferences."
+        answer: "Welcome to sushi! We recommend starting with cooked rolls like California Roll, Philadelphia Roll, or Shrimp Tempura Roll—they're milder in flavor and help newcomers ease into sushi before trying raw fish. You can also try cooked nigiri options like tamago (egg) or cooked shrimp. At Jinbeh, our experienced staff can guide you through our menu based on your comfort level and taste preferences."
     },
     {
-        question: "What&apos;s in a dragon roll?",
-        answer: "A Dragon Roll is one of our signature specialty rolls featuring eel, cucumber, and avocado topped with unagi (eel) sauce. The combination of tender eel, creamy avocado, and sweet unagi sauce creates an elegant and complex flavor profile. The roll is typically inside-out style, and our chefs arrange it beautifully to resemble a dragon. It&apos;s a fantastic choice if you enjoy cooked fish with rich, savory sauces—perfect for those ready to explore beyond basic rolls!"
+        question: "What's in a dragon roll?",
+        answer: "A Dragon Roll is one of our signature specialty rolls featuring eel, cucumber, and avocado topped with unagi (eel) sauce. The combination of tender eel, creamy avocado, and sweet unagi sauce creates an elegant and complex flavor profile. The roll is typically inside-out style, and our chefs arrange it beautifully to resemble a dragon. It's a fantastic choice if you enjoy cooked fish with rich, savory sauces—perfect for those ready to explore beyond basic rolls!"
     },
     {
-        question: "What&apos;s in a rainbow roll?",
-        answer: "A Rainbow Roll is a visually stunning specialty roll that features a California roll base topped with an assortment of colorful sashimi including salmon, tuna, avocado, and other fresh fish. The rainbow of colors comes from multiple fish varieties arranged on top. It&apos;s a beautiful centerpiece roll that showcases premium fish selection and offers a variety of flavors in every bite. Perfect for sharing or impressing guests with its presentation!"
+        question: "What's in a rainbow roll?",
+        answer: "A Rainbow Roll is a visually stunning specialty roll that features a California roll base topped with an assortment of colorful sashimi including salmon, tuna, avocado, and other fresh fish. The rainbow of colors comes from multiple fish varieties arranged on top. It's a beautiful centerpiece roll that showcases premium fish selection and offers a variety of flavors in every bite. Perfect for sharing or impressing guests with its presentation!"
     },
     {
-        question: "What&apos;s the most popular sushi roll?",
+        question: "What's the most popular sushi roll?",
         answer: "The California Roll is America's most beloved sushi roll. At Jinbeh, our Dragon Roll (eel, cucumber, avocado with unagi sauce), Spicy Tuna Roll, and Rainbow Roll are customer favorites. Our chefs can recommend the perfect roll based on your preferences—whether you like cooked or raw fish, spicy or mild flavors, or adventurous combinations."
     },
     {
@@ -66,15 +68,15 @@ const faqs = [
         answer: "Absolutely! We offer nigiri, sashimi, maki rolls, specialty rolls, hand rolls, and omakase experiences. You can order à la carte or try our sushi platters that showcase multiple varieties. Sit at the sushi bar to watch our chefs prepare each piece, or relax at a table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about specials, or visit our menu online."
     },
     {
-        question: "What&apos;s the proper way to eat sushi?",
+        question: "What's the proper way to eat sushi?",
         answer: "You can use chopsticks or your fingers—both are acceptable! Dip the fish side (not the rice) lightly into soy sauce to avoid it getting soggy. Eat nigiri in one bite if possible to enjoy all the flavors together. Use pickled ginger as a palate cleanser between pieces, not as a topping. Wasabi is optional—add it directly to your soy sauce or the sushi itself based on your spice preference."
     },
     {
         question: "Are there vegetarian sushi options?",
-        answer: "Yes! We offer plenty of vegetarian rolls including cucumber roll (Kappa Maki), avocado roll, vegetable tempura roll, and creative specialty rolls with vegetables and fruits. Vegetarian nigiri options include tamago (egg) and cooked items. Let our staff know your vegetarian preferences, and we&apos;ll guide you to delicious options that showcase great flavors and technique."
+        answer: "Yes! We offer plenty of vegetarian rolls including cucumber roll (Kappa Maki), avocado roll, vegetable tempura roll, and creative specialty rolls with vegetables and fruits. Vegetarian nigiri options include tamago (egg) and cooked items. Let our staff know your vegetarian preferences, and we'll guide you to delicious options that showcase great flavors and technique."
     },
     {
-        question: "What&apos;s the difference between sushi and sashimi platters?",
+        question: "What's the difference between sushi and sashimi platters?",
         answer: "A sushi platter typically includes nigiri and rolls (rice-based dishes), while a sashimi platter features only sliced raw fish. Sushi platters are more filling and offer variety in preparation styles. Sashimi platters are perfect for fish lovers who want to focus on the quality and flavor of premium fish without rice. Many guests order both to explore different aspects of Japanese cuisine!"
     },
 ];
@@ -99,7 +101,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Frisco Sushi Menu", "item": "https://jinbeh.com/frisco/sushi-rolls" },
         { "@type": "ListItem", "position": 4, "name": "Types of Sushi: Complete Guide to Rolls & Varieties" },
     ],
 };
@@ -128,7 +130,7 @@ export default function TypesOfSushi() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine" className="hover:text-white">Cuisine</Link>
+                        <Link href="/frisco/sushi-rolls" className="hover:text-white">Sushi Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -157,16 +159,16 @@ export default function TypesOfSushi() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Sushi confused?</strong> You&apos;re not alone. Between nigiri, sashimi, maki,
+                                        <strong>Sushi confused?</strong> You're not alone. Between nigiri, sashimi, maki,
                                         and specialty rolls, the sushi menu can feel like reading a foreign language.
-                                        Let&apos;s break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
+                                        Let's break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Every sushi order at Jinbeh starts with fresh fish and ends with a smile.
-                                            Whether you&apos;re trying nigiri for the first time or you&apos;re a seasoned omakase
-                                            enthusiast, we&apos;re here to guide your journey."
+                                            Whether you're trying nigiri for the first time or you're a seasoned omakase
+                                            enthusiast, we're here to guide your journey."
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
                                     </div>
@@ -175,6 +177,15 @@ export default function TypesOfSushi() {
                                         fact="Modern sushi as we know it was invented by Hanaya Yohei in 1820s Tokyo. Before that, 'sushi' was actually a method of preserving fish by packing it in fermented rice for months — the rice was discarded! Yohei's genius was serving fresh fish on vinegared rice as fast food from street stalls, creating the nigiri we love today."
                                         source="Smithsonian National Museum of American History"
                                     />
+
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-square md:aspect-[16/9] shadow-lg max-w-2xl mx-auto">
+                                        <Image
+                                            src="/images/instagram/sushi-roll-portrait.jpg"
+                                            alt="Hand-rolled fresh sushi portrait"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🍱 The Main Types of Sushi
@@ -268,6 +279,24 @@ export default function TypesOfSushi() {
                                     </div>
                                 </div>
 
+                                <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg">
+                                    <Image
+                                        src="/images/instagram/specialty-roll-closeup.jpg"
+                                        alt="Closeup of a Jinbeh specialty sushi roll"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+
+                                <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg">
+                                    <Image
+                                        src="/images/instagram/specialty-roll-closeup.jpg"
+                                        alt="Closeup of a Jinbeh specialty sushi roll"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+
                                 {/* Comparison Table */}
                                 <div className="overflow-x-auto my-12">
                                     <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
@@ -337,20 +366,28 @@ export default function TypesOfSushi() {
                                     </div>
                                 </div>
 
-                                {/* Image Gallery */}
+                                
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
-                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                    <BlurFade delay={0.1}>
+                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
                                         <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
-                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                    </BlurFade>
+                                    <BlurFade delay={0.2}>
+                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
                                         <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi chef" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
-                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                    </BlurFade>
+                                    <BlurFade delay={0.3}>
+                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
                                         <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi roll" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
-                                    <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                    </BlurFade>
+                                    <BlurFade delay={0.4}>
+                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
                                         <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                     </div>
+                                    </BlurFade>
                                 </div>
 
                                 <ProTip variant="insider">
@@ -359,7 +396,7 @@ export default function TypesOfSushi() {
 
                                 <div className="prose prose-lg max-w-none">
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🌟 Jinbeh&apos;s Most Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Varieties</Link>
+                                        🌟 Jinbeh's Most Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Varieties</Link>
                                     </h2>
 
                                     <div className="bg-gradient-to-r from-charcoal to-deep-indigo rounded-2xl p-8 text-white my-8">
@@ -402,17 +439,7 @@ export default function TypesOfSushi() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
@@ -436,7 +463,8 @@ export default function TypesOfSushi() {
                                     </div>
                                 </div>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

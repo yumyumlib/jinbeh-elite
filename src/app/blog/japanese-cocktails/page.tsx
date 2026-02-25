@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Cocktails: Art, Recipes & Mixology | Jinbeh Dallas",
@@ -36,7 +36,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Japanese Cocktails: Classic & Creative Recipes" },
     ],
 };
@@ -51,7 +51,7 @@ export default function JapaneseCocktails() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/bar">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍹 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Cocktails: Art, Recipes & Mixology</h1>
@@ -237,7 +237,8 @@ export default function JapaneseCocktails() {
                                     <strong>Japanese cocktail insider tip:</strong> At Jinbeh, our lychee martini is legendary—it's the most-ordered cocktail on our menu. Start your evening at the <Link href="/bar" className="text-accent-red hover:underline">bar</Link> during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on sake cocktails and Japanese whisky pours. Ask your bartender to recommend a sake-based cocktail paired with your dinner order—they're trained to match flavors!
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

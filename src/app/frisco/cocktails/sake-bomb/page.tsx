@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sake Bomb Frisco - Classic Japanese Beer Cocktail",
+  title: "Sake Bomb Frisco - Classic Japanese Beer Cocktail | Jinbeh",
   description: "Traditional sake bomb with cold Japanese beer at Jinbeh Frisco. Best happy hour cocktails. Reserve at our Japanese restaurant (214) 619-1200.",
   keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","sake bomb","beer cocktails","jinbeh frisco","japanese restaurant","drinks near stonebriar"],
   openGraph: {

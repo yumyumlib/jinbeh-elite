@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist | Jinbeh DFW",
@@ -67,14 +67,14 @@ export default function BeerHardSeltzer() {
             <h2>The Japanese Beer Experience</h2>
 
             <p>
-                There&apos;s a reason Japanese beers have become some of the most popular in the world: they&apos;re
+                There's a reason Japanese beers have become some of the most popular in the world: they're
                 specifically crafted to pair with food. Unlike heavy craft IPAs or bitter ales, Japanese
                 lagers are clean, crisp, and refreshing—designed to enhance your meal rather than overpower it.
             </p>
 
             <p>
                 At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, our guests consistently
-                mention that &quot;Sapporo on tap is a highlight&quot; of the dining experience. There&apos;s nothing quite like
+                mention that "Sapporo on tap is a highlight" of the dining experience. There's nothing quite like
                 a cold Sapporo alongside sizzling <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link> or
                 fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi rolls</Link> from our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.
             </p>
@@ -94,10 +94,10 @@ export default function BeerHardSeltzer() {
             <p>
                 <strong>Flavor profile:</strong> Smooth, balanced, clean finish<br />
                 <strong>ABV:</strong> 4.9%<br />
-                <strong>Best with:</strong> Everything—it&apos;s the ultimate all-purpose Japanese beer<br />
+                <strong>Best with:</strong> Everything—it's the ultimate all-purpose Japanese beer<br />
                 <strong>Available:</strong> On tap (draft) and bottled<br /><br />
-                Japan&apos;s oldest beer brand, brewed since 1876. Sapporo is our #1 seller and the go-to
-                recommendation for first-time visitors. Our guests love the draft pour—there&apos;s nothing
+                Japan's oldest beer brand, brewed since 1876. Sapporo is our #1 seller and the go-to
+                recommendation for first-time visitors. Our guests love the draft pour—there's nothing
                 like a cold, freshly poured Sapporo.
             </p>
 
@@ -106,7 +106,7 @@ export default function BeerHardSeltzer() {
                 <strong>Flavor profile:</strong> Ultra-crisp, dry finish, very refreshing<br />
                 <strong>ABV:</strong> 5.0%<br />
                 <strong>Best with:</strong> Rich hibachi steak, fried rice, tempura<br /><br />
-                The &quot;karakuchi&quot; (dry) style revolutionized Japanese brewing. Asahi Super Dry cuts through
+                The "karakuchi" (dry) style revolutionized Japanese brewing. Asahi Super Dry cuts through
                 the richness of hibachi-grilled meats and fried dishes like nothing else. If you like
                 your beer clean and sharp, this is your pick.
             </p>
@@ -116,7 +116,7 @@ export default function BeerHardSeltzer() {
                 <strong>Flavor profile:</strong> Slightly fuller body, subtle sweetness<br />
                 <strong>ABV:</strong> 5.0%<br />
                 <strong>Best with:</strong> Sashimi, grilled seafood, richer sushi rolls<br /><br />
-                &quot;Ichiban&quot; means &quot;first press&quot;—Kirin uses only the first press of the wort, resulting in a
+                "Ichiban" means "first press"—Kirin uses only the first press of the wort, resulting in a
                 smoother, more complex flavor. Excellent with delicate seafood dishes and for those who
                 want a bit more depth than a standard lager.
             </p>
@@ -138,7 +138,7 @@ export default function BeerHardSeltzer() {
             <h2>The Perfect Pairing Guide</h2>
 
             <p>
-                Not sure what to order? Here&apos;s our quick pairing guide based on what you&apos;re eating:
+                Not sure what to order? Here's our quick pairing guide based on what you're eating:
             </p>
 
             <div className="overflow-x-auto my-8">
@@ -160,7 +160,7 @@ export default function BeerHardSeltzer() {
                         </tr>
                         <tr className="border-b border-warm-ivory-dark bg-white">
                             <td className="px-4 py-3 font-medium">Sushi rolls (classic)</td>
-                            <td className="px-4 py-3">Sapporo — won&apos;t overpower delicate fish</td>
+                            <td className="px-4 py-3">Sapporo — won't overpower delicate fish</td>
                         </tr>
                         <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
                             <td className="px-4 py-3 font-medium">Sushi rolls (spicy)</td>
@@ -181,7 +181,7 @@ export default function BeerHardSeltzer() {
             <p>
                 Want to explore beyond beer? Check out our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails guide</Link> or
                 our <Link href="/blog/sake-taste-guide" className="text-accent-red hover:underline">sake tasting guide</Link> for
-                even more options. Our guests say the &quot;lychee martini is a must&quot;—another great option
+                even more options. Our guests say the "lychee martini is a must"—another great option
                 alongside your meal.
             </p>
 
@@ -189,13 +189,13 @@ export default function BeerHardSeltzer() {
 
             <p>
                 The best way to explore our beer and seltzer selection? <Link href="/happy-hour" className="text-accent-red hover:underline">Happy hour at Jinbeh</Link>.
-                Enjoy discounted Sapporo drafts, select cocktails, and appetizers. It&apos;s the perfect
+                Enjoy discounted Sapporo drafts, select cocktails, and appetizers. It's the perfect
                 way to start your evening before the <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">hibachi show</Link> begins.
             </p>
 
             <p>
-                Whether you&apos;re a Japanese beer connoisseur or trying your first Sapporo, our bartenders
-                are happy to guide you to the perfect drink for your meal. That&apos;s been the Jinbeh
+                Whether you're a Japanese beer connoisseur or trying your first Sapporo, our bartenders
+                are happy to guide you to the perfect drink for your meal. That's been the Jinbeh
                 way since 1988.
             </p>
 
@@ -203,7 +203,8 @@ export default function BeerHardSeltzer() {
                 <strong>Bartender's recommendation:</strong> Start with a Sapporo draft — it's our #1 seller for a reason. If you're having hibachi, order your beer when the chef starts cooking; the cold crispness is perfect alongside sizzling steak and fried rice. For sushi, try Kirin Ichiban — its slightly fuller body pairs beautifully with raw fish. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, Sapporo drafts are discounted, making it the perfect time to explore our Japanese beer lineup.
             </ProTip>
 
-            <LocationCTA location="both" />
+            <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { Noto_Serif_JP, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import MobileStickyCTA from "@/components/MobileStickyCTA";
+
+const notoSerif = Noto_Serif_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-heading",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-body",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jinbeh.com"),
@@ -243,20 +257,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${notoSerif.variable} ${sourceSans.variable}`}>
       <head>
         {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#1a1a1a" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        {/* Preconnect for performance - critical third-party origins */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://player.vimeo.com" />
-        <link rel="preconnect" href="https://i.vimeocdn.com" />
-        <link rel="preconnect" href="https://f.vimeocdn.com" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        {/* Preconnect for performance - only actively used third-party origins */}
         <link rel="dns-prefetch" href="https://www.opentable.com" />
 
         {/* Prefetch key internal pages for instant navigation */}
@@ -264,17 +271,11 @@ export default function RootLayout({
         <link rel="prefetch" href="/lewisville" />
         <link rel="prefetch" href="/menu" />
 
-        {/* Google Fonts with display=swap for better LCP */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-
         {/* Preload critical hero fallback image for faster LCP */}
         <link
           rel="preload"
           as="image"
-          href="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-006-orig-IMG_1848-1200w.webp"
+          href="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp"
           type="image/webp"
           fetchPriority="high"
         />
@@ -317,7 +318,6 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
-        <MobileStickyCTA />
       </body>
     </html>
   );

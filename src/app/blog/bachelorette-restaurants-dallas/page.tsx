@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations | Jinbeh",
@@ -87,7 +87,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 3, "name": "Private Events", "item": "https://jinbeh.com/private-dining" },
         { "@type": "ListItem", "position": 4, "name": "Best Bachelorette Restaurants Dallas" },
     ],
 };
@@ -122,7 +122,7 @@ export default function BacheloretteRestaurantsDallas() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/celebrations" className="hover:text-white">Celebrations</Link>
+                        <Link href="/celebrations" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -416,6 +416,7 @@ export default function BacheloretteRestaurantsDallas() {
                                         <strong>Bachelorette party insider tip:</strong> Start your celebration with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> sake cocktails at the bar, then move to the hibachi table for dinner and a show. For groups of 8+, ask about our semi-private dining area for a more exclusive experience. Our lychee martini is a bride-squad favorite — reviewers call it "a must-order." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bachelorette dinner →</Link>
                                     </ProTip>
 
+                                    <PillarCTA type="reservations" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

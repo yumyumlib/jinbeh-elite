@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Ramune Soda: Unique Flavors & Marble Magic | Jinbeh",
@@ -45,7 +46,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Ramune Soda Guide: How to Open & Enjoy Japan's Iconic Drink" },
     ],
 };
@@ -60,7 +61,7 @@ export default function RamuneSodaGuide() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/beverages">Beverages</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/bar">Menu</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍹 Beverages</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Ramune Soda: Unique Flavors & Marble Magic</h1>
@@ -225,12 +226,7 @@ export default function RamuneSodaGuide() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQs</h2>
                             <div className="space-y-3">
-                                {faqs.map((faq, i) => (
-                                    <details key={i} className="group bg-warm-ivory rounded-xl">
-                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{faq.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                        <div className="px-5 pb-5 text-charcoal/80">{faq.answer}</div>
-                                    </details>
-                                ))}
+                                <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                             </div>
 
                             <div className="mt-12">
@@ -238,7 +234,8 @@ export default function RamuneSodaGuide() {
                                     <strong>Ramune pairing tip:</strong> At Jinbeh, Ramune is the perfect non-alcoholic companion for spicy dishes. The carbonation and sweetness cut through the heat of our wasabi and spicy tuna rolls. Kids love it too—ask your server for a Ramune to make the meal extra fun! For adults, pair your Ramune with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake sampler</Link> for a complete Japanese beverage experience.
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Best Hibachi Dallas TX: Top Restaurants & Experiences | Jinbeh",
@@ -75,25 +77,25 @@ const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
+        "@type": " Question ",
+name: faq.question,
+    acceptedAnswer: {
+            " @type": " Answer ",
+    text: faq.answer,
         },
     })),
 };
 
 
 const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
-        { "@type": "ListItem", "position": 4, "name": "Best Hibachi Dallas TX: Top Japanese Steakhouses" },
-    ],
+    " @context": " https://schema.org",
+    " @type": " BreadcrumbList ",
+    " itemListElement ": [
+    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 3, " name ": " Menu ", " item ": " https://jinbeh.com/menu" },
+    { " @type ": " ListItem ", " position ": 4, " name ": " Best Hibachi Dallas TX: Top Japanese Steakhouses " },
+],
 };
 
 export default function BestHibachiDallas() {
@@ -120,7 +122,7 @@ export default function BestHibachiDallas() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Locations</Link>
+                        <Link href="/#locations" className="hover:text-white">Locations</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -250,18 +252,24 @@ export default function BestHibachiDallas() {
                                     </table>
                                 </div>
 
-                                {/* Image Gallery */}
+                                
                                 <div className="my-12">
                                     <div className="grid grid-cols-3 gap-4">
+                                        <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-2xl overflow-hidden group">
                                             <Image src="/images/blog/3-C060324-6364.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-2xl overflow-hidden group">
                                             <Image src="/images/blog/4-C060324-6380.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-2xl overflow-hidden group">
                                             <Image src="/images/blog/5-C060324-6397.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                         </div>
+                                    </BlurFade>
                                     </div>
                                 </div>
 
@@ -315,21 +323,12 @@ export default function BestHibachiDallas() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Restaurants with Private Rooms Near Me: Exclusive Dining Venues | Jinbeh",
@@ -89,7 +89,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 3, "name": "Private Events & Dining", "item": "https://jinbeh.com/private-dining" },
         { "@type": "ListItem", "position": 4, "name": "Restaurants with Private Rooms in DFW: Best Private Dining" },
     ],
 };
@@ -124,7 +124,7 @@ export default function RestaurantsPrivateRooms() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/celebrations" className="hover:text-white">Events</Link>
+                        <Link href="/private-dining" className="hover:text-white">Private Events</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -225,6 +225,15 @@ export default function RestaurantsPrivateRooms() {
                                             <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Intimate Gatherings</h4>
                                             <p className="text-charcoal/70 text-sm">Family dinners and close friend celebrations</p>
                                         </div>
+                                    </div>
+
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
+                                        <Image
+                                            src="/images/instagram/fried-roll-bar-ambiance.jpg"
+                                            alt="Fried sushi roll with intimate bar ambiance"
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -374,7 +383,7 @@ export default function RestaurantsPrivateRooms() {
                                     </ul>
 
                                     <p>
-                                        Both locations feature private dining capabilities with dedicated event coordinators, flexible menus, and professional service. Learn more about <Link href="/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
+                                        Both locations feature private dining capabilities with dedicated event coordinators, flexible menus, and professional service. Learn more about <Link href="/blog/group-dining-venues" className="text-accent-red hover:underline">group dining</Link> or <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> today.
                                     </p>
                                 </div>
 
@@ -454,6 +463,7 @@ export default function RestaurantsPrivateRooms() {
                                         <strong>Private dining insider tip:</strong> At Jinbeh, request the secluded hibachi section in Frisco for groups of 15-30—it has dividers that create a semi-private experience with the full hibachi show. For smaller gatherings (4-8), our sushi bar private booths offer an intimate setting. Book 3 weeks ahead for weekends, and ask about our preset menu options to simplify ordering for large groups. <Link href="/private-dining" className="text-accent-red hover:underline">Book private dining →</Link>
                                     </ProTip>
 
+                                    <PillarCTA type="vip" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>
@@ -498,9 +508,9 @@ export default function RestaurantsPrivateRooms() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog/category/celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🎉 Events</Link>
-                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍽️ Dining</Link>
-                                        <Link href="/blog/category/celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">📍 Venues</Link>
+                                        <Link href="/private-dining" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">🎉 Events</Link>
+                                        <Link href="/menu" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍽️ Dining</Link>
+                                        <Link href="/" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">📍 Venues</Link>
                                     </div>
                                 </div>
                             </div>

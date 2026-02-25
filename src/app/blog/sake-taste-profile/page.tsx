@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
     title: "Sake Taste & Flavor Profile | Complete Tasting Guide",
@@ -84,7 +85,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Beverages", "item": "https://jinbeh.com/blog/category/beverages" },
+        { "@type": "ListItem", "position": 3, "name": "Bar & Beverages", "item": "https://jinbeh.com/bar" },
         { "@type": "ListItem", "position": 4, "name": "Sake Taste Profile Guide: From Sweet to Dry" },
     ],
 };
@@ -113,7 +114,7 @@ export default function SakeTasteProfile() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/beverages" className="hover:text-white">Beverages</Link>
+                        <Link href="/bar" className="hover:text-white">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -299,20 +300,28 @@ export default function SakeTasteProfile() {
                                         </div>
                                     </div>
 
-                                    {/* Image Gallery */}
+                                    
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                                        <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake tasting" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/7-C060324-6447.jpg" alt="Sake glass" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake varieties" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
+                                        <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
                                             <Image src="/images/blog/14-C060324-6596.jpg" alt="Japanese beverage" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
+                                    </BlurFade>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -431,6 +440,7 @@ export default function SakeTasteProfile() {
                                         <strong>Sake tasting at Jinbeh:</strong> Ask our bartenders for the "flavor discovery" flight—three sakes specifically chosen to showcase the spectrum from sweet to dry. Start with Nigori (sweet, creamy), then Junmai (full, umami-rich), and finish with Daiginjo (light, floral). Between sips, cleanse your palate with pickled ginger. Our <Link href="/bar" className="text-accent-red hover:underline">bar team</Link> will explain the tasting notes for each pour. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, flights are specially priced!
                                     </ProTip>
 
+                                    <PillarCTA type="hub" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

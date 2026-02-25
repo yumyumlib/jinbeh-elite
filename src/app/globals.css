@@ -30,9 +30,9 @@
   --accent-red-hover: #A60F1A;
   --deep-indigo-hover: #253557;
 
-  /* Typography */
-  --font-heading: "Noto Serif JP", "Yu Mincho", serif;
-  --font-body: "Source Sans Pro", "Open Sans", sans-serif;
+  /* Typography — values injected by next/font via CSS variables */
+  --font-heading: var(--font-heading, "Noto Serif JP", "Yu Mincho", serif);
+  --font-body: var(--font-body, "Source Sans 3", "Source Sans Pro", sans-serif);
   --font-accent: "Brush Script MT", cursive;
 
   /* Font Sizes */
@@ -1697,4 +1697,13 @@ footer button:focus-visible {
 .badge-gold {
   background-color: rgba(201, 162, 39, 0.1);
   color: var(--soft-gold);
+}
+
+/* ======================================
+   Performance: Content-Visibility
+   ====================================== */
+
+.content-lazy {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }

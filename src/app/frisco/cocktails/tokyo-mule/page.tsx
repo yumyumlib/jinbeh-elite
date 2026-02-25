@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tokyo Mule - Japanese Whiskey Cocktails Frisco",
+  title: "Tokyo Mule - Japanese Whiskey Cocktails Frisco | Jinbeh",
   description: "Tokyo Mule with Japanese whiskey, ginger & lime at Jinbeh Frisco. Premium happy hour cocktails. Best Japanese restaurant drinks. Call (214) 619-1200.",
   keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","tokyo mule","whiskey cocktails","ginger beer","jinbeh frisco","japanese restaurant"],
   openGraph: {

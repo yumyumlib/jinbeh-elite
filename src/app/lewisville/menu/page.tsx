@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
+import { BentoGrid, BentoCard } from "@/components/ui/BentoGrid";
 
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Lewisville | Hibachi & Sushi Menu Near Vista Ridge Mall",
@@ -247,74 +248,44 @@ export default function LewisvilleMenuPage() {
           </div>
         </section>
 
-        {/* Menu Categories */}
-        {menuCategories.map((category, index) => (
-          <section
-            key={category.id}
-            id={category.id}
-            className={`py-20 ${index % 2 === 0 ? "bg-warm-ivory" : "bg-white"}`}
-          >
-            <div className="container mx-auto px-6">
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-                {/* Image */}
-                <div className={`relative ${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+        {/* Menu Categories via BentoGrid */}
+        <section className="py-20 bg-warm-ivory">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <BentoGrid className="grid-cols-1 lg:grid-cols-2 gap-8">
+              {menuCategories.map((category) => (
+                <BentoCard
+                  key={category.id}
+                  name={category.title}
+                  description={category.description}
+                  href={category.pdfUrl || "#"}
+                  cta={category.pdfUrl ? `View Full ${category.title} PDF` : "View Menu"}
+                  className="min-h-[500px]"
+                  background={
                     <Image
                       src={category.image}
                       alt={category.title}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                  </div>
-                  {/* Decorative element */}
-                  <div className={`absolute -z-10 w-full h-full rounded-2xl bg-accent-red/10 ${index % 2 === 0 ? "-bottom-4 -right-4" : "-bottom-4 -left-4"}`} />
-                </div>
-
-                {/* Content */}
-                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                    {category.title}
-                  </h2>
-                  <p className="text-lg text-charcoal/70 mb-8">
-                    {category.description}
-                  </p>
-
-                  {/* Menu Items Preview */}
-                  <div className="space-y-4 mb-8">
+                  }
+                >
+                  <div className="space-y-3 mt-6">
                     {category.items.map((item) => (
-                      <div key={item.name} className="flex justify-between items-start border-b border-charcoal/10 pb-3">
-                        <div>
-                          <h3 className="font-medium text-charcoal">{item.name}</h3>
-                          <p className="text-sm text-charcoal/80">{item.description}</p>
-                        </div>
+                      <div key={item.name} className="border-b border-charcoal/10 pb-2">
+                        <h4 className="font-medium text-charcoal">{item.name}</h4>
+                        <p className="text-sm text-charcoal/80">{item.description}</p>
                       </div>
                     ))}
                   </div>
-
                   {category.note && (
-                    <p className="text-sm text-cedar-brown italic mb-6">
-                      {category.note}
-                    </p>
+                    <p className="text-sm text-cedar-brown italic mt-4">{category.note}</p>
                   )}
-
-                  {category.pdfUrl && (
-                    <a
-                      href={category.pdfUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 btn btn-primary"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      View Full {category.title} PDF
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </section>
-        ))}
+                </BentoCard>
+              ))}
+            </BentoGrid>
+          </div>
+        </section>
 
         {/* Order Online CTA */}
         <section className="py-16 bg-charcoal text-white">

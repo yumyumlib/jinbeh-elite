@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Lunch Specials Near You Today | Jinbeh",
@@ -62,7 +62,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/menu" },
         { "@type": "ListItem", "position": 4, "name": "Sushi Lunch Specials: Best Deals Near You" },
     ],
 };
@@ -97,7 +97,7 @@ export default function SushiLunchSpecials() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/best-of" className="hover:text-white">Deals</Link>
+                        <Link href="/blog" className="hover:text-white">Deals</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -380,6 +380,7 @@ export default function SushiLunchSpecials() {
                                         <strong>Jinbeh lunch insider tip:</strong> Visit between 11:30 AM and noon for the freshest lunch prep—our chefs prepare a new batch of rice and slice fish specifically for the lunch rush. Ask about the "lunch bento special" which isn't always on the printed menu. For groups of 4+, call ahead and we can have a custom lunch platter ready when you arrive. Pair with a midday <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">sake</Link> for a true Japanese lunch experience. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
                                     </ProTip>
 
+                                    <PillarCTA type="reservations" />
                                     <LocationCTA location="both" />
                                 </div>
                             </div>

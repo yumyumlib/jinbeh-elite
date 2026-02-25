@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Thanksgiving Dining Guide | Japanese Catering Frisco, DFW | Jinbeh",
@@ -112,7 +113,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Celebrations", "item": "https://jinbeh.com/blog/category/celebrations" },
+        { "@type": "ListItem", "position": 3, "name": "Private Events", "item": "https://jinbeh.com/private-dining" },
         { "@type": "ListItem", "position": 4, "name": "Thanksgiving Dining Guide: Best Restaurants Open in DFW" },
     ],
 };
@@ -145,9 +146,7 @@ export default function ThanksgivingDiningGuide() {
                             Blog
                         </Link>
                         <span>/</span>
-                        <Link href="/celebrations" className="hover:text-white transition-colors">
-                            Celebrations
-                        </Link>
+                        <Link href="/celebrations" className="hover:text-white transition-colors">Menu</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-accent-red mb-4">
@@ -678,17 +677,7 @@ export default function ThanksgivingDiningGuide() {
                                     </h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, i) => (
-                                            <details key={i} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal hover:bg-warm-ivory-dark transition-colors">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -712,7 +701,8 @@ export default function ThanksgivingDiningGuide() {
                                             <strong>Thanksgiving planning insider tip:</strong> For the best Thanksgiving experience at Jinbeh, book your table 2-3 weeks early—our hibachi tables fill up first! If you're ordering catering, request the "holiday platter upgrade" which includes seasonal garnishes and premium roll selections. For groups of 10+, we can set up a dedicated hibachi table where your whole party dines together. Mix sushi platters as appetizers with hibachi as the main course for the ultimate Thanksgiving feast. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
                                         </ProTip>
 
-                                        <LocationCTA location="both" />
+                                        <PillarCTA type="vip" />
+                                    <LocationCTA location="both" />
                                     </div>
                                 </div>
                             </div>
@@ -850,19 +840,19 @@ export default function ThanksgivingDiningGuide() {
                                         <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                         <div className="flex flex-wrap gap-2">
                                             <Link
-                                                href="/blog/category/cuisine"
+                                                href="/menu"
                                                 className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors"
                                             >
                                                 🍣 Cuisine
                                             </Link>
                                             <Link
-                                                href="/blog/category/local-guides"
+                                                href="/#locations"
                                                 className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
                                             >
                                                 🍽️ Dining
                                             </Link>
                                             <Link
-                                                href="/blog/category/celebrations"
+                                                href="/private-dining"
                                                 className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal hover:bg-warm-ivory-dark transition-colors"
                                             >
                                                 🎉 Events

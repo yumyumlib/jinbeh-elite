@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh",
@@ -358,7 +358,8 @@ export default function RomanticAnniversaryDinnersPage() {
         <strong>Anniversary dinner insider tip:</strong> At Jinbeh, request "Table 7" in Frisco or "Booth 3" in Lewisville for the most intimate seating. Mention your anniversary when booking—our team will prepare special touches including a complimentary dessert presentation. For milestone anniversaries (5th, 10th, 25th), ask about our private dining packages with champagne service. Book 3 weeks ahead for weekends. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="romantic-anniversary-dinners" />
     </ArticleLayout>

@@ -3,7 +3,8 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Terms of Service | Jinbeh Japanese Restaurant",
-  description: "Terms of Service for Jinbeh Japanese Restaurant website and services.",
+  description: "Terms of Service for Jinbeh Japanese Restaurant website and services. Review our reservation policies, allergen information, and website usage guidelines.",
+  keywords: ["jinbeh terms of service", "restaurant terms and conditions", "jinbeh reservation policy"],
 };
 
 export default function TermsOfServicePage() {

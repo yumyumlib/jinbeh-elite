@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
@@ -430,7 +430,8 @@ export default function FreeBirthdayFoodDealsPage() {
         <strong>Birthday freebie insider tip:</strong> At Jinbeh, mention your birthday when making a reservation and our team will prepare a complimentary birthday treat. The hibachi experience itself is the real gift — your chef performs fire tricks, knife skills, and the famous onion volcano right at your table. Pro move: start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks before the show. <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
 
       {/* Related Reading */}
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">

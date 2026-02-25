@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Open Japanese Restaurants Near Me: Find the Best | Jinbeh",
@@ -45,7 +46,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Locations", "item": "https://jinbeh.com/#locations" },
         { "@type": "ListItem", "position": 4, "name": "Japanese Restaurants Near Me in DFW" },
     ],
 };
@@ -61,7 +62,7 @@ export default function JapaneseRestaurantsNearMe() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/#locations">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Restaurants Near Me</h1>
@@ -138,26 +139,26 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
-                                    { emoji: "🍣", name: "Sushi Bars", desc: "Specialty venues focusing on sushi, sashimi, and omakase experiences with direct chef interaction. Learn about different ", link: { text: "types of sushi", href: "/blog/types-of-sushi" }, desc2: " and explore our guide for " },
-                                    { emoji: "🍜", name: "Ramen Houses", desc: "Casual, cozy spots serving authentic regional ramen styles with rich broths and perfect noodles." },
-                                    { emoji: "🔥", name: "Teppanyaki Steakhouses", desc: "Entertainment dining with chef performances cooking on iron griddles right before you. Experience the ", link: { text: "teppanyaki experience", href: "/blog/hibachi-vs-teppanyaki-explained" }, desc2: " firsthand." },
-                                    { emoji: "🏮", name: "Izakayas", desc: "Japanese pubs serving small plates, drinks, and casual authentic fare in a social setting." }
+                                    { emoji: "🍣", name: "Sushi Bars", desc: "Specialty venues focusing on sushi, sashimi, and omakase experiences with direct chef interaction. Learn about different ", link: {text: "types of sushi", href: "/blog/types-of-sushi" }, desc2: " and explore our guide for " },
+                                {emoji: "🍜", name: "Ramen Houses", desc: "Casual, cozy spots serving authentic regional ramen styles with rich broths and perfect noodles." },
+                                {emoji: "🔥", name: "Teppanyaki Steakhouses", desc: "Entertainment dining with chef performances cooking on iron griddles right before you. Experience the ", link: {text: "teppanyaki experience", href: "/blog/hibachi-vs-teppanyaki-explained" }, desc2: " firsthand." },
+                                {emoji: "🏮", name: "Izakayas", desc: "Japanese pubs serving small plates, drinks, and casual authentic fare in a social setting." }
                                 ].map(x => (
-                                    <div key={x.name} className="bg-warm-ivory rounded-xl p-5">
-                                        <span className="text-3xl block mb-2">{x.emoji}</span>
-                                        <h3 className="font-bold text-charcoal mb-2">{x.name}</h3>
-                                        <p className="text-sm text-charcoal/70">
-                                            {x.desc}
-                                            {x.link && (
-                                                <>
-                                                    <Link href={x.link.href} className="text-accent-red hover:underline font-semibold">
-                                                        {x.link.text}
-                                                    </Link>
-                                                    {x.desc2}
-                                                </>
-                                            )}
-                                        </p>
-                                    </div>
+                                <div key={x.name} className="bg-warm-ivory rounded-xl p-5">
+                                    <span className="text-3xl block mb-2">{x.emoji}</span>
+                                    <h3 className="font-bold text-charcoal mb-2">{x.name}</h3>
+                                    <p className="text-sm text-charcoal/70">
+                                        {x.desc}
+                                        {x.link && (
+                                            <>
+                                                <Link href={x.link.href} className="text-accent-red hover:underline font-semibold">
+                                                    {x.link.text}
+                                                </Link>
+                                                {x.desc2}
+                                            </>
+                                        )}
+                                    </p>
+                                </div>
                                 ))}
                             </div>
 
@@ -215,16 +216,11 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>
                             <div className="space-y-3">
-                                {faqs.map((faq, i) => (
-                                    <details key={i} className="group bg-warm-ivory rounded-xl">
-                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{faq.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                        <div className="px-5 pb-5 text-charcoal/80">{faq.answer}</div>
-                                    </details>
-                                ))}
+                                <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Discover Authentic Japanese Dining at Jinbeh</h2>
-                            <p className="text-charcoal/80 mb-6">In the Dallas-Fort Worth area? <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh</Link> offers authentic sushi, hibachi performances, and warm hospitality. Family-owned since 1988, we're the <Link href="/best-hibachi-dallas-tx" className="text-accent-red hover:underline">best hibachi in Dallas</Link> with convenient locations. Learn more about <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">how to order sushi</Link> to get the most from your visit.</p>
+                            <p className="text-charcoal/80 mb-6">In the Dallas-Fort Worth area? <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh</Link> offers authentic sushi, hibachi performances, and warm hospitality. Family-owned since 1988, we're the <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline">best hibachi in Dallas</Link> with convenient locations. Learn more about <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">how to order sushi</Link> to get the most from your visit.</p>
 
                             <div className="grid md:grid-cols-2 gap-6 my-8">
                                 <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
@@ -245,7 +241,8 @@ export default function JapaneseRestaurantsNearMe() {
                                     <strong>Japanese dining insider tip:</strong> When searching for authentic Japanese restaurants, look for places that have been open for 10+ years—longevity signals quality. At Jinbeh (since 1988), ask for a seat at the sushi bar to watch our chefs work. For the best value, visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted appetizers and drinks, then stay for hibachi. First-timers: start with a California roll and miso soup, then work up to our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience.
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

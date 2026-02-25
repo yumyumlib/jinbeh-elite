@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Japanese Restaurants Lewisville TX: Top Picks | Jinbeh",
@@ -31,20 +32,20 @@ const faqs = [
 const schemas = [
     { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Restaurants Lewisville TX", datePublished: "2026-01-23", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } }))
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type ": " Question ", name: f.question, acceptedAnswer: { " @type": " Answer ", text: f.answer } }))
     }
 ];
 
 
 const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
-        { "@type": "ListItem", "position": 4, "name": "Best Japanese Restaurants Lewisville TX" },
-    ],
+    " @context": " https://schema.org",
+    " @type": " BreadcrumbList ",
+    " itemListElement ": [
+    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+    { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
+    { " @type ": " ListItem ", " position ": 4, " name ": " Best Japanese Restaurants Lewisville TX " },
+],
 };
 
 export default function JapaneseRestaurantsLewisville() {
@@ -58,7 +59,7 @@ export default function JapaneseRestaurantsLewisville() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Locations</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/#locations">Locations</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">📍 Locations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Restaurants Lewisville TX</h1>
@@ -94,27 +95,22 @@ export default function JapaneseRestaurantsLewisville() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Why Choose Jinbeh Lewisville</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
-                                {[{ e: "🔥", t: "Hibachi Theater", d: "Full chef performance at your table" }, { e: "🍣", t: "Fresh Sushi Bar", d: "Made-to-order by trained chefs" }, { e: "🎉", t: "Celebration Ready", d: "Birthdays, anniversaries, groups" }, { e: "📍", t: "Easy Access", d: "Off I-35E near Vista Ridge Mall" }].map(x => (
-                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                        <span className="text-3xl block mb-2">{x.e}</span>
-                                        <h3 className="font-bold">{x.t}</h3>
-                                        <p className="text-sm text-charcoal/70">{x.d}</p>
-                                    </div>
+                                {[{ e: "🔥", t: "Hibachi Theater", d: "Full chef performance at your table" }, {e: "🍣", t: "Fresh Sushi Bar", d: "Made-to-order by trained chefs" }, {e: "🎉", t: "Celebration Ready", d: "Birthdays, anniversaries, groups" }, {e: "📍", t: "Easy Access", d: "Off I-35E near Vista Ridge Mall" }].map(x => (
+                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                    <span className="text-3xl block mb-2">{x.e}</span>
+                                    <h3 className="font-bold">{x.t}</h3>
+                                    <p className="text-sm text-charcoal/70">{x.d}</p>
+                                </div>
                                 ))}
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Lewisville regulars' favorites:</strong> Start with the hibachi — it's the signature experience, and reviewers rave about the entertaining chef shows. For sushi, the Dallas Roll and Volcano Roll are consistent crowd favorites. Locals also swear by the crab rangoon, calling them &quot;the best they've ever had.&quot; <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                <strong>Lewisville regulars' favorites:</strong> Start with the hibachi — it's the signature experience, and reviewers rave about the entertaining chef shows. For sushi, the Dallas Roll and Volcano Roll are consistent crowd favorites. Locals also swear by the crab rangoon, calling them "the best they've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions About Japanese Dining in Lewisville</h2>
                             <div className="space-y-3">
-                                {faqs.map((faq, i) => (
-                                    <details key={i} className="group bg-warm-ivory rounded-xl">
-                                        <summary className="p-5 cursor-pointer font-semibold flex justify-between">{faq.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                        <div className="px-5 pb-5 text-charcoal/80">{faq.answer}</div>
-                                    </details>
-                                ))}
+                                <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Other Dining Options in Lewisville</h2>
@@ -131,7 +127,8 @@ export default function JapaneseRestaurantsLewisville() {
                                 </div>
                             </div>
 
-                            <LocationCTA location="lewisville" />
+                            <PillarCTA type="vip" />
+                                    <LocationCTA location="lewisville" />
                         </article>
 
                         <aside className="lg:col-span-1">

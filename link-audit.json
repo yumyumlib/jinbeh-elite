@@ -1,0 +1,333 @@
+{
+  "total": 234,
+  "broken": [
+    {
+      "file": "src/app/celebrations/fathers-day/page.tsx",
+      "link": "/menu/steak"
+    },
+    {
+      "file": "src/app/celebrations/fathers-day/page.tsx",
+      "link": "/menu/sake"
+    },
+    {
+      "file": "src/app/celebrations/mid-autumn-festival/page.tsx",
+      "link": "/menu/sashimi"
+    },
+    {
+      "file": "src/app/celebrations/mid-autumn-festival/page.tsx",
+      "link": "/menu/sake"
+    },
+    {
+      "file": "src/app/celebrations/date-night/page.tsx",
+      "link": "/menu/specialty-rolls"
+    },
+    {
+      "file": "src/app/celebrations/date-night/page.tsx",
+      "link": "/menu/sake"
+    },
+    {
+      "file": "src/app/celebrations/diwali/page.tsx",
+      "link": "/menu/vegetarian"
+    },
+    {
+      "file": "src/app/celebrations/mothers-day/page.tsx",
+      "link": "/menu/sashimi"
+    },
+    {
+      "file": "src/app/celebrations/mothers-day/page.tsx",
+      "link": "/menu/specialty-rolls"
+    },
+    {
+      "file": "src/app/celebrations/lunar-new-year/page.tsx",
+      "link": "/menu/sashimi"
+    },
+    {
+      "file": "src/app/celebrations/lunar-new-year/page.tsx",
+      "link": "/menu/sake"
+    },
+    {
+      "file": "src/app/private-dining/page.tsx",
+      "link": "/blog/birthday-party-venues-frisco"
+    },
+    {
+      "file": "src/app/blog/sake-alcohol-strength/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/sushi-platters-near-me/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/thanksgiving-dining-guide/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/thanksgiving-dining-guide/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/thanksgiving-dining-guide/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/best-restaurants-stonebriar/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/sushi-cooking-classes/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sushi-cooking-classes/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sushi-cooking-classes/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sushi-cooking-classes/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sake-pairing-guide/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sake-pairing-guide/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/sake-pairing-guide/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/sushi-lunch-specials/page.tsx",
+      "link": "/blog/category/best-of"
+    },
+    {
+      "file": "src/app/blog/best-hibachi-dallas-tx/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/fine-dining-frisco/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/sushi-identification-chart/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/how-to-eat-sushi-guide/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sake-sushi-menu-pairings/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/sake-sushi-menu-pairings/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/sake-sushi-menu-pairings/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/sake-sushi-menu-pairings/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/what-is-omakase/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/japanese-whiskey-guide/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/japanese-restaurants-near-me/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/japanese-restaurants-near-me/page.tsx",
+      "link": "/best-hibachi-dallas-tx"
+    },
+    {
+      "file": "src/app/blog/best-seafood-dallas/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/group-dining-venues/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/best-happy-hour-frisco-tx/page.tsx",
+      "link": "/blog/category/best-of"
+    },
+    {
+      "file": "src/app/blog/best-happy-hour-frisco-tx/page.tsx",
+      "link": "/blog/category/best-of"
+    },
+    {
+      "file": "src/app/blog/best-happy-hour-frisco-tx/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/best-happy-hour-frisco-tx/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/japanese-cocktails/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/sake-taste-profile/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/date-night-restaurants-frisco/page.tsx",
+      "link": "/blog/category/best-of"
+    },
+    {
+      "file": "src/app/blog/fast-casual-dining-jinbeh/page.tsx",
+      "link": "/blog/best-vegetarian-options-japanese-restaurant"
+    },
+    {
+      "file": "src/app/blog/things-to-do-frisco/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/popular-japanese-culture/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/best-asian-food-dallas/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/best-sushi-frisco/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/discover-teppanyaki/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/omakase-dining-guide/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/asian-cuisine-dallas/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/top-frisco-restaurants/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/top-frisco-restaurants/page.tsx",
+      "link": "/best-sushi-frisco"
+    },
+    {
+      "file": "src/app/blog/top-frisco-restaurants/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/top-frisco-restaurants/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/top-frisco-restaurants/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/japanese-beverages-guide/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/hibachi-catering-dfw/page.tsx",
+      "link": "/blog/category/best-of"
+    },
+    {
+      "file": "src/app/blog/hibachi-catering-dfw/page.tsx",
+      "link": "/group-dining-venues"
+    },
+    {
+      "file": "src/app/blog/ramune-soda-guide/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/beer-hard-seltzer/page.tsx",
+      "link": "/blog/sake-taste-guide"
+    },
+    {
+      "file": "src/app/blog/japanese-restaurants-lewisville/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/restaurants-private-rooms/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/restaurants-private-rooms/page.tsx",
+      "link": "/group-dining-venues"
+    },
+    {
+      "file": "src/app/blog/restaurants-private-rooms/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/restaurants-private-rooms/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/restaurants-private-rooms/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/best-sushi-dallas/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/types-of-sushi/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/seafood-lewisville/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/best-steak-near-me/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/yamazaki-whiskey-guide/page.tsx",
+      "link": "/blog/category/beverages"
+    },
+    {
+      "file": "src/app/blog/best-steakhouses-lewisville/page.tsx",
+      "link": "/blog/category/local-guides"
+    },
+    {
+      "file": "src/app/blog/sashimi-vs-sushi/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/blog/large-group-dining/page.tsx",
+      "link": "/blog/category/celebrations"
+    },
+    {
+      "file": "src/app/blog/best-salmon-sashimi/page.tsx",
+      "link": "/blog/category/cuisine"
+    },
+    {
+      "file": "src/app/lewisville/page.tsx",
+      "link": "/menus/lewisville-beverage-menu.pdf"
+    },
+    {
+      "file": "src/app/frisco/page.tsx",
+      "link": "/menus/frisco-beverage-menu.pdf"
+    }
+  ]
+}

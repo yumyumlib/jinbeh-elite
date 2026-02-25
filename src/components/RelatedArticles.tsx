@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import contentClusters from "@/data/content-clusters.json";
+import { MagicCard } from "@/components/ui/magic-card";
 
 interface RelatedArticlesProps {
   currentSlug: string;
@@ -123,12 +123,16 @@ export default function RelatedArticles({ currentSlug, maxArticles = 4 }: Relate
               <li key={article.slug}>
                 <Link
                   href={`/blog/${article.slug}`}
-                  className="group flex items-start gap-3 p-3 -mx-3 rounded-lg hover:bg-white transition-colors"
+                  className="block"
                 >
-                  <div className="w-2 h-2 mt-2 rounded-full bg-accent-red group-hover:bg-deep-indigo transition-colors flex-shrink-0" />
-                  <span className="text-charcoal group-hover:text-deep-indigo transition-colors">
-                    {article.title}
-                  </span>
+                  <MagicCard className="p-4" gradientColor="rgba(193, 18, 31, 0.1)" gradientSize={150}>
+                    <div className="group flex items-start gap-3">
+                      <div className="w-2 h-2 mt-2 rounded-full bg-accent-red group-hover:bg-deep-indigo transition-colors flex-shrink-0" />
+                      <span className="text-charcoal group-hover:text-deep-indigo transition-colors font-medium">
+                        {article.title}
+                      </span>
+                    </div>
+                  </MagicCard>
                 </Link>
               </li>
             ))}
@@ -147,12 +151,16 @@ export default function RelatedArticles({ currentSlug, maxArticles = 4 }: Relate
               <li key={article.slug}>
                 <Link
                   href={`/blog/${article.slug}`}
-                  className="group flex items-start gap-3 p-3 -mx-3 rounded-lg hover:bg-white transition-colors"
+                  className="block"
                 >
-                  <div className="w-2 h-2 mt-2 rounded-full bg-soft-gold group-hover:bg-accent-red transition-colors flex-shrink-0" />
-                  <span className="text-charcoal group-hover:text-deep-indigo transition-colors">
-                    {article.title}
-                  </span>
+                  <MagicCard className="p-4" gradientColor="rgba(201, 162, 39, 0.15)" gradientSize={150}>
+                    <div className="group flex items-start gap-3">
+                      <div className="w-2 h-2 mt-2 rounded-full bg-soft-gold group-hover:bg-accent-red transition-colors flex-shrink-0" />
+                      <span className="text-charcoal group-hover:text-deep-indigo transition-colors font-medium">
+                        {article.title}
+                      </span>
+                    </div>
+                  </MagicCard>
                 </Link>
               </li>
             ))}

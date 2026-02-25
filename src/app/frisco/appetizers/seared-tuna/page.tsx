@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Seared Ahi Tuna Frisco | Pepper-Crusted Premium Fish",
+  title: "Seared Ahi Tuna Frisco | Pepper-Crusted Premium Fish | Jinbeh",
   description: "Seared ahi tuna with wasabi aioli at Jinbeh Frisco. 100-150 calories, 20g protein, omega-3 rich. Premium appetizer with healthy benefits.",
   keywords: ["japanese appetizers frisco","seared tuna frisco","best sushi frisco tx","ahi tuna appetizer","pepper-crusted tuna","healthy appetizer frisco","tuna tartare"],
   openGraph: {

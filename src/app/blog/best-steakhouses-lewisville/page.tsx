@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Top Steakhouses in Lewisville TX: Best Steak Spots | Jinbeh",
@@ -79,7 +80,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Lewisville Dining", "item": "https://jinbeh.com/lewisville" },
         { "@type": "ListItem", "position": 4, "name": "Top Steakhouses in Lewisville TX: Best Steak Spots" },
     ],
 };
@@ -108,7 +109,7 @@ export default function BestSteakhousesLewisville() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Local Guides</Link>
+                        <Link href="/lewisville" className="hover:text-white">Lewisville Dining</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -140,15 +141,15 @@ export default function BestSteakhousesLewisville() {
                                         <strong>Looking for the perfect steak in Lewisville?</strong> Whether you crave a
                                         classic Texas-cut ribeye or a sizzling hibachi <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">filet mignon cooked at your table</Link>,
                                         Lewisville has steakhouse options to satisfy every appetite. From family-owned gems
-                                        with decades of tradition to national chains, here&apos;s your guide to the best steak
+                                        with decades of tradition to national chains, here's your guide to the best steak
                                         dining in Lewisville and the surrounding area.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            &quot;Our guests tell us our Filet and Lobster Tail combo is a must-try. When your
+                                            "Our guests tell us our Filet and Lobster Tail combo is a must-try. When your
                                             steak is cooked by a skilled teppanyaki chef right at your table, you taste the
-                                            difference. That&apos;s been the Jinbeh experience since 1988.&quot;
+                                            difference. That's been the Jinbeh experience since 1988."
                                         </p>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
@@ -158,13 +159,22 @@ export default function BestSteakhousesLewisville() {
                                         source="Texas Beef Council & USDA"
                                     />
 
+                                    <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg">
+                                        <Image
+                                            src="/images/instagram/hibachi-steak-plate.jpg"
+                                            alt="Sizzling hibachi steak plate at Jinbeh Lewisville"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                         🥩 Why Lewisville Is a Great Steak Town
                                     </h2>
 
                                     <p>
-                                        Lewisville sits at the crossroads of I-35E and some of DFW&apos;s best dining corridors. You&apos;ll
-                                        find everything from quick-service steaks to fine dining experiences, plus something you won&apos;t
+                                        Lewisville sits at the crossroads of I-35E and some of DFW's best dining corridors. You'll
+                                        find everything from quick-service steaks to fine dining experiences, plus something you won't
                                         find at most steakhouses: <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi-style teppanyaki cooking</Link> that
                                         turns your steak dinner into dinner and a show.
                                     </p>
@@ -210,7 +220,7 @@ export default function BestSteakhousesLewisville() {
                                                 <td className="p-4">Japanese Hibachi + Sushi</td>
                                                 <td className="p-4">Entertainment, celebrations, groups</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4 text-green-600 italic">Minimal — &quot;outstanding service&quot;</td>
+                                                <td className="p-4 text-green-600 italic">Minimal — "outstanding service"</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Bistecca Italian</td>
@@ -262,7 +272,7 @@ export default function BestSteakhousesLewisville() {
                                             <p className="text-white/90 mb-4">
                                                 At most steakhouses, your steak arrives from the kitchen. At Jinbeh, it arrives
                                                 with a show. Our teppanyaki chefs slice, season, and flame-grill your filet mignon
-                                                right at the table while you watch. Guests consistently call the experience &quot;outstanding&quot;
+                                                right at the table while you watch. Guests consistently call the experience "outstanding"
                                                 and prefer us over the chains—because every meal here feels personal, not corporate.
                                             </p>
                                             <ul className="space-y-2 mb-6">
@@ -276,7 +286,7 @@ export default function BestSteakhousesLewisville() {
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>Full <Link href="/blog/types-of-sushi" className="text-soft-gold hover:underline">sushi bar</Link> if your party can&apos;t agree on steak</span>
+                                                    <span>Full <Link href="/blog/types-of-sushi" className="text-soft-gold hover:underline">sushi bar</Link> if your party can't agree on steak</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
@@ -300,11 +310,11 @@ export default function BestSteakhousesLewisville() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">&quot;The teppanyaki is amazing and delicious. Outstanding service—friendly and professional staff who provide an entertaining experience.&quot;</p>
+                                            <p className="text-charcoal/80 italic mb-3">"The teppanyaki is amazing and delicious. Outstanding service—friendly and professional staff who provide an entertaining experience."</p>
                                             <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Lewisville</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">&quot;We prefer Jinbeh over Benihana any day. The food is tastier, the service is more personal, and the chefs actually engage with you.&quot;</p>
+                                            <p className="text-charcoal/80 italic mb-3">"We prefer Jinbeh over Benihana any day. The food is tastier, the service is more personal, and the chefs actually engage with you."</p>
                                             <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Lewisville</p>
                                         </div>
                                     </div>
@@ -345,21 +355,12 @@ export default function BestSteakhousesLewisville() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        {faqs.map((faq, index) => (
-                                            <details key={index} className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                                <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                    {faq.question}
-                                                    <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                                </summary>
-                                                <div className="px-6 pb-6 text-charcoal/80">
-                                                    <p>{faq.answer}</p>
-                                                </div>
-                                            </details>
-                                        ))}
+                                        <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
                                     </div>
                                 </div>
 
-                                <LocationCTA location="lewisville" />
+                                <PillarCTA type="hub" />
+                                    <LocationCTA location="lewisville" />
                             </div>
                         </article>
 

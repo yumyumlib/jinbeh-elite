@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Popular Japanese Things: Iconic Cultural Treasures | Jinbeh",
@@ -41,7 +41,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Best Of", "item": "https://jinbeh.com/blog/category/best-of" },
+        { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://jinbeh.com/blog" },
         { "@type": "ListItem", "position": 4, "name": "Popular Japanese Culture: Food, Traditions & Trends" },
     ],
 };
@@ -57,7 +57,7 @@ export default function PopularJapaneseCulture() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/cuisine">Culture</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/menu">Culture</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🎌 Culture</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Popular Japanese Things</h1>
@@ -194,7 +194,8 @@ export default function PopularJapaneseCulture() {
                                     <strong>Japanese culture tip:</strong> At Jinbeh, you can experience multiple aspects of Japanese culture in one visit. Watch the artistry of our sushi chefs at the bar, enjoy the theatrical performance of hibachi cooking, and sample traditional beverages like <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake</Link> and <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline">Ramune soda</Link>. For a deeper dive, try our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience—it's the most culturally authentic way to dine!
                                 </ProTip>
 
-                                <LocationCTA location="both" />
+                                <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
                             </div>
                         </article>
 

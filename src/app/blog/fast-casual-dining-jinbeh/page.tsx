@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
@@ -67,10 +67,10 @@ export default function FastCasualDiningJinbeh() {
             <h2>Japanese Dining on Your Schedule</h2>
 
             <p>
-                &quot;Fast casual&quot; and &quot;Japanese restaurant&quot; might seem like an unusual combination. After
+                "Fast casual" and "Japanese restaurant" might seem like an unusual combination. After
                 all, Japanese cuisine is known for precision, artistry, and presentation—things that
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,
-                we&apos;ve spent 37 years learning how to deliver quality at every speed.
+                we've spent 37 years learning how to deliver quality at every speed.
             </p>
 
             <p>
@@ -103,21 +103,21 @@ export default function FastCasualDiningJinbeh() {
                 Our bento boxes are the ultimate work lunch: a balanced combination of protein, rice, salad,
                 and sides in one convenient box. Choose from chicken teriyaki, salmon, shrimp, or a
                 <Link href="/blog/best-vegetarian-options-japanese-restaurant" className="text-accent-red hover:underline"> vegetarian option</Link>.
-                Each box is a complete meal that&apos;s satisfying without being heavy.
+                Each box is a complete meal that's satisfying without being heavy.
             </p>
 
             <h3>🔥 Hibachi Lunch Specials</h3>
             <p>
                 Our <Link href="/blog/hibachi-lunch-ideas" className="text-accent-red hover:underline">hibachi lunch specials</Link> offer
-                the same tableside cooking experience at a great value. You&apos;ll get miso soup, house salad,
+                the same tableside cooking experience at a great value. You'll get miso soup, house salad,
                 your choice of grilled protein, fried rice, and vegetables. It takes a little longer than
-                the sushi bar (about 45-60 minutes with the show), but it&apos;s worth every minute.
+                the sushi bar (about 45-60 minutes with the show), but it's worth every minute.
             </p>
 
             <h2>The Jinbeh Difference: Why Quality Matters</h2>
 
             <p>
-                A lot of &quot;fast casual&quot; Japanese spots have popped up across DFW—many of them serving
+                A lot of "fast casual" Japanese spots have popped up across DFW—many of them serving
                 pre-made sushi from a case or reheated teriyaki from a steam table. We take a different
                 approach:
             </p>
@@ -126,13 +126,13 @@ export default function FastCasualDiningJinbeh() {
                 <li><strong>Everything made to order</strong> — No pre-rolled sushi sitting in a display case</li>
                 <li><strong>Fresh fish daily</strong> — We source quality ingredients, not shortcuts</li>
                 <li><strong>Skilled chefs, not assembly lines</strong> — Our sushi and hibachi chefs are trained professionals</li>
-                <li><strong>Real hospitality</strong> — Guests say our service is &quot;friendly and professional&quot;</li>
-                <li><strong>Family-owned since 1988</strong> — We care because it&apos;s personal</li>
+                <li><strong>Real hospitality</strong> — Guests say our service is "friendly and professional"</li>
+                <li><strong>Family-owned since 1988</strong> — We care because it's personal</li>
             </ul>
 
             <p>
-                As one reviewer put it: &quot;The food is tasty and enjoyable—you can tell the difference
-                between Jinbeh and the quick-serve Japanese places.&quot; That&apos;s the difference 37 years
+                As one reviewer put it: "The food is tasty and enjoyable—you can tell the difference
+                between Jinbeh and the quick-serve Japanese places." That's the difference 37 years
                 of experience makes.
             </p>
 
@@ -157,7 +157,8 @@ export default function FastCasualDiningJinbeh() {
                 catches your eye.
             </p>
 
-            <LocationCTA location="both" />
+            <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

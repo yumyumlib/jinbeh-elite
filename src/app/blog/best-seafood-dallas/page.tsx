@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
     title: "Best Seafood Restaurants in Dallas TX: Top Picks | Jinbeh",
@@ -45,7 +46,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Locations", "item": "https://jinbeh.com/#locations" },
         { "@type": "ListItem", "position": 4, "name": "Best Seafood Restaurants in Dallas TX" },
     ],
 };
@@ -61,7 +62,7 @@ export default function BestSeafoodDallas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
-                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/blog/category/local-guides">Dining</Link>
+                        <Link href="/">Home</Link>/<Link href="/blog">Blog</Link>/<Link href="/">Dining</Link>
                     </nav>
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🦞 Seafood Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Seafood Restaurants in Dallas TX</h1>
@@ -152,14 +153,10 @@ export default function BestSeafoodDallas() {
                             <p className="text-charcoal/80 mb-6">Known for its wide variety of fish and shellfish, Captain Dave's is a reliable choice for quality seafood. Whether you're looking for live lobster, fresh shrimp, or high-quality fish fillets, the knowledgeable staff is ready to help.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>
-                            {faqs.map((faq, i) => (
-                                <details key={i} className="group bg-warm-ivory rounded-xl mb-3">
-                                    <summary className="p-5 cursor-pointer font-semibold flex justify-between">{faq.question}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                    <div className="px-5 pb-5 text-charcoal/80">{faq.answer}</div>
-                                </details>
-                            ))}
+                            <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
 
-                            <LocationCTA location="both" />
+                            <PillarCTA type="catering" />
+                                    <LocationCTA location="both" />
                         </article>
 
                         <aside>

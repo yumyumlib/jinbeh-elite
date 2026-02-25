@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh",
@@ -275,7 +275,8 @@ export default function PickleballRestaurantsLewisvillePage() {
         <strong>Post-pickleball dining tip:</strong> Mention to your server that you just came from The Picklr—our staff loves hearing about your game! For the fastest post-game meal, try our lunch bento boxes (ready in 10-15 minutes). For a celebration after a tournament win, book a hibachi table—it's the ultimate team reward. Call <a href="tel:2144882224" className="text-accent-red hover:underline">(214) 488-2224</a> to reserve before your match!
       </ProTip>
 
-      <LocationCTA location="lewisville" />
+      <PillarCTA type="hub" />
+                                    <LocationCTA location="lewisville" />
 
       {/* Related Reading */}
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">

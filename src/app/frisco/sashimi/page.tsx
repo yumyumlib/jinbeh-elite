@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Explore Jinbeh Frisco's sashimi menu. Purity, premium fish, elegant simplicity. 7 delicious options from Salmon Sashimi to Omakase Selection. Near Stonebriar Centre, minutes from Legacy West.",
+  description: "Explore Jinbeh Frisco's sashimi menu featuring fresh salmon, tuna, yellowtail, octopus, and our premium omakase selection. Sliced to order by experienced chefs near Stonebriar Centre. menu. Purity, premium fish, elegant simplicity. 7 delicious options from Salmon Sashimi to Omakase Selection. Near Stonebriar Centre, minutes from Legacy West.",
   keywords: ["sashimi frisco", "best sashimi frisco", "sashimi menu frisco", "jinbeh sashimi", "japanese sashimi frisco", "sashimi", "raw fish", "sashimi platter", "fresh fish"],
   openGraph: {
     title: "Sashimi Menu | Jinbeh Frisco",

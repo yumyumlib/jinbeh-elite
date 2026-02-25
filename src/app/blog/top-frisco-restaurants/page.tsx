@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Top 10 Frisco Restaurants: Must-Try Dining Spots in Texas | Jinbeh",
@@ -88,7 +88,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Local Guides", "item": "https://jinbeh.com/blog/category/local-guides" },
+        { "@type": "ListItem", "position": 3, "name": "Locations", "item": "https://jinbeh.com/#locations" },
         { "@type": "ListItem", "position": 4, "name": "Best Restaurants Near Stonebriar Mall Frisco TX" },
     ],
 };
@@ -123,7 +123,7 @@ export default function TopFriscoRestaurants() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/local-guides" className="hover:text-white">Dining Guide</Link>
+                        <Link href="/" className="hover:text-white">Dining Guide</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-deep-indigo mb-4">
@@ -322,7 +322,7 @@ export default function TopFriscoRestaurants() {
                                     </h2>
 
                                     <p>
-                                        Ready to experience Frisco's dining excellence? Visit <Link href="/best-sushi-frisco" className="text-accent-red hover:underline">Jinbeh's Frisco location</Link> for authentic Japanese cuisine and unforgettable hibachi entertainment. For <Link href="/reservations" className="text-accent-red hover:underline">reservations</Link>, visit our location page or explore our <Link href="/catering" className="text-accent-red hover:underline">private events</Link> options for special celebrations.
+                                        Ready to experience Frisco's dining excellence? Visit <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">Jinbeh's Frisco location</Link> for authentic Japanese cuisine and unforgettable hibachi entertainment. For <Link href="/reservations" className="text-accent-red hover:underline">reservations</Link>, visit our location page or explore our <Link href="/catering" className="text-accent-red hover:underline">private events</Link> options for special celebrations.
                                     </p>
                                 </div>
 
@@ -402,6 +402,7 @@ export default function TopFriscoRestaurants() {
                                         <strong>Frisco dining insider tip:</strong> The best way to experience Frisco's dining scene is to make a night of it—start with Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted appetizers and drinks, then stay for a full hibachi dinner. Weeknight visits (Tue-Thu) offer shorter wait times and a more intimate chef experience. Want to try the best of our menu? Ask for the "Jinbeh Sampler" which lets you taste our top rolls alongside hibachi favorites. <a href="tel:2146191200" className="text-accent-red hover:underline">Reserve now: (214) 619-1200</a>
                                     </ProTip>
 
+                                    <PillarCTA type="reservations" />
                                     <LocationCTA location="frisco" />
                                 </div>
                             </div>
@@ -446,9 +447,9 @@ export default function TopFriscoRestaurants() {
                                 <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
                                     <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog/category/local-guides" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍣 Cuisine</Link>
-                                        <Link href="/blog/category/celebrations" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🎉 Events</Link>
+                                        <Link href="/" className="px-3 py-1 rounded-full text-sm font-medium bg-deep-indigo/10 text-deep-indigo hover:bg-deep-indigo/20 transition-colors">📍 Locations</Link>
+                                        <Link href="/menu" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🍣 Cuisine</Link>
+                                        <Link href="/private-dining" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors">🎉 Events</Link>
                                     </div>
                                 </div>
                             </div>

@@ -2,8 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
-
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Accordion } from "@/components/ui/accordion";
+import { BlurFade } from "@/components/ui/blur-fade";
 export const metadata: Metadata = {
     title: "Sushi Cooking Classes Near Me | Learn Sushi Making Today",
     description:
@@ -83,7 +84,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Japanese Cuisine", "item": "https://jinbeh.com/blog/category/cuisine" },
+        { "@type": "ListItem", "position": 3, "name": "Menu", "item": "https://jinbeh.com/menu" },
         { "@type": "ListItem", "position": 4, "name": "Sushi Cooking Classes Near Me in DFW: Learn to Make Sushi" },
     ],
 };
@@ -112,7 +113,7 @@ export default function SushiCookingClasses() {
                         <span>/</span>
                         <Link href="/blog" className="hover:text-white">Blog</Link>
                         <span>/</span>
-                        <Link href="/blog/category/cuisine" className="hover:text-white">Guides</Link>
+                        <Link href="/menu" className="hover:text-white">Guides</Link>
                     </nav>
 
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
@@ -310,20 +311,36 @@ export default function SushiCookingClasses() {
                                         </div>
                                     </div>
 
-                                    {/* Image Gallery */}
+                                    
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+                                        <BlurFade delay={0.1}>
+                                            <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
+                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                    </BlurFade>
+                                        </BlurFade>
+                                        <BlurFade delay={0.2}>
+                                            <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
+                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                    </BlurFade>
+                                        </BlurFade>
+                                        <BlurFade delay={0.3}>
+                                            <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
+                                                <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                    </BlurFade>
+                                        </BlurFade>
+                                        <BlurFade delay={0.4}>
+                                            <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
+                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                    </BlurFade>
+                                        </BlurFade>
                                     </div>
                                 </div>
 
@@ -332,61 +349,24 @@ export default function SushiCookingClasses() {
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mb-8">❓ Frequently Asked Questions</h2>
 
                                     <div className="space-y-4">
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What can I learn in a beginner sushi cooking class?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Beginner classes teach the fundamentals of sushi making including preparing sushi rice,
-                                                    selecting and slicing fish, rolling techniques for maki and hand rolls, and food safety
-                                                    practices. You'll learn proper knife skills and authentic Japanese techniques.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Are sushi cooking classes good for beginners?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Absolutely! Most sushi classes are designed with beginners in mind. Instructors teach
-                                                    step-by-step techniques and provide hands-on practice. No prior experience is necessary
-                                                    to start learning the art of sushi making.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What are the benefits of taking sushi cooking classes?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Benefits include developing valuable culinary skills, gaining cultural insight into Japanese
-                                                    cuisine, meeting new people in a social setting, learning about nutrition and healthy eating,
-                                                    and the ability to impress friends and family with homemade sushi.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What should I bring to a sushi cooking class?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Most classes provide all necessary materials including rice, fish, nori, and tools.
-                                                    Wear comfortable clothing and close-toed shoes. Some instructors may recommend bringing
-                                                    a small notebook to take notes and a container for leftovers.
-                                                </p>
-                                            </div>
-                                        </details>
+                                        <Accordion items={[
+                                            {
+                                                title: "What can I learn in a beginner sushi cooking class?",
+                                                content: "Beginner classes teach the fundamentals of sushi making including preparing sushi rice, selecting and slicing fish, rolling techniques for maki and hand rolls, and food safety practices. You'll learn proper knife skills and authentic Japanese techniques."
+                                            },
+                                            {
+                                                title: "Are sushi cooking classes good for beginners?",
+                                                content: "Absolutely! Most sushi classes are designed with beginners in mind. Instructors teach step-by-step techniques and provide hands-on practice. No prior experience is necessary to start learning the art of sushi making."
+                                            },
+                                            {
+                                                title: "What are the benefits of taking sushi cooking classes?",
+                                                content: "Benefits include developing valuable culinary skills, gaining cultural insight into Japanese cuisine, meeting new people in a social setting, learning about nutrition and healthy eating, and the ability to impress friends and family with homemade sushi."
+                                            },
+                                            {
+                                                title: "What should I bring to a sushi cooking class?",
+                                                content: "Most classes provide all necessary materials including rice, fish, nori, and tools. Wear comfortable clothing and close-toed shoes. Some instructors may recommend bringing a small notebook to take notes and a container for leftovers."
+                                            }
+                                        ]} />
                                     </div>
                                 </div>
 
@@ -395,57 +375,16 @@ export default function SushiCookingClasses() {
                                         <strong>Sushi class tip from our chefs:</strong> The most important skill isn't cutting fish—it's making perfect rice. Practice the rice first: use short-grain Japanese rice, rinse until water runs clear, and season with rice vinegar while still warm. At Jinbeh, watch our sushi bar chefs in action during your visit—they're happy to explain techniques. Our <Link href="/events" className="text-accent-red hover:underline">events page</Link> has info on special dining experiences. For private group events, <a href="tel:2146191200" className="text-accent-red hover:underline">call Frisco: (214) 619-1200</a>
                                     </ProTip>
 
+                                    <PillarCTA type="vip" />
                                     <LocationCTA location="both" />
                                 </div>
-
-                                <RelatedArticles currentSlug="sushi-cooking-classes" />
                             </div>
                         </article>
 
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
-                                <h3 className="text-lg font-heading font-bold text-charcoal mb-6">Related Articles</h3>
-                                <div className="space-y-4">
-                                    <Link href="/blog/types-of-sushi" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Types of sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-soft-gold">🍣 Cuisine</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sushi Guide</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/how-to-eat-sushi-guide" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="How to eat sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">📖 Tips</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">How to Eat Sushi Guide</h4>
-                                        </div>
-                                    </Link>
-
-                                    <Link href="/blog/beginner-sushi-tips" className="flex gap-4 group">
-                                        <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Beginner tips" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <span className="text-xs font-medium text-deep-indigo">👨‍🎓 Learning</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Beginner Sushi Tips</h4>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                                <div className="mt-8 pt-6 border-t border-warm-ivory-dark">
-                                    <h3 className="text-lg font-heading font-bold text-charcoal mb-4">Categories</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-soft-gold/10 text-soft-gold">🍣 Cuisine</Link>
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">📖 Guides</Link>
-                                        <Link href="/blog/category/cuisine" className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory text-charcoal">👨‍🎓 Learning</Link>
-                                    </div>
-                                </div>
+                            <div className="sticky top-24">
+                                <RelatedArticles currentSlug="sushi-cooking-classes" />
                             </div>
                         </aside>
                     </div>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, MenuItemCard } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Lunch Ideas for Workdays: Flavor & Fun | Jinbeh",
@@ -213,7 +213,8 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
         <strong>Lunch pro tip:</strong> Jinbeh's hibachi lunch specials start at just $12.95 and include miso soup, house salad, grilled vegetables, fried rice, and your choice of protein — it's the best lunch deal in Frisco and Lewisville. Regulars say the chicken lunch is "better than any fast casual Japanese place" and the lunch portions are generous. Available 11 AM–3 PM weekdays. <Link href="/lunch-specials" className="text-accent-red hover:underline">View lunch specials →</Link>
       </ProTip>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

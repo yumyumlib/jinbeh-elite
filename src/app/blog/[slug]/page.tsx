@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { PillarCTA } from "@/components/ArticleEnhancements";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { BorderBeam } from "@/components/ui/BorderBeam";
 import blogData from "@/data/blog-posts.json";
 
 interface BlogPost {
@@ -155,7 +157,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         <span>/</span>
                         {category && (
                             <>
-                                <Link href={`/blog/category/${category.slug || category.id}`} className="hover:text-white">
+                                <Link href="/blog" className="hover:text-white">
                                     {category.name}
                                 </Link>
                                 <span>/</span>
@@ -167,7 +169,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     {/* Category Badge */}
                     {category && (
                         <Link
-                            href={`/blog/category/${category.slug || category.id}`}
+                            href="/blog"
                             className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium text-white mb-4"
                             style={{ backgroundColor: category.color }}
                         >
@@ -241,7 +243,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                 </div>
 
                                 {/* CTA */}
-                                <div className="mt-12 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-2xl text-center">
+                                <div className="relative overflow-hidden mt-12 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-2xl text-center">
+                                    <BorderBeam duration={8} size={300} colorFrom="#ffffff" colorTo="#C9A227" />
                                     <h3 className="text-2xl font-heading font-bold text-white mb-4">
                                         Ready to Experience Jinbeh?
                                     </h3>
@@ -318,7 +321,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                         {categories.map((cat) => (
                                             <Link
                                                 key={cat.id}
-                                                href={`/blog/category/${cat.slug || cat.id}`}
+                                                href="/blog"
                                                 className="px-3 py-1 rounded-full text-sm font-medium bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal transition-colors"
                                             >
                                                 {cat.icon} {cat.name}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
@@ -68,13 +68,13 @@ export default function InternationalBeerDay() {
 
             <p>
                 Every first Friday of August, beer lovers around the world raise their glasses for
-                International Beer Day. It&apos;s a celebration of the craft, culture, and community
+                International Beer Day. It's a celebration of the craft, culture, and community
                 that beer brings to the table—literally.
             </p>
 
             <p>
                 While most people celebrate with local craft brews, we think International Beer Day
-                is the perfect occasion to go global and explore one of the world&apos;s great beer
+                is the perfect occasion to go global and explore one of the world's great beer
                 traditions: <strong>Japanese brewing</strong>.
             </p>
 
@@ -87,22 +87,22 @@ export default function InternationalBeerDay() {
 
             <p>
                 Japanese brewers have been perfecting their craft since the 1870s, creating some of the
-                world&apos;s most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are
-                designed with one goal: to enhance the food you&apos;re eating. That food-first philosophy
+                world's most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are
+                designed with one goal: to enhance the food you're eating. That food-first philosophy
                 is what makes them extraordinary.
             </p>
 
             <p>
-                At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, we&apos;ve
+                At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, we've
                 been pouring Sapporo alongside <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link> since
-                1988. Our guests consistently say it&apos;s one of their favorite parts of the experience.
+                1988. Our guests consistently say it's one of their favorite parts of the experience.
             </p>
 
-            <h2>The Big Three: Japan&apos;s Iconic Beers</h2>
+            <h2>The Big Three: Japan's Iconic Beers</h2>
 
             <h3>🥇 Sapporo Premium Lager</h3>
             <p>
-                Japan&apos;s oldest brand (est. 1876). Smooth, balanced, with a clean finish that pairs with
+                Japan's oldest brand (est. 1876). Smooth, balanced, with a clean finish that pairs with
                 literally everything on our menu. Our <strong>Sapporo on tap</strong> is a guest favorite—order
                 it with any hibachi entrée for the ultimate pairing. Read more in our
                 <Link href="/blog/beer-hard-seltzer" className="text-accent-red hover:underline"> complete beer guide</Link>.
@@ -110,14 +110,14 @@ export default function InternationalBeerDay() {
 
             <h3>🥈 Asahi Super Dry</h3>
             <p>
-                The world&apos;s first &quot;dry&quot; beer. Ultra-crisp and refreshing—perfect alongside rich,
+                The world's first "dry" beer. Ultra-crisp and refreshing—perfect alongside rich,
                 smoky hibachi steak or crispy tempura. If you like your beer clean and sharp, Asahi
                 is your International Beer Day pick.
             </p>
 
             <h3>🥉 Kirin Ichiban</h3>
             <p>
-                &quot;First press&quot; brewing creates a subtle, slightly sweeter lager. Pairs beautifully with
+                "First press" brewing creates a subtle, slightly sweeter lager. Pairs beautifully with
                 sashimi and seafood. For beer drinkers who want something with a little more depth.
             </p>
 
@@ -138,7 +138,7 @@ export default function InternationalBeerDay() {
             <h2>Beyond Beer: Our Full Drink Menu</h2>
 
             <p>
-                If your International Beer Day squad includes non-beer drinkers, don&apos;t worry—our
+                If your International Beer Day squad includes non-beer drinkers, don't worry—our
                 <Link href="/bar" className="text-accent-red hover:underline"> full bar</Link> has everyone
                 covered. Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails</Link>,
                 premium sake selection, wine, and hard seltzers. Our lychee martini has its own
@@ -147,7 +147,7 @@ export default function InternationalBeerDay() {
 
             <p>
                 However you celebrate, make it memorable. Skip the usual bar night and join the
-                Jinbeh family for an evening of great beer, incredible food from our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>, and hospitality that&apos;s
+                Jinbeh family for an evening of great beer, incredible food from our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>, and hospitality that's
                 been welcoming DFW since 1988. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> today. 🍻
             </p>
 
@@ -155,7 +155,8 @@ export default function InternationalBeerDay() {
                 <strong>International Beer Day pro tip:</strong> Arrive during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted Sapporo drafts, then stay for hibachi. Ask your server for a "Japanese beer flight" — we'll pour samples of all three (Sapporo, Asahi, Kirin) so you can compare side by side with your meal. The best pairing? Sapporo with hibachi steak, Asahi with tempura, and Kirin with sashimi. Kanpai! 🍺
             </ProTip>
 
-            <LocationCTA location="both" />
+            <PillarCTA type="hub" />
+                                    <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, MenuItemCard } from "@/components/ArticleEnhancements";
+import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
 import { MealBuilder } from "@/components/MealBuilder";
 
 export const metadata: Metadata = {
@@ -653,7 +653,8 @@ export default function HibachiCaloriesGuidePage() {
         The key is balance, moderation, and making informed choices. Every visit to Jinbeh can be both delicious and nutritionally responsible. Need <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi lunch ideas</Link>? Browse our <Link href="/lunch-specials" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">lunch specials</Link> for affordable healthy options.
       </p>
 
-      <LocationCTA location="both" />
+      <PillarCTA type="reservations" />
+                                    <LocationCTA location="both" />
     </ArticleLayout>
   );
 }

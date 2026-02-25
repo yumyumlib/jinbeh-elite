@@ -51,6 +51,29 @@
     ],
     "posts": [
         {
+            "slug": "ayce-sushi-vs-traditional",
+            "title": "AYCE Sushi vs. Traditional: What You Should Know",
+            "excerpt": "Compare all-you-can-eat sushi and traditional sushi restaurants. Learn how freshness, fish quality, FDA guidelines, and economics shape your dining experience.",
+            "category": "cuisine",
+            "primaryKeyword": "AYCE sushi vs traditional",
+            "secondaryKeywords": [
+                "all you can eat sushi quality",
+                "sushi freshness guide",
+                "is AYCE sushi safe"
+            ],
+            "heroImage": "/images/photoshoot/sushi-tower.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-02-23",
+            "readTime": 8,
+            "featured": false,
+            "relatedPosts": [
+                "types-of-sushi",
+                "beginner-sushi-tips",
+                "best-sushi-frisco"
+            ]
+        },
+        {
             "slug": "best-hibachi-dallas",
             "title": "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences",
             "excerpt": "Looking for the best hibachi in Dallas? Our local guide reveals where skilled chefs put on unforgettable shows. From birthday celebrations to date nights.",

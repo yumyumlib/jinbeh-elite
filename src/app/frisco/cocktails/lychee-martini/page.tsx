@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lychee Martini - Best Japanese Cocktails Frisco",
+  title: "Lychee Martini - Best Japanese Cocktails Frisco | Jinbeh",
   description: "Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Frisco. Happy hour specials. Reserve today (214) 619-1200.",
   keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","lychee martini","vodka cocktails","jinbeh frisco","martini near stonebriar","japanese restaurant"],
   openGraph: {
