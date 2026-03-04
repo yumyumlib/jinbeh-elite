@@ -75,6 +75,10 @@ export default function RomanticAnniversaryDinnersPage() {
       readTime="8 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Romantic Anniversary Dinners Near Me: Top Spots
+      </h1>
+
       <p>
         Celebrating your anniversary is a special occasion that deserves an
         equally special setting. When it comes to selecting a romantic

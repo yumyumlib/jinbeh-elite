@@ -62,7 +62,7 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco",
+        "url": "https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website",
         "rid": "1056652"
       },
       "menus": {
@@ -151,7 +151,7 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/jinbeh-lewisville",
+        "url": "https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website",
         "rid": "1056663"
       },
       "menus": {

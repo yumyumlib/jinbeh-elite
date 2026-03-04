@@ -639,7 +639,7 @@ export default function HomePage() {
                 { src: '/images/instagram/sushi-feast-overhead.jpg', alt: 'Sushi feast spread from above' },
                 { src: '/images/instagram/mochi-desserts.jpg', alt: 'Mochi ice cream desserts at Jinbeh' },
               ].map((img, i) => (
-                <a key={i} href="https://instagram.com/JinbehFrisco" target="_blank" rel="noopener noreferrer" className="relative w-[240px] h-[240px] mx-2 rounded-xl overflow-hidden group flex-shrink-0 block">
+                <a key={i} href="https://instagram.com/JinbehFrisco" target="_blank" rel="noopener noreferrer" className="relative w-[240px] h-[240px] mx-2 rounded-xl overflow-hidden group flex-shrink-0 block" aria-label={`View ${img.alt} on Instagram`}>
                   <Image
                     src={img.src}
                     alt={img.alt}

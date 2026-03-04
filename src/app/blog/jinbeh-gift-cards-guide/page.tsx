@@ -67,6 +67,10 @@ export default function JinbehGiftCardsGuidePage() {
       readTime="8 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025
+      </h1>
+
       {/* Article Body */}
       <p>
         A Jinbeh gift card is more than just payment for a meal. It's a passport to unforgettable dining experiences. Whether you received one as a gift, purchased it for someone special, or earned rewards, maximizing its value means knowing all the ways to enhance your Jinbeh experience.

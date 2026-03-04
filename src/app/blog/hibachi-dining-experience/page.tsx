@@ -86,6 +86,10 @@ export default function HibachiDiningExperiencePage() {
       faqs={faqs}
       keyTakeaway="Hibachi dining combines live chef performances (knife tricks, onion volcanoes, fire shows) with fresh grilled proteins and sides — all prepared at your table. Plan 90 minutes to 2 hours, make reservations for weekends, and come hungry for generous portions."
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Restaurant Menu: Discover Flavor & Fun
+      </h1>
+
       <h2>The Art of Hibachi Dining</h2>
 
       <p>

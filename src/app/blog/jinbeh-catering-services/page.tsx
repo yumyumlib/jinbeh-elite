@@ -77,6 +77,10 @@ export default function JinbehCateringServicesPage() {
       readTime="10 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Jinbeh at Home: Experience Jinbeh Catering
+      </h1>
+
       {/* Article Body */}
       <p>
         There's something special about bringing restaurant-quality Japanese cuisine directly to your event. No stress about cooking, no kitchen limitations, just exceptional food and memorable moments with your guests.

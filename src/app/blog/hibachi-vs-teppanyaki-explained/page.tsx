@@ -74,6 +74,10 @@ export default function HibachiVsTeppanyakiPage() {
       readTime="7 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi vs Teppanyaki: Explained - Differences & Definitions
+      </h1>
+
       {/* Opening Paragraph */}
       <p>
         You've heard the terms thrown around interchangeably: "Let's go to a hibachi restaurant." "I love teppanyaki." "The hibachi chef was amazing!" But are <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi and teppanyaki</Link> the same thing? The answer is more nuanced than you might think—and understanding the difference will help you appreciate the Japanese culinary traditions behind your next dining experience.

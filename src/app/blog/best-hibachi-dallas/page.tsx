@@ -77,6 +77,10 @@ export default function BestHibachiDallasPage() {
       faqs={faqs}
       keyTakeaway="Jinbeh Japanese Restaurant (Frisco & Lewisville) is consistently rated the best hibachi in DFW — family-owned since 1988 with skilled chefs, fresh ingredients, and generous portions. Book early for weekends, mention birthdays when reserving, and try the lunch specials for the best value."
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Best Hibachi Dallas TX: Top 10 Restaurants & Experiences
+      </h1>
+
       {/* Article Body with Show Don't Tell, VOC phrases, Internal Links */}
       <p>
         The sizzle of meat hitting the hot grill. The whoosh of flames shooting

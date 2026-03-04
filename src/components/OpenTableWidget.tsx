@@ -10,15 +10,11 @@ interface OpenTableWidgetProps {
 
 export default function OpenTableWidget({
   restaurantId,
-className = '',
+  className = '',
   buttonText = 'Reserve Your Table',
   variant = 'primary',
 }: OpenTableWidgetProps) {
-  const handleReservation = () => {
-    // Open OpenTable in a new tab
-    const openTableUrl = `https://www.opentable.com/restref/client/?rid=${restaurantId}&lang=en-US&ot_source=Restaurant%20website`;
-    window.open(openTableUrl, '_blank', 'noopener,noreferrer');
-  };
+  const openTableUrl = `https://www.opentable.com/restref/client/?rid=${restaurantId}&lang=en-US&ot_source=Restaurant%20website`;
 
   const buttonVariants = {
     primary: 'btn btn-primary btn-shimmer',
@@ -27,13 +23,14 @@ className = '',
   };
 
   return (
-    <button
-      onClick={handleReservation}
-      className={`${buttonVariants[variant]} ${className}`}
-      type="button"
+    <a
+      href={openTableUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${buttonVariants[variant]} ${className} inline-flex items-center justify-center`}
     >
       <svg
-        className="w-5 h-5 inline-block mr-2"
+        className="w-5 h-5 mr-2"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -46,6 +43,6 @@ className = '',
         />
       </svg>
       {buttonText}
-    </button>
+    </a>
   );
 }

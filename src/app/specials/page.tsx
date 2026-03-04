@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -5,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import locations from "@/data/locations.json";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
+import { NewsletterForm, SeasonalSpecialsForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
@@ -468,19 +470,8 @@ export default function SpecialsPage() {
                 <p className="text-charcoal/70 mb-6">
                   Subscribe to our newsletter to receive notifications about upcoming seasonal specials and exclusive promotions.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                  <label htmlFor="seasonal-email" className="sr-only">Email address for seasonal specials</label>
-                  <input
-                    id="seasonal-email"
-                    name="seasonalEmail"
-                    type="email"
-                    placeholder="Enter your email"
-                    aria-label="Email address for seasonal specials"
-                    className="flex-1 px-4 py-3 rounded-xl border border-charcoal/20 focus:outline-none focus:border-accent-red focus:ring-2 focus:ring-accent-red/30"
-                  />
-                  <button type="submit" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-bold transition-colors">
-                    Subscribe
-                  </button>
+                <div className="w-full md:w-auto">
+                  <SeasonalSpecialsForm />
                 </div>
               </div>
             </div>
@@ -497,24 +488,7 @@ export default function SpecialsPage() {
               <p className="text-xl text-white/90 mb-10">
                 Get exclusive deals, early access to specials, and insider information delivered to your inbox.
               </p>
-              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
-                <label htmlFor="newsletter-email" className="sr-only">Email address for newsletter</label>
-                <input
-                  id="newsletter-email"
-                  name="newsletterEmail"
-                  type="email"
-                  placeholder="Your email address"
-                  aria-label="Email address for newsletter"
-                  className="flex-1 px-6 py-4 rounded-xl border-0 text-charcoal focus:outline-none focus:ring-2 focus:ring-soft-gold/50"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="btn bg-soft-gold text-charcoal hover:bg-warm-ivory px-8 py-4 rounded-xl font-bold text-lg transition-colors"
-                >
-                  Join Now
-                </button>
-              </form>
+              <NewsletterForm />
               <p className="text-white/70 text-sm">
                 We respect your privacy. Unsubscribe at any time.
               </p>

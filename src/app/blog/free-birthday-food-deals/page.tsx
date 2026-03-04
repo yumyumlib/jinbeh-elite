@@ -70,6 +70,10 @@ export default function FreeBirthdayFoodDealsPage() {
       readTime="10 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Free Birthday Food Deals: Where to Get Treats
+      </h1>
+
       <p>
         Celebrating your birthday is always special, and what better way to make
         it memorable than indulging in delicious treats without spending a dime?

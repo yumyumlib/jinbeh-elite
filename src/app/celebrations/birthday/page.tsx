@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { TestimonialCapture } from "@/components/TestimonialCapture";
 
 export const metadata: Metadata = {
   title: "Birthday Parties | Jinbeh Japanese Restaurant | Hibachi Birthday Celebration",
@@ -350,6 +351,16 @@ export default function BirthdayPage() {
               For large parties (10+), call us directly:<br />
               Frisco: (214) 619-1200 • Lewisville: (214) 488-2224
             </p>
+          </div>
+        </section>
+
+        {/* Testimonial Capture */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <TestimonialCapture
+              trigger="birthday"
+              context="Birthday celebrations are our specialty! We'd love to feature your celebration."
+            />
           </div>
         </section>
 

@@ -77,6 +77,10 @@ export default function HibachiBirthdayPartyIdeasPage() {
       faqs={faqs}
       keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect $35–$50 per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Birthday Party Ideas: Ultimate Planning Guide
+      </h1>
+
       <p>
         Fire shoots up from the onion volcano. The whole table gasps, then laughs.
         The birthday kid's eyes go wide as the chef flips a shrimp toward their

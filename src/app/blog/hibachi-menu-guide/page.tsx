@@ -101,6 +101,10 @@ export default function HibachiMenuGuidePage() {
       faqs={faqs}
       keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment — all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Restaurant Menu: Explore Flavorful Delights
+      </h1>
+
       <h2>Understanding Hibachi Dining</h2>
 
       <p>

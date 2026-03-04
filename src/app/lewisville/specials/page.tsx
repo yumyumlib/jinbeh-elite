@@ -1,9 +1,11 @@
+
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import locations from "@/data/locations.json";
+import { NewsletterForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Lewisville Specials & Deals | Jinbeh Japanese Restaurant",
@@ -103,7 +105,7 @@ export default function LewisvilleSpecialsPage() {
               Amazing Specials in Lewisville
             </h1>
             <p className="text-lg text-warm-ivory/90 mb-6 max-w-2xl mx-auto">
-              Easy I-35E Access • 2440 S Stemmons Fwy #A<br/>
+              Easy I-35E Access • 2440 S Stemmons Fwy #A<br />
               Enjoy exclusive deals on sushi, hibachi, and Japanese cuisine
             </p>
             <a href={`tel:${lewisville.phoneClean}`} className="inline-block bg-accent-red text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-accent-red/90 transition-colors">
@@ -234,7 +236,7 @@ export default function LewisvilleSpecialsPage() {
                   <h3 className="text-2xl font-heading font-bold mb-6">Where</h3>
                   <div className="space-y-3">
                     <p className="text-white/90">
-                      <strong>At the Bar</strong><br/>
+                      <strong>At the Bar</strong><br />
                       No reservation needed - walk-ins welcome
                     </p>
                     <div className="text-4xl">🍹</div>
@@ -403,26 +405,14 @@ export default function LewisvilleSpecialsPage() {
         <section className="py-20 bg-charcoal text-white">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-2xl font-heading font-bold mb-6">
-                  Stay Updated
-                </h2>
-                <p className="text-white/80 mb-6">
-                  Get notified about new specials and promotions at Jinbeh Lewisville.
+              <div className="bg-charcoal/40 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-warm-ivory/20 shadow-xl max-w-4xl mx-auto mt-6">
+                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4">
+                  Get Notified About Our <span className="text-soft-gold">Exclusive Offers</span>
+                </h3>
+                <p className="text-warm-ivory/80 text-lg mb-8 max-w-2xl mx-auto">
+                  Join our mailing list to receive updates about secret menu items, seasonal specials, and VIP-only discounts at Jinbeh Lewisville.
                 </p>
-                <form className="space-y-3">
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    className="w-full px-4 py-3 rounded-lg border-0 text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-red"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-lg font-bold transition-colors"
-                  >
-                    Subscribe
-                  </button>
-                </form>
+                <NewsletterForm location="lewisville" />
               </div>
 
               <div>
@@ -433,7 +423,7 @@ export default function LewisvilleSpecialsPage() {
                   <div>
                     <p className="text-soft-gold font-bold mb-1">Address</p>
                     <p className="text-white/80">
-                      {lewisville.address.street} {lewisville.address.suite}<br/>
+                      {lewisville.address.street} {lewisville.address.suite}<br />
                       {lewisville.address.city}, {lewisville.address.state} {lewisville.address.zip}
                     </p>
                   </div>

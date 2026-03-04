@@ -71,6 +71,10 @@ export default function BeginnerSushiTipsPage() {
         readTime="10 min read"
         faqs={faqs}
       >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Beginner Sushi Tips: Easy Homemade Sushi Guide
+      </h1>
+
         <h2>Welcome to the World of Sushi Making</h2>
 
         <p>

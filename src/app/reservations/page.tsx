@@ -6,6 +6,7 @@ import Image from "next/image";
 import locations from "@/data/locations.json";
 import { HeroSection, RevealSection, ShimmerCTA, ShinyBadge } from "@/components/MagicUI";
 import { MiniTestimonials } from "@/components/MiniTestimonials";
+import { TestimonialCapture } from "@/components/TestimonialCapture";
 
 export const metadata: Metadata = {
   title: "Make a Reservation | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -582,6 +583,12 @@ export default function ReservationsPage() {
                 Contact Us
               </Link>
             </div>
+
+            <RevealSection delay={200}>
+              <div className="mt-16 pt-8 border-t border-stone-200/50">
+                <TestimonialCapture trigger="post-reservation" />
+              </div>
+            </RevealSection>
           </div>
         </section>
       </main>

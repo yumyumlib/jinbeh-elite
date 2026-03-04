@@ -7,6 +7,7 @@ import WordRotate from "@/components/ui/WordRotate";
 import { BorderBeam } from "@/components/ui/BorderBeam";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
+import hooksData from "@/data/hooks.json";
 
 // Helper to get dynamic reservation CTA based on day of week
 function getReservationCTA(): string {
@@ -111,7 +112,7 @@ export default function HeroSection() {
                             WebkitTextStroke: '1px rgba(0,0,0,0.3)'
                         }}>
                         <WordRotate
-                            words={["Where Memories Are Made", "Dinner and a Show", "The Art of Hibachi"]}
+                            words={hooksData.homepage.hero_hooks.map(hook => hook.text)}
                             duration={4000}
                         />
                     </p>
@@ -120,7 +121,7 @@ export default function HeroSection() {
                 <ScrollReveal delay={300}>
                     <p className="text-xl md:text-2xl text-warm-ivory mb-10 font-medium max-w-2xl mx-auto"
                         style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
-                        The dinner your family will talk about for weeks.
+                        {hooksData.homepage.hero_hooks[0].subtitle}
                     </p>
                 </ScrollReveal>
 

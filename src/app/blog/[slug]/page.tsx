@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PillarCTA } from "@/components/ArticleEnhancements";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { injectContextualLinks } from "@/components/ContextualLinks";
 import { BorderBeam } from "@/components/ui/BorderBeam";
 import blogData from "@/data/blog-posts.json";
 
@@ -202,9 +203,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                             <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
                                 {/* Article intro - placeholder for actual content */}
                                 <div className="prose prose-lg max-w-none">
-                                    <p className="text-xl text-charcoal/80 leading-relaxed mb-6">
-                                        {post.excerpt}
-                                    </p>
+                                    <p
+                                        className="text-xl text-charcoal/80 leading-relaxed mb-6"
+                                        dangerouslySetInnerHTML={{
+                                            __html: injectContextualLinks(post.excerpt, `/blog/${post.slug}`)
+                                        }}
+                                    />
 
                                     <div className="border-l-4 border-accent-red pl-6 py-4 bg-warm-ivory rounded-r-lg my-8">
                                         <p className="text-charcoal font-medium italic">
@@ -215,9 +219,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                     <h2 className="text-2xl font-heading font-bold text-charcoal mt-8 mb-4">
                                         Why Choose Jinbeh?
                                     </h2>
-                                    <p className="text-charcoal/80 leading-relaxed">
-                                        With over 37 years of tradition, Jinbeh offers an unmatched dining experience. Our skilled hibachi chefs perform tableside, creating not just a meal but a show. Combined with our fresh sushi bar and warm hospitality, every visit becomes a celebration.
-                                    </p>
+                                    <p
+                                        className="text-charcoal/80 leading-relaxed"
+                                        dangerouslySetInnerHTML={{
+                                            __html: injectContextualLinks(
+                                                "With over 37 years of tradition, Jinbeh offers an unmatched dining experience. Our skilled hibachi chefs perform tableside, creating not just a meal but a show. Combined with our fresh sushi bar and warm hospitality, every visit becomes a celebration.",
+                                                `/blog/${post.slug}`
+                                            )
+                                        }}
+                                    />
 
                                     <h2 className="text-2xl font-heading font-bold text-charcoal mt-8 mb-4">
                                         The Jinbeh Experience

@@ -78,6 +78,10 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       readTime="9 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Jinbeh Offsite Events Catering: Hibachi at Home
+      </h1>
+
       {/* Article Body */}
       <p>
         Imagine the sizzle of the hibachi grill, the whoosh of flames, and the laughter of your guests—all happening right in your backyard or private venue. The interactive energy. The entertainment. The incredible food. That's what Jinbeh's offsite hibachi catering brings to your celebration.

@@ -71,6 +71,10 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       readTime="7 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Lunch Ideas for Workdays: Flavor & Fun
+      </h1>
+
       <h2>Transform Your Workday Lunch</h2>
 
       <p>

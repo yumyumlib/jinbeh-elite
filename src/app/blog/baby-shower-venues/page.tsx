@@ -71,6 +71,10 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       readTime="10 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Top Baby Shower Venues: Best Places to Host
+      </h1>
+
       <p>
         Organizing a baby shower is a delightful way to celebrate the impending
         arrival of a new family member. This joyous occasion brings together

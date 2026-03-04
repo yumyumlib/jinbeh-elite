@@ -1,0 +1,61 @@
+{
+    "homepage": {
+        "hero_hooks": [
+            {
+                "type": "statement",
+                "text": "Where Memories Are Made",
+                "subtitle": "Authentic Japanese dining with a show at every meal – Frisco & Lewisville"
+            },
+            {
+                "type": "question",
+                "text": "When's the last time dinner was actually entertaining?",
+                "subtitle": "Watch our master hibachi chefs create culinary magic tableside"
+            },
+            {
+                "type": "label",
+                "text": "Families looking for a memorable dinner experience, this is for you",
+                "subtitle": "38+ years serving Frisco, Lewisville, and North DFW"
+            }
+        ]
+    },
+    "birthday": {
+        "hooks": [
+            {
+                "type": "question",
+                "text": "Want to make their birthday unforgettable?",
+                "subtitle": "Hibachi chefs, singing staff, and a fire show – all included"
+            },
+            {
+                "type": "statement",
+                "text": "The secret to getting your kids excited about their birthday dinner",
+                "subtitle": "Hibachi entertainment + chef tricks + delicious Japanese food"
+            },
+            {
+                "type": "narrative",
+                "text": "Last week a family came in for their daughter's 7th birthday...",
+                "subtitle": "She's already asking to come back next year"
+            }
+        ]
+    },
+    "sushi": {
+        "hooks": [
+            {
+                "type": "command",
+                "text": "Stop scrolling and watch this sushi chef work magic",
+                "subtitle": "Fresh fish, expert craftsmanship, creative specialty rolls"
+            },
+            {
+                "type": "statement",
+                "text": "The top 1% of sushi lovers in DFW know this secret...",
+                "subtitle": "Jinbeh's sushi bar rivals any in Dallas – at half the pretension"
+            }
+        ]
+    },
+    "email_subjects": [
+        "Btw… (I have a favor to ask)",
+        "Only open this if you love hibachi 🔥",
+        "SHHHHH It's a SURPRISE!!",
+        "Your birthday deserves better than this",
+        "When's the last time you celebrated properly?"
+    ]
+}

@@ -93,6 +93,10 @@ export default function PickleballRestaurantsLewisvillePage() {
       readTime="5 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Best Restaurants Near Pickleball in Lewisville TX
+      </h1>
+
       <h2>The Best Restaurant Near Pickleball in Lewisville</h2>
 
       <p>

@@ -71,6 +71,10 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       readTime="9 min read"
       faqs={faqs}
     >
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Best Places for Bridal Showers Near Me
+      </h1>
+
       <p>
         Planning a bridal shower is an exciting yet important task. Finding the
         perfect venue is key to creating a memorable event that celebrates the

@@ -1,9 +1,11 @@
+
 import type { Metadata } from "next";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { EventInquiryForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville",
@@ -764,122 +766,13 @@ export default function EventsPage() {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="event-name" className="block text-sm font-semibold mb-2">Your Name</label>
-                    <input
-                      id="event-name"
-                      name="name"
-                      type="text"
-                      placeholder="John Doe"
-                      aria-required="true"
-                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="event-email" className="block text-sm font-semibold mb-2">Email Address</label>
-                    <input
-                      id="event-email"
-                      name="email"
-                      type="email"
-                      placeholder="john@example.com"
-                      aria-required="true"
-                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="event-phone" className="block text-sm font-semibold mb-2">Phone Number</label>
-                    <input
-                      id="event-phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="(555) 123-4567"
-                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="event-date" className="block text-sm font-semibold mb-2">Event Date</label>
-                    <input
-                      id="event-date"
-                      name="eventDate"
-                      type="date"
-                      aria-required="true"
-                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="event-type" className="block text-sm font-semibold mb-2">Event Type</label>
-                    <select id="event-type" name="eventType" aria-required="true" className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors">
-                      <option value="" className="text-charcoal">Select an event type</option>
-                      <option value="birthday" className="text-charcoal">Birthday Party</option>
-                      <option value="corporate" className="text-charcoal">Corporate Event</option>
-                      <option value="rehearsal" className="text-charcoal">Rehearsal Dinner</option>
-                      <option value="baby-shower" className="text-charcoal">Baby Shower</option>
-                      <option value="team-building" className="text-charcoal">Team Building</option>
-                      <option value="holiday" className="text-charcoal">Holiday Party</option>
-                      <option value="other" className="text-charcoal">Other</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="event-guests" className="block text-sm font-semibold mb-2">Guest Count</label>
-                    <input
-                      id="event-guests"
-                      name="guestCount"
-                      type="number"
-                      placeholder="Number of guests"
-                      aria-required="true"
-                      className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="event-details" className="block text-sm font-semibold mb-2">Event Details</label>
-                  <textarea
-                    id="event-details"
-                    name="details"
-                    placeholder="Tell us about your event, any special requests, or questions..."
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-white/15 border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors resize-none"
-                  />
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <input type="checkbox" id="event-updates" name="receiveUpdates" className="w-5 h-5 accent-accent-red" />
-                  <label htmlFor="event-updates" className="text-sm text-white/80">
-                    I&apos;d like to receive updates about my event planning
-                  </label>
-                </div>
-
-                <button
-                  type="submit"
-                  className="block w-full bg-accent-red hover:bg-accent-red/90 text-white py-4 rounded-xl font-bold text-lg transition-all hover:shadow-lg hover:scale-[1.02] btn-shimmer relative overflow-hidden"
-                >
-                  Send Event Inquiry
-                </button>
-
-                <p className="text-center text-sm text-white/70">
-                  Or call us directly:
-                  <br />
-                  Frisco: <a href="tel:+1-214-619-1200" className="text-soft-gold hover:text-soft-gold/80">(214) 619-1200</a>
-                  <br />
-                  Lewisville: <a href="tel:+1-214-488-2224" className="text-soft-gold hover:text-soft-gold/80">(214) 488-2224</a>
-                </p>
-              </form>
+            <div className="bg-charcoal rounded-2xl p-8 border border-white/20 shadow-xl">
             </div>
           </div>
         </section>
 
         {/* Event Planning Resources — Blog Cross-Links */}
-        <section className="py-16 bg-warm-ivory">
+        < section className="py-16 bg-warm-ivory" >
           <div className="container mx-auto px-6">
             <div className="text-center mb-10 max-w-3xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-charcoal mb-3">
@@ -907,10 +800,10 @@ export default function EventsPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* FAQ Section */}
-        <section className="py-20 bg-white">
+        < section className="py-20 bg-white" >
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <p className="text-soft-gold font-medium tracking-wider uppercase mb-3">
@@ -958,10 +851,10 @@ export default function EventsPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* Final CTA */}
-        <section className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
+        < section className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white" >
           <div className="container mx-auto px-6 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
               Let's Make Your Event Extraordinary
@@ -984,8 +877,8 @@ export default function EventsPage() {
               </a>
             </div>
           </div>
-        </section>
-      </main>
+        </section >
+      </main >
       <Footer />
     </>
   );

@@ -139,40 +139,46 @@ export default function Footer() {
         {/* Navigation Links */}
         <div className="border-t border-warm-ivory/10">
           <div className="container mx-auto px-6 py-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-              {/* Menu */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 lg:gap-8">
+              {/* Menu & Location Links */}
               <div>
                 <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
-                  Menu
+                  Menu & Dining
                 </h4>
                 <nav className="space-y-2.5 text-sm">
-                  <Link href="/frisco/hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Hibachi Grill
+                  <Link href="/menu" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Full Menu
                   </Link>
-                  <Link href="/frisco/sushi-rolls" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  <Link href="/frisco/hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Frisco Hibachi Grill
+                  </Link>
+                  <Link href="/lewisville/hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Lewisville Hibachi Grill
+                  </Link>
+                  <Link href="/sushi-rolls" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Sushi & Rolls
                   </Link>
-                  <Link href="/frisco/sashimi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Sashimi
+                  <Link href="/lunch-specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Lunch Specials
                   </Link>
-                  <Link href="/frisco/appetizers" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Appetizers
+                  <Link href="/specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    All Specials
                   </Link>
-                  <Link href="/frisco/cocktails" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Cocktails & Sake
-                  </Link>
-                  <Link href="/happy-hour" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Happy Hour
+                  <Link href="/reservations" className="block text-accent-red font-semibold hover:text-accent-red/80 transition-colors mt-2">
+                    Make a Reservation
                   </Link>
                 </nav>
               </div>
 
-              {/* Events */}
+              {/* Events & Celebrations */}
               <div>
                 <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
-                  Events
+                  Events & Parties
                 </h4>
                 <nav className="space-y-2.5 text-sm">
+                  <Link href="/events" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Private Dining Rooms
+                  </Link>
                   <Link href="/celebrations/birthday" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Birthday Parties
                   </Link>
@@ -182,71 +188,98 @@ export default function Footer() {
                   <Link href="/celebrations/corporate-events" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Corporate Events
                   </Link>
-                  <Link href="/private-dining" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Private Dining
-                  </Link>
                   <Link href="/catering" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Catering
+                    Off-Site Catering
                   </Link>
                   <Link href="/gift-cards" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Gift Cards
+                    Jinbeh Gift Cards
                   </Link>
                 </nav>
               </div>
 
-              {/* Guides */}
+              {/* Community & Guides */}
               <div>
                 <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
-                  Guides
+                  Discover
                 </h4>
                 <nav className="space-y-2.5 text-sm">
-                  <Link href="/blog/category/sushi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Sushi Guide
-                  </Link>
-                  <Link href="/blog/category/hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Hibachi Guide
-                  </Link>
-                  <Link href="/blog/category/happy-hour" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Happy Hour & Drinks
-                  </Link>
-                  <Link href="/blog/category/celebrations" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Celebrations
-                  </Link>
-                  <Link href="/blog/category/local-guide" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Local Guide
-                  </Link>
-                  <Link href="/blog/category/cuisine" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Japanese Cuisine
+                  <Link href="/vip" className="block text-soft-gold hover:text-warm-ivory transition-colors font-semibold">
+                    Join VIP Club
                   </Link>
                   <Link href="/blog" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    All Articles →
+                    All Articles
+                  </Link>
+                  <Link href="/blog?category=sushi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Sushi Guides
+                  </Link>
+                  <Link href="/blog?category=hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Hibachi Guides
+                  </Link>
+                  <Link href="/blog?category=celebrations" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Celebration Tips
+                  </Link>
+                  <Link href="/blog?category=local-guide" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Local DFW Guides
+                  </Link>
+                  <Link href="/blog?category=cuisine" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Japanese Cuisine
                   </Link>
                 </nav>
               </div>
 
-              {/* Company */}
+              {/* Company Info */}
               <div>
                 <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
                   Company
                 </h4>
                 <nav className="space-y-2.5 text-sm">
                   <Link href="/about" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    About Us
-                  </Link>
-                  <Link href="/vip" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    VIP Club
+                    About Jinbeh
                   </Link>
                   <Link href="/contact" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Contact
-                  </Link>
-                  <Link href="/reservations" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Reservations
+                    Contact Us
                   </Link>
                   <Link href="/faq" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     FAQ
                   </Link>
+                  <Link href="/frisco" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Frisco Location Info
+                  </Link>
+                  <Link href="/lewisville" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Lewisville Location Info
+                  </Link>
                 </nav>
               </div>
+
+              {/* Locations */}
+              <div className="col-span-2 md:col-span-1">
+                <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
+                  Our Locations
+                </h4>
+                <div className="space-y-4 text-sm">
+                  <div>
+                    <h5 className="text-warm-ivory font-semibold mb-1">Frisco</h5>
+                    <p className="text-warm-ivory/70 leading-relaxed mb-1">
+                      {locations.locations.frisco.address.street}<br />
+                      {locations.locations.frisco.address.city}, {locations.locations.frisco.address.state} {locations.locations.frisco.address.zip}
+                    </p>
+                    <a href={`tel:${locations.locations.frisco.phoneClean}`} className="text-soft-gold hover:text-warm-ivory transition-colors">
+                      {locations.locations.frisco.phone}
+                    </a>
+                  </div>
+                  <div>
+                    <h5 className="text-warm-ivory font-semibold mb-1">Lewisville</h5>
+                    <p className="text-warm-ivory/70 leading-relaxed mb-1">
+                      {locations.locations.lewisville.address.street}<br />
+                      {locations.locations.lewisville.address.city}, {locations.locations.lewisville.address.state} {locations.locations.lewisville.address.zip}
+                    </p>
+                    <a href={`tel:${locations.locations.lewisville.phoneClean}`} className="text-soft-gold hover:text-warm-ivory transition-colors">
+                      {locations.locations.lewisville.phone}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             {/* Service Areas - Compact */}
