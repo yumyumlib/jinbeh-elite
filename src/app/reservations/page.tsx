@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import locations from "@/data/locations.json";
 import { HeroSection, RevealSection, ShimmerCTA, ShinyBadge } from "@/components/MagicUI";
+import { MagicCard } from "@/components/ui/magic-card";
 import { MiniTestimonials } from "@/components/MiniTestimonials";
 import { TestimonialCapture } from "@/components/TestimonialCapture";
 
@@ -35,6 +36,37 @@ export const metadata: Metadata = {
 
 const frisco = locations.locations.frisco;
 const lewisville = locations.locations.lewisville;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far in advance should I make a hibachi reservation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For weekend hibachi dining in Frisco or Lewisville, we recommend booking a table 2-3 weeks in advance. For weekdays, 3-5 days is usually sufficient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a table for large groups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our restaurant reservation system handles groups up to 10 online. For larger parties or private dining events, please call us directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a reservation for sushi dining?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While reservations are strongly recommended for hibachi, walk-ins are often welcome for our sushi bar and traditional dining areas, depending on availability."
+      }
+    }
+  ]
+};
 
 const reservationMethods = [
   {
@@ -134,6 +166,10 @@ export default function ReservationsPage() {
     <>
       <Header />
       <main className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
         {/* Hero */}
         <HeroSection className="py-16 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white">
           <div className="container mx-auto px-6 text-center max-w-4xl">
@@ -175,13 +211,16 @@ export default function ReservationsPage() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {reservationMethods.map((method, idx) => (
                 <RevealSection key={method.title} delay={idx * 150}>
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <MagicCard
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none"
+                    gradientColor="rgba(201, 162, 39, 0.15)"
+                  >
                     <div className="text-5xl mb-6">{method.icon}</div>
                     <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
                       {method.title}
                     </h3>
                     <p className="text-charcoal/70 mb-6">{method.description}</p>
-                  </div>
+                  </MagicCard>
                 </RevealSection>
               ))}
             </div>
@@ -434,9 +473,10 @@ export default function ReservationsPage() {
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {diningTypes.map((type, idx) => (
-                <RevealSection key={type.title} delay={idx * 150}>
-                  <div
-                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                <RevealSection key={type.title} delay={idx * 150} className="h-full">
+                  <MagicCard
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-none h-full"
+                    gradientColor="rgba(201, 162, 39, 0.15)"
                   >
                     <div className="text-5xl mb-4">{type.icon}</div>
                     <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
@@ -472,7 +512,7 @@ export default function ReservationsPage() {
                     <p className="text-charcoal font-semibold text-lg">
                       {type.price}
                     </p>
-                  </div>
+                  </MagicCard>
                 </RevealSection>
               ))}
             </div>
@@ -516,6 +556,58 @@ export default function ReservationsPage() {
                   </div>
                 </RevealSection>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Reservation FAQ */}
+        <section className="py-20 bg-warm-ivory">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-heading font-bold text-charcoal mb-8 text-center">
+                Frequently Asked Questions
+              </h2>
+              <div className="bg-white rounded-2xl p-8 shadow-lg space-y-6">
+                <details className="group border-b border-warm-ivory pb-4">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="font-medium text-charcoal pr-4">How far in advance should I make a hibachi reservation?</h3>
+                    <span className="text-accent-red group-open:rotate-180 transition-transform">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="mt-4 text-charcoal/70 leading-relaxed">
+                    For weekend hibachi dining in Frisco or Lewisville, we recommend booking a table 2-3 weeks in advance. For weekdays, 3-5 days is usually sufficient. Our interactive teppanyaki tables fill up quickly!
+                  </p>
+                </details>
+                <details className="group border-b border-warm-ivory pb-4">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="font-medium text-charcoal pr-4">Can I book a table for large groups?</h3>
+                    <span className="text-accent-red group-open:rotate-180 transition-transform">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="mt-4 text-charcoal/70 leading-relaxed">
+                    Yes, our restaurant reservation system handles groups up to 10 online. For larger parties or private dining events, please call us directly to make arrangements.
+                  </p>
+                </details>
+                <details className="group border-b border-warm-ivory pb-4">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="font-medium text-charcoal pr-4">Do I need a reservation for sushi dining?</h3>
+                    <span className="text-accent-red group-open:rotate-180 transition-transform">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="mt-4 text-charcoal/70 leading-relaxed">
+                    While reservations are strongly recommended for hibachi, walk-ins are often welcome for our sushi bar and traditional dining areas, depending on availability.
+                  </p>
+                </details>
+              </div>
             </div>
           </div>
         </section>

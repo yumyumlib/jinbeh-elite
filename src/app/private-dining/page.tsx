@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
+import { MagicCard } from "@/components/ui/magic-card";
 
 export const metadata: Metadata = {
   title: "Private Dining at Jinbeh | Exclusive Events in Frisco & Lewisville",
@@ -353,9 +354,10 @@ export default function PrivateDiningPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {eventTypes.map((event) => (
-                <div
+                <MagicCard
                   key={event.title}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-none"
+                  gradientColor="rgba(201, 162, 39, 0.15)"
                 >
                   <div className="text-5xl mb-4">{event.icon}</div>
                   <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
@@ -386,7 +388,7 @@ export default function PrivateDiningPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </MagicCard>
               ))}
             </div>
           </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import blogData from "@/data/blog-posts.json";
+import locations from "@/data/locations.json";
 
 export const metadata: Metadata = {
     title: "Blog | Jinbeh Japanese Restaurant – Hibachi, Sushi & DFW Dining Guides",
@@ -54,10 +55,27 @@ export default async function BlogPage({
 
     const featuredPosts = allPosts.filter((post) => post.featured);
 
+    const collectionSchema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        headline: "Jinbeh Blog - Japanese Dining Tips & Guides",
+        description: "Your guide to hibachi, sushi, sake and Japanese cuisine from Jinbeh in Frisco & Lewisville.",
+        url: "https://jinbeh.com/blog",
+        hasPart: filteredPosts.map(post => ({
+            "@type": "Article",
+            headline: post.title,
+            url: `https://jinbeh.com/blog/${post.slug}`
+        }))
+    };
+
     return (
         <>
             <Header />
             <main className="min-h-screen bg-warm-ivory">
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+                />
                 {/* Hero Header */}
                 <section className="bg-charcoal text-white py-16">
                     <div className="container mx-auto px-6">
@@ -236,18 +254,22 @@ export default async function BlogPage({
                             unforgettable moments.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
-                                href="/reservations"
+                            <a
+                                href={locations.locations.frisco.reservation.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-3 rounded-xl font-semibold"
                             >
                                 Reserve at Frisco
-                            </Link>
-                            <Link
-                                href="/reservations"
+                            </a>
+                            <a
+                                href={locations.locations.lewisville.reservation.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="btn bg-white/20 text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-3 rounded-xl font-semibold"
                             >
                                 Reserve at Lewisville
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </section>

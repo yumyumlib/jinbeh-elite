@@ -752,7 +752,7 @@ export default function KidsMenuFriscoPage() {
               <p className="text-lg mb-8">Near Stonebriar Centre & Legacy West</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/reservations"
+                  href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all font-heading"
                 >
                   Make a Reservation

@@ -162,7 +162,7 @@ export default function StarwoodPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/reservations"
+                href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer"
                 className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Your Table
@@ -357,7 +357,7 @@ export default function StarwoodPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
-                href="/reservations"
+                href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Make a Reservation

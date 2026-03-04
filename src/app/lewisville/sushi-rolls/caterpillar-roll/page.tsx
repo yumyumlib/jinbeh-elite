@@ -207,7 +207,7 @@ export default function CaterpillarRollLewisvillePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    href="/reservations"
+                    href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer"
                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-3 font-semibold rounded-xl"
                   >
                     Reserve a Table

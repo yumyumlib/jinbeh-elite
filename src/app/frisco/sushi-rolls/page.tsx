@@ -292,7 +292,7 @@ export default function SushiRollsFriscoPage() {
                 each crafted with care and the finest ingredients.
               </p>
               <Link
-                href="/reservations"
+                href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
@@ -774,7 +774,7 @@ export default function SushiRollsFriscoPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/reservations"
+                  href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website" target="_blank" rel="noopener noreferrer"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Reserve a Table

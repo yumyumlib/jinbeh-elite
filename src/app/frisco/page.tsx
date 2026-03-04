@@ -9,6 +9,7 @@ import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import HeritageCounter from "@/components/HeritageCounter";
 import { MiniTestimonials } from "@/components/MiniTestimonials";
+import { MagicCard } from "@/components/ui/magic-card";
 import locations from "@/data/locations.json";
 
 // Gallery items for Frisco
@@ -476,7 +477,10 @@ export default function FriscoPage() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="p-6">
+              <MagicCard
+                className="p-6 bg-charcoal/50 border border-white/10 text-white"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
                 <div className="w-16 h-16 mx-auto mb-4 bg-accent-red/20 rounded-full flex items-center justify-center">
                   <span className="text-3xl">🔥</span>
                 </div>
@@ -487,9 +491,12 @@ export default function FriscoPage() {
                   Watch our skilled chefs perform dazzling tricks with flames and the
                   famous onion volcano right at your table.
                 </p>
-              </div>
+              </MagicCard>
 
-              <div className="p-6">
+              <MagicCard
+                className="p-6 bg-charcoal/50 border border-white/10 text-white"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
                 <div className="w-16 h-16 mx-auto mb-4 bg-deep-indigo/40 rounded-full flex items-center justify-center">
                   <span className="text-3xl">🍣</span>
                 </div>
@@ -500,9 +507,12 @@ export default function FriscoPage() {
                   A wide variety of sushi, sashimi, rolls, and appetizers prepared
                   fresh by our master sushi chefs.
                 </p>
-              </div>
+              </MagicCard>
 
-              <div className="p-6">
+              <MagicCard
+                className="p-6 bg-charcoal/50 border border-white/10 text-white"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
                 <div className="w-16 h-16 mx-auto mb-4 bg-soft-gold/20 rounded-full flex items-center justify-center">
                   <span className="text-3xl">🍸</span>
                 </div>
@@ -513,7 +523,7 @@ export default function FriscoPage() {
                   Enjoy your favorite drinks along with special concoctions during
                   our Happy Hour specials.
                 </p>
-              </div>
+              </MagicCard>
             </div>
 
             <div className="mt-12">
