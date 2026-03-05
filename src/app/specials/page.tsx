@@ -7,6 +7,7 @@ import Link from "next/link";
 import locations from "@/data/locations.json";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 import { NewsletterForm, SeasonalSpecialsForm } from "@/components/ContactForm";
+import { MagicCard } from "@/components/ui/magic-card";
 
 export const metadata: Metadata = {
   title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
@@ -217,20 +218,25 @@ export default function SpecialsPage() {
                 <a
                   key={category.id}
                   href={category.href}
-                  className="group bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300 cursor-pointer"
+                  className="group block cursor-pointer"
                 >
-                  <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">
-                    {category.icon}
-                  </div>
-                  <h3 className="text-white font-heading text-xl font-bold mb-2">
-                    {category.title}
-                  </h3>
-                  <p className="text-soft-gold text-sm mb-3 font-medium">
-                    {category.time}
-                  </p>
-                  <p className="text-white/80 text-sm">
-                    {category.description}
-                  </p>
+                  <MagicCard
+                    className="h-full bg-charcoal/80 backdrop-blur border border-white/20 p-6 transition-colors duration-300 group-hover:bg-charcoal/60"
+                    gradientColor="rgba(201, 162, 39, 0.15)"
+                  >
+                    <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">
+                      {category.icon}
+                    </div>
+                    <h3 className="text-white font-heading text-xl font-bold mb-2">
+                      {category.title}
+                    </h3>
+                    <p className="text-soft-gold text-sm mb-3 font-medium">
+                      {category.time}
+                    </p>
+                    <p className="text-white/80 text-sm">
+                      {category.description}
+                    </p>
+                  </MagicCard>
                 </a>
               ))}
             </div>
@@ -258,9 +264,10 @@ export default function SpecialsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
               {happyHourItems.map((item, idx) => (
-                <div
+                <MagicCard
                   key={idx}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all border-none"
+                  gradientColor="rgba(201, 162, 39, 0.15)"
                 >
                   <div className="text-6xl mb-4 text-center">{item.emoji}</div>
                   <h3 className="font-heading text-2xl font-bold text-charcoal mb-2 text-center">
@@ -277,7 +284,7 @@ export default function SpecialsPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </MagicCard>
               ))}
             </div>
 
@@ -333,9 +340,10 @@ export default function SpecialsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
               {lunchHighlights.map((item, idx) => (
-                <div
+                <MagicCard
                   key={idx}
                   className="bg-warm-ivory rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all border border-deep-indigo/10"
+                  gradientColor="rgba(201, 162, 39, 0.15)"
                 >
                   <div className="text-6xl mb-4 text-center">{item.emoji}</div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-2 text-center">
@@ -347,7 +355,7 @@ export default function SpecialsPage() {
                   <p className="text-charcoal/70 text-sm text-center">
                     {item.description}
                   </p>
-                </div>
+                </MagicCard>
               ))}
             </div>
 
@@ -381,9 +389,10 @@ export default function SpecialsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {weeklySpecials.map((special, idx) => (
-                <div
+                <MagicCard
                   key={idx}
-                  className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8 hover:bg-white/15 hover:border-soft-gold/50 transition-all duration-300 group"
+                  className="bg-charcoal/80 backdrop-blur border border-white/20 rounded-2xl p-8 hover:border-soft-gold/50 transition-all duration-300 group"
+                  gradientColor="rgba(201, 162, 39, 0.15)"
                 >
                   <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
                     {special.emoji}
@@ -391,7 +400,7 @@ export default function SpecialsPage() {
                   <p className="text-soft-gold font-bold text-sm uppercase tracking-wider mb-2">
                     {special.day}
                   </p>
-                  <h3 className="text-2xl font-heading font-bold mb-2">
+                  <h3 className="text-2xl font-heading font-bold mb-2 text-white">
                     {special.name}
                   </h3>
                   <p className="text-white/80 text-sm mb-3">
@@ -400,7 +409,7 @@ export default function SpecialsPage() {
                   <p className="text-white/80 text-xs italic">
                     {special.details}
                   </p>
-                </div>
+                </MagicCard>
               ))}
             </div>
 
@@ -450,16 +459,17 @@ export default function SpecialsPage() {
                   { emoji: "🎊", label: "Seasonal Offers", desc: "Coming Soon" },
                   { emoji: "🎁", label: "Party Packages", desc: "Coming Soon" },
                 ].map((item, idx) => (
-                  <div
+                  <MagicCard
                     key={idx}
                     className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-accent-red/20"
+                    gradientColor="rgba(201, 162, 39, 0.15)"
                   >
                     <div className="text-6xl mb-4">{item.emoji}</div>
                     <h3 className="font-heading text-xl font-bold text-charcoal mb-2">
                       {item.label}
                     </h3>
                     <p className="text-charcoal/80">{item.desc}</p>
-                  </div>
+                  </MagicCard>
                 ))}
               </div>
 

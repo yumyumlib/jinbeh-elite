@@ -2,6 +2,29 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { RevealSection, HeroSection, AnimatedGradientText } from "@/components/MagicUI";
+import { MagicCard } from "@/components/ui/magic-card";
+
+// JSON-LD Schema for Gift Cards
+const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Jinbeh Restaurant Gift Card",
+    "description": "Give the gift of an unforgettable dining experience. Purchase Jinbeh gift cards for hibachi, sushi, and Japanese cuisine in Frisco and Lewisville TX. Available for purchase in-store or by phone.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Jinbeh Japanese Restaurant"
+    },
+    "category": "Gift Cards",
+    "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "25.00",
+        "highPrice": "200.00",
+        "offerCount": "100",
+        "availability": "https://schema.org/InStock",
+        "url": "https://jinbeh.com/gift-cards"
+    }
+};
 
 export const metadata: Metadata = {
     title: "Gift Cards | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -12,6 +35,12 @@ export const metadata: Metadata = {
 export default function GiftCardsPage() {
     return (
         <main className="min-h-screen bg-warm-ivory">
+            {/* Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+            />
+
             {/* Hero */}
             <HeroSection className="relative py-20 bg-gradient-to-br from-deep-indigo to-charcoal text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
@@ -61,7 +90,10 @@ export default function GiftCardsPage() {
                         <div className="grid md:grid-cols-2 gap-8 mb-16">
                             {/* In-Store */}
                             <RevealSection delay={100} direction="left">
-                                <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                <MagicCard
+                                    className="h-full bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none"
+                                    gradientColor="rgba(201, 162, 39, 0.15)"
+                                >
                                     <div className="relative w-full h-36 rounded-xl overflow-hidden mb-6">
                                         <Image
                                             src="/images/frisco/FriscoLocation_Bar_Front.jpg"
@@ -78,26 +110,29 @@ export default function GiftCardsPage() {
                                     <p className="text-charcoal/70 mb-6">
                                         Visit either Jinbeh location to purchase physical gift cards in any amount.
                                     </p>
-                                    <div className="flex flex-col items-center gap-3 my-4">
+                                    <div className="flex flex-col items-center gap-3 mt-auto mb-4">
                                         <Link
                                             href="/frisco"
-                                            className="inline-block w-1/2 py-3 bg-warm-ivory text-charcoal rounded-xl font-medium hover:bg-warm-ivory-dark transition-colors text-center"
+                                            className="inline-block w-full sm:w-3/4 py-3 bg-warm-ivory text-charcoal rounded-xl font-medium hover:bg-warm-ivory-dark transition-colors text-center"
                                         >
                                             Frisco Location
                                         </Link>
                                         <Link
                                             href="/lewisville"
-                                            className="inline-block w-1/2 py-3 bg-warm-ivory text-charcoal rounded-xl font-medium hover:bg-warm-ivory-dark transition-colors text-center"
+                                            className="inline-block w-full sm:w-3/4 py-3 bg-warm-ivory text-charcoal rounded-xl font-medium hover:bg-warm-ivory-dark transition-colors text-center"
                                         >
                                             Lewisville Location
                                         </Link>
                                     </div>
-                                </div>
+                                </MagicCard>
                             </RevealSection>
 
                             {/* By Phone */}
                             <RevealSection delay={200} direction="right">
-                                <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                <MagicCard
+                                    className="h-full bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none flex flex-col"
+                                    gradientColor="rgba(201, 162, 39, 0.15)"
+                                >
                                     <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-deep-indigo to-charcoal rounded-2xl flex items-center justify-center">
                                         <span className="text-4xl">📞</span>
                                     </div>
@@ -107,21 +142,21 @@ export default function GiftCardsPage() {
                                     <p className="text-charcoal/70 mb-6">
                                         Call us to order gift cards. We can mail them or have them ready for pickup.
                                     </p>
-                                    <div className="flex flex-col items-center gap-3 my-4">
+                                    <div className="flex flex-col items-center gap-3 mt-auto mb-4">
                                         <a
                                             href="tel:+12146191200"
-                                            className="inline-block w-1/2 py-3 bg-accent-red text-white rounded-xl font-medium hover:bg-accent-red-hover transition-colors text-center"
+                                            className="inline-block w-full sm:w-3/4 py-3 bg-accent-red text-white rounded-xl font-medium hover:bg-accent-red-hover transition-colors text-center"
                                         >
                                             Frisco: (214) 619-1200
                                         </a>
                                         <a
                                             href="tel:+12144882224"
-                                            className="inline-block w-1/2 py-3 bg-deep-indigo text-white rounded-xl font-medium hover:bg-deep-indigo-hover transition-colors text-center"
+                                            className="inline-block w-full sm:w-3/4 py-3 bg-deep-indigo text-white rounded-xl font-medium hover:bg-deep-indigo-hover transition-colors text-center"
                                         >
                                             Lewisville: (214) 488-2224
                                         </a>
                                     </div>
-                                </div>
+                                </MagicCard>
                             </RevealSection>
                         </div>
 
@@ -164,12 +199,15 @@ export default function GiftCardsPage() {
                             { emoji: "🍣", title: "Quality", desc: "Fresh sushi and premium ingredients since 1988" },
                             { emoji: "❤️", title: "Thoughtful", desc: "Perfect for foodies and experience-lovers" },
                         ].map((item, idx) => (
-                            <RevealSection key={item.title} delay={idx * 150}>
-                                <div className="text-center hover:-translate-y-1 transition-all duration-300">
-                                    <span className="text-4xl block mb-3">{item.emoji}</span>
-                                    <h3 className="font-heading font-semibold text-charcoal mb-2">{item.title}</h3>
-                                    <p className="text-charcoal/70 text-sm">{item.desc}</p>
-                                </div>
+                            <RevealSection key={item.title} delay={idx * 150} className="h-full">
+                                <MagicCard
+                                    className="h-full bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none flex flex-col justify-center items-center"
+                                    gradientColor="rgba(201, 162, 39, 0.15)"
+                                >
+                                    <span className="text-4xl block mb-4">{item.emoji}</span>
+                                    <h3 className="text-xl font-heading font-bold text-charcoal mb-3">{item.title}</h3>
+                                    <p className="text-charcoal/70">{item.desc}</p>
+                                </MagicCard>
                             </RevealSection>
                         ))}
                     </div>
