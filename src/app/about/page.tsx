@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { RevealSection, HeroSection, ShinyBadge, NumberTickerInline as NumberTicker, AnimatedGradientText } from "@/components/MagicUI";
+import { MagicCard } from "@/components/ui/magic-card";
+import { Marquee } from "@/components/ui/Marquee";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { QuoteStrip } from "@/components/CustomerVoice";
@@ -314,8 +316,11 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {/* Fresh Ingredients */}
-              <div className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow">
-                <div className="relative w-full aspect-[3/2] rounded-xl overflow-hidden mb-6 shadow-md">
+              <MagicCard
+                className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-none"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="relative w-full aspect-[3/2] rounded-xl overflow-hidden mb-6 shadow-md pointer-events-none">
                   <Image
                     src="/images/catalog/homemade-sauces.jpg"
                     alt="Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch"
@@ -324,70 +329,79 @@ export default function AboutPage() {
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   Premium, Fresh Ingredients
                 </h3>
-                <p className="text-charcoal/70 text-sm">
-                  We source the finest, freshest fish daily. Our Yum Yum sauce, dipping sauces, and garlic butter are all made in-house—no shortcuts. Explore our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to see what we serve. When you taste the difference, you understand why guests prefer us over chains.
+                <p className="text-charcoal/70 text-sm pointer-events-none">
+                  We source the finest, freshest fish daily. Our Yum Yum sauce, dipping sauces, and garlic butter are all made in-house—no shortcuts. Explore our <Link href="/menu" className="text-accent-red hover:underline pointer-events-auto">full menu</Link> to see what we serve. When you taste the difference, you understand why guests prefer us over chains.
                 </p>
-                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;The food is consistently great and of the highest quality.&rdquo; — Google Review
                 </p>
-              </div>
+              </MagicCard>
 
               {/* Skilled Chefs */}
-              <div className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 mx-auto mb-6 bg-deep-indigo/10 rounded-full flex items-center justify-center">
+              <MagicCard
+                className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-none"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 bg-deep-indigo/10 rounded-full flex items-center justify-center pointer-events-none">
                   <svg className="w-8 h-8 text-deep-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   Spirited Hibachi Shows
                 </h3>
-                <p className="text-charcoal/70 text-sm">
-                  Skilled chefs bring artistry and entertainment to every table. The onion volcano, the flying shrimp, the flames—it&apos;s dinner and a show, every time. Discover the rich history of <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline">Japanese culinary culture</Link> behind these traditions.
+                <p className="text-charcoal/70 text-sm pointer-events-none">
+                  Skilled chefs bring artistry and entertainment to every table. The onion volcano, the flying shrimp, the flames—it&apos;s dinner and a show, every time. Discover the rich history of <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline pointer-events-auto">Japanese culinary culture</Link> behind these traditions.
                 </p>
-                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;Chef cooks right in front of you using special effects with fire — always fun!&rdquo; — TripAdvisor Review
                 </p>
-              </div>
+              </MagicCard>
 
               {/* Family Atmosphere */}
-              <div className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 mx-auto mb-6 bg-soft-gold/20 rounded-full flex items-center justify-center">
+              <MagicCard
+                className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-none"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 bg-soft-gold/20 rounded-full flex items-center justify-center pointer-events-none">
                   <svg className="w-8 h-8 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   Warm, Genuine Hospitality
                 </h3>
-                <p className="text-charcoal/70 text-sm">
+                <p className="text-charcoal/70 text-sm pointer-events-none">
                   Family-owned and operated. You won&apos;t feel like a transaction—you&apos;ll feel like a guest in our home. That&apos;s the difference authenticity makes.
                 </p>
-                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;Service is great — cozy and family-like.&rdquo; — Google Review
                 </p>
-              </div>
+              </MagicCard>
 
               {/* Celebrations */}
-              <div className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow">
-                <div className="w-16 h-16 mx-auto mb-6 bg-cedar-brown/10 rounded-full flex items-center justify-center">
+              <MagicCard
+                className="text-center p-8 bg-warm-ivory rounded-2xl hover:shadow-lg transition-shadow border-none"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 bg-cedar-brown/10 rounded-full flex items-center justify-center pointer-events-none">
                   <svg className="w-8 h-8 text-cedar-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   Birthdays & Special Moments
                 </h3>
-                <p className="text-charcoal/70 text-sm">
-                  Birthdays, anniversaries, graduations, proposals—Jinbeh is where <Link href="/celebrations" className="text-accent-red hover:underline">celebrations come alive</Link>. We offer <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> for your most special moments.
+                <p className="text-charcoal/70 text-sm pointer-events-none">
+                  Birthdays, anniversaries, graduations, proposals—Jinbeh is where <Link href="/celebrations" className="text-accent-red hover:underline pointer-events-auto">celebrations come alive</Link>. We offer <Link href="/private-dining" className="text-accent-red hover:underline pointer-events-auto">private dining</Link> for your most special moments.
                 </p>
-                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3">
+                <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;We&apos;ve been coming here for years, celebrating a lot of birthdays.&rdquo; — Google Review
                 </p>
-              </div>
+              </MagicCard>
             </div>
           </div>
         </section>
@@ -417,36 +431,38 @@ export default function AboutPage() {
             </div>
 
             {/* Instagram Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 max-w-6xl mx-auto">
-              {[
-                { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll specialty sushi with fresh fish and avocado" },
-                { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi grilled shrimp with vegetables and fried rice" },
-                { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi selection and Japanese desserts at the bar" },
-                { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo with NY strip steak and colossal shrimp" },
-                { src: "/images/photoshoot/sashimi-platter.jpg", alt: "Premium sashimi platter with salmon, tuna, and yellowtail" },
-                { src: "/images/drinks/JinbehPunchBeverageDrink.jpg", alt: "Jinbeh Punch signature cocktail with tropical flavors" },
-              ].map((item, i) => (
-                <a
-                  key={i}
-                  href="https://www.instagram.com/jinbehfrisco/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative aspect-square rounded-lg overflow-hidden group"
-                >
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    quality={80}
-                  />
-                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
-                    </svg>
-                  </div>
-                </a>
-              ))}
+            <div className="max-w-[100vw] overflow-hidden">
+              <Marquee className="[--duration:60s] py-4" pauseOnHover>
+                {[
+                  { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll specialty sushi with fresh fish and avocado" },
+                  { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi grilled shrimp with vegetables and fried rice" },
+                  { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi selection and Japanese desserts at the bar" },
+                  { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo with NY strip steak and colossal shrimp" },
+                  { src: "/images/photoshoot/sashimi-platter.jpg", alt: "Premium sashimi platter with salmon, tuna, and yellowtail" },
+                  { src: "/images/drinks/JinbehPunchBeverageDrink.jpg", alt: "Jinbeh Punch signature cocktail with tropical flavors" },
+                ].map((item, i) => (
+                  <a
+                    key={i}
+                    href="https://www.instagram.com/jinbehfrisco/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative aspect-square rounded-lg overflow-hidden group"
+                  >
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      quality={80}
+                    />
+                    <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors flex items-center justify-center">
+                      <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
+                      </svg>
+                    </div>
+                  </a>
+                ))}
+              </Marquee>
             </div>
           </div>
         </section>

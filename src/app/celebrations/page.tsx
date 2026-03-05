@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import { CustomerVoiceSection } from "@/components/CustomerVoice";
+import { MagicCard } from "@/components/ui/magic-card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -447,13 +448,18 @@ export default function CelebrationsPage() {
                 <Link
                   key={event.title}
                   href={event.href}
-                  className="group bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all hover:-translate-y-1"
+                  className="group block"
                 >
-                  <span className="text-3xl mb-3 block">{event.icon}</span>
-                  <h3 className="font-heading font-bold text-charcoal mb-2 group-hover:text-accent-red transition-colors">
-                    {event.title}
-                  </h3>
-                  <p className="text-charcoal/80 text-xs">{event.description}</p>
+                  <MagicCard
+                    className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all hover:-translate-y-1 h-full border-none flex flex-col justify-center items-center"
+                    gradientColor="rgba(201, 162, 39, 0.15)"
+                  >
+                    <span className="text-3xl mb-3 block pointer-events-none">{event.icon}</span>
+                    <h3 className="font-heading font-bold text-charcoal mb-2 group-hover:text-accent-red transition-colors pointer-events-none">
+                      {event.title}
+                    </h3>
+                    <p className="text-charcoal/80 text-xs pointer-events-none">{event.description}</p>
+                  </MagicCard>
                 </Link>
               ))}
             </div>

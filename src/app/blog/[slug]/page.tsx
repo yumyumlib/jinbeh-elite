@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { injectContextualLinks } from "@/components/ContextualLinks";
 import { BorderBeam } from "@/components/ui/BorderBeam";
+import { MagicCard } from "@/components/ui/magic-card";
 import blogData from "@/data/blog-posts.json";
 
 interface BlogPost {
@@ -282,7 +283,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         {/* Sidebar */}
                         <aside className="lg:col-span-1">
                             {/* Related Articles */}
-                            <div className="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
+                            <MagicCard
+                                className="bg-white rounded-2xl shadow-lg p-6 sticky top-24 border-none"
+                                gradientColor="rgba(201, 162, 39, 0.15)"
+                            >
                                 <h3 className="text-lg font-heading font-bold text-charcoal mb-6">
                                     Related Articles
                                 </h3>
@@ -339,7 +343,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                         ))}
                                     </div>
                                 </div>
-                            </div>
+                            </MagicCard>
                         </aside>
                     </div>
                 </div>

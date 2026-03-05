@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import { MagicCard } from "@/components/ui/magic-card";
 import blogData from "@/data/blog-posts.json";
 import locations from "@/data/locations.json";
 
@@ -139,34 +140,39 @@ export default async function BlogPage({
                                         <Link
                                             key={post.slug}
                                             href={`/blog/${post.slug}`}
-                                            className="group relative rounded-2xl overflow-hidden bg-charcoal aspect-[4/5] flex flex-col justify-end"
+                                            className="block h-full group"
                                         >
-                                            <div className="absolute inset-0">
-                                                <Image
-                                                    src={post.heroImage}
-                                                    alt={post.title}
-                                                    fill
-                                                    quality={80}
-                                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                                            </div>
-                                            <div className="relative z-10 p-6">
-                                                {category && (
-                                                    <span
-                                                        className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-white mb-3"
-                                                        style={{ backgroundColor: category.color }}
-                                                    >
-                                                        {category.icon} {category.name}
-                                                    </span>
-                                                )}
-                                                <h3 className="text-lg font-heading font-semibold text-white mb-2 group-hover:text-soft-gold transition-colors line-clamp-2 text-shadow-md">
-                                                    {post.title}
-                                                </h3>
-                                                <p className="text-sm text-warm-ivory/70">
-                                                    {post.readTime} min read
-                                                </p>
-                                            </div>
+                                            <MagicCard
+                                                className="relative rounded-2xl overflow-hidden bg-charcoal aspect-[4/5] flex flex-col justify-end border border-white/10 p-0"
+                                                gradientColor="rgba(201, 162, 39, 0.15)"
+                                            >
+                                                <div className="absolute inset-0">
+                                                    <Image
+                                                        src={post.heroImage}
+                                                        alt={post.title}
+                                                        fill
+                                                        quality={80}
+                                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+                                                </div>
+                                                <div className="relative z-10 p-6 pointer-events-none">
+                                                    {category && (
+                                                        <span
+                                                            className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-white mb-3"
+                                                            style={{ backgroundColor: category.color }}
+                                                        >
+                                                            {category.icon} {category.name}
+                                                        </span>
+                                                    )}
+                                                    <h3 className="text-lg font-heading font-semibold text-white mb-2 group-hover:text-soft-gold transition-colors line-clamp-2 text-shadow-md">
+                                                        {post.title}
+                                                    </h3>
+                                                    <p className="text-sm text-warm-ivory/70 pointer-events-none">
+                                                        {post.readTime} min read
+                                                    </p>
+                                                </div>
+                                            </MagicCard>
                                         </Link>
                                     );
                                 })}
@@ -196,38 +202,43 @@ export default async function BlogPage({
                                     return (
                                         <article
                                             key={post.slug}
-                                            className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1"
+                                            className="h-full"
                                         >
-                                            <Link href={`/blog/${post.slug}`}>
-                                                <div className="relative aspect-[16/10] overflow-hidden">
-                                                    <Image
-                                                        src={post.heroImage}
-                                                        alt={post.title}
-                                                        fill
-                                                        quality={80}
-                                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                                    />
-                                                    {category && (
-                                                        <span
-                                                            className="absolute top-4 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-white"
-                                                            style={{ backgroundColor: category.color }}
-                                                        >
-                                                            {category.icon} {category.name}
-                                                        </span>
-                                                    )}
-                                                </div>
-                                                <div className="p-6">
-                                                    <h3 className="text-lg font-heading font-semibold text-charcoal mb-2 group-hover:text-accent-red transition-colors line-clamp-2">
-                                                        {post.title}
-                                                    </h3>
-                                                    <p className="text-charcoal/70 text-sm line-clamp-2 mb-4">
-                                                        {post.excerpt}
-                                                    </p>
-                                                    <div className="flex items-center justify-between text-xs text-charcoal/70">
-                                                        <span>{new Date(post.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
-                                                        <span>{post.readTime} min read</span>
+                                            <Link href={`/blog/${post.slug}`} className="block h-full">
+                                                <MagicCard
+                                                    className="h-full bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden border-none p-0 flex flex-col"
+                                                    gradientColor="rgba(201, 162, 39, 0.15)"
+                                                >
+                                                    <div className="relative aspect-[16/10] overflow-hidden w-full">
+                                                        <Image
+                                                            src={post.heroImage}
+                                                            alt={post.title}
+                                                            fill
+                                                            quality={80}
+                                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                                        />
+                                                        {category && (
+                                                            <span
+                                                                className="absolute top-4 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-white"
+                                                                style={{ backgroundColor: category.color }}
+                                                            >
+                                                                {category.icon} {category.name}
+                                                            </span>
+                                                        )}
                                                     </div>
-                                                </div>
+                                                    <div className="p-6">
+                                                        <h3 className="text-lg font-heading font-semibold text-charcoal mb-2 group-hover:text-accent-red transition-colors line-clamp-2">
+                                                            {post.title}
+                                                        </h3>
+                                                        <p className="text-charcoal/70 text-sm line-clamp-2 mb-4">
+                                                            {post.excerpt}
+                                                        </p>
+                                                        <div className="flex items-center justify-between text-xs text-charcoal/70">
+                                                            <span>{new Date(post.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
+                                                            <span>{post.readTime} min read</span>
+                                                        </div>
+                                                    </div>
+                                                </MagicCard>
                                             </Link>
                                         </article>
                                     );
@@ -273,7 +284,7 @@ export default async function BlogPage({
                         </div>
                     </div>
                 </section>
-            </main>
+            </main >
         </>
     );
 }

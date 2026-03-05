@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { HeroSection, RevealSection, AnimatedGradientText } from "@/components/MagicUI";
+import { MagicCard } from "@/components/ui/magic-card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
@@ -222,47 +223,56 @@ export default function CateringPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center p-8">
-                <div className="w-16 h-16 mx-auto mb-6 bg-accent-red/10 rounded-full flex items-center justify-center">
+              <MagicCard
+                className="text-center p-8 bg-white border-none shadow-lg rounded-2xl"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 bg-accent-red/10 rounded-full flex items-center justify-center pointer-events-none">
                   <svg className="w-8 h-8 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   Fresh & Quality
                 </h3>
-                <p className="text-charcoal/70">
-                  The same fresh ingredients and expert preparation you expect from our restaurants. See our full <Link href="/menu" className="text-accent-red hover:underline font-medium">menu</Link> for available selections.
+                <p className="text-charcoal/70 pointer-events-none">
+                  The same fresh ingredients and expert preparation you expect from our restaurants. See our full <Link href="/menu" className="text-accent-red hover:underline font-medium pointer-events-auto">menu</Link> for available selections.
                 </p>
-              </div>
+              </MagicCard>
 
-              <div className="text-center p-8">
-                <div className="w-16 h-16 mx-auto mb-6 bg-deep-indigo/10 rounded-full flex items-center justify-center">
+              <MagicCard
+                className="text-center p-8 bg-white border-none shadow-lg rounded-2xl"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 bg-deep-indigo/10 rounded-full flex items-center justify-center pointer-events-none">
                   <svg className="w-8 h-8 text-deep-indigo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   On-Time Delivery
                 </h3>
-                <p className="text-charcoal/70">
+                <p className="text-charcoal/70 pointer-events-none">
                   We understand timing is everything. Whether it&apos;s corporate catering Frisco TX or party catering Lewisville, count on us for punctual delivery every time.
                 </p>
-              </div>
+              </MagicCard>
 
-              <div className="text-center p-8">
-                <div className="w-16 h-16 mx-auto mb-6 bg-soft-gold/20 rounded-full flex items-center justify-center">
+              <MagicCard
+                className="text-center p-8 bg-white border-none shadow-lg rounded-2xl"
+                gradientColor="rgba(201, 162, 39, 0.15)"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 bg-soft-gold/20 rounded-full flex items-center justify-center pointer-events-none">
                   <svg className="w-8 h-8 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-3 pointer-events-none">
                   Any Size Event
                 </h3>
-                <p className="text-charcoal/70">
-                  From intimate gatherings to <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">large group dining</Link> events, we scale to fit your needs. We also offer <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">semi-private dining spaces</Link> for more exclusive occasions.
+                <p className="text-charcoal/70 pointer-events-none">
+                  From intimate gatherings to <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium pointer-events-auto">large group dining</Link> events, we scale to fit your needs. We also offer <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium pointer-events-auto">semi-private dining spaces</Link> for more exclusive occasions.
                 </p>
-              </div>
+              </MagicCard>
             </div>
           </div>
         </section>

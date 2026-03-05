@@ -6,6 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { WordRotate } from "@/components/ui/WordRotate";
 import { BentoGrid, BentoCard } from "@/components/ui/BentoGrid";
 import { Meteors } from "@/components/ui/Meteors";
+import { MagicCard } from "@/components/ui/magic-card";
 
 export default function MenuClient() {
     return (
@@ -184,18 +185,21 @@ export default function MenuClient() {
                                 delay: 300,
                             },
                         ].map((category) => (
-                            <ScrollReveal key={category.title} delay={category.delay}>
-                                <div className="text-center p-6 bg-warm-ivory rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                                    <span className="text-4xl block mb-4">{category.icon}</span>
-                                    <h3 className="font-heading font-semibold text-xl text-charcoal mb-4">
+                            <ScrollReveal key={category.title} delay={category.delay} className="h-full">
+                                <MagicCard
+                                    className="text-center p-6 bg-white rounded-xl transition-all duration-300 hover:shadow-lg border-none hover:-translate-y-1 h-full flex flex-col justify-center items-center"
+                                    gradientColor="rgba(201, 162, 39, 0.15)"
+                                >
+                                    <span className="text-4xl block mb-4 pointer-events-none">{category.icon}</span>
+                                    <h3 className="font-heading font-semibold text-xl text-charcoal mb-4 pointer-events-none">
                                         {category.title}
                                     </h3>
-                                    <ul className="space-y-2 text-charcoal/70">
+                                    <ul className="space-y-2 text-charcoal/70 pointer-events-none">
                                         {category.items.map((item) => (
                                             <li key={item}>{item}</li>
                                         ))}
                                     </ul>
-                                </div>
+                                </MagicCard>
                             </ScrollReveal>
                         ))}
                     </div>
