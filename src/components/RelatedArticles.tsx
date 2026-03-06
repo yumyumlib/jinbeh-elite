@@ -176,7 +176,7 @@ export default function RelatedArticles({ currentSlug, maxArticles = 4 }: Relate
         </p>
         <div className="flex gap-2 justify-center">
           <a
-            href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+            href="https://www.opentable.com/booking/restref/availability?rid=1056652&lang=en-US"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-accent-red hover:bg-accent-red/90 rounded-lg text-sm font-medium transition-colors"
@@ -184,7 +184,7 @@ export default function RelatedArticles({ currentSlug, maxArticles = 4 }: Relate
             Frisco
           </a>
           <a
-            href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+            href="https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm font-medium transition-colors"

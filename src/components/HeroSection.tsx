@@ -38,7 +38,7 @@ export default function HeroSection() {
             }
         };
 
-        const timer = setTimeout(loadVideo, 4000);
+        const timer = setTimeout(loadVideo, 500);
         const onScroll = () => { loadVideo(); };
         window.addEventListener("scroll", onScroll, { passive: true, once: true });
 
@@ -104,7 +104,7 @@ export default function HeroSection() {
                 </h1>
 
                 <ScrollReveal delay={200}>
-                    <p className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white"
+                    <p className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white min-h-[7rem] md:min-h-[10rem] flex items-center justify-center"
                         role="heading"
                         aria-level={2}
                         style={{

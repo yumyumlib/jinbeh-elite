@@ -121,7 +121,7 @@ export default function Header({ location }: HeaderProps) {
   // Handle reservation click - opens OpenTable for the correct location
   const handleReserveClick = useCallback((targetLocation: "frisco" | "lewisville") => {
     const rid = locationsData.locations[targetLocation].reservation.rid;
-    const openTableUrl = `https://www.opentable.com/restref/client/?rid=${rid}&lang=en-US&ot_source=Restaurant%20website`;
+    const openTableUrl = `https://www.opentable.com/booking/restref/availability?rid=${rid}&lang=en-US`;
     window.open(openTableUrl, '_blank', 'noopener,noreferrer');
     setShowReserveModal(false);
   }, []);
@@ -498,7 +498,7 @@ export default function Header({ location }: HeaderProps) {
                 {/* Reserve buttons - clearly labeled per location */}
                 <div className="flex gap-2">
                   <a
-                    href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+                    href="https://www.opentable.com/booking/restref/availability?rid=1056652&lang=en-US"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
@@ -510,7 +510,7 @@ export default function Header({ location }: HeaderProps) {
                     Reserve Frisco
                   </a>
                   <a
-                    href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+                    href="https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
@@ -700,7 +700,7 @@ export default function Header({ location }: HeaderProps) {
 
               <div className="p-2">
                 <a
-                  href={`https://www.opentable.com/restref/client/?rid=${locationsData.locations.frisco.reservation.rid}&lang=en-US&ot_source=Restaurant%20website`}
+                  href={`https://www.opentable.com/booking/restref/availability?rid=${locationsData.locations.frisco.reservation.rid}&lang=en-US`}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setActiveDropdown(null)}
@@ -715,7 +715,7 @@ export default function Header({ location }: HeaderProps) {
                   </div>
                 </a>
                 <a
-                  href={`https://www.opentable.com/restref/client/?rid=${locationsData.locations.lewisville.reservation.rid}&lang=en-US&ot_source=Restaurant%20website`}
+                  href={`https://www.opentable.com/booking/restref/availability?rid=${locationsData.locations.lewisville.reservation.rid}&lang=en-US`}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setActiveDropdown(null)}
@@ -782,7 +782,7 @@ export default function Header({ location }: HeaderProps) {
             {/* Location buttons */}
             <div className="space-y-3">
               <a
-                href="https://www.opentable.com/restref/client/?rid=1056652&lang=en-US&ot_source=Restaurant%20website"
+                href="https://www.opentable.com/booking/restref/availability?rid=1056652&lang=en-US"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setShowReserveModal(false)}
@@ -801,7 +801,7 @@ export default function Header({ location }: HeaderProps) {
               </a>
 
               <a
-                href="https://www.opentable.com/restref/client/?rid=1056663&lang=en-US&ot_source=Restaurant%20website"
+                href="https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setShowReserveModal(false)}

@@ -14,7 +14,7 @@ export default function OpenTableWidget({
   buttonText = 'Reserve Your Table',
   variant = 'primary',
 }: OpenTableWidgetProps) {
-  const openTableUrl = `https://www.opentable.com/restref/client/?rid=${restaurantId}&lang=en-US&ot_source=Restaurant%20website`;
+  const openTableUrl = `https://www.opentable.com/booking/restref/availability?rid=${restaurantId}&lang=en-US`;
 
   const buttonVariants = {
     primary: 'btn btn-primary btn-shimmer',

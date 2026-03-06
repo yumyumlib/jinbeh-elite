@@ -73,7 +73,7 @@ export function MagicCard({
         <div
             ref={cardRef}
             className={cn(
-                "group relative flex size-full overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900 border text-black dark:text-white",
+                "group relative flex size-full overflow-hidden rounded-xl bg-neutral-100 border text-black",
                 className,
             )}
             {...props}
@@ -89,7 +89,7 @@ export function MagicCard({
                 }}
             />
             <motion.div
-                className="pointer-events-none absolute inset-0 rounded-xl bg-neutral-100/50 dark:bg-neutral-900/50"
+                className="pointer-events-none absolute inset-0 rounded-xl"
             />
         </div>
     );
