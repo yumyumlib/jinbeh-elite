@@ -498,7 +498,7 @@ export default function Header({ location }: HeaderProps) {
                 {/* Reserve buttons - clearly labeled per location */}
                 <div className="flex gap-2">
                   <a
-                    href="https://www.opentable.com/booking/restref/availability?rid=1056652&lang=en-US"
+                    href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
@@ -510,7 +510,7 @@ export default function Header({ location }: HeaderProps) {
                     Reserve Frisco
                   </a>
                   <a
-                    href="https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US"
+                    href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
@@ -782,7 +782,7 @@ export default function Header({ location }: HeaderProps) {
             {/* Location buttons */}
             <div className="space-y-3">
               <a
-                href="https://www.opentable.com/booking/restref/availability?rid=1056652&lang=en-US"
+                href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setShowReserveModal(false)}
@@ -801,7 +801,7 @@ export default function Header({ location }: HeaderProps) {
               </a>
 
               <a
-                href="https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US"
+                href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setShowReserveModal(false)}

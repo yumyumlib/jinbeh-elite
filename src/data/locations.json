@@ -62,8 +62,8 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/booking/restref/availability?rid=1056652&lang=en-US",
-        "rid": "1056652"
+        "url": "https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US",
+        "rid": "188458"
       },
       "menus": {
         "lunch": "/menus/frisco/lunch-menu.pdf",
@@ -151,8 +151,8 @@
       },
       "reservation": {
         "provider": "opentable",
-        "url": "https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US",
-        "rid": "1056663"
+        "url": "https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US",
+        "rid": "188461"
       },
       "menus": {
         "lunch": "/menus/lewisville/lunch-menu.pdf",

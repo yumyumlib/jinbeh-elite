@@ -752,7 +752,7 @@ export default function KidsMenuLewisvillePage() {
               <p className="text-lg mb-8">Off I-35E near Vista Ridge Mall</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="https://www.opentable.com/booking/restref/availability?rid=1056663&lang=en-US" target="_blank" rel="noopener noreferrer"
+                  href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" target="_blank" rel="noopener noreferrer"
                   className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all font-heading"
                 >
                   Make a Reservation
