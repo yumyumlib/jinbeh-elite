@@ -341,7 +341,7 @@ export default function SushiRollsFriscoPage() {
                 </div>
               </Link>
               <Link
-                href="/frisco/sushi-rolls/sunshine-roll"
+                href="/frisco/sushi-rolls"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">
@@ -367,7 +367,7 @@ export default function SushiRollsFriscoPage() {
                 </div>
               </Link>
               <Link
-                href="/frisco/sushi-rolls/hot-mama-roll"
+                href="/frisco/sushi-rolls"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">
@@ -393,7 +393,7 @@ export default function SushiRollsFriscoPage() {
                 </div>
               </Link>
               <Link
-                href="/frisco/sushi-rolls/back-9-dallas-roll"
+                href="/frisco/sushi-rolls"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">

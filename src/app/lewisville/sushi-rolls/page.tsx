@@ -341,7 +341,7 @@ export default function SushiRollsLewisvillePage() {
                 </div>
               </Link>
               <Link
-                href="/lewisville/sushi-rolls/sunshine-roll"
+                href="/lewisville/sushi-rolls"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">
@@ -367,7 +367,7 @@ export default function SushiRollsLewisvillePage() {
                 </div>
               </Link>
               <Link
-                href="/lewisville/sushi-rolls/hot-mama-roll"
+                href="/lewisville/sushi-rolls"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">
@@ -393,7 +393,7 @@ export default function SushiRollsLewisvillePage() {
                 </div>
               </Link>
               <Link
-                href="/lewisville/sushi-rolls/back-9-dallas-roll"
+                href="/lewisville/sushi-rolls"
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="relative h-48 overflow-hidden">

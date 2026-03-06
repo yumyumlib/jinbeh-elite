@@ -365,7 +365,7 @@ export default function PrivateDiningPage() {
                   </h3>
                   <p className="text-charcoal/70 mb-6">{event.description}</p>
                   {event.title === 'Birthday Parties' && (
-                    <p className="text-charcoal/70 mb-4 text-sm">Planning a birthday? Explore our <Link href="/celebrations/birthday" className="text-accent-red hover:underline font-medium">birthday celebration</Link> packages and read our <Link href="/blog/birthday-party-venues-frisco" className="text-accent-red hover:underline font-medium">Frisco birthday venue guide</Link>.</p>
+                    <p className="text-charcoal/70 mb-4 text-sm">Planning a birthday? Explore our <Link href="/celebrations/birthday" className="text-accent-red hover:underline font-medium">birthday celebration</Link> packages and read our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline font-medium">Frisco birthday venue guide</Link>.</p>
                   )}
                   {event.title === 'Corporate Events' && (
                     <p className="text-charcoal/70 mb-4 text-sm">Looking for corporate dining? See our <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium">large group dining</Link> tips and <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium">private dining options</Link>.</p>

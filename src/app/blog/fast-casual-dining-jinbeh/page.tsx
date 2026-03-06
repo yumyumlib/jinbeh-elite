@@ -102,7 +102,7 @@ export default function FastCasualDiningJinbeh() {
             <p>
                 Our bento boxes are the ultimate work lunch: a balanced combination of protein, rice, salad,
                 and sides in one convenient box. Choose from chicken teriyaki, salmon, shrimp, or a
-                <Link href="/blog/best-vegetarian-options-japanese-restaurant" className="text-accent-red hover:underline"> vegetarian option</Link>.
+                <Link href="/blog" className="text-accent-red hover:underline"> vegetarian option</Link>.
                 Each box is a complete meal that's satisfying without being heavy.
             </p>
 

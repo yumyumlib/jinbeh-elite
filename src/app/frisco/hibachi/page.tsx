@@ -602,7 +602,7 @@ export default function HibachiFriscoPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/catalog_v7/hibachi/jinbeh-hibachi-action-shot.webp"
+                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-001-orig-IMG_1843-1200w.webp"
                     alt="Seafood trio — shrimp, scallops, and lobster on the grill"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"

@@ -180,7 +180,7 @@ export default function BeerHardSeltzer() {
 
             <p>
                 Want to explore beyond beer? Check out our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails guide</Link> or
-                our <Link href="/blog/sake-taste-guide" className="text-accent-red hover:underline">sake tasting guide</Link> for
+                our <Link href="/blog/sake-taste-profile" className="text-accent-red hover:underline">sake tasting guide</Link> for
                 even more options. Our guests say the "lychee martini is a must"—another great option
                 alongside your meal.
             </p>

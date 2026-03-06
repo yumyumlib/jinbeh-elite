@@ -155,7 +155,7 @@ export default function Footer() {
                   <Link href="/lewisville/hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Lewisville Hibachi Grill
                   </Link>
-                  <Link href="/sushi-rolls" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                  <Link href="/menu" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Sushi & Rolls
                   </Link>
                   <Link href="/lunch-specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
