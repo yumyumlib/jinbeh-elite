@@ -52,6 +52,7 @@ export default function MenuItemTemplate({ item, location }: MenuItemTemplatePro
     const otherLoc = location.otherLocation;
     const categoryPath = getCategoryPath(item.category);
     const categoryLabel = categoryLabels[item.category];
+    const { jinbehStory, origin, nutritionHighlight, experienceNote } = item;
 
     return (
         <main className="min-h-screen bg-warm-ivory">
@@ -108,6 +109,58 @@ export default function MenuItemTemplate({ item, location }: MenuItemTemplatePro
                                     {item.description}
                                 </p>
                                 <DietaryBadges dietary={item.dietary} />
+                            </div>
+                        </BlurFade>
+
+                        {/* The Jinbeh Story + Origin */}
+                        <BlurFade delay={0.25}>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                {jinbehStory && (
+                                    <div className="bg-white rounded-2xl p-8 shadow-lg">
+                                        <h2 className="text-2xl font-heading font-bold text-charcoal mb-4">
+                                            The Jinbeh Story
+                                        </h2>
+                                        <p className="text-charcoal/80 leading-relaxed">
+                                            {jinbehStory}
+                                        </p>
+                                    </div>
+                                )}
+                                {origin && (
+                                    <div className="bg-white rounded-2xl p-8 shadow-lg">
+                                        <h2 className="text-2xl font-heading font-bold text-charcoal mb-4">
+                                            Origin &amp; Tradition
+                                        </h2>
+                                        <p className="text-charcoal/80 leading-relaxed">
+                                            {origin}
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+                        </BlurFade>
+
+                        {/* The Experience + Nutrition */}
+                        <BlurFade delay={0.28}>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                {experienceNote && (
+                                    <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-accent-red">
+                                        <h2 className="text-2xl font-heading font-bold text-charcoal mb-4">
+                                            🎪 The Experience
+                                        </h2>
+                                        <p className="text-charcoal/80 leading-relaxed">
+                                            {experienceNote}
+                                        </p>
+                                    </div>
+                                )}
+                                {nutritionHighlight && (
+                                    <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-soft-gold">
+                                        <h2 className="text-2xl font-heading font-bold text-charcoal mb-4">
+                                            🥗 Nutrition Spotlight
+                                        </h2>
+                                        <p className="text-charcoal/80 leading-relaxed">
+                                            {nutritionHighlight}
+                                        </p>
+                                    </div>
+                                )}
                             </div>
                         </BlurFade>
 

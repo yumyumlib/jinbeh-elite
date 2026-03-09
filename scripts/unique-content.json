@@ -1,0 +1,278 @@
+{
+    "hibachi/salmon": {
+        "jinbehStory": "Jinbeh has served hibachi salmon since opening in 1988. Our chefs source fresh Atlantic salmon daily and finish it with a house-made citrus teriyaki glaze developed by our founding chef. Guests consistently name it one of the top three entrées at both locations.",
+        "origin": "Teppanyaki-style salmon cooking originated in post-war Japan when restaurants began grilling Western-style proteins on iron hot plates. The citrus teriyaki preparation blends traditional Japanese flavors with modern presentation.",
+        "nutritionHighlight": "Atlantic salmon delivers 25-28g of protein per 5oz serving with only 200-250 calories. It is one of nature's richest sources of heart-healthy omega-3 fatty acids (EPA and DHA), supporting cardiovascular health and brain function.",
+        "experienceNote": "Your chef sears the salmon right at your table on a 400°F teppanyaki grill. Watch the citrus teriyaki glaze bubble and caramelize as the onion volcano erupts nearby. The aroma alone is worth the visit."
+    },
+    "hibachi/filet-mignon": {
+        "jinbehStory": "Our filet mignon is the most ordered celebration entrée at both Jinbeh locations. We hand-select center-cut tenderloin for every service. Birthday guests choose this cut more than any other on the menu.",
+        "origin": "While filet mignon is a French term meaning \"cute fillet,\" teppanyaki preparation brings Japanese precision to Western beef. Jinbeh's chefs sear it hot and fast on seasoned steel, locking in juices that a standard kitchen grill cannot match.",
+        "nutritionHighlight": "Filet mignon is the leanest premium steak cut, with roughly 250 calories and 26g protein per 6oz serving. It contains less marbling than ribeye, making it a strong choice for guests who want tenderness without excess fat.",
+        "experienceNote": "The chef hand-cuts your filet at the table, sears both sides until a golden crust forms, and slices it open to show the perfect pink center. The tableside knife work and dramatic flames make every filet mignon dinner feel like a celebration."
+    },
+    "hibachi/ny-strip": {
+        "jinbehStory": "The N.Y. strip is a favorite among Jinbeh regulars who want bold steak flavor with the full hibachi show. Our kitchen team ages each strip for maximum tenderness before it hits the grill.",
+        "origin": "The New York strip gets its name from Delmonico's restaurant in Manhattan, which popularized the cut in the 1800s. On a Japanese teppanyaki grill, the fat cap renders far more effectively than a standard broiler.",
+        "nutritionHighlight": "N.Y. strip provides roughly 280 calories and 28g protein per 6oz serving. The fat cap along the edge carries flavor without dramatically increasing the calorie count.",
+        "experienceNote": "Your chef sears the strip on the hottest part of the grill, rendering the fat cap until it sizzles. The steak is sliced tableside and arranged on your plate with precision. Expect the onion volcano, egg tricks, and flying utensils throughout."
+    },
+    "hibachi/ribeye": {
+        "jinbehStory": "Our 10oz Black Angus ribeye is the biggest single steak on the Jinbeh hibachi menu. Guests who love bold, marbled beef always come back for this cut. It outsells every other steak option at our Lewisville location.",
+        "origin": "Black Angus cattle were originally bred in Scotland for superior marbling. The teppanyaki grill reaches temperatures that home kitchens cannot achieve, creating a deep Maillard crust that locks in the rich intramuscular fat.",
+        "nutritionHighlight": "A 10oz ribeye delivers roughly 500 calories and 42g protein. The higher fat content means more flavor per bite, and the marbling provides fat-soluble vitamins A, D, and E.",
+        "experienceNote": "This is a substantial cut that takes center stage on the grill. Your chef works the ribeye longer than other steaks, allowing the fat to render and baste each slice. The sizzle and aroma fill the entire dining room."
+    },
+    "hibachi/chicken-teriyaki": {
+        "jinbehStory": "Our lemon sesame chicken is the most ordered dinner across both Jinbeh locations. Families with children choose it more than any other entrée. The house-made Yum Yum sauce served alongside is a closely guarded recipe from 1988.",
+        "origin": "Teriyaki comes from the Japanese words \"teri\" (shine) and \"yaki\" (grill). Our lemon sesame variation adds bright citrus and nutty sesame to the classic glaze, reflecting over 35 years of creative fusion at Jinbeh.",
+        "nutritionHighlight": "Boneless chicken breast is one of the leanest proteins available. A hibachi serving delivers approximately 220 calories and 30g protein. Combined with grilled vegetables and rice, it offers a balanced, satisfying meal.",
+        "experienceNote": "The full hibachi show accompanies every chicken dinner. Your chef performs the onion volcano, flips shrimp into guests' mouths, and juggles spatulas while your chicken sears to golden perfection. Kids love every moment."
+    },
+    "hibachi/shrimp": {
+        "jinbehStory": "Jinbeh uses colossal-grade shrimp, larger than what most hibachi restaurants serve. Our garlic lemon butter recipe has remained unchanged since the restaurant opened. Guests regularly mention the shrimp as the highlight of combination dinners.",
+        "origin": "Teppanyaki shrimp became a staple of Japanese steakhouses in the 1960s. The high-heat grill creates a slight char on the exterior while keeping the interior sweet and snappy.",
+        "nutritionHighlight": "Shrimp is remarkably lean. A serving of colossal shrimp contains approximately 180 calories and 24g protein with minimal fat. Shrimp also provides selenium, B12, and astaxanthin, a powerful antioxidant.",
+        "experienceNote": "Your chef butterflies each shrimp on the grill, bastes them in garlic lemon butter, and may toss one toward you to catch. The moment the butter hits the hot steel, the entire table fills with an irresistible aroma."
+    },
+    "hibachi/scallops": {
+        "jinbehStory": "Jumbo scallops are a signature choice at Jinbeh for guests who appreciate delicate seafood. Our chefs sear them at peak temperature to achieve a flawless golden crust. Many regulars pair them with a sake flight for a refined Japanese dining experience.",
+        "origin": "Sea scallops are harvested from the cold waters of the Atlantic. In Japanese cuisine, scallops (hotategai) are prized for their natural sweetness. The teppanyaki grill creates a caramelized sear impossible to replicate in a standard kitchen.",
+        "nutritionHighlight": "Scallops provide roughly 140 calories and 20g protein per serving. They are exceptionally low in fat and high in magnesium, potassium, and B12.",
+        "experienceNote": "Watch your chef pat each scallop dry before placing it on the scorching grill. The initial sizzle is dramatic. Within minutes, a golden crust forms while the interior stays silky."
+    },
+    "hibachi/lobster-tail": {
+        "jinbehStory": "Twin lobster tails are the most luxurious single-protein entrée at Jinbeh. Anniversary and birthday guests choose this dish more than any other seafood option. Every lobster tail is split and butter-basted tableside.",
+        "origin": "Lobster has been a symbol of celebration in both Western and Japanese cuisine for centuries. The teppanyaki preparation allows guests to watch the entire cooking process, from raw tail to butter-drenched perfection.",
+        "nutritionHighlight": "Lobster is a lean, protein-rich shellfish. A lobster tail serving delivers approximately 200 calories and 28g protein. Lobster also contains zinc, phosphorus, and vitamin B12.",
+        "experienceNote": "The chef splits each tail down the center, revealing the white meat inside. Drawn butter is ladled over the lobster as it grills, creating a sizzling pool of buttery richness. The sweet aroma reaches every seat."
+    },
+    "hibachi/vegetable-tofu": {
+        "jinbehStory": "Jinbeh's Vegetarian hibachi proves that the cooking show works beautifully without meat. Our chefs give vegetarian guests the identical onion volcano, fire show, and knife performance. Plant-based diners consistently praise this option in online reviews.",
+        "origin": "Tofu (doufu) has been a protein staple in Japanese cuisine for over 1,000 years. Buddhist monks popularized tofu dishes in Japan, and teppanyaki grilling adds a modern, interactive twist to this ancient ingredient.",
+        "nutritionHighlight": "Firm tofu delivers 10g protein per half-cup serving with only 90 calories. Combined with grilled zucchini, onions, mushrooms, and broccoli, this dinner provides a full spectrum of vitamins and plant-based nutrients.",
+        "experienceNote": "You get the complete show. Same onion volcano. Same flying egg trick. Same impressive knife work. The only difference is the protein on the grill."
+    },
+    "hibachi/combo-steak-chicken": {
+        "jinbehStory": "The Jinbeh Double Delight is our best-selling combination dinner. This option exists because guests kept asking to try two proteins in one sitting without committing to the larger combos.",
+        "origin": "Combination dinners became popular in American teppanyaki restaurants during the 1970s. They allow guests to sample multiple preparations in a single meal, turning dinner into a tasting experience.",
+        "nutritionHighlight": "Combining two proteins gives you variety without doubling the portion. A steak-and-chicken combo delivers roughly 400 calories and 45g protein, making it a balanced option.",
+        "experienceNote": "Your chef prepares both proteins side by side on the grill, each with its own seasoning and timing. Watching the contrast between searing steak and grilling chicken highlights the chef's range and precision."
+    },
+    "hibachi/combo-steak-shrimp": {
+        "jinbehStory": "Land and Sea is a step above the Double Delight for guests who want a premium pairing. The steak-and-shrimp version is especially popular among couples celebrating date night at Jinbeh.",
+        "origin": "The concept of pairing land proteins with ocean proteins has roots in both French \"surf and turf\" and Japanese kaiseki multi-course traditions. Jinbeh brings this elegant contrast to the high-energy teppanyaki format.",
+        "nutritionHighlight": "Pairing sirloin with shrimp gives you iron-rich beef alongside lean shellfish. Together they deliver roughly 380 calories and 44g protein with a broad spectrum of essential nutrients.",
+        "experienceNote": "Two proteins, two distinct searing styles, one spectacular show. Your chef manages the timing so both proteins reach perfection simultaneously."
+    },
+    "hibachi/combo-steak-lobster": {
+        "jinbehStory": "Surf N' Turf is the top choice for birthdays and anniversaries at Jinbeh. When guests call to reserve for a special occasion, our staff recommends this combination more than any other.",
+        "origin": "Surf and turf became an American steakhouse icon in the 1960s. Jinbeh elevates it with tableside teppanyaki preparation, where the filet mignon sears alongside a split lobster tail on a single grill.",
+        "nutritionHighlight": "Filet mignon plus lobster tail delivers approximately 450 calories and 52g protein. This combination provides lean beef and lean shellfish, making it one of the most protein-dense celebration dinners.",
+        "experienceNote": "The chef sears your filet first, then places the split lobster tail beside it. Drawn butter cascades over the lobster while the steak rests. The two aromas together define \"special occasion.\""
+    },
+    "hibachi/combo-seafood": {
+        "jinbehStory": "The Seafood Lover's Combo is Jinbeh's ultimate ocean feast. It draws guests who want lobster, shrimp, and scallops all on one plate. This combination outsells every other pure-seafood option on the menu.",
+        "origin": "Japanese cuisine has a deep tradition of celebrating the ocean's bounty. The teppanyaki format allows three distinct seafood textures and flavors to cook simultaneously.",
+        "nutritionHighlight": "Lobster, shrimp, and scallops together deliver roughly 380 calories and 55g protein. This is the highest-protein, lowest-fat entrée combination on the Jinbeh hibachi menu.",
+        "experienceNote": "Three seafood proteins on the grill at once creates a spectacular visual. Your chef manages scallop searing, shrimp flipping, and lobster basting simultaneously. The precision makes this one of the most impressive cooking performances."
+    },
+    "hibachi/imperial-dinner": {
+        "jinbehStory": "The Imperial Dinner for Two is Jinbeh's signature feast and the most photographed dish at both locations. Engagement celebrations, milestone birthdays, and anniversary dinners frequently center around this menu item.",
+        "origin": "The Imperial Dinner reflects the Japanese tradition of omotenashi: wholehearted hospitality. By combining the finest proteins with tableside theater, it creates an experience that goes far beyond a simple meal.",
+        "nutritionHighlight": "Shared between two guests, each person receives roughly 500 calories and 55g protein from the filet mignon, lobster, shrimp, and California roll. A complete feast.",
+        "experienceNote": "This is a 30-40 minute performance. Your chef orchestrates filet mignon, lobster tail, and colossal shrimp in sequence. A fresh California roll arrives from the sushi bar midway through. The entire restaurant notices an Imperial Dinner in progress."
+    },
+    "sushi-rolls/california-roll": {
+        "jinbehStory": "Jinbeh's California Roll uses real crab meat, not imitation. Our sushi chefs craft hundreds of these rolls each week. It remains the most-ordered sushi item across both locations.",
+        "origin": "The California Roll was invented in the 1960s by a Japanese chef in Los Angeles who substituted crab for toro. The inside-out style hid the nori seaweed, making it more approachable for American diners.",
+        "nutritionHighlight": "A California Roll provides approximately 250 calories and 9g protein per roll. It is low in saturated fat and a good source of healthy monounsaturated fats from the avocado.",
+        "experienceNote": "Watch our sushi chef roll this classic behind the sushi bar with practiced speed. The rice is spread, crab and avocado are placed, and in seconds the roll is shaped, sliced into eight clean pieces, and presented."
+    },
+    "sushi-rolls/spicy-tuna-roll": {
+        "jinbehStory": "Our sushi chefs hand-dice the ahi tuna and mix it with a house-blended spicy mayo that has just the right kick. This roll is the number-one seller among guests who enjoy a little heat.",
+        "origin": "The Spicy Tuna Roll emerged in the 1980s from Japanese-American sushi bars. Mixing raw tuna with spicy mayo was a creative way to use trim cuts of high-quality fish.",
+        "nutritionHighlight": "Ahi tuna is packed with lean protein (about 25g per roll) and omega-3 fatty acids. The spicy mayo adds some calories, but the overall roll stays around 290 calories.",
+        "experienceNote": "Fresh tuna is diced to order at the sushi bar. The bright red fish mixes with the creamy spicy mayo right before your eyes. The roll is finished with orange tobiko that pops with each bite."
+    },
+    "sushi-rolls/dragon-roll": {
+        "jinbehStory": "The Dragon Roll is our most visually dramatic sushi creation. Guests photograph this roll more than any other item on the menu. The combination of smoky eel, creamy avocado, and sweet tare sauce makes it a best-seller.",
+        "origin": "Eel (unagi) is a prized delicacy in Japan, traditionally prepared kabayaki style: filleted, steamed, then broiled with a sweet soy glaze. The Dragon Roll transforms this classic preparation into a show-stopping sushi presentation.",
+        "nutritionHighlight": "Unagi eel provides roughly 200 calories and 20g protein per serving. It is one of the few natural food sources of vitamin A and vitamin E.",
+        "experienceNote": "The chef arranges thin avocado slices to resemble dragon scales across the top. Sweet eel sauce is drizzled in artistic lines. When presented, the roll genuinely resembles a green serpent curling across your plate."
+    },
+    "sushi-rolls/rainbow-roll": {
+        "jinbehStory": "Our Rainbow Roll is the most shareable sushi item at Jinbeh. Groups of four or more frequently order it as a centerpiece. Each piece has a different fish on top, so everyone gets a unique bite.",
+        "origin": "The Rainbow Roll is an American sushi innovation that showcases the range of a sushi bar. By draping different sashimi over a California Roll base, it becomes a visual menu of available fish.",
+        "nutritionHighlight": "The variety of fish delivers a broad spectrum of nutrients: omega-3s from salmon, lean protein from tuna, and healthy fats from yellowtail. Total calories run 350-400 per roll.",
+        "experienceNote": "The chef carefully drapes alternating slices of tuna, salmon, yellowtail, shrimp, and avocado. Deep red, bright orange, pale pink, pink-white, and green. It arrives looking like an edible rainbow."
+    },
+    "sushi-rolls/shrimp-tempura-roll": {
+        "jinbehStory": "Jinbeh fries the shrimp tempura right before rolling to maintain maximum crispiness. This roll is a top pick for guests who prefer cooked sushi.",
+        "origin": "Tempura was introduced to Japan by Portuguese missionaries in the 16th century. The Japanese refined the batter to become whisper-thin. Rolling tempura inside sushi is a modern Japanese-American creation.",
+        "nutritionHighlight": "Despite being fried, the light tempura batter keeps the roll around 300 calories. Shrimp provides lean protein (22g per roll), and avocado adds heart-healthy fats.",
+        "experienceNote": "The crunch when you bite through the roll is the star moment. The tempura batter shatters, the cool rice gives way, and the creamy avocado smooths everything together."
+    },
+    "sushi-rolls/spider-roll": {
+        "jinbehStory": "Guests who try soft shell crab at Jinbeh for the first time are always surprised that the entire crab is edible. Our sushi chef selects the freshest soft shell crabs and fries them until shatteringly crispy.",
+        "origin": "Soft shell crabs are blue crabs harvested right after molting, when the new shell is paper-thin and fully edible. Japanese chefs adopted soft shell crab for sushi in the 1970s.",
+        "nutritionHighlight": "Soft shell crab provides approximately 18g protein per crab with calcium from the edible shell. The light frying adds around 320 total calories per roll.",
+        "experienceNote": "The fried crab legs extend from each end of every sushi piece, creating a dramatic spidery appearance. Biting into the roll releases a satisfying crunch followed by sweet, delicate crab meat."
+    },
+    "sushi-rolls/philly-roll": {
+        "jinbehStory": "The Philadelphia Roll is a consistent top seller for guests who enjoy rich, creamy flavors. Our sushi chefs use quality cream cheese and fresh salmon. Loyal regulars order this alongside their hibachi dinner.",
+        "origin": "The Philadelphia Roll was born in the 1980s, named after the famous cream cheese brand. It represents the creative fusion of Japanese technique and American ingredients.",
+        "nutritionHighlight": "The cream cheese adds richness plus calcium and vitamin A. A complete Philly Roll runs approximately 320 calories and 14g protein.",
+        "experienceNote": "Cold salmon, smooth cream cheese, and crisp cucumber create three distinct textures in a single bite. The temperature stays cool throughout, making this a refreshing choice between warm hibachi courses."
+    },
+    "sushi-rolls/ahi-tower": {
+        "jinbehStory": "The Ahi Tower is Jinbeh's most Instagram-worthy dish. Groups order it as a dramatic table centerpiece. Every tower is built with a ring mold and carefully unmolded for maximum visual impact.",
+        "origin": "Tuna tartare towers gained popularity in high-end Japanese fusion restaurants during the 1990s. The stacked presentation emphasizes the quality of the fish.",
+        "nutritionHighlight": "Ahi tuna is exceptionally lean, delivering 25g protein with only 120 calories per 4oz serving. The avocado adds potassium and fiber.",
+        "experienceNote": "The tower arrives standing tall: crispy rice on the bottom, vibrant green avocado in the middle, and ruby-red tuna on top. Your server presents it with a flourish before you break into the layers."
+    },
+    "sushi-rolls/caterpillar-roll": {
+        "jinbehStory": "The Caterpillar Roll appeals to eel-loving guests who often order the Dragon Roll too. Many order both side by side for a tasting comparison. Our sushi chefs arrange the avocado segments one by one.",
+        "origin": "Like the Dragon Roll, the Caterpillar Roll uses broiled freshwater eel (unagi). The different avocado arrangement creates a distinct visual identity.",
+        "nutritionHighlight": "Eel and avocado together deliver approximately 330 calories and 16g protein per roll. The avocado adds fiber and potassium.",
+        "experienceNote": "Watch the chef line up avocado slices in overlapping segments across the roll, then drizzle sweet tare sauce in thin lines. The finished roll looks like a caterpillar crawling across your plate."
+    },
+    "sushi-rolls/volcano-roll": {
+        "jinbehStory": "The Volcano Roll is Jinbeh's most popular baked sushi option. Guests who are new to sushi love the warm, bubbly topping over familiar California Roll flavors.",
+        "origin": "Baked sushi rolls became popular in American Japanese restaurants as a way to offer warm, cooked options alongside traditional raw sushi. The erupting topping inspired the volcanic name.",
+        "nutritionHighlight": "The baked crab and scallop topping adds protein and minerals while keeping the roll around 350 calories total.",
+        "experienceNote": "The roll arrives with a golden, bubbly crown still warm from the oven. Steam rises from the baked topping. The first hot bite over cool rice is a satisfying surprise."
+    },
+    "sushi-rolls/tiger-roll": {
+        "jinbehStory": "The Tiger Roll combines the crispy appeal of shrimp tempura with an artistic stripe pattern on top. Guests who enjoy bold visual presentation alongside great flavor choose this roll regularly.",
+        "origin": "The Tiger Roll is named for the distinctive striped pattern of alternating spicy mayo and eel sauce across the avocado topping.",
+        "nutritionHighlight": "The combination of shrimp tempura and avocado delivers approximately 310 calories and 18g protein.",
+        "experienceNote": "Tiger stripes of alternating red spicy mayo and brown eel sauce across green avocado create a striking look. The first crunch of shrimp tempura gives way to cool, creamy avocado."
+    },
+    "sushi-rolls/vegas-roll": {
+        "jinbehStory": "The Vegas Roll is Jinbeh's most indulgent sushi creation. Guests who love crispy, fried textures and rich cream cheese gravitate to this roll. It sells especially well on weekend nights.",
+        "origin": "Deep-fried sushi rolls are a distinctly American innovation inspired by the indulgence of Las Vegas cuisine. The entire roll is battered and fried.",
+        "nutritionHighlight": "As a deep-fried roll, the Vegas Roll is the most indulgent sushi option at approximately 380 calories. The cream cheese adds calcium.",
+        "experienceNote": "The entire roll arrives golden and crispy, still steaming from the fryer. Cutting into it reveals a warm, melted cream cheese center. The contrast between crispy shell and soft interior is unforgettable."
+    },
+    "sushi-rolls/yellowtail-jalapeno": {
+        "jinbehStory": "This roll reflects Jinbeh's willingness to innovate within traditional Japanese cuisine. The combination of buttery hamachi with fresh jalapeño heat has earned a devoted following.",
+        "origin": "Yellowtail with jalapeño was popularized by chef Nobu Matsuhisa in the 1980s. Jinbeh's version wraps this iconic pairing inside a sushi roll with cilantro and ponzu.",
+        "nutritionHighlight": "Yellowtail (hamachi) is rich in omega-3 fatty acids and provides 25g protein per serving. Jalapeños contain capsaicin, which studies associate with metabolic benefits. About 280 calories per roll.",
+        "experienceNote": "The jalapeño slices are cut paper-thin. The heat arrives clean and bright without overpowering the delicate yellowtail. Each bite delivers a sequence: cool fish, sharp pepper, citrus ponzu."
+    },
+    "sushi-rolls/butterfly-kiss": {
+        "jinbehStory": "The Butterfly Kiss is a Jinbeh original. Our sushi chef created this roll to showcase delicate flavors that land lightly on the palate. It rotates seasonal ingredients.",
+        "origin": "House-original rolls are a proud tradition in Japanese sushi bars. The chef creates a signature roll that reflects the personality of the restaurant.",
+        "nutritionHighlight": "As a fresh fish and avocado roll, the Butterfly Kiss delivers approximately 270 calories and 14g protein. The exact profile varies with seasonal changes.",
+        "experienceNote": "Ask your server what's in tonight's Butterfly Kiss. The seasonal rotation means returning guests discover new combinations while enjoying a Jinbeh exclusive."
+    },
+    "appetizers/edamame": {
+        "jinbehStory": "Edamame is the number-one appetizer at both Jinbeh locations. The Spicy Garlic upgrade is wildly popular. Our kitchen tosses the pods in chili garlic oil with fresh minced garlic the moment they leave the steamer.",
+        "origin": "Edamame has been eaten in Japan for over 1,000 years. The word means \"stem beans\" because they were originally sold still attached to the stalk. In modern izakaya culture, edamame and beer is as iconic as chips and salsa.",
+        "nutritionHighlight": "Edamame is a nutritional powerhouse: 17g protein per cup with all nine essential amino acids. It is one of the few plant foods that qualify as a complete protein.",
+        "experienceNote": "A warm bowl of salted edamame arrives within minutes of ordering. Pop each bean from its pod for a satisfying, addictive snack. The Spicy Garlic version fills the table with the aroma of chili and roasted garlic."
+    },
+    "appetizers/gyoza": {
+        "jinbehStory": "Jinbeh's gyoza are pan-fried in-house every day. The bottom side develops a golden, crispy crust while the top stays soft and steamy. Our ponzu dipping sauce is mixed fresh.",
+        "origin": "Gyoza evolved from Chinese jiaozi dumplings when Japanese soldiers returned from Manchuria after World War II. The Japanese version features thinner wrappers and pan-frying on one side, creating the signature crispy bottom.",
+        "nutritionHighlight": "An order of gyoza provides approximately 250 calories and 12g protein. The pork and vegetable filling delivers iron and B vitamins.",
+        "experienceNote": "Flip each gyoza over to see the golden, crispy bottom before dipping. The crunch of the fried side gives way to the soft, steamed wrapper and juicy filling. The ponzu adds a bright citrus note."
+    },
+    "appetizers/tempura": {
+        "jinbehStory": "Jinbeh mixes tempura batter ice-cold with minimal stirring. Small lumps remain in the batter on purpose. This technique creates the signature lacy, shatteringly crispy coating that sets our tempura apart.",
+        "origin": "Portuguese missionaries brought frying techniques to Japan in the 1500s. Japanese chefs refined the batter into something unique: whisper-thin, crispy, and almost greaseless.",
+        "nutritionHighlight": "Shrimp tempura delivers approximately 200 calories per serving. The light batter absorbs less oil than Western frying methods, and the shrimp provides 16g lean protein.",
+        "experienceNote": "The tempura arrives still crackling from the fryer. Pick up a shrimp and watch the lacy batter catch the light. Dip it in warm tentsuyu sauce with a pinch of grated daikon. The first crunch is unforgettable."
+    },
+    "appetizers/seared-tuna": {
+        "jinbehStory": "Our seared tuna uses the same sushi-grade ahi that goes into our sashimi and rolls. The pepper-sesame crust is applied by hand, and the searing takes only seconds per side.",
+        "origin": "Tataki-style searing (briefly searing the outside of raw fish) is a Japanese technique from Kochi prefecture. It preserves the clean flavor of the raw interior while adding a flavorful crust.",
+        "nutritionHighlight": "Seared ahi tuna provides roughly 180 calories and 30g protein per serving with minimal fat. It is rich in selenium, niacin, and vitamin B6.",
+        "experienceNote": "The tuna arrives sliced thin and fanned across the plate. Each slice shows a vivid ring: dark crust on the outside, deep ruby red in the center. Dip each piece in ponzu for a citrusy finish."
+    },
+    "appetizers/tuna-tartare": {
+        "jinbehStory": "Tuna tartare is our most refined appetizer. The sushi team hand-dices the ahi into precise cubes, mixing them gently with sesame oil and ponzu. The crispy wonton chips are made in-house daily.",
+        "origin": "While tartare originated in French cuisine, the Japanese interpretation emphasizes subtlety: less acid, more umami, and a focus on the pure flavor of the fish.",
+        "nutritionHighlight": "Raw ahi tuna delivers 25g protein with only 120 calories per 4oz serving. The avocado adds healthy fats and potassium. Sesame oil provides vitamin E.",
+        "experienceNote": "The tartare is presented over diced avocado, topped with scallions and sesame seeds. Scoop it onto crispy wonton chips for cool, silky tuna, creamy avocado, and satisfying crunch in one bite."
+    },
+    "appetizers/soft-shell-crab": {
+        "jinbehStory": "Jinbeh serves whole soft shell crabs fried until the legs become crispy sticks and the body turns golden. Many guests try it here for the first time and are amazed the entire crab is edible.",
+        "origin": "Soft shell crabs are harvested within hours of molting, when the new shell is still paper-thin. Japanese chefs adopted the ingredient early, incorporating it into tempura and sushi.",
+        "nutritionHighlight": "A whole soft shell crab provides approximately 170 calories and 18g protein. The edible shell adds calcium. The light frying keeps the calorie count reasonable.",
+        "experienceNote": "The whole crab arrives golden brown, legs splayed across the plate. Pick it up and bite directly into the body. The shell shatters like a potato chip, revealing sweet, tender crab meat inside."
+    },
+    "sashimi/salmon-sashimi": {
+        "jinbehStory": "Jinbeh sources sushi-grade Atlantic salmon for every service. Our sushi chef slices each piece at a precise angle with a yanagiba knife (a single-beveled slicing blade) for the smoothest possible texture.",
+        "origin": "Sashimi has been part of Japanese cuisine since the Kamakura period (1185-1333). The word means \"pierced body,\" referencing the practice of placing the fish tail near the slices to identify the species.",
+        "nutritionHighlight": "Salmon sashimi delivers 25g protein and omega-3 fatty acids with only 200 calories per serving. It contains zero carbohydrates and is naturally gluten-free.",
+        "experienceNote": "Each slice glistens on the plate, showing the fish's natural marbling. Place a tiny dab of wasabi directly on the fish for the cleanest hit of heat. Let each slice rest on your tongue momentarily."
+    },
+    "sashimi/tuna-sashimi": {
+        "jinbehStory": "Jinbeh's tuna sashimi showcases deep ruby-red ahi of the highest quality. The color intensity reveals freshness: vibrant red means peak quality. Our sushi chef inspects every delivery before accepting it.",
+        "origin": "Tuna (maguro) is one of the most revered sashimi fish in Japan. At Tokyo's Tsukiji fish market, bluefin tuna once sold for millions of dollars at auction.",
+        "nutritionHighlight": "Ahi tuna sashimi provides 30g protein per serving with under 150 calories. It is one of the leanest sashimi options and delivers high levels of selenium.",
+        "experienceNote": "The deep red slices are arranged in a clean line. Each piece has a firm, almost meat-like bite that yields to a smooth, clean finish. Tuna sashimi is often compared to beef tartare for its satisfying density."
+    },
+    "sashimi/yellowtail-sashimi": {
+        "jinbehStory": "Yellowtail (hamachi) is a favorite among experienced sushi guests at Jinbeh. Its buttery richness sets it apart from leaner fish. Our sushi chef slices each piece with one clean stroke.",
+        "origin": "Hamachi (Japanese amberjack) is prized for its high fat content and smooth texture. In Japan, hamachi is considered one of the \"three kings\" of sushi fish alongside tuna and sea bream.",
+        "nutritionHighlight": "Yellowtail delivers 26g protein per serving with heart-healthy monounsaturated fats. Its higher fat content means more omega-3s per bite than leaner fish.",
+        "experienceNote": "Yellowtail sashimi melts on your tongue. The texture is silkier than salmon and richer than tuna. Use the lightest possible touch of soy sauce to avoid masking the delicate, buttery flavor."
+    },
+    "sashimi/octopus-sashimi": {
+        "jinbehStory": "Octopus sashimi is Jinbeh's choice for adventurous diners. The kitchen gently poaches the octopus until tender, then chills it before slicing. The purple and white pattern creates a beautiful presentation.",
+        "origin": "Octopus (tako) has been part of Japanese cuisine for thousands of years. It plays a significant role in cultural festivals and is considered a symbol of good fortune.",
+        "nutritionHighlight": "Octopus is remarkably lean: 140 calories and 25g protein per 4oz serving. It is rich in iron, vitamin B12, and taurine.",
+        "experienceNote": "The sliced tentacle reveals a beautiful purple exterior and white interior. Each piece has a pleasant bounce when you bite into it. The mild, clean flavor surprises first-timers."
+    },
+    "sashimi/sashimi-deluxe": {
+        "jinbehStory": "The Sashimi Deluxe is our chef's showcase. Sixteen pieces of the day's finest fish, arranged on a presentation plate. Regulars order it to see what seasonal selections the chef has chosen.",
+        "origin": "The concept of an assorted sashimi platter (moriwase) is central to Japanese dining. The chef selects fish based on quality and seasonality.",
+        "nutritionHighlight": "Sixteen pieces of assorted sashimi deliver approximately 400 calories and 55g protein with zero carbohydrates.",
+        "experienceNote": "The platter arrives as an edible art piece. Four or five types of fish are arranged by color, garnished with shiso leaf, daikon, and pickled ginger. Eat from lightest to richest for building flavor."
+    },
+    "sashimi/chirashi": {
+        "jinbehStory": "Chirashi is the choice for sashimi lovers who want a complete meal. The warm seasoned rice under the cold fish creates a comforting contrast. Jinbeh's chirashi bowl is generous.",
+        "origin": "Chirashi-zushi (\"scattered sushi\") is a traditional Japanese home-cooking dish often served during the Hinamatsuri (Girls' Day) festival.",
+        "nutritionHighlight": "A chirashi bowl delivers approximately 450 calories and 35g protein. The warm sushi rice adds complex carbohydrates, while the sashimi provides lean protein and omega-3s.",
+        "experienceNote": "The bowl arrives with jewel-colored fish covering warm seasoned rice. Tuna, salmon, yellowtail, and shrimp glisten against the white rice. Mix wasabi into soy sauce and drizzle over the top."
+    },
+    "sashimi/omakase": {
+        "jinbehStory": "Omakase at Jinbeh is a direct conversation between guest and chef. Our sushi master selects the finest fish of the day and prepares courses that build from delicate to rich.",
+        "origin": "Omakase means \"I leave it to you\" in Japanese. It represents the highest level of trust between diner and chef. The tradition dates back to Edo-period Tokyo sushi stalls.",
+        "nutritionHighlight": "An omakase experience typically delivers 400-600 calories depending on courses. The focus on lean, raw fish makes it one of the most protein-dense dining experiences available.",
+        "experienceNote": "Sit at the sushi bar for the full experience. The chef presents each course individually, explaining the fish and why it made the cut. Each piece is prepared moments before it reaches you."
+    },
+    "cocktails/sake-flight": {
+        "jinbehStory": "Jinbeh curates its sake flight from carefully selected Japanese breweries. Our staff trains on sake varieties to recommend pairings based on your entrée. The flight changes seasonally.",
+        "origin": "Sake has been brewed in Japan for over 2,000 years. It is made from rice, water, yeast, and koji mold. The brewing process is closer to beer than wine.",
+        "nutritionHighlight": "Sake contains approximately 130 calories per 5oz serving. It is naturally free of sulfites and has lower acidity than wine.",
+        "experienceNote": "Three small cups arrive on a wooden flight board. Smell each one before tasting. Start with the lightest (junmai), move to the middle, and finish with the most aromatic."
+    },
+    "cocktails/sake-bomb": {
+        "jinbehStory": "The Sake Bomb is Jinbeh's most fun group ritual. Tables drum in unison, the sake drops, and everyone drinks together. Birthday parties and bachelor groups make this a highlight.",
+        "origin": "The Sake Bomb originated in American Japanese restaurants as a communal drinking ritual. Warm sake and cold Japanese beer combine for a smooth, easy-drinking experience.",
+        "nutritionHighlight": "A Sake Bomb contains approximately 250 calories (sake plus beer). The warm sake helps the beer go down smoothly.",
+        "experienceNote": "Your server sets chopsticks across the beer glass and balances the sake cup on top. The table counts \"ichi, ni, san, SAKE!\" and pounds the table. The sake drops in, you grab the glass, and you drink."
+    },
+    "cocktails/lychee-martini": {
+        "jinbehStory": "The Lychee Martini is the most-ordered cocktail among date-night guests at Jinbeh. The exotic sweetness of lychee pairs beautifully with sushi and sashimi. Our bartenders shake it extra cold.",
+        "origin": "Lychee is a tropical fruit native to southern China, cultivated for over 2,000 years. Its floral, grape-like sweetness translates perfectly into a martini format.",
+        "nutritionHighlight": "A Lychee Martini contains approximately 180 calories. Lychee fruit is rich in vitamin C and provides natural sweetness without heavy syrups.",
+        "experienceNote": "The martini arrives in a chilled glass with a whole lychee fruit resting at the bottom. The cocktail glows with a subtle pearlescent sheen. The first sip is floral and sweet, followed by clean vodka crispness."
+    },
+    "cocktails/jinbeh-punch": {
+        "jinbehStory": "The Jinbeh Punch is our house signature cocktail, developed specifically for the restaurant. The recipe is proprietary. Guests at both locations get the same taste.",
+        "origin": "The Jinbeh Punch reflects the restaurant's identity: warm, tropical, and celebratory. It embodies the \"celebration since 1988\" ethos that defines the Jinbeh brand.",
+        "nutritionHighlight": "The Jinbeh Punch contains approximately 200 calories per glass. The tropical fruit juices contribute vitamin C and natural sugars.",
+        "experienceNote": "The punch arrives in a specialty glass with tropical garnishes. Vibrant in color and inviting in aroma, the first sip hits with bright fruit sweetness, followed by a smooth spirit finish."
+    },
+    "cocktails/tokyo-mule": {
+        "jinbehStory": "Our bartender developed the Tokyo Mule as a Japanese twist on the classic Moscow Mule. Replacing vodka with premium sake creates a smoother, more nuanced cocktail. The copper mug keeps it ice-cold.",
+        "origin": "The Moscow Mule was invented in 1940s America. Jinbeh's Tokyo Mule swaps vodka for sake, adding rice-wine complexity to the ginger beer and lime foundation.",
+        "nutritionHighlight": "The Tokyo Mule contains approximately 170 calories. Ginger beer provides natural ginger with anti-inflammatory properties. Fresh lime juice adds vitamin C.",
+        "experienceNote": "The copper mug arrives frosted and ice-cold. The ginger beer fizzes at the first sip. The sake adds smoothness that rounds out the sharp ginger and tart lime. The mug stays cold to the last drop."
+    }
+}

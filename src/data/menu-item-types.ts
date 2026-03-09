@@ -54,6 +54,14 @@ export interface MenuItem {
     faqs: FAQ[];
     proTip: string;
     heroImage: string;
+    /** What makes this dish special at Jinbeh specifically */
+    jinbehStory: string;
+    /** Origin or cultural background of the dish */
+    origin: string;
+    /** Nutrition or health highlight */
+    nutritionHighlight: string;
+    /** The tableside or dining experience tied to this dish */
+    experienceNote: string;
 }
 
 export interface LocationInfo {
