@@ -75,18 +75,18 @@ export default function MenuItemTemplate({ item, location }: MenuItemTemplatePro
 
             {/* Hero Section */}
             <BlurFade delay={0.1}>
-                <section className="relative py-20 text-white overflow-hidden">
-                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${item.heroImage}')` }} />
-                    <div className="absolute inset-0 bg-gradient-to-b from-charcoal/85 via-charcoal/75 to-charcoal/90" />
+                <section className="relative min-h-[280px] md:min-h-[320px] py-20 text-white overflow-hidden">
+                    <div className="absolute inset-0 bg-cover bg-center scale-105" style={{ backgroundImage: `url('${item.heroImage}')` }} />
+                    <div className="absolute inset-0 bg-gradient-to-b from-charcoal/90 via-charcoal/80 to-charcoal/95" />
                     <div className="relative z-10 container mx-auto px-6">
                         <div className="max-w-4xl mx-auto text-center">
-                            <p className="text-soft-gold font-medium tracking-wider uppercase mb-3 text-sm">
+                            <p className="text-soft-gold font-medium tracking-wider uppercase mb-3 text-sm [text-shadow:_0_1px_4px_rgb(0_0_0_/_80%)]">
                                 {categoryLabel} • {location.name}
                             </p>
-                            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4 tracking-tight">
+                            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4 tracking-tight [text-shadow:_0_2px_8px_rgb(0_0_0_/_70%),_0_4px_16px_rgb(0_0_0_/_40%)]">
                                 {item.name}
                             </h1>
-                            <p className="text-xl md:text-2xl text-warm-ivory/90 font-light max-w-2xl mx-auto">
+                            <p className="text-xl md:text-2xl text-warm-ivory/90 font-light max-w-2xl mx-auto [text-shadow:_0_1px_4px_rgb(0_0_0_/_60%)]">
                                 {item.tagline}
                             </p>
                         </div>

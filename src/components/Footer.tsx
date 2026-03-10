@@ -139,7 +139,7 @@ export default function Footer() {
         {/* Navigation Links */}
         <div className="border-t border-warm-ivory/10">
           <div className="container mx-auto px-6 py-12">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 lg:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-8">
               {/* Menu & Location Links */}
               <div>
                 <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
@@ -251,53 +251,25 @@ export default function Footer() {
                 </nav>
               </div>
 
-              {/* Locations */}
-              <div className="col-span-2 md:col-span-1">
-                <h4 className="font-heading text-sm font-semibold mb-4 text-soft-gold uppercase tracking-wider">
-                  Our Locations
-                </h4>
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <h5 className="text-warm-ivory font-semibold mb-1">Frisco</h5>
-                    <p className="text-warm-ivory/70 leading-relaxed mb-1">
-                      {locations.locations.frisco.address.street}<br />
-                      {locations.locations.frisco.address.city}, {locations.locations.frisco.address.state} {locations.locations.frisco.address.zip}
-                    </p>
-                    <a href={`tel:${locations.locations.frisco.phoneClean}`} className="text-soft-gold hover:text-warm-ivory transition-colors">
-                      {locations.locations.frisco.phone}
-                    </a>
-                  </div>
-                  <div>
-                    <h5 className="text-warm-ivory font-semibold mb-1">Lewisville</h5>
-                    <p className="text-warm-ivory/70 leading-relaxed mb-1">
-                      {locations.locations.lewisville.address.street}<br />
-                      {locations.locations.lewisville.address.city}, {locations.locations.lewisville.address.state} {locations.locations.lewisville.address.zip}
-                    </p>
-                    <a href={`tel:${locations.locations.lewisville.phoneClean}`} className="text-soft-gold hover:text-warm-ivory transition-colors">
-                      {locations.locations.lewisville.phone}
-                    </a>
-                  </div>
-                </div>
-              </div>
 
             </div>
 
             {/* Service Areas - Compact */}
             <div className="mt-10 pt-8 border-t border-warm-ivory/10">
-              <p className="text-xs text-warm-ivory/70 mb-3">Also Serving</p>
-              <div className="flex flex-wrap gap-2 text-xs text-warm-ivory/80">
-                <Link href="/nearby/plano" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Plano</Link>
-                <Link href="/nearby/mckinney" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">McKinney</Link>
-                <Link href="/nearby/the-colony" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">The Colony</Link>
-                <Link href="/nearby/allen" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Allen</Link>
-                <Link href="/nearby/flower-mound" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Flower Mound</Link>
-                <Link href="/nearby/carrollton" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Carrollton</Link>
-                <Link href="/nearby/coppell" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Coppell</Link>
-                <Link href="/nearby/grapevine" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Grapevine</Link>
-                <Link href="/nearby/denton" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Denton</Link>
-                <Link href="/nearby/highland-village" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Highland Village</Link>
-                <Link href="/nearby/little-elm" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Little Elm</Link>
-                <Link href="/nearby/richardson" className="px-3 py-1.5 bg-warm-ivory/5 hover:bg-warm-ivory/10 rounded-full transition-colors">Richardson</Link>
+              <p className="text-xs text-warm-ivory/80 font-medium mb-3">Also Serving</p>
+              <div className="flex flex-wrap gap-2 text-xs">
+                <Link href="/nearby/plano" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Plano</Link>
+                <Link href="/nearby/mckinney" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">McKinney</Link>
+                <Link href="/nearby/the-colony" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">The Colony</Link>
+                <Link href="/nearby/allen" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Allen</Link>
+                <Link href="/nearby/flower-mound" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Flower Mound</Link>
+                <Link href="/nearby/carrollton" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Carrollton</Link>
+                <Link href="/nearby/coppell" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Coppell</Link>
+                <Link href="/nearby/grapevine" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Grapevine</Link>
+                <Link href="/nearby/denton" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Denton</Link>
+                <Link href="/nearby/highland-village" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Highland Village</Link>
+                <Link href="/nearby/little-elm" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Little Elm</Link>
+                <Link href="/nearby/richardson" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Richardson</Link>
               </div>
             </div>
           </div>
