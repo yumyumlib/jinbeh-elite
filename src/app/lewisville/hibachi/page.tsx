@@ -290,7 +290,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-800w.webp"
+                    src="/images/photoshoot/hibachi-steak.jpg"
                     alt="Filet mignon searing on the teppan grill at Jinbeh Lewisville"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -316,7 +316,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-006-orig-IMG_2006-800w.webp"
+                    src="/images/instagram/hibachi-steak-plate.jpg"
                     alt="NY strip steak cooking on the hibachi grill"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -342,7 +342,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-004-orig-IMG_2004-800w.webp"
+                    src="/images/food/HibachiComboNYStripAndColossalShrimp.jpg"
                     alt="Marbled ribeye steak seared on the teppan grill at Jinbeh Lewisville"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -368,7 +368,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-010-orig-IMG_2010-800w.webp"
+                    src="/images/photoshoot/hibachi-chicken.jpg"
                     alt="Hibachi chicken teriyaki with fried rice and vegetables"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -394,7 +394,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/food/garlic-lemon-shrimp.jpg"
+                    src="/images/photoshoot/hibachi-plate-shrimp.jpg"
                     alt="Jumbo shrimp grilled on the hibachi at Jinbeh Lewisville"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -420,7 +420,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-006-orig-IMG_2006-800w.webp"
+                    src="/images/hq/cooking-on-grill.jpg"
                     alt="Sea scallops seared with garlic butter on the hibachi grill"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -446,7 +446,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/food/hibachi-grill.jpg"
+                    src="/images/instagram/lobster-spread-overhead.jpg"
                     alt="Lobster tail grilling on the teppan at Jinbeh Lewisville"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -472,7 +472,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-008-orig-IMG_2008-800w.webp"
+                    src="/images/food/SmokedSalmonCloseup.jpg"
                     alt="Hibachi salmon with citrus teriyaki on the grill"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -498,7 +498,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-010-orig-IMG_2010-800w.webp"
+                    src="/images/menu-photos/Vegetable_Tempura.jpg"
                     alt="Hibachi vegetables and tofu grilled on the teppan"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -524,7 +524,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/food/HibachiComboNYStripAndColossalShrimp.jpg"
+                    src="/images/hq/garlic-lemon-shrimp.jpg"
                     alt="Steak and shrimp combo on the hibachi"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -550,7 +550,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-004-orig-IMG_2004-800w.webp"
+                    src="/images/photoshoot/hibachi-flame-action.jpg"
                     alt="Steak and chicken combo on the teppan grill"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -576,7 +576,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-800w.webp"
+                    src="/images/menu-photos/Crunchy_Lobster.jpg"
                     alt="Chef cooking steak and lobster on the hibachi grill"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -602,7 +602,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-001-orig-IMG_1843-1200w.webp"
+                    src="/images/menu-photos/Sea_Lovers_Paradise.jpg"
                     alt="Seafood trio flame show at Jinbeh Lewisville"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -628,7 +628,7 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-006-orig-IMG_1881-800w.webp"
+                    src="/images/photoshoot/hibachi-onion-volcano-flame.jpg"
                     alt="Imperial dinner preparation — filet mignon, lobster, and shrimp"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
