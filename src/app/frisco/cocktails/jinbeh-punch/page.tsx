@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Jinbeh Punch Frisco - Japanese Tropical Cocktails",
   description: "Signature tropical cocktail at Jinbeh Frisco. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (214) 619-1200.",
-  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","jinbeh punch","tropical cocktails","jinbeh frisco","japanese restaurant frisco","cocktails near stonebriar"],
+  keywords: ["jinbeh punch frisco","house cocktail japanese restaurant","tropical cocktail frisco","signature cocktail jinbeh","japanese cocktails frisco","happy hour frisco","jinbeh frisco"],
   openGraph: {
     title: "Jinbeh Punch | Frisco Japanese Cocktails",
     description: "Signature tropical cocktail at Jinbeh. Fresh, handcrafted Japanese beverages.",

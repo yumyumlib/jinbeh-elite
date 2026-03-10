@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Lychee Martini - Best Japanese Cocktails Lewisville",
   description: "Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Lewisville. Happy hour specials. Reserve today (972) 221-3888.",
-  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","lychee martini","vodka cocktails","jinbeh lewisville","martini near vista ridge","japanese restaurant"],
+  keywords: ["lychee martini lewisville","lychee martini","lychee sake","asian inspired cocktail","japanese cocktails lewisville","date night cocktails lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Lychee Martini | Jinbeh Lewisville",
     description: "Vodka with lychee and a floral finish",

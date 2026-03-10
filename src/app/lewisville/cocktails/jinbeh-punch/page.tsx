@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Jinbeh Punch Lewisville - Japanese Tropical Cocktails",
   description: "Signature tropical cocktail at Jinbeh Lewisville. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (972) 221-3888.",
-  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","jinbeh punch","tropical cocktails","jinbeh lewisville","japanese restaurant lewisville","cocktails near vista ridge"],
+  keywords: ["jinbeh punch lewisville","house cocktail japanese restaurant","tropical cocktail lewisville","signature cocktail jinbeh","japanese cocktails lewisville","happy hour lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Jinbeh Punch | Jinbeh Lewisville",
     description: "House specialty tropical cocktail",

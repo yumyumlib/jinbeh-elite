@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tuna Sashimi Lewisville | Lean Protein Ahi Tuna",
   description: "Premium ahi tuna sashimi at Jinbeh Lewisville. 94 calories, 20g protein, zero carbs. High in omega-3s and heart-healthy nutrients.",
-  keywords: ["sashimi near me lewisville","tuna sashimi lewisville","best sushi lewisville tx","ahi tuna sashimi calories","lean protein sashimi","japanese restaurant lewisville","sushi-grade tuna","raw fish lewisville"],
+  keywords: ["tuna sashimi lewisville","ahi tuna sashimi","tuna sashimi calories","sushi grade tuna","lean protein sashimi","raw fish lewisville","sashimi near me lewisville","japanese restaurant lewisville"],
   openGraph: {
     title: "Tuna Sashimi | Jinbeh Lewisville",
     description: "Premium ahi tuna, melt-in-your-mouth tender",

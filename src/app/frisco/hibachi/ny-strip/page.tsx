@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "NY Strip Steak Hibachi Frisco | Best Japanese Steakhouse",
   description: "Premium hand-cut NY Strip grilled tableside. 250-300 calories per 5oz. Includes soup, salad, rice, vegetables. Best hibachi near Frisco TX.",
-  keywords: ["ny strip steak hibachi frisco","best hibachi near me frisco","japanese steakhouse frisco tx","teppanyaki restaurant frisco","hibachi ny strip calories","ny strip steak nutrition facts","hibachi near me frisco","best hibachi frisco tx"],
+  keywords: ["ny strip hibachi frisco","new york strip teppanyaki","hibachi steak frisco tx","japanese steakhouse steak dinner","best hibachi near me frisco","teppanyaki restaurant frisco","hibachi near me frisco"],
   openGraph: {
     title: "NY Strip Steak | Jinbeh Frisco",
     description: "Hand-cut New York strip with savory soy glaze",

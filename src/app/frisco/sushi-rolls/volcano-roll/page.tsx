@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Volcano Roll Frisco | Baked Spicy Seafood Lava",
   description: "Volcano Roll at Jinbeh Frisco: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (214) 619-1200.",
-  keywords: ["volcano roll","volcano roll frisco","sushi near me frisco","best sushi frisco tx","baked sushi roll","specialty sushi"],
+  keywords: ["volcano roll frisco","volcano roll sushi","baked sushi roll","hot sushi roll","specialty sushi frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Volcano Roll | Jinbeh Frisco",
     description: "Spicy crab and avocado with baked seafood topping",

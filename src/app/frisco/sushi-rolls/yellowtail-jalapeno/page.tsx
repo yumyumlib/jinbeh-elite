@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Yellowtail Jalapeño Sushi Frisco | Hamachi Roll",
   description: "Yellowtail Jalapeño at Jinbeh Frisco: Fresh hamachi, jalapeño, ponzu sauce, scallions. Premium raw fish. Call (214) 619-1200.",
-  keywords: ["yellowtail jalapeño roll","yellowtail jalapeño roll frisco","sushi near me frisco","best sushi frisco tx","hamachi sushi roll","fresh fish sushi"],
+  keywords: ["yellowtail jalapeno roll frisco","hamachi sushi","yellowtail sushi roll","hamachi jalapeno roll","fresh fish sushi frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Yellowtail Jalapeño Roll | Jinbeh Frisco",
     description: "Fresh yellowtail with jalapeño and ponzu",

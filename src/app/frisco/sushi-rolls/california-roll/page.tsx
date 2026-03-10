@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "California Roll Sushi Frisco | Best Crab & Avocado",
   description: "California Roll at Jinbeh Frisco: 250 cal, crab, avocado, cucumber. Fresh handmade sushi near Legacy West. Dine in or takeout. Call (214) 619-1200.",
-  keywords: ["california roll","california roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","jinbeh california roll","best sushi rolls frisco","japanese restaurant frisco"],
+  keywords: ["california roll frisco","california roll sushi","crab avocado roll","sushi for beginners","sushi rolls frisco","jinbeh california roll","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "California Roll | Jinbeh Frisco",
     description: "Crab, avocado, and cucumber classic",

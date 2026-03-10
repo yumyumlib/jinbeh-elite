@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Yellowtail Jalapeño Sushi Lewisville | Hamachi Roll",
   description: "Yellowtail Jalapeño at Jinbeh Lewisville: Fresh hamachi, jalapeño, ponzu sauce, scallions. Premium raw fish. Call (972) 221-3888.",
-  keywords: ["yellowtail jalapeno","yellowtail jalapeno lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","spicy yellowtail","jinbeh yellowtail"],
+  keywords: ["yellowtail jalapeno roll lewisville","hamachi sushi","yellowtail sushi roll","hamachi jalapeno roll","fresh fish sushi lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Yellowtail Jalapeño Roll | Jinbeh Lewisville",
     description: "Fresh yellowtail with jalapeño and ponzu",

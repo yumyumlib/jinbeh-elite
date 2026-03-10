@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Sea Scallops Hibachi Lewisville | Premium Seared Scallops",
   description: "Plump sea scallops seared garlic butter tableside. 140-180 calories, 20-22g protein. Delicate, premium seafood. Includes soup, salad, rice, vegetables.",
-  keywords: ["sea scallops hibachi lewisville","scallops teppanyaki lewisville tx","best hibachi near me lewisville","premium seafood hibachi lewisville","scallops calories nutrition","ocean scallop recipes","japanese steakhouse lewisville","best hibachi lewisville tx"],
+  keywords: ["hibachi scallops lewisville","sea scallops teppanyaki","seared scallops japanese restaurant","hibachi seafood lewisville tx","best hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Sea Scallops | Jinbeh Lewisville",
     description: "Plump sea scallops seared with garlic butter",

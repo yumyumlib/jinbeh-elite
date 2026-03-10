@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tuna Tartare Lewisville | Diced Ahi with Avocado Ponzu",
   description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Lewisville. 100-150 calories, 20g protein, omega-3 healthy. Premium raw fish.",
-  keywords: ["japanese appetizers lewisville","tuna tartare lewisville","best sushi lewisville tx","ahi tuna appetizer","raw fish tartare","healthy appetizer lewisville","sashimi style"],
+  keywords: ["tuna tartare lewisville","ahi tuna tartare appetizer","raw tuna appetizer","sashimi style appetizer","japanese appetizers lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Tuna Tartare | Jinbeh Lewisville",
     description: "Diced ahi tuna with avocado and ponzu",

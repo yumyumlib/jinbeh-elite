@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Edamame Frisco | Plant-Based Protein Soybeans | Jinbeh",
   description: "Steamed edamame with sea salt at Jinbeh Frisco. 18.5g protein per cup, complete amino acids, low calorie plant-based appetizer.",
-  keywords: ["japanese appetizers frisco","edamame frisco","best sushi frisco tx","steamed soybeans","healthy appetizers frisco","plant based protein frisco","japanese starter"],
+  keywords: ["edamame frisco","edamame sushi","spicy garlic edamame","japanese appetizers frisco","healthy appetizers frisco","plant based protein appetizer","japanese restaurant frisco"],
   openGraph: {
     title: "Edamame Frisco | Complete Plant Protein Appetizer",
     description: "Steamed edamame with sea salt at Jinbeh Frisco. 18.5g protein per cup, plant-based.",

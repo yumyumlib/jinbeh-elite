@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Rainbow Roll Lewisville | Assorted Sashimi Topping",
   description: "Rainbow Roll at Jinbeh Lewisville: California roll with salmon, tuna, yellowtail. Premium sushi near I-35E. Call (972) 221-3888.",
-  keywords: ["rainbow roll","rainbow roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","colorful sushi roll","jinbeh rainbow roll"],
+  keywords: ["rainbow roll lewisville","rainbow roll sushi","assorted sashimi roll","colorful sushi roll","sushi rolls lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Rainbow Roll | Jinbeh Lewisville",
     description: "California roll topped with assorted sashimi",

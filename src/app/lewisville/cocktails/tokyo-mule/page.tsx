@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tokyo Mule - Japanese Whiskey Cocktails Lewisville",
   description: "Tokyo Mule with Japanese whiskey, ginger & lime at Jinbeh Lewisville. Premium happy hour cocktails. Best Japanese restaurant drinks. Call (972) 221-3888.",
-  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","tokyo mule","whiskey cocktails","ginger beer","jinbeh lewisville","japanese restaurant"],
+  keywords: ["tokyo mule cocktail lewisville","sake mule cocktail","japanese moscow mule","ginger beer sake cocktail","japanese cocktails lewisville","happy hour lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Tokyo Mule | Jinbeh Lewisville",
     description: "Japanese whiskey with ginger and lime",

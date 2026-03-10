@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Omakase Selection Lewisville | Chef's Choice Sashimi Tasting",
   description: "Chef's choice tasting of the day's best premium sashimi at Jinbeh Lewisville. Authentic omakase experience with sushi-grade fish selections.",
-  keywords: ["omakase selection lewisville","omakase lewisville","best sushi lewisville tx","chef selection sashimi","japanese restaurant lewisville","premium sashimi lewisville","sushi tasting lewisville"],
+  keywords: ["omakase lewisville","omakase dallas","omakase sushi near me","chef tasting sushi","premium sushi experience","sashimi near me lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Omakase Selection | Jinbeh Lewisville",
     description: "Chef\'s choice tasting of the day\'s best",

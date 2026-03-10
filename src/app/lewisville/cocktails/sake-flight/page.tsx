@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Premium Sake Flight Lewisville - Japanese Tasting",
   description: "Three premium sake tasting flight at Jinbeh Lewisville. Experience authentic Japanese sakes with expert guidance. Best sake selection near Vista Ridge (972) 221-3888.",
-  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","sake flight","premium sake","sake tasting","jinbeh lewisville","japanese restaurant"],
+  keywords: ["sake flight lewisville","sake tasting","premium sake","junmai sake","sake menu","japanese cocktails lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Sake Flight | Jinbeh Lewisville",
     description: "Tasting of three premium sakes",

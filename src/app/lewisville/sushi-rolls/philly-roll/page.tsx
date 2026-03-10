@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Philadelphia Roll Lewisville | Salmon Cream Cheese",
   description: "Philadelphia Roll at Jinbeh Lewisville: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near I-35E. Call (972) 221-3888.",
-  keywords: ["philadelphia roll","philadelphia roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","salmon sushi roll","jinbeh philadelphia roll"],
+  keywords: ["philadelphia roll lewisville","philly roll sushi","smoked salmon cream cheese roll","salmon sushi roll","sushi rolls lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Philadelphia Roll | Jinbeh Lewisville",
     description: "Smoked salmon with cream cheese and cucumber",

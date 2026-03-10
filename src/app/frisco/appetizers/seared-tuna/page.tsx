@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Seared Ahi Tuna Frisco | Pepper-Crusted Premium Fish | Jinbeh",
   description: "Seared ahi tuna with wasabi aioli at Jinbeh Frisco. 100-150 calories, 20g protein, omega-3 rich. Premium appetizer with healthy benefits.",
-  keywords: ["japanese appetizers frisco","seared tuna frisco","best sushi frisco tx","ahi tuna appetizer","pepper-crusted tuna","healthy appetizer frisco","tuna tartare"],
+  keywords: ["seared ahi tuna frisco","tataki tuna appetizer","pepper crusted ahi tuna","seared tuna japanese restaurant","japanese appetizers frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Seared Ahi Tuna Frisco | Premium Pepper-Crusted Fish",
     description: "Seared ahi tuna with wasabi aioli at Jinbeh Frisco. 100-150 calories, 20g protein.",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tiger Roll Frisco | Tempura Shrimp Spicy Tuna",
   description: "Tiger Roll at Jinbeh Frisco: Tempura shrimp, spicy tuna, cucumber, avocado, sesame. Eel and spicy mayo drizzle. Call (214) 619-1200.",
-  keywords: ["tiger roll","tiger roll frisco","sushi near me frisco","best sushi frisco tx","spicy tuna sushi","tempura shrimp roll"],
+  keywords: ["tiger roll frisco","tiger roll sushi","spicy tuna tempura roll","shrimp tempura spicy roll","specialty sushi roll frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Tiger Roll | Jinbeh Frisco",
     description: "Shrimp tempura with spicy tuna and jalapeño",

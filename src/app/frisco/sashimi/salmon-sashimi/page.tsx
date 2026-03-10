@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Salmon Sashimi Frisco | Omega-3 Rich Sliced Raw Fish | Jinbeh",
   description: "Premium Atlantic salmon sashimi at Jinbeh Frisco. 121 calories per serving, 17g protein, rich in omega-3s. Sushi-grade quality near Stonebriar Centre.",
-  keywords: ["sashimi near me frisco","salmon sashimi frisco","best sushi frisco tx","salmon sashimi calories","omega-3 sashimi","raw salmon frisco","japanese restaurant frisco","fresh fish sashimi","sushi-grade salmon"],
+  keywords: ["salmon sashimi frisco","salmon sashimi calories","salmon sashimi nutrition","sushi grade salmon","fresh fish sashimi frisco","omega-3 sashimi","sashimi near me frisco","japanese restaurant frisco"],
   openGraph: {
     title: "Salmon Sashimi Frisco | Premium Omega-3 Rich Fish",
     description: "Premium Atlantic salmon sashimi at Jinbeh Frisco. 121 calories per serving, 17g protein, rich in omega-3s.",

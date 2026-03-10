@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Octopus Sashimi Lewisville | Low-Fat High-Protein Tako",
   description: "Tender octopus (tako) sashimi at Jinbeh Lewisville. 93 calories, 29g protein, rich in B12 & selenium. Lean choice for healthy eating.",
-  keywords: ["sashimi near me lewisville","octopus sashimi lewisville","best sushi lewisville tx","tako sashimi calories","lean protein sashimi","japanese restaurant lewisville","high protein low fat sashimi"],
+  keywords: ["octopus sashimi lewisville","tako sashimi","octopus japanese restaurant","adventurous sashimi","lean protein sashimi","sashimi near me lewisville","japanese restaurant lewisville"],
   openGraph: {
     title: "Octopus Sashimi | Jinbeh Lewisville",
     description: "Tender tako with subtle sweetness",

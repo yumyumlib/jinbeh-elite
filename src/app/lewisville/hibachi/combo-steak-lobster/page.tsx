@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Steak & Lobster Combo Hibachi Lewisville | Luxury Surf Turf",
   description: "Premium filet mignon and Maine lobster tail. 430-480 calories, 55-60g protein. Luxury special occasion combo. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["steak lobster combo hibachi lewisville","lobster filet mignon teppanyaki lewisville","luxury surf and turf lewisville tx","best hibachi near me lewisville","special occasion dinner hibachi","premium protein combo","japanese steakhouse lewisville","best hibachi lewisville tx"],
+  keywords: ["steak and lobster hibachi lewisville","surf and turf japanese steakhouse","filet mignon lobster teppanyaki","luxury hibachi dinner lewisville","anniversary dinner hibachi lewisville","best hibachi near me lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Steak & Lobster Combo | Jinbeh Lewisville",
     description: "Surf and turf perfection",

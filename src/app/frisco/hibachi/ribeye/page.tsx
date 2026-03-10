@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Ribeye Steak Hibachi Frisco | Premium Marbled Beef",
   description: "Richly marbled ribeye seared tableside. 300-350 calories per 5oz with 25-28g protein. Includes soup, salad, rice, vegetables. Premium Japanese steakhouse.",
-  keywords: ["ribeye steak hibachi frisco","best hibachi near me frisco","marbled beef teppanyaki frisco","japanese steakhouse frisco tx","hibachi ribeye calories","ribeye nutrition facts","hibachi near me frisco","best hibachi frisco tx"],
+  keywords: ["ribeye hibachi frisco","ribeye steak teppanyaki","black angus hibachi steak","marbled steak japanese restaurant","best hibachi near me frisco","teppanyaki restaurant frisco","hibachi near me frisco"],
   openGraph: {
     title: "Ribeye Steak | Jinbeh Frisco",
     description: "Marbled ribeye with rich, beefy flavor",

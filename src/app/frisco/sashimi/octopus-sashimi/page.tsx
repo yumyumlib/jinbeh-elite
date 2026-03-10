@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Octopus Sashimi Frisco | Low-Fat High-Protein Tako | Jinbeh",
   description: "Tender octopus (tako) sashimi at Jinbeh Frisco. 93 calories, 29g protein, rich in B12 & selenium. Lean choice for healthy eating.",
-  keywords: ["sashimi near me frisco","octopus sashimi frisco","best sushi frisco tx","tako sashimi calories","lean protein sashimi","japanese restaurant frisco","high protein low fat sashimi"],
+  keywords: ["octopus sashimi frisco","tako sashimi","octopus japanese restaurant","adventurous sashimi","lean protein sashimi","sashimi near me frisco","japanese restaurant frisco"],
   openGraph: {
     title: "Octopus Sashimi Frisco | Lean Protein Tako",
     description: "Tender octopus sashimi at Jinbeh Frisco. 93 calories, 29g protein, rich in B12 & selenium.",

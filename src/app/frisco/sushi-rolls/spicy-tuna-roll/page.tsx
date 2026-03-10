@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Spicy Tuna Roll Frisco | Fresh Tuna Spicy Mayo",
   description: "Spicy Tuna Roll at Jinbeh Frisco: Fresh tuna, spicy mayo, 260-350 cal. Premium sushi near Legacy West. Made fresh to order. Call (214) 619-1200.",
-  keywords: ["spicy tuna roll","spicy tuna roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","jinbeh spicy tuna roll","best sushi rolls frisco"],
+  keywords: ["spicy tuna roll frisco","spicy tuna roll","spicy tuna sushi","ahi tuna roll","sushi rolls frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Spicy Tuna Roll | Jinbeh Frisco",
     description: "Fresh tuna with spicy mayo and scallions",

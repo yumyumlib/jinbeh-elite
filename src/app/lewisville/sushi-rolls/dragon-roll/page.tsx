@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Dragon Roll Sushi | Best Specialty Rolls Lewisville TX | Jinbeh",
   description: "Dragon Roll: eel, cucumber, avocado with eel sauce. 410-500 calories. Fresh sushi made to order at Jinbeh Lewisville. Reserve or order takeout today!",
-  keywords: ["dragon roll sushi lewisville","best sushi near me lewisville","dragon roll calories","specialty sushi rolls lewisville tx","eel avocado roll","uramaki sushi lewisville","sushi restaurants lewisville"],
+  keywords: ["dragon roll sushi lewisville","dragon roll sushi","eel avocado roll","unagi sushi roll","specialty sushi rolls lewisville tx","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Dragon Roll | Jinbeh Lewisville",
     description: "Eel and cucumber topped with avocado and eel sauce",

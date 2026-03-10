@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Steak & Shrimp Combo Hibachi Frisco | Meat Seafood Mix",
   description: "Filet mignon with jumbo shrimp. 400-450 calories, 50-55g protein. Surf and turf lighter combo. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["steak shrimp combo hibachi frisco","surf and turf teppanyaki frisco tx","best hibachi near me frisco","filet mignon shrimp combo","high protein hibachi","meat seafood pairing","japanese steakhouse frisco","best hibachi frisco tx"],
+  keywords: ["steak and shrimp hibachi frisco","surf and turf teppanyaki","hibachi combo dinner frisco","steak shrimp combo japanese restaurant","best hibachi near me frisco","date night hibachi frisco","hibachi near me frisco"],
   openGraph: {
     title: "Steak & Shrimp Combo | Jinbeh Frisco",
     description: "Filet mignon paired with jumbo shrimp",

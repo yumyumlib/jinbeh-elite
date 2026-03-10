@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Ahi Tuna Tower Frisco | Premium Spicy Ahi Tuna",
   description: "Ahi Tower at Jinbeh Frisco: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (214) 619-1200.",
-  keywords: ["ahi tuna tower","ahi tuna tower frisco","sushi near me frisco","best sushi frisco tx","tuna appetizer","premium sushi"],
+  keywords: ["ahi tuna tower frisco","tuna tartare tower","ahi tower sushi","tuna avocado stack","sushi near me frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Ahi Tuna Tower | Jinbeh Frisco",
     description: "Layered ahi tuna, avocado, and crispy wonton",

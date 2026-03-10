@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Steak & Lobster Combo Hibachi Frisco | Luxury Surf Turf",
   description: "Premium filet mignon and Maine lobster tail. 430-480 calories, 55-60g protein. Luxury special occasion combo. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["steak lobster combo hibachi frisco","lobster filet mignon teppanyaki frisco","luxury surf and turf frisco tx","best hibachi near me frisco","special occasion dinner hibachi","premium protein combo","japanese steakhouse frisco","best hibachi frisco tx"],
+  keywords: ["steak and lobster hibachi frisco","surf and turf japanese steakhouse","filet mignon lobster teppanyaki","luxury hibachi dinner frisco","anniversary dinner hibachi frisco","best hibachi near me frisco","hibachi near me frisco"],
   openGraph: {
     title: "Steak & Lobster Combo | Jinbeh Frisco",
     description: "Surf and turf perfection",

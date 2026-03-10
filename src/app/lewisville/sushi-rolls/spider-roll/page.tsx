@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Spider Roll Lewisville | Soft Shell Crab Sushi",
   description: "Spider Roll at Jinbeh Lewisville: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near I-35E. Call (972) 221-3888.",
-  keywords: ["spider roll","spider roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","soft shell crab","jinbeh spider roll"],
+  keywords: ["spider roll lewisville","spider roll sushi","soft shell crab sushi roll","crispy crab sushi","specialty sushi roll lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Spider Roll | Jinbeh Lewisville",
     description: "Soft shell crab with cucumber and spicy mayo",

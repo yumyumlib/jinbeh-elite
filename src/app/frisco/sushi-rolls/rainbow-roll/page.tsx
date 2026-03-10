@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Rainbow Roll Frisco | Assorted Sashimi Topping",
   description: "Rainbow Roll at Jinbeh Frisco: California roll with salmon, tuna, yellowtail. Premium sushi near Legacy West. Call (214) 619-1200.",
-  keywords: ["rainbow roll","rainbow roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","specialty sushi roll"],
+  keywords: ["rainbow roll frisco","rainbow roll sushi","assorted sashimi roll","colorful sushi roll","sushi rolls frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Rainbow Roll | Jinbeh Frisco",
     description: "California roll topped with assorted sashimi",

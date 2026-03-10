@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Sashimi Deluxe Platter Frisco | Premium Fish Assortment | Jinbeh",
   description: "Chef's premium sashimi selection with tuna, salmon, yellowtail at Jinbeh Frisco. 329 calories, 36g protein, omega-3 rich.",
-  keywords: ["sashimi near me frisco","best sushi frisco tx","sashimi deluxe platter","assorted raw fish","japanese appetizers frisco","chef selection sashimi","premium fish frisco"],
+  keywords: ["sashimi platter frisco","sashimi deluxe platter","assorted sashimi","chef selection sashimi","premium raw fish frisco","sashimi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Sashimi Deluxe Platter Frisco | Premium Chef Selection",
     description: "Chef's premium sashimi selection at Jinbeh Frisco. 329 calories, 36g protein.",

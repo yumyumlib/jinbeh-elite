@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Butterfly Kiss Sushi Roll Frisco | House Specialty",
   description: "Butterfly Kiss Roll at Jinbeh Frisco: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (214) 619-1200.",
-  keywords: ["butterfly kiss roll","butterfly kiss roll frisco","sushi near me frisco","best sushi frisco tx","house specialty sushi","salmon mango roll"],
+  keywords: ["butterfly kiss roll frisco","jinbeh butterfly kiss roll","house specialty sushi roll","seasonal sushi roll frisco","sushi near me frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Butterfly Kiss Roll | Jinbeh Frisco",
     description: "House specialty with cream cheese and crab",

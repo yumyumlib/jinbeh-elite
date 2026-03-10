@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Omakase Selection | Jinbeh Frisco Sashimi Menu",
   description: "Chef\'s choice tasting of the day\'s best Enjoy Omakase Selection at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
-  keywords: ["omakase selection","omakase selection frisco","sashimi frisco","jinbeh omakase selection","best sashimi frisco","japanese restaurant frisco","sashimi","raw fish","sashimi platter","fresh fish"],
+  keywords: ["omakase frisco","omakase dallas","omakase sushi near me","chef tasting sushi","premium sushi experience","sashimi near me frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Omakase Selection | Jinbeh Frisco",
     description: "Chef\'s choice tasting of the day\'s best",

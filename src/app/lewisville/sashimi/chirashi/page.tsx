@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Chirashi Bowl Lewisville | Scattered Sushi Rice Deluxe",
   description: "Scattered sushi bowl with premium assorted sashimi at Jinbeh Lewisville. 400-500 calories, 23g protein, omega-3 rich with vegetables.",
-  keywords: ["sashimi near me lewisville","chirashi bowl lewisville","best sushi lewisville tx","scattered sushi rice","japanese appetizers lewisville","sushi rice bowl lewisville"],
+  keywords: ["chirashi bowl lewisville","chirashi sushi","scattered sushi rice bowl","sashimi rice bowl","japanese rice bowl lewisville","sashimi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Chirashi Bowl | Jinbeh Lewisville",
     description: "Assorted sashimi over sushi rice",

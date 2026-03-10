@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Yellowtail Sashimi Lewisville | Buttery Hamachi Delicacy",
   description: "Premium hamachi (yellowtail) sashimi at Jinbeh Lewisville. 150 calories, 20g protein, omega-3 rich with heart-healthy benefits.",
-  keywords: ["sashimi near me lewisville","yellowtail sashimi lewisville","hamachi sashimi","best sushi lewisville tx","japanese appetizer lewisville","omega-3 fish lewisville","japanese restaurant lewisville"],
+  keywords: ["yellowtail sashimi lewisville","hamachi sashimi","yellowtail sashimi near me","buttery sashimi fish","omega-3 fish lewisville","sashimi near me lewisville","japanese restaurant lewisville"],
   openGraph: {
     title: "Yellowtail Sashimi | Jinbeh Lewisville",
     description: "Buttery hamachi with delicate flavor",

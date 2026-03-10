@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Ahi Tuna Tower Lewisville | Premium Spicy Ahi Tuna",
   description: "Ahi Tower at Jinbeh Lewisville: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (972) 221-3888.",
-  keywords: ["ahi tower","ahi tower lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","tuna stack","jinbeh ahi tower"],
+  keywords: ["ahi tuna tower lewisville","tuna tartare tower","ahi tower sushi","tuna avocado stack","sushi near me lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Ahi Tuna Tower | Jinbeh Lewisville",
     description: "Layered ahi tuna, avocado, and crispy wonton",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Sashimi Deluxe Platter Lewisville | Premium Fish Assortment",
   description: "Chef's premium sashimi selection with tuna, salmon, yellowtail at Jinbeh Lewisville. 329 calories, 36g protein, omega-3 rich.",
-  keywords: ["sashimi near me lewisville","best sushi lewisville tx","sashimi deluxe platter","assorted raw fish","japanese appetizers lewisville","chef selection sashimi","premium fish lewisville"],
+  keywords: ["sashimi platter lewisville","sashimi deluxe platter","assorted sashimi","chef selection sashimi","premium raw fish lewisville","sashimi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Sashimi Deluxe Platter | Jinbeh Lewisville",
     description: "Chef\'s selection of premium fish",

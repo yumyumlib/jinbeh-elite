@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Dragon Roll Sushi | Best Specialty Rolls Frisco TX | Jinbeh",
   description: "Dragon Roll: eel, cucumber, avocado with eel sauce. 410-500 calories. Fresh sushi made to order at Jinbeh Frisco. Reserve or order takeout today!",
-  keywords: ["dragon roll sushi frisco", "best sushi near me frisco", "dragon roll calories", "specialty sushi rolls frisco tx", "eel avocado roll", "uramaki sushi frisco", "sushi restaurants frisco"],
+  keywords: ["dragon roll sushi frisco","dragon roll sushi","eel avocado roll","unagi sushi roll","specialty sushi rolls frisco tx","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Dragon Roll | Jinbeh Frisco",
     description: "Eel and cucumber topped with avocado and eel sauce",

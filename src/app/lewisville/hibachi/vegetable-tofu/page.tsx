@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Vegetable & Tofu Hibachi Lewisville | Vegan Teppanyaki Option",
   description: "Fresh seasonal vegetables with crispy tofu. 180-220 calories, high protein plant-based. Vegan-friendly hibachi. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["vegetable tofu hibachi lewisville","vegan hibachi lewisville tx","plant-based teppanyaki restaurant lewisville","best hibachi near me lewisville","tofu protein nutrition","vegetarian japanese steakhouse lewisville","healthy hibachi options","best hibachi lewisville tx"],
+  keywords: ["vegetarian hibachi lewisville","tofu teppanyaki dinner","vegetable hibachi near me","plant based japanese restaurant","vegan hibachi options lewisville","japanese steakhouse lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Vegetable & Tofu | Jinbeh Lewisville",
     description: "Fresh seasonal vegetables with crispy tofu",

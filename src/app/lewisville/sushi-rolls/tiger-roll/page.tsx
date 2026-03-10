@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tiger Roll Lewisville | Tempura Shrimp Spicy Tuna",
   description: "Tiger Roll at Jinbeh Lewisville: Tempura shrimp, spicy tuna, cucumber, avocado, sesame. Eel and spicy mayo drizzle. Call (972) 221-3888.",
-  keywords: ["tiger roll","tiger roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","shrimp and tuna","jinbeh tiger roll"],
+  keywords: ["tiger roll lewisville","tiger roll sushi","spicy tuna tempura roll","shrimp tempura spicy roll","specialty sushi roll lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Tiger Roll | Jinbeh Lewisville",
     description: "Shrimp tempura with spicy tuna and jalapeño",

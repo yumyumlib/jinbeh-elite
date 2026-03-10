@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Hibachi Chicken Teriyaki | Best Japanese Steakhouse Frisco TX",
   description: "Hibachi chicken teriyaki: 300 cal, 26g protein. Grilled tableside with teriyaki glaze. Complete dinner $24.95. Reserve at Jinbeh Frisco today!",
-  keywords: ["hibachi chicken teriyaki frisco","hibachi chicken calories","is hibachi chicken healthy","hibachi near me frisco tx","japanese steakhouse frisco","teriyaki chicken dinner","teppanyaki chicken"],
+  keywords: ["hibachi chicken teriyaki frisco","teppanyaki chicken dinner","hibachi chicken calories","is hibachi chicken healthy","japanese steakhouse frisco","family hibachi dinner frisco","hibachi near me frisco"],
   openGraph: {
     title: "Chicken Teriyaki | Jinbeh Frisco",
     description: "Tender chicken breast with house teriyaki glaze",

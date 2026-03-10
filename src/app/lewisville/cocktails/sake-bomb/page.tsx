@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Sake Bomb Lewisville - Classic Japanese Beer Cocktail",
   description: "Traditional sake bomb with cold Japanese beer at Jinbeh Lewisville. Best happy hour cocktails. Reserve at our Japanese restaurant (972) 221-3888.",
-  keywords: ["japanese cocktails lewisville","sake drinks lewisville tx","best happy hour lewisville","sake bomb","beer cocktails","jinbeh lewisville","japanese restaurant","drinks near vista ridge"],
+  keywords: ["sake bomb lewisville","sake bomb","japanese beer cocktail","group drinking ritual japanese","japanese cocktails lewisville","happy hour lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Sake Bomb | Jinbeh Lewisville",
     description: "Classic sake dropped into cold beer",

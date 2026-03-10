@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Seafood Trio Hibachi Frisco | Premium Mixed Seafood",
   description: "Jumbo shrimp, sea scallops, Maine lobster tail. 380-420 calories, 60-65g protein. Healthiest hibachi combo option. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["seafood trio hibachi frisco","mixed seafood teppanyaki frisco tx","best hibachi near me frisco","healthy seafood combo frisco","shrimp scallops lobster combo","premium seafood hibachi","japanese steakhouse frisco","best hibachi frisco tx"],
+  keywords: ["seafood trio hibachi frisco","mixed seafood teppanyaki","lobster shrimp scallops hibachi","premium seafood hibachi dinner","best hibachi near me frisco","japanese steakhouse frisco","hibachi near me frisco"],
   openGraph: {
     title: "Seafood Trio | Jinbeh Frisco",
     description: "Shrimp, scallops, and lobster",

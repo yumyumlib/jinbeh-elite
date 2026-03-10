@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Steak & Shrimp Combo Hibachi Lewisville | Meat Seafood Mix",
   description: "Filet mignon with jumbo shrimp. 400-450 calories, 50-55g protein. Surf and turf lighter combo. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["steak shrimp combo hibachi lewisville","surf and turf teppanyaki lewisville tx","best hibachi near me lewisville","filet mignon shrimp combo","high protein hibachi","meat seafood pairing","japanese steakhouse lewisville","best hibachi lewisville tx"],
+  keywords: ["steak and shrimp hibachi lewisville","surf and turf teppanyaki","hibachi combo dinner lewisville","steak shrimp combo japanese restaurant","best hibachi near me lewisville","date night hibachi lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Steak & Shrimp Combo | Jinbeh Lewisville",
     description: "Filet mignon paired with jumbo shrimp",

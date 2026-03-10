@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Hibachi Chicken Teriyaki | Best Japanese Steakhouse Lewisville TX",
   description: "Hibachi chicken teriyaki: 300 cal, 26g protein. Grilled tableside with teriyaki glaze. Complete dinner $24.95. Reserve at Jinbeh Lewisville today!",
-  keywords: ["hibachi chicken teriyaki lewisville","hibachi chicken calories","is hibachi chicken healthy","hibachi near me lewisville tx","japanese steakhouse lewisville","teriyaki chicken dinner","teppanyaki chicken"],
+  keywords: ["hibachi chicken teriyaki lewisville","teppanyaki chicken dinner","hibachi chicken calories","is hibachi chicken healthy","japanese steakhouse lewisville","family hibachi dinner lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Chicken Teriyaki | Jinbeh Lewisville",
     description: "Tender chicken breast with house teriyaki glaze",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Seafood Trio Hibachi Lewisville | Premium Mixed Seafood",
   description: "Jumbo shrimp, sea scallops, Maine lobster tail. 380-420 calories, 60-65g protein. Healthiest hibachi combo option. Includes soup, salad, rice, grilled vegetables.",
-  keywords: ["seafood trio hibachi lewisville","mixed seafood teppanyaki lewisville tx","best hibachi near me lewisville","healthy seafood combo lewisville","shrimp scallops lobster combo","premium seafood hibachi","japanese steakhouse lewisville","best hibachi lewisville tx"],
+  keywords: ["seafood trio hibachi lewisville","mixed seafood teppanyaki","lobster shrimp scallops hibachi","premium seafood hibachi dinner","best hibachi near me lewisville","japanese steakhouse lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Seafood Trio | Jinbeh Lewisville",
     description: "Shrimp, scallops, and lobster",

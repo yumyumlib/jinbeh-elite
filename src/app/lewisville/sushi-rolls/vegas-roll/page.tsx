@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Vegas Roll Lewisville | Deep Fried Salmon Jalapeño",
   description: "Vegas Roll at Jinbeh Lewisville: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (972) 221-3888.",
-  keywords: ["vegas roll","vegas roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","beef sushi roll","jinbeh vegas roll"],
+  keywords: ["vegas roll lewisville","vegas roll sushi","deep fried sushi roll","crispy sushi roll","fusion sushi roll","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Vegas Roll | Jinbeh Lewisville",
     description: "Deep-fried roll with spicy crab and cream cheese",

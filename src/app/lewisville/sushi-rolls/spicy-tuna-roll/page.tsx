@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Spicy Tuna Roll Lewisville | Fresh Tuna Spicy Mayo",
   description: "Spicy Tuna Roll at Jinbeh Lewisville: Fresh tuna, spicy mayo, 260-350 cal. Premium sushi near I-35E. Made fresh to order. Call (972) 221-3888.",
-  keywords: ["spicy tuna roll","spicy tuna roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","jinbeh spicy tuna roll","best sushi rolls lewisville"],
+  keywords: ["spicy tuna roll lewisville","spicy tuna roll","spicy tuna sushi","ahi tuna roll","sushi rolls lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Spicy Tuna Roll | Jinbeh Lewisville",
     description: "Fresh tuna with spicy mayo and scallions",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Philadelphia Roll Frisco | Salmon Cream Cheese",
   description: "Philadelphia Roll at Jinbeh Frisco: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near Legacy West. Call (214) 619-1200.",
-  keywords: ["philadelphia roll","philadelphia roll frisco","sushi near me frisco","best sushi frisco tx","sushi rolls frisco","salmon sushi roll","jinbeh philadelphia roll"],
+  keywords: ["philadelphia roll frisco","philly roll sushi","smoked salmon cream cheese roll","salmon sushi roll","sushi rolls frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Philadelphia Roll | Jinbeh Frisco",
     description: "Smoked salmon with cream cheese and cucumber",

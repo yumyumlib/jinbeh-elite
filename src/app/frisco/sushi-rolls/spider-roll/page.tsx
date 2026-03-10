@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Spider Roll Frisco | Soft Shell Crab Sushi",
   description: "Spider Roll at Jinbeh Frisco: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near Legacy West. Call (214) 619-1200.",
-  keywords: ["spider roll","spider roll frisco","sushi near me frisco","best sushi frisco tx","soft shell crab sushi","specialty sushi roll"],
+  keywords: ["spider roll frisco","spider roll sushi","soft shell crab sushi roll","crispy crab sushi","specialty sushi roll frisco","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Spider Roll | Jinbeh Frisco",
     description: "Soft shell crab with cucumber and spicy mayo",

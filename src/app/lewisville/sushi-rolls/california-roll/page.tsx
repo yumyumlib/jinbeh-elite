@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "California Roll Sushi Lewisville | Best Crab & Avocado",
   description: "California Roll at Jinbeh Lewisville: 250 cal, crab, avocado, cucumber. Fresh handmade sushi near I-35E. Dine in or takeout. Call (972) 221-3888.",
-  keywords: ["california roll","california roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","jinbeh california roll","best sushi rolls lewisville","japanese restaurant lewisville"],
+  keywords: ["california roll lewisville","california roll sushi","crab avocado roll","sushi for beginners","sushi rolls lewisville","jinbeh california roll","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "California Roll | Jinbeh Lewisville",
     description: "Crab, avocado, and cucumber classic",

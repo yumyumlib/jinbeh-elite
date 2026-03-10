@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Caterpillar Roll Lewisville | Eel Avocado Sushi",
   description: "Caterpillar Roll at Jinbeh Lewisville: Grilled eel, cucumber, avocado topping, sesame. Premium sushi near I-35E. Call (972) 221-3888.",
-  keywords: ["caterpillar roll","caterpillar roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","unique sushi roll","jinbeh caterpillar roll"],
+  keywords: ["caterpillar roll lewisville","caterpillar roll sushi","eel sushi roll","avocado eel roll","specialty sushi roll","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Caterpillar Roll | Jinbeh Lewisville",
     description: "Eel roll topped with avocado slices",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Soft Shell Crab Lewisville | Crispy Whole Crab Appetizer",
   description: "Crispy tempura soft shell crab at Jinbeh Lewisville. 555 calories, 23.8g protein, edible shells, tender meat. Japanese specialty.",
-  keywords: ["japanese appetizers lewisville","soft shell crab lewisville","best sushi lewisville tx","crispy crab","seafood appetizer lewisville","tempura crab","japanese specialty"],
+  keywords: ["soft shell crab lewisville","crispy soft shell crab appetizer","fried whole crab japanese","seafood appetizer lewisville","japanese appetizers lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Soft Shell Crab | Jinbeh Lewisville",
     description: "Crispy fried soft shell crab",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Imperial Dinner Hibachi Frisco | Surf Turf Premium Combo",
   description: "Ultimate trio: filet mignon, Maine lobster tail, jumbo shrimp. 600+ calories total protein combo. Premium special occasion dinners near Frisco TX.",
-  keywords: ["imperial dinner hibachi frisco","surf and turf combo frisco tx","best hibachi near me frisco","luxury hibachi dinner frisco","protein combo meal","special occasion hibachi","japanese steakhouse frisco","best hibachi frisco tx"],
+  keywords: ["imperial dinner hibachi frisco","hibachi dinner for two","filet mignon lobster shrimp teppanyaki","special occasion japanese steakhouse","engagement dinner hibachi frisco","best hibachi near me frisco","hibachi near me frisco"],
   openGraph: {
     title: "Imperial Dinner | Jinbeh Frisco",
     description: "Filet mignon, lobster tail, and shrimp",

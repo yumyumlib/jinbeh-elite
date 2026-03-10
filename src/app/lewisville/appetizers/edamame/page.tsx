@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Edamame Lewisville | Plant-Based Protein Soybeans",
   description: "Steamed edamame with sea salt at Jinbeh Lewisville. 18.5g protein per cup, complete amino acids, low calorie plant-based appetizer.",
-  keywords: ["japanese appetizers lewisville","edamame lewisville","best sushi lewisville tx","steamed soybeans","healthy appetizers lewisville","plant based protein lewisville","japanese starter"],
+  keywords: ["edamame lewisville","edamame sushi","spicy garlic edamame","japanese appetizers lewisville","healthy appetizers lewisville","plant based protein appetizer","japanese restaurant lewisville"],
   openGraph: {
     title: "Edamame | Jinbeh Lewisville",
     description: "Steamed soybeans with sea salt",

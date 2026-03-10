@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Chirashi Bowl Frisco | Scattered Sushi Rice Deluxe | Jinbeh",
   description: "Scattered sushi bowl with premium assorted sashimi at Jinbeh Frisco. 400-500 calories, 23g protein, omega-3 rich with vegetables.",
-  keywords: ["sashimi near me frisco","chirashi bowl frisco","best sushi frisco tx","scattered sushi rice","japanese appetizers frisco","sushi rice bowl frisco"],
+  keywords: ["chirashi bowl frisco","chirashi sushi","scattered sushi rice bowl","sashimi rice bowl","japanese rice bowl frisco","sashimi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Chirashi Bowl Frisco | Premium Sashimi Rice Bowl",
     description: "Scattered sushi bowl with premium sashimi at Jinbeh Frisco. 400-500 calories, 23g protein.",

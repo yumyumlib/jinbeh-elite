@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Yellowtail Sashimi Frisco | Buttery Hamachi Delicacy | Jinbeh",
   description: "Premium hamachi (yellowtail) sashimi at Jinbeh Frisco. 150 calories, 20g protein, omega-3 rich with heart-healthy benefits.",
-  keywords: ["sashimi near me frisco","yellowtail sashimi frisco","hamachi sashimi","best sushi frisco tx","japanese appetizer frisco","omega-3 fish frisco","japanese restaurant frisco"],
+  keywords: ["yellowtail sashimi frisco","hamachi sashimi","yellowtail sashimi near me","buttery sashimi fish","omega-3 fish frisco","sashimi near me frisco","japanese restaurant frisco"],
   openGraph: {
     title: "Yellowtail Sashimi Frisco | Premium Hamachi Fish",
     description: "Premium hamachi sashimi at Jinbeh Frisco. 150 calories, 20g protein, omega-3 rich.",

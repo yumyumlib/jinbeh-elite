@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Butterfly Kiss Sushi Roll Lewisville | House Specialty",
   description: "Butterfly Kiss Roll at Jinbeh Lewisville: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (972) 221-3888.",
-  keywords: ["butterfly kiss","butterfly kiss lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","house specialty","jinbeh butterfly kiss"],
+  keywords: ["butterfly kiss roll lewisville","jinbeh butterfly kiss roll","house specialty sushi roll","seasonal sushi roll lewisville","sushi near me lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Butterfly Kiss Roll | Jinbeh Lewisville",
     description: "House specialty with cream cheese and crab",

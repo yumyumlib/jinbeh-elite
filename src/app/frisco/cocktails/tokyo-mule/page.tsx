@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tokyo Mule - Japanese Whiskey Cocktails Frisco | Jinbeh",
   description: "Tokyo Mule with Japanese whiskey, ginger & lime at Jinbeh Frisco. Premium happy hour cocktails. Best Japanese restaurant drinks. Call (214) 619-1200.",
-  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","tokyo mule","whiskey cocktails","ginger beer","jinbeh frisco","japanese restaurant"],
+  keywords: ["tokyo mule cocktail frisco","sake mule cocktail","japanese moscow mule","ginger beer sake cocktail","japanese cocktails frisco","happy hour frisco","jinbeh frisco"],
   openGraph: {
     title: "Tokyo Mule | Japanese Whiskey Cocktail Frisco",
     description: "Tokyo Mule with premium Japanese whiskey, ginger & lime.",

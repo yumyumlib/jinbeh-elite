@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Salmon Sashimi Lewisville | Omega-3 Rich Sliced Raw Fish",
   description: "Premium Atlantic salmon sashimi at Jinbeh Lewisville. 121 calories per serving, 17g protein, rich in omega-3s. Sushi-grade quality near Vista Ridge Mall.",
-  keywords: ["sashimi near me lewisville","salmon sashimi lewisville","best sushi lewisville tx","salmon sashimi calories","omega-3 sashimi","raw salmon lewisville","japanese restaurant lewisville","fresh fish sashimi","sushi-grade salmon"],
+  keywords: ["salmon sashimi lewisville","salmon sashimi calories","salmon sashimi nutrition","sushi grade salmon","fresh fish sashimi lewisville","omega-3 sashimi","sashimi near me lewisville","japanese restaurant lewisville"],
   openGraph: {
     title: "Salmon Sashimi | Jinbeh Lewisville",
     description: "Fresh Atlantic salmon, sliced to perfection",

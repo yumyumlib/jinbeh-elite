@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Gyoza Frisco | Pan-Fried Pork Dumplings Appetizer | Jinbeh",
   description: "Pan-fried pork gyoza dumplings at Jinbeh Frisco. 230 calories, 10g protein, crispy exterior, tender filling. Classic Japanese appetizer.",
-  keywords: ["japanese appetizers frisco","gyoza dumplings frisco","best sushi frisco tx","pan-fried dumplings","pork gyoza","appetizer frisco","japanese starter"],
+  keywords: ["gyoza dumplings frisco","gyoza sushi","pan fried dumplings japanese","pork gyoza restaurant","japanese appetizers frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Gyoza Frisco | Crispy Pan-Fried Pork Dumplings",
     description: "Pan-fried pork gyoza dumplings at Jinbeh Frisco. 230 calories, 10g protein.",

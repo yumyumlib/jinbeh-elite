@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Caterpillar Roll Frisco | Eel Avocado Sushi",
   description: "Caterpillar Roll at Jinbeh Frisco: Grilled eel, cucumber, avocado topping, sesame. Premium sushi near Legacy West. Call (214) 619-1200.",
-  keywords: ["caterpillar roll","caterpillar roll frisco","sushi near me frisco","best sushi frisco tx","eel sushi roll","specialty sushi roll"],
+  keywords: ["caterpillar roll frisco","caterpillar roll sushi","eel sushi roll","avocado eel roll","specialty sushi roll","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Caterpillar Roll | Jinbeh Frisco",
     description: "Eel roll topped with avocado slices",

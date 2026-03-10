@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Shrimp Tempura Lewisville | Crispy Fried Shrimp Appetizer",
   description: "Crispy tempura battered shrimp at Jinbeh Lewisville. 200-300 calories, 12-15g protein, light, airy batter. Japanese classic appetizer.",
-  keywords: ["japanese appetizers lewisville","shrimp tempura lewisville","best sushi lewisville tx","fried shrimp","tempura appetizer","crispy shrimp lewisville","japanese starter"],
+  keywords: ["shrimp tempura lewisville","shrimp tempura near me","tempura appetizer","crispy shrimp japanese restaurant","japanese appetizers lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Shrimp Tempura | Jinbeh Lewisville",
     description: "Light and crispy fried shrimp",

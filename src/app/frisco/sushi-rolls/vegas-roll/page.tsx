@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Vegas Roll Frisco | Deep Fried Salmon Jalapeño",
   description: "Vegas Roll at Jinbeh Frisco: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (214) 619-1200.",
-  keywords: ["vegas roll","vegas roll frisco","sushi near me frisco","best sushi frisco tx","deep fried sushi","fusion sushi roll"],
+  keywords: ["vegas roll frisco","vegas roll sushi","deep fried sushi roll","crispy sushi roll","fusion sushi roll","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Vegas Roll | Jinbeh Frisco",
     description: "Deep-fried roll with spicy crab and cream cheese",

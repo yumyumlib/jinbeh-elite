@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Soft Shell Crab Frisco | Crispy Whole Crab Appetizer | Jinbeh",
   description: "Crispy tempura soft shell crab at Jinbeh Frisco. 555 calories, 23.8g protein, edible shells, tender meat. Japanese specialty.",
-  keywords: ["japanese appetizers frisco","soft shell crab frisco","best sushi frisco tx","crispy crab","seafood appetizer frisco","tempura crab","japanese specialty"],
+  keywords: ["soft shell crab frisco","crispy soft shell crab appetizer","fried whole crab japanese","seafood appetizer frisco","japanese appetizers frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Soft Shell Crab Frisco | Crispy Edible Shell Crab",
     description: "Crispy tempura soft shell crab at Jinbeh Frisco. 555 calories, 23.8g protein.",

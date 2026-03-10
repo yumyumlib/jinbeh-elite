@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Shrimp Tempura Roll Lewisville | Crispy Fried Shrimp",
   description: "Shrimp Tempura Roll at Jinbeh Lewisville: 450-500 cal, crispy tempura shrimp, avocado. Fresh made daily. Call (972) 221-3888.",
-  keywords: ["shrimp tempura roll","shrimp tempura lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","fried shrimp sushi","jinbeh shrimp tempura"],
+  keywords: ["shrimp tempura roll lewisville","shrimp tempura roll","crispy shrimp sushi","tempura sushi roll","shrimp tempura roll calories","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Shrimp Tempura Roll | Jinbeh Lewisville",
     description: "Crispy shrimp tempura with avocado",

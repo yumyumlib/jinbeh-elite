@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Tuna Tartare Frisco | Diced Ahi with Avocado Ponzu | Jinbeh",
   description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Frisco. 100-150 calories, 20g protein, omega-3 healthy. Premium raw fish.",
-  keywords: ["japanese appetizers frisco","tuna tartare frisco","best sushi frisco tx","ahi tuna appetizer","raw fish tartare","healthy appetizer frisco","sashimi style"],
+  keywords: ["tuna tartare frisco","ahi tuna tartare appetizer","raw tuna appetizer","sashimi style appetizer","japanese appetizers frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Tuna Tartare Frisco | Premium Diced Ahi Tuna",
     description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Frisco. 100-150 calories, 20g protein.",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Filet Mignon Hibachi | Best Teppanyaki Steak Lewisville TX",
   description: "Premium filet mignon seared on our teppan grill. 200 cal, 25g protein. Hibachi dinner includes soup, salad, fried rice. Reserve at Jinbeh Lewisville.",
-  keywords: ["filet mignon hibachi lewisville","best hibachi lewisville tx","hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi filet mignon calories","japanese steakhouse lewisville","hibachi steak dinner","beef tenderloin hibachi"],
+  keywords: ["filet mignon hibachi lewisville","hibachi steak dinner","teppanyaki filet mignon","beef tenderloin hibachi","hibachi birthday dinner lewisville","best hibachi near me lewisville","japanese steakhouse lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Filet Mignon | Jinbeh Lewisville",
     description: "Premium beef tenderloin, perfectly seared on the teppan grill",

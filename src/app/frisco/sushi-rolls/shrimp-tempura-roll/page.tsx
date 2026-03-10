@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Shrimp Tempura Roll Frisco | Crispy Fried Shrimp",
   description: "Shrimp Tempura Roll at Jinbeh Frisco: 450-500 cal, crispy tempura shrimp, avocado. Fresh made daily. Call (214) 619-1200.",
-  keywords: ["shrimp tempura roll","shrimp tempura roll frisco","sushi near me frisco","best sushi frisco tx","tempura sushi roll","crispy sushi"],
+  keywords: ["shrimp tempura roll frisco","shrimp tempura roll","crispy shrimp sushi","tempura sushi roll","shrimp tempura roll calories","sushi near me frisco","best sushi frisco tx"],
   openGraph: {
     title: "Shrimp Tempura Roll | Jinbeh Frisco",
     description: "Crispy shrimp tempura with avocado",

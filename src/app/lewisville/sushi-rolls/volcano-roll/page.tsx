@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Volcano Roll Lewisville | Baked Spicy Seafood Lava",
   description: "Volcano Roll at Jinbeh Lewisville: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (972) 221-3888.",
-  keywords: ["volcano roll","volcano roll lewisville","sushi near me lewisville","best sushi lewisville tx","sushi rolls lewisville","spicy baked roll","jinbeh volcano roll"],
+  keywords: ["volcano roll lewisville","volcano roll sushi","baked sushi roll","hot sushi roll","specialty sushi lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Volcano Roll | Jinbeh Lewisville",
     description: "Spicy crab and avocado with baked seafood topping",

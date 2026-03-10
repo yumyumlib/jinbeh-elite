@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Sake Bomb Frisco - Classic Japanese Beer Cocktail | Jinbeh",
   description: "Traditional sake bomb with cold Japanese beer at Jinbeh Frisco. Best happy hour cocktails. Reserve at our Japanese restaurant (214) 619-1200.",
-  keywords: ["japanese cocktails frisco","sake drinks frisco tx","best happy hour frisco","sake bomb","beer cocktails","jinbeh frisco","japanese restaurant","drinks near stonebriar"],
+  keywords: ["sake bomb frisco","sake bomb","japanese beer cocktail","group drinking ritual japanese","japanese cocktails frisco","happy hour frisco","jinbeh frisco"],
   openGraph: {
     title: "Sake Bomb | Classic Japanese Beer Cocktail Frisco",
     description: "Traditional sake bomb with cold Japanese beer. Best happy hour specials.",

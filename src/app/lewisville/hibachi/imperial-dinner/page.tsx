@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Imperial Dinner Hibachi Lewisville | Surf Turf Premium Combo",
   description: "Ultimate trio: filet mignon, Maine lobster tail, jumbo shrimp. 600+ calories total protein combo. Premium special occasion dinners near Lewisville TX.",
-  keywords: ["imperial dinner hibachi lewisville","surf and turf combo lewisville tx","best hibachi near me lewisville","luxury hibachi dinner lewisville","protein combo meal","special occasion hibachi","japanese steakhouse lewisville","best hibachi lewisville tx"],
+  keywords: ["imperial dinner hibachi lewisville","hibachi dinner for two","filet mignon lobster shrimp teppanyaki","special occasion japanese steakhouse","engagement dinner hibachi lewisville","best hibachi near me lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Imperial Dinner | Jinbeh Lewisville",
     description: "Filet mignon, lobster tail, and shrimp",

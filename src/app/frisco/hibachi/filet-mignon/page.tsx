@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Filet Mignon Hibachi | Best Teppanyaki Steak Frisco TX",
   description: "Premium filet mignon seared on our teppan grill. 200 cal, 25g protein. Hibachi dinner includes soup, salad, fried rice. Reserve at Jinbeh Frisco.",
-  keywords: ["filet mignon hibachi frisco", "best hibachi frisco tx", "hibachi near me frisco", "teppanyaki restaurant frisco", "hibachi filet mignon calories", "japanese steakhouse frisco", "hibachi steak dinner", "beef tenderloin hibachi"],
+  keywords: ["filet mignon hibachi frisco","hibachi steak dinner","teppanyaki filet mignon","beef tenderloin hibachi","hibachi birthday dinner frisco","best hibachi near me frisco","japanese steakhouse frisco","hibachi near me frisco"],
   openGraph: {
     title: "Filet Mignon | Jinbeh Frisco",
     description: "Premium beef tenderloin, perfectly seared on the teppan grill",

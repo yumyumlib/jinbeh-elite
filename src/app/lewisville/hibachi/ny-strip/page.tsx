@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "NY Strip Steak Hibachi Lewisville | Best Japanese Steakhouse",
   description: "Premium hand-cut NY Strip grilled tableside. 250-300 calories per 5oz. Includes soup, salad, rice, vegetables. Best hibachi near Lewisville TX.",
-  keywords: ["ny strip steak hibachi lewisville","best hibachi near me lewisville","japanese steakhouse lewisville tx","teppanyaki restaurant lewisville","hibachi ny strip calories","ny strip steak nutrition facts","hibachi near me lewisville","best hibachi lewisville tx"],
+  keywords: ["ny strip hibachi lewisville","new york strip teppanyaki","hibachi steak lewisville tx","japanese steakhouse steak dinner","best hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "NY Strip Steak | Jinbeh Lewisville",
     description: "Hand-cut New York strip with savory soy glaze",

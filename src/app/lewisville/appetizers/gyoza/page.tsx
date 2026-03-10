@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Gyoza Lewisville | Pan-Fried Pork Dumplings Appetizer",
   description: "Pan-fried pork gyoza dumplings at Jinbeh Lewisville. 230 calories, 10g protein, crispy exterior, tender filling. Classic Japanese appetizer.",
-  keywords: ["japanese appetizers lewisville","gyoza dumplings lewisville","best sushi lewisville tx","pan-fried dumplings","pork gyoza","appetizer lewisville","japanese starter"],
+  keywords: ["gyoza dumplings lewisville","gyoza sushi","pan fried dumplings japanese","pork gyoza restaurant","japanese appetizers lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Gyoza | Jinbeh Lewisville",
     description: "Pan-fried pork dumplings with dipping sauce",

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 export const metadata: Metadata = {
   title: "Seared Ahi Tuna Lewisville | Pepper-Crusted Premium Fish",
   description: "Seared ahi tuna with wasabi aioli at Jinbeh Lewisville. 100-150 calories, 20g protein, omega-3 rich. Premium appetizer with healthy benefits.",
-  keywords: ["japanese appetizers lewisville","seared tuna lewisville","best sushi lewisville tx","ahi tuna appetizer","pepper-crusted tuna","healthy appetizer lewisville","tuna tartare"],
+  keywords: ["seared ahi tuna lewisville","tataki tuna appetizer","pepper crusted ahi tuna","seared tuna japanese restaurant","japanese appetizers lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Seared Ahi Tuna | Jinbeh Lewisville",
     description: "Pepper-crusted ahi with wasabi aioli",
