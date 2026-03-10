@@ -215,7 +215,7 @@ export default function Header({ location }: HeaderProps) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="inline-block px-3 md:mx-1 py-2 rounded-lg text-white hover:text-soft-gold hover:bg-white/10 transition-all duration-300 hover:-translate-y-0.5 text-sm font-semibold tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
+                      className="inline-block px-3 md:mx-1 py-2 rounded-lg text-white/80 hover:text-soft-gold transition-all duration-300 text-sm font-medium tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] hover:underline underline-offset-4 decoration-soft-gold/50"
                     >
                       {item.label}
                     </Link>
