@@ -41,10 +41,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "When is Diwali 2025?",
+      name: "When is Diwali 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Diwali 2025 (Festival of Lights) falls on October 20-24, 2025, with the main celebration on October 20th. The festival typically lasts five days.",
+        text: "Diwali 2026 (Festival of Lights) falls on November 8-12, 2026, with the main celebration on November 8th. The festival typically lasts five days.",
       },
     },
     {
@@ -272,8 +272,8 @@ export default function DiwaliPage() {
               <div className="space-y-4 max-w-3xl mx-auto">
                 {[
                   {
-                    q: "When is Diwali 2025?",
-                    a: "Diwali 2025 falls on October 20-24, with the main celebration on October 20th. We welcome families celebrating throughout the festival period!",
+                    q: "When is Diwali 2026?",
+                    a: "Diwali 2026 falls on November 8-12, with the main celebration on November 8th. We welcome families celebrating throughout the festival period!",
                   },
                   {
                     q: "Do you have vegetarian options?",
@@ -379,7 +379,7 @@ export default function DiwaliPage() {
             </Link>
           </div>
         </section>
-      
+
         {/* Related Blog Articles */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-6">
@@ -405,7 +405,7 @@ export default function DiwaliPage() {
           </div>
         </section>
 
-        </main>
+      </main>
       <Footer />
     </>
   );

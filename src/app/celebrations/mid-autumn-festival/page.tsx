@@ -41,10 +41,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "When is the Mid-Autumn Festival 2025?",
+      name: "When is the Mid-Autumn Festival 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Mid-Autumn Festival 2025 falls on October 6, 2025. This is the perfect time to gather with family over a special meal.",
+        text: "The Mid-Autumn Festival 2026 falls on October 25, 2026. This is the perfect time to gather with family over a special meal.",
       },
     },
     {
@@ -180,7 +180,7 @@ export default function MidAutumnFestivalPage() {
                     it&apos;s a time for families to reunite and give thanks for the autumn harvest.
                   </p>
                   <p className="text-charcoal/80 text-sm">
-                    <strong>2025 Date:</strong> October 6, 2025
+                    <strong>2026 Date:</strong> October 25, 2026
                   </p>
                 </div>
               </div>
@@ -295,8 +295,8 @@ export default function MidAutumnFestivalPage() {
               <div className="space-y-4 max-w-3xl mx-auto">
                 {[
                   {
-                    q: "When is the Mid-Autumn Festival 2025?",
-                    a: "The Mid-Autumn Festival 2025 falls on October 6th. It's based on the lunar calendar and falls on the 15th day of the 8th lunar month each year.",
+                    q: "When is the Mid-Autumn Festival 2026?",
+                    a: "The Mid-Autumn Festival 2026 falls on October 25th. It's based on the lunar calendar and falls on the 15th day of the 8th lunar month each year.",
                   },
                   {
                     q: "Who celebrates the Mid-Autumn Festival?",
