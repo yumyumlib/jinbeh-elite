@@ -9,6 +9,21 @@ export const metadata: Metadata = {
     },
     description: "Contact Jinbeh Japanese Restaurant for reservations, catering, or feedback. Family-owned hibachi & sushi in Frisco and Lewisville TX. Call today!",
     keywords: ["jinbeh contact", "japanese restaurant phone", "jinbeh reservations", "jinbeh catering inquiry"],
+    openGraph: {
+        title: "Contact Jinbeh Japanese Restaurant",
+        description: "Contact Jinbeh for reservations, catering, or feedback. Family-owned hibachi & sushi in Frisco and Lewisville TX.",
+        url: "https://jinbeh.com/contact",
+        siteName: "Jinbeh Japanese Restaurant",
+        type: "website",
+    },
+    twitter: {
+        card: "summary",
+        title: "Contact Jinbeh Japanese Restaurant",
+        description: "Contact Jinbeh for reservations, catering, or feedback. Family-owned hibachi & sushi in Frisco and Lewisville TX.",
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/contact",
+    },
 };
 
 const frisco = locations.locations.frisco;

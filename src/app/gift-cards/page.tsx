@@ -30,6 +30,21 @@ export const metadata: Metadata = {
     title: "Gift Cards | Jinbeh Japanese Restaurant - Frisco & Lewisville",
     description: "Give the gift of an unforgettable dining experience. Purchase Jinbeh gift cards for hibachi, sushi, and Japanese cuisine in Frisco and Lewisville TX.",
     keywords: ["jinbeh gift card", "japanese restaurant gift card", "hibachi gift certificate", "sushi gift card frisco"],
+    openGraph: {
+        title: "Gift Cards | Jinbeh Japanese Restaurant",
+        description: "Give the gift of an unforgettable dining experience. Jinbeh gift cards for hibachi and sushi in Frisco & Lewisville.",
+        url: "https://jinbeh.com/gift-cards",
+        siteName: "Jinbeh Japanese Restaurant",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Gift Cards | Jinbeh Japanese Restaurant",
+        description: "Give the gift of an unforgettable dining experience. Jinbeh gift cards for hibachi and sushi in Frisco & Lewisville.",
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/gift-cards",
+    },
 };
 
 export default function GiftCardsPage() {

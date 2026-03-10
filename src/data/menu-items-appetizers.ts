@@ -155,7 +155,7 @@ export const appetizers: MenuItem[] = [
             { question: 'What is the difference between tuna tartare and seared tuna?', answer: 'Tuna tartare is hand-diced raw tuna mixed with seasonings. completely uncooked and focused on the pure, clean flavor of the fish. Seared tuna has a pepper-sesame crust and is briefly seared, giving it a thin cooked exterior with a raw center. Both showcase our sushi-grade ahi tuna beautifully.' },
         ],
         proTip: 'Scoop the tartare onto the wonton chips with a bit of avocado on each bite. the creamy, crunchy, fresh combination is incredible.',
-        heroImage: '/images/menu-photos/Ahi_Tower.jpg',
+        heroImage: '/images/instagram/tuna-tower-bar-bokeh.jpg',
         jinbehStory: "Tuna tartare is our most refined appetizer. The sushi team hand-dices the ahi into precise cubes, mixing them gently with sesame oil and ponzu. The crispy wonton chips are made in-house daily.",
         origin: "While tartare originated in French cuisine, the Japanese interpretation emphasizes subtlety: less acid, more umami, and a focus on the pure flavor of the fish.",
         nutritionHighlight: "Raw ahi tuna delivers 25g protein with only 120 calories per 4oz serving. The avocado adds healthy fats and potassium. Sesame oil provides vitamin E.",

@@ -60,7 +60,7 @@ export const cocktails: MenuItem[] = [
             { question: 'Can a whole table do Sake Bombs together?', answer: 'Absolutely. that\'s the best way! Sake Bombs are designed as a group activity. Everyone gets their own setup, drums the table in unison, and drinks together. It\'s perfect for birthdays, celebrations, and group dinners.' },
         ],
         proTip: 'Round up the whole table for Sake Bombs. the synchronized "ichi, ni, san, SAKE!" drumming is the best way to kick off a celebration.',
-        heroImage: '/images/food/cocktail.jpg',
+        heroImage: '/images/food/jinbeh_food_closeup.jpg',
         jinbehStory: "The Sake Bomb is Jinbeh's most fun group ritual. Tables drum in unison, the sake drops, and everyone drinks together. Birthday parties and bachelor groups make this a highlight.",
         origin: "The Sake Bomb originated in American Japanese restaurants as a communal drinking ritual. Warm sake and cold Japanese beer combine for a smooth, easy-drinking experience.",
         nutritionHighlight: "A Sake Bomb contains approximately 250 calories (sake plus beer). The warm sake helps the beer go down smoothly.",

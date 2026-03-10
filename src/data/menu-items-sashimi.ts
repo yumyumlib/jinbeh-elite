@@ -153,7 +153,7 @@ export const sashimi: MenuItem[] = [
             { question: 'Is the Sashimi Deluxe good for sharing?', answer: 'Yes! The Sashimi Deluxe platter is one of our best sharing options. With 16 pieces across multiple fish types, two diners can enjoy a luxurious sashimi tasting experience together.' },
         ],
         proTip: 'Start with the lightest-colored fish (yellowtail), then progress to salmon, and save the richest (tuna) for last. this builds flavor intensity beautifully.',
-        heroImage: '/images/food/jinbeh_sushi_tray.jpg',
+        heroImage: '/images/photoshoot/sashimi-platter.jpg',
         jinbehStory: "The Sashimi Deluxe is our chef's showcase. Sixteen pieces of the day's finest fish, arranged on a presentation plate. Regulars order it to see what seasonal selections the chef has chosen.",
         origin: "The concept of an assorted sashimi platter (moriwase) is central to Japanese dining. The chef selects fish based on quality and seasonality.",
         nutritionHighlight: "Sixteen pieces of assorted sashimi deliver approximately 400 calories and 55g protein with zero carbohydrates.",

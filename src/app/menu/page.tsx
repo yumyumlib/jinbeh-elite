@@ -10,6 +10,21 @@ export const metadata: Metadata = {
     title: "Menu | Jinbeh Japanese Restaurant - Frisco & Lewisville",
     description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls. View menus for our Frisco and Lewisville locations.",
     keywords: ["jinbeh menu", "hibachi menu", "sushi menu frisco", "japanese restaurant menu lewisville"],
+    openGraph: {
+        title: "Menu | Jinbeh Japanese Restaurant",
+        description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls.",
+        url: "https://jinbeh.com/menu",
+        siteName: "Jinbeh Japanese Restaurant",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Menu | Jinbeh Japanese Restaurant",
+        description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls.",
+    },
+    alternates: {
+        canonical: "https://jinbeh.com/menu",
+    },
 };
 
 export default function MenuPage() {
