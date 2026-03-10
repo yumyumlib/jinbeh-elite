@@ -8,6 +8,7 @@ import { HeroSection, RevealSection, ShimmerCTA, ShinyBadge } from "@/components
 import { MagicCard } from "@/components/ui/magic-card";
 import { MiniTestimonials } from "@/components/MiniTestimonials";
 import { TestimonialCapture } from "@/components/TestimonialCapture";
+import OpenTableReservationForm from "@/components/OpenTableReservationForm";
 
 export const metadata: Metadata = {
   title: "Make a Reservation | Jinbeh Japanese Restaurant - Frisco & Lewisville",
@@ -191,39 +192,40 @@ export default function ReservationsPage() {
           </div>
         </HeroSection>
 
-        {/* How to Reserve */}
-        <section className="py-20 bg-warm-ivory">
+        {/* Inline Reservation Widgets */}
+        <section className="py-16 bg-warm-ivory">
           <div className="container mx-auto px-6">
             <RevealSection>
-              <div className="text-center mb-16 max-w-3xl mx-auto">
+              <div className="text-center mb-12 max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                  Two Easy Ways to Reserve
+                  Book Your Table
                 </h2>
-                <p className="text-lg text-charcoal/70 mb-3">
-                  Choose the reservation method that works best for you.
-                </p>
-                <p className="text-charcoal/60 text-sm">
-                  Walk-ins are always welcome! <span className="text-charcoal/80 font-medium">Pro tip:</span> Our sushi bar area is usually available for immediate seating — order anything from the full menu without the wait.
+                <p className="text-lg text-charcoal/70">
+                  Select your party size, date, and time — we&apos;ll take you straight to OpenTable to confirm.
                 </p>
               </div>
             </RevealSection>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {reservationMethods.map((method, idx) => (
-                <RevealSection key={method.title} delay={idx * 150}>
-                  <MagicCard
-                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none"
-                    gradientColor="rgba(201, 162, 39, 0.15)"
-                  >
-                    <div className="text-5xl mb-6">{method.icon}</div>
-                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-3">
-                      {method.title}
-                    </h3>
-                    <p className="text-charcoal/70 mb-6">{method.description}</p>
-                  </MagicCard>
-                </RevealSection>
-              ))}
+            <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <RevealSection delay={100}>
+                <OpenTableReservationForm
+                  restaurantId={frisco.reservation.rid}
+                  locationName="Jinbeh Frisco"
+                />
+              </RevealSection>
+              <RevealSection delay={200}>
+                <OpenTableReservationForm
+                  restaurantId={lewisville.reservation.rid}
+                  locationName="Jinbeh Lewisville"
+                />
+              </RevealSection>
             </div>
+
+            <RevealSection delay={300}>
+              <p className="text-center text-sm text-charcoal/60 mt-8">
+                Walk-ins are always welcome! <span className="font-medium text-charcoal/80">Pro tip:</span> Our sushi bar area is usually available for immediate seating.
+              </p>
+            </RevealSection>
           </div>
         </section>
 
