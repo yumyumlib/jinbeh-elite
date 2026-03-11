@@ -161,7 +161,7 @@ export default function AsianRestaurantMonthPage() {
                 <div>
                   <span className="text-accent-red font-medium text-sm tracking-wider uppercase">Our Story</span>
                   <h3 className="text-2xl md:text-3xl font-heading font-bold text-charcoal mt-2 mb-4">
-                    37 Years of Family Tradition
+                    38 Years of Family Tradition
                   </h3>
                   <p className="text-charcoal/70 mb-4">
                     Jinbeh Japanese Restaurant opened its doors in 1988 with a simple mission:

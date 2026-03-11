@@ -292,7 +292,7 @@ export default function ValentinesDayPage() {
                   <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-full flex items-center justify-center">
                     <span className="text-3xl">💝</span>
                   </div>
-                  <h4 className="font-semibold mb-2">37 Years of Romance</h4>
+                  <h4 className="font-semibold mb-2">38 Years of Romance</h4>
                   <p className="text-white/80 text-sm">
                     Family-owned since 1988, we&apos;ve hosted countless Valentine&apos;s celebrations.
                   </p>

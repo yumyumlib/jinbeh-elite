@@ -44,7 +44,7 @@ export default function ScrollReveal({
           }
         });
       },
-      { threshold: 0.1, rootMargin: "50px" }
+      { threshold: 0.05, rootMargin: "100px" }
     );
 
     if (ref.current) {

@@ -363,7 +363,7 @@ export default function AllergyFriendlyDiningPage() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="text-lg">🏆</span>
-                                <span>37 Years of Service</span>
+                                <span>38 Years of Service</span>
                             </div>
                         </div>
                     </div>

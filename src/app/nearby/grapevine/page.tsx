@@ -286,7 +286,7 @@ export default function GrapevineNearbyPage() {
               <div className="card">
                 <div className="text-4xl mb-4">🏆</div>
                 <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
-                  37 Years of Expertise
+                  38 Years of Expertise
                 </h3>
                 <p className="text-charcoal/70">
                   Family-owned since 1988, we've perfected the sushi craft. Nearly four decades of tradition and excellence in every roll.

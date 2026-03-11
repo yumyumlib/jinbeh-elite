@@ -266,7 +266,7 @@ export default function HomePage() {
                 TRUSTED BY FAMILIES ACROSS DFW
               </span>
               <h2 className="text-3xl md:text-5xl font-heading font-bold text-charcoal mb-4">
-                37 Years of Excellence
+                38 Years of Excellence
               </h2>
               <p className="text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto text-center">
                 Family-owned, community-loved, and serving unforgettable experiences since&nbsp;1988
@@ -279,7 +279,7 @@ export default function HomePage() {
                 <div className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-soft-gold/20 hover:border-soft-gold hover:scale-105">
                   <div className="text-center">
                     <div className="text-5xl md:text-7xl font-bold text-cedar-brown mb-3 group-hover:text-accent-red transition-colors">
-                      <NumberTicker value={37} suffix="+" delay={0.2} />
+                      <NumberTicker value={38} suffix="+" delay={0.2} />
                     </div>
                     <p className="text-base md:text-lg font-semibold text-charcoal/80 leading-snug">
                       Years Serving<br />DFW Families

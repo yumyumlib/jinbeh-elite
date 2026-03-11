@@ -139,7 +139,7 @@ const corporatePackages = [
 const corporateBenefits = [
   {
     icon: "M13 10V3L4 14h7v7l9-11h-7z",
-    title: "37 Years of Excellence",
+    title: "38 Years of Excellence",
     description: "Trusted by businesses across DFW since 1988 with a proven track record of successful corporate events.",
   },
   {
