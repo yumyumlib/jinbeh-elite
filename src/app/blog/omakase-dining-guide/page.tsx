@@ -55,7 +55,7 @@ export default function OmakaseDiningGuide() {
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
                         <Link href="/" className="hover:text-white">Home</Link>/<Link href="/blog" className="hover:text-white">Blog</Link>/<Link href="/menu" className="hover:text-white">Menu</Link>
                     </nav>
-                    <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-soft-gold mb-4">🍣 Omakase Dining</span>
+                    <span className="inline-block px-4 py-2 rounded-full text-sm text-charcoal bg-soft-gold mb-4">🍣 Omakase Dining</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Japanese Omakase: Unraveling the Unique Dining Art</h1>
                 </div>
             </section>

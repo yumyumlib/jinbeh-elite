@@ -100,7 +100,7 @@ export default function SushiLunchSpecials() {
                         <Link href="/blog" className="hover:text-white">Deals</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-charcoal bg-soft-gold mb-4">
                         💰 Deals & Specials
                     </span>
 

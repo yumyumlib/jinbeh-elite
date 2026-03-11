@@ -117,7 +117,7 @@ export default function SushiIdentificationChart() {
                         <Link href="/menu" className="hover:text-white">Menu</Link>
                     </nav>
 
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white bg-soft-gold mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-charcoal bg-soft-gold mb-4">
                         🍣 Cuisine Guide
                     </span>
 
