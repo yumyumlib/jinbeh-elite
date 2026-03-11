@@ -119,7 +119,7 @@ export default function HeroSection() {
                 </ScrollReveal>
 
                 <ScrollReveal delay={300} direction="none" noScale>
-                    <p className="text-xl md:text-2xl text-warm-ivory mb-10 font-medium max-w-2xl mx-auto"
+                    <p className="text-xl md:text-2xl text-warm-ivory mb-10 font-medium whitespace-nowrap mx-auto"
                         style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
                         {hooksData.homepage.hero_hooks[0].subtitle}
                     </p>

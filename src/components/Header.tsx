@@ -155,7 +155,7 @@ export default function Header({ location }: HeaderProps) {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden xl:flex items-center gap-0.5" ref={dropdownRef} aria-label="Main navigation">
+            <nav className="hidden xl:flex items-center gap-1" ref={dropdownRef} aria-label="Main navigation">
               {navItems.map((item) => (
                 <div
                   key={item.label}
@@ -163,9 +163,15 @@ export default function Header({ location }: HeaderProps) {
                   onMouseEnter={() => (item.dropdown || item.megaMenu) && handleMouseEnter(item.label)}
                   onMouseLeave={() => (item.dropdown || item.megaMenu) && handleMouseLeave()}
                 >
-                  {/* Visual separator before About */}
+                  {/* Visual separator before utility links */}
                   {item.label === "About" && (
-                    <span className="text-white/20 mx-2 select-none text-lg" aria-hidden="true">·</span>
+                    <span className="flex items-center mx-2" aria-hidden="true">
+                      <span className="w-px h-4 bg-white/25"></span>
+                    </span>
+                  )}
+                  {/* Dot separator between VIP Club and Gift Cards */}
+                  {(item.label === "VIP Club" || item.label === "Gift Cards") && (
+                    <span className="text-white/30 mx-0.5 select-none text-xs" aria-hidden="true">·</span>
                   )}
                   {item.megaMenu ? (
                     <>
@@ -215,7 +221,7 @@ export default function Header({ location }: HeaderProps) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="inline-block px-3 md:mx-1 py-2 rounded-lg text-white/80 hover:text-soft-gold transition-all duration-300 text-sm font-medium tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] hover:underline underline-offset-4 decoration-soft-gold/50"
+                      className="inline-block px-3 py-2 rounded-lg text-white/90 hover:text-soft-gold transition-all duration-300 text-sm font-medium tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)] hover:underline underline-offset-4 decoration-soft-gold/50"
                     >
                       {item.label}
                     </Link>
