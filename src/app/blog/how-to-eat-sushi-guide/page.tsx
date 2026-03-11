@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -253,7 +253,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">1</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-charcoal font-heading font-bold">1</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Prepare Your Station</h3>
@@ -269,7 +269,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">2</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-charcoal font-heading font-bold">2</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Start with Mild Flavors</h3>
@@ -285,7 +285,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">3</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-charcoal font-heading font-bold">3</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Dip (Lightly!) the Fish Side</h3>
@@ -301,7 +301,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">4</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-charcoal font-heading font-bold">4</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Eat in One Bite (If Possible)</h3>
@@ -316,7 +316,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">5</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-charcoal font-heading font-bold">5</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Cleanse Your Palate</h3>
@@ -331,7 +331,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-r from-soft-gold/20 to-soft-gold/10 rounded-2xl p-6 border-l-4 border-soft-gold">
                                         <div className="flex gap-4">
                                             <div className="flex-shrink-0">
-                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-white font-heading font-bold">6</span>
+                                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-soft-gold text-charcoal font-heading font-bold">6</span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Enjoy the Experience</h3>
@@ -816,7 +816,7 @@ export default function HowToEatSushi() {
                             </div>
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         {/* Sidebar */}

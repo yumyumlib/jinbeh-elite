@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Omakase: Unraveling the Unique Dining Art | Jinbeh",
@@ -102,28 +102,28 @@ export default function OmakaseDiningGuide() {
                                 <h3 className="font-bold text-charcoal mb-4">📋 Typical Omakase Course Structure</h3>
                                 <div className="space-y-3">
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">1</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">1</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Starter</h4>
                                             <p className="text-sm text-charcoal/70">Light appetizer like salad or sashimi to awaken the palate</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">2</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">2</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Main Courses</h4>
                                             <p className="text-sm text-charcoal/70">Series of sushi pieces, tempura, grilled fish, each served individually with attention to balance and presentation</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">3</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">3</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Palate Cleanser</h4>
                                             <p className="text-sm text-charcoal/70">Miso or clear soup to cleanse the palate and provide reflective interlude</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-white flex items-center justify-center text-sm font-bold">4</span>
+                                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">4</span>
                                         <div>
                                             <h4 className="font-bold text-charcoal">Dessert</h4>
                                             <p className="text-sm text-charcoal/70">Matcha creation or fruit-based dessert providing gentle, satisfying conclusion</p>
@@ -266,7 +266,7 @@ export default function OmakaseDiningGuide() {
                             </div>
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

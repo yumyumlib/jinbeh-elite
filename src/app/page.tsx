@@ -236,7 +236,7 @@ export default function HomePage() {
 
             <ScrollReveal delay={400}>
               <div className="text-center mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/menu" className="inline-flex items-center gap-2 bg-soft-gold text-white hover:bg-soft-gold/90 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                <Link href="/menu" className="inline-flex items-center gap-2 bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105">
                   View Full Menu
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                 </Link>

@@ -81,7 +81,7 @@ export default function HeroSection() {
             {/* Content with text shadows for better readability */}
             <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
                 {/* Selling Proof — Consolidated trust line */}
-                <ScrollReveal delay={0}>
+                <ScrollReveal delay={0} direction="none" noScale>
                     <div className="mb-6 flex flex-col items-center gap-3">
                         <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
                             <span className="inline-flex items-center gap-1.5 bg-accent-red/90 text-white px-4 py-1.5 rounded-full font-semibold tracking-wide shadow-lg">
@@ -103,7 +103,7 @@ export default function HeroSection() {
                     DFW&apos;s Premier Japanese, Hibachi, and Premium Sushi Experience in Frisco &amp; Lewisville
                 </h1>
 
-                <ScrollReveal delay={200}>
+                <ScrollReveal delay={200} direction="none" noScale>
                     <p className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white min-h-[7rem] md:min-h-[10rem] flex items-center justify-center"
                         role="heading"
                         aria-level={2}
@@ -118,7 +118,7 @@ export default function HeroSection() {
                     </p>
                 </ScrollReveal>
 
-                <ScrollReveal delay={300}>
+                <ScrollReveal delay={300} direction="none" noScale>
                     <p className="text-xl md:text-2xl text-warm-ivory mb-10 font-medium max-w-2xl mx-auto"
                         style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
                         {hooksData.homepage.hero_hooks[0].subtitle}
@@ -126,7 +126,7 @@ export default function HeroSection() {
                 </ScrollReveal>
 
                 {/* Location Selection Cards */}
-                <ScrollReveal delay={500}>
+                <ScrollReveal delay={500} direction="none" noScale>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-start mb-8">
                         {/* Frisco Location Card — compact */}
                         <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-6 py-5 w-[280px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
