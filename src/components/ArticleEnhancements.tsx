@@ -617,3 +617,66 @@ export function PillarCTA({ type, title, description, linkText, href, image }: P
         </aside>
     );
 }
+
+/* ─────────────────────────────────────────────
+   13. ArticleReveal — Scroll-reveal wrapper for article content
+   ───────────────────────────────────────────── */
+export function ArticleReveal({
+    children,
+    delay = 0,
+    direction = "up" as "up" | "down" | "left" | "right" | "none",
+    blur = false,
+}: {
+    children: React.ReactNode;
+    delay?: number;
+    direction?: "up" | "down" | "left" | "right" | "none";
+    blur?: boolean;
+}) {
+    const ref = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => setIsVisible(true), delay);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.1, rootMargin: "40px" }
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, [delay]);
+
+    const getTranslate = () => {
+        const d = 20;
+        switch (direction) {
+            case "up": return `translateY(${d}px)`;
+            case "down": return `translateY(-${d}px)`;
+            case "left": return `translateX(${d}px)`;
+            case "right": return `translateX(-${d}px)`;
+            default: return "none";
+        }
+    };
+
+    return (
+        <div
+            ref={ref}
+            style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? "none" : `${getTranslate()} scale(0.98)`,
+                filter: blur ? (isVisible ? "blur(0px)" : "blur(4px)") : undefined,
+                transition: [
+                    "opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1)",
+                    "transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1)",
+                    blur ? "filter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1)" : "",
+                ].filter(Boolean).join(", "),
+                willChange: isVisible ? "auto" : "opacity, transform",
+            }}
+        >
+            {children}
+        </div>
+    );
+}
+

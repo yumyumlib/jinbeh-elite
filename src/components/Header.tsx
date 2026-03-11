@@ -660,7 +660,7 @@ export default function Header({ location }: HeaderProps) {
           {/* Call Us portal dropdown */}
           {activeDropdown === "phone" && (
             <div
-              className="fixed w-56 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
+              className="fixed w-56 bg-white rounded-xl shadow-2xl border border-stone-200 pointer-events-auto dropdown-animate"
               style={{ top: dropdownPos.top, left: Math.max(16, dropdownPos.left - 120), zIndex: 99999 }}
               onMouseEnter={() => handleMouseEnter("phone")}
               onMouseLeave={handleMouseLeave}
@@ -692,7 +692,7 @@ export default function Header({ location }: HeaderProps) {
           {/* Reserve portal dropdown */}
           {activeDropdown === "reserve" && (
             <div
-              className="fixed w-60 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
+              className="fixed w-60 bg-white rounded-xl shadow-2xl border border-stone-200 pointer-events-auto dropdown-animate"
               style={{ top: dropdownPos.top, left: Math.max(16, dropdownPos.left - 120), zIndex: 99999 }}
               onMouseEnter={() => handleMouseEnter("reserve")}
               onMouseLeave={handleMouseLeave}

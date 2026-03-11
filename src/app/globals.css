@@ -65,12 +65,26 @@
   --shadow-lg: 0 10px 15px -3px rgba(31, 31, 31, 0.1), 0 4px 6px -2px rgba(31, 31, 31, 0.05);
   --shadow-warm: 0 10px 25px -5px rgba(122, 78, 45, 0.15), 0 4px 6px -2px rgba(122, 78, 45, 0.08);
 
-  /* Animation */
-  --duration-fast: 150ms;
-  --duration-normal: 200ms;
-  --duration-slow: 400ms;
-  --ease-entrance: ease-out;
-  --ease-transition: ease-in-out;
+  /* Animation — Apple-inspired easing curves */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --ease-accelerate: cubic-bezier(0.4, 0, 1, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Choreography durations */
+  --duration-micro: 120ms;
+  --duration-swift: 200ms;
+  --duration-moderate: 400ms;
+  --duration-scenic: 600ms;
+  --duration-grand: 900ms;
+
+  /* Legacy aliases (backward compat) */
+  --duration-fast: var(--duration-micro);
+  --duration-normal: var(--duration-swift);
+  --duration-slow: var(--duration-moderate);
+  --ease-entrance: var(--ease-decelerate);
+  --ease-transition: var(--ease-smooth);
 
   /* Background */
   --background: var(--warm-ivory);
@@ -227,7 +241,40 @@ footer .btn:hover {
   color: var(--accent-red) !important;
 }
 
-/* Mobile Typography */
+/* ======================================
+   Responsive Typography & Spacing
+   3 breakpoints: mobile (≤375), tablet (≤768), desktop (≥1440)
+   ====================================== */
+
+/* Mobile-first base (≤375px) */
+@media (max-width: 375px) {
+  :root {
+    --text-h1: 32px;
+    --text-h2: 26px;
+    --text-h3: 22px;
+    --text-h4: 20px;
+    --text-body: 15px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 48px;
+    --space-4xl: 64px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Ensure minimum readable contrast on small screens */
+  p,
+  li,
+  td {
+    line-height: 1.75;
+    color: var(--charcoal);
+  }
+}
+
+/* Tablet (≤768px) */
 @media (max-width: 768px) {
   :root {
     --text-h1: 40px;
@@ -235,6 +282,25 @@ footer .btn:hover {
     --text-h3: 28px;
     --text-h4: 24px;
     --text-body: 16px;
+  }
+
+  .section {
+    padding: var(--space-3xl) var(--space-lg);
+  }
+}
+
+/* Desktop large (≥1440px) */
+@media (min-width: 1440px) {
+  :root {
+    --text-h1: 72px;
+    --text-h2: 52px;
+    --text-h3: 40px;
+    --text-h4: 30px;
+    --text-body: 18px;
+  }
+
+  .container {
+    max-width: 1360px;
   }
 }
 
@@ -253,7 +319,7 @@ footer .btn:hover {
   border-radius: var(--radius-md);
   border: none;
   cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-transition);
+  transition: all var(--duration-swift) var(--ease-smooth);
   text-decoration: none;
 }
 
@@ -268,6 +334,11 @@ footer .btn:hover {
   box-shadow: var(--shadow-lg);
 }
 
+.btn-primary:active {
+  transform: translateY(0) scale(0.97);
+  transition-duration: var(--duration-micro);
+}
+
 .btn-secondary {
   background-color: var(--deep-indigo);
   color: var(--white);
@@ -277,6 +348,11 @@ footer .btn:hover {
   background-color: var(--deep-indigo-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary:active {
+  transform: translateY(0) scale(0.97);
+  transition-duration: var(--duration-micro);
 }
 
 .btn-outline {
@@ -396,12 +472,14 @@ footer .btn:hover {
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   box-shadow: var(--shadow-md);
-  transition: all var(--duration-normal) var(--ease-transition);
+  transition: transform var(--duration-moderate) var(--ease-spring),
+    box-shadow var(--duration-moderate) var(--ease-smooth);
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-warm);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.12),
+    0 8px 16px -8px rgba(122, 78, 45, 0.08);
 }
 
 /* ======================================
@@ -783,27 +861,28 @@ footer .btn:hover {
    ====================================== */
 
 .card-hover-lift {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--duration-moderate) var(--ease-spring),
+    box-shadow var(--duration-moderate) var(--ease-smooth);
 }
 
 .card-hover-lift:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px) scale(1.01);
   box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    0 20px 40px -12px rgba(0, 0, 0, 0.12),
+    0 8px 16px -8px rgba(0, 0, 0, 0.04);
 }
 
-/* Image Zoom on Hover */
+/* Image Zoom on Hover — Cinematic */
 .img-zoom {
   overflow: hidden;
 }
 
 .img-zoom img {
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.8s var(--ease-smooth);
 }
 
 .img-zoom:hover img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 /* ======================================
@@ -1706,4 +1785,203 @@ footer button:focus-visible {
 .content-lazy {
   content-visibility: auto;
   contain-intrinsic-size: auto 600px;
+}
+
+/* ======================================
+   FAQ Accordion Transitions
+   ====================================== */
+
+.faq-accordion {
+  transition: background-color var(--duration-swift) var(--ease-smooth),
+    box-shadow var(--duration-swift) var(--ease-smooth);
+}
+
+.faq-accordion:hover {
+  background-color: rgba(246, 241, 232, 0.6);
+}
+
+.faq-accordion[open] {
+  background-color: rgba(246, 241, 232, 0.5);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-accordion summary {
+  transition: color var(--duration-swift) var(--ease-smooth);
+}
+
+.faq-accordion[open] summary {
+  color: var(--accent-red);
+}
+
+/* ======================================
+   Article Prose Refinements
+   ====================================== */
+
+.article-prose h2 {
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(246, 241, 232, 0.8);
+}
+
+.article-prose h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.article-prose p {
+  color: rgba(31, 31, 31, 0.85);
+  line-height: 1.8;
+}
+
+.article-prose strong {
+  color: var(--charcoal);
+  font-weight: 700;
+}
+
+.article-prose a {
+  color: var(--accent-red);
+  text-decoration: underline;
+  text-decoration-color: rgba(193, 18, 31, 0.3);
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--duration-swift) var(--ease-smooth);
+}
+
+.article-prose a:hover {
+  text-decoration-color: var(--accent-red);
+}
+
+.article-prose blockquote {
+  border-left: 3px solid var(--soft-gold);
+  padding-left: 1.25em;
+  font-style: italic;
+  color: rgba(31, 31, 31, 0.7);
+}
+
+.article-prose ul,
+.article-prose ol {
+  padding-left: 1.5em;
+}
+
+.article-prose li {
+  margin-bottom: 0.5em;
+  color: rgba(31, 31, 31, 0.85);
+}
+
+/* Hero image entrance animation */
+.article-hero-image img {
+  transition: transform 0.8s var(--ease-smooth);
+}
+
+/* ======================================
+   Responsive Spacing: Section-level
+   ====================================== */
+
+@media (max-width: 375px) {
+
+  .prose,
+  .prose-lg {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .prose h2 {
+    font-size: 1.35rem;
+  }
+
+  .prose h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
+
+  .prose,
+  .prose-lg {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .prose,
+  .prose-lg {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+/* ======================================
+   Navigation Dropdown Entrance Animation
+   ====================================== */
+
+@keyframes dropdown-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.dropdown-animate {
+  animation: dropdown-enter 0.25s cubic-bezier(0, 0, 0.2, 1) forwards;
+  transform-origin: top center;
+}
+
+/* Mobile menu slide-in */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu-animate {
+  animation: slide-in-right 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+/* ======================================
+   Footer Staggered Reveal
+   ====================================== */
+
+@keyframes footer-col-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-col {
+  animation: footer-col-enter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+.footer-col:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.footer-col:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.footer-col:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.footer-col:nth-child(4) {
+  animation-delay: 240ms;
 }
