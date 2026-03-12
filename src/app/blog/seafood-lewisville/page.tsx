@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ const articleSchema = {
         "Your guide to the best seafood restaurants in Lewisville, Texas.",
     image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
     datePublished: "2026-01-19",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -84,6 +84,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes, most seafood restaurants in Lewisville accept reservations, especially for larger groups. Jinbeh welcomes reservations for all party sizes and can accommodate special requests.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Is Jinbeh family-friendly?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely! Families love Jinbeh. Kids enjoy the hibachi entertainment, and we have children's menu options. Our welcoming atmosphere and attentive staff make it easy for families with children of all ages.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What is the freshest seafood to order at a Japanese restaurant?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sashimi and nigiri sushi showcase the freshest fish since they are served raw with minimal preparation. At Jinbeh, our chefs select the best fish daily—ask about the day's specials for the freshest options.",
             },
         },
     ],

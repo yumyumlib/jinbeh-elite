@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ const articleSchema = {
         "Complete guide to finding and enjoying the best salmon sashimi with expert recommendations.",
     image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
     datePublished: "2026-01-18",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -62,6 +62,10 @@ const faqs = [
     {
         question: "How do I order salmon sashimi at Jinbeh?",
         answer: "Call us to reserve a sushi bar seat. Frisco: (214) 619-1200. Lewisville: (214) 488-2224. Our chefs will prepare your sashimi to order. You'll see them work their magic at the bar.",
+    },
+    {
+        question: "What is the difference between sashimi and sushi?",
+        answer: "Sashimi is thinly sliced raw fish served without rice, letting you experience the pure flavor of the fish. Sushi includes vinegared rice and may or may not contain raw fish. Both are staples of Japanese cuisine and available at Jinbeh.",
     },
 ];
 
@@ -359,7 +363,7 @@ export default function BestSalmonSashimi() {
                                 </div>
 
                                 <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

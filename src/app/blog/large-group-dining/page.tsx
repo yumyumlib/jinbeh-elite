@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -45,7 +45,7 @@ const articleSchema = {
         "Comprehensive guide to restaurants that excel at serving large groups with diverse menus and professional service.",
     image: "https://jinbeh.com/images/blog/9-C060324-6484.jpg",
     datePublished: "2026-01-25",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -86,6 +86,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Consider capacity, menu variety to accommodate dietary preferences, reservation policies, location convenience, parking availability, professional service capabilities, and space layout. Top venues like Jinbeh excel at all these factors.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can we customize menus for our group?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! Jinbeh works with groups on menus. Let us know dietary needs and preferences in advance, and we can create a streamlined ordering experience. We accommodate most requests and treat every guest like family.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What group size is too large for a restaurant?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Most restaurants can handle groups up to 20-30. Jinbeh regularly hosts 50+ guests across multiple hibachi tables. For very large events (100+), consider our catering services which bring Jinbeh's cuisine to your location.",
             },
         },
     ],

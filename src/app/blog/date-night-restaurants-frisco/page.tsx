@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Date Night Restaurants in Frisco TX | Best Romantic Dining",
@@ -36,7 +36,7 @@ const articleSchema = {
         "Your complete guide to the best romantic date night restaurants in Frisco, including Jinbeh's intimate hibachi experience.",
     image: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
     datePublished: "2026-01-29",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
     articleBody:
         "Discover the best date night restaurants in Frisco, TX. From intimate hibachi experiences to romantic ambiance, find the perfect spot for couples dining.",
@@ -84,6 +84,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes! We offer semi-private hibachi tables and full private dining options for special occasions. Contact us to arrange a customized date night experience with dedicated chef and service.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can I order sake pairings for a romantic dinner?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely! Our sake experts specialize in pairings. We offer sake flights, premium selections, and curated recommendations to complement your meal. Tell us about your preferences when you book, and we'll prepare the perfect selection.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What should I wear to a date night at Jinbeh?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Jinbeh has an upscale-casual dress code. Smart casual works well—think nice jeans or slacks with a blouse or button-down. For special occasions, feel free to dress up. The key is looking your best while being comfortable.",
             },
         },
     ],
@@ -501,7 +517,7 @@ export default function DateNightRestaurantsFrisco() {
                                 </div>
 
                                 <PillarCTA type="catering" />
-                                    <LocationCTA location="frisco" />
+                                <LocationCTA location="frisco" />
 
                                 {/* CTA */}
                                 <div className="mt-16 p-8 bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl text-center">

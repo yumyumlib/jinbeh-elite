@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ const articleSchema = {
     description: "Comprehensive guide to the best steakhouses and steak dining in Lewisville, Texas.",
     image: "https://jinbeh.com/images/blog/5-C060324-6397.jpg",
     datePublished: "2026-02-18",
-    dateModified: "2026-02-18",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -57,6 +57,10 @@ const faqs = [
     {
         question: "Can I celebrate a birthday at a steakhouse in Lewisville?",
         answer: "Absolutely! Jinbeh is the perfect choice for birthday celebrations in Lewisville. Our hibachi tables seat 8-10 guests, and the chef show adds excitement to any special occasion. We've been hosting birthday celebrations for over 37 years. Call (214) 488-2224 to reserve your table.",
+    },
+    {
+        question: "Do I need a reservation for a steakhouse in Lewisville?",
+        answer: "Reservations are recommended, especially on weekends and for groups. At Jinbeh Lewisville, walk-ins are welcome but reserving guarantees your preferred hibachi table and shorter wait times. Call (214) 488-2224.",
     },
 ];
 
@@ -360,7 +364,7 @@ export default function BestSteakhousesLewisville() {
                                 </div>
 
                                 <PillarCTA type="hub" />
-                                    <LocationCTA location="lewisville" />
+                                <LocationCTA location="lewisville" />
                             </div>
                         </article>
 

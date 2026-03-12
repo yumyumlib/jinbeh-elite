@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Restaurants with Private Rooms Near Me: Exclusive Dining Venues | Jinbeh",
@@ -36,7 +36,7 @@ const articleSchema = {
         "Comprehensive guide to restaurants with private dining rooms for exclusive events and intimate gatherings.",
     image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
     datePublished: "2026-01-18",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -77,6 +77,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Consider room capacity, menu variety, location convenience, reservation policies, customization options, AV capabilities, and professionalism of service. Top venues like Jinbeh provide flexible options and dedicated staff.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can you customize menus for private events?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely! Jinbeh creates customized menus for every private event. We handle dietary accommodations, preferences, and special requests with care. Contact us in advance to plan your ideal menu.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "How far in advance should I book private dining?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "We recommend booking 2-4 weeks in advance for optimal availability. For larger groups or during peak seasons (holidays, Valentine's Day, prom), booking a month or more ahead is ideal. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
             },
         },
     ],
