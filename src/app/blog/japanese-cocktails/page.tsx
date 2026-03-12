@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Cocktails: Art, Recipes & Mixology | Jinbeh Dallas",
@@ -19,12 +19,15 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Cocktails: Art, Recipes & Mixology", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Cocktails: Art, Recipes & Mixology", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/JinbehPunch.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What is Japanese mixology?", acceptedAnswer: { "@type": "Answer", text: "Japanese mixology blends science and art, focusing on harmony of flavors, precise measurements, and aesthetic presentation. It emphasizes the overall experience of the consumer." } },
             { "@type": "Question", name: "What are key spirits in Japanese cocktails?", acceptedAnswer: { "@type": "Answer", text: "Key Japanese spirits include sake (rice wine), shochu (distilled spirit), and Japanese whisky. Each offers unique flavor profiles from subtle to bold." } },
-            { "@type": "Question", name: "What is the hard shake technique?", acceptedAnswer: { "@type": "Answer", text: "The hard shake is a signature Japanese mixology technique popularized by Kazuo Uyeda, involving a three-step motion that creates a smoother texture and enhances flavors." } }
+            { "@type": "Question", name: "What is the hard shake technique?", acceptedAnswer: { "@type": "Answer", text: "The hard shake is a signature Japanese mixology technique popularized by Kazuo Uyeda, involving a three-step motion that creates a smoother texture and enhances flavors." } },
+            { "@type": "Question", name: "Where can I try authentic Japanese cocktails in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Visit Jinbeh in Frisco and Lewisville for expertly crafted Japanese cocktails. Their mixologists use premium spirits and traditional Japanese techniques. Happy hour offers special pricing on sake cocktails and Japanese whisky pours." } },
+            { "@type": "Question", name: "What makes Japanese cocktails different from Western cocktails?", acceptedAnswer: { "@type": "Answer", text: "Japanese cocktails emphasize delicate balance, intricate presentation, and quality ingredients. Each element from glassware to garnish is thoughtfully chosen to enhance the overall drinking experience." } },
+            { "@type": "Question", name: "Can I make Japanese cocktails at home?", acceptedAnswer: { "@type": "Answer", text: "Yes. With premium sake, shochu, and Japanese whisky, you can create authentic cocktails at home. Focus on precision measurements, balance of flavors, and elegant presentation." } }
         ]
     }
 ];
@@ -169,6 +172,32 @@ export default function JapaneseCocktails() {
                                 </div>
                             </div>
 
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 Japanese Spirits Comparison</h2>
+                            <p className="text-charcoal/80 mb-4">Understanding the base spirits will help you choose the perfect cocktail:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Spirit</th><th className="p-3 text-left">ABV</th><th className="p-3 text-left">Flavor Profile</th><th className="p-3 text-left">Best In</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🍶 Sake</td><td className="p-3">15–20%</td><td className="p-3">Floral, fruity, umami</td><td className="p-3">Sake martini, sangria</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🌾 Shochu</td><td className="p-3">25–35%</td><td className="p-3">Earthy, clean, versatile</td><td className="p-3">Highballs, chūhai</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">🥃 Japanese Whisky</td><td className="p-3">40–45%</td><td className="p-3">Smooth, oaky, complex</td><td className="p-3">Highball, old fashioned</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🌿 Umeshu</td><td className="p-3">10–15%</td><td className="p-3">Sweet, tart, plum</td><td className="p-3">On the rocks, soda</td></tr>
+                                    <tr><td className="p-3 font-semibold">🍊 Yuzu Liqueur</td><td className="p-3">15–20%</td><td className="p-3">Bright, citrusy, aromatic</td><td className="p-3">Yuzu sour, spritz</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Cocktail-Food Pairing Guide</h2>
+                            <p className="text-charcoal/80 mb-4">What to drink with your Japanese meal for the best experience:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Dish</th><th className="p-3 text-left">Recommended Cocktail</th><th className="p-3 text-left">Why It Works</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Sushi &amp; Sashimi</td><td className="p-3">Sake Martini</td><td className="p-3">Clean flavors complement raw fish</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Hibachi Steak</td><td className="p-3">Japanese Whisky Highball</td><td className="p-3">Smoky notes match grilled meat</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Tempura</td><td className="p-3">Yuzu Sour</td><td className="p-3">Citrus cuts through fried richness</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Ramen / Udon</td><td className="p-3">Shochu Highball</td><td className="p-3">Light, crisp, refreshing contrast</td></tr>
+                                    <tr><td className="p-3 font-semibold">Desserts</td><td className="p-3">Umeshu on the Rocks</td><td className="p-3">Sweet plum complements sweets</td></tr>
+                                </tbody>
+                            </table>
+
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-4">
                                 <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
@@ -238,7 +267,7 @@ export default function JapaneseCocktails() {
                                 </ProTip>
 
                                 <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

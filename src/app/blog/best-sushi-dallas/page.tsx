@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems | Jinbeh",
@@ -21,10 +21,17 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Best Sushi Dallas TX", datePublished: "2026-01-22", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Best Sushi Dallas TX: Top Restaurants & Hidden Gems", datePublished: "2026-01-22", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/catalog/FB-LEW-Sashimi-Platter-Salmon-Tuna-Yellowtail.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What is the best sushi in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Top-rated spots include Jinbeh (Frisco/Lewisville), Uchi, Nobu, and Tei-An. For value plus quality, Jinbeh offers fresh sushi with 37+ years of tradition." } }
+            { "@type": "Question", name: "What is the best sushi in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Top-rated spots include Jinbeh (Frisco/Lewisville), Uchi, Nobu, and Tei-An. For value plus quality, Jinbeh offers fresh sushi with 38+ years of tradition and a unique hibachi-sushi combo experience." } },
+            { "@type": "Question", name: "Is the sushi at Jinbeh fresh?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh receives fish deliveries multiple times per week. Sushi chefs slice each piece to order, and you can watch them work at the sushi bar." } },
+            { "@type": "Question", name: "What sushi do you recommend for beginners?", acceptedAnswer: { "@type": "Answer", text: "Start with a California Roll or Shrimp Tempura Roll—they are mild and delicious. Salmon rolls are also crowd-pleasers. Jinbeh servers are happy to guide you through the menu." } },
+            { "@type": "Question", name: "How much does sushi cost in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Sushi prices in Dallas range from $8-15 for basic rolls to $50-150+ for omakase experiences. At Jinbeh, specialty rolls run $12-18 and lunch combos start around $12-15, making it one of the best value spots in DFW." } },
+            { "@type": "Question", name: "Does Jinbeh offer vegetarian sushi?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers several vegetarian rolls including cucumber roll, avocado roll, and vegetable tempura roll. Let your server know about dietary needs." } },
+            { "@type": "Question", name: "Can I order sushi for takeout or delivery?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh sushi travels well for takeout. Order online or call directly. For the freshest experience, dining at the sushi bar is recommended." } },
+            { "@type": "Question", name: "Is sushi safe during pregnancy?", acceptedAnswer: { "@type": "Answer", text: "The FDA advises pregnant women to avoid raw fish. At Jinbeh, cooked sushi options like shrimp tempura rolls, California rolls (imitation crab), and vegetable rolls are safe alternatives. Ask your server for fully-cooked options." } },
+            { "@type": "Question", name: "What is the difference between sushi and sashimi?", acceptedAnswer: { "@type": "Answer", text: "Sushi includes vinegared rice with various toppings or fillings, while sashimi is thinly sliced raw fish served without rice. Both are available at Jinbeh." } }
         ]
     }
 ];
@@ -89,18 +96,84 @@ export default function BestSushiDallas() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Why North Dallas Loves Jinbeh</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
-                                {[{ e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Kids love the hibachi show; parents love the sushi" }, {e: "💰", t: "Great Value", d: "Fresh quality without downtown prices" }, {e: "🎂", t: "Celebrations", d: "Hibachi + sushi = perfect for parties" }, {e: "⏱️", t: "Convenient", d: "Easy parking, quick from 121/DNT" }].map(x => (
-                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                    <span className="text-3xl block mb-2">{x.e}</span>
-                                    <h3 className="font-bold">{x.t}</h3>
-                                    <p className="text-sm text-charcoal/70">{x.d}</p>
-                                </div>
+                                {[{ e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Kids love the hibachi show; parents love the sushi" }, { e: "💰", t: "Great Value", d: "Fresh quality without downtown prices" }, { e: "🎂", t: "Celebrations", d: "Hibachi + sushi = perfect for parties" }, { e: "⏱️", t: "Convenient", d: "Easy parking, quick from 121/DNT" }].map(x => (
+                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                        <span className="text-3xl block mb-2">{x.e}</span>
+                                        <h3 className="font-bold">{x.t}</h3>
+                                        <p className="text-sm text-charcoal/70">{x.d}</p>
+                                    </div>
                                 ))}
                             </div>
 
                             <ProTip variant="insider">
                                 <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during happy hour (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                             </ProTip>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💲 How Much Does Sushi Cost in Dallas?</h2>
+                            <p className="text-charcoal/80 mb-4">Sushi prices across DFW vary widely depending on the restaurant type, location, and quality of fish. Here&apos;s a realistic breakdown of what you can expect to spend:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Sushi Style</th><th className="p-3 text-left">Price Range</th><th className="p-3 text-left">Where to Find</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Conveyor Belt / Fast Casual</td><td className="p-3">$12–20/person</td><td className="p-3">Kura Revolving Sushi</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Traditional Sit-Down</td><td className="p-3">$25–45/person</td><td className="p-3">Jinbeh, Yutaka, Zen Sushi</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Upscale / Date Night</td><td className="p-3">$50–80/person</td><td className="p-3">Tei-An, Uchi</td></tr>
+                                    <tr><td className="p-3 font-semibold">Omakase / Chef's Table</td><td className="p-3">$100–200+/person</td><td className="p-3">Nobu, Uchi, Tatsu</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔍 How to Choose the Right Sushi Restaurant</h2>
+                            <p className="text-charcoal/80 mb-4">Not all sushi is created equal. Here&apos;s what to look for when choosing where to eat:</p>
+                            <div className="grid md:grid-cols-2 gap-4 my-6">
+                                <div className="bg-warm-ivory rounded-xl p-5">
+                                    <h3 className="font-bold text-charcoal mb-2">🐟 Freshness Indicators</h3>
+                                    <ul className="text-sm text-charcoal/70 space-y-1">
+                                        <li>• Fish has sheen, no dull or brown spots</li>
+                                        <li>• No strong "fishy" smell — fresh fish smells like the ocean</li>
+                                        <li>• Rice is warm and well-seasoned, not cold or crunchy</li>
+                                        <li>• Chef slices to order (not pre-made in a case)</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-warm-ivory rounded-xl p-5">
+                                    <h3 className="font-bold text-charcoal mb-2">⭐ Quality Signals</h3>
+                                    <ul className="text-sm text-charcoal/70 space-y-1">
+                                        <li>• Consistent 4+ star reviews on Google</li>
+                                        <li>• Visible sushi bar where you can watch prep</li>
+                                        <li>• Menu changes seasonally (fresh fish varies)</li>
+                                        <li>• Staff can explain sourcing and preparation</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-warm-ivory rounded-xl p-5">
+                                    <h3 className="font-bold text-charcoal mb-2">🚩 Red Flags to Avoid</h3>
+                                    <ul className="text-sm text-charcoal/70 space-y-1">
+                                        <li>• Buffet sushi sitting out under heat lamps</li>
+                                        <li>• Heavy sauces masking fish flavor</li>
+                                        <li>• Menu with 200+ items (quality over quantity)</li>
+                                        <li>• No visible sushi preparation area</li>
+                                    </ul>
+                                </div>
+                                <div className="bg-warm-ivory rounded-xl p-5">
+                                    <h3 className="font-bold text-charcoal mb-2">💡 Smart Ordering Tips</h3>
+                                    <ul className="text-sm text-charcoal/70 space-y-1">
+                                        <li>• Ask the chef what&apos;s freshest today</li>
+                                        <li>• Start with nigiri to test fish quality</li>
+                                        <li>• Order smaller portions of more variety</li>
+                                        <li>• Try the lunch special for best value</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍱 Most Popular Sushi Rolls in Dallas</h2>
+                            <p className="text-charcoal/80 mb-4">Based on Google reviews and local food blogs, these are the most-ordered sushi rolls across DFW restaurants:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Roll Name</th><th className="p-3 text-left">What&apos;s Inside</th><th className="p-3 text-left">Best For</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🌋 Volcano Roll</td><td className="p-3">Crab, avocado, baked spicy mayo topping</td><td className="p-3">Groups, sharing</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🐉 Dragon Roll</td><td className="p-3">Shrimp tempura, eel, avocado on top</td><td className="p-3">Instagram-worthy</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">🌈 Rainbow Roll</td><td className="p-3">California roll topped with assorted sashimi</td><td className="p-3">First-timers</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🔥 Spicy Tuna Roll</td><td className="p-3">Raw tuna, spicy mayo, cucumber</td><td className="p-3">Spice lovers</td></tr>
+                                    <tr><td className="p-3 font-semibold">⭐ Dallas Roll (Jinbeh)</td><td className="p-3">Jinbeh's signature creation</td><td className="p-3">Jinbeh regulars</td></tr>
+                                </tbody>
+                            </table>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>
                             <div className="space-y-4">
@@ -153,10 +226,40 @@ export default function BestSushiDallas() {
                                         <p>Absolutely! Our sushi travels well for takeout. Order online or call us directly. For the freshest experience, we recommend dining in at our sushi bar—it's worth the trip.</p>
                                     </div>
                                 </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        How much does sushi cost in Dallas?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Sushi prices in Dallas range from $8-15 for basic rolls at casual spots to $100-200+ per person for omakase experiences. At Jinbeh, specialty rolls run $12-18 and lunch combos start around $12-15, offering excellent value for fresh, chef-prepared sushi.</p>
+                                    </div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        Is sushi safe during pregnancy?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>The FDA advises pregnant women to avoid raw fish. At Jinbeh, cooked sushi options like shrimp tempura rolls, California rolls (which use imitation crab), and vegetable rolls are safe alternatives. Ask your server for fully-cooked options — there are plenty of delicious choices.</p>
+                                    </div>
+                                </details>
+
+                                <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+                                        What is the difference between sushi and sashimi?
+                                        <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-charcoal/80">
+                                        <p>Sushi includes vinegared rice with various toppings or fillings (rolls, nigiri), while sashimi is thinly sliced raw fish served without rice. Both are available at Jinbeh. For a deep dive, check out our <Link href="/blog/sashimi-vs-sushi" className="text-accent-red hover:underline">sashimi vs sushi guide</Link>.</p>
+                                    </div>
+                                </details>
                             </div>
 
                             <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

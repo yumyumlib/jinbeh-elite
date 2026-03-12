@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Steak Near Me: Top 10 Steakhouses to Try | Jinbeh",
@@ -21,11 +21,15 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Best Steak Near Me: Top 10 Steakhouses", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Best Steak Near Me: Top 10 Steakhouses to Try", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/food/HibachiComboNYStripAndColossalShrimp.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "Where can I find the best steak near me?", acceptedAnswer: { "@type": "Answer", text: "Top steakhouses include The Prime Cut for classic dining, Jinbeh for hibachi-style Japanese steaks, The Rustic Grill for casual excellence, and Truluck's for upscale steak and seafood combinations." } },
-            { "@type": "Question", name: "What's special about Jinbeh's steak experience?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh combines traditional Japanese steakhouse experience with hibachi cooking, where chefs prepare your steak to perfection while providing entertainment and cultural authenticity in a lively atmosphere." } }
+            { "@type": "Question", name: "What's special about Jinbeh's steak experience?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh combines traditional Japanese steakhouse experience with hibachi cooking, where chefs prepare your steak to perfection while providing entertainment and cultural authenticity in a lively atmosphere." } },
+            { "@type": "Question", name: "What's the best cut of steak?", acceptedAnswer: { "@type": "Answer", text: "The best cut depends on preference. Ribeye offers marbling and flavor. Filet Mignon is tender and lean. New York Strip balances tenderness with beef flavor. Porterhouse offers the best of both worlds." } },
+            { "@type": "Question", name: "Why is Jinbeh's hibachi steak special?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh hibachi chefs cook your steak to perfection right before your eyes. You get entertainment, precision cooking, and authentic Japanese technique. It's dinner and a show combined with exceptional beef quality." } },
+            { "@type": "Question", name: "Can I make reservations for hibachi steak?", acceptedAnswer: { "@type": "Answer", text: "Yes, reservations are recommended for hibachi, especially weekends. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to book your table." } },
+            { "@type": "Question", name: "Is hibachi steak good for groups?", acceptedAnswer: { "@type": "Answer", text: "Absolutely! Hibachi tables seat 8-10 guests sharing the experience together. Jinbeh chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners." } }
         ]
     }
 ];
@@ -125,15 +129,15 @@ export default function BestSteakNearMe() {
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
                                     { e: "🔥", t: "Expert Cooking", d: "Hibachi chefs master the art of steak preparation" },
-                                {e: "🎭", t: "Entertainment", d: "Watch your steak cook with spectacular showmanship" },
-                                {e: "🌟", t: "Premium Quality", d: "Highest quality beef cooked to perfection" },
-                                {e: "👨‍👩‍👧‍👦", t: "Great for Groups", d: "Perfect for families, celebrations, and gatherings" }
+                                    { e: "🎭", t: "Entertainment", d: "Watch your steak cook with spectacular showmanship" },
+                                    { e: "🌟", t: "Premium Quality", d: "Highest quality beef cooked to perfection" },
+                                    { e: "👨‍👩‍👧‍👦", t: "Great for Groups", d: "Perfect for families, celebrations, and gatherings" }
                                 ].map(x => (
-                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                    <span className="text-3xl block mb-2">{x.e}</span>
-                                    <h3 className="font-bold text-charcoal">{x.t}</h3>
-                                    <p className="text-sm text-charcoal/70">{x.d}</p>
-                                </div>
+                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                        <span className="text-3xl block mb-2">{x.e}</span>
+                                        <h3 className="font-bold text-charcoal">{x.t}</h3>
+                                        <p className="text-sm text-charcoal/70">{x.d}</p>
+                                    </div>
                                 ))}
                             </div>
 
@@ -147,6 +151,32 @@ export default function BestSteakNearMe() {
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Check Reviews and Ratings</h3>
                             <p className="text-charcoal/80 mb-6">Before making a reservation, read reviews and ratings from other diners. This provides valuable insights into the quality of food, service, and overall experience. Pay attention to patterns in feedback and how management responds to reviews, as this indicates their commitment to customer satisfaction.</p>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥩 Steak Cuts Comparison Guide</h2>
+                            <p className="text-charcoal/80 mb-4">Not sure which cut to order? Here&apos;s a quick guide to the most popular steak cuts and what makes each one special:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Cut</th><th className="p-3 text-left">Flavor</th><th className="p-3 text-left">Tenderness</th><th className="p-3 text-left">Best Cooked</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Filet Mignon</td><td className="p-3">Mild, buttery</td><td className="p-3">⭐⭐⭐⭐⭐</td><td className="p-3">Medium-rare</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Ribeye</td><td className="p-3">Rich, beefy</td><td className="p-3">⭐⭐⭐⭐</td><td className="p-3">Medium-rare to medium</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">NY Strip</td><td className="p-3">Bold, robust</td><td className="p-3">⭐⭐⭐</td><td className="p-3">Medium-rare</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Porterhouse</td><td className="p-3">Two-in-one: strip + tenderloin</td><td className="p-3">⭐⭐⭐⭐</td><td className="p-3">Medium-rare</td></tr>
+                                    <tr><td className="p-3 font-semibold">T-Bone</td><td className="p-3">Beefy, classic</td><td className="p-3">⭐⭐⭐</td><td className="p-3">Medium-rare to medium</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌡️ Steak Doneness Guide</h2>
+                            <p className="text-charcoal/80 mb-4">One of the most common questions at any steakhouse. Here&apos;s what each doneness level means:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Doneness</th><th className="p-3 text-left">Internal Temp</th><th className="p-3 text-left">Description</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Rare</td><td className="p-3">120–125°F</td><td className="p-3">Cool red center, very soft</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Medium-Rare ⭐</td><td className="p-3">130–135°F</td><td className="p-3">Warm red center, most chef-recommended</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Medium</td><td className="p-3">135–145°F</td><td className="p-3">Warm pink center, firm but juicy</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Medium-Well</td><td className="p-3">145–155°F</td><td className="p-3">Slight pink, mostly firm</td></tr>
+                                    <tr><td className="p-3 font-semibold">Well-Done</td><td className="p-3">155°F+</td><td className="p-3">No pink, fully cooked through</td></tr>
+                                </tbody>
+                            </table>
 
                             <ProTip variant="insider">
                                 <strong>Steak lover's secret:</strong> Jinbeh's hibachi filet mignon is a crowd favorite — reviewers consistently say it's "cooked to perfection" and the chef show makes it "dinner and entertainment combined." For the best experience, order the Filet and Lobster Tail combo and pair it with a Japanese whisky. Weekend reservations fill fast! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
@@ -182,7 +212,7 @@ export default function BestSteakNearMe() {
                             </details>
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>
@@ -191,13 +221,13 @@ export default function BestSteakNearMe() {
                                 <div className="space-y-3">
                                     {[
                                         { t: " Best Hibachi Dallas", s: "/blog/best-hibachi-dallas", i: "/images/blog/8-C060324-6462.jpg" },
-                                    {t: "Best Asian Food Dallas", s: "/blog/best-asian-food-dallas", i: "/images/blog/7-C060324-6447.jpg" },
-                                    {t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
+                                        { t: "Best Asian Food Dallas", s: "/blog/best-asian-food-dallas", i: "/images/blog/7-C060324-6447.jpg" },
+                                        { t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
                                     ].map(r => (
-                                    <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                        <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
-                                        <span className="text-sm group-hover:text-accent-red">{r.t}</span>
-                                    </Link>
+                                        <Link key={r.s} href={r.s} className="flex gap-3 group">
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
+                                            <span className="text-sm group-hover:text-accent-red">{r.t}</span>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
