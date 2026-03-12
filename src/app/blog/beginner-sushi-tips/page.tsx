@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, MenuItemCard, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Beginner Sushi Tips: Easy Homemade Sushi Guide | Jinbeh",
@@ -53,6 +53,10 @@ const faqs = [
     answer:
       "The most common issue is not spreading enough rice or overfilling. Wet your fingers, spread evenly, don't overload your fillings, and roll gently. Practice makes perfect. Your first rolls won't be perfect, and that's okay.",
   },
+  {
+    question: "How long does it take to learn to make sushi at home?",
+    answer: "You can make basic rolls on your first try! Expect your first few attempts to be imperfect—that's normal. With practice, most home cooks feel confident making California and veggie rolls within 3-5 sessions. Mastering rice consistency takes a bit longer. Professional sushi chefs train for years, but delicious homemade sushi is absolutely achievable for beginners.",
+  },
 ];
 
 
@@ -71,9 +75,9 @@ export default function BeginnerSushiTipsPage() {
         readTime="10 min read"
         faqs={faqs}
       >
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Beginner Sushi Tips: Easy Homemade Sushi Guide
-      </h1>
+        <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+          Beginner Sushi Tips: Easy Homemade Sushi Guide
+        </h1>
 
         <h2>Welcome to the World of Sushi Making</h2>
 
@@ -338,7 +342,7 @@ export default function BeginnerSushiTipsPage() {
         </p>
 
         <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+        <LocationCTA location="both" />
       </ArticleLayout>
     </>
   );

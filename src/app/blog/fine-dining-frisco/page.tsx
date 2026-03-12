@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ const articleSchema = {
         "Comprehensive guide to fine dining restaurants in Frisco, Texas, featuring Japanese and international cuisine.",
     image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
     datePublished: "2026-01-22",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -64,6 +64,10 @@ const faqs = [
         question: "Is Jinbeh appropriate for special occasions?",
         answer: "Absolutely! Birthdays, anniversaries, proposals—we've hosted them all. Hibachi is interactive and memorable. Call ahead, mention the occasion, and we'll make it special.",
     },
+    {
+        question: "What should I wear to fine dining in Frisco?",
+        answer: "Most upscale Frisco restaurants recommend smart-casual to business casual attire. At Jinbeh, we welcome you as you are—whether that's date night dressy or comfortable casual after a day of shopping at Stonebriar. The experience is more important than the outfit!",
+    },
 ];
 
 const faqSchema = {
@@ -71,10 +75,10 @@ const faqSchema = {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
         "@type": " Question ",
-name: faq.question,
-    acceptedAnswer: {
+        name: faq.question,
+        acceptedAnswer: {
             " @type": " Answer ",
-    text: faq.answer,
+            text: faq.answer,
         },
     })),
 };
@@ -84,11 +88,11 @@ const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
     " itemListElement ": [
-    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
-    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
-    { " @type ": " ListItem ", " position ": 4, " name ": " Fine Dining in Frisco TX: Best Upscale Restaurants " },
-],
+        { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+        { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
+        { " @type ": " ListItem ", " position ": 4, " name ": " Fine Dining in Frisco TX: Best Upscale Restaurants " },
+    ],
 };
 
 export default function FineDiningFrisco() {
@@ -341,7 +345,7 @@ export default function FineDiningFrisco() {
                                 </div>
 
                                 <PillarCTA type="reservations" />
-                                    <LocationCTA location="frisco" />
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

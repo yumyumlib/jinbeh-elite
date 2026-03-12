@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -34,7 +34,10 @@ const faqs = [
     { question: "How much does omakase cost?", answer: "Prices vary by restaurant. Casual omakase: $50-150 per person. High-end: $200+ per person. Premium options with rare fish cost more." },
     { question: "What's included in omakase?", answer: "Usually 10-20 pieces of sushi. The chef selects seasonal fish, starting with lighter flavors and progressing to richer ones. Each piece is prepared fresh and eaten immediately." },
     { question: "Is omakase better than regular sushi?", answer: "Different experience, not better. Omakase showcases the chef's expertise and freshest daily ingredients. Regular sushi lets you choose. Many enjoy both for different reasons." },
-    { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your experience." }
+    { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your experience." },
+    { question: "What should I say to the sushi chef during omakase?", answer: "Simple acknowledgments like 'arigatou' (thank you) or 'oishii' (delicious) show appreciation. Most chefs are happy to explain each piece and share recommendations. Don't be afraid to ask questions!" },
+    { question: "Can you have dietary restrictions with omakase?", answer: "Yes. Always inform the chef of allergies, vegetarian preferences, or fish types to avoid before the meal begins. Professional chefs will accommodate your needs while maintaining the omakase experience." },
+    { question: "What is the difference between omakase and kaiseki?", answer: "Omakase focuses specifically on sushi—the chef selects and serves pieces one by one at the sushi bar. Kaiseki is a multi-course Japanese meal featuring various cooking techniques like grilling, simmering, and steaming. Both showcase seasonal ingredients and chef expertise, but they are distinct dining formats." },
 ];
 
 const articleSchema = {
@@ -45,7 +48,7 @@ const articleSchema = {
         "Comprehensive guide to omakase dining, including meaning, history, etiquette, and what to expect.",
     image: "https://jinbeh.com/images/blog/15-C060324-6663.jpg",
     datePublished: "2026-01-29",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -102,6 +105,14 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes. Always inform the chef of allergies, vegetarian preferences, or fish types to avoid before the meal begins. Professional chefs will accommodate your needs while maintaining the omakase experience. Call ahead to discuss options with the restaurant.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What is the difference between omakase and kaiseki?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Omakase focuses specifically on sushi—the chef selects and serves pieces one by one at the sushi bar. Kaiseki is a multi-course Japanese meal featuring various cooking techniques like grilling, simmering, and steaming. Both showcase seasonal ingredients and chef expertise, but they are distinct dining formats.",
             },
         },
     ],

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
@@ -34,7 +34,7 @@ const articleSchema = {
     description: "Comprehensive guide to the best hibachi and teppanyaki dining in Dallas-Fort Worth.",
     image: "https://jinbeh.com/images/blog/1-C060324-6328.jpg",
     datePublished: "2026-01-15",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -71,6 +71,10 @@ const faqs = [
         question: "What time should we arrive for hibachi dinner?",
         answer: "We recommend arriving 10-15 minutes before your reservation time. This gives you time to check in, be seated, review the menu, and settle in before the chef arrives. Dinner service typically lasts 45-60 minutes per table, so plan accordingly for special occasions.",
     },
+    {
+        question: "What should I wear to a hibachi restaurant?",
+        answer: "Hibachi dining is smart-casual. Most guests wear jeans and a nice top or casual dress. Keep in mind that cooking aromas may linger on your clothes—some regular guests avoid wearing delicate fabrics. There's no strict dress code at Jinbeh, just come comfortable and ready for a fun experience!",
+    },
 ];
 
 const faqSchema = {
@@ -78,10 +82,10 @@ const faqSchema = {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
         "@type": " Question ",
-name: faq.question,
-    acceptedAnswer: {
+        name: faq.question,
+        acceptedAnswer: {
             " @type": " Answer ",
-    text: faq.answer,
+            text: faq.answer,
         },
     })),
 };
@@ -91,11 +95,11 @@ const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
     " itemListElement ": [
-    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
-    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 3, " name ": " Menu ", " item ": " https://jinbeh.com/menu" },
-    { " @type ": " ListItem ", " position ": 4, " name ": " Best Hibachi Dallas TX: Top Japanese Steakhouses " },
-],
+        { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+        { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 3, " name ": " Menu ", " item ": " https://jinbeh.com/menu" },
+        { " @type ": " ListItem ", " position ": 4, " name ": " Best Hibachi Dallas TX: Top Japanese Steakhouses " },
+    ],
 };
 
 export default function BestHibachiDallas() {
@@ -252,24 +256,24 @@ export default function BestHibachiDallas() {
                                     </table>
                                 </div>
 
-                                
+
                                 <div className="my-12">
                                     <div className="grid grid-cols-3 gap-4">
                                         <BlurFade delay={0.1}>
-                                        <div className="relative aspect-square rounded-2xl overflow-hidden group">
-                                            <Image src="/images/blog/3-C060324-6364.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-2xl overflow-hidden group">
+                                                <Image src="/images/blog/3-C060324-6364.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.2}>
-                                        <div className="relative aspect-square rounded-2xl overflow-hidden group">
-                                            <Image src="/images/blog/4-C060324-6380.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-2xl overflow-hidden group">
+                                                <Image src="/images/blog/4-C060324-6380.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.3}>
-                                        <div className="relative aspect-square rounded-2xl overflow-hidden group">
-                                            <Image src="/images/blog/5-C060324-6397.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-2xl overflow-hidden group">
+                                                <Image src="/images/blog/5-C060324-6397.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            </div>
+                                        </BlurFade>
                                     </div>
                                 </div>
 
@@ -328,7 +332,7 @@ export default function BestHibachiDallas() {
                                 </div>
 
                                 <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

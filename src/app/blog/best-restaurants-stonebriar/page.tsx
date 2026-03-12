@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ const articleSchema = {
     description: "Comprehensive guide to the best restaurants near Stonebriar Centre in Frisco, Texas.",
     image: "https://jinbeh.com/images/blog/1-C060324-6328.jpg",
     datePublished: "2026-02-18",
-    dateModified: "2026-02-18",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -58,6 +58,10 @@ const faqs = [
         question: "Are there affordable restaurants near Stonebriar Mall?",
         answer: "Absolutely! Jinbeh offers excellent value with lunch specials starting at competitive prices. Our hibachi lunch includes soup, salad, grilled vegetables, fried rice, and your choice of protein. Check our lunch specials page for current pricing—it's fine dining quality at casual dining prices.",
     },
+    {
+        question: "Are there happy hour deals near Stonebriar Mall?",
+        answer: "Yes! Several restaurants near Stonebriar offer happy hour specials. Jinbeh's happy hour features discounted sake, beer, and appetizers—perfect for unwinding after a shopping trip. Check our happy hour page for current deals and hours.",
+    },
 ];
 
 const faqSchema = {
@@ -65,10 +69,10 @@ const faqSchema = {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
         "@type": " Question ",
-name: faq.question,
-    acceptedAnswer: {
+        name: faq.question,
+        acceptedAnswer: {
             " @type": " Answer ",
-    text: faq.answer,
+            text: faq.answer,
         },
     })),
 };
@@ -78,11 +82,11 @@ const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
     " itemListElement ": [
-    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
-    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
-    { " @type ": " ListItem ", " position ": 4, " name ": " Best Restaurants Near Stonebriar Mall Frisco TX " },
-],
+        { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+        { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
+        { " @type ": " ListItem ", " position ": 4, " name ": " Best Restaurants Near Stonebriar Mall Frisco TX " },
+    ],
 };
 
 export default function BestRestaurantsStonebriar() {
@@ -374,7 +378,7 @@ export default function BestRestaurantsStonebriar() {
                                 </div>
 
                                 <PillarCTA type="hub" />
-                                    <LocationCTA location="frisco" />
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

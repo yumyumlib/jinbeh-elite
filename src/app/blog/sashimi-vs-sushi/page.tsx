@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, ComparisonTable , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, ComparisonTable, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sashimi vs Sushi: Key Differences Explained | Jinbeh",
@@ -25,6 +25,9 @@ const faqs = [
     { question: "What fish is best for sashimi?", answer: "Premium sashimi-grade fish is essential. The best choices include fresh tuna (maguro), which offers a buttery texture and rich flavor; salmon (sake), known for its beautiful color and delicate taste; and hamachi (yellowtail), prized for its tender quality. At Jinbeh, we source only sashimi-grade fish from trusted suppliers, ensuring each slice meets strict freshness and quality standards." },
     { question: "Can you get sashimi at Jinbeh?", answer: "Absolutely! We serve premium fresh sashimi at both our Frisco and Lewisville locations. Our sashimi platters feature carefully selected sashimi-grade fish sliced expertly by our chefs. We offer individual selections or beautiful sashimi platters perfect for sharing. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to inquire about our daily sashimi selection." },
     { question: "How do I eat sashimi?", answer: "Dip lightly in soy sauce mixed with wasabi. Eat in one bite. Experience the fish flavor fully. Our bartenders show you how if you're new to sashimi." },
+    { question: "Can I get sashimi if I'm afraid of raw fish?", answer: "Absolutely! Many customers prefer cooked options. Try our cooked shrimp sashimi, grilled fish varieties, or our extensive sushi selection which offers many cooked and vegetarian rolls." },
+    { question: "How much sashimi should I order?", answer: "A typical sashimi appetizer serving is 6 pieces. For a light meal, order 12-18 pieces. Most customers enjoy combining sashimi with sushi rolls for a well-rounded experience." },
+    { question: "What sake pairs best with sashimi?", answer: "Light, crisp sake like Junmai Ginjo pairs beautifully with delicate sashimi. The clean flavor complements the fish without overpowering it. At Jinbeh, ask our bartenders for sake flight recommendations to find your perfect pairing." },
 ];
 
 const schemas = [
@@ -34,7 +37,7 @@ const schemas = [
         headline: "Sashimi vs Sushi: Key Differences Explained",
         description: "Complete guide to understanding the differences between sashimi and sushi",
         datePublished: "2026-01-29",
-        dateModified: "2026-01-29",
+        dateModified: "2026-03-11",
         author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }
     },
     {
@@ -437,7 +440,7 @@ export default function SashimiVsSushi() {
                             </div>
 
                             <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         {/* Sidebar */}
