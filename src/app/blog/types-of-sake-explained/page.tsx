@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh",
@@ -83,6 +83,14 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Aged sake (Koshu) isn't better—it's different. Fresh sake is bright and delicate. Aged Koshu develops complex, sherry-like flavors and amber color. Choose based on preference: fresh sake for sushi and light dishes, aged sake for rich foods and special occasions.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Do I need to refrigerate sake?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "It depends on the type. Premium sakes (Ginjo, Daiginjo) and unpasteurized sake (Nama) should always be refrigerated. Standard Junmai and Honjozo can be stored at room temperature in a cool, dark place. Once opened, all sake should be refrigerated and consumed within 1-2 weeks for the best flavor.",
             },
         },
     ],
@@ -950,7 +958,7 @@ export default function TypesOfSakeExplained() {
                                         </ProTip>
 
                                         <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+                                        <LocationCTA location="both" />
                                     </div>
 
                                     <p className="text-charcoal/80 text-sm mt-12 pt-8 border-t border-warm-ivory-dark">

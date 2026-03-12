@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Sushi Lunch Specials Near You Today | Jinbeh",
@@ -47,6 +47,7 @@ const faqs = [
     { question: "When are lunch specials available?", answer: "Weekdays 11 AM to 2-3 PM. Some extended weekend hours. Arrive early for best selection. Call us to confirm hours." },
     { question: "Can I get lunch specials for takeout?", answer: "Absolutely! Dine in or takeout. Call ahead to make sure we have your favorites ready. Frisco (214) 619-1200 or Lewisville (214) 488-2224." },
     { question: "What's included in Jinbeh lunch deals?", answer: "Fresh and flavorful sushi rolls, nigiri, appetizers. Great value. Our chefs prepare everything to order. Every lunch is special." },
+    { question: "Are lunch specials available on weekends?", answer: "It depends on the restaurant! At Jinbeh, our lunch pricing and specials may vary between weekdays and weekends. Call ahead to confirm today's offerings — Frisco (214) 619-1200 or Lewisville (214) 488-2224. Weekday lunches typically offer the best selection and value." },
 ];
 
 const faqSchema = {

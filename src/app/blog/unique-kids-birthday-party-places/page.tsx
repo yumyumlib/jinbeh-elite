@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Unique Kids Birthday Party Places DFW | Jinbeh",
@@ -26,10 +26,11 @@ const faqs = [
     { question: "How far in advance should I book a kids' birthday party?", answer: "We recommend booking at least 2-3 weeks in advance, especially for weekends. This ensures your preferred date and time are available and allows us to prepare special birthday surprises." },
     { question: "Can Jinbeh accommodate food allergies for kids' parties?", answer: "Absolutely! We take allergies seriously. When booking, inform us of any dietary restrictions or food allergies, and our team will prepare safe, delicious options for the birthday child and guests." },
     { question: "What are the benefits of celebrating at a hibachi restaurant vs. home?", answer: "Hibachi restaurants offer entertainment, skilled chefs, no cleanup, customizable menus, and a festive atmosphere. The interactive chef show creates lasting memories while parents relax and enjoy the celebration." },
+    { question: "Can I bring a birthday cake to Jinbeh?", answer: "Yes! You're welcome to bring your own birthday cake or cupcakes. We'll provide plates and utensils, and can even help serve it at the right moment. Some families pair it with our fried ice cream for a double dessert experience. Just let us know when booking so we're prepared!" },
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Unique Kids Birthday Party Places", datePublished: "2026-01-25", author: { "@type": "Organization", name: "Jinbeh" }, image: "https://jinbeh.com/images/celebrations/jinbeh_group.jpg" },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Unique Kids Birthday Party Places", datePublished: "2026-01-25", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" }, image: "https://jinbeh.com/images/celebrations/jinbeh_group.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(faq => ({
             "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer }
@@ -119,7 +120,7 @@ export default function KidsBirthdayPlaces() {
                                 </ProTip>
 
                                 <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

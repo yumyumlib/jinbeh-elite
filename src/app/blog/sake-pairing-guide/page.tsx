@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -61,6 +61,10 @@ const faqs = [
         question: "Can I bring sake to Jinbeh, or should I order from your list?",
         answer: "We have a thoughtfully curated sake selection specifically chosen to pair with our menu. We recommend exploring our offerings with the guidance of our knowledgeable staff. However, regarding outside bottles, please contact us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about our corkage policy. Either way, we're committed to enhancing your Japanese dining experience with the perfect beverage!"
     },
+    {
+        question: "What non-alcoholic drinks pair well with Japanese food?",
+        answer: "If you prefer not to drink sake, try Japanese green tea (hot or iced) — it cleanses the palate beautifully between bites of sushi and sashimi. Ramune soda is fun and refreshing with fried appetizers. Calpico is a mildly sweet, creamy Japanese drink that pairs with spicy rolls. At Jinbeh, we also have a full selection of soft drinks, juices, and mocktails so every guest at the table finds something they love."
+    },
 ];
 
 const articleSchema = {
@@ -79,10 +83,10 @@ const faqSchema = {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
         "@type": " Question ",
-name: faq.question,
-    acceptedAnswer: {
+        name: faq.question,
+        acceptedAnswer: {
             " @type": " Answer ",
-    text: faq.answer,
+            text: faq.answer,
         },
     })),
 };
@@ -92,10 +96,10 @@ const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
     " itemListElement ": [
-    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
-    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 3, " name ": " Bar & Beverages ", " item ": " https://jinbeh.com/bar" },
-    { " @type ": " ListItem ", " position ": 4, " name ": " Sake Pairing Guide: Perfect Matches for Every Dish " },
+        { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+        { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 3, " name ": " Bar & Beverages ", " item ": " https://jinbeh.com/bar" },
+        { " @type ": " ListItem ", " position ": 4, " name ": " Sake Pairing Guide: Perfect Matches for Every Dish " },
     ],
 };
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -61,6 +61,10 @@ const faqs = [
     {
         question: "How many sushi rolls do I need per person?",
         answer: "Plan for 8-12 pieces of sushi per person as a main course, or 4-6 pieces per person as an appetizer alongside other food. A standard sushi roll makes 6-8 pieces. For a party of 10, order 12-15 rolls as a main course. Our team can help you calculate the right amount for your event.",
+    },
+    {
+        question: "Can I get a vegetarian or vegan sushi platter?",
+        answer: "Yes! We offer vegetarian platter options with avocado rolls, cucumber rolls, sweet potato tempura rolls, and veggie rolls. For vegan guests, we can build platters without cream cheese or mayo-based sauces. Let us know your dietary needs when ordering and we'll customize a beautiful plant-based platter that looks just as impressive as our traditional ones.",
     },
 ];
 

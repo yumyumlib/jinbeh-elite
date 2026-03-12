@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -37,7 +37,8 @@ const faqs = [
     { question: "What's the ordering deadline for Thanksgiving catering?", answer: "Order 7-10 days ahead for best options. Late orders may work depending on bookings. Call us directly for availability." },
     { question: "Are you open on Thanksgiving Day?", answer: "Jinbeh is usually open Thanksgiving for dine-in service. Hours vary by location. Call (214) 619-1200 Frisco or (214) 488-2224 Lewisville to confirm." },
     { question: "Why choose Japanese for Thanksgiving?", answer: "It's a celebration! Japanese cuisine offers variety and interactive dining like hibachi. Lighter options and a fresh take on the holiday. Perfect for families!" },
-    { question: "Can you accommodate dietary restrictions?", answer: "Absolutely! We specialize in gluten-free, vegetarian, vegan, and allergy-friendly options. Tell us when ordering and we'll create the perfect menu." }
+    { question: "Can you accommodate dietary restrictions?", answer: "Absolutely! We specialize in gluten-free, vegetarian, vegan, and allergy-friendly options. Tell us when ordering and we'll create the perfect menu." },
+    { question: "Is there a minimum group size for Thanksgiving catering?", answer: "Our smallest catering package serves 8 people, but we can also put together takeout platters for smaller groups. For dine-in on Thanksgiving Day, any party size is welcome — from couples to large families. Call us to discuss the best option for your group size and budget." }
 ];
 
 const articleSchema = {
@@ -702,7 +703,7 @@ export default function ThanksgivingDiningGuide() {
                                         </ProTip>
 
                                         <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                                        <LocationCTA location="both" />
                                     </div>
                                 </div>
                             </div>

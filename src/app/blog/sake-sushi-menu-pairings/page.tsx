@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
@@ -104,6 +104,14 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Both! Cold sake highlights crispness and is ideal with sushi. Warm sake brings out deeper flavors. Premium sake should be served cold to appreciate the quality.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Does Jinbeh offer sake flights for beginners?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! Sake flights are the best way to discover your preferences. Our flight lets you sample 3 different sake varieties side by side so you can compare flavors. Our bartenders walk you through each one and explain what makes it unique. It's the most popular way for first-timers to explore sake at Jinbeh.",
             },
         },
     ],
@@ -351,28 +359,28 @@ export default function SakeSushiMenuPairings() {
                                         </div>
                                     </div>
 
-                                    
+
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.2}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi and sake" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi and sake" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.3}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake selection" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake selection" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.4}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Premium sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Premium sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
