@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, CompareCards, IngredientSpotlight, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, CompareCards, IngredientSpotlight, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ const articleSchema = {
         "Comprehensive guide to the best sushi restaurants in Frisco, Texas.",
     image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
     datePublished: "2026-01-16",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -63,6 +63,10 @@ const faqs = [
         question: "Where is Jinbeh located in Frisco?",
         answer: "We're at 2693 Preston Road in Frisco, near Stonebriar Centre. Plenty of parking right outside. Just minutes from Legacy West and the Dallas North Tollway. Call (214) 619-1200 to confirm hours.",
     },
+    {
+        question: "Does Frisco have all-you-can-eat sushi?",
+        answer: "Some restaurants in the Frisco area offer AYCE sushi. Jinbeh focuses on quality over quantity—our sushi is made to order with fresh fish. For the best sushi experience in Frisco, sit at our sushi bar and watch our chefs craft each piece by hand.",
+    },
 ];
 
 const faqSchema = {
@@ -70,10 +74,10 @@ const faqSchema = {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
         "@type": " Question ",
-name: faq.question,
-    acceptedAnswer: {
+        name: faq.question,
+        acceptedAnswer: {
             " @type": " Answer ",
-    text: faq.answer,
+            text: faq.answer,
         },
     })),
 };
@@ -83,11 +87,11 @@ const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
     " itemListElement ": [
-    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
-    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 3, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 4, " name ": " Best Sushi Frisco TX: Top Spots Near Stonebriar " },
-],
+        { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+        { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 3, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 4, " name ": " Best Sushi Frisco TX: Top Spots Near Stonebriar " },
+    ],
 };
 
 const itemListSchema = {
@@ -97,7 +101,7 @@ const itemListSchema = {
     " description ": "Ranked list of the best sushi restaurants near Stonebriar Centre in Frisco, Texas.",
     " numberOfItems ": 5,
     " itemListElement ": [
-    {
+        {
             " @type ": " ListItem ",
             " position ": 1,
             " item ": {
@@ -109,27 +113,27 @@ const itemListSchema = {
                 " url ": " https://jinbeh.com/frisco",
             },
         },
-    {
+        {
             " @type ": " ListItem ",
             " position ": 2,
             " item ": { " @type ": " Restaurant ", " name ": " Umiya ", " servesCuisine ": " Japanese Fusion ", " priceRange ": " $$ " },
         },
-    {
+        {
             " @type ": " ListItem ",
             " position ": 3,
             " item ": { " @type ": " Restaurant ", " name ": " Sakura Sushi ", " servesCuisine ": " Japanese ", " priceRange ": " $$ " },
         },
-    {
+        {
             " @type ": " ListItem ",
             " position ": 4,
             " item ": { " @type ": " Restaurant ", " name ": " Shoji ", " servesCuisine ": " Japanese ", " priceRange ": " $$ " },
         },
-    {
+        {
             " @type ": " ListItem ",
             " position ": 5,
             " item ": { " @type ": " Restaurant ", " name ": " Edoko ", " servesCuisine ": " Japanese ", " priceRange ": " $$$ " },
         },
-],
+    ],
 };
 
 export default function BestSushiFrisco() {
@@ -452,7 +456,7 @@ export default function BestSushiFrisco() {
                                 </div>
 
                                 <PillarCTA type="catering" />
-                                    <LocationCTA location="frisco" />
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

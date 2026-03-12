@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ const articleSchema = {
     description: "Complete guide to Frisco, Texas attractions, family activities, and the best places to eat.",
     image: "https://jinbeh.com/images/blog/15-C060324-6663.jpg",
     datePublished: "2026-02-18",
-    dateModified: "2026-02-18",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -57,6 +57,10 @@ const faqs = [
     {
         question: "What family activities are there in Frisco?",
         answer: "Families love the National Videogame Museum, KidZania (interactive kids' city), Frisco Discovery Center, Sci-Tech Discovery Center, and the many parks and trails. For family dining, Jinbeh's hibachi experience is a huge hit—kids love watching the chef's fire tricks and flying shrimp!",
+    },
+    {
+        question: "Are there free things to do in Frisco TX?",
+        answer: "Yes! Frisco Commons Park offers beautiful walking trails and playgrounds for free. You can also visit The Star district to see the Cowboys campus, or explore Frisco Square for public art and events. Many community festivals and farmers markets are free year-round.",
     },
 ];
 

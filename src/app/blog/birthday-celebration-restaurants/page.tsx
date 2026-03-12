@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
@@ -35,7 +35,7 @@ const articleSchema = {
     description: "Discover the best birthday celebration restaurants with unique experiences and special birthday perks.",
     image: "https://jinbeh.com/images/blog/25-C060324-6856.jpg",
     datePublished: "2026-01-30",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -81,6 +81,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "The best atmosphere depends on your preference. Hibachi restaurants like Jinbeh offer lively, interactive entertainment. Upscale restaurants provide intimate settings. Choose based on whether you prefer entertainment and group interaction or a quiet, romantic dinner.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "How many people can we have at Jinbeh for a birthday?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "We welcome small groups and large parties. Hibachi tables seat 8-10. Call ahead for larger groups and we'll arrange the perfect setup across multiple tables.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What age is appropriate for a hibachi birthday party?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Hibachi is fun for all ages! Kids love the fire tricks and flying shrimp. Most children ages 5 and up enjoy the show. For younger kids, our regular dining room is also a great option. Adults love hibachi birthdays too—it's dinner and entertainment in one.",
             },
         },
     ],
@@ -318,28 +334,28 @@ export default function BirthdayCelebrationRestaurants() {
                                         </div>
                                     </div>
 
-                                    
+
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Birthday celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Birthday celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.2}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi birthday" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi birthday" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.3}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/13-C060324-6582.jpg" alt="Birthday dessert" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/13-C060324-6582.jpg" alt="Birthday dessert" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.4}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday dinner" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday dinner" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                     </div>
                                 </div>
 

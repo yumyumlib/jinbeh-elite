@@ -35,7 +35,7 @@ const articleSchema = {
     description: "Comprehensive guide to sushi eating etiquette, techniques, and insider tips for proper sushi enjoyment.",
     image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
     datePublished: "2026-01-29",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -44,7 +44,8 @@ const faqs = [
     { question: "Which side should I dip in soy sauce?", answer: "Dip the fish side, not the rice. Light dip only. Too much soy overpowers the chef's seasoned rice." },
     { question: "How do I use wasabi and ginger?", answer: "Pickled ginger cleans your palate between bites. Use wasabi on the fish or mix it lightly. Don't pile it on like ketchup!" },
     { question: "What are common sushi etiquette mistakes?", answer: "Don't use spoons for soy sauce. Never rub chopsticks together. Don't stick chopsticks in rice upright. Never waste food." },
-    { question: "Should I eat sushi in one bite?", answer: "Yes, when possible! One bite lets all flavors blend. This is the traditional way. It's perfect for your palate." }
+    { question: "Should I eat sushi in one bite?", answer: "Yes, when possible! One bite lets all flavors blend. This is the traditional way. It's perfect for your palate." },
+    { question: "What should I order if it's my first time eating sushi?", answer: "Start with cooked rolls like California Roll or Shrimp Tempura Roll. They're milder and a great introduction. Once comfortable, try salmon nigiri—it's buttery and approachable. At Jinbeh, our staff loves helping first-timers find their perfect roll." },
 ];
 
 const faqSchema = {

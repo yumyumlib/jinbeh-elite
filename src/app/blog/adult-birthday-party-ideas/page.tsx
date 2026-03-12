@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
@@ -35,7 +35,7 @@ const articleSchema = {
     description: "Discover creative adult birthday party themes and activities to elevate your celebration.",
     image: "https://jinbeh.com/images/blog/26-C060324-6874.jpg",
     datePublished: "2026-01-30",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -59,6 +59,10 @@ const faqs = [
     {
         question: "How far in advance should I book a hibachi party?",
         answer: "We recommend reservations, especially for weekends and groups. Hibachi tables sometimes combine parties. Call ahead and we'll save your spot at the table.",
+    },
+    {
+        question: "How much should I budget for an adult birthday dinner?",
+        answer: "At Jinbeh, hibachi dinners range from $20-$40 per person depending on protein choice. Add drinks and appetizers for a full experience. For milestone birthdays, consider our private dining options. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville to discuss group packages.",
     },
 ];
 
@@ -331,28 +335,28 @@ export default function AdultBirthdayPartyIdeas() {
                                         </div>
                                     </div>
 
-                                    
+
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi party" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi party" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.2}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Party celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Party celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.3}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/13-C060324-6582.jpg" alt="Themed party" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/13-C060324-6582.jpg" alt="Themed party" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.4}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday gathering" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday gathering" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                     </div>
                                 </div>
 

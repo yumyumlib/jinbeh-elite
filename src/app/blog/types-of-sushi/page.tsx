@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
@@ -34,7 +34,7 @@ const articleSchema = {
     description: "Comprehensive guide to different types of sushi, their origins, and how to enjoy them.",
     image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
     datePublished: "2026-01-18",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -78,6 +78,10 @@ const faqs = [
     {
         question: "What's the difference between sushi and sashimi platters?",
         answer: "A sushi platter typically includes nigiri and rolls (rice-based dishes), while a sashimi platter features only sliced raw fish. Sushi platters are more filling and offer variety in preparation styles. Sashimi platters are perfect for fish lovers who want to focus on the quality and flavor of premium fish without rice. Many guests order both to explore different aspects of Japanese cuisine!"
+    },
+    {
+        question: "Is it safe to eat sushi during pregnancy?",
+        answer: "Pregnant women are generally advised to avoid raw fish due to potential bacteria. However, cooked sushi options like shrimp tempura rolls, California rolls (imitation crab), and fully cooked eel (unagi) nigiri are considered safe. At Jinbeh, we have many cooked roll options—ask our staff for recommendations."
     },
 ];
 
@@ -366,27 +370,27 @@ export default function TypesOfSushi() {
                                     </div>
                                 </div>
 
-                                
+
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                     <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                        <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                    </div>
+                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                        </div>
                                     </BlurFade>
                                     <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                        <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi chef" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                    </div>
+                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi chef" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                        </div>
                                     </BlurFade>
                                     <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                        <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi roll" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                    </div>
+                                            <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi roll" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                        </div>
                                     </BlurFade>
                                     <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                        <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                    </div>
+                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                        </div>
                                     </BlurFade>
                                 </div>
 
@@ -464,7 +468,7 @@ export default function TypesOfSushi() {
                                 </div>
 
                                 <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 
