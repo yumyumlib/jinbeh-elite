@@ -320,7 +320,7 @@ export default function SushiRollsFriscoPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/food/alaskan-roll.jpg"
+                    src="/images/menu-photos/Dragon_Roll.jpg"
                     alt="Dragon Roll — eel and cucumber topped with avocado and eel sauce"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"

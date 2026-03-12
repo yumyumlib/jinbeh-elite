@@ -92,7 +92,7 @@ export const sushiRolls: MenuItem[] = [
             { question: 'Why is it called a Dragon Roll?', answer: 'The avocado slices are fanned across the top to resemble dragon scales, and when presented on the plate, the roll looks like a green dragon. Combined with the eel sauce drizzle, it\'s one of the most visually striking rolls we make.' },
         ],
         proTip: 'The Dragon Roll pairs exceptionally well with hot sake. the warm sake enhances the sweet, smoky eel flavors beautifully.',
-        heroImage: '/images/menu-photos/Golden_Tiger_Roll.jpg',
+        heroImage: '/images/menu-photos/Dragon_Roll.jpg',
         jinbehStory: "The Dragon Roll is our most visually dramatic sushi creation. Guests photograph this roll more than any other item on the menu. The combination of smoky eel, creamy avocado, and sweet tare sauce makes it a best-seller.",
         origin: "Eel (unagi) is a prized delicacy in Japan, traditionally prepared kabayaki style: filleted, steamed, then broiled with a sweet soy glaze. The Dragon Roll transforms this classic preparation into a show-stopping sushi presentation.",
         nutritionHighlight: "Unagi eel provides roughly 200 calories and 20g protein per serving. It is one of the few natural food sources of vitamin A and vitamin E.",
