@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations | Jinbeh",
@@ -34,7 +34,7 @@ const articleSchema = {
         "Your guide to the best bachelorette restaurants and venues in Dallas, Texas.",
     image: "https://jinbeh.com/images/blog/3-C060324-6364.jpg",
     datePublished: "2026-01-20",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: {
         "@type": "Organization",
         name: "Jinbeh Japanese Restaurant",
@@ -75,6 +75,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes, most restaurants including Jinbeh can accommodate dietary restrictions when notified in advance. Communicate any vegan, vegetarian, gluten-free, or allergy needs when making your reservation.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What should I wear to a bachelorette dinner?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Dress code depends on the venue. For hibachi restaurants like Jinbeh, smart casual is perfect. Upscale venues may require cocktail attire. Coordinate with your group for a fun unified look.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Does Jinbeh offer entertainment for bachelorette parties?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! Jinbeh's hibachi dining is entertainment and dinner rolled into one. Skilled chefs perform cooking shows with fire tricks, knife skills, and humor right at your table. It's dinner and a show in one.",
             },
         },
     ],

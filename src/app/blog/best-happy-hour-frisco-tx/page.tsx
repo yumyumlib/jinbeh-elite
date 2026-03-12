@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Best Happy Hour Frisco TX: Top Spots to Visit | Jinbeh",
@@ -32,7 +32,7 @@ const articleSchema = {
     description: "Guide to the best happy hour deals and spots in Frisco, Texas.",
     image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
     datePublished: "2026-01-19",
-    dateModified: "2026-01-29",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -54,6 +54,30 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes! Our happy hour includes discounted sushi rolls, $1 edamame, half-price sake bombs, and special pricing on select appetizers and drinks. It's the perfect way to enjoy our fresh sushi at great prices.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Do I need a reservation for happy hour?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Reservations aren't required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins are welcome and bar seating is first-come, first-served.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Is Jinbeh's happy hour family-friendly?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely! Kids are welcome during happy hour. We have a children's menu, and parents can enjoy discounted drinks while kids enjoy sushi and appetizers.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can I pair happy hour with dinner?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, enjoy happy hour specials before or with dinner. Our fresh sushi and sake pair beautifully with any hibachi or sushi dinner selection.",
             },
         },
     ],
@@ -336,7 +360,7 @@ export default function BestHappyHourFrisco() {
                                 <RelatedArticles currentSlug="best-happy-hour-frisco-tx" />
 
                                 <PillarCTA type="reservations" />
-                                    <LocationCTA location="frisco" />
+                                <LocationCTA location="frisco" />
                             </div>
                         </article>
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, ComparisonTable , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, ComparisonTable, PillarCTA } from "@/components/ArticleEnhancements";
 import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ const articleSchema = {
     description: "Comprehensive sushi identification chart with names, types, ingredients, and tasting notes.",
     image: "https://jinbeh.com/images/blog/13-C060324-6582.jpg",
     datePublished: "2026-01-30",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -73,6 +73,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Beginners often prefer cooked rolls like California Rolls, tempura shrimp rolls, or Philadelphia Rolls. These offer milder flavors and no raw fish.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "How many pieces are in a typical sushi order?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "A standard maki roll is cut into 6-8 pieces. Nigiri is ordered by the piece (usually 2 per order). At Jinbeh, a full sushi dinner typically includes 12-20 pieces depending on the selection.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Is sushi healthy?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sushi can be very healthy. Fish provides omega-3 fatty acids and lean protein, rice offers energy, and nori contains vitamins and minerals. Choose sashimi or nigiri for the healthiest options.",
             },
         },
     ],

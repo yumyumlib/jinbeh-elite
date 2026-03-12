@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { BlurFade } from "@/components/ui/blur-fade";
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ const articleSchema = {
     description: "Comprehensive guide to understanding sake taste, flavor profiles, and tasting techniques.",
     image: "https://jinbeh.com/images/beverages/JinbehPunch.jpg",
     datePublished: "2026-01-30",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -73,6 +73,22 @@ const faqSchema = {
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Common flavor notes include melon, apple, pear, citrus, floral, herbs, rice, and nuts. More complex sakes may have earthy, spicy, or umami characteristics.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Where can I taste sake flights in Dallas?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Jinbeh offers sake flights at both Frisco and Lewisville locations. Our staff explains each pour to help you discover your preferences. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Should sake be served hot or cold?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "It depends on the type. Premium sake (Ginjo, Daiginjo) is best served chilled at 45-50°F to preserve delicate flavors. Fuller-bodied Junmai can be served warm at 100-120°F. Nigori is best cold.",
             },
         },
     ],
@@ -300,28 +316,28 @@ export default function SakeTasteProfile() {
                                         </div>
                                     </div>
 
-                                    
+
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake tasting" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake tasting" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.2}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sake glass" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Sake glass" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.3}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake varieties" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake varieties" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                         <BlurFade delay={0.4}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Japanese beverage" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                        </div>
-                                    </BlurFade>
+                                            <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Japanese beverage" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            </div>
+                                        </BlurFade>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

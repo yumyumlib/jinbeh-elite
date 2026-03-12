@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ const articleSchema = {
     description: "Comprehensive guide to finding and choosing the best sushi cooking classes in your area.",
     image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
     datePublished: "2026-01-30",
-    dateModified: "2026-01-30",
+    dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -47,7 +47,7 @@ const faqSchema = {
             name: "What can I learn in a beginner sushi cooking class?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Beginner classes teach fundamentals: preparing sushi rice, selecting and slicing fish, rolling techniques for maki and hand rolls, food safety. You'll learn proper knife skills and authentic Japanese techniques. Welcome to the table!",
+                text: "Beginner classes teach fundamentals: preparing sushi rice, selecting and slicing fish, rolling techniques for maki and hand rolls, food safety. You'll learn proper knife skills and authentic Japanese techniques.",
             },
         },
         {
@@ -55,7 +55,7 @@ const faqSchema = {
             name: "Are sushi cooking classes good for beginners?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Absolutely! Classes are designed for beginners. Instructors teach step-by-step with hands-on practice. No prior experience needed. It's a celebration of culinary learning!",
+                text: "Absolutely! Classes are designed for beginners. Instructors teach step-by-step with hands-on practice. No prior experience needed.",
             },
         },
         {
@@ -63,7 +63,7 @@ const faqSchema = {
             name: "What are the benefits of taking sushi cooking classes?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Develop culinary skills, gain cultural insight into Japanese cuisine, meet new people, learn about nutrition, and impress friends and family with homemade sushi. Fresh and flavorful results every time!",
+                text: "Develop culinary skills, gain cultural insight into Japanese cuisine, meet new people, learn about nutrition, and impress friends and family with homemade sushi.",
             },
         },
         {
@@ -71,7 +71,23 @@ const faqSchema = {
             name: "What should I bring to sushi class?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Most classes provide rice, fish, nori, and tools. Wear comfortable clothing and close-toed shoes. Bring a notebook and container for leftovers. We treat every guest like family—just bring your enthusiasm!",
+                text: "Most classes provide rice, fish, nori, and tools. Wear comfortable clothing and close-toed shoes. Bring a notebook and container for leftovers.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Are sushi classes good for couples or groups?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! Sushi classes are a popular date night and team-building activity. Many venues offer private group sessions. For group dining, Jinbeh's hibachi tables seat 8-10 guests for an interactive Japanese culinary experience.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can I make sushi at home after taking a class?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely. Most classes teach you techniques you can replicate at home. You'll need sushi rice, rice vinegar, nori, fresh fish from a trusted source, and a bamboo rolling mat. Start with simple maki rolls and work up to nigiri.",
             },
         },
     ],
@@ -311,35 +327,35 @@ export default function SushiCookingClasses() {
                                         </div>
                                     </div>
 
-                                    
+
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <BlurFade delay={0.1}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                            </div>
-                                    </BlurFade>
+                                                <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                    <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                </div>
+                                            </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <BlurFade delay={0.2}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                            </div>
-                                    </BlurFade>
+                                                <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                    <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                </div>
+                                            </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <BlurFade delay={0.3}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                            </div>
-                                    </BlurFade>
+                                                <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                    <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                </div>
+                                            </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <BlurFade delay={0.4}>
-                                        <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
-                                            </div>
-                                    </BlurFade>
+                                                <div className="relative aspect-square rounded-xl overflow-hidden group">
+                                                    <Image src="/images/blog/14-C060324-6596.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                </div>
+                                            </BlurFade>
                                         </BlurFade>
                                     </div>
                                 </div>
