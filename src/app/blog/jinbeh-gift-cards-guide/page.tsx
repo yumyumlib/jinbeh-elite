@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
@@ -48,6 +48,11 @@ const faqs = [
   {
     question: "Can I use gift cards at both locations?",
     answer: "Yes! Use Jinbeh gift cards at Frisco or Lewisville. Choose whichever location you prefer. We treat every guest like family.",
+  },
+  {
+    question: "Do Jinbeh gift cards expire?",
+    answer:
+      "Jinbeh gift cards do not expire and there are no inactivity fees. Texas law protects gift card holders from expiration dates and dormancy charges. Your card retains its full value until used, so there's no rush — use it whenever you're ready for a great meal!",
   },
 ];
 
@@ -503,7 +508,7 @@ export default function JinbehGiftCardsGuidePage() {
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
         <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>

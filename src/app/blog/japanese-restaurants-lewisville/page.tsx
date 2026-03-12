@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -27,10 +27,11 @@ const faqs = [
     { question: "Can you handle large groups?", answer: "Absolutely! We specialize in groups. Hibachi tables, flexible seating, customized menus. Call (214) 488-2224 to arrange your party. We love making celebrations special." },
     { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful—that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
     { question: "Where is Jinbeh Lewisville located?", answer: "We're at 2440 S. Stemmons Freeway, near Vista Ridge Mall. Easy I-35E access. Convenient parking right outside. Call (214) 488-2224 to confirm hours." },
+    { question: "Does Jinbeh Lewisville offer takeout?", answer: "Yes! Call (214) 488-2224 to place a takeout order. Most orders are ready in 20-30 minutes. We offer sushi rolls, bento boxes, teriyaki, and hibachi platters for pickup. You can also order delivery through DoorDash and UberEats." }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Restaurants Lewisville TX", datePublished: "2026-01-23", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Restaurants Lewisville TX", datePublished: "2026-01-23", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" } },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type ": " Question ", name: f.question, acceptedAnswer: { " @type": " Answer ", text: f.answer } }))
     }
@@ -41,11 +42,11 @@ const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
     " itemListElement ": [
-    { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
-    { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
-    { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
-    { " @type ": " ListItem ", " position ": 4, " name ": " Best Japanese Restaurants Lewisville TX " },
-],
+        { " @type ": " ListItem ", " position ": 1, " name ": " Home ", " item ": " https://jinbeh.com" },
+        { " @type ": " ListItem ", " position ": 2, " name ": " Blog ", " item ": " https://jinbeh.com/blog" },
+        { " @type ": " ListItem ", " position ": 3, " name ": " Locations ", " item ": " https://jinbeh.com/#locations" },
+        { " @type ": " ListItem ", " position ": 4, " name ": " Best Japanese Restaurants Lewisville TX " },
+    ],
 };
 
 export default function JapaneseRestaurantsLewisville() {
@@ -95,12 +96,12 @@ export default function JapaneseRestaurantsLewisville() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Why Choose Jinbeh Lewisville</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
-                                {[{ e: "🔥", t: "Hibachi Theater", d: "Full chef performance at your table" }, {e: "🍣", t: "Fresh Sushi Bar", d: "Made-to-order by trained chefs" }, {e: "🎉", t: "Celebration Ready", d: "Birthdays, anniversaries, groups" }, {e: "📍", t: "Easy Access", d: "Off I-35E near Vista Ridge Mall" }].map(x => (
-                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                    <span className="text-3xl block mb-2">{x.e}</span>
-                                    <h3 className="font-bold">{x.t}</h3>
-                                    <p className="text-sm text-charcoal/70">{x.d}</p>
-                                </div>
+                                {[{ e: "🔥", t: "Hibachi Theater", d: "Full chef performance at your table" }, { e: "🍣", t: "Fresh Sushi Bar", d: "Made-to-order by trained chefs" }, { e: "🎉", t: "Celebration Ready", d: "Birthdays, anniversaries, groups" }, { e: "📍", t: "Easy Access", d: "Off I-35E near Vista Ridge Mall" }].map(x => (
+                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                        <span className="text-3xl block mb-2">{x.e}</span>
+                                        <h3 className="font-bold">{x.t}</h3>
+                                        <p className="text-sm text-charcoal/70">{x.d}</p>
+                                    </div>
                                 ))}
                             </div>
 
@@ -128,7 +129,7 @@ export default function JapaneseRestaurantsLewisville() {
                             </div>
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="lewisville" />
+                            <LocationCTA location="lewisville" />
                         </article>
 
                         <aside className="lg:col-span-1">

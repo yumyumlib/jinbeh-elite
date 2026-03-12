@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
@@ -44,6 +44,10 @@ const faqs = [
     {
         question: "How do I keep sushi fresh during delivery?",
         answer: "Keep sushi refrigerated and eat within 2 hours of pickup for the best quality. Avoid leaving it in a hot car. At Jinbeh, we use insulated packaging for delivery orders. If ordering for a party, schedule pickup close to your serving time.",
+    },
+    {
+        question: "Is there a minimum order for Japanese food delivery?",
+        answer: "Minimum order amounts vary by delivery platform. DoorDash and UberEats typically require $10-$15 minimums. For direct pickup from Jinbeh, there's no minimum — order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
     },
 ];
 
@@ -168,7 +172,7 @@ export default function JapaneseTakeoutNearMe() {
             </ProTip>
 
             <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

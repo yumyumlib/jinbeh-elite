@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Jinbeh at Home: Experience Jinbeh Catering's Unique Japanese Flavors",
@@ -58,6 +58,11 @@ const faqs = [
     question: "Can Jinbeh handle dietary restrictions?",
     answer:
       "Absolutely! We offer gluten-free, vegetarian, vegan, and allergy-friendly options. Our experienced chefs work with you to accommodate all dietary needs without compromising on taste or quality. Tell us your requirements when booking.",
+  },
+  {
+    question: "Does Jinbeh provide plates, utensils, and serving equipment?",
+    answer:
+      "Yes! Full-service catering packages include all necessary serving equipment, plates, utensils, napkins, and serving stations. For hibachi catering, we bring our own portable teppanyaki griddle and all cooking equipment. You don't need to supply anything — just provide the space and the guests!",
   },
 ];
 
@@ -335,7 +340,7 @@ export default function JinbehCateringServicesPage() {
       </ProTip>
 
       <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="jinbeh-catering-services" />
     </ArticleLayout>

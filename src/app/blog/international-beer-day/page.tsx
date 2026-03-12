@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
@@ -44,6 +44,10 @@ const faqs = [
     {
         question: "Does Jinbeh have a full bar?",
         answer: "Yes! Along with Japanese beers, we offer a full bar with sake, Japanese whisky, cocktails (our lychee martini is famous), wine, and hard seltzers. Visit during happy hour for the best deals on drinks.",
+    },
+    {
+        question: "Can I bring my own beer to a Japanese restaurant?",
+        answer: "Most Japanese restaurants, including Jinbeh, have full liquor licenses and don't allow outside beverages. But that's a good thing — we stock authentic Japanese beers on tap and in bottles that pair perfectly with our food. You won't find a better Sapporo draft in DFW!",
     },
 ];
 
@@ -156,7 +160,7 @@ export default function InternationalBeerDay() {
             </ProTip>
 
             <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }

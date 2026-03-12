@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -26,16 +26,21 @@ const faqs = [
     { question: "What makes Japanese cuisine authentic?", answer: "Authentic food focuses on fresh, seasonal ingredients with simple presentation. Key items: quality rice, fresh fish and seafood, traditional noodles, soy products, and vegetables prepared with respect for the craft." },
     { question: "Is Jinbeh a good choice for Japanese dining?", answer: "Welcome to the table! Jinbeh serves authentic Japanese cuisine since 1988. We offer hibachi entertainment, fresh sushi, and a family-friendly atmosphere. Locations in Frisco and Lewisville." },
     { question: "What's the difference between sushi and sashimi?", answer: "Sushi is rice topped with fish or other ingredients. Sashimi is sliced raw fish without rice. Both are fresh and flavorful. Try both at Jinbeh!" },
-    { question: "How do I make a reservation at a Japanese restaurant?", answer: "Call ahead! For Jinbeh, call Frisco (214) 619-1200 or Lewisville (214) 488-2224. Reservations ensure your table and let us prepare special touches." }
+    { question: "How do I make a reservation at a Japanese restaurant?", answer: "Call ahead! For Jinbeh, call Frisco (214) 619-1200 or Lewisville (214) 488-2224. Reservations ensure your table and let us prepare special touches." },
+    { question: "Are Japanese restaurants family-friendly?", answer: "Many are! At Jinbeh, families love the hibachi experience — kids are fascinated by the chef's fire tricks and food-tossing performance. We have children's portions available and a welcoming atmosphere that makes everyone feel at home. We've been a family-owned restaurant ourselves since 1988." }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Open Japanese Restaurants Near Me: Find the Best", datePublished: "2026-01-26", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Open Japanese Restaurants Near Me: Find the Best", datePublished: "2026-01-26", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "How do I find authentic Japanese restaurants nearby?", acceptedAnswer: { "@type": "Answer", text: "Use Google Maps and restaurant review sites like Yelp and TripAdvisor. Look for restaurants emphasizing fresh ingredients, traditional preparation, and authentic presentation. Check customer reviews and photos to assess authenticity. Local Japanese communities and grocery stores often have recommendations." } },
-            { "@type": "Question", name: "What makes Japanese cuisine authentic?", acceptedAnswer: { "@type": "Answer", text: "Authentic Japanese cuisine focuses on fresh, seasonal ingredients with simple yet elegant presentation allowing natural flavors to shine. Key elements include quality rice, fresh fish and seafood, traditional noodles like ramen and soba, soy products, and seasonal vegetables prepared with respect for the craft." } }
-        ]
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
     }
 ];
 
@@ -139,26 +144,26 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
-                                    { emoji: "🍣", name: "Sushi Bars", desc: "Specialty venues focusing on sushi, sashimi, and omakase experiences with direct chef interaction. Learn about different ", link: {text: "types of sushi", href: "/blog/types-of-sushi" }, desc2: " and explore our guide for " },
-                                {emoji: "🍜", name: "Ramen Houses", desc: "Casual, cozy spots serving authentic regional ramen styles with rich broths and perfect noodles." },
-                                {emoji: "🔥", name: "Teppanyaki Steakhouses", desc: "Entertainment dining with chef performances cooking on iron griddles right before you. Experience the ", link: {text: "teppanyaki experience", href: "/blog/hibachi-vs-teppanyaki-explained" }, desc2: " firsthand." },
-                                {emoji: "🏮", name: "Izakayas", desc: "Japanese pubs serving small plates, drinks, and casual authentic fare in a social setting." }
+                                    { emoji: "🍣", name: "Sushi Bars", desc: "Specialty venues focusing on sushi, sashimi, and omakase experiences with direct chef interaction. Learn about different ", link: { text: "types of sushi", href: "/blog/types-of-sushi" }, desc2: " and explore our guide for " },
+                                    { emoji: "🍜", name: "Ramen Houses", desc: "Casual, cozy spots serving authentic regional ramen styles with rich broths and perfect noodles." },
+                                    { emoji: "🔥", name: "Teppanyaki Steakhouses", desc: "Entertainment dining with chef performances cooking on iron griddles right before you. Experience the ", link: { text: "teppanyaki experience", href: "/blog/hibachi-vs-teppanyaki-explained" }, desc2: " firsthand." },
+                                    { emoji: "🏮", name: "Izakayas", desc: "Japanese pubs serving small plates, drinks, and casual authentic fare in a social setting." }
                                 ].map(x => (
-                                <div key={x.name} className="bg-warm-ivory rounded-xl p-5">
-                                    <span className="text-3xl block mb-2">{x.emoji}</span>
-                                    <h3 className="font-bold text-charcoal mb-2">{x.name}</h3>
-                                    <p className="text-sm text-charcoal/70">
-                                        {x.desc}
-                                        {x.link && (
-                                            <>
-                                                <Link href={x.link.href} className="text-accent-red hover:underline font-semibold">
-                                                    {x.link.text}
-                                                </Link>
-                                                {x.desc2}
-                                            </>
-                                        )}
-                                    </p>
-                                </div>
+                                    <div key={x.name} className="bg-warm-ivory rounded-xl p-5">
+                                        <span className="text-3xl block mb-2">{x.emoji}</span>
+                                        <h3 className="font-bold text-charcoal mb-2">{x.name}</h3>
+                                        <p className="text-sm text-charcoal/70">
+                                            {x.desc}
+                                            {x.link && (
+                                                <>
+                                                    <Link href={x.link.href} className="text-accent-red hover:underline font-semibold">
+                                                        {x.link.text}
+                                                    </Link>
+                                                    {x.desc2}
+                                                </>
+                                            )}
+                                        </p>
+                                    </div>
                                 ))}
                             </div>
 
@@ -242,7 +247,7 @@ export default function JapaneseRestaurantsNearMe() {
                                 </ProTip>
 
                                 <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 
