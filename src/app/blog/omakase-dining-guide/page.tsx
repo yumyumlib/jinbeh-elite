@@ -26,7 +26,6 @@ const schemas = [
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What does omakase mean?", acceptedAnswer: { "@type": "Answer", text: "Omakase translates to 'I leave it up to you' in English. It's a dining experience where the chef takes full control, crafting a bespoke menu highlighting the freshest ingredients." } },
             { "@type": "Question", name: "How is omakase different from regular sushi?", acceptedAnswer: { "@type": "Answer", text: "While omakase often includes sushi, it is much more comprehensive—a curated progression including appetizers, various sushi pieces, cooked dishes, soup, and dessert." } },
-            { "@type": "Question", name: "How much does omakase typically cost?", acceptedAnswer: { "@type": "Answer", text: "Omakase pricing varies. Prices range from moderate ($40-80 per person) to premium ($150+ per person) based on chef expertise, ingredient quality, and location." } },
             { "@type": "Question", name: "Can I request dietary preferences in omakase?", acceptedAnswer: { "@type": "Answer", text: "While omakase is about trusting the chef, you should communicate any dietary restrictions (allergies, vegetarian) before the meal begins. The chef will plan accordingly while maintaining the omakase philosophy." } },
             { "@type": "Question", name: "How long does an omakase meal take?", acceptedAnswer: { "@type": "Answer", text: "A typical omakase experience lasts 45 minutes to over an hour. The pacing is intentional, designed to allow you to savor each course and interact with the chef." } },
             { "@type": "Question", name: "Is omakase available outside Japan?", acceptedAnswer: { "@type": "Answer", text: "Yes. The popularity of omakase has spread worldwide. Authentic omakase restaurants like Jinbeh in Dallas maintain the core principles while bringing this experience to international audiences." } },
@@ -100,17 +99,6 @@ export default function OmakaseDiningGuide() {
                                 </tbody>
                             </table>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💲 Omakase Pricing Guide</h2>
-                            <p className="text-charcoal/80 mb-4">Omakase pricing varies widely. Here&apos;s what to expect across different tiers:</p>
-                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
-                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Tier</th><th className="p-3 text-left">Price/Person</th><th className="p-3 text-left">Courses</th><th className="p-3 text-left">What to Expect</th></tr></thead>
-                                <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Entry Level</td><td className="p-3">$40–80</td><td className="p-3">5–8 pieces</td><td className="p-3">Fresh fish, standard selection</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">⭐ Mid-Range (Jinbeh)</td><td className="p-3">$60–120</td><td className="p-3">8–12 pieces</td><td className="p-3">Premium fish, seasonal specials</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Premium</td><td className="p-3">$150–250</td><td className="p-3">12–18 pieces</td><td className="p-3">Rare fish, imported from Japan</td></tr>
-                                    <tr><td className="p-3 font-semibold">Ultra-Premium</td><td className="p-3">$300+</td><td className="p-3">15–20+ pieces</td><td className="p-3">Michelin-level, exclusive ingredients</td></tr>
-                                </tbody>
-                            </table>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍽️ The Omakase Dining Experience</h2>
                             <p className="text-charcoal/80 mb-4">Dining at an Omakase-style restaurant is an intimate and interactive experience. It often takes place at a sushi bar where you can observe the chef at work. This proximity allows you to enjoy the artistry of preparation and engage with the chef, who may explain the inspiration behind each course.</p>
