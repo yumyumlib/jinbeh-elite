@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -24,18 +24,21 @@ const faqs = [
     { question: "Why does Ramune have a marble?", answer: "The marble is a seal that keeps the soda fresh and preserves carbonation. It makes every bottle an interactive, playful experience when you open it." },
     { question: "How do you open Ramune soda?", answer: "Remove the plastic cap and plunger. Place the plunger over the marble. Press down firmly until the marble drops into the bottle's neck." },
     { question: "What flavors does Ramune come in?", answer: "Ramune has many flavors: original lemon-lime, strawberry, melon, grape, blueberry, yuzu, and seasonal limited editions." },
-    { question: "Where can I find Ramune in Dallas?", answer: "Visit Jinbeh! We serve Ramune and other Japanese beverages. Frisco (214) 619-1200 or Lewisville (214) 488-2224. Pair it with your meal!" }
+    { question: "Where can I find Ramune in Dallas?", answer: "Visit Jinbeh! We serve Ramune and other Japanese beverages. Frisco (214) 619-1200 or Lewisville (214) 488-2224. Pair it with your meal!" },
+    { question: "Is Ramune safe for kids?", answer: "Yes! Ramune is a non-alcoholic carbonated soft drink, so it's perfectly safe for children. Kids love the interactive marble-opening experience — it makes drinking soda feel like a game. Just supervise young children during the opening process since it requires pressing down firmly." }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Ramune Soda: Unique Flavors & Marble Magic", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Ramune Soda: Unique Flavors & Marble Magic", datePublished: "2026-01-30", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What is Ramune soda?", acceptedAnswer: { "@type": "Answer", text: "Ramune is a Japanese carbonated soft drink with a distinctive glass bottle featuring a marble seal. The name derives from the English word 'lemonade,' reflecting its original citrus flavor." } },
-            { "@type": "Question", name: "Why does Ramune have a marble?", acceptedAnswer: { "@type": "Answer", text: "The marble is part of the Codd-neck bottle design invented in 1879 by Hiram Codd. It acts as a seal to preserve carbonation, keeps the soda fresh, and adds an interactive, playful element to drinking." } },
-            { "@type": "Question", name: "How do you open Ramune soda?", acceptedAnswer: { "@type": "Answer", text: "Remove the plastic cap and plunger, place the plunger over the marble, and press down firmly until the marble drops into the bottle's neck, releasing carbonation." } },
-            { "@type": "Question", name: "What flavors of Ramune exist?", acceptedAnswer: { "@type": "Answer", text: "Ramune comes in numerous flavors including original lemon-lime, strawberry, melon, grape, blueberry, yuzu, and seasonal limited editions." } }
-        ]
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
     }
 ];
 
@@ -235,7 +238,7 @@ export default function RamuneSodaGuide() {
                                 </ProTip>
 
                                 <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

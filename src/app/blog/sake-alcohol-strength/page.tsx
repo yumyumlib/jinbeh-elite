@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Sake Alcohol Strength: ABV & Types | Jinbeh",
@@ -24,10 +24,11 @@ const faqs = [
     { question: "What's the difference between sake types?", answer: "Junmai is fuller. Daiginjo is lighter. Nigori is cloudy and sweet. Honjozo is smooth. Our staff can match your preference." },
     { question: "Does Jinbeh have sake?", answer: "Yes! We offer sake flights, premium selections, and sake bombs. Our bartenders know how to pair sake with food. Ask for recommendations." },
     { question: "What sake pairs with sushi?", answer: "Junmai or Nigori work well. Daiginjo is elegant. Sake bombs are fun for celebrations. Come try our sake selection at Jinbeh." },
+    { question: "Can sake go bad after opening?", answer: "Sake doesn't spoil like milk, but it does lose flavor over time. Once opened, drink within 1-2 weeks and keep it refrigerated. Unopened sake lasts 1-2 years for regular varieties and 6-12 months for unpasteurized (nama) sake. Unlike wine, sake doesn't improve with age — drink it fresh for the best experience." }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Sake Alcohol Strength Guide", datePublished: "2026-01-20", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Sake Alcohol Strength Guide", datePublished: "2026-01-20", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" } },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } }))
     }
@@ -132,7 +133,7 @@ export default function SakeGuide() {
                                 </ProTip>
 
                                 <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

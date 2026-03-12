@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki",
@@ -58,6 +58,11 @@ const faqs = [
     question: "Can Jinbeh customize the menu?",
     answer:
       "Absolutely! Our chefs create fully customized menus. Choose proteins, add sushi, salads, appetizers, sides. Vegetarian and vegan options available. We treat every guest like family with accommodations.",
+  },
+  {
+    question: "Should I tip my offsite hibachi chef?",
+    answer:
+      "Tips are always appreciated but never required. Our chefs put on a full show and prepare your meal from scratch. The standard for catering is 15-20% of your total, which is split between the chef and service staff. You can also tip the chef directly at the end of the event.",
   },
 ];
 
@@ -444,7 +449,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       </ProTip>
 
       <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       {/* Related Reading */}
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">

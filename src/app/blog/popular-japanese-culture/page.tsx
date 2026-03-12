@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Popular Japanese Things: Iconic Cultural Treasures | Jinbeh",
@@ -25,10 +25,11 @@ const faqs = [
     { question: "What makes Japanese cuisine unique?", answer: "Fresh seasonal ingredients, beautiful presentation, respect for natural flavors. Sushi, ramen, tempura—each reflects centuries of culinary tradition. Every region has special dishes." },
     { question: "Is Japanese food healthy?", answer: "Yes! Japanese cuisine focuses on fresh fish, vegetables, and rice. Minimal oil. Balanced portions. At Jinbeh, we use fresh, never-frozen ingredients and traditional cooking methods." },
     { question: "Can I experience Japanese culture at Jinbeh?", answer: "Absolutely! Our hibachi is dinner and a show. Our sushi bar celebrates traditional craftsmanship. Our staff treats every guest like family. Welcome to the table!" },
+    { question: "Where can I experience Japanese culture in DFW?", answer: "In Dallas-Fort Worth, you can visit Jinbeh for authentic Japanese dining and hibachi performances, attend the North Texas Japanese Festival, explore the Japan House at the Dallas Arboretum, or shop at Mitsuwa Marketplace in Plano. For a full cultural immersion over dinner, Jinbeh's hibachi combines entertainment, food, and hospitality traditions." }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Things: Explore Iconic Cultural Treasures", datePublished: "2026-01-23", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Things: Explore Iconic Cultural Treasures", datePublished: "2026-01-23", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" } },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } }))
     }
@@ -195,7 +196,7 @@ export default function PopularJapaneseCulture() {
                                 </ProTip>
 
                                 <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

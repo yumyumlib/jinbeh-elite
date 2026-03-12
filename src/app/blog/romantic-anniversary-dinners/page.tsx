@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh",
@@ -56,6 +56,11 @@ const faqs = [
     question: "Do you offer private tables for anniversary dinners?",
     answer:
       "Yes! We offer semi-private hibachi tables and full private dining for anniversary celebrations. Contact us to arrange a customized romantic experience. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for details.",
+  },
+  {
+    question: "What anniversary dinner add-ons does Jinbeh offer?",
+    answer:
+      "We can arrange champagne or sake toasts, a personalized dessert with a special message, flower arrangements at your table, and photography of your celebration. For milestone anniversaries, ask about our private dining packages. Call when booking to discuss what extras would make your evening perfect.",
   },
 ];
 
@@ -363,7 +368,7 @@ export default function RomanticAnniversaryDinnersPage() {
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="romantic-anniversary-dinners" />
     </ArticleLayout>

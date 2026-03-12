@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh",
@@ -73,6 +73,11 @@ const faqs = [
     question: "Is pickleball + hibachi good for a date night in Lewisville?",
     answer:
       "It's the PERFECT date night! Start with an active, fun pickleball session at The Picklr (they have beginner-friendly courts), then walk over to Jinbeh for a romantic hibachi dinner or intimate sushi bar experience. Activity + great food + quality time = unforgettable date!",
+  },
+  {
+    question: "Can I come to Jinbeh in athletic wear after pickleball?",
+    answer:
+      "Absolutely! We're casual-friendly and welcome guests straight from the courts. Jinbeh has no dress code — come as you are. Many of our regulars walk over from The Picklr in their athletic gear. Just bring your appetite!",
   },
 ];
 
@@ -280,7 +285,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="lewisville" />
+      <LocationCTA location="lewisville" />
 
       {/* Related Reading */}
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
