@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -21,22 +21,27 @@ export const metadata: Metadata = {
     },
 };
 
-const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Top Asian Cuisine & Fusion Spots in Dallas", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
-    {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What is the best Asian fusion in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Top Asian fusion spots include Uchi Dallas for modern Japanese, Tei-An for elegant soba dining, and Jinbeh for hibachi and sushi fusion. Each offers unique interpretations blending traditional techniques with contemporary creativity." } },
-            { "@type": "Question", name: "Where can I find authentic Asian cuisine in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Royal China offers authentic Chinese, Korean BBQ House for traditional Korean, Thai Orchid for Thai cuisine, and Jinbeh for traditional Japanese hibachi and sushi with cultural authenticity." } }
-        ]
-    }
-];
-
 const faqs = [
     { question: "What is the best Asian fusion in Dallas?", answer: "Welcome to the table! Uchi Dallas, Tei-An, and Jinbeh are top fusion spots. Each blends traditional techniques with modern creativity." },
     { question: "Where can I find authentic Asian cuisine in Dallas?", answer: "Royal China has authentic Chinese. Korean BBQ House offers traditional Korean. Thai Orchid serves Thai dishes. Jinbeh brings authentic Japanese hibachi and sushi." },
     { question: "Why should I choose Jinbeh for Asian dining?", answer: "We combine authentic Japanese techniques with fresh ingredients. Our hibachi chefs put on a show while cooking. Dinner and a show!" },
     { question: "Is Jinbeh family-friendly?", answer: "Absolutely! Families love us. Kids are fascinated by hibachi fire tricks. We have children's menus and a welcoming atmosphere for all ages." },
-    { question: "How do I make a reservation at Jinbeh?", answer: "Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224. We recommend reservations for hibachi tables, especially weekends." }
+    { question: "How do I make a reservation at Jinbeh?", answer: "Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224. We recommend reservations for hibachi tables, especially weekends." },
+    { question: "Can I get Asian food delivery in Dallas?", answer: "Many Dallas Asian restaurants offer delivery through apps like DoorDash and Uber Eats. Jinbeh offers takeout for sushi and bento boxes. However, the hibachi experience is best enjoyed in person — the live cooking show and sizzling presentation are part of what makes it special!" }
+];
+
+const schemas = [
+    { "@context": "https://schema.org", "@type": "Article", headline: "Top Asian Cuisine & Fusion Spots in Dallas", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh" } },
+    {
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
+    }
 ];
 
 
@@ -165,7 +170,7 @@ export default function AsianCuisineDallas() {
                             <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

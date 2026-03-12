@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, Timeline, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, Timeline, MenuItemCard, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Explore Flavorful Delights | Jinbeh",
@@ -81,6 +81,11 @@ const faqs = [
     question: "How many calories are in hibachi fried rice?",
     answer:
       "Hibachi fried rice typically contains 200-300 calories per serving, though the exact amount depends on preparation. It's cooked with butter, soy sauce, eggs, and vegetables, giving it a savory, rich flavor. For a lighter option, you can request less butter or oil when ordering. Ask your chef to customize it to your preferences!",
+  },
+  {
+    question: "Do hibachi restaurants have a kids' menu?",
+    answer:
+      "Yes! Most hibachi restaurants including Jinbeh offer kids' portions at lower prices. Popular choices include chicken, shrimp, or a combo. Kids get the same entertaining show as adults — the fire tricks and food-tossing are always a hit. Children's meals typically include smaller protein portions with rice and vegetables.",
   },
 ];
 
@@ -326,7 +331,7 @@ export default function HibachiMenuGuidePage() {
       </ProTip>
 
       <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="hibachi-menu-guide" />
 

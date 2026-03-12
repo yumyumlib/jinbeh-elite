@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, MenuItemCard, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Lunch Ideas for Workdays: Flavor & Fun | Jinbeh",
@@ -51,6 +51,11 @@ const faqs = [
     question: "How can I save time on hibachi lunch?",
     answer:
       "Prep vegetables and marinate protein the night before. Use pre-cooked rice. Better yet, visit Jinbeh for lunch specials. It's a celebration of flavor, quick service, and cost-effective dining for your workday.",
+  },
+  {
+    question: "Does Jinbeh serve hibachi lunch on weekends?",
+    answer:
+      "Yes! We serve lunch on Saturdays and Sundays as well. Weekend lunch is a great option for families and groups who want the full hibachi experience at lunch prices. Hours may vary, so call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to confirm.",
   },
 ];
 
@@ -218,7 +223,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

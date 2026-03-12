@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -26,16 +26,21 @@ const faqs = [
     { question: "Where can I find authentic Asian cuisine in Dallas?", answer: "Royal China has traditional Chinese dishes. Tei-An specializes in soba noodles. Musume features modern Asian cuisine. Jinbeh combines authentic Japanese techniques with fresh ingredients." },
     { question: "Is there good Asian food outside downtown?", answer: "Absolutely! Jinbeh has locations in Frisco and Lewisville. Both offer excellent hibachi and sushi. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville." },
     { question: "Is Jinbeh good for special occasions?", answer: "It's a celebration! We love hosting birthdays, anniversaries, and gatherings. Our hibachi chefs make every meal entertaining and memorable for your group." },
-    { question: "What makes hibachi dining special?", answer: "Dinner and a show! Our chefs cook right before your eyes. Fire tricks, the onion volcano, and fresh-cooked meals make it unforgettable." }
+    { question: "What makes hibachi dining special?", answer: "Dinner and a show! Our chefs cook right before your eyes. Fire tricks, the onion volcano, and fresh-cooked meals make it unforgettable." },
+    { question: "Is there parking near Asian restaurants in Dallas?", answer: "Most DFW Asian restaurants have dedicated parking lots. Jinbeh's Frisco location (near Stonebriar) and Lewisville location both offer free, convenient parking right in front of the restaurant — no downtown parking hassles or valet fees." }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Best Asian Food in Dallas TX", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Best Asian Food in Dallas TX", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What's the best Asian food in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Dallas offers incredible Asian dining options. Top picks include Uchi for Japanese fusion, Royal China for authentic Chinese, and Jinbeh for traditional Japanese with hibachi and sushi." } },
-            { "@type": "Question", name: "Where can I find authentic Asian cuisine in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Royal China (Chinese), Tei-An (soba/Japanese), and Musume (modern Asian) offer authentic experiences. Jinbeh combines traditional Japanese techniques with quality ingredients." } }
-        ]
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
     }
 ];
 
@@ -116,15 +121,15 @@ export default function BestAsianFoodDallas() {
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
                                     { e: "🍱", t: "Uchi Dallas", d: "Modern Japanese fusion in the Arts District" },
-                                {e: "🍜", t: "Tei-An", d: "Handmade soba noodles with rooftop views" },
-                                {e: "🍶", t: "Musume", d: "Contemporary Asian with extensive sake list" },
-                                {e: "🥢", t: "Monkey King", d: "Hand-pulled noodles & street-style Chinese" }
+                                    { e: "🍜", t: "Tei-An", d: "Handmade soba noodles with rooftop views" },
+                                    { e: "🍶", t: "Musume", d: "Contemporary Asian with extensive sake list" },
+                                    { e: "🥢", t: "Monkey King", d: "Hand-pulled noodles & street-style Chinese" }
                                 ].map(x => (
-                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                    <span className="text-3xl block mb-2">{x.e}</span>
-                                    <h3 className="font-bold text-charcoal">{x.t}</h3>
-                                    <p className="text-sm text-charcoal/70">{x.d}</p>
-                                </div>
+                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                        <span className="text-3xl block mb-2">{x.e}</span>
+                                        <h3 className="font-bold text-charcoal">{x.t}</h3>
+                                        <p className="text-sm text-charcoal/70">{x.d}</p>
+                                    </div>
                                 ))}
                             </div>
 
@@ -132,15 +137,15 @@ export default function BestAsianFoodDallas() {
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
                                     { e: "👨‍🍳", t: "Expert Technique", d: "Traditional Japanese methods with premium ingredients" },
-                                {e: "🎭", t: "Entertainment", d: "Hibachi show adds excitement to your meal" },
-                                {e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Perfect for celebrations and group dinners" },
-                                {e: "💰", t: "Value & Quality", d: "Fresh Japanese dining at reasonable prices" }
+                                    { e: "🎭", t: "Entertainment", d: "Hibachi show adds excitement to your meal" },
+                                    { e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Perfect for celebrations and group dinners" },
+                                    { e: "💰", t: "Value & Quality", d: "Fresh Japanese dining at reasonable prices" }
                                 ].map(x => (
-                                <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                    <span className="text-3xl block mb-2">{x.e}</span>
-                                    <h3 className="font-bold text-charcoal">{x.t}</h3>
-                                    <p className="text-sm text-charcoal/70">{x.d}</p>
-                                </div>
+                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+                                        <span className="text-3xl block mb-2">{x.e}</span>
+                                        <h3 className="font-bold text-charcoal">{x.t}</h3>
+                                        <p className="text-sm text-charcoal/70">{x.d}</p>
+                                    </div>
                                 ))}
                             </div>
 
@@ -152,7 +157,7 @@ export default function BestAsianFoodDallas() {
                             <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
 
                             <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

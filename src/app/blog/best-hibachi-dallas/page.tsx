@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, CompareCards, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, CompareCards, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh",
@@ -57,6 +57,11 @@ const faqs = [
     question: "Can I book a private hibachi table for a large group?",
     answer:
       "Absolutely! We accommodate groups of all sizes with customizable seating and menus. Contact us to discuss your group needs, preferred dates, and any special requests. Our team will ensure everyone has an unforgettable experience. Frisco: (214) 619-1200 or Lewisville: (214) 488-2224.",
+  },
+  {
+    question: "Can I walk in to a hibachi restaurant without a reservation?",
+    answer:
+      "Walk-ins are welcome at Jinbeh, but wait times can be longer — especially on Friday and Saturday evenings. Hibachi tables seat 8-10 guests, so we need to wait until a full table is ready. For the best experience, we always recommend calling ahead. Weekday lunches and early dinners (before 6pm) typically have the shortest wait times.",
   },
 ];
 
@@ -403,7 +408,7 @@ export default function BestHibachiDallasPage() {
       </div>
 
       <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="best-hibachi-dallas" />
     </ArticleLayout>

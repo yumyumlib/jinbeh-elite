@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -26,16 +26,21 @@ const faqs = [
     { question: "Where can I find fresh sushi in Dallas?", answer: "Jinbeh is your spot! We source the highest quality fish. Every sushi piece is expertly crafted by our chefs. Locations in Frisco and Lewisville." },
     { question: "How often is fish delivered to Jinbeh?", answer: "We receive fish deliveries multiple times per week. Our sushi chefs slice each piece fresh to order. Watch them work at our sushi bar." },
     { question: "Can I buy fresh seafood to cook at home?", answer: "Yes! Dallas Fish Market and Captain Dave's offer fresh fish and shellfish. But why cook when we can prepare dinner and a show for you at Jinbeh?" },
-    { question: "Do you take reservations for seafood dining?", answer: "Absolutely! We recommend reservations. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224. We treat every guest like family." }
+    { question: "Do you take reservations for seafood dining?", answer: "Absolutely! We recommend reservations. Call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224. We treat every guest like family." },
+    { question: "Does Jinbeh serve raw oysters?", answer: "While we don't have a raw oyster bar, we specialize in the finest raw seafood through our sushi and sashimi menu. Our sushi-grade fish is sourced from premium suppliers and sliced fresh to order. For raw seafood lovers, our sashimi platter is a must-try!" }
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Best Seafood Restaurants in Dallas TX", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Best Seafood Restaurants in Dallas TX", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh" } },
     {
-        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What are the best seafood restaurants in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Top seafood spots include The Oceanaire for upscale dining, Truluck's for Stone Crab, TJ's Seafood for casual dining, and Jinbeh for premium sushi and sashimi with traditional Japanese expertise." } },
-            { "@type": "Question", name: "Where can I find fresh sushi in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh offers exceptionally fresh sushi and sashimi, expertly crafted to highlight natural seafood flavors. Their commitment to sourcing the highest quality fish ensures an authentic Japanese dining experience." } }
-        ]
+        "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        }))
     }
 ];
 
@@ -156,7 +161,7 @@ export default function BestSeafoodDallas() {
                             <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />
 
                             <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>
