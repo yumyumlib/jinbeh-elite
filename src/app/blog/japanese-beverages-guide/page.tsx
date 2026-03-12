@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Popular Japanese Beverages: Iconic Drinks Guide | Jinbeh",
@@ -19,11 +19,15 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Beverages: Explore Iconic Drinks", datePublished: "2026-01-24", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Beverages: Iconic Drinks Guide", datePublished: "2026-01-24", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/LewisvilleBar.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What are the most popular Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Japan's most beloved beverages include matcha tea, sake, shochu, ramune soda, calpis, pocari sweat, canned coffee, and various bottled teas. Each reflects Japan's dedication to quality, tradition, and innovation." } },
-            { "@type": "Question", name: "What is matcha and how is it different from regular green tea?", acceptedAnswer: { "@type": "Answer", text: "Matcha is finely ground green tea powder used in traditional tea ceremonies for centuries. Unlike steeped tea, you consume the whole leaf, providing more nutrients and a rich, umami flavor. It's a meditative cultural experience." } }
+            { "@type": "Question", name: "What is matcha and how is it different from regular green tea?", acceptedAnswer: { "@type": "Answer", text: "Matcha is finely ground green tea powder used in traditional tea ceremonies for centuries. Unlike steeped tea, you consume the whole leaf, providing more nutrients and a rich, umami flavor." } },
+            { "@type": "Question", name: "Where can I find authentic Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Asian markets, specialty tea shops, and regular grocers carry Japanese beverages. Jinbeh Japanese Restaurant offers traditional drinks like sake, matcha, and Japanese whisky at their Frisco and Lewisville locations." } },
+            { "@type": "Question", name: "Is sake an everyday drink in Japan?", acceptedAnswer: { "@type": "Answer", text: "Sake is traditionally served for celebrations, but in modern Japan it is enjoyed casually like wine. Jinbeh pairs premium sake with Japanese cuisine." } },
+            { "@type": "Question", name: "What are the health benefits of matcha?", acceptedAnswer: { "@type": "Answer", text: "Matcha is rich in antioxidants, provides sustained energy without caffeine jitters, supports metabolism, and contains L-theanine promoting calm focus." } },
+            { "@type": "Question", name: "Does Jinbeh serve traditional Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers premium sake, matcha, Japanese whisky, and authentic Japanese cocktails at both Frisco and Lewisville locations. Visit during happy hour for special pricing." } }
         ]
     }
 ];
@@ -93,6 +97,20 @@ export default function JapaneseBeveragesGuide() {
                                     <p className="text-charcoal/80">Shochu offers a unique alternative to sake with versatility for any occasion. Made from barley, sweet potatoes, or rice, this distilled spirit can be enjoyed straight, on the rocks, or mixed. Its popularity both domestically and internationally reflects its ability to suit different palates and settings.</p>
                                 </div>
                             </div>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 Japanese Alcoholic vs Non-Alcoholic Beverages</h2>
+                            <p className="text-charcoal/80 mb-4">Japan excels at both categories. Here&apos;s a quick comparison:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Beverage</th><th className="p-3 text-left">Type</th><th className="p-3 text-left">ABV</th><th className="p-3 text-left">Best Occasion</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🍶 Sake</td><td className="p-3">Alcoholic</td><td className="p-3">15–20%</td><td className="p-3">Dinner pairing, celebrations</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🥃 Shochu</td><td className="p-3">Alcoholic</td><td className="p-3">25–35%</td><td className="p-3">Casual drinking, highballs</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">🥃 Japanese Whisky</td><td className="p-3">Alcoholic</td><td className="p-3">40–45%</td><td className="p-3">After dinner, neat or highball</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🍵 Matcha</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">Morning energy, tea ceremony</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">🌹 Ramune</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">Summer refreshment, nostalgia</td></tr>
+                                    <tr><td className="p-3 font-semibold">☕ Canned Coffee</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">On-the-go, convenience</td></tr>
+                                </tbody>
+                            </table>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥤 Beloved Bottled & Canned Drinks</h2>
                             <p className="text-charcoal/80 mb-4">Japan's convenience drink culture showcases innovation and accessibility, bringing quality beverages to everyday life through convenient formats.</p>
@@ -168,7 +186,7 @@ export default function JapaneseBeveragesGuide() {
                                 </ProTip>
 
                                 <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 

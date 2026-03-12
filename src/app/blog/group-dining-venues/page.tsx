@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Group Dining Venues DFW: Best for Large Parties | Jinbeh",
@@ -21,10 +21,16 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Group Dining Venues DFW", datePublished: "2026-01-26", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Group Dining Venues DFW: Best for Large Parties", datePublished: "2026-01-26", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/frisco/FriscoLocation_Bar_Front.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "Best restaurant for large groups in DFW?", acceptedAnswer: { "@type": "Answer", text: "Hibachi restaurants like Jinbeh are ideal—shared tables seat 8-10, entertainment keeps everyone engaged, and the format works for all ages." } }
+            { "@type": "Question", name: "Best restaurant for large groups in DFW?", acceptedAnswer: { "@type": "Answer", text: "Hibachi restaurants like Jinbeh are ideal—shared tables seat 8-10, entertainment keeps everyone engaged, and the format works for all ages. Jinbeh has been hosting group events since 1988." } },
+            { "@type": "Question", name: "What's the minimum group size for Jinbeh reservations?", acceptedAnswer: { "@type": "Answer", text: "While Jinbeh welcomes all sizes, groups of 8+ benefit from group dining expertise. Contact Jinbeh for coordination details." } },
+            { "@type": "Question", name: "Can we customize the menu for our group?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh's culinary team works with groups to create customized menus accommodating dietary preferences and group size." } },
+            { "@type": "Question", name: "How do hibachi tables work for groups?", acceptedAnswer: { "@type": "Answer", text: "8-10 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment." } },
+            { "@type": "Question", name: "How do I book a group at Jinbeh?", acceptedAnswer: { "@type": "Answer", text: "Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 at least 2-4 weeks ahead. The team will coordinate menu, timing, and special requests." } },
+            { "@type": "Question", name: "Are there private rooms for large groups?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers private dining areas and group hibachi tables providing semi-private settings, perfect for corporate events, family reunions, and milestone celebrations." } },
+            { "@type": "Question", name: "Can kids join group hibachi dining?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Kids love hibachi. The chefs entertain while cooking, and a kids menu is available. The hibachi show is fun for all ages." } }
         ]
     }
 ];
@@ -90,6 +96,19 @@ export default function GroupDiningVenues() {
                                     <tr className="border-b"><td className="p-3 font-semibold"><Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">Birthday Party</Link></td><td className="p-3">Interactive, memorable, celebratory</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Sports Team</td><td className="p-3">Hearty portions, group seating</td></tr>
                                     <tr><td className="p-3 font-semibold">Holiday Gathering</td><td className="p-3">Festive atmosphere, no cooking cleanup!</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💰 Group Dining Cost Guide</h2>
+                            <p className="text-charcoal/80 mb-4">Planning a budget for your group? Here&apos;s what to expect at different venue types across DFW:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Venue Type</th><th className="p-3 text-left">Per Person</th><th className="p-3 text-left">Entertainment</th><th className="p-3 text-left">Private Space</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Hibachi (Jinbeh)</td><td className="p-3">$25–45</td><td className="p-3">Chef show included</td><td className="p-3">Semi-private</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Casual Dining</td><td className="p-3">$15–30</td><td className="p-3">None</td><td className="p-3">Varies</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Fine Dining</td><td className="p-3">$50–100+</td><td className="p-3">None</td><td className="p-3">Private rooms</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">BBQ / Buffet</td><td className="p-3">$20–35</td><td className="p-3">Self-serve</td><td className="p-3">Varies</td></tr>
+                                    <tr><td className="p-3 font-semibold">Food Hall</td><td className="p-3">$12–25</td><td className="p-3">None</td><td className="p-3">Open seating</td></tr>
                                 </tbody>
                             </table>
 
@@ -162,7 +181,7 @@ export default function GroupDiningVenues() {
                             </ProTip>
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
 
                             <div className="mt-12 pt-8 border-t-2 border-warm-ivory">
                                 <h3 className="text-2xl font-heading font-bold text-charcoal mb-6">📍 Jinbeh Locations</h3>

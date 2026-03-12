@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Japanese Whiskey's Global Rise: A Flavorful Journey | Jinbeh",
@@ -19,13 +19,17 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Whiskey's Global Rise: A Flavorful Journey", datePublished: "2026-01-30", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Whiskey's Global Rise: A Flavorful Journey", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/JapaneseWhiskey.webp" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What is Japanese whiskey?", acceptedAnswer: { "@type": "Answer", text: "Japanese whiskey is a spirit produced by Japanese distilleries that combines Scottish whiskey-making techniques with Japanese precision and local ingredients. It's known for its smooth, refined flavor and meticulous craftsmanship." } },
             { "@type": "Question", name: "When was Japanese whiskey first made?", acceptedAnswer: { "@type": "Answer", text: "Japanese whiskey production began in 1923 when Shinjiro Torii and Masataka Taketsuru founded Yamazaki, Japan's first malt whiskey distillery." } },
             { "@type": "Question", name: "What makes Japanese whiskey special?", acceptedAnswer: { "@type": "Answer", text: "Japanese whiskey combines Scottish techniques with Japanese elements like local barley and mountain water. Distillers focus on precision, craftsmanship, and innovation, using unique aging methods and ingredients like Mizunara oak." } },
-            { "@type": "Question", name: "What are top Japanese whiskey brands?", acceptedAnswer: { "@type": "Answer", text: "Top brands include Suntory (Yamazaki, Hakushu), Nikka (Yoichi, Miyagikyo), Chichibu, and Mars Shinshu. Each offers distinctive flavor profiles and expressions." } }
+            { "@type": "Question", name: "What are top Japanese whiskey brands?", acceptedAnswer: { "@type": "Answer", text: "Top brands include Suntory (Yamazaki, Hakushu), Nikka (Yoichi, Miyagikyo), Chichibu, and Mars Shinshu. Each offers distinctive flavor profiles and expressions." } },
+            { "@type": "Question", name: "How does Japanese whiskey compare to Scottish whisky?", acceptedAnswer: { "@type": "Answer", text: "Both follow similar production, but Japanese whiskey emphasizes subtlety, precision, and balance. Scotch often features bold flavors, while Japanese whiskey tends toward elegance and harmony." } },
+            { "@type": "Question", name: "Where can I try Japanese whiskey in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh Japanese Restaurant in Frisco and Lewisville offers an impressive selection of Japanese whiskeys. Try the Japanese whisky highball — Japan's favorite way to enjoy whiskey — paired with hibachi or sushi." } },
+            { "@type": "Question", name: "Are Japanese whiskeys expensive?", acceptedAnswer: { "@type": "Answer", text: "Premium Japanese whiskeys command high prices due to limited production. However, excellent entry-level options like Suntory Toki ($30-40) and Nikka Coffey Grain ($50-65) offer great quality at accessible prices." } },
+            { "@type": "Question", name: "What is the best way to drink Japanese whiskey?", acceptedAnswer: { "@type": "Answer", text: "The Japanese highball (whisky with sparkling soda water over ice) is the most popular way. Neat or on the rocks with a single large ice cube also works well. Mizuwari (whisky with still water) is a popular dinner pairing style." } }
         ]
     }
 ];
@@ -112,28 +116,30 @@ export default function JapaneseWhiskeyGuide() {
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏆 Top Japanese Whiskey Brands</h2>
 
-                            <div className="space-y-6 my-8">
-                                <div className="bg-warm-ivory rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-charcoal mb-2">Suntory</h3>
-                                    <p className="text-charcoal/80 text-sm mb-3">Known for iconic Yamazaki and Hakushu distilleries, Suntory produces some of the finest Japanese single malts and blends. Their commitment to quality and innovation has made them a global leader.</p>
-                                    <p className="text-charcoal/70 text-xs font-semibold">Flagship: Yamazaki 12 Year Old</p>
-                                </div>
-                                <div className="bg-warm-ivory rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-charcoal mb-2">Nikka</h3>
-                                    <p className="text-charcoal/80 text-sm mb-3">Founded by Masataka Taketsuru, Nikka is celebrated for its Yoichi and Miyagikyo single malts. Their dedication to traditional methods and innovation has earned international acclaim.</p>
-                                    <p className="text-charcoal/70 text-xs font-semibold">Flagship: Yoichi 10 Year Old</p>
-                                </div>
-                                <div className="bg-warm-ivory rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-charcoal mb-2">Chichibu</h3>
-                                    <p className="text-charcoal/80 text-sm mb-3">A newer player that quickly gained recognition for innovative and high-quality whiskeys. Despite its youth, Chichibu's commitment to experimentation has earned a reputation for producing exciting, unique expressions.</p>
-                                    <p className="text-charcoal/70 text-xs font-semibold">Flagship: The Ichiro's Malt</p>
-                                </div>
-                                <div className="bg-warm-ivory rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-charcoal mb-2">Mars Shinshu</h3>
-                                    <p className="text-charcoal/80 text-sm mb-3">Nestled in the Japanese Alps, Mars Shinshu produces whiskeys showcasing unique terroir. Their distinct profiles, influenced by pristine environment and local ingredients, appeal to those seeking something truly special.</p>
-                                    <p className="text-charcoal/70 text-xs font-semibold">Flagship: Mars Iwai</p>
-                                </div>
-                            </div>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Brand</th><th className="p-3 text-left">Flagship Bottle</th><th className="p-3 text-left">Tasting Notes</th><th className="p-3 text-left">Price Range</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Suntory</td><td className="p-3">Yamazaki 12</td><td className="p-3">Honey, peach, oak</td><td className="p-3">$150–300</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Nikka</td><td className="p-3">Yoichi Single Malt</td><td className="p-3">Smoky, peaty, maritime</td><td className="p-3">$80–150</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Hakushu</td><td className="p-3">Hakushu 12</td><td className="p-3">Herbal, minty, fresh</td><td className="p-3">$120–200</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Chichibu</td><td className="p-3">Ichiro&apos;s Malt</td><td className="p-3">Fruity, spicy, complex</td><td className="p-3">$100–500+</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Mars Shinshu</td><td className="p-3">Mars Iwai</td><td className="p-3">Vanilla, caramel, soft</td><td className="p-3">$35–60</td></tr>
+                                    <tr><td className="p-3 font-semibold">Suntory (Entry)</td><td className="p-3">Toki</td><td className="p-3">Light, citrus, clean</td><td className="p-3">$30–40</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍸 How to Drink Japanese Whiskey</h2>
+                            <p className="text-charcoal/80 mb-4">There&apos;s no wrong way, but here are the most popular serving styles in Japan:</p>
+                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Style</th><th className="p-3 text-left">How It&apos;s Made</th><th className="p-3 text-left">Best With</th></tr></thead>
+                                <tbody className="text-charcoal/80">
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Highball</td><td className="p-3">Whisky + sparkling soda, tall glass</td><td className="p-3">Hibachi, fried foods</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Neat</td><td className="p-3">Room temperature, no ice</td><td className="p-3">Premium single malts</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">On the Rocks</td><td className="p-3">One large ice cube</td><td className="p-3">After dinner, savoring</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Mizuwari</td><td className="p-3">Whisky + still water (1:2 ratio)</td><td className="p-3">Sushi, light dishes</td></tr>
+                                    <tr><td className="p-3 font-semibold">Oyuwari</td><td className="p-3">Whisky + hot water</td><td className="p-3">Winter, warm dishes</td></tr>
+                                </tbody>
+                            </table>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 Global Impact</h2>
                             <p className="text-charcoal/80 mb-6">The rise of Japanese whiskey has profoundly impacted the global whiskey market. As demand continues to grow, distillers are expanding production and exploring new markets, leading to increased competition and innovation that benefits whiskey lovers worldwide. Discover more about premium Japanese beverages in our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link>.</p>
@@ -160,7 +166,7 @@ export default function JapaneseWhiskeyGuide() {
                                 </ProTip>
 
                                 <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+                                <LocationCTA location="both" />
                             </div>
                         </article>
 
