@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Top Baby Shower Venues: Best Places to Host | Jinbeh",
@@ -51,6 +51,11 @@ const faqs = [
     question: "What should I consider when choosing an outdoor venue?",
     answer:
       "Always have a weather backup plan. Ensure parking, restrooms, and accessibility for all guests. Check if permits are required. Welcome to the table—we can help at Jinbeh if weather is a concern!",
+  },
+  {
+    question: "Are co-ed baby showers popular?",
+    answer:
+      "Yes! Co-ed baby showers have become increasingly popular. Hibachi dining is perfect for mixed-gender celebrations because it's interactive, entertaining, and appeals to everyone. The chef performance gives guests something to enjoy together, making it a natural icebreaker for groups that may not know each other well.",
   },
 ];
 
@@ -403,7 +408,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

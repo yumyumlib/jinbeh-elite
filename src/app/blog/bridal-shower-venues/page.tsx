@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Best Places for Bridal Showers Near Me | Jinbeh",
@@ -51,6 +51,11 @@ const faqs = [
     question: "What matters most when choosing a venue?",
     answer:
       "Consider the bride's style, guest count, location, parking, weather backup, ambiance, and budget. Visit venues first. Welcome to the table at Jinbeh—we'll help celebrate in style!",
+  },
+  {
+    question: "Can I do bridal shower games at a restaurant venue?",
+    answer:
+      "Absolutely! Many bridal shower games work perfectly at restaurant venues. At Jinbeh, the hibachi chef performance itself becomes entertainment — guests love watching tricks and cheering together. Between courses, you can do tabletop games like bingo, trivia about the couple, or 'guess the wedding dress.' Just keep games compact since you'll be seated at your table.",
   },
 ];
 
@@ -395,7 +400,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug={slug} />
 

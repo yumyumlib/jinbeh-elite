@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
@@ -51,6 +51,11 @@ const faqs = [
     question: "Can I combine birthday deals with other promotions?",
     answer:
       "Most birthday deals can't mix with other coupons. Some restaurants allow happy hour stacking—check out Jinbeh's happy hour. Always call ahead to ask about combining promotions.",
+  },
+  {
+    question: "Do I need to show ID to get birthday freebies?",
+    answer:
+      "Most restaurants require a valid photo ID showing your birth date. Some loyalty programs verify through their app, so no ID is needed. At Jinbeh, simply mention your birthday when making a reservation and bring your ID when you visit. We'll take care of the rest and make sure you feel celebrated!",
   },
 ];
 
@@ -435,7 +440,7 @@ export default function FreeBirthdayFoodDealsPage() {
       </ProTip>
 
       <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       {/* Related Reading */}
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">

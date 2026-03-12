@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
     title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist | Jinbeh DFW",
@@ -44,6 +44,10 @@ const faqs = [
     {
         question: "What is the difference between Sapporo, Asahi, and Kirin?",
         answer: "Sapporo is smooth with a clean finish—great for beginners. Asahi Super Dry is ultra-crisp with a dry finish, making it refreshing with rich foods. Kirin Ichiban uses only first-press wort for a fuller, slightly sweeter flavor. All three are Japanese rice lagers, but each has a distinct character.",
+    },
+    {
+        question: "What non-alcoholic drinks pair well with sushi and hibachi?",
+        answer: "We offer Ramune (Japanese lemon-lime soda), hot and iced green tea, and Japanese soft drinks. Green tea is the traditional pairing — its clean, slightly bitter taste cleanses the palate between bites of sushi. For hibachi, a cold Ramune or iced tea is refreshing alongside the smoky grilled flavors.",
     },
 ];
 
@@ -204,7 +208,7 @@ export default function BeerHardSeltzer() {
             </ProTip>
 
             <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+            <LocationCTA location="both" />
         </ArticleLayout>
     );
 }
