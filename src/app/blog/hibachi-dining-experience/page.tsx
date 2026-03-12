@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
-import { Timeline, DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { Timeline, DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh",
@@ -66,6 +66,11 @@ const faqs = [
     question: "How long does a hibachi dinner take?",
     answer:
       "A typical hibachi dinner takes 45-60 minutes. The experience includes soup, fresh salad, appetizer, the chef's cooking show where they prepare your protein and sides right before you, and dessert. It's a leisurely, entertaining pace that allows you to savor both the food and the spectacular performance. Well worth the time!",
+  },
+  {
+    question: "How much should I tip my hibachi chef?",
+    answer:
+      "Standard restaurant tipping of 18-20% is customary for hibachi dining. Remember, your chef is both cooking your meal and performing entertainment. For exceptional performances or special occasions, 20-25% is a generous way to show appreciation. The tip is typically included on your regular check.",
   },
 ];
 
@@ -332,7 +337,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
     </ArticleLayout>
   );
 }

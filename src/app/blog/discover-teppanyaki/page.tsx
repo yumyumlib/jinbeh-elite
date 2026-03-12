@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -40,10 +40,14 @@ const faqs = [
         question: "Can I find authentic teppanyaki in the DFW area?",
         answer: "Yes! Jinbeh offers authentic teppanyaki experiences at our Frisco and Lewisville locations. Our chefs are trained in traditional Japanese cooking techniques and provide an engaging, family-friendly dining experience.",
     },
+    {
+        question: "Is teppanyaki good for vegetarians?",
+        answer: "Yes! Teppanyaki is great for vegetarians. Our chefs prepare tofu, mushrooms, zucchini, broccoli, onions, and fried rice on the griddle with the same entertaining performance. Just let us know when booking and we'll ensure a dedicated cooking area for your vegetarian meal.",
+    },
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Discover Teppanyaki: A Culinary Art Form", datePublished: "2026-01-21", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Discover Teppanyaki: A Culinary Art Form", datePublished: "2026-01-21", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh" } },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
             "@type": "Question",
@@ -146,7 +150,7 @@ export default function DiscoverTeppanyaki() {
                             </p>
 
                             <PillarCTA type="vip" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
 
                             <div className="mt-12 p-8 bg-gradient-to-r from-accent-red to-deep-indigo rounded-2xl text-center text-white">
                                 <h3 className="text-2xl font-heading font-bold mb-4">🔥 Ready for Teppanyaki?</h3>

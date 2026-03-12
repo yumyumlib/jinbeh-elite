@@ -56,6 +56,11 @@ const faqs = [
     answer:
       "Yes! Teppanyaki tables seat 8-10 guests. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We recommend reservations, especially on weekends. We sometimes combine smaller parties—you might make new friends!",
   },
+  {
+    question: "Can I request specific tricks from my hibachi chef?",
+    answer:
+      "Absolutely! Our chefs love when guests engage. Popular requests include the onion volcano, the shrimp toss (catch it in your mouth!), and the flaming tower. Let your chef know it's a special occasion and they'll amp up the show. Every performance is unique!",
+  },
 ];
 
 

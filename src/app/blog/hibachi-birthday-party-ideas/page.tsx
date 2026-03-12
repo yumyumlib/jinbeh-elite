@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 export const metadata: Metadata = {
   title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide | Jinbeh",
@@ -57,6 +57,11 @@ const faqs = [
     question: "Can we bring decorations or special items for the birthday person?",
     answer:
       "We love celebrating! Bring signs, balloons, or special items. Let us know in advance about any decorations so we can help incorporate them into the experience. Our team will work with you to make the birthday person feel extra special.",
+  },
+  {
+    question: "Can I bring my own birthday cake to Jinbeh?",
+    answer:
+      "Yes! You're welcome to bring your own birthday cake or cupcakes. Just let us know when you make your reservation so we can have plates and utensils ready. Many guests bring cake and enjoy it after the hibachi show — it's the perfect ending to a memorable celebration.",
   },
 ];
 
@@ -520,7 +525,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
       </ProTip>
 
       <PillarCTA type="hub" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
 
       <RelatedArticles currentSlug="hibachi-birthday-party-ideas" />
     </ArticleLayout>

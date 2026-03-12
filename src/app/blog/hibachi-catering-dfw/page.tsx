@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
-import { DidYouKnow, ProTip, LocationCTA , PillarCTA } from "@/components/ArticleEnhancements";
+import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
@@ -44,10 +44,14 @@ const faqs = [
         question: "Can you accommodate dietary restrictions?",
         answer: "Absolutely! Let us know about any allergies or dietary preferences (vegetarian, gluten-free, etc.) when you book, and our chefs will customize the menu accordingly.",
     },
+    {
+        question: "What areas does Jinbeh cater to in DFW?",
+        answer: "We serve the entire Dallas-Fort Worth metroplex including Frisco, Plano, McKinney, Allen, Lewisville, Flower Mound, Carrollton, Dallas, and surrounding areas. Travel fees may apply for locations beyond 30 miles from our restaurants. Contact us for details about your specific venue.",
+    },
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Hibachi Catering DFW: Party & Event Services", datePublished: "2026-01-24", author: { "@type": "Organization", name: "Jinbeh" } },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Hibachi Catering DFW: Party & Event Services", datePublished: "2026-01-24", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh" } },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({
             "@type": "Question",
@@ -145,7 +149,7 @@ export default function HibachiCatering() {
                             </p>
 
                             <PillarCTA type="catering" />
-                                    <LocationCTA location="both" />
+                            <LocationCTA location="both" />
                         </article>
 
                         <aside>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
-import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, MenuItemCard , PillarCTA } from "@/components/ArticleEnhancements";
+import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, MenuItemCard, PillarCTA } from "@/components/ArticleEnhancements";
 import { MealBuilder } from "@/components/MealBuilder";
 
 export const metadata: Metadata = {
@@ -59,6 +59,11 @@ const faqs = [
     question: "Which hibachi proteins have the most protein?",
     answer:
       "Steak and seafood like salmon and scallops have the most protein. Shrimp is excellent protein with lower calories. Chicken is a good lean choice too. Tell your chef your goals—we customize every plate.",
+  },
+  {
+    question: "Is hibachi keto-friendly?",
+    answer:
+      "Hibachi can absolutely be keto-friendly! Skip the fried rice and steamed rice, request double vegetables instead, and choose a protein like steak, chicken, or shrimp. Ask for sauces on the side since some contain sugar. A hibachi steak with extra veggies and no rice is a delicious low-carb meal under 500 calories.",
   },
 ];
 
@@ -658,7 +663,7 @@ export default function HibachiCaloriesGuidePage() {
       </p>
 
       <PillarCTA type="reservations" />
-                                    <LocationCTA location="both" />
+      <LocationCTA location="both" />
     </ArticleLayout>
   );
 }
