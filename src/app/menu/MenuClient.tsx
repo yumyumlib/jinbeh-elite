@@ -205,6 +205,65 @@ export default function MenuClient() {
                     </div>
                 </div>
             </section>
+            {/* Download PDF Menus */}
+            <section className="py-16 bg-warm-ivory">
+                <div className="container mx-auto px-6">
+                    <ScrollReveal>
+                        <h2 className="text-3xl font-heading font-bold text-charcoal text-center mb-4">
+                            Download Our Menus
+                        </h2>
+                        <p className="text-center text-charcoal/70 mb-12 max-w-xl mx-auto">
+                            View or download our complete PDF menus for each location.
+                        </p>
+                    </ScrollReveal>
+                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        {[
+                            {
+                                location: "Frisco",
+                                menus: [
+                                    { label: "Dinner Menu", url: "/menus/frisco/dinner-menu.pdf" },
+                                    { label: "Sushi Menu", url: "/menus/frisco/sushi-menu.pdf" },
+                                    { label: "Lunch Menu", url: "/menus/frisco/lunch-menu.pdf" },
+                                    { label: "Beverage Menu", url: "/menus/frisco-beverage-menu.pdf" },
+                                ],
+                            },
+                            {
+                                location: "Lewisville",
+                                menus: [
+                                    { label: "Dinner Menu", url: "/menus/lewisville/dinner-menu.pdf" },
+                                    { label: "Sushi Menu", url: "/menus/lewisville/sushi-menu.pdf" },
+                                    { label: "Lunch Menu", url: "/menus/lewisville/lunch-menu.pdf" },
+                                    { label: "Beverage Menu", url: "/menus/lewisville-beverage-menu.pdf" },
+                                ],
+                            },
+                        ].map((loc) => (
+                            <ScrollReveal key={loc.location}>
+                                <div className="bg-white rounded-2xl shadow-lg p-8">
+                                    <h3 className="font-heading text-xl font-bold text-charcoal mb-1">{loc.location}</h3>
+                                    <p className="text-sm text-charcoal/50 mb-5">PDF menus for {loc.location} location</p>
+                                    <div className="space-y-3">
+                                        {loc.menus.map((menu) => (
+                                            <a
+                                                key={menu.label}
+                                                href={menu.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-warm-ivory hover:bg-accent-red/5 border border-transparent hover:border-accent-red/20 transition-all group"
+                                            >
+                                                <svg className="w-5 h-5 text-accent-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                                </svg>
+                                                <span className="font-medium text-charcoal group-hover:text-accent-red transition-colors">{menu.label}</span>
+                                                <span className="ml-auto text-xs text-charcoal/40 group-hover:text-accent-red/60 transition-colors">PDF</span>
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
+                            </ScrollReveal>
+                        ))}
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
