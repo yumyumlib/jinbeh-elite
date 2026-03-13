@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 // Note: Metadata is defined at the bottom after the component for proper export
@@ -299,14 +300,20 @@ export default function OrderOnlinePage() {
 
                             {/* Right: Visual Element */}
                             <RevealSection direction="right" delay={200}>
-                                <div className="relative h-96 bg-gradient-to-br from-accent-red/20 to-deep-indigo/20 rounded-3xl overflow-hidden border-4 border-soft-gold/30">
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="text-center">
-                                            <div className="text-9xl mb-4">🍱</div>
-                                            <p className="text-2xl font-heading font-bold text-white">
-                                                Fresh. Fast. Delicious.
-                                            </p>
-                                        </div>
+                                <div className="relative h-96 rounded-3xl overflow-hidden border-4 border-soft-gold/30 shadow-2xl">
+                                    <Image
+                                        src="/images/food/jinbeh_sushi_tray.jpg"
+                                        alt="Fresh Jinbeh sushi platter featuring an assortment of nigiri and specialty rolls"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                                        <p className="text-2xl font-heading font-bold text-white">
+                                            Fresh. Fast. Delicious.
+                                        </p>
                                     </div>
                                 </div>
                             </RevealSection>
