@@ -155,7 +155,7 @@ export default function Header({ location }: HeaderProps) {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden xl:flex items-center gap-1" ref={dropdownRef} aria-label="Main navigation">
+            <nav className="hidden xl:flex items-center gap-1.5" ref={dropdownRef} aria-label="Main navigation">
               {navItems.map((item) => (
                 <div
                   key={item.label}
@@ -163,16 +163,6 @@ export default function Header({ location }: HeaderProps) {
                   onMouseEnter={() => (item.dropdown || item.megaMenu) && handleMouseEnter(item.label)}
                   onMouseLeave={() => (item.dropdown || item.megaMenu) && handleMouseLeave()}
                 >
-                  {/* Visual separator before utility links */}
-                  {item.label === "About" && (
-                    <span className="flex items-center mx-2" aria-hidden="true">
-                      <span className="w-px h-4 bg-white/25"></span>
-                    </span>
-                  )}
-                  {/* Dot separator between VIP Club and Gift Cards */}
-                  {(item.label === "VIP Club" || item.label === "Gift Cards") && (
-                    <span className="text-white/30 mx-0.5 select-none text-xs" aria-hidden="true">·</span>
-                  )}
                   {item.megaMenu ? (
                     <>
                       <button
@@ -592,12 +582,89 @@ export default function Header({ location }: HeaderProps) {
             }
 
             if (item.dropdown) {
+              // Celebrations uses a wide multi-column layout with section headers
+              if (item.label === "Celebrations") {
+                // Group items by sectionHeader
+                const sections: { header: string; items: typeof item.dropdown }[] = [];
+                let currentSection: { header: string; items: typeof item.dropdown } = { header: "", items: [] };
+                item.dropdown.forEach((subItem) => {
+                  if (subItem.sectionHeader) {
+                    if (currentSection.items.length > 0) {
+                      sections.push(currentSection);
+                    }
+                    currentSection = { header: subItem.sectionHeader, items: [subItem] };
+                  } else {
+                    currentSection.items.push(subItem);
+                  }
+                });
+                if (currentSection.items.length > 0) sections.push(currentSection);
+
+                // Find the "All Celebrations" item (no sectionHeader, first item)
+                const allCelebrations = item.dropdown.find(d => !d.sectionHeader && d.label === "All Celebrations");
+
+                return (
+                  <div
+                    key={item.label}
+                    role="menu"
+                    aria-label={`${item.label} submenu`}
+                    className="hidden xl:block fixed bg-gradient-to-b from-white to-warm-ivory/30 rounded-xl shadow-2xl border border-stone-200/80 opacity-100 pointer-events-auto"
+                    style={{ top: dropdownPos.top, left: Math.max(16, dropdownPos.left - 80), width: 640, zIndex: 99999 }}
+                    onMouseEnter={() => handleMouseEnter(item.label)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {allCelebrations && (
+                      <div className="px-4 pt-3 pb-2 border-b border-stone-100">
+                        <a
+                          href={allCelebrations.href}
+                          className="inline-flex items-center gap-2 text-sm font-bold text-accent-red hover:text-accent-red/80 transition-colors"
+                          role="menuitem"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          🎉 Browse All Celebrations &rarr;
+                        </a>
+                      </div>
+                    )}
+                    <div className="grid grid-cols-3 gap-0 p-3">
+                      {sections.map((section) => (
+                        <div key={section.header} className="px-1">
+                          <span className="block px-2 pt-1 pb-1.5 text-[10px] font-bold text-charcoal/50 uppercase tracking-widest">
+                            {section.header}
+                          </span>
+                          {section.items.map((subItem) => (
+                            <a
+                              key={subItem.label}
+                              href={subItem.href}
+                              className="block px-2 py-1.5 rounded-md text-sm text-charcoal/80 hover:text-accent-red hover:bg-warm-ivory transition-all"
+                              role="menuitem"
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              {subItem.label}
+                            </a>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                    {item.footerLinks && item.footerLinks.length > 0 && (
+                      <div className="border-t border-stone-100 px-4 py-2 bg-warm-ivory/50 rounded-b-xl flex items-center gap-4">
+                        {item.footerLinks.map((fl) => (
+                          <a key={fl.label} href={fl.href} className="flex items-center gap-2 text-sm text-charcoal/70 hover:text-accent-red transition-colors font-medium" role="menuitem" onClick={() => setActiveDropdown(null)}>
+                            🍽️ {fl.label}
+                            {fl.description && <span className="text-xs text-charcoal/40">{fl.description}</span>}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              // Standard narrow dropdown for Menu, Dining, Locations
               return (
                 <div
                   key={item.label}
                   role="menu"
                   aria-label={`${item.label} submenu`}
-                  className="hidden xl:block fixed w-72 bg-white rounded-xl shadow-2xl border border-stone-200 opacity-100 pointer-events-auto"
+                  className="hidden xl:block fixed w-72 bg-gradient-to-b from-white to-warm-ivory/30 rounded-xl shadow-2xl border border-stone-200/80 opacity-100 pointer-events-auto"
                   style={{ top: dropdownPos.top, left: dropdownPos.left, zIndex: 99999 }}
                   onMouseEnter={() => handleMouseEnter(item.label)}
                   onMouseLeave={handleMouseLeave}

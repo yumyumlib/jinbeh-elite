@@ -3,6 +3,7 @@ export interface DropdownItem {
     href: string;
     description?: string;
     isExternal?: boolean;
+    sectionHeader?: string; // Optional section header displayed above this item
 }
 
 export interface MegaMenuSection {
@@ -22,14 +23,6 @@ export interface NavItem {
 export function getNavItems(loc: string): NavItem[] {
     return [
         {
-            label: "Locations",
-            href: "#",
-            dropdown: [
-                { label: "Jinbeh Frisco", href: "/frisco", description: "Near Stonebriar Centre • (214) 619-1200" },
-                { label: "Jinbeh Lewisville", href: "/lewisville", description: "Off I-35E near Vista Ridge • (214) 488-2224" },
-            ],
-        },
-        {
             label: "Menu",
             href: `/${loc}/menu`,
             dropdown: [
@@ -48,13 +41,44 @@ export function getNavItems(loc: string): NavItem[] {
             ],
         },
         {
+            label: "Celebrations",
+            href: "/celebrations",
+            dropdown: [
+                { label: "All Celebrations", href: "/celebrations", description: "Browse all events" },
+                { label: "Birthday Parties", href: "/celebrations/birthday", description: "Make it memorable", sectionHeader: "Life Events" },
+                { label: "Anniversary Dinners", href: "/celebrations/anniversary", description: "Romantic experiences" },
+                { label: "Graduation", href: "/celebrations/graduation", description: "Celebrate achievements" },
+                { label: "Baby Shower", href: "/celebrations/baby-shower", description: "Welcome the newest arrival" },
+                { label: "Rehearsal Dinner", href: "/celebrations/rehearsal-dinner", description: "The night before the big day" },
+                { label: "Date Night", href: "/celebrations/date-night", description: "Perfect evening out", sectionHeader: "Date & Social" },
+                { label: "Family Gatherings", href: "/celebrations/family-gatherings", description: "Bring the family together" },
+                { label: "Team Building", href: "/celebrations/team-building", description: "Bond with your team" },
+                { label: "Valentine's Day", href: "/celebrations/valentines-day", description: "Romance & roses", sectionHeader: "Holidays" },
+                { label: "Mother's Day", href: "/celebrations/mothers-day", description: "Celebrate mom" },
+                { label: "Father's Day", href: "/celebrations/fathers-day", description: "Celebrate dad" },
+                { label: "Thanksgiving", href: "/celebrations/thanksgiving", description: "Gather & give thanks" },
+                { label: "Christmas", href: "/celebrations/christmas", description: "Holiday feast" },
+                { label: "Lunar New Year", href: "/celebrations/lunar-new-year", description: "Ring in the new year" },
+                { label: "Diwali", href: "/celebrations/diwali", description: "Festival of lights" },
+                { label: "Mid-Autumn Festival", href: "/celebrations/mid-autumn-festival", description: "Harvest celebration" },
+                { label: "Corporate Events", href: "/celebrations/corporate-events", description: "Team building & parties", sectionHeader: "Corporate" },
+                { label: "Holiday Parties", href: "/celebrations/holiday-parties", description: "Seasonal celebrations" },
+                { label: "Asian Restaurant Month", href: "/celebrations/asian-restaurant-month", description: "Celebrate culinary heritage", sectionHeader: "Special Events" },
+                { label: "National Fried Rice Day", href: "/celebrations/national-fried-rice-day", description: "A day for fried rice lovers" },
+            ],
+            footerLinks: [
+                { label: "Private Dining", href: "/private-dining", description: "Exclusive group dining" },
+            ],
+        },
+        {
             label: "Dining",
             href: "#",
             dropdown: [
                 { label: "Happy Hour", href: "/happy-hour", description: "Daily specials at the bar" },
-                { label: "Private Dining", href: "/private-dining", description: "Groups & events" },
-                { label: "Catering", href: "/catering", description: "Bring Jinbeh to you" },
+                { label: "Catering", href: "/catering", description: "Bring Jinbeh to your event" },
+                { label: "Private Dining", href: "/private-dining", description: "Groups & exclusive events" },
                 { label: "Order Online", href: "/order-online", description: "Delivery & takeout" },
+                { label: "Gift Cards", href: "/gift-cards", description: "The perfect present" },
             ],
             footerLinks: [
                 { label: "Catering Guide", href: "/blog/hibachi-catering-dfw", description: "Plan your event" },
@@ -62,17 +86,11 @@ export function getNavItems(loc: string): NavItem[] {
             ],
         },
         {
-            label: "Celebrations",
-            href: "/celebrations",
+            label: "Locations",
+            href: "#",
             dropdown: [
-                { label: "All Celebrations", href: "/celebrations", description: "Browse all events" },
-                { label: "Birthday Parties", href: "/celebrations/birthday", description: "Make it memorable" },
-                { label: "Anniversary Dinners", href: "/celebrations/anniversary", description: "Romantic experiences" },
-                { label: "Date Night", href: "/celebrations/date-night", description: "Perfect evening out" },
-                { label: "Graduation", href: "/celebrations/graduation", description: "Celebrate achievements" },
-                { label: "Corporate Events", href: "/celebrations/corporate-events", description: "Team building & parties" },
-                { label: "Holiday Parties", href: "/celebrations/holiday-parties", description: "Seasonal celebrations" },
-                { label: "Private Dining", href: "/private-dining", description: "Exclusive group dining" },
+                { label: "Jinbeh Frisco", href: "/frisco", description: "Near Stonebriar Centre • (214) 619-1200" },
+                { label: "Jinbeh Lewisville", href: "/lewisville", description: "Off I-35E near Vista Ridge • (214) 488-2224" },
             ],
         },
         {
@@ -121,8 +139,6 @@ export function getNavItems(loc: string): NavItem[] {
                 },
             ],
         },
-        { label: "About", href: "/about" },
         { label: "VIP Club", href: "/vip" },
-        { label: "Gift Cards", href: "/gift-cards" },
     ];
 }
