@@ -570,9 +570,9 @@ export default function Header({ location }: HeaderProps) {
                       View All Articles &rarr;
                     </a>
                     <div className="flex items-center gap-3">
-                      {["Celebrations", "Catering", "Tips"].map((cat) => (
-                        <a key={cat} href={`/blog/category/${cat.toLowerCase()}`} className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all" onClick={() => setActiveDropdown(null)}>
-                          {cat}
+                      {[{ label: "Celebrations", slug: "celebrations" }, { label: "Cuisine", slug: "cuisine" }, { label: "Local Guides", slug: "local" }].map((cat) => (
+                        <a key={cat.slug} href={`/blog/category/${cat.slug}`} className="text-xs px-2.5 py-1 rounded-full bg-white border border-stone-200 text-charcoal/70 hover:border-accent-red hover:text-accent-red transition-all" onClick={() => setActiveDropdown(null)}>
+                          {cat.label}
                         </a>
                       ))}
                     </div>

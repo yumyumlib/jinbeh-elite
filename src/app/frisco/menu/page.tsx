@@ -326,8 +326,8 @@ export default function FriscoMenuPage() {
               restaurantId={locationsData.locations.frisco.reservation.rid}
               location="frisco"
               buttonText="Reserve at Frisco"
-              variant="primary"
-              className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-block"
+              variant="secondary"
+              className="bg-white !text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-block"
             />
           </div>
         </section>

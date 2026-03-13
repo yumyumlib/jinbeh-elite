@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Image from "next/image";
 import Link from "next/link";
+import CateringForm from "@/components/CateringForm";
 
 export const metadata: Metadata = {
   title: "Catering | Jinbeh Japanese Restaurant | Hibachi & Sushi Catering DFW",
@@ -290,90 +291,7 @@ export default function CateringPage() {
                 </p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold mb-4">Contact Us Directly</h3>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3">
-                        <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <div>
-                          <p className="text-sm text-warm-ivory/80">Frisco</p>
-                          <a href="tel:2146191200" className="text-white hover:text-soft-gold">(214) 619-1200</a>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <div>
-                          <p className="text-sm text-warm-ivory/80">Lewisville</p>
-                          <a href="tel:2144882224" className="text-white hover:text-soft-gold">(214) 488-2224</a>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <svg className="w-5 h-5 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <div>
-                          <p className="text-sm text-warm-ivory/80">Email</p>
-                          <a href="mailto:YumYumJinbeh@gmail.com" className="text-white hover:text-soft-gold">YumYumJinbeh@gmail.com</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-heading text-xl font-semibold mb-4">What to Include</h3>
-                    <ul className="space-y-2 text-warm-ivory/80">
-                      <li className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Event date and time
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Number of guests
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Event location/delivery address
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Type of event
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Dietary restrictions
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="text-center">
-                  <a
-                    href="mailto:YumYumJinbeh@gmail.com?subject=Catering%20Inquiry"
-                    className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
-                  >
-                    Send Catering Inquiry
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
+              <CateringForm />
             </div>
           </div>
         </section>
