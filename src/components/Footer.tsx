@@ -10,8 +10,8 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-warm-ivory py-4">
-        <div className="container mx-auto px-6">
+      <div className="bg-warm-ivory py-12">
+        <div className="container mx-auto px-8">
           <VipClubForm />
         </div>
       </div>

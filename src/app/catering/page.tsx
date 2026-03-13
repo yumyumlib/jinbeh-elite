@@ -133,8 +133,8 @@ export default function CateringPage() {
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
-                From corporate lunches to milestone <Link href="/celebrations" className="text-soft-gold hover:underline">celebrations</Link>, let Jinbeh&apos;s
-                authentic Japanese cuisine make your event unforgettable. Whether you need <Link href="/blog/offsite-hibachi-catering" className="text-soft-gold hover:underline">offsite hibachi catering</Link> or an in-house <Link href="/private-dining" className="text-soft-gold hover:underline">private dining</Link> experience, we&apos;ve got you covered.
+                From corporate lunches to milestone <Link href="/celebrations" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">celebrations</Link>, let Jinbeh&apos;s
+                authentic Japanese cuisine make your event unforgettable. Whether you need <Link href="/blog/offsite-hibachi-catering" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">offsite hibachi catering</Link> or an in-house <Link href="/private-dining" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">private dining</Link> experience, we&apos;ve got you covered.
               </p>
             </RevealSection>
             <RevealSection delay={300}>
@@ -159,7 +159,7 @@ export default function CateringPage() {
                 Japanese Catering Frisco, Lewisville &amp; DFW
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Choose from our popular sushi catering Dallas platters, hibachi catering DFW party trays, or let us create something custom for your event. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline font-medium">complete hibachi catering guide</Link> for planning tips.
+                Choose from our popular sushi catering Dallas platters, hibachi catering DFW party trays, or let us create something custom for your event. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium">complete hibachi catering guide</Link> for planning tips.
               </p>
             </div>
 
@@ -236,7 +236,7 @@ export default function CateringPage() {
                   Fresh & Quality
                 </h3>
                 <p className="text-charcoal/70 pointer-events-none">
-                  The same fresh ingredients and expert preparation you expect from our restaurants. See our full <Link href="/menu" className="text-accent-red hover:underline font-medium pointer-events-auto">menu</Link> for available selections.
+                  The same fresh ingredients and expert preparation you expect from our restaurants. See our full <Link href="/menu" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium pointer-events-auto">menu</Link> for available selections.
                 </p>
               </MagicCard>
 
@@ -270,7 +270,7 @@ export default function CateringPage() {
                   Any Size Event
                 </h3>
                 <p className="text-charcoal/70 pointer-events-none">
-                  From intimate gatherings to <Link href="/blog/large-group-dining" className="text-accent-red hover:underline font-medium pointer-events-auto">large group dining</Link> events, we scale to fit your needs. We also offer <Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline font-medium pointer-events-auto">semi-private dining spaces</Link> for more exclusive occasions.
+                  From intimate gatherings to <Link href="/blog/large-group-dining" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium pointer-events-auto">large group dining</Link> events, we scale to fit your needs. We also offer <Link href="/blog/restaurants-private-rooms" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium pointer-events-auto">semi-private dining spaces</Link> for more exclusive occasions.
                 </p>
               </MagicCard>
             </div>
@@ -394,7 +394,7 @@ export default function CateringPage() {
               Prefer to Dine With Us?
             </h2>
             <p className="text-white/90 max-w-2xl mx-auto mb-8">
-              Visit either location for the full Jinbeh experience – hibachi entertainment and all! Consider a <Link href="/gift-cards" className="text-soft-gold hover:underline">Jinbeh gift card</Link> for the catering lover in your life.
+              Visit either location for the full Jinbeh experience – hibachi entertainment and all! Consider a <Link href="/gift-cards" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold">Jinbeh gift card</Link> for the catering lover in your life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
