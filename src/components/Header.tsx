@@ -607,7 +607,7 @@ export default function Header({ location }: HeaderProps) {
                     key={item.label}
                     role="menu"
                     aria-label={`${item.label} submenu`}
-                    className="hidden xl:block fixed bg-gradient-to-b from-white to-warm-ivory/30 rounded-xl shadow-2xl border border-stone-200/80 opacity-100 pointer-events-auto"
+                    className="hidden xl:block fixed bg-white/[0.97] backdrop-blur-xl rounded-xl shadow-2xl border border-stone-200/80 opacity-100 pointer-events-auto"
                     style={{ top: dropdownPos.top, left: Math.max(16, dropdownPos.left - 80), width: 640, zIndex: 99999 }}
                     onMouseEnter={() => handleMouseEnter(item.label)}
                     onMouseLeave={handleMouseLeave}
@@ -645,13 +645,16 @@ export default function Header({ location }: HeaderProps) {
                       ))}
                     </div>
                     {item.footerLinks && item.footerLinks.length > 0 && (
-                      <div className="border-t border-stone-100 px-4 py-2 bg-warm-ivory/50 rounded-b-xl flex items-center gap-4">
+                      <div className="border-t border-stone-100 px-4 py-2.5 bg-warm-ivory/60 rounded-b-xl flex items-center gap-6">
                         {item.footerLinks.map((fl) => (
                           <a key={fl.label} href={fl.href} className="flex items-center gap-2 text-sm text-charcoal/70 hover:text-accent-red transition-colors font-medium" role="menuitem" onClick={() => setActiveDropdown(null)}>
                             🍽️ {fl.label}
                             {fl.description && <span className="text-xs text-charcoal/40">{fl.description}</span>}
                           </a>
                         ))}
+                        <a href="/catering" className="ml-auto flex items-center gap-1.5 text-sm font-semibold text-accent-red hover:text-accent-red/80 transition-colors" role="menuitem" onClick={() => setActiveDropdown(null)}>
+                          🎊 Catering &rarr;
+                        </a>
                       </div>
                     )}
                   </div>
@@ -664,7 +667,7 @@ export default function Header({ location }: HeaderProps) {
                   key={item.label}
                   role="menu"
                   aria-label={`${item.label} submenu`}
-                  className="hidden xl:block fixed w-72 bg-gradient-to-b from-white to-warm-ivory/30 rounded-xl shadow-2xl border border-stone-200/80 opacity-100 pointer-events-auto"
+                  className="hidden xl:block fixed w-72 bg-white/[0.97] backdrop-blur-xl rounded-xl shadow-2xl border border-stone-200/80 opacity-100 pointer-events-auto"
                   style={{ top: dropdownPos.top, left: dropdownPos.left, zIndex: 99999 }}
                   onMouseEnter={() => handleMouseEnter(item.label)}
                   onMouseLeave={handleMouseLeave}
