@@ -98,7 +98,7 @@ const faqSchema = {
       "name": "What are the most popular cocktails & sake at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Guest favorites include Sake Bomb ($8.00), Jinbeh Punch ($12.00), Tokyo Mule ($14.00), Lychee Martini ($13.00). These are consistently rated as the best cocktails & sake in Frisco."
+        "text": "Guest favorites include Sake Bomb, Jinbeh Punch, Tokyo Mule, and Lychee Martini. These are consistently rated as the best cocktails & sake in Frisco."
       }
     },
     {
@@ -119,10 +119,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What are cocktails & sake prices at Jinbeh Frisco?",
+      "name": "Where can I view the cocktails & sake menu for Jinbeh Frisco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cocktails & Sake prices range from 8.00 to 18.00. See our full menu for complete pricing."
+        "text": "You can view our cocktails & sake menu online or download the full beverage PDF menu. Visit us for the latest selections and seasonal specials."
       }
     }
   ]
@@ -189,7 +189,7 @@ export default function CocktailsFriscoPage() {
                 Our Cocktails & Sake Selection
               </h2>
               <p className="text-charcoal/70 max-w-2xl mx-auto">
-                5 options ranging from 8.00 to 18.00
+                Curated Japanese-inspired drinks and premium sakes
               </p>
             </div>
 
@@ -214,9 +214,8 @@ export default function CocktailsFriscoPage() {
                   <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
                     Classic sake dropped into cold beer
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$8.00</span>
-                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  <div className="flex justify-end items-center">
+                    <span className="text-accent-red font-medium text-sm group-hover:translate-x-1 transition-transform">View details →</span>
                   </div>
                 </div>
               </Link>
@@ -240,9 +239,8 @@ export default function CocktailsFriscoPage() {
                   <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
                     House specialty tropical cocktail
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$12.00</span>
-                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  <div className="flex justify-end items-center">
+                    <span className="text-accent-red font-medium text-sm group-hover:translate-x-1 transition-transform">View details →</span>
                   </div>
                 </div>
               </Link>
@@ -266,9 +264,8 @@ export default function CocktailsFriscoPage() {
                   <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
                     Japanese whiskey with ginger and lime
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$14.00</span>
-                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  <div className="flex justify-end items-center">
+                    <span className="text-accent-red font-medium text-sm group-hover:translate-x-1 transition-transform">View details →</span>
                   </div>
                 </div>
               </Link>
@@ -292,9 +289,8 @@ export default function CocktailsFriscoPage() {
                   <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
                     Vodka with lychee and a floral finish
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$13.00</span>
-                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  <div className="flex justify-end items-center">
+                    <span className="text-accent-red font-medium text-sm group-hover:translate-x-1 transition-transform">View details →</span>
                   </div>
                 </div>
               </Link>
@@ -318,9 +314,8 @@ export default function CocktailsFriscoPage() {
                   <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
                     Tasting of three premium sakes
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$18.00</span>
-                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
+                  <div className="flex justify-end items-center">
+                    <span className="text-accent-red font-medium text-sm group-hover:translate-x-1 transition-transform">View details →</span>
                   </div>
                 </div>
               </Link>
@@ -387,7 +382,7 @@ export default function CocktailsFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Guest favorites include Sake Bomb (\$8.00), Jinbeh Punch (\$12.00), Tokyo Mule (\$14.00), Lychee Martini (\$13.00). These are consistently rated as the best cocktails & sake in Frisco.
+                    Guest favorites include Sake Bomb, Jinbeh Punch, Tokyo Mule, and Lychee Martini. These are consistently rated as the best cocktails & sake in Frisco.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -418,7 +413,7 @@ export default function CocktailsFriscoPage() {
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
                   <summary className="flex justify-between items-center cursor-pointer list-none">
-                    <h3 className="font-medium text-charcoal pr-4">What are cocktails & sake prices at Jinbeh Frisco?</h3>
+                    <h3 className="font-medium text-charcoal pr-4">Where can I view the cocktails & sake menu?</h3>
                     <span className="text-accent-red group-open:rotate-180 transition-transform">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -426,7 +421,7 @@ export default function CocktailsFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Cocktails & Sake prices range from 8.00 to 18.00. See our full menu for complete pricing.
+                    You can view our cocktails & sake menu online or download the full beverage PDF menu. Visit us for the latest selections and seasonal specials.
                   </p>
                 </details>
               </div>
