@@ -94,7 +94,7 @@ const restaurantSchema = {
   hasMenu: location.menus.dinner,
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.2",
+    ratingValue: "4.3",
     reviewCount: "752",
     bestRating: "5",
     worstRating: "1",
