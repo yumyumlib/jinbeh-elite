@@ -295,8 +295,8 @@ export default function AboutPage() {
           <div className="container mx-auto px-6">
             <RevealSection>
               <QuoteStrip
-                quote="We've been coming here for over 20 years — we highly recommend them and will return soon!"
-                author="Real Google Review"
+                quote="I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be."
+                author="Alaina T. — Google Review"
               />
             </RevealSection>
           </div>

@@ -149,11 +149,11 @@ export default function BestHibachiDallasPage() {
 
       <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
         <p className="italic text-charcoal/80 mb-2">
-          "We've been coming here for over 20 years... The service is fantastic,
-          the cook was fun, approachable, knowledgeable & charismatic. We highly
-          recommend them and will return soon!"
+          &quot;I have gone here for my birthday every year since I was at least 7.
+          I&apos;m 24 now and celebrated my 24th there. Truly my favorite place
+          to be.&quot;
         </p>
-        <p className="text-sm text-charcoal/80">— Verified Guest Review</p>
+        <p className="text-sm text-charcoal/80">— Alaina T., Google Review</p>
       </div>
 
       <p>
