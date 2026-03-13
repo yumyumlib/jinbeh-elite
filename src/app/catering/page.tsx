@@ -319,7 +319,7 @@ export default function CateringPage() {
                         </svg>
                         <div>
                           <p className="text-sm text-warm-ivory/80">Email</p>
-                          <a href="mailto:frisco@jinbeh.com" className="text-white hover:text-soft-gold">frisco@jinbeh.com</a>
+                          <a href="mailto:YumYumJinbeh@gmail.com" className="text-white hover:text-soft-gold">YumYumJinbeh@gmail.com</a>
                         </div>
                       </div>
                     </div>
@@ -364,7 +364,7 @@ export default function CateringPage() {
 
                 <div className="text-center">
                   <a
-                    href="mailto:frisco@jinbeh.com?subject=Catering%20Inquiry"
+                    href="mailto:YumYumJinbeh@gmail.com?subject=Catering%20Inquiry"
                     className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
                   >
                     Send Catering Inquiry

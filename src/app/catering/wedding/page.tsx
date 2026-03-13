@@ -608,7 +608,7 @@ export default function WeddingCateringPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:frisco@jinbeh.com?subject=Wedding%20Catering%20Inquiry"
+                  href="mailto:YumYumJinbeh@gmail.com?subject=Wedding%20Catering%20Inquiry"
                   className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center gap-2 justify-center"
                 >
                   Email Us

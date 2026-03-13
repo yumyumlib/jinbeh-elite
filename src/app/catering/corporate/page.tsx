@@ -258,9 +258,8 @@ export default function CorporateCateringPage() {
               {corporatePackages.map((pkg, index) => (
                 <div
                   key={pkg.title}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                    }`}
                 >
                   <div className={`relative ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
@@ -449,7 +448,7 @@ export default function CorporateCateringPage() {
                         </svg>
                         <div>
                           <p className="text-sm text-warm-ivory/80">Email</p>
-                          <a href="mailto:catering@jinbeh.com" className="text-white hover:text-soft-gold font-semibold">catering@jinbeh.com</a>
+                          <a href="mailto:YumYumJinbeh@gmail.com" className="text-white hover:text-soft-gold font-semibold">YumYumJinbeh@gmail.com</a>
                         </div>
                       </div>
                     </div>
@@ -497,7 +496,7 @@ export default function CorporateCateringPage() {
                     Ready to elevate your next corporate event?
                   </p>
                   <a
-                    href="mailto:catering@jinbeh.com?subject=Corporate%20Catering%20Inquiry"
+                    href="mailto:YumYumJinbeh@gmail.com?subject=Corporate%20Catering%20Inquiry"
                     className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center gap-2"
                   >
                     Send Corporate Catering Inquiry
