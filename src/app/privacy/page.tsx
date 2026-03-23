@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Privacy Policy | Jinbeh Japanese Restaurant",
   description: "Privacy policy for Jinbeh Japanese Restaurant. Learn how we collect, use, and protect your personal information.",
   keywords: ["jinbeh privacy policy", "jinbeh data protection", "restaurant privacy policy"],
+  alternates: {
+    canonical: "https://jinbeh.com/privacy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

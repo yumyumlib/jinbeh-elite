@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Terms of Service | Jinbeh Japanese Restaurant",
   description: "Terms of Service for Jinbeh Japanese Restaurant website and services. Review our reservation policies, allergen information, and website usage guidelines.",
   keywords: ["jinbeh terms of service", "restaurant terms and conditions", "jinbeh reservation policy"],
+  alternates: {
+    canonical: "https://jinbeh.com/terms",
+  },
 };
 
 export default function TermsOfServicePage() {
