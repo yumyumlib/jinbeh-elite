@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Corporate Catering | Jinbeh Japanese Restaurant | Frisco, Dallas, DFW",
   description:
-    "Elevate your corporate events with authentic Japanese catering. Office lunches, client meetings, team celebrations, and business events. 37 years of excellence serving Fortune 500 companies.",
+    "Elevate your corporate events with authentic Japanese catering. Office lunches, client meetings, team celebrations, and business events. 38 years of excellence serving Fortune 500 companies.",
   keywords: [
     "corporate catering frisco",
     "business catering japanese",
@@ -71,7 +71,7 @@ const faqSchema = {
       "name": "Does Jinbeh have experience catering to Fortune 500 companies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! With 37 years of excellence in Japanese cuisine, Jinbeh has successfully catered to numerous corporate clients and Fortune 500 companies. We understand the importance of professional service and exceptional quality.",
+        "text": "Yes! With 38 years of excellence in Japanese cuisine, Jinbeh has successfully catered to numerous corporate clients and Fortune 500 companies. We understand the importance of professional service and exceptional quality.",
       },
     },
   ],
@@ -173,7 +173,7 @@ export default function CorporateCateringPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script
           type="application/ld+json"
@@ -196,7 +196,7 @@ export default function CorporateCateringPage() {
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
               Premium Japanese catering that impresses clients, celebrates teams, and creates
-              unforgettable business dining moments. Trusted by DFW corporations for 37 years.
+              unforgettable business dining moments. Trusted by DFW corporations for 38 years.
             </p>
             <a
               href="#contact"
@@ -316,7 +316,7 @@ export default function CorporateCateringPage() {
                   Trusted by Corporate Leaders
                 </h2>
                 <p className="text-lg text-charcoal/70">
-                  37 years of proven excellence serving businesses across DFW
+                  38 years of proven excellence serving businesses across DFW
                 </p>
               </div>
 

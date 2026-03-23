@@ -265,7 +265,7 @@ export default function EventsPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script
           type="application/ld+json"
@@ -294,7 +294,7 @@ export default function EventsPage() {
               Make Your Event Unforgettable
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline mb-8">
-              Looking for an event venue Frisco TX or a private party restaurant Frisco families love? From intimate gatherings to grand celebrations, Jinbeh's private dining venues and hibachi entertainment create memories that last a lifetime.
+              From intimate gatherings to grand celebrations, our private dining rooms and hibachi entertainment create memories that last a lifetime.
             </p>
             <Link
               href="#inquiry"
@@ -310,10 +310,10 @@ export default function EventsPage() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Events We Host at Our Private Dining Room Frisco & Lewisville
+                Events We Host
               </h2>
               <p className="text-lg text-charcoal/70">
-                Whatever the occasion — corporate event venue DFW meetings, rehearsal dinner restaurant celebrations, baby shower venue Frisco parties, or team building event Frisco outings — Jinbeh is the perfect venue.
+                Whatever the occasion — corporate dinners, rehearsal celebrations, baby showers, or team outings — Jinbeh is the perfect venue.
               </p>
             </div>
 
@@ -360,7 +360,7 @@ export default function EventsPage() {
                 Elegant Venues for Every Celebration
               </h2>
               <p className="text-lg text-charcoal/70">
-                Both Jinbeh locations feature dedicated private dining rooms designed for unforgettable events, from hibachi catering DFW parties to wedding rehearsal dinner celebrations. Need event catering Lewisville? We handle it all.
+                Both locations feature dedicated private dining rooms designed for unforgettable events — from hibachi parties to wedding celebrations. Need off-site catering? We handle that too.
               </p>
             </div>
 

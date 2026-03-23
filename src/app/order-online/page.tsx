@@ -143,6 +143,78 @@ const menuSchema = {
     ],
 };
 
+// FAQPage schema for rich results
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+        {
+            "@type": "Question",
+            name: "What are the best items to order for delivery from Jinbeh?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "We recommend ordering our sushi rolls, nigiri, and appetizers as they travel well during delivery. Our hibachi entrees can also be delivered but travel best with our special insulated packaging.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "How should I reheat my hibachi order?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "For hibachi entrees: Reheat in a 350\u00B0F oven for 10-12 minutes covered with foil to maintain moisture. For sushi and rolls: Keep chilled and eat within 2 hours of delivery for best quality. Rice-based dishes can be reheated in the microwave for 1-2 minutes.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Do you offer vegetarian options?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! We have excellent vegetarian hibachi options including vegetable combinations, edamame, vegetable sushi rolls (vegetable roll, avocado roll, cucumber roll), and miso soup. Most appetizers can also be made vegetarian.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Is there a minimum order for delivery?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Minimum order amounts vary by delivery platform and location. Minimums are set by the delivery platforms and typically range from $15\u2013$20. We recommend checking Uber Eats or Grubhub for current minimums.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can I order Jinbeh for a large party?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Absolutely! For orders of 15+ items, we recommend calling directly: Frisco (214) 619-1200 or Lewisville (214) 488-2224. We can often provide better pricing on bulk orders and ensure everything arrives hot and fresh.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What are Jinbeh's delivery hours?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Delivery hours match our restaurant hours: Lunch 11am-2:30pm, Dinner 5pm-10pm. Delivery times vary based on your location and the delivery platform used.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Does Jinbeh offer curbside pickup?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! Both locations offer quick curbside pickup. When placing your order via phone, let us know you'll be picking up curbside. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can I customize my Jinbeh order?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, customization is available! You can add special instructions when ordering through delivery apps, or call us directly for more complex requests. Common customizations include: no sauce, extra sauce, no raw fish, etc.",
+            },
+        },
+    ],
+};
+
 export default function OrderOnlinePage() {
     const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
@@ -256,7 +328,7 @@ export default function OrderOnlinePage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-warm-ivory">
+            <main id="main-content" className="min-h-screen bg-warm-ivory">
                 {/* JSON-LD Schema */}
                 <script
                     type="application/ld+json"
@@ -265,6 +337,10 @@ export default function OrderOnlinePage() {
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(menuSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
                 />
 
                 {/* Hero Section */}
@@ -280,10 +356,10 @@ export default function OrderOnlinePage() {
                             {/* Left: Text Content */}
                             <RevealSection direction="left">
                                 <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
-                                    Order Authentic Japanese Cuisine
+                                    Same Fresh Sushi. Delivered to Your Door.
                                 </h1>
                                 <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                                    Fresh hibachi, sushi, and appetizers delivered hot to your door. Available through your favorite delivery apps or direct phone ordering.
+                                    Hibachi, sushi, and appetizers from the kitchen that&apos;s served DFW families for 38 years &mdash; now at your door in under 40 minutes.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <button className="btn btn-primary px-8 py-4 text-lg font-semibold hover:shadow-lg transition-all">
@@ -331,6 +407,18 @@ export default function OrderOnlinePage() {
                             <p className="text-white/90 mb-6">
                                 Choose your favorite platform or call us directly for instant ordering
                             </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* AIDA Interest Bridge */}
+                <section className="py-6 bg-charcoal/5 border-y border-charcoal/10">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-3xl mx-auto text-center">
+                            <blockquote className="italic text-charcoal/70 text-lg">
+                                &ldquo;Everything is so yummy and so fresh!&rdquo;
+                                <span className="block text-sm mt-2 text-soft-gold not-italic font-medium">&mdash; Google Review &star;&star;&star;&star;&star;</span>
+                            </blockquote>
                         </div>
                     </div>
                 </section>

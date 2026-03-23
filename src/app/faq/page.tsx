@@ -337,7 +337,7 @@ export default function FAQPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script
           type="application/ld+json"

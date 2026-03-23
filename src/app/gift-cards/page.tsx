@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 
 export default function GiftCardsPage() {
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             {/* Schema */}
             <script
                 type="application/ld+json"

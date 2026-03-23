@@ -98,7 +98,7 @@ const faqSchema = {
       name: "What's the best Japanese restaurant near Starwood in Frisco?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Japanese Restaurant near Starwood is a local favorite offering authentic hibachi entertainment, fresh sushi crafted by master chefs, and over 37 years of excellence in Japanese cuisine.",
+        text: "Jinbeh Japanese Restaurant near Starwood is a local favorite offering authentic hibachi entertainment, fresh sushi crafted by master chefs, and over 38 years of excellence in Japanese cuisine.",
       },
     },
   ],
@@ -131,7 +131,7 @@ export default function StarwoodPage() {
   return (
     <>
       <Header location="frisco" />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schemas */}
         <script
           type="application/ld+json"
@@ -189,7 +189,7 @@ export default function StarwoodPage() {
                   <p className="text-lg text-charcoal/70 mb-6">
                     Located just minutes from the Starwood neighborhood on Preston Road, Jinbeh
                     has been serving authentic Japanese cuisine to the Frisco community for
-                    over 37 years. Whether you're celebrating a special occasion, enjoying a family dinner,
+                    over 38 years. Whether you're celebrating a special occasion, enjoying a family dinner,
                     or looking for exceptional hibachi and sushi near Starwood, our expert chefs deliver
                     an unforgettable dining experience.
                   </p>

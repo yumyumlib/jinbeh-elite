@@ -9,6 +9,9 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ["/api/", "/_next/", "/private/"],
             },
         ],
-        sitemap: "https://jinbeh.com/sitemap.xml",
+        sitemap: [
+            "https://jinbeh.com/sitemap.xml",
+            "https://jinbeh.com/image-sitemap.xml",
+        ],
     };
 }

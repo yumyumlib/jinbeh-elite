@@ -48,7 +48,7 @@ const breadcrumbSchema = {
 
 export default function BestSteakNearMe() {
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 

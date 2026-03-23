@@ -106,7 +106,7 @@ export default function BarPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-warm-ivory">
+      <main id="main-content" className="min-h-screen bg-warm-ivory">
         {/* Schema */}
         <script
           type="application/ld+json"

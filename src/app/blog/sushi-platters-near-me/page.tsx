@@ -56,7 +56,7 @@ const faqs = [
     },
     {
         question: "Are sushi platters good for office catering?",
-        answer: "Absolutely! Sushi platters are perfect for office lunches, team celebrations, and corporate events. They're easy to share, visually impressive, and accommodate various dietary preferences (including vegetarian rolls). Jinbeh has been catering to DFW businesses for over 37 years. Contact our catering team for corporate packages.",
+        answer: "Absolutely! Sushi platters are perfect for office lunches, team celebrations, and corporate events. They're easy to share, visually impressive, and accommodate various dietary preferences (including vegetarian rolls). Jinbeh has been catering to DFW businesses for over 38 years. Contact our catering team for corporate packages.",
     },
     {
         question: "How many sushi rolls do I need per person?",
@@ -95,7 +95,7 @@ const breadcrumbSchema = {
 
 export default function SushiPlattersNearMe() {
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -230,7 +230,7 @@ export default function SushiPlattersNearMe() {
                                     </h2>
 
                                     <p>
-                                        The #1 question we get: <em>"How many rolls do I need?"</em> Here's our tried-and-true formula from 37 years of catering:
+                                        The #1 question we get: <em>"How many rolls do I need?"</em> Here's our tried-and-true formula from 38 years of catering:
                                     </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 my-8">

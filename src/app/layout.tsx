@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Serif_JP, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import { OrganizationSchema } from "@/components/schema/AllSchemas";
+import { OrganizationSchema, WebSiteSchema } from "@/components/schema/AllSchemas";
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
@@ -135,6 +135,8 @@ export default function RootLayout({
 
         {/* Structured data - Organization with AggregateRating */}
         <OrganizationSchema />
+        {/* Structured data - WebSite with SearchAction for sitelinks */}
+        <WebSiteSchema />
       </head>
       <body className="antialiased">
         {/* Skip to main content link for accessibility */}

@@ -96,7 +96,7 @@ export default function DeliveryPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script
           type="application/ld+json"

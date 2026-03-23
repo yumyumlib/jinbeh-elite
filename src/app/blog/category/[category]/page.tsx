@@ -43,7 +43,7 @@ const categories = {
     description:
       "Master the art of hibachi dining at Jinbeh. Learn about teppanyaki chef performances, menu options, and what makes our hibachi experience in Frisco and Lewisville unforgettable.",
     intro:
-      "The sizzle of the grill. The dance of the flames. The legendary onion volcano. At Jinbeh, hibachi isn't just a meal — it's dinner and a show. Our teppanyaki chefs have been entertaining families across North Texas for over 37 years, and these guides share everything you need to know before your visit.",
+      "The sizzle of the grill. The dance of the flames. The legendary onion volcano. At Jinbeh, hibachi isn't just a meal — it's dinner and a show. Our teppanyaki chefs have been entertaining families across North Texas for over 38 years, and these guides share everything you need to know before your visit.",
     color: "from-red-500 to-soft-gold",
     pillarLinks: [
       { label: "Frisco Hibachi Menu", href: "/frisco/hibachi" },
@@ -175,7 +175,7 @@ const categories = {
     description:
       "Curated 'best of' guides for Japanese dining, sushi, hibachi, and more across the Dallas–Fort Worth metroplex. Discover where to eat in Frisco, Lewisville, and beyond.",
     intro:
-      "When you search for 'the best,' you deserve a real answer. These curated guides highlight the top dining experiences across DFW — from the best sushi in Frisco to the finest hibachi in Dallas. Every recommendation is based on quality, freshness, and the kind of memorable experience that keeps guests coming back for over 37 years.",
+      "When you search for 'the best,' you deserve a real answer. These curated guides highlight the top dining experiences across DFW — from the best sushi in Frisco to the finest hibachi in Dallas. Every recommendation is based on quality, freshness, and the kind of memorable experience that keeps guests coming back for over 38 years.",
     color: "from-soft-gold to-amber-600",
     pillarLinks: [
       { label: "Jinbeh Frisco", href: "/frisco" },
@@ -197,7 +197,7 @@ const categories = {
     faq: [
       { q: "What is the best sushi restaurant near me in Frisco?", a: "Jinbeh Japanese Restaurant at 2693 Preston Rd in Frisco is consistently rated among the best sushi restaurants in the area. Our sushi bar features daily-fresh fish, signature rolls, and premium sashimi platters." },
       { q: "Where is the best hibachi in the Dallas area?", a: "Jinbeh offers the best hibachi experience in DFW with two locations in Frisco and Lewisville. Our teppanyaki chefs have been entertaining families with fire tricks, onion volcanoes, and expertly grilled entrees since 1988." },
-      { q: "What makes Jinbeh one of the best Japanese restaurants in DFW?", a: "Three things set Jinbeh apart: 37+ years of family heritage, daily-fresh ingredients from trusted suppliers, and the interactive hibachi entertainment that turns every meal into a celebration. We've been a North Texas favorite since 1988." },
+      { q: "What makes Jinbeh one of the best Japanese restaurants in DFW?", a: "Three things set Jinbeh apart: 38+ years of family heritage, daily-fresh ingredients from trusted suppliers, and the interactive hibachi entertainment that turns every meal into a celebration. We've been a North Texas favorite since 1988." },
     ],
   },
   beverages: {
@@ -236,9 +236,9 @@ const categories = {
     h1: "Exploring Japanese Cuisine: From Sushi to Teppanyaki",
     icon: "🍱",
     description:
-      "Dive deep into Japanese cuisine — from the art of sushi and sashimi to teppanyaki grilling and traditional dishes. Expert guides from Jinbeh's 37+ years of culinary heritage.",
+      "Dive deep into Japanese cuisine — from the art of sushi and sashimi to teppanyaki grilling and traditional dishes. Expert guides from Jinbeh's 38+ years of culinary heritage.",
     intro:
-      "Japanese cuisine is one of the world's great culinary traditions, built on principles of freshness, seasonality, and presentation. At Jinbeh, we honor these traditions while making them accessible to every guest. Whether you're curious about the difference between sashimi and sushi or want to master chopstick etiquette, these guides draw from our 37+ years of serving authentic Japanese food in North Texas.",
+      "Japanese cuisine is one of the world's great culinary traditions, built on principles of freshness, seasonality, and presentation. At Jinbeh, we honor these traditions while making them accessible to every guest. Whether you're curious about the difference between sashimi and sushi or want to master chopstick etiquette, these guides draw from our 38+ years of serving authentic Japanese food in North Texas.",
     color: "from-amber-600 to-red-600",
     pillarLinks: [
       { label: "Full Menu", href: "/menu" },
@@ -386,7 +386,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
 
   if (!category) {
     return (
-      <main className="min-h-screen bg-warm-ivory py-20">
+      <main id="main-content" className="min-h-screen bg-warm-ivory py-20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-heading font-bold text-charcoal mb-4">Category Not Found</h2>
           <p className="text-charcoal/70 mb-6">The category you're looking for doesn't exist.</p>
@@ -443,7 +443,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
   };
 
   return (
-    <main className="min-h-screen bg-warm-ivory">
+    <main id="main-content" className="min-h-screen bg-warm-ivory">
       {/* Schema Markup */}
       <script
         type="application/ld+json"

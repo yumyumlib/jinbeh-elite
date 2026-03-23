@@ -56,7 +56,7 @@ const faqs = [
     },
     {
         question: "Can I celebrate a birthday at a steakhouse in Lewisville?",
-        answer: "Absolutely! Jinbeh is the perfect choice for birthday celebrations in Lewisville. Our hibachi tables seat 8-10 guests, and the chef show adds excitement to any special occasion. We've been hosting birthday celebrations for over 37 years. Call (214) 488-2224 to reserve your table.",
+        answer: "Absolutely! Jinbeh is the perfect choice for birthday celebrations in Lewisville. Our hibachi tables seat 8-10 guests, and the chef show adds excitement to any special occasion. We've been hosting birthday celebrations for over 38 years. Call (214) 488-2224 to reserve your table.",
     },
     {
         question: "Do I need a reservation for a steakhouse in Lewisville?",
@@ -91,7 +91,7 @@ const breadcrumbSchema = {
 
 export default function BestSteakhousesLewisville() {
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

@@ -97,7 +97,7 @@ const faqSchema = {
       name: "What's the best Japanese restaurant near Vista Ridge Mall?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Japanese Restaurant is a local favorite near Vista Ridge, offering authentic hibachi entertainment, fresh sushi, and over 37 years of excellence in Japanese cuisine. Perfect for families, celebrations, and special occasions.",
+        text: "Jinbeh Japanese Restaurant is a local favorite near Vista Ridge, offering authentic hibachi entertainment, fresh sushi, and over 38 years of excellence in Japanese cuisine. Perfect for families, celebrations, and special occasions.",
       },
     },
   ],
@@ -130,7 +130,7 @@ export default function VistaRidgePage() {
   return (
     <>
       <Header location="lewisville" />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schemas */}
         <script
           type="application/ld+json"
@@ -187,7 +187,7 @@ export default function VistaRidgePage() {
                   </h2>
                   <p className="text-lg text-charcoal/70 mb-6">
                     Located just minutes from Vista Ridge Mall off I-35E, Jinbeh has been serving
-                    authentic Japanese cuisine to the Lewisville community for over 37 years. Whether
+                    authentic Japanese cuisine to the Lewisville community for over 38 years. Whether
                     you&apos;re celebrating a special occasion or grabbing dinner after a shopping trip,
                     our expert chefs deliver an unforgettable experience.
                   </p>

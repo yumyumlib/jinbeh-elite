@@ -96,7 +96,7 @@ const faqSchema = {
       name: "What makes Jinbeh the best Japanese restaurant in Castle Hills area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh stands out with over 37 years of excellence, offering authentic hibachi entertainment, meticulously crafted sushi from our master chefs, a full bar with premium sake, and a welcoming atmosphere perfect for families and celebrations.",
+        text: "Jinbeh stands out with over 38 years of excellence, offering authentic hibachi entertainment, meticulously crafted sushi from our master chefs, a full bar with premium sake, and a welcoming atmosphere perfect for families and celebrations.",
       },
     },
   ],
@@ -129,7 +129,7 @@ export default function CastleHillsPage() {
   return (
     <>
       <Header location="lewisville" />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schemas */}
         <script
           type="application/ld+json"
@@ -186,7 +186,7 @@ export default function CastleHillsPage() {
                   </h2>
                   <p className="text-lg text-charcoal/70 mb-6">
                     Conveniently located near Castle Hills and serving the greater Lewisville community,
-                    Jinbeh has been the go-to destination for authentic Japanese cuisine for over 37 years.
+                    Jinbeh has been the go-to destination for authentic Japanese cuisine for over 38 years.
                     Whether you're celebrating a special occasion, enjoying a family dinner, or looking for
                     the best hibachi and sushi experience in the area, our talented chefs deliver an unforgettable
                     culinary journey.

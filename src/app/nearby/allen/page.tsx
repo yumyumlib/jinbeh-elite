@@ -170,7 +170,7 @@ export default function AllenNearbyPage() {
     <>
       <Header />
 
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* JSON-LD Schemas */}
         <script
           type="application/ld+json"

@@ -101,7 +101,7 @@ export default function HappyHourPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script
           type="application/ld+json"
@@ -121,11 +121,11 @@ export default function HappyHourPage() {
             </p>
             <RevealSection delay={100}>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                <AnimatedGradientText className="text-4xl md:text-5xl font-heading font-bold">Happy Hour</AnimatedGradientText>
+                <AnimatedGradientText className="text-4xl md:text-5xl font-heading font-bold">The Best Part of Your Day Starts Here</AnimatedGradientText>
               </h1>
             </RevealSection>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
-              Searching for the best happy hour DFW has to offer? Join us at the <Link href="/bar" className="text-soft-gold hover:underline">bar</Link> for <Link href="/blog/japanese-cocktails" className="text-soft-gold hover:underline">Japanese-inspired cocktails</Link>, sake happy hour specials, and more.
+              Unwind with <Link href="/blog/japanese-cocktails" className="text-soft-gold hover:underline">Japanese-inspired cocktails</Link>, premium sake, and crisp Sapporo at the <Link href="/bar" className="text-soft-gold hover:underline">bar</Link>. Your after-work ritual, perfected.
             </p>
             <div className="inline-block bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-8 py-4">
               <p className="text-lg font-medium">
@@ -205,7 +205,7 @@ export default function HappyHourPage() {
                     Frisco Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Happy hour Frisco — near Stonebriar Centre, perfect for after-work drinks, happy hour specials Frisco TX, or pre-dinner cocktails.
+                    Right near Stonebriar Centre — perfect for after-work drinks or pre-dinner cocktails with friends.
                   </p>
                   <div className="bg-white rounded-xl p-4 mb-6">
                     <p className="font-medium text-cedar-brown">Address</p>
@@ -238,7 +238,7 @@ export default function HappyHourPage() {
                     Lewisville Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Happy hour Lewisville — easy access from I-35E, stop by for a relaxing happy hour near me on your way home.
+                    Easy access from I-35E — stop by on your way home for a relaxing start to your evening.
                   </p>
                   <div className="bg-white rounded-xl p-4 mb-6">
                     <p className="font-medium text-cedar-brown">Address</p>
@@ -273,6 +273,10 @@ export default function HappyHourPage() {
                   Watch our skilled sushi chefs at work while sipping on premium sake
                   or a creative cocktail. Explore our full <Link href="/blog/japanese-beverages-guide" className="text-soft-gold hover:underline">Japanese drinks guide</Link> to learn more about what we serve.
                 </p>
+                <blockquote className="border-l-4 border-soft-gold pl-4 my-6 italic text-warm-ivory/70">
+                  &ldquo;Great food, great service, and great Japanese ambience.&rdquo;
+                  <span className="block text-sm mt-2 text-soft-gold not-italic">— Google Review ★★★★★</span>
+                </blockquote>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3">
                     <svg className="w-6 h-6 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   // Enable standalone output for Docker deployment
   output: 'standalone',
 
+  // Enforce no trailing slash for consistent URLs and canonical hygiene
+  trailingSlash: false,
+
   // Image optimization
   images: {
     remotePatterns: [
@@ -33,9 +36,10 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
 
-  // Redirects for SEO
+  // Redirects for SEO and legacy WordPress migration
   async redirects() {
     return [
+      // Existing redirects
       {
         source: "/home",
         destination: "/",
@@ -49,6 +53,82 @@ const nextConfig: NextConfig = {
       {
         source: "/vip-club",
         destination: "/vip",
+        permanent: true,
+      },
+
+      // Legacy WordPress pages
+      {
+        source: "/privacy-policy",
+        destination: "/privacy",
+        permanent: true,
+      },
+      {
+        source: "/test",
+        destination: "/",
+        permanent: true,
+      },
+
+      // Legacy PDF menus → new menu pages (specific rules BEFORE catch-all)
+      {
+        source: "/wp-content/uploads/2023/12/Jinbeh-Frisco-Lunch.pdf",
+        destination: "/frisco/menu",
+        permanent: true,
+      },
+      {
+        source: "/wp-content/uploads/2025/05/Jinbeh-Frisco-Dinner-4.pdf",
+        destination: "/frisco/menu",
+        permanent: true,
+      },
+      {
+        source: "/wp-content/uploads/2023/04/2023-Frisco-Official-Sushi-Menu.pdf",
+        destination: "/frisco/sushi-rolls",
+        permanent: true,
+      },
+      {
+        source: "/wp-content/uploads/2026/01/Lewisville-Lunch-Hibachi-2.pdf",
+        destination: "/lewisville/menu",
+        permanent: true,
+      },
+      {
+        source: "/wp-content/uploads/2025/05/Lewisville-Dinner-Hibachi-3.pdf",
+        destination: "/lewisville/menu",
+        permanent: true,
+      },
+      {
+        source: "/wp-content/uploads/2023/07/Lewisville-Sushi.pdf",
+        destination: "/lewisville/sushi-rolls",
+        permanent: true,
+      },
+
+      // WordPress infrastructure catch-alls
+      {
+        source: "/wp-content/:path*",
+        destination: "/menu",
+        permanent: true,
+      },
+      {
+        source: "/wp-admin/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wp-login.php",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wp-sitemap-posts-page-1.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        source: "/wp-sitemap-index.xsl",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        source: "/wp-sitemap.xsl",
+        destination: "/sitemap.xml",
         permanent: true,
       },
     ];
@@ -91,6 +171,16 @@ const nextConfig: NextConfig = {
       // Cache fonts
       {
         source: "/fonts/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      // Cache video assets
+      {
+        source: "/videos/:path*",
         headers: [
           {
             key: "Cache-Control",

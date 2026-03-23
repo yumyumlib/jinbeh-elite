@@ -23,12 +23,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/gift-cards',
         '/private-dining',
         '/catering',
+        '/catering/wedding',
+        '/catering/party',
+        '/catering/corporate',
         '/reservations',
         '/happy-hour',
+        '/happy-hour/specials',
         '/order-online',
         '/takeout',
         '/delivery',
         '/specials',
+        '/menu',
+        '/bar',
+        '/gallery',
+        '/careers',
+        '/events',
+        '/lunch-specials',
+        '/allergy-friendly-dining',
+        '/vip',
         '/privacy',
         '/terms',
         '/accessibility'
@@ -43,8 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    // 2. Hub Pages & Celebrations
+    // 2. Celebrations Hub + Individual Celebration Pages
+    // Only includes pages that have actual route directories on disk
     const celebrations = [
+        '/celebrations',
         '/celebrations/birthday',
         '/celebrations/anniversary',
         '/celebrations/corporate-events',
@@ -53,15 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/celebrations/mothers-day',
         '/celebrations/fathers-day',
         '/celebrations/valentines-day',
-        '/celebrations/new-years-eve',
-        '/celebrations/prom-homecoming',
         '/celebrations/rehearsal-dinner',
         '/celebrations/holiday-parties',
-        '/celebrations/retirement-party',
         '/celebrations/lunar-new-year',
         '/celebrations/mid-autumn-festival',
-        '/celebrations/shichi-go-san',
-        '/celebrations/coming-of-age'
+        '/celebrations/baby-shower',
+        '/celebrations/team-building',
+        '/celebrations/family-gatherings',
+        '/celebrations/thanksgiving',
+        '/celebrations/christmas',
+        '/celebrations/diwali',
+        '/celebrations/asian-restaurant-month',
+        '/celebrations/national-fried-rice-day'
     ];
 
     celebrations.forEach((route) => {
@@ -95,6 +112,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 changeFrequency: subPage === '/menu' || subPage === '/specials' ? 'weekly' : 'monthly',
                 priority: subPage === '' ? 0.9 : 0.7,
             });
+        });
+    });
+
+    // 3b. Location-specific neighborhood/SEO pages
+    const friscoNeighborhoods = ['/starwood', '/stonebriar', '/legacy'];
+    friscoNeighborhoods.forEach((page) => {
+        routes.push({
+            url: `${baseUrl}/frisco${page}`,
+            lastModified: now,
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        });
+    });
+
+    const lewisvilleNeighborhoods = ['/castle-hills', '/vista-ridge'];
+    lewisvilleNeighborhoods.forEach((page) => {
+        routes.push({
+            url: `${baseUrl}/lewisville${page}`,
+            lastModified: now,
+            changeFrequency: 'monthly',
+            priority: 0.6,
         });
     });
 

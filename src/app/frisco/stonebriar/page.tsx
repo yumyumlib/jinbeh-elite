@@ -97,7 +97,7 @@ const faqSchema = {
       name: "What's the best Japanese restaurant near Stonebriar Mall?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Japanese Restaurant is a local favorite near Stonebriar, offering authentic hibachi entertainment, fresh sushi, and over 37 years of excellence in Japanese cuisine.",
+        text: "Jinbeh Japanese Restaurant is a local favorite near Stonebriar, offering authentic hibachi entertainment, fresh sushi, and over 38 years of excellence in Japanese cuisine.",
       },
     },
   ],
@@ -130,7 +130,7 @@ export default function StonebriarPage() {
   return (
     <>
       <Header location="frisco" />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schemas */}
         <script
           type="application/ld+json"
@@ -188,7 +188,7 @@ export default function StonebriarPage() {
                   <p className="text-lg text-charcoal/70 mb-6">
                     Located just minutes from Stonebriar Centre Mall on Preston Road, Jinbeh
                     has been serving authentic Japanese cuisine to the Frisco community for
-                    over 37 years. Whether you&apos;re celebrating a special occasion or grabbing
+                    over 38 years. Whether you&apos;re celebrating a special occasion or grabbing
                     dinner after a shopping trip, our expert chefs deliver an unforgettable experience.
                   </p>
                   <ul className="space-y-4 mb-8">

@@ -157,7 +157,7 @@ export default function JapaneseTakeoutNearMe() {
             <p>
                 Many chain Japanese restaurants use pre-made or frozen components for their takeout.
                 At Jinbeh, every dish—whether dine-in or takeout—is prepared fresh to order by the same
-                skilled chefs who've been serving DFW families for over 37 years. That's the difference
+                skilled chefs who've been serving DFW families for over 38 years. That's the difference
                 between "fine" and "fantastic."
             </p>
 

@@ -148,7 +148,7 @@ export default function MenuClient() {
                                     Sauces Made Fresh Daily
                                 </h3>
                                 <p className="text-white/80 leading-relaxed">
-                                    Our Yum Yum sauce, spicy chili sauce, garlic butter, and every dipping sauce are made in-house daily from family recipes perfected over 37 years. No pre-packaged shortcuts — you taste the difference.
+                                    Our Yum Yum sauce, spicy chili sauce, garlic butter, and every dipping sauce are made in-house daily from family recipes perfected over 38 years. No pre-packaged shortcuts — you taste the difference.
                                 </p>
                             </div>
                         </div>

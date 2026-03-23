@@ -162,7 +162,7 @@ const holidayCelebrations = [
 const culturalCelebrations = [
   {
     title: "Asian Restaurant Month",
-    description: "Celebrate AAPI Heritage Month in May — support 37 years of family tradition.",
+    description: "Celebrate AAPI Heritage Month in May — support 38 years of family tradition.",
     href: "/celebrations/asian-restaurant-month",
     month: "May",
   },
@@ -224,7 +224,7 @@ export default function CelebrationsPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script
           type="application/ld+json"

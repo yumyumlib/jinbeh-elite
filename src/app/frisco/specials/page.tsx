@@ -87,7 +87,7 @@ export default function FriscoSpecialsPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
           <div
@@ -103,7 +103,7 @@ export default function FriscoSpecialsPage() {
               Amazing Specials in Frisco
             </h1>
             <p className="text-lg text-warm-ivory/90 mb-6 max-w-2xl mx-auto">
-              Near Stonebriar Centre • 2693 Preston Rd, Suite 1040<br/>
+              Near Stonebriar Centre • 2693 Preston Rd, Suite 1040<br />
               Enjoy exclusive deals on sushi, hibachi, and Japanese cuisine
             </p>
             <a href={`tel:${frisco.phoneClean}`} className="inline-block bg-accent-red text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-accent-red/90 transition-colors">
@@ -234,7 +234,7 @@ export default function FriscoSpecialsPage() {
                   <h3 className="text-2xl font-heading font-bold mb-6">Where</h3>
                   <div className="space-y-3">
                     <p className="text-white/90">
-                      <strong>At the Bar</strong><br/>
+                      <strong>At the Bar</strong><br />
                       No reservation needed - walk-ins welcome
                     </p>
                     <div className="text-4xl">🍹</div>
@@ -411,9 +411,12 @@ export default function FriscoSpecialsPage() {
                   Get notified about new specials and promotions at Jinbeh Frisco.
                 </p>
                 <form className="space-y-3">
+                  <label htmlFor="frisco-specials-email" className="sr-only">Email address</label>
                   <input
+                    id="frisco-specials-email"
                     type="email"
                     placeholder="Your email"
+                    aria-label="Email address for specials updates"
                     className="w-full px-4 py-3 rounded-lg border-0 text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-red"
                   />
                   <button
@@ -433,7 +436,7 @@ export default function FriscoSpecialsPage() {
                   <div>
                     <p className="text-soft-gold font-bold mb-1">Address</p>
                     <p className="text-white/80">
-                      {frisco.address.street} {frisco.address.suite}<br/>
+                      {frisco.address.street} {frisco.address.suite}<br />
                       {frisco.address.city}, {frisco.address.state} {frisco.address.zip}
                     </p>
                   </div>

@@ -89,7 +89,7 @@ const faqSchema = {
       name: "What makes Jinbeh special compared to other Japanese restaurants near Legacy West?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh combines over 37 years of culinary excellence with authentic hibachi entertainment, fresh daily sushi, and a full bar. Our talented chefs provide tableside teppanyaki shows with the famous onion volcano, creating an unforgettable dining experience.",
+        text: "Jinbeh combines over 38 years of culinary excellence with authentic hibachi entertainment, fresh daily sushi, and a full bar. Our talented chefs provide tableside teppanyaki shows with the famous onion volcano, creating an unforgettable dining experience.",
       },
     },
     {
@@ -130,7 +130,7 @@ export default function LegacyPage() {
   return (
     <>
       <Header location="frisco" />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schemas */}
         <script
           type="application/ld+json"
@@ -187,7 +187,7 @@ export default function LegacyPage() {
                   </h2>
                   <p className="text-lg text-charcoal/70 mb-6">
                     Located just minutes from Legacy West on Preston Road, Jinbeh has been
-                    serving authentic Japanese cuisine to the Frisco community for over 37 years.
+                    serving authentic Japanese cuisine to the Frisco community for over 38 years.
                     Whether you&apos;re celebrating a special occasion, enjoying a casual dinner with friends,
                     or exploring Legacy West&apos;s vibrant dining scene, our expert chefs deliver
                     an unforgettable experience.

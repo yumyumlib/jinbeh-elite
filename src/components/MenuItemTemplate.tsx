@@ -55,7 +55,7 @@ export default function MenuItemTemplate({ item, location }: MenuItemTemplatePro
     const { jinbehStory, origin, nutritionHighlight, experienceNote } = item;
 
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             {/* Breadcrumb */}
             <nav className="bg-white border-b border-warm-ivory-dark">
                 <div className="container mx-auto px-6 py-3">

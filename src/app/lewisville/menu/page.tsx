@@ -194,7 +194,7 @@ export default function LewisvilleMenuPage() {
   return (
     <>
       <Header location="lewisville" />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script
           type="application/ld+json"

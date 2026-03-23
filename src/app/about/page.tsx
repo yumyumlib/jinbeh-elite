@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "About Jinbeh | Family-Owned Since 1988 | Frisco & Lewisville",
   },
   description:
-    "Discover the Jinbeh story. Family-owned hibachi and sushi restaurant in Frisco & Lewisville TX since 1988. 37+ years of tradition and hospitality.",
+    "Discover the Jinbeh story. Family-owned hibachi and sushi restaurant in Frisco & Lewisville TX since 1988. 38+ years of tradition and hospitality.",
   keywords: [
     "about jinbeh",
     "japanese restaurant history frisco",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "About Jinbeh | Family-Owned Since 1988",
-    description: "37+ years of authentic Japanese dining in North Texas. Discover our story.",
+    description: "38+ years of authentic Japanese dining in North Texas. Discover our story.",
     url: "https://jinbeh.com/about",
     images: [
       {
@@ -49,7 +49,7 @@ const faqSchema = {
       "name": "How long has Jinbeh been in business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jinbeh Japanese Restaurant has been family-owned and operated since 1988, serving North Texas for over 37 years with authentic hibachi and sushi.",
+        "text": "Jinbeh Japanese Restaurant has been family-owned and operated since 1988, serving North Texas for over 38 years with authentic hibachi and sushi.",
       },
     },
     {
@@ -99,7 +99,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script
           type="application/ld+json"

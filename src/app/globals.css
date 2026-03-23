@@ -708,6 +708,43 @@ footer .btn:hover {
    Accessibility
    ====================================== */
 
+/* WCAG AA Contrast Overrides
+   The design uses opacity-based text (e.g. text-charcoal/70) for visual hierarchy.
+   These overrides boost insufficient contrast ratios to meet 4.5:1 AA minimum. */
+
+/* Body text on light backgrounds: charcoal at ≥80% opacity */
+p[class*="charcoal/60"],
+span[class*="charcoal/60"],
+li[class*="charcoal/60"] {
+  color: color-mix(in srgb, var(--charcoal) 80%, transparent) !important;
+}
+
+p[class*="charcoal/70"],
+span[class*="charcoal/70"],
+li[class*="charcoal/70"],
+td[class*="charcoal/70"] {
+  color: color-mix(in srgb, var(--charcoal) 80%, transparent) !important;
+}
+
+/* Body text on dark backgrounds: warm-ivory at ≥85% opacity */
+p[class*="ivory/70"],
+span[class*="ivory/70"],
+li[class*="ivory/70"] {
+  color: color-mix(in srgb, var(--warm-ivory) 85%, transparent) !important;
+}
+
+p[class*="ivory/60"],
+span[class*="ivory/60"],
+li[class*="ivory/60"] {
+  color: color-mix(in srgb, var(--warm-ivory) 85%, transparent) !important;
+}
+
+/* Soft-gold on dark backgrounds: ensure readable */
+p[class*="soft-gold/70"],
+span[class*="soft-gold/70"] {
+  color: color-mix(in srgb, var(--soft-gold) 85%, transparent) !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   *,

@@ -45,7 +45,7 @@ const jobPostingSchema = {
   "@context": "https://schema.org",
   "@type": "JobPosting",
   "title": "Multiple Positions Available at Jinbeh",
-  "description": "Join Jinbeh Japanese Restaurant as a Hibachi Chef, Sushi Chef, Server, or Host/Hostess. Build your career in a family-owned restaurant with 37+ years of tradition.",
+  "description": "Join Jinbeh Japanese Restaurant as a Hibachi Chef, Sushi Chef, Server, or Host/Hostess. Build your career in a family-owned restaurant with 38+ years of tradition.",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "Jinbeh Japanese Restaurant",
@@ -341,7 +341,7 @@ export default function CareersPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script
           type="application/ld+json"
@@ -385,7 +385,7 @@ export default function CareersPage() {
                   Why Work at Jinbeh?
                 </h2>
                 <p className="text-lg text-charcoal/70">
-                  Jinbeh careers are about more than Japanese restaurant jobs — join our team as a hibachi chef, sushi chef, server, or hospitality professional. We're hiring Jinbeh with hospitality jobs Frisco and server positions Lewisville. For 37 years, we&apos;ve built more than a restaurant—we&apos;ve created a family where team members thrive in the best restaurant careers DFW has to offer. Discover what makes the <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline font-medium">hibachi dining experience</Link> so special.
+                  Jinbeh careers are about more than Japanese restaurant jobs — join our team as a hibachi chef, sushi chef, server, or hospitality professional. We're hiring Jinbeh with hospitality jobs Frisco and server positions Lewisville. For 38 years, we&apos;ve built more than a restaurant—we&apos;ve created a family where team members thrive in the best restaurant careers DFW has to offer. Discover what makes the <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline font-medium">hibachi dining experience</Link> so special.
                 </p>
               </RevealSection>
             </div>

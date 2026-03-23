@@ -66,7 +66,7 @@ export default function FastCasualDiningJinbeh() {
             publishDate="February 2026"
             readTime="5 min read"
             faqs={faqs}
-            keyTakeaway="At Jinbeh, 'fast casual' doesn't mean cutting corners. Whether you have 30 minutes for a sushi lunch or a full evening for hibachi, we deliver the same quality and care that has kept us going for over 37 years."
+            keyTakeaway="At Jinbeh, 'fast casual' doesn't mean cutting corners. Whether you have 30 minutes for a sushi lunch or a full evening for hibachi, we deliver the same quality and care that has kept us going for over 38 years."
         >
             <h2>Japanese Dining on Your Schedule</h2>
 
@@ -74,7 +74,7 @@ export default function FastCasualDiningJinbeh() {
                 "Fast casual" and "Japanese restaurant" might seem like an unusual combination. After
                 all, Japanese cuisine is known for precision, artistry, and presentation—things that
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,
-                we've spent 37 years learning how to deliver quality at every speed.
+                we've spent 38 years learning how to deliver quality at every speed.
             </p>
 
             <p>
@@ -136,7 +136,7 @@ export default function FastCasualDiningJinbeh() {
 
             <p>
                 As one reviewer put it: "The food is tasty and enjoyable—you can tell the difference
-                between Jinbeh and the quick-serve Japanese places." That's the difference 37 years
+                between Jinbeh and the quick-serve Japanese places." That's the difference 38 years
                 of experience makes.
             </p>
 

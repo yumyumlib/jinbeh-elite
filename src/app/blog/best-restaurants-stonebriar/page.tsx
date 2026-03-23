@@ -44,7 +44,7 @@ const faqs = [
     },
     {
         question: "Is there a good hibachi restaurant near Stonebriar Centre?",
-        answer: "Yes! Jinbeh Japanese Restaurant at 2693 Preston Road is just a few minutes from Stonebriar Centre. We offer tableside hibachi cooking with entertaining chef shows, plus a full sushi bar. Our guests tell us we're 'better than the chains'—and we've been perfecting our craft for over 37 years.",
+        answer: "Yes! Jinbeh Japanese Restaurant at 2693 Preston Road is just a few minutes from Stonebriar Centre. We offer tableside hibachi cooking with entertaining chef shows, plus a full sushi bar. Our guests tell us we're 'better than the chains'—and we've been perfecting our craft for over 38 years.",
     },
     {
         question: "Where can I eat after shopping at Stonebriar Mall?",
@@ -91,7 +91,7 @@ const breadcrumbSchema = {
 
 export default function BestRestaurantsStonebriar() {
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -279,7 +279,7 @@ export default function BestRestaurantsStonebriar() {
                                             </h3>
                                             <p className="text-white/90 mb-4">
                                                 While the chains come and go, Jinbeh has been the Stonebriar area's go-to Japanese
-                                                restaurant for over 37 years. Guests consistently rave about our "fantastic service,"
+                                                restaurant for over 38 years. Guests consistently rave about our "fantastic service,"
                                                 call our crab rangoons "the best I've ever had," and love that we accommodate
                                                 allergies with care. Unlike corporate chains with long waits and impersonal service,
                                                 every meal at Jinbeh is personal.

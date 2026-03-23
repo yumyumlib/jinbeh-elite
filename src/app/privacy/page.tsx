@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
         </nav>
       </header>
 
-      <main className="min-h-screen bg-warm-ivory pt-24 pb-16">
+      <main id="main-content" className="min-h-screen bg-warm-ivory pt-24 pb-16">
         <div className="container mx-auto px-6 max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
             Privacy Policy

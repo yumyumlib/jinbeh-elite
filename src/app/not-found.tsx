@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NotFound() {
     return (
-        <main className="min-h-screen bg-warm-ivory flex items-center justify-center px-6">
+        <main id="main-content" className="min-h-screen bg-warm-ivory flex items-center justify-center px-6">
             <div className="text-center max-w-xl">
                 {/* Logo */}
                 <div className="mb-8">

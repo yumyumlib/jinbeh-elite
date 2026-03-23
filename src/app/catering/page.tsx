@@ -107,7 +107,7 @@ export default function CateringPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script
           type="application/ld+json"
@@ -129,7 +129,7 @@ export default function CateringPage() {
             </RevealSection>
             <RevealSection delay={100}>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                <AnimatedGradientText className="text-4xl md:text-6xl font-heading font-bold">Catering Services</AnimatedGradientText>
+                <AnimatedGradientText className="text-4xl md:text-6xl font-heading font-bold">Bring the Hibachi Show to Your Event</AnimatedGradientText>
               </h1>
             </RevealSection>
             <RevealSection delay={200}>
@@ -157,10 +157,10 @@ export default function CateringPage() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Japanese Catering Frisco, Lewisville &amp; DFW
+                Catering for Every Occasion
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Choose from our popular sushi catering Dallas platters, hibachi catering DFW party trays, or let us create something custom for your event. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium">complete hibachi catering guide</Link> for planning tips.
+                From sushi platters for the office to hibachi party trays for celebrations — we bring Jinbeh&apos;s fresh, authentic flavors to your venue. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium">complete catering guide</Link> for planning tips.
               </p>
             </div>
 
@@ -254,8 +254,12 @@ export default function CateringPage() {
                   On-Time Delivery
                 </h3>
                 <p className="text-charcoal/70 pointer-events-none">
-                  We understand timing is everything. Whether it&apos;s corporate catering Frisco TX or party catering Lewisville, count on us for punctual delivery every time.
+                  We understand timing is everything. Count on us for punctual delivery and seamless setup for any event.
                 </p>
+                <blockquote className="mt-4 border-l-2 border-soft-gold/40 pl-3 italic text-sm text-charcoal/60 pointer-events-none">
+                  &ldquo;Jinbeh was so accommodating to our large party.&rdquo;
+                  <span className="block not-italic text-xs mt-1 text-soft-gold">&mdash; Google Review</span>
+                </blockquote>
               </MagicCard>
 
               <MagicCard
@@ -287,7 +291,7 @@ export default function CateringPage() {
                   Request a Catering Quote
                 </h2>
                 <p className="text-warm-ivory/70">
-                  Tell us about your event and we&apos;ll create a custom proposal. Looking for catering near me Frisco? We serve the entire DFW metroplex, including wedding catering Japanese-style and thanksgiving catering Frisco holiday menus.
+                  Tell us about your event and we&apos;ll create a custom proposal. We serve the entire DFW metroplex — Frisco, Lewisville, Plano, and beyond.
                 </p>
               </div>
 

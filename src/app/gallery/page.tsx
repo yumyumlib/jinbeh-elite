@@ -250,7 +250,7 @@ export default function GalleryPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script
           type="application/ld+json"
@@ -548,7 +548,7 @@ export default function GalleryPage() {
               </RevealSection>
               <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
                 Come discover why families across North Texas have trusted Jinbeh for
-                authentic hibachi and sushi for over 37 years.
+                authentic hibachi and sushi for over 38 years.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

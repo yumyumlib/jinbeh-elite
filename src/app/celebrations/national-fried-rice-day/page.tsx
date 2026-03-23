@@ -80,7 +80,7 @@ export default function NationalFriedRiceDayPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-warm-ivory">
+      <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -200,7 +200,7 @@ export default function NationalFriedRiceDayPage() {
                 </h3>
                 <p className="text-charcoal/70">
                   Butter, garlic, soy sauce, and our special blend of seasonings
-                  perfected over 37 years.
+                  perfected over 38 years.
                 </p>
               </div>
             </div>

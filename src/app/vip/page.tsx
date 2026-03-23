@@ -30,7 +30,7 @@ export default function VipPage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-warm-ivory">
+            <main id="main-content" className="min-h-screen bg-warm-ivory">
                 {/* Simple Hero */}
                 <HeroSection className="py-16 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white">
                     <div className="container mx-auto px-6 text-center max-w-4xl">

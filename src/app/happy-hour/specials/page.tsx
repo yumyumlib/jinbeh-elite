@@ -193,7 +193,7 @@ export default function HappyHourSpecialsPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen">
         {/* Hero */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-deep-indigo via-charcoal to-accent-red" />

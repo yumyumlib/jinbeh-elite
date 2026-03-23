@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Asian Restaurant Month | Celebrate AAPI Heritage at Jinbeh",
-    description: "Support Asian-owned restaurants this May! Hibachi, sushi, and 37 years of family tradition at Jinbeh. Frisco & Lewisville.",
+    description: "Support Asian-owned restaurants this May! Hibachi, sushi, and 38 years of family tradition at Jinbeh. Frisco & Lewisville.",
     type: "website",
   },
   alternates: {
@@ -44,7 +44,7 @@ const faqSchema = {
       name: "Is Jinbeh an Asian-owned restaurant?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Jinbeh Japanese Restaurant has been family-owned and operated since 1988. We've been serving authentic Japanese cuisine in the DFW area for over 37 years.",
+        text: "Yes! Jinbeh Japanese Restaurant has been family-owned and operated since 1988. We've been serving authentic Japanese cuisine in the DFW area for over 38 years.",
       },
     },
     {
@@ -80,7 +80,7 @@ export default function AsianRestaurantMonthPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-warm-ivory">
+      <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -108,7 +108,7 @@ export default function AsianRestaurantMonthPage() {
               Asian Restaurant Month
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8">
-              Celebrate Asian-owned restaurants and 37 years of family tradition
+              Celebrate Asian-owned restaurants and 38 years of family tradition
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -135,7 +135,7 @@ export default function AsianRestaurantMonthPage() {
         <section className="py-4 bg-deep-indigo text-white">
           <div className="container mx-auto px-6 text-center">
             <p className="font-medium">
-              <span>🎌 Family-owned since 1988 • Proudly serving the DFW community for 37 years 🎌</span>
+              <span>🎌 Family-owned since 1988 • Proudly serving the DFW community for 38 years 🎌</span>
             </p>
           </div>
         </section>
@@ -336,7 +336,7 @@ export default function AsianRestaurantMonthPage() {
                   },
                   {
                     q: "How long has Jinbeh been in business?",
-                    a: "Jinbeh has been family-owned and operated since 1988 — that's over 37 years of serving authentic Japanese cuisine to the DFW community!",
+                    a: "Jinbeh has been family-owned and operated since 1988 — that's over 38 years of serving authentic Japanese cuisine to the DFW community!",
                   },
                   {
                     q: "What makes hibachi a unique cultural experience?",
@@ -367,7 +367,7 @@ export default function AsianRestaurantMonthPage() {
               </h3>
               <p className="text-charcoal/70 mb-8 max-w-2xl mx-auto">
                 Support Asian-owned restaurants during AAPI Heritage Month.
-                Reserve your table at Jinbeh and experience 37 years of family tradition!
+                Reserve your table at Jinbeh and experience 38 years of family tradition!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

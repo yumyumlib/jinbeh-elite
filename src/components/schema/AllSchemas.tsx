@@ -239,3 +239,35 @@ export function MenuSchema() {
     />
   );
 }
+
+export function WebSiteSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Jinbeh Japanese Restaurant",
+    "alternateName": "Jinbeh Hibachi and Sushi Bar",
+    "url": "https://jinbeh.com",
+    "description": "Family-owned Japanese restaurant serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Jinbeh Japanese Restaurant",
+      "url": "https://jinbeh.com"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://jinbeh.com/blog?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "inLanguage": "en-US"
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

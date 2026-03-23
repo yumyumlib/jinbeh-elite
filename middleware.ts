@@ -1,11 +1,17 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-// Basic HTTP authentication for staging environment
+// Basic HTTP authentication for staging environment only
+// In production, all requests pass through without auth
 const STAGING_USERNAME = 'admin'
 const STAGING_PASSWORD = 'test'
 
 export function middleware(request: NextRequest) {
+  // Skip auth entirely in production — allow Googlebot and all visitors
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.next()
+  }
+
   // Get the authorization header
   const authHeader = request.headers.get('authorization')
 

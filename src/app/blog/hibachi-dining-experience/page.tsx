@@ -102,7 +102,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <DidYouKnow
-        fact="Jinbeh has been serving authentic hibachi and sushi in the DFW area since 1988 — that's over 37 years of perfecting the craft. The word 'hibachi' literally means 'fire bowl' in Japanese, though the American-style tableside cooking is technically called 'teppanyaki.'"
+        fact="Jinbeh has been serving authentic hibachi and sushi in the DFW area since 1988 — that's over 38 years of perfecting the craft. The word 'hibachi' literally means 'fire bowl' in Japanese, though the American-style tableside cooking is technically called 'teppanyaki.'"
         source="Jinbeh Japanese Restaurant, est. 1988"
       />
 

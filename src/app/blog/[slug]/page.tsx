@@ -119,7 +119,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     };
 
     return (
-        <main className="min-h-screen bg-warm-ivory">
+        <main id="main-content" className="min-h-screen bg-warm-ivory">
             {/* Schema Markup */}
             <script
                 type="application/ld+json"
@@ -224,7 +224,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                         className="text-charcoal/80 leading-relaxed"
                                         dangerouslySetInnerHTML={{
                                             __html: injectContextualLinks(
-                                                "With over 37 years of tradition, Jinbeh offers an unmatched dining experience. Our skilled hibachi chefs perform tableside, creating not just a meal but a show. Combined with our fresh sushi bar and warm hospitality, every visit becomes a celebration.",
+                                                "With over 38 years of tradition, Jinbeh offers an unmatched dining experience. Our skilled hibachi chefs perform tableside, creating not just a meal but a show. Combined with our fresh sushi bar and warm hospitality, every visit becomes a celebration.",
                                                 `/blog/${post.slug}`
                                             )
                                         }}
