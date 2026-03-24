@@ -10,7 +10,7 @@ import { EventInquiryForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Host your corporate event, wedding rehearsal, baby shower, or team building at Jinbeh! Private dining rooms in Frisco (40 guests) & Lewisville (30 guests). Hibachi entertainment, catering, and unforgettable experiences.",
+    "Host your next event at Jinbeh! Private dining in Frisco (40 guests) & Lewisville (30 guests) with hibachi entertainment, custom menus, and dedicated event coordination.",
   keywords: [
     "event venue frisco tx",
     "private dining room frisco",

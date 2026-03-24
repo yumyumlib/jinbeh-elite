@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Lewisville Japanese Restaurant",
-  description: "Discover Jinbeh Lewisville's fresh sushi rolls including Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Premium ingredients, hand-crafted daily near Vista Ridge Mall.s menu. Craftsmanship, freshness, artistry. 14 delicious options from Dragon Roll to Yellowtail Jalapeño Roll. Easy access from I-35E, near Vista Ridge Mall.",
+  description: "Fresh sushi rolls at Jinbeh Lewisville — Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Hand-crafted daily near Vista Ridge Mall.",
   keywords: ["sushi rolls lewisville", "best sushi rolls lewisville", "sushi rolls menu lewisville", "jinbeh sushi rolls", "japanese sushi rolls lewisville", "sushi rolls", "specialty rolls", "maki", "uramaki"],
   openGraph: {
     title: "Sushi Rolls Menu | Jinbeh Lewisville",
@@ -285,7 +285,7 @@ export default function SushiRollsLewisvillePage() {
                 Jinbeh Lewisville Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Sushi Rolls
+                Sushi Rolls — Lewisville
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Craftsmanship, freshness, artistry. Explore our 17 sushi rolls options,

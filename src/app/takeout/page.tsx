@@ -188,7 +188,7 @@ export default function TakeoutPage() {
               Convenient Dining
             </p>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              Takeout & Delivery
+              Jinbeh Takeout & Delivery
             </h1>
             <p className="text-xl text-white/80">
               Enjoy fresh sushi, authentic hibachi, and Japanese favorites from the comfort of your home.

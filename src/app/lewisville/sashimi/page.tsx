@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Lewisville Japanese Restaurant",
-  description: "Explore Jinbeh Lewisville's sashimi menu featuring fresh salmon, tuna, yellowtail, octopus, and our premium omakase selection. Sliced to order by experienced chefs near Vista Ridge Mall. menu. Purity, premium fish, elegant simplicity. 7 delicious options from Salmon Sashimi to Omakase Selection. Easy access from I-35E, near Vista Ridge Mall.",
+  description: "Jinbeh Lewisville's sashimi menu — fresh salmon, tuna, yellowtail, octopus, and chef's omakase selections. Premium cuts near Vista Ridge Mall.",
   keywords: ["sashimi lewisville", "best sashimi lewisville", "sashimi menu lewisville", "jinbeh sashimi", "japanese sashimi lewisville", "sashimi", "raw fish", "sashimi platter", "fresh fish"],
   openGraph: {
     title: "Sashimi Menu | Jinbeh Lewisville",
@@ -185,7 +185,7 @@ export default function SashimiLewisvillePage() {
                 Jinbeh Lewisville Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Sashimi
+                Sashimi — Lewisville
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Purity, premium fish, elegant simplicity. Explore our 7 sashimi options,

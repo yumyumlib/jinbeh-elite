@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Order Online | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
+    title: "Order Sushi & Hibachi Online | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
     description:
-        "Order authentic Japanese hibachi, sushi, and appetizers online from Jinbeh. Available for delivery via Uber Eats and Grubhub, or call to order directly from our Frisco and Lewisville locations.",
+        "Order Jinbeh's fresh sushi rolls, hibachi favorites, and Japanese appetizers for delivery or pickup. Available via Uber Eats, Grubhub, or call direct. Frisco & Lewisville, TX.",
     keywords: [
         "order online",
         "japanese food delivery",

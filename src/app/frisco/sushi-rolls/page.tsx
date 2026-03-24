@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Discover Jinbeh Frisco's fresh sushi rolls including Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Premium ingredients, hand-crafted daily near Stonebriar Centre.s menu. Craftsmanship, freshness, artistry. 14 delicious options from Dragon Roll to Yellowtail Jalapeño Roll. Near Stonebriar Centre, minutes from Legacy West.",
+  description: "Fresh sushi rolls at Jinbeh Frisco — Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Hand-crafted daily near Stonebriar Centre. Since 1988.",
   keywords: ["sushi rolls frisco", "best sushi rolls frisco", "sushi rolls menu frisco", "jinbeh sushi rolls", "japanese sushi rolls frisco", "sushi rolls", "specialty rolls", "maki", "uramaki"],
   openGraph: {
     title: "Sushi Rolls Menu | Jinbeh Frisco",
@@ -285,7 +285,7 @@ export default function SushiRollsFriscoPage() {
                 Jinbeh Frisco Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Sushi Rolls
+                Sushi Rolls — Frisco
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Craftsmanship, freshness, artistry. Explore our 17 sushi rolls options,

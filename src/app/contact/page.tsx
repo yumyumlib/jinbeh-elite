@@ -37,10 +37,10 @@ export default function ContactPage() {
                 <div className="container mx-auto px-6 text-center">
                     <RevealSection>
                         <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4">
-                            Contact Us
+                            Contact Jinbeh
                         </h1>
                         <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                            Jinbeh contact — reach our Japanese restaurant phone lines for Jinbeh reservations, a Jinbeh catering inquiry, or just to say hello. Find the <Link href="/blog/japanese-restaurants-near-me" className="text-soft-gold hover:underline">nearest Jinbeh location</Link> to you.
+                            Have a question about reservations, catering, or your next visit? We'd love to hear from you. Reach us by phone or stop by our <Link href="/frisco" className="text-soft-gold hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-soft-gold hover:underline">Lewisville</Link> location.
                         </p>
                     </RevealSection>
                 </div>

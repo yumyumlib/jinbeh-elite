@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Gallery | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Explore Jinbeh's photo and video gallery. See our hibachi chef performances, sushi craftsmanship, dining atmosphere, and celebration memories at our Frisco and Lewisville locations. gallery showcasing our hibachi chefs in action, fresh sushi & rolls, and memorable dining experiences. See why families love celebrating at our restaurants.",
+    "See Jinbeh in action — hibachi fire shows, hand-crafted sushi, signature cocktails, and private dining rooms at our Frisco & Lewisville locations.",
   keywords: [
     "jinbeh photos",
     "hibachi restaurant photos",

@@ -181,12 +181,12 @@ export default function ReservationsPage() {
             </RevealSection>
             <RevealSection delay={100}>
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                Make a Reservation
+                Reserve Your Table at Jinbeh
               </h1>
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-white/80">
-                Jinbeh reservations — book a table for an unforgettable hibachi reservation and sushi experience. Browse our restaurant reservation options for Frisco dining and Lewisville dining.
+                Hibachi entertainment, hand-crafted sushi, and family hospitality since 1988. Choose your preferred location and book online — walk-ins always welcome.
               </p>
             </RevealSection>
           </div>

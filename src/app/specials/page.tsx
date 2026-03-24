@@ -198,7 +198,7 @@ export default function SpecialsPage() {
               Limited Time Offers
             </p>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              Exclusive Specials & Deals
+              Specials & Deals at Jinbeh
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
               Discover amazing discounts on your favorite Japanese cuisine.

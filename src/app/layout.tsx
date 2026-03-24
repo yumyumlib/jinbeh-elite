@@ -20,11 +20,11 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jinbeh.com"),
   title: {
-    default: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Japanese Restaurant",
-    template: "%s | Jinbeh Japanese Restaurant",
+    default: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988 | Frisco & Lewisville TX",
+    template: "%s | Jinbeh Japanese Restaurant – Since 1988",
   },
   description:
-    "Experience authentic teppanyaki hibachi & fresh sushi near Stonebriar in Frisco or off I-35E in Lewisville. Family-owned Japanese restaurant since 1988. Reserve your hibachi table today!",
+    "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake at two DFW locations — Frisco near Stonebriar & Lewisville off I-35E. Reserve your table tonight.",
   keywords: [
     "hibachi",
     "sushi",
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://jinbeh.com",
     siteName: "Jinbeh Japanese Restaurant",
-    title: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Japanese Restaurant",
+    title: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988 | Frisco & Lewisville TX",
     description:
-      "Experience authentic teppanyaki hibachi & fresh sushi near Stonebriar in Frisco or off I-35E in Lewisville. Family-owned Japanese restaurant since 1988.",
+      "Dinner and a show since 1988. Authentic hibachi, hand-crafted sushi, and premium sake — Frisco near Stonebriar & Lewisville off I-35E. Reserve tonight.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -78,9 +78,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jinbeh Japanese Restaurant | Hibachi & Sushi",
+    title: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988",
     description:
-      "Experience authentic Japanese hibachi and sushi at Jinbeh. Family-owned since 1988.",
+      "Dinner and a show since 1988. Authentic hibachi and fresh sushi at Jinbeh — Frisco & Lewisville TX.",
     images: ["/images/og-image.jpg"],
   },
   robots: {

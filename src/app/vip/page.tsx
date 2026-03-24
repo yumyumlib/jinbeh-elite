@@ -5,7 +5,7 @@ import VipClubForm from "@/components/VipClubForm";
 import { HeroSection, RevealSection, ShinyBadge } from "@/components/MagicUI";
 
 export const metadata: Metadata = {
-    title: "Jinbeh VIP Club | Exclusive Offers & Birthday Gifts",
+    title: "Join the Jinbeh VIP Club | Free Birthday Gift + Secret Menu Access",
     description: "Join 1,200+ Jinbeh VIP members. Get a free birthday dessert, a $25 gift card on your birthday, and access to our secret menu.",
     keywords: [
         "jinbeh vip",

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Hibachi Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Explore Jinbeh Frisco's hibachi menu featuring 14 teppanyaki options. Entertainment, fire show, family fun, and onion volcano. From Filet Mignon to Imperial Dinner near Stonebriar Centre. Entertainment, fire show, family fun, onion volcano. 14 delicious options from Filet Mignon to Imperial Dinner. Near Stonebriar Centre, minutes from Legacy West.",
+  description: "Jinbeh Frisco's hibachi menu — 14 teppanyaki entrées with tableside fire shows, onion volcano, and premium cuts. Near Stonebriar Centre. Family-owned since 1988.",
   keywords: ["hibachi frisco", "best hibachi frisco", "hibachi menu frisco", "jinbeh hibachi", "japanese hibachi frisco", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
     title: "Hibachi Menu | Jinbeh Frisco",
@@ -255,7 +255,7 @@ export default function HibachiFriscoPage() {
                 Jinbeh Frisco Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Hibachi
+                Hibachi Menu — Frisco
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Entertainment, fire show, family fun, onion volcano. Explore our 14 hibachi options,
