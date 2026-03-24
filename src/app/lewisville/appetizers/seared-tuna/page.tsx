@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Seared Ahi Tuna | Jinbeh Lewisville",
     description: "Pepper-crusted ahi with wasabi aioli",
     url: "https://jinbeh.com/lewisville/appetizers/seared-tuna",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Appetizers Seared Tuna",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/appetizers/seared-tuna",

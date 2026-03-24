@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     title: "Menu | Jinbeh Lewisville - Hibachi & Sushi",
     description: "Fresh sushi, sizzling hibachi, and authentic Japanese cuisine. View our full menu.",
     url: "https://jinbeh.com/lewisville/menu",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Menu",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/menu",

@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     description:
       "Affordable hibachi and sushi lunch specials at Jinbeh. Weekday lunch 11am-2pm at both locations.",
     url: "https://jinbeh.com/lunch-specials",
+    images: [
+      {
+        url: "https://jinbeh.com/images/food/BentoBoxLunchSet.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lunch Specials",
+      },
+    ],
     type: "website",
   },
   alternates: {
@@ -130,11 +138,35 @@ const lunchHours = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lunch Specials",
+      "item": "https://jinbeh.com/lunch-specials"
+    }
+  ]
+};
+
 export default function LunchSpecialsPage() {
   return (
     <>
       <Header />
       <main id="main-content" className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
         {/* Hero */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-accent-red via-deep-indigo to-charcoal" />

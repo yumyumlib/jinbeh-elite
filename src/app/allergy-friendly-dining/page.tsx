@@ -28,6 +28,14 @@ export const metadata: Metadata = {
         description:
             "Dine with confidence. Our chefs accommodate allergies at your table — gluten-free, dairy-free, nut-free, shellfish-free options available.",
         url: "https://jinbeh.com/allergy-friendly-dining",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Allergy Friendly Dining",
+      },
+    ],
     },
     alternates: {
         canonical: "https://jinbeh.com/allergy-friendly-dining",

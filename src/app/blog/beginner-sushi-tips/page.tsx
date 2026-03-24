@@ -60,6 +60,29 @@ const faqs = [
 ];
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Beginner Sushi Tips: Easy Homemade Sushi Guide | Jinbeh",
+  "description": "Discover the joy of beginner sushi-making at home with these essential tips. Learn to craft the best sushi rolls for beginners, including the classic California",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function BeginnerSushiTipsPage() {
   return (
     <>
@@ -77,6 +100,11 @@ export default function BeginnerSushiTipsPage() {
       >
         <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
           Beginner Sushi Tips: Easy Homemade Sushi Guide
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+
         </h1>
 
         <h2>Welcome to the World of Sushi Making</h2>

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Vegetable & Tofu | Jinbeh Frisco",
     description: "Fresh seasonal vegetables with crispy tofu",
     url: "https://jinbeh.com/frisco/hibachi/vegetable-tofu",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Vegetable Tofu",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/vegetable-tofu",

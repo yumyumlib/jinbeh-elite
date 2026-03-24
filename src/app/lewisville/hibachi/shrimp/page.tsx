@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Jumbo Shrimp | Jinbeh Lewisville",
     description: "Succulent jumbo shrimp, flame-kissed to perfection",
     url: "https://jinbeh.com/lewisville/hibachi/shrimp",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Shrimp",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/shrimp",

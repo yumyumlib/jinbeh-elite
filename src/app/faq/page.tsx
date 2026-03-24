@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     description:
       "Find answers to common questions about Jinbeh Japanese Restaurant in Frisco and Lewisville, TX.",
     url: "https://jinbeh.com/faq",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Faq",
+      },
+    ],
     type: "website",
   },
   alternates: {
@@ -333,6 +341,25 @@ const faqCategories = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "FAQ",
+      "item": "https://jinbeh.com/faq"
+    }
+  ]
+};
+
 export default function FAQPage() {
   return (
     <>
@@ -343,6 +370,11 @@ export default function FAQPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero */}
         <section className="py-16 bg-gradient-to-br from-deep-indigo to-charcoal text-white">

@@ -75,6 +75,29 @@ const cta = {
     lewisvillePhone: "(214) 488-2224",
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AYCE Sushi vs. Traditional: What You Should Know | Jinbeh",
+  "description": "Compare all-you-can-eat sushi and traditional sushi restaurants. Learn about freshness, fish quality, FDA guidelines, and how each dining format affects your ex",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function AYCESushiVsTraditionalPage() {
     return (
         <ArticleLayout
@@ -92,7 +115,12 @@ export default function AYCESushiVsTraditionalPage() {
         >
             {/* Article Body */}
             <p>
-                If you have searched for sushi in the DFW area, you have likely noticed two very different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional sushi bars. Both serve raw fish. Both can be delicious. But the way they operate, source ingredients, and deliver your meal are fundamentally different.
+                If you have searched for sushi in the DFW area, you have likely noticed two ver
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional sushi bars. Both serve raw fish. Both can be delicious. But the way they operate, source ingredients, and deliver your meal are fundamentally different.
             </p>
 
             <p>

@@ -61,6 +61,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Best Places for Bridal Showers Near Me | Jinbeh",
+  "description": "Discover the best places for bridal showers near you. From charming gardens to elegant hotels, find the perfect venue for a memorable celebration.",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function BridalShowerVenuesPage({ params }: { params: { slug: string } }) {
   const slug = "bridal-shower-venues";
   return (
@@ -79,6 +102,11 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Best Places for Bridal Showers Near Me
       </h1>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+
 
       <p>
         Planning a bridal shower is an exciting yet important task. Finding the

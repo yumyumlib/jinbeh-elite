@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     description:
       "Happy hour drinks and appetizer specials at Jinbeh. Unwind after work with discounted sushi, rolls, and beverages.",
     url: "https://jinbeh.com/happy-hour/specials",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Happy Hour Specials",
+      },
+    ],
     type: "website",
   },
   alternates: {

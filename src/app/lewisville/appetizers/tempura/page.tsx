@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Shrimp Tempura | Jinbeh Lewisville",
     description: "Light and crispy fried shrimp",
     url: "https://jinbeh.com/lewisville/appetizers/tempura",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Appetizers Tempura",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/appetizers/tempura",

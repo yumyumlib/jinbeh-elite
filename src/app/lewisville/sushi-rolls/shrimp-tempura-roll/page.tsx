@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Shrimp Tempura Roll | Jinbeh Lewisville",
     description: "Crispy shrimp tempura with avocado",
     url: "https://jinbeh.com/lewisville/sushi-rolls/shrimp-tempura-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Shrimp Tempura Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/shrimp-tempura-roll",

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Salmon Sashimi | Jinbeh Lewisville",
     description: "Fresh Atlantic salmon, sliced to perfection",
     url: "https://jinbeh.com/lewisville/sashimi/salmon-sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sashimi Salmon Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sashimi/salmon-sashimi",

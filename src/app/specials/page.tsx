@@ -30,6 +30,14 @@ export const metadata: Metadata = {
     description:
       "Amazing deals on sushi, hibachi, and Japanese cuisine. Happy Hour, lunch specials, and weekly promotions.",
     url: "https://jinbeh.com/specials",
+    images: [
+      {
+        url: "https://jinbeh.com/images/food/SamaraiRollCloseup.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Specials",
+      },
+    ],
     type: "website",
   },
   alternates: {
@@ -175,6 +183,25 @@ const lunchHighlights = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Specials",
+      "item": "https://jinbeh.com/specials"
+    }
+  ]
+};
+
 export default function SpecialsPage() {
   return (
     <>
@@ -185,6 +212,11 @@ export default function SpecialsPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(offersSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -435,58 +467,7 @@ export default function SpecialsPage() {
           </div>
         </section>
 
-        {/* Seasonal/Holiday Specials */}
-        <section className="py-20 bg-warm-ivory">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <RevealSection>
-                <p className="text-accent-red font-bold tracking-wider uppercase mb-2">
-                  🎉 Limited Time Offers
-                </p>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                  Seasonal & Holiday Specials
-                </h2>
-                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  Check back for special promotions tied to holidays and seasons.
-                </p>
-              </RevealSection>
-            </div>
 
-            <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                {[
-                  { emoji: "🎄", label: "Holiday Specials", desc: "Coming Soon" },
-                  { emoji: "🎊", label: "Seasonal Offers", desc: "Coming Soon" },
-                  { emoji: "🎁", label: "Party Packages", desc: "Coming Soon" },
-                ].map((item, idx) => (
-                  <MagicCard
-                    key={idx}
-                    className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-accent-red/20"
-                    gradientColor="rgba(201, 162, 39, 0.15)"
-                  >
-                    <div className="text-6xl mb-4">{item.emoji}</div>
-                    <h3 className="font-heading text-xl font-bold text-charcoal mb-2">
-                      {item.label}
-                    </h3>
-                    <p className="text-charcoal/80">{item.desc}</p>
-                  </MagicCard>
-                ))}
-              </div>
-
-              <div className="bg-gradient-to-r from-accent-red/20 to-deep-indigo/20 rounded-2xl p-8 text-center border-2 border-accent-red/30">
-                <h3 className="text-xl font-heading font-bold text-charcoal mb-3">
-                  Stay Updated on Special Offers
-                </h3>
-                <p className="text-charcoal/70 mb-6">
-                  Subscribe to our newsletter to receive notifications about upcoming seasonal specials and exclusive promotions.
-                </p>
-                <div className="w-full md:w-auto">
-                  <SeasonalSpecialsForm />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Newsletter Signup Section */}
         <section className="py-20 bg-gradient-to-br from-deep-indigo via-charcoal to-accent-red text-white">

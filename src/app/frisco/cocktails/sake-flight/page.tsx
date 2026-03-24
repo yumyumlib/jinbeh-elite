@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sake Flight | Premium Japanese Tasting Frisco",
     description: "Three premium sake tasting flight. Expert-curated selection.",
     url: "https://jinbeh.com/frisco/cocktails/sake-flight",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Cocktails Sake Flight",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/cocktails/sake-flight",

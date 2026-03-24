@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     title: "Corporate Catering | Jinbeh Japanese Restaurant",
     description: "Bring Jinbeh to your corporate event. Premium Japanese catering for business.",
     url: "https://jinbeh.com/catering/corporate",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Catering Corporate",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/catering/corporate",

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Gyoza Frisco | Crispy Pan-Fried Pork Dumplings",
     description: "Pan-fried pork gyoza dumplings at Jinbeh Frisco. 230 calories, 10g protein.",
     url: "https://jinbeh.com/frisco/appetizers/gyoza",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers Gyoza",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers/gyoza",

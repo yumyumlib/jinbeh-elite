@@ -95,6 +95,25 @@ const organizationSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://jinbeh.com/about"
+    }
+  ]
+};
+
 export default function AboutPage() {
   return (
     <>
@@ -109,6 +128,11 @@ export default function AboutPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -154,9 +178,9 @@ export default function AboutPage() {
                 <div className="space-y-6 text-charcoal/80 leading-relaxed">
                   <p>
                     When Ben Matsuda opened Jinbeh in 1988, he didn&apos;t just open a restaurant—he
-                    brought a vision home. This Japanese restaurant history Frisco chapter began with a simple dream: to share the warmth of authentic Japanese hospitality,
+                    brought a vision home. It began with a simple dream: to share the warmth of authentic Japanese hospitality,
                     the artistry of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>, and the precision of sushi craftsmanship with his North Texas
-                    community. What began in a small space has blossomed into a multi-generational tradition that families
+                    community. What started in a small Las Colinas space has blossomed into a multi-generational tradition that families
                     keep coming back to after 20, 25, even 30+ years.
                   </p>
                   <p>
@@ -166,8 +190,8 @@ export default function AboutPage() {
                     But what truly sets us apart is how we make you feel: welcomed, celebrated, and part of something special.
                   </p>
                   <p>
-                    Today, with locations in <Link href="/frisco" className="text-accent-red hover:underline font-medium">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline font-medium">Lewisville</Link>, we&apos;re still a proud family owned restaurant Frisco TX and beyond, still committed to those original values,
-                    and still determined to deliver authentic Japanese dining DFW families love. Our hibachi restaurant history spans nearly four decades — and that&apos;s the Jinbeh difference.
+                    Today, with locations in <Link href="/frisco" className="text-accent-red hover:underline font-medium">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline font-medium">Lewisville</Link>, we&apos;re still proudly family-owned, still committed to those original values,
+                    and still determined to deliver the kind of dining experience North Texas families love. Nearly four decades later — that&apos;s the Jinbeh difference.
                   </p>
                 </div>
 

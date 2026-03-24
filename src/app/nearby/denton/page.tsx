@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Hibachi Denton TX | Premium Teppanyaki Restaurant | Jinbeh",
     description: "Experience authentic hibachi teppanyaki shows just minutes from Denton. Skilled chefs, exciting tableside dining, and premium Japanese cuisine. Reserve now!",
     url: "https://jinbeh.com/nearby/denton",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Denton",
+      },
+    ],
     type: "website",
   },
 };

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Tuna Tartare | Jinbeh Lewisville",
     description: "Diced ahi tuna with avocado and ponzu",
     url: "https://jinbeh.com/lewisville/appetizers/tuna-tartare",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Appetizers Tuna Tartare",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/appetizers/tuna-tartare",

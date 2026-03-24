@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Volcano Roll | Jinbeh Frisco",
     description: "Spicy crab and avocado with baked seafood topping",
     url: "https://jinbeh.com/frisco/sushi-rolls/volcano-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Volcano Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/volcano-roll",

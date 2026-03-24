@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Steak & Shrimp Combo | Jinbeh Frisco",
     description: "Filet mignon paired with jumbo shrimp",
     url: "https://jinbeh.com/frisco/hibachi/combo-steak-shrimp",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Combo Steak Shrimp",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/combo-steak-shrimp",

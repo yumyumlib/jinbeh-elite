@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Tuna Tartare Frisco | Premium Diced Ahi Tuna",
     description: "Diced ahi tuna tartare with avocado and ponzu at Jinbeh Frisco. 100-150 calories, 20g protein.",
     url: "https://jinbeh.com/frisco/appetizers/tuna-tartare",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers Tuna Tartare",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers/tuna-tartare",

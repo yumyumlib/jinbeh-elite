@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Seafood Trio | Jinbeh Lewisville",
     description: "Shrimp, scallops, and lobster",
     url: "https://jinbeh.com/lewisville/hibachi/combo-seafood",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Combo Seafood",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/combo-seafood",

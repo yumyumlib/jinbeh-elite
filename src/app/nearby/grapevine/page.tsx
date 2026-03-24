@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Sushi Grapevine TX | Premium Sushi Restaurant | Jinbeh",
     description: "Experience premium sushi and fresh Japanese cuisine just minutes from Grapevine. Expert sushi chefs, hibachi shows, and full bar. Reserve now!",
     url: "https://jinbeh.com/nearby/grapevine",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Grapevine",
+      },
+    ],
     type: "website",
   },
 };

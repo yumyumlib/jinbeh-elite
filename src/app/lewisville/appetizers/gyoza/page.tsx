@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Gyoza | Jinbeh Lewisville",
     description: "Pan-fried pork dumplings with dipping sauce",
     url: "https://jinbeh.com/lewisville/appetizers/gyoza",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Appetizers Gyoza",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/appetizers/gyoza",

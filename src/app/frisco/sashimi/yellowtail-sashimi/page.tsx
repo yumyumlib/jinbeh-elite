@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Yellowtail Sashimi Frisco | Premium Hamachi Fish",
     description: "Premium hamachi sashimi at Jinbeh Frisco. 150 calories, 20g protein, omega-3 rich.",
     url: "https://jinbeh.com/frisco/sashimi/yellowtail-sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi Yellowtail Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi/yellowtail-sashimi",

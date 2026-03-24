@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sea Scallops | Jinbeh Lewisville",
     description: "Plump sea scallops seared with garlic butter",
     url: "https://jinbeh.com/lewisville/hibachi/scallops",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Scallops",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/scallops",

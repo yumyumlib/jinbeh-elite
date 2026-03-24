@@ -32,6 +32,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Corporate Events & Team Dinners | Jinbeh Japanese Restaurant",
     description: "Impress clients and reward your team with an unforgettable hibachi experience. Private tables, group menus & professional service.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Corporate Events",
+      },
+    ],
     type: "website",
   },
   alternates: {

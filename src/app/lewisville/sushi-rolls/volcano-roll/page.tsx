@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Volcano Roll | Jinbeh Lewisville",
     description: "Spicy crab and avocado with baked seafood topping",
     url: "https://jinbeh.com/lewisville/sushi-rolls/volcano-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Volcano Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/volcano-roll",

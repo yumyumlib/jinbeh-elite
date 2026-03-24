@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Lychee Martini | Jinbeh Lewisville",
     description: "Vodka with lychee and a floral finish",
     url: "https://jinbeh.com/lewisville/cocktails/lychee-martini",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Cocktails Lychee Martini",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/cocktails/lychee-martini",

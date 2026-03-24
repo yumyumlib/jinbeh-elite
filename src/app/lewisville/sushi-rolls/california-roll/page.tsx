@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "California Roll | Jinbeh Lewisville",
     description: "Crab, avocado, and cucumber classic",
     url: "https://jinbeh.com/lewisville/sushi-rolls/california-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls California Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/california-roll",

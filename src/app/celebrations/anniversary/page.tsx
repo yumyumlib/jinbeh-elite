@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     title: "Anniversary Dinner | Romantic Japanese Dining | Jinbeh",
     description: "Celebrate your anniversary with exceptional hibachi and sushi at Jinbeh Japanese Restaurant.",
     url: "https://jinbeh.com/celebrations/anniversary",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Anniversary",
+      },
+    ],
     type: "website",
   },
   alternates: {

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Salmon Sashimi Frisco | Premium Omega-3 Rich Fish",
     description: "Premium Atlantic salmon sashimi at Jinbeh Frisco. 121 calories per serving, 17g protein, rich in omega-3s.",
     url: "https://jinbeh.com/frisco/sashimi/salmon-sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi Salmon Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi/salmon-sashimi",

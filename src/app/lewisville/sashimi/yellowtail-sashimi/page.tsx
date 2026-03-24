@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Yellowtail Sashimi | Jinbeh Lewisville",
     description: "Buttery hamachi with delicate flavor",
     url: "https://jinbeh.com/lewisville/sashimi/yellowtail-sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sashimi Yellowtail Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sashimi/yellowtail-sashimi",

@@ -61,6 +61,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
+  "description": "Celebrate your birthday in style with free birthday food deals! Discover where to get complimentary meals, desserts, and treats, making your special day unforge",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function FreeBirthdayFoodDealsPage() {
   return (
     <ArticleLayout
@@ -77,7 +100,12 @@ export default function FreeBirthdayFoodDealsPage() {
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Free Birthday Food Deals: Where to Get Treats
-      </h1>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+  </h1>
 
       <p>
         Celebrating your birthday is always special, and what better way to make

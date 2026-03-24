@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Shrimp Tempura Frisco | Crispy Fried Shrimp",
     description: "Crispy tempura battered shrimp at Jinbeh Frisco. 200-300 calories, 12-15g protein.",
     url: "https://jinbeh.com/frisco/appetizers/tempura",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers Tempura",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers/tempura",

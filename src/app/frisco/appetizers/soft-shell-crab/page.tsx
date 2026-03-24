@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Soft Shell Crab Frisco | Crispy Edible Shell Crab",
     description: "Crispy tempura soft shell crab at Jinbeh Frisco. 555 calories, 23.8g protein.",
     url: "https://jinbeh.com/frisco/appetizers/soft-shell-crab",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers Soft Shell Crab",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers/soft-shell-crab",

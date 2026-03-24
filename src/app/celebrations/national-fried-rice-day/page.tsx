@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "National Fried Rice Day | Celebrate at Jinbeh",
     description: "The best hibachi fried rice in DFW! Watch our chefs prepare it tableside on September 20th. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations National Fried Rice Day",
+      },
+    ],
     type: "website",
   },
   alternates: {

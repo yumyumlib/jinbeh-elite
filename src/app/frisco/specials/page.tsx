@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Frisco Specials & Deals | Jinbeh",
     description: "Amazing specials and promotions at Jinbeh Frisco location. Happy Hour, lunch specials, and weekly deals.",
     url: "https://jinbeh.com/frisco/specials",
+    images: [
+      {
+        url: "https://jinbeh.com/images/food/SamaraiRollCloseup.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Specials",
+      },
+    ],
     type: "website",
   },
   alternates: {

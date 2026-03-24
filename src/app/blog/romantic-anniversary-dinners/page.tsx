@@ -66,6 +66,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh",
+  "description": "Discover the top romantic spots for anniversary dinners near you, offering intimate settings, exquisite cuisine, and unforgettable ambiance to celebrate your lo",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function RomanticAnniversaryDinnersPage() {
   return (
     <ArticleLayout
@@ -82,7 +105,12 @@ export default function RomanticAnniversaryDinnersPage() {
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Romantic Anniversary Dinners Near Me: Top Spots
-      </h1>
+  
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+    </h1>
 
       <p>
         Celebrating your anniversary is a special occasion that deserves an

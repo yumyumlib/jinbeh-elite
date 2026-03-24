@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Jinbeh Punch | Frisco Japanese Cocktails",
     description: "Signature tropical cocktail at Jinbeh. Fresh, handcrafted Japanese beverages.",
     url: "https://jinbeh.com/frisco/cocktails/jinbeh-punch",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Cocktails Jinbeh Punch",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/cocktails/jinbeh-punch",

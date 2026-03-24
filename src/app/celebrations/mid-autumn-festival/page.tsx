@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mid-Autumn Festival Dinner | Moon Festival at Jinbeh",
     description: "Celebrate the Mid-Autumn Festival with family at Jinbeh. Hibachi and sushi in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Mid Autumn Festival",
+      },
+    ],
     type: "website",
   },
   alternates: {

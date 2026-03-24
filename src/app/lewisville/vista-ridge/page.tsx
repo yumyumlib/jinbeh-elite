@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Japanese Restaurant Near Vista Ridge Mall | Jinbeh Lewisville",
     description: "Fresh sushi & exciting hibachi just minutes from Vista Ridge Mall in Lewisville, TX.",
     url: "https://jinbeh.com/lewisville/vista-ridge",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Vista Ridge",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/vista-ridge",

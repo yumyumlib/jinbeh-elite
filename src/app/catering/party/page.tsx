@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Party Catering | Jinbeh Japanese Restaurant",
     description: "Celebrate with authentic Japanese catering delivered to your party or event.",
     url: "https://jinbeh.com/catering/party",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Catering Party",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/catering/party",

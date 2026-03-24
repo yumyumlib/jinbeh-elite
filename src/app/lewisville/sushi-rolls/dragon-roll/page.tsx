@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Dragon Roll | Jinbeh Lewisville",
     description: "Eel and cucumber topped with avocado and eel sauce",
     url: "https://jinbeh.com/lewisville/sushi-rolls/dragon-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Dragon Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/dragon-roll",

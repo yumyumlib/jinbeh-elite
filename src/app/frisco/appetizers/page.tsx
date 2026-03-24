@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Appetizers Menu | Jinbeh Frisco",
     description: "Shareability, group dining, perfect starters. 6 appetizers options at Jinbeh Frisco.",
     url: "https://jinbeh.com/frisco/appetizers",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers",

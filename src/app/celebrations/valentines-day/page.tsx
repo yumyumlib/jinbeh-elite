@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Valentine's Day Dinner | Romantic Japanese Dining | Jinbeh",
     description: "Make Valentine's Day unforgettable with hibachi, sushi, and sake at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Valentines Day",
+      },
+    ],
     type: "website",
   },
   alternates: {

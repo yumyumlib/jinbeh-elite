@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Ribeye Steak | Jinbeh Frisco",
     description: "Marbled ribeye with rich, beefy flavor",
     url: "https://jinbeh.com/frisco/hibachi/ribeye",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Ribeye",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/ribeye",

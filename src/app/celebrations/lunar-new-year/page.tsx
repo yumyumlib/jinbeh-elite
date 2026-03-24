@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lunar New Year Dinner | Celebrate at Jinbeh",
     description: "Welcome the Lunar New Year with hibachi, sushi, and family at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Lunar New Year",
+      },
+    ],
     type: "website",
   },
   alternates: {

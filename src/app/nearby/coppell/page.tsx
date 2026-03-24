@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Hibachi Coppell TX | Authentic Japanese Restaurant | Jinbeh",
     description: "Experience authentic hibachi teppanyaki and fresh sushi just minutes from Coppell. Skilled chefs, exciting tableside shows, and premium Japanese cuisine. Reserve now!",
     url: "https://jinbeh.com/nearby/coppell",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Coppell",
+      },
+    ],
     type: "website",
   },
 };

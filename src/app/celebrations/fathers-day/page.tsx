@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Father's Day Dinner | Treat Dad at Jinbeh",
     description: "Make Father's Day special with hibachi steak, sushi, and Japanese craft beer at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Fathers Day",
+      },
+    ],
     type: "website",
   },
   alternates: {

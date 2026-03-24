@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Seafood Trio | Jinbeh Frisco",
     description: "Shrimp, scallops, and lobster",
     url: "https://jinbeh.com/frisco/hibachi/combo-seafood",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Combo Seafood",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/combo-seafood",

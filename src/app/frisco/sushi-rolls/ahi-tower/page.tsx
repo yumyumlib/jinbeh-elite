@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Ahi Tuna Tower | Jinbeh Frisco",
     description: "Layered ahi tuna, avocado, and crispy wonton",
     url: "https://jinbeh.com/frisco/sushi-rolls/ahi-tower",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Ahi Tower",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/ahi-tower",

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sake Bomb | Jinbeh Lewisville",
     description: "Classic sake dropped into cold beer",
     url: "https://jinbeh.com/lewisville/cocktails/sake-bomb",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Cocktails Sake Bomb",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/cocktails/sake-bomb",

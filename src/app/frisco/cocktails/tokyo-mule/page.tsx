@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Tokyo Mule | Japanese Whiskey Cocktail Frisco",
     description: "Tokyo Mule with premium Japanese whiskey, ginger & lime.",
     url: "https://jinbeh.com/frisco/cocktails/tokyo-mule",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Cocktails Tokyo Mule",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/cocktails/tokyo-mule",

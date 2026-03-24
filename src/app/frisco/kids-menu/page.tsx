@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     description:
       "Fun and delicious kids menu at Jinbeh Frisco! Hibachi, sushi rolls, sides, and desserts.",
     url: "https://jinbeh.com/frisco/kids-menu",
+    images: [
+      {
+        url: "https://jinbeh.com/images/food/BentoBoxLunchSet.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Kids Menu",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/kids-menu",

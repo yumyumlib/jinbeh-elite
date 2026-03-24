@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Holiday Parties | Jinbeh Japanese Restaurant",
     description: "Celebrate the holidays with hibachi entertainment and festive Japanese cuisine at Jinbeh.",
     url: "https://jinbeh.com/celebrations/holiday-parties",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Holiday Parties",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/celebrations/holiday-parties",

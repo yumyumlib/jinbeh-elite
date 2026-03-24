@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Thanksgiving Dinner | Skip the Cooking at Jinbeh",
     description: "Let us handle Thanksgiving dinner! Hibachi, sushi, and family dining at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Thanksgiving",
+      },
+    ],
     type: "website",
   },
   alternates: {

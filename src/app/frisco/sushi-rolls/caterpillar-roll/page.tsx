@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Caterpillar Roll | Jinbeh Frisco",
     description: "Eel roll topped with avocado slices",
     url: "https://jinbeh.com/frisco/sushi-rolls/caterpillar-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Caterpillar Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/caterpillar-roll",

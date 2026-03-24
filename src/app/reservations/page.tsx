@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     description:
       "Book your table at Jinbeh for an unforgettable hibachi and sushi dining experience.",
     url: "https://jinbeh.com/reservations",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Reservations",
+      },
+    ],
     type: "website",
   },
   alternates: {
@@ -162,6 +170,25 @@ const reservationTips = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Reservations",
+      "item": "https://jinbeh.com/reservations"
+    }
+  ]
+};
+
 export default function ReservationsPage() {
   return (
     <>
@@ -171,6 +198,11 @@ export default function ReservationsPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
         {/* Hero */}
         <HeroSection className="py-16 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white">
           <div className="container mx-auto px-6 text-center max-w-4xl">

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Philadelphia Roll | Jinbeh Lewisville",
     description: "Smoked salmon with cream cheese and cucumber",
     url: "https://jinbeh.com/lewisville/sushi-rolls/philly-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Philly Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/philly-roll",

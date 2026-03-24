@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Tuna Sashimi Frisco | Premium Lean Protein Fish",
     description: "Premium ahi tuna sashimi at Jinbeh Frisco. 94 calories, 20g protein, zero carbs.",
     url: "https://jinbeh.com/frisco/sashimi/tuna-sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi Tuna Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi/tuna-sashimi",

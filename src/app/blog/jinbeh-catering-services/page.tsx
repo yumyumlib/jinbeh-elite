@@ -68,6 +68,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Jinbeh at Home: Experience Jinbeh Catering",
+  "description": "Experience authentic Japanese flavors with Jinbeh Catering",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function JinbehCateringServicesPage() {
   return (
     <ArticleLayout
@@ -82,6 +105,10 @@ export default function JinbehCateringServicesPage() {
       readTime="10 min read"
       faqs={faqs}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh at Home: Experience Jinbeh Catering
       </h1>

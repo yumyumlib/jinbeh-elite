@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Hibachi Salmon | Jinbeh Frisco",
     description: "Fresh Atlantic salmon with citrus teriyaki",
     url: "https://jinbeh.com/frisco/hibachi/salmon",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Salmon",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/salmon",

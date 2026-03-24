@@ -67,6 +67,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hibachi Birthday Party Ideas: Ultimate Planning Guide | Jinbeh",
+  "description": "Plan the perfect hibachi birthday party! From kids celebrations to adult bashes, discover why hibachi makes birthdays unforgettable with fire, food, and enterta",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function HibachiBirthdayPartyIdeasPage() {
   return (
     <ArticleLayout
@@ -83,7 +106,12 @@ export default function HibachiBirthdayPartyIdeasPage() {
       keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect $35–$50 per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi Birthday Party Ideas: Ultimate Planning Guide
+        Hibachi Birthday Party Ideas: Ultimate Planning Gu
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+ide
       </h1>
 
       <p>

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Spicy Tuna Roll | Jinbeh Frisco",
     description: "Fresh tuna with spicy mayo and scallions",
     url: "https://jinbeh.com/frisco/sushi-rolls/spicy-tuna-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Spicy Tuna Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/spicy-tuna-roll",

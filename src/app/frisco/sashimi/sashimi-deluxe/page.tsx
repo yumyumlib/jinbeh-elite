@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sashimi Deluxe Platter Frisco | Premium Chef Selection",
     description: "Chef's premium sashimi selection at Jinbeh Frisco. 329 calories, 36g protein.",
     url: "https://jinbeh.com/frisco/sashimi/sashimi-deluxe",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi Sashimi Deluxe",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi/sashimi-deluxe",

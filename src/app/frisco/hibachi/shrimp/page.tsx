@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Jumbo Shrimp | Jinbeh Frisco",
     description: "Succulent jumbo shrimp, flame-kissed to perfection",
     url: "https://jinbeh.com/frisco/hibachi/shrimp",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Shrimp",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/shrimp",

@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Japanese Food Little Elm TX | Hibachi & Sushi | Jinbeh",
     description: "Authentic Japanese food and hibachi just minutes from Little Elm. Skilled chefs, teppanyaki shows, fresh sushi bar, and full bar. Reserve now!",
     url: "https://jinbeh.com/nearby/little-elm",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Little Elm",
+      },
+    ],
     type: "website",
   },
 };

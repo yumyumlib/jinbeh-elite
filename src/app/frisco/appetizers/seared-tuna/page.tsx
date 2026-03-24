@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Seared Ahi Tuna Frisco | Premium Pepper-Crusted Fish",
     description: "Seared ahi tuna with wasabi aioli at Jinbeh Frisco. 100-150 calories, 20g protein.",
     url: "https://jinbeh.com/frisco/appetizers/seared-tuna",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers Seared Tuna",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers/seared-tuna",

@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     title: "Wedding Catering | Jinbeh Japanese Restaurant",
     description: "Make your special day unforgettable with authentic Japanese wedding catering.",
     url: "https://jinbeh.com/catering/wedding",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Catering Wedding",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/catering/wedding",

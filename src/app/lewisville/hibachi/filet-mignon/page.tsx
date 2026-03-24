@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Filet Mignon | Jinbeh Lewisville",
     description: "Premium beef tenderloin, perfectly seared on the teppan grill",
     url: "https://jinbeh.com/lewisville/hibachi/filet-mignon",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Filet Mignon",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/filet-mignon",

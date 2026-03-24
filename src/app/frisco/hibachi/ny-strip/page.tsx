@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "NY Strip Steak | Jinbeh Frisco",
     description: "Hand-cut New York strip with savory soy glaze",
     url: "https://jinbeh.com/frisco/hibachi/ny-strip",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Ny Strip",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/ny-strip",

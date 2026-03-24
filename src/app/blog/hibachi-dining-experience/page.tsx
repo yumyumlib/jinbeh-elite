@@ -76,6 +76,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh",
+  "description": "Discover the exciting world of hibachi restaurant menus, from sizzling delights to vegetarian options. Experience culinary art and entertainment at its finest w",
+  "image": "https://jinbeh.com/images/catalog/homemade-sauces.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function HibachiDiningExperiencePage() {
   return (
     <ArticleLayout
@@ -93,7 +116,12 @@ export default function HibachiDiningExperiencePage() {
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Hibachi Restaurant Menu: Discover Flavor & Fun
-      </h1>
+   
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+   </h1>
 
       <h2>The Art of Hibachi Dining</h2>
 

@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     description:
       "Order Jinbeh takeout or delivery. Fresh sushi and Japanese cuisine delivered to your door.",
     url: "https://jinbeh.com/takeout",
+    images: [
+      {
+        url: "https://jinbeh.com/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Takeout",
+      },
+    ],
     type: "website",
   },
   alternates: {
@@ -167,11 +175,35 @@ const tipsAndTricks = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Takeout",
+      "item": "https://jinbeh.com/takeout"
+    }
+  ]
+};
+
 export default function TakeoutPage() {
   return (
     <>
       <Header />
       <main id="main-content" className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
         {/* Hero */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-deep-indigo via-charcoal to-deep-indigo" />

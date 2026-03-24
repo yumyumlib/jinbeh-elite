@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Steak & Lobster Combo | Jinbeh Frisco",
     description: "Surf and turf perfection",
     url: "https://jinbeh.com/frisco/hibachi/combo-steak-lobster",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Combo Steak Lobster",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/combo-steak-lobster",

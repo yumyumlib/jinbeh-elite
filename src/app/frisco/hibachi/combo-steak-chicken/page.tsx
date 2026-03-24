@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Steak & Chicken Combo | Jinbeh Frisco",
     description: "Filet mignon with chicken teriyaki",
     url: "https://jinbeh.com/frisco/hibachi/combo-steak-chicken",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Combo Steak Chicken",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/combo-steak-chicken",

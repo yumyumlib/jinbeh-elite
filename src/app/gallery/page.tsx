@@ -246,6 +246,25 @@ const categories = [
   { name: "Celebrations", id: "celebrations" },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gallery",
+      "item": "https://jinbeh.com/gallery"
+    }
+  ]
+};
+
 export default function GalleryPage() {
   return (
     <>
@@ -256,6 +275,11 @@ export default function GalleryPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(gallerySchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">

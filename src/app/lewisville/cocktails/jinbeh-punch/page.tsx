@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Jinbeh Punch | Jinbeh Lewisville",
     description: "House specialty tropical cocktail",
     url: "https://jinbeh.com/lewisville/cocktails/jinbeh-punch",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Cocktails Jinbeh Punch",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/cocktails/jinbeh-punch",

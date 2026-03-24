@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     description:
       "Host your private event at Jinbeh. Exclusive private dining rooms, hibachi entertainment, and custom menus for unforgettable celebrations.",
     url: "https://jinbeh.com/private-dining",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Private Dining",
+      },
+    ],
     type: "website",
   },
   alternates: {
@@ -293,6 +301,25 @@ const bookingSteps = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Private Dining",
+      "item": "https://jinbeh.com/private-dining"
+    }
+  ]
+};
+
 export default function PrivateDiningPage() {
   return (
     <>
@@ -307,6 +334,11 @@ export default function PrivateDiningPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[65vh] min-h-[550px] flex items-center justify-center overflow-hidden">

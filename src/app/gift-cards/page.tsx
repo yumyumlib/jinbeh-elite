@@ -34,6 +34,14 @@ export const metadata: Metadata = {
         title: "Gift Cards | Jinbeh Japanese Restaurant",
         description: "Give the gift of an unforgettable dining experience. Jinbeh gift cards for hibachi and sushi in Frisco & Lewisville.",
         url: "https://jinbeh.com/gift-cards",
+    images: [
+      {
+        url: "https://jinbeh.com/images/catalog/5-C060324-6397.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Gift Cards",
+      },
+    ],
         siteName: "Jinbeh Japanese Restaurant",
         type: "website",
     },
@@ -47,6 +55,25 @@ export const metadata: Metadata = {
     },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gift Cards",
+      "item": "https://jinbeh.com/gift-cards"
+    }
+  ]
+};
+
 export default function GiftCardsPage() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -55,6 +82,11 @@ export default function GiftCardsPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
             {/* Hero */}
             <HeroSection className="relative py-20 bg-gradient-to-br from-deep-indigo to-charcoal text-white overflow-hidden">

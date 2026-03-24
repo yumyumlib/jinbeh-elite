@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Lobster Tail | Jinbeh Lewisville",
     description: "Sweet Maine lobster tail, butter-grilled",
     url: "https://jinbeh.com/lewisville/hibachi/lobster-tail",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Lobster Tail",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/lobster-tail",

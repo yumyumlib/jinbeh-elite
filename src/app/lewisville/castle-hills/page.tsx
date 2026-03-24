@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     description:
       "Authentic hibachi and sushi near Castle Hills, Lewisville. Exciting teppanyaki shows and fresh Japanese cuisine.",
     url: "https://jinbeh.com/lewisville/castle-hills",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Castle Hills",
+      },
+    ],
     type: "website",
   },
   alternates: {

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Vegas Roll | Jinbeh Lewisville",
     description: "Deep-fried roll with spicy crab and cream cheese",
     url: "https://jinbeh.com/lewisville/sushi-rolls/vegas-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Vegas Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/vegas-roll",

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Edamame Frisco | Complete Plant Protein Appetizer",
     description: "Steamed edamame with sea salt at Jinbeh Frisco. 18.5g protein per cup, plant-based.",
     url: "https://jinbeh.com/frisco/appetizers/edamame",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Appetizers Edamame",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/appetizers/edamame",

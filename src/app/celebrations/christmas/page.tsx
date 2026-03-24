@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Christmas Dinner | Holiday Dining at Jinbeh",
     description: "Celebrate the holidays with hibachi, sushi, and family at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Christmas",
+      },
+    ],
     type: "website",
   },
   alternates: {

@@ -92,6 +92,25 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Delivery",
+      "item": "https://jinbeh.com/delivery"
+    }
+  ]
+};
+
 export default function DeliveryPage() {
   return (
     <>
@@ -102,6 +121,11 @@ export default function DeliveryPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -126,7 +150,7 @@ export default function DeliveryPage() {
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-                Japanese food delivery Frisco and sushi delivery Lewisville — our Japanese restaurant delivery Texas service brings hibachi delivery near me favorites straight to your door via Uber Eats Grubhub and more.
+                Fresh sushi, hibachi favorites, and Japanese classics — delivered to your door in Frisco and Lewisville via Uber Eats and Grubhub.
               </p>
             </RevealSection>
           </div>
@@ -226,15 +250,24 @@ export default function DeliveryPage() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-12 items-center">
-                {/* Map Placeholder or Service Area Info */}
-                <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg bg-charcoal flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <svg className="w-16 h-16 mx-auto mb-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {/* Service Area Overview */}
+                <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-charcoal to-deep-indigo flex items-center justify-center">
+                  <div className="text-center text-white px-8">
+                    <svg className="w-12 h-12 mx-auto mb-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <p className="text-lg font-semibold">Service Area Map</p>
-                    <p className="text-white/70 text-sm mt-2">Frisco & Lewisville</p>
+                    <h3 className="text-xl font-heading font-bold mb-6">Two Delivery Zones</h3>
+                    <div className="space-y-4 text-left">
+                      <div className="bg-white/10 rounded-xl p-4">
+                        <p className="font-semibold text-soft-gold">📍 Frisco Hub</p>
+                        <p className="text-white/80 text-sm">Near Stonebriar Centre — serving Frisco, Plano, The Colony, Little Elm, Allen</p>
+                      </div>
+                      <div className="bg-white/10 rounded-xl p-4">
+                        <p className="font-semibold text-soft-gold">📍 Lewisville Hub</p>
+                        <p className="text-white/80 text-sm">Off I-35E near Vista Ridge — serving Lewisville, Carrollton, Coppell, Flower Mound, Highland Village</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 

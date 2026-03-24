@@ -58,6 +58,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
+  "description": "Unlock the full potential of your Jinbeh gift card. Learn how to find deals, check balances, and enjoy premium dining at Jinbeh",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function JinbehGiftCardsGuidePage() {
   return (
     <ArticleLayout
@@ -73,7 +96,12 @@ export default function JinbehGiftCardsGuidePage() {
       faqs={faqs}
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025
+        Maximize Jinbeh Gift Cards: Deals, Balance Check &
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+ Tips 2025
       </h1>
 
       {/* Article Body */}

@@ -68,6 +68,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki",
+  "description": "Elevate your next event with Jinbeh",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function OffsiteHibachiCateringPage({ params }: { params: { slug: string } }) {
   const slug = "offsite-hibachi-catering";
   return (
@@ -85,7 +108,12 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh Offsite Events Catering: Hibachi at Home
-      </h1>
+  
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+    </h1>
 
       {/* Article Body */}
       <p>

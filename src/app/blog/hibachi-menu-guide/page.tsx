@@ -91,6 +91,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hibachi Restaurant Menu: Explore Flavorful Delights | Jinbeh",
+  "description": "Discover the excitement of a hibachi restaurant menu, featuring sizzling meats, fresh seafood, and delightful desserts. Explore diverse hibachi food options and",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function HibachiMenuGuidePage() {
   return (
     <ArticleLayout
@@ -107,7 +130,12 @@ export default function HibachiMenuGuidePage() {
       keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment — all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi Restaurant Menu: Explore Flavorful Delights
+        Hibachi Restaurant Menu: Explore Flavorful Delight
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+s
       </h1>
 
       <h2>Understanding Hibachi Dining</h2>

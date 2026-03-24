@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Tokyo Mule | Jinbeh Lewisville",
     description: "Japanese whiskey with ginger and lime",
     url: "https://jinbeh.com/lewisville/cocktails/tokyo-mule",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Cocktails Tokyo Mule",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/cocktails/tokyo-mule",

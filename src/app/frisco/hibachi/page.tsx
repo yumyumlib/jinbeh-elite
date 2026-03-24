@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Hibachi Menu | Jinbeh Frisco",
     description: "Entertainment, fire show, family fun, onion volcano. 14 hibachi options at Jinbeh Frisco.",
     url: "https://jinbeh.com/frisco/hibachi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi",

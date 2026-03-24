@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sake Bomb | Classic Japanese Beer Cocktail Frisco",
     description: "Traditional sake bomb with cold Japanese beer. Best happy hour specials.",
     url: "https://jinbeh.com/frisco/cocktails/sake-bomb",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Cocktails Sake Bomb",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/cocktails/sake-bomb",

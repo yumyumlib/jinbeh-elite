@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Rainbow Roll | Jinbeh Lewisville",
     description: "California roll topped with assorted sashimi",
     url: "https://jinbeh.com/lewisville/sushi-rolls/rainbow-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Rainbow Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/rainbow-roll",

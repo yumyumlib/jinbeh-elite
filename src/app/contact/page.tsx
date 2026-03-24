@@ -13,6 +13,14 @@ export const metadata: Metadata = {
         title: "Contact Jinbeh Japanese Restaurant",
         description: "Contact Jinbeh for reservations, catering, or feedback. Family-owned hibachi & sushi in Frisco and Lewisville TX.",
         url: "https://jinbeh.com/contact",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Contact",
+      },
+    ],
         siteName: "Jinbeh Japanese Restaurant",
         type: "website",
     },
@@ -29,9 +37,33 @@ export const metadata: Metadata = {
 const frisco = locations.locations.frisco;
 const lewisville = locations.locations.lewisville;
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://jinbeh.com/contact"
+    }
+  ]
+};
+
 export default function ContactPage() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
             {/* Hero */}
             <section className="py-20 bg-charcoal text-white">
                 <div className="container mx-auto px-6 text-center">

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Philadelphia Roll | Jinbeh Frisco",
     description: "Smoked salmon with cream cheese and cucumber",
     url: "https://jinbeh.com/frisco/sushi-rolls/philly-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Philly Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/philly-roll",

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Chicken Teriyaki | Jinbeh Frisco",
     description: "Tender chicken breast with house teriyaki glaze",
     url: "https://jinbeh.com/frisco/hibachi/chicken-teriyaki",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Hibachi Chicken Teriyaki",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/hibachi/chicken-teriyaki",

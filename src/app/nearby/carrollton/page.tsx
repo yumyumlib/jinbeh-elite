@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Japanese Restaurant Near Carrollton | Hibachi & Sushi | Jinbeh",
     description: "Authentic hibachi and sushi just minutes from Carrollton. Teppanyaki shows, fresh sushi bar, and full bar. Family-owned since 1988.",
     url: "https://jinbeh.com/nearby/carrollton",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Carrollton",
+      },
+    ],
     type: "website",
   },
 };

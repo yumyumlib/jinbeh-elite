@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     title: "Birthday Parties | Jinbeh Japanese Restaurant",
     description: "Make it a birthday to remember with hibachi entertainment and the legendary onion volcano!",
     url: "https://jinbeh.com/celebrations/birthday",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Birthday",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/celebrations/birthday",

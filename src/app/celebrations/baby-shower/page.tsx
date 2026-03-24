@@ -30,6 +30,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Baby Shower Venues | Jinbeh Japanese Restaurant",
     description: "Celebrate your new arrival with hibachi entertainment and delicious cuisine. Perfect baby shower venue in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Baby Shower",
+      },
+    ],
     type: "website",
   },
   alternates: {

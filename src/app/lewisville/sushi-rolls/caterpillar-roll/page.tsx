@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Caterpillar Roll | Jinbeh Lewisville",
     description: "Eel roll topped with avocado slices",
     url: "https://jinbeh.com/lewisville/sushi-rolls/caterpillar-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Caterpillar Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/caterpillar-roll",

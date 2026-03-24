@@ -76,6 +76,29 @@ const cta = {
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Jinbeh Hibachi Calories 2025: Complete Nutrition Guide | Teppanyaki Calories",
+  "description": "Discover the calorie content and nutritional insights of Jinbeh Hibachi dishes. Learn to enjoy flavorful hibachi meals while managing your dietary goals.",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function HibachiCaloriesGuidePage() {
   return (
     <ArticleLayout
@@ -92,7 +115,12 @@ export default function HibachiCaloriesGuidePage() {
       keyTakeaway="Hibachi protein calories range from 150 cal (shrimp) to 450 cal (steak). Swap fried rice for steamed rice to save ~200 calories, load up on vegetables (50–70 cal), and request sauces on the side. A lean hibachi meal can total just 350–400 calories."
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Jinbeh Hibachi Calories 2025: Complete Nutrition Guide
+        Jinbeh Hibachi Calories 2025: Complete Nutrition G
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+uide
       </h1>
 
       {/* Article Body */}

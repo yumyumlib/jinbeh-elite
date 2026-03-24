@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     title: "Bar & Drinks | Jinbeh Japanese Restaurant",
     description: "Premium sake, Japanese whisky, and signature cocktails",
     url: "https://jinbeh.com/bar",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Bar",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/bar",
@@ -102,6 +110,25 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bar",
+      "item": "https://jinbeh.com/bar"
+    }
+  ]
+};
+
 export default function BarPage() {
   return (
     <>
@@ -116,6 +143,11 @@ export default function BarPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">

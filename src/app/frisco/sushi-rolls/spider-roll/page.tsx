@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Spider Roll | Jinbeh Frisco",
     description: "Soft shell crab with cucumber and spicy mayo",
     url: "https://jinbeh.com/frisco/sushi-rolls/spider-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Spider Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/spider-roll",

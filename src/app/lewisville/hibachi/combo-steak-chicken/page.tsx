@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Steak & Chicken Combo | Jinbeh Lewisville",
     description: "Filet mignon with chicken teriyaki",
     url: "https://jinbeh.com/lewisville/hibachi/combo-steak-chicken",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Combo Steak Chicken",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/combo-steak-chicken",

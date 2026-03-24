@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Cocktails & Sake Menu | Jinbeh Lewisville",
     description: "Celebration, happy hour, Asian-inspired. 5 cocktails & sake options at Jinbeh Lewisville.",
     url: "https://jinbeh.com/lewisville/cocktails",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Cocktails",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/cocktails",

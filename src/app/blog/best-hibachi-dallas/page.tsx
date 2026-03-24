@@ -67,6 +67,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh",
+  "description": "Looking for the best hibachi in Dallas? Our local guide reveals the top teppanyaki restaurants where skilled chefs put on a show. Discover where DFW locals cele",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function BestHibachiDallasPage() {
   return (
     <ArticleLayout
@@ -83,7 +106,12 @@ export default function BestHibachiDallasPage() {
       keyTakeaway="Jinbeh Japanese Restaurant (Frisco & Lewisville) is consistently rated the best hibachi in DFW — family-owned since 1988 with skilled chefs, fresh ingredients, and generous portions. Book early for weekends, mention birthdays when reserving, and try the lunch specials for the best value."
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Best Hibachi Dallas TX: Top 10 Restaurants & Experiences
+        Best Hibachi Dallas TX: Top 10 Restaurants & Exper
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+iences
       </h1>
 
       {/* Article Body with Show Don't Tell, VOC phrases, Internal Links */}

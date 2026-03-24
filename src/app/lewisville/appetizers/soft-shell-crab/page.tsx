@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Soft Shell Crab | Jinbeh Lewisville",
     description: "Crispy fried soft shell crab",
     url: "https://jinbeh.com/lewisville/appetizers/soft-shell-crab",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Appetizers Soft Shell Crab",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/appetizers/soft-shell-crab",

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "NY Strip Steak | Jinbeh Lewisville",
     description: "Hand-cut New York strip with savory soy glaze",
     url: "https://jinbeh.com/lewisville/hibachi/ny-strip",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Ny Strip",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/ny-strip",

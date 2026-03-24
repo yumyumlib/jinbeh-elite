@@ -53,6 +53,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Beer & Hard Seltzer: Jinbeh",
+  "description": "Explore Jinbeh",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function BeerHardSeltzer() {
     return (
         <ArticleLayout
@@ -71,7 +94,12 @@ export default function BeerHardSeltzer() {
             <h2>The Japanese Beer Experience</h2>
 
             <p>
-                There's a reason Japanese beers have become some of the most popular in the world: they're
+                There's a reason Japanese beers have become some of the most 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+popular in the world: they're
                 specifically crafted to pair with food. Unlike heavy craft IPAs or bitter ales, Japanese
                 lagers are clean, crisp, and refreshing—designed to enhance your meal rather than overpower it.
             </p>

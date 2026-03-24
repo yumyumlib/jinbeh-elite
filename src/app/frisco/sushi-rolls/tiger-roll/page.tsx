@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Tiger Roll | Jinbeh Frisco",
     description: "Shrimp tempura with spicy tuna and jalapeño",
     url: "https://jinbeh.com/frisco/sushi-rolls/tiger-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Tiger Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/tiger-roll",

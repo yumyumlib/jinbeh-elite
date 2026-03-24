@@ -28,6 +28,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Date Night Restaurant | Romantic Dinner at Jinbeh",
     description: "Impress your date with hibachi, sushi, and sake at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Date Night",
+      },
+    ],
     type: "website",
   },
   alternates: {

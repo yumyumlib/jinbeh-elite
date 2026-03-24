@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Sushi Richardson TX | Premium Japanese Restaurant | Jinbeh",
     description: "Experience premium sushi and authentic Japanese cuisine just minutes from Richardson. Expert sushi chefs, hibachi shows, and full bar. Reserve now!",
     url: "https://jinbeh.com/nearby/richardson",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Richardson",
+      },
+    ],
     type: "website",
   },
 };

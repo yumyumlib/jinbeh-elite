@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Cocktails & Sake Menu | Jinbeh Frisco",
     description: "Celebration, happy hour, Asian-inspired. 5 cocktails & sake options at Jinbeh Frisco.",
     url: "https://jinbeh.com/frisco/cocktails",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Cocktails",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/cocktails",

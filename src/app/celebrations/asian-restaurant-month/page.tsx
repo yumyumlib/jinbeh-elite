@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Asian Restaurant Month | Celebrate AAPI Heritage at Jinbeh",
     description: "Support Asian-owned restaurants this May! Hibachi, sushi, and 38 years of family tradition at Jinbeh. Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Asian Restaurant Month",
+      },
+    ],
     type: "website",
   },
   alternates: {

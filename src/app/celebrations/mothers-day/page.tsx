@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mother's Day Dinner | Celebrate Mom at Jinbeh",
     description: "Make Mother's Day special with hibachi, sushi, and family dining at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Mothers Day",
+      },
+    ],
     type: "website",
   },
   alternates: {

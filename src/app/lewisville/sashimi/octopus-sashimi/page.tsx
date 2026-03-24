@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Octopus Sashimi | Jinbeh Lewisville",
     description: "Tender tako with subtle sweetness",
     url: "https://jinbeh.com/lewisville/sashimi/octopus-sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sashimi Octopus Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sashimi/octopus-sashimi",

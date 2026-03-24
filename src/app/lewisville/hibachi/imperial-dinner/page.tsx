@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Imperial Dinner | Jinbeh Lewisville",
     description: "Filet mignon, lobster tail, and shrimp",
     url: "https://jinbeh.com/lewisville/hibachi/imperial-dinner",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi Imperial Dinner",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/hibachi/imperial-dinner",

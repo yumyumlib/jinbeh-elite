@@ -14,6 +14,14 @@ export const metadata: Metadata = {
         title: "Menu | Jinbeh Japanese Restaurant",
         description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls.",
         url: "https://jinbeh.com/menu",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Menu",
+      },
+    ],
         siteName: "Jinbeh Japanese Restaurant",
         type: "website",
     },

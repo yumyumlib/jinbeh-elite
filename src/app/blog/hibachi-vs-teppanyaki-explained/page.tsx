@@ -65,6 +65,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hibachi vs Teppanyaki: Explained - Differences & Definitions | Jinbeh",
+  "description": "What",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function HibachiVsTeppanyakiPage() {
   return (
     <ArticleLayout
@@ -80,7 +103,12 @@ export default function HibachiVsTeppanyakiPage() {
       faqs={faqs}
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi vs Teppanyaki: Explained - Differences & Definitions
+        Hibachi vs Teppanyaki: Explained - Differences & D
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+efinitions
       </h1>
 
       {/* Opening Paragraph */}

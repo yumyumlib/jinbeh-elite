@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sashimi Menu | Jinbeh Frisco",
     description: "Purity, premium fish, elegant simplicity. 7 sashimi options at Jinbeh Frisco.",
     url: "https://jinbeh.com/frisco/sashimi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi",

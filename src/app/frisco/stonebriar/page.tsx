@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Japanese Restaurant Near Stonebriar Mall | Jinbeh Frisco",
     description: "Fresh sushi & exciting hibachi just minutes from Stonebriar Centre in Frisco, TX.",
     url: "https://jinbeh.com/frisco/stonebriar",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Stonebriar",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/stonebriar",

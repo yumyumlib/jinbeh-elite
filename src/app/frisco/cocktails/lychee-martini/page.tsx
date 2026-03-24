@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Lychee Martini | Best Japanese Cocktails Frisco",
     description: "Premium lychee martini with vodka & floral finish. Handcrafted Japanese cocktails.",
     url: "https://jinbeh.com/frisco/cocktails/lychee-martini",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Cocktails Lychee Martini",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/cocktails/lychee-martini",

@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Japanese Restaurant Flower Mound | Hibachi & Sushi | Jinbeh",
     description: "Authentic hibachi and sushi just minutes from Flower Mound. Teppanyaki shows, fresh sushi bar, and full bar. Family-owned since 1988.",
     url: "https://jinbeh.com/nearby/flower-mound",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Nearby Flower Mound",
+      },
+    ],
     type: "website",
   },
 };

@@ -30,6 +30,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rehearsal Dinner Venues | Jinbeh Japanese Restaurant",
     description: "Make your rehearsal dinner unforgettable with hibachi entertainment and exceptional cuisine. Private tables for your wedding party.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Rehearsal Dinner",
+      },
+    ],
     type: "website",
   },
   alternates: {

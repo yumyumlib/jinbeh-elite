@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     title: "Menu | Jinbeh Frisco - Hibachi & Sushi",
     description: "Fresh sushi, sizzling hibachi, and authentic Japanese cuisine. View our full menu.",
     url: "https://jinbeh.com/frisco/menu",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Menu",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/menu",

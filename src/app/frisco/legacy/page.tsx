@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Japanese Restaurant Near Legacy West | Jinbeh Frisco",
     description: "Fresh sushi & exciting hibachi just minutes from Legacy West in Frisco, TX.",
     url: "https://jinbeh.com/frisco/legacy",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Legacy",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/legacy",

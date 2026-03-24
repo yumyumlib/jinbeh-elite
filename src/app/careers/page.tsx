@@ -337,6 +337,25 @@ const faqs = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Careers",
+      "item": "https://jinbeh.com/careers"
+    }
+  ]
+};
+
 export default function CareersPage() {
   return (
     <>
@@ -351,6 +370,11 @@ export default function CareersPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(careersSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">

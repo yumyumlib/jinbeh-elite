@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Edamame | Jinbeh Lewisville",
     description: "Steamed soybeans with sea salt",
     url: "https://jinbeh.com/lewisville/appetizers/edamame",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/appetizers-spread.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Appetizers Edamame",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/appetizers/edamame",

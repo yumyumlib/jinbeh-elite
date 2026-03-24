@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     title: "Graduation Party Restaurants | Jinbeh Japanese Restaurant",
     description: "Celebrate your graduate's achievement with hibachi entertainment and group dining at Jinbeh!",
     url: "https://jinbeh.com/celebrations/graduation",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Graduation",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/celebrations/graduation",

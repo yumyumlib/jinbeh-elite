@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Omakase Selection | Jinbeh Frisco",
     description: "Chef\'s choice tasting of the day\'s best",
     url: "https://jinbeh.com/frisco/sashimi/omakase",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi Omakase",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi/omakase",

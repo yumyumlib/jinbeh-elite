@@ -61,6 +61,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Top Baby Shower Venues: Best Places to Host | Jinbeh",
+  "description": "Discover the best places to host a baby shower, from cozy homes to elegant gardens. Explore unique venues and find the perfect spot for a memorable celebration.",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function BabyShowerVenuesPage({ params }: { params: { slug: string } }) {
   const slug = "baby-shower-venues";
   return (
@@ -78,7 +101,12 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
     >
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Top Baby Shower Venues: Best Places to Host
-      </h1>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+</h1>
 
       <p>
         Organizing a baby shower is a delightful way to celebrate the impending

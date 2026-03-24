@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Sake Flight | Jinbeh Lewisville",
     description: "Tasting of three premium sakes",
     url: "https://jinbeh.com/lewisville/cocktails/sake-flight",
+    images: [
+      {
+        url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Cocktails Sake Flight",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/cocktails/sake-flight",

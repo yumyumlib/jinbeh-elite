@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Team Building Events | Jinbeh Japanese Restaurant",
     description: "Create memorable team experiences with hibachi entertainment and excellent Japanese cuisine.",
     url: "https://jinbeh.com/celebrations/team-building",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Team Building",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/celebrations/team-building",

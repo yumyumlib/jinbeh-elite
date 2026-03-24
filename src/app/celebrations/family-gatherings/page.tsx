@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     title: "Family Gatherings | Jinbeh Japanese Restaurant | Frisco",
     description: "Bring Your Family Together at Jinbeh – Perfect for reunions, holidays, and celebrations!",
     url: "https://jinbeh.com/celebrations/family-gatherings",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Family Gatherings",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/celebrations/family-gatherings",

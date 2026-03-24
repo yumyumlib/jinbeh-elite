@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     title: "Japanese Restaurant Near Starwood | Jinbeh Frisco",
     description: "Fresh sushi & exciting hibachi just minutes from Starwood in Frisco, TX.",
     url: "https://jinbeh.com/frisco/starwood",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Starwood",
+      },
+    ],
     type: "website",
   },
   alternates: {

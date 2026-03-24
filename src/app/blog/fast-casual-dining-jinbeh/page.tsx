@@ -53,6 +53,29 @@ const faqs = [
 
 
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
+  "description": "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi—without sacrificing quality s",
+  "image": "https://jinbeh.com/images/og-image.jpg",
+  "datePublished": "2026-01-30",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jinbeh.com/images/logos/jinbeh-logo.png"
+    }
+  }
+};
+
 export default function FastCasualDiningJinbeh() {
     return (
         <ArticleLayout
@@ -71,7 +94,12 @@ export default function FastCasualDiningJinbeh() {
             <h2>Japanese Dining on Your Schedule</h2>
 
             <p>
-                "Fast casual" and "Japanese restaurant" might seem like an unusual combination. After
+                "Fast casual" and "Japanese restaurant" might seem like a
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+n unusual combination. After
                 all, Japanese cuisine is known for precision, artistry, and presentation—things that
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,
                 we've spent 38 years learning how to deliver quality at every speed.

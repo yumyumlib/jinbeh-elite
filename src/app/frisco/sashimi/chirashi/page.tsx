@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Chirashi Bowl Frisco | Premium Sashimi Rice Bowl",
     description: "Scattered sushi bowl with premium sashimi at Jinbeh Frisco. 400-500 calories, 23g protein.",
     url: "https://jinbeh.com/frisco/sashimi/chirashi",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sashimi Chirashi",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sashimi/chirashi",

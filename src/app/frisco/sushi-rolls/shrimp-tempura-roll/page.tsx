@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Shrimp Tempura Roll | Jinbeh Frisco",
     description: "Crispy shrimp tempura with avocado",
     url: "https://jinbeh.com/frisco/sushi-rolls/shrimp-tempura-roll",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Frisco Sushi Rolls Shrimp Tempura Roll",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/frisco/sushi-rolls/shrimp-tempura-roll",

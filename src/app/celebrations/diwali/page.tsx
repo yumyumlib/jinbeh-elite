@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Diwali Dinner | Festival of Lights at Jinbeh",
     description: "Celebrate Diwali with hibachi flames and family at Jinbeh. Two locations in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations Diwali",
+      },
+    ],
     type: "website",
   },
   alternates: {

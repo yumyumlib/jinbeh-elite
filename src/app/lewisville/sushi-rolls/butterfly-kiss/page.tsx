@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: "Butterfly Kiss Roll | Jinbeh Lewisville",
     description: "House specialty with cream cheese and crab",
     url: "https://jinbeh.com/lewisville/sushi-rolls/butterfly-kiss",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Lewisville Sushi Rolls Butterfly Kiss",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/lewisville/sushi-rolls/butterfly-kiss",

@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     title: "Catering | Jinbeh Japanese Restaurant",
     description: "Bring Jinbeh to your event. Japanese catering for any occasion.",
     url: "https://jinbeh.com/catering",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Catering",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/catering",
@@ -103,6 +111,25 @@ const cateringOptions = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Catering",
+      "item": "https://jinbeh.com/catering"
+    }
+  ]
+};
+
 export default function CateringPage() {
   return (
     <>
@@ -113,6 +140,11 @@ export default function CateringPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">

@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     title: "Celebrations & Events | Jinbeh Japanese Restaurant",
     description: "Make every celebration unforgettable with hibachi entertainment and fresh sushi. Frisco & Lewisville TX.",
     url: "https://jinbeh.com/celebrations",
+    images: [
+      {
+        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant — Celebrations",
+      },
+    ],
   },
   alternates: {
     canonical: "https://jinbeh.com/celebrations",
@@ -220,6 +228,25 @@ const groupEvents = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://jinbeh.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Celebrations",
+      "item": "https://jinbeh.com/celebrations"
+    }
+  ]
+};
+
 export default function CelebrationsPage() {
   return (
     <>
@@ -230,6 +257,11 @@ export default function CelebrationsPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+
 
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
