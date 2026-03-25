@@ -5,6 +5,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service | Jinbeh Japanese Restaurant",
   description: "Terms of Service for Jinbeh Japanese Restaurant website and services. Review our reservation policies, allergen information, and website usage guidelines.",
+  openGraph: {
+    title: "Terms of Service | Jinbeh Japanese Restaurant",
+    description: "Terms of service for Jinbeh Japanese Restaurant website.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Restaurant — Terms of Service",
+      },
+    ],
+  },
   keywords: ["jinbeh terms of service", "restaurant terms and conditions", "jinbeh reservation policy"],
   alternates: {
     canonical: "https://jinbeh.com/terms",

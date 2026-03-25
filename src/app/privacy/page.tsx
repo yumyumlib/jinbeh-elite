@@ -5,6 +5,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | Jinbeh Japanese Restaurant",
   description: "Privacy policy for Jinbeh Japanese Restaurant. Learn how we collect, use, and protect your personal information.",
+  openGraph: {
+    title: "Privacy Policy | Jinbeh Japanese Restaurant",
+    description: "Privacy policy for Jinbeh Japanese Restaurant website.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Restaurant — Privacy Policy",
+      },
+    ],
+  },
   keywords: ["jinbeh privacy policy", "jinbeh data protection", "restaurant privacy policy"],
   alternates: {
     canonical: "https://jinbeh.com/privacy",

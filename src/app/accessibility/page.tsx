@@ -5,6 +5,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Accessibility | Jinbeh Japanese Restaurant",
   description: "Accessibility statement for Jinbeh Japanese Restaurant. We are committed to ensuring our website and restaurants are accessible to everyone.",
+  openGraph: {
+    title: "Accessibility | Jinbeh Japanese Restaurant",
+    description: "Our commitment to making Jinbeh accessible to all guests.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Restaurant — Accessibility",
+      },
+    ],
+  },
   keywords: ["jinbeh accessibility", "accessible restaurant frisco", "wheelchair accessible japanese restaurant", "accessible dining lewisville"],
   alternates: {
     canonical: "https://jinbeh.com/accessibility",

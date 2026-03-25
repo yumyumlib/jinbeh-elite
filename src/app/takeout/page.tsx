@@ -596,7 +596,13 @@ export default function TakeoutPage() {
               Lewisville <a href={`tel:${lewisville.phoneClean}`} className="text-soft-gold hover:text-soft-gold/80">{lewisville.phone}</a>
             </p>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/fast-casual-dining-jinbeh" className="text-accent-red hover:underline">
+                Related: Fast Casual Japanese Dining at Jinbeh →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

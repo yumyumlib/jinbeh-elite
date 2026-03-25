@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Jinbeh Blog | Japanese Dining Tips & Guides",
         description: "Your guide to hibachi, sushi, sake and Japanese cuisine from Jinbeh in Frisco & Lewisville.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Blog — Japanese Dining Guides & Tips",
+      },
+    ],
         url: "https://jinbeh.com/blog",
     },
     alternates: {

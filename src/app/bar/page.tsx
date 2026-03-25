@@ -831,7 +831,13 @@ export default function BarPage() {
               Bar seating available on a first-come, first-served basis. No reservation required for bar seating.
             </p>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/international-beer-day" className="text-accent-red hover:underline">
+                Related: International Beer Day: Celebrate with Japanese Beer at Jinbeh →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

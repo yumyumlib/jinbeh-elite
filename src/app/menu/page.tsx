@@ -113,7 +113,13 @@ export default function MenuPage() {
                             />
                         </div>
                     </div>
-                </section>
+                
+            <p className="mt-4 text-sm">
+              <a href="/blog/ayce-sushi-vs-traditional" className="text-accent-red hover:underline">
+                Related: AYCE Sushi vs. Traditional: What You Should Know →
+              </a>
+            </p>
+</section>
             </main>
             <Footer />
         </>

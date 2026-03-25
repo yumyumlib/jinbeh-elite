@@ -228,7 +228,13 @@ export default function ContactPage() {
                         </Link>
                     </RevealSection>
                 </div>
-            </section>
+            
+            <p className="mt-4 text-sm">
+              <a href="/blog/japanese-restaurants-near-me" className="text-accent-red hover:underline">
+                Related: Japanese Restaurants Near Me in DFW →
+              </a>
+            </p>
+</section>
         </main>
     );
 }

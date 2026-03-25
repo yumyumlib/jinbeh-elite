@@ -707,7 +707,13 @@ export default function FriscoPage() {
               <a href="/frisco/legacy" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Legacy</a>
             </div>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">
+                Related: Things to Do in Frisco TX: Your Ultimate Guide →
+              </a>
+            </p>
+</section>
 
       </main >
 

@@ -929,7 +929,13 @@ export default function SushiRollsFriscoPage() {
               </Link>
             </p>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/best-sushi-dallas" className="text-accent-red hover:underline">
+                Related: Best Sushi Dallas TX: Top Restaurants & Hidden Gems →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

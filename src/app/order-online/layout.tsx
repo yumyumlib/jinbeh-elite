@@ -21,6 +21,14 @@ export const metadata: Metadata = {
             "Fresh hibachi, sushi, and Japanese cuisine delivered to your door. Order from Frisco or Lewisville via Uber Eats, Grubhub, or phone.",
         url: "https://jinbeh.com/order-online",
         type: "website",
+        images: [
+            {
+                url: "https://jinbeh.com/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Jinbeh Japanese Restaurant — Order Online",
+            },
+        ],
     },
     alternates: {
         canonical: "https://jinbeh.com/order-online",

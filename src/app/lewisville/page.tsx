@@ -689,7 +689,7 @@ export default function LewisvillePage() {
 
         {/* Related Blog Posts */}
         <RelatedBlogPosts
-          slugs={["japanese-restaurants-lewisville", "pickleball-restaurants-lewisville", "seafood-lewisville"]}
+          slugs={["japanese-restaurants-lewisville", "pickleball-restaurants-lewisville", "seafood-lewisville", "best-steakhouses-lewisville"]}
           limit={3}
           title="Lewisville Dining Guides"
           subtitle="Discover the best Japanese restaurants and dining experiences in Lewisville and North Texas."

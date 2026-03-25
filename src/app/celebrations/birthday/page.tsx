@@ -430,7 +430,13 @@ export default function BirthdayPage() {
               </Link>
             </div>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/adult-birthday-party-ideas" className="text-accent-red hover:underline">
+                Related: Unique Adult Birthday Party Ideas & Themes →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

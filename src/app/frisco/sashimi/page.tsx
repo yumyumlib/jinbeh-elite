@@ -567,7 +567,13 @@ export default function SashimiFriscoPage() {
               </Link>
             </p>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/sushi-cooking-classes" className="text-accent-red hover:underline">
+                Related: Sushi Cooking Classes Near Me in DFW: Learn to Make Sushi →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

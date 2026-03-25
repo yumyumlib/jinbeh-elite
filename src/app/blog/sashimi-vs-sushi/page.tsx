@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sashimi vs Sushi: Key Differences Explained",
         description: "Discover the difference between sashimi and sushi. Learn what they are, when to order each, and how Jinbeh serves both.",
+    images: [
+      {
+        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sashimi vs Sushi — What's the Difference?",
+      },
+    ],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/sashimi-vs-sushi",

@@ -517,7 +517,13 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/blog/asian-cuisine-dallas" className="text-accent-red hover:underline">
+                Related: Top Asian Cuisine & Fusion Spots in Dallas TX →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>
