@@ -1,0 +1,29 @@
+{
+    "name": "Jinbeh Japanese Restaurant",
+    "short_name": "Jinbeh",
+    "description": "Authentic hibachi & sushi since 1988. Frisco & Lewisville TX.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FAF8F0",
+    "theme_color": "#1a1a1a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/logos/jinbeh-logo.png",
+            "sizes": "253x110",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/images/logos/JinbehLogo.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "food",
+        "restaurants"
+    ],
+    "lang": "en-US"
+}

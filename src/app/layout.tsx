@@ -116,6 +116,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#1a1a1a" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+        {/* Favicon and PWA */}
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
         {/* Preconnect for performance - only actively used third-party origins */}
         <link rel="dns-prefetch" href="https://www.opentable.com" />
 

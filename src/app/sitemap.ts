@@ -12,7 +12,13 @@ const baseUrl = 'https://jinbeh.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const routes: MetadataRoute.Sitemap = [];
-    const now = new Date();
+
+    // Accurate lastmod dates per content section
+    const coreLastMod = new Date('2026-03-25');      // Last major update
+    const menuLastMod = new Date('2026-03-15');       // Menu items stable
+    const celebrationsLastMod = new Date('2026-02-18'); // Celebration pages last batch
+    const nearbyLastMod = new Date('2026-01-30');      // Nearby city pages created
+    const blogLastMod = new Date('2026-03-25');        // Blog hub updated
 
     // 1. Core Pages
     const corePages = [
@@ -49,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     corePages.forEach((route) => {
         routes.push({
             url: `${baseUrl}${route}`,
-            lastModified: now,
+            lastModified: coreLastMod,
             changeFrequency: 'weekly',
             priority: route === '' ? 1.0 : 0.8,
         });
@@ -84,7 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     celebrations.forEach((route) => {
         routes.push({
             url: `${baseUrl}${route}`,
-            lastModified: now,
+            lastModified: celebrationsLastMod,
             changeFrequency: 'monthly',
             priority: 0.7,
         });
@@ -108,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         locSubPages.forEach((subPage) => {
             routes.push({
                 url: `${baseUrl}/${loc}${subPage}`,
-                lastModified: now,
+                lastModified: menuLastMod,
                 changeFrequency: subPage === '/menu' || subPage === '/specials' ? 'weekly' : 'monthly',
                 priority: subPage === '' ? 0.9 : 0.7,
             });
@@ -120,7 +126,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     friscoNeighborhoods.forEach((page) => {
         routes.push({
             url: `${baseUrl}/frisco${page}`,
-            lastModified: now,
+            lastModified: nearbyLastMod,
             changeFrequency: 'monthly',
             priority: 0.6,
         });
@@ -130,7 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lewisvilleNeighborhoods.forEach((page) => {
         routes.push({
             url: `${baseUrl}/lewisville${page}`,
-            lastModified: now,
+            lastModified: nearbyLastMod,
             changeFrequency: 'monthly',
             priority: 0.6,
         });
@@ -149,7 +155,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         itemsFrisco.forEach((item) => {
             routes.push({
                 url: `${baseUrl}/${loc}${item}`,
-                lastModified: now,
+                lastModified: menuLastMod,
                 changeFrequency: 'monthly',
                 priority: 0.6,
             });
@@ -159,7 +165,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 4. Blog Posts and Categories
     routes.push({
         url: `${baseUrl}/blog`,
-        lastModified: now,
+        lastModified: blogLastMod,
         changeFrequency: 'weekly',
         priority: 0.8,
     });
@@ -167,7 +173,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     blogData.categories.forEach((cat: { id: string }) => {
         routes.push({
             url: `${baseUrl}/blog/category/${cat.id}`,
-            lastModified: now,
+            lastModified: blogLastMod,
             changeFrequency: 'weekly',
             priority: 0.7,
         });
@@ -192,7 +198,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     nearbyCities.forEach((city) => {
         routes.push({
             url: `${baseUrl}/nearby/${city}`,
-            lastModified: now,
+            lastModified: nearbyLastMod,
             changeFrequency: 'monthly',
             priority: 0.6,
         });
