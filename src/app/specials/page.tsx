@@ -287,7 +287,7 @@ export default function SpecialsPage() {
                   Happy Hour Specials
                 </h2>
                 <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  Browse our Japanese restaurant specials — the best Frisco specials and Lewisville specials for restaurant deals and dining specials.
+                  $5 appetizers, $5 cocktails, $3 beers — at both Frisco and Lewisville.
                   Monday – Friday, 4:00 PM – 6:00 PM<br />
                   <span className="text-accent-red font-bold">Don&apos;t Miss Out!</span> Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktail</Link> menu.
                 </p>

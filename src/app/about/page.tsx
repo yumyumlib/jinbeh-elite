@@ -470,6 +470,7 @@ export default function AboutPage() {
                     href="https://www.instagram.com/jinbehfrisco/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`${item.alt} — View on Instagram`}
                     className="relative aspect-square rounded-lg overflow-hidden group"
                   >
                     <Image
