@@ -164,6 +164,12 @@ export default function Footer() {
                   <Link href="/specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     All Specials
                   </Link>
+                  <Link href="/gallery" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Photo Gallery
+                  </Link>
+                  <Link href="/allergy-friendly-dining" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Allergy-Friendly Dining
+                  </Link>
                   <Link href="/reservations" className="block text-accent-red font-semibold hover:text-accent-red/80 transition-colors mt-2">
                     Make a Reservation
                   </Link>
@@ -190,6 +196,21 @@ export default function Footer() {
                   </Link>
                   <Link href="/catering" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Off-Site Catering
+                  </Link>
+                  <Link href="/catering/party" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Party Catering
+                  </Link>
+                  <Link href="/happy-hour/specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Happy Hour Specials
+                  </Link>
+                  <Link href="/celebrations" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    All Celebrations
+                  </Link>
+                  <Link href="/celebrations/holiday-parties" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Holiday Parties
+                  </Link>
+                  <Link href="/celebrations/team-building" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Team Building
                   </Link>
                   <Link href="/gift-cards" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Jinbeh Gift Cards
@@ -247,6 +268,9 @@ export default function Footer() {
                   </Link>
                   <Link href="/lewisville" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Lewisville Location Info
+                  </Link>
+                  <Link href="/careers" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Careers
                   </Link>
                 </nav>
               </div>

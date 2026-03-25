@@ -696,6 +696,19 @@ export default function FriscoPage() {
             Call Now
           </a>
         </div>
+      
+        {/* Nearby Neighborhoods */}
+        <section className="py-12 bg-warm-ivory">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-2xl font-heading font-bold text-charcoal mb-6">Frisco Neighborhoods We Serve</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a href="/frisco/starwood" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Starwood</a>
+              <a href="/frisco/stonebriar" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Stonebriar</a>
+              <a href="/frisco/legacy" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Legacy</a>
+            </div>
+          </div>
+        </section>
+
       </main >
 
       <Footer />
