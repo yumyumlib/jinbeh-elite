@@ -6,7 +6,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 
 export const metadata: Metadata = {
   title: "Lobster Tail Hibachi Frisco | Luxury Maine Lobster Teppanyaki",
-  description: "Sweet Maine lobster tail cooked tableside butter. 180-220 calories per 5oz, 25-30g protein. Premium special occasion hibachi. Includes soup, salad, rice, vegetables.",
+  description: "Sweet Maine lobster tail cooked tableside butter. 180-220 calories per 5oz, 25-30g protein. Premium special occasion hibachi. Includes soup, salad, rice, vegetables. Jinbeh Frisco.",
   keywords: ["hibachi lobster tail frisco","lobster teppanyaki dinner","butter grilled lobster japanese restaurant","special occasion hibachi dinner","best hibachi near me frisco","japanese steakhouse frisco","hibachi near me frisco"],
   openGraph: {
     title: "Lobster Tail | Jinbeh Frisco",

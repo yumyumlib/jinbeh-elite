@@ -6,7 +6,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 
 export const metadata: Metadata = {
   title: "Ribeye Steak Hibachi Frisco | Premium Marbled Beef",
-  description: "Richly marbled ribeye seared tableside. 300-350 calories per 5oz with 25-28g protein. Includes soup, salad, rice, vegetables. Premium Japanese steakhouse.",
+  description: "Richly marbled ribeye seared tableside. 300-350 calories per 5oz with 25-28g protein. Includes soup, salad, rice, vegetables. Premium Japanese steakhouse. Jinbeh Frisco.",
   keywords: ["ribeye hibachi frisco","ribeye steak teppanyaki","black angus hibachi steak","marbled steak japanese restaurant","best hibachi near me frisco","teppanyaki restaurant frisco","hibachi near me frisco"],
   openGraph: {
     title: "Ribeye Steak | Jinbeh Frisco",

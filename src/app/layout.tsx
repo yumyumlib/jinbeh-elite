@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Serif_JP, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import { OrganizationSchema, WebSiteSchema } from "@/components/schema/AllSchemas";
+import { OrganizationSchema, WebSiteSchema, LocalBusinessSchemaFrisco, LocalBusinessSchemaLewisville, MenuSchema } from "@/components/schema/AllSchemas";
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
@@ -137,6 +137,11 @@ export default function RootLayout({
         <OrganizationSchema />
         {/* Structured data - WebSite with SearchAction for sitelinks */}
         <WebSiteSchema />
+        {/* Structured data - LocalBusiness for both locations */}
+        <LocalBusinessSchemaFrisco />
+        <LocalBusinessSchemaLewisville />
+        {/* Structured data - Menu with representative items */}
+        <MenuSchema />
       </head>
       <body className="antialiased">
         {/* Skip to main content link for accessibility */}

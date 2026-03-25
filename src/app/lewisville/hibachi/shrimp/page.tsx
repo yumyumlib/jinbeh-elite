@@ -6,7 +6,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 
 export const metadata: Metadata = {
   title: "Jumbo Shrimp Hibachi Lewisville | Best Seafood Teppanyaki",
-  description: "Jumbo shrimp seared tableside. 120-150 calories per serving, 22-25g protein. Low-carb, protein-rich seafood option. Includes soup, salad, rice, vegetables.",
+  description: "Jumbo shrimp seared tableside. 120-150 calories per serving, 22-25g protein. Low-carb, protein-rich seafood option. Includes soup, salad, rice, vegetables. Jinbeh Lewisville.",
   keywords: ["hibachi shrimp lewisville","jumbo shrimp teppanyaki","garlic butter shrimp hibachi","hibachi seafood dinner lewisville","best hibachi near me lewisville","japanese steakhouse lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Jumbo Shrimp | Jinbeh Lewisville",

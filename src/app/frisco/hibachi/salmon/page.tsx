@@ -6,7 +6,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 
 export const metadata: Metadata = {
   title: "Hibachi Salmon Frisco | Fresh Atlantic Salmon Teppanyaki",
-  description: "Fresh Atlantic salmon grilled tableside. 200-250 calories per 5oz with 25-28g protein. Omega-3 rich, healthy choice. Includes soup, salad, rice, vegetables.",
+  description: "Fresh Atlantic salmon grilled tableside. 200-250 calories per 5oz with 25-28g protein. Omega-3 rich, healthy choice. Includes soup, salad, rice, vegetables. Jinbeh Frisco.",
   keywords: ["hibachi salmon frisco","salmon teppanyaki restaurant frisco tx","hibachi salmon calories","omega-3 salmon health benefits","fresh fish hibachi","best hibachi near me frisco","japanese steakhouse frisco","hibachi near me frisco"],
   openGraph: {
     title: "Hibachi Salmon | Jinbeh Frisco",

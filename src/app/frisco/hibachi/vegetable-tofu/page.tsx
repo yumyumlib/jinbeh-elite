@@ -6,7 +6,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 
 export const metadata: Metadata = {
   title: "Vegetable & Tofu Hibachi Frisco | Vegan Teppanyaki Option",
-  description: "Fresh seasonal vegetables with crispy tofu. 180-220 calories, high protein plant-based. Vegan-friendly hibachi. Includes soup, salad, rice, grilled vegetables.",
+  description: "Fresh seasonal vegetables with crispy tofu. 180-220 calories, high protein plant-based. Vegan-friendly hibachi. Includes soup, salad, rice, grilled vegetables. Jinbeh Frisco.",
   keywords: ["vegetarian hibachi frisco","tofu teppanyaki dinner","vegetable hibachi near me","plant based japanese restaurant","vegan hibachi options frisco","japanese steakhouse frisco","hibachi near me frisco"],
   openGraph: {
     title: "Vegetable & Tofu | Jinbeh Frisco",
