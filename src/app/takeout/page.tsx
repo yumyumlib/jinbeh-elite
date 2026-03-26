@@ -6,6 +6,7 @@ import Image from "next/image";
 import locations from "@/data/locations.json";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Takeout & Delivery | Jinbeh Japanese Restaurant - Frisco & Lewisville",
   description:
@@ -198,6 +199,9 @@ export default function TakeoutPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Takeout" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script
           type="application/ld+json"

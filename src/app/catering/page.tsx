@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CateringForm from "@/components/CateringForm";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Catering | Jinbeh Japanese Restaurant | Hibachi & Sushi Catering DFW",
   description:
@@ -134,6 +135,9 @@ export default function CateringPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Catering" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script

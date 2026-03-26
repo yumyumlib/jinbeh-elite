@@ -6,6 +6,7 @@ import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
 import MenuClient from "./MenuClient";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Menu | Jinbeh Japanese Restaurant - Frisco & Lewisville",
     description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls. View menus for our Frisco and Lewisville locations.",
@@ -84,6 +85,9 @@ export default function MenuPage() {
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuSchema) }} />
             <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Menu" }]} />
+      </div>
             <main id="main-content" className="min-h-screen bg-warm-ivory">
                 <MenuClient />
 

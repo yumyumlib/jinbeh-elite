@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Gallery | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
@@ -269,6 +270,9 @@ export default function GalleryPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Photo Gallery" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script

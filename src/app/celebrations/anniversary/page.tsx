@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Anniversary Dinner | Romantic Japanese Dining | Jinbeh Frisco & Lewisville",
   description: "Celebrate your anniversary with an unforgettable hibachi dinner at Jinbeh. Romantic atmosphere, exceptional Japanese cuisine, and tableside entertainment in Frisco and Lewisville TX.",
@@ -91,6 +92,9 @@ export default function AnniversaryPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Anniversary" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

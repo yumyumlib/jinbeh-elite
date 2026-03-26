@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "National Fried Rice Day | September 20th | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description: "Celebrate National Fried Rice Day at Jinbeh! Watch our hibachi chefs make the best fried rice in Frisco and Lewisville TX. Famous hibachi fried rice prepared tableside.",
@@ -88,6 +89,9 @@ export default function NationalFriedRiceDayPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "National Fried Rice Day" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Valentine's Day Dinner Frisco & Lewisville | Romantic Japanese Dining | Jinbeh",
   description: "Celebrate Valentine's Day at Jinbeh Japanese Restaurant. Romantic hibachi dinner, fresh sushi, sake, and tableside entertainment in Frisco and Lewisville TX. Reserve your table now!",
@@ -96,6 +97,9 @@ export default function ValentinesDayPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Valentines Day" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

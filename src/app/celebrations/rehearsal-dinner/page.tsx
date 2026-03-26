@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Rehearsal Dinner Venues Frisco TX | Wedding Rehearsal Restaurant | Jinbeh",
   description: "Host your wedding rehearsal dinner at Jinbeh Japanese Restaurant. Private hibachi tables, memorable entertainment & delicious cuisine. Perfect rehearsal dinner venues in Frisco & Lewisville TX.",
@@ -122,6 +123,9 @@ export default function RehearsalDinnerPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Rehearsal Dinner" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script
           type="application/ld+json"

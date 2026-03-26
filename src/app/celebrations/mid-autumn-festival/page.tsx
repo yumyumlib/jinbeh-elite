@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Mid-Autumn Festival Dinner Frisco & Lewisville | Moon Festival | Jinbeh Japanese Restaurant",
   description: "Celebrate the Mid-Autumn Festival at Jinbeh! Mark the Moon Festival with family dining, hibachi, and sushi in Frisco and Lewisville TX. Gather under the harvest moon!",
@@ -88,6 +89,9 @@ export default function MidAutumnFestivalPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Mid Autumn Festival" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

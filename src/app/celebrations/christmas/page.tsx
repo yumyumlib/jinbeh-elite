@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Christmas Dinner Frisco & Lewisville | Holiday Dining | Jinbeh Japanese Restaurant",
   description: "Celebrate Christmas at Jinbeh! Hibachi, sushi, and Japanese dining for the holidays. Frisco and Lewisville TX locations open Christmas Eve. Reserve your holiday table!",
@@ -88,6 +89,9 @@ export default function ChristmasPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Christmas" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

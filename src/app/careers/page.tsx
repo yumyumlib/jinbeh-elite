@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Careers at Jinbeh | Join Our Family - Frisco & Lewisville, TX",
   description:
@@ -360,6 +361,9 @@ export default function CareersPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Careers" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script

@@ -10,6 +10,7 @@ import { MiniTestimonials } from "@/components/MiniTestimonials";
 import { TestimonialCapture } from "@/components/TestimonialCapture";
 import OpenTableReservationForm from "@/components/OpenTableReservationForm";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Make a Reservation | Jinbeh Japanese Restaurant - Frisco & Lewisville",
   description:
@@ -193,6 +194,9 @@ export default function ReservationsPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Reservations" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script
           type="application/ld+json"

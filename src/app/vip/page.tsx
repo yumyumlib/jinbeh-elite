@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import VipClubForm from "@/components/VipClubForm";
 import { HeroSection, RevealSection, ShinyBadge } from "@/components/MagicUI";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Join the Jinbeh VIP Club | Free Birthday Gift + Secret Menu Access",
     description: "Join 1,200+ Jinbeh VIP members. Get a free birthday dessert, a $25 gift card on your birthday, and access to our secret menu.",
@@ -57,6 +58,9 @@ export default function VipPage() {
     return (
         <>
             <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "VIP Club" }]} />
+      </div>
             <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Team Building Events | Corporate Dining | Jinbeh Japanese Restaurant Frisco & Lewisville TX",
   description:
@@ -137,6 +138,9 @@ export default function TeamBuildingPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Team Building" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script

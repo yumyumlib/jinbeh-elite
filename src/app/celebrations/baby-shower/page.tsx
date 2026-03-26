@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Baby Shower Venues Frisco TX | Baby Shower Restaurant | Jinbeh Japanese",
   description: "Host your baby shower at Jinbeh Japanese Restaurant! Fun hibachi entertainment, delicious food & memorable celebration. Baby shower venues in Frisco & Lewisville TX.",
@@ -98,6 +99,9 @@ export default function BabyShowerPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Baby Shower" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script
           type="application/ld+json"

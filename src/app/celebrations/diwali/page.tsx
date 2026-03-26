@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Diwali Dinner Frisco & Lewisville | Festival of Lights Celebration | Jinbeh Japanese Restaurant",
   description: "Celebrate Diwali at Jinbeh! Mark the Festival of Lights with hibachi flames and family dining in Frisco and Lewisville TX. Gather with loved ones for a festive meal!",
@@ -88,6 +89,9 @@ export default function DiwaliPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Diwali" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

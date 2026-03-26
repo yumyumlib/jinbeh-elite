@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Corporate Dinner & Team Events Frisco TX | Private Dining | Jinbeh Japanese Restaurant",
   description: "Host memorable corporate dinners, team building events & business celebrations at Jinbeh. Private hibachi tables, group sushi platters & professional service in Frisco & Lewisville TX.",
@@ -100,6 +101,9 @@ export default function CorporateEventsPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Corporate Events" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

@@ -6,6 +6,7 @@ import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Image from "next/image";
 import Link from "next/link";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Happy Hour | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
   description:
@@ -128,6 +129,9 @@ export default function HappyHourPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Happy Hour & Specials" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script

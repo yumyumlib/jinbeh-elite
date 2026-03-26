@@ -9,6 +9,7 @@ import { HeroSection, RevealSection } from "@/components/MagicUI";
 import { NewsletterForm, SeasonalSpecialsForm } from "@/components/ContactForm";
 import { MagicCard } from "@/components/ui/magic-card";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
@@ -206,6 +207,9 @@ export default function SpecialsPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Specials" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script

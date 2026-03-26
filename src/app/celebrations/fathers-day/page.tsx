@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Father's Day Dinner Frisco & Lewisville | Treat Dad | Jinbeh Japanese Restaurant",
   description: "Celebrate Father's Day at Jinbeh! Hibachi steak, sushi, and Japanese dining Dad will love. Frisco and Lewisville TX locations. Make reservations for Dad's special day!",
@@ -88,6 +89,9 @@ export default function FathersDayPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Fathers Day" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

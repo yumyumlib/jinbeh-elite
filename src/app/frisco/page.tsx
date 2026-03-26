@@ -12,6 +12,7 @@ import { MiniTestimonials } from "@/components/MiniTestimonials";
 import { MagicCard } from "@/components/ui/magic-card";
 import locations from "@/data/locations.json";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 // Gallery items for Frisco
 const galleryItems = [
   { src: "/images/frisco/JinbehFrisco_SushiBar.jpg", alt: "Jinbeh Frisco sushi bar", caption: "Our Premium Sushi Bar" },
@@ -162,6 +163,9 @@ export default function FriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco" }]} />
+      </div>
 
       <main id="main-content" className="min-h-screen">
         {/* JSON-LD Schemas */}

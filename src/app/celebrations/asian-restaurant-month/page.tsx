@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Asian Restaurant Month | May AAPI Heritage Month | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description: "Celebrate Asian Restaurant Month this May at Jinbeh! Support Asian-owned restaurants during AAPI Heritage Month. Hibachi, sushi, and authentic Japanese dining in Frisco and Lewisville TX.",
@@ -88,6 +89,9 @@ export default function AsianRestaurantMonthPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Asian Restaurant Month" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

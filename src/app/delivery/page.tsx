@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import locations from "@/data/locations.json";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Jinbeh Delivery | Japanese Food Delivery Frisco & Lewisville TX",
   description:
@@ -115,6 +116,9 @@ export default function DeliveryPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Delivery" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script

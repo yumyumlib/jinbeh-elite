@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Privacy Policy | Jinbeh Japanese Restaurant",
   description: "Privacy policy for Jinbeh Japanese Restaurant. Learn how we collect, use, and protect your personal information.",
@@ -26,6 +27,9 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Privacy Policy" }]} />
+      </div>
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="font-heading text-xl font-bold text-charcoal">

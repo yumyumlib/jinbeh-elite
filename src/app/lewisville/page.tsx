@@ -11,6 +11,7 @@ import { CustomerVoiceSection } from "@/components/CustomerVoice";
 import { MagicCard } from "@/components/ui/magic-card";
 import locations from "@/data/locations.json";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 // Gallery items for Lewisville - Feb 2026 Professional Photoshoot
 const galleryItems = [
   { src: "/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp", alt: "Jinbeh hibachi chef performing spectacular flame show at Lewisville TX teppanyaki grill", caption: "Spectacular Hibachi Flame Show" },
@@ -165,6 +166,9 @@ export default function LewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville" }]} />
+      </div>
 
       <main id="main-content" className="min-h-screen">
         <link rel="preload" href="/images/lewisville/IMG_1910.jpg" as="image" />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TestimonialCapture } from "@/components/TestimonialCapture";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Birthday Parties | Jinbeh Japanese Restaurant | Hibachi Birthday Celebration",
   description:
@@ -130,6 +131,9 @@ export default function BirthdayPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Celebrations", href: "/celebrations" }, { label: "Birthday" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

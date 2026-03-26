@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { EventInquiryForm } from "@/components/ContactForm";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
@@ -284,6 +285,9 @@ export default function EventsPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Private Events" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script
