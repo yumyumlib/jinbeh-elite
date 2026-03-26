@@ -121,6 +121,11 @@ export default function PickleballRestaurantsLewisvillePage() {
       readTime="5 min read"
       faqs={faqs}
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville","acceptedAnswer":{"@type":"Answer","text":"There\'s something magical about combining physical activity with a great meal. Here\'s why this combo works so well:"}},{"@type":"Question","name":"Why The Picklr + Jinbeh Works","acceptedAnswer":{"@type":"Answer","text":"This isn\'t just proximity—it\'s synergy. Both businesses share values that make this pairing natural:"}},{"@type":"Question","name":"Other Things to Do Near Stemmons Freeway Lewisville","acceptedAnswer":{"@type":"Answer","text":"The 2450 S Stemmons Fwy area is becoming a hub for fun activities. Beyond pickleball and dining, you\'re also near:"}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Best Restaurants Near Pickleball in Lewisville TX
 

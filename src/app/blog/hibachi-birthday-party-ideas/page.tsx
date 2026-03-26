@@ -105,6 +105,11 @@ export default function HibachiBirthdayPartyIdeasPage() {
       faqs={faqs}
       keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect $35–$50 per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Works for Birthdays","acceptedAnswer":{"@type":"Answer","text":"Most restaurants offer food. Hibachi offers an experience. When you book a birthday at a hibachi vs teppanyaki experience , you\'re not just choosing a menu—you\'re choosing entertainment that brings everyone together."}},{"@type":"Question","name":"What to Order at a Hibachi Birthday","acceptedAnswer":{"@type":"Answer","text":"Hibachi menus can feel overwhelming if you\'ve never been. Here\'s what sells most for birthday parties:"}},{"@type":"Question","name":"Common Hibachi Birthday Mistakes (And How to Avoid Them)","acceptedAnswer":{"@type":"Answer","text":"\"Oh, a few people might not make it.\" Then everyone shows up, and you\'re scrambling. Book for your actual headcount—it\'s easier to release seats than add them."}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Hibachi Birthday Party Ideas: Ultimate Planning Gu
         <script

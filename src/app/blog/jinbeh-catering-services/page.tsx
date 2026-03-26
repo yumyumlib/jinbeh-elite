@@ -105,6 +105,11 @@ export default function JinbehCateringServicesPage() {
       readTime="10 min read"
       faqs={faqs}
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh Catering?","acceptedAnswer":{"@type":"Answer","text":"Jinbeh is synonymous with authentic Japanese flavors, crafted with precision and passion. When you choose Jinbeh Catering , you\'re not just ordering food—you\'re investing in a unique culinary experience that transcends ordinary catering services."}},{"@type":"Question","name":"Transparent Pricing You Can Trust","acceptedAnswer":{"@type":"Answer","text":"One of the most common questions we encounter is about pricing. We understand that budgeting for catering is important, which is why we\'re committed to transparency."}},{"@type":"Question","name":"What Influences Your Quote?","acceptedAnswer":{"@type":"Answer","text":"Several factors affect catering pricing, and we\'re transparent about each one:"}},{"@type":"Question","name":"Catering Locations & Service Areas","acceptedAnswer":{"@type":"Answer","text":"Jinbeh Catering services the Dallas-Fort Worth area, including Frisco, Lewisville, and surrounding communities. Whether your event is nearby or requires travel, our team is equipped to deliver the same exceptional experience."}},{"@type":"Question","name":"Why Businesses & Families Choose Jinbeh Catering","acceptedAnswer":{"@type":"Answer","text":"Jinbeh Catering is committed to delivering exceptional culinary experiences for any occasion. Whether you\'re planning a small family gathering or a large corporate event, our team is here to make your vision a reality. By understanding the costs, menu options, and services available, you can confidently plan an event that your guests will remember for years to come."}}]}` }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

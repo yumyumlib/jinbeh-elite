@@ -95,6 +95,11 @@ export default function JinbehGiftCardsGuidePage() {
       readTime="8 min read"
       faqs={faqs}
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where to Purchase","acceptedAnswer":{"@type":"Answer","text":"Jinbeh gift cards are available through multiple convenient options:"}},{"@type":"Question","name":"How Birthday Club Works","acceptedAnswer":{"@type":"Answer","text":"Enrollment: Sign up for the Birthday Club at any Jinbeh location or online. Provide your name and birthday."}},{"@type":"Question","name":"Why Join?","acceptedAnswer":{"@type":"Answer","text":"Call to Join: Reach out to either Jinbeh location to enroll in the Birthday Club."}},{"@type":"Question","name":"Why Jinbeh Gift Cards Make Great Gifts","acceptedAnswer":{"@type":"Answer","text":"For Immediate Gift Delivery: Purchase online and have digital card emailed the same day"}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Maximize Jinbeh Gift Cards: Deals, Balance Check &
         <script

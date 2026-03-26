@@ -91,6 +91,11 @@ export default function InternationalBeerDay() {
             faqs={faqs}
             keyTakeaway="International Beer Day is the perfect excuse to try Japan's finest beers—Sapporo, Asahi, and Kirin—paired with hibachi and sushi at Jinbeh. Celebrate beer, food, and friendship at DFW's favorite Japanese restaurant."
         >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"🍺 What Is International Beer Day?","acceptedAnswer":{"@type":"Answer","text":"Every first Friday of August, beer lovers around the wor ld raise their glasses for International Beer Day. It\'s a celebration of the craft, culture, and community that beer brings to the table—literally."}},{"@type":"Question","name":"Why Japanese Beer Deserves a Spot in Your Celebration","acceptedAnswer":{"@type":"Answer","text":"Japanese brewers have been perfecting their craft since the 1870s, creating some of the world\'s most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are designed with one goal: to enhance the food you\'re eating. That food-first philosophy is what makes them extraordinary."}},{"@type":"Question","name":"How to Celebrate at Jinbeh","acceptedAnswer":{"@type":"Answer","text":"Make your International Beer Day more than just a beer—make it an experience:"}}]}` }}
+      />
             <h2>🍺 What Is International Beer Day?</h2>
 
             <p>

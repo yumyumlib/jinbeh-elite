@@ -114,6 +114,11 @@ export default function HibachiCaloriesGuidePage() {
       faqs={faqs}
       keyTakeaway="Hibachi protein calories range from 150 cal (shrimp) to 450 cal (steak). Swap fried rice for steamed rice to save ~200 calories, load up on vegetables (50–70 cal), and request sauces on the side. A lean hibachi meal can total just 350–400 calories."
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Cooking Can Be Healthy","acceptedAnswer":{"@type":"Answer","text":"Unlike many restaurant preparation methods that rely on oil, butter, or heavy creams, hibachi cooking has several nutritional advantages:"}},{"@type":"Question","name":"Ingredients Are Visible","acceptedAnswer":{"@type":"Answer","text":"Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications—less sauce, extra vegetables, specific protein preferences."}},{"@type":"Question","name":"Sides, Sides, & Sides: Where Calories Add Up","acceptedAnswer":{"@type":"Answer","text":"Your protein choice significantly impacts meal calories, but sides can make even bigger differences. Here\'s what you need to know:"}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh Hibachi Calories 2025: Complete Nutrition G
         <script

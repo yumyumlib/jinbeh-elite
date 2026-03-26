@@ -129,6 +129,11 @@ export default function HibachiMenuGuidePage() {
       faqs={faqs}
       keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment — all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What to Expect on a Hibachi Menu","acceptedAnswer":{"@type":"Answer","text":"A typical hibachi menu offers a variety of meats, seafood, and vegetables. The selection is designed to cater to a wide range of tastes and preferences, allowing diners to customize their meal to their liking. Guests can choose from options like steak, chicken, shrimp, and scallops, often accompanied by a range of vegetables such as zucchini, onions, and mushrooms. These ingredients are typically fresh and locally sourced, ensuring the highest quality and flavor."}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Hibachi Restaurant Menu: Explore Flavorful Delight
         <script

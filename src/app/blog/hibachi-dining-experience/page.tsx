@@ -114,6 +114,11 @@ export default function HibachiDiningExperiencePage() {
       faqs={faqs}
       keyTakeaway="Hibachi dining combines live chef performances (knife tricks, onion volcanoes, fire shows) with fresh grilled proteins and sides — all prepared at your table. Plan 90 minutes to 2 hours, make reservations for weekends, and come hungry for generous portions."
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh for Your Hibachi Experience","acceptedAnswer":{"@type":"Answer","text":"When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. With locations in both Frisco and Lewisville, Jinbeh has been serving families and celebrations since 1988. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our sushi varieties and sushi for beginners options."}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Hibachi Restaurant Menu: Discover Flavor & Fun
    

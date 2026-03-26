@@ -106,6 +106,11 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       readTime="9 min read"
       faqs={faqs}
     >
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Event?","acceptedAnswer":{"@type":"Answer","text":"Entertainment Value: Guests are captivated from start to finish. The chef\'s performance is the evening\'s highlight."}},{"@type":"Question","name":"What\'s Included in Jinbeh Offsite Catering","acceptedAnswer":{"@type":"Answer","text":"When you book Jinbeh for your event, we handle everything. No stress. No hassle. Just exceptional results."}},{"@type":"Question","name":"Service Areas & Availability","acceptedAnswer":{"@type":"Answer","text":"Jinbeh\'s offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Where Jinbeh Services","acceptedAnswer":{"@type":"Answer","text":"Jinbeh\'s offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Why Choose Jinbeh for Your Offsite Catering?","acceptedAnswer":{"@type":"Answer","text":"For over 35 years, Jinbeh has been perfecting Japanese cuisine and hibachi entertainment. Our chefs are trained professionals who combine culinary skill with genuine showmanship."}}]}` }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh Offsite Events Catering: Hibachi at Home
   
