@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import locations from "@/data/locations.json";
 import { RevealSection } from "@/components/MagicUI";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
+
 export const metadata: Metadata = {
     title: {
         absolute: "Contact Jinbeh | Reservations & Catering | Frisco & Lewisville",
@@ -59,6 +61,9 @@ const breadcrumbSchema = {
 export default function ContactPage() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl">
+        <BreadcrumbNav items={[{ label: "Contact" }]} />
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

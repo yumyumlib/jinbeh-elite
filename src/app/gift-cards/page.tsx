@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { RevealSection, HeroSection, AnimatedGradientText } from "@/components/MagicUI";
 import { MagicCard } from "@/components/ui/magic-card";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
+
 // JSON-LD Schema for Gift Cards
 const productSchema = {
     "@context": "https://schema.org",
@@ -77,6 +79,9 @@ const breadcrumbSchema = {
 export default function GiftCardsPage() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl">
+        <BreadcrumbNav items={[{ label: "Gift Cards" }]} />
+        </div>
             {/* Schema */}
             <script
                 type="application/ld+json"
