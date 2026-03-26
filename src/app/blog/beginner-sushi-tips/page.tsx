@@ -86,6 +86,26 @@ const articleSchema = {
 export default function BeginnerSushiTipsPage() {
   return (
     <>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When to Visit Professional Sushi Chefs",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While making sushi at home is rewarding, sometimes it\'s wonderful to experience the expertise of professional sushi chefs. At Jinbeh Japanese Restaurant, our skilled sushi masters prepare authentic, high-quality sushi daily. Visit our Lewisville location to experience traditional sushi craftsmanship and learn from watching the experts in action."
+        }
+      }
+            ]
+          })
+        }}
+      />
       <ArticleLayout
         title="Beginner Sushi Tips: Easy Homemade Sushi Guide"
         metaDescription="Master the art of sushi-making at home with our comprehensive beginner's guide. Learn essential techniques, rolling methods, and recipes for perfect sushi rolls—even on your first try."
