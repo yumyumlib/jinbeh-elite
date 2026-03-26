@@ -194,7 +194,7 @@ export default function SushiCookingClasses() {
                                     </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-6">
-                                        <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🎯 Skill Development</h4>
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🎯 Skill Development</h3>
                                         <p className="text-charcoal/70 mb-4">
                                             You'll gain hands-on experience in sushi preparation, learning techniques that take years to master.
                                             From proper knife skills to perfect rice seasoning, every skill builds your culinary confidence.
@@ -202,7 +202,7 @@ export default function SushiCookingClasses() {
                                     </div>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-6">
-                                        <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🇯🇵 Cultural Insight</h4>
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🇯🇵 Cultural Insight</h3>
                                         <p className="text-charcoal/70 mb-4">
                                             Sushi is an integral part of Japanese culture. By learning to make sushi, you gain appreciation
                                             for centuries-old traditions, ingredient selection, and the philosophy behind Japanese cuisine.
@@ -210,7 +210,7 @@ export default function SushiCookingClasses() {
                                     </div>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-6">
-                                        <h4 className="font-heading font-bold text-lg text-charcoal mb-3">👥 Social Experience</h4>
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-3">👥 Social Experience</h3>
                                         <p className="text-charcoal/70 mb-4">
                                             Classes often involve group activities, offering a chance to meet new people who share your
                                             interests. It's a fun social experience while learning valuable skills together.
@@ -218,7 +218,7 @@ export default function SushiCookingClasses() {
                                     </div>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 mb-6">
-                                        <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🥗 Health and Nutrition</h4>
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🥗 Health and Nutrition</h3>
                                         <p className="text-charcoal/70 mb-4">
                                             Sushi can be a healthy meal option, rich in omega-3 fatty acids, vitamins, and minerals. Learn
                                             how to create nutritious sushi rolls tailored to your dietary preferences.
@@ -295,7 +295,7 @@ export default function SushiCookingClasses() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">📚 Check the Instructor's Background</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">📚 Check the Instructor's Background</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Look for instructors with authentic Japanese culinary training or extensive sushi-making experience.
                                                 Their expertise directly impacts the quality of your learning.
@@ -303,7 +303,7 @@ export default function SushiCookingClasses() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">👥 Consider Class Size</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">👥 Consider Class Size</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Smaller classes often provide more personalized attention. Aim for a student-to-instructor ratio that
                                                 allows for individual feedback and guidance.
@@ -311,7 +311,7 @@ export default function SushiCookingClasses() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">⏰ Check Duration and Schedule</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">⏰ Check Duration and Schedule</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Classes range from a few hours to full-day workshops. Choose a duration that fits your learning style
                                                 and schedule.
@@ -319,7 +319,7 @@ export default function SushiCookingClasses() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🔍 Read Reviews</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🔍 Read Reviews</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Check online reviews and testimonials from past students. Look for feedback about instructor quality,
                                                 ingredient freshness, and overall experience.

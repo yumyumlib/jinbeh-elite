@@ -188,7 +188,7 @@ export default function SakeTasteProfile() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🍬 Sweetness</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🍬 Sweetness</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Derived from the residual sugar remaining after fermentation. Premium sake often has subtle sweetness,
                                                 while Nigori sake exhibits more pronounced sweetness and creaminess.
@@ -196,7 +196,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🍋 Acidity</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🍋 Acidity</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Adds a refreshing quality to sake and balances sweetness. Higher acidity creates a crisper, more
                                                 palate-cleansing effect, while lower acidity results in a smoother drinking experience.
@@ -204,7 +204,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🖤 Bitterness</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🖤 Bitterness</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Often subtle, it adds depth and complexity to the flavor profile. Quality sake has balanced bitterness
                                                 that doesn't overpower other taste elements.
@@ -212,7 +212,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">✨ Astringency</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">✨ Astringency</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Provides a clean, dry finish that lingers on the palate. This characteristic comes from tannins and
                                                 amino acids in the sake.
@@ -220,7 +220,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 md:col-span-2">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🍲 Umami</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🍲 Umami</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 A savory taste that enhances the richness of sake. This fifth basic taste creates a satisfying,
                                                 mouth-filling sensation that elevates the overall drinking experience.
@@ -264,7 +264,7 @@ export default function SakeTasteProfile() {
 
                                     <div className="space-y-6 my-8">
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Junmai (Pure Rice)</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Junmai (Pure Rice)</h3>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Full-bodied, earthy, with pronounced rice character
                                             </p>
@@ -277,7 +277,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Ginjo (Premium)</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Ginjo (Premium)</h3>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Delicate, fruity, floral with bright acidity
                                             </p>
@@ -290,7 +290,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Daiginjo (Ultra-Premium)</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Daiginjo (Ultra-Premium)</h3>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Ultra-delicate, elegant, with complex aromatics
                                             </p>
@@ -303,7 +303,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Nigori (Cloudy)</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Nigori (Cloudy)</h3>
                                             <p className="text-charcoal/70 mb-2">
                                                 <strong>Taste Profile:</strong> Sweet, creamy, with thicker mouthfeel
                                             </p>
@@ -346,7 +346,7 @@ export default function SakeTasteProfile() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🌡️ Temperature Matters</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🌡️ Temperature Matters</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Serve premium sake chilled (45-50°F) to preserve delicate flavors. Fuller-bodied sakes can be served
                                                 slightly warmer (55-65°F) to highlight earthy characteristics.
@@ -354,7 +354,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🥃 Use Proper Glassware</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🥃 Use Proper Glassware</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 A wine glass or tasting glass is ideal for appreciating aroma and flavor. Avoid traditional sake cups
                                                 for premium sakes, as they don't allow proper aroma appreciation.
@@ -362,7 +362,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🍚 Pair with Food</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🍚 Pair with Food</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Sake truly shines when paired with complementary foods. Try different sake types with various <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red underline transition-colors">sushi</Link>
                                                 and Japanese dishes to discover your favorite combinations.
@@ -370,7 +370,7 @@ export default function SakeTasteProfile() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">📚 Keep Notes</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">📚 Keep Notes</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Write down your observations of aroma, taste, and finish. This helps develop your palate and identifies
                                                 your personal preferences.

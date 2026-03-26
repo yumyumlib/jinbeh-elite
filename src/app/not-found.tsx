@@ -50,9 +50,35 @@ export default function NotFound() {
                     </Link>
                 </div>
 
+                {/* Search */}
+                <div className="mb-10">
+                    <form
+                        action="https://www.google.com/search"
+                        method="GET"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex max-w-md mx-auto"
+                    >
+                        <input type="hidden" name="as_sitesearch" value="jinbeh.com" />
+                        <input
+                            type="text"
+                            name="q"
+                            placeholder="Search Jinbeh..."
+                            aria-label="Search Jinbeh website"
+                            className="flex-1 px-4 py-3 border-2 border-charcoal/20 rounded-l-xl text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-accent-red transition-colors"
+                        />
+                        <button
+                            type="submit"
+                            className="px-6 py-3 bg-accent-red text-white font-semibold rounded-r-xl hover:bg-accent-red/90 transition-colors"
+                        >
+                            Search
+                        </button>
+                    </form>
+                </div>
+
                 {/* Quick Links */}
                 <div className="border-t border-charcoal/10 pt-8">
-                    <p className="text-sm text-charcoal/80 mb-4">Looking for something specific?</p>
+                    <p className="text-sm text-charcoal/80 mb-4">Or browse popular pages:</p>
                     <div className="flex flex-wrap gap-4 justify-center text-sm">
                         <Link href="/frisco" className="text-accent-red hover:underline">
                             Frisco Location
@@ -60,14 +86,23 @@ export default function NotFound() {
                         <Link href="/lewisville" className="text-accent-red hover:underline">
                             Lewisville Location
                         </Link>
-                        <Link href="/frisco/menu" className="text-accent-red hover:underline">
+                        <Link href="/menu" className="text-accent-red hover:underline">
                             Menu
+                        </Link>
+                        <Link href="/order-online" className="text-accent-red hover:underline">
+                            Order Online
                         </Link>
                         <Link href="/blog" className="text-accent-red hover:underline">
                             Blog
                         </Link>
                         <Link href="/happy-hour" className="text-accent-red hover:underline">
                             Happy Hour
+                        </Link>
+                        <Link href="/gift-cards" className="text-accent-red hover:underline">
+                            Gift Cards
+                        </Link>
+                        <Link href="/contact" className="text-accent-red hover:underline">
+                            Contact Us
                         </Link>
                     </div>
                 </div>

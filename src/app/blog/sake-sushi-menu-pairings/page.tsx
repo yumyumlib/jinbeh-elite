@@ -216,7 +216,7 @@ export default function SakeSushiMenuPairings() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Junmai</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Junmai</h3>
                                             <p className="text-charcoal/70 text-sm mb-3">
                                                 Pure rice sake with no additional alcohol. It is full-bodied and pairs well with robust fish flavors
                                                 like maguro (tuna). The rich, earthy undertones complement fatty fish beautifully.
@@ -225,7 +225,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Ginjo</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Ginjo</h3>
                                             <p className="text-charcoal/70 text-sm mb-3">
                                                 A premium sake with a fruity and floral aroma, offering a delicate palate that matches perfectly
                                                 with white fish and sashimi. The aromatic qualities enhance the fish's natural flavors.
@@ -234,7 +234,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Daiginjo</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Daiginjo</h3>
                                             <p className="text-charcoal/70 text-sm mb-3">
                                                 An even more refined version of Ginjo with a higher polishing rate, providing an ultra-delicate
                                                 flavor profile. Its elegance pairs with the finest sushi preparations.
@@ -243,7 +243,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Nigori</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Nigori</h3>
                                             <p className="text-charcoal/70 text-sm mb-3">
                                                 A cloudy sake with a sweet and creamy texture, ideal for balancing spicy sushi rolls. Its
                                                 richness creates a complementary contrast.
@@ -266,7 +266,7 @@ export default function SakeSushiMenuPairings() {
 
                                     <div className="space-y-6 my-8">
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Match Intensity</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Match Intensity</h3>
                                             <p className="text-charcoal/70">
                                                 Pair light sakes with delicate sushi flavors and rich sakes with robust fish. A delicate white
                                                 fish like flounder pairs beautifully with a crisp, floral Ginjo, while a powerful tuna demands
@@ -275,7 +275,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Consider the Rice</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Consider the Rice</h3>
                                             <p className="text-charcoal/70">
                                                 Since both sushi and sake are rice-based, finding a harmony in their textures creates a more
                                                 cohesive experience. The sweetness of sushi rice balances well with the subtle sweetness
@@ -284,7 +284,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Balance Flavors</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Balance Flavors</h3>
                                             <p className="text-charcoal/70">
                                                 Use sake to counterbalance sushi flavors, such as using sweet Nigori to complement spicy rolls,
                                                 or a crisp, dry sake to cleanse the palate after fatty fish.
@@ -292,7 +292,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="border-l-4 border-soft-gold pl-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Acidity and Sweetness</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Acidity and Sweetness</h3>
                                             <p className="text-charcoal/70">
                                                 Pay attention to the sake's acidity level. Higher acidity provides a refreshing palate cleanser
                                                 between bites, while lower acidity creates a smoother drinking experience.
@@ -310,7 +310,7 @@ export default function SakeSushiMenuPairings() {
                                     </p>
 
                                     <div className="bg-charcoal text-white rounded-2xl p-8 my-8">
-                                        <h4 className="font-heading font-bold text-xl mb-6">Classic Pairings</h4>
+                                        <h3 className="font-heading font-bold text-xl mb-6">Classic Pairings</h3>
 
                                         <div className="space-y-6">
                                             <div className="pb-4 border-b border-white/20">
@@ -389,7 +389,7 @@ export default function SakeSushiMenuPairings() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Proper Glassware</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Proper Glassware</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Use a traditional sake cup (ochoko) or a wine glass. A wine glass allows you to appreciate
                                                 the aroma better than a traditional small cup.
@@ -397,7 +397,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Temperature Matters</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Temperature Matters</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Premium sake should be chilled to 45-50°F to preserve delicate flavors. Fuller-bodied sakes can
                                                 be served slightly warmer.
@@ -405,7 +405,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Aroma First</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Aroma First</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Before tasting, take a moment to appreciate the aroma. This prepares your palate and enhances
                                                 the overall tasting experience.
@@ -413,7 +413,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Cleanse Between Bites</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Cleanse Between Bites</h3>
                                             <p className="text-charcoal/70 text-sm">
                                                 Sip sake between sushi bites to cleanse your palate and enhance your appreciation of each piece.
                                             </p>
@@ -567,7 +567,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Pairing Guide</h4>
+                                            <h3 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Sake Pairing Guide</h3>
                                         </div>
                                     </Link>
 
@@ -577,7 +577,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Guide</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sake Explained</h4>
+                                            <h3 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Types of Sake Explained</h3>
                                         </div>
                                     </Link>
 
@@ -587,7 +587,7 @@ export default function SakeSushiMenuPairings() {
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-soft-gold">📍 Locations</span>
-                                            <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi in Frisco</h4>
+                                            <h3 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">Best Sushi in Frisco</h3>
                                         </div>
                                     </Link>
                                 </div>

@@ -228,21 +228,21 @@ export default function SushiIdentificationChart() {
                                     </p>
 
                                     <div className="bg-warm-ivory rounded-2xl p-6 my-6">
-                                        <h4 className="font-heading font-bold text-lg text-charcoal mb-4">Maki Roll Types:</h4>
+                                        <h3 className="font-heading font-bold text-lg text-charcoal mb-4">Maki Roll Types:</h3>
 
-                                        <h5 className="font-semibold text-charcoal mt-4 mb-2">Hosomaki (Thin Rolls)</h5>
+                                        <h3 className="font-semibold text-charcoal mt-4 mb-2">Hosomaki (Thin Rolls)</h3>
                                         <p className="text-charcoal/70 text-sm mb-4">
                                             Hosomaki, or "thin rolls," feature a single filling, allowing the featured ingredient to shine.
                                             The nori (seaweed) is on the outside. Examples include cucumber rolls, tuna rolls, and avocado rolls.
                                         </p>
 
-                                        <h5 className="font-semibold text-charcoal mt-4 mb-2">Futomaki (Thick Rolls)</h5>
+                                        <h3 className="font-semibold text-charcoal mt-4 mb-2">Futomaki (Thick Rolls)</h3>
                                         <p className="text-charcoal/70 text-sm mb-4">
                                             Futomaki, or "thick rolls," are larger and contain multiple fillings. These rolls are often vegetarian,
                                             featuring pickled vegetables, eggs, and fresh vegetables alongside seasoned rice.
                                         </p>
 
-                                        <h5 className="font-semibold text-charcoal mt-4 mb-2">Uramaki (Inside-Out Rolls)</h5>
+                                        <h3 className="font-semibold text-charcoal mt-4 mb-2">Uramaki (Inside-Out Rolls)</h3>
                                         <p className="text-charcoal/70 text-sm">
                                             Uramaki, or "inside-out rolls," have rice on the outside, often sprinkled with sesame seeds. The California
                                             Roll is the most famous example, created in North America and beloved worldwide.
@@ -322,7 +322,7 @@ export default function SushiIdentificationChart() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                                         <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Raw Fish Options</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Raw Fish Options</h3>
                                             <ul className="text-charcoal/70 text-sm space-y-2">
                                                 <li><strong>Tuna:</strong> Rich, robust, clean flavor</li>
                                                 <li><strong>Salmon:</strong> Mild, slightly sweet, buttery</li>
@@ -332,7 +332,7 @@ export default function SushiIdentificationChart() {
                                         </div>
 
                                         <div className="bg-gradient-to-br from-deep-indigo/10 to-deep-indigo/10 rounded-2xl p-6">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">Cooked Options</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">Cooked Options</h3>
                                             <ul className="text-charcoal/70 text-sm space-y-2">
                                                 <li><strong>Eel (Unagi):</strong> Sweet, smoky, savory</li>
                                                 <li><strong>Shrimp:</strong> Sweet, firm, clean</li>

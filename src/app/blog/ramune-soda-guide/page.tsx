@@ -158,7 +158,7 @@ export default function RamuneSodaGuide() {
                                         <div className="flex items-start gap-3">
                                             <span className="text-2xl">{f.emoji}</span>
                                             <div>
-                                                <h4 className="font-bold text-charcoal">{f.name}</h4>
+                                                <h3 className="font-bold text-charcoal">{f.name}</h3>
                                                 <p className="text-charcoal/70 text-sm">{f.desc}</p>
                                             </div>
                                         </div>
@@ -184,15 +184,15 @@ export default function RamuneSodaGuide() {
 
                             <div className="space-y-4 my-8">
                                 <div className="bg-deep-indigo/10 rounded-lg p-5 border-l-4 border-deep-indigo">
-                                    <h4 className="font-bold text-charcoal mb-2">Preservation</h4>
+                                    <h3 className="font-bold text-charcoal mb-2">Preservation</h3>
                                     <p className="text-charcoal/80 text-sm">The marble maintains the soda's carbonation, keeping it fresh and fizzy until you're ready to enjoy it. This aspect is crucial, as effervescence is key to Ramune's refreshing appeal.</p>
                                 </div>
                                 <div className="bg-deep-indigo/10 rounded-lg p-5 border-l-4 border-deep-indigo">
-                                    <h4 className="font-bold text-charcoal mb-2">Pressure Dynamics</h4>
+                                    <h3 className="font-bold text-charcoal mb-2">Pressure Dynamics</h3>
                                     <p className="text-charcoal/80 text-sm">The pressure from carbonated liquid holds the marble in place, preventing it from rolling back into the bottle's neck once opened. This clever engineering maintains product quality.</p>
                                 </div>
                                 <div className="bg-red-50 rounded-lg p-5 border-l-4 border-red-600">
-                                    <h4 className="font-bold text-charcoal mb-2">Interactive Innovation</h4>
+                                    <h3 className="font-bold text-charcoal mb-2">Interactive Innovation</h3>
                                     <p className="text-charcoal/80 text-sm">The marble's functionality is a testament to innovative engineering, showing how simple design effectively maintains a product's quality while creating an engaging experience.</p>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@ export default function RamuneSodaGuide() {
 
                             <div className="grid md:grid-cols-2 gap-4 my-8">
                                 <div className="bg-warm-ivory rounded-lg p-5 border-2 border-deep-indigo/30">
-                                    <h4 className="font-bold text-charcoal mb-2">Physical Locations</h4>
+                                    <h3 className="font-bold text-charcoal mb-2">Physical Locations</h3>
                                     <ul className="text-charcoal/80 text-sm space-y-2">
                                         <li>• Asian markets</li>
                                         <li>• Specialty grocery stores</li>
@@ -215,7 +215,7 @@ export default function RamuneSodaGuide() {
                                     </ul>
                                 </div>
                                 <div className="bg-warm-ivory rounded-lg p-5 border-2 border-deep-indigo/30">
-                                    <h4 className="font-bold text-charcoal mb-2">Online Options</h4>
+                                    <h3 className="font-bold text-charcoal mb-2">Online Options</h3>
                                     <ul className="text-charcoal/80 text-sm space-y-2">
                                         <li>• Amazon</li>
                                         <li>• Online Asian retailers</li>

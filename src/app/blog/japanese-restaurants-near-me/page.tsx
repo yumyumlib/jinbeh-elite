@@ -174,21 +174,21 @@ export default function JapaneseRestaurantsNearMe() {
                                 <div className="flex gap-4">
                                     <span className="text-2xl flex-shrink-0">☎️</span>
                                     <div>
-                                        <h4 className="font-bold text-charcoal">Call Ahead</h4>
+                                        <h3 className="font-bold text-charcoal">Call Ahead</h3>
                                         <p className="text-sm text-charcoal/70">Japanese steakhouses can be busy, especially weekends. Calling ahead ensures you get a table and allows you to ask about any specials or seasonal dishes.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <span className="text-2xl flex-shrink-0">💻</span>
                                     <div>
-                                        <h4 className="font-bold text-charcoal">Online Booking</h4>
+                                        <h3 className="font-bold text-charcoal">Online Booking</h3>
                                         <p className="text-sm text-charcoal/70">Many restaurants offer online reservation options through their websites or apps like OpenTable. This provides confirmation and often holds your spot.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <span className="text-2xl flex-shrink-0">🎯</span>
                                     <div>
-                                        <h4 className="font-bold text-charcoal">Ask About Specials</h4>
+                                        <h3 className="font-bold text-charcoal">Ask About Specials</h3>
                                         <p className="text-sm text-charcoal/70">While reserving, inquire about current specials, seasonal offerings, and omakase pricing to make the most of your visit.</p>
                                     </div>
                                 </div>

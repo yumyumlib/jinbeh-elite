@@ -617,7 +617,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Dunking the Entire Roll in Soy Sauce</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Dunking the Entire Roll in Soy Sauce</h3>
                                                 <p className="text-charcoal/80">
                                                     Rolls are already flavorful. A light dip on one side is enough. Oversaturation makes them soggy and salty.
                                                 </p>
@@ -629,7 +629,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Piling Wasabi on Top Like a Topping</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Piling Wasabi on Top Like a Topping</h3>
                                                 <p className="text-charcoal/80">
                                                     Wasabi is meant to enhance, not smother. A tiny dab on the fish is plenty. Your sushi shouldn't look like a wasabi mountain.
                                                 </p>
@@ -641,7 +641,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Mixing Soy Sauce and Wasabi Into a Paste</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Mixing Soy Sauce and Wasabi Into a Paste</h3>
                                                 <p className="text-charcoal/80">
                                                     This creates a murky, overpowering mixture that masks flavors. Keep them separate and use sparingly.
                                                 </p>
@@ -653,7 +653,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Taking Tiny Bites Instead of One Bite</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Taking Tiny Bites Instead of One Bite</h3>
                                                 <p className="text-charcoal/80">
                                                     Nibbling falls apart. Eat nigiri in one bite to experience all the flavors together. It's part of the art.
                                                 </p>
@@ -665,7 +665,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Using Ginger as a Topping</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Using Ginger as a Topping</h3>
                                                 <p className="text-charcoal/80">
                                                     Ginger goes on your palate, not on your sushi (unless the chef placed it there). It's a palate cleanser, not a flavor enhancer.
                                                 </p>
@@ -677,7 +677,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Rubbing Chopsticks Together</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Rubbing Chopsticks Together</h3>
                                                 <p className="text-charcoal/80">
                                                     This implies the chopsticks are cheap or splintery. If they're not smooth, politely ask for a fresh pair.
                                                 </p>
@@ -689,7 +689,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Wasting Food</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Wasting Food</h3>
                                                 <p className="text-charcoal/80">
                                                     Leaving sushi on your plate or not finishing your soy sauce is disrespectful to the chef and the meal's tradition.
                                                 </p>
@@ -701,7 +701,7 @@ export default function HowToEatSushi() {
                                         <div className="flex items-start gap-4">
                                             <span className="text-3xl flex-shrink-0">🚫</span>
                                             <div className="flex-1">
-                                                <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Using a Spoon in the Soy Sauce Dish</h4>
+                                                <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Using a Spoon in the Soy Sauce Dish</h3>
                                                 <p className="text-charcoal/80">
                                                     Spoons aren't necessary. Dip directly or use chopsticks to guide food. Spoons make dipping awkward.
                                                 </p>

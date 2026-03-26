@@ -109,28 +109,28 @@ export default function OmakaseDiningGuide() {
                                     <div className="flex gap-4">
                                         <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">1</span>
                                         <div>
-                                            <h4 className="font-bold text-charcoal">Starter</h4>
+                                            <h3 className="font-bold text-charcoal">Starter</h3>
                                             <p className="text-sm text-charcoal/70">Light appetizer like salad or sashimi to awaken the palate</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
                                         <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">2</span>
                                         <div>
-                                            <h4 className="font-bold text-charcoal">Main Courses</h4>
+                                            <h3 className="font-bold text-charcoal">Main Courses</h3>
                                             <p className="text-sm text-charcoal/70">Series of sushi pieces, tempura, grilled fish, each served individually with attention to balance and presentation</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
                                         <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">3</span>
                                         <div>
-                                            <h4 className="font-bold text-charcoal">Palate Cleanser</h4>
+                                            <h3 className="font-bold text-charcoal">Palate Cleanser</h3>
                                             <p className="text-sm text-charcoal/70">Miso or clear soup to cleanse the palate and provide reflective interlude</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
                                         <span className="flex-shrink-0 w-6 h-6 rounded-full bg-soft-gold text-charcoal flex items-center justify-center text-sm font-bold">4</span>
                                         <div>
-                                            <h4 className="font-bold text-charcoal">Dessert</h4>
+                                            <h3 className="font-bold text-charcoal">Dessert</h3>
                                             <p className="text-sm text-charcoal/70">Matcha creation or fruit-based dessert providing gentle, satisfying conclusion</p>
                                         </div>
                                     </div>
@@ -165,21 +165,21 @@ export default function OmakaseDiningGuide() {
                                 <div className="flex gap-4">
                                     <span className="text-2xl flex-shrink-0">✋</span>
                                     <div>
-                                        <h4 className="font-bold text-charcoal">Respect the Creation</h4>
+                                        <h3 className="font-bold text-charcoal">Respect the Creation</h3>
                                         <p className="text-sm text-charcoal/70">Avoid asking for modifications to dishes. Trust that each has been crafted to perfection.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <span className="text-2xl flex-shrink-0">🍶</span>
                                     <div>
-                                        <h4 className="font-bold text-charcoal">Skip Extra Soy Sauce</h4>
+                                        <h3 className="font-bold text-charcoal">Skip Extra Soy Sauce</h3>
                                         <p className="text-sm text-charcoal/70">Trust the chef to season perfectly. Each piece is designed with precise seasoning in mind.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <span className="text-2xl flex-shrink-0">🍣</span>
                                     <div>
-                                        <h4 className="font-bold text-charcoal">Eat as Served</h4>
+                                        <h3 className="font-bold text-charcoal">Eat as Served</h3>
                                         <p className="text-sm text-charcoal/70">Sushi is often prepared for one bite, allowing you to experience the intended balance of flavors and textures.</p>
                                     </div>
                                 </div>

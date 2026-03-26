@@ -419,28 +419,28 @@ efinitions
 
       <div className="grid md:grid-cols-2 gap-6 my-8">
         <div className="bg-warm-ivory rounded-xl p-6">
-          <h4 className="font-heading font-bold text-charcoal mb-3">🔥 Skilled Chefs</h4>
+          <h3 className="font-heading font-bold text-charcoal mb-3">🔥 Skilled Chefs</h3>
           <p className="text-charcoal/80 text-sm">
             Our chefs train for years to perfect their craft. They're not just cooks—they're entertainers who read the table and adjust their performance to create the perfect energy, whether that's family fun or romantic ambiance.
           </p>
         </div>
 
         <div className="bg-warm-ivory rounded-xl p-6">
-          <h4 className="font-heading font-bold text-charcoal mb-3">🍤 Fresh Ingredients</h4>
+          <h3 className="font-heading font-bold text-charcoal mb-3">🍤 Fresh Ingredients</h3>
           <p className="text-charcoal/80 text-sm">
             We never use frozen proteins. Every piece of chicken, steak, shrimp, and scallop is fresh, selected for premium quality, and prepared with reverence to Japanese culinary traditions.
           </p>
         </div>
 
         <div className="bg-warm-ivory rounded-xl p-6">
-          <h4 className="font-heading font-bold text-charcoal mb-3">🎭 Authentic Entertainment</h4>
+          <h3 className="font-heading font-bold text-charcoal mb-3">🎭 Authentic Entertainment</h3>
           <p className="text-charcoal/80 text-sm">
             From the legendary onion volcano to fire tricks and personalized engagement with each diner, our chefs bring theater to your table while maintaining focus on food quality.
           </p>
         </div>
 
         <div className="bg-warm-ivory rounded-xl p-6">
-          <h4 className="font-heading font-bold text-charcoal mb-3">👨‍👩‍👧‍👦 Perfect for Celebrations</h4>
+          <h3 className="font-heading font-bold text-charcoal mb-3">👨‍👩‍👧‍👦 Perfect for Celebrations</h3>
           <p className="text-charcoal/80 text-sm">
             Birthdays, anniversaries, corporate events, or just a fun night out with friends—our communal teppanyaki seating and engaging chefs make every occasion special.
           </p>

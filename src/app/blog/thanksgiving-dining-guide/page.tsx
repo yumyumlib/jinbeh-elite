@@ -278,7 +278,7 @@ export default function ThanksgivingDiningGuide() {
 
                                     <div className="space-y-6 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6 border-l-4 border-accent-red">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🍱 Classic Catering Package</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🍱 Classic Catering Package</h3>
                                             <p className="text-charcoal/80 mb-4">
                                                 Perfect for intimate gatherings (8-15 people). Includes a mix of sushi platters, appetizers,
                                                 and entrées.
@@ -304,7 +304,7 @@ export default function ThanksgivingDiningGuide() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 border-l-4 border-deep-indigo">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">👥 Premium Party Package</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">👥 Premium Party Package</h3>
                                             <p className="text-charcoal/80 mb-4">
                                                 Ideal for medium gatherings (15-40 people). Expanded menu with premium selections and service
                                                 options.
@@ -334,7 +334,7 @@ export default function ThanksgivingDiningGuide() {
                                         </div>
 
                                         <div className="bg-warm-ivory rounded-2xl p-6 border-l-4 border-soft-gold">
-                                            <h4 className="font-heading font-bold text-lg text-charcoal mb-3">🎊 Corporate Thanksgiving Package</h4>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🎊 Corporate Thanksgiving Package</h3>
                                             <p className="text-charcoal/80 mb-4">
                                                 For corporate events and large celebrations (40+ people). Full-service catering with customization.
                                             </p>
@@ -488,7 +488,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <div className="text-3xl flex-shrink-0">📦</div>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Catering Orders</h4>
+                                                    <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Catering Orders</h3>
                                                     <p className="text-charcoal/80 mb-2">
                                                         <strong>Deadline: 7-10 days before Thanksgiving</strong>
                                                     </p>
@@ -504,7 +504,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <div className="text-3xl flex-shrink-0">📞</div>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Table Reservations</h4>
+                                                    <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Table Reservations</h3>
                                                     <p className="text-charcoal/80 mb-2">
                                                         <strong>Recommended: 2 weeks in advance</strong>
                                                     </p>
@@ -520,7 +520,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <div className="text-3xl flex-shrink-0">🎯</div>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-lg text-charcoal mb-2">Special Requests & Customization</h4>
+                                                    <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Special Requests & Customization</h3>
                                                     <p className="text-charcoal/80 mb-2">
                                                         <strong>Submit requests: 5-7 days before date</strong>
                                                     </p>
@@ -553,7 +553,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍣</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Premium Sashimi Platter</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Premium Sashimi Platter</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Assorted raw fish including salmon, tuna, and white fish. Light, elegant, and perfect for an
                                                         upscale Thanksgiving celebration.
@@ -564,7 +564,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍱</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Specialty Roll Assortment</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Specialty Roll Assortment</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Mix of our signature rolls featuring combinations like spicy tuna, Philadelphia, dragon, and
                                                         California rolls. Something for every palate.
@@ -575,7 +575,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍜</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Nigiri Selection</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Nigiri Selection</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Hand-pressed sushi showcasing the quality of our fish. Beautiful presentation and impressive
                                                         flavors.
@@ -596,7 +596,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🥩</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Filet Mignon & Lobster</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Filet Mignon & Lobster</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Premium proteins grilled to perfection. The ultimate Thanksgiving splurge with interactive
                                                         hibachi cooking.
@@ -607,7 +607,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍗</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Teriyaki Glazed Chicken</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Teriyaki Glazed Chicken</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         A lighter Thanksgiving option. Juicy, flavorful, and a great alternative to traditional turkey.
                                                     </p>
@@ -617,7 +617,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍤</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Garlic Butter Shrimp</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Garlic Butter Shrimp</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Bold flavors and quick-cooking. Perfect for those wanting something different and delicious.
                                                     </p>
@@ -627,7 +627,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🌾</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Fried Rice & Noodles</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Fried Rice & Noodles</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Pair your protein with our signature fried rice or noodle dishes. Satisfying and flavorful.
                                                     </p>
@@ -643,7 +643,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🥠</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Appetizer Variety Platter</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Appetizer Variety Platter</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Edamame, gyoza, spring rolls, tempura, and more. Great for sharing and letting guests sample
                                                         different flavors.
@@ -654,7 +654,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍱</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Family-Style Combination</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Family-Style Combination</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Mix of sushi, hibachi proteins, vegetables, and sides. Something for everyone at your table.
                                                     </p>
@@ -664,7 +664,7 @@ export default function ThanksgivingDiningGuide() {
                                             <div className="flex gap-4">
                                                 <span className="text-2xl flex-shrink-0">🍜</span>
                                                 <div>
-                                                    <h4 className="font-heading font-bold text-charcoal mb-1">Soup & Side Courses</h4>
+                                                    <h3 className="font-heading font-bold text-charcoal mb-1">Soup & Side Courses</h3>
                                                     <p className="text-charcoal/80 text-sm">
                                                         Start with miso soup or seaweed salad. Complements any main course selection beautifully.
                                                     </p>
@@ -762,9 +762,9 @@ export default function ThanksgivingDiningGuide() {
                                                 </div>
                                                 <div className="flex-1 min-w-0">
                                                     <span className="text-xs font-medium text-accent-red">🎉 Events</span>
-                                                    <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
+                                                    <h3 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
                                                         Hibachi Catering DFW
-                                                    </h4>
+                                                    </h3>
                                                 </div>
                                             </Link>
 
@@ -774,9 +774,9 @@ export default function ThanksgivingDiningGuide() {
                                                 </div>
                                                 <div className="flex-1 min-w-0">
                                                     <span className="text-xs font-medium text-deep-indigo">🎭 Dining</span>
-                                                    <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
+                                                    <h3 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
                                                         Best Hibachi Dallas
-                                                    </h4>
+                                                    </h3>
                                                 </div>
                                             </Link>
 
@@ -786,9 +786,9 @@ export default function ThanksgivingDiningGuide() {
                                                 </div>
                                                 <div className="flex-1 min-w-0">
                                                     <span className="text-xs font-medium text-soft-gold">📋 Services</span>
-                                                    <h4 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
+                                                    <h3 className="text-sm font-medium text-charcoal group-hover:text-accent-red transition-colors line-clamp-2">
                                                         Full Catering Menu
-                                                    </h4>
+                                                    </h3>
                                                 </div>
                                             </Link>
                                         </div>
