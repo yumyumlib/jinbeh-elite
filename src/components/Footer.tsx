@@ -164,6 +164,12 @@ export default function Footer() {
                   <Link href="/specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     All Specials
                   </Link>
+                  <Link href="/delivery" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Delivery
+                  </Link>
+                  <Link href="/takeout" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Takeout
+                  </Link>
                   <Link href="/gallery" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Photo Gallery
                   </Link>
@@ -193,6 +199,9 @@ export default function Footer() {
                   </Link>
                   <Link href="/celebrations/corporate-events" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Corporate Events
+                  </Link>
+                  <Link href="/events" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Private Events
                   </Link>
                   <Link href="/catering" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Off-Site Catering

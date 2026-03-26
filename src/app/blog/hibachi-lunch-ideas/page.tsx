@@ -102,7 +102,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Lunch is Perfect for Workdays","acceptedAnswer":{"@type":"Answer","text":"Hibachi is more than just a meal—it\'s a culinary experience that combines entertainment with delicious food. Originating from Japan, hibachi-style cooking involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Lunch is Perfect for Workdays","acceptedAnswer":{"@type":"Answer","text":"Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, hibachi-style cooking involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors."}}]}` }}
       />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Hibachi Lunch Ideas for Workdays: Flavor & Fun

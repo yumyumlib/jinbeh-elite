@@ -704,7 +704,13 @@ export default function DeliveryPage() {
               </div>
             </div>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/takeout" className="text-accent-red hover:underline">
+                Prefer to pick up? See our takeout options →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

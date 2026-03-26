@@ -386,7 +386,13 @@ export default function HappyHourPage() {
               </Link>
             </div>
           </div>
-        </section>
+        
+            <p className="mt-4 text-sm">
+              <a href="/vip" className="text-accent-red hover:underline font-semibold">
+                Want exclusive rewards? Join the VIP Club →
+              </a>
+            </p>
+</section>
       </main>
       <Footer />
     </>

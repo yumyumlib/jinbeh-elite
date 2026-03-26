@@ -787,7 +787,13 @@ export default function OrderOnlinePage() {
                             </p>
                         </div>
                     </div>
-                </section>
+                
+            <p className="mt-4 text-sm">
+              <a href="/delivery" className="text-accent-red hover:underline">
+                Prefer delivery? See our delivery service areas →
+              </a>
+            </p>
+</section>
             </main>
             <Footer />
         </>
