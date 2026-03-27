@@ -125,6 +125,46 @@ const breadcrumbSchema = {
   ]
 };
 
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "FoodEvent",
+  "name": "Jinbeh Happy Hour — Discounted Sake, Beer & Appetizers",
+  "description": "Enjoy discounted premium sake, Japanese beer, signature cocktails, and select appetizers during Happy Hour at Jinbeh Japanese Restaurant. Available Monday through Friday at both Frisco and Lewisville locations.",
+  "url": "https://jinbeh.com/happy-hour",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "isAccessibleForFree": true,
+  "location": [
+    {
+      "@type": "Restaurant",
+      "name": "Jinbeh Frisco",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2693 Preston Rd Suite 1040",
+        "addressLocality": "Frisco",
+        "addressRegion": "TX",
+        "postalCode": "75034"
+      }
+    },
+    {
+      "@type": "Restaurant",
+      "name": "Jinbeh Lewisville",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2440 S Stemmons Fwy #A",
+        "addressLocality": "Lewisville",
+        "addressRegion": "TX",
+        "postalCode": "75067"
+      }
+    }
+  ],
+  "organizer": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  }
+};
+
 export default function HappyHourPage() {
   return (
     <>
@@ -141,6 +181,10 @@ export default function HappyHourPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
         />
 
 
@@ -390,13 +434,13 @@ export default function HappyHourPage() {
               </Link>
             </div>
           </div>
-        
-            <p className="mt-4 text-sm">
-              <a href="/vip" className="text-accent-red hover:underline font-semibold">
-                Want exclusive rewards? Join the VIP Club →
-              </a>
-            </p>
-</section>
+
+          <p className="mt-4 text-sm">
+            <a href="/vip" className="text-accent-red hover:underline font-semibold">
+              Want exclusive rewards? Join the VIP Club →
+            </a>
+          </p>
+        </section>
       </main>
       <Footer />
     </>
