@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
 import { getMenuItem, locations } from "@/data/menu-items";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sake Bomb Frisco - Classic Japanese Beer Cocktail | Jinbeh",
   description: "Traditional sake bomb with cold Japanese beer at Jinbeh Frisco. Best happy hour cocktails. Reserve at our Japanese restaurant (214) 619-1200.",
@@ -102,6 +103,9 @@ export default function SakeBombFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Cocktails", href: "/frisco/cocktails" }, { label: "Sake Bomb" }]} />
+      </div>
       <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

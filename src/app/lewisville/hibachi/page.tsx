@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Jinbeh Lewisville's hibachi menu — 14 teppanyaki entrées with tableside fire shows, onion volcano, and premium cuts. Near Vista Ridge Mall. Since 1988.",
@@ -230,6 +231,9 @@ export default function HibachiLewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Hibachi" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

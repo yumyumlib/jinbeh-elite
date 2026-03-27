@@ -4,6 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Best Places for Bridal Showers Near Me | Jinbeh",
   description:
@@ -99,6 +100,9 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       readTime="9 min read"
       faqs={faqs}
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Bridal Shower Venues" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

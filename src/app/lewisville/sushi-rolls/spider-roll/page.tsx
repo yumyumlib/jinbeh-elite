@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
 import { getMenuItem, locations } from "@/data/menu-items";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Spider Roll Lewisville | Soft Shell Crab Sushi",
   description: "Spider Roll at Jinbeh Lewisville: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near I-35E. Call (972) 221-3888.",
@@ -102,6 +103,9 @@ export default function SpiderRollLewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Sushi Rolls", href: "/lewisville/sushi-rolls" }, { label: "Spider Roll" }]} />
+      </div>
       <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

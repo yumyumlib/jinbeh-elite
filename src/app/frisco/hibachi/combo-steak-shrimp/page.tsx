@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
 import { getMenuItem, locations } from "@/data/menu-items";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Steak & Shrimp Combo Hibachi Frisco | Meat Seafood Mix",
   description: "Filet mignon with jumbo shrimp. 400-450 calories, 50-55g protein. Surf and turf lighter combo. Includes soup, salad, rice, grilled vegetables. Jinbeh Frisco.",
@@ -102,6 +103,9 @@ export default function ComboSteakShrimpFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Hibachi", href: "/frisco/hibachi" }, { label: "Combo Steak Shrimp" }]} />
+      </div>
       <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

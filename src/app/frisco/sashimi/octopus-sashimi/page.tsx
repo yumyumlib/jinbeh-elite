@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
 import { getMenuItem, locations } from "@/data/menu-items";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Octopus Sashimi Frisco | Low-Fat High-Protein Tako | Jinbeh",
   description: "Tender octopus (tako) sashimi at Jinbeh Frisco. 93 calories, 29g protein, rich in B12 & selenium. Lean choice for healthy eating.",
@@ -102,6 +103,9 @@ export default function OctopusSashimiFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Sashimi", href: "/frisco/sashimi" }, { label: "Octopus Sashimi" }]} />
+      </div>
       <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

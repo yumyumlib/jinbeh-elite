@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
     description:
@@ -91,6 +92,9 @@ export default function JapaneseTakeoutNearMe() {
             faqs={faqs}
             keyTakeaway="The best Japanese takeout balances freshness, packaging, and variety. Order sushi rolls, bento boxes, and hibachi platters from restaurants that prepare to order—like Jinbeh, where every dish is made fresh with the same care whether you dine in or take out."
         >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Japanese Takeout Near Me" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

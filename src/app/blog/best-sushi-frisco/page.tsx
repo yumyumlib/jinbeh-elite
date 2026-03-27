@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, CompareCards, IngredientSpotlight, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Sushi Frisco TX: Top Spots to Savor Fresh Flavors | Jinbeh",
     description:
@@ -139,6 +140,9 @@ const itemListSchema = {
 export default function BestSushiFrisco() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Sushi Frisco" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
             <script

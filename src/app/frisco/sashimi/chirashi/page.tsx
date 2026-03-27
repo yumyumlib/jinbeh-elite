@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
 import { getMenuItem, locations } from "@/data/menu-items";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Chirashi Bowl Frisco | Scattered Sushi Rice Deluxe | Jinbeh",
   description: "Scattered sushi bowl with premium assorted sashimi at Jinbeh Frisco. 400-500 calories, 23g protein, omega-3 rich with vegetables.",
@@ -102,6 +103,9 @@ export default function ChirashiFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Sashimi", href: "/frisco/sashimi" }, { label: "Chirashi" }]} />
+      </div>
       <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

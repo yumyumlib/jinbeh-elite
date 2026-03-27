@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Whiskey's Global Rise: A Flavorful Journey | Jinbeh",
     description: "Explore the rise of Japanese whiskey from its origins to global acclaim. Discover the craftsmanship and innovation behind Yamazaki, Nikka, and more.",
@@ -49,6 +50,9 @@ const breadcrumbSchema = {
 export default function JapaneseWhiskeyGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Japanese Whiskey Guide" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

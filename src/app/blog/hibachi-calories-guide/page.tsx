@@ -6,6 +6,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, MenuItemCard, PillarCTA } from "@/components/ArticleEnhancements";
 import { MealBuilder } from "@/components/MealBuilder";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Jinbeh Hibachi Calories 2025: Complete Nutrition Guide | Teppanyaki Calories",
   description:
@@ -114,6 +115,9 @@ export default function HibachiCaloriesGuidePage() {
       faqs={faqs}
       keyTakeaway="Hibachi protein calories range from 150 cal (shrimp) to 450 cal (steak). Swap fried rice for steamed rice to save ~200 calories, load up on vegetables (50–70 cal), and request sauces on the side. A lean hibachi meal can total just 350–400 calories."
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Calories Guide" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

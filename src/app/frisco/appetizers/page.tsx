@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Appetizers Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Browse Jinbeh Frisco's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi or sushi dinner near Stonebriar Centre.s menu. Shareability, group dining, perfect starters. 6 delicious options from Edamame to Seared Ahi Tuna. Near Stonebriar Centre, minutes from Legacy West.",
@@ -150,6 +151,9 @@ export default function AppetizersFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Appetizers" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

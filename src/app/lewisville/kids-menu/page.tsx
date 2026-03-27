@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Kids Menu | Jinbeh Lewisville Japanese Restaurant",
   description:
@@ -235,6 +236,9 @@ export default function KidsMenuLewisvillePage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Kids Menu" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema Markup */}
         <script

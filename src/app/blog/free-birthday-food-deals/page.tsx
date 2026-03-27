@@ -3,6 +3,7 @@ import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
   description:
@@ -98,6 +99,9 @@ export default function FreeBirthdayFoodDealsPage() {
       readTime="10 min read"
       faqs={faqs}
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Free Birthday Food Deals" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

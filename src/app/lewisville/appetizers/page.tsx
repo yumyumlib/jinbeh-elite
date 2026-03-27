@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Appetizers Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Browse Jinbeh Lewisville's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi or sushi dinner near Vista Ridge Mall.s menu. Shareability, group dining, perfect starters. 6 delicious options from Edamame to Seared Ahi Tuna. Easy access from I-35E, near Vista Ridge Mall.",
@@ -150,6 +151,9 @@ export default function AppetizersLewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Appetizers" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Fresh sushi rolls at Jinbeh Frisco — Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Hand-crafted daily near Stonebriar Centre. Since 1988.",
@@ -260,6 +261,9 @@ export default function SushiRollsFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Sushi Rolls" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

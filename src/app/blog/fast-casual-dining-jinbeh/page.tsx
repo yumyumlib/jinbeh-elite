@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
     description:
@@ -91,6 +92,9 @@ export default function FastCasualDiningJinbeh() {
             faqs={faqs}
             keyTakeaway="At Jinbeh, 'fast casual' doesn't mean cutting corners. Whether you have 30 minutes for a sushi lunch or a full evening for hibachi, we deliver the same quality and care that has kept us going for over 38 years."
         >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Fast Casual Dining Jinbeh" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

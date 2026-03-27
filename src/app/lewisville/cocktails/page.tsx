@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Jinbeh Lewisville's cocktail & sake menu — sake flights, Tokyo Mules, Lychee Martinis, and Japanese whisky. Full bar near Vista Ridge Mall.",
@@ -140,6 +141,9 @@ export default function CocktailsLewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Cocktails" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

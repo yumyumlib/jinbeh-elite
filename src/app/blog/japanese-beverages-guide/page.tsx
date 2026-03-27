@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Popular Japanese Beverages: Iconic Drinks Guide | Jinbeh",
     description: "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and canned coffee. Explore iconic drinks reflecting tradition and innovation.",
@@ -47,6 +48,9 @@ const breadcrumbSchema = {
 export default function JapaneseBeveragesGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Japanese Beverages Guide" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 

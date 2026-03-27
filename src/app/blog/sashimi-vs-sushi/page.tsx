@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, ComparisonTable, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Sashimi vs Sushi: Key Differences Explained | Jinbeh",
     description: "Discover the difference between sashimi and sushi. Learn what they are, when to order each, and how Jinbeh serves both fresh Japanese delicacies.",
@@ -70,6 +71,9 @@ const breadcrumbSchema = {
 export default function SashimiVsSushi() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Sashimi Vs Sushi" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => (
                 <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />

@@ -6,6 +6,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Unique Adult Birthday Party Ideas & Themes | Jinbeh Events",
     description:
@@ -94,6 +95,9 @@ const breadcrumbSchema = {
 export default function AdultBirthdayPartyIdeas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Adult Birthday Party Ideas" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

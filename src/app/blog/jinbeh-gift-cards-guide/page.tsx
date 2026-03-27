@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
   description:
@@ -95,6 +96,9 @@ export default function JinbehGiftCardsGuidePage() {
       readTime="8 min read"
       faqs={faqs}
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Jinbeh Gift Cards Guide" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Find Yamazaki Whiskey Nearby: Your Complete Guide | Jinbeh",
     description: "Discover where to find Yamazaki whiskey nearby with our expert guide. Explore local stores, online options, and visit Jinbeh in Dallas for authentic Japanese whiskey experiences.",
@@ -49,6 +50,9 @@ const breadcrumbSchema = {
 export default function YamazakiWhiskeyGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Yamazaki Whiskey Guide" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { ProTip, DidYouKnow, CompareCards, LocationCTA, StatBlock, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "AYCE Sushi vs. Traditional: What You Should Know | Jinbeh",
     description:
@@ -113,6 +114,9 @@ export default function AYCESushiVsTraditionalPage() {
             faqs={faqs}
             keyTakeaway="Both AYCE and traditional sushi can be enjoyable, but they involve different trade-offs. AYCE prioritizes volume and value; traditional restaurants prioritize ingredient quality and chef craftsmanship. Understanding the economics and food safety factors behind each helps you make informed choices."
         >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Ayce Sushi Vs Traditional" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

@@ -4,6 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, Timeline, MenuItemCard, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Explore Flavorful Delights | Jinbeh",
   description:
@@ -129,6 +130,9 @@ export default function HibachiMenuGuidePage() {
       faqs={faqs}
       keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment — all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Menu Guide" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

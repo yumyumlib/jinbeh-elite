@@ -7,6 +7,7 @@ import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
 import { BentoGrid, BentoCard } from "@/components/ui/BentoGrid";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Lewisville | Hibachi & Sushi Menu Near Vista Ridge Mall",
   description:
@@ -202,6 +203,9 @@ export default function LewisvilleMenuPage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Menu" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script

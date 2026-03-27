@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, CompareCards, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions | Jinbeh",
   description:
@@ -102,6 +103,9 @@ export default function HibachiVsTeppanyakiPage() {
       readTime="7 min read"
       faqs={faqs}
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Vs Teppanyaki Explained" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

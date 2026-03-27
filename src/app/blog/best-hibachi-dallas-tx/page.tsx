@@ -6,6 +6,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Hibachi Dallas TX: Top Restaurants & Experiences | Jinbeh",
     description:
@@ -105,6 +106,9 @@ const breadcrumbSchema = {
 export default function BestHibachiDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Hibachi Dallas Tx" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

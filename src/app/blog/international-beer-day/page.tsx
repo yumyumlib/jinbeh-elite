@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
     description:
@@ -91,6 +92,9 @@ export default function InternationalBeerDay() {
             faqs={faqs}
             keyTakeaway="International Beer Day is the perfect excuse to try Japan's finest beers—Sapporo, Asahi, and Kirin—paired with hibachi and sushi at Jinbeh. Celebrate beer, food, and friendship at DFW's favorite Japanese restaurant."
         >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "International Beer Day" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

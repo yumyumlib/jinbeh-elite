@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Jinbeh Frisco's sashimi menu — fresh salmon, tuna, yellowtail, octopus, and chef's omakase selections. Premium cuts daily near Stonebriar Centre.",
@@ -160,6 +161,9 @@ export default function SashimiFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Sashimi" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

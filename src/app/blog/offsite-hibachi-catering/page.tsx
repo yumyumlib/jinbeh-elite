@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki",
   description:
@@ -106,6 +107,9 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       readTime="9 min read"
       faqs={faqs}
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Offsite Hibachi Catering" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

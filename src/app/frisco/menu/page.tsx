@@ -7,6 +7,7 @@ import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
 import { BentoGrid, BentoCard } from "@/components/ui/BentoGrid";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Frisco | Hibachi & Sushi Menu Near Stonebriar",
   description:
@@ -201,6 +202,9 @@ export default function FriscoMenuPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Menu" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schema */}
         <script

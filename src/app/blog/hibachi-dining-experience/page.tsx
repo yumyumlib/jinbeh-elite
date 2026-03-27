@@ -4,6 +4,7 @@ import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import { Timeline, DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh",
   description:
@@ -114,6 +115,9 @@ export default function HibachiDiningExperiencePage() {
       faqs={faqs}
       keyTakeaway="Hibachi dining combines live chef performances (knife tricks, onion volcanoes, fire shows) with fresh grilled proteins and sides — all prepared at your table. Plan 90 minutes to 2 hours, make reservations for weekends, and come hungry for generous portions."
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Dining Experience" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

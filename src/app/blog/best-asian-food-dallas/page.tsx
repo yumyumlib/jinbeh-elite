@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 import { Accordion } from "@/components/ui/accordion";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Asian Food in Dallas TX: Top Restaurants Guide | Jinbeh",
     description: "Discover top Asian food in Dallas, from fusion at Uchi to authentic dishes at Royal China. Explore vibrant Asian restaurants downtown and more.",
@@ -59,6 +60,9 @@ const breadcrumbSchema = {
 export default function BestAsianFoodDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Asian Food Dallas" }]} />
+        </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 

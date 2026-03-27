@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import locations from "@/data/locations.json";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Frisco Specials & Deals | Jinbeh Japanese Restaurant",
   description:
@@ -95,6 +96,9 @@ export default function FriscoSpecialsPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Specials" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">

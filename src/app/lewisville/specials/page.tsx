@@ -7,6 +7,7 @@ import Link from "next/link";
 import locations from "@/data/locations.json";
 import { NewsletterForm } from "@/components/ContactForm";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Lewisville Specials & Deals | Jinbeh Japanese Restaurant",
   description:
@@ -97,6 +98,9 @@ export default function LewisvilleSpecialsPage() {
   return (
     <>
       <Header />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Specials" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">

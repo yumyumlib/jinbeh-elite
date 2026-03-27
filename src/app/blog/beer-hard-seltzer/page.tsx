@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist | Jinbeh DFW",
     description:
@@ -91,6 +92,9 @@ export default function BeerHardSeltzer() {
             faqs={faqs}
             keyTakeaway="Japanese rice lagers (Sapporo, Asahi, Kirin) are the perfect companions for sushi and hibachi—crisp, clean, and designed to complement rather than compete with the food. Hard seltzers offer a lighter alternative that pairs especially well with seafood rolls."
         >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Beer Hard Seltzer" }]} />
+      </div>
             <h2>The Japanese Beer Experience</h2>
 
             <p>

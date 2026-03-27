@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Jinbeh Frisco's cocktail & sake menu — sake flights, Tokyo Mules, Lychee Martinis, and Japanese whisky. Full bar near Stonebriar Centre. Since 1988.",
@@ -140,6 +141,9 @@ export default function CocktailsFriscoPage() {
   return (
     <>
       <Header location="frisco" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Cocktails" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"

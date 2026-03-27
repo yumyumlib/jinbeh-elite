@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide | Jinbeh",
   description:
@@ -105,6 +106,9 @@ export default function HibachiBirthdayPartyIdeasPage() {
       faqs={faqs}
       keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect $35–$50 per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Birthday Party Ideas" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

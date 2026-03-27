@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, CompareCards, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh",
   description:
@@ -105,6 +106,9 @@ export default function BestHibachiDallasPage() {
       faqs={faqs}
       keyTakeaway="Jinbeh Japanese Restaurant (Frisco & Lewisville) is consistently rated the best hibachi in DFW — family-owned since 1988 with skilled chefs, fresh ingredients, and generous portions. Book early for weekends, mention birthdays when reserving, and try the lunch specials for the best value."
     >
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Hibachi Dallas" }]} />
+      </div>
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

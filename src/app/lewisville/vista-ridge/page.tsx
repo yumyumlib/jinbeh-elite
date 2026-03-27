@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Vista Ridge Mall | Jinbeh Lewisville | Hibachi & Sushi",
   description:
@@ -138,6 +139,9 @@ export default function VistaRidgePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Vista Ridge" }]} />
+      </div>
       <main id="main-content" className="min-h-screen">
         {/* Schemas */}
         <script

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Jinbeh Lewisville's sashimi menu — fresh salmon, tuna, yellowtail, octopus, and chef's omakase selections. Premium cuts near Vista Ridge Mall.",
@@ -160,6 +161,9 @@ export default function SashimiLewisvillePage() {
   return (
     <>
       <Header location="lewisville" />
+      <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+        <BreadcrumbNav items={[{ label: "Lewisville", href: "/lewisville" }, { label: "Sashimi" }]} />
+      </div>
       <main id="main-content" className="min-h-screen bg-warm-ivory">
         <script
           type="application/ld+json"
