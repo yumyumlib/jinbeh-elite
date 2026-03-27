@@ -27,7 +27,7 @@ export default function OpenTableWidget({
       href={openTableUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${buttonVariants[variant]} ${className} inline-flex items-center justify-center`}
+      aria-label="Link" className={`${buttonVariants[variant]} ${className} inline-flex items-center justify-center`}
     >
       <svg
         className="w-5 h-5 mr-2"

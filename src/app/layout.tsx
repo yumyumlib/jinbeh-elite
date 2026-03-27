@@ -121,8 +121,13 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        {/* Preconnect for performance - only actively used third-party origins */}
-        <link rel="dns-prefetch" href="https://www.opentable.com" />
+        {/* Preconnect for performance - critical third-party origins */}
+        <link rel="preconnect" href="https://player.vimeo.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.opentable.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://maps.google.com" />
+        <link rel="dns-prefetch" href="https://www.grubhub.com" />
+        <link rel="dns-prefetch" href="https://www.ubereats.com" />
 
         {/* Prefetch key internal pages for instant navigation */}
         <link rel="prefetch" href="/frisco" />

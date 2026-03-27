@@ -67,7 +67,7 @@ export default function MobileStickyCTA({
                 {/* Call Button - Secondary */}
                 <a
                     href={`tel:+1${phoneClean}`}
-                    className="flex items-center justify-center gap-2 px-4 py-4 bg-warm-ivory text-charcoal rounded-xl font-semibold hover:bg-white transition-colors"
+                    aria-label="Call us" className="flex items-center justify-center gap-2 px-4 py-4 bg-warm-ivory text-charcoal rounded-xl font-semibold hover:bg-white transition-colors"
                 >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
