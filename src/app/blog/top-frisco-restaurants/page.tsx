@@ -68,7 +68,7 @@ const faqSchema = {
             name: "Which restaurant has the best food in Frisco?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Jinbeh consistently receives top ratings for Japanese cuisine and hibachi experiences, with a 4.2-star Google rating reflecting commitment to fresh ingredients, expert preparation, and authentic flavors.",
+                text: "Jinbeh consistently receives top ratings for Japanese cuisine and hibachi experiences, with a 4.4-star Google rating reflecting commitment to fresh ingredients, expert preparation, and authentic flavors.",
             },
         },
         {
@@ -240,7 +240,7 @@ export default function TopFriscoRestaurants() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Frisco's dining scene has experienced explosive growth, with over 600 restaurants now operating in the city—up from just 120 in 2005. The city's restaurant industry generates over $800 million annually in revenue. Jinbeh was one of Frisco's first sit-down restaurants when it opened in 1988, and it remains one of only a handful of original Frisco establishments still family-owned and operating. With a 4.2-star Google rating across thousands of reviews, longevity and quality go hand-in-hand."
+                                        fact="Frisco's dining scene has experienced explosive growth, with over 600 restaurants now operating in the city—up from just 120 in 2005. The city's restaurant industry generates over $800 million annually in revenue. Jinbeh was one of Frisco's first sit-down restaurants when it opened in 1988, and it remains one of only a handful of original Frisco establishments still family-owned and operating. With a 4.4-star Google rating across thousands of reviews, longevity and quality go hand-in-hand."
                                         source="Frisco Chamber of Commerce Economic Report"
                                     />
 
@@ -253,7 +253,7 @@ export default function TopFriscoRestaurants() {
                                     </p>
 
                                     <p>
-                                        <strong>Why visit:</strong> Hibachi entertainment, fresh sushi, 4.2-star Google rating, extensive menu<br />
+                                        <strong>Why visit:</strong> Hibachi entertainment, fresh sushi, 4.4-star Google rating, extensive menu<br />
                                         <strong>Best for:</strong> Celebrations, families, Japanese cuisine enthusiasts<br />
                                         <strong>Atmosphere:</strong> Minimalist Japanese design with tranquil ambiance
                                     </p>
@@ -315,7 +315,7 @@ export default function TopFriscoRestaurants() {
                                                 🏯 Why Jinbeh Stands Apart
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Since 1988, Jinbeh has been a cornerstone of Frisco's dining scene. With a 4.2-star Google rating, we've earned our reputation through unwavering commitment to quality and authenticity.
+                                                Since 1988, Jinbeh has been a cornerstone of Frisco's dining scene. With a 4.4-star Google rating, we've earned our reputation through unwavering commitment to quality and authenticity.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
@@ -437,7 +437,7 @@ export default function TopFriscoRestaurants() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    While "best" is subjective, Jinbeh consistently receives top ratings for Japanese cuisine and hibachi. Our 4.2-star Google rating reflects our commitment to fresh ingredients, expert preparation, and authentic flavors.
+                                                    While "best" is subjective, Jinbeh consistently receives top ratings for Japanese cuisine and hibachi. Our 4.4-star Google rating reflects our commitment to fresh ingredients, expert preparation, and authentic flavors.
                                                 </p>
                                             </div>
                                         </details>

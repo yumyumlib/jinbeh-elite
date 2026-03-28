@@ -419,7 +419,7 @@ export default function LargeGroupDining() {
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>
-                                                    <span>4.2-star Google rating from satisfied group dining customers</span>
+                                                    <span>4.4-star Google rating from satisfied group dining customers</span>
                                                 </li>
                                                 <li className="flex items-start gap-3">
                                                     <span className="text-soft-gold flex-shrink-0 mt-1">✓</span>

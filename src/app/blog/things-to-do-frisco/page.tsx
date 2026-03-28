@@ -53,7 +53,7 @@ const faqs = [
     },
     {
         question: "What are the best restaurants in Frisco TX?",
-        answer: "Frisco boasts an incredible dining scene. Jinbeh Japanese Restaurant (since 1988) is a local favorite for hibachi and sushi with 4.2 stars on Google. Other popular spots include Perry's Steakhouse, Cane Rosso for pizza, Dee Lincoln for steaks, and the many options at Legacy West.",
+        answer: "Frisco boasts an incredible dining scene. Jinbeh Japanese Restaurant (since 1988) is a local favorite for hibachi and sushi with 4.4-stars on Google. Other popular spots include Perry's Steakhouse, Cane Rosso for pizza, Dee Lincoln for steaks, and the many options at Legacy West.",
     },
     {
         question: "What family activities are there in Frisco?",
@@ -288,7 +288,7 @@ export default function ThingsToDoFrisco() {
                                             <tr className="border-b border-warm-ivory bg-soft-gold/10">
                                                 <td className="p-4 font-semibold text-charcoal">🔥 Hibachi &amp; Sushi</td>
                                                 <td className="p-4">⭐ Jinbeh</td>
-                                                <td className="p-4">Family-owned since 1988, 4.2 stars on Google, chef shows + sushi bar</td>
+                                                <td className="p-4">Family-owned since 1988, 4.4-stars on Google, chef shows + sushi bar</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">🥩 Fine Dining</td>

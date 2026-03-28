@@ -41,7 +41,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What are the best restaurants near Stonebriar Mall?",
-        answer: "Jinbeh Japanese Restaurant is a top-rated choice just minutes from Stonebriar on Preston Road, serving hibachi and sushi since 1988. Other popular options include Perry's Steakhouse, The Cheesecake Factory, and Cane Rosso for pizza. For the most authentic Japanese experience with entertainment, Jinbeh is the local favorite with 4.2 stars on Google.",
+        answer: "Jinbeh Japanese Restaurant is a top-rated choice just minutes from Stonebriar on Preston Road, serving hibachi and sushi since 1988. Other popular options include Perry's Steakhouse, The Cheesecake Factory, and Cane Rosso for pizza. For the most authentic Japanese experience with entertainment, Jinbeh is the local favorite with 4.4-stars on Google.",
     },
     {
         question: "Is there a good hibachi restaurant near Stonebriar Centre?",
@@ -333,7 +333,7 @@ export default function BestRestaurantsStonebriar() {
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>4.2 stars on Google</span>
+                                                    <span>4.4-stars on Google</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>

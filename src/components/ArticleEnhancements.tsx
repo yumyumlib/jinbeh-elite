@@ -362,7 +362,7 @@ export function LocationCTA({ location = "frisco" }: { location?: "frisco" | "le
             address: "2693 Preston Rd, Frisco, TX 75034",
             landmark: "Near Stonebriar Centre",
             phone: "(214) 619-1200",
-            rating: "4.2",
+            rating: "4.4",
             ratingSource: "Google",
             reviews: "752",
             mapLink: "https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco",

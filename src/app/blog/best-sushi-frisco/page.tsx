@@ -46,7 +46,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What is the best sushi restaurant in Frisco?",
-        answer: "Welcome to the table! Jinbeh has 4.2 stars on Google. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
+        answer: "Welcome to the table! Jinbeh has 4.4-stars on Google. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
     },
     {
         question: "Does Jinbeh have happy hour specials?",
@@ -330,7 +330,7 @@ export default function BestSushiFrisco() {
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>4.2 stars on Google (752 reviews)</span>
+                                                    <span>4.4-stars on Google (752 reviews)</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
