@@ -158,7 +158,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.opentable.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://vitals.vercel-insights.com; frame-src https://www.opentable.com https://www.google.com; media-src 'self' https://jinbeh.com;",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.opentable.com https://www.googletagmanager.com https://www.google-analytics.com https://f.vimeocdn.com https://player.vimeo.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://vitals.vercel-insights.com https://*.vimeo.com https://*.vimeocdn.com; frame-src https://www.opentable.com https://www.google.com https://player.vimeo.com; media-src 'self' https://jinbeh.com https://*.vimeo.com https://*.vimeocdn.com;",
           },
           {
             key: "Permissions-Policy",
