@@ -57,6 +57,65 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Seafood Restaurants in Dallas TX: Top Picks",
+  "numberOfItems": 10,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Oceanaire Seafood Room"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Truluck's Seafood, Steak & Crab House"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fusion of Tradition and Innovation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Fresh Sushi and Sashimi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Signature Seafood Platter"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "TJ's Seafood Market & Grill"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Rex's Seafood and Market"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "{x.t}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Dallas Fish Market"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Captain Dave's Seafood Market"
+    }
+  ]
+};
+
 export default function BestSeafoodDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -64,6 +123,10 @@ export default function BestSeafoodDallas() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Seafood Dallas" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

@@ -90,6 +90,95 @@ const articleSchema = {
   }
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Romantic Anniversary Dinners Near Me: Top Spots",
+  "numberOfItems": 16,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Location and Convenience"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cuisine Selection"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ambiance and Atmosphere"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Exceptional Service"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Jinbeh: A Hidden Gem for Romance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Why Choose Hibachi for Your Anniversary?"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Intimate Seating Arrangements"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Mood Lighting"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Beautiful Decor and Design"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Quality Sound Management"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Make Reservations in Advance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Communicate Special Requests"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Add Personal Touches"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Dress to Impress"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Put Phones Away"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Relax and Enjoy the Moment"
+    }
+  ]
+};
+
 export default function RomanticAnniversaryDinnersPage() {
   return (
     <ArticleLayout
@@ -118,6 +207,10 @@ export default function RomanticAnniversaryDinnersPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
     </h1>
 

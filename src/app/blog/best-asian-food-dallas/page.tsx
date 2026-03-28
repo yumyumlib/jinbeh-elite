@@ -57,6 +57,69 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Asian Food in Dallas TX: Top Restaurants Guide",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Jinbeh Japanese Restaurant"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Royal China"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tei-An"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{x.t}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "{x.t}"
+    }
+  ]
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Best Asian Food in Dallas TX: Top Restaurants Guide",
+  "description": "Discover top Asian food in Dallas, from fusion at Uchi to authentic dishes at Royal China. Explore vibrant Asian restaurants downtown and more.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Asian Fusion Restaurants"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Traditional Asian Dining"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Downtown Dallas Asian Restaurants"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Why Jinbeh Stands Out"
+    }
+  ]
+};
+
 export default function BestAsianFoodDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -64,6 +127,14 @@ export default function BestAsianFoodDallas() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Asian Food Dallas" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

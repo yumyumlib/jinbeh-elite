@@ -131,6 +131,55 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "What is Omakase? A Complete Guide to the Japanese Sushi Experience",
+  "description": "Discover what omakase means and what to expect during this authentic Japanese dining experience. Learn etiquette, history, and tips for your first omakase at Jinbeh.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "What Does Omakase Mean?"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "The History and Philosophy of Omakase"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "️ What to Expect During Your Omakase Experience"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Omakase Etiquette: How to Show Respect"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Omakase Pricing & What You'll Pay"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "The Omakase Spirit at Jinbeh"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Tips for Your First Omakase"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 8,
+      "name": "Frequently Asked Questions About Omakase"
+    }
+  ]
+};
+
 export default function WhatIsOmakase() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -146,6 +195,10 @@ export default function WhatIsOmakase() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

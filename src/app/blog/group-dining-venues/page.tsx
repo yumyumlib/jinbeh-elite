@@ -48,6 +48,50 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Group Dining Venues DFW: Best for Large Parties",
+  "numberOfItems": 7,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{x.t}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Group Size"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Advance Notice"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Menu Selection"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Entertainment Value"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Jinbeh Locations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Related"
+    }
+  ]
+};
+
 export default function GroupDiningVenues() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -55,6 +99,10 @@ export default function GroupDiningVenues() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Group Dining Venues" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

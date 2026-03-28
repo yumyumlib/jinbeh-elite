@@ -49,6 +49,40 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Sushi Dallas TX: Top Restaurants & Hidden Gems",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{x.t}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Freshness Indicators"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quality Signals"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Red Flags to Avoid"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Smart Ordering Tips"
+    }
+  ]
+};
+
 export default function BestSushiDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -56,6 +90,10 @@ export default function BestSushiDallas() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Sushi Dallas" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

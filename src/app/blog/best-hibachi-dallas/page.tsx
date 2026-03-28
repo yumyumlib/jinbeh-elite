@@ -91,6 +91,60 @@ const articleSchema = {
   }
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences",
+  "numberOfItems": 9,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "1. Jinbeh Japanese Restaurant (Frisco & Lewisville)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "2. Benihana (Multiple Dallas Locations)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "3. Kobe Steaks Japanese Restaurant"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "4. Shogun Japanese Grill & Sushi Bar"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "5. Osaka Japanese Restaurant"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "For Birthday Celebrations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "For Date Night"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "For Large Groups"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Why Locals Choose Jinbeh"
+    }
+  ]
+};
+
 export default function BestHibachiDallasPage() {
   return (
     <ArticleLayout
@@ -119,6 +173,10 @@ export default function BestHibachiDallasPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
 iences
       </h1>

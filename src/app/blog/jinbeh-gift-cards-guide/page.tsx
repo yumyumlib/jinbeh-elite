@@ -82,6 +82,55 @@ const articleSchema = {
   }
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
+  "description": "Unlock the full potential of your Jinbeh gift card. Learn how to find deals, check balances, and enjoy premium dining at Jinbeh's Frisco and Lewisville locations.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Getting Your Jinbeh Gift Card"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Checking Your Gift Card Balance"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Current Jinbeh Deals & Promotions"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Jinbeh Birthday Club"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Making the Most of Your Dining Experience"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Smart Gift Card Strategies"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Gift Card as the Perfect Gift"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 8,
+      "name": "Ready to Use Your Jinbeh Gift Card?"
+    }
+  ]
+};
+
 export default function JinbehGiftCardsGuidePage() {
   return (
     <ArticleLayout
@@ -109,6 +158,10 @@ export default function JinbehGiftCardsGuidePage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
  Tips 2025
       </h1>

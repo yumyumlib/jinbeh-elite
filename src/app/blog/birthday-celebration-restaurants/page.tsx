@@ -115,6 +115,75 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Birthday Celebration Restaurants",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Jinbeh"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "The Cheesecake Factory"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Olive Garden"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Rainforest Cafe"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Medieval Times"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Hard Rock Cafe"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Local Steakhouses"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Family-Owned Italian Restaurants"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Check for Birthday Specials"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Consider the Atmosphere"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Make Reservations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Check Reviews"
+    }
+  ]
+};
+
 export default function BirthdayCelebrationRestaurants() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -124,6 +193,10 @@ export default function BirthdayCelebrationRestaurants() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

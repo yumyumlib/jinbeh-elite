@@ -92,6 +92,110 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Unique Adult Birthday Party Ideas & Themes",
+  "numberOfItems": 19,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Masquerade Ball"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "80s Retro Party"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hollywood Glamour"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Murder Mystery Dinner"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Escape Room Challenge"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Wine or Beer Tasting"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Beach Bonfire"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Garden Picnic"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Camping Adventure"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "DIY Craft Night"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Casino Night"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Movie Marathon"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Hibachi Show"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Silent Disco"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Themed Costume Contest"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Set a Budget"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Choose a Venue"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Send Invitations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "️ Plan the Menu"
+    }
+  ]
+};
+
 export default function AdultBirthdayPartyIdeas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -101,6 +205,10 @@ export default function AdultBirthdayPartyIdeas() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

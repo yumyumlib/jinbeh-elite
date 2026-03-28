@@ -85,6 +85,95 @@ const articleSchema = {
   }
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Baby Shower Venues: Best Places to Host",
+  "numberOfItems": 16,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Private Homes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Community Centers"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Restaurants and Cafés"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Parks and Gardens"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Botanical Gardens"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Art Galleries and Museums"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Historical Homes and Estates"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Local Libraries"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Church Halls"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Community Gardens"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Guest List and Space"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Accessibility"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Amenities"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Weather Planning"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Budget Alignment"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Theme and Decor"
+    }
+  ]
+};
+
 export default function BabyShowerVenuesPage({ params }: { params: { slug: string } }) {
   const slug = "baby-shower-venues";
   return (
@@ -109,6 +198,10 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
 </h1>
 

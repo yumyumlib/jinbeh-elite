@@ -107,6 +107,35 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Sake Taste & Flavor Profile",
+  "description": "Explore the complex flavors and taste profile of sake. Learn about flavor elements, tasting techniques, and how to appreciate Japanese rice wine.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "The Basic Taste Elements of Sake"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "The Sake Tasting Experience"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Flavor Profiles by Sake Type"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Tips for Appreciating Sake"
+    }
+  ]
+};
+
 export default function SakeTasteProfile() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -116,6 +145,10 @@ export default function SakeTasteProfile() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

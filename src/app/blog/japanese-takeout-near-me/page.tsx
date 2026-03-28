@@ -77,6 +77,35 @@ const articleSchema = {
   }
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Japanese Takeout Near Me: Best DFW Takeout Guide",
+  "description": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbeh.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Why Japanese Takeout Is Booming in DFW"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Best Japanese Takeout Dishes to Order"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "How to Order Japanese Takeout from Jinbeh"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Jinbeh Takeout vs. The Competition"
+    }
+  ]
+};
+
 export default function JapaneseTakeoutNearMe() {
     return (
         <ArticleLayout
@@ -107,6 +136,10 @@ export default function JapaneseTakeoutNearMe() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
  takeout options in Dallas-Fort Worth—and
                 for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety,

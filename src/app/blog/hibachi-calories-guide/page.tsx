@@ -100,6 +100,50 @@ const articleSchema = {
   }
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Jinbeh Hibachi Calories 2025: Complete Nutrition Guide",
+  "description": "Discover the calorie content and nutritional insights of Jinbeh Hibachi dishes. Learn to enjoy flavorful hibachi meals while managing your dietary goals.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Why Hibachi Cooking Can Be Healthy"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Hibachi Protein Calories & Nutrition"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Sides, Sides, & Sides: Where Calories Add Up"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Hibachi vs. Other Restaurant Options"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Making Healthy Hibachi Choices"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Nutritional Breakdown: Sample Hibachi Meals"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "The Bottom Line"
+    }
+  ]
+};
+
 export default function HibachiCaloriesGuidePage() {
   return (
     <ArticleLayout
@@ -128,6 +172,10 @@ export default function HibachiCaloriesGuidePage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
 uide
       </h1>

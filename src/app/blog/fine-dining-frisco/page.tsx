@@ -96,6 +96,70 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh",
+  "numberOfItems": 11,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Authentic Traditions"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Master Chefs"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Premium Ingredients"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Elegant Ambiance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Hibachi: An Interactive Culinary Performance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Premium Steaks That Deliver"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Crafted Cocktails & Sake Selection"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Why Choose Jinbeh for Fine Dining?"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Impeccable Service"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Artistic Presentation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Tailored Experiences"
+    }
+  ]
+};
+
 export default function FineDiningFrisco() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -111,6 +175,10 @@ export default function FineDiningFrisco() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

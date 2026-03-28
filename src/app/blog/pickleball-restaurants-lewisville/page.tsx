@@ -107,6 +107,60 @@ const articleSchema = {
   }
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Restaurants Near Pickleball in Lewisville TX",
+  "numberOfItems": 9,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Location Info"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "1. Work Up an Appetite, Then Feast"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "2. The Entertainment Continues"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "3. Perfect for Groups & Teams"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "The Perfect Pickleball Date Night"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "If You're Starving (High-Protein Recovery)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "If You Want Something Lighter"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "If You're Celebrating a Win"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Reserve Your Post-Pickleball Table"
+    }
+  ]
+};
+
 export default function PickleballRestaurantsLewisvillePage() {
   const slug = "pickleball-restaurants-lewisville";
   return (
@@ -136,6 +190,10 @@ export default function PickleballRestaurantsLewisvillePage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
       </h1>
 

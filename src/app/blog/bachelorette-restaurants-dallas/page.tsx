@@ -109,6 +109,60 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations",
+  "numberOfItems": 9,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Entertainment"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Diverse Menu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Atmosphere"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Group Friendly"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Jinbeh: The Perfect Bachelorette Venue"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Plan Ahead for Success"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Consider Dietary Needs"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Arrange Transportation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Capture the Memories"
+    }
+  ]
+};
+
 export default function BacheloretteRestaurantsDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -124,6 +178,10 @@ export default function BacheloretteRestaurantsDallas() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

@@ -91,6 +91,139 @@ const articleSchema = {
   }
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Hibachi Birthday Party Ideas: Ultimate Planning Guide",
+  "numberOfItems": 16,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Built-In Entertainment"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Everyone Eats Together"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Works for All Ages"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Step 1: Choose Your Date Wisely"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Step 2: Book Early and Communicate"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Step 3: Set Expectations with Guests"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Kids Birthday Parties (Ages 5-12)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Teen Birthday Parties (Ages 13-17)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Adult Birthday Celebrations (21+)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Most Popular Birthday Orders"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Add-Ons Worth Ordering"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Sample Budget: Party of 10"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Mistake #1: Booking Too Few Seats"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Mistake #2: Arriving Late"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Mistake #3: Forgetting to Mention It's a Birthday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Mistake #4: Choosing Saturday Night Prime Time"
+    }
+  ]
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Hibachi Birthday Party Ideas: Ultimate Planning Guide",
+  "description": "Plan the perfect hibachi birthday party! From kids celebrations to adult bashes, discover why hibachi makes birthdays unforgettable with fire, food, and entertainment.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Why Hibachi Works for Birthdays"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Planning Your Hibachi Birthday Party"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Hibachi Birthday Ideas by Age"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "What to Order at a Hibachi Birthday"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Birthday Party Budget Guide"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Common Hibachi Birthday Mistakes (And How to Avoid Them)"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Make Your Reservation"
+    }
+  ]
+};
+
 export default function HibachiBirthdayPartyIdeasPage() {
   return (
     <ArticleLayout
@@ -119,6 +252,14 @@ export default function HibachiBirthdayPartyIdeasPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
 ide
       </h1>

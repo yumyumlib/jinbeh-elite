@@ -85,6 +85,75 @@ const articleSchema = {
   }
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Places for Bridal Showers Near Me",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Botanical Gardens"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Art Galleries and Museums"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cafes and Tea Rooms"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Private Homes and Airbnb Rentals"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Banquet Halls"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Hotels and Resorts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Wineries and Breweries"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Rustic Barns"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Location and Accessibility"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Capacity and Amenities"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Budget Planning"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Bride's Vision and Preferences"
+    }
+  ]
+};
+
 export default function BridalShowerVenuesPage({ params }: { params: { slug: string } }) {
   const slug = "bridal-shower-venues";
   return (
@@ -114,6 +183,10 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
 
 

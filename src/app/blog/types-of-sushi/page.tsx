@@ -111,6 +111,25 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Types of Sushi: Must-Try Varieties & Rolls Guide",
+  "description": "Explore different types of sushi from nigiri to specialty rolls. Learn what makes each style unique and discover your new favorite at Jinbeh.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "The Main Types of Sushi"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Jinbeh's Most Popular Sushi Varieties"
+    }
+  ]
+};
+
 export default function TypesOfSushi() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -120,6 +139,10 @@ export default function TypesOfSushi() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

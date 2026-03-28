@@ -90,6 +90,40 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Restaurants Near Stonebriar Mall Frisco TX",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Family Heritage"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Entertainment"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Global Flavors"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Jinbeh: The Local Favorite Since 1988"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Quick Decision Guide:"
+    }
+  ]
+};
+
 export default function BestRestaurantsStonebriar() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -99,6 +133,10 @@ export default function BestRestaurantsStonebriar() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

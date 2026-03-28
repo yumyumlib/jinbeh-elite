@@ -90,6 +90,40 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Things to Do in Frisco TX: Top Activities & Dining",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Star"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Riders Field"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Toyota Stadium"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "PGA of America HQ"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "End Your Frisco Day at Jinbeh"
+    }
+  ]
+};
+
 export default function ThingsToDoFrisco() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -99,6 +133,10 @@ export default function ThingsToDoFrisco() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

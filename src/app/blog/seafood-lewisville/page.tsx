@@ -118,6 +118,75 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Seafood in Lewisville TX: Top Restaurants to Try",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Japanese Cuisine"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Crab Specialties"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cajun Flavors"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Fresh Fish"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Jinbeh: Premium Japanese Seafood"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "The Crab Station: Crab Specialist"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Hook & Reel: Cajun Seafood"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Rockfish Seafood Grill & Pappadeaux"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Jinbeh Lewisville"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "At Japanese Restaurants Like Jinbeh"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Choosing Your Restaurant"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Dining Tips"
+    }
+  ]
+};
+
 export default function SeafoodLewisville() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -133,6 +202,10 @@ export default function SeafoodLewisville() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

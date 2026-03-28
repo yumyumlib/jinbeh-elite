@@ -120,6 +120,85 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Restaurants for Large Group Dining: Best Big Party Venues",
+  "numberOfItems": 14,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Diverse Menu Options"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Professional Service"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Zero Preparation Stress"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Festive Ambiance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Why Choose Jinbeh for Group Dining?"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Perfect for Various Occasions"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Group Dining Excellence at Jinbeh"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "1. Capacity & Space Layout"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "2. Menu Variety & Dietary Flexibility"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "3. Reservation & Coordination Policies"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "4. Service Quality & Professional Staff"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "5. Location & Parking"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "6. Entertainment & Ambiance Options"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "7. Budget & Group Packages"
+    }
+  ]
+};
+
 export default function LargeGroupDining() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -135,6 +214,10 @@ export default function LargeGroupDining() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

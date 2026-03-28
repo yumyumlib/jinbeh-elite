@@ -69,6 +69,75 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Sushi Lunch Specials Near You Today",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Affordability"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Variety"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Perfect Timing"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Convenience"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Bento Boxes"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Sushi Combos"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "All-You-Can-Eat Options"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Jinbeh Lunch Specials"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Check Restaurant Websites & Apps"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Follow Social Media"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Call Ahead"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Tips for Making the Most of Your Lunch"
+    }
+  ]
+};
+
 export default function SushiLunchSpecials() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -84,6 +153,10 @@ export default function SushiLunchSpecials() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

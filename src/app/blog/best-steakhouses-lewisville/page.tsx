@@ -90,6 +90,40 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Steakhouses in Lewisville TX: Best Steak Spots",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Hibachi Steak"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Classic Cuts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Full Bar"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Jinbeh: Where Steak Meets Showmanship"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Quick Decision Guide:"
+    }
+  ]
+};
+
 export default function BestSteakhousesLewisville() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -99,6 +133,10 @@ export default function BestSteakhousesLewisville() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

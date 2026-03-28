@@ -118,6 +118,105 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Date Night Restaurants in Frisco TX",
+  "numberOfItems": 18,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Arrival & Seating"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Share & Savor"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hibachi Magic"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Perfect Pairings"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "The Romance Starter"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "The Signature Hibachi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "The Sushi Lover's Dream"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "The Perfect Finale"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Early Evening (5:30-6:30 PM)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Prime Time (7:00-8:30 PM)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Late Evening (8:30-10:00 PM)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Best Days for Romance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Stonebriar Centre Shopping"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "The Frisco Commons"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Museum of the American Railroad"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Scenic Walks & Parks"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Ready for Your Perfect Date Night?"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Explore More Dining Experiences"
+    }
+  ]
+};
+
 export default function DateNightRestaurantsFrisco() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -127,6 +226,10 @@ export default function DateNightRestaurantsFrisco() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

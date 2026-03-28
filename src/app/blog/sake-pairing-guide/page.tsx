@@ -104,6 +104,169 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Sake Pairing Guide: Best Pairings with Sushi & Hibachi",
+  "numberOfItems": 20,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Junmai (Pure Rice Sake)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ginjo (Premium Grade)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Daiginjo (Ultra-Premium)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Honjozo (Brewer's Alcohol Added)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Koshu (Aged Sake)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Sparkling Sake (Hana Awaka)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Nigiri (Hand-Pressed Sushi)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Sashimi (Sliced Raw Fish)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Maki & Rolls (Composed Sushi)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Grilled Proteins (Steak, Chicken, Shrimp)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Grilled Vegetables & Fried Rice"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "️ Chilled (50-55°F)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "️ Cool (55-65°F)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Warm (95-109°F)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "️ Hot (104-113°F)"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Pro Tip: Temperature Mistakes to Avoid"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "For Sushi & Sashimi Lovers"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "For Hibachi Diners"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "Ask Our Staff"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "Join us for Happy Hour Sake Tastings"
+    }
+  ]
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Sake Pairing Guide: Best Pairings with Sushi & Hibachi",
+  "description": "Master the art of sake food pairing. Learn how to pair sake with sushi, hibachi, appetizers & more. Expert guide to selecting the perfect sake for your meal.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Understanding Sake: The Basics"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "The Main Types of Sake Explained"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Sake Pairing with Sushi: The Perfect Match"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Sake with Hibachi: Matching Heat and Flavor"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Appetizers & Small Plates Pairing Guide"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "️ Temperature Matters: Serving Your Sake Right"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Jinbeh's Curated Sake Selection"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 8,
+      "name": "Sake Pairing at Jinbeh Happy Hour"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 9,
+      "name": "Your Sake Pairing Journey Starts Here"
+    }
+  ]
+};
+
 export default function SakePairingGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -113,6 +276,14 @@ export default function SakePairingGuide() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden bg-gradient-to-b from-charcoal to-charcoal/80">

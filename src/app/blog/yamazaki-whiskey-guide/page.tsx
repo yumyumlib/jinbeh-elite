@@ -47,6 +47,50 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Find Yamazaki Whiskey Nearby: Your Complete Guide",
+  "description": "Discover where to find Yamazaki whiskey nearby with our expert guide. Explore local stores, online options, and visit Jinbeh in Dallas for authentic Japanese whiskey experiences.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Understanding Yamazaki Whiskey"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Why Yamazaki Is So Popular"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Yamazaki Expressions Compared"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "️ Where to Buy Yamazaki Whiskey"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Finding Yamazaki Whiskey Nearby"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Jinbeh in Dallas: A Special Destination"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "FAQs"
+    }
+  ]
+};
+
 export default function YamazakiWhiskeyGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -54,6 +98,10 @@ export default function YamazakiWhiskeyGuide() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Yamazaki Whiskey Guide" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image src="/images/beverages/JapaneseWhiskey.webp" alt="Yamazaki whiskey bottle elegant presentation" fill className="object-cover" priority />

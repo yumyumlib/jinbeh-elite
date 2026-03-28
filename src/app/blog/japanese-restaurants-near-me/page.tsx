@@ -57,6 +57,90 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Open Japanese Restaurants Near Me: Find the Best",
+  "numberOfItems": 15,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "1. Google Search & Maps"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "2. Review Websites"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "3. Social Media Platforms"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "️ Cultural Associations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Japanese Grocery Stores"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "{x.name}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Call Ahead"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Online Booking"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Ask About Specials"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Explore the Menu"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Respect Etiquette"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "⏱️ Savor the Experience"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Observe the Craft"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Frisco Location"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Lewisville Location"
+    }
+  ]
+};
+
 export default function JapaneseRestaurantsNearMe() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -64,6 +148,10 @@ export default function JapaneseRestaurantsNearMe() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Japanese Restaurants Near Me" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

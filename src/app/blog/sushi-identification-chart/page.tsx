@@ -107,6 +107,30 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Sushi Identification Chart",
+  "description": "Explore our comprehensive sushi identification chart. Learn different sushi types, names, ingredients, and flavors. Perfect guide for sushi lovers and restaurant visitors.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Understanding Sushi Basics"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "The Complete Sushi Identification Chart"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Flavor Profiles & Tasting Notes"
+    }
+  ]
+};
+
 export default function SushiIdentificationChart() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -116,6 +140,10 @@ export default function SushiIdentificationChart() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

@@ -111,6 +111,80 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Restaurants with Private Rooms Near Me: Exclusive Dining Venues",
+  "numberOfItems": 13,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Exclusivity & Privacy"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Personalized Service"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Customizable Menus"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Enhanced Ambiance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Why Choose Jinbeh for Private Dining?"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Perfect for Corporate Events"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Ideal for Personal Celebrations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Private Dining at Jinbeh"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Capacity Considerations"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Menu Flexibility"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Service Quality"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Location & Accessibility"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Reservation & Cancellation Policies"
+    }
+  ]
+};
+
 export default function RestaurantsPrivateRooms() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -126,6 +200,10 @@ export default function RestaurantsPrivateRooms() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

@@ -57,6 +57,75 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top Asian Cuisine & Fusion Spots in Dallas TX",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Top Asian Fusion Restaurants"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Uchi Dallas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tei-An"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Jinbeh Hibachi & Sushi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Must-Try Traditional Restaurants"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Royal China"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Korean BBQ House"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Thai Orchid"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Notable Downtown Spots"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Musume"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Monkey King Noodle Company"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "{x.t}"
+    }
+  ]
+};
+
 export default function AsianCuisineDallas() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -64,6 +133,10 @@ export default function AsianCuisineDallas() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Asian Cuisine Dallas" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

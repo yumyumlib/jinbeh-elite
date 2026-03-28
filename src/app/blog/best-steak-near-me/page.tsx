@@ -47,6 +47,75 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Steak Near Me: Top 10 Steakhouses to Try",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Prime Cut Steakhouse"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Silver Spoon Steakhouse"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jinbeh Japanese Steakhouse"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "The Rustic Grill"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "The Urban Chophouse"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Grillhouse at the Plaza"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "The Metropolitan Steakhouse"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "The Cattleman's Club"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "{x.t}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Consider the Atmosphere"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Look for Quality and Variety"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Check Reviews and Ratings"
+    }
+  ]
+};
+
 export default function BestSteakNearMe() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -54,6 +123,10 @@ export default function BestSteakNearMe() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Best Steak Near Me" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

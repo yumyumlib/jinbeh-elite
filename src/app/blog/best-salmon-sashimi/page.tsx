@@ -95,6 +95,94 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Salmon Sashimi Near Me: Top Picks & Tips",
+  "numberOfItems": 11,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Vibrant Color"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Silky Texture"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Subtle Sweetness"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Expert Preparation"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Local Fish Markets"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Upscale Grocery Stores"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Online Seafood Retailers"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Jinbeh: Premium Salmon Sashimi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Restaurant & Sushi Bar Experience"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Creating Sashimi at Home"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Explore Beyond Salmon"
+    }
+  ]
+};
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Best Salmon Sashimi Near Me: Top Picks & Tips",
+  "description": "Discover the best salmon sashimi near you! Our guide covers where to find fresh, quality sashimi at local markets, restaurants, and online. Expert tips included.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "What Makes Premium Salmon Sashimi?"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Where to Find Quality Salmon Sashimi"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "️ Dining Options vs. Home Preparation"
+    }
+  ]
+};
+
 export default function BestSalmonSashimi() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -110,6 +198,14 @@ export default function BestSalmonSashimi() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

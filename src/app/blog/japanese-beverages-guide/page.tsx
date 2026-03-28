@@ -45,6 +45,40 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Popular Japanese Beverages: Iconic Drinks Guide",
+  "description": "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and canned coffee. Explore iconic drinks reflecting tradition and innovation.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Traditional Tea & Spirits"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Japanese Alcoholic vs Non-Alcoholic Beverages"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Beloved Bottled & Canned Drinks"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Convenience Store Favorites"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Why Japanese Beverages Stand Out"
+    }
+  ]
+};
+
 export default function JapaneseBeveragesGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -52,6 +86,10 @@ export default function JapaneseBeveragesGuide() {
           <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Japanese Beverages Guide" }]} />
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">

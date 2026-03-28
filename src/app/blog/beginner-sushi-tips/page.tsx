@@ -84,6 +84,65 @@ const articleSchema = {
   }
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Beginner Sushi Tips: Easy Homemade Sushi Guide",
+  "description": "Discover the joy of beginner sushi-making at home with these essential tips. Learn to craft the best sushi rolls for beginners, including the classic California roll, using the right tools and fresh ingredients.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Welcome to the World of Sushi Making"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Understanding Sushi Basics"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Essential Tools & Ingredients"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Mastering Sushi Rice"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Best Sushi Rolls for Beginners"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Rolling Your Sushi: Step-by-Step Guide"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Tips for Perfecting Your Sushi"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 8,
+      "name": "Exploring Sushi Variations"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 9,
+      "name": "When to Visit Professional Sushi Chefs"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 10,
+      "name": "Conclusion: Your Sushi Journey Starts Now"
+    }
+  ]
+};
+
 export default function BeginnerSushiTipsPage() {
   return (
     <>
@@ -127,6 +186,10 @@ export default function BeginnerSushiTipsPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
 
         </h1>

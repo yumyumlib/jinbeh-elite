@@ -120,6 +120,50 @@ const breadcrumbSchema = {
     ],
 };
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Thanksgiving Dining Guide",
+  "description": "Discover unique Thanksgiving dining alternatives at Jinbeh. Thanksgiving catering, dine-in availability, menu suggestions & ordering deadlines for Frisco & DFW areas.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Why Choose Japanese Cuisine for Thanksgiving"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Thanksgiving Catering Options"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "️ Dine-In Availability on Thanksgiving"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "⏰ Thanksgiving Ordering Deadlines"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Thanksgiving Menu Suggestions"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Frequently Asked Questions About Thanksgiving at Jinbeh"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Make This Thanksgiving Unforgettable"
+    }
+  ]
+};
+
 export default function ThanksgivingDiningGuide() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -129,6 +173,10 @@ export default function ThanksgivingDiningGuide() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
 
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">

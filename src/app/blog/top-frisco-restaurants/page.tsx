@@ -110,6 +110,55 @@ const breadcrumbSchema = {
     ],
 };
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top 10 Frisco Restaurants: Must-Try Dining Spots in Texas",
+  "numberOfItems": 8,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "1. Jinbeh Japanese Restaurant ⭐ Top Pick"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "2. Babe's Chicken Dinner House"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "3. The Heritage Table"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "4. Dee Lincoln Prime"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "5. Mash'D"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Why Jinbeh Stands Apart"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "What Makes Frisco a Dining Destination?"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Frisco Dining by Cuisine"
+    }
+  ]
+};
+
 export default function TopFriscoRestaurants() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -125,6 +174,10 @@ export default function TopFriscoRestaurants() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
 
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
