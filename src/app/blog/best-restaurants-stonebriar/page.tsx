@@ -174,7 +174,11 @@ export default function BestRestaurantsStonebriar() {
                         <span>7 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">things to do in Frisco</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

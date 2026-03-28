@@ -115,7 +115,11 @@ export default function GroupDiningVenues() {
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">🎉 Celebrations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Group Dining Venues DFW</h1>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/baby-shower-venues" className="text-accent-red hover:underline">baby shower venues</Link>
+              </p>
+</section>
 
             <section className="py-16">
                 <div className="container mx-auto px-6">

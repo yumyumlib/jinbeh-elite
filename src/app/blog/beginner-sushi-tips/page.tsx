@@ -459,6 +459,9 @@ export default function BeginnerSushiTipsPage() {
         <PillarCTA type="vip" />
         <LocationCTA location="both" />
       </ArticleLayout>
-    </>
+              <p className="text-charcoal/80 text-sm mt-4 px-6 max-w-4xl mx-auto">
+            See also: <a href="/blog/sushi-cooking-classes" className="text-accent-red hover:underline">sushi cooking classes</a>
+          </p>
+</>
   );
 }

@@ -180,7 +180,15 @@ export default function TypesOfSushi() {
                         <span>10 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/ayce-sushi-vs-traditional" className="text-accent-red hover:underline">all-you-can-eat sushi vs traditional</Link>
+              </p>
+
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/sushi-platters-near-me" className="text-accent-red hover:underline">sushi platters near me</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

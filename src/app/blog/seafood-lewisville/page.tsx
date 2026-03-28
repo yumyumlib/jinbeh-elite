@@ -243,7 +243,15 @@ export default function SeafoodLewisville() {
                         <span>8 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">top steakhouses in Lewisville</Link>
+              </p>
+
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/pickleball-restaurants-lewisville" className="text-accent-red hover:underline">restaurants near pickleball in Lewisville</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

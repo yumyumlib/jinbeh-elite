@@ -255,7 +255,11 @@ export default function LargeGroupDining() {
                         <span>10 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/thanksgiving-dining-guide" className="text-accent-red hover:underline">Thanksgiving dining guide</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

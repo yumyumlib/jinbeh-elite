@@ -94,7 +94,11 @@ export default function DiscoverTeppanyaki() {
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-charcoal bg-soft-gold mb-4">🍣 Cuisine</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Discover Teppanyaki: Culinary Art</h1>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline">popular Japanese culture</Link>
+              </p>
+</section>
 
             <section className="py-16">
                 <div className="container mx-auto px-6">

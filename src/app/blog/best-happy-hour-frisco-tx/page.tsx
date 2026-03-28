@@ -142,7 +142,11 @@ export default function BestHappyHourFrisco() {
                         <span>6 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/international-beer-day" className="text-accent-red hover:underline">International Beer Day celebrations</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

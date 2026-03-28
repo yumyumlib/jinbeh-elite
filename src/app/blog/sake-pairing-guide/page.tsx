@@ -322,7 +322,15 @@ export default function SakePairingGuide() {
                         <span>10 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/sake-sushi-menu-pairings" className="text-accent-red hover:underline">sake and sushi menu pairings</Link>
+              </p>
+
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/yamazaki-whiskey-guide" className="text-accent-red hover:underline">Yamazaki whiskey guide</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

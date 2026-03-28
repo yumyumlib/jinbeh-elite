@@ -194,7 +194,15 @@ export default function SushiLunchSpecials() {
                         <span>7 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/fast-casual-dining-jinbeh" className="text-accent-red hover:underline">fast-casual dining at Jinbeh</Link>
+              </p>
+
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/japanese-takeout-near-me" className="text-accent-red hover:underline">Japanese takeout near me</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">

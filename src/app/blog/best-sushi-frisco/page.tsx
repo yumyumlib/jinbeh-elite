@@ -190,7 +190,11 @@ export default function BestSushiFrisco() {
                         <span>7 min read</span>
                     </div>
                 </div>
-            </section>
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/best-sushi-dallas" className="text-accent-red hover:underline">best sushi in Dallas</Link>
+              </p>
+</section>
 
             {/* Content */}
             <section className="py-16">
