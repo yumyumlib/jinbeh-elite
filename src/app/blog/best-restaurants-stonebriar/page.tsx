@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Restaurants Near Stonebriar Mall Frisco TX | Jinbeh",
     description:
-        "Discover the best restaurants near Stonebriar Mall in Frisco TX. From hibachi & sushi at Jinbeh to upscale dining and casual favorites—your complete guide.",
+        "Discover the best restaurants near me Frisco near Stonebriar Mall in Frisco TX. From hibachi & sushi at Jinbeh to upscale dining and casual favorites—your complete guide.",
     keywords: [
         "restaurants near stonebriar mall",
         "best restaurants frisco tx",

@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Hibachi Dallas TX: Top Restaurants & Experiences | Jinbeh",
     description:
-        "Find the best hibachi in Dallas TX! Teppanyaki grill shows, fresh ingredients, and unforgettable dining. Discover Jinbeh's authentic hibachi experience.",
+        "Find the best hibachi near me Texas TX! Teppanyaki grill shows, fresh ingredients, and unforgettable dining. Discover Jinbeh's authentic hibachi experience.",
     keywords: [
         "best hibachi dallas",
         "hibachi dallas tx",

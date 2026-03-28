@@ -20,8 +20,7 @@ export const metadata: Metadata = {
     "grubhub",
     "uber eats",
     "frisco delivery",
-    "lewisville delivery",
-  ],
+    "lewisville delivery", "sushi dallas takeout", ],
   openGraph: {
     title: "Takeout & Delivery | Jinbeh Japanese Restaurant",
     description:

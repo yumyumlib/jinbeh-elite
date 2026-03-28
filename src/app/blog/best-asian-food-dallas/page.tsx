@@ -28,7 +28,7 @@ const faqs = [
     { question: "Is there good Asian food outside downtown?", answer: "Absolutely! Jinbeh has locations in Frisco and Lewisville. Both offer excellent hibachi and sushi. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville." },
     { question: "Is Jinbeh good for special occasions?", answer: "It's a celebration! We love hosting birthdays, anniversaries, and gatherings. Our hibachi chefs make every meal entertaining and memorable for your group." },
     { question: "What makes hibachi dining special?", answer: "Dinner and a show! Our chefs cook right before your eyes. Fire tricks, the onion volcano, and fresh-cooked meals make it unforgettable." },
-    { question: "Is there parking near Asian restaurants in Dallas?", answer: "Most DFW Asian restaurants have dedicated parking lots. Jinbeh's Frisco location (near Stonebriar) and Lewisville location both offer free, convenient parking right in front of the restaurant — no downtown parking hassles or valet fees." }
+    { question: "Is there parking near Asian restaurants near me Dallas?", answer: "Most DFW Asian restaurants have dedicated parking lots. Jinbeh's Frisco location (near Stonebriar) and Lewisville location both offer free, convenient parking right in front of the restaurant — no downtown parking hassles or valet fees." }
 ];
 
 const schemas = [

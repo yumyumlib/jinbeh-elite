@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Discover Teppanyaki: A Culinary Art Form | Jinbeh",
     description: "Learn about teppanyaki, the Japanese art of iron griddle cooking. Discover its history, techniques, and where to experience authentic teppanyaki in DFW.",
-    keywords: ["teppanyaki", "hibachi vs teppanyaki", "japanese grill", "teppanyaki restaurant"],
+    keywords: ["teppanyaki", "hibachi vs teppanyaki", "japanese grill", "teppanyaki restaurant Dallas"],
     openGraph: {
         title: "Discover Teppanyaki: A Culinary Art Form",
         description: "Learn about teppanyaki, the Japanese art of iron griddle cooking in DFW.",

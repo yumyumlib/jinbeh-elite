@@ -19,8 +19,7 @@ export const metadata: Metadata = {
     "japanese restaurant happy hour",
     "best happy hour dfw",
     "happy hour specials frisco tx",
-    "sushi happy hour near me",
-  ],
+    "sushi happy hour near me", "happy hour near me open now", ],
   openGraph: {
     title: "Happy Hour | Jinbeh Japanese Restaurant",
     description: "Great drinks. Great company. Great prices. Join us for Happy Hour specials.",

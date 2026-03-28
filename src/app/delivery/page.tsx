@@ -17,8 +17,7 @@ export const metadata: Metadata = {
     "sushi delivery lewisville",
     "japanese restaurant delivery texas",
     "hibachi delivery near me",
-    "uber eats grubhub",
-  ],
+    "uber eats grubhub", "sushi dallas takeout", ],
   openGraph: {
     title: "Jinbeh Delivery | Japanese Food Delivery Frisco & Lewisville",
     description: "Order fresh sushi and Japanese favorites for delivery",

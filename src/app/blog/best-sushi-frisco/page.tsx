@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Sushi Frisco TX: Top Spots to Savor Fresh Flavors | Jinbeh",
     description:
-        "Discover the best sushi in Frisco TX! From Jinbeh's authentic rolls to hidden gems near Stonebriar. Fresh fish, expert chefs, unforgettable dining. Reserve today!",
+        "Discover the best sushi near me Texas TX! From Jinbeh's authentic rolls to hidden gems near Stonebriar. Fresh fish, expert chefs, unforgettable dining. Reserve today!",
     keywords: [
         "best sushi frisco",
         "sushi frisco tx",

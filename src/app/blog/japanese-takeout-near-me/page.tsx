@@ -7,7 +7,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
     description:
-        "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbeh.",
+        "Find the best sushi Dallas takeout and Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbeh.",
     keywords: [
         "japanese takeout near me",
         "sushi takeout frisco",

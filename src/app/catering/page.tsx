@@ -16,13 +16,12 @@ export const metadata: Metadata = {
   keywords: [
     "japanese catering frisco",
     "sushi catering dallas",
-    "hibachi catering dfw",
+    "hibachi and teppanyaki Frisco catering dfw",
     "corporate catering frisco tx",
     "wedding catering japanese",
     "party catering lewisville",
     "thanksgiving catering frisco",
-    "catering near me frisco",
-  ],
+    "catering near me frisco", "teppanyaki restaurant dallas", ],
   openGraph: {
     title: "Catering | Jinbeh Japanese Restaurant",
     description: "Bring Jinbeh to your event. Japanese catering for any occasion.",

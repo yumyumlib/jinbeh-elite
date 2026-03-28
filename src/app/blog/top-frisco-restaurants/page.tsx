@@ -33,7 +33,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Top 10 Frisco Restaurants: Must-Try Dining Spots",
     description:
-        "Comprehensive guide to the best restaurants in Frisco, Texas, featuring diverse cuisines and dining experiences.",
+        "Comprehensive guide to the best restaurants near me Frisco, Texas, featuring diverse cuisines and dining experiences.",
     image: "https://jinbeh.com/images/blog/8-C060324-6462.jpg",
     datePublished: "2026-01-20",
     dateModified: "2026-03-11",

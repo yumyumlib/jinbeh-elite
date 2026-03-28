@@ -66,7 +66,7 @@ const faqs = [
     },
     {
         question: "Can I try different sushi types at Jinbeh?",
-        answer: "Absolutely! We offer nigiri, sashimi, maki rolls, specialty rolls, hand rolls, and omakase experiences. You can order à la carte or try our sushi platters that showcase multiple varieties. Sit at the sushi bar to watch our chefs prepare each piece, or relax at a table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about specials, or visit our menu online."
+        answer: "Absolutely! We offer nigiri, sashimi, maki rolls, specialty rolls, hand roll (sushi roll vs hand roll)s, and omakase experiences. You can order à la carte or try our sushi platters that showcase multiple varieties. Sit at the sushi bar to watch our chefs prepare each piece, or relax at a table. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about specials, or visit our menu online."
     },
     {
         question: "What's the proper way to eat sushi?",
@@ -78,7 +78,7 @@ const faqs = [
     },
     {
         question: "What's the difference between sushi and sashimi platters?",
-        answer: "A sushi platter typically includes nigiri and rolls (rice-based dishes), while a sashimi platter features only sliced raw fish. Sushi platters are more filling and offer variety in preparation styles. Sashimi platters are perfect for fish lovers who want to focus on the quality and flavor of premium fish without rice. Many guests order both to explore different aspects of Japanese cuisine!"
+        answer: "A sushi platter typically includes nigiri and rolls (rice-based dishes), while a sashimi platter features only sliced raw fish. Sushi platters are more filling and offer variety in preparation styles. Sashimi platters are perfect for fish lovers who want to focus on the quality and flavor of premium fish without rice. Many guests order both to explore different aspects of Japanese food Texas!"
     },
     {
         question: "Is it safe to eat sushi during pregnancy?",

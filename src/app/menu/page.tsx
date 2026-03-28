@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Menu | Jinbeh Japanese Restaurant - Frisco & Lewisville",
     description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls. View menus for our Frisco and Lewisville locations.",
-    keywords: ["jinbeh menu", "hibachi menu", "sushi menu frisco", "japanese restaurant menu lewisville"],
+    keywords: ["jinbeh menu", "hibachi menu", "sushi menu frisco", "japanese restaurant menu lewisville", "sake set", "sparkling sake", "strawberry sake", "hamachi sushi", ],
     openGraph: {
         title: "Menu | Jinbeh Japanese Restaurant",
         description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls.",

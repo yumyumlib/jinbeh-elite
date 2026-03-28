@@ -20,8 +20,7 @@ export const metadata: Metadata = {
     "japanese restaurant history frisco",
     "family owned restaurant frisco tx",
     "hibachi restaurant history",
-    "authentic japanese dining dfw",
-  ],
+    "authentic japanese dining dfw", "japanese restaurants texas", "japanese food texas", ],
   openGraph: {
     title: "About Jinbeh | Family-Owned Since 1988",
     description: "38+ years of authentic Japanese dining in North Texas. Discover our story.",
@@ -89,7 +88,7 @@ const organizationSchema = {
   "url": "https://jinbeh.com",
   "logo": "https://jinbeh.com/images/logos/jinbeh-logo.png",
   "foundingDate": "1988",
-  "description": "Family-owned Japanese restaurant serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988.",
+  "description": "Family-owned Japanese restaurants Texas serving authentic hibachi and sushi in Frisco and Lewisville, TX since 1988.",
   "sameAs": [
     "https://www.instagram.com/jinbehfrisco/",
     "https://www.facebook.com/JinbehFrisco/",
