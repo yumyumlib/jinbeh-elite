@@ -44,11 +44,11 @@ const faqs = [
     },
     {
         question: "Can I get Japanese food quickly for a work lunch?",
-        answer: "Absolutely! Order a bento box, sushi roll combo, or chicken teriyaki for a satisfying work lunch. Call ahead for pickup from Frisco (214) 619-1200 or Lewisville (214) 488-2224, and your order will be ready in 20-30 minutes. You can also order through GrubHub or UberEats.",
+        answer: "Absolutely! Order a bento box, sushi roll combo, or chicken teriyaki for a satisfying work lunch. Call ahead for pickup from Frisco (214) 619-1200 or Lewisville (214) 488-2224, and your order will be ready in 20-30 minutes. You can also order through Grubhub or Uber Eats.",
     },
     {
         question: "Can I order Jinbeh online for pickup or delivery?",
-        answer: "Yes! You can order through delivery apps like DoorDash, UberEats, and GrubHub for both pickup and delivery. For the freshest experience, we recommend calling the restaurant directly for pickup — your sushi will be rolled to order right before you arrive. Frisco: (214) 619-1200, Lewisville: (214) 488-2224.",
+        answer: "Yes! You can order through delivery apps like DoorDash, Uber Eats, and Grubhub for both pickup and delivery. For the freshest experience, we recommend calling the restaurant directly for pickup — your sushi will be rolled to order right before you arrive. Frisco: (214) 619-1200, Lewisville: (214) 488-2224.",
     },
 ];
 

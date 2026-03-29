@@ -15,7 +15,7 @@ const restaurantSchema = {
     "@type": "Restaurant",
     name: "Jinbeh Japanese Restaurant",
     image: "https://jinbeh.com/images/og-image.jpg",
-    description: "Authentic Japanese hibachi and sushi restaurant",
+    description: "Order Japanese food online from Jinbeh — hibachi, sushi, sashimi, and bento boxes delivered fresh to your door in Frisco and Lewisville. Available on Grubhub...",
     address: [
         {
             "@type": "PostalAddress",

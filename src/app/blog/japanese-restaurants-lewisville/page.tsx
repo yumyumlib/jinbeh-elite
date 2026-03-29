@@ -28,7 +28,7 @@ const faqs = [
     { question: "Can you handle large groups?", answer: "Absolutely! We specialize in groups. Hibachi tables, flexible seating, customized menus. Call (214) 488-2224 to arrange your party. We love making celebrations special." },
     { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful—that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
     { question: "Where is Jinbeh Lewisville located?", answer: "We're at 2440 S. Stemmons Freeway, near Vista Ridge Mall. Easy I-35E access. Convenient parking right outside. Call (214) 488-2224 to confirm hours." },
-    { question: "Does Jinbeh Lewisville offer takeout?", answer: "Yes! Call (214) 488-2224 to place a takeout order. Most orders are ready in 20-30 minutes. We offer sushi rolls, bento boxes, teriyaki, and hibachi platters for pickup. You can also order delivery through DoorDash and UberEats." }
+    { question: "Does Jinbeh Lewisville offer takeout?", answer: "Yes! Call (214) 488-2224 to place a takeout order. Most orders are ready in 20-30 minutes. We offer sushi rolls, bento boxes, teriyaki, and hibachi platters for pickup. You can also order delivery through DoorDash and Uber Eats." }
 ];
 
 const schemas = [

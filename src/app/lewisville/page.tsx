@@ -432,7 +432,7 @@ export default function LewisvillePage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 p-3 bg-[#06C167] text-white rounded-lg hover:bg-[#05a858] transition-colors font-medium"
                   >
-                    UberEats
+                    Uber Eats
                   </a>
                 </div>
               </div>

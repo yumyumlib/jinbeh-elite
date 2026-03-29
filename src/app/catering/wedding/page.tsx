@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Wedding Catering | Jinbeh Japanese Restaurant | Sushi & Hibachi Wedding Catering Frisco",
   description:
-    "Celebrate your special day with authentic Japanese wedding catering. Sushi platters, hibachi entertainment, and customized menus for wedding receptions, rehearsal dinners, and bridal showers in Frisco & Lewisville TX.",
+    "Celebrate your special day with authentic Japanese wedding catering. Sushi platters, hibachi entertainment, and customized menus for wedding receptions,.",
   keywords: [
     "wedding catering japanese",
     "sushi catering wedding",

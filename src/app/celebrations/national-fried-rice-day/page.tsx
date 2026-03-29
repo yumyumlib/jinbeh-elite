@@ -409,7 +409,7 @@ export default function NationalFriedRiceDayPage() {
                 rel="noopener noreferrer"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold"
               >
-                Order Frisco on GrubHub
+                Order Frisco on Grubhub
               </a>
               <a
                 href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2693-preston-rd-lewisville/2134962"
@@ -417,7 +417,7 @@ export default function NationalFriedRiceDayPage() {
                 rel="noopener noreferrer"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-6 py-3 rounded-xl font-semibold"
               >
-                Order Lewisville on GrubHub
+                Order Lewisville on Grubhub
               </a>
             </div>
           </div>

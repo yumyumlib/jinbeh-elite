@@ -65,7 +65,7 @@ const faqSchema = {
       name: "Do you offer online ordering or delivery?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer takeout and delivery through GrubHub and Uber Eats. Search for Jinbeh at your preferred platform to view our menu and place an order.",
+        text: "Yes! We offer takeout and delivery through Grubhub and Uber Eats. Search for Jinbeh at your preferred platform to view our menu and place an order.",
       },
     },
     {
@@ -121,7 +121,7 @@ const faqSchema = {
       name: "Do you offer sushi for takeout?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer fresh sushi rolls, nigiri, and sashimi for takeout and delivery. Order through our website partners (GrubHub, Uber Eats) or call your preferred location directly.",
+        text: "Yes! We offer fresh sushi rolls, nigiri, and sashimi for takeout and delivery. Order through our website partners (Grubhub, Uber Eats) or call your preferred location directly.",
       },
     },
     {
@@ -277,7 +277,7 @@ const faqCategories = [
       },
       {
         q: "Do you offer delivery?",
-        a: "Yes! We partner with GrubHub and Uber Eats for delivery service. Search for Jinbeh on either platform to place a delivery order.",
+        a: "Yes! We partner with Grubhub and Uber Eats for delivery service. Search for Jinbeh on either platform to place a delivery order.",
       },
       {
         q: "How long does takeout typically take?",

@@ -53,7 +53,7 @@ const faqs = [
     },
     {
         question: "Can I order sushi platters for delivery in Frisco or Lewisville?",
-        answer: "Yes! Jinbeh offers sushi takeout and delivery through GrubHub and UberEats from both our Frisco and Lewisville locations. For large party platters, we recommend pickup to ensure the presentation stays perfect. Call ahead to arrange your order and pickup time.",
+        answer: "Yes! Jinbeh offers sushi takeout and delivery through Grubhub and Uber Eats from both our Frisco and Lewisville locations. For large party platters, we recommend pickup to ensure the presentation stays perfect. Call ahead to arrange your order and pickup time.",
     },
     {
         question: "Are sushi platters good for office catering?",
@@ -313,7 +313,7 @@ export default function SushiPlattersNearMe() {
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>GrubHub &amp; UberEats delivery available</span>
+                                                    <span>Grubhub &amp; Uber Eats delivery available</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>

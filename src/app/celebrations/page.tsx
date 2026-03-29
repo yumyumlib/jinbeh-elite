@@ -10,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Celebrations | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Celebrate birthdays, anniversaries, holidays & special occasions at Jinbeh! Hibachi entertainment, fresh sushi, private dining. Valentine's Day, Mother's Day, Thanksgiving & more in Frisco & Lewisville TX.",
+    "Celebrate birthdays, anniversaries, holidays & special occasions at Jinbeh! Hibachi entertainment, fresh sushi, private dining. Valentine's Day, Mother's.",
   keywords: [
     "birthday dinner frisco",
     "anniversary restaurant frisco tx",

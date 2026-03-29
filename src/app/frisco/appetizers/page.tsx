@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Appetizers Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Browse Jinbeh Frisco's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi or sushi dinner near Stonebriar Centre.s menu. Shareability, group dining, perfect starters. 6 delicious options from Edamame to Seared Ahi Tuna. Near Stonebriar Centre, minutes from Legacy West.",
+  description: "Browse Jinbeh Frisco's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi.",
   keywords: ["appetizers frisco", "best appetizers frisco", "appetizers menu frisco", "jinbeh appetizers", "japanese appetizers frisco", "japanese appetizers", "starters", "small plates"],
   openGraph: {
     title: "Appetizers Menu | Jinbeh Frisco",

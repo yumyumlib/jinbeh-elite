@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Hibachi Denton TX | Premium Teppanyaki Restaurant | Jinbeh",
-  description: "Best hibachi restaurant in Denton, TX. Jinbeh offers authentic teppanyaki shows and premium Japanese cuisine just minutes from Denton in Lewisville and Frisco. Reserve your table for an unforgettable hibachi experience.",
+  description: "Best hibachi restaurant in Denton, TX. Jinbeh offers authentic teppanyaki shows and premium Japanese cuisine just minutes from Denton in Lewisville and.",
   keywords: [
     "hibachi denton tx",
     "hibachi restaurant denton texas",

@@ -32,7 +32,7 @@ const faqs = [
     },
     {
         question: "Does Jinbeh offer takeout and delivery?",
-        answer: "Yes! Both our Frisco and Lewisville locations offer takeout. You can order online through GrubHub and UberEats for delivery, or call ahead for pickup: Frisco (214) 619-1200 or Lewisville (214) 488-2224. Pickup orders are ready in 20-30 minutes.",
+        answer: "Yes! Both our Frisco and Lewisville locations offer takeout. You can order online through Grubhub and Uber Eats for delivery, or call ahead for pickup: Frisco (214) 619-1200 or Lewisville (214) 488-2224. Pickup orders are ready in 20-30 minutes.",
     },
     {
         question: "Can I order hibachi for takeout?",
@@ -48,7 +48,7 @@ const faqs = [
     },
     {
         question: "Is there a minimum order for Japanese food delivery?",
-        answer: "Minimum order amounts vary by delivery platform. DoorDash and UberEats typically require $10-$15 minimums. For direct pickup from Jinbeh, there's no minimum — order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
+        answer: "Minimum order amounts vary by delivery platform. DoorDash and Uber Eats typically require $10-$15 minimums. For direct pickup from Jinbeh, there's no minimum — order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
     },
 ];
 
@@ -211,7 +211,7 @@ export default function JapaneseTakeoutNearMe() {
             </p>
             <ol>
                 <li><strong>Call ahead</strong> — Frisco: (214) 619-1200 | Lewisville: (214) 488-2224</li>
-                <li><strong>Order online</strong> — Available through <Link href="/order-online" className="text-accent-red hover:underline">GrubHub and UberEats</Link></li>
+                <li><strong>Order online</strong> — Available through <Link href="/order-online" className="text-accent-red hover:underline">Grubhub and Uber Eats</Link></li>
                 <li><strong>Pick up</strong> — Most orders ready in 20-30 minutes</li>
             </ol>
 

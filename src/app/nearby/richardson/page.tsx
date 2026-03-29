@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Sushi Richardson TX | Premium Japanese Restaurant | Jinbeh",
-  description: "Best sushi restaurant in Richardson, TX. Jinbeh offers fresh premium sushi and authentic Japanese cuisine just minutes from Richardson in Frisco. Reserve your table for an exceptional dining experience.",
+  description: "Best sushi restaurant in Richardson, TX. Jinbeh offers fresh premium sushi and authentic Japanese cuisine just minutes from Richardson in Frisco. Reserve.",
   keywords: [
     "sushi richardson tx",
     "sushi restaurant richardson texas",

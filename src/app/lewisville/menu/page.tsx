@@ -132,7 +132,7 @@ const faqSchema = {
       "name": "Can I order Jinbeh for takeout or delivery?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Sushi, appetizers, and some entrees are available for takeout and delivery through GrubHub and UberEats. Hibachi is best enjoyed dine-in for the full entertainment experience.",
+        "text": "Yes! Sushi, appetizers, and some entrees are available for takeout and delivery through Grubhub and Uber Eats. Hibachi is best enjoyed dine-in for the full entertainment experience.",
       },
     },
   ],
@@ -310,12 +310,12 @@ export default function LewisvilleMenuPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2693-preston-rd-lewisville/2134962"
+                href="https://www.grubhub.com/restaurant/jinbeh-japanese-restaurant-lewisville-2440-s-stemmons-fwy-a-lewisville/2135139"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl"
               >
-                Order on GrubHub
+                Order on Grubhub
               </a>
               <a
                 href="https://www.ubereats.com/store/jinbeh-lewisville/0oug5xCoWo6bu5zODsyi_A/15b0bf12-93ff-47a1-bff2-439f0a6e9905"
@@ -323,7 +323,7 @@ export default function LewisvilleMenuPage() {
                 rel="noopener noreferrer"
                 className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl"
               >
-                Order on UberEats
+                Order on Uber Eats
               </a>
             </div>
           </div>

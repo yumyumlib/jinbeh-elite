@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Beginner Sushi Tips: Easy Homemade Sushi Guide | Jinbeh",
   description:
-    "Discover the joy of beginner sushi-making at home with these essential tips. Learn to craft the best sushi rolls for beginners, including the classic California roll, using the right tools and fresh ingredients.",
+    "Discover the joy of beginner sushi-making at home with these essential tips. Learn to craft the best sushi rolls for beginners, including the classic.",
   keywords: [
     "beginner sushi",
     "how to make sushi",

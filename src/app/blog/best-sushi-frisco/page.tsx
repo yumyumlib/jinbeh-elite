@@ -58,7 +58,7 @@ const faqs = [
     },
     {
         question: "Can I order sushi for takeout or delivery?",
-        answer: "Yes! Order takeout directly or through GrubHub and UberEats. Call ahead to place a pickup order. For the full hibachi experience, though, you'll want to dine in—it's dinner and a show!",
+        answer: "Yes! Order takeout directly or through Grubhub and Uber Eats. Call ahead to place a pickup order. For the full hibachi experience, though, you'll want to dine in—it's dinner and a show!",
     },
     {
         question: "Where is Jinbeh located in Frisco?",

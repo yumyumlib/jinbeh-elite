@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Appetizers Menu | Jinbeh Lewisville Japanese Restaurant",
-  description: "Browse Jinbeh Lewisville's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi or sushi dinner near Vista Ridge Mall.s menu. Shareability, group dining, perfect starters. 6 delicious options from Edamame to Seared Ahi Tuna. Easy access from I-35E, near Vista Ridge Mall.",
+  description: "Browse Jinbeh Lewisville's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your.",
   keywords: ["appetizers lewisville", "best appetizers lewisville", "appetizers menu lewisville", "jinbeh appetizers", "japanese appetizers lewisville", "japanese appetizers", "starters", "small plates"],
   openGraph: {
     title: "Appetizers Menu | Jinbeh Lewisville",

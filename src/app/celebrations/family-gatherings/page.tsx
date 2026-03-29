@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Family Restaurant Frisco | Family Dinner & Gathering Venue | Jinbeh",
   description:
-    "Bring your family together at Jinbeh! Family-friendly hibachi dining, kids menu, high chairs available, and group seating perfect for family reunions, holiday dinners, and celebrations in Frisco & Lewisville TX.",
+    "Bring your family together at Jinbeh! Family-friendly hibachi dining, kids menu, high chairs available, and group seating perfect for family reunions,.",
   keywords: [
     "family restaurant frisco",
     "family dinner restaurant",

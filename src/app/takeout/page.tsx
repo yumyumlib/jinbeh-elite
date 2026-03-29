@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Takeout & Delivery | Jinbeh Japanese Restaurant - Frisco & Lewisville",
   description:
-    "Order Jinbeh for takeout or delivery. Fresh sushi rolls, hibachi entrees, and Japanese favorites delivered to your door via GrubHub and Uber Eats. Fast, convenient dining!",
+    "Order Jinbeh for takeout or delivery. Fresh sushi rolls, hibachi entrees, and Japanese favorites delivered to your door via Grubhub and Uber Eats. Fast, convenient dining!",
   keywords: [
     "takeout",
     "delivery",
@@ -46,9 +46,9 @@ const lewisville = locations.locations.lewisville;
 
 const orderingMethods = [
   {
-    title: "GrubHub",
+    title: "Grubhub",
     icon: "🛵",
-    description: "Order directly from GrubHub for delivery to your location.",
+    description: "Order directly from Grubhub for delivery to your location.",
     color: "from-red-600 to-red-700",
   },
   {
@@ -133,7 +133,7 @@ const whyChooseUs = [
   },
   {
     title: "Convenient",
-    description: "Order online through GrubHub/Uber Eats or call us directly.",
+    description: "Order online through Grubhub/Uber Eats or call us directly.",
     icon: "📱",
   },
   {
@@ -246,15 +246,15 @@ export default function TakeoutPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* GrubHub */}
+              {/* Grubhub */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
                 <div className="bg-gradient-to-br from-red-600 to-red-700 text-white p-8 text-center">
                   <div className="text-5xl mb-4">🛵</div>
-                  <h3 className="text-2xl font-heading font-bold">GrubHub</h3>
+                  <h3 className="text-2xl font-heading font-bold">Grubhub</h3>
                 </div>
                 <div className="p-8 text-center">
                   <p className="text-charcoal/70 mb-6">
-                    Order directly from GrubHub for delivery to your location. Real-time tracking and easy payment.
+                    Order directly from Grubhub for delivery to your location. Real-time tracking and easy payment.
                   </p>
                   <a
                     href={frisco.orderOnline.grubhub}
@@ -262,7 +262,7 @@ export default function TakeoutPage() {
                     rel="noopener noreferrer"
                     className="inline-block w-full btn bg-accent-red text-white hover:bg-accent-red-hover py-3 rounded-xl font-semibold transition-colors mb-3"
                   >
-                    Frisco on GrubHub
+                    Frisco on Grubhub
                   </a>
                   <a
                     href={lewisville.orderOnline.grubhub}
@@ -270,7 +270,7 @@ export default function TakeoutPage() {
                     rel="noopener noreferrer"
                     className="inline-block w-full btn bg-accent-red text-white hover:bg-accent-red-hover py-3 rounded-xl font-semibold transition-colors"
                   >
-                    Lewisville on GrubHub
+                    Lewisville on Grubhub
                   </a>
                 </div>
               </div>
@@ -487,7 +487,7 @@ export default function TakeoutPage() {
                 </div>
               </div>
               <p className="text-charcoal/80 text-sm">
-                Check GrubHub or Uber Eats for exact delivery availability to your address.
+                Check Grubhub or Uber Eats for exact delivery availability to your address.
               </p>
             </div>
           </div>
@@ -519,7 +519,7 @@ export default function TakeoutPage() {
                 },
                 {
                   q: "Is delivery available to my area?",
-                  a: "Check GrubHub or Uber Eats to see if delivery is available to your address. Delivery fees and times vary.",
+                  a: "Check Grubhub or Uber Eats to see if delivery is available to your address. Delivery fees and times vary.",
                 },
                 {
                   q: "What's the minimum order for delivery?",
@@ -583,7 +583,7 @@ export default function TakeoutPage() {
                 rel="noopener noreferrer"
                 className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
-                Order on GrubHub
+                Order on Grubhub
               </a>
               <a
                 href={frisco.orderOnline.ubereats}
