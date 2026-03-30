@@ -7,7 +7,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Steak Near Me: Top 10 Steakhouses to Try | Jinbeh",
-    description: "Discover the best steak near you with our guide to top steakhouses. Enjoy premium cuts, unique flavors, and unforgettable dining experiences. Find Jinbeh's Japanese steakhouse experience.",
+    description: "Discover the best steak near you with our guide to top steakhouses. Enjoy premium cuts, unique flavors, and unforgettable dining experiences. Find.",
     keywords: ["best steak near me", "steakhouse dallas", "prime rib restaurants", "steak dinner dallas"],
     openGraph: {
         title: "Best Steak Near Me: Top Steakhouses in DFW",

@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh",
     description:
-        "Master sake varieties and types. Learn the difference between Junmai, Ginjo, Daiginjo, Honjozo & more. Complete guide to choosing the right sake for your palate and preferences.",
+        "Master sake varieties and types. Learn the difference between Junmai, Ginjo, Daiginjo, Honjozo & more. Complete guide to choosing the right sake for.",
     keywords: [
         "types of sake",
         "sake varieties",

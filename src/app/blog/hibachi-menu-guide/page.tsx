@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Restaurant Menu: Explore Flavorful Delights | Jinbeh",
   description:
-    "Discover the excitement of a hibachi restaurant menu, featuring sizzling meats, fresh seafood, and delightful desserts. Explore diverse hibachi food options and enjoy a memorable dining experience.",
+    "Discover the excitement of a hibachi restaurant menu, featuring sizzling meats, fresh seafood, and delightful desserts. Explore diverse hibachi food.",
   keywords: [
     "hibachi menu",
     "hibachi restaurant menu",

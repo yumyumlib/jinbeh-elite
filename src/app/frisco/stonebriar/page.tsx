@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Stonebriar Mall | Jinbeh Frisco | Hibachi & Sushi",
   description:
-    "Looking for hibachi or sushi near Stonebriar Centre? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese cuisine in Frisco, TX.",
+    "Looking for hibachi or sushi near Stonebriar Centre? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese.",
   keywords: [
     "japanese restaurant near stonebriar",
     "hibachi near stonebriar mall",

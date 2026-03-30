@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Party Catering Services | Jinbeh Japanese Restaurant | DFW Catering",
   description:
-    "Bring Jinbeh to your party! Japanese catering for birthday parties, celebrations, and events in Frisco, Lewisville, and DFW. Fresh sushi, appetizers, and hibachi-style catering.",
+    "Bring Jinbeh to your party! Japanese catering for birthday parties, celebrations, and events in Frisco, Lewisville, and DFW. Fresh sushi, appetizers.",
   keywords: [
     "party catering frisco",
     "birthday party catering",

@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Plano | Hibachi & Sushi | Jinbeh",
-  description: "Looking for hibachi and sushi near Plano, TX? Jinbeh is only minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi. Reserve your table today.",
+  description: "Looking for hibachi and sushi near Plano, TX? Jinbeh is only minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi.",
   keywords: [
     "japanese restaurant plano tx",
     "hibachi near plano",

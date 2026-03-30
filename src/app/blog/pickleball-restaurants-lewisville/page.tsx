@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh",
   description:
-    "Looking for restaurants near pickleball in Lewisville? Jinbeh is just 2 doors from The Picklr! Enjoy hibachi or sushi after your game. Perfect for date nights & team dinners.",
+    "Looking for restaurants near pickleball in Lewisville? Jinbeh is just 2 doors from The Picklr! Enjoy hibachi or sushi after your game. Perfect for.",
   keywords: [
     "restaurants near pickleball lewisville",
     "restaurants near pickleball in lewisville",

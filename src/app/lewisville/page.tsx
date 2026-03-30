@@ -313,9 +313,9 @@ export default function LewisvillePage() {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               {/* Location Card */}
               <div className="card">
-                <h3 className="font-heading text-xl font-semibold text-charcoal mb-4">
+                <h2 className="font-heading text-xl font-semibold text-charcoal mb-4">
                   Location
-                </h3>
+                </h2>
                 <address className="not-italic text-charcoal/80">
                   <p>{location.address.street}</p>
                   <p>{location.address.suite}</p>

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Date Night Restaurant Frisco & Lewisville | Romantic Dinner | Jinbeh Japanese Restaurant",
-  description: "Plan the perfect date night at Jinbeh! Romantic hibachi dinner, sushi, sake & cocktails in Frisco and Lewisville TX. Impress your date with tableside entertainment.",
+  description: "Plan the perfect date night at Jinbeh! Romantic hibachi dinner, sushi, sake & cocktails in Frisco and Lewisville TX. Impress your date with tableside.",
   keywords: [
     "date night restaurant frisco",
     "date night restaurants near me",

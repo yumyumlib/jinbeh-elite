@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Kids Menu | Jinbeh Lewisville Japanese Restaurant",
   description:
-    "Fun and delicious kids menu at Jinbeh Lewisville! Hibachi, sushi rolls, sides, and desserts for children. Perfect for families. Birthday parties available. Off I-35E near Vista Ridge Mall.",
+    "Fun and delicious kids menu at Jinbeh Lewisville! Hibachi, sushi rolls, sides, and desserts for children. Perfect for families. Birthday parties.",
   keywords: [
     "kids menu lewisville",
     "children's menu hibachi",

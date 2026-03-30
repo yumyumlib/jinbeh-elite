@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Premium Sake Flight Lewisville - Japanese Tasting",
-  description: "Three premium sake tasting flight at Jinbeh Lewisville. Experience authentic Japanese sakes with expert guidance. Best sake selection near Vista Ridge (972) 221-3888.",
+  description: "Three premium sake tasting flight at Jinbeh Lewisville. Experience authentic Japanese sakes with expert guidance. Best sake selection near Vista.",
   keywords: ["sake flight lewisville","sake tasting","premium sake","junmai sake","sake menu","japanese cocktails lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Sake Flight | Jinbeh Lewisville",

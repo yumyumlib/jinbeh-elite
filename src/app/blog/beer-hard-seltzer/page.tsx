@@ -7,7 +7,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist | Jinbeh DFW",
     description:
-        "Explore Jinbeh's Japanese beer and hard seltzer selection. Sapporo on tap, Asahi, Kirin Ichiban, and craft seltzers—perfectly paired with hibachi and sushi.",
+        "Explore Jinbeh's Japanese beer and hard seltzer selection. Sapporo on tap, Asahi, Kirin Ichiban, and craft seltzers—perfectly paired with hibachi and.",
     keywords: [
         "japanese beer",
         "sapporo beer",
@@ -95,7 +95,7 @@ export default function BeerHardSeltzer() {
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Beer Hard Seltzer" }]} />
       </div>
-            <h2>The Japanese Beer Experience</h2>
+            <h1>The Japanese Beer Experience</h1>
 
             <p>
                 There's a reason Japanese beers have become some of the most 

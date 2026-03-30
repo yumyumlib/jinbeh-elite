@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Starwood | Jinbeh Frisco | Hibachi & Sushi",
   description:
-    "Looking for hibachi or sushi near Starwood in Frisco? Jinbeh is your premier destination! Fresh sushi, exciting teppanyaki shows, and authentic Japanese cuisine in Frisco, TX.",
+    "Looking for hibachi or sushi near Starwood in Frisco? Jinbeh is your premier destination! Fresh sushi, exciting teppanyaki shows, and authentic.",
   keywords: [
     "japanese restaurant starwood frisco",
     "hibachi near starwood",

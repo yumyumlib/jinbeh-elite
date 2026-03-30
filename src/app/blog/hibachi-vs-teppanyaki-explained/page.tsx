@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions | Jinbeh",
   description:
-    "What's the difference between hibachi and teppanyaki? Explore the origins, cooking methods, and dining experiences. Understand why 'hibachi restaurants' actually serve teppanyaki.",
+    "What's the difference between hibachi and teppanyaki? Explore the origins, cooking methods, and dining experiences. Understand why 'hibachi.",
   keywords: [
     "hibachi vs teppanyaki",
     "difference between hibachi and teppanyaki",

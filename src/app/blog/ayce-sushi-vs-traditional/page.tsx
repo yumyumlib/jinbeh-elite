@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "AYCE Sushi vs. Traditional: What You Should Know | Jinbeh",
     description:
-        "Compare all-you-can-eat sushi and traditional sushi restaurants. Learn about freshness, fish quality, FDA guidelines, and how each dining format affects your experience.",
+        "Compare all-you-can-eat sushi and traditional sushi restaurants. Learn about freshness, fish quality, FDA guidelines, and how each dining format.",
     keywords: [
         "AYCE sushi vs traditional",
         "all you can eat sushi quality",
@@ -136,7 +136,7 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
                 This guide breaks down the real differences between these two dining formats, so you can choose the experience that best fits what you are looking for, whether that is value, quality, ambiance, or all three.
             </p>
 
-            <h2>How AYCE Sushi Restaurants Work</h2>
+            <h1>How AYCE Sushi Restaurants Work</h1>
 
             <p>
                 All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from $25 to $40 per person. To make this model profitable, these restaurants rely on several key strategies.

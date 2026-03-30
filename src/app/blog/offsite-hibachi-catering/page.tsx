@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki",
   description:
-    "Elevate your next event with Jinbeh's offsite events catering. Experience Japanese flavors and interactive hibachi performances right at home, ensuring unforgettable culinary moments.",
+    "Elevate your next event with Jinbeh's offsite events catering. Experience Japanese flavors and interactive hibachi performances right at home.",
   keywords: [
     "hibachi catering near me",
     "offsite catering dallas",

@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Lunch Ideas for Workdays: Flavor & Fun | Jinbeh",
   description:
-    "Elevate your workday with flavorful hibachi lunch ideas, featuring sizzling delights from Lewisville to Frisco. Discover lunch specials and create your own hibachi experience with easy recipes.",
+    "Elevate your workday with flavorful hibachi lunch ideas, featuring sizzling delights from Lewisville to Frisco. Discover lunch specials and create.",
   keywords: [
     "hibachi lunch ideas",
     "hibachi lunch near me",

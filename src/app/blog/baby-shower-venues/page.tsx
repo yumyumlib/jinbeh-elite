@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Top Baby Shower Venues: Best Places to Host | Jinbeh",
   description:
-    "Discover the best places to host a baby shower, from cozy homes to elegant gardens. Explore unique venues and find the perfect spot for a memorable celebration.",
+    "Discover the best places to host a baby shower, from cozy homes to elegant gardens. Explore unique venues and find the perfect spot for a memorable.",
   keywords: [
     "baby shower venues",
     "where to host baby shower",

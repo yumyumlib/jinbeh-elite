@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Salmon Sashimi Near Me: Top Picks & Tips | Jinbeh",
     description:
-        "Discover the best salmon sashimi near you! Our guide covers where to find fresh, quality sashimi at local markets, restaurants, and online. Expert tips included.",
+        "Discover the best salmon sashimi near you! Our guide covers where to find fresh, quality sashimi at local markets, restaurants, and online. Expert.",
     keywords: [
         "salmon sashimi near me",
         "best salmon sashimi",

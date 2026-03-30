@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Top Birthday Celebration Restaurants | Special Moments at Jinbeh",
     description:
-        "Discover the best birthday celebration restaurants with unique experiences and special perks. From hibachi shows to themed dining, make your birthday unforgettable at Jinbeh.",
+        "Discover the best birthday celebration restaurants with unique experiences and special perks. From hibachi shows to themed dining, make your birthday.",
     keywords: [
         "birthday celebration restaurants",
         "restaurants with birthday specials",

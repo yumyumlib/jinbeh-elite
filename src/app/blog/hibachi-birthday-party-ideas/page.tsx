@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide | Jinbeh",
   description:
-    "Plan the perfect hibachi birthday party! From kids celebrations to adult bashes, discover why hibachi makes birthdays unforgettable with fire, food, and entertainment.",
+    "Plan the perfect hibachi birthday party! From kids celebrations to adult bashes, discover why hibachi makes birthdays unforgettable with fire, food.",
   keywords: [
     "hibachi birthday party",
     "birthday party hibachi",

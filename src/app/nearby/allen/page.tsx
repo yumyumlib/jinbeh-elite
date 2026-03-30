@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Allen | Hibachi & Sushi | Jinbeh",
-  description: "Looking for hibachi and sushi near Allen, TX? Jinbeh is only minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi. Reserve your table today.",
+  description: "Looking for hibachi and sushi near Allen, TX? Jinbeh is only minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi.",
   keywords: [
     "japanese restaurant allen tx",
     "hibachi near allen texas",

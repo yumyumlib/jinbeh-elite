@@ -14,11 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const routes: MetadataRoute.Sitemap = [];
 
     // Accurate lastmod dates per content section
-    const coreLastMod = new Date('2026-03-25');      // Last major update
-    const menuLastMod = new Date('2026-03-15');       // Menu items stable
+    const coreLastMod = new Date('2026-03-29');      // Last major update
+    const menuLastMod = new Date('2026-03-29');       // Menu items stable
     const celebrationsLastMod = new Date('2026-02-18'); // Celebration pages last batch
     const nearbyLastMod = new Date('2026-01-30');      // Nearby city pages created
-    const blogLastMod = new Date('2026-03-25');        // Blog hub updated
+    const blogLastMod = new Date('2026-03-29');        // Blog hub updated
 
     // 1. Core Pages
     const corePages = [

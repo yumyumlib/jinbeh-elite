@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Baby Shower Venues Frisco TX | Baby Shower Restaurant | Jinbeh Japanese",
-  description: "Host your baby shower at Jinbeh Japanese Restaurant! Fun hibachi entertainment, delicious food & memorable celebration. Baby shower venues in Frisco & Lewisville TX.",
+  description: "Host your baby shower at Jinbeh Japanese Restaurant! Fun hibachi entertainment, delicious food & memorable celebration. Baby shower venues in Frisco.",
   keywords: [
     "baby shower venues frisco",
     "baby shower venues near me",

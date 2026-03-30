@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Sushi Identification Chart | Complete Guide to Types & Flavors",
     description:
-        "Explore our comprehensive sushi identification chart. Learn different sushi types, names, ingredients, and flavors. Perfect guide for sushi lovers and restaurant visitors.",
+        "Explore our comprehensive sushi identification chart. Learn different sushi types, names, ingredients, and flavors. Perfect guide for sushi lovers.",
     keywords: [
         "sushi identification chart",
         "types of sushi",

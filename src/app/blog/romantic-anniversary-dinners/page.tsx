@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh",
   description:
-    "Discover the top romantic spots for anniversary dinners near you, offering intimate settings, exquisite cuisine, and unforgettable ambiance to celebrate your love.",
+    "Discover the top romantic spots for anniversary dinners near you, offering intimate settings, exquisite cuisine, and unforgettable ambiance to.",
   keywords: [
     "romantic anniversary dinner",
     "anniversary dinner near me",

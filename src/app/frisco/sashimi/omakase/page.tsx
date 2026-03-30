@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Omakase Selection | Jinbeh Frisco Sashimi Menu",
-  description: "Chef\'s choice tasting of the day\'s best Enjoy Omakase Selection at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from Legacy West. Call (214) 619-1200 to reserve.",
+  description: "Chef\'s choice tasting of the day\'s best Enjoy Omakase Selection at Jinbeh Japanese Restaurant in Frisco, TX. Near Stonebriar Centre, minutes from.",
   keywords: ["omakase frisco","omakase dallas","omakase sushi near me","chef tasting sushi","premium sushi experience","sashimi near me frisco","japanese restaurant frisco","best sushi frisco tx"],
   openGraph: {
     title: "Omakase Selection | Jinbeh Frisco",

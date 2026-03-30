@@ -9,7 +9,7 @@ import { MagicCard } from "@/components/ui/magic-card";
 export const metadata: Metadata = {
   title: "Private Dining at Jinbeh | Exclusive Events in Frisco & Lewisville",
   description:
-    "Host your private event at Jinbeh Japanese Restaurant. Exclusive private dining rooms, hibachi entertainment, and custom menus for celebrations, corporate events, and intimate gatherings.",
+    "Host your private event at Jinbeh Japanese Restaurant. Exclusive private dining rooms, hibachi entertainment, and custom menus for celebrations.",
   keywords: [
     "private dining frisco",
     "private dining room restaurant",

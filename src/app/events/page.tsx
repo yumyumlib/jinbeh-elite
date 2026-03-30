@@ -11,7 +11,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Host your next event at Jinbeh! Private dining in Frisco (40 guests) & Lewisville (30 guests) with hibachi entertainment, custom menus, and dedicated event coordination.",
+    "Host your next event at Jinbeh! Private dining in Frisco (40 guests) & Lewisville (30 guests) with hibachi entertainment, custom menus, and dedicated.",
   keywords: [
     "event venue frisco tx",
     "private dining room frisco",

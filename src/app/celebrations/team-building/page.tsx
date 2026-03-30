@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Team Building Events | Corporate Dining | Jinbeh Japanese Restaurant Frisco & Lewisville TX",
   description:
-    "Strengthen team bonds with hibachi entertainment at Jinbeh! Interactive corporate team building events in Frisco and Lewisville. Book your team event today.",
+    "Strengthen team bonds with hibachi entertainment at Jinbeh! Interactive corporate team building events in Frisco and Lewisville. Book your team event.",
   keywords: [
     "team building frisco",
     "corporate team building events",

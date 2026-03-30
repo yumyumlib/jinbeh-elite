@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Maximize Jinbeh Gift Cards: Deals, Balance Check & Tips 2025",
   description:
-    "Unlock the full potential of your Jinbeh gift card. Learn how to find deals, check balances, and enjoy premium dining at Jinbeh's Frisco and Lewisville locations.",
+    "Unlock the full potential of your Jinbeh gift card. Learn how to find deals, check balances, and enjoy premium dining at Jinbeh's Frisco and.",
   keywords: [
     "jinbeh gift card",
     "gift card deals",

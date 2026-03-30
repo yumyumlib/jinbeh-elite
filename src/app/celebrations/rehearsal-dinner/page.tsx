@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Rehearsal Dinner Venues Frisco TX | Wedding Rehearsal Restaurant | Jinbeh",
-  description: "Host your wedding rehearsal dinner at Jinbeh Japanese Restaurant. Private hibachi tables, memorable entertainment & delicious cuisine. Perfect rehearsal dinner venues in Frisco & Lewisville TX.",
+  description: "Host your wedding rehearsal dinner at Jinbeh Japanese Restaurant. Private hibachi tables, memorable entertainment & delicious cuisine. Perfect.",
   keywords: [
     "rehearsal dinner venues frisco",
     "rehearsal dinner venues near me",

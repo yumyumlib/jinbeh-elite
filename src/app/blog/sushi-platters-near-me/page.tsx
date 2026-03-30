@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Sushi Platters Near Me: Party Trays & Catering | Jinbeh DFW",
     description:
-        "Order sushi platters near you in DFW! Jinbeh offers party trays, catering platters, and custom sushi selections for events. Fresh fish, expert rolls, since 1988.",
+        "Order sushi platters near you in DFW! Jinbeh offers party trays, catering platters, and custom sushi selections for events. Fresh fish, expert rolls.",
     keywords: [
         "sushi platters near me",
         "sushi party tray",

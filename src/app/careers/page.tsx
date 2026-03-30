@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Careers at Jinbeh | Join Our Family - Frisco & Lewisville, TX",
   description:
-    "Join the Jinbeh family! We're hiring passionate individuals for positions in hibachi cooking, sushi preparation, hospitality, and more. Build your career at a family-owned Japanese restaurant.",
+    "Join the Jinbeh family! We're hiring passionate individuals for positions in hibachi cooking, sushi preparation, hospitality, and more. Build your.",
   keywords: [
     "jinbeh careers",
     "japanese restaurant jobs",

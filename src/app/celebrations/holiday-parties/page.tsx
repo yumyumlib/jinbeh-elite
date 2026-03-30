@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Holiday Parties & Christmas Dinners | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
   description:
-    "Host your holiday party at Jinbeh! Christmas dinners, New Year celebrations, and festive gatherings with hibachi entertainment. Book your holiday celebration in Frisco or Lewisville.",
+    "Host your holiday party at Jinbeh! Christmas dinners, New Year celebrations, and festive gatherings with hibachi entertainment. Book your holiday.",
   keywords: [
     "holiday party frisco",
     "christmas dinner frisco tx",

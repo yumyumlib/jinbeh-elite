@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Lunar New Year Dinner Frisco & Lewisville | Chinese New Year | Jinbeh Japanese Restaurant",
-  description: "Celebrate Lunar New Year at Jinbeh! Ring in the Year of the Snake with hibachi, sushi, and authentic Japanese dining in Frisco and Lewisville TX. Reservations recommended!",
+  description: "Celebrate Lunar New Year at Jinbeh! Ring in the Year of the Snake with hibachi, sushi, and authentic Japanese dining in Frisco and Lewisville TX.",
   keywords: [
     "lunar new year dinner frisco",
     "chinese new year restaurant frisco tx",

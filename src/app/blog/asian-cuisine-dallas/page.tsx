@@ -8,7 +8,7 @@ import { Accordion } from "@/components/ui/accordion";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Top Asian Cuisine & Fusion Spots in Dallas TX | Jinbeh",
-    description: "Discover the rich tapestry of Asian cuisine Frisco in Dallas. From traditional dishes to innovative fusion, explore delightful flavors and culinary creativity at Dallas restaurants.",
+    description: "Discover the rich tapestry of Asian cuisine Frisco in Dallas. From traditional dishes to innovative fusion, explore delightful flavors and culinary.",
     keywords: ["asian cuisine dallas", "asian fusion restaurants", "best asian restaurants dallas tx", "fusion cuisine dallas"],
     openGraph: {
         title: "Top Asian Cuisine & Fusion Spots in Dallas TX",

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Anniversary Dinner | Romantic Japanese Dining | Jinbeh Frisco & Lewisville",
-  description: "Celebrate your anniversary with an unforgettable hibachi dinner at Jinbeh. Romantic atmosphere, exceptional Japanese cuisine, and tableside entertainment in Frisco and Lewisville TX.",
+  description: "Celebrate your anniversary with an unforgettable hibachi dinner at Jinbeh. Romantic atmosphere, exceptional Japanese cuisine, and tableside.",
   keywords: [
     "anniversary dinner frisco",
     "romantic restaurant frisco tx",

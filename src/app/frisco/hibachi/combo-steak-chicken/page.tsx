@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Steak & Chicken Combo Hibachi Frisco | Dual Protein",
-  description: "Filet mignon paired with chicken teriyaki. 450-500 calories, 45-50g protein. Balanced meat combo. Includes soup, salad, rice, grilled vegetables. Jinbeh Frisco.",
+  description: "Filet mignon paired with chicken teriyaki. 450-500 calories, 45-50g protein. Balanced meat combo. Includes soup, salad, rice, grilled vegetables.",
   keywords: ["steak chicken combo hibachi frisco","dual protein teppanyaki","hibachi combination dinner frisco tx","filet mignon chicken hibachi","best hibachi near me frisco","teppanyaki restaurant frisco","hibachi near me frisco"],
   openGraph: {
     title: "Steak & Chicken Combo | Jinbeh Frisco",

@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Legacy West | Jinbeh Frisco | Hibachi & Sushi",
   description:
-    "Looking for hibachi or sushi near Legacy West? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese cuisine in Frisco, TX.",
+    "Looking for hibachi or sushi near Legacy West? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese cuisine in.",
   keywords: [
     "japanese restaurant near legacy west",
     "hibachi near legacy frisco",

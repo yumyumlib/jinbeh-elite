@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Castle Hills Lewisville | Jinbeh Hibachi & Sushi",
   description:
-    "Discover authentic Japanese cuisine in Castle Hills, Lewisville! Jinbeh offers hibachi shows, fresh sushi, and teppanyaki dining. Perfect for families and celebrations.",
+    "Discover authentic Japanese cuisine in Castle Hills, Lewisville! Jinbeh offers hibachi shows, fresh sushi, and teppanyaki dining. Perfect for.",
   keywords: [
     "japanese restaurant castle hills lewisville",
     "hibachi near castle hills",

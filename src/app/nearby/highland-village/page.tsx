@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Japanese Restaurant Highland Village TX | Hibachi & Sushi | Jinbeh",
-  description: "Premium hibachi and sushi restaurant serving Highland Village, TX. Jinbeh is just minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi. Reserve your table today.",
+  description: "Premium hibachi and sushi restaurant serving Highland Village, TX. Jinbeh is just minutes away in Frisco! Authentic Japanese cuisine, teppanyaki.",
   keywords: [
     "japanese restaurant highland village tx",
     "hibachi highland village texas",

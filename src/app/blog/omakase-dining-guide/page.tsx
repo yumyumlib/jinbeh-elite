@@ -7,7 +7,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Omakase: Unraveling the Unique Dining Art | Jinbeh",
-    description: "Experience the art of Japanese omakase, a personalized dining journey highlighting chef creativity and seasonality. Discover omakase at restaurants like Jinbeh in Dallas.",
+    description: "Experience the art of Japanese omakase, a personalized dining journey highlighting chef creativity and seasonality. Discover omakase at restaurants.",
     keywords: ["omakase", "omakase dining", "japanese omakase", "sushi omakase", "omakase restaurant", "chef tasting menu"],
     openGraph: {
         title: "Omakase Dining Guide: Everything You Need to Know",

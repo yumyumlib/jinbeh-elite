@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Jumbo Shrimp Hibachi Frisco | Best Seafood Teppanyaki",
-  description: "Jumbo shrimp seared tableside. 120-150 calories per serving, 22-25g protein. Low-carb, protein-rich seafood option. Includes soup, salad, rice, vegetables. Jinbeh Frisco.",
+  description: "Jumbo shrimp seared tableside. 120-150 calories per serving, 22-25g protein. Low-carb, protein-rich seafood option. Includes soup, salad, rice.",
   keywords: ["hibachi shrimp frisco","jumbo shrimp teppanyaki","garlic butter shrimp hibachi","hibachi seafood dinner frisco","best hibachi near me frisco","japanese steakhouse frisco","hibachi near me frisco"],
   openGraph: {
     title: "Jumbo Shrimp | Jinbeh Frisco",

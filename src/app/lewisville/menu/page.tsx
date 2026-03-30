@@ -11,7 +11,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Lewisville | Hibachi & Sushi Menu Near Vista Ridge Mall",
   description:
-    "Explore Jinbeh Lewisville's menu featuring fresh sushi, hibachi teppanyaki, lunch specials, and sake. View our hibachi menu, sushi rolls, and Japanese cuisine options near Vista Ridge Mall Centre.",
+    "Explore Jinbeh Lewisville's menu featuring fresh sushi, hibachi teppanyaki, lunch specials, and sake. View our hibachi menu, sushi rolls, and.",
   keywords: [
     "jinbeh lewisville menu",
     "hibachi menu lewisville",
@@ -285,7 +285,7 @@ export default function LewisvilleMenuPage() {
                   <div className="space-y-3 mt-6">
                     {category.items.map((item) => (
                       <div key={item.name} className="border-b border-charcoal/10 pb-2">
-                        <h4 className="font-medium text-charcoal">{item.name}</h4>
+                        <h2 className="font-medium text-charcoal">{item.name}</h2>
                         <p className="text-sm text-charcoal/80">{item.description}</p>
                       </div>
                     ))}

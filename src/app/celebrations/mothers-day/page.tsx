@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Mother's Day Dinner Frisco & Lewisville | Celebrate Mom | Jinbeh Japanese Restaurant",
-  description: "Treat Mom to an unforgettable Mother's Day dinner at Jinbeh! Hibachi, sushi, and family-style Japanese dining in Frisco and Lewisville TX. Make reservations early!",
+  description: "Treat Mom to an unforgettable Mother's Day dinner at Jinbeh! Hibachi, sushi, and family-style Japanese dining in Frisco and Lewisville TX. Make.",
   keywords: [
     "mothers day dinner frisco",
     "mothers day restaurant frisco tx",

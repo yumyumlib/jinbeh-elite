@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Corporate Dinner & Team Events Frisco TX | Private Dining | Jinbeh Japanese Restaurant",
-  description: "Host memorable corporate dinners, team building events & business celebrations at Jinbeh. Private hibachi tables, group sushi platters & professional service in Frisco & Lewisville TX.",
+  description: "Host memorable corporate dinners, team building events & business celebrations at Jinbeh. Private hibachi tables, group sushi platters & professional.",
   keywords: [
     "corporate dinner frisco",
     "corporate dinner near me",

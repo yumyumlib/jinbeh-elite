@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Premium Sake Flight Frisco - Japanese Tasting | Jinbeh",
-  description: "Three premium sake tasting flight at Jinbeh Frisco. Experience authentic Japanese sakes with expert guidance. Best sake selection near Stonebriar (214) 619-1200.",
+  description: "Three premium sake tasting flight at Jinbeh Frisco. Experience authentic Japanese sakes with expert guidance. Best sake selection near Stonebriar.",
   keywords: ["sake flight frisco","sake tasting","premium sake","junmai sake","sake menu","japanese cocktails frisco","jinbeh frisco"],
   openGraph: {
     title: "Sake Flight | Premium Japanese Tasting Frisco",

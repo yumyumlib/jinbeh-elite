@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Things to Do in Frisco TX: Top Activities & Dining | Jinbeh",
     description:
-        "Discover the best things to do in Frisco TX! From The Star to Stonebriar, top attractions, family activities, and where to eat. End your day at Jinbeh since 1988.",
+        "Discover the best things to do in Frisco TX! From The Star to Stonebriar, top attractions, family activities, and where to eat. End your day at.",
     keywords: [
         "things to do in frisco tx",
         "frisco texas activities",

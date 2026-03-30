@@ -94,9 +94,9 @@ export default function MenuPage() {
                 {/* CTA */}
                 <section className="py-16 bg-charcoal text-white">
                     <div className="container mx-auto px-6 text-center">
-                        <h2 className="text-3xl font-heading font-bold mb-4">
+                        <h1 className="text-3xl font-heading font-bold mb-4">
                             Ready to Dine?
-                        </h2>
+                        </h1>
                         <p className="text-white/80 mb-8">
                             Browse the Jinbeh menu — our hibachi menu, sushi menu Frisco platters, and Japanese restaurant menu Lewisville selections await. Explore our <Link href="/blog/types-of-sushi" className="text-soft-gold hover:underline">guide to sushi varieties</Link> or discover the perfect <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing</Link> for your meal.
                         </p>

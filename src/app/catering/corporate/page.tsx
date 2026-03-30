@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Corporate Catering | Jinbeh Japanese Restaurant | Frisco, Dallas, DFW",
   description:
-    "Elevate your corporate events with authentic Japanese catering. Office lunches, client meetings, team celebrations, and business events. 38 years of excellence serving Fortune 500 companies.",
+    "Elevate your corporate events with authentic Japanese catering. Office lunches, client meetings, team celebrations, and business events. 38 years of.",
   keywords: [
     "corporate catering frisco",
     "business catering japanese",

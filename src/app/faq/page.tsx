@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "FAQ | Jinbeh Japanese Restaurant - Frisco & Lewisville TX",
   description:
-    "Frequently asked questions about Jinbeh Japanese Restaurant. Find answers about reservations, menu, dietary options, private dining, and more in Frisco and Lewisville, TX.",
+    "Frequently asked questions about Jinbeh Japanese Restaurant. Find answers about reservations, menu, dietary options, private dining, and more in.",
   keywords: [
     "jinbeh faq",
     "japanese restaurant questions",

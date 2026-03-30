@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations | Jinbeh",
     description:
-        "Discover the top bachelorette restaurants in Dallas for unforgettable celebrations. From Jinbeh's interactive hibachi shows to elegant dining, plan the perfect night!",
+        "Discover the top bachelorette restaurants in Dallas for unforgettable celebrations. From Jinbeh's interactive hibachi shows to elegant dining, plan.",
     keywords: [
         "bachelorette restaurants dallas",
         "best restaurants for bachelorette party",

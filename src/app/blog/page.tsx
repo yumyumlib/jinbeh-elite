@@ -9,7 +9,7 @@ import locations from "@/data/locations.json";
 export const metadata: Metadata = {
     title: "Blog | Jinbeh Japanese Restaurant – Hibachi, Sushi & DFW Dining Guides",
     description:
-        "Explore Japanese cuisine guides, hibachi tips, sushi tutorials, sake pairings, and local DFW dining recommendations from Jinbeh Japanese Restaurant in Frisco and Lewisville.",
+        "Explore Japanese cuisine guides, hibachi tips, sushi tutorials, sake pairings, and local DFW dining recommendations from Jinbeh Japanese Restaurant.",
     keywords: ["japanese food blog", "hibachi tips", "sushi guide", "sake pairing", "japanese cuisine", "DFW dining guide", "frisco restaurant blog", "lewisville food blog"],
     openGraph: {
         title: "Jinbeh Blog | Japanese Dining Tips & Guides",

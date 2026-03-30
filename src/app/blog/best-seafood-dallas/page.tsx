@@ -8,7 +8,7 @@ import { Accordion } from "@/components/ui/accordion";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Seafood Restaurants in Dallas TX: Top Picks | Jinbeh",
-    description: "Discover the best seafood restaurants in Dallas, from upscale dining at The Oceanaire to fresh markets. Explore top seafood spots and Japanese sushi at Jinbeh.",
+    description: "Discover the best seafood restaurants in Dallas, from upscale dining at The Oceanaire to fresh markets. Explore top seafood spots and Japanese sushi.",
     keywords: ["best seafood dallas", "seafood restaurants dallas tx", "fresh sushi dallas", "seafood dining dallas"],
     openGraph: {
         title: "Best Seafood Restaurants in Dallas TX",

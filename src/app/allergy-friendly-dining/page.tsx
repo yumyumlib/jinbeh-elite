@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title:
         "Allergy-Friendly Dining | Jinbeh Japanese Restaurant Frisco & Lewisville TX",
     description:
-        "Jinbeh accommodates gluten-free, dairy-free, nut-free, and shellfish-free dining. Our hibachi chefs cook at your table and adapt to your needs. Frisco & Lewisville.",
+        "Jinbeh accommodates gluten-free, dairy-free, nut-free, and shellfish-free dining. Our hibachi chefs cook at your table and adapt to your needs.",
     keywords: [
         "allergy friendly restaurant frisco",
         "allergy friendly restaurant lewisville tx",

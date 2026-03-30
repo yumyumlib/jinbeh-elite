@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "National Fried Rice Day | September 20th | Jinbeh Japanese Restaurant Frisco & Lewisville",
-  description: "Celebrate National Fried Rice Day at Jinbeh! Watch our hibachi chefs make the best fried rice in Frisco and Lewisville TX. Famous hibachi fried rice prepared tableside.",
+  description: "Celebrate National Fried Rice Day at Jinbeh! Watch our hibachi chefs make the best fried rice in Frisco and Lewisville TX. Famous hibachi fried rice.",
   keywords: [
     "national fried rice day",
     "best fried rice frisco",

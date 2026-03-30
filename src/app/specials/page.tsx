@@ -13,7 +13,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Explore amazing specials at Jinbeh! Happy Hour deals, lunch specials, weekly promotions, and seasonal offers at our Frisco and Lewisville Japanese restaurants.",
+    "Explore amazing specials at Jinbeh! Happy Hour deals, lunch specials, weekly promotions, and seasonal offers at our Frisco and Lewisville Japanese.",
   keywords: [
     "specials",
     "promotions",
@@ -263,9 +263,9 @@ export default function SpecialsPage() {
                     <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">
                       {category.icon}
                     </div>
-                    <h3 className="text-white font-heading text-xl font-bold mb-2">
+                    <h2 className="text-white font-heading text-xl font-bold mb-2">
                       {category.title}
-                    </h3>
+                    </h2>
                     <p className="text-soft-gold text-sm mb-3 font-medium">
                       {category.time}
                     </p>

@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Thanksgiving Dining Guide | Japanese Catering Frisco, DFW | Jinbeh",
     description:
-        "Discover unique Thanksgiving dining alternatives at Jinbeh. Thanksgiving catering, dine-in availability, menu suggestions & ordering deadlines for Frisco & DFW areas.",
+        "Discover unique Thanksgiving dining alternatives at Jinbeh. Thanksgiving catering, dine-in availability, menu suggestions & ordering deadlines for.",
     keywords: [
         "thanksgiving catering frisco",
         "restaurants open thanksgiving frisco",

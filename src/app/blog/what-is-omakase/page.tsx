@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "What is Omakase? A Complete Guide to the Japanese Sushi Experience | Jinbeh",
     description:
-        "Discover what omakase means and what to expect during this authentic Japanese dining experience. Learn etiquette, history, and tips for your first omakase at Jinbeh.",
+        "Discover what omakase means and what to expect during this authentic Japanese dining experience. Learn etiquette, history, and tips for your first.",
     keywords: [
         "what is omakase",
         "omakase meaning",

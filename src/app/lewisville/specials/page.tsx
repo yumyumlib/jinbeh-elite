@@ -11,7 +11,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Lewisville Specials & Deals | Jinbeh Japanese Restaurant",
   description:
-    "Check out exclusive specials at Jinbeh Lewisville! Happy Hour, lunch deals, and weekly promotions. Great discounts on sushi, hibachi, and Japanese cuisine near I-35E.",
+    "Check out exclusive specials at Jinbeh Lewisville! Happy Hour, lunch deals, and weekly promotions. Great discounts on sushi, hibachi, and Japanese.",
   keywords: [
     "lewisville specials",
     "lewisville deals",

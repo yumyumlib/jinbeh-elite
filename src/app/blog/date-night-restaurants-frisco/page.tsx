@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Date Night Restaurants in Frisco TX | Best Romantic Dining",
     description:
-        "Looking for the best date night restaurants in Frisco, TX? Discover Jinbeh's intimate hibachi experience, romantic ambiance, and perfect couples dining. Book your romantic dinner now.",
+        "Looking for the best date night restaurants in Frisco, TX? Discover Jinbeh's intimate hibachi experience, romantic ambiance, and perfect couples.",
     keywords: [
         "date night restaurants frisco",
         "romantic dinner frisco",

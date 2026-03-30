@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Restaurants with Private Rooms Near Me: Exclusive Dining Venues | Jinbeh",
     description:
-        "Discover top restaurants that have private rooms for any event. From corporate gatherings to intimate dinners, find private dining venues offering customizable experiences.",
+        "Discover top restaurants that have private rooms for any event. From corporate gatherings to intimate dinners, find private dining venues offering.",
     keywords: [
         "restaurants with private rooms",
         "private dining rooms near me",

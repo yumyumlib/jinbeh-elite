@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Frisco Specials & Deals | Jinbeh Japanese Restaurant",
   description:
-    "Enjoy exclusive specials at Jinbeh Frisco! Happy Hour, lunch deals, and weekly promotions. Great discounts on sushi, hibachi, and Japanese cuisine near Stonebriar.",
+    "Enjoy exclusive specials at Jinbeh Frisco! Happy Hour, lunch deals, and weekly promotions. Great discounts on sushi, hibachi, and Japanese cuisine.",
   keywords: [
     "frisco specials",
     "frisco deals",

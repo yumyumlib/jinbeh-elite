@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Top Steakhouses in Lewisville TX: Best Steak Spots | Jinbeh",
     description:
-        "Discover the best steakhouses in Lewisville TX. From Jinbeh's sizzling hibachi filet mignon to classic Texas steakhouse experiences—find your perfect steak dinner.",
+        "Discover the best steakhouses in Lewisville TX. From Jinbeh's sizzling hibachi filet mignon to classic Texas steakhouse experiences—find your perfect.",
     keywords: [
         "steakhouses lewisville tx",
         "best steak lewisville",

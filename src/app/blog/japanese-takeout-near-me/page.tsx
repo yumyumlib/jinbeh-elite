@@ -7,7 +7,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
     description:
-        "Find the best sushi Dallas takeout and Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbeh.",
+        "Find the best sushi Dallas takeout and Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese.",
     keywords: [
         "japanese takeout near me",
         "sushi takeout frisco",
@@ -129,7 +129,7 @@ export default function JapaneseTakeoutNearMe() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Japanese Takeout Is Booming in DFW","acceptedAnswer":{"@type":"Answer","text":"Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth—and for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety, and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits different."}}]}` }}
       />
-            <h2>Why Japanese Takeout Is Booming in DFW</h2>
+            <h1>Why Japanese Takeout Is Booming in DFW</h1>
 
             <p>
                 Japanese cuisine has become one of the most popular

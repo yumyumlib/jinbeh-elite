@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Unique Adult Birthday Party Ideas & Themes | Jinbeh Events",
     description:
-        "Elevate your celebration with unforgettable adult birthday party ideas. Discover unique themes, activities, and Jinbeh hibachi experiences for a memorable bash.",
+        "Elevate your celebration with unforgettable adult birthday party ideas. Discover unique themes, activities, and Jinbeh hibachi experiences for a.",
     keywords: [
         "adult birthday party ideas",
         "unique birthday themes",

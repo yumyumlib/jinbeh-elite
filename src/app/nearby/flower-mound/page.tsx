@@ -9,7 +9,7 @@ const friscoLocation = locations.locations.frisco;
 
 export const metadata: Metadata = {
   title: "Japanese Restaurant Flower Mound | Hibachi & Sushi | Jinbeh",
-  description: "Looking for hibachi and sushi in Flower Mound, TX? Jinbeh is only 10 minutes away in Lewisville! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi. Reserve your table today.",
+  description: "Looking for hibachi and sushi in Flower Mound, TX? Jinbeh is only 10 minutes away in Lewisville! Authentic Japanese cuisine, teppanyaki shows, and.",
   keywords: [
     "japanese restaurant flower mound tx",
     "hibachi near flower mound",

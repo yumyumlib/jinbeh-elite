@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Sushi Cooking Classes Near Me | Learn Sushi Making Today",
     description:
-        "Discover local sushi cooking classes for beginners and advanced chefs. Learn authentic techniques from skilled instructors. Perfect for couples, groups, and food enthusiasts.",
+        "Discover local sushi cooking classes for beginners and advanced chefs. Learn authentic techniques from skilled instructors. Perfect for couples.",
     keywords: [
         "sushi cooking classes near me",
         "learn to make sushi",

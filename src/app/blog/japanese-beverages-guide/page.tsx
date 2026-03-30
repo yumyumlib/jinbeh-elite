@@ -7,7 +7,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Popular Japanese Beverages: Iconic Drinks Guide | Jinbeh",
-    description: "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and canned coffee. Explore iconic drinks reflecting tradition and innovation.",
+    description: "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and canned coffee. Explore iconic drinks reflecting tradition and.",
     keywords: ["japanese beverages", "sake", "matcha", "ramune", "canned coffee", "japanese drinks", "shochu", "Japanese tea", "Japanese spirits"],
     openGraph: {
         title: "Popular Japanese Beverages: Complete Drinks Guide",

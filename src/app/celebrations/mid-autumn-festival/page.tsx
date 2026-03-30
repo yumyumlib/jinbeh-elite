@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Mid-Autumn Festival Dinner Frisco & Lewisville | Moon Festival | Jinbeh Japanese Restaurant",
-  description: "Celebrate the Mid-Autumn Festival at Jinbeh! Mark the Moon Festival with family dining, hibachi, and sushi in Frisco and Lewisville TX. Gather under the harvest moon!",
+  description: "Celebrate the Mid-Autumn Festival at Jinbeh! Mark the Moon Festival with family dining, hibachi, and sushi in Frisco and Lewisville TX. Gather under.",
   keywords: [
     "mid autumn festival dinner frisco",
     "moon festival restaurant frisco tx",

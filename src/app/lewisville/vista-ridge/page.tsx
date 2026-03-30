@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Vista Ridge Mall | Jinbeh Lewisville | Hibachi & Sushi",
   description:
-    "Looking for hibachi or sushi near Vista Ridge Mall? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese cuisine in Lewisville, TX.",
+    "Looking for hibachi or sushi near Vista Ridge Mall? Jinbeh is just minutes away! Fresh sushi, exciting teppanyaki shows, and authentic Japanese.",
   keywords: [
     "japanese restaurant near vista ridge mall",
     "hibachi near vista ridge lewisville",

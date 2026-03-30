@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Thanksgiving Dinner Frisco & Lewisville | Skip the Cooking | Jinbeh Japanese Restaurant",
-  description: "Celebrate Thanksgiving at Jinbeh! Let us cook while you relax. Hibachi, sushi, and Japanese dining in Frisco and Lewisville TX. Open Thanksgiving Day - reserve now!",
+  description: "Celebrate Thanksgiving at Jinbeh! Let us cook while you relax. Hibachi, sushi, and Japanese dining in Frisco and Lewisville TX. Open Thanksgiving Day.",
   keywords: [
     "thanksgiving dinner frisco",
     "thanksgiving restaurant frisco tx",

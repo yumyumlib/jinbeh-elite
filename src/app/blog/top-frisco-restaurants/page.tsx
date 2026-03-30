@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Top 10 Frisco Restaurants: Must-Try Dining Spots in Texas | Jinbeh",
     description:
-        "Discover the top 10 must-try Frisco restaurants, from cozy eateries to fine dining gems. Explore Japanese, American, and international cuisine in Frisco's vibrant dining scene.",
+        "Discover the top 10 must-try Frisco restaurants, from cozy eateries to fine dining gems. Explore Japanese, American, and international cuisine in.",
     keywords: [
         "top frisco restaurants",
         "best restaurants frisco tx",

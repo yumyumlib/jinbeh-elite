@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Graduation Party Restaurants | Jinbeh Japanese Restaurant | Frisco TX",
   description:
-    "Celebrate your graduate's achievement at Jinbeh! Graduation party packages, hibachi entertainment, group seating for 10-100+ guests. Book your graduation dinner in Frisco or Lewisville TX.",
+    "Celebrate your graduate's achievement at Jinbeh! Graduation party packages, hibachi entertainment, group seating for 10-100+ guests. Book your.",
   keywords: [
     "graduation party restaurants frisco",
     "graduation dinner venue",

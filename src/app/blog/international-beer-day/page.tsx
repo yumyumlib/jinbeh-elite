@@ -7,7 +7,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
     description:
-        "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban—perfectly paired with hibachi and sushi since 1988.",
+        "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban—perfectly paired with hibachi and sushi.",
     keywords: [
         "international beer day",
         "japanese beer celebration",
@@ -100,7 +100,7 @@ export default function InternationalBeerDay() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"🍺 What Is International Beer Day?","acceptedAnswer":{"@type":"Answer","text":"Every first Friday of August, beer lovers around the wor ld raise their glasses for International Beer Day. It's a celebration of the craft, culture, and community that beer brings to the table—literally."}},{"@type":"Question","name":"Why Japanese Beer Deserves a Spot in Your Celebration","acceptedAnswer":{"@type":"Answer","text":"Japanese brewers have been perfecting their craft since the 1870s, creating some of the world's most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are designed with one goal: to enhance the food you're eating. That food-first philosophy is what makes them extraordinary."}},{"@type":"Question","name":"How to Celebrate at Jinbeh","acceptedAnswer":{"@type":"Answer","text":"Make your International Beer Day more than just a beer—make it an experience:"}}]}` }}
       />
-            <h2>🍺 What Is International Beer Day?</h2>
+            <h1>🍺 What Is International Beer Day?</h1>
 
             <p>
                 Every first Friday of August, beer lovers around the wor

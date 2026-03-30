@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Kids Menu | Jinbeh Frisco Japanese Restaurant",
   description:
-    "Fun and delicious kids menu at Jinbeh Frisco! Hibachi, sushi rolls, sides, and desserts for children. Perfect for families. Birthday parties available. Near Stonebriar Centre.",
+    "Fun and delicious kids menu at Jinbeh Frisco! Hibachi, sushi rolls, sides, and desserts for children. Perfect for families. Birthday parties.",
   keywords: [
     "kids menu frisco",
     "children's menu hibachi",

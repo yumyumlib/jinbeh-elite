@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Happy Hour | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
   description:
-    "Join us for Happy Hour at Jinbeh! Enjoy special prices on sake, Japanese beer, cocktails, and appetizers at our Frisco and Lewisville locations. The perfect way to start your evening.",
+    "Join us for Happy Hour at Jinbeh! Enjoy special prices on sake, Japanese beer, cocktails, and appetizers at our Frisco and Lewisville locations. The.",
   keywords: [
     "happy hour frisco",
     "happy hour lewisville",

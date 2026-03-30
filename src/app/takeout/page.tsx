@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Takeout & Delivery | Jinbeh Japanese Restaurant - Frisco & Lewisville",
   description:
-    "Order Jinbeh for takeout or delivery. Fresh sushi rolls, hibachi entrees, and Japanese favorites delivered to your door via Grubhub and Uber Eats. Fast, convenient dining!",
+    "Order Jinbeh for takeout or delivery. Fresh sushi rolls, hibachi entrees, and Japanese favorites delivered to your door via Grubhub and Uber Eats.",
   keywords: [
     "takeout",
     "delivery",

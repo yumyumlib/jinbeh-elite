@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sea Scallops Hibachi Lewisville | Premium Seared Scallops",
-  description: "Plump sea scallops seared garlic butter tableside. 140-180 calories, 20-22g protein. Delicate, premium seafood. Includes soup, salad, rice, vegetables. Jinbeh Lewisville.",
+  description: "Plump sea scallops seared garlic butter tableside. 140-180 calories, 20-22g protein. Delicate, premium seafood. Includes soup, salad, rice.",
   keywords: ["hibachi scallops lewisville","sea scallops teppanyaki","seared scallops japanese restaurant","hibachi seafood lewisville tx","best hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Sea Scallops | Jinbeh Lewisville",

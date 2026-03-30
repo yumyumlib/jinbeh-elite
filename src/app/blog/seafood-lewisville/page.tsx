@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Seafood in Lewisville TX: Top Restaurants to Try | Jinbeh",
     description:
-        "Discover the best seafood restaurants near me Lewisville, Texas. From Jinbeh's Japanese cuisine to Cajun favorites, explore top picks for fresh fish and sushi.",
+        "Discover the best seafood restaurants near me Lewisville, Texas. From Jinbeh's Japanese cuisine to Cajun favorites, explore top picks for fresh fish.",
     keywords: [
         "seafood restaurants lewisville",
         "best seafood lewisville tx",

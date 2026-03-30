@@ -204,9 +204,9 @@ export default function LunchSpecialsPage() {
                   key={info.location}
                   className="bg-white rounded-2xl p-8 shadow-lg"
                 >
-                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-heading font-bold text-charcoal mb-4">
                     {info.location}
-                  </h3>
+                  </h2>
                   <div className="space-y-4 mb-6">
                     <div>
                       <p className="text-charcoal/80 text-sm uppercase tracking-wide mb-1">

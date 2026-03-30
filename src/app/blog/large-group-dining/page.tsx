@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Top Restaurants for Large Group Dining: Best Big Party Venues | Jinbeh",
     description:
-        "Discover the top restaurants that serve large parties with ease, offering big group dining, seamless reservations, and family-friendly eateries perfect for celebrations.",
+        "Discover the top restaurants that serve large parties with ease, offering big group dining, seamless reservations, and family-friendly eateries.",
     keywords: [
         "large group dining",
         "restaurants for big groups",

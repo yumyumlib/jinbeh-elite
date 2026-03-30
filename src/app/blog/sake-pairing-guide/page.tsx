@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Sake Pairing Guide: Best Pairings with Sushi & Hibachi | Jinbeh",
     description:
-        "Master the art of sake food pairing. Learn how to pair sake with sushi, hibachi, appetizers & more. Expert guide to selecting the perfect sake for your meal.",
+        "Master the art of sake food pairing. Learn how to pair sake with sushi, hibachi, appetizers & more. Expert guide to selecting the perfect sake for.",
     keywords: [
         "sake pairing guide",
         "sake food pairing",

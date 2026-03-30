@@ -7,7 +7,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
     description:
-        "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi—without sacrificing quality since 1988.",
+        "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi—without.",
     keywords: [
         "fast casual japanese",
         "quick japanese lunch",
@@ -100,7 +100,7 @@ export default function FastCasualDiningJinbeh() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"The Jinbeh Difference: Why Quality Matters","acceptedAnswer":{"@type":"Answer","text":"A lot of \"fast casual\" Japanese spots have popped up across DFW—many of them serving pre-made sushi from a case or reheated teriyaki from a steam table. We take a different approach:"}},{"@type":"Question","name":"When to Go Fast vs. Full Experience","acceptedAnswer":{"@type":"Answer","text":"Visit us for lunch Monday through Friday and discover why Jinbeh is the best of both worlds: restaurant-quality Japanese food that works with your schedule. Check our full menu and see what catches your eye."}}]}` }}
       />
-            <h2>Japanese Dining on Your Schedule</h2>
+            <h1>Japanese Dining on Your Schedule</h1>
 
             <p>
                 "Fast casual" and "Japanese restaurant" might seem like a

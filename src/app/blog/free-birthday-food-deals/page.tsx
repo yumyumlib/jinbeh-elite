@@ -7,7 +7,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
   description:
-    "Celebrate your birthday in style with free birthday food deals! Discover where to get complimentary meals, desserts, and treats, making your special day unforgettable.",
+    "Celebrate your birthday in style with free birthday food deals! Discover where to get complimentary meals, desserts, and treats, making your special.",
   keywords: [
     "free birthday food",
     "birthday food deals",
