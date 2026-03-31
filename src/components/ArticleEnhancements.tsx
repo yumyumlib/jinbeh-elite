@@ -433,7 +433,7 @@ export function MenuItemCard({ item }: { item: MenuItemInfo }) {
         <div className="not-prose my-6 bg-white rounded-xl shadow-sm border border-warm-ivory overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition-shadow">
             {item.image && (
                 <div className="relative w-full sm:w-36 h-32 sm:h-auto flex-shrink-0">
-                    <Image src={item.image} alt={item.name} fill className="object-cover" />
+                    <Image src={item.image} alt={item.name} fill className="object-cover" loading="lazy" />
                 </div>
             )}
             <div className="p-4 flex-1 flex flex-col justify-between">
@@ -586,7 +586,7 @@ export function PillarCTA({ type, title, description, linkText, href, image }: P
             {/* Optional Image */}
             {image && (
                 <div className="relative w-full sm:w-1/3 aspect-[4/3] sm:aspect-auto sm:h-full min-h-[200px] flex-shrink-0">
-                    <Image src={image} alt={finalTitle} fill className="object-cover" sizes="(max-width: 640px) 100vw, 33vw" />
+                    <Image src={image} alt={finalTitle} fill className="object-cover" sizes="(max-width: 640px) 100vw, 33vw" loading="lazy" />
                 </div>
             )}
 

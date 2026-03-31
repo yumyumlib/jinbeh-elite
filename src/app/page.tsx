@@ -12,6 +12,17 @@ import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
 import HeroSection from "@/components/HeroSection";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988 | Frisco & Lewisville",
+    description: "DFW's premier Japanese restaurant since 1988. Hibachi shows, fresh sushi, premium sake, and unforgettable dining in Frisco and Lewisville, TX.",
+    alternates: {
+        canonical: "https://jinbeh.com",
+    },
+};
+
+
 
 // Organization Schema for rich snippets
 const organizationSchema = {

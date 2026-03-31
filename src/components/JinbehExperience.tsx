@@ -140,7 +140,7 @@ export default function JinbehExperience() {
                   fill
                   className="object-cover"
                   sizes="100vw"
-                />
+                loading="lazy" />
                 {/* Gradient overlay for text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
                 {/* Label badge */}

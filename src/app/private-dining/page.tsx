@@ -479,7 +479,7 @@ export default function PrivateDiningPage() {
                       alt={`${location.name} private dining`}
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-500"
-                    />
+                    loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal to-transparent" />
                     <h3 className="absolute bottom-6 left-6 right-6 text-3xl font-heading font-bold text-white">
                       Jinbeh {location.name}

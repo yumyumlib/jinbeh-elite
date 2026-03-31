@@ -275,7 +275,7 @@ export default function FriscoMenuPage() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 50vw"
-                    />
+                    loading="lazy" />
                   }
                 >
                   <div className="space-y-3 mt-6">

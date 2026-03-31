@@ -161,7 +161,7 @@ export default async function BlogPage({
                                                         fill
                                                         quality={80}
                                                         className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                                    />
+                                                    loading="lazy" />
                                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
                                                 </div>
                                                 <div className="relative z-10 p-6 pointer-events-none">
@@ -224,7 +224,7 @@ export default async function BlogPage({
                                                             fill
                                                             quality={80}
                                                             className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        />
+                                                        loading="lazy" />
                                                         {category && (
                                                             <span
                                                                 className="absolute top-4 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-white"

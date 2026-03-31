@@ -106,7 +106,7 @@ export default function PhotoGallery({
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     quality={80}
-                  />
+                  loading="lazy" />
                 )}
                 <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors duration-300" />
                 {item.type === "video" && (
@@ -195,7 +195,7 @@ export default function PhotoGallery({
                 height={800}
                 className="max-w-full max-h-[80vh] w-auto h-auto mx-auto rounded-lg object-contain"
                 quality={80}
-              />
+              loading="lazy" />
             )}
             {items[activeIndex].caption && (
               <p className="text-white text-center mt-4 text-lg">

@@ -182,7 +182,7 @@ export default function JapaneseWhiskeyGuide() {
                                     { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6754.jpg" },
                                     { t: "Sake Alcohol Strength Guide", s: "/blog/sake-alcohol-strength", i: "/images/blog/17-C060324-6708.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
-                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" /></div>
+                                            <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" loading="lazy" /></div>
                                             <span className="text-sm group-hover:text-accent-red transition">{r.t}</span>
                                         </Link>
                                     ))}

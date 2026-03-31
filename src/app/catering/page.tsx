@@ -213,7 +213,7 @@ export default function CateringPage() {
                         alt={option.title}
                         fill
                         className="object-cover"
-                      />
+                      loading="lazy" />
                     </div>
                   </div>
 

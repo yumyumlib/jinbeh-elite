@@ -1,37 +1,21 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Order Sushi & Hibachi Online | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
-    description:
-        "Order Jinbeh's fresh sushi rolls, hibachi favorites, and Japanese appetizers for delivery or pickup. Available via Uber Eats, Grubhub, or call direct. Frisco & Lewisville, TX.",
-    keywords: [
-        "order online",
-        "japanese food delivery",
-        "sushi delivery frisco",
-        "hibachi delivery",
-        "japanese restaurant delivery",
-        "uber eats jinbeh",
-        "ubereats jinbeh",
-        "order sushi online",
-        "japanese takeout near me",
-    ],
-    openGraph: {
-        title: "Order Online | Jinbeh Japanese Restaurant",
-        description:
-            "Fresh hibachi, sushi, and Japanese cuisine delivered to your door. Order from Frisco or Lewisville via Uber Eats, Grubhub, or phone.",
-        url: "https://jinbeh.com/order-online",
-        type: "website",
-        images: [
-            {
-                url: "https://jinbeh.com/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
-                width: 1200,
-                height: 630,
-                alt: "Jinbeh Japanese Restaurant — Order Online",
-            },
-        ],
-    },
+    title: "Order Online | Jinbeh Japanese Restaurant — Hibachi & Sushi Delivery",
+    description: "Order Japanese food online from Jinbeh — hibachi, sushi, sashimi, and bento boxes delivered fresh in Frisco and Lewisville.",
     alternates: {
         canonical: "https://jinbeh.com/order-online",
+    },
+    openGraph: {
+        title: "Order Online | Jinbeh Japanese Restaurant",
+        description: "Order Japanese food online from Jinbeh — hibachi, sushi, and more delivered in Frisco and Lewisville.",
+        images: [{
+            url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Jinbeh Order Online — Sushi and Hibachi Delivery",
+        }],
+        url: "https://jinbeh.com/order-online",
     },
 };
 

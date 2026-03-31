@@ -358,7 +358,7 @@ export default function EventsPage() {
                       alt={event.title}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
+                    loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
                   </div>
 
@@ -726,7 +726,7 @@ export default function EventsPage() {
                     alt={item.alt}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  loading="lazy" />
                   <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors" />
                 </div>
               ))}

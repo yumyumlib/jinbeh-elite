@@ -306,7 +306,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                                             alt={related.title}
                                                             fill
                                                             className="object-cover group-hover:scale-105 transition-transform"
-                                                        />
+                                                        loading="lazy" />
                                                     </div>
                                                     <div className="flex-1 min-w-0">
                                                         {relatedCat && (

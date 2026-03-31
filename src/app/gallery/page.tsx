@@ -354,7 +354,7 @@ export default function GalleryPage() {
                           alt={image.alt}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                        loading="lazy" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
                           <div className="text-white">
                             <p className="font-heading font-semibold text-lg">
@@ -391,7 +391,7 @@ export default function GalleryPage() {
                           alt={image.alt}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                        loading="lazy" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
                           <div className="text-white">
                             <p className="font-heading font-semibold text-lg">
@@ -428,7 +428,7 @@ export default function GalleryPage() {
                           alt={image.alt}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                        loading="lazy" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
                           <div className="text-white">
                             <p className="font-heading font-semibold text-lg">
@@ -465,7 +465,7 @@ export default function GalleryPage() {
                           alt={image.alt}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                        loading="lazy" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
                           <div className="text-white">
                             <p className="font-heading font-semibold text-lg">

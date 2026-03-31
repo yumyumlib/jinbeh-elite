@@ -408,7 +408,7 @@ export default function CelebrationsPage() {
                       fill
                       quality={80}
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
+                    loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <h3 className="absolute bottom-4 left-4 right-4 font-heading text-xl font-bold text-white">
                       {celebration.title}

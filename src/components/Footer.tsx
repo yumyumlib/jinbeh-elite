@@ -158,6 +158,9 @@ export default function Footer() {
                   <Link href="/menu" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Sushi & Rolls
                   </Link>
+                  <Link href="/bar" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Cocktails & Sake Bar
+                  </Link>
                   <Link href="/lunch-specials" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Lunch Specials
                   </Link>
@@ -175,6 +178,9 @@ export default function Footer() {
                   </Link>
                   <Link href="/allergy-friendly-dining" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Allergy-Friendly Dining
+                  </Link>
+                  <Link href="/vip-club" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    VIP Club
                   </Link>
                   <Link href="/reservations" className="block text-accent-red font-semibold hover:text-accent-red/80 transition-colors mt-2">
                     Make a Reservation
