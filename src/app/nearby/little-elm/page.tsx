@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Japanese Food Little Elm TX | Hibachi & Sushi | Jinbeh",
-  description: "Best Japanese food and hibachi restaurant in Little Elm, TX. Jinbeh offers authentic Japanese cuisine, teppanyaki shows, and fresh sushi just minutes.",
+  description: "Best Japanese food and hibachi restaurant in Little Elm, TX. Jinbeh offers authentic Japanese cuisine, teppanyaki shows, and fresh sushi just minutes away in Frisco.",
   keywords: [
     "japanese food little elm tx",
     "japanese restaurant little elm texas",

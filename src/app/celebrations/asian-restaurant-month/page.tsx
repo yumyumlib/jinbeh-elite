@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Asian Restaurant Month | May AAPI Heritage Month | Jinbeh Japanese Restaurant Frisco & Lewisville",
-  description: "Celebrate Asian Restaurant Month this May at Jinbeh! Support Asian-owned restaurants during AAPI Heritage Month. Hibachi, sushi, and authentic.",
+  description: "Celebrate Asian Restaurant Month this May at Jinbeh! Support Asian-owned restaurants during AAPI Heritage Month. Hibachi, sushi, and authentic Japanese dining in Frisco.",
   keywords: [
     "asian restaurant month",
     "aapi heritage month restaurant frisco",

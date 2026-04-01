@@ -8,7 +8,7 @@ import { Accordion } from "@/components/ui/accordion";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Ramune Soda: Unique Flavors & Marble Magic | Jinbeh",
-    description: "Discover the unique flavors of Ramune soda, a Japanese favorite with a playful marble seal. Explore its rich history, diverse tastes, and cultural.",
+    description: "Discover the unique flavors of Ramune soda, a Japanese favorite with a playful marble seal. Explore its rich history, diverse tastes, and cultural significance.",
     keywords: ["Ramune soda", "Japanese soda", "Ramune flavors", "marble bottle", "Japanese beverages", "Japanese drinks", "Ramune near me"],
     openGraph: {
         title: "Ramune Soda: Unique Flavors & Marble Magic Guide",

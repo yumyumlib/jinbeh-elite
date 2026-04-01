@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Father's Day Dinner Frisco & Lewisville | Treat Dad | Jinbeh Japanese Restaurant",
-  description: "Celebrate Father's Day at Jinbeh! Hibachi steak, sushi, and Japanese dining Dad will love. Frisco and Lewisville TX locations. Make reservations for.",
+  description: "Celebrate Father's Day at Jinbeh! Hibachi steak, sushi, and Japanese dining Dad will love. Frisco and Lewisville TX locations. Make reservations for Dad's special day!",
   keywords: [
     "fathers day dinner frisco",
     "fathers day restaurant frisco tx",

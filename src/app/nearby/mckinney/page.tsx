@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near McKinney | Hibachi & Sushi | Jinbeh",
-  description: "Looking for hibachi and sushi near McKinney, TX? Jinbeh is just 15 minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh.",
+  description: "Looking for hibachi and sushi near McKinney, TX? Jinbeh is just 15 minutes away in Frisco! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi. Reserve your.",
   keywords: [
     "japanese restaurant mckinney tx",
     "hibachi near mckinney",

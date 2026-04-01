@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Ribeye Steak Hibachi Lewisville | Premium Marbled Beef",
-  description: "Richly marbled ribeye seared tableside. 300-350 calories per 5oz with 25-28g protein. Includes soup, salad, rice, vegetables. Premium Japanese.",
+  description: "Richly marbled ribeye seared tableside. 300-350 calories per 5oz with 25-28g protein. Includes soup, salad, rice, vegetables. Premium Japanese steakhouse. Jinbeh Lewisville.",
   keywords: ["ribeye hibachi lewisville","ribeye steak teppanyaki","black angus hibachi steak","marbled steak japanese restaurant","best hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Ribeye Steak | Jinbeh Lewisville",

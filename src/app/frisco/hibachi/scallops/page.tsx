@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sea Scallops Hibachi Frisco | Premium Seared Scallops",
-  description: "Plump sea scallops seared garlic butter tableside. 140-180 calories, 20-22g protein. Delicate, premium seafood. Includes soup, salad, rice.",
+  description: "Plump sea scallops seared garlic butter tableside. 140-180 calories, 20-22g protein. Delicate, premium seafood. Includes soup, salad, rice, vegetables. Jinbeh Frisco.",
   keywords: ["hibachi scallops frisco","sea scallops teppanyaki","seared scallops japanese restaurant","hibachi seafood frisco tx","best hibachi near me frisco","teppanyaki restaurant frisco","hibachi near me frisco"],
   openGraph: {
     title: "Sea Scallops | Jinbeh Frisco",

@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Sushi Grapevine TX | Premium Sushi Restaurant | Jinbeh",
-  description: "Best sushi restaurant in Grapevine, TX. Jinbeh offers fresh premium sushi and authentic Japanese cuisine just minutes from Grapevine in Frisco.",
+  description: "Best sushi restaurant in Grapevine, TX. Jinbeh offers fresh premium sushi and authentic Japanese cuisine just minutes from Grapevine in Frisco. Reserve your table for an.",
   keywords: [
     "sushi grapevine tx",
     "sushi restaurant grapevine texas",

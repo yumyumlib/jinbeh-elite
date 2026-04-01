@@ -7,7 +7,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Find Yamazaki Whiskey Nearby: Your Complete Guide | Jinbeh",
-    description: "Discover where to find Yamazaki whiskey nearby with our expert guide. Explore local stores, online options, and visit Jinbeh in Dallas for authentic.",
+    description: "Discover where to find Yamazaki whiskey nearby with our expert guide. Explore local stores, online options, and visit Jinbeh in Dallas for authentic Japanese whiskey.",
     keywords: ["Yamazaki whiskey", "where to buy whiskey", "Japanese whiskey near me", "Yamazaki 12 year old", "premium spirits", "Yamazaki tasting", "Japanese whiskey Dallas"],
     openGraph: {
         title: "Find Yamazaki Whiskey Nearby: Complete Buying Guide",

@@ -9,7 +9,7 @@ const lewisvilleLocation = locations.locations.lewisville;
 
 export const metadata: Metadata = {
   title: "Hibachi Coppell TX | Authentic Japanese Restaurant | Jinbeh",
-  description: "Best hibachi restaurant in Coppell, TX. Jinbeh offers authentic teppanyaki shows and premium sushi just minutes from Coppell in Frisco. Reserve your.",
+  description: "Best hibachi restaurant in Coppell, TX. Jinbeh offers authentic teppanyaki shows and premium sushi just minutes from Coppell in Frisco. Reserve your table for an.",
   keywords: [
     "hibachi coppell tx",
     "hibachi restaurant coppell texas",

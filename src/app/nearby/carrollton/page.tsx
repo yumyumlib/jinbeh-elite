@@ -9,7 +9,7 @@ const friscoLocation = locations.locations.frisco;
 
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Carrollton | Hibachi & Sushi | Jinbeh",
-  description: "Looking for hibachi and sushi near Carrollton, TX? Jinbeh is only minutes away in Lewisville! Authentic Japanese cuisine, teppanyaki shows, and fresh.",
+  description: "Looking for hibachi and sushi near Carrollton, TX? Jinbeh is only minutes away in Lewisville! Authentic Japanese cuisine, teppanyaki shows, and fresh sushi. Reserve your.",
   keywords: [
     "japanese restaurant carrollton tx",
     "hibachi near carrollton",

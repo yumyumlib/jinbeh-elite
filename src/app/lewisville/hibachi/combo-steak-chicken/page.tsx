@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Steak & Chicken Combo Hibachi Lewisville | Dual Protein",
-  description: "Filet mignon paired with chicken teriyaki. 450-500 calories, 45-50g protein. Balanced meat combo. Includes soup, salad, rice, grilled vegetables.",
+  description: "Filet mignon paired with chicken teriyaki. 450-500 calories, 45-50g protein. Balanced meat combo. Includes soup, salad, rice, grilled vegetables. Jinbeh Lewisville.",
   keywords: ["steak chicken combo hibachi lewisville","dual protein teppanyaki","hibachi combination dinner lewisville tx","filet mignon chicken hibachi","best hibachi near me lewisville","teppanyaki restaurant lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Steak & Chicken Combo | Jinbeh Lewisville",

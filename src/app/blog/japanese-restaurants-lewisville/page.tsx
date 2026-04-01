@@ -8,7 +8,7 @@ import { Accordion } from "@/components/ui/accordion";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Restaurants Lewisville TX: Top Picks | Jinbeh",
-    description: "Find the best Japanese restaurants in Lewisville TX! From hibachi to sushi, discover authentic dining. Jinbeh offers family-friendly hibachi and.",
+    description: "Find the best Japanese restaurants in Lewisville TX! From hibachi to sushi, discover authentic dining. Jinbeh offers family-friendly hibachi and fresh sushi.",
     keywords: ["japanese restaurant lewisville", "sushi lewisville tx", "hibachi lewisville", "asian food lewisville"],
     openGraph: {
         title: "Best Japanese Restaurants Lewisville TX",

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Valentine's Day Dinner Frisco & Lewisville | Romantic Japanese Dining | Jinbeh",
-  description: "Celebrate Valentine's Day at Jinbeh Japanese Restaurant. Romantic hibachi dinner, fresh sushi, sake, and tableside entertainment in Frisco and.",
+  description: "Celebrate Valentine's Day at Jinbeh Japanese Restaurant. Romantic hibachi dinner, fresh sushi, sake, and tableside entertainment in Frisco and Lewisville TX. Reserve.",
   keywords: [
     "valentines day dinner frisco",
     "valentines day restaurant frisco tx",

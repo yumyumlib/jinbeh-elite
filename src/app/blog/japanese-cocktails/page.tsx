@@ -7,7 +7,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Cocktails: Art, Recipes & Mixology | Jinbeh Dallas",
-    description: "Discover the art of Japanese cocktails with exquisite recipes, traditions, and techniques in Japanese mixology. Try authentic sake and whiskey.",
+    description: "Discover the art of Japanese cocktails with exquisite recipes, traditions, and techniques in Japanese mixology. Try authentic sake and whiskey cocktails at Jinbeh.",
     keywords: ["Japanese cocktails", "sake cocktails", "mixology", "shochu cocktails", "Japanese drinks", "Japanese whiskey cocktails", "signature cocktails Dallas"],
     openGraph: {
         title: "Japanese Cocktails: Art, Recipes & Mixology Guide",

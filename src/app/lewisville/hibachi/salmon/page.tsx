@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Salmon Lewisville | Fresh Atlantic Salmon Teppanyaki",
-  description: "Fresh Atlantic salmon grilled tableside. 200-250 calories per 5oz with 25-28g protein. Omega-3 rich, healthy choice. Includes soup, salad, rice.",
+  description: "Fresh Atlantic salmon grilled tableside. 200-250 calories per 5oz with 25-28g protein. Omega-3 rich, healthy choice. Includes soup, salad, rice, vegetables. Jinbeh Lewisville.",
   keywords: ["hibachi salmon lewisville","salmon teppanyaki restaurant lewisville tx","hibachi salmon calories","omega-3 salmon health benefits","fresh fish hibachi","best hibachi near me lewisville","japanese steakhouse lewisville","hibachi near me lewisville"],
   openGraph: {
     title: "Hibachi Salmon | Jinbeh Lewisville",

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Bar & Drinks | Jinbeh Japanese Restaurant - Sake, Whisky & Cocktails",
-  description: "Discover Jinbeh's premium bar menu featuring Japanese sake, whisky, signature cocktails, and Japanese beer. Experience our curated selection of.",
+  description: "Discover Jinbeh's premium bar menu featuring Japanese sake, whisky, signature cocktails, and Japanese beer. Experience our curated selection of authentic spirits and drinks.",
   keywords: [
     "jinbeh bar",
     "sake menu",
