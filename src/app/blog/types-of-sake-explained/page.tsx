@@ -144,6 +144,16 @@ export default function TypesOfSakeExplained() {
                     <h1 className="text-4xl md:text-6xl font-heading font-bold text-white max-w-4xl mb-4">
                         Types of Sake Explained
                     </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/beverages/SakeAndGlasses.webp"
+                alt="Traditional sake serving at Jinbeh Japanese Restaurant"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
                     <p className="text-xl text-warm-ivory/90 max-w-2xl mb-6">
                         Master sake varieties: Junmai, Ginjo, Daiginjo, and more. Learn what makes each type unique.
                     </p>

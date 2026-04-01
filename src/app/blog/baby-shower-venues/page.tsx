@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -204,6 +205,16 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
 </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/celebrations/jinbeh_group.jpg"
+                alt="Group celebration at Jinbeh Japanese Restaurant"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       <p>
         Organizing a baby shower is a delightful way to celebrate the impending

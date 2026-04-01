@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -116,6 +117,16 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
    </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/BentoBoxLunchSet.jpg"
+                alt="Jinbeh bento box lunch featuring hibachi favorites"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       <h2>Transform Your Workday Lunch</h2>
 

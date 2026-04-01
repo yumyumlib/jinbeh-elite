@@ -58,9 +58,55 @@ const breadcrumbSchema = {
   ]
 };
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I contact Jinbeh Japanese Restaurant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can reach Jinbeh Frisco at (214) 619-1200 or Jinbeh Lewisville at (214) 488-2224. You can also email us through the contact form on our website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your restaurant hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both locations are open for lunch Mon-Fri 11am-2pm, Sat-Sun 11:30am-2:30pm. Dinner is Sun-Thu 5pm-9pm, Fri-Sat 5pm-10pm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept walk-ins?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, walk-ins are welcome at both locations! However, we recommend reservations for hibachi tables, especially on weekends and holidays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are Jinbeh restaurants located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh Frisco is at 2693 Preston Rd Suite 1040 near Stonebriar Centre. Jinbeh Lewisville is at 2440 S Stemmons Fwy #A near Vista Ridge Mall."
+      }
+    }
+  ]
+};
+
 export default function ContactPage() {
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
         <div className="container mx-auto max-w-6xl">
         <BreadcrumbNav items={[{ label: "Contact" }]} />
         </div>

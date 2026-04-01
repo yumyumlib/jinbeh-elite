@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -193,6 +194,16 @@ export default function BeginnerSushiTipsPage() {
         />
 
         </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/photoshoot/sushi-tower.jpg"
+                alt="Sushi tower presentation at Jinbeh Japanese Restaurant"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
         <h2>Welcome to the World of Sushi Making</h2>
 

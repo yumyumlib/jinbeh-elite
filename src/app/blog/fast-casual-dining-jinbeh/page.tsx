@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
@@ -101,6 +102,16 @@ export default function FastCasualDiningJinbeh() {
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"The Jinbeh Difference: Why Quality Matters","acceptedAnswer":{"@type":"Answer","text":"A lot of \"fast casual\" Japanese spots have popped up across DFW—many of them serving pre-made sushi from a case or reheated teriyaki from a steam table. We take a different approach:"}},{"@type":"Question","name":"When to Go Fast vs. Full Experience","acceptedAnswer":{"@type":"Answer","text":"Visit us for lunch Monday through Friday and discover why Jinbeh is the best of both worlds: restaurant-quality Japanese food that works with your schedule. Check our full menu and see what catches your eye."}}]}` }}
       />
             <h1>Japanese Dining on Your Schedule</h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/BentoBoxLunchSet.jpg"
+                alt="Jinbeh bento box lunch set for quick dining"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
             <p>
                 "Fast casual" and "Japanese restaurant" might seem like a

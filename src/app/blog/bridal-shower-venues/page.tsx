@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -180,6 +181,16 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Best Places for Bridal Showers Near Me
       </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/interior/JinbehFriscoTables.jpg"
+                alt="Elegant dining tables at Jinbeh Frisco for private events"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

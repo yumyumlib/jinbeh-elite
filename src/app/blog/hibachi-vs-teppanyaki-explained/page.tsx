@@ -119,6 +119,16 @@ export default function HibachiVsTeppanyakiPage() {
         />
 efinitions
       </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-1200w.webp"
+                alt="Hibachi chef creating artistic fried rice at Jinbeh teppanyaki grill"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       {/* Opening Paragraph */}
       <p>

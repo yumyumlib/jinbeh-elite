@@ -310,6 +310,16 @@ export default function SakePairingGuide() {
                     <h1 className="text-4xl md:text-6xl font-heading font-bold text-white max-w-4xl mb-4">
                         The Ultimate Sake Pairing Guide
                     </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/beverages/SakeAndGlasses.webp"
+                alt="Premium sake selection and tasting glasses at Jinbeh"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
                     <p className="text-xl text-warm-ivory/90 max-w-2xl mb-6">
                         Master the art of pairing sake with sushi, hibachi, and Japanese cuisine
                     </p>

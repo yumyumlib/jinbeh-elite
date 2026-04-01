@@ -123,6 +123,16 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
     </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/OnionVolcanoDemo.jpg"
+                alt="Jinbeh hibachi chef performing onion volcano for offsite events"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       {/* Article Body */}
       <p>

@@ -206,6 +206,16 @@ export default function HowToEatSushi() {
                     <h1 className="text-4xl md:text-6xl font-heading font-bold text-white max-w-4xl hero-headline mb-4">
                         How to Eat Sushi: Master Etiquette & Tips
                     </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/SamaraiRollCloseup.jpg"
+                alt="Close-up of artfully crafted samurai sushi roll at Jinbeh"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
                     <div className="flex items-center gap-4 text-warm-ivory/70 text-sm">
                         <span>By Jinbeh</span>

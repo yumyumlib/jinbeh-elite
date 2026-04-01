@@ -194,6 +194,46 @@ const breadcrumbSchema = {
   ]
 };
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh offer takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Both Jinbeh Frisco and Lewisville offer takeout. Call ahead to place your order and pick up at your convenience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I order takeout from Jinbeh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call Jinbeh Frisco at (214) 619-1200 or Lewisville at (214) 488-2224 to place your takeout order. You can also order online through Grubhub or Uber Eats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What items are available for takeout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most menu items are available for takeout including sushi rolls, bento boxes, hibachi plates, and appetizers. Some hibachi items are best enjoyed dine-in for the full experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does takeout take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Takeout orders typically take 15-25 minutes depending on the order size and time of day. Calling ahead is recommended, especially during peak hours."
+      }
+    }
+  ]
+};
+
 export default function TakeoutPage() {
   return (
     <>
@@ -202,6 +242,12 @@ export default function TakeoutPage() {
         <BreadcrumbNav items={[{ label: "Takeout" }]} />
       </div>
       <main id="main-content" className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

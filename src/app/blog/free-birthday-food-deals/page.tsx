@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
@@ -115,6 +116,16 @@ export default function FreeBirthdayFoodDealsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
   </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
+                alt="Birthday celebration at Jinbeh with hibachi entertainment"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       <p>
         Celebrating your birthday is always special, and what better way to make

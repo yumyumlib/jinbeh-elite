@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
@@ -130,6 +131,16 @@ export default function JapaneseTakeoutNearMe() {
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Japanese Takeout Is Booming in DFW","acceptedAnswer":{"@type":"Answer","text":"Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth—and for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety, and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits different."}}]}` }}
       />
             <h1>Why Japanese Takeout Is Booming in DFW</h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/BentoBoxLunchSet.jpg"
+                alt="Jinbeh takeout bento box with fresh sushi and sides"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
             <p>
                 Japanese cuisine has become one of the most popular

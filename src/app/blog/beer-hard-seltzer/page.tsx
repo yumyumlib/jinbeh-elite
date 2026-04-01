@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
@@ -96,6 +97,16 @@ export default function BeerHardSeltzer() {
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Beer Hard Seltzer" }]} />
       </div>
             <h1>The Japanese Beer Experience</h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/beverages/JinbehCocktail.jpg"
+                alt="Japanese cocktail and beverages at Jinbeh bar"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
             <p>
                 There's a reason Japanese beers have become some of the most 

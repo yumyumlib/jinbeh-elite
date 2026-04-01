@@ -179,6 +179,16 @@ export default function HibachiCaloriesGuidePage() {
         />
 uide
       </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp"
+                alt="Hibachi dinner plate with steak and vegetables at Jinbeh"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       {/* Article Body */}
       <p>

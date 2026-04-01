@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -146,6 +147,16 @@ export default function HibachiMenuGuidePage() {
         />
 s
       </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/HibachiSteakChickenDinnerWithSide.jpg"
+                alt="Jinbeh hibachi steak and chicken dinner"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       <h2>Understanding Hibachi Dining</h2>
 

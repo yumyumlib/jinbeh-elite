@@ -180,6 +180,16 @@ export default function BestHibachiDallasPage() {
         />
 iences
       </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/OnionVolcanoDemo.jpg"
+                alt="Hibachi onion volcano demonstration at Jinbeh"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       {/* Article Body with Show Don't Tell, VOC phrases, Internal Links */}
       <p>

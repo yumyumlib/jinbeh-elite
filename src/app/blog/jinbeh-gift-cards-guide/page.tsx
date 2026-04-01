@@ -165,6 +165,16 @@ export default function JinbehGiftCardsGuidePage() {
         />
  Tips 2025
       </h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/frisco/JinbehFrisco_SushiBar.jpg"
+                alt="Jinbeh Frisco sushi bar — the perfect gift card experience"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
       {/* Article Body */}
       <p>

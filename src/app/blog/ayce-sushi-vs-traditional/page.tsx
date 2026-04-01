@@ -137,6 +137,16 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
             </p>
 
             <h1>How AYCE Sushi Restaurants Work</h1>
+            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+              <Image
+                src="/images/food/FreshSushiAndDessertsAtSushiBar.jpg"
+                alt="Fresh sushi selection at Jinbeh Japanese Restaurant sushi bar"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+              />
+            </div>
 
             <p>
                 All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from $25 to $40 per person. To make this model profitable, these restaurants rely on several key strategies.

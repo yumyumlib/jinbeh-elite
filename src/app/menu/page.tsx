@@ -36,6 +36,46 @@ export const metadata: Metadata = {
     },
 };
 
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of cuisine does Jinbeh serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh serves authentic Japanese cuisine including hibachi (teppanyaki), fresh sushi and sashimi, signature rolls, appetizers, bento boxes, and a full bar with sake, Japanese beer, and cocktails."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh have a lunch menu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our lunch menu features bento box sets, hibachi plates, and sushi specials at great prices. Available Mon-Fri 11am-2pm and Sat-Sun 11:30am-2:30pm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the menu the same at both locations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both Frisco and Lewisville locations offer the same core menu of hibachi, sushi, and Japanese dishes. Some specials may vary by location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh accommodate food allergies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We take food allergies seriously. Please inform your server of any allergies and we will accommodate your needs. Visit our allergy-friendly dining page for more information."
+      }
+    }
+  ]
+};
+
 export default function MenuPage() {
     const menuSchema = {
         "@context": "https://schema.org",
@@ -89,6 +129,12 @@ export default function MenuPage() {
         <BreadcrumbNav items={[{ label: "Menu" }]} />
       </div>
             <main id="main-content" className="min-h-screen bg-warm-ivory">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
                 <MenuClient />
 
                 {/* CTA */}
