@@ -124,6 +124,9 @@ export default function RootLayout({
         {/* Preconnect for performance - critical third-party origins */}
         <link rel="preconnect" href="https://player.vimeo.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.opentable.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://cdn.opentable.com" />
         <link rel="dns-prefetch" href="https://www.google.com" />
         <link rel="dns-prefetch" href="https://maps.google.com" />
         <link rel="dns-prefetch" href="https://www.grubhub.com" />
