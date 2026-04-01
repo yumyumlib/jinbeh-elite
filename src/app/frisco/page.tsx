@@ -208,6 +208,7 @@ export default function FriscoPage() {
             <p className="text-xl text-warm-ivory/90 mb-6">
               {location.neighborhood.description}
             </p>
+
             <p className="text-lg text-warm-ivory/80 max-w-2xl mx-auto mb-8">
               DFW&apos;s Premier Japanese, Hibachi, and Premium Sushi Experience. Join us in Frisco for unforgettable tableside entertainment, masterfully crafted sushi rolls, and the highest quality ingredients in North Texas.
             </p>
@@ -408,7 +409,7 @@ export default function FriscoPage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 p-3 bg-[#F63440] text-white rounded-lg hover:bg-[#d62d38] transition-colors font-medium"
                   >
-                    Grub Hub
+                    Grubhub
                   </a>
                   <a
                     href={location.orderOnline.ubereats}
@@ -465,6 +466,9 @@ export default function FriscoPage() {
                 </div>
               </div>
             </div>
+            <p className="text-center text-charcoal/60 text-sm mt-6">
+              Just minutes from Legacy West, The Star, Dr Pepper Ballpark, and PGA of America headquarters — right off Preston Road near Dallas North Tollway and Sam Rayburn Tollway.
+            </p>
           </div>
         </section>
 
@@ -700,7 +704,7 @@ export default function FriscoPage() {
             Call Now
           </a>
         </div>
-      
+
         {/* Nearby Neighborhoods */}
         <section className="py-12 bg-warm-ivory">
           <div className="container mx-auto px-6 text-center">
@@ -711,13 +715,13 @@ export default function FriscoPage() {
               <a href="/frisco/legacy" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Legacy</a>
             </div>
           </div>
-        
-            <p className="mt-4 text-sm">
-              <a href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">
-                Related: Things to Do in Frisco TX: Your Ultimate Guide →
-              </a>
-            </p>
-</section>
+
+          <p className="mt-4 text-sm">
+            <a href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">
+              Related: Things to Do in Frisco TX: Your Ultimate Guide →
+            </a>
+          </p>
+        </section>
 
       </main >
 

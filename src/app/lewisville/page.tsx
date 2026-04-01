@@ -215,6 +215,7 @@ export default function LewisvillePage() {
             <p className="text-xl text-warm-ivory/90 mb-6">
               {location.neighborhood.description}
             </p>
+
             <p className="text-lg text-warm-ivory/80 max-w-2xl mx-auto mb-8">
               DFW&apos;s Premier Japanese, Hibachi, and Premium Sushi Experience. Join us in Lewisville for unforgettable tableside entertainment, masterfully crafted sushi rolls, and the highest quality ingredients in North Texas.
             </p>
@@ -424,7 +425,7 @@ export default function LewisvillePage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 p-3 bg-[#F63440] text-white rounded-lg hover:bg-[#d62d38] transition-colors font-medium"
                   >
-                    Grub Hub
+                    Grubhub
                   </a>
                   <a
                     href={location.orderOnline.ubereats}
@@ -482,6 +483,9 @@ export default function LewisvillePage() {
               </div>
             </div>
           </div>
+          <p className="text-center text-charcoal/60 text-sm mt-6">
+            Close to Lake Lewisville, Old Town Lewisville, and Medical City Lewisville — convenient from Hebron Parkway and Justin Road via I-35E and Stemmons Freeway.
+          </p>
         </section>
 
         {/* Experience Section */}
@@ -716,7 +720,7 @@ export default function LewisvillePage() {
             Call Now
           </a>
         </div>
-      
+
         {/* Nearby Neighborhoods */}
         <section className="py-12 bg-warm-ivory">
           <div className="container mx-auto px-6 text-center">

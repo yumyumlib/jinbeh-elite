@@ -110,7 +110,7 @@ const itemListSchema = {
                 " name ": " Jinbeh Japanese Restaurant ",
                 " servesCuisine ": " Japanese ",
                 " priceRange ": " $$ ",
-                " aggregateRating ": { " @type ": " AggregateRating ", " ratingValue ": " 4.3 ", " reviewCount ": " 752 " },
+                " aggregateRating ": { " @type ": " AggregateRating ", " ratingValue ": " 4.4 ", " reviewCount ": " 752 " },
                 " url ": " https://jinbeh.com/frisco",
             },
         },

@@ -362,7 +362,7 @@ export default function AllergyFriendlyDiningPage() {
                             <div className="flex items-center gap-2">
                                 <span className="text-lg">⭐</span>
                                 <span>
-                                    4.6 Google · 1,200+ Reviews
+                                    4.6 Google · 1,600+ Reviews
                                 </span>
                             </div>
                             <div className="flex items-center gap-2">
