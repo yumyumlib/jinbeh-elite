@@ -89,7 +89,7 @@ const faqSchema = {
       "name": "Can I get Vegetable & Tofu hibachi for a group?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Lewisville specializes in group dining. Our hibachi tables seat 8-10 guests, perfect for sharing the Vegetable & Tofu experience together. Easy access from I-35E, near Vista Ridge Mall."
+        "text": "Yes! Jinbeh Lewisville specializes in group dining. Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests, perfect for sharing the Vegetable & Tofu experience together. Easy access from I-35E, near Vista Ridge Mall."
       }
     }
   ]

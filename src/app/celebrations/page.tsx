@@ -68,7 +68,7 @@ const faqSchema = {
       name: "Can Jinbeh accommodate large groups for celebrations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Both our Frisco and Lewisville locations can accommodate large groups and private parties. Our hibachi tables seat 8-10 people for a shared experience. For groups of 10+ or private events, call us directly.",
+        text: "Yes! Both our Frisco and Lewisville locations can accommodate large groups and private parties. Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people for a shared experience. For groups of 10+ or private events, call us directly.",
       },
     },
     {
@@ -471,7 +471,7 @@ export default function CelebrationsPage() {
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
                 Need <Link href="/private-dining" className="text-accent-red hover:underline">private dining Japanese</Link> style or{" "}
                 <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">catering</Link> for
-                your group? Our hibachi tables seat 8-10, perfect for shared experiences.
+                your group? Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice), perfect for shared experiences.
               </p>
             </div>
 
@@ -534,7 +534,7 @@ export default function CelebrationsPage() {
                     <div>
                       <h3 className="font-semibold text-charcoal">Group-Friendly Seating</h3>
                       <p className="text-charcoal/70 text-sm">
-                        Communal tables seat 8-10 for shared celebrations.
+                        Communal tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) for shared celebrations.
                       </p>
                     </div>
                   </div>

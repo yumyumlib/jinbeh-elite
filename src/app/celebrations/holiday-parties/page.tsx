@@ -102,7 +102,7 @@ const holidayReasons = [
       </svg>
     ),
     title: "Group Bonding",
-    description: "Hibachi tables seat 8-10 guests together, creating a shared celebration that brings everyone closer.",
+    description: "Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) together, creating a shared celebration that brings everyone closer.",
   },
   {
     icon: (

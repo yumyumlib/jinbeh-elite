@@ -324,7 +324,7 @@ export default function ValentinesDayPage() {
                   </div>
                   <h4 className="font-semibold mb-2">Highly Rated</h4>
                   <p className="text-white/80 text-sm">
-                    4.4-4.8 stars across Google, OpenTable, and delivery platforms.
+                    4.7–4.8 stars across platforms across Google, OpenTable, and delivery platforms.
                   </p>
                 </div>
               </div>

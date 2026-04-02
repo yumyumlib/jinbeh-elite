@@ -55,7 +55,7 @@ const faqSchema = {
       "name": "What size groups can you accommodate?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We host teams of any size! From small departments to company-wide events. Hibachi tables seat 8-10, allowing us to organize your team into manageable groups. For large events, we recommend advance planning.",
+        "text": "We host teams of any size! From small departments to company-wide events. Hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice), allowing us to organize your team into manageable groups. For large events, we recommend advance planning.",
       },
     },
     {

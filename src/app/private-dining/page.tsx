@@ -116,7 +116,7 @@ const faqSchema = {
       name: "Can I book a private hibachi table?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! Our private hibachi tables seat 8-10 guests and feature a dedicated hibachi chef for tableside cooking and entertainment. This is perfect for group seating and a private hibachi experience. We recommend booking at least 2-3 weeks in advance to secure your preferred date.",
+        text: "Absolutely! Our private hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests and feature a dedicated hibachi chef for tableside cooking and entertainment. This is perfect for group seating and a private hibachi experience. We recommend booking at least 2-3 weeks in advance to secure your preferred date.",
       },
     },
   ],

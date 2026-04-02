@@ -45,7 +45,7 @@ const faqs = [
     { question: "Should I make a reservation for a birthday party?", answer: "Yes, we recommend reservations in advance. It ensures your table, preferred timing, and lets us prepare special touches for your celebration." },
     { question: "Do restaurants offer birthday discounts or free items?", answer: "We offer birthday specials including complimentary desserts and special songs. Call (214) 619-1200 Frisco or (214) 488-2224 Lewisville to confirm offerings." },
     { question: "What atmosphere is best for a birthday celebration?", answer: "It depends on you! Jinbeh offers lively, interactive hibachi shows. We're perfect for families and groups who want dinner and a show for their birthday." },
-    { question: "How many people can we have at Jinbeh for a birthday?", answer: "We welcome small groups and large parties. Hibachi tables seat 8-10. Call ahead for larger groups and we'll arrange the perfect setup." }
+    { question: "How many people can we have at Jinbeh for a birthday?", answer: "We welcome small groups and large parties. Hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice). Call ahead for larger groups and we'll arrange the perfect setup." }
 ];
 
 const faqSchema = {
@@ -89,7 +89,7 @@ const faqSchema = {
             name: "How many people can we have at Jinbeh for a birthday?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "We welcome small groups and large parties. Hibachi tables seat 8-10. Call ahead for larger groups and we'll arrange the perfect setup across multiple tables.",
+                text: "We welcome small groups and large parties. Hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice). Call ahead for larger groups and we'll arrange the perfect setup across multiple tables.",
             },
         },
         {

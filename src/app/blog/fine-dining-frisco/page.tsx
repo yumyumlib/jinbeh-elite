@@ -325,7 +325,7 @@ export default function FineDiningFrisco() {
                                                 🏯 Why Choose Jinbeh for Fine Dining?
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Jinbeh has been a cornerstone of Frisco's dining scene since 1988. We've earned a 4.4-star Google rating through unwavering commitment to quality, authenticity, and hospitality.
+                                                Jinbeh has been a cornerstone of Frisco's dining scene since 1988. We've earned a top-rated Google rating through unwavering commitment to quality, authenticity, and hospitality.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">

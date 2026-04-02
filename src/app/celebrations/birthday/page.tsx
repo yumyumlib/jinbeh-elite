@@ -105,7 +105,7 @@ const birthdayFeatures = [
       </svg>
     ),
     title: "Group Seating",
-    description: "Hibachi tables seat 8-10 guests together so everyone can join the celebration.",
+    description: "Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) together so everyone can join the celebration.",
   },
   {
     icon: (
@@ -308,7 +308,7 @@ export default function BirthdayPage() {
                     <li>• Book at least 1 week in advance for groups of 6+</li>
                     <li>• Request seating together when you make your reservation</li>
                     <li>• Let us know it&apos;s a birthday when you arrive</li>
-                    <li>• Hibachi tables seat 8-10 people – perfect for parties!</li>
+                    <li>• Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) – perfect for parties!</li>
                   </ul>
                 </div>
               </div>

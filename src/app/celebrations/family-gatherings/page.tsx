@@ -65,7 +65,7 @@ const faqSchema = {
       "name": "Can we get group seating for our family reunion?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Our hibachi tables seat 8-10 people, making them perfect for family gatherings. We can arrange multiple tables together for larger groups. Call ahead to let us know your party size.",
+        "text": "Absolutely! Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people, making them perfect for family gatherings. We can arrange multiple tables together for larger groups. Call ahead to let us know your party size.",
       },
     },
     {
@@ -126,7 +126,7 @@ const familyFeatures = [
       </svg>
     ),
     title: "Communal Tables",
-    description: "Hibachi tables seat 8-10 guests together – your whole family dines as one, shares the experience, and celebrates together.",
+    description: "Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) together – your whole family dines as one, shares the experience, and celebrates together.",
   },
   {
     icon: (

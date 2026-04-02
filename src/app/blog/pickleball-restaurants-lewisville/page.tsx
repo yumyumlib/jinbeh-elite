@@ -58,7 +58,7 @@ const faqs = [
   {
     question: "Can I book Jinbeh for a pickleball team dinner?",
     answer:
-      "Yes! We love hosting pickleball teams and league groups. Our hibachi tables seat 8-10 people and the interactive cooking show is perfect for team bonding after a tournament. Call us at (214) 488-2224 to reserve for your group.",
+      "Yes! We love hosting pickleball teams and league groups. Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people and the interactive cooking show is perfect for team bonding after a tournament. Call us at (214) 488-2224 to reserve for your group.",
   },
   {
     question: "What time does Jinbeh open for lunch after morning pickleball?",
@@ -263,7 +263,7 @@ export default function PickleballRestaurantsLewisvillePage() {
 
       <h3>3. Perfect for Groups & Teams</h3>
       <p>
-        Playing pickleball with friends or your league? Our hibachi tables seat 8-10 people, making it ideal for team dinners. The communal seating and interactive cooking create natural conversation and bonding—way better than splitting up at a regular restaurant.
+        Playing pickleball with friends or your league? Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people, making it ideal for team dinners. The communal seating and interactive cooking create natural conversation and bonding—way better than splitting up at a regular restaurant.
       </p>
 
       <h2>Pickleball Date Night in Lewisville</h2>

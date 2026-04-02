@@ -168,7 +168,7 @@ export default function JinbehExperience() {
             Your Table Is Waiting
           </h3>
           <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-            1,200+ five-star reviews. Two locations. One unforgettable night.
+            Rated 4.7–4.8 on major platforms. Two locations. One unforgettable night.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

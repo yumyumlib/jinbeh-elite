@@ -97,7 +97,7 @@ const faqSchema = {
       "name": "Can I make a reservation for hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Reservations are highly recommended, especially for weekends and special occasions. Our hibachi tables seat 8-10 guests. Reserve online or call (972) 221-3888. We're located near Vista Ridge Mall in Lewisville, TX."
+        "text": "Yes! Reservations are highly recommended, especially for weekends and special occasions. Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests. Reserve online or call (972) 221-3888. We're located near Vista Ridge Mall in Lewisville, TX."
       }
     }
   ]

@@ -50,7 +50,7 @@ const faqs = [
     },
     {
         question: "Do I need reservations for hibachi in Dallas?",
-        answer: "Yes, we highly recommend reservations for hibachi dining, especially on weekends and for groups. Teppanyaki tables seat 8-10 people, and we want to ensure you get the best experience. Visit our Frisco or Lewisville location pages to reserve online, or call us directly. First-time guests are always welcome!",
+        answer: "Yes, we highly recommend reservations for hibachi dining, especially on weekends and for groups. Teppanyaki tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people, and we want to ensure you get the best experience. Visit our Frisco or Lewisville location pages to reserve online, or call us directly. First-time guests are always welcome!",
     },
     {
         question: "Is hibachi good for large groups and celebrations?",

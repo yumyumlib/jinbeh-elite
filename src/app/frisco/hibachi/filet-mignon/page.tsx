@@ -103,7 +103,7 @@ const faqSchema = {
       "name": "Can I make a reservation for hibachi at Jinbeh Frisco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Reservations are highly recommended, especially for weekends and special occasions. Our hibachi tables seat 8-10 guests. Reserve online or call (214) 619-1200. We're located near Stonebriar Centre in Frisco, TX."
+        "text": "Yes! Reservations are highly recommended, especially for weekends and special occasions. Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests. Reserve online or call (214) 619-1200. We're located near Stonebriar Centre in Frisco, TX."
       }
     }
   ]

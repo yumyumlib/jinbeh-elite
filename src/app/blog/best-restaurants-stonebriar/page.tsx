@@ -41,7 +41,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What are the best restaurants near Stonebriar Mall?",
-        answer: "Jinbeh Japanese Restaurant is a top-rated choice just minutes from Stonebriar on Preston Road, serving hibachi and sushi since 1988. Other popular options include Perry's Steakhouse, The Cheesecake Factory, and Cane Rosso for pizza. For the most authentic Japanese experience with entertainment, Jinbeh is the local favorite with 4.4-stars on Google.",
+        answer: "Jinbeh Japanese Restaurant is a top-rated choice just minutes from Stonebriar on Preston Road, serving hibachi and sushi since 1988. Other popular options include Perry's Steakhouse, The Cheesecake Factory, and Cane Rosso for pizza. For the most authentic Japanese experience with entertainment, Jinbeh is the local favorite with top-rateds on Google.",
     },
     {
         question: "Is there a good hibachi restaurant near Stonebriar Centre?",
@@ -53,7 +53,7 @@ const faqs = [
     },
     {
         question: "What restaurants near Stonebriar are good for groups?",
-        answer: "Jinbeh is perfect for groups and celebrations! Our hibachi tables seat 8-10 people, making it ideal for birthday parties, team dinners, and family gatherings. We also offer private dining options. Guests love the shared experience of watching the chef perform at your table. Call (214) 619-1200 to arrange group seating.",
+        answer: "Jinbeh is perfect for groups and celebrations! Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people, making it ideal for birthday parties, team dinners, and family gatherings. We also offer private dining options. Guests love the shared experience of watching the chef perform at your table. Call (214) 619-1200 to arrange group seating.",
     },
     {
         question: "Are there affordable restaurants near Stonebriar Mall?",
@@ -333,7 +333,7 @@ export default function BestRestaurantsStonebriar() {
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>4.4-stars on Google</span>
+                                                    <span>top-rateds on Google</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>

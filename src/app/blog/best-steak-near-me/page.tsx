@@ -30,7 +30,7 @@ const schemas = [
             { "@type": "Question", name: "What's the best cut of steak?", acceptedAnswer: { "@type": "Answer", text: "The best cut depends on preference. Ribeye offers marbling and flavor. Filet Mignon is tender and lean. New York Strip balances tenderness with beef flavor. Porterhouse offers the best of both worlds." } },
             { "@type": "Question", name: "Why is Jinbeh's hibachi steak special?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh hibachi chefs cook your steak to perfection right before your eyes. You get entertainment, precision cooking, and authentic Japanese technique. It's dinner and a show combined with exceptional beef quality." } },
             { "@type": "Question", name: "Can I make reservations for hibachi steak?", acceptedAnswer: { "@type": "Answer", text: "Yes, reservations are recommended for hibachi, especially weekends. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to book your table." } },
-            { "@type": "Question", name: "Is hibachi steak good for groups?", acceptedAnswer: { "@type": "Answer", text: "Absolutely! Hibachi tables seat 8-10 guests sharing the experience together. Jinbeh chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners." } }
+            { "@type": "Question", name: "Is hibachi steak good for groups?", acceptedAnswer: { "@type": "Answer", text: "Absolutely! Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) sharing the experience together. Jinbeh chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners." } }
         ]
     }
 ];
@@ -289,7 +289,7 @@ export default function BestSteakNearMe() {
 
                             <details className="group bg-warm-ivory rounded-xl">
                                 <summary className="p-5 cursor-pointer font-semibold flex justify-between">Is hibachi steak good for groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                <div className="px-5 pb-5 text-charcoal/80">Absolutely! It's a celebration! Hibachi tables seat 8-10 guests sharing the experience together. Our chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners.</div>
+                                <div className="px-5 pb-5 text-charcoal/80">Absolutely! It's a celebration! Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) sharing the experience together. Our chefs excel at entertaining groups while cooking premium steaks to perfection. Perfect for families, celebrations, and team dinners.</div>
                             </details>
 
                             <PillarCTA type="vip" />

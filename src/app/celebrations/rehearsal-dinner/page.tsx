@@ -195,7 +195,7 @@ export default function RehearsalDinnerPage() {
                 <div className="bg-rose-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">👨‍👩‍👧‍👦 Family-Style Seating</h3>
                   <p className="text-gray-700">
-                    Hibachi tables seat 8-10 guests around the grill, creating intimate groups perfect
+                    Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) around the grill, creating intimate groups perfect
                     for mixing family members and wedding party. It&apos;s more personal than scattered
                     restaurant tables.
                   </p>

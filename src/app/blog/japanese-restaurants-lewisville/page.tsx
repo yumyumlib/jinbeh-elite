@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-    { question: "What's the best Japanese restaurant in Lewisville?", answer: "Welcome to the table! Jinbeh has served Lewisville since 1988. 4.4 stars on Google. Hibachi shows, fresh sushi, family-friendly. We treat every guest like family." },
-    { question: "Do you have hibachi in Lewisville?", answer: "Yes! Our hibachi tables seat 8-10 guests. Full chef performance. Dinner and a show. Fire tricks, onion volcano, perfectly cooked proteins. Perfect for celebrations and groups." },
+    { question: "What's the best Japanese restaurant in Lewisville?", answer: "Welcome to the table! Jinbeh has served Lewisville since 1988. top-rateds on Google. Hibachi shows, fresh sushi, family-friendly. We treat every guest like family." },
+    { question: "Do you have hibachi in Lewisville?", answer: "Yes! Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests. Full chef performance. Dinner and a show. Fire tricks, onion volcano, perfectly cooked proteins. Perfect for celebrations and groups." },
     { question: "Can you handle large groups?", answer: "Absolutely! We specialize in groups. Hibachi tables, flexible seating, customized menus. Call (214) 488-2224 to arrange your party. We love making celebrations special." },
     { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful—that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
     { question: "Where is Jinbeh Lewisville located?", answer: "We're at 2440 S. Stemmons Freeway, near Vista Ridge Mall. Easy I-35E access. Convenient parking right outside. Call (214) 488-2224 to confirm hours." },
@@ -83,7 +83,7 @@ export default function JapaneseRestaurantsLewisville() {
                             </div>
 
                             <DidYouKnow
-                                fact="Jinbeh has been part of Lewisville's dining community since 1988, making it one of the longest-running Japanese restaurants in the DFW metroplex. With a 4.4-star Google rating from over 900 reviews, many locals say they prefer Jinbeh's family-owned feel over chain hibachi steakhouses."
+                                fact="Jinbeh has been part of Lewisville's dining community since 1988, making it one of the longest-running Japanese restaurants in the DFW metroplex. With a top-rated Google rating from over 900 reviews, many locals say they prefer Jinbeh's family-owned feel over chain hibachi steakhouses."
                                 source="Google Reviews & DFW Dining History"
                             />
 

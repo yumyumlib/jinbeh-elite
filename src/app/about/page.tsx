@@ -209,8 +209,8 @@ export default function AboutPage() {
                     <span className="text-sm text-charcoal/80">DFW Locations</span>
                   </div>
                   <div className="text-center p-4">
-                    <span className="block text-4xl font-bold text-soft-gold">4.4★</span>
-                    <span className="text-sm text-charcoal/80">Google Rating</span>
+                    <span className="block text-4xl font-bold text-soft-gold">4.8★</span>
+                    <span className="text-sm text-charcoal/80">Uber Eats</span>
                   </div>
                 </div>
               </div>

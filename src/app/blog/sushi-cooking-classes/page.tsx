@@ -80,7 +80,7 @@ const faqSchema = {
             name: "Are sushi classes good for couples or groups?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes! Sushi classes are a popular date night and team-building activity. Many venues offer private group sessions. For group dining, Jinbeh's hibachi tables seat 8-10 guests for an interactive Japanese culinary experience.",
+                text: "Yes! Sushi classes are a popular date night and team-building activity. Many venues offer private group sessions. For group dining, Jinbeh's hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests for an interactive Japanese culinary experience.",
             },
         },
         {

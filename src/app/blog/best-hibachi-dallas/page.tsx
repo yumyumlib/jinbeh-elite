@@ -62,7 +62,7 @@ const faqs = [
   {
     question: "Can I walk in to a hibachi restaurant without a reservation?",
     answer:
-      "Walk-ins are welcome at Jinbeh, but wait times can be longer — especially on Friday and Saturday evenings. Hibachi tables seat 8-10 guests, so we need to wait until a full table is ready. For the best experience, we always recommend calling ahead. Weekday lunches and early dinners (before 6pm) typically have the shortest wait times.",
+      "Walk-ins are welcome at Jinbeh, but wait times can be longer — especially on Friday and Saturday evenings. Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables), so we need to wait until a full table is ready. For the best experience, we always recommend calling ahead. Weekday lunches and early dinners (before 6pm) typically have the shortest wait times.",
   },
 ];
 

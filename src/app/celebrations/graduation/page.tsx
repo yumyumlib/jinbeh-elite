@@ -146,7 +146,7 @@ const graduationFeatures = [
       </svg>
     ),
     title: "Communal Seating",
-    description: "Hibachi tables seat 8-10 guests together, creating the perfect environment for groups to celebrate together.",
+    description: "Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables) together, creating the perfect environment for groups to celebrate together.",
   },
   {
     icon: (
@@ -454,7 +454,7 @@ export default function GraduationPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent-red text-lg">★</span>
-                  <span><strong>Group Size:</strong> Hibachi tables seat 8-10 people, so plan your guest list accordingly for optimal table arrangements.</span>
+                  <span><strong>Group Size:</strong> Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables), so plan your guest list accordingly for optimal table arrangements.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent-red text-lg">★</span>
