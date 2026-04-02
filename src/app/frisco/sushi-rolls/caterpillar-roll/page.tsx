@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function CaterpillarRollFriscoPage() {
-  const item = getMenuItem("caterpillar-roll", "sushi-rolls")!;
+  const item = { ...getMenuItem("caterpillar-roll", "sushi-rolls")!, jinbehStory: "Our sushi team\'s artistry shines in presentation rolls like the caterpillar. Led by a master chef from southern Japan\'s seafood coast, every roll is shaped using a traditional bamboo makisu — the same way it\'s been done for centuries." };
   const location = locations["frisco"];
 
   return (

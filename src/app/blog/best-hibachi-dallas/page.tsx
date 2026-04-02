@@ -198,6 +198,12 @@ iences
         flips a shrimp into his hat. There's nothing quite like hibachi dining
         in Dallas.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Why Jinbeh Has Endured 38 Years in DFW</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  While competitors come and go, Jinbeh has thrived since 1988 on three simple principles: <strong>humble, hardworking, honest</strong>. A competitor once copied Jinbeh&apos;s entire menu &mdash; removing the name and putting their own on it. They didn&apos;t survive five years. As the owner puts it: &ldquo;They can take the menu, but they can&apos;t replicate 38 years of community trust.&rdquo; Dallas Cowboys players were regulars for over a decade. That&apos;s the kind of restaurant you&apos;re walking into.
+                </p>
+              </div>
 
       <p>
         We've been serving North Texas families since 1988, and we know what

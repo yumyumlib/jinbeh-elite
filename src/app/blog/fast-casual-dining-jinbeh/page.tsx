@@ -124,6 +124,12 @@ n unusual combination. After
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,
                 we've spent 38 years learning how to deliver quality at every speed.
             </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎯 The &ldquo;American Authentic&rdquo; Philosophy</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s menu philosophy emerged from decades of trial and error. The original Las Colinas menu was a thick book of truly authentic Japanese dishes &mdash; like salted mackerel and traditional set menus. Over time, they learned: people want <em>American authentic</em>. Food that feels genuinely Japanese enough to transport you, but not so foreign that you&apos;re uncomfortable. &ldquo;We chose a different path: family-friendly, accessible, and large enough to serve the community.&rdquo;
+                </p>
+              </div>
 
             <p>
                 Need a quick lunch? Our sushi bar serves fresh rolls in minutes. Planning a special

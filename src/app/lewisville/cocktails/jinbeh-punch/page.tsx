@@ -89,7 +89,7 @@ const faqSchema = {
 
 
 export default function JinbehPunchLewisvillePage() {
-  const item = getMenuItem("jinbeh-punch", "cocktails")!;
+  const item = { ...getMenuItem("jinbeh-punch", "cocktails")!, jinbehStory: "All cocktails at Jinbeh are crafted at a bar featuring a stunning collection of hand-painted tequila bottles. Each bottle is individually painted by artisans from a Mexican village. It took about a year to collect enough empty bottles to line the shelf." };
   const location = locations["lewisville"];
 
   return (

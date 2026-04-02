@@ -233,6 +233,12 @@ export default function RomanticAnniversaryDinnersPage() {
         and elegant decor sets the stage for a memorable evening celebrating
         your love.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">💕 Love Stories at Jinbeh</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh uses an OpenTable notes system where staff can see how many times a customer has visited, their history, and any special notes. Long-time regulars &mdash; couples who&apos;ve celebrated anniversaries year after year &mdash; are recognized and given special attention. It&apos;s not a flashy &ldquo;VIP program&rdquo; with cards and apps. It&apos;s quiet, genuine recognition that only comes from 38 years of real relationships.
+                </p>
+              </div>
 
       <p>
         This guide helps you discover the best romantic anniversary dinner spots

@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function CaliforniaRollLewisvillePage() {
-  const item = getMenuItem("california-roll", "sushi-rolls")!;
+  const item = { ...getMenuItem("california-roll", "sushi-rolls")!, jinbehStory: "Every roll at Jinbeh is crafted using a traditional bamboo roller (makisu) by our sushi team, led by a master chef who has been with us for nearly 30 years. He co-created every signature roll on our menu during late-night sessions of testing and perfecting." };
   const location = locations["lewisville"];
 
   return (

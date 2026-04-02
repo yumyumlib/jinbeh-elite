@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function SoftShellCrabFriscoPage() {
-  const item = getMenuItem("soft-shell-crab", "appetizers")!;
+  const item = { ...getMenuItem("soft-shell-crab", "appetizers")!, jinbehStory: "A whole crab, about palm-sized, battered with our light tempura coating, deep fried until golden, and chopped into four or five pieces. Delicious and impressive — one of our most photogenic appetizers." };
   const location = locations["frisco"];
 
   return (

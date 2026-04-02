@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function VegetableTofuFriscoPage() {
-  const item = getMenuItem("vegetable-tofu", "hibachi")!;
+  const item = { ...getMenuItem("vegetable-tofu", "hibachi")!, jinbehStory: "Jinbeh\'s hibachi is naturally friendly to plant-based diets. Gluten-free is easy — only the sauces contain gluten, not the base ingredients. Fried rice can be made gluten-free on request. Our chefs handle allergy situations carefully at 550°F grill temperatures." };
   const location = locations["frisco"];
 
   return (

@@ -134,6 +134,12 @@ efinitions
       <p>
         You've heard the terms thrown around interchangeably: "Let's go to a hibachi restaurant." "I love teppanyaki." "The hibachi chef was amazing!" But are <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi and teppanyaki</Link> the same thing? The answer is more nuanced than you might think—and understanding the difference will help you appreciate the Japanese culinary traditions behind your next dining experience.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏯 Jinbeh&apos;s Lost Teppanyaki Treasure</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  At the original Las Colinas location, Jinbeh served <strong>Toban Yaki</strong> &mdash; a clay pot with a ceramic dish on top, cooked over an open flame. The presentation was stunning: it came with a lid that was ceremonially opened in front of the customer. Super garlicky and beautifully presented, it was one of the restaurant&apos;s best sellers. It&apos;s one of the dishes the current owner would love to bring back.
+                </p>
+              </div>
 
       <p>
         Here's the truth: in Japan, hibachi and teppanyaki are two distinct cooking methods. But in America, the lines have blurred so much that most people use the terms interchangeably. We're here to clear up the confusion and help you understand what you're actually experiencing when you sit down at a table in front of a skilled chef wielding spatulas and flames.

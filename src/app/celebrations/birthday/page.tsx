@@ -227,6 +227,43 @@ export default function BirthdayPage() {
           </div>
         </section>
 
+        {/* The Three-Touch Birthday Protocol */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="text-3xl font-heading font-bold text-charcoal text-center mb-8">
+              The Jinbeh Birthday Experience
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center p-6 bg-warm-ivory rounded-xl">
+                <span className="text-3xl mb-3 block">🙋</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Touch 1: The Host</h3>
+                <p className="text-charcoal/70 text-sm">
+                  When you arrive, our host identifies the birthday guest and personally says happy birthday — the celebration starts the moment you walk in.
+                </p>
+              </div>
+              <div className="text-center p-6 bg-warm-ivory rounded-xl">
+                <span className="text-3xl mb-3 block">🍽️</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Touch 2: Your Server</h3>
+                <p className="text-charcoal/70 text-sm">
+                  Your server is notified of the celebration and personally acknowledges the birthday person — making them feel special throughout the meal.
+                </p>
+              </div>
+              <div className="text-center p-6 bg-warm-ivory rounded-xl">
+                <span className="text-3xl mb-3 block">🔥</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Touch 3: The Grand Finale</h3>
+                <p className="text-charcoal/70 text-sm">
+                  At the end of dinner, our team brings out ice cream with tambourines and noisemakers for a celebration everyone remembers. Every child receives a hand-folded origami crane.
+                </p>
+              </div>
+            </div>
+            <p className="text-center text-charcoal/70 max-w-2xl mx-auto">
+              Our Three-Touch Birthday Protocol means you hear &ldquo;happy birthday&rdquo; from three different team members — not because it&apos;s required, but because at Jinbeh, your celebration is <em>everyone&apos;s</em> celebration.
+
+            </p>
+          </div>
+        </section>
+
+
         {/* Experience Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
@@ -434,13 +471,13 @@ export default function BirthdayPage() {
               </Link>
             </div>
           </div>
-        
-            <p className="mt-4 text-sm">
-              <a href="/blog/adult-birthday-party-ideas" className="text-accent-red hover:underline">
-                Related: Unique Adult Birthday Party Ideas & Themes →
-              </a>
-            </p>
-</section>
+
+          <p className="mt-4 text-sm">
+            <a href="/blog/adult-birthday-party-ideas" className="text-accent-red hover:underline">
+              Related: Unique Adult Birthday Party Ideas & Themes →
+            </a>
+          </p>
+        </section>
       </main>
       <Footer />
     </>

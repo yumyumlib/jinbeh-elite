@@ -131,6 +131,12 @@ export default function AYCESushiVsTraditionalPage() {
         />
 y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional sushi bars. Both serve raw fish. Both can be delicious. But the way they operate, source ingredients, and deliver your meal are fundamentally different.
             </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎌 Why Jinbeh Chose Tradition Over Volume</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s sushi master &mdash; nearly 30 years with the restaurant &mdash; co-created every roll on the menu during late-night sessions with the Matsuda family. High-end Japanese restaurants don&apos;t do picture menus (Jinbeh tried once &mdash; the feedback was &ldquo;this is very Chinese restaurant&rdquo;), and they don&apos;t do all-you-can-eat. What they do is craft each piece with precision, using the freshest daily-sourced fish.
+                </p>
+              </div>
 
             <p>
                 This guide breaks down the real differences between these two dining formats, so you can choose the experience that best fits what you are looking for, whether that is value, quality, ambiance, or all three.

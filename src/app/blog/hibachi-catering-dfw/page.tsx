@@ -115,6 +115,12 @@ export default function HibachiCatering() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Bring the hibachi show to your event!</strong> Our catering services deliver the same sizzling entertainment and delicious cuisine that's made Jinbeh a DFW favorite since 1988. Explore our full <Link href="/blog/jinbeh-catering-services" className="text-accent-red hover:underline">Jinbeh catering services</Link> for menu options and pricing.</p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏮 Jinbeh&apos;s Catering Heritage</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  When Jinbeh was in Las Colinas, the team regularly catered community festivals and charity events. They participated in a cancer charity beer crawl where a team of 20 would dress in themed costumes &mdash; superheroes one year, elderly characters another &mdash; feeding all the volunteers with trays of house-made fried rice. Even today, former employees happily return to help with events. That&apos;s the kind of family loyalty that 38 years builds.
+                </p>
+              </div>
 
                             <div className="bg-gradient-to-br from-green-600/10 to-soft-gold/10 border-l-4 border-green-600 rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Our catering team brings the full Jinbeh experience to your location—complete with skilled chefs, fresh ingredients, and the entertainment that makes hibachi unforgettable."</p>

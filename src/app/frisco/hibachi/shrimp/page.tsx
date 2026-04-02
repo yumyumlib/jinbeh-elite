@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function ShrimpFriscoPage() {
-  const item = getMenuItem("shrimp", "hibachi")!;
+  const item = { ...getMenuItem("shrimp", "hibachi")!, jinbehStory: "At Jinbeh, our hibachi grills reach 550°F. Our signature Yum Yum sauce — an in-house blend of mayo, sriracha, and sugar — is probably the biggest draw on a hibachi plate. Guests are genuinely addicted to it." };
   const location = locations["frisco"];
 
   return (

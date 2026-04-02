@@ -118,6 +118,12 @@ popular in the world: they're
                 specifically crafted to pair with food. Unlike heavy craft IPAs or bitter ales, Japanese
                 lagers are clean, crisp, and refreshing—designed to enhance your meal rather than overpower it.
             </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🇯🇵 Jinbeh&apos;s Wine &amp; Spirits Philosophy</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s approach to drinks is refreshingly honest: the wine selection stays minimalist because &ldquo;customers trust our expertise in sake, not wine.&rdquo; This isn&apos;t a pretentious French bistro. But the <strong>sake and Japanese whisky</strong>? That&apos;s where Jinbeh shines. They stock rare Yamazaki that the owner has to fight to acquire, and the premium cold sake selection is curated with decades of expertise.
+                </p>
+              </div>
 
             <p>
                 At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, our guests consistently

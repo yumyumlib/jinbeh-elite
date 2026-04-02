@@ -105,7 +105,7 @@ const faqSchema = {
 
 
 export default function DragonRollLewisvillePage() {
-  const item = getMenuItem("dragon-roll", "sushi-rolls")!;
+  const item = { ...getMenuItem("dragon-roll", "sushi-rolls")!, jinbehStory: "Hand-rolled using a traditional bamboo makisu by our sushi team. The dragon roll showcases our sushi master's 30 years of artistry — each piece precisely cut to reveal the beautiful layers inside." };
   const location = locations["lewisville"];
 
   return (

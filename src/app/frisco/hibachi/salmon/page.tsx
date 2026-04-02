@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function SalmonFriscoPage() {
-  const item = getMenuItem("salmon", "hibachi")!;
+  const item = { ...getMenuItem("salmon", "hibachi")!, jinbehStory: "Our hibachi salmon is cooked on grills reaching 550°F to achieve the perfect sear. Every sauce on your plate is made from scratch in our kitchen — from the Yum Yum sauce to the garlic butter. Recipes are posted on the kitchen walls so every chef learns them." };
   const location = locations["frisco"];
 
   return (

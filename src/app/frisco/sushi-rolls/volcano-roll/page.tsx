@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function VolcanoRollFriscoPage() {
-  const item = getMenuItem("volcano-roll", "sushi-rolls")!;
+  const item = { ...getMenuItem("volcano-roll", "sushi-rolls")!, jinbehStory: "Every roll at Jinbeh is hand-crafted using a bamboo makisu by our sushi team. Our head sushi chef, who hails from southern Japan, has been with us nearly 30 years and co-created every signature roll on our menu." };
   const location = locations["frisco"];
 
   return (

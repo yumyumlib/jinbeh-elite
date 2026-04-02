@@ -105,7 +105,7 @@ const faqSchema = {
 
 
 export default function ChickenTeriyakiLewisvillePage() {
-  const item = getMenuItem("chicken-teriyaki", "hibachi")!;
+  const item = { ...getMenuItem("chicken-teriyaki", "hibachi")!, jinbehStory: "Our teriyaki sauce is entirely homemade — a sweet soy-based glaze that's become a family favorite. Fun fact: our fried rice is made with finely chopped scallion, onion, and carrots cut so small they're invisible. This is deliberate — kids (and some adults) don't want to see vegetables." };
   const location = locations["lewisville"];
 
   return (

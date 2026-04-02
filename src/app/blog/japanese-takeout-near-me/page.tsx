@@ -158,6 +158,12 @@ export default function JapaneseTakeoutNearMe() {
                 gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits
                 different.
             </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">📦 From Our Kitchen to Yours</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Every sauce that travels with your Jinbeh takeout is made from scratch in-house &mdash; from the addictive Yum Yum sauce to the house-made ponzu. The recipes are typed out and hung on the kitchen walls so every cook learns them. When you taste the difference between Jinbeh&apos;s homemade sauces and a chain&apos;s packets, you understand why families have been ordering for 38 years.
+                </p>
+              </div>
 
             <p>
                 At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, we've been

@@ -133,6 +133,12 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       <p>
         Picture the tantalizing sizzling sounds of grills, the intoxicating aroma of perfectly seasoned meats, and the vibrant presentation of vegetables and rice. Hibachi lunches bring the immersive restaurant experience right to your workplace, offering a delightful break from the usual sandwich or salad routine.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⏱️ The 10-Minute Lunch Rule</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  At Jinbeh, there&apos;s a critical internal rule: customers should never wait more than <strong>10 minutes at lunch</strong> and 15 at dinner. The hibachi side runs on a hand-written tracking system &mdash; a tradition since 1988 &mdash; that records table numbers, party sizes, seating times, and rounds. Tables are used in a specific priority order (front tables first). On busy weekends, they fill four or more rounds.
+                </p>
+              </div>
 
       <p>
         With the added benefits of interactive cooking and the anticipation of watching your meal come together, hibachi lunches truly transform a mundane lunch break into a mini culinary adventure. Whether you're new to hibachi or a seasoned fan, these ideas will surely tantalize your taste buds and offer a fresh perspective on lunch at the office.

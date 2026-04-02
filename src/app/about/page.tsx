@@ -209,7 +209,7 @@ export default function AboutPage() {
                     <span className="text-sm text-charcoal/80">DFW Locations</span>
                   </div>
                   <div className="text-center p-4">
-                    <span className="block text-4xl font-bold text-soft-gold">4.3★</span>
+                    <span className="block text-4xl font-bold text-soft-gold">4.4★</span>
                     <span className="text-sm text-charcoal/80">Google Rating</span>
                   </div>
                 </div>
@@ -491,6 +491,111 @@ export default function AboutPage() {
                   </a>
                 ))}
               </Marquee>
+            </div>
+          </div>
+        </section>
+
+        
+        {/* Behind the Scenes — Stories of Jinbeh */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                The People Behind Every Plate
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                Jinbeh isn&apos;t built on recipes alone — it&apos;s built on relationships that span decades.
+              </p>
+            </div>
+
+            <div className="space-y-16">
+              {/* Fujisan — 30-Year Sushi Master */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-2">30+ Years of Mastery</p>
+                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Fujisan: Our Sushi Master</h3>
+                  <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                    <p>
+                      Fujisan &mdash; our head sushi chef &mdash; has been with Jinbeh for nearly 30 years. Originally from the southern coast of Japan, a region renowned for its seafood and noodle traditions, he co-created every signature roll on our menu alongside the Matsuda family during late-night sessions of testing and perfecting.
+                    </p>
+                    <p>
+                      At the original Las Colinas location, Fujisan created the beloved &ldquo;Fuji San Ramen&rdquo; section that became a local favorite. His craft represents the soul of our <Link href="/frisco/sushi-rolls">sushi program</Link> &mdash; precise, authentic, and always evolving.
+                    </p>
+                    <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
+                      &ldquo;He&apos;s my second dad. The entire sushi menu was a collaboration &mdash; sleepless nights working together to craft and refine every roll.&rdquo;
+                    </p>
+                  </div>
+                </div>
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp"
+                    alt="Fresh sushi presentation crafted by Jinbeh sushi master Fujisan"
+                    fill
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              {/* The Dallas Cowboys Connection */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="order-2 md:order-1 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/interior/JinbehFriscoTables.jpg"
+                    alt="Jinbeh dining area with signed Dallas Cowboys memorabilia on the walls"
+                    fill
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="order-1 md:order-2">
+                  <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-2">A Decade of Legends</p>
+                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">The Cowboys Connection</h3>
+                  <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                    <p>
+                      For over a decade, Dallas Cowboys players were regulars at Jinbeh. Our original Las Colinas location sat near the team&apos;s practice facility, and players became genuine friends of the restaurant &mdash; attending celebrations, hosting private dinners, and building real relationships. The signed photographs now displayed at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> are mementos of that era.
+                    </p>
+                    <p>
+                      The Cowboys players even attended Jinbeh&apos;s last day at Las Colinas as a farewell tribute. It&apos;s the kind of loyalty that only comes from truly great food and genuine hospitality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* The Kids & Origami Tradition */}
+              <div className="bg-warm-ivory rounded-2xl p-8 md:p-12">
+                <div className="max-w-3xl mx-auto text-center">
+                  <span className="text-4xl mb-4 block">🪭</span>
+                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Our Family Traditions</h3>
+                  <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                    <p>
+                      Every child who visits Jinbeh receives a hand-folded origami crane from a basket at the host stand. Training chopsticks and lollipops are always available for little ones. Our philosophy is simple: invest in making kids feel special, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo;
+                    </p>
+                    <p>
+                      We hear it all the time &mdash; guests who started coming as toddlers now bring their own friends and families. That&apos;s the cycle of trust that 38 years of genuine <Link href="/celebrations/birthday" className="text-accent-red hover:underline">family hospitality</Link> creates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* The Founding Philosophy */}
+              <div className="text-center max-w-3xl mx-auto">
+                <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Three Words That Built a Legacy</h3>
+                <div className="flex flex-wrap justify-center gap-6 mb-8">
+                  <div className="bg-warm-ivory px-8 py-4 rounded-xl">
+                    <span className="block text-2xl font-heading font-bold text-accent-red">Humble</span>
+                  </div>
+                  <div className="bg-warm-ivory px-8 py-4 rounded-xl">
+                    <span className="block text-2xl font-heading font-bold text-deep-indigo">Hardworking</span>
+                  </div>
+                  <div className="bg-warm-ivory px-8 py-4 rounded-xl">
+                    <span className="block text-2xl font-heading font-bold text-soft-gold">Honest</span>
+                  </div>
+                </div>
+                <p className="text-charcoal/80 leading-relaxed">
+                  These three words became the spiritual foundation of Jinbeh when our founder passed them down to his son. They guide every decision &mdash; from how we source ingredients to how we greet you at the door. A competitor once copied our entire menu. Our response? &ldquo;If it&apos;s going to happen, it&apos;s going to happen.&rdquo; They didn&apos;t last five years. Thirty-eight years of community trust can&apos;t be replicated.
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -323,6 +323,12 @@ export default function SakePairingGuide() {
                     <p className="text-xl text-warm-ivory/90 max-w-2xl mb-6">
                         Master the art of pairing sake with sushi, hibachi, and Japanese cuisine
                     </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍶 From Jinbeh&apos;s Bar: The Cold Sake Truth</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s owner shares a key insight most diners don&apos;t know: <strong>premium sake always performs better cold.</strong> The rice is polished over and over, each pass producing a finer grade. Hot sake uses the unpolished leftovers. Higher-quality cold sake also produces fewer headaches. Look for the white cloud in unfiltered bottles — that&apos;s rice sediment from the authentic unfiltered process.
+                </p>
+              </div>
 
                     <div className="flex items-center gap-4 text-warm-ivory/70 text-sm">
                         <span>By Jinbeh</span>

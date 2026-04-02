@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function SalmonSashimiFriscoPage() {
-  const item = getMenuItem("salmon-sashimi", "sashimi")!;
+  const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\' — just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };
   const location = locations["frisco"];
 
   return (

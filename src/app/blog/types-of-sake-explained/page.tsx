@@ -157,6 +157,12 @@ export default function TypesOfSakeExplained() {
                     <p className="text-xl text-warm-ivory/90 max-w-2xl mb-6">
                         Master sake varieties: Junmai, Ginjo, Daiginjo, and more. Learn what makes each type unique.
                     </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏮 Behind the Bar at Jinbeh</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh stocks rare Japanese whiskeys including Yamazaki — bottles the owner has to &ldquo;beg and pull teeth&rdquo; to acquire as Japanese distilleries send fewer pallets to the US. For sake, the $60 unfiltered bottle must be shaken before pouring. And the iconic hand-painted tequila bottles behind the bar? Each one is individually painted by artisans from a Mexican village. It took a year to collect enough empty bottles to fill the shelf.
+                </p>
+              </div>
 
                     <div className="flex items-center gap-4 text-warm-ivory/70 text-sm">
                         <span>By Jinbeh</span>

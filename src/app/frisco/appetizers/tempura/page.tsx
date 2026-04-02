@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function TempuraFriscoPage() {
-  const item = getMenuItem("tempura", "appetizers")!;
+  const item = { ...getMenuItem("tempura", "appetizers")!, jinbehStory: "At Jinbeh, we distinguish between tempura and agedashi: tempura uses a thicker batter for a satisfying crunch, while agedashi uses a lighter coating. Our vegetable tempura comes with warm tempura sauce — a light, delicate broth that lets each vegetable shine." };
   const location = locations["frisco"];
 
   return (

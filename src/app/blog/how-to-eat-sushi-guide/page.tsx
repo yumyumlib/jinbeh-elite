@@ -239,6 +239,12 @@ export default function HowToEatSushi() {
                                         there are plenty of unwritten rules. But here's the good news: sushi is meant to be enjoyed, and there's
                                         no pressure to be perfect. Let's walk through the proper way to eat sushi so you can dine with confidence.
                                     </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">💡 Insider Knowledge from Jinbeh&apos;s Sushi Master</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  At Jinbeh, our head sushi chef — who has been with us for nearly 30 years — teaches that understanding the terminology is key: <strong>sashimi</strong> means &ldquo;sliced&rdquo; (raw fish, no rice), <strong>nigiri-zushi</strong> is the rice ball with fish on top (what most people call &ldquo;sushi&rdquo;), and <strong>maki</strong> is any roll shaped using a bamboo roller. Knowing these terms helps you order with confidence at any Japanese restaurant.
+                </p>
+              </div>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

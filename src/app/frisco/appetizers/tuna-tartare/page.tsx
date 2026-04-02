@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function TunaTartareFriscoPage() {
-  const item = getMenuItem("tuna-tartare", "appetizers")!;
+  const item = { ...getMenuItem("tuna-tartare", "appetizers")!, jinbehStory: "In Japanese, \"tataki\" means \"to hit\" or \"to pound.\" The fish is tenderized by pounding it thin, then barely seared on the outside so it stays beautifully rare inside. A very traditional Japanese preparation served with our house-made ponzu sauce." };
   const location = locations["frisco"];
 
   return (

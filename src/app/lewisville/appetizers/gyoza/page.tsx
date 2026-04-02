@@ -89,7 +89,7 @@ const faqSchema = {
 
 
 export default function GyozaLewisvillePage() {
-  const item = getMenuItem("gyoza", "appetizers")!;
+  const item = { ...getMenuItem("gyoza", "appetizers")!, jinbehStory: "Our haramaki (spring rolls) are made entirely in-house, which is time-consuming. The kitchen makes the filling and rolls them up weekly by hand. People who try one always order again." };
   const location = locations["lewisville"];
 
   return (

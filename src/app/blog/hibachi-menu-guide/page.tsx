@@ -163,6 +163,12 @@ s
       <p>
         When it comes to dining experiences, few things compare to the excitement and flavor of a hibachi meal. The sizzling sounds, the aromatic flavors wafting through the air, and the captivating performance by skilled chefs make hibachi dining a memorable event. Whether you're planning a night out with friends, a family gathering, or considering a cozy takeout option, understanding the variety and intricacies of hibachi menus can enhance your culinary adventure.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🔥 Jinbeh&apos;s Sauce Secrets</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Every sauce at Jinbeh is made from scratch. The famous <strong>Yum Yum sauce</strong> is an in-house mayo-based blend with sriracha and sugar &mdash; people are genuinely addicted to it. The <strong>Blaster sauce</strong> is Jinbeh&apos;s &ldquo;spicy&rdquo; option (honestly not that spicy &mdash; even cautious diners handle it fine). For the truly brave, there&apos;s a secret sriracha-togarashi paste. And <strong>ponzu</strong>? House-made, lemony, and perfect with tataki dishes.
+                </p>
+              </div>
 
       <p>
         Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki—learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.

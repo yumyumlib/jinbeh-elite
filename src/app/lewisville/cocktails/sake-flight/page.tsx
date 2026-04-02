@@ -84,7 +84,7 @@ const faqSchema = {
 
 
 export default function SakeFlightLewisvillePage() {
-  const item = getMenuItem("sake-flight", "cocktails")!;
+  const item = { ...getMenuItem("sake-flight", "cocktails")!, jinbehStory: "The truth about sake quality: premium sake always performs better cold. The rice is polished repeatedly — each pass producing a finer grade. Hot sake uses the unpolished leftovers. Higher-quality cold sake also produces fewer headaches the next day." };
   const location = locations["lewisville"];
 
   return (

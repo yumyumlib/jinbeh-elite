@@ -180,6 +180,12 @@ export default function JinbehGiftCardsGuidePage() {
       <p>
         A Jinbeh gift card is more than just payment for a meal. It's a passport to unforgettable dining experiences. Whether you received one as a gift, purchased it for someone special, or earned rewards, maximizing its value means knowing all the ways to enhance your Jinbeh experience.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎁 The Gift of a Jinbeh Experience</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  A Jinbeh gift card doesn&apos;t just give someone dinner &mdash; it gives them an experience: chefs performing the legendary onion volcano tableside, house-made sauces crafted from recipes hung on the kitchen walls, and the warmth of a family-owned restaurant where Dallas Cowboys players were once regulars. Some guests have been coming since 1988 &mdash; your gift card recipient might become the next decades-long regular.
+                </p>
+              </div>
 
       <p>
         This guide walks you through everything you need to know about Jinbeh gift cards: where to purchase, how to check your balance, current deals and promotions, our Birthday Club benefits, and strategies to squeeze maximum value from your card.

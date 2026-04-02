@@ -123,6 +123,12 @@ ld raise their glasses for
                 International Beer Day. It's a celebration of the craft, culture, and community
                 that beer brings to the table—literally.
             </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍺 Behind the Bar at Jinbeh</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s bar features a stunning collection of hand-painted tequila bottles &mdash; each individually painted by artisans from a Mexican village. It took about a year to accumulate enough empty bottles to fill the shelf. New employees must pass a <strong>bar test</strong> covering knowledge of spirits, sake, wine, and cocktail preparation. The vodka strategy is smart too: the well vodka has the highest margin, but bartenders are trained to read customers &mdash; nice watch? Offer Grey Goose.
+                </p>
+              </div>
 
             <p>
                 While most people celebrate with local craft brews, we think International Beer Day

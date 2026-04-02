@@ -279,6 +279,12 @@ ide
         The birthday kid's eyes go wide as the chef flips a shrimp toward their
         plate. This is why hibachi makes birthdays unforgettable.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎂 The Three-Touch Birthday Protocol at Jinbeh</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s birthday celebrations follow a precise system: (1) The <strong>host</strong> identifies the birthday person on arrival and says happy birthday. (2) The <strong>server</strong> is notified and acknowledges the celebration. (3) The <strong>chef</strong> joins in for the grand finale &mdash; ice cream with tambourines and noisemakers. Every child also receives a hand-folded origami crane from a basket at the host stand. This isn&apos;t scripted corporate friendliness &mdash; it&apos;s genuine family warmth practiced since 1988.
+                </p>
+              </div>
 
       <p>
         We've hosted thousands of birthday celebrations at Jinbeh since 1988.

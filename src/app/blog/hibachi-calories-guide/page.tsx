@@ -194,6 +194,12 @@ uide
       <p>
         You love dining out. The social experience, the exceptional food, the entertainment. But you're also conscious about what you eat and how it fits into your health goals. Good news: you don't have to choose between these priorities.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍚 The Hidden Vegetables in Jinbeh&apos;s Fried Rice</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Here&apos;s a nutrition secret from Jinbeh&apos;s kitchen: the fried rice actually contains finely chopped scallion, onion, and carrots &mdash; but they&apos;re cut so small you can&apos;t see them. This is deliberate. The restaurant learned early on that customers (especially kids) don&apos;t want visible vegetables in their rice. The chopping technique is so refined that the nutrition is there without the visual &ldquo;objection.&rdquo;
+                </p>
+              </div>
 
       <p>
         Understanding the nutritional content of your favorite dishes is the key to enjoying restaurant meals mindfully. At Jinbeh, our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi vs teppanyaki</Link> cooking methods are naturally well-suited to health-conscious dining. High-temperature grilling requires minimal added fats, ingredients are fresh and visible, and you control portion sizes and sauces.

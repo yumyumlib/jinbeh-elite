@@ -138,6 +138,12 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       <p>
         Imagine the sizzle of the hibachi grill, the whoosh of flames, and the laughter of your guests—all happening right in your backyard or private venue. The interactive energy. The entertainment. The incredible food. That's what Jinbeh's offsite hibachi catering brings to your celebration.
       </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎪 The Festival Legacy</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh&apos;s offsite catering roots trace back to the Las Colinas days when the Saturday-closed location gave the team bandwidth for festivals and community events. The restaurant&apos;s longest-tenured employee &mdash; on staff since 1988 &mdash; is the mastermind behind food logistics for events. He doesn&apos;t manage people, but he can orchestrate feeding hundreds with military precision.
+                </p>
+              </div>
 
       <p>
         For over 35 years, Jinbeh has been perfecting the art of hibachi entertainment and Japanese cuisine. Now, we bring that same expertise directly to you, transforming any venue into an unforgettable culinary experience. Whether you're celebrating a birthday, hosting a corporate event, or gathering family for a special dinner, offsite hibachi catering creates memories that last.

@@ -97,7 +97,7 @@ const faqSchema = {
 
 
 export default function TunaSashimiLewisvillePage() {
-  const item = getMenuItem("tuna-sashimi", "sashimi")!;
+  const item = { ...getMenuItem("tuna-sashimi", "sashimi")!, jinbehStory: "Premium tuna sliced by our sushi master — nearly 30 years of daily practice ensuring each cut is precise. \'Sashimi\' literally translates to \'sliced,\' the purest form of enjoying raw fish." };
   const location = locations["lewisville"];
 
   return (

@@ -210,6 +210,12 @@ export default function BeginnerSushiTipsPage() {
         <p>
           Sushi, a cherished culinary art from Japan, often appears daunting to prepare at home, especially for those new to the craft. However, with proper guidance and a few straightforward tips, you can craft delectable sushi rolls right in your kitchen. Whether you lean towards traditional classics or are eager to explore more creative options, this guide offers the foundational knowledge to kickstart your sushi-making journey.
         </p>
+              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍱 Pro Tips from Jinbeh</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Start with the <strong>Sushi Sampler</strong> &mdash; one piece of each popular fish on rice, at a discount, so you can discover your favorites. Or try the <strong>Sashimi Sampler</strong> for the three most popular fish at a better deal than ordering individually. Jinbeh&apos;s sushi menu was co-created by a chef who&apos;s been with the restaurant for nearly 30 years, so you&apos;re getting recipes refined over decades of craft.
+                </p>
+              </div>
 
         <p>
           Sushi not only allows you to explore a new cuisine but also provides a unique opportunity to engage with the artistry of food preparation. Understanding the fundamental aspects of sushi can greatly enhance your appreciation and execution of this exquisite dish. Starting with the basic components and tools ensures that your sushi-making experience is both enjoyable and successful.

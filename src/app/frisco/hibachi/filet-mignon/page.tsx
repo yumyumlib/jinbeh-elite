@@ -123,7 +123,7 @@ const breadcrumbSchema = {
 
 
 export default function FiletMignonFriscoPage() {
-  const item = getMenuItem("filet-mignon", "hibachi")!;
+  const item = { ...getMenuItem("filet-mignon", "hibachi")!, jinbehStory: "At the hibachi, our grills reach approximately 550°F — temperatures so high that cross-contamination from allergens is extremely difficult. Our chefs are also trained to handle allergy situations with extra care." };
   const location = locations["frisco"];
 
   return (
