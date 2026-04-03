@@ -129,6 +129,12 @@ n unusual combination. After
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   Jinbeh&apos;s menu philosophy emerged from decades of trial and error. The original Las Colinas menu was a thick book of truly authentic Japanese dishes &mdash; like salted mackerel and traditional set menus. Over time, they learned: people want <em>American authentic</em>. Food that feels genuinely Japanese enough to transport you, but not so foreign that you&apos;re uncomfortable. &ldquo;We chose a different path: family-friendly, accessible, and large enough to serve the community.&rdquo;
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Multiple D Magazine Awards, Three Decades Running</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  D Magazine has recognized Jinbeh multiple times across their Best of Big D and Best Neighborhood Restaurants franchises. That kind of sustained editorial recognition &mdash; spanning the original Las Colinas location through today&apos;s Frisco and Lewisville restaurants &mdash; speaks to consistency that most restaurants never achieve.
+                </p>
+              </div>
               </div>
 
             <p>

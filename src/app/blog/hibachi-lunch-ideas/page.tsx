@@ -138,6 +138,12 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   At Jinbeh, there&apos;s a critical internal rule: customers should never wait more than <strong>10 minutes at lunch</strong> and 15 at dinner. The hibachi side runs on a hand-written tracking system &mdash; a tradition since 1988 &mdash; that records table numbers, party sizes, seating times, and rounds. Tables are used in a specific priority order (front tables first). On busy weekends, they fill four or more rounds.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Diners&apos; Choice: Best Value</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh is recognized by OpenTable diners as a <strong>Best Value</strong> pick in the Dallas suburbs. With lunch hibachi starting at $12.95 at a D Magazine award-winning restaurant, you get award-winning quality at everyday prices.
+                </p>
+              </div>
               </div>
 
       <p>

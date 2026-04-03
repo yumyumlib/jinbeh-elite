@@ -197,6 +197,12 @@ export default function BestSteakhousesLewisville() {
                                             steak is cooked by a skilled teppanyaki chef right at your table, you taste the
                                             difference. That's been the Jinbeh experience since 1988."
                                         </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Best Value & Best Hibachi in Lewisville</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh Lewisville is recognized by OpenTable as both <strong>Best Value</strong> and <strong>Best Hibachi in Lewisville</strong> &mdash; earned entirely through diner reviews. Combined with multiple D Magazine awards and features in Eater Dallas and The Dallas Morning News, Jinbeh sets the standard for Japanese steakhouse dining in Lewisville.
+                </p>
+              </div>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
                                     </div>
 

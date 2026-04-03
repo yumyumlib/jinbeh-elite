@@ -120,6 +120,12 @@ export default function HibachiCatering() {
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   When Jinbeh was in Las Colinas, the team regularly catered community festivals and charity events. They participated in a cancer charity beer crawl where a team of 20 would dress in themed costumes &mdash; superheroes one year, elderly characters another &mdash; feeding all the volunteers with trays of house-made fried rice. Even today, former employees happily return to help with events. That&apos;s the kind of family loyalty that 38 years builds.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Flavors for Your Event</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  When you book Jinbeh catering, you&apos;re getting flavors from a D Magazine &ldquo;Best of Big D&rdquo; winner with 8 current OpenTable Diners&apos; Choice recognitions. Our house-made sauces, hibachi expertise, and 38 years of experience travel with our team to your venue.
+                </p>
+              </div>
               </div>
 
                             <div className="bg-gradient-to-br from-green-600/10 to-soft-gold/10 border-l-4 border-green-600 rounded-r-xl p-6 my-8">

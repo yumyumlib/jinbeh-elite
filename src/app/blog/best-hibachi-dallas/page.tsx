@@ -203,6 +203,12 @@ iences
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   While competitors come and go, Jinbeh has thrived since 1988 on three simple principles: <strong>humble, hardworking, honest</strong>. A competitor once copied Jinbeh&apos;s entire menu &mdash; removing the name and putting their own on it. They didn&apos;t survive five years. As the owner puts it: &ldquo;They can take the menu, but they can&apos;t replicate 38 years of community trust.&rdquo; Dallas Cowboys players were regulars for over a decade. That&apos;s the kind of restaurant you&apos;re walking into.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Hibachi Since 1988</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh is the only DFW hibachi restaurant with both <strong>D Magazine</strong> and <strong>OpenTable Diners&apos; Choice</strong> recognition. Named &ldquo;Best Place to Eat&rdquo; in D Magazine&apos;s Best of Big D, and currently on <strong>8 OpenTable Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Hibachi for both Frisco and Lewisville. When food critics and 1,600+ diners agree, you know it&apos;s the real thing.
+                </p>
+              </div>
               </div>
 
       <p>

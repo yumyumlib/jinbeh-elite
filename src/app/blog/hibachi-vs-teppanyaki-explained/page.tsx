@@ -139,6 +139,12 @@ efinitions
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   At the original Las Colinas location, Jinbeh served <strong>Toban Yaki</strong> &mdash; a clay pot with a ceramic dish on top, cooked over an open flame. The presentation was stunning: it came with a lid that was ceremonially opened in front of the customer. Super garlicky and beautifully presented, it was one of the restaurant&apos;s best sellers. It&apos;s one of the dishes the current owner would love to bring back.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">📰 Featured in Eater Dallas</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Eater Dallas included Jinbeh in their curated DFW dining guide &mdash; a testament to the restaurant&apos;s commitment to authentic Japanese culinary tradition. Combined with multiple D Magazine awards and 8 current OpenTable Diners&apos; Choice recognitions, Jinbeh has earned its reputation as one of North Texas&apos;s most enduring Japanese restaurants.
+                </p>
+              </div>
               </div>
 
       <p>

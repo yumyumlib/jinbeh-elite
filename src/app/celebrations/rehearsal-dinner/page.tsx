@@ -158,6 +158,12 @@ export default function RehearsalDinnerPage() {
               <p className="text-xl md:text-2xl text-white/90 mb-8">
                 Start your wedding celebration with an unforgettable hibachi experience for your closest family and friends.
               </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Diners&apos; Choice for Japanese Dining</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  For rehearsal dinners, venue choice signals taste. Jinbeh is a D Magazine award winner and current <strong>OpenTable Diners&apos; Choice</strong> restaurant &mdash; recognized for both cuisine quality and value. Your guests will be impressed before the first course arrives.
+                </p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/frisco"

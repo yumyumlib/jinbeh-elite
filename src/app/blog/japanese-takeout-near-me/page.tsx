@@ -163,6 +163,12 @@ export default function JapaneseTakeoutNearMe() {
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   Every sauce that travels with your Jinbeh takeout is made from scratch in-house &mdash; from the addictive Yum Yum sauce to the house-made ponzu. The recipes are typed out and hung on the kitchen walls so every cook learns them. When you taste the difference between Jinbeh&apos;s homemade sauces and a chain&apos;s packets, you understand why families have been ordering for 38 years.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Sushi & Hibachi, Now To Go</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Every takeout order from Jinbeh carries the same quality that earned D Magazine&apos;s &ldquo;Best Place to Eat&rdquo; recognition and 8 current OpenTable Diners&apos; Choice lists. Same house-made sauces. Same 38-year recipes. Just packaged for your couch.
+                </p>
+              </div>
               </div>
 
             <p>

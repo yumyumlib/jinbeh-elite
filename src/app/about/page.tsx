@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "japanese restaurant history frisco",
     "family owned restaurant frisco tx",
     "hibachi restaurant history",
-    "authentic japanese dining dfw", "japanese restaurants texas", "japanese food texas", ],
+    "authentic japanese dining dfw", "japanese restaurants texas", "japanese food texas",],
   openGraph: {
     title: "About Jinbeh | Family-Owned Since 1988",
     description: "38+ years of authentic Japanese dining in North Texas. Discover our story.",
@@ -482,7 +482,7 @@ export default function AboutPage() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                       quality={80}
-                    loading="lazy" />
+                      loading="lazy" />
                     <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/30 transition-colors flex items-center justify-center">
                       <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
@@ -495,7 +495,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        
+
         {/* Behind the Scenes — Stories of Jinbeh */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6 max-w-5xl">
@@ -600,6 +600,79 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Awards & Recognition Section */}
+        <section className="py-16 bg-gradient-to-b from-warm-ivory to-white">
+          <div className="container mx-auto px-6">
+            <RevealSection>
+              <div className="text-center mb-12">
+                <ShinyBadge>Recognized Excellence</ShinyBadge>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mt-4 mb-4">
+                  Awards &amp; Recognition
+                </h2>
+                <p className="text-charcoal/70 max-w-2xl mx-auto text-lg">
+                  We&apos;re honored that food critics, diners, and platforms have recognized what our guests have known for decades &mdash; Jinbeh is something special.
+                </p>
+              </div>
+            </RevealSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {/* D Magazine */}
+              <RevealSection delay={100}>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
+                  <div className="w-16 h-16 bg-accent-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-3xl">🏆</span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-charcoal mb-3">D Magazine</h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                    Multiple award winner including <strong>&ldquo;Best Place to Eat&rdquo;</strong> in the Best of Big D franchise and <strong>&ldquo;Best Neighborhood Restaurants.&rdquo;</strong>
+                  </p>
+                  <p className="text-xs text-charcoal/50 italic">
+                    Also featured in the D Magazine Dining Directory with Past Awards recognition.
+                  </p>
+                </div>
+              </RevealSection>
+
+              {/* OpenTable Diners' Choice */}
+              <RevealSection delay={200}>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
+                  <div className="w-16 h-16 bg-soft-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-3xl">⭐</span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-charcoal mb-3">OpenTable Diners&apos; Choice</h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                    Currently recognized across <strong>8 Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Japanese, Best Value, Kid-Friendly, and Best Hibachi for both locations.
+                  </p>
+                  <p className="text-xs text-charcoal/50 italic">
+                    Earned through verified diner reviews, updated monthly.
+                  </p>
+                </div>
+              </RevealSection>
+
+              {/* Media Features */}
+              <RevealSection delay={300}>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
+                  <div className="w-16 h-16 bg-deep-indigo/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-3xl">📰</span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Featured In</h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                    <strong>Eater Dallas</strong> &mdash; included in their curated DFW dining guide. <strong>The Dallas Morning News</strong> &mdash; featured in their restaurant directory.
+                  </p>
+                  <p className="text-xs text-charcoal/50 italic">
+                    38 years of earned media recognition across North Texas.
+                  </p>
+                </div>
+              </RevealSection>
+            </div>
+
+            <RevealSection delay={400}>
+              <p className="text-center text-charcoal/60 text-sm mt-10 max-w-xl mx-auto">
+                Our real award? Seeing families come back generation after generation. That&apos;s the recognition that matters most.
+              </p>
+            </RevealSection>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-accent-red to-deep-indigo text-white">
           <div className="container mx-auto px-6 text-center">
@@ -625,13 +698,13 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-        
-            <p className="mt-4 text-sm">
-              <a href="/blog/asian-cuisine-dallas" className="text-accent-red hover:underline">
-                Related: Top Asian Cuisine & Fusion Spots in Dallas TX →
-              </a>
-            </p>
-</section>
+
+          <p className="mt-4 text-sm">
+            <a href="/blog/asian-cuisine-dallas" className="text-accent-red hover:underline">
+              Related: Top Asian Cuisine & Fusion Spots in Dallas TX →
+            </a>
+          </p>
+        </section>
       </main>
       <Footer />
     </>

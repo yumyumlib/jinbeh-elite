@@ -185,6 +185,12 @@ export default function JinbehGiftCardsGuidePage() {
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   A Jinbeh gift card doesn&apos;t just give someone dinner &mdash; it gives them an experience: chefs performing the legendary onion volcano tableside, house-made sauces crafted from recipes hung on the kitchen walls, and the warmth of a family-owned restaurant where Dallas Cowboys players were once regulars. Some guests have been coming since 1988 &mdash; your gift card recipient might become the next decades-long regular.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎁 Give the Gift of Award-Winning Japanese Dining</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  A Jinbeh gift card isn&apos;t just dinner &mdash; it&apos;s an experience at a D Magazine &ldquo;Best of Big D&rdquo; winner with 8 current OpenTable Diners&apos; Choice recognitions. Your recipient will enjoy the same award-winning hibachi and sushi that food critics and thousands of diners have celebrated for 38 years.
+                </p>
+              </div>
               </div>
 
       <p>

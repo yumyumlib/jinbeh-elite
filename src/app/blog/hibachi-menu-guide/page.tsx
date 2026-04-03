@@ -168,6 +168,12 @@ s
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   Every sauce at Jinbeh is made from scratch. The famous <strong>Yum Yum sauce</strong> is an in-house mayo-based blend with sriracha and sugar &mdash; people are genuinely addicted to it. The <strong>Blaster sauce</strong> is Jinbeh&apos;s &ldquo;spicy&rdquo; option (honestly not that spicy &mdash; even cautious diners handle it fine). For the truly brave, there&apos;s a secret sriracha-togarashi paste. And <strong>ponzu</strong>? House-made, lemony, and perfect with tataki dishes.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 There&apos;s a Reason D Magazine Named Us Best of Big D</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Every item on Jinbeh&apos;s hibachi menu is backed by 38 years of refinement. D Magazine recognized Jinbeh as &ldquo;Best Place to Eat&rdquo; in their Best of Big D franchise, and OpenTable diners currently rate us a Diners&apos; Choice pick for Best Hibachi in both Frisco and Lewisville.
+                </p>
+              </div>
               </div>
 
       <p>

@@ -136,6 +136,12 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   Jinbeh&apos;s sushi master &mdash; nearly 30 years with the restaurant &mdash; co-created every roll on the menu during late-night sessions with the Matsuda family. High-end Japanese restaurants don&apos;t do picture menus (Jinbeh tried once &mdash; the feedback was &ldquo;this is very Chinese restaurant&rdquo;), and they don&apos;t do all-you-can-eat. What they do is craft each piece with precision, using the freshest daily-sourced fish.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine Recognized Our Craft-First Approach</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  When D Magazine named Jinbeh &ldquo;Best Place to Eat&rdquo; and &ldquo;Best Neighborhood Restaurant,&rdquo; it wasn&apos;t for volume &mdash; it was for quality. That same craft-first philosophy drives every piece of sushi our 30-year master creates today. OpenTable diners agree: Jinbeh is a current Diners&apos; Choice pick for Best Sushi in the Dallas suburbs.
+                </p>
+              </div>
               </div>
 
             <p>

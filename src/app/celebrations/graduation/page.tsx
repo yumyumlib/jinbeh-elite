@@ -299,6 +299,12 @@ export default function GraduationPage() {
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
               A Milestone Worth Celebrating
             </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Celebrate at a D Magazine Award-Winning Restaurant</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Your graduate deserves an award-winning celebration. Jinbeh has earned D Magazine&apos;s &ldquo;Best Place to Eat&rdquo; and &ldquo;Best Neighborhood Restaurants&rdquo; recognition, plus 8 current OpenTable Diners&apos; Choice lists. That&apos;s 38 years of excellence &mdash; the perfect backdrop for their milestone.
+                </p>
+              </div>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
               Celebrate Your Graduate&apos;s Achievement at Jinbeh
             </h1>

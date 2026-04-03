@@ -86,7 +86,7 @@ export default function HeroSection() {
                     <div className="mb-6 flex flex-col items-center gap-3">
                         <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
                             <span className="inline-flex items-center gap-1.5 bg-accent-red/90 text-white px-4 py-1.5 rounded-full font-semibold tracking-wide shadow-lg">
-                                Family-Owned Since 1988
+                                Award-Winning · Family-Owned Since 1988
                             </span>
                             <span className="hidden sm:inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white/90 px-4 py-1.5 rounded-full font-medium border border-white/20">
                                 <svg className="w-4 h-4 text-soft-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">

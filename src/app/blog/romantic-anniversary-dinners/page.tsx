@@ -238,6 +238,12 @@ export default function RomanticAnniversaryDinnersPage() {
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   Jinbeh uses an OpenTable notes system where staff can see how many times a customer has visited, their history, and any special notes. Long-time regulars &mdash; couples who&apos;ve celebrated anniversaries year after year &mdash; are recognized and given special attention. It&apos;s not a flashy &ldquo;VIP program&rdquo; with cards and apps. It&apos;s quiet, genuine recognition that only comes from 38 years of real relationships.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Diners&apos; Choice for Japanese Dining</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh is currently on <strong>8 OpenTable Diners&apos; Choice lists</strong> for 2026. For your anniversary, that means you&apos;re choosing a restaurant that thousands of verified diners have already celebrated at &mdash; and loved. That&apos;s not a marketing claim. That&apos;s earned proof.
+                </p>
+              </div>
               </div>
 
       <p>

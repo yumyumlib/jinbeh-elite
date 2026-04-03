@@ -262,6 +262,12 @@ export default function FamilyGatheringsPage() {
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
               Celebrations at Jinbeh
             </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Recognized by OpenTable as Top Kid-Friendly Dining</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh is a current <strong>OpenTable Diners&apos; Choice</strong> pick for Kid-Friendly dining in Dallas &mdash; based entirely on verified family reviews. With D Magazine&apos;s &ldquo;Best of Big D&rdquo; recognition and 38 years of family-first hospitality, your gathering is in trusted hands.
+                </p>
+              </div>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
               Bring Your Family Together
             </h1>

@@ -257,6 +257,24 @@ export default function FriscoPage() {
           </div>
         </section>
 
+        
+        {/* Awards Strip */}
+        <section className="py-4 bg-warm-ivory border-b border-warm-ivory-dark">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-charcoal/70">
+              <span className="inline-flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
+                <span>🏆</span> D Magazine &ldquo;Best of Big D&rdquo; Winner
+              </span>
+              <span className="inline-flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
+                <span>⭐</span> OpenTable Diners&apos; Choice 2026
+              </span>
+              <span className="inline-flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
+                <span>📰</span> Featured in Eater Dallas
+              </span>
+            </div>
+          </div>
+        </section>
+
         {/* Info Section */}
         <section className="py-16 bg-warm-ivory">
           <div className="container mx-auto px-6">

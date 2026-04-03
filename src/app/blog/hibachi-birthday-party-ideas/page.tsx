@@ -284,6 +284,12 @@ ide
                 <p className="text-charcoal/70 text-sm leading-relaxed">
                   Jinbeh&apos;s birthday celebrations follow a precise system: (1) The <strong>host</strong> identifies the birthday person on arrival and says happy birthday. (2) The <strong>server</strong> is notified and acknowledges the celebration. (3) The <strong>chef</strong> joins in for the grand finale &mdash; ice cream with tambourines and noisemakers. Every child also receives a hand-folded origami crane from a basket at the host stand. This isn&apos;t scripted corporate friendliness &mdash; it&apos;s genuine family warmth practiced since 1988.
                 </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable&apos;s Top Kid-Friendly Pick</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Jinbeh is recognized by <strong>OpenTable as a Diners&apos; Choice Kid-Friendly restaurant</strong> in the Dallas suburbs &mdash; based entirely on verified diner reviews. From origami cranes at the host stand to the Three-Touch Birthday Protocol, families trust Jinbeh to make celebrations unforgettable.
+                </p>
+              </div>
               </div>
 
       <p>

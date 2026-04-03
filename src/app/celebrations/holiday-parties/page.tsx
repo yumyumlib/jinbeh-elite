@@ -172,6 +172,12 @@ export default function HolidayPartiesPage() {
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
               Festive Celebrations
             </p>
+              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Host Your Holiday Gathering at an Award-Winning Restaurant</h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed">
+                  Impress your guests at a restaurant with multiple D Magazine awards, 8 current OpenTable Diners&apos; Choice recognitions, and 38 years of holiday celebration expertise. Jinbeh&apos;s combination of entertainment, award-winning food, and warm family hospitality makes every holiday gathering memorable.
+                </p>
+              </div>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
               Holiday Parties & Celebrations
             </h1>
