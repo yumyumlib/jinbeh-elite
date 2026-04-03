@@ -262,14 +262,14 @@ export default function FriscoPage() {
         <section className="py-4 bg-warm-ivory border-b border-warm-ivory-dark">
           <div className="container mx-auto px-6">
             <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-charcoal/70">
-              <span className="inline-flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <span>🏆</span> D Magazine &ldquo;Best of Big D&rdquo; Winner
+              <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
+                <Image src="/images/awards/d-magazine-best-of-big-d.png" alt="D Magazine" width={24} height={24} className="rounded-sm" /> D Magazine &ldquo;Best of Big D&rdquo; Winner
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <span>⭐</span> OpenTable Diners&apos; Choice 2026
+              <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
+                <Image src="/images/awards/opentable-diners-choice.png" alt="OpenTable Diners Choice" width={24} height={24} className="rounded-sm" /> OpenTable Diners&apos; Choice 2026
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <span>📰</span> Featured in Eater Dallas
+              <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
+                <Image src="/images/awards/eater-dallas-featured.png" alt="Eater Dallas" width={24} height={24} className="rounded-sm" /> Featured in Eater Dallas
               </span>
             </div>
           </div>

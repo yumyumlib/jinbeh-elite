@@ -619,8 +619,8 @@ export default function AboutPage() {
               {/* D Magazine */}
               <RevealSection delay={100}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
-                  <div className="w-16 h-16 bg-accent-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl">🏆</span>
+                  <div className="w-24 h-24 mx-auto mb-4 relative">
+                    <Image src="/images/awards/d-magazine-best-of-big-d.png" alt="D Magazine Best of Big D Winner badge" fill className="object-contain" quality={90} />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">D Magazine</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
@@ -635,8 +635,8 @@ export default function AboutPage() {
               {/* OpenTable Diners' Choice */}
               <RevealSection delay={200}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
-                  <div className="w-16 h-16 bg-soft-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl">⭐</span>
+                  <div className="w-24 h-24 mx-auto mb-4 relative">
+                    <Image src="/images/awards/opentable-diners-choice.png" alt="OpenTable Diners Choice 2026 award badge" fill className="object-contain" quality={90} />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">OpenTable Diners&apos; Choice</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
@@ -651,8 +651,8 @@ export default function AboutPage() {
               {/* Media Features */}
               <RevealSection delay={300}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
-                  <div className="w-16 h-16 bg-deep-indigo/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl">📰</span>
+                  <div className="w-24 h-24 mx-auto mb-4 relative">
+                    <Image src="/images/awards/eater-dallas-featured.png" alt="Eater Dallas Featured Restaurant badge" fill className="object-contain" quality={90} />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Featured In</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
