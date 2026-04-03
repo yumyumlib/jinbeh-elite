@@ -271,13 +271,13 @@ export default function LewisvillePage() {
           <div className="container mx-auto px-6">
             <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-charcoal/70">
               <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <Image src="/images/awards/d-magazine-best-of-big-d.png" alt="D Magazine" width={24} height={24} className="rounded-sm" /> D Magazine Award Winner
+                <Image src="/images/awards/d-magazine-logo.png" alt="D Magazine" width={24} height={24} className="rounded-sm" /> D Magazine Award Winner
               </span>
               <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <Image src="/images/awards/opentable-diners-choice.png" alt="OpenTable Diners Choice" width={24} height={24} className="rounded-sm" /> OpenTable Diners&apos; Choice: Best Value &amp; Best Hibachi
+                <Image src="/images/awards/opentable-logo.png" alt="OpenTable Diners Choice" width={24} height={24} className="rounded-sm" /> OpenTable Diners&apos; Choice: Best Value &amp; Best Hibachi
               </span>
               <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <Image src="/images/awards/eater-dallas-featured.png" alt="Eater Dallas" width={24} height={24} className="rounded-sm" /> Featured in Eater Dallas
+                <Image src="/images/awards/eater-logo.png" alt="Eater Dallas" width={24} height={24} className="rounded-sm" /> Featured in Eater Dallas
               </span>
             </div>
           </div>
