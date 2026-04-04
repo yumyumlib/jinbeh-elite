@@ -266,7 +266,7 @@ export default function FriscoPage() {
                 <Image src="/images/awards/d-magazine-logo.png" alt="D Magazine" width={24} height={24} className="rounded-sm" /> D Magazine &ldquo;Best of Big D&rdquo; Winner
               </span>
               <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
-                <Image src="/images/awards/opentable-logo.png" alt="OpenTable Diners Choice" width={24} height={24} className="rounded-sm" /> OpenTable Diners&apos; Choice 2026
+                <Image src="/images/awards/opentable-logo.png" alt="OpenTable Diners Choice" width={24} height={24} className="rounded-sm" /> OpenTable Diners&apos; Choice &mdash; #2 Best Hibachi in Frisco
               </span>
               <span className="inline-flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200">
                 <Image src="/images/awards/eater-logo.png" alt="Eater Dallas" width={24} height={24} className="rounded-sm" /> Featured in Eater Dallas

@@ -206,7 +206,7 @@ iences
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Hibachi Since 1988</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh is the only DFW hibachi restaurant with both <strong>D Magazine</strong> and <strong>OpenTable Diners&apos; Choice</strong> recognition. Named &ldquo;Best Place to Eat&rdquo; in D Magazine&apos;s Best of Big D, and currently on <strong>8 OpenTable Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Hibachi for both Frisco and Lewisville. When food critics and 1,600+ diners agree, you know it&apos;s the real thing.
+                  Jinbeh is the only DFW hibachi restaurant with both <strong>D Magazine</strong> and <strong>OpenTable Diners&apos; Choice</strong> recognition. Ranked <strong>#1 Hibachi in Lewisville</strong> and <strong>#2 Hibachi in Frisco</strong> on OpenTable. D Magazine called it &ldquo;the best grilled veggies around&rdquo; and diners say &ldquo;anytime I&apos;m looking for consistency and a great meal, I go there.&rdquo; Named &ldquo;Best Place to Eat&rdquo; in D Magazine&apos;s Best of Big D, and currently on <strong>8 OpenTable Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Hibachi for both Frisco and Lewisville. When food critics and 1,600+ diners agree, you know it&apos;s the real thing.
                 </p>
               </div>
               </div>

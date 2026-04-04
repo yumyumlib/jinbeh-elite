@@ -220,7 +220,7 @@ export default function PickleballRestaurantsLewisvillePage() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Voted Best Hibachi in Lewisville by OpenTable Diners</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  After a tough match, refuel at the restaurant OpenTable diners voted <strong>Best Hibachi in Lewisville</strong>. Jinbeh is also recognized as <strong>Best Value</strong> in the Dallas suburbs &mdash; meaning award-winning hibachi won&apos;t break the bank after your game.
+                  After a tough match, refuel at the restaurant OpenTable ranks <strong>#1 Hibachi in Lewisville</strong> and <strong>#1 Tempura in Lewisville</strong>. Jinbeh is also recognized as <strong>Best Value</strong> in the Dallas suburbs &mdash; meaning award-winning hibachi won&apos;t break the bank after your game.
                 </p>
               </div>
               </div>

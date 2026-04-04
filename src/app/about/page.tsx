@@ -624,10 +624,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">D Magazine</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
-                    Multiple award winner including <strong>&ldquo;Best Place to Eat&rdquo;</strong> in the Best of Big D franchise and <strong>&ldquo;Best Neighborhood Restaurants.&rdquo;</strong>
+                    Multiple award winner including <strong>&ldquo;Best Place to Eat&rdquo;</strong> in the Best of Big D franchise and <strong>&ldquo;Best Neighborhood Restaurants.&rdquo;</strong> D Magazine described Jinbeh as having &ldquo;the best grilled veggies around&rdquo; and noted diners say &ldquo;Anytime I&apos;m looking for consistency and a great meal, I go there.&rdquo;
                   </p>
                   <p className="text-xs text-charcoal/50 italic">
-                    Also featured in the D Magazine Dining Directory with Past Awards recognition.
+                    Featured in D Magazine since 1990 &mdash; over three decades of editorial recognition.
                   </p>
                 </div>
               </RevealSection>
@@ -640,7 +640,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">OpenTable Diners&apos; Choice</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
-                    Currently recognized across <strong>8 Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Japanese, Best Value, Kid-Friendly, and Best Hibachi for both locations.
+                    Currently recognized across <strong>12+ Diners&apos; Choice and &ldquo;Best Of&rdquo; lists</strong> for 2026. Ranked <strong>#1 Hibachi in Lewisville</strong>, <strong>#1 Tempura in Lewisville</strong>, and <strong>#2 Hibachi in Frisco</strong>. Also selected for Best Japanese, Best Food, Best Value, Healthy, and Kid-Friendly.
                   </p>
                   <p className="text-xs text-charcoal/50 italic">
                     Earned through verified diner reviews, updated monthly.
@@ -656,10 +656,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Featured In</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
-                    <strong>Eater Dallas</strong> &mdash; included in their curated DFW dining guide. <strong>The Dallas Morning News</strong> &mdash; featured in their restaurant directory.
+                    <strong>Eater Dallas</strong> &mdash; included in their curated DFW dining guide. <strong>TripAdvisor Travelers&apos; Choice</strong> award recipient. Named to TripAdvisor&apos;s &ldquo;Best Sushi&rdquo; and &ldquo;10 Best Japanese Restaurants&rdquo; lists for both Frisco and Lewisville.
                   </p>
                   <p className="text-xs text-charcoal/50 italic">
-                    38 years of earned media recognition across North Texas.
+                    Recognized across major travel and dining platforms worldwide.
                   </p>
                 </div>
               </RevealSection>

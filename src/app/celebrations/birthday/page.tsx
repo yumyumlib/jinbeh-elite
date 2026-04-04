@@ -175,7 +175,7 @@ export default function BirthdayPage() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable&apos;s Top Kid-Friendly Restaurant</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh is recognized by <strong>OpenTable as a Diners&apos; Choice Kid-Friendly restaurant</strong> in the Dallas suburbs. Combined with our D Magazine &ldquo;Best of Big D&rdquo; award, you&apos;re celebrating at a restaurant critics and families both love.
+                  Jinbeh is recognized by <strong>OpenTable as a Diners&apos; Choice Kid-Friendly restaurant</strong> in the Dallas suburbs. Combined with our D Magazine &ldquo;Best of Big D&rdquo; award, <strong>TripAdvisor Travelers&apos; Choice</strong> recognition, and OpenTable&apos;s <strong>#1 Hibachi in Lewisville</strong> ranking, you&apos;re celebrating at a restaurant critics and families both love.
                 </p>
               </div>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">

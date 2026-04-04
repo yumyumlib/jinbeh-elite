@@ -82,7 +82,7 @@ export default function JapaneseRestaurantsLewisville() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Currently on 8 OpenTable Diners&apos; Choice Lists</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh appears on more OpenTable Diners&apos; Choice lists than any other Japanese restaurant in the Dallas suburbs &mdash; including Best Japanese, Best Value, Kid-Friendly, Best Hibachi, and Best Tempura. These aren&apos;t paid placements. They&apos;re earned through thousands of verified diner reviews.
+                  Jinbeh is ranked <strong>#1 Hibachi</strong> and <strong>#1 Tempura</strong> in Lewisville on OpenTable &mdash; and appears on more Diners&apos; Choice lists than any other Japanese restaurant in the Dallas suburbs &mdash; including Best Japanese, Best Value, Kid-Friendly, Best Hibachi, and Best Tempura. These aren&apos;t paid placements. They&apos;re earned through thousands of verified diner reviews.
                 </p>
               </div>
                                 <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
