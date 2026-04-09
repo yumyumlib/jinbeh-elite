@@ -180,10 +180,6 @@ export default function TypesOfSushi() {
                         <span>10 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/ayce-sushi-vs-traditional" className="text-accent-red hover:underline">all-you-can-eat sushi vs traditional</Link>
-              </p>
 
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/sushi-platters-near-me" className="text-accent-red hover:underline">sushi platters near me</Link>
@@ -202,6 +198,12 @@ export default function TypesOfSushi() {
                                         and specialty rolls, the sushi menu can feel like reading a foreign language.
                                         Let's break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/ayce-sushi-vs-traditional" className="text-accent-red hover:underline">all-you-can-eat sushi vs traditional</Link>
+              </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

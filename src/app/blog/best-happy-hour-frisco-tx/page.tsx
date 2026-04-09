@@ -142,10 +142,6 @@ export default function BestHappyHourFrisco() {
                         <span>6 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/international-beer-day" className="text-accent-red hover:underline">International Beer Day celebrations</Link>
-              </p>
 </section>
 
             {/* Content */}
@@ -161,6 +157,12 @@ export default function BestHappyHourFrisco() {
                                         food and drinks, Frisco has you covered. And if you're craving <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi</Link> and <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake recommendations</Link>,
                                         we know exactly where you should go.
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/international-beer-day" className="text-accent-red hover:underline">International Beer Day celebrations</Link>
+              </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

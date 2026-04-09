@@ -190,10 +190,6 @@ export default function BestSushiFrisco() {
                         <span>7 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/best-sushi-dallas" className="text-accent-red hover:underline">best sushi in Dallas</Link>
-              </p>
 </section>
 
             {/* Content */}
@@ -209,6 +205,12 @@ export default function BestSushiFrisco() {
                                         whether you're craving classic nigiri, creative specialty rolls, or a full
                                         omakase experience, this guide has you covered. Explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> guide as well.
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/best-sushi-dallas" className="text-accent-red hover:underline">best sushi in Dallas</Link>
+              </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

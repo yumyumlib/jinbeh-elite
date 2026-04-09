@@ -73,7 +73,9 @@ export default function PopularJapaneseCulture() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Japan is a land where ancient traditions seamlessly blend with cutting-edge technology.</strong> From its stunning landscapes to intricate craftsmanship, Japan offers cultural treasures that captivate travelers and locals alike.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        Why do Americans lose their minds over ramen? Why is sake suddenly on every cocktail menu? Why does your 8-year-old know more about sushi than your parents ever did? Japanese culture hasn't just arrived in America—it's become part of how we eat, celebrate, and entertain.
+      </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Japanese culture represents a unique harmony between honoring the past and embracing the future. Every tradition, from tea ceremonies to anime, tells a story of respect, creativity, and innovation."</p>

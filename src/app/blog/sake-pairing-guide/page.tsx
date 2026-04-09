@@ -761,6 +761,16 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <p>
+                    <div className="not-prose my-10 bg-gradient-to-r from-accent-red/5 to-soft-gold/10 border border-accent-red/20 rounded-2xl p-6">
+                        <h3 className="font-heading text-xl font-bold text-charcoal mb-2">Let Our Staff Guide Your Sake Journey</h3>
+                        <p className="text-sm text-charcoal/80">Not sure which sake to order? Ask your server. Our team is trained to match sake to your meal&mdash;whether you&apos;re having sushi, hibachi, or something from the kitchen. No pretension, just great recommendations.</p>
+                        <div className="flex flex-wrap gap-3 mt-3">
+                            <a href="tel:2146191200" className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-accent-red/90 transition-colors">Frisco: (214) 619-1200</a>
+                            <a href="tel:2144882224" className="inline-flex items-center gap-1.5 px-4 py-2 bg-charcoal text-white text-sm font-medium rounded-lg hover:bg-charcoal/90 transition-colors">Lewisville: (214) 488-2224</a>
+                            <Link href="/reservations" className="inline-flex items-center gap-1.5 px-4 py-2 bg-soft-gold/20 text-charcoal text-sm font-medium rounded-lg hover:bg-soft-gold/30 transition-colors">Reserve Online &rarr;</Link>
+                        </div>
+                    </div>
+
                                         Want to explore sake pairings without breaking the bank? Jinbeh's <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> are the perfect place to experiment.
                                         We offer special <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">drink deals</Link> on select sakes and appetizers—the ideal combination for learning what you love.
                                     </p>

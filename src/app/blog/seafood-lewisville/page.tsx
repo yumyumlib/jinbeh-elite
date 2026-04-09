@@ -243,10 +243,6 @@ export default function SeafoodLewisville() {
                         <span>8 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">top steakhouses in Lewisville</Link>
-              </p>
 
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/pickleball-restaurants-lewisville" className="text-accent-red hover:underline">restaurants near pickleball in Lewisville</Link>
@@ -265,6 +261,12 @@ export default function SeafoodLewisville() {
                                         this Texas city has become a hidden gem for seafood lovers. From authentic Japanese sushi to Cajun
                                         classics and fresh-caught fish, Lewisville's seafood scene offers something for every palate.
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">top steakhouses in Lewisville</Link>
+              </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

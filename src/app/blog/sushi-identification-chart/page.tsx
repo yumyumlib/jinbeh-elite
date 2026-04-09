@@ -191,11 +191,8 @@ export default function SushiIdentificationChart() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Sushi is more than just a popular dish</strong>—it's an art form that embodies centuries of
-                                        Japanese culinary tradition. With countless types, each with unique characteristics and flavors, sushi
-                                        can seem overwhelming at first. This comprehensive identification chart will help you navigate the
-                                        vibrant world of sushi with confidence.
-                                    </p>
+        You sit down at a sushi bar, open the menu, and see 30+ items you can't pronounce. Nigiri? Temaki? Uramaki? What's the difference between a California Roll and a Spider Roll? This visual guide makes you fluent in sushi in five minutes.
+      </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

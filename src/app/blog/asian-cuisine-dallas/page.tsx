@@ -155,7 +155,9 @@ export default function AsianCuisineDallas() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Asian cuisine in Dallas is not just about eating;</strong> it's about experiencing a culinary tradition that goes beyond food to include culture and history. The Dallas metroplex's Asian restaurants are known for their vibrant atmospheres featuring traditional decor and music, enhancing the dining experience.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        Dallas doesn't do Asian food halfway. From hand-pulled noodle shops in Richardson to hibachi grills in Frisco that pack 200 guests a night, the DFW Asian dining scene rivals cities three times its size. Here's your insider guide to navigating it.
+      </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Dallas's culinary scene is continually evolving with chefs experimenting with flavors and techniques, ensuring there's always something new to discover. Whether enjoying comforting ramen or savory Thai curry, the city offers rich tapestry of Asian flavors."</p>

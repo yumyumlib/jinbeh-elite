@@ -139,10 +139,6 @@ export default function BestSteakNearMe() {
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🥩 Steakhouse Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Steak Near Me</h1>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">steakhouses in Lewisville</Link>
-              </p>
 </section>
 
             <section className="py-16">
@@ -150,6 +146,12 @@ export default function BestSteakNearMe() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Finding the best steakhouse near you</strong> doesn't have to be complicated. Whether you're seeking a classic steakhouse experience or something unique like hibachi-style steak, Dallas offers exceptional options that cater to every preference and occasion.</p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">steakhouses in Lewisville</Link>
+              </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"A perfect steak begins with premium cuts, expert cooking, and attention to detail. Whether you prefer classic preparations or innovative techniques, the right steakhouse elevates every bite."</p>

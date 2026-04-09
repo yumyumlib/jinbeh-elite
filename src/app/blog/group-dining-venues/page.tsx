@@ -115,10 +115,6 @@ export default function GroupDiningVenues() {
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-accent-red mb-4">🎉 Celebrations</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Group Dining Venues DFW</h1>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/baby-shower-venues" className="text-accent-red hover:underline">baby shower venues</Link>
-              </p>
 </section>
 
             <section className="py-16">
@@ -126,6 +122,12 @@ export default function GroupDiningVenues() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Planning dinner for a big group?</strong> The challenge is finding a place that works for everyone—kids, adults, picky eaters, and adventurous foodies. Here's why hibachi is the perfect solution. And if you're treating the group, a <Link href="/gift-cards" className="text-accent-red hover:underline font-medium">Jinbeh gift card</Link> makes coordination easy.</p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/baby-shower-venues" className="text-accent-red hover:underline">baby shower venues</Link>
+              </p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Why Hibachi Works for Groups</h2>
 

@@ -147,10 +147,6 @@ export default function BestAsianFoodDallas() {
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-white bg-deep-indigo mb-4">🍜 Dining Guide</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Best Asian Food in Dallas TX</h1>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/asian-cuisine-dallas" className="text-accent-red hover:underline">Asian cuisine in Dallas</Link>
-              </p>
 </section>
 
             <section className="py-16">
@@ -158,6 +154,12 @@ export default function BestAsianFoodDallas() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Dallas is a city known for its diverse culinary scene,</strong> and Asian cuisine is no exception. With a variety of Asian restaurants offering everything from traditional dishes to modern fusion, there's something to satisfy every palate.</p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/asian-cuisine-dallas" className="text-accent-red hover:underline">Asian cuisine in Dallas</Link>
+              </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"From authentic Japanese hibachi to regional Asian specialties, Dallas's food scene celebrates the rich traditions of Asia while embracing innovative culinary creativity."</p>

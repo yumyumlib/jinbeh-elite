@@ -72,7 +72,9 @@ export default function OmakaseDiningGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Omakase is more than just a meal—it's a performance, an art form, and a testament to the skill and expertise of the chef.</strong> This dining style encourages a deep connection between diner and chef, transforming food into an unforgettable experience. Whether you're enjoying <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> or <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link>, omakase showcases culinary artistry at its finest.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        You sit down. There's no menu. The chef looks at you, nods, and begins. Fifteen minutes later, you're eating the best piece of fish you've ever tasted—and you didn't choose a single thing. That's omakase, and once you experience it, regular ordering feels boring.
+      </p>
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Omakase is about trust and artistry. When you sit at the sushi bar and say 'omakase,' you're inviting the chef to showcase their mastery, creativity, and passion for their craft."</p>

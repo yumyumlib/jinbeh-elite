@@ -177,7 +177,7 @@ export default function HibachiMenuGuidePage() {
       <h2>Understanding Hibachi Dining</h2>
 
       <p>
-        When it comes to dining experiences, few things compare to the excitement and flavor of a hibachi meal. The sizzling sounds, the aromatic flavors wafting through the air, and the captivating performance by skilled chefs make hibachi dining a memorable event. Whether you're planning a night out with friends, a family gathering, or considering a cozy takeout option, understanding the variety and intricacies of hibachi menus can enhance your culinary adventure.
+        Your server drops the menu and you freeze. Filet mignon or the combo? Yum Yum sauce or garlic butter? Add the lobster tail? At a hibachi restaurant, every choice shapes the experience—and knowing the menu before you sit down means you order like a regular, not a rookie.
       </p>
       <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
         <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🔥 Jinbeh&apos;s Sauce Secrets</h3>

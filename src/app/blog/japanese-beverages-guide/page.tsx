@@ -108,7 +108,9 @@ export default function JapaneseBeveragesGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Japan's beverage culture is a window into the country's unique culinary world.</strong> From ancient tea ceremonies to modern vending machine innovations, each drink tells a story of tradition, quality, and creativity.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        Most Americans know green tea and sake. That's about 10% of what Japan actually drinks. From the marble-sealed Ramune bottle your kids will obsess over to the $60 unfiltered sake that looks like milk, Japanese beverages are an adventure you haven't taken yet.
+      </p>
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-deep-indigo/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Japanese beverages reflect our commitment to detail and dedication to quality. Whether it's a carefully whisked matcha or a refreshing Ramune, each drink is crafted with intention and care."</p>

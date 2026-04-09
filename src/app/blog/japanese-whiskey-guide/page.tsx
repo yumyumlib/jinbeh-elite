@@ -71,7 +71,9 @@ export default function JapaneseWhiskeyGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Japanese whiskey has revolutionized the global spirits market.</strong> From humble origins in 1923 to international acclaim, Japanese distillers have perfected the art of whiskey-making by blending Scottish tradition with Japanese precision and innovation. Explore our curated selection at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red underline transition-colors">Jinbeh bar</Link>.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        A bottle of Yamazaki 18 now sells for more than most Scottish single malts. Suntory's Hibiki Harmony disappears from shelves within hours of restocking. Japanese whiskey went from unknown curiosity to the most hunted spirit in America—and the story of how it got there is remarkable.
+      </p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 The Origins of Japanese Whiskey</h2>
 

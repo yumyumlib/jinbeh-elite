@@ -196,11 +196,8 @@ export default function SakeTasteProfile() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Sake is often surrounded by mystery and intrigue,</strong> especially for those new to
-                                        Japanese beverages. When people ask "Does sake taste good?" or "What does sake taste like?" they are
-                                        often surprised to learn that sake has a complex, nuanced flavor profile far beyond simple sweetness
-                                        or alcohol burn. Let's explore the fascinating world of sake flavors—and once you know what to look for, our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link> will help you match each style to the perfect dish.
-                                    </p>
+        Does sake taste like wine? Like beer? Like nothing you've tried before? The honest answer: it depends entirely on which sake you pick. The difference between a $12 bottle and a $60 bottle isn't just price—it's an entirely different drinking experience.
+      </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

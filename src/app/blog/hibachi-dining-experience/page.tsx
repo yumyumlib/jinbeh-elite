@@ -149,7 +149,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>The Art of Hibachi Dining</h2>
 
       <p>
-        The art of hibachi dining offers a unique blend of culinary skill and entertainment that has delighted diners for generations. From the tantalizing aroma of sizzling ingredients to the mesmerizing performance of chefs, hibachi experiences are a feast for the senses. Whether you're a seasoned hibachi enthusiast or a curious newcomer, exploring the vast array of hibachi menus can be a rewarding culinary adventure. Each visit promises not only a delightful meal but also an experience filled with excitement and wonder, as skilled chefs transform simple ingredients into tantalizing dishes right before your eyes.
+        Flames leap two feet off a 550-degree grill. A chef flips a shrimp into the air, catches it in his hat, and the whole table erupts. This is hibachi—and it's unlike any other dinner you'll have this year.
       </p>
 
       <DidYouKnow

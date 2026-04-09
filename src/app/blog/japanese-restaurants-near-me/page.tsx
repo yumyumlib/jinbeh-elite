@@ -170,7 +170,9 @@ export default function JapaneseRestaurantsNearMe() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Finding a truly authentic Japanese restaurant can be a delightful journey for your taste buds.</strong> Whether you're craving sushi, ramen, or a sizzling teppanyaki experience, knowing how to discover the best spots around your area ensures a genuine culinary experience.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        You search "Japanese restaurants near me" and get 40 results. How do you tell which one uses fresh fish and which one thaws it from a Sysco box? Which one has a sushi chef with decades of experience versus last month's hire? Here's how to spot the real thing.
+      </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"At Jinbeh, we're proud to be a trusted Japanese restaurant where families and friends come to experience authentic cuisine and memorable moments. We've been serving our communities since 1988 with dedication to quality."</p>

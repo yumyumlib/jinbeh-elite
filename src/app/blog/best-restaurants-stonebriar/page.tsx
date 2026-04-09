@@ -174,10 +174,6 @@ export default function BestRestaurantsStonebriar() {
                         <span>7 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">things to do in Frisco</Link>
-              </p>
 </section>
 
             {/* Content */}
@@ -193,6 +189,12 @@ export default function BestRestaurantsStonebriar() {
                                         the restaurants around Stonebriar Mall cater to every taste and occasion. Here's our
                                         insider guide to the best spots within minutes of the mall.
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">things to do in Frisco</Link>
+              </p>
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine&apos;s Best Place to Eat in the Frisco Suburbs</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">

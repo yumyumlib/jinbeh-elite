@@ -194,10 +194,6 @@ export default function SushiLunchSpecials() {
                         <span>7 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/fast-casual-dining-jinbeh" className="text-accent-red hover:underline">fast-casual dining at Jinbeh</Link>
-              </p>
 
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/japanese-takeout-near-me" className="text-accent-red hover:underline">Japanese takeout near me</Link>
@@ -216,6 +212,12 @@ export default function SushiLunchSpecials() {
                                         high-quality cuisine at affordable prices. Whether you're a sushi aficionado or discovering your favorite roll
                                         for the first time, lunch specials offer variety, value, and the perfect midday break. Don't forget to check out our <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline font-semibold">happy hour</Link> specials to maximize your savings even further!
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/fast-casual-dining-jinbeh" className="text-accent-red hover:underline">fast-casual dining at Jinbeh</Link>
+              </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-warm-ivory/20 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

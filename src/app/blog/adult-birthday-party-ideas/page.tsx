@@ -256,11 +256,8 @@ export default function AdultBirthdayPartyIdeas() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Gone are the days of simple cake-cutting and gift-opening.</strong> Modern adult
-                                        birthday celebrations have evolved into creative, memorable experiences that reflect personality
-                                        and style. Whether you're turning 30, 40, 50, or any milestone, there are endless ways to
-                                        celebrate in style.
-                                    </p>
+        Your friend's birthday is in two weeks and you're Googling "adult birthday party ideas" at midnight. We've been there. The good news: the best birthday parties for adults aren't complicated—they're experiences. No balloon arches required.
+      </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

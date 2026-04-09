@@ -94,10 +94,6 @@ export default function DiscoverTeppanyaki() {
                     <span className="inline-block px-4 py-2 rounded-full text-sm text-charcoal bg-soft-gold mb-4">🍣 Cuisine</span>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Discover Teppanyaki: Culinary Art</h1>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline">popular Japanese culture</Link>
-              </p>
 </section>
 
             <section className="py-16">
@@ -105,6 +101,12 @@ export default function DiscoverTeppanyaki() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Teppanyaki</strong> (鉄板焼き) means "grilling on an iron plate." It's the art form behind what Americans call "hibachi restaurants"—where skilled chefs transform cooking into dinner theater.</p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline">popular Japanese culture</Link>
+              </p>
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"At Jinbeh, our teppanyaki chefs train for years to perfect their craft. It's not just about the food—it's about creating unforgettable moments around the grill."</p>

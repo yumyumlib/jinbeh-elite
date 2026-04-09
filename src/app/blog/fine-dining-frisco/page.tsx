@@ -226,8 +226,8 @@ export default function FineDiningFrisco() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Frisco, Texas, is a culinary destination on the rise.</strong> Beyond being a hub for sports and entertainment, this vibrant city has carved out a reputation as a must-visit location for food enthusiasts. From exquisite Japanese cuisine to contemporary American fare, Frisco's fine dining scene offers something exceptional for every palate.
-                                    </p>
+        Ten years ago, "fine dining in Frisco" meant driving to Dallas. Not anymore. Frisco has quietly built one of the most exciting upscale restaurant scenes in North Texas—and the best spots aren't always the ones with the biggest marketing budgets.
+      </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">

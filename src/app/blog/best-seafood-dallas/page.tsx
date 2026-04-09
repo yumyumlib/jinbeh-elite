@@ -145,7 +145,9 @@ export default function BestSeafoodDallas() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>In the bustling city of Dallas,</strong> the culinary scene offers exceptional seafood dining experiences. Despite being landlocked, Dallas has access to some of the freshest seafood, thanks to efficient supply chains and dedicated suppliers delivering premium catches daily.</p>
+                            <p className="text-xl text-charcoal/80 mb-8">
+        Dallas is 250 miles from the nearest coastline—and yet some of the freshest sushi, sashimi, and seafood in Texas lands here daily. The secret? Direct sourcing, overnight air freight, and chefs who won't serve anything that wasn't swimming 48 hours ago.
+      </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Dallas's seafood scene blends global culinary influences, creating innovative dishes that honor traditional preparation methods while embracing contemporary techniques."</p>

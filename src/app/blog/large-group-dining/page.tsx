@@ -255,10 +255,6 @@ export default function LargeGroupDining() {
                         <span>10 min read</span>
                     </div>
                 </div>
-            
-              <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/thanksgiving-dining-guide" className="text-accent-red hover:underline">Thanksgiving dining guide</Link>
-              </p>
 </section>
 
             {/* Content */}
@@ -271,6 +267,12 @@ export default function LargeGroupDining() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Organizing a group dinner doesn't have to be stressful.</strong> When you select a restaurant experienced in handling large parties, your gathering becomes smooth, enjoyable, and memorable. These establishments are equipped with the necessary facilities to host big groups, providing ample seating, diverse menus, and often private or semi-private dining options tailored to your specific needs.
                                     </p>
+
+
+            
+              <p className="text-charcoal/80 text-sm mt-6">
+                See also: <Link href="/blog/thanksgiving-dining-guide" className="text-accent-red hover:underline">Thanksgiving dining guide</Link>
+              </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
