@@ -3,6 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ShimmerButton from "@/components/ui/shimmer-button";
+import { BorderBeam } from "@/components/ui/BorderBeam";
 
 /* ─────────────────────────────────────────────
    1. ProTip — Chef's insider advice callout
@@ -386,7 +388,8 @@ export function LocationCTA({ location = "frisco" }: { location?: "frisco" | "le
     return (
         <div className={`not-prose my-10 grid gap-4 ${locs.length > 1 ? "md:grid-cols-2" : ""}`}>
             {locs.map((loc) => (
-                <div key={loc.name} className="bg-white rounded-2xl shadow-md border border-warm-ivory overflow-hidden hover:shadow-lg transition-shadow">
+                <div key={loc.name} className="relative bg-white rounded-2xl shadow-md border border-warm-ivory overflow-hidden hover:shadow-lg transition-shadow">
+                    <BorderBeam size={120} duration={10} borderWidth={1.5} />
                     <div className="bg-charcoal p-4">
                         <div className="flex items-center gap-2">
                             <span className="text-xl">📍</span>
@@ -403,8 +406,14 @@ export function LocationCTA({ location = "frisco" }: { location?: "frisco" | "le
                             <a href={loc.mapLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-4 py-2 bg-charcoal/5 text-charcoal text-sm font-medium rounded-lg hover:bg-charcoal/10 transition-colors">
                                 🗺️ Directions
                             </a>
-                            <Link href="/reservations" className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-accent-red/90 transition-colors">
-                                🪑 Reserve
+                            <Link href="/reservations">
+                                <ShimmerButton
+                                    className="px-4 py-2 text-sm font-medium"
+                                    background="linear-gradient(to right, #C1121F, #ef4444)"
+                                    borderRadius="8px"
+                                >
+                                    🪑 Reserve
+                                </ShimmerButton>
                             </Link>
                             <a href={`tel:${loc.phone.replace(/[^\d]/g, "")}`} className="inline-flex items-center gap-1.5 px-4 py-2 bg-charcoal/5 text-charcoal text-sm font-medium rounded-lg hover:bg-charcoal/10 transition-colors">
                                 📞 Call

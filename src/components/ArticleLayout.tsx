@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ReadingProgress, ArticleReveal } from "@/components/ArticleEnhancements";
+import { ShimmerCTA, ShinyBadge } from "@/components/MagicUI";
+import { BorderBeam } from "@/components/ui/BorderBeam";
 
 interface FAQItem {
   question: string;
@@ -123,7 +125,7 @@ export default function ArticleLayout({
                   href={`/blog/category/${categorySlug}`}
                   className="bg-accent-red/10 text-accent-red px-4 py-1 rounded-full text-sm font-medium hover:bg-accent-red/20 transition-colors"
                 >
-                  {category}
+                  <ShinyBadge>{category}</ShinyBadge>
                 </Link>
                 <span className="text-charcoal/70 text-sm">{readTime}</span>
                 <span className="text-charcoal/70 text-sm">•</span>
@@ -171,8 +173,9 @@ export default function ArticleLayout({
               {/* Key Takeaway Box — slide in with accent border */}
               {keyTakeaway && (
                 <ArticleReveal direction="left" delay={100}>
-                  <div className="not-prose bg-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-5 md:p-6 mb-8 md:mb-10">
-                    <div className="flex items-start gap-3">
+                  <div className="not-prose relative bg-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-5 md:p-6 mb-8 md:mb-10 overflow-hidden">
+                    <BorderBeam size={150} duration={8} borderWidth={1.5} />
+                    <div className="flex items-start gap-3 relative z-10">
                       <span className="text-2xl flex-shrink-0">💡</span>
                       <div>
                         <p className="font-heading font-bold text-charcoal text-sm uppercase tracking-wider mb-1">Key Takeaway</p>
@@ -228,11 +231,10 @@ export default function ArticleLayout({
                   serving North Texas with authentic Japanese cuisine and warm hospitality.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                  <Link
-                    href="/reservations"
-                    className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-accent-red text-warm-ivory font-semibold rounded-lg hover:bg-accent-red/90 transition-colors text-sm md:text-base"
-                  >
-                    Make a Reservation
+                  <Link href="/reservations">
+                    <ShimmerCTA className="px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold">
+                      Make a Reservation
+                    </ShimmerCTA>
                   </Link>
                   <Link
                     href="/menu"
