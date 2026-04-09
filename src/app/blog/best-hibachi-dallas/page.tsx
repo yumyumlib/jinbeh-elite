@@ -175,35 +175,37 @@ export default function BestHibachiDallasPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
 
-            {/* BreadcrumbList Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-                        { "@type": "ListItem", "position": 3, "name": "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh", "item": "https://jinbeh.com/blog/best-hibachi-dallas" }
-                    ]
-                }) }}
-            />
+        {/* BreadcrumbList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                { "@type": "ListItem", "position": 3, "name": "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences | Jinbeh", "item": "https://jinbeh.com/blog/best-hibachi-dallas" }
+              ]
+            })
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
-iences
+        iences
       </h1>
-            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
-              <Image
-                src="/images/food/OnionVolcanoDemo.jpg"
-                alt="Hibachi onion volcano demonstration at Jinbeh"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 800px"
-                loading="lazy"
-              />
-            </div>
+      <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+        <Image
+          src="/images/food/OnionVolcanoDemo.jpg"
+          alt="Hibachi onion volcano demonstration at Jinbeh"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 800px"
+          loading="lazy"
+        />
+      </div>
 
       {/* Article Body with Show Don't Tell, VOC phrases, Internal Links */}
       <p>
@@ -212,25 +214,18 @@ iences
         flips a shrimp into his hat. There's nothing quite like hibachi dining
         in Dallas.
       </p>
-              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Why Jinbeh Has Endured 38 Years in DFW</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-
-                    <div className="bg-gradient-to-r from-stone-100 to-warm-ivory border border-stone-200/60 rounded-xl p-5 my-8">
-                        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">Why Imitators Don&apos;t Last</h3>
-                        <p className="text-sm text-charcoal/80 mb-3">A restaurant in Lewisville once literally took Jinbeh&apos;s menu&mdash;the same exact thing&mdash;removed the name and put their own on it. The owner&apos;s response was philosophical: &ldquo;If it&apos;s going to happen, it&apos;s going to happen.&rdquo; The copycat restaurant didn&apos;t survive past five years.</p>
-                        <p className="text-sm text-charcoal/80">A competitor can take your menu, but they can&apos;t replicate 38 years of community trust, a sushi master who&apos;s been behind the bar for nearly 30 years, or an employee who started as a dishwasher on day one and is still here today. That&apos;s the difference between a restaurant and a legacy.</p>
-                    </div>
-
-                  While competitors come and go, Jinbeh has thrived since 1988 on three simple principles: <strong>humble, hardworking, honest</strong>. A competitor once copied Jinbeh&apos;s entire menu &mdash; removing the name and putting their own on it. They didn&apos;t survive five years. As the owner puts it: &ldquo;They can take the menu, but they can&apos;t replicate 38 years of community trust.&rdquo; Dallas Cowboys players were regulars for over a decade. That&apos;s the kind of restaurant you&apos;re walking into.
-                </p>
-              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Hibachi Since 1988</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh is the only DFW hibachi restaurant with both <strong>D Magazine</strong> and <strong>OpenTable Diners&apos; Choice</strong> recognition. Ranked <strong>#1 Hibachi in Lewisville</strong> and <strong>#2 Hibachi in Frisco</strong> on OpenTable. D Magazine called it &ldquo;the best grilled veggies around&rdquo; and diners say &ldquo;anytime I&apos;m looking for consistency and a great meal, I go there.&rdquo; Named &ldquo;Best Place to Eat&rdquo; in D Magazine&apos;s Best of Big D, and currently on <strong>12+ OpenTable Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Hibachi for both Frisco and Lewisville. When food critics and 1,600+ diners agree, you know it&apos;s the real thing.
-                </p>
-              </div>
-              </div>
+      <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Why Jinbeh Has Endured 38 Years in DFW</h3>
+        <p className="text-charcoal/70 text-sm leading-relaxed">
+          While restaurants come and go, Jinbeh has thrived since 1988 on three simple principles: <strong>humble, hardworking, honest</strong>. Our head sushi chef has been behind the bar for nearly 30 years. Our longest-tenured employee started as a dishwasher on day one and is still here. Dallas Cowboys players were regulars for over a decade. That&apos;s the kind of restaurant you&apos;re walking into.
+        </p>
+        <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+          <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Hibachi Since 1988</h3>
+          <p className="text-charcoal/70 text-sm leading-relaxed">
+            Jinbeh is the only DFW hibachi restaurant with both <strong>D Magazine</strong> and <strong>OpenTable Diners&apos; Choice</strong> recognition. Ranked <strong>#1 Hibachi in Lewisville</strong> and <strong>#2 Hibachi in Frisco</strong> on OpenTable. D Magazine called it &ldquo;the best grilled veggies around&rdquo; and diners say &ldquo;anytime I&apos;m looking for consistency and a great meal, I go there.&rdquo; Named &ldquo;Best Place to Eat&rdquo; in D Magazine&apos;s Best of Big D, and currently on <strong>12+ OpenTable Diners&apos; Choice lists</strong> for 2026 &mdash; including Best Hibachi for both Frisco and Lewisville. When food critics and 1,600+ diners agree, you know it&apos;s the real thing.
+          </p>
+        </div>
+      </div>
 
       <p>
         We've been serving North Texas families since 1988, and we know what

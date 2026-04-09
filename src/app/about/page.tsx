@@ -345,14 +345,14 @@ export default function AboutPage() {
               <RevealSection delay={0}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
                   <div className="text-4xl mb-3">🍣</div>
-                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Fujisan &mdash; Sushi Master</h3>
-                  <p className="text-sm text-charcoal/70">Nearly 30 years behind Jinbeh&apos;s sushi bar. The owner calls him &ldquo;my second dad.&rdquo; Fujisan co-created the entire sushi menu through sleepless nights of collaboration. From the south side of Japan&mdash;a region famous for noodles&mdash;he once created a ramen section so popular it became legendary among regulars.</p>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Our Head Sushi Chef &mdash; 30 Years</h3>
+                  <p className="text-sm text-charcoal/70">Nearly 30 years behind Jinbeh&apos;s sushi bar. The owner calls him &ldquo;my second dad.&rdquo; Together, they co-created the entire sushi menu through sleepless nights of collaboration. From the south side of Japan&mdash;a region famous for noodles&mdash;he once created a ramen section so popular it became legendary among regulars.</p>
                 </div>
               </RevealSection>
               <RevealSection delay={100}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
                   <div className="text-4xl mb-3">🌟</div>
-                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Ingrid &mdash; Heart of the Floor</h3>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Our Floor Captain &mdash; The Heart</h3>
                   <p className="text-sm text-charcoal/70">Respected across both locations, not because of authority but because of love and respect. She handles training, payroll, and scheduling&mdash;the things the owner admits she does better than he ever could. When she&apos;s on the floor, the entire team follows her lead.</p>
                 </div>
               </RevealSection>
@@ -547,17 +547,17 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-16">
-              {/* Fujisan — 30-Year Sushi Master */}
+              {/* Head Sushi Chef — 30-Year Legacy */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                   <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-2">30+ Years of Mastery</p>
-                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Fujisan: Our Sushi Master</h3>
+                  <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Our Sushi Master</h3>
                   <div className="space-y-4 text-charcoal/80 leading-relaxed">
                     <p>
-                      Fujisan &mdash; our head sushi chef &mdash; has been with Jinbeh for nearly 30 years. Originally from the southern coast of Japan, a region renowned for its seafood and noodle traditions, he co-created every signature roll on our menu alongside the Matsuda family during late-night sessions of testing and perfecting.
+                      Our head sushi chef has been with Jinbeh for nearly 30 years. Originally from the southern coast of Japan, a region renowned for its seafood and noodle traditions, he co-created every signature roll on our menu alongside the Matsuda family during late-night sessions of testing and perfecting.
                     </p>
                     <p>
-                      At the original Las Colinas location, Fujisan created the beloved &ldquo;Fuji San Ramen&rdquo; section that became a local favorite. His craft represents the soul of our <Link href="/frisco/sushi-rolls">sushi program</Link> &mdash; precise, authentic, and always evolving.
+                      At the original Las Colinas location, he created a beloved ramen section that became a local favorite. His craft represents the soul of our <Link href="/frisco/sushi-rolls">sushi program</Link> &mdash; precise, authentic, and always evolving.
                     </p>
                     <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
                       &ldquo;He&apos;s my second dad. The entire sushi menu was a collaboration &mdash; sleepless nights working together to craft and refine every roll.&rdquo;
@@ -567,7 +567,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                   <Image
                     src="/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp"
-                    alt="Fresh sushi presentation crafted by Jinbeh sushi master Fujisan"
+                    alt="Fresh sushi presentation crafted by Jinbeh's head sushi chef"
                     fill
                     className="object-cover"
                     loading="lazy"
