@@ -215,6 +215,13 @@ iences
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Why Jinbeh Has Endured 38 Years in DFW</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
+
+                    <div className="bg-gradient-to-r from-stone-100 to-warm-ivory border border-stone-200/60 rounded-xl p-5 my-8">
+                        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">Why Imitators Don&apos;t Last</h3>
+                        <p className="text-sm text-charcoal/80 mb-3">A restaurant in Lewisville once literally took Jinbeh&apos;s menu&mdash;the same exact thing&mdash;removed the name and put their own on it. The owner&apos;s response was philosophical: &ldquo;If it&apos;s going to happen, it&apos;s going to happen.&rdquo; The copycat restaurant didn&apos;t survive past five years.</p>
+                        <p className="text-sm text-charcoal/80">A competitor can take your menu, but they can&apos;t replicate 38 years of community trust, a sushi master who&apos;s been behind the bar for nearly 30 years, or an employee who started as a dishwasher on day one and is still here today. That&apos;s the difference between a restaurant and a legacy.</p>
+                    </div>
+
                   While competitors come and go, Jinbeh has thrived since 1988 on three simple principles: <strong>humble, hardworking, honest</strong>. A competitor once copied Jinbeh&apos;s entire menu &mdash; removing the name and putting their own on it. They didn&apos;t survive five years. As the owner puts it: &ldquo;They can take the menu, but they can&apos;t replicate 38 years of community trust.&rdquo; Dallas Cowboys players were regulars for over a decade. That&apos;s the kind of restaurant you&apos;re walking into.
                 </p>
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">

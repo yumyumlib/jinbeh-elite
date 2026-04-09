@@ -185,6 +185,15 @@ s
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 There&apos;s a Reason D Magazine Named Us Best of Big D</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
+
+<div className="bg-gradient-to-r from-amber-50 to-warm-ivory border border-amber-200/60 rounded-xl p-5 my-8">
+                        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍳 Behind the Menu: Stories From the Kitchen</h3>
+                        <p className="text-sm text-charcoal/80 mb-3"><strong>The Hidden Vegetables:</strong> Jinbeh&apos;s fried rice contains finely chopped scallion, onion, and carrots&mdash;but they&apos;re cut so small you can&apos;t see them. This is deliberate: early feedback told the kitchen there were too many visible vegetables. Now the chopping is so fine it&apos;s invisible. The result? Kids happily eat their veggies without knowing it.</p>
+                        <p className="text-sm text-charcoal/80 mb-3"><strong>The Sauces (All Handmade):</strong> Yum Yum sauce is a mayo-based blend with sriracha and sugar that guests call &ldquo;addictive.&rdquo; The Blaster sauce is Jinbeh&apos;s &ldquo;spicy&rdquo; option, but honestly? Even non-spicy customers handle it fine. For true heat seekers, the kitchen keeps a house sriracha-togarashi paste. Every sauce recipe is typed out and hung on the kitchen walls&mdash;every cook learns them.</p>
+                        <p className="text-sm text-charcoal/80"><strong>The Grill:</strong> Hibachi grills reach approximately 550&deg;F. At that temperature, cross-contamination from allergens is extremely difficult. Gluten-free is easy: only the sauces contain gluten, not the base ingredients.</p>
+                    </div>
+
+                    
                   Every item on Jinbeh&apos;s hibachi menu is backed by 38 years of refinement. D Magazine recognized Jinbeh as &ldquo;Best Place to Eat&rdquo; in their Best of Big D franchise, and OpenTable diners currently rate us a Diners&apos; Choice pick for Best Hibachi in both Frisco and Lewisville.
                 </p>
               </div>

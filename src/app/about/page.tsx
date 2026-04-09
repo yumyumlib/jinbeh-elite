@@ -180,28 +180,29 @@ export default function AboutPage() {
                 </RevealSection>
                 <div className="space-y-6 text-charcoal/80 leading-relaxed">
                   <p>
-                    When Ben Matsuda opened Jinbeh in 1988, he didn&apos;t just open a restaurant—he
-                    brought a vision home. It began with a simple dream: to share the warmth of authentic Japanese hospitality,
-                    the artistry of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>, and the precision of sushi craftsmanship with his North Texas
-                    community. What started in a small Las Colinas space has blossomed into a multi-generational tradition that families
-                    keep coming back to after 20, 25, even 30+ years.
+                    When Ben Matsuda opened Jinbeh in 1988, he didn&apos;t just open a restaurant&mdash;he
+                    brought a vision home. A Japanese man who, remarkably, never cooked a day in his life, Ben opened Jinbeh not out of culinary ambition but out of an entrepreneurial instinct and a desire to bring authentic Japanese dining to North Texas. His philosophy was three words: <strong>humble, hardworking, and honest</strong>. Those three words became the spiritual foundation of Jinbeh and were passed down to his son, who now runs both locations.
+                  </p>
+                  <p>
+                    What started in a small Las Colinas space&mdash;featured by <em>D&nbsp;Magazine</em> as early as 1990&mdash;has blossomed into a multi-generational tradition that families
+                    keep coming back to after 20, 25, even 30+ years. The original Las Colinas location was a true Japanese kitchen with a menu as thick as a book. Over time, Jinbeh learned a critical lesson: the menu needed to cater to the American palate while preserving Japanese soul. The result is what the owner calls &ldquo;American Authentic&rdquo;&mdash;food that feels genuinely Japanese enough that you feel transported, but accessible enough to be comfortable.
                   </p>
                   <p>
                     Unlike the impersonal corporate chains out there, Jinbeh feels different from your first visit.
-                    You&apos;re not just ordering dinner—you&apos;re joining a celebration. Our chefs become entertainers, your table becomes a stage,
-                    and the onion volcano? That&apos;s just the beginning of the show. Yes, the food is exceptional—our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link> is fresh, our steaks are premium, and every sauce from the Yum Yum to the garlic butter is made in-house daily.
+                    You&apos;re not just ordering dinner&mdash;you&apos;re joining a celebration. Our chefs become entertainers, your table becomes a stage,
+                    and the onion volcano? That&apos;s just the beginning of the show. Yes, the food is exceptional&mdash;our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi</Link> is fresh, our steaks are premium, and every sauce from the Yum Yum to the garlic butter is made in-house daily.
                     But what truly sets us apart is how we make you feel: welcomed, celebrated, and part of something special.
                   </p>
                   <p>
                     Today, with locations in <Link href="/frisco" className="text-accent-red hover:underline font-medium">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline font-medium">Lewisville</Link>, we&apos;re still proudly family-owned, still committed to those original values,
-                    and still determined to deliver the kind of dining experience North Texas families love. Nearly four decades later — that&apos;s the Jinbeh difference.
+                    and still determined to deliver the kind of dining experience North Texas families love. Nearly four decades later &mdash; that&apos;s the Jinbeh difference.
                   </p>
                 </div>
 
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-6 mt-10">
                   <div className="text-center p-4">
-                    <span className="block text-4xl font-bold text-accent-red"><NumberTicker value={37} />+</span>
+                    <span className="block text-4xl font-bold text-accent-red"><NumberTicker value={38} />+</span>
                     <span className="text-sm text-charcoal/80">Years of Tradition</span>
                   </div>
                   <div className="text-center p-4">
@@ -329,6 +330,43 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* The People of Jinbeh */}
+        <section className="py-16 bg-warm-ivory border-b border-stone-200">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <RevealSection>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4 text-center">
+                The People Behind the Plates
+              </h2>
+              <p className="text-lg text-charcoal/70 text-center mb-12 max-w-2xl mx-auto">
+                At Jinbeh, tenure isn&apos;t measured in months&mdash;it&apos;s measured in decades.
+              </p>
+            </RevealSection>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <RevealSection delay={0}>
+                <div className="bg-white rounded-2xl p-6 shadow-sm">
+                  <div className="text-4xl mb-3">🍣</div>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Fujisan &mdash; Sushi Master</h3>
+                  <p className="text-sm text-charcoal/70">Nearly 30 years behind Jinbeh&apos;s sushi bar. The owner calls him &ldquo;my second dad.&rdquo; Fujisan co-created the entire sushi menu through sleepless nights of collaboration. From the south side of Japan&mdash;a region famous for noodles&mdash;he once created a ramen section so popular it became legendary among regulars.</p>
+                </div>
+              </RevealSection>
+              <RevealSection delay={100}>
+                <div className="bg-white rounded-2xl p-6 shadow-sm">
+                  <div className="text-4xl mb-3">🌟</div>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Ingrid &mdash; Heart of the Floor</h3>
+                  <p className="text-sm text-charcoal/70">Respected across both locations, not because of authority but because of love and respect. She handles training, payroll, and scheduling&mdash;the things the owner admits she does better than he ever could. When she&apos;s on the floor, the entire team follows her lead.</p>
+                </div>
+              </RevealSection>
+              <RevealSection delay={200}>
+                <div className="bg-white rounded-2xl p-6 shadow-sm">
+                  <div className="text-4xl mb-3">💎</div>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Since Day One &mdash; 1988</h3>
+                  <p className="text-sm text-charcoal/70">Jinbeh&apos;s longest-tenured employee has been here since the very first day. He started as a dishwasher, became a busser, and today is the mastermind behind food strategy and logistics for every festival and major event. That&apos;s 38 years of unbroken dedication.</p>
+                </div>
+              </RevealSection>
+            </div>
+          </div>
+        </section>
+
         {/* Values Section */}
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
@@ -402,7 +440,7 @@ export default function AboutPage() {
                   Warm, Genuine Hospitality
                 </h3>
                 <p className="text-charcoal/70 text-sm pointer-events-none">
-                  Family-owned and operated. You won&apos;t feel like a transaction—you&apos;ll feel like a guest in our home. That&apos;s the difference authenticity makes.
+                  Family-owned and operated. Every child gets a hand-folded origami crane from a basket by the door, plus training chopsticks and a lollipop. Our philosophy: invest in the kids, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo; That&apos;s why we hear from guests who started coming as toddlers and now bring their own friends.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;Service is great — cozy and family-like.&rdquo; — Google Review
@@ -423,7 +461,7 @@ export default function AboutPage() {
                   Birthdays & Special Moments
                 </h3>
                 <p className="text-charcoal/70 text-sm pointer-events-none">
-                  Birthdays, anniversaries, graduations, proposals—Jinbeh is where <Link href="/celebrations" className="text-accent-red hover:underline pointer-events-auto">celebrations come alive</Link>. We offer <Link href="/private-dining" className="text-accent-red hover:underline pointer-events-auto">private dining</Link> for your most special moments.
+                  Every birthday gets the &ldquo;three-touch&rdquo; treatment: the host says happy birthday at check-in, the server is notified with a circled seat number, and the chef is informed. Three separate people, three heartfelt moments&mdash;then tambourines, noisemakers, and ice cream to close the show. <Link href="/celebrations" className="text-accent-red hover:underline pointer-events-auto">Explore celebrations</Link>.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;We&apos;ve been coming here for years, celebrating a lot of birthdays.&rdquo; — Google Review

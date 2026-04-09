@@ -301,6 +301,18 @@ ide
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable&apos;s Top Kid-Friendly Pick</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
+
+                    <div className="bg-gradient-to-r from-rose-50 to-warm-ivory border border-rose-200/60 rounded-xl p-5 my-8">
+                        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">The Jinbeh Birthday Protocol: Three Touches of Joy</h3>
+                        <p className="text-sm text-charcoal/80 mb-3">Every birthday at Jinbeh follows our signature three-touch system, developed over 38 years of celebrating with families:</p>
+                        <ol className="text-sm text-charcoal/80 space-y-2 list-decimal ml-5">
+                            <li><strong>The Host</strong> &mdash; First to acknowledge. When checking in, the host identifies the birthday person and personally says happy birthday.</li>
+                            <li><strong>The Server</strong> &mdash; Notified by the host. The birthday person&apos;s seat is circled on the order sheet.</li>
+                            <li><strong>The Chef</strong> &mdash; Informed that there&apos;s a birthday at the table.</li>
+                        </ol>
+                        <p className="text-sm text-charcoal/80 mt-3">The finale: front-of-house staff arrives with ice cream, tambourines, and noisemakers. And every child leaves with a hand-folded origami crane from a basket by the door.</p>
+                    </div>
+
                   Jinbeh is recognized by <strong>OpenTable as a Diners&apos; Choice Kid-Friendly restaurant</strong> in the Dallas suburbs &mdash; based entirely on verified diner reviews. Also a <strong>TripAdvisor Travelers&apos; Choice</strong> award recipient. From origami cranes at the host stand to the Three-Touch Birthday Protocol, families trust Jinbeh to make celebrations unforgettable.
                 </p>
               </div>

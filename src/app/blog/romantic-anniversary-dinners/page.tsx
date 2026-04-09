@@ -204,40 +204,42 @@ export default function RomanticAnniversaryDinnersPage() {
       />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Romantic Anniversary Dinners Near Me: Top Spots
-  
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
 
-            {/* BreadcrumbList Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-                        { "@type": "ListItem", "position": 3, "name": "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh", "item": "https://jinbeh.com/blog/romantic-anniversary-dinners" }
-                    ]
-                }) }}
-            />
+        {/* BreadcrumbList Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                { "@type": "ListItem", "position": 3, "name": "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh", "item": "https://jinbeh.com/blog/romantic-anniversary-dinners" }
+              ]
+            })
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
-    </h1>
-            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
-              <Image
-                src="/images/interior/FriscoLocation_Bar_Front.jpg"
-                alt="Romantic ambiance at Jinbeh Frisco bar for anniversary dinners"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 800px"
-                loading="lazy"
-              />
-            </div>
+      </h1>
+      <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
+        <Image
+          src="/images/interior/FriscoLocation_Bar_Front.jpg"
+          alt="Romantic ambiance at Jinbeh Frisco bar for anniversary dinners"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 800px"
+          loading="lazy"
+        />
+      </div>
 
       <p>
         Celebrating your anniversary is a special occasion that deserves an
@@ -247,18 +249,18 @@ export default function RomanticAnniversaryDinnersPage() {
         and elegant decor sets the stage for a memorable evening celebrating
         your love.
       </p>
-              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">💕 Love Stories at Jinbeh</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh uses an OpenTable notes system where staff can see how many times a customer has visited, their history, and any special notes. Long-time regulars &mdash; couples who&apos;ve celebrated anniversaries year after year &mdash; are recognized and given special attention. It&apos;s not a flashy &ldquo;VIP program&rdquo; with cards and apps. It&apos;s quiet, genuine recognition that only comes from 38 years of real relationships.
-                </p>
-              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Diners&apos; Choice for Japanese Dining</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh is currently on <strong>12+ OpenTable Diners&apos; Choice lists</strong> for 2026. For your anniversary, that means you&apos;re choosing a restaurant that thousands of verified diners have already celebrated at &mdash; and loved. That&apos;s not a marketing claim. That&apos;s earned proof.
-                </p>
-              </div>
-              </div>
+      <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">💕 Love Stories at Jinbeh</h3>
+        <p className="text-charcoal/70 text-sm leading-relaxed">
+          Jinbeh uses an OpenTable notes system where staff can see how many times a customer has visited, their history, and any special notes. Long-time regulars &mdash; couples who&apos;ve celebrated anniversaries year after year &mdash; are recognized and given special attention. It&apos;s not a flashy &ldquo;VIP program&rdquo; with cards and apps. It&apos;s quiet, genuine recognition that only comes from 38 years of real relationships.
+        </p>
+        <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+          <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Diners&apos; Choice for Japanese Dining</h3>
+          <p className="text-charcoal/70 text-sm leading-relaxed">
+            Jinbeh is currently on <strong>12+ OpenTable Diners&apos; Choice lists</strong> for 2026. For your anniversary, that means you&apos;re choosing a restaurant that thousands of verified diners have already celebrated at &mdash; and loved. That&apos;s not a marketing claim. That&apos;s earned proof.
+          </p>
+        </div>
+      </div>
 
       <p>
         This guide helps you discover the best romantic anniversary dinner spots
@@ -355,6 +357,12 @@ export default function RomanticAnniversaryDinnersPage() {
         available for added intimacy. When you call to book, mention it's your
         anniversary—our staff creates special touches to enhance your evening.
       </p>
+
+      <div className="bg-gradient-to-r from-purple-50 to-warm-ivory border border-purple-200/60 rounded-xl p-5 my-8">
+        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍷 Behind the Bar: Details Worth Noticing</h3>
+        <p className="text-sm text-charcoal/80 mb-3"><strong>Hand-Painted Tequila Bottles:</strong> Look behind the bar and you&apos;ll see a collection of hand-painted tequila bottles from an artisan Mexican brand where every bottle is individually painted by village artisans. It took about a year to accumulate enough empty bottles to line the shelf&mdash;now they&apos;re kept as permanent art.</p>
+        <p className="text-sm text-charcoal/80"><strong>Rare Japanese Whisky:</strong> Jinbeh stocks Yamazaki and other Japanese whiskeys that are increasingly difficult to source. Japanese distilleries send fewer pallets to the US each year, and high-end steakhouses snap up the allocations first. The most premium pour is served with a special large ice cube that melts slowly&mdash;a detail that whisky connoisseurs deeply appreciate.</p>
+      </div>
 
       <h3>Why Choose Hibachi for Your Anniversary?</h3>
 

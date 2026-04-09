@@ -118,6 +118,13 @@ export default function HibachiCatering() {
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏮 Jinbeh&apos;s Catering Heritage</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
+
+                    <div className="bg-gradient-to-r from-green-50 to-warm-ivory border border-green-200/60 rounded-xl p-5 my-8">
+                        <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">Our Festival Heritage</h3>
+                        <p className="text-sm text-charcoal/80 mb-3">When Jinbeh was in Las Colinas, the team dedicated entire weekends to community events. For years, they participated in festivals, including a cancer charity beer crawl where a team of 20 dressed in themed costumes&mdash;superheroes one year, old people another. Jinbeh sponsored by feeding all the volunteers with trays of fried rice in exchange for logo placement on event shirts.</p>
+                        <p className="text-sm text-charcoal/80">Today, both locations use all staff on weekends. But because of Jinbeh&apos;s deep relationships with former employees, the owner can call on five or more people who&apos;d happily come back to help. That&apos;s not a staffing strategy&mdash;that&apos;s family.</p>
+                    </div>
+
                   When Jinbeh was in Las Colinas, the team regularly catered community festivals and charity events. They participated in a cancer charity beer crawl where a team of 20 would dress in themed costumes &mdash; superheroes one year, elderly characters another &mdash; feeding all the volunteers with trays of house-made fried rice. Even today, former employees happily return to help with events. That&apos;s the kind of family loyalty that 38 years builds.
                 </p>
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
