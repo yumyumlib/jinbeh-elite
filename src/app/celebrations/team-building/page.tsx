@@ -153,7 +153,16 @@ export default function TeamBuildingPage() {
         />
 
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        
+                    {/* Award Recognition */}
+                    <div className="bg-gradient-to-r from-amber-50 to-warm-ivory border border-amber-200/60 rounded-xl p-5 my-8">
+                        <p className="text-sm text-charcoal/90">
+                            <span className="font-semibold text-amber-700">🏆 Why Families Trust Jinbeh:</span>{" "}
+                            Multiple <strong>D Magazine</strong> award winner &bull; <strong>OpenTable #1 Hibachi in Lewisville</strong> &bull; <strong>TripAdvisor Travelers&apos; Choice</strong> &bull; Family-owned since 1988.
+                        </p>
+                    </div>
+
+<section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <video
             autoPlay
             muted
@@ -183,6 +192,7 @@ export default function TeamBuildingPage() {
               href="/reservations"
               className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center gap-2"
             >
+
               Book Your Team Event
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

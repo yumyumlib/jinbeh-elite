@@ -130,6 +130,20 @@ export default function HibachiDiningExperiencePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
+
+            {/* BreadcrumbList Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                        { "@type": "ListItem", "position": 3, "name": "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh", "item": "https://jinbeh.com/blog/hibachi-dining-experience" }
+                    ]
+                }) }}
+            />
    </h1>
 
       <h2>The Art of Hibachi Dining</h2>

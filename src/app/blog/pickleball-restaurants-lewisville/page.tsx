@@ -191,6 +191,20 @@ export default function PickleballRestaurantsLewisvillePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
+
+            {/* BreadcrumbList Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                        { "@type": "ListItem", "position": 3, "name": "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh", "item": "https://jinbeh.com/blog/pickleball-restaurants-lewisville" }
+                    ]
+                }) }}
+            />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}

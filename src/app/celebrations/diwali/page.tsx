@@ -103,7 +103,16 @@ export default function DiwaliPage() {
         />
 
         {/* Hero Section */}
-        <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        
+                    {/* Award Recognition */}
+                    <div className="bg-gradient-to-r from-amber-50 to-warm-ivory border border-amber-200/60 rounded-xl p-5 my-8">
+                        <p className="text-sm text-charcoal/90">
+                            <span className="font-semibold text-amber-700">🏆 Why Families Trust Jinbeh:</span>{" "}
+                            Multiple <strong>D Magazine</strong> award winner &bull; <strong>OpenTable #1 Hibachi in Lewisville</strong> &bull; <strong>TripAdvisor Travelers&apos; Choice</strong> &bull; Family-owned since 1988.
+                        </p>
+                    </div>
+
+<section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-warm-ivory" />
           <Image
             src="/images/food/OnionVolcanoDemo.jpg"
@@ -141,6 +150,7 @@ export default function DiwaliPage() {
               </a>
             </div>
           </div>
+
         </section>
 
         {/* Banner */}

@@ -129,6 +129,20 @@ export default function AYCESushiVsTraditionalPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
+
+            {/* BreadcrumbList Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                        { "@type": "ListItem", "position": 3, "name": "AYCE Sushi vs. Traditional: What You Should Know | Jinbeh", "item": "https://jinbeh.com/blog/ayce-sushi-vs-traditional" }
+                    ]
+                }) }}
+            />
 y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional sushi bars. Both serve raw fish. Both can be delicious. But the way they operate, source ingredients, and deliver your meal are fundamentally different.
             </p>
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">

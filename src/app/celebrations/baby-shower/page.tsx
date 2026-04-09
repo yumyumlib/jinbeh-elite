@@ -113,7 +113,16 @@ export default function BabyShowerPage() {
         />
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center text-white py-20">
+      
+                    {/* Award Recognition */}
+                    <div className="bg-gradient-to-r from-amber-50 to-warm-ivory border border-amber-200/60 rounded-xl p-5 my-8">
+                        <p className="text-sm text-charcoal/90">
+                            <span className="font-semibold text-amber-700">🏆 Why Families Trust Jinbeh:</span>{" "}
+                            Multiple <strong>D Magazine</strong> award winner &bull; <strong>OpenTable #1 Hibachi in Lewisville</strong> &bull; <strong>TripAdvisor Travelers&apos; Choice</strong> &bull; Family-owned since 1988.
+                        </p>
+                    </div>
+
+<section className="relative min-h-[60vh] flex items-center text-white py-20">
         <Image
           src="/images/celebrations/jinbeh_group.jpg"
           alt="Happy group celebration at Jinbeh Japanese Restaurant - perfect venue for baby showers"
@@ -429,6 +438,7 @@ export default function BabyShowerPage() {
       <section className="py-16 bg-gradient-to-r from-accent-red to-deep-indigo text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
+
             Ready to Plan Your Baby Shower?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">

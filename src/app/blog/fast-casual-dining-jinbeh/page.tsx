@@ -119,6 +119,20 @@ export default function FastCasualDiningJinbeh() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
+
+            {/* BreadcrumbList Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                        { "@type": "ListItem", "position": 3, "name": "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW", "item": "https://jinbeh.com/blog/fast-casual-dining-jinbeh" }
+                    ]
+                }) }}
+            />
 n unusual combination. After
                 all, Japanese cuisine is known for precision, artistry, and presentation—things that
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,

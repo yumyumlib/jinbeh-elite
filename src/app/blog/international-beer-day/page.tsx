@@ -119,6 +119,20 @@ export default function InternationalBeerDay() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
+
+            {/* BreadcrumbList Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                        { "@type": "ListItem", "position": 3, "name": "International Beer Day: Celebrate with Japanese Beer at Jinbeh", "item": "https://jinbeh.com/blog/international-beer-day" }
+                    ]
+                }) }}
+            />
 ld raise their glasses for
                 International Beer Day. It's a celebration of the craft, culture, and community
                 that beer brings to the table—literally.

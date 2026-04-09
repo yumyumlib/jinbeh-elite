@@ -118,12 +118,28 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         },
     };
 
+    // BreadcrumbList Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://jinbeh.com" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://jinbeh.com/blog" },
+            ...(category ? [{ "@type": "ListItem", position: 3, name: category.name, item: `https://jinbeh.com/blog/category/${category.slug}` }] : []),
+            { "@type": "ListItem", position: category ? 4 : 3, name: post.title, item: `https://jinbeh.com/blog/${post.slug}` },
+        ],
+    };
+
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
             {/* Schema Markup */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
 
             {/* Hero Section */}
@@ -213,7 +229,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
                                     <div className="border-l-4 border-accent-red pl-6 py-4 bg-warm-ivory rounded-r-lg my-8">
                                         <p className="text-charcoal font-medium italic">
-                                            "At Jinbeh, we believe every meal should be an experience. Since 1988, our family has been dedicated to bringing authentic Japanese cuisine and entertainment to North Texas."
+                                            &ldquo;At Jinbeh, we believe every meal should be an experience. Since 1988, our family has been dedicated to bringing authentic Japanese cuisine and entertainment to North Texas.&rdquo;
+                                        </p>
+                                    </div>
+
+                                    {/* Award Callout */}
+                                    <div className="bg-gradient-to-r from-amber-50 to-warm-ivory border border-amber-200/60 rounded-xl p-5 my-8">
+                                        <p className="text-sm text-charcoal/90">
+                                            <span className="font-semibold text-amber-700">🏆 Recognized Excellence:</span>{" "}
+                                            Multiple <strong>D Magazine</strong> award winner &bull; <strong>OpenTable #1 Hibachi in Lewisville</strong> &bull; <strong>TripAdvisor Travelers&apos; Choice</strong> &bull; Rated 4.2&ndash;4.8 across platforms with 1,600+ reviews.
                                         </p>
                                     </div>
 
@@ -306,7 +330,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                                             alt={related.title}
                                                             fill
                                                             className="object-cover group-hover:scale-105 transition-transform"
-                                                        loading="lazy" />
+                                                            loading="lazy" />
                                                     </div>
                                                     <div className="flex-1 min-w-0">
                                                         {relatedCat && (

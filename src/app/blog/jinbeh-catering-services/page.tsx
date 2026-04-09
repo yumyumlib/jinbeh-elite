@@ -118,6 +118,20 @@ export default function JinbehCateringServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+
+            {/* BreadcrumbList Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+                        { "@type": "ListItem", "position": 3, "name": "Jinbeh at Home: Experience Jinbeh Catering", "item": "https://jinbeh.com/blog/jinbeh-catering-services" }
+                    ]
+                }) }}
+            />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh at Home: Experience Jinbeh Catering
       </h1>
