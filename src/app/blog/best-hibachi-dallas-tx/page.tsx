@@ -174,7 +174,7 @@ export default function BestHibachiDallas() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine & OpenTable Recognized</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  There&apos;s a reason Jinbeh is ranked <strong>#1 Hibachi in Lewisville</strong> on OpenTable and has earned multiple <strong>D Magazine</strong> awards and recognition across <strong>8 OpenTable Diners&apos; Choice lists</strong>. After 38 years, the combination of family-owned warmth, house-made sauces, and 550&deg;F hibachi grills still sets the standard for Japanese steakhouse dining in Dallas&ndash;Fort Worth.
+                  There&apos;s a reason Jinbeh is ranked <strong>#1 Hibachi in Lewisville</strong> on OpenTable and has earned multiple <strong>D Magazine</strong> awards and recognition across <strong>12+ OpenTable Diners&apos; Choice lists</strong>. After 38 years, the combination of family-owned warmth, house-made sauces, and 550&deg;F hibachi grills still sets the standard for Japanese steakhouse dining in Dallas&ndash;Fort Worth.
                 </p>
               </div>
                                         <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>

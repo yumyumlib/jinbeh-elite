@@ -166,7 +166,7 @@ export default function JapaneseTakeoutNearMe() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Sushi & Hibachi, Now To Go</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Every takeout order from Jinbeh carries the same quality that earned D Magazine&apos;s &ldquo;Best Place to Eat&rdquo; recognition and 8 current OpenTable Diners&apos; Choice lists. Same house-made sauces. Same 38-year recipes. Just packaged for your couch.
+                  Every takeout order from Jinbeh carries the same quality that earned D Magazine&apos;s &ldquo;Best Place to Eat&rdquo; recognition and 12+ current OpenTable Diners&apos; Choice and &ldquo;Best Of&rdquo; lists. Same house-made sauces. Same 38-year recipes. Just packaged for your couch.
                 </p>
               </div>
               </div>

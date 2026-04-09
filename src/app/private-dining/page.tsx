@@ -244,7 +244,7 @@ const locations = [
 const amenities = [
   {
     title: "Private Hibachi Tables",
-    description: "Intimate seating for 8-10 guests with a dedicated hibachi chef creating tableside entertainment",
+    description: "Intimate seating for 7–8 guests with a dedicated hibachi chef creating tableside entertainment",
     icon: "🔥",
   },
   {

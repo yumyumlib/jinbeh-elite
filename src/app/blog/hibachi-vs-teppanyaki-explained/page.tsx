@@ -142,7 +142,7 @@ efinitions
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">📰 Featured in Eater Dallas</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Eater Dallas included Jinbeh in their curated DFW dining guide &mdash; a testament to the restaurant&apos;s commitment to authentic Japanese culinary tradition. Combined with multiple D Magazine awards and 8 current OpenTable Diners&apos; Choice recognitions, Jinbeh has earned its reputation as one of North Texas&apos;s most enduring Japanese restaurants.
+                  Eater Dallas included Jinbeh in their curated DFW dining guide &mdash; a testament to the restaurant&apos;s commitment to authentic Japanese culinary tradition. Combined with multiple D Magazine awards and 12+ current OpenTable Diners&apos; Choice and &ldquo;Best Of&rdquo; recognitions, Jinbeh has earned its reputation as one of North Texas&apos;s most enduring Japanese restaurants.
                 </p>
               </div>
               </div>
@@ -511,7 +511,7 @@ efinitions
       </ul>
 
       <ProTip variant="insider">
-        <strong>Insider tip:</strong> Jinbeh's teppanyaki tables seat 8–10 guests, and the chef tailors the show to your group — more playful for kids' birthdays, more refined for date nights. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> and mention your occasion when booking.
+        <strong>Insider tip:</strong> Jinbeh's teppanyaki tables seat 7–8 guests, and the chef tailors the show to your group — more playful for kids' birthdays, more refined for date nights. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> and mention your occasion when booking.
       </ProTip>
 
       {/* Why the Confusion Matters Section */}

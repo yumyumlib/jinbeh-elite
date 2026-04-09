@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "How do I make a hibachi reservation?",
     answer:
-      "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We recommend reservations for hibachi, especially weekends. Tables seat 8-10 guests.",
+      "Call us! Frisco: (214) 619-1200. Lewisville: (214) 488-2224. We recommend reservations for hibachi, especially weekends. Tables seat 7–8 guests.",
   },
   {
     question: "What tricks do hibachi chefs perform?",
@@ -159,7 +159,7 @@ export default function HibachiDiningExperiencePage() {
           {
             icon: "🪑",
             title: "Be Seated at the Grill",
-            description: "You're seated communally around a large teppanyaki grill with 8–10 guests. Your server takes drink orders while you settle in."
+            description: "You're seated communally around a large teppanyaki grill with 7–8 guests. Your server takes drink orders while you settle in."
           },
           {
             icon: "🍜",
@@ -248,7 +248,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <ProTip variant="insider">
-        <strong>Planning your visit?</strong> Weekends fill up fast — call ahead to reserve, especially for groups of 4 or more. Jinbeh's hibachi tables seat 8–10 guests, so you might share the grill with another party. That's part of the fun! Frisco: (214) 619-1200 · Lewisville: (214) 488-2224.
+        <strong>Planning your visit?</strong> Weekends fill up fast — call ahead to reserve, especially for groups of 4 or more. Jinbeh's hibachi tables seat 7–8 guests, so you might share the grill with another party. That's part of the fun! Frisco: (214) 619-1200 · Lewisville: (214) 488-2224.
       </ProTip>
 
       <h2>Vegetarian & Plant-Based Options</h2>

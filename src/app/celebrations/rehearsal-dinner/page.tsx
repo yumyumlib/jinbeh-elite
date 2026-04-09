@@ -95,7 +95,7 @@ const faqSchema = {
       name: "How many guests can Jinbeh accommodate for a rehearsal dinner?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We can comfortably accommodate rehearsal dinner groups of various sizes. Each hibachi table seats 8-10 guests, and we have semi-private spaces available for larger groups or more intimate celebrations. Contact us to discuss your specific headcount and preferred dining arrangement.",
+        text: "We can comfortably accommodate rehearsal dinner groups of various sizes. Each hibachi table seats 7–8 guests, and we have semi-private spaces available for larger groups or more intimate celebrations. Contact us to discuss your specific headcount and preferred dining arrangement.",
       },
     },
     {

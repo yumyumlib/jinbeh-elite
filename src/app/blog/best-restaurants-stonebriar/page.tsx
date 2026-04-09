@@ -196,7 +196,7 @@ export default function BestRestaurantsStonebriar() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine&apos;s Best Place to Eat in the Frisco Suburbs</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  D Magazine named Jinbeh &ldquo;Best Place to Eat&rdquo; in their Best of Big D: Best of the Burbs franchise &mdash; a recognition earned through food quality and community trust, not paid placement. Add 8 current OpenTable Diners&apos; Choice lists and it&apos;s clear: Jinbeh is the Stonebriar area&apos;s most awarded Japanese restaurant.
+                  D Magazine named Jinbeh &ldquo;Best Place to Eat&rdquo; in their Best of Big D: Best of the Burbs franchise &mdash; a recognition earned through food quality and community trust, not paid placement. Add 12+ current OpenTable Diners&apos; Choice and &ldquo;Best Of&rdquo; lists and it&apos;s clear: Jinbeh is the Stonebriar area&apos;s most awarded Japanese restaurant.
                 </p>
               </div>
 

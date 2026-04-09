@@ -12,7 +12,7 @@
  * Platform selection per location — lead with strongest:
  * - Frisco:     Uber Eats 4.8 (180+) · Facebook 4.7 (94%) · Grubhub 4.7 (231)
  * - Lewisville: Grubhub 4.8 (111) · OpenTable 4.7 · Google 4.5 (300+)
- * - Combined:   "Rated 4.7–4.8 across major platforms"
+ * - Combined:   "Rated 4.2–4.8 across all platforms"
  */
 
 type Platform = {
@@ -35,9 +35,10 @@ const lewisvilleProof: Platform[] = [
 ];
 
 const combinedProof: Platform[] = [
-    { name: "Uber Eats", rating: "4.8", detail: "", icon: "🟢" },
+    { name: "Google", rating: "4.2–4.5", detail: "724+ reviews", icon: "⭐" },
+    { name: "Uber Eats", rating: "4.5–4.8", detail: "", icon: "🟢" },
     { name: "Grubhub", rating: "4.7–4.8", detail: "340+ ratings", icon: "🟠" },
-    { name: "Facebook", rating: "4.7", detail: "94% recommend", icon: "📘" },
+    { name: "Facebook", rating: "4.2–4.7", detail: "", icon: "📘" },
 ];
 
 function Stars({ rating }: { rating: string }) {
@@ -153,7 +154,7 @@ export const socialProofData = {
     },
     combined: {
         totalRatings: "1,600+",
-        ratingRange: "4.5–4.8",
+        ratingRange: "4.2–4.8",
         bestRating: "4.8",
         bestPlatforms: "Uber Eats & Grubhub",
     },

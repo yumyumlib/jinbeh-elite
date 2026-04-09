@@ -97,7 +97,7 @@ const categories = {
     ],
     faq: [
       { q: "Is Jinbeh good for birthday celebrations?", a: "Absolutely! Jinbeh is one of the top-rated birthday celebration restaurants in Frisco and Lewisville. Our hibachi chefs put on an entertaining show at your table, complete with the famous onion volcano — making birthdays memorable for all ages." },
-      { q: "Can Jinbeh host large groups or private parties?", a: "Yes! Both our Frisco and Lewisville locations accommodate large parties. Hibachi tables seat 8–10 guests for a shared experience. For groups of 10+ or private events, call us at (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville)." },
+      { q: "Can Jinbeh host large groups or private parties?", a: "Yes! Both our Frisco and Lewisville locations accommodate large parties. Hibachi tables seat 7–8 guests for a shared experience. For groups of 10+ or private events, call us at (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville)." },
       { q: "Does Jinbeh offer special birthday deals?", a: "Jinbeh loves celebrating birthdays! Contact our team to discuss birthday packages and group dining options that include appetizers, entrees, and desserts for your party." },
       { q: "What types of celebrations can I host at Jinbeh?", a: "We host birthdays, anniversaries, graduations, baby showers, bridal showers, bachelorette dinners, corporate events, holiday parties, and family gatherings. Any occasion becomes special with hibachi entertainment and fresh sushi." },
     ],

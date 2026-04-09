@@ -113,7 +113,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Event?","acceptedAnswer":{"@type":"Answer","text":"Entertainment Value: Guests are captivated from start to finish. The chef's performance is the evening's highlight."}},{"@type":"Question","name":"What's Included in Jinbeh Offsite Catering","acceptedAnswer":{"@type":"Answer","text":"When you book Jinbeh for your event, we handle everything. No stress. No hassle. Just exceptional results."}},{"@type":"Question","name":"Service Areas & Availability","acceptedAnswer":{"@type":"Answer","text":"Jinbeh's offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Where Jinbeh Services","acceptedAnswer":{"@type":"Answer","text":"Jinbeh's offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Why Choose Jinbeh for Your Offsite Catering?","acceptedAnswer":{"@type":"Answer","text":"For over 35 years, Jinbeh has been perfecting Japanese cuisine and hibachi entertainment. Our chefs are trained professionals who combine culinary skill with genuine showmanship."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Event?","acceptedAnswer":{"@type":"Answer","text":"Entertainment Value: Guests are captivated from start to finish. The chef's performance is the evening's highlight."}},{"@type":"Question","name":"What's Included in Jinbeh Offsite Catering","acceptedAnswer":{"@type":"Answer","text":"When you book Jinbeh for your event, we handle everything. No stress. No hassle. Just exceptional results."}},{"@type":"Question","name":"Service Areas & Availability","acceptedAnswer":{"@type":"Answer","text":"Jinbeh's offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Where Jinbeh Services","acceptedAnswer":{"@type":"Answer","text":"Jinbeh's offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Why Choose Jinbeh for Your Offsite Catering?","acceptedAnswer":{"@type":"Answer","text":"For over 38 years, Jinbeh has been perfecting Japanese cuisine and hibachi entertainment. Our chefs are trained professionals who combine culinary skill with genuine showmanship."}}]}` }}
       />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh Offsite Events Catering: Hibachi at Home
@@ -146,7 +146,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
               </div>
 
       <p>
-        For over 35 years, Jinbeh has been perfecting the art of hibachi entertainment and Japanese cuisine. Now, we bring that same expertise directly to you, transforming any venue into an unforgettable culinary experience. Whether you're celebrating a birthday, hosting a corporate event, or gathering family for a special dinner, offsite hibachi catering creates memories that last.
+        For over 38 years, Jinbeh has been perfecting the art of hibachi entertainment and Japanese cuisine. Now, we bring that same expertise directly to you, transforming any venue into an unforgettable culinary experience. Whether you're celebrating a birthday, hosting a corporate event, or gathering family for a special dinner, offsite hibachi catering creates memories that last.
       </p>
 
       <h2>The Hibachi Experience: More Than Just Dinner</h2>
@@ -403,7 +403,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       <h3>Experience & Expertise</h3>
 
       <p>
-        For over 35 years, Jinbeh has been perfecting Japanese cuisine and hibachi entertainment. Our chefs are trained professionals who combine culinary skill with genuine showmanship.
+        For over 38 years, Jinbeh has been perfecting Japanese cuisine and hibachi entertainment. Our chefs are trained professionals who combine culinary skill with genuine showmanship.
       </p>
 
       <h3>Authentic Japanese Cuisine</h3>

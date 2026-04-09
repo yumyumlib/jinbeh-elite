@@ -28,7 +28,7 @@ const schemas = [
             { "@type": "Question", name: "Best restaurant for large groups in DFW?", acceptedAnswer: { "@type": "Answer", text: "Hibachi restaurants like Jinbeh are ideal—shared tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice), entertainment keeps everyone engaged, and the format works for all ages. Jinbeh has been hosting group events since 1988." } },
             { "@type": "Question", name: "What's the minimum group size for Jinbeh reservations?", acceptedAnswer: { "@type": "Answer", text: "While Jinbeh welcomes all sizes, groups of 8+ benefit from group dining expertise. Contact Jinbeh for coordination details." } },
             { "@type": "Question", name: "Can we customize the menu for our group?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh's culinary team works with groups to create customized menus accommodating dietary preferences and group size." } },
-            { "@type": "Question", name: "How do hibachi tables work for groups?", acceptedAnswer: { "@type": "Answer", text: "8-10 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment." } },
+            { "@type": "Question", name: "How do hibachi tables work for groups?", acceptedAnswer: { "@type": "Answer", text: "7–8 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment." } },
             { "@type": "Question", name: "How do I book a group at Jinbeh?", acceptedAnswer: { "@type": "Answer", text: "Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 at least 2-4 weeks ahead. The team will coordinate menu, timing, and special requests." } },
             { "@type": "Question", name: "Are there private rooms for large groups?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers private dining areas and group hibachi tables providing semi-private settings, perfect for corporate events, family reunions, and milestone celebrations." } },
             { "@type": "Question", name: "Can kids join group hibachi dining?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Kids love hibachi. The chefs entertain while cooking, and a kids menu is available. The hibachi show is fun for all ages." } }
@@ -209,7 +209,7 @@ export default function GroupDiningVenues() {
                                 </details>
                                 <details className="group bg-warm-ivory rounded-xl">
                                     <summary className="p-5 cursor-pointer font-semibold flex justify-between">How do hibachi tables work for groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>
-                                    <div className="px-5 pb-5 text-charcoal/80">8-10 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment.</div>
+                                    <div className="px-5 pb-5 text-charcoal/80">7–8 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment.</div>
                                 </details>
                                 <details className="group bg-warm-ivory rounded-xl">
                                     <summary className="p-5 cursor-pointer font-semibold flex justify-between">What makes Jinbeh special for groups?<span className="text-accent-red group-open:rotate-180">▼</span></summary>

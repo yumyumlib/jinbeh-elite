@@ -123,7 +123,7 @@ export default function HibachiCatering() {
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Award-Winning Flavors for Your Event</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  When you book Jinbeh catering, you&apos;re getting flavors from a D Magazine &ldquo;Best of Big D&rdquo; winner with 8 current OpenTable Diners&apos; Choice recognitions. Our house-made sauces, hibachi expertise, and 38 years of experience travel with our team to your venue.
+                  When you book Jinbeh catering, you&apos;re getting flavors from a D Magazine &ldquo;Best of Big D&rdquo; winner with 12+ current OpenTable Diners&apos; Choice and &ldquo;Best Of&rdquo; recognitions. Our house-made sauces, hibachi expertise, and 38 years of experience travel with our team to your venue.
                 </p>
               </div>
               </div>
