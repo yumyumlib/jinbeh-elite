@@ -160,6 +160,8 @@ export default function ArticleLayout({
                       fill
                       className="object-cover"
                       priority
+                      fetchPriority="high"
+                      sizes="(max-width: 1280px) 100vw, 1280px"
                     />
                   </div>
                 </div>

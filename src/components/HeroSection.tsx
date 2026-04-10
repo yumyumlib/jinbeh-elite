@@ -39,7 +39,7 @@ export default function HeroSection() {
             }
         };
 
-        const timer = setTimeout(loadVideo, 500);
+        const timer = setTimeout(loadVideo, 4000);
         const onScroll = () => { loadVideo(); };
         window.addEventListener("scroll", onScroll, { passive: true, once: true });
 
@@ -67,13 +67,14 @@ export default function HeroSection() {
 
             {/* Fallback Image - always visible until video loads - Professional Studio Quality */}
             <Image
-                src="/images/catalog/12-C060324-6551.jpg"
-                alt="Premium hibachi dinner with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant"
+                src="/images/hero/jinbeh-hero-poster.jpg"
+                alt="Jinbeh Japanese Restaurant — hibachi chef performing with flames alongside a premium sushi spread with nigiri, specialty rolls, and sashimi"
                 fill
                 priority
+                fetchPriority="high"
                 sizes="100vw"
-                className="object-cover object-center z-0"
-                quality={85}
+                className={`object-cover object-center z-0 transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-100'}`}
+                quality={80}
             />
 
             {/* Dark Overlay for text contrast */}
