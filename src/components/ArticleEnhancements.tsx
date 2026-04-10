@@ -93,7 +93,7 @@ export function Timeline({ steps, title }: { steps: TimelineStep[]; title?: stri
                         </div>
                         <div className="bg-warm-ivory/40 rounded-xl p-5 border border-warm-ivory hover:border-soft-gold/50 transition-colors">
                             <p className="font-heading font-bold text-charcoal mb-1">
-                                <span className="text-accent-red/60 mr-2 text-sm">Step {i + 1}</span>
+                                <span className="text-accent-red mr-2 text-sm">Step {i + 1}</span>
                                 {step.title}
                             </p>
                             <p className="text-charcoal/70 text-sm leading-relaxed">{step.description}</p>
@@ -450,7 +450,7 @@ export function MenuItemCard({ item }: { item: MenuItemInfo }) {
                     <h4 className="font-heading font-bold text-charcoal mb-1">{item.name}</h4>
                     <p className="text-charcoal/60 text-sm leading-relaxed">{item.description}</p>
                     {item.badge && (
-                        <span className="inline-block mt-2 bg-soft-gold/20 text-soft-gold text-xs font-bold px-2.5 py-1 rounded-full">
+                        <span className="inline-block mt-2 bg-soft-gold/20 text-charcoal text-xs font-bold px-2.5 py-1 rounded-full">
                             ⭐ {item.badge}
                         </span>
                     )}
