@@ -491,7 +491,7 @@ export default function BacheloretteRestaurantsDallas() {
                                 {/* CTA */}
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Bachelorette party insider tip:</strong> Start your celebration with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> sake cocktails at the bar, then move to the hibachi table for dinner and a show. For groups of 8+, ask about our semi-private dining area for a more exclusive experience. Our lychee martini is a bride-squad favorite — reviewers call it "a must-order." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bachelorette dinner →</Link>
+                                        <strong>Bachelorette party insider tip:</strong> Start your celebration with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> sake cocktails at the bar, then move to the hibachi table for dinner and a show. For groups of 8+, ask about our semi-<Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline">private dining</Link> area for a more exclusive experience. Our lychee martini is a bride-squad favorite — reviewers call it "a must-order." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bachelorette dinner →</Link>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

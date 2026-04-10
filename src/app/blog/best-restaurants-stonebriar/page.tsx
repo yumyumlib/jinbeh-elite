@@ -266,7 +266,7 @@ export default function BestRestaurantsStonebriar() {
                                             <tr className="border-b border-warm-ivory bg-soft-gold/10">
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
                                                 <td className="p-4">Japanese (Hibachi + Sushi)</td>
-                                                <td className="p-4">Celebrations, families, date nights, groups</td>
+                                                <td className="p-4">Celebrations, families, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date nights</Link>, groups</td>
                                                 <td className="p-4">$$</td>
                                                 <td className="p-4">3 min</td>
                                             </tr>
@@ -412,8 +412,8 @@ export default function BestRestaurantsStonebriar() {
 
                                     <ul className="space-y-2">
                                         <li><strong>Make reservations for weekends</strong> — The popular spots fill up fast, especially Friday and Saturday evenings.</li>
-                                        <li><strong>Try lunch specials</strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
-                                        <li><strong>Happy hour deals</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> or other spots for discounted drinks and appetizers before dinner.</li>
+                                        <li><strong>Try <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline">lunch specials</Link></strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
+                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> deals</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> or other spots for discounted drinks and appetizers before dinner.</li>
                                         <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
                                     </ul>
 

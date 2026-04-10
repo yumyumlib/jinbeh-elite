@@ -358,7 +358,7 @@ export default function RestaurantsPrivateRooms() {
 
                                     <ul className="space-y-3 mb-8">
                                         <li><strong>Authentic Japanese Cuisine:</strong> Meticulously crafted dishes using premium ingredients and traditional techniques. Explore our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.</li>
-                                        <li><strong>Hibachi Entertainment:</strong> Optional teppanyaki performances that elevate celebrations and special occasions</li>
+                                        <li><strong>Hibachi Entertainment:</strong> Optional <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki</Link> performances that elevate celebrations and special occasions</li>
                                         <li><strong>Flexible Spaces:</strong> Private booths and secluded dining areas accommodating groups from 8 to 50+ guests</li>
                                         <li><strong>Customized Menus:</strong> Work with our culinary team to create dining experiences matching your vision</li>
                                         <li><strong>Professional Service:</strong> Dedicated staff trained in private event management and hospitality</li>
@@ -378,7 +378,7 @@ export default function RestaurantsPrivateRooms() {
                                     </h3>
 
                                     <p>
-                                        Whether it's an anniversary dinner, milestone <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration</Link>, or family reunion, Jinbeh's semi-private dining spaces provide an intimate yet impressive setting. Our hibachi performances add an element of excitement and entertainment that makes celebrations truly special. Need a last-minute gift for the guest of honor? A <Link href="/gift-cards" className="text-accent-red hover:underline">Jinbeh gift card</Link> is always appreciated.
+                                        Whether it's an <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline">anniversary</Link> dinner, milestone <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration</Link>, or family reunion, Jinbeh's semi-private dining spaces provide an intimate yet impressive setting. Our hibachi performances add an element of excitement and entertainment that makes celebrations truly special. Need a last-minute gift for the guest of honor? A <Link href="/gift-cards" className="text-accent-red hover:underline">Jinbeh gift card</Link> is always appreciated.
                                     </p>
                                 </div>
 

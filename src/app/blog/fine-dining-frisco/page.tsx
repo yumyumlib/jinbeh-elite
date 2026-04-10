@@ -385,11 +385,11 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        Whether you're celebrating an anniversary, hosting a corporate event, or marking a milestone birthday, fine dining restaurants in Frisco—especially Jinbeh—can customize the experience to your preferences.
+                                        Whether you're celebrating an <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline">anniversary</Link>, hosting a corporate event, or marking a milestone birthday, fine dining restaurants in Frisco—especially Jinbeh—can customize the experience to your preferences.
                                     </p>
 
                                     <ProTip variant="insider">
-                                        <strong>Fine dining insider tip:</strong> For special occasions, request the sushi bar for an intimate experience watching master chefs work, or book a hibachi table for group celebrations. Reviewers rave that Jinbeh's sake flights pair perfectly with sushi omakase. Ask about semi-private dining for corporate events — it's Frisco's best-kept fine dining secret. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your experience →</Link>
+                                        <strong>Fine dining insider tip:</strong> For special occasions, request the sushi bar for an intimate experience watching master chefs work, or book a hibachi table for group celebrations. Reviewers rave that Jinbeh's sake flights pair perfectly with sushi <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link>. Ask about semi-private dining for corporate events — it's Frisco's best-kept fine dining secret. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your experience →</Link>
                                     </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

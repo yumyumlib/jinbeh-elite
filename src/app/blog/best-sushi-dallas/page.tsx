@@ -112,7 +112,7 @@ export default function BestSushiDallas() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Dallas has incredible sushi.</strong> From upscale omakase experiences downtown to family-friendly spots in the suburbs, here's where to find the freshest fish in DFW. Not sure which roll to try? Start with our guide to <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link>.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Dallas has incredible sushi.</strong> From upscale <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experiences downtown to family-friendly spots in the suburbs, here's where to find the freshest fish in DFW. Not sure which roll to try? Start with our guide to <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link>.</p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"We've been serving fresh sushi in DFW since 1988. While we're in Frisco and Lewisville, our regulars drive from all over Dallas for the quality and value."</p>
@@ -129,7 +129,7 @@ export default function BestSushiDallas() {
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Price</th></tr></thead>
                                 <tbody className="text-charcoal/80">
                                     <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Jinbeh Frisco</td><td className="p-3">Family, hibachi + sushi combo</td><td className="p-3 text-center">$$</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Uchi Dallas</td><td className="p-3">Upscale omakase, date night</td><td className="p-3 text-center">$$$$</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Uchi Dallas</td><td className="p-3">Upscale omakase, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date night</Link></td><td className="p-3 text-center">$$$$</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Nobu Dallas</td><td className="p-3">Celebrity chef, trendy crowd</td><td className="p-3 text-center">$$$$</td></tr>
                                     <tr className="border-b"><td className="p-3 font-semibold">Tei-An</td><td className="p-3">Soba + sushi, Arts District</td><td className="p-3 text-center">$$$</td></tr>
                                     <tr><td className="p-3 font-semibold">Yutaka</td><td className="p-3">Traditional, purist favorites</td><td className="p-3 text-center">$$$</td></tr>
@@ -148,7 +148,7 @@ export default function BestSushiDallas() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during happy hour (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💲 How Much Does Sushi Cost in Dallas?</h2>
@@ -199,7 +199,7 @@ export default function BestSushiDallas() {
                                         <li>• Ask the chef what&apos;s freshest today</li>
                                         <li>• Start with nigiri to test fish quality</li>
                                         <li>• Order smaller portions of more variety</li>
-                                        <li>• Try the lunch special for best value</li>
+                                        <li>• Try the <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline">lunch special</Link> for best value</li>
                                     </ul>
                                 </div>
                             </div>
