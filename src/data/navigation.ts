@@ -139,6 +139,6 @@ export function getNavItems(loc: string): NavItem[] {
                 },
             ],
         },
-        { label: "VIP Club", href: "/vip" },
+        { label: "Catering", href: "/catering" },
     ];
 }
