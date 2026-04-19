@@ -21,10 +21,10 @@ const reasons: ExperienceReason[] = [
   {
     label: 'Dinner & A Show',
     title: 'Dinner & A Show',
-    hook: 'Fire, laughter, and a standing ovation—every single night',
-    description: 'Your hibachi chef doesn\'t just cook—they perform. The onion volcano erupts, shrimp fly through the air, and your whole table erupts in laughter. It\'s the dinner experience families talk about for weeks.',
-    image: '/images/catalog/9-C060324-6484.jpg',
-    imageAlt: 'Hibachi chef performing tableside cooking with flames and theatrical presentation at Jinbeh Japanese Restaurant Frisco TX'
+    hook: 'Fire, laughter, and a standing ovation, every single night',
+    description: 'Your hibachi chef doesn\'t just cook, they perform. The onion volcano erupts, shrimp fly through the air, and your whole table erupts in laughter. It\'s the dinner experience families talk about for weeks.',
+    image: '/images/OnionVolcanoAndVeggiesOnGrill.webp',
+    imageAlt: 'Onion volcano eruption with flames and sizzling vegetables on a hibachi grill at Jinbeh Japanese Restaurant'
   },
   {
     label: 'House-Made Everything',
@@ -38,9 +38,9 @@ const reasons: ExperienceReason[] = [
     label: 'DFW\'s Birthday Spot',
     title: 'DFW\'s Birthday Spot',
     hook: 'The place families come back to, year after year',
-    description: 'One guest has celebrated her birthday here every year since she was 7—she\'s 24 now. Whether it\'s a birthday, anniversary, or graduation, Jinbeh makes every celebration unforgettable. That\'s 38 years of memories and counting.',
-    image: '/images/catalog/7-C060324-6447.jpg',
-    imageAlt: 'Hibachi chef cooking premium ingredients tableside at Jinbeh Japanese Restaurant Frisco Texas - perfect for celebrations'
+    description: 'One guest has celebrated her birthday here every year since she was 7. She\'s 24 now. Whether it\'s a birthday, anniversary, or graduation, Jinbeh makes every celebration unforgettable. That\'s 38 years of memories and counting.',
+    image: '/images/Party.jpg',
+    imageAlt: 'Family and friends celebrating a birthday party together around a hibachi table at Jinbeh Japanese Restaurant'
   },
   {
     label: 'Come Hungry, Leave Happy',
@@ -167,8 +167,8 @@ export default function JinbehExperience() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Your Table Is Waiting
           </h3>
-          <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-            Rated 4.7–4.8 on major platforms. Two locations. One unforgettable night.
+          <p className="text-sm sm:text-base lg:text-lg text-white/80 mb-8 mx-auto text-center lg:whitespace-nowrap">
+            Rated 4.2–4.8 on major platforms. Two locations. One unforgettable night.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

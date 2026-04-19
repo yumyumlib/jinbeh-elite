@@ -143,13 +143,13 @@ export default function HomePage() {
           <div className="container mx-auto px-6 relative z-10">
             <ScrollReveal>
               <div className="text-center mb-16">
-                <span className="inline-block bg-soft-gold/20 text-soft-gold text-sm font-semibold px-6 py-2 rounded-full mb-6 border border-soft-gold/30 tracking-wide">
+                <span className="inline-block bg-soft-gold text-charcoal text-sm font-bold px-6 py-2 rounded-full mb-6 border border-soft-gold tracking-wide shadow-md">
                   CRAFTED WITH PASSION
                 </span>
                 <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
                   Explore Our <span className="text-soft-gold">Menu</span>
                 </h2>
-                <p className="text-xl text-white/70 max-w-2xl mx-auto">
+                <p className="text-base sm:text-lg lg:text-xl text-white/70 mx-auto text-center lg:whitespace-nowrap">
                   From tableside hibachi entertainment to hand-crafted sushi rolls, experience authentic Japanese cuisine
                 </p>
               </div>
@@ -316,7 +316,7 @@ export default function HomePage() {
                 <div className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-soft-gold/20 hover:border-soft-gold hover:scale-105">
                   <div className="text-center">
                     <div className="text-5xl md:text-7xl font-bold text-cedar-brown mb-3 group-hover:text-accent-red transition-colors">
-                      <NumberTicker value={68000} suffix="+" delay={0.4} />
+                      <NumberTicker value={68} suffix="k+" delay={0.4} />
                     </div>
                     <p className="text-base md:text-lg font-semibold text-charcoal/80 leading-snug">
                       Meals Served<br />Annually
@@ -535,8 +535,8 @@ export default function HomePage() {
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">
                   Life&apos;s Big Moments, <span className="text-accent-red italic">Our Table</span>
                 </h2>
-                <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  From birthdays to promotions, reunions to date nights — every celebration deserves a show.
+                <p className="text-sm sm:text-base lg:text-lg text-charcoal/70 mx-auto text-center lg:whitespace-nowrap">
+                  From birthdays to promotions, reunions to date nights, every celebration deserves a show.
                 </p>
               </div>
             </ScrollReveal>
@@ -711,7 +711,7 @@ export default function HomePage() {
                   What Our Guests Say
                 </h2>
                 <div className="flex items-center justify-center gap-2 text-charcoal/70">
-                  <span className="font-semibold text-soft-gold text-xl">4.5</span>
+                  <span className="font-semibold text-soft-gold text-xl">4.2–4.8</span>
                   <div className="flex gap-0.5" aria-hidden="true">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-5 h-5 text-soft-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -719,7 +719,7 @@ export default function HomePage() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-sm">from <strong className="font-semibold">1,200+</strong> reviews on Google &amp; Yelp</span>
+                  <span className="text-sm">from <strong className="font-semibold">1,200+</strong> reviews on Google, Grubhub, Uber Eats, OpenTable &amp; Facebook</span>
                 </div>
               </div>
 
@@ -1142,7 +1142,7 @@ export default function HomePage() {
 
                     {/* Address + Directions */}
                     <a
-                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
+                      href="https://www.google.com/maps/dir/?api=1&destination=2693+Preston+Rd+Suite+1040,+Frisco,+TX+75034"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Get Directions to Jinbeh Frisco" className="flex items-center gap-3 mb-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group"
@@ -1234,7 +1234,7 @@ export default function HomePage() {
 
                     {/* Address + Directions */}
                     <a
-                      href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville"
+                      href="https://www.google.com/maps/dir/?api=1&destination=2440+S+Stemmons+Fwy+%23A,+Lewisville,+TX+75067"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Get Directions to Jinbeh Lewisville" className="flex items-center gap-3 mb-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all group"
