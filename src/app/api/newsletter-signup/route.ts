@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
+import { getPool } from '@/lib/db';
+import { sendNotification, buildNewsletterEmail } from '@/lib/email';
 
 /**
- * Newsletter / Seasonal Specials Signup — Fallback API Route
+ * Newsletter / Seasonal Specials Signup API Route
  *
- * In production, nginx should intercept `/api/newsletter-signup` and proxy to n8n,
- * which appends the row to a Google Sheet tab (e.g. "Newsletter_Signups").
- *
- * This fallback validates the payload and returns a clear error if n8n isn't wired.
+ * Saves the signup to PostgreSQL and sends email notifications
+ * to JinbehJapanese@gmail.com (CC: YumYumJinbeh@gmail.com).
  */
 
 export async function POST(request: Request) {
@@ -29,45 +29,35 @@ export async function POST(request: Request) {
             );
         }
 
-        // Attempt forward to n8n if configured
-        const n8nUrl = process.env.N8N_NEWSLETTER_WEBHOOK_URL;
-        if (n8nUrl) {
-            try {
-                const n8nResponse = await fetch(n8nUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        email: emailStr,
-                        source: source || 'newsletter-form',
-                        timestamp: new Date().toISOString(),
-                    }),
-                    signal: AbortSignal.timeout(10000),
-                });
-                if (n8nResponse.ok) {
-                    return NextResponse.json({
-                        ok: true,
-                        message: 'You\'re subscribed! Watch your inbox for updates.',
-                    });
-                }
-            } catch {
-                // n8n unreachable — fall through
-            }
+        const sourceStr = String(source || 'newsletter').trim();
+
+        // Save to PostgreSQL
+        try {
+            const pool = getPool();
+            await pool.query(
+                `INSERT INTO newsletter_signups (email, source)
+                 VALUES ($1, $2)
+                 ON CONFLICT (email, source) DO NOTHING`,
+                [emailStr, sourceStr]
+            );
+            console.log(`[Newsletter] Saved to PostgreSQL: ${emailStr} (source: ${sourceStr})`);
+        } catch (dbError) {
+            console.error('[Newsletter] PostgreSQL error:', dbError);
         }
 
-        console.error(
-            '[Newsletter Signup] n8n webhook not configured. Set N8N_NEWSLETTER_WEBHOOK_URL env var. ' +
-            'See docs/vip-signup-form.md for the architecture pattern.'
-        );
+        // Send email notification
+        await sendNotification(buildNewsletterEmail({
+            email: emailStr,
+            source: sourceStr,
+        }));
 
-        return NextResponse.json(
-            {
-                error: 'Newsletter signup is temporarily unavailable. Please try again later.',
-            },
-            { status: 503 }
-        );
+        return NextResponse.json({
+            ok: true,
+            message: 'You\'re subscribed! Watch your inbox for updates.',
+        });
 
     } catch (error) {
-        console.error('[Newsletter Signup] Unexpected error:', error);
+        console.error('[Newsletter] Unexpected error:', error);
         return NextResponse.json(
             { error: 'Something went wrong. Please try again later.' },
             { status: 500 }

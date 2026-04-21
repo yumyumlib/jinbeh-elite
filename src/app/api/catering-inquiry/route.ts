@@ -1,26 +1,20 @@
 import { NextResponse } from 'next/server';
+import { getPool } from '@/lib/db';
+import { sendNotification, buildCateringEmail } from '@/lib/email';
 
 /**
- * Catering Inquiry — Fallback API Route
+ * Catering Inquiry API Route
  *
- * In production, nginx should intercept `/api/catering-inquiry` and proxy to n8n,
- * which validates, enriches, and appends the row to the "Catering" tab of the
- * shared Google Sheet (1eOpfQVdTfZh_Tb8NjFxGggVXd3b6cABQIsqKDbb15Z8).
- *
- * This replaces the old `googleapis` direct-auth pattern, which required
- * GOOGLE_CLIENT_EMAIL / GOOGLE_PRIVATE_KEY env vars that aren't configured
- * on the VPS. The new architecture matches VIP signup:
- *   Browser → nginx (rate limit + secret) → n8n → Google Sheets
- *
- * See docs/vip-signup-form.md for the full architecture pattern.
+ * Saves the inquiry to PostgreSQL and sends email notifications
+ * to JinbehJapanese@gmail.com (CC: YumYumJinbeh@gmail.com).
  */
 
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { name, email, phone, eventDate, guestCount, eventType } = body;
+        const { name, email, phone, eventDate, guestCount, eventType, eventLocation, dietaryRestrictions } = body;
 
-        // Basic validation
+        // Validation
         if (!name || !email || !phone || !eventDate || !guestCount || !eventType) {
             return NextResponse.json(
                 { error: 'Please fill in all required fields.' },
@@ -36,51 +30,49 @@ export async function POST(request: Request) {
             );
         }
 
-        // Attempt forward to n8n if configured
-        const n8nUrl = process.env.N8N_CATERING_WEBHOOK_URL;
-        if (n8nUrl) {
-            try {
-                const n8nResponse = await fetch(n8nUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        ...(process.env.CATERING_SECRET ? { 'X-Catering-Secret': process.env.CATERING_SECRET } : {}),
-                    },
-                    body: JSON.stringify({
-                        ...body,
-                        email: emailStr,
-                        timestamp: new Date().toISOString(),
-                    }),
-                    signal: AbortSignal.timeout(10000),
-                });
-
-                if (n8nResponse.ok) {
-                    return NextResponse.json({
-                        success: true,
-                        message: 'Catering inquiry submitted successfully! We\'ll get back to you within 1 business day.',
-                    });
-                }
-            } catch {
-                // n8n unreachable — fall through
-            }
+        // Save to PostgreSQL
+        try {
+            const pool = getPool();
+            await pool.query(
+                `INSERT INTO catering_inquiries (name, email, phone, event_date, guest_count, event_type, event_location, dietary_restrictions)
+                 VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+                [
+                    String(name).trim(),
+                    emailStr,
+                    String(phone).trim(),
+                    eventDate,
+                    String(guestCount).trim(),
+                    String(eventType).trim(),
+                    String(eventLocation || '').trim(),
+                    String(dietaryRestrictions || '').trim(),
+                ]
+            );
+            console.log(`[Catering] Saved to PostgreSQL: ${emailStr}`);
+        } catch (dbError) {
+            console.error('[Catering] PostgreSQL error:', dbError);
         }
 
-        console.error(
-            '[Catering Inquiry] n8n webhook not configured. Set N8N_CATERING_WEBHOOK_URL env var. ' +
-            'See docs/vip-signup-form.md for the architecture pattern.'
-        );
+        // Send email notification
+        await sendNotification(buildCateringEmail({
+            name: String(name).trim(),
+            email: emailStr,
+            phone: String(phone).trim(),
+            eventDate: String(eventDate),
+            guestCount: String(guestCount),
+            eventType: String(eventType),
+            eventLocation: String(eventLocation || ''),
+            dietaryRestrictions: String(dietaryRestrictions || ''),
+        }));
 
-        return NextResponse.json(
-            {
-                error: 'Catering inquiries are temporarily unavailable online. Please call us directly at (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville).',
-            },
-            { status: 503 }
-        );
+        return NextResponse.json({
+            success: true,
+            message: 'Catering inquiry submitted! We\'ll get back to you within 1 business day.',
+        });
 
     } catch (error) {
-        console.error('[Catering Inquiry] Unexpected error:', error);
+        console.error('[Catering] Unexpected error:', error);
         return NextResponse.json(
-            { error: 'Something went wrong. Please try again or call us at (214) 619-1200.' },
+            { error: 'Something went wrong. Please call us at (214) 619-1200.' },
             { status: 500 }
         );
     }
