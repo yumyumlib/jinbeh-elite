@@ -77,7 +77,7 @@ export default function VipClubForm() {
                 return;
             }
 
-            let message = "Something went wrong.";
+            let message = "Something went wrong. Please try again or call us at (214) 619-1200 to join.";
             try {
                 const result = await response.json();
                 if (result?.error) message = result.error;
@@ -87,7 +87,7 @@ export default function VipClubForm() {
             setErrorMessage(message);
             setStatus("error");
         } catch {
-            setErrorMessage("Failed to connect to the server.");
+            setErrorMessage("Failed to connect to the server. Please call us at (214) 619-1200 to join the VIP Club.");
             setStatus("error");
         }
     };

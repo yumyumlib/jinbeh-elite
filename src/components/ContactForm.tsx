@@ -1,16 +1,68 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 export function EventInquiryForm() {
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/event-inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+      } else {
+        const result = await response.json();
+        setErrorMessage(result.error || "Something went wrong. Please try again.");
+        setStatus("error");
+      }
+    } catch {
+      setErrorMessage("Failed to connect. Please call us at (214) 619-1200.");
+      setStatus("error");
+    }
+  };
+
+  if (status === "success") {
+    return (
+      <div className="bg-white/10 backdrop-blur-md rounded-2xl p-12 text-center">
+        <div className="w-16 h-16 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="text-2xl font-heading font-bold text-white mb-4">Inquiry Received!</h3>
+        <p className="text-warm-ivory/80 max-w-md mx-auto">
+          Thank you for your event inquiry! Our team will contact you shortly to plan your event.
+        </p>
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center text-sm">
+          <a href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+            📞 Frisco: (214) 619-1200
+          </a>
+          <span className="hidden sm:inline text-white/30">|</span>
+          <a href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+            📞 Lewisville: (214) 488-2224
+          </a>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <form 
       className="space-y-6"
-      onSubmit={(e) => {
-        e.preventDefault();
-        alert('Thank you for your event inquiry! Our team will contact you shortly to plan your event.');
-        (e.target as HTMLFormElement).reset();
-      }}
+      onSubmit={handleSubmit}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
@@ -103,71 +155,181 @@ export function EventInquiryForm() {
         />
       </div>
 
+      {status === "error" && (
+        <div className="p-4 bg-red-500/20 text-red-300 rounded-lg text-sm border border-red-500/30" role="alert">
+          {errorMessage}
+        </div>
+      )}
+
       <button
         type="submit"
-        className="w-full py-4 bg-accent-red hover:bg-[#b91c1c] text-white rounded-lg font-bold text-lg transition-colors shadow-lg shadow-accent-red/20"
+        disabled={status === "loading"}
+        className="w-full py-4 bg-accent-red hover:bg-[#b91c1c] disabled:bg-accent-red/50 text-white rounded-lg font-bold text-lg transition-colors shadow-lg shadow-accent-red/20 inline-flex items-center justify-center gap-2"
       >
-        Submit Event Inquiry
+        {status === "loading" ? (
+          <>
+            <svg className="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+            </svg>
+            Submitting...
+          </>
+        ) : (
+          "Submit Event Inquiry"
+        )}
       </button>
     </form>
   );
 }
 
 export function NewsletterForm({ location = '' }: { location?: string }) {
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email");
+
+    try {
+      const response = await fetch("/api/newsletter-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          source: location ? `newsletter-${location}` : "newsletter",
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+      } else {
+        const result = await response.json();
+        setErrorMessage(result.error || "Something went wrong.");
+        setStatus("error");
+      }
+    } catch {
+      setErrorMessage("Failed to connect. Please try again later.");
+      setStatus("error");
+    }
+  };
+
+  if (status === "success") {
+    return (
+      <div className="text-center py-4 max-w-xl mx-auto">
+        <div className="w-12 h-12 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <p className="text-white font-semibold text-lg">You&apos;re subscribed!</p>
+        <p className="text-warm-ivory/70 text-sm mt-1">Watch your inbox for our latest updates.</p>
+      </div>
+    );
+  }
+
   return (
     <form 
       className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto"
-      onSubmit={(e) => {
-        e.preventDefault();
-        alert('Thank you for subscribing to our newsletter! You\'ll receive our latest updates soon.');
-        (e.target as HTMLFormElement).reset();
-      }}
+      onSubmit={handleSubmit}
     >
       <div className="flex-grow">
         <label htmlFor={`newsletter-email${location ? '-' + location : ''}`} className="sr-only">Email address</label>
         <input
           id={`newsletter-email${location ? '-' + location : ''}`}
           type="email"
+          name="email"
           placeholder="Enter your email address"
           aria-label="Email address for newsletter"
           className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
           required
         />
       </div>
+      {status === "error" && (
+        <p className="text-red-400 text-sm self-center">{errorMessage}</p>
+      )}
       <button
         type="submit"
-        className="px-8 py-4 bg-soft-gold hover:bg-white text-charcoal rounded-full font-bold transition-colors whitespace-nowrap"
+        disabled={status === "loading"}
+        className="px-8 py-4 bg-soft-gold hover:bg-white disabled:bg-soft-gold/50 text-charcoal rounded-full font-bold transition-colors whitespace-nowrap"
       >
-        Subscribe Now
+        {status === "loading" ? "..." : "Subscribe Now"}
       </button>
     </form>
   );
 }
 
 export function SeasonalSpecialsForm({ idBase = 'seasonal' }: { idBase?: string }) {
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email");
+
+    try {
+      const response = await fetch("/api/newsletter-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          source: "seasonal-specials",
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+      } else {
+        const result = await response.json();
+        setErrorMessage(result.error || "Something went wrong.");
+        setStatus("error");
+      }
+    } catch {
+      setErrorMessage("Failed to connect. Please try again later.");
+      setStatus("error");
+    }
+  };
+
+  if (status === "success") {
+    return (
+      <div className="text-center py-3 max-w-md mx-auto">
+        <p className="text-white font-semibold">✅ You&apos;re on the list!</p>
+        <p className="text-warm-ivory/70 text-sm mt-1">We&apos;ll notify you when new seasonal specials arrive.</p>
+      </div>
+    );
+  }
+
   return (
     <form 
       className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
-      onSubmit={(e) => {
-        e.preventDefault();
-        alert('Thank you! We will notify you when new seasonal specials arrive.');
-        (e.target as HTMLFormElement).reset();
-      }}
+      onSubmit={handleSubmit}
     >
       <label htmlFor={`${idBase}-email`} className="sr-only">Email for Seasonal Updates</label>
       <input
         id={`${idBase}-email`}
         type="email"
+        name="email"
         placeholder="Enter your email"
         aria-label="Email address for seasonal specials updates"
         className="flex-grow px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-soft-gold focus:ring-1 focus:ring-soft-gold/50 transition-colors"
         required
       />
+      {status === "error" && (
+        <p className="text-red-400 text-sm self-center">{errorMessage}</p>
+      )}
       <button
         type="submit"
-        className="px-6 py-3 bg-soft-gold hover:bg-white text-charcoal rounded-lg font-bold transition-colors whitespace-nowrap"
+        disabled={status === "loading"}
+        className="px-6 py-3 bg-soft-gold hover:bg-white disabled:bg-soft-gold/50 text-charcoal rounded-lg font-bold transition-colors whitespace-nowrap"
       >
-        Notify Me
+        {status === "loading" ? "..." : "Notify Me"}
       </button>
     </form>
   );
