@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
         width: 1200,
         height: 630,
-        alt: "Jinbeh Japanese Restaurant — Bar",
+        alt: "Jinbeh Japanese Restaurant Bar",
       },
     ],
   },
@@ -104,7 +104,7 @@ const faqSchema = {
       "name": "Is there a bar happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh offers Happy Hour specials on select drinks and appetizers. Visit our Happy Hour page or contact your local location for current times and specials.",
+        "text": "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both our Frisco and Lewisville locations.",
       },
     },
   ],
@@ -409,7 +409,7 @@ export default function BarPage() {
                 Whisky Flights
               </h3>
               <p className="text-warm-ivory/80 mb-6 text-lg">
-                Visit the Jinbeh bar for cocktails Frisco style — compare and contrast Japanese whisky expressions including Hibiki whisky with our guided tasting flights
+                Visit the Jinbeh bar for cocktails Frisco style. Compare and contrast Japanese whisky expressions including Hibiki whisky with our guided tasting flights
               </p>
               <div className="space-y-3 inline-block">
                 <p className="text-warm-ivory flex items-center gap-2">
@@ -684,10 +684,27 @@ export default function BarPage() {
                 Special Offers
               </p>
               <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                Don't Miss Happy Hour
+                Jinbeh Happy Hour Specials
               </h2>
-              <p className="text-xl text-warm-ivory/90 mb-10 leading-relaxed">
-                Unwind at our bar with special prices on premium sake, Japanese whisky, signature cocktails, and appetizers. Monday through Friday during Happy Hour. Explore our <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing guide</Link> to find the perfect drink for your meal.
+              <p className="text-xl text-warm-ivory/90 mb-6 leading-relaxed">
+                Every Monday through Friday, 5:00 to 6:30 PM. Premium drinks at unbeatable prices.
+              </p>
+              <div className="inline-flex flex-wrap justify-center gap-6 mb-10">
+                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4 text-center">
+                  <p className="text-3xl font-bold text-soft-gold">$4</p>
+                  <p className="text-sm text-warm-ivory/80">Draft Beer</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur border border-soft-gold/40 rounded-xl px-6 py-4 text-center">
+                  <p className="text-3xl font-bold text-soft-gold">$5</p>
+                  <p className="text-sm text-warm-ivory/80">Sake</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4 text-center">
+                  <p className="text-3xl font-bold text-soft-gold">$6</p>
+                  <p className="text-sm text-warm-ivory/80">Wine</p>
+                </div>
+              </div>
+              <p className="text-warm-ivory/70 mb-10">
+                Explore our <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing guide</Link> to find the perfect drink for your meal.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

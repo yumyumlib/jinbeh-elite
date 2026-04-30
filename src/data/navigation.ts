@@ -74,7 +74,7 @@ export function getNavItems(loc: string): NavItem[] {
             label: "Dining",
             href: "#",
             dropdown: [
-                { label: "Happy Hour", href: "/happy-hour", description: "Daily specials at the bar" },
+                { label: "Happy Hour", href: "/happy-hour", description: "Mon-Fri 5-6:30pm specials" },
                 { label: "Catering", href: "/catering", description: "Bring Jinbeh to your event" },
                 { label: "Private Dining", href: "/private-dining", description: "Groups & exclusive events" },
                 { label: "Order Online", href: "/order-online", description: "Delivery & takeout" },

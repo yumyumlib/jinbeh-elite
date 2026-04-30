@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Happy Hour Frisco TX: Top Spots to Visit | Jinbeh",
     description:
-        "Find the best happy hour in Frisco TX! Sushi specials, sake deals, and appetizers at Jinbeh. Discover top spots near Stonebriar for after-work drinks.",
+        "Find the best happy hour in Frisco TX! $4 draft beer, $5 sake, $6 wine at Jinbeh. Discover top spots near Stonebriar for after-work drinks.",
     keywords: [
         "happy hour frisco tx",
         "sushi happy hour frisco",
@@ -33,7 +33,7 @@ const articleSchema = {
     description: "Guide to the best happy hour deals and spots in Frisco, Texas.",
     image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
     datePublished: "2026-01-19",
-    dateModified: "2026-03-11",
+    dateModified: "2026-04-30",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
 };
 
@@ -46,7 +46,7 @@ const faqSchema = {
             name: "What time is happy hour at Jinbeh?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Jinbeh's happy hour runs Monday through Friday from 4:30 PM to 6:30 PM at both our Frisco and Lewisville locations. We offer discounted sushi rolls, sake, beer, and appetizers during these hours.",
+                text: "Jinbeh's happy hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine during these hours.",
             },
         },
         {
@@ -54,7 +54,7 @@ const faqSchema = {
             name: "Does Jinbeh have sushi happy hour specials?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes! Our happy hour includes discounted sushi rolls, $1 edamame, half-price sake bombs, and special pricing on select appetizers and drinks. It's the perfect way to enjoy our fresh sushi at great prices.",
+                text: "Yes! Our happy hour features $4 Japanese draft beer, $5 sake, and $6 wine. It is the perfect way to enjoy great drinks at great prices.",
             },
         },
         {
@@ -62,7 +62,7 @@ const faqSchema = {
             name: "Do I need a reservation for happy hour?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Reservations aren't required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins are welcome and bar seating is first-come, first-served.",
+                text: "Reservations are not required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins are welcome and bar seating is first-come, first-served.",
             },
         },
         {
@@ -166,15 +166,15 @@ export default function BestHappyHourFrisco() {
 
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "Happy hour at Jinbeh isn't just about the deals—it's about unwinding with
+                                            "Happy hour at Jinbeh isn't just about the deals. It's about unwinding with
                                             great food and drinks in a welcoming atmosphere. Our regulars know: the
                                             sushi is fresh, the sake is cold, and the vibes are perfect."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">The Jinbeh Team</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="The concept of 'happy hour' originated in the United States Navy in the 1920s, when sailors would enjoy entertainment and refreshments aboard ship. Today, Frisco has over 50 restaurants offering happy hour specials — but Jinbeh is one of the few where you can pair discounted sushi rolls with half-price sake bombs."
+                                        fact="The concept of 'happy hour' originated in the United States Navy in the 1920s, when sailors would enjoy entertainment and refreshments aboard ship. Today, Frisco has over 50 restaurants offering happy hour specials, but Jinbeh is one of the few where you can enjoy $4 draft beer and $5 sake alongside fresh sushi."
                                         source="Smithsonian Magazine & Frisco Dining Guide"
                                     />
 
@@ -189,26 +189,22 @@ export default function BestHappyHourFrisco() {
                                         <span className="text-5xl">🍻</span>
                                         <div>
                                             <h3 className="text-2xl font-heading font-bold">Jinbeh Happy Hour</h3>
-                                            <p className="text-white/80">Monday – Friday | 4:30 PM – 6:30 PM</p>
+                                            <p className="text-white/80">Monday through Friday | 5:00 PM to 6:30 PM</p>
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                                    <div className="grid grid-cols-3 gap-4 mb-6">
                                         <div className="bg-white/10 rounded-xl p-4 text-center">
-                                            <span className="text-3xl block mb-2">🍣</span>
-                                            <span className="text-sm">Discounted Sushi Rolls</span>
+                                            <span className="text-3xl block mb-2">🍺</span>
+                                            <span className="text-sm">$4 Draft Beer</span>
                                         </div>
                                         <div className="bg-white/10 rounded-xl p-4 text-center">
                                             <span className="text-3xl block mb-2">🍶</span>
-                                            <span className="text-sm">Sake Specials</span>
+                                            <span className="text-sm">$5 Sake</span>
                                         </div>
                                         <div className="bg-white/10 rounded-xl p-4 text-center">
-                                            <span className="text-3xl block mb-2">🍺</span>
-                                            <span className="text-sm">Beer Deals</span>
-                                        </div>
-                                        <div className="bg-white/10 rounded-xl p-4 text-center">
-                                            <span className="text-3xl block mb-2">🥢</span>
-                                            <span className="text-sm">$1 Edamame</span>
+                                            <span className="text-3xl block mb-2">🍷</span>
+                                            <span className="text-sm">$6 Wine</span>
                                         </div>
                                     </div>
 
@@ -236,8 +232,8 @@ export default function BestHappyHourFrisco() {
                                         <tbody className="text-charcoal/80">
                                             <tr className="border-b border-warm-ivory bg-soft-gold/10">
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
-                                                <td className="p-4">Mon-Fri 4:30-6:30pm</td>
-                                                <td className="p-4">Sushi rolls, sake, edamame</td>
+                                                <td className="p-4">Mon-Fri 5-6:30pm</td>
+                                                <td className="p-4">$4 beer, $5 sake, $6 wine</td>
                                                 <td className="p-4">Casual, family-friendly</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
@@ -268,21 +264,21 @@ export default function BestHappyHourFrisco() {
                                     </h2>
 
                                     <p>
-                                        Let's be honest—most <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour deals</Link> are about cheap drinks. But at Jinbeh,
+                                        Let's be real: most <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour deals</Link> are about cheap drinks. But at Jinbeh,
                                         we combine quality with value. You're not just getting discounts; you're
                                         getting the same fresh <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> and premium <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> options we serve at dinner, just
                                         at friendlier prices.
                                     </p>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Fresh sushi rolls</strong> — Not pre-made, not sitting out. Made to order.</li>
-                                        <li><strong>Real sake selection</strong> — Not just one house option. Multiple premium choices.</li>
-                                        <li><strong>Actual savings</strong> — Up to 30% off select items during happy hour.</li>
-                                        <li><strong>Great atmosphere</strong> — Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
+                                        <li><strong>$4 Japanese draft beer</strong> on tap: Sapporo, Asahi, Kirin, and more.</li>
+                                        <li><strong>$5 sake</strong> hot or cold, from our curated selection.</li>
+                                        <li><strong>$6 wine</strong> by the glass from a curated list.</li>
+                                        <li><strong>Great atmosphere</strong> - Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
                                     </ul>
 
                                     <ProTip variant="insider">
-                                        <strong>Happy hour regulars' secret:</strong> Come early on Fridays — the $1 edamame and half-price sake bombs go fast! Reviewers say the bar area has the best vibe for after-work unwinding. Pair a discounted sushi roll with a cold Sapporo and you've got the best happy hour deal in Frisco. <Link href="/bar" className="text-accent-red hover:underline">See our bar menu →</Link>
+                                        <strong>Happy hour regulars' tip:</strong> Come early on Fridays for the best bar seats! $4 draft beer and $5 sake are always popular. Pair a sushi roll with a cold Sapporo for the best happy hour deal in Frisco. <Link href="/bar" className="text-accent-red hover:underline">See our bar menu →</Link>
                                     </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -290,7 +286,7 @@ export default function BestHappyHourFrisco() {
                                     </h2>
 
                                     <p>
-                                        <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Jinbeh Frisco location</Link> is just minutes from Stonebriar Centre on Preston Road—perfect
+                                        <Link href="/frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">Jinbeh Frisco location</Link> is just minutes from Stonebriar Centre on Preston Road, perfect
                                         for a post-shopping drink or meeting friends after work. Easy parking and
                                         a welcoming bar area make it a no-stress stop. Visit us to <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> for happy hour.
                                     </p>
@@ -308,9 +304,9 @@ export default function BestHappyHourFrisco() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Jinbeh's happy hour runs <strong>Monday through Friday from 4:30 PM to 6:30 PM</strong> at
-                                                    both our Frisco and Lewisville locations. We offer discounted sushi rolls, sake, beer,
-                                                    and appetizers during these hours.
+                                                    Jinbeh's happy hour runs <strong>Monday through Friday from 5:00 PM to 6:30 PM</strong> at
+                                                    both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake,
+                                                    $6 wine during these hours.
                                                 </p>
                                             </div>
                                         </details>
@@ -322,8 +318,7 @@ export default function BestHappyHourFrisco() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Yes! Our happy hour includes discounted sushi rolls, <strong>$1 edamame</strong>, half-price
-                                                    sake bombs, and special pricing on select appetizers and drinks. Check our
+                                                    Yes! Our happy hour features <strong>$4 Japanese draft beer, $5 sake, and $6 wine</strong>. Check our
                                                     <Link href="/happy-hour" className="text-accent-red hover:underline"> happy hour page</Link> for the current menu.
                                                 </p>
                                             </div>
@@ -336,7 +331,7 @@ export default function BestHappyHourFrisco() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Reservations aren't required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins welcome! Bar seating is first-come, first-served. Welcome to the table!
+                                                    Reservations are not required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins welcome! Bar seating is first-come, first-served. Welcome to the table!
                                                 </p>
                                             </div>
                                         </details>

@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Happy Hour | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
   description:
-    "Join us for Happy Hour at Jinbeh! Enjoy special prices on sake, Japanese beer, cocktails, and appetizers at our Frisco and Lewisville locations. The.",
+    "Jinbeh Happy Hour: Mon-Fri 5-6:30pm. $4 Japanese draft beer, $5 sake, $6 wine. Premium drinks at unbeatable prices at our Frisco and Lewisville locations.",
   keywords: [
     "happy hour frisco",
     "happy hour lewisville",
@@ -19,17 +19,26 @@ export const metadata: Metadata = {
     "japanese restaurant happy hour",
     "best happy hour dfw",
     "happy hour specials frisco tx",
-    "sushi happy hour near me", "happy hour near me open now", ],
+    "sushi happy hour near me",
+    "happy hour near me open now",
+    "$4 beer happy hour frisco",
+    "$5 sake happy hour",
+    "happy hour 5pm frisco tx",
+    "cheap sake near me",
+    "japanese beer specials frisco",
+    "wine happy hour lewisville tx",
+    "best happy hour deals dfw",
+  ],
   openGraph: {
     title: "Happy Hour | Jinbeh Japanese Restaurant",
-    description: "Great drinks. Great company. Great prices. Join us for Happy Hour specials.",
+    description: "Jinbeh Happy Hour: $4 Japanese draft beer, $5 sake, $6 wine. Mon-Fri 5-6:30pm.",
     url: "https://jinbeh.com/happy-hour",
     images: [
       {
         url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
         width: 1200,
         height: 630,
-        alt: "Jinbeh Japanese Restaurant — Happy Hour",
+        alt: "Jinbeh Japanese Restaurant Happy Hour",
       },
     ],
   },
@@ -48,7 +57,7 @@ const faqSchema = {
       "name": "What time is Happy Hour at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Happy Hour at Jinbeh is typically Monday through Friday, with special prices on drinks and select appetizers. Check with your local location for specific times.",
+        "text": "Happy Hour at Jinbeh runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine.",
       },
     },
     {
@@ -64,7 +73,7 @@ const faqSchema = {
       "name": "What drinks are on special during Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Happy Hour specials include discounted sake by the glass, domestic and Japanese beers, well drinks, and select appetizers. Specials vary, so ask your server for current offerings.",
+        "text": "During Happy Hour (Mon-Fri 5:00 to 6:30 PM), enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both Jinbeh locations.",
       },
     },
     {
@@ -72,7 +81,15 @@ const faqSchema = {
       "name": "Can I sit at the bar without a reservation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Bar seating is available on a first-come, first-served basis. It's a great spot for Happy Hour drinks and watching our sushi chefs at work.",
+        "text": "Yes! Bar seating is available on a first-come, first-served basis. It is a great spot for Happy Hour drinks and watching our sushi chefs at work.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "How much is beer during Jinbeh Happy Hour?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Japanese draft beer is just $4 during Jinbeh Happy Hour, Monday through Friday from 5:00 PM to 6:30 PM. We also offer $5 sake and $6 wine.",
       },
     },
   ],
@@ -96,12 +113,6 @@ const drinkCategories = [
     icon: "🍸",
     description: "Japanese-inspired creations",
     items: ["Tokyo Mule", "Lychee Martini", "Shochu Highball", "Japanese Old Fashioned"],
-  },
-  {
-    name: "Appetizers",
-    icon: "🥟",
-    description: "Perfect pairings for drinks",
-    items: ["Edamame", "Gyoza", "Tempura", "Sashimi Appetizer"],
   },
 ];
 
@@ -127,12 +138,17 @@ const breadcrumbSchema = {
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "FoodEvent",
-  "name": "Jinbeh Happy Hour — Discounted Sake, Beer & Appetizers",
-  "description": "Enjoy discounted premium sake, Japanese beer, signature cocktails, and select appetizers during Happy Hour at Jinbeh Japanese Restaurant. Available Monday through Friday at both Frisco and Lewisville locations.",
+  "name": "Jinbeh Happy Hour: $4 Draft Beer, $5 Sake, $6 Wine",
+  "description": "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both Frisco and Lewisville locations.",
   "url": "https://jinbeh.com/happy-hour",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "isAccessibleForFree": true,
+  "offers": [
+    { "@type": "Offer", "name": "Japanese Draft Beer", "price": "4.00", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Sake", "price": "5.00", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Wine", "price": "6.00", "priceCurrency": "USD" }
+  ],
   "location": [
     {
       "@type": "Restaurant",
@@ -196,20 +212,65 @@ export default function HappyHourPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
           <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              Unwind After Work
+              Monday through Friday | 5:00 to 6:30 PM
             </p>
             <RevealSection delay={100}>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                <AnimatedGradientText className="text-4xl md:text-5xl font-heading font-bold">The Best Part of Your Day Starts Here</AnimatedGradientText>
+                <AnimatedGradientText className="text-4xl md:text-5xl font-heading font-bold">Jinbeh Happy Hour</AnimatedGradientText>
               </h1>
             </RevealSection>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
-              Unwind with <Link href="/blog/japanese-cocktails" className="text-soft-gold hover:underline">Japanese-inspired cocktails</Link>, premium sake, and crisp Sapporo at the <Link href="/bar" className="text-soft-gold hover:underline">bar</Link>. Your after-work ritual, perfected.
+              Premium drinks at unbeatable prices. Enjoy <Link href="/blog/types-of-sake-explained" className="text-soft-gold hover:underline">sake</Link>, Japanese draft beer, and wine at the <Link href="/bar" className="text-soft-gold hover:underline">bar</Link> every weekday evening.
             </p>
-            <div className="inline-block bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-8 py-4">
-              <p className="text-lg font-medium">
-                Monday – Friday • Check with location for times
-              </p>
+            <div className="inline-flex flex-wrap justify-center gap-4 md:gap-6">
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center">
+                <p className="text-3xl font-bold text-soft-gold">$4</p>
+                <p className="text-sm text-warm-ivory/90">Draft Beer</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center">
+                <p className="text-3xl font-bold text-soft-gold">$5</p>
+                <p className="text-sm text-warm-ivory/90">Sake</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center">
+                <p className="text-3xl font-bold text-soft-gold">$6</p>
+                <p className="text-sm text-warm-ivory/90">Wine</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Happy Hour Pricing Spotlight */}
+        <section className="py-16 bg-gradient-to-br from-deep-indigo to-charcoal text-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Happy Hour Specials
+                </h2>
+                <p className="text-lg text-warm-ivory/80">
+                  Every Monday through Friday, 5:00 to 6:30 PM at both Frisco and Lewisville
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 transition-all">
+                  <div className="text-5xl mb-4">🍺</div>
+                  <p className="text-4xl font-bold text-soft-gold mb-2">$4</p>
+                  <h3 className="font-heading text-xl font-semibold mb-2">Japanese Draft Beer</h3>
+                  <p className="text-warm-ivory/70 text-sm">Sapporo, Asahi, Kirin, and more on draft</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur border border-soft-gold/40 rounded-2xl p-8 text-center hover:bg-white/15 transition-all ring-1 ring-soft-gold/30">
+                  <div className="text-5xl mb-4">🍶</div>
+                  <p className="text-4xl font-bold text-soft-gold mb-2">$5</p>
+                  <h3 className="font-heading text-xl font-semibold mb-2">Sake</h3>
+                  <p className="text-warm-ivory/70 text-sm">Hot or cold, from our curated selection</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 transition-all">
+                  <div className="text-5xl mb-4">🍷</div>
+                  <p className="text-4xl font-bold text-soft-gold mb-2">$6</p>
+                  <h3 className="font-heading text-xl font-semibold mb-2">Wine</h3>
+                  <p className="text-warm-ivory/70 text-sm">Curated wines by the glass</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -219,10 +280,10 @@ export default function HappyHourPage() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
-                Happy Hour Favorites
+                What's on Special
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Our Japanese restaurant happy hour features everything from <Link href="/blog/types-of-sake-explained" className="text-accent-red hover:underline font-medium">premium sake</Link> to signature cocktails — the perfect sushi happy hour near me. New to sake? Read our <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-medium">sake pairing guide</Link> to find your perfect match.
+                Our Japanese restaurant happy hour features everything from <Link href="/blog/types-of-sake-explained" className="text-accent-red hover:underline font-medium">premium sake</Link> to signature cocktails, making it the perfect sushi happy hour near me. New to sake? Read our <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline font-medium">sake pairing guide</Link> to find your perfect match.
               </p>
             </div>
 
@@ -284,7 +345,7 @@ export default function HappyHourPage() {
                     Frisco Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Right near Stonebriar Centre — perfect for after-work drinks or pre-dinner cocktails with friends.
+                    Right near Stonebriar Centre, perfect for after-work drinks or pre-dinner cocktails with friends.
                   </p>
                   <div className="bg-white rounded-xl p-4 mb-6">
                     <p className="font-medium text-cedar-brown">Address</p>
@@ -317,7 +378,7 @@ export default function HappyHourPage() {
                     Lewisville Location
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Easy access from I-35E — stop by on your way home for a relaxing start to your evening.
+                    Easy access from I-35E. Stop by on your way home for a relaxing start to your evening.
                   </p>
                   <div className="bg-white rounded-xl p-4 mb-6">
                     <p className="font-medium text-cedar-brown">Address</p>
@@ -354,7 +415,7 @@ export default function HappyHourPage() {
                 </p>
                 <blockquote className="border-l-4 border-soft-gold pl-4 my-6 italic text-warm-ivory/70">
                   &ldquo;Great food, great service, and great Japanese ambience.&rdquo;
-                  <span className="block text-sm mt-2 text-soft-gold not-italic">— Google Review ★★★★★</span>
+                  <span className="block text-sm mt-2 text-soft-gold not-italic">Google Review ★★★★★</span>
                 </blockquote>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3">
@@ -412,10 +473,10 @@ export default function HappyHourPage() {
         <section className="py-20 bg-gradient-to-br from-deep-indigo to-accent-red text-white">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              See You at the Bar!
+              Join Us for Happy Hour
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
-              No reservation needed – just stop by and grab a seat.
+              No reservation needed for bar seating. Just stop by and grab a seat.
               Cheers to great drinks and good company! Check out our current <Link href="/specials" className="text-soft-gold hover:underline">specials</Link> and browse the full <Link href="/menu" className="text-soft-gold hover:underline">menu</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

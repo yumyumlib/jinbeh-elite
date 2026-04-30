@@ -23,6 +23,14 @@ To request edits, annotate the text block you want changed and I will apply it b
 
 ---
 
+<!-- EDIT
+page: /example
+field: body
+find: "Bring Jinbeh to You"
+replace: "Bring Jinbeh to Your Table"
+note: making the H2 hook more active...don't do anything with this one it is just an example template for the content changes.
+-->
+
 ## Table of Contents
 
 - [/](#home) — Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988 | Frisco & Lewisville
@@ -351,6 +359,13 @@ Your hibachi chef doesn't just cook, they perform. The onion volcano erupts, shr
 Your hibachi chef doesn't just cook, they perform. The onion volcano erupts, shrimp fly through the air, and your whole table erupts in laughter. It's the dinner experience families talk about for weeks.
 
 “ Real crab. Fresh fish. Sauces made from scratch, daily. ”
+<!-- EDIT
+page: /
+field: body
+find: "Real Crab."
+replace: ""
+note: If it already says fresh fish then don't say anything else.  
+-->
 
 Our Yum Yum sauce, every dipping sauce, and the garlic butter are all made in-house daily. The sushi is fresh and made daily with quality, delicious ingredients. After 38 years, we know: you taste the difference when every detail is done right.
 
@@ -478,8 +493,14 @@ Google Review
 Jailen R
 
 Google Review
-
-> “Benihana has always been the standard, but this beats it. The sashimi was fresh and flavorful; fried rice was awesome and everything else completely on point. You cannot go wrong here.”
+<!-- EDIT
+page: /
+field: body
+find: "Benihana, has always been the standard, but this beats it."
+replace: "Benihana, has alwasy been the standard, but Jinbeh beats it."
+note: clarifies what "this" refers to.
+-->
+> “Benihana has always been the standard, but Jinbeh beats it. The sashimi was fresh and flavorful; fried rice was awesome and everything else completely on point. You cannot go wrong here.”
 Mark L.
 
 Yelp Review
@@ -797,6 +818,13 @@ Get Directions →
 
 Since 1988, Jinbeh has been more than a restaurant—it's where families gather, celebrations ignite, and every meal comes with a show worth remembering.
 
+<!-- EDIT
+page: /about
+field: body
+find: "A Japanese man who, remarkably, never cooked a day in his life, "
+replace: ""
+note: delete that portion of the comment and instead focus on what currently says where he opened it out of a desire to bring authentic Japanese dining to North Texas.
+-->
 When Ben Matsuda opened Jinbeh in 1988, he didn't just open a restaurant—he brought a vision home. A Japanese man who, remarkably, never cooked a day in his life, Ben opened Jinbeh not out of culinary ambition but out of an entrepreneurial instinct and a desire to bring authentic Japanese dining to North Texas. His philosophy was three words: humble, hardworking, and honest . Those three words became the spiritual foundation of Jinbeh and were passed down to his son, who now runs both locations.
 
 What started in a small Las Colinas space—featured by D Magazine as early as 1990—has blossomed into a multi-generational tradition that families keep coming back to after 20, 25, even 30+ years. The original Las Colinas location was a true Japanese kitchen with a menu as thick as a book. Over time, Jinbeh learned a critical lesson: the menu needed to cater to the American palate while preserving Japanese soul. The result is what the owner calls “American Authentic”—food that feels genuinely Japanese enough that you feel transported, but accessible enough to be comfortable.
@@ -809,6 +837,13 @@ The Meaning Behind Our Name
 
 The name Jinbeh was once a common surname among Japanese farmers and peasants during the feudal medieval ages of Japan. These hardworking people cultivated the rice paddies that fed entire villages, embodying values of humility, honesty, and dedication.
 
+<!-- EDIT
+page: /about
+field: body
+find: "When Ben Matsuda opened our first restaurant in Las Colinas in 1988, he chose this name"
+replace: "When Ben Matsuda opened our first restaurant in Las Colinas in 1988, he chose the name Jinbeh"
+note: The name Jinbeh is based off the japanese jinbei.
+-->
 When Ben Matsuda opened our first restaurant in Las Colinas in 1988, he chose this name deliberately. Coming from humble beginnings himself, the name serves as a daily reminder of where he came from and the values that built this family business.
 
 "He came from a poor family, and he created all of this and was successful; the name for him is a daily reminder of where he came from." — Aya Matsuda
@@ -820,10 +855,31 @@ Today, those same values guide everything we do: serving every guest with genuin
 
 At Jinbeh, tenure isn't measured in months—it's measured in decades.
 
+<!-- EDIT
+page: /about
+field: body
+find: "Nearly 30 years behind Jinbeh's sushi bar. The owner calls him “my second dad.” Together, they co-created the entire sushi menu through sleepless nights of collaboration."
+replace: "One of our sushi chefs, Fuji San, has spent nearly 30 years at Jinbeh.  Fuji and the owners co-created the entire sushi menu through sleepless nights of collaboration."
+note: 
+-->
 Nearly 30 years behind Jinbeh's sushi bar. The owner calls him “my second dad.” Together, they co-created the entire sushi menu through sleepless nights of collaboration. From the south side of Japan—a region famous for noodles—he once created a ramen section so popular it became legendary among regulars.
 
+<!-- EDIT
+page: /about
+field: body
+find: "Respected across both locations, not because of authority but because of love and respect. She handles training, payroll, and scheduling—the things the owner admits she does better than he ever could. When she's on the floor, the entire team follows her lead."
+replace: ""
+note: 
+-->
 Respected across both locations, not because of authority but because of love and respect. She handles training, payroll, and scheduling—the things the owner admits she does better than he ever could. When she's on the floor, the entire team follows her lead.
 
+<!-- EDIT
+page: /about
+field: body
+find: "Jinbeh's longest-tenured employee has been here since the very first day. He started as a dishwasher, became a busser, and today is the mastermind behind food strategy and logistics for every festival and major event. That's 38 years of unbroken dedication."
+replace: "Jinbeh's hibachi chefs are talented and dedicated to excellence.  We have the desire to constantly provide high quality shows and serve high quality food."
+note: 
+-->
 Jinbeh's longest-tenured employee has been here since the very first day. He started as a dishwasher, became a busser, and today is the mastermind behind food strategy and logistics for every festival and major event. That's 38 years of unbroken dedication.
 
 We're not a chain. We're your gracious hosts. Here's what makes every visit special.
@@ -836,6 +892,13 @@ Skilled chefs bring artistry and entertainment to every table. The onion volcano
 
 “Chef cooks right in front of you using special effects with fire — always fun!” — TripAdvisor Review
 
+<!-- EDIT
+page: /about
+field: body
+find: "Every child gets a hand-folded"
+replace: "Sometimes kids get a hand-folded"
+note: it's rare, but we aim to excite and delight customers and that's one example
+-->
 Family-owned and operated. Every child gets a hand-folded origami crane from a basket by the door, plus training chopsticks and a lollipop. Our philosophy: invest in the kids, and they grow up saying “I want to go to Jinbeh.” That's why we hear from guests who started coming as toddlers and now bring their own friends.
 
 “Service is great — cozy and family-like.” — Google Review
@@ -852,6 +915,13 @@ Jinbeh isn't built on recipes alone — it's built on relationships that span de
 
 Our head sushi chef has been with Jinbeh for nearly 30 years. Originally from the southern coast of Japan, a region renowned for its seafood and noodle traditions, he co-created every signature roll on our menu alongside the Matsuda family during late-night sessions of testing and perfecting.
 
+<!-- EDIT
+page: /about
+field: body
+find: "“He's my second dad. The entire sushi menu was a collaboration — sleepless nights working together to craft and refine every roll.”"
+replace: ""
+note: 
+-->
 At the original Las Colinas location, he created a beloved ramen section that became a local favorite. His craft represents the soul of our sushi program — precise, authentic, and always evolving.
 
 “He's my second dad. The entire sushi menu was a collaboration — sleepless nights working together to craft and refine every roll.”
@@ -862,6 +932,13 @@ For over a decade, Dallas Cowboys players were regulars at Jinbeh. Our original 
 
 The Cowboys players even attended Jinbeh's last day at Las Colinas as a farewell tribute. It's the kind of loyalty that only comes from truly great food and genuine hospitality.
 
+<!-- EDIT
+page: /about
+field: body
+find: "Every child who visits Jinbeh receives a hand-folded"
+replace: "Sometimes kids who visit Jinbeh get a hand-folded"
+note: it's rare, but we aim to excite and delight customers and that's one example
+-->
 Every child who visits Jinbeh receives a hand-folded origami crane from a basket at the host stand. Training chopsticks and lollipops are always available for little ones. Our philosophy is simple: invest in making kids feel special, and they grow up saying “I want to go to Jinbeh.”
 
 We hear it all the time — guests who started coming as toddlers now bring their own friends and families. That's the cycle of trust that 38 years of genuine family hospitality creates.
@@ -874,8 +951,22 @@ Multiple award winner including “Best Place to Eat” in the Best of Big D fra
 
 Featured in D Magazine since 1990 — over three decades of editorial recognition.
 
+<!-- EDIT
+page: /about
+field: body
+find: "Currently recognized across 12+ Diners' Choice and “Best Of” lists for 2026"
+replace: "Over the restaurant's lifetime, we have received across 12+ Diners' Choice and “Best Of” lists and they still happen today."
+note: 
+-->
 Currently recognized across 12+ Diners' Choice and “Best Of” lists for 2026. Ranked #1 Hibachi in Lewisville , #1 Tempura in Lewisville , and #2 Hibachi in Frisco . Also selected for Best Japanese, Best Food, Best Value, Healthy, and Kid-Friendly.
 
+<!-- EDIT
+page: /about
+field: body
+find: "Earned through verified diner reviews, updated monthly."
+replace: "Earned through verified diner reviews."
+note: 
+-->
 Earned through verified diner reviews, updated monthly.
 
 Eater Dallas — included in their curated DFW dining guide. TripAdvisor Travelers' Choice award recipient. Named to TripAdvisor's “Best Sushi” and “10 Best Japanese Restaurants” lists for both Frisco and Lewisville.
@@ -1003,6 +1094,13 @@ We welcome your feedback on the accessibility of our website and restaurants. If
 
 Phone: (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville) Email: Contact us through our website
 
+<!-- EDIT
+page: /accessibility
+field: body
+find: "We try to respond to accessibility feedback within 3-5 business days."
+replace: ""
+note: 
+-->
 We try to respond to accessibility feedback within 3-5 business days.
 
 If you need assistance with any aspect of our website or services, please do not hesitate to contact us. We are happy to help make your experience with Jinbeh as enjoyable as possible.
@@ -1010,7 +1108,6 @@ If you need assistance with any aspect of our website or services, please do not
 Our website may include content from third-party sources or links to external websites. While we strive to choose accessible third-party content, we cannot guarantee the accessibility of content we do not control.
 
 ---
-
 <a id="allergy-friendly-dining"></a>
 ## `/allergy-friendly-dining`
 
@@ -1907,6 +2004,7 @@ Join us at Jinbeh for hibachi entertainment, fresh sushi, and unforgettable mome
 <a id="blog-adult-birthday-party-ideas"></a>
 ## `/blog/adult-birthday-party-ideas`
 
+
 - **Title:** Unique Adult Birthday Party Ideas & Themes | Jinbeh Events | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Elevate your celebration with unforgettable adult birthday party ideas. Discover unique themes, activities, and Jinbeh hibachi experiences for a.
 - **Canonical:** https://jinbeh.com/blog/adult-birthday-party-ideas
@@ -2051,6 +2149,7 @@ Easy access from I-35E · 901 reviews
 <a id="blog-asian-cuisine-dallas"></a>
 ## `/blog/asian-cuisine-dallas`
 
+
 - **Title:** Top Asian Cuisine & Fusion Spots in Dallas TX | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the rich tapestry of Asian cuisine Frisco in Dallas. From traditional dishes to innovative fusion, explore delightful flavors and culinary creativity at Dallas.
 - **Canonical:** https://jinbeh.com/blog/asian-cuisine-dallas
@@ -2116,12 +2215,26 @@ Asian fusion has become increasingly popular in Dallas, blending traditional Asi
 
 Chefs are experimenting with everything from sushi tacos to Korean BBQ-inspired burgers, bringing together diverse flavors in unexpected ways. This adventurous spirit has captivated diners eager to explore endless possibilities that Asian fusion offers. The rise of Asian fusion in Dallas is a testament to the city's dynamic culinary landscape, where innovation is celebrated and tradition is honored.
 
+<!-- EDIT
+page: /blog/asian-cuisine-dallas
+field: body
+find: "Known for its inventive sushi and Japanese dishes, Uchi Dallas offers a modern take on traditional Japanese cuisine. Their menu features an array of sushi rolls, sashimi, and hot dishes celebrated for meticulous attention to detail. Each dish is not only delicious but visually stunning, with emphasis on fresh ingredients and innovative flavor combinations."
+replace: "Known for its inventive sushi and Japanese dishes, Jinbeh Japanese Steak Seafood and Sushi Restaurant offers a modern take on traditional Japanese cuisine. Their menu features an array of sushi rolls, sashimi, and hot dishes celebrated for meticulous attention to detail. Each dish is not only delicious but visually stunning, with emphasis on fresh ingredients and innovative flavor combinations."
+note: this is Jinbeh, not Uchi Dallas
+-->
 Known for its inventive sushi and Japanese dishes, Uchi Dallas offers a modern take on traditional Japanese cuisine. Their menu features an array of sushi rolls, sashimi, and hot dishes celebrated for meticulous attention to detail. Each dish is not only delicious but visually stunning, with emphasis on fresh ingredients and innovative flavor combinations.
 
 Located in the Arts District, Tei-An is a soba house specializing in handmade soba noodles. The restaurant's minimalist design complements its refined menu, including a variety of sushi and sashimi options. It's about the art of Japanese dining, where simplicity and elegance create a serene dining experience. The delicate flavors and expert craftsmanship make it a must-visit.
 
 Jinbeh combines the art of hibachi vs teppanyaki cooking with fresh sushi varieties offerings. The lively atmosphere and skilled chefs make dining here memorable. Guests watch as their meals are expertly prepared right in front of them, adding entertainment to the experience. The fusion of flavors combined with vibrant energy makes Jinbeh a standout spot for exploring Asian fusion.
 
+<!-- EDIT
+page: /blog/asian-cuisine-dallas
+field: body
+find: "While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. "
+replace: "While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Jinbeh Japanese Restaurant was one of the first and is still widely loved in as one of the best asian restaurants in North Dallas.  Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. "
+note: 
+-->
 While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. These establishments offer a taste of familiar, comforting flavors cherished for generations. Traditional Asian cuisine is revered for its emphasis on fresh ingredients, bold spices, and time-honored cooking techniques resulting in dishes rich in flavor and history.
 
 A family-owned restaurant serving authentic Chinese dishes for decades. Known for their hand-pulled noodles and dim sum, Royal China is a staple in the Dallas dining scene. The restaurant is dedicated to traditional Chinese cooking methods, ensuring each dish is a true representation of Chinese culinary heritage.
@@ -2148,6 +2261,13 @@ Insider Tip
 
 The Dallas-Fort Worth area is rich with culinary treasures. Whether searching for the best sushi, noodles, or curry, DFW has it all. The region's diverse culinary landscape testifies to the vibrant cultural tapestry defining DFW, offering dining options catering to every taste and preference.
 
+<!-- EDIT
+page: /blog/asian-cuisine-dallas
+field: body
+find: "Whether local or visiting, discovering the best Asian food in DFW promises a delicious and rewarding experience."
+replace: "Whether local or visiting, discovering the best Asian food in DFW promises a delicious and rewarding experience. Jinbeh is proud to play an important role in bringing high quality Asian food and culture to the area."
+note: The key is adding the new comment about Jinbeh.  We want to reference Jinbeh in these list articles, particularly when discussing relevant general topics like Asian dining in DFW.
+-->
 Exploring the Asian culinary scene in DFW is an adventure through different cultures and flavors. From bustling city centers to charming suburbs, the area's Asian restaurants offer a wealth of options celebrating the diversity and richness of Asian cuisine. Whether local or visiting, discovering the best Asian food in DFW promises a delicious and rewarding experience.
 
 Unlock exclusive birthday rewards, seasonal menu previews, and priority seating by joining our elite dining club.
@@ -2255,7 +2375,26 @@ Both AYCE and traditional sushi can be enjoyable, but they involve different tra
 - Ayce Sushi Vs Traditional
 If you have searched for sushi in the DFW area, you have likely noticed two ver y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional sushi bars. Both serve raw fish. Both can be delicious. But the way they operate, source ingredients, and deliver your meal are fundamentally different.
 
+<!-- EDIT
+page: /blog/ayce-sushi-vs-traditional
+field: body
+find: "Jinbeh's sushi master — nearly 30 years with the restaurant — co-created every roll on the menu during late-night sessions with the Matsuda family. High-end Japanese restaurants don't do picture menus (Jinbeh tried once — the feedback was “this is very Chinese restaurant”), and they don't do all-you-can-eat. "
+replace: "Jinbeh's sushi master, nearly 30 years with the restaurant, co-created every roll on the menu during late-night sessions with the Matsuda family.  High-end Japanese restaurants don't do all-you-can-eat in part because of lower quality food and lower quality service impacts."
+note: 
+-->
 Jinbeh's sushi master — nearly 30 years with the restaurant — co-created every roll on the menu during late-night sessions with the Matsuda family. High-end Japanese restaurants don't do picture menus (Jinbeh tried once — the feedback was “this is very Chinese restaurant”), and they don't do all-you-can-eat. What they do is craft each piece with precision, using the freshest daily-sourced fish.
+
+<!-- EDIT
+page: /blog/ayce-sushi-vs-traditional
+field: body
+find: "D Magazine named Jinbeh “Best Place to Eat” and “Best Neighborhood Restaurant,"
+replace: "D Magazine named Jinbeh “Best Place to Eat” and “Best Neighborhood Restaurant, 1"
+note: Add a superscripted footnote (the number 1) and at the bottom of the page, list the awards in a footnoted format.  Best Neighborhood Restaurants (2008): Featured in the February 2008 issue for the Las Colinas location.
+
+Best of Big D: Best of the Burbs (2010): Crowned "Best Place to Eat" for the Frisco location in the August 2010 publication.
+
+Legacy Coverage (1990): The "D Revisits Jinbeh" editorial write-up from May 1990.
+-->
 
 When D Magazine named Jinbeh “Best Place to Eat” and “Best Neighborhood Restaurant,” it wasn't for volume — it was for quality. That same craft-first philosophy drives every piece of sushi our 30-year master creates today. OpenTable diners agree: Jinbeh is a current Diners' Choice pick for Best Sushi in the Dallas suburbs.
 
@@ -2264,6 +2403,15 @@ This guide breaks down the real differences between these two dining formats, so
 All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from $25 to $40 per person. To make this model profitable, these restaurants rely on several key strategies.
 
 AYCE restaurants operate on remarkably thin margins, often around 5% of revenue. To stay viable, they make careful trade-offs:
+<!-- EDIT
+page: /blog/ayce-sushi-vs-traditional
+field: body
+find: "- Fewer labor costs: AYCE models often require fewer servers and less specialized chef talent, focusing on volume over intricate knife work and presentation.
+- Waste reduction tactics: Many AYCE restaurants charge penalties ($2-3 per piece) for uneaten food. Appetizers and salads may be served first to reduce how much sushi diners actually consume."
+replace: "- Fewer labor costs: AYCE models often have fewer servers and less specialized chef talent, resulting in lower quality service and lower quality rolls.
+- Waste reduction tactics: Many AYCE restaurants charge penalties ($2-3 per piece) for uneaten food. Appetizers and salads may be served first to reduce how much sushi diners actually consume."
+note: 
+-->
 
 - Higher rice-to-fish ratios: Rolls may contain more rice and less fish per piece compared to traditional restaurants. Rice is inexpensive; premium fish is not.
 - Bulk purchasing: Buying fish in large volumes from wholesale distributors allows for lower per-unit costs, though this can mean less flexibility in selecting premium cuts.
@@ -2300,6 +2448,13 @@ Contrary to popular belief, the FDA requires most fish served raw to be frozen b
 - Frozen and stored at -4°F (-20°C) or below for a minimum of 7 days, or
 - Frozen at -31°F (-35°C) until solid and stored at that temperature for 15 hours
 Certain fish are exempt, including several tuna species (yellowfin, bluefin, bigeye) and some aquaculture-raised fish. Restaurants must maintain records documenting compliance with these freezing standards.
+<!-- EDIT
+page: /blog/ayce-sushi-vs-traditional
+field: body
+find: "Certain fish are exempt, including several tuna species (yellowfin, bluefin, bigeye) and some aquaculture-raised fish. Restaurants must maintain records documenting compliance with these freezing standards."
+replace: "Certain fish are exempt, including several tuna species (yellowfin, bluefin, bigeye) and some aquaculture-raised fish."
+note: Don't need to mention that other sentence about restaurant documentation
+-->
 
 Health Tip
 
@@ -2464,6 +2619,15 @@ Community centers are generally affordable and often provide tables and chairs, 
 
 For a more formal setting, hosting a baby shower at a restaurant or café offers a delightful dining experience. Many establishments offer private dining rooms perfect for gatherings, ensuring privacy and exclusivity. Explore our guide to group dining venues for more options.
 
+<!-- EDIT
+page: blog/baby-shower-venues
+field: body
+find: ""We hosted our baby shower at Jinbeh's private dining space, and it was absolutely perfect. The beautiful setting required minimal decoration, and the staff took care of everything while we celebrated."
+
+— Jinbeh Guest"
+replace: 
+note: look up the source of this quote to make sure you find it somewhere or is verified.  If not, remove it and improve formatting.  Instead mention that Hosting your baby shower at Jinbeh's private dining space would be perfect.  The beautiful setting requires little minimal decoration and the staff takes great care in everything while you get to focus on celebrating.
+-->
 "We hosted our baby shower at Jinbeh's private dining space, and it was absolutely perfect. The beautiful setting required minimal decoration, and the staff took care of everything while we celebrated."
 
 — Jinbeh Guest
@@ -2516,6 +2680,13 @@ Choose a venue that complements your envisioned theme and decor. The right setti
 
 Looking for an elegant venue that handles all the details? Consider Jinbeh for your baby shower celebration. Our private dining spaces provide beautiful settings requiring minimal decoration, and our professional staff ensures a seamless event while you enjoy celebrating with loved ones.
 
+<!-- EDIT
+page: blog/baby-shower-venues
+field: body
+find: "- Customizable menus accommodating dietary preferences"
+replace: "- Accomodating dietary preferences"
+note: 
+-->
 At Jinbeh, we understand that baby showers mark special moments. Our team helps create memorable celebrations with:
 
 - Semi-private dining spaces with elegant ambiance
@@ -2559,12 +2730,20 @@ Experience the best hibachi & sushi in DFW
 
 📖 Related Reading
 
+
 We recommend booking 4-6 weeks in advance. Welcome to the table! Popular venues like Jinbeh fill up quickly. This ensures your preferred date and time. For larger groups, book 2-3 months ahead.
 
 Home venues work for 15-30 guests. Community centers and restaurants like Jinbeh handle 20-100+. It's a celebration, so confirm capacity with your venue for comfortable spacing.
 
 Absolutely! We treat every guest like family. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to discuss vegetarian, allergy, or special requests. Fresh and flavorful options for everyone.
 
+<!-- EDIT
+page: blog/baby-shower-venues
+field: body
+find: "Restaurants like Jinbeh charge per person ($15-$40) with private dining available"
+replace: "Restaurants like Jinbeh charge per entree ($15-$40) with private dining available"
+note: 
+-->
 Home venues are free. Parks range $50-$300. Restaurants like Jinbeh charge per person ($15-$40) with private dining available. Libraries and church halls cost $0-$100. Dinner and a show at Jinbeh makes celebration memorable.
 
 Always have a weather backup plan. Ensure parking, restrooms, and accessibility for all guests. Check if permits are required. Welcome to the table—we can help at Jinbeh if weather is a concern!
@@ -2688,6 +2867,13 @@ Don't forget to document the night! Many bachelorette restaurants have Instagram
 
 A great bachelorette restaurant offers lively atmosphere, diverse menu options, entertainment value, and space to accommodate groups. Interactive experiences like hibachi shows, wine selections, or live music elevate the celebration. The staff should be experienced in handling group events and willing to customize the experience.
 
+<!-- EDIT
+page: /blog/bachelorette-restaurants-dallas
+field: body
+find: "We offer customizable group menus, dedicated service, and a festive atmosphere. "
+replace: "We offer fun hibachi, sushi, and drink menus, dedicated service, and a festive atmosphere. "
+note: 
+-->
 Welcome to the table! It's a celebration! Jinbeh is perfect for bachelorette parties. Our hibachi shows provide interactive entertainment and dinner and a show all in one. We offer customizable group menus, dedicated service, and a festive atmosphere. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your special night.
 
 For best availability at top restaurants, book 4-6 weeks in advance . This is especially important for larger groups and popular venues. Early booking also allows time for customization and special requests. Some restaurants may require deposits for large groups.
@@ -2801,6 +2987,13 @@ Japanese rice lagers (Sapporo, Asahi, Kirin) are the perfect companions for sush
 - Beer Hard Seltzer
 There's a reason Japanese beers have become some of the most popular in the world: they're specifically crafted to pair with food. Unlike heavy craft IPAs or bitter ales, Japanese lagers are clean, crisp, and refreshing—designed to enhance your meal rather than overpower it.
 
+<!-- EDIT
+page: /blog/beer-hard-seltzer
+field: body
+find: "Jinbeh's approach to drinks is refreshingly honest: the wine selection stays minimalist because “customers trust our expertise in sake, not wine.” "
+replace: "Jinbeh's approach to drinks is refreshingly honest: the wine selection focuses on the best quality ones and top brands that our customers love. "
+note: 
+-->
 Jinbeh's approach to drinks is refreshingly honest: the wine selection stays minimalist because “customers trust our expertise in sake, not wine.” This isn't a pretentious French bistro. But the sake and Japanese whisky ? That's where Jinbeh shines. They stock rare Yamazaki that the owner has to fight to acquire, and the premium cold sake selection is curated with decades of expertise.
 
 At Jinbeh , our guests consistently mention that "Sapporo on tap is a highlight" of the dining experience. There's nothing quite like a cold Sapporo alongside sizzling hibachi or fresh sushi rolls from our full menu .
@@ -2809,6 +3002,13 @@ Explore our complete beverage program at the Jinbeh bar , where our bartenders c
 
 Did You Know?
 
+<!-- EDIT
+page: /blog/beer-hard-seltzer
+field: body
+find: "Interestingly, Japanese beers use rice as a key ingredient — giving them their distinctively clean, crisp taste that pairs better with food than Western-style hoppy beers."
+replace: "Interestingly, Japanese beers use rice as a key ingredient. This gives them their distinctively clean, crisp taste that pairs better with food than Western-style hoppy beers."
+note: 
+-->
 The Japanese beer market is worth over $20 billion globally, with Sapporo, Asahi, and Kirin controlling 90% of the market. Interestingly, Japanese beers use rice as a key ingredient — giving them their distinctively clean, crisp taste that pairs better with food than Western-style hoppy beers. Sapporo is the oldest beer brand in Japan, having been brewed continuously since 1876.
 
 Source: Japan Brewers Association & IBISWorld
@@ -2886,6 +3086,8 @@ Join us for an unforgettable hibachi dinner and a show. Family-owned since 1988,
 
 <a id="blog-beginner-sushi-tips"></a>
 ## `/blog/beginner-sushi-tips`
+
+
 
 - **Title:** Beginner Sushi Tips: Easy Homemade Sushi Guide | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the joy of beginner sushi-making at home with these essential tips. Learn to craft the best sushi rolls for beginners, including the classic.
@@ -3112,6 +3314,7 @@ Join us for an unforgettable hibachi dinner and a show. Family-owned since 1988,
 <a id="blog-best-asian-food-dallas"></a>
 ## `/blog/best-asian-food-dallas`
 
+
 - **Title:** Best Asian Food in Dallas TX: Top Restaurants Guide | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover top Asian food in Dallas, from fusion at Uchi to authentic dishes at Royal China. Explore vibrant Asian restaurants downtown and more.
 - **Canonical:** https://jinbeh.com/blog/best-asian-food-dallas
@@ -3250,6 +3453,7 @@ Experience the best hibachi & sushi in DFW
 <a id="blog-best-happy-hour-frisco-tx"></a>
 ## `/blog/best-happy-hour-frisco-tx`
 
+
 - **Title:** Best Happy Hour Frisco TX: Top Spots to Visit | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Find the best happy hour in Frisco TX! Sushi specials, sake deals, and appetizers at Jinbeh. Discover top spots near Stonebriar for after-work drinks.
 - **Canonical:** https://jinbeh.com/blog/best-happy-hour-frisco-tx
@@ -3300,6 +3504,13 @@ The concept of 'happy hour' originated in the United States Navy in the 1920s, w
 
 Source: Smithsonian Magazine & Frisco Dining Guide
 
+<!-- EDIT
+page: /blog/best-happy-hour-frisco-tx
+field: body
+find: "Monday – Friday | 4:30 PM – 6:30 PM"
+replace: "Monday – Friday | 5:00 PM – 6:30 PM"
+note: the drinks offered during happy hour will be $4 Japanese draft beer, $5 sake, and $6 wine.
+-->
 Monday – Friday | 4:30 PM – 6:30 PM
 
 Let's be honest—most happy hour deals are about cheap drinks. But at Jinbeh, we combine quality with value. You're not just getting discounts; you're getting the same fresh sushi varieties and premium sake pairing options we serve at dinner, just at friendlier prices.

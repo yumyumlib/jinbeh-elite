@@ -9,29 +9,29 @@ export const metadata: Metadata = {
   title:
     "Happy Hour Specials | Jinbeh Japanese Restaurant - Frisco & Lewisville",
   description:
-    "Enjoy happy hour at Jinbeh! Discounted drinks, appetizers, and sushi rolls. Perfect for after-work relaxation in Frisco and Lewisville, TX.",
+    "Jinbeh Happy Hour Specials: $4 Japanese draft beer, $5 sake, $6 wine. Mon-Fri 5-6:30pm. Premium drinks at our Frisco and Lewisville locations.",
   keywords: [
     "happy hour",
     "happy hour specials",
     "drink specials",
     "sushi happy hour",
-    "appetizer specials",
+    "sake bar",
     "frisco happy hour",
     "lewisville happy hour",
-    "sake bar",
+    "$4 beer happy hour",
     "after work drinks",
   ],
   openGraph: {
     title: "Happy Hour Specials | Jinbeh Japanese Restaurant",
     description:
-      "Happy hour drinks and appetizer specials at Jinbeh. Unwind after work with discounted sushi, rolls, and beverages.",
+      "Jinbeh Happy Hour drink specials: $4 draft beer, $5 sake, $6 wine. Unwind after work at our Frisco and Lewisville bars.",
     url: "https://jinbeh.com/happy-hour/specials",
     images: [
       {
         url: "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
         width: 1200,
         height: 630,
-        alt: "Jinbeh Japanese Restaurant — Happy Hour Specials",
+        alt: "Jinbeh Japanese Restaurant Happy Hour Specials",
       },
     ],
     type: "website",
@@ -46,82 +46,34 @@ const lewisville = locations.locations.lewisville;
 
 const happyHourSpecials = [
   {
-    title: "Sake Selection",
-    description: "Premium and house sake selections",
-    discount: "$4-$6",
-    icon: "🍶",
-    category: "Drinks",
-  },
-  {
-    title: "Craft Cocktails",
-    description: "Signature hibachi-inspired cocktails",
-    discount: "$5-$7",
-    icon: "🍹",
-    category: "Drinks",
-  },
-  {
-    title: "Beer Specials",
-    description: "Japanese and domestic beer selection",
-    discount: "$3-$5",
+    title: "Japanese Draft Beer",
+    description: "Sapporo, Asahi, Kirin, and more on draft",
+    discount: "$4",
     icon: "🍺",
     category: "Drinks",
   },
   {
-    title: "California Roll",
-    description: "Fresh, classic California roll with ginger",
-    discount: "$5 (Reg $8)",
-    icon: "🍣",
-    category: "Food",
+    title: "Sake",
+    description: "Hot or cold, from our curated selection",
+    discount: "$5",
+    icon: "🍶",
+    category: "Drinks",
   },
   {
-    title: "Spicy Tuna Roll",
-    description: "Spicy tuna with sriracha mayo and sesame",
-    discount: "$6 (Reg $10)",
-    icon: "🌶️",
-    category: "Food",
-  },
-  {
-    title: "Edamame",
-    description: "Steamed soybeans with sea salt",
-    discount: "$3 (Reg $5)",
-    icon: "🫘",
-    category: "Food",
-  },
-  {
-    title: "Gyoza (6 pcs)",
-    description: "Pan-fried pork dumplings with dipping sauce",
-    discount: "$5 (Reg $8)",
-    icon: "🥟",
-    category: "Food",
-  },
-  {
-    title: "Vegetable Tempura",
-    description: "Crispy assorted vegetables with dipping sauce",
-    discount: "$5 (Reg $8)",
-    icon: "🥬",
-    category: "Food",
-  },
-  {
-    title: "Spicy Shrimp Roll",
-    description: "Shrimp tempura with spicy mayo",
-    discount: "$7 (Reg $12)",
-    icon: "🦐",
-    category: "Food",
+    title: "Wine",
+    description: "Curated wines by the glass",
+    discount: "$6",
+    icon: "🍷",
+    category: "Drinks",
   },
 ];
 
 const happyHourSchedule = [
   {
     location: "Frisco & Lewisville",
-    days: "Monday - Friday",
-    time: "4:00 PM - 6:00 PM",
-    details: "All happy hour specials available",
-  },
-  {
-    location: "Frisco & Lewisville",
-    days: "Select Weekends",
-    time: "Variable",
-    details: "Call for special event happy hours",
+    days: "Monday through Friday",
+    time: "5:00 PM - 6:30 PM",
+    details: "$4 Japanese draft beer, $5 sake, $6 wine",
   },
 ];
 
@@ -133,7 +85,7 @@ const whyChooseHappyHour = [
   },
   {
     title: "Great Value",
-    description: "Premium drinks and appetizers at unbeatable prices.",
+    description: "Premium drinks at unbeatable prices.",
     icon: "💰",
   },
   {
@@ -160,39 +112,39 @@ const whyChooseHappyHour = [
 
 const drinkCategories = [
   {
+    name: "Japanese Draft Beer",
+    description: "Crisp imports on draft",
+    items: [
+      "Sapporo Draft - $4",
+      "Asahi Draft - $4",
+      "Kirin Draft - $4",
+    ],
+  },
+  {
     name: "Sake",
     description: "Traditional Japanese rice wine",
     items: [
-      "House Sake - $4",
+      "House Sake (hot or cold) - $5",
       "Premium Sake - $6-$8",
-      "Sake Flights - $12 (3 premium selections)",
-    ],
-  },
-  {
-    name: "Craft Cocktails",
-    description: "Signature creations",
-    items: [
-      "Hibachi Martini - $7",
-      "Sakamaki - $7",
-      "Tokyo Mule - $6",
-      "Ginger Paloma - $6",
-    ],
-  },
-  {
-    name: "Beer",
-    description: "Japanese and international selection",
-    items: [
-      "Japanese Beer - $3-$4",
-      "Import Beer - $4-$5",
-      "Domestic Beer - $3",
+      "Sake Flights - $12 (3 selections)",
     ],
   },
   {
     name: "Wine",
     description: "Curated wine selection",
     items: [
-      "House Wine by Glass - $4-$6",
-      "Premium Wine - $6-$8",
+      "House Wine by Glass - $6",
+      "Premium Wine - $8+",
+    ],
+  },
+  {
+    name: "Craft Cocktails",
+    description: "Signature creations",
+    items: [
+      "Tokyo Mule",
+      "Lychee Martini",
+      "Jinbeh Punch",
+      "Japanese Old Fashioned",
     ],
   },
 ];
@@ -215,13 +167,13 @@ export default function HappyHourSpecialsPage() {
           </div>
           <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl text-white">
             <p className="text-soft-gold font-medium tracking-wider uppercase mb-4">
-              4:00 PM - 6:00 PM, Weekdays
+              5:00 PM to 6:30 PM, Weekdays
             </p>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               Happy Hour Specials
             </h1>
             <p className="text-xl text-white/80">
-              Unwind after work with premium drinks, appetizers, and sushi rolls at special prices.
+              Unwind after work with premium drinks at special prices.
               Your favorite Japanese restaurant, your favorite happy hour destination.
             </p>
           </div>
@@ -232,7 +184,7 @@ export default function HappyHourSpecialsPage() {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl font-heading font-bold text-charcoal mb-8 text-center">
-                Happy Hour Hours
+                Happy Hour Schedule
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 {happyHourSchedule.map((schedule, idx) => (
@@ -279,7 +231,7 @@ export default function HappyHourSpecialsPage() {
                 Featured Happy Hour Specials
               </h2>
               <p className="text-lg text-charcoal/70">
-                Premium drinks and appetizers at unbeatable prices. Available during happy hour hours.
+                Premium drinks at unbeatable prices. Available during happy hour.
               </p>
             </div>
 
@@ -400,14 +352,14 @@ export default function HappyHourSpecialsPage() {
 
               <div>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-6">
-                  Your Happy Hour Escape
+                  The Jinbeh Happy Hour Experience
                 </h2>
                 <div className="space-y-6 text-charcoal/80 leading-relaxed">
                   <p>
                     After a long day at work, Jinbeh is your perfect destination to unwind with colleagues, friends, or for a solo relaxation session. Our welcoming bar atmosphere combined with authentic Japanese cuisine creates the ideal happy hour experience.
                   </p>
                   <p>
-                    Whether you're discovering premium sake for the first time or you're a seasoned enthusiast, our knowledgeable bartenders can recommend the perfect pairing with our appetizer specials.
+                    Whether you're discovering premium sake for the first time or you're a seasoned enthusiast, our knowledgeable bartenders can recommend the perfect drink for your meal.
                   </p>
 
                   <div className="grid grid-cols-2 gap-4 pt-4">
@@ -492,7 +444,7 @@ export default function HappyHourSpecialsPage() {
                       Happy Hour
                     </p>
                     <p className="text-charcoal font-semibold">
-                      Mon-Fri, 4:00 PM - 6:00 PM
+                      Mon-Fri, 5:00 - 6:30 PM
                     </p>
                   </div>
                   <Link
@@ -541,7 +493,7 @@ export default function HappyHourSpecialsPage() {
                       Happy Hour
                     </p>
                     <p className="text-charcoal font-semibold">
-                      Mon-Fri, 4:00 PM - 6:00 PM
+                      Mon-Fri, 5:00 - 6:30 PM
                     </p>
                   </div>
                   <Link
@@ -563,7 +515,7 @@ export default function HappyHourSpecialsPage() {
               Join Us This Week
             </h2>
             <p className="text-xl text-white/90 mb-10">
-              Escape the workday and enjoy premium drinks, fresh appetizers, and great company.
+              Escape the workday and enjoy premium drinks and great company.
               Your happy hour destination awaits!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
