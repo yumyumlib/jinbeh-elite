@@ -3379,6 +3379,15 @@ For those who prefer authentic flavors and time-honored techniques, Dallas has p
 
 Jinbeh is a staple in the Dallas Asian dining scene, offering a variety of Japanese dishes including sushi, hibachi, and more. Their hibachi grill is a highlight, providing not only delicious food but also an entertaining teppanyaki dining experience . Perfect for both casual lunches and celebratory dinners. Voted among the best sushi in Frisco .
 
+<!-- EDIT
+page: /blog/beer-hard-seltzer
+field: body
+find: "A family-owned restaurant serving authentic Chinese cuisine since 1974. Known for its handmade noodles and dumplings made fresh daily, Royal China features a wide range of traditional Chinese dishes.
+
+Located in One Arts Plaza, this Japanese soba house is known for its handmade soba noodles and menu that highlights the flavors of Japan with an emphasis on quality and craftsmanship. The rooftop bar offers stunning views of downtown Dallas."
+replace: ""
+note: make sure the editing / visual design still looks good and makes sense
+-->
 A family-owned restaurant serving authentic Chinese cuisine since 1974. Known for its handmade noodles and dumplings made fresh daily, Royal China features a wide range of traditional Chinese dishes.
 
 Located in One Arts Plaza, this Japanese soba house is known for its handmade soba noodles and menu that highlights the flavors of Japan with an emphasis on quality and craftsmanship. The rooftop bar offers stunning views of downtown Dallas.
@@ -3523,8 +3532,22 @@ Insider Tip
 
 Jinbeh Frisco location is just minutes from Stonebriar Centre on Preston Road—perfect for a post-shopping drink or meeting friends after work. Easy parking and a welcoming bar area make it a no-stress stop. Visit us to make a reservation for happy hour.
 
+<!-- EDIT
+page: /blog/best-happy-hour-frisco-tx
+field: body
+find: "Monday through Friday from 4:30 PM to 6:30 PM"
+replace: "Monday through Friday from 5:00 PM to 6:30 PM"
+note: the drinks offered during happy hour will be $4 Japanese draft beer, $5 sake, and $6 wine.
+-->
 Jinbeh's happy hour runs Monday through Friday from 4:30 PM to 6:30 PM at both our Frisco and Lewisville locations. We offer discounted sushi rolls, sake, beer, and appetizers during these hours.
 
+<!-- EDIT
+page: /blog/best-happy-hour-frisco-tx
+field: body
+find: "happy hour includes discounted sushi rolls, $1 edamame , half-price sake bombs, and special pricing on select appetizers and drinks"
+replace: "happy hour includes special pricing on select drinks"
+note: the drinks offered during happy hour will be $4 Japanese draft beer, $5 sake, and $6 wine.
+-->
 Yes! Our happy hour includes discounted sushi rolls, $1 edamame , half-price sake bombs, and special pricing on select appetizers and drinks. Check our happy hour page for the current menu.
 
 Reservations aren't required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins welcome! Bar seating is first-come, first-served. Welcome to the table!
@@ -3711,6 +3734,13 @@ While hibachi restaurants serve Japanese-inspired cuisine, the teppanyaki show f
 
 At Jinbeh, we blend both worlds: the entertainment Americans love with authentic Japanese flavors and techniques our chefs trained in. Our sushi bar offers a more traditional experience for guests seeking something quieter, while the hibachi grills deliver dinner and a show. Explore our sushi varieties or make a reservation today.
 
+<!-- EDIT
+page: /blog/best-hibachi-dallas
+field: body
+find: "Corporate atmosphere"
+replace: ""
+note: 
+-->
 - ✓ Standardized menu and portions
 - ✓ Rotating staff with varied training
 - ✓ Pre-portioned, often frozen proteins
@@ -3721,6 +3751,13 @@ At Jinbeh, we blend both worlds: the entertainment Americans love with authentic
 - ✓ Owner-operated since 1988
 - ✓ Celebrations tailored to your group
 - ✓ Two convenient DFW locations
+<!-- EDIT
+page: /blog/best-hibachi-dallas
+field: body
+find: "lunch specials start at just $12.95"
+replace: "lunch specials start at just 2 for $35 on Monday-Friday for chicken, steak, shrimp, or salmon"
+note: 
+-->
 Here's a local secret: hibachi lunch is often the best deal in town. At Jinbeh, our lunch specials start at just $12.95 for the same quality hibachi experience you'd get at dinner—just slightly smaller portions. You still get the show, the soup, the salad, everything. Check our full menu for all options.
 
 Lunch service typically runs 11am-2pm on weekdays. It's perfect for a workday treat or weekend afternoon celebration without the dinner crowds.
@@ -4523,6 +4560,8 @@ Experience the best hibachi & sushi in DFW
 
 <a id="blog-best-steakhouses-lewisville"></a>
 ## `/blog/best-steakhouses-lewisville`
+
+
 
 - **Title:** Top Steakhouses in Lewisville TX: Best Steak Spots | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the best steakhouses in Lewisville TX. From Jinbeh's sizzling hibachi filet mignon to classic Texas steakhouse experiences—find your perfect.
@@ -6674,6 +6713,16 @@ Free birthday treats are about more than food—they're about creating memories.
 
 Taking advantage of birthday freebies supports local businesses. Many small eateries and cafes offer special birthday deals to attract customers. By visiting these establishments, you enjoy a treat while helping them thrive in your community.
 
+<!-- EDIT
+page: /blog/free-birthday-food-deals
+field: body
+find: "Taking advantage of birthday freebies supports local businesses. Many small eateries and cafes offer special birthday deals to attract customers. By visiting these establishments, you enjoy a treat while helping them thrive in your community."
+replace: "Taking advantage of birthday freebies supports local businesses. Many small eateries and cafes offer special birthday deals to attract customers. By visiting these establishments, you enjoy a treat while helping them thrive in your community.
+
+Jinbeh makes your birthday special.  It's one of many things they do exceptionally well.  You get a free birthday dessert treat on your birthday.  The restaurant has several touchpoints that ensure staff from the host, to the chef, to the server, are all aware of your birthday.  They also allow people to bring their own birthday cakes to help support a family atmosphere."
+note: Consider adding good content that calls out how Jinbeh is the best for birthdays and the SEO keywords that should be included calling out Jinbeh and how they are better than these other options.
+-->
+
 Denny's is a classic choice for birthday meals. On your birthday, you can enjoy a free Grand Slam breakfast—just show a valid ID confirming your birth date. This beloved classic features pancakes, eggs, bacon, and sausage—a filling meal starting your birthday with a smile.
 
 Denny's family-friendly environment makes it ideal for celebrating with loved ones. Whether breakfast or late-night snack, the welcoming staff and comfortable setting ensure a joyful birthday experience. For many, visiting Denny's on their birthday has become a cherished tradition.
@@ -8664,6 +8713,14 @@ Join us for an unforgettable hibachi dinner and a show. Family-owned since 1988,
 - How To Eat Sushi Guide
 Feeling nervous about eating sushi? You're not alone. From chopsticks to soy sauce to wasabi, there are plenty of unwritten rules. But here's the good news: sushi is meant to be enjoyed, and there's no pressure to be perfect. Let's walk through the proper way to eat sushi so you can dine with confidence.
 
+<!-- EDIT
+page: /blog/how-to-eat-sushi-guide
+field: body
+find: ""
+replace: ""
+note: Add content on this page that sells or touts Jinbeh's sushi and how we encourage people of all levels, especially people who are beginners to sushi to try our fresh sushi.  We also provide training chopsticks for kids to learn how to eat sushi with them too.
+-->
+
 At Jinbeh, our head sushi chef — who has been with us for nearly 30 years — teaches that understanding the terminology is key: sashimi means “sliced” (raw fish, no rice), nigiri-zushi is the rice ball with fish on top (what most people call “sushi”), and maki is any roll shaped using a bamboo roller. Knowing these terms helps you order with confidence at any Japanese restaurant.
 
 "Sushi is not just about the food—it's about respect, tradition, and the experience. At Jinbeh, we believe everyone should feel comfortable enjoying sushi their own way, while learning to appreciate the craft behind each piece."
@@ -10344,12 +10401,26 @@ Our team is dedicated to making your experience exceptional. When you visit:
 - Share feedback about your experience
 Check current promotions before your visit. Many deals can be combined with gift cards. Ask our staff about the best way to apply available offers to maximize savings.
 
+<!-- EDIT
+page: /blog/jinbeh-gift-cards-guide
+field: body
+find: "Hibachi lunch specials offer the best value. Your gift card stretches much further during lunch hours. A $50 card might buy multiple lunches but only one or two dinners."
+replace: ""
+note: 
+-->
 Hibachi lunch specials offer the best value. Your gift card stretches much further during lunch hours. A $50 card might buy multiple lunches but only one or two dinners.
 
 If you're a member, use your birthday month to visit. Combine your birthday benefit with your gift card for unbeatable value.
 
 Hibachi is designed for shared experiences. Visit with friends or family to maximize the entertainment value. One gift card can cover part of a group meal, and everyone benefits from the shared hibachi experience.
 
+<!-- EDIT
+page: /blog/jinbeh-gift-cards-guide
+field: body
+find: "Newsletter: Subscribe to Jinbeh's email list for exclusive deals and early promotion announcements. Newsletter subscribers often get special offers unavailable to the general public."
+replace: "Newsletter: Subscribe to Jinbeh's email list for exclusive deals and early promotion announcements. Newsletter subscribers often get special offers unavailable to the general public."
+note: does this work?  Test it to make sure it works correctly and is sent to a place that saves the data.  Ideally the VIP Birthday club should be touted instead.
+-->
 Newsletter: Subscribe to Jinbeh's email list for exclusive deals and early promotion announcements. Newsletter subscribers often get special offers unavailable to the general public.
 
 Social Media: Follow Jinbeh on social media for flash sales, special announcements, and limited-time promotions.
@@ -10680,6 +10751,25 @@ Experience the best hibachi & sushi in DFW
 ### Body content
 
 Transform your next event with Jinbeh's interactive offsite hibachi catering. Professional chefs, customized menus, and unforgettable entertainment delivered to your location.
+<!-- EDIT
+page: /blog/offsite-hibachi-catering
+field: body
+find: "Imagine the sizzle of the hibachi grill, the whoosh of flames, and the laughter of your guests—all happening right in your backyard or private venue. The interactive energy. The entertainment. The incredible food. That's what Jinbeh's offsite hibachi catering brings to your celebration.
+
+Jinbeh's offsite catering roots trace back to the Las Colinas days when the Saturday-closed location gave the team bandwidth for festivals and community events. The restaurant's longest-tenured employee — on staff since 1988 — is the mastermind behind food logistics for events. He doesn't manage people, but he can orchestrate feeding hundreds with military precision.
+
+For over 38 years, Jinbeh has been perfecting the art of hibachi entertainment and Japanese cuisine. Now, we bring that same expertise directly to you, transforming any venue into an unforgettable culinary experience. Whether you're celebrating a birthday, hosting a corporate event, or gathering family for a special dinner, offsite hibachi catering creates memories that last.
+
+Hibachi is theater. It's entertainment. It's exceptional food. When you choose Jinbeh's offsite hibachi catering , you're not just getting a meal—you're creating a complete sensory experience."
+replace: "Imagine the mouthwatering, amazing tasting food that's just as good as the restaurant show.  Simply, incredible food. That's what Jinbeh's offsite hibachi catering brings to your celebration.
+
+Jinbeh's offsite catering roots trace back to the Las Colinas days when the Saturday-closed location gave the team bandwidth for festivals and community events. The restaurant's longest-tenured employee — on staff since 1988 — is the mastermind behind food logistics for events. He doesn't manage people, but he can orchestrate feeding hundreds with military precision.
+
+For over 38 years, Jinbeh has been perfecting the art of hibachi entertainment and Japanese cuisine. Now, we bring that same expertise directly to you, transforming any venue into an unforgettable culinary experience. Whether you're celebrating a birthday, hosting a corporate event, or gathering family for a special dinner, offsite hibachi catering creates memories that last.
+
+Hibachi is theater. It's entertainment. It's exceptional food. When you choose Jinbeh's offsite hibachi catering , you are getting the same quality food without the show."
+note: While we provide hibachi and sushi food for catering delivery on presentation trays, we don't do hibachi shows remotely at this time.  So this page needs to update or reflect that.  Change other sections on this page (or other catering-related pages to reflect the fact that Jinbeh doesn't do hibachi shows remotely, we do deliver hibachi and sushi catering food though.
+-->
 
 - Home
 - Blog
@@ -10893,6 +10983,7 @@ Join us for an unforgettable hibachi dinner and a show. Family-owned since 1988,
 
 ---
 
+
 <a id="blog-omakase-dining-guide"></a>
 ## `/blog/omakase-dining-guide`
 
@@ -10962,6 +11053,16 @@ The term "Omakase" translates to "I leave it up to you." This phrase signifies a
 In an Omakase meal, diners are treated to a selection of dishes that reflect the chef's personal style and the season's best offerings. This allows patrons to embark on a culinary journey that is both unpredictable and deeply satisfying. The chef's choices are guided not only by ingredient availability but also by intuition and artistic vision, making each Omakase experience unique and memorable.
 
 While Omakase often involves sushi, it is much more than just a sushi meal. Understanding this distinction helps set proper expectations for your dining experience.
+
+<!-- EDIT
+page: /blog/omakase-dining-guide
+field: body
+find: "While Omakase often involves sushi, it is much more than just a sushi meal. Understanding this distinction helps set proper expectations for your dining experience."
+replace: "While Omakase often involves sushi, it is much more than just a sushi meal. Understanding this distinction helps set proper expectations for your dining experience.
+
+Jinbeh's history includes a long list of in-house crafted rolls.  You'll find our menu filled with new creations that were inspired or created by customers who love our fresh sushi and iterations of omakase experiences.  It's so famous that even some of our rolls, like Hot Mama, have been since copied by others but we were the first one.  On off-peak times of the day when we have the capacity, our sushi chefs can make you something new too and maybe it'll be on the menu in the future."
+note: Add or tout the great history of Jinbeh in creating fantastic original sushi rolls, with a great spirit of high quality omakase.
+-->
 
 Dining at an Omakase-style restaurant is an intimate and interactive experience. It often takes place at a sushi bar where you can observe the chef at work. This proximity allows you to enjoy the artistry of preparation and engage with the chef, who may explain the inspiration behind each course.
 
@@ -11134,6 +11235,13 @@ Looking for restaurants near pickleball in Lewisville? Jinbeh Japanese Restauran
 - Pickleball Restaurants Lewisville
 Looking for restaurants near pickleball in Lewisville ? You've found the perfect spot. Jinbeh Japanese Restaurant is literally 2 doors down from The Picklr—making it the most convenient and delicious post-game dining option in the area. Whether you're craving hibachi, sushi, or sake after your match, we've got you covered.
 
+<!-- EDIT
+page: /blog/pickleball-restaurants-lewisville
+field: body
+find: "Jinbeh Lewisville runs on gas hibachi grills (Frisco uses electric)"
+replace: "Jinbeh Lewisville runs on electric hibachi grills (Frisco uses gas)"
+note: make sure this is accurately portrayed on other pages too if there are references to it already on what types of grills the locations are.
+-->
 Jinbeh Lewisville runs on gas hibachi grills (Frisco uses electric), which means faster heat and a slightly different sear on your steak. After a tough pickleball match, the signature Yum Yum sauce — an addictive house-made blend of mayo, sriracha, and sugar — is the ultimate recovery fuel. The Lewisville location also features Jinbeh's complete bar with rare Japanese whiskeys, premium cold sake, and those famous hand-painted tequila bottles.
 
 After a tough match, refuel at the restaurant OpenTable ranks #1 Hibachi in Lewisville and #1 Tempura in Lewisville . Jinbeh is also recognized as Best Value in the Dallas suburbs — meaning award-winning hibachi won't break the bank after your game.
@@ -11417,6 +11525,8 @@ Experience the best hibachi & sushi in DFW
 <a id="blog-ramune-soda-guide"></a>
 ## `/blog/ramune-soda-guide`
 
+
+
 - **Title:** Ramune Soda: Unique Flavors & Marble Magic | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the unique flavors of Ramune soda, a Japanese favorite with a playful marble seal. Explore its rich history, diverse tastes, and cultural significance.
 - **Canonical:** https://jinbeh.com/blog/ramune-soda-guide
@@ -11540,6 +11650,16 @@ The marble's functionality is a testament to innovative engineering, showing how
 Ramune is more than just a beverage; it's a cultural icon in Japan. Often associated with summer festivals and childhood memories, this soda embodies nostalgia and fun. Its presence extends beyond Japan to Asian grocery stores and specialty shops worldwide, making it accessible to a global audience eager to experience Japanese culture. Pair it with other authentic Japanese beverages like sake—explore our sake pairing recommendations .
 
 The distinctive sound of the marble popping is synonymous with festive occasions, evoking memories of warm summer nights filled with laughter and joy. Ramune's cultural footprint serves as a symbol of Japanese ingenuity and tradition, connecting generations through shared experiences.
+
+<!-- EDIT
+page: /blog/ramune-soda-guide
+field: body
+find: "If you're wondering where to buy Ramune soda, you're in luck—it's readily available in many locations:"
+replace: "Jinbeh Japanese Restaurant has a wide variety of ramune soda flavors available.  It's so fun!  The kids really love it over the years.  And even adults do too.  It's part of the authentic Japanese experience at our restaurant.  They are imported from Japan.  
+
+If you're wondering where else you can buy Ramune soda, you're in luck—it's readily available in many locations:"
+note: make sure this is accurately portrayed on other pages too if there are references to it already on what types of grills the locations are.
+-->
 
 If you're wondering where to buy Ramune soda, you're in luck—it's readily available in many locations:
 
@@ -11687,6 +11807,13 @@ Create meaningful connections with customized experiences
 
 Family dinners and close friend celebrations
 
+<!-- EDIT
+page: /blog/restaurants-private-rooms
+field: body
+find: "Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for private events. Our semi-private dining spaces — including private booths in the sushi area and a secluded section with dividers in the Frisco hibachi space — combine fine dining sophistication with the warmth of Japanese hospitality."
+replace: "Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for private events. While most of our seating is open, the Lewisville location has a private tautami style booths in a relaxing sushi bar and the Frisco location has a few booths in the back that have a wall which we provide for celebrities and famous people sometimes.  This all combine in having fine dining sophistication with the warmth of Japanese hospitality."
+note: This is the general idea for private rooms, so check other content so that it's accurately protrayed.
+-->
 Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for private events. Our semi-private dining spaces — including private booths in the sushi area and a secluded section with dividers in the Frisco hibachi space — combine fine dining sophistication with the warmth of Japanese hospitality.
 
 - Authentic Japanese Cuisine: Meticulously crafted dishes using premium ingredients and traditional techniques. Explore our full menu .
@@ -12108,6 +12235,14 @@ Experience the best hibachi & sushi in DFW
 <a id="blog-sake-pairing-guide"></a>
 ## `/blog/sake-pairing-guide`
 
+<!-- EDIT
+page: /blog/sake-pairing-guide
+field: body
+find: ""
+replace: ""
+note: Add a couple paragraphs that tout Jinbeh's wide variety of sake options.  We have hot and cold sake and a variety of flavors.  High quality sake that is very popular.
+-->
+
 - **Title:** Sake Pairing Guide: Best Pairings with Sushi & Hibachi | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Master the art of sake food pairing. Learn how to pair sake with sushi, hibachi, appetizers & more. Expert guide to selecting the perfect sake for.
 - **Canonical:** https://jinbeh.com/blog/sake-pairing-guide
@@ -12352,6 +12487,14 @@ Lewisville
 <a id="blog-sake-sushi-menu-pairings"></a>
 ## `/blog/sake-sushi-menu-pairings`
 
+<!-- EDIT
+page: /blog/sake-sushi-menu-pairings
+field: body
+find: ""
+replace: ""
+note: Add a couple paragraphs that tout Jinbeh's sake and high quality fresh sushi with a lot of options that pair well together.  There are a lot of frequent customers who love to come for both.
+-->
+
 - **Title:** Sake Sushi Menu Pairings | Perfect Flavor Combinations | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the art of pairing sake with sushi. Learn flavor combinations, sake types, and menu recommendations for an exquisite dining experience.
 - **Canonical:** https://jinbeh.com/blog/sake-sushi-menu-pairings
@@ -12543,6 +12686,14 @@ Easy access from I-35E · 901 reviews
 <a id="blog-sake-taste-profile"></a>
 ## `/blog/sake-taste-profile`
 
+<!-- EDIT
+page: /blog/sake-taste-profile
+field: body
+find: ""
+replace: ""
+note: Add a couple paragraphs that tout Jinbeh's sake with a lot of options.  There are a lot of frequent customers who love to come for our sake.  Also we have a happy hour Mon-Fri that people can try sake too.
+-->
+
 - **Title:** Sake Taste & Flavor Profile | Complete Tasting Guide | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Explore the complex flavors and taste profile of sake. Learn about flavor elements, tasting techniques, and how to appreciate Japanese rice wine.
 - **Canonical:** https://jinbeh.com/blog/sake-taste-profile
@@ -12705,6 +12856,7 @@ Easy access from I-35E · 901 reviews
 
 <a id="blog-sashimi-vs-sushi"></a>
 ## `/blog/sashimi-vs-sushi`
+
 
 - **Title:** Sashimi vs Sushi: Key Differences Explained | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the difference between sashimi and sushi. Learn what they are, when to order each, and how Jinbeh serves both fresh Japanese delicacies.
@@ -12897,6 +13049,7 @@ Experience the best hibachi & sushi in DFW
 <a id="blog-seafood-lewisville"></a>
 ## `/blog/seafood-lewisville`
 
+
 - **Title:** Best Seafood in Lewisville TX: Top Restaurants to Try | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the best seafood restaurants near me Lewisville, Texas. From Jinbeh's Japanese cuisine to Cajun favorites, explore top picks for fresh fish.
 - **Canonical:** https://jinbeh.com/blog/seafood-lewisville
@@ -12965,6 +13118,14 @@ King crab, Dungeness crab, and seafood feasts
 Louisiana-inspired seafood with bold spices
 
 Grilled, fried, and creatively prepared options
+
+<!-- EDIT
+page: /blog/seafood-lewisville
+field: body
+find: "Jinbeh stands out as Lewisville's premier destination for authentic Japanese seafood. Known for exceptional quality and meticulous preparation, Jinbeh offers fresh sushi, sashimi, and expertly grilled fish dishes. Their signature seafood platter showcases an exquisite assortment of sushi and sashimi, while their grilled salmon with teriyaki glaze is a beloved favorite."
+replace: "Jinbeh stands out as Lewisville's premier destination for authentic Japanese seafood. Known for exceptional quality and meticulous preparation, Jinbeh offers fresh sushi, sashimi, and expertly grilled fish dishes. Their seafood, like salmon and blue fin tuna, are some of the best prepared in the area.  Their signature seafood platter showcases an exquisite assortment of sushi and sashimi, while their grilled salmon with teriyaki glaze is a beloved favorite."
+note: Add a couple paragraphs that tout Jinbeh's sake with a lot of options.  There are a lot of frequent customers who love to come for our sake.  Also we have a happy hour that people can try sake too.
+-->
 
 Jinbeh stands out as Lewisville's premier destination for authentic Japanese seafood. Known for exceptional quality and meticulous preparation, Jinbeh offers fresh sushi, sashimi, and expertly grilled fish dishes. Their signature seafood platter showcases an exquisite assortment of sushi and sashimi, while their grilled salmon with teriyaki glaze is a beloved favorite.
 
@@ -13164,6 +13325,15 @@ Easy access from I-35E · 901 reviews
 
 <a id="blog-sushi-identification-chart"></a>
 ## `/blog/sushi-identification-chart`
+
+
+<!-- EDIT
+page: /blog/sushi-identification-chart
+field: body
+find: ""
+replace: ""
+note: Add a couple paragraphs that tout Jinbeh's wide variety of sushi, sashimi, nagiri, etc.  And note several dishes that are popular and offered by Jinbeh and how it's the best for sushi in the north Dallas area.
+-->
 
 - **Title:** Sushi Identification Chart | Complete Guide to Types & Flavors | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Explore our comprehensive sushi identification chart. Learn different sushi types, names, ingredients, and flavors. Perfect guide for sushi lovers.
@@ -13478,6 +13648,7 @@ Experience the best hibachi & sushi in DFW
 <a id="blog-sushi-platters-near-me"></a>
 ## `/blog/sushi-platters-near-me`
 
+
 - **Title:** Sushi Platters Near Me: Party Trays & Catering | Jinbeh DFW | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Order sushi platters near you in DFW! Jinbeh offers party trays, catering platters, and custom sushi selections for events. Fresh fish, expert rolls.
 - **Canonical:** https://jinbeh.com/blog/sushi-platters-near-me
@@ -13602,6 +13773,14 @@ Easy access from I-35E · 901 reviews
 
 <a id="blog-thanksgiving-dining-guide"></a>
 ## `/blog/thanksgiving-dining-guide`
+
+<!-- EDIT
+page: /blog/thanksgiving-dining-guide
+field: body
+find: ""
+replace: ""
+note: Add a paragraph that talks about the great quality food Jinbeh offers is perfect for Thanksgiving, especially for people (like families) who don't want to cook for themselves, but they want a festive celebratory atmosphere to be thankful.
+-->
 
 - **Title:** Thanksgiving Dining Guide | Japanese Catering Frisco, DFW | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover unique Thanksgiving dining alternatives at Jinbeh. Thanksgiving catering, dine-in availability, menu suggestions & ordering deadlines for.
@@ -13846,6 +14025,14 @@ Experience the best hibachi & sushi in DFW
 
 <a id="blog-things-to-do-frisco"></a>
 ## `/blog/things-to-do-frisco`
+
+<!-- EDIT
+page: /blog/things-to-do-frisco
+field: body
+find: ""
+replace: ""
+note: Add a paragraph that talks about the best thing to do in Frisco is check out a fun dinner and show at Jinbeh (and why).
+-->
 
 - **Title:** Things to Do in Frisco TX: Top Activities & Dining | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Discover the best things to do in Frisco TX! From The Star to Stonebriar, top attractions, family activities, and where to eat. End your day at.
@@ -14135,6 +14322,8 @@ Near Stonebriar Centre · 752 reviews
 
 <a id="blog-types-of-sake-explained"></a>
 ## `/blog/types-of-sake-explained`
+
+
 
 - **Title:** Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Master sake varieties and types. Learn the difference between Junmai, Ginjo, Daiginjo, Honjozo & more. Complete guide to choosing the right sake for.
@@ -14489,6 +14678,8 @@ Experience the best hibachi & sushi in DFW
 <a id="blog-types-of-sushi"></a>
 ## `/blog/types-of-sushi`
 
+
+
 - **Title:** Types of Sushi: Must-Try Varieties & Rolls Guide | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Explore different types of sushi from nigiri to specialty rolls. Learn what makes each style unique and discover your new favorite at Jinbeh.
 - **Canonical:** https://jinbeh.com/blog/types-of-sushi
@@ -14662,6 +14853,14 @@ Experience the best hibachi & sushi in DFW
 
 <a id="blog-unique-kids-birthday-party-places"></a>
 ## `/blog/unique-kids-birthday-party-places`
+
+<!-- EDIT
+page: /blog/unique-kids-birthday-party-places
+field: body
+find: ""
+replace: ""
+note: Add a paragraph that talks about how and why Jinbeh is the best place for kid's birthday parties.
+-->
 
 - **Title:** Unique Kids Birthday Party Places DFW | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Find unique kids birthday party places in DFW! Hibachi restaurants make unforgettable celebrations with fire, food, and entertainment. Book Jinbeh today!
@@ -15174,6 +15373,14 @@ Experience the best hibachi & sushi in DFW
 
 <a id="careers"></a>
 ## `/careers`
+
+<!-- EDIT
+page: /careers
+field: body
+find: ""
+replace: ""
+note: Add a paragraph that talks about how and why Jinbeh is the best place for kid's birthday parties.
+-->
 
 - **Title:** Careers at Jinbeh | Join Our Family - Frisco & Lewisville, TX | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Join the Jinbeh family! We're hiring passionate individuals for positions in hibachi cooking, sushi preparation, hospitality, and more. Build your.

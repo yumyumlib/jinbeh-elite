@@ -81,7 +81,7 @@ const faqSchema = {
       "name": "Is Seared Ahi Tuna good for groups and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $16.95, Seared Ahi Tuna is perfect for sharing and elegant enough for special occasions. Featured in many happy hour specials."
+        "text": "Absolutely! At $16.95, Seared Ahi Tuna is perfect for sharing and elegant enough for special occasions. Pair with $5 sake during Happy Hour (Mon-Fri 5-6:30pm)."
       }
     },
     {

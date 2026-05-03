@@ -200,7 +200,7 @@ ld raise their glasses for
             </p>
 
             <ol>
-                <li><strong>Start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link></strong> — Discounted Sapporo drafts and appetizers to kick things off</li>
+                <li><strong>Start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link></strong> — $4 Sapporo drafts and $5 sake to kick things off</li>
                 <li><strong>Order a beer flight</strong> — Try Sapporo, Asahi, and Kirin side by side to discover your favorite</li>
                 <li><strong>Book hibachi</strong> — Nothing pairs with cold beer like a sizzling <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki chef show</Link></li>
                 <li><strong>Try a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake chaser</Link></strong> — A small sake alongside your beer is a traditional Japanese pairing</li>

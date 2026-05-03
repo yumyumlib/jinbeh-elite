@@ -81,7 +81,7 @@ const faqSchema = {
       "name": "Is Gyoza good for sharing and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Gyoza at $8.95 is perfect for sharing and featured in our happy hour specials. Great starter for groups. Call (214) 619-1200 for specials."
+        "text": "Absolutely! Gyoza at $8.95 is perfect for sharing and a great starter for groups. Pair with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm). Call (214) 619-1200 for specials."
       }
     },
     {

@@ -337,7 +337,7 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Japanese dining insider tip:</strong> When searching for authentic Japanese restaurants, look for places that have been open for 10+ years—longevity signals quality. At Jinbeh (since 1988), ask for a seat at the sushi bar to watch our chefs work. For the best value, visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted appetizers and drinks, then stay for hibachi. First-timers: start with a California roll and miso soup, then work up to our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience.
+                                    <strong>Japanese dining insider tip:</strong> When searching for authentic Japanese restaurants, look for places that have been open for 10+ years—longevity signals quality. At Jinbeh (since 1988), ask for a seat at the sushi bar to watch our chefs work. For the best value, visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for $4 draft beer, $5 sake, and $6 wine, then stay for hibachi. First-timers: start with a California roll and miso soup, then work up to our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience.
                                 </ProTip>
 
                                 <PillarCTA type="hub" />

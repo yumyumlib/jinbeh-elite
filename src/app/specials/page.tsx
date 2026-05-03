@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/images/food/SamaraiRollCloseup.jpg",
         width: 1200,
         height: 630,
-        alt: "Jinbeh Japanese Restaurant — Specials",
+        alt: "Jinbeh Japanese Restaurant Specials",
       },
     ],
     type: "website",
@@ -54,10 +54,10 @@ const offersSchema = {
     {
       "@type": "Offer",
       "name": "Happy Hour Specials",
-      "description": "$5 select appetizers, $5 select cocktails and sake, $3 domestic beers",
-      "price": "3.00",
+      "description": "$4 Japanese draft beer, $5 sake, $6 wine",
+      "price": "4.00",
       "priceCurrency": "USD",
-      "availability": "Monday - Friday, 4:00 PM - 6:00 PM",
+      "availability": "Monday - Friday, 5:00 PM - 6:30 PM",
       "url": "https://jinbeh.com/specials#happy-hour"
     },
     {
@@ -86,8 +86,8 @@ const specialCategories = [
     id: "happy-hour",
     icon: "🍸",
     title: "Happy Hour Specials",
-    time: "Mon-Fri • 4:00 PM - 6:00 PM",
-    description: "Unwind with discounted drinks and appetizers",
+    time: "Mon-Fri • 5:00 - 6:30 PM",
+    description: "$4 draft beer, $5 sake, $6 wine",
     color: "from-accent-red to-deep-indigo",
     href: "/specials#happy-hour",
   },
@@ -144,22 +144,22 @@ const weeklySpecials = [
 
 const happyHourItems = [
   {
-    category: "Appetizers",
-    items: ["Gyoza (Pan-Fried Dumplings)", "Edamame", "Spicy Tuna Crispy Rice"],
-    price: "$5",
-    emoji: "🥟",
-  },
-  {
-    category: "Cocktails & Sake",
-    items: ["Tokyo Mule", "Select Premium Sake Glasses", "Lychee Martini"],
-    price: "$5",
-    emoji: "🍸",
-  },
-  {
-    category: "Beer Selection",
-    items: ["Domestic Beer Pints", "Japanese Beer Selections"],
-    price: "$3",
+    category: "Japanese Draft Beer",
+    items: ["Sapporo Draft", "Asahi Draft", "Kirin Draft"],
+    price: "$4",
     emoji: "🍺",
+  },
+  {
+    category: "Sake",
+    items: ["House Sake (hot or cold)", "Premium Sake", "Sake Flights"],
+    price: "$5",
+    emoji: "🍶",
+  },
+  {
+    category: "Wine",
+    items: ["House Wine by the Glass", "Curated Selection"],
+    price: "$6",
+    emoji: "🍷",
   },
 ];
 
@@ -291,9 +291,9 @@ export default function SpecialsPage() {
                   Happy Hour Specials
                 </h2>
                 <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  $5 appetizers, $5 cocktails, $3 beers — at both Frisco and Lewisville.
-                  Monday – Friday, 4:00 PM – 6:00 PM<br />
-                  <span className="text-accent-red font-bold">Don&apos;t Miss Out!</span> Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktail</Link> menu.
+                  $4 Japanese draft beer, $5 sake, $6 wine at both Frisco and Lewisville.
+                  Monday through Friday, 5:00 to 6:30 PM<br />
+                  <span className="text-accent-red font-bold">Join us after work!</span> Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktail</Link> menu.
                 </p>
               </RevealSection>
             </div>
@@ -367,9 +367,9 @@ export default function SpecialsPage() {
                   Lunch Specials
                 </h2>
                 <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  Monday – Friday, 11:00 AM – 2:30 PM<br />
-                  Weekend 11:30 AM – 2:30 PM<br />
-                  <span className="text-deep-indigo font-bold">Affordable Quality Cuisine</span> — get inspired with our <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:underline">hibachi lunch ideas</Link>
+                  Monday through Friday, 11:00 AM to 2:30 PM<br />
+                  Weekend 11:30 AM to 2:30 PM<br />
+                  <span className="text-deep-indigo font-bold">Affordable Quality Cuisine.</span> Get inspired with our <Link href="/blog/hibachi-lunch-ideas" className="text-deep-indigo hover:underline">hibachi lunch ideas</Link>
                 </p>
               </RevealSection>
             </div>
@@ -583,15 +583,15 @@ export default function SpecialsPage() {
               {[
                 {
                   q: "Does Jinbeh have happy hour?",
-                  a: "Yes! We offer Happy Hour Monday through Friday, 4:00 PM - 6:00 PM. Enjoy $5 select appetizers, $5 select cocktails and sake, and $3 domestic beers. It&apos;s the perfect time to unwind after work.",
+                  a: "Yes! Jinbeh Happy Hour runs Monday through Friday, 5:00 to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both our Frisco and Lewisville locations.",
                 },
                 {
-                  q: "What are Jinbeh&apos;s lunch specials?",
-                  a: "We offer fantastic lunch specials Monday through Friday, 11:00 AM - 2:30 PM (weekends 11:30 AM - 2:30 PM). Choose from bento boxes starting at $12.95, hibachi lunch combos from $13.95, and fresh sushi lunch specials. All dishes are affordable without compromising quality.",
+                  q: "What are Jinbeh's lunch specials?",
+                  a: "We offer fantastic lunch specials Monday through Friday, 11:00 AM to 2:30 PM (weekends 11:30 AM to 2:30 PM). Choose from bento boxes starting at $12.95, hibachi lunch combos from $13.95, and fresh sushi lunch specials. All dishes are affordable without compromising quality.",
                 },
                 {
                   q: "When is happy hour at Jinbeh?",
-                  a: "Happy Hour runs Monday through Friday from 4:00 PM to 6:00 PM. This is our weekday special time for drink deals, including $1 sake and discounted rolls. It&apos;s perfect for after-work gatherings and date night pre-dinner drinks.",
+                  a: "Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine. It is perfect for after-work gatherings and date night pre-dinner drinks.",
                 },
               ].map((faq, i) => (
                 <details key={i} className="bg-warm-ivory rounded-xl shadow-md overflow-hidden group">

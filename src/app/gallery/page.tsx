@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import SocialProofVideo from "@/components/SocialProofVideo";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
@@ -481,6 +482,36 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Featured On — DFW Moms paid partnership reel (Apr 2026) */}
+        <section className="py-20 bg-warm-ivory border-y border-stone-200">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <div className="text-center mb-10">
+              <p className="text-accent-red font-bold tracking-wider uppercase mb-2 text-sm">
+                As Seen On Instagram
+              </p>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                Featured by @dfwmoms
+              </h2>
+              <p className="text-charcoal/70 max-w-2xl mx-auto">
+                A 53-second look at family hibachi night at Jinbeh Frisco, captured
+                by one of DFW&apos;s biggest mom communities.
+              </p>
+            </div>
+            <SocialProofVideo
+              basePath="videos/jinbeh-frisco-family-hibachi-dinner-as-seen-on-dfw-moms"
+              poster="/videos/jinbeh-frisco-family-hibachi-dinner-as-seen-on-dfw-moms-poster.jpg"
+              width={720}
+              height={1280}
+              title="Family hibachi night at Jinbeh Frisco"
+              attribution="A paid partnership with @dfwmoms &mdash; the BEST family dinner spot in DFW."
+              description="Hibachi chefs entertaining the kids, fresh sushi for the parents, and the whole family eating together. That's a typical Thursday at Jinbeh."
+              contentUrl="https://www.instagram.com/dfwmoms/reel/DXmPlsfgvqW/"
+              uploadDate="2026-04-26"
+              durationSeconds={53}
+            />
           </div>
         </section>
 

@@ -472,7 +472,7 @@ export default function TopFriscoRestaurants() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Frisco dining insider tip:</strong> The best way to experience Frisco's dining scene is to make a night of it—start with Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted appetizers and drinks, then stay for a full hibachi dinner. Weeknight visits (Tue-Thu) offer shorter wait times and a more intimate chef experience. Want to try the best of our menu? Ask for the "Jinbeh Sampler" which lets you taste our top rolls alongside hibachi favorites. <a href="tel:2146191200" className="text-accent-red hover:underline">Reserve now: (214) 619-1200</a>
+                                        <strong>Frisco dining insider tip:</strong> The best way to experience Frisco's dining scene is to make a night of it—start with Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for $4 draft beer, $5 sake, and $6 wine, then stay for a full hibachi dinner. Weeknight visits (Tue-Thu) offer shorter wait times and a more intimate chef experience. Want to try the best of our menu? Ask for the "Jinbeh Sampler" which lets you taste our top rolls alongside hibachi favorites. <a href="tel:2146191200" className="text-accent-red hover:underline">Reserve now: (214) 619-1200</a>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

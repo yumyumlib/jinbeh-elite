@@ -324,7 +324,7 @@ export default function AdultBirthdayPartyIdeas() {
                                         Host a wine or beer tasting event where guests can sample a variety of beverages. You can hire
                                         a sommelier or expert to guide the tasting and provide interesting insights. Consider pairing with our{" "}
                                         <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link>{" "}
-                                        options at Jinbeh for a unique Japanese twist on the classic tasting experience. Our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> also features discounted sake and appetizers perfect for a pre-party warm up.
+                                        options at Jinbeh for a unique Japanese twist on the classic tasting experience. Our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> also features $5 sake and $4 draft beer, perfect for a pre-party warm up.
                                     </p>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

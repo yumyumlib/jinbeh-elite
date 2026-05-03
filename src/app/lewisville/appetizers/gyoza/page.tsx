@@ -73,7 +73,7 @@ const faqSchema = {
       "name": "Can I order Gyoza for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Gyoza are featured during our happy hour. Call (972) 221-3888 for current specials."
+        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy $4 draft beer, $5 sake, and $6 wine alongside favorites like Gyoza. Call (972) 221-3888 for details."
       }
     },
     {

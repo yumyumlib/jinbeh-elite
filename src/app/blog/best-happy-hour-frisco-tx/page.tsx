@@ -51,7 +51,7 @@ const faqSchema = {
         },
         {
             "@type": "Question",
-            name: "Does Jinbeh have sushi happy hour specials?",
+            name: "What drink specials does Jinbeh offer during happy hour?",
             acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes! Our happy hour features $4 Japanese draft beer, $5 sake, and $6 wine. It is the perfect way to enjoy great drinks at great prices.",
@@ -70,7 +70,7 @@ const faqSchema = {
             name: "Is Jinbeh's happy hour family-friendly?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Absolutely! Kids are welcome during happy hour. We have a children's menu, and parents can enjoy discounted drinks while kids enjoy sushi and appetizers.",
+                text: "Absolutely! Kids are welcome during happy hour. We have a children's menu, and parents can enjoy $4 Japanese draft beer, $5 sake, or $6 wine while the kids enjoy fresh sushi and hibachi from our regular menu.",
             },
         },
         {
@@ -313,7 +313,7 @@ export default function BestHappyHourFrisco() {
 
                                         <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
                                             <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Does Jinbeh have sushi happy hour specials?
+                                                What drink specials does Jinbeh offer during happy hour?
                                                 <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
@@ -343,7 +343,7 @@ export default function BestHappyHourFrisco() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Absolutely! We treat every guest like family. Kids are welcome during happy hour. We have a children's menu, and parents enjoy discounted drinks while kids enjoy sushi and appetizers. It's a celebration for everyone!
+                                                    Absolutely! We treat every guest like family. Kids are welcome during happy hour. We have a children's menu, and parents enjoy $4 Japanese draft beer, $5 sake, or $6 wine while the kids enjoy fresh sushi and hibachi from the regular menu. It's a celebration for everyone!
                                                 </p>
                                             </div>
                                         </details>

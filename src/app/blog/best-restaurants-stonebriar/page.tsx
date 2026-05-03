@@ -61,7 +61,7 @@ const faqs = [
     },
     {
         question: "Are there happy hour deals near Stonebriar Mall?",
-        answer: "Yes! Several restaurants near Stonebriar offer happy hour specials. Jinbeh's happy hour features discounted sake, beer, and appetizers—perfect for unwinding after a shopping trip. Check our happy hour page for current deals and hours.",
+        answer: "Yes! Several restaurants near Stonebriar offer happy hour specials. Jinbeh's happy hour features $4 draft beer, $5 sake, and $6 wine, perfect for unwinding after a shopping trip. Check our happy hour page for current deals and hours.",
     },
 ];
 
@@ -413,7 +413,7 @@ export default function BestRestaurantsStonebriar() {
                                     <ul className="space-y-2">
                                         <li><strong>Make reservations for weekends</strong> — The popular spots fill up fast, especially Friday and Saturday evenings.</li>
                                         <li><strong>Try <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline">lunch specials</Link></strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
-                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> deals</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> or other spots for discounted drinks and appetizers before dinner.</li>
+                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> drinks</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> for $4 Japanese draft beer, $5 sake, and $6 wine (Mon–Fri 5–6:30 PM) before dinner.</li>
                                         <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
                                     </ul>
 

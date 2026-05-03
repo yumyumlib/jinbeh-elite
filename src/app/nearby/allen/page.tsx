@@ -303,7 +303,7 @@ export default function AllenNearbyPage() {
                   Full Bar & Happy Hour
                 </h3>
                 <p className="text-charcoal/70">
-                  Enjoy premium sake, craft cocktails, and select wines. Ask about our Happy Hour specials featuring discounted appetizers and drinks.
+                  Jinbeh Happy Hour: $4 Japanese draft beer, $5 sake, $6 wine. Monday through Friday, 5:00 to 6:30 PM at both locations.
                 </p>
               </div>
 

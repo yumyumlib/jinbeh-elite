@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SocialProofVideo from "@/components/SocialProofVideo";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -284,6 +285,38 @@ export default function FamilyGatheringsPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
+          </div>
+        </section>
+
+        {/* Featured On — DFW Moms paid partnership reel (Apr 2026) */}
+        <section className="py-20 bg-white border-b border-stone-200">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <div className="text-center mb-10">
+              <p className="text-accent-red font-bold tracking-wider uppercase mb-2 text-sm">
+                A Real Family Night
+              </p>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                Watch a DFW Mom&apos;s Family Hibachi Night at Jinbeh
+              </h2>
+              <p className="text-charcoal/70 max-w-2xl mx-auto">
+                In April 2026, the @dfwmoms team brought their kids in for a family
+                dinner at our Frisco location. This is what a typical family hibachi
+                night actually looks like &mdash; fire tricks, the onion volcano, and
+                kids having the time of their lives.
+              </p>
+            </div>
+            <SocialProofVideo
+              basePath="videos/jinbeh-frisco-family-hibachi-dinner-as-seen-on-dfw-moms"
+              poster="/videos/jinbeh-frisco-family-hibachi-dinner-as-seen-on-dfw-moms-poster.jpg"
+              width={720}
+              height={1280}
+              title="Family hibachi night at Jinbeh Frisco"
+              attribution="A paid partnership with @dfwmoms &mdash; one of DFW's biggest mom-focused communities."
+              description="If you're planning your next family dinner, this is what the experience looks like. Communal hibachi tables, kids entertained by the chefs, and the whole family eating together."
+              contentUrl="https://www.instagram.com/dfwmoms/reel/DXmPlsfgvqW/"
+              uploadDate="2026-04-26"
+              durationSeconds={53}
+            />
           </div>
         </section>
 

@@ -45,13 +45,13 @@ const lewisville = locations.locations.lewisville;
 const specialsData = [
   {
     title: "Happy Hour Specials",
-    time: "Monday – Friday, 4:00 PM – 6:00 PM",
+    time: "Monday – Friday, 5:00 PM – 6:30 PM",
     emoji: "🍸",
     color: "from-accent-red to-deep-indigo",
     items: [
-      { label: "$5 Appetizers", desc: "Gyoza, Edamame, Spicy Tuna Crispy Rice" },
-      { label: "$5 Cocktails & Sake", desc: "Select premium sake, Tokyo Mule, Lychee Martini" },
-      { label: "$3 Domestic Beer", desc: "Perfect way to unwind after work" },
+      { label: "$4 Japanese Draft Beer", desc: "Sapporo, Asahi, Kirin, and more on draft" },
+      { label: "$5 Sake", desc: "Hot or cold, from our curated selection" },
+      { label: "$6 Wine", desc: "Curated wines by the glass" },
     ],
   },
   {

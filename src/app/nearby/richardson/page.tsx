@@ -143,7 +143,7 @@ const faqSchema = {
       name: "Do you have sushi happy hour near Richardson?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Ask about our Happy Hour specials featuring discounted sushi rolls, appetizers, and drinks. It's a great way to enjoy premium sushi at special prices. Call Frisco at (214) 619-1200 for details.",
+        text: "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both locations. Call Frisco at (214) 619-1200 for details.",
       },
     },
     {

@@ -942,13 +942,13 @@ export default function TypesOfSakeExplained() {
                                     </h2>
 
                                     <p className="mb-6">
-                                        Ready to explore different sake types? Jinbeh's Happy Hour is the perfect opportunity to sample varieties and discover your favorite. We offer special pricing on select sakes and appetizers—the ideal pairing for sake exploration.
+                                        Ready to explore different sake types? Jinbeh Happy Hour is the perfect opportunity to sample varieties and discover your favorite. Enjoy $5 sake, $4 Japanese draft beer, and $6 wine every Monday through Friday from 5:00 to 6:30 PM.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-deep-indigo/10 rounded-2xl p-8 my-8">
                                         <h3 className="font-heading font-bold text-xl text-charcoal mb-4">🎊 Happy Hour Sake Tastings</h3>
                                         <p className="text-charcoal/80 mb-6">
-                                            Our bartenders can guide you through different sake types with appetizers specifically chosen to highlight each variety's best qualities. It's the perfect way to learn what you love.
+                                            Our bartenders can guide you through different sake types and recommend pairings to highlight each variety's best qualities. It's the perfect way to learn what you love.
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-4">
                                             <Link href="/happy-hour" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">

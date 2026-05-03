@@ -81,7 +81,7 @@ const faqSchema = {
       "name": "Is Shrimp Tempura good for sharing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $12.95, Shrimp Tempura is perfect for sharing and is one of our most popular appetizers. Featured in happy hour specials."
+        "text": "Absolutely! At $12.95, Shrimp Tempura is perfect for sharing and is one of our most popular appetizers. Pair with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm)."
       }
     },
     {

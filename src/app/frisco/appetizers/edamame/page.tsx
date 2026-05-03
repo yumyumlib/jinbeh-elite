@@ -89,7 +89,7 @@ const faqSchema = {
       "name": "Is Edamame available for takeout and specials?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Edamame at $5.95 travels well for takeout and is featured in our happy hour specials. Call (214) 619-1200 or order online."
+        "text": "Yes! Edamame at $5.95 travels well for takeout and is a great pairing with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm). Call (214) 619-1200 or order online."
       }
     }
   ]

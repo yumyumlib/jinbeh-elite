@@ -81,7 +81,7 @@ const faqSchema = {
       "name": "Is Tuna Tartare good for sharing and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $15.95, Tuna Tartare is perfect for sharing and featured in many happy hour specials. An elegant appetizer for groups and special occasions."
+        "text": "Absolutely! At $15.95, Tuna Tartare is perfect for sharing and a great starter for groups. Pair with $5 sake during Happy Hour (Mon-Fri 5-6:30pm). An elegant appetizer for groups and special occasions."
       }
     },
     {

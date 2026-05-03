@@ -41,7 +41,7 @@ const faqs = [
     },
     {
         question: "Does Jinbeh have happy hour drink specials?",
-        answer: "Yes! Our happy hour features discounted beer, sake, cocktails, and appetizers. Hours vary by location. Visit our happy hour page or call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for current happy hour times and specials.",
+        answer: "Yes! Our happy hour features $4 Japanese draft beer, $5 sake, and $6 wine. Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations.",
     },
     {
         question: "What is the difference between Sapporo, Asahi, and Kirin?",

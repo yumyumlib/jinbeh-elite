@@ -81,7 +81,7 @@ const faqSchema = {
       "name": "Is Soft Shell Crab good for sharing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $14.95, Soft Shell Crab is perfect for sharing and is one of our most requested appetizers. Featured in many happy hour specials."
+        "text": "Absolutely! At $14.95, Soft Shell Crab is perfect for sharing and is one of our most requested appetizers. Pair with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm)."
       }
     },
     {

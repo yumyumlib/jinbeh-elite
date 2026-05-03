@@ -130,7 +130,7 @@ const categories = {
       { slug: "ramune-soda-guide", title: "Ramune Soda Guide", image: "/images/instagram/mochi-desserts.jpg", excerpt: "The iconic marble-sealed Japanese soda — flavors and history." },
     ],
     faq: [
-      { q: "What time is happy hour at Jinbeh?", a: "Jinbeh's happy hour runs Monday through Friday from 4:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy discounted drinks, appetizers, and bar snacks." },
+      { q: "What time is happy hour at Jinbeh?", a: "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine." },
       { q: "Does Jinbeh serve sake?", a: "Yes! Jinbeh offers a curated sake menu including Junmai, Daiginjo, Nigori (unfiltered), and hot sake. We also offer sake flights so you can sample multiple varieties. Ask your server for a pairing recommendation with your sushi or hibachi." },
       { q: "What Japanese cocktails does Jinbeh offer?", a: "Our bar features signature Japanese-inspired cocktails including the Jinbeh Punch, Spicy Margarita with yuzu, Mango Tango, Mule Summer, and classic Japanese highballs made with Suntory whiskey." },
       { q: "Can I sit at the bar without a reservation?", a: "Yes! Bar seating at Jinbeh is first-come, first-served — no reservation needed. It's a great spot for happy hour drinks and watching our sushi chefs at work." },

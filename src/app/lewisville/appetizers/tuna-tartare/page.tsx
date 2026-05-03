@@ -70,10 +70,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Can I order Tuna Tartare for happy hour?",
+      "name": "Can I order Tuna Tartare during Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check our happy hour specials! Many appetizers including items similar to Tuna Tartare are featured during our happy hour. Call (972) 221-3888 for current specials."
+        "text": "Yes — Tuna Tartare is on the regular menu and pairs beautifully with our Happy Hour drinks: $4 Japanese draft beer, $5 sake, and $6 wine (Mon-Fri 5:00-6:30 PM). Note that Happy Hour pricing applies to drinks only. Call (972) 221-3888 for details."
       }
     },
     {

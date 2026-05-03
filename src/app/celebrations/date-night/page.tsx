@@ -294,9 +294,9 @@ export default function DateNightPage() {
                     Start with Happy Hour
                   </h3>
                   <p className="text-charcoal/70 mb-4">
-                    Make your date night even better with our Happy Hour specials!
-                    Discounted drinks and appetizers are the perfect way to kick things off.
-                    Check our Happy Hour page for current specials and hours.
+                    Make your date night even better with our Happy Hour drinks!
+                    $4 Japanese draft beer, $5 sake, and $6 wine — Mon–Fri 5:00 to 6:30 PM —
+                    are the perfect way to kick things off.
                   </p>
                   <Link
                     href="/happy-hour"

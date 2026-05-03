@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { QuoteStrip } from "@/components/CustomerVoice";
 import Image from "next/image";
 import Link from "next/link";
+import SocialProofVideo from "@/components/SocialProofVideo";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
@@ -325,6 +326,39 @@ export default function AboutPage() {
               <QuoteStrip
                 quote="I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be."
                 author="Alaina T. — Google Review"
+              />
+            </RevealSection>
+          </div>
+        </section>
+
+        {/* Featured On — DFW Moms paid partnership reel (Apr 2026) */}
+        <section className="py-20 bg-warm-ivory border-b border-stone-200">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <RevealSection>
+              <div className="text-center mb-10">
+                <p className="text-accent-red font-bold tracking-wider uppercase mb-2 text-sm">
+                  Press &amp; Partnerships
+                </p>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                  Featured by DFW Moms
+                </h2>
+                <p className="text-charcoal/70 max-w-2xl mx-auto">
+                  In April 2026, the @dfwmoms team brought their family in for a
+                  hibachi night at our Frisco location. Watch the reel they made &mdash;
+                  it captures exactly what we hope every family feels at the table.
+                </p>
+              </div>
+              <SocialProofVideo
+                basePath="videos/jinbeh-frisco-family-hibachi-dinner-as-seen-on-dfw-moms"
+                poster="/videos/jinbeh-frisco-family-hibachi-dinner-as-seen-on-dfw-moms-poster.jpg"
+                width={720}
+                height={1280}
+                title="Family hibachi night at Jinbeh Frisco"
+                attribution="A paid partnership with @dfwmoms — &ldquo;If you're looking for a fun family dinner spot in DFW, we had the BEST time at Jinbeh Steak &amp; Sushi in Frisco.&rdquo;"
+                description="The kids stayed entertained by the hibachi chefs &mdash; the fire tricks, the interaction, the whole experience. That's the Jinbeh promise to every family."
+                contentUrl="https://www.instagram.com/dfwmoms/reel/DXmPlsfgvqW/"
+                uploadDate="2026-04-26"
+                durationSeconds={53}
               />
             </RevealSection>
           </div>
