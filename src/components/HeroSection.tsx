@@ -50,7 +50,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative flex items-center justify-center overflow-hidden min-h-[90vh] md:min-h-screen py-24 md:py-32">
+        <section className="relative flex items-center justify-center overflow-hidden min-h-[90vh] md:min-h-screen py-16 sm:py-24 md:py-32 w-full max-w-[100vw]">
             {/* Background Video - Vimeo embed - deferred until scroll or 4s */}
             {videoLoaded && (
                 <div className="absolute inset-0 w-full h-full z-[1]">
@@ -81,12 +81,12 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 z-[2]" />
 
             {/* Content with text shadows for better readability */}
-            <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
+            <div className="relative z-10 text-center text-white px-4 sm:px-6 max-w-5xl mx-auto w-full">
                 {/* Selling Proof — Consolidated trust line */}
                 <ScrollReveal delay={0} direction="none" noScale>
                     <div className="mb-6 flex flex-col items-center gap-3">
-                        <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
-                            <span className="inline-flex items-center gap-1.5 bg-accent-red/90 text-white px-4 py-1.5 rounded-full font-semibold tracking-wide shadow-lg">
+                        <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
+                            <span className="inline-flex items-center gap-1.5 bg-accent-red/90 text-white px-3 sm:px-4 py-1.5 rounded-full font-semibold tracking-wide shadow-lg">
                                 Award-Winning · Family-Owned Since 1988
                             </span>
                             <span className="hidden sm:inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white/90 px-4 py-1.5 rounded-full font-medium border border-white/20">
@@ -100,18 +100,22 @@ export default function HeroSection() {
                 </ScrollReveal>
 
                 {/* SEO-optimized H1 - rich with location + cuisine keywords */}
-                <h1 className="font-heading font-medium tracking-wide text-warm-ivory/90 mb-4 max-w-3xl mx-auto"
-                    style={{ fontSize: '1.125rem', textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
+                <h1 className="text-sm sm:text-base md:text-lg font-heading font-medium tracking-wide text-warm-ivory/90 mb-3 sm:mb-4 max-w-3xl mx-auto break-words text-balance leading-snug"
+                    style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
                     DFW&apos;s Premier Japanese, Hibachi, and Premium Sushi Experience in Frisco &amp; Lewisville
                 </h1>
 
                 <ScrollReveal delay={200} direction="none" noScale>
-                    <p className="text-5xl md:text-7xl font-heading font-bold mb-4 tracking-wide italic text-white min-h-[7rem] md:min-h-[10rem] flex items-center justify-center"
+                    {/* Hook size: scales from 22px (mobile) up to ~72px (desktop). Previously locked
+                        at text-3xl/30px on mobile, which overflowed the viewport for long hooks like
+                        "When's the last time dinner was actually entertaining?". min-h scales with the
+                        font so empty space doesn't dominate above-the-fold on small screens. */}
+                    <p className="text-[1.375rem] leading-tight sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-3 sm:mb-4 tracking-tight sm:tracking-wide italic text-white min-h-[3.5rem] sm:min-h-[6rem] md:min-h-[9rem] flex items-center justify-center break-words text-balance px-1"
                         role="heading"
                         aria-level={2}
                         style={{
-                            textShadow: '3px 3px 0px rgba(0,0,0,0.9), 6px 6px 10px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.8)',
-                            WebkitTextStroke: '1px rgba(0,0,0,0.3)'
+                            textShadow: '2px 2px 0px rgba(0,0,0,0.9), 4px 4px 8px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.8)',
+                            WebkitTextStroke: '0.5px rgba(0,0,0,0.3)'
                         }}>
                         <WordRotate
                             words={hooksData.homepage.hero_hooks.map(hook => hook.text)}
@@ -121,7 +125,7 @@ export default function HeroSection() {
                 </ScrollReveal>
 
                 <ScrollReveal delay={300} direction="none" noScale>
-                    <p className="text-xl md:text-2xl text-warm-ivory mb-10 font-medium whitespace-nowrap mx-auto"
+                    <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-warm-ivory mb-8 sm:mb-10 font-medium mx-auto max-w-2xl break-words text-balance leading-snug"
                         style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.8), 4px 4px 8px rgba(0,0,0,0.5)' }}>
                         {hooksData.homepage.hero_hooks[0].subtitle}
                     </p>
@@ -129,9 +133,9 @@ export default function HeroSection() {
 
                 {/* Location Selection Cards */}
                 <ScrollReveal delay={500} direction="none" noScale>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-start mb-8">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-start mb-8">
                         {/* Frisco Location Card — compact */}
-                        <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-6 py-5 w-[280px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
+                        <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-4 py-5 sm:px-5 w-full max-w-[340px] sm:max-w-[300px] sm:w-[280px] mx-auto sm:mx-0 shadow-xl hover:border-accent-red/50 transition-all duration-300">
                             <BorderBeam size={100} duration={8} colorFrom="#C1121F" colorTo="#C9A227" />
                             <div className="text-center">
                                 <span className="inline-block bg-soft-gold/20 text-soft-gold text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-2 border border-soft-gold/30 uppercase tracking-wider">
@@ -175,7 +179,7 @@ export default function HeroSection() {
                         </div>
 
                         {/* Lewisville Location Card — compact */}
-                        <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-6 py-5 w-[280px] shadow-xl hover:border-accent-red/50 transition-all duration-300">
+                        <div className="group relative overflow-hidden bg-charcoal/40 backdrop-blur-md border border-white/25 rounded-xl px-4 py-5 sm:px-5 w-full max-w-[340px] sm:max-w-[300px] sm:w-[280px] mx-auto sm:mx-0 shadow-xl hover:border-accent-red/50 transition-all duration-300">
                             <BorderBeam size={100} duration={8} delay={4} colorFrom="#C1121F" colorTo="#C9A227" />
                             <div className="text-center">
                                 <span className="inline-block bg-soft-gold/20 text-soft-gold text-[10px] font-bold px-2.5 py-0.5 rounded-full mb-2 border border-soft-gold/30 uppercase tracking-wider">

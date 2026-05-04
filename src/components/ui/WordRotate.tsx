@@ -30,10 +30,17 @@ export function WordRotate({
   }, [words.length, duration]);
 
   return (
-    <span className={cn("inline-block relative overflow-hidden", className)}>
+    // `block` + `max-w-full` lets long hooks wrap on narrow viewports instead of
+    // overflowing the parent (which previously caused left-edge text clipping in the hero).
+    <span
+      className={cn(
+        "block relative w-full max-w-full text-balance break-words",
+        className
+      )}
+    >
       <span
         className={cn(
-          "inline-block transition-all duration-300",
+          "block transition-all duration-300",
           isAnimating
             ? "opacity-0 translate-y-4 blur-sm"
             : "opacity-100 translate-y-0 blur-0"

@@ -316,49 +316,51 @@ export default function Header({ location }: HeaderProps) {
             </button>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu — solid dark surface to match the site theme,
+              tighter row heights, clear dividers between sections, and
+              the "Catering" link styled consistently with the rest. */}
           <div
-            className={`xl:hidden border-t border-white/10 transition-all duration-300 ease-in-out ${mobileMenuOpen
-              ? "max-h-[85vh] opacity-100 py-6 overflow-y-auto"
+            className={`xl:hidden bg-charcoal backdrop-blur-xl border-t border-white/10 transition-all duration-300 ease-in-out -mx-4 lg:-mx-6 px-4 lg:px-6 ${mobileMenuOpen
+              ? "max-h-[85vh] opacity-100 py-2 overflow-y-auto"
               : "max-h-0 opacity-0 overflow-hidden"
               }`}
           >
-            <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
-              {/* Location Switcher Mobile */}
-              <div className="flex items-center gap-2 px-4 py-3 bg-white/10 rounded-xl mb-4">
-                <span className="text-sm text-white/80 font-medium mr-auto">Location:</span>
+            <nav className="flex flex-col" aria-label="Mobile navigation">
+              {/* Location Switcher Mobile — compact single-row pill */}
+              <div className="flex items-center gap-2 px-2 py-1.5 bg-white/[0.04] rounded-lg mb-1 border border-white/10">
+                <span className="text-[10px] uppercase tracking-wider text-white/50 font-semibold mr-auto">Location</span>
                 <button
                   onClick={() => setSelectedLocation("frisco")}
-                  className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${selectedLocation === "frisco"
+                  className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold transition-all ${selectedLocation === "frisco"
                     ? "bg-accent-red text-white shadow-md"
-                    : "bg-white/20 text-white hover:bg-white/30"
+                    : "bg-white/10 text-white/80 hover:bg-white/20"
                     }`}
                 >
                   Frisco
                 </button>
                 <button
                   onClick={() => setSelectedLocation("lewisville")}
-                  className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${selectedLocation === "lewisville"
+                  className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold transition-all ${selectedLocation === "lewisville"
                     ? "bg-accent-red text-white shadow-md"
-                    : "bg-white/20 text-white hover:bg-white/30"
+                    : "bg-white/10 text-white/80 hover:bg-white/20"
                     }`}
                 >
                   Lewisville
                 </button>
               </div>
 
-              {navItems.map((item) => (
-                <div key={item.label}>
+              {navItems.map((item, idx) => (
+                <div key={item.label} className={idx > 0 ? "border-t border-white/[0.06]" : ""}>
                   {item.megaMenu ? (
-                    <div className="mb-2">
+                    <div>
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
-                        className="w-full flex items-center justify-between px-4 py-2 text-sm font-bold text-white/90 uppercase tracking-wider hover:text-soft-gold transition-colors"
+                        className="w-full flex items-center justify-between px-3 py-2 text-[13px] font-bold text-white uppercase tracking-wider hover:text-soft-gold transition-colors"
                         aria-expanded={activeDropdown === item.label}
                       >
                         {item.label}
                         <svg
-                          className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""}`}
+                          className={`w-4 h-4 text-white/60 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""}`}
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -368,21 +370,21 @@ export default function Header({ location }: HeaderProps) {
                         </svg>
                       </button>
                       <div
-                        className={`mt-1 pl-2 border-l-2 border-soft-gold/30 ml-4 transition-all duration-200 ${activeDropdown === item.label
+                        className={`pl-2 border-l-2 border-soft-gold/30 ml-3 mb-1 transition-all duration-200 ${activeDropdown === item.label
                           ? "max-h-[1000px] opacity-100"
                           : "max-h-0 opacity-0 overflow-hidden"
                           }`}
                       >
                         {item.megaMenu.map((section) => (
-                          <div key={section.title} className="mb-3">
-                            <span className="block px-4 py-1.5 text-xs font-bold text-soft-gold/80 uppercase tracking-wider">
+                          <div key={section.title} className="mb-1.5">
+                            <span className="block px-3 py-0.5 text-[10px] font-bold text-soft-gold/80 uppercase tracking-wider">
                               {section.icon} {section.title}
                             </span>
                             {section.items.map((subItem) => (
                               <Link
                                 key={subItem.label}
                                 href={subItem.href}
-                                className="block px-4 py-2 text-white hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium text-sm"
+                                className="block px-3 py-1 text-white hover:text-soft-gold hover:bg-white/10 rounded-md transition-colors font-medium text-[13px]"
                                 onClick={() => setMobileMenuOpen(false)}
                               >
                                 {subItem.label}
@@ -392,7 +394,7 @@ export default function Header({ location }: HeaderProps) {
                         ))}
                         <Link
                           href="/blog"
-                          className="block px-4 py-3 text-soft-gold hover:text-white font-semibold text-sm border-t border-white/10 mt-2"
+                          className="block px-3 py-1.5 text-soft-gold hover:text-white font-semibold text-[13px] border-t border-white/10 mt-1"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           View All Articles &rarr;
@@ -400,15 +402,15 @@ export default function Header({ location }: HeaderProps) {
                       </div>
                     </div>
                   ) : item.dropdown ? (
-                    <div className="mb-2">
+                    <div>
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
-                        className="w-full flex items-center justify-between px-4 py-2 text-sm font-bold text-white/90 uppercase tracking-wider hover:text-soft-gold transition-colors"
+                        className="w-full flex items-center justify-between px-3 py-2 text-[13px] font-bold text-white uppercase tracking-wider hover:text-soft-gold transition-colors"
                         aria-expanded={activeDropdown === item.label}
                       >
                         {item.label}
                         <svg
-                          className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""}`}
+                          className={`w-4 h-4 text-white/60 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""}`}
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -418,8 +420,8 @@ export default function Header({ location }: HeaderProps) {
                         </svg>
                       </button>
                       <div
-                        className={`mt-1 space-y-0.5 pl-2 border-l-2 border-soft-gold/30 ml-4 transition-all duration-200 ${activeDropdown === item.label
-                          ? "max-h-[500px] opacity-100"
+                        className={`pl-2 border-l-2 border-soft-gold/30 ml-3 mb-1 transition-all duration-200 ${activeDropdown === item.label
+                          ? "max-h-[600px] opacity-100"
                           : "max-h-0 opacity-0 overflow-hidden"
                           }`}
                       >
@@ -427,23 +429,23 @@ export default function Header({ location }: HeaderProps) {
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className="block px-4 py-3 text-white hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium text-sm"
+                            className="block px-3 py-1.5 text-white hover:text-soft-gold hover:bg-white/10 rounded-md transition-colors font-medium text-[13px]"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             {subItem.label}
                             {subItem.description && (
-                              <span className="block text-xs text-white/50 mt-0.5">{subItem.description}</span>
+                              <span className="block text-[11px] text-white/50 mt-0.5">{subItem.description}</span>
                             )}
                           </Link>
                         ))}
                         {item.footerLinks && item.footerLinks.length > 0 && (
-                          <div className="border-t border-white/10 mt-2 pt-2">
-                            <span className="block px-4 py-1 text-[10px] font-bold text-white/40 uppercase tracking-widest">Guides</span>
+                          <div className="border-t border-white/10 mt-1 pt-1">
+                            <span className="block px-3 py-0.5 text-[10px] font-bold text-white/40 uppercase tracking-widest">Guides</span>
                             {item.footerLinks.map((fl) => (
                               <Link
                                 key={fl.label}
                                 href={fl.href}
-                                className="block px-4 py-2 text-white/70 hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium text-sm"
+                                className="block px-3 py-1 text-white/70 hover:text-soft-gold hover:bg-white/10 rounded-md transition-colors font-medium text-[13px]"
                                 onClick={() => setMobileMenuOpen(false)}
                               >
                                 📖 {fl.label}
@@ -454,24 +456,36 @@ export default function Header({ location }: HeaderProps) {
                       </div>
                     </div>
                   ) : (
+                    /* Plain top-level links (e.g., "Catering") — same row height +
+                       caret affordance as accordion items so the row reads as part
+                       of the same list rather than an orphaned tail. */
                     <Link
                       href={item.href}
-                      className="block px-4 py-3 text-white hover:text-soft-gold hover:bg-white/10 rounded-lg transition-colors font-medium text-sm"
+                      className="w-full flex items-center justify-between px-3 py-2 text-[13px] font-bold text-white uppercase tracking-wider hover:text-soft-gold transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
+                      <svg
+                        className="w-4 h-4 text-white/40"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </Link>
                   )}
                 </div>
               ))}
 
               {/* Mobile CTAs */}
-              <div className="mt-4 space-y-3 px-4 pt-4 border-t border-white/10">
+              <div className="mt-2 space-y-2 px-1 pt-2 border-t border-white/10">
                 {/* Phone numbers */}
                 <div className="flex gap-2">
                   <a
                     href="tel:2146191200"
-                    className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all text-sm"
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 transition-all text-sm"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -481,7 +495,7 @@ export default function Header({ location }: HeaderProps) {
                   </a>
                   <a
                     href="tel:2144882224"
-                    className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all text-sm"
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 transition-all text-sm"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -498,7 +512,7 @@ export default function Header({ location }: HeaderProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex-1 btn-shimmer bg-accent-red text-white py-3.5 rounded-xl font-bold text-sm text-center shadow-lg relative overflow-hidden"
+                    className="flex-1 btn-shimmer bg-accent-red text-white py-2.5 rounded-lg font-bold text-sm text-center shadow-lg relative overflow-hidden"
                   >
                     <svg className="w-4 h-4 inline-block mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -510,7 +524,7 @@ export default function Header({ location }: HeaderProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex-1 btn-shimmer bg-deep-indigo text-white py-3.5 rounded-xl font-bold text-sm text-center shadow-lg relative overflow-hidden"
+                    className="flex-1 btn-shimmer bg-deep-indigo text-white py-2.5 rounded-lg font-bold text-sm text-center shadow-lg relative overflow-hidden"
                   >
                     <svg className="w-4 h-4 inline-block mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
