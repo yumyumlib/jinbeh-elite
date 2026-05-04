@@ -32,12 +32,12 @@ const faqs = [
   {
     question: "What birthday freebies are available at restaurants?",
     answer:
-      "It's a celebration! Many restaurants offer free meals or desserts on birthdays. Denny's offers a free Grand Slam. Red Robin gives a free burger. Jinbeh provides complimentary birthday treats. Call your favorite spots to ask!",
+      "It's a celebration! Many restaurants offer free meals or desserts on birthdays. Denny's offers a free Grand Slam. Red Robin gives a free burger. Jinbeh treats every guest to a free birthday dessert when you dine with us, and our VIP Birthday Club members often receive bonus perks like a $25 gift card to use during their birthday month. Call your favorite spots to ask!",
   },
   {
     question: "When do I need to sign up for birthday freebies?",
     answer:
-      "Sign up before your birthday! Join loyalty programs 1-2 months ahead. Most stores activate offers before your special day. Some give freebies year-round to members.",
+      "Sign up before your birthday! Join loyalty programs 1-2 months ahead. Most stores activate offers before your special day. Jinbeh's VIP Birthday Club is a great example — sign up at jinbeh.com/vip and members can receive special offers like a $25 gift card during their birthday month, on top of the free birthday dessert every birthday guest gets.",
   },
   {
     question: "Do birthday freebies have any restrictions?",
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "Why celebrate at Jinbeh for your birthday?",
     answer:
-      "Welcome to the table! We offer complimentary birthday treats, special songs, and our famous hibachi entertainment. Dinner and a show! Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
+      "Welcome to the table! Birthday guests get a free birthday dessert plus our famous three-touch birthday celebration from the host, server, and chef. Join the VIP Birthday Club for bonus perks like a $25 gift card to use during your birthday month. Dinner and a show! Call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
   },
   {
     question: "Can I combine birthday deals with other promotions?",
@@ -57,7 +57,7 @@ const faqs = [
   {
     question: "Do I need to show ID to get birthday freebies?",
     answer:
-      "Most restaurants require a valid photo ID showing your birth date. Some loyalty programs verify through their app, so no ID is needed. At Jinbeh, simply mention your birthday when making a reservation and bring your ID when you visit. We'll take care of the rest and make sure you feel celebrated!",
+      "Most restaurants require a valid photo ID showing your birth date. Some loyalty programs verify through their app, so no ID is needed. At Jinbeh, simply mention your birthday when making a reservation and bring your ID when you visit. Your free birthday dessert is on us, and if you're a VIP Birthday Club member, you can apply your $25 birthday-month gift card the same evening.",
   },
 ];
 
@@ -315,15 +315,22 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <h2>Unique Birthday Freebies Worth Exploring</h2>
 
-      <h3>Jinbeh: Complimentary Birthday Meal Experience</h3>
+      <h3>Jinbeh: Free Birthday Dessert + VIP Birthday Club Perks</h3>
 
       <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
-        <p className="italic text-charcoal/80 mb-2">
-          "My birthday celebration at Jinbeh was absolutely amazing! The free
-          meal was incredible, and the hibachi show made it truly special. I'll
-          definitely celebrate here again next year!"
+        <p className="text-charcoal/80 mb-0">
+          At Jinbeh, your birthday isn&apos;t just a meal — it&apos;s a tableside
+          celebration. Mention your birthday when you reserve, and we&apos;ll bring
+          out a <strong>free birthday dessert</strong> at the end of your hibachi
+          experience. The full three-touch celebration from the host, server, and
+          chef makes the moment unmistakably yours. And if you&apos;re a{" "}
+          <Link href="/vip" className="text-accent-red hover:underline">
+            VIP Birthday Club
+          </Link>{" "}
+          member, you&apos;ll often receive bonus perks during your birthday month —
+          like a <strong>$25 gift card</strong> you can apply toward dinner that
+          same evening.
         </p>
-        <p className="text-sm text-charcoal/80">— Jinbeh Birthday Guest</p>
       </div>
 
       <DidYouKnow
@@ -332,13 +339,14 @@ export default function FreeBirthdayFoodDealsPage() {
       />
 
       <p>
-        If you're a Japanese cuisine fan, Jinbeh offers a fantastic option—a
-        complimentary birthday meal. This is a perfect choice for those seeking
-        to enjoy{" "}
+        If you&apos;re a Japanese cuisine fan, Jinbeh offers a memorable birthday
+        option — a free birthday dessert paired with the full hibachi experience.
+        It&apos;s the perfect choice for those seeking to enjoy{" "}
         <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
-          types of sushi
+          fresh sushi
         </Link>{" "}
-        or hibachi experiences on their special day.
+        or a tableside hibachi performance on their special day, with something
+        sweet on the house at the end of the meal.
       </p>
 
       <p>
@@ -350,22 +358,43 @@ export default function FreeBirthdayFoodDealsPage() {
         <Link href="/lewisville" className="text-accent-red hover:underline">
           Lewisville
         </Link>
-        , Jinbeh is known for authentic Japanese dishes. A complimentary meal
-        here allows you to savor exquisite flavors and artistry of Japanese
-        cuisine on your birthday.
+        , Jinbeh is known for authentic Japanese dishes. The complimentary
+        birthday dessert lets you cap off an evening of premium hibachi steak,
+        fresh sushi, and warm hospitality with a sweet finish — no add-on, no
+        catch, just a thank-you for celebrating with us.
       </p>
 
       <p>
         The hibachi experience at Jinbeh is interactive and entertaining, making
         it perfect for <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebrations</Link>. Watching skilled chefs prepare
         your meal with flair adds excitement and spectacle to your dining.
-        Jinbeh's warm hospitality and elegant setting create memorable
-        experiences beyond just food—attention to detail in service and
-        presentation ensures your birthday meal is truly special.
+        Jinbeh&apos;s warm hospitality and elegant setting create memorable
+        experiences beyond just food — attention to detail in service and
+        presentation ensures your birthday is truly special.
       </p>
 
       <p>
-        Call ahead to claim your birthday offer:
+        <strong>Want bigger birthday perks?</strong> Join the{" "}
+        <Link href="/vip" className="text-accent-red hover:underline">
+          Jinbeh VIP Birthday Club
+        </Link>
+        . Members often receive a <strong>$25 gift card</strong> to use during
+        their birthday month, alongside the free birthday dessert every birthday
+        guest gets. Sign up a few weeks before your birthday so the perks land in
+        your inbox before you celebrate, then bring the family in for hibachi at{" "}
+        <Link href="/frisco" className="text-accent-red hover:underline">
+          Frisco
+        </Link>{" "}
+        or{" "}
+        <Link href="/lewisville" className="text-accent-red hover:underline">
+          Lewisville
+        </Link>
+        .
+      </p>
+
+      <p>
+        Call ahead to reserve your hibachi table and let us know it&apos;s a
+        birthday:
       </p>
 
       <ul>
@@ -519,22 +548,29 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <p>
         Plan ahead, sign up for programs, and enjoy all the delicious freebies
-        your birthday offers. Don't forget to share your birthday experiences
+        your birthday offers. Don&apos;t forget to share your birthday experiences
         and let others know where they can find the best birthday freebies. By
         celebrating with free treats each year, you build lasting traditions
-        becoming cherished memories. If you'd like to plan something more special,
-        check out our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration ideas</Link> or{" "}
-        <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link> at
-        Jinbeh for an unforgettable experience. Here's to a year filled with joy, happiness,
-        and plenty of free birthday treats! You can also surprise someone with a{" "}
+        becoming cherished memories. If you&apos;d like to plan something more
+        special, join the{" "}
+        <Link href="/vip" className="text-accent-red hover:underline">
+          Jinbeh VIP Birthday Club
+        </Link>{" "}
+        for member perks like a $25 gift card during your birthday month, check
+        out our{" "}
+        <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebration ideas</Link>, or{" "}
+        <Link href="/reservations" className="text-accent-red hover:underline">make a reservation</Link>{" "}
+        at Jinbeh for a birthday dinner with a free dessert and a hibachi show.
+        Here&apos;s to a year filled with joy, happiness, and plenty of birthday
+        treats! You can also surprise someone with a{" "}
         <Link href="/gift-cards" className="text-accent-red hover:underline">
           Jinbeh gift card
         </Link>{" "}
-        for a birthday they'll remember.
+        for a birthday they&apos;ll remember.
       </p>
 
       <ProTip variant="insider">
-        <strong>Birthday freebie insider tip:</strong> At Jinbeh, mention your birthday when making a reservation and our team will prepare a complimentary birthday treat. The hibachi experience itself is the real gift — your chef performs fire tricks, knife skills, and the famous onion volcano right at your table. Pro move: start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks before the show. <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
+        <strong>Birthday freebie insider tip:</strong> At Jinbeh, mention your birthday when making a reservation and our team will bring out a <strong>free birthday dessert</strong> at the end of your hibachi show. Sign up for the <Link href="/vip" className="text-accent-red hover:underline">VIP Birthday Club</Link> a few weeks ahead to unlock member perks like a <strong>$25 gift card</strong> to use during your birthday month — that turns a free dessert into a fully discounted birthday dinner. The hibachi experience itself is the real gift: your chef performs fire tricks, knife skills, and the famous onion volcano right at your table. Pro move: start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks before the show. <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
       </ProTip>
 
       <PillarCTA type="catering" />
