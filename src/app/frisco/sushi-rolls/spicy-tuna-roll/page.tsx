@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Spicy Tuna Roll",
   "description": "Fresh tuna with spicy mayo and scallions",
-  "offers": {
-    "@type": "Offer",
-    "price": "11.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SpicyTunaRollFriscoPage() {
   const item = { ...getMenuItem("spicy-tuna-roll", "sushi-rolls")!, jinbehStory: "Our spicy tuna roll features our house-made Blaster sauce — Jinbeh's spicy option that even non-spicy customers handle fine. For the truly bold, we keep a secret sriracha-togarashi paste that brings real heat." };

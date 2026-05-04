@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Seafood Trio",
   "description": "Shrimp, scallops, and lobster",
-  "offers": {
-    "@type": "Offer",
-    "price": "52.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Is Seafood Trio good for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $52.95, it's luxurious yet affordable compared to steak combos. Perfect for anniversaries, engagements, or celebrations. Three premium proteins showcase the ultimate hibachi experience."
+        "text": "Absolutely! At, it's luxurious yet affordable compared to steak combos. Perfect for anniversaries, engagements, or celebrations. Three premium proteins showcase the ultimate hibachi experience."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSeafoodFriscoPage() {
   const item = getMenuItem("combo-seafood", "hibachi")!;

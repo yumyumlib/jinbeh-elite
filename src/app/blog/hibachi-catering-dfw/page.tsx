@@ -65,7 +65,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

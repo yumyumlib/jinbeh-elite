@@ -92,7 +92,6 @@ export default function GiftCardsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
             {/* Hero */}
             <HeroSection className="relative py-20 bg-gradient-to-br from-deep-indigo to-charcoal text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-20">

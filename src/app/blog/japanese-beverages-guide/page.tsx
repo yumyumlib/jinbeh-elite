@@ -33,7 +33,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -109,7 +108,7 @@ export default function JapaneseBeveragesGuide() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8">
-        Most Americans know green tea and sake. That's about 10% of what Japan actually drinks. From the marble-sealed Ramune bottle your kids will obsess over to the $60 unfiltered sake that looks like milk, Japanese beverages are an adventure you haven't taken yet.
+        Most Americans know green tea and sake. That's about 10% of what Japan actually drinks. From the marble-sealed Ramune bottle your kids will obsess over to the unfiltered sake that looks like milk, Japanese beverages are an adventure you haven't taken yet.
       </p>
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-deep-indigo/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
@@ -120,7 +119,7 @@ export default function JapaneseBeveragesGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍵 Traditional Tea & Spirits</h2>
 
                             <DidYouKnow
-                                fact="Japan has over 5.5 million vending machines—the highest density in the world—serving everything from hot matcha and canned coffee to fresh sake. The Japanese beverage market is worth $150 billion annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
+                                fact="Japan has over 5.5 million vending machines—the highest density in the world—serving everything from hot matcha and canned coffee to fresh sake. The Japanese beverage market is worth billion annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
                                 source="Japan Vending Machine Manufacturers Association"
                             />
                             <p className="text-charcoal/80 mb-4">Japan's tea culture is deeply rooted in history, with beverages that have been perfected over centuries. These drinks offer refreshment, wellness benefits, and cultural significance.</p>

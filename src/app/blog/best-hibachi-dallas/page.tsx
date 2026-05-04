@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How much does hibachi dinner cost in Dallas?",
     answer:
-      "Hibachi dinner prices in Dallas typically range from $25-$45 per person for entrees like chicken, steak, or shrimp. Premium options like filet mignon or lobster can run $40-$60+. Lunch specials offer better value, often $15-$25 per person. At Jinbeh, our lunch hibachi starts at just $12.95. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for pricing details.",
+      "Hibachi dinner prices in Dallas typically range from per person for entrees like chicken, steak, or shrimp. Premium options like filet mignon or lobster can run +. Lunch specials offer better value, often per person. At Jinbeh, our lunch hibachi starts at just. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for pricing details.",
   },
   {
     question: "Do I need reservations for hibachi in Dallas?",
@@ -65,8 +65,6 @@ const faqs = [
       "Walk-ins are welcome at Jinbeh, but wait times can be longer — especially on Friday and Saturday evenings. Hibachi tables seat 7–8 guests (larger groups accommodated with advance notice by joining tables), so we need to wait until a full table is ready. For the best experience, we always recommend calling ahead. Weekday lunches and early dinners (before 6pm) typically have the shortest wait times.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -292,30 +290,29 @@ export default function BestHibachiDallasPage() {
       <p>
         What sets Jinbeh apart? Our chefs don't just go through the motions.
         They read the table—turning up the entertainment for kids'{" "}
-        <Link
-          href="/blog/hibachi-birthday-party-ideas"
-          className="text-accent-red hover:underline"
-        >
-          birthday parties
-        </Link>
-        , creating a romantic atmosphere for couples, and making sure everyone
-        leaves with leftovers and stories to share.
-      </p>
+ <Link
+ href="/blog/hibachi-birthday-party-ideas"
+ className="text-accent-red hover:underline"
+ >
+ birthday parties
+ </Link>, creating a romantic atmosphere for couples, and making sure everyone
+ leaves with leftovers and stories to share.
+ </p>
 
-      <p>
-        <strong>Location:</strong> Frisco (near Stonebriar Centre) & Lewisville
-        (off I-35E)<br />
-        <strong>Best For:</strong> Birthdays, family celebrations, groups<br />
-        <strong>Price Range:</strong> $$<br />
-        <strong>Must Try:</strong> Filet Mignon Hibachi, Fresh Sushi Combo
-      </p>
+ <p>
+ <strong>Location:</strong> Frisco (near Stonebriar Centre) & Lewisville
+ (off I-35E)<br />
+ <strong>Best For:</strong> Birthdays, family celebrations, groups<br />
+ <strong>Price Range:</strong> $$<br />
+ <strong>Must Try:</strong> Filet Mignon Hibachi, Fresh Sushi Combo
+ </p>
 
-      <h3>2. Benihana (Multiple Dallas Locations)</h3>
+ <h3>2. Benihana (Multiple Dallas Locations)</h3>
 
-      <p>
-        The name that started it all in America. Benihana brought teppanyaki to
-        the mainstream and maintains consistent quality across its Dallas-area
-        locations. It's a solid choice for those seeking a predictable,
+ <p>
+ The name that started it all in America. Benihana brought teppanyaki to
+ the mainstream and maintains consistent quality across its Dallas-area
+ locations. It's a solid choice for those seeking a predictable,
         corporate hibachi experience.
       </p>
 
@@ -460,7 +457,6 @@ export default function BestHibachiDallasPage() {
               "Standardized menu and portions",
               "Rotating staff with varied training",
               "Pre-portioned, often frozen proteins",
-              "Corporate atmosphere",
               "Higher price point for brand name"
             ],
             highlight: false,
@@ -482,14 +478,10 @@ export default function BestHibachiDallasPage() {
         vsLabel="VS"
       />
 
-
       <h2>Best Value: Hibachi Lunch Specials</h2>
 
       <p>
-        Here's a local secret: hibachi lunch is often the best deal in town.
-        At Jinbeh, our lunch specials start at just $12.95 for the same quality hibachi experience you'd get
-        at dinner—just slightly smaller portions. You still get the show, the
-        soup, the salad, everything. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all options.
+        Here's a local secret: hibachi lunch is often the best deal in town. At Jinbeh, our <Link href="/specials#hibachi-for-two" className="text-accent-red hover:underline">Hibachi for Two lunch special</Link> is just $35 Monday through Friday for two hibachi entrees: chicken, steak, shrimp, salmon, or veggie. You get the same quality hibachi experience you'd get at dinner with slightly smaller portions, plus the show, the soup, the salad, everything. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all options.
       </p>
 
       <p>

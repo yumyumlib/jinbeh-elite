@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 const faqs = [
     { question: "What does omakase mean?", answer: "Omakase means 'I trust you' in Japanese. You entrust the sushi chef to select and prepare dishes, showcasing their expertise and the freshest ingredients available that day." },
-    { question: "How much does omakase cost?", answer: "Prices vary by restaurant. Casual omakase: $50-150 per person. High-end: $200+ per person. Premium options with rare fish cost more." },
+    { question: "How much does omakase cost?", answer: "Prices vary by restaurant. Casual omakase: per person. High-end: + per person. Premium options with rare fish cost more." },
     { question: "What's included in omakase?", answer: "Usually 10-20 pieces of sushi. The chef selects seasonal fish, starting with lighter flavors and progressing to richer ones. Each piece is prepared fresh and eaten immediately." },
     { question: "Is omakase better than regular sushi?", answer: "Different experience, not better. Omakase showcases the chef's expertise and freshest daily ingredients. Regular sushi lets you choose. Many enjoy both for different reasons." },
     { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your experience." },
@@ -73,7 +73,7 @@ const faqSchema = {
             name: "How much does omakase typically cost?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Omakase prices vary widely depending on the restaurant and ingredients. Prices can range from $50-150 per person at casual establishments to $200+ per person at high-end sushi restaurants. Premium options featuring rare fish or aged cuts cost significantly more.",
+                text: "Omakase prices vary widely depending on the restaurant and ingredients. Prices can range from per person at casual establishments to + per person at high-end sushi restaurants. Premium options featuring rare fish or aged cuts cost significantly more.",
             },
         },
         {
@@ -118,7 +118,6 @@ const faqSchema = {
         },
     ],
 };
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -485,22 +484,22 @@ export default function WhatIsOmakase() {
                                         <tbody className="text-charcoal/80">
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Casual/Neighborhood</td>
-                                                <td className="p-4">$50-100</td>
+                                                
                                                 <td className="p-4">Fresh fish, competent preparation, good value</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory bg-warm-ivory/30">
                                                 <td className="p-4 font-semibold text-charcoal">Mid-Range</td>
-                                                <td className="p-4">$100-150</td>
+                                                
                                                 <td className="p-4">Premium selections, expert chefs, refined experience</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">High-End</td>
-                                                <td className="p-4">$150-250</td>
+                                                
                                                 <td className="p-4">Exceptional ingredients, master-level craftsmanship</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Premium/Tokyo-level</td>
-                                                <td className="p-4">$250+</td>
+ <td className="p-4">+</td>
                                                 <td className="p-4">Rare fish, aged selections, legendary chef reputation</td>
                                             </tr>
                                         </tbody>

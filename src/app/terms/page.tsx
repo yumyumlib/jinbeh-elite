@@ -51,7 +51,7 @@ export default function TermsOfServicePage() {
           </h1>
 
           <div className="prose prose-lg max-w-none text-charcoal/80">
-            <p className="text-sm text-charcoal/80 mb-8">Last updated: January 2026</p>
+            <p className="text-sm text-charcoal/80 mb-8">Last updated: May 2026</p>
 
             <section className="mb-8">
               <h2 className="text-2xl font-heading font-semibold text-charcoal mb-4">
@@ -61,6 +61,53 @@ export default function TermsOfServicePage() {
                 By accessing and using the Jinbeh Japanese Restaurant website, you accept
                 and agree to be bound by these Terms of Service. If you do not agree to
                 these terms, please do not use our website.
+              </p>
+            </section>
+
+            <section className="mb-8" id="ai-assisted-content">
+              <h2 className="text-2xl font-heading font-semibold text-charcoal mb-4">
+                AI-Assisted Content & Accuracy Disclaimer
+              </h2>
+              <p>
+                Portions of this website &mdash; including blog posts, FAQ answers,
+                location guides, menu descriptions, pricing summaries, hours of operation,
+                and promotional copy &mdash; are drafted, edited, or maintained with the
+                assistance of artificial intelligence (AI) tools. While we make reasonable
+                efforts to keep this content accurate, current, and reflective of our
+                operations, AI-assisted content may contain errors, may be out of date,
+                or may not reflect the most recent changes to our menu, pricing, hours,
+                special offers, or policies.
+              </p>
+              <p className="mt-4">
+                AI-generated content may also contain <strong>fabricated details</strong> &mdash;
+                facts, quotes, policies, menu items, awards, or claims that sound plausible
+                but are not actually true. This is a known limitation of generative AI,
+                often called &ldquo;hallucination.&rdquo; We make reasonable efforts to review
+                AI-drafted content before publishing, but errors of this kind can slip through.
+                <strong> If anything you read on this website surprises you or contradicts what
+                you&rsquo;ve heard from us in person, please call to confirm before relying on it.</strong>
+              </p>
+              <p className="mt-4">
+                Specifically, prices, drink and food specials, hours of operation, and
+                limited-time promotions referenced anywhere on this site may change without
+                notice. Item availability varies by location (Frisco vs. Lewisville) and by
+                day. Photos may show items as previously presented and may not reflect the
+                current plating, portion size, or ingredients.
+              </p>
+              <p className="mt-4">
+                <strong>Before relying on any specific price, special, or availability,
+                please call the restaurant to confirm:</strong>
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-2">
+                <li>Frisco: <a href="tel:+12146191200" className="text-accent-red hover:underline">(214) 619-1200</a></li>
+                <li>Lewisville: <a href="tel:+12144882224" className="text-accent-red hover:underline">(214) 488-2224</a></li>
+              </ul>
+              <p className="mt-4">
+                Pricing displayed on our official in-restaurant menus and on our official
+                third-party ordering platforms (Toast, Uber Eats, Grubhub) supersedes any
+                pricing displayed on this website. Jinbeh Japanese Restaurant is not
+                responsible for losses, miscommunications, or expectations based on
+                AI-assisted content that has not been confirmed with us directly.
               </p>
             </section>
 

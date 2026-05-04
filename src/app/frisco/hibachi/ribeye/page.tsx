@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Ribeye Steak",
   "description": "Marbled ribeye with rich, beefy flavor",
-  "offers": {
-    "@type": "Offer",
-    "price": "35.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Why is Ribeye more expensive than NY Strip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ribeye ($35.95) is priced higher than NY Strip ($32.95) due to superior marbling and richer flavor profile. The intramuscular fat (marbling) provides tenderness, juiciness, and taste that's exceptional. It's ideal for those who want the ultimate hibachi experience."
+        "text": "Ribeye is priced higher than NY Strip due to superior marbling and richer flavor profile. The intramuscular fat (marbling) provides tenderness, juiciness, and taste that's exceptional. It's ideal for those who want the ultimate hibachi experience."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function RibeyeFriscoPage() {
   const item = getMenuItem("ribeye", "hibachi")!;

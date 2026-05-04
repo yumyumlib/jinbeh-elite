@@ -105,7 +105,7 @@ const faqSchema = {
       name: "How much does hibachi dining cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hibachi entrees typically range from $18-$35+ depending on the protein (chicken, shrimp, steak, or combination). This includes the chef performance, vegetables, rice, and soup. Check our menu for exact pricing.",
+        text: "Hibachi entrees typically range from + depending on the protein (chicken, shrimp, steak, or combination). This includes the chef performance, vegetables, rice, and soup. Check our menu for exact pricing.",
       },
     },
     {
@@ -264,7 +264,7 @@ const faqCategories = [
       },
       {
         q: "What's the typical price range for hibachi?",
-        a: "Hibachi entrees typically range from $18-$35+ depending on the protein and location. Check our menus for exact pricing.",
+        a: "Hibachi entrees typically range from + depending on the protein and location. Check our menus for exact pricing.",
       },
     ],
   },
@@ -285,7 +285,7 @@ const faqCategories = [
       },
       {
         q: "Which menu items are best for takeout?",
-        a: "Sushi rolls, bento boxes, and non-hibachi entrees travel well. Hibachi dishes are best enjoyed fresh at the restaurant, but some items can be prepared for takeout.",
+        a: "Sushi rolls, sushi platters, and non-hibachi entrees travel well. Hibachi dishes are best enjoyed fresh at the restaurant, but some items can be prepared for takeout.",
       },
       {
         q: "Can I place an order over the phone?",
@@ -374,7 +374,6 @@ export default function FAQPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-
 
         {/* Hero */}
         <section className="py-16 bg-gradient-to-br from-deep-indigo to-charcoal text-white">

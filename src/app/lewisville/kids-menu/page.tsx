@@ -53,31 +53,16 @@ const kidsMenuSchema = {
           "@type": "MenuItem",
           "name": "Kids Hibachi Chicken",
           "description": "Tender chicken breast cooked on the teppan grill with rice",
-          "offers": {
-            "@type": "Offer",
-            "price": "10.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Kids Hibachi Steak",
           "description": "Kid-friendly portion of steak cooked on the teppan grill",
-          "offers": {
-            "@type": "Offer",
-            "price": "11.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Kids Hibachi Shrimp",
           "description": "Small jumbo shrimp cooked on the teppan grill with rice",
-          "offers": {
-            "@type": "Offer",
-            "price": "10.95",
-            "priceCurrency": "USD",
-          },
         },
       ],
     },
@@ -90,31 +75,16 @@ const kidsMenuSchema = {
           "@type": "MenuItem",
           "name": "California Roll",
           "description": "Imitation crab, cucumber, and avocado - a mild classic",
-          "offers": {
-            "@type": "Offer",
-            "price": "8.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Cucumber Roll",
           "description": "Refreshing cucumber - perfect for sushi beginners",
-          "offers": {
-            "@type": "Offer",
-            "price": "7.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Avocado Roll",
           "description": "Fresh avocado rolled in rice and seaweed",
-          "offers": {
-            "@type": "Offer",
-            "price": "8.95",
-            "priceCurrency": "USD",
-          },
         },
       ],
     },
@@ -126,31 +96,16 @@ const kidsMenuSchema = {
           "@type": "MenuItem",
           "name": "Fried Rice",
           "description": "Fluffy fried rice cooked with egg and vegetables",
-          "offers": {
-            "@type": "Offer",
-            "price": "3.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Miso Soup",
           "description": "Warm, salty miso broth with tofu and seaweed",
-          "offers": {
-            "@type": "Offer",
-            "price": "2.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Edamame",
           "description": "Steamed soybeans with a sprinkle of sea salt",
-          "offers": {
-            "@type": "Offer",
-            "price": "4.95",
-            "priceCurrency": "USD",
-          },
         },
       ],
     },
@@ -163,22 +118,12 @@ const kidsMenuSchema = {
           "name": "Ice Cream",
           "description":
             "Vanilla or green tea ice cream - a sweet treat to finish your meal",
-          "offers": {
-            "@type": "Offer",
-            "price": "3.95",
-            "priceCurrency": "USD",
-          },
         },
         {
           "@type": "MenuItem",
           "name": "Mochi Ice Cream",
           "description":
             "Chewy mochi with ice cream inside - fun texture for kids!",
-          "offers": {
-            "@type": "Offer",
-            "price": "4.95",
-            "priceCurrency": "USD",
-          },
         },
       ],
     },
@@ -353,7 +298,7 @@ export default function KidsMenuLewisvillePage() {
                       ✓ Butter & Soy Sauce
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-accent-red text-center">$10.95</p>
+                  
                 </div>
 
                 {/* Kids Hibachi Steak */}
@@ -375,7 +320,7 @@ export default function KidsMenuLewisvillePage() {
                       ✓ Butter & Soy Sauce
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-accent-red text-center">$11.95</p>
+                  
                 </div>
 
                 {/* Kids Hibachi Shrimp */}
@@ -394,7 +339,7 @@ export default function KidsMenuLewisvillePage() {
                       ✓ Butter & Soy Sauce
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-accent-red text-center">$10.95</p>
+                  
                 </div>
               </div>
             </div>
@@ -429,7 +374,7 @@ export default function KidsMenuLewisvillePage() {
                       ✓ Avocado
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-deep-indigo text-center">$8.95</p>
+                  
                 </div>
 
                 {/* Cucumber Roll */}
@@ -448,7 +393,7 @@ export default function KidsMenuLewisvillePage() {
                       ✓ Seaweed
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-deep-indigo text-center">$7.95</p>
+                  
                 </div>
 
                 {/* Avocado Roll */}
@@ -467,7 +412,7 @@ export default function KidsMenuLewisvillePage() {
                       ✓ Seaweed
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-deep-indigo text-center">$8.95</p>
+                  
                 </div>
               </div>
             </div>
@@ -489,7 +434,7 @@ export default function KidsMenuLewisvillePage() {
                   <p className="text-charcoal/70 mb-4">
                     Fluffy fried rice cooked with egg and fresh vegetables
                   </p>
-                  <p className="text-2xl font-bold text-soft-gold">$3.95</p>
+                  
                 </div>
 
                 {/* Miso Soup */}
@@ -498,7 +443,7 @@ export default function KidsMenuLewisvillePage() {
                   <p className="text-charcoal/70 mb-4">
                     Warm, savory miso broth with tofu and seaweed
                   </p>
-                  <p className="text-2xl font-bold text-soft-gold">$2.95</p>
+                  
                 </div>
 
                 {/* Edamame */}
@@ -507,7 +452,7 @@ export default function KidsMenuLewisvillePage() {
                   <p className="text-charcoal/70 mb-4">
                     Steamed soybeans with a light sprinkle of sea salt
                   </p>
-                  <p className="text-2xl font-bold text-soft-gold">$4.95</p>
+                  
                 </div>
               </div>
             </div>
@@ -530,7 +475,7 @@ export default function KidsMenuLewisvillePage() {
                   <p className="text-charcoal/70 mb-6">
                     Smooth and creamy vanilla or refreshing green tea ice cream
                   </p>
-                  <p className="text-3xl font-bold text-accent-red">$3.95</p>
+                  
                 </div>
 
                 {/* Mochi Ice Cream */}
@@ -540,7 +485,7 @@ export default function KidsMenuLewisvillePage() {
                   <p className="text-charcoal/70 mb-6">
                     Chewy, colorful mochi with ice cream inside - so fun to eat!
                   </p>
-                  <p className="text-3xl font-bold text-accent-red">$4.95</p>
+                  
                 </div>
               </div>
             </div>

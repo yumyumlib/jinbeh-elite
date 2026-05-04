@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Yellowtail Sashimi",
   "description": "Buttery hamachi with delicate flavor",
-  "offers": {
-    "@type": "Offer",
-    "price": "15.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Can I order Hamachi in a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Yellowtail Sashimi is available individually at $15.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Featured in our Omakase selections."
+        "text": "Yes! Yellowtail Sashimi is available individually at or as part of our Sashimi Deluxe Platter and Chirashi Bowl. Featured in our Omakase selections."
       }
     }
   ]
 };
-
 
 export default function YellowtailSashimiFriscoPage() {
   const item = getMenuItem("yellowtail-sashimi", "sashimi")!;

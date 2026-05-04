@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Volcano Roll",
   "description": "Spicy crab and avocado with baked seafood topping",
-  "offers": {
-    "@type": "Offer",
-    "price": "16.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function VolcanoRollLewisvillePage() {
   const item = { ...getMenuItem("volcano-roll", "sushi-rolls")!, jinbehStory: "Every roll at Jinbeh is hand-crafted using a bamboo makisu by our sushi team. Our head sushi chef, who hails from southern Japan, has been with us nearly 30 years and co-created every signature roll on our menu." };

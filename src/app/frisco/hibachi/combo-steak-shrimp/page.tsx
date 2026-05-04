@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Steak & Shrimp Combo",
   "description": "Filet mignon paired with jumbo shrimp",
-  "offers": {
-    "@type": "Offer",
-    "price": "38.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -65,7 +60,7 @@ const faqSchema = {
       "name": "Is Steak & Shrimp the best combo option?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Steak & Shrimp offers surf and turf in lighter form. Filet mignon provides rich beef, while jumbo shrimp adds lean seafood protein. At $38.95, it's perfect for those wanting meat AND seafood variety."
+        "text": "Yes! Steak & Shrimp offers surf and turf in lighter form. Filet mignon provides rich beef, while jumbo shrimp adds lean seafood protein. At, it's perfect for those wanting meat AND seafood variety."
       }
     },
     {
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Why choose this over steak-lobster?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steak & Shrimp ($38.95) is $16 cheaper than Steak & Lobster ($54.95) with similar protein. Shrimp cooks quickly for faster service. Lobster is more premium for special occasions, shrimp is everyday elegance."
+        "text": "Steak & Shrimp is cheaper than Steak & Lobster with similar protein. Shrimp cooks quickly for faster service. Lobster is more premium for special occasions, shrimp is everyday elegance."
       }
     }
   ]
 };
-
 
 export default function ComboSteakShrimpFriscoPage() {
   const item = getMenuItem("combo-steak-shrimp", "hibachi")!;

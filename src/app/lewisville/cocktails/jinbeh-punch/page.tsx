@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Jinbeh Punch",
   "description": "House specialty tropical cocktail",
-  "offers": {
-    "@type": "Offer",
-    "price": "12.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is the Jinbeh Punch at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Jinbeh Punch at Jinbeh Lewisville is house specialty tropical cocktail. At $12.00, it's one of our signature bar offerings."
+        "text": "The Jinbeh Punch at Jinbeh Lewisville is house specialty tropical cocktail. At, it's one of our signature bar offerings."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function JinbehPunchLewisvillePage() {
   const item = { ...getMenuItem("jinbeh-punch", "cocktails")!, jinbehStory: "All cocktails at Jinbeh are crafted at a bar featuring a stunning collection of hand-painted tequila bottles. Each bottle is individually painted by artisans from a Mexican village. It took about a year to collect enough empty bottles to line the shelf." };

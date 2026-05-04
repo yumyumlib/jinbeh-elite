@@ -118,7 +118,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -363,7 +362,6 @@ export default function SakeSushiMenuPairings() {
                                         </div>
                                     </div>
 
-
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
@@ -545,6 +543,16 @@ export default function SakeSushiMenuPairings() {
                                             </div>
                                         </details>
                                     </div>
+                                </div>
+
+                                <div className="my-10 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                    <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Sake &amp; Sushi, the Way Jinbeh Pairs Them</h3>
+                                    <p className="text-charcoal/80 mb-3">
+                                        Many of our regulars come to Jinbeh just for the sake-and-sushi combination, and we make it easy to find a pairing you&apos;ll love. Our sushi chefs cut fresh fish daily, and our sake list spans hot sake (warmed in a tokkuri), chilled premium cold sake, and a rotating set of seasonal pours. It&apos;s a simple recipe: a great <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">specialty roll</Link> or piece of nigiri, the right pour, and the kind of warm hospitality that&apos;s kept guests returning for nearly four decades.
+                                    </p>
+                                    <p className="text-charcoal/80">
+                                        Want to taste a few options before committing? Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> Monday through Friday and try a small hot sake while you sample sushi. Our team in <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> is always happy to recommend a pairing.
+                                    </p>
                                 </div>
 
                                 <RelatedArticles currentSlug="sake-sushi-menu-pairings" />

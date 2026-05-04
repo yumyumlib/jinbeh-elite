@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Order Online | Jinbeh Japanese Restaurant — Hibachi & Sushi Delivery",
-    description: "Order Japanese food online from Jinbeh — hibachi, sushi, sashimi, and bento boxes delivered fresh in Frisco and Lewisville.",
+    description: "Order Japanese food online from Jinbeh: hibachi, sushi, sashimi, and Japanese favorites delivered fresh in Frisco and Lewisville.",
     alternates: {
         canonical: "https://jinbeh.com/order-online",
     },

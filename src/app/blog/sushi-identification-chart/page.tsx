@@ -95,7 +95,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -321,7 +320,6 @@ export default function SushiIdentificationChart() {
                                         />
                                     </div>
 
-
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
@@ -454,9 +452,22 @@ export default function SushiIdentificationChart() {
                                     </div>
                                 </div>
 
+                                <div className="my-10 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                    <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Try Jinbeh&apos;s Sushi, Sashimi &amp; Nigiri</h3>
+                                    <p className="text-charcoal/80 mb-3">
+                                        Jinbeh has been serving fresh sushi in North Dallas since 1988, and our menu covers the whole spectrum on this chart: classic <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">maki rolls</Link>, hand-pressed nigiri, traditional sashimi, and our chef-created specialty rolls. Our sushi chefs co-built the menu over decades of late-night testing, and they cut fish to order for every guest.
+                                    </p>
+                                    <p className="text-charcoal/80 mb-3">
+                                        A few favorites: the Samurai Roll, our salmon and bluefin tuna sashimi, fresh salmon and tuna nigiri, and crowd-pleasers like the spicy tuna roll, dragon roll, and rainbow roll. New to sushi? Start with a California or shrimp tempura roll. Sushi purist? Order a sashimi platter and let the fish speak for itself.
+                                    </p>
+                                    <p className="text-charcoal/80">
+                                        Locals consistently rate Jinbeh as one of the best sushi spots in the North Dallas area. Visit our <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> sushi bar, or browse the <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> before your visit.
+                                    </p>
+                                </div>
+
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Sushi ordering pro tip:</strong> At Jinbeh, use this chart as your guide! Start with something familiar like a California Roll, then try one nigiri to appreciate pure fish flavor. Ask your sushi chef "What's freshest today?"—they love sharing their best picks. For the adventurous, request omakase (chef's choice) and let our masters surprise you. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to preview options before your visit.
+                                        <strong>Sushi ordering pro tip:</strong> Use this chart as your guide. Start with something familiar like a California Roll, then try one nigiri to appreciate pure fish flavor. Ask your sushi chef &ldquo;What&apos;s freshest today?&rdquo; They love sharing their best picks. For the adventurous, ask for the chef&apos;s favorite signature rolls and let our team surprise you. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> to preview options before your visit.
                                     </ProTip>
 
                                     <PillarCTA type="hub" />

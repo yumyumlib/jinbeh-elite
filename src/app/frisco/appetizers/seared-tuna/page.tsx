@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Seared Ahi Tuna",
   "description": "Pepper-crusted ahi with wasabi aioli",
-  "offers": {
-    "@type": "Offer",
-    "price": "16.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Is Seared Ahi Tuna good for groups and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $16.95, Seared Ahi Tuna is perfect for sharing and elegant enough for special occasions. Pair with $5 sake during Happy Hour (Mon-Fri 5-6:30pm)."
+        "text": "Absolutely! At, Seared Ahi Tuna is perfect for sharing and elegant enough for special occasions. Pair with sake during Happy Hour (Mon-Fri 5-6:30pm)."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SearedTunaFriscoPage() {
   const item = getMenuItem("seared-tuna", "appetizers")!;

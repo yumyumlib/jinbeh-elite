@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: "Hibachi Menu | Jinbeh Lewisville Japanese Restaurant",
+  title: "Best Hibachi in Lewisville TX | Jinbeh Japanese Restaurant",
   description: "Jinbeh Lewisville's hibachi menu — 14 teppanyaki entrées with tableside fire shows, onion volcano, and premium cuts. Near Vista Ridge Mall. Since 1988.",
   keywords: ["hibachi lewisville", "best hibachi lewisville", "hibachi menu lewisville", "jinbeh hibachi", "japanese hibachi lewisville", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
@@ -40,141 +40,71 @@ const menuSchema = {
         "@type": "MenuItem",
         "name": "Filet Mignon",
         "description": "Premium beef tenderloin, perfectly seared on the teppan grill",
-        "offers": {
-          "@type": "Offer",
-          "price": "34.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "NY Strip Steak",
         "description": "Hand-cut New York strip with savory soy glaze",
-        "offers": {
-          "@type": "Offer",
-          "price": "32.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Ribeye Steak",
         "description": "Marbled ribeye with rich, beefy flavor",
-        "offers": {
-          "@type": "Offer",
-          "price": "35.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Chicken Teriyaki",
         "description": "Tender chicken breast with house teriyaki glaze",
-        "offers": {
-          "@type": "Offer",
-          "price": "24.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Jumbo Shrimp",
         "description": "Succulent jumbo shrimp, flame-kissed to perfection",
-        "offers": {
-          "@type": "Offer",
-          "price": "28.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Sea Scallops",
         "description": "Plump sea scallops seared with garlic butter",
-        "offers": {
-          "@type": "Offer",
-          "price": "32.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Lobster Tail",
         "description": "Sweet Maine lobster tail, butter-grilled",
-        "offers": {
-          "@type": "Offer",
-          "price": "44.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Hibachi Salmon",
         "description": "Fresh Atlantic salmon with citrus teriyaki",
-        "offers": {
-          "@type": "Offer",
-          "price": "28.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Vegetable & Tofu",
         "description": "Fresh seasonal vegetables with crispy tofu",
-        "offers": {
-          "@type": "Offer",
-          "price": "19.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Steak & Shrimp Combo",
         "description": "Filet mignon paired with jumbo shrimp",
-        "offers": {
-          "@type": "Offer",
-          "price": "38.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Steak & Chicken Combo",
         "description": "Filet mignon with chicken teriyaki",
-        "offers": {
-          "@type": "Offer",
-          "price": "36.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Steak & Lobster Combo",
         "description": "Surf and turf perfection",
-        "offers": {
-          "@type": "Offer",
-          "price": "54.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Seafood Trio",
         "description": "Shrimp, scallops, and lobster",
-        "offers": {
-          "@type": "Offer",
-          "price": "52.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Imperial Dinner",
         "description": "Filet mignon, lobster tail, and shrimp",
-        "offers": {
-          "@type": "Offer",
-          "price": "64.95",
-          "priceCurrency": "USD"
-        }
       }
     ]
   }
@@ -197,7 +127,7 @@ const faqSchema = {
       "name": "What are the most popular hibachi at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Guest favorites include Filet Mignon ($34.95), NY Strip Steak ($32.95), Ribeye Steak ($35.95), Chicken Teriyaki ($24.95). These are consistently rated as the best hibachi in Lewisville."
+        "text": "Guest favorites include Filet Mignon, NY Strip Steak, Ribeye Steak, Chicken Teriyaki. These are consistently rated as the best hibachi in Lewisville."
       }
     },
     {
@@ -317,7 +247,6 @@ export default function HibachiLewisvillePage() {
                     Premium beef tenderloin, perfectly seared on the teppan grill
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$34.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -343,7 +272,6 @@ export default function HibachiLewisvillePage() {
                     Hand-cut New York strip with savory soy glaze
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$32.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -369,7 +297,6 @@ export default function HibachiLewisvillePage() {
                     Marbled ribeye with rich, beefy flavor
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$35.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -395,7 +322,6 @@ export default function HibachiLewisvillePage() {
                     Tender chicken breast with house teriyaki glaze
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$24.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -421,7 +347,6 @@ export default function HibachiLewisvillePage() {
                     Succulent jumbo shrimp, flame-kissed to perfection
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$28.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -447,7 +372,6 @@ export default function HibachiLewisvillePage() {
                     Plump sea scallops seared with garlic butter
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$32.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -473,7 +397,6 @@ export default function HibachiLewisvillePage() {
                     Sweet Maine lobster tail, butter-grilled
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$44.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -499,7 +422,6 @@ export default function HibachiLewisvillePage() {
                     Fresh Atlantic salmon with citrus teriyaki
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$28.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -525,7 +447,6 @@ export default function HibachiLewisvillePage() {
                     Fresh seasonal vegetables with crispy tofu
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$19.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -551,7 +472,6 @@ export default function HibachiLewisvillePage() {
                     Filet mignon paired with jumbo shrimp
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$38.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -577,7 +497,6 @@ export default function HibachiLewisvillePage() {
                     Filet mignon with chicken teriyaki
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$36.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -603,7 +522,6 @@ export default function HibachiLewisvillePage() {
                     Surf and turf perfection
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$54.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -629,7 +547,6 @@ export default function HibachiLewisvillePage() {
                     Shrimp, scallops, and lobster
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$52.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -655,7 +572,6 @@ export default function HibachiLewisvillePage() {
                     Filet mignon, lobster tail, and shrimp
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="hidden">$64.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -723,7 +639,7 @@ export default function HibachiLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Guest favorites include Filet Mignon (\$34.95), NY Strip Steak (\$32.95), Ribeye Steak (\$35.95), Chicken Teriyaki (\$24.95). These are consistently rated as the best hibachi in Lewisville.
+                    Guest favorites include Filet Mignon, NY Strip Steak, Ribeye Steak, Chicken Teriyaki. These are consistently rated as the best hibachi in Lewisville.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">

@@ -108,7 +108,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -749,9 +748,22 @@ export default function ThanksgivingDiningGuide() {
                                         the people you love.
                                     </p>
 
+                                    <div className="my-10 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                        <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Spend Thanksgiving With Jinbeh</h3>
+                                        <p className="text-charcoal/80 mb-3">
+                                            Thanksgiving should feel festive and feel grateful, not exhausting. If your family doesn&apos;t want to spend the day cooking, washing pans, and racing the clock, Jinbeh is one of the warmest places in DFW to gather. Our chefs handle the meal. Our team handles the plates. You and your family handle the part that matters: time together.
+                                        </p>
+                                        <p className="text-charcoal/80 mb-3">
+                                            What you get is restaurant-quality hibachi steak, fresh sushi, and a tableside hibachi show that turns a holiday meal into a memory. Premium proteins, made-from-scratch sauces, and the kind of family hospitality we&apos;ve been known for since 1988. It&apos;s the celebratory atmosphere of a holiday dinner without the work of hosting one.
+                                        </p>
+                                        <p className="text-charcoal/80">
+                                            Book a table at <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, or order Jinbeh catering for delivery to your home gathering. Either way, you skip the cooking and keep the gratitude.
+                                        </p>
+                                    </div>
+
                                     <div className="mt-8">
                                         <ProTip variant="insider">
-                                            <strong>Thanksgiving planning insider tip:</strong> For the best Thanksgiving experience at Jinbeh, book your table 2-3 weeks early—our hibachi tables fill up first! If you're ordering catering, request the "holiday platter upgrade" which includes seasonal garnishes and premium roll selections. For groups of 10+, we can set up a dedicated hibachi table where your whole party dines together. Mix sushi platters as appetizers with hibachi as the main course for the ultimate Thanksgiving feast. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+                                            <strong>Thanksgiving planning insider tip:</strong> Book your table 2-3 weeks early. Our hibachi tables fill up first. For groups of 10+, we can often set up a dedicated hibachi table where your whole party dines together. Mix sushi platters as appetizers with hibachi as the main course for the ultimate Thanksgiving feast. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
                                         </ProTip>
 
                                         <PillarCTA type="vip" />

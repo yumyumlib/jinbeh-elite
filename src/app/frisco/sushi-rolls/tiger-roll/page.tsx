@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Tiger Roll",
   "description": "Shrimp tempura with spicy tuna and jalapeño",
-  "offers": {
-    "@type": "Offer",
-    "price": "17.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TigerRollFriscoPage() {
   const item = getMenuItem("tiger-roll", "sushi-rolls")!;

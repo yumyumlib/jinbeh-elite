@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Lychee Martini",
   "description": "Vodka with lychee and a floral finish",
-  "offers": {
-    "@type": "Offer",
-    "price": "13.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is the Lychee Martini at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Lychee Martini at Jinbeh Lewisville is vodka with lychee and a floral finish. At $13.00, it's one of our signature bar offerings."
+        "text": "The Lychee Martini at Jinbeh Lewisville is vodka with lychee and a floral finish. At, it's one of our signature bar offerings."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function LycheeMartiniLewisvillePage() {
   const item = getMenuItem("lychee-martini", "cocktails")!;

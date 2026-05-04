@@ -124,7 +124,6 @@ const holidayReasons = [
   },
 ];
 
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

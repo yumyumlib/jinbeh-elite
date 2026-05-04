@@ -43,7 +43,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -63,8 +62,15 @@ export default function RamuneSodaGuide() {
         </div>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
-            <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/beverages/RamuneSoda.webp" alt="Ramune soda bottles with iconic marble seal" fill className="object-cover" priority />
+            <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden bg-charcoal">
+                <Image
+                    src="/images/beverages/RamuneSoda.webp"
+                    alt="Ramune soda bottles with iconic marble seal"
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                    priority
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -80,6 +86,20 @@ export default function RamuneSodaGuide() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Ramune is more than a beverage—it's an experience.</strong> This iconic Japanese carbonated soda combines delightful flavors with an interactive marble seal that transforms every bottle into a moment of nostalgic fun.</p>
+
+                            <figure className="my-8 rounded-2xl overflow-hidden shadow-lg">
+                                <Image
+                                    src="/images/beverages/RamuneSoda.webp"
+                                    alt="Colorful Ramune soda bottles showing the iconic glass marble seal"
+                                    width={1600}
+                                    height={1530}
+                                    sizes="(min-width: 1024px) 800px, 100vw"
+                                    className="w-full h-auto"
+                                />
+                                <figcaption className="text-sm text-charcoal/60 italic px-2 py-3 bg-warm-ivory text-center">
+                                    Ramune soda — instantly recognizable by its Codd-neck bottle and signature marble.
+                                </figcaption>
+                            </figure>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 The Story of Ramune</h2>
                             <p className="text-charcoal/80 mb-6">Originating from Japan, Ramune has been enjoyed for generations. The name "Ramune" is derived from the English word "lemonade," reflecting its original citrus flavor. Over the years, Ramune has expanded its flavor offerings, captivating consumers worldwide with an array of tastes ranging from fruity to floral.</p>
@@ -206,7 +226,8 @@ export default function RamuneSodaGuide() {
                             <p className="text-charcoal/80 mb-6">The distinctive sound of the marble popping is synonymous with festive occasions, evoking memories of warm summer nights filled with laughter and joy. Ramune's cultural footprint serves as a symbol of Japanese ingenuity and tradition, connecting generations through shared experiences.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🛍️ Where to Buy Ramune Soda</h2>
-                            <p className="text-charcoal/80 mb-6">If you're wondering where to buy Ramune soda, you're in luck—it's readily available in many locations:</p>
+                            <p className="text-charcoal/80 mb-4">Jinbeh Japanese Restaurant carries a wide variety of Ramune soda flavors at both our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. It&apos;s so fun. Kids have loved the marble-popping experience for years, and plenty of adults sneak one onto the table too. Stop by, ask your server which flavors are in stock today, and try one alongside your hibachi or sushi meal.</p>
+                            <p className="text-charcoal/80 mb-6">If you&apos;d like to enjoy Ramune at home, it&apos;s also readily available in many locations:</p>
 
                             <div className="grid md:grid-cols-2 gap-4 my-8">
                                 <div className="bg-warm-ivory rounded-lg p-5 border-2 border-deep-indigo/30">

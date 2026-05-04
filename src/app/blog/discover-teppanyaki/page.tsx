@@ -61,7 +61,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -101,7 +100,6 @@ export default function DiscoverTeppanyaki() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Teppanyaki</strong> (鉄板焼き) means "grilling on an iron plate." It's the art form behind what Americans call "hibachi restaurants"—where skilled chefs transform cooking into dinner theater.</p>
-
 
             
               <p className="text-charcoal/80 text-sm mt-6">

@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Steak & Chicken Combo",
   "description": "Filet mignon with chicken teriyaki",
-  "offers": {
-    "@type": "Offer",
-    "price": "36.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -65,7 +60,7 @@ const faqSchema = {
       "name": "Why choose combo instead of single protein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Combos offer variety and balance! Filet mignon provides rich beef flavor, while chicken adds leaner protein. At $36.95, it's more affordable than filet ($34.95) plus chicken ($24.95) ordered separately."
+        "text": "Combos offer variety and balance! Filet mignon provides rich beef flavor, while chicken adds leaner protein. At, it's more affordable than filet plus chicken ordered separately."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSteakChickenFriscoPage() {
   const item = getMenuItem("combo-steak-chicken", "hibachi")!;

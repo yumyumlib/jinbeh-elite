@@ -108,7 +108,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -267,7 +266,6 @@ export default function LargeGroupDining() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Organizing a group dinner doesn't have to be stressful.</strong> When you select a restaurant experienced in handling large parties, your gathering becomes smooth, enjoyable, and memorable. These establishments are equipped with the necessary facilities to host big groups, providing ample seating, diverse menus, and often private or semi-private dining options tailored to your specific needs.
                                     </p>
-
 
             
               <p className="text-charcoal/80 text-sm mt-6">

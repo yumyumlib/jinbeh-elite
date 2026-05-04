@@ -327,7 +327,7 @@ export default function McKinneyNearbyPage() {
                   Full Bar & Happy Hour
                 </h3>
                 <p className="text-charcoal/70">
-                  Jinbeh Happy Hour: $4 Japanese draft beer, $5 sake, $6 wine. Monday through Friday, 5:00 to 6:30 PM at both locations.
+ Jinbeh Happy Hour: Japanese draft beer, sake, wine. Monday through Friday, 5:00 to 6:30 PM at both locations.
                 </p>
               </div>
 

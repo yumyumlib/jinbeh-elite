@@ -57,7 +57,6 @@ const faqSchema = {
     mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -212,7 +211,6 @@ export default function SushiLunchSpecials() {
                                         high-quality cuisine at affordable prices. Whether you're a sushi aficionado or discovering your favorite roll
                                         for the first time, lunch specials offer variety, value, and the perfect midday break. Don't forget to check out our <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline font-semibold">happy hour</Link> specials to maximize your savings even further!
                                     </p>
-
 
             
               <p className="text-charcoal/80 text-sm mt-6">

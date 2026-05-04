@@ -85,7 +85,6 @@ const faqSchema = {
   ],
 };
 
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

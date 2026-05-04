@@ -41,7 +41,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "How much does a sushi platter cost?",
-        answer: "Sushi platter prices vary by size and selection. At Jinbeh, our party trays start at around $40-60 for a small assortment and go up to $100+ for premium platters with sashimi-grade fish. Custom platters for large events can be tailored to your budget. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for current pricing and custom orders.",
+        answer: "Sushi platter prices vary by size and selection. At Jinbeh, our party trays start at around for a small assortment and go up to + for premium platters with sashimi-grade fish. Custom platters for large events can be tailored to your budget. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for current pricing and custom orders.",
     },
     {
         question: "How far in advance should I order a sushi platter?",
@@ -81,7 +81,6 @@ const faqSchema = {
         },
     })),
 };
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -372,7 +371,7 @@ export default function SushiPlattersNearMe() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Platter ordering pro tips from our catering team:</strong> For the best presentation, order specialty rolls (Dragon, Rainbow) alongside classics—the color contrast makes your platter Instagram-worthy. Ask about our "event garnish" option for special occasions: we add decorative sashimi flowers and edible garnishes that elevate the wow factor. For corporate orders over $200, we include complimentary chopstick sets and soy sauce dishes. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+ <strong>Platter ordering pro tips from our catering team:</strong> For the best presentation, order specialty rolls (Dragon, Rainbow) alongside classics—the color contrast makes your platter Instagram-worthy. Ask about our "event garnish" option for special occasions: we add decorative sashimi flowers and edible garnishes that elevate the wow factor. For corporate orders over, we include complimentary chopstick sets and soy sauce dishes. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                     </ProTip>
 
                                     <PillarCTA type="catering" />

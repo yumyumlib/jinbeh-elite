@@ -35,7 +35,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -94,6 +93,12 @@ export default function OmakaseDiningGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍱 Omakase vs. Traditional Sushi</h2>
                             <p className="text-charcoal/80 mb-4">While Omakase often involves sushi, it is much more than just a sushi meal. Understanding this distinction helps set proper expectations for your dining experience.</p>
 
+                            <div className="my-8 p-6 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                <h3 className="font-heading text-lg font-bold text-charcoal mb-3">The Omakase Spirit at Jinbeh</h3>
+                                <p className="text-charcoal/80 mb-3">For nearly four decades, Jinbeh&apos;s sushi chefs have brought an omakase-style spirit to every roll on the menu. Our head sushi chef, with us for almost 30 years, co-created the signature sushi menu alongside the founding family. They spent late nights testing, tasting, and refining each roll until it reflected the kind of craftsmanship guests now travel for.</p>
+                                <p className="text-charcoal/80">If you&apos;d like that chef&apos;s-choice feeling at your table, ask your server for the day&apos;s freshest fish or try our chef&apos;s favorite signature rolls. Explore the full lineup of <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">types of sushi</Link> we serve, or reserve a sushi-bar seat at <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>.</p>
+                            </div>
+
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Aspect</th><th className="p-3 text-left">Traditional Sushi</th><th className="p-3 text-left">Omakase</th></tr></thead>
                                 <tbody className="text-charcoal/80">
@@ -104,7 +109,6 @@ export default function OmakaseDiningGuide() {
                                     <tr><td className="p-3 font-semibold">Experience Focus</td><td className="p-3">Meal satisfaction</td><td className="p-3">Culinary art and personal connection</td></tr>
                                 </tbody>
                             </table>
-
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍽️ The Omakase Dining Experience</h2>
                             <p className="text-charcoal/80 mb-4">Dining at an Omakase-style restaurant is an intimate and interactive experience. It often takes place at a sushi bar where you can observe the chef at work. This proximity allows you to enjoy the artistry of preparation and engage with the chef, who may explain the inspiration behind each course.</p>
@@ -208,7 +212,7 @@ export default function OmakaseDiningGuide() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Omakase pricing varies widely based on chef expertise, ingredient quality, and location. Prices can range from moderate ($40-80) to premium ($150+). At Jinbeh, we offer authentic omakase experiences that balance quality and accessibility.</p>
+ <p>Omakase pricing varies widely based on chef expertise, ingredient quality, and location. Prices can range from moderate to premium (+). At Jinbeh, we offer authentic omakase experiences that balance quality and accessibility.</p>
                                     </div>
                                 </details>
 

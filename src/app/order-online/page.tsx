@@ -15,7 +15,7 @@ const restaurantSchema = {
     "@type": "Restaurant",
     name: "Jinbeh Japanese Restaurant",
     image: "https://jinbeh.com/images/og-image.jpg",
-    description: "Order Japanese food online from Jinbeh — hibachi, sushi, sashimi, and bento boxes delivered fresh to your door in Frisco and Lewisville. Available on Grubhub...",
+    description: "Order Japanese food online from Jinbeh: hibachi, sushi, sashimi, and Japanese favorites delivered fresh to your door in Frisco and Lewisville. Available on Grubhub.",
     address: [
         {
             "@type": "PostalAddress",
@@ -177,7 +177,7 @@ const faqSchema = {
             name: "Is there a minimum order for delivery?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Minimum order amounts vary by delivery platform and location. Minimums are set by the delivery platforms and typically range from $15\u2013$20. We recommend checking Uber Eats or Grubhub for current minimums.",
+                text: "Minimum order amounts vary by delivery platform and location. Minimums are set by the delivery platforms and typically range from \u2013. We recommend checking Uber Eats or Grubhub for current minimums.",
             },
         },
         {
@@ -252,7 +252,7 @@ export default function OrderOnlinePage() {
         },
         {
             question: "Is there a minimum order for delivery?",
-            answer: "Minimum order amounts vary by delivery platform and location. Minimums are set by the delivery platforms and typically range from $15–$20. We recommend checking Uber Eats or Grubhub for current minimums.",
+            answer: "Minimum order amounts vary by delivery platform and location. Minimums are set by the delivery platforms and typically range from. We recommend checking Uber Eats or Grubhub for current minimums.",
         },
         {
             question: "Can I order for a large party?",
@@ -365,7 +365,6 @@ export default function OrderOnlinePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-
 
                 {/* Hero Section */}
                 <HeroSection className="py-24 bg-gradient-to-br from-charcoal to-deep-indigo text-white">
@@ -726,7 +725,7 @@ export default function OrderOnlinePage() {
                                             </h3>
                                             <svg
                                                 className={`w-6 h-6 text-accent-red flex-shrink-0 transition-transform ${expandedFaq === index ? "rotate-180" : ""
-                                                    }`}
+ }`}
                                                 fill="none"
                                                 stroke="currentColor"
                                                 viewBox="0 0 24 24"

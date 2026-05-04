@@ -63,7 +63,7 @@ const faqs = [
     },
     {
         question: "How much should I budget for an adult birthday dinner?",
-        answer: "At Jinbeh, hibachi dinners range from $20-$40 per person depending on protein choice. Add drinks and appetizers for a full experience. For milestone birthdays, consider our private dining options. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville to discuss group packages.",
+        answer: "At Jinbeh, hibachi dinners range from per person depending on protein choice. Add drinks and appetizers for a full experience. For milestone birthdays, consider our private dining options. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville to discuss group packages.",
     },
 ];
 
@@ -79,7 +79,6 @@ const faqSchema = {
         },
     })),
 };
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -274,121 +273,121 @@ export default function AdultBirthdayPartyIdeas() {
 
                                     <DidYouKnow
                                         fact="A survey by Eventbrite found that 78% of millennials and Gen-Xers prefer experiential celebrations over traditional gift-focused parties. Demand for 'experience-based' birthday celebrations has grown 67% since 2019, with interactive dining experiences like hibachi ranking as the #2 most-requested birthday activity behind escape rooms."
-                                        source="Eventbrite & Event Marketing Institute"
-                                    />
+ source="Eventbrite & Event Marketing Institute"
+ />
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Masquerade Ball</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Transform your venue into an elegant ballroom with a masquerade ball theme. Encourage guests
-                                        to wear formal attire and ornate masks. Decorate with gold and black colors, candlelight, and
-                                        dramatic drapes. A masquerade ball evokes sophistication and mystery, creating an unforgettable
-                                        atmosphere for celebrating your special day.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Masquerade Ball</h3>
+ <p className="text-charcoal/80 mb-6">
+ Transform your venue into an elegant ballroom with a masquerade ball theme. Encourage guests
+ to wear formal attire and ornate masks. Decorate with gold and black colors, candlelight, and
+ dramatic drapes. A masquerade ball evokes sophistication and mystery, creating an unforgettable
+ atmosphere for celebrating your special day.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">80s Retro Party</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Relive the vibrant and colorful 80s with a retro party. Ask guests to dress in their favorite
-                                        80s outfits—think neon colors, leg warmers, and big hair. Play iconic 80s hits, serve retro
-                                        snacks, and decorate with posters of 80s stars. This theme brings nostalgia and fun energy to
-                                        your celebration.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">80s Retro Party</h3>
+ <p className="text-charcoal/80 mb-6">
+ Relive the vibrant and colorful 80s with a retro party. Ask guests to dress in their favorite
+ 80s outfits—think neon colors, leg warmers, and big hair. Play iconic 80s hits, serve retro
+ snacks, and decorate with posters of 80s stars. This theme brings nostalgia and fun energy to
+ your celebration.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Hollywood Glamour</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Roll out the red carpet and treat your guests like celebrities with a Hollywood glamour theme.
-                                        Encourage black-tie attire, set up a photo backdrop with movie poster props, and serve champagne
-                                        and gourmet appetizers. This elegant theme makes everyone feel like a star for the evening.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Hollywood Glamour</h3>
+ <p className="text-charcoal/80 mb-6">
+ Roll out the red carpet and treat your guests like celebrities with a Hollywood glamour theme.
+ Encourage black-tie attire, set up a photo backdrop with movie poster props, and serve champagne
+ and gourmet appetizers. This elegant theme makes everyone feel like a star for the evening.
+ </p>
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🎮 Unique Birthday Party Activities for Adults
-                                    </h2>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🎮 Unique Birthday Party Activities for Adults
+ </h2>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Murder Mystery Dinner</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Organize a murder mystery dinner where guests can channel their inner detectives. Assign roles
-                                        in advance and provide character information. Throughout the evening, guests unravel clues and
-                                        solve the mystery together. This interactive experience combines food, entertainment, and
-                                        friendly competition.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Murder Mystery Dinner</h3>
+ <p className="text-charcoal/80 mb-6">
+ Organize a murder mystery dinner where guests can channel their inner detectives. Assign roles
+ in advance and provide character information. Throughout the evening, guests unravel clues and
+ solve the mystery together. This interactive experience combines food, entertainment, and
+ friendly competition.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Escape Room Challenge</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        For a thrilling adventure, book an escape room experience for you and your friends. Work
-                                        together to solve puzzles, find clues, and escape within the time limit. This activity builds
-                                        camaraderie among guests and creates exciting memories.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Escape Room Challenge</h3>
+ <p className="text-charcoal/80 mb-6">
+ For a thrilling adventure, book an escape room experience for you and your friends. Work
+ together to solve puzzles, find clues, and escape within the time limit. This activity builds
+ camaraderie among guests and creates exciting memories.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Wine or Beer Tasting</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Host a wine or beer tasting event where guests can sample a variety of beverages. You can hire
-                                        a sommelier or expert to guide the tasting and provide interesting insights. Consider pairing with our{" "}
-                                        <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link>{" "}
-                                        options at Jinbeh for a unique Japanese twist on the classic tasting experience. Our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> also features $5 sake and $4 draft beer, perfect for a pre-party warm up.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Wine or Beer Tasting</h3>
+ <p className="text-charcoal/80 mb-6">
+ Host a wine or beer tasting event where guests can sample a variety of beverages. You can hire
+ a sommelier or expert to guide the tasting and provide interesting insights. Consider pairing with our{" "}
+ <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link>{" "}
+ options at Jinbeh for a unique Japanese twist on the classic tasting experience. Our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> also features sake and draft beer, perfect for a pre-party warm up.
+ </p>
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🏖️ Outdoor Birthday Plans
-                                    </h2>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🏖️ Outdoor Birthday Plans
+ </h2>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Beach Bonfire</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Gather your friends for a beach bonfire party. Set up cozy seating areas, provide blankets,
-                                        and enjoy grilled food and drinks by the fire. The relaxed atmosphere and natural setting create
-                                        the perfect backdrop for meaningful conversations and quality time with loved ones.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Beach Bonfire</h3>
+ <p className="text-charcoal/80 mb-6">
+ Gather your friends for a beach bonfire party. Set up cozy seating areas, provide blankets,
+ and enjoy grilled food and drinks by the fire. The relaxed atmosphere and natural setting create
+ the perfect backdrop for meaningful conversations and quality time with loved ones.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Garden Picnic</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Host a garden picnic with beautiful floral arrangements and gourmet picnic baskets. Encourage
-                                        guests to dress in light, colorful attire. Set up lawn games, string lights, and comfortable
-                                        seating. This elegant outdoor option is perfect for spring and summer celebrations.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Garden Picnic</h3>
+ <p className="text-charcoal/80 mb-6">
+ Host a garden picnic with beautiful floral arrangements and gourmet picnic baskets. Encourage
+ guests to dress in light, colorful attire. Set up lawn games, string lights, and comfortable
+ seating. This elegant outdoor option is perfect for spring and summer celebrations.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Camping Adventure</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Plan a camping trip with your closest friends for a birthday celebration in the wilderness.
-                                        Spend the day hiking, fishing, or exploring nature. Cook a hearty dinner over a campfire and
-                                        enjoy stargazing in the evening. This rustic experience creates lasting memories.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Camping Adventure</h3>
+ <p className="text-charcoal/80 mb-6">
+ Plan a camping trip with your closest friends for a birthday celebration in the wilderness.
+ Spend the day hiking, fishing, or exploring nature. Cook a hearty dinner over a campfire and
+ enjoy stargazing in the evening. This rustic experience creates lasting memories.
+ </p>
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🏠 Indoor Birthday Gathering Ideas
-                                    </h2>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🏠 Indoor Birthday Gathering Ideas
+ </h2>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">DIY Craft Night</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Host a DIY craft night where guests can unleash their creativity. Set up different craft
-                                        stations with supplies for painting, jewelry making, or pottery. This interactive activity
-                                        provides entertainment and memorable take-home gifts.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">DIY Craft Night</h3>
+ <p className="text-charcoal/80 mb-6">
+ Host a DIY craft night where guests can unleash their creativity. Set up different craft
+ stations with supplies for painting, jewelry making, or pottery. This interactive activity
+ provides entertainment and memorable take-home gifts.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Casino Night</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Bring the excitement of Las Vegas to your living room with a casino night. Rent or DIY casino
-                                        tables and provide play money. Guests can enjoy friendly games of poker, blackjack, and roulette
-                                        while enjoying drinks and snacks.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Casino Night</h3>
+ <p className="text-charcoal/80 mb-6">
+ Bring the excitement of Las Vegas to your living room with a casino night. Rent or DIY casino
+ tables and provide play money. Guests can enjoy friendly games of poker, blackjack, and roulette
+ while enjoying drinks and snacks.
+ </p>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Movie Marathon</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        For a laid-back celebration, host a movie marathon featuring your favorite films. Create a
-                                        cozy atmosphere with blankets, pillows, and plenty of popcorn. This low-stress option allows
-                                        guests to relax and enjoy quality time together.
-                                    </p>
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Movie Marathon</h3>
+ <p className="text-charcoal/80 mb-6">
+ For a laid-back celebration, host a movie marathon featuring your favorite films. Create a
+ cozy atmosphere with blankets, pillows, and plenty of popcorn. This low-stress option allows
+ guests to relax and enjoy quality time together.
+ </p>
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        ✨ Unusual Birthday Party Ideas for Adults
-                                    </h2>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ ✨ Unusual Birthday Party Ideas for Adults
+ </h2>
 
-                                    <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Hibachi Show</h3>
-                                    <p className="text-charcoal/80 mb-6">
-                                        Host a hibachi show at your party for an entertaining and delicious experience. At Jinbeh,
-                                        we specialize in bringing the hibachi experience to your celebration. Our skilled chefs perform
-                                        impressive knife skills, entertain your guests with fiery tricks, and prepare a customized meal
-                                        right before their eyes. Learn more about the differences between{" "}
-                                        <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link>{" "}
-                                        before booking. It's a unique combination of entertainment and fine dining.
+ <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Hibachi Show</h3>
+ <p className="text-charcoal/80 mb-6">
+ Host a hibachi show at your party for an entertaining and delicious experience. At Jinbeh,
+ we specialize in bringing the hibachi experience to your celebration. Our skilled chefs perform
+ impressive knife skills, entertain your guests with fiery tricks, and prepare a customized meal
+ right before their eyes. Learn more about the differences between{" "}
+ <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link>{" "}
+ before booking. It's a unique combination of entertainment and fine dining.
                                     </p>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">Silent Disco</h3>
@@ -443,7 +442,6 @@ export default function AdultBirthdayPartyIdeas() {
                                             </p>
                                         </div>
                                     </div>
-
 
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>

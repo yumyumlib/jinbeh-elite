@@ -35,7 +35,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -146,7 +145,6 @@ export default function BestSteakNearMe() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Finding the best steakhouse near you</strong> doesn't have to be complicated. Whether you're seeking a classic steakhouse experience or something unique like hibachi-style steak, Dallas offers exceptional options that cater to every preference and occasion.</p>
-
 
             
               <p className="text-charcoal/80 text-sm mt-6">

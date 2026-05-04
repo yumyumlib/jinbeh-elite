@@ -26,7 +26,7 @@ const schemas = [
             { "@type": "Question", name: "What is Yamazaki whiskey?", acceptedAnswer: { "@type": "Answer", text: "Yamazaki is Japan's oldest malt whiskey distillery, established in 1923. The flagship Yamazaki 12 Year Old is renowned for its delicate balance of fruit and oak, with notes of honey, peach, and pineapple." } },
             { "@type": "Question", name: "Why is Yamazaki whiskey hard to find?", acceptedAnswer: { "@type": "Answer", text: "Yamazaki has limited production and very high global demand, making it challenging to find. This scarcity adds to its allure and prestige among whiskey enthusiasts." } },
             { "@type": "Question", name: "Where can I buy Yamazaki whiskey?", acceptedAnswer: { "@type": "Answer", text: "You can find Yamazaki at local liquor stores, specialty whiskey shops, online retailers like Drizly and Caskers, bars and restaurants, or at Jinbeh in Dallas." } },
-            { "@type": "Question", name: "How much does Yamazaki whiskey cost?", acceptedAnswer: { "@type": "Answer", text: "Prices vary by expression. Yamazaki 12 Year Old typically ranges from $150-300. The NAS (no age statement) runs $60-100. Rarer expressions like the 18 Year Old can cost $500-1000+." } },
+            { "@type": "Question", name: "How much does Yamazaki whiskey cost?", acceptedAnswer: { "@type": "Answer", text: "Prices vary by expression. Yamazaki 12 Year Old typically ranges from. The NAS (no age statement) runs. Rarer expressions like the 18 Year Old can cost +." } },
             { "@type": "Question", name: "What's the difference between Yamazaki expressions?", acceptedAnswer: { "@type": "Answer", text: "Yamazaki offers various expressions including NAS, 12, 18, and 25 Year Old, each with distinct aging periods and flavor complexity. The 12 Year Old is the most well-known, while older expressions command higher prices." } },
             { "@type": "Question", name: "How can I tell if Yamazaki is authentic?", acceptedAnswer: { "@type": "Answer", text: "Purchase from reputable retailers, check bottle authenticity features, verify the seal and label quality, and compare prices. Suspiciously low prices may indicate counterfeits." } },
             { "@type": "Question", name: "Should I drink Yamazaki neat or with water?", acceptedAnswer: { "@type": "Answer", text: "Yamazaki is versatile. Enjoy it neat to experience full flavor complexity, or add a drop of water to open up the aromas. The Japanese mizuwari style (1 part whisky, 2 parts water, large ice cube) is also excellent." } },
@@ -34,7 +34,6 @@ const schemas = [
         ]
     }
 ];
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -161,15 +160,15 @@ export default function YamazakiWhiskeyGuide() {
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Expression</th><th className="p-3 text-left">Tasting Notes</th><th className="p-3 text-left">ABV</th><th className="p-3 text-left">Price Range</th></tr></thead>
                                 <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Yamazaki NAS</td><td className="p-3">Strawberry, cherry, light vanilla</td><td className="p-3">43%</td><td className="p-3">$60–100</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">⭐ Yamazaki 12</td><td className="p-3">Honey, peach, oak, pineapple</td><td className="p-3">43%</td><td className="p-3">$150–300</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Yamazaki 18</td><td className="p-3">Dark chocolate, dried fruit, sherry</td><td className="p-3">43%</td><td className="p-3">$500–1,000</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Yamazaki 25</td><td className="p-3">Rich, complex, Mizunara wood, plum</td><td className="p-3">43%</td><td className="p-3">$3,000–5,000+</td></tr>
-                                    <tr><td className="p-3 font-semibold">Sherry Cask</td><td className="p-3">Raisins, cinnamon, deep amber</td><td className="p-3">48%</td><td className="p-3">$5,000+</td></tr>
-                                </tbody>
-                            </table>
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Yamazaki NAS</td><td className="p-3">Strawberry, cherry, light vanilla</td><td className="p-3">43%</td><td className="p-3"></td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">⭐ Yamazaki 12</td><td className="p-3">Honey, peach, oak, pineapple</td><td className="p-3">43%</td><td className="p-3"></td></tr>
+ <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Yamazaki 18</td><td className="p-3">Dark chocolate, dried fruit, sherry</td><td className="p-3">43%</td><td className="p-3">,000</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Yamazaki 25</td><td className="p-3">Rich, complex, Mizunara wood, plum</td><td className="p-3">43%</td><td className="p-3">,000–5,000+</td></tr>
+ <tr><td className="p-3 font-semibold">Sherry Cask</td><td className="p-3">Raisins, cinnamon, deep amber</td><td className="p-3">48%</td><td className="p-3">,000+</td></tr>
+ </tbody>
+ </table>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🛍️ Where to Buy Yamazaki Whiskey</h2>
+ <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🛍️ Where to Buy Yamazaki Whiskey</h2>
 
                             <div className="space-y-6 my-8">
                                 <div className="border-l-4 border-accent-red pl-6 py-4">

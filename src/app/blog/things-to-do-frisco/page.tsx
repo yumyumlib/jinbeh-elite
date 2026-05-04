@@ -78,7 +78,6 @@ const faqSchema = {
     })),
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -387,9 +386,22 @@ export default function ThingsToDoFrisco() {
                                     </div>
                                 </div>
 
+                                <div className="my-10 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                    <h3 className="font-heading text-xl font-bold text-charcoal mb-3">The Best Thing to Do in Frisco: Dinner and a Show at Jinbeh</h3>
+                                    <p className="text-charcoal/80 mb-3">
+                                        After the parks, the shopping, and the sights, the best thing to do in Frisco is sit down at Jinbeh for dinner and a show. Our hibachi chefs turn your table into a stage, with onion volcanoes, flying shrimp, and grilled premium proteins cooked right in front of you. The kids stay glued to the action. The adults relax with a cold sake or a Japanese whisky. And everyone leaves with a story.
+                                    </p>
+                                    <p className="text-charcoal/80 mb-3">
+                                        Jinbeh has been a Frisco favorite for nearly four decades, and it&apos;s consistently named one of the best <Link href="/blog/best-hibachi-dallas" className="text-accent-red hover:underline">hibachi restaurants in DFW</Link>, the best sushi in Frisco, and one of the most fun places to celebrate a birthday, anniversary, or graduation. Located just minutes from <Link href="/blog/best-restaurants-stonebriar" className="text-accent-red hover:underline">Stonebriar Centre</Link> and Legacy West, it&apos;s the easiest cap to a great Frisco day.
+                                    </p>
+                                    <p className="text-charcoal/80">
+                                        Reserve a hibachi table at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> ahead of time. Weekend tables fill up fast.
+                                    </p>
+                                </div>
+
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Frisco insider day plan:</strong> Start with morning activities at The Star or KidZania, grab lunch at one of Legacy West's cafés, then spend the afternoon shopping at Stonebriar Centre. Cap off your perfect Frisco day with dinner at Jinbeh—we're just 3 minutes from Stonebriar! Arrive by 5 PM to snag <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> pricing on apps and drinks before your meal. Weekend reservations fill fast, so <Link href="/reservations" className="text-accent-red hover:underline">book ahead</Link>.
+                                        <strong>Frisco insider day plan:</strong> Start with morning activities at The Star or KidZania, grab lunch at one of Legacy West&apos;s cafés, then spend the afternoon shopping at Stonebriar Centre. Cap off your perfect Frisco day with dinner at Jinbeh, just 3 minutes from Stonebriar. Arrive by 5 PM to catch <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> on apps and drinks before your meal. Weekend reservations fill fast, so <Link href="/reservations" className="text-accent-red hover:underline">book ahead</Link>.
                                     </ProTip>
 
                                     <PillarCTA type="hub" />

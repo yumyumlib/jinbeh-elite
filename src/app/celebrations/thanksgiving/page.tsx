@@ -85,12 +85,11 @@ const faqSchema = {
       name: "Is hibachi a good Thanksgiving alternative?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Hibachi is perfect for Thanksgiving — the whole family gathers around the table, watches the chef perform, and enjoys a feast together. It's festive, delicious, and no one has to do the dishes!",
+        text: "Yes. Hibachi is perfect for Thanksgiving. The whole family gathers around the table, watches the chef perform, and enjoys a feast together. It's festive, delicious, and no one has to do the dishes.",
       },
     },
   ],
 };
-
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -196,7 +195,10 @@ export default function ThanksgivingPage() {
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
                 This year, give yourself the gift of no cooking, no cleaning, and no stress.
                 At Jinbeh, your family gathers around the hibachi table while our chefs
-                put on a show and serve up a feast. That&apos;s something to be thankful for!
+                put on a show and serve up a feast. That&apos;s something to be thankful for.
+              </p>
+              <p className="text-base text-charcoal/70 leading-relaxed max-w-3xl mx-auto mt-5">
+                <strong>Why Jinbeh is a great fit for Thanksgiving in DFW:</strong> you don&apos;t have to cook, you get a tableside hibachi show, and you enjoy fresh, restaurant-quality food alongside the people you love most. It&apos;s the festive, celebratory atmosphere of a holiday dinner without the work of hosting one. Reserve a hibachi table at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> location, gather the family, and let us handle Thanksgiving dinner.
               </p>
             </div>
 
@@ -253,19 +255,19 @@ export default function ThanksgivingPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Filet Mignon — premium cut for a special occasion
+                      Filet Mignon: premium cut for a special occasion
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Lobster Tail — succulent and festive
+                      Lobster Tail: succulent and festive
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Hibachi Fried Rice — the crowd favorite
+                      Hibachi Fried Rice: the crowd favorite
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Family Combo Platters — something for everyone
+                      Family Combo Platters: something for everyone
                     </li>
                   </ul>
                 </div>
@@ -274,19 +276,19 @@ export default function ThanksgivingPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Sushi Platters — great for sharing
+                      Sushi Platters: great for sharing
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Signature Rolls — house specialties
+                      Signature Rolls: house specialties
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Sake & Japanese Beer — toast the day
+                      Sake &amp; Japanese Beer: toast the day
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Kids Menu — options for little ones
+                      Kids Menu: options for little ones
                     </li>
                   </ul>
                 </div>

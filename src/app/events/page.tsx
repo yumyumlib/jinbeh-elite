@@ -70,10 +70,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What is the capacity of Jinbeh's private dining rooms?",
+      name: "What is the event capacity at each Jinbeh location?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our Frisco location has a private dining room that seats up to 40 guests. Our Lewisville location has a private dining room that seats up to 30 guests. Both can be customized for your event.",
+        text: "Each Jinbeh location can comfortably host events of over 100 guests when groups are coordinated across multiple hibachi tables and the dining room. Lewisville has tatami-style booths near the sushi bar. Frisco has a small number of partitioned booths in the back. Reach out and we'll plan seating, timing, and menu to fit your group.",
       },
     },
     {
@@ -161,7 +161,7 @@ const eventTypes = [
 const eventPackages = [
   {
     name: "Experience Package",
-    price: "From $35/person",
+    price: "From /person",
     features: [
       "Private dining room rental",
       "Hibachi chef cooking demonstration",
@@ -173,7 +173,7 @@ const eventPackages = [
   },
   {
     name: "Premium Package",
-    price: "From $50/person",
+    price: "From /person",
     features: [
       "Everything in Experience Package",
       "Premium sushi appetizer course",
@@ -185,7 +185,7 @@ const eventPackages = [
   },
   {
     name: "Signature Package",
-    price: "From $75/person",
+    price: "From /person",
     features: [
       "Everything in Premium Package",
       "Multi-course sushi experience",
@@ -303,7 +303,6 @@ export default function EventsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
@@ -341,7 +340,14 @@ export default function EventsPage() {
                 Events We Host
               </h2>
               <p className="text-lg text-charcoal/70">
-                Whatever the occasion — corporate dinners, rehearsal celebrations, baby showers, or team outings — Jinbeh is the perfect venue.
+                Whatever the occasion. Corporate dinners, rehearsal celebrations, baby showers, or team outings. Jinbeh is the perfect venue.
+              </p>
+              <p className="text-base text-charcoal/70 mt-5 max-w-3xl mx-auto leading-relaxed">
+                <strong>Why DFW groups choose Jinbeh for events:</strong> nearly four decades of family hospitality, premium hibachi steak and fresh sushi, a built-in tableside show that keeps guests engaged, and a team that&apos;s coordinated thousands of birthdays, corporate events, and celebrations. Each location can comfortably host groups of 100+ when seating is coordinated across hibachi tables and the dining room. Easy way to book: reserve your event through OpenTable for{" "}
+                <a href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Frisco</a>
+                {" "}or{" "}
+                <a href="https://www.opentable.com/jinbeh-lewisville" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Lewisville</a>
+                .
               </p>
             </div>
 
@@ -388,7 +394,7 @@ export default function EventsPage() {
                 Elegant Venues for Every Celebration
               </h2>
               <p className="text-lg text-charcoal/70">
-                Both locations feature dedicated private dining rooms designed for unforgettable events — from hibachi parties to wedding celebrations. Need off-site catering? We handle that too.
+                Both locations feature dedicated event space designed for unforgettable celebrations: hibachi parties, anniversaries, corporate dinners, and more. Need off-site catering? We deliver hibachi and sushi catering on presentation trays. Live hibachi shows are at the restaurant only.
               </p>
             </div>
 
@@ -552,9 +558,9 @@ export default function EventsPage() {
                 <div
                   key={index}
                   className={`rounded-2xl p-8 transition-all duration-300 ${index === 1
-                    ? "bg-charcoal text-white shadow-2xl lg:scale-105"
-                    : "bg-white text-charcoal shadow-lg hover:shadow-xl"
-                    }`}
+ ? "bg-charcoal text-white shadow-2xl lg:scale-105"
+ : "bg-white text-charcoal shadow-lg hover:shadow-xl"
+ }`}
                 >
                   <h3 className="text-2xl font-heading font-bold mb-3">{pkg.name}</h3>
                   <p className={`text-lg font-semibold mb-6 ${index === 1 ? "text-soft-gold" : "text-accent-red"}`}>
@@ -566,7 +572,7 @@ export default function EventsPage() {
                       <li key={featureIndex} className="flex items-start gap-3">
                         <svg
                           className={`w-5 h-5 flex-shrink-0 mt-0.5 ${index === 1 ? "text-soft-gold" : "text-accent-red"
-                            }`}
+ }`}
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -581,9 +587,9 @@ export default function EventsPage() {
 
                   <button
                     className={`w-full py-3 rounded-xl font-semibold transition-colors ${index === 1
-                      ? "bg-accent-red hover:bg-accent-red/90 text-white"
-                      : "bg-accent-red/10 text-accent-red hover:bg-accent-red/20"
-                      }`}
+ ? "bg-accent-red hover:bg-accent-red/90 text-white"
+ : "bg-accent-red/10 text-accent-red hover:bg-accent-red/20"
+ }`}
                     aria-label={`Learn more about ${pkg.name}`}
                   >
                     Learn More
@@ -824,7 +830,12 @@ export default function EventsPage() {
               <Link href="/blog/hibachi-catering-dfw" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Catering</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Hibachi Catering in DFW</h3>
-                <p className="text-sm text-charcoal/70 mt-2">Bring the hibachi show to your corporate event or celebration.</p>
+                <p className="text-sm text-charcoal/70 mt-2">Hibachi and sushi delivered on presentation trays for your event.</p>
+              </Link>
+              <Link href="/celebrations/world-cup" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <span className="text-sm text-accent-red font-medium uppercase tracking-wider">FIFA 2026</span>
+                <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Watch the World Cup at Jinbeh</h3>
+                <p className="text-sm text-charcoal/70 mt-2">Match-day dining and watch-party catering at our Frisco and Lewisville locations.</p>
               </Link>
             </div>
           </div>

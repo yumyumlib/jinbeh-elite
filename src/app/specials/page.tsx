@@ -13,7 +13,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Explore amazing specials at Jinbeh! Happy Hour deals, lunch specials, weekly promotions, and seasonal offers at our Frisco and Lewisville Japanese.",
+    "Lunch Hibachi for Two — $35 (Mon-Fri 11am-2pm). Happy Hour Mon-Fri: $4 draft beer, $5 small hot sake, $6 wine. View all current deals at Jinbeh.",
   keywords: [
     "specials",
     "promotions",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Specials & Promotions | Jinbeh Japanese Restaurant",
     description:
-      "Amazing deals on sushi, hibachi, and Japanese cuisine. Happy Hour, lunch specials, and weekly promotions.",
+      "Lunch Hibachi for Two — $35 (Mon-Fri lunch). Happy Hour: $4 beer, $5 small hot sake, $6 wine. Plus weekly specials at Jinbeh.",
     url: "https://jinbeh.com/specials",
     images: [
       {
@@ -53,21 +53,48 @@ const offersSchema = {
   "offers": [
     {
       "@type": "Offer",
-      "name": "Happy Hour Specials",
-      "description": "$4 Japanese draft beer, $5 sake, $6 wine",
-      "price": "4.00",
+      "name": "Lunch Hibachi for Two",
+      "description": "Lunch-only special, Monday through Friday 11:00 AM to 2:00 PM. Two hibachi entrees — choose between Veggie, Chicken, Steak, Shrimp, or Salmon. Includes soup, salad, vegetables, and white rice. Add fried rice for $5 per person.",
+      "price": "35.00",
       "priceCurrency": "USD",
-      "availability": "Monday - Friday, 5:00 PM - 6:30 PM",
-      "url": "https://jinbeh.com/specials#happy-hour"
+      "url": "https://jinbeh.com/specials#hibachi-for-two",
+      "availability": "https://schema.org/InStock",
+      "eligibleQuantity": { "@type": "QuantitativeValue", "value": 2, "unitText": "guests" },
+      "availabilityStarts": "11:00",
+      "availabilityEnds": "14:00",
+      "availableAtOrFrom": {
+        "@type": "Place",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "11:00",
+          "closes": "14:00"
+        }
+      }
     },
     {
       "@type": "Offer",
-      "name": "Lunch Specials",
-      "description": "Bento boxes from $12.95, hibachi lunch combos from $13.95, sushi lunch specials",
-      "price": "12.95",
+      "name": "Happy Hour Japanese Draft Beer",
+      "price": "4.00",
       "priceCurrency": "USD",
-      "availability": "Monday - Friday, 11:00 AM - 2:30 PM",
-      "url": "https://jinbeh.com/specials#lunch"
+      "url": "https://jinbeh.com/happy-hour",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Happy Hour Small Hot Sake",
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "url": "https://jinbeh.com/happy-hour",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Happy Hour Wine",
+      "price": "6.00",
+      "priceCurrency": "USD",
+      "url": "https://jinbeh.com/happy-hour",
+      "availability": "https://schema.org/InStock"
     },
     {
       "@type": "Offer",
@@ -78,16 +105,34 @@ const offersSchema = {
   ]
 };
 
+// Hibachi for Two — current limited-time special
+const hibachiForTwoProteins = [
+  { name: "Veggie",  icon: "🥦", desc: "Fresh seasonal vegetables with tofu" },
+  { name: "Chicken", icon: "🍗", desc: "Tender chicken with house teriyaki glaze" },
+  { name: "Steak",   icon: "🥩", desc: "Hand-cut steak, seared on the teppan" },
+  { name: "Shrimp",  icon: "🍤", desc: "Jumbo shrimp, flame-kissed to perfection" },
+  { name: "Salmon",  icon: "🍣", desc: "Fresh salmon with citrus teriyaki" },
+];
+
 const frisco = locations.locations.frisco;
 const lewisville = locations.locations.lewisville;
 
 const specialCategories = [
   {
+    id: "hibachi-for-two",
+    icon: "🔥",
+    title: "Lunch Hibachi for Two — $35",
+    time: "Mon-Fri Lunch • 11:00 AM – 2:00 PM",
+    description: "Pick 2: Veggie, Chicken, Steak, Shrimp, or Salmon",
+    color: "from-soft-gold to-accent-red",
+    href: "/specials#hibachi-for-two",
+  },
+  {
     id: "happy-hour",
     icon: "🍸",
     title: "Happy Hour Specials",
     time: "Mon-Fri • 5:00 - 6:30 PM",
-    description: "$4 draft beer, $5 sake, $6 wine",
+    description: "$4 draft beer • $5 small hot sake • $6 wine",
     color: "from-accent-red to-deep-indigo",
     href: "/specials#happy-hour",
   },
@@ -96,7 +141,7 @@ const specialCategories = [
     icon: "🍱",
     title: "Lunch Specials",
     time: "Mon-Fri • 11:00 AM - 2:30 PM",
-    description: "Affordable Japanese lunch entrees",
+    description: "The $35 Hibachi for Two, hibachi lunch combos, and sushi specials",
     color: "from-deep-indigo to-soft-gold",
     href: "/specials#lunch",
   },
@@ -150,8 +195,8 @@ const happyHourItems = [
     emoji: "🍺",
   },
   {
-    category: "Sake",
-    items: ["House Sake (hot or cold)", "Premium Sake", "Sake Flights"],
+    category: "Small Hot Sake",
+    items: ["House sake served warm in a tokkuri"],
     price: "$5",
     emoji: "🍶",
   },
@@ -165,20 +210,20 @@ const happyHourItems = [
 
 const lunchHighlights = [
   {
-    title: "Bento Boxes",
-    price: "Starting at $12.95",
-    description: "Assorted proteins with rice, vegetables, and sides",
-    emoji: "🍱",
-  },
-  {
-    title: "Hibachi Lunch Combos",
-    price: "From $13.95",
-    description: "Chef-cooked hibachi experience at lunch prices",
+    title: "Hibachi for Two",
+    price: "$35",
+    description: "Two hibachi entrees, Mon-Fri lunch only. See the special below.",
     emoji: "🔥",
   },
   {
+    title: "Hibachi Lunch Combos",
+    price: "",
+    description: "Chef-cooked hibachi experience at lunch portions",
+    emoji: "🥩",
+  },
+  {
     title: "Sushi Lunch Specials",
-    price: "Varies",
+    price: "",
     description: "Fresh rolls and nigiri combinations",
     emoji: "🍣",
   },
@@ -221,7 +266,6 @@ export default function SpecialsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
@@ -249,7 +293,7 @@ export default function SpecialsPage() {
         {/* Quick Navigation to Specials */}
         <section className="py-12 bg-gradient-to-r from-deep-indigo to-charcoal">
           <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {specialCategories.map((category) => (
                 <a
                   key={category.id}
@@ -279,6 +323,119 @@ export default function SpecialsPage() {
           </div>
         </section>
 
+        {/* Hibachi for Two Featured Special */}
+        <section id="hibachi-for-two" className="py-20 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <Image
+              src="/images/food/hibachi-grill.jpg"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-accent-red text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full mb-4">
+                  🔥 Lunch Special — Monday through Friday
+                </span>
+                <h2 className="text-4xl md:text-6xl font-heading font-bold mb-3">
+                  Hibachi for Two
+                </h2>
+                <div className="flex items-baseline justify-center gap-3 mb-4">
+                  <span className="text-7xl md:text-8xl font-heading font-bold text-soft-gold leading-none">$35</span>
+                  <span className="text-xl md:text-2xl text-warm-ivory/80">/ for 2 people</span>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-soft-gold/40 rounded-full px-5 py-2 mb-5">
+                  <svg className="w-4 h-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm font-medium text-warm-ivory">Lunch only • Mon–Fri • 11:00 AM – 2:00 PM</span>
+                </div>
+                <p className="text-lg text-warm-ivory/85 max-w-2xl mx-auto">
+                  Two hibachi entrees, your choice of any combination. Cooked tableside on the teppanyaki grill —
+                  includes soup, salad, vegetables, and white rice.
+                </p>
+              </div>
+
+              {/* Protein selection */}
+              <p className="text-center text-soft-gold uppercase tracking-wider text-sm font-medium mb-6">
+                Choose Two Proteins
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+                {hibachiForTwoProteins.map((p) => (
+                  <div
+                    key={p.name}
+                    className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 text-center hover:bg-white/15 hover:border-soft-gold/40 transition-all"
+                  >
+                    <div className="text-4xl mb-2">{p.icon}</div>
+                    <h3 className="font-heading text-lg font-semibold mb-1">{p.name}</h3>
+                    <p className="text-xs text-warm-ivory/70 leading-relaxed">{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Includes + upgrade callouts */}
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+                <div className="bg-white/5 border border-white/15 rounded-2xl p-6">
+                  <h3 className="font-heading font-bold text-soft-gold uppercase tracking-wider text-sm mb-3">
+                    Each Plate Includes
+                  </h3>
+                  <ul className="space-y-2 text-sm text-warm-ivory/85">
+                    <li className="flex items-center gap-2">
+                      <span className="text-soft-gold">✓</span> Onion soup
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-soft-gold">✓</span> House salad with ginger dressing
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-soft-gold">✓</span> Grilled vegetables
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-soft-gold">✓</span> Steamed white rice
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-soft-gold/10 border border-soft-gold/40 rounded-2xl p-6 ring-1 ring-soft-gold/30">
+                  <h3 className="font-heading font-bold text-soft-gold uppercase tracking-wider text-sm mb-3">
+                    Optional Upgrade
+                  </h3>
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-3xl font-heading font-bold text-soft-gold leading-none">+$5</span>
+                    <span className="text-sm text-warm-ivory/85">per person</span>
+                  </div>
+                  <p className="text-sm text-warm-ivory/85 leading-relaxed">
+                    Upgrade your white rice to <strong className="text-white">hibachi fried rice</strong> — wok-tossed
+                    with egg, vegetables, and a hint of garlic butter.
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="inline-flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="/reservations"
+                    className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all"
+                  >
+                    Reserve a Table
+                  </Link>
+                  <Link
+                    href="/menu"
+                    className="btn bg-white/10 backdrop-blur text-white border border-white/40 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl transition-all"
+                  >
+                    View Full Menu
+                  </Link>
+                </div>
+                <p className="text-xs text-warm-ivory/60 italic mt-6">
+                  Available at lunch only, Monday through Friday, 11:00 AM – 2:00 PM. Dine-in only. Two-person minimum. Not combinable with other promotions or coupons.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Happy Hour Section */}
         <section id="happy-hour" className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">
@@ -291,7 +448,7 @@ export default function SpecialsPage() {
                   Happy Hour Specials
                 </h2>
                 <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  $4 Japanese draft beer, $5 sake, $6 wine at both Frisco and Lewisville.
+                  <strong className="text-charcoal">$4 Japanese draft beer • $5 small hot sake • $6 wine</strong> at both Frisco and Lewisville.<br />
                   Monday through Friday, 5:00 to 6:30 PM<br />
                   <span className="text-accent-red font-bold">Join us after work!</span> Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktail</Link> menu.
                 </p>
@@ -471,8 +628,6 @@ export default function SpecialsPage() {
           </div>
         </section>
 
-
-
         {/* Newsletter Signup Section */}
         <section className="py-20 bg-gradient-to-br from-deep-indigo via-charcoal to-accent-red text-white">
           <div className="container mx-auto px-6">
@@ -582,16 +737,24 @@ export default function SpecialsPage() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
+                  q: "What is the Hibachi for Two special?",
+                  a: "Hibachi for Two is $35 for two hibachi entrees — pick any two from Veggie, Chicken, Steak, Shrimp, or Salmon. Each plate includes onion soup, house salad with ginger dressing, grilled vegetables, and steamed white rice. Upgrade to fried rice for $5 per person. Available at lunch only, Monday through Friday, 11:00 AM – 2:00 PM. Dine-in only.",
+                },
+                {
+                  q: "When is the Hibachi for Two special available?",
+                  a: "The $35 Hibachi for Two is a lunch-only special, available Monday through Friday from 11:00 AM to 2:00 PM at both Frisco and Lewisville locations. It is not available on weekends or at dinner.",
+                },
+                {
                   q: "Does Jinbeh have happy hour?",
-                  a: "Yes! Jinbeh Happy Hour runs Monday through Friday, 5:00 to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both our Frisco and Lewisville locations.",
+                  a: "Yes! Jinbeh Happy Hour runs Monday through Friday, 5:00 to 6:30 PM. Enjoy $4 Japanese draft beer, $5 small hot sake, and $6 wine at both our Frisco and Lewisville locations.",
                 },
                 {
                   q: "What are Jinbeh's lunch specials?",
-                  a: "We offer fantastic lunch specials Monday through Friday, 11:00 AM to 2:30 PM (weekends 11:30 AM to 2:30 PM). Choose from bento boxes starting at $12.95, hibachi lunch combos from $13.95, and fresh sushi lunch specials. All dishes are affordable without compromising quality.",
+                  a: "We offer fantastic lunch specials Monday through Friday, 11:00 AM to 2:30 PM (weekends 11:30 AM to 2:30 PM). Choose from the $35 Hibachi for Two, hibachi lunch combos, and fresh sushi lunch specials. Ask your server for today's lunch menu.",
                 },
                 {
                   q: "When is happy hour at Jinbeh?",
-                  a: "Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine. It is perfect for after-work gatherings and date night pre-dinner drinks.",
+                  a: "Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. $4 Japanese draft beer, $5 small hot sake, and $6 wine. It is perfect for after-work gatherings and date night pre-dinner drinks.",
                 },
               ].map((faq, i) => (
                 <details key={i} className="bg-warm-ivory rounded-xl shadow-md overflow-hidden group">

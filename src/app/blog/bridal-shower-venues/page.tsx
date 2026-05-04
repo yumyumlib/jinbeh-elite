@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What's the cost for a bridal shower venue?",
     answer:
-      "Home venues are free. Parks: $50-$300. Cafes: $15-$30 per person. Banquet halls: $300-$1,000+. Hotels: $1,500-$5,000+. Jinbeh charges per person with premium service. Dinner and a show creates unforgettable memories.",
+      "Home venues are free. Parks:. Cafes: per person. Banquet halls:,000+. Hotels:,500-,000+. Jinbeh charges per person with premium service. Dinner and a show creates unforgettable memories.",
   },
   {
     question: "What matters most when choosing a venue?",
@@ -60,8 +60,6 @@ const faqs = [
       "Absolutely! Many bridal shower games work perfectly at restaurant venues. At Jinbeh, the hibachi chef performance itself becomes entertainment — guests love watching tricks and cheering together. Between courses, you can do tabletop games like bingo, trivia about the couple, or 'guess the wedding dress.' Just keep games compact since you'll be seated at your table.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -214,7 +212,6 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
 
-
       <p>
         Planning a bridal shower is an exciting yet important task. Finding the
         perfect venue is key to creating a memorable event that celebrates the
@@ -291,62 +288,62 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
         If you prefer a personal, intimate setting, consider hosting at someone's
         home or renting an Airbnb. This option allows complete customization and
         flexibility. You can decorate the space to match the bride's style and
-        maintain full control over the guest list and activities.
-      </p>
+ maintain full control over the guest list and activities.
+ </p>
 
-      <p>
-        Home-based showers create a warm, welcoming atmosphere and allow guests
-        to relax and feel truly at home. This option is ideal for groups of
-        15-40 guests and can be very budget-friendly while still feeling elegant
-        and special.
-      </p>
+ <p>
+ Home-based showers create a warm, welcoming atmosphere and allow guests
+ to relax and feel truly at home. This option is ideal for groups of
+ 15-40 guests and can be very budget-friendly while still feeling elegant
+ and special.
+ </p>
 
-      <h2>Restaurant and Fine Dining Venues</h2>
+ <h2>Restaurant and Fine Dining Venues</h2>
 
-      <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
-        <p className="italic text-charcoal/80 mb-2">
-          "Hosting our bridal shower at Jinbeh was perfect. The elegant setting,
-          beautiful private space, and attentive service made the bride feel so
-          special and celebrated."
-        </p>
-        <p className="text-sm text-charcoal/80">— Bridal Shower Host</p>
-      </div>
+ <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
+ <p className="italic text-charcoal/80 mb-2">
+ "Hosting our bridal shower at Jinbeh was perfect. The elegant setting,
+ beautiful private space, and attentive service made the bride feel so
+ special and celebrated."
+ </p>
+ <p className="text-sm text-charcoal/80">— Bridal Shower Host</p>
+ </div>
 
-      <DidYouKnow
-        fact="The bridal shower industry is worth $2.8 billion annually in the US. Restaurant-hosted bridal showers have surged 55% since 2020, with 68% of maid-of-honor hosts preferring venues that handle food and service. The average bridal shower costs $2,500-$5,000, with venue and catering being the largest expenses at 40-50% of the total budget."
-        source="The Knot & WeddingWire"
-      />
+ <DidYouKnow
+ fact="The bridal shower industry is worth billion annually in the US. Restaurant-hosted bridal showers have surged 55% since 2020, with 68% of maid-of-honor hosts preferring venues that handle food and service. The average bridal shower costs,500-,000, with venue and catering being the largest expenses at 40-50% of the total budget."
+ source="The Knot & WeddingWire"
+ />
 
-      <p>
-        Restaurants like{" "}
-        <Link href="/frisco" className="text-accent-red hover:underline">
-          Jinbeh in Frisco
-        </Link>{" "}
-        and{" "}
-        <Link href="/lewisville" className="text-accent-red hover:underline">
-          Lewisville
-        </Link>{" "}
-        offer excellent bridal shower options. <Link href="/private-dining" className="text-accent-red hover:underline">Private dining</Link> spaces provide
-        intimate, elegant atmospheres without requiring extensive decoration. You
-        can customize menus to accommodate guest preferences and dietary needs.
-        We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for flexible options.
-      </p>
+ <p>
+ Restaurants like{" "}
+ <Link href="/frisco" className="text-accent-red hover:underline">
+ Jinbeh in Frisco
+ </Link>{" "}
+ and{" "}
+ <Link href="/lewisville" className="text-accent-red hover:underline">
+ Lewisville
+ </Link>{" "}
+ offer excellent bridal shower options. <Link href="/private-dining" className="text-accent-red hover:underline">Private dining</Link> spaces provide
+ intimate, elegant atmospheres without requiring extensive decoration. You
+ can customize menus to accommodate guest preferences and dietary needs.
+ We also offer <Link href="/catering" className="text-accent-red hover:underline">catering services</Link> for flexible options.
+ </p>
 
-      <p>
-        Professional restaurant staff handles all service logistics, allowing you
-        to focus on celebrating. Beautiful ambiance and attention to detail make
-        guests feel valued. Restaurants often provide packages that include
-        beverages, special presentations, and personalized service.
-      </p>
+ <p>
+ Professional restaurant staff handles all service logistics, allowing you
+ to focus on celebrating. Beautiful ambiance and attention to detail make
+ guests feel valued. Restaurants often provide packages that include
+ beverages, special presentations, and personalized service.
+ </p>
 
-      <h2>Larger Celebration Venues</h2>
+ <h2>Larger Celebration Venues</h2>
 
-      <h3>Banquet Halls</h3>
+ <h3>Banquet Halls</h3>
 
-      <p>
-        For larger bridal showers, banquet halls are classic choices. These
-        venues offer ample space and often provide catering and decoration
-        services. They're well-equipped to handle bigger groups and can be
+ <p>
+ For larger bridal showers, banquet halls are classic choices. These
+ venues offer ample space and often provide catering and decoration
+ services. They're well-equipped to handle bigger groups and can be
         customized to fit any theme or color scheme.
       </p>
 

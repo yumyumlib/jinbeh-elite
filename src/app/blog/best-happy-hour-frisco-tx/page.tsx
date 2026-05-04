@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Best Happy Hour Frisco TX: Top Spots to Visit | Jinbeh",
     description:
-        "Find the best happy hour in Frisco TX! $4 draft beer, $5 sake, $6 wine at Jinbeh. Discover top spots near Stonebriar for after-work drinks.",
+        "Find the best happy hour in Frisco TX! $4 draft beer, $5 small hot sake, $6 wine at Jinbeh. Top spot near Stonebriar for after-work drinks.",
     keywords: [
         "happy hour frisco tx",
         "sushi happy hour frisco",
@@ -46,7 +46,7 @@ const faqSchema = {
             name: "What time is happy hour at Jinbeh?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Jinbeh's happy hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine during these hours.",
+                text: "Jinbeh's happy hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 small hot sake, and $6 wine during these hours.",
             },
         },
         {
@@ -54,7 +54,7 @@ const faqSchema = {
             name: "What drink specials does Jinbeh offer during happy hour?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes! Our happy hour features $4 Japanese draft beer, $5 sake, and $6 wine. It is the perfect way to enjoy great drinks at great prices.",
+                text: "Our happy hour features $4 Japanese draft beer, $5 small hot sake, and $6 wine — premium pours at unbeatable prices.",
             },
         },
         {
@@ -70,7 +70,7 @@ const faqSchema = {
             name: "Is Jinbeh's happy hour family-friendly?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Absolutely! Kids are welcome during happy hour. We have a children's menu, and parents can enjoy $4 Japanese draft beer, $5 sake, or $6 wine while the kids enjoy fresh sushi and hibachi from our regular menu.",
+                text: "Absolutely! Kids are welcome during happy hour. We have a children's menu, and parents can enjoy $4 Japanese draft beer, $5 small hot sake, or $6 wine while the kids enjoy fresh sushi and hibachi from our regular menu.",
             },
         },
         {
@@ -83,7 +83,6 @@ const faqSchema = {
         },
     ],
 };
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -158,7 +157,6 @@ export default function BestHappyHourFrisco() {
                                         we know exactly where you should go.
                                     </p>
 
-
             
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/international-beer-day" className="text-accent-red hover:underline">International Beer Day celebrations</Link>
@@ -174,111 +172,132 @@ export default function BestHappyHourFrisco() {
                                     </div>
 
                                     <DidYouKnow
-                                        fact="The concept of 'happy hour' originated in the United States Navy in the 1920s, when sailors would enjoy entertainment and refreshments aboard ship. Today, Frisco has over 50 restaurants offering happy hour specials, but Jinbeh is one of the few where you can enjoy $4 draft beer and $5 sake alongside fresh sushi."
-                                        source="Smithsonian Magazine & Frisco Dining Guide"
-                                    />
+                                        fact="The concept of 'happy hour' originated in the United States Navy in the 1920s, when sailors would enjoy entertainment and refreshments aboard ship. Today, Frisco has over 50 restaurants offering happy hour specials, but Jinbeh is one of the few where you can enjoy draft beer and sake alongside fresh sushi."
+ source="Smithsonian Magazine & Frisco Dining Guide"
+ />
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🍶 Jinbeh Happy Hour: The Details
-                                    </h2>
-                                </div>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🍶 Jinbeh Happy Hour: The Details
+ </h2>
+ </div>
 
-                                {/* Happy Hour Deal Card */}
-                                <div className="bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl p-8 text-white my-8">
-                                    <div className="flex items-center gap-4 mb-6">
-                                        <span className="text-5xl">🍻</span>
-                                        <div>
-                                            <h3 className="text-2xl font-heading font-bold">Jinbeh Happy Hour</h3>
-                                            <p className="text-white/80">Monday through Friday | 5:00 PM to 6:30 PM</p>
-                                        </div>
-                                    </div>
+ {/* Happy Hour Deal Card */}
+ <div className="bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl p-8 text-white my-8">
+ <div className="flex items-center gap-4 mb-6">
+ <span className="text-5xl">🍻</span>
+ <div>
+ <h3 className="text-2xl font-heading font-bold">Jinbeh Happy Hour</h3>
+ <p className="text-white/80">Monday through Friday | 5:00 PM to 6:30 PM</p>
+ </div>
+ </div>
 
-                                    <div className="grid grid-cols-3 gap-4 mb-6">
-                                        <div className="bg-white/10 rounded-xl p-4 text-center">
-                                            <span className="text-3xl block mb-2">🍺</span>
-                                            <span className="text-sm">$4 Draft Beer</span>
-                                        </div>
-                                        <div className="bg-white/10 rounded-xl p-4 text-center">
-                                            <span className="text-3xl block mb-2">🍶</span>
-                                            <span className="text-sm">$5 Sake</span>
-                                        </div>
-                                        <div className="bg-white/10 rounded-xl p-4 text-center">
-                                            <span className="text-3xl block mb-2">🍷</span>
-                                            <span className="text-sm">$6 Wine</span>
-                                        </div>
-                                    </div>
+ <div className="grid grid-cols-3 gap-4 mb-6">
+ <div className="bg-white/10 rounded-xl p-4 text-center">
+ <span className="text-3xl block mb-2">🍺</span>
+ <p className="text-2xl font-heading font-bold leading-none mb-1">$4</p>
+ <span className="text-sm">Japanese Draft Beer</span>
+ </div>
+ <div className="bg-white/10 rounded-xl p-4 text-center ring-1 ring-soft-gold/50">
+ <span className="text-3xl block mb-2">🍶</span>
+ <p className="text-2xl font-heading font-bold leading-none mb-1">$5</p>
+ <span className="text-sm">Small Hot Sake</span>
+ </div>
+ <div className="bg-white/10 rounded-xl p-4 text-center">
+ <span className="text-3xl block mb-2">🍷</span>
+ <p className="text-2xl font-heading font-bold leading-none mb-1">$6</p>
+ <span className="text-sm">Wine</span>
+ </div>
+ </div>
 
-                                    <div className="flex flex-col sm:flex-row gap-4">
-                                        <Link href="/frisco" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold text-center hover:bg-warm-ivory transition-colors">
-                                            Frisco Location
-                                        </Link>
-                                        <Link href="/lewisville" className="bg-white/20 text-white px-6 py-3 rounded-xl font-semibold text-center border border-white/30 hover:bg-white/30 transition-colors">
-                                            Lewisville Location
-                                        </Link>
-                                    </div>
-                                </div>
+ <div className="flex flex-col sm:flex-row gap-4">
+ <Link href="/frisco" className="bg-white text-accent-red px-6 py-3 rounded-xl font-semibold text-center hover:bg-warm-ivory transition-colors">
+ Frisco Location
+ </Link>
+ <Link href="/lewisville" className="bg-white/20 text-white px-6 py-3 rounded-xl font-semibold text-center border border-white/30 hover:bg-white/30 transition-colors">
+ Lewisville Location
+ </Link>
+ </div>
+ </div>
 
-                                {/* Comparison Table */}
-                                <div className="overflow-x-auto my-12">
-                                    <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
-                                        <thead className="bg-charcoal text-white">
-                                            <tr>
-                                                <th className="p-4 text-left font-heading">Spot</th>
-                                                <th className="p-4 text-left font-heading">Happy Hour</th>
-                                                <th className="p-4 text-left font-heading">Best Deals</th>
-                                                <th className="p-4 text-left font-heading">Vibe</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-charcoal/80">
-                                            <tr className="border-b border-warm-ivory bg-soft-gold/10">
-                                                <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
-                                                <td className="p-4">Mon-Fri 5-6:30pm</td>
-                                                <td className="p-4">$4 beer, $5 sake, $6 wine</td>
-                                                <td className="p-4">Casual, family-friendly</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Lazy Dog</td>
-                                                <td className="p-4">Mon-Fri 3-6pm</td>
-                                                <td className="p-4">Beer, cocktails, appetizers</td>
-                                                <td className="p-4">Lively, American casual</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Kona Grill</td>
-                                                <td className="p-4">Daily 3-6pm</td>
-                                                <td className="p-4">Sushi, cocktails</td>
-                                                <td className="p-4">Upscale casual</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="p-4 font-semibold text-charcoal">Yard House</td>
-                                                <td className="p-4">Mon-Fri 3-6pm</td>
-                                                <td className="p-4">Beer, pizza, appetizers</td>
-                                                <td className="p-4">Sports bar, large groups</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+ {/* Comparison Table */}
+ <div className="overflow-x-auto my-12">
+ <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
+ <thead className="bg-charcoal text-white">
+ <tr>
+ <th className="p-4 text-left font-heading">Spot</th>
+ <th className="p-4 text-left font-heading">Happy Hour</th>
+ <th className="p-4 text-left font-heading">Best Deals</th>
+ <th className="p-4 text-left font-heading">Vibe</th>
+ </tr>
+ </thead>
+ <tbody className="text-charcoal/80">
+ <tr className="border-b border-warm-ivory bg-soft-gold/10">
+ <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
+ <td className="p-4">Mon-Fri 5-6:30pm</td>
+ <td className="p-4">$4 draft beer, $5 small hot sake, $6 wine</td>
+ <td className="p-4">Casual, family-friendly</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Lazy Dog</td>
+ <td className="p-4">Mon-Fri 3-6pm</td>
+ <td className="p-4">Beer, cocktails, appetizers</td>
+ <td className="p-4">Lively, American casual</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Kona Grill</td>
+ <td className="p-4">Daily 3-6pm</td>
+ <td className="p-4">Sushi, cocktails</td>
+ <td className="p-4">Upscale casual</td>
+ </tr>
+ <tr>
+ <td className="p-4 font-semibold text-charcoal">Yard House</td>
+ <td className="p-4">Mon-Fri 3-6pm</td>
+ <td className="p-4">Beer, pizza, appetizers</td>
+ <td className="p-4">Sports bar, large groups</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
 
-                                <div className="prose prose-lg max-w-none">
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🍶 Why Jinbeh's Happy Hour Stands Out
+ <div className="prose prose-lg max-w-none">
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🍶 Why Jinbeh's Happy Hour Stands Out
                                     </h2>
 
                                     <p>
                                         Let's be real: most <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour deals</Link> are about cheap drinks. But at Jinbeh,
                                         we combine quality with value. You're not just getting discounts; you're
-                                        getting the same fresh <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> and premium <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> options we serve at dinner, just
-                                        at friendlier prices.
-                                    </p>
+ getting the same fresh <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sushi varieties</Link> and premium <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing</Link> options we serve at dinner, just
+ at friendlier prices.
+ </p>
 
-                                    <ul className="space-y-2">
-                                        <li><strong>$4 Japanese draft beer</strong> on tap: Sapporo, Asahi, Kirin, and more.</li>
-                                        <li><strong>$5 sake</strong> hot or cold, from our curated selection.</li>
-                                        <li><strong>$6 wine</strong> by the glass from a curated list.</li>
-                                        <li><strong>Great atmosphere</strong> - Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
-                                    </ul>
+ <ul className="space-y-2">
+ <li><strong>$4 Japanese draft beer</strong> on tap: Sapporo, Asahi, Kirin, and more.</li>
+ <li><strong>$5 small hot sake</strong> — house sake served warm in a tokkuri.</li>
+ <li><strong>$6 wine</strong> by the glass from a curated list.</li>
+ <li><strong>Great atmosphere</strong> — Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
+ </ul>
 
-                                    <ProTip variant="insider">
-                                        <strong>Happy hour regulars' tip:</strong> Come early on Fridays for the best bar seats! $4 draft beer and $5 sake are always popular. Pair a sushi roll with a cold Sapporo for the best happy hour deal in Frisco. <Link href="/bar" className="text-accent-red hover:underline">See our bar menu →</Link>
+ <div className="my-10 grid grid-cols-1 sm:grid-cols-3 gap-4 not-prose">
+   <div className="bg-warm-ivory rounded-xl p-6 text-center border border-warm-ivory-dark">
+     <div className="text-3xl mb-2">🍺</div>
+     <p className="text-3xl font-heading font-bold text-accent-red leading-none mb-1">$4</p>
+     <p className="text-sm text-charcoal/70">Japanese Draft Beer</p>
+   </div>
+   <div className="bg-warm-ivory rounded-xl p-6 text-center border border-soft-gold ring-1 ring-soft-gold/40">
+     <div className="text-3xl mb-2">🍶</div>
+     <p className="text-3xl font-heading font-bold text-accent-red leading-none mb-1">$5</p>
+     <p className="text-sm text-charcoal/70">Small Hot Sake</p>
+   </div>
+   <div className="bg-warm-ivory rounded-xl p-6 text-center border border-warm-ivory-dark">
+     <div className="text-3xl mb-2">🍷</div>
+     <p className="text-3xl font-heading font-bold text-accent-red leading-none mb-1">$6</p>
+     <p className="text-sm text-charcoal/70">Wine</p>
+   </div>
+ </div>
+
+ <ProTip variant="insider">
+ <strong>Happy hour regulars' tip:</strong> Come early on Fridays for the best bar seats! $4 draft beer and $5 small hot sake go fast. Pair a sushi roll with a cold Sapporo for the best happy hour deal in Frisco. <Link href="/bar" className="text-accent-red hover:underline">See our bar menu →</Link>
                                     </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -305,45 +324,45 @@ export default function BestHappyHourFrisco() {
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
                                                     Jinbeh's happy hour runs <strong>Monday through Friday from 5:00 PM to 6:30 PM</strong> at
-                                                    both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake,
-                                                    $6 wine during these hours.
-                                                </p>
-                                            </div>
-                                        </details>
+ both our Frisco and Lewisville locations. Enjoy Japanese draft beer, sake,
+ wine during these hours.
+ </p>
+ </div>
+ </details>
 
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                What drink specials does Jinbeh offer during happy hour?
+ <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+ <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+ What drink specials does Jinbeh offer during happy hour?
+ <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+ </summary>
+ <div className="px-6 pb-6 text-charcoal/80">
+ <p>
+ Yes! Our happy hour features <strong> Japanese draft beer, sake, and wine</strong>. Check our
+ <Link href="/happy-hour" className="text-accent-red hover:underline"> happy hour page</Link> for the current menu.
+ </p>
+ </div>
+ </details>
+
+ <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+ <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+ Do I need a reservation for happy hour?
+ <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
+ </summary>
+ <div className="px-6 pb-6 text-charcoal/80">
+ <p>
+ Reservations are not required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins welcome! Bar seating is first-come, first-served. Welcome to the table!
+ </p>
+ </div>
+ </details>
+
+ <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
+ <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
+ Is Jinbeh's happy hour family-friendly?
                                                 <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Yes! Our happy hour features <strong>$4 Japanese draft beer, $5 sake, and $6 wine</strong>. Check our
-                                                    <Link href="/happy-hour" className="text-accent-red hover:underline"> happy hour page</Link> for the current menu.
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Do I need a reservation for happy hour?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Reservations are not required, but we recommend them for groups of 4 or more, especially Fridays. Walk-ins welcome! Bar seating is first-come, first-served. Welcome to the table!
-                                                </p>
-                                            </div>
-                                        </details>
-
-                                        <details className="group bg-warm-ivory rounded-2xl overflow-hidden">
-                                            <summary className="flex items-center justify-between p-6 cursor-pointer font-heading font-semibold text-charcoal">
-                                                Is Jinbeh's happy hour family-friendly?
-                                                <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
-                                            </summary>
-                                            <div className="px-6 pb-6 text-charcoal/80">
-                                                <p>
-                                                    Absolutely! We treat every guest like family. Kids are welcome during happy hour. We have a children's menu, and parents enjoy $4 Japanese draft beer, $5 sake, or $6 wine while the kids enjoy fresh sushi and hibachi from the regular menu. It's a celebration for everyone!
+                                                    Absolutely! We treat every guest like family. Kids are welcome during happy hour. We have a children's menu, and parents enjoy Japanese draft beer, sake, or wine while the kids enjoy fresh sushi and hibachi from the regular menu. It's a celebration for everyone!
                                                 </p>
                                             </div>
                                         </details>

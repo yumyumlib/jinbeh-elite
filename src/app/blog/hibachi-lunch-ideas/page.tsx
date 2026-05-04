@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How much does hibachi lunch cost at Jinbeh?",
     answer:
-      "Hibachi lunch is significantly lower than dinner. Plates start at $12.95 up to $18.95 depending on protein. Dinner and a show value that saves you money and time during your workday!",
+      "Hibachi lunch is significantly lower than dinner. Plates start at up to depending on protein. Dinner and a show value that saves you money and time during your workday!",
   },
   {
     question: "Can I make hibachi at home?",
@@ -60,8 +60,6 @@ const faqs = [
       "Yes! We serve lunch on Saturdays and Sundays as well. Weekend lunch is a great option for families and groups who want the full hibachi experience at lunch prices. Hours may vary, so call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to confirm.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -155,24 +153,24 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ OpenTable Diners&apos; Choice: Best Value</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh is recognized by OpenTable diners as a <strong>Best Value</strong> pick in the Dallas suburbs. With lunch hibachi starting at $12.95 at a D Magazine award-winning restaurant, you get award-winning quality at everyday prices.
+ Jinbeh is recognized by OpenTable diners as a <strong>Best Value</strong> pick in the Dallas suburbs. With lunch hibachi starting at at a D Magazine award-winning restaurant, you get award-winning quality at everyday prices.
                 </p>
               </div>
               </div>
 
       <p>
         With the added benefits of interactive cooking and the anticipation of watching your meal come together, hibachi lunches truly transform a mundane lunch break into a mini culinary adventure. Whether you're new to hibachi or a seasoned fan, these ideas will surely tantalize your taste buds and offer a fresh perspective on lunch at the office.
-      </p>
+ </p>
 
-      <DidYouKnow
-        fact="Americans spend over $160 billion on lunch annually, with the average worker eating out for lunch 2-3 times per week. Japanese cuisine has become the fastest-growing lunch category, with hibachi lunch specials offering 30-40% lower prices than dinner — making it one of the best value-for-quality options available during the workday."
-        source="National Restaurant Association & Bureau of Labor Statistics"
-      />
+ <DidYouKnow
+ fact="Americans spend over billion on lunch annually, with the average worker eating out for lunch 2-3 times per week. Japanese cuisine has become the fastest-growing lunch category, with hibachi lunch specials offering 30-40% lower prices than dinner — making it one of the best value-for-quality options available during the workday."
+ source="National Restaurant Association & Bureau of Labor Statistics"
+ />
 
-      <h2>Why Hibachi Lunch is Perfect for Workdays</h2>
+ <h2>Why Hibachi Lunch is Perfect for Workdays</h2>
 
-      <p>
-        Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi-style cooking</Link> involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors.
+ <p>
+ Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi-style cooking</Link> involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors.
       </p>
 
       <p>
@@ -209,7 +207,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
 
       <MenuItemCard item={{
         name: "Jinbeh Hibachi Lunch Bento",
-        description: "A complete weekday lunch starting at $12.95 — includes miso soup, house salad, grilled vegetables, fried rice, and your choice of protein. Regulars say 'better than any fast casual Japanese place' with generous portions.",
+        description: "A complete weekday lunch starting at — includes miso soup, house salad, grilled vegetables, fried rice, and your choice of protein. Regulars say 'better than any fast casual Japanese place' with generous portions.",
         badge: "Best Lunch Value",
         menuLink: "/lunch-specials"
       }} />
@@ -293,7 +291,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </p>
 
       <ProTip variant="insider">
-        <strong>Lunch pro tip:</strong> Jinbeh's hibachi lunch specials start at just $12.95 and include miso soup, house salad, grilled vegetables, fried rice, and your choice of protein — it's the best lunch deal in Frisco and Lewisville. Regulars say the chicken lunch is "better than any fast casual Japanese place" and the lunch portions are generous. Available 11 AM–3 PM weekdays. <Link href="/lunch-specials" className="text-accent-red hover:underline">View lunch specials →</Link>
+ <strong>Lunch pro tip:</strong> Jinbeh's hibachi lunch specials start at just and include miso soup, house salad, grilled vegetables, fried rice, and your choice of protein — it's the best lunch deal in Frisco and Lewisville. Regulars say the chicken lunch is "better than any fast casual Japanese place" and the lunch portions are generous. Available 11 AM–3 PM weekdays. <Link href="/lunch-specials" className="text-accent-red hover:underline">View lunch specials →</Link>
       </ProTip>
 
       <PillarCTA type="hub" />

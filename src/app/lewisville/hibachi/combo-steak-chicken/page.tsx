@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Steak & Chicken Combo",
   "description": "Filet mignon with chicken teriyaki",
-  "offers": {
-    "@type": "Offer",
-    "price": "36.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Steak & Chicken Combo hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steak & Chicken Combo at Jinbeh Lewisville is filet mignon with chicken teriyaki. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $36.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Steak & Chicken Combo at Jinbeh Lewisville is filet mignon with chicken teriyaki. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSteakChickenLewisvillePage() {
   const item = getMenuItem("combo-steak-chicken", "hibachi")!;

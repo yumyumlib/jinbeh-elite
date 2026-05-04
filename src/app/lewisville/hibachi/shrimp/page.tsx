@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Jumbo Shrimp",
   "description": "Succulent jumbo shrimp, flame-kissed to perfection",
-  "offers": {
-    "@type": "Offer",
-    "price": "28.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Jumbo Shrimp hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jumbo Shrimp at Jinbeh Lewisville is succulent jumbo shrimp, flame-kissed to perfection. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $28.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Jumbo Shrimp at Jinbeh Lewisville is succulent jumbo shrimp, flame-kissed to perfection. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ShrimpLewisvillePage() {
   const item = { ...getMenuItem("shrimp", "hibachi")!, jinbehStory: "At Jinbeh, our hibachi grills reach 550°F. Our signature Yum Yum sauce — an in-house blend of mayo, sriracha, and sugar — is probably the biggest draw on a hibachi plate. Guests are genuinely addicted to it." };

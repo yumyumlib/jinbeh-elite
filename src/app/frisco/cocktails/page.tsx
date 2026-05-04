@@ -40,51 +40,26 @@ const menuSchema = {
         "@type": "MenuItem",
         "name": "Sake Bomb",
         "description": "Classic sake dropped into cold beer",
-        "offers": {
-          "@type": "Offer",
-          "price": "8.00",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Jinbeh Punch",
         "description": "House specialty tropical cocktail",
-        "offers": {
-          "@type": "Offer",
-          "price": "12.00",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Tokyo Mule",
         "description": "Japanese whiskey with ginger and lime",
-        "offers": {
-          "@type": "Offer",
-          "price": "14.00",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Lychee Martini",
         "description": "Vodka with lychee and a floral finish",
-        "offers": {
-          "@type": "Offer",
-          "price": "13.00",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Sake Flight",
         "description": "Tasting of three premium sakes",
-        "offers": {
-          "@type": "Offer",
-          "price": "18.00",
-          "priceCurrency": "USD"
-        }
       }
     ]
   }

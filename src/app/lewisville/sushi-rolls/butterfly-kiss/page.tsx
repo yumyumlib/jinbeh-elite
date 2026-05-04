@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Butterfly Kiss Roll",
   "description": "House specialty with cream cheese and crab",
-  "offers": {
-    "@type": "Offer",
-    "price": "18.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ButterflyKissLewisvillePage() {
   const item = getMenuItem("butterfly-kiss", "sushi-rolls")!;

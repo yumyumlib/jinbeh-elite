@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Steak & Lobster Combo",
   "description": "Surf and turf perfection",
-  "offers": {
-    "@type": "Offer",
-    "price": "54.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -65,7 +60,7 @@ const faqSchema = {
       "name": "Is Steak & Lobster ideal for celebrations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $54.95, this is our most celebrated combo for anniversaries, engagements, and special occasions. Filet mignon represents elegance, lobster symbolizes luxury. Perfect for unforgettable moments."
+        "text": "Absolutely! At, this is our most celebrated combo for anniversaries, engagements, and special occasions. Filet mignon represents elegance, lobster symbolizes luxury. Perfect for unforgettable moments."
       }
     },
     {
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Why is Steak & Lobster more expensive?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At $54.95, it combines filet mignon ($34.95) and Maine lobster ($44.95). The price reflects premium quality and scarcity. Bundle value saves versus ordering separately while providing luxury surf-and-turf."
+        "text": "At, it combines filet mignon and Maine lobster. The price reflects premium quality and scarcity. Bundle value saves versus ordering separately while providing luxury surf-and-turf."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSteakLobsterFriscoPage() {
   const item = getMenuItem("combo-steak-lobster", "hibachi")!;

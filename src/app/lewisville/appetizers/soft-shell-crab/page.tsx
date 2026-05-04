@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Soft Shell Crab",
   "description": "Crispy fried soft shell crab",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Soft Shell Crab at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Soft Shell Crab at Jinbeh Lewisville is crispy fried soft shell crab. At $14.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Soft Shell Crab at Jinbeh Lewisville is crispy fried soft shell crab. At, it's perfect for sharing while you wait for your hibachi or sushi."
       }
     },
     {
@@ -73,7 +68,7 @@ const faqSchema = {
       "name": "Can I order Soft Shell Crab for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy $4 draft beer, $5 sake, and $6 wine alongside favorites like Soft Shell Crab. Call (972) 221-3888 for details."
+        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy draft beer, sake, and wine alongside favorites like Soft Shell Crab. Call (972) 221-3888 for details."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SoftShellCrabLewisvillePage() {
   const item = { ...getMenuItem("soft-shell-crab", "appetizers")!, jinbehStory: "A whole crab, about palm-sized, battered with our light tempura coating, deep fried until golden, and chopped into four or five pieces. Delicious and impressive — one of our most photogenic appetizers." };

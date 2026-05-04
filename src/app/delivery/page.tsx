@@ -129,7 +129,6 @@ export default function DeliveryPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
@@ -153,7 +152,7 @@ export default function DeliveryPage() {
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-                Fresh sushi, hibachi favorites, and Japanese classics — delivered to your door in Frisco and Lewisville via Uber Eats and Grubhub.
+                Fresh sushi, hibachi favorites, and Japanese classics, delivered to your door in Frisco and Lewisville via Uber Eats and Grubhub.
               </p>
             </RevealSection>
           </div>
@@ -264,11 +263,11 @@ export default function DeliveryPage() {
                     <div className="space-y-4 text-left">
                       <div className="bg-white/10 rounded-xl p-4">
                         <p className="font-semibold text-soft-gold">📍 Frisco Hub</p>
-                        <p className="text-white/80 text-sm">Near Stonebriar Centre — serving Frisco, Plano, The Colony, Little Elm, Allen</p>
+                        <p className="text-white/80 text-sm">Near Stonebriar Centre. Serving Frisco, Plano, The Colony, Little Elm, and Allen.</p>
                       </div>
                       <div className="bg-white/10 rounded-xl p-4">
                         <p className="font-semibold text-soft-gold">📍 Lewisville Hub</p>
-                        <p className="text-white/80 text-sm">Off I-35E near Vista Ridge — serving Lewisville, Carrollton, Coppell, Flower Mound, Highland Village</p>
+                        <p className="text-white/80 text-sm">Off I-35E near Vista Ridge. Serving Lewisville, Carrollton, Coppell, Flower Mound, and Highland Village.</p>
                       </div>
                     </div>
                   </div>
@@ -302,9 +301,14 @@ export default function DeliveryPage() {
                     ))}
                   </div>
 
-                  <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-soft-gold">
+                  <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-soft-gold mb-4">
                     <p className="text-charcoal/80">
-                      Don&apos;t see your area? Check availability on Uber Eats or Grubhub—delivery areas expand frequently, and you might be closer than you think!
+                      Don&apos;t see your area? Check availability on Uber Eats or Grubhub. Delivery areas expand frequently, and you might be closer than you think.
+                    </p>
+                  </div>
+                  <div className="bg-warm-ivory rounded-xl p-6 border-l-4 border-accent-red">
+                    <p className="text-charcoal/80">
+                      <strong>Quick delivery:</strong> If you want quick delivery, our Grubhub and Uber Eats options are great. <strong>Catering for a large group:</strong> for catering delivery to a larger group, please give us at least one week of notice and we&apos;ll make it an excellent experience for your event. <Link href="/catering" className="text-accent-red hover:underline">Plan a catering order →</Link>
                     </p>
                   </div>
                 </div>
@@ -532,7 +536,7 @@ export default function DeliveryPage() {
                   },
                   {
                     q: "What if I'm not satisfied with my order?",
-                    a: "We stand behind the quality of every order. Contact the delivery platform's support with any issues—they handle refunds and resolution.",
+                    a: "We stand behind the quality of every order. Contact the delivery platform's support with any issues. They handle refunds and resolution.",
                   },
                 ].map((item, i) => (
                   <details key={i} className="group bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
@@ -654,7 +658,7 @@ export default function DeliveryPage() {
               <Link href="/blog/types-of-sushi" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Sushi Guide</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Types of Sushi Explained</h3>
-                <p className="text-sm text-charcoal/70 mt-2">Know your rolls before you order — from nigiri to specialty rolls.</p>
+                <p className="text-sm text-charcoal/70 mt-2">Know your rolls before you order, from nigiri to specialty rolls.</p>
               </Link>
               <Link href="/blog/sushi-lunch-specials" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Deals</span>

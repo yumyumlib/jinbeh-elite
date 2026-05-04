@@ -45,7 +45,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -155,7 +154,6 @@ export default function BestAsianFoodDallas() {
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Dallas is a city known for its diverse culinary scene,</strong> and Asian cuisine is no exception. With a variety of Asian restaurants offering everything from traditional dishes to modern fusion, there's something to satisfy every palate.</p>
 
-
             
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/asian-cuisine-dallas" className="text-accent-red hover:underline">Asian cuisine in Dallas</Link>
@@ -231,7 +229,7 @@ export default function BestAsianFoodDallas() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Asian food explorer's tip:</strong> Jinbeh is the place where first-timers become regulars. Reviewers say the hibachi chicken and shrimp combo is the "perfect intro" for anyone new to Japanese dining, while sushi enthusiasts love watching chefs roll fresh pieces at the bar. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> for $4 draft beer, $5 sake, and $6 wine, it is one of the best-kept secrets in North Dallas. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                <strong>Asian food explorer's tip:</strong> Jinbeh is the place where first-timers become regulars. Reviewers say the hibachi chicken and shrimp combo is the "perfect intro" for anyone new to Japanese dining, while sushi enthusiasts love watching chefs roll fresh pieces at the bar. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> for draft beer, sake, and wine, it is one of the best-kept secrets in North Dallas. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>

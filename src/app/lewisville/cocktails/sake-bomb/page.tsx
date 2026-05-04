@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Sake Bomb",
   "description": "Classic sake dropped into cold beer",
-  "offers": {
-    "@type": "Offer",
-    "price": "8.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is the Sake Bomb at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sake Bomb at Jinbeh Lewisville is classic sake dropped into cold beer. At $8.00, it's one of our signature bar offerings."
+        "text": "The Sake Bomb at Jinbeh Lewisville is classic sake dropped into cold beer. At, it's one of our signature bar offerings."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SakeBombLewisvillePage() {
   const item = { ...getMenuItem("sake-bomb", "cocktails")!, jinbehStory: "Sake tradition at Jinbeh goes back decades. Our premium unfiltered sake bottle must be shaken before pouring — the white cloud inside is rice sediment from the authentic unfiltered process." };

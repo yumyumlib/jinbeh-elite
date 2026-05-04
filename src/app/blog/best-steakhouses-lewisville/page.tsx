@@ -78,7 +78,6 @@ const faqSchema = {
     })),
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -272,35 +271,35 @@ export default function BestSteakhousesLewisville() {
                                                 <td className="p-4">Japanese Hibachi + Sushi</td>
                                                 <td className="p-4">Entertainment, celebrations, groups</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4 text-green-600 italic">Minimal — "outstanding service"</td>
+ <td className="p-4 text-green-600 italic">Minimal — "outstanding service"</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Bistecca Italian</td>
                                                 <td className="p-4">Italian Fine Dining</td>
                                                 <td className="p-4">Upscale date nights, special occasions</td>
                                                 <td className="p-4">$$$$</td>
-                                                <td className="p-4 text-charcoal/50 italic">Premium pricing</td>
+ <td className="p-4 text-charcoal/50 italic">Premium pricing</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Saltgrass</td>
                                                 <td className="p-4">Texas Steakhouse (Chain)</td>
                                                 <td className="p-4">Casual steak dinners, families</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4 text-charcoal/50 italic">Generic chain atmosphere</td>
+ <td className="p-4 text-charcoal/50 italic">Generic chain atmosphere</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Prairie House</td>
                                                 <td className="p-4">Texas Home-Style</td>
                                                 <td className="p-4">Mesquite-grilled steaks, comfort food</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4 text-charcoal/50 italic">Limited menu variety</td>
+ <td className="p-4 text-charcoal/50 italic">Limited menu variety</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Outback Steakhouse</td>
                                                 <td className="p-4">Australian-Themed (Chain)</td>
                                                 <td className="p-4">Familiar, reliable, quick</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4 text-charcoal/50 italic">Nothing memorable</td>
+ <td className="p-4 text-charcoal/50 italic">Nothing memorable</td>
                                             </tr>
                                         </tbody>
                                     </table>

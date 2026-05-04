@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Caterpillar Roll",
   "description": "Eel roll topped with avocado slices",
-  "offers": {
-    "@type": "Offer",
-    "price": "15.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function CaterpillarRollLewisvillePage() {
   const item = { ...getMenuItem("caterpillar-roll", "sushi-rolls")!, jinbehStory: "Our sushi team\'s artistry shines in presentation rolls like the caterpillar. Led by a master chef from southern Japan\'s seafood coast, every roll is shaped using a traditional bamboo makisu — the same way it\'s been done for centuries." };

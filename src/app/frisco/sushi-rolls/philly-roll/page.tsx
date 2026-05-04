@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Philadelphia Roll",
   "description": "Smoked salmon with cream cheese and cucumber",
-  "offers": {
-    "@type": "Offer",
-    "price": "12.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function PhillyRollFriscoPage() {
   const item = getMenuItem("philly-roll", "sushi-rolls")!;

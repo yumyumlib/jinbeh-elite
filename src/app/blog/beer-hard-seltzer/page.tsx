@@ -41,7 +41,7 @@ const faqs = [
     },
     {
         question: "Does Jinbeh have happy hour drink specials?",
-        answer: "Yes! Our happy hour features $4 Japanese draft beer, $5 sake, and $6 wine. Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations.",
+        answer: "Yes! Our happy hour features Japanese draft beer, sake, and wine. Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations.",
     },
     {
         question: "What is the difference between Sapporo, Asahi, and Kirin?",
@@ -52,8 +52,6 @@ const faqs = [
         answer: "We offer Ramune (Japanese lemon-lime soda), hot and iced green tea, and Japanese soft drinks. Green tea is the traditional pairing — its clean, slightly bitter taste cleanses the palate between bites of sushi. For hibachi, a cold Ramune or iced tea is refreshing alongside the smoky grilled flavors.",
     },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -135,33 +133,33 @@ popular in the world: they're
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🇯🇵 Jinbeh&apos;s Wine &amp; Spirits Philosophy</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh&apos;s approach to drinks is refreshingly honest: the wine selection stays minimalist because &ldquo;customers trust our expertise in sake, not wine.&rdquo; This isn&apos;t a pretentious French bistro. But the <strong>sake and Japanese whisky</strong>? That&apos;s where Jinbeh shines. They stock rare Yamazaki that the owner has to fight to acquire, and the premium cold sake selection is curated with decades of expertise.
+                  Jinbeh&apos;s approach to drinks is refreshingly honest: the wine selection focuses on the best-quality bottles and top brands our customers love. The <strong>sake and Japanese whisky</strong> programs are where Jinbeh truly shines. We stock rare Yamazaki that the owner has to fight to acquire, and the premium cold sake selection is curated with decades of expertise.
                 </p>
               </div>
 
             <p>
                 At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, our guests consistently
                 mention that "Sapporo on tap is a highlight" of the dining experience. There's nothing quite like
-                a cold Sapporo alongside sizzling <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link> or
-                fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi rolls</Link> from our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.
-            </p>
+ a cold Sapporo alongside sizzling <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline">hibachi</Link> or
+ fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi rolls</Link> from our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link>.
+ </p>
 
-            <p>
-                Explore our complete beverage program at the <Link href="/bar" className="text-accent-red hover:underline">Jinbeh bar</Link>, where our bartenders can guide you through Japanese beers, craft cocktails, and premium sake selections.
-            </p>
+ <p>
+ Explore our complete beverage program at the <Link href="/bar" className="text-accent-red hover:underline">Jinbeh bar</Link>, where our bartenders can guide you through Japanese beers, craft cocktails, and premium sake selections.
+ </p>
 
-            <DidYouKnow
-                fact="The Japanese beer market is worth over $20 billion globally, with Sapporo, Asahi, and Kirin controlling 90% of the market. Interestingly, Japanese beers use rice as a key ingredient — giving them their distinctively clean, crisp taste that pairs better with food than Western-style hoppy beers. Sapporo is the oldest beer brand in Japan, having been brewed continuously since 1876."
-                source="Japan Brewers Association & IBISWorld"
-            />
+ <DidYouKnow
+ fact="The Japanese beer market is worth tens of billions globally, with Sapporo, Asahi, and Kirin controlling 90% of the market. Interestingly, Japanese beers use rice as a key ingredient. This gives them their distinctively clean, crisp taste that pairs better with food than Western-style hoppy beers. Sapporo is the oldest beer brand in Japan, having been brewed continuously since 1876."
+ source="Japan Brewers Association & IBISWorld"
+ />
 
-            <h2>Our Japanese Beer Selection</h2>
+ <h2>Our Japanese Beer Selection</h2>
 
-            <h3>🍺 Sapporo Premium</h3>
-            <p>
-                <strong>Flavor profile:</strong> Smooth, balanced, clean finish<br />
-                <strong>ABV:</strong> 4.9%<br />
-                <strong>Best with:</strong> Everything—it's the ultimate all-purpose Japanese beer<br />
+ <h3>🍺 Sapporo Premium</h3>
+ <p>
+ <strong>Flavor profile:</strong> Smooth, balanced, clean finish<br />
+ <strong>ABV:</strong> 4.9%<br />
+ <strong>Best with:</strong> Everything—it's the ultimate all-purpose Japanese beer<br />
                 <strong>Available:</strong> On tap (draft) and bottled<br /><br />
                 Japan's oldest beer brand, brewed since 1876. Sapporo is our #1 seller and the go-to
                 recommendation for first-time visitors. Our guests love the draft pour—there's nothing

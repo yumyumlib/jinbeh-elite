@@ -103,7 +103,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -264,7 +263,7 @@ export default function BirthdayCelebrationRestaurants() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Birthday dining is a $4.3 billion annual market in the US. Restaurants that offer interactive entertainment like hibachi shows see 3x higher birthday booking rates than traditional restaurants. The average birthday dinner group spends 40% more per person than regular diners, making birthdays the most profitable celebration type for restaurants."
+                                        fact="Birthday dining is a billion annual market in the US. Restaurants that offer interactive entertainment like hibachi shows see 3x higher birthday booking rates than traditional restaurants. The average birthday dinner group spends 40% more per person than regular diners, making birthdays the most profitable celebration type for restaurants."
                                         source="National Restaurant Association"
                                     />
 
@@ -410,7 +409,6 @@ export default function BirthdayCelebrationRestaurants() {
                                             </p>
                                         </div>
                                     </div>
-
 
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>

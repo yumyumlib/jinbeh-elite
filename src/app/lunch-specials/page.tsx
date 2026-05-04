@@ -49,42 +49,42 @@ const lunchSpecials = [
   {
     title: "Chicken Teriyaki Bowl",
     description: "Tender chicken with sweet teriyaki glaze, vegetables, and steamed rice",
-    price: "$12.99",
+    price: "",
     time: "Quick prep",
     icon: "🍗",
   },
   {
     title: "Shrimp Tempura Bowl",
     description: "Crispy tempura shrimp, fresh vegetables, rice, and dipping sauce",
-    price: "$13.99",
+    price: "",
     time: "Quick prep",
     icon: "🦐",
   },
   {
     title: "Beef Teriyaki Combo",
     description: "Grilled beef, steamed vegetables, rice, soup, and salad",
-    price: "$14.99",
+    price: "",
     time: "Quick prep",
     icon: "🥩",
   },
   {
     title: "Veggie Tempura Bowl",
     description: "Assorted vegetables in light tempura batter with dipping sauce and rice",
-    price: "$10.99",
+    price: "",
     time: "Quick prep",
     icon: "🥬",
   },
   {
     title: "Sushi Lunch Special",
     description: "Three sushi rolls (your choice), soup, and edamame",
-    price: "$14.99",
+    price: "",
     time: "Quick prep",
     icon: "🍣",
   },
   {
     title: "Hibachi Lunch Entree",
     description: "Choose protein, chef-cooked hibachi style with vegetables and rice",
-    price: "$16.99-$18.99",
+    price: "",
     time: "15-20 min",
     icon: "🔥",
   },
@@ -191,6 +191,67 @@ export default function LunchSpecialsPage() {
             <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur px-6 py-3 rounded-full">
               <span className="text-3xl">💰</span>
               <span className="text-lg font-semibold">Save on Lunch Entrees!</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Lunch Special — Hibachi for Two */}
+        <section className="py-16 bg-gradient-to-br from-soft-gold via-warm-ivory to-warm-ivory border-b border-warm-ivory-dark">
+          <div className="container mx-auto px-6">
+            <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-5 gap-0">
+              <div className="md:col-span-2 bg-gradient-to-br from-charcoal to-deep-indigo text-white p-8 md:p-10 flex flex-col justify-center">
+                <span className="inline-block bg-accent-red text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full self-start mb-3">
+                  🔥 Featured Lunch Special
+                </span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-2">Hibachi for Two</h2>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="text-6xl md:text-7xl font-heading font-bold text-soft-gold leading-none">$35</span>
+                  <span className="text-base text-warm-ivory/85">/ for 2</span>
+                </div>
+                <p className="text-sm text-warm-ivory/80 leading-relaxed">
+                  Two hibachi entrees, cooked tableside. Available Mon–Fri lunch only.
+                </p>
+              </div>
+              <div className="md:col-span-3 p-8 md:p-10">
+                <p className="text-soft-gold uppercase tracking-wider text-xs font-bold mb-3">Choose Two Proteins</p>
+                <div className="grid grid-cols-5 gap-2 mb-6">
+                  {[
+                    { i: "🥦", n: "Veggie" },
+                    { i: "🍗", n: "Chicken" },
+                    { i: "🥩", n: "Steak" },
+                    { i: "🍤", n: "Shrimp" },
+                    { i: "🍣", n: "Salmon" },
+                  ].map((p) => (
+                    <div key={p.n} className="text-center">
+                      <div className="text-2xl mb-1">{p.i}</div>
+                      <p className="text-[11px] font-medium text-charcoal/80">{p.n}</p>
+                    </div>
+                  ))}
+                </div>
+                <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-1 text-sm text-charcoal/80 mb-5">
+                  <li className="flex items-center gap-2"><span className="text-accent-red">✓</span> Onion soup</li>
+                  <li className="flex items-center gap-2"><span className="text-accent-red">✓</span> House salad</li>
+                  <li className="flex items-center gap-2"><span className="text-accent-red">✓</span> Grilled vegetables</li>
+                  <li className="flex items-center gap-2"><span className="text-accent-red">✓</span> Steamed white rice</li>
+                </ul>
+                <div className="bg-soft-gold/15 border border-soft-gold/40 rounded-xl px-4 py-3 mb-5 flex items-center gap-3">
+                  <span className="text-2xl font-heading font-bold text-charcoal leading-none">+$5</span>
+                  <p className="text-xs text-charcoal/80">
+                    <span className="font-semibold">per person</span> to upgrade white rice to hibachi fried rice
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="text-xs text-charcoal/60 italic">
+                    Mon–Fri • 11:00 AM – 2:00 PM • Dine-in only
+                  </p>
+                  <Link
+                    href="/specials#hibachi-for-two"
+                    className="inline-flex items-center gap-2 text-accent-red font-semibold text-sm hover:gap-3 transition-all"
+                  >
+                    See full details →
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>

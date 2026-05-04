@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Ahi Tuna Tower",
   "description": "Layered ahi tuna, avocado, and crispy wonton",
-  "offers": {
-    "@type": "Offer",
-    "price": "19.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function AhiTowerFriscoPage() {
   const item = getMenuItem("ahi-tower", "sushi-rolls")!;

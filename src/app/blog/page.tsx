@@ -107,9 +107,9 @@ export default async function BlogPage({
                             <Link
                                 href="/blog"
                                 className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${activeCategory === "all"
-                                    ? "bg-accent-red text-white"
-                                    : "bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal"
-                                    }`}
+ ? "bg-accent-red text-white"
+ : "bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal"
+ }`}
                             >
                                 All Posts
                             </Link>
@@ -118,9 +118,9 @@ export default async function BlogPage({
                                     key={cat.id}
                                     href={`/blog/category/${cat.id}`}
                                     className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors flex items-center gap-2 ${activeCategory === cat.id
-                                        ? "text-white"
-                                        : "bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal"
-                                        }`}
+ ? "text-white"
+ : "bg-warm-ivory hover:bg-warm-ivory-dark text-charcoal"
+ }`}
                                     style={{
                                         backgroundColor:
                                             activeCategory === cat.id ? cat.color : undefined,

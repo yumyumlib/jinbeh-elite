@@ -53,8 +53,6 @@ const faqs = [
     },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -183,34 +181,34 @@ ld raise their glasses for
             <h3>🥈 Asahi Super Dry</h3>
             <p>
                 The world's first "dry" beer. Ultra-crisp and refreshing—perfect alongside rich,
-                smoky hibachi steak or crispy tempura. If you like your beer clean and sharp, Asahi
-                is your International Beer Day pick.
-            </p>
+ smoky hibachi steak or crispy tempura. If you like your beer clean and sharp, Asahi
+ is your International Beer Day pick.
+ </p>
 
-            <h3>🥉 Kirin Ichiban</h3>
-            <p>
-                "First press" brewing creates a subtle, slightly sweeter lager. Pairs beautifully with
-                sashimi and seafood. For beer drinkers who want something with a little more depth.
-            </p>
+ <h3>🥉 Kirin Ichiban</h3>
+ <p>
+ "First press" brewing creates a subtle, slightly sweeter lager. Pairs beautifully with
+ sashimi and seafood. For beer drinkers who want something with a little more depth.
+ </p>
 
-            <h2>How to Celebrate at Jinbeh</h2>
+ <h2>How to Celebrate at Jinbeh</h2>
 
-            <p>
-                Make your International Beer Day more than just a beer—make it an experience:
-            </p>
+ <p>
+ Make your International Beer Day more than just a beer—make it an experience:
+ </p>
 
-            <ol>
-                <li><strong>Start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link></strong> — $4 Sapporo drafts and $5 sake to kick things off</li>
-                <li><strong>Order a beer flight</strong> — Try Sapporo, Asahi, and Kirin side by side to discover your favorite</li>
-                <li><strong>Book hibachi</strong> — Nothing pairs with cold beer like a sizzling <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki chef show</Link></li>
-                <li><strong>Try a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake chaser</Link></strong> — A small sake alongside your beer is a traditional Japanese pairing</li>
-                <li><strong>Bring friends</strong> — International Beer Day is about community. Book a hibachi table for 8-10 and celebrate together</li>
-            </ol>
+ <ol>
+ <li><strong>Start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link></strong> — Sapporo drafts and sake to kick things off</li>
+ <li><strong>Order a beer flight</strong> — Try Sapporo, Asahi, and Kirin side by side to discover your favorite</li>
+ <li><strong>Book hibachi</strong> — Nothing pairs with cold beer like a sizzling <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki chef show</Link></li>
+ <li><strong>Try a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake chaser</Link></strong> — A small sake alongside your beer is a traditional Japanese pairing</li>
+ <li><strong>Bring friends</strong> — International Beer Day is about community. Book a hibachi table for 8-10 and celebrate together</li>
+ </ol>
 
-            <h2>Beyond Beer: Our Full Drink Menu</h2>
+ <h2>Beyond Beer: Our Full Drink Menu</h2>
 
-            <p>
-                If your International Beer Day squad includes non-beer drinkers, don't worry—our
+ <p>
+ If your International Beer Day squad includes non-beer drinkers, don't worry—our
                 <Link href="/bar" className="text-accent-red hover:underline"> full bar</Link> has everyone
                 covered. Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails</Link>,
                 premium sake selection, wine, and hard seltzers. Our lychee martini has its own

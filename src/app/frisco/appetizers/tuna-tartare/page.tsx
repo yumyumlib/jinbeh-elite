@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Tuna Tartare",
   "description": "Diced ahi tuna with avocado and ponzu",
-  "offers": {
-    "@type": "Offer",
-    "price": "15.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Is Tuna Tartare good for sharing and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $15.95, Tuna Tartare is perfect for sharing and a great starter for groups. Pair with $5 sake during Happy Hour (Mon-Fri 5-6:30pm). An elegant appetizer for groups and special occasions."
+        "text": "Absolutely! At, Tuna Tartare is perfect for sharing and a great starter for groups. Pair with sake during Happy Hour (Mon-Fri 5-6:30pm). An elegant appetizer for groups and special occasions."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TunaTartareFriscoPage() {
   const item = { ...getMenuItem("tuna-tartare", "appetizers")!, jinbehStory: "In Japanese, \"tataki\" means \"to hit\" or \"to pound.\" The fish is tenderized by pounding it thin, then barely seared on the outside so it stays beautifully rare inside. A very traditional Japanese preparation served with our house-made ponzu sauce." };

@@ -94,7 +94,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -330,7 +329,6 @@ export default function SushiCookingClasses() {
                                             </p>
                                         </div>
                                     </div>
-
 
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>

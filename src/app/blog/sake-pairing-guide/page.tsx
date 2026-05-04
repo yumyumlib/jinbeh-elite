@@ -92,7 +92,6 @@ const faqSchema = {
     })),
 };
 
-
 const breadcrumbSchema = {
     " @context": " https://schema.org",
     " @type": " BreadcrumbList ",
@@ -801,10 +800,20 @@ export default function SakePairingGuide() {
                                     </p>
 
                                     <p className="mb-8">
-                                        The best part? You don't have to figure it out alone. At Jinbeh, our staff lives and breathes sake knowledge.
-                                        Tell us what you're eating, and we'll guide you to the perfect pour. That's the Jinbeh difference—we're not just
-                                        serving food and drink; we're creating an experience.
+                                        The best part? You don&apos;t have to figure it out alone. At Jinbeh, our staff lives and breathes sake knowledge.
+                                        Tell us what you&apos;re eating, and we&apos;ll guide you to the perfect pour. That&apos;s the Jinbeh difference: we&apos;re not just
+                                        serving food and drink, we&apos;re creating an experience.
                                     </p>
+
+                                    <div className="my-10 p-6 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                        <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Discover Jinbeh&apos;s Sake Selection</h3>
+                                        <p className="text-charcoal/80 mb-3">
+                                            Jinbeh keeps a wide variety of sake on hand at both our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. We pour both hot sake (served warm in a tokkuri) and chilled premium cold sake, with flavor profiles ranging from soft and fruity to dry, rich, and earthy. Our list rotates as we bring in new bottles, so there&apos;s always something fresh for regulars to try.
+                                        </p>
+                                        <p className="text-charcoal/80">
+                                            New to sake? Stop by during <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh happy hour</Link> Monday through Friday and try a small hot sake at a friendly price. It&apos;s one of the easiest ways in DFW to taste why so many of our regulars come for the sake first and stay for the sushi.
+                                        </p>
+                                    </div>
 
                                     <PillarCTA type="catering" />
                                     <LocationCTA location="both" />

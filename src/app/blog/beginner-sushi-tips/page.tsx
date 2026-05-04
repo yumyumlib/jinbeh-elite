@@ -61,7 +61,6 @@ const faqs = [
   },
 ];
 
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",

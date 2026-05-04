@@ -104,7 +104,7 @@ const faqSchema = {
       "name": "Is there a bar happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both our Frisco and Lewisville locations.",
+        "text": "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at the bar — $4 Japanese draft beer, $5 small hot sake, and $6 wine at both our Frisco and Lewisville locations.",
       },
     },
   ],
@@ -147,7 +147,6 @@ export default function BarPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
-
 
         {/* Hero Section */}
         <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -546,204 +545,204 @@ export default function BarPage() {
                   <li className="pb-4 border-b border-charcoal/10">
                     <p className="font-semibold text-charcoal">Sapporo</p>
                     <p className="text-sm text-charcoal/80">Japan's oldest beer - crisp and clean</p>
-                  </li>
-                  <li className="pb-4 border-b border-charcoal/10">
-                    <p className="font-semibold text-charcoal">Asahi Super Dry</p>
-                    <p className="text-sm text-charcoal/80">Light, refreshing, perfectly balanced</p>
-                  </li>
-                  <li className="pb-4 border-b border-charcoal/10">
-                    <p className="font-semibold text-charcoal">Kirin Ichiban</p>
-                    <p className="text-sm text-charcoal/80">Premium brewing process - smooth taste</p>
-                  </li>
-                  <li>
-                    <p className="font-semibold text-charcoal">Orion</p>
-                    <p className="text-sm text-charcoal/80">Okinawan premium lager - tropical notes</p>
-                  </li>
-                </ul>
-              </div>
+ </li>
+ <li className="pb-4 border-b border-charcoal/10">
+ <p className="font-semibold text-charcoal">Asahi Super Dry</p>
+ <p className="text-sm text-charcoal/80">Light, refreshing, perfectly balanced</p>
+ </li>
+ <li className="pb-4 border-b border-charcoal/10">
+ <p className="font-semibold text-charcoal">Kirin Ichiban</p>
+ <p className="text-sm text-charcoal/80">Premium brewing process - smooth taste</p>
+ </li>
+ <li>
+ <p className="font-semibold text-charcoal">Orion</p>
+ <p className="text-sm text-charcoal/80">Okinawan premium lager - tropical notes</p>
+ </li>
+ </ul>
+ </div>
 
-              {/* Domestic Beers */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="font-heading text-2xl font-bold text-charcoal mb-6 flex items-center gap-3">
-                  <span className="text-3xl">🇺🇸</span>
-                  Domestic Selection
-                </h3>
-                <ul className="space-y-4">
-                  <li className="pb-4 border-b border-charcoal/10">
-                    <p className="font-semibold text-charcoal">Bud Light</p>
-                    <p className="text-sm text-charcoal/80">Light and refreshing classic</p>
-                  </li>
-                  <li className="pb-4 border-b border-charcoal/10">
-                    <p className="font-semibold text-charcoal">Coors Light</p>
-                    <p className="text-sm text-charcoal/80">Crisp and cold mountain water</p>
-                  </li>
-                  <li className="pb-4 border-b border-charcoal/10">
-                    <p className="font-semibold text-charcoal">Miller High Life</p>
-                    <p className="text-sm text-charcoal/80">The champagne of beers</p>
-                  </li>
-                  <li>
-                    <p className="font-semibold text-charcoal">Texas Craft Selection</p>
-                    <p className="text-sm text-charcoal/80">Rotating local favorites</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+ {/* Domestic Beers */}
+ <div className="bg-white rounded-2xl p-8 shadow-lg">
+ <h3 className="font-heading text-2xl font-bold text-charcoal mb-6 flex items-center gap-3">
+ <span className="text-3xl">🇺🇸</span>
+ Domestic Selection
+ </h3>
+ <ul className="space-y-4">
+ <li className="pb-4 border-b border-charcoal/10">
+ <p className="font-semibold text-charcoal">Bud Light</p>
+ <p className="text-sm text-charcoal/80">Light and refreshing classic</p>
+ </li>
+ <li className="pb-4 border-b border-charcoal/10">
+ <p className="font-semibold text-charcoal">Coors Light</p>
+ <p className="text-sm text-charcoal/80">Crisp and cold mountain water</p>
+ </li>
+ <li className="pb-4 border-b border-charcoal/10">
+ <p className="font-semibold text-charcoal">Miller High Life</p>
+ <p className="text-sm text-charcoal/80">The champagne of beers</p>
+ </li>
+ <li>
+ <p className="font-semibold text-charcoal">Texas Craft Selection</p>
+ <p className="text-sm text-charcoal/80">Rotating local favorites</p>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        {/* Wine & Non-Alcoholic Section */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
-              {/* Wine */}
-              <div>
-                <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
-                  Wine Selection
-                </p>
-                <h2 className="text-3xl font-heading font-bold text-charcoal mb-6">
-                  Wines
-                </h2>
-                <p className="text-charcoal/70 mb-8 leading-relaxed">
-                  A carefully curated selection of wines from around the world, chosen to complement Japanese cuisine. From crisp white wines that pair beautifully with sashimi to full-bodied reds for hibachi entrees.
-                </p>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent-red text-xl flex-shrink-0">♦</span>
-                    <span className="text-charcoal">White wines for sashimi & sushi</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent-red text-xl flex-shrink-0">♦</span>
-                    <span className="text-charcoal">Red wines for hibachi & grilled dishes</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent-red text-xl flex-shrink-0">♦</span>
-                    <span className="text-charcoal">Wine by the glass or bottle</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent-red text-xl flex-shrink-0">♦</span>
-                    <span className="text-charcoal">Sommelier recommendations available</span>
-                  </li>
-                </ul>
-              </div>
+ {/* Wine & Non-Alcoholic Section */}
+ <section className="py-24 bg-white">
+ <div className="container mx-auto px-6">
+ <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
+ {/* Wine */}
+ <div>
+ <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
+ Wine Selection
+ </p>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mb-6">
+ Wines
+ </h2>
+ <p className="text-charcoal/70 mb-8 leading-relaxed">
+ A carefully curated selection of wines from around the world, chosen to complement Japanese cuisine. From crisp white wines that pair beautifully with sashimi to full-bodied reds for hibachi entrees.
+ </p>
+ <ul className="space-y-4">
+ <li className="flex items-start gap-3">
+ <span className="text-accent-red text-xl flex-shrink-0">♦</span>
+ <span className="text-charcoal">White wines for sashimi & sushi</span>
+ </li>
+ <li className="flex items-start gap-3">
+ <span className="text-accent-red text-xl flex-shrink-0">♦</span>
+ <span className="text-charcoal">Red wines for hibachi & grilled dishes</span>
+ </li>
+ <li className="flex items-start gap-3">
+ <span className="text-accent-red text-xl flex-shrink-0">♦</span>
+ <span className="text-charcoal">Wine by the glass or bottle</span>
+ </li>
+ <li className="flex items-start gap-3">
+ <span className="text-accent-red text-xl flex-shrink-0">♦</span>
+ <span className="text-charcoal">Sommelier recommendations available</span>
+ </li>
+ </ul>
+ </div>
 
-              {/* Non-Alcoholic */}
-              <div>
-                <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
-                  Non-Alcoholic Options
-                </p>
-                <h2 className="text-3xl font-heading font-bold text-charcoal mb-6">
-                  Refreshing Alternatives
-                </h2>
-                <p className="text-charcoal/70 mb-8 leading-relaxed">
-                  Perfect for designated drivers, non-drinkers, and anyone seeking authentic Japanese beverages. Explore traditional and modern refreshments like the iconic <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline font-medium">Ramune soda</Link>.
-                </p>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
-                    <span>
-                      <span className="text-charcoal font-semibold">Ramune</span>
-                      <br />
-                      <span className="text-sm text-charcoal/80">Iconic Japanese soda in glass bottles</span>
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
-                    <span>
-                      <span className="text-charcoal font-semibold">Japanese Sodas</span>
-                      <br />
-                      <span className="text-sm text-charcoal/80">Yuzu, melon, and seasonal flavors</span>
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
-                    <span>
-                      <span className="text-charcoal font-semibold">Japanese Tea</span>
-                      <br />
-                      <span className="text-sm text-charcoal/80">Green tea, oolong, and matcha options</span>
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
-                    <span>
-                      <span className="text-charcoal font-semibold">Soft Drinks</span>
-                      <br />
-                      <span className="text-sm text-charcoal/80">Classic and contemporary beverages</span>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+ {/* Non-Alcoholic */}
+ <div>
+ <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
+ Non-Alcoholic Options
+ </p>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mb-6">
+ Refreshing Alternatives
+ </h2>
+ <p className="text-charcoal/70 mb-8 leading-relaxed">
+ Perfect for designated drivers, non-drinkers, and anyone seeking authentic Japanese beverages. Explore traditional and modern refreshments like the iconic <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline font-medium">Ramune soda</Link>.
+ </p>
+ <ul className="space-y-4">
+ <li className="flex items-start gap-3">
+ <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
+ <span>
+ <span className="text-charcoal font-semibold">Ramune</span>
+ <br />
+ <span className="text-sm text-charcoal/80">Iconic Japanese soda in glass bottles</span>
+ </span>
+ </li>
+ <li className="flex items-start gap-3">
+ <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
+ <span>
+ <span className="text-charcoal font-semibold">Japanese Sodas</span>
+ <br />
+ <span className="text-sm text-charcoal/80">Yuzu, melon, and seasonal flavors</span>
+ </span>
+ </li>
+ <li className="flex items-start gap-3">
+ <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
+ <span>
+ <span className="text-charcoal font-semibold">Japanese Tea</span>
+ <br />
+ <span className="text-sm text-charcoal/80">Green tea, oolong, and matcha options</span>
+ </span>
+ </li>
+ <li className="flex items-start gap-3">
+ <span className="text-deep-indigo text-xl flex-shrink-0">◆</span>
+ <span>
+ <span className="text-charcoal font-semibold">Soft Drinks</span>
+ <br />
+ <span className="text-sm text-charcoal/80">Classic and contemporary beverages</span>
+ </span>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        {/* Happy Hour Callout */}
-        <section className="py-24 bg-gradient-to-r from-charcoal via-deep-indigo to-charcoal text-white">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
-                Special Offers
-              </p>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                Jinbeh Happy Hour Specials
-              </h2>
-              <p className="text-xl text-warm-ivory/90 mb-6 leading-relaxed">
-                Every Monday through Friday, 5:00 to 6:30 PM. Premium drinks at unbeatable prices.
-              </p>
-              <div className="inline-flex flex-wrap justify-center gap-6 mb-10">
-                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4 text-center">
-                  <p className="text-3xl font-bold text-soft-gold">$4</p>
-                  <p className="text-sm text-warm-ivory/80">Draft Beer</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur border border-soft-gold/40 rounded-xl px-6 py-4 text-center">
-                  <p className="text-3xl font-bold text-soft-gold">$5</p>
-                  <p className="text-sm text-warm-ivory/80">Sake</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4 text-center">
-                  <p className="text-3xl font-bold text-soft-gold">$6</p>
-                  <p className="text-sm text-warm-ivory/80">Wine</p>
-                </div>
-              </div>
-              <p className="text-warm-ivory/70 mb-10">
-                Explore our <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing guide</Link> to find the perfect drink for your meal.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/happy-hour"
-                  className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all"
-                >
-                  View Happy Hour Specials
-                </Link>
-                <Link
-                  href="/reservations"
-                  className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl transition-all"
-                >
-                  Make a Reservation
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+ {/* Happy Hour Callout */}
+ <section className="py-24 bg-gradient-to-r from-charcoal via-deep-indigo to-charcoal text-white">
+ <div className="container mx-auto px-6">
+ <div className="max-w-4xl mx-auto text-center">
+ <p className="text-soft-gold font-medium tracking-wider uppercase text-sm mb-4">
+ Special Offers
+ </p>
+ <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+ Jinbeh Happy Hour Specials
+ </h2>
+ <p className="text-xl text-warm-ivory/90 mb-6 leading-relaxed">
+ Every Monday through Friday, 5:00 to 6:30 PM. Premium drinks at unbeatable prices.
+ </p>
+ <div className="inline-flex flex-wrap justify-center gap-6 mb-10">
+ <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4 text-center min-w-[140px]">
+ <p className="text-4xl font-heading font-bold text-soft-gold leading-none mb-1">$4</p>
+ <p className="text-sm text-warm-ivory/80">Japanese Draft Beer</p>
+ </div>
+ <div className="bg-white/10 backdrop-blur border border-soft-gold/50 rounded-xl px-6 py-4 text-center min-w-[140px] ring-1 ring-soft-gold/30">
+ <p className="text-4xl font-heading font-bold text-soft-gold leading-none mb-1">$5</p>
+ <p className="text-sm text-warm-ivory/80">Small Hot Sake</p>
+ </div>
+ <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4 text-center min-w-[140px]">
+ <p className="text-4xl font-heading font-bold text-soft-gold leading-none mb-1">$6</p>
+ <p className="text-sm text-warm-ivory/80">Wine</p>
+ </div>
+ </div>
+ <p className="text-warm-ivory/70 mb-10">
+ Explore our <Link href="/blog/sake-pairing-guide" className="text-soft-gold hover:underline">sake pairing guide</Link> to find the perfect drink for your meal.
+ </p>
+ <div className="flex flex-col sm:flex-row gap-4 justify-center">
+ <Link
+ href="/happy-hour"
+ className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all"
+ >
+ View Happy Hour Specials
+ </Link>
+ <Link
+ href="/reservations"
+ className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl transition-all"
+ >
+ Make a Reservation
+ </Link>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        {/* FAQ Section */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-xl text-charcoal/70 max-w-2xl mx-auto">
-                Learn more about our bar, drinks, and service
-              </p>
-            </div>
+ {/* FAQ Section */}
+ <section className="py-24 bg-white">
+ <div className="container mx-auto px-6">
+ <div className="text-center mb-16">
+ <h2 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-6">
+ Frequently Asked Questions
+ </h2>
+ <p className="text-xl text-charcoal/70 max-w-2xl mx-auto">
+ Learn more about our bar, drinks, and service
+ </p>
+ </div>
 
-            <div className="max-w-3xl mx-auto space-y-6">
-              {[
-                {
-                  question: "What is sake and how is it different from wine?",
-                  answer: "Sake is a traditional Japanese alcoholic beverage made from fermented rice. Unlike wine made from grapes, sake is brewed more like beer through a unique fermentation process. It has a smooth, delicate flavor profile and is served hot or cold depending on the type.",
-                },
-                {
-                  question: "What's the difference between hot and cold sake?",
+ <div className="max-w-3xl mx-auto space-y-6">
+ {[
+ {
+ question: "What is sake and how is it different from wine?",
+ answer: "Sake is a traditional Japanese alcoholic beverage made from fermented rice. Unlike wine made from grapes, sake is brewed more like beer through a unique fermentation process. It has a smooth, delicate flavor profile and is served hot or cold depending on the type.",
+ },
+ {
+ question: "What's the difference between hot and cold sake?",
                   answer: "Hot sake (atsukan) is warming and brings out deeper, richer flavors - perfect for winter or after-work relaxation. Cold sake (reishu) is crisp and refreshing, enhancing more delicate notes. The serving temperature can vary the entire drinking experience.",
                 },
                 {

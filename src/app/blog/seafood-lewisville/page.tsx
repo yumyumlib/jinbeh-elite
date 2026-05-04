@@ -106,7 +106,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -262,7 +261,6 @@ export default function SeafoodLewisville() {
                                         classics and fresh-caught fish, Lewisville's seafood scene offers something for every palate.
                                     </p>
 
-
             
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">top steakhouses in Lewisville</Link>
@@ -323,10 +321,24 @@ export default function SeafoodLewisville() {
                                     </h3>
 
                                     <p>
-                                        Jinbeh stands out as Lewisville's premier destination for authentic Japanese seafood. Known for
+                                        Jinbeh stands out as Lewisville&apos;s premier destination for authentic Japanese seafood. Known for
                                         exceptional quality and meticulous preparation, Jinbeh offers fresh sushi, sashimi, and expertly
-                                        grilled fish dishes. Their signature seafood platter showcases an exquisite assortment of sushi
-                                        and sashimi, while their grilled salmon with teriyaki glaze is a beloved favorite.
+                                        grilled fish dishes. Premium seafood like salmon and bluefin tuna is some of the best prepared in
+                                        the area. The signature seafood platter showcases a beautiful assortment of sushi and sashimi,
+                                        while the grilled salmon with teriyaki glaze remains a beloved favorite.
+                                    </p>
+
+                                    <p>
+                                        Beyond the seafood, Jinbeh has quietly become one of the best places in Lewisville to enjoy sake.
+                                        The list spans hot sake (warmed in a tokkuri) and chilled premium cold sake, with flavor profiles
+                                        from soft and fruity to rich and dry. Many regulars come specifically for the sake-and-sushi
+                                        pairing, and the team is happy to recommend a pour to match the fish you&apos;re ordering.
+                                    </p>
+
+                                    <p>
+                                        New to sake? Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>{" "}
+                                        Monday through Friday for a small hot sake at a friendly price. It&apos;s an easy, relaxed way to taste
+                                        your way through the menu while you enjoy the freshest seafood in <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">

@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Seafood Trio",
   "description": "Shrimp, scallops, and lobster",
-  "offers": {
-    "@type": "Offer",
-    "price": "52.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Seafood Trio hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Seafood Trio at Jinbeh Lewisville is shrimp, scallops, and lobster. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $52.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Seafood Trio at Jinbeh Lewisville is shrimp, scallops, and lobster. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSeafoodLewisvillePage() {
   const item = getMenuItem("combo-seafood", "hibachi")!;

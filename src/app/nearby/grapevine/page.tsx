@@ -143,7 +143,7 @@ const faqSchema = {
       name: "Do you have sushi happy hour near Grapevine?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both locations. Call Frisco at (214) 619-1200 for details.",
+        text: "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy Japanese draft beer, sake, and wine at both locations. Call Frisco at (214) 619-1200 for details.",
       },
     },
     {
@@ -298,168 +298,168 @@ export default function GrapevineNearbyPage() {
                 </h3>
                 <p className="text-charcoal/70">
                   Family-owned since 1988, we've perfected the sushi craft. Nearly four decades of tradition and excellence in every roll.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        {/* Locations Section */}
-        <section id="reserve" className="py-16 bg-white scroll-mt-20">
-          <div className="container mx-auto px-6">
-            <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
-              Choose Your Nearest Location
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {/* Frisco Location */}
-              <div className="card border-2 border-accent-red">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-4xl">📍</div>
-                  <div>
-                    <h3 className="font-heading text-2xl font-bold text-charcoal">
-                      Jinbeh Frisco
-                    </h3>
-                    <p className="text-accent-red font-semibold">
-                      Closest to Grapevine - 15 minutes
-                    </p>
-                  </div>
-                </div>
+ {/* Locations Section */}
+ <section id="reserve" className="py-16 bg-white scroll-mt-20">
+ <div className="container mx-auto px-6">
+ <h2 className="font-heading text-3xl font-bold text-charcoal text-center mb-12">
+ Choose Your Nearest Location
+ </h2>
+ <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+ {/* Frisco Location */}
+ <div className="card border-2 border-accent-red">
+ <div className="flex items-start gap-4 mb-6">
+ <div className="text-4xl">📍</div>
+ <div>
+ <h3 className="font-heading text-2xl font-bold text-charcoal">
+ Jinbeh Frisco
+ </h3>
+ <p className="text-accent-red font-semibold">
+ Closest to Grapevine - 15 minutes
+ </p>
+ </div>
+ </div>
 
-                <address className="not-italic text-charcoal/80 mb-6 space-y-2">
-                  <p className="font-medium">{friscoLocation.address.street}</p>
-                  <p>{friscoLocation.address.suite}</p>
-                  <p>
-                    {friscoLocation.address.city}, {friscoLocation.address.state} {friscoLocation.address.zip}
-                  </p>
-                  <p className="text-sm text-charcoal/80">
-                    Near Stonebriar Centre Mall, Legacy West
-                  </p>
-                </address>
+ <address className="not-italic text-charcoal/80 mb-6 space-y-2">
+ <p className="font-medium">{friscoLocation.address.street}</p>
+ <p>{friscoLocation.address.suite}</p>
+ <p>
+ {friscoLocation.address.city}, {friscoLocation.address.state} {friscoLocation.address.zip}
+ </p>
+ <p className="text-sm text-charcoal/80">
+ Near Stonebriar Centre Mall, Legacy West
+ </p>
+ </address>
 
-                <a
-                  href={`tel:${friscoLocation.phoneClean}`}
-                  className="block text-accent-red hover:text-deep-indigo transition-colors font-semibold mb-6"
-                >
-                  {friscoLocation.phone}
-                </a>
+ <a
+ href={`tel:${friscoLocation.phoneClean}`}
+ className="block text-accent-red hover:text-deep-indigo transition-colors font-semibold mb-6"
+ >
+ {friscoLocation.phone}
+ </a>
 
-                <div className="space-y-3 mb-6">
-                  <div>
-                    <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Mon-Fri:</span> {friscoLocation.hours.lunch.weekday.display}
-                    </p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Sat-Sun:</span> {friscoLocation.hours.lunch.weekend.display}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Sun-Thu:</span> {friscoLocation.hours.dinner.sunThurs.display}
-                    </p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Fri-Sat:</span> {friscoLocation.hours.dinner.friSat.display}
-                    </p>
-                  </div>
-                </div>
+ <div className="space-y-3 mb-6">
+ <div>
+ <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
+ <p className="text-charcoal">
+ <span className="font-medium">Mon-Fri:</span> {friscoLocation.hours.lunch.weekday.display}
+ </p>
+ <p className="text-charcoal">
+ <span className="font-medium">Sat-Sun:</span> {friscoLocation.hours.lunch.weekend.display}
+ </p>
+ </div>
+ <div>
+ <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
+ <p className="text-charcoal">
+ <span className="font-medium">Sun-Thu:</span> {friscoLocation.hours.dinner.sunThurs.display}
+ </p>
+ <p className="text-charcoal">
+ <span className="font-medium">Fri-Sat:</span> {friscoLocation.hours.dinner.friSat.display}
+ </p>
+ </div>
+ </div>
 
-                <Link
-                  href="/frisco"
-                  className="btn btn-primary w-full mb-3"
-                >
-                  View Full Details
-                </Link>
-                <a
-                  href={friscoLocation.reservation.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary w-full"
-                >
-                  Reserve at Frisco
-                </a>
-              </div>
+ <Link
+ href="/frisco"
+ className="btn btn-primary w-full mb-3"
+ >
+ View Full Details
+ </Link>
+ <a
+ href={friscoLocation.reservation.url}
+ target="_blank"
+ rel="noopener noreferrer"
+ className="btn btn-secondary w-full"
+ >
+ Reserve at Frisco
+ </a>
+ </div>
 
-              {/* Lewisville Location */}
-              <div className="card">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-4xl">📍</div>
-                  <div>
-                    <h3 className="font-heading text-2xl font-bold text-charcoal">
-                      Jinbeh Lewisville
-                    </h3>
-                    <p className="text-cedar-brown font-semibold">
-                      Alternative Option - 17 minutes
-                    </p>
-                  </div>
-                </div>
+ {/* Lewisville Location */}
+ <div className="card">
+ <div className="flex items-start gap-4 mb-6">
+ <div className="text-4xl">📍</div>
+ <div>
+ <h3 className="font-heading text-2xl font-bold text-charcoal">
+ Jinbeh Lewisville
+ </h3>
+ <p className="text-cedar-brown font-semibold">
+ Alternative Option - 17 minutes
+ </p>
+ </div>
+ </div>
 
-                <address className="not-italic text-charcoal/80 mb-6 space-y-2">
-                  <p className="font-medium">{lewisvilleLocation.address.street}</p>
-                  <p>{lewisvilleLocation.address.suite}</p>
-                  <p>
-                    {lewisvilleLocation.address.city}, {lewisvilleLocation.address.state} {lewisvilleLocation.address.zip}
-                  </p>
-                  <p className="text-sm text-charcoal/80">
-                    Easy access from I-35E, Vista Ridge Mall area
-                  </p>
-                </address>
+ <address className="not-italic text-charcoal/80 mb-6 space-y-2">
+ <p className="font-medium">{lewisvilleLocation.address.street}</p>
+ <p>{lewisvilleLocation.address.suite}</p>
+ <p>
+ {lewisvilleLocation.address.city}, {lewisvilleLocation.address.state} {lewisvilleLocation.address.zip}
+ </p>
+ <p className="text-sm text-charcoal/80">
+ Easy access from I-35E, Vista Ridge Mall area
+ </p>
+ </address>
 
-                <a
-                  href={`tel:${lewisvilleLocation.phoneClean}`}
-                  className="block text-accent-red hover:text-deep-indigo transition-colors font-semibold mb-6"
-                >
-                  {lewisvilleLocation.phone}
-                </a>
+ <a
+ href={`tel:${lewisvilleLocation.phoneClean}`}
+ className="block text-accent-red hover:text-deep-indigo transition-colors font-semibold mb-6"
+ >
+ {lewisvilleLocation.phone}
+ </a>
 
-                <div className="space-y-3 mb-6">
-                  <div>
-                    <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Mon-Fri:</span> {lewisvilleLocation.hours.lunch.weekday.display}
-                    </p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Sat-Sun:</span> {lewisvilleLocation.hours.lunch.weekend.display}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Sun-Thu:</span> {lewisvilleLocation.hours.dinner.sunThurs.display}
-                    </p>
-                    <p className="text-charcoal">
-                      <span className="font-medium">Fri-Sat:</span> {lewisvilleLocation.hours.dinner.friSat.display}
-                    </p>
-                  </div>
-                </div>
+ <div className="space-y-3 mb-6">
+ <div>
+ <p className="text-sm font-semibold text-charcoal/80 mb-1">LUNCH</p>
+ <p className="text-charcoal">
+ <span className="font-medium">Mon-Fri:</span> {lewisvilleLocation.hours.lunch.weekday.display}
+ </p>
+ <p className="text-charcoal">
+ <span className="font-medium">Sat-Sun:</span> {lewisvilleLocation.hours.lunch.weekend.display}
+ </p>
+ </div>
+ <div>
+ <p className="text-sm font-semibold text-charcoal/80 mb-1">DINNER</p>
+ <p className="text-charcoal">
+ <span className="font-medium">Sun-Thu:</span> {lewisvilleLocation.hours.dinner.sunThurs.display}
+ </p>
+ <p className="text-charcoal">
+ <span className="font-medium">Fri-Sat:</span> {lewisvilleLocation.hours.dinner.friSat.display}
+ </p>
+ </div>
+ </div>
 
-                <Link
-                  href="/lewisville"
-                  className="btn btn-primary w-full mb-3"
-                >
-                  View Full Details
-                </Link>
-                <a
-                  href={lewisvilleLocation.reservation.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary w-full"
-                >
-                  Reserve at Lewisville
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+ <Link
+ href="/lewisville"
+ className="btn btn-primary w-full mb-3"
+ >
+ View Full Details
+ </Link>
+ <a
+ href={lewisvilleLocation.reservation.url}
+ target="_blank"
+ rel="noopener noreferrer"
+ className="btn btn-secondary w-full"
+ >
+ Reserve at Lewisville
+ </a>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        {/* What We Offer Section */}
-        <section className="py-16 bg-charcoal text-warm-ivory">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="font-heading text-3xl font-bold mb-6">
-              The Jinbeh Sushi Experience
-            </h2>
-            <p className="text-warm-ivory/80 max-w-3xl mx-auto mb-12">
-              Sushi is an art form. Our master chefs combine traditional techniques with premium ingredients to create sushi that's both beautiful and delicious.
+ {/* What We Offer Section */}
+ <section className="py-16 bg-charcoal text-warm-ivory">
+ <div className="container mx-auto px-6 text-center">
+ <h2 className="font-heading text-3xl font-bold mb-6">
+ The Jinbeh Sushi Experience
+ </h2>
+ <p className="text-warm-ivory/80 max-w-3xl mx-auto mb-12">
+ Sushi is an art form. Our master chefs combine traditional techniques with premium ingredients to create sushi that's both beautiful and delicious.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">

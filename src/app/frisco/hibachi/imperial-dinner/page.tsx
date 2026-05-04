@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Imperial Dinner",
   "description": "Filet mignon, lobster tail, and shrimp",
-  "offers": {
-    "@type": "Offer",
-    "price": "64.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -62,10 +57,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Why is Imperial Dinner at $64.95?",
+      "name": "Why is Imperial Dinner at ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At $64.95, Imperial Dinner combines three premium proteins: filet mignon ($34.95), lobster tail ($44.95), and jumbo shrimp ($28.95). The value bundle saves versus ordering separately, offering ultimate hibachi variety experience."
+        "text": "At, Imperial Dinner combines three premium proteins: filet mignon, lobster tail, and jumbo shrimp. The value bundle saves versus ordering separately, offering ultimate hibachi variety experience."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ImperialDinnerFriscoPage() {
   const item = getMenuItem("imperial-dinner", "hibachi")!;

@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Sake Bomb",
   "description": "Classic sake dropped into cold beer",
-  "offers": {
-    "@type": "Offer",
-    "price": "8.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SakeBombFriscoPage() {
   const item = { ...getMenuItem("sake-bomb", "cocktails")!, jinbehStory: "Sake tradition at Jinbeh goes back decades. Our premium unfiltered sake bottle must be shaken before pouring — the white cloud inside is rice sediment from the authentic unfiltered process." };

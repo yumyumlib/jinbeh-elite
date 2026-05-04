@@ -99,7 +99,6 @@ const faqSchema = {
     })),
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -198,7 +197,6 @@ export default function TypesOfSushi() {
                                         and specialty rolls, the sushi menu can feel like reading a foreign language.
                                         Let's break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
-
 
             
               <p className="text-charcoal/80 text-sm mt-6">
@@ -406,7 +404,6 @@ export default function TypesOfSushi() {
                                         </Link>
                                     </div>
                                 </div>
-
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                     <BlurFade delay={0.1}>

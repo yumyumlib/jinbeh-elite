@@ -55,7 +55,7 @@ const faqSchema = {
       "name": "What size groups can you accommodate?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We host teams of any size! From small departments to company-wide events. Hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice), allowing us to organize your team into manageable groups. For large events, we recommend advance planning.",
+        "text": "We host teams of any size, from small departments to company-wide events. Groups of 7-8 are ideal for a single hibachi table. For larger teams, we&apos;ve regularly hosted 40-50 guests by joining tables together with advance notice. For large events, please plan ahead with us.",
       },
     },
     {
@@ -123,7 +123,6 @@ const teamBuildingBenefits = [
     description: "We handle all the details – you just bring your team and let the fun happen naturally.",
   },
 ];
-
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -275,7 +274,7 @@ export default function TeamBuildingPage() {
                   <h3 className="font-semibold text-charcoal mb-3">💼 Event Planning Tips:</h3>
                   <ul className="space-y-2 text-sm text-charcoal/80">
                     <li>• Book 2-3 weeks in advance for best dates</li>
-                    <li>• Groups of 8-10 per hibachi table is ideal</li>
+                    <li>• Groups of 7-8 per hibachi table is ideal. We&apos;ve regularly hosted teams of 40-50 by joining tables together with advance notice.</li>
                     <li>• Mix departments at each table for better bonding</li>
                     <li>• Request reserved seating if possible</li>
                     <li>• Mention dietary restrictions when booking</li>

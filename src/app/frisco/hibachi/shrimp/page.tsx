@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Jumbo Shrimp",
   "description": "Succulent jumbo shrimp, flame-kissed to perfection",
-  "offers": {
-    "@type": "Offer",
-    "price": "28.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ShrimpFriscoPage() {
   const item = { ...getMenuItem("shrimp", "hibachi")!, jinbehStory: "At Jinbeh, our hibachi grills reach 550°F. Our signature Yum Yum sauce — an in-house blend of mayo, sriracha, and sugar — is probably the biggest draw on a hibachi plate. Guests are genuinely addicted to it." };

@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Vegas Roll",
   "description": "Deep-fried roll with spicy crab and cream cheese",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function VegasRollLewisvillePage() {
   const item = getMenuItem("vegas-roll", "sushi-rolls")!;

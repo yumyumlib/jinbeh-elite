@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Frisco Specials & Deals | Jinbeh Japanese Restaurant",
   description:
-    "Enjoy exclusive specials at Jinbeh Frisco! Happy Hour, lunch deals, and weekly promotions. Great discounts on sushi, hibachi, and Japanese cuisine.",
+    "Lunch Hibachi for Two — $35 at Jinbeh Frisco (Mon-Fri 11am-2pm). Plus Happy Hour: $4 draft beer, $5 small hot sake, $6 wine. View current specials.",
   keywords: [
     "frisco specials",
     "frisco deals",
@@ -40,6 +40,43 @@ export const metadata: Metadata = {
 
 const frisco = locations.locations.frisco;
 
+const hibachiForTwoProteins = [
+  { name: "Veggie",  icon: "🥦", desc: "Fresh seasonal vegetables with tofu" },
+  { name: "Chicken", icon: "🍗", desc: "Tender chicken with house teriyaki glaze" },
+  { name: "Steak",   icon: "🥩", desc: "Hand-cut steak, seared on the teppan" },
+  { name: "Shrimp",  icon: "🍤", desc: "Jumbo shrimp, flame-kissed to perfection" },
+  { name: "Salmon",  icon: "🍣", desc: "Fresh salmon with citrus teriyaki" },
+];
+
+const friscoSpecialsOffersSchema = {
+  "@context": "https://schema.org",
+  "@type": "AggregateOffer",
+  "url": "https://jinbeh.com/frisco/specials",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Lunch Hibachi for Two — Jinbeh Frisco",
+      "description": "Lunch-only special, Monday through Friday 11:00 AM to 2:00 PM. Two hibachi entrees — choose between Veggie, Chicken, Steak, Shrimp, or Salmon. Includes soup, salad, vegetables, and white rice. Add fried rice for $5 per person.",
+      "price": "35.00",
+      "priceCurrency": "USD",
+      "url": "https://jinbeh.com/frisco/specials#hibachi-for-two",
+      "availability": "https://schema.org/InStock",
+      "eligibleQuantity": { "@type": "QuantitativeValue", "value": 2, "unitText": "guests" },
+      "availabilityStarts": "11:00",
+      "availabilityEnds": "14:00",
+      "availableAtOrFrom": {
+        "@type": "Place",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "11:00",
+          "closes": "14:00"
+        }
+      }
+    }
+  ]
+};
+
 const specialsData = [
   {
     title: "Happy Hour Specials",
@@ -48,7 +85,7 @@ const specialsData = [
     color: "from-accent-red to-deep-indigo",
     items: [
       { label: "$4 Japanese Draft Beer", desc: "Sapporo, Asahi, Kirin, and more on draft" },
-      { label: "$5 Sake", desc: "Hot or cold, from our curated selection" },
+      { label: "$5 Small Hot Sake", desc: "House sake served warm in a tokkuri" },
       { label: "$6 Wine", desc: "Curated wines by the glass" },
     ],
   },
@@ -58,8 +95,8 @@ const specialsData = [
     emoji: "🍱",
     color: "from-deep-indigo to-soft-gold",
     items: [
-      { label: "Bento Boxes", desc: "Starting at $12.95 - Assorted proteins with rice and sides" },
-      { label: "Hibachi Lunch Combos", desc: "From $13.95 - Chef-cooked experience at lunch prices" },
+      { label: "Hibachi for Two", desc: "$35 for two hibachi entrees, Mon-Fri lunch only" },
+      { label: "Hibachi Lunch Combos", desc: "Chef-cooked hibachi experience at lunch portions" },
       { label: "Sushi Lunch Specials", desc: "Fresh rolls and nigiri combinations available daily" },
     ],
   },
@@ -100,6 +137,10 @@ export default function FriscoSpecialsPage() {
         <BreadcrumbNav items={[{ label: "Frisco", href: "/frisco" }, { label: "Specials" }]} />
       </div>
       <main id="main-content" className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(friscoSpecialsOffersSchema) }}
+        />
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
           <div
@@ -139,6 +180,109 @@ export default function FriscoSpecialsPage() {
               <div>
                 <p className="text-sm uppercase tracking-wider opacity-90">Hours</p>
                 <p className="text-lg font-bold">See specials below</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Hibachi for Two — Featured Special */}
+        <section id="hibachi-for-two" className="py-20 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <Image
+              src="/images/food/hibachi-grill.jpg"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-accent-red text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full mb-4">
+                  🔥 Lunch Special at Frisco — Mon through Fri
+                </span>
+                <h2 className="text-4xl md:text-6xl font-heading font-bold mb-3">
+                  Hibachi for Two
+                </h2>
+                <div className="flex items-baseline justify-center gap-3 mb-4">
+                  <span className="text-7xl md:text-8xl font-heading font-bold text-soft-gold leading-none">$35</span>
+                  <span className="text-xl md:text-2xl text-warm-ivory/80">/ for 2 people</span>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-soft-gold/40 rounded-full px-5 py-2 mb-5">
+                  <svg className="w-4 h-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm font-medium text-warm-ivory">Lunch only • Mon–Fri • 11:00 AM – 2:00 PM</span>
+                </div>
+                <p className="text-lg text-warm-ivory/85 max-w-2xl mx-auto">
+                  Two hibachi entrees, your choice of any combination. Cooked tableside on the teppanyaki grill —
+                  includes soup, salad, vegetables, and white rice.
+                </p>
+              </div>
+
+              <p className="text-center text-soft-gold uppercase tracking-wider text-sm font-medium mb-6">
+                Choose Two Proteins
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+                {hibachiForTwoProteins.map((p) => (
+                  <div
+                    key={p.name}
+                    className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 text-center hover:bg-white/15 hover:border-soft-gold/40 transition-all"
+                  >
+                    <div className="text-4xl mb-2">{p.icon}</div>
+                    <h3 className="font-heading text-lg font-semibold mb-1">{p.name}</h3>
+                    <p className="text-xs text-warm-ivory/70 leading-relaxed">{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+                <div className="bg-white/5 border border-white/15 rounded-2xl p-6">
+                  <h3 className="font-heading font-bold text-soft-gold uppercase tracking-wider text-sm mb-3">
+                    Each Plate Includes
+                  </h3>
+                  <ul className="space-y-2 text-sm text-warm-ivory/85">
+                    <li className="flex items-center gap-2"><span className="text-soft-gold">✓</span> Onion soup</li>
+                    <li className="flex items-center gap-2"><span className="text-soft-gold">✓</span> House salad with ginger dressing</li>
+                    <li className="flex items-center gap-2"><span className="text-soft-gold">✓</span> Grilled vegetables</li>
+                    <li className="flex items-center gap-2"><span className="text-soft-gold">✓</span> Steamed white rice</li>
+                  </ul>
+                </div>
+                <div className="bg-soft-gold/10 border border-soft-gold/40 rounded-2xl p-6 ring-1 ring-soft-gold/30">
+                  <h3 className="font-heading font-bold text-soft-gold uppercase tracking-wider text-sm mb-3">
+                    Optional Upgrade
+                  </h3>
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-3xl font-heading font-bold text-soft-gold leading-none">+$5</span>
+                    <span className="text-sm text-warm-ivory/85">per person</span>
+                  </div>
+                  <p className="text-sm text-warm-ivory/85 leading-relaxed">
+                    Upgrade your white rice to <strong className="text-white">hibachi fried rice</strong> — wok-tossed
+                    with egg, vegetables, and a hint of garlic butter.
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="inline-flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={`tel:${frisco.phoneClean}`}
+                    className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all"
+                  >
+                    Call Frisco — {frisco.phone}
+                  </a>
+                  <Link
+                    href="/reservations"
+                    className="btn bg-white/10 backdrop-blur text-white border border-white/40 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl transition-all"
+                  >
+                    Reserve a Table
+                  </Link>
+                </div>
+                <p className="text-xs text-warm-ivory/60 italic mt-6">
+                  Available at lunch only, Monday through Friday, 11:00 AM – 2:00 PM. Dine-in only. Two-person minimum. Not combinable with other promotions or coupons.
+                </p>
               </div>
             </div>
           </div>
@@ -260,17 +404,17 @@ export default function FriscoSpecialsPage() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <p className="text-5xl font-bold text-soft-gold mb-3">$5</p>
+                    
                     <p className="font-bold mb-2">Select Appetizers</p>
                     <p className="text-white/80 text-sm">Gyoza • Edamame • Spicy Tuna Crispy Rice</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-5xl font-bold text-soft-gold mb-3">$5</p>
+                    
                     <p className="font-bold mb-2">Cocktails & Sake</p>
                     <p className="text-white/80 text-sm">Premium sake • Tokyo Mule • Lychee Martini</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-5xl font-bold text-soft-gold mb-3">$3</p>
+                    
                     <p className="font-bold mb-2">Domestic Beer</p>
                     <p className="text-white/80 text-sm">Cold beer • Perfect way to unwind</p>
                   </div>
@@ -341,16 +485,16 @@ export default function FriscoSpecialsPage() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <p className="text-4xl mb-3">🍱</p>
-                    <p className="font-bold text-charcoal mb-2">Bento Boxes</p>
-                    <p className="text-accent-red font-bold mb-2">Starting at $12.95</p>
-                    <p className="text-charcoal/70 text-sm">Assorted proteins with rice and sides</p>
+                    <p className="text-4xl mb-3">🔥</p>
+                    <p className="font-bold text-charcoal mb-2">Hibachi for Two</p>
+                    <p className="text-accent-red font-bold mb-2">$35 • Mon-Fri Lunch</p>
+                    <p className="text-charcoal/70 text-sm">Two hibachi entrees, lunch only</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-4xl mb-3">🔥</p>
+                    <p className="text-4xl mb-3">🥩</p>
                     <p className="font-bold text-charcoal mb-2">Hibachi Lunch</p>
-                    <p className="text-accent-red font-bold mb-2">From $13.95</p>
-                    <p className="text-charcoal/70 text-sm">Chef-cooked experience at lunch prices</p>
+                    <p className="text-accent-red font-bold mb-2">Chef-Cooked</p>
+                    <p className="text-charcoal/70 text-sm">Tableside hibachi experience at lunch portions</p>
                   </div>
                   <div className="text-center">
                     <p className="text-4xl mb-3">🍣</p>

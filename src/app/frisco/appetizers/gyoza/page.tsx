@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Gyoza",
   "description": "Pan-fried pork dumplings with dipping sauce",
-  "offers": {
-    "@type": "Offer",
-    "price": "8.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Is Gyoza good for sharing and happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Gyoza at $8.95 is perfect for sharing and a great starter for groups. Pair with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm). Call (214) 619-1200 for specials."
+        "text": "Absolutely! Gyoza at is perfect for sharing and a great starter for groups. Pair with draft beer or sake during Happy Hour (Mon-Fri 5-6:30pm). Call (214) 619-1200 for specials."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function GyozaFriscoPage() {
   const item = { ...getMenuItem("gyoza", "appetizers")!, jinbehStory: "Our haramaki (spring rolls) are made entirely in-house, which is time-consuming. The kitchen makes the filling and rolls them up weekly by hand. People who try one always order again." };

@@ -90,7 +90,7 @@ const corporatePackages = [
     title: "Office Lunches",
     description: "Impress your team with fresh, authentic Japanese cuisine delivered to your office.",
     image: "/images/photoshoot/sashimi-platter.jpg",
-    price: "Starting at $18/person",
+    price: "Starting at /person",
     includes: [
       "Sushi & roll assortment",
       "Fresh appetizers",
@@ -104,7 +104,7 @@ const corporatePackages = [
     title: "Client Meetings",
     description: "Make a lasting impression with premium catering that shows you value your clients.",
     image: "/images/photoshoot/appetizers-spread.jpg",
-    price: "Starting at $22/person",
+    price: "Starting at /person",
     includes: [
       "Premium sushi platters",
       "Japanese appetizer trays",
@@ -118,7 +118,7 @@ const corporatePackages = [
     title: "Corporate Events",
     description: "Full-service catering for conferences, retreats, and special celebrations.",
     image: "/images/food/hibachi-grill.jpg",
-    price: "Starting at $25/person",
+    price: "Starting at /person",
     includes: [
       "Full menu customization",
       "Interactive hibachi stations",
@@ -132,7 +132,7 @@ const corporatePackages = [
     title: "Team Celebrations",
     description: "Celebrate promotions, launches, and achievements with your entire team.",
     image: "/images/about/chef-flames.jpg",
-    price: "Starting at $20/person",
+    price: "Starting at /person",
     includes: [
       "Hibachi-style service options",
       "Team-friendly platters",
@@ -267,7 +267,7 @@ export default function CorporateCateringPage() {
                 <div
                   key={pkg.title}
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                    }`}
+ }`}
                 >
                   <div className={`relative ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
@@ -342,7 +342,7 @@ export default function CorporateCateringPage() {
                 <div className="text-center p-8 bg-warm-ivory rounded-xl">
                   <div className="text-4xl font-heading font-bold text-accent-red mb-2">500+</div>
                   <p className="text-charcoal font-semibold">Corporate Events</p>
-                  <p className="text-charcoal/70 text-sm">Trusted by major corporations</p>
+                  <p className="text-charcoal/70 text-sm">Office lunches, team dinners &amp; client events across DFW</p>
                 </div>
               </div>
 

@@ -186,15 +186,15 @@ function generateImageSitemap(): string {
 
   for (const entry of imageEntries) {
     xml += `
-  <url>
-    <loc>${entry.pageUrl}</loc>`;
+ <url>
+ <loc>${entry.pageUrl}</loc>`;
     for (const img of entry.images) {
       xml += `
-    <image:image>
-      <image:loc>${img.loc}</image:loc>
-      <image:caption>${escapeXml(img.caption)}</image:caption>
-      <image:title>${escapeXml(img.title)}</image:title>
-    </image:image>`;
+ <image:image>
+ <image:loc>${img.loc}</image:loc>
+ <image:caption>${escapeXml(img.caption)}</image:caption>
+ <image:title>${escapeXml(img.title)}</image:title>
+ </image:image>`;
     }
     xml += `
   </url>`;

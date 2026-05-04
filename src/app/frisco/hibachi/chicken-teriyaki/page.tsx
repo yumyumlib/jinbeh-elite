@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Hibachi Chicken Teriyaki | Best Japanese Steakhouse Frisco TX",
-  description: "Hibachi chicken teriyaki: 300 cal, 26g protein. Grilled tableside with teriyaki glaze. Complete dinner $24.95. Reserve at Jinbeh Frisco today!",
+  description: "Hibachi chicken teriyaki: 300 cal, 26g protein. Grilled tableside with teriyaki glaze. Complete dinner. Reserve at Jinbeh Frisco today!",
   keywords: ["hibachi chicken teriyaki frisco","teppanyaki chicken dinner","hibachi chicken calories","is hibachi chicken healthy","japanese steakhouse frisco","family hibachi dinner frisco","hibachi near me frisco"],
   openGraph: {
     title: "Chicken Teriyaki | Jinbeh Frisco",
@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Chicken Teriyaki",
   "description": "Tender chicken breast with house teriyaki glaze",
-  "offers": {
-    "@type": "Offer",
-    "price": "24.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "What comes with hibachi chicken teriyaki dinner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Chicken Teriyaki dinner ($24.95) includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and dipping sauces. It's our most popular family-friendly hibachi option."
+        "text": "Your Chicken Teriyaki dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and dipping sauces. It's our most popular family-friendly hibachi option."
       }
     },
     {
@@ -102,7 +97,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ChickenTeriyakiFriscoPage() {
   const item = { ...getMenuItem("chicken-teriyaki", "hibachi")!, jinbehStory: "Our teriyaki sauce is entirely homemade — a sweet soy-based glaze that's become a family favorite. Fun fact: our fried rice is made with finely chopped scallion, onion, and carrots cut so small they're invisible. This is deliberate — kids (and some adults) don't want to see vegetables." };

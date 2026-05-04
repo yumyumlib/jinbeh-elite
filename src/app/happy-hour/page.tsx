@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Happy Hour | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
   description:
-    "Jinbeh Happy Hour: Mon-Fri 5-6:30pm. $4 Japanese draft beer, $5 sake, $6 wine. Premium drinks at unbeatable prices at our Frisco and Lewisville locations.",
+    "Jinbeh Happy Hour: Mon-Fri 5-6:30pm. $4 Japanese draft beer, $5 small hot sake, $6 wine. Frisco and Lewisville locations.",
   keywords: [
     "happy hour frisco",
     "happy hour lewisville",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     "happy hour specials frisco tx",
     "sushi happy hour near me",
     "happy hour near me open now",
-    "$4 beer happy hour frisco",
-    "$5 sake happy hour",
+    " beer happy hour frisco",
+    " sake happy hour",
     "happy hour 5pm frisco tx",
     "cheap sake near me",
     "japanese beer specials frisco",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Happy Hour | Jinbeh Japanese Restaurant",
-    description: "Jinbeh Happy Hour: $4 Japanese draft beer, $5 sake, $6 wine. Mon-Fri 5-6:30pm.",
+    description: "Jinbeh Happy Hour: $4 Japanese draft beer, $5 small hot sake, $6 wine. Mon-Fri 5-6:30pm.",
     url: "https://jinbeh.com/happy-hour",
     images: [
       {
@@ -57,7 +57,7 @@ const faqSchema = {
       "name": "What time is Happy Hour at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Happy Hour at Jinbeh runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine.",
+        "text": "Happy Hour at Jinbeh runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 small hot sake, and $6 wine.",
       },
     },
     {
@@ -73,7 +73,7 @@ const faqSchema = {
       "name": "What drinks are on special during Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "During Happy Hour (Mon-Fri 5:00 to 6:30 PM), enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both Jinbeh locations.",
+        "text": "During Happy Hour (Mon-Fri 5:00 to 6:30 PM): $4 Japanese draft beer, $5 small hot sake, and $6 wine — at both Jinbeh locations.",
       },
     },
     {
@@ -89,7 +89,7 @@ const faqSchema = {
       "name": "How much is beer during Jinbeh Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Japanese draft beer is just $4 during Jinbeh Happy Hour, Monday through Friday from 5:00 PM to 6:30 PM. We also offer $5 sake and $6 wine.",
+        "text": "Japanese draft beer is just $4 during Jinbeh Happy Hour, Monday through Friday from 5:00 PM to 6:30 PM. Small hot sake is $5 and wine is $6.",
       },
     },
   ],
@@ -138,16 +138,16 @@ const breadcrumbSchema = {
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "FoodEvent",
-  "name": "Jinbeh Happy Hour: $4 Draft Beer, $5 Sake, $6 Wine",
-  "description": "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine at both Frisco and Lewisville locations.",
+  "name": "Jinbeh Happy Hour: $4 Beer, $5 Hot Sake, $6 Wine",
+  "description": "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. $4 Japanese draft beer, $5 small hot sake, and $6 wine at both Frisco and Lewisville locations.",
   "url": "https://jinbeh.com/happy-hour",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "isAccessibleForFree": true,
   "offers": [
-    { "@type": "Offer", "name": "Japanese Draft Beer", "price": "4.00", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Sake", "price": "5.00", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Wine", "price": "6.00", "priceCurrency": "USD" }
+    { "@type": "Offer", "name": "Japanese Draft Beer", "price": "4.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+    { "@type": "Offer", "name": "Small Hot Sake", "price": "5.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+    { "@type": "Offer", "name": "Wine", "price": "6.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
   ],
   "location": [
     {
@@ -202,7 +202,6 @@ export default function HappyHourPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
@@ -223,16 +222,16 @@ export default function HappyHourPage() {
               Premium drinks at unbeatable prices. Enjoy <Link href="/blog/types-of-sake-explained" className="text-soft-gold hover:underline">sake</Link>, Japanese draft beer, and wine at the <Link href="/bar" className="text-soft-gold hover:underline">bar</Link> every weekday evening.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-4 md:gap-6">
-              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center">
-                <p className="text-3xl font-bold text-soft-gold">$4</p>
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center min-w-[120px]">
+                <p className="text-3xl md:text-4xl font-heading font-bold text-soft-gold leading-none mb-1">$4</p>
                 <p className="text-sm text-warm-ivory/90">Draft Beer</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center">
-                <p className="text-3xl font-bold text-soft-gold">$5</p>
-                <p className="text-sm text-warm-ivory/90">Sake</p>
+              <div className="bg-white/10 backdrop-blur-md border border-soft-gold/50 rounded-xl px-6 py-4 text-center min-w-[120px] ring-1 ring-soft-gold/30">
+                <p className="text-3xl md:text-4xl font-heading font-bold text-soft-gold leading-none mb-1">$5</p>
+                <p className="text-sm text-warm-ivory/90">Small Hot Sake</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center">
-                <p className="text-3xl font-bold text-soft-gold">$6</p>
+              <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-6 py-4 text-center min-w-[120px]">
+                <p className="text-3xl md:text-4xl font-heading font-bold text-soft-gold leading-none mb-1">$6</p>
                 <p className="text-sm text-warm-ivory/90">Wine</p>
               </div>
             </div>
@@ -254,23 +253,27 @@ export default function HappyHourPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 transition-all">
                   <div className="text-5xl mb-4">🍺</div>
-                  <p className="text-4xl font-bold text-soft-gold mb-2">$4</p>
+                  <p className="text-5xl md:text-6xl font-heading font-bold text-soft-gold leading-none mb-3">$4</p>
                   <h3 className="font-heading text-xl font-semibold mb-2">Japanese Draft Beer</h3>
                   <p className="text-warm-ivory/70 text-sm">Sapporo, Asahi, Kirin, and more on draft</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur border border-soft-gold/40 rounded-2xl p-8 text-center hover:bg-white/15 transition-all ring-1 ring-soft-gold/30">
+                <div className="bg-white/10 backdrop-blur border border-soft-gold/40 rounded-2xl p-8 text-center hover:bg-white/15 transition-all ring-1 ring-soft-gold/30 relative">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-soft-gold text-charcoal text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Most Popular</span>
                   <div className="text-5xl mb-4">🍶</div>
-                  <p className="text-4xl font-bold text-soft-gold mb-2">$5</p>
-                  <h3 className="font-heading text-xl font-semibold mb-2">Sake</h3>
-                  <p className="text-warm-ivory/70 text-sm">Hot or cold, from our curated selection</p>
+                  <p className="text-5xl md:text-6xl font-heading font-bold text-soft-gold leading-none mb-3">$5</p>
+                  <h3 className="font-heading text-xl font-semibold mb-2">Small Hot Sake</h3>
+                  <p className="text-warm-ivory/70 text-sm">House sake served warm in a tokkuri</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 transition-all">
                   <div className="text-5xl mb-4">🍷</div>
-                  <p className="text-4xl font-bold text-soft-gold mb-2">$6</p>
+                  <p className="text-5xl md:text-6xl font-heading font-bold text-soft-gold leading-none mb-3">$6</p>
                   <h3 className="font-heading text-xl font-semibold mb-2">Wine</h3>
                   <p className="text-warm-ivory/70 text-sm">Curated wines by the glass</p>
                 </div>
               </div>
+              <p className="text-center text-warm-ivory/60 text-xs italic mt-8">
+                Happy Hour pricing available at the bar only. Dine-in only. Not combinable with other offers.
+              </p>
             </div>
           </div>
         </section>

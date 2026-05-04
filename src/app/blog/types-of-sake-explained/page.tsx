@@ -97,7 +97,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -160,7 +159,7 @@ export default function TypesOfSakeExplained() {
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏮 Behind the Bar at Jinbeh</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh stocks rare Japanese whiskeys including Yamazaki — bottles the owner has to &ldquo;beg and pull teeth&rdquo; to acquire as Japanese distilleries send fewer pallets to the US. For sake, the $60 unfiltered bottle must be shaken before pouring. And the iconic hand-painted tequila bottles behind the bar? Each one is individually painted by artisans from a Mexican village. It took a year to collect enough empty bottles to fill the shelf.
+ Jinbeh stocks rare Japanese whiskeys including Yamazaki — bottles the owner has to &ldquo;beg and pull teeth&rdquo; to acquire as Japanese distilleries send fewer pallets to the US. For sake, the unfiltered bottle must be shaken before pouring. And the iconic hand-painted tequila bottles behind the bar? Each one is individually painted by artisans from a Mexican village. It took a year to collect enough empty bottles to fill the shelf.
                 </p>
               </div>
 
@@ -209,7 +208,7 @@ export default function TypesOfSakeExplained() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Japan produces over 1,400 active sake breweries (kura), yet the global sake market has grown 12% annually since 2018, reaching $8.2 billion in 2024. The U.S. is now the largest sake market outside Japan, with Texas ranking in the top 10 states for sake consumption. Interestingly, sake predates wine and beer—archaeological evidence suggests rice fermentation in Japan dates back over 2,000 years. The rice polishing machine, invented in 1930, revolutionized sake and created the modern classification system we use today."
+                                        fact="Japan produces over 1,400 active sake breweries (kura), yet the global sake market has grown 12% annually since 2018, reaching billion in 2024. The U.S. is now the largest sake market outside Japan, with Texas ranking in the top 10 states for sake consumption. Interestingly, sake predates wine and beer—archaeological evidence suggests rice fermentation in Japan dates back over 2,000 years. The rice polishing machine, invented in 1930, revolutionized sake and created the modern classification system we use today."
                                         source="Sake Brewers Association of Japan"
                                     />
 
@@ -926,29 +925,29 @@ export default function TypesOfSakeExplained() {
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p className="mb-3">
                                                     Absolutely! It's a celebration! Sake tasting and exploration is fun. Many diners enjoy sampling multiple varieties during one meal.
-                                                </p>
-                                                <p className="mb-3">
-                                                    <strong>Pro tip:</strong> Taste from lightest to boldest (Ginjo first, then Junmai). This prevents heavier flavors from overwhelming delicate ones.
-                                                </p>
-                                                <p>
-                                                    At Jinbeh, our happy hour is perfect for sampling different sake types at reasonable prices. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for hours and details.
-                                                </p>
-                                            </div>
-                                        </details>
-                                    </div>
+ </p>
+ <p className="mb-3">
+ <strong>Pro tip:</strong> Taste from lightest to boldest (Ginjo first, then Junmai). This prevents heavier flavors from overwhelming delicate ones.
+ </p>
+ <p>
+ At Jinbeh, our happy hour is perfect for sampling different sake types at reasonable prices. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for hours and details.
+ </p>
+ </div>
+ </details>
+ </div>
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🎉 Explore Sake Types at Jinbeh Happy Hour
-                                    </h2>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🎉 Explore Sake Types at Jinbeh Happy Hour
+ </h2>
 
-                                    <p className="mb-6">
-                                        Ready to explore different sake types? Jinbeh Happy Hour is the perfect opportunity to sample varieties and discover your favorite. Enjoy $5 sake, $4 Japanese draft beer, and $6 wine every Monday through Friday from 5:00 to 6:30 PM.
-                                    </p>
+ <p className="mb-6">
+ Ready to explore different sake types? Jinbeh Happy Hour is the perfect opportunity to sample varieties and discover your favorite. Enjoy sake, Japanese draft beer, and wine every Monday through Friday from 5:00 to 6:30 PM.
+ </p>
 
-                                    <div className="bg-gradient-to-br from-accent-red/10 to-deep-indigo/10 rounded-2xl p-8 my-8">
-                                        <h3 className="font-heading font-bold text-xl text-charcoal mb-4">🎊 Happy Hour Sake Tastings</h3>
-                                        <p className="text-charcoal/80 mb-6">
-                                            Our bartenders can guide you through different sake types and recommend pairings to highlight each variety's best qualities. It's the perfect way to learn what you love.
+ <div className="bg-gradient-to-br from-accent-red/10 to-deep-indigo/10 rounded-2xl p-8 my-8">
+ <h3 className="font-heading font-bold text-xl text-charcoal mb-4">🎊 Happy Hour Sake Tastings</h3>
+ <p className="text-charcoal/80 mb-6">
+ Our bartenders can guide you through different sake types and recommend pairings to highlight each variety's best qualities. It's the perfect way to learn what you love.
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-4">
                                             <Link href="/happy-hour" className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold shadow-lg transition-colors text-center">

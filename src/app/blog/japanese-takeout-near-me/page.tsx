@@ -49,11 +49,9 @@ const faqs = [
     },
     {
         question: "Is there a minimum order for Japanese food delivery?",
-        answer: "Minimum order amounts vary by delivery platform. DoorDash and Uber Eats typically require $10-$15 minimums. For direct pickup from Jinbeh, there's no minimum — order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
+        answer: "Minimum order amounts vary by delivery platform. DoorDash and Uber Eats typically require minimums. For direct pickup from Jinbeh, there's no minimum — order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
     },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",

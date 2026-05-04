@@ -36,7 +36,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -123,7 +122,6 @@ export default function GroupDiningVenues() {
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>Planning dinner for a big group?</strong> The challenge is finding a place that works for everyone—kids, adults, picky eaters, and adventurous foodies. Here's why hibachi is the perfect solution. And if you're treating the group, a <Link href="/gift-cards" className="text-accent-red hover:underline font-medium">Jinbeh gift card</Link> makes coordination easy.</p>
 
-
             
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/baby-shower-venues" className="text-accent-red hover:underline">baby shower venues</Link>
@@ -132,7 +130,7 @@ export default function GroupDiningVenues() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Why Hibachi Works for Groups</h2>
 
                             <DidYouKnow
-                                fact="Group dining accounts for 35% of all restaurant revenue in the United States, with parties of 8+ spending an average of $45 per person — 40% more than individual diners. Restaurants with interactive or communal dining formats like hibachi see 60% higher guest satisfaction scores for group events compared to traditional sit-down restaurants."
+                                fact="Group dining accounts for 35% of all restaurant revenue in the United States, with parties of 8+ spending an average of per person — 40% more than individual diners. Restaurants with interactive or communal dining formats like hibachi see 60% higher guest satisfaction scores for group events compared to traditional sit-down restaurants."
                                 source="National Restaurant Association & Technomic"
                             />
                             <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -162,11 +160,11 @@ export default function GroupDiningVenues() {
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Venue Type</th><th className="p-3 text-left">Per Person</th><th className="p-3 text-left">Entertainment</th><th className="p-3 text-left">Private Space</th></tr></thead>
                                 <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Hibachi (Jinbeh)</td><td className="p-3">$25–45</td><td className="p-3">Chef show included</td><td className="p-3">Semi-private</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Casual Dining</td><td className="p-3">$15–30</td><td className="p-3">None</td><td className="p-3">Varies</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Fine Dining</td><td className="p-3">$50–100+</td><td className="p-3">None</td><td className="p-3">Private rooms</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">BBQ / Buffet</td><td className="p-3">$20–35</td><td className="p-3">Self-serve</td><td className="p-3">Varies</td></tr>
-                                    <tr><td className="p-3 font-semibold">Food Hall</td><td className="p-3">$12–25</td><td className="p-3">None</td><td className="p-3">Open seating</td></tr>
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Hibachi (Jinbeh)</td><td className="p-3">Chef show included</td><td className="p-3">Semi-private</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Casual Dining</td><td className="p-3">None</td><td className="p-3">Varies</td></tr>
+ <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Fine Dining</td><td className="p-3">+</td><td className="p-3">None</td><td className="p-3">Private rooms</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">BBQ / Buffet</td><td className="p-3">Self-serve</td><td className="p-3">Varies</td></tr>
+                                    <tr><td className="p-3 font-semibold">Food Hall</td><td className="p-3">None</td><td className="p-3">Open seating</td></tr>
                                 </tbody>
                             </table>
 

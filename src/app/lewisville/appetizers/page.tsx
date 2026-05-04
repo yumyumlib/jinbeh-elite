@@ -40,61 +40,31 @@ const menuSchema = {
         "@type": "MenuItem",
         "name": "Edamame",
         "description": "Steamed soybeans with sea salt",
-        "offers": {
-          "@type": "Offer",
-          "price": "5.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Gyoza",
         "description": "Pan-fried pork dumplings with dipping sauce",
-        "offers": {
-          "@type": "Offer",
-          "price": "8.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Shrimp Tempura",
         "description": "Light and crispy fried shrimp",
-        "offers": {
-          "@type": "Offer",
-          "price": "12.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Soft Shell Crab",
         "description": "Crispy fried soft shell crab",
-        "offers": {
-          "@type": "Offer",
-          "price": "14.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Tuna Tartare",
         "description": "Diced ahi tuna with avocado and ponzu",
-        "offers": {
-          "@type": "Offer",
-          "price": "15.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Seared Ahi Tuna",
         "description": "Pepper-crusted ahi with wasabi aioli",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       }
     ]
   }
@@ -117,7 +87,7 @@ const faqSchema = {
       "name": "What are the most popular appetizers at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Guest favorites include Edamame ($5.95), Gyoza ($8.95), Shrimp Tempura ($12.95), Soft Shell Crab ($14.95). These are consistently rated as the best appetizers in Lewisville."
+        "text": "Guest favorites include Edamame, Gyoza, Shrimp Tempura, Soft Shell Crab. These are consistently rated as the best appetizers in Lewisville."
       }
     },
     {
@@ -237,7 +207,6 @@ export default function AppetizersLewisvillePage() {
                     Steamed soybeans with sea salt
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$5.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -263,7 +232,6 @@ export default function AppetizersLewisvillePage() {
                     Pan-fried pork dumplings with dipping sauce
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$8.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -289,7 +257,6 @@ export default function AppetizersLewisvillePage() {
                     Light and crispy fried shrimp
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$12.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -315,7 +282,6 @@ export default function AppetizersLewisvillePage() {
                     Crispy fried soft shell crab
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$14.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -341,7 +307,6 @@ export default function AppetizersLewisvillePage() {
                     Diced ahi tuna with avocado and ponzu
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$15.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -367,7 +332,6 @@ export default function AppetizersLewisvillePage() {
                     Pepper-crusted ahi with wasabi aioli
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -435,7 +399,7 @@ export default function AppetizersLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Guest favorites include Edamame (\$5.95), Gyoza (\$8.95), Shrimp Tempura (\$12.95), Soft Shell Crab (\$14.95). These are consistently rated as the best appetizers in Lewisville.
+                    Guest favorites include Edamame, Gyoza, Shrimp Tempura, Soft Shell Crab. These are consistently rated as the best appetizers in Lewisville.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">

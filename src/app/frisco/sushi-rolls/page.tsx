@@ -40,171 +40,86 @@ const menuSchema = {
         "@type": "MenuItem",
         "name": "Dragon Roll",
         "description": "Eel and cucumber topped with avocado and eel sauce",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Rainbow Roll",
         "description": "California roll topped with assorted sashimi",
-        "offers": {
-          "@type": "Offer",
-          "price": "17.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Spider Roll",
         "description": "Soft shell crab with cucumber and spicy mayo",
-        "offers": {
-          "@type": "Offer",
-          "price": "15.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Caterpillar Roll",
         "description": "Eel roll topped with avocado slices",
-        "offers": {
-          "@type": "Offer",
-          "price": "15.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Volcano Roll",
         "description": "Spicy crab and avocado with baked seafood topping",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Tiger Roll",
         "description": "Shrimp tempura with spicy tuna and jalapeño",
-        "offers": {
-          "@type": "Offer",
-          "price": "17.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Butterfly Kiss Roll",
         "description": "House specialty with cream cheese and crab",
-        "offers": {
-          "@type": "Offer",
-          "price": "18.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Ahi Tuna Tower",
         "description": "Layered ahi tuna, avocado, and crispy wonton",
-        "offers": {
-          "@type": "Offer",
-          "price": "19.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Philadelphia Roll",
         "description": "Smoked salmon with cream cheese and cucumber",
-        "offers": {
-          "@type": "Offer",
-          "price": "12.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Spicy Tuna Roll",
         "description": "Fresh tuna with spicy mayo and scallions",
-        "offers": {
-          "@type": "Offer",
-          "price": "11.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "California Roll",
         "description": "Crab, avocado, and cucumber classic",
-        "offers": {
-          "@type": "Offer",
-          "price": "9.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Shrimp Tempura Roll",
         "description": "Crispy shrimp tempura with avocado",
-        "offers": {
-          "@type": "Offer",
-          "price": "13.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Vegas Roll",
         "description": "Deep-fried roll with spicy crab and cream cheese",
-        "offers": {
-          "@type": "Offer",
-          "price": "14.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Yellowtail Jalapeño Roll",
         "description": "Fresh yellowtail with jalapeño and ponzu",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Sunshine Roll",
         "description": "House specialty roll with fresh ingredients",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Hot Mama Roll",
         "description": "Spicy specialty roll bursting with flavor",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Back 9 \"Dallas\" Roll",
         "description": "Signature local favorite roll",
-        "offers": {
-          "@type": "Offer",
-          "price": "17.95",
-          "priceCurrency": "USD"
-        }
       }
     ]
   }
@@ -227,7 +142,7 @@ const faqSchema = {
       "name": "What are the most popular sushi rolls at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Guest favorites include Dragon Roll ($16.95), Rainbow Roll ($17.95), Spider Roll ($15.95), Caterpillar Roll ($15.95). These are consistently rated as the best sushi rolls in Frisco."
+        "text": "Guest favorites include Dragon Roll, Rainbow Roll, Spider Roll, Caterpillar Roll. These are consistently rated as the best sushi rolls in Frisco."
       }
     },
     {
@@ -347,7 +262,6 @@ export default function SushiRollsFriscoPage() {
                     Eel and cucumber topped with avocado and eel sauce
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -373,7 +287,6 @@ export default function SushiRollsFriscoPage() {
                     House specialty roll with fresh ingredients
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -399,7 +312,6 @@ export default function SushiRollsFriscoPage() {
                     Spicy specialty roll bursting with flavor
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -425,7 +337,6 @@ export default function SushiRollsFriscoPage() {
                     Signature local favorite roll
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$17.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -451,7 +362,6 @@ export default function SushiRollsFriscoPage() {
                     California roll topped with assorted sashimi
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$17.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -477,7 +387,6 @@ export default function SushiRollsFriscoPage() {
                     Soft shell crab with cucumber and spicy mayo
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$15.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -503,7 +412,6 @@ export default function SushiRollsFriscoPage() {
                     Eel roll topped with avocado slices
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$15.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -530,7 +438,6 @@ export default function SushiRollsFriscoPage() {
                     Spicy crab and avocado with baked seafood topping
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -556,7 +463,6 @@ export default function SushiRollsFriscoPage() {
                     Shrimp tempura with spicy tuna and jalapeño
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$17.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -582,7 +488,6 @@ export default function SushiRollsFriscoPage() {
                     House specialty with cream cheese and crab
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$18.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -609,7 +514,6 @@ export default function SushiRollsFriscoPage() {
                     Layered ahi tuna, avocado, and crispy wonton
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$19.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -635,7 +539,6 @@ export default function SushiRollsFriscoPage() {
                     Smoked salmon with cream cheese and cucumber
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$12.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -661,7 +564,6 @@ export default function SushiRollsFriscoPage() {
                     Fresh tuna with spicy mayo and scallions
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$11.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -687,7 +589,6 @@ export default function SushiRollsFriscoPage() {
                     Crab, avocado, and cucumber classic
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$9.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -713,7 +614,6 @@ export default function SushiRollsFriscoPage() {
                     Crispy shrimp tempura with avocado
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$13.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -739,7 +639,6 @@ export default function SushiRollsFriscoPage() {
                     Deep-fried roll with spicy crab and cream cheese
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$14.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -765,7 +664,6 @@ export default function SushiRollsFriscoPage() {
                     Fresh yellowtail with jalapeño and ponzu
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -833,7 +731,7 @@ export default function SushiRollsFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Guest favorites include Dragon Roll (\$16.95), Rainbow Roll (\$17.95), Spider Roll (\$15.95), Caterpillar Roll (\$15.95). These are consistently rated as the best sushi rolls in Frisco.
+                    Guest favorites include Dragon Roll, Rainbow Roll, Spider Roll, Caterpillar Roll. These are consistently rated as the best sushi rolls in Frisco.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">

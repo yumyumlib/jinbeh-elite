@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Shrimp Tempura",
   "description": "Light and crispy fried shrimp",
-  "offers": {
-    "@type": "Offer",
-    "price": "12.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Is Shrimp Tempura good for sharing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $12.95, Shrimp Tempura is perfect for sharing and is one of our most popular appetizers. Pair with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm)."
+        "text": "Absolutely! At, Shrimp Tempura is perfect for sharing and is one of our most popular appetizers. Pair with draft beer or sake during Happy Hour (Mon-Fri 5-6:30pm)."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TempuraFriscoPage() {
   const item = { ...getMenuItem("tempura", "appetizers")!, jinbehStory: "At Jinbeh, we distinguish between tempura and agedashi: tempura uses a thicker batter for a satisfying crunch, while agedashi uses a lighter coating. Our vegetable tempura comes with warm tempura sauce — a light, delicate broth that lets each vegetable shine." };

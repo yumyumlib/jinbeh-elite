@@ -339,7 +339,6 @@ export default function PrivateDiningPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[65vh] min-h-[550px] flex items-center justify-center overflow-hidden">
           <video

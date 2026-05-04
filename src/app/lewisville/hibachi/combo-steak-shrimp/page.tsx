@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Steak & Shrimp Combo",
   "description": "Filet mignon paired with jumbo shrimp",
-  "offers": {
-    "@type": "Offer",
-    "price": "38.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Steak & Shrimp Combo hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steak & Shrimp Combo at Jinbeh Lewisville is filet mignon paired with jumbo shrimp. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $38.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Steak & Shrimp Combo at Jinbeh Lewisville is filet mignon paired with jumbo shrimp. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSteakShrimpLewisvillePage() {
   const item = getMenuItem("combo-steak-shrimp", "hibachi")!;

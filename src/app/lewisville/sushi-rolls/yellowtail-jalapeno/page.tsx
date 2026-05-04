@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Yellowtail Jalapeño Roll",
   "description": "Fresh yellowtail with jalapeño and ponzu",
-  "offers": {
-    "@type": "Offer",
-    "price": "16.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function YellowtailJalapenoLewisvillePage() {
   const item = getMenuItem("yellowtail-jalapeno", "sushi-rolls")!;

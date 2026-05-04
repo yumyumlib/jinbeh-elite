@@ -64,8 +64,6 @@ const faqs = [
   },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -433,11 +431,11 @@ efinitions
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
-            <span>
-              <strong>Moderate pricing</strong> — Generally $25-$45 per person for a full dinner experience
-            </span>
-          </li>
-          <li className="flex gap-3">
+ <span>
+ <strong>Moderate pricing</strong> — Generally per person for a full dinner experience
+ </span>
+ </li>
+ <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
               <strong>Clean, bright flavors</strong> — Flat-top griddle cooking produces well-seared exteriors and tender interiors

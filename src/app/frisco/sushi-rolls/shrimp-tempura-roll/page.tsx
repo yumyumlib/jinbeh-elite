@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Shrimp Tempura Roll",
   "description": "Crispy shrimp tempura with avocado",
-  "offers": {
-    "@type": "Offer",
-    "price": "13.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ShrimpTempuraRollFriscoPage() {
   const item = { ...getMenuItem("shrimp-tempura-roll", "sushi-rolls")!, jinbehStory: "Combines our crispy tempura technique with the precision of hand-rolled maki. At Jinbeh, tempura uses a thick batter for maximum crunch — distinct from the lighter \'agedashi\' style." };

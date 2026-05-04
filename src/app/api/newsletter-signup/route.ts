@@ -36,8 +36,8 @@ export async function POST(request: Request) {
             const pool = getPool();
             await pool.query(
                 `INSERT INTO newsletter_signups (email, source)
-                 VALUES ($1, $2)
-                 ON CONFLICT (email, source) DO NOTHING`,
+ VALUES (, )
+ ON CONFLICT (email, source) DO NOTHING`,
                 [emailStr, sourceStr]
             );
             console.log(`[Newsletter] Saved to PostgreSQL: ${emailStr} (source: ${sourceStr})`);

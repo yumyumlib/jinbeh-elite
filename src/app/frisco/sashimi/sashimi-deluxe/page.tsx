@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Sashimi Deluxe Platter",
   "description": "Chef's selection of premium fish",
-  "offers": {
-    "@type": "Offer",
-    "price": "32.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "What makes this platter 'deluxe'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our Sashimi Deluxe at $32.95 features chef's premium selections of the highest-quality fish cuts, generous portions, and seasonal variety. Perfect for experiencing premium sashimi."
+        "text": "Our Sashimi Deluxe at features chef's premium selections of the highest-quality fish cuts, generous portions, and seasonal variety. Perfect for experiencing premium sashimi."
       }
     }
   ]
 };
-
 
 export default function SashimiDeluxeFriscoPage() {
   const item = getMenuItem("sashimi-deluxe", "sashimi")!;

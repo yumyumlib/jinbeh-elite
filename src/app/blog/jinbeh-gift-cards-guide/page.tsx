@@ -57,8 +57,6 @@ const faqs = [
   },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -271,7 +269,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h2>Checking Your Gift Card Balance</h2>
 
       <DidYouKnow
-        fact="The restaurant gift card market in the US is worth over $40 billion annually, with the average American buying 3-4 restaurant gift cards per year. Studies show gift card recipients spend 20-40% more than the card's face value when dining, making them one of the best restaurant promotions for both customers and businesses."
+        fact="The restaurant gift card market in the US is worth over billion annually, with the average American buying 3-4 restaurant gift cards per year. Studies show gift card recipients spend 20-40% more than the card's face value when dining, making them one of the best restaurant promotions for both customers and businesses."
         source="National Retail Federation Gift Card Survey"
       />
 
@@ -353,29 +351,29 @@ export default function JinbehGiftCardsGuidePage() {
       </p>
 
       <p>
-        <strong>Sign Up for Newsletters:</strong> Subscribe to Jinbeh's email list to receive exclusive deals and promotions directly in your inbox. Newsletter subscribers often get early access to special offers.
+        <strong>Join the VIP Birthday Club:</strong> Sign up for Jinbeh's <Link href="/vip" className="text-accent-red hover:underline">VIP Birthday Club</Link> to get a birthday-month perk and early access to seasonal promotions. Members hear about new offers before the general public.
       </p>
 
       <h3>Lunch Specials</h3>
 
       <p>
         One of the best-kept secrets for maximizing gift card value is hibachi lunch specials. Jinbeh's <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch menu</Link> offers exceptional value. Check out our detailed guide to <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline font-semibold">sushi lunch specials</Link> for all the best timing and options.
+ </p>
+
+ <p>
+ <strong>Lunch Hours:</strong> Typically 11am-2pm on weekdays (verify for weekend hours)
+ </p>
+
+ <p>
+ <strong>Pricing:</strong> Lunch hibachi specials start at just, offering the same quality hibachi experience as dinner at significantly lower prices.
+ </p>
+
+ <p>
+ <strong>What's Included:</strong> Full hibachi dinner with soup, salad, fried rice, vegetables, protein, and the entertainment experience—just with slightly smaller portions than dinner.
       </p>
 
       <p>
-        <strong>Lunch Hours:</strong> Typically 11am-2pm on weekdays (verify for weekend hours)
-      </p>
-
-      <p>
-        <strong>Pricing:</strong> Lunch hibachi specials start at just $12.95-$18.95, offering the same quality hibachi experience as dinner at significantly lower prices.
-      </p>
-
-      <p>
-        <strong>What's Included:</strong> Full hibachi dinner with soup, salad, fried rice, vegetables, protein, and the entertainment experience—just with slightly smaller portions than dinner.
-      </p>
-
-      <p>
-        <strong>Strategy:</strong> Use your gift card during lunch hours to maximize its purchasing power. A $50 gift card covers multiple lunch experiences but might only cover one dinner.
+ <strong>Strategy:</strong> Use your gift card during lunch hours to maximize its purchasing power. A gift card covers multiple lunch experiences but might only cover one dinner.
       </p>
 
       <h3>Happy Hour Deals</h3>
@@ -488,39 +486,39 @@ export default function JinbehGiftCardsGuidePage() {
 
       <p>
         Reservations ensure you're seated promptly and can request specific seating or accommodate special occasions. When booking, mention if you're celebrating something special—our chefs love making birthdays and anniversaries memorable.
-      </p>
+ </p>
 
-      <h3>Engage with Our Staff</h3>
+ <h3>Engage with Our Staff</h3>
 
-      <p>
-        Our team is dedicated to making your experience exceptional. When you visit:
-      </p>
+ <p>
+ Our team is dedicated to making your experience exceptional. When you visit:
+ </p>
 
-      <ul>
-        <li>Tell your server about dietary preferences</li>
-        <li>Ask your hibachi chef questions—they love sharing about their craft</li>
-        <li>Let us know about celebrations</li>
-        <li>Share feedback about your experience</li>
-      </ul>
+ <ul>
+ <li>Tell your server about dietary preferences</li>
+ <li>Ask your hibachi chef questions—they love sharing about their craft</li>
+ <li>Let us know about celebrations</li>
+ <li>Share feedback about your experience</li>
+ </ul>
 
-      <h2>Smart Gift Card Strategies</h2>
+ <h2>Smart Gift Card Strategies</h2>
 
-      <h3>Strategy 1: Stack Promotions</h3>
+ <h3>Strategy 1: Stack Promotions</h3>
 
-      <p>
-        Check current promotions before your visit. Many deals can be combined with gift cards. Ask our staff about the best way to apply available offers to maximize savings.
-      </p>
+ <p>
+ Check current promotions before your visit. Many deals can be combined with gift cards. Ask our staff about the best way to apply available offers to maximize savings.
+ </p>
 
-      <h3>Strategy 2: Time Your Visit for Lunch</h3>
+ <h3>Strategy 2: Time Your Visit for Lunch</h3>
 
-      <p>
-        Hibachi lunch specials offer the best value. Your gift card stretches much further during lunch hours. A $50 card might buy multiple lunches but only one or two dinners.
-      </p>
+ <p>
+ Lunch is a great time to use your gift card. Stop in Monday through Friday for our <Link href="/specials#hibachi-for-two" className="text-accent-red hover:underline">Hibachi for Two</Link> special, choose two proteins from chicken, steak, shrimp, salmon, or veggie, and enjoy the same hibachi experience you&apos;d expect at dinner.
+ </p>
 
-      <h3>Strategy 3: Combine with Birthday Club</h3>
+ <h3>Strategy 3: Combine with Birthday Club</h3>
 
-      <p>
-        If you're a member, use your birthday month to visit. Combine your birthday benefit with your gift card for unbeatable value.
+ <p>
+ If you're a member, use your birthday month to visit. Combine your birthday benefit with your gift card for unbeatable value.
       </p>
 
       <h3>Strategy 4: Plan Group Dining</h3>
@@ -532,7 +530,7 @@ export default function JinbehGiftCardsGuidePage() {
       <h3>Strategy 5: Subscribe to Updates</h3>
 
       <p>
-        <strong>Newsletter:</strong> Subscribe to Jinbeh's email list for exclusive deals and early promotion announcements. Newsletter subscribers often get special offers unavailable to the general public.
+        <strong>VIP Birthday Club:</strong> Join the Jinbeh <Link href="/vip" className="text-accent-red hover:underline">VIP Birthday Club</Link> for exclusive deals, a birthday-month perk, and early access to seasonal offers. VIP members hear about new promotions before they're announced to the general public.
       </p>
 
       <p>
@@ -630,7 +628,7 @@ export default function JinbehGiftCardsGuidePage() {
       {/* Related Reading */}
 
       <ProTip variant="insider">
-        <strong>Gift card insider tip:</strong> The best strategy for maximizing your Jinbeh gift card is to visit during <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch</Link> when hibachi specials start at $12.95. A $50 gift card covers two full lunch experiences! Combine with our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks, and stack with Birthday Club benefits during your birthday month for maximum value.
+ <strong>Gift card insider tip:</strong> The best strategy for maximizing your Jinbeh gift card is to visit during <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch</Link> when hibachi specials start at. A gift card covers two full lunch experiences! Combine with our <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks, and stack with Birthday Club benefits during your birthday month for maximum value.
       </ProTip>
 
       <PillarCTA type="hub" />

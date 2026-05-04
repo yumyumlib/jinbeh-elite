@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "How much should I budget for a hibachi birthday party?",
     answer:
-      "For a group of 8-10 at dinner, expect $300-$500 including food, drinks, tax, and tip. Lunch parties cost 30-40% less. At Jinbeh, hibachi entrees range from $18-$45, with lunch specials starting at $12.95. Kids portions available at lower prices.",
+      "For a group of 8-10 at dinner, expect including food, drinks, tax, and tip. Lunch parties cost 30-40% less. At Jinbeh, hibachi entrees range from, with lunch specials starting at. Kids portions available at lower prices.",
   },
   {
     question: "Can we bring decorations or special items for the birthday person?",
@@ -65,8 +65,6 @@ const faqs = [
       "Yes! You're welcome to bring your own birthday cake or cupcakes. Just let us know when you make your reservation so we can have plates and utensils ready. Many guests bring cake and enjoy it after the hibachi show — it's the perfect ending to a memorable celebration.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -237,7 +235,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
-      keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect $35–$50 per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
+      keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
     >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Birthday Party Ideas" }]} />
@@ -366,7 +364,7 @@ ide
       </div>
 
       <DidYouKnow
-        fact="Americans spend over $12 billion dining out for birthday celebrations each year, making it the #1 reason people eat at restaurants outside of regular meals. Hibachi/teppanyaki restaurants see a 40% increase in bookings during birthday season (May-August), and the interactive chef performance eliminates the need for separate entertainment — saving the average party host $200-$500 on entertainment costs."
+        fact="Americans spend over billion dining out for birthday celebrations each year, making it the #1 reason people eat at restaurants outside of regular meals. Hibachi/teppanyaki restaurants see a 40% increase in bookings during birthday season (May-August), and the interactive chef performance eliminates the need for separate entertainment — saving the average party host on entertainment costs."
         source="National Restaurant Association & Event Planning Institute"
       />
 
@@ -627,58 +625,50 @@ ide
 
       <p>
         Let's talk real numbers. Here's what to expect:
-      </p>
+ </p>
 
-      <div className="bg-soft-gold/20 rounded-xl p-6 my-8">
-        <h3 className="font-heading text-xl font-bold text-charcoal mb-4">
-          Sample Budget: Party of 10
-        </h3>
-        <div className="space-y-3 text-charcoal/80">
-          <div className="flex justify-between">
-            <span>8 adult hibachi entrees @ $28 avg</span>
-            <span>$224</span>
-          </div>
-          <div className="flex justify-between">
-            <span>2 kids hibachi @ $14</span>
-            <span>$28</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Drinks (beer, sake, sodas)</span>
-            <span>$60</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Sushi appetizer to share</span>
-            <span>$35</span>
-          </div>
-          <div className="flex justify-between border-t border-charcoal/20 pt-3">
-            <span className="font-semibold">Subtotal</span>
-            <span>$347</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Tax (8.25%)</span>
-            <span>$29</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Tip (20%)</span>
-            <span>$69</span>
-          </div>
-          <div className="flex justify-between border-t border-charcoal/20 pt-3 font-bold">
-            <span>Total</span>
-            <span>$445</span>
-          </div>
-          <p className="text-sm text-charcoal/80 mt-4">
-            * Prices based on Jinbeh dinner menu. Lunch runs 30-40% less.
-          </p>
-        </div>
-      </div>
+ <div className="bg-soft-gold/20 rounded-xl p-6 my-8">
+ <h3 className="font-heading text-xl font-bold text-charcoal mb-4">
+ Sample Budget: Party of 10
+ </h3>
+ <div className="space-y-3 text-charcoal/80">
+ <div className="flex justify-between">
+ <span>8 adult hibachi entrees @ avg</span>
+ </div>
+ <div className="flex justify-between">
+ <span>2 kids hibachi @ </span>
+ </div>
+ <div className="flex justify-between">
+ <span>Drinks (beer, sake, sodas)</span>
+ </div>
+ <div className="flex justify-between">
+ <span>Sushi appetizer to share</span>
+ </div>
+ <div className="flex justify-between border-t border-charcoal/20 pt-3">
+ <span className="font-semibold">Subtotal</span>
+ </div>
+ <div className="flex justify-between">
+ <span>Tax (8.25%)</span>
+ </div>
+ <div className="flex justify-between">
+ <span>Tip (20%)</span>
+ </div>
+ <div className="flex justify-between border-t border-charcoal/20 pt-3 font-bold">
+ <span>Total</span>
+ </div>
+ <p className="text-sm text-charcoal/80 mt-4">
+ * Prices based on Jinbeh dinner menu. Lunch runs 30-40% less.
+ </p>
+ </div>
+ </div>
 
-      <h2>Common Hibachi Birthday Mistakes (And How to Avoid Them)</h2>
+ <h2>Common Hibachi Birthday Mistakes (And How to Avoid Them)</h2>
 
-      <h3>Mistake #1: Booking Too Few Seats</h3>
+ <h3>Mistake #1: Booking Too Few Seats</h3>
 
-      <p>
-        "Oh, a few people might not make it." Then everyone shows up, and
-        you're scrambling. Book for your actual headcount—it's easier to
+ <p>
+ "Oh, a few people might not make it." Then everyone shows up, and
+ you're scrambling. Book for your actual headcount—it's easier to
         release seats than add them.
       </p>
 

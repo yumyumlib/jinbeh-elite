@@ -70,47 +70,36 @@ const takeoutCategories = [
     title: "Sushi Rolls",
     description: "Fresh, expertly crafted sushi rolls prepared daily.",
     items: [
-      "California Roll - $8",
-      "Spicy Tuna Roll - $10",
-      "Shrimp Tempura Roll - $12",
-      "Dragon Roll - $14",
-      "Philadelphia Roll - $13",
-      "Rainbow Roll - $15",
-      "Vegetable Roll - $7",
+      "California Roll - ",
+      "Spicy Tuna Roll - ",
+      "Shrimp Tempura Roll - ",
+      "Dragon Roll - ",
+      "Philadelphia Roll - ",
+      "Rainbow Roll - ",
+      "Vegetable Roll - ",
     ],
   },
   {
     title: "Sashimi & Nigiri",
     description: "Premium fresh fish prepared traditional style.",
     items: [
-      "Sashimi Sampler - $18",
-      "Tuna Nigiri - $12",
-      "Salmon Nigiri - $12",
-      "Assorted Nigiri - $16",
-      "Yellowtail Nigiri - $13",
-    ],
-  },
-  {
-    title: "Bento Boxes",
-    description: "Complete meals with variety and portion control.",
-    items: [
-      "Chicken Teriyaki Bento - $14",
-      "Shrimp Tempura Bento - $15",
-      "Sushi & Sashimi Bento - $18",
-      "Mixed Vegetable Bento - $12",
-      "Beef Teriyaki Bento - $16",
+      "Sashimi Sampler - ",
+      "Tuna Nigiri - ",
+      "Salmon Nigiri - ",
+      "Assorted Nigiri - ",
+      "Yellowtail Nigiri - ",
     ],
   },
   {
     title: "Appetizers",
     description: "Perfect starters for your meal.",
     items: [
-      "Edamame - $5",
-      "Gyoza (6 pcs) - $8",
-      "Tempura Vegetables - $8",
-      "Shrimp Tempura - $10",
-      "Spring Rolls (4 pcs) - $7",
-      "Miso Soup - $4",
+      "Edamame - ",
+      "Gyoza (6 pcs) - ",
+      "Tempura Vegetables - ",
+      "Shrimp Tempura - ",
+      "Spring Rolls (4 pcs) - ",
+      "Miso Soup - ",
     ],
   },
 ];
@@ -159,7 +148,7 @@ const tipsAndTricks = [
   },
   {
     title: "Order Popular Items",
-    description: "Sushi rolls, bento boxes, and gyoza are always fresh and quickly prepared.",
+    description: "Sushi rolls, sushi platters, and gyoza are always fresh and quickly prepared.",
   },
   {
     title: "Check Estimated Time",
@@ -194,7 +183,6 @@ const breadcrumbSchema = {
   ]
 };
 
-
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -220,7 +208,7 @@ const faqSchema = {
       "name": "What items are available for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most menu items are available for takeout including sushi rolls, bento boxes, hibachi plates, and appetizers. Some hibachi items are best enjoyed dine-in for the full experience."
+        "text": "Most menu items are available for takeout including sushi rolls, sushi platters, hibachi plates, and appetizers. Some hibachi items are best enjoyed dine-in for the full experience."
       }
     },
     {

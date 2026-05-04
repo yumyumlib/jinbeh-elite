@@ -64,7 +64,7 @@ const categories = {
     faq: [
       { q: "What is hibachi dining?", a: "Hibachi dining is a Japanese-style meal where a skilled teppanyaki chef cooks your food on a flat iron grill right at your table. At Jinbeh, our chefs entertain with fire tricks, the famous onion volcano, and expert knife skills while preparing steak, shrimp, chicken, and vegetables." },
       { q: "What is the difference between hibachi and teppanyaki?", a: "Hibachi traditionally refers to a charcoal-heated grill, while teppanyaki uses a flat iron griddle. In American dining, 'hibachi' typically describes the interactive tableside cooking experience — which is technically teppanyaki. At Jinbeh, we use both terms to describe our entertaining chef-driven dining." },
-      { q: "How much does hibachi cost at Jinbeh?", a: "Hibachi entrees at Jinbeh typically range from $18–$38 per person, depending on your protein choice. Combo plates with steak and shrimp are our most popular option. Kids meals are available at a lower price point." },
+      { q: "How much does hibachi cost at Jinbeh?", a: "Hibachi entrees at Jinbeh typically range from per person, depending on your protein choice. Combo plates with steak and shrimp are our most popular option. Kids meals are available at a lower price point." },
       { q: "Does Jinbeh offer hibachi catering?", a: "Yes! Jinbeh offers hibachi catering for events throughout the DFW area. Our team can bring the full teppanyaki experience to weddings, corporate events, birthday parties, and private gatherings. Contact us for a custom quote." },
     ],
   },
@@ -130,7 +130,7 @@ const categories = {
       { slug: "ramune-soda-guide", title: "Ramune Soda Guide", image: "/images/instagram/mochi-desserts.jpg", excerpt: "The iconic marble-sealed Japanese soda — flavors and history." },
     ],
     faq: [
-      { q: "What time is happy hour at Jinbeh?", a: "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy $4 Japanese draft beer, $5 sake, and $6 wine." },
+      { q: "What time is happy hour at Jinbeh?", a: "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy Japanese draft beer, sake, and wine." },
       { q: "Does Jinbeh serve sake?", a: "Yes! Jinbeh offers a curated sake menu including Junmai, Daiginjo, Nigori (unfiltered), and hot sake. We also offer sake flights so you can sample multiple varieties. Ask your server for a pairing recommendation with your sushi or hibachi." },
       { q: "What Japanese cocktails does Jinbeh offer?", a: "Our bar features signature Japanese-inspired cocktails including the Jinbeh Punch, Spicy Margarita with yuzu, Mango Tango, Mule Summer, and classic Japanese highballs made with Suntory whiskey." },
       { q: "Can I sit at the bar without a reservation?", a: "Yes! Bar seating at Jinbeh is first-come, first-served — no reservation needed. It's a great spot for happy hour drinks and watching our sushi chefs at work." },

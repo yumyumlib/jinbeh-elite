@@ -82,8 +82,6 @@ const faqs = [
   },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -229,7 +227,7 @@ export default function PickleballRestaurantsLewisvillePage() {
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">📍 Why Jinbeh Lewisville Is the Go-To Post-Game Spot</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh Lewisville runs on gas hibachi grills (Frisco uses electric), which means faster heat and a slightly different sear on your steak. After a tough pickleball match, the signature Yum Yum sauce &mdash; an addictive house-made blend of mayo, sriracha, and sugar &mdash; is the ultimate recovery fuel. The Lewisville location also features Jinbeh&apos;s complete bar with rare Japanese whiskeys, premium cold sake, and those famous hand-painted tequila bottles.
+                  Jinbeh Lewisville runs on electric hibachi grills (Frisco uses gas), which means a clean, even heat and a steady sear on your steak. After a tough pickleball match, the signature Yum Yum sauce, an addictive house-made blend of mayo, sriracha, and sugar, is the ultimate recovery fuel. The Lewisville location also features Jinbeh&apos;s complete bar with rare Japanese whiskeys, premium cold sake, and those famous hand-painted tequila bottles.
                 </p>
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">⭐ Voted Best Hibachi in Lewisville by OpenTable Diners</h3>

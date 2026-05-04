@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Lychee Martini",
   "description": "Vodka with lychee and a floral finish",
-  "offers": {
-    "@type": "Offer",
-    "price": "13.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function LycheeMartiniFriscoPage() {
   const item = getMenuItem("lychee-martini", "cocktails")!;

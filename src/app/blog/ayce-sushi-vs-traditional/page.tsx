@@ -120,7 +120,7 @@ export default function AYCESushiVsTraditionalPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How AYCE Sushi Restaurants Work","acceptedAnswer":{"@type":"Answer","text":"All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from $25 to $40 per person. To make this model profitable, these restaurants rely on several key strategies."}},{"@type":"Question","name":"What This Means for Your Plate","acceptedAnswer":{"@type":"Answer","text":"None of this makes AYCE sushi bad. Many AYCE restaurants serve perfectly enjoyable food. But the economic pressures do create predictable patterns: you may see more tempura rolls and less nigiri, more imitation crab and less fresh yellowtail, and thinner slices when premium fish is offered."}},{"@type":"Question","name":"How Traditional Sushi Restaurants Operate","acceptedAnswer":{"@type":"Answer","text":"Traditional sushi restaurants operate on a per-plate pricing model. Each piece or roll is priced individually, and the restaurant invests more per serving in ingredients, preparation, and presentation."}},{"@type":"Question","name":"Food Safety: What the FDA Actually Requires","acceptedAnswer":{"@type":"Answer","text":"Both AYCE and traditional sushi restaurants must follow the same food safety regulations. Understanding these guidelines helps you evaluate any sushi restaurant, regardless of format."}},{"@type":"Question","name":"Where Format Matters for Safety","acceptedAnswer":{"@type":"Answer","text":"The food safety risks that do differ between formats relate to how sushi is stored and served:"}},{"@type":"Question","name":"How to Spot Quality Sushi Anywhere","acceptedAnswer":{"@type":"Answer","text":"Whether you are eating at an AYCE restaurant, a traditional sushi bar, or anywhere in between, these indicators help you assess freshness and quality:"}},{"@type":"Question","name":"When Each Format Makes Sense","acceptedAnswer":{"@type":"Answer","text":"At Jinbeh, we chose the traditional path. Every piece of sushi and sashimi is prepared to order by experienced chefs who have honed their craft over years. We source our fish for quality and freshness, not volume pricing."}},{"@type":"Question","name":"Choose AYCE When:","acceptedAnswer":{"@type":"Answer","text":"At Jinbeh, we chose the traditional path. Every piece of sushi and sashimi is prepared to order by experienced chefs who have honed their craft over years. We source our fish for quality and freshness, not volume pricing."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How AYCE Sushi Restaurants Work","acceptedAnswer":{"@type":"Answer","text":"All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from to per person. To make this model profitable, these restaurants rely on several key strategies."}},{"@type":"Question","name":"What This Means for Your Plate","acceptedAnswer":{"@type":"Answer","text":"None of this makes AYCE sushi bad. Many AYCE restaurants serve perfectly enjoyable food. But the economic pressures do create predictable patterns: you may see more tempura rolls and less nigiri, more imitation crab and less fresh yellowtail, and thinner slices when premium fish is offered."}},{"@type":"Question","name":"How Traditional Sushi Restaurants Operate","acceptedAnswer":{"@type":"Answer","text":"Traditional sushi restaurants operate on a per-plate pricing model. Each piece or roll is priced individually, and the restaurant invests more per serving in ingredients, preparation, and presentation."}},{"@type":"Question","name":"Food Safety: What the FDA Actually Requires","acceptedAnswer":{"@type":"Answer","text":"Both AYCE and traditional sushi restaurants must follow the same food safety regulations. Understanding these guidelines helps you evaluate any sushi restaurant, regardless of format."}},{"@type":"Question","name":"Where Format Matters for Safety","acceptedAnswer":{"@type":"Answer","text":"The food safety risks that do differ between formats relate to how sushi is stored and served:"}},{"@type":"Question","name":"How to Spot Quality Sushi Anywhere","acceptedAnswer":{"@type":"Answer","text":"Whether you are eating at an AYCE restaurant, a traditional sushi bar, or anywhere in between, these indicators help you assess freshness and quality:"}},{"@type":"Question","name":"When Each Format Makes Sense","acceptedAnswer":{"@type":"Answer","text":"At Jinbeh, we chose the traditional path. Every piece of sushi and sashimi is prepared to order by experienced chefs who have honed their craft over years. We source our fish for quality and freshness, not volume pricing."}},{"@type":"Question","name":"Choose AYCE When:","acceptedAnswer":{"@type":"Answer","text":"At Jinbeh, we chose the traditional path. Every piece of sushi and sashimi is prepared to order by experienced chefs who have honed their craft over years. We source our fish for quality and freshness, not volume pricing."}}]}` }}
       />
             {/* Article Body */}
             <p>
@@ -148,12 +148,12 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎌 Why Jinbeh Chose Tradition Over Volume</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh&apos;s sushi master &mdash; nearly 30 years with the restaurant &mdash; co-created every roll on the menu during late-night sessions with the Matsuda family. High-end Japanese restaurants don&apos;t do picture menus (Jinbeh tried once &mdash; the feedback was &ldquo;this is very Chinese restaurant&rdquo;), and they don&apos;t do all-you-can-eat. What they do is craft each piece with precision, using the freshest daily-sourced fish.
+                  Jinbeh&apos;s sushi master, nearly 30 years with the restaurant, co-created every roll on the menu during late-night sessions with the Matsuda family. High-end Japanese restaurants don&apos;t do picture menus (Jinbeh tried once, and the feedback was &ldquo;this is very Chinese restaurant&rdquo;), and they don&apos;t do all-you-can-eat. What they do is craft each piece with precision, using the freshest daily-sourced fish.
                 </p>
               <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine Recognized Our Craft-First Approach</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  When D Magazine named Jinbeh &ldquo;Best Place to Eat&rdquo; and &ldquo;Best Neighborhood Restaurant,&rdquo; it wasn&apos;t for volume &mdash; it was for quality. That same craft-first philosophy drives every piece of sushi our 30-year master creates today. OpenTable diners agree: Jinbeh is a current Diners&apos; Choice pick for Best Sushi in the Dallas suburbs.
+                  When D Magazine named Jinbeh &ldquo;Best Place to Eat&rdquo; and &ldquo;Best Neighborhood Restaurant,&rdquo;<sup id="fnref-1"><a href="#fn-1" className="text-accent-red">1</a></sup> it wasn&apos;t for volume. It was for quality. That same craft-first philosophy drives every piece of sushi our 30-year master creates today. OpenTable diners agree: Jinbeh is a current Diners&apos; Choice pick for Best Sushi in the Dallas suburbs.
                 </p>
               </div>
               </div>
@@ -175,7 +175,7 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
             </div>
 
             <p>
-                All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from $25 to $40 per person. To make this model profitable, these restaurants rely on several key strategies.
+ All-you-can-eat sushi restaurants offer unlimited sushi for a fixed price, typically ranging from to per person. To make this model profitable, these restaurants rely on several key strategies.
             </p>
 
             <h3>The Economics of Unlimited Sushi</h3>
@@ -187,8 +187,8 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
             <ul>
                 <li><strong>Higher rice-to-fish ratios:</strong> Rolls may contain more rice and less fish per piece compared to traditional restaurants. Rice is inexpensive; premium fish is not.</li>
                 <li><strong>Bulk purchasing:</strong> Buying fish in large volumes from wholesale distributors allows for lower per-unit costs, though this can mean less flexibility in selecting premium cuts.</li>
-                <li><strong>Fewer labor costs:</strong> AYCE models often require fewer servers and less specialized chef talent, focusing on volume over intricate knife work and presentation.</li>
-                <li><strong>Waste reduction tactics:</strong> Many AYCE restaurants charge penalties ($2-3 per piece) for uneaten food. Appetizers and salads may be served first to reduce how much sushi diners actually consume.</li>
+                <li><strong>Fewer labor costs:</strong> AYCE models often have fewer servers and less specialized chef talent, which can result in lower-quality service and less intricate knife work or presentation.</li>
+ <li><strong>Waste reduction tactics:</strong> Many AYCE restaurants charge penalties ( per piece) for uneaten food. Appetizers and salads may be served first to reduce how much sushi diners actually consume.</li>
             </ul>
 
             <DidYouKnow fact="The average AYCE diner actually eats less than they would order a la carte. The business model relies on this behavioral pattern to remain profitable." />
@@ -224,7 +224,7 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
                         title: "All-You-Can-Eat",
                         icon: "🍣",
                         features: [
-                            "Fixed price ($25-40/person)",
+                            "Fixed price (/person)",
                             "High volume, bulk-sourced fish",
                             "Rice-forward rolls",
                             "Great for groups on a budget",
@@ -264,7 +264,7 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
             </ul>
 
             <p>
-                Certain fish are exempt, including several tuna species (yellowfin, bluefin, bigeye) and some aquaculture-raised fish. Restaurants must maintain records documenting compliance with these freezing standards.
+                Certain fish are exempt, including several tuna species (yellowfin, bluefin, bigeye) and some aquaculture-raised fish.
             </p>
 
             <ProTip variant="health">The term &quot;sushi-grade&quot; is not regulated by the FDA. It is a marketing term, not a safety standard. What actually matters is whether the fish was properly handled and frozen according to FDA guidelines.</ProTip>
@@ -339,6 +339,13 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
                 description="Experience made-to-order sushi at Jinbeh. Our chefs prepare every piece fresh, using quality-sourced fish and time-honored technique."
                 linkText="Reserve Your Table"
             />
+
+            <hr className="my-8 border-charcoal/10" />
+            <ol className="text-sm text-charcoal/70 leading-relaxed pl-5 list-decimal space-y-2">
+                <li id="fn-1">
+                    <strong>Best Neighborhood Restaurants (2008):</strong> Featured in the February 2008 issue of <em>D Magazine</em> for the original Las Colinas location. <a href="#fnref-1" className="text-accent-red ml-1" aria-label="Back to text">↩</a>
+                </li>
+            </ol>
 
             <RelatedArticles currentSlug="ayce-sushi-vs-traditional" maxArticles={4} />
         </ArticleLayout>

@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Soft Shell Crab",
   "description": "Crispy fried soft shell crab",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Is Soft Shell Crab good for sharing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! At $14.95, Soft Shell Crab is perfect for sharing and is one of our most requested appetizers. Pair with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm)."
+        "text": "Absolutely! At, Soft Shell Crab is perfect for sharing and is one of our most requested appetizers. Pair with draft beer or sake during Happy Hour (Mon-Fri 5-6:30pm)."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SoftShellCrabFriscoPage() {
   const item = { ...getMenuItem("soft-shell-crab", "appetizers")!, jinbehStory: "A whole crab, about palm-sized, battered with our light tempura coating, deep fried until golden, and chopped into four or five pieces. Delicious and impressive — one of our most photogenic appetizers." };

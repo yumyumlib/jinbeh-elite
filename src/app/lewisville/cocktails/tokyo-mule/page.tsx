@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Tokyo Mule",
   "description": "Japanese whiskey with ginger and lime",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is the Tokyo Mule at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Tokyo Mule at Jinbeh Lewisville is japanese whiskey with ginger and lime. At $14.00, it's one of our signature bar offerings."
+        "text": "The Tokyo Mule at Jinbeh Lewisville is japanese whiskey with ginger and lime. At, it's one of our signature bar offerings."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TokyoMuleLewisvillePage() {
   const item = getMenuItem("tokyo-mule", "cocktails")!;

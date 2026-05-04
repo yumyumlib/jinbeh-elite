@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Lobster Tail",
   "description": "Sweet Maine lobster tail, butter-grilled",
-  "offers": {
-    "@type": "Offer",
-    "price": "44.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Lobster Tail hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lobster Tail at Jinbeh Lewisville is sweet maine lobster tail, butter-grilled. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $44.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Lobster Tail at Jinbeh Lewisville is sweet maine lobster tail, butter-grilled. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function LobsterTailLewisvillePage() {
   const item = { ...getMenuItem("lobster-tail", "hibachi")!, jinbehStory: "Our premium lobster tail is seared on hibachi grills reaching 550°F. The Yum Yum sauce served alongside — an in-house mayo-based creation — pairs beautifully with lobster. Every sauce at Jinbeh is made from scratch daily." };

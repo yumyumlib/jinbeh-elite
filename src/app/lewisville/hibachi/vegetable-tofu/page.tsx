@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Vegetable & Tofu",
   "description": "Fresh seasonal vegetables with crispy tofu",
-  "offers": {
-    "@type": "Offer",
-    "price": "19.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Vegetable & Tofu hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vegetable & Tofu at Jinbeh Lewisville is fresh seasonal vegetables with crispy tofu. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $19.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Vegetable & Tofu at Jinbeh Lewisville is fresh seasonal vegetables with crispy tofu. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function VegetableTofuLewisvillePage() {
   const item = { ...getMenuItem("vegetable-tofu", "hibachi")!, jinbehStory: "Jinbeh\'s hibachi is naturally friendly to plant-based diets. Gluten-free is easy — only the sauces contain gluten, not the base ingredients. Fried rice can be made gluten-free on request. Our chefs handle allergy situations carefully at 550°F grill temperatures." };

@@ -36,7 +36,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -85,7 +84,7 @@ export default function PopularJapaneseCulture() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Japanese Cuisine: Art on a Plate</h2>
 
                             <DidYouKnow
-                                fact="Japanese cultural exports—including anime, manga, food, and fashion—generate over $100 billion annually in global revenue. Japanese cuisine was designated a UNESCO Intangible Cultural Heritage in 2013, one of only a few national cuisines to receive this honor. Over 160,000 Japanese restaurants operate outside Japan, with sushi being the most popular Japanese food globally."
+                                fact="Japanese cultural exports—including anime, manga, food, and fashion—generate over billion annually in global revenue. Japanese cuisine was designated a UNESCO Intangible Cultural Heritage in 2013, one of only a few national cuisines to receive this honor. Over 160,000 Japanese restaurants operate outside Japan, with sushi being the most popular Japanese food globally."
                                 source="UNESCO & Japan External Trade Organization"
                             />
                             <p className="text-charcoal/80 mb-4">Japanese cuisine is celebrated for its exquisite presentation, delicate flavors, and profound respect for seasonal ingredients. Each dish is a masterpiece reflecting regional cultural influences and natural bounty. Explore the full range of <Link href="/blog/japanese-beverages-guide" className="text-accent-red hover:underline">Japanese beverages</Link> that complement this culinary artistry.</p>

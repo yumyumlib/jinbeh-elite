@@ -28,7 +28,7 @@ const schemas = [
             { "@type": "Question", name: "What is the best sushi in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Top-rated spots include Jinbeh (Frisco/Lewisville), Uchi, Nobu, and Tei-An. For value plus quality, Jinbeh offers fresh sushi with 38+ years of tradition and a unique hibachi-sushi combo experience." } },
             { "@type": "Question", name: "Is the sushi at Jinbeh fresh?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh receives fish deliveries multiple times per week. Sushi chefs slice each piece to order, and you can watch them work at the sushi bar." } },
             { "@type": "Question", name: "What sushi do you recommend for beginners?", acceptedAnswer: { "@type": "Answer", text: "Start with a California Roll or Shrimp Tempura Roll—they are mild and delicious. Salmon rolls are also crowd-pleasers. Jinbeh servers are happy to guide you through the menu." } },
-            { "@type": "Question", name: "How much does sushi cost in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Sushi prices in Dallas range from $8-15 for basic rolls to $50-150+ for omakase experiences. At Jinbeh, specialty rolls run $12-18 and lunch combos start around $12-15, making it one of the best value spots in DFW." } },
+            { "@type": "Question", name: "How much does sushi cost in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Sushi prices in Dallas range from for basic rolls to + for omakase experiences. At Jinbeh, specialty rolls run and lunch combos start around, making it one of the best value spots in DFW." } },
             { "@type": "Question", name: "Does Jinbeh offer vegetarian sushi?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers several vegetarian rolls including cucumber roll, avocado roll, and vegetable tempura roll. Let your server know about dietary needs." } },
             { "@type": "Question", name: "Can I order sushi for takeout or delivery?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh sushi travels well for takeout. Order online or call directly. For the freshest experience, dining at the sushi bar is recommended." } },
             { "@type": "Question", name: "Is sushi safe during pregnancy?", acceptedAnswer: { "@type": "Answer", text: "The FDA advises pregnant women to avoid raw fish. At Jinbeh, cooked sushi options like shrimp tempura rolls, California rolls (imitation crab), and vegetable rolls are safe alternatives. Ask your server for fully-cooked options." } },
@@ -36,7 +36,6 @@ const schemas = [
         ]
     }
 ];
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -116,50 +115,50 @@ export default function BestSushiDallas() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"We've been serving fresh sushi in DFW since 1988. While we're in Frisco and Lewisville, our regulars drive from all over Dallas for the quality and value."</p>
-                                <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
-                            </div>
+ <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
+ </div>
 
-                            <DidYouKnow
-                                fact="The DFW metroplex has over 400 Japanese restaurants, but Jinbeh is one of only a handful that has been family-owned and operating continuously since 1988 — nearly four decades of serving fresh sushi and hibachi. Reviewers consistently note that the quality rivals downtown Dallas spots at a fraction of the price."
-                                source="Google Maps & DFW Dining Data"
-                            />
+ <DidYouKnow
+ fact="The DFW metroplex has over 400 Japanese restaurants, but Jinbeh is one of only a handful that has been family-owned and operating continuously since 1988 — nearly four decades of serving fresh sushi and hibachi. Reviewers consistently note that the quality rivals downtown Dallas spots at a fraction of the price."
+ source="Google Maps & DFW Dining Data"
+ />
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏆 Top Dallas-Area Sushi Spots</h2>
-                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
-                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Price</th></tr></thead>
-                                <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Jinbeh Frisco</td><td className="p-3">Family, hibachi + sushi combo</td><td className="p-3 text-center">$$</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Uchi Dallas</td><td className="p-3">Upscale omakase, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date night</Link></td><td className="p-3 text-center">$$$$</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Nobu Dallas</td><td className="p-3">Celebrity chef, trendy crowd</td><td className="p-3 text-center">$$$$</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Tei-An</td><td className="p-3">Soba + sushi, Arts District</td><td className="p-3 text-center">$$$</td></tr>
-                                    <tr><td className="p-3 font-semibold">Yutaka</td><td className="p-3">Traditional, purist favorites</td><td className="p-3 text-center">$$$</td></tr>
-                                </tbody>
-                            </table>
+ <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏆 Top Dallas-Area Sushi Spots</h2>
+ <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+ <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Price</th></tr></thead>
+ <tbody className="text-charcoal/80">
+ <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Jinbeh Frisco</td><td className="p-3">Family, hibachi + sushi combo</td><td className="p-3 text-center">$$</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Uchi Dallas</td><td className="p-3">Upscale omakase, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date night</Link></td><td className="p-3 text-center">$$$$</td></tr>
+ <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Nobu Dallas</td><td className="p-3">Celebrity chef, trendy crowd</td><td className="p-3 text-center">$$$$</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Tei-An</td><td className="p-3">Soba + sushi, Arts District</td><td className="p-3 text-center">$$$</td></tr>
+ <tr><td className="p-3 font-semibold">Yutaka</td><td className="p-3">Traditional, purist favorites</td><td className="p-3 text-center">$$$</td></tr>
+ </tbody>
+ </table>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Why North Dallas Loves Jinbeh</h2>
-                            <div className="grid md:grid-cols-2 gap-4 my-6">
-                                {[{ e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Kids love the hibachi show; parents love the sushi" }, { e: "💰", t: "Great Value", d: "Fresh quality without downtown prices" }, { e: "🎂", t: "Celebrations", d: "Hibachi + sushi = perfect for parties" }, { e: "⏱️", t: "Convenient", d: "Easy parking, quick from 121/DNT" }].map(x => (
-                                    <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
-                                        <span className="text-3xl block mb-2">{x.e}</span>
-                                        <h3 className="font-bold">{x.t}</h3>
-                                        <p className="text-sm text-charcoal/70">{x.d}</p>
-                                    </div>
-                                ))}
-                            </div>
+ <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Why North Dallas Loves Jinbeh</h2>
+ <div className="grid md:grid-cols-2 gap-4 my-6">
+ {[{ e: "👨‍👩‍👧‍👦", t: "Family-Friendly", d: "Kids love the hibachi show; parents love the sushi" }, { e: "💰", t: "Great Value", d: "Fresh quality without downtown prices" }, { e: "🎂", t: "Celebrations", d: "Hibachi + sushi = perfect for parties" }, { e: "⏱️", t: "Convenient", d: "Easy parking, quick from 121/DNT" }].map(x => (
+ <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
+ <span className="text-3xl block mb-2">{x.e}</span>
+ <h3 className="font-bold">{x.t}</h3>
+ <p className="text-sm text-charcoal/70">{x.d}</p>
+ </div>
+ ))}
+ </div>
 
-                            <ProTip variant="insider">
-                                <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
-                            </ProTip>
+ <ProTip variant="insider">
+ <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+ </ProTip>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💲 How Much Does Sushi Cost in Dallas?</h2>
-                            <p className="text-charcoal/80 mb-4">Sushi prices across DFW vary widely depending on the restaurant type, location, and quality of fish. Here&apos;s a realistic breakdown of what you can expect to spend:</p>
-                            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
-                                <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Sushi Style</th><th className="p-3 text-left">Price Range</th><th className="p-3 text-left">Where to Find</th></tr></thead>
-                                <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Conveyor Belt / Fast Casual</td><td className="p-3">$12–20/person</td><td className="p-3">Kura Revolving Sushi</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Traditional Sit-Down</td><td className="p-3">$25–45/person</td><td className="p-3">Jinbeh, Yutaka, Zen Sushi</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Upscale / Date Night</td><td className="p-3">$50–80/person</td><td className="p-3">Tei-An, Uchi</td></tr>
-                                    <tr><td className="p-3 font-semibold">Omakase / Chef's Table</td><td className="p-3">$100–200+/person</td><td className="p-3">Nobu, Uchi, Tatsu</td></tr>
+ <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💲 How Much Does Sushi Cost in Dallas?</h2>
+ <p className="text-charcoal/80 mb-4">Sushi prices across DFW vary widely depending on the restaurant type, location, and quality of fish. Here&apos;s a realistic breakdown of what you can expect to spend:</p>
+ <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
+ <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Sushi Style</th><th className="p-3 text-left">Price Range</th><th className="p-3 text-left">Where to Find</th></tr></thead>
+ <tbody className="text-charcoal/80">
+ <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Conveyor Belt / Fast Casual</td><td className="p-3">/person</td><td className="p-3">Kura Revolving Sushi</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Traditional Sit-Down</td><td className="p-3">/person</td><td className="p-3">Jinbeh, Yutaka, Zen Sushi</td></tr>
+ <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Upscale / Date Night</td><td className="p-3">/person</td><td className="p-3">Tei-An, Uchi</td></tr>
+ <tr><td className="p-3 font-semibold">Omakase / Chef's Table</td><td className="p-3">+/person</td><td className="p-3">Nobu, Uchi, Tatsu</td></tr>
                                 </tbody>
                             </table>
 
@@ -275,7 +274,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Sushi prices in Dallas range from $8-15 for basic rolls at casual spots to $100-200+ per person for omakase experiences. At Jinbeh, specialty rolls run $12-18 and lunch combos start around $12-15, offering excellent value for fresh, chef-prepared sushi.</p>
+ <p>Sushi prices in Dallas range from for basic rolls at casual spots to + per person for omakase experiences. At Jinbeh, specialty rolls run and lunch combos start around, offering excellent value for fresh, chef-prepared sushi.</p>
                                     </div>
                                 </details>
 

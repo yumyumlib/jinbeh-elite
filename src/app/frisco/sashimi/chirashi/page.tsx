@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Chirashi Bowl",
   "description": "Assorted sashimi over sushi rice",
-  "offers": {
-    "@type": "Offer",
-    "price": "28.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Can I customize my Chirashi Bowl?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our Chirashi Bowl at $28.95 can be customized with your choice of sashimi. Speak with our staff about preferences. Ask about our Omakase options for premium selections."
+        "text": "Yes! Our Chirashi Bowl at can be customized with your choice of sashimi. Speak with our staff about preferences. Ask about our Omakase options for premium selections."
       }
     }
   ]
 };
-
 
 export default function ChirashiFriscoPage() {
   const item = getMenuItem("chirashi", "sashimi")!;

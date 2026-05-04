@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Rainbow Roll",
   "description": "California roll topped with assorted sashimi",
-  "offers": {
-    "@type": "Offer",
-    "price": "17.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function RainbowRollLewisvillePage() {
   const item = { ...getMenuItem("rainbow-roll", "sushi-rolls")!, jinbehStory: "This colorful creation highlights the range of fresh fish we source daily. Our sushi master selects the finest cuts of salmon, tuna, and yellowtail to drape over each roll — a testament to nearly three decades of supplier relationships." };

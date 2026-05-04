@@ -97,7 +97,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -249,7 +248,7 @@ export default function BacheloretteRestaurantsDallas() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="The average bachelorette party costs $1,800 per person, with dinner being the centerpiece event for 92% of celebrations. Interactive dining experiences like hibachi have become the fastest-growing bachelorette dinner format, growing 85% since 2021. Dallas ranks as the #4 most popular bachelorette destination in the US, behind Nashville, Scottsdale, and Miami."
+                                        fact="The average bachelorette party costs,800 per person, with dinner being the centerpiece event for 92% of celebrations. Interactive dining experiences like hibachi have become the fastest-growing bachelorette dinner format, growing 85% since 2021. Dallas ranks as the #4 most popular bachelorette destination in the US, behind Nashville, Scottsdale, and Miami."
                                         source="The Knot & Brides Magazine"
                                     />
 
@@ -453,7 +452,7 @@ export default function BacheloretteRestaurantsDallas() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p>
-                                                    Welcome to the table! It's a celebration! Jinbeh is perfect for bachelorette parties. Our hibachi shows provide interactive entertainment and dinner and a show all in one. We offer customizable group menus, dedicated service, and a festive atmosphere. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your special night.
+                                                    Welcome to the table! It's a celebration! Jinbeh is perfect for bachelorette parties. Our hibachi shows provide interactive entertainment and dinner and a show all in one. We offer fun hibachi, sushi, and drink menus, dedicated service, and a festive atmosphere. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your special night.
                                                 </p>
                                             </div>
                                         </details>

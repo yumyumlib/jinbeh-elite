@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   jinbeh-staging:
     build:
@@ -11,6 +9,21 @@ services:
       - "3001:3000"
     environment:
       - NODE_ENV=production
+      # SMTP — values come from .env (which is NOT committed to git)
+      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-465}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-noreply@jinbeh.com}
+      # PostgreSQL — for /api/* form fallbacks (also from .env)
+      - DATABASE_URL=${DATABASE_URL:-}
+      - PGHOST=${PGHOST:-host.docker.internal}
+      - PGPORT=${PGPORT:-5433}
+      - PGDATABASE=${PGDATABASE:-jinbeh_forms}
+      - PGUSER=${PGUSER:-jinbeh}
+      - PGPASSWORD=${PGPASSWORD:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     networks:
       - web
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title:
     "Happy Hour Specials | Jinbeh Japanese Restaurant - Frisco & Lewisville",
   description:
-    "Jinbeh Happy Hour Specials: $4 Japanese draft beer, $5 sake, $6 wine. Mon-Fri 5-6:30pm. Premium drinks at our Frisco and Lewisville locations.",
+    "Jinbeh Happy Hour Specials: $4 Japanese draft beer, $5 small hot sake, $6 wine. Mon-Fri 5-6:30pm at our Frisco and Lewisville locations.",
   keywords: [
     "happy hour",
     "happy hour specials",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Happy Hour Specials | Jinbeh Japanese Restaurant",
     description:
-      "Jinbeh Happy Hour drink specials: $4 draft beer, $5 sake, $6 wine. Unwind after work at our Frisco and Lewisville bars.",
+      "Jinbeh Happy Hour drink specials: $4 draft beer, $5 small hot sake, $6 wine. Unwind after work at our Frisco and Lewisville bars.",
     url: "https://jinbeh.com/happy-hour/specials",
     images: [
       {
@@ -53,8 +53,8 @@ const happyHourSpecials = [
     category: "Drinks",
   },
   {
-    title: "Sake",
-    description: "Hot or cold, from our curated selection",
+    title: "Small Hot Sake",
+    description: "House sake served warm in a tokkuri",
     discount: "$5",
     icon: "🍶",
     category: "Drinks",
@@ -73,7 +73,7 @@ const happyHourSchedule = [
     location: "Frisco & Lewisville",
     days: "Monday through Friday",
     time: "5:00 PM - 6:30 PM",
-    details: "$4 Japanese draft beer, $5 sake, $6 wine",
+    details: "$4 Japanese draft beer • $5 small hot sake • $6 wine",
   },
 ];
 
@@ -113,28 +113,29 @@ const whyChooseHappyHour = [
 const drinkCategories = [
   {
     name: "Japanese Draft Beer",
-    description: "Crisp imports on draft",
+    description: "Crisp imports on draft — $4 during Happy Hour",
     items: [
-      "Sapporo Draft - $4",
-      "Asahi Draft - $4",
-      "Kirin Draft - $4",
+      "Sapporo Draft — $4",
+      "Asahi Draft — $4",
+      "Kirin Draft — $4",
     ],
   },
   {
     name: "Sake",
     description: "Traditional Japanese rice wine",
     items: [
-      "House Sake (hot or cold) - $5",
-      "Premium Sake - $6-$8",
-      "Sake Flights - $12 (3 selections)",
+      "Small Hot Sake — $5 (Happy Hour)",
+      "House Sake (cold)",
+      "Premium Sake by the carafe",
+      "Sake Flights — 3 curated selections",
     ],
   },
   {
     name: "Wine",
-    description: "Curated wine selection",
+    description: "Curated wine selection — $6 by the glass during Happy Hour",
     items: [
-      "House Wine by Glass - $6",
-      "Premium Wine - $8+",
+      "House Wine by Glass — $6",
+      "Premium Wine selections",
     ],
   },
   {
@@ -240,18 +241,18 @@ export default function HappyHourSpecialsPage() {
                 <div
                   key={idx}
                   className={`rounded-2xl p-8 ${
-                    special.category === "Drinks"
-                      ? "bg-deep-indigo/10"
-                      : "bg-accent-red/10"
-                  } hover:shadow-lg transition-shadow`}
+ special.category === "Drinks"
+ ? "bg-deep-indigo/10"
+ : "bg-accent-red/10"
+ } hover:shadow-lg transition-shadow`}
                 >
                   <div className="text-5xl mb-4">{special.icon}</div>
                   <span
                     className={`inline-block text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full mb-3 ${
-                      special.category === "Drinks"
-                        ? "bg-deep-indigo text-white"
-                        : "bg-accent-red text-white"
-                    }`}
+ special.category === "Drinks"
+ ? "bg-deep-indigo text-white"
+ : "bg-accent-red text-white"
+ }`}
                   >
                     {special.category}
                   </span>

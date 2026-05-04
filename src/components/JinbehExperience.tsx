@@ -29,7 +29,7 @@ const reasons: ExperienceReason[] = [
   {
     label: 'House-Made Everything',
     title: 'House-Made Everything',
-    hook: 'Real crab. Fresh fish. Sauces made from scratch, daily.',
+    hook: 'Fresh fish. Sauces made from scratch, daily.',
     description: 'Our Yum Yum sauce, every dipping sauce, and the garlic butter are all made in-house daily. The sushi is fresh and made daily with quality, delicious ingredients. After 38 years, we know: you taste the difference when every detail is done right.',
     image: '/images/catalog/homemade-sauces.jpg',
     imageAlt: 'Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch'

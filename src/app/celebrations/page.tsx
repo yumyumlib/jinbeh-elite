@@ -100,7 +100,7 @@ const personalCelebrations = [
   },
   {
     title: "Date Night",
-    description: "From sushi bar romance to hibachi excitement — the perfect date night awaits.",
+    description: "From sushi bar romance to hibachi excitement, the perfect date night awaits.",
     image: "/images/food/SamaraiRollCloseup.jpg",
     href: "/celebrations/date-night",
     keywords: "date night restaurants frisco, romantic dinner",
@@ -118,7 +118,7 @@ const personalCelebrations = [
 const holidayCelebrations = [
   {
     title: "Valentine's Day",
-    description: "Romance meets flavor — celebrate love with hibachi fire or intimate sushi dining.",
+    description: "Romance meets flavor. Celebrate love with hibachi fire or intimate sushi dining.",
     image: "/images/food/SamaraiRollCloseup.jpg",
     href: "/celebrations/valentines-day",
     month: "February",
@@ -170,13 +170,13 @@ const holidayCelebrations = [
 const culturalCelebrations = [
   {
     title: "Asian Restaurant Month",
-    description: "Celebrate AAPI Heritage Month in May — support 38 years of family tradition.",
+    description: "Celebrate AAPI Heritage Month in May. Support 38 years of family tradition.",
     href: "/celebrations/asian-restaurant-month",
     month: "May",
   },
   {
     title: "Diwali",
-    description: "Festival of Lights meets hibachi flames — perfect for family gatherings.",
+    description: "Festival of Lights meets hibachi flames. Perfect for family gatherings.",
     href: "/celebrations/diwali",
     month: "October/November",
   },
@@ -188,9 +188,21 @@ const culturalCelebrations = [
   },
   {
     title: "National Fried Rice Day",
-    description: "September 20th — celebrate with the best hibachi fried rice in DFW!",
+    description: "September 20th. Celebrate with the best hibachi fried rice in DFW.",
     href: "/celebrations/national-fried-rice-day",
     month: "September 20",
+  },
+  {
+    title: "FIFA World Cup 2026",
+    description: "Hibachi, sushi, sake, and the perfect place in DFW to celebrate the World Cup. June 11 to July 19, 2026.",
+    href: "/celebrations/world-cup",
+    month: "June – July 2026",
+  },
+  {
+    title: "DFW Moms Love Jinbeh",
+    description: "See why moms across Frisco and Lewisville have made Jinbeh their go-to family spot since 1988.",
+    href: "/celebrations/dfw-moms",
+    month: "Year-round",
   },
 ];
 
@@ -262,7 +274,6 @@ export default function CelebrationsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <video
@@ -332,12 +343,6 @@ export default function CelebrationsPage() {
               platform: "Google",
               category: "Family Celebrations",
             },
-            {
-              quote: "Perfect for our anniversary dinner — the sushi was fresh, the atmosphere was warm, and the staff made us feel special.",
-              author: "Date Night Couple",
-              platform: "Yelp",
-              category: "Anniversary",
-            },
           ]}
         />
 
@@ -349,7 +354,7 @@ export default function CelebrationsPage() {
                 Holiday Celebrations
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Skip the cooking and celebrate holidays at Jinbeh — your destination for valentines day dinner Frisco, mothers day restaurant Lewisville, thanksgiving dinner Frisco, christmas dinner Lewisville, and lunar new year restaurant DFW gatherings. Our{" "}
+                Skip the cooking and celebrate holidays at Jinbeh, your destination for valentines day dinner Frisco, mothers day restaurant Lewisville, thanksgiving dinner Frisco, christmas dinner Lewisville, and lunar new year restaurant DFW gatherings. Our{" "}
                 <Link href="/frisco/hibachi" className="text-accent-red hover:underline">hibachi chefs</Link> and{" "}
                 <Link href="/menu" className="text-accent-red hover:underline">fresh sushi</Link> make every
                 holiday special.
@@ -389,8 +394,11 @@ export default function CelebrationsPage() {
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
                 Life&apos;s special moments deserve special dining. Whether it&apos;s a birthday dinner Frisco families love, an{" "}
                 <Link href="/celebrations/anniversary" className="text-accent-red hover:underline">anniversary restaurant Frisco TX</Link> date, or a{" "}
-                <Link href="/celebrations/date-night" className="text-accent-red hover:underline">romantic date night</Link> —
+                <Link href="/celebrations/date-night" className="text-accent-red hover:underline">romantic date night</Link>,
                 we&apos;ve got you covered.
+              </p>
+              <p className="text-base text-charcoal/70 max-w-3xl mx-auto mt-6 leading-relaxed">
+                <strong>Why Jinbeh is the best for celebrations in DFW:</strong> nearly four decades of family hospitality, a tableside hibachi show kids and adults still cheer for, fresh sushi crafted to order, and a team that turns birthdays, graduations, anniversaries, and holidays into memories. Many guests started celebrating with us as kids and now bring their own families. Come see why Jinbeh has been DFW&apos;s celebration spot since 1988.
               </p>
             </div>
 

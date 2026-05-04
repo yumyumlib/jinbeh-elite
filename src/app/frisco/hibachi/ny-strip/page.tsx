@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "NY Strip Steak",
   "description": "Hand-cut New York strip with savory soy glaze",
-  "offers": {
-    "@type": "Offer",
-    "price": "32.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "What's the difference between NY Strip and filet mignon hibachi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NY Strip has more marbling and flavor than filet mignon but is less tender. It's more affordable at $32.95 vs $34.95. NY Strip contains more flavorful fat and is preferred by those who love rich beef taste. Both are premium cuts cooked tableside."
+        "text": "NY Strip has more marbling and flavor than filet mignon but is less tender. It's more affordable at vs. NY Strip contains more flavorful fat and is preferred by those who love rich beef taste. Both are premium cuts cooked tableside."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function NyStripFriscoPage() {
   const item = { ...getMenuItem("ny-strip", "hibachi")!, jinbehStory: "When a customer orders steak at the hibachi, our chefs receive the temperature preference directly — using a numbered doneness system from 1 through 8. The grills reach 550°F, ensuring a perfect sear every time." };

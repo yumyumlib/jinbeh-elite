@@ -29,12 +29,11 @@ const schemas = [
             { "@type": "Question", name: "What are top Japanese whiskey brands?", acceptedAnswer: { "@type": "Answer", text: "Top brands include Suntory (Yamazaki, Hakushu), Nikka (Yoichi, Miyagikyo), Chichibu, and Mars Shinshu. Each offers distinctive flavor profiles and expressions." } },
             { "@type": "Question", name: "How does Japanese whiskey compare to Scottish whisky?", acceptedAnswer: { "@type": "Answer", text: "Both follow similar production, but Japanese whiskey emphasizes subtlety, precision, and balance. Scotch often features bold flavors, while Japanese whiskey tends toward elegance and harmony." } },
             { "@type": "Question", name: "Where can I try Japanese whiskey in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh Japanese Restaurant in Frisco and Lewisville offers an impressive selection of Japanese whiskeys. Try the Japanese whisky highball — Japan's favorite way to enjoy whiskey — paired with hibachi or sushi." } },
-            { "@type": "Question", name: "Are Japanese whiskeys expensive?", acceptedAnswer: { "@type": "Answer", text: "Premium Japanese whiskeys command high prices due to limited production. However, excellent entry-level options like Suntory Toki ($30-40) and Nikka Coffey Grain ($50-65) offer great quality at accessible prices." } },
+            { "@type": "Question", name: "Are Japanese whiskeys expensive?", acceptedAnswer: { "@type": "Answer", text: "Premium Japanese whiskeys command high prices due to limited production. However, excellent entry-level options like Suntory Toki and Nikka Coffey Grain offer great quality at accessible prices." } },
             { "@type": "Question", name: "What is the best way to drink Japanese whiskey?", acceptedAnswer: { "@type": "Answer", text: "The Japanese highball (whisky with sparkling soda water over ice) is the most popular way. Neat or on the rocks with a single large ice cube also works well. Mizuwari (whisky with still water) is a popular dinner pairing style." } }
         ]
     }
 ];
-
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -78,7 +77,7 @@ export default function JapaneseWhiskeyGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 The Origins of Japanese Whiskey</h2>
 
                             <DidYouKnow
-                                fact="In 2015, Suntory's Yamazaki Single Malt Sherry Cask was named the World's Best Whisky by Jim Murray's Whisky Bible, shocking the industry and catapulting Japanese whiskey to global fame. Today, rare bottles of Yamazaki 50 Year Old sell for over $300,000 at auction. Japan has over 30 active whiskey distilleries, and demand so far exceeds supply that many age-stated expressions have been discontinued."
+                                fact="In 2015, Suntory's Yamazaki Single Malt Sherry Cask was named the World's Best Whisky by Jim Murray's Whisky Bible, shocking the industry and catapulting Japanese whiskey to global fame. Today, rare bottles of Yamazaki 50 Year Old sell for over,000 at auction. Japan has over 30 active whiskey distilleries, and demand so far exceeds supply that many age-stated expressions have been discontinued."
                                 source="Jim Murray's Whisky Bible & Sotheby's Auction Records"
                             />
                             <p className="text-charcoal/80 mb-6">The story of Japanese whiskey begins in the early 20th century with two visionary men: Shinjiro Torii and Masataka Taketsuru. Torii, founder of Suntory, was inspired by Scotch whiskey tradition and sought to create a spirit reflecting the delicate balance and harmony of Japanese culture.</p>
@@ -125,12 +124,12 @@ export default function JapaneseWhiskeyGuide() {
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Brand</th><th className="p-3 text-left">Flagship Bottle</th><th className="p-3 text-left">Tasting Notes</th><th className="p-3 text-left">Price Range</th></tr></thead>
                                 <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Suntory</td><td className="p-3">Yamazaki 12</td><td className="p-3">Honey, peach, oak</td><td className="p-3">$150–300</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Nikka</td><td className="p-3">Yoichi Single Malt</td><td className="p-3">Smoky, peaty, maritime</td><td className="p-3">$80–150</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Hakushu</td><td className="p-3">Hakushu 12</td><td className="p-3">Herbal, minty, fresh</td><td className="p-3">$120–200</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Chichibu</td><td className="p-3">Ichiro&apos;s Malt</td><td className="p-3">Fruity, spicy, complex</td><td className="p-3">$100–500+</td></tr>
-                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Mars Shinshu</td><td className="p-3">Mars Iwai</td><td className="p-3">Vanilla, caramel, soft</td><td className="p-3">$35–60</td></tr>
-                                    <tr><td className="p-3 font-semibold">Suntory (Entry)</td><td className="p-3">Toki</td><td className="p-3">Light, citrus, clean</td><td className="p-3">$30–40</td></tr>
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">Suntory</td><td className="p-3">Yamazaki 12</td><td className="p-3">Honey, peach, oak</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Nikka</td><td className="p-3">Yoichi Single Malt</td><td className="p-3">Smoky, peaty, maritime</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Hakushu</td><td className="p-3">Hakushu 12</td><td className="p-3">Herbal, minty, fresh</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Chichibu</td><td className="p-3">Ichiro&apos;s Malt</td><td className="p-3">Fruity, spicy, complex</td><td className="p-3">+</td></tr>
+                                    <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Mars Shinshu</td><td className="p-3">Mars Iwai</td><td className="p-3">Vanilla, caramel, soft</td></tr>
+                                    <tr><td className="p-3 font-semibold">Suntory (Entry)</td><td className="p-3">Toki</td><td className="p-3">Light, citrus, clean</td></tr>
                                 </tbody>
                             </table>
 

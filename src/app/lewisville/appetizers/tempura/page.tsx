@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Shrimp Tempura",
   "description": "Light and crispy fried shrimp",
-  "offers": {
-    "@type": "Offer",
-    "price": "12.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Shrimp Tempura at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Shrimp Tempura at Jinbeh Lewisville is light and crispy fried shrimp. At $12.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Shrimp Tempura at Jinbeh Lewisville is light and crispy fried shrimp. At, it's perfect for sharing while you wait for your hibachi or sushi."
       }
     },
     {
@@ -73,7 +68,7 @@ const faqSchema = {
       "name": "Can I order Shrimp Tempura for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy $4 draft beer, $5 sake, and $6 wine alongside favorites like Shrimp Tempura. Call (972) 221-3888 for details."
+        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy draft beer, sake, and wine alongside favorites like Shrimp Tempura. Call (972) 221-3888 for details."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TempuraLewisvillePage() {
   const item = { ...getMenuItem("tempura", "appetizers")!, jinbehStory: "At Jinbeh, we distinguish between tempura and agedashi: tempura uses a thicker batter for a satisfying crunch, while agedashi uses a lighter coating. Our vegetable tempura comes with warm tempura sauce — a light, delicate broth that lets each vegetable shine." };

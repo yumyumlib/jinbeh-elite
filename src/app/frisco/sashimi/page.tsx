@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Jinbeh Frisco's sashimi menu — fresh salmon, tuna, yellowtail, octopus, and chef's omakase selections. Premium cuts daily near Stonebriar Centre.",
+  description: "Jinbeh Frisco's sashimi menu features fresh salmon, tuna, yellowtail, octopus, and chef's selections. Premium cuts daily near Stonebriar Centre.",
   keywords: ["sashimi frisco", "best sashimi frisco", "sashimi menu frisco", "jinbeh sashimi", "japanese sashimi frisco", "sashimi", "raw fish", "sashimi platter", "fresh fish"],
   openGraph: {
     title: "Sashimi Menu | Jinbeh Frisco",
@@ -40,71 +40,31 @@ const menuSchema = {
         "@type": "MenuItem",
         "name": "Salmon Sashimi",
         "description": "Fresh Atlantic salmon, sliced to perfection",
-        "offers": {
-          "@type": "Offer",
-          "price": "14.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Tuna Sashimi",
         "description": "Premium ahi tuna, melt-in-your-mouth tender",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Yellowtail Sashimi",
         "description": "Buttery hamachi with delicate flavor",
-        "offers": {
-          "@type": "Offer",
-          "price": "15.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Octopus Sashimi",
         "description": "Tender tako with subtle sweetness",
-        "offers": {
-          "@type": "Offer",
-          "price": "14.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Sashimi Deluxe Platter",
         "description": "Chef's selection of premium fish",
-        "offers": {
-          "@type": "Offer",
-          "price": "32.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Chirashi Bowl",
         "description": "Assorted sashimi over sushi rice",
-        "offers": {
-          "@type": "Offer",
-          "price": "28.95",
-          "priceCurrency": "USD"
-        }
-      },
-      {
-        "@type": "MenuItem",
-        "name": "Omakase Selection",
-        "description": "Chef's choice tasting of the day's best",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        }
       }
     ]
   }
@@ -127,7 +87,7 @@ const faqSchema = {
       "name": "What are the most popular sashimi at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Guest favorites include Salmon Sashimi ($14.95), Tuna Sashimi ($16.95), Yellowtail Sashimi ($15.95), Octopus Sashimi ($14.95). These are consistently rated as the best sashimi in Frisco."
+        "text": "Guest favorites include Salmon Sashimi, Tuna Sashimi, Yellowtail Sashimi, Octopus Sashimi. These are consistently rated as the best sashimi in Frisco."
       }
     },
     {
@@ -247,7 +207,6 @@ export default function SashimiFriscoPage() {
                     Fresh Atlantic salmon, sliced to perfection
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$14.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -273,7 +232,6 @@ export default function SashimiFriscoPage() {
                     Premium ahi tuna, melt-in-your-mouth tender
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -299,7 +257,6 @@ export default function SashimiFriscoPage() {
                     Buttery hamachi with delicate flavor
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$15.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -325,7 +282,6 @@ export default function SashimiFriscoPage() {
                     Tender tako with subtle sweetness
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$14.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -351,7 +307,6 @@ export default function SashimiFriscoPage() {
                     Chef\'s selection of premium fish
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$32.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -377,33 +332,6 @@ export default function SashimiFriscoPage() {
                     Assorted sashimi over sushi rice
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$28.95</span>
-                    <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="/frisco/sashimi/omakase"
-                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src="/images/photoshoot/sashimi-platter.jpg"
-                    alt="Omakase Selection — chef's choice tasting of the day's finest"
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">
-                    Omakase Selection
-                  </h3>
-                  <p className="text-charcoal/70 text-sm mb-4 line-clamp-2">
-                    Chef\'s choice tasting of the day\'s best
-                  </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">Market</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -471,7 +399,7 @@ export default function SashimiFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Guest favorites include Salmon Sashimi (\$14.95), Tuna Sashimi (\$16.95), Yellowtail Sashimi (\$15.95), Octopus Sashimi (\$14.95). These are consistently rated as the best sashimi in Frisco.
+                    Guest favorites include Salmon Sashimi, Tuna Sashimi, Yellowtail Sashimi, Octopus Sashimi. These are consistently rated as the best sashimi in Frisco.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">

@@ -65,7 +65,7 @@ const faqSchema = {
       "name": "Can I customize the menu for a graduation party?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! We offer customizable menus for graduation parties. From hibachi dinners to fresh sushi platters, we can create options that match your group&apos;s preferences and budget. Contact us directly for custom menu planning.",
+        "text": "We have a wide hibachi and sushi menu that works beautifully for graduation parties. Pricing is on the standard menu, and your group can order what works best for everyone. Contact us to plan your reservation and we&apos;ll coordinate seating and timing for your party.",
       },
     },
     {
@@ -73,7 +73,7 @@ const faqSchema = {
       "name": "Do you offer graduation party catering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! We offer catering services for graduation celebrations. Our catering team can work with you to create the perfect menu and delivery options for your event. Call us for catering inquiries and pricing.",
+        "text": "Yes. We offer catering for graduation celebrations: hibachi entrees and sushi platters delivered and set up at your venue. Live hibachi shows are at the restaurant only. Please give us at least one week of notice for catering so we can plan menu, prep, and delivery.",
       },
     },
     {
@@ -89,7 +89,7 @@ const faqSchema = {
       "name": "What makes hibachi perfect for a graduation celebration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hibachi offers interactive entertainment, communal dining that brings groups together, and a memorable experience. The live cooking show keeps everyone engaged and entertained while enjoying delicious food—perfect for celebrating an important milestone!",
+        "text": "Hibachi offers interactive entertainment and communal dining that brings groups together. The live cooking show keeps everyone engaged and entertained while enjoying delicious food. It is a perfect way to celebrate an important milestone.",
       },
     },
     {
@@ -97,7 +97,7 @@ const faqSchema = {
       "name": "Is Jinbeh good for graduation dinners?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Jinbeh is an excellent choice for graduation dinners. We provide private dining areas for groups of 20+ guests, fully customizable menus to match your celebration, and the entertainment of our hibachi chefs who create a festive, memorable atmosphere for your graduate and family.",
+        "text": "Absolutely. Jinbeh is an excellent choice for graduation dinners. We can coordinate seating for groups of 20+ guests, our standard hibachi and sushi menu fits a wide range of preferences, and the entertainment of our hibachi chefs creates a festive, memorable atmosphere for your graduate and family.",
       },
     },
     {
@@ -113,7 +113,7 @@ const faqSchema = {
       "name": "What should I order for a graduation celebration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For graduation celebrations, our hibachi dinner show is the perfect choice—it combines premium entrees (filet mignon, chicken, shrimp, lobster, or combinations), soup, salad, rice, and tableside chef entertainment. You can also add group sushi platters or customize the menu based on your guests' preferences and dietary needs.",
+        "text": "For graduation celebrations, our hibachi dinner show is the perfect choice. It combines premium entrees (filet mignon, chicken, shrimp, lobster, or combinations), soup, salad, rice, and tableside chef entertainment. You can also add group sushi platters from the menu to give guests more variety.",
       },
     },
   ],
@@ -137,7 +137,7 @@ const graduationFeatures = [
       </svg>
     ),
     title: "Live Entertainment",
-    description: "Hibachi chefs perform tableside with flames, tricks, and theatrical cooking—guaranteed to impress!",
+    description: "Hibachi chefs perform tableside with flames, tricks, and theatrical cooking. Guaranteed to impress.",
   },
   {
     icon: (
@@ -154,8 +154,8 @@ const graduationFeatures = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Flexible Budgets",
-    description: "Packages starting at budget-friendly prices with premium options available for larger celebrations.",
+    title: "Wide Menu Selection",
+    description: "From hibachi entrees to fresh sushi platters, our standard menu has options to fit a wide range of guest preferences and budgets.",
   },
   {
     icon: (
@@ -172,30 +172,29 @@ const packages = [
   {
     name: "Small Gathering",
     size: "Up to 10 Guests",
-    price: "Starting at $29/person",
+    price: "",
     description: "Perfect for intimate celebrations with close family and friends.",
     features: [
       "Communal hibachi table seating",
       "Chef entertainment for the whole group",
-      "Choice of hibachi entrees (filet, chicken, shrimp, lobster, or combo)",
-      "Soup, salad, and rice included",
-      "Sake or beverage options available",
-      "Complimentary special touches for the graduate",
+      "Choice of hibachi entrees from the standard menu (filet, chicken, shrimp, lobster, or combo)",
+      "Soup, salad, and rice included with hibachi",
+      "Full sake and beverage menu available",
+      "Special touches for the graduate at the table",
     ],
     highlight: false,
   },
   {
     name: "Large Party",
     size: "10-30 Guests",
-    price: "Starting at $34/person",
+    price: "",
     description: "Ideal for graduating classes, extended family, and friend groups.",
     features: [
       "Multiple hibachi tables with dedicated chefs",
       "Full entertainment experience at each table",
-      "Premium entree selection",
-      "Soup, salad, and rice included",
+      "Premium entree selection from our standard menu",
+      "Soup, salad, and rice included with hibachi",
       "Group sushi platters available",
-      "Customizable menu options",
       "Special seating arrangement coordination",
       "Reserved table time for your group",
     ],
@@ -204,18 +203,16 @@ const packages = [
   {
     name: "Full Celebration",
     size: "30+ Guests",
-    price: "Custom Pricing",
-    description: "Large-scale graduation celebrations with complete customization.",
+    price: "",
+    description: "Large graduation celebrations across multiple hibachi tables.",
     features: [
       "Multiple dedicated hibachi chefs",
-      "Private or semi-private dining area when available",
-      "Fully customizable menu",
+      "Coordinated seating across hibachi tables",
+      "Full standard hibachi and sushi menu available",
       "Premium sake and cocktail selections",
-      "Catering options including delivery",
-      "Event coordinator to plan every detail",
-      "Professional photography arrangement coordination",
-      "Special graduate recognition ceremony",
-      "Flexible pricing based on your specifications",
+      "Catering options including delivery (one week+ notice)",
+      "Team coordination for arrival, seating, and timing",
+      "Special graduate recognition at the table",
     ],
     highlight: false,
   },
@@ -234,8 +231,8 @@ const planningTips = [
   },
   {
     number: "3",
-    title: "Customize the Menu",
-    description: "Let us know about dietary preferences, favorite cuisines, or specialty requests. Our chefs love creating customized menus for celebrations.",
+    title: "Plan the Menu",
+    description: "Let us know about dietary preferences, favorite hibachi proteins, or sushi platter selections. Our team will help you choose from our standard menu so every guest is taken care of.",
   },
   {
     number: "4",
@@ -373,9 +370,9 @@ export default function GraduationPage() {
                 <div
                   key={pkg.name}
                   className={`rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ${pkg.highlight
-                      ? "ring-2 ring-accent-red scale-105 md:scale-100 bg-gradient-to-br from-white to-warm-ivory"
-                      : "bg-white"
-                    }`}
+ ? "ring-2 ring-accent-red scale-105 md:scale-100 bg-gradient-to-br from-white to-warm-ivory"
+ : "bg-white"
+ }`}
                 >
                   {pkg.highlight && (
                     <div className="bg-accent-red text-white py-3 px-6 text-center font-semibold">
@@ -387,7 +384,9 @@ export default function GraduationPage() {
                       {pkg.name}
                     </h3>
                     <p className="text-sm text-charcoal/80 mb-4">{pkg.size}</p>
-                    <p className="text-3xl font-bold text-accent-red mb-2">{pkg.price}</p>
+                    {pkg.price && (
+                      <p className="text-3xl font-bold text-accent-red mb-2">{pkg.price}</p>
+                    )}
                     <p className="text-charcoal/70 text-sm mb-8">{pkg.description}</p>
 
                     <ul className="space-y-3 mb-8">
@@ -404,9 +403,9 @@ export default function GraduationPage() {
                     <Link
                       href={pkg.name === "Full Celebration" ? "#reserve" : "#reserve"}
                       className={`w-full py-3 rounded-lg font-semibold text-center transition-all inline-block ${pkg.highlight
-                          ? "bg-accent-red text-white hover:bg-accent-red/90"
-                          : "bg-warm-ivory text-charcoal hover:bg-accent-red/10"
-                        }`}
+ ? "bg-accent-red text-white hover:bg-accent-red/90"
+ : "bg-warm-ivory text-charcoal hover:bg-accent-red/10"
+ }`}
                     >
                       {pkg.name === "Full Celebration" ? "Contact for Pricing" : "Book This Package"}
                     </Link>
@@ -416,9 +415,9 @@ export default function GraduationPage() {
             </div>
 
             <div className="mt-12 p-8 bg-deep-indigo/5 border-2 border-deep-indigo/20 rounded-xl max-w-3xl mx-auto">
-              <h3 className="font-heading text-xl font-bold text-charcoal mb-3">💡 Custom Groups?</h3>
+              <h3 className="font-heading text-xl font-bold text-charcoal mb-3">💡 Larger or Unusual Group?</h3>
               <p className="text-charcoal/80 mb-4">
-                If your graduation party doesn&apos;t fit neatly into these packages, don&apos;t worry! We specialize in creating custom solutions for unique group sizes and requirements. Contact us directly to discuss your specific needs.
+                If your graduation party doesn&apos;t fit neatly into these formats, don&apos;t worry. Our team can coordinate seating across multiple hibachi tables, sushi-bar seating, and timing for groups of all shapes and sizes. Contact us directly to plan your reservation.
               </p>
               <p className="text-charcoal/70 text-sm">
                 Frisco: (214) 619-1200 • Lewisville: (214) 488-2224
@@ -456,7 +455,7 @@ export default function GraduationPage() {
               <ul className="space-y-3 text-warm-ivory/90">
                 <li className="flex gap-3">
                   <span className="text-accent-red text-lg">★</span>
-                  <span><strong>Peak Season:</strong> May and June are busy graduation months – book 3-4 weeks in advance for guaranteed seating.</span>
+                  <span><strong>Peak Season:</strong> May and June are busy graduation months. Book 3-4 weeks in advance for guaranteed seating.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent-red text-lg">★</span>
@@ -464,11 +463,11 @@ export default function GraduationPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent-red text-lg">★</span>
-                  <span><strong>Dietary Needs:</strong> Let us know about allergies or dietary preferences when booking – our chefs accommodate all requests!</span>
+                  <span><strong>Dietary Needs:</strong> Let us know about allergies or dietary preferences when booking. Our team will help you choose menu options that work for every guest.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent-red text-lg">★</span>
-                  <span><strong>Special Requests:</strong> Graduate entrance, photos, or custom menu items? Just ask – we love making celebrations extra special.</span>
+                  <span><strong>Special Requests:</strong> Graduate entrance, photos, or special touches at the table? Just ask. We love making celebrations extra special.</span>
                 </li>
               </ul>
             </div>
@@ -649,9 +648,9 @@ export default function GraduationPage() {
                       ✓
                     </div>
                     <div>
-                      <h3 className="font-semibold text-charcoal mb-1">Custom Menu Planning</h3>
+                      <h3 className="font-semibold text-charcoal mb-1">Menu Selection Help</h3>
                       <p className="text-charcoal/70 text-sm">
-                        Work with our culinary team to design the perfect menu for your graduation party.
+                        Work with our team to choose hibachi entrees and sushi platters from our standard menu that match your group&apos;s tastes.
                       </p>
                     </div>
                   </div>
@@ -887,8 +886,8 @@ export default function GraduationPage() {
                     a: "We recommend booking 2-4 weeks in advance, especially during peak graduation season (May-June). Larger groups (20+) should book even earlier.",
                   },
                   {
-                    q: "Can I customize the menu?",
-                    a: "Absolutely! We offer fully customizable menus for graduation parties. Let us know about dietary preferences, allergies, or special requests.",
+                    q: "Can I plan the menu in advance?",
+                    a: "Yes. Our standard hibachi and sushi menu has options to fit a wide range of preferences. Let us know about dietary needs or allergies when you book and we&apos;ll help your group choose the right combinations.",
                   },
                   {
                     q: "What about large groups?",

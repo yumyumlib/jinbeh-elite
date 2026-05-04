@@ -51,7 +51,43 @@ export default function PrivacyPolicyPage() {
           </h1>
 
           <div className="prose prose-lg max-w-none text-charcoal/80">
-            <p className="text-sm text-charcoal/80 mb-8">Last updated: January 2026</p>
+            <p className="text-sm text-charcoal/80 mb-8">Last updated: May 2026</p>
+
+            <section className="mb-8" id="ai-assisted-content">
+              <h2 className="text-2xl font-heading font-semibold text-charcoal mb-4">
+                AI-Assisted Content Notice
+              </h2>
+              <p>
+                We use artificial intelligence (AI) tools to help draft, edit, and
+                maintain content across this website &mdash; including blog posts, FAQs,
+                menu descriptions, pricing summaries, hours of operation, location guides,
+                and promotional copy. While we work to keep this content current and
+                accurate, AI-assisted content may be imprecise, outdated, or inconsistent
+                with our most recent menus, prices, specials, or policies. AI tools can
+                also <strong>fabricate plausible-sounding details</strong> (a known limitation
+                called &ldquo;hallucination&rdquo;) &mdash; if anything on this site surprises
+                you, please call to confirm before relying on it. See our
+                {" "}<Link href="/terms#ai-assisted-content" className="text-accent-red hover:underline">Terms of Service</Link>
+                {" "}for the full disclaimer.
+              </p>
+              <p className="mt-4">
+                <strong>Always confirm specific prices, hours, and availability by calling us
+                directly</strong> before making a decision based on information you read on
+                this website. Frisco: <a href="tel:+12146191200" className="text-accent-red hover:underline">(214) 619-1200</a>.
+                Lewisville: <a href="tel:+12144882224" className="text-accent-red hover:underline">(214) 488-2224</a>.
+                See our <Link href="/terms#ai-assisted-content" className="text-accent-red hover:underline">Terms of Service</Link>
+                {" "}for the full AI &amp; accuracy disclaimer.
+              </p>
+              <p className="mt-4">
+                Personal data you submit to us (reservations, VIP signups, catering
+                inquiries, contact-form messages) is handled by us and our service
+                providers (e.g., PostgreSQL on our VPS, email delivery providers, and
+                Google Workspace). We do not feed your personal data into public
+                generative-AI models. Our internal use of AI for content production does
+                not involve sending your contact details, reservations, or messages to
+                third-party AI services for training.
+              </p>
+            </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-heading font-semibold text-charcoal mb-4">

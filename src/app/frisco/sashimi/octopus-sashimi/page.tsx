@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Octopus Sashimi",
   "description": "Tender tako with subtle sweetness",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Can I include Octopus Sashimi in a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Octopus Sashimi is available individually at $14.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. It's a signature item in our Omakase selections."
+        "text": "Yes! Octopus Sashimi is available individually at or as part of our Sashimi Deluxe Platter and Chirashi Bowl. It's a signature item in our Omakase selections."
       }
     }
   ]
 };
-
 
 export default function OctopusSashimiFriscoPage() {
   const item = getMenuItem("octopus-sashimi", "sashimi")!;

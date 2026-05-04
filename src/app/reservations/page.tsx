@@ -105,7 +105,7 @@ const diningTypes = [
       "Entertaining and fun",
       "Great for celebrations",
     ],
-    price: "$18-$35+ per person",
+    price: "+ per person",
     icon: "🔥",
   },
   {
@@ -119,7 +119,7 @@ const diningTypes = [
       "Customizable options",
       "Takeout & delivery available",
     ],
-    price: "$12-$28 per order",
+    price: " per order",
     icon: "🍣",
   },
   {
@@ -133,7 +133,7 @@ const diningTypes = [
       "Private sections available",
       "Perfect for all occasions",
     ],
-    price: "$10-$30+ per entree",
+    price: "+ per entree",
     icon: "🍱",
   },
 ];

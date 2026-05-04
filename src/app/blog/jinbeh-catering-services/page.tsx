@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "How much does Jinbeh catering cost per person?",
     answer:
-      "Jinbeh catering pricing typically ranges from $15-$50 per person depending on menu selection and complexity. Basic menus start around $15-$25 per person, while premium options with live hibachi cooking can reach $40-$50+. We provide transparent pricing and detailed quotes based on your specific event needs. Call (214) 619-1200 or (214) 488-2224 for a quote.",
+      "Jinbeh catering pricing typically ranges from per person depending on menu selection and complexity. Basic menus start around per person, while premium options with live hibachi cooking can reach +. We provide transparent pricing and detailed quotes based on your specific event needs. Call (214) 619-1200 or (214) 488-2224 for a quote.",
   },
   {
     question: "What catering options does Jinbeh offer?",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "How much does catering for 50 people cost?",
     answer:
-      "For 50 people, expect catering costs to range from $750-$2,500 depending on menu selections. A basic sushi option might cost around $750-$1,200, while premium hibachi with live cooking can reach $2,000-$2,500. Contact us for a detailed quote.",
+      "For 50 people, expect catering costs to range from,500 depending on menu selections. A basic sushi option might cost around,200, while premium hibachi with live cooking can reach,000-,500. Contact us for a detailed quote.",
   },
   {
     question: "What types of events can Jinbeh cater?",
@@ -66,8 +66,6 @@ const faqs = [
       "Yes! Full-service catering packages include all necessary serving equipment, plates, utensils, napkins, and serving stations. For hibachi catering, we bring our own portable teppanyaki griddle and all cooking equipment. You don't need to supply anything — just provide the space and the guests!",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -173,36 +171,36 @@ export default function JinbehCateringServicesPage() {
 
       <p>
         The presentation of each dish is an art form designed to delight the senses. Our team understands the importance of aesthetics in Japanese dining and incorporates this into every catering event. Your meal won't just taste exceptional—it will look exquisite. This commitment to authenticity and excellence sets Jinbeh Catering apart as a premier choice for those seeking something truly extraordinary.
-      </p>
+ </p>
 
-      <h3>Fresh, Never-Frozen Ingredients</h3>
+ <h3>Fresh, Never-Frozen Ingredients</h3>
 
-      <p>
-        We never compromise on quality. Every ingredient that arrives at your event is fresh and prepared with care. Our sushi uses never-frozen fish, our hibachi features prime cuts of meat and fresh seafood, and our vegetables are selected for peak flavor and nutritional value.
-      </p>
+ <p>
+ We never compromise on quality. Every ingredient that arrives at your event is fresh and prepared with care. Our sushi uses never-frozen fish, our hibachi features prime cuts of meat and fresh seafood, and our vegetables are selected for peak flavor and nutritional value.
+ </p>
 
-      <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
-        <p className="italic text-charcoal/80 mb-2">
-          "The presentation was beautiful, the food was amazing, and the catering team was professional and courteous throughout the entire event. Jinbeh made our celebration truly special."
-        </p>
-        <p className="text-sm text-charcoal/80">— Verified Customer</p>
-      </div>
+ <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
+ <p className="italic text-charcoal/80 mb-2">
+ "The presentation was beautiful, the food was amazing, and the catering team was professional and courteous throughout the entire event. Jinbeh made our celebration truly special."
+ </p>
+ <p className="text-sm text-charcoal/80">— Verified Customer</p>
+ </div>
 
-      <DidYouKnow
-        fact="The US event catering industry is valued at over $75 billion, with corporate events and private celebrations driving 70% of all catering bookings. Interactive food stations — like hibachi/teppanyaki — have become the #1 most-requested catering format, with 89% of event planners saying interactive food experiences increase guest satisfaction compared to traditional buffets."
-        source="Catersource & International Caterers Association"
-      />
+ <DidYouKnow
+ fact="The US event catering industry is valued at over billion, with corporate events and private celebrations driving 70% of all catering bookings. Interactive food stations — like hibachi/teppanyaki — have become the #1 most-requested catering format, with 89% of event planners saying interactive food experiences increase guest satisfaction compared to traditional buffets."
+ source="Catersource & International Caterers Association"
+ />
 
-      <h2>Customizable Menu Options</h2>
+ <h2>Customizable Menu Options</h2>
 
-      <p>
-        Our catering services offer a variety of menu options to suit different tastes and dietary needs. Every event is unique, and our flexibility ensures you can choose from a range of options tailored specifically to your vision.
-      </p>
+ <p>
+ Our catering services offer a variety of menu options to suit different tastes and dietary needs. Every event is unique, and our flexibility ensures you can choose from a range of options tailored specifically to your vision.
+ </p>
 
-      <h3>Popular Catering Menus</h3>
+ <h3>Popular Catering Menus</h3>
 
-      <p>
-        <strong>Sushi Platters:</strong> A selection of fresh, expertly crafted sushi rolls and nigiri, perfect for offering guests a taste of Japan's most iconic dishes. Options range from classic favorites to innovative creations that surprise and delight.
+ <p>
+ <strong>Sushi Platters:</strong> A selection of fresh, expertly crafted sushi rolls and nigiri, perfect for offering guests a taste of Japan's most iconic dishes. Options range from classic favorites to innovative creations that surprise and delight.
       </p>
 
       <p>
@@ -230,11 +228,11 @@ export default function JinbehCateringServicesPage() {
       </p>
 
       <p>
-        <strong>Per-Person Pricing:</strong> Our catering typically ranges from $15-$50 per person, depending on menu complexity and services. Basic sushi and rice bowl packages start around $15-$25 per person, while premium options with live hibachi cooking command higher pricing. We believe exceptional cuisine should be accessible, and our pricing structure is designed to offer value without compromising quality.
+ <strong>Per-Person Pricing:</strong> Our catering typically ranges from per person, depending on menu complexity and services. Basic sushi and rice bowl packages start around per person, while premium options with live hibachi cooking command higher pricing. We believe exceptional cuisine should be accessible, and our pricing structure is designed to offer value without compromising quality.
       </p>
 
       <p>
-        <strong>Medium-Sized Gatherings:</strong> For an event of 50 people, expect costs to range from $750-$2,500. A basic menu might run $750-$1,200, while premium options with live hibachi cooking, full service setup, and specialized dishes can reach $2,000-$2,500. Our team provides detailed quotes based on your specific requirements.
+ <strong>Medium-Sized Gatherings:</strong> For an event of 50 people, expect costs to range from,500. A basic menu might run,200, while premium options with live hibachi cooking, full service setup, and specialized dishes can reach,000-,500. Our team provides detailed quotes based on your specific requirements.
       </p>
 
       <p>

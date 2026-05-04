@@ -61,7 +61,7 @@ const faqs = [
     },
     {
         question: "Are there happy hour deals near Stonebriar Mall?",
-        answer: "Yes! Several restaurants near Stonebriar offer happy hour specials. Jinbeh's happy hour features $4 draft beer, $5 sake, and $6 wine, perfect for unwinding after a shopping trip. Check our happy hour page for current deals and hours.",
+        answer: "Yes! Several restaurants near Stonebriar offer happy hour specials. Jinbeh's happy hour features draft beer, sake, and wine, perfect for unwinding after a shopping trip. Check our happy hour page for current deals and hours.",
     },
 ];
 
@@ -77,7 +77,6 @@ const faqSchema = {
         },
     })),
 };
-
 
 const breadcrumbSchema = {
     " @context": " https://schema.org",
@@ -190,7 +189,6 @@ export default function BestRestaurantsStonebriar() {
                                         insider guide to the best spots within minutes of the mall.
                                     </p>
 
-
             
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">things to do in Frisco</Link>
@@ -272,34 +270,34 @@ export default function BestRestaurantsStonebriar() {
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Perry's Steakhouse</td>
-                                                <td className="p-4">American Steakhouse</td>
-                                                <td className="p-4">Fine dining, business meals</td>
-                                                <td className="p-4">$$$$</td>
-                                                <td className="p-4">5 min</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">The Cheesecake Factory</td>
-                                                <td className="p-4">American (Chain)</td>
-                                                <td className="p-4">Huge menu variety, casual</td>
-                                                <td className="p-4">$$</td>
-                                                <td className="p-4">Inside mall</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Cane Rosso</td>
-                                                <td className="p-4">Italian / Pizza</td>
-                                                <td className="p-4">Wood-fired pizza, casual vibes</td>
-                                                <td className="p-4">$$</td>
-                                                <td className="p-4">7 min</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Platia Greek Kouzina</td>
-                                                <td className="p-4">Greek / Mediterranean</td>
-                                                <td className="p-4">Authentic Greek, group-friendly</td>
-                                                <td className="p-4">$$</td>
-                                                <td className="p-4">8 min</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Gloria's Latin Cuisine</td>
+ <td className="p-4">American Steakhouse</td>
+ <td className="p-4">Fine dining, business meals</td>
+ <td className="p-4">$$$$</td>
+ <td className="p-4">5 min</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">The Cheesecake Factory</td>
+ <td className="p-4">American (Chain)</td>
+ <td className="p-4">Huge menu variety, casual</td>
+ <td className="p-4">$$</td>
+ <td className="p-4">Inside mall</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Cane Rosso</td>
+ <td className="p-4">Italian / Pizza</td>
+ <td className="p-4">Wood-fired pizza, casual vibes</td>
+ <td className="p-4">$$</td>
+ <td className="p-4">7 min</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Platia Greek Kouzina</td>
+ <td className="p-4">Greek / Mediterranean</td>
+ <td className="p-4">Authentic Greek, group-friendly</td>
+ <td className="p-4">$$</td>
+ <td className="p-4">8 min</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Gloria's Latin Cuisine</td>
                                                 <td className="p-4">Salvadoran / Tex-Mex</td>
                                                 <td className="p-4">Lively atmosphere, cocktails</td>
                                                 <td className="p-4">$$</td>
@@ -307,32 +305,32 @@ export default function BestRestaurantsStonebriar() {
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Uncle Julio's</td>
-                                                <td className="p-4">Mexican</td>
-                                                <td className="p-4">Fajitas, margaritas, family dining</td>
-                                                <td className="p-4">$$</td>
-                                                <td className="p-4">5 min</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+ <td className="p-4">Mexican</td>
+ <td className="p-4">Fajitas, margaritas, family dining</td>
+ <td className="p-4">$$</td>
+ <td className="p-4">5 min</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
 
-                                {/* Jinbeh Feature Section */}
-                                <div className="bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl p-8 text-white my-12">
-                                    <div className="flex flex-col md:flex-row gap-8 items-center">
-                                        <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/images/blog/3-C060324-6364.jpg"
-                                                alt="Jinbeh hibachi chef performing tableside cooking near Stonebriar"
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        </div>
-                                        <div className="flex-1">
-                                            <h3 className="text-2xl font-heading font-bold mb-4">
-                                                🏯 Jinbeh: The Local Favorite Since 1988
-                                            </h3>
-                                            <p className="text-white/90 mb-4">
-                                                While the chains come and go, Jinbeh has been the Stonebriar area's go-to Japanese
+ {/* Jinbeh Feature Section */}
+ <div className="bg-gradient-to-br from-accent-red to-deep-indigo rounded-3xl p-8 text-white my-12">
+ <div className="flex flex-col md:flex-row gap-8 items-center">
+ <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
+ <Image
+ src="/images/blog/3-C060324-6364.jpg"
+ alt="Jinbeh hibachi chef performing tableside cooking near Stonebriar"
+ fill
+ className="object-cover"
+ />
+ </div>
+ <div className="flex-1">
+ <h3 className="text-2xl font-heading font-bold mb-4">
+ 🏯 Jinbeh: The Local Favorite Since 1988
+ </h3>
+ <p className="text-white/90 mb-4">
+ While the chains come and go, Jinbeh has been the Stonebriar area's go-to Japanese
                                                 restaurant for over 38 years. Guests consistently rave about our "fantastic service,"
                                                 call our crab rangoons "the best I've ever had," and love that we accommodate
                                                 allergies with care. Unlike corporate chains with long waits and impersonal service,
@@ -413,12 +411,12 @@ export default function BestRestaurantsStonebriar() {
                                     <ul className="space-y-2">
                                         <li><strong>Make reservations for weekends</strong> — The popular spots fill up fast, especially Friday and Saturday evenings.</li>
                                         <li><strong>Try <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline">lunch specials</Link></strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
-                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> drinks</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> for $4 Japanese draft beer, $5 sake, and $6 wine (Mon–Fri 5–6:30 PM) before dinner.</li>
-                                        <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
-                                    </ul>
+                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> drinks</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> for Japanese draft beer, sake, and wine (Mon–Fri 5–6:30 PM) before dinner.</li>
+ <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
+ </ul>
 
-                                    <ProTip variant="insider">
-                                        <strong>Post-shopping pro tip:</strong> Skip the mall food court and head to Jinbeh — it's just 3 minutes down Preston Road. Reviewers say the hibachi is "dinner and a show" that kids love after a long shopping day. The Filet and Lobster Tail combo is the crowd favorite, and the crab rangoons are "the best I've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+ <ProTip variant="insider">
+ <strong>Post-shopping pro tip:</strong> Skip the mall food court and head to Jinbeh — it's just 3 minutes down Preston Road. Reviewers say the hibachi is "dinner and a show" that kids love after a long shopping day. The Filet and Lobster Tail combo is the crowd favorite, and the crab rangoons are "the best I've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                                     </ProTip>
                                 </div>
 

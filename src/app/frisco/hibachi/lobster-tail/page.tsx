@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Lobster Tail",
   "description": "Sweet Maine lobster tail, butter-grilled",
-  "offers": {
-    "@type": "Offer",
-    "price": "44.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -81,7 +76,7 @@ const faqSchema = {
       "name": "Why is Lobster Tail the most expensive hibachi item?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At $44.95, Maine lobster tail is premium due to scarcity, quality, and cost. It offers unmatched sweetness and tender texture. One of the finest proteins available. Perfect for anniversaries, proposals, or milestone celebrations."
+        "text": "At, Maine lobster tail is premium due to scarcity, quality, and cost. It offers unmatched sweetness and tender texture. One of the finest proteins available. Perfect for anniversaries, proposals, or milestone celebrations."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function LobsterTailFriscoPage() {
   const item = { ...getMenuItem("lobster-tail", "hibachi")!, jinbehStory: "Our premium lobster tail is seared on hibachi grills reaching 550°F. The Yum Yum sauce served alongside — an in-house mayo-based creation — pairs beautifully with lobster. Every sauce at Jinbeh is made from scratch daily." };

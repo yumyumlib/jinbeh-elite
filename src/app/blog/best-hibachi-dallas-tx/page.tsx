@@ -46,7 +46,7 @@ const faqs = [
     },
     {
         question: "How much does hibachi cost in Dallas?",
-        answer: "Hibachi dinners in Dallas typically range from $20-45 per person, depending on the protein selection (chicken, shrimp, steak, or combination). At Jinbeh, our hibachi entrees include miso soup, house salad, grilled vegetables, fried rice, and the entertaining chef show—all for great value. Premium proteins like wagyu cost more but deliver exceptional quality.",
+        answer: "Hibachi dinners in Dallas typically range from per person, depending on the protein selection (chicken, shrimp, steak, or combination). At Jinbeh, our hibachi entrees include miso soup, house salad, grilled vegetables, fried rice, and the entertaining chef show—all for great value. Premium proteins like wagyu cost more but deliver exceptional quality.",
     },
     {
         question: "Do I need reservations for hibachi in Dallas?",
@@ -90,7 +90,6 @@ const faqSchema = {
         },
     })),
 };
-
 
 const breadcrumbSchema = {
     " @context": " https://schema.org",
@@ -170,130 +169,129 @@ export default function BestHibachiDallas() {
                                             "At Jinbeh, we've been putting on the hibachi show since 1988.
                                             But it's never just about the tricks—it's about bringing people together
                                             around good food and great entertainment. That's the Jinbeh way."
-                                        </p>
-              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine & OpenTable Recognized</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-                  There&apos;s a reason Jinbeh is ranked <strong>#1 Hibachi in Lewisville</strong> on OpenTable and has earned multiple <strong>D Magazine</strong> awards and recognition across <strong>12+ OpenTable Diners&apos; Choice lists</strong>. After 38 years, the combination of family-owned warmth, house-made sauces, and 550&deg;F hibachi grills still sets the standard for Japanese steakhouse dining in Dallas&ndash;Fort Worth.
-                </p>
-              </div>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
-                                    </div>
+ </p>
+ <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+ <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 D Magazine & OpenTable Recognized</h3>
+ <p className="text-charcoal/70 text-sm leading-relaxed">
+ There&apos;s a reason Jinbeh is ranked <strong>#1 Hibachi in Lewisville</strong> on OpenTable and has earned multiple <strong>D Magazine</strong> awards and recognition across <strong>12+ OpenTable Diners&apos; Choice lists</strong>. After 38 years, the combination of family-owned warmth, house-made sauces, and 550&deg;F hibachi grills still sets the standard for Japanese steakhouse dining in Dallas&ndash;Fort Worth.
+ </p>
+ </div>
+ <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+ </div>
 
-                                    <DidYouKnow
-                                        fact="Teppanyaki-style cooking was invented by Shigeji Fujioka in 1945 at his restaurant Misono in Kobe, Japan. He designed it specifically to entertain Western tourists who were fascinated by watching food being prepared. Today, the average teppanyaki chef trains for 2-3 years before performing solo — mastering not just cooking, but the theatrical skills that make hibachi dining unforgettable."
-                                        source="Japanese Culinary History Archives"
-                                    />
+ <DidYouKnow
+ fact="Teppanyaki-style cooking was invented by Shigeji Fujioka in 1945 at his restaurant Misono in Kobe, Japan. He designed it specifically to entertain Western tourists who were fascinated by watching food being prepared. Today, the average teppanyaki chef trains for 2-3 years before performing solo — mastering not just cooking, but the theatrical skills that make hibachi dining unforgettable."
+ source="Japanese Culinary History Archives"
+ />
 
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🔥 What Makes Great Hibachi
-                                    </h2>
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🔥 What Makes Great Hibachi
+ </h2>
 
-                                    <p>
-                                        Not all hibachi restaurants are created equal. The best spots nail three things:
-                                        <strong>fresh ingredients</strong>, <strong>skilled chefs</strong>, and
-                                        <strong>the right atmosphere</strong>.
-                                    </p>
+ <p>
+ Not all hibachi restaurants are created equal. The best spots nail three things:
+ <strong>fresh ingredients</strong>, <strong>skilled chefs</strong>, and
+ <strong>the right atmosphere</strong>.
+ </p>
 
-                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
-                                        <div className="bg-gradient-to-br from-accent-red to-soft-gold rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
-                                            <span className="text-4xl mb-3 block">🔥</span>
-                                            <h3 className="font-heading font-bold text-lg mb-2">The Show</h3>
-                                            <p className="text-sm text-white/90">Knife tricks, fire, flying food</p>
-                                        </div>
-                                        <div className="bg-gradient-to-br from-deep-indigo to-deep-indigo rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
-                                            <span className="text-4xl mb-3 block">🥩</span>
-                                            <h3 className="font-heading font-bold text-lg mb-2">Fresh Cuts</h3>
-                                            <p className="text-sm text-white/90">Quality steak, shrimp, chicken</p>
-                                        </div>
-                                        <div className="bg-gradient-to-br from-soft-gold to-soft-gold rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
-                                            <span className="text-4xl mb-3 block">👨‍👩‍👧‍👦</span>
-                                            <h3 className="font-heading font-bold text-lg mb-2">Community</h3>
-                                            <p className="text-sm text-white/90">Shared tables, shared memories</p>
-                                        </div>
-                                    </div>
-                                </div>
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+ <div className="bg-gradient-to-br from-accent-red to-soft-gold rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
+ <span className="text-4xl mb-3 block">🔥</span>
+ <h3 className="font-heading font-bold text-lg mb-2">The Show</h3>
+ <p className="text-sm text-white/90">Knife tricks, fire, flying food</p>
+ </div>
+ <div className="bg-gradient-to-br from-deep-indigo to-deep-indigo rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
+ <span className="text-4xl mb-3 block">🥩</span>
+ <h3 className="font-heading font-bold text-lg mb-2">Fresh Cuts</h3>
+ <p className="text-sm text-white/90">Quality steak, shrimp, chicken</p>
+ </div>
+ <div className="bg-gradient-to-br from-soft-gold to-soft-gold rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform">
+ <span className="text-4xl mb-3 block">👨‍👩‍👧‍👦</span>
+ <h3 className="font-heading font-bold text-lg mb-2">Community</h3>
+ <p className="text-sm text-white/90">Shared tables, shared memories</p>
+ </div>
+ </div>
+ </div>
 
-                                {/* Comparison Table */}
-                                <div className="overflow-x-auto my-12">
-                                    <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
-                                        <thead className="bg-charcoal text-white">
-                                            <tr>
-                                                <th className="p-4 text-left font-heading">Restaurant</th>
-                                                <th className="p-4 text-left font-heading">Location</th>
-                                                <th className="p-4 text-left font-heading">Specialty</th>
-                                                <th className="p-4 text-left font-heading">Price Range</th>
-                                                <th className="p-4 text-left font-heading">Why Choose</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-charcoal/80">
-                                            <tr className="border-b border-warm-ivory bg-soft-gold/10">
-                                                <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh Frisco</td>
-                                                <td className="p-4">Frisco (near Stonebriar Mall)</td>
-                                                <td className="p-4">Hibachi + Sushi</td>
-                                                <td className="p-4">$$ (fair value)</td>
-                                                <td className="p-4">Family-owned since 1988, fresh never-frozen ingredients, expert chefs, best ambiance</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory bg-soft-gold/10">
-                                                <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh Lewisville</td>
-                                                <td className="p-4">Lewisville (off I-35E)</td>
-                                                <td className="p-4">Hibachi + Sushi</td>
-                                                <td className="p-4">$$ (fair value)</td>
-                                                <td className="p-4">Perfect for groups, celebrations, catering available, convenient location</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Benihana</td>
-                                                <td className="p-4">Dallas, Plano</td>
-                                                <td className="p-4">Hibachi (National Chain)</td>
-                                                <td className="p-4">$$$ (premium)</td>
-                                                <td className="p-4">Consistent experience, reliable, extensive locations, but less personal</td>
-                                            </tr>
-                                            <tr className="border-b border-warm-ivory">
-                                                <td className="p-4 font-semibold text-charcoal">Kobe Steakhouse</td>
-                                                <td className="p-4">Various DFW locations</td>
-                                                <td className="p-4">Hibachi (Japanese Steakhouse)</td>
-                                                <td className="p-4">$$ to $$$</td>
-                                                <td className="p-4">Large group-friendly, decent quality, but formulaic experience</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="p-4 font-semibold text-charcoal">Teppo</td>
-                                                <td className="p-4">Dallas Greenville Avenue</td>
-                                                <td className="p-4">Robatayaki (Counter-style grilling)</td>
-                                                <td className="p-4">$$$ (upscale)</td>
-                                                <td className="p-4">Different grilling style, trendy, upscale vibe, premium prices</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+ {/* Comparison Table */}
+ <div className="overflow-x-auto my-12">
+ <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
+ <thead className="bg-charcoal text-white">
+ <tr>
+ <th className="p-4 text-left font-heading">Restaurant</th>
+ <th className="p-4 text-left font-heading">Location</th>
+ <th className="p-4 text-left font-heading">Specialty</th>
+ <th className="p-4 text-left font-heading">Price Range</th>
+ <th className="p-4 text-left font-heading">Why Choose</th>
+ </tr>
+ </thead>
+ <tbody className="text-charcoal/80">
+ <tr className="border-b border-warm-ivory bg-soft-gold/10">
+ <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh Frisco</td>
+ <td className="p-4">Frisco (near Stonebriar Mall)</td>
+ <td className="p-4">Hibachi + Sushi</td>
+ <td className="p-4">$$ (fair value)</td>
+ <td className="p-4">Family-owned since 1988, fresh never-frozen ingredients, expert chefs, best ambiance</td>
+ </tr>
+ <tr className="border-b border-warm-ivory bg-soft-gold/10">
+ <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh Lewisville</td>
+ <td className="p-4">Lewisville (off I-35E)</td>
+ <td className="p-4">Hibachi + Sushi</td>
+ <td className="p-4">$$ (fair value)</td>
+ <td className="p-4">Perfect for groups, celebrations, catering available, convenient location</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Benihana</td>
+ <td className="p-4">Dallas, Plano</td>
+ <td className="p-4">Hibachi (National Chain)</td>
+ <td className="p-4">$$$ (premium)</td>
+ <td className="p-4">Consistent experience, reliable, extensive locations, but less personal</td>
+ </tr>
+ <tr className="border-b border-warm-ivory">
+ <td className="p-4 font-semibold text-charcoal">Kobe Steakhouse</td>
+ <td className="p-4">Various DFW locations</td>
+ <td className="p-4">Hibachi (Japanese Steakhouse)</td>
+ <td className="p-4">$$ to $$$</td>
+ <td className="p-4">Large group-friendly, decent quality, but formulaic experience</td>
+ </tr>
+ <tr>
+ <td className="p-4 font-semibold text-charcoal">Teppo</td>
+ <td className="p-4">Dallas Greenville Avenue</td>
+ <td className="p-4">Robatayaki (Counter-style grilling)</td>
+ <td className="p-4">$$$ (upscale)</td>
+ <td className="p-4">Different grilling style, trendy, upscale vibe, premium prices</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
 
+ <div className="my-12">
+ <div className="grid grid-cols-3 gap-4">
+ <BlurFade delay={0.1}>
+ <div className="relative aspect-square rounded-2xl overflow-hidden group">
+ <Image src="/images/blog/3-C060324-6364.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ </div>
+ </BlurFade>
+ <BlurFade delay={0.2}>
+ <div className="relative aspect-square rounded-2xl overflow-hidden group">
+ <Image src="/images/blog/4-C060324-6380.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ </div>
+ </BlurFade>
+ <BlurFade delay={0.3}>
+ <div className="relative aspect-square rounded-2xl overflow-hidden group">
+ <Image src="/images/blog/5-C060324-6397.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ </div>
+ </BlurFade>
+ </div>
+ </div>
 
-                                <div className="my-12">
-                                    <div className="grid grid-cols-3 gap-4">
-                                        <BlurFade delay={0.1}>
-                                            <div className="relative aspect-square rounded-2xl overflow-hidden group">
-                                                <Image src="/images/blog/3-C060324-6364.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                            </div>
-                                        </BlurFade>
-                                        <BlurFade delay={0.2}>
-                                            <div className="relative aspect-square rounded-2xl overflow-hidden group">
-                                                <Image src="/images/blog/4-C060324-6380.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                            </div>
-                                        </BlurFade>
-                                        <BlurFade delay={0.3}>
-                                            <div className="relative aspect-square rounded-2xl overflow-hidden group">
-                                                <Image src="/images/blog/5-C060324-6397.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                            </div>
-                                        </BlurFade>
-                                    </div>
-                                </div>
+ <div className="prose prose-lg max-w-none">
+ <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+ 🏯 Why Jinbeh is Different
+ </h2>
 
-                                <div className="prose prose-lg max-w-none">
-                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
-                                        🏯 Why Jinbeh is Different
-                                    </h2>
-
-                                    <p>
-                                        Big chains have their place, but there's something special about a family-owned
+ <p>
+ Big chains have their place, but there's something special about a family-owned
                                         restaurant that's been perfecting their craft for nearly four decades.
                                     </p>
 

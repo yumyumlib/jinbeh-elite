@@ -75,7 +75,6 @@ const faqSchema = {
   ],
 };
 
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -160,10 +159,13 @@ export default function AsianRestaurantMonthPage() {
                 Celebrate Our Heritage, Support Our Community
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
-                May is Asian American and Pacific Islander (AAPI) Heritage Month — and it&apos;s also
-                Asian Restaurant Month! This is the perfect time to discover, support, and celebrate
+                May is Asian American and Pacific Islander (AAPI) Heritage Month, and it&apos;s also
+                Asian Restaurant Month. This is the perfect time to discover, support, and celebrate
                 Asian-owned restaurants like Jinbeh. Since 1988, we&apos;ve been bringing authentic
                 Japanese cuisine and warm hospitality to Frisco and Lewisville.
+              </p>
+              <p className="text-base text-charcoal/70 leading-relaxed max-w-3xl mx-auto mt-4">
+                Looking for the best Asian restaurant in Dallas, the top Japanese restaurant in DFW, or a family-friendly hibachi spot to celebrate Asian Restaurant Month Dallas? Jinbeh is one of the longest-running Asian-owned, family-operated Japanese restaurants in North Texas, with two convenient locations in <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>. We&apos;re proud to be part of the AAPI heritage that makes the DFW dining scene so rich.
               </p>
             </div>
 
@@ -182,7 +184,7 @@ export default function AsianRestaurantMonthPage() {
                     to quality, and still grateful for every guest who chooses to dine with us.
                   </p>
                   <p className="text-charcoal/70">
-                    When you dine at Jinbeh, you&apos;re not just enjoying a meal — you&apos;re supporting
+                    When you dine at Jinbeh, you&apos;re not just enjoying a meal. You&apos;re supporting
                     a family business and a rich culinary tradition.
                   </p>
                 </div>
@@ -217,8 +219,8 @@ export default function AsianRestaurantMonthPage() {
                   Authentic Cuisine
                 </h3>
                 <p className="text-charcoal/70">
-                  Experience true Japanese flavors passed down through generations —
-                  not imitations, but authentic techniques and recipes.
+                  Experience true Japanese flavors passed down through generations.
+                  Not imitations, but authentic techniques and recipes.
                 </p>
               </div>
 
@@ -231,7 +233,7 @@ export default function AsianRestaurantMonthPage() {
                 </h3>
                 <p className="text-charcoal/70">
                   Your meal supports real families, local jobs, and community
-                  businesses — not corporate shareholders.
+                  businesses, not corporate shareholders.
                 </p>
               </div>
 
@@ -312,7 +314,7 @@ export default function AsianRestaurantMonthPage() {
                     <h4 className="font-semibold text-charcoal text-xl">Hibachi Teppanyaki</h4>
                   </div>
                   <p className="text-charcoal/70 mb-4">
-                    The art of teppanyaki — watch skilled chefs prepare your meal tableside
+                    The art of teppanyaki. Watch skilled chefs prepare your meal tableside
                     with impressive knife skills and showmanship.
                   </p>
                   <Link href="/menu" className="text-accent-red font-semibold hover:underline">
@@ -325,7 +327,7 @@ export default function AsianRestaurantMonthPage() {
                     <h4 className="font-semibold text-charcoal text-xl">Fresh Sushi</h4>
                   </div>
                   <p className="text-charcoal/70 mb-4">
-                    Traditional sushi craftsmanship — fresh fish, hand-pressed rice, and
+                    Traditional sushi craftsmanship: fresh fish, hand-pressed rice, and
                     beautiful presentation.
                   </p>
                   <Link href="/menu" className="text-accent-red font-semibold hover:underline">
@@ -348,7 +350,7 @@ export default function AsianRestaurantMonthPage() {
                   },
                   {
                     q: "How long has Jinbeh been in business?",
-                    a: "Jinbeh has been family-owned and operated since 1988 — that's over 38 years of serving authentic Japanese cuisine to the DFW community!",
+                    a: "Jinbeh has been family-owned and operated since 1988. That's over 38 years of serving authentic Japanese cuisine to the DFW community.",
                   },
                   {
                     q: "What makes hibachi a unique cultural experience?",
@@ -483,7 +485,7 @@ export default function AsianRestaurantMonthPage() {
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
                   Types of Sushi: Complete Guide
                 </h3>
-                <p className="text-sm text-charcoal/70 mt-2">From nigiri to rolls — explore every style of sushi you can try at Jinbeh.</p>
+                <p className="text-sm text-charcoal/70 mt-2">From nigiri to rolls, explore every style of sushi you can try at Jinbeh.</p>
               </Link>
             </div>
           </div>

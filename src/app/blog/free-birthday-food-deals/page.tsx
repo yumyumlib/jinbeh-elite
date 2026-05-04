@@ -61,8 +61,6 @@ const faqs = [
   },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -191,6 +189,44 @@ export default function FreeBirthdayFoodDealsPage() {
         small eateries and cafes offer special birthday deals to attract
         customers. By visiting these establishments, you enjoy a treat while
         helping them thrive in your community.
+      </p>
+
+      <h3>Why Jinbeh Is DFW&apos;s Favorite Birthday Restaurant</h3>
+
+      <p>
+        Free birthday food is fun, but a birthday <em>experience</em> is what
+        people remember. That&apos;s where{" "}
+        <Link href="/celebrations/birthday" className="text-accent-red hover:underline">
+          Jinbeh
+        </Link>{" "}
+        stands apart from the chain birthday freebies above. Since 1988, Jinbeh
+        has been one of the most-loved spots for{" "}
+        <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">
+          hibachi birthday parties in Frisco and Lewisville TX
+        </Link>
+        . Birthday guests get the full hibachi show, with onion volcanoes, flying
+        shrimp, and a tableside performance, plus the famous &ldquo;three-touch&rdquo;
+        birthday treatment from the host, server, and chef. It&apos;s the kind of
+        celebration guests talk about for weeks.
+      </p>
+
+      <p>
+        Looking for a <strong>birthday dinner near me</strong>, the{" "}
+        <strong>best hibachi for birthdays in DFW</strong>, or a{" "}
+        <strong>kid-friendly birthday restaurant in Frisco</strong>? Jinbeh
+        delivers premium hibachi steak, fresh sushi, and a warm family
+        atmosphere at both our{" "}
+        <Link href="/frisco" className="text-accent-red hover:underline">
+          Frisco
+        </Link>{" "}
+        and{" "}
+        <Link href="/lewisville" className="text-accent-red hover:underline">
+          Lewisville
+        </Link>{" "}
+        locations. We don&apos;t do impersonal corporate gimmicks. We do
+        memorable celebrations, and our regulars have been celebrating
+        milestones with us for 20, 25, even 30+ years. Reserve a hibachi table
+        for your next birthday and skip the freebies for a real party.
       </p>
 
       <h2>Popular Chain Restaurants Offering Birthday Meals</h2>

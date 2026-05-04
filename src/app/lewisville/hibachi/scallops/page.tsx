@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Sea Scallops",
   "description": "Plump sea scallops seared with garlic butter",
-  "offers": {
-    "@type": "Offer",
-    "price": "32.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Sea Scallops hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sea Scallops at Jinbeh Lewisville is plump sea scallops seared with garlic butter. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $32.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Sea Scallops at Jinbeh Lewisville is plump sea scallops seared with garlic butter. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ScallopsLewisvillePage() {
   const item = getMenuItem("scallops", "hibachi")!;

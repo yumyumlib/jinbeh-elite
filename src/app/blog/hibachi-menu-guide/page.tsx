@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What are typical hibachi prices?",
     answer:
-      "Hibachi dinner entrees typically range from $25-$45 per person depending on protein choice. Premium proteins like filet mignon or lobster cost more. Lunch specials offer better value, usually $12-$20. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for our current menu and pricing.",
+      "Hibachi dinner entrees typically range from per person depending on protein choice. Premium proteins like filet mignon or lobster cost more. Lunch specials offer better value, usually. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for our current menu and pricing.",
   },
   {
     question: "Can I order hibachi for takeout?",
@@ -67,7 +67,7 @@ const faqs = [
   {
     question: "How much does filet mignon hibachi cost?",
     answer:
-      "Filet mignon hibachi is one of our premium offerings, typically priced at $35 or higher, depending on the cut and portion size. It includes all the classic hibachi sides: soup, salad, shrimp appetizer, fried rice, vegetables, and dessert. For current pricing and any specials, call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
+      "Filet mignon hibachi is one of our premium offerings, typically priced at or higher, depending on the cut and portion size. It includes all the classic hibachi sides: soup, salad, shrimp appetizer, fried rice, vegetables, and dessert. For current pricing and any specials, call Frisco (214) 619-1200 or Lewisville (214) 488-2224.",
   },
   {
     question: "Can I get lobster at hibachi restaurants?",
@@ -90,8 +90,6 @@ const faqs = [
       "Yes! Most hibachi restaurants including Jinbeh offer kids' portions at lower prices. Popular choices include chicken, shrimp, or a combo. Kids get the same entertaining show as adults — the fire tricks and food-tossing are always a hit. Children's meals typically include smaller protein portions with rice and vegetables.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -195,7 +193,6 @@ export default function HibachiMenuGuidePage() {
               <p className="text-sm text-charcoal/80"><strong>The Grill:</strong> Hibachi grills reach approximately 550&deg;F. At that temperature, cross-contamination from allergens is extremely difficult. Gluten-free is easy: only the sauces contain gluten, not the base ingredients. Every grill is cleaned after each use and the restaurant is deep cleaned twice daily.</p>
             </div>
 
-
             Every item on Jinbeh&apos;s hibachi menu is backed by 38 years of refinement. D Magazine recognized Jinbeh as &ldquo;Best Place to Eat&rdquo; in their Best of Big D franchise, and OpenTable diners currently rate us a Diners&apos; Choice pick for Best Hibachi in both Frisco and Lewisville.
           </p>
         </div>
@@ -203,31 +200,31 @@ export default function HibachiMenuGuidePage() {
 
       <p>
         Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki—learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.
-      </p>
+ </p>
 
-      <DidYouKnow
-        fact="The hibachi/teppanyaki restaurant industry in the United States is worth over $4.2 billion annually, with more than 4,000 locations nationwide. The interactive dining format was popularized in the US by Benihana in 1964 — but family-owned restaurants like Jinbeh (est. 1988) are where locals find the most authentic experience, personalized service, and highest-quality ingredients."
-        source="IBISWorld & National Restaurant Association"
-      />
+ <DidYouKnow
+ fact="The hibachi/teppanyaki restaurant industry in the United States is worth over billion annually, with more than 4,000 locations nationwide. The interactive dining format was popularized in the US by Benihana in 1964 — but family-owned restaurants like Jinbeh (est. 1988) are where locals find the most authentic experience, personalized service, and highest-quality ingredients."
+ source="IBISWorld & National Restaurant Association"
+ />
 
-      <h2>What to Expect on a Hibachi Menu</h2>
+ <h2>What to Expect on a Hibachi Menu</h2>
 
-      <Timeline
-        title="How to Navigate the Hibachi Menu"
-        steps={[
-          {
-            icon: "📖",
-            title: "Start with Appetizers",
-            description: "Browse gyoza, edamame, and tempura. At Jinbeh, guests rave about the crab rangoons — freshly made and packed with real crab meat."
-          },
-          {
-            icon: "🥩",
-            title: "Choose Your Protein",
-            description: "Pick from filet mignon, NY strip, chicken teriyaki, shrimp, scallops, or lobster tail. Combos like Steak & Shrimp are fan favorites."
-          },
-          {
-            icon: "🍚",
-            title: "Don't Skip the Fried Rice",
+ <Timeline
+ title="How to Navigate the Hibachi Menu"
+ steps={[
+ {
+ icon: "📖",
+ title: "Start with Appetizers",
+ description: "Browse gyoza, edamame, and tempura. At Jinbeh, guests rave about the crab rangoons — freshly made and packed with real crab meat."
+ },
+ {
+ icon: "🥩",
+ title: "Choose Your Protein",
+ description: "Pick from filet mignon, NY strip, chicken teriyaki, shrimp, scallops, or lobster tail. Combos like Steak & Shrimp are fan favorites."
+ },
+ {
+ icon: "🍚",
+ title: "Don't Skip the Fried Rice",
             description: "Multiple reviewers call Jinbeh's fried rice the best they've ever had. It's prepared on the grill with house-made garlic butter — a must-order."
           },
           {

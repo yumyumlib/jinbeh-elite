@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Tuna Tartare",
   "description": "Diced ahi tuna with avocado and ponzu",
-  "offers": {
-    "@type": "Offer",
-    "price": "15.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Tuna Tartare at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tuna Tartare at Jinbeh Lewisville is diced ahi tuna with avocado and ponzu. At $15.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Tuna Tartare at Jinbeh Lewisville is diced ahi tuna with avocado and ponzu. At, it's perfect for sharing while you wait for your hibachi or sushi."
       }
     },
     {
@@ -73,7 +68,7 @@ const faqSchema = {
       "name": "Can I order Tuna Tartare during Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — Tuna Tartare is on the regular menu and pairs beautifully with our Happy Hour drinks: $4 Japanese draft beer, $5 sake, and $6 wine (Mon-Fri 5:00-6:30 PM). Note that Happy Hour pricing applies to drinks only. Call (972) 221-3888 for details."
+        "text": "Yes — Tuna Tartare is on the regular menu and pairs beautifully with our Happy Hour drinks: Japanese draft beer, sake, and wine (Mon-Fri 5:00-6:30 PM). Note that Happy Hour pricing applies to drinks only. Call (972) 221-3888 for details."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TunaTartareLewisvillePage() {
   const item = { ...getMenuItem("tuna-tartare", "appetizers")!, jinbehStory: "In Japanese, \"tataki\" means \"to hit\" or \"to pound.\" The fish is tenderized by pounding it thin, then barely seared on the outside so it stays beautifully rare inside. A very traditional Japanese preparation served with our house-made ponzu sauce." };

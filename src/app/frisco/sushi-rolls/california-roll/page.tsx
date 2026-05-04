@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "California Roll",
   "description": "Crab, avocado, and cucumber classic",
-  "offers": {
-    "@type": "Offer",
-    "price": "9.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function CaliforniaRollFriscoPage() {
   const item = { ...getMenuItem("california-roll", "sushi-rolls")!, jinbehStory: "Every roll at Jinbeh is crafted using a traditional bamboo roller (makisu) by our sushi team, led by a master chef who has been with us for nearly 30 years. He co-created every signature roll on our menu during late-night sessions of testing and perfecting." };

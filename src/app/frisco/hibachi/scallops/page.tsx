@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Sea Scallops",
   "description": "Plump sea scallops seared with garlic butter",
-  "offers": {
-    "@type": "Offer",
-    "price": "32.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ScallopsFriscoPage() {
   const item = getMenuItem("scallops", "hibachi")!;

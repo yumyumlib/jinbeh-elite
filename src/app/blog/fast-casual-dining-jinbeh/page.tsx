@@ -53,8 +53,6 @@ const faqs = [
     },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -137,28 +135,28 @@ n unusual combination. After
                 all, Japanese cuisine is known for precision, artistry, and presentation—things that
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,
                 we've spent 38 years learning how to deliver quality at every speed.
-            </p>
-              <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎯 The &ldquo;American Authentic&rdquo; Philosophy</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh&apos;s menu philosophy emerged from decades of trial and error. The original Las Colinas menu was a thick book of truly authentic Japanese dishes &mdash; like salted mackerel and traditional set menus. Over time, they learned: people want <em>American authentic</em>. Food that feels genuinely Japanese enough to transport you, but not so foreign that you&apos;re uncomfortable. &ldquo;We chose a different path: family-friendly, accessible, and large enough to serve the community.&rdquo;
-                </p>
-              <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
-                <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Multiple D Magazine Awards, Three Decades Running</h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed">
-                  D Magazine has recognized Jinbeh multiple times across their Best of Big D and Best Neighborhood Restaurants franchises. That kind of sustained editorial recognition &mdash; spanning the original Las Colinas location through today&apos;s Frisco and Lewisville restaurants &mdash; speaks to consistency that most restaurants never achieve.
-                </p>
-              </div>
-              </div>
+ </p>
+ <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+ <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎯 The &ldquo;American Authentic&rdquo; Philosophy</h3>
+ <p className="text-charcoal/70 text-sm leading-relaxed">
+ Jinbeh&apos;s menu philosophy emerged from decades of trial and error. The original Las Colinas menu was a thick book of truly authentic Japanese dishes &mdash; like salted mackerel and traditional set menus. Over time, they learned: people want <em>American authentic</em>. Food that feels genuinely Japanese enough to transport you, but not so foreign that you&apos;re uncomfortable. &ldquo;We chose a different path: family-friendly, accessible, and large enough to serve the community.&rdquo;
+ </p>
+ <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
+ <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏆 Multiple D Magazine Awards, Three Decades Running</h3>
+ <p className="text-charcoal/70 text-sm leading-relaxed">
+ D Magazine has recognized Jinbeh multiple times across their Best of Big D and Best Neighborhood Restaurants franchises. That kind of sustained editorial recognition &mdash; spanning the original Las Colinas location through today&apos;s Frisco and Lewisville restaurants &mdash; speaks to consistency that most restaurants never achieve.
+ </p>
+ </div>
+ </div>
 
-            <p>
-                Need a quick lunch? Our sushi bar serves fresh rolls in minutes. Planning a special
-                <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline"> date night</Link>?
-                Settle in for a full hibachi experience. The choice is yours—and the quality never changes.
-            </p>
+ <p>
+ Need a quick lunch? Our sushi bar serves fresh rolls in minutes. Planning a special
+ <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline"> date night</Link>?
+ Settle in for a full hibachi experience. The choice is yours—and the quality never changes.
+ </p>
 
-            <DidYouKnow
-                fact="The fast casual dining segment has grown into a $263 billion industry in the US, growing 10% annually — faster than any other restaurant category. While most fast casual spots sacrifice quality for speed, family-owned restaurants like Jinbeh prove you can have both: fresh, made-to-order Japanese cuisine served at your pace, whether that's a 30-minute sushi lunch or a full evening hibachi experience."
+ <DidYouKnow
+ fact="The fast casual dining segment has grown into a billion industry in the US, growing 10% annually — faster than any other restaurant category. While most fast casual spots sacrifice quality for speed, family-owned restaurants like Jinbeh prove you can have both: fresh, made-to-order Japanese cuisine served at your pace, whether that's a 30-minute sushi lunch or a full evening hibachi experience."
                 source="National Restaurant Association 2025 Industry Report"
             />
 
@@ -225,7 +223,7 @@ n unusual combination. After
             </ul>
 
             <ProTip variant="insider">
-                <strong>Lunch break hack:</strong> Call ahead 20 minutes before you leave the office and your sushi or bento order will be ready when you arrive. Reviewers say the chicken teriyaki bento is the best lunch deal in DFW — a complete meal with soup, salad, and rice for under $15. For the ultimate quick sushi lunch, sit at the bar and ask the chef for an "omakase roll" — they'll surprise you with something amazing. <Link href="/reservations" className="text-accent-red hover:underline">Visit for lunch →</Link>
+ <strong>Lunch break hack:</strong> Call ahead 20 minutes before you leave the office and your sushi or bento order will be ready when you arrive. Reviewers say the chicken teriyaki bento is the best lunch deal in DFW — a complete meal with soup, salad, and rice for under. For the ultimate quick sushi lunch, sit at the bar and ask the chef for an "omakase roll" — they'll surprise you with something amazing. <Link href="/reservations" className="text-accent-red hover:underline">Visit for lunch →</Link>
             </ProTip>
 
             <p>

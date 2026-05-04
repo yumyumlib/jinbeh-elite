@@ -135,57 +135,62 @@ body {
    Typography
    ====================================== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  /* color controlled by Tailwind classes - no override needed */
-  line-height: 1.2;
-  text-wrap: balance;
+/* Heading typography defaults — wrapped in @layer base so Tailwind utilities
+   (font-medium, tracking-wide, leading-snug, etc.) win the cascade. In Tailwind
+   v4, unlayered CSS beats anything in the `utilities` layer regardless of
+   specificity, so these rules MUST be in `base` (which sits below utilities)
+   for component-level Tailwind classes to work as expected. */
+@layer base {
+  :where(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    /* color controlled by Tailwind classes - no override needed */
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  /* Visual Hierarchy - Clear heading distinction */
+  :where(h1) {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  :where(h2) {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  :where(h3, h4, h5, h6) {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
 }
 
-/* Visual Hierarchy - Clear heading distinction */
-h1 {
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
+/* Wrap in @layer base so Tailwind utility classes (text-xs, text-base, text-3xl,
+   etc.) reliably override them. In Tailwind v4 (`@import "tailwindcss"`), utilities
+   live in the `utilities` cascade layer; UNLAYERED CSS beats any layered CSS,
+   so bare h1 rules — even with `:where()` specificity 0 — would still win over
+   Tailwind utilities. Putting these rules in `base` (which Tailwind v4 places
+   below `utilities`) is the right fix. The `:where()` is kept so component-level
+   `h1` selectors (which DO get layered with Tailwind under v4 preflight) still
+   win, and so any conflicting `:where()` selectors in user CSS don't fight. */
+@layer base {
+  :where(h1) {
+    font-size: var(--text-h1);
+  }
 
-h2 {
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
+  :where(h2) {
+    font-size: var(--text-h2);
+  }
 
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
+  :where(h3) {
+    font-size: var(--text-h3);
+  }
 
-/* Use :where() to give these rules zero specificity so Tailwind utility classes
-   (text-xs, text-base, text-3xl, etc.) reliably override them — without :where(),
-   the bare `h1` selector beats single-class utilities and forces 32px on mobile,
-   which causes the hero rotating-hook strings to overflow the viewport. */
-:where(h1) {
-  font-size: var(--text-h1);
-}
-
-:where(h2) {
-  font-size: var(--text-h2);
-}
-
-:where(h3) {
-  font-size: var(--text-h3);
-}
-
-:where(h4) {
-  font-size: var(--text-h4);
+  :where(h4) {
+    font-size: var(--text-h4);
+  }
 }
 
 p {
@@ -1460,20 +1465,21 @@ img {
     padding-bottom: 3rem;
   }
 
-  /* Reduce heading sizes on mobile for better readability —
-     :where() keeps specificity at 0 so Tailwind utilities can override
-     for component-specific sizing (e.g., the hero's responsive hook). */
-  :where(h1) {
-    font-size: 2rem;
-    line-height: 1.1;
-  }
+  /* Mobile heading defaults — wrapped in @layer base so Tailwind utilities
+     (text-sm, text-base, etc.) on mobile-explicit components win the cascade. */
+  @layer base {
+    :where(h1) {
+      font-size: 2rem;
+      line-height: 1.1;
+    }
 
-  :where(h2) {
-    font-size: 1.5rem;
-  }
+    :where(h2) {
+      font-size: 1.5rem;
+    }
 
-  :where(h3) {
-    font-size: 1.25rem;
+    :where(h3) {
+      font-size: 1.25rem;
+    }
   }
 }
 

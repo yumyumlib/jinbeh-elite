@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Tuna Sashimi",
   "description": "Premium ahi tuna, melt-in-your-mouth tender",
-  "offers": {
-    "@type": "Offer",
-    "price": "16.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Can I order Tuna Sashimi with other dishes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Tuna Sashimi is available individually at $16.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Ask about our Omakase for premium selections."
+        "text": "Yes! Tuna Sashimi is available individually at or as part of our Sashimi Deluxe Platter and Chirashi Bowl. Ask about our Omakase for premium selections."
       }
     }
   ]
 };
-
 
 export default function TunaSashimiLewisvillePage() {
   const item = { ...getMenuItem("tuna-sashimi", "sashimi")!, jinbehStory: "Premium tuna sliced by our sushi master — nearly 30 years of daily practice ensuring each cut is precise. \'Sashimi\' literally translates to \'sliced,\' the purest form of enjoying raw fish." };

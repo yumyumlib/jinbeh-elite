@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What's the budget for a baby shower venue?",
     answer:
-      "Home venues are free. Parks range $50-$300. Restaurants like Jinbeh charge per person ($15-$40) with private dining available. Libraries and church halls cost $0-$100. Dinner and a show at Jinbeh makes celebration memorable.",
+      "Home venues are free. Parks range. Restaurants like Jinbeh charge per entree with private dining available. Libraries and church halls cost less. Dinner and a show at Jinbeh makes the celebration memorable.",
   },
   {
     question: "What should I consider when choosing an outdoor venue?",
@@ -60,8 +60,6 @@ const faqs = [
       "Yes! Co-ed baby showers have become increasingly popular. Hibachi dining is perfect for mixed-gender celebrations because it's interactive, entertaining, and appeals to everyone. The chef performance gives guests something to enjoy together, making it a natural icebreaker for groups that may not know each other well.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -297,16 +295,13 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       </p>
 
       <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
-        <p className="italic text-charcoal/80 mb-2">
-          "We hosted our baby shower at Jinbeh's private dining space, and it
-          was absolutely perfect. The beautiful setting required minimal
-          decoration, and the staff took care of everything while we celebrated."
+        <p className="text-charcoal/80 mb-2">
+          Hosting your baby shower at <Link href="/private-dining" className="text-accent-red hover:underline font-medium">Jinbeh&apos;s private dining space</Link> can be a perfect choice. The beautiful setting needs little decoration, and our team takes great care of everything so you can focus on celebrating with the people who matter most.
         </p>
-        <p className="text-sm text-charcoal/80">— Jinbeh Guest</p>
       </div>
 
       <DidYouKnow
-        fact="Baby showers are a $3.5 billion industry in the United States, with the average shower costing between $1,500-$4,000. Restaurant-hosted baby showers have grown 45% in popularity since 2020, as hosts realize the convenience of letting professionals handle food, service, and cleanup. The average restaurant baby shower saves hosts 15-20 hours of preparation time compared to home events."
+        fact="Baby showers are a billion industry in the United States, with the average shower costing between,500-,000. Restaurant-hosted baby showers have grown 45% in popularity since 2020, as hosts realize the convenience of letting professionals handle food, service, and cleanup. The average restaurant baby shower saves hosts 15-20 hours of preparation time compared to home events."
         source="WeddingWire & The Knot"
       />
 
@@ -504,7 +499,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
 
       <ul>
         <li><Link href="/private-dining" className="text-accent-red hover:underline">Semi-private dining spaces</Link> with elegant ambiance</li>
-        <li>Customizable menus accommodating dietary preferences</li>
+        <li>Menus that accommodate a range of dietary preferences</li>
         <li>Professional service handling all logistics</li>
         <li>Beautiful settings minimizing additional decoration needs</li>
         <li><Link href="/gift-cards" className="text-accent-red hover:underline">Gift cards</Link> available as party favors for guests</li>

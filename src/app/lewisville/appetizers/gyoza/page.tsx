@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Gyoza",
   "description": "Pan-fried pork dumplings with dipping sauce",
-  "offers": {
-    "@type": "Offer",
-    "price": "8.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Gyoza at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gyoza at Jinbeh Lewisville is pan-fried pork dumplings with dipping sauce. At $8.95, it's perfect for sharing while you wait for your hibachi or sushi."
+        "text": "Gyoza at Jinbeh Lewisville is pan-fried pork dumplings with dipping sauce. At, it's perfect for sharing while you wait for your hibachi or sushi."
       }
     },
     {
@@ -73,7 +68,7 @@ const faqSchema = {
       "name": "Can I order Gyoza for happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy $4 draft beer, $5 sake, and $6 wine alongside favorites like Gyoza. Call (972) 221-3888 for details."
+        "text": "Pair this with drinks from our Happy Hour (Mon-Fri 5:00-6:30 PM). Enjoy draft beer, sake, and wine alongside favorites like Gyoza. Call (972) 221-3888 for details."
       }
     },
     {
@@ -86,7 +81,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function GyozaLewisvillePage() {
   const item = { ...getMenuItem("gyoza", "appetizers")!, jinbehStory: "Our haramaki (spring rolls) are made entirely in-house, which is time-consuming. The kitchen makes the filling and rolls them up weekly by hand. People who try one always order again." };

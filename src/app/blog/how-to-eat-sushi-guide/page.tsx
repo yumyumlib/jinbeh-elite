@@ -104,7 +104,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -834,6 +833,21 @@ export default function HowToEatSushi() {
                                     </div>
                                 </div>
 
+                            </div>
+
+                            <div className="bg-warm-ivory/60 rounded-2xl p-6 md:p-8 my-10 border border-soft-gold/30">
+                                <h2 className="font-heading text-2xl font-bold text-charcoal mb-3">
+                                    Try Fresh Sushi at Jinbeh: Beginners Welcome
+                                </h2>
+                                <p className="text-charcoal/80 leading-relaxed mb-4">
+                                    Jinbeh has been crafting fresh, made-to-order sushi in DFW since 1988. Our sushi chefs co-created the entire menu over three decades, and they love helping first-timers find a roll they&apos;ll love. Whether you&apos;re brand new to sushi, returning after a long break, or a seasoned regular, you&apos;ll feel welcome at our sushi bar in <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>.
+                                </p>
+                                <p className="text-charcoal/80 leading-relaxed mb-4">
+                                    New to sushi? Start with cooked or mild options like a California roll, shrimp tempura roll, or salmon nigiri. Our staff is happy to recommend <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">approachable rolls and signature specialties</Link> based on your taste, and we&apos;ll explain the textures, flavors, and proper way to eat each piece.
+                                </p>
+                                <p className="text-charcoal/80 leading-relaxed">
+                                    Bringing the kids? We provide <strong>training chopsticks</strong> at every table so little ones can practice while they enjoy their first taste of sushi. It&apos;s one of many reasons families have made Jinbeh their go-to <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">sushi spot in Frisco TX</Link> for nearly four decades.
+                                </p>
                             </div>
 
                             <PillarCTA type="vip" />

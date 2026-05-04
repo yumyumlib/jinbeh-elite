@@ -151,7 +151,6 @@ export default function BirthdayPage() {
           </div>
         </nav>
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <video
@@ -244,14 +243,14 @@ export default function BirthdayPage() {
                 <span className="text-3xl mb-3 block">🙋</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Touch 1: The Host</h3>
                 <p className="text-charcoal/70 text-sm">
-                  When you arrive, our host identifies the birthday guest and personally says happy birthday — the celebration starts the moment you walk in.
+                  When you arrive, our host identifies the birthday guest and personally says happy birthday. The celebration starts the moment you walk in.
                 </p>
               </div>
               <div className="text-center p-6 bg-warm-ivory rounded-xl">
                 <span className="text-3xl mb-3 block">🍽️</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Touch 2: Your Server</h3>
                 <p className="text-charcoal/70 text-sm">
-                  Your server is notified of the celebration and personally acknowledges the birthday person — making them feel special throughout the meal.
+                  Your server is notified of the celebration and personally acknowledges the birthday person, making them feel special throughout the meal.
                 </p>
               </div>
               <div className="text-center p-6 bg-warm-ivory rounded-xl">
@@ -263,12 +262,20 @@ export default function BirthdayPage() {
               </div>
             </div>
             <p className="text-center text-charcoal/70 max-w-2xl mx-auto">
-              Our Three-Touch Birthday Protocol means you hear &ldquo;happy birthday&rdquo; from three different team members — not because it&apos;s required, but because at Jinbeh, your celebration is <em>everyone&apos;s</em> celebration.
-
+              Our Three-Touch Birthday Protocol means you hear &ldquo;happy birthday&rdquo; from three different team members. Not because it&apos;s required, but because at Jinbeh, your celebration is <em>everyone&apos;s</em> celebration.
             </p>
+
+            <div className="max-w-3xl mx-auto mt-12 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+              <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Why Jinbeh Is the Top Choice for a Birthday Dinner in DFW</h3>
+              <p className="text-charcoal/80 mb-3">
+                Searching for the best birthday restaurant in Frisco, a hibachi birthday party in DFW, or a birthday dinner near you? Jinbeh has been DFW&apos;s favorite birthday restaurant since 1988. The hibachi show is built-in entertainment, the food is genuinely great, and the celebration energy is contagious. Kids leave laughing, adults leave smiling, and the birthday guest leaves feeling like the star of the night.
+              </p>
+              <p className="text-charcoal/80">
+                Premium hibachi steak, fresh sushi, our famous yum yum sauce, and the kind of warm hospitality you don&apos;t find at chain restaurants. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a hibachi table</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> location and let us make this birthday a memory.
+              </p>
+            </div>
           </div>
         </section>
-
 
         {/* Experience Section */}
         <section className="py-20 bg-white">

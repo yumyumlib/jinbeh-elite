@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Filet Mignon",
   "description": "Premium beef tenderloin, perfectly seared on the teppan grill",
-  "offers": {
-    "@type": "Offer",
-    "price": "34.95",
-    "priceCurrency": "USD"
-  },
   "nutrition": {
     "@type": "NutritionInformation",
     "calories": "200-300 calories",
@@ -79,7 +74,7 @@ const faqSchema = {
       "name": "What comes with hibachi filet mignon dinner at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Filet Mignon hibachi dinner ($34.95) includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces including yum yum sauce and mustard sauce."
+        "text": "Your Filet Mignon hibachi dinner includes Japanese onion soup, house salad with ginger dressing, hibachi vegetables (zucchini, onions, mushrooms), fried rice, and your choice of dipping sauces including yum yum sauce and mustard sauce."
       }
     },
     {
@@ -120,7 +115,6 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 5, "name": "Filet Mignon" },
   ],
 };
-
 
 export default function FiletMignonFriscoPage() {
   const item = { ...getMenuItem("filet-mignon", "hibachi")!, jinbehStory: "At the hibachi, our grills reach approximately 550°F — temperatures so high that cross-contamination from allergens is extremely difficult. Our chefs are also trained to handle allergy situations with extra care." };

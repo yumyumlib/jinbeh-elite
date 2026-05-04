@@ -75,7 +75,6 @@ const faqSchema = {
   ],
 };
 
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -179,8 +178,11 @@ export default function MothersDayPage() {
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
                 This Mother&apos;s Day, skip the crowded brunch spots and treat Mom to something
-                truly special. At Jinbeh, we&apos;ve been hosting family celebrations since 1988 —
-                because we know the best gift is quality time together over an amazing meal.
+                truly special. At Jinbeh, we&apos;ve been hosting family celebrations since 1988.
+                We know the best gift is quality time together over an amazing meal.
+              </p>
+              <p className="text-base text-charcoal/70 leading-relaxed max-w-3xl mx-auto mt-5">
+                <strong>Why Jinbeh is the best place for a Mother&apos;s Day dinner in DFW:</strong> mom doesn&apos;t cook, mom doesn&apos;t clean, and mom doesn&apos;t spend the day on her feet. Your family relaxes around a hibachi table, enjoys a tableside show, and shares an incredible meal together. It&apos;s a Mother&apos;s Day brunch alternative, a Mother&apos;s Day dinner, and a hibachi family experience all in one. See why <Link href="/celebrations/dfw-moms" className="text-accent-red hover:underline">DFW moms keep coming back to Jinbeh</Link>, then <Link href="/reservations" className="text-accent-red hover:underline">reserve a table</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> location, gather the family, and let us take care of the rest.
               </p>
             </div>
 
@@ -220,8 +222,8 @@ export default function MothersDayPage() {
                   Family-Friendly
                 </h3>
                 <p className="text-charcoal/70">
-                  Kids menu available. Hibachi is the perfect family experience —
-                  entertainment and dinner rolled into one.
+                  Kids menu available. Hibachi is the perfect family experience.
+                  Entertainment and dinner rolled into one.
                 </p>
               </div>
             </div>
@@ -237,15 +239,15 @@ export default function MothersDayPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Filet Mignon — tender, premium cut
+                      Filet Mignon: tender, premium cut
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Lobster Tail — succulent and buttery
+                      Lobster Tail: succulent and buttery
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Imperial Dinner — the ultimate combo
+                      Imperial Dinner: the ultimate combo
                     </li>
                   </ul>
                 </div>
@@ -254,15 +256,15 @@ export default function MothersDayPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-deep-indigo bg-white rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Sashimi Deluxe — chef&apos;s selection
+                      Sashimi Deluxe: chef&apos;s selection
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-deep-indigo bg-white rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Rainbow Roll — colorful and fresh
+                      Rainbow Roll: colorful and fresh
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-deep-indigo bg-white rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Omakase — trust the chef
+                      Samurai Roll: a Jinbeh signature
                     </li>
                   </ul>
                 </div>
@@ -286,7 +288,7 @@ export default function MothersDayPage() {
                 {[
                   {
                     q: "How far in advance should I book?",
-                    a: "We recommend 1-2 weeks ahead for Mother's Day. It's our busiest day, and tables go quickly — especially for larger parties.",
+                    a: "We recommend 1-2 weeks ahead for Mother's Day. It's our busiest day, and tables go quickly, especially for larger parties.",
                   },
                   {
                     q: "Can you accommodate large family groups?",

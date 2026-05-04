@@ -22,8 +22,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 // Organization Schema for rich snippets
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -649,56 +647,56 @@ export default function HomePage() {
                 { src: '/images/instagram/crab-pinwheel-roll.jpg', alt: 'Crab pinwheel specialty roll' },
                 { src: '/images/instagram/sushi-feast-overhead.jpg', alt: 'Sushi feast spread from above' },
                 { src: '/images/instagram/mochi-desserts.jpg', alt: 'Mochi ice cream desserts at Jinbeh' },
-              ].map((img, i) => (
-                <a key={i} href="https://instagram.com/JinbehFrisco" target="_blank" rel="noopener noreferrer" className="relative w-[240px] h-[240px] mx-2 rounded-xl overflow-hidden group flex-shrink-0 block" aria-label={`View ${img.alt} on Instagram`}>
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="240px"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
-                    </svg>
-                  </div>
-                </a>
-              ))}
-            </Marquee>
-          </div>
+ ].map((img, i) => (
+ <a key={i} href="https://instagram.com/JinbehFrisco" target="_blank" rel="noopener noreferrer" className="relative w-[240px] h-[240px] mx-2 rounded-xl overflow-hidden group flex-shrink-0 block" aria-label={`View ${img.alt} on Instagram`}>
+ <Image
+ src={img.src}
+ alt={img.alt}
+ fill
+ className="object-cover group-hover:scale-110 transition-transform duration-500"
+ sizes="240px"
+ loading="lazy"
+ />
+ <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+ <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
+ <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
+ </svg>
+ </div>
+ </a>
+ ))}
+ </Marquee>
+ </div>
 
-          <div className="container mx-auto px-6 text-center mt-8">
-            <ScrollReveal>
-              <a
-                href="https://instagram.com/JinbehFrisco"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow Jinbeh on Instagram" className="inline-flex items-center gap-2 bg-gradient-to-r from-deep-indigo via-accent-red to-soft-gold text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
-                </svg>
-                Follow @JinbehFrisco
-              </a>
-            </ScrollReveal>
-          </div>
-        </section>
+ <div className="container mx-auto px-6 text-center mt-8">
+ <ScrollReveal>
+ <a
+ href="https://instagram.com/JinbehFrisco"
+ target="_blank"
+ rel="noopener noreferrer"
+ aria-label="Follow Jinbeh on Instagram" className="inline-flex items-center gap-2 bg-gradient-to-r from-deep-indigo via-accent-red to-soft-gold text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+ >
+ <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+ <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
+ </svg>
+ Follow @JinbehFrisco
+ </a>
+ </ScrollReveal>
+ </div>
+ </section>
 
-        {/* Testimonial Section - Multiple Reviews */}
-        <section className="py-24 bg-white relative overflow-hidden content-lazy">
-          {/* Review Schema for SEO */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Review",
-                itemReviewed: { "@type": "Restaurant", name: "Jinbeh Japanese Restaurant" },
-                reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-                author: { "@type": "Person", name: "Alaina Thompson" },
-                reviewBody: "I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be."
+ {/* Testimonial Section - Multiple Reviews */}
+ <section className="py-24 bg-white relative overflow-hidden content-lazy">
+ {/* Review Schema for SEO */}
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{
+ __html: JSON.stringify({
+ "@context": "https://schema.org",
+ "@type": "Review",
+ itemReviewed: { "@type": "Restaurant", name: "Jinbeh Japanese Restaurant" },
+ reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+ author: { "@type": "Person", name: "Alaina Thompson" },
+ reviewBody: "I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be."
               })
             }}
           />
@@ -862,7 +860,7 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Benihana has always been the standard, but this beats it. The sashimi was fresh and flavorful; fried rice was awesome and everything else completely on point. You cannot go wrong here.&rdquo;
+                      &ldquo;Benihana has always been the standard, but Jinbeh beats it. The sashimi was fresh and flavorful; fried rice was awesome and everything else completely on point. You cannot go wrong here.&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-[#FF1A1A]/10 flex items-center justify-center">
@@ -1284,7 +1282,6 @@ export default function HomePage() {
                 </div>
               </ScrollReveal>
             </div>
-
 
           </div>
         </section>

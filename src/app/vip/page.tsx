@@ -7,7 +7,7 @@ import { HeroSection, RevealSection, ShinyBadge } from "@/components/MagicUI";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Join the Jinbeh VIP Club | Free Birthday Gift + Secret Menu Access",
-    description: "Join 1,200+ Jinbeh VIP members. Get a free birthday dessert, a $25 gift card on your birthday, and access to our secret menu.",
+    description: "Join 1,200+ Jinbeh VIP members. Get a free birthday dessert, a gift card on your birthday, and access to our secret menu.",
     keywords: [
         "jinbeh vip",
         "vip club",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: "Jinbeh VIP Club | Join the Family",
-        description: "Join 1,200+ Jinbeh VIP members. Unlock a free dessert and $25 gift card on your birthday.",
+        description: "Join 1,200+ Jinbeh VIP members. Unlock a free dessert and gift card on your birthday.",
         url: "https://jinbeh.com/vip",
     images: [
       {
@@ -82,7 +82,7 @@ export default function VipPage() {
                         </RevealSection>
                         <RevealSection delay={200}>
                             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                                Join our exclusive community to unlock special member perks, including a free dessert and a $25 gift card on your birthday when you dine with us!
+ Join our exclusive community to unlock special member perks, including a free dessert and a gift card on your birthday when you dine with us!
                             </p>
                         </RevealSection>
                     </div>

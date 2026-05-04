@@ -15374,13 +15374,7 @@ Experience the best hibachi & sushi in DFW
 <a id="careers"></a>
 ## `/careers`
 
-<!-- EDIT
-page: /careers
-field: body
-find: ""
-replace: ""
-note: Add a paragraph that talks about how and why Jinbeh is the best place for kid's birthday parties.
--->
+
 
 - **Title:** Careers at Jinbeh | Join Our Family - Frisco & Lewisville, TX | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Join the Jinbeh family! We're hiring passionate individuals for positions in hibachi cooking, sushi preparation, hospitality, and more. Build your.
@@ -15454,6 +15448,14 @@ Build Your Future
 
 Experience, passion, and hospitality—we're looking for team members who share our commitment to excellence and family values.
 
+<!-- EDIT
+page: /careers
+field: body
+find: ""
+replace: ""
+note: Add a paragraph that talks about how and why Jinbeh is the best place to work.  We take care of our employees, treating them as top priority, who then take good care of customers, which leads to a successful business.  Many times businesses have thie backwards and it is a legacy of love. 
+Note, please make sure long sentences that have em dashes get broken up in to smaller separate sentences.
+-->
 Jinbeh careers are about more than Japanese restaurant jobs — join our team as a hibachi chef, sushi chef, server, or hospitality professional. We're hiring Jinbeh with hospitality jobs Frisco and server positions Lewisville. For 38 years, we've built more than a restaurant—we've created a family where team members thrive in the best restaurant careers DFW has to offer. Discover what makes the hibachi dining experience so special.
 
 We offer competitive hourly rates and tips-based compensation that rewards excellent service and performance.
@@ -15610,6 +15612,7 @@ Whether you're just starting your career or looking for a new challenge, Jinbeh 
 
 <a id="catering"></a>
 ## `/catering`
+
 
 - **Title:** Catering | Jinbeh Japanese Restaurant | Hibachi & Sushi Catering DFW | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Bring Jinbeh to your event! Japanese catering for corporate events, weddings, private parties, and special occasions in Frisco, Lewisville, and the.
@@ -15872,6 +15875,18 @@ Consistently excellent service
 
 Corporate Events
 
+<!-- EDIT
+page: /catering/corporate
+field: body
+find: "Trusted by major corporations
+
+> “Jinbeh catered our corporate retreat for 120 people. The quality of food was exceptional, the service was professional, and our clients were thoroughly impressed. We'll definitely use them again.”
+Michael R.
+
+VP Corporate Events - Fortune 500 Company"
+replace: ""
+note: This probably needs to be removed as I'm not sure where it came from.
+-->
 Trusted by major corporations
 
 > “Jinbeh catered our corporate retreat for 120 people. The quality of food was exceptional, the service was professional, and our clients were thoroughly impressed. We'll definitely use them again.”
@@ -15933,6 +15948,7 @@ Let Jinbeh handle your next corporate event with professional Japanese catering 
 
 <a id="catering-party"></a>
 ## `/catering/party`
+
 
 - **Title:** Party Catering Services | Jinbeh Japanese Restaurant | DFW Catering | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Bring Jinbeh to your party! Japanese catering for birthday parties, celebrations, and events in Frisco, Lewisville, and DFW. Fresh sushi, appetizers.
@@ -16099,6 +16115,8 @@ Email
 <a id="catering-wedding"></a>
 ## `/catering/wedding`
 
+
+
 - **Title:** Wedding Catering | Jinbeh Japanese Restaurant | Sushi & Hibachi Wedding Catering Frisco | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate your special day with authentic Japanese wedding catering. Sushi platters, hibachi entertainment, and customized menus for wedding receptions,.
 - **Canonical:** https://jinbeh.com/catering/wedding
@@ -16222,6 +16240,15 @@ Lock in your date, guest count, delivery time, and any special requests. We'll p
 
 As your wedding approaches, confirm final headcount, setup details, and any last-minute preferences.
 
+<!-- EDIT
+page: /catering/wedding
+field: body
+find: "Trusted by major corporations
+
+> “We handle delivery, setup, and service."
+replace: "We handle delivery and setup presentation."
+note: Need to include the name Jinbeh at least a couple times included in the most important sentences of this page that have the top primary keywords.  Include a bulleted, nice looking list about why Jinbeh is the best for weddings.
+-->
 We handle delivery, setup, and service. Sit back and celebrate while Jinbeh makes your culinary dreams come true!
 
 Fresh, high-quality ingredients and authentic Japanese preparation methods ensure your guests experience the best.
@@ -16289,6 +16316,14 @@ Absolutely. We create vegetarian, vegan, gluten-free, and allergy-friendly optio
 
 <a id="celebrations"></a>
 ## `/celebrations`
+
+<!-- EDIT
+page: /celebrations
+field: body
+find: ""
+replace: ""
+note: Break up long sentences, like ones with em dashed, in to smaller sentences.  Include a paragraph about why Jinbeh is the best for celebrations.
+-->
 
 - **Title:** Celebrations | Jinbeh Japanese Restaurant Frisco & Lewisville | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate birthdays, anniversaries, holidays & special occasions at Jinbeh! Hibachi entertainment, fresh sushi, private dining. Valentine's Day, Mother's.
@@ -16365,6 +16400,16 @@ Celebration Regular
 
 Google Review
 
+<!-- EDIT
+page: /celebrations
+field: body
+find: “ Perfect for our anniversary dinner — the sushi was fresh, the atmosphere was warm, and the staff made us feel special. ”
+Date Night Couple
+
+Yelp Review"
+replace: ""
+note: Not sure if that review exists.  Looks for and see if you find it online.  Additionally, for the rest of the page, Break up long sentences, like ones with em dashed, in to smaller sentences.  Include a paragraph about why Jinbeh is the best for celebrations. 
+-->
 > “ Perfect for our anniversary dinner — the sushi was fresh, the atmosphere was warm, and the staff made us feel special. ”
 Date Night Couple
 
@@ -16618,6 +16663,14 @@ Elevate your anniversary dinner with the perfect sake for each course.
 <a id="celebrations-asian-restaurant-month"></a>
 ## `/celebrations/asian-restaurant-month`
 
+<!-- EDIT
+page: /celebrations/asian-restaurant-month
+field: body
+find: “"
+replace: ""
+note: Look up the top 10 sites on google for asian restaurant month dallas to see what keywords are included most commonly.  Write a paragraph about why Jinbeh is the best using those keywords (assuming it accurately is portraying the restaurant.
+-->
+
 - **Title:** Asian Restaurant Month | May AAPI Heritage Month | Jinbeh Japanese Restaurant Frisco & Lewisville | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate Asian Restaurant Month this May at Jinbeh! Support Asian-owned restaurants during AAPI Heritage Month. Hibachi, sushi, and authentic Japanese dining in Frisco.
 - **Canonical:** https://jinbeh.com/celebrations/asian-restaurant-month
@@ -16862,6 +16915,14 @@ Order beautiful sushi platters that will wow your shower guests.
 <a id="celebrations-birthday"></a>
 ## `/celebrations/birthday`
 
+<!-- EDIT
+page: /celebrations/birthday
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Make sure you tout the things that sell Jinbeh well for birthdays (including some of the top keywords searched for in google for birthday celebration restaurant.
+-->
+
 - **Title:** Birthday Parties | Jinbeh Japanese Restaurant | Hibachi Birthday Celebration | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate your birthday at Jinbeh! Hibachi entertainment, the famous onion volcano, and unforgettable moments for all ages. Book your birthday dinner.
 - **Canonical:** https://jinbeh.com/celebrations/birthday
@@ -16999,6 +17060,14 @@ Related: Unique Adult Birthday Party Ideas & Themes →
 <a id="celebrations-christmas"></a>
 ## `/celebrations/christmas`
 
+<!-- EDIT
+page: /celebrations/christmas
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Include the fact that we are open on Christmas.  Mention the fact that by us doing the cooking, you and your family can focus on celebration Christmas opening presentations and no need to cook and clean the dishes.
+-->
+
 - **Title:** Christmas Dinner Frisco & Lewisville | Holiday Dining | Jinbeh Japanese Restaurant | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate Christmas at Jinbeh! Hibachi, sushi, and Japanese dining for the holidays. Frisco and Lewisville TX locations open Christmas Eve. Reserve your holiday table!
 - **Canonical:** https://jinbeh.com/celebrations/christmas
@@ -17091,6 +17160,8 @@ Pair your Christmas feast with premium sake for an elevated celebration.
 
 <a id="celebrations-corporate-events"></a>
 ## `/celebrations/corporate-events`
+
+
 
 - **Title:** Corporate Dinner & Team Events Frisco TX | Private Dining | Jinbeh Japanese Restaurant | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Host memorable corporate dinners, team building events & business celebrations at Jinbeh. Private hibachi tables, group sushi platters & professional service in Frisco &.
@@ -17673,6 +17744,14 @@ Pair his meal with world-class Japanese whiskey at the bar.
 <a id="celebrations-graduation"></a>
 ## `/celebrations/graduation`
 
+<!-- EDIT
+page: /celebrations/graduation
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  We don't do custom pricing or custom menus.  Remove those types of references.  Pricing should be removed too.
+-->
+
 - **Title:** Graduation Party Restaurants | Jinbeh Japanese Restaurant | Frisco TX | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate your graduate's achievement at Jinbeh! Graduation party packages, hibachi entertainment, group seating for 10-100+ guests. Book your.
 - **Canonical:** https://jinbeh.com/celebrations/graduation
@@ -18237,6 +18316,15 @@ Complete your festival celebration with authentic Japanese beverages.
 <a id="celebrations-mothers-day"></a>
 ## `/celebrations/mothers-day`
 
+<!-- EDIT
+page: /celebrations/mothers-day
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Look up seo keywords related to mother's day that haven't been included yet.  Mention why Jinbeh is the best place to go for mother's day.  Mom doesn't have to cook or wash the dishes. Your family enjoys eacch other's company, a fun show, and delicious food.
+-->
+
+
 - **Title:** Mother's Day Dinner Frisco & Lewisville | Celebrate Mom | Jinbeh Japanese Restaurant | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Treat Mom to an unforgettable Mother's Day dinner at Jinbeh! Hibachi, sushi, and family-style Japanese dining in Frisco and Lewisville TX. Make reservations early!
 - **Canonical:** https://jinbeh.com/celebrations/mothers-day
@@ -18567,6 +18655,14 @@ Discover why Jinbeh is a top choice for pre-wedding celebrations in Frisco.
 <a id="celebrations-team-building"></a>
 ## `/celebrations/team-building`
 
+<!-- EDIT
+page: /celebrations/team-building
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Groups of 7-8 are ideal for hibachi tables.  However, we have regularly hosted large groups, like 40-50 in size.
+-->
+
 - **Title:** Team Building Events | Corporate Dining | Jinbeh Japanese Restaurant Frisco & Lewisville TX | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Strengthen team bonds with hibachi entertainment at Jinbeh! Interactive corporate team building events in Frisco and Lewisville. Book your team event.
 - **Canonical:** https://jinbeh.com/celebrations/team-building
@@ -18680,6 +18776,14 @@ Bring the hibachi show experience to your next team event.
 
 <a id="celebrations-thanksgiving"></a>
 ## `/celebrations/thanksgiving`
+
+<!-- EDIT
+page: /celebrations/thanksgiving
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Include more content about Thanksgiving and why Jinbeh is a great fit for thanksgiving.  you don't have to cook, you get a show, and delicious fresh food (do research on the best way to say or market these).
+-->
 
 - **Title:** Thanksgiving Dinner Frisco & Lewisville | Skip the Cooking | Jinbeh Japanese Restaurant | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Celebrate Thanksgiving at Jinbeh! Let us cook while you relax. Hibachi, sushi, and Japanese dining in Frisco and Lewisville TX. Open Thanksgiving Day - reserve now!
@@ -18913,6 +19017,14 @@ Related: Japanese Restaurants Near Me in DFW →
 <a id="delivery"></a>
 ## `/delivery`
 
+<!-- EDIT
+page: /delivery
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  If you want quick delivery, our Grub Hub and Uber Eats options are great.  Let us know at leeast a week in advance if you want a catering delivery for a large group and we can make it an excellent experience for your group.
+-->
+
 - **Title:** Jinbeh Delivery | Japanese Food Delivery Frisco & Lewisville TX | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Order authentic Japanese sushi and hibachi favorites for delivery in Frisco and Lewisville. Available on Uber Eats and Grubhub. Fresh ingredients.
 - **Canonical:** https://jinbeh.com/delivery
@@ -19102,6 +19214,14 @@ Prefer to pick up? See our takeout options →
 
 <a id="events"></a>
 ## `/events`
+
+<!-- EDIT
+page: /events
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Capacity at our locations each is over 100 if the group is that large.  Sell why Jinbeh is a great fit for events (look up reviews that talk about people who did events at Jinbeh, only verified actual reviews).  Don't post pricing.  Encourage using Open Table to book the events (with the link(s).
+-->
 
 - **Title:** Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Host your next event at Jinbeh! Private dining in Frisco (40 guests) & Lewisville (30 guests) with hibachi entertainment, custom menus, and dedicated.
@@ -19698,6 +19818,14 @@ Related: Things to Do in Frisco TX: Your Ultimate Guide →
 
 <a id="frisco-appetizers"></a>
 ## `/frisco/appetizers`
+
+<!-- EDIT
+page: /frisco/appetizers
+field: body
+find: “"
+replace: ""
+note: break up long sentences that have em dashes in to 2 sentences or thoughts.  Pricing shouldn't be discussed.  Conclude why Jinbeh is the best for appetizers (do research from reviews as to what people have liked and why, actual reviews).
+-->
 
 - **Title:** Appetizers Menu | Jinbeh Frisco Japanese Restaurant | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Browse Jinbeh Frisco's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi.
@@ -20876,6 +21004,8 @@ Also available at our Lewisville location
 
 <a id="frisco-cocktails-sake-flight"></a>
 ## `/frisco/cocktails/sake-flight`
+
+
 
 - **Title:** Premium Sake Flight Frisco - Japanese Tasting | Jinbeh | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Three premium sake tasting flight at Jinbeh Frisco. Experience authentic Japanese sakes with expert guidance. Best sake selection near Stonebriar (214) 619-1200.
@@ -31214,6 +31344,8 @@ Also available at our Frisco location
 
 <a id="lewisville-specials"></a>
 ## `/lewisville/specials`
+
+
 
 - **Title:** Lewisville Specials & Deals | Jinbeh Japanese Restaurant | Jinbeh Japanese Restaurant – Since 1988
 - **Meta description:** Check out exclusive specials at Jinbeh Lewisville! Happy Hour, lunch deals, and weekly promotions. Great discounts on sushi, hibachi, and Japanese.

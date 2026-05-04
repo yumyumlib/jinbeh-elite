@@ -99,7 +99,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -349,7 +348,7 @@ export default function RestaurantsPrivateRooms() {
                                     </h2>
 
                                     <p>
-                                        Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for private events. Our semi-private dining spaces — including private booths in the sushi area and a secluded section with dividers in the Frisco hibachi space — combine fine dining sophistication with the warmth of Japanese hospitality.
+                                        Jinbeh offers exquisite Japanese cuisine in a refined setting, making it an ideal choice for memorable group events. Most of our seating is open and lively. For guests who want a quieter setting, our Lewisville location has tatami-style booths near a relaxing sushi bar, and our Frisco location offers a small number of partitioned booths in the back, which we&apos;ve hosted celebrities and notable guests in over the years. The result is fine-dining sophistication paired with the warmth of Japanese hospitality.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">

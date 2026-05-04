@@ -20,7 +20,6 @@ export const sashimi: MenuItem[] = [
             { slug: 'tuna-sashimi', name: 'Tuna Sashimi', category: 'sashimi' },
             { slug: 'yellowtail-sashimi', name: 'Yellowtail Sashimi', category: 'sashimi' },
             { slug: 'sashimi-deluxe', name: 'Sashimi Deluxe', category: 'sashimi' },
-            { slug: 'omakase', name: 'Omakase', category: 'sashimi' },
         ],
         faqs: [
             { question: 'What\'s the difference between sashimi and sushi?', answer: 'Sashimi is pure sliced fish with no rice. it showcases the fish in its most pristine form. Sushi includes seasoned rice (nigiri has fish on rice, maki has fish inside rice rolls). Both use the same sushi-grade fish, but sashimi is all about the unadulterated flavor and texture of the fish.' },
@@ -52,7 +51,6 @@ export const sashimi: MenuItem[] = [
             { slug: 'salmon-sashimi', name: 'Salmon Sashimi', category: 'sashimi' },
             { slug: 'yellowtail-sashimi', name: 'Yellowtail Sashimi', category: 'sashimi' },
             { slug: 'sashimi-deluxe', name: 'Sashimi Deluxe', category: 'sashimi' },
-            { slug: 'omakase', name: 'Omakase', category: 'sashimi' },
         ],
         faqs: [
             { question: 'What does tuna sashimi taste like?', answer: 'Ahi tuna sashimi has a clean, meaty, slightly mineral flavor that\'s often described as steak-like for raw fish. It\'s leaner than salmon, with a firmer texture and a deep, satisfying quality. The ruby-red color is visually stunning and indicates peak freshness.' },
@@ -83,7 +81,6 @@ export const sashimi: MenuItem[] = [
             { slug: 'salmon-sashimi', name: 'Salmon Sashimi', category: 'sashimi' },
             { slug: 'tuna-sashimi', name: 'Tuna Sashimi', category: 'sashimi' },
             { slug: 'sashimi-deluxe', name: 'Sashimi Deluxe', category: 'sashimi' },
-            { slug: 'omakase', name: 'Omakase', category: 'sashimi' },
         ],
         faqs: [
             { question: 'What is hamachi / yellowtail?', answer: 'Hamachi is the Japanese name for yellowtail, a premium fish prized for its buttery richness and silky texture. It\'s considered one of the top sashimi fish in Japanese cuisine, alongside tuna and salmon. Its flavor is richer than white fish but more delicate than tuna, with a melt-in-your-mouth quality.' },
@@ -143,7 +140,6 @@ export const sashimi: MenuItem[] = [
             { slug: 'salmon', name: 'Hibachi Salmon', category: 'hibachi', why: 'Follow a raw fish platter with a grilled-fish entrée for contrast' },
         ],
         relatedItems: [
-            { slug: 'omakase', name: 'Omakase', category: 'sashimi' },
             { slug: 'chirashi', name: 'Chirashi Bowl', category: 'sashimi' },
             { slug: 'salmon-sashimi', name: 'Salmon Sashimi', category: 'sashimi' },
             { slug: 'tuna-sashimi', name: 'Tuna Sashimi', category: 'sashimi' },
@@ -176,7 +172,6 @@ export const sashimi: MenuItem[] = [
         ],
         relatedItems: [
             { slug: 'sashimi-deluxe', name: 'Sashimi Deluxe', category: 'sashimi' },
-            { slug: 'omakase', name: 'Omakase', category: 'sashimi' },
             { slug: 'salmon-sashimi', name: 'Salmon Sashimi', category: 'sashimi' },
             { slug: 'tuna-sashimi', name: 'Tuna Sashimi', category: 'sashimi' },
         ],
@@ -190,38 +185,5 @@ export const sashimi: MenuItem[] = [
         origin: "Chirashi-zushi (\"scattered sushi\") is a traditional Japanese home-cooking dish often served during the Hinamatsuri (Girls' Day) festival.",
         nutritionHighlight: "A chirashi bowl delivers approximately 450 calories and 35g protein. The warm sushi rice adds complex carbohydrates, while the sashimi provides lean protein and omega-3s.",
         experienceNote: "The bowl arrives with jewel-colored fish covering warm seasoned rice. Tuna, salmon, yellowtail, and shrimp glisten against the white rice. Mix wasabi into soy sauce and drizzle over the top.",
-    },
-    {
-        slug: 'omakase',
-        category: 'sashimi',
-        name: 'Omakase',
-        tagline: '"I\'ll Leave It to You". The Chef\'s Ultimate Tasting Experience',
-        description: 'Omakase translates to "I\'ll leave it to you". and that\'s exactly what you do. Trust our master sushi chef to craft a personalized multi-course tasting of the day\'s finest, freshest ingredients. Each omakase experience is unique, featuring the chef\'s most inspired creations and the best seasonal fish available. This is the pinnacle of Japanese dining.',
-        tasteProfile: { flavor: 'A curated journey through the chef\'s finest and freshest selections', texture: 'The full spectrum of sashimi textures, from silky to firm', heat: 'none', heatLabel: 'Varies by course' },
-        preparation: 'Our sushi chef curates a multi-course experience based on the day\'s freshest fish and seasonal ingredients. Each course is presented one at a time, often with a brief explanation of the fish and preparation. No two omakase experiences are exactly alike.',
-        keyIngredients: ['Chef\'s daily selection of premium fish', 'Seasonal specialties', 'House-crafted presentations'],
-        dietary: { raw: true, dairyFree: true },
-        pairsWith: [
-            { slug: 'sake-flight', name: 'Sake Flight', category: 'cocktails', why: 'Let the chef choose your sushi, sample sakes alongside' },
-            { slug: 'edamame', name: 'Edamame', category: 'appetizers', why: 'A simple start before the chef takes the lead' },
-            { slug: 'filet-mignon', name: 'Filet Mignon', category: 'hibachi', why: 'Follow the sushi chef\'s creation with a hibachi chef\'s performance' },
-        ],
-        relatedItems: [
-            { slug: 'sashimi-deluxe', name: 'Sashimi Deluxe', category: 'sashimi' },
-            { slug: 'chirashi', name: 'Chirashi Bowl', category: 'sashimi' },
-            { slug: 'salmon-sashimi', name: 'Salmon Sashimi', category: 'sashimi' },
-            { slug: 'tuna-sashimi', name: 'Tuna Sashimi', category: 'sashimi' },
-        ],
-        faqs: [
-            { question: 'What does omakase mean?', answer: 'Omakase (oh-mah-KAH-seh) is Japanese for "I\'ll leave it to you." When you order omakase, you trust the sushi chef to create a personalized tasting experience using the day\'s freshest and finest ingredients. It\'s the highest expression of trust between a diner and chef in Japanese cuisine.' },
-            { question: 'Do I get to choose what I eat during omakase?', answer: 'The beauty of omakase is letting the chef surprise you. However, you should let your server know about any allergies or strong dislikes before the experience begins. The chef will tailor the experience to your preferences while still introducing you to new flavors and preparations.' },
-            { question: 'How many courses are in omakase?', answer: 'The number of courses varies, but typically includes multiple sashimi courses, nigiri pieces, and potentially a specialty roll or preparation. Each course is presented individually, creating a multi-course dining journey.' },
-        ],
-        proTip: 'Sit at the sushi bar for omakase if possible. watching the chef craft each course right in front of you is part of the magic.',
-        heroImage: '/images/hq/sushi-rolls-2026.jpg',
-        jinbehStory: "Omakase at Jinbeh is a direct conversation between guest and chef. Our sushi master selects the finest fish of the day and prepares courses that build from delicate to rich.",
-        origin: "Omakase means \"I leave it to you\" in Japanese. It represents the highest level of trust between diner and chef. The tradition dates back to Edo-period Tokyo sushi stalls.",
-        nutritionHighlight: "An omakase experience typically delivers 400-600 calories depending on courses. The focus on lean, raw fish makes it one of the most protein-dense dining experiences available.",
-        experienceNote: "Sit at the sushi bar for the full experience. The chef presents each course individually, explaining the fish and why it made the cut. Each piece is prepared moments before it reaches you.",
     },
 ];

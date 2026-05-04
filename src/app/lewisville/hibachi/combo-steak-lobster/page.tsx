@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Steak & Lobster Combo",
   "description": "Surf and turf perfection",
-  "offers": {
-    "@type": "Offer",
-    "price": "54.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Steak & Lobster Combo hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steak & Lobster Combo at Jinbeh Lewisville is surf and turf perfection. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $54.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Steak & Lobster Combo at Jinbeh Lewisville is surf and turf perfection. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function ComboSteakLobsterLewisvillePage() {
   const item = getMenuItem("combo-steak-lobster", "hibachi")!;

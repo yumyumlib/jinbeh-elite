@@ -279,6 +279,55 @@ export default function WeddingCateringPage() {
           </div>
         </section>
 
+        {/* Why Jinbeh for Weddings */}
+        <section className="py-16 md:py-20 bg-charcoal text-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-5xl mx-auto">
+              <p className="text-soft-gold font-medium tracking-wider uppercase text-sm text-center mb-3">Why Couples Choose Jinbeh</p>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-10">
+                Why Jinbeh Is the Best Choice for Wedding Catering in DFW
+              </h2>
+              <ul className="grid md:grid-cols-2 gap-x-10 gap-y-5 text-warm-ivory/90">
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>38+ years of Japanese hospitality.</strong> Jinbeh has been serving DFW since 1988, and that experience shows in every plate, every platter, and every guest interaction.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Restaurant-quality sushi catering.</strong> Specialty rolls, nigiri, and sashimi crafted by Jinbeh sushi chefs and arranged on stunning presentation platters.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Premium hibachi proteins.</strong> Filet, ribeye, jumbo shrimp, salmon, and chicken prepared in the Jinbeh kitchen and delivered hot.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Beautiful presentation.</strong> Trays and platters are arranged so the spread looks as good as it tastes the moment it lands.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Live hibachi at the restaurant.</strong> Hosting your rehearsal dinner or after-party at our <Link href="/frisco" className="text-soft-gold hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-soft-gold hover:underline">Lewisville</Link> location? You also get the full tableside hibachi show.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Delivery and setup presentation.</strong> Jinbeh handles the delivery and tray setup so your venue and event team can focus on the couple, not the food.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Flexible menus.</strong> Sushi-forward, hibachi-forward, vegetarian-friendly, kid-friendly. Jinbeh wedding catering is built around your guest list.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-soft-gold font-bold">✦</span>
+                  <span><strong>Trusted by DFW couples.</strong> Hundreds of weddings, rehearsal dinners, and bridal showers across Frisco, Lewisville, and the broader DFW metro have been catered by Jinbeh.</span>
+                </li>
+              </ul>
+              <p className="text-center text-sm text-warm-ivory/70 mt-8">
+                Please give us at least one week of notice for wedding catering so we can plan menu, prep, and delivery details properly.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Wedding Services */}
         <section className="py-20 bg-warm-ivory">
           <div className="container mx-auto px-6">

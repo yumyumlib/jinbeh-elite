@@ -75,7 +75,6 @@ const faqSchema = {
   ],
 };
 
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -182,6 +181,9 @@ export default function ChristmasPage() {
                 for an experience the whole family will love. At Jinbeh, the flames are bright,
                 the food is festive, and the memories last long after the meal is over.
               </p>
+              <p className="text-base text-charcoal/70 leading-relaxed max-w-3xl mx-auto mt-5">
+                <strong>Yes, Jinbeh is open on Christmas Day</strong> at both our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. By letting us do the cooking, your family gets to focus on the part of Christmas that matters: opening presents together, enjoying each other&apos;s company, and not spending the day prepping a turkey or scrubbing pans afterward. We handle the meal and the mess. You handle the memories. Reservations are recommended on Christmas Day.
+              </p>
             </div>
 
             {/* Why Jinbeh for Christmas */}
@@ -237,19 +239,19 @@ export default function ChristmasPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Filet Mignon — the gift of premium steak
+                      Filet Mignon: the gift of premium steak
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Lobster Tail — festive and indulgent
+                      Lobster Tail: festive and indulgent
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Imperial Dinner — steak, lobster, shrimp
+                      Imperial Dinner: steak, lobster, shrimp
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Hibachi Fried Rice — everyone&apos;s favorite
+                      Hibachi Fried Rice: everyone&apos;s favorite
                     </li>
                   </ul>
                 </div>
@@ -258,19 +260,19 @@ export default function ChristmasPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Party Platters — great for sharing
+                      Party Platters: great for sharing
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Sashimi Deluxe — chef&apos;s selection
+                      Sashimi Deluxe: chef&apos;s selection
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Hot Sake — warm up the holidays
+                      Hot Sake: warm up the holidays
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Signature Cocktails — festive toasts
+                      Signature Cocktails: festive toasts
                     </li>
                   </ul>
                 </div>
@@ -413,7 +415,7 @@ export default function ChristmasPage() {
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
                   The Hibachi Dining Experience
                 </h3>
-                <p className="text-sm text-charcoal/70 mt-2">Skip the usual holiday dinner — give the family a hibachi show they'll never forget.</p>
+                <p className="text-sm text-charcoal/70 mt-2">Skip the usual holiday dinner. Give the family a hibachi show they&apos;ll never forget.</p>
               </Link>
               <Link href="/blog/sake-pairing-guide" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Drinks</span>

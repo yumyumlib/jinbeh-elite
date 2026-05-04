@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Vegetable & Tofu",
   "description": "Fresh seasonal vegetables with crispy tofu",
-  "offers": {
-    "@type": "Offer",
-    "price": "19.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "How many calories in hibachi Vegetable & Tofu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vegetable & Tofu contains approximately 180-220 calories with 14-18g plant-based protein from crispy tofu and vegetables. The complete hibachi dinner totals 550-700 calories. It's the most affordable hibachi option at $19.95."
+        "text": "Vegetable & Tofu contains approximately 180-220 calories with 14-18g plant-based protein from crispy tofu and vegetables. The complete hibachi dinner totals 550-700 calories. It's the most affordable hibachi option at."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function VegetableTofuFriscoPage() {
   const item = { ...getMenuItem("vegetable-tofu", "hibachi")!, jinbehStory: "Jinbeh\'s hibachi is naturally friendly to plant-based diets. Gluten-free is easy — only the sauces contain gluten, not the base ingredients. Fried rice can be made gluten-free on request. Our chefs handle allergy situations carefully at 550°F grill temperatures." };

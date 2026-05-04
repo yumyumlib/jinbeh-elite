@@ -35,7 +35,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -73,20 +72,20 @@ export default function SakeGuide() {
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8"><strong>How strong is sake?</strong> At 15-17% ABV, it's similar to wine but brewed like beer. Let's explore types, serving, and pairings. For a deeper dive into <Link href="/blog/types-of-sake-explained" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake varieties</Link>, check out our comprehensive guide, and explore <Link href="/blog/sake-taste-profile" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake's complex flavor profile</Link> to understand what each sip reveals.</p>
 
-                            <div className="grid grid-cols-4 gap-3 my-8">
-                                {[{ e: "🍺", n: "Beer", v: "4-6%", c: "amber" }, { e: "🍷", n: "Wine", v: "12-14%", c: "red" }, { e: "🍶", n: "Sake", v: "15-17%", c: "purple" }, { e: "🥃", n: "Whiskey", v: "40%", c: "amber" }].map(x => (
-                                    <div key={x.n} className={`bg-${x.c}-50 rounded-xl p-4 text-center border-2 border-${x.c}-200 ${x.n === "Sake" ? "ring-2 ring-purple-400" : ""}`}>
-                                        <span className="text-3xl block mb-1">{x.e}</span>
-                                        <span className="font-bold text-sm">{x.n}</span>
-                                        <span className="block text-lg font-bold text-charcoal">{x.v}</span>
-                                    </div>
-                                ))}
-                            </div>
+ <div className="grid grid-cols-4 gap-3 my-8">
+ {[{ e: "🍺", n: "Beer", v: "4-6%", c: "amber" }, { e: "🍷", n: "Wine", v: "12-14%", c: "red" }, { e: "🍶", n: "Sake", v: "15-17%", c: "purple" }, { e: "🥃", n: "Whiskey", v: "40%", c: "amber" }].map(x => (
+ <div key={x.n} className={`bg-${x.c}-50 rounded-xl p-4 text-center border-2 border-${x.c}-200 ${x.n === "Sake" ? "ring-2 ring-purple-400" : ""}`}>
+ <span className="text-3xl block mb-1">{x.e}</span>
+ <span className="font-bold text-sm">{x.n}</span>
+ <span className="block text-lg font-bold text-charcoal">{x.v}</span>
+ </div>
+ ))}
+ </div>
 
-                            <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 Sake Types</h2>
+ <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍶 Sake Types</h2>
 
-                            <DidYouKnow
-                                fact="Sake has been brewed in Japan for over 2,000 years, making it one of the world's oldest alcoholic beverages. Despite being called 'rice wine,' sake is actually brewed more like beer through a parallel fermentation process. Japan has over 1,400 active sake breweries, and the premium sake market has grown 25% globally since 2020 as international appreciation expands."
+ <DidYouKnow
+ fact="Sake has been brewed in Japan for over 2,000 years, making it one of the world's oldest alcoholic beverages. Despite being called 'rice wine,' sake is actually brewed more like beer through a parallel fermentation process. Japan has over 1,400 active sake breweries, and the premium sake market has grown 25% globally since 2020 as international appreciation expands."
                                 source="Japan Sake and Shochu Makers Association"
                             />
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">

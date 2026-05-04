@@ -102,6 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/menu',
         '/specials',
+        '/sushi',
         '/sushi-rolls',
         '/sashimi',
         '/hibachi',
@@ -145,7 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Manually add the programmatic sub-items based on sitemap structure context
     const itemsFrisco = [
         '/sushi-rolls/california-roll', '/sushi-rolls/spicy-tuna-roll', '/sushi-rolls/rainbow-roll', '/sushi-rolls/caterpillar-roll', '/sushi-rolls/spider-roll', '/sushi-rolls/dragon-roll', '/sushi-rolls/tiger-roll', '/sushi-rolls/butterfly-kiss', '/sushi-rolls/shrimp-tempura-roll', '/sushi-rolls/philly-roll', '/sushi-rolls/vegas-roll', '/sushi-rolls/volcano-roll', '/sushi-rolls/ahi-tower', '/sushi-rolls/yellowtail-jalapeno',
-        '/sashimi/omakase', '/sashimi/sashimi-deluxe', '/sashimi/salmon-sashimi', '/sashimi/tuna-sashimi', '/sashimi/yellowtail-sashimi', '/sashimi/chirashi', '/sashimi/octopus-sashimi',
+        '/sashimi/sashimi-deluxe', '/sashimi/salmon-sashimi', '/sashimi/tuna-sashimi', '/sashimi/yellowtail-sashimi', '/sashimi/chirashi', '/sashimi/octopus-sashimi',
         '/hibachi/filet-mignon', '/hibachi/ny-strip', '/hibachi/ribeye', '/hibachi/chicken-teriyaki', '/hibachi/shrimp', '/hibachi/scallops', '/hibachi/salmon', '/hibachi/lobster-tail', '/hibachi/vegetable-tofu', '/hibachi/combo-steak-chicken', '/hibachi/combo-steak-shrimp', '/hibachi/combo-seafood', '/hibachi/combo-steak-lobster', '/hibachi/imperial-dinner',
         '/appetizers/edamame', '/appetizers/gyoza', '/appetizers/tempura', '/appetizers/soft-shell-crab', '/appetizers/seared-tuna', '/appetizers/tuna-tartare',
         '/cocktails/jinbeh-punch', '/cocktails/tokyo-mule', '/cocktails/lychee-martini', '/cocktails/sake-bomb', '/cocktails/sake-flight'

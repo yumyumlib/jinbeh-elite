@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Edamame",
   "description": "Steamed soybeans with sea salt",
-  "offers": {
-    "@type": "Offer",
-    "price": "5.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Is Edamame available for takeout and specials?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Edamame at $5.95 travels well for takeout and is a great pairing with $4 draft beer or $5 sake during Happy Hour (Mon-Fri 5-6:30pm). Call (214) 619-1200 or order online."
+        "text": "Yes! Edamame at travels well for takeout and is a great pairing with draft beer or sake during Happy Hour (Mon-Fri 5-6:30pm). Call (214) 619-1200 or order online."
       }
     }
   ]
 };
-
 
 export default function EdamameFriscoPage() {
   const item = { ...getMenuItem("edamame", "appetizers")!, jinbehStory: "Regular edamame gets the Jinbeh upgrade — sautéed with our spicy sauce and garlic, with an intentional touch of char. One of those items where the preparation makes a humble ingredient feel special." };

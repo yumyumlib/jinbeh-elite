@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Salmon Sashimi",
   "description": "Fresh Atlantic salmon, sliced to perfection",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -89,12 +84,11 @@ const faqSchema = {
       "name": "Can I order Salmon Sashimi as part of a platter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Salmon Sashimi is available individually at $14.95 or as part of our Sashimi Deluxe Platter ($32.95) and Chirashi Bowl. Ask about our Omakase for premium selections."
+        "text": "Yes! Salmon Sashimi is available individually at or as part of our Sashimi Deluxe Platter and Chirashi Bowl. Ask about our Omakase for premium selections."
       }
     }
   ]
 };
-
 
 export default function SalmonSashimiFriscoPage() {
   const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\' — just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };

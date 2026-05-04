@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Tokyo Mule",
   "description": "Japanese whiskey with ginger and lime",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.00",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Frisco",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function TokyoMuleFriscoPage() {
   const item = getMenuItem("tokyo-mule", "cocktails")!;

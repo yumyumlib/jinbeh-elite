@@ -379,7 +379,6 @@ export default function CareersPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
@@ -463,10 +462,13 @@ export default function CareersPage() {
                   </h2>
                   <div className="space-y-5 text-charcoal/80 leading-relaxed">
                     <p>
-                      Working at Jinbeh means being part of something special. For over three decades, we've maintained the same core values: genuine hospitality, commitment to quality, and treating everyone—guests and team members alike—as family.
+                      Working at Jinbeh means being part of something special. For over three decades, we&apos;ve maintained the same core values: genuine hospitality, commitment to quality, and treating everyone, guests and team members alike, as family.
                     </p>
                     <p>
-                      Whether you're flipping hibachi on the griddle, crafting perfect sushi rolls, serving with a smile, or welcoming guests at the door, your contributions matter. We invest in our team members' growth and celebrate their successes.
+                      Jinbeh is one of the best places in DFW to work because we make our people the priority. When the team feels valued and supported, that warmth shows up in every interaction with our guests. Many of our team members have been with us for decades, including managers, hibachi chefs, and sushi chefs who&apos;ve helped shape what Jinbeh is today. We invest in growth, promote from within, and look out for each other on and off the floor.
+                    </p>
+                    <p>
+                      Whether you&apos;re flipping hibachi on the griddle, crafting perfect sushi rolls, serving with a smile, or welcoming guests at the door, your contributions matter. We invest in our team members&apos; growth and celebrate their successes.
                     </p>
                     <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
                       "The best part of working at Jinbeh is the family atmosphere. Everyone here genuinely cares about each other and wants each other to succeed."

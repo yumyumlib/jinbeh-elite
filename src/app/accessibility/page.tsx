@@ -122,9 +122,6 @@ export default function AccessibilityPage() {
                 <strong>Phone:</strong> (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville)<br />
                 <strong>Email:</strong> Contact us through our website
               </p>
-              <p className="mt-4">
-                We try to respond to accessibility feedback within 3-5 business days.
-              </p>
             </section>
 
             <section className="mb-8">

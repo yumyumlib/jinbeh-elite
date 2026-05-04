@@ -45,7 +45,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -186,17 +185,14 @@ export default function AsianCuisineDallas() {
                                 </tbody>
                             </table>
 
-                            <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Uchi Dallas</h3>
-                            <p className="text-charcoal/80 mb-4">Known for its inventive sushi and Japanese dishes, Uchi Dallas offers a modern take on traditional Japanese cuisine. Their menu features an array of sushi rolls, sashimi, and hot dishes celebrated for meticulous attention to detail. Each dish is not only delicious but visually stunning, with emphasis on fresh ingredients and innovative flavor combinations.</p>
+                            <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Jinbeh Japanese Steak, Seafood &amp; Sushi</h3>
+                            <p className="text-charcoal/80 mb-4">Known for its inventive sushi and Japanese dishes, Jinbeh offers a warm, family-friendly take on traditional Japanese cuisine. The menu features <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">specialty sushi rolls</Link>, fresh nigiri and sashimi, hibachi steak and seafood, and house-made sauces prepared daily. Each dish is delicious and visually stunning, with an emphasis on fresh ingredients, the live <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi show</Link>, and a hospitality tradition that has welcomed DFW families since 1988.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Tei-An</h3>
-                            <p className="text-charcoal/80 mb-4">Located in the Arts District, Tei-An is a soba house specializing in handmade soba noodles. The restaurant's minimalist design complements its refined menu, including a variety of sushi and sashimi options. It's about the art of Japanese dining, where simplicity and elegance create a serene dining experience. The delicate flavors and expert craftsmanship make it a must-visit.</p>
-
-                            <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Jinbeh Hibachi & Sushi</h3>
-                            <p className="text-charcoal/80 mb-6">Jinbeh combines the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> cooking with fresh <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> offerings. The lively atmosphere and skilled chefs make dining here memorable. Guests watch as their meals are expertly prepared right in front of them, adding entertainment to the experience. The fusion of flavors combined with vibrant energy makes Jinbeh a standout spot for exploring Asian fusion.</p>
+                            <p className="text-charcoal/80 mb-6">Located in the Arts District, Tei-An is a soba house specializing in handmade soba noodles. The restaurant's minimalist design complements its refined menu, including a variety of sushi and sashimi options. It's about the art of Japanese dining, where simplicity and elegance create a serene dining experience. The delicate flavors and expert craftsmanship make it a must-visit.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Traditional Asian Flavors</h2>
-                            <p className="text-charcoal/80 mb-6">While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. These establishments offer a taste of familiar, comforting flavors cherished for generations. Traditional Asian cuisine is revered for its emphasis on fresh ingredients, bold spices, and time-honored cooking techniques resulting in dishes rich in flavor and history.</p>
+                            <p className="text-charcoal/80 mb-6">While Asian fusion offers exciting twists, traditional Asian cuisine remains a favorite for many. Jinbeh Japanese Restaurant was one of the first authentic Japanese spots in North Dallas and is still widely loved as one of the best Asian restaurants in the area. Dallas boasts a wide selection of restaurants specializing in authentic dishes from across Asia. These establishments offer a taste of familiar, comforting flavors cherished for generations. Traditional Asian cuisine is revered for its emphasis on fresh ingredients, bold spices, and time-honored cooking techniques resulting in dishes rich in flavor and history.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3">Must-Try Traditional Restaurants</h3>
 
@@ -243,7 +239,7 @@ export default function AsianCuisineDallas() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌍 Asian Cuisine in DFW</h2>
                             <p className="text-charcoal/80 mb-6">The Dallas-Fort Worth area is rich with culinary treasures. Whether searching for the best sushi, noodles, or curry, DFW has it all. The region's diverse culinary landscape testifies to the vibrant cultural tapestry defining DFW, offering dining options catering to every taste and preference.</p>
 
-                            <p className="text-charcoal/80 mb-6">Exploring the Asian culinary scene in DFW is an adventure through different cultures and flavors. From bustling city centers to charming suburbs, the area's Asian restaurants offer a wealth of options celebrating the diversity and richness of Asian cuisine. Whether local or visiting, discovering the best Asian food in DFW promises a delicious and rewarding experience.</p>
+                            <p className="text-charcoal/80 mb-6">Exploring the Asian culinary scene in DFW is an adventure through different cultures and flavors. From bustling city centers to charming suburbs, the area's Asian restaurants offer a wealth of options celebrating the diversity and richness of Asian cuisine. Whether local or visiting, discovering the best Asian food in DFW promises a delicious and rewarding experience. Jinbeh is proud to play an important role in bringing high-quality Japanese food and culture to the area.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>
                             <Accordion items={faqs.map((faq: any) => ({ title: faq.question, content: faq.answer }))} />

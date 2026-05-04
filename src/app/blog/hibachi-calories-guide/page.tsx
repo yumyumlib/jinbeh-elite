@@ -75,8 +75,6 @@ const cta = {
   lewisvillePhone: "(214) 488-2224",
 };
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",

@@ -50,7 +50,7 @@ const faqs = [
     },
     {
         question: "Does Jinbeh have happy hour specials?",
-        answer: "Yes! We offer happy hour with $4 Japanese draft beer, $5 sake, and $6 wine, Monday through Friday from 5:00 to 6:30 PM. It is a great way to enjoy premium drinks at great prices.",
+        answer: "Yes! We offer happy hour with Japanese draft beer, sake, and wine, Monday through Friday from 5:00 to 6:30 PM. It is a great way to enjoy premium drinks at great prices.",
     },
     {
         question: "Is Jinbeh good for families with kids?",
@@ -82,7 +82,6 @@ const faqSchema = {
         },
     })),
 };
-
 
 const breadcrumbSchema = {
     " @context": " https://schema.org",
@@ -206,7 +205,6 @@ export default function BestSushiFrisco() {
                                         omakase experience, this guide has you covered. Explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> guide as well.
                                     </p>
 
-
             
               <p className="text-charcoal/80 text-sm mt-6">
                 See also: <Link href="/blog/best-sushi-dallas" className="text-accent-red hover:underline">best sushi in Dallas</Link>
@@ -279,31 +277,31 @@ export default function BestSushiFrisco() {
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
                                                 <td className="p-4">Authentic experience, hibachi + sushi</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4">4.2 ⭐</td>
+ <td className="p-4">4.2 ⭐</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Umiya</td>
                                                 <td className="p-4">Fusion rolls, trendy vibes</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4">4.4 ⭐</td>
+ <td className="p-4">4.4 ⭐</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Sakura Sushi</td>
                                                 <td className="p-4">Sake selection, creative rolls</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4">4.3 ⭐</td>
+ <td className="p-4">4.3 ⭐</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Shoji</td>
                                                 <td className="p-4">Family-friendly, hibachi shows</td>
                                                 <td className="p-4">$$</td>
-                                                <td className="p-4">4.2 ⭐</td>
+ <td className="p-4">4.2 ⭐</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Edoko</td>
                                                 <td className="p-4">Robata grill + sushi</td>
                                                 <td className="p-4">$$$</td>
-                                                <td className="p-4">4.3 ⭐</td>
+ <td className="p-4">4.3 ⭐</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -368,10 +366,10 @@ export default function BestSushiFrisco() {
                                     </p>
 
                                     <ProTip variant="insider">
-                                        <strong>Sushi lover's secret:</strong> Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for $4 draft beer, $5 sake, and $6 wine, Monday through Friday from 5:00 to 6:30 PM. Ask your server about the day's fresh catch. Jinbeh sources fish with daily deliveries, so availability can vary. Try the Sake Flight for a tasting of three premium sakes alongside your rolls.
-                                    </ProTip>
+                                        <strong>Sushi lover's secret:</strong> Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for draft beer, sake, and wine, Monday through Friday from 5:00 to 6:30 PM. Ask your server about the day's fresh catch. Jinbeh sources fish with daily deliveries, so availability can vary. Try the Sake Flight for a tasting of three premium sakes alongside your rolls.
+ </ProTip>
 
-                                    <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
+ <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
                                         Popular <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">Sushi Rolls</Link> to Try
                                     </h3>
 

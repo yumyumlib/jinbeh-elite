@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Hibachi Salmon",
   "description": "Fresh Atlantic salmon with citrus teriyaki",
-  "offers": {
-    "@type": "Offer",
-    "price": "28.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -57,7 +52,7 @@ const faqSchema = {
       "name": "What is Hibachi Salmon hibachi at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hibachi Salmon at Jinbeh Lewisville is fresh atlantic salmon with citrus teriyaki. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at $28.95, it includes soup, salad, fried rice, and grilled vegetables."
+        "text": "Hibachi Salmon at Jinbeh Lewisville is fresh atlantic salmon with citrus teriyaki. It's prepared tableside by our expert teppanyaki chefs with the famous onion volcano and entertaining knife skills. Priced at, it includes soup, salad, fried rice, and grilled vegetables."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SalmonLewisvillePage() {
   const item = { ...getMenuItem("salmon", "hibachi")!, jinbehStory: "Our hibachi salmon is cooked on grills reaching 550°F to achieve the perfect sear. Every sauce on your plate is made from scratch in our kitchen — from the Yum Yum sauce to the garlic butter. Recipes are posted on the kitchen walls so every chef learns them." };

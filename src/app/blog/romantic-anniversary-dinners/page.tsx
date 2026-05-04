@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What's a reasonable budget for an anniversary dinner?",
     answer:
-      "Budget varies by venue. At Jinbeh, entrees range from $18-$45, allowing flexibility from casual to special occasion dining. With drinks, tax, and tip, expect $60-$150+ for a couple. We offer romantic prix-fixe options for anniversaries.",
+      "Budget varies by venue. At Jinbeh, entrees range from, allowing flexibility from casual to special occasion dining. With drinks, tax, and tip, expect + for a couple. We offer romantic prix-fixe options for anniversaries.",
   },
   {
     question: "Can I arrange special surprises at Jinbeh?",
@@ -65,8 +65,6 @@ const faqs = [
       "We can arrange champagne or sake toasts, a personalized dessert with a special message, flower arrangements at your table, and photography of your celebration. For milestone anniversaries, ask about our private dining packages. Call when booking to discuss what extras would make your evening perfect.",
   },
 ];
-
-
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -325,7 +323,7 @@ export default function RomanticAnniversaryDinnersPage() {
       </div>
 
       <DidYouKnow
-        fact="60% of American couples prefer dining out to celebrate their anniversary, with Japanese restaurants ranking in the top 5 most romantic cuisine choices. Couples who regularly celebrate milestones together report 31% higher relationship satisfaction. The average couple spends $150-$300 on an anniversary dinner, with private dining options growing 45% in popularity since 2023."
+ fact="60% of American couples prefer dining out to celebrate their anniversary, with Japanese restaurants ranking in the top 5 most romantic cuisine choices. Couples who regularly celebrate milestones together report 31% higher relationship satisfaction. The average couple spends on an anniversary dinner, with private dining options growing 45% in popularity since 2023."
         source="National Restaurant Association & Relationship Research Institute"
       />
 

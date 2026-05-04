@@ -5,13 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
-import { BentoGrid, BentoCard } from "@/components/ui/BentoGrid";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Menu | Jinbeh Frisco | Hibachi & Sushi Menu Near Stonebriar",
   description:
-    "Explore Jinbeh Frisco's menu featuring fresh sushi, hibachi teppanyaki, lunch specials, and sake. View our hibachi menu, sushi rolls, and Japanese.",
+    "View Jinbeh Frisco's lunch, dinner, and sushi menus. Fresh sushi, hibachi teppanyaki, sake, and Japanese cuisine in Frisco, TX.",
   keywords: [
     "jinbeh frisco menu",
     "hibachi menu frisco",
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Menu | Jinbeh Frisco - Hibachi & Sushi",
-    description: "Fresh sushi, sizzling hibachi, and authentic Japanese cuisine. View our full menu.",
+    description: "Lunch, dinner, and sushi menus for Jinbeh Frisco. Fresh sushi, sizzling hibachi, and authentic Japanese cuisine.",
     url: "https://jinbeh.com/frisco/menu",
     images: [
       {
@@ -49,52 +48,9 @@ const menuSchema = {
   "mainEntityOfPage": "https://jinbeh.com/frisco/menu",
   "inLanguage": "en-US",
   "hasMenuSection": [
-    {
-      "@type": "MenuSection",
-      "name": "Hibachi Teppanyaki",
-      "description": "Expertly grilled tableside by our master chefs with soup, salad, fried rice, and vegetables",
-      "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Filet Mignon", "description": "Premium beef tenderloin, perfectly seared" },
-        { "@type": "MenuItem", "name": "Chicken Teriyaki", "description": "Tender chicken with house teriyaki glaze" },
-        { "@type": "MenuItem", "name": "Shrimp & Scallops", "description": "Fresh seafood duo, flame-kissed" },
-        { "@type": "MenuItem", "name": "Lobster Tail", "description": "Succulent lobster, butter-grilled" },
-        { "@type": "MenuItem", "name": "Vegetable Hibachi", "description": "Fresh seasonal vegetables with tofu" },
-      ],
-    },
-    {
-      "@type": "MenuSection",
-      "name": "Sushi & Sashimi",
-      "description": "Fresh, artfully crafted sushi and sashimi",
-      "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Signature Rolls", "description": "House specialty creations" },
-        { "@type": "MenuItem", "name": "Classic Rolls", "description": "Traditional favorites" },
-        { "@type": "MenuItem", "name": "Sashimi Platter", "description": "Chef's selection of pristine fish" },
-        { "@type": "MenuItem", "name": "Nigiri", "description": "Hand-pressed sushi rice with fresh fish" },
-        { "@type": "MenuItem", "name": "Omakase", "description": "Chef's tasting menu" },
-      ],
-    },
-    {
-      "@type": "MenuSection",
-      "name": "Lunch Specials",
-      "description": "Weekday specials served Monday-Friday, 11am-2pm",
-      "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Lunch Hibachi Combo", "description": "Choice of protein with soup, salad, rice" },
-        { "@type": "MenuItem", "name": "Bento Box", "description": "Assorted Japanese favorites" },
-        { "@type": "MenuItem", "name": "Lunch Sushi Roll Combo", "description": "2-3 rolls with soup and salad" },
-        { "@type": "MenuItem", "name": "Teriyaki Bowl", "description": "Rice bowl with teriyaki protein" },
-      ],
-    },
-    {
-      "@type": "MenuSection",
-      "name": "Drinks & Sake",
-      "description": "Full bar with premium sake, Japanese beer, and craft cocktails",
-      "hasMenuItem": [
-        { "@type": "MenuItem", "name": "Premium Sake", "description": "Hot or cold, by the glass or carafe" },
-        { "@type": "MenuItem", "name": "Japanese Beer", "description": "Sapporo, Asahi, Kirin" },
-        { "@type": "MenuItem", "name": "Signature Cocktails", "description": "Japanese-inspired creations" },
-        { "@type": "MenuItem", "name": "Wine Selection", "description": "Red, white, and sparkling options" },
-      ],
-    },
+    { "@type": "MenuSection", "name": "Lunch", "description": "Weekday lunch favorites: hibachi lunch combos, sushi specials, and the $35 Hibachi for Two." },
+    { "@type": "MenuSection", "name": "Dinner", "description": "Hibachi teppanyaki, signature entrees, and full dinner menu." },
+    { "@type": "MenuSection", "name": "Sushi", "description": "Signature rolls, classic rolls, sashimi, and nigiri." },
   ],
 };
 
@@ -138,63 +94,33 @@ const faqSchema = {
   ],
 };
 
-const menuCategories = [
+const menus = [
   {
-    id: "hibachi",
-    title: "Hibachi Teppanyaki",
-    description: "Dinner and a show! Expertly grilled tableside by our master chefs.",
-    image: "/images/food/hibachi-grill.jpg",
-    items: [
-      { name: "Filet Mignon", description: "Premium beef tenderloin, perfectly seared" },
-      { name: "Chicken Teriyaki", description: "Tender chicken with house teriyaki glaze" },
-      { name: "Shrimp & Scallops", description: "Fresh seafood duo, flame-kissed" },
-      { name: "Lobster Tail", description: "Succulent lobster, butter-grilled" },
-      { name: "Vegetable Hibachi", description: "Fresh seasonal vegetables with tofu" },
-    ],
+    id: "lunch",
+    title: "Lunch Menu",
+    description: "Hibachi lunch combos, sushi specials, and the $35 Hibachi for Two.",
+    pdfUrl: "/menus/frisco/lunch-menu.pdf",
+    image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
+    imageAlt: "Hibachi lunch combo at Jinbeh Frisco",
+    icon: "🥢",
+  },
+  {
+    id: "dinner",
+    title: "Dinner Menu",
+    description: "Full hibachi teppanyaki, premium steaks, and Japanese entrees.",
     pdfUrl: "/menus/frisco/dinner-menu.pdf",
-    note: "All hibachi dinners include soup, salad, fried rice, and grilled vegetables",
+    image: "/images/food/OnionVolcanoDemo.jpg",
+    imageAlt: "Hibachi dinner show with onion volcano at Jinbeh Frisco",
+    icon: "🔥",
   },
   {
     id: "sushi",
-    title: "Sushi & Sashimi",
-    description: "Fresh, artfully crafted, and bursting with flavor.",
-    image: "/images/frisco/JinbehFrisco_SushiBar.jpg",
-    items: [
-      { name: "Signature Rolls", description: "House specialty creations" },
-      { name: "Classic Rolls", description: "Traditional favorites" },
-      { name: "Sashimi Platter", description: "Chef's selection of pristine fish" },
-      { name: "Nigiri", description: "Hand-pressed sushi rice with fresh fish" },
-      { name: "Omakase", description: "Chef's tasting menu (reservation required)" },
-    ],
+    title: "Sushi Menu",
+    description: "Signature rolls, classic maki, sashimi, and nigiri crafted daily.",
     pdfUrl: "/menus/frisco/sushi-menu.pdf",
-    note: "Ask about today's fresh fish selection",
-  },
-  {
-    id: "lunch",
-    title: "Lunch Specials",
-    description: "Weekday specials served Monday-Friday, 11am-2pm.",
-    image: "/images/food/BentoBoxLunchSet.jpg",
-    items: [
-      { name: "Lunch Hibachi Combo", description: "Choice of protein with soup, salad, rice" },
-      { name: "Bento Box", description: "Assorted Japanese favorites" },
-      { name: "Lunch Sushi Roll Combo", description: "2-3 rolls with soup and salad" },
-      { name: "Teriyaki Bowl", description: "Rice bowl with teriyaki protein" },
-    ],
-    pdfUrl: "/menus/frisco/lunch-menu.pdf",
-    note: "Weekend lunch hours: 11:30am-2:30pm",
-  },
-  {
-    id: "drinks",
-    title: "Drinks & Sake",
-    description: "Full bar with premium sake, Japanese beer, and craft cocktails.",
-    image: "/images/food/JinbehPunchBeverageDrink.jpg",
-    items: [
-      { name: "Premium Sake", description: "Hot or cold, by the glass or carafe" },
-      { name: "Japanese Beer", description: "Sapporo, Asahi, Kirin" },
-      { name: "Signature Cocktails", description: "Japanese-inspired creations" },
-      { name: "Wine Selection", description: "Red, white, and sparkling options" },
-    ],
-    note: "Ask about Happy Hour specials!",
+    image: "/images/food/SamaraiRollCloseup.jpg",
+    imageAlt: "Samurai roll signature sushi at Jinbeh Frisco",
+    icon: "🍣",
   },
 ];
 
@@ -222,6 +148,7 @@ export default function FriscoMenuPage() {
             src="/images/frisco/JinbehFrisco_SushiBar.jpg"
             alt="Jinbeh Frisco Sushi Bar"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -239,59 +166,61 @@ export default function FriscoMenuPage() {
           </div>
         </section>
 
-        {/* Quick Nav */}
-        <section className="sticky top-20 z-40 bg-white border-b border-warm-ivory-dark shadow-sm">
-          <div className="container mx-auto px-6">
-            <div className="flex items-center justify-center gap-2 md:gap-6 py-4 overflow-x-auto">
-              {menuCategories.map((cat) => (
+        {/* Menus Section */}
+        <section className="py-20 bg-warm-ivory">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <div className="text-center mb-12">
+              <p className="text-soft-gold font-medium tracking-wider uppercase mb-3 text-sm">
+                Menus
+              </p>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                Lunch, Dinner &amp; Sushi
+              </h2>
+              <p className="text-charcoal/70 max-w-2xl mx-auto">
+                Tap any menu to open the PDF. Fresh sushi, sizzling hibachi, and Japanese cuisine in Frisco, TX.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {menus.map((menu) => (
                 <a
-                  key={cat.id}
-                  href={`#${cat.id}`}
-                  className="px-4 py-2 text-sm md:text-base font-medium text-charcoal hover:text-accent-red hover:bg-warm-ivory rounded-full transition-all whitespace-nowrap"
+                  key={menu.id}
+                  href={menu.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all hover:-translate-y-1"
                 >
-                  {cat.title}
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={menu.image}
+                      alt={menu.imageAlt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+                    <div className="absolute bottom-3 left-4 text-3xl">{menu.icon}</div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-heading font-bold text-charcoal mb-2 group-hover:text-accent-red transition-colors">
+                      {menu.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/70 mb-4">{menu.description}</p>
+                    <span className="inline-flex items-center gap-2 text-accent-red font-semibold">
+                      View PDF
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
+                  </div>
                 </a>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* Menu Categories via BentoGrid */}
-        <section className="py-20 bg-warm-ivory">
-          <div className="container mx-auto px-6 max-w-6xl">
-            <BentoGrid className="grid-cols-1 lg:grid-cols-2 gap-8">
-              {menuCategories.map((category) => (
-                <BentoCard
-                  key={category.id}
-                  name={category.title}
-                  description={category.description}
-                  href={category.pdfUrl || "#"}
-                  cta={category.pdfUrl ? `View Full ${category.title} PDF` : "View Menu"}
-                  className="min-h-[500px]"
-                  background={
-                    <Image
-                      src={category.image}
-                      alt={category.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    loading="lazy" />
-                  }
-                >
-                  <div className="space-y-3 mt-6">
-                    {category.items.map((item) => (
-                      <div key={item.name} className="border-b border-charcoal/10 pb-2">
-                        <h2 className="font-medium text-charcoal">{item.name}</h2>
-                        <p className="text-sm text-charcoal/80">{item.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                  {category.note && (
-                    <p className="text-sm text-cedar-brown italic mt-4">{category.note}</p>
-                  )}
-                </BentoCard>
-              ))}
-            </BentoGrid>
+            <p className="text-center text-charcoal/60 text-sm italic mt-10">
+              Menus are updated periodically. Ask your server about today&apos;s fresh fish selections, seasonal specials, and <Link href="/happy-hour" className="text-accent-red hover:underline">Happy Hour</Link> offerings.
+            </p>
           </div>
         </section>
 

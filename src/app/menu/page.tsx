@@ -8,7 +8,7 @@ import MenuClient from "./MenuClient";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-    title: "Menu | Jinbeh Japanese Restaurant - Frisco & Lewisville",
+    title: "Jinbeh Sushi and Hibachi Menu | Frisco & Lewisville TX",
     description: "Explore Jinbeh's authentic Japanese menu featuring hibachi, sushi, sashimi, and specialty rolls. View menus for our Frisco and Lewisville locations.",
     keywords: ["jinbeh menu", "hibachi menu", "sushi menu frisco", "japanese restaurant menu lewisville", "sake set", "sparkling sake", "strawberry sake", "hamachi sushi", ],
     openGraph: {
@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     },
 };
 
-
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -46,7 +45,7 @@ const faqSchema = {
       "name": "What types of cuisine does Jinbeh serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jinbeh serves authentic Japanese cuisine including hibachi (teppanyaki), fresh sushi and sashimi, signature rolls, appetizers, bento boxes, and a full bar with sake, Japanese beer, and cocktails."
+        "text": "Jinbeh serves authentic Japanese cuisine including hibachi (teppanyaki), fresh sushi and sashimi, signature rolls, appetizers, and a full bar with sake, Japanese beer, and cocktails."
       }
     },
     {
@@ -54,7 +53,7 @@ const faqSchema = {
       "name": "Does Jinbeh have a lunch menu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Our lunch menu features bento box sets, hibachi plates, and sushi specials at great prices. Available Mon-Fri 11am-2pm and Sat-Sun 11:30am-2:30pm."
+        "text": "Yes. Our lunch menu features hibachi plates and sushi specials at great prices, including the Hibachi for Two lunch special. Available Mon-Fri 11am-2pm and Sat-Sun 11:30am-2:30pm."
       }
     },
     {
@@ -102,7 +101,7 @@ export default function MenuPage() {
                 {
                     "@type": "MenuSection",
                     "name": "Sashimi",
-                    "description": "Premium sliced raw fish including omakase selections",
+                    "description": "Premium sliced raw fish, hand-cut by our sushi chefs daily",
                     "url": "https://jinbeh.com/frisco/sashimi",
                 },
                 {

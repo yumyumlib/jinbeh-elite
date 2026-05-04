@@ -95,7 +95,6 @@ const faqSchema = {
     ],
 };
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -196,7 +195,7 @@ export default function SakeTasteProfile() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-        Does sake taste like wine? Like beer? Like nothing you've tried before? The honest answer: it depends entirely on which sake you pick. The difference between a $12 bottle and a $60 bottle isn't just price—it's an entirely different drinking experience.
+        Does sake taste like wine? Like beer? Like nothing you've tried before? The honest answer: it depends entirely on which sake you pick. The difference between a bottle and a bottle isn't just price—it's an entirely different drinking experience.
       </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
@@ -350,7 +349,6 @@ export default function SakeTasteProfile() {
                                         </div>
                                     </div>
 
-
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
@@ -485,9 +483,19 @@ export default function SakeTasteProfile() {
                                     </div>
                                 </div>
 
+                                <div className="my-10 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                    <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Why Guests Come to Jinbeh for Sake</h3>
+                                    <p className="text-charcoal/80 mb-3">
+                                        Jinbeh is a quiet favorite among DFW sake fans. Our sake list runs the full taste profile, from soft, fruity Daiginjo to rich, umami-forward Junmai, with both warm sake and chilled premium cold sake on hand at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations. Many of our regulars stop in just for the sake, and our team is always happy to talk through what&apos;s on the list and recommend a pour for your meal.
+                                    </p>
+                                    <p className="text-charcoal/80">
+                                        Looking for an easy way to try a few? Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> Monday through Friday and order a small hot sake at a friendly happy-hour price. It&apos;s the most relaxed way to taste your way through the spectrum.
+                                    </p>
+                                </div>
+
                                 <div className="mt-16">
                                     <ProTip variant="chef">
-                                        <strong>Sake tasting at Jinbeh:</strong> Ask our bartenders for the "flavor discovery" flight—three sakes specifically chosen to showcase the spectrum from sweet to dry. Start with Nigori (sweet, creamy), then Junmai (full, umami-rich), and finish with Daiginjo (light, floral). Between sips, cleanse your palate with pickled ginger. Our <Link href="/bar" className="text-accent-red hover:underline">bar team</Link> will explain the tasting notes for each pour. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, flights are specially priced!
+                                        <strong>Sake tasting at Jinbeh:</strong> Ask our bartenders to walk you through a few different styles, from soft and fruity to rich and dry. Start with Nigori (sweet, creamy), then Junmai (full, umami-rich), and finish with Daiginjo (light, floral). Between sips, cleanse your palate with pickled ginger. Our <Link href="/bar" className="text-accent-red hover:underline">bar team</Link> can explain the tasting notes for each pour, and during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> a small hot sake is a great place to start.
                                     </ProTip>
 
                                     <PillarCTA type="hub" />

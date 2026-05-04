@@ -40,61 +40,31 @@ const menuSchema = {
         "@type": "MenuItem",
         "name": "Edamame",
         "description": "Steamed soybeans with sea salt",
-        "offers": {
-          "@type": "Offer",
-          "price": "5.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Gyoza",
         "description": "Pan-fried pork dumplings with dipping sauce",
-        "offers": {
-          "@type": "Offer",
-          "price": "8.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Shrimp Tempura",
         "description": "Light and crispy fried shrimp",
-        "offers": {
-          "@type": "Offer",
-          "price": "12.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Soft Shell Crab",
         "description": "Crispy fried soft shell crab",
-        "offers": {
-          "@type": "Offer",
-          "price": "14.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Tuna Tartare",
         "description": "Diced ahi tuna with avocado and ponzu",
-        "offers": {
-          "@type": "Offer",
-          "price": "15.95",
-          "priceCurrency": "USD"
-        }
       },
       {
         "@type": "MenuItem",
         "name": "Seared Ahi Tuna",
         "description": "Pepper-crusted ahi with wasabi aioli",
-        "offers": {
-          "@type": "Offer",
-          "price": "16.95",
-          "priceCurrency": "USD"
-        }
       }
     ]
   }
@@ -117,7 +87,7 @@ const faqSchema = {
       "name": "What are the most popular appetizers at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Guest favorites include Edamame ($5.95), Gyoza ($8.95), Shrimp Tempura ($12.95), Soft Shell Crab ($14.95). These are consistently rated as the best appetizers in Frisco."
+        "text": "Guest favorites include Edamame, Gyoza, Shrimp Tempura, Soft Shell Crab. These are consistently rated as the best appetizers in Frisco."
       }
     },
     {
@@ -138,10 +108,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What are appetizers prices at Jinbeh Frisco?",
+      "name": "What are the most popular appetizers to share at Jinbeh Frisco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Appetizers prices range from 5.95 to 16.95. See our full menu for complete pricing."
+        "text": "Crispy shrimp tempura, gyoza, edamame, and soft shell crab are among the most-shared starters at Jinbeh Frisco. They're built for group dining and pair beautifully with hibachi entrees and sushi rolls."
       }
     }
   ]
@@ -237,7 +207,6 @@ export default function AppetizersFriscoPage() {
                     Steamed soybeans with sea salt
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$5.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -263,7 +232,6 @@ export default function AppetizersFriscoPage() {
                     Pan-fried pork dumplings with dipping sauce
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$8.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -289,7 +257,6 @@ export default function AppetizersFriscoPage() {
                     Light and crispy fried shrimp
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$12.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -315,7 +282,6 @@ export default function AppetizersFriscoPage() {
                     Crispy fried soft shell crab
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$14.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -341,7 +307,6 @@ export default function AppetizersFriscoPage() {
                     Diced ahi tuna with avocado and ponzu
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$15.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -367,7 +332,6 @@ export default function AppetizersFriscoPage() {
                     Pepper-crusted ahi with wasabi aioli
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-accent-red">$16.95</span>
                     <span className="text-deep-indigo group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
@@ -435,7 +399,7 @@ export default function AppetizersFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Guest favorites include Edamame (\$5.95), Gyoza (\$8.95), Shrimp Tempura (\$12.95), Soft Shell Crab (\$14.95). These are consistently rated as the best appetizers in Frisco.
+                    Guest favorites include Edamame, Gyoza, Shrimp Tempura, Soft Shell Crab. These are consistently rated as the best appetizers in Frisco.
                   </p>
                 </details>
                 <details className="group border-b border-warm-ivory pb-4">
@@ -519,6 +483,24 @@ export default function AppetizersFriscoPage() {
                 <h3 className="font-heading font-bold text-charcoal">Cocktails & Sake</h3>
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* Why Jinbeh for Appetizers */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="font-heading text-3xl font-bold text-charcoal mb-5 text-center">
+              Why Jinbeh Is the Best for Japanese Appetizers in Frisco
+            </h2>
+            <p className="text-charcoal/80 leading-relaxed mb-4">
+              Guests consistently call Jinbeh&apos;s shrimp tempura one of the best in Frisco. It comes out hot and shatter-crisp. The gyoza arrive seared on the bottom and pillowy inside, perfect for sharing. Edamame is bright, salted just right, and the easiest crowd-pleaser. Soft shell crab tempura, when it&apos;s on the menu, is a guest favorite that locals come specifically for.
+            </p>
+            <p className="text-charcoal/80 leading-relaxed mb-4">
+              These small plates are designed for group dining: a few appetizers in the middle of the table while the hibachi chef fires up the grill or while sushi gets prepped at the bar. The result is a relaxed, festive opener that sets the tone for the rest of the meal.
+            </p>
+            <p className="text-charcoal/80 leading-relaxed">
+              Pair appetizers with our <Link href="/frisco/sushi-rolls" className="text-accent-red hover:underline">specialty sushi rolls</Link>, <Link href="/frisco/hibachi" className="text-accent-red hover:underline">hibachi entrees</Link>, or a glass from the <Link href="/bar" className="text-accent-red hover:underline">sake list</Link>. After 38 years, we know how to start a great meal in Frisco.
+            </p>
           </div>
         </section>
 

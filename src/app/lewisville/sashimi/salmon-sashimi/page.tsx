@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Salmon Sashimi",
   "description": "Fresh Atlantic salmon, sliced to perfection",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -65,7 +60,7 @@ const faqSchema = {
       "name": "What is Salmon Sashimi sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Salmon Sashimi at Jinbeh is fresh atlantic salmon, sliced to perfection. Priced at $14.95, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
+        "text": "Salmon Sashimi at Jinbeh is fresh atlantic salmon, sliced to perfection. Priced at, it's served without rice, allowing you to experience the pure, clean flavor of premium fish."
       }
     },
     {
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SalmonSashimiLewisvillePage() {
   const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\' — just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };

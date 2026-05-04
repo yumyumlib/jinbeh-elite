@@ -265,7 +265,6 @@ export default function LewisvillePage() {
           </div>
         </section>
 
-
         {/* Awards Strip */}
         <section className="py-4 bg-warm-ivory border-b border-warm-ivory-dark">
           <div className="container mx-auto px-6">

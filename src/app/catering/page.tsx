@@ -148,7 +148,6 @@ export default function CateringPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div
@@ -164,13 +163,13 @@ export default function CateringPage() {
             </RevealSection>
             <RevealSection delay={100}>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                <AnimatedGradientText className="text-4xl md:text-6xl font-heading font-bold">Bring the Hibachi Show to Your Event</AnimatedGradientText>
+                <AnimatedGradientText className="text-4xl md:text-6xl font-heading font-bold">Bring Authentic, High-Quality Japanese Cuisine to Your Event</AnimatedGradientText>
               </h1>
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
                 From corporate lunches to milestone <Link href="/celebrations" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">celebrations</Link>, let Jinbeh&apos;s
-                authentic Japanese cuisine make your event unforgettable. Whether you need <Link href="/blog/offsite-hibachi-catering" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">offsite hibachi catering</Link> or an in-house <Link href="/private-dining" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">private dining</Link> experience, we&apos;ve got you covered.
+                authentic Japanese cuisine make your event unforgettable. Hibachi entrees, fresh sushi platters, and house-made sauces, prepared in our kitchens and delivered to your venue on beautiful presentation trays. For the live tableside hibachi show, dine with us at our <Link href="/private-dining" className="text-soft-gold underline decoration-soft-gold/50 hover:decoration-soft-gold transition-colors">restaurants</Link>.
               </p>
             </RevealSection>
             <RevealSection delay={300}>
@@ -204,7 +203,7 @@ export default function CateringPage() {
                 <div
                   key={option.title}
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                    }`}
+ }`}
                 >
                   <div className={`relative ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">

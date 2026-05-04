@@ -137,7 +137,6 @@ export default function AboutPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
-
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
@@ -181,8 +180,7 @@ export default function AboutPage() {
                 </RevealSection>
                 <div className="space-y-6 text-charcoal/80 leading-relaxed">
                   <p>
-                    When Ben Matsuda opened Jinbeh in 1988, he didn&apos;t just open a restaurant&mdash;he
-                    brought a vision home. A Japanese man who, remarkably, never cooked a day in his life, Ben opened Jinbeh not out of culinary ambition but out of an entrepreneurial instinct and a desire to bring authentic Japanese dining to North Texas. His philosophy was three words: <strong>humble, hardworking, and honest</strong>. Those three words became the spiritual foundation of Jinbeh and were passed down to his son, who now runs both locations.
+                    When Ben Matsuda opened Jinbeh in 1988, he didn&apos;t just open a restaurant. He brought a vision home. Ben opened Jinbeh out of an entrepreneurial instinct and a deep desire to bring authentic Japanese dining to North Texas. His philosophy was three words: <strong>humble, hardworking, and honest</strong>. Those three words became the spiritual foundation of Jinbeh and were passed down to his son, who now runs both locations.
                   </p>
                   <p>
                     What started in a small Las Colinas space&mdash;featured by <em>D&nbsp;Magazine</em> as early as 1990&mdash;has blossomed into a multi-generational tradition that families
@@ -299,7 +297,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     When Ben Matsuda opened our first restaurant in Las Colinas in 1988,
-                    he chose this name deliberately. Coming from humble beginnings himself,
+                    he chose the name Jinbeh deliberately. Coming from humble beginnings himself,
                     the name serves as a daily reminder of where he came from and the
                     values that built this family business.
                   </p>
@@ -380,21 +378,21 @@ export default function AboutPage() {
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
                   <div className="text-4xl mb-3">🍣</div>
                   <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Our Head Sushi Chef &mdash; 30 Years</h3>
-                  <p className="text-sm text-charcoal/70">Nearly 30 years behind Jinbeh&apos;s sushi bar. The owner calls him &ldquo;my second dad.&rdquo; Together, they co-created the entire sushi menu through sleepless nights of collaboration. From the south side of Japan&mdash;a region famous for noodles&mdash;he once created a ramen section so popular it became legendary among regulars.</p>
+                  <p className="text-sm text-charcoal/70">One of our sushi chefs, Fuji San, has spent nearly 30 years at Jinbeh. Fuji and the owners co-created the entire sushi menu through sleepless nights of collaboration. From the south side of Japan, a region famous for noodles, he once created a ramen section so popular it became legendary among regulars.</p>
                 </div>
               </RevealSection>
               <RevealSection delay={100}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
                   <div className="text-4xl mb-3">🌟</div>
-                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Our Floor Captain &mdash; The Heart</h3>
-                  <p className="text-sm text-charcoal/70">Respected across both locations, not because of authority but because of love and respect. She handles training, payroll, and scheduling&mdash;the things the owner admits she does better than he ever could. When she&apos;s on the floor, the entire team follows her lead.</p>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">A Team That Stays</h3>
+                  <p className="text-sm text-charcoal/70">Many of our managers, servers, and floor leaders have been with Jinbeh for years, some for decades. They lead with warmth and respect, and they train every new team member the way they were trained: as part of a family.</p>
                 </div>
               </RevealSection>
               <RevealSection delay={200}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
                   <div className="text-4xl mb-3">💎</div>
-                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Since Day One &mdash; 1988</h3>
-                  <p className="text-sm text-charcoal/70">Jinbeh&apos;s longest-tenured employee has been here since the very first day. He started as a dishwasher, became a busser, and today is the mastermind behind food strategy and logistics for every festival and major event. That&apos;s 38 years of unbroken dedication.</p>
+                  <h3 className="font-heading text-lg font-semibold text-charcoal mb-2">Hibachi Excellence</h3>
+                  <p className="text-sm text-charcoal/70">Jinbeh&apos;s hibachi chefs are talented and dedicated to excellence. We have the desire to constantly provide high-quality shows and serve high-quality food, every single night.</p>
                 </div>
               </RevealSection>
             </div>
@@ -474,7 +472,7 @@ export default function AboutPage() {
                   Warm, Genuine Hospitality
                 </h3>
                 <p className="text-charcoal/70 text-sm pointer-events-none">
-                  Family-owned and operated. Every child gets a hand-folded origami crane from a basket by the door, plus training chopsticks and a lollipop. Our philosophy: invest in the kids, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo; That&apos;s why we hear from guests who started coming as toddlers and now bring their own friends.
+                  Family-owned and operated. Sometimes kids get a hand-folded origami crane from a basket by the door, plus training chopsticks and a lollipop. Our philosophy: invest in the kids, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo; That&apos;s why we hear from guests who started coming as toddlers and now bring their own friends.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
                   &ldquo;Service is great — cozy and family-like.&rdquo; — Google Review
@@ -567,7 +565,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-
         {/* Behind the Scenes — Stories of Jinbeh */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6 max-w-5xl">
@@ -591,10 +588,7 @@ export default function AboutPage() {
                       Our head sushi chef has been with Jinbeh for nearly 30 years. Originally from the southern coast of Japan, a region renowned for its seafood and noodle traditions, he co-created every signature roll on our menu alongside the Matsuda family during late-night sessions of testing and perfecting.
                     </p>
                     <p>
-                      At the original Las Colinas location, he created a beloved ramen section that became a local favorite. His craft represents the soul of our <Link href="/frisco/sushi-rolls">sushi program</Link> &mdash; precise, authentic, and always evolving.
-                    </p>
-                    <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
-                      &ldquo;He&apos;s my second dad. The entire sushi menu was a collaboration &mdash; sleepless nights working together to craft and refine every roll.&rdquo;
+                      At the original Las Colinas location, he created a beloved ramen section that became a local favorite. His craft represents the soul of our <Link href="/frisco/sushi-rolls">sushi program</Link>: precise, authentic, and always evolving.
                     </p>
                   </div>
                 </div>
@@ -641,7 +635,7 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-heading font-bold text-charcoal mb-4">Our Family Traditions</h3>
                   <div className="space-y-4 text-charcoal/80 leading-relaxed">
                     <p>
-                      Every child who visits Jinbeh receives a hand-folded origami crane from a basket at the host stand. Training chopsticks and lollipops are always available for little ones. Our philosophy is simple: invest in making kids feel special, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo;
+                      Sometimes kids who visit Jinbeh get a hand-folded origami crane from a basket at the host stand. Training chopsticks and lollipops are always available for little ones. Our philosophy is simple: invest in making kids feel special, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo;
                     </p>
                     <p>
                       We hear it all the time &mdash; guests who started coming as toddlers now bring their own friends and families. That&apos;s the cycle of trust that 38 years of genuine <Link href="/celebrations/birthday" className="text-accent-red hover:underline">family hospitality</Link> creates.
@@ -712,10 +706,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">OpenTable Diners&apos; Choice</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
-                    Currently recognized across <strong>12+ Diners&apos; Choice and &ldquo;Best Of&rdquo; lists</strong> for 2026. Ranked <strong>#1 Hibachi in Lewisville</strong>, <strong>#1 Tempura in Lewisville</strong>, and <strong>#2 Hibachi in Frisco</strong>. Also selected for Best Japanese, Best Food, Best Value, Healthy, and Kid-Friendly.
+                    Over the restaurant&apos;s lifetime, we&apos;ve been recognized across <strong>12+ Diners&apos; Choice and &ldquo;Best Of&rdquo; lists</strong>, and they still come in today. Ranked <strong>#1 Hibachi in Lewisville</strong>, <strong>#1 Tempura in Lewisville</strong>, and <strong>#2 Hibachi in Frisco</strong>. Also selected for Best Japanese, Best Food, Best Value, Healthy, and Kid-Friendly.
                   </p>
                   <p className="text-xs text-charcoal/50 italic">
-                    Earned through verified diner reviews, updated monthly.
+                    Earned through verified diner reviews.
                   </p>
                 </div>
               </RevealSection>

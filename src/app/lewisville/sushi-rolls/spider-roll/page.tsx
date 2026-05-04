@@ -32,11 +32,6 @@ const menuItemSchema = {
   "@type": "MenuItem",
   "name": "Spider Roll",
   "description": "Soft shell crab with cucumber and spicy mayo",
-  "offers": {
-    "@type": "Offer",
-    "price": "15.95",
-    "priceCurrency": "USD"
-  },
   "restaurant": {
     "@type": "Restaurant",
     "name": "Jinbeh Japanese Restaurant - Lewisville",
@@ -94,7 +89,6 @@ const faqSchema = {
     }
   ]
 };
-
 
 export default function SpiderRollLewisvillePage() {
   const item = { ...getMenuItem("spider-roll", "sushi-rolls")!, jinbehStory: "Features our deep-fried soft shell crab inside a hand-rolled maki. Our sushi master — nearly 30 years with Jinbeh — selects every piece of seafood with the precision you\'d expect from decades of daily practice." };

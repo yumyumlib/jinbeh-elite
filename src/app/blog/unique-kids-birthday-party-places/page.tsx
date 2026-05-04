@@ -39,7 +39,6 @@ const schemas = [
     }
 ];
 
-
 const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -118,9 +117,22 @@ export default function KidsBirthdayPlaces() {
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Get ideas from our <Link href="/blog/beginner-sushi-tips" className="text-deep-indigo hover:text-accent-red font-semibold">sushi guide for beginners</Link> to help kids enjoy the menu</li>
                             </ul>
 
+                            <div className="my-10 p-6 md:p-8 bg-warm-ivory/60 rounded-2xl border border-soft-gold/30">
+                                <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Why Jinbeh Is the Best Place for Kids&apos; Birthday Parties</h3>
+                                <p className="text-charcoal/80 mb-3">
+                                    Bouncing between bouncy houses and pizza joints, parents in DFW keep coming back to Jinbeh for one reason: we turn a kid&apos;s birthday into a tableside show they remember for years. Onion volcanoes, flying shrimp, the chef cracking jokes, the whole table cheering. It&apos;s built-in entertainment, premium food, and the cleanup is on us.
+                                </p>
+                                <p className="text-charcoal/80 mb-3">
+                                    Birthday kids get the &ldquo;three-touch&rdquo; treatment from the host, server, and chef, plus tambourines, noisemakers, and ice cream to close out the celebration. Training chopsticks are available for younger guests, and our team is endlessly patient with picky eaters, food allergies, and the surprise sibling who decides at the last minute that yes, they will have shrimp.
+                                </p>
+                                <p className="text-charcoal/80">
+                                    Many of our adult guests grew up celebrating birthdays at Jinbeh and now bring their own kids back. After nearly four decades of birthday parties at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> locations, we know how to make this one count. <Link href="/celebrations/birthday" className="text-accent-red hover:underline">Reserve a hibachi table</Link> and let us handle the show.
+                                </p>
+                            </div>
+
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Birthday party planning pro tip:</strong> Book your hibachi birthday party for a Saturday or Sunday lunch slot—you'll get better availability, shorter wait times, and slightly lower pricing. Ask about our birthday surprise: we can arrange a special chef performance just for the birthday child! For groups of 10+, we can reserve adjacent hibachi tables so the whole party watches the show together. Don't forget to mention any food allergies when booking—our kitchen prepares allergen-safe alternatives for every guest. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                    <strong>Birthday party planning pro tip:</strong> Book your hibachi birthday party for a Saturday or Sunday lunch slot for better availability and shorter wait times. Ask about our birthday surprise: we can arrange a special chef performance just for the birthday child. For groups of 10+, we can often reserve adjacent hibachi tables so the whole party watches the show together. Mention any food allergies when booking. Our kitchen prepares allergen-safe alternatives for every guest. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                 </ProTip>
 
                                 <PillarCTA type="hub" />

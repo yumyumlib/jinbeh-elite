@@ -67,8 +67,6 @@ const faqs = [
   },
 ];
 
-
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -150,8 +148,14 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
 
       {/* Article Body */}
       <p>
-        Imagine the sizzle of the hibachi grill, the whoosh of flames, and the laughter of your guests—all happening right in your backyard or private venue. The interactive energy. The entertainment. The incredible food. That's what Jinbeh's offsite hibachi catering brings to your celebration.
+        Imagine the mouthwatering, restaurant-quality hibachi and sushi your guests already love, delivered straight to your event. Premium proteins. Made-from-scratch sauces. Beautifully presented platters. That&apos;s what Jinbeh&apos;s offsite catering brings to your celebration.
       </p>
+
+      <div className="my-6 p-5 rounded-xl border border-soft-gold/40 bg-warm-ivory/60">
+        <p className="text-sm text-charcoal/80 leading-relaxed">
+          <strong>A note on the live show:</strong> The full hibachi performance, with onion volcanoes, flying shrimp, and a tableside chef, is something we do at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> restaurants. For your offsite event, we deliver and present the food we&apos;re known for, ready to enjoy. If you want the live show, the best move is to book a private hibachi table at one of our locations.
+        </p>
+      </div>
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎪 The Festival Legacy</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
@@ -163,31 +167,30 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
         For over 38 years, Jinbeh has been perfecting the art of hibachi entertainment and Japanese cuisine. Now, we bring that same expertise directly to you, transforming any venue into an unforgettable culinary experience. Whether you're celebrating a birthday, hosting a corporate event, or gathering family for a special dinner, offsite hibachi catering creates memories that last.
       </p>
 
-      <h2>The Hibachi Experience: More Than Just Dinner</h2>
+      <h2>Restaurant-Quality Hibachi, Delivered to Your Event</h2>
 
       <p>
-        Hibachi is theater. It's entertainment. It's exceptional food. When you choose{" "}
+        When you choose{" "}
         <Link href="/catering" className="text-accent-red hover:underline">
-          Jinbeh's offsite hibachi catering
+          Jinbeh&apos;s offsite catering
         </Link>
-        , you're not just getting a meal—you're creating a complete sensory experience.
+        , you&apos;re getting nearly four decades of hibachi and sushi craftsmanship in a format your team can serve. We prepare the food in our kitchens and deliver it on presentation trays so it looks as impressive as it tastes.
       </p>
 
-      <h3>The Art of Tableside Cooking</h3>
+      <h3>Hibachi You&apos;ll Recognize From the Restaurant</h3>
 
       <p>
-        The hibachi grill is the heart of the experience. A skilled hibachi chef prepares your meal right before your eyes, combining culinary artistry with interactive entertainment. It's not just cooking—it's a performance that engages all your senses.
+        The flavors that put Jinbeh on the map travel well. Tender hibachi steak, jumbo shrimp, hibachi chicken and salmon, fried rice, grilled vegetables, salad with ginger dressing, and our house-made yum yum and ginger sauces, all prepared in our kitchen, then plated on serving trays for easy event service.
       </p>
 
       <p>
-        Your chef will showcase knife skills, create onion volcanoes with bursts of flame, toss shrimp into waiting mouths, and craft each dish with precision and flair. Jinbeh's chefs are masters at creating a lively, engaging atmosphere that transforms a simple dinner into a memorable occasion. Guests don't just eat; they participate in the show.
+        Sushi is part of every catering menu too. Our sushi chefs craft fresh nigiri, sashimi, and signature specialty rolls in-house and arrange them on platters that are ready to serve when they arrive. It&apos;s the same fish, the same craftsmanship, and the same hospitality we&apos;ve been known for since 1988.
       </p>
 
       <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
-        <p className="italic text-charcoal/80 mb-2">
-          "Jinbeh came to our backyard and created the most incredible event. The chef was entertaining, skilled, and made everyone feel included. Our guests still talk about it months later!"
+        <p className="text-charcoal/80 mb-2">
+          Want the live hibachi show? Reserve a private hibachi table at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> restaurant for the full performance with onion volcanoes, flying shrimp, and tableside theatrics.
         </p>
-        <p className="text-sm text-charcoal/80">— Sarah M., Birthday Celebration Host</p>
       </div>
 
       <h3>Why Choose Hibachi for Your Event?</h3>
@@ -198,47 +201,47 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       />
 
       <p>
-        <strong>Entertainment Value:</strong> Guests are captivated from start to finish. The chef's performance is the evening's highlight.
+        <strong>Restaurant-Quality Food:</strong> Premium proteins, fresh sushi, and made-from-scratch sauces, exactly as we serve them at our restaurants.
       </p>
 
       <p>
-        <strong>Interactive Experience:</strong> Unlike traditional catering where food appears from a hidden kitchen, hibachi dining makes guests active participants in the meal preparation.
+        <strong>Beautifully Presented:</strong> Trays and platters are arranged for serving, so the spread looks impressive the moment it lands on your table.
       </p>
 
       <p>
-        <strong>Customizable & Fresh:</strong> Each meal is prepared to order based on guest preferences, ensuring everyone gets exactly what they want.
+        <strong>Customized Menu:</strong> Each catering order is built around your group, with options for hibachi proteins, sushi, sides, and dietary preferences.
       </p>
 
       <p>
-        <strong>Memorable Moments:</strong> The combination of entertainment, exceptional food, and shared table experience creates lasting memories.
+        <strong>Easy for Your Team:</strong> Food arrives ready to serve, freeing your hosts and venue staff to focus on guests instead of the kitchen.
       </p>
 
-      <h2>What's Included in Jinbeh Offsite Catering</h2>
+      <h2>What&apos;s Included in Jinbeh Offsite Catering</h2>
 
-      <h3>Comprehensive Service</h3>
-
-      <p>
-        When you book Jinbeh for your event, we handle everything. No stress. No hassle. Just exceptional results.
-      </p>
+      <h3>How It Works</h3>
 
       <p>
-        <strong>Professional Hibachi Chef:</strong> Our chefs are skilled entertainers who combine exceptional culinary expertise with engaging showmanship. They read the room, adjust the entertainment level, and ensure everyone has a great time.
+        When you book Jinbeh catering, our culinary team prepares everything in our kitchens, plates and packages it for transport, and we handle delivery and presentation setup at your venue.
       </p>
 
       <p>
-        <strong>All Equipment & Ingredients:</strong> We bring the hibachi grill, cooking utensils, ingredients, and serving equipment. Your venue only needs to provide the space and basic utilities.
+        <strong>Restaurant-Made Hibachi:</strong> Hibachi steak, chicken, shrimp, salmon, vegetables, and fried rice prepared in our kitchen and packaged hot for your event.
       </p>
 
       <p>
-        <strong>Customized Menu:</strong> Choose from our diverse offerings including various proteins, fresh vegetables, sushi, appetizers, and sides. We accommodate dietary restrictions and special requests.
+        <strong>Fresh Sushi Platters:</strong> Specialty rolls, nigiri, and sashimi crafted by our sushi chefs and arranged on serving platters for an immediate wow factor.
       </p>
 
       <p>
-        <strong>Full Setup & Breakdown:</strong> Our team arrives early to set up, cooks during your event, serves your guests, and handles complete cleanup. You enjoy the party while we manage everything else.
+        <strong>Customizable Menu:</strong> Choose from a range of proteins, sushi, appetizers, and sides. We accommodate dietary restrictions and special requests.
       </p>
 
       <p>
-        <strong>Professional Service Staff:</strong> Depending on party size, we provide additional staff to manage beverages, clear plates, and ensure guests have everything they need.
+        <strong>Delivery &amp; Presentation:</strong> We deliver to your venue and set up the spread on your serving area. Please give us at least one week of notice for large catering events so we can plan the menu, prep, and delivery details properly.
+      </p>
+
+      <p>
+        <strong>Live Hibachi Show:</strong> Available at our restaurants, not at offsite venues. If the show is the must-have for your event, we recommend booking a private hibachi table at <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>.
       </p>
 
       <h2>Customized Hibachi Catering Menus</h2>
