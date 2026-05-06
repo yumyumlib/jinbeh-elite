@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
     description:
-        "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban—perfectly paired with hibachi and sushi.",
+        "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban, perfectly paired with hibachi and sushi.",
     keywords: [
         "international beer day",
         "japanese beer celebration",
@@ -37,7 +37,7 @@ const faqs = [
     },
     {
         question: "What Japanese beers should I try for International Beer Day?",
-        answer: "Start with Sapporo on tap—it's Japan's oldest beer and our best seller. Then try Asahi Super Dry for something ultra-crisp, and Kirin Ichiban for a slightly fuller body. Each pairs differently with hibachi and sushi, so order a variety to find your favorite.",
+        answer: "Start with Sapporo on tap, it's Japan's oldest beer and our best seller. Then try Asahi Super Dry for something ultra-crisp, and Kirin Ichiban for a slightly fuller body. Each pairs differently with hibachi and sushi, so order a variety to find your favorite.",
     },
     {
         question: "Can I pair Japanese beer with hibachi?",
@@ -49,7 +49,7 @@ const faqs = [
     },
     {
         question: "Can I bring my own beer to a Japanese restaurant?",
-        answer: "Most Japanese restaurants, including Jinbeh, have full liquor licenses and don't allow outside beverages. But that's a good thing — we stock authentic Japanese beers on tap and in bottles that pair perfectly with our food. You won't find a better Sapporo draft in DFW!",
+        answer: "Most Japanese restaurants, including Jinbeh, have full liquor licenses and don't allow outside beverages. But that's a good thing, we stock authentic Japanese beers on tap and in bottles that pair perfectly with our food. You won't find a better Sapporo draft in DFW!",
     },
 ];
 
@@ -57,7 +57,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
-  "description": "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban—perfectly paired with hibachi and sushi since 1988.",
+  "description": "Celebrate International Beer Day with Japanese beer at Jinbeh! Discover Sapporo, Asahi, and Kirin Ichiban, perfectly paired with hibachi and sushi since 1988.",
   "image": "https://jinbeh.com/images/og-image.jpg",
   "datePublished": "2026-01-30",
   "dateModified": "2026-03-24",
@@ -80,7 +80,7 @@ export default function InternationalBeerDay() {
     return (
         <ArticleLayout
             title="International Beer Day: Celebrate with Japanese Beer at Jinbeh"
-            metaDescription="International Beer Day falls on the first Friday of August. This year, skip the usual pint and raise a Sapporo alongside hibachi steak and fresh sushi at Jinbeh—DFW's favorite Japanese restaurant since 1988."
+            metaDescription="International Beer Day falls on the first Friday of August. This year, skip the usual pint and raise a Sapporo alongside hibachi steak and fresh sushi at Jinbeh, DFW's favorite Japanese restaurant since 1988."
             heroImage="/images/blog/6-C060324-6405.jpg"
             heroAlt="Sapporo beer on tap at Jinbeh's bar for International Beer Day"
             category="Beverages"
@@ -89,7 +89,7 @@ export default function InternationalBeerDay() {
             publishDate="February 2026"
             readTime="5 min read"
             faqs={faqs}
-            keyTakeaway="International Beer Day is the perfect excuse to try Japan's finest beers—Sapporo, Asahi, and Kirin—paired with hibachi and sushi at Jinbeh. Celebrate beer, food, and friendship at DFW's favorite Japanese restaurant."
+            keyTakeaway="International Beer Day is the perfect excuse to try Japan's finest beers, Sapporo, Asahi, and Kirin, paired with hibachi and sushi at Jinbeh. Celebrate beer, food, and friendship at DFW's favorite Japanese restaurant."
         >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "International Beer Day" }]} />
@@ -97,7 +97,7 @@ export default function InternationalBeerDay() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"🍺 What Is International Beer Day?","acceptedAnswer":{"@type":"Answer","text":"Every first Friday of August, beer lovers around the wor ld raise their glasses for International Beer Day. It's a celebration of the craft, culture, and community that beer brings to the table—literally."}},{"@type":"Question","name":"Why Japanese Beer Deserves a Spot in Your Celebration","acceptedAnswer":{"@type":"Answer","text":"Japanese brewers have been perfecting their craft since the 1870s, creating some of the world's most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are designed with one goal: to enhance the food you're eating. That food-first philosophy is what makes them extraordinary."}},{"@type":"Question","name":"How to Celebrate at Jinbeh","acceptedAnswer":{"@type":"Answer","text":"Make your International Beer Day more than just a beer—make it an experience:"}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"🍺 What Is International Beer Day?","acceptedAnswer":{"@type":"Answer","text":"Every first Friday of August, beer lovers around the wor ld raise their glasses for International Beer Day. It's a celebration of the craft, culture, and community that beer brings to the table, literally."}},{"@type":"Question","name":"Why Japanese Beer Deserves a Spot in Your Celebration","acceptedAnswer":{"@type":"Answer","text":"Japanese brewers have been perfecting their craft since the 1870s, creating some of the world's most drinkable lagers. Unlike heavy ales or bitter IPAs, Japanese beers are designed with one goal: to enhance the food you're eating. That food-first philosophy is what makes them extraordinary."}},{"@type":"Question","name":"How to Celebrate at Jinbeh","acceptedAnswer":{"@type":"Answer","text":"Make your International Beer Day more than just a beer, make it an experience:"}}]}` }}
       />
             <h1>🍺 What Is International Beer Day?</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
@@ -133,7 +133,7 @@ export default function InternationalBeerDay() {
             />
 ld raise their glasses for
                 International Beer Day. It's a celebration of the craft, culture, and community
-                that beer brings to the table—literally.
+                that beer brings to the table, literally.
             </p>
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍺 Behind the Bar at Jinbeh</h3>
@@ -173,14 +173,14 @@ ld raise their glasses for
             <h3>🥇 Sapporo Premium Lager</h3>
             <p>
                 Japan's oldest brand (est. 1876). Smooth, balanced, with a clean finish that pairs with
-                literally everything on our menu. Our <strong>Sapporo on tap</strong> is a guest favorite—order
+                literally everything on our menu. Our <strong>Sapporo on tap</strong> is a guest favorite, order
                 it with any hibachi entrée for the ultimate pairing. Read more in our
                 <Link href="/blog/beer-hard-seltzer" className="text-accent-red hover:underline"> complete beer guide</Link>.
             </p>
 
             <h3>🥈 Asahi Super Dry</h3>
             <p>
-                The world's first "dry" beer. Ultra-crisp and refreshing—perfect alongside rich,
+                The world's first "dry" beer. Ultra-crisp and refreshing, perfect alongside rich,
  smoky hibachi steak or crispy tempura. If you like your beer clean and sharp, Asahi
  is your International Beer Day pick.
  </p>
@@ -194,21 +194,21 @@ ld raise their glasses for
  <h2>How to Celebrate at Jinbeh</h2>
 
  <p>
- Make your International Beer Day more than just a beer—make it an experience:
+ Make your International Beer Day more than just a beer, make it an experience:
  </p>
 
  <ol>
- <li><strong>Start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link></strong> — Sapporo drafts and sake to kick things off</li>
- <li><strong>Order a beer flight</strong> — Try Sapporo, Asahi, and Kirin side by side to discover your favorite</li>
- <li><strong>Book hibachi</strong> — Nothing pairs with cold beer like a sizzling <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki chef show</Link></li>
- <li><strong>Try a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake chaser</Link></strong> — A small sake alongside your beer is a traditional Japanese pairing</li>
- <li><strong>Bring friends</strong> — International Beer Day is about community. Book a hibachi table for 8-10 and celebrate together</li>
+ <li><strong>Start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link></strong>, Sapporo drafts and sake to kick things off</li>
+ <li><strong>Order a beer flight</strong>, Try Sapporo, Asahi, and Kirin side by side to discover your favorite</li>
+ <li><strong>Book hibachi</strong>, Nothing pairs with cold beer like a sizzling <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki chef show</Link></li>
+ <li><strong>Try a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake chaser</Link></strong>, A small sake alongside your beer is a traditional Japanese pairing</li>
+ <li><strong>Bring friends</strong>, International Beer Day is about community. Book a hibachi table for 8-10 and celebrate together</li>
  </ol>
 
  <h2>Beyond Beer: Our Full Drink Menu</h2>
 
  <p>
- If your International Beer Day squad includes non-beer drinkers, don't worry—our
+ If your International Beer Day squad includes non-beer drinkers, don't worry, our
                 <Link href="/bar" className="text-accent-red hover:underline"> full bar</Link> has everyone
                 covered. Explore our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails</Link>,
                 premium sake selection, wine, and hard seltzers. Our lychee martini has its own
@@ -222,7 +222,7 @@ ld raise their glasses for
             </p>
 
             <ProTip variant="chef">
-                <strong>International Beer Day pro tip:</strong> Arrive during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted Sapporo drafts, then stay for hibachi. Ask your server for a "Japanese beer flight" — we'll pour samples of all three (Sapporo, Asahi, Kirin) so you can compare side by side with your meal. The best pairing? Sapporo with hibachi steak, Asahi with tempura, and Kirin with sashimi. Kanpai! 🍺
+                <strong>International Beer Day pro tip:</strong> Arrive during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted Sapporo drafts, then stay for hibachi. Ask your server for a "Japanese beer flight", we'll pour samples of all three (Sapporo, Asahi, Kirin) so you can compare side by side with your meal. The best pairing? Sapporo with hibachi steak, Asahi with tempura, and Kirin with sashimi. Kanpai! 🍺
             </ProTip>
 
             <PillarCTA type="hub" />

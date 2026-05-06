@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function EdamameFriscoPage() {
-  const item = { ...getMenuItem("edamame", "appetizers")!, jinbehStory: "Regular edamame gets the Jinbeh upgrade — sautéed with our spicy sauce and garlic, with an intentional touch of char. One of those items where the preparation makes a humble ingredient feel special." };
+  const item = { ...getMenuItem("edamame", "appetizers")!, jinbehStory: "Regular edamame gets the Jinbeh upgrade, sautéed with our spicy sauce and garlic, with an intentional touch of char. One of those items where the preparation makes a humble ingredient feel special." };
   const location = locations["frisco"];
 
   return (

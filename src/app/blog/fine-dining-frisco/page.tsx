@@ -63,11 +63,11 @@ const faqs = [
     },
     {
         question: "Is Jinbeh appropriate for special occasions?",
-        answer: "Absolutely! Birthdays, anniversaries, proposals—we've hosted them all. Hibachi is interactive and memorable. Call ahead, mention the occasion, and we'll make it special.",
+        answer: "Absolutely! Birthdays, anniversaries, proposals, we've hosted them all. Hibachi is interactive and memorable. Call ahead, mention the occasion, and we'll make it special.",
     },
     {
         question: "What should I wear to fine dining in Frisco?",
-        answer: "Most upscale Frisco restaurants recommend smart-casual to business casual attire. At Jinbeh, we welcome you as you are—whether that's date night dressy or comfortable casual after a day of shopping at Stonebriar. The experience is more important than the outfit!",
+        answer: "Most upscale Frisco restaurants recommend smart-casual to business casual attire. At Jinbeh, we welcome you as you are, whether that's date night dressy or comfortable casual after a day of shopping at Stonebriar. The experience is more important than the outfit!",
     },
 ];
 
@@ -225,18 +225,18 @@ export default function FineDiningFrisco() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-        Ten years ago, "fine dining in Frisco" meant driving to Dallas. Not anymore. Frisco has quietly built one of the most exciting upscale restaurant scenes in North Texas—and the best spots aren't always the ones with the biggest marketing budgets.
+        Ten years ago, "fine dining in Frisco" meant driving to Dallas. Not anymore. Frisco has quietly built one of the most exciting upscale restaurant scenes in North Texas, and the best spots aren't always the ones with the biggest marketing budgets.
       </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "Fine dining isn't just about exceptional food—it's about creating memories through an unforgettable experience. At Jinbeh, we combine authentic Japanese tradition with contemporary elegance, delivering culinary artistry in every dish."
+                                            "Fine dining isn't just about exceptional food, it's about creating memories through an unforgettable experience. At Jinbeh, we combine authentic Japanese tradition with contemporary elegance, delivering culinary artistry in every dish."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Fine Dining Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Jinbeh Fine Dining Team</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Frisco's population has exploded from just 33,000 in 2000 to over 230,000 today, making it one of the fastest-growing cities in America. This growth has attracted over 500 restaurants to the area — but Jinbeh has been a Frisco dining institution since 1988, predating most of the city's modern development by over a decade."
+                                        fact="Frisco's population has exploded from just 33,000 in 2000 to over 230,000 today, making it one of the fastest-growing cities in America. This growth has attracted over 500 restaurants to the area, but Jinbeh has been a DFW dining institution since 1988, predating most of the city's modern development by over a decade."
                                         source="U.S. Census Bureau & City of Frisco"
                                     />
 
@@ -284,11 +284,11 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        Jinbeh's <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi experience</Link> is far more than just a meal—it's a performance. Skilled chefs orchestrate a spectacular show, preparing your meal with precision and flair directly before your eyes. The sizzling sounds, tantalizing aromas, and expertly executed techniques create an atmosphere that's as entertaining as it is delicious.
+                                        Jinbeh's <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi experience</Link> is far more than just a meal, it's a performance. Skilled chefs orchestrate a spectacular show, preparing your meal with precision and flair directly before your eyes. The sizzling sounds, tantalizing aromas, and expertly executed techniques create an atmosphere that's as entertaining as it is delicious.
                                     </p>
 
                                     <p className="bg-soft-gold/20 border-l-4 border-soft-gold p-4 rounded-r-lg my-6">
-                                        The hibachi chicken, steak, and seafood at Jinbeh are cooked to perfection, ensuring that flavors are locked in and textures are just right. Diners are treated to culinary tricks like shrimp flips into chef's hats and signature onion volcanoes—a true feast for the senses.
+                                        The hibachi chicken, steak, and seafood at Jinbeh are cooked to perfection, ensuring that flavors are locked in and textures are just right. Diners are treated to culinary tricks like shrimp flips into chef's hats and signature onion volcanoes, a true feast for the senses.
                                     </p>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-8 mb-4">
@@ -296,7 +296,7 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        For steak enthusiasts, Jinbeh offers a revelation. Each steak is sourced from premium cuts and cooked to your exact preference. The combination of expert cooking technique and carefully selected accompaniments—from wasabi-infused butter to soy-ginger glaze—creates a dining experience that's both sophisticated and unforgettable.
+                                        For steak enthusiasts, Jinbeh offers a revelation. Each steak is sourced from premium cuts and cooked to your exact preference. The combination of expert cooking technique and carefully selected accompaniments, from wasabi-infused butter to soy-ginger glaze, creates a dining experience that's both sophisticated and unforgettable.
                                     </p>
 
                                     <h3 className="text-2xl font-heading font-bold text-charcoal mt-8 mb-4">
@@ -324,7 +324,7 @@ export default function FineDiningFrisco() {
                                                 🏯 Why Choose Jinbeh for Fine Dining?
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Jinbeh has been a cornerstone of Frisco's dining scene since 1988. We've earned a top-rated Google rating through unwavering commitment to quality, authenticity, and hospitality.
+                                                Jinbeh has been a cornerstone of DFW's dining scene since 1988. We've earned a top-rated Google rating through unwavering commitment to quality, authenticity, and hospitality.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
@@ -384,11 +384,11 @@ export default function FineDiningFrisco() {
                                     </h3>
 
                                     <p>
-                                        Whether you're celebrating an <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline">anniversary</Link>, hosting a corporate event, or marking a milestone birthday, fine dining restaurants in Frisco—especially Jinbeh—can customize the experience to your preferences.
+                                        Whether you're celebrating an <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline">anniversary</Link>, hosting a corporate event, or marking a milestone birthday, fine dining restaurants in Frisco, especially Jinbeh, can customize the experience to your preferences.
                                     </p>
 
                                     <ProTip variant="insider">
-                                        <strong>Fine dining insider tip:</strong> For special occasions, request the sushi bar for an intimate experience watching master chefs work, or book a hibachi table for group celebrations. Reviewers rave that Jinbeh's sake flights pair perfectly with sushi <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link>. Ask about semi-private dining for corporate events — it's Frisco's best-kept fine dining secret. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your experience →</Link>
+                                        <strong>Fine dining insider tip:</strong> For special occasions, request the sushi bar for an intimate experience watching master chefs work, or book a hibachi table for group celebrations. Reviewers rave that Jinbeh's sake flights pair perfectly with sushi <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link>. Ask about semi-private dining for corporate events, it's Frisco's best-kept fine dining secret. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your experience →</Link>
                                     </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">

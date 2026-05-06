@@ -43,12 +43,12 @@ const faqs = [
   {
     question: "What are the best restaurants near pickleball in Lewisville TX?",
     answer:
-      "Jinbeh Japanese Restaurant is the top choice for restaurants near pickleball in Lewisville. Located just 2 doors from The Picklr at 2450 S Stemmons Fwy, it's less than a 1-minute walk from the courts. Jinbeh offers hibachi, sushi, and sake—perfect for refueling after your game.",
+      "Jinbeh Japanese Restaurant is the top choice for restaurants near pickleball in Lewisville. Located just 2 doors from The Picklr at 2450 S Stemmons Fwy, it's less than a 1-minute walk from the courts. Jinbeh offers hibachi, sushi, and sake, perfect for refueling after your game.",
   },
   {
     question: "How far is Jinbeh from The Picklr Lewisville?",
     answer:
-      "Jinbeh Japanese Restaurant is literally 2 doors down from The Picklr at 2450 S Stemmons Fwy, Lewisville, TX 75067. It's less than a 1-minute walk—you can practically see it from The Picklr's parking lot!",
+      "Jinbeh Japanese Restaurant is literally 2 doors down from The Picklr at 2450 S Stemmons Fwy, Lewisville, TX 75067. It's less than a 1-minute walk, you can practically see it from The Picklr's parking lot!",
   },
   {
     question: "Is Jinbeh a good post-workout meal after pickleball?",
@@ -78,7 +78,7 @@ const faqs = [
   {
     question: "Can I come to Jinbeh in athletic wear after pickleball?",
     answer:
-      "Absolutely! We're casual-friendly and welcome guests straight from the courts. Jinbeh has no dress code — come as you are. Many of our regulars walk over from The Picklr in their athletic gear. Just bring your appetite!",
+      "Absolutely! We're casual-friendly and welcome guests straight from the courts. Jinbeh has no dress code, come as you are. Many of our regulars walk over from The Picklr in their athletic gear. Just bring your appetite!",
   },
 ];
 
@@ -180,12 +180,9 @@ export default function PickleballRestaurantsLewisvillePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville","acceptedAnswer":{"@type":"Answer","text":"There's something magical about combining physical activity with a great meal. Here's why this combo works so well:"}},{"@type":"Question","name":"Why The Picklr + Jinbeh Works","acceptedAnswer":{"@type":"Answer","text":"This isn't just proximity—it's synergy. Both businesses share values that make this pairing natural:"}},{"@type":"Question","name":"Other Things to Do Near Stemmons Freeway Lewisville","acceptedAnswer":{"@type":"Answer","text":"The 2450 S Stemmons Fwy area is becoming a hub for fun activities. Beyond pickleball and dining, you're also near:"}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville","acceptedAnswer":{"@type":"Answer","text":"There's something magical about combining physical activity with a great meal. Here's why this combo works so well:"}},{"@type":"Question","name":"Why The Picklr + Jinbeh Works","acceptedAnswer":{"@type":"Answer","text":"This isn't just proximity, it's synergy. Both businesses share values that make this pairing natural:"}},{"@type":"Question","name":"Other Things to Do Near Stemmons Freeway Lewisville","acceptedAnswer":{"@type":"Answer","text":"The 2450 S Stemmons Fwy area is becoming a hub for fun activities. Beyond pickleball and dining, you're also near:"}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Best Restaurants Near Pickleball in Lewisville TX
-
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -207,6 +204,8 @@ export default function PickleballRestaurantsLewisvillePage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Best Restaurants Near Pickleball in Lewisville TX
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
@@ -222,7 +221,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       <h2>The Best Restaurant Near Pickleball in Lewisville</h2>
 
       <p>
-        Looking for <strong>restaurants near pickleball in Lewisville</strong>? You've found the perfect spot. <strong>Jinbeh Japanese Restaurant</strong> is literally 2 doors down from The Picklr—making it the most convenient and delicious post-game dining option in the area. Whether you're craving hibachi, sushi, or sake after your match, we've got you covered.
+        Looking for <strong>restaurants near pickleball in Lewisville</strong>? You've found the perfect spot. <strong>Jinbeh Japanese Restaurant</strong> is literally 2 doors down from The Picklr, making it the most convenient and delicious post-game dining option in the area. Whether you're craving hibachi, sushi, or sake after your match, we've got you covered.
       </p>
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">📍 Why Jinbeh Lewisville Is the Go-To Post-Game Spot</h3>
@@ -242,7 +241,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       </p>
 
       <p>
-        Both located at <strong>2450 S Stemmons Fwy</strong>, The Picklr and Jinbeh make planning your day effortless. No driving between activities, no parking hassles—just pure fun followed by amazing food.
+        Both located at <strong>2450 S Stemmons Fwy</strong>, The Picklr and Jinbeh make planning your day effortless. No driving between activities, no parking hassles, just pure fun followed by amazing food.
       </p>
 
       <div className="my-8 p-6 bg-accent-red/5 rounded-2xl border border-accent-red/20">
@@ -271,17 +270,17 @@ export default function PickleballRestaurantsLewisvillePage() {
 
       <h3>1. Work Up an Appetite, Then Feast</h3>
       <p>
-        Pickleball is a fantastic workout—you'll burn 400-600 calories per hour while having a blast. After all that movement, you've earned a delicious meal. Our hibachi portions are generous, with premium proteins, fresh vegetables, and perfectly seasoned fried rice.
+        Pickleball is a fantastic workout, you'll burn 400-600 calories per hour while having a blast. After all that movement, you've earned a delicious meal. Our hibachi portions are generous, with premium proteins, fresh vegetables, and perfectly seasoned fried rice.
       </p>
 
       <h3>2. The Entertainment Continues</h3>
       <p>
-        Just had fun on the courts? Keep the energy going with our hibachi show! Watch our skilled chefs juggle spatulas, create onion volcanoes, and cook your meal with theatrical flair. It's dinner AND a show—the perfect continuation of your active day.
+        Just had fun on the courts? Keep the energy going with our hibachi show! Watch our skilled chefs juggle spatulas, create onion volcanoes, and cook your meal with theatrical flair. It's dinner AND a show, the perfect continuation of your active day.
       </p>
 
       <h3>3. Perfect for Groups & Teams</h3>
       <p>
-        Playing pickleball with friends or your league? Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people, making it ideal for team dinners. The communal seating and interactive cooking create natural conversation and bonding—way better than splitting up at a regular restaurant.
+        Playing pickleball with friends or your league? Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) people, making it ideal for team dinners. The communal seating and interactive cooking create natural conversation and bonding, way better than splitting up at a regular restaurant.
       </p>
 
       <h2>Pickleball Date Night in Lewisville</h2>
@@ -350,14 +349,14 @@ export default function PickleballRestaurantsLewisvillePage() {
       <h2>Why The Picklr + Jinbeh Works</h2>
 
       <p>
-        This isn't just proximity—it's synergy. Both businesses share values that make this pairing natural:
+        This isn't just proximity, it's synergy. Both businesses share values that make this pairing natural:
       </p>
 
       <ul className="list-disc list-inside space-y-2 text-charcoal/80 mb-6">
         <li><strong>Community-Focused:</strong> Both places bring people together</li>
         <li><strong>Fun & Entertainment:</strong> Pickleball courts and hibachi shows both deliver excitement</li>
         <li><strong>All Skill Levels Welcome:</strong> Beginners and experts enjoy both venues</li>
-        <li><strong>Quality Experience:</strong> No cutting corners—premium facilities and premium food</li>
+        <li><strong>Quality Experience:</strong> No cutting corners, premium facilities and premium food</li>
       </ul>
 
       <h2>Other Things to Do Near Stemmons Freeway Lewisville</h2>
@@ -389,7 +388,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       <div className="my-8 p-6 bg-gradient-to-r from-accent-red/10 to-soft-gold/10 rounded-2xl border border-accent-red/20">
         <h3 className="text-xl font-heading font-bold text-charcoal mb-3">🍣 Reserve Your Post-Pickleball Table</h3>
         <p className="text-charcoal/80 mb-4">
-          Make it easy—<Link href="/reservations" className="text-accent-red hover:underline font-semibold">book your Jinbeh table</Link> when you book your court time!
+          Make it easy,<Link href="/reservations" className="text-accent-red hover:underline font-semibold">book your Jinbeh table</Link> when you book your court time!
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
@@ -410,7 +409,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       <RelatedArticles currentSlug={slug} />
 
       <ProTip variant="insider">
-        <strong>Post-pickleball dining tip:</strong> Mention to your server that you just came from The Picklr—our staff loves hearing about your game! For the fastest post-game meal, try our lunch bento boxes (ready in 10-15 minutes). For a celebration after a tournament win, book a hibachi table—it's the ultimate team reward. Call <a href="tel:2144882224" className="text-accent-red hover:underline">(214) 488-2224</a> to reserve before your match!
+        <strong>Post-pickleball dining tip:</strong> Mention to your server that you just came from The Picklr, our staff loves hearing about your game! For the fastest post-game meal, try our lunch bento boxes (ready in 10-15 minutes). For a celebration after a tournament win, book a hibachi table, it's the ultimate team reward. Call <a href="tel:2144882224" className="text-accent-red hover:underline">(214) 488-2224</a> to reserve before your match!
       </ProTip>
 
       <PillarCTA type="hub" />

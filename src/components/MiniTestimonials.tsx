@@ -45,7 +45,7 @@ export function MiniTestimonials({ quotes, className, intervalMs = 6000 }: MiniT
                         ))}
                     </div>
                     <p className="text-sm md:text-base font-medium text-charcoal/90 italic mb-1">&quot;{q.quote}&quot;</p>
-                    <span className="text-xs text-charcoal/60 font-semibold">— {q.author}</span>
+                    <span className="text-xs text-charcoal/60 font-semibold">{q.author}</span>
                 </div>
             ))}
         </div>

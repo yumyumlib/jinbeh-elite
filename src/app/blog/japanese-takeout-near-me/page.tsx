@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
     description:
-        "Find the best sushi Dallas takeout and Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese.",
+        "Find the best sushi Dallas takeout and Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters, order fresh Japanese.",
     keywords: [
         "japanese takeout near me",
         "sushi takeout frisco",
@@ -49,7 +49,7 @@ const faqs = [
     },
     {
         question: "Is there a minimum order for Japanese food delivery?",
-        answer: "Minimum order amounts vary by delivery platform. DoorDash and Uber Eats typically require minimums. For direct pickup from Jinbeh, there's no minimum — order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
+        answer: "Minimum order amounts vary by delivery platform. DoorDash and Uber Eats typically require minimums. For direct pickup from Jinbeh, there's no minimum, order as little or as much as you'd like. For large catering orders (10+ people), call us directly for better pricing than delivery apps.",
     },
 ];
 
@@ -57,7 +57,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Japanese Takeout Near Me: Best DFW Takeout Guide | Jinbeh",
-  "description": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbe",
+  "description": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters, order fresh Japanese food for pickup or delivery from Jinbe",
   "image": "https://jinbeh.com/images/og-image.jpg",
   "datePublished": "2026-01-30",
   "dateModified": "2026-03-24",
@@ -80,7 +80,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "Japanese Takeout Near Me: Best DFW Takeout Guide",
-  "description": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters—order fresh Japanese food for pickup or delivery from Jinbeh.",
+  "description": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters, order fresh Japanese food for pickup or delivery from Jinbeh.",
   "step": [
     {
       "@type": "HowToStep",
@@ -118,7 +118,7 @@ export default function JapaneseTakeoutNearMe() {
             publishDate="February 2026"
             readTime="6 min read"
             faqs={faqs}
-            keyTakeaway="The best Japanese takeout balances freshness, packaging, and variety. Order sushi rolls, bento boxes, and hibachi platters from restaurants that prepare to order—like Jinbeh, where every dish is made fresh with the same care whether you dine in or take out."
+            keyTakeaway="The best Japanese takeout balances freshness, packaging, and variety. Order sushi rolls, bento boxes, and hibachi platters from restaurants that prepare to order, like Jinbeh, where every dish is made fresh with the same care whether you dine in or take out."
         >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Japanese Takeout Near Me" }]} />
@@ -126,7 +126,7 @@ export default function JapaneseTakeoutNearMe() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Japanese Takeout Is Booming in DFW","acceptedAnswer":{"@type":"Answer","text":"Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth—and for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety, and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits different."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Japanese Takeout Is Booming in DFW","acceptedAnswer":{"@type":"Answer","text":"Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth, and for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety, and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits different."}}]}` }}
       />
             <h1>Why Japanese Takeout Is Booming in DFW</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
@@ -164,7 +164,7 @@ export default function JapaneseTakeoutNearMe() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
- takeout options in Dallas-Fort Worth—and
+ takeout options in Dallas-Fort Worth, and
                 for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety,
                 and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual
                 gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits
@@ -185,7 +185,7 @@ export default function JapaneseTakeoutNearMe() {
 
             <p>
                 At <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>, we've been
-                serving DFW since 1988—and our takeout game is just as strong as our dine-in experience.
+                serving DFW since 1988, and our takeout game is just as strong as our dine-in experience.
                 Browse our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> and order via
                 our <Link href="/takeout" className="text-accent-red hover:underline">takeout</Link> or <Link href="/delivery" className="text-accent-red hover:underline">delivery</Link> pages.
                 Our guests say our food is "tasty and enjoyable" whether it's eaten at the restaurant
@@ -205,17 +205,17 @@ export default function JapaneseTakeoutNearMe() {
                 handcrafted by expert chefs using fresh fish delivered daily. Favorites include:
             </p>
             <ul>
-                <li><strong>California Roll</strong> — The classic crowd-pleaser, travels perfectly</li>
-                <li><strong>Spicy Tuna Roll</strong> — Bold flavor that holds up during delivery</li>
-                <li><strong>Dragon Roll</strong> — Eel and avocado—a Jinbeh guest favorite</li>
-                <li><strong>Dallas Roll</strong> — Our signature creation guests call "amazing"</li>
-                <li><strong>Tempura Rolls</strong> — Crispy texture that works great for takeout</li>
+                <li><strong>California Roll</strong>, The classic crowd-pleaser, travels perfectly</li>
+                <li><strong>Spicy Tuna Roll</strong>, Bold flavor that holds up during delivery</li>
+                <li><strong>Dragon Roll</strong>, Eel and avocado, a Jinbeh guest favorite</li>
+                <li><strong>Dallas Roll</strong>, Our signature creation guests call "amazing"</li>
+                <li><strong>Tempura Rolls</strong>, Crispy texture that works great for takeout</li>
             </ul>
 
             <h3>🍱 Bento Boxes</h3>
             <p>
                 A bento box is the ultimate value play for Japanese takeout. Each box includes a protein
-                (chicken teriyaki, salmon, or shrimp), rice, salad, and sides—all in one convenient container.
+                (chicken teriyaki, salmon, or shrimp), rice, salad, and sides, all in one convenient container.
                 Perfect for office lunches or when you want a complete, balanced meal.
             </p>
 
@@ -232,11 +232,11 @@ export default function JapaneseTakeoutNearMe() {
                 Don't forget the extras that make a Japanese meal complete:
             </p>
             <ul>
-                <li><strong>Edamame</strong> — Steamed and salted, a healthy starter</li>
-                <li><strong>Miso Soup</strong> — Comforting and traditional</li>
-                <li><strong>Gyoza</strong> — Pan-fried pork dumplings</li>
-                <li><strong>Crab Rangoons</strong> — Guests say ours are "the best I've ever had"</li>
-                <li><strong>Ahi Tower</strong> — A beautiful layered tuna appetizer</li>
+                <li><strong>Edamame</strong>, Steamed and salted, a healthy starter</li>
+                <li><strong>Miso Soup</strong>, Comforting and traditional</li>
+                <li><strong>Gyoza</strong>, Pan-fried pork dumplings</li>
+                <li><strong>Crab Rangoons</strong>, Guests say ours are "the best I've ever had"</li>
+                <li><strong>Ahi Tower</strong>, A beautiful layered tuna appetizer</li>
             </ul>
 
             <h2>How to Order Japanese Takeout from Jinbeh</h2>
@@ -245,9 +245,9 @@ export default function JapaneseTakeoutNearMe() {
                 We make ordering easy:
             </p>
             <ol>
-                <li><strong>Call ahead</strong> — Frisco: (214) 619-1200 | Lewisville: (214) 488-2224</li>
-                <li><strong>Order online</strong> — Available through <Link href="/order-online" className="text-accent-red hover:underline">Grubhub and Uber Eats</Link></li>
-                <li><strong>Pick up</strong> — Most orders ready in 20-30 minutes</li>
+                <li><strong>Call ahead</strong>, Frisco: (214) 619-1200 | Lewisville: (214) 488-2224</li>
+                <li><strong>Order online</strong>, Available through <Link href="/order-online" className="text-accent-red hover:underline">Grubhub and Uber Eats</Link></li>
+                <li><strong>Pick up</strong>, Most orders ready in 20-30 minutes</li>
             </ol>
 
             <p>
@@ -261,19 +261,19 @@ export default function JapaneseTakeoutNearMe() {
 
             <p>
                 Many chain Japanese restaurants use pre-made or frozen components for their takeout.
-                At Jinbeh, every dish—whether dine-in or takeout—is prepared fresh to order by the same
+                At Jinbeh, every dish, whether dine-in or takeout, is prepared fresh to order by the same
                 skilled chefs who've been serving DFW families for over 38 years. That's the difference
                 between "fine" and "fantastic."
             </p>
 
             <p>
-                Our guests consistently note that we "accommodate allergies really well"—so don't
+                Our guests consistently note that we "accommodate allergies really well",so don't
                 hesitate to ask about dietary modifications when placing your takeout order. We're happy
                 to customize.
             </p>
 
             <ProTip variant="insider">
-                <strong>Japanese takeout pro tip:</strong> At Jinbeh, call 20-30 minutes before you want to pick up for the freshest sushi. Order tempura and baked rolls for takeout—they travel better than raw fish rolls. Ask for extra ginger and wasabi on the side. For large orders (5+ rolls), mention it when calling so we can time everything to be ready together. <Link href="/takeout" className="text-accent-red hover:underline">Order takeout →</Link>
+                <strong>Japanese takeout pro tip:</strong> At Jinbeh, call 20-30 minutes before you want to pick up for the freshest sushi. Order tempura and baked rolls for takeout, they travel better than raw fish rolls. Ask for extra ginger and wasabi on the side. For large orders (5+ rolls), mention it when calling so we can time everything to be ready together. <Link href="/takeout" className="text-accent-red hover:underline">Order takeout →</Link>
             </ProTip>
 
             <PillarCTA type="reservations" />

@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function NyStripLewisvillePage() {
-  const item = { ...getMenuItem("ny-strip", "hibachi")!, jinbehStory: "When a customer orders steak at the hibachi, our chefs receive the temperature preference directly — using a numbered doneness system from 1 through 8. The grills reach 550°F, ensuring a perfect sear every time." };
+  const item = { ...getMenuItem("ny-strip", "hibachi")!, jinbehStory: "When a customer orders steak at the hibachi, our chefs receive the temperature preference directly, using a numbered doneness system from 1 through 8. The grills reach 550°F, ensuring a perfect sear every time." };
   const location = locations["lewisville"];
 
   return (

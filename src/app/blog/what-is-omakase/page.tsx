@@ -38,7 +38,7 @@ const faqs = [
     { question: "How do I ask for omakase at Jinbeh?", answer: "Welcome to the table! Say 'omakase onegaishimasu' (I trust you, please). Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to arrange your experience." },
     { question: "What should I say to the sushi chef during omakase?", answer: "Simple acknowledgments like 'arigatou' (thank you) or 'oishii' (delicious) show appreciation. Most chefs are happy to explain each piece and share recommendations. Don't be afraid to ask questions!" },
     { question: "Can you have dietary restrictions with omakase?", answer: "Yes. Always inform the chef of allergies, vegetarian preferences, or fish types to avoid before the meal begins. Professional chefs will accommodate your needs while maintaining the omakase experience." },
-    { question: "What is the difference between omakase and kaiseki?", answer: "Omakase focuses specifically on sushi—the chef selects and serves pieces one by one at the sushi bar. Kaiseki is a multi-course Japanese meal featuring various cooking techniques like grilling, simmering, and steaming. Both showcase seasonal ingredients and chef expertise, but they are distinct dining formats." },
+    { question: "What is the difference between omakase and kaiseki?", answer: "Omakase focuses specifically on sushi, the chef selects and serves pieces one by one at the sushi bar. Kaiseki is a multi-course Japanese meal featuring various cooking techniques like grilling, simmering, and steaming. Both showcase seasonal ingredients and chef expertise, but they are distinct dining formats." },
 ];
 
 const articleSchema = {
@@ -113,7 +113,7 @@ const faqSchema = {
             name: "What is the difference between omakase and kaiseki?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Omakase focuses specifically on sushi—the chef selects and serves pieces one by one at the sushi bar. Kaiseki is a multi-course Japanese meal featuring various cooking techniques like grilling, simmering, and steaming. Both showcase seasonal ingredients and chef expertise, but they are distinct dining formats.",
+                text: "Omakase focuses specifically on sushi, the chef selects and serves pieces one by one at the sushi bar. Kaiseki is a multi-course Japanese meal featuring various cooking techniques like grilling, simmering, and steaming. Both showcase seasonal ingredients and chef expertise, but they are distinct dining formats.",
             },
         },
     ],
@@ -246,8 +246,8 @@ export default function WhatIsOmakase() {
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Curious about omakase?</strong> You've likely heard the term whispered with reverence
-                                        at sushi bars, but understanding what it truly means—and what happens during this intimate
-                                        culinary experience—is where the real magic begins. Omakase isn't just a meal; it's a relationship
+                                        at sushi bars, but understanding what it truly means, and what happens during this intimate
+                                        culinary experience, is where the real magic begins. Omakase isn't just a meal; it's a relationship
                                         between you, the chef, and the art of sushi.
                                     </p>
 
@@ -257,7 +257,7 @@ export default function WhatIsOmakase() {
                                             your taste, and your commitment to excellence.' That's why it transforms a meal into an
                                             unforgettable experience."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Culinary Philosophy</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Culinary Philosophy</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -265,7 +265,7 @@ export default function WhatIsOmakase() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Omakase dining has exploded in popularity in the U.S., with a 400% increase in omakase-offering restaurants since 2015. The average omakase experience lasts 45-90 minutes and features 12-20 courses. In Japan, master sushi chefs (itamae) typically train for 10+ years before being trusted to lead an omakase service. The tradition of sitting at the sushi bar dates back to Edo-period Tokyo (1603-1868), when street vendors served fresh fish directly to standing customers—the earliest form of omakase."
+                                        fact="Omakase dining has exploded in popularity in the U.S., with a 400% increase in omakase-offering restaurants since 2015. The average omakase experience lasts 45-90 minutes and features 12-20 courses. In Japan, master sushi chefs (itamae) typically train for 10+ years before being trusted to lead an omakase service. The tradition of sitting at the sushi bar dates back to Edo-period Tokyo (1603-1868), when street vendors served fresh fish directly to standing customers, the earliest form of omakase."
                                         source="Japan National Tourism Organization"
                                     />
 
@@ -289,8 +289,7 @@ export default function WhatIsOmakase() {
                                     <p>
                                         Omakase emerged in post-World War II Japan, during Tokyo's bustling economic recovery. Street vendors
                                         and casual sushi stands served quick, affordable meals to workers. Diners would sit at the counter,
-                                        and rather than ordering, they'd trust the chef to use the day's best, most economical ingredients—
-                                        a practical necessity born from scarcity.
+                                        and rather than ordering, they'd trust the chef to use the day's best, most economical ingredients,                                         a practical necessity born from scarcity.
                                     </p>
 
                                     <p>
@@ -331,7 +330,7 @@ export default function WhatIsOmakase() {
                                             <span className="text-3xl mb-3 block">👂</span>
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Personal Touch</h3>
                                             <p className="text-charcoal/70 text-sm">
-                                                The chef reads you—your reactions, preferences, pace—and adjusts the experience in real-time for maximum enjoyment.
+                                                The chef reads you, your reactions, preferences, pace, and adjusts the experience in real-time for maximum enjoyment.
                                             </p>
                                         </div>
                                     </div>
@@ -344,7 +343,7 @@ export default function WhatIsOmakase() {
                                         1. Arrival and Seating
                                     </h3>
                                     <p>
-                                        You'll typically be seated at the sushi bar, directly in front of the chef. This isn't random—it's intentional.
+                                        You'll typically be seated at the sushi bar, directly in front of the chef. This isn't random, it's intentional.
                                         Being face-to-face with the chef is central to the omakase experience. You'll see their precision, watch them
                                         work with deliberate care, and build a connection throughout the meal.
                                     </p>
@@ -362,7 +361,7 @@ export default function WhatIsOmakase() {
                                         3. The Progression Begins
                                     </h3>
                                     <p>
-                                        The chef will start with lighter, more delicate pieces—perhaps white fish with subtle flavors. Each piece is
+                                        The chef will start with lighter, more delicate pieces, perhaps white fish with subtle flavors. Each piece is
                                         prepared individually and served immediately. You eat one piece, and while you're savoring it, the next is
                                         being prepared. This creates a rhythm, a flow that's both meditative and exciting.
                                     </p>
@@ -386,8 +385,7 @@ export default function WhatIsOmakase() {
                                     </h3>
                                     <p>
                                         Most chefs love to talk about their craft. They'll introduce each piece, tell you where the fish came from,
-                                        how it was selected, and sometimes offer eating tips. Don't hesitate to ask questions or express appreciation—
-                                        it creates a richer dialogue and helps the chef understand your interests better.
+                                        how it was selected, and sometimes offer eating tips. Don't hesitate to ask questions or express appreciation,                                         it creates a richer dialogue and helps the chef understand your interests better.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -395,7 +393,7 @@ export default function WhatIsOmakase() {
                                     </h3>
                                     <p>
                                         After the final piece, you'll often be offered a small palate cleanser (maybe soup or green tea) and sometimes
-                                        a final sweet touch. The meal usually lasts 45 minutes to an hour—a perfect window where the chef has fully
+                                        a final sweet touch. The meal usually lasts 45 minutes to an hour, a perfect window where the chef has fully
                                         expressed their vision and you've had time to absorb it all.
                                     </p>
 
@@ -535,7 +533,7 @@ export default function WhatIsOmakase() {
                                             </h3>
                                             <p className="text-white/90 mb-4">
                                                 While Jinbeh doesn't offer a formal omakase menu, we embrace the
-                                                spirit of omakase — <strong>trust, exploration, and creativity</strong> — in
+                                                spirit of omakase, <strong>trust, exploration, and creativity</strong>, in
                                                 everything we do. Our sushi chefs at the bar regularly encourage guests
                                                 to try new dishes, explore unfamiliar flavors, and step outside their
                                                 comfort zone. Just sit at the bar, tell the chef what you like, and
@@ -591,14 +589,14 @@ export default function WhatIsOmakase() {
                                             </blockquote>
                                             <p className="text-charcoal/70 mb-4 leading-relaxed">
                                                 That's exactly how the <strong>Dallas Back 9 Roll</strong> was
-                                                born — shrimp tempura, crab, cream cheese, and jalapeño topped
+                                                born, shrimp tempura, crab, cream cheese, and jalapeño topped
                                                 with salmon, guacamole, spicy mayo, and eel sauce. A customer
                                                 created it, other guests kept ordering it, and it became one of
                                                 Jinbeh's most popular items.
                                             </p>
                                             <p className="text-charcoal/70 leading-relaxed">
                                                 This collaborative creativity is the essence of the omakase
-                                                philosophy — a conversation between chef and diner where trust
+                                                philosophy, a conversation between chef and diner where trust
                                                 flows in both directions. At Jinbeh, <strong>your taste
                                                     matters</strong>, and it might just end up on the menu.
                                             </p>
@@ -679,7 +677,7 @@ export default function WhatIsOmakase() {
 
                                 <div className="mt-16">
                                     <ProTip variant="chef">
-                                        <strong>First-time omakase tip from our sushi chefs:</strong> For the best omakase experience at Jinbeh, sit at the sushi bar and let our chef know it's your first time—they'll pace the experience perfectly and explain each piece as it's served. Avoid wearing strong cologne/perfume (it interferes with the delicate aromas). Come on an empty stomach for the full 12+ piece journey. If you're nervous about raw fish, mention it—our chefs can include some lightly torched or cooked pieces while maintaining the omakase spirit. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                        <strong>First-time omakase tip from our sushi chefs:</strong> For the best omakase experience at Jinbeh, sit at the sushi bar and let our chef know it's your first time, they'll pace the experience perfectly and explain each piece as it's served. Avoid wearing strong cologne/perfume (it interferes with the delicate aromas). Come on an empty stomach for the full 12+ piece journey. If you're nervous about raw fish, mention it, our chefs can include some lightly torched or cooked pieces while maintaining the omakase spirit. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

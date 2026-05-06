@@ -196,7 +196,7 @@ export default function SakeSushiMenuPairings() {
                                             "The harmonious relationship between sake and sushi is rooted in centuries of Japanese culinary
                                             tradition. When you understand the principles of pairing, you unlock a new dimension of flavor."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -211,7 +211,7 @@ export default function SakeSushiMenuPairings() {
                                     <p className="text-charcoal/80 mb-6">
                                         To appreciate the art of sake sushi pairing, it's essential to understand the basics of sake. Sake,
                                         also known as Japanese rice wine, is crafted through a complex fermentation process that converts
-                                        rice starches into alcohol. With <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red underline transition-colors">alcohol content typically around 15-17% ABV</Link>, it sits between wine and spirits. The cultural significance of sake in Japan cannot be overstated—it is
+                                        rice starches into alcohol. With <Link href="/blog/sake-alcohol-strength" className="text-deep-indigo hover:text-accent-red underline transition-colors">alcohol content typically around 15-17% ABV</Link>, it sits between wine and spirits. The cultural significance of sake in Japan cannot be overstated, it is
                                         not merely a drink but a symbol of hospitality and tradition.
                                     </p>
 

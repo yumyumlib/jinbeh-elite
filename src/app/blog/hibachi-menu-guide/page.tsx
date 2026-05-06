@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "What is the difference between hibachi and teppanyaki menus?",
     answer:
-      "While the terms are often used interchangeably, hibachi traditionally refers to a heating device, while teppanyaki means cooking on a flat iron griddle. Most American 'hibachi' restaurants serve teppanyaki-style food with interactive chef performances at your table. Fresh and flavorful—that's our approach at Jinbeh!",
+      "While the terms are often used interchangeably, hibachi traditionally refers to a heating device, while teppanyaki means cooking on a flat iron griddle. Most American 'hibachi' restaurants serve teppanyaki-style food with interactive chef performances at your table. Fresh and flavorful, that's our approach at Jinbeh!",
   },
   {
     question: "What should I expect to find on a hibachi menu?",
@@ -57,7 +57,7 @@ const faqs = [
   {
     question: "What are the best dishes to order if I'm new to hibachi?",
     answer:
-      "Welcome to the table! Try our hibachi chicken or shrimp first—they're crowd favorites and milder in flavor. Add fried rice and grilled vegetables as sides. Don't skip the soup and salad that come with your meal. Our servers are happy to recommend dishes based on your preferences.",
+      "Welcome to the table! Try our hibachi chicken or shrimp first, they're crowd favorites and milder in flavor. Add fried rice and grilled vegetables as sides. Don't skip the soup and salad that come with your meal. Our servers are happy to recommend dishes based on your preferences.",
   },
   {
     question: "What comes with a hibachi dinner at Jinbeh?",
@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "Do hibachi restaurants have a kids' menu?",
     answer:
-      "Yes! Most hibachi restaurants including Jinbeh offer kids' portions at lower prices. Popular choices include chicken, shrimp, or a combo. Kids get the same entertaining show as adults — the fire tricks and food-tossing are always a hit. Children's meals typically include smaller protein portions with rice and vegetables.",
+      "Yes! Most hibachi restaurants including Jinbeh offer kids' portions at lower prices. Popular choices include chicken, shrimp, or a combo. Kids get the same entertaining show as adults, the fire tricks and food-tossing are always a hit. Children's meals typically include smaller protein portions with rice and vegetables.",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function HibachiMenuGuidePage() {
       publishDate="January 2026"
       readTime="8 min read"
       faqs={faqs}
-      keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment — all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
+      keyTakeaway="A hibachi menu features sizzling proteins (steak, chicken, shrimp, lobster), fried rice, grilled vegetables, and interactive chef entertainment, all prepared fresh at your table. Most meals include soup, salad, appetizer, entrée, and dessert for a complete dining experience."
     >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Menu Guide" }]} />
@@ -137,9 +137,7 @@ export default function HibachiMenuGuidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What to Expect on a Hibachi Menu","acceptedAnswer":{"@type":"Answer","text":"A typical hibachi menu offers a variety of meats, seafood, and vegetables. The selection is designed to cater to a wide range of tastes and preferences, allowing diners to customize their meal to their liking. Guests can choose from options like steak, chicken, shrimp, and scallops, often accompanied by a range of vegetables such as zucchini, onions, and mushrooms. These ingredients are typically fresh and locally sourced, ensuring the highest quality and flavor."}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi Restaurant Menu: Explore Flavorful Delight
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -160,6 +158,8 @@ export default function HibachiMenuGuidePage() {
           }}
         />
         s
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Restaurant Menu: Explore Flavorful Delight
       </h1>
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
         <Image
@@ -175,7 +175,7 @@ export default function HibachiMenuGuidePage() {
       <h2>Understanding Hibachi Dining</h2>
 
       <p>
-        Your server drops the menu and you freeze. Filet mignon or the combo? Yum Yum sauce or garlic butter? Add the lobster tail? At a hibachi restaurant, every choice shapes the experience—and knowing the menu before you sit down means you order like a regular, not a rookie.
+        Your server drops the menu and you freeze. Filet mignon or the combo? Yum Yum sauce or garlic butter? Add the lobster tail? At a hibachi restaurant, every choice shapes the experience, and knowing the menu before you sit down means you order like a regular, not a rookie.
       </p>
       <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
         <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🔥 Jinbeh&apos;s Sauce Secrets</h3>
@@ -199,11 +199,11 @@ export default function HibachiMenuGuidePage() {
       </div>
 
       <p>
-        Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki—learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.
+        Hibachi is a style of Japanese cooking that involves grilling food on a high-heat metal plate. The origins of hibachi can be traced back to ancient Japan, where it was primarily used as a heating device before evolving into a cooking method. In America, hibachi is often associated with teppanyaki, learn more about the <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki differences</Link>. Chefs perform cooking tricks and engage with diners around a communal grill. This interactive dining style not only highlights the chefs' culinary skills but also creates a lively atmosphere that enhances the dining experience.
  </p>
 
  <DidYouKnow
- fact="The hibachi/teppanyaki restaurant industry in the United States is worth over billion annually, with more than 4,000 locations nationwide. The interactive dining format was popularized in the US by Benihana in 1964 — but family-owned restaurants like Jinbeh (est. 1988) are where locals find the most authentic experience, personalized service, and highest-quality ingredients."
+ fact="The hibachi/teppanyaki restaurant industry in the United States is worth over billion annually, with more than 4,000 locations nationwide. The interactive dining format was popularized in the US by Benihana in 1964, but family-owned restaurants like Jinbeh (est. 1988) are where locals find the most authentic experience, personalized service, and highest-quality ingredients."
  source="IBISWorld & National Restaurant Association"
  />
 
@@ -215,7 +215,7 @@ export default function HibachiMenuGuidePage() {
  {
  icon: "📖",
  title: "Start with Appetizers",
- description: "Browse gyoza, edamame, and tempura. At Jinbeh, guests rave about the crab rangoons — freshly made and packed with real crab meat."
+ description: "Browse gyoza, edamame, and tempura. At Jinbeh, guests rave about the crab rangoons, freshly made and packed with real crab meat."
  },
  {
  icon: "🥩",
@@ -225,7 +225,7 @@ export default function HibachiMenuGuidePage() {
  {
  icon: "🍚",
  title: "Don't Skip the Fried Rice",
-            description: "Multiple reviewers call Jinbeh's fried rice the best they've ever had. It's prepared on the grill with house-made garlic butter — a must-order."
+            description: "Multiple reviewers call Jinbeh's fried rice the best they've ever had. It's prepared on the grill with house-made garlic butter, a must-order."
           },
           {
             icon: "🍶",
@@ -235,7 +235,7 @@ export default function HibachiMenuGuidePage() {
           {
             icon: "🍨",
             title: "Finish with Dessert",
-            description: "End with ice cream tempura — warm, crispy batter around cold ice cream. Reviewers say it's 'visually appealing and delicious.'"
+            description: "End with ice cream tempura, warm, crispy batter around cold ice cream. Reviewers say it's 'visually appealing and delicious.'"
           },
         ]}
       />
@@ -300,7 +300,7 @@ export default function HibachiMenuGuidePage() {
 
       <MenuItemCard item={{
         name: "Jinbeh Signature Fried Rice",
-        description: "House-made with garlic butter, egg, and fresh vegetables on the teppan grill. Guests consistently call it 'the best fried rice I've ever had' — and it's a must-add to any hibachi order.",
+        description: "House-made with garlic butter, egg, and fresh vegetables on the teppan grill. Guests consistently call it 'the best fried rice I've ever had', and it's a must-add to any hibachi order.",
         badge: "Fan Favorite",
         menuLink: "/frisco/hibachi"
       }} />
@@ -401,7 +401,7 @@ export default function HibachiMenuGuidePage() {
       <h2>Conclusion: Your Hibachi Adventure Awaits</h2>
 
       <p>
-        Exploring the delights of hibachi menus is a culinary journey filled with exciting flavors and experiences. The combination of fresh ingredients, skilled preparation, and interactive dining creates a unique and memorable experience. Whether dining in or taking out, understanding the variety of options available—from appetizers to desserts—can enhance your meal.
+        Exploring the delights of hibachi menus is a culinary journey filled with exciting flavors and experiences. The combination of fresh ingredients, skilled preparation, and interactive dining creates a unique and memorable experience. Whether dining in or taking out, understanding the variety of options available, from appetizers to desserts, can enhance your meal.
       </p>
 
       <p>
@@ -409,7 +409,7 @@ export default function HibachiMenuGuidePage() {
       </p>
 
       <ProTip variant="chef">
-        <strong>Chef's menu recommendation:</strong> First-timers should start with the Chicken & Shrimp Combo — it's the most popular order and gives you the best of both worlds. For special occasions, upgrade to the Filet Mignon & Lobster Tail. Ask for extra yum-yum sauce on the side (regulars know this trick). And don't skip the fried rice — our chefs make it fresh at your table, and reviewers call it "the best fried rice in DFW." <Link href="/menu" className="text-accent-red hover:underline">View our full menu →</Link>
+        <strong>Chef's menu recommendation:</strong> First-timers should start with the Chicken & Shrimp Combo, it's the most popular order and gives you the best of both worlds. For special occasions, upgrade to the Filet Mignon & Lobster Tail. Ask for extra yum-yum sauce on the side (regulars know this trick). And don't skip the fried rice, our chefs make it fresh at your table, and reviewers call it "the best fried rice in DFW." <Link href="/menu" className="text-accent-red hover:underline">View our full menu →</Link>
       </ProTip>
 
       <PillarCTA type="reservations" />

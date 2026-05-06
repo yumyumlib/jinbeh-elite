@@ -196,7 +196,7 @@ export default function MidAutumnFestivalPage() {
                   </h3>
                   <p className="text-charcoal/70 mb-4">
                     Also known as the Moon Festival or Mooncake Festival, this celebration falls on
-                    the 15th day of the 8th lunar month — when the moon is at its fullest and brightest.
+                    the 15th day of the 8th lunar month, when the moon is at its fullest and brightest.
                     Observed across many Asian cultures including Chinese, Vietnamese, Korean, and Japanese,
                     it&apos;s a time for families to reunite and give thanks for the autumn harvest.
                   </p>
@@ -260,19 +260,19 @@ export default function MidAutumnFestivalPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Filet Mignon — premium celebration
+                      Filet Mignon, premium celebration
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Lobster Tail — harvest abundance
+                      Lobster Tail, harvest abundance
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Imperial Dinner — feast for the family
+                      Imperial Dinner, feast for the family
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Hibachi Fried Rice — always a favorite
+                      Hibachi Fried Rice, always a favorite
                     </li>
                   </ul>
                 </div>
@@ -281,19 +281,19 @@ export default function MidAutumnFestivalPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Sashimi Deluxe — chef&apos;s selection
+                      Sashimi Deluxe, chef&apos;s selection
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Party Platters — perfect for sharing
+                      Party Platters, perfect for sharing
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Specialty Rolls — house favorites
+                      Specialty Rolls, house favorites
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌙</span>
-                      Sake — toast to the moon
+                      Sake, toast to the moon
                     </li>
                   </ul>
                 </div>

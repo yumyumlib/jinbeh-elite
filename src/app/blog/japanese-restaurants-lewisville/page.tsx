@@ -26,7 +26,7 @@ const faqs = [
     { question: "What's the best Japanese restaurant in Lewisville?", answer: "Welcome to the table! Jinbeh has served Lewisville since 1988. top-rateds on Google. Hibachi shows, fresh sushi, family-friendly. We treat every guest like family." },
     { question: "Do you have hibachi in Lewisville?", answer: "Yes! Our hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests. Full chef performance. Dinner and a show. Fire tricks, onion volcano, perfectly cooked proteins. Perfect for celebrations and groups." },
     { question: "Can you handle large groups?", answer: "Absolutely! We specialize in groups. Hibachi tables, flexible seating, customized menus. Call (214) 488-2224 to arrange your party. We love making celebrations special." },
-    { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful—that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
+    { question: "Do you have a sushi bar in Lewisville?", answer: "Yes! Fresh and flavorful, that's our promise. Our sushi chefs prepare custom rolls at our bar. You can watch them work. Ask your server for recommendations." },
     { question: "Where is Jinbeh Lewisville located?", answer: "We're at 2440 S. Stemmons Freeway, near Vista Ridge Mall. Easy I-35E access. Convenient parking right outside. Call (214) 488-2224 to confirm hours." },
     { question: "Does Jinbeh Lewisville offer takeout?", answer: "Yes! Call (214) 488-2224 to place a takeout order. Most orders are ready in 20-30 minutes. We offer sushi rolls, bento boxes, teriyaki, and hibachi platters for pickup. You can also order delivery through DoorDash and Uber Eats." }
 ];
@@ -84,7 +84,7 @@ export default function JapaneseRestaurantsLewisville() {
                   Jinbeh is ranked <strong>#1 Hibachi</strong> and <strong>#1 Tempura</strong> in Lewisville on OpenTable &mdash; and appears on more Diners&apos; Choice lists than any other Japanese restaurant in the Dallas suburbs &mdash; including Best Japanese, Best Value, Kid-Friendly, Best Hibachi, and Best Tempura. These aren&apos;t paid placements. They&apos;re earned through thousands of verified diner reviews.
                 </p>
               </div>
-                                <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
+                                <span className="text-sm text-charcoal/80">, The Jinbeh Family</span>
                             </div>
 
                             <DidYouKnow
@@ -115,7 +115,7 @@ export default function JapaneseRestaurantsLewisville() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Lewisville regulars' favorites:</strong> Start with the hibachi — it's the signature experience, and reviewers rave about the entertaining chef shows. For sushi, the Dallas Roll and Volcano Roll are consistent crowd favorites. Locals also swear by the crab rangoon, calling them "the best they've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                <strong>Lewisville regulars' favorites:</strong> Start with the hibachi, it's the signature experience, and reviewers rave about the entertaining chef shows. For sushi, the Dallas Roll and Volcano Roll are consistent crowd favorites. Locals also swear by the crab rangoon, calling them "the best they've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions About Japanese Dining in Lewisville</h2>

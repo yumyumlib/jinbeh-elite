@@ -77,7 +77,7 @@ const faqSchema = {
       name: "Does Jinbeh have a bar or cocktails?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We have a full bar with sake, Japanese beer, wine, and signature cocktails. Happy hour specials are available during select hours — perfect for starting your date night.",
+        text: "Yes! We have a full bar with sake, Japanese beer, wine, and signature cocktails. Happy hour specials are available during select hours, perfect for starting your date night.",
       },
     },
   ],
@@ -127,7 +127,7 @@ export default function DateNightPage() {
               Date Night at Jinbeh
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8">
-              Where sparks fly — both at the grill and at your table
+              Where sparks fly, both at the grill and at your table
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -176,7 +176,7 @@ export default function DateNightPage() {
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
                 Looking for a date night spot that&apos;s more than just dinner? At Jinbeh,
-                you get the full experience — delicious food, tableside entertainment,
+                you get the full experience, delicious food, tableside entertainment,
                 and an atmosphere that sets the mood. Whether it&apos;s your first date
                 or your hundredth, we make it special.
               </p>
@@ -234,19 +234,19 @@ export default function DateNightPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">♥</span>
-                      Filet Mignon Hibachi — premium romantic choice
+                      Filet Mignon Hibachi, premium romantic choice
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">♥</span>
-                      Surf & Turf — steak + lobster for two
+                      Surf & Turf, steak + lobster for two
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">♥</span>
-                      Sashimi Deluxe — fresh chef&apos;s selection
+                      Sashimi Deluxe, fresh chef&apos;s selection
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">♥</span>
-                      Omakase — trust the chef experience
+                      Omakase, trust the chef experience
                     </li>
                   </ul>
                 </div>
@@ -255,7 +255,7 @@ export default function DateNightPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">♥</span>
-                      Specialty Roll Sampler — try several
+                      Specialty Roll Sampler, try several
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">♥</span>
@@ -294,8 +294,7 @@ export default function DateNightPage() {
                   </h3>
                   <p className="text-charcoal/70 mb-4">
                     Make your date night even better with our Happy Hour drinks!
- Japanese draft beer, sake, and wine — Mon–Fri 5:00 to 6:30 PM —
-                    are the perfect way to kick things off.
+ Japanese draft beer, sake, and wine, Mon–Fri 5:00 to 6:30 PM,                     are the perfect way to kick things off.
                   </p>
                   <Link
                     href="/happy-hour"
@@ -324,7 +323,7 @@ export default function DateNightPage() {
                   },
                   {
                     q: "Should I sit at hibachi or sushi bar for a date?",
-                    a: "It depends on your vibe! Hibachi offers lively entertainment and shared excitement — perfect for couples who enjoy interaction and fun. The sushi bar provides a quieter, more intimate setting ideal for meaningful conversation and connection. Both options are equally romantic in different ways.",
+                    a: "It depends on your vibe! Hibachi offers lively entertainment and shared excitement, perfect for couples who enjoy interaction and fun. The sushi bar provides a quieter, more intimate setting ideal for meaningful conversation and connection. Both options are equally romantic in different ways.",
                   },
                   {
                     q: "Is Jinbeh a good date spot?",

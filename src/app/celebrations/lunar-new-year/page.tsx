@@ -155,7 +155,7 @@ export default function LunarNewYearPage() {
         <section className="py-4 bg-accent-red text-white">
           <div className="container mx-auto px-6 text-center">
             <p className="font-medium">
-              <span>🐍 Year of the Snake 2026 — February 17th 🐍</span>{" "}
+              <span>🐍 Year of the Snake 2026, February 17th 🐍</span>{" "}
               <span className="font-bold">Reserve your celebration now!</span>{" "}
               <a href="tel:2146191200" className="underline hover:no-underline">
                 Frisco (214) 619-1200
@@ -193,7 +193,7 @@ export default function LunarNewYearPage() {
                   Family Gathering
                 </h3>
                 <p className="text-charcoal/70">
-                  Hibachi tables bring everyone together — grandparents, parents, and
+                  Hibachi tables bring everyone together, grandparents, parents, and
                   children all sharing in the experience.
                 </p>
               </div>
@@ -236,19 +236,19 @@ export default function LunarNewYearPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🐟</span>
-                      <span><strong>Lobster Tail</strong> — prosperity and fortune</span>
+                      <span><strong>Lobster Tail</strong>, prosperity and fortune</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🦐</span>
-                      <span><strong>Shrimp</strong> — happiness and good luck</span>
+                      <span><strong>Shrimp</strong>, happiness and good luck</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🍚</span>
-                      <span><strong>Fried Rice</strong> — abundance and togetherness</span>
+                      <span><strong>Fried Rice</strong>, abundance and togetherness</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🥩</span>
-                      <span><strong>Filet Mignon</strong> — strength for the year ahead</span>
+                      <span><strong>Filet Mignon</strong>, strength for the year ahead</span>
                     </li>
                   </ul>
                 </div>
@@ -257,19 +257,19 @@ export default function LunarNewYearPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🐟</span>
-                      <span><strong>Salmon</strong> — smooth year ahead</span>
+                      <span><strong>Salmon</strong>, smooth year ahead</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🍣</span>
-                      <span><strong>Sashimi Platter</strong> — wealth and abundance</span>
+                      <span><strong>Sashimi Platter</strong>, wealth and abundance</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🍶</span>
-                      <span><strong>Premium Sake</strong> — toast to good fortune</span>
+                      <span><strong>Premium Sake</strong>, toast to good fortune</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">🌈</span>
-                      <span><strong>Rainbow Roll</strong> — colorful new beginnings</span>
+                      <span><strong>Rainbow Roll</strong>, colorful new beginnings</span>
                     </li>
                   </ul>
                 </div>
@@ -347,7 +347,7 @@ export default function LunarNewYearPage() {
             <div className="bg-accent-red/10 border-2 border-accent-red/20 rounded-2xl p-8 md:p-12 text-center">
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-charcoal mb-4">
 
-                恭喜發財 — Reserve Your Table
+                恭喜發財, Reserve Your Table
               </h3>
               <p className="text-charcoal/70 mb-8 max-w-2xl mx-auto">
                 Start the Lunar New Year with good food, good company, and good fortune.

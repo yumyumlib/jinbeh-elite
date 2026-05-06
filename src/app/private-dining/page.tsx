@@ -100,7 +100,7 @@ const faqSchema = {
       name: "Does Jinbeh have private dining spaces?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer private booths in our sushi area and a secluded dining area with dividers in the back of our Frisco hibachi space — perfect for VIP gatherings, celebrations, and intimate events. Both our Frisco and Lewisville locations have semi-private spaces that can be customized for groups from 8 to 60+ guests. Contact us to learn more.",
+        text: "Yes! We offer private booths in our sushi area and a secluded dining area with dividers in the back of our Frisco hibachi space, perfect for VIP gatherings, celebrations, and intimate events. Both our Frisco and Lewisville locations have semi-private spaces that can be customized for groups from 8 to 60+ guests. Contact us to learn more.",
       },
     },
     {
@@ -214,7 +214,7 @@ const locations = [
     name: "Frisco",
     address: "2693 Preston Rd, Suite 1040, Frisco, TX 75034",
     phone: "(214) 619-1200",
-    email: "frisco@jinbeh.com",
+    email: "Manager@JinbehJapanese.com",
     highlights: [
       "Premium location near Stonebriar Centre",
       "Multiple private hibachi tables",
@@ -229,7 +229,7 @@ const locations = [
     name: "Lewisville",
     address: "2440 S Stemmons Fwy #A, Lewisville, TX 75067",
     phone: "(214) 488-2224",
-    email: "lewisville@jinbeh.com",
+    email: "Manager@JinbehJapanese.com",
     highlights: [
       "Convenient I-35E access",
       "Multiple private hibachi experiences",
@@ -249,7 +249,7 @@ const amenities = [
   },
   {
     title: "Semi-Private Dining Areas",
-    description: "Private booths in our sushi area and a secluded section with dividers in the back of the Frisco hibachi space — ideal for VIP groups and celebrations",
+    description: "Private booths in our sushi area and a secluded section with dividers in the back of the Frisco hibachi space, ideal for VIP groups and celebrations",
     icon: "🏠",
   },
   {
@@ -378,7 +378,7 @@ export default function PrivateDiningPage() {
                   Perfect for Every Occasion
                 </h2>
                 <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  As a premier private party venue Frisco and private event space Japanese-style, we welcome groups looking for restaurants with private rooms. From a private hibachi party to corporate dining Frisco celebrations, private event Frisco Texas — we create unforgettable experiences with a private celebration venue for every occasion.
+                  As a premier private party venue Frisco and private event space Japanese-style, we welcome groups looking for restaurants with private rooms. From a private hibachi party to corporate dining Frisco celebrations, private event Frisco Texas, we create unforgettable experiences with a private celebration venue for every occasion.
                 </p>
               </RevealSection>
             </div>
@@ -726,7 +726,7 @@ export default function PrivateDiningPage() {
             </div>
 
             <p className="text-white/70 text-sm mb-8">
-              Email inquiries: <a href="mailto:frisco@jinbeh.com" className="text-soft-gold hover:text-soft-gold/80">frisco@jinbeh.com</a> | <a href="mailto:lewisville@jinbeh.com" className="text-soft-gold hover:text-soft-gold/80">lewisville@jinbeh.com</a>
+              Email inquiries: <a href="mailto:Manager@JinbehJapanese.com" className="text-soft-gold hover:text-soft-gold/80">Manager@JinbehJapanese.com</a>
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-sm">

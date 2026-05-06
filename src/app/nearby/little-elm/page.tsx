@@ -557,7 +557,7 @@ export default function LittleElmNearbyPage() {
  </svg>
  </summary>
  <p className="text-charcoal/70 mt-4">
- Jinbeh combines nearly 40 years of family tradition with authentic Japanese recipes, skilled chefs trained in traditional techniques, premium ingredients, and a commitment to authentic culinary excellence. We're not just a restaurant—we're an authentic Japanese dining experience.
+ Jinbeh combines nearly 40 years of family tradition with authentic Japanese recipes, skilled chefs trained in traditional techniques, premium ingredients, and a commitment to authentic culinary excellence. We're not just a restaurant, we're an authentic Japanese dining experience.
                 </p>
               </details>
 

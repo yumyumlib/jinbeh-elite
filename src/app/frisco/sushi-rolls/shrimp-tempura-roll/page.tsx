@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function ShrimpTempuraRollFriscoPage() {
-  const item = { ...getMenuItem("shrimp-tempura-roll", "sushi-rolls")!, jinbehStory: "Combines our crispy tempura technique with the precision of hand-rolled maki. At Jinbeh, tempura uses a thick batter for maximum crunch — distinct from the lighter \'agedashi\' style." };
+  const item = { ...getMenuItem("shrimp-tempura-roll", "sushi-rolls")!, jinbehStory: "Combines our crispy tempura technique with the precision of hand-rolled maki. At Jinbeh, tempura uses a thick batter for maximum crunch, distinct from the lighter \'agedashi\' style." };
   const location = locations["frisco"];
 
   return (

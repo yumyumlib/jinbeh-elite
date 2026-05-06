@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "What's included in Jinbeh's catering?",
     answer:
-      "Hibachi chef, equipment, all ingredients, tableside cooking, service staff, full setup and cleanup. You provide venue and guests—we handle everything else. Fresh and flavorful every time!",
+      "Hibachi chef, equipment, all ingredients, tableside cooking, service staff, full setup and cleanup. You provide venue and guests, we handle everything else. Fresh and flavorful every time!",
   },
   {
     question: "When should I book Jinbeh for offsite catering?",
@@ -113,28 +113,27 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Event?","acceptedAnswer":{"@type":"Answer","text":"Entertainment Value: Guests are captivated from start to finish. The chef's performance is the evening's highlight."}},{"@type":"Question","name":"What's Included in Jinbeh Offsite Catering","acceptedAnswer":{"@type":"Answer","text":"When you book Jinbeh for your event, we handle everything. No stress. No hassle. Just exceptional results."}},{"@type":"Question","name":"Service Areas & Availability","acceptedAnswer":{"@type":"Answer","text":"Jinbeh's offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Where Jinbeh Services","acceptedAnswer":{"@type":"Answer","text":"Jinbeh's offsite hibachi catering services the Dallas-Fort Worth area, including:"}},{"@type":"Question","name":"Why Choose Jinbeh for Your Offsite Catering?","acceptedAnswer":{"@type":"Answer","text":"For over 38 years, Jinbeh has been perfecting Japanese cuisine and hibachi entertainment. Our chefs are trained professionals who combine culinary skill with genuine showmanship."}}]}` }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki", "item": "https://jinbeh.com/blog/offsite-hibachi-catering" }
+          ]
+        }) }}
+      />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Jinbeh Offsite Events Catering: Hibachi at Home
-  
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-        />
-
-            {/* BreadcrumbList Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-                        { "@type": "ListItem", "position": 3, "name": "Jinbeh Offsite Events Catering: Hibachi at Home | Interactive Teppanyaki", "item": "https://jinbeh.com/blog/offsite-hibachi-catering" }
-                    ]
-                }) }}
-            />
-    </h1>
+      </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
                 src="/images/food/OnionVolcanoDemo.jpg"
@@ -159,7 +158,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🎪 The Festival Legacy</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh&apos;s offsite catering roots trace back to the Las Colinas days when the Saturday-closed location gave the team bandwidth for festivals and community events. The restaurant&apos;s longest-tenured employee &mdash; on staff since 1988 &mdash; is the mastermind behind food logistics for events. He doesn&apos;t manage people, but he can orchestrate feeding hundreds with military precision.
+                  Jinbeh&apos;s offsite catering roots trace back to the Las Colinas days when the Saturday-closed location gave the team bandwidth for festivals and community events. The restaurant&apos;s longest-tenured employee, on staff since 1988, is the mastermind behind food logistics for events. He doesn&apos;t manage people, but he can orchestrate feeding hundreds with military precision.
                 </p>
               </div>
 
@@ -325,7 +324,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       <h3>Private Parties & Special Events</h3>
 
       <p>
-        Anniversaries, engagements, holidays, or any celebration—Jinbeh adapts our service to match your event's tone and style.
+        Anniversaries, engagements, holidays, or any celebration, Jinbeh adapts our service to match your event's tone and style.
       </p>
 
       <h2>How Offsite Hibachi Catering Works</h2>
@@ -515,7 +514,7 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       <RelatedArticles currentSlug={slug} />
 
       <ProTip variant="insider">
-        <strong>Offsite catering insider tip:</strong> When booking Jinbeh for offsite hibachi, request a tasting consultation at either our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> restaurant first. You'll see exactly what your guests will experience. For best results, book 3-4 weeks out for weekend events. Pro hack: add a sushi station alongside hibachi for variety—guests love having both options!
+        <strong>Offsite catering insider tip:</strong> When booking Jinbeh for offsite hibachi, request a tasting consultation at either our <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> or <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> restaurant first. You'll see exactly what your guests will experience. For best results, book 3-4 weeks out for weekend events. Pro hack: add a sushi station alongside hibachi for variety, guests love having both options!
       </ProTip>
 
       <PillarCTA type="catering" />

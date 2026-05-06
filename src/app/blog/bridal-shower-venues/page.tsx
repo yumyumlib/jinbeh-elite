@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "What guest count can different venues handle?",
     answer:
-      "Cafes work for 10-20 guests. Banquet halls handle 30-150+. Gardens are flexible. Jinbeh's private dining accommodates 8-50 guests beautifully. It's a celebration—we'll make it perfect!",
+      "Cafes work for 10-20 guests. Banquet halls handle 30-150+. Gardens are flexible. Jinbeh's private dining accommodates 8-50 guests beautifully. It's a celebration, we'll make it perfect!",
   },
   {
     question: "Do you accommodate dietary restrictions at Jinbeh?",
@@ -52,12 +52,12 @@ const faqs = [
   {
     question: "What matters most when choosing a venue?",
     answer:
-      "Consider the bride's style, guest count, location, parking, weather backup, ambiance, and budget. Visit venues first. Welcome to the table at Jinbeh—we'll help celebrate in style!",
+      "Consider the bride's style, guest count, location, parking, weather backup, ambiance, and budget. Visit venues first. Welcome to the table at Jinbeh, we'll help celebrate in style!",
   },
   {
     question: "Can I do bridal shower games at a restaurant venue?",
     answer:
-      "Absolutely! Many bridal shower games work perfectly at restaurant venues. At Jinbeh, the hibachi chef performance itself becomes entertainment — guests love watching tricks and cheering together. Between courses, you can do tabletop games like bingo, trivia about the couple, or 'guess the wedding dress.' Just keep games compact since you'll be seated at your table.",
+      "Absolutely! Many bridal shower games work perfectly at restaurant venues. At Jinbeh, the hibachi chef performance itself becomes entertainment, guests love watching tricks and cheering together. Between courses, you can do tabletop games like bingo, trivia about the couple, or 'guess the wedding dress.' Just keep games compact since you'll be seated at your table.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
   return (
     <ArticleLayout
       title="Best Places for Bridal Showers Near Me"
-      metaDescription="Planning a bridal shower? Discover the best venues nearby—from intimate gardens and elegant hotels to charming cafes and unique event spaces perfect for celebrating the bride-to-be."
+      metaDescription="Planning a bridal shower? Discover the best venues nearby, from intimate gardens and elegant hotels to charming cafes and unique event spaces perfect for celebrating the bride-to-be."
       heroImage="/images/blog/25-C060324-6856.jpg"
       heroAlt="Elegant bridal shower celebration at a beautiful venue with flowers and elegant table settings"
       category="Celebrations"
@@ -306,7 +306,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
  beautiful private space, and attentive service made the bride feel so
  special and celebrated."
  </p>
- <p className="text-sm text-charcoal/80">— Bridal Shower Host</p>
+ <p className="text-sm text-charcoal/80">, Bridal Shower Host</p>
  </div>
 
  <DidYouKnow
@@ -417,7 +417,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
 
       <p>
         Ensure the venue comfortably accommodates your guest list. Check what
-        amenities are included—tables, chairs, audio-visual equipment. Some
+        amenities are included, tables, chairs, audio-visual equipment. Some
         venues offer additional services like catering, decoration, or event
         coordination, which simplify planning significantly.
       </p>
@@ -528,7 +528,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       </p>
 
       <ProTip variant="insider">
-        <strong>Bridal shower venue insider tip:</strong> Jinbeh's private dining areas are perfect for bridal showers of 15-40 guests. Book a weekend lunch for the best value — you'll get the same elegant ambiance with more availability. Our team can customize the menu to accommodate dietary needs across your group. Mention it's a bridal shower when booking and we'll help create a special experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bridal shower →</Link>
+        <strong>Bridal shower venue insider tip:</strong> Jinbeh's private dining areas are perfect for bridal showers of 15-40 guests. Book a weekend lunch for the best value, you'll get the same elegant ambiance with more availability. Our team can customize the menu to accommodate dietary needs across your group. Mention it's a bridal shower when booking and we'll help create a special experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bridal shower →</Link>
       </ProTip>
 
       <PillarCTA type="hub" />

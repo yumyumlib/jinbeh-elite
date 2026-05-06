@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What proteins work best for quick hibachi lunch?",
     answer:
-      "Chicken cooks fast and is budget-friendly. Shrimp cooks in 2-3 minutes. Sirloin is quicker than filet mignon. Tofu absorbs flavors beautifully for vegetarians. We treat every guest like family—choose what you love!",
+      "Chicken cooks fast and is budget-friendly. Shrimp cooks in 2-3 minutes. Sirloin is quicker than filet mignon. Tofu absorbs flavors beautifully for vegetarians. We treat every guest like family, choose what you love!",
   },
   {
     question: "How can I save time on hibachi lunch?",
@@ -105,12 +105,9 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Lunch is Perfect for Workdays","acceptedAnswer":{"@type":"Answer","text":"Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, hibachi-style cooking involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Lunch is Perfect for Workdays","acceptedAnswer":{"@type":"Answer","text":"Hibachi is more than just a meal, it's a culinary experience that combines entertainment with delicious food. Originating from Japan, hibachi-style cooking involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors."}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi Lunch Ideas for Workdays: Flavor & Fun
-   
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -128,7 +125,9 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
                     ]
                 }) }}
             />
-   </h1>
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Lunch Ideas for Workdays: Flavor & Fun
+      </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
                 src="/images/food/BentoBoxLunchSet.jpg"
@@ -163,14 +162,14 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
  </p>
 
  <DidYouKnow
- fact="Americans spend over billion on lunch annually, with the average worker eating out for lunch 2-3 times per week. Japanese cuisine has become the fastest-growing lunch category, with hibachi lunch specials offering 30-40% lower prices than dinner — making it one of the best value-for-quality options available during the workday."
+ fact="Americans spend over billion on lunch annually, with the average worker eating out for lunch 2-3 times per week. Japanese cuisine has become the fastest-growing lunch category, with hibachi lunch specials offering 30-40% lower prices than dinner, making it one of the best value-for-quality options available during the workday."
  source="National Restaurant Association & Bureau of Labor Statistics"
  />
 
  <h2>Why Hibachi Lunch is Perfect for Workdays</h2>
 
  <p>
- Hibachi is more than just a meal—it's a culinary experience that combines entertainment with delicious food. Originating from Japan, <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi-style cooking</Link> involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors.
+ Hibachi is more than just a meal, it's a culinary experience that combines entertainment with delicious food. Originating from Japan, <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi-style cooking</Link> involves grilling on a flat, open-top grill. This cooking style, known for its dynamic presentation and flavorful results, allows for the perfect sear on meats and vegetables while maintaining their natural flavors.
       </p>
 
       <p>
@@ -207,7 +206,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
 
       <MenuItemCard item={{
         name: "Jinbeh Hibachi Lunch Bento",
-        description: "A complete weekday lunch starting at — includes miso soup, house salad, grilled vegetables, fried rice, and your choice of protein. Regulars say 'better than any fast casual Japanese place' with generous portions.",
+        description: "A complete weekday lunch starting at, includes miso soup, house salad, grilled vegetables, fried rice, and your choice of protein. Regulars say 'better than any fast casual Japanese place' with generous portions.",
         badge: "Best Lunch Value",
         menuLink: "/lunch-specials"
       }} />
@@ -291,7 +290,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </p>
 
       <ProTip variant="insider">
- <strong>Lunch pro tip:</strong> Jinbeh's hibachi lunch specials start at just and include miso soup, house salad, grilled vegetables, fried rice, and your choice of protein — it's the best lunch deal in Frisco and Lewisville. Regulars say the chicken lunch is "better than any fast casual Japanese place" and the lunch portions are generous. Available 11 AM–3 PM weekdays. <Link href="/lunch-specials" className="text-accent-red hover:underline">View lunch specials →</Link>
+ <strong>Lunch pro tip:</strong> Jinbeh's hibachi lunch specials start at just and include miso soup, house salad, grilled vegetables, fried rice, and your choice of protein, it's the best lunch deal in Frisco and Lewisville. Regulars say the chicken lunch is "better than any fast casual Japanese place" and the lunch portions are generous. Available 11 AM–3 PM weekdays. <Link href="/lunch-specials" className="text-accent-red hover:underline">View lunch specials →</Link>
       </ProTip>
 
       <PillarCTA type="hub" />

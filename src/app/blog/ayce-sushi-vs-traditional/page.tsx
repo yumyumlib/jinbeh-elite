@@ -65,7 +65,7 @@ const faqs = [
     {
         question: "Can I get omakase at an AYCE sushi restaurant?",
         answer:
-            "True omakase — where the chef selects premium seasonal pieces specifically for you — requires the per-plate economics of a traditional restaurant. AYCE restaurants may offer a 'chef's choice' option, but it won't include the premium fish varieties (otoro, uni, seasonal specialties) that define authentic omakase. For a genuine omakase experience in DFW, visit a traditional sushi bar like Jinbeh.",
+            "True omakase, where the chef selects premium seasonal pieces specifically for you, requires the per-plate economics of a traditional restaurant. AYCE restaurants may offer a 'chef's choice' option, but it won't include the premium fish varieties (otoro, uni, seasonal specialties) that define authentic omakase. For a genuine omakase experience in DFW, visit a traditional sushi bar like Jinbeh.",
     },
 ];
 

@@ -39,7 +39,7 @@ const faqs = [
     { question: "Are you open on Thanksgiving Day?", answer: "Jinbeh is usually open Thanksgiving for dine-in service. Hours vary by location. Call (214) 619-1200 Frisco or (214) 488-2224 Lewisville to confirm." },
     { question: "Why choose Japanese for Thanksgiving?", answer: "It's a celebration! Japanese cuisine offers variety and interactive dining like hibachi. Lighter options and a fresh take on the holiday. Perfect for families!" },
     { question: "Can you accommodate dietary restrictions?", answer: "Absolutely! We specialize in gluten-free, vegetarian, vegan, and allergy-friendly options. Tell us when ordering and we'll create the perfect menu." },
-    { question: "Is there a minimum group size for Thanksgiving catering?", answer: "Our smallest catering package serves 8 people, but we can also put together takeout platters for smaller groups. For dine-in on Thanksgiving Day, any party size is welcome — from couples to large families. Call us to discuss the best option for your group size and budget." }
+    { question: "Is there a minimum group size for Thanksgiving catering?", answer: "Our smallest catering package serves 8 people, but we can also put together takeout platters for smaller groups. For dine-in on Thanksgiving Day, any party size is welcome, from couples to large families. Call us to discuss the best option for your group size and budget." }
 ];
 
 const articleSchema = {
@@ -86,7 +86,7 @@ const faqSchema = {
             name: "What makes Japanese cuisine a good Thanksgiving alternative?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Japanese cuisine offers variety, interactive dining experiences (like hibachi), and lighter options alongside traditional proteins. It provides a fresh take on holiday dining while bringing family and friends together—perfect for those seeking Thanksgiving dinner alternatives.",
+                text: "Japanese cuisine offers variety, interactive dining experiences (like hibachi), and lighter options alongside traditional proteins. It provides a fresh take on holiday dining while bringing family and friends together, perfect for those seeking Thanksgiving dinner alternatives.",
             },
         },
         {
@@ -233,7 +233,7 @@ export default function ThanksgivingDiningGuide() {
                                         <strong>Thanksgiving doesn't have to look the same every year.</strong> While turkey and stuffing are
                                         traditions for many families, an increasing number of diners are exploring fresh alternatives that
                                         bring people together in new and exciting ways. At Jinbeh, we believe Thanksgiving is about gathering,
-                                        gratitude, and good food—and Japanese cuisine delivers all three in abundance.
+                                        gratitude, and good food, and Japanese cuisine delivers all three in abundance.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
@@ -242,7 +242,7 @@ export default function ThanksgivingDiningGuide() {
                                             night out, Jinbeh offers Thanksgiving catering and dine-in options designed to make your holiday
                                             special. We serve both Frisco and the greater DFW area."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -250,7 +250,7 @@ export default function ThanksgivingDiningGuide() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="According to the National Restaurant Association, 26% of Americans now choose non-traditional cuisines for Thanksgiving—up from just 8% in 2010. Japanese cuisine is one of the fastest-growing Thanksgiving alternatives, with sushi and hibachi orders increasing 180% on Thanksgiving week compared to a normal week. In cities like DFW with large Asian dining scenes, that number jumps to 250%. The interactive, communal nature of hibachi dining aligns perfectly with the spirit of Thanksgiving gathering."
+                                        fact="According to the National Restaurant Association, 26% of Americans now choose non-traditional cuisines for Thanksgiving, up from just 8% in 2010. Japanese cuisine is one of the fastest-growing Thanksgiving alternatives, with sushi and hibachi orders increasing 180% on Thanksgiving week compared to a normal week. In cities like DFW with large Asian dining scenes, that number jumps to 250%. The interactive, communal nature of hibachi dining aligns perfectly with the spirit of Thanksgiving gathering."
                                         source="National Restaurant Association Holiday Dining Report"
                                     />
 
@@ -270,7 +270,7 @@ export default function ThanksgivingDiningGuide() {
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">🎭 Interactive Dining</h3>
                                             <p className="text-charcoal/80 text-sm">
                                                 <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">Hibachi experiences</Link> turn dinner into entertainment. Watch skilled chefs perform while cooking
-                                                your meal right in front of you—creating memories and conversation.
+                                                your meal right in front of you, creating memories and conversation.
                                             </p>
                                         </div>
 
@@ -301,7 +301,7 @@ export default function ThanksgivingDiningGuide() {
                                         <div className="bg-gradient-to-br from-warm-gold/10 to-accent-red/10 rounded-2xl p-6 border-l-4 border-warm-gold">
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">✨ Celebration Atmosphere</h3>
                                             <p className="text-charcoal/80 text-sm">
-                                                Jinbeh's ambiance—warm lighting, thoughtful design, skilled service—creates a festive setting
+                                                Jinbeh's ambiance, warm lighting, thoughtful design, skilled service, creates a festive setting
                                                 perfect for marking special occasions.
                                             </p>
                                         </div>
@@ -545,7 +545,7 @@ export default function ThanksgivingDiningGuide() {
                                                     </p>
                                                     <p className="text-charcoal/80 text-sm">
                                                         This allows us to source ingredients, accommodate dietary restrictions, and customize your
-                                                        menu. Late requests may be accepted depending on availability—contact us directly to discuss.
+                                                        menu. Late requests may be accepted depending on availability, contact us directly to discuss.
                                                     </p>
                                                 </div>
                                             </div>
@@ -744,7 +744,7 @@ export default function ThanksgivingDiningGuide() {
 
                                     <p className="mb-8">
                                         From customized menus to interactive hibachi experiences, our team in both Frisco and Lewisville is ready to
-                                        make your Thanksgiving unforgettable. Let us handle the cooking so you can focus on what matters most—being with
+                                        make your Thanksgiving unforgettable. Let us handle the cooking so you can focus on what matters most, being with
                                         the people you love.
                                     </p>
 

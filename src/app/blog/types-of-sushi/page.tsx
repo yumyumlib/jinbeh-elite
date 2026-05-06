@@ -46,11 +46,11 @@ const faqs = [
     },
     {
         question: "What sushi is best for beginners?",
-        answer: "Welcome to sushi! We recommend starting with cooked rolls like California Roll, Philadelphia Roll, or Shrimp Tempura Roll—they're milder in flavor and help newcomers ease into sushi before trying raw fish. You can also try cooked nigiri options like tamago (egg) or cooked shrimp. At Jinbeh, our experienced staff can guide you through our menu based on your comfort level and taste preferences."
+        answer: "Welcome to sushi! We recommend starting with cooked rolls like California Roll, Philadelphia Roll, or Shrimp Tempura Roll, they're milder in flavor and help newcomers ease into sushi before trying raw fish. You can also try cooked nigiri options like tamago (egg) or cooked shrimp. At Jinbeh, our experienced staff can guide you through our menu based on your comfort level and taste preferences."
     },
     {
         question: "What's in a dragon roll?",
-        answer: "A Dragon Roll is one of our signature specialty rolls featuring eel, cucumber, and avocado topped with unagi (eel) sauce. The combination of tender eel, creamy avocado, and sweet unagi sauce creates an elegant and complex flavor profile. The roll is typically inside-out style, and our chefs arrange it beautifully to resemble a dragon. It's a fantastic choice if you enjoy cooked fish with rich, savory sauces—perfect for those ready to explore beyond basic rolls!"
+        answer: "A Dragon Roll is one of our signature specialty rolls featuring eel, cucumber, and avocado topped with unagi (eel) sauce. The combination of tender eel, creamy avocado, and sweet unagi sauce creates an elegant and complex flavor profile. The roll is typically inside-out style, and our chefs arrange it beautifully to resemble a dragon. It's a fantastic choice if you enjoy cooked fish with rich, savory sauces, perfect for those ready to explore beyond basic rolls!"
     },
     {
         question: "What's in a rainbow roll?",
@@ -58,7 +58,7 @@ const faqs = [
     },
     {
         question: "What's the most popular sushi roll?",
-        answer: "The California Roll is America's most beloved sushi roll. At Jinbeh, our Dragon Roll (eel, cucumber, avocado with unagi sauce), Spicy Tuna Roll, and Rainbow Roll are customer favorites. Our chefs can recommend the perfect roll based on your preferences—whether you like cooked or raw fish, spicy or mild flavors, or adventurous combinations."
+        answer: "The California Roll is America's most beloved sushi roll. At Jinbeh, our Dragon Roll (eel, cucumber, avocado with unagi sauce), Spicy Tuna Roll, and Rainbow Roll are customer favorites. Our chefs can recommend the perfect roll based on your preferences, whether you like cooked or raw fish, spicy or mild flavors, or adventurous combinations."
     },
     {
         question: "How do I order fresh, high-quality sushi?",
@@ -70,7 +70,7 @@ const faqs = [
     },
     {
         question: "What's the proper way to eat sushi?",
-        answer: "You can use chopsticks or your fingers—both are acceptable! Dip the fish side (not the rice) lightly into soy sauce to avoid it getting soggy. Eat nigiri in one bite if possible to enjoy all the flavors together. Use pickled ginger as a palate cleanser between pieces, not as a topping. Wasabi is optional—add it directly to your soy sauce or the sushi itself based on your spice preference."
+        answer: "You can use chopsticks or your fingers, both are acceptable! Dip the fish side (not the rice) lightly into soy sauce to avoid it getting soggy. Eat nigiri in one bite if possible to enjoy all the flavors together. Use pickled ginger as a palate cleanser between pieces, not as a topping. Wasabi is optional, add it directly to your soy sauce or the sushi itself based on your spice preference."
     },
     {
         question: "Are there vegetarian sushi options?",
@@ -82,7 +82,7 @@ const faqs = [
     },
     {
         question: "Is it safe to eat sushi during pregnancy?",
-        answer: "Pregnant women are generally advised to avoid raw fish due to potential bacteria. However, cooked sushi options like shrimp tempura rolls, California rolls (imitation crab), and fully cooked eel (unagi) nigiri are considered safe. At Jinbeh, we have many cooked roll options—ask our staff for recommendations."
+        answer: "Pregnant women are generally advised to avoid raw fish due to potential bacteria. However, cooked sushi options like shrimp tempura rolls, California rolls (imitation crab), and fully cooked eel (unagi) nigiri are considered safe. At Jinbeh, we have many cooked roll options, ask our staff for recommendations."
     },
 ];
 
@@ -195,7 +195,7 @@ export default function TypesOfSushi() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Sushi confused?</strong> You're not alone. Between nigiri, sashimi, maki,
                                         and specialty rolls, the sushi menu can feel like reading a foreign language.
-                                        Let's break it down so you can order like a pro—and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
+                                        Let's break it down so you can order like a pro, and discover new <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> along the way.
                                     </p>
 
             
@@ -209,11 +209,11 @@ export default function TypesOfSushi() {
                                             Whether you're trying nigiri for the first time or you're a seasoned omakase
                                             enthusiast, we're here to guide your journey."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Modern sushi as we know it was invented by Hanaya Yohei in 1820s Tokyo. Before that, 'sushi' was actually a method of preserving fish by packing it in fermented rice for months — the rice was discarded! Yohei's genius was serving fresh fish on vinegared rice as fast food from street stalls, creating the nigiri we love today."
+                                        fact="Modern sushi as we know it was invented by Hanaya Yohei in 1820s Tokyo. Before that, 'sushi' was actually a method of preserving fish by packing it in fermented rice for months, the rice was discarded! Yohei's genius was serving fresh fish on vinegared rice as fast food from street stalls, creating the nigiri we love today."
                                         source="Smithsonian National Museum of American History"
                                     />
 
@@ -253,7 +253,7 @@ export default function TypesOfSushi() {
                                             <div>
                                                 <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Sashimi</h3>
                                                 <p className="text-charcoal/70 text-sm">
-                                                    Pure, pristine slices of raw fish—no rice involved.
+                                                    Pure, pristine slices of raw fish, no rice involved.
                                                     The ultimate test of fish freshness and chef skill.
                                                 </p>
                                                 <p className="text-xs text-accent-red mt-2">Popular: Salmon, Tuna, Scallop</p>
@@ -429,7 +429,7 @@ export default function TypesOfSushi() {
                                 </div>
 
                                 <ProTip variant="insider">
-                                    <strong>Not sure where to start?</strong> Jinbeh regulars recommend the Volcano Roll and Spider Roll as "must-tries" for both beginners and sushi veterans. For the freshest experience, grab a seat at the sushi bar — you'll watch our chefs hand-roll each piece, and they love helping newcomers pick the perfect roll. One reviewer called it a "delightful" way to discover new favorites. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                    <strong>Not sure where to start?</strong> Jinbeh regulars recommend the Volcano Roll and Spider Roll as "must-tries" for both beginners and sushi veterans. For the freshest experience, grab a seat at the sushi bar, you'll watch our chefs hand-roll each piece, and they love helping newcomers pick the perfect roll. One reviewer called it a "delightful" way to discover new favorites. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
                                 </ProTip>
 
                                 <div className="prose prose-lg max-w-none">

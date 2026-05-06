@@ -606,7 +606,7 @@ export default function CarrolltonNearbyPage() {
  </svg>
  </summary>
  <p className="text-charcoal/70 mt-4">
- Jinbeh combines nearly 40 years of family tradition with authentic Japanese cuisine, skilled teppanyaki chefs, a fresh sushi bar, and a commitment to exceptional service. We're not just a restaurant—we're an experience that creates lasting memories.
+ Jinbeh combines nearly 40 years of family tradition with authentic Japanese cuisine, skilled teppanyaki chefs, a fresh sushi bar, and a commitment to exceptional service. We're not just a restaurant, we're an experience that creates lasting memories.
                 </p>
               </details>
 

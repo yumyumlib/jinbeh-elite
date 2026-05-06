@@ -26,7 +26,7 @@ const faqs = [
     { question: "How do you open Ramune soda?", answer: "Remove the plastic cap and plunger. Place the plunger over the marble. Press down firmly until the marble drops into the bottle's neck." },
     { question: "What flavors does Ramune come in?", answer: "Ramune has many flavors: original lemon-lime, strawberry, melon, grape, blueberry, yuzu, and seasonal limited editions." },
     { question: "Where can I find Ramune in Dallas?", answer: "Visit Jinbeh! We serve Ramune and other Japanese beverages. Frisco (214) 619-1200 or Lewisville (214) 488-2224. Pair it with your meal!" },
-    { question: "Is Ramune safe for kids?", answer: "Yes! Ramune is a non-alcoholic carbonated soft drink, so it's perfectly safe for children. Kids love the interactive marble-opening experience — it makes drinking soda feel like a game. Just supervise young children during the opening process since it requires pressing down firmly." }
+    { question: "Is Ramune safe for kids?", answer: "Yes! Ramune is a non-alcoholic carbonated soft drink, so it's perfectly safe for children. Kids love the interactive marble-opening experience, it makes drinking soda feel like a game. Just supervise young children during the opening process since it requires pressing down firmly." }
 ];
 
 const schemas = [
@@ -85,7 +85,7 @@ export default function RamuneSodaGuide() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Ramune is more than a beverage—it's an experience.</strong> This iconic Japanese carbonated soda combines delightful flavors with an interactive marble seal that transforms every bottle into a moment of nostalgic fun.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Ramune is more than a beverage, it's an experience.</strong> This iconic Japanese carbonated soda combines delightful flavors with an interactive marble seal that transforms every bottle into a moment of nostalgic fun.</p>
 
                             <figure className="my-8 rounded-2xl overflow-hidden shadow-lg">
                                 <Image
@@ -97,7 +97,7 @@ export default function RamuneSodaGuide() {
                                     className="w-full h-auto"
                                 />
                                 <figcaption className="text-sm text-charcoal/60 italic px-2 py-3 bg-warm-ivory text-center">
-                                    Ramune soda — instantly recognizable by its Codd-neck bottle and signature marble.
+                                    Ramune soda, instantly recognizable by its Codd-neck bottle and signature marble.
                                 </figcaption>
                             </figure>
 
@@ -222,7 +222,7 @@ export default function RamuneSodaGuide() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌏 Cultural Significance</h2>
-                            <p className="text-charcoal/80 mb-6">Ramune is more than just a beverage; it's a cultural icon in Japan. Often associated with summer festivals and childhood memories, this soda embodies nostalgia and fun. Its presence extends beyond Japan to Asian grocery stores and specialty shops worldwide, making it accessible to a global audience eager to experience Japanese culture. Pair it with other authentic Japanese beverages like sake—explore our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing recommendations</Link>.</p>
+                            <p className="text-charcoal/80 mb-6">Ramune is more than just a beverage; it's a cultural icon in Japan. Often associated with summer festivals and childhood memories, this soda embodies nostalgia and fun. Its presence extends beyond Japan to Asian grocery stores and specialty shops worldwide, making it accessible to a global audience eager to experience Japanese culture. Pair it with other authentic Japanese beverages like sake, explore our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing recommendations</Link>.</p>
                             <p className="text-charcoal/80 mb-6">The distinctive sound of the marble popping is synonymous with festive occasions, evoking memories of warm summer nights filled with laughter and joy. Ramune's cultural footprint serves as a symbol of Japanese ingenuity and tradition, connecting generations through shared experiences.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🛍️ Where to Buy Ramune Soda</h2>
@@ -259,7 +259,7 @@ export default function RamuneSodaGuide() {
 
                             <div className="mt-12">
                                 <ProTip variant="chef">
-                                    <strong>Ramune pairing tip:</strong> At Jinbeh, Ramune is the perfect non-alcoholic companion for spicy dishes. The carbonation and sweetness cut through the heat of our wasabi and spicy tuna rolls. Kids love it too—ask your server for a Ramune to make the meal extra fun! For adults, pair your Ramune with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake sampler</Link> for a complete Japanese beverage experience.
+                                    <strong>Ramune pairing tip:</strong> At Jinbeh, Ramune is the perfect non-alcoholic companion for spicy dishes. The carbonation and sweetness cut through the heat of our wasabi and spicy tuna rolls. Kids love it too, ask your server for a Ramune to make the meal extra fun! For adults, pair your Ramune with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake sampler</Link> for a complete Japanese beverage experience.
                                 </ProTip>
 
                                 <PillarCTA type="catering" />

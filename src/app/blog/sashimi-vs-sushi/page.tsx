@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
         width: 1200,
         height: 630,
-        alt: "Sashimi vs Sushi — What's the Difference?",
+        alt: "Sashimi vs Sushi, What's the Difference?",
       },
     ],
     },
@@ -30,7 +30,7 @@ const faqs = [
     { question: "What's the difference between sashimi and sushi?", answer: "Sashimi is sliced raw fish, no rice. Sushi combines rice with fish and vegetables. Sashimi focuses on pure fish flavor. Sushi is a complete dish." },
     { question: "Is sashimi always raw?", answer: "Yes, traditional sashimi is raw. We use fresh and flavorful sushi-grade fish. Some cooked options exist, like shrimp sashimi. Our chefs ensure highest standards." },
     { question: "Can I order sashimi without rice?", answer: "Yes! Sashimi is meant without rice. Served on ice with soy sauce, wasabi, and pickled ginger. It's lighter and protein-focused. Perfect for you." },
-    { question: "Is sashimi healthier than sushi?", answer: "Sashimi is higher protein, lower calories—no rice. About 30-50 calories per serving. Sushi rolls are 200-300 calories. Both are delicious and healthy! Sashimi offers a no-rice option perfect for those focusing on protein intake." },
+    { question: "Is sashimi healthier than sushi?", answer: "Sashimi is higher protein, lower calories, no rice. About 30-50 calories per serving. Sushi rolls are 200-300 calories. Both are delicious and healthy! Sashimi offers a no-rice option perfect for those focusing on protein intake." },
     { question: "What fish is best for sashimi?", answer: "Premium sashimi-grade fish is essential. The best choices include fresh tuna (maguro), which offers a buttery texture and rich flavor; salmon (sake), known for its beautiful color and delicate taste; and hamachi (yellowtail), prized for its tender quality. At Jinbeh, we source only sashimi-grade fish from trusted suppliers, ensuring each slice meets strict freshness and quality standards." },
     { question: "Can you get sashimi at Jinbeh?", answer: "Absolutely! We serve premium fresh sashimi at both our Frisco and Lewisville locations. Our sashimi platters feature carefully selected sashimi-grade fish sliced expertly by our chefs. We offer individual selections or beautiful sashimi platters perfect for sharing. Call us at Frisco (214) 619-1200 or Lewisville (214) 488-2224 to inquire about our daily sashimi selection." },
     { question: "How do I eat sashimi?", answer: "Dip lightly in soy sauce mixed with wasabi. Eat in one bite. Experience the fish flavor fully. Our bartenders show you how if you're new to sashimi." },
@@ -117,7 +117,7 @@ export default function SashimiVsSushi() {
                             </p>
 
                             <DidYouKnow
-                                fact="The traditional sashimi knife, called a 'yanagiba' (柳刃), literally means 'willow blade' — a single-beveled blade that can be over 12 inches long. Sushi chefs in Japan train for at least 3 years just to master fish preparation and knife skills before they're allowed to serve customers. Each cut must be precise to preserve texture and flavor."
+                                fact="The traditional sashimi knife, called a 'yanagiba' (柳刃), literally means 'willow blade', a single-beveled blade that can be over 12 inches long. Sushi chefs in Japan train for at least 3 years just to master fish preparation and knife skills before they're allowed to serve customers. Each cut must be precise to preserve texture and flavor."
                                 source="Japanese Culinary Academy"
                             />
 
@@ -182,7 +182,7 @@ export default function SashimiVsSushi() {
                                 🍜 What is Sushi?
                             </h2>
                             <p className="text-charcoal/80 mb-4">
-                                Sushi (寿司) is a complete dish that combines vinegar-seasoned rice with various toppings and fillings. The term encompasses many styles including nigiri, rolls, and hand-pressed varieties. Learn more about the different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> available. The rice is the foundation—not just an accompaniment—to sushi.
+                                Sushi (寿司) is a complete dish that combines vinegar-seasoned rice with various toppings and fillings. The term encompasses many styles including nigiri, rolls, and hand-pressed varieties. Learn more about the different <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline font-semibold">types of sushi</Link> available. The rice is the foundation, not just an accompaniment, to sushi.
                             </p>
                             <div className="grid md:grid-cols-2 gap-4 my-6 bg-amber-50 rounded-xl p-6 border-2 border-amber-200">
                                 <div>
@@ -210,7 +210,7 @@ export default function SashimiVsSushi() {
                                 ⚡ The Core Difference
                             </h2>
                             <p className="text-charcoal/80 mb-4">
-                                The fundamental difference comes down to one ingredient: <strong>rice</strong>. Sashimi celebrates raw fish in its purest form—no rice, no filler, just premium-quality fish. Sushi, on the other hand, is built around vinegar-seasoned rice that serves as both a base and flavor component.
+                                The fundamental difference comes down to one ingredient: <strong>rice</strong>. Sashimi celebrates raw fish in its purest form, no rice, no filler, just premium-quality fish. Sushi, on the other hand, is built around vinegar-seasoned rice that serves as both a base and flavor component.
                             </p>
                             <div className="bg-accent-red/10 border-2 border-accent-red/30 rounded-xl p-6 my-6">
                                 <p className="text-charcoal/90 font-semibold">
@@ -340,7 +340,7 @@ export default function SashimiVsSushi() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Jinbeh sashimi insider tip:</strong> Sit at the sushi bar to watch our chefs slice each piece to order — regulars say it's the best way to experience sashimi at its freshest. Reviewers consistently praise the salmon sashimi as "melt-in-your-mouth," and the tuna is a close second. If you can't decide between sushi and sashimi, ask for a combination platter — one reviewer called it "the best of both worlds." <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                <strong>Jinbeh sashimi insider tip:</strong> Sit at the sushi bar to watch our chefs slice each piece to order, regulars say it's the best way to experience sashimi at its freshest. Reviewers consistently praise the salmon sashimi as "melt-in-your-mouth," and the tuna is a close second. If you can't decide between sushi and sashimi, ask for a combination platter, one reviewer called it "the best of both worlds." <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
                             </ProTip>
 
                             {/* FAQs Section */}

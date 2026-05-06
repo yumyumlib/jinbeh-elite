@@ -28,7 +28,7 @@ const faqs = [
     { question: "Is there good Asian food outside downtown?", answer: "Absolutely! Jinbeh has locations in Frisco and Lewisville. Both offer excellent hibachi and sushi. Call (214) 619-1200 for Frisco or (214) 488-2224 for Lewisville." },
     { question: "Is Jinbeh good for special occasions?", answer: "It's a celebration! We love hosting birthdays, anniversaries, and gatherings. Our hibachi chefs make every meal entertaining and memorable for your group." },
     { question: "What makes hibachi dining special?", answer: "Dinner and a show! Our chefs cook right before your eyes. Fire tricks, the onion volcano, and fresh-cooked meals make it unforgettable." },
-    { question: "Is there parking near Asian restaurants near me Dallas?", answer: "Most DFW Asian restaurants have dedicated parking lots. Jinbeh's Frisco location (near Stonebriar) and Lewisville location both offer free, convenient parking right in front of the restaurant — no downtown parking hassles or valet fees." }
+    { question: "Is there parking near Asian restaurants near me Dallas?", answer: "Most DFW Asian restaurants have dedicated parking lots. Jinbeh's Frisco location (near Stonebriar) and Lewisville location both offer free, convenient parking right in front of the restaurant, no downtown parking hassles or valet fees." }
 ];
 
 const schemas = [
@@ -161,11 +161,11 @@ export default function BestAsianFoodDallas() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"From authentic Japanese hibachi to regional Asian specialties, Dallas's food scene celebrates the rich traditions of Asia while embracing innovative culinary creativity."</p>
-                                <span className="text-sm text-charcoal/80">— Food Culture Dallas</span>
+                                <span className="text-sm text-charcoal/80">, Food Culture Dallas</span>
                             </div>
 
                             <DidYouKnow
-                                fact="Consumer spending on Asian cuisine in DFW has grown by 135% over the past decade, making it the fastest-growing food category in North Texas. Japanese cuisine leads the way, with sushi and hibachi restaurants seeing the highest demand — and Jinbeh has been serving the community since before this boom began, opening in 1988."
+                                fact="Consumer spending on Asian cuisine in DFW has grown by 135% over the past decade, making it the fastest-growing food category in North Texas. Japanese cuisine leads the way, with sushi and hibachi restaurants seeing the highest demand, and Jinbeh has been serving the community since before this boom began, opening in 1988."
                                 source="National Restaurant Association & DFW Economic Data"
                             />
 

@@ -169,9 +169,9 @@ export default function AnniversaryPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {[
                 { emoji: "✨", title: "Intimate Atmosphere", desc: "Low lighting, warm wood accents, and an ambiance built for special moments." },
-                { emoji: "🔥", title: "Tableside Show", desc: "Your chef performs knife tricks, fire shows, and the legendary onion volcano — dinner and a show." },
+                { emoji: "🔥", title: "Tableside Show", desc: "Your chef performs knife tricks, fire shows, and the legendary onion volcano, dinner and a show." },
                 { emoji: "🍣", title: "Sushi Bar Romance", desc: "Prefer quiet conversation? Our sushi bar offers fresh omakase and specialty rolls for two." },
-                { emoji: "🍶", title: "Premium Sake & Cocktails", desc: "Japanese whiskey, sake flights, craft cocktails — the perfect pairing for your evening." },
+                { emoji: "🍶", title: "Premium Sake & Cocktails", desc: "Japanese whiskey, sake flights, craft cocktails, the perfect pairing for your evening." },
               ].map((f) => (
                 <div key={f.title} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
                   <div className="text-5xl mb-6">{f.emoji}</div>
@@ -261,7 +261,7 @@ export default function AnniversaryPage() {
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8">
                   <h3 className="font-heading text-xl font-bold text-soft-gold mb-4">💡 Pro Tips</h3>
                   <ul className="space-y-3 text-warm-ivory/90 text-sm">
-                    <li>• Call ahead to mention your anniversary — we love celebrating with you</li>
+                    <li>• Call ahead to mention your anniversary, we love celebrating with you</li>
                     <li>• Request a booth for the most intimate setting</li>
                     <li>• Try a sake flight to explore new flavors together</li>
                     <li>• Arrive 10–15 minutes early to settle in</li>
@@ -273,7 +273,7 @@ export default function AnniversaryPage() {
                   <ul className="space-y-3 text-warm-ivory/90 text-sm">
                     <li>• <Link href="/gift-cards" className="text-sky-300 hover:text-sky-100">Gift cards</Link> make a great surprise add-on</li>
                     <li>• Pair your meal with premium Japanese whiskey</li>
-                    <li>• Share a specialty roll — our Dragon Roll is a favorite</li>
+                    <li>• Share a specialty roll, our Dragon Roll is a favorite</li>
                     <li>• Book hibachi if you love shared experiences</li>
                     <li>• End the evening with green tea ice cream or mochi</li>
                   </ul>

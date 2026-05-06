@@ -114,8 +114,10 @@ export default function RelatedBlogPosts({
                         src={post.heroImage}
                         alt={post.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy" />
+                        loading="lazy"
+                      />
                       {category && (
                         <span
                           className="absolute top-4 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-white"
@@ -159,8 +161,10 @@ export default function RelatedBlogPosts({
                         src={post.heroImage}
                         alt={post.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy" />
+                        loading="lazy"
+                      />
                     </div>
                   </Link>
                   <div className="flex-1 p-6 md:py-8">
@@ -209,8 +213,10 @@ export default function RelatedBlogPosts({
                       src={post.heroImage}
                       alt={post.title}
                       fill
+                      sizes="80px"
                       className="object-cover"
-                    loading="lazy" />
+                      loading="lazy"
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     {category && (

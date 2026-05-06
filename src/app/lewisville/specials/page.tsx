@@ -11,7 +11,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Lewisville Specials & Deals | Jinbeh Japanese Restaurant",
   description:
-    "Lunch Hibachi for Two — $35 at Jinbeh Lewisville (Mon-Fri 11am-2pm). Plus Happy Hour: $4 draft beer, $5 small hot sake, $6 wine. View current specials.",
+    "Lunch Hibachi for Two: $35 at Jinbeh Lewisville (Mon-Fri 11am-2pm). Plus Happy Hour: $4 draft beer, $5 small hot sake, $6 wine. View current specials.",
   keywords: [
     "lewisville specials",
     "lewisville deals",
@@ -57,8 +57,8 @@ const lewisvilleSpecialsOffersSchema = {
   "offers": [
     {
       "@type": "Offer",
-      "name": "Lunch Hibachi for Two — Jinbeh Lewisville",
-      "description": "Lunch-only special, Monday through Friday 11:00 AM to 2:00 PM. Two hibachi entrees — choose between Veggie, Chicken, Steak, Shrimp, or Salmon. Includes soup, salad, vegetables, and white rice. Add fried rice for $5 per person.",
+      "name": "Lunch Hibachi for Two at Jinbeh Lewisville",
+      "description": "Lunch-only special, Monday through Friday 11:00 AM to 2:00 PM. Two hibachi entrees, choose between Veggie, Chicken, Steak, Shrimp, or Salmon. Includes soup, salad, vegetables, and white rice. Add fried rice for $5 per person. Premium upgrades: Filet Mignon or Scallops +$3 per person each.",
       "price": "35.00",
       "priceCurrency": "USD",
       "url": "https://jinbeh.com/lewisville/specials#hibachi-for-two",
@@ -203,7 +203,7 @@ export default function LewisvilleSpecialsPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <span className="inline-block bg-accent-red text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full mb-4">
-                  🔥 Lunch Special at Lewisville — Mon through Fri
+                  🔥 Lunch Special at Lewisville, Mon through Fri
                 </span>
                 <h2 className="text-4xl md:text-6xl font-heading font-bold mb-3">
                   Hibachi for Two
@@ -219,15 +219,14 @@ export default function LewisvilleSpecialsPage() {
                   <span className="text-sm font-medium text-warm-ivory">Lunch only • Mon–Fri • 11:00 AM – 2:00 PM</span>
                 </div>
                 <p className="text-lg text-warm-ivory/85 max-w-2xl mx-auto">
-                  Two hibachi entrees, your choice of any combination. Cooked tableside on the teppanyaki grill —
-                  includes soup, salad, vegetables, and white rice.
+                  Two hibachi entrees, your choice of any combination. Cooked tableside on the teppanyaki grill,                   includes soup, salad, vegetables, and white rice.
                 </p>
               </div>
 
               <p className="text-center text-soft-gold uppercase tracking-wider text-sm font-medium mb-6">
                 Choose Two Proteins
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
                 {hibachiForTwoProteins.map((p) => (
                   <div
                     key={p.name}
@@ -238,6 +237,14 @@ export default function LewisvilleSpecialsPage() {
                     <p className="text-xs text-warm-ivory/70 leading-relaxed">{p.desc}</p>
                   </div>
                 ))}
+              </div>
+
+              {/* Premium-protein upcharge note */}
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-soft-gold/15 border border-soft-gold/40 text-soft-gold px-4 py-2 rounded-full text-xs sm:text-sm font-medium">
+                  <span aria-hidden="true">⭐</span>
+                  Premium upgrades: Filet Mignon (+$3) · Scallops (+$3) per person
+                </span>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
@@ -261,7 +268,7 @@ export default function LewisvilleSpecialsPage() {
                     <span className="text-sm text-warm-ivory/85">per person</span>
                   </div>
                   <p className="text-sm text-warm-ivory/85 leading-relaxed">
-                    Upgrade your white rice to <strong className="text-white">hibachi fried rice</strong> — wok-tossed
+                    Upgrade your white rice to <strong className="text-white">hibachi fried rice</strong>: wok-tossed
                     with egg, vegetables, and a hint of garlic butter.
                   </p>
                 </div>
@@ -273,7 +280,7 @@ export default function LewisvilleSpecialsPage() {
                     href={`tel:${lewisville.phoneClean}`}
                     className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition-all"
                   >
-                    Call Lewisville — {lewisville.phone}
+                    Call Lewisville: {lewisville.phone}
                   </a>
                   <Link
                     href="/reservations"

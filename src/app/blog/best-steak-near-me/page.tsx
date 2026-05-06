@@ -153,11 +153,11 @@ export default function BestSteakNearMe() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"A perfect steak begins with premium cuts, expert cooking, and attention to detail. Whether you prefer classic preparations or innovative techniques, the right steakhouse elevates every bite."</p>
-                                <span className="text-sm text-charcoal/80">— Steakhouse Excellence</span>
+                                <span className="text-sm text-charcoal/80">, Steakhouse Excellence</span>
                             </div>
 
                             <DidYouKnow
-                                fact="The process of dry-aging steak — which concentrates flavor and tenderizes the meat — can take anywhere from 21 to 120 days. During this time, the steak loses up to 30% of its weight through moisture evaporation, which is why dry-aged cuts cost more. At a hibachi-style restaurant like Jinbeh, the high-heat iron grill creates a perfect Maillard reaction crust while keeping the interior juicy."
+                                fact="The process of dry-aging steak, which concentrates flavor and tenderizes the meat, can take anywhere from 21 to 120 days. During this time, the steak loses up to 30% of its weight through moisture evaporation, which is why dry-aged cuts cost more. At a hibachi-style restaurant like Jinbeh, the high-heat iron grill creates a perfect Maillard reaction crust while keeping the interior juicy."
                                 source="American Meat Science Association"
                             />
 
@@ -225,7 +225,7 @@ export default function BestSteakNearMe() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💡 Tips for Choosing the Right Steakhouse</h2>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3">Consider the Atmosphere</h3>
-                            <p className="text-charcoal/80 mb-4">When selecting a steakhouse, consider the ambiance and setting that best suits your dining occasion. Whether you prefer a casual environment or an upscale dining experience, there's a steakhouse for you. Think about who you're dining with—whether it's a romantic date, family gathering, or business meeting—to ensure the atmosphere aligns with your needs.</p>
+                            <p className="text-charcoal/80 mb-4">When selecting a steakhouse, consider the ambiance and setting that best suits your dining occasion. Whether you prefer a casual environment or an upscale dining experience, there's a steakhouse for you. Think about who you're dining with, whether it's a romantic date, family gathering, or business meeting, to ensure the atmosphere aligns with your needs.</p>
 
                             <h3 className="text-lg font-bold text-charcoal mb-3 mt-6">Look for Quality and Variety</h3>
                             <p className="text-charcoal/80 mb-4">A good steakhouse should offer a range of cuts and preparation styles to cater to different preferences. Look for restaurants that prioritize high-quality ingredients and offer diverse menu options. From classic ribeyes to innovative dishes, variety ensures you can explore different flavors and find your perfect steak.</p>
@@ -260,7 +260,7 @@ export default function BestSteakNearMe() {
                             </table>
 
                             <ProTip variant="insider">
-                                <strong>Steak lover's secret:</strong> Jinbeh's hibachi filet mignon is a crowd favorite — reviewers consistently say it's "cooked to perfection" and the chef show makes it "dinner and entertainment combined." For the best experience, order the Filet and Lobster Tail combo and pair it with a Japanese whisky. Weekend reservations fill fast! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
+                                <strong>Steak lover's secret:</strong> Jinbeh's hibachi filet mignon is a crowd favorite, reviewers consistently say it's "cooked to perfection" and the chef show makes it "dinner and entertainment combined." For the best experience, order the Filet and Lobster Tail combo and pair it with a Japanese whisky. Weekend reservations fill fast! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ FAQ</h2>

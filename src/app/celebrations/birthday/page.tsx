@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import { TestimonialCapture } from "@/components/TestimonialCapture";
+import VipClubForm from "@/components/VipClubForm";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
@@ -416,13 +416,24 @@ export default function BirthdayPage() {
           </div>
         </section>
 
-        {/* Testimonial Capture */}
+        {/* VIP Birthday Club Signup */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <TestimonialCapture
-              trigger="birthday"
-              context="Birthday celebrations are our specialty! We'd love to feature your celebration."
-            />
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              <span className="inline-block bg-soft-gold/20 text-soft-gold-dark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                ⭐ Birthday Perks
+              </span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-charcoal mb-4">
+                Join the Jinbeh VIP Birthday Club
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                Sign up before your birthday and we&apos;ll send special perks your way,
+                often a $25 gift card to use during your birthday month, plus a free
+                birthday dessert any time you dine with us. It&apos;s our way of making
+                sure your celebration starts long before you walk in.
+              </p>
+            </div>
+            <VipClubForm />
           </div>
         </section>
 

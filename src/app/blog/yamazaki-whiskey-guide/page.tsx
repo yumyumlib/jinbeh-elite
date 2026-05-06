@@ -123,7 +123,7 @@ export default function YamazakiWhiskeyGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 Understanding Yamazaki Whiskey</h2>
 
                             <DidYouKnow
-                                fact="Japanese whiskey has become one of the most sought-after spirits globally, with sales growing 300% since 2014. The Yamazaki Sherry Cask 2013 was famously named 'Best Whisky in the World' by Jim Murray's Whisky Bible, shocking the Scotch-dominated industry. Yamazaki 12 Year Old now sells for 3-5x its original retail price on secondary markets. Suntory founder Shinjiro Torii chose the Yamazaki location in 1923 specifically for its unique convergence of three rivers, which creates ideal humidity for aging whiskey—a detail that makes every bottle truly one-of-a-kind."
+                                fact="Japanese whiskey has become one of the most sought-after spirits globally, with sales growing 300% since 2014. The Yamazaki Sherry Cask 2013 was famously named 'Best Whisky in the World' by Jim Murray's Whisky Bible, shocking the Scotch-dominated industry. Yamazaki 12 Year Old now sells for 3-5x its original retail price on secondary markets. Suntory founder Shinjiro Torii chose the Yamazaki location in 1923 specifically for its unique convergence of three rivers, which creates ideal humidity for aging whiskey, a detail that makes every bottle truly one-of-a-kind."
                                 source="Suntory Heritage Foundation"
                             />
                             <p className="text-charcoal/80 mb-6">Before exploring where to buy Yamazaki, it's essential to understand what makes this spirit so special and sought after.</p>
@@ -180,7 +180,7 @@ export default function YamazakiWhiskeyGuide() {
                                             <li>• Call ahead to check inventory</li>
                                             <li>• Ask about special orders for unavailable bottles</li>
                                             <li>• Build relationships with store staff for insider tips</li>
-                                            <li>• Check regularly—inventory changes frequently</li>
+                                            <li>• Check regularly, inventory changes frequently</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@ export default function YamazakiWhiskeyGuide() {
                                 {[
                                     { q: "What's the difference between Yamazaki expressions?", a: "Yamazaki offers various expressions including 12, 18, and 25 Year Old, each with distinct aging periods and flavor complexity. The 12 Year Old is the most accessible, while older expressions command higher prices." },
                                     { q: "How can I tell if Yamazaki is authentic?", a: "Purchase from reputable retailers, check bottle authenticity features, verify the seal and label quality, and compare prices (suspiciously low prices may indicate counterfeits)." },
-                                    { q: "Should I drink Yamazaki neat or with water?", a: "Yamazaki is versatile—enjoy it neat to experience full flavor complexity, or add a drop of water to open up the aromas. Both approaches are equally valid." },
+                                    { q: "Should I drink Yamazaki neat or with water?", a: "Yamazaki is versatile, enjoy it neat to experience full flavor complexity, or add a drop of water to open up the aromas. Both approaches are equally valid." },
                                     { q: "Is Yamazaki a good investment?", a: "Limited production and high demand have made certain Yamazaki expressions valuable to collectors. However, purchase for enjoyment first; investment potential should be secondary." }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
@@ -292,7 +292,7 @@ export default function YamazakiWhiskeyGuide() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Japanese whiskey tasting tip:</strong> The best way to appreciate Yamazaki is the Japanese "mizuwari" style—mix one part whiskey with two parts water and a single large ice cube. This is how most Japanese drink their premium whiskey, and it opens up delicate flavors you'd miss drinking it neat. At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, ask our bartender to prepare a mizuwari or try our whiskey flight to compare expressions. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                    <strong>Japanese whiskey tasting tip:</strong> The best way to appreciate Yamazaki is the Japanese "mizuwari" style, mix one part whiskey with two parts water and a single large ice cube. This is how most Japanese drink their premium whiskey, and it opens up delicate flavors you'd miss drinking it neat. At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, ask our bartender to prepare a mizuwari or try our whiskey flight to compare expressions. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                 </ProTip>
 
                                 <PillarCTA type="catering" />

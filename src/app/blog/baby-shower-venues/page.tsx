@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "What should I consider when choosing an outdoor venue?",
     answer:
-      "Always have a weather backup plan. Ensure parking, restrooms, and accessibility for all guests. Check if permits are required. Welcome to the table—we can help at Jinbeh if weather is a concern!",
+      "Always have a weather backup plan. Ensure parking, restrooms, and accessibility for all guests. Check if permits are required. Welcome to the table, we can help at Jinbeh if weather is a concern!",
   },
   {
     question: "Are co-ed baby showers popular?",
@@ -191,10 +191,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Baby Shower Venues" }]} />
       </div>
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Top Baby Shower Venues: Best Places to Host
-      
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -216,7 +213,9 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
-</h1>
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Top Baby Shower Venues: Best Places to Host
+      </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
                 src="/images/celebrations/jinbeh_group.jpg"
@@ -535,7 +534,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       <p>
         Finding the perfect baby shower venue involves balancing parents'
         preferences with practical considerations like budget and accessibility.
-        The venue sets the celebration's stage—choosing the right one makes all
+        The venue sets the celebration's stage, choosing the right one makes all
         the difference in creating a memorable experience.
       </p>
 
@@ -549,7 +548,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       </p>
 
       <ProTip variant="insider">
-        <strong>Baby shower venue insider tip:</strong> Jinbeh's semi-private dining areas are ideal for baby showers of 15-30 guests. Book a lunch slot for the best value — you'll get the same elegant setting with lower per-person costs. Our team handles all food, service, and cleanup so the host can actually enjoy the party. Mention it's a baby shower when booking and we'll help arrange a special menu. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your space →</Link>
+        <strong>Baby shower venue insider tip:</strong> Jinbeh's semi-private dining areas are ideal for baby showers of 15-30 guests. Book a lunch slot for the best value, you'll get the same elegant setting with lower per-person costs. Our team handles all food, service, and cleanup so the host can actually enjoy the party. Mention it's a baby shower when booking and we'll help arrange a special menu. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your space →</Link>
       </ProTip>
 
       <PillarCTA type="hub" />

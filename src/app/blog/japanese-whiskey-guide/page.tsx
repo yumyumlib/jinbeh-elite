@@ -28,7 +28,7 @@ const schemas = [
             { "@type": "Question", name: "What makes Japanese whiskey special?", acceptedAnswer: { "@type": "Answer", text: "Japanese whiskey combines Scottish techniques with Japanese elements like local barley and mountain water. Distillers focus on precision, craftsmanship, and innovation, using unique aging methods and ingredients like Mizunara oak." } },
             { "@type": "Question", name: "What are top Japanese whiskey brands?", acceptedAnswer: { "@type": "Answer", text: "Top brands include Suntory (Yamazaki, Hakushu), Nikka (Yoichi, Miyagikyo), Chichibu, and Mars Shinshu. Each offers distinctive flavor profiles and expressions." } },
             { "@type": "Question", name: "How does Japanese whiskey compare to Scottish whisky?", acceptedAnswer: { "@type": "Answer", text: "Both follow similar production, but Japanese whiskey emphasizes subtlety, precision, and balance. Scotch often features bold flavors, while Japanese whiskey tends toward elegance and harmony." } },
-            { "@type": "Question", name: "Where can I try Japanese whiskey in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh Japanese Restaurant in Frisco and Lewisville offers an impressive selection of Japanese whiskeys. Try the Japanese whisky highball — Japan's favorite way to enjoy whiskey — paired with hibachi or sushi." } },
+            { "@type": "Question", name: "Where can I try Japanese whiskey in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Jinbeh Japanese Restaurant in Frisco and Lewisville offers an impressive selection of Japanese whiskeys. Try the Japanese whisky highball, Japan's favorite way to enjoy whiskey, paired with hibachi or sushi." } },
             { "@type": "Question", name: "Are Japanese whiskeys expensive?", acceptedAnswer: { "@type": "Answer", text: "Premium Japanese whiskeys command high prices due to limited production. However, excellent entry-level options like Suntory Toki and Nikka Coffey Grain offer great quality at accessible prices." } },
             { "@type": "Question", name: "What is the best way to drink Japanese whiskey?", acceptedAnswer: { "@type": "Answer", text: "The Japanese highball (whisky with sparkling soda water over ice) is the most popular way. Neat or on the rocks with a single large ice cube also works well. Mizuwari (whisky with still water) is a popular dinner pairing style." } }
         ]
@@ -71,7 +71,7 @@ export default function JapaneseWhiskeyGuide() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8">
-        A bottle of Yamazaki 18 now sells for more than most Scottish single malts. Suntory's Hibiki Harmony disappears from shelves within hours of restocking. Japanese whiskey went from unknown curiosity to the most hunted spirit in America—and the story of how it got there is remarkable.
+        A bottle of Yamazaki 18 now sells for more than most Scottish single malts. Suntory's Hibiki Harmony disappears from shelves within hours of restocking. Japanese whiskey went from unknown curiosity to the most hunted spirit in America, and the story of how it got there is remarkable.
       </p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🥃 The Origins of Japanese Whiskey</h2>
@@ -81,7 +81,7 @@ export default function JapaneseWhiskeyGuide() {
                                 source="Jim Murray's Whisky Bible & Sotheby's Auction Records"
                             />
                             <p className="text-charcoal/80 mb-6">The story of Japanese whiskey begins in the early 20th century with two visionary men: Shinjiro Torii and Masataka Taketsuru. Torii, founder of Suntory, was inspired by Scotch whiskey tradition and sought to create a spirit reflecting the delicate balance and harmony of Japanese culture.</p>
-                            <p className="text-charcoal/80 mb-6">Taketsuru, a young visionary, traveled to Scotland to master whiskey-making techniques. He brought back crucial knowledge that would lay the foundation for Japan's whiskey industry. Together, in 1923, they established Yamazaki, Japan's first malt whiskey distillery—a testament to their pioneering spirit and vision.</p>
+                            <p className="text-charcoal/80 mb-6">Taketsuru, a young visionary, traveled to Scotland to master whiskey-making techniques. He brought back crucial knowledge that would lay the foundation for Japan's whiskey industry. Together, in 1923, they established Yamazaki, Japan's first malt whiskey distillery, a testament to their pioneering spirit and vision.</p>
 
                             <div className="bg-amber-50 rounded-xl p-6 mb-8 border-l-4 border-amber-700">
                                 <h3 className="font-bold text-charcoal mb-2">Historic Milestone</h3>
@@ -167,7 +167,7 @@ export default function JapaneseWhiskeyGuide() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Japanese whiskey tasting tip:</strong> At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, try the highball—Japan's favorite way to enjoy whiskey. It's Suntory whisky over ice with sparkling water, and it pairs perfectly with hibachi and sushi. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on our Japanese whiskey selection. Ask the bartender for a tasting comparison of Suntory vs. Nikka!
+                                    <strong>Japanese whiskey tasting tip:</strong> At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, try the highball, Japan's favorite way to enjoy whiskey. It's Suntory whisky over ice with sparkling water, and it pairs perfectly with hibachi and sushi. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on our Japanese whiskey selection. Ask the bartender for a tasting comparison of Suntory vs. Nikka!
                                 </ProTip>
 
                                 <PillarCTA type="catering" />

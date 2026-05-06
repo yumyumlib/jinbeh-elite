@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function LobsterTailLewisvillePage() {
-  const item = { ...getMenuItem("lobster-tail", "hibachi")!, jinbehStory: "Our premium lobster tail is seared on hibachi grills reaching 550°F. The Yum Yum sauce served alongside — an in-house mayo-based creation — pairs beautifully with lobster. Every sauce at Jinbeh is made from scratch daily." };
+  const item = { ...getMenuItem("lobster-tail", "hibachi")!, jinbehStory: "Our premium lobster tail is seared on hibachi grills reaching 550°F. The Yum Yum sauce served alongside, an in-house mayo-based creation, pairs beautifully with lobster. Every sauce at Jinbeh is made from scratch daily." };
   const location = locations["lewisville"];
 
   return (

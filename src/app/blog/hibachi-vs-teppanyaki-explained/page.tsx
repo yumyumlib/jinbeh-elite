@@ -55,7 +55,7 @@ const faqs = [
   {
     question: "Can I book a teppanyaki table at Jinbeh?",
     answer:
-      "Yes! Teppanyaki tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We recommend reservations, especially on weekends. We sometimes combine smaller parties—you might make new friends!",
+      "Yes! Teppanyaki tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224. We recommend reservations, especially on weekends. We sometimes combine smaller parties, you might make new friends!",
   },
   {
     question: "Can I request specific tricks from my hibachi chef?",
@@ -109,9 +109,7 @@ export default function HibachiVsTeppanyakiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"A Brief History: Where It All Started","acceptedAnswer":{"@type":"Answer","text":"To understand the difference between hibachi and teppanyaki, we need to travel back to Japan and understand each cooking style's origins."}},{"@type":"Question","name":"Why Does This Confusion Matter?","acceptedAnswer":{"@type":"Answer","text":"Understanding the difference between hibachi and teppanyaki matters for a few reasons:"}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi vs Teppanyaki: Explained - Differences & D
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -130,6 +128,8 @@ export default function HibachiVsTeppanyakiPage() {
                 }) }}
             />
 efinitions
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi vs Teppanyaki: Explained - Differences & D
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
@@ -144,7 +144,7 @@ efinitions
 
       {/* Opening Paragraph */}
       <p>
-        You've heard the terms thrown around interchangeably: "Let's go to a hibachi restaurant." "I love teppanyaki." "The hibachi chef was amazing!" But are <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi and teppanyaki</Link> the same thing? The answer is more nuanced than you might think—and understanding the difference will help you appreciate the Japanese culinary traditions behind your next dining experience.
+        You've heard the terms thrown around interchangeably: "Let's go to a hibachi restaurant." "I love teppanyaki." "The hibachi chef was amazing!" But are <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi and teppanyaki</Link> the same thing? The answer is more nuanced than you might think, and understanding the difference will help you appreciate the Japanese culinary traditions behind your next dining experience.
       </p>
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏯 Jinbeh&apos;s Lost Teppanyaki Treasure</h3>
@@ -164,7 +164,7 @@ efinitions
       </p>
 
       <DidYouKnow
-        fact='The word "hibachi" (火鉢) literally means "fire bowl" in Japanese — and what Americans call "hibachi restaurants" actually serve teppanyaki-style cooking on flat iron griddles, not charcoal grills.'
+        fact='The word "hibachi" (火鉢) literally means "fire bowl" in Japanese, and what Americans call "hibachi restaurants" actually serve teppanyaki-style cooking on flat iron griddles, not charcoal grills.'
         source="Japanese Culinary Traditions"
       />
 
@@ -178,21 +178,21 @@ efinitions
       <h3>Hibachi: The Traditional Japanese Heating Device</h3>
 
       <p>
-        The word "hibachi" (火鉢) literally translates to "fire bowl" in Japanese. Traditionally, a hibachi is a small, portable heating device used in Japanese homes for warmth and cooking. It's essentially a charcoal-burning grill with an open design. In Japan, hibachi cooking is an intimate affair—a family gathering around a small grill, cooking simple meats, vegetables, and seafood over charcoal heat.
+        The word "hibachi" (火鉢) literally translates to "fire bowl" in Japanese. Traditionally, a hibachi is a small, portable heating device used in Japanese homes for warmth and cooking. It's essentially a charcoal-burning grill with an open design. In Japan, hibachi cooking is an intimate affair, a family gathering around a small grill, cooking simple meats, vegetables, and seafood over charcoal heat.
       </p>
 
       <p>
-        Hibachi cooking focuses on the food and the technique. There's elegance in simplicity. The chef (often a family member) cooks methodically, with attention to the heat source and the natural flavors of premium ingredients. It's meditative, not theatrical. Hibachi restaurants in Japan do exist, but they're typically upscale establishments offering refined cuisine—not the high-energy dinner show experience most Westerners expect.
+        Hibachi cooking focuses on the food and the technique. There's elegance in simplicity. The chef (often a family member) cooks methodically, with attention to the heat source and the natural flavors of premium ingredients. It's meditative, not theatrical. Hibachi restaurants in Japan do exist, but they're typically upscale establishments offering refined cuisine, not the high-energy dinner show experience most Westerners expect.
       </p>
 
       <h3>Teppanyaki: The Performance Cooking Style</h3>
 
       <p>
-        "Teppanyaki" (鉄板焼き) means "grilling on an iron plate." Unlike hibachi's charcoal-burning tradition, teppanyaki uses a large, flat iron griddle—typically 3 feet by 5 feet—powered by gas or electricity. Teppanyaki emerged in Japan after World War II and quickly became popular in Japanese cities as a exciting, social dining experience.
+        "Teppanyaki" (鉄板焼き) means "grilling on an iron plate." Unlike hibachi's charcoal-burning tradition, teppanyaki uses a large, flat iron griddle, typically 3 feet by 5 feet, powered by gas or electricity. Teppanyaki emerged in Japan after World War II and quickly became popular in Japanese cities as a exciting, social dining experience.
       </p>
 
       <p>
-        Teppanyaki's defining characteristic? The chef cooks directly in front of the diners on a massive flat surface. This visibility transformed cooking into performance. Chefs developed tricks—the onion volcano, spatula tricks, catching shrimp in chef's hats. It became entertainment, not just a meal. Teppanyaki is inherently theatrical and communal.
+        Teppanyaki's defining characteristic? The chef cooks directly in front of the diners on a massive flat surface. This visibility transformed cooking into performance. Chefs developed tricks, the onion volcano, spatula tricks, catching shrimp in chef's hats. It became entertainment, not just a meal. Teppanyaki is inherently theatrical and communal.
       </p>
 
       <h3>The American Adaptation: The Confusion Begins</h3>
@@ -206,7 +206,7 @@ efinitions
       </p>
 
       <p>
-        Fast forward to today, and most Americans—including those who have eaten at "hibachi restaurants" many times—don't realize the terminology is technically backwards. The flat griddle you're sitting around? That's a teppan. The interactive chef performance? That's teppanyaki. But the restaurant? It calls itself hibachi.
+        Fast forward to today, and most Americans, including those who have eaten at "hibachi restaurants" many times, don't realize the terminology is technically backwards. The flat griddle you're sitting around? That's a teppan. The interactive chef performance? That's teppanyaki. But the restaurant? It calls itself hibachi.
       </p>
 
       {/* Key Differences Section */}
@@ -326,7 +326,7 @@ efinitions
               "1–2 person intimate setting",
               "Smoky, charred flavor profile",
               "Quiet, refined atmosphere",
-              "Minimal performance — food-focused",
+              "Minimal performance, food-focused",
               "Common in Japan, rare in the US"
             ],
             highlight: false,
@@ -359,37 +359,37 @@ efinitions
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Intimate counter seating</strong> — Small tables or counter where you watch the chef cook
+              <strong>Intimate counter seating</strong>, Small tables or counter where you watch the chef cook
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Premium ingredients</strong> — Often high-grade meats, fresh seafood, and seasonal vegetables
+              <strong>Premium ingredients</strong>, Often high-grade meats, fresh seafood, and seasonal vegetables
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Refined technique</strong> — Chef cooks methodically, with precision and minimal wasted motion
+              <strong>Refined technique</strong>, Chef cooks methodically, with precision and minimal wasted motion
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Quiet appreciation</strong> — The focus is on the food quality and cooking technique
+              <strong>Quiet appreciation</strong>, The focus is on the food quality and cooking technique
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Smoky flavor</strong> — Charcoal heat creates distinctive smoky, charred notes
+              <strong>Smoky flavor</strong>, Charcoal heat creates distinctive smoky, charred notes
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Higher price point</strong> — Premium ingredients and refined preparation typically cost more
+              <strong>Higher price point</strong>, Premium ingredients and refined preparation typically cost more
             </span>
           </li>
         </ul>
@@ -402,43 +402,43 @@ efinitions
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Communal seating</strong> — Large flat griddle with 6-10 diners seated around it
+              <strong>Communal seating</strong>, Large flat griddle with 6-10 diners seated around it
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Interactive entertainment</strong> — Chefs perform tricks: onion volcanos, fire displays, knife skills
+              <strong>Interactive entertainment</strong>, Chefs perform tricks: onion volcanos, fire displays, knife skills
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Social atmosphere</strong> — Celebration-friendly environment with laughter and energy
+              <strong>Social atmosphere</strong>, Celebration-friendly environment with laughter and energy
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Complete meal included</strong> — Typically soup, salad, fried rice, vegetables, and protein
+              <strong>Complete meal included</strong>, Typically soup, salad, fried rice, vegetables, and protein
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Generous portions</strong> — Large servings designed for satisfaction and leftovers
+              <strong>Generous portions</strong>, Large servings designed for satisfaction and leftovers
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
  <span>
- <strong>Moderate pricing</strong> — Generally per person for a full dinner experience
+ <strong>Moderate pricing</strong>, Generally per person for a full dinner experience
  </span>
  </li>
  <li className="flex gap-3">
             <span className="text-soft-gold font-bold">•</span>
             <span>
-              <strong>Clean, bright flavors</strong> — Flat-top griddle cooking produces well-seared exteriors and tender interiors
+              <strong>Clean, bright flavors</strong>, Flat-top griddle cooking produces well-seared exteriors and tender interiors
             </span>
           </li>
         </ul>
@@ -448,7 +448,7 @@ efinitions
       <h2>Jinbeh's Teppanyaki Experience: Blending Tradition with Entertainment</h2>
 
       <p>
-        At Jinbeh Japanese Restaurant in <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, we've mastered the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>—what most people call "hibachi dining." Since 1988, we've been crafting experiences where exceptional Japanese cuisine meets genuine entertainment and warm hospitality.
+        At Jinbeh Japanese Restaurant in <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, we've mastered the art of <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">teppanyaki</Link>, what most people call "hibachi dining." Since 1988, the Jinbeh family has been crafting experiences where exceptional Japanese cuisine meets genuine entertainment and warm hospitality.
       </p>
 
       <p>
@@ -459,7 +459,7 @@ efinitions
         <div className="bg-warm-ivory rounded-xl p-6">
           <h3 className="font-heading font-bold text-charcoal mb-3">🔥 Skilled Chefs</h3>
           <p className="text-charcoal/80 text-sm">
-            Our chefs train for years to perfect their craft. They're not just cooks—they're entertainers who read the table and adjust their performance to create the perfect energy, whether that's family fun or romantic ambiance.
+            Our chefs train for years to perfect their craft. They're not just cooks, they're entertainers who read the table and adjust their performance to create the perfect energy, whether that's family fun or romantic ambiance.
           </p>
         </div>
 
@@ -480,7 +480,7 @@ efinitions
         <div className="bg-warm-ivory rounded-xl p-6">
           <h3 className="font-heading font-bold text-charcoal mb-3">👨‍👩‍👧‍👦 Perfect for Celebrations</h3>
           <p className="text-charcoal/80 text-sm">
-            Birthdays, anniversaries, corporate events, or just a fun night out with friends—our communal teppanyaki seating and engaging chefs make every occasion special.
+            Birthdays, anniversaries, corporate events, or just a fun night out with friends, our communal teppanyaki seating and engaging chefs make every occasion special.
           </p>
         </div>
       </div>
@@ -498,32 +498,32 @@ efinitions
       <ul className="space-y-2 text-charcoal/80 my-6">
         <li className="flex gap-3">
           <span className="text-accent-red">✓</span>
-          <span><strong>Miso Soup</strong> — Traditional Japanese starter to warm the palate</span>
+          <span><strong>Miso Soup</strong>, Traditional Japanese starter to warm the palate</span>
         </li>
         <li className="flex gap-3">
           <span className="text-accent-red">✓</span>
-          <span><strong>Salad</strong> — Fresh greens with our house dressing</span>
+          <span><strong>Salad</strong>, Fresh greens with our house dressing</span>
         </li>
         <li className="flex gap-3">
           <span className="text-accent-red">✓</span>
-          <span><strong>Shrimp Appetizer</strong> — Prepared on the griddle as entertainment and appetizer</span>
+          <span><strong>Shrimp Appetizer</strong>, Prepared on the griddle as entertainment and appetizer</span>
         </li>
         <li className="flex gap-3">
           <span className="text-accent-red">✓</span>
-          <span><strong>Fried Rice</strong> — Cooked right in front of you with chef's special technique</span>
+          <span><strong>Fried Rice</strong>, Cooked right in front of you with chef's special technique</span>
         </li>
         <li className="flex gap-3">
           <span className="text-accent-red">✓</span>
-          <span><strong>Vegetables</strong> — Seasonal vegetables grilled to perfection</span>
+          <span><strong>Vegetables</strong>, Seasonal vegetables grilled to perfection</span>
         </li>
         <li className="flex gap-3">
           <span className="text-accent-red">✓</span>
-          <span><strong>Protein</strong> — Your choice of chicken, steak, shrimp, scallops, or filet mignon</span>
+          <span><strong>Protein</strong>, Your choice of chicken, steak, shrimp, scallops, or filet mignon</span>
         </li>
       </ul>
 
       <ProTip variant="insider">
-        <strong>Insider tip:</strong> Jinbeh's teppanyaki tables seat 7–8 guests, and the chef tailors the show to your group — more playful for kids' birthdays, more refined for date nights. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> and mention your occasion when booking.
+        <strong>Insider tip:</strong> Jinbeh's teppanyaki tables seat 7–8 guests, and the chef tailors the show to your group, more playful for kids' birthdays, more refined for date nights. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation</Link> and mention your occasion when booking.
       </ProTip>
 
       {/* Why the Confusion Matters Section */}
@@ -534,15 +534,15 @@ efinitions
       </p>
 
       <p>
-        <strong>1. Setting expectations:</strong> If you're looking for a quiet, refined dining experience with premium ingredients, a traditional hibachi restaurant might be what you want—not an American-style "hibachi" restaurant. Conversely, if you want entertainment and social energy, you're definitely looking for teppanyaki.
+        <strong>1. Setting expectations:</strong> If you're looking for a quiet, refined dining experience with premium ingredients, a traditional hibachi restaurant might be what you want, not an American-style "hibachi" restaurant. Conversely, if you want entertainment and social energy, you're definitely looking for teppanyaki.
       </p>
 
       <p>
-        <strong>2. Appreciating the culture:</strong> Understanding that teppanyaki is a distinct Japanese culinary tradition (not just a gimmick) helps you appreciate the skill and artistry involved. Your chef isn't performing tricks for no reason—they're demonstrating years of training and cultural knowledge.
+        <strong>2. Appreciating the culture:</strong> Understanding that teppanyaki is a distinct Japanese culinary tradition (not just a gimmick) helps you appreciate the skill and artistry involved. Your chef isn't performing tricks for no reason, they're demonstrating years of training and cultural knowledge.
       </p>
 
       <p>
-        <strong>3. Traveling to Japan:</strong> If you ever visit Japan and want to experience true hibachi dining, you'll know what to look for—and you'll understand it's a very different (though equally wonderful) experience than what you might know from American restaurants.
+        <strong>3. Traveling to Japan:</strong> If you ever visit Japan and want to experience true hibachi dining, you'll know what to look for, and you'll understand it's a very different (though equally wonderful) experience than what you might know from American restaurants.
       </p>
 
       <p>

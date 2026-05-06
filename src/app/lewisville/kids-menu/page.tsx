@@ -710,13 +710,13 @@ export default function KidsMenuLewisvillePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" target="_blank" rel="noopener noreferrer"
-                  className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all font-heading"
+                  className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all font-heading"
                 >
                   Make a Reservation
                 </Link>
                 <a
                   href="tel:2144882224"
-                  className="bg-white/20 backdrop-blur border-2 border-white text-white hover:bg-white hover:text-accent-red px-8 py-4 text-lg font-semibold rounded-xl transition-all font-heading"
+                  className="btn bg-white/20 backdrop-blur border-2 border-white text-white hover:bg-white hover:text-accent-red px-8 py-4 text-lg font-semibold rounded-xl transition-all font-heading"
                 >
                   Call (214) 488-2224
                 </a>

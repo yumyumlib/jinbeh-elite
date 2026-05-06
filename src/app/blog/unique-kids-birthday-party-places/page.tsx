@@ -75,16 +75,16 @@ export default function KidsBirthdayPlaces() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Tired of the same old birthday party spots?</strong> Ditch the pizza chains and bounce houses. A hibachi party at <Link href="/frisco" className="text-deep-indigo hover:text-accent-red font-semibold">Jinbeh</Link> gives kids something they'll actually remember—fire, flying food, and a show that makes them the star. Or explore more <Link href="/blog/unique-kids-birthday-party-places" className="text-deep-indigo hover:text-accent-red font-semibold">birthday party ideas</Link> tailored for children.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Tired of the same old birthday party spots?</strong> Ditch the pizza chains and bounce houses. A hibachi party at <Link href="/frisco" className="text-deep-indigo hover:text-accent-red font-semibold">Jinbeh</Link> gives kids something they'll actually remember, fire, flying food, and a show that makes them the star. Or explore more <Link href="/blog/unique-kids-birthday-party-places" className="text-deep-indigo hover:text-accent-red font-semibold">birthday party ideas</Link> tailored for children.</p>
 
                             <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-xl p-6 my-8">
-                                <p className="text-charcoal italic">"Kids go absolutely crazy for hibachi. Watching their faces light up when the chef does the onion volcano—that's what we live for at Jinbeh."</p>
+                                <p className="text-charcoal italic">"Kids go absolutely crazy for hibachi. Watching their faces light up when the chef does the onion volcano, that's what we live for at Jinbeh."</p>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎂 Why Kids Love Hibachi Parties</h2>
 
                             <DidYouKnow
-                                fact="According to the International Association of Amusement Parks, restaurant-based birthday parties have surged 45% since 2020, with hibachi restaurants leading the trend. Parents report that interactive dining experiences like hibachi create 3x more memorable moments than traditional party venues. In DFW alone, over 5,000 kids' birthday parties are hosted at hibachi restaurants annually—and the age group that enjoys them most is 6-10 year olds, who rate the chef's fire show as their #1 favorite party activity."
+                                fact="According to the International Association of Amusement Parks, restaurant-based birthday parties have surged 45% since 2020, with hibachi restaurants leading the trend. Parents report that interactive dining experiences like hibachi create 3x more memorable moments than traditional party venues. In DFW alone, over 5,000 kids' birthday parties are hosted at hibachi restaurants annually, and the age group that enjoys them most is 6-10 year olds, who rate the chef's fire show as their #1 favorite party activity."
                                 source="National Restaurant Association Family Dining Report"
                             />
                             <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -112,7 +112,7 @@ export default function KidsBirthdayPlaces() {
                             <ul className="space-y-2 text-charcoal/80">
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Reserve at least 1 week ahead for weekend parties</li>
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Ask about group seating to keep the party together</li>
-                                <li className="flex gap-2"><span className="text-accent-red">→</span>Mention the birthday when booking—we may sing!</li>
+                                <li className="flex gap-2"><span className="text-accent-red">→</span>Mention the birthday when booking, we may sing!</li>
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Consider lunch for better availability and pricing</li>
                                 <li className="flex gap-2"><span className="text-accent-red">→</span>Get ideas from our <Link href="/blog/beginner-sushi-tips" className="text-deep-indigo hover:text-accent-red font-semibold">sushi guide for beginners</Link> to help kids enjoy the menu</li>
                             </ul>

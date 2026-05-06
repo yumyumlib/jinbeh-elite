@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Best Hibachi in Lewisville TX | Jinbeh Japanese Restaurant",
-  description: "Jinbeh Lewisville's hibachi menu — 14 teppanyaki entrées with tableside fire shows, onion volcano, and premium cuts. Near Vista Ridge Mall. Since 1988.",
+  description: "Jinbeh Lewisville's hibachi menu, 14 teppanyaki entrées with tableside fire shows, onion volcano, and premium cuts. Near Vista Ridge Mall. Since 1988.",
   keywords: ["hibachi lewisville", "best hibachi lewisville", "hibachi menu lewisville", "jinbeh hibachi", "japanese hibachi lewisville", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
     title: "Hibachi Menu | Jinbeh Lewisville",
@@ -151,7 +151,7 @@ const faqSchema = {
       "name": "What are hibachi prices at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hibachi prices range from 19.95 to 64.95. See our full menu for complete pricing."
+        "text": "View our full hibachi menu for current selections, from chicken and shrimp to filet, lobster, and our Imperial Dinner."
       }
     }
   ]
@@ -197,7 +197,7 @@ export default function HibachiLewisvillePage() {
                 Jinbeh Lewisville Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Hibachi Menu — Lewisville
+                Hibachi Menu, Lewisville
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Entertainment, fire show, family fun, onion volcano. Explore our 14 hibachi options,
@@ -213,6 +213,35 @@ export default function HibachiLewisvillePage() {
           </div>
         </section>
 
+        {/* Proof Bar — third-party rankings and verified diner data */}
+        <section className="bg-soft-gold/10 border-y border-soft-gold/30 py-6">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto text-center">
+              <div className="px-4">
+                <div className="text-2xl mb-1">🏆</div>
+                <p className="text-charcoal font-heading font-bold text-base leading-tight">
+                  Ranked #1 Best Hibachi in Lewisville
+                </p>
+                <p className="text-charcoal/60 text-xs mt-1">on OpenTable</p>
+              </div>
+              <div className="px-4 md:border-x md:border-soft-gold/30">
+                <div className="text-2xl mb-1">⭐</div>
+                <p className="text-charcoal font-heading font-bold text-base leading-tight">
+                  4.7-star average across 426+ reviews
+                </p>
+                <p className="text-charcoal/60 text-xs mt-1">verified OpenTable diners</p>
+              </div>
+              <div className="px-4">
+                <div className="text-2xl mb-1">🥢</div>
+                <p className="text-charcoal font-heading font-bold text-base leading-tight">
+                  5 Diners&apos; Choice awards
+                </p>
+                <p className="text-charcoal/60 text-xs mt-1">Dallas Suburbs region</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Menu Items Grid */}
         <section className="py-16">
           <div className="container mx-auto px-6">
@@ -221,7 +250,7 @@ export default function HibachiLewisvillePage() {
                 Our Hibachi Selection
               </h2>
               <p className="text-charcoal/70 max-w-2xl mx-auto">
-                14 options ranging from 19.95 to 64.95
+                14 hibachi entrées, from chicken and shrimp to filet, lobster, and our Imperial Dinner
               </p>
             </div>
 
@@ -558,7 +587,7 @@ export default function HibachiLewisvillePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/photoshoot/hibachi-onion-volcano-flame.jpg"
-                    alt="Imperial dinner preparation — filet mignon, lobster, and shrimp"
+                    alt="Imperial dinner preparation, filet mignon, lobster, and shrimp"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -593,13 +622,13 @@ export default function HibachiLewisvillePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" target="_blank" rel="noopener noreferrer"
-                  className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl shadow-lg transition-colors"
                 >
                   Reserve a Table
                 </Link>
                 <a
                   href="tel:2144882224"
-                  className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 488-2224
                 </a>
@@ -678,7 +707,7 @@ export default function HibachiLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Hibachi prices range from 19.95 to 64.95. See our full menu for complete pricing.
+                    View our full hibachi menu for current selections, from chicken and shrimp to filet, lobster, and our Imperial Dinner.
                   </p>
                 </details>
               </div>

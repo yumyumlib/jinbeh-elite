@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Allergy-Friendly Dining | Jinbeh Japanese Restaurant",
         description:
-            "Dine with confidence. Our chefs accommodate allergies at your table — gluten-free, dairy-free, nut-free, shellfish-free options available.",
+            "Dine with confidence. Our chefs accommodate allergies at your table, gluten-free, dairy-free, nut-free, shellfish-free options available.",
         url: "https://jinbeh.com/allergy-friendly-dining",
     images: [
       {
@@ -60,7 +60,7 @@ const faqSchema = {
             name: "Is hibachi safe for people with shellfish allergies?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Our hibachi chefs can accommodate shellfish allergies. Tell your chef directly — they cook at your table and can prepare your meal using separate utensils and adjust the cooking order. For example, shrimp appetizers can be cooked last to prevent cross-contact with your food. Beef, chicken, salmon, and vegetable hibachi are naturally shellfish-free.",
+                text: "Our hibachi chefs can accommodate shellfish allergies. Tell your chef directly, they cook at your table and can prepare your meal using separate utensils and adjust the cooking order. For example, shrimp appetizers can be cooked last to prevent cross-contact with your food. Beef, chicken, salmon, and vegetable hibachi are naturally shellfish-free.",
             },
         },
         {
@@ -84,7 +84,7 @@ const faqSchema = {
             name: "How does Jinbeh handle cross-contamination?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Hibachi dining provides a unique advantage — your chef cooks at your table in front of you. You can communicate directly with the person preparing your food. For severe allergies, our chefs can adjust cooking order, use separate utensils, and clean the grill surface. While we cannot guarantee a completely allergen-free environment, we take every precaution to keep you safe.",
+                text: "Hibachi dining provides a unique advantage, your chef cooks at your table in front of you. You can communicate directly with the person preparing your food. For severe allergies, our chefs can adjust cooking order, use separate utensils, and clean the grill surface. While we cannot guarantee a completely allergen-free environment, we take every precaution to keep you safe.",
             },
         },
         {
@@ -92,7 +92,7 @@ const faqSchema = {
             name: "What should I do if I have food allergies at a hibachi restaurant?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Inform your server when ordering and again when your hibachi chef arrives. Specify exactly which foods you're allergic to. Our chefs are experienced at adjusting preparation — they can change cooking order, omit ingredients, and use clean tools. The advantage of hibachi is that you watch everything being prepared.",
+                text: "Inform your server when ordering and again when your hibachi chef arrives. Specify exactly which foods you're allergic to. Our chefs are experienced at adjusting preparation, they can change cooking order, omit ingredients, and use clean tools. The advantage of hibachi is that you watch everything being prepared.",
             },
         },
         {
@@ -100,7 +100,7 @@ const faqSchema = {
             name: "Is Japanese food safe for nut allergies?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Traditional Japanese cuisine uses very few tree nuts. Jinbeh's hibachi, sushi, and sashimi menus are generally nut-free. Sesame may be present as garnish on some rolls — let your server know and we'll omit it. We do not use peanut oil for cooking.",
+                text: "Traditional Japanese cuisine uses very few tree nuts. Jinbeh's hibachi, sushi, and sashimi menus are generally nut-free. Sesame may be present as garnish on some rolls, let your server know and we'll omit it. We do not use peanut oil for cooking.",
             },
         },
         {
@@ -233,7 +233,7 @@ const allergenGuide = [
             "Most sushi rolls (check sauce)",
             "Miso soup",
         ],
-        tip: "Request steamed rice instead of fried rice — it's a simple substitution our kitchen handles daily.",
+        tip: "Request steamed rice instead of fried rice, it's a simple substitution our kitchen handles daily.",
     },
     {
         allergen: "Fish",
@@ -264,7 +264,7 @@ const allergenGuide = [
             "Some salad dressings",
         ],
         safe: [
-            "Most items — just request no sesame",
+            "Most items, just request no sesame",
             "Sashimi (plain)",
             "Hibachi proteins",
             "Steamed rice",
@@ -285,7 +285,7 @@ const accommodationCards = [
         emoji: "👨‍🍳",
         title: "Chef at Your Table",
         description:
-            "Hibachi dining gives you a unique advantage — your chef cooks right in front of you. You communicate directly with the person preparing your food.",
+            "Hibachi dining gives you a unique advantage, your chef cooks right in front of you. You communicate directly with the person preparing your food.",
     },
     {
         emoji: "🔄",
@@ -339,7 +339,7 @@ export default function AllergyFriendlyDiningPage() {
                         <p className="text-xl text-warm-ivory/80 max-w-3xl mx-auto mb-8">
                             Food allergies shouldn&apos;t stop you from enjoying an amazing
                             dining experience. Our hibachi chefs cook at your table and adapt
-                            every dish to your needs — gluten-free, dairy-free, nut-free,
+                            every dish to your needs, gluten-free, dairy-free, nut-free,
                             shellfish-free, and more.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -387,7 +387,7 @@ export default function AllergyFriendlyDiningPage() {
                             </h2>
                             <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
                                 At Jinbeh, your safety comes first. Here&apos;s our approach to
-                                making every guest feel welcome — and well-fed.
+                                making every guest feel welcome, and well-fed.
                             </p>
                         </div>
 
@@ -456,7 +456,7 @@ export default function AllergyFriendlyDiningPage() {
                                         I have a dairy and shrimp allergy, which our chef
                                         accommodated by cooking the shrimp appetizer last.
                                     </strong>{" "}
-                                    The food was delicious — more than we could eat. Our chef put
+                                    The food was delicious, more than we could eat. Our chef put
                                     on a great show, too. Highly recommend Jinbeh. We will be
                                     back.&rdquo;
                                 </blockquote>
@@ -504,7 +504,7 @@ export default function AllergyFriendlyDiningPage() {
                 <section className="py-8 bg-warm-ivory/50">
                     <div className="container mx-auto px-6">
                         <QuoteStrip
-                            quote="They accommodate allergies really well — just let them know when ordering."
+                            quote="They accommodate allergies really well, just let them know when ordering."
                             author="Google Review"
                         />
                     </div>

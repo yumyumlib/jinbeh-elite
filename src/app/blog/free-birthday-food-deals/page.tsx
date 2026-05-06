@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "When do I need to sign up for birthday freebies?",
     answer:
-      "Sign up before your birthday! Join loyalty programs 1-2 months ahead. Most stores activate offers before your special day. Jinbeh's VIP Birthday Club is a great example — sign up at jinbeh.com/vip and members can receive special offers like a $25 gift card during their birthday month, on top of the free birthday dessert every birthday guest gets.",
+      "Sign up before your birthday! Join loyalty programs 1-2 months ahead. Most stores activate offers before your special day. Jinbeh's VIP Birthday Club is a great example, sign up at jinbeh.com/vip and members can receive special offers like a $25 gift card during their birthday month, on top of the free birthday dessert every birthday guest gets.",
   },
   {
     question: "Do birthday freebies have any restrictions?",
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "Can I combine birthday deals with other promotions?",
     answer:
-      "Most birthday deals can't mix with other coupons. Some restaurants allow happy hour stacking—check out Jinbeh's happy hour. Always call ahead to ask about combining promotions.",
+      "Most birthday deals can't mix with other coupons. Some restaurants allow happy hour stacking, check out Jinbeh's happy hour. Always call ahead to ask about combining promotions.",
   },
   {
     question: "Do I need to show ID to get birthday freebies?",
@@ -104,30 +104,29 @@ export default function FreeBirthdayFoodDealsPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Birthday Freebies Matter","acceptedAnswer":{"@type":"Answer","text":"Birthday freebies aren't just about getting free stuff—they're how businesses show appreciation to customers. For you, they're wonderful opportunities to try new places and enjoy special treats without breaking the bank. From complimentary desserts to full meals, these offers add extra joy to your birthday celebration."}},{"@type":"Question","name":"Krispy Kreme: Free Birthday Donut","acceptedAnswer":{"@type":"Answer","text":"Sign up for Krispy Kreme's rewards program to receive a free donut on your birthday. There's something satisfying about biting into a fresh Krispy Kreme donut—the light, fluffy texture and sweet glaze make a perfect birthday treat that's both comforting and indulgent."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Birthday Freebies Matter","acceptedAnswer":{"@type":"Answer","text":"Birthday freebies aren't just about getting free stuff, they're how businesses show appreciation to customers. For you, they're wonderful opportunities to try new places and enjoy special treats without breaking the bank. From complimentary desserts to full meals, these offers add extra joy to your birthday celebration."}},{"@type":"Question","name":"Krispy Kreme: Free Birthday Donut","acceptedAnswer":{"@type":"Answer","text":"Sign up for Krispy Kreme's rewards program to receive a free donut on your birthday. There's something satisfying about biting into a fresh Krispy Kreme donut, the light, fluffy texture and sweet glaze make a perfect birthday treat that's both comforting and indulgent."}}]}` }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Free Birthday Food Deals: Where to Get Treats | Jinbeh", "item": "https://jinbeh.com/blog/free-birthday-food-deals" }
+          ]
+        }) }}
       />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Free Birthday Food Deals: Where to Get Treats
-    
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-        />
-
-            {/* BreadcrumbList Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
-                        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-                        { "@type": "ListItem", "position": 3, "name": "Free Birthday Food Deals: Where to Get Treats | Jinbeh", "item": "https://jinbeh.com/blog/free-birthday-food-deals" }
-                    ]
-                }) }}
-            />
-  </h1>
+      </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
                 src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
@@ -156,7 +155,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <h2>Why Birthday Freebies Matter</h2>
 
       <p>
-        Birthday freebies aren't just about getting free stuff—they're how
+        Birthday freebies aren't just about getting free stuff, they're how
         businesses show appreciation to customers. For you, they're wonderful
         opportunities to try new places and enjoy special treats without
         breaking the bank. From complimentary desserts to full meals, these
@@ -176,7 +175,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <h3>Creating Lasting Memories</h3>
 
       <p>
-        Free birthday treats are about more than food—they're about creating
+        Free birthday treats are about more than food, they're about creating
         memories. Sharing a complimentary dessert with friends or family makes
         your birthday celebration more memorable. These moments become cherished
         memories you'll look back on fondly.
@@ -235,9 +234,9 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <p>
         Denny's is a classic choice for birthday meals. On your birthday, you
-        can enjoy a free Grand Slam breakfast—just show a valid ID confirming
+        can enjoy a free Grand Slam breakfast, just show a valid ID confirming
         your birth date. This beloved classic features pancakes, eggs, bacon,
-        and sausage—a filling meal starting your birthday with a smile.
+        and sausage, a filling meal starting your birthday with a smile.
       </p>
 
       <p>
@@ -269,7 +268,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <p>
         IHOP's Pancake Revolution program offers members a free stack of
         pancakes on their birthday. Sign up for the program to receive this
-        tasty treat. IHOP's menu features diverse pancakes—from classic
+        tasty treat. IHOP's menu features diverse pancakes, from classic
         buttermilk to creative combinations like red velvet or banana walnut.
       </p>
 
@@ -284,7 +283,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <h3>Applebee's: Free Birthday Dessert</h3>
 
       <p>
-        Join the Applebee's Email Club, and enjoy a free birthday dessert—a
+        Join the Applebee's Email Club, and enjoy a free birthday dessert, a
         sweet way to end your meal. Applebee's offers delectable desserts, from
         classic chocolate cake to unique options like their signature Blondie.
       </p>
@@ -301,7 +300,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <p>
         For ice cream lovers, Baskin-Robbins offers a free scoop on your
         birthday when you join their Birthday Club. Baskin-Robbins is famous for
-        diverse flavors—from classic vanilla to exotic combinations like mango
+        diverse flavors, from classic vanilla to exotic combinations like mango
         tango, offering something for everyone.
       </p>
 
@@ -319,7 +318,7 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <div className="bg-warm-ivory/50 rounded-xl p-6 my-8 border-l-4 border-accent-red">
         <p className="text-charcoal/80 mb-0">
-          At Jinbeh, your birthday isn&apos;t just a meal — it&apos;s a tableside
+          At Jinbeh, your birthday isn&apos;t just a meal, it&apos;s a tableside
           celebration. Mention your birthday when you reserve, and we&apos;ll bring
           out a <strong>free birthday dessert</strong> at the end of your hibachi
           experience. The full three-touch celebration from the host, server, and
@@ -327,8 +326,7 @@ export default function FreeBirthdayFoodDealsPage() {
           <Link href="/vip" className="text-accent-red hover:underline">
             VIP Birthday Club
           </Link>{" "}
-          member, you&apos;ll often receive bonus perks during your birthday month —
-          like a <strong>$25 gift card</strong> you can apply toward dinner that
+          member, you&apos;ll often receive bonus perks during your birthday month,           like a <strong>$25 gift card</strong> you can apply toward dinner that
           same evening.
         </p>
       </div>
@@ -340,7 +338,7 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <p>
         If you&apos;re a Japanese cuisine fan, Jinbeh offers a memorable birthday
-        option — a free birthday dessert paired with the full hibachi experience.
+        option, a free birthday dessert paired with the full hibachi experience.
         It&apos;s the perfect choice for those seeking to enjoy{" "}
         <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">
           fresh sushi
@@ -360,7 +358,7 @@ export default function FreeBirthdayFoodDealsPage() {
         </Link>
         , Jinbeh is known for authentic Japanese dishes. The complimentary
         birthday dessert lets you cap off an evening of premium hibachi steak,
-        fresh sushi, and warm hospitality with a sweet finish — no add-on, no
+        fresh sushi, and warm hospitality with a sweet finish, no add-on, no
         catch, just a thank-you for celebrating with us.
       </p>
 
@@ -369,7 +367,7 @@ export default function FreeBirthdayFoodDealsPage() {
         it perfect for <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">birthday celebrations</Link>. Watching skilled chefs prepare
         your meal with flair adds excitement and spectacle to your dining.
         Jinbeh&apos;s warm hospitality and elegant setting create memorable
-        experiences beyond just food — attention to detail in service and
+        experiences beyond just food, attention to detail in service and
         presentation ensures your birthday is truly special.
       </p>
 
@@ -417,7 +415,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <p>
         Sign up for Krispy Kreme's rewards program to receive a free donut on
         your birthday. There's something satisfying about biting into a fresh
-        Krispy Kreme donut—the light, fluffy texture and sweet glaze make a
+        Krispy Kreme donut, the light, fluffy texture and sweet glaze make a
         perfect birthday treat that's both comforting and indulgent.
       </p>
 
@@ -432,7 +430,7 @@ export default function FreeBirthdayFoodDealsPage() {
 
       <p>
         Buffalo Wild Wings offers a free snack-size order of wings if you join
-        their Blazin' Rewards program—a great way to spice up birthday
+        their Blazin' Rewards program, a great way to spice up birthday
         celebrations. Buffalo Wild Wings is famous for diverse wing flavors,
         from mild to blazing hot. A free snack-size order allows exploring this
         variety.
@@ -442,7 +440,7 @@ export default function FreeBirthdayFoodDealsPage() {
         Spicy wings add fun and energetic elements to birthday celebrations.
         Flavor combinations and heat create exciting dining experiences leaving
         lasting impressions. The Blazin' Rewards program offers more than just
-        birthday wings—members earn points for future visits.
+        birthday wings, members earn points for future visits.
       </p>
 
       <h3>Starbucks: Free Birthday Beverage or Food Item</h3>
@@ -455,7 +453,7 @@ export default function FreeBirthdayFoodDealsPage() {
       </p>
 
       <p>
-        Celebrating at Starbucks offers more than a drink—it's a cozy coffeehouse
+        Celebrating at Starbucks offers more than a drink, it's a cozy coffeehouse
         experience. The inviting atmosphere makes it a perfect spot to relax and
         enjoy your complimentary treat. Starbucks' diverse menu allows trying
         something new on your birthday, potentially discovering new favorites
@@ -478,7 +476,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <p>
         Create a list of restaurants and businesses offering birthday deals to
         plan birthday outings and ensure no freebies are missed. With a list of
-        birthday deals, plan a full day of celebrations—starting with breakfast
+        birthday deals, plan a full day of celebrations, starting with breakfast
         and ending with dessert. Share your list with friends and family to
         enhance celebrations by exploring different offers together.
       </p>
@@ -488,7 +486,7 @@ export default function FreeBirthdayFoodDealsPage() {
       <p>
         Some birthday offers have specific terms, such as requiring purchases or
         valid only on your actual birthday. Read the fine print to avoid
-        surprises. Each deal comes with its own rules and limitations—familiarize
+        surprises. Each deal comes with its own rules and limitations, familiarize
         yourself to ensure smooth experiences and prevent disappointments.
       </p>
 
@@ -524,7 +522,7 @@ export default function FreeBirthdayFoodDealsPage() {
         With so many options available, planning a birthday adventure filled with
         free meals and treats is exciting. Mapping your day and exploring
         different establishments ensures maximizing each offer. Using digital
-        tools to map your itinerary enhances the experience—plotting your route
+        tools to map your itinerary enhances the experience, plotting your route
         and timing visits ensures making most of each offer without feeling
         rushed.
       </p>
@@ -533,7 +531,7 @@ export default function FreeBirthdayFoodDealsPage() {
         Inviting friends and family adds to the fun. Sharing experiences and
         exploring new places together creates lasting memories and strengthens
         bonds. By combining planned offers with spontaneous finds, you craft a
-        birthday experience uniquely yours—blending structure with spontaneity
+        birthday experience uniquely yours, blending structure with spontaneity
         ensuring a day filled with laughter, joy, and delicious treats.
       </p>
 
@@ -570,7 +568,7 @@ export default function FreeBirthdayFoodDealsPage() {
       </p>
 
       <ProTip variant="insider">
-        <strong>Birthday freebie insider tip:</strong> At Jinbeh, mention your birthday when making a reservation and our team will bring out a <strong>free birthday dessert</strong> at the end of your hibachi show. Sign up for the <Link href="/vip" className="text-accent-red hover:underline">VIP Birthday Club</Link> a few weeks ahead to unlock member perks like a <strong>$25 gift card</strong> to use during your birthday month — that turns a free dessert into a fully discounted birthday dinner. The hibachi experience itself is the real gift: your chef performs fire tricks, knife skills, and the famous onion volcano right at your table. Pro move: start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks before the show. <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
+        <strong>Birthday freebie insider tip:</strong> At Jinbeh, mention your birthday when making a reservation and our team will bring out a <strong>free birthday dessert</strong> at the end of your hibachi show. Sign up for the <Link href="/vip" className="text-accent-red hover:underline">VIP Birthday Club</Link> a few weeks ahead to unlock member perks like a <strong>$25 gift card</strong> to use during your birthday month, that turns a free dessert into a fully discounted birthday dinner. The hibachi experience itself is the real gift: your chef performs fire tricks, knife skills, and the famous onion volcano right at your table. Pro move: start with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for discounted drinks before the show. <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
       </ProTip>
 
       <PillarCTA type="catering" />

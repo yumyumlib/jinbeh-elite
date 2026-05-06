@@ -54,12 +54,12 @@ const faqs = [
   {
     question: "Does Jinbeh have healthy hibachi options?",
     answer:
-      "Yes! Our hibachi chef can customize your meal. Ask for extra vegetables, lighter sauces on the side, and steamed rice. Hibachi cooking uses high heat with minimal oil. Welcome to the table—we'll help you make choices that fit your goals.",
+      "Yes! Our hibachi chef can customize your meal. Ask for extra vegetables, lighter sauces on the side, and steamed rice. Hibachi cooking uses high heat with minimal oil. Welcome to the table, we'll help you make choices that fit your goals.",
   },
   {
     question: "Which hibachi proteins have the most protein?",
     answer:
-      "Steak and seafood like salmon and scallops have the most protein. Shrimp is excellent protein with lower calories. Chicken is a good lean choice too. Tell your chef your goals—we customize every plate.",
+      "Steak and seafood like salmon and scallops have the most protein. Shrimp is excellent protein with lower calories. Chicken is a good lean choice too. Tell your chef your goals, we customize every plate.",
   },
   {
     question: "Is hibachi keto-friendly?",
@@ -163,11 +163,9 @@ export default function HibachiCaloriesGuidePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Cooking Can Be Healthy","acceptedAnswer":{"@type":"Answer","text":"Unlike many restaurant preparation methods that rely on oil, butter, or heavy creams, hibachi cooking has several nutritional advantages:"}},{"@type":"Question","name":"Ingredients Are Visible","acceptedAnswer":{"@type":"Answer","text":"Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications—less sauce, extra vegetables, specific protein preferences."}},{"@type":"Question","name":"Sides, Sides, & Sides: Where Calories Add Up","acceptedAnswer":{"@type":"Answer","text":"Your protein choice significantly impacts meal calories, but sides can make even bigger differences. Here's what you need to know:"}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Cooking Can Be Healthy","acceptedAnswer":{"@type":"Answer","text":"Unlike many restaurant preparation methods that rely on oil, butter, or heavy creams, hibachi cooking has several nutritional advantages:"}},{"@type":"Question","name":"Ingredients Are Visible","acceptedAnswer":{"@type":"Answer","text":"Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications, less sauce, extra vegetables, specific protein preferences."}},{"@type":"Question","name":"Sides, Sides, & Sides: Where Calories Add Up","acceptedAnswer":{"@type":"Answer","text":"Your protein choice significantly impacts meal calories, but sides can make even bigger differences. Here's what you need to know:"}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Jinbeh Hibachi Calories 2025: Complete Nutrition G
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -190,6 +188,8 @@ export default function HibachiCaloriesGuidePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
 uide
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Jinbeh Hibachi Calories 2025: Complete Nutrition G
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
@@ -236,7 +236,7 @@ uide
       <h3>Ingredients Are Visible</h3>
 
       <p>
-        Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications—less sauce, extra vegetables, specific protein preferences.
+        Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications, less sauce, extra vegetables, specific protein preferences.
       </p>
 
       <h3>Customizable to Your Preferences</h3>
@@ -255,11 +255,11 @@ uide
         <p className="italic text-charcoal/80 mb-2">
           "I was surprised how well hibachi fit into my diet. Fresh ingredients, visible cooking, reasonable portions. I can enjoy a delicious meal out and still meet my health goals."
         </p>
-        <p className="text-sm text-charcoal/80">— Verified Jinbeh Guest</p>
+        <p className="text-sm text-charcoal/80">, Verified Jinbeh Guest</p>
       </div>
 
       <DidYouKnow
-        fact="Hibachi grills reach temperatures of 400°F or higher — hot enough to sear protein in seconds with minimal added oils. This high-heat cooking method actually preserves more nutrients than boiling or steaming."
+        fact="Hibachi grills reach temperatures of 400°F or higher, hot enough to sear protein in seconds with minimal added oils. This high-heat cooking method actually preserves more nutrients than boiling or steaming."
         source="Japanese Culinary Institute"
       />
 
@@ -432,12 +432,12 @@ uide
             <tr className="border-b border-warm-ivory-dark bg-white">
               <td className="px-4 py-3 font-medium">🍚 Fried Rice</td>
               <td className="px-4 py-3 text-center text-accent-red font-semibold">330–390</td>
-              <td className="px-4 py-3 text-charcoal/70">Calorie multiplier — request smaller portion</td>
+              <td className="px-4 py-3 text-charcoal/70">Calorie multiplier, request smaller portion</td>
             </tr>
             <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
               <td className="px-4 py-3 font-medium">🍚 Steamed Rice</td>
               <td className="px-4 py-3 text-center font-semibold">150–200</td>
-              <td className="px-4 py-3 text-charcoal/70">Smart swap — saves ~200 cal vs fried</td>
+              <td className="px-4 py-3 text-charcoal/70">Smart swap, saves ~200 cal vs fried</td>
             </tr>
             <tr className="border-b border-warm-ivory-dark bg-white">
               <td className="px-4 py-3 font-medium">🥦 Vegetables</td>
@@ -464,7 +464,7 @@ uide
       </div>
 
       <ProTip variant="chef">
-        Jinbeh's garlic butter is pre-made the day before, giving it time to develop an incredible depth of flavor. Ask for it on your hibachi vegetables — it adds about 40 calories but transforms the dish. The key is <strong>controlling sauces</strong>: a light drizzle beats a heavy pour every time.
+        Jinbeh's garlic butter is pre-made the day before, giving it time to develop an incredible depth of flavor. Ask for it on your hibachi vegetables, it adds about 40 calories but transforms the dish. The key is <strong>controlling sauces</strong>: a light drizzle beats a heavy pour every time.
       </ProTip>
 
       <h3>Fried Rice (The Calorie Multiplier)</h3>
@@ -504,7 +504,7 @@ uide
       </p>
 
       <p>
-        This is where to load up! Hibachi vegetables—zucchini, onions, mushrooms, broccoli, carrots—are incredibly low in calories while being high in fiber, vitamins, and minerals. Requesting extra vegetables is the best way to make a meal more filling and nutritious without adding significant calories.
+        This is where to load up! Hibachi vegetables, zucchini, onions, mushrooms, broccoli, carrots, are incredibly low in calories while being high in fiber, vitamins, and minerals. Requesting extra vegetables is the best way to make a meal more filling and nutritious without adding significant calories.
       </p>
 
       <p>

@@ -83,7 +83,7 @@ const faqSchema = {
             name: "Is aged sake (Koshu) better than fresh sake?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Aged sake (Koshu) isn't better—it's different. Fresh sake is bright and delicate. Aged Koshu develops complex, sherry-like flavors and amber color. Choose based on preference: fresh sake for sushi and light dishes, aged sake for rich foods and special occasions.",
+                text: "Aged sake (Koshu) isn't better, it's different. Fresh sake is bright and delicate. Aged Koshu develops complex, sherry-like flavors and amber color. Choose based on preference: fresh sake for sushi and light dishes, aged sake for rich foods and special occasions.",
             },
         },
         {
@@ -159,7 +159,7 @@ export default function TypesOfSakeExplained() {
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🏮 Behind the Bar at Jinbeh</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
- Jinbeh stocks rare Japanese whiskeys including Yamazaki — bottles the owner has to &ldquo;beg and pull teeth&rdquo; to acquire as Japanese distilleries send fewer pallets to the US. For sake, the unfiltered bottle must be shaken before pouring. And the iconic hand-painted tequila bottles behind the bar? Each one is individually painted by artisans from a Mexican village. It took a year to collect enough empty bottles to fill the shelf.
+ Jinbeh stocks rare Japanese whiskeys including Yamazaki, bottles the owner has to &ldquo;beg and pull teeth&rdquo; to acquire as Japanese distilleries send fewer pallets to the US. For sake, the unfiltered bottle must be shaken before pouring. And the iconic hand-painted tequila bottles behind the bar? Each one is individually painted by artisans from a Mexican village. It took a year to collect enough empty bottles to fill the shelf.
                 </p>
               </div>
 
@@ -188,18 +188,18 @@ export default function TypesOfSakeExplained() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "At Jinbeh, we stock diverse sake varieties so every guest finds their perfect match. Our staff is trained in sake classification and can guide you through your preferences."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <IngredientSpotlight ingredient={{
                                         name: "Sake (Rice Wine)",
                                         japaneseName: "Nihonshu (日本酒)",
                                         icon: "🍶",
-                                        origin: "Japan — Niigata, Fushimi (Kyoto), Nada (Kobe)",
+                                        origin: "Japan, Niigata, Fushimi (Kyoto), Nada (Kobe)",
                                         season: "Autumn (new sake season: October–February)",
                                         flavor: "Ranges from crisp & dry (Junmai) to floral & fruity (Daiginjo)",
                                         pairsWith: "Sashimi, hibachi, tempura, grilled fish",
-                                        jinbehDish: "Sake Flight — sample 3 varieties curated by our staff",
+                                        jinbehDish: "Sake Flight, sample 3 varieties curated by our staff",
                                         jinbehDishLink: "/frisco/cocktails/sake-flight"
                                     }} />
 
@@ -208,7 +208,7 @@ export default function TypesOfSakeExplained() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Japan produces over 1,400 active sake breweries (kura), yet the global sake market has grown 12% annually since 2018, reaching billion in 2024. The U.S. is now the largest sake market outside Japan, with Texas ranking in the top 10 states for sake consumption. Interestingly, sake predates wine and beer—archaeological evidence suggests rice fermentation in Japan dates back over 2,000 years. The rice polishing machine, invented in 1930, revolutionized sake and created the modern classification system we use today."
+                                        fact="Japan produces over 1,400 active sake breweries (kura), yet the global sake market has grown 12% annually since 2018, reaching billion in 2024. The U.S. is now the largest sake market outside Japan, with Texas ranking in the top 10 states for sake consumption. Interestingly, sake predates wine and beer, archaeological evidence suggests rice fermentation in Japan dates back over 2,000 years. The rice polishing machine, invented in 1930, revolutionized sake and created the modern classification system we use today."
                                         source="Sake Brewers Association of Japan"
                                     />
 
@@ -788,7 +788,7 @@ export default function TypesOfSakeExplained() {
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-accent-red/20 rounded-2xl p-6 my-8">
                                         <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🎯 Ask Our Experts</h3>
                                         <p className="text-charcoal/80 mb-4">
-                                            Not sure which sake type to choose? Our team at Jinbeh—both Frisco and Lewisville locations—is trained in sake classification and varieties. Tell us your preferences, and we'll recommend the perfect pour for your meal.
+                                            Not sure which sake type to choose? Our team at Jinbeh, both Frisco and Lewisville locations, is trained in sake classification and varieties. Tell us your preferences, and we'll recommend the perfect pour for your meal.
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-3">
                                             <Link href="/frisco" className="text-deep-indigo font-semibold hover:text-accent-red transition-colors">
@@ -886,7 +886,7 @@ export default function TypesOfSakeExplained() {
                                             </summary>
                                             <div className="px-6 pb-6 text-charcoal/80">
                                                 <p className="mb-3">
-                                                    Not better—just different.
+                                                    Not better, just different.
                                                 </p>
                                                 <ul className="space-y-2 list-disc list-inside">
                                                     <li><strong>Fresh sake:</strong> Bright, delicate, fruity, refreshing</li>
@@ -973,7 +973,7 @@ export default function TypesOfSakeExplained() {
 
                                     <div className="mt-12">
                                         <ProTip variant="chef">
-                                            <strong>Sake exploration tip from our team:</strong> The fastest way to discover your sake preference is to order a "sake flight" during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>—you'll taste 3-4 varieties side-by-side and immediately understand the differences between Junmai, Ginjo, and Daiginjo. Ask our bartender to arrange them light-to-bold for the best tasting experience. Temperature matters enormously: try the same Junmai both warm and chilled to experience how it transforms. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                            <strong>Sake exploration tip from our team:</strong> The fastest way to discover your sake preference is to order a "sake flight" during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>,you'll taste 3-4 varieties side-by-side and immediately understand the differences between Junmai, Ginjo, and Daiginjo. Ask our bartender to arrange them light-to-bold for the best tasting experience. Temperature matters enormously: try the same Junmai both warm and chilled to experience how it transforms. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                         </ProTip>
 
                                         <PillarCTA type="catering" />

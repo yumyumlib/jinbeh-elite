@@ -438,7 +438,7 @@ export default function FriscoPage() {
               </div>
             </div>
             <p className="text-center text-charcoal/60 text-sm mt-6">
-              Just minutes from Legacy West, The Star, Dr Pepper Ballpark, and PGA of America headquarters — right off Preston Road near Dallas North Tollway and Sam Rayburn Tollway.
+              Just minutes from Legacy West, The Star, Dr Pepper Ballpark, and PGA of America headquarters, right off Preston Road near Dallas North Tollway and Sam Rayburn Tollway.
             </p>
           </div>
         </section>

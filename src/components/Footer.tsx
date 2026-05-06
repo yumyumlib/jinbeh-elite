@@ -57,14 +57,14 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.yelp.com/biz/jinbeh-japanese-restaurant-frisco"
+                  href="https://www.youtube.com/@JinbehJapanese"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-warm-ivory/10 rounded-full flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
-                  aria-label="Yelp"
+                  aria-label="YouTube"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.965 5.835a1.073 1.073 0 0 1-.932 1.326 9.265 9.265 0 0 1-4.023-.646 1.073 1.073 0 0 1-.373-1.655l3.004-3.963c.601-.79 1.81-.39 1.827.612l.497 4.326zM12.4 8.32V3.073A1.073 1.073 0 0 0 11.1 2.05a9.318 9.318 0 0 0-3.873 2.108 1.072 1.072 0 0 0 .14 1.694l4.074 2.948c.82.593 1.96-.131 1.96-1.18l-.001-.3zM5.78 9.61a1.073 1.073 0 0 0 .34 1.613l4.4 2.428c.88.487 1.86-.392 1.476-1.326L9.937 7.47a1.072 1.072 0 0 0-1.6-.453 9.196 9.196 0 0 0-2.557 2.593zm.676 6.747a9.265 9.265 0 0 0 1.593 3.728 1.073 1.073 0 0 0 1.643.104l3.386-3.554c.673-.707.147-1.857-.795-1.736l-4.979.663a1.073 1.073 0 0 0-.848 1.295z" />
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                   </svg>
                 </a>
               </div>
@@ -76,7 +76,7 @@ export default function Footer() {
                 Frisco
               </h3>
               <address className="not-italic text-warm-ivory/80 space-y-1 text-sm mb-4">
-                <p>{frisco.address.street}</p>
+                <p>{frisco.address.street} {frisco.address.suite}</p>
                 <p>
                   {frisco.address.city}, {frisco.address.state} {frisco.address.zip}
                 </p>
@@ -90,9 +90,13 @@ export default function Footer() {
                 </svg>
                 {frisco.phone}
               </a>
-              <div className="mt-3 text-xs text-warm-ivory/70 space-y-0.5">
+              <div className="mt-3 text-xs text-warm-ivory/70 space-y-1">
+                <p className="font-semibold text-warm-ivory/85">Lunch</p>
                 <p>Mon-Fri: {frisco.hours.lunch.weekday.display}</p>
                 <p>Sat-Sun: {frisco.hours.lunch.weekend.display}</p>
+                <p className="font-semibold text-warm-ivory/85 pt-1">Dinner</p>
+                <p>Sun-Thu: {frisco.hours.dinner.sunThurs.display}</p>
+                <p>Fri-Sat: {frisco.hours.dinner.friSat.display}</p>
               </div>
               <Link
                 href="/frisco"
@@ -108,7 +112,7 @@ export default function Footer() {
                 Lewisville
               </h3>
               <address className="not-italic text-warm-ivory/80 space-y-1 text-sm mb-4">
-                <p>{lewisville.address.street}</p>
+                <p>{lewisville.address.street} {lewisville.address.suite}</p>
                 <p>
                   {lewisville.address.city}, {lewisville.address.state} {lewisville.address.zip}
                 </p>
@@ -122,9 +126,13 @@ export default function Footer() {
                 </svg>
                 {lewisville.phone}
               </a>
-              <div className="mt-3 text-xs text-warm-ivory/70 space-y-0.5">
+              <div className="mt-3 text-xs text-warm-ivory/70 space-y-1">
+                <p className="font-semibold text-warm-ivory/85">Lunch</p>
                 <p>Mon-Fri: {lewisville.hours.lunch.weekday.display}</p>
                 <p>Sat-Sun: {lewisville.hours.lunch.weekend.display}</p>
+                <p className="font-semibold text-warm-ivory/85 pt-1">Dinner</p>
+                <p>Sun-Thu: {lewisville.hours.dinner.sunThurs.display}</p>
+                <p>Fri-Sat: {lewisville.hours.dinner.friSat.display}</p>
               </div>
               <Link
                 href="/lewisville"

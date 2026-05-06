@@ -53,7 +53,7 @@ const faqSchema = {
       name: "What makes Jinbeh's fried rice special?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our hibachi fried rice is made fresh at your table by skilled teppanyaki chefs. It's prepared with day-old rice, eggs, butter, fresh vegetables, and our special seasonings — all cooked on a sizzling grill right in front of you.",
+        text: "Our hibachi fried rice is made fresh at your table by skilled teppanyaki chefs. It's prepared with day-old rice, eggs, butter, fresh vegetables, and our special seasonings, all cooked on a sizzling grill right in front of you.",
       },
     },
     {
@@ -177,7 +177,7 @@ export default function NationalFriedRiceDayPage() {
                 Not All Fried Rice Is Created Equal
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
-                At Jinbeh, our hibachi fried rice isn&apos;t just a side dish — it&apos;s a show-stopper.
+                At Jinbeh, our hibachi fried rice isn&apos;t just a side dish, it&apos;s a show-stopper.
                 Watch our teppanyaki chefs work their magic on the sizzling grill, tossing
                 perfectly seasoned rice with precision and flair. Since 1988, we&apos;ve been
                 perfecting every grain.
@@ -244,7 +244,7 @@ export default function NationalFriedRiceDayPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-soft-gold font-bold">3.</span>
-                      <span>Fresh vegetables are tossed in — onions, carrots, peas</span>
+                      <span>Fresh vegetables are tossed in, onions, carrots, peas</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-soft-gold font-bold">4.</span>

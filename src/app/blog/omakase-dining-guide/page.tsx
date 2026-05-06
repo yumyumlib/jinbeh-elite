@@ -26,7 +26,7 @@ const schemas = [
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What does omakase mean?", acceptedAnswer: { "@type": "Answer", text: "Omakase translates to 'I leave it up to you' in English. It's a dining experience where the chef takes full control, crafting a bespoke menu highlighting the freshest ingredients." } },
-            { "@type": "Question", name: "How is omakase different from regular sushi?", acceptedAnswer: { "@type": "Answer", text: "While omakase often includes sushi, it is much more comprehensive—a curated progression including appetizers, various sushi pieces, cooked dishes, soup, and dessert." } },
+            { "@type": "Question", name: "How is omakase different from regular sushi?", acceptedAnswer: { "@type": "Answer", text: "While omakase often includes sushi, it is much more comprehensive, a curated progression including appetizers, various sushi pieces, cooked dishes, soup, and dessert." } },
             { "@type": "Question", name: "Can I request dietary preferences in omakase?", acceptedAnswer: { "@type": "Answer", text: "While omakase is about trusting the chef, you should communicate any dietary restrictions (allergies, vegetarian) before the meal begins. The chef will plan accordingly while maintaining the omakase philosophy." } },
             { "@type": "Question", name: "How long does an omakase meal take?", acceptedAnswer: { "@type": "Answer", text: "A typical omakase experience lasts 45 minutes to over an hour. The pacing is intentional, designed to allow you to savor each course and interact with the chef." } },
             { "@type": "Question", name: "Is omakase available outside Japan?", acceptedAnswer: { "@type": "Answer", text: "Yes. The popularity of omakase has spread worldwide. Authentic omakase restaurants like Jinbeh in Dallas maintain the core principles while bringing this experience to international audiences." } },
@@ -72,16 +72,16 @@ export default function OmakaseDiningGuide() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8">
-        You sit down. There's no menu. The chef looks at you, nods, and begins. Fifteen minutes later, you're eating the best piece of fish you've ever tasted—and you didn't choose a single thing. That's omakase, and once you experience it, regular ordering feels boring.
+        You sit down. There's no menu. The chef looks at you, nods, and begins. Fifteen minutes later, you're eating the best piece of fish you've ever tasted, and you didn't choose a single thing. That's omakase, and once you experience it, regular ordering feels boring.
       </p>
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Omakase is about trust and artistry. When you sit at the sushi bar and say 'omakase,' you're inviting the chef to showcase their mastery, creativity, and passion for their craft."</p>
-                                <span className="text-sm text-charcoal/80">— Jinbeh Omakase Philosophy</span>
+                                <span className="text-sm text-charcoal/80">, Jinbeh Omakase Philosophy</span>
                             </div>
 
                             <DidYouKnow
-                                fact="The world's most famous omakase chef, Jiro Ono of Tokyo's Sukiyabashi Jiro, has been perfecting his craft for over 70 years and was awarded 3 Michelin stars. His restaurant seats only 10 people, and reservations must be made months in advance — proving that omakase is truly about the intimate chef-diner connection, not the size of the restaurant."
+                                fact="The world's most famous omakase chef, Jiro Ono of Tokyo's Sukiyabashi Jiro, has been perfecting his craft for over 70 years and was awarded 3 Michelin stars. His restaurant seats only 10 people, and reservations must be made months in advance, proving that omakase is truly about the intimate chef-diner connection, not the size of the restaurant."
                                 source="Michelin Guide & 'Jiro Dreams of Sushi'"
                             />
 
@@ -150,7 +150,7 @@ export default function OmakaseDiningGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌸 The Art of Seasonality</h2>
                             <p className="text-charcoal/80 mb-4">One of the defining features of Omakase is the emphasis on seasonality. Chefs select ingredients at their peak, ensuring each dish captures the essence of the season. This commitment to fresh, seasonal ingredients is a hallmark of Japanese cuisine and adds an element of surprise to each Omakase dinner.</p>
 
-                            <p className="text-charcoal/80 mb-4">Seasonality is not just about freshness—it's a celebration of nature's bounty and a reflection of the Japanese philosophy of living in harmony with the natural world. This approach ensures that each Omakase meal is unique, as ingredients and dishes change with the seasons, offering diners a dynamic and ever-changing culinary experience.</p>
+                            <p className="text-charcoal/80 mb-4">Seasonality is not just about freshness, it's a celebration of nature's bounty and a reflection of the Japanese philosophy of living in harmony with the natural world. This approach ensures that each Omakase meal is unique, as ingredients and dishes change with the seasons, offering diners a dynamic and ever-changing culinary experience.</p>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">✅ How to Enjoy Your Omakase Meal</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -196,7 +196,7 @@ export default function OmakaseDiningGuide() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Omakase at Jinbeh:</strong> For the most authentic experience, sit at the sushi bar and let our chefs know you'd like omakase. Regulars say the chef interaction is what makes it special — they'll explain each piece and tailor the progression to your tastes. Reviewers describe it as "a personal culinary journey" that's worth every bite. Call ahead to arrange your experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                <strong>Omakase at Jinbeh:</strong> For the most authentic experience, sit at the sushi bar and let our chefs know you'd like omakase. Regulars say the chef interaction is what makes it special, they'll explain each piece and tailor the progression to your tastes. Reviewers describe it as "a personal culinary journey" that's worth every bite. Call ahead to arrange your experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌟 Why Choose Omakase?</h2>

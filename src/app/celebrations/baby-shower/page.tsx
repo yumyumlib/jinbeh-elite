@@ -167,7 +167,7 @@ export default function BabyShowerPage() {
               <div className="bg-accent-red/10 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">🎉 Built-In Entertainment</h3>
                 <p className="text-gray-700">
-                  Skip the party games—our hibachi chefs provide non-stop entertainment! Guests of all 
+                  Skip the party games, our hibachi chefs provide non-stop entertainment! Guests of all 
                   ages love the cooking show, from grandparents to the kids' table. It keeps everyone 
                   engaged and having fun.
                 </p>

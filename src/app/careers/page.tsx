@@ -286,7 +286,7 @@ const faqs = [
     questions: [
       {
         q: "How do I apply for a position?",
-        a: "You can apply by: (1) Calling your preferred location directly at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224, (2) Visiting in person with your resume, or (3) Emailing your resume and a brief introduction to careers@jinbeh.com.",
+        a: "You can apply by: (1) Calling your preferred location directly at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224, (2) Visiting in person with your resume, or (3) Emailing your resume and a brief introduction to YumYumJinbeh@gmail.com.",
       },
       {
         q: "What should I include with my application?",
@@ -397,7 +397,7 @@ export default function CareersPage() {
               Join Our Family
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-              Experience, passion, and hospitality—we're looking for team members
+              Experience, passion, and hospitality, we're looking for team members
               who share our commitment to excellence and family values.
             </p>
           </div>
@@ -412,7 +412,7 @@ export default function CareersPage() {
                   Why Work at Jinbeh?
                 </h2>
                 <p className="text-lg text-charcoal/70">
-                  Jinbeh careers are about more than Japanese restaurant jobs — join our team as a hibachi chef, sushi chef, server, or hospitality professional. We're hiring Jinbeh with hospitality jobs Frisco and server positions Lewisville. For 38 years, we&apos;ve built more than a restaurant—we&apos;ve created a family where team members thrive in the best restaurant careers DFW has to offer. Discover what makes the <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline font-medium">hibachi dining experience</Link> so special.
+                  Jinbeh careers are about more than Japanese restaurant jobs, join our team as a hibachi chef, sushi chef, server, or hospitality professional. We're hiring Jinbeh with hospitality jobs Frisco and server positions Lewisville. For 38 years, we&apos;ve built more than a restaurant, we&apos;ve created a family where team members thrive in the best restaurant careers DFW has to offer. Discover what makes the <Link href="/blog/hibachi-dining-experience" className="text-accent-red hover:underline font-medium">hibachi dining experience</Link> so special.
                 </p>
               </RevealSection>
             </div>
@@ -472,7 +472,7 @@ export default function CareersPage() {
                     </p>
                     <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
                       "The best part of working at Jinbeh is the family atmosphere. Everyone here genuinely cares about each other and wants each other to succeed."
-                      <span className="block text-sm text-charcoal/80 mt-2 not-italic">— Jinbeh Team Member</span>
+                      <span className="block text-sm text-charcoal/80 mt-2 not-italic">, Jinbeh Team Member</span>
                     </p>
                     <p>
                       From day one, you'll be supported by experienced mentors who are invested in your success. We believe in promoting from within and creating pathways for career advancement.
@@ -656,7 +656,7 @@ export default function CareersPage() {
                   Email your resume and a brief introduction. We'll review promptly and get back to you.
                 </p>
                 <a
-                  href="mailto:careers@jinbeh.com"
+                  href="mailto:YumYumJinbeh@gmail.com"
                   className="inline-block bg-accent-red text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/90 transition-colors"
                 >
                   Email Your Resume

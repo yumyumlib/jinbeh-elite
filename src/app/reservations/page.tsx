@@ -222,7 +222,7 @@ export default function ReservationsPage() {
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-white/80">
-                Hibachi entertainment, hand-crafted sushi, and family hospitality since 1988. Choose your preferred location and book online — walk-ins always welcome.
+                Hibachi entertainment, hand-crafted sushi, and family hospitality since 1988. Choose your preferred location and book online, walk-ins always welcome.
               </p>
             </RevealSection>
           </div>
@@ -237,7 +237,7 @@ export default function ReservationsPage() {
                   Book Your Table
                 </h2>
                 <p className="text-lg text-charcoal/70">
-                  Select your party size, date, and time — we&apos;ll take you straight to OpenTable to confirm.
+                  Select your party size, date, and time, we&apos;ll take you straight to OpenTable to confirm.
                 </p>
               </div>
             </RevealSection>
@@ -661,7 +661,7 @@ export default function ReservationsPage() {
               Our team will add special touches to make your experience unforgettable.
             </p>
             <p className="text-sm text-soft-gold/90 font-medium mb-10">
-              🎂 Thousands of birthdays celebrated since 1988 — let us make yours special.
+              🎂 Thousands of birthdays celebrated since 1988, let us make yours special.
             </p>
             <div className="grid sm:grid-cols-2 gap-6 mb-10">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur">

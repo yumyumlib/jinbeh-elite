@@ -27,7 +27,7 @@ const schemas = [
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What is the best sushi in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Top-rated spots include Jinbeh (Frisco/Lewisville), Uchi, Nobu, and Tei-An. For value plus quality, Jinbeh offers fresh sushi with 38+ years of tradition and a unique hibachi-sushi combo experience." } },
             { "@type": "Question", name: "Is the sushi at Jinbeh fresh?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh receives fish deliveries multiple times per week. Sushi chefs slice each piece to order, and you can watch them work at the sushi bar." } },
-            { "@type": "Question", name: "What sushi do you recommend for beginners?", acceptedAnswer: { "@type": "Answer", text: "Start with a California Roll or Shrimp Tempura Roll—they are mild and delicious. Salmon rolls are also crowd-pleasers. Jinbeh servers are happy to guide you through the menu." } },
+            { "@type": "Question", name: "What sushi do you recommend for beginners?", acceptedAnswer: { "@type": "Answer", text: "Start with a California Roll or Shrimp Tempura Roll, they are mild and delicious. Salmon rolls are also crowd-pleasers. Jinbeh servers are happy to guide you through the menu." } },
             { "@type": "Question", name: "How much does sushi cost in Dallas?", acceptedAnswer: { "@type": "Answer", text: "Sushi prices in Dallas range from for basic rolls to + for omakase experiences. At Jinbeh, specialty rolls run and lunch combos start around, making it one of the best value spots in DFW." } },
             { "@type": "Question", name: "Does Jinbeh offer vegetarian sushi?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers several vegetarian rolls including cucumber roll, avocado roll, and vegetable tempura roll. Let your server know about dietary needs." } },
             { "@type": "Question", name: "Can I order sushi for takeout or delivery?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh sushi travels well for takeout. Order online or call directly. For the freshest experience, dining at the sushi bar is recommended." } },
@@ -115,11 +115,11 @@ export default function BestSushiDallas() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"We've been serving fresh sushi in DFW since 1988. While we're in Frisco and Lewisville, our regulars drive from all over Dallas for the quality and value."</p>
- <span className="text-sm text-charcoal/80">— The Jinbeh Family</span>
+ <span className="text-sm text-charcoal/80">, The Jinbeh Family</span>
  </div>
 
  <DidYouKnow
- fact="The DFW metroplex has over 400 Japanese restaurants, but Jinbeh is one of only a handful that has been family-owned and operating continuously since 1988 — nearly four decades of serving fresh sushi and hibachi. Reviewers consistently note that the quality rivals downtown Dallas spots at a fraction of the price."
+ fact="The DFW metroplex has over 400 Japanese restaurants, but Jinbeh is one of only a handful that has been family-owned and operating continuously since 1988, nearly four decades of serving fresh sushi and hibachi. Reviewers consistently note that the quality rivals downtown Dallas spots at a fraction of the price."
  source="Google Maps & DFW Dining Data"
  />
 
@@ -147,7 +147,7 @@ export default function BestSushiDallas() {
  </div>
 
  <ProTip variant="insider">
- <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show — something most Dallas sushi spots can't offer. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+ <strong>Dallas locals' tip:</strong> Regulars say the drive from Dallas to Jinbeh is "absolutely worth it" for the freshness and value. The Volcano Roll and Dallas Roll are crowd favorites, and reviewers love that you can pair sushi with a hibachi show, something most Dallas sushi spots can't offer. Come during <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour</Link> (Mon-Fri 4:30-6:30 PM) for the best deals. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
  </ProTip>
 
  <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">💲 How Much Does Sushi Cost in Dallas?</h2>
@@ -169,7 +169,7 @@ export default function BestSushiDallas() {
                                     <h3 className="font-bold text-charcoal mb-2">🐟 Freshness Indicators</h3>
                                     <ul className="text-sm text-charcoal/70 space-y-1">
                                         <li>• Fish has sheen, no dull or brown spots</li>
-                                        <li>• No strong "fishy" smell — fresh fish smells like the ocean</li>
+                                        <li>• No strong "fishy" smell, fresh fish smells like the ocean</li>
                                         <li>• Rice is warm and well-seasoned, not cold or crunchy</li>
                                         <li>• Chef slices to order (not pre-made in a case)</li>
                                     </ul>
@@ -224,7 +224,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Fresh and flavorful—that's our promise. We receive fish deliveries multiple times per week. Our sushi chefs slice each piece to order. You can watch them work at our sushi bar.</p>
+                                        <p>Fresh and flavorful, that's our promise. We receive fish deliveries multiple times per week. Our sushi chefs slice each piece to order. You can watch them work at our sushi bar.</p>
                                     </div>
                                 </details>
 
@@ -234,7 +234,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Welcome to the world of sushi! Start with our California Roll or Shrimp Tempura Roll—they're mild and delicious. Salmon rolls are also crowd-pleasers. Our servers are happy to guide you through the menu.</p>
+                                        <p>Welcome to the world of sushi! Start with our California Roll or Shrimp Tempura Roll, they're mild and delicious. Salmon rolls are also crowd-pleasers. Our servers are happy to guide you through the menu.</p>
                                     </div>
                                 </details>
 
@@ -244,7 +244,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Omakase means 'I'll leave it to you'—the chef chooses your courses. It's a wonderful way to experience sushi. At Jinbeh, ask about our chef's selection for a curated tasting experience. Learn more in our <Link href="/blog/omakase-dining-guide" className="text-accent-red hover:underline">omakase dining guide</Link>.</p>
+                                        <p>Omakase means 'I'll leave it to you',the chef chooses your courses. It's a wonderful way to experience sushi. At Jinbeh, ask about our chef's selection for a curated tasting experience. Learn more in our <Link href="/blog/omakase-dining-guide" className="text-accent-red hover:underline">omakase dining guide</Link>.</p>
                                     </div>
                                 </details>
 
@@ -264,7 +264,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Absolutely! Our sushi travels well for takeout. Order online or call us directly. For the freshest experience, we recommend dining in at our sushi bar—it's worth the trip.</p>
+                                        <p>Absolutely! Our sushi travels well for takeout. Order online or call us directly. For the freshest experience, we recommend dining in at our sushi bar, it's worth the trip.</p>
                                     </div>
                                 </details>
 
@@ -284,7 +284,7 @@ export default function BestSushiDallas() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>The FDA advises pregnant women to avoid raw fish. At Jinbeh, cooked sushi options like shrimp tempura rolls, California rolls (which use imitation crab), and vegetable rolls are safe alternatives. Ask your server for fully-cooked options — there are plenty of delicious choices.</p>
+                                        <p>The FDA advises pregnant women to avoid raw fish. At Jinbeh, cooked sushi options like shrimp tempura rolls, California rolls (which use imitation crab), and vegetable rolls are safe alternatives. Ask your server for fully-cooked options, there are plenty of delicious choices.</p>
                                     </div>
                                 </details>
 

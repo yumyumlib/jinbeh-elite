@@ -184,8 +184,7 @@ export default function ValentinesDayPage() {
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
                 Skip the crowded chain restaurants and give your special someone an experience
-                they&apos;ll remember. At Jinbeh, we&apos;ve been creating romantic memories since 1988 —
-                from the sizzle of hibachi flames to the artistry of fresh sushi.
+                they&apos;ll remember. At Jinbeh, we&apos;ve been creating romantic memories since 1988,                 from the sizzle of hibachi flames to the artistry of fresh sushi.
               </p>
             </div>
 
@@ -373,7 +372,7 @@ export default function ValentinesDayPage() {
                 Reserve Your Valentine&apos;s Day Table
               </h3>
               <p className="text-charcoal/70 mb-8 max-w-2xl mx-auto">
-                Don&apos;t wait until the last minute — our tables fill up fast!
+                Don&apos;t wait until the last minute, our tables fill up fast!
                 Make this Valentine&apos;s Day one to remember at Jinbeh.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

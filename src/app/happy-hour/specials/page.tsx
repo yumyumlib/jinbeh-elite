@@ -113,28 +113,28 @@ const whyChooseHappyHour = [
 const drinkCategories = [
   {
     name: "Japanese Draft Beer",
-    description: "Crisp imports on draft — $4 during Happy Hour",
+    description: "Crisp imports on draft, $4 during Happy Hour",
     items: [
-      "Sapporo Draft — $4",
-      "Asahi Draft — $4",
-      "Kirin Draft — $4",
+      "Sapporo Draft, $4",
+      "Asahi Draft, $4",
+      "Kirin Draft, $4",
     ],
   },
   {
     name: "Sake",
     description: "Traditional Japanese rice wine",
     items: [
-      "Small Hot Sake — $5 (Happy Hour)",
+      "Small Hot Sake, $5 (Happy Hour)",
       "House Sake (cold)",
       "Premium Sake by the carafe",
-      "Sake Flights — 3 curated selections",
+      "Sake Flights, 3 curated selections",
     ],
   },
   {
     name: "Wine",
-    description: "Curated wine selection — $6 by the glass during Happy Hour",
+    description: "Curated wine selection, $6 by the glass during Happy Hour",
     items: [
-      "House Wine by Glass — $6",
+      "House Wine by Glass, $6",
       "Premium Wine selections",
     ],
   },

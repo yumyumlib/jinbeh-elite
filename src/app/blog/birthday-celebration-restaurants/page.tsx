@@ -97,7 +97,7 @@ const faqSchema = {
             name: "What age is appropriate for a hibachi birthday party?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Hibachi is fun for all ages! Kids love the fire tricks and flying shrimp. Most children ages 5 and up enjoy the show. For younger kids, our regular dining room is also a great option. Adults love hibachi birthdays too—it's dinner and entertainment in one.",
+                text: "Hibachi is fun for all ages! Kids love the fire tricks and flying shrimp. Most children ages 5 and up enjoy the show. For younger kids, our regular dining room is also a great option. Adults love hibachi birthdays too, it's dinner and entertainment in one.",
             },
         },
     ],
@@ -245,7 +245,7 @@ export default function BirthdayCelebrationRestaurants() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Planning a birthday celebration?</strong> The right restaurant can transform
                                         an ordinary dinner into an unforgettable memory. When choosing where to celebrate,
-                                        look for restaurants that offer something extra—complimentary desserts, entertainment,
+                                        look for restaurants that offer something extra, complimentary desserts, entertainment,
                                         special songs, and experiences that go beyond ordinary meals.
                                     </p>
 
@@ -255,7 +255,7 @@ export default function BirthdayCelebrationRestaurants() {
                                             that celebrates YOU. Whether you want an interactive hibachi show or an intimate dinner,
                                             we're here to make your special day unforgettable."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -445,7 +445,7 @@ export default function BirthdayCelebrationRestaurants() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Birthday dining insider tip:</strong> Jinbeh offers complimentary birthday desserts and special birthday songs for the guest of honor. Book a hibachi table for the best experience — your chef becomes the entertainment! For groups of 8+, call ahead to ensure adjacent tables. Weekend dinner slots fill fast, so reserve 1-2 weeks in advance for Friday/Saturday birthdays. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your birthday table →</Link>
+                                        <strong>Birthday dining insider tip:</strong> Jinbeh offers complimentary birthday desserts and special birthday songs for the guest of honor. Book a hibachi table for the best experience, your chef becomes the entertainment! For groups of 8+, call ahead to ensure adjacent tables. Weekend dinner slots fill fast, so reserve 1-2 weeks in advance for Friday/Saturday birthdays. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your birthday table →</Link>
                                     </ProTip>
 
                                     <PillarCTA type="vip" />

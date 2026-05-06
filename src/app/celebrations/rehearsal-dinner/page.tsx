@@ -194,7 +194,7 @@ export default function RehearsalDinnerPage() {
                   <p className="text-gray-700">
                     No awkward silences or forced conversation starters. Our hibachi chefs provide
                     engaging entertainment that naturally brings people together and gives everyone
-                    something to enjoy—even guests who've never met.
+                    something to enjoy, even guests who've never met.
                   </p>
                 </div>
                 <div className="bg-rose-50 p-6 rounded-xl">
@@ -284,7 +284,7 @@ export default function RehearsalDinnerPage() {
 
               <div className="mt-8 bg-rose-100 rounded-xl p-6 text-center">
                 <p className="text-gray-800 font-medium">
-                  💡 <strong>Pro Tip:</strong> Many couples do a combination—hibachi tables for the larger
+                  💡 <strong>Pro Tip:</strong> Many couples do a combination, hibachi tables for the larger
                   group and sushi bar for the wedding party VIPs. Ask us about mixed seating options!
                 </p>
               </div>

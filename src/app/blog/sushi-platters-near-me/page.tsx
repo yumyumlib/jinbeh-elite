@@ -45,7 +45,7 @@ const faqs = [
     },
     {
         question: "How far in advance should I order a sushi platter?",
-        answer: "We recommend ordering sushi platters at least 24-48 hours in advance to ensure freshness and availability, especially for large orders or special rolls. For major events or catering orders of 50+ people, give us 3-5 days' notice. Same-day orders may be possible for smaller platters—just call ahead.",
+        answer: "We recommend ordering sushi platters at least 24-48 hours in advance to ensure freshness and availability, especially for large orders or special rolls. For major events or catering orders of 50+ people, give us 3-5 days' notice. Same-day orders may be possible for smaller platters, just call ahead.",
     },
     {
         question: "What types of sushi come on a party platter?",
@@ -150,7 +150,7 @@ export default function SushiPlattersNearMe() {
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Planning a party, office lunch, or celebration?</strong> A sushi platter is the
-                                        ultimate crowd-pleaser—colorful, shareable, and always impressive. Whether you need a small
+                                        ultimate crowd-pleaser, colorful, shareable, and always impressive. Whether you need a small
                                         tray for a dinner party or a full <Link href="/catering" className="text-accent-red hover:underline">catering spread</Link> for
                                         50+ guests, here's everything you need to know about ordering sushi platters in the
                                         Dallas-Fort Worth area.
@@ -162,7 +162,7 @@ export default function SushiPlattersNearMe() {
                                             Jinbeh platter, every piece is made fresh that day with the same care we put into
                                             every dine-in plate. The Dallas Roll and Volcano Roll are always the first to go."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -170,7 +170,7 @@ export default function SushiPlattersNearMe() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="The sushi catering market in the U.S. has grown 340% since 2010, making sushi platters the fastest-growing catering category in the country. In DFW alone, over 15,000 sushi platters are ordered monthly for corporate events, parties, and celebrations. The average sushi party platter feeds 8-10 people and typically includes 6-8 different roll varieties—a trend that started in Japan's 'osechi' (New Year) tradition of beautifully arranged food boxes."
+                                        fact="The sushi catering market in the U.S. has grown 340% since 2010, making sushi platters the fastest-growing catering category in the country. In DFW alone, over 15,000 sushi platters are ordered monthly for corporate events, parties, and celebrations. The average sushi party platter feeds 8-10 people and typically includes 6-8 different roll varieties, a trend that started in Japan's 'osechi' (New Year) tradition of beautifully arranged food boxes."
                                         source="Technomic Foodservice Trends Report"
                                     />
 
@@ -260,21 +260,21 @@ export default function SushiPlattersNearMe() {
                                         <div className="bg-gradient-to-br from-accent-red to-soft-gold rounded-2xl p-6 text-white">
                                             <h3 className="font-heading font-bold text-lg mb-3">🏆 Crowd Favorites</h3>
                                             <ul className="space-y-1 text-white/90 text-sm">
-                                                <li>• Dallas Roll — Our signature Jinbeh creation</li>
-                                                <li>• Dragon Roll — Eel, cucumber, avocado</li>
-                                                <li>• Volcano Roll — Baked spicy crab topped</li>
-                                                <li>• Rainbow Roll — Assorted sashimi on California</li>
-                                                <li>• Spicy Tuna Roll — A timeless classic</li>
+                                                <li>• Dallas Roll, Our signature Jinbeh creation</li>
+                                                <li>• Dragon Roll, Eel, cucumber, avocado</li>
+                                                <li>• Volcano Roll, Baked spicy crab topped</li>
+                                                <li>• Rainbow Roll, Assorted sashimi on California</li>
+                                                <li>• Spicy Tuna Roll, A timeless classic</li>
                                             </ul>
                                         </div>
                                         <div className="bg-gradient-to-br from-deep-indigo to-deep-indigo rounded-2xl p-6 text-white">
                                             <h3 className="font-heading font-bold text-lg mb-3">🌿 Safe Bets (Beginners)</h3>
                                             <ul className="space-y-1 text-white/90 text-sm">
-                                                <li>• California Roll — Crab, avocado, cucumber</li>
-                                                <li>• Shrimp Tempura Roll — Crispy and satisfying</li>
-                                                <li>• Philadelphia Roll — Salmon, cream cheese</li>
-                                                <li>• Veggie Roll — Avocado, cucumber, carrot</li>
-                                                <li>• Eel Avocado — Sweet unagi sauce</li>
+                                                <li>• California Roll, Crab, avocado, cucumber</li>
+                                                <li>• Shrimp Tempura Roll, Crispy and satisfying</li>
+                                                <li>• Philadelphia Roll, Salmon, cream cheese</li>
+                                                <li>• Veggie Roll, Avocado, cucumber, carrot</li>
+                                                <li>• Eel Avocado, Sweet unagi sauce</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -298,7 +298,7 @@ export default function SushiPlattersNearMe() {
                                             <p className="text-white/90 mb-4">
                                                 When guests say our crab rangoons are "the best I've ever had" and
                                                 our Dallas Roll is "amazing," you know your platter will be a hit.
-                                                Every piece is prepared fresh by our expert sushi chefs—the same team that's
+                                                Every piece is prepared fresh by our expert sushi chefs, the same team that's
                                                 been serving DFW since 1988.
                                             </p>
                                             <ul className="space-y-2 mb-6">
@@ -337,11 +337,11 @@ export default function SushiPlattersNearMe() {
                                     </h2>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Order early for freshness</strong> — Give 24-48 hours' notice so every piece is made fresh the day of your event.</li>
-                                        <li><strong>Mix familiar and adventurous</strong> — Include crowd-pleasers like California rolls alongside specialty options for the sushi lovers.</li>
-                                        <li><strong>Don't forget the extras</strong> — Add edamame, miso soup, and <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">gyoza</Link> for a complete spread.</li>
-                                        <li><strong>Keep it cold</strong> — Pick up your platter close to serving time, or keep it refrigerated. Sushi is best enjoyed fresh.</li>
-                                        <li><strong>Ask about allergies</strong> — At Jinbeh, "they accommodate allergies really well"—just let us know when ordering.</li>
+                                        <li><strong>Order early for freshness</strong>, Give 24-48 hours' notice so every piece is made fresh the day of your event.</li>
+                                        <li><strong>Mix familiar and adventurous</strong>, Include crowd-pleasers like California rolls alongside specialty options for the sushi lovers.</li>
+                                        <li><strong>Don't forget the extras</strong>, Add edamame, miso soup, and <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">gyoza</Link> for a complete spread.</li>
+                                        <li><strong>Keep it cold</strong>, Pick up your platter close to serving time, or keep it refrigerated. Sushi is best enjoyed fresh.</li>
+                                        <li><strong>Ask about allergies</strong>, At Jinbeh, "they accommodate allergies really well",just let us know when ordering.</li>
                                     </ul>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -351,11 +351,11 @@ export default function SushiPlattersNearMe() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <p className="text-charcoal/80 italic mb-3">"The Dallas Roll and Volcano Roll are amazing. We order platters for every office event now."</p>
-                                            <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Frisco</p>
+                                            <p className="text-sm text-charcoal/60">, Google Review, Jinbeh Frisco</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">"Best crab rangoons I've ever had—we always add them to our sushi platter order. The quality is consistently outstanding."</p>
-                                            <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Frisco</p>
+                                            <p className="text-charcoal/80 italic mb-3">"Best crab rangoons I've ever had, we always add them to our sushi platter order. The quality is consistently outstanding."</p>
+                                            <p className="text-sm text-charcoal/60">, Google Review, Jinbeh Frisco</p>
                                         </div>
                                     </div>
                                 </div>
@@ -371,7 +371,7 @@ export default function SushiPlattersNearMe() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
- <strong>Platter ordering pro tips from our catering team:</strong> For the best presentation, order specialty rolls (Dragon, Rainbow) alongside classics—the color contrast makes your platter Instagram-worthy. Ask about our "event garnish" option for special occasions: we add decorative sashimi flowers and edible garnishes that elevate the wow factor. For corporate orders over, we include complimentary chopstick sets and soy sauce dishes. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+ <strong>Platter ordering pro tips from our catering team:</strong> For the best presentation, order specialty rolls (Dragon, Rainbow) alongside classics, the color contrast makes your platter Instagram-worthy. Ask about our "event garnish" option for special occasions: we add decorative sashimi flowers and edible garnishes that elevate the wow factor. For corporate orders over, we include complimentary chopstick sets and soy sauce dishes. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
                                     </ProTip>
 
                                     <PillarCTA type="catering" />

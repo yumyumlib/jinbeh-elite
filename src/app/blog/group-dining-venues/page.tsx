@@ -25,7 +25,7 @@ const schemas = [
     { "@context": "https://schema.org", "@type": "Article", headline: "Group Dining Venues DFW: Best for Large Parties", datePublished: "2026-01-26", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/frisco/FriscoLocation_Bar_Front.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "Best restaurant for large groups in DFW?", acceptedAnswer: { "@type": "Answer", text: "Hibachi restaurants like Jinbeh are ideal—shared tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice), entertainment keeps everyone engaged, and the format works for all ages. Jinbeh has been hosting group events since 1988." } },
+            { "@type": "Question", name: "Best restaurant for large groups in DFW?", acceptedAnswer: { "@type": "Answer", text: "Hibachi restaurants like Jinbeh are ideal, shared tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice), entertainment keeps everyone engaged, and the format works for all ages. Jinbeh has been hosting group events since 1988." } },
             { "@type": "Question", name: "What's the minimum group size for Jinbeh reservations?", acceptedAnswer: { "@type": "Answer", text: "While Jinbeh welcomes all sizes, groups of 8+ benefit from group dining expertise. Contact Jinbeh for coordination details." } },
             { "@type": "Question", name: "Can we customize the menu for our group?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh's culinary team works with groups to create customized menus accommodating dietary preferences and group size." } },
             { "@type": "Question", name: "How do hibachi tables work for groups?", acceptedAnswer: { "@type": "Answer", text: "7–8 guests sit around a hibachi station where a skilled chef prepares your meal with theatrical flair and entertainment." } },
@@ -120,7 +120,7 @@ export default function GroupDiningVenues() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Planning dinner for a big group?</strong> The challenge is finding a place that works for everyone—kids, adults, picky eaters, and adventurous foodies. Here's why hibachi is the perfect solution. And if you're treating the group, a <Link href="/gift-cards" className="text-accent-red hover:underline font-medium">Jinbeh gift card</Link> makes coordination easy.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Planning dinner for a big group?</strong> The challenge is finding a place that works for everyone, kids, adults, picky eaters, and adventurous foodies. Here's why hibachi is the perfect solution. And if you're treating the group, a <Link href="/gift-cards" className="text-accent-red hover:underline font-medium">Jinbeh gift card</Link> makes coordination easy.</p>
 
             
               <p className="text-charcoal/80 text-sm mt-6">
@@ -130,11 +130,11 @@ export default function GroupDiningVenues() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Why Hibachi Works for Groups</h2>
 
                             <DidYouKnow
-                                fact="Group dining accounts for 35% of all restaurant revenue in the United States, with parties of 8+ spending an average of per person — 40% more than individual diners. Restaurants with interactive or communal dining formats like hibachi see 60% higher guest satisfaction scores for group events compared to traditional sit-down restaurants."
+                                fact="Group dining accounts for 35% of all restaurant revenue in the United States, with parties of 8+ spending an average of per person, 40% more than individual diners. Restaurants with interactive or communal dining formats like hibachi see 60% higher guest satisfaction scores for group events compared to traditional sit-down restaurants."
                                 source="National Restaurant Association & Technomic"
                             />
                             <div className="grid md:grid-cols-2 gap-4 my-6">
-                                {[{ e: "🔥", t: "Built-in Entertainment", d: "No awkward silence—the chef provides the show" }, { e: "🍽️", t: "Shared Experience", d: "Everyone eats together, family-style" }, { e: "👶", t: "All Ages Welcome", d: "Kids love it, adults enjoy it" }, { e: "📋", t: "Easy Ordering", d: "Set menu format simplifies decision-making" }].map(x => (
+                                {[{ e: "🔥", t: "Built-in Entertainment", d: "No awkward silence, the chef provides the show" }, { e: "🍽️", t: "Shared Experience", d: "Everyone eats together, family-style" }, { e: "👶", t: "All Ages Welcome", d: "Kids love it, adults enjoy it" }, { e: "📋", t: "Easy Ordering", d: "Set menu format simplifies decision-making" }].map(x => (
                                     <div key={x.t} className="bg-warm-ivory rounded-xl p-5">
                                         <span className="text-3xl block mb-2">{x.e}</span>
                                         <h3 className="font-bold">{x.t}</h3>
@@ -233,7 +233,7 @@ export default function GroupDiningVenues() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Group booking insider tip:</strong> For groups of 12+, call Jinbeh directly rather than booking online — our team will arrange adjacent hibachi tables so your whole group can enjoy the experience together. Weeknight dinners (Tuesday-Thursday) give you more space and personal attention. Corporate groups love our set-menu packages that simplify ordering and billing. Ask about corporate account perks for repeat bookings! <Link href="/reservations" className="text-accent-red hover:underline">Reserve for your group →</Link>
+                                <strong>Group booking insider tip:</strong> For groups of 12+, call Jinbeh directly rather than booking online, our team will arrange adjacent hibachi tables so your whole group can enjoy the experience together. Weeknight dinners (Tuesday-Thursday) give you more space and personal attention. Corporate groups love our set-menu packages that simplify ordering and billing. Ask about corporate account perks for repeat bookings! <Link href="/reservations" className="text-accent-red hover:underline">Reserve for your group →</Link>
                             </ProTip>
 
                             <PillarCTA type="vip" />

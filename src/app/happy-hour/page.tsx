@@ -73,7 +73,7 @@ const faqSchema = {
       "name": "What drinks are on special during Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "During Happy Hour (Mon-Fri 5:00 to 6:30 PM): $4 Japanese draft beer, $5 small hot sake, and $6 wine — at both Jinbeh locations.",
+        "text": "During Happy Hour (Mon-Fri 5:00 to 6:30 PM): $4 Japanese draft beer, $5 small hot sake, and $6 wine, at both Jinbeh locations.",
       },
     },
     {
@@ -316,6 +316,71 @@ export default function HappyHourPage() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Cocktail Showcase — Jinbeh signature drinks */}
+        <section className="py-20 bg-charcoal">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-soft-gold/20 text-soft-gold text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                🍸 Beyond Happy Hour
+              </span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                Signature Cocktails Worth a Second Round
+              </h2>
+              <p className="text-lg text-warm-ivory/70 max-w-2xl mx-auto">
+                When the happy hour glass is empty, the Jinbeh bar keeps going. Lychee
+                martini, espresso martini, pineapple-mint highball, and a sake-flight
+                lineup our chefs and bartenders craft to order.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto">
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/catalog/23-C060324-6842.jpg"
+                  alt="Jinbeh signature lychee martini with tropical garnish"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/catalog/24-C060324-6852.jpg"
+                  alt="Refreshing pineapple-mint highball cocktail with pineapple wedge garnish"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/catalog/25-C060324-6856.jpg"
+                  alt="Jinbeh espresso martini with chocolate drizzle and floating coffee beans"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/catalog/26-C060324-6874.jpg"
+                  alt="Jinbeh matcha cocktail with green matcha being swirled into milk"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+            </div>
+            <div className="text-center mt-10">
+              <Link
+                href="/frisco/cocktails"
+                className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-3 rounded-xl transition-colors"
+              >
+                See the Cocktail Menu
+              </Link>
             </div>
           </div>
         </section>

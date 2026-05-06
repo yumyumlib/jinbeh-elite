@@ -40,15 +40,15 @@ const faqs = [
     },
     {
         question: "What sake pairs with hibachi and grilled foods?",
-        answer: "Go fuller-bodied! Junmai or Honjozo are ideal for hibachi's bold, grilled flavors. These robust sakes with more character won't get lost next to the intense heat and caramelized notes from the grill. Serve warm (104-113°F) to intensify the pairing—the warmth mirrors the heat of the grill and brings out umami. The combination is especially delicious with grilled proteins and fried rice."
+        answer: "Go fuller-bodied! Junmai or Honjozo are ideal for hibachi's bold, grilled flavors. These robust sakes with more character won't get lost next to the intense heat and caramelized notes from the grill. Serve warm (104-113°F) to intensify the pairing, the warmth mirrors the heat of the grill and brings out umami. The combination is especially delicious with grilled proteins and fried rice."
     },
     {
         question: "Can sake pair with appetizers and small plates?",
-        answer: "Absolutely! Sparkling sake (Hana Awaka) works wonderfully with fried appetizers and spring rolls due to its light bubbles and refreshing quality. Dry Honjozo complements edamame and gyoza. Aged Koshu pairs beautifully with rich, cream-based appetizers. The key is matching intensity—lighter appetizers pair with delicate sakes, heavier fried foods pair with fuller-bodied options. Let our staff help you find the perfect match!"
+        answer: "Absolutely! Sparkling sake (Hana Awaka) works wonderfully with fried appetizers and spring rolls due to its light bubbles and refreshing quality. Dry Honjozo complements edamame and gyoza. Aged Koshu pairs beautifully with rich, cream-based appetizers. The key is matching intensity, lighter appetizers pair with delicate sakes, heavier fried foods pair with fuller-bodied options. Let our staff help you find the perfect match!"
     },
     {
         question: "How do I order sake at Jinbeh?",
-        answer: "Our trained bartenders love helping guests discover their perfect sake! Tell them your preferences—what foods you're ordering, whether you like delicate or bold flavors, and your preferred temperature. We offer sake flights for tasting multiple styles, glass pours, and bottle selections. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about our current sake selections and special pairings."
+        answer: "Our trained bartenders love helping guests discover their perfect sake! Tell them your preferences, what foods you're ordering, whether you like delicate or bold flavors, and your preferred temperature. We offer sake flights for tasting multiple styles, glass pours, and bottle selections. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 to ask about our current sake selections and special pairings."
     },
     {
         question: "What does SMV (Sake Meter Value) mean?",
@@ -56,7 +56,7 @@ const faqs = [
     },
     {
         question: "Is there a difference between premium and regular sake?",
-        answer: "Yes! Premium sakes like Ginjo and Daiginjo are refined through polishing more rice away, resulting in delicate, fruity, floral profiles—perfect for sushi. Regular sakes like Honjozo are more approachable, crisper, and pair well with everyday meals and fried foods. Fuller-bodied Junmai offers earthier flavors ideal for grilled foods. Price and quality both matter, but the 'best' sake depends on what you're eating. Our staff can guide you through options at any price point!"
+        answer: "Yes! Premium sakes like Ginjo and Daiginjo are refined through polishing more rice away, resulting in delicate, fruity, floral profiles, perfect for sushi. Regular sakes like Honjozo are more approachable, crisper, and pair well with everyday meals and fried foods. Fuller-bodied Junmai offers earthier flavors ideal for grilled foods. Price and quality both matter, but the 'best' sake depends on what you're eating. Our staff can guide you through options at any price point!"
     },
     {
         question: "Can I bring sake to Jinbeh, or should I order from your list?",
@@ -64,7 +64,7 @@ const faqs = [
     },
     {
         question: "What non-alcoholic drinks pair well with Japanese food?",
-        answer: "If you prefer not to drink sake, try Japanese green tea (hot or iced) — it cleanses the palate beautifully between bites of sushi and sashimi. Ramune soda is fun and refreshing with fried appetizers. Calpico is a mildly sweet, creamy Japanese drink that pairs with spicy rolls. At Jinbeh, we also have a full selection of soft drinks, juices, and mocktails so every guest at the table finds something they love."
+        answer: "If you prefer not to drink sake, try Japanese green tea (hot or iced), it cleanses the palate beautifully between bites of sushi and sashimi. Ramune soda is fun and refreshing with fried appetizers. Calpico is a mildly sweet, creamy Japanese drink that pairs with spicy rolls. At Jinbeh, we also have a full selection of soft drinks, juices, and mocktails so every guest at the table finds something they love."
     },
 ];
 
@@ -72,7 +72,7 @@ const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "The Complete Sake Pairing Guide: From Sushi to Hibachi",
-    description: "Master sake pairings with Japanese cuisine—learn which sake styles complement sushi, hibachi, appetizers, and more.",
+    description: "Master sake pairings with Japanese cuisine, learn which sake styles complement sushi, hibachi, appetizers, and more.",
     image: "https://jinbeh.com/images/beverages/LewisvilleBar.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-01-29",
@@ -325,7 +325,7 @@ export default function SakePairingGuide() {
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🍶 From Jinbeh&apos;s Bar: The Cold Sake Truth</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  Jinbeh&apos;s owner shares a key insight most diners don&apos;t know: <strong>premium sake always performs better cold.</strong> The rice is polished over and over, each pass producing a finer grade. Hot sake uses the unpolished leftovers. Higher-quality cold sake also produces fewer headaches. Look for the white cloud in unfiltered bottles — that&apos;s rice sediment from the authentic unfiltered process.
+                  Jinbeh&apos;s owner shares a key insight most diners don&apos;t know: <strong>premium sake always performs better cold.</strong> The rice is polished over and over, each pass producing a finer grade. Hot sake uses the unpolished leftovers. Higher-quality cold sake also produces fewer headaches. Look for the white cloud in unfiltered bottles, that&apos;s rice sediment from the authentic unfiltered process.
                 </p>
               </div>
 
@@ -355,7 +355,7 @@ export default function SakePairingGuide() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Sake isn't just a drink—it's a bridge between food and flavor.</strong> Whether you're enjoying
+                                        <strong>Sake isn't just a drink, it's a bridge between food and flavor.</strong> Whether you're enjoying
                                         fresh <Link href="/blog/types-of-sushi" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">nigiri</Link>, watching flames dance on a <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi grill</Link>, or savoring delicate appetizers, the right sake
                                         transforms the entire experience. But with so many styles and temperatures to choose from, where do you start?
                                     </p>
@@ -365,11 +365,11 @@ export default function SakePairingGuide() {
                                             "At Jinbeh, we've curated our sake selection to complement every dish on our menu. Our staff can guide you
                                             through the perfect pairing, whether it's your first sake experience or you're a seasoned connoisseur."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Sake has been brewed in Japan for over 1,000 years, with more than 10,000 breweries operating at its peak. Today, about 1,400 breweries remain — each with distinct regional styles. The word 'sake' actually means 'alcoholic beverage' in Japanese; what we call sake is properly known as 'nihonshu' (日本酒)."
+                                        fact="Sake has been brewed in Japan for over 1,000 years, with more than 10,000 breweries operating at its peak. Today, about 1,400 breweries remain, each with distinct regional styles. The word 'sake' actually means 'alcoholic beverage' in Japanese; what we call sake is properly known as 'nihonshu' (日本酒)."
                                         source="Japan Sake & Shochu Makers Association"
                                     />
 
@@ -379,7 +379,7 @@ export default function SakePairingGuide() {
 
                                     <p>
                                         Sake, Japan's iconic rice wine, has been brewed for over a thousand years. What makes it special isn't just
-                                        the taste—it's the precision, craftsmanship, and centuries of tradition poured into every bottle. To master
+                                        the taste, it's the precision, craftsmanship, and centuries of tradition poured into every bottle. To master
                                         pairing, it helps to understand what makes different sakes distinct.
                                     </p>
 
@@ -547,7 +547,7 @@ export default function SakePairingGuide() {
                                                 <strong>Top choice:</strong> Junmai or Honjozo served warm (104-113°F)
                                             </p>
                                             <p className="text-charcoal/80 text-sm mb-3">
-                                                Warming the sake brings out richer, earthier notes that complement the Maillard reaction—those delicious caramelized flavors from grilling.
+                                                Warming the sake brings out richer, earthier notes that complement the Maillard reaction, those delicious caramelized flavors from grilling.
                                             </p>
                                             <p className="text-charcoal/80 text-sm">
                                                 <strong>Why:</strong> Fuller-bodied sakes won't get lost next to bold, grilled tastes. The sake's warmth mirrors the heat of the grill.
@@ -569,7 +569,7 @@ export default function SakePairingGuide() {
                                     </div>
 
                                     <ProTip variant="insider">
-                                        <strong>Regulars' sake night secret:</strong> Guests love ordering sake flights to sample multiple styles — our bartenders walk you through each one and explain what pairs best with your meal. For hibachi, ask for warm Junmai; reviewers say the warm sake + grilled steak combo is "the perfect match." Between bites, alternate sips with ice water to keep your palate fresh. <Link href="/bar" className="text-accent-red hover:underline">Explore our bar menu →</Link>
+                                        <strong>Regulars' sake night secret:</strong> Guests love ordering sake flights to sample multiple styles, our bartenders walk you through each one and explain what pairs best with your meal. For hibachi, ask for warm Junmai; reviewers say the warm sake + grilled steak combo is "the perfect match." Between bites, alternate sips with ice water to keep your palate fresh. <Link href="/bar" className="text-accent-red hover:underline">Explore our bar menu →</Link>
                                     </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -687,7 +687,7 @@ export default function SakePairingGuide() {
                                         <ul className="space-y-2 text-charcoal/80">
                                             <li className="flex gap-3">
                                                 <span className="text-accent-red font-bold">✗</span>
-                                                <span><strong>Don't serve premium Ginjo warm.</strong> Cold is where this delicate sake shines—warming it makes it taste flat and boring.</span>
+                                                <span><strong>Don't serve premium Ginjo warm.</strong> Cold is where this delicate sake shines, warming it makes it taste flat and boring.</span>
                                             </li>
                                             <li className="flex gap-3">
                                                 <span className="text-accent-red font-bold">✗</span>
@@ -734,7 +734,7 @@ export default function SakePairingGuide() {
                                     <div className="bg-gradient-to-br from-soft-gold/20 to-accent-red/20 rounded-2xl p-6 my-8">
                                         <h3 className="font-heading font-bold text-lg text-charcoal mb-3">🎯 Ask Our Staff</h3>
                                         <p className="text-charcoal/80 mb-4">
-                                            Not sure which sake to choose? Our team at both Jinbeh locations—Frisco and Lewisville—is trained in sake
+                                            Not sure which sake to choose? Our team at both Jinbeh locations, Frisco and Lewisville, is trained in sake
                                             pairing. Tell us what you're ordering, and we'll recommend the perfect pour.
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-3">
@@ -771,7 +771,7 @@ export default function SakePairingGuide() {
                     </div>
 
                                         Want to explore sake pairings without breaking the bank? Jinbeh's <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour specials</Link> are the perfect place to experiment.
-                                        We offer special <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">drink deals</Link> on select sakes and appetizers—the ideal combination for learning what you love.
+                                        We offer special <Link href="/blog/best-happy-hour-frisco-tx" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">drink deals</Link> on select sakes and appetizers, the ideal combination for learning what you love.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-deep-indigo/10 rounded-2xl p-8 my-8">
@@ -795,7 +795,7 @@ export default function SakePairingGuide() {
                                     </h2>
 
                                     <p>
-                                        Sake pairing isn't complicated—it's about balance, intensity, and exploring what you love. Whether you're a sushi
+                                        Sake pairing isn't complicated, it's about balance, intensity, and exploring what you love. Whether you're a sushi
                                         purist at <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">best sushi in Frisco</Link>, a hibachi enthusiast, or somewhere in between, there's a sake waiting to elevate your next meal.
                                     </p>
 

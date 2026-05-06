@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const faqs = [
     { question: "What's iconic about Japanese culture?", answer: "Fresh and flavorful in everything! Sushi, ramen, arts like ikebana, Mount Fuji, kimonos, anime, and technology. Japan blends ancient tradition with modern innovation in every aspect." },
-    { question: "What makes Japanese cuisine unique?", answer: "Fresh seasonal ingredients, beautiful presentation, respect for natural flavors. Sushi, ramen, tempura—each reflects centuries of culinary tradition. Every region has special dishes." },
+    { question: "What makes Japanese cuisine unique?", answer: "Fresh seasonal ingredients, beautiful presentation, respect for natural flavors. Sushi, ramen, tempura, each reflects centuries of culinary tradition. Every region has special dishes." },
     { question: "Is Japanese food healthy?", answer: "Yes! Japanese cuisine focuses on fresh fish, vegetables, and rice. Minimal oil. Balanced portions. At Jinbeh, we use fresh, never-frozen ingredients and traditional cooking methods." },
     { question: "Can I experience Japanese culture at Jinbeh?", answer: "Absolutely! Our hibachi is dinner and a show. Our sushi bar celebrates traditional craftsmanship. Our staff treats every guest like family. Welcome to the table!" },
     { question: "Where can I experience Japanese culture in DFW?", answer: "In Dallas-Fort Worth, you can visit Jinbeh for authentic Japanese dining and hibachi performances, attend the North Texas Japanese Festival, explore the Japan House at the Dallas Arboretum, or shop at Mitsuwa Marketplace in Plano. For a full cultural immersion over dinner, Jinbeh's hibachi combines entertainment, food, and hospitality traditions." }
@@ -73,18 +73,18 @@ export default function PopularJapaneseCulture() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8">
-        Why do Americans lose their minds over ramen? Why is sake suddenly on every cocktail menu? Why does your 8-year-old know more about sushi than your parents ever did? Japanese culture hasn't just arrived in America—it's become part of how we eat, celebrate, and entertain.
+        Why do Americans lose their minds over ramen? Why is sake suddenly on every cocktail menu? Why does your 8-year-old know more about sushi than your parents ever did? Japanese culture hasn't just arrived in America, it's become part of how we eat, celebrate, and entertain.
       </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Japanese culture represents a unique harmony between honoring the past and embracing the future. Every tradition, from tea ceremonies to anime, tells a story of respect, creativity, and innovation."</p>
-                                <span className="text-sm text-charcoal/80">— Jinbeh Cultural Insight</span>
+                                <span className="text-sm text-charcoal/80">, Jinbeh Cultural Insight</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍣 Japanese Cuisine: Art on a Plate</h2>
 
                             <DidYouKnow
-                                fact="Japanese cultural exports—including anime, manga, food, and fashion—generate over billion annually in global revenue. Japanese cuisine was designated a UNESCO Intangible Cultural Heritage in 2013, one of only a few national cuisines to receive this honor. Over 160,000 Japanese restaurants operate outside Japan, with sushi being the most popular Japanese food globally."
+                                fact="Japanese cultural exports, including anime, manga, food, and fashion, generate over billion annually in global revenue. Japanese cuisine was designated a UNESCO Intangible Cultural Heritage in 2013, one of only a few national cuisines to receive this honor. Over 160,000 Japanese restaurants operate outside Japan, with sushi being the most popular Japanese food globally."
                                 source="UNESCO & Japan External Trade Organization"
                             />
                             <p className="text-charcoal/80 mb-4">Japanese cuisine is celebrated for its exquisite presentation, delicate flavors, and profound respect for seasonal ingredients. Each dish is a masterpiece reflecting regional cultural influences and natural bounty. Explore the full range of <Link href="/blog/japanese-beverages-guide" className="text-accent-red hover:underline">Japanese beverages</Link> that complement this culinary artistry.</p>
@@ -185,7 +185,7 @@ export default function PopularJapaneseCulture() {
                                 {[
                                     { q: "What makes Japanese culture unique?", a: "Japan's ability to harmonize ancient traditions with modern innovation. From 1000-year-old tea ceremonies to cutting-edge robotics, Japanese culture thrives by respecting heritage while pioneering the future." },
                                     { q: "Where can I experience authentic Japanese culture?", a: "Visit Kyoto for temples and traditions, Tokyo for pop culture and innovation, Hiroshima for historical significance, or enjoy Japanese dining experiences like those at Jinbeh which blend culinary artistry with cultural respect." },
-                                    { q: "What's the best Japanese food for beginners?", a: "Start with sushi or ramen—both are accessible and delicious. Sushi offers visual artistry while ramen provides warming comfort. Tempura is great for trying fried Japanese cuisine. Ask staff for recommendations!" },
+                                    { q: "What's the best Japanese food for beginners?", a: "Start with sushi or ramen, both are accessible and delicious. Sushi offers visual artistry while ramen provides warming comfort. Tempura is great for trying fried Japanese cuisine. Ask staff for recommendations!" },
                                     { q: "Is anime a significant part of Japanese culture?", a: "Absolutely. Anime is a major creative industry influencing global pop culture. It reflects Japanese storytelling traditions while showcasing artistic innovation and diverse genres." }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
@@ -197,7 +197,7 @@ export default function PopularJapaneseCulture() {
 
                             <div className="mt-12">
                                 <ProTip variant="chef">
-                                    <strong>Japanese culture tip:</strong> At Jinbeh, you can experience multiple aspects of Japanese culture in one visit. Watch the artistry of our sushi chefs at the bar, enjoy the theatrical performance of hibachi cooking, and sample traditional beverages like <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake</Link> and <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline">Ramune soda</Link>. For a deeper dive, try our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience—it's the most culturally authentic way to dine!
+                                    <strong>Japanese culture tip:</strong> At Jinbeh, you can experience multiple aspects of Japanese culture in one visit. Watch the artistry of our sushi chefs at the bar, enjoy the theatrical performance of hibachi cooking, and sample traditional beverages like <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake</Link> and <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline">Ramune soda</Link>. For a deeper dive, try our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience, it's the most culturally authentic way to dine!
                                 </ProTip>
 
                                 <PillarCTA type="reservations" />

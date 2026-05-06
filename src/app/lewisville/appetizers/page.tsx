@@ -243,7 +243,7 @@ export default function AppetizersLewisvillePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Shrimp_Tempura.jpg"
-                    alt="Shrimp Tempura — light and crispy fried shrimp"
+                    alt="Shrimp Tempura, light and crispy fried shrimp"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -293,7 +293,7 @@ export default function AppetizersLewisvillePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Tuna_Sashimi.jpg"
-                    alt="Tuna Tartare — diced ahi tuna with avocado and ponzu"
+                    alt="Tuna Tartare, diced ahi tuna with avocado and ponzu"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -318,7 +318,7 @@ export default function AppetizersLewisvillePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/food/SmokedSalmonCloseup.jpg"
-                    alt="Seared Ahi Tuna — pepper-crusted ahi with wasabi aioli"
+                    alt="Seared Ahi Tuna, pepper-crusted ahi with wasabi aioli"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -353,13 +353,13 @@ export default function AppetizersLewisvillePage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" target="_blank" rel="noopener noreferrer"
-                  className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl shadow-lg transition-colors"
                 >
                   Reserve a Table
                 </Link>
                 <a
                   href="tel:2144882224"
-                  className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 488-2224
                 </a>

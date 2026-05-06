@@ -69,7 +69,7 @@ const faqSchema = {
       name: "Is Jinbeh good for the whole family on Father's Day?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! Hibachi is the perfect family experience — Dad gets his steak, kids love the show, and everyone has fun together. We have a kids menu and family-friendly atmosphere.",
+        text: "Absolutely! Hibachi is the perfect family experience, Dad gets his steak, kids love the show, and everyone has fun together. We have a kids menu and family-friendly atmosphere.",
       },
     },
   ],
@@ -178,7 +178,7 @@ export default function FathersDayPage() {
               </h2>
               <p className="text-lg text-charcoal/80 leading-relaxed max-w-3xl mx-auto">
                 This Father&apos;s Day, skip the same old steakhouse routine. At Jinbeh, Dad gets
-                premium steak with a show — sizzling hibachi action, masterful knife skills, and
+                premium steak with a show, sizzling hibachi action, masterful knife skills, and
                 the famous onion volcano. We&apos;ve been celebrating dads since 1988.
               </p>
             </div>
@@ -193,7 +193,7 @@ export default function FathersDayPage() {
                   Premium Cuts
                 </h3>
                 <p className="text-charcoal/70">
-                  Filet mignon, NY strip, ribeye — cooked to perfection right
+                  Filet mignon, NY strip, ribeye, cooked to perfection right
                   at Dad&apos;s table by our skilled hibachi chefs.
                 </p>
               </div>
@@ -206,8 +206,7 @@ export default function FathersDayPage() {
                   The Full Show
                 </h3>
                 <p className="text-charcoal/70">
-                  Flaming onion volcanoes, flying shrimp, impressive knife skills —
-                  entertainment the whole family will enjoy.
+                  Flaming onion volcanoes, flying shrimp, impressive knife skills,                   entertainment the whole family will enjoy.
                 </p>
               </div>
 
@@ -236,19 +235,19 @@ export default function FathersDayPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Filet Mignon — Dad&apos;s favorite cut
+                      Filet Mignon, Dad&apos;s favorite cut
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      NY Strip — classic steakhouse quality
+                      NY Strip, classic steakhouse quality
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Surf & Turf — steak + lobster combo
+                      Surf & Turf, steak + lobster combo
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-accent-red">★</span>
-                      Imperial Dinner — the works
+                      Imperial Dinner, the works
                     </li>
                   </ul>
                 </div>
@@ -257,19 +256,19 @@ export default function FathersDayPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Sashimi Deluxe — fresh cuts
+                      Sashimi Deluxe, fresh cuts
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Samurai Roll — signature roll
+                      Samurai Roll, signature roll
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Omakase — chef&apos;s choice
+                      Omakase, chef&apos;s choice
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Sake flight — perfect pairing
+                      Sake flight, perfect pairing
                     </li>
                   </ul>
                 </div>
@@ -320,7 +319,7 @@ export default function FathersDayPage() {
                   },
                   {
                     q: "What if Dad isn't into raw fish?",
-                    a: "No problem! Our hibachi menu features steak, chicken, shrimp, and scallops — all cooked to order. There's plenty for everyone.",
+                    a: "No problem! Our hibachi menu features steak, chicken, shrimp, and scallops, all cooked to order. There's plenty for everyone.",
                   },
                   {
                     q: "Do you have a kids menu?",
@@ -432,7 +431,7 @@ export default function FathersDayPage() {
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
                   The Hibachi Dining Experience
                 </h3>
-                <p className="text-sm text-charcoal/70 mt-2">Give dad the full tableside show — flames, knife tricks, and premium steak.</p>
+                <p className="text-sm text-charcoal/70 mt-2">Give dad the full tableside show, flames, knife tricks, and premium steak.</p>
               </Link>
               <Link href="/blog/japanese-whiskey-guide" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Drinks</span>

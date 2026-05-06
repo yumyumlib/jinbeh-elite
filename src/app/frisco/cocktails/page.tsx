@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Jinbeh Frisco's cocktail & sake menu — sake flights, Tokyo Mules, Lychee Martinis, and Japanese whisky. Full bar near Stonebriar Centre. Since 1988.",
+  description: "Jinbeh Frisco's cocktail & sake menu, sake flights, Tokyo Mules, Lychee Martinis, and Japanese whisky. Full bar near Stonebriar Centre. Family-owned since 1988.",
   keywords: ["cocktails & sake frisco", "best cocktails & sake frisco", "cocktails & sake menu frisco", "jinbeh cocktails & sake", "japanese cocktails & sake frisco", "japanese cocktails", "sake", "asian drinks", "happy hour"],
   openGraph: {
     title: "Cocktails & Sake Menu | Jinbeh Frisco",
@@ -152,7 +152,7 @@ export default function CocktailsFriscoPage() {
                 Jinbeh Frisco Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Cocktails & Sake — Frisco
+                Cocktails & Sake, Frisco
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Celebration, happy hour, Asian-inspired. Explore our 5 cocktails & sake options,
@@ -188,7 +188,7 @@ export default function CocktailsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/drinks/SpicyMargaritaBeverageDrink.jpg"
-                    alt="Sake Bomb — classic sake dropped into cold beer"
+                    alt="Sake Bomb, classic sake dropped into cold beer"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -238,7 +238,7 @@ export default function CocktailsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/drinks/MuleSummerSignatureCocktail.jpg"
-                    alt="Tokyo Mule — Japanese whiskey with ginger and lime"
+                    alt="Tokyo Mule, Japanese whiskey with ginger and lime"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -263,7 +263,7 @@ export default function CocktailsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/drinks/cocktail.jpg"
-                    alt="Lychee Martini — vodka with lychee and a floral finish"
+                    alt="Lychee Martini, vodka with lychee and a floral finish"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -288,7 +288,7 @@ export default function CocktailsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/hq/jinbeh-cocktail.jpg"
-                    alt="Sake Flight — tasting of three premium sakes"
+                    alt="Sake Flight, tasting of three premium sakes"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -323,13 +323,13 @@ export default function CocktailsFriscoPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" target="_blank" rel="noopener noreferrer"
-                  className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl shadow-lg transition-colors"
                 >
                   Reserve a Table
                 </Link>
                 <a
                   href="tel:2146191200"
-                  className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
                 </a>

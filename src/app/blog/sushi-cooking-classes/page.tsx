@@ -169,11 +169,11 @@ export default function SushiCookingClasses() {
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "Learning to make sushi is not just about creating food—it's about understanding
+                                            "Learning to make sushi is not just about creating food, it's about understanding
                                             a centuries-old culinary tradition. Our instructors are passionate about sharing this knowledge
                                             with students of all levels."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -390,7 +390,7 @@ export default function SushiCookingClasses() {
 
                                 <div className="mt-16">
                                     <ProTip variant="chef">
-                                        <strong>Sushi class tip from our chefs:</strong> The most important skill isn't cutting fish—it's making perfect rice. Practice the rice first: use short-grain Japanese rice, rinse until water runs clear, and season with rice vinegar while still warm. At Jinbeh, watch our sushi bar chefs in action during your visit—they're happy to explain techniques. Our <Link href="/events" className="text-accent-red hover:underline">events page</Link> has info on special dining experiences. For private group events, <a href="tel:2146191200" className="text-accent-red hover:underline">call Frisco: (214) 619-1200</a>
+                                        <strong>Sushi class tip from our chefs:</strong> The most important skill isn't cutting fish, it's making perfect rice. Practice the rice first: use short-grain Japanese rice, rinse until water runs clear, and season with rice vinegar while still warm. At Jinbeh, watch our sushi bar chefs in action during your visit, they're happy to explain techniques. Our <Link href="/events" className="text-accent-red hover:underline">events page</Link> has info on special dining experiences. For private group events, <a href="tel:2146191200" className="text-accent-red hover:underline">call Frisco: (214) 619-1200</a>
                                     </ProTip>
 
                                     <PillarCTA type="vip" />

@@ -231,7 +231,7 @@ export default function TopFriscoRestaurants() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Frisco has something for everyone. From Japanese hibachi to Southern comfort food, our city's restaurants showcase diverse cuisines and exceptional quality. The result? A dining destination that keeps locals coming back and attracts visitors from across Texas."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Frisco Dining Guide</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Frisco Dining Guide</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -239,7 +239,7 @@ export default function TopFriscoRestaurants() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Frisco's dining scene has experienced explosive growth, with over 600 restaurants now operating in the city—up from just 120 in 2005. The city's restaurant industry generates over million annually in revenue. Jinbeh was one of Frisco's first sit-down restaurants when it opened in 1988, and it remains one of only a handful of original Frisco establishments still family-owned and operating. With a top-rated Google rating across thousands of reviews, longevity and quality go hand-in-hand."
+                                        fact="Frisco's dining scene has experienced explosive growth, with over 600 restaurants now operating in the city, up from just 120 in 2005. The city's restaurant industry generates over million annually in revenue. Jinbeh has been one of North Texas's longest-running family-owned Japanese restaurants since 1988, and it remains a beloved Frisco dining destination today, still family-owned and operating. With a top-rated Google rating across thousands of reviews, longevity and quality go hand-in-hand."
                                         source="Frisco Chamber of Commerce Economic Report"
                                     />
 
@@ -314,7 +314,7 @@ export default function TopFriscoRestaurants() {
                                                 🏯 Why Jinbeh Stands Apart
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Since 1988, Jinbeh has been a cornerstone of Frisco's dining scene. With a top-rated Google rating, we've earned our reputation through unwavering commitment to quality and authenticity.
+                                                Since 1988, Jinbeh has been a cornerstone of DFW's Japanese dining scene. With a top-rated Google rating, we've earned our reputation through unwavering commitment to quality and authenticity.
                                             </p>
                                             <ul className="space-y-3 mb-6">
                                                 <li className="flex items-start gap-3">
@@ -471,7 +471,7 @@ export default function TopFriscoRestaurants() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
- <strong>Frisco dining insider tip:</strong> The best way to experience Frisco's dining scene is to make a night of it—start with Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for draft beer, sake, and wine, then stay for a full hibachi dinner. Weeknight visits (Tue-Thu) offer shorter wait times and a more intimate chef experience. Want to try the best of our menu? Ask for the "Jinbeh Sampler" which lets you taste our top rolls alongside hibachi favorites. <a href="tel:2146191200" className="text-accent-red hover:underline">Reserve now: (214) 619-1200</a>
+ <strong>Frisco dining insider tip:</strong> The best way to experience Frisco's dining scene is to make a night of it, start with Jinbeh's <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for draft beer, sake, and wine, then stay for a full hibachi dinner. Weeknight visits (Tue-Thu) offer shorter wait times and a more intimate chef experience. Want to try the best of our menu? Ask for the "Jinbeh Sampler" which lets you taste our top rolls alongside hibachi favorites. <a href="tel:2146191200" className="text-accent-red hover:underline">Reserve now: (214) 619-1200</a>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

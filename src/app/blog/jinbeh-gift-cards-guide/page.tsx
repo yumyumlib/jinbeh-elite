@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "Do Jinbeh gift cards expire?",
     answer:
-      "Jinbeh gift cards do not expire and there are no inactivity fees. Texas law protects gift card holders from expiration dates and dormancy charges. Your card retains its full value until used, so there's no rush — use it whenever you're ready for a great meal!",
+      "Jinbeh gift cards do not expire and there are no inactivity fees. Texas law protects gift card holders from expiration dates and dormancy charges. Your card retains its full value until used, so there's no rush, use it whenever you're ready for a great meal!",
   },
 ];
 
@@ -151,9 +151,7 @@ export default function JinbehGiftCardsGuidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where to Purchase","acceptedAnswer":{"@type":"Answer","text":"Jinbeh gift cards are available through multiple convenient options:"}},{"@type":"Question","name":"How Birthday Club Works","acceptedAnswer":{"@type":"Answer","text":"Enrollment: Sign up for the Birthday Club at any Jinbeh location or online. Provide your name and birthday."}},{"@type":"Question","name":"Why Join?","acceptedAnswer":{"@type":"Answer","text":"Call to Join: Reach out to either Jinbeh location to enroll in the Birthday Club."}},{"@type":"Question","name":"Why Jinbeh Gift Cards Make Great Gifts","acceptedAnswer":{"@type":"Answer","text":"For Immediate Gift Delivery: Purchase online and have digital card emailed the same day"}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Maximize Jinbeh Gift Cards: Deals, Balance Check &
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -176,6 +174,8 @@ export default function JinbehGiftCardsGuidePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
  Tips 2025
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Maximize Jinbeh Gift Cards: Deals, Balance Check &
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
@@ -263,7 +263,7 @@ export default function JinbehGiftCardsGuidePage() {
         <p className="italic text-charcoal/80 mb-2">
           "I got a Jinbeh gift card and it was one of the best gifts ever. I could experience premium hibachi dining without worrying about cost. Plus I found deals that made it stretch even further!"
         </p>
-        <p className="text-sm text-charcoal/80">— Verified Gift Recipient</p>
+        <p className="text-sm text-charcoal/80">, Verified Gift Recipient</p>
       </div>
 
       <h2>Checking Your Gift Card Balance</h2>
@@ -369,7 +369,7 @@ export default function JinbehGiftCardsGuidePage() {
  </p>
 
  <p>
- <strong>What's Included:</strong> Full hibachi dinner with soup, salad, fried rice, vegetables, protein, and the entertainment experience—just with slightly smaller portions than dinner.
+ <strong>What's Included:</strong> Full hibachi dinner with soup, salad, fried rice, vegetables, protein, and the entertainment experience, just with slightly smaller portions than dinner.
       </p>
 
       <p>
@@ -468,7 +468,7 @@ export default function JinbehGiftCardsGuidePage() {
       </ul>
 
       <p>
-        Use your gift card to explore new dishes you might not otherwise try. Ask your server for recommendations—they know the menu best.
+        Use your gift card to explore new dishes you might not otherwise try. Ask your server for recommendations, they know the menu best.
       </p>
 
       <h3>Make Reservations</h3>
@@ -485,7 +485,7 @@ export default function JinbehGiftCardsGuidePage() {
       </ul>
 
       <p>
-        Reservations ensure you're seated promptly and can request specific seating or accommodate special occasions. When booking, mention if you're celebrating something special—our chefs love making birthdays and anniversaries memorable.
+        Reservations ensure you're seated promptly and can request specific seating or accommodate special occasions. When booking, mention if you're celebrating something special, our chefs love making birthdays and anniversaries memorable.
  </p>
 
  <h3>Engage with Our Staff</h3>
@@ -496,7 +496,7 @@ export default function JinbehGiftCardsGuidePage() {
 
  <ul>
  <li>Tell your server about dietary preferences</li>
- <li>Ask your hibachi chef questions—they love sharing about their craft</li>
+ <li>Ask your hibachi chef questions, they love sharing about their craft</li>
  <li>Let us know about celebrations</li>
  <li>Share feedback about your experience</li>
  </ul>

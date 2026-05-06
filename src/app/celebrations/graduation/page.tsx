@@ -481,8 +481,8 @@ export default function GraduationPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/food/hibachi-grill.jpg"
-                    alt="Hibachi chef performing at graduation celebration"
+                    src="/images/blog/illustrations/graduates_jinbeh_celebration.jpeg"
+                    alt="Jinbeh graduation celebration: graduates in caps and gowns toasting together at a hibachi table while the chef performs the show"
                     fill
                     className="object-cover"
                   />

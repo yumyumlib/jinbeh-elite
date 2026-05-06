@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "Should I inform the restaurant it's an anniversary?",
     answer:
-      "Absolutely! Tell them when booking. We offer special touches for anniversaries—reserved seating, champagne service, desserts with special presentations, or personalized service. These details enhance your romantic celebration of love.",
+      "Absolutely! Tell them when booking. We offer special touches for anniversaries, reserved seating, champagne service, desserts with special presentations, or personalized service. These details enhance your romantic celebration of love.",
   },
   {
     question: "What's a reasonable budget for an anniversary dinner?",
@@ -198,12 +198,9 @@ export default function RomanticAnniversaryDinnersPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Anniversary?","acceptedAnswer":{"@type":"Answer","text":"Hibachi dining offers something unique for anniversaries. The interactive nature of watching a skilled chef prepare your meal adds entertainment and spectacle. Flames dance, knives flash, and food becomes edible art—creating memorable moments you'll share together. Planning a birthday instead? Check out our hibachi birthday party ideas."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Anniversary?","acceptedAnswer":{"@type":"Answer","text":"Hibachi dining offers something unique for anniversaries. The interactive nature of watching a skilled chef prepare your meal adds entertainment and spectacle. Flames dance, knives flash, and food becomes edible art, creating memorable moments you'll share together. Planning a birthday instead? Check out our hibachi birthday party ideas."}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Romantic Anniversary Dinners Near Me: Top Spots
-
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -227,6 +224,8 @@ export default function RomanticAnniversaryDinnersPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Romantic Anniversary Dinners Near Me: Top Spots
       </h1>
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
         <Image
@@ -294,7 +293,7 @@ export default function RomanticAnniversaryDinnersPage() {
       <p>
         The right ambiance enhances your dining experience significantly. Look
         for venues with intimate seating, beautiful views, or unique decor. Each
-        restaurant has its own vibe—some emphasize rustic charm, others modern
+        restaurant has its own vibe, some emphasize rustic charm, others modern
         elegance. Ambiance encompasses lighting, music, table settings, and how
         the space makes you feel.
       </p>
@@ -319,7 +318,7 @@ export default function RomanticAnniversaryDinnersPage() {
           atmosphere, beautiful presentation, and attentive service made it
           truly special. We'll definitely celebrate here again!"
         </p>
-        <p className="text-sm text-charcoal/80">— Jinbeh Anniversar Guest</p>
+        <p className="text-sm text-charcoal/80">, Jinbeh Anniversar Guest</p>
       </div>
 
       <DidYouKnow
@@ -353,7 +352,7 @@ export default function RomanticAnniversaryDinnersPage() {
         The minimalist design and subtle lighting contribute to a peaceful vibe
         perfect for conversation and connection. Private dining spaces are
         available for added intimacy. When you call to book, mention it's your
-        anniversary—our staff creates special touches to enhance your evening.
+        anniversary, our staff creates special touches to enhance your evening.
       </p>
 
       <div className="bg-gradient-to-r from-purple-50 to-warm-ivory border border-purple-200/60 rounded-xl p-5 my-8">
@@ -368,7 +367,7 @@ export default function RomanticAnniversaryDinnersPage() {
         Hibachi dining offers something unique for anniversaries. The
         interactive nature of watching a skilled chef prepare your meal adds
         entertainment and spectacle. Flames dance, knives flash, and food
-        becomes edible art—creating memorable moments you'll share together. Planning a birthday instead? Check out our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party ideas</Link>.
+        becomes edible art, creating memorable moments you'll share together. Planning a birthday instead? Check out our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party ideas</Link>.
       </p>
 
       <p>
@@ -422,7 +421,7 @@ export default function RomanticAnniversaryDinnersPage() {
       <p>
         Book well ahead, especially for popular restaurants or special dates.
         Early reservations secure your preferred table and allow stress-free
-        planning. Consider requesting specific seating—window tables, fireplace
+        planning. Consider requesting specific seating, window tables, fireplace
         proximity, or quieter areas add ambiance.
       </p>
 
@@ -441,7 +440,7 @@ export default function RomanticAnniversaryDinnersPage() {
         Consider adding personal touches like flowers or special dessert
         arrangements. These thoughtful gestures show you care and make the
         evening more memorable. Collaborate with the restaurant to arrange
-        surprises—handwritten notes, favorite songs played by musicians, or
+        surprises, handwritten notes, favorite songs played by musicians, or
         champagne service.
       </p>
 
@@ -537,7 +536,7 @@ export default function RomanticAnniversaryDinnersPage() {
       <p>Here's to a wonderful anniversary celebration and many more to come!</p>
 
       <ProTip variant="insider">
-        <strong>Anniversary dinner insider tip:</strong> At Jinbeh, request "Table 7" in Frisco or "Booth 3" in Lewisville for the most intimate seating. Mention your anniversary when booking—our team will prepare special touches including a complimentary dessert presentation. For milestone anniversaries (5th, 10th, 25th), ask about our private dining packages with champagne service. Book 3 weeks ahead for weekends. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+        <strong>Anniversary dinner insider tip:</strong> At Jinbeh, request "Table 7" in Frisco or "Booth 3" in Lewisville for the most intimate seating. Mention your anniversary when booking, our team will prepare special touches including a complimentary dessert presentation. For milestone anniversaries (5th, 10th, 25th), ask about our private dining packages with champagne service. Book 3 weeks ahead for weekends. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
       </ProTip>
 
       <PillarCTA type="hub" />

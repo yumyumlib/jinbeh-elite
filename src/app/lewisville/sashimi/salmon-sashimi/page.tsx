@@ -68,7 +68,7 @@ const faqSchema = {
       "name": "How should I eat Salmon Sashimi sashimi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Salmon Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine—great sashimi needs minimal accompaniment."
+        "text": "We recommend lightly dipping Salmon Sashimi in soy sauce with a touch of wasabi. Let the natural flavors shine, great sashimi needs minimal accompaniment."
       }
     },
     {
@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function SalmonSashimiLewisvillePage() {
-  const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\' — just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };
+  const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\', just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };
   const location = locations["lewisville"];
 
   return (

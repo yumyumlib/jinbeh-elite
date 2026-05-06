@@ -160,7 +160,7 @@ export default function AboutPage() {
             </RevealSection>
             <RevealSection delay={200}>
               <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto hero-subheadline">
-                Since 1988, Jinbeh has been more than a restaurant—it&apos;s where families gather,
+                Since 1988, Jinbeh has been more than a restaurant, it&apos;s where families gather,
                 <Link href="/celebrations" className="text-soft-gold hover:underline">celebrations</Link> ignite, and every meal comes with a show worth remembering.
               </p>
             </RevealSection>
@@ -304,7 +304,7 @@ export default function AboutPage() {
                   <p className="text-charcoal font-medium italic border-l-4 border-soft-gold pl-4">
                     &quot;He came from a poor family, and he created all of this and was
                     successful; the name for him is a daily reminder of where he came from.&quot;
-                    <span className="block text-sm text-charcoal/80 mt-2 not-italic">— Aya Matsuda</span>
+                    <span className="block text-sm text-charcoal/80 mt-2 not-italic">, Aya Matsuda</span>
                   </p>
                   <p>
                     Today, those same values guide everything we do: serving every guest
@@ -323,7 +323,7 @@ export default function AboutPage() {
             <RevealSection>
               <QuoteStrip
                 quote="I have gone here for my birthday every year since I was at least 7. I'm 24 now and celebrated my 24th there. Truly my favorite place to be."
-                author="Alaina T. — Google Review"
+                author="Alaina T., Google Review"
               />
             </RevealSection>
           </div>
@@ -352,7 +352,7 @@ export default function AboutPage() {
                 width={720}
                 height={1280}
                 title="Family hibachi night at Jinbeh Frisco"
-                attribution="A paid partnership with @dfwmoms — &ldquo;If you're looking for a fun family dinner spot in DFW, we had the BEST time at Jinbeh Steak &amp; Sushi in Frisco.&rdquo;"
+                attribution="A paid partnership with @dfwmoms, &ldquo;If you're looking for a fun family dinner spot in DFW, we had the BEST time at Jinbeh Steak &amp; Sushi in Frisco.&rdquo;"
                 description="The kids stayed entertained by the hibachi chefs &mdash; the fire tricks, the interaction, the whole experience. That's the Jinbeh promise to every family."
                 contentUrl="https://www.instagram.com/dfwmoms/reel/DXmPlsfgvqW/"
                 uploadDate="2026-04-26"
@@ -430,10 +430,10 @@ export default function AboutPage() {
                   Premium, Fresh Ingredients
                 </h3>
                 <p className="text-charcoal/70 text-sm pointer-events-none">
-                  We source the finest, freshest fish daily. Our Yum Yum sauce, dipping sauces, and garlic butter are all made in-house—no shortcuts. Explore our <Link href="/menu" className="text-accent-red hover:underline pointer-events-auto">full menu</Link> to see what we serve. When you taste the difference, you understand why guests prefer us over chains.
+                  We source the finest, freshest fish daily. Our Yum Yum sauce, dipping sauces, and garlic butter are all made in-house, no shortcuts. Explore our <Link href="/menu" className="text-accent-red hover:underline pointer-events-auto">full menu</Link> to see what we serve. When you taste the difference, you understand why guests prefer us over chains.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
-                  &ldquo;The food is consistently great and of the highest quality.&rdquo; — Google Review
+                  &ldquo;The food is consistently great and of the highest quality.&rdquo;, Google Review
                 </p>
               </MagicCard>
 
@@ -451,10 +451,10 @@ export default function AboutPage() {
                   Spirited Hibachi Shows
                 </h3>
                 <p className="text-charcoal/70 text-sm pointer-events-none">
-                  Skilled chefs bring artistry and entertainment to every table. The onion volcano, the flying shrimp, the flames—it&apos;s dinner and a show, every time. Discover the rich history of <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline pointer-events-auto">Japanese culinary culture</Link> behind these traditions.
+                  Skilled chefs bring artistry and entertainment to every table. The onion volcano, the flying shrimp, the flames, it&apos;s dinner and a show, every time. Discover the rich history of <Link href="/blog/popular-japanese-culture" className="text-accent-red hover:underline pointer-events-auto">Japanese culinary culture</Link> behind these traditions.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
-                  &ldquo;Chef cooks right in front of you using special effects with fire — always fun!&rdquo; — TripAdvisor Review
+                  &ldquo;Chef cooks right in front of you using special effects with fire, always fun!&rdquo;, TripAdvisor Review
                 </p>
               </MagicCard>
 
@@ -475,7 +475,7 @@ export default function AboutPage() {
                   Family-owned and operated. Sometimes kids get a hand-folded origami crane from a basket by the door, plus training chopsticks and a lollipop. Our philosophy: invest in the kids, and they grow up saying &ldquo;I want to go to Jinbeh.&rdquo; That&apos;s why we hear from guests who started coming as toddlers and now bring their own friends.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
-                  &ldquo;Service is great — cozy and family-like.&rdquo; — Google Review
+                  &ldquo;Service is great, cozy and family-like.&rdquo;, Google Review
                 </p>
               </MagicCard>
 
@@ -496,7 +496,7 @@ export default function AboutPage() {
                   Every birthday gets the &ldquo;three-touch&rdquo; treatment: the host says happy birthday at check-in, the server is notified with a circled seat number, and the chef is informed. Three separate people, three heartfelt moments&mdash;then tambourines, noisemakers, and ice cream to close the show. <Link href="/celebrations" className="text-accent-red hover:underline pointer-events-auto">Explore celebrations</Link>.
                 </p>
                 <p className="mt-4 text-xs italic text-charcoal/50 border-l-2 border-soft-gold/40 pl-3 pointer-events-none">
-                  &ldquo;We&apos;ve been coming here for years, celebrating a lot of birthdays.&rdquo; — Google Review
+                  &ldquo;We&apos;ve been coming here for years, celebrating a lot of birthdays.&rdquo;, Google Review
                 </p>
               </MagicCard>
             </div>
@@ -543,7 +543,7 @@ export default function AboutPage() {
                     href="https://www.instagram.com/jinbehfrisco/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${item.alt} — View on Instagram`}
+                    aria-label={`${item.alt}, View on Instagram`}
                     className="relative aspect-square rounded-lg overflow-hidden group"
                   >
                     <Image
@@ -573,7 +573,7 @@ export default function AboutPage() {
                 The People Behind Every Plate
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                Jinbeh isn&apos;t built on recipes alone — it&apos;s built on relationships that span decades.
+                Jinbeh isn&apos;t built on recipes alone, it&apos;s built on relationships that span decades.
               </p>
             </div>
 
@@ -747,7 +747,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
               Experience the warmth, the spirited shows, and the authentic hospitality that guests have been coming back for over 20 years.
-              A warm welcome and a show with every meal—that&apos;s our promise. Give the gift of Jinbeh with a <Link href="/gift-cards" className="text-soft-gold hover:underline">gift card</Link>.
+              A warm welcome and a show with every meal, that&apos;s our promise. Give the gift of Jinbeh with a <Link href="/gift-cards" className="text-soft-gold hover:underline">gift card</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

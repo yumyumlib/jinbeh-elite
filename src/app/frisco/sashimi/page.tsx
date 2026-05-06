@@ -157,7 +157,7 @@ export default function SashimiFriscoPage() {
                 Jinbeh Frisco Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Sashimi — Frisco
+                Sashimi, Frisco
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Purity, premium fish, elegant simplicity. Explore our 7 sashimi options,
@@ -193,7 +193,7 @@ export default function SashimiFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Fresh_Salmon_Sashimi.jpg"
-                    alt="Salmon Sashimi — fresh Atlantic salmon sliced to perfection"
+                    alt="Salmon Sashimi, fresh Atlantic salmon sliced to perfection"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -218,7 +218,7 @@ export default function SashimiFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Tuna_Sashimi.jpg"
-                    alt="Tuna Sashimi — premium ahi tuna, melt-in-your-mouth tender"
+                    alt="Tuna Sashimi, premium ahi tuna, melt-in-your-mouth tender"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -243,7 +243,7 @@ export default function SashimiFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Yelllow_Tail_Sashimi.jpg"
-                    alt="Yellowtail Sashimi — buttery hamachi with delicate flavor"
+                    alt="Yellowtail Sashimi, buttery hamachi with delicate flavor"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -268,7 +268,7 @@ export default function SashimiFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Octopus_Sashimi.jpg"
-                    alt="Octopus Sashimi — tender tako with subtle sweetness"
+                    alt="Octopus Sashimi, tender tako with subtle sweetness"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -293,7 +293,7 @@ export default function SashimiFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Sea_Lovers_Paradise.jpg"
-                    alt="Sashimi Deluxe Platter — chef's selection of premium fish"
+                    alt="Sashimi Deluxe Platter, chef's selection of premium fish"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -318,7 +318,7 @@ export default function SashimiFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/instagram/sushi-feast-flatlay.jpg"
-                    alt="Chirashi Bowl — assorted sashimi over sushi rice"
+                    alt="Chirashi Bowl, assorted sashimi over sushi rice"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -353,13 +353,13 @@ export default function SashimiFriscoPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" target="_blank" rel="noopener noreferrer"
-                  className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl shadow-lg transition-colors"
                 >
                   Reserve a Table
                 </Link>
                 <a
                   href="tel:2146191200"
-                  className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
                 </a>

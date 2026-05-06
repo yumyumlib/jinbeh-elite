@@ -100,7 +100,7 @@ const faqSchema = {
             name: "What should I wear to a date night at Jinbeh?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Jinbeh has an upscale-casual dress code. Smart casual works well—think nice jeans or slacks with a blouse or button-down. For special occasions, feel free to dress up. The key is looking your best while being comfortable.",
+                text: "Jinbeh has an upscale-casual dress code. Smart casual works well, think nice jeans or slacks with a blouse or button-down. For special occasions, feel free to dress up. The key is looking your best while being comfortable.",
             },
         },
     ],
@@ -276,18 +276,18 @@ export default function DateNightRestaurantsFrisco() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Planning a special date night in Frisco?</strong> Finding the right restaurant is about more than just food—it's about creating an atmosphere where you can connect, celebrate, and make memories together. Whether you're looking for an anniversary dinner, a first date, or just a romantic escape from the everyday, Frisco offers some truly magical dining experiences. And if you're craving <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi experience</Link> combined with <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">best sushi in Frisco</Link>, we know exactly where you should go.
+                                        <strong>Planning a special date night in Frisco?</strong> Finding the right restaurant is about more than just food, it's about creating an atmosphere where you can connect, celebrate, and make memories together. Whether you're looking for an anniversary dinner, a first date, or just a romantic escape from the everyday, Frisco offers some truly magical dining experiences. And if you're craving <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">hibachi experience</Link> combined with <Link href="/blog/best-sushi-frisco" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">best sushi in Frisco</Link>, we know exactly where you should go.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/20 to-warm-ivory border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "Date night isn't just about the meal—it's about the moment. It's the laughter across the table, the surprise of a perfectly crafted dish, the sparkle of genuine connection. That's what we create at Jinbeh."
+                                            "Date night isn't just about the meal, it's about the moment. It's the laughter across the table, the surprise of a perfectly crafted dish, the sparkle of genuine connection. That's what we create at Jinbeh."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Frisco has one of the highest concentrations of date-night restaurants in North Texas. Jinbeh has been a couples' favorite since 1988, with chefs who adjust the experience — more intimate for anniversaries, more playful for first dates."
+                                        fact="Frisco has one of the highest concentrations of date-night restaurants in North Texas. Jinbeh has been a couples' favorite for decades, with chefs who adjust the experience, more intimate for anniversaries, more playful for first dates."
                                         source="DFW Dining Guide"
                                     />
 
@@ -300,12 +300,12 @@ export default function DateNightRestaurantsFrisco() {
                                     </p>
 
                                     <ul className="space-y-3">
-                                        <li><strong>Interactive Hibachi Theater</strong> — Watch your chef create magic right in front of you. It's entertaining, engaging, and gives you something to talk about.</li>
-                                        <li><strong>Intimate Ambiance</strong> — Soft lighting, warm colors, and thoughtful design make every table feel special.</li>
-                                        <li><strong>Fresh, Premium Ingredients</strong> — We source the finest sushi-grade fish and premium proteins, ensuring every bite is exceptional.</li>
-                                        <li><strong>Personalized Service</strong> — Our team understands that this night matters. We treat every couple like VIPs.</li>
-                                        <li><strong>Sake & Beverage Expertise</strong> — Curated sake selections at our <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> and expert pairings elevate the entire experience.</li>
-                                        <li><strong>Flexible Dining Options</strong> — From hibachi chef's tables to quiet sushi bar seating, choose the vibe that suits your mood.</li>
+                                        <li><strong>Interactive Hibachi Theater</strong>, Watch your chef create magic right in front of you. It's entertaining, engaging, and gives you something to talk about.</li>
+                                        <li><strong>Intimate Ambiance</strong>, Soft lighting, warm colors, and thoughtful design make every table feel special.</li>
+                                        <li><strong>Fresh, Premium Ingredients</strong>, We source the finest sushi-grade fish and premium proteins, ensuring every bite is exceptional.</li>
+                                        <li><strong>Personalized Service</strong>, Our team understands that this night matters. We treat every couple like VIPs.</li>
+                                        <li><strong>Sake & Beverage Expertise</strong>, Curated sake selections at our <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> and expert pairings elevate the entire experience.</li>
+                                        <li><strong>Flexible Dining Options</strong>, From hibachi chef's tables to quiet sushi bar seating, choose the vibe that suits your mood.</li>
                                     </ul>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -313,7 +313,7 @@ export default function DateNightRestaurantsFrisco() {
                                     </h2>
 
                                     <p>
-                                        A great date night at Jinbeh unfolds like a performance. Your evening begins the moment you walk in—greeted warmly, seated thoughtfully, and guided through an experience that balances culinary artistry with genuine connection. Enjoy our <Link href="/menu" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">full menu</Link> of premium options. Here's what makes it special:
+                                        A great date night at Jinbeh unfolds like a performance. Your evening begins the moment you walk in, greeted warmly, seated thoughtfully, and guided through an experience that balances culinary artistry with genuine connection. Enjoy our <Link href="/menu" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">full menu</Link> of premium options. Here's what makes it special:
                                     </p>
                                 </div>
 
@@ -324,7 +324,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <span className="text-4xl flex-shrink-0">🌟</span>
                                             <div>
                                                 <h3 className="text-xl font-heading font-bold mb-2">Arrival & Seating</h3>
-                                                <p className="text-white/90">Arrive to a warm welcome and intimate seating. Share a cozy hibachi table or enjoy quiet sushi bar seating—your choice sets the tone.</p>
+                                                <p className="text-white/90">Arrive to a warm welcome and intimate seating. Share a cozy hibachi table or enjoy quiet sushi bar seating, your choice sets the tone.</p>
                                             </div>
                                         </div>
 
@@ -340,7 +340,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <span className="text-4xl flex-shrink-0">🔥</span>
                                             <div>
                                                 <h3 className="text-xl font-heading font-bold mb-2">Hibachi Magic</h3>
-                                                <p className="text-white/90">Your chef performs right before your eyes—sizzling proteins, flaming fried rice, and theatrical flair. It's entertaining and unforgettable.</p>
+                                                <p className="text-white/90">Your chef performs right before your eyes, sizzling proteins, flaming fried rice, and theatrical flair. It's entertaining and unforgettable.</p>
                                             </div>
                                         </div>
 
@@ -348,7 +348,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <span className="text-4xl flex-shrink-0">🍶</span>
                                             <div>
                                                 <h3 className="text-xl font-heading font-bold mb-2">Perfect Pairings</h3>
-                                                <p className="text-white/90">Our <Link href="/blog/sake-pairing-guide" className="text-white hover:text-warm-ivory transition-colors font-medium">sake pairing</Link> experts will recommend perfect pairings—premium sake, craft beers, or curated wines to complement your meal.</p>
+                                                <p className="text-white/90">Our <Link href="/blog/sake-pairing-guide" className="text-white hover:text-warm-ivory transition-colors font-medium">sake pairing</Link> experts will recommend perfect pairings, premium sake, craft beers, or curated wines to complement your meal.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -369,9 +369,9 @@ export default function DateNightRestaurantsFrisco() {
                                     <div className="bg-warm-ivory rounded-2xl p-6 border-2 border-soft-gold">
                                         <h3 className="text-xl font-heading font-bold text-charcoal mb-4">🌸 The Romance Starter</h3>
                                         <div className="space-y-2 text-charcoal/80">
-                                            <p><strong>Fresh Sashimi Platter</strong> — Premium cuts of salmon, tuna, and white fish</p>
-                                            <p><strong>Edamame</strong> — Perfectly salted, ready to share</p>
-                                            <p><strong>Cucumber Salad</strong> — Fresh, light, and refreshing</p>
+                                            <p><strong>Fresh Sashimi Platter</strong>, Premium cuts of salmon, tuna, and white fish</p>
+                                            <p><strong>Edamame</strong>, Perfectly salted, ready to share</p>
+                                            <p><strong>Cucumber Salad</strong>, Fresh, light, and refreshing</p>
                                             <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: First bites, light conversation, setting the mood</p>
                                         </div>
                                     </div>
@@ -379,9 +379,9 @@ export default function DateNightRestaurantsFrisco() {
                                     <div className="bg-warm-ivory rounded-2xl p-6 border-2 border-accent-red">
                                         <h3 className="text-xl font-heading font-bold text-charcoal mb-4">💕 The Signature Hibachi</h3>
                                         <div className="space-y-2 text-charcoal/80">
-                                            <p><strong>Premium Steak or Filet Mignon</strong> — Cooked to perfection on the teppan</p>
-                                            <p><strong>Lobster Tail</strong> — Tender and buttery</p>
-                                            <p><strong>Fried Rice & Vegetables</strong> — With theatrical flair</p>
+                                            <p><strong>Premium Steak or Filet Mignon</strong>, Cooked to perfection on the teppan</p>
+                                            <p><strong>Lobster Tail</strong>, Tender and buttery</p>
+                                            <p><strong>Fried Rice & Vegetables</strong>, With theatrical flair</p>
                                             <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: Main course, the chef's performance, shared excitement</p>
                                         </div>
                                     </div>
@@ -389,9 +389,9 @@ export default function DateNightRestaurantsFrisco() {
                                     <div className="bg-warm-ivory rounded-2xl p-6 border-2 border-deep-indigo">
                                         <h3 className="text-xl font-heading font-bold text-charcoal mb-4">🍣 The Sushi Lover's Dream</h3>
                                         <div className="space-y-2 text-charcoal/80">
-                                            <p><strong>Chef's Special Roll</strong> — Unique flavors you can't get anywhere else</p>
-                                            <p><strong>Spicy Tuna & Dragon Roll</strong> — Bold and sophisticated</p>
-                                            <p><strong>Nigiri Selection</strong> — Hand-selected by our sushi masters</p>
+                                            <p><strong>Chef's Special Roll</strong>, Unique flavors you can't get anywhere else</p>
+                                            <p><strong>Spicy Tuna & Dragon Roll</strong>, Bold and sophisticated</p>
+                                            <p><strong>Nigiri Selection</strong>, Hand-selected by our sushi masters</p>
                                             <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: Sushi enthusiasts, adventurous palates, intimate conversations</p>
                                         </div>
                                     </div>
@@ -399,9 +399,9 @@ export default function DateNightRestaurantsFrisco() {
                                     <div className="bg-warm-ivory rounded-2xl p-6 border-2 border-soft-gold">
                                         <h3 className="text-xl font-heading font-bold text-charcoal mb-4">✨ The Perfect Finale</h3>
                                         <div className="space-y-2 text-charcoal/80">
-                                            <p><strong>Green Tea or Mango Cheesecake</strong> — Light and refreshing</p>
-                                            <p><strong>Sake Bomb or Premium Sake</strong> — Toast to the evening</p>
-                                            <p><strong>Japanese Ice Cream</strong> — Sweet ending to a sweet night</p>
+                                            <p><strong>Green Tea or Mango Cheesecake</strong>, Light and refreshing</p>
+                                            <p><strong>Sake Bomb or Premium Sake</strong>, Toast to the evening</p>
+                                            <p><strong>Japanese Ice Cream</strong>, Sweet ending to a sweet night</p>
                                             <p className="text-sm italic text-charcoal/80 mt-3">Perfect for: Sweet finale, celebration, ending on a high note</p>
                                         </div>
                                     </div>
@@ -424,7 +424,7 @@ export default function DateNightRestaurantsFrisco() {
                                             <span className="text-3xl">🌅</span>
                                             <h3 className="text-lg font-heading font-bold text-charcoal">Early Evening (5:30-6:30 PM)</h3>
                                         </div>
-                                        <p className="text-charcoal/80">Best for: Pre-theater or concert dates, early risers, a more relaxed pace. Start with drinks during <Link href="/happy-hour" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour</Link> before dinner — golden hour lighting creates stunning ambiance.</p>
+                                        <p className="text-charcoal/80">Best for: Pre-theater or concert dates, early risers, a more relaxed pace. Start with drinks during <Link href="/happy-hour" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">happy hour</Link> before dinner, golden hour lighting creates stunning ambiance.</p>
                                     </div>
 
                                     <div className="bg-white border-l-4 border-soft-gold rounded-r-xl p-6">
@@ -463,30 +463,30 @@ export default function DateNightRestaurantsFrisco() {
 
                                     <ol className="space-y-4">
                                         <li>
-                                            <strong>Make a Reservation Early</strong> — Book at least 1-2 weeks ahead, especially for weekends. Let us know it's a special occasion and we'll add extra touches.
+                                            <strong>Make a Reservation Early</strong>, Book at least 1-2 weeks ahead, especially for weekends. Let us know it's a special occasion and we'll add extra touches.
                                         </li>
                                         <li>
-                                            <strong>Dress to Impress</strong> — Jinbeh has an upscale-casual vibe. Looking great makes you feel great, and it shows you care about the evening.
+                                            <strong>Dress to Impress</strong>, Jinbeh has an upscale-casual vibe. Looking great makes you feel great, and it shows you care about the evening.
                                         </li>
                                         <li>
-                                            <strong>Put Away the Phone</strong> — Seriously. This time is about each other. Take one photo to remember, then enjoy the moment.
+                                            <strong>Put Away the Phone</strong>, Seriously. This time is about each other. Take one photo to remember, then enjoy the moment.
                                         </li>
                                         <li>
-                                            <strong>Ask About Special Requests</strong> — Celebrating an anniversary? First date? Let our team know. We love adding special touches—a complimentary dessert, <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing recommendations</Link>, or a quiet table.
+                                            <strong>Ask About Special Requests</strong>, Celebrating an anniversary? First date? Let our team know. We love adding special touches, a complimentary dessert, <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">sake pairing recommendations</Link>, or a quiet table.
                                         </li>
                                         <li>
-                                            <strong>Arrive Hungry</strong> — Our portions are generous and meant for sharing. Come ready to savor and linger.
+                                            <strong>Arrive Hungry</strong>, Our portions are generous and meant for sharing. Come ready to savor and linger.
                                         </li>
                                         <li>
-                                            <strong>Embrace the Experience</strong> — The hibachi is interactive and sometimes playful. Laugh, enjoy, be present. This is what makes date night special.
+                                            <strong>Embrace the Experience</strong>, The hibachi is interactive and sometimes playful. Laugh, enjoy, be present. This is what makes date night special.
                                         </li>
                                         <li>
-                                            <strong>Ask Your Chef Questions</strong> — Our chefs love sharing their craft. Learn about ingredients, technique, and the stories behind the dishes.
+                                            <strong>Ask Your Chef Questions</strong>, Our chefs love sharing their craft. Learn about ingredients, technique, and the stories behind the dishes.
                                         </li>
                                     </ol>
 
                                     <ProTip variant="insider">
-                                        <strong>Date night insider tip:</strong> Tuesday and Wednesday evenings are the most intimate — fewer crowds, more attention from your chef. Ask your server about sake pairing recommendations to elevate the evening. <Link href="/reservations" className="text-accent-red hover:underline">Book your date night →</Link>
+                                        <strong>Date night insider tip:</strong> Tuesday and Wednesday evenings are the most intimate, fewer crowds, more attention from your chef. Ask your server about sake pairing recommendations to elevate the evening. <Link href="/reservations" className="text-accent-red hover:underline">Book your date night →</Link>
                                     </ProTip>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -568,7 +568,7 @@ export default function DateNightRestaurantsFrisco() {
                                         </summary>
                                         <div className="px-6 pb-6 text-charcoal/80">
                                             <p>
-                                                We recommend sharing hibachi entrees complemented by fresh sushi rolls and sake pairings. Popular couples combos include our premium sashimi platter, chef's special rolls, and a selection of sake flights. For the ultimate experience, ask our team about romantic pairings when you arrive—we love personalizing the experience.
+                                                We recommend sharing hibachi entrees complemented by fresh sushi rolls and sake pairings. Popular couples combos include our premium sashimi platter, chef's special rolls, and a selection of sake flights. For the ultimate experience, ask our team about romantic pairings when you arrive, we love personalizing the experience.
                                             </p>
                                         </div>
                                     </details>

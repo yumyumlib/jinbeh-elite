@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "What is the easiest sushi roll for beginners to make?",
     answer:
-      "Welcome to the world of sushi! The California Roll is the best starting point. It uses crab meat, avocado, and cucumber—no raw fish needed. Vegetable rolls are even simpler. Start with what feels comfortable, then explore.",
+      "Welcome to the world of sushi! The California Roll is the best starting point. It uses crab meat, avocado, and cucumber, no raw fish needed. Vegetable rolls are even simpler. Start with what feels comfortable, then explore.",
   },
   {
     question: "Do I need expensive equipment to make sushi?",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "What type of fish should I use for homemade sushi?",
     answer:
-      "For beginners, start with cooked proteins like crab or shrimp. When you're ready for raw fish, buy sushi-grade fish from a trusted fishmonger. Many great rolls use no fish at all—vegetables, tempura, and cooked options are just as delicious.",
+      "For beginners, start with cooked proteins like crab or shrimp. When you're ready for raw fish, buy sushi-grade fish from a trusted fishmonger. Many great rolls use no fish at all, vegetables, tempura, and cooked options are just as delicious.",
   },
   {
     question: "Can I make sushi rice without a rice cooker?",
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     question: "How long does it take to learn to make sushi at home?",
-    answer: "You can make basic rolls on your first try! Expect your first few attempts to be imperfect—that's normal. With practice, most home cooks feel confident making California and veggie rolls within 3-5 sessions. Mastering rice consistency takes a bit longer. Professional sushi chefs train for years, but delicious homemade sushi is absolutely achievable for beginners.",
+    answer: "You can make basic rolls on your first try! Expect your first few attempts to be imperfect, that's normal. With practice, most home cooks feel confident making California and veggie rolls within 3-5 sessions. Mastering rice consistency takes a bit longer. Professional sushi chefs train for years, but delicious homemade sushi is absolutely achievable for beginners.",
   },
 ];
 
@@ -168,7 +168,7 @@ export default function BeginnerSushiTipsPage() {
       />
       <ArticleLayout
         title="Beginner Sushi Tips: Easy Homemade Sushi Guide"
-        metaDescription="Master the art of sushi-making at home with our comprehensive beginner's guide. Learn essential techniques, rolling methods, and recipes for perfect sushi rolls—even on your first try."
+        metaDescription="Master the art of sushi-making at home with our comprehensive beginner's guide. Learn essential techniques, rolling methods, and recipes for perfect sushi rolls, even on your first try."
         heroImage="/images/blog/16-C060324-6670.jpg"
         heroAlt="Beautifully arranged homemade sushi rolls for beginners"
         category="Japanese Cuisine"
@@ -181,8 +181,6 @@ export default function BeginnerSushiTipsPage() {
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Beginner Sushi Tips" }]} />
       </div>
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-          Beginner Sushi Tips: Easy Homemade Sushi Guide
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -205,8 +203,9 @@ export default function BeginnerSushiTipsPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
-
-        </h1>
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Beginner Sushi Tips: Easy Homemade Sushi Guide
+      </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
                 src="/images/photoshoot/sushi-tower.jpg"
@@ -235,7 +234,7 @@ export default function BeginnerSushiTipsPage() {
         </p>
 
         <DidYouKnow
-          fact="The word 'sushi' doesn't actually refer to fish — it comes from the Japanese word 'su' (vinegar) and 'shi' (rice). Sushi literally means 'vinegared rice.' The seasoned rice is considered the soul of sushi, and master chefs spend years perfecting their rice recipe before moving on to fish preparation."
+          fact="The word 'sushi' doesn't actually refer to fish, it comes from the Japanese word 'su' (vinegar) and 'shi' (rice). Sushi literally means 'vinegared rice.' The seasoned rice is considered the soul of sushi, and master chefs spend years perfecting their rice recipe before moving on to fish preparation."
           source="Japanese Culinary Academy"
         />
 
@@ -272,7 +271,7 @@ export default function BeginnerSushiTipsPage() {
         </p>
 
         <p>
-          <strong>Rice Vinegar:</strong> This is essential for seasoning the rice, giving it the signature tangy flavor that defines sushi. Don't skip this step—it's what makes sushi taste like sushi.
+          <strong>Rice Vinegar:</strong> This is essential for seasoning the rice, giving it the signature tangy flavor that defines sushi. Don't skip this step, it's what makes sushi taste like sushi.
         </p>
 
         <p>
@@ -304,7 +303,7 @@ export default function BeginnerSushiTipsPage() {
         <h3>Cooking the Rice</h3>
 
         <p>
-          <strong>Rinse the Rice:</strong> Begin by washing the rice under cold water until the water runs clear. This step is crucial as it removes excess starch, preventing the rice from becoming too sticky or gummy. Spend a few minutes rinsing—it's worth the effort.
+          <strong>Rinse the Rice:</strong> Begin by washing the rice under cold water until the water runs clear. This step is crucial as it removes excess starch, preventing the rice from becoming too sticky or gummy. Spend a few minutes rinsing, it's worth the effort.
         </p>
 
         <p>
@@ -337,7 +336,7 @@ export default function BeginnerSushiTipsPage() {
 
         <MenuItemCard item={{
           name: "California Roll",
-          description: "Jinbeh's beginner-friendly classic — crab meat, creamy avocado, and crisp cucumber wrapped inside-out. Guests new to sushi call it 'the perfect starting point' with mild flavors and familiar ingredients.",
+          description: "Jinbeh's beginner-friendly classic, crab meat, creamy avocado, and crisp cucumber wrapped inside-out. Guests new to sushi call it 'the perfect starting point' with mild flavors and familiar ingredients.",
           badge: "Beginner Friendly",
           menuLink: "/frisco/sushi-rolls"
         }} />
@@ -345,7 +344,7 @@ export default function BeginnerSushiTipsPage() {
         <h3>Vegetable Roll</h3>
 
         <p>
-          For those who prefer plant-based options, a vegetable roll can include ingredients like carrots, cucumber, and avocado. It's colorful, healthy, and easy to make, offering a refreshing taste that appeals to vegetarians and omnivores alike. This is the easiest roll to start with—no fish, just fresh veggies.
+          For those who prefer plant-based options, a vegetable roll can include ingredients like carrots, cucumber, and avocado. It's colorful, healthy, and easy to make, offering a refreshing taste that appeals to vegetarians and omnivores alike. This is the easiest roll to start with, no fish, just fresh veggies.
         </p>
 
         <p>
@@ -381,11 +380,11 @@ export default function BeginnerSushiTipsPage() {
         </p>
 
         <p>
-          <strong>Add Fillings:</strong> Arrange your chosen fillings in a horizontal line across the center of the rice. Be mindful not to overfill, as this can make rolling difficult. Less is more—you can always make more rolls.
+          <strong>Add Fillings:</strong> Arrange your chosen fillings in a horizontal line across the center of the rice. Be mindful not to overfill, as this can make rolling difficult. Less is more, you can always make more rolls.
         </p>
 
         <p>
-          <strong>Roll the Sushi:</strong> Lift the mat and carefully roll the sushi away from you, applying gentle pressure to keep it tight. Use the mat to help shape the roll as you go. The mat should stay in place as you roll—don't roll the mat into the sushi!
+          <strong>Roll the Sushi:</strong> Lift the mat and carefully roll the sushi away from you, applying gentle pressure to keep it tight. Use the mat to help shape the roll as you go. The mat should stay in place as you roll, don't roll the mat into the sushi!
         </p>
 
         <p>
@@ -461,7 +460,7 @@ export default function BeginnerSushiTipsPage() {
         <h2>When to Visit Professional Sushi Chefs</h2>
 
         <ProTip variant="insider">
-          <strong>Learn by watching the pros:</strong> Jinbeh regulars say sitting at the sushi bar is the best way to learn — you'll watch our chefs hand-roll each piece and they love explaining techniques to curious guests. Reviewers rave about the Volcano Roll and Spider Roll as must-tries when you visit. It's like a free sushi class with every meal! <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+          <strong>Learn by watching the pros:</strong> Jinbeh regulars say sitting at the sushi bar is the best way to learn, you'll watch our chefs hand-roll each piece and they love explaining techniques to curious guests. Reviewers rave about the Volcano Roll and Spider Roll as must-tries when you visit. It's like a free sushi class with every meal! <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
         </ProTip>
 
         <p>
@@ -483,7 +482,7 @@ export default function BeginnerSushiTipsPage() {
         </p>
 
         <p>
-          Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create—perfect or not!
+          Remember, every expert sushi chef started as a beginner. Be patient with yourself, enjoy the process, and celebrate each roll you create, perfect or not!
         </p>
 
         <PillarCTA type="vip" />

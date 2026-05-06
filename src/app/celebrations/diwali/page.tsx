@@ -45,7 +45,7 @@ const faqSchema = {
       name: "Is Jinbeh a good place to celebrate Diwali?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! While we're a Japanese restaurant, Diwali is a celebration of light, family, and new beginnings — and our hibachi flames create a perfect festive atmosphere. Many families choose Jinbeh for Diwali dinners to gather with loved ones over a special meal.",
+        text: "Yes! While we're a Japanese restaurant, Diwali is a celebration of light, family, and new beginnings, and our hibachi flames create a perfect festive atmosphere. Many families choose Jinbeh for Diwali dinners to gather with loved ones over a special meal.",
       },
     },
     {
@@ -237,19 +237,19 @@ export default function DiwaliPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Vegetable & Tofu Hibachi — fresh and flavorful
+                      Vegetable & Tofu Hibachi, fresh and flavorful
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Hibachi Shrimp — fresh seafood delight
+                      Hibachi Shrimp, fresh seafood delight
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Filet Mignon — premium celebration cut
+                      Filet Mignon, premium celebration cut
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Lobster Tail — festive and indulgent
+                      Lobster Tail, festive and indulgent
                     </li>
                   </ul>
                 </div>
@@ -258,19 +258,19 @@ export default function DiwaliPage() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Vegetable Rolls — cucumber, avocado, asparagus
+                      Vegetable Rolls, cucumber, avocado, asparagus
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Edamame — classic appetizer
+                      Edamame, classic appetizer
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Miso Soup — warm and comforting
+                      Miso Soup, warm and comforting
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-soft-gold">✓</span>
-                      Fresh Sashimi — for seafood lovers
+                      Fresh Sashimi, for seafood lovers
                     </li>
                   </ul>
                 </div>

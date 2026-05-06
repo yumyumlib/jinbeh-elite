@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function SakeBombFriscoPage() {
-  const item = { ...getMenuItem("sake-bomb", "cocktails")!, jinbehStory: "Sake tradition at Jinbeh goes back decades. Our premium unfiltered sake bottle must be shaken before pouring — the white cloud inside is rice sediment from the authentic unfiltered process." };
+  const item = { ...getMenuItem("sake-bomb", "cocktails")!, jinbehStory: "Sake tradition at Jinbeh goes back decades. Our premium unfiltered sake bottle must be shaken before pouring, the white cloud inside is rice sediment from the authentic unfiltered process." };
   const location = locations["frisco"];
 
   return (

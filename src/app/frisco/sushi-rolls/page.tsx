@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Frisco Japanese Restaurant",
-  description: "Fresh sushi rolls at Jinbeh Frisco — Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Hand-crafted daily near Stonebriar Centre. Since 1988.",
+  description: "Fresh sushi rolls at Jinbeh Frisco, Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Hand-crafted daily near Stonebriar Centre. Family-owned since 1988.",
   keywords: ["sushi rolls frisco", "best sushi rolls frisco", "sushi rolls menu frisco", "jinbeh sushi rolls", "japanese sushi rolls frisco", "sushi rolls", "specialty rolls", "maki", "uramaki"],
   openGraph: {
     title: "Sushi Rolls Menu | Jinbeh Frisco",
@@ -212,7 +212,7 @@ export default function SushiRollsFriscoPage() {
                 Jinbeh Frisco Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Sushi Rolls — Frisco
+                Sushi Rolls, Frisco
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Craftsmanship, freshness, artistry. Explore our 17 sushi rolls options,
@@ -248,7 +248,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Dragon_Roll.jpg"
-                    alt="Dragon Roll — eel and cucumber topped with avocado and eel sauce"
+                    alt="Dragon Roll, eel and cucumber topped with avocado and eel sauce"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -348,7 +348,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Rainbow_Roll.jpg"
-                    alt="Rainbow Roll — California roll topped with assorted sashimi"
+                    alt="Rainbow Roll, California roll topped with assorted sashimi"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -373,7 +373,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Spider_Roll.jpg"
-                    alt="Spider Roll — soft shell crab with cucumber and spicy mayo"
+                    alt="Spider Roll, soft shell crab with cucumber and spicy mayo"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -424,7 +424,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Volcano_Roll.jpg"
-                    alt="Volcano Roll — spicy crab and avocado with baked seafood topping"
+                    alt="Volcano Roll, spicy crab and avocado with baked seafood topping"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -449,7 +449,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Golden_Tiger_Roll.jpg"
-                    alt="Tiger Roll — shrimp tempura with spicy tuna and jalapeño"
+                    alt="Tiger Roll, shrimp tempura with spicy tuna and jalapeño"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -474,7 +474,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Butterfly_Kiss.jpg"
-                    alt="Butterfly Kiss Roll — house specialty with cream cheese and crab"
+                    alt="Butterfly Kiss Roll, house specialty with cream cheese and crab"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -500,7 +500,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Ahi_Tower.jpg"
-                    alt="Ahi Tuna Tower — layered ahi tuna, avocado, and crispy wonton"
+                    alt="Ahi Tuna Tower, layered ahi tuna, avocado, and crispy wonton"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -525,7 +525,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Philadelphia_Roll.jpg"
-                    alt="Philadelphia Roll — smoked salmon with cream cheese and cucumber"
+                    alt="Philadelphia Roll, smoked salmon with cream cheese and cucumber"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -550,7 +550,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Spicy_Tuna_Roll.jpg"
-                    alt="Spicy Tuna Roll — fresh tuna with spicy mayo and scallions"
+                    alt="Spicy Tuna Roll, fresh tuna with spicy mayo and scallions"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -575,7 +575,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/California_Roll.jpg"
-                    alt="California Roll — crab, avocado, and cucumber classic"
+                    alt="California Roll, crab, avocado, and cucumber classic"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -600,7 +600,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Shrimp_Tempura_Roll.jpg"
-                    alt="Shrimp Tempura Roll — crispy shrimp tempura with avocado"
+                    alt="Shrimp Tempura Roll, crispy shrimp tempura with avocado"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -625,7 +625,7 @@ export default function SushiRollsFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Fire_Cracker_Roll.jpg"
-                    alt="Vegas Roll — deep-fried roll with spicy crab and cream cheese"
+                    alt="Vegas Roll, deep-fried roll with spicy crab and cream cheese"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -685,13 +685,13 @@ export default function SushiRollsFriscoPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" target="_blank" rel="noopener noreferrer"
-                  className="bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl shadow-lg transition-colors"
                 >
                   Reserve a Table
                 </Link>
                 <a
                   href="tel:2146191200"
-                  className="bg-white/20 text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
+                  className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
                 </a>

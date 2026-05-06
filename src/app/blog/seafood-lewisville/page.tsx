@@ -100,7 +100,7 @@ const faqSchema = {
             name: "What is the freshest seafood to order at a Japanese restaurant?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Sashimi and nigiri sushi showcase the freshest fish since they are served raw with minimal preparation. At Jinbeh, our chefs select the best fish daily—ask about the day's specials for the freshest options.",
+                text: "Sashimi and nigiri sushi showcase the freshest fish since they are served raw with minimal preparation. At Jinbeh, our chefs select the best fish daily, ask about the day's specials for the freshest options.",
             },
         },
     ],
@@ -271,7 +271,7 @@ export default function SeafoodLewisville() {
                                             "Lewisville's seafood restaurants have elevated the dining scene in our community. We're proud
                                             to be part of that growth, bringing authentic Japanese seafood traditions to North Texas since 1988."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Jinbeh Family</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -279,13 +279,13 @@ export default function SeafoodLewisville() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Lewisville Lake, covering 29,000 acres, has made Lewisville a surprising inland hub for seafood lovers. The DFW metroplex receives over 40 tons of fresh seafood daily via air freight from both coasts and Japan—the same supply chain that serves coastal cities. As a result, restaurants like Jinbeh in Lewisville can serve sashimi-grade fish that was swimming in the ocean just 24-48 hours earlier."
+                                        fact="Lewisville Lake, covering 29,000 acres, has made Lewisville a surprising inland hub for seafood lovers. The DFW metroplex receives over 40 tons of fresh seafood daily via air freight from both coasts and Japan, the same supply chain that serves coastal cities. As a result, restaurants like Jinbeh in Lewisville can serve sashimi-grade fish that was swimming in the ocean just 24-48 hours earlier."
                                         source="DFW International Airport Cargo Report"
                                     />
 
                                     <p>
                                         Lewisville has quietly developed into a destination for quality seafood dining. The city's diverse
-                                        restaurants reflect various cuisines and preparations—from traditional Japanese to Cajun-inspired,
+                                        restaurants reflect various cuisines and preparations, from traditional Japanese to Cajun-inspired,
                                         from casual to upscale. Here's your guide to the best options.
                                     </p>
 
@@ -431,7 +431,7 @@ export default function SeafoodLewisville() {
                                     <p>
                                         Start with sashimi or sushi to experience the fish at its purest. Try signature rolls that showcase
                                         the chef's style, then explore cooked options like grilled fish or hibachi if desired. Don't miss
-                                        exploring different preparations of the same fish—how a chef prepares salmon differs between
+                                        exploring different preparations of the same fish, how a chef prepares salmon differs between
                                         restaurants.
                                     </p>
 
@@ -469,7 +469,7 @@ export default function SeafoodLewisville() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Lewisville seafood insider tip:</strong> At Jinbeh Lewisville, ask for the "chef's selection sashimi"—our chefs pick the freshest fish of the day and you'll get varieties you might not see on the regular menu. Tuesday and Wednesday evenings tend to be less crowded, giving you more time to chat with the sushi chefs. Pair your seafood with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for the ultimate experience. <a href="tel:2144882224" className="text-accent-red hover:underline">Call Lewisville: (214) 488-2224</a>
+                                        <strong>Lewisville seafood insider tip:</strong> At Jinbeh Lewisville, ask for the "chef's selection sashimi",our chefs pick the freshest fish of the day and you'll get varieties you might not see on the regular menu. Tuesday and Wednesday evenings tend to be less crowded, giving you more time to chat with the sushi chefs. Pair your seafood with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for the ultimate experience. <a href="tel:2144882224" className="text-accent-red hover:underline">Call Lewisville: (214) 488-2224</a>
                                     </ProTip>
 
                                     <PillarCTA type="catering" />

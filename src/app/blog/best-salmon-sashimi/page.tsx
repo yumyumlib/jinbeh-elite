@@ -46,11 +46,11 @@ const articleSchema = {
 const faqs = [
     {
         question: "What makes fresh salmon sashimi special?",
-        answer: "Fresh and flavorful—that's our promise. Great sashimi has a rich, buttery taste and silky texture. The color should be vibrant orange. Look for sushi-grade or sashimi-grade labels at markets to ensure safety for raw fish.",
+        answer: "Fresh and flavorful, that's our promise. Great sashimi has a rich, buttery taste and silky texture. The color should be vibrant orange. Look for sushi-grade or sashimi-grade labels at markets to ensure safety for raw fish.",
     },
     {
         question: "Where can I buy sushi-grade salmon?",
-        answer: "Visit local fish markets, Whole Foods, Costco, or online seafood retailers. Ask for sashimi-grade fish and ask about freshness. Building a relationship with your fishmonger helps—they'll save the best pieces for you.",
+        answer: "Visit local fish markets, Whole Foods, Costco, or online seafood retailers. Ask for sashimi-grade fish and ask about freshness. Building a relationship with your fishmonger helps, they'll save the best pieces for you.",
     },
     {
         question: "Is Jinbeh good for salmon sashimi?",
@@ -264,11 +264,11 @@ export default function BestSalmonSashimi() {
                                             is paramount. We source premium salmon daily and handle it with care to preserve
                                             its natural flavors."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Sushi Chefs</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Jinbeh Sushi Chefs</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Salmon wasn't traditionally used in Japanese sashimi until the 1980s! Japanese chefs considered Pacific salmon too fatty and prone to parasites. It was actually a Norwegian marketing campaign called 'Project Japan' that convinced Japanese restaurants to try Atlantic salmon — and it became so popular that salmon is now the #1 sushi topping in Japan, surpassing tuna."
+                                        fact="Salmon wasn't traditionally used in Japanese sashimi until the 1980s! Japanese chefs considered Pacific salmon too fatty and prone to parasites. It was actually a Norwegian marketing campaign called 'Project Japan' that convinced Japanese restaurants to try Atlantic salmon, and it became so popular that salmon is now the #1 sushi topping in Japan, surpassing tuna."
                                         source="Norwegian Seafood Council & Japan Times"
                                     />
 
@@ -312,7 +312,7 @@ export default function BestSalmonSashimi() {
                                         season: "Year-round (peak: September–November)",
                                         flavor: "Buttery, rich, subtle sweetness with clean omega-3 finish",
                                         pairsWith: "Light soy, fresh wasabi, shiso leaf, Junmai sake",
-                                        jinbehDish: "Salmon Sashimi — sliced to order at the sushi bar",
+                                        jinbehDish: "Salmon Sashimi, sliced to order at the sushi bar",
                                         jinbehDishLink: "/frisco/sashimi/salmon-sashimi"
                                     }} />
 
@@ -335,7 +335,7 @@ export default function BestSalmonSashimi() {
 
                                     <p>
                                         Local fish markets are your best bet for fresh, sushi-grade salmon. Look for fish labeled
-                                        "sushi-grade" or "sashimi-grade"—this designation guarantees the fish has been handled safely
+                                        "sushi-grade" or "sashimi-grade",this designation guarantees the fish has been handled safely
                                         for raw consumption. Build relationships with fishmongers who can recommend seasonal options
                                         and provide insights on storage.
                                     </p>
@@ -346,8 +346,8 @@ export default function BestSalmonSashimi() {
 
                                     <p>
                                         Stores like Whole Foods and Costco maintain high quality standards and offer dedicated
-                                        seafood counters. The convenience of one-stop shopping—finding everything from rice to
-                                        wasabi—makes these excellent options for home preparation.
+                                        seafood counters. The convenience of one-stop shopping, finding everything from rice to
+                                        wasabi, makes these excellent options for home preparation.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -446,7 +446,7 @@ export default function BestSalmonSashimi() {
                                     </p>
 
                                     <ProTip variant="insider">
-                                        <strong>Sashimi lover's secret:</strong> Sit at the sushi bar at Jinbeh to watch our chefs slice your salmon to order — reviewers say it's "melt-in-your-mouth" fresh. Ask for the sashimi sampler plate to try salmon alongside tuna and yellowtail. Regulars recommend pairing it with a cold Junmai sake for the ultimate experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                        <strong>Sashimi lover's secret:</strong> Sit at the sushi bar at Jinbeh to watch our chefs slice your salmon to order, reviewers say it's "melt-in-your-mouth" fresh. Ask for the sashimi sampler plate to try salmon alongside tuna and yellowtail. Regulars recommend pairing it with a cold Junmai sake for the ultimate experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
                                     </ProTip>
                                 </div>
 

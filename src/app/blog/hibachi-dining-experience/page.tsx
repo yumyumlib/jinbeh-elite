@@ -61,7 +61,7 @@ const faqs = [
   {
     question: "Is hibachi entertainment worth it for families?",
     answer:
-      "Absolutely! Families love it. Kids are amazed by the fire tricks, onion volcano, and chef's acrobatic spatula skills. The interactive experience keeps everyone engaged and entertained. It's not just a meal—it's a show. Parents love that kids stay engaged throughout dinner. Perfect for birthdays and celebrations!",
+      "Absolutely! Families love it. Kids are amazed by the fire tricks, onion volcano, and chef's acrobatic spatula skills. The interactive experience keeps everyone engaged and entertained. It's not just a meal, it's a show. Parents love that kids stay engaged throughout dinner. Perfect for birthdays and celebrations!",
   },
   {
     question: "How long does a hibachi dinner take?",
@@ -111,7 +111,7 @@ export default function HibachiDiningExperiencePage() {
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
-      keyTakeaway="Hibachi dining combines live chef performances (knife tricks, onion volcanoes, fire shows) with fresh grilled proteins and sides — all prepared at your table. Plan 90 minutes to 2 hours, make reservations for weekends, and come hungry for generous portions."
+      keyTakeaway="Hibachi dining combines live chef performances (knife tricks, onion volcanoes, fire shows) with fresh grilled proteins and sides, all prepared at your table. Plan 90 minutes to 2 hours, make reservations for weekends, and come hungry for generous portions."
     >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Dining Experience" }]} />
@@ -119,12 +119,9 @@ export default function HibachiDiningExperiencePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh for Your Hibachi Experience","acceptedAnswer":{"@type":"Answer","text":"When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. With locations in both Frisco and Lewisville, Jinbeh has been serving families and celebrations since 1988. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our sushi varieties and sushi for beginners options."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh for Your Hibachi Experience","acceptedAnswer":{"@type":"Answer","text":"When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. Jinbeh has been serving families and celebrations since 1988, with locations in Frisco and Lewisville today. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our sushi varieties and sushi for beginners options."}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi Restaurant Menu: Discover Flavor & Fun
-   
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -142,16 +139,18 @@ export default function HibachiDiningExperiencePage() {
                     ]
                 }) }}
             />
-   </h1>
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Restaurant Menu: Discover Flavor & Fun
+      </h1>
 
       <h2>The Art of Hibachi Dining</h2>
 
       <p>
-        Flames leap two feet off a 550-degree grill. A chef flips a shrimp into the air, catches it in his hat, and the whole table erupts. This is hibachi—and it's unlike any other dinner you'll have this year.
+        Flames leap two feet off a 550-degree grill. A chef flips a shrimp into the air, catches it in his hat, and the whole table erupts. This is hibachi, and it's unlike any other dinner you'll have this year.
       </p>
 
       <DidYouKnow
-        fact="Jinbeh has been serving authentic hibachi and sushi in the DFW area since 1988 — that's over 38 years of perfecting the craft. The word 'hibachi' literally means 'fire bowl' in Japanese, though the American-style tableside cooking is technically called 'teppanyaki.'"
+        fact="Jinbeh has been serving authentic hibachi and sushi in the DFW area since 1988, that's over 38 years of perfecting the craft. The word 'hibachi' literally means 'fire bowl' in Japanese, though the American-style tableside cooking is technically called 'teppanyaki.'"
         source="Jinbeh Japanese Restaurant, est. 1988"
       />
 
@@ -162,7 +161,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>Understanding the Hibachi Experience</h2>
 
       <p>
-        Hibachi dining is more than just a meal—it's an experience. In many hibachi restaurants, diners gather around large, flat-top grills where skilled chefs prepare and cook food right before their eyes. The chefs are not only culinary experts but also performers, dazzling guests with knife tricks, flaming onion volcanoes, and playful banter.
+        Hibachi dining is more than just a meal, it's an experience. In many hibachi restaurants, diners gather around large, flat-top grills where skilled chefs prepare and cook food right before their eyes. The chefs are not only culinary experts but also performers, dazzling guests with knife tricks, flaming onion volcanoes, and playful banter.
       </p>
 
       <Timeline
@@ -181,17 +180,17 @@ export default function HibachiDiningExperiencePage() {
           {
             icon: "🔥",
             title: "The Chef Arrives",
-            description: "Your hibachi chef fires up the 400°F teppan grill and begins the show — spatula juggling, egg tricks, and the famous Beating Heart."
+            description: "Your hibachi chef fires up the 400°F teppan grill and begins the show, spatula juggling, egg tricks, and the famous Beating Heart."
           },
           {
             icon: "🌋",
             title: "The Onion Volcano",
-            description: "Stacked onion rings erupt in a dramatic flame — the crowd-favorite moment. Kids and adults alike cheer every time."
+            description: "Stacked onion rings erupt in a dramatic flame, the crowd-favorite moment. Kids and adults alike cheer every time."
           },
           {
             icon: "🍳",
             title: "Fried Rice & Vegetables",
-            description: "Your chef prepares fried rice with egg and grilled vegetables (zucchini, onions, mushrooms) in house-made garlic butter — pre-made the day before for maximum flavor."
+            description: "Your chef prepares fried rice with egg and grilled vegetables (zucchini, onions, mushrooms) in house-made garlic butter, pre-made the day before for maximum flavor."
           },
           {
             icon: "🥩",
@@ -201,7 +200,7 @@ export default function HibachiDiningExperiencePage() {
           {
             icon: "🦐",
             title: "The Shrimp Toss",
-            description: "The grand finale — your chef tosses shrimp through the air for you to catch in your mouth. A signature Jinbeh moment!"
+            description: "The grand finale, your chef tosses shrimp through the air for you to catch in your mouth. A signature Jinbeh moment!"
           },
           {
             icon: "🍽️",
@@ -223,7 +222,7 @@ export default function HibachiDiningExperiencePage() {
           />
         </div>
         <p className="text-center text-sm text-charcoal/60 mt-3 italic">
-          Our signature yum yum sauce and spicy chili sauce — made in-house daily from family recipes
+          Our signature yum yum sauce and spicy chili sauce, made in-house daily from family recipes
         </p>
       </div>
 
@@ -260,7 +259,7 @@ export default function HibachiDiningExperiencePage() {
       </p>
 
       <ProTip variant="insider">
-        <strong>Planning your visit?</strong> Weekends fill up fast — call ahead to reserve, especially for groups of 4 or more. Jinbeh's hibachi tables seat 7–8 guests, so you might share the grill with another party. That's part of the fun! Frisco: (214) 619-1200 · Lewisville: (214) 488-2224.
+        <strong>Planning your visit?</strong> Weekends fill up fast, call ahead to reserve, especially for groups of 4 or more. Jinbeh's hibachi tables seat 7–8 guests, so you might share the grill with another party. That's part of the fun! Frisco: (214) 619-1200 · Lewisville: (214) 488-2224.
       </ProTip>
 
       <h2>Vegetarian & Plant-Based Options</h2>
@@ -310,7 +309,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>Finding Value in Your Hibachi Experience</h2>
 
       <p>
-        To find the best value, consider visiting during lunch hours when many hibachi restaurants offer discounted menus. Browse our <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch specials</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link> — the same high-quality ingredients and expert preparation as dinner entrees, but at a reduced price. Or stop by during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on drinks to complement your meal. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all options.
+        To find the best value, consider visiting during lunch hours when many hibachi restaurants offer discounted menus. Browse our <Link href="/lunch-specials" className="text-accent-red hover:underline">lunch specials</Link> at our <Link href="/frisco" className="text-accent-red hover:underline">Frisco location</Link>, the same high-quality ingredients and expert preparation as dinner entrees, but at a reduced price. Or stop by during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on drinks to complement your meal. Check our <Link href="/menu" className="text-accent-red hover:underline">full menu</Link> for all options.
       </p>
 
       <p>
@@ -324,7 +323,7 @@ export default function HibachiDiningExperiencePage() {
       <h2>Why Choose Jinbeh for Your Hibachi Experience</h2>
 
       <p>
-        When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. With locations in both <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link>, Jinbeh has been serving families and celebrations since 1988. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> and <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> options.
+        When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. Jinbeh has been serving families and celebrations since 1988, with locations in <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> today. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> and <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">sushi for beginners</Link> options.
       </p>
 
       <p>

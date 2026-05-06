@@ -104,7 +104,7 @@ const faqSchema = {
       "name": "Is there a bar happy hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at the bar — $4 Japanese draft beer, $5 small hot sake, and $6 wine at both our Frisco and Lewisville locations.",
+        "text": "Yes! Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at the bar, $4 Japanese draft beer, $5 small hot sake, and $6 wine at both our Frisco and Lewisville locations.",
       },
     },
   ],

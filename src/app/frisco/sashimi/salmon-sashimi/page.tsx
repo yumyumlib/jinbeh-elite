@@ -76,7 +76,7 @@ const faqSchema = {
       "name": "How is Salmon Sashimi best served and eaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend lightly dipping Salmon Sashimi in soy sauce with a touch of wasabi and ginger. Let the natural flavors shine—fresh, premium sashimi needs minimal accompaniment to truly appreciate its quality."
+        "text": "We recommend lightly dipping Salmon Sashimi in soy sauce with a touch of wasabi and ginger. Let the natural flavors shine, fresh, premium sashimi needs minimal accompaniment to truly appreciate its quality."
       }
     },
     {
@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function SalmonSashimiFriscoPage() {
-  const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\' — just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };
+  const item = { ...getMenuItem("salmon-sashimi", "sashimi")!, jinbehStory: "In Japanese, \'sashimi\' means \'sliced\', just the raw fish, no rice. Our head sushi chef selects the freshest cuts daily. Try our Sashimi Sampler for the three most popular fish at a discount." };
   const location = locations["frisco"];
 
   return (

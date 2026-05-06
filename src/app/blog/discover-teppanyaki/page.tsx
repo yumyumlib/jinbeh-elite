@@ -99,7 +99,7 @@ export default function DiscoverTeppanyaki() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                            <p className="text-xl text-charcoal/80 mb-8"><strong>Teppanyaki</strong> (鉄板焼き) means "grilling on an iron plate." It's the art form behind what Americans call "hibachi restaurants"—where skilled chefs transform cooking into dinner theater.</p>
+                            <p className="text-xl text-charcoal/80 mb-8"><strong>Teppanyaki</strong> (鉄板焼き) means "grilling on an iron plate." It's the art form behind what Americans call "hibachi restaurants",where skilled chefs transform cooking into dinner theater.</p>
 
             
               <p className="text-charcoal/80 text-sm mt-6">
@@ -107,12 +107,12 @@ export default function DiscoverTeppanyaki() {
               </p>
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
-                                <p className="text-charcoal italic">"At Jinbeh, our teppanyaki chefs train for years to perfect their craft. It's not just about the food—it's about creating unforgettable moments around the grill."</p>
-                                <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                <p className="text-charcoal italic">"At Jinbeh, our teppanyaki chefs train for years to perfect their craft. It's not just about the food, it's about creating unforgettable moments around the grill."</p>
+                                <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                             </div>
 
                             <DidYouKnow
-                                fact="Teppanyaki was invented in 1945 at a restaurant called Misono in Kobe, Japan — specifically to appeal to Western visitors. The communal flat-griddle format was designed so foreign diners could watch their food being prepared, building trust in unfamiliar cuisine."
+                                fact="Teppanyaki was invented in 1945 at a restaurant called Misono in Kobe, Japan, specifically to appeal to Western visitors. The communal flat-griddle format was designed so foreign diners could watch their food being prepared, building trust in unfamiliar cuisine."
                                 source="Japanese Culinary History"
                             />
 
@@ -144,7 +144,7 @@ export default function DiscoverTeppanyaki() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Planning a celebration?</strong> Guests consistently say Jinbeh's chefs make birthdays unforgettable — they tailor the show to your group and amp up the entertainment for special occasions. Our teppanyaki tables seat 8–10, and reviewers often mention preferring us over chain steakhouses for the personal, family-owned touch. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a teppanyaki table →</Link>
+                                <strong>Planning a celebration?</strong> Guests consistently say Jinbeh's chefs make birthdays unforgettable, they tailor the show to your group and amp up the entertainment for special occasions. Our teppanyaki tables seat 8–10, and reviewers often mention preferring us over chain steakhouses for the personal, family-owned touch. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a teppanyaki table →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>

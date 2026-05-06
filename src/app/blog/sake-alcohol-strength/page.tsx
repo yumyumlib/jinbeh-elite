@@ -25,7 +25,7 @@ const faqs = [
     { question: "What's the difference between sake types?", answer: "Junmai is fuller. Daiginjo is lighter. Nigori is cloudy and sweet. Honjozo is smooth. Our staff can match your preference." },
     { question: "Does Jinbeh have sake?", answer: "Yes! We offer sake flights, premium selections, and sake bombs. Our bartenders know how to pair sake with food. Ask for recommendations." },
     { question: "What sake pairs with sushi?", answer: "Junmai or Nigori work well. Daiginjo is elegant. Sake bombs are fun for celebrations. Come try our sake selection at Jinbeh." },
-    { question: "Can sake go bad after opening?", answer: "Sake doesn't spoil like milk, but it does lose flavor over time. Once opened, drink within 1-2 weeks and keep it refrigerated. Unopened sake lasts 1-2 years for regular varieties and 6-12 months for unpasteurized (nama) sake. Unlike wine, sake doesn't improve with age — drink it fresh for the best experience." }
+    { question: "Can sake go bad after opening?", answer: "Sake doesn't spoil like milk, but it does lose flavor over time. Once opened, drink within 1-2 weeks and keep it refrigerated. Unopened sake lasts 1-2 years for regular varieties and 6-12 months for unpasteurized (nama) sake. Unlike wine, sake doesn't improve with age, drink it fresh for the best experience." }
 ];
 
 const schemas = [
@@ -99,7 +99,7 @@ export default function SakeGuide() {
                                 </tbody>
                             </table>
 
-                            <p className="text-charcoal/80 mb-6">Curious to taste the difference? Visit Jinbeh's <Link href="/bar" className="text-deep-indigo hover:text-accent-red underline transition-colors">bar</Link> to sample varieties across the spectrum—our staff can walk you through a tasting flight. Once you've found your favorites, our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link> will help you match them with the perfect dish.</p>
+                            <p className="text-charcoal/80 mb-6">Curious to taste the difference? Visit Jinbeh's <Link href="/bar" className="text-deep-indigo hover:text-accent-red underline transition-colors">bar</Link> to sample varieties across the spectrum, our staff can walk you through a tasting flight. Once you've found your favorites, our <Link href="/blog/sake-pairing-guide" className="text-deep-indigo hover:text-accent-red underline transition-colors">sake pairing guide</Link> will help you match them with the perfect dish.</p>
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🌡️ Hot vs Cold</h2>
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 <div className="bg-deep-indigo/10 rounded-xl p-5 border-2 border-deep-indigo/30">
@@ -120,8 +120,8 @@ export default function SakeGuide() {
                                     { q: "How strong is sake compared to wine?", a: "Sake typically contains 15-17% ABV, making it slightly stronger than wine (12-14% ABV) but lower than spirits like whiskey (40% ABV). This makes sake an excellent middle ground for those seeking a balanced alcohol content." },
                                     { q: "Does sake alcohol strength vary by type?", a: "Yes. Sparkling sake ranges from 5-12% ABV with a lighter feel, while traditional types like Junmai, Ginjo, and Daiginjo hover around 15-17% ABV. The alcohol content is influenced by brewing methods and sugar fermentation." },
                                     { q: "What's the best sake for beginners?", a: "Honjozo or entry-level Junmai sake (15-16% ABV) are excellent starting points. They offer approachable flavors and balanced strength without overwhelming newcomers. Visit Jinbeh's <a href=\"/blog/best-happy-hour-frisco-tx\" className=\"text-deep-indigo underline\">happy hour</a> to sample different varieties at special prices." },
-                                    { q: "What is sake bombing and where can I try it?", a: "Sake bombing involves dropping a shot glass of sake into a beer. It's a fun party drink combining both beverages. Jinbeh offers sake bombs at happy hour with special pricing—a perfect way to experience this playful tradition." },
-                                    { q: "How does sake alcohol affect food pairing?", a: "Higher ABV sakes (16-17%) pair with bold, grilled <a href=\"/blog/hibachi-vs-teppanyaki-explained\" className=\"text-deep-indigo underline\">hibachi dishes</a>, while lower ABV varieties work with delicate sashimi. Temperature also matters—warm sake (104-113°F) intensifies umami with rich foods, while chilled sake (50-55°F) pairs with light dishes." }
+                                    { q: "What is sake bombing and where can I try it?", a: "Sake bombing involves dropping a shot glass of sake into a beer. It's a fun party drink combining both beverages. Jinbeh offers sake bombs at happy hour with special pricing, a perfect way to experience this playful tradition." },
+                                    { q: "How does sake alcohol affect food pairing?", a: "Higher ABV sakes (16-17%) pair with bold, grilled <a href=\"/blog/hibachi-vs-teppanyaki-explained\" className=\"text-deep-indigo underline\">hibachi dishes</a>, while lower ABV varieties work with delicate sashimi. Temperature also matters, warm sake (104-113°F) intensifies umami with rich foods, while chilled sake (50-55°F) pairs with light dishes." }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
                                         <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.q}<span className="text-accent-red group-open:rotate-180">▼</span></summary>
@@ -132,7 +132,7 @@ export default function SakeGuide() {
 
                             <div className="mt-12">
                                 <ProTip variant="chef">
-                                    <strong>Sake tasting tip:</strong> New to sake? Start with a sake flight at Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">full bar</Link>—our bartenders will walk you through 3-4 varieties from light to bold. The best beginner sake is Honjozo (smooth, approachable) or Nigori (sweet, creamy). During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, try a sake bomb for a fun introduction. Ask about our seasonal selections—they change quarterly!
+                                    <strong>Sake tasting tip:</strong> New to sake? Start with a sake flight at Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">full bar</Link>,our bartenders will walk you through 3-4 varieties from light to bold. The best beginner sake is Honjozo (smooth, approachable) or Nigori (sweet, creamy). During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, try a sake bomb for a fun introduction. Ask about our seasonal selections, they change quarterly!
                                 </ProTip>
 
                                 <PillarCTA type="reservations" />

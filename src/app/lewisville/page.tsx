@@ -458,7 +458,7 @@ export default function LewisvillePage() {
             </div>
           </div>
           <p className="text-center text-charcoal/60 text-sm mt-6">
-            Close to Lake Lewisville, Old Town Lewisville, and Medical City Lewisville — convenient from Hebron Parkway and Justin Road via I-35E and Stemmons Freeway.
+            Close to Lake Lewisville, Old Town Lewisville, and Medical City Lewisville, convenient from Hebron Parkway and Justin Road via I-35E and Stemmons Freeway.
           </p>
         </section>
 

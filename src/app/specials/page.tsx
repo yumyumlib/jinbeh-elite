@@ -13,7 +13,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Specials | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "Lunch Hibachi for Two — $35 (Mon-Fri 11am-2pm). Happy Hour Mon-Fri: $4 draft beer, $5 small hot sake, $6 wine. View all current deals at Jinbeh.",
+    "Lunch Hibachi for Two, $35 (Mon-Fri 11am-2pm). Happy Hour Mon-Fri: $4 draft beer, $5 small hot sake, $6 wine. View all current deals at Jinbeh.",
   keywords: [
     "specials",
     "promotions",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Specials & Promotions | Jinbeh Japanese Restaurant",
     description:
-      "Lunch Hibachi for Two — $35 (Mon-Fri lunch). Happy Hour: $4 beer, $5 small hot sake, $6 wine. Plus weekly specials at Jinbeh.",
+      "Lunch Hibachi for Two, $35 (Mon-Fri lunch). Happy Hour: $4 beer, $5 small hot sake, $6 wine. Plus weekly specials at Jinbeh.",
     url: "https://jinbeh.com/specials",
     images: [
       {
@@ -54,7 +54,7 @@ const offersSchema = {
     {
       "@type": "Offer",
       "name": "Lunch Hibachi for Two",
-      "description": "Lunch-only special, Monday through Friday 11:00 AM to 2:00 PM. Two hibachi entrees — choose between Veggie, Chicken, Steak, Shrimp, or Salmon. Includes soup, salad, vegetables, and white rice. Add fried rice for $5 per person.",
+      "description": "Lunch-only special, Monday through Friday 11:00 AM to 2:00 PM. Two hibachi entrees, choose between Veggie, Chicken, Steak, Shrimp, or Salmon. Includes soup, salad, vegetables, and white rice. Add fried rice for $5 per person. Premium upgrades: Filet Mignon or Scallops +$3 per person each.",
       "price": "35.00",
       "priceCurrency": "USD",
       "url": "https://jinbeh.com/specials#hibachi-for-two",
@@ -105,7 +105,7 @@ const offersSchema = {
   ]
 };
 
-// Hibachi for Two — current limited-time special
+// Hibachi for Two, current limited-time special
 const hibachiForTwoProteins = [
   { name: "Veggie",  icon: "🥦", desc: "Fresh seasonal vegetables with tofu" },
   { name: "Chicken", icon: "🍗", desc: "Tender chicken with house teriyaki glaze" },
@@ -121,7 +121,7 @@ const specialCategories = [
   {
     id: "hibachi-for-two",
     icon: "🔥",
-    title: "Lunch Hibachi for Two — $35",
+    title: "Lunch Hibachi for Two, $35",
     time: "Mon-Fri Lunch • 11:00 AM – 2:00 PM",
     description: "Pick 2: Veggie, Chicken, Steak, Shrimp, or Salmon",
     color: "from-soft-gold to-accent-red",
@@ -339,7 +339,7 @@ export default function SpecialsPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <span className="inline-block bg-accent-red text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full mb-4">
-                  🔥 Lunch Special — Monday through Friday
+                  🔥 Lunch Special, Monday through Friday
                 </span>
                 <h2 className="text-4xl md:text-6xl font-heading font-bold mb-3">
                   Hibachi for Two
@@ -355,8 +355,7 @@ export default function SpecialsPage() {
                   <span className="text-sm font-medium text-warm-ivory">Lunch only • Mon–Fri • 11:00 AM – 2:00 PM</span>
                 </div>
                 <p className="text-lg text-warm-ivory/85 max-w-2xl mx-auto">
-                  Two hibachi entrees, your choice of any combination. Cooked tableside on the teppanyaki grill —
-                  includes soup, salad, vegetables, and white rice.
+                  Two hibachi entrees, your choice of any combination. Cooked tableside on the teppanyaki grill,                   includes soup, salad, vegetables, and white rice.
                 </p>
               </div>
 
@@ -364,7 +363,7 @@ export default function SpecialsPage() {
               <p className="text-center text-soft-gold uppercase tracking-wider text-sm font-medium mb-6">
                 Choose Two Proteins
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
                 {hibachiForTwoProteins.map((p) => (
                   <div
                     key={p.name}
@@ -375,6 +374,14 @@ export default function SpecialsPage() {
                     <p className="text-xs text-warm-ivory/70 leading-relaxed">{p.desc}</p>
                   </div>
                 ))}
+              </div>
+
+              {/* Premium-protein upcharge note */}
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-soft-gold/15 border border-soft-gold/40 text-soft-gold px-4 py-2 rounded-full text-xs sm:text-sm font-medium">
+                  <span aria-hidden="true">⭐</span>
+                  Premium upgrades: Filet Mignon (+$3) · Scallops (+$3) per person
+                </span>
               </div>
 
               {/* Includes + upgrade callouts */}
@@ -407,7 +414,7 @@ export default function SpecialsPage() {
                     <span className="text-sm text-warm-ivory/85">per person</span>
                   </div>
                   <p className="text-sm text-warm-ivory/85 leading-relaxed">
-                    Upgrade your white rice to <strong className="text-white">hibachi fried rice</strong> — wok-tossed
+                    Upgrade your white rice to <strong className="text-white">hibachi fried rice</strong>, wok-tossed
                     with egg, vegetables, and a hint of garlic butter.
                   </p>
                 </div>
@@ -738,7 +745,7 @@ export default function SpecialsPage() {
               {[
                 {
                   q: "What is the Hibachi for Two special?",
-                  a: "Hibachi for Two is $35 for two hibachi entrees — pick any two from Veggie, Chicken, Steak, Shrimp, or Salmon. Each plate includes onion soup, house salad with ginger dressing, grilled vegetables, and steamed white rice. Upgrade to fried rice for $5 per person. Available at lunch only, Monday through Friday, 11:00 AM – 2:00 PM. Dine-in only.",
+                  a: "Hibachi for Two is $35 for two hibachi entrees, pick any two from Veggie, Chicken, Steak, Shrimp, or Salmon. Filet Mignon and Scallops are available as premium upgrades for +$3 per person each. Each plate includes onion soup, house salad with ginger dressing, grilled vegetables, and steamed white rice. Upgrade to fried rice for $5 per person. Available at lunch only, Monday through Friday, 11:00 AM – 2:00 PM. Dine-in only.",
                 },
                 {
                   q: "When is the Hibachi for Two special available?",

@@ -274,9 +274,9 @@ export default function LargeGroupDining() {
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "The best group dining experiences happen when logistics are seamless and everyone feels welcomed. At venues like Jinbeh, large parties aren't just accommodated—they're celebrated with professional coordination and exceptional food."
+                                            "The best group dining experiences happen when logistics are seamless and everyone feels welcomed. At venues like Jinbeh, large parties aren't just accommodated, they're celebrated with professional coordination and exceptional food."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Event Planning Expert</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Event Planning Expert</span>
                                     </div>
 
                                     <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
@@ -540,7 +540,7 @@ export default function LargeGroupDining() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Group dining insider tip:</strong> At Jinbeh, call 2-3 weeks ahead for groups of 15+. Request adjacent hibachi tables so your group can interact during the performance. For the best value, book weekday evenings or lunch. Ask about our group packages—we offer streamlined ordering for large parties where everyone picks a protein and everything else is included. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
+                                        <strong>Group dining insider tip:</strong> At Jinbeh, call 2-3 weeks ahead for groups of 15+. Request adjacent hibachi tables so your group can interact during the performance. For the best value, book weekday evenings or lunch. Ask about our group packages, we offer streamlined ordering for large parties where everyone picks a protein and everything else is included. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

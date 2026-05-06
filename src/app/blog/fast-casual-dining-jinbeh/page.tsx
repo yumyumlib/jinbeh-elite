@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
     description:
-        "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi—without.",
+        "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi, without.",
     keywords: [
         "fast casual japanese",
         "quick japanese lunch",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "Fast Casual Japanese Dining at Jinbeh",
-        description: "Quality Japanese food at fast casual speed—discover Jinbeh's lunch options.",
+        description: "Quality Japanese food at fast casual speed, discover Jinbeh's lunch options.",
         images: ["/images/blog/9-C060324-6484.jpg"],
     },
     alternates: {
@@ -37,11 +37,11 @@ const faqs = [
     },
     {
         question: "Does Jinbeh have lunch specials?",
-        answer: "Yes! We offer lunch combinations that include your choice of protein with miso soup, house salad, rice, and grilled vegetables—all at an excellent value compared to dinner pricing. Check our menu page or call for current lunch specials.",
+        answer: "Yes! We offer lunch combinations that include your choice of protein with miso soup, house salad, rice, and grilled vegetables, all at an excellent value compared to dinner pricing. Check our menu page or call for current lunch specials.",
     },
     {
         question: "What is the difference between fast casual and fine dining Japanese?",
-        answer: "Fast casual Japanese focuses on quick service, affordable prices, and efficient ordering—think sushi counters and ramen shops. Fine dining emphasizes the full experience: ambiance, presentation, and service. Jinbeh bridges both worlds with a warm, family-run atmosphere that delivers quality food quickly when needed.",
+        answer: "Fast casual Japanese focuses on quick service, affordable prices, and efficient ordering, think sushi counters and ramen shops. Fine dining emphasizes the full experience: ambiance, presentation, and service. Jinbeh bridges both worlds with a warm, family-run atmosphere that delivers quality food quickly when needed.",
     },
     {
         question: "Can I get Japanese food quickly for a work lunch?",
@@ -49,7 +49,7 @@ const faqs = [
     },
     {
         question: "Can I order Jinbeh online for pickup or delivery?",
-        answer: "Yes! You can order through delivery apps like DoorDash, Uber Eats, and Grubhub for both pickup and delivery. For the freshest experience, we recommend calling the restaurant directly for pickup — your sushi will be rolled to order right before you arrive. Frisco: (214) 619-1200, Lewisville: (214) 488-2224.",
+        answer: "Yes! You can order through delivery apps like DoorDash, Uber Eats, and Grubhub for both pickup and delivery. For the freshest experience, we recommend calling the restaurant directly for pickup, your sushi will be rolled to order right before you arrive. Frisco: (214) 619-1200, Lewisville: (214) 488-2224.",
     },
 ];
 
@@ -57,7 +57,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Fast Casual Japanese Dining at Jinbeh | Jinbeh DFW",
-  "description": "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi—without sacrificing quality s",
+  "description": "Discover how Jinbeh brings fast casual convenience to authentic Japanese dining. Quick lunch options, bento boxes, and fresh sushi, without sacrificing quality s",
   "image": "https://jinbeh.com/images/og-image.jpg",
   "datePublished": "2026-01-30",
   "dateModified": "2026-03-24",
@@ -80,7 +80,7 @@ export default function FastCasualDiningJinbeh() {
     return (
         <ArticleLayout
             title="Fast Casual Japanese Dining at Jinbeh"
-            metaDescription="Japanese dining doesn't have to mean a long sit-down meal. At Jinbeh, you can enjoy authentic sushi, bento boxes, and hibachi lunches at your own pace—from a quick 30-minute lunch to a full evening experience."
+            metaDescription="Japanese dining doesn't have to mean a long sit-down meal. At Jinbeh, you can enjoy authentic sushi, bento boxes, and hibachi lunches at your own pace, from a quick 30-minute lunch to a full evening experience."
             heroImage="/images/blog/9-C060324-6484.jpg"
             heroAlt="Quick Japanese lunch with sushi and bento at Jinbeh restaurant"
             category="Japanese Cuisine"
@@ -97,7 +97,7 @@ export default function FastCasualDiningJinbeh() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"The Jinbeh Difference: Why Quality Matters","acceptedAnswer":{"@type":"Answer","text":"A lot of \"fast casual\" Japanese spots have popped up across DFW—many of them serving pre-made sushi from a case or reheated teriyaki from a steam table. We take a different approach:"}},{"@type":"Question","name":"When to Go Fast vs. Full Experience","acceptedAnswer":{"@type":"Answer","text":"Visit us for lunch Monday through Friday and discover why Jinbeh is the best of both worlds: restaurant-quality Japanese food that works with your schedule. Check our full menu and see what catches your eye."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"The Jinbeh Difference: Why Quality Matters","acceptedAnswer":{"@type":"Answer","text":"A lot of \"fast casual\" Japanese spots have popped up across DFW, many of them serving pre-made sushi from a case or reheated teriyaki from a steam table. We take a different approach:"}},{"@type":"Question","name":"When to Go Fast vs. Full Experience","acceptedAnswer":{"@type":"Answer","text":"Visit us for lunch Monday through Friday and discover why Jinbeh is the best of both worlds: restaurant-quality Japanese food that works with your schedule. Check our full menu and see what catches your eye."}}]}` }}
       />
             <h1>Japanese Dining on Your Schedule</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
@@ -132,7 +132,7 @@ export default function FastCasualDiningJinbeh() {
                 }) }}
             />
 n unusual combination. After
-                all, Japanese cuisine is known for precision, artistry, and presentation—things that
+                all, Japanese cuisine is known for precision, artistry, and presentation, things that
                 take time. But at <Link href="/" className="text-accent-red hover:underline">Jinbeh</Link>,
                 we've spent 38 years learning how to deliver quality at every speed.
  </p>
@@ -152,11 +152,11 @@ n unusual combination. After
  <p>
  Need a quick lunch? Our sushi bar serves fresh rolls in minutes. Planning a special
  <Link href="/blog/romantic-anniversary-dinners" className="text-accent-red hover:underline"> date night</Link>?
- Settle in for a full hibachi experience. The choice is yours—and the quality never changes.
+ Settle in for a full hibachi experience. The choice is yours, and the quality never changes.
  </p>
 
  <DidYouKnow
- fact="The fast casual dining segment has grown into a billion industry in the US, growing 10% annually — faster than any other restaurant category. While most fast casual spots sacrifice quality for speed, family-owned restaurants like Jinbeh prove you can have both: fresh, made-to-order Japanese cuisine served at your pace, whether that's a 30-minute sushi lunch or a full evening hibachi experience."
+ fact="The fast casual dining segment has grown into a billion industry in the US, growing 10% annually, faster than any other restaurant category. While most fast casual spots sacrifice quality for speed, family-owned restaurants like Jinbeh prove you can have both: fresh, made-to-order Japanese cuisine served at your pace, whether that's a 30-minute sushi lunch or a full evening hibachi experience."
                 source="National Restaurant Association 2025 Industry Report"
             />
 
@@ -170,7 +170,7 @@ n unusual combination. After
             <p>
                 Pull up a seat at the sushi bar and watch our chefs work while your order is prepared.
                 For the <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi curious</Link>,
-                this is the best seat in the house—ask your chef for recommendations. Most rolls are ready
+                this is the best seat in the house, ask your chef for recommendations. Most rolls are ready
                 in 5-10 minutes.
             </p>
 
@@ -193,21 +193,21 @@ n unusual combination. After
             <h2>The Jinbeh Difference: Why Quality Matters</h2>
 
             <p>
-                A lot of "fast casual" Japanese spots have popped up across DFW—many of them serving
+                A lot of "fast casual" Japanese spots have popped up across DFW, many of them serving
                 pre-made sushi from a case or reheated teriyaki from a steam table. We take a different
                 approach:
             </p>
 
             <ul>
-                <li><strong>Everything made to order</strong> — No pre-rolled sushi sitting in a display case</li>
-                <li><strong>Fresh fish daily</strong> — We source quality ingredients, not shortcuts</li>
-                <li><strong>Skilled chefs, not assembly lines</strong> — Our sushi and hibachi chefs are trained professionals</li>
-                <li><strong>Real hospitality</strong> — Guests say our service is "friendly and professional"</li>
-                <li><strong>Family-owned since 1988</strong> — We care because it's personal</li>
+                <li><strong>Everything made to order</strong>, No pre-rolled sushi sitting in a display case</li>
+                <li><strong>Fresh fish daily</strong>, We source quality ingredients, not shortcuts</li>
+                <li><strong>Skilled chefs, not assembly lines</strong>, Our sushi and hibachi chefs are trained professionals</li>
+                <li><strong>Real hospitality</strong>, Guests say our service is "friendly and professional"</li>
+                <li><strong>Family-owned since 1988</strong>, We care because it's personal</li>
             </ul>
 
             <p>
-                As one reviewer put it: "The food is tasty and enjoyable—you can tell the difference
+                As one reviewer put it: "The food is tasty and enjoyable, you can tell the difference
                 between Jinbeh and the quick-serve Japanese places." That's the difference 38 years
                 of experience makes.
             </p>
@@ -223,7 +223,7 @@ n unusual combination. After
             </ul>
 
             <ProTip variant="insider">
- <strong>Lunch break hack:</strong> Call ahead 20 minutes before you leave the office and your sushi or bento order will be ready when you arrive. Reviewers say the chicken teriyaki bento is the best lunch deal in DFW — a complete meal with soup, salad, and rice for under. For the ultimate quick sushi lunch, sit at the bar and ask the chef for an "omakase roll" — they'll surprise you with something amazing. <Link href="/reservations" className="text-accent-red hover:underline">Visit for lunch →</Link>
+ <strong>Lunch break hack:</strong> Call ahead 20 minutes before you leave the office and your sushi or bento order will be ready when you arrive. Reviewers say the chicken teriyaki bento is the best lunch deal in DFW, a complete meal with soup, salad, and rice for under. For the ultimate quick sushi lunch, sit at the bar and ask the chef for an "omakase roll", they'll surprise you with something amazing. <Link href="/reservations" className="text-accent-red hover:underline">Visit for lunch →</Link>
             </ProTip>
 
             <p>

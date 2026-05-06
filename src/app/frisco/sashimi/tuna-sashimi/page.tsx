@@ -91,7 +91,7 @@ const faqSchema = {
 };
 
 export default function TunaSashimiFriscoPage() {
-  const item = { ...getMenuItem("tuna-sashimi", "sashimi")!, jinbehStory: "Premium tuna sliced by our sushi master — nearly 30 years of daily practice ensuring each cut is precise. \'Sashimi\' literally translates to \'sliced,\' the purest form of enjoying raw fish." };
+  const item = { ...getMenuItem("tuna-sashimi", "sashimi")!, jinbehStory: "Premium tuna sliced by our sushi master, nearly 30 years of daily practice ensuring each cut is precise. \'Sashimi\' literally translates to \'sliced,\' the purest form of enjoying raw fish." };
   const location = locations["frisco"];
 
   return (

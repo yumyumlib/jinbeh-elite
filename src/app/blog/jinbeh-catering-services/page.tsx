@@ -63,7 +63,7 @@ const faqs = [
   {
     question: "Does Jinbeh provide plates, utensils, and serving equipment?",
     answer:
-      "Yes! Full-service catering packages include all necessary serving equipment, plates, utensils, napkins, and serving stations. For hibachi catering, we bring our own portable teppanyaki griddle and all cooking equipment. You don't need to supply anything — just provide the space and the guests!",
+      "Yes! Full-service catering packages include all necessary serving equipment, plates, utensils, napkins, and serving stations. For hibachi catering, we bring our own portable teppanyaki griddle and all cooking equipment. You don't need to supply anything, just provide the space and the guests!",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function JinbehCateringServicesPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh Catering?","acceptedAnswer":{"@type":"Answer","text":"Jinbeh is synonymous with authentic Japanese flavors, crafted with precision and passion. When you choose Jinbeh Catering , you're not just ordering food—you're investing in a unique culinary experience that transcends ordinary catering services."}},{"@type":"Question","name":"Transparent Pricing You Can Trust","acceptedAnswer":{"@type":"Answer","text":"One of the most common questions we encounter is about pricing. We understand that budgeting for catering is important, which is why we're committed to transparency."}},{"@type":"Question","name":"What Influences Your Quote?","acceptedAnswer":{"@type":"Answer","text":"Several factors affect catering pricing, and we're transparent about each one:"}},{"@type":"Question","name":"Catering Locations & Service Areas","acceptedAnswer":{"@type":"Answer","text":"Jinbeh Catering services the Dallas-Fort Worth area, including Frisco, Lewisville, and surrounding communities. Whether your event is nearby or requires travel, our team is equipped to deliver the same exceptional experience."}},{"@type":"Question","name":"Why Businesses & Families Choose Jinbeh Catering","acceptedAnswer":{"@type":"Answer","text":"Jinbeh Catering is committed to delivering exceptional culinary experiences for any occasion. Whether you're planning a small family gathering or a large corporate event, our team is here to make your vision a reality. By understanding the costs, menu options, and services available, you can confidently plan an event that your guests will remember for years to come."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh Catering?","acceptedAnswer":{"@type":"Answer","text":"Jinbeh is synonymous with authentic Japanese flavors, crafted with precision and passion. When you choose Jinbeh Catering , you're not just ordering food, you're investing in a unique culinary experience that transcends ordinary catering services."}},{"@type":"Question","name":"Transparent Pricing You Can Trust","acceptedAnswer":{"@type":"Answer","text":"One of the most common questions we encounter is about pricing. We understand that budgeting for catering is important, which is why we're committed to transparency."}},{"@type":"Question","name":"What Influences Your Quote?","acceptedAnswer":{"@type":"Answer","text":"Several factors affect catering pricing, and we're transparent about each one:"}},{"@type":"Question","name":"Catering Locations & Service Areas","acceptedAnswer":{"@type":"Answer","text":"Jinbeh Catering services the Dallas-Fort Worth area, including Frisco, Lewisville, and surrounding communities. Whether your event is nearby or requires travel, our team is equipped to deliver the same exceptional experience."}},{"@type":"Question","name":"Why Businesses & Families Choose Jinbeh Catering","acceptedAnswer":{"@type":"Answer","text":"Jinbeh Catering is committed to delivering exceptional culinary experiences for any occasion. Whether you're planning a small family gathering or a large corporate event, our team is here to make your vision a reality. By understanding the costs, menu options, and services available, you can confidently plan an event that your guests will remember for years to come."}}]}` }}
       />
       <script
         type="application/ld+json"
@@ -162,7 +162,7 @@ export default function JinbehCateringServicesPage() {
         <Link href="/catering" className="text-accent-red hover:underline">
           Jinbeh Catering
         </Link>
-        , you're not just ordering food—you're investing in a unique culinary experience that transcends ordinary catering services.
+        , you're not just ordering food, you're investing in a unique culinary experience that transcends ordinary catering services.
       </p>
 
       <p>
@@ -170,7 +170,7 @@ export default function JinbehCateringServicesPage() {
       </p>
 
       <p>
-        The presentation of each dish is an art form designed to delight the senses. Our team understands the importance of aesthetics in Japanese dining and incorporates this into every catering event. Your meal won't just taste exceptional—it will look exquisite. This commitment to authenticity and excellence sets Jinbeh Catering apart as a premier choice for those seeking something truly extraordinary.
+        The presentation of each dish is an art form designed to delight the senses. Our team understands the importance of aesthetics in Japanese dining and incorporates this into every catering event. Your meal won't just taste exceptional, it will look exquisite. This commitment to authenticity and excellence sets Jinbeh Catering apart as a premier choice for those seeking something truly extraordinary.
  </p>
 
  <h3>Fresh, Never-Frozen Ingredients</h3>
@@ -183,11 +183,11 @@ export default function JinbehCateringServicesPage() {
  <p className="italic text-charcoal/80 mb-2">
  "The presentation was beautiful, the food was amazing, and the catering team was professional and courteous throughout the entire event. Jinbeh made our celebration truly special."
  </p>
- <p className="text-sm text-charcoal/80">— Verified Customer</p>
+ <p className="text-sm text-charcoal/80">, Verified Customer</p>
  </div>
 
  <DidYouKnow
- fact="The US event catering industry is valued at over billion, with corporate events and private celebrations driving 70% of all catering bookings. Interactive food stations — like hibachi/teppanyaki — have become the #1 most-requested catering format, with 89% of event planners saying interactive food experiences increase guest satisfaction compared to traditional buffets."
+ fact="The US event catering industry is valued at over billion, with corporate events and private celebrations driving 70% of all catering bookings. Interactive food stations, like hibachi/teppanyaki, have become the #1 most-requested catering format, with 89% of event planners saying interactive food experiences increase guest satisfaction compared to traditional buffets."
  source="Catersource & International Caterers Association"
  />
 
@@ -247,22 +247,22 @@ export default function JinbehCateringServicesPage() {
 
       <ul>
         <li>
-          <strong>Menu Selection</strong> — Premium proteins cost more than basic options
+          <strong>Menu Selection</strong>, Premium proteins cost more than basic options
         </li>
         <li>
-          <strong>Guest Count</strong> — Larger events benefit from economies of scale
+          <strong>Guest Count</strong>, Larger events benefit from economies of scale
         </li>
         <li>
-          <strong>Event Date & Time</strong> — Weekend and holiday events may have additional fees
+          <strong>Event Date & Time</strong>, Weekend and holiday events may have additional fees
         </li>
         <li>
-          <strong>Service Level</strong> — Live hibachi chefs and full service staff add to costs
+          <strong>Service Level</strong>, Live hibachi chefs and full service staff add to costs
         </li>
         <li>
-          <strong>Travel Distance</strong> — Events further from our restaurants may include travel fees
+          <strong>Travel Distance</strong>, Events further from our restaurants may include travel fees
         </li>
         <li>
-          <strong>Setup & Cleanup</strong> — Comprehensive service requires professional staff
+          <strong>Setup & Cleanup</strong>, Comprehensive service requires professional staff
         </li>
       </ul>
 
@@ -271,7 +271,7 @@ export default function JinbehCateringServicesPage() {
       <h3>Birthday Parties</h3>
 
       <p>
-        Make your child's special day unforgettable with our fun and delicious birthday catering. Our team creates themed menus and interactive dining experiences that delight children and adults alike. Imagine your child's guests experiencing a live hibachi chef flipping food and putting on a show—that's the Jinbeh difference. Get inspired with our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party ideas</Link>.
+        Make your child's special day unforgettable with our fun and delicious birthday catering. Our team creates themed menus and interactive dining experiences that delight children and adults alike. Imagine your child's guests experiencing a live hibachi chef flipping food and putting on a show, that's the Jinbeh difference. Get inspired with our <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">hibachi birthday party ideas</Link>.
       </p>
 
       <p>
@@ -394,7 +394,7 @@ export default function JinbehCateringServicesPage() {
       </p>
 
       <ProTip variant="insider">
-        <strong>Event planning insider tip:</strong> The most popular Jinbeh catering package for corporate events is the "Premium Teppanyaki Experience" — it includes a live chef performance, premium proteins, and full setup/cleanup. For the best prices, ask about weekday event rates (Monday-Thursday saves 15-20%). Clients consistently rate Jinbeh catering 5 stars, saying "the live cooking was the highlight of our event." <Link href="/catering" className="text-accent-red hover:underline">Request a custom quote →</Link>
+        <strong>Event planning insider tip:</strong> The most popular Jinbeh catering package for corporate events is the "Premium Teppanyaki Experience", it includes a live chef performance, premium proteins, and full setup/cleanup. For the best prices, ask about weekday event rates (Monday-Thursday saves 15-20%). Clients consistently rate Jinbeh catering 5 stars, saying "the live cooking was the highlight of our event." <Link href="/catering" className="text-accent-red hover:underline">Request a custom quote →</Link>
       </ProTip>
 
       <PillarCTA type="vip" />

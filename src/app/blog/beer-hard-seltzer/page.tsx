@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist | Jinbeh DFW",
     description:
-        "Explore Jinbeh's Japanese beer and hard seltzer selection. Sapporo on tap, Asahi, Kirin Ichiban, and craft seltzers—perfectly paired with hibachi and.",
+        "Explore Jinbeh's Japanese beer and hard seltzer selection. Sapporo on tap, Asahi, Kirin Ichiban, and craft seltzers, perfectly paired with hibachi and.",
     keywords: [
         "japanese beer",
         "sapporo beer",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const faqs = [
     {
         question: "What Japanese beers does Jinbeh serve?",
-        answer: "Jinbeh serves Sapporo (on tap and bottled), Asahi Super Dry, and Kirin Ichiban—the three most popular Japanese beer brands. We also carry domestic and craft options. Our Sapporo on tap is a guest favorite and pairs perfectly with both hibachi and sushi.",
+        answer: "Jinbeh serves Sapporo (on tap and bottled), Asahi Super Dry, and Kirin Ichiban, the three most popular Japanese beer brands. We also carry domestic and craft options. Our Sapporo on tap is a guest favorite and pairs perfectly with both hibachi and sushi.",
     },
     {
         question: "What beer pairs best with sushi?",
@@ -45,11 +45,11 @@ const faqs = [
     },
     {
         question: "What is the difference between Sapporo, Asahi, and Kirin?",
-        answer: "Sapporo is smooth with a clean finish—great for beginners. Asahi Super Dry is ultra-crisp with a dry finish, making it refreshing with rich foods. Kirin Ichiban uses only first-press wort for a fuller, slightly sweeter flavor. All three are Japanese rice lagers, but each has a distinct character.",
+        answer: "Sapporo is smooth with a clean finish, great for beginners. Asahi Super Dry is ultra-crisp with a dry finish, making it refreshing with rich foods. Kirin Ichiban uses only first-press wort for a fuller, slightly sweeter flavor. All three are Japanese rice lagers, but each has a distinct character.",
     },
     {
         question: "What non-alcoholic drinks pair well with sushi and hibachi?",
-        answer: "We offer Ramune (Japanese lemon-lime soda), hot and iced green tea, and Japanese soft drinks. Green tea is the traditional pairing — its clean, slightly bitter taste cleanses the palate between bites of sushi. For hibachi, a cold Ramune or iced tea is refreshing alongside the smoky grilled flavors.",
+        answer: "We offer Ramune (Japanese lemon-lime soda), hot and iced green tea, and Japanese soft drinks. Green tea is the traditional pairing, its clean, slightly bitter taste cleanses the palate between bites of sushi. For hibachi, a cold Ramune or iced tea is refreshing alongside the smoky grilled flavors.",
     },
 ];
 
@@ -80,7 +80,7 @@ export default function BeerHardSeltzer() {
     return (
         <ArticleLayout
             title="Beer & Hard Seltzer: Jinbeh's Japanese Twist"
-            metaDescription="From Sapporo on tap to refreshing hard seltzers, discover Jinbeh's beer and seltzer selection—perfectly chosen to pair with our hibachi and sushi. Here's your guide to what to drink at a Japanese restaurant."
+            metaDescription="From Sapporo on tap to refreshing hard seltzers, discover Jinbeh's beer and seltzer selection, perfectly chosen to pair with our hibachi and sushi. Here's your guide to what to drink at a Japanese restaurant."
             heroImage="/images/blog/6-C060324-6405.jpg"
             heroAlt="Japanese beer selection including Sapporo on tap at Jinbeh's bar"
             category="Beverages"
@@ -89,7 +89,7 @@ export default function BeerHardSeltzer() {
             publishDate="February 2026"
             readTime="6 min read"
             faqs={faqs}
-            keyTakeaway="Japanese rice lagers (Sapporo, Asahi, Kirin) are the perfect companions for sushi and hibachi—crisp, clean, and designed to complement rather than compete with the food. Hard seltzers offer a lighter alternative that pairs especially well with seafood rolls."
+            keyTakeaway="Japanese rice lagers (Sapporo, Asahi, Kirin) are the perfect companions for sushi and hibachi, crisp, clean, and designed to complement rather than compete with the food. Hard seltzers offer a lighter alternative that pairs especially well with seafood rolls."
         >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Beer Hard Seltzer" }]} />
@@ -128,7 +128,7 @@ export default function BeerHardSeltzer() {
             />
 popular in the world: they're
                 specifically crafted to pair with food. Unlike heavy craft IPAs or bitter ales, Japanese
-                lagers are clean, crisp, and refreshing—designed to enhance your meal rather than overpower it.
+                lagers are clean, crisp, and refreshing, designed to enhance your meal rather than overpower it.
             </p>
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">🇯🇵 Jinbeh&apos;s Wine &amp; Spirits Philosophy</h3>
@@ -159,10 +159,10 @@ popular in the world: they're
  <p>
  <strong>Flavor profile:</strong> Smooth, balanced, clean finish<br />
  <strong>ABV:</strong> 4.9%<br />
- <strong>Best with:</strong> Everything—it's the ultimate all-purpose Japanese beer<br />
+ <strong>Best with:</strong> Everything, it's the ultimate all-purpose Japanese beer<br />
                 <strong>Available:</strong> On tap (draft) and bottled<br /><br />
                 Japan's oldest beer brand, brewed since 1876. Sapporo is our #1 seller and the go-to
-                recommendation for first-time visitors. Our guests love the draft pour—there's nothing
+                recommendation for first-time visitors. Our guests love the draft pour, there's nothing
                 like a cold, freshly poured Sapporo.
             </p>
 
@@ -181,7 +181,7 @@ popular in the world: they're
                 <strong>Flavor profile:</strong> Slightly fuller body, subtle sweetness<br />
                 <strong>ABV:</strong> 5.0%<br />
                 <strong>Best with:</strong> Sashimi, grilled seafood, richer sushi rolls<br /><br />
-                "Ichiban" means "first press"—Kirin uses only the first press of the wort, resulting in a
+                "Ichiban" means "first press",Kirin uses only the first press of the wort, resulting in a
                 smoother, more complex flavor. Excellent with delicate seafood dishes and for those who
                 want a bit more depth than a standard lager.
             </p>
@@ -225,7 +225,7 @@ popular in the world: they're
                         </tr>
                         <tr className="border-b border-warm-ivory-dark bg-white">
                             <td className="px-4 py-3 font-medium">Sushi rolls (classic)</td>
-                            <td className="px-4 py-3">Sapporo — won't overpower delicate fish</td>
+                            <td className="px-4 py-3">Sapporo, won't overpower delicate fish</td>
                         </tr>
                         <tr className="border-b border-warm-ivory-dark bg-warm-ivory/30">
                             <td className="px-4 py-3 font-medium">Sushi rolls (spicy)</td>
@@ -246,7 +246,7 @@ popular in the world: they're
             <p>
                 Want to explore beyond beer? Check out our <Link href="/blog/japanese-cocktails" className="text-accent-red hover:underline">Japanese cocktails guide</Link> or
                 our <Link href="/blog/sake-taste-profile" className="text-accent-red hover:underline">sake tasting guide</Link> for
-                even more options. Our guests say the "lychee martini is a must"—another great option
+                even more options. Our guests say the "lychee martini is a must",another great option
                 alongside your meal.
             </p>
 
@@ -265,7 +265,7 @@ popular in the world: they're
             </p>
 
             <ProTip variant="chef">
-                <strong>Bartender's recommendation:</strong> Start with a Sapporo draft — it's our #1 seller for a reason. If you're having hibachi, order your beer when the chef starts cooking; the cold crispness is perfect alongside sizzling steak and fried rice. For sushi, try Kirin Ichiban — its slightly fuller body pairs beautifully with raw fish. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, Sapporo drafts are discounted, making it the perfect time to explore our Japanese beer lineup.
+                <strong>Bartender's recommendation:</strong> Start with a Sapporo draft, it's our #1 seller for a reason. If you're having hibachi, order your beer when the chef starts cooking; the cold crispness is perfect alongside sizzling steak and fried rice. For sushi, try Kirin Ichiban, its slightly fuller body pairs beautifully with raw fish. During <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, Sapporo drafts are discounted, making it the perfect time to explore our Japanese beer lineup.
             </ProTip>
 
             <PillarCTA type="catering" />

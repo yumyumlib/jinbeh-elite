@@ -48,7 +48,7 @@ const faqs = [
     { question: "When are lunch specials available?", answer: "Weekdays 11 AM to 2-3 PM. Some extended weekend hours. Arrive early for best selection. Call us to confirm hours." },
     { question: "Can I get lunch specials for takeout?", answer: "Absolutely! Dine in or takeout. Call ahead to make sure we have your favorites ready. Frisco (214) 619-1200 or Lewisville (214) 488-2224." },
     { question: "What's included in Jinbeh lunch deals?", answer: "Fresh and flavorful sushi rolls, nigiri, appetizers. Great value. Our chefs prepare everything to order. Every lunch is special." },
-    { question: "Are lunch specials available on weekends?", answer: "It depends on the restaurant! At Jinbeh, our lunch pricing and specials may vary between weekdays and weekends. Call ahead to confirm today's offerings — Frisco (214) 619-1200 or Lewisville (214) 488-2224. Weekday lunches typically offer the best selection and value." },
+    { question: "Are lunch specials available on weekends?", answer: "It depends on the restaurant! At Jinbeh, our lunch pricing and specials may vary between weekdays and weekends. Call ahead to confirm today's offerings, Frisco (214) 619-1200 or Lewisville (214) 488-2224. Weekday lunches typically offer the best selection and value." },
 ];
 
 const faqSchema = {
@@ -222,7 +222,7 @@ export default function SushiLunchSpecials() {
                                             "Lunch specials are our way of bringing premium sushi to more people at prices that make sense.
                                             Same quality, same freshness, just smarter pricing for the midday rush."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -230,7 +230,7 @@ export default function SushiLunchSpecials() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="The concept of lunch specials at Japanese restaurants originated in post-war Japan with 'teishoku' (set meals). Today, lunchtime is the #1 time Americans try sushi for the first time—70% of first-time sushi eaters order during lunch. The average lunch special saves diners 35-45% compared to dinner pricing, and bento box-style meals have grown 300% in U.S. restaurant popularity since 2015."
+                                        fact="The concept of lunch specials at Japanese restaurants originated in post-war Japan with 'teishoku' (set meals). Today, lunchtime is the #1 time Americans try sushi for the first time, 70% of first-time sushi eaters order during lunch. The average lunch special saves diners 35-45% compared to dinner pricing, and bento box-style meals have grown 300% in U.S. restaurant popularity since 2015."
                                         source="National Restaurant Association Trends Report"
                                     />
 
@@ -243,7 +243,7 @@ export default function SushiLunchSpecials() {
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">🎯</span>
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Variety</h3>
-                                            <p className="text-charcoal/70 text-sm">Sample different rolls and styles—perfect for exploring new favorites</p>
+                                            <p className="text-charcoal/70 text-sm">Sample different rolls and styles, perfect for exploring new favorites</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">⚡</span>
@@ -253,7 +253,7 @@ export default function SushiLunchSpecials() {
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <span className="text-3xl mb-3 block">📱</span>
                                             <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Convenience</h3>
-                                            <p className="text-charcoal/70 text-sm">Dine in or take out—flexible options for your schedule</p>
+                                            <p className="text-charcoal/70 text-sm">Dine in or take out, flexible options for your schedule</p>
                                         </div>
                                     </div>
 
@@ -463,7 +463,7 @@ export default function SushiLunchSpecials() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Jinbeh lunch insider tip:</strong> Visit between 11:30 AM and noon for the freshest lunch prep—our chefs prepare a new batch of rice and slice fish specifically for the lunch rush. Ask about the "lunch bento special" which isn't always on the printed menu. For groups of 4+, call ahead and we can have a custom lunch platter ready when you arrive. Pair with a midday <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">sake</Link> for a true Japanese lunch experience. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+                                        <strong>Jinbeh lunch insider tip:</strong> Visit between 11:30 AM and noon for the freshest lunch prep, our chefs prepare a new batch of rice and slice fish specifically for the lunch rush. Ask about the "lunch bento special" which isn't always on the printed menu. For groups of 4+, call ahead and we can have a custom lunch platter ready when you arrive. Pair with a midday <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">sake</Link> for a true Japanese lunch experience. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

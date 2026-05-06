@@ -46,7 +46,7 @@ const faqs = [
     { question: "How do I use wasabi and ginger?", answer: "Pickled ginger cleans your palate between bites. Use wasabi on the fish or mix it lightly. Don't pile it on like ketchup!" },
     { question: "What are common sushi etiquette mistakes?", answer: "Don't use spoons for soy sauce. Never rub chopsticks together. Don't stick chopsticks in rice upright. Never waste food." },
     { question: "Should I eat sushi in one bite?", answer: "Yes, when possible! One bite lets all flavors blend. This is the traditional way. It's perfect for your palate." },
-    { question: "What should I order if it's my first time eating sushi?", answer: "Start with cooked rolls like California Roll or Shrimp Tempura Roll. They're milder and a great introduction. Once comfortable, try salmon nigiri—it's buttery and approachable. At Jinbeh, our staff loves helping first-timers find their perfect roll." },
+    { question: "What should I order if it's my first time eating sushi?", answer: "Start with cooked rolls like California Roll or Shrimp Tempura Roll. They're milder and a great introduction. Once comfortable, try salmon nigiri, it's buttery and approachable. At Jinbeh, our staff loves helping first-timers find their perfect roll." },
 ];
 
 const faqSchema = {
@@ -126,7 +126,7 @@ const howToSchema = {
             "@type": "HowToStep",
             "position": 1,
             "name": "Choose Your Eating Style",
-            "text": "Sushi can be eaten with chopsticks or fingers — both are acceptable in Japanese tradition. Nigiri is traditionally eaten by hand, while sashimi is best with chopsticks."
+            "text": "Sushi can be eaten with chopsticks or fingers, both are acceptable in Japanese tradition. Nigiri is traditionally eaten by hand, while sashimi is best with chopsticks."
         },
         {
             "@type": "HowToStep",
@@ -138,7 +138,7 @@ const howToSchema = {
             "@type": "HowToStep",
             "position": 3,
             "name": "Dip the Fish Side in Soy Sauce",
-            "text": "Dip only the fish side of nigiri into soy sauce — never the rice. A light touch is all you need. Too much soy sauce overpowers the chef's carefully seasoned rice."
+            "text": "Dip only the fish side of nigiri into soy sauce, never the rice. A light touch is all you need. Too much soy sauce overpowers the chef's carefully seasoned rice."
         },
         {
             "@type": "HowToStep",
@@ -156,7 +156,7 @@ const howToSchema = {
             "@type": "HowToStep",
             "position": 6,
             "name": "Apply Wasabi Sparingly",
-            "text": "If your sushi doesn't already contain wasabi, add a tiny amount directly to the fish. Avoid mixing wasabi into soy sauce — this is considered improper etiquette."
+            "text": "If your sushi doesn't already contain wasabi, add a tiny amount directly to the fish. Avoid mixing wasabi into soy sauce, this is considered improper etiquette."
         },
         {
             "@type": "HowToStep",
@@ -241,21 +241,21 @@ export default function HowToEatSushi() {
               <div className="my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
                 <h3 className="font-heading text-lg font-semibold text-charcoal mb-3">💡 Insider Knowledge from Jinbeh&apos;s Sushi Master</h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed">
-                  At Jinbeh, our head sushi chef — who has been with us for nearly 30 years — teaches that understanding the terminology is key: <strong>sashimi</strong> means &ldquo;sliced&rdquo; (raw fish, no rice), <strong>nigiri-zushi</strong> is the rice ball with fish on top (what most people call &ldquo;sushi&rdquo;), and <strong>maki</strong> is any roll shaped using a bamboo roller. Knowing these terms helps you order with confidence at any Japanese restaurant.
+                  At Jinbeh, our head sushi chef, who has been with us for nearly 30 years, teaches that understanding the terminology is key: <strong>sashimi</strong> means &ldquo;sliced&rdquo; (raw fish, no rice), <strong>nigiri-zushi</strong> is the rice ball with fish on top (what most people call &ldquo;sushi&rdquo;), and <strong>maki</strong> is any roll shaped using a bamboo roller. Knowing these terms helps you order with confidence at any Japanese restaurant.
                 </p>
               </div>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "Sushi is not just about the food—it's about respect, tradition, and the experience.
+                                            "Sushi is not just about the food, it's about respect, tradition, and the experience.
                                             At Jinbeh, we believe everyone should feel comfortable enjoying sushi their own way,
                                             while learning to appreciate the craft behind each piece."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact={`The word "sushi" doesn't mean raw fish — it refers to the seasoned vinegared rice. "Su" means vinegar and "shi" comes from "meshi" (rice). You can have sushi without any raw fish at all.`}
+                                        fact={`The word "sushi" doesn't mean raw fish, it refers to the seasoned vinegared rice. "Su" means vinegar and "shi" comes from "meshi" (rice). You can have sushi without any raw fish at all.`}
                                         source="Japanese Etymology"
                                     />
 
@@ -311,7 +311,7 @@ export default function HowToEatSushi() {
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Dip (Lightly!) the Fish Side</h3>
                                                 <p className="text-charcoal/80">
                                                     Hold the sushi with your fingers or chopsticks. Flip it so the fish faces down into the soy sauce.
-                                                    Use a quick, light dip—just the bottom touches. Dipping the rice side ruins the chef's work and
+                                                    Use a quick, light dip, just the bottom touches. Dipping the rice side ruins the chef's work and
                                                     makes the piece soggy.
                                                 </p>
                                             </div>
@@ -327,7 +327,7 @@ export default function HowToEatSushi() {
                                                 <h3 className="font-heading font-bold text-lg text-charcoal mb-2">Eat in One Bite (If Possible)</h3>
                                                 <p className="text-charcoal/80">
                                                     Pop the entire piece into your mouth. This allows the fish, rice, and nori to blend flavors together.
-                                                    If it's too large, two bites are acceptable—just avoid nibbling or breaking the piece apart.
+                                                    If it's too large, two bites are acceptable, just avoid nibbling or breaking the piece apart.
                                                 </p>
                                             </div>
                                         </div>
@@ -396,7 +396,7 @@ export default function HowToEatSushi() {
                                             </div>
                                             <div>
                                                 <p className="font-semibold text-charcoal mb-1">Pro Tip:</p>
-                                                <p className="text-charcoal/70 text-sm italic">Hold them at a 45-degree angle. Never rub them together—it's considered rude!</p>
+                                                <p className="text-charcoal/70 text-sm italic">Hold them at a 45-degree angle. Never rub them together, it's considered rude!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -430,7 +430,7 @@ export default function HowToEatSushi() {
                                 <div className="bg-gradient-to-br from-charcoal to-deep-indigo rounded-2xl p-6 text-white my-8">
                                     <p className="font-semibold mb-2">The Bottom Line:</p>
                                     <p className="text-white/90">
-                                        In authentic Japanese dining, using your fingers for nigiri is not just accepted—it's preferred!
+                                        In authentic Japanese dining, using your fingers for nigiri is not just accepted, it's preferred!
                                         You won't offend anyone. Choose whichever method makes you feel most comfortable and confident.
                                     </p>
                                 </div>
@@ -536,7 +536,7 @@ export default function HowToEatSushi() {
                                             <div>
                                                 <p className="font-semibold text-charcoal mb-1">Always Use a Small Dish</p>
                                                 <p className="text-charcoal/80">
-                                                    Pour a small amount from the main bottle into your personal dish. Never dunk directly into the bottle—that's unsanitary.
+                                                    Pour a small amount from the main bottle into your personal dish. Never dunk directly into the bottle, that's unsanitary.
                                                 </p>
                                             </div>
                                         </div>
@@ -626,7 +626,7 @@ export default function HowToEatSushi() {
                                     </h2>
 
                                     <p className="text-charcoal/80 mb-6">
-                                        Don't worry if you've done these before—most people have! But now you'll know better.
+                                        Don't worry if you've done these before, most people have! But now you'll know better.
                                     </p>
                                 </div>
 
@@ -768,7 +768,7 @@ export default function HowToEatSushi() {
                                     <div className="bg-gradient-to-br from-soft-gold/30 to-soft-gold/20 rounded-xl p-6">
                                         <p className="font-semibold text-charcoal mb-2">Tip #5: Ask the Chef's Recommendation</p>
                                         <p className="text-charcoal/80 text-sm">
-                                            "What's fresh today?" Chef's specials are often the best—they know quality when they see it.
+                                            "What's fresh today?" Chef's specials are often the best, they know quality when they see it.
                                         </p>
                                     </div>
 
@@ -781,7 +781,7 @@ export default function HowToEatSushi() {
                                 </div>
 
                                 <ProTip variant="insider">
-                                    <strong>First time at Jinbeh?</strong> Regulars swear by the sushi bar — you get chef interaction and the freshest cuts. Ask what's good that day; one recent reviewer called the experience "delightful" and said the Volcano Roll and Spider Roll are must-tries. Don't be shy about being a beginner — our chefs love guiding newcomers. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a seat at the bar →</Link>
+                                    <strong>First time at Jinbeh?</strong> Regulars swear by the sushi bar, you get chef interaction and the freshest cuts. Ask what's good that day; one recent reviewer called the experience "delightful" and said the Volcano Roll and Spider Roll are must-tries. Don't be shy about being a beginner, our chefs love guiding newcomers. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a seat at the bar →</Link>
                                 </ProTip>
 
                                 {/* FAQ Section */}

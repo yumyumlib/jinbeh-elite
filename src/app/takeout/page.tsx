@@ -274,7 +274,7 @@ export default function TakeoutPage() {
                   Three Ways to Order
                 </h2>
                 <p className="text-lg text-charcoal/70">
-                  Order online, enjoy sushi takeout, or choose Japanese food delivery — whichever ordering method is most convenient for you.
+                  Order online, enjoy sushi takeout, or choose Japanese food delivery, whichever ordering method is most convenient for you.
                 </p>
               </RevealSection>
             </div>
@@ -590,7 +590,7 @@ export default function TakeoutPage() {
               <Link href="/blog/beginner-sushi-tips" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Beginner Guide</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Sushi for Beginners</h3>
-                <p className="text-sm text-charcoal/70 mt-2">New to sushi? Start here — tips on what to order and how to eat it.</p>
+                <p className="text-sm text-charcoal/70 mt-2">New to sushi? Start here, tips on what to order and how to eat it.</p>
               </Link>
               <Link href="/blog/how-to-eat-sushi-guide" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Etiquette</span>

@@ -145,16 +145,16 @@ export default function BestSeafoodDallas() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <article className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-8 md:p-12">
                             <p className="text-xl text-charcoal/80 mb-8">
-        Dallas is 250 miles from the nearest coastline—and yet some of the freshest sushi, sashimi, and seafood in Texas lands here daily. The secret? Direct sourcing, overnight air freight, and chefs who won't serve anything that wasn't swimming 48 hours ago.
+        Dallas is 250 miles from the nearest coastline, and yet some of the freshest sushi, sashimi, and seafood in Texas lands here daily. The secret? Direct sourcing, overnight air freight, and chefs who won't serve anything that wasn't swimming 48 hours ago.
       </p>
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Dallas's seafood scene blends global culinary influences, creating innovative dishes that honor traditional preparation methods while embracing contemporary techniques."</p>
-                                <span className="text-sm text-charcoal/80">— DFW Food Culture</span>
+                                <span className="text-sm text-charcoal/80">, DFW Food Culture</span>
                             </div>
 
                             <DidYouKnow
-                                fact="Despite being over 250 miles from the nearest coast, Dallas receives more than 50,000 pounds of fresh seafood daily through DFW International Airport's cargo hub — one of the busiest in the world. This means restaurants like Jinbeh can source fish that was swimming in the ocean just 24-48 hours before landing on your plate."
+                                fact="Despite being over 250 miles from the nearest coast, Dallas receives more than 50,000 pounds of fresh seafood daily through DFW International Airport's cargo hub, one of the busiest in the world. This means restaurants like Jinbeh can source fish that was swimming in the ocean just 24-48 hours before landing on your plate."
                                 source="DFW Airport Authority & National Fisheries Institute"
                             />
 
@@ -213,7 +213,7 @@ export default function BestSeafoodDallas() {
                             </div>
 
                             <ProTip variant="insider">
-                                <strong>Seafood lovers' tip:</strong> Jinbeh regulars say the sushi bar is the best seat in the house — you'll watch chefs slice each piece to order from fish delivered multiple times per week. The Seafood Platter is the crowd favorite for first-timers, and reviewers consistently praise the salmon sashimi as "melt-in-your-mouth" fresh. Pair it with a sake flight for the full experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
+                                <strong>Seafood lovers' tip:</strong> Jinbeh regulars say the sushi bar is the best seat in the house, you'll watch chefs slice each piece to order from fish delivered multiple times per week. The Seafood Platter is the crowd favorite for first-timers, and reviewers consistently praise the salmon sashimi as "melt-in-your-mouth" fresh. Pair it with a sake flight for the full experience. <Link href="/reservations" className="text-accent-red hover:underline">Reserve a sushi bar seat →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏪 Seafood Markets Worth Exploring</h2>

@@ -54,7 +54,7 @@ const faqSchema = {
             name: "What drink specials does Jinbeh offer during happy hour?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "Our happy hour features $4 Japanese draft beer, $5 small hot sake, and $6 wine — premium pours at unbeatable prices.",
+                text: "Our happy hour features $4 Japanese draft beer, $5 small hot sake, and $6 wine, premium pours at unbeatable prices.",
             },
         },
         {
@@ -90,8 +90,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 4, "name": "Best Happy Hour Frisco TX: Top Spots & Deals" },
+        { "@type": "ListItem", "position": 3, "name": "Best Happy Hour Frisco TX: Top Spots & Deals", "item": "https://jinbeh.com/blog/best-happy-hour-frisco-tx" },
     ],
 };
 
@@ -273,9 +272,9 @@ export default function BestHappyHourFrisco() {
 
  <ul className="space-y-2">
  <li><strong>$4 Japanese draft beer</strong> on tap: Sapporo, Asahi, Kirin, and more.</li>
- <li><strong>$5 small hot sake</strong> — house sake served warm in a tokkuri.</li>
+ <li><strong>$5 small hot sake</strong>, house sake served warm in a tokkuri.</li>
  <li><strong>$6 wine</strong> by the glass from a curated list.</li>
- <li><strong>Great atmosphere</strong> — Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
+ <li><strong>Great atmosphere</strong>, Relax at the <Link href="/bar" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">bar</Link> or grab a table. Perfect for dates, coworkers, or solo unwinding.</li>
  </ul>
 
  <div className="my-10 grid grid-cols-1 sm:grid-cols-3 gap-4 not-prose">
@@ -310,6 +309,42 @@ export default function BestHappyHourFrisco() {
                                         a welcoming bar area make it a no-stress stop. Visit us to <Link href="/reservations" className="text-deep-indigo hover:text-accent-red transition-colors font-medium">make a reservation</Link> for happy hour.
                                     </p>
                                 </div>
+
+                                {/* Featured cocktail image — Jinbeh signature cocktails */}
+                                <figure className="my-16 not-prose">
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 rounded-2xl overflow-hidden">
+                                        <div className="relative aspect-[3/4]">
+                                            <Image
+                                                src="/images/catalog/23-C060324-6842.jpg"
+                                                alt="Jinbeh signature lychee martini cocktail with tropical garnish, served in a curved-stem martini glass against the bar's red bokeh lighting"
+                                                fill
+                                                className="object-cover"
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                            />
+                                        </div>
+                                        <div className="relative aspect-[3/4]">
+                                            <Image
+                                                src="/images/catalog/24-C060324-6852.jpg"
+                                                alt="Jinbeh refreshing pineapple highball cocktail with mint and a pineapple wedge garnish"
+                                                fill
+                                                className="object-cover"
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                            />
+                                        </div>
+                                        <div className="relative aspect-[3/4]">
+                                            <Image
+                                                src="/images/catalog/25-C060324-6856.jpg"
+                                                alt="Jinbeh espresso martini cocktail with chocolate drizzle and floating coffee beans, in a modern curved-stem martini glass"
+                                                fill
+                                                className="object-cover"
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                            />
+                                        </div>
+                                    </div>
+                                    <figcaption className="text-center text-sm text-charcoal/60 mt-3 italic">
+                                        Three Jinbeh signature cocktails worth pulling up a bar stool for: lychee martini, pineapple-mint highball, and espresso martini.
+                                    </figcaption>
+                                </figure>
 
                                 {/* FAQ Section */}
                                 <div className="mt-16">

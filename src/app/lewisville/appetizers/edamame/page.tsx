@@ -84,14 +84,14 @@ const faqSchema = {
       "name": "Is Edamame available for takeout and pairs well with Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Edamame at travels well for takeout and pairs perfectly with our Happy Hour drinks ( Japanese draft beer, sake, wine — Mon-Fri 5:00-6:30 PM). Call (972) 221-3888 or order online."
+        "text": "Yes! Edamame at travels well for takeout and pairs perfectly with our Happy Hour drinks ( Japanese draft beer, sake, wine, Mon-Fri 5:00-6:30 PM). Call (972) 221-3888 or order online."
       }
     }
   ]
 };
 
 export default function EdamameLewisvillePage() {
-  const item = { ...getMenuItem("edamame", "appetizers")!, jinbehStory: "Regular edamame gets the Jinbeh upgrade — sautéed with our spicy sauce and garlic, with an intentional touch of char. One of those items where the preparation makes a humble ingredient feel special." };
+  const item = { ...getMenuItem("edamame", "appetizers")!, jinbehStory: "Regular edamame gets the Jinbeh upgrade, sautéed with our spicy sauce and garlic, with an intentional touch of char. One of those items where the preparation makes a humble ingredient feel special." };
   const location = locations["lewisville"];
 
   return (

@@ -194,7 +194,7 @@ export default function CateringPage() {
                 Catering for Every Occasion
               </h2>
               <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                From sushi platters for the office to hibachi party trays for celebrations — we bring Jinbeh&apos;s fresh, authentic flavors to your venue. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium">complete catering guide</Link> for planning tips.
+                From sushi platters for the office to hibachi party trays for celebrations, we bring Jinbeh&apos;s fresh, authentic flavors to your venue. Explore our <Link href="/blog/hibachi-catering-dfw" className="text-accent-red underline decoration-accent-red/40 hover:decoration-accent-red font-medium">complete catering guide</Link> for planning tips.
               </p>
             </div>
 
@@ -325,7 +325,7 @@ export default function CateringPage() {
                   Request a Catering Quote
                 </h2>
                 <p className="text-warm-ivory/70">
-                  Tell us about your event and we&apos;ll create a custom proposal. We serve the entire DFW metroplex — Frisco, Lewisville, Plano, and beyond.
+                  Tell us about your event and we&apos;ll create a custom proposal. We serve the entire DFW metroplex, Frisco, Lewisville, Plano, and beyond.
                 </p>
               </div>
 

@@ -384,7 +384,7 @@ export default function FAQPage() {
               </h1>
             </RevealSection>
             <p className="text-xl text-white/80">
-              Your Jinbeh FAQ resource — answers to Japanese restaurant questions about our menu, hibachi dining FAQ, sushi questions, restaurant hours, dietary restrictions, reservation questions, and Frisco Lewisville dining.
+              Your Jinbeh FAQ resource, answers to Japanese restaurant questions about our menu, hibachi dining FAQ, sushi questions, restaurant hours, dietary restrictions, reservation questions, and Frisco Lewisville dining.
             </p>
           </div>
         </section>
@@ -459,7 +459,7 @@ export default function FAQPage() {
               <Link href="/blog/types-of-sushi" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Sushi Guide</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">Types of Sushi</h3>
-                <p className="text-sm text-charcoal/70 mt-2">From nigiri to specialty rolls — discover every style of sushi.</p>
+                <p className="text-sm text-charcoal/70 mt-2">From nigiri to specialty rolls, discover every style of sushi.</p>
               </Link>
               <Link href="/blog/sake-pairing-guide" className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Drinks</span>

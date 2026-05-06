@@ -68,7 +68,7 @@ const faqSchema = {
       "name": "Can I order Seared Ahi Tuna during Happy Hour?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — Seared Ahi Tuna is on the regular menu and pairs beautifully with our Happy Hour drinks: Japanese draft beer, sake, and wine (Mon-Fri 5:00-6:30 PM). Note that Happy Hour pricing applies to drinks only. Call (972) 221-3888 for details."
+        "text": "Yes, Seared Ahi Tuna is on the regular menu and pairs beautifully with our Happy Hour drinks: Japanese draft beer, sake, and wine (Mon-Fri 5:00-6:30 PM). Note that Happy Hour pricing applies to drinks only. Call (972) 221-3888 for details."
       }
     },
     {

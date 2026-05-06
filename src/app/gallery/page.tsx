@@ -10,7 +10,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Gallery | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
-    "See Jinbeh in action — hibachi fire shows, hand-crafted sushi, signature cocktails, and private dining rooms at our Frisco & Lewisville locations.",
+    "See Jinbeh in action, hibachi fire shows, hand-crafted sushi, signature cocktails, and private dining rooms at our Frisco & Lewisville locations.",
   keywords: [
     "jinbeh photos",
     "hibachi restaurant photos",
@@ -43,7 +43,7 @@ const gallerySchema = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
   "name": "Jinbeh Japanese Restaurant Photo Gallery",
-  "description": "Jinbeh photos Japanese restaurant gallery — browse hibachi restaurant photos, sushi photos, and dining experiences at our Frisco restaurant and Lewisville restaurant locations.",
+  "description": "Jinbeh photos Japanese restaurant gallery, browse hibachi restaurant photos, sushi photos, and dining experiences at our Frisco restaurant and Lewisville restaurant locations.",
   "url": "https://jinbeh.com/gallery",
   "image": [
     {

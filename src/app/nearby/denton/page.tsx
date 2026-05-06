@@ -459,7 +459,7 @@ export default function DentonNearbyPage() {
               The Jinbeh Hibachi Experience
             </h2>
             <p className="text-warm-ivory/80 max-w-3xl mx-auto mb-12">
-              More than just a meal—a spectacular performance. Our teppanyaki chefs combine culinary skill with entertaining showmanship, creating unforgettable dining moments for Denton residents.
+              More than just a meal, a spectacular performance. Our teppanyaki chefs combine culinary skill with entertaining showmanship, creating unforgettable dining moments for Denton residents.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">

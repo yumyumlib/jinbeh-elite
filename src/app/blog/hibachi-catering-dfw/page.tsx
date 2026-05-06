@@ -31,7 +31,7 @@ const faqs = [
     },
     {
         question: "What's the minimum guest count for catering?",
-        answer: "Our catering works best for groups of 20 or more. However, we encourage smaller groups to contact us directly—we may be able to accommodate intimate gatherings depending on availability.",
+        answer: "Our catering works best for groups of 20 or more. However, we encourage smaller groups to contact us directly, we may be able to accommodate intimate gatherings depending on availability.",
     },
     {
         question: "How far in advance should I book catering?",
@@ -135,12 +135,12 @@ export default function HibachiCatering() {
               </div>
 
                             <div className="bg-gradient-to-br from-green-600/10 to-soft-gold/10 border-l-4 border-green-600 rounded-r-xl p-6 my-8">
-                                <p className="text-charcoal italic">"Our catering team brings the full Jinbeh experience to your location—complete with skilled chefs, fresh ingredients, and the entertainment that makes hibachi unforgettable."</p>
-                                <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                <p className="text-charcoal italic">"Our catering team brings the full Jinbeh experience to your location, complete with skilled chefs, fresh ingredients, and the entertainment that makes hibachi unforgettable."</p>
+                                <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                             </div>
 
                             <DidYouKnow
-                                fact="The event catering industry has grown by 15% since the pandemic as people rediscovered the joy of in-person celebrations. Japanese food catering demand specifically has risen by 40%, with hibachi being the #1 most-requested interactive food experience for corporate events and private parties — beating out traditional BBQ for the first time."
+                                fact="The event catering industry has grown by 15% since the pandemic as people rediscovered the joy of in-person celebrations. Japanese food catering demand specifically has risen by 40%, with hibachi being the #1 most-requested interactive food experience for corporate events and private parties, beating out traditional BBQ for the first time."
                                 source="International Caterers Association & Event Industry Council"
                             />
 
@@ -167,7 +167,7 @@ export default function HibachiCatering() {
                             </ul>
 
                             <ProTip variant="insider">
-                                <strong>Catering booking tip:</strong> For the best experience, book at least 3 weeks in advance for weekend events. Our most popular catering packages include the "Steak & Shrimp Show" for corporate events and the "Family Feast" for backyard parties. Guests consistently say the live cooking entertainment is the highlight of their events — "better than hiring a DJ!" <Link href="/catering" className="text-accent-red hover:underline">Get a custom quote →</Link>
+                                <strong>Catering booking tip:</strong> For the best experience, book at least 3 weeks in advance for weekend events. Our most popular catering packages include the "Steak & Shrimp Show" for corporate events and the "Family Feast" for backyard parties. Guests consistently say the live cooking entertainment is the highlight of their events, "better than hiring a DJ!" <Link href="/catering" className="text-accent-red hover:underline">Get a custom quote →</Link>
                             </ProTip>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">❓ Frequently Asked Questions</h2>

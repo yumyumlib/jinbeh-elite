@@ -255,7 +255,7 @@ export default function AdultBirthdayPartyIdeas() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-        Your friend's birthday is in two weeks and you're Googling "adult birthday party ideas" at midnight. We've been there. The good news: the best birthday parties for adults aren't complicated—they're experiences. No balloon arches required.
+        Your friend's birthday is in two weeks and you're Googling "adult birthday party ideas" at midnight. We've been there. The good news: the best birthday parties for adults aren't complicated, they're experiences. No balloon arches required.
       </p>
 
                                     <div className="bg-gradient-to-br from-soft-gold/10 to-soft-gold/10 border-l-4 border-soft-gold rounded-r-2xl p-6 my-8">
@@ -264,7 +264,7 @@ export default function AdultBirthdayPartyIdeas() {
                                             Whether you choose an elegant masquerade, an interactive hibachi experience, or an
                                             adventurous escape room, make it uniquely yours."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -287,7 +287,7 @@ export default function AdultBirthdayPartyIdeas() {
  <h3 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">80s Retro Party</h3>
  <p className="text-charcoal/80 mb-6">
  Relive the vibrant and colorful 80s with a retro party. Ask guests to dress in their favorite
- 80s outfits—think neon colors, leg warmers, and big hair. Play iconic 80s hits, serve retro
+ 80s outfits, think neon colors, leg warmers, and big hair. Play iconic 80s hits, serve retro
  snacks, and decorate with posters of 80s stars. This theme brings nostalgia and fun energy to
  your celebration.
  </p>
@@ -478,7 +478,7 @@ export default function AdultBirthdayPartyIdeas() {
 
                                 <div className="mt-16 p-8 bg-gradient-to-br from-soft-gold to-accent-red rounded-3xl text-center">
                                     <ProTip variant="insider">
-                                        <strong>Birthday celebration insider tip:</strong> Book your hibachi birthday at Jinbeh for the ultimate adults-only experience. Start with sake cocktails at the bar during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, then move to the hibachi table where your chef becomes the entertainment. For milestone birthdays (30th, 40th, 50th), our team arranges special touches — just mention it when you call. Groups of 8+ should book 2-3 weeks ahead for weekend dates. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
+                                        <strong>Birthday celebration insider tip:</strong> Book your hibachi birthday at Jinbeh for the ultimate adults-only experience. Start with sake cocktails at the bar during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>, then move to the hibachi table where your chef becomes the entertainment. For milestone birthdays (30th, 40th, 50th), our team arranges special touches, just mention it when you call. Groups of 8+ should book 2-3 weeks ahead for weekend dates. <Link href="/reservations" className="text-accent-red hover:underline">Make a reservation →</Link>
                                     </ProTip>
 
                                     <PillarCTA type="catering" />

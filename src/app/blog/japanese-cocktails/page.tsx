@@ -249,7 +249,7 @@ export default function JapaneseCocktails() {
                                         <span className="text-accent-red group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
                                     <div className="px-6 pb-6 text-charcoal/80">
-                                        <p>Japanese cocktails emphasize delicate balance, intricate presentation, and quality ingredients. Each element—from glassware to garnish—is thoughtfully chosen to enhance the overall drinking experience.</p>
+                                        <p>Japanese cocktails emphasize delicate balance, intricate presentation, and quality ingredients. Each element, from glassware to garnish, is thoughtfully chosen to enhance the overall drinking experience.</p>
                                     </div>
                                 </details>
 
@@ -266,7 +266,7 @@ export default function JapaneseCocktails() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Japanese cocktail insider tip:</strong> At Jinbeh, our lychee martini is legendary—it's the most-ordered cocktail on our menu. Start your evening at the <Link href="/bar" className="text-accent-red hover:underline">bar</Link> during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on sake cocktails and Japanese whisky pours. Ask your bartender to recommend a sake-based cocktail paired with your dinner order—they're trained to match flavors!
+                                    <strong>Japanese cocktail insider tip:</strong> At Jinbeh, our lychee martini is legendary, it's the most-ordered cocktail on our menu. Start your evening at the <Link href="/bar" className="text-accent-red hover:underline">bar</Link> during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on sake cocktails and Japanese whisky pours. Ask your bartender to recommend a sake-based cocktail paired with your dinner order, they're trained to match flavors!
                                 </ProTip>
 
                                 <PillarCTA type="catering" />

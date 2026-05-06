@@ -9,7 +9,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Top Steakhouses in Lewisville TX: Best Steak Spots | Jinbeh",
     description:
-        "Discover the best steakhouses in Lewisville TX. From Jinbeh's sizzling hibachi filet mignon to classic Texas steakhouse experiences—find your perfect.",
+        "Discover the best steakhouses in Lewisville TX. From Jinbeh's sizzling hibachi filet mignon to classic Texas steakhouse experiences, find your perfect.",
     keywords: [
         "steakhouses lewisville tx",
         "best steak lewisville",
@@ -41,11 +41,11 @@ const articleSchema = {
 const faqs = [
     {
         question: "What is the best steakhouse in Lewisville TX?",
-        answer: "Jinbeh Japanese Restaurant offers a unique steak experience in Lewisville—our hibachi filet mignon is cooked tableside by skilled chefs with entertaining knife tricks and fire shows. For a traditional steakhouse, Bistecca Italian Steakhouse in nearby Highland Village offers fine dining steaks. The best choice depends on whether you want entertainment (Jinbeh) or classic upscale dining (Bistecca).",
+        answer: "Jinbeh Japanese Restaurant offers a unique steak experience in Lewisville, our hibachi filet mignon is cooked tableside by skilled chefs with entertaining knife tricks and fire shows. For a traditional steakhouse, Bistecca Italian Steakhouse in nearby Highland Village offers fine dining steaks. The best choice depends on whether you want entertainment (Jinbeh) or classic upscale dining (Bistecca).",
     },
     {
         question: "Does Jinbeh Lewisville serve steak?",
-        answer: "Yes! Our Lewisville location offers premium hibachi steaks including filet mignon, New York strip, and ribeye—all prepared right at your table by expert teppanyaki chefs. Our guests say the 'Filet and Lobster Tail are must-tries.' The interactive cooking experience makes it more than just a steak dinner.",
+        answer: "Yes! Our Lewisville location offers premium hibachi steaks including filet mignon, New York strip, and ribeye, all prepared right at your table by expert teppanyaki chefs. Our guests say the 'Filet and Lobster Tail are must-tries.' The interactive cooking experience makes it more than just a steak dinner.",
     },
     {
         question: "What cuts of steak can I get at Jinbeh?",
@@ -53,7 +53,7 @@ const faqs = [
     },
     {
         question: "Is hibachi steak different from a regular steakhouse?",
-        answer: "Hibachi steak (teppanyaki-style) is cooked on a flat iron grill right at your table, giving you a front-row seat to the chef's performance. The result is a perfectly seared steak with a unique smoky flavor. Unlike traditional steakhouses where your food arrives from the kitchen, at Jinbeh you watch every step—from seasoning to plating.",
+        answer: "Hibachi steak (teppanyaki-style) is cooked on a flat iron grill right at your table, giving you a front-row seat to the chef's performance. The result is a perfectly seared steak with a unique smoky flavor. Unlike traditional steakhouses where your food arrives from the kitchen, at Jinbeh you watch every step, from seasoning to plating.",
     },
     {
         question: "Can I celebrate a birthday at a steakhouse in Lewisville?",
@@ -202,11 +202,11 @@ export default function BestSteakhousesLewisville() {
                   Jinbeh Lewisville is <strong>#1 Best Hibachi</strong> and <strong>#1 Best Tempura</strong> on OpenTable, plus recognized as <strong>Best Value</strong> and <strong>Best Food</strong> in the Dallas suburbs &mdash; earned entirely through diner reviews. Combined with multiple D Magazine awards and features in Eater Dallas and The Dallas Morning News, Jinbeh sets the standard for Japanese steakhouse dining in Lewisville.
                 </p>
               </div>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Texans consume an estimated 46 pounds of beef per person per year — more than any other state and nearly double the national average. The tradition of steak-focused dining runs deep in North Texas, but the rise of Japanese teppanyaki steakhouses like Jinbeh has added an exciting new dimension: the same premium cuts, but cooked with theatrical flair right at your table."
+                                        fact="Texans consume an estimated 46 pounds of beef per person per year, more than any other state and nearly double the national average. The tradition of steak-focused dining runs deep in North Texas, but the rise of Japanese teppanyaki steakhouses like Jinbeh has added an exciting new dimension: the same premium cuts, but cooked with theatrical flair right at your table."
                                         source="Texas Beef Council & USDA"
                                     />
 
@@ -271,7 +271,7 @@ export default function BestSteakhousesLewisville() {
                                                 <td className="p-4">Japanese Hibachi + Sushi</td>
                                                 <td className="p-4">Entertainment, celebrations, groups</td>
                                                 <td className="p-4">$$</td>
- <td className="p-4 text-green-600 italic">Minimal — "outstanding service"</td>
+ <td className="p-4 text-green-600 italic">Minimal, "outstanding service"</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Bistecca Italian</td>
@@ -324,7 +324,7 @@ export default function BestSteakhousesLewisville() {
                                                 At most steakhouses, your steak arrives from the kitchen. At Jinbeh, it arrives
                                                 with a show. Our teppanyaki chefs slice, season, and flame-grill your filet mignon
                                                 right at the table while you watch. Guests consistently call the experience "outstanding"
-                                                and prefer us over the chains—because every meal here feels personal, not corporate.
+                                                and prefer us over the chains, because every meal here feels personal, not corporate.
                                             </p>
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
@@ -341,7 +341,7 @@ export default function BestSteakhousesLewisville() {
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>Allergy-friendly — chefs accommodate with care</span>
+                                                    <span>Allergy-friendly, chefs accommodate with care</span>
                                                 </li>
                                             </ul>
                                             <Link
@@ -361,12 +361,12 @@ export default function BestSteakhousesLewisville() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">"The teppanyaki is amazing and delicious. Outstanding service—friendly and professional staff who provide an entertaining experience."</p>
-                                            <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Lewisville</p>
+                                            <p className="text-charcoal/80 italic mb-3">"The teppanyaki is amazing and delicious. Outstanding service, friendly and professional staff who provide an entertaining experience."</p>
+                                            <p className="text-sm text-charcoal/60">, Google Review, Jinbeh Lewisville</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <p className="text-charcoal/80 italic mb-3">"We prefer Jinbeh over Benihana any day. The food is tastier, the service is more personal, and the chefs actually engage with you."</p>
-                                            <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Lewisville</p>
+                                            <p className="text-sm text-charcoal/60">, Google Review, Jinbeh Lewisville</p>
                                         </div>
                                     </div>
 
@@ -392,12 +392,12 @@ export default function BestSteakhousesLewisville() {
                                     <p>
                                         A traditional steakhouse delivers a focused, quiet dining experience with premium cuts and wine lists.
                                         A <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki steakhouse</Link> like Jinbeh delivers the same premium
-                                        steak quality <em>plus</em> a live chef performance. If you want your dinner to be an event—especially
-                                        for celebrations or group outings—hibachi-style steak dining is the clear winner.
+                                        steak quality <em>plus</em> a live chef performance. If you want your dinner to be an event, especially
+                                        for celebrations or group outings, hibachi-style steak dining is the clear winner.
                                     </p>
 
                                     <ProTip variant="insider">
-                                        <strong>Lewisville steak tip:</strong> Jinbeh guests consistently say they "prefer Jinbeh over Benihana" for the more personal service and better-tasting food. Ask for the Filet and Colossal Shrimp combo — it's the best-seller. For birthday celebrations, the chefs put on an extra-special show. Book the Lewisville location for typically shorter wait times than Frisco on weekends. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+                                        <strong>Lewisville steak tip:</strong> Jinbeh guests consistently say they "prefer Jinbeh over Benihana" for the more personal service and better-tasting food. Ask for the Filet and Colossal Shrimp combo, it's the best-seller. For birthday celebrations, the chefs put on an extra-special show. Book the Lewisville location for typically shorter wait times than Frisco on weekends. <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                                     </ProTip>
                                 </div>
 

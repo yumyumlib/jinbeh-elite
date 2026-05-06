@@ -28,7 +28,7 @@ const faqs = [
     { question: "Why should I choose Jinbeh for Asian dining?", answer: "We combine authentic Japanese techniques with fresh ingredients. Our hibachi chefs put on a show while cooking. Dinner and a show!" },
     { question: "Is Jinbeh family-friendly?", answer: "Absolutely! Families love us. Kids are fascinated by hibachi fire tricks. We have children's menus and a welcoming atmosphere for all ages." },
     { question: "How do I make a reservation at Jinbeh?", answer: "Call our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224. We recommend reservations for hibachi tables, especially weekends." },
-    { question: "Can I get Asian food delivery in Dallas?", answer: "Many Dallas Asian restaurants offer delivery through apps like DoorDash and Uber Eats. Jinbeh offers takeout for sushi and bento boxes. However, the hibachi experience is best enjoyed in person — the live cooking show and sizzling presentation are part of what makes it special!" }
+    { question: "Can I get Asian food delivery in Dallas?", answer: "Many Dallas Asian restaurants offer delivery through apps like DoorDash and Uber Eats. Jinbeh offers takeout for sushi and bento boxes. However, the hibachi experience is best enjoyed in person, the live cooking show and sizzling presentation are part of what makes it special!" }
 ];
 
 const schemas = [
@@ -160,11 +160,11 @@ export default function AsianCuisineDallas() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Dallas's culinary scene is continually evolving with chefs experimenting with flavors and techniques, ensuring there's always something new to discover. Whether enjoying comforting ramen or savory Thai curry, the city offers rich tapestry of Asian flavors."</p>
-                                <span className="text-sm text-charcoal/80">— DFW Food Culture</span>
+                                <span className="text-sm text-charcoal/80">, DFW Food Culture</span>
                             </div>
 
                             <DidYouKnow
-                                fact="The Dallas-Fort Worth metroplex has the 4th largest Asian-American population of any metro area in the South, with over 400,000 residents of Asian descent. This vibrant community has fueled an explosion of authentic Asian restaurants — DFW now has more than 2,500 Asian dining establishments, ranging from family-run noodle shops to Michelin-recognized fine dining."
+                                fact="The Dallas-Fort Worth metroplex has the 4th largest Asian-American population of any metro area in the South, with over 400,000 residents of Asian descent. This vibrant community has fueled an explosion of authentic Asian restaurants, DFW now has more than 2,500 Asian dining establishments, ranging from family-run noodle shops to Michelin-recognized fine dining."
                                 source="U.S. Census Bureau & DFW Asian-American Chamber of Commerce"
                             />
 

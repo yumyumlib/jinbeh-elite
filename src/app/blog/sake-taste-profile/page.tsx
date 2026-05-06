@@ -195,7 +195,7 @@ export default function SakeTasteProfile() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-        Does sake taste like wine? Like beer? Like nothing you've tried before? The honest answer: it depends entirely on which sake you pick. The difference between a bottle and a bottle isn't just price—it's an entirely different drinking experience.
+        Does sake taste like wine? Like beer? Like nothing you've tried before? The honest answer: it depends entirely on which sake you pick. The difference between a bottle and a bottle isn't just price, it's an entirely different drinking experience.
       </p>
 
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
@@ -203,7 +203,7 @@ export default function SakeTasteProfile() {
                                             "Sake is like a symphony of flavors. Each sip reveals different taste elements, from fruity and
                                             floral notes to earthy undertones. Learning to appreciate sake is a journey of discovery."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -211,7 +211,7 @@ export default function SakeTasteProfile() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Sake contains over 400 identified flavor compounds—more than wine (approximately 200). The flavor complexity comes from the unique parallel fermentation process where rice starch converts to sugar and alcohol simultaneously. Master sake brewers (toji) can identify over 100 distinct flavor notes in a single sake, and Japan's National Research Institute of Brewing has developed a 'sake flavor wheel' with 170 descriptors."
+                                        fact="Sake contains over 400 identified flavor compounds, more than wine (approximately 200). The flavor complexity comes from the unique parallel fermentation process where rice starch converts to sugar and alcohol simultaneously. Master sake brewers (toji) can identify over 100 distinct flavor notes in a single sake, and Japan's National Research Institute of Brewing has developed a 'sake flavor wheel' with 170 descriptors."
                                         source="National Research Institute of Brewing, Japan"
                                     />
 

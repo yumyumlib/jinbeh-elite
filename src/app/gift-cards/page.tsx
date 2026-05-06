@@ -11,7 +11,7 @@ const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Jinbeh Restaurant Gift Card",
-    "description": "Give the gift of an unforgettable dining experience. Purchase Jinbeh gift cards for hibachi, sushi, and Japanese cuisine in Frisco and Lewisville TX. Available for purchase in-store or by phone.",
+    "description": "Give the gift of an unforgettable dining experience. Jinbeh gift cards for hibachi, sushi, and Japanese cuisine in Frisco and Lewisville TX. Available for in-person purchase at either location only — gift cards cannot be purchased over the phone or mailed.",
     "brand": {
         "@type": "Brand",
         "name": "Jinbeh Japanese Restaurant"
@@ -137,79 +137,47 @@ export default function GiftCardsPage() {
                             </div>
                         </RevealSection>
 
-                        {/* Purchase Methods */}
-                        <div className="grid md:grid-cols-2 gap-8 mb-16">
-                            {/* In-Store */}
-                            <RevealSection delay={100} direction="left">
-                                <MagicCard
-                                    className="h-full bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none"
-                                    gradientColor="rgba(201, 162, 39, 0.15)"
-                                >
-                                    <div className="relative w-full h-36 rounded-xl overflow-hidden mb-6">
-                                        <Image
-                                            src="/images/frisco/FriscoLocation_Bar_Front.jpg"
-                                            alt="Jinbeh front desk where gift cards can be purchased"
-                                            fill
-                                            className="object-cover"
-                                            sizes="(max-width: 768px) 100vw, 400px"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
-                                    </div>
-                                    <h3 className="text-2xl font-heading font-semibold text-charcoal mb-3">
-                                        Purchase In-Store
-                                    </h3>
-                                    <p className="text-charcoal/70 mb-6">
-                                        Visit either Jinbeh location to purchase physical gift cards in any amount.
-                                    </p>
-                                    <div className="flex flex-col items-center gap-3 mt-auto mb-4">
-                                        <Link
-                                            href="/frisco"
-                                            className="inline-block w-full sm:w-3/4 py-3 bg-warm-ivory text-charcoal rounded-xl font-medium hover:bg-warm-ivory-dark transition-colors text-center"
-                                        >
-                                            Frisco Location
-                                        </Link>
-                                        <Link
-                                            href="/lewisville"
-                                            className="inline-block w-full sm:w-3/4 py-3 bg-warm-ivory text-charcoal rounded-xl font-medium hover:bg-warm-ivory-dark transition-colors text-center"
-                                        >
-                                            Lewisville Location
-                                        </Link>
-                                    </div>
-                                </MagicCard>
-                            </RevealSection>
-
-                            {/* By Phone */}
-                            <RevealSection delay={200} direction="right">
-                                <MagicCard
-                                    className="h-full bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-none flex flex-col"
-                                    gradientColor="rgba(201, 162, 39, 0.15)"
-                                >
-                                    <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-deep-indigo to-charcoal rounded-2xl flex items-center justify-center">
-                                        <span className="text-4xl">📞</span>
-                                    </div>
-                                    <h3 className="text-2xl font-heading font-semibold text-charcoal mb-3">
-                                        Order by Phone
-                                    </h3>
-                                    <p className="text-charcoal/70 mb-6">
-                                        Call us to order gift cards. We can mail them or have them ready for pickup.
-                                    </p>
-                                    <div className="flex flex-col items-center gap-3 mt-auto mb-4">
-                                        <a
-                                            href="tel:+12146191200"
-                                            className="inline-block w-full sm:w-3/4 py-3 bg-accent-red text-white rounded-xl font-medium hover:bg-accent-red-hover transition-colors text-center"
-                                        >
-                                            Frisco: (214) 619-1200
-                                        </a>
-                                        <a
-                                            href="tel:+12144882224"
-                                            className="inline-block w-full sm:w-3/4 py-3 bg-deep-indigo text-white rounded-xl font-medium hover:bg-deep-indigo-hover transition-colors text-center"
-                                        >
-                                            Lewisville: (214) 488-2224
-                                        </a>
-                                    </div>
-                                </MagicCard>
-                            </RevealSection>
-                        </div>
+                        {/* In-person purchase only — single prominent card */}
+                        <RevealSection delay={100}>
+                            <MagicCard
+                                className="bg-white rounded-2xl shadow-lg p-8 md:p-10 text-center hover:shadow-xl transition-all duration-300 border-none mb-10"
+                                gradientColor="rgba(201, 162, 39, 0.15)"
+                            >
+                                <div className="relative w-full h-44 rounded-xl overflow-hidden mb-6 max-w-2xl mx-auto">
+                                    <Image
+                                        src="/images/frisco/FriscoLocation_Bar_Front.jpg"
+                                        alt="Jinbeh front desk where gift cards can be purchased"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 800px"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
+                                </div>
+                                <h3 className="text-2xl md:text-3xl font-heading font-semibold text-charcoal mb-3">
+                                    Purchase In-Person at Either Location
+                                </h3>
+                                <p className="text-charcoal/70 max-w-xl mx-auto mb-3">
+                                    Jinbeh gift cards are available for in-person purchase at both our Frisco and Lewisville locations. Stop by during business hours and our team will set you up with a physical gift card in any amount.
+                                </p>
+                                <p className="text-charcoal/60 text-sm max-w-xl mx-auto mb-7">
+                                    Please note: gift cards cannot be purchased over the phone or by mail. In-person purchase only.
+                                </p>
+                                <div className="flex flex-col sm:flex-row justify-center gap-3 max-w-xl mx-auto">
+                                    <Link
+                                        href="/frisco"
+                                        className="flex-1 inline-block py-3 bg-accent-red text-white rounded-xl font-semibold hover:bg-accent-red-hover transition-colors text-center"
+                                    >
+                                        📍 Visit Frisco
+                                    </Link>
+                                    <Link
+                                        href="/lewisville"
+                                        className="flex-1 inline-block py-3 bg-deep-indigo text-white rounded-xl font-semibold hover:bg-deep-indigo-hover transition-colors text-center"
+                                    >
+                                        📍 Visit Lewisville
+                                    </Link>
+                                </div>
+                            </MagicCard>
+                        </RevealSection>
 
                         {/* Popular Amounts */}
                         <RevealSection delay={300}>

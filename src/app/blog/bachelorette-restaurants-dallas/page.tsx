@@ -229,7 +229,7 @@ export default function BacheloretteRestaurantsDallas() {
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Planning a bachelorette celebration in Dallas?</strong> You've come to the right place.
-                                        A bachelorette dinner should be more than just a meal—it's an experience, a celebration, and
+                                        A bachelorette dinner should be more than just a meal, it's an experience, a celebration, and
                                         a memory-making opportunity. Whether the bride-to-be prefers interactive entertainment, elegant
                                         dining, or casual fun with friends, Dallas offers incredible options.
                                     </p>
@@ -240,7 +240,7 @@ export default function BacheloretteRestaurantsDallas() {
                                             entertain and delight to our customizable menus and dedicated service, we're here to
                                             make your night unforgettable."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Team</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Team</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -349,7 +349,7 @@ export default function BacheloretteRestaurantsDallas() {
                                             <p className="text-white/90 mb-4">
                                                 Jinbeh is the ideal choice for bachelorette celebrations. Our hibachi tables offer
                                                 interactive entertainment where skilled chefs perform cooking shows right before your guests.
-                                                The energy, the flames, the artistry—it's an experience that creates lasting memories.
+                                                The energy, the flames, the artistry, it's an experience that creates lasting memories.
                                             </p>
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
@@ -390,7 +390,7 @@ export default function BacheloretteRestaurantsDallas() {
 
                                     <p>
                                         Successful bachelorette celebrations require planning. Book your restaurant 4-6 weeks in advance,
-                                        especially for larger groups. Ask about <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options for a more exclusive atmosphere. Contact the venue about special requests—many restaurants will customize
+                                        especially for larger groups. Ask about <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options for a more exclusive atmosphere. Contact the venue about special requests, many restaurants will customize
                                         menus, arrange decorations, or create personalized experiences.
                                     </p>
 
@@ -490,7 +490,7 @@ export default function BacheloretteRestaurantsDallas() {
                                 {/* CTA */}
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Bachelorette party insider tip:</strong> Start your celebration with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> sake cocktails at the bar, then move to the hibachi table for dinner and a show. For groups of 8+, ask about our semi-<Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline">private dining</Link> area for a more exclusive experience. Our lychee martini is a bride-squad favorite — reviewers call it "a must-order." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bachelorette dinner →</Link>
+                                        <strong>Bachelorette party insider tip:</strong> Start your celebration with <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> sake cocktails at the bar, then move to the hibachi table for dinner and a show. For groups of 8+, ask about our semi-<Link href="/blog/restaurants-private-rooms" className="text-accent-red hover:underline">private dining</Link> area for a more exclusive experience. Our lychee martini is a bride-squad favorite, reviewers call it "a must-order." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your bachelorette dinner →</Link>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

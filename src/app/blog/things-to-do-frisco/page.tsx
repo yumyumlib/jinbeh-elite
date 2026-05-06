@@ -41,7 +41,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What are the top things to do in Frisco TX?",
-        answer: "Frisco's top attractions include The Star (Dallas Cowboys headquarters), Stonebriar Centre for shopping, the National Videogame Museum, Riders Field for baseball, PGA headquarters, and Legacy West for upscale dining and shopping. For dining, Jinbeh Japanese Restaurant has been a local favorite since 1988, offering hibachi shows and fresh sushi.",
+        answer: "Frisco's top attractions include The Star (Dallas Cowboys headquarters), Stonebriar Centre for shopping, the National Videogame Museum, Riders Field for baseball, PGA headquarters, and Legacy West for upscale dining and shopping. For dining, Jinbeh Japanese Restaurant has been a North Texas favorite since 1988, with the Frisco location offering hibachi shows and fresh sushi near Stonebriar Centre.",
     },
     {
         question: "What is there to do in Frisco TX at night?",
@@ -53,11 +53,11 @@ const faqs = [
     },
     {
         question: "What are the best restaurants in Frisco TX?",
-        answer: "Frisco boasts an incredible dining scene. Jinbeh Japanese Restaurant (since 1988) is a local favorite for hibachi and sushi with top-rateds on Google. Other popular spots include Perry's Steakhouse, Cane Rosso for pizza, Dee Lincoln for steaks, and the many options at Legacy West.",
+        answer: "Frisco boasts an incredible dining scene. Jinbeh Japanese Restaurant (family-owned since 1988) is a local favorite for hibachi and sushi with top-rateds on Google. Other popular spots include Perry's Steakhouse, Cane Rosso for pizza, Dee Lincoln for steaks, and the many options at Legacy West.",
     },
     {
         question: "What family activities are there in Frisco?",
-        answer: "Families love the National Videogame Museum, KidZania (interactive kids' city), Frisco Discovery Center, Sci-Tech Discovery Center, and the many parks and trails. For family dining, Jinbeh's hibachi experience is a huge hit—kids love watching the chef's fire tricks and flying shrimp!",
+        answer: "Families love the National Videogame Museum, KidZania (interactive kids' city), Frisco Discovery Center, Sci-Tech Discovery Center, and the many parks and trails. For family dining, Jinbeh's hibachi experience is a huge hit, kids love watching the chef's fire tricks and flying shrimp!",
     },
     {
         question: "Are there free things to do in Frisco TX?",
@@ -183,7 +183,7 @@ export default function ThingsToDoFrisco() {
                             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                                        <strong>Frisco, Texas is booming</strong>—and for good reason. With world-class sports
+                                        <strong>Frisco, Texas is booming</strong>,and for good reason. With world-class sports
                                         venues, incredible shopping, family-friendly attractions, and one of DFW's most vibrant
                                         restaurant scenes, there's never a dull moment in this fast-growing city. Whether
                                         you're a local or visiting for the first time, here's the definitive guide to
@@ -192,11 +192,11 @@ export default function ThingsToDoFrisco() {
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "We've called Frisco home since 1988—before The Star, before Stonebriar, before
+                                            "We've called DFW home since 1988, before The Star, before Stonebriar, before
                                             the population boom. Frisco has grown, and we've grown with it. After your day of
                                             exploring, come home to Jinbeh for dinner and a show."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -204,7 +204,7 @@ export default function ThingsToDoFrisco() {
                                     </h2>
 
                                     <DidYouKnow
-                                        fact="Frisco is one of the fastest-growing cities in America, jumping from a population of 33,000 in 2000 to over 230,000 today—a staggering 600% growth in just two decades. The city is now home to 3 professional sports headquarters (Dallas Cowboys, FC Dallas, PGA of America), making it the only city in the U.S. with that distinction. Jinbeh has been part of this Frisco story since 1988, predating most of the city's iconic landmarks."
+                                        fact="Frisco is one of the fastest-growing cities in America, jumping from a population of 33,000 in 2000 to over 230,000 today, a staggering 600% growth in just two decades. The city is now home to 3 professional sports headquarters (Dallas Cowboys, FC Dallas, PGA of America), making it the only city in the U.S. with that distinction. Jinbeh has been part of the North Texas dining story since 1988, predating most of the city's iconic landmarks."
                                         source="City of Frisco Economic Development Report"
                                     />
 
@@ -236,10 +236,10 @@ export default function ThingsToDoFrisco() {
                                     </h2>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Stonebriar Centre</strong> — One of DFW's premier malls with 150+ stores. <Link href="/blog/best-restaurants-stonebriar" className="text-accent-red hover:underline">Great dining nearby</Link> including Jinbeh, just 3 minutes away.</li>
-                                        <li><strong>Legacy West</strong> — Upscale mixed-use district with luxury shopping, restaurants, and vibrant nightlife.</li>
-                                        <li><strong>The Shops at Starwood</strong> — Boutique shopping center with local favorites and unique finds.</li>
-                                        <li><strong>IKEA Frisco</strong> — The massive Swedish furniture store draws shoppers from across DFW.</li>
+                                        <li><strong>Stonebriar Centre</strong>, One of DFW's premier malls with 150+ stores. <Link href="/blog/best-restaurants-stonebriar" className="text-accent-red hover:underline">Great dining nearby</Link> including Jinbeh, just 3 minutes away.</li>
+                                        <li><strong>Legacy West</strong>, Upscale mixed-use district with luxury shopping, restaurants, and vibrant nightlife.</li>
+                                        <li><strong>The Shops at Starwood</strong>, Boutique shopping center with local favorites and unique finds.</li>
+                                        <li><strong>IKEA Frisco</strong>, The massive Swedish furniture store draws shoppers from across DFW.</li>
                                     </ul>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -247,11 +247,11 @@ export default function ThingsToDoFrisco() {
                                     </h2>
 
                                     <ul className="space-y-2">
-                                        <li><strong>National Videogame Museum</strong> — Interactive exhibits from Pong to modern VR. Fun for all ages.</li>
-                                        <li><strong>KidZania</strong> — An interactive mini-city where kids can try 100+ careers.</li>
-                                        <li><strong>Sci-Tech Discovery Center</strong> — Hands-on science exhibits and planetarium shows.</li>
-                                        <li><strong>Frisco Commons Park</strong> — Beautiful walking trails, playgrounds, and the 9/11 memorial.</li>
-                                        <li><strong>Jinbeh Hibachi Night</strong> — Kids are "fascinated by the hibachi chef show"—it's dinner and entertainment in one. <Link href="/blog/unique-kids-birthday-party-places" className="text-accent-red hover:underline">Great for birthday parties</Link> too!</li>
+                                        <li><strong>National Videogame Museum</strong>, Interactive exhibits from Pong to modern VR. Fun for all ages.</li>
+                                        <li><strong>KidZania</strong>, An interactive mini-city where kids can try 100+ careers.</li>
+                                        <li><strong>Sci-Tech Discovery Center</strong>, Hands-on science exhibits and planetarium shows.</li>
+                                        <li><strong>Frisco Commons Park</strong>, Beautiful walking trails, playgrounds, and the 9/11 memorial.</li>
+                                        <li><strong>Jinbeh Hibachi Night</strong>, Kids are "fascinated by the hibachi chef show",it's dinner and entertainment in one. <Link href="/blog/unique-kids-birthday-party-places" className="text-accent-red hover:underline">Great for birthday parties</Link> too!</li>
                                     </ul>
 
                                     <div className="my-10 rounded-2xl overflow-hidden relative aspect-[16/9] shadow-lg max-w-3xl mx-auto">
@@ -370,10 +370,10 @@ export default function ThingsToDoFrisco() {
                                     </h2>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Book dining reservations ahead</strong> — Popular spots like Jinbeh fill up on weekends. <Link href="/reservations" className="text-accent-red hover:underline">Reserve online</Link> to guarantee your table.</li>
-                                        <li><strong>Visit weekdays for fewer crowds</strong> — Stonebriar and The Star are less busy Monday through Thursday.</li>
-                                        <li><strong>Try the <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour circuit</Link></strong> — Many Frisco restaurants offer great deals from 3-6 PM.</li>
-                                        <li><strong>Use the Dallas North Tollway</strong> — It's the fastest route from Dallas proper to Frisco.</li>
+                                        <li><strong>Book dining reservations ahead</strong>, Popular spots like Jinbeh fill up on weekends. <Link href="/reservations" className="text-accent-red hover:underline">Reserve online</Link> to guarantee your table.</li>
+                                        <li><strong>Visit weekdays for fewer crowds</strong>, Stonebriar and The Star are less busy Monday through Thursday.</li>
+                                        <li><strong>Try the <Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">happy hour circuit</Link></strong>, Many Frisco restaurants offer great deals from 3-6 PM.</li>
+                                        <li><strong>Use the Dallas North Tollway</strong>, It's the fastest route from Dallas proper to Frisco.</li>
                                     </ul>
                                 </div>
 

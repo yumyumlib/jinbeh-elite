@@ -58,7 +58,7 @@ const faqs = [
     },
     {
         question: "Can I order sushi for takeout or delivery?",
-        answer: "Yes! Order takeout directly or through Grubhub and Uber Eats. Call ahead to place a pickup order. For the full hibachi experience, though, you'll want to dine in—it's dinner and a show!",
+        answer: "Yes! Order takeout directly or through Grubhub and Uber Eats. Call ahead to place a pickup order. For the full hibachi experience, though, you'll want to dine in, it's dinner and a show!",
     },
     {
         question: "Where is Jinbeh located in Frisco?",
@@ -66,7 +66,7 @@ const faqs = [
     },
     {
         question: "Does Frisco have all-you-can-eat sushi?",
-        answer: "Some restaurants in the Frisco area offer AYCE sushi. Jinbeh focuses on quality over quantity—our sushi is made to order with fresh fish. For the best sushi experience in Frisco, sit at our sushi bar and watch our chefs craft each piece by hand.",
+        answer: "Some restaurants in the Frisco area offer AYCE sushi. Jinbeh focuses on quality over quantity, our sushi is made to order with fresh fish. For the best sushi experience in Frisco, sit at our sushi bar and watch our chefs craft each piece by hand.",
     },
 ];
 
@@ -200,7 +200,7 @@ export default function BestSushiFrisco() {
                                 <div className="prose prose-lg max-w-none">
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Looking for the <Link href="/blog/best-sushi-frisco" className="text-accent-red hover:underline">best sushi in Frisco</Link>?</strong> You're in the right place.
-                                        Frisco, Texas has quietly become one of DFW's hottest sushi destinations—and
+                                        Frisco, Texas has quietly become one of DFW's hottest sushi destinations, and
                                         whether you're craving classic nigiri, creative specialty rolls, or a full
                                         omakase experience, this guide has you covered. Explore our <Link href="/blog/types-of-sushi" className="text-accent-red hover:underline">sushi varieties</Link> guide as well.
                                     </p>
@@ -213,10 +213,10 @@ export default function BestSushiFrisco() {
                                     <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Fresh fish. Expert hands. Warm hospitality. At Jinbeh, we've been
-                                            crafting sushi in Frisco since 1988—long before the sushi boom hit
+                                            crafting sushi in DFW since 1988, long before the sushi boom hit
                                             North Texas. Our secret? We never compromise on quality."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -224,13 +224,99 @@ export default function BestSushiFrisco() {
                                     </h2>
 
                                     <p>
-                                        Frisco isn't just a suburb—it's a culinary hotspot. With a mix of long-established
-                                        family restaurants and trendy newcomers, the sushi scene here rivals Dallas proper. If you're interested in learning more about cuisine styles, check out our <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">hibachi vs teppanyaki</Link> guide.
+                                        Frisco isn&apos;t just a suburb. It&apos;s a culinary
+                                        hotspot. With a mix of long-established family
+                                        restaurants and trendy newcomers, the sushi scene here
+                                        rivals Dallas proper. If you&apos;re interested in
+                                        learning more about cuisine styles, check out our{" "}
+                                        <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">
+                                            hibachi vs teppanyaki
+                                        </Link>{" "}
+                                        guide.
                                     </p>
 
+                                    <p>
+                                        Frisco has quietly become one of the strongest sushi
+                                        markets in Texas. In the last decade alone, the city has
+                                        added edomae sushi counters, premium izakaya, handroll
+                                        bars, and traditional sushi lounges, stretching from
+                                        Preston Road to Main Street to The Star. The good news
+                                        for Frisco diners is that great sushi is now everywhere.
+                                        The harder question is what kind of sushi night you are
+                                        looking for. Jinbeh has been a family-owned Japanese
+                                        restaurant in North Texas since 1988, and Jinbeh Frisco
+                                        remains on Tripadvisor&apos;s Best Sushi in Frisco list
+                                        and OpenTable&apos;s 60 Best Sushi Restaurants in Frisco.
+                                    </p>
+
+                                    <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+                                        🍣 What Makes Great Sushi in Frisco
+                                    </h2>
+
+                                    <p>
+                                        Great sushi comes down to four things, in this order.
+                                        Freshness. Rice. Knife work. Chef experience. Skip any
+                                        of the four and you have something that looks like
+                                        sushi but does not eat like it.
+                                    </p>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
+                                        <div className="bg-warm-ivory rounded-2xl p-6">
+                                            <span className="text-3xl mb-3 block">🐟</span>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">
+                                                1. Freshness
+                                            </h3>
+                                            <p className="text-charcoal/70 text-sm">
+                                                A good sushi program takes fish delivery several
+                                                times per week from a trusted coastal distributor
+                                                or directly from Japan&apos;s Toyosu Market. Fish
+                                                is cut to order, not pre-sliced and stored. For
+                                                diners searching &ldquo;fresh sushi Frisco,&rdquo;
+                                                this is the single most important filter.
+                                            </p>
+                                        </div>
+                                        <div className="bg-warm-ivory rounded-2xl p-6">
+                                            <span className="text-3xl mb-3 block">🍚</span>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">
+                                                2. Rice
+                                            </h3>
+                                            <p className="text-charcoal/70 text-sm">
+                                                Sushi rice should be warm, properly seasoned with
+                                                vinegar, and pressed with the right pressure. The
+                                                fish gets the headlines. The rice is what
+                                                separates a real sushi chef from a roll station.
+                                            </p>
+                                        </div>
+                                        <div className="bg-warm-ivory rounded-2xl p-6">
+                                            <span className="text-3xl mb-3 block">🔪</span>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">
+                                                3. Knife Work
+                                            </h3>
+                                            <p className="text-charcoal/70 text-sm">
+                                                Clean, precise cuts on the fish, consistent
+                                                thickness on the nigiri, and proper handling so
+                                                the fish never looks bruised. You can taste the
+                                                difference between a careful slice and a sloppy
+                                                one.
+                                            </p>
+                                        </div>
+                                        <div className="bg-warm-ivory rounded-2xl p-6">
+                                            <span className="text-3xl mb-3 block">👨‍🍳</span>
+                                            <h3 className="font-heading font-bold text-lg text-charcoal mb-2">
+                                                4. Chef Experience
+                                            </h3>
+                                            <p className="text-charcoal/70 text-sm">
+                                                Sushi takes years to learn. Look for chefs with
+                                                real tenure behind the bar. Jinbeh&apos;s head
+                                                sushi chef has been with the family for nearly 30
+                                                years.
+                                            </p>
+                                        </div>
+                                    </div>
+
                                     <DidYouKnow
-                                        fact="The word 'sushi' doesn't actually mean 'raw fish' — it refers to the vinegared rice that forms the base of every piece. In fact, many popular sushi rolls like the Dragon Roll (eel and avocado) and Shrimp Tempura Roll contain no raw fish at all. Jinbeh's 14-roll sushi menu includes both raw and cooked options for every comfort level."
-                                        source="Japanese Culinary Arts — Jinbeh Menu"
+                                        fact="The word 'sushi' doesn't actually mean 'raw fish', it refers to the vinegared rice that forms the base of every piece. In fact, many popular sushi rolls like the Dragon Roll (eel and avocado) and Shrimp Tempura Roll contain no raw fish at all. Jinbeh's 14-roll sushi menu includes both raw and cooked options for every comfort level."
+                                        source="Japanese Culinary Arts, Jinbeh Menu"
                                     />
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
@@ -323,7 +409,7 @@ export default function BestSushiFrisco() {
                                                 🏯 Jinbeh: The Authentic Choice
                                             </h3>
                                             <p className="text-white/90 mb-4">
-                                                Since 1988, Jinbeh has been serving Frisco families with the same commitment:
+                                                Since 1988, Jinbeh has been serving DFW families with the same commitment:
                                                 fresh ingredients, skilled craftsmanship, and genuine hospitality. Our sushi bar
                                                 features classic nigiri alongside signature rolls like our famous Dragon Roll.
                                             </p>
@@ -374,10 +460,10 @@ export default function BestSushiFrisco() {
                                     </h3>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Dragon Roll</strong> — Eel, cucumber, avocado, and unagi sauce</li>
-                                        <li><strong>Rainbow Roll</strong> — California roll topped with assorted sashimi</li>
-                                        <li><strong>Spicy Tuna Roll</strong> — A classic crowd-pleaser</li>
-                                        <li><strong>Jinbeh Special</strong> — Our signature creation (ask your server!)</li>
+                                        <li><strong>Dragon Roll</strong>, Eel, cucumber, avocado, and unagi sauce</li>
+                                        <li><strong>Rainbow Roll</strong>, California roll topped with assorted sashimi</li>
+                                        <li><strong>Spicy Tuna Roll</strong>, A classic crowd-pleaser</li>
+                                        <li><strong>Jinbeh Special</strong>, Our signature creation (ask your server!)</li>
                                     </ul>
 
                                     <CompareCards
@@ -390,7 +476,7 @@ export default function BestSushiFrisco() {
                                                     "Fresh eel, cucumber, avocado, house-made eel sauce",
                                                     "Hand-rolled to order by trained sushi chef",
                                                     "Day-fresh seasoned sushi rice",
-                                                    "Made at the sushi bar — watch it being prepared",
+                                                    "Made at the sushi bar, watch it being prepared",
                                                 ],
                                                 cta: { label: "View Sushi Menu", href: "/frisco/sushi-rolls" },
                                             },
@@ -416,7 +502,7 @@ export default function BestSushiFrisco() {
                                             season: "Year-round",
                                             flavor: "Ranges from crisp and dry to smooth and floral",
                                             pairsWith: "Sashimi, Yellowtail Jalapeño Roll, lighter nigiri",
-                                            jinbehDish: "Sake Flight — tasting of three premium sakes",
+                                            jinbehDish: "Sake Flight, tasting of three premium sakes",
                                             jinbehDishLink: "/frisco/cocktails/sake-flight",
                                         }}
                                     />
@@ -439,7 +525,7 @@ export default function BestSushiFrisco() {
                                         🍣 Experience Fresh Sushi at Jinbeh
                                     </h3>
                                     <p className="text-white/90 mb-8 text-lg">
-                                        Welcome to the table! Jinbeh has served Frisco since 1988. Fresh fish. Expert chefs. Welcoming atmosphere.
+                                        Welcome to the table! Jinbeh has served DFW since 1988. Fresh fish. Expert chefs. Welcoming atmosphere.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <Link

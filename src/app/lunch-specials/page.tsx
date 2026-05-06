@@ -214,7 +214,7 @@ export default function LunchSpecialsPage() {
               </div>
               <div className="md:col-span-3 p-8 md:p-10">
                 <p className="text-soft-gold uppercase tracking-wider text-xs font-bold mb-3">Choose Two Proteins</p>
-                <div className="grid grid-cols-5 gap-2 mb-6">
+                <div className="grid grid-cols-5 gap-2 mb-3">
                   {[
                     { i: "🥦", n: "Veggie" },
                     { i: "🍗", n: "Chicken" },
@@ -228,6 +228,9 @@ export default function LunchSpecialsPage() {
                     </div>
                   ))}
                 </div>
+                <p className="text-[11px] font-medium text-charcoal/80 bg-soft-gold/15 border border-soft-gold/40 rounded-md px-3 py-1.5 mb-5 text-center">
+                  ⭐ Premium upgrades: Filet Mignon (+$3) · Scallops (+$3) per person
+                </p>
                 <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-1 text-sm text-charcoal/80 mb-5">
                   <li className="flex items-center gap-2"><span className="text-accent-red">✓</span> Onion soup</li>
                   <li className="flex items-center gap-2"><span className="text-accent-red">✓</span> House salad</li>
@@ -313,7 +316,7 @@ export default function LunchSpecialsPage() {
                   Featured Lunch Specials
                 </h2>
                 <p className="text-lg text-charcoal/70">
-                  Affordable lunch options including sushi lunch platters, quick lunch combos, and Japanese lunch favorites — available at our Frisco lunch and Lewisville lunch locations. Same quality as dinner, great value. Watching your intake? Check our <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline font-medium">hibachi calories guide</Link> for nutritional info.
+                  Affordable lunch options including sushi lunch platters, quick lunch combos, and Japanese lunch favorites, available at our Frisco lunch and Lewisville lunch locations. Same quality as dinner, great value. Watching your intake? Check our <Link href="/blog/hibachi-calories-guide" className="text-accent-red hover:underline font-medium">hibachi calories guide</Link> for nutritional info.
                 </p>
               </RevealSection>
             </div>

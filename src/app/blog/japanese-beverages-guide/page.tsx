@@ -113,13 +113,13 @@ export default function JapaneseBeveragesGuide() {
 
                             <div className="bg-gradient-to-br from-soft-gold/10 to-deep-indigo/10 border-l-4 border-soft-gold rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"Japanese beverages reflect our commitment to detail and dedication to quality. Whether it's a carefully whisked matcha or a refreshing Ramune, each drink is crafted with intention and care."</p>
-                                <span className="text-sm text-charcoal/80">— Jinbeh Beverage Philosophy</span>
+                                <span className="text-sm text-charcoal/80">, Jinbeh Beverage Philosophy</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍵 Traditional Tea & Spirits</h2>
 
                             <DidYouKnow
-                                fact="Japan has over 5.5 million vending machines—the highest density in the world—serving everything from hot matcha and canned coffee to fresh sake. The Japanese beverage market is worth billion annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
+                                fact="Japan has over 5.5 million vending machines, the highest density in the world, serving everything from hot matcha and canned coffee to fresh sake. The Japanese beverage market is worth billion annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
                                 source="Japan Vending Machine Manufacturers Association"
                             />
                             <p className="text-charcoal/80 mb-4">Japan's tea culture is deeply rooted in history, with beverages that have been perfected over centuries. These drinks offer refreshment, wellness benefits, and cultural significance.</p>
@@ -127,7 +127,7 @@ export default function JapaneseBeveragesGuide() {
                             <div className="space-y-4 my-6">
                                 <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-soft-gold">
                                     <h3 className="font-bold text-charcoal mb-2">🌸 Matcha: The Green Elixir</h3>
-                                    <p className="text-charcoal/80">Matcha is more than a drink—it's a cultural experience. This finely ground green tea powder has been used in traditional tea ceremonies for centuries. The preparation is meditative, focusing on harmony and respect. Rich in antioxidants and umami flavor, matcha offers both health benefits and spiritual connection.</p>
+                                    <p className="text-charcoal/80">Matcha is more than a drink, it's a cultural experience. This finely ground green tea powder has been used in traditional tea ceremonies for centuries. The preparation is meditative, focusing on harmony and respect. Rich in antioxidants and umami flavor, matcha offers both health benefits and spiritual connection.</p>
                                 </div>
 
                                 <div className="bg-warm-ivory rounded-xl p-5 border-l-4 border-accent-red">
@@ -192,7 +192,7 @@ export default function JapaneseBeveragesGuide() {
                             <div className="grid md:grid-cols-2 gap-4 my-6 bg-warm-ivory rounded-xl p-6">
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-2">✨ Quality Commitment</h3>
-                                    <p className="text-sm text-charcoal/70">Each beverage reflects meticulous attention to ingredients, preparation, and presentation—whether it's a 1000-year-old sake or modern canned coffee.</p>
+                                    <p className="text-sm text-charcoal/70">Each beverage reflects meticulous attention to ingredients, preparation, and presentation, whether it's a 1000-year-old sake or modern canned coffee.</p>
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-2">🔄 Tradition & Innovation</h3>
@@ -213,7 +213,7 @@ export default function JapaneseBeveragesGuide() {
                                 {[
                                     { q: "Where can I find authentic Japanese beverages?", a: "Asian markets, specialty tea shops, and regular grocers carry Japanese beverages. Jinbeh offers traditional drinks like sake and matcha as part of our dining experience. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for our fresh and flavorful selections!" },
                                     { q: "Is sake an everyday drink in Japan?", a: "Sake is traditionally served for celebrations. In modern Japan, it's enjoyed casually like wine in other countries. It's a celebration! Jinbeh pairs premium sake with exquisite cuisine." },
-                                    { q: "What are the health benefits of matcha?", a: "Matcha is rich in antioxidants, provides sustained energy without caffeine jitters, supports metabolism, and contains L-theanine promoting calm focus. It's nutrient-dense! Welcome to the table—experience authentic matcha at Jinbeh." },
+                                    { q: "What are the health benefits of matcha?", a: "Matcha is rich in antioxidants, provides sustained energy without caffeine jitters, supports metabolism, and contains L-theanine promoting calm focus. It's nutrient-dense! Welcome to the table, experience authentic matcha at Jinbeh." },
                                     { q: "Does Jinbeh serve traditional Japanese beverages?", a: "Absolutely! We treat every guest like family. Jinbeh offers premium sake, matcha, and authentic Japanese drinks. Our Frisco and Lewisville locations provide gracious hospitality with every sip. It's a celebration of tradition!" }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hibachi Birthday Party Ideas: Ultimate Planning Guide",
     description:
-      "Fire, food, and fun—discover why hibachi makes the perfect birthday celebration for kids and adults alike.",
+      "Fire, food, and fun, discover why hibachi makes the perfect birthday celebration for kids and adults alike.",
     images: ["/images/instagram/lobster-spread-overhead.jpg"],
   },
   alternates: {
@@ -42,12 +42,12 @@ const faqs = [
   {
     question: "What age is hibachi appropriate for?",
     answer:
-      "Hibachi is family-friendly for all ages! Kids as young as 2-3 love the flames and interactive show. Our chefs adjust their performances—playful for kids' parties, skilled demonstrations for adults. The communal experience creates memories for mixed-age gatherings.",
+      "Hibachi is family-friendly for all ages! Kids as young as 2-3 love the flames and interactive show. Our chefs adjust their performances, playful for kids' parties, skilled demonstrations for adults. The communal experience creates memories for mixed-age gatherings.",
   },
   {
     question: "Do hibachi restaurants do anything special for birthdays?",
     answer:
-      "At Jinbeh, birthdays are celebrations! Our chefs give the birthday person extra attention with personalized entertainment, and we make the whole experience special. Fresh and flavorful food paired with an unforgettable show—that's our promise for your celebration.",
+      "At Jinbeh, birthdays are celebrations! Our chefs give the birthday person extra attention with personalized entertainment, and we make the whole experience special. Fresh and flavorful food paired with an unforgettable show, that's our promise for your celebration.",
   },
   {
     question: "How much should I budget for a hibachi birthday party?",
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: "Can I bring my own birthday cake to Jinbeh?",
     answer:
-      "Yes! You're welcome to bring your own birthday cake or cupcakes. Just let us know when you make your reservation so we can have plates and utensils ready. Many guests bring cake and enjoy it after the hibachi show — it's the perfect ending to a memorable celebration.",
+      "Yes! You're welcome to bring your own birthday cake or cupcakes. Just let us know when you make your reservation so we can have plates and utensils ready. Many guests bring cake and enjoy it after the hibachi show, it's the perfect ending to a memorable celebration.",
   },
 ];
 
@@ -235,7 +235,7 @@ export default function HibachiBirthdayPartyIdeasPage() {
       publishDate="January 2026"
       readTime="9 min read"
       faqs={faqs}
-      keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect per person at dinner (lunch is 30–40% less). The chef IS your entertainment — no need to plan activities. Works for all ages, from 5 to 85."
+      keyTakeaway="Book your hibachi birthday party 2–3 weeks ahead for weekends. Expect per person at dinner (lunch is 30–40% less). The chef IS your entertainment, no need to plan activities. Works for all ages, from 5 to 85."
     >
       <div className="container mx-auto max-w-6xl px-4 lg:px-6">
         <BreadcrumbNav items={[{ label: "Blog", href: "/blog" }, { label: "Hibachi Birthday Party Ideas" }]} />
@@ -243,11 +243,9 @@ export default function HibachiBirthdayPartyIdeasPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Works for Birthdays","acceptedAnswer":{"@type":"Answer","text":"Most restaurants offer food. Hibachi offers an experience. When you book a birthday at a hibachi vs <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki</Link> experience , you're not just choosing a menu—you're choosing entertainment that brings everyone together."}},{"@type":"Question","name":"What to Order at a Hibachi Birthday","acceptedAnswer":{"@type":"Answer","text":"Hibachi menus can feel overwhelming if you've never been. Here's what sells most for birthday parties:"}},{"@type":"Question","name":"Common Hibachi Birthday Mistakes (And How to Avoid Them)","acceptedAnswer":{"@type":"Answer","text":"\"Oh, a few people might not make it.\" Then everyone shows up, and you're scrambling. Book for your actual headcount—it's easier to release seats than add them."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Works for Birthdays","acceptedAnswer":{"@type":"Answer","text":"Most restaurants offer food. Hibachi offers an experience. When you book a birthday at a hibachi vs <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki</Link> experience , you're not just choosing a menu, you're choosing entertainment that brings everyone together."}},{"@type":"Question","name":"What to Order at a Hibachi Birthday","acceptedAnswer":{"@type":"Answer","text":"Hibachi menus can feel overwhelming if you've never been. Here's what sells most for birthday parties:"}},{"@type":"Question","name":"Common Hibachi Birthday Mistakes (And How to Avoid Them)","acceptedAnswer":{"@type":"Answer","text":"\"Oh, a few people might not make it.\" Then everyone shows up, and you're scrambling. Book for your actual headcount, it's easier to release seats than add them."}}]}` }}
       />
-      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
-        Hibachi Birthday Party Ideas: Ultimate Planning Gu
-        <script
+      <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
@@ -274,6 +272,8 @@ export default function HibachiBirthdayPartyIdeasPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
 ide
+      <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
+        Hibachi Birthday Party Ideas: Ultimate Planning Gu
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
@@ -319,7 +319,7 @@ ide
       <p>
         We've hosted thousands of birthday celebrations at Jinbeh since 1988.
         From 5-year-olds mesmerized by flames to 50th birthday bashes with
-        sake toasts, we've seen what makes hibachi parties work—and what can
+        sake toasts, we've seen what makes hibachi parties work, and what can
         go wrong without proper planning. Not sure what to give the birthday person? A{" "}
         <Link href="/gift-cards" className="text-accent-red hover:underline">
           Jinbeh gift card
@@ -340,7 +340,7 @@ ide
         <Link href="/blog/hibachi-vs-teppanyaki-explained" className="text-accent-red hover:underline">
           hibachi vs teppanyaki experience
         </Link>
-        , you're not just choosing a menu—you're choosing entertainment that
+        , you're not just choosing a menu, you're choosing entertainment that
         brings everyone together.
       </p>
 
@@ -360,11 +360,11 @@ ide
           the whole fam! The chefs are very entertaining. They always put on
           an excellent show!"
         </p>
-        <p className="text-sm text-charcoal/80">— Jinbeh Guest Review</p>
+        <p className="text-sm text-charcoal/80">, Jinbeh Guest Review</p>
       </div>
 
       <DidYouKnow
-        fact="Americans spend over billion dining out for birthday celebrations each year, making it the #1 reason people eat at restaurants outside of regular meals. Hibachi/teppanyaki restaurants see a 40% increase in bookings during birthday season (May-August), and the interactive chef performance eliminates the need for separate entertainment — saving the average party host on entertainment costs."
+        fact="Americans spend over billion dining out for birthday celebrations each year, making it the #1 reason people eat at restaurants outside of regular meals. Hibachi/teppanyaki restaurants see a 40% increase in bookings during birthday season (May-August), and the interactive chef performance eliminates the need for separate entertainment, saving the average party host on entertainment costs."
         source="National Restaurant Association & Event Planning Institute"
       />
 
@@ -418,15 +418,15 @@ ide
       <h3>Step 2: Book Early and Communicate</h3>
 
       <p>
-        Call the restaurant directly—don't just book online. Tell them:
+        Call the restaurant directly, don't just book online. Tell them:
       </p>
 
       <ul>
         <li>It's a birthday celebration</li>
-        <li>Your exact party size (don't estimate—count heads)</li>
+        <li>Your exact party size (don't estimate, count heads)</li>
         <li>Age of the birthday person (helps chef calibrate the show)</li>
         <li>Any dietary restrictions or allergies</li>
-        <li>If you want the group seated together at one grill—for large parties, ask about our <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options</li>
+        <li>If you want the group seated together at one grill, for large parties, ask about our <Link href="/private-dining" className="text-accent-red hover:underline">private dining</Link> options</li>
       </ul>
 
       <p>
@@ -459,7 +459,7 @@ ide
         </li>
         <li>
           <strong>Plan for 90 minutes to 2 hours.</strong> Hibachi isn't
-          fast casual—the experience takes time.
+          fast casual, the experience takes time.
         </li>
         <li>
           <strong>Come hungry.</strong> Portions are generous. "Large
@@ -473,7 +473,7 @@ ide
 
       <p>
         Kids go absolutely wild for hibachi. The flames, the tricks, the
-        catching-food-in-your-mouth games—it's interactive in a way tablets
+        catching-food-in-your-mouth games, it's interactive in a way tablets
         and movies can't match.
       </p>
 
@@ -483,7 +483,7 @@ ide
 
       <ul>
         <li>
-          Book a lunch slot—kids have more energy earlier, and you'll have
+          Book a lunch slot, kids have more energy earlier, and you'll have
           the restaurant more to yourselves
         </li>
         <li>
@@ -491,10 +491,10 @@ ide
           tricks over the technical skills
         </li>
         <li>
-          Consider the chicken and shrimp combo—it's universally kid-friendly
+          Consider the chicken and shrimp combo, it's universally kid-friendly
         </li>
         <li>
-          Bring your own cake or cupcakes—most hibachi restaurants allow this
+          Bring your own cake or cupcakes, most hibachi restaurants allow this
           (confirm when booking)
         </li>
       </ul>
@@ -522,13 +522,13 @@ ide
 
       <ul>
         <li>
-          Let them choose their own entrees—teens appreciate autonomy
+          Let them choose their own entrees, teens appreciate autonomy
         </li>
         <li>
           A dinner time slot feels more "grown up" than lunch
         </li>
         <li>
-          Encourage photos and videos of the chef show—it's content gold
+          Encourage photos and videos of the chef show, it's content gold
         </li>
       </ul>
 
@@ -595,7 +595,7 @@ ide
           delivers on flavor.
         </li>
         <li>
-          <strong>Vegetable Hibachi:</strong> Don't overlook this—the
+          <strong>Vegetable Hibachi:</strong> Don't overlook this, the
           mushrooms, zucchini, and onions cooked hibachi-style are incredible.
         </li>
       </ul>
@@ -668,7 +668,7 @@ ide
 
  <p>
  "Oh, a few people might not make it." Then everyone shows up, and
- you're scrambling. Book for your actual headcount—it's easier to
+ you're scrambling. Book for your actual headcount, it's easier to
         release seats than add them.
       </p>
 
@@ -705,7 +705,7 @@ ide
           hibachi birthday party
         </Link>
         ? At Jinbeh, we've been the "go-to destination for birthdays" since 1988.
-        Our chefs don't just go through the motions—they read the room and make sure
+        Our chefs don't just go through the motions, they read the room and make sure
         every birthday person feels like the star.
       </p>
 
@@ -732,12 +732,12 @@ ide
       </ul>
 
       <p>
-        Tell us about your celebration when you call—we'll make sure it's
+        Tell us about your celebration when you call, we'll make sure it's
         one to remember.
       </p>
 
       <ProTip variant="insider">
-        <strong>Birthday party pro tip:</strong> The best-kept secret for Jinbeh birthday parties: book a Sunday lunch slot. You get the same amazing chef show, lower prices (30-40% less than dinner), and more personal attention from staff. Ask about the "Birthday VIP" experience when booking — our chefs go all-out for birthday guests with extra tricks and personalized attention. Don't forget to mention food allergies when you call! <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
+        <strong>Birthday party pro tip:</strong> The best-kept secret for Jinbeh birthday parties: book a Sunday lunch slot. You get the same amazing chef show, lower prices (30-40% less than dinner), and more personal attention from staff. Ask about the "Birthday VIP" experience when booking, our chefs go all-out for birthday guests with extra tricks and personalized attention. Don't forget to mention food allergies when you call! <Link href="/reservations" className="text-accent-red hover:underline">Book your birthday celebration →</Link>
       </ProTip>
 
       <PillarCTA type="hub" />

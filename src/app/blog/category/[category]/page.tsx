@@ -11,7 +11,7 @@ const categories = {
     description:
       "From beginner tips to expert recommendations, explore everything sushi at Jinbeh. Discover the freshest rolls, sashimi, and omakase experiences in Frisco and Lewisville, TX.",
     intro:
-      "Whether you're trying sushi for the first time or you've been a fan for years, this collection of guides will deepen your appreciation for Japanese cuisine. At Jinbeh, our sushi chefs have been handcrafting rolls with the freshest fish since 1988 — and we love sharing what we know.",
+      "Whether you're trying sushi for the first time or you've been a fan for years, this collection of guides will deepen your appreciation for Japanese cuisine. At Jinbeh, our sushi chefs have been handcrafting rolls with the freshest fish since 1988, and we love sharing what we know.",
     color: "from-soft-gold to-red-500",
     pillarLinks: [
       { label: "Frisco Sushi Menu", href: "/frisco/sushi-rolls" },
@@ -21,18 +21,18 @@ const categories = {
     articles: [
       { slug: "best-sushi-frisco", title: "Best Sushi in Frisco", image: "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg", excerpt: "Where to find the freshest sushi rolls and nigiri near Stonebriar Centre." },
       { slug: "best-sushi-dallas", title: "Best Sushi in Dallas", image: "/images/food/SamaraiRollCloseup.jpg", excerpt: "A guide to the top-rated sushi spots across the DFW metroplex." },
-      { slug: "types-of-sushi", title: "Types of Sushi: Complete Guide", image: "/images/hq/sushi-rolls-2026.jpg", excerpt: "Nigiri, maki, temaki, and more — learn every sushi style." },
+      { slug: "types-of-sushi", title: "Types of Sushi: Complete Guide", image: "/images/hq/sushi-rolls-2026.jpg", excerpt: "Nigiri, maki, temaki, and more, learn every sushi style." },
       { slug: "beginner-sushi-tips", title: "Sushi for Beginners", image: "/images/instagram/salmon-roll-closeup.jpg", excerpt: "New to sushi? Start here for your first Japanese dining adventure." },
       { slug: "sashimi-vs-sushi", title: "Sashimi vs Sushi Explained", image: "/images/photoshoot/sashimi-platter.jpg", excerpt: "What's the difference? We break it down for you." },
       { slug: "how-to-eat-sushi-guide", title: "How to Eat Sushi Properly", image: "/images/instagram/sushi-feast-flatlay.jpg", excerpt: "Chopstick etiquette, soy sauce tips, and wasabi dos and don'ts." },
       { slug: "sushi-identification-chart", title: "Sushi Identification Chart", image: "/images/instagram/specialty-roll-closeup.jpg", excerpt: "Visual guide to identifying sushi by type and ingredient." },
-      { slug: "omakase-dining-guide", title: "Omakase Dining Guide", image: "/images/photoshoot/sushi-tower.jpg", excerpt: "Trust the chef — how omakase creates a personalized sushi experience." },
+      { slug: "omakase-dining-guide", title: "Omakase Dining Guide", image: "/images/photoshoot/sushi-tower.jpg", excerpt: "Trust the chef, how omakase creates a personalized sushi experience." },
       { slug: "best-salmon-sashimi", title: "Best Salmon Sashimi", image: "/images/food/SmokedSalmonCloseup.jpg", excerpt: "Where to find premium salmon sashimi in Frisco and Dallas." },
     ],
     faq: [
-      { q: "What is the best sushi restaurant in Frisco, TX?", a: "Jinbeh Japanese Restaurant in Frisco has been serving fresh, handcrafted sushi since 1988. Located near Stonebriar Centre, our sushi bar features daily-fresh fish, signature rolls like the Samurai Roll, and an omakase experience." },
+      { q: "What is the best sushi restaurant in Frisco, TX?", a: "Jinbeh Japanese Restaurant has been serving fresh, handcrafted sushi in North Texas since 1988. Jinbeh Frisco is located near Stonebriar Centre, with a sushi bar featuring daily-fresh fish and signature rolls like the Samurai Roll." },
       { q: "What types of sushi does Jinbeh serve?", a: "Jinbeh offers a full sushi menu including nigiri, sashimi, maki rolls, hand rolls (temaki), specialty rolls, and chef's omakase selections. Popular choices include our Spicy Tuna Roll, Rainbow Roll, and premium sashimi platters." },
-      { q: "Is sushi at Jinbeh made fresh daily?", a: "Yes! Our sushi chefs prepare every roll to order using fish that is delivered fresh multiple times per week. We never use frozen pre-made sushi — quality and freshness are our top priorities." },
+      { q: "Is sushi at Jinbeh made fresh daily?", a: "Yes! Our sushi chefs prepare every roll to order using fish that is delivered fresh multiple times per week. We never use frozen pre-made sushi, quality and freshness are our top priorities." },
       { q: "Does Jinbeh offer sushi for takeout or delivery?", a: "Yes, sushi takeout is available at both our Frisco and Lewisville locations. You can also order delivery through Uber Eats or Grubhub." },
     ],
   },
@@ -43,7 +43,7 @@ const categories = {
     description:
       "Master the art of hibachi dining at Jinbeh. Learn about teppanyaki chef performances, menu options, and what makes our hibachi experience in Frisco and Lewisville unforgettable.",
     intro:
-      "The sizzle of the grill. The dance of the flames. The legendary onion volcano. At Jinbeh, hibachi isn't just a meal — it's dinner and a show. Our teppanyaki chefs have been entertaining families across North Texas for over 38 years, and these guides share everything you need to know before your visit.",
+      "The sizzle of the grill. The dance of the flames. The legendary onion volcano. At Jinbeh, hibachi isn't just a meal, it's dinner and a show. Our teppanyaki chefs have been entertaining families across North Texas for over 38 years, and these guides share everything you need to know before your visit.",
     color: "from-red-500 to-soft-gold",
     pillarLinks: [
       { label: "Frisco Hibachi Menu", href: "/frisco/hibachi" },
@@ -55,15 +55,15 @@ const categories = {
       { slug: "best-hibachi-dallas-tx", title: "Best Hibachi in Dallas", image: "/images/photoshoot/hibachi-plate-shrimp.jpg", excerpt: "The top hibachi restaurants in the Dallas–Fort Worth area, ranked." },
       { slug: "hibachi-vs-teppanyaki-explained", title: "Hibachi vs Teppanyaki", image: "/images/hq/onion-volcano.jpg", excerpt: "What's the real difference? It's more than just a name." },
       { slug: "discover-teppanyaki", title: "Discover Teppanyaki", image: "/images/hq/cooking-on-grill.jpg", excerpt: "The history and art behind teppanyaki-style cooking." },
-      { slug: "hibachi-dining-experience", title: "Hibachi Dining Experience", image: "/images/photoshoot/hibachi-flame-action.jpg", excerpt: "What to expect at your first hibachi dinner — from start to finish." },
-      { slug: "hibachi-menu-guide", title: "Hibachi Menu Guide", image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", excerpt: "Navigate the hibachi menu like a pro — proteins, sides, and combos." },
+      { slug: "hibachi-dining-experience", title: "Hibachi Dining Experience", image: "/images/photoshoot/hibachi-flame-action.jpg", excerpt: "What to expect at your first hibachi dinner, from start to finish." },
+      { slug: "hibachi-menu-guide", title: "Hibachi Menu Guide", image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", excerpt: "Navigate the hibachi menu like a pro, proteins, sides, and combos." },
       { slug: "hibachi-calories-guide", title: "Hibachi Calories Guide", image: "/images/photoshoot/hibachi-chicken.jpg", excerpt: "Nutrition info for popular hibachi dishes and healthier options." },
       { slug: "hibachi-lunch-ideas", title: "Hibachi Lunch Ideas", image: "/images/food/BentoBoxLunchSet.jpg", excerpt: "Quick weekday lunch combos featuring hibachi favorites." },
       { slug: "hibachi-catering-dfw", title: "Hibachi Catering in DFW", image: "/images/photoshoot/hibachi-steak.jpg", excerpt: "Bring the hibachi experience to your next event or party." },
     ],
     faq: [
       { q: "What is hibachi dining?", a: "Hibachi dining is a Japanese-style meal where a skilled teppanyaki chef cooks your food on a flat iron grill right at your table. At Jinbeh, our chefs entertain with fire tricks, the famous onion volcano, and expert knife skills while preparing steak, shrimp, chicken, and vegetables." },
-      { q: "What is the difference between hibachi and teppanyaki?", a: "Hibachi traditionally refers to a charcoal-heated grill, while teppanyaki uses a flat iron griddle. In American dining, 'hibachi' typically describes the interactive tableside cooking experience — which is technically teppanyaki. At Jinbeh, we use both terms to describe our entertaining chef-driven dining." },
+      { q: "What is the difference between hibachi and teppanyaki?", a: "Hibachi traditionally refers to a charcoal-heated grill, while teppanyaki uses a flat iron griddle. In American dining, 'hibachi' typically describes the interactive tableside cooking experience, which is technically teppanyaki. At Jinbeh, we use both terms to describe our entertaining chef-driven dining." },
       { q: "How much does hibachi cost at Jinbeh?", a: "Hibachi entrees at Jinbeh typically range from per person, depending on your protein choice. Combo plates with steak and shrimp are our most popular option. Kids meals are available at a lower price point." },
       { q: "Does Jinbeh offer hibachi catering?", a: "Yes! Jinbeh offers hibachi catering for events throughout the DFW area. Our team can bring the full teppanyaki experience to weddings, corporate events, birthday parties, and private gatherings. Contact us for a custom quote." },
     ],
@@ -96,7 +96,7 @@ const categories = {
       { slug: "restaurants-private-rooms", title: "Private Dining Rooms", image: "/images/interior/bar.jpg", excerpt: "Restaurants with private rooms for special occasions." },
     ],
     faq: [
-      { q: "Is Jinbeh good for birthday celebrations?", a: "Absolutely! Jinbeh is one of the top-rated birthday celebration restaurants in Frisco and Lewisville. Our hibachi chefs put on an entertaining show at your table, complete with the famous onion volcano — making birthdays memorable for all ages." },
+      { q: "Is Jinbeh good for birthday celebrations?", a: "Absolutely! Jinbeh is one of the top-rated birthday celebration restaurants in Frisco and Lewisville. Our hibachi chefs put on an entertaining show at your table, complete with the famous onion volcano, making birthdays memorable for all ages." },
       { q: "Can Jinbeh host large groups or private parties?", a: "Yes! Both our Frisco and Lewisville locations accommodate large parties. Hibachi tables seat 7–8 guests for a shared experience. For groups of 10+ or private events, call us at (214) 619-1200 (Frisco) or (214) 488-2224 (Lewisville)." },
       { q: "Does Jinbeh offer special birthday deals?", a: "Jinbeh loves celebrating birthdays! Contact our team to discuss birthday packages and group dining options that include appetizers, entrees, and desserts for your party." },
       { q: "What types of celebrations can I host at Jinbeh?", a: "We host birthdays, anniversaries, graduations, baby showers, bridal showers, bachelorette dinners, corporate events, holiday parties, and family gatherings. Any occasion becomes special with hibachi entertainment and fresh sushi." },
@@ -109,7 +109,7 @@ const categories = {
     description:
       "Explore Jinbeh's daily happy hour specials, premium sake selections, Japanese whiskey, and signature cocktails in Frisco and Lewisville, TX.",
     intro:
-      "Great drinks deserve great company. At Jinbeh's bar, you'll find an expertly curated selection of premium sake, Japanese whiskey, signature cocktails, and ice-cold drafts — all at happy hour prices. Whether you're a sake novice or a whiskey connoisseur, these guides will help you discover your next favorite pour.",
+      "Great drinks deserve great company. At Jinbeh's bar, you'll find an expertly curated selection of premium sake, Japanese whiskey, signature cocktails, and ice-cold drafts, all at happy hour prices. Whether you're a sake novice or a whiskey connoisseur, these guides will help you discover your next favorite pour.",
     color: "from-deep-indigo to-deep-indigo",
     pillarLinks: [
       { label: "Happy Hour Specials", href: "/happy-hour" },
@@ -118,22 +118,22 @@ const categories = {
     ],
     relatedCategories: ["sushi", "local-guide", "beverages"],
     articles: [
-      { slug: "best-happy-hour-frisco-tx", title: "Best Happy Hour in Frisco", image: "/images/drinks/MuleSummerSignatureCocktail.jpg", excerpt: "Where to find the best happy hour deals near Stonebriar Centre." },
-      { slug: "sake-pairing-guide", title: "Sake Pairing Guide", image: "/images/drinks/cocktail.jpg", excerpt: "How to pair sake with sushi, hibachi, and appetizers." },
-      { slug: "types-of-sake-explained", title: "Types of Sake Explained", image: "/images/hq/jinbeh-cocktail.jpg", excerpt: "Junmai, Daiginjo, Nigori — what's the difference?" },
-      { slug: "sake-taste-profile", title: "Sake Taste Profile", image: "/images/instagram/fried-roll-bar-ambiance.jpg", excerpt: "Sweet, dry, fruity, earthy — find your ideal sake flavor." },
-      { slug: "sake-alcohol-strength", title: "Sake Alcohol Strength", image: "/images/seasonal/HappyWineWednesday.png", excerpt: "How strong is sake compared to wine and beer?" },
-      { slug: "japanese-cocktails", title: "Japanese Cocktails", image: "/images/drinks/JinbehPunchBeverageDrink.jpg", excerpt: "Signature Japanese-inspired cocktails you need to try." },
-      { slug: "japanese-beverages-guide", title: "Japanese Beverages Guide", image: "/images/drinks/SpicyMargaritaBeverageDrink.jpg", excerpt: "From matcha to Ramune — a complete Japanese drink guide." },
-      { slug: "japanese-whiskey-guide", title: "Japanese Whiskey Guide", image: "/images/seasonal/WinedWednesday.jpg", excerpt: "Why Japanese whiskey is taking the world by storm." },
-      { slug: "yamazaki-whiskey-guide", title: "Yamazaki Whiskey Guide", image: "/images/drinks/MangoTangoDrinks.png", excerpt: "Everything you need to know about Suntory Yamazaki." },
-      { slug: "ramune-soda-guide", title: "Ramune Soda Guide", image: "/images/instagram/mochi-desserts.jpg", excerpt: "The iconic marble-sealed Japanese soda — flavors and history." },
+      { slug: "best-happy-hour-frisco-tx", title: "Best Happy Hour in Frisco", image: "/images/catalog/24-C060324-6852.jpg", excerpt: "Where to find the best happy hour deals near Stonebriar Centre." },
+      { slug: "sake-pairing-guide", title: "Sake Pairing Guide", image: "/images/beverages/NigoriSparklingSake.png", excerpt: "How to pair sake with sushi, hibachi, and appetizers." },
+      { slug: "types-of-sake-explained", title: "Types of Sake Explained", image: "/images/blog/illustrations/types-of-sake-varieties.png", excerpt: "Junmai, Daiginjo, Nigori, what's the difference?" },
+      { slug: "sake-taste-profile", title: "Sake Taste Profile", image: "/images/beverages/HanaSakeLycheeFlavored.webp", excerpt: "Sweet, dry, fruity, earthy, find your ideal sake flavor." },
+      { slug: "sake-alcohol-strength", title: "Sake Alcohol Strength", image: "/images/blog/illustrations/sake-taste-spectrum.png", excerpt: "How strong is sake compared to wine and beer?" },
+      { slug: "japanese-cocktails", title: "Japanese Cocktails", image: "/images/catalog/25-C060324-6856.jpg", excerpt: "Signature Japanese-inspired cocktails you need to try." },
+      { slug: "japanese-beverages-guide", title: "Japanese Beverages Guide", image: "/images/catalog/23-C060324-6842.jpg", excerpt: "From matcha to Ramune, a complete Japanese drink guide." },
+      { slug: "japanese-whiskey-guide", title: "Japanese Whiskey Guide", image: "/images/beverages/JapaneseWhiskey.webp", excerpt: "Why Japanese whiskey is taking the world by storm." },
+      { slug: "yamazaki-whiskey-guide", title: "Yamazaki Whiskey Guide", image: "/images/beverages/JapaneseWhiskey.webp", excerpt: "Everything you need to know about Suntory Yamazaki." },
+      { slug: "ramune-soda-guide", title: "Ramune Soda Guide", image: "/images/beverages/RamuneSoda.webp", excerpt: "The iconic marble-sealed Japanese soda, flavors and history." },
     ],
     faq: [
       { q: "What time is happy hour at Jinbeh?", a: "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations. Enjoy Japanese draft beer, sake, and wine." },
       { q: "Does Jinbeh serve sake?", a: "Yes! Jinbeh offers a curated sake menu including Junmai, Daiginjo, Nigori (unfiltered), and hot sake. We also offer sake flights so you can sample multiple varieties. Ask your server for a pairing recommendation with your sushi or hibachi." },
       { q: "What Japanese cocktails does Jinbeh offer?", a: "Our bar features signature Japanese-inspired cocktails including the Jinbeh Punch, Spicy Margarita with yuzu, Mango Tango, Mule Summer, and classic Japanese highballs made with Suntory whiskey." },
-      { q: "Can I sit at the bar without a reservation?", a: "Yes! Bar seating at Jinbeh is first-come, first-served — no reservation needed. It's a great spot for happy hour drinks and watching our sushi chefs at work." },
+      { q: "Can I sit at the bar without a reservation?", a: "Yes! Bar seating at Jinbeh is first-come, first-served, no reservation needed. It's a great spot for happy hour drinks and watching our sushi chefs at work." },
     ],
   },
   "local-guide": {
@@ -143,7 +143,7 @@ const categories = {
     description:
       "Discover the best Japanese restaurants, date night spots, and dining experiences in Frisco, Lewisville, and the greater Dallas–Fort Worth area.",
     intro:
-      "Looking for the best place to eat tonight? Our local dining guides cover everything from hidden gems to celebrated favorites across Frisco, Lewisville, and greater DFW. As a family-owned restaurant serving North Texas since 1988, we know this area inside and out — and we're always happy to share our recommendations.",
+      "Looking for the best place to eat tonight? Our local dining guides cover everything from hidden gems to celebrated favorites across Frisco, Lewisville, and greater DFW. As a family-owned restaurant serving North Texas since 1988, we know this area inside and out, and we're always happy to share our recommendations.",
     color: "from-green-500 to-deep-indigo",
     pillarLinks: [
       { label: "Jinbeh Frisco", href: "/frisco" },
@@ -152,7 +152,7 @@ const categories = {
     ],
     relatedCategories: ["sushi", "hibachi", "celebrations"],
     articles: [
-      { slug: "top-frisco-restaurants", title: "Top Frisco Restaurants", image: "/images/exterior/JinbehFriscoStorefrontSign.jpg", excerpt: "The most popular restaurants in Frisco, TX — from casual to upscale." },
+      { slug: "top-frisco-restaurants", title: "Top Frisco Restaurants", image: "/images/exterior/JinbehFriscoStorefrontSign.jpg", excerpt: "The most popular restaurants in Frisco, TX, from casual to upscale." },
       { slug: "japanese-restaurants-near-me", title: "Japanese Restaurants Near Me", image: "/images/hq/lewisville-sushi-1.jpg", excerpt: "Find the best Japanese restaurants in your area." },
       { slug: "japanese-restaurants-lewisville", title: "Japanese Restaurants in Lewisville", image: "/images/lewisville/IMG_2142.jpg", excerpt: "Lewisville's top Japanese dining destinations." },
       { slug: "date-night-restaurants-frisco", title: "Date Night Restaurants", image: "/images/interior/FriscoLocation_Bar_Front.jpg", excerpt: "Romantic restaurants in Frisco perfect for date night." },
@@ -175,7 +175,7 @@ const categories = {
     description:
       "Curated 'best of' guides for Japanese dining, sushi, hibachi, and more across the Dallas–Fort Worth metroplex. Discover where to eat in Frisco, Lewisville, and beyond.",
     intro:
-      "When you search for 'the best,' you deserve a real answer. These curated guides highlight the top dining experiences across DFW — from the best sushi in Frisco to the finest hibachi in Dallas. Every recommendation is based on quality, freshness, and the kind of memorable experience that keeps guests coming back for over 38 years.",
+      "When you search for 'the best,' you deserve a real answer. These curated guides highlight the top dining experiences across DFW, from the best sushi in Frisco to the finest hibachi in Dallas. Every recommendation is based on quality, freshness, and the kind of memorable experience that keeps guests coming back for over 38 years.",
     color: "from-soft-gold to-amber-600",
     pillarLinks: [
       { label: "Jinbeh Frisco", href: "/frisco" },
@@ -188,7 +188,7 @@ const categories = {
       { slug: "best-sushi-dallas", title: "Best Sushi in Dallas", image: "/images/food/SamaraiRollCloseup.jpg", excerpt: "Top sushi restaurants across the Dallas metroplex." },
       { slug: "best-hibachi-dallas-tx", title: "Best Hibachi in Dallas", image: "/images/photoshoot/hibachi-plate-shrimp.jpg", excerpt: "Where to find the most entertaining hibachi experience in DFW." },
       { slug: "best-happy-hour-frisco-tx", title: "Best Happy Hour in Frisco", image: "/images/drinks/MuleSummerSignatureCocktail.jpg", excerpt: "Happy hour deals you don't want to miss near Stonebriar." },
-      { slug: "best-asian-food-dallas", title: "Best Asian Food in Dallas", image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", excerpt: "From sushi to ramen — the best Asian restaurants in Dallas." },
+      { slug: "best-asian-food-dallas", title: "Best Asian Food in Dallas", image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", excerpt: "From sushi to ramen, the best Asian restaurants in Dallas." },
       { slug: "best-seafood-dallas", title: "Best Seafood in Dallas", image: "/images/blog/17-C060324-6708.jpg", excerpt: "Fresh catches and seafood platters across the metro." },
       { slug: "best-steak-near-me", title: "Best Steak Near Me", image: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", excerpt: "Premium steak options including hibachi-grilled cuts." },
       { slug: "best-salmon-sashimi", title: "Best Salmon Sashimi", image: "/images/food/SmokedSalmonCloseup.jpg", excerpt: "Where to find buttery, premium salmon sashimi in DFW." },
@@ -207,7 +207,7 @@ const categories = {
     description:
       "Explore Japanese beverages from premium sake and Yamazaki whiskey to signature cocktails and Ramune soda. Your complete guide to drinks at Jinbeh in Frisco & Lewisville, TX.",
     intro:
-      "Japanese culture has produced some of the world's most refined beverages — from the ancient art of sake brewing to the modern mastery of Japanese whiskey. At Jinbeh, our bar showcases the best of these traditions alongside creative signature cocktails. Explore our beverage guides to learn, taste, and discover your new favorite drink.",
+      "Japanese culture has produced some of the world's most refined beverages, from the ancient art of sake brewing to the modern mastery of Japanese whiskey. At Jinbeh, our bar showcases the best of these traditions alongside creative signature cocktails. Explore our beverage guides to learn, taste, and discover your new favorite drink.",
     color: "from-indigo-600 to-purple-700",
     pillarLinks: [
       { label: "Happy Hour Specials", href: "/happy-hour" },
@@ -215,20 +215,20 @@ const categories = {
     ],
     relatedCategories: ["happy-hour", "sushi", "cuisine"],
     articles: [
-      { slug: "sake-pairing-guide", title: "Sake Pairing Guide", image: "/images/drinks/cocktail.jpg", excerpt: "Expert tips for pairing sake with sushi, hibachi, and appetizers." },
-      { slug: "types-of-sake-explained", title: "Types of Sake Explained", image: "/images/hq/jinbeh-cocktail.jpg", excerpt: "Junmai, Daiginjo, Nigori — learn the sake family." },
-      { slug: "sake-taste-profile", title: "Sake Taste Profile", image: "/images/instagram/fried-roll-bar-ambiance.jpg", excerpt: "Find your perfect sake: dry, sweet, fruity, or rich." },
-      { slug: "sake-alcohol-strength", title: "Sake Alcohol Strength", image: "/images/seasonal/HappyWineWednesday.png", excerpt: "How strong is sake compared to wine, beer, and spirits?" },
-      { slug: "japanese-cocktails", title: "Japanese Cocktails", image: "/images/drinks/JinbehPunchBeverageDrink.jpg", excerpt: "Creative Japanese-inspired cocktails from our bar." },
-      { slug: "japanese-beverages-guide", title: "Japanese Beverages Guide", image: "/images/drinks/SpicyMargaritaBeverageDrink.jpg", excerpt: "From matcha to Ramune — every Japanese drink you should try." },
-      { slug: "japanese-whiskey-guide", title: "Japanese Whiskey Guide", image: "/images/seasonal/WinedWednesday.jpg", excerpt: "Why the world is obsessed with Japanese whiskey." },
-      { slug: "yamazaki-whiskey-guide", title: "Yamazaki Whiskey Guide", image: "/images/drinks/MangoTangoDrinks.png", excerpt: "Deep dive into Suntory's legendary Yamazaki single malt." },
-      { slug: "ramune-soda-guide", title: "Ramune Soda Guide", image: "/images/instagram/mochi-desserts.jpg", excerpt: "The iconic marble-sealed Japanese soda — flavors and how to open it." },
+      { slug: "sake-pairing-guide", title: "Sake Pairing Guide", image: "/images/beverages/NigoriSparklingSake.png", excerpt: "Expert tips for pairing sake with sushi, hibachi, and appetizers." },
+      { slug: "types-of-sake-explained", title: "Types of Sake Explained", image: "/images/blog/illustrations/types-of-sake-varieties.png", excerpt: "Junmai, Daiginjo, Nigori, learn the sake family." },
+      { slug: "sake-taste-profile", title: "Sake Taste Profile", image: "/images/beverages/HanaSakeLycheeFlavored.webp", excerpt: "Find your perfect sake: dry, sweet, fruity, or rich." },
+      { slug: "sake-alcohol-strength", title: "Sake Alcohol Strength", image: "/images/blog/illustrations/sake-taste-spectrum.png", excerpt: "How strong is sake compared to wine, beer, and spirits?" },
+      { slug: "japanese-cocktails", title: "Japanese Cocktails", image: "/images/catalog/25-C060324-6856.jpg", excerpt: "Creative Japanese-inspired cocktails from our bar." },
+      { slug: "japanese-beverages-guide", title: "Japanese Beverages Guide", image: "/images/catalog/23-C060324-6842.jpg", excerpt: "From matcha to Ramune, every Japanese drink you should try." },
+      { slug: "japanese-whiskey-guide", title: "Japanese Whiskey Guide", image: "/images/beverages/JapaneseWhiskey.webp", excerpt: "Why the world is obsessed with Japanese whiskey." },
+      { slug: "yamazaki-whiskey-guide", title: "Yamazaki Whiskey Guide", image: "/images/beverages/JapaneseWhiskey.webp", excerpt: "Deep dive into Suntory's legendary Yamazaki single malt." },
+      { slug: "ramune-soda-guide", title: "Ramune Soda Guide", image: "/images/beverages/RamuneSoda.webp", excerpt: "The iconic marble-sealed Japanese soda, flavors and how to open it." },
     ],
     faq: [
-      { q: "What is sake and how is it made?", a: "Sake is a Japanese rice wine made by fermenting polished rice with water, yeast, and koji mold. The more the rice is polished, the higher the grade — Daiginjo sake uses rice polished to at least 50% of its original size." },
+      { q: "What is sake and how is it made?", a: "Sake is a Japanese rice wine made by fermenting polished rice with water, yeast, and koji mold. The more the rice is polished, the higher the grade, Daiginjo sake uses rice polished to at least 50% of its original size." },
       { q: "What Japanese whiskey does Jinbeh serve?", a: "Jinbeh's bar features a curated selection of Japanese whiskeys including Suntory Yamazaki, Hibiki Harmony, Toki, and Nikka Coffey Grain. Ask your bartender for a whiskey flight or a Japanese highball." },
-      { q: "What is Ramune soda?", a: "Ramune is a beloved Japanese carbonated soft drink known for its unique marble-sealed glass bottle. It comes in dozens of flavors including original, strawberry, melon, and lychee. We serve Ramune at both Jinbeh locations — kids and adults love it!" },
+      { q: "What is Ramune soda?", a: "Ramune is a beloved Japanese carbonated soft drink known for its unique marble-sealed glass bottle. It comes in dozens of flavors including original, strawberry, melon, and lychee. We serve Ramune at both Jinbeh locations, kids and adults love it!" },
     ],
   },
   cuisine: {
@@ -236,7 +236,7 @@ const categories = {
     h1: "Exploring Japanese Cuisine: From Sushi to Teppanyaki",
     icon: "🍱",
     description:
-      "Dive deep into Japanese cuisine — from the art of sushi and sashimi to teppanyaki grilling and traditional dishes. Expert guides from Jinbeh's 38+ years of culinary heritage.",
+      "Dive deep into Japanese cuisine, from the art of sushi and sashimi to teppanyaki grilling and traditional dishes. Expert guides from Jinbeh's 38+ years of culinary heritage.",
     intro:
       "Japanese cuisine is one of the world's great culinary traditions, built on principles of freshness, seasonality, and presentation. At Jinbeh, we honor these traditions while making them accessible to every guest. Whether you're curious about the difference between sashimi and sushi or want to master chopstick etiquette, these guides draw from our 38+ years of serving authentic Japanese food in North Texas.",
     color: "from-amber-600 to-red-600",
@@ -247,12 +247,12 @@ const categories = {
     ],
     relatedCategories: ["sushi", "hibachi", "beverages"],
     articles: [
-      { slug: "types-of-sushi", title: "Types of Sushi: Complete Guide", image: "/images/blog/17-C060324-6708.jpg", excerpt: "Every sushi style explained — nigiri, maki, temaki, and more." },
+      { slug: "types-of-sushi", title: "Types of Sushi: Complete Guide", image: "/images/blog/17-C060324-6708.jpg", excerpt: "Every sushi style explained, nigiri, maki, temaki, and more." },
       { slug: "sashimi-vs-sushi", title: "Sashimi vs Sushi Explained", image: "/images/photoshoot/sashimi-platter.jpg", excerpt: "What's the real difference between sashimi and sushi?" },
       { slug: "how-to-eat-sushi-guide", title: "How to Eat Sushi Properly", image: "/images/instagram/sushi-feast-flatlay.jpg", excerpt: "Etiquette, chopstick tips, and wasabi guidelines." },
       { slug: "hibachi-vs-teppanyaki-explained", title: "Hibachi vs Teppanyaki", image: "/images/hq/onion-volcano.jpg", excerpt: "The surprising difference between these two cooking styles." },
       { slug: "discover-teppanyaki", title: "Discover Teppanyaki", image: "/images/hq/cooking-on-grill.jpg", excerpt: "The history and art of Japanese teppanyaki cooking." },
-      { slug: "omakase-dining-guide", title: "Omakase Dining Guide", image: "/images/photoshoot/sushi-tower.jpg", excerpt: "'Trust the chef' — the art of omakase dining." },
+      { slug: "omakase-dining-guide", title: "Omakase Dining Guide", image: "/images/photoshoot/sushi-tower.jpg", excerpt: "'Trust the chef', the art of omakase dining." },
       { slug: "what-is-omakase", title: "What Is Omakase?", image: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", excerpt: "Everything you need to know about the omakase experience." },
       { slug: "sushi-identification-chart", title: "Sushi Identification Chart", image: "/images/instagram/specialty-roll-closeup.jpg", excerpt: "Visual guide to identifying sushi by type." },
       { slug: "popular-japanese-culture", title: "Popular Japanese Culture", image: "/images/photoshoot/appetizers-spread.jpg", excerpt: "How Japanese food culture shapes the dining experience." },
@@ -271,7 +271,7 @@ const categories = {
     description:
       "Discover the health benefits of Japanese food. Calorie guides for hibachi and sushi, nutritious menu options, and how Japanese dining fits a healthy lifestyle.",
     intro:
-      "Japanese cuisine is celebrated worldwide for its health benefits — and for good reason. With an emphasis on fresh fish, vegetables, lean proteins, and minimal processing, a meal at Jinbeh can be both delicious and nutritious. These guides break down the calories, nutrition facts, and healthiest choices on our menu.",
+      "Japanese cuisine is celebrated worldwide for its health benefits, and for good reason. With an emphasis on fresh fish, vegetables, lean proteins, and minimal processing, a meal at Jinbeh can be both delicious and nutritious. These guides break down the calories, nutrition facts, and healthiest choices on our menu.",
     color: "from-green-600 to-teal-600",
     pillarLinks: [
       { label: "Full Menu", href: "/menu" },
@@ -283,12 +283,12 @@ const categories = {
       { slug: "hibachi-lunch-ideas", title: "Hibachi Lunch Ideas", image: "/images/food/BentoBoxLunchSet.jpg", excerpt: "Quick, balanced hibachi lunches for weekday dining." },
       { slug: "sushi-lunch-specials", title: "Sushi Lunch Specials", image: "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg", excerpt: "Affordable lunch combos with fresh sushi rolls." },
       { slug: "sashimi-vs-sushi", title: "Sashimi vs Sushi Explained", image: "/images/photoshoot/sashimi-platter.jpg", excerpt: "Which is healthier? Comparing nutrition of sashimi and sushi." },
-      { slug: "best-salmon-sashimi", title: "Best Salmon Sashimi", image: "/images/food/SmokedSalmonCloseup.jpg", excerpt: "Omega-3 rich salmon sashimi — one of the healthiest menu picks." },
+      { slug: "best-salmon-sashimi", title: "Best Salmon Sashimi", image: "/images/food/SmokedSalmonCloseup.jpg", excerpt: "Omega-3 rich salmon sashimi, one of the healthiest menu picks." },
     ],
     faq: [
       { q: "How many calories are in a hibachi meal?", a: "A typical hibachi entree at Jinbeh ranges from 400–800 calories depending on your protein choice and sides. Chicken is the lightest option (~450 cal), while steak and shrimp combo plates are around 650–800 calories. Hibachi vegetables and salad add minimal calories." },
       { q: "Is sushi healthy?", a: "Yes! Sushi is one of the healthiest dining options. A typical sushi roll has 200–350 calories and is rich in omega-3 fatty acids, lean protein, and vitamins. Sashimi (pure sliced fish) is even lower in calories while being packed with protein." },
-      { q: "What are the healthiest options at Jinbeh?", a: "Our healthiest dishes include sashimi platters, edamame, miso soup, grilled salmon, chicken hibachi with vegetables, and low-sodium sushi rolls. Ask your server about lighter preparation options — we're happy to accommodate dietary preferences." },
+      { q: "What are the healthiest options at Jinbeh?", a: "Our healthiest dishes include sashimi platters, edamame, miso soup, grilled salmon, chicken hibachi with vegetables, and low-sodium sushi rolls. Ask your server about lighter preparation options, we're happy to accommodate dietary preferences." },
     ],
   },
   "local-guides": {
@@ -298,7 +298,7 @@ const categories = {
     description:
       "City-by-city dining guides for the Dallas–Fort Worth area. Find the best Japanese restaurants, sushi bars, and hibachi grills near Frisco, Lewisville, Plano, McKinney, and beyond.",
     intro:
-      "No matter where you are in the DFW metroplex, great Japanese food is closer than you think. With locations in Frisco and Lewisville, Jinbeh has been the neighborhood restaurant for over a dozen North Texas communities since 1988. These city guides help you discover what's nearby — and why Jinbeh is always worth the trip.",
+      "No matter where you are in the DFW metroplex, great Japanese food is closer than you think. With locations in Frisco and Lewisville, Jinbeh has been the neighborhood restaurant for over a dozen North Texas communities since 1988. These city guides help you discover what's nearby, and why Jinbeh is always worth the trip.",
     color: "from-blue-600 to-indigo-700",
     pillarLinks: [
       { label: "Jinbeh Frisco", href: "/frisco" },

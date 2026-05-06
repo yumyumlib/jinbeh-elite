@@ -28,7 +28,7 @@ const faqs = [
     { question: "Is Jinbeh a good choice for Japanese dining?", answer: "Welcome to the table! Jinbeh serves authentic Japanese cuisine since 1988. We offer hibachi entertainment, fresh sushi, and a family-friendly atmosphere. Locations in Frisco and Lewisville." },
     { question: "What's the difference between sushi and sashimi?", answer: "Sushi is rice topped with fish or other ingredients. Sashimi is sliced raw fish without rice. Both are fresh and flavorful. Try both at Jinbeh!" },
     { question: "How do I make a reservation at a Japanese restaurant?", answer: "Call ahead! For Jinbeh, call Frisco (214) 619-1200 or Lewisville (214) 488-2224. Reservations ensure your table and let us prepare special touches." },
-    { question: "Are Japanese restaurants family-friendly?", answer: "Many are! At Jinbeh, families love the hibachi experience — kids are fascinated by the chef's fire tricks and food-tossing performance. We have children's portions available and a welcoming atmosphere that makes everyone feel at home. We've been a family-owned restaurant ourselves since 1988." }
+    { question: "Are Japanese restaurants family-friendly?", answer: "Many are! At Jinbeh, families love the hibachi experience, kids are fascinated by the chef's fire tricks and food-tossing performance. We have children's portions available and a welcoming atmosphere that makes everyone feel at home. We've been a family-owned restaurant ourselves since 1988." }
 ];
 
 const schemas = [
@@ -175,7 +175,7 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="bg-gradient-to-br from-deep-indigo/10 to-soft-gold/10 border-l-4 border-deep-indigo rounded-r-xl p-6 my-8">
                                 <p className="text-charcoal italic">"At Jinbeh, we're proud to be a trusted Japanese restaurant where families and friends come to experience authentic cuisine and memorable moments. We've been serving our communities since 1988 with dedication to quality."</p>
-                                <span className="text-sm text-charcoal/80">— Jinbeh Family</span>
+                                <span className="text-sm text-charcoal/80">, Jinbeh Family</span>
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🔍 What Makes Japanese Cuisine Authentic</h2>
@@ -318,7 +318,8 @@ export default function JapaneseRestaurantsNearMe() {
                             </div>
 
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏯 Discover Authentic Japanese Dining at Jinbeh</h2>
-                            <p className="text-charcoal/80 mb-6">In the Dallas-Fort Worth area? <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh</Link> offers authentic sushi, hibachi performances, and warm hospitality. Family-owned since 1988, we're the <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline">best hibachi in Dallas</Link> with convenient locations. Learn more about <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">how to order sushi</Link> to get the most from your visit.</p>
+                            <p className="text-charcoal/80 mb-6">For nearly four decades, Jinbeh has been the family-owned Japanese restaurant North Dallas, Plano, Frisco, and Lewisville families return to. Not a chain. Not a franchise. One family table, set since 1988. Two locations. Two generations of regulars. A hibachi show that still makes kids scream with delight and adults laugh right along with them.</p>
+                            <p className="text-charcoal/80 mb-6">For anyone searching for the best Japanese restaurant in Frisco, the <Link href="/blog/best-hibachi-lewisville" className="text-accent-red hover:underline">best hibachi in Lewisville</Link>, fresh sushi near Plano, or a date-night sushi bar in North Dallas, the answer keeps landing in the same place. <Link href="/frisco" className="text-accent-red hover:underline">Jinbeh Frisco</Link> is at 2693 Preston Road, Suite 1040 (reservations: (214) 619-1200). <Link href="/lewisville" className="text-accent-red hover:underline">Jinbeh Lewisville</Link> is at 2440 S. Stemmons Freeway, Suite A (reservations: (214) 488-2224). Both restaurants serve lunch and dinner seven days a week. Learn more about <Link href="/blog/beginner-sushi-tips" className="text-accent-red hover:underline">how to order sushi</Link> to get the most from your visit.</p>
 
                             <div className="grid md:grid-cols-2 gap-6 my-8">
                                 <Link href="/frisco" className="group p-6 rounded-2xl bg-warm-ivory hover:bg-soft-gold/20 transition-colors border-2 border-transparent hover:border-soft-gold">
@@ -336,7 +337,7 @@ export default function JapaneseRestaurantsNearMe() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
- <strong>Japanese dining insider tip:</strong> When searching for authentic Japanese restaurants, look for places that have been open for 10+ years—longevity signals quality. At Jinbeh (since 1988), ask for a seat at the sushi bar to watch our chefs work. For the best value, visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for draft beer, sake, and wine, then stay for hibachi. First-timers: start with a California roll and miso soup, then work up to our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience.
+ <strong>Japanese dining insider tip:</strong> When searching for authentic Japanese restaurants, look for places that have been open for 10+ years, longevity signals quality. At Jinbeh (since 1988), ask for a seat at the sushi bar to watch our chefs work. For the best value, visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for draft beer, sake, and wine, then stay for hibachi. First-timers: start with a California roll and miso soup, then work up to our <Link href="/blog/what-is-omakase" className="text-accent-red hover:underline">omakase</Link> experience.
                                 </ProTip>
 
                                 <PillarCTA type="hub" />

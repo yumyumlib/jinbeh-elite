@@ -267,7 +267,7 @@ export default function RestaurantsPrivateRooms() {
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "Private dining removes the ordinary restaurant experience and replaces it with something truly special. It's about creating an exclusive atmosphere where your group feels valued and the details are crafted for you."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— Private Dining Specialist</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, Private Dining Specialist</span>
                                     </div>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -441,7 +441,7 @@ export default function RestaurantsPrivateRooms() {
                                     </h3>
 
                                     <p>
-                                        Ensure the venue can comfortably accommodate your entire group with room to spare. Consider not just head count but also the layout—adequate spacing between tables and easy movement throughout the space enhances the experience.
+                                        Ensure the venue can comfortably accommodate your entire group with room to spare. Consider not just head count but also the layout, adequate spacing between tables and easy movement throughout the space enhances the experience.
                                     </p>
 
                                     <h3 className="text-xl font-heading font-semibold text-charcoal mt-8 mb-4">
@@ -567,7 +567,7 @@ export default function RestaurantsPrivateRooms() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Private dining insider tip:</strong> At Jinbeh, request the secluded hibachi section in Frisco for groups of 15-30—it has dividers that create a semi-private experience with the full hibachi show. For smaller gatherings (4-8), our sushi bar private booths offer an intimate setting. Book 3 weeks ahead for weekends, and ask about our preset menu options to simplify ordering for large groups. <Link href="/private-dining" className="text-accent-red hover:underline">Book private dining →</Link>
+                                        <strong>Private dining insider tip:</strong> At Jinbeh, request the secluded hibachi section in Frisco for groups of 15-30, it has dividers that create a semi-private experience with the full hibachi show. For smaller gatherings (4-8), our sushi bar private booths offer an intimate setting. Book 3 weeks ahead for weekends, and ask about our preset menu options to simplify ordering for large groups. <Link href="/private-dining" className="text-accent-red hover:underline">Book private dining →</Link>
                                     </ProTip>
 
                                     <PillarCTA type="vip" />

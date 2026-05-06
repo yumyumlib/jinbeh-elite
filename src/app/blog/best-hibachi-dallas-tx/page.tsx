@@ -46,7 +46,7 @@ const faqs = [
     },
     {
         question: "How much does hibachi cost in Dallas?",
-        answer: "Hibachi dinners in Dallas typically range from per person, depending on the protein selection (chicken, shrimp, steak, or combination). At Jinbeh, our hibachi entrees include miso soup, house salad, grilled vegetables, fried rice, and the entertaining chef show—all for great value. Premium proteins like wagyu cost more but deliver exceptional quality.",
+        answer: "Hibachi dinners in Dallas typically range from per person, depending on the protein selection (chicken, shrimp, steak, or combination). At Jinbeh, our hibachi entrees include miso soup, house salad, grilled vegetables, fried rice, and the entertaining chef show, all for great value. Premium proteins like wagyu cost more but deliver exceptional quality.",
     },
     {
         question: "Do I need reservations for hibachi in Dallas?",
@@ -58,11 +58,11 @@ const faqs = [
     },
     {
         question: "Can I order hibachi for catering or private events?",
-        answer: "Yes! We offer hibachi catering for private events and corporate functions. Our skilled chefs bring the full teppanyaki dining experience to your location—whether it's your home, office, or venue. Contact our catering team at Frisco (214) 619-1200 or Lewisville (214) 488-2224 for custom packages and availability.",
+        answer: "Yes! We offer hibachi catering for private events and corporate functions. Our skilled chefs bring the full teppanyaki dining experience to your location, whether it's your home, office, or venue. Contact our catering team at Frisco (214) 619-1200 or Lewisville (214) 488-2224 for custom packages and availability.",
     },
     {
         question: "What makes Jinbeh's hibachi different from other Dallas restaurants?",
-        answer: "Jinbeh has been perfecting hibachi since 1988—nearly four decades of family tradition. We use only fresh, never-frozen ingredients, our chefs train extensively for years, and we're locally owned with two convenient DFW locations. Plus, we combine hibachi and sushi under one roof, so you get variety and expertise in both cuisines.",
+        answer: "Jinbeh has been perfecting hibachi since 1988, nearly four decades of family tradition. We use only fresh, never-frozen ingredients, our chefs train extensively for years, and we're locally owned with two convenient DFW locations. Plus, we combine hibachi and sushi under one roof, so you get variety and expertise in both cuisines.",
     },
     {
         question: "Can kids enjoy hibachi at Jinbeh?",
@@ -74,7 +74,7 @@ const faqs = [
     },
     {
         question: "What should I wear to a hibachi restaurant?",
-        answer: "Hibachi dining is smart-casual. Most guests wear jeans and a nice top or casual dress. Keep in mind that cooking aromas may linger on your clothes—some regular guests avoid wearing delicate fabrics. There's no strict dress code at Jinbeh, just come comfortable and ready for a fun experience!",
+        answer: "Hibachi dining is smart-casual. Most guests wear jeans and a nice top or casual dress. Keep in mind that cooking aromas may linger on your clothes, some regular guests avoid wearing delicate fabrics. There's no strict dress code at Jinbeh, just come comfortable and ready for a fun experience!",
     },
 ];
 
@@ -160,14 +160,14 @@ export default function BestHibachiDallas() {
                                     <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                                         <strong>Craving hibachi in Dallas?</strong> You're not alone. There's something
                                         magical about watching a skilled chef transform raw ingredients into a sizzling
-                                        feast right before your eyes—complete with flying shrimp, flaming onion volcanoes,
+                                        feast right before your eyes, complete with flying shrimp, flaming onion volcanoes,
                                         and precision knife work that's half cooking, half performance art.
                                     </p>
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
                                             "At Jinbeh, we've been putting on the hibachi show since 1988.
-                                            But it's never just about the tricks—it's about bringing people together
+                                            But it's never just about the tricks, it's about bringing people together
                                             around good food and great entertainment. That's the Jinbeh way."
  </p>
  <div className="my-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl border border-amber-200">
@@ -176,11 +176,11 @@ export default function BestHibachiDallas() {
  There&apos;s a reason Jinbeh is ranked <strong>#1 Hibachi in Lewisville</strong> on OpenTable and has earned multiple <strong>D Magazine</strong> awards and recognition across <strong>12+ OpenTable Diners&apos; Choice lists</strong>. After 38 years, the combination of family-owned warmth, house-made sauces, and 550&deg;F hibachi grills still sets the standard for Japanese steakhouse dining in Dallas&ndash;Fort Worth.
  </p>
  </div>
- <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+ <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
  </div>
 
  <DidYouKnow
- fact="Teppanyaki-style cooking was invented by Shigeji Fujioka in 1945 at his restaurant Misono in Kobe, Japan. He designed it specifically to entertain Western tourists who were fascinated by watching food being prepared. Today, the average teppanyaki chef trains for 2-3 years before performing solo — mastering not just cooking, but the theatrical skills that make hibachi dining unforgettable."
+ fact="Teppanyaki-style cooking was invented by Shigeji Fujioka in 1945 at his restaurant Misono in Kobe, Japan. He designed it specifically to entertain Western tourists who were fascinated by watching food being prepared. Today, the average teppanyaki chef trains for 2-3 years before performing solo, mastering not just cooking, but the theatrical skills that make hibachi dining unforgettable."
  source="Japanese Culinary History Archives"
  />
 
@@ -296,11 +296,11 @@ export default function BestHibachiDallas() {
                                     </p>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Family-owned since 1988</strong> — We're not a franchise. Every meal is personal.</li>
-                                        <li><strong>Two convenient DFW locations</strong> — <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> (near Stonebriar) and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> (off I-35E)</li>
-                                        <li><strong>Hibachi + Sushi under one roof</strong> — Can't decide? Get both.</li>
-                                        <li><strong>Perfect for celebrations</strong> — <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">Birthdays</Link>, anniversaries, team dinners</li>
-                                        <li><strong>Catering services available</strong> — Bring the show to your <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">corporate events or private parties</Link></li>
+                                        <li><strong>Family-owned since 1988</strong>, We're not a franchise. Every meal is personal.</li>
+                                        <li><strong>Two convenient DFW locations</strong>, <Link href="/frisco" className="text-accent-red hover:underline">Frisco</Link> (near Stonebriar) and <Link href="/lewisville" className="text-accent-red hover:underline">Lewisville</Link> (off I-35E)</li>
+                                        <li><strong>Hibachi + Sushi under one roof</strong>, Can't decide? Get both.</li>
+                                        <li><strong>Perfect for celebrations</strong>, <Link href="/blog/hibachi-birthday-party-ideas" className="text-accent-red hover:underline">Birthdays</Link>, anniversaries, team dinners</li>
+                                        <li><strong>Catering services available</strong>, Bring the show to your <Link href="/blog/hibachi-catering-dfw" className="text-accent-red hover:underline">corporate events or private parties</Link></li>
                                     </ul>
 
                                     <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
@@ -326,7 +326,7 @@ export default function BestHibachiDallas() {
                                     </div>
 
                                     <ProTip variant="insider">
-                                        <strong>Hibachi regulars' tip:</strong> Arrive 10-15 minutes early to settle in and order drinks before the chef starts. Reviewers say the filet mignon and shrimp combo is the "best value on the menu," and kids absolutely love the onion volcano trick. For birthday celebrations, let us know in advance — our chefs make it extra special! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
+                                        <strong>Hibachi regulars' tip:</strong> Arrive 10-15 minutes early to settle in and order drinks before the chef starts. Reviewers say the filet mignon and shrimp combo is the "best value on the menu," and kids absolutely love the onion volcano trick. For birthday celebrations, let us know in advance, our chefs make it extra special! <Link href="/reservations" className="text-accent-red hover:underline">Reserve your hibachi table →</Link>
                                     </ProTip>
                                 </div>
 

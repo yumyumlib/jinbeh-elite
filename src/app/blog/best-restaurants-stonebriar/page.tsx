@@ -45,7 +45,7 @@ const faqs = [
     },
     {
         question: "Is there a good hibachi restaurant near Stonebriar Centre?",
-        answer: "Yes! Jinbeh Japanese Restaurant at 2693 Preston Road is just a few minutes from Stonebriar Centre. We offer tableside hibachi cooking with entertaining chef shows, plus a full sushi bar. Our guests tell us we're 'better than the chains'—and we've been perfecting our craft for over 38 years.",
+        answer: "Yes! Jinbeh Japanese Restaurant at 2693 Preston Road is just a few minutes from Stonebriar Centre. We offer tableside hibachi cooking with entertaining chef shows, plus a full sushi bar. Our guests tell us we're 'better than the chains',and we've been perfecting our craft for over 38 years.",
     },
     {
         question: "Where can I eat after shopping at Stonebriar Mall?",
@@ -57,7 +57,7 @@ const faqs = [
     },
     {
         question: "Are there affordable restaurants near Stonebriar Mall?",
-        answer: "Absolutely! Jinbeh offers excellent value with lunch specials starting at competitive prices. Our hibachi lunch includes soup, salad, grilled vegetables, fried rice, and your choice of protein. Check our lunch specials page for current pricing—it's fine dining quality at casual dining prices.",
+        answer: "Absolutely! Jinbeh offers excellent value with lunch specials starting at competitive prices. Our hibachi lunch includes soup, salad, grilled vegetables, fried rice, and your choice of protein. Check our lunch specials page for current pricing, it's fine dining quality at casual dining prices.",
     },
     {
         question: "Are there happy hour deals near Stonebriar Mall?",
@@ -202,15 +202,15 @@ export default function BestRestaurantsStonebriar() {
 
                                     <div className="bg-gradient-to-br from-accent-red/10 to-soft-gold/10 border-l-4 border-accent-red rounded-r-2xl p-6 my-8">
                                         <p className="text-charcoal font-medium italic text-lg">
-                                            "We've been feeding Frisco families since 1988—long before Stonebriar
+                                            "We've been feeding DFW families since 1988, long before Stonebriar
                                             was even built. Our guests tell us we're 'better than the chains' because
                                             every meal here is personal. That's the Jinbeh difference."
                                         </p>
-                                        <span className="text-sm text-charcoal/80 mt-2 block">— The Jinbeh Family</span>
+                                        <span className="text-sm text-charcoal/80 mt-2 block">, The Jinbeh Family</span>
                                     </div>
 
                                     <DidYouKnow
-                                        fact="Stonebriar Centre opened in August 2000 and quickly transformed the Preston Road corridor into one of North Texas's premier dining districts. Today, there are over 100 restaurants within a 2-mile radius of the mall — but Jinbeh predates all of them, having served Frisco families since 1988, nearly 12 years before the mall even opened."
+                                        fact="Stonebriar Centre opened in August 2000 and quickly transformed the Preston Road corridor into one of North Texas's premier dining districts. Today, there are over 100 restaurants within a 2-mile radius of the mall, but Jinbeh predates all of them, having served DFW families since 1988 as a family-owned Japanese restaurant."
                                         source="Stonebriar Centre History & Frisco Chamber of Commerce"
                                     />
 
@@ -222,7 +222,7 @@ export default function BestRestaurantsStonebriar() {
                                         The Preston Road corridor around Stonebriar Centre has evolved into one of North Texas's most
                                         vibrant restaurant scenes. From family-owned gems with decades of heritage to trendy newcomers,
                                         you'll find everything from authentic <Link href="/blog/discover-teppanyaki" className="text-accent-red hover:underline">teppanyaki grilling</Link> to creative Italian
-                                        and upscale American cuisine—all within a short drive of the mall.
+                                        and upscale American cuisine, all within a short drive of the mall.
                                     </p>
 
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
@@ -396,11 +396,11 @@ export default function BestRestaurantsStonebriar() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                                         <div className="bg-warm-ivory rounded-2xl p-6">
                                             <p className="text-charcoal/80 italic mb-3">"The Filet and Lobster Tail at Jinbeh are must-tries. Fantastic service every single time."</p>
-                                            <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Frisco</p>
+                                            <p className="text-sm text-charcoal/60">, Google Review, Jinbeh Frisco</p>
                                         </div>
                                         <div className="bg-warm-ivory rounded-2xl p-6">
-                                            <p className="text-charcoal/80 italic mb-3">"Best crab rangoons I've ever had. The kids love watching the hibachi chef—it's dinner and a show!"</p>
-                                            <p className="text-sm text-charcoal/60">— Google Review, Jinbeh Frisco</p>
+                                            <p className="text-charcoal/80 italic mb-3">"Best crab rangoons I've ever had. The kids love watching the hibachi chef, it's dinner and a show!"</p>
+                                            <p className="text-sm text-charcoal/60">, Google Review, Jinbeh Frisco</p>
                                         </div>
                                     </div>
 
@@ -409,14 +409,14 @@ export default function BestRestaurantsStonebriar() {
                                     </h2>
 
                                     <ul className="space-y-2">
-                                        <li><strong>Make reservations for weekends</strong> — The popular spots fill up fast, especially Friday and Saturday evenings.</li>
-                                        <li><strong>Try <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline">lunch specials</Link></strong> — Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
-                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> drinks</strong> — Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> for Japanese draft beer, sake, and wine (Mon–Fri 5–6:30 PM) before dinner.</li>
- <li><strong>Go local over chain</strong> — Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
+                                        <li><strong>Make reservations for weekends</strong>, The popular spots fill up fast, especially Friday and Saturday evenings.</li>
+                                        <li><strong>Try <Link href="/blog/sushi-lunch-specials" className="text-accent-red hover:underline">lunch specials</Link></strong>, Many restaurants, including <Link href="/lunch-specials" className="text-accent-red hover:underline">Jinbeh's lunch menu</Link>, offer the same quality at lower prices.</li>
+                                        <li><strong><Link href="/blog/best-happy-hour-frisco-tx" className="text-accent-red hover:underline">Happy hour</Link> drinks</strong>, Stop by <Link href="/happy-hour" className="text-accent-red hover:underline">Jinbeh's happy hour</Link> for Japanese draft beer, sake, and wine (Mon–Fri 5–6:30 PM) before dinner.</li>
+ <li><strong>Go local over chain</strong>, Family-owned restaurants like Jinbeh offer more personal service, unique flavors, and support the local community.</li>
  </ul>
 
  <ProTip variant="insider">
- <strong>Post-shopping pro tip:</strong> Skip the mall food court and head to Jinbeh — it's just 3 minutes down Preston Road. Reviewers say the hibachi is "dinner and a show" that kids love after a long shopping day. The Filet and Lobster Tail combo is the crowd favorite, and the crab rangoons are "the best I've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
+ <strong>Post-shopping pro tip:</strong> Skip the mall food court and head to Jinbeh, it's just 3 minutes down Preston Road. Reviewers say the hibachi is "dinner and a show" that kids love after a long shopping day. The Filet and Lobster Tail combo is the crowd favorite, and the crab rangoons are "the best I've ever had." <Link href="/reservations" className="text-accent-red hover:underline">Reserve your table →</Link>
                                     </ProTip>
                                 </div>
 

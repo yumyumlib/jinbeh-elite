@@ -32,7 +32,7 @@ const reasons: ExperienceReason[] = [
     hook: 'Fresh fish. Sauces made from scratch, daily.',
     description: 'Our Yum Yum sauce, every dipping sauce, and the garlic butter are all made in-house daily. The sushi is fresh and made daily with quality, delicious ingredients. After 38 years, we know: you taste the difference when every detail is done right.',
     image: '/images/catalog/homemade-sauces.jpg',
-    imageAlt: 'Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch'
+    imageAlt: 'Jinbeh house-made dipping sauces, spicy chili sauce and signature yum yum sauce made fresh daily from scratch'
   },
   {
     label: 'DFW\'s Birthday Spot',
@@ -46,7 +46,7 @@ const reasons: ExperienceReason[] = [
     label: 'Come Hungry, Leave Happy',
     title: 'Come Hungry, Leave Happy',
     hook: 'Premium cuts. Generous plates. Leftovers guaranteed.',
-    description: 'Tender filet mignon. Jumbo shrimp with the perfect char. Fresh vegetables grilled in house-made garlic butter. Every plate is generous—most guests leave with a to-go box. As one guest put it: "Best steak I\'ve ever had. 10/10... food touched my soul."',
+    description: 'Tender filet mignon. Jumbo shrimp with the perfect char. Fresh vegetables grilled in house-made garlic butter. Every plate is generous, most guests leave with a to-go box. As one guest put it: "Best steak I\'ve ever had. 10/10... food touched my soul."',
     image: '/images/catalog/12-C060324-6551.jpg',
     imageAlt: 'Premium hibachi dinner with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant'
   }
@@ -72,7 +72,7 @@ export default function JinbehExperience() {
             WHY JINBEH
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight whitespace-nowrap">
-            Not Just Dinner—<span className="text-soft-gold">A Memory</span>
+            Not Just Dinner,<span className="text-soft-gold">A Memory</span>
           </h2>
         </div>
 
