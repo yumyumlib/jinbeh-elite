@@ -43,3 +43,13 @@ next-env.d.ts
 
 # Large files
 public/images/catalog_backup_original.tar.gz
+
+# Local ops scripts (not for production)
+.deploy*.sh
+.n8n-*.py
+.create-*.py
+.append-*.py
+
+# Claude conversation export PDFs
+*Claude.pdf
+Best *.pdf
