@@ -26,7 +26,7 @@ export const HAPPY_HOUR = {
   shortLine: "$4 Japanese draft beer, $5 sake, $6 wine. Mon-Fri 5-6:30pm.",
   inlineSentence:
     "Happy Hour at Jinbeh runs Monday through Friday from 5:00 to 6:30 PM with $4 Japanese draft beer, $5 sake, and $6 wine at both Frisco and Lewisville.",
-  oneLiner: "$4 draft beer, $5 sake, $6 wine — Mon-Fri 5–6:30 PM",
+  oneLiner: "$4 draft beer, $5 sake, $6 wine, Mon-Fri 5–6:30 PM",
 } as const;
 
 export type HappyHour = typeof HAPPY_HOUR;

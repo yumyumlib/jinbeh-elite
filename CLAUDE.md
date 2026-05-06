@@ -4,6 +4,126 @@ This file tracks notable findings, decisions, and tribal knowledge for the
 jinbeh-elite-phase1 Next.js website. Add new entries at the top with a
 date and short title.
 
+## 2026-05-05 — /frisco/hibachi rebuild + 12-page Reserve-button contrast fix
+
+### Frisco hibachi page: bulleted menu + photo gallery
+
+Rebuilt `src/app/frisco/hibachi/page.tsx`:
+
+1. **Replaced the 14-card image grid** (each card was a Link to a
+   `/frisco/hibachi/[item]` subpage with a thumbnail) with a clean,
+   categorized **bulleted list** sourced from the official Frisco dinner
+   menu PDF (page 2, `Jinbeh-Frisco-Dinner.pdf`). Items are organized into
+   four sections with gold horizontal-rule headers and a 2-column grid
+   layout on desktop:
+   - **Land Entrées** — The Vegetarian, Lemon Sesame Chicken, N.Y. Strip
+     Steak, Teriyaki Steak, Filet Mignon, Black Angus Ribeye (10 oz.),
+     Chateaubriand
+   - **Ocean Entrées** — Yakisoba (Japanese Pasta), Hibachi Calamari,
+     Hibachi Salmon, Colossal Shrimp, Jumbo Scallops, Grilled Mahi-Mahi,
+     Twin Lobster Tails
+   - **Combo Dinner Selection** — Jinbeh Double Delight, Surf N' Turf,
+     Land and Sea, Tokyo Trio, Seafood Lover's Combo, Imperial Dinner for 2
+   - **Children's Dinners** — chicken, steak, shrimp, filet mignon
+     (no description, just the item name)
+   Data lives at module scope as `hibachiMenu: HibachiMenuSection[]` for
+   easy editing. **No prices** are rendered (per project policy — the PDFs
+   are the source of truth for pricing).
+
+2. **Added a "Hibachi Plates at Jinbeh Frisco" photo gallery** below the
+   menu list using the eight `C060324` photoshoot photos already
+   optimized in `/public/images/catalog/`:
+   - `7-C060324-6447.jpg` — steak hibachi angled, blue plate
+   - `8-C060324-6462.jpg` — steak hibachi overhead with Jinbeh logo plate
+   - `9-C060324-6484.jpg` — shrimp + scallops angled, white plate
+   - `10-C060324-6501.jpg` — shrimp + scallops overhead
+   - `11-C060324-6544.jpg` — lobster + chicken combo angled
+   - `12-C060324-6551.jpg` — lobster + chicken combo overhead
+   - `13-C060324-6582.jpg` — three-plate spread overhead with sushi roll
+   - `14-C060324-6596.jpg` — three-plate spread with hands and chopsticks
+   Layout is a uniform `aspect-[3/2]` grid: 1 col mobile / 2 col tablet /
+   4 col desktop. Each `<Image fill>` has proper `sizes` and the first
+   four are `loading="eager"`. Data lives at module scope as
+   `hibachiGallery`.
+
+3. **Updated the JSON-LD `Menu` schema** to mirror the new
+   four-section structure with the same descriptions, replacing the old
+   single-section schema with the 14 made-up cards.
+
+4. **Updated the `<title>` and metadata description** to drop the stale
+   "14 hibachi options" line.
+
+If new menu items get added, edit `hibachiMenu` and the matching
+`hasMenuSection.hasMenuItem` array in `menuSchema` together. The
+individual `/frisco/hibachi/[item]` subpages still exist as standalone
+routes (filet-mignon, ny-strip, ribeye, chicken-teriyaki, shrimp,
+scallops, lobster-tail, salmon, vegetable-tofu, combo-steak-shrimp,
+combo-steak-chicken, combo-steak-lobster, combo-seafood, imperial-dinner)
+and are not linked from the new bulleted list — they stay reachable via
+search/SEO.
+
+### Same Tailwind v4 cascade bug — invisible Reserve buttons (12 pages)
+
+The user reported the **"Reserve a Table" button rendering white-on-white**
+in the bottom CTA on `/frisco/hibachi` (text was invisible). Same root
+cause as the May 4 hero fix: in Tailwind v4 utilities live in the
+`utilities` cascade layer, which loses to unlayered base CSS like
+
+```css
+a { color: inherit; ... }
+```
+
+(in `src/app/globals.css`). When a `<Link>` sits inside a parent with
+`text-white` (e.g. the `bg-gradient-to-br from-accent-red to-deep-indigo
+... text-white` CTA banner), the link inherits white from the parent and
+its own `text-accent-red` utility cannot override the unlayered
+`color: inherit` rule. Result: white text on white background.
+
+**Canonical fix already exists in the codebase**: globals.css L242–256
+defines `.btn[class*="text-accent-red"] { color: var(--accent-red)
+!important; }` (and the same for `text-white`, `text-charcoal`,
+`text-deep-indigo`). Adding the `btn` class to the Link's className
+unlocks those `!important` overrides and defeats the inheritance.
+
+The reference pattern lives in `src/components/MenuItemTemplate.tsx`
+L304–310 (and `src/app/private-dining/page.tsx` L711, etc.):
+
+```jsx
+<Link className="btn bg-white text-accent-red hover:bg-warm-ivory ..." />
+<a    className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 ..." />
+```
+
+**12 pages had the bug. All fixed with the canonical `btn` class:**
+
+- `src/app/frisco/hibachi/page.tsx` (the originally reported page)
+- `src/app/lewisville/hibachi/page.tsx`
+- `src/app/frisco/{appetizers,sushi-rolls,sashimi,cocktails,kids-menu}/page.tsx`
+- `src/app/lewisville/{appetizers,sushi-rolls,sashimi,cocktails,kids-menu}/page.tsx`
+
+Both the primary "Reserve a Table" Link and the secondary "Call (xxx)" `<a>`
+got the `btn` class for consistency. Where the secondary used the older
+`bg-white/20 text-white border border-white/50` pattern, it was upgraded
+to the modern `bg-white/20 backdrop-blur text-white border-2 border-white/50`
+pattern that matches `MenuItemTemplate.tsx`.
+
+**Future-proofing — search for the broken pattern before adding new
+location pages:**
+```bash
+grep -rn '"bg-white text-accent-red hover:bg-warm-ivory' src/ \
+  | grep -v 'btn bg-white'
+```
+Any hit needs the `btn` class added.
+
+### Verification
+
+- Targeted tsc on all 12 edited files (via `ts.createProgram` with
+  `skipLibCheck`) returns clean. Full project tsc takes >90s and times
+  out the bash sandbox; scoped check on changed files is the practical
+  CI substitute.
+- Visually: `text-accent-red` now renders red on white for the primary
+  CTA across all 12 pages, matching the homepage / private-dining /
+  takeout / dfw-moms canonical pattern.
+
 ## 2026-05-04 — Mobile homepage hero + nav fixes
 
 Fixed left-edge text clipping in the homepage hero and tightened the mobile

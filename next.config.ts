@@ -8,7 +8,16 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
 
   // Image optimization
+  // NOTE: `unoptimized: true` bypasses the Next.js /_next/image optimizer endpoint.
+  // The optimizer's loopback subrequest is being 400'd by middleware/host validation
+  // in this build (Next.js 16 + Turbopack standalone), causing all blog index thumbnails
+  // to render the alt-text fallback. Bypassing it serves the raw image files directly
+  // via Express static middleware, which we've confirmed returns 200 for every asset.
+  // Trade-off: no automatic AVIF/WebP conversion or responsive resizing — but the source
+  // images are already reasonably sized, and serving them raw is far better than the
+  // current state where they don't render at all.
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

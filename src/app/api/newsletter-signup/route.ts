@@ -6,7 +6,7 @@ import { sendNotification, buildNewsletterEmail } from '@/lib/email';
  * Newsletter / Seasonal Specials Signup API Route
  *
  * Saves the signup to PostgreSQL and sends email notifications
- * to JinbehJapanese@gmail.com (CC: YumYumJinbeh@gmail.com).
+ * to Manager@JinbehJapanese.com.
  */
 
 export async function POST(request: Request) {

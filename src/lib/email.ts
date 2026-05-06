@@ -7,8 +7,7 @@ import nodemailer from 'nodemailer';
  * if SMTP credentials aren't configured (dev/staging).
  *
  * Recipients:
- *   - Primary: JinbehJapanese@gmail.com
- *   - CC: YumYumJinbeh@gmail.com
+ *   - Primary: Manager@JinbehJapanese.com
  */
 
 const FROM_EMAIL = process.env.SMTP_FROM || 'noreply@jinbeh.com';
@@ -17,8 +16,8 @@ const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587', 10);
 const SMTP_USER = process.env.SMTP_USER || '';
 const SMTP_PASS = process.env.SMTP_PASS || '';
 
-const TO_EMAIL = 'JinbehJapanese@gmail.com';
-const CC_EMAIL = 'YumYumJinbeh@gmail.com';
+const TO_EMAIL = 'Manager@JinbehJapanese.com';
+const CC_EMAIL = '';
 
 let transporter: nodemailer.Transporter | null = null;
 
@@ -46,16 +45,18 @@ interface EmailOptions {
     subject: string;
     html: string;
     text?: string;
+    to?: string;  // Optional override for the recipient (defaults to TO_EMAIL)
 }
 
 export async function sendNotification(options: EmailOptions): Promise<boolean> {
-    const { subject, html, text } = options;
+    const { subject, html, text, to } = options;
+    const recipient = to || TO_EMAIL;
 
     const transport = getTransporter();
 
     if (!transport) {
         // Log the email content so it's not lost
-        console.log(`[Email] Would send: To=${TO_EMAIL}, CC=${CC_EMAIL}, Subject="${subject}"`);
+        console.log(`[Email] Would send: To=${recipient}, Subject="${subject}"`);
         console.log(`[Email] Body: ${text || html}`);
         return true; // Don't fail the form submission because email isn't configured
     }
@@ -63,8 +64,8 @@ export async function sendNotification(options: EmailOptions): Promise<boolean> 
     try {
         await transport.sendMail({
             from: `"Jinbeh Website" <${FROM_EMAIL}>`,
-            to: TO_EMAIL,
-            cc: CC_EMAIL,
+            to: recipient,
+            ...(CC_EMAIL ? { cc: CC_EMAIL } : {}),
             subject,
             html,
             text: text || html.replace(/<[^>]*>/g, ''),

@@ -6,7 +6,7 @@ import { sendNotification, buildEventInquiryEmail } from '@/lib/email';
  * Event Inquiry API Route
  *
  * Saves the inquiry to PostgreSQL and sends email notifications
- * to JinbehJapanese@gmail.com (CC: YumYumJinbeh@gmail.com).
+ * to Manager@JinbehJapanese.com.
  */
 
 export async function POST(request: Request) {

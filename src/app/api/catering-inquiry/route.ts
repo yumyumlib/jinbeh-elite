@@ -6,7 +6,8 @@ import { sendNotification, buildCateringEmail } from '@/lib/email';
  * Catering Inquiry API Route
  *
  * Saves the inquiry to PostgreSQL and sends email notifications
- * to JinbehJapanese@gmail.com (CC: YumYumJinbeh@gmail.com).
+ * to YumYumJinbeh@gmail.com (catering uses a separate inbox from
+ * the general Manager@JinbehJapanese.com inbox).
  */
 
 export async function POST(request: Request) {
@@ -52,17 +53,20 @@ export async function POST(request: Request) {
             console.error('[Catering] PostgreSQL error:', dbError);
         }
 
-        // Send email notification
-        await sendNotification(buildCateringEmail({
-            name: String(name).trim(),
-            email: emailStr,
-            phone: String(phone).trim(),
-            eventDate: String(eventDate),
-            guestCount: String(guestCount),
-            eventType: String(eventType),
-            eventLocation: String(eventLocation || ''),
-            dietaryRestrictions: String(dietaryRestrictions || ''),
-        }));
+        // Send email notification — catering goes to YumYumJinbeh@gmail.com
+        await sendNotification({
+            ...buildCateringEmail({
+                name: String(name).trim(),
+                email: emailStr,
+                phone: String(phone).trim(),
+                eventDate: String(eventDate),
+                guestCount: String(guestCount),
+                eventType: String(eventType),
+                eventLocation: String(eventLocation || ''),
+                dietaryRestrictions: String(dietaryRestrictions || ''),
+            }),
+            to: 'YumYumJinbeh@gmail.com',
+        });
 
         return NextResponse.json({
             success: true,

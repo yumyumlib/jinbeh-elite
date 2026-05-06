@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Serif_JP, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { OrganizationSchema, WebSiteSchema, LocalBusinessSchemaFrisco, LocalBusinessSchemaLewisville, MenuSchema } from "@/components/schema/AllSchemas";
+import SmartStickyCTA from "@/components/SmartStickyCTA";
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Jinbeh Japanese Restaurant – Since 1988",
   },
   description:
-    "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake at two DFW locations — Frisco near Stonebriar & Lewisville off I-35E. Reserve your table tonight.",
+    "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake at two DFW locations, Frisco near Stonebriar & Lewisville off I-35E. Reserve your table tonight.",
   keywords: [
     "hibachi",
     "sushi",
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
     siteName: "Jinbeh Japanese Restaurant",
     title: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988 | Frisco & Lewisville TX",
     description:
-      "Dinner and a show since 1988. Authentic hibachi, hand-crafted sushi, and premium sake — Frisco near Stonebriar & Lewisville off I-35E. Reserve tonight.",
+      "Dinner and a show since 1988. Authentic hibachi, hand-crafted sushi, and premium sake, Frisco near Stonebriar & Lewisville off I-35E. Reserve tonight.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -80,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988",
     description:
-      "Dinner and a show since 1988. Authentic hibachi and fresh sushi at Jinbeh — Frisco & Lewisville TX.",
+      "Dinner and a show since 1988. Authentic hibachi and fresh sushi at Jinbeh, Frisco & Lewisville TX.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -163,6 +164,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
+        <SmartStickyCTA />
       </body>
     </html>
   );
