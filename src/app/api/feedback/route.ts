@@ -1,12 +1,14 @@
 import { NextResponse } from 'next/server';
 import { getPool } from '@/lib/db';
 import { sendNotification } from '@/lib/email';
+import { appendToSheet } from '@/lib/sheets';
 
 /**
  * Feedback Form API Route
  *
  * Accepts feedback submissions for both Frisco and Lewisville locations.
- * Saves to PostgreSQL and sends email notification to Manager@JinbehJapanese.com.
+ * Saves to PostgreSQL, mirrors the row to a Google Sheet for redundancy,
+ * and sends email notification to Manager@JinbehJapanese.com.
  *
  * Replaces the old static feedback.jinbeh.com/frisco.html and lewisville.html
  * forms that broke during the DNS migration to Cloudflare.
@@ -15,6 +17,8 @@ import { sendNotification } from '@/lib/email';
 const VALID_LOCATIONS = ['Frisco', 'Lewisville'];
 const VALID_RATINGS = ['excellent', 'good', 'average', 'below-average', 'poor'];
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const FEEDBACK_SHEET_ID = '1eOpfQVdTfZh_Tb8NjFxGggVXd3b6cABQIsqKDbb15Z8';
+const FEEDBACK_SHEET_RANGE = 'Sheet1!A:I';
 
 export async function POST(request: Request) {
     try {
@@ -57,27 +61,54 @@ export async function POST(request: Request) {
             );
         }
 
-        // Save to PostgreSQL
+        const cleanName = String(name).trim();
+        const cleanPhone = String(phone || '').trim();
+        const cleanRating = String(rating).trim();
+        const cleanDiningType = String(diningType || '').trim();
+        const cleanMessage = String(message).trim();
+        const cleanLocation = locationStr || 'Not specified';
+        const cleanVisitDate = typeof visitDate === 'string' ? visitDate.trim() : '';
+
+        // Save to PostgreSQL (primary store)
         try {
             const pool = getPool();
             await pool.query(
                 `INSERT INTO feedback_submissions (name, email, phone, visit_date, rating, dining_type, message, location)
  VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
                 [
-                    String(name).trim(),
+                    cleanName,
                     emailStr,
-                    String(phone || '').trim(),
-                    visitDate || null,
-                    String(rating).trim(),
-                    String(diningType || '').trim(),
-                    String(message).trim(),
-                    locationStr || 'Not specified',
+                    cleanPhone,
+                    cleanVisitDate || null,
+                    cleanRating,
+                    cleanDiningType,
+                    cleanMessage,
+                    cleanLocation,
                 ]
             );
-            console.log(`[Feedback] Saved to PostgreSQL: ${emailStr} (${locationStr})`);
+            console.log(`[Feedback] Saved to PostgreSQL: ${emailStr} (${cleanLocation})`);
         } catch (dbError) {
             console.error('[Feedback] PostgreSQL error:', dbError);
-            // Don't fail the request — continue to email
+            // Don't fail the request — continue to Sheet + email
+        }
+
+        // Mirror to Google Sheet (redundant store). Failure here must not block the response.
+        try {
+            await appendToSheet(FEEDBACK_SHEET_ID, FEEDBACK_SHEET_RANGE, [[
+                new Date().toISOString(),
+                cleanName,
+                emailStr,
+                cleanPhone,
+                cleanVisitDate,
+                cleanRating,
+                cleanDiningType,
+                cleanLocation,
+                cleanMessage,
+            ]]);
+            console.log(`[Feedback] Appended to Google Sheet: ${emailStr} (${cleanLocation})`);
+        } catch (sheetError) {
+            console.error('[Feedback] Google Sheet append error:', sheetError);
+            // Non-fatal — PG is the primary store
         }
 
         // Rating emoji for subject line
