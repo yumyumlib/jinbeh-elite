@@ -222,6 +222,7 @@ export default function BestHibachiDallas() {
  <th className="p-4 text-left font-heading">Location</th>
  <th className="p-4 text-left font-heading">Specialty</th>
  <th className="p-4 text-left font-heading">Price Range</th>
+ <th className="p-4 text-left font-heading">OpenTable Rating</th>
  <th className="p-4 text-left font-heading">Why Choose</th>
  </tr>
  </thead>
@@ -231,6 +232,7 @@ export default function BestHibachiDallas() {
  <td className="p-4">Frisco (near Stonebriar Mall)</td>
  <td className="p-4">Hibachi + Sushi</td>
  <td className="p-4">$$ (fair value)</td>
+ <td className="p-4">4.6 ⭐ (601)</td>
  <td className="p-4">Family-owned since 1988, fresh never-frozen ingredients, expert chefs, best ambiance</td>
  </tr>
  <tr className="border-b border-warm-ivory bg-soft-gold/10">
@@ -238,6 +240,7 @@ export default function BestHibachiDallas() {
  <td className="p-4">Lewisville (off I-35E)</td>
  <td className="p-4">Hibachi + Sushi</td>
  <td className="p-4">$$ (fair value)</td>
+ <td className="p-4">4.7 ⭐ (427)</td>
  <td className="p-4">Perfect for groups, celebrations, catering available, convenient location</td>
  </tr>
  <tr className="border-b border-warm-ivory">
@@ -245,6 +248,7 @@ export default function BestHibachiDallas() {
  <td className="p-4">Dallas, Plano</td>
  <td className="p-4">Hibachi (National Chain)</td>
  <td className="p-4">$$$ (premium)</td>
+ <td className="p-4">3.9 ⭐ (4,170)</td>
  <td className="p-4">Consistent experience, reliable, extensive locations, but less personal</td>
  </tr>
  <tr className="border-b border-warm-ivory">
@@ -252,6 +256,7 @@ export default function BestHibachiDallas() {
  <td className="p-4">Various DFW locations</td>
  <td className="p-4">Hibachi (Japanese Steakhouse)</td>
  <td className="p-4">$$ to $$$</td>
+ <td className="p-4">Closed</td>
  <td className="p-4">Large group-friendly, decent quality, but formulaic experience</td>
  </tr>
  <tr>
@@ -259,6 +264,7 @@ export default function BestHibachiDallas() {
  <td className="p-4">Dallas Greenville Avenue</td>
  <td className="p-4">Robatayaki (Counter-style grilling)</td>
  <td className="p-4">$$$ (upscale)</td>
+ <td className="p-4">Closed</td>
  <td className="p-4">Different grilling style, trendy, upscale vibe, premium prices</td>
  </tr>
  </tbody>

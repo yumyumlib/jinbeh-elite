@@ -46,7 +46,7 @@ const articleSchema = {
 const faqs = [
     {
         question: "What is the best sushi restaurant in Frisco?",
-        answer: "Welcome to the table! Jinbeh has top-rateds on Google. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
+        answer: "Welcome to the table! Jinbeh is rated 4.6 stars on OpenTable from 601 verified diner reviews. We've served authentic Japanese food since 1988. We're near Stonebriar on Preston Road. Fresh fish, expert knife work, welcoming atmosphere. We treat every guest like family.",
     },
     {
         question: "Does Jinbeh have happy hour specials?",
@@ -109,7 +109,7 @@ const itemListSchema = {
                 " name ": " Jinbeh Japanese Restaurant ",
                 " servesCuisine ": " Japanese ",
                 " priceRange ": " $$ ",
-                " aggregateRating ": { " @type ": " AggregateRating ", " ratingValue ": " 4.4 ", " reviewCount ": " 752 " },
+                " aggregateRating ": { " @type ": " AggregateRating ", " ratingValue ": " 4.6 ", " reviewCount ": " 601 " },
                 " url ": " https://jinbeh.com/frisco",
             },
         },
@@ -355,7 +355,7 @@ export default function BestSushiFrisco() {
                                                 <th className="p-4 text-left font-heading">Restaurant</th>
                                                 <th className="p-4 text-left font-heading">Best For</th>
                                                 <th className="p-4 text-left font-heading">Price</th>
-                                                <th className="p-4 text-left font-heading">Rating</th>
+                                                <th className="p-4 text-left font-heading">OpenTable Rating</th>
                                             </tr>
                                         </thead>
                                         <tbody className="text-charcoal/80">
@@ -363,31 +363,31 @@ export default function BestSushiFrisco() {
                                                 <td className="p-4 font-semibold text-charcoal">⭐ Jinbeh</td>
                                                 <td className="p-4">Authentic experience, hibachi + sushi</td>
                                                 <td className="p-4">$$</td>
- <td className="p-4">4.2 ⭐</td>
+ <td className="p-4">4.6 ⭐ (601)</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Umiya</td>
                                                 <td className="p-4">Fusion rolls, trendy vibes</td>
                                                 <td className="p-4">$$</td>
- <td className="p-4">4.4 ⭐</td>
+ <td className="p-4">Not on OpenTable</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Sakura Sushi</td>
                                                 <td className="p-4">Sake selection, creative rolls</td>
                                                 <td className="p-4">$$</td>
- <td className="p-4">4.3 ⭐</td>
+ <td className="p-4">Not on OpenTable</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Shoji</td>
                                                 <td className="p-4">Family-friendly, hibachi shows</td>
                                                 <td className="p-4">$$</td>
- <td className="p-4">4.2 ⭐</td>
+ <td className="p-4">4.5 ⭐ (145)</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Edoko</td>
                                                 <td className="p-4">Robata grill + sushi</td>
                                                 <td className="p-4">$$$</td>
- <td className="p-4">4.3 ⭐</td>
+ <td className="p-4">4.7 ⭐ (893)</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -416,7 +416,7 @@ export default function BestSushiFrisco() {
                                             <ul className="space-y-2 mb-6">
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>
-                                                    <span>top-rateds on Google (752 reviews)</span>
+                                                    <span>4.6 ⭐ on OpenTable (601 verified diner reviews)</span>
                                                 </li>
                                                 <li className="flex items-center gap-2">
                                                     <span className="text-soft-gold">✓</span>

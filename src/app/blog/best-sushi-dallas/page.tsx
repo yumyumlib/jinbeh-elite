@@ -125,13 +125,13 @@ export default function BestSushiDallas() {
 
  <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🏆 Top Dallas-Area Sushi Spots</h2>
  <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
- <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Price</th></tr></thead>
+ <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Restaurant</th><th className="p-3 text-left">Best For</th><th className="p-3">Price</th><th className="p-3 text-left">OpenTable Rating</th></tr></thead>
  <tbody className="text-charcoal/80">
- <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Jinbeh Frisco</td><td className="p-3">Family, hibachi + sushi combo</td><td className="p-3 text-center">$$</td></tr>
- <tr className="border-b"><td className="p-3 font-semibold">Uchi Dallas</td><td className="p-3">Upscale omakase, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date night</Link></td><td className="p-3 text-center">$$$$</td></tr>
- <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Nobu Dallas</td><td className="p-3">Celebrity chef, trendy crowd</td><td className="p-3 text-center">$$$$</td></tr>
- <tr className="border-b"><td className="p-3 font-semibold">Tei-An</td><td className="p-3">Soba + sushi, Arts District</td><td className="p-3 text-center">$$$</td></tr>
- <tr><td className="p-3 font-semibold">Yutaka</td><td className="p-3">Traditional, purist favorites</td><td className="p-3 text-center">$$$</td></tr>
+ <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Jinbeh Frisco</td><td className="p-3">Family, hibachi + sushi combo</td><td className="p-3 text-center">$$</td><td className="p-3">4.6 ⭐ (601)</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Uchi Dallas</td><td className="p-3">Upscale omakase, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date night</Link></td><td className="p-3 text-center">$$$$</td><td className="p-3">4.8 ⭐ (4,171)</td></tr>
+ <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Nobu Dallas</td><td className="p-3">Celebrity chef, trendy crowd</td><td className="p-3 text-center">$$$$</td><td className="p-3">4.7 ⭐ (3,213)</td></tr>
+ <tr className="border-b"><td className="p-3 font-semibold">Tei-An</td><td className="p-3">Soba + sushi, Arts District</td><td className="p-3 text-center">$$$</td><td className="p-3">4.6 ⭐ (873)</td></tr>
+ <tr><td className="p-3 font-semibold">Yutaka</td><td className="p-3">Traditional, purist favorites</td><td className="p-3 text-center">$$$</td><td className="p-3">Closed</td></tr>
  </tbody>
  </table>
 
@@ -177,7 +177,7 @@ export default function BestSushiDallas() {
                                 <div className="bg-warm-ivory rounded-xl p-5">
                                     <h3 className="font-bold text-charcoal mb-2">⭐ Quality Signals</h3>
                                     <ul className="text-sm text-charcoal/70 space-y-1">
-                                        <li>• Consistent 4+ star reviews on Google</li>
+                                        <li>• Consistent 4+ star reviews on OpenTable from verified diners</li>
                                         <li>• Visible sushi bar where you can watch prep</li>
                                         <li>• Menu changes seasonally (fresh fish varies)</li>
                                         <li>• Staff can explain sourcing and preparation</li>

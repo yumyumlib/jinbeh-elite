@@ -258,6 +258,7 @@ export default function BestRestaurantsStonebriar() {
                                                 <th className="p-4 text-left font-heading">Best For</th>
                                                 <th className="p-4 text-left font-heading">Price</th>
                                                 <th className="p-4 text-left font-heading">Distance</th>
+                                                <th className="p-4 text-left font-heading">OpenTable Rating</th>
                                             </tr>
                                         </thead>
                                         <tbody className="text-charcoal/80">
@@ -267,6 +268,7 @@ export default function BestRestaurantsStonebriar() {
                                                 <td className="p-4">Celebrations, families, <Link href="/blog/date-night-restaurants-frisco" className="text-accent-red hover:underline">date nights</Link>, groups</td>
                                                 <td className="p-4">$$</td>
                                                 <td className="p-4">3 min</td>
+                                                <td className="p-4">4.6 ⭐ (601)</td>
                                             </tr>
                                             <tr className="border-b border-warm-ivory">
                                                 <td className="p-4 font-semibold text-charcoal">Perry's Steakhouse</td>
@@ -274,6 +276,7 @@ export default function BestRestaurantsStonebriar() {
  <td className="p-4">Fine dining, business meals</td>
  <td className="p-4">$$$$</td>
  <td className="p-4">5 min</td>
+ <td className="p-4">4.7 ⭐ (9,345)</td>
  </tr>
  <tr className="border-b border-warm-ivory">
  <td className="p-4 font-semibold text-charcoal">The Cheesecake Factory</td>
@@ -281,6 +284,7 @@ export default function BestRestaurantsStonebriar() {
  <td className="p-4">Huge menu variety, casual</td>
  <td className="p-4">$$</td>
  <td className="p-4">Inside mall</td>
+ <td className="p-4">Not on OpenTable</td>
  </tr>
  <tr className="border-b border-warm-ivory">
  <td className="p-4 font-semibold text-charcoal">Cane Rosso</td>
@@ -288,6 +292,7 @@ export default function BestRestaurantsStonebriar() {
  <td className="p-4">Wood-fired pizza, casual vibes</td>
  <td className="p-4">$$</td>
  <td className="p-4">7 min</td>
+ <td className="p-4">4.6 ⭐ (287)</td>
  </tr>
  <tr className="border-b border-warm-ivory">
  <td className="p-4 font-semibold text-charcoal">Platia Greek Kouzina</td>
@@ -295,6 +300,7 @@ export default function BestRestaurantsStonebriar() {
  <td className="p-4">Authentic Greek, group-friendly</td>
  <td className="p-4">$$</td>
  <td className="p-4">8 min</td>
+ <td className="p-4">Not on OpenTable</td>
  </tr>
  <tr className="border-b border-warm-ivory">
  <td className="p-4 font-semibold text-charcoal">Gloria's Latin Cuisine</td>
@@ -302,6 +308,7 @@ export default function BestRestaurantsStonebriar() {
                                                 <td className="p-4">Lively atmosphere, cocktails</td>
                                                 <td className="p-4">$$</td>
                                                 <td className="p-4">6 min</td>
+                                                <td className="p-4">Not on OpenTable</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-semibold text-charcoal">Uncle Julio's</td>
@@ -309,6 +316,7 @@ export default function BestRestaurantsStonebriar() {
  <td className="p-4">Fajitas, margaritas, family dining</td>
  <td className="p-4">$$</td>
  <td className="p-4">5 min</td>
+ <td className="p-4">Not on OpenTable</td>
  </tr>
  </tbody>
  </table>

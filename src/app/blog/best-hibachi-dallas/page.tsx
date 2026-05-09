@@ -285,10 +285,12 @@ export default function BestHibachiDallasPage() {
         family-owned restaurant established in 1988, Jinbeh keeps landing on
         every editorial and platform list that matters. D Magazine
         has named the Frisco location among the area&apos;s &ldquo;Best Place
-        to Eat&rdquo; recognitions. The Lewisville location is currently
-        ranked #1 Best Hibachi in Lewisville on OpenTable, with a 4.7-star
-        average across 426+ verified diner reviews and five simultaneous
-        OpenTable Diners&apos; Choice awards for the Dallas Suburbs region.
+        to Eat&rdquo; recognitions. Jinbeh Frisco holds a 4.6-star average
+        across 601 verified OpenTable diner reviews. The Lewisville location
+        is currently ranked #1 Best Hibachi in Lewisville on OpenTable, with
+        a 4.7-star average across 427 verified diner reviews and five
+        simultaneous OpenTable Diners&apos; Choice awards for the Dallas
+        Suburbs region.
         See our deeper guide on{" "}
         <Link href="/blog/best-hibachi-lewisville" className="text-accent-red hover:underline">
           why Jinbeh ranks #1 for hibachi in Lewisville
