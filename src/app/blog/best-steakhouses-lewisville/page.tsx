@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Top Steakhouses in Lewisville TX: Best Steak Spots",
         description: "Your guide to the best steak restaurants in Lewisville, Texas.",
-        images: ["/images/blog/5-C060324-6397.jpg"],
+        images: ["/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-steakhouses-lewisville",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Top Steakhouses in Lewisville TX: Best Steak Spots",
     description: "Comprehensive guide to the best steakhouses and steak dining in Lewisville, Texas.",
-    image: "https://jinbeh.com/images/blog/5-C060324-6397.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -140,7 +140,7 @@ export default function BestSteakhousesLewisville() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/5-C060324-6397.jpg"
+                    src="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg"
                     alt="Sizzling hibachi steak being prepared tableside at Jinbeh Lewisville"
                     fill
                     className="object-cover"
@@ -310,7 +310,7 @@ export default function BestSteakhousesLewisville() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/4-C060324-6380.jpg"
+                                                src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg"
                                                 alt="Jinbeh hibachi chef grilling steak with flames"
                                                 fill
                                                 className="object-cover"

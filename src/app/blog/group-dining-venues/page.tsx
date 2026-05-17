@@ -105,7 +105,7 @@ export default function GroupDiningVenues() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
-                <Image src="/images/blog/2-C060324-6341.jpg" alt="Jinbeh Japanese Restaurant group dining room" fill className="object-cover" priority />
+                <Image src="/images/blog/jinbeh-shrimp-tempura-appetizer-platter.jpg" alt="Jinbeh Japanese Restaurant group dining room" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -258,8 +258,8 @@ export default function GroupDiningVenues() {
                             <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
                                 <h3 className="font-heading font-bold mb-4">Related</h3>
                                 <div className="space-y-3">
-                                    {[{ t: "Hibachi Catering", s: "/blog/hibachi-catering-dfw", i: "/images/blog/4-C060324-6380.jpg" },
-                                    { t: "Hibachi Birthday Ideas", s: "/blog/hibachi-birthday-party-ideas", i: "/images/blog/1-C060324-6328.jpg" }].map(r => (
+                                    {[{ t: "Hibachi Catering", s: "/blog/hibachi-catering-dfw", i: "/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg" },
+                                    { t: "Hibachi Birthday Ideas", s: "/blog/hibachi-birthday-party-ideas", i: "/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
                                             <div className="relative w-16 h-12 rounded-lg overflow-hidden"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" loading="lazy" /></div>
                                             <span className="text-sm group-hover:text-accent-red">{r.t}</span>

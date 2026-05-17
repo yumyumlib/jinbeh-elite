@@ -198,7 +198,7 @@ export default function TheColonyNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/catalog/5-C060324-6397.jpg')",
+              backgroundImage: "url('/images/catalog/jinbeh-chef-special-fried-rice-cocktails.jpg')",
             }}
           />
           <div className="hero-overlay" />

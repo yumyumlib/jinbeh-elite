@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         title: "Top Restaurants for Large Group Dining: Best Big Party Venues",
         description:
             "Find the perfect restaurant for your large group. Seamless reservations, diverse menus, and professional service for celebrations and gatherings.",
-        images: ["/images/blog/9-C060324-6484.jpg"],
+        images: ["/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/large-group-dining",
@@ -44,7 +44,7 @@ const articleSchema = {
     headline: "Top Restaurants for Large Group Dining: Best Big Party Venues",
     description:
         "Comprehensive guide to restaurants that excel at serving large groups with diverse menus and professional service.",
-    image: "https://jinbeh.com/images/blog/9-C060324-6484.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg",
     datePublished: "2026-01-25",
     dateModified: "2026-03-11",
     author: {
@@ -221,7 +221,7 @@ export default function LargeGroupDining() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/9-C060324-6484.jpg"
+                    src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg"
                     alt="Large group dining party at restaurant"
                     fill
                     className="object-cover"
@@ -403,7 +403,7 @@ export default function LargeGroupDining() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh hibachi chef serving large group"
                                                 fill
                                                 className="object-cover"

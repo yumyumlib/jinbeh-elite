@@ -169,7 +169,7 @@ export default function BeginnerSushiTipsPage() {
       <ArticleLayout
         title="Beginner Sushi Tips: Easy Homemade Sushi Guide"
         metaDescription="Master the art of sushi-making at home with our comprehensive beginner's guide. Learn essential techniques, rolling methods, and recipes for perfect sushi rolls, even on your first try."
-        heroImage="/images/blog/16-C060324-6670.jpg"
+        heroImage="/images/blog/jinbeh-specialty-sushi-roll-spicy-mayo.jpg"
         heroAlt="Beautifully arranged homemade sushi rolls for beginners"
         category="Japanese Cuisine"
         categorySlug="cuisine"

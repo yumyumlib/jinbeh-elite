@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         title: "Best Salmon Sashimi Near Me: Top Picks & Tips",
         description:
             "Find the best salmon sashimi near you. Learn where to source fresh fish and expert tips for enjoying authentic sashimi.",
-        images: ["/images/blog/7-C060324-6447.jpg"],
+        images: ["/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-salmon-sashimi",
@@ -34,7 +34,7 @@ const articleSchema = {
     headline: "Best Salmon Sashimi Near Me: Top Picks & Tips",
     description:
         "Complete guide to finding and enjoying the best salmon sashimi with expert recommendations.",
-    image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg",
     datePublished: "2026-01-18",
     dateModified: "2026-03-11",
     author: {
@@ -209,7 +209,7 @@ export default function BestSalmonSashimi() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/7-C060324-6447.jpg"
+                    src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"
                     alt="Fresh salmon sashimi platter"
                     fill
                     className="object-cover"
@@ -366,7 +366,7 @@ export default function BestSalmonSashimi() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh sushi chef preparing sashimi"
                                                 fill
                                                 className="object-cover"

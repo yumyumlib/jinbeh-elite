@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Japanese Takeout Near Me: Best DFW Takeout Guide",
         description: "Your guide to ordering the best Japanese takeout in Dallas-Fort Worth.",
-        images: ["/images/blog/8-C060324-6462.jpg"],
+        images: ["/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/japanese-takeout-near-me",
@@ -110,7 +110,7 @@ export default function JapaneseTakeoutNearMe() {
         <ArticleLayout
             title="Japanese Takeout Near Me: Your Complete DFW Guide"
             metaDescription="Craving Japanese food but don't want to dine in? From fresh sushi rolls to hearty bento boxes and sizzling hibachi platters, here's your guide to the best Japanese takeout in Dallas-Fort Worth."
-            heroImage="/images/blog/8-C060324-6462.jpg"
+            heroImage="/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg"
             heroAlt="Fresh Japanese takeout from Jinbeh including sushi rolls and appetizers"
             category="Local Guides"
             categorySlug="local-guides"

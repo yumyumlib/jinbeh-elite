@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         description: "Find the perfect venue for your child's birthday party. Hibachi restaurants offer entertainment, delicious food, and unforgettable experiences kids love.",
         url: "https://jinbeh.com/blog/unique-kids-birthday-party-places",
         type: "article",
-        images: ["/images/blog/27-C060324-6888.jpg"],
+        images: ["/images/blog/jinbeh-sushi-platter-spread-overhead-variety.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/unique-kids-birthday-party-places",

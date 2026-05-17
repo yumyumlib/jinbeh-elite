@@ -90,7 +90,7 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
     <ArticleLayout
       title="Hibachi Lunch Ideas for Workdays: Flavor & Fun"
       metaDescription="Break the monotony of your typical workday lunch. Discover delicious hibachi lunch ideas featuring sizzling delights from restaurants in Lewisville and Frisco, or learn to make your own."
-      heroImage="/images/blog/4-C060324-6380.jpg"
+      heroImage="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg"
       heroAlt="Hibachi chef preparing shrimp and vegetables on a hot griddle for lunch"
       category="Japanese Cuisine"
       categorySlug="cuisine"

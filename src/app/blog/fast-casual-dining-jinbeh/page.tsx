@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Fast Casual Japanese Dining at Jinbeh",
         description: "Quality Japanese food at fast casual speed, discover Jinbeh's lunch options.",
-        images: ["/images/blog/9-C060324-6484.jpg"],
+        images: ["/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/fast-casual-dining-jinbeh",
@@ -81,7 +81,7 @@ export default function FastCasualDiningJinbeh() {
         <ArticleLayout
             title="Fast Casual Japanese Dining at Jinbeh"
             metaDescription="Japanese dining doesn't have to mean a long sit-down meal. At Jinbeh, you can enjoy authentic sushi, bento boxes, and hibachi lunches at your own pace, from a quick 30-minute lunch to a full evening experience."
-            heroImage="/images/blog/9-C060324-6484.jpg"
+            heroImage="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg"
             heroAlt="Quick Japanese lunch with sushi and bento at Jinbeh restaurant"
             category="Japanese Cuisine"
             categorySlug="cuisine"

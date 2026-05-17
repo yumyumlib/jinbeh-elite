@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Unique Adult Birthday Party Ideas & Themes | Jinbeh",
         description: "Transform your birthday celebration with creative themes and unique activities.",
-        images: ["/images/blog/26-C060324-6874.jpg"],
+        images: ["/images/blog/jinbeh-matcha-milk-japanese-iced-drink.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/adult-birthday-party-ideas",
@@ -34,7 +34,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Unique Adult Birthday Party Ideas & Themes",
     description: "Discover creative adult birthday party themes and activities to elevate your celebration.",
-    image: "https://jinbeh.com/images/blog/26-C060324-6874.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-matcha-milk-japanese-iced-drink.jpg",
     datePublished: "2026-01-30",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -446,22 +446,22 @@ export default function AdultBirthdayPartyIdeas() {
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi party" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Hibachi party" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Party celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Party celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/13-C060324-6582.jpg" alt="Themed party" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg" alt="Themed party" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday gathering" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Birthday gathering" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                     </div>

@@ -47,7 +47,7 @@ const reasons: ExperienceReason[] = [
     title: 'Come Hungry, Leave Happy',
     hook: 'Premium cuts. Generous plates. Leftovers guaranteed.',
     description: 'Tender filet mignon. Jumbo shrimp with the perfect char. Fresh vegetables grilled in house-made garlic butter. Every plate is generous, most guests leave with a to-go box. As one guest put it: "Best steak I\'ve ever had. 10/10... food touched my soul."',
-    image: '/images/catalog/12-C060324-6551.jpg',
+    image: '/images/catalog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg',
     imageAlt: 'Premium hibachi dinner with filet mignon, lobster tail, shrimp, fried rice and vegetables at Jinbeh Japanese Restaurant'
   }
 ];

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         title: "Best Restaurants with Private Rooms Near Me",
         description:
             "Find exclusive private dining rooms perfect for corporate events, celebrations, and intimate gatherings. Professional service and customizable menus.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/restaurants-private-rooms",
@@ -35,7 +35,7 @@ const articleSchema = {
     headline: "Best Restaurants with Private Rooms Near Me",
     description:
         "Comprehensive guide to restaurants with private dining rooms for exclusive events and intimate gatherings.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg",
     datePublished: "2026-01-18",
     dateModified: "2026-03-11",
     author: {
@@ -207,7 +207,7 @@ export default function RestaurantsPrivateRooms() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/12-C060324-6551.jpg"
+                    src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"
                     alt="Private dining room at upscale restaurant"
                     fill
                     className="object-cover"
@@ -386,7 +386,7 @@ export default function RestaurantsPrivateRooms() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/10-C060324-6501.jpg"
+                                                src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"
                                                 alt="Jinbeh private dining event"
                                                 fill
                                                 className="object-cover"
@@ -583,7 +583,7 @@ export default function RestaurantsPrivateRooms() {
                                 <div className="space-y-4">
                                     <Link href="/blog/fine-dining-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Fine dining" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Fine dining" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍽️ Dining</span>
@@ -593,7 +593,7 @@ export default function RestaurantsPrivateRooms() {
 
                                     <Link href="/blog/large-group-dining" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/9-C060324-6484.jpg" alt="Group dining" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg" alt="Group dining" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">👥 Groups</span>
@@ -603,7 +603,7 @@ export default function RestaurantsPrivateRooms() {
 
                                     <Link href="/blog/top-frisco-restaurants" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/8-C060324-6462.jpg" alt="Top restaurants" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg" alt="Top restaurants" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-accent-red">📍 Locations</span>

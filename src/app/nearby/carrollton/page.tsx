@@ -182,7 +182,7 @@ export default function CarrolltonNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/catalog/22-C060324-6829.jpg')",
+              backgroundImage: "url('/images/catalog/jinbeh-flaming-seafood-foil-presentation.jpg')",
             }}
           />
           <div className="hero-overlay" />

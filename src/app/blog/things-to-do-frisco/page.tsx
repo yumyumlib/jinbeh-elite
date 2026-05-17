@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Things to Do in Frisco TX: Top Activities & Dining",
         description: "Your ultimate guide to Frisco's best attractions, activities, and restaurants.",
-        images: ["/images/blog/15-C060324-6663.jpg"],
+        images: ["/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/things-to-do-frisco",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Things to Do in Frisco TX: Top Activities & Dining",
     description: "Complete guide to Frisco, Texas attractions, family activities, and the best places to eat.",
-    image: "https://jinbeh.com/images/blog/15-C060324-6663.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -140,7 +140,7 @@ export default function ThingsToDoFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/15-C060324-6663.jpg"
+                    src="/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg"
                     alt="Vibrant dining experience at Jinbeh Japanese Restaurant in Frisco TX"
                     fill
                     className="object-cover"
@@ -323,7 +323,7 @@ export default function ThingsToDoFrisco() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/3-C060324-6364.jpg"
+                                                src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg"
                                                 alt="Jinbeh hibachi chef performing for guests in Frisco"
                                                 fill
                                                 className="object-cover"

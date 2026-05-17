@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         title: "Thanksgiving Dining at Jinbeh | Japanese Catering & Dine-In Options",
         description:
             "Experience a unique Thanksgiving with Japanese cuisine. Catering, dine-in, and special holiday menu options available at Jinbeh Frisco & Lewisville.",
-        images: ["/images/blog/24-C060324-6852.jpg"],
+        images: ["/images/blog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/thanksgiving-dining-guide",
@@ -47,7 +47,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "The Ultimate Thanksgiving Dining Guide | Japanese Alternatives & Catering in Frisco & DFW",
     description: "Explore unique Thanksgiving dining options at Jinbeh: catering services, dine-in availability, special menu suggestions, and ordering deadlines for the Frisco and DFW areas.",
-    image: "https://jinbeh.com/images/blog/24-C060324-6852.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-01-29",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -180,7 +180,7 @@ export default function ThanksgivingDiningGuide() {
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/24-C060324-6852.jpg"
+                    src="/images/blog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg"
                     alt="Birthday celebration at Jinbeh hibachi restaurant"
                     fill
                     className="object-cover"

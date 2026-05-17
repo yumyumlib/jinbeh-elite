@@ -144,7 +144,7 @@ export default function SakeSushiMenuPairings() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/10-C060324-6501.jpg"
+                    poster="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>
@@ -365,22 +365,22 @@ export default function SakeSushiMenuPairings() {
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi and sake" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sushi and sake" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/12-C060324-6551.jpg" alt="Sake selection" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Sake selection" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Premium sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Premium sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                     </div>
@@ -575,7 +575,7 @@ export default function SakeSushiMenuPairings() {
                                 <div className="space-y-4">
                                     <Link href="/blog/sake-pairing-guide" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>
@@ -585,7 +585,7 @@ export default function SakeSushiMenuPairings() {
 
                                     <Link href="/blog/types-of-sake-explained" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sake types" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sake types" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Guide</span>
@@ -595,7 +595,7 @@ export default function SakeSushiMenuPairings() {
 
                                     <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/12-C060324-6551.jpg" alt="Best sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Best sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-soft-gold">📍 Locations</span>

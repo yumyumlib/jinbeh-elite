@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "International Beer Day: Celebrate with Japanese Beer at Jinbeh",
         description: "Raise a Sapporo for International Beer Day at Jinbeh Japanese Restaurant.",
-        images: ["/images/blog/6-C060324-6405.jpg"],
+        images: ["/images/blog/jinbeh-crab-rangoon-japanese-appetizer.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/international-beer-day",
@@ -81,7 +81,7 @@ export default function InternationalBeerDay() {
         <ArticleLayout
             title="International Beer Day: Celebrate with Japanese Beer at Jinbeh"
             metaDescription="International Beer Day falls on the first Friday of August. This year, skip the usual pint and raise a Sapporo alongside hibachi steak and fresh sushi at Jinbeh, DFW's favorite Japanese restaurant since 1988."
-            heroImage="/images/blog/6-C060324-6405.jpg"
+            heroImage="/images/blog/jinbeh-crab-rangoon-japanese-appetizer.jpg"
             heroAlt="Sapporo beer on tap at Jinbeh's bar for International Beer Day"
             category="Beverages"
             categorySlug="beverages"

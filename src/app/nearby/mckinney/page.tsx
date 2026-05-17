@@ -182,7 +182,7 @@ export default function McKinneyNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/catalog/14-C060324-6596.jpg')",
+              backgroundImage: "url('/images/catalog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg')",
             }}
           />
           <div className="hero-overlay" />

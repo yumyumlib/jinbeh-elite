@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Beer & Hard Seltzer: Jinbeh's Japanese Twist",
         description: "Discover the perfect beer and seltzer pairings for hibachi and sushi at Jinbeh.",
-        images: ["/images/blog/6-C060324-6405.jpg"],
+        images: ["/images/blog/jinbeh-crab-rangoon-japanese-appetizer.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/beer-hard-seltzer",
@@ -81,7 +81,7 @@ export default function BeerHardSeltzer() {
         <ArticleLayout
             title="Beer & Hard Seltzer: Jinbeh's Japanese Twist"
             metaDescription="From Sapporo on tap to refreshing hard seltzers, discover Jinbeh's beer and seltzer selection, perfectly chosen to pair with our hibachi and sushi. Here's your guide to what to drink at a Japanese restaurant."
-            heroImage="/images/blog/6-C060324-6405.jpg"
+            heroImage="/images/blog/jinbeh-crab-rangoon-japanese-appetizer.jpg"
             heroAlt="Japanese beer selection including Sapporo on tap at Jinbeh's bar"
             category="Beverages"
             categorySlug="beverages"

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Top Birthday Celebration Restaurants | Jinbeh",
         description: "Make your birthday special with dining experiences that go beyond ordinary meals.",
-        images: ["/images/blog/25-C060324-6856.jpg"],
+        images: ["/images/blog/jinbeh-espresso-martini-japanese-cocktail.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/birthday-celebration-restaurants",
@@ -34,7 +34,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Top Birthday Celebration Restaurants for Special Memories",
     description: "Discover the best birthday celebration restaurants with unique experiences and special birthday perks.",
-    image: "https://jinbeh.com/images/blog/25-C060324-6856.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-espresso-martini-japanese-cocktail.jpg",
     datePublished: "2026-01-30",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -413,22 +413,22 @@ export default function BirthdayCelebrationRestaurants() {
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/7-C060324-6447.jpg" alt="Birthday celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Birthday celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/11-C060324-6544.jpg" alt="Hibachi birthday" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Hibachi birthday" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/13-C060324-6582.jpg" alt="Birthday dessert" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg" alt="Birthday dessert" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/14-C060324-6596.jpg" alt="Birthday dinner" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Birthday dinner" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                     </div>

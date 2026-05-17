@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         description: "Your complete guide to the omakase experience - from etiquette to what dishes to expect. Make your first omakase unforgettable.",
         url: "https://jinbeh.com/blog/omakase-dining-guide",
         type: "article",
-        images: ["/images/blog/17-C060324-6708.jpg"],
+        images: ["/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/omakase-dining-guide",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Omakase: Unraveling the Unique Dining Art", datePublished: "2026-01-25", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/blog/17-C060324-6708.jpg" },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Omakase: Unraveling the Unique Dining Art", datePublished: "2026-01-25", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What does omakase mean?", acceptedAnswer: { "@type": "Answer", text: "Omakase translates to 'I leave it up to you' in English. It's a dining experience where the chef takes full control, crafting a bespoke menu highlighting the freshest ingredients." } },
@@ -56,7 +56,7 @@ export default function OmakaseDiningGuide() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/blog/20-C060324-6766.jpg" alt="Fresh sushi and sashimi platter at Jinbeh Japanese Restaurant" fill className="object-cover" priority />
+                <Image src="/images/blog/jinbeh-salmon-sushi-roll-creamy-sauce.jpg" alt="Fresh sushi and sashimi platter at Jinbeh Japanese Restaurant" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

@@ -675,7 +675,7 @@ export default function SpecialsPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/catalog/5-C060324-6397.jpg"
+                    src="/images/catalog/jinbeh-chef-special-fried-rice-cocktails.jpg"
                     alt="Jinbeh Frisco location"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

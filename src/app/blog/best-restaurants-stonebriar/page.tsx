@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Best Restaurants Near Stonebriar Mall Frisco TX",
         description: "Your complete guide to the best dining near Stonebriar Centre in Frisco, Texas.",
-        images: ["/images/blog/1-C060324-6328.jpg"],
+        images: ["/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-restaurants-stonebriar",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Best Restaurants Near Stonebriar Mall Frisco TX",
     description: "Comprehensive guide to the best restaurants near Stonebriar Centre in Frisco, Texas.",
-    image: "https://jinbeh.com/images/blog/1-C060324-6328.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -140,7 +140,7 @@ export default function BestRestaurantsStonebriar() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/1-C060324-6328.jpg"
+                    src="/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg"
                     alt="Beautifully plated hibachi dinner at Jinbeh near Stonebriar Mall Frisco"
                     fill
                     className="object-cover"
@@ -319,7 +319,7 @@ export default function BestRestaurantsStonebriar() {
  <div className="flex flex-col md:flex-row gap-8 items-center">
  <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
  <Image
- src="/images/blog/3-C060324-6364.jpg"
+ src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg"
  alt="Jinbeh hibachi chef performing tableside cooking near Stonebriar"
  fill
  className="object-cover"

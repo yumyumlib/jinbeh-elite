@@ -2,18 +2,18 @@
   "categories": {
     "hibachi": {
       "hero": [
-        "/images/blog/3-C060324-6364.jpg",
-        "/images/blog/4-C060324-6380.jpg",
-        "/images/blog/5-C060324-6397.jpg",
-        "/images/blog/6-C060324-6405.jpg",
-        "/images/blog/8-C060324-6462.jpg"
+        "/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg",
+        "/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg",
+        "/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg",
+        "/images/blog/jinbeh-crab-rangoon-japanese-appetizer.jpg",
+        "/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg"
       ],
       "inline": [
-        "/images/blog/7-C060324-6447.jpg",
-        "/images/blog/9-C060324-6484.jpg",
-        "/images/blog/10-C060324-6501.jpg",
-        "/images/blog/11-C060324-6544.jpg",
-        "/images/blog/12-C060324-6551.jpg"
+        "/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg",
+        "/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg",
+        "/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg",
+        "/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg",
+        "/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"
       ],
       "video": [
         "/videos/LOCAL-FRI-HIBACHI-chef-cooking-fire-family-01.mp4",
@@ -24,16 +24,16 @@
     },
     "sushi": {
       "hero": [
-        "/images/blog/16-C060324-6670.jpg",
-        "/images/blog/17-C060324-6708.jpg",
-        "/images/blog/18-C060324-6732.jpg",
-        "/images/blog/19-C060324-6754.jpg",
-        "/images/blog/20-C060324-6766.jpg"
+        "/images/blog/jinbeh-specialty-sushi-roll-spicy-mayo.jpg",
+        "/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg",
+        "/images/blog/jinbeh-kani-crab-shrimp-tempura-sushi-roll.jpg",
+        "/images/blog/jinbeh-jalapeno-spicy-tuna-sushi-roll.jpg",
+        "/images/blog/jinbeh-salmon-sushi-roll-creamy-sauce.jpg"
       ],
       "inline": [
-        "/images/blog/21-C060324-6777.jpg",
-        "/images/blog/22-C060324-6829.jpg",
-        "/images/blog/23-C060324-6842.jpg",
+        "/images/blog/jinbeh-seared-tuna-jalapeno-sushi-roll.jpg",
+        "/images/blog/jinbeh-flaming-seafood-foil-presentation.jpg",
+        "/images/blog/jinbeh-lychee-martini-japanese-cocktail.jpg",
         "/images/food/SpicyTunaAndCaliforniaRollCloseups.png"
       ],
       "video": [
@@ -60,15 +60,15 @@
       "hero": [
         "/images/celebrations/CelebrateYourBirthdayAtJinbeh.png",
         "/images/celebrations/jinbeh_group.jpg",
-        "/images/blog/24-C060324-6852.jpg",
-        "/images/blog/25-C060324-6856.jpg",
-        "/images/blog/26-C060324-6874.jpg"
+        "/images/blog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg",
+        "/images/blog/jinbeh-espresso-martini-japanese-cocktail.jpg",
+        "/images/blog/jinbeh-matcha-milk-japanese-iced-drink.jpg"
       ],
       "inline": [
-        "/images/blog/27-C060324-6888.jpg",
-        "/images/blog/28-C060324-6899.jpg",
-        "/images/blog/29-C060324-6922.jpg",
-        "/images/blog/30-C060324-6930.jpg"
+        "/images/blog/jinbeh-sushi-platter-spread-overhead-variety.jpg",
+        "/images/blog/jinbeh-sushi-feast-chopsticks-shared-platter.jpg",
+        "/images/blog/jinbeh-cocktail-cheers-sushi-spread-celebration.jpg",
+        "/images/blog/jinbeh-premium-sashimi-platter-uni-salmon.jpg"
       ],
       "video": [
         "/videos/LOCAL-FRI-HIBACHI-birthday-celebration-candles-01.mp4"
@@ -78,13 +78,13 @@
     "location": {
       "hero": [
         "/images/exterior/JinbehFriscoStorefrontSign.png",
-        "/images/blog/1-C060324-6328.jpg",
-        "/images/blog/2-C060324-6341.jpg",
-        "/images/blog/13-C060324-6582.jpg",
-        "/images/blog/14-C060324-6596.jpg"
+        "/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg",
+        "/images/blog/jinbeh-shrimp-tempura-appetizer-platter.jpg",
+        "/images/blog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg",
+        "/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg"
       ],
       "inline": [
-        "/images/blog/15-C060324-6663.jpg",
+        "/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg",
         "/images/food/jinbeh_seating.jpg"
       ],
       "alt": "Jinbeh Japanese Restaurant dining room"

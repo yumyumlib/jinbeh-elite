@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sushi Platters Near Me: Party Trays & Catering",
         description: "Order fresh sushi platters and party trays from Jinbeh Japanese Restaurant in DFW.",
-        images: ["/images/blog/7-C060324-6447.jpg"],
+        images: ["/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/sushi-platters-near-me",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Sushi Platters Near Me: Party Trays & Catering in DFW",
     description: "Complete guide to ordering sushi platters and party trays in the Dallas-Fort Worth area.",
-    image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-02-18",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -106,7 +106,7 @@ export default function SushiPlattersNearMe() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/7-C060324-6447.jpg"
+                    src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"
                     alt="Beautifully arranged sushi platter with fresh rolls and sashimi at Jinbeh"
                     fill
                     className="object-cover"
@@ -285,7 +285,7 @@ export default function SushiPlattersNearMe() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh sushi chef preparing fresh sushi platter"
                                                 fill
                                                 className="object-cover"

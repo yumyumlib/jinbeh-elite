@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         title: "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh",
         description:
             "Explore the finest dining experiences in Frisco. From Jinbeh's authentic Japanese cuisine to contemporary American fare.",
-        images: ["/images/blog/7-C060324-6447.jpg"],
+        images: ["/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/fine-dining-frisco",
@@ -35,7 +35,7 @@ const articleSchema = {
     headline: "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh",
     description:
         "Comprehensive guide to fine dining restaurants in Frisco, Texas, featuring Japanese and international cuisine.",
-    image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg",
     datePublished: "2026-01-22",
     dateModified: "2026-03-11",
     author: {
@@ -182,7 +182,7 @@ export default function FineDiningFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/7-C060324-6447.jpg"
+                    src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"
                     alt="Fine dining experience at Jinbeh Frisco"
                     fill
                     className="object-cover"
@@ -313,7 +313,7 @@ export default function FineDiningFrisco() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh sushi and hibachi chef"
                                                 fill
                                                 className="object-cover"

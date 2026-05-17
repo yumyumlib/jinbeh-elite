@@ -119,7 +119,7 @@ export default function HibachiMenuGuidePage() {
     <ArticleLayout
       title="Hibachi Restaurant Menu: Explore Flavorful Delights"
       metaDescription="Navigate the world of hibachi dining with our comprehensive menu guide. From appetizers to desserts, discover what makes hibachi dining special and how to find the perfect dish for your palate."
-      heroImage="/images/blog/5-C060324-6397.jpg"
+      heroImage="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg"
       heroAlt="Hibachi restaurant menu featuring sizzling steak, shrimp, and vegetables"
       category="Japanese Cuisine"
       categorySlug="cuisine"

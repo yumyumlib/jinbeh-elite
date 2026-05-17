@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sushi Cooking Classes Near Me | Learn Today",
         description: "Master the art of sushi making with hands-on classes and expert instruction.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/sushi-cooking-classes",
@@ -33,7 +33,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Sushi Cooking Classes Near Me – Learn Today",
     description: "Comprehensive guide to finding and choosing the best sushi cooking classes in your area.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg",
     datePublished: "2026-01-30",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -120,7 +120,7 @@ export default function SushiCookingClasses() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/12-C060324-6551.jpg"
+                    poster="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>
@@ -334,28 +334,28 @@ export default function SushiCookingClasses() {
                                         <BlurFade delay={0.1}>
                                             <BlurFade delay={0.1}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <BlurFade delay={0.2}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <BlurFade delay={0.3}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/12-C060324-6551.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <BlurFade delay={0.4}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/14-C060324-6596.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>

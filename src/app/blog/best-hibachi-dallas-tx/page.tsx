@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Best Hibachi Dallas TX: Top Restaurants & Experiences",
         description: "Your guide to the best hibachi restaurants in Dallas-Fort Worth.",
-        images: ["/images/blog/4-C060324-6380.jpg"],
+        images: ["/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-hibachi-dallas-tx",
@@ -33,7 +33,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Best Hibachi Dallas TX: Top Restaurants & Experiences",
     description: "Comprehensive guide to the best hibachi and teppanyaki dining in Dallas-Fort Worth.",
-    image: "https://jinbeh.com/images/blog/1-C060324-6328.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg",
     datePublished: "2026-01-15",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -269,17 +269,17 @@ export default function BestHibachiDallas() {
  <div className="grid grid-cols-3 gap-4">
  <BlurFade delay={0.1}>
  <div className="relative aspect-square rounded-2xl overflow-hidden group">
- <Image src="/images/blog/3-C060324-6364.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ <Image src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
  </div>
  </BlurFade>
  <BlurFade delay={0.2}>
  <div className="relative aspect-square rounded-2xl overflow-hidden group">
- <Image src="/images/blog/4-C060324-6380.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ <Image src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
  </div>
  </BlurFade>
  <BlurFade delay={0.3}>
  <div className="relative aspect-square rounded-2xl overflow-hidden group">
- <Image src="/images/blog/5-C060324-6397.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ <Image src="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
  </div>
  </BlurFade>
  </div>

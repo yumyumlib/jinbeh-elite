@@ -159,7 +159,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
     <ArticleLayout
       title="Best Places for Bridal Showers Near Me"
       metaDescription="Planning a bridal shower? Discover the best venues nearby, from intimate gardens and elegant hotels to charming cafes and unique event spaces perfect for celebrating the bride-to-be."
-      heroImage="/images/blog/25-C060324-6856.jpg"
+      heroImage="/images/blog/jinbeh-espresso-martini-japanese-cocktail.jpg"
       heroAlt="Elegant bridal shower celebration at a beautiful venue with flowers and elegant table settings"
       category="Celebrations"
       categorySlug="celebrations"

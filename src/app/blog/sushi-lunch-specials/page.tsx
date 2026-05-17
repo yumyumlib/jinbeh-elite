@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         title: "Best Sushi Lunch Specials Near You Today",
         description:
             "Find the best sushi lunch specials with affordable pricing and variety. Discover deals at your favorite sushi restaurants.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/sushi-lunch-specials",
@@ -33,7 +33,7 @@ const articleSchema = {
     headline: "Best Sushi Lunch Specials Near You Today",
     description:
         "Guide to finding delicious and affordable sushi lunch specials in your area.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg",
     datePublished: "2026-01-22",
     dateModified: "2026-01-30",
     author: {
@@ -160,7 +160,7 @@ export default function SushiLunchSpecials() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/12-C060324-6551.jpg"
+                    src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"
                     alt="Sushi lunch special platter"
                     fill
                     className="object-cover"
@@ -298,7 +298,7 @@ export default function SushiLunchSpecials() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/8-C060324-6462.jpg"
+                                                src="/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg"
                                                 alt="Jinbeh lunch special platter"
                                                 fill
                                                 className="object-cover"

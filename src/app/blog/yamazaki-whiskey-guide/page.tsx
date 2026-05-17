@@ -304,9 +304,9 @@ export default function YamazakiWhiskeyGuide() {
                             <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-24">
                                 <h3 className="font-heading font-bold mb-4">Related Reads</h3>
                                 <div className="space-y-3">
-                                    {[{ t: "Japanese Whiskey's Global Rise", s: "/blog/japanese-whiskey-guide", i: "/images/blog/20-C060324-6766.jpg" },
-                                    { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/19-C060324-6754.jpg" },
-                                    { t: "Best Happy Hour Frisco", s: "/blog/best-happy-hour-frisco-tx", i: "/images/blog/10-C060324-6501.jpg" }].map(r => (
+                                    {[{ t: "Japanese Whiskey's Global Rise", s: "/blog/japanese-whiskey-guide", i: "/images/blog/jinbeh-salmon-sushi-roll-creamy-sauce.jpg" },
+                                    { t: "Japanese Cocktails: Art & Recipes", s: "/blog/japanese-cocktails", i: "/images/blog/jinbeh-jalapeno-spicy-tuna-sushi-roll.jpg" },
+                                    { t: "Best Happy Hour Frisco", s: "/blog/best-happy-hour-frisco-tx", i: "/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg" }].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
                                             <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" loading="lazy" /></div>
                                             <span className="text-sm group-hover:text-accent-red transition">{r.t}</span>

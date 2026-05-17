@@ -259,35 +259,35 @@ const hibachiMenu: HibachiMenuSection[] = [
 // at 2x size on desktop via the lg:col-span-2 lg:row-span-2 layout.
 const hibachiGallery: { src: string; alt: string }[] = [
   {
-    src: "/images/catalog/7-C060324-6447.jpg",
+    src: "/images/catalog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg",
     alt: "Teriyaki steak hibachi entrée with fried rice, shrimp, and grilled vegetables on a Jinbeh teppan plate",
   },
   {
-    src: "/images/catalog/8-C060324-6462.jpg",
+    src: "/images/catalog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg",
     alt: "Overhead view of a hibachi steak plate with fried rice, bean sprouts, mushrooms, and zucchini at Jinbeh",
   },
   {
-    src: "/images/catalog/9-C060324-6484.jpg",
+    src: "/images/catalog/jinbeh-frisco-shrimp-scallops-hibachi-plate.jpg",
     alt: "Colossal shrimp and jumbo scallops hibachi entrée with fried rice and hibachi vegetables",
   },
   {
-    src: "/images/catalog/10-C060324-6501.jpg",
+    src: "/images/catalog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg",
     alt: "Overhead view of a shrimp and scallops hibachi plate with fried rice and bean sprouts",
   },
   {
-    src: "/images/catalog/11-C060324-6544.jpg",
+    src: "/images/catalog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg",
     alt: "Imperial Dinner combo with twin lobster tails, chicken, and scallops on the hibachi line",
   },
   {
-    src: "/images/catalog/12-C060324-6551.jpg",
+    src: "/images/catalog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg",
     alt: "Overhead view of an Imperial Dinner combo plate with lobster, chicken, and scallops at Jinbeh",
   },
   {
-    src: "/images/catalog/13-C060324-6582.jpg",
+    src: "/images/catalog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg",
     alt: "Hibachi family-style spread featuring three combo plates and a specialty sushi roll at Jinbeh Frisco",
   },
   {
-    src: "/images/catalog/14-C060324-6596.jpg",
+    src: "/images/catalog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg",
     alt: "Friends sharing hibachi plates and a specialty sushi roll with chopsticks at Jinbeh",
   },
 ];

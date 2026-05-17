@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/vip",
     images: [
       {
-        url: "https://jinbeh.com/images/catalog/5-C060324-6397.jpg",
+        url: "https://jinbeh.com/images/catalog/jinbeh-chef-special-fried-rice-cocktails.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Vip",

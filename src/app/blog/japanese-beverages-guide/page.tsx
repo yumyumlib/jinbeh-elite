@@ -238,9 +238,9 @@ export default function JapaneseBeveragesGuide() {
                                 <h3 className="font-heading font-bold mb-4">Related Articles</h3>
                                 <div className="space-y-3">
                                     {[
-                                        { t: "Popular Japanese Culture", s: "/blog/popular-japanese-culture", i: "/images/blog/8-C060324-6462.jpg" },
-                                        { t: "Omakase Dining Guide", s: "/blog/omakase-dining-guide", i: "/images/blog/12-C060324-6551.jpg" },
-                                        { t: "Best Sushi Dallas", s: "/blog/best-sushi-dallas", i: "/images/blog/1-C060324-6328.jpg" }
+                                        { t: "Popular Japanese Culture", s: "/blog/popular-japanese-culture", i: "/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg" },
+                                        { t: "Omakase Dining Guide", s: "/blog/omakase-dining-guide", i: "/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" },
+                                        { t: "Best Sushi Dallas", s: "/blog/best-sushi-dallas", i: "/images/blog/jinbeh-japanese-appetizer-spread-spicy-edamame.jpg" }
                                     ].map(r => (
                                         <Link key={r.s} href={r.s} className="flex gap-3 group">
                                             <div className="relative w-16 h-12 rounded-lg overflow-hidden flex-shrink-0"><Image src={r.i} alt={`Related: ${r.t}`} fill className="object-cover" loading="lazy" /></div>

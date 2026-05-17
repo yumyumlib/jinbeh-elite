@@ -33,7 +33,7 @@ const articleSchema = {
     headline: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations",
     description:
         "Your guide to the best bachelorette restaurants and venues in Dallas, Texas.",
-    image: "https://jinbeh.com/images/blog/3-C060324-6364.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg",
     datePublished: "2026-01-20",
     dateModified: "2026-03-11",
     author: {
@@ -336,7 +336,7 @@ export default function BacheloretteRestaurantsDallas() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/4-C060324-6380.jpg"
+                                                src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg"
                                                 alt="Hibachi chef performing at Jinbeh"
                                                 fill
                                                 className="object-cover"

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/gift-cards",
     images: [
       {
-        url: "https://jinbeh.com/images/catalog/5-C060324-6397.jpg",
+        url: "https://jinbeh.com/images/catalog/jinbeh-chef-special-fried-rice-cocktails.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Gift Cards",
@@ -96,7 +96,7 @@ export default function GiftCardsPage() {
             <HeroSection className="relative py-20 bg-gradient-to-br from-deep-indigo to-charcoal text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <Image
-                        src="/images/blog/7-C060324-6447.jpg"
+                        src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"
                         alt="Sushi"
                         fill
                         className="object-cover"

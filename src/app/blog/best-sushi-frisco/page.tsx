@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         title: "Best Sushi Frisco TX: Fresh Flavors & Top Spots",
         description:
             "Your guide to Frisco's best sushi restaurants. Fresh fish, expert rolls, and the authentic Japanese experience at Jinbeh.",
-        images: ["/images/blog/7-C060324-6447.jpg"],
+        images: ["/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-sushi-frisco",
@@ -34,7 +34,7 @@ const articleSchema = {
     headline: "Best Sushi Frisco TX: Top Spots to Savor Fresh Flavors",
     description:
         "Comprehensive guide to the best sushi restaurants in Frisco, Texas.",
-    image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg",
     datePublished: "2026-01-16",
     dateModified: "2026-03-11",
     author: {
@@ -398,7 +398,7 @@ export default function BestSushiFrisco() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh sushi chef"
                                                 fill
                                                 className="object-cover"

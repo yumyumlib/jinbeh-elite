@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         title: "What is Omakase? The Ultimate Japanese Sushi Experience",
         description:
             "Complete guide to omakase: meaning, history, what to expect, and etiquette for an unforgettable sushi dinner.",
-        images: ["/images/blog/15-C060324-6663.jpg"],
+        images: ["/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/what-is-omakase",
@@ -47,7 +47,7 @@ const articleSchema = {
     headline: "What is Omakase? A Complete Guide to the Japanese Sushi Experience",
     description:
         "Comprehensive guide to omakase dining, including meaning, history, etiquette, and what to expect.",
-    image: "https://jinbeh.com/images/blog/15-C060324-6663.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-03-11",
     author: {
@@ -202,7 +202,7 @@ export default function WhatIsOmakase() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/15-C060324-6663.jpg"
+                    src="/images/blog/jinbeh-spicy-tuna-avocado-sushi-tower.jpg"
                     alt="Omakase sushi experience at Jinbeh"
                     fill
                     className="object-cover"
@@ -521,7 +521,7 @@ export default function WhatIsOmakase() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh sushi chef preparing omakase"
                                                 fill
                                                 className="object-cover"

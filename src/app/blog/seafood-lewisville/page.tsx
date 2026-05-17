@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         title: "Best Seafood in Lewisville TX: Top Restaurants to Try",
         description:
             "Explore the finest seafood restaurants in Lewisville. Fresh fish, sushi, and authentic Japanese cuisine await.",
-        images: ["/images/blog/10-C060324-6501.jpg"],
+        images: ["/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/seafood-lewisville",
@@ -42,7 +42,7 @@ const articleSchema = {
     headline: "Best Seafood in Lewisville TX: Top Restaurants to Try",
     description:
         "Your guide to the best seafood restaurants in Lewisville, Texas.",
-    image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg",
     datePublished: "2026-01-19",
     dateModified: "2026-03-11",
     author: {
@@ -209,7 +209,7 @@ export default function SeafoodLewisville() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/10-C060324-6501.jpg"
+                    src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"
                     alt="Fresh seafood platter in Lewisville"
                     fill
                     className="object-cover"
@@ -375,7 +375,7 @@ export default function SeafoodLewisville() {
                                     <div className="flex flex-col md:flex-row gap-8 items-center">
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
-                                                src="/images/blog/11-C060324-6544.jpg"
+                                                src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
                                                 alt="Jinbeh sushi and seafood in Lewisville"
                                                 fill
                                                 className="object-cover"

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "How to Eat Sushi: Complete Etiquette & Eating Tips Guide",
         description: "Master the art of eating sushi. Learn proper techniques, etiquette, and insider tips.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/how-to-eat-sushi-guide",
@@ -34,7 +34,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "How to Eat Sushi: Complete Etiquette & Eating Tips Guide",
     description: "Comprehensive guide to sushi eating etiquette, techniques, and insider tips for proper sushi enjoyment.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -183,7 +183,7 @@ export default function HowToEatSushi() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/12-C060324-6551.jpg"
+                    poster="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>

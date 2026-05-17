@@ -179,7 +179,7 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
     <ArticleLayout
       title="Top Baby Shower Venues: Best Places to Host"
       metaDescription="Finding the perfect baby shower venue sets the tone for celebration. Discover indoor elegance, outdoor beauty, and unique spaces that create memories for parents-to-be."
-      heroImage="/images/blog/24-C060324-6852.jpg"
+      heroImage="/images/blog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg"
       heroAlt="Baby shower celebration at an elegant venue with decorations and table settings"
       category="Celebrations"
       categorySlug="celebrations"

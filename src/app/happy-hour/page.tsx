@@ -339,7 +339,7 @@ export default function HappyHourPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto">
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/catalog/23-C060324-6842.jpg"
+                  src="/images/catalog/jinbeh-lychee-martini-japanese-cocktail.jpg"
                   alt="Jinbeh signature lychee martini with tropical garnish"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -348,7 +348,7 @@ export default function HappyHourPage() {
               </div>
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/catalog/24-C060324-6852.jpg"
+                  src="/images/catalog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg"
                   alt="Refreshing pineapple-mint highball cocktail with pineapple wedge garnish"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -357,7 +357,7 @@ export default function HappyHourPage() {
               </div>
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/catalog/25-C060324-6856.jpg"
+                  src="/images/catalog/jinbeh-espresso-martini-japanese-cocktail.jpg"
                   alt="Jinbeh espresso martini with chocolate drizzle and floating coffee beans"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -366,7 +366,7 @@ export default function HappyHourPage() {
               </div>
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/catalog/26-C060324-6874.jpg"
+                  src="/images/catalog/jinbeh-matcha-milk-japanese-iced-drink.jpg"
                   alt="Jinbeh matcha cocktail with green matcha being swirled into milk"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"

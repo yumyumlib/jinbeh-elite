@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Hibachi vs Teppanyaki: Explained - Differences & Definitions",
     description:
       "Confused about hibachi vs teppanyaki? Learn the key differences between these Japanese cooking styles and what to expect at each.",
-    images: ["/images/blog/3-C060324-6364.jpg"],
+    images: ["/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg"],
   },
   alternates: {
     canonical: "https://jinbeh.com/blog/hibachi-vs-teppanyaki-explained",

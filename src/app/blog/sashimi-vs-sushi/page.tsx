@@ -81,7 +81,7 @@ export default function SashimiVsSushi() {
             {/* Hero Section */}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/17-C060324-6708.jpg"
+                    src="/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg"
                     alt="Fresh sashimi and sushi at Jinbeh Japanese Restaurant"
                     fill
                     className="object-cover"

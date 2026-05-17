@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Hibachi Catering DFW: Party & Event Services",
         description: "Professional hibachi catering for corporate events, private parties, and celebrations in DFW.",
-        images: ["/images/blog/6-C060324-6405.jpg"],
+        images: ["/images/blog/jinbeh-crab-rangoon-japanese-appetizer.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/hibachi-catering-dfw",
@@ -86,7 +86,7 @@ export default function HibachiCatering() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster="/images/blog/4-C060324-6380.jpg">
+                <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg">
                     <source src="/videos/LOCAL-FRI-HIBACHI-chef-cooking-fire-family-01.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />

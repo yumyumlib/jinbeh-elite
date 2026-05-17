@@ -183,7 +183,7 @@ export default function RomanticAnniversaryDinnersPage() {
     <ArticleLayout
       title="Romantic Anniversary Dinners Near Me: Top Spots"
       metaDescription="Celebrate your love with a romantic anniversary dinner. Find intimate restaurants with exquisite cuisine, beautiful ambiance, and exceptional service perfect for your special night."
-      heroImage="/images/blog/26-C060324-6874.jpg"
+      heroImage="/images/blog/jinbeh-matcha-milk-japanese-iced-drink.jpg"
       heroAlt="Romantic candlelit dinner table with elegant place settings and soft lighting"
       category="Celebrations"
       categorySlug="celebrations"

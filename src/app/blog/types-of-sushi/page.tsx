@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Types of Sushi: Must-Try Varieties & Rolls",
         description: "Your complete guide to sushi types, from traditional to modern rolls.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/types-of-sushi",
@@ -33,7 +33,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Types of Sushi: Must-Try Varieties & Rolls Guide",
     description: "Comprehensive guide to different types of sushi, their origins, and how to enjoy them.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg",
     datePublished: "2026-01-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -408,22 +408,22 @@ export default function TypesOfSushi() {
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                     <BlurFade delay={0.1}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sushi platter" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                     </BlurFade>
                                     <BlurFade delay={0.2}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/11-C060324-6544.jpg" alt="Sushi chef" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Sushi chef" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                     </BlurFade>
                                     <BlurFade delay={0.3}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/13-C060324-6582.jpg" alt="Sushi roll" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg" alt="Sushi roll" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                     </BlurFade>
                                     <BlurFade delay={0.4}>
                                         <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                            <Image src="/images/blog/14-C060324-6596.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Sashimi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                     </BlurFade>
                                 </div>

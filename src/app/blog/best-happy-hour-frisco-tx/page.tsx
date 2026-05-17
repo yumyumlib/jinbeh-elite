@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Best Happy Hour Frisco TX: Deals & Top Spots",
         description: "Your guide to the best happy hour deals in Frisco, Texas.",
-        images: ["/images/blog/10-C060324-6501.jpg"],
+        images: ["/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-happy-hour-frisco-tx",
@@ -31,7 +31,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Best Happy Hour Frisco TX: Top Spots to Visit",
     description: "Guide to the best happy hour deals and spots in Frisco, Texas.",
-    image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
+    image: "https://jinbeh.com/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg",
     datePublished: "2026-01-19",
     dateModified: "2026-04-30",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -107,7 +107,7 @@ export default function BestHappyHourFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/10-C060324-6501.jpg"
+                    src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"
                     alt="Happy hour drinks at Jinbeh"
                     fill
                     className="object-cover"
@@ -315,7 +315,7 @@ export default function BestHappyHourFrisco() {
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3 rounded-2xl overflow-hidden">
                                         <div className="relative aspect-[3/4]">
                                             <Image
-                                                src="/images/catalog/23-C060324-6842.jpg"
+                                                src="/images/catalog/jinbeh-lychee-martini-japanese-cocktail.jpg"
                                                 alt="Jinbeh signature lychee martini cocktail with tropical garnish, served in a curved-stem martini glass against the bar's red bokeh lighting"
                                                 fill
                                                 className="object-cover"
@@ -324,7 +324,7 @@ export default function BestHappyHourFrisco() {
                                         </div>
                                         <div className="relative aspect-[3/4]">
                                             <Image
-                                                src="/images/catalog/24-C060324-6852.jpg"
+                                                src="/images/catalog/jinbeh-pineapple-mint-mojito-japanese-cocktail.jpg"
                                                 alt="Jinbeh refreshing pineapple highball cocktail with mint and a pineapple wedge garnish"
                                                 fill
                                                 className="object-cover"
@@ -333,7 +333,7 @@ export default function BestHappyHourFrisco() {
                                         </div>
                                         <div className="relative aspect-[3/4]">
                                             <Image
-                                                src="/images/catalog/25-C060324-6856.jpg"
+                                                src="/images/catalog/jinbeh-espresso-martini-japanese-cocktail.jpg"
                                                 alt="Jinbeh espresso martini cocktail with chocolate drizzle and floating coffee beans, in a modern curved-stem martini glass"
                                                 fill
                                                 className="object-cover"
@@ -430,7 +430,7 @@ export default function BestHappyHourFrisco() {
                                 <div className="space-y-4">
                                     <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/7-C060324-6447.jpg" alt="Sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
@@ -440,7 +440,7 @@ export default function BestHappyHourFrisco() {
 
                                     <Link href="/blog/sake-alcohol-strength" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/17-C060324-6708.jpg" alt="Sake" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg" alt="Sake" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>
