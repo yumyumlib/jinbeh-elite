@@ -1,31 +1,44 @@
+x-jinbeh-common: &jinbeh-common
+  image: jinbeh-elite:latest
+  build:
+    context: .
+    dockerfile: Dockerfile
+  restart: unless-stopped
+  environment:
+    - NODE_ENV=production
+    # SMTP — values come from .env (which is NOT committed to git)
+    - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+    - SMTP_PORT=${SMTP_PORT:-465}
+    - SMTP_USER=${SMTP_USER:-}
+    - SMTP_PASS=${SMTP_PASS:-}
+    - SMTP_FROM=${SMTP_FROM:-noreply@jinbeh.com}
+    # PostgreSQL — for /api/* form fallbacks (also from .env)
+    - DATABASE_URL=${DATABASE_URL:-}
+    - PGHOST=${PGHOST:-host.docker.internal}
+    - PGPORT=${PGPORT:-5433}
+    - PGDATABASE=${PGDATABASE:-jinbeh_forms}
+    - PGUSER=${PGUSER:-jinbeh}
+    - PGPASSWORD=${PGPASSWORD:-}
+    # Google Sheets — feedback form mirror (also from .env)
+    - GOOGLE_SHEETS_CLIENT_EMAIL=${GOOGLE_SHEETS_CLIENT_EMAIL:-}
+    - GOOGLE_SHEETS_PRIVATE_KEY=${GOOGLE_SHEETS_PRIVATE_KEY:-}
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+  networks:
+    - web
+
 services:
   jinbeh-staging:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    <<: *jinbeh-common
     container_name: jinbeh-staging
-    restart: unless-stopped
     ports:
       - "3001:3000"
-    environment:
-      - NODE_ENV=production
-      # SMTP — values come from .env (which is NOT committed to git)
-      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
-      - SMTP_PORT=${SMTP_PORT:-465}
-      - SMTP_USER=${SMTP_USER:-}
-      - SMTP_PASS=${SMTP_PASS:-}
-      - SMTP_FROM=${SMTP_FROM:-noreply@jinbeh.com}
-      # PostgreSQL — for /api/* form fallbacks (also from .env)
-      - DATABASE_URL=${DATABASE_URL:-}
-      - PGHOST=${PGHOST:-host.docker.internal}
-      - PGPORT=${PGPORT:-5433}
-      - PGDATABASE=${PGDATABASE:-jinbeh_forms}
-      - PGUSER=${PGUSER:-jinbeh}
-      - PGPASSWORD=${PGPASSWORD:-}
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    networks:
-      - web
+
+  jinbeh-prod:
+    <<: *jinbeh-common
+    container_name: jinbeh-prod
+    ports:
+      - "3002:3000"
 
 networks:
   web:
