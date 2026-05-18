@@ -269,17 +269,17 @@ export default function BestHibachiDallas() {
  <div className="grid grid-cols-3 gap-4">
  <BlurFade delay={0.1}>
  <div className="relative aspect-square rounded-2xl overflow-hidden group">
- <Image src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg" alt="Hibachi chef" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ <Image src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg" alt="Crispy coconut shrimp appetizer with sweet chili dipping sauce at Jinbeh" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
  </div>
  </BlurFade>
  <BlurFade delay={0.2}>
  <div className="relative aspect-square rounded-2xl overflow-hidden group">
- <Image src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg" alt="Hibachi flames" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ <Image src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg" alt="Fried calamari Japanese appetizer with savory dipping sauce at Jinbeh" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
  </div>
  </BlurFade>
  <BlurFade delay={0.3}>
  <div className="relative aspect-square rounded-2xl overflow-hidden group">
- <Image src="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg" alt="Hibachi dining" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+ <Image src="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg" alt="Chef-special hibachi fried rice with handcrafted Japanese cocktails at Jinbeh" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
  </div>
  </BlurFade>
  </div>

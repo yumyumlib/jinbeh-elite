@@ -399,7 +399,7 @@ export default function BestSushiFrisco() {
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
                                                 src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
-                                                alt="Jinbeh sushi chef"
+                                                alt="Imperial Dinner combo with twin lobster tails and chicken at Jinbeh hibachi"
                                                 fill
                                                 className="object-cover"
                                             />

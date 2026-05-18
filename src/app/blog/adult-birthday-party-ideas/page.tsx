@@ -446,22 +446,22 @@ export default function AdultBirthdayPartyIdeas() {
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Hibachi party" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Imperial Dinner combo with twin lobster tails and chicken at Jinbeh hibachi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Party celebration" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Teriyaki steak hibachi plate with fried rice and grilled shrimp at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg" alt="Themed party" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-three-plate-spread.jpg" alt="Family-style hibachi spread with three combo plates and specialty sushi at Jinbeh Frisco" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Birthday gathering" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Friends sharing hibachi and sushi rolls with chopsticks at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                     </div>

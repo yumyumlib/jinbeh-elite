@@ -132,7 +132,7 @@ export default function LewisvilleSushiPage() {
           <div className="absolute inset-0 opacity-15">
             <Image
               src="/images/photoshoot/sushi-tower.jpg"
-              alt=""
+              alt="Premium sushi tower with assorted nigiri, sashimi, and specialty rolls at Jinbeh Lewisville sushi bar"
               fill
               className="object-cover"
               sizes="100vw"

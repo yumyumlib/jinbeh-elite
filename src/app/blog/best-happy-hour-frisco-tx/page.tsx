@@ -108,7 +108,7 @@ export default function BestHappyHourFrisco() {
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
                     src="/images/blog/jinbeh-frisco-shrimp-scallops-hibachi-overhead.jpg"
-                    alt="Happy hour drinks at Jinbeh"
+                    alt="Overhead view of shrimp and scallops hibachi plate at Jinbeh Japanese Restaurant"
                     fill
                     className="object-cover"
                     priority
@@ -430,7 +430,7 @@ export default function BestHappyHourFrisco() {
                                 <div className="space-y-4">
                                     <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Teriyaki steak hibachi plate with fried rice and grilled shrimp at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">📍 Locations</span>
@@ -440,7 +440,7 @@ export default function BestHappyHourFrisco() {
 
                                     <Link href="/blog/sake-alcohol-strength" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg" alt="Sake" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-crispy-tempura-sushi-roll-closeup.jpg" alt="Crispy tempura specialty sushi roll closeup with spicy mayo and eel sauce at Jinbeh" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>

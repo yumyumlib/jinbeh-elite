@@ -97,7 +97,7 @@ export default function GiftCardsPage() {
                 <div className="absolute inset-0 opacity-20">
                     <Image
                         src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg"
-                        alt="Sushi"
+                        alt="Teriyaki steak hibachi plate with fried rice and grilled shrimp at Jinbeh Japanese Restaurant"
                         fill
                         className="object-cover"
                     />

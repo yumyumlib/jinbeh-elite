@@ -475,7 +475,7 @@ export default function PrivateDiningPage() {
                   <div className="relative h-64 overflow-hidden">
                     <Image
                       src={location.image}
-                      alt={`${location.name} private dining`}
+                      alt={`Private dining room at Jinbeh ${location.name} for celebrations and corporate events`}
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-500"
                     loading="lazy" />

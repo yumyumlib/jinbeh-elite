@@ -55,7 +55,7 @@ export default function SakeGuide() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/beverages/LewisvilleBar.jpg" alt="Sake" fill className="object-cover" priority />
+                <Image src="/images/beverages/LewisvilleBar.jpg" alt="Premium sake bottles and Japanese spirits at the Jinbeh Lewisville bar" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

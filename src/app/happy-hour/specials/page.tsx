@@ -161,7 +161,7 @@ export default function HappyHourSpecialsPage() {
           <div className="absolute inset-0 opacity-10">
             <Image
               src="/images/photoshoot/sashimi-platter.jpg"
-              alt="Sushi"
+              alt="Premium sashimi platter with assorted fresh fish at Jinbeh sushi bar"
               fill
               className="object-cover"
             />

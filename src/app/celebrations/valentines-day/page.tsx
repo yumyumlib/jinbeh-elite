@@ -246,7 +246,7 @@ export default function ValentinesDayPage() {
                 <div className="relative h-48">
                   <Image
                     src="/images/food/SamaraiRollCloseup.jpg"
-                    alt="Romantic sushi dinner"
+                    alt="Samurai signature sushi roll closeup for a romantic Valentine&apos;s Day dinner at Jinbeh"
                     fill
                     className="object-cover"
                   />

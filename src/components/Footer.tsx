@@ -24,7 +24,7 @@ export default function Footer() {
               <Link href="/" className="inline-block mb-6">
                 <Image
                   src="/images/logos/jinbeh-logo-dark.png"
-                  alt="Jinbeh Japanese Restaurant"
+                  alt="Jinbeh Japanese Restaurant logo - hibachi and sushi in Frisco and Lewisville Texas"
                   width={180}
                   height={80}
                   className="h-14 w-auto"

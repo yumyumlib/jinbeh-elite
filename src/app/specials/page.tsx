@@ -328,7 +328,7 @@ export default function SpecialsPage() {
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image
               src="/images/food/hibachi-grill.jpg"
-              alt=""
+              alt="Hibachi teppanyaki grill with flames and grilled vegetables at Jinbeh Japanese Restaurant"
               fill
               sizes="100vw"
               className="object-cover"
@@ -676,7 +676,7 @@ export default function SpecialsPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/catalog/jinbeh-chef-special-fried-rice-cocktails.jpg"
-                    alt="Jinbeh Frisco location"
+                    alt="Chef-special hibachi fried rice and cocktails at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -704,7 +704,7 @@ export default function SpecialsPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/interior/JinbehFrisco_SushiBar.jpg"
-                    alt="Jinbeh Lewisville location"
+                    alt="Sushi bar dining area at Jinbeh Lewisville Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />

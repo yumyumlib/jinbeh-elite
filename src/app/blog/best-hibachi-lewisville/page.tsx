@@ -172,7 +172,7 @@ export default function BestHibachiLewisvillePage() {
                 <div className="absolute inset-0 opacity-20">
                     <Image
                         src="/images/photoshoot/hibachi-flame-action.jpg"
-                        alt=""
+                        alt="Hibachi chef performing flaming onion volcano on the teppanyaki grill at Jinbeh Lewisville"
                         fill
                         className="object-cover"
                         sizes="100vw"

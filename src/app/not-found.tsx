@@ -9,7 +9,7 @@ export default function NotFound() {
                 <div className="mb-8">
                     <Image
                         src="/images/logos/jinbehlogo-black.svg"
-                        alt="Jinbeh"
+                        alt="Jinbeh Japanese Restaurant logo"
                         width={120}
                         height={72}
                         className="mx-auto"

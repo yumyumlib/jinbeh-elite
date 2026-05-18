@@ -273,7 +273,7 @@ export default function SushiRollsLewisvillePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Sunshine_Roll.jpg"
-                    alt="Sunshine Roll"
+                    alt="Sunshine specialty sushi roll with salmon and avocado at Jinbeh sushi bar"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -298,7 +298,7 @@ export default function SushiRollsLewisvillePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Hot_Mama_Roll.jpg"
-                    alt="Hot Mama Roll"
+                    alt="Hot Mama spicy sushi roll with jalapeno and creamy sauce at Jinbeh sushi bar"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

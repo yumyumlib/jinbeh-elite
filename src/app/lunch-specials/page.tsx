@@ -173,7 +173,7 @@ export default function LunchSpecialsPage() {
           <div className="absolute inset-0 opacity-10">
             <Image
               src="/images/food/hibachi-grill.jpg"
-              alt="Hibachi grill"
+              alt="Hibachi teppanyaki grill with flames and grilled vegetables at Jinbeh Japanese Restaurant"
               fill
               className="object-cover"
             />

@@ -218,7 +218,7 @@ export default function AppetizersFriscoPage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/menu-photos/Gyoza_Potstickers.jpg"
-                    alt="Pan-fried gyoza potstickers"
+                    alt="Pan-fried Japanese gyoza potstickers with savory dipping sauce at Jinbeh"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

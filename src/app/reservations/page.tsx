@@ -283,7 +283,7 @@ export default function ReservationsPage() {
                 <div className="relative h-64 overflow-hidden bg-charcoal">
                   <Image
                     src="/images/interior/JinbehFriscoTables.jpg"
-                    alt="Jinbeh Frisco location"
+                    alt="Dining tables at Jinbeh Frisco Japanese restaurant near Stonebriar Centre"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -390,7 +390,7 @@ export default function ReservationsPage() {
                 <div className="relative h-64 overflow-hidden bg-charcoal">
                   <Image
                     src="/images/photoshoot/sashimi-platter.jpg"
-                    alt="Jinbeh Lewisville location"
+                    alt="Premium sashimi platter with assorted fresh fish at Jinbeh sushi bar"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />

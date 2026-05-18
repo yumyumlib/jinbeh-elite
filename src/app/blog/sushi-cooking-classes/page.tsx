@@ -334,28 +334,28 @@ export default function SushiCookingClasses() {
                                         <BlurFade delay={0.1}>
                                             <BlurFade delay={0.1}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Sushi preparation" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Teriyaki steak hibachi plate with fried rice and grilled shrimp at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
                                             <BlurFade delay={0.2}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Sushi rolling" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg" alt="Imperial Dinner combo with twin lobster tails and chicken at Jinbeh hibachi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.3}>
                                             <BlurFade delay={0.3}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Sushi class" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Overhead view of lobster and chicken hibachi combo at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>
                                         <BlurFade delay={0.4}>
                                             <BlurFade delay={0.4}>
                                                 <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                    <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Finished sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                    <Image src="/images/blog/jinbeh-frisco-hibachi-sushi-feast-chopsticks.jpg" alt="Friends sharing hibachi and sushi rolls with chopsticks at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                                 </div>
                                             </BlurFade>
                                         </BlurFade>

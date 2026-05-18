@@ -138,9 +138,9 @@ export default function DiscoverTeppanyaki() {
                             </div>
 
                             <div className="grid grid-cols-3 gap-3 my-8">
-                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg" alt="Chef" fill className="object-cover" /></div>
-                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg" alt="Fire" fill className="object-cover" /></div>
-                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg" alt="Grill" fill className="object-cover" /></div>
+                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/jinbeh-coconut-shrimp-sweet-chili-sauce.jpg" alt="Crispy coconut shrimp appetizer with sweet chili dipping sauce at Jinbeh" fill className="object-cover" /></div>
+                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/jinbeh-fried-calamari-japanese-appetizer.jpg" alt="Fried calamari Japanese appetizer with savory dipping sauce at Jinbeh" fill className="object-cover" /></div>
+                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/jinbeh-chef-special-fried-rice-cocktails.jpg" alt="Chef-special hibachi fried rice with handcrafted Japanese cocktails at Jinbeh" fill className="object-cover" /></div>
                             </div>
 
                             <ProTip variant="insider">

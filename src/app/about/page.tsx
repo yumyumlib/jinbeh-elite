@@ -231,7 +231,7 @@ export default function AboutPage() {
                     <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
                       <Image
                         src="/images/photoshoot/sushi-tower.jpg"
-                        alt="Fresh sushi tower"
+                        alt="Fresh sushi tower with assorted nigiri and specialty rolls at Jinbeh Japanese Restaurant"
                         fill
                         className="object-cover"
                         quality={80}
@@ -686,7 +686,7 @@ export default function AboutPage() {
               <RevealSection delay={100}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
                   <div className="w-24 h-24 mx-auto mb-4 relative">
-                    <Image src="/images/awards/d-magazine-logo.png" alt="D Magazine logo" fill className="object-contain" quality={90} />
+                    <Image src="/images/awards/d-magazine-logo.png" alt="D Magazine logo — Jinbeh featured in Best of Big D awards" fill className="object-contain" quality={90} />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">D Magazine</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
@@ -702,7 +702,7 @@ export default function AboutPage() {
               <RevealSection delay={200}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
                   <div className="w-24 h-24 mx-auto mb-4 relative">
-                    <Image src="/images/awards/opentable-logo.png" alt="OpenTable logo" fill className="object-contain" quality={90} />
+                    <Image src="/images/awards/opentable-logo.png" alt="OpenTable logo — Jinbeh Diners&apos; Choice award winner" fill className="object-contain" quality={90} />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">OpenTable Diners&apos; Choice</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
@@ -718,7 +718,7 @@ export default function AboutPage() {
               <RevealSection delay={300}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center h-full">
                   <div className="w-24 h-24 mx-auto mb-4 relative">
-                    <Image src="/images/awards/eater-logo.png" alt="Eater Dallas logo" fill className="object-contain" quality={90} />
+                    <Image src="/images/awards/eater-logo.png" alt="Eater Dallas logo — Jinbeh featured in DFW dining guide" fill className="object-contain" quality={90} />
                   </div>
                   <h3 className="font-heading text-xl font-bold text-charcoal mb-3">Featured In</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-3">

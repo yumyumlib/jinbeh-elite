@@ -132,7 +132,7 @@ export default function FriscoSushiPage() {
           <div className="absolute inset-0 opacity-15">
             <Image
               src="/images/frisco/JinbehFrisco_SushiBar.jpg"
-              alt=""
+              alt="Sushi bar at Jinbeh Frisco with sushi chefs preparing nigiri, sashimi, and specialty rolls"
               fill
               className="object-cover"
               sizes="100vw"

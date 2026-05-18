@@ -182,7 +182,7 @@ export default function TopFriscoRestaurants() {
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
                     src="/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg"
-                    alt="Top restaurants in Frisco"
+                    alt="Overhead view of hibachi steak plate with fried rice and grilled vegetables at Jinbeh"
                     fill
                     className="object-cover"
                     priority
@@ -304,7 +304,7 @@ export default function TopFriscoRestaurants() {
                                         <div className="relative w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden">
                                             <Image
                                                 src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-combo.jpg"
-                                                alt="Jinbeh hibachi chef"
+                                                alt="Imperial Dinner combo with twin lobster tails and chicken at Jinbeh hibachi"
                                                 fill
                                                 className="object-cover"
                                             />
@@ -487,7 +487,7 @@ export default function TopFriscoRestaurants() {
                                 <div className="space-y-4">
                                     <Link href="/blog/fine-dining-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Fine dining" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-teriyaki-steak-hibachi-plate.jpg" alt="Teriyaki steak hibachi plate with fried rice and grilled shrimp at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍽️ Dining</span>
@@ -497,7 +497,7 @@ export default function TopFriscoRestaurants() {
 
                                     <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg" alt="Best sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-steak-hibachi-overhead-logo-plate.jpg" alt="Overhead view of hibachi steak plate with fried rice and grilled vegetables at Jinbeh" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍣 Cuisine</span>
@@ -507,7 +507,7 @@ export default function TopFriscoRestaurants() {
 
                                     <Link href="/blog/restaurants-private-rooms" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Private dining" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/blog/jinbeh-frisco-lobster-chicken-hibachi-overhead.jpg" alt="Overhead view of lobster and chicken hibachi combo at Jinbeh Japanese Restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-accent-red">🎉 Events</span>
