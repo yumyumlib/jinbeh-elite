@@ -45,6 +45,35 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
   },
 
+  // Rewrites — serve pre-generated WebP siblings for clients that support WebP.
+  // We pre-build a `.webp` next to every `.jpg`/`.jpeg`/`.png` under /public/images
+  // via `scripts/generate-webp.sh`. With `images.unoptimized: true` we lose the
+  // built-in /_next/image conversion path, so this rewrite re-introduces format
+  // negotiation at the static-serve layer based on the request's Accept header.
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/images/:path*.jpg",
+          has: [{ type: "header", key: "accept", value: "(.*image/webp.*)" }],
+          destination: "/images/:path*.webp",
+        },
+        {
+          source: "/images/:path*.jpeg",
+          has: [{ type: "header", key: "accept", value: "(.*image/webp.*)" }],
+          destination: "/images/:path*.webp",
+        },
+        {
+          source: "/images/:path*.png",
+          has: [{ type: "header", key: "accept", value: "(.*image/webp.*)" }],
+          destination: "/images/:path*.webp",
+        },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
+  },
+
   // Redirects for SEO and legacy WordPress migration
   async redirects() {
     return [
@@ -77,7 +106,19 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // Legacy FAQ pages (individual PAA pages not served in current build)
+      {
+        source: "/faq/:slug",
+        destination: "/faq",
+        permanent: false, // 302 — will switch to 301 once /faq/[slug] pages are live
+      },
+
       // Legacy PDF menus → new menu pages (specific rules BEFORE catch-all)
+      {
+        source: "/wp-content/uploads/2023/12/Lewisville-Lunch-Hibachi.pdf",
+        destination: "/lewisville/menu",
+        permanent: true,
+      },
       {
         source: "/wp-content/uploads/2023/12/Jinbeh-Frisco-Lunch.pdf",
         destination: "/frisco/menu",
@@ -140,6 +181,23 @@ const nextConfig: NextConfig = {
         destination: "/sitemap.xml",
         permanent: true,
       },
+
+      // SEO cannibalization fixes — 301 redirects for duplicate/variant slugs
+      {
+        source: "/blog/sushi-platters-near-me",
+        destination: "/blog/sushi-platter-near-me",
+        permanent: true,
+      },
+      {
+        source: "/blog/japanese-restaurants-lewisville",
+        destination: "/blog/japanese-restaurants-lewisville-tx",
+        permanent: true,
+      },
+      {
+        source: "/blog/best-hibachi-dallas",
+        destination: "/blog/best-hibachi-dallas-tx",
+        permanent: true,
+      },
     ];
   },
 
@@ -179,13 +237,19 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Cache static assets for 1 year
+      // Cache static assets for 1 year. Vary on Accept so the WebP rewrite
+      // (see `rewrites()` above) doesn't poison caches with the wrong format
+      // when a client without WebP support fetches the same URL.
       {
         source: "/images/:path*",
         headers: [
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Vary",
+            value: "Accept",
           },
         ],
       },
