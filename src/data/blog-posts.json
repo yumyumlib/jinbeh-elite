@@ -51,6 +51,653 @@
     ],
     "posts": [
         {
+            "slug": "restaurants-near-universal-kids-resort-frisco",
+            "title": "Best Restaurant Near Universal Kids Resort | Jinbeh Frisco",
+            "excerpt": "Universal Kids Resort opens July 1, 2026. Jinbeh Japanese Restaurant is just 10 minutes south on the Dallas North Tollway, hibachi, sushi, and family fun since 1988.",
+            "category": "local-guides",
+            "primaryKeyword": "restaurant near Universal Kids Resort Frisco",
+            "secondaryKeywords": [
+                "where to eat after Universal Frisco",
+                "best restaurant near Universal Kids Frisco TX",
+                "family restaurant Frisco TX",
+                "hibachi near Universal Frisco",
+                "Japanese restaurant Frisco TX"
+            ],
+            "heroImage": "/images/celebrations/jinbeh_group.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-06-01",
+            "readTime": 8,
+            "featured": true,
+            "relatedPosts": [
+                "things-to-do-frisco",
+                "top-frisco-restaurants",
+                "world-cup-dallas-restaurants"
+            ]
+        },
+        {
+            "slug": "japanese-restaurants-lewisville-tx",
+            "title": "Japanese Restaurants in Lewisville TX: Local Guide",
+            "excerpt": "An honest local guide to Japanese restaurants in Lewisville, TX — plus Jinbeh's hibachi and sushi off I-35E near Vista Ridge.",
+            "category": "local-guides",
+            "primaryKeyword": "japanese restaurants in lewisville tx",
+            "secondaryKeywords": [
+                "japanese restaurants lewisville tx",
+                "japanese restaurants lewisville",
+                "japanese steakhouse lewisville",
+                "sushi restaurants in lewisville",
+                "hibachi restaurant lewisville tx",
+                "japanese food lewisville texas"
+            ],
+            "heroImage": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 7,
+            "featured": false,
+            "relatedPosts": [
+                "best-sushi-lewisville",
+                "best-hibachi-lewisville"
+            ]
+        },
+        {
+            "slug": "best-hibachi-near-me-dfw",
+            "title": "Best Hibachi Near Me DFW: Where to Go Tonight",
+            "excerpt": "Where to find the best hibachi near you in DFW — Jinbeh in Frisco and Lewisville since 1988.",
+            "category": "best-of",
+            "primaryKeyword": "best hibachi near me dfw",
+            "secondaryKeywords": [
+                "hibachi near me dfw",
+                "hibachi restaurants dfw",
+                "hibachi near me frisco",
+                "hibachi near me lewisville",
+                "teppanyaki near me dfw",
+                "japanese steakhouse near me"
+            ],
+            "heroImage": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "best-hibachi-dallas-tx",
+                "best-hibachi-lewisville",
+                "japanese-steakhouse-near-me-dfw"
+            ]
+        },
+        {
+            "slug": "japanese-food-near-me-frisco",
+            "title": "Japanese Food Near Me in Frisco TX: Where to Eat",
+            "excerpt": "Where to find Japanese food near you in Frisco TX — Jinbeh at 2693 Preston Rd near Stonebriar since 1988.",
+            "category": "local-guides",
+            "primaryKeyword": "japanese food near me frisco",
+            "secondaryKeywords": [
+                "japanese food frisco",
+                "japanese restaurants near me frisco",
+                "japanese near stonebriar",
+                "sushi near me frisco",
+                "hibachi near me frisco",
+                "japanese restaurants frisco tx"
+            ],
+            "heroImage": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 5,
+            "featured": false,
+            "relatedPosts": [
+                "japanese-restaurants-frisco-tx",
+                "best-sushi-frisco",
+                "things-to-do-frisco"
+            ]
+        },
+        {
+            "slug": "best-asian-restaurants-frisco",
+            "title": "Best Asian Restaurants in Frisco TX: A Local's Guide",
+            "excerpt": "The Asian restaurant scene in Frisco TX — Japanese, Chinese, Korean, Thai, Vietnamese, Indian. Where Jinbeh fits.",
+            "category": "local-guides",
+            "primaryKeyword": "best asian restaurants frisco",
+            "secondaryKeywords": [
+                "asian restaurants in frisco",
+                "asian restaurants in frisco tx",
+                "asian food frisco",
+                "japanese restaurants frisco",
+                "best asian food frisco",
+                "asian dining frisco"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "japanese-restaurants-frisco-tx",
+                "best-asian-food-dallas",
+                "asian-cuisine-dallas"
+            ]
+        },
+        {
+            "slug": "japanese-steakhouse-near-me-dfw",
+            "title": "Japanese Steakhouse Near Me DFW: Where to Go",
+            "excerpt": "Looking for a Japanese steakhouse near you in DFW? Jinbeh in Frisco and Lewisville since 1988 — tableside hibachi, sushi, full bar.",
+            "category": "local-guides",
+            "primaryKeyword": "japanese steakhouse near me dfw",
+            "secondaryKeywords": [
+                "japanese steakhouse dfw",
+                "japanese steakhouse dallas",
+                "japanese steakhouse frisco",
+                "japanese steakhouse lewisville",
+                "hibachi steakhouse dfw",
+                "best japanese steakhouse dfw"
+            ],
+            "heroImage": "/images/hq/cooking-on-grill.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "best-hibachi-near-me-dfw",
+                "best-hibachi-dallas-tx",
+                "hibachi-vs-teppanyaki-explained"
+            ]
+        },
+        {
+            "slug": "best-sake-bar-dfw",
+            "title": "Where to Find a Real Sake Bar in DFW",
+            "excerpt": "A guide to drinking sake properly in DFW — categories, pairings, and the sake program at Jinbeh Frisco and Lewisville.",
+            "category": "beverages",
+            "primaryKeyword": "sake bar dfw",
+            "secondaryKeywords": [
+                "sake bar frisco",
+                "sake bar lewisville",
+                "sake flight dfw",
+                "sake by the glass frisco",
+                "sake happy hour dfw",
+                "japanese sake bar dallas"
+            ],
+            "heroImage": "/images/drinks/cocktail.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 7,
+            "featured": false,
+            "relatedPosts": [
+                "sake-pairing-guide",
+                "types-of-sake-explained",
+                "japanese-whiskey-bar-frisco"
+            ]
+        },
+        {
+            "slug": "premium-sushi-frisco",
+            "title": "Premium Sushi in Frisco TX: Signature Rolls & Sashimi",
+            "excerpt": "Premium sushi at Jinbeh Frisco — signature rolls, sashimi, daily fresh fish at the sushi bar near Stonebriar.",
+            "category": "cuisine",
+            "primaryKeyword": "premium sushi frisco",
+            "secondaryKeywords": [
+                "fancy sushi near me",
+                "upscale sushi frisco",
+                "high end sushi frisco",
+                "signature sushi rolls frisco",
+                "sashimi frisco tx",
+                "best sushi bar frisco"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": true,
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "types-of-sushi",
+                "sashimi-vs-sushi"
+            ]
+        },
+        {
+            "slug": "vegetarian-japanese-food-dfw",
+            "title": "Vegetarian Japanese Food in DFW: Real Options at Jinbeh",
+            "excerpt": "Vegetarian Japanese food in DFW that goes beyond avocado rolls — vegetable hibachi, vegetable nigiri, asparagus rolls at Jinbeh.",
+            "category": "health",
+            "primaryKeyword": "vegetarian japanese food dfw",
+            "secondaryKeywords": [
+                "vegetarian japanese food frisco",
+                "vegetarian hibachi frisco",
+                "vegan japanese food dfw",
+                "vegetable hibachi frisco",
+                "tofu hibachi lewisville",
+                "best vegetarian sushi near me"
+            ],
+            "heroImage": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "gluten-free-japanese-food-frisco-lewisville",
+                "types-of-sushi",
+                "hibachi-calories-guide"
+            ]
+        },
+        {
+            "slug": "kid-friendly-japanese-restaurants-dfw",
+            "title": "Kid-Friendly Japanese Restaurants in DFW: Jinbeh Frisco & Lewisville",
+            "excerpt": "Kid-friendly Japanese restaurants in DFW — Jinbeh's hibachi shows, dedicated Kids Menu, and family-friendly atmosphere since 1988.",
+            "category": "local-guides",
+            "primaryKeyword": "kid friendly japanese restaurants dfw",
+            "secondaryKeywords": [
+                "kid friendly hibachi frisco",
+                "kid friendly hibachi lewisville",
+                "family restaurants frisco",
+                "japanese restaurant kids menu dfw",
+                "hibachi for kids dfw",
+                "family-friendly sushi dfw"
+            ],
+            "heroImage": "/images/food/OnionVolcanoDemo.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "hibachi-birthday-party-frisco",
+                "unique-kids-birthday-party-places",
+                "hibachi-birthday-party-ideas"
+            ]
+        },
+        {
+            "slug": "japanese-whiskey-bar-frisco",
+            "title": "Japanese Whiskey in Frisco TX: Pours at Jinbeh",
+            "excerpt": "Where to drink Japanese whiskey in Frisco — Jinbeh's bar program pours Japanese whiskey by the glass alongside sake and craft cocktails.",
+            "category": "beverages",
+            "primaryKeyword": "japanese whiskey frisco",
+            "secondaryKeywords": [
+                "japanese whiskey bar frisco",
+                "yamazaki frisco",
+                "hibiki frisco",
+                "japanese whiskey lewisville",
+                "sake and whiskey frisco",
+                "japanese bar program dfw"
+            ],
+            "heroImage": "/images/drinks/JinbehPunchBeverageDrink.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "japanese-whiskey-guide",
+                "yamazaki-whiskey-guide",
+                "best-sake-bar-dfw"
+            ]
+        },
+        {
+            "slug": "hibachi-birthday-party-frisco",
+            "title": "Hibachi Birthday Party Frisco TX: How to Plan It",
+            "excerpt": "How to plan a hibachi birthday party in Frisco at Jinbeh — group sizes, booking timeline, kids' menus, chef show, and night-of expectations.",
+            "category": "celebrations",
+            "primaryKeyword": "hibachi birthday party frisco",
+            "secondaryKeywords": [
+                "hibachi birthday frisco tx",
+                "kids hibachi birthday frisco",
+                "frisco birthday dinner restaurant",
+                "japanese restaurant birthday frisco",
+                "hibachi party for adults frisco"
+            ],
+            "heroImage": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 7,
+            "featured": true,
+            "relatedPosts": [
+                "hibachi-birthday-party-ideas",
+                "birthday-celebration-restaurants",
+                "anniversary-dinner-frisco"
+            ]
+        },
+        {
+            "slug": "date-night-restaurants-lewisville",
+            "title": "Date Night Restaurants Lewisville TX: Sushi & Hibachi",
+            "excerpt": "A real date-night guide for Lewisville — when to choose the sushi bar over hibachi, happy hour timing, and how to make the night work.",
+            "category": "local-guides",
+            "primaryKeyword": "date night restaurants lewisville",
+            "secondaryKeywords": [
+                "date night lewisville tx",
+                "romantic restaurants lewisville",
+                "date night sushi lewisville",
+                "date night hibachi lewisville",
+                "valentine's day lewisville"
+            ],
+            "heroImage": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 7,
+            "featured": false,
+            "relatedPosts": [
+                "date-night-restaurants-frisco",
+                "anniversary-dinner-frisco",
+                "best-sushi-lewisville"
+            ]
+        },
+        {
+            "slug": "corporate-event-catering-dfw",
+            "title": "Corporate Event Catering DFW: Japanese Catering for Offices",
+            "excerpt": "Drop-off Japanese catering for DFW offices, client dinners, team builds, and quarterly events. Frisco and Lewisville delivery zones.",
+            "category": "local-guides",
+            "primaryKeyword": "corporate event catering dfw",
+            "secondaryKeywords": [
+                "corporate catering dfw",
+                "office catering dfw",
+                "corporate japanese catering frisco",
+                "client dinner catering dfw",
+                "team build catering frisco",
+                "quarterly event catering dfw"
+            ],
+            "heroImage": "/images/business_corporate_events_jinbeh_celebration.jpeg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 7,
+            "featured": true,
+            "relatedPosts": [
+                "asian-food-catering-dfw",
+                "hibachi-catering-frisco",
+                "hibachi-catering-lewisville"
+            ]
+        },
+        {
+            "slug": "private-dining-rooms-frisco",
+            "title": "Private Dining Rooms Frisco TX: Hibachi & Sushi Groups",
+            "excerpt": "Private dining and group event hosting at Jinbeh Frisco — hibachi tables for groups, semi-private setups for parties, near Stonebriar.",
+            "category": "local-guides",
+            "primaryKeyword": "private dining rooms frisco",
+            "secondaryKeywords": [
+                "private dining frisco tx",
+                "private hibachi frisco",
+                "group dining frisco",
+                "rehearsal dinner frisco restaurant",
+                "private event venue frisco",
+                "corporate private dining frisco"
+            ],
+            "heroImage": "/images/interior/JinbehFriscoTables.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "hibachi-birthday-party-frisco",
+                "restaurants-private-rooms",
+                "large-group-dining"
+            ]
+        },
+        {
+            "slug": "anniversary-dinner-frisco",
+            "title": "Anniversary Dinner Frisco TX: Sushi Bar or Hibachi",
+            "excerpt": "Anniversary dinner at Jinbeh Frisco — when to book the sushi bar two-top, when to book a hibachi table, sake pairings, and reservation tips.",
+            "category": "celebrations",
+            "primaryKeyword": "anniversary dinner frisco",
+            "secondaryKeywords": [
+                "anniversary restaurant frisco",
+                "romantic dinner frisco",
+                "milestone anniversary frisco",
+                "sushi bar anniversary frisco",
+                "valentine's day frisco",
+                "intimate anniversary frisco"
+            ],
+            "heroImage": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "romantic-anniversary-dinners",
+                "date-night-restaurants-frisco",
+                "hibachi-birthday-party-frisco"
+            ]
+        },
+        {
+            "slug": "hibachi-catering-frisco",
+            "title": "Hibachi Catering Frisco TX: Tableside Chefs & Drop-Off Trays",
+            "excerpt": "Hibachi catering in Frisco from Jinbeh — tableside teppanyaki chefs for weddings, birthdays, corporate events, plus drop-off hibachi trays for office lunches.",
+            "category": "local-guides",
+            "primaryKeyword": "hibachi catering frisco",
+            "secondaryKeywords": [
+                "hibachi catering frisco tx",
+                "frisco hibachi caterer",
+                "tableside hibachi catering frisco",
+                "corporate hibachi catering frisco",
+                "japanese catering frisco tx",
+                "wedding hibachi catering frisco"
+            ],
+            "heroImage": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 9,
+            "featured": true,
+            "relatedPosts": [
+                "hibachi-catering-dfw",
+                "asian-food-catering-dfw",
+                "sushi-catering-frisco"
+            ]
+        },
+        {
+            "slug": "hibachi-catering-lewisville",
+            "title": "Hibachi Catering Lewisville TX: Chefs to Your Venue",
+            "excerpt": "Hibachi catering in Lewisville from Jinbeh — tableside teppanyaki chefs travel to your home, office, or venue. Drop-off hibachi trays available.",
+            "category": "local-guides",
+            "primaryKeyword": "hibachi catering lewisville",
+            "secondaryKeywords": [
+                "hibachi catering lewisville tx",
+                "lewisville hibachi caterer",
+                "tableside hibachi catering lewisville",
+                "japanese catering lewisville tx",
+                "wedding hibachi catering lewisville",
+                "hibachi at home lewisville"
+            ],
+            "heroImage": "/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 9,
+            "featured": true,
+            "relatedPosts": [
+                "hibachi-catering-frisco",
+                "hibachi-catering-dfw",
+                "sushi-catering-lewisville"
+            ]
+        },
+        {
+            "slug": "sushi-catering-frisco",
+            "title": "Sushi Catering Frisco TX: Platters, Stations & Delivery",
+            "excerpt": "Sushi catering in Frisco from Jinbeh — platters delivered to offices and homes, live sushi stations for weddings, premium sashimi spreads, signature rolls.",
+            "category": "local-guides",
+            "primaryKeyword": "sushi catering frisco",
+            "secondaryKeywords": [
+                "sushi catering frisco tx",
+                "sushi platter frisco",
+                "frisco sushi caterer",
+                "wedding sushi station frisco",
+                "japanese catering frisco tx",
+                "sushi platters near stonebriar"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 8,
+            "featured": false,
+            "relatedPosts": [
+                "hibachi-catering-frisco",
+                "asian-food-catering-dfw",
+                "sushi-platter-for-party"
+            ]
+        },
+        {
+            "slug": "sushi-catering-lewisville",
+            "title": "Sushi Catering Lewisville TX: Platters & Live Stations",
+            "excerpt": "Sushi catering in Lewisville from Jinbeh — drop-off platters delivered to offices and homes, live sushi stations for weddings, signature rolls and premium sashimi.",
+            "category": "local-guides",
+            "primaryKeyword": "sushi catering lewisville",
+            "secondaryKeywords": [
+                "sushi catering lewisville tx",
+                "sushi platter lewisville",
+                "lewisville sushi caterer",
+                "wedding sushi station lewisville",
+                "japanese catering lewisville tx",
+                "sushi platter flower mound"
+            ],
+            "heroImage": "/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 8,
+            "featured": false,
+            "relatedPosts": [
+                "hibachi-catering-lewisville",
+                "sushi-catering-frisco",
+                "best-sushi-lewisville"
+            ]
+        },
+        {
+            "slug": "sushi-platter-for-party",
+            "title": "Sushi Platter for a Party: How to Order Right",
+            "excerpt": "How to order a sushi platter for a party in DFW — how much sushi per person, which rolls to mix, lead time, and what to ask. Practical guide from a 38-year Japanese restaurant.",
+            "category": "cuisine",
+            "primaryKeyword": "sushi platter for party",
+            "secondaryKeywords": [
+                "sushi party platter",
+                "sushi platter near me",
+                "sushi party tray near me",
+                "sushi tray for party",
+                "how much sushi per person party",
+                "sushi for office party"
+            ],
+            "heroImage": "/images/instagram/sushi-feast-overhead.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 7,
+            "featured": false,
+            "relatedPosts": [
+                "sushi-catering-frisco",
+                "sushi-catering-lewisville",
+                "types-of-sushi"
+            ]
+        },
+        {
+            "slug": "gluten-free-japanese-food-frisco-lewisville",
+            "title": "Gluten-Free Japanese Food in Frisco & Lewisville TX",
+            "excerpt": "A real guide to eating gluten-free at Jinbeh in Frisco and Lewisville. Which hibachi proteins are safe, which sushi rolls swap easily, how to ask for tamari, and what to skip.",
+            "category": "health",
+            "primaryKeyword": "gluten free japanese food frisco",
+            "secondaryKeywords": [
+                "gluten free asian food near me",
+                "gluten free hibachi frisco",
+                "gluten free hibachi lewisville",
+                "gluten free sushi frisco",
+                "celiac safe japanese frisco",
+                "tamari soy sauce frisco"
+            ],
+            "heroImage": "/images/food/SmokedSalmonCloseup.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 8,
+            "featured": false,
+            "relatedPosts": [
+                "hibachi-calories-guide",
+                "hibachi-menu-guide",
+                "best-hibachi-lewisville"
+            ]
+        },
+        {
+            "slug": "asian-food-catering-dfw",
+            "title": "Asian Food Catering in DFW: A Real Planning Guide",
+            "excerpt": "Hibachi, sushi, and Japanese catering for offices, weddings, and parties across Dallas-Fort Worth. What it costs, what to order, lead times, and the catering questions nobody tells you to ask.",
+            "category": "local-guides",
+            "primaryKeyword": "asian food catering dfw",
+            "secondaryKeywords": [
+                "asian food catering near me",
+                "japanese catering dfw",
+                "hibachi catering dfw",
+                "sushi catering dfw",
+                "corporate japanese catering frisco",
+                "wedding hibachi catering dfw"
+            ],
+            "heroImage": "/images/business_corporate_events_jinbeh_celebration.jpeg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 9,
+            "featured": true,
+            "relatedPosts": [
+                "hibachi-catering-dfw",
+                "offsite-hibachi-catering",
+                "jinbeh-catering-services"
+            ]
+        },
+        {
+            "slug": "japanese-restaurants-frisco-tx",
+            "title": "Japanese Restaurants in Frisco TX: The Local Guide",
+            "excerpt": "An honest local guide to Japanese restaurants in Frisco, TX — what each spot does well, who they're for, and where Jinbeh fits in the landscape. From hibachi to omakase, near Stonebriar to Legacy West.",
+            "category": "local-guides",
+            "primaryKeyword": "japanese restaurants in frisco tx",
+            "secondaryKeywords": [
+                "japanese restaurants frisco",
+                "japanese steakhouse frisco tx",
+                "sushi restaurants in frisco tx",
+                "asian restaurants in frisco tx",
+                "best japanese restaurant frisco",
+                "japanese restaurant near stonebriar"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 10,
+            "featured": true,
+            "relatedPosts": [
+                "best-sushi-frisco",
+                "top-frisco-restaurants",
+                "things-to-do-frisco"
+            ]
+        },
+        {
+            "slug": "world-cup-dallas-restaurants",
+            "title": "World Cup 2026 Dallas: Where to Eat, Watch & Cheer Japan in DFW",
+            "excerpt": "FIFA World Cup 2026 brings 9 matches to AT&T Stadium, the Japan base camp to Toyota Stadium in Frisco, and 39 days of soccer to DFW. Here's where to eat, watch, and celebrate.",
+            "category": "local-guides",
+            "primaryKeyword": "world cup dallas restaurants",
+            "secondaryKeywords": [
+                "fifa world cup 2026 dallas",
+                "japan world cup dallas",
+                "att stadium restaurants",
+                "japan base camp frisco",
+                "where to watch world cup dallas",
+                "world cup watch party dallas",
+                "japanese restaurant near att stadium"
+            ],
+            "heroImage": "/images/celebrations/jinbeh_group.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-11",
+            "readTime": 11,
+            "featured": true,
+            "relatedPosts": [
+                "things-to-do-frisco",
+                "hibachi-catering-dfw",
+                "japanese-restaurants-lewisville-tx"
+            ]
+        },
+        {
             "slug": "ayce-sushi-vs-traditional",
             "title": "AYCE Sushi vs. Traditional: What You Should Know",
             "excerpt": "Compare all-you-can-eat sushi and traditional sushi restaurants. Learn how freshness, fish quality, FDA guidelines, and economics shape your dining experience.",
@@ -71,29 +718,6 @@
                 "types-of-sushi",
                 "beginner-sushi-tips",
                 "best-sushi-frisco"
-            ]
-        },
-        {
-            "slug": "best-hibachi-dallas",
-            "title": "Best Hibachi Dallas TX: Top 10 Restaurants & Experiences",
-            "excerpt": "Looking for the best hibachi in Dallas? Our local guide reveals where skilled chefs put on unforgettable shows. From birthday celebrations to date nights.",
-            "category": "best-of",
-            "primaryKeyword": "best hibachi dallas",
-            "secondaryKeywords": [
-                "hibachi dallas tx",
-                "teppanyaki dallas",
-                "hibachi near me"
-            ],
-            "heroImage": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
-            "heroVideo": null,
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-15",
-            "readTime": 8,
-            "featured": true,
-            "relatedPosts": [
-                "best-sushi-frisco",
-                "hibachi-vs-teppanyaki-explained",
-                "hibachi-birthday-party-ideas"
             ]
         },
         {
@@ -137,7 +761,7 @@
             "readTime": 9,
             "featured": true,
             "relatedPosts": [
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "large-group-dining",
                 "free-birthday-food-deals"
             ]
@@ -207,7 +831,7 @@
             "readTime": 8,
             "featured": false,
             "relatedPosts": [
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "hibachi-birthday-party-ideas",
                 "hibachi-calories-guide"
             ]
@@ -277,31 +901,7 @@
             "featured": false,
             "relatedPosts": [
                 "best-sushi-frisco",
-                "best-happy-hour-frisco-tx",
-                "top-frisco-restaurants"
-            ]
-        },
-        {
-            "slug": "japanese-restaurants-lewisville",
-            "title": "Best Japanese Restaurants Lewisville TX",
-            "excerpt": "Find authentic Japanese cuisine in Lewisville TX. From hibachi shows to fresh sushi, discover the best spots near Vista Ridge Mall and I-35E.",
-            "category": "local-guides",
-            "primaryKeyword": "japanese restaurant lewisville",
-            "secondaryKeywords": [
-                "sushi lewisville tx",
-                "hibachi lewisville",
-                "asian food lewisville"
-            ],
-            "heroImage": "/images/lewisville/IMG_1712.jpg",
-            "heroVideo": null,
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-25",
-            "readTime": 6,
-            "featured": false,
-            "relatedPosts": [
-                "best-hibachi-dallas",
-                "types-of-sushi",
-                "hibachi-vs-teppanyaki-explained"
+                "best-happy-hour-frisco-tx"
             ]
         },
         {
@@ -324,7 +924,7 @@
             "relatedPosts": [
                 "hibachi-vs-teppanyaki-explained",
                 "beginner-sushi-tips",
-                "best-hibachi-dallas"
+                "best-hibachi-dallas-tx"
             ]
         },
         {
@@ -346,7 +946,7 @@
             "featured": false,
             "relatedPosts": [
                 "hibachi-birthday-party-ideas",
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "jinbeh-catering-services"
             ]
         },
@@ -369,7 +969,7 @@
             "featured": false,
             "relatedPosts": [
                 "hibachi-birthday-party-ideas",
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "large-group-dining"
             ]
         },
@@ -637,7 +1237,7 @@
             "featured": false,
             "relatedPosts": [
                 "hibachi-vs-teppanyaki-explained",
-                "best-hibachi-dallas"
+                "best-hibachi-dallas-tx"
             ]
         },
         {
@@ -704,7 +1304,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "best-sushi-dallas",
                 "best-asian-food-dallas"
             ]
@@ -773,7 +1373,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "best-sushi-dallas",
                 "asian-cuisine-dallas"
             ]
@@ -796,7 +1396,6 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "best-hibachi-dallas",
                 "hibachi-vs-teppanyaki-explained",
                 "hibachi-birthday-party-ideas"
             ]
@@ -865,7 +1464,7 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "hibachi-menu-guide",
                 "fine-dining-frisco"
             ]
@@ -937,29 +1536,6 @@
                 "best-sushi-frisco",
                 "top-frisco-restaurants",
                 "date-night-restaurants-frisco"
-            ]
-        },
-        {
-            "slug": "free-birthday-food-deals",
-            "title": "Free Birthday Food Deals in DFW: Best Freebies & Rewards",
-            "excerpt": "Score free birthday food across Dallas-Fort Worth! From restaurant rewards to special birthday treatments, celebrate without breaking the bank.",
-            "category": "celebrations",
-            "primaryKeyword": "free birthday food",
-            "secondaryKeywords": [
-                "birthday freebies dfw",
-                "free birthday meals",
-                "birthday deals restaurants",
-                "birthday rewards"
-            ],
-            "heroImage": "/images/blog/illustrations/kids_birthday_jinbeh_celebration.png",
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-26",
-            "readTime": 7,
-            "featured": false,
-            "relatedPosts": [
-                "free-birthday-food-deals",
-                "hibachi-birthday-party-ideas",
-                "birthday-celebration-restaurants"
             ]
         },
         {
@@ -1051,7 +1627,7 @@
             "relatedPosts": [
                 "sushi-lunch-specials",
                 "hibachi-menu-guide",
-                "best-hibachi-dallas"
+                "best-hibachi-dallas-tx"
             ]
         },
         {
@@ -1074,7 +1650,7 @@
             "relatedPosts": [
                 "hibachi-vs-teppanyaki-explained",
                 "hibachi-calories-guide",
-                "best-hibachi-dallas"
+                "best-hibachi-dallas-tx"
             ]
         },
         {
@@ -1095,9 +1671,9 @@
             "readTime": 7,
             "featured": false,
             "relatedPosts": [
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "best-sushi-frisco",
-                "japanese-restaurants-lewisville"
+                "japanese-restaurants-lewisville-tx"
             ]
         },
         {
@@ -1147,29 +1723,6 @@
             ]
         },
         {
-            "slug": "large-group-dining",
-            "title": "Large Group Dining Guide: Tips for Party Planning",
-            "excerpt": "Planning a dinner for a large group? Learn how to coordinate reservations, seating, and menus for 10-50+ guests at hibachi and sushi restaurants.",
-            "category": "best-of",
-            "primaryKeyword": "large group dining",
-            "secondaryKeywords": [
-                "group dinner tips",
-                "large party restaurants",
-                "corporate dinner planning",
-                "group dining etiquette"
-            ],
-            "heroImage": "/images/blog/illustrations/business_corporate_events_jinbeh_celebration.jpeg",
-            "author": "Jinbeh",
-            "publishedAt": "2026-01-26",
-            "readTime": 7,
-            "featured": false,
-            "relatedPosts": [
-                "large-group-dining",
-                "group-dining-venues",
-                "hibachi-birthday-party-ideas"
-            ]
-        },
-        {
             "slug": "offsite-hibachi-catering",
             "title": "Offsite Hibachi Catering: Bring the Show to You",
             "excerpt": "Want hibachi at your venue? Our offsite hibachi catering brings skilled chefs and the full teppanyaki experience to your event location.",
@@ -1210,9 +1763,9 @@
             "readTime": 5,
             "featured": false,
             "relatedPosts": [
-                "japanese-restaurants-lewisville",
+                "japanese-restaurants-lewisville-tx",
                 "seafood-lewisville",
-                "best-hibachi-dallas"
+                "best-hibachi-dallas-tx"
             ]
         },
         {
@@ -1280,8 +1833,7 @@
             "featured": false,
             "relatedPosts": [
                 "large-group-dining",
-                "group-dining-venues",
-                "large-group-dining"
+                "group-dining-venues"
             ]
         },
         {
@@ -1394,7 +1946,7 @@
             "readTime": 6,
             "featured": false,
             "relatedPosts": [
-                "japanese-restaurants-lewisville",
+                "japanese-restaurants-lewisville-tx",
                 "pickleball-restaurants-lewisville",
                 "best-sushi-frisco"
             ]
@@ -1487,7 +2039,7 @@
             "featured": false,
             "relatedPosts": [
                 "large-group-dining",
-                "best-hibachi-dallas",
+                "best-hibachi-dallas-tx",
                 "romantic-anniversary-dinners"
             ]
         },
@@ -1538,29 +2090,6 @@
             ]
         },
         {
-            "slug": "sushi-platters-near-me",
-            "title": "Sushi Platters Near Me: Party Trays & Catering in DFW",
-            "excerpt": "Order sushi platters near you in DFW! Jinbeh offers party trays, catering platters, and custom sushi selections for events. Fresh fish, expert rolls, since 1988.",
-            "category": "cuisine",
-            "primaryKeyword": "sushi platters near me",
-            "secondaryKeywords": [
-                "sushi party tray",
-                "sushi catering dallas",
-                "sushi platter frisco",
-                "japanese catering near me"
-            ],
-            "heroImage": "/images/catalog/19-C060324-6754.jpg",
-            "author": "Jinbeh",
-            "publishedAt": "2026-02-18",
-            "readTime": 8,
-            "featured": true,
-            "relatedPosts": [
-                "types-of-sushi",
-                "jinbeh-catering-services",
-                "sushi-identification-chart"
-            ]
-        },
-        {
             "slug": "japanese-takeout-near-me",
             "title": "Japanese Takeout Near Me: Your Complete DFW Guide",
             "excerpt": "Find the best Japanese takeout near you in DFW. From sushi rolls and bento boxes to hibachi platters, order fresh Japanese food for pickup or delivery from Jinbeh.",
@@ -1580,7 +2109,7 @@
             "relatedPosts": [
                 "types-of-sushi",
                 "hibachi-lunch-ideas",
-                "sushi-platters-near-me"
+                "sushi-platter-near-me"
             ]
         },
         {
@@ -1673,6 +2202,136 @@
                 "beer-hard-seltzer",
                 "sake-pairing-guide",
                 "japanese-cocktails"
+            ]
+        },
+        {
+            "slug": "sushi-takeout-frisco",
+            "title": "Sushi Takeout Frisco TX: Order from Jinbeh",
+            "excerpt": "Sushi takeout in Frisco from Jinbeh — what travels well, what doesn't, how to order pickup or via Grubhub and Uber Eats near Stonebriar.",
+            "category": "local-guides",
+            "primaryKeyword": "sushi takeout frisco",
+            "secondaryKeywords": [
+                "sushi takeout near me frisco",
+                "sushi to go frisco",
+                "sushi delivery frisco",
+                "sushi pickup frisco",
+                "japanese takeout frisco",
+                "sushi near stonebriar"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 5,
+            "featured": false,
+            "relatedPosts": [
+                "sushi-takeout-lewisville",
+                "japanese-takeout-near-me",
+                "sushi-platter-near-me"
+            ]
+        },
+        {
+            "slug": "sushi-takeout-lewisville",
+            "title": "Sushi Takeout Lewisville TX: Order from Jinbeh",
+            "excerpt": "Sushi takeout in Lewisville from Jinbeh — signature rolls, sashimi, classic rolls packaged for pickup or Grubhub/Uber Eats delivery in Vista Ridge.",
+            "category": "local-guides",
+            "primaryKeyword": "sushi takeout lewisville",
+            "secondaryKeywords": [
+                "sushi takeout near me lewisville",
+                "sushi to go lewisville",
+                "sushi delivery flower mound",
+                "sushi pickup lewisville",
+                "japanese takeout lewisville",
+                "sushi takeout vista ridge"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 5,
+            "featured": false,
+            "relatedPosts": [
+                "sushi-takeout-frisco",
+                "japanese-takeout-near-me",
+                "sushi-platter-near-me"
+            ]
+        },
+        {
+            "slug": "japanese-delivery-frisco-lewisville",
+            "title": "Japanese Food Delivery Frisco & Lewisville: Order from Jinbeh",
+            "excerpt": "Japanese food delivery from Jinbeh — Frisco and Lewisville locations on Grubhub and Uber Eats. What travels well, delivery zones, pickup vs. delivery.",
+            "category": "local-guides",
+            "primaryKeyword": "japanese delivery frisco lewisville",
+            "secondaryKeywords": [
+                "japanese delivery frisco",
+                "japanese delivery lewisville",
+                "japanese food delivery dfw",
+                "sushi delivery near me",
+                "hibachi delivery near me",
+                "grubhub japanese frisco"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 5,
+            "featured": false,
+            "relatedPosts": [
+                "sushi-takeout-frisco",
+                "sushi-takeout-lewisville",
+                "hibachi-to-go-dfw"
+            ]
+        },
+        {
+            "slug": "hibachi-to-go-dfw",
+            "title": "Hibachi To Go DFW: Takeout from Jinbeh",
+            "excerpt": "Hibachi to go from Jinbeh — steak, chicken, shrimp, salmon takeout from Frisco and Lewisville. Pickup or Grubhub/Uber Eats delivery. Not chef-to-home.",
+            "category": "local-guides",
+            "primaryKeyword": "hibachi to go dfw",
+            "secondaryKeywords": [
+                "hibachi takeout dfw",
+                "hibachi to go near me",
+                "hibachi takeout frisco",
+                "hibachi takeout lewisville",
+                "hibachi delivery dfw",
+                "japanese steakhouse to go"
+            ],
+            "heroImage": "/images/hq/cooking-on-grill.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "japanese-delivery-frisco-lewisville",
+                "hibachi-catering-frisco",
+                "hibachi-catering-lewisville"
+            ]
+        },
+        {
+            "slug": "sushi-platter-near-me",
+            "title": "Sushi Platter Near Me DFW: Order from Jinbeh",
+            "excerpt": "Sushi platter near you in DFW — Jinbeh sushi platters for parties, offices, events with pickup or drop-off across Frisco, Plano, Lewisville, Flower Mound.",
+            "category": "celebrations",
+            "primaryKeyword": "sushi platter near me",
+            "secondaryKeywords": [
+                "sushi platter dfw",
+                "sushi tray near me",
+                "sushi platter frisco",
+                "sushi platter lewisville",
+                "sushi party platter",
+                "sushi tray for party"
+            ],
+            "heroImage": "/images/hq/sushi-rolls-2026.jpg",
+            "heroVideo": null,
+            "author": "Jinbeh",
+            "publishedAt": "2026-05-12",
+            "readTime": 6,
+            "featured": false,
+            "relatedPosts": [
+                "sushi-platter-for-party",
+                "sushi-catering-frisco",
+                "sushi-catering-lewisville"
             ]
         }
     ]
