@@ -35,7 +35,14 @@ async function getAccessToken(): Promise<string> {
     if (!email || !rawKey) {
         throw new Error('GOOGLE_SHEETS_CLIENT_EMAIL or GOOGLE_SHEETS_PRIVATE_KEY missing');
     }
-    const privateKey = rawKey.replace(/\\n/g, '\n');
+    // Some deploys (n8n exports, quoted .env values, `docker run -e KEY="..."`)
+    // bake the PEM in wrapped in literal quotes — strip them, then convert the
+    // escaped `\n` sequences back to real newlines, or crypto.sign throws
+    // `DECODER routines::unsupported`.
+    const privateKey = rawKey
+        .trim()
+        .replace(/^["']|["']$/g, '')
+        .replace(/\\n/g, '\n');
 
     const now = Math.floor(Date.now() / 1000);
     const header = b64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }));
