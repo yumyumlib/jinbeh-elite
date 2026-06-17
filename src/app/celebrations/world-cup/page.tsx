@@ -146,6 +146,64 @@ export default function WorldCupPage() {
           </div>
         </section>
 
+        {/* Featured Event: Japan Watch Party June 25 */}
+        <section className="py-14 md:py-16 bg-accent-red text-white">
+          <div className="container mx-auto px-6 max-w-4xl text-center">
+            <span className="text-white/90 text-sm tracking-[0.3em] uppercase mb-3 block font-medium">
+              Special Event · Thursday, June 25
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Japan Watch Party with Chioma Ubogagu
+            </h2>
+            <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+              Coppell&apos;s own <strong>Chioma Ubogagu</strong>, a professional footballer
+              who has represented England and played for Real Madrid, Arsenal, and
+              Tottenham, comes home to cheer on Japan at the restaurant she&apos;s loved
+              since childhood. Free to attend, reservations recommended.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left mb-8">
+              <div className="bg-white/10 rounded-xl p-4">
+                <p className="font-semibold">Party starts 5:00 PM</p>
+                <p className="text-white/80 text-sm">Kickoff at 6:00 PM</p>
+              </div>
+              <div className="bg-white/10 rounded-xl p-4">
+                <p className="font-semibold">Open late through 10:00 PM</p>
+                <p className="text-white/80 text-sm">Extended hours that evening</p>
+              </div>
+              <div className="bg-white/10 rounded-xl p-4">
+                <p className="font-semibold">Halftime raffle</p>
+                <p className="text-white/80 text-sm">
+                  Signed Chioma photos given away during the match
+                </p>
+              </div>
+              <div className="bg-white/10 rounded-xl p-4">
+                <p className="font-semibold">Big screens at both locations</p>
+                <p className="text-white/80 text-sm">
+                  Hibachi at your table and the Samurai Blue Special
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-3 rounded-xl font-semibold"
+              >
+                Reserve Frisco
+              </a>
+              <a
+                href="https://www.opentable.com/jinbeh-lewisville"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn bg-charcoal text-white hover:bg-charcoal/90 px-8 py-3 rounded-xl font-semibold"
+              >
+                Reserve Lewisville
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Intro */}
         <section className="py-16 md:py-20">
           <div className="container mx-auto px-6 max-w-4xl">
@@ -233,11 +291,13 @@ export default function WorldCupPage() {
                 Chioma Ubogagu Loves Jinbeh
               </h2>
               <p className="text-lg text-warm-ivory/85 leading-relaxed max-w-3xl mx-auto">
-                Former U.S. Women&apos;s National Team and Nigeria international{" "}
-                <strong>Chioma Ubogagu</strong> is one of many guests who&apos;ve made
-                Jinbeh part of their DFW story. She loves the food, the atmosphere, and
-                the family spirit, and we love seeing her stop by. With the FIFA World
-                Cup 2026 right around the corner, her kind words mean even more.
+                Professional footballer{" "}
+                <strong>Chioma Ubogagu</strong> grew up in Coppell and has loved Jinbeh
+                since childhood. She won a U-20 World Cup with the United States,
+                represented England at the senior international level, and played for
+                Real Madrid, Arsenal, and Tottenham. Now a forward for Dallas Trinity FC,
+                she is one of many guests who&apos;ve made Jinbeh part of their DFW story,
+                and with the FIFA World Cup 2026 here, her kind words mean even more.
               </p>
             </div>
 
