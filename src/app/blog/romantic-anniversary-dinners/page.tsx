@@ -198,7 +198,7 @@ export default function RomanticAnniversaryDinnersPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Anniversary?","acceptedAnswer":{"@type":"Answer","text":"Hibachi dining offers something unique for anniversaries. The interactive nature of watching a skilled chef prepare your meal adds entertainment and spectacle. Flames dance, knives flash, and food becomes edible art, creating memorable moments you'll share together. Planning a birthday instead? Check out our hibachi birthday party ideas."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Hibachi for Your Anniversary?","acceptedAnswer":{"@type":"Answer","text":"Hibachi dining offers something unique for anniversaries. The interactive nature of watching a skilled chef prepare your meal adds entertainment and spectacle. Flames dance, knives flash, and food becomes edible art, creating memorable moments you'll share together. Planning a birthday instead? Check out our hibachi birthday party ideas."}}]}) }}
       />
       <script
           type="application/ld+json"

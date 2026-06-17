@@ -107,7 +107,7 @@ export default function HibachiVsTeppanyakiPage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"A Brief History: Where It All Started","acceptedAnswer":{"@type":"Answer","text":"To understand the difference between hibachi and teppanyaki, we need to travel back to Japan and understand each cooking style's origins."}},{"@type":"Question","name":"Why Does This Confusion Matter?","acceptedAnswer":{"@type":"Answer","text":"Understanding the difference between hibachi and teppanyaki matters for a few reasons:"}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"A Brief History: Where It All Started","acceptedAnswer":{"@type":"Answer","text":"To understand the difference between hibachi and teppanyaki, we need to travel back to Japan and understand each cooking style's origins."}},{"@type":"Question","name":"Why Does This Confusion Matter?","acceptedAnswer":{"@type":"Answer","text":"Understanding the difference between hibachi and teppanyaki matters for a few reasons:"}}]}) }}
       />
       <script
           type="application/ld+json"
@@ -573,7 +573,7 @@ efinitions
             </Link>
           </li>
           <li>
-            <Link href="/blog/best-hibachi-dallas" className="text-accent-red hover:underline font-semibold">
+            <Link href="/blog/best-hibachi-dallas-tx" className="text-accent-red hover:underline font-semibold">
               → Best Hibachi in Dallas: Top Restaurants & Experiences
             </Link>
           </li>

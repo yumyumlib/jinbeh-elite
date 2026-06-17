@@ -126,7 +126,7 @@ export default function JapaneseTakeoutNearMe() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Japanese Takeout Is Booming in DFW","acceptedAnswer":{"@type":"Answer","text":"Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth, and for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety, and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits different."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Japanese Takeout Is Booming in DFW","acceptedAnswer":{"@type":"Answer","text":"Japanese cuisine has become one of the most popular takeout options in Dallas-Fort Worth, and for good reason. Sushi rolls are perfectly portioned, bento boxes offer balanced variety, and hibachi plates reheat beautifully. Whether you're working from home, hosting a casual gathering, or just craving something beyond the usual pizza and tacos, Japanese takeout hits different."}}]}) }}
       />
             <h1>Why Japanese Takeout Is Booming in DFW</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">

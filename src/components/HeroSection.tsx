@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import RespImage from "@/components/RespImage";
 import SocialProofBar from "@/components/SocialProofBar";
 import { useState, useEffect } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -9,6 +9,7 @@ import { BorderBeam } from "@/components/ui/BorderBeam";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
 import hooksData from "@/data/hooks.json";
+import { fireConversion } from "@/lib/gtag";
 
 // Helper to get dynamic reservation CTA based on day of week
 function getReservationCTA(): string {
@@ -66,15 +67,13 @@ export default function HeroSection() {
             )}
 
             {/* Fallback Image - always visible until video loads - Professional Studio Quality */}
-            <Image
+            <RespImage
                 src="/images/hero/jinbeh-hero-poster.jpg"
                 alt="Jinbeh Japanese Restaurant — hibachi chef performing with flames alongside a premium sushi spread with nigiri, specialty rolls, and sashimi"
                 fill
                 priority
-                fetchPriority="high"
                 sizes="100vw"
                 className={`object-cover object-center z-0 transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-100'}`}
-                quality={80}
             />
 
             {/* Dark Overlay for text contrast */}
@@ -156,6 +155,7 @@ export default function HeroSection() {
                                 />
                                 <a
                                     href="tel:2146191200"
+                                    onClick={() => fireConversion("phone_call")}
                                     aria-label="Call Jinbeh Frisco" className="mt-2 inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white w-full px-4 py-2.5 rounded-lg text-sm font-semibold transition-all border border-white/20 hover:border-white/40"
                                 >
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -167,6 +167,7 @@ export default function HeroSection() {
                                     href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() => fireConversion("directions")}
                                     aria-label="View on Google Maps" className="mt-2 inline-flex items-center justify-center gap-1.5 text-xs text-white/50 hover:text-soft-gold transition-colors w-full"
                                 >
                                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -200,6 +201,7 @@ export default function HeroSection() {
                                 />
                                 <a
                                     href="tel:2144882224"
+                                    onClick={() => fireConversion("phone_call")}
                                     aria-label="Call Jinbeh Lewisville" className="mt-2 inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white w-full px-4 py-2.5 rounded-lg text-sm font-semibold transition-all border border-white/20 hover:border-white/40"
                                 >
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -211,6 +213,7 @@ export default function HeroSection() {
                                     href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() => fireConversion("directions")}
                                     aria-label="View on Google Maps" className="mt-2 inline-flex items-center justify-center gap-1.5 text-xs text-white/50 hover:text-soft-gold transition-colors w-full"
                                 >
                                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

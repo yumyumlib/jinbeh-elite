@@ -174,7 +174,7 @@ export default function MenuClient() {
                             },
                             {
                                 title: "Sushi Favorites",
-                                items: ["Dragon Roll", "Rainbow Roll", "Samurai Roll"],
+                                items: ["Dragon Roll", "Rainbow Roll", "Sunrise Roll"],
                                 icon: "🍣",
                                 delay: 200,
                             },

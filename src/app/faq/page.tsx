@@ -3,10 +3,15 @@ import { RevealSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import paaData from "@/data/paa-content.json";
+
+const paaClusters = paaData.clusters as { id: string; name: string; icon?: string }[];
+const paaQuestions = paaData.questions as { slug: string; question: string; cluster: string }[];
 
 export const metadata: Metadata = {
-  title:
-    "FAQ | Jinbeh Japanese Restaurant - Frisco & Lewisville TX",
+  title: {
+    absolute: "FAQ | Jinbeh Japanese Restaurant - Frisco & Lewisville TX",
+  },
   description:
     "Frequently asked questions about Jinbeh Japanese Restaurant. Find answers about reservations, menu, dietary options, private dining, and more in.",
   keywords: [
@@ -57,31 +62,31 @@ const faqSchema = {
       name: "How do I make a reservation at Jinbeh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can make reservations online through OpenTable at our website, by phone at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224, or by visiting either location in person.",
+        text: "Jinbeh accepts reservations online through OpenTable or by phone — Frisco at (214) 619-1200, Lewisville at (214) 488-2224. Walk-ins are welcome, but reservations are strongly recommended for dinner, weekends, and special occasions like birthdays.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you offer online ordering or delivery?",
+      name: "Does Jinbeh offer online ordering or delivery?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer takeout and delivery through Grubhub and Uber Eats. Search for Jinbeh at your preferred platform to view our menu and place an order.",
+        text: "Jinbeh offers takeout and delivery through Grubhub and Uber Eats at both Frisco and Lewisville locations. Search for 'Jinbeh' on either platform to view menus and order. Hibachi tableside cooking is dine-in only — only sushi, appetizers, and entrées are available for takeout.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you have vegetarian or vegan options?",
+      name: "Does Jinbeh have vegetarian or vegan options?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! We offer various vegetarian and vegan options including vegetable hibachi, vegetable sushi rolls, edamame, miso soup, and more. Let us know your dietary preferences when ordering.",
+        text: "Jinbeh offers vegetarian and vegan options at both locations, including vegetable-tofu hibachi, vegetable sushi rolls, edamame, miso soup, seaweed salad, and assorted tempura. Let your server or hibachi chef know your dietary preferences and they'll adapt accordingly.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you accommodate food allergies?",
+      name: "Does Jinbeh accommodate food allergies?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, we take food allergies seriously. Please inform your server or chef about any allergies when you arrive. We can customize dishes and take appropriate precautions to prevent cross-contamination.",
+        text: "Jinbeh takes food allergies seriously and accommodates gluten, dairy, peanut, tree nut, shellfish, and other common allergies daily. Please inform your server or hibachi chef about allergies when you arrive — they will customize dishes and follow cross-contamination protocols on the grill.",
       },
     },
     {
@@ -89,7 +94,7 @@ const faqSchema = {
       name: "What makes hibachi dining unique?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hibachi dining features skilled chefs cooking your meal tableside on an iron griddle. You get fresh, hot food prepared right before you while enjoying an entertaining chef performance. It's dinner and a show!",
+        text: "Jinbeh's hibachi dining is Japanese-style tableside cooking on a large iron griddle, where skilled teppanyaki chefs perform knife tricks, the famous onion volcano, and precision searing right at your table. It's dinner and a show in one seat — the food comes out fresh and hot, and the entertainment is built into the meal.",
       },
     },
     {
@@ -442,6 +447,44 @@ export default function FAQPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Browse all questions — internal links to every individual Q&A page */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-3 text-center">
+              Browse All Questions
+            </h2>
+            <p className="text-charcoal/70 text-center mb-10 max-w-2xl mx-auto">
+              Detailed answers to the questions guests ask most about Jinbeh in Frisco and Lewisville.
+            </p>
+            <div className="space-y-10">
+              {paaClusters.map((cluster) => {
+                const qs = paaQuestions.filter((q) => q.cluster === cluster.id);
+                if (qs.length === 0) return null;
+                return (
+                  <div key={cluster.id} id={cluster.id} className="scroll-mt-20">
+                    <h3 className="text-xl font-heading font-bold text-charcoal mb-4">
+                      {cluster.icon ? `${cluster.icon} ` : ""}
+                      {cluster.name}
+                    </h3>
+                    <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2">
+                      {qs.map((q) => (
+                        <li key={q.slug}>
+                          <Link
+                            href={`/faq/${q.slug}`}
+                            className="text-deep-indigo hover:text-accent-red hover:underline transition-colors"
+                          >
+                            {q.question}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

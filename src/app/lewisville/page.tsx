@@ -107,7 +107,7 @@ const restaurantSchema = {
   },
 };
 
-// FAQ Schema for rich snippets
+// FAQ Schema for rich snippets — every answer leads with "Jinbeh" for AI citation
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -125,7 +125,7 @@ const faqSchema = {
       name: "Does Jinbeh Lewisville take reservations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We recommend reservations, especially for hibachi tables on weekends. You can call us at (214) 488-2224 to reserve your table.",
+        text: "Jinbeh Lewisville welcomes walk-ins, but reservations are strongly recommended for dinner, weekends, and hibachi tables. Call (214) 488-2224 to reserve, or book online through OpenTable for instant confirmation.",
       },
     },
     {
@@ -133,7 +133,7 @@ const faqSchema = {
       name: "Where is Jinbeh Lewisville located?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Lewisville is located at 2440 S Stemmons Fwy #A, Lewisville, TX 75067, with easy access from I-35E near Vista Ridge Mall.",
+        text: "Jinbeh Lewisville is located at 2440 S Stemmons Fwy #A, Lewisville, TX 75067, with easy access from I-35E near Vista Ridge Mall. The Picklr pickleball venue is two doors down, making it a perfect post-game dinner spot.",
       },
     },
     {
@@ -141,7 +141,7 @@ const faqSchema = {
       name: "Does Jinbeh Lewisville have hibachi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Our Lewisville location features authentic teppanyaki hibachi dining with skilled chefs who cook your meal tableside with impressive showmanship.",
+        text: "Jinbeh Lewisville features full tableside teppanyaki hibachi dining where skilled chefs perform fire shows, knife tricks, the famous onion volcano, and precision searing on steak, shrimp, scallops, salmon, lobster, and vegetables right at your table.",
       },
     },
     {
@@ -149,7 +149,31 @@ const faqSchema = {
       name: "Is Jinbeh Lewisville good for families?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! Jinbeh Lewisville is perfect for families. Kids love watching the hibachi chefs perform, and we have options for all ages. It's a great spot for family celebrations.",
+        text: "Jinbeh Lewisville is one of Lewisville's most family-friendly restaurants — kids love watching the hibachi chefs perform, we offer a dedicated Kids Menu, and hibachi tables seat 7-8 guests, perfect for multi-generation family dinners and birthdays.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Lewisville have sushi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Lewisville features a full upscale sushi bar with fresh fish delivered multiple times weekly. Our sushi chefs hand-craft nigiri, sashimi, classic rolls, and signature specialty rolls. We were rated #1 Best Tempura in Lewisville by OpenTable Diners' Choice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Lewisville offer happy hour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Lewisville runs happy hour Monday-Friday from 5pm to 6:30pm with $4 draft beers, $5 sake, and $6 wine. Happy hour drinks are bar-area only and don't apply to hibachi or dining tables.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does hibachi cost at Jinbeh Lewisville?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Lewisville hibachi entrées typically run from chicken teriyaki through ribeye and combo plates (steak & shrimp, steak & lobster, Imperial Dinner). All hibachi dinners include soup, salad, vegetables, fried rice, and the full tableside chef performance. See the dinner menu for current pricing.",
       },
     },
   ],
@@ -655,6 +679,8 @@ export default function LewisvillePage() {
               <Link href="/lewisville/hibachi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Menu</Link>
               <Link href="/lewisville/sushi-rolls" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
               <Link href="/lewisville/sashimi" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi</Link>
+              <Link href="/lewisville/vegetarian" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Vegetarian</Link>
+              <Link href="/lewisville/world-cup" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">World Cup 2026</Link>
               <Link href="/gift-cards" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/frisco" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Frisco Location</Link>
               <Link href="/nearby/flower-mound" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Flower Mound</Link>
@@ -694,6 +720,26 @@ export default function LewisvillePage() {
             Call Now
           </a>
         </div>
+
+        {/* Common Questions — internal links to location-relevant FAQ pages */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-8 text-center">
+              Common Questions About Jinbeh Lewisville
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              <Link href="/faq/what-comes-with-hibachi-dinner" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">What comes with a hibachi dinner?</Link>
+              <Link href="/faq/can-children-enjoy-hibachi" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Can children enjoy hibachi?</Link>
+              <Link href="/faq/is-jinbeh-open-on-sunday" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Is Jinbeh open on Sunday?</Link>
+              <Link href="/faq/is-jinbeh-wheelchair-accessible" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Is Jinbeh wheelchair accessible?</Link>
+              <Link href="/faq/does-jinbeh-have-gift-cards" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Does Jinbeh sell gift cards?</Link>
+              <Link href="/faq/is-frisco-or-lewisville-better" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Frisco or Lewisville: which is better?</Link>
+            </div>
+            <div className="text-center mt-8">
+              <Link href="/faq" className="text-accent-red hover:underline font-semibold">See all frequently asked questions →</Link>
+            </div>
+          </div>
+        </section>
 
         {/* Nearby Neighborhoods */}
         <section className="py-12 bg-warm-ivory">

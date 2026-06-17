@@ -36,3 +36,28 @@ coverage
 # Misc
 README.md
 *.md
+
+# Root-level research/report/media artifacts are not needed for the Next build.
+/*.docx
+/*.pdf
+/*.pages
+/*.xlsx
+/*.xls
+/*.csv
+/*.jpeg
+/*.jpg
+/*.png
+/*.webp
+/MASTER_DOCS
+/Menu_Media
+/outputs
+/progress-report*.html
+/progress-report*.md
+
+# Archived / retired content (root-only perms; not for the image or serving)
+.archived
+public/.archived
+**/.archived
+
+# Build/scratch helpers that should never ship in the image
+_genresp.js

@@ -74,6 +74,20 @@ export interface LocationInfo {
     reservationRid: string;
     otherLocation: LocationId;
     otherLocationName: string;
+    /** City + state, e.g. "Frisco, TX" — used for localized headings and SEO */
+    city: string;
+    /** Full street address for the location section */
+    addressFormatted: string;
+    /** Major road / how guests get here, e.g. "Preston Road near Stonebriar Centre" */
+    gettingThere: string;
+    /** Parking description specific to this location */
+    parking: string;
+    /** Hibachi grill type at this location: gas (Frisco) vs electric (Lewisville) */
+    grill: string;
+    /** Nearby landmarks for local-SEO relevance */
+    landmarks: string[];
+    /** Nearby cities this location commonly serves */
+    nearbyCities: string[];
 }
 
 export const locations: Record<LocationId, LocationInfo> = {
@@ -87,6 +101,13 @@ export const locations: Record<LocationId, LocationInfo> = {
         reservationRid: '188458',
         otherLocation: 'lewisville',
         otherLocationName: 'Lewisville',
+        city: 'Frisco, TX',
+        addressFormatted: '2693 Preston Rd, Suite 1040, Frisco, TX 75034',
+        gettingThere: 'right on Preston Road near Stonebriar Centre, minutes from Legacy West and Highway 121',
+        parking: 'Free, easy parking in the shopping center lot',
+        grill: 'gas',
+        landmarks: ['Stonebriar Centre', 'Legacy West', 'Highway 121'],
+        nearbyCities: ['Plano', 'McKinney', 'Allen', 'Prosper', 'The Colony'],
     },
     lewisville: {
         id: 'lewisville',
@@ -98,5 +119,12 @@ export const locations: Record<LocationId, LocationInfo> = {
         reservationRid: '188461',
         otherLocation: 'frisco',
         otherLocationName: 'Frisco',
+        city: 'Lewisville, TX',
+        addressFormatted: '2440 S Stemmons Fwy #A, Lewisville, TX 75067',
+        gettingThere: 'just off I-35E near Vista Ridge Mall, an easy drive from Flower Mound and Highland Village',
+        parking: 'Convenient strip-mall parking right at the door',
+        grill: 'electric',
+        landmarks: ['Vista Ridge Mall', 'I-35E', 'Medical City Lewisville'],
+        nearbyCities: ['Flower Mound', 'Highland Village', 'The Colony', 'Carrollton', 'Coppell'],
     },
 };

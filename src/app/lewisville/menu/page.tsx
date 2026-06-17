@@ -119,7 +119,7 @@ const menus = [
     description: "Signature rolls, classic maki, sashimi, and nigiri crafted daily.",
     pdfUrl: "/menus/lewisville/sushi-menu.pdf",
     image: "/images/food/SamaraiRollCloseup.jpg",
-    imageAlt: "Samurai roll signature sushi at Jinbeh Lewisville",
+    imageAlt: "Sunrise roll signature sushi at Jinbeh Lewisville",
     icon: "🍣",
   },
 ];

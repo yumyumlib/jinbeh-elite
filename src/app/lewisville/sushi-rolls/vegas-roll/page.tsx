@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Vegas Roll Lewisville | Deep Fried Salmon Jalapeño",
-  description: "Vegas Roll at Jinbeh Lewisville: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (972) 221-3888.",
+  description: "Vegas Roll at Jinbeh Lewisville: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (214) 488-2224.",
   keywords: ["vegas roll lewisville","vegas roll sushi","deep fried sushi roll","crispy sushi roll","fusion sushi roll","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Vegas Roll | Jinbeh Lewisville",
@@ -84,7 +84,7 @@ const faqSchema = {
       "name": "Can I order for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Vegas Roll is available for takeout and delivery. For the crispiest experience, we recommend dining in fresh at our sushi bar. Call (972) 221-3888."
+        "text": "Yes! Vegas Roll is available for takeout and delivery. For the crispiest experience, we recommend dining in fresh at our sushi bar. Call (214) 488-2224."
       }
     }
   ]

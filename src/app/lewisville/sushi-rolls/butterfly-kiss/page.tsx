@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Butterfly Kiss Sushi Roll Lewisville | House Specialty",
-  description: "Butterfly Kiss Roll at Jinbeh Lewisville: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (972) 221-3888.",
+  description: "Butterfly Kiss Roll at Jinbeh Lewisville: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (214) 488-2224.",
   keywords: ["butterfly kiss roll lewisville","jinbeh butterfly kiss roll","house specialty sushi roll","seasonal sushi roll lewisville","sushi near me lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Butterfly Kiss Roll | Jinbeh Lewisville",
@@ -84,7 +84,7 @@ const faqSchema = {
       "name": "Can I order Butterfly Kiss Roll for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Butterfly Kiss Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
+        "text": "Yes! Butterfly Kiss Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
       }
     }
   ]

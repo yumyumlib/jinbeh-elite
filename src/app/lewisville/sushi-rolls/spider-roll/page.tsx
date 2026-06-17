@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Spider Roll Lewisville | Soft Shell Crab Sushi",
-  description: "Spider Roll at Jinbeh Lewisville: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near I-35E. Call (972) 221-3888.",
+  description: "Spider Roll at Jinbeh Lewisville: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near I-35E. Call (214) 488-2224.",
   keywords: ["spider roll lewisville","spider roll sushi","soft shell crab sushi roll","crispy crab sushi","specialty sushi roll lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Spider Roll | Jinbeh Lewisville",
@@ -84,7 +84,7 @@ const faqSchema = {
       "name": "Can I order for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Spider Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
+        "text": "Yes! Spider Roll is available for takeout and delivery. For the best presentation, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
       }
     }
   ]

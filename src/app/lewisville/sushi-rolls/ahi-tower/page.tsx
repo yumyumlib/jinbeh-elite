@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Ahi Tuna Tower Lewisville | Premium Spicy Ahi Tuna",
-  description: "Ahi Tower at Jinbeh Lewisville: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (972) 221-3888.",
+  description: "Ahi Tower at Jinbeh Lewisville: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (214) 488-2224.",
   keywords: ["ahi tuna tower lewisville","tuna tartare tower","ahi tower sushi","tuna avocado stack","sushi near me lewisville","japanese restaurant lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Ahi Tuna Tower | Jinbeh Lewisville",
@@ -84,7 +84,7 @@ const faqSchema = {
       "name": "Can I order for special occasions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Ahi Tower makes a stunning presentation for celebrations. Call (972) 221-3888 to arrange for special events or gatherings."
+        "text": "Yes! Ahi Tower makes a stunning presentation for celebrations. Call (214) 488-2224 to arrange for special events or gatherings."
       }
     }
   ]

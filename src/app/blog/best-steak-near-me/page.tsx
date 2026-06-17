@@ -301,7 +301,7 @@ export default function BestSteakNearMe() {
                                 <h3 className="font-heading font-bold mb-4">Related Articles</h3>
                                 <div className="space-y-3">
                                     {[
-                                        { t: " Best Hibachi Dallas", s: "/blog/best-hibachi-dallas", i: "/images/blog/8-C060324-6462.jpg" },
+                                        { t: " Best Hibachi Dallas", s: "/blog/best-hibachi-dallas-tx", i: "/images/blog/8-C060324-6462.jpg" },
                                         { t: "Best Asian Food Dallas", s: "/blog/best-asian-food-dallas", i: "/images/blog/7-C060324-6447.jpg" },
                                         { t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
                                     ].map(r => (

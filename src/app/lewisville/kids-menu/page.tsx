@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 import Image from "next/image";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
@@ -728,6 +729,9 @@ export default function KidsMenuLewisvillePage() {
             </p>
           </div>
         </section>
+        {/* Why Jinbeh — location + category SEO */}
+        <CategoryLocationSEO locationId="lewisville" category="kids-menu" />
+
       </main>
       <Footer />
     </>

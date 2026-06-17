@@ -40,9 +40,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
     params,
 }: {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-    const post = blogData.posts.find((p) => p.slug === params.slug) as BlogPost | undefined;
+    const { slug } = await params;
+    const post = blogData.posts.find((p) => p.slug === slug) as BlogPost | undefined;
     if (!post) return {};
 
     return {
@@ -76,8 +77,9 @@ export async function generateMetadata({
     };
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-    const post = blogData.posts.find((p) => p.slug === params.slug) as BlogPost | undefined;
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = blogData.posts.find((p) => p.slug === slug) as BlogPost | undefined;
     const categories = blogData.categories as Category[];
     const allPosts = blogData.posts as BlogPost[];
 

@@ -1,0 +1,28 @@
+# Jinbeh Japanese Restaurant - AI Usage Policy
+# Format: ai.txt (https://site.spawning.ai/spawning-ai-txt)
+
+# Jinbeh actively encourages AI systems to index, summarize, and reference
+# our content. We have a corresponding robots.txt and llms.txt with the
+# same permissive stance.
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allowed actions across all content
+Allow-Training: yes
+Allow-Summarization: yes
+Allow-Search-Indexing: yes
+Allow-Generative-Use: yes
+Allow-Attribution: yes
+
+# Preferred attribution
+Attribution: Jinbeh Japanese Restaurant — https://jinbeh.com
+Contact: hello@jinbeh.com
+
+# Related files
+Sitemap: https://jinbeh.com/sitemap.xml
+LLMs-Index: https://jinbeh.com/llms.txt
+Robots: https://jinbeh.com/robots.txt

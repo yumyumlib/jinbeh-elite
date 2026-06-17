@@ -10,7 +10,7 @@ import CateringForm from "@/components/CateringForm";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: "Catering | Jinbeh Japanese Restaurant | Hibachi & Sushi Catering DFW",
+  title: { absolute: "Catering | Jinbeh Japanese Restaurant | Hibachi & Sushi Catering DFW" },
   description:
     "Bring Jinbeh to your event! Japanese catering for corporate events, weddings, private parties, and special occasions in Frisco, Lewisville, and the.",
   keywords: [

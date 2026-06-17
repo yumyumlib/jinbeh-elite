@@ -9495,7 +9495,7 @@ While Jinbeh is our top recommendation for Japanese dining, Lewisville has other
 
 Address: 250 E Round Grove Rd, Lewisville, TX 75067
 
-Phone: (972) 315-3744
+Phone: (214) 488-2224
 
 Unlock exclusive birthday rewards, seasonal menu previews, and priority seating by joining our elite dining club.
 
@@ -26382,7 +26382,7 @@ Near Stonebriar Centre (214) 697-0989
 
 Jinbeh Lewisville
 
-Off I-35E Near Vista Ridge (972) 523-5432
+Off I-35E Near Vista Ridge (214) 488-2224
 
 ### Images
 
@@ -27982,7 +27982,7 @@ Also serving cocktails & sake at our Frisco location
 ## `/lewisville/cocktails/jinbeh-punch`
 
 - **Title:** Jinbeh Punch Lewisville - Japanese Tropical Cocktails | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Signature tropical cocktail at Jinbeh Lewisville. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (972) 221-3888.
+- **Meta description:** Signature tropical cocktail at Jinbeh Lewisville. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/cocktails/jinbeh-punch
 - **OG title:** Jinbeh Punch | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg`
@@ -28089,7 +28089,7 @@ Also available at our Frisco location
 ## `/lewisville/cocktails/lychee-martini`
 
 - **Title:** Lychee Martini - Best Japanese Cocktails Lewisville | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Lewisville. Happy hour specials. Reserve today (972) 221-3888.
+- **Meta description:** Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Lewisville. Happy hour specials. Reserve today (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/cocktails/lychee-martini
 - **OG title:** Lychee Martini | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg`
@@ -28196,7 +28196,7 @@ Also available at our Frisco location
 ## `/lewisville/cocktails/sake-bomb`
 
 - **Title:** Sake Bomb Lewisville - Classic Japanese Beer Cocktail | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Traditional sake bomb with cold Japanese beer at Jinbeh Lewisville. Best happy hour cocktails. Reserve at our Japanese restaurant (972) 221-3888.
+- **Meta description:** Traditional sake bomb with cold Japanese beer at Jinbeh Lewisville. Best happy hour cocktails. Reserve at our Japanese restaurant (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/cocktails/sake-bomb
 - **OG title:** Sake Bomb | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg`
@@ -28303,7 +28303,7 @@ Also available at our Frisco location
 ## `/lewisville/cocktails/sake-flight`
 
 - **Title:** Premium Sake Flight Lewisville - Japanese Tasting | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Three premium sake tasting flight at Jinbeh Lewisville. Experience authentic Japanese sakes with expert guidance. Best sake selection near Vista Ridge (972) 221-3888.
+- **Meta description:** Three premium sake tasting flight at Jinbeh Lewisville. Experience authentic Japanese sakes with expert guidance. Best sake selection near Vista Ridge (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/cocktails/sake-flight
 - **OG title:** Sake Flight | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg`
@@ -28413,7 +28413,7 @@ Also available at our Frisco location
 ## `/lewisville/cocktails/tokyo-mule`
 
 - **Title:** Tokyo Mule - Japanese Whiskey Cocktails Lewisville | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Tokyo Mule with Japanese whiskey, ginger & lime at Jinbeh Lewisville. Premium happy hour cocktails. Best Japanese restaurant drinks. Call (972) 221-3888.
+- **Meta description:** Tokyo Mule with Japanese whiskey, ginger & lime at Jinbeh Lewisville. Premium happy hour cocktails. Best Japanese restaurant drinks. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/cocktails/tokyo-mule
 - **OG title:** Tokyo Mule | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg`
@@ -31703,7 +31703,7 @@ Also serving sushi rolls at our Frisco location
 ## `/lewisville/sushi-rolls/ahi-tower`
 
 - **Title:** Ahi Tuna Tower Lewisville | Premium Spicy Ahi Tuna | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Ahi Tower at Jinbeh Lewisville: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (972) 221-3888.
+- **Meta description:** Ahi Tower at Jinbeh Lewisville: Spicy ahi tuna, mango, avocado, sesame. Sushi-grade tuna tower appetizer. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/ahi-tower
 - **OG title:** Ahi Tuna Tower | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -31810,7 +31810,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/butterfly-kiss`
 
 - **Title:** Butterfly Kiss Sushi Roll Lewisville | House Specialty | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Butterfly Kiss Roll at Jinbeh Lewisville: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (972) 221-3888.
+- **Meta description:** Butterfly Kiss Roll at Jinbeh Lewisville: Salmon, mango, crab, sriracha. House specialty with ponzu and jalapeño. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/butterfly-kiss
 - **OG title:** Butterfly Kiss Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -31914,7 +31914,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/california-roll`
 
 - **Title:** California Roll Sushi Lewisville | Best Crab & Avocado | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** California Roll at Jinbeh Lewisville: 250 cal, crab, avocado, cucumber. Fresh handmade sushi near I-35E. Dine in or takeout. Call (972) 221-3888.
+- **Meta description:** California Roll at Jinbeh Lewisville: 250 cal, crab, avocado, cucumber. Fresh handmade sushi near I-35E. Dine in or takeout. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/california-roll
 - **OG title:** California Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32021,7 +32021,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/caterpillar-roll`
 
 - **Title:** Caterpillar Roll Lewisville | Eel Avocado Sushi | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Caterpillar Roll at Jinbeh Lewisville: Grilled eel, cucumber, avocado topping, sesame. Premium sushi near I-35E. Call (972) 221-3888.
+- **Meta description:** Caterpillar Roll at Jinbeh Lewisville: Grilled eel, cucumber, avocado topping, sesame. Premium sushi near I-35E. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/caterpillar-roll
 - **OG title:** Caterpillar Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32235,7 +32235,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/philly-roll`
 
 - **Title:** Philadelphia Roll Lewisville | Salmon Cream Cheese | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Philadelphia Roll at Jinbeh Lewisville: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near I-35E. Call (972) 221-3888.
+- **Meta description:** Philadelphia Roll at Jinbeh Lewisville: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near I-35E. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/philly-roll
 - **OG title:** Philadelphia Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32339,7 +32339,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/rainbow-roll`
 
 - **Title:** Rainbow Roll Lewisville | Assorted Sashimi Topping | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Rainbow Roll at Jinbeh Lewisville: California roll with salmon, tuna, yellowtail. Premium sushi near I-35E. Call (972) 221-3888.
+- **Meta description:** Rainbow Roll at Jinbeh Lewisville: California roll with salmon, tuna, yellowtail. Premium sushi near I-35E. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/rainbow-roll
 - **OG title:** Rainbow Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32446,7 +32446,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/shrimp-tempura-roll`
 
 - **Title:** Shrimp Tempura Roll Lewisville | Crispy Fried Shrimp | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Shrimp Tempura Roll at Jinbeh Lewisville: 450-500 cal, crispy tempura shrimp, avocado. Fresh made daily. Call (972) 221-3888.
+- **Meta description:** Shrimp Tempura Roll at Jinbeh Lewisville: 450-500 cal, crispy tempura shrimp, avocado. Fresh made daily. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/shrimp-tempura-roll
 - **OG title:** Shrimp Tempura Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32553,7 +32553,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/spicy-tuna-roll`
 
 - **Title:** Spicy Tuna Roll Lewisville | Fresh Tuna Spicy Mayo | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Spicy Tuna Roll at Jinbeh Lewisville: Fresh tuna, spicy mayo, 260-350 cal. Premium sushi near I-35E. Made fresh to order. Call (972) 221-3888.
+- **Meta description:** Spicy Tuna Roll at Jinbeh Lewisville: Fresh tuna, spicy mayo, 260-350 cal. Premium sushi near I-35E. Made fresh to order. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/spicy-tuna-roll
 - **OG title:** Spicy Tuna Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32660,7 +32660,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/spider-roll`
 
 - **Title:** Spider Roll Lewisville | Soft Shell Crab Sushi | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Spider Roll at Jinbeh Lewisville: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near I-35E. Call (972) 221-3888.
+- **Meta description:** Spider Roll at Jinbeh Lewisville: Tempura soft shell crab, cucumber, avocado, spicy mayo. Premium sushi near I-35E. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/spider-roll
 - **OG title:** Spider Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32767,7 +32767,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/tiger-roll`
 
 - **Title:** Tiger Roll Lewisville | Tempura Shrimp Spicy Tuna | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Tiger Roll at Jinbeh Lewisville: Tempura shrimp, spicy tuna, cucumber, avocado, sesame. Eel and spicy mayo drizzle. Call (972) 221-3888.
+- **Meta description:** Tiger Roll at Jinbeh Lewisville: Tempura shrimp, spicy tuna, cucumber, avocado, sesame. Eel and spicy mayo drizzle. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/tiger-roll
 - **OG title:** Tiger Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32871,7 +32871,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/vegas-roll`
 
 - **Title:** Vegas Roll Lewisville | Deep Fried Salmon Jalapeño | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Vegas Roll at Jinbeh Lewisville: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (972) 221-3888.
+- **Meta description:** Vegas Roll at Jinbeh Lewisville: Salmon, jalapeño, cream cheese, deep-fried, spicy mayo. Crispy fusion sushi. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/vegas-roll
 - **OG title:** Vegas Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -32975,7 +32975,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/volcano-roll`
 
 - **Title:** Volcano Roll Lewisville | Baked Spicy Seafood Lava | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Volcano Roll at Jinbeh Lewisville: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (972) 221-3888.
+- **Meta description:** Volcano Roll at Jinbeh Lewisville: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/volcano-roll
 - **OG title:** Volcano Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`
@@ -33082,7 +33082,7 @@ Also available at our Frisco location
 ## `/lewisville/sushi-rolls/yellowtail-jalapeno`
 
 - **Title:** Yellowtail Jalapeño Sushi Lewisville | Hamachi Roll | Jinbeh Japanese Restaurant – Since 1988
-- **Meta description:** Yellowtail Jalapeño at Jinbeh Lewisville: Fresh hamachi, jalapeño, ponzu sauce, scallions. Premium raw fish. Call (972) 221-3888.
+- **Meta description:** Yellowtail Jalapeño at Jinbeh Lewisville: Fresh hamachi, jalapeño, ponzu sauce, scallions. Premium raw fish. Call (214) 488-2224.
 - **Canonical:** https://jinbeh.com/lewisville/sushi-rolls/yellowtail-jalapeno
 - **OG title:** Yellowtail Jalapeño Roll | Jinbeh Lewisville
 - **OG image:** `https://jinbeh.com/images/photoshoot/specialty-roll.jpg`

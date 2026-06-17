@@ -45,7 +45,7 @@ const barSchema = {
   "name": "Jinbeh Japanese Restaurant - Bar & Drinks",
   "description": "Premium bar featuring sake, Japanese whisky, cocktails, and Japanese beer",
   "url": "https://jinbeh.com/bar",
-  "telephone": "+1-972-309-6688",
+  "telephone": "+1-214-619-1200",
   "servesCuisine": "Japanese",
   "hasMenu": "https://jinbeh.com/bar",
   "potentialAction": {

@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Volcano Roll Lewisville | Baked Spicy Seafood Lava",
-  description: "Volcano Roll at Jinbeh Lewisville: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (972) 221-3888.",
+  description: "Volcano Roll at Jinbeh Lewisville: Crab, avocado base, baked spicy crab and shrimp topping. Dramatic lava presentation. Call (214) 488-2224.",
   keywords: ["volcano roll lewisville","volcano roll sushi","baked sushi roll","hot sushi roll","specialty sushi lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Volcano Roll | Jinbeh Lewisville",
@@ -84,7 +84,7 @@ const faqSchema = {
       "name": "Can I order for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Volcano Roll is available for takeout and delivery. For the best hot presentation, we recommend dining in at our sushi bar. Call (972) 221-3888."
+        "text": "Yes! Volcano Roll is available for takeout and delivery. For the best hot presentation, we recommend dining in at our sushi bar. Call (214) 488-2224."
       }
     }
   ]

@@ -475,7 +475,7 @@ export default function BabyShowerPage() {
                 </h3>
                 <p className="text-sm text-charcoal/70 mt-2">Explore the best spots for hosting a memorable baby shower in DFW.</p>
               </Link>
-              <Link href="/blog/sushi-platters-near-me" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <Link href="/blog/sushi-platter-near-me" className="group block bg-warm-ivory rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <span className="text-sm text-accent-red font-medium uppercase tracking-wider">Catering</span>
                 <h3 className="font-heading text-lg font-semibold text-charcoal mt-2 group-hover:text-accent-red transition-colors">
                   Sushi Platters & Party Trays for Any Event

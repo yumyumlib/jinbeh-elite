@@ -30,7 +30,7 @@ const categories = {
       { slug: "best-salmon-sashimi", title: "Best Salmon Sashimi", image: "/images/food/SmokedSalmonCloseup.jpg", excerpt: "Where to find premium salmon sashimi in Frisco and Dallas." },
     ],
     faq: [
-      { q: "What is the best sushi restaurant in Frisco, TX?", a: "Jinbeh Japanese Restaurant has been serving fresh, handcrafted sushi in North Texas since 1988. Jinbeh Frisco is located near Stonebriar Centre, with a sushi bar featuring daily-fresh fish and signature rolls like the Samurai Roll." },
+      { q: "What is the best sushi restaurant in Frisco, TX?", a: "Jinbeh Japanese Restaurant has been serving fresh, handcrafted sushi in North Texas since 1988. Jinbeh Frisco is located near Stonebriar Centre, with a sushi bar featuring daily-fresh fish and signature rolls like the Sunrise Roll." },
       { q: "What types of sushi does Jinbeh serve?", a: "Jinbeh offers a full sushi menu including nigiri, sashimi, maki rolls, hand rolls (temaki), specialty rolls, and chef's omakase selections. Popular choices include our Spicy Tuna Roll, Rainbow Roll, and premium sashimi platters." },
       { q: "Is sushi at Jinbeh made fresh daily?", a: "Yes! Our sushi chefs prepare every roll to order using fish that is delivered fresh multiple times per week. We never use frozen pre-made sushi, quality and freshness are our top priorities." },
       { q: "Does Jinbeh offer sushi for takeout or delivery?", a: "Yes, sushi takeout is available at both our Frisco and Lewisville locations. You can also order delivery through Uber Eats or Grubhub." },
@@ -394,6 +394,18 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             ← Back to Blog
           </Link>
         </div>
+      {/* AI-assisted nutrition disclaimer */}
+      <div className="container mx-auto max-w-5xl px-4 my-8">
+        <div className="bg-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-5 text-sm text-charcoal/75">
+          <p>
+            <strong className="text-charcoal">Nutrition disclaimer:</strong>{" "}
+            Caloric, nutritional, and macronutrient values mentioned on this page are estimates
+            assisted by AI and should be treated as approximate guidance only. Actual values vary
+            by portion size, preparation method, ingredient batch, and chef discretion at Jinbeh
+            Frisco and Lewisville.
+          </p>
+        </div>
+      </div>
       </main>
     );
   }

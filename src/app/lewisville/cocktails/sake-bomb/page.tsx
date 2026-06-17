@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Sake Bomb Lewisville - Classic Japanese Beer Cocktail",
-  description: "Traditional sake bomb with cold Japanese beer at Jinbeh Lewisville. Best happy hour cocktails. Reserve at our Japanese restaurant (972) 221-3888.",
+  description: "Traditional sake bomb with cold Japanese beer at Jinbeh Lewisville. Best happy hour cocktails. Reserve at our Japanese restaurant (214) 488-2224.",
   keywords: ["sake bomb lewisville","sake bomb","japanese beer cocktail","group drinking ritual japanese","japanese cocktails lewisville","happy hour lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Sake Bomb | Jinbeh Lewisville",

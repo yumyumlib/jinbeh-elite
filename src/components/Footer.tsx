@@ -202,6 +202,9 @@ export default function Footer() {
                   Events & Parties
                 </h4>
                 <nav className="space-y-2.5 text-sm">
+                  <Link href="/world-cup-2026" className="block text-soft-gold hover:text-warm-ivory transition-colors font-semibold">
+                    World Cup 2026 Watch Parties
+                  </Link>
                   <Link href="/events" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     Private Dining Rooms
                   </Link>

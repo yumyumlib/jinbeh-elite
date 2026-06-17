@@ -31,8 +31,12 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
-# Create cache directory with proper permissions for nextjs user
-RUN mkdir -p .next/cache && chown -R nextjs:nodejs .next/cache
+# Give the runtime user write access to the whole .next tree (not just
+# .next/cache). Next.js writes runtime prerender/segment cache under
+# .next/server/app/.../*.segments; without this the server logs
+# "EACCES: permission denied, mkdir '/app/.next/server/...'" and ISR/
+# dynamic pages fail to update their cache. (Fixed 2026-05-31.)
+RUN mkdir -p .next/cache && chown -R nextjs:nodejs .next public
 
 USER nextjs
 

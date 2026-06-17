@@ -6,8 +6,10 @@ import Image from "next/image";
 import locations from "@/data/locations.json";
 
 export const metadata: Metadata = {
-  title:
-    "Happy Hour Specials | Jinbeh Japanese Restaurant - Frisco & Lewisville",
+  title: {
+    absolute:
+      "Happy Hour Specials | Jinbeh Japanese Restaurant - Frisco & Lewisville",
+  },
   description:
     "Jinbeh Happy Hour Specials: $4 Japanese draft beer, $5 small hot sake, $6 wine. Mon-Fri 5-6:30pm at our Frisco and Lewisville locations.",
   keywords: [
@@ -150,11 +152,63 @@ const drinkCategories = [
   },
 ];
 
+// FAQ Schema for Happy Hour
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "When is happy hour at Jinbeh?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM at both our Frisco and Lewisville locations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the happy hour drink specials at Jinbeh?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "During happy hour, enjoy $4 Japanese draft beer (including Sapporo, Asahi, and Kirin), $5 small hot sake served warm in a tokkuri, and $6 wine by the glass.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is happy hour available at both Jinbeh locations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, happy hour pricing and hours are the same at both Jinbeh Frisco (near Stonebriar Centre) and Jinbeh Lewisville (off I-35E).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a reservation for happy hour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Reservations are not required for happy hour, but we recommend them for peak times. You can reserve a table online or call your preferred location.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is happy hour available in the dining room or only at the bar?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Happy hour pricing is available in our bar and lounge area at both locations.",
+      },
+    },
+  ],
+};
+
 export default function HappyHourSpecialsPage() {
   return (
     <>
       <Header />
       <main id="main-content" className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
         {/* Hero */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-deep-indigo via-charcoal to-accent-red" />

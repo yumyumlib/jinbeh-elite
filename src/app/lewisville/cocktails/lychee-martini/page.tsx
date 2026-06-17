@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Lychee Martini - Best Japanese Cocktails Lewisville",
-  description: "Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Lewisville. Happy hour specials. Reserve today (972) 221-3888.",
+  description: "Premium lychee martini with vodka & floral notes. Handcrafted Japanese cocktails at Jinbeh Lewisville. Happy hour specials. Reserve today (214) 488-2224.",
   keywords: ["lychee martini lewisville","lychee martini","lychee sake","asian inspired cocktail","japanese cocktails lewisville","date night cocktails lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Lychee Martini | Jinbeh Lewisville",

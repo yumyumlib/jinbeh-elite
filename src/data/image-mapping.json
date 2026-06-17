@@ -34,7 +34,7 @@
         "/images/blog/21-C060324-6777.jpg",
         "/images/blog/22-C060324-6829.jpg",
         "/images/blog/23-C060324-6842.jpg",
-        "/images/food/SpicyTunaAndCaliforniaRollCloseups.png"
+        "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg"
       ],
       "video": [
         "/videos/carpacio salmon,madai,hamachi yellowtail video.mp4",
@@ -45,20 +45,20 @@
     "sake-drinks": {
       "hero": [
         "/images/drinks/cocktail.jpg",
-        "/images/drinks/JinbehPunchBeverageDrink.png",
+        "/images/drinks/JinbehPunchBeverageDrink.jpg",
         "/images/drinks/MangoTangoDrinks.png",
-        "/images/drinks/SpicyMargaritaBeverageDrink.png",
-        "/images/drinks/MuleSummerSignatureCocktail.png"
+        "/images/drinks/SpicyMargaritaBeverageDrink.jpg",
+        "/images/drinks/MuleSummerSignatureCocktail.jpg"
       ],
       "inline": [
         "/images/drinks/cocktail.jpg",
-        "/images/drinks/JinbehPunchBeverageDrink.png"
+        "/images/drinks/JinbehPunchBeverageDrink.jpg"
       ],
       "alt": "Japanese sake and signature cocktails at Jinbeh"
     },
     "celebrations": {
       "hero": [
-        "/images/celebrations/CelebrateYourBirthdayAtJinbeh.png",
+        "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
         "/images/celebrations/jinbeh_group.jpg",
         "/images/blog/24-C060324-6852.jpg",
         "/images/blog/25-C060324-6856.jpg",
@@ -77,7 +77,7 @@
     },
     "location": {
       "hero": [
-        "/images/exterior/JinbehFriscoStorefrontSign.png",
+        "/images/exterior/JinbehFriscoStorefrontSign.jpg",
         "/images/blog/1-C060324-6328.jpg",
         "/images/blog/2-C060324-6341.jpg",
         "/images/blog/13-C060324-6582.jpg",
@@ -92,8 +92,8 @@
     "food-general": {
       "hero": [
         "/images/food/jinbeh_bento_box.jpg",
-        "/images/food/Mochi.png",
-        "/images/food/ArchivedHappyHour_JinbehSpecials.png"
+        "/images/food/Mochi.jpg",
+        "/images/food/ArchivedHappyHour_JinbehSpecials.jpg"
       ],
       "inline": [
         "/images/food/jinbeh_bento_box.jpg"

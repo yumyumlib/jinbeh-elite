@@ -260,7 +260,7 @@ export default function FathersDayPage() {
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>
-                      Samurai Roll, signature roll
+                      Sunrise Roll, signature roll
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-white bg-accent-red/80 rounded-full w-5 h-5 flex items-center justify-center text-xs">★</span>

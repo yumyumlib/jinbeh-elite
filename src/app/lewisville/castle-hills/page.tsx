@@ -382,7 +382,7 @@ export default function CastleHillsPage() {
                 Make a Reservation
               </Link>
               <a
-                href="tel:9722216888"
+                href="tel:2144882224"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Call (214) 488-2224

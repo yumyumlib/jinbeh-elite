@@ -140,9 +140,9 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: "/images/food/SamaraiRollCloseup.jpg",
-    alt: "Samurai roll specialty sushi with fresh fish and avocado",
+    alt: "Sunrise roll specialty sushi with fresh fish and avocado",
     category: "Sushi & Rolls",
-    title: "Samurai Roll",
+    title: "Sunrise Roll",
   },
   {
     src: "/images/photoshoot/specialty-roll.jpg",
@@ -643,8 +643,8 @@ export default function GalleryPage() {
                   </p>
                   <p className="text-white/80 text-sm">
                     Off I-35E Near Vista Ridge<br />
-                    <a href="tel:+19725235432" className="hover:text-soft-gold transition-colors">
-                      (972) 523-5432
+                    <a href="tel:+12144882224" className="hover:text-soft-gold transition-colors">
+                      (214) 488-2224
                     </a>
                   </p>
                 </div>

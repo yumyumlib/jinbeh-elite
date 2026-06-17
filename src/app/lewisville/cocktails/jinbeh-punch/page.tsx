@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Jinbeh Punch Lewisville - Japanese Tropical Cocktails",
-  description: "Signature tropical cocktail at Jinbeh Lewisville. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (972) 221-3888.",
+  description: "Signature tropical cocktail at Jinbeh Lewisville. Handcrafted Japanese cocktails with fresh ingredients. Perfect for happy hour. Call (214) 488-2224.",
   keywords: ["jinbeh punch lewisville","house cocktail japanese restaurant","tropical cocktail lewisville","signature cocktail jinbeh","japanese cocktails lewisville","happy hour lewisville","jinbeh lewisville"],
   openGraph: {
     title: "Jinbeh Punch | Jinbeh Lewisville",

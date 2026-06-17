@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
@@ -111,7 +112,7 @@ const faqSchema = {
       "name": "What are sashimi prices at Jinbeh Lewisville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sashimi prices range from 14.95 to 32.95. See our full menu for complete pricing."
+        "text": "Pricing is listed on our current menu. Browse the full menu for details."
       }
     }
   ]
@@ -181,7 +182,7 @@ export default function SashimiLewisvillePage() {
                 Our Sashimi Selection
               </h2>
               <p className="text-charcoal/70 max-w-2xl mx-auto">
-                7 options ranging from 14.95 to 32.95
+                7 options
               </p>
             </div>
 
@@ -438,7 +439,7 @@ export default function SashimiLewisvillePage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Sashimi prices range from 14.95 to 32.95. See our full menu for complete pricing.
+Pricing is listed on our current menu. Browse the full menu for details.
                   </p>
                 </details>
               </div>
@@ -485,6 +486,9 @@ export default function SashimiLewisvillePage() {
             </div>
           </div>
         </section>
+
+        {/* Why Jinbeh — location + category SEO */}
+        <CategoryLocationSEO locationId="lewisville" category="sashimi" />
 
         {/* Cross-Location Link */}
         <section className="py-8 bg-charcoal text-white text-center">

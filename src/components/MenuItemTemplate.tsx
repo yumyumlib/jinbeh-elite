@@ -48,11 +48,48 @@ function getCategoryPath(category: MenuCategory): string {
     return category;
 }
 
+// Plain-language category noun for localized, SEO-friendly copy.
+function categoryNoun(category: MenuCategory): string {
+    switch (category) {
+        case 'hibachi':
+            return 'hibachi';
+        case 'sushi-rolls':
+            return 'sushi';
+        case 'sashimi':
+            return 'sashimi';
+        case 'appetizers':
+            return 'Japanese appetizers';
+        case 'cocktails':
+            return 'sake and cocktails';
+        default:
+            return 'Japanese food';
+    }
+}
+
+// Builds two location-specific paragraphs so the Frisco and Lewisville versions
+// of the same dish read as genuinely distinct pages (location, landmarks,
+// parking, grill type, nearby cities) instead of near-duplicates.
+function buildLocationCopy(item: MenuItem, location: LocationInfo): { para1: string; para2: string } {
+    const noun = categoryNoun(item.category);
+    const nearby = location.nearbyCities.slice(0, 3).join(', ');
+    const nearbyLast = location.nearbyCities[3] ? `, and ${location.nearbyCities[3]}` : '';
+
+    let para1 = `You'll find ${item.name} on the menu at Jinbeh ${location.displayName}, ${location.gettingThere}. We're at ${location.addressFormatted}, and ${location.parking.toLowerCase()} makes it easy to stop in for lunch or dinner.`;
+    if (item.category === 'hibachi') {
+        para1 += ` Our ${location.displayName} chefs cook every order on ${location.grill} hibachi grills, searing your ${item.name.toLowerCase()} tableside while the dinner-and-a-show unfolds right in front of you.`;
+    }
+
+    const para2 = `Jinbeh ${location.displayName} is a local favorite for ${noun} in ${location.city}, welcoming guests from ${nearby}${nearbyLast}. Whether you're near ${location.landmarks[0]} or making the trip for a celebration, ${item.name} pairs beautifully with the rest of our ${location.displayName} ${noun} menu. Reserve a table or order ${item.name} to go.`;
+
+    return { para1, para2 };
+}
+
 export default function MenuItemTemplate({ item, location }: MenuItemTemplateProps) {
     const otherLoc = location.otherLocation;
     const categoryPath = getCategoryPath(item.category);
     const categoryLabel = categoryLabels[item.category];
     const { jinbehStory, origin, nutritionHighlight, experienceNote } = item;
+    const locationCopy = buildLocationCopy(item, location);
 
     return (
         <main id="main-content" className="min-h-screen bg-warm-ivory">
@@ -109,6 +146,47 @@ export default function MenuItemTemplate({ item, location }: MenuItemTemplatePro
                                     {item.description}
                                 </p>
                                 <DietaryBadges dietary={item.dietary} />
+                            </div>
+                        </BlurFade>
+
+                        {/* Location-specific section — unique copy per location for local SEO */}
+                        <BlurFade delay={0.22}>
+                            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg border-l-4 border-soft-gold">
+                                <h2 className="text-2xl font-heading font-bold text-charcoal mb-4">
+                                    {item.name} at Jinbeh {location.displayName}
+                                </h2>
+                                <p className="text-charcoal/80 leading-relaxed mb-4">
+                                    {locationCopy.para1}
+                                </p>
+                                <p className="text-charcoal/80 leading-relaxed mb-6">
+                                    {locationCopy.para2}
+                                </p>
+                                <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+                                    <Link
+                                        href={`/${location.id}/${categoryPath}`}
+                                        className="text-deep-indigo hover:text-accent-red font-medium transition-colors"
+                                    >
+                                        View the {location.displayName} {categoryLabel} menu →
+                                    </Link>
+                                    <Link
+                                        href={`/${location.id}`}
+                                        className="text-deep-indigo hover:text-accent-red font-medium transition-colors"
+                                    >
+                                        Visit Jinbeh {location.displayName} →
+                                    </Link>
+                                    <Link
+                                        href={`/${location.id}/menu`}
+                                        className="text-deep-indigo hover:text-accent-red font-medium transition-colors"
+                                    >
+                                        Full {location.displayName} menu →
+                                    </Link>
+                                    <Link
+                                        href="/faq/is-frisco-or-lewisville-better"
+                                        className="text-deep-indigo hover:text-accent-red font-medium transition-colors"
+                                    >
+                                        Frisco or Lewisville? →
+                                    </Link>
+                                </div>
                             </div>
                         </BlurFade>
 

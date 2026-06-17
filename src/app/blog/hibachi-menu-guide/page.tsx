@@ -135,7 +135,7 @@ export default function HibachiMenuGuidePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What to Expect on a Hibachi Menu","acceptedAnswer":{"@type":"Answer","text":"A typical hibachi menu offers a variety of meats, seafood, and vegetables. The selection is designed to cater to a wide range of tastes and preferences, allowing diners to customize their meal to their liking. Guests can choose from options like steak, chicken, shrimp, and scallops, often accompanied by a range of vegetables such as zucchini, onions, and mushrooms. These ingredients are typically fresh and locally sourced, ensuring the highest quality and flavor."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What to Expect on a Hibachi Menu","acceptedAnswer":{"@type":"Answer","text":"A typical hibachi menu offers a variety of meats, seafood, and vegetables. The selection is designed to cater to a wide range of tastes and preferences, allowing diners to customize their meal to their liking. Guests can choose from options like steak, chicken, shrimp, and scallops, often accompanied by a range of vegetables such as zucchini, onions, and mushrooms. These ingredients are typically fresh and locally sourced, ensuring the highest quality and flavor."}}]}) }}
       />
       <script
           type="application/ld+json"
@@ -163,7 +163,7 @@ export default function HibachiMenuGuidePage() {
       </h1>
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
         <Image
-          src="/images/food/HibachiSteakChickenDinnerWithSide.jpg"
+          src="/images/food/HibachiComboNYStripAndColossalShrimp.jpg"
           alt="Jinbeh hibachi steak and chicken dinner"
           fill
           className="object-cover"
@@ -414,6 +414,18 @@ export default function HibachiMenuGuidePage() {
 
       <PillarCTA type="reservations" />
       <LocationCTA location="both" />
+      {/* AI-assisted nutrition disclaimer */}
+      <div className="container mx-auto max-w-5xl px-4 my-8">
+        <div className="bg-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-5 text-sm text-charcoal/75">
+          <p>
+            <strong className="text-charcoal">Nutrition disclaimer:</strong>{" "}
+            Caloric, nutritional, and macronutrient values mentioned on this page are estimates
+            assisted by AI and should be treated as approximate guidance only. Actual values vary
+            by portion size, preparation method, ingredient batch, and chef discretion at Jinbeh
+            Frisco and Lewisville.
+          </p>
+        </div>
+      </div>
 
       <RelatedArticles currentSlug="hibachi-menu-guide" />
 

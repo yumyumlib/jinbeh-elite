@@ -7,7 +7,7 @@ interface ContextualLink {
 }
 
 export const contextualLinkMap: Record<string, ContextualLink[]> = {
-    "/blog/what-is-hibachi": [
+    "/blog/hibachi-vs-teppanyaki-explained": [
         {
             text: "hibachi chefs in Frisco",
             href: "/frisco/hibachi",
@@ -32,7 +32,7 @@ export const contextualLinkMap: Record<string, ContextualLink[]> = {
     "/frisco/hibachi": [
         {
             text: "what hibachi really is",
-            href: "/blog/what-is-hibachi",
+            href: "/blog/hibachi-vs-teppanyaki-explained",
         },
         {
             text: "celebrate a birthday",
@@ -57,7 +57,7 @@ export const contextualLinkMap: Record<string, ContextualLink[]> = {
             href: "/reservations",
         },
     ],
-    "/blog/best-hibachi-dallas": [
+    "/blog/best-hibachi-dallas-tx": [
         {
             text: "birthday celebrations",
             href: "/celebrations/birthday",

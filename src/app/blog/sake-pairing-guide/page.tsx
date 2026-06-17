@@ -311,7 +311,7 @@ export default function SakePairingGuide() {
                     </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/beverages/SakeAndGlasses.webp"
+                src="/images/beverages/NigoriSparklingSake.webp"
                 alt="Premium sake selection and tasting glasses at Jinbeh"
                 fill
                 className="object-cover"

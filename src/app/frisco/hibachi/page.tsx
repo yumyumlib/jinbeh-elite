@@ -3,10 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: "Best Hibachi Restaurant in Frisco TX | Jinbeh Since 1988",
+  title: { absolute: "Best Hibachi Restaurant in Frisco TX | Jinbeh Since 1988" },
   description: "Jinbeh Frisco's hibachi menu features land and ocean teppanyaki entrées plus combo selections, served with soup, salad, steamed rice, shrimp appetizer, and hibachi vegetables. Tableside fire shows, onion volcano, and premium cuts near Stonebriar Centre. Family-owned since 1988.",
   keywords: ["hibachi frisco", "best hibachi frisco", "hibachi menu frisco", "jinbeh hibachi", "japanese hibachi frisco", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
@@ -623,6 +624,9 @@ export default function HibachiFriscoPage() {
             </div>
           </div>
         </section>
+
+        {/* Why Jinbeh — location + category SEO */}
+        <CategoryLocationSEO locationId="frisco" category="hibachi" />
 
         {/* Cross-Location Link */}
         <section className="py-8 bg-charcoal text-white text-center">

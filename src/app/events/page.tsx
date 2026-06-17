@@ -724,7 +724,7 @@ export default function EventsPage() {
                 { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Sushi bar selection" },
                 { src: "/images/interior/FriscoLocation_Bar_Front.jpg", alt: "Frisco restaurant interior" },
                 { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi shrimp and vegetables" },
-                { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll specialty sushi" },
+                { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Sunrise roll specialty sushi" },
               ].map((item, i) => (
                 <div key={i} className="relative aspect-square rounded-lg overflow-hidden group">
                   <Image

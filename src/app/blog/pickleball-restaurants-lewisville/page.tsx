@@ -180,7 +180,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville","acceptedAnswer":{"@type":"Answer","text":"There's something magical about combining physical activity with a great meal. Here's why this combo works so well:"}},{"@type":"Question","name":"Why The Picklr + Jinbeh Works","acceptedAnswer":{"@type":"Answer","text":"This isn't just proximity, it's synergy. Both businesses share values that make this pairing natural:"}},{"@type":"Question","name":"Other Things to Do Near Stemmons Freeway Lewisville","acceptedAnswer":{"@type":"Answer","text":"The 2450 S Stemmons Fwy area is becoming a hub for fun activities. Beyond pickleball and dining, you're also near:"}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Jinbeh is the #1 Restaurant Near Pickleball Courts in Lewisville","acceptedAnswer":{"@type":"Answer","text":"There's something magical about combining physical activity with a great meal. Here's why this combo works so well:"}},{"@type":"Question","name":"Why The Picklr + Jinbeh Works","acceptedAnswer":{"@type":"Answer","text":"This isn't just proximity, it's synergy. Both businesses share values that make this pairing natural:"}},{"@type":"Question","name":"Other Things to Do Near Stemmons Freeway Lewisville","acceptedAnswer":{"@type":"Answer","text":"The 2450 S Stemmons Fwy area is becoming a hub for fun activities. Beyond pickleball and dining, you're also near:"}}]}) }}
       />
       <script
           type="application/ld+json"
@@ -405,6 +405,18 @@ export default function PickleballRestaurantsLewisvillePage() {
           </a>
         </div>
       </div>
+      {/* AI-assisted nutrition disclaimer */}
+      <div className="container mx-auto max-w-5xl px-4 my-8">
+        <div className="bg-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-5 text-sm text-charcoal/75">
+          <p>
+            <strong className="text-charcoal">Nutrition disclaimer:</strong>{" "}
+            Caloric, nutritional, and macronutrient values mentioned on this page are estimates
+            assisted by AI and should be treated as approximate guidance only. Actual values vary
+            by portion size, preparation method, ingredient batch, and chef discretion at Jinbeh
+            Frisco and Lewisville.
+          </p>
+        </div>
+      </div>
 
       <RelatedArticles currentSlug={slug} />
 
@@ -419,7 +431,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       <div className="my-8 p-6 bg-warm-ivory rounded-xl border-l-4 border-accent-red">
         <p className="font-heading font-bold text-charcoal mb-3">📖 Related Reading</p>
         <div className="flex flex-col gap-2">
-          <Link href="/blog/japanese-restaurants-lewisville" className="text-accent-red hover:underline font-medium">Japanese Restaurants in Lewisville</Link>
+          <Link href="/blog/japanese-restaurants-lewisville-tx" className="text-accent-red hover:underline font-medium">Japanese Restaurants in Lewisville</Link>
           <Link href="/blog/seafood-lewisville" className="text-accent-red hover:underline font-medium">Best Seafood in Lewisville</Link>
         </div>
       </div>

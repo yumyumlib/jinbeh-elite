@@ -181,7 +181,7 @@ export default function AppetizersFriscoPage() {
                 Our Appetizers Selection
               </h2>
               <p className="text-charcoal/70 max-w-2xl mx-auto">
-                6 options ranging from 5.95 to 16.95
+                6 options
               </p>
             </div>
 
@@ -438,7 +438,7 @@ export default function AppetizersFriscoPage() {
                     </span>
                   </summary>
                   <p className="mt-4 text-charcoal/70 leading-relaxed">
-                    Appetizers prices range from 5.95 to 16.95. See our full menu for complete pricing.
+Pricing is listed on our current menu. Browse the full menu for details.
                   </p>
                 </details>
               </div>

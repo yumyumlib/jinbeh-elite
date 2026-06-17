@@ -7,7 +7,7 @@ import { getMenuItem, locations } from "@/data/menu-items";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Philadelphia Roll Lewisville | Salmon Cream Cheese",
-  description: "Philadelphia Roll at Jinbeh Lewisville: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near I-35E. Call (972) 221-3888.",
+  description: "Philadelphia Roll at Jinbeh Lewisville: 273 cal, smoked salmon, cream cheese, cucumber. Premium sushi near I-35E. Call (214) 488-2224.",
   keywords: ["philadelphia roll lewisville","philly roll sushi","smoked salmon cream cheese roll","salmon sushi roll","sushi rolls lewisville","sushi near me lewisville","best sushi lewisville tx"],
   openGraph: {
     title: "Philadelphia Roll | Jinbeh Lewisville",
@@ -84,7 +84,7 @@ const faqSchema = {
       "name": "Can I order Philadelphia Roll for takeout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (972) 221-3888 to order."
+        "text": "Yes! Philadelphia Roll is available for takeout and delivery. For the freshest experience, we recommend dining in at our sushi bar. Call (214) 488-2224 to order."
       }
     }
   ]
@@ -104,6 +104,18 @@ export default function PhillyRollLewisvillePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(menuItemSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <MenuItemTemplate item={item} location={location} />
+      </div>
+      {/* AI-assisted nutrition disclaimer */}
+      <div className="container mx-auto max-w-5xl px-4 my-8">
+        <div className="bg-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-5 text-sm text-charcoal/75">
+          <p>
+            <strong className="text-charcoal">Nutrition disclaimer:</strong>{" "}
+            Caloric, nutritional, and macronutrient values mentioned on this page are estimates
+            assisted by AI and should be treated as approximate guidance only. Actual values vary
+            by portion size, preparation method, ingredient batch, and chef discretion at Jinbeh
+            Frisco and Lewisville.
+          </p>
+        </div>
       </div>
       <Footer />
     </>

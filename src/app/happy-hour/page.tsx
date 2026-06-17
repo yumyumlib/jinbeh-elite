@@ -141,13 +141,28 @@ const eventSchema = {
   "name": "Jinbeh Happy Hour: $4 Beer, $5 Hot Sake, $6 Wine",
   "description": "Jinbeh Happy Hour runs Monday through Friday from 5:00 PM to 6:30 PM. $4 Japanese draft beer, $5 small hot sake, and $6 wine at both Frisco and Lewisville locations.",
   "url": "https://jinbeh.com/happy-hour",
+  "image": "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
+  "startDate": "2026-05-19T17:00:00-05:00",
+  "endDate": "2026-12-31T18:30:00-06:00",
+  "performer": {
+    "@type": "Organization",
+    "name": "Jinbeh Japanese Restaurant",
+    "url": "https://jinbeh.com"
+  },
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "isAccessibleForFree": true,
+  "eventSchedule": {
+    "@type": "Schedule",
+    "byDay": ["https://schema.org/Monday", "https://schema.org/Tuesday", "https://schema.org/Wednesday", "https://schema.org/Thursday", "https://schema.org/Friday"],
+    "startTime": "17:00",
+    "endTime": "18:30",
+    "scheduleTimezone": "America/Chicago"
+  },
   "offers": [
-    { "@type": "Offer", "name": "Japanese Draft Beer", "price": "4.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-    { "@type": "Offer", "name": "Small Hot Sake", "price": "5.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-    { "@type": "Offer", "name": "Wine", "price": "6.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+    { "@type": "Offer", "name": "Japanese Draft Beer", "price": "4.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://jinbeh.com/happy-hour", "validFrom": "2026-01-01T00:00:00-06:00" },
+    { "@type": "Offer", "name": "Small Hot Sake", "price": "5.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://jinbeh.com/happy-hour", "validFrom": "2026-01-01T00:00:00-06:00" },
+    { "@type": "Offer", "name": "Wine", "price": "6.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://jinbeh.com/happy-hour", "validFrom": "2026-01-01T00:00:00-06:00" }
   ],
   "location": [
     {

@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
 import { Noto_Serif_JP, Source_Sans_3 } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { OrganizationSchema, WebSiteSchema, LocalBusinessSchemaFrisco, LocalBusinessSchemaLewisville, MenuSchema } from "@/components/schema/AllSchemas";
 import SmartStickyCTA from "@/components/SmartStickyCTA";
+import AttributionCapture from "@/components/AttributionCapture";
+
+// Google Ads conversion tracking. Set in Google Ads account 278-359-1446.
+// Override via NEXT_PUBLIC_GOOGLE_ADS_ID on the VPS if it ever changes.
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18150861653";
+const GTAG_ENABLED = !!GOOGLE_ADS_ID && GOOGLE_ADS_ID.startsWith("AW-");
+
+// GA4 measurement ID — property created May 30, 2026, account: yumyumjinbeh@gmail.com
+// Linked to Google Ads for cross-device tracking, audience signals, enhanced conversions.
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || "G-8ZW7KHER0C";
+const GA4_ENABLED = !!GA4_ID && GA4_ID.startsWith("G-");
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
@@ -163,8 +175,35 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        {/* Capture Google Click ID + UTM params on every page mount.
+            Persists to localStorage 90 days. Surfaces via @/lib/attribution
+            for downstream consumers like OpenTableWidget. */}
+        <AttributionCapture />
         {children}
         <SmartStickyCTA />
+
+        {/* Google Tag (gtag.js) — Google Ads conversion tracking.
+            Only renders when NEXT_PUBLIC_GOOGLE_ADS_ID is set to a real AW-XXX id.
+            Conversion events fire via window.gtag() — see src/lib/gtag.ts. */}
+        {GTAG_ENABLED && (
+          <>
+            <Script
+              id="google-tag-loader"
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+            />
+            <Script id="google-tag-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = window.gtag || gtag;
+                gtag('js', new Date());
+                gtag('config', '${GOOGLE_ADS_ID}');
+                ${GA4_ENABLED ? `gtag('config', '${GA4_ID}');` : ""}
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

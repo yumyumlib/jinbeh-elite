@@ -9,7 +9,7 @@ import locations from "@/data/locations.json";
 const location = locations.locations.lewisville;
 
 export const metadata: Metadata = {
-  title: "Best Sushi in Lewisville TX | Jinbeh Japanese Restaurant",
+  title: { absolute: "Best Sushi in Lewisville TX | Jinbeh Japanese Restaurant" },
   description: "Premium sushi bar at Jinbeh Lewisville, fresh nigiri, sashimi, signature rolls, and chef-crafted specialties. Hand-cut daily near Vista Ridge Mall. Family-owned since 1988.",
   keywords: [
     "sushi lewisville",
@@ -80,7 +80,7 @@ const faqSchema = {
       name: "What kinds of sushi does Jinbeh Lewisville offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Lewisville offers a full sushi menu including nigiri, sashimi, classic and specialty rolls like the Dragon Roll, Rainbow Roll, Spider Roll, and the house Samurai Roll, plus seasonal premium fish such as bluefin tuna and yellowtail.",
+        text: "Jinbeh Lewisville offers a full sushi menu including nigiri, sashimi, classic and specialty rolls like the Dragon Roll, Rainbow Roll, Spider Roll, and the house Sunrise Roll, plus seasonal premium fish such as bluefin tuna and yellowtail.",
       },
     },
     {
@@ -132,7 +132,7 @@ export default function LewisvilleSushiPage() {
           <div className="absolute inset-0 opacity-15">
             <Image
               src="/images/photoshoot/sushi-tower.jpg"
-              alt=""
+              alt="Jinbeh Lewisville premium sushi bar with hand-cut nigiri, sashimi, and signature rolls"
               fill
               className="object-cover"
               sizes="100vw"
@@ -278,7 +278,7 @@ export default function LewisvilleSushiPage() {
                     Sushi Rolls
                   </h3>
                   <p className="text-charcoal/70 text-sm">
-                    Dragon Roll, Rainbow Roll, Samurai Roll, and house specialties.
+                    Dragon Roll, Rainbow Roll, Sunrise Roll, and house specialties.
                   </p>
                   <span className="inline-block mt-3 text-accent-red font-semibold text-sm">
                     View Sushi Rolls &rarr;

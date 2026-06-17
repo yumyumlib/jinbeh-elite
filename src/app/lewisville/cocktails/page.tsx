@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
@@ -455,6 +456,9 @@ export default function CocktailsLewisvillePage() {
             </div>
           </div>
         </section>
+
+        {/* Why Jinbeh — location + category SEO */}
+        <CategoryLocationSEO locationId="lewisville" category="cocktails" />
 
         {/* Cross-Location Link */}
         <section className="py-8 bg-charcoal text-white text-center">

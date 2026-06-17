@@ -832,7 +832,7 @@ export default function ThanksgivingDiningGuide() {
                                                 </div>
                                             </Link>
 
-                                            <Link href="/blog/best-hibachi-dallas" className="flex gap-4 group">
+                                            <Link href="/blog/best-hibachi-dallas-tx" className="flex gap-4 group">
                                                 <div className="flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden bg-warm-ivory flex items-center justify-center text-2xl">
                                                     🔥
                                                 </div>

@@ -4,7 +4,7 @@
 
 'use client';
 
-import Image from 'next/image';
+import RespImage from "@/components/RespImage";
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -82,7 +82,7 @@ export default function JinbehExperience() {
           <div className="relative">
             <div className="aspect-[4/3] relative rounded-3xl overflow-hidden shadow-2xl border-4 border-soft-gold/40 transform hover:scale-[1.02] transition-transform duration-500">
               {reasons.map((reason, index) => (
-                <Image
+                <RespImage
                   key={index}
                   src={reason.image}
                   alt={reason.imageAlt}
@@ -134,13 +134,13 @@ export default function JinbehExperience() {
           {reasons.map((reason, index) => (
             <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border-2 border-white/20 hover:border-soft-gold/40 transition-all">
               <div className="aspect-[16/9] relative">
-                <Image
+                <RespImage
                   src={reason.image}
                   alt={reason.imageAlt}
                   fill
                   className="object-cover"
                   sizes="100vw"
-                loading="lazy" />
+                />
                 {/* Gradient overlay for text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
                 {/* Label badge */}

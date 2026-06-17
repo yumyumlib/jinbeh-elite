@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { fireConversion } from "@/lib/gtag";
 
 export type LocationKey = "frisco" | "lewisville";
 
@@ -155,6 +156,7 @@ export default function LocationPicker({
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
+                      fireConversion("reservation");
                       handleSelect(key);
                       onClose();
                     }}
@@ -180,6 +182,7 @@ export default function LocationPicker({
                   <a
                     href={loc.phoneTel}
                     onClick={() => {
+                      fireConversion("phone_call");
                       handleSelect(key);
                       onClose();
                     }}
@@ -208,6 +211,7 @@ export default function LocationPicker({
                   <a
                     href={loc.phoneTel}
                     onClick={() => {
+                      fireConversion("phone_call");
                       handleSelect(key);
                       onClose();
                     }}
@@ -235,6 +239,7 @@ export default function LocationPicker({
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
+                      fireConversion("reservation");
                       handleSelect(key);
                       onClose();
                     }}

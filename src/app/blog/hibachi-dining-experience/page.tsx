@@ -119,7 +119,7 @@ export default function HibachiDiningExperiencePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh for Your Hibachi Experience","acceptedAnswer":{"@type":"Answer","text":"When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. Jinbeh has been serving families and celebrations since 1988, with locations in Frisco and Lewisville today. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our sushi varieties and sushi for beginners options."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Choose Jinbeh for Your Hibachi Experience","acceptedAnswer":{"@type":"Answer","text":"When it comes to hibachi dining in North Texas, Jinbeh Japanese Restaurant stands out as a premier destination. Jinbeh has been serving families and celebrations since 1988, with locations in Frisco and Lewisville today. Our commitment to authentic Japanese cuisine, skilled chefs, and creating memorable experiences makes us a favorite among hibachi enthusiasts. Beyond hibachi, explore our sushi varieties and sushi for beginners options."}}]}) }}
       />
       <script
           type="application/ld+json"

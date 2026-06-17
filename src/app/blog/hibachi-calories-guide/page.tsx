@@ -163,7 +163,7 @@ export default function HibachiCaloriesGuidePage() {
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Cooking Can Be Healthy","acceptedAnswer":{"@type":"Answer","text":"Unlike many restaurant preparation methods that rely on oil, butter, or heavy creams, hibachi cooking has several nutritional advantages:"}},{"@type":"Question","name":"Ingredients Are Visible","acceptedAnswer":{"@type":"Answer","text":"Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications, less sauce, extra vegetables, specific protein preferences."}},{"@type":"Question","name":"Sides, Sides, & Sides: Where Calories Add Up","acceptedAnswer":{"@type":"Answer","text":"Your protein choice significantly impacts meal calories, but sides can make even bigger differences. Here's what you need to know:"}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Hibachi Cooking Can Be Healthy","acceptedAnswer":{"@type":"Answer","text":"Unlike many restaurant preparation methods that rely on oil, butter, or heavy creams, hibachi cooking has several nutritional advantages:"}},{"@type":"Question","name":"Ingredients Are Visible","acceptedAnswer":{"@type":"Answer","text":"Unlike a hidden kitchen, your hibachi chef cooks right in front of you. You see every ingredient that goes into your meal. This transparency makes it easy to request modifications, less sauce, extra vegetables, specific protein preferences."}},{"@type":"Question","name":"Sides, Sides, & Sides: Where Calories Add Up","acceptedAnswer":{"@type":"Answer","text":"Your protein choice significantly impacts meal calories, but sides can make even bigger differences. Here's what you need to know:"}}]}) }}
       />
       <script
           type="application/ld+json"
@@ -777,6 +777,18 @@ uide
 
       <PillarCTA type="reservations" />
       <LocationCTA location="both" />
+    {/* AI-assisted nutrition disclaimer */}
+    <div className="container mx-auto max-w-5xl px-4 my-8">
+      <div className="bg-warm-ivory border-l-4 border-soft-gold rounded-r-2xl p-5 text-sm text-charcoal/75">
+        <p>
+          <strong className="text-charcoal">Nutrition disclaimer:</strong>{" "}
+          Caloric, nutritional, and macronutrient values mentioned on this page are estimates
+          assisted by AI and should be treated as approximate guidance only. Actual values vary
+          by portion size, preparation method, ingredient batch, and chef discretion at Jinbeh
+          Frisco and Lewisville.
+        </p>
+      </div>
+    </div>
     </ArticleLayout>
   );
 }

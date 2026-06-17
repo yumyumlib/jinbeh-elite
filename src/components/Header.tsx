@@ -6,6 +6,8 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import locationsData from "@/data/locations.json";
 import { getNavItems } from "@/data/navigation";
+import { fireConversion, fireConversionAndOpen } from "@/lib/gtag";
+import { buildAttributionQuery } from "@/lib/attribution";
 
 interface HeaderProps {
   location?: "frisco" | "lewisville";
@@ -118,12 +120,16 @@ export default function Header({ location }: HeaderProps) {
 
   const loc = selectedLocation;
 
-  // Handle reservation click - opens OpenTable for the correct location
+  // Handle reservation click - fires Google Ads conversion via event_callback,
+  // then opens OpenTable. The event_callback pattern prevents the new-tab
+  // navigation from cancelling the in-flight conversion ping (Safari/iOS) —
+  // see gtag.ts > fireConversionAndOpen for full explanation.
   const handleReserveClick = useCallback((targetLocation: "frisco" | "lewisville") => {
     const rid = locationsData.locations[targetLocation].reservation.rid;
-    const openTableUrl = `https://www.opentable.com/booking/restref/availability?rid=${rid}&lang=en-US`;
-    window.open(openTableUrl, '_blank', 'noopener,noreferrer');
+    const baseUrl = `https://www.opentable.com/booking/restref/availability?rid=${rid}&lang=en-US&ref=jinbeh-website&restref_origin=jinbeh-${targetLocation}`;
+    const openTableUrl = baseUrl + buildAttributionQuery("&");
     setShowReserveModal(false);
+    fireConversionAndOpen("reservation", openTableUrl, true);
   }, []);
 
   const navItems = getNavItems(loc);
@@ -226,6 +232,7 @@ export default function Header({ location }: HeaderProps) {
               {location ? (
                 <a
                   href={location === "lewisville" ? "tel:2144882224" : "tel:2146191200"}
+                  onClick={() => fireConversion("phone_call")}
                   className="inline-flex items-center gap-1.5 px-3 py-2 text-white hover:text-soft-gold transition-colors text-sm font-medium [text-shadow:_0_1px_3px_rgb(0_0_0_/_60%)]"
                   aria-label={`Call Jinbeh ${location === "lewisville" ? "Lewisville" : "Frisco"}`}
                 >
@@ -486,7 +493,7 @@ export default function Header({ location }: HeaderProps) {
                   <a
                     href="tel:2146191200"
                     className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 transition-all text-sm"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => { fireConversion("phone_call"); setMobileMenuOpen(false); }}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -496,7 +503,7 @@ export default function Header({ location }: HeaderProps) {
                   <a
                     href="tel:2144882224"
                     className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 transition-all text-sm"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => { fireConversion("phone_call"); setMobileMenuOpen(false); }}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -511,7 +518,11 @@ export default function Header({ location }: HeaderProps) {
                     href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setMobileMenuOpen(false);
+                      fireConversionAndOpen("reservation", e.currentTarget.href, true);
+                    }}
                     className="flex-1 btn-shimmer bg-accent-red text-white py-2.5 rounded-lg font-bold text-sm text-center shadow-lg relative overflow-hidden"
                   >
                     <svg className="w-4 h-4 inline-block mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -523,7 +534,11 @@ export default function Header({ location }: HeaderProps) {
                     href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setMobileMenuOpen(false);
+                      fireConversionAndOpen("reservation", e.currentTarget.href, true);
+                    }}
                     className="flex-1 btn-shimmer bg-deep-indigo text-white py-2.5 rounded-lg font-bold text-sm text-center shadow-lg relative overflow-hidden"
                   >
                     <svg className="w-4 h-4 inline-block mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -757,7 +772,7 @@ export default function Header({ location }: HeaderProps) {
             >
 
               <div className="p-2">
-                <a href="tel:2146191200" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => setActiveDropdown(null)}>
+                <a href="tel:2146191200" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => { fireConversion("phone_call"); setActiveDropdown(null); }}>
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
                     <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                   </span>
@@ -766,7 +781,7 @@ export default function Header({ location }: HeaderProps) {
                     <span className="block text-xs text-charcoal/60">(214) 619-1200</span>
                   </div>
                 </a>
-                <a href="tel:2144882224" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => setActiveDropdown(null)}>
+                <a href="tel:2144882224" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group" onClick={() => { fireConversion("phone_call"); setActiveDropdown(null); }}>
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
                     <svg className="w-4 h-4 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                   </span>
@@ -793,7 +808,11 @@ export default function Header({ location }: HeaderProps) {
                   href={`https://www.opentable.com/booking/restref/availability?rid=${locationsData.locations.frisco.reservation.rid}&lang=en-US`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setActiveDropdown(null)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveDropdown(null);
+                    fireConversionAndOpen("reservation", e.currentTarget.href, true);
+                  }}
                   className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
                 >
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
@@ -808,7 +827,11 @@ export default function Header({ location }: HeaderProps) {
                   href={`https://www.opentable.com/booking/restref/availability?rid=${locationsData.locations.lewisville.reservation.rid}&lang=en-US`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setActiveDropdown(null)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveDropdown(null);
+                    fireConversionAndOpen("reservation", e.currentTarget.href, true);
+                  }}
                   className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-warm-ivory transition-colors group text-left"
                 >
                   <span className="w-8 h-8 rounded-full bg-accent-red/10 flex items-center justify-center flex-shrink-0">
@@ -875,7 +898,11 @@ export default function Header({ location }: HeaderProps) {
                 href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setShowReserveModal(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowReserveModal(false);
+                  fireConversionAndOpen("reservation", e.currentTarget.href, true);
+                }}
                 className="w-full group flex items-center gap-4 p-5 bg-warm-ivory hover:bg-accent-red hover:text-white rounded-xl border-2 border-stone-200 hover:border-accent-red transition-all duration-200"
               >
                 <div className="w-12 h-12 rounded-full bg-accent-red/10 group-hover:bg-white/20 flex items-center justify-center flex-shrink-0 transition-colors">
@@ -894,7 +921,11 @@ export default function Header({ location }: HeaderProps) {
                 href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setShowReserveModal(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowReserveModal(false);
+                  fireConversionAndOpen("reservation", e.currentTarget.href, true);
+                }}
                 className="w-full group flex items-center gap-4 p-5 bg-warm-ivory hover:bg-deep-indigo hover:text-white rounded-xl border-2 border-stone-200 hover:border-deep-indigo transition-all duration-200"
               >
                 <div className="w-12 h-12 rounded-full bg-deep-indigo/10 group-hover:bg-white/20 flex items-center justify-center flex-shrink-0 transition-colors">

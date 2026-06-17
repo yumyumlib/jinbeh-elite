@@ -73,13 +73,18 @@ export async function POST(request: Request) {
             const pool = getPool();
             await pool.query(
                 `INSERT INTO vip_signups (first_name, last_name, email, location, birthday_mmdd, source, consent, utm_source, utm_medium, utm_campaign)
- VALUES (,,,,,,,,, )
+ VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)
  ON CONFLICT (email) DO UPDATE SET
  first_name = EXCLUDED.first_name,
  last_name = EXCLUDED.last_name,
  location = EXCLUDED.location,
  birthday_mmdd = EXCLUDED.birthday_mmdd,
- timestamp = NOW`,
+ source = EXCLUDED.source,
+ consent = EXCLUDED.consent,
+ utm_source = EXCLUDED.utm_source,
+ utm_medium = EXCLUDED.utm_medium,
+ utm_campaign = EXCLUDED.utm_campaign,
+ timestamp = NOW()`,
                 [
                     String(body.first_name).trim(),
                     String(body.last_name).trim(),

@@ -9,7 +9,7 @@ import locations from "@/data/locations.json";
 const location = locations.locations.frisco;
 
 export const metadata: Metadata = {
-  title: "Best Sushi in Frisco TX | Jinbeh Sushi Bar Since 1988",
+  title: { absolute: "Best Sushi in Frisco TX | Jinbeh Sushi Bar Since 1988" },
   description: "Premium sushi bar at Jinbeh Frisco, fresh nigiri, sashimi, signature rolls, and chef-crafted specialties. Hand-cut daily near Stonebriar Centre. Family-owned since 1988.",
   keywords: [
     "sushi frisco",
@@ -80,7 +80,7 @@ const faqSchema = {
       name: "What kinds of sushi does Jinbeh Frisco offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Frisco offers a full sushi menu including nigiri (single-piece sushi), sashimi (sliced raw fish), classic and specialty rolls like the Dragon Roll, Rainbow Roll, Spider Roll, and the house Samurai Roll, plus seasonal premium fish such as bluefin tuna and yellowtail.",
+        text: "Jinbeh Frisco offers a full sushi menu including nigiri (single-piece sushi), sashimi (sliced raw fish), classic and specialty rolls like the Dragon Roll, Rainbow Roll, Spider Roll, and the house Sunrise Roll, plus seasonal premium fish such as bluefin tuna and yellowtail.",
       },
     },
     {
@@ -132,7 +132,7 @@ export default function FriscoSushiPage() {
           <div className="absolute inset-0 opacity-15">
             <Image
               src="/images/frisco/JinbehFrisco_SushiBar.jpg"
-              alt=""
+              alt="Jinbeh Frisco premium sushi bar with chef-crafted nigiri and signature rolls"
               fill
               className="object-cover"
               sizes="100vw"
@@ -278,7 +278,7 @@ export default function FriscoSushiPage() {
                     Sushi Rolls
                   </h3>
                   <p className="text-charcoal/70 text-sm">
-                    Dragon Roll, Rainbow Roll, Samurai Roll, and house specialties.
+                    Dragon Roll, Rainbow Roll, Sunrise Roll, and house specialties.
                   </p>
                   <span className="inline-block mt-3 text-accent-red font-semibold text-sm">
                     View Sushi Rolls &rarr;

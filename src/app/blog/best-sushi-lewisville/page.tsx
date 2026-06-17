@@ -421,6 +421,54 @@ export default function BestSushiLewisvillePage() {
                                     celebration. Thank you for dining with us.
                                 </p>
 
+                                <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+                                    🏆 What Sets Jinbeh Lewisville Sushi Apart
+                                </h2>
+
+                                <p className="mb-6">
+                                    Lewisville has more sushi options than most realize. Here is
+                                    why Jinbeh keeps earning OpenTable Diners&apos; Choice and a
+                                    4.7-star rating from 427 reviewers.
+                                </p>
+
+                                <ul className="list-disc pl-6 space-y-3 text-charcoal/80 mb-8">
+                                    <li>
+                                        <strong>A genuine family story, not a chain concept.</strong>{" "}
+                                        Founder Ben Matsuda chose the name &ldquo;Jinbeh&rdquo;
+                                        &mdash; a common Japanese farmer&apos;s surname in the
+                                        feudal period &mdash; for the values it stood for:
+                                        humility, honesty, hard work. The founding family still
+                                        owns and operates both Lewisville and Frisco today.
+                                    </li>
+                                    <li>
+                                        <strong>Signature specialty rolls.</strong> The Lobster
+                                        Volcano Roll and Spider Roll are house favorites. Our
+                                        tempura-shrimp-with-cream-cheese roll is finished with
+                                        spicy tuna, spicy mayo, and eel sauce. California rolls
+                                        come wrapped in soy paper with fresh salmon, tuna, and
+                                        crabmeat with colorful wasabi sauce work on the plate.
+                                    </li>
+                                    <li>
+                                        <strong>&ldquo;Hands down the freshest sushi I have ever
+                                        had.&rdquo;</strong> That review is on Tripadvisor. Fish
+                                        is delivered multiple times a week and prepared to order
+                                        &mdash; not pre-made, not frozen.
+                                    </li>
+                                    <li>
+                                        <strong>Rated 4.2&ndash;4.8 everywhere it counts.</strong>{" "}
+                                        OpenTable, Yelp, Tripadvisor, and Google all rate Jinbeh
+                                        Lewisville in the same elite range, with 427+ OpenTable
+                                        diner reviews. Consistency is the truest signal.
+                                    </li>
+                                    <li>
+                                        <strong>Where families come back for decades.</strong>{" "}
+                                        Some of our Lewisville regulars have been celebrating
+                                        birthdays at the same hibachi or sushi bar table for
+                                        20+ years. The staff knows kids&apos; names. The chefs
+                                        remember favorite orders. That is what 38 years builds.
+                                    </li>
+                                </ul>
+
                                 <PillarCTA type="reservations" />
                                 <LocationCTA location="lewisville" />
                             </div>

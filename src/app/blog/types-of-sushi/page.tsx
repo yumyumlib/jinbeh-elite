@@ -181,7 +181,7 @@ export default function TypesOfSushi() {
                 </div>
 
               <p className="text-charcoal/80 text-sm mt-6">
-                See also: <Link href="/blog/sushi-platters-near-me" className="text-accent-red hover:underline">sushi platters near me</Link>
+                See also: <Link href="/blog/sushi-platter-near-me" className="text-accent-red hover:underline">sushi platters near me</Link>
               </p>
 </section>
 

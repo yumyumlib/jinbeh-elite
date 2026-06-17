@@ -106,12 +106,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
-      // Legacy FAQ pages (individual PAA pages not served in current build)
-      {
-        source: "/faq/:slug",
-        destination: "/faq",
-        permanent: false, // 302 — will switch to 301 once /faq/[slug] pages are live
-      },
+      // PAA FAQ pages are now live at /faq/[slug] — the holding redirect was removed May 30, 2026
+      // (Previous version routed /faq/:slug → /faq while PAA pages were being built)
 
       // Legacy PDF menus → new menu pages (specific rules BEFORE catch-all)
       {
@@ -196,6 +192,52 @@ const nextConfig: NextConfig = {
       {
         source: "/blog/best-hibachi-dallas",
         destination: "/blog/best-hibachi-dallas-tx",
+        permanent: true,
+      },
+
+      // Legacy / 404 cleanup (May 31 2026) — URLs Google reported under
+      // "Not found (404)" that should resolve to a relevant live page
+      // instead of returning 404.
+      {
+        source: "/blog/types-of-sushi-rolls",
+        destination: "/blog/types-of-sushi",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-hibachi",
+        destination: "/blog/hibachi-vs-teppanyaki-explained",
+        permanent: true,
+      },
+      {
+        source: "/lewisville.htm",
+        destination: "/lewisville",
+        permanent: true,
+      },
+      {
+        source: "/frisco.htm",
+        destination: "/frisco",
+        permanent: true,
+      },
+
+      // World Cup 2026 — alias slugs route to canonical pillar
+      {
+        source: "/world-cup",
+        destination: "/world-cup-2026",
+        permanent: true,
+      },
+      {
+        source: "/fifa-2026",
+        destination: "/world-cup-2026",
+        permanent: true,
+      },
+      {
+        source: "/samurai-blue",
+        destination: "/world-cup-2026",
+        permanent: true,
+      },
+      {
+        source: "/japan-world-cup",
+        destination: "/world-cup-2026",
         permanent: true,
       },
     ];

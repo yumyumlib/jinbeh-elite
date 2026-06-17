@@ -67,7 +67,7 @@ function generateImageSitemap(): string {
       pageUrl: `${baseUrl}/frisco`,
       images: [
         {
-          loc: `${baseUrl}/images/exterior/JinbehFriscoStorefrontSign.png`,
+          loc: `${baseUrl}/images/exterior/JinbehFriscoStorefrontSign.jpg`,
           caption: 'Jinbeh Japanese Restaurant storefront in Frisco TX',
           title: 'Jinbeh Frisco TX Location - Storefront',
         },
@@ -135,7 +135,7 @@ function generateImageSitemap(): string {
       pageUrl: `${baseUrl}/celebrations`,
       images: [
         {
-          loc: `${baseUrl}/images/celebrations/CelebrateYourBirthdayAtJinbeh.png`,
+          loc: `${baseUrl}/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg`,
           caption: 'Birthday celebration at Jinbeh Japanese Restaurant',
           title: 'Jinbeh Birthday Celebrations - Party Venue',
         },

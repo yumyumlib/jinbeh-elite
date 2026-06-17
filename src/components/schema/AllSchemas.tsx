@@ -214,9 +214,9 @@ export function MenuSchema() {
         name: "Hibachi Entrees",
         description: "Teppanyaki-grilled entrees prepared tableside",
         hasMenuItem: [
-          { "@type": "MenuItem", name: "Hibachi Filet Mignon", description: "Premium center-cut filet with seasonal vegetables and fried rice", offers: { "@type": "Offer", price: "34.95", priceCurrency: "USD" } },
-          { "@type": "MenuItem", name: "Hibachi Shrimp", description: "Jumbo shrimp grilled to perfection with hibachi vegetables", offers: { "@type": "Offer", price: "26.95", priceCurrency: "USD" } },
-          { "@type": "MenuItem", name: "Hibachi Chicken", description: "Tender chicken breast with signature hibachi seasonings", offers: { "@type": "Offer", price: "22.95", priceCurrency: "USD" } },
+          { "@type": "MenuItem", name: "Hibachi Filet Mignon", description: "Premium center-cut filet with seasonal vegetables and fried rice" },
+          { "@type": "MenuItem", name: "Hibachi Shrimp", description: "Jumbo shrimp grilled to perfection with hibachi vegetables" },
+          { "@type": "MenuItem", name: "Hibachi Chicken", description: "Tender chicken breast with signature hibachi seasonings" },
         ],
       },
       {
@@ -224,9 +224,9 @@ export function MenuSchema() {
         name: "Sushi Rolls",
         description: "Fresh, hand-crafted sushi rolls",
         hasMenuItem: [
-          { "@type": "MenuItem", name: "Dragon Roll", description: "Eel and cucumber topped with avocado and eel sauce", offers: { "@type": "Offer", price: "16.95", priceCurrency: "USD" } },
-          { "@type": "MenuItem", name: "Rainbow Roll", description: "California roll topped with assorted sashimi", offers: { "@type": "Offer", price: "18.95", priceCurrency: "USD" } },
-          { "@type": "MenuItem", name: "Spicy Tuna Roll", description: "Fresh tuna with spicy mayo and green onion", offers: { "@type": "Offer", price: "12.95", priceCurrency: "USD" } },
+          { "@type": "MenuItem", name: "Dragon Roll", description: "Eel and cucumber topped with avocado and eel sauce" },
+          { "@type": "MenuItem", name: "Rainbow Roll", description: "California roll topped with assorted sashimi" },
+          { "@type": "MenuItem", name: "Spicy Tuna Roll", description: "Fresh tuna with spicy mayo and green onion" },
         ],
       },
     ],

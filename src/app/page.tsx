@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import Image from "next/image";
+import RespImage from "@/components/RespImage";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NumberTicker from "@/components/ui/number-ticker";
@@ -15,10 +15,22 @@ import HeroSection from "@/components/HeroSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jinbeh Japanese Restaurant | Hibachi & Sushi Since 1988 | Frisco & Lewisville",
-  description: "DFW's premier Japanese restaurant since 1988. Hibachi shows, fresh sushi, premium sake, and unforgettable dining in Frisco and Lewisville, TX.",
+  title: "Jinbeh Hibachi & Sushi | Since 1988 | Frisco & Lewisville TX",
+  description: "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake in Frisco (near Stonebriar) and Lewisville (off I-35E). Reserve tonight.",
   alternates: {
     canonical: "https://jinbeh.com",
+  },
+  openGraph: {
+    title: "Jinbeh Hibachi & Sushi | Since 1988 | Frisco & Lewisville TX",
+    description: "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake in Frisco and Lewisville, TX.",
+    url: "https://jinbeh.com",
+    type: "website",
+    siteName: "Jinbeh Japanese Restaurant",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jinbeh Hibachi & Sushi | Frisco & Lewisville TX",
+    description: "Dinner and a show since 1988. Authentic hibachi, hand-crafted sushi, premium sake.",
   },
 };
 
@@ -67,7 +79,7 @@ const faqSchema = {
       "name": "What is hibachi dining?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hibachi dining is a Japanese-style cooking experience where skilled chefs prepare your meal on a large iron griddle right at your table. At Jinbeh, our chefs entertain with knife tricks, the famous onion volcano, and precision cooking techniques."
+        "text": "Jinbeh's hibachi experience is Japanese-style tableside cooking on a large iron griddle, where our chefs perform knife tricks, the famous onion volcano, and precision searing on every protein right in front of you. It's dinner and a show, all in one seat."
       }
     },
     {
@@ -75,7 +87,7 @@ const faqSchema = {
       "name": "Do I need a reservation at Jinbeh?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "While walk-ins are welcome, we highly recommend reservations, especially for dinner, weekends, and special occasions. You can reserve online through our website or by calling our Frisco location at (214) 619-1200 or Lewisville at (214) 488-2224."
+        "text": "Jinbeh welcomes walk-ins year-round, but we strongly recommend reservations for dinner, weekends, and special occasions. Reserve online through OpenTable, or call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224 to lock in your hibachi table."
       }
     },
     {
@@ -83,7 +95,7 @@ const faqSchema = {
       "name": "Does Jinbeh offer sushi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! Jinbeh features a full sushi bar with fresh fish flown in regularly. We offer traditional nigiri, sashimi, and creative specialty rolls like our Dragon Roll and Rainbow Roll."
+        "text": "Jinbeh features a full sushi bar at both Frisco and Lewisville locations, with fresh fish delivered multiple times weekly. Our sushi chefs hand-craft nigiri, sashimi, classic rolls, and signature specialty rolls — including the Sunrise Roll, Volcano Roll, Dragon Roll, and Ahi Tower. Nothing is pre-made."
       }
     },
     {
@@ -91,7 +103,7 @@ const faqSchema = {
       "name": "Is Jinbeh good for birthday celebrations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Jinbeh is perfect for birthdays and special celebrations. Our hibachi chefs make every celebration memorable with tableside entertainment, and we can accommodate groups of all sizes."
+        "text": "Jinbeh is one of DFW's most-loved birthday-dinner restaurants — our hibachi chefs put on tableside fire shows with the famous onion volcano, making birthdays memorable for kids and adults alike. Hibachi tables seat 7-8 guests, perfect for groups."
       }
     },
     {
@@ -99,7 +111,47 @@ const faqSchema = {
       "name": "Where are Jinbeh locations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jinbeh has two convenient locations in the DFW area: Frisco (2693 Preston Rd Suite 1040, near Stonebriar Centre) and Lewisville (2440 S Stemmons Fwy #A, easy access from I-35E)."
+        "text": "Jinbeh has two DFW locations: Frisco at 2693 Preston Rd Suite 1040 (near Stonebriar Centre, phone 214-619-1200) and Lewisville at 2440 S Stemmons Fwy #A (off I-35E near Vista Ridge Mall, phone 214-488-2224). Both serve the same hibachi and sushi menu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long has Jinbeh been open?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh has been serving Frisco and Lewisville since 1988 — over 38 years of family-owned hibachi and sushi. Many of our guests have celebrated birthdays here every year since childhood; one regular has celebrated at Jinbeh every birthday since she was 7."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh offer catering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh offers off-site hibachi catering across the DFW Metroplex — weddings, corporate events, birthday parties, and private gatherings. Our team brings the full teppanyaki tableside experience to your location. Contact us for a custom quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh have happy hour?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh runs happy hour Monday through Friday from 5pm to 6:30pm at both Frisco and Lewisville locations — $4 draft beers, $5 sake, and $6 wine. Happy hour drinks are bar-area only and don't apply to dinner tables."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Jinbeh Frisco and Jinbeh Lewisville?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh Frisco is our flagship location near Stonebriar Centre, with a premium sushi bar and gas-fired hibachi grills. Jinbeh Lewisville is our local-favorite location off I-35E, with electric hibachi grills, a lively bar, and an upscale sushi presentation. Same menu, same family ownership since 1988, two distinct atmospheres."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jinbeh have gluten-free or allergy-friendly options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jinbeh offers gluten-free soy sauce on request and our hibachi chefs can adapt most dishes for common allergies including gluten, dairy, peanut, tree nut, and shellfish. Please notify your server or chef of any allergies before ordering — we accommodate diners daily."
       }
     }
   ]
@@ -157,7 +209,7 @@ export default function HomePage() {
               {/* Hibachi */}
               <ScrollReveal delay={0}>
                 <Link href="/frisco/hibachi" className="group block relative aspect-[3/4] rounded-2xl overflow-hidden">
-                  <Image
+                  <RespImage
                     src="/images/hq/cooking-on-grill.jpg"
                     alt="Hibachi chef grilling premium proteins and vegetables at Jinbeh teppanyaki table"
                     fill
@@ -179,7 +231,7 @@ export default function HomePage() {
               {/* Sushi & Rolls */}
               <ScrollReveal delay={100}>
                 <Link href="/frisco/sushi-rolls" className="group block relative aspect-[3/4] rounded-2xl overflow-hidden">
-                  <Image
+                  <RespImage
                     src="/images/hq/sushi-rolls-2026.jpg"
                     alt="Artfully plated sushi rolls and nigiri at Jinbeh Japanese Restaurant"
                     fill
@@ -201,7 +253,7 @@ export default function HomePage() {
               {/* Sashimi & Omakase */}
               <ScrollReveal delay={200}>
                 <Link href="/frisco/sashimi" className="group block relative aspect-[3/4] rounded-2xl overflow-hidden">
-                  <Image
+                  <RespImage
                     src="/images/hq/lewisville-sushi-1.jpg"
                     alt="Premium sashimi and omakase selection at Jinbeh"
                     fill
@@ -223,7 +275,7 @@ export default function HomePage() {
               {/* Bar & Cocktails */}
               <ScrollReveal delay={300}>
                 <Link href="/frisco/cocktails" className="group block relative aspect-[3/4] rounded-2xl overflow-hidden">
-                  <Image
+                  <RespImage
                     src="/images/hq/jinbeh-cocktail.jpg"
                     alt="Craft cocktail and Japanese whiskey selection at Jinbeh bar"
                     fill
@@ -367,42 +419,36 @@ export default function HomePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-5 max-w-6xl mx-auto">
               {/* Row 1 */}
               <ScrollReveal delay={0} className="gallery-item col-span-2 aspect-[16/10] rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/lobster-spread-overhead.jpg"
                   alt="Lobster hibachi feast with chicken, steak, tofu, fried rice, tempura and edamame spread at Jinbeh Japanese Restaurant"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Lobster Hibachi Feast</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={100} className="gallery-item aspect-[3/4] rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/tuna-tower-bar-bokeh.jpg"
                   alt="Spicy tuna tower with avocado, tobiko caviar, and sushi rice at the Jinbeh bar"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Spicy Tuna Tower</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={150} className="gallery-item aspect-[3/4] rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/sushi-roll-portrait.jpg"
                   alt="Signature specialty roll with salmon, jalapeño, tobiko at Jinbeh Japanese Restaurant"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Signature Roll</span>
@@ -411,42 +457,36 @@ export default function HomePage() {
 
               {/* Row 2 */}
               <ScrollReveal delay={200} className="gallery-item aspect-square rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/avocado-sunflower.jpg"
                   alt="Artistic avocado sunflower sushi presentation with eel sauce at Jinbeh"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Avocado Sunflower</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={250} className="gallery-item aspect-square rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/crab-pinwheel-roll.jpg"
                   alt="Crab pinwheel roll with tempura shrimp and eel sauce at Jinbeh"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Crab Pinwheel</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={300} className="gallery-item col-span-2 aspect-[16/10] rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/sushi-feast-flatlay.jpg"
                   alt="Sushi and sashimi feast flat-lay with nigiri, specialty rolls, and guests enjoying with chopsticks at Jinbeh"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>The Full Jinbeh Experience</span>
@@ -455,56 +495,48 @@ export default function HomePage() {
 
               {/* Row 3 — Bonus accent images */}
               <ScrollReveal delay={350} className="gallery-item aspect-square rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/fried-roll-bar-ambiance.jpg"
                   alt="Deep-fried specialty roll with spicy mayo and eel sauce at Jinbeh sushi bar"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Bar-Side Bites</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={400} className="gallery-item aspect-square rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/specialty-roll-closeup.jpg"
                   alt="Rainbow specialty sushi roll with spicy mayo drizzle at Jinbeh Japanese Restaurant"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Specialty Roll</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={450} className="gallery-item aspect-square rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/hibachi-steak-plate.jpg"
                   alt="Hibachi steak with fried rice, grilled vegetables, and dipping sauces at Jinbeh"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Hibachi Steak</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={500} className="gallery-item aspect-square rounded-2xl">
-                <Image
+                <RespImage
                   src="/images/instagram/salmon-roll-closeup.jpg"
                   alt="Fresh salmon topped specialty roll with jalapeño and tobiko at Jinbeh"
                   fill
-                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  quality={75}
                 />
                 <div className="gallery-caption">
                   <span>Salmon Roll</span>
@@ -576,14 +608,12 @@ export default function HomePage() {
               <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
                 {/* Group photo background */}
                 <div className="relative h-64 md:h-72">
-                  <Image
+                  <RespImage
                     src="/images/celebrations/jinbeh_group.jpg"
                     alt="Group of friends enjoying hibachi dining experience at Jinbeh"
                     fill
-                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, 800px"
                     className="object-cover"
-                    quality={75}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
 
@@ -649,13 +679,12 @@ export default function HomePage() {
                 { src: '/images/instagram/mochi-desserts.jpg', alt: 'Mochi ice cream desserts at Jinbeh' },
  ].map((img, i) => (
  <a key={i} href="https://instagram.com/JinbehFrisco" target="_blank" rel="noopener noreferrer" className="relative w-[240px] h-[240px] mx-2 rounded-xl overflow-hidden group flex-shrink-0 block" aria-label={`View ${img.alt} on Instagram`}>
- <Image
+ <RespImage
  src={img.src}
  alt={img.alt}
  fill
  className="object-cover group-hover:scale-110 transition-transform duration-500"
  sizes="240px"
- loading="lazy"
  />
  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
  <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24">
@@ -836,7 +865,7 @@ export default function HomePage() {
                       ))}
                     </div>
                     <blockquote className="text-charcoal/80 mb-6 leading-relaxed">
-                      &ldquo;Literally my favorite sushi place, I would go to say favorite restaurant in general, of all time! Highly recommend the Summer Bliss Breeze and the Samurai Roll.&rdquo;
+                      &ldquo;Literally my favorite sushi place, I would go to say favorite restaurant in general, of all time! Highly recommend the Summer Bliss Breeze and the Sunrise Roll.&rdquo;
                     </blockquote>
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-accent-red/10 flex items-center justify-center">
@@ -1103,13 +1132,12 @@ export default function HomePage() {
                 <div className="group bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-soft-gold/40 transition-all duration-500 h-full flex flex-col">
                   {/* Location Image */}
                   <div className="aspect-[16/10] relative overflow-hidden">
-                    <Image
+                    <RespImage
                       src="/images/frisco/FriscoLocation_Bar_Front.jpg"
                       alt="Jinbeh Frisco interior - warm wooden bar with pendant lighting and authentic Japanese ambiance near Stonebriar Centre"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      quality={75}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent" />
                     <div className="absolute bottom-6 left-6 right-6">
@@ -1195,13 +1223,12 @@ export default function HomePage() {
                 <div className="group bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-soft-gold/40 transition-all duration-500 h-full flex flex-col">
                   {/* Location Image */}
                   <div className="aspect-[16/10] relative overflow-hidden">
-                    <Image
+                    <RespImage
                       src="/images/interior/bar.jpg"
                       alt="Jinbeh Lewisville bar area with premium spirits, wine glasses, and Japanese-inspired decor near Vista Ridge Mall"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      quality={75}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent" />
                     <div className="absolute bottom-6 left-6 right-6">

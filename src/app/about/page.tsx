@@ -531,7 +531,7 @@ export default function AboutPage() {
             <div className="max-w-[100vw] overflow-hidden">
               <Marquee className="[--duration:60s] py-4" pauseOnHover>
                 {[
-                  { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll specialty sushi with fresh fish and avocado" },
+                  { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Sunrise roll specialty sushi with fresh fish and avocado" },
                   { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Hibachi grilled shrimp with vegetables and fried rice" },
                   { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi selection and Japanese desserts at the bar" },
                   { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi combo with NY strip steak and colossal shrimp" },

@@ -7,8 +7,8 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
     title: "Popular Japanese Beverages: Iconic Drinks Guide | Jinbeh",
-    description: "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and canned coffee. Explore iconic drinks reflecting tradition and innovation.",
-    keywords: ["japanese beverages", "sake", "matcha", "ramune", "canned coffee", "japanese drinks", "shochu", "Japanese tea", "Japanese spirits"],
+    description: "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and Japanese whisky. Explore iconic drinks reflecting tradition and innovation.",
+    keywords: ["japanese beverages", "sake", "matcha", "ramune", "japanese whisky", "japanese drinks", "shochu", "Japanese tea", "Japanese spirits"],
     openGraph: {
         title: "Popular Japanese Beverages: Complete Drinks Guide",
         description: "Explore iconic Japanese beverages and their cultural significance. From traditional sake to modern Ramune.",
@@ -23,12 +23,13 @@ const schemas = [
     { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Beverages: Iconic Drinks Guide", datePublished: "2026-01-24", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/LewisvilleBar.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-            { "@type": "Question", name: "What are the most popular Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Japan's most beloved beverages include matcha tea, sake, shochu, ramune soda, calpis, pocari sweat, canned coffee, and various bottled teas. Each reflects Japan's dedication to quality, tradition, and innovation." } },
+            { "@type": "Question", name: "What are the most popular Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Japan's most beloved beverages include matcha tea, sake, shochu, Japanese whisky, ramune soda, calpis, pocari sweat, and various bottled teas. Each reflects Japan's dedication to quality, tradition, and innovation." } },
             { "@type": "Question", name: "What is matcha and how is it different from regular green tea?", acceptedAnswer: { "@type": "Answer", text: "Matcha is finely ground green tea powder used in traditional tea ceremonies for centuries. Unlike steeped tea, you consume the whole leaf, providing more nutrients and a rich, umami flavor." } },
             { "@type": "Question", name: "Where can I find authentic Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Asian markets, specialty tea shops, and regular grocers carry Japanese beverages. Jinbeh Japanese Restaurant offers traditional drinks like sake, matcha, and Japanese whisky at their Frisco and Lewisville locations." } },
             { "@type": "Question", name: "Is sake an everyday drink in Japan?", acceptedAnswer: { "@type": "Answer", text: "Sake is traditionally served for celebrations, but in modern Japan it is enjoyed casually like wine. Jinbeh pairs premium sake with Japanese cuisine." } },
             { "@type": "Question", name: "What are the health benefits of matcha?", acceptedAnswer: { "@type": "Answer", text: "Matcha is rich in antioxidants, provides sustained energy without caffeine jitters, supports metabolism, and contains L-theanine promoting calm focus." } },
-            { "@type": "Question", name: "Does Jinbeh serve traditional Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers premium sake, matcha, Japanese whisky, and authentic Japanese cocktails at both Frisco and Lewisville locations. Visit during happy hour for special pricing." } }
+            { "@type": "Question", name: "Does Jinbeh serve traditional Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Yes. Jinbeh offers premium sake, matcha, Japanese whisky, and authentic Japanese cocktails at both Frisco and Lewisville locations. Visit during happy hour for special pricing." } },
+            { "@type": "Question", name: "Does Jinbeh serve coffee?", acceptedAnswer: { "@type": "Answer", text: "No, Jinbeh does not serve coffee. Our bar program focuses on premium sake, Japanese whisky (Yamazaki, Hibiki, Toki, Hakushu, Nikka), signature Japanese-influenced cocktails including the espresso martini, beer, wine, and authentic Japanese non-alcoholic options like matcha and Ramune." } }
         ]
     }
 ];
@@ -48,7 +49,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "Popular Japanese Beverages: Iconic Drinks Guide",
-  "description": "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and canned coffee. Explore iconic drinks reflecting tradition and innovation.",
+  "description": "Discover Japan's most popular beverages from matcha tea and sake to Ramune soda and Japanese whisky. Explore iconic drinks reflecting tradition and innovation.",
   "step": [
     {
       "@type": "HowToStep",
@@ -119,7 +120,7 @@ export default function JapaneseBeveragesGuide() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🍵 Traditional Tea & Spirits</h2>
 
                             <DidYouKnow
-                                fact="Japan has over 5.5 million vending machines, the highest density in the world, serving everything from hot matcha and canned coffee to fresh sake. The Japanese beverage market is worth billion annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
+                                fact="Japan has over 5.5 million vending machines, the highest density in the world, serving everything from hot matcha and bottled tea to fresh sake. The Japanese beverage market is worth billions annually, with tea accounting for nearly 40% of all packaged drink sales. The country's 1,400+ sake breweries produce over 10,000 distinct varieties."
                                 source="Japan Vending Machine Manufacturers Association"
                             />
                             <p className="text-charcoal/80 mb-4">Japan's tea culture is deeply rooted in history, with beverages that have been perfected over centuries. These drinks offer refreshment, wellness benefits, and cultural significance.</p>
@@ -151,7 +152,7 @@ export default function JapaneseBeveragesGuide() {
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">🥃 Japanese Whisky</td><td className="p-3">Alcoholic</td><td className="p-3">40–45%</td><td className="p-3">After dinner, neat or highball</td></tr>
                                     <tr className="border-b"><td className="p-3 font-semibold">🍵 Matcha</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">Morning energy, tea ceremony</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">🌹 Ramune</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">Summer refreshment, nostalgia</td></tr>
-                                    <tr><td className="p-3 font-semibold">☕ Canned Coffee</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">On-the-go, convenience</td></tr>
+                                    <tr><td className="p-3 font-semibold">🍵 Bottled Tea</td><td className="p-3">Non-alcoholic</td><td className="p-3">0%</td><td className="p-3">Everyday hydration, with meals</td></tr>
                                 </tbody>
                             </table>
 
@@ -164,7 +165,7 @@ export default function JapaneseBeveragesGuide() {
                                     <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🍹 <Link href="/blog/ramune-soda-guide" className="text-accent-red hover:underline">Ramune</Link></td><td className="p-3">Carbonated Soda</td><td className="p-3">Playful glass marble bottle, nostalgic summer treat</td></tr>
                                     <tr className="border-b"><td className="p-3 font-semibold">🥛 Calpis</td><td className="p-3">Cultured Drink</td><td className="p-3">Tangy yogurt-like flavor, refreshing and accessible</td></tr>
                                     <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">💪 Pocari Sweat</td><td className="p-3">Sports Drink</td><td className="p-3">Electrolyte replenishment for athletes and activity</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">☕ Canned Coffee</td><td className="p-3">Coffee</td><td className="p-3">Premium quality, various styles from black to creamy</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">🍵 Royal Milk Tea</td><td className="p-3">Milk Tea</td><td className="p-3">Black tea and milk blend, comforting warmth</td></tr>
                                     <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">🍵 Oolong Tea</td><td className="p-3">Tea</td><td className="p-3">Balanced smooth flavor, perfect with meals</td></tr>
                                     <tr><td className="p-3 font-semibold">🍈 Melon Soda</td><td className="p-3">Soda</td><td className="p-3">Sweet, fizzy nostalgia, often served as float</td></tr>
                                 </tbody>
@@ -175,10 +176,10 @@ export default function JapaneseBeveragesGuide() {
 
                             <div className="grid md:grid-cols-2 gap-4 my-6">
                                 {[
-                                    { emoji: "☕", name: "Canned Coffee", desc: "Perfected the art of on-the-go coffee with premium blends and convenient vending machine accessibility." },
                                     { emoji: "🍵", name: "Royal Milk Tea", desc: "Luxurious black tea and milk blend offering comforting warmth in convenient bottled form." },
                                     { emoji: "🌾", name: "Genmaicha", desc: "Unique blend of green tea with roasted rice creating nutty, comforting flavor profile." },
-                                    { emoji: "🧊", name: "Bottled Teas", desc: "Year-round selection of quality teas from traditional matcha to modern blends." }
+                                    { emoji: "🧊", name: "Bottled Teas", desc: "Year-round selection of quality teas from traditional matcha to modern blends." },
+                                    { emoji: "🥃", name: "Japanese Whisky", desc: "World-class whisky from distilleries like Yamazaki and Hibiki, balanced and refined." }
                                 ].map(x => (
                                     <div key={x.name} className="bg-warm-ivory rounded-xl p-5">
                                         <span className="text-3xl block mb-2">{x.emoji}</span>
@@ -192,7 +193,7 @@ export default function JapaneseBeveragesGuide() {
                             <div className="grid md:grid-cols-2 gap-4 my-6 bg-warm-ivory rounded-xl p-6">
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-2">✨ Quality Commitment</h3>
-                                    <p className="text-sm text-charcoal/70">Each beverage reflects meticulous attention to ingredients, preparation, and presentation, whether it's a 1000-year-old sake or modern canned coffee.</p>
+                                    <p className="text-sm text-charcoal/70">Each beverage reflects meticulous attention to ingredients, preparation, and presentation, whether it's a 1000-year-old sake or a modern Japanese whisky highball.</p>
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-charcoal mb-2">🔄 Tradition & Innovation</h3>
@@ -214,7 +215,8 @@ export default function JapaneseBeveragesGuide() {
                                     { q: "Where can I find authentic Japanese beverages?", a: "Asian markets, specialty tea shops, and regular grocers carry Japanese beverages. Jinbeh offers traditional drinks like sake and matcha as part of our dining experience. Call Frisco (214) 619-1200 or Lewisville (214) 488-2224 for our fresh and flavorful selections!" },
                                     { q: "Is sake an everyday drink in Japan?", a: "Sake is traditionally served for celebrations. In modern Japan, it's enjoyed casually like wine in other countries. It's a celebration! Jinbeh pairs premium sake with exquisite cuisine." },
                                     { q: "What are the health benefits of matcha?", a: "Matcha is rich in antioxidants, provides sustained energy without caffeine jitters, supports metabolism, and contains L-theanine promoting calm focus. It's nutrient-dense! Welcome to the table, experience authentic matcha at Jinbeh." },
-                                    { q: "Does Jinbeh serve traditional Japanese beverages?", a: "Absolutely! We treat every guest like family. Jinbeh offers premium sake, matcha, and authentic Japanese drinks. Our Frisco and Lewisville locations provide gracious hospitality with every sip. It's a celebration of tradition!" }
+                                    { q: "Does Jinbeh serve traditional Japanese beverages?", a: "Absolutely! We treat every guest like family. Jinbeh offers premium sake, matcha, and authentic Japanese drinks. Our Frisco and Lewisville locations provide gracious hospitality with every sip. It's a celebration of tradition!" },
+                                    { q: "Does Jinbeh serve coffee?", a: "No, Jinbeh does not serve coffee. Our bar program focuses on premium sake, Japanese whisky (Yamazaki, Hibiki, Toki, Hakushu, Nikka), signature Japanese-influenced cocktails including the espresso martini, beer, wine, and authentic Japanese non-alcoholic options like matcha and Ramune. The espresso martini is a popular pick for guests who want the rich roasted flavor of coffee in cocktail form." }
                                 ].map((f, i) => (
                                     <details key={i} className="group bg-warm-ivory rounded-xl">
                                         <summary className="p-5 cursor-pointer font-semibold flex justify-between">{f.q}<span className="text-accent-red group-open:rotate-180">▼</span></summary>

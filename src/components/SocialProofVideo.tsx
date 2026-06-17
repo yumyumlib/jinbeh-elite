@@ -100,6 +100,11 @@ export default function SocialProofVideo({
     ? `PT${Math.round(durationSeconds)}S`
     : undefined;
 
+  // Ensure uploadDate includes timezone (GSC requires it)
+  const uploadDateWithTz = uploadDate
+    ? (uploadDate.includes("T") ? uploadDate : `${uploadDate}T00:00:00-05:00`)
+    : undefined;
+
   const videoSchema = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
@@ -108,7 +113,7 @@ export default function SocialProofVideo({
     thumbnailUrl: `https://jinbeh.com${poster}`,
     contentUrl: `https://jinbeh.com/${basePath}.mp4`,
     embedUrl: contentUrl,
-    uploadDate,
+    uploadDate: uploadDateWithTz,
     duration: isoDuration,
     publisher: {
       "@type": "Organization",

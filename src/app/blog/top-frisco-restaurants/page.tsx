@@ -467,6 +467,125 @@ export default function TopFriscoRestaurants() {
                                     </div>
                                 </div>
 
+                                <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+                                    🗺️ How Jinbeh Compares in the Frisco Japanese Restaurant Landscape
+                                </h2>
+
+                                <p className="mb-4">
+                                    Frisco has a deeper Japanese restaurant scene than it gets
+                                    credit for &mdash; from omakase counters to fast-casual
+                                    teppanyaki. Here is how reviewers position Jinbeh against the
+                                    most-mentioned alternatives in DFW:
+                                </p>
+
+                                <div className="overflow-x-auto my-6">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead>
+                                            <tr className="border-b-2 border-charcoal/20">
+                                                <th className="py-3 pr-4 font-heading font-semibold text-charcoal">Restaurant</th>
+                                                <th className="py-3 pr-4 font-heading font-semibold text-charcoal">Strength</th>
+                                                <th className="py-3 font-heading font-semibold text-charcoal">Best For</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="text-charcoal/80">
+                                            <tr className="border-b border-charcoal/10 bg-soft-gold/10">
+                                                <td className="py-3 pr-4 font-semibold">Jinbeh</td>
+                                                <td className="py-3 pr-4">Hibachi entertainment + sushi variety, family ownership since 1988</td>
+                                                <td className="py-3">Families, birthdays, groups</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Hachi Sushi &amp; Omakase</td>
+                                                <td className="py-3 pr-4">High-end sushi craftsmanship</td>
+                                                <td className="py-3">Date nights, sushi purists</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Koto Hibachi &amp; Sushi</td>
+                                                <td className="py-3 pr-4">Casual BYOB hibachi</td>
+                                                <td className="py-3">Budget-friendly outings</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Musume at The Star</td>
+                                                <td className="py-3 pr-4">Trendy upscale Japanese dining</td>
+                                                <td className="py-3">Business dinners, nightlife</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Pepper Lunch</td>
+                                                <td className="py-3 pr-4">Fast-casual teppanyaki</td>
+                                                <td className="py-3">Quick weekday meals</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p className="mb-6">
+                                    The shorthand: Jinbeh is{" "}
+                                    <strong>more exciting than a standard sushi spot, more
+                                    affordable than high-end omakase, and more polished than the
+                                    typical chain hibachi restaurant.</strong> That middle ground
+                                    is exactly why repeat customers and lifelong regulars keep
+                                    coming back &mdash; whether for a kid&apos;s seventh birthday
+                                    or a 30th anniversary.
+                                </p>
+
+                                <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+                                    🏆 Why Jinbeh Belongs on Every Frisco &ldquo;Top&rdquo; List
+                                </h2>
+
+                                <p className="mb-6">
+                                    Frisco has new restaurants opening every month. Here is what
+                                    has kept Jinbeh on the &ldquo;best of Frisco&rdquo; list for
+                                    nearly four decades.
+                                </p>
+
+                                <ul className="list-disc pl-6 space-y-3 text-charcoal/80 mb-8">
+                                    <li>
+                                        <strong>One of the longest-running Japanese restaurants
+                                        in all of DFW.</strong> Jinbeh has been delivering dinner
+                                        and a show since 1988 &mdash; 38 years and counting. That
+                                        kind of staying power doesn&apos;t happen by accident.
+                                    </li>
+                                    <li>
+                                        <strong>A name chosen for its values.</strong> Founder Ben
+                                        Matsuda named the restaurant after a common Japanese
+                                        farmer&apos;s surname from the feudal period &mdash; chosen
+                                        to symbolize humility, honesty, and hard work. He came
+                                        from a poor family, built two successful restaurants, and
+                                        the name still serves as a daily reminder of where he
+                                        came from.
+                                    </li>
+                                    <li>
+                                        <strong>Genuinely family-owned today.</strong> The Matsuda
+                                        family still owns and operates both locations &mdash; this
+                                        is not a chain or a franchise. &ldquo;We financially
+                                        sacrifice ourselves for our staff,&rdquo; the ownership
+                                        has said publicly &mdash; &ldquo;they&apos;re the most
+                                        important part of the company. They&apos;re all
+                                        family.&rdquo;
+                                    </li>
+                                    <li>
+                                        <strong>The legendary fried rice.</strong> Nearly every
+                                        review mentions it &mdash; unprompted. One veteran
+                                        diner&apos;s tip for first-timers: &ldquo;Order the fried
+                                        rice. Trust me, it&apos;s the best you&apos;ll ever
+                                        have.&rdquo;
+                                    </li>
+                                    <li>
+                                        <strong>Lifelong loyalty.</strong> One regular has
+                                        celebrated her birthday at Jinbeh every year since she was
+                                        seven. She&apos;s 24 now. That is the strongest signal a
+                                        Frisco restaurant can earn &mdash; not just a great meal,
+                                        but a lifelong relationship.
+                                    </li>
+                                    <li>
+                                        <strong>Resilience over decades.</strong> &ldquo;Every
+                                        restaurant that&apos;s been around for a long time can
+                                        tell you they&apos;ve hit lows, and they&apos;ve hit highs,
+                                        but they&apos;ll find ways to hang in there,&rdquo; Aya
+                                        Matsuda has said. 38 years of weathering Frisco&apos;s
+                                        growth, recessions, and a pandemic, with quality intact.
+                                    </li>
+                                </ul>
+
                                 <RelatedArticles currentSlug="top-frisco-restaurants" />
 
                                 <div className="mt-16">

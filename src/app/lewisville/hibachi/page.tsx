@@ -3,10 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: "Best Hibachi in Lewisville TX | Jinbeh Japanese Restaurant",
+  title: { absolute: "Best Hibachi in Lewisville TX | Jinbeh Japanese Restaurant" },
   description: "Jinbeh Lewisville's hibachi menu, 14 teppanyaki entrées with tableside fire shows, onion volcano, and premium cuts. Near Vista Ridge Mall. Since 1988.",
   keywords: ["hibachi lewisville", "best hibachi lewisville", "hibachi menu lewisville", "jinbeh hibachi", "japanese hibachi lewisville", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
@@ -754,6 +755,9 @@ export default function HibachiLewisvillePage() {
             </div>
           </div>
         </section>
+
+        {/* Why Jinbeh — location + category SEO */}
+        <CategoryLocationSEO locationId="lewisville" category="hibachi" />
 
         {/* Cross-Location Link */}
         <section className="py-8 bg-charcoal text-white text-center">

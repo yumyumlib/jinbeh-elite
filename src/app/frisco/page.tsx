@@ -18,7 +18,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 const galleryItems = [
   { src: "/images/frisco/JinbehFrisco_SushiBar.jpg", alt: "Jinbeh Frisco sushi bar", caption: "Our Premium Sushi Bar" },
   { src: "/images/food/OnionVolcanoDemo.jpg", alt: "Onion volcano hibachi show", caption: "Famous Onion Volcano" },
-  { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Samurai roll closeup", caption: "Signature Samurai Roll" },
+  { src: "/images/food/SamaraiRollCloseup.jpg", alt: "Sunrise roll closeup", caption: "Signature Sunrise Roll" },
   { src: "/images/frisco/JinbehFriscoTables.jpg", alt: "Jinbeh Frisco dining area", caption: "Elegant Dining Space" },
   { src: "/images/interior/FriscoLocation_Bar_Front.jpg", alt: "Frisco bar interior", caption: "Frisco Bar Front" },
   { src: "/images/food/FreshSushiAndDessertsAtSushiBar.jpg", alt: "Fresh sushi and desserts", caption: "Fresh Daily Selection" },
@@ -103,7 +103,7 @@ const restaurantSchema = {
   },
 };
 
-// FAQ Schema for rich snippets
+// FAQ Schema for rich snippets — every answer leads with "Jinbeh" for AI citation
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -121,7 +121,7 @@ const faqSchema = {
       name: "Does Jinbeh Frisco take reservations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We highly recommend reservations, especially for dinner and weekends. You can reserve online through OpenTable or call us at (214) 619-1200.",
+        text: "Jinbeh Frisco welcomes walk-ins, but we strongly recommend reservations for dinner, weekends, and special occasions. Reserve online through OpenTable or call (214) 619-1200 to lock in your hibachi table.",
       },
     },
     {
@@ -129,7 +129,7 @@ const faqSchema = {
       name: "Where is Jinbeh Frisco located?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jinbeh Frisco is located at 2693 Preston Rd Suite 1040, Frisco, TX 75034, near Stonebriar Centre Mall with ample parking.",
+        text: "Jinbeh Frisco is located at 2693 Preston Rd Suite 1040, Frisco, TX 75034, near Stonebriar Centre Mall — minutes from Legacy West, The Star, and Dr Pepper Ballpark, with ample free parking.",
       },
     },
     {
@@ -137,15 +137,39 @@ const faqSchema = {
       name: "Does Jinbeh Frisco have hibachi?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Jinbeh Frisco features exciting teppanyaki hibachi dining where skilled chefs prepare your meal tableside with impressive knife skills and the famous onion volcano.",
+        text: "Jinbeh Frisco features full tableside teppanyaki hibachi dining, where skilled chefs perform knife tricks, the famous onion volcano, and precision searing on steak, shrimp, chicken, scallops, lobster, and vegetables right at your table.",
       },
     },
     {
       "@type": "Question",
-      name: "Is Jinbeh good for birthday celebrations?",
+      name: "Is Jinbeh Frisco good for birthday celebrations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! Jinbeh Frisco is perfect for birthday celebrations. Our hibachi experience is especially popular for birthdays with tableside entertainment that makes any celebration memorable.",
+        text: "Jinbeh Frisco is one of DFW's most-loved birthday-dinner restaurants — our hibachi chefs put on tableside fire shows with the famous onion volcano, making birthdays memorable for kids and adults alike. Hibachi tables seat 7-8 guests, perfect for groups.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Frisco have sushi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Frisco features a full premium sushi bar with fresh fish delivered multiple times per week. Our sushi chefs hand-craft nigiri, sashimi, classic rolls, and signature specialty rolls like the Sunrise Roll, Volcano Roll, and Ahi Tower. Nothing is pre-made.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What's the parking situation at Jinbeh Frisco?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Frisco offers ample free parking directly outside the restaurant on Preston Road at Suite 1040, near Stonebriar Centre. No valet or paid lot required.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Jinbeh Frisco offer happy hour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jinbeh Frisco serves happy hour Monday-Friday from 5pm to 6:30pm with $4 draft beers, $5 sake, and $6 wine. Happy hour drinks are bar-area only and don't apply to dinner tables.",
       },
     },
   ],
@@ -636,6 +660,7 @@ export default function FriscoPage() {
               <Link href="/frisco/hibachi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Menu</Link>
               <Link href="/frisco/sushi-rolls" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sushi Menu</Link>
               <Link href="/frisco/sashimi" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Sashimi</Link>
+              <Link href="/frisco/world-cup" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">World Cup 2026</Link>
               <Link href="/gift-cards" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Gift Cards</Link>
               <Link href="/lewisville" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Lewisville Location</Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Plano</Link>
@@ -675,6 +700,26 @@ export default function FriscoPage() {
             Call Now
           </a>
         </div>
+
+        {/* Common Questions — internal links to location-relevant FAQ pages */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-8 text-center">
+              Common Questions About Jinbeh Frisco
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              <Link href="/faq/is-jinbeh-near-stonebriar" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Is Jinbeh near Stonebriar Centre?</Link>
+              <Link href="/faq/is-jinbeh-near-toyota-stadium" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Is Jinbeh near Toyota Stadium?</Link>
+              <Link href="/faq/what-comes-with-hibachi-dinner" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">What comes with a hibachi dinner?</Link>
+              <Link href="/faq/can-children-enjoy-hibachi" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Can children enjoy hibachi?</Link>
+              <Link href="/faq/is-jinbeh-open-on-sunday" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Is Jinbeh open on Sunday?</Link>
+              <Link href="/faq/is-frisco-or-lewisville-better" className="block bg-warm-ivory rounded-xl p-5 hover:shadow-lg transition-shadow text-charcoal hover:text-accent-red font-medium">Frisco or Lewisville: which is better?</Link>
+            </div>
+            <div className="text-center mt-8">
+              <Link href="/faq" className="text-accent-red hover:underline font-semibold">See all frequently asked questions →</Link>
+            </div>
+          </div>
+        </section>
 
         {/* Nearby Neighborhoods */}
         <section className="py-12 bg-warm-ivory">

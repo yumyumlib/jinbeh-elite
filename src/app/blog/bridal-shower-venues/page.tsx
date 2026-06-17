@@ -174,7 +174,7 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       {/* FAQ Schema */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Key Considerations When Choosing a Bridal Shower Venue","acceptedAnswer":{"@type":"Answer","text":"When selecting a venue, consider its location and accessibility for all guests. Ensure ample parking or easy public transportation access. The venue should be convenient for most guests, especially if you have attendees traveling from out of town. Jinbeh offers convenient locations with ample parking in both our Frisco and Lewisville areas."}}]}` }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Key Considerations When Choosing a Bridal Shower Venue","acceptedAnswer":{"@type":"Answer","text":"When selecting a venue, consider its location and accessibility for all guests. Ensure ample parking or easy public transportation access. The venue should be convenient for most guests, especially if you have attendees traveling from out of town. Jinbeh offers convenient locations with ample parking in both our Frisco and Lewisville areas."}}]}) }}
       />
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-8">
         Best Places for Bridal Showers Near Me

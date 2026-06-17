@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import LocationPicker, { LOCATION_DETAILS, type LocationKey } from "./LocationPicker";
+import { fireConversion } from "@/lib/gtag";
 
 const STORAGE_KEY = "preferredLocation";
 
@@ -85,6 +86,7 @@ export default function SmartStickyCTA() {
           {loc ? (
             <a
               href={loc.phoneTel}
+              onClick={() => fireConversion("phone_call")}
               aria-label={`Call Jinbeh ${loc.label} at ${loc.phoneDisplay}`}
               className="flex items-center justify-center gap-2 min-h-[56px] bg-charcoal hover:bg-white/5 text-white font-semibold text-sm transition-colors"
             >
@@ -113,6 +115,7 @@ export default function SmartStickyCTA() {
               href={loc.reserveUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => fireConversion("reservation")}
               aria-label={`Reserve a table at Jinbeh ${loc.label}`}
               className="flex items-center justify-center gap-2 min-h-[56px] bg-accent-red hover:bg-accent-red/90 text-white font-bold text-sm transition-colors"
             >

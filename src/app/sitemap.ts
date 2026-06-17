@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import blogData from '@/data/blog-posts.json';
+import paaData from '@/data/paa-content.json';
 
 // We want to generate a dynamic sitemap that includes:
 // 1. Core pages (Home, About, Contact, etc)
@@ -7,6 +8,7 @@ import blogData from '@/data/blog-posts.json';
 // 3. Location-specific programmatic pages (Frisco, Lewisville)
 // 4. Blog posts and categories
 // 5. Dynamic nearby city pages
+// 6. PAA (People Also Ask) FAQ pages at /faq/[slug]
 
 const baseUrl = 'https://jinbeh.com';
 
@@ -19,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const celebrationsLastMod = new Date('2026-02-18'); // Celebration pages last batch
     const nearbyLastMod = new Date('2026-01-30');      // Nearby city pages created
     const blogLastMod = new Date('2026-03-29');        // Blog hub updated
+    const paaLastMod = new Date('2026-05-12');         // PAA pages launched
 
     // 1. Core Pages
     const corePages = [
@@ -49,7 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/vip',
         '/privacy',
         '/terms',
-        '/accessibility'
+        '/accessibility',
+        '/world-cup-2026'
     ];
 
     corePages.forEach((route) => {
@@ -84,7 +88,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/celebrations/christmas',
         '/celebrations/diwali',
         '/celebrations/asian-restaurant-month',
-        '/celebrations/national-fried-rice-day'
+        '/celebrations/national-fried-rice-day',
+        '/celebrations/world-cup',
+        '/celebrations/world-cup-watch-party',
+        '/celebrations/dfw-moms'
     ];
 
     celebrations.forEach((route) => {
@@ -140,6 +147,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: nearbyLastMod,
             changeFrequency: 'monthly',
             priority: 0.6,
+        });
+    });
+
+    // Dietary / positioning landing pages
+    routes.push({
+        url: `${baseUrl}/lewisville/vegetarian`,
+        lastModified: new Date('2026-05-31'),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+    });
+
+    // Location-specific World Cup 2026 landing pages
+    ['frisco', 'lewisville'].forEach((loc) => {
+        routes.push({
+            url: `${baseUrl}/${loc}/world-cup`,
+            lastModified: new Date('2026-06-01'),
+            changeFrequency: 'weekly',
+            priority: 0.8,
         });
     });
 
@@ -205,5 +230,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    return routes;
+    // 6. PAA (People Also Ask) FAQ pages - programmatic
+    (paaData.questions as Array<{ slug: string }>).forEach((q) => {
+        routes.push({
+            url: `${baseUrl}/faq/${q.slug}`,
+            lastModified: paaLastMod,
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        });
+    });
+
+    // SAFETY GUARD: never emit a URL that 301-redirects. Every `source`
+    // in next.config.ts `redirects()` is a redirecting path and must NOT
+    // appear in the sitemap, or Search Console flags "Pages in a sitemap
+    // redirect / Page with redirect". Keep this list in sync with the
+    // redirects() block. (Added May 31 2026 after GSC sitemap-redirect emails.)
+    const redirectedPaths = new Set(
+        [
+            '/home', '/join', '/vip-club', '/privacy-policy', '/test',
+            '/world-cup', '/fifa-2026', '/samurai-blue', '/japan-world-cup',
+            '/blog/sushi-platters-near-me', '/blog/japanese-restaurants-lewisville',
+            '/blog/best-hibachi-dallas', '/blog/types-of-sushi-rolls', '/blog/what-is-hibachi',
+        ].map((p) => `${baseUrl}${p}`)
+    );
+
+    return routes.filter((r) => !redirectedPaths.has(r.url));
 }

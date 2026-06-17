@@ -387,6 +387,59 @@ export default function BestHibachiLewisvillePage() {
                                     here is a celebration. Thank you for dining with us.
                                 </p>
 
+                                <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
+                                    🏆 What Makes Jinbeh Lewisville Stand Out
+                                </h2>
+
+                                <p className="mb-6">
+                                    Plenty of hibachi spots exist in DFW. Here is why Jinbeh
+                                    Lewisville has been the local favorite for nearly four decades.
+                                </p>
+
+                                <ul className="list-disc pl-6 space-y-3 text-charcoal/80 mb-6">
+                                    <li>
+                                        <strong>Better than Benihana &mdash; by a wide margin.</strong>{" "}
+                                        Multiple independent reviewers on Tripadvisor make this
+                                        comparison unprompted. One regular put it cleanly: &ldquo;A
+                                        step up &mdash; better food, better atmosphere, and the staff
+                                        treats you like family.&rdquo;
+                                    </li>
+                                    <li>
+                                        <strong>The legendary fried rice.</strong> Nearly every
+                                        review mentions it. A veteran diner&apos;s tip for first-
+                                        timers: &ldquo;Order the fried rice. Trust me, it&apos;s the
+                                        best you&apos;ll ever have.&rdquo;
+                                    </li>
+                                    <li>
+                                        <strong>Exceptional seared scallops.</strong> Customers
+                                        consistently call out the scallops as a must-order &mdash;
+                                        called out by name in Tripadvisor and Restaurantji reviews.
+                                    </li>
+                                    <li>
+                                        <strong>A family legacy, not a franchise.</strong> Founder
+                                        Ben Matsuda chose the name &ldquo;Jinbeh&rdquo; &mdash; a
+                                        common Japanese farmer&apos;s surname during the feudal
+                                        period &mdash; because it symbolized humility, honesty, and
+                                        hard work. The same family still owns and operates both
+                                        locations today.
+                                    </li>
+                                    <li>
+                                        <strong>Staff who go above and beyond.</strong> Birthday
+                                        groups regularly get a personal touch &mdash; the manager
+                                        has brought out a drum and sung Happy Birthday for a
+                                        four-year-old at the hibachi table. That is the kind of
+                                        moment that keeps families coming back for two generations.
+                                    </li>
+                                    <li>
+                                        <strong>Handles large groups flawlessly.</strong> Tripadvisor
+                                        reviewers describe parties of 20 dining together by joining
+                                        sections, and groups of 12 cheered on by management. The
+                                        hibachi table format is built for this &mdash; 7&ndash;8
+                                        seats per chef &mdash; and we routinely accommodate multi-
+                                        table reservations for major celebrations.
+                                    </li>
+                                </ul>
+
                                 <PillarCTA type="reservations" />
                                 <LocationCTA location="lewisville" />
                             </div>

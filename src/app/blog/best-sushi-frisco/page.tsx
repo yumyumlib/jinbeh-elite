@@ -549,6 +549,121 @@ export default function BestSushiFrisco() {
                                     </div>
                                 </div>
 
+                                <h2 className="text-3xl font-heading font-bold text-charcoal mt-16 mb-6">
+                                    🗺️ How Jinbeh Compares to Other Japanese Restaurants Near Frisco
+                                </h2>
+
+                                <p className="mb-4">
+                                    Frisco and the broader DFW corridor have a genuinely diverse
+                                    Japanese restaurant scene &mdash; from omakase counters to
+                                    fast-casual teppanyaki. Here is how reviewers typically position
+                                    Jinbeh against the most-mentioned alternatives:
+                                </p>
+
+                                <div className="overflow-x-auto my-6">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead>
+                                            <tr className="border-b-2 border-charcoal/20">
+                                                <th className="py-3 pr-4 font-heading font-semibold text-charcoal">Restaurant</th>
+                                                <th className="py-3 pr-4 font-heading font-semibold text-charcoal">Strength</th>
+                                                <th className="py-3 font-heading font-semibold text-charcoal">Best For</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="text-charcoal/80">
+                                            <tr className="border-b border-charcoal/10 bg-soft-gold/10">
+                                                <td className="py-3 pr-4 font-semibold">Jinbeh</td>
+                                                <td className="py-3 pr-4">Hibachi entertainment + sushi variety, family ownership since 1988</td>
+                                                <td className="py-3">Families, birthdays, groups</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Hachi Sushi &amp; Omakase</td>
+                                                <td className="py-3 pr-4">High-end sushi craftsmanship</td>
+                                                <td className="py-3">Date nights, sushi purists</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Koto Hibachi &amp; Sushi</td>
+                                                <td className="py-3 pr-4">Casual BYOB hibachi</td>
+                                                <td className="py-3">Budget-friendly outings</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Musume at The Star</td>
+                                                <td className="py-3 pr-4">Trendy upscale Japanese dining</td>
+                                                <td className="py-3">Business dinners, nightlife</td>
+                                            </tr>
+                                            <tr className="border-b border-charcoal/10">
+                                                <td className="py-3 pr-4 font-semibold">Pepper Lunch</td>
+                                                <td className="py-3 pr-4">Fast-casual teppanyaki</td>
+                                                <td className="py-3">Quick weekday meals</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p className="mb-6">
+                                    The shorthand way to think about it: Jinbeh is{" "}
+                                    <strong>more exciting than a standard sushi spot, more
+                                    affordable than high-end omakase, and more polished than the
+                                    typical chain hibachi restaurant.</strong> That middle ground
+                                    is exactly why families, multi-generation groups, and lifelong
+                                    regulars keep choosing Jinbeh for the meals that matter.
+                                </p>
+
+                                <h2 className="text-3xl font-heading font-bold text-charcoal mt-16 mb-6">
+                                    🏆 What Sets Jinbeh&apos;s Frisco Sushi Apart
+                                </h2>
+
+                                <p className="mb-6">
+                                    Frisco has plenty of sushi options near Stonebriar. Here is
+                                    why regulars, lifelong guests, and reviewers consistently
+                                    pick Jinbeh.
+                                </p>
+
+                                <ul className="list-disc pl-6 space-y-3 text-charcoal/80 mb-8">
+                                    <li>
+                                        <strong>A founder story rooted in three values.</strong>{" "}
+                                        Founder Ben Matsuda named the restaurant &ldquo;Jinbeh&rdquo;
+                                        after a common surname among Japanese farmers and peasants
+                                        in the feudal period &mdash; chosen to symbolize humility,
+                                        honesty, and hard work. The same family still owns and
+                                        operates both Frisco and Lewisville today. This is a real
+                                        family legacy, not a brand exercise.
+                                    </li>
+                                    <li>
+                                        <strong>Signature rolls you won&apos;t find elsewhere.</strong>{" "}
+                                        The Lobster Volcano Roll and Spider Roll are house standouts.
+                                        Our tempura-shrimp-with-cream-cheese roll is topped with
+                                        spicy tuna, spicy mayo, and eel sauce. California rolls
+                                        come wrapped in soy paper with fresh salmon, tuna, and
+                                        crabmeat, decorated with colorful wasabi sauces. Distinct
+                                        plating; distinct flavor.
+                                    </li>
+                                    <li>
+                                        <strong>Fish delivered fresh, multiple times a week.</strong>{" "}
+                                        Nothing is pre-made or frozen. One loyal diner put it bluntly:
+                                        Jinbeh is &ldquo;hands down the freshest sushi I have ever
+                                        had.&rdquo;
+                                    </li>
+                                    <li>
+                                        <strong>A premium sake program paired to the menu.</strong>{" "}
+                                        Sake is thoughtfully paired across the menu &mdash; from the
+                                        lighter junmai daiginjo with delicate sashimi to fuller styles
+                                        alongside hibachi steak. Japanese whiskey and craft cocktails
+                                        round out the bar.
+                                    </li>
+                                    <li>
+                                        <strong>Rated 4.2&ndash;4.8 across every major platform.</strong>{" "}
+                                        Yelp, Google, Tripadvisor, and OpenTable consistency tells
+                                        the same story. Over 1,600 reviews across platforms. That
+                                        kind of cross-platform agreement is rare.
+                                    </li>
+                                    <li>
+                                        <strong>Lifelong customers, not one-time diners.</strong>{" "}
+                                        One Frisco regular has celebrated her birthday at Jinbeh
+                                        every year since she was seven. She is 24 now. That is
+                                        what staying power looks like.
+                                    </li>
+                                </ul>
+
                                 <PillarCTA type="catering" />
                                 <LocationCTA location="frisco" />
                             </div>
