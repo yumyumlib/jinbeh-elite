@@ -240,6 +240,30 @@ export default function WorldCup2026Page() {
           </div>
         </section>
 
+        {/* June 25 Announcement — Chioma Ubogagu Watch Party */}
+        <section className="py-12 bg-accent-red text-white">
+          <div className="container mx-auto px-6 max-w-4xl text-center">
+            <span className="text-white/90 text-sm tracking-[0.3em] uppercase mb-3 block font-medium">
+              Special Event &middot; Thursday, June 25
+            </span>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3">
+              Japan Watch Party with Chioma Ubogagu
+            </h2>
+            <p className="text-white/90 leading-relaxed max-w-2xl mx-auto mb-6">
+              Coppell&apos;s own pro soccer star Chioma Ubogagu joins us in person at our
+              Lewisville location for Japan&apos;s World Cup match. Both Frisco and Lewisville
+              host the watch party on two big screens, with a halftime giveaway of signed
+              merchandise at each location. Party at 5PM, Japan kicks off at 6PM.
+            </p>
+            <Link
+              href="/celebrations/world-cup-watch-party"
+              className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-3 rounded-xl font-semibold"
+            >
+              See watch party details
+            </Link>
+          </div>
+        </section>
+
         {/* Match Schedule */}
         <section className="py-16 bg-warm-ivory">
           <div className="container mx-auto px-6 max-w-5xl">

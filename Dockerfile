@@ -26,17 +26,20 @@ ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy built files from builder
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+# Copy built files from builder, setting ownership at copy time.
+# Using `COPY --chown` writes each file into its layer already owned by the
+# runtime user, which avoids a separate `RUN chown -R` step. That RUN step
+# previously forced a full copy-up of the entire ~2.3GB public/.next tree into
+# a new image layer, which made image export pathologically slow under a
+# CPU/IO-throttled VPS (2026-06-18). `COPY --chown` keeps the runtime user able
+# to write the ISR/prerender segment cache under .next/server/... without the
+# duplicate layer. (Replaces the 2026-05-31 `chown -R` fix.)
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Give the runtime user write access to the whole .next tree (not just
-# .next/cache). Next.js writes runtime prerender/segment cache under
-# .next/server/app/.../*.segments; without this the server logs
-# "EACCES: permission denied, mkdir '/app/.next/server/...'" and ISR/
-# dynamic pages fail to update their cache. (Fixed 2026-05-31.)
-RUN mkdir -p .next/cache && chown -R nextjs:nodejs .next public
+# Ensure the writable runtime cache dir exists and is owned by the runtime user.
+RUN mkdir -p .next/cache && chown nextjs:nodejs .next .next/cache
 
 USER nextjs
 

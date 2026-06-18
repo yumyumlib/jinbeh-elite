@@ -40,10 +40,10 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
 
-  // Experimental optimizations
-  experimental: {
-    optimizeCss: true,
-  },
+  // NOTE: `experimental.optimizeCss` (critters-based critical-CSS inlining) was
+  // removed 2026-06-18. critters is effectively unmaintained and was implicated
+  // as a likely aggravator of an idle high-CPU spin in next-server on this
+  // Next 16 standalone build. Removed along with the `critters` dependency.
 
   // Rewrites — serve pre-generated WebP siblings for clients that support WebP.
   // We pre-build a `.webp` next to every `.jpg`/`.jpeg`/`.png` under /public/images

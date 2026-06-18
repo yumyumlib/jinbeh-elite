@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title:
     "World Cup Watch Party with Chioma Ubogagu | June 25 | Jinbeh Frisco & Lewisville",
   description:
-    "Join the FIFA World Cup Watch Party at Jinbeh on Thursday, June 25. Professional soccer player and Coppell native Chioma Ubogagu (Dallas Trinity FC) appears in Frisco. Two big screens, a signed-photo raffle at both locations, and the Samurai Blue Special. Reserve at jinbeh.com.",
+    "Join the FIFA World Cup Watch Party at Jinbeh on Thursday, June 25. Professional soccer player and Coppell native Chioma Ubogagu (Dallas Trinity FC) appears in Lewisville. Two big screens, a halftime signed-merchandise giveaway at both locations, and the Samurai Blue Special. Reserve at jinbeh.com.",
   keywords: [
     "world cup watch party frisco",
     "world cup watch party lewisville",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title:
       "World Cup Watch Party with Chioma Ubogagu | June 25 | Jinbeh",
     description:
-      "Thursday, June 25. Party 5PM, Japan kicks off 6PM. Special guest Chioma Ubogagu in Frisco, free signed photos at both locations, a halftime giveaway, and the Samurai Blue Special.",
+      "Thursday, June 25. Party 5PM, Japan kicks off 6PM. Special guest Chioma Ubogagu in Lewisville, a halftime signed-merchandise giveaway at both locations, and the Samurai Blue Special.",
     url: "https://jinbeh.com/celebrations/world-cup-watch-party",
     images: [
       {
@@ -51,24 +51,24 @@ const eventSchema = {
   "@graph": [
     {
       "@type": "Event",
-      name: "World Cup Watch Party with Chioma Ubogagu at Jinbeh Frisco",
+      name: "World Cup Watch Party with Chioma Ubogagu at Jinbeh Lewisville",
       startDate: "2026-06-25T17:00:00-05:00",
       endDate: "2026-06-25T22:00:00-05:00",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       eventStatus: "https://schema.org/EventScheduled",
       description:
-        "FIFA World Cup Watch Party for Japan's match. Special guest, professional soccer player Chioma Ubogagu, forward for Dallas Trinity FC and Coppell native, appears in person. Two big screens, a halftime raffle to win signed Chioma photos, hibachi with a show, and the Samurai Blue Special.",
+        "FIFA World Cup Watch Party for Japan's match. Special guest, professional soccer player Chioma Ubogagu, forward for Dallas Trinity FC and Coppell native, appears in person at the Lewisville location. Two big screens, a halftime giveaway of signed merchandise, hibachi with a show, and the Samurai Blue Special.",
       image:
         "https://jinbeh.com/images/celebrations/world-cup-watch-party.jpg",
       location: {
         "@type": "Place",
-        name: "Jinbeh Japanese Restaurant Frisco",
+        name: "Jinbeh Japanese Restaurant Lewisville",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "2693 Preston Rd Suite 1040",
-          addressLocality: "Frisco",
+          streetAddress: "2440 S Stemmons Fwy #A",
+          addressLocality: "Lewisville",
           addressRegion: "TX",
-          postalCode: "75034",
+          postalCode: "75067",
           addressCountry: "US",
         },
       },
@@ -86,30 +86,30 @@ const eventSchema = {
         price: "0",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://jinbeh.com/frisco",
+        url: "https://jinbeh.com/lewisville",
         validFrom: "2026-06-10T00:00:00-05:00",
       },
     },
     {
       "@type": "Event",
-      name: "World Cup Watch Party at Jinbeh Lewisville",
+      name: "World Cup Watch Party at Jinbeh Frisco",
       startDate: "2026-06-25T17:00:00-05:00",
       endDate: "2026-06-25T22:00:00-05:00",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       eventStatus: "https://schema.org/EventScheduled",
       description:
-        "FIFA World Cup Watch Party for Japan's match. Two big screens, a halftime raffle to win signed photos of Dallas Trinity FC's Chioma Ubogagu, hibachi with a show, and the Samurai Blue Special.",
+        "FIFA World Cup Watch Party for Japan's match. Two big screens, a halftime giveaway of signed merchandise, hibachi with a show, and the Samurai Blue Special.",
       image:
         "https://jinbeh.com/images/celebrations/world-cup-watch-party.jpg",
       location: {
         "@type": "Place",
-        name: "Jinbeh Japanese Restaurant Lewisville",
+        name: "Jinbeh Japanese Restaurant Frisco",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "2440 S Stemmons Fwy #A",
-          addressLocality: "Lewisville",
+          streetAddress: "2693 Preston Rd Suite 1040",
+          addressLocality: "Frisco",
           addressRegion: "TX",
-          postalCode: "75067",
+          postalCode: "75034",
           addressCountry: "US",
         },
       },
@@ -123,7 +123,7 @@ const eventSchema = {
         price: "0",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://jinbeh.com/lewisville",
+        url: "https://jinbeh.com/frisco",
         validFrom: "2026-06-10T00:00:00-05:00",
       },
     },
@@ -139,7 +139,7 @@ const faqSchema = {
       name: "When is the Jinbeh World Cup Watch Party with Chioma Ubogagu?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Thursday, June 25, 2026. The party starts at 5:00 PM, Japan's World Cup match kicks off at 6:00 PM CT, and both locations stay open until 10:00 PM. Chioma Ubogagu appears in person at Jinbeh Frisco.",
+        text: "Thursday, June 25, 2026. The party starts at 5:00 PM, Japan's World Cup match kicks off at 6:00 PM CT, and both locations stay open until 10:00 PM. Chioma Ubogagu appears in person at Jinbeh Lewisville.",
       },
     },
     {
@@ -155,7 +155,7 @@ const faqSchema = {
       name: "Will Chioma Ubogagu be at both Jinbeh locations?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Chioma appears in person at Jinbeh Frisco. Both Frisco and Lewisville host the watch party with two big screens, and each location holds a raffle for signed Chioma photos during the match.",
+        text: "Chioma appears in person at Jinbeh Lewisville. Both Frisco and Lewisville host the watch party with two big screens, and each location holds a halftime giveaway of signed merchandise during the match.",
       },
     },
     {
@@ -218,10 +218,10 @@ export default function WorldCupWatchPartyPage() {
               World Cup Watch Party with Chioma Ubogagu
             </h1>
             <p className="text-lg md:text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
-              Coppell&apos;s own pro soccer star comes home for the World Cup.
-              Two big screens, fresh sushi, hibachi with a show, and a halftime
-              raffle to win signed Chioma photos at both locations. Party at 5PM,
-              Japan kicks off at 6PM.
+              Coppell&apos;s own pro soccer star comes home for the World Cup,
+              live in person at Lewisville. Two big screens, fresh sushi, hibachi
+              with a show, and a halftime giveaway of signed merchandise at both
+              locations. Party at 5PM, Japan kicks off at 6PM.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
@@ -257,7 +257,7 @@ export default function WorldCupWatchPartyPage() {
             </div>
             <div>
               <p className="text-soft-gold text-3xl font-heading font-bold">Free</p>
-              <p className="text-sm text-warm-ivory/80">To attend &middot; signed-photo raffle</p>
+              <p className="text-sm text-warm-ivory/80">To attend &middot; halftime signed-merch giveaway</p>
             </div>
           </div>
         </section>
@@ -285,8 +285,9 @@ export default function WorldCupWatchPartyPage() {
                 favorite hibachi spot.&quot;
               </p>
               <p className="text-charcoal/80">
-                Come say hi, enter the raffle for a signed photo, and watch the
-                match with us. She appears in person at our Frisco location.
+                Come say hi, enter the halftime giveaway for signed merchandise,
+                and watch the match with us. She appears in person at our
+                Lewisville location.
               </p>
             </div>
             <div className="bg-charcoal rounded-2xl p-8 text-white">
@@ -295,9 +296,9 @@ export default function WorldCupWatchPartyPage() {
               </h3>
               <ul className="space-y-3 text-warm-ivory/90">
                 <li>Two big screens showing Japan&apos;s World Cup match</li>
-                <li>Special guest, pro soccer star Chioma Ubogagu, in person in Frisco</li>
-                <li>A raffle to win signed Chioma photos at both locations</li>
-                <li>Drawing held during the match</li>
+                <li>Special guest, pro soccer star Chioma Ubogagu, in person in Lewisville</li>
+                <li>A halftime giveaway of signed merchandise at both locations</li>
+                <li>Giveaway held at halftime of the match</li>
                 <li>Hibachi with a show and our craft sushi bar</li>
                 <li>The Samurai Blue Special, available all tournament</li>
               </ul>
@@ -335,7 +336,7 @@ export default function WorldCupWatchPartyPage() {
                   Jinbeh Frisco
                 </h3>
                 <p className="text-accent-red font-semibold mb-3">
-                  Chioma appears in person
+                  Watch party &amp; halftime signed-merch giveaway
                 </p>
                 <p className="text-charcoal/80 mb-1">
                   2693 Preston Rd Suite 1040, Frisco, TX 75034
@@ -363,7 +364,7 @@ export default function WorldCupWatchPartyPage() {
                   Jinbeh Lewisville
                 </h3>
                 <p className="text-accent-red font-semibold mb-3">
-                  Watch party &amp; free signed photos
+                  Chioma in person &middot; halftime signed-merch giveaway
                 </p>
                 <p className="text-charcoal/80 mb-1">
                   2440 S Stemmons Fwy #A, Lewisville, TX 75067

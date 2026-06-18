@@ -159,7 +159,8 @@ export default function WorldCupPage() {
               Coppell&apos;s own <strong>Chioma Ubogagu</strong>, a professional footballer
               who has represented England and played for Real Madrid, Arsenal, and
               Tottenham, comes home to cheer on Japan at the restaurant she&apos;s loved
-              since childhood. Free to attend, reservations recommended.
+              since childhood. She appears in person at our Lewisville location on
+              June 25. Free to attend, reservations recommended.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left mb-8">
               <div className="bg-white/10 rounded-xl p-4">
@@ -171,9 +172,9 @@ export default function WorldCupPage() {
                 <p className="text-white/80 text-sm">Extended hours that evening</p>
               </div>
               <div className="bg-white/10 rounded-xl p-4">
-                <p className="font-semibold">Halftime raffle</p>
+                <p className="font-semibold">Halftime giveaway</p>
                 <p className="text-white/80 text-sm">
-                  Signed Chioma photos given away during the match
+                  Signed merchandise given away at halftime at both locations
                 </p>
               </div>
               <div className="bg-white/10 rounded-xl p-4">

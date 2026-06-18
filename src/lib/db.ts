@@ -17,11 +17,19 @@ let pool: Pool | null = null;
 
 export function getPool(): Pool {
     if (!pool) {
+        // SECURITY: the DB password must come from the environment (PGPASSWORD).
+        // The hardcoded fallback was removed 2026-06-18 — never commit secrets.
+        // The deploy/run config (docker run -e PGPASSWORD=… / log.env) is the
+        // source of truth. If it's missing we fail loud rather than ship a
+        // secret in source.
+        if (!process.env.PGPASSWORD) {
+            throw new Error('PGPASSWORD is not set — refusing to connect without a configured DB password');
+        }
         pool = new Pool({
             host: process.env.PGHOST || 'n8n-postgres-1',
             port: parseInt(process.env.PGPORT || '5432', 10),
             user: process.env.PGUSER || 'gov1',
-            password: process.env.PGPASSWORD || 'jinbeh_gov1_2026',
+            password: process.env.PGPASSWORD,
             database: process.env.PGDATABASE || 'gov1_orchestrator',
             max: 5,
             idleTimeoutMillis: 30000,
