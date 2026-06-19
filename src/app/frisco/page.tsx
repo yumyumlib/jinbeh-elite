@@ -109,13 +109,11 @@ const restaurantSchema = {
   ],
   acceptsReservations: true,
   hasMenu: location.menus.dinner,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.2",
-    reviewCount: "752",
-    bestRating: "5",
-    worstRating: "1",
-  },
+  // NOTE: aggregateRating + review[] live ONLY on the global Restaurant node in
+  // src/components/schema/AllSchemas.tsx (@id https://jinbeh.com/frisco#restaurant),
+  // which Google merges with this node by shared url. Do NOT add an aggregateRating
+  // here — a second one makes Google report "Review has multiple aggregate ratings"
+  // and disqualifies the page from review-snippet rich results.
 };
 
 // FAQ Schema for rich snippets — every answer leads with "Jinbeh" for AI citation

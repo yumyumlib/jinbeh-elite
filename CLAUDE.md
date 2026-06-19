@@ -4,6 +4,42 @@ This file tracks notable findings, decisions, and tribal knowledge for the
 jinbeh-elite-phase1 Next.js website. Add new entries at the top with a
 date and short title.
 
+## 2026-06-19 — Rebuilt 3003 archive failover from post-SEO source; Rich Results + sitemap follow-ups
+
+After the SEO deploy, completed the manual follow-ups:
+
+- **Archive (3003) rebuilt from updated source.** Ran `/opt/jinbeh-archive/snapshot.sh`
+  (rsyncs `/opt/jinbeh-elite/` → `site/`, builds `jinbeh-archive:<ts>`, swaps the 3003
+  container). New image `jinbeh-archive:20260619-124709` (4.33 GB — BuildKit reused the
+  morning prod build's layers, so the build was near-instant). 3003 now serves the new
+  schema (amenityFeature/Review present; was 0 before). nginx `server 127.0.0.1:3003
+  backup;` failover intact, `nginx -t` OK, prod 3002 untouched/200. Keeps last 3 images
+  (old `20260515-220112` retained).
+  - **BUG in snapshot.sh (step 6):** the `SITE_HASH=$(find … | head -50 | xargs md5sum
+    | md5sum)` line dies under `set -euo pipefail` — `head` closing early gives `find`
+    SIGPIPE (141) → pipefail+`set -e` aborts the script right after "[6/6] Logging
+    snapshot…", so the container swaps fine but the `snapshots.log` entry never writes
+    and the "Snapshot complete" banner never prints. Worked around by appending the log
+    line manually. **Fix:** wrap the find in `( … || true )` or drop pipefail for that
+    line.
+- **Rich Results Test (both location pages, live-crawled Jun 19):** Restaurant
+  (Local Business), Breadcrumbs, Organization all **valid** — the new amenityFeature/
+  areaServed/sameAs parse. BUT a **critical issue on BOTH pages: "Review has multiple
+  aggregate ratings."** Each location page emits a **duplicate `aggregateRating`** for
+  its own restaurant `@id` (collides with the global one in `AllSchemas.tsx`), blocking
+  review-snippet rich-result eligibility for that location (Frisco shows ratingValue 4.2
+  / reviewCount 752 twice; Lewisville the same for itself). **Follow-up fix:** dedupe so
+  each restaurant `@id` has exactly one aggregateRating (likely remove the per-location
+  page-level Restaurant/aggregateRating, keep the global one). Not yet done.
+- **Sitemap resubmitted** in GSC (`sc-domain:jinbeh.com`): `https://jinbeh.com/sitemap.xml`
+  → "submitted successfully", Success, 373 pages. Legacy `sitemap_index.xml` still
+  "Couldn't fetch" (dead 2024 WP entry — remove from its detail page when convenient).
+- **Local git commit landed:** HEAD `7fb5b75`. The stale `.git/index.lock` couldn't be
+  `rm`'d (Cowork mount blocks `unlink`) but **`mv`/rename works** — renamed the lock
+  aside, committed, then cleared the regenerated locks the same way. Any index-touching
+  git command in the sandbox leaves a stale `index.lock`; clear via rename, or run git
+  from the real Mac where unlink works.
+
 ## 2026-06-19 — Progress review: FOX 4 segment warm, sales tax due, CPU steal recurring
 
 Automated progress review (`project-progress` scheduled task). Key findings:
