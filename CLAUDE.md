@@ -4,6 +4,47 @@ This file tracks notable findings, decisions, and tribal knowledge for the
 jinbeh-elite-phase1 Next.js website. Add new entries at the top with a
 date and short title.
 
+## 2026-06-19 — FIXED "Review has multiple aggregate ratings" — review snippets now eligible (deployed)
+
+Resolved the duplicate-`aggregateRating` critical issue the Rich Results Test
+flagged on both location pages. **Root cause was NOT only the page-level schema** —
+it was a **double-rendered nested layout**:
+
+- `src/app/layout.tsx` (ROOT) already renders `<LocalBusinessSchemaFrisco />` +
+  `<LocalBusinessSchemaLewisville />` (+ `<MenuSchema/>`) **globally on every page**.
+- `src/app/frisco/layout.tsx` **also** rendered `<LocalBusinessSchemaFrisco />`, and
+  `src/app/lewisville/layout.tsx` **also** rendered `<LocalBusinessSchemaLewisville />`.
+  So on `/frisco` the `…/frisco#restaurant` node (which carries aggregateRating +
+  review[]) was injected **twice** → Google merged by `@id` → "Review has multiple
+  aggregate ratings" → review-snippet rich result disqualified. Same on `/lewisville`.
+- A **second** contributor: the page-level `restaurantSchema` in `frisco/page.tsx` /
+  `lewisville/page.tsx` (no `@id`, but same `url`) carried its **own** aggregateRating,
+  which Google merges with the global node by URL.
+
+**Fix (both needed):** (1) made `frisco/layout.tsx` + `lewisville/layout.tsx`
+pass-through (removed the redundant `<LocalBusinessSchema…/>` + its import — root layout
+covers all pages); (2) removed the `aggregateRating` block from the page-level
+`restaurantSchema` on both location pages (kept the node for its other props). Net:
+**each restaurant `@id` now has exactly ONE aggregateRating** (verified by parsing the
+served JSON-LD: frisco#restaurant=1, lewisville#restaurant=1 on both pages).
+
+**Verified live (Rich Results Test, Jun 19 ~11:41/16:xx, fresh crawls):** both `/frisco`
+and `/lewisville` now report **all valid** — Breadcrumbs 1, Local businesses 3,
+Organization 4, **Review snippets 14 valid** (was "22 items, some invalid" with the
+critical issue). Review snippets are eligible.
+
+- **Deploy:** standard off-peak cycle (pre-flight steal 0% / load 0.09 / 25 GB free →
+  rsync src → `docker build` candidate 4.33 GB → QA on :3009 → promote). **Rollback tag
+  `jinbeh-elite:rollback-20260619-1640-pre-aggdedup`** (kept). prod healthy, all pages 200.
+- **Archive (3003) rebuilt** from the fixed source (`jinbeh-archive:20260619-164226`);
+  3003 also serves 1 aggregateRating/entity; failover intact.
+- **Related, NOT fixed (out of scope):** `src/app/menu/layout.tsx` ALSO double-renders
+  `<MenuSchema/>` (root layout already renders it globally) → `/menu` has a duplicate
+  MenuSchema. No aggregateRating so it doesn't break review snippets, but it's the same
+  bug class — make `menu/layout.tsx` a pass-through too in a future pass. **Lesson: don't
+  render a global schema component in BOTH the root layout and a nested layout.**
+- Local commit `30e8020`.
+
 ## 2026-06-19 — Rebuilt 3003 archive failover from post-SEO source; Rich Results + sitemap follow-ups
 
 After the SEO deploy, completed the manual follow-ups:
