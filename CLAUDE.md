@@ -4,6 +4,149 @@ This file tracks notable findings, decisions, and tribal knowledge for the
 jinbeh-elite-phase1 Next.js website. Add new entries at the top with a
 date and short title.
 
+## 2026-06-19 — Progress review: FOX 4 segment warm, sales tax due, CPU steal recurring
+
+Automated progress review (`project-progress` scheduled task). Key findings:
+
+### FOX 4 "Good Day" segment — WARM, not confirmed
+Thread in YumYumJinbeh inbox: pitch sent Jun 16 for a Jun 25 segment featuring
+Chioma Ubogagu at Jinbeh Lewisville. Clarification sent Jun 18. **Melinda Thomas
+(Melinda.Thomas@fox.com) gave a 👍 thumbs-up reaction** Jun 18 1:30 PM — positive
+but not a booking confirmation. Zachary Wilson (zachary.wilson@elitetalentadvisors.us)
+CC'd throughout. Owner needs to reply today to lock in logistics (6 days out).
+
+### May Sales Tax — DUE TODAY Jun 19
+Mixed Beverage Gross Receipts Tax return filed Jun 16, payment due Jun 19. Found in
+darrellshill@gmail.com from Nooshin Bahrami. Late penalties apply.
+
+### VPS CPU steal oscillating again (4.8%–72.4%)
+Same sawtooth pattern as Jun 17. All services healthy, load near zero — host-side
+throttle, not workload. Another Kodee chat reset needed.
+
+### Stalled items (3+ consecutive reports)
+Southern Glazer's reply, OpenTable $746.47, Grasshopper Bank SBA docs, Dallas Trinity
+FC pitch — all still unresolved. Additionally from CLAUDE.md active projects: Chef
+Recruitment (25 candidates, 0 replies), Journalist Outreach (17 ready, none sent),
+Dream 100 (123 comments ready), STR Outreach (8 emails drafted), Energy Contract
+(TXU reply to Nichole Knapik). These represent significant unrealized revenue pipeline.
+
+### Gmail MCP still unavailable
+Gmail connector showed "still connecting" and never resolved (same as Jun 17). Used
+Chrome MCP to navigate Gmail directly. Consider troubleshooting the connector.
+
+Full report: `PROGRESS_REPORT_2026-06-19.md`.
+
+## 2026-06-19 — DEPLOYED the 2026-06-18 SEO/schema pass to prod (clean run, .dockerignore halved image)
+
+Unattended off-peak scheduled run (`jinbeh-seo-deploy-4am`) successfully deployed the
+staged 2026-06-18 changes. **Box was idle and healthy** (pre-flight: CPU steal 0.0%,
+load 0.03, 38 GB free) — no throttle, unlike the June 15–16 attempts. Full procedure
+ran end to end with no abort and no rollback.
+
+- **Live now on `jinbeh-prod` / `jinbeh-elite:latest`:** `AllSchemas.tsx`
+  amenityFeature + areaServed + @id + menu/hasMenu + hasMap + sameAs on both
+  Restaurant schemas, enriched MenuSchema, and 12 real Google Review objects
+  (6 Frisco + 6 Lewisville); OG images + Twitter cards on /frisco + /lewisville;
+  `.dockerignore` slimming; new world-cup-watch-party.webp. Verified 200 + schema
+  markers on `/`, `/frisco`, `/lewisville`, `/menu`.
+- **The .dockerignore fix is the big win:** build-context transfer dropped from ~20 min
+  (historical) to ~40 s, and the resulting image is **4.33 GB vs the old 10.2 GB**.
+  Full build ~8–9 min (npm ci 58s, compile 101s, TS 74s clean, page-gen ~48s for 396
+  pages, export/unpack 175s). Load peaked ~2.7 — nowhere near the ~12 kill guard.
+- **Rollback image:** `jinbeh-elite:rollback-20260619-0913-pre-seo` (10.2 GB, kept).
+  Rollback = `docker rm -f jinbeh-prod && docker run -d --name jinbeh-prod --restart
+  unless-stopped -p 0.0.0.0:3002:3000 jinbeh-elite:rollback-20260619-0913-pre-seo`.
+- **Gotcha:** local `git commit` was blocked by a stale `.git/index.lock` the Cowork
+  sandbox can't remove (Operation not permitted). Deploy proceeds fine via working-tree
+  rsync, but the changes are still UNCOMMITTED in local git — remove the lock + commit
+  for history.
+- **Manual follow-ups:** Rich Results Test on /frisco + /lewisville (confirm Restaurant
+  + Review parse), resubmit sitemap.xml in GSC, and note the 3003 archive failover was
+  NOT rebuilt (still serves prior content). Full write-up: `DEPLOY_REPORT_2026-06-19.md`.
+
+## 2026-06-18 — SEO pass: schema/AEO enrichment + Docker build-context fix (NOT deployed)
+
+Expert SEO review of the (already-mature) site. Conclusion: fundamentals are
+strong (title template, per-page canonicals, 250+ URL sitemap, AI-crawler
+robots.txt, Org/Restaurant/Menu/FAQ schema, location + nearby + celebration +
+100-post blog clusters; GSC 84→311 indexed). Highest-leverage gaps were AEO
+schema completeness, image/Docker weight, and off-page GBP. Changes made
+locally (all ESLint + tsc clean on changed files; **NOT yet deployed**):
+
+### On-page / schema (applied)
+- `src/components/schema/AllSchemas.tsx` (global via layout): added
+  `amenityFeature` (10 factual attrs each loc — the #1 AEO lever for
+  multi-attribute "near me" matching), `areaServed` (7 Frisco / 8 Lewisville
+  cities), `@id`, `menu`/`hasMenu`, `hasMap`, `sameAs` on both Restaurant
+  schemas. Enriched `MenuSchema`: `url`+`inLanguage`, new Sashimi section,
+  accurate `suitableForDiet` (vegetarian tofu hibachi; gluten-free salmon/tuna
+  sashimi). **No prices added** (kept the prior intentional price/offer removal).
+- `src/app/frisco/page.tsx` + `lewisville/page.tsx`: added OpenGraph `images`
+  (1200×630) + Twitter `summary_large_image` cards (were missing on the two
+  most important local pages).
+- Review schema: added 6 REAL Google reviews to the **Frisco** Restaurant
+  schema (`review[]` with author/datePublished/reviewRating/reviewBody),
+  chosen for intent diversity (vegetarian, best-hibachi, birthday, anniversary,
+  allergy-friendly, kid-friendly). Lewisville also done: 6 real Google reviews
+  (lunch/value, sushi rolls, kids birthday, allergy/vegetarian, reservations,
+  authenticity). Both locations now have `review[]` in their Restaurant schema.
+  Note: only ever mark up genuine, attributable reviews (Google policy).
+
+### Image / deploy efficiency (applied)
+- **WebP coverage was already ~complete**: of 332 served JPG/PNG (excluding
+  catalog-originals), only 2 lacked a `.webp` sibling. Generated
+  `celebrations/world-cup-watch-party.webp`. The other, `awards/dmn-logo.png`,
+  is actually a 3 KB **HTML file** (broken placeholder) and is unreferenced —
+  junk, left as-is. `next.config.ts` has `images.unoptimized:true` (Next16/
+  Turbopack bug), so `scripts/generate-webp.sh` (`npm run images:webp`,
+  needs `cwebp`) is the WebP path.
+- **Docker build-context fix** (addresses the recurring slow/stuck-deploy pain):
+  `public/images/catalog-originals` (223 MB raws) and
+  `public/images/catalog_backup_original.tar.gz` (218 MB) are **NOT referenced
+  in src/data/sitemap/public** and **not served**, yet shipped in the image
+  (~441 MB of dead weight). Added both to `.dockerignore`. They stay on disk
+  for re-processing; just no longer bloat the build context.
+
+### Deliverable + to-dos
+- Full audit: `SEO_AUDIT_AND_ACTION_PLAN_2026-06-18.md` (keyword tiers, 2026
+  AEO scorecard, ready-to-paste "answer blocks" for /, /frisco, /lewisville,
+  /menu, /catering, ranked roadmap).
+- Remaining high-impact (not done): deploy when CPU-steal clear; real Review
+  schema; `VideoObject` for hero Vimeo; 44 blog hero images
+  (`ARTICLE_IMAGE_AUDIT.md`); ~20 missing H1s; GBP completeness/photos/review
+  velocity; NAP/citation audit.
+
+## 2026-06-17 — Automated progress review: recurring CPU steal + stalled items
+
+Ran scheduled "project-progress" task. Key findings:
+
+### VPS CPU steal is recurring
+Hostinger reset the throttle earlier on Jun 17 (steal 89%→0%), but monitoring shows
+it oscillating 7–90% again. The sawtooth pattern suggests the fair-use throttle
+re-engages quickly after reset. Root trigger was the multi-day n8n 403 loop (now
+fixed), but the throttle's after-effect persists. Path forward: re-submit via
+hPanel → Kodee chat each time it recurs, and/or upgrade to 4-vCPU plan.
+
+### World Cup deploy still pending (2 failed attempts)
+Jun 15 daytime build saturated box (load ~20). Jun 16 2AM build hit npm ci cache miss
+(load >12, aborted). Changes are staged in local repo + VPS src/. Prerequisites
+for retry: steal must be 0%, use .dockerignore to shrink 2.37GB context, warm npm ci
+layer separately, cap build CPU with --cpuset-cpus, attempt at 2–4 AM.
+
+### Stalled revenue items
+- Southern Glazer's beverage reply to Lia Shivers: analysis done, reply not sent
+- Father's Day email campaign 2: mid-build in Smartlead, not launched
+- OpenTable $746.47 past due: flagged, no resolution confirmed
+- Keru Tomeru Japanese TV (Jun 26): response status unclear
+- Dallas Trinity FC cross-promo: drafted, not sent
+- Grasshopper Bank SBA docs: 5+ days overdue
+
+### Gmail MCP was unavailable
+The Gmail connector showed "still connecting" and never resolved. Could not review
+inbox directly. Email insights sourced from prior session transcripts instead.
+
+Full report: `PROGRESS_REPORT_2026-06-17.md`
+
 ## 2026-06-16 — ABORTED off-peak World Cup/SEO deploy (build load spike) — prod SAFE, NOT shipped
 
 Scheduled ~2 AM Central off-peak run to deploy the staged World Cup 2026 +
@@ -1596,3 +1739,66 @@ and `docker compose up -d --force-recreate n8n`. After: 403 count = 0,
   non-essential always-on containers (Remnawave VPN, Immich ML, staging copy).
 - Cowork sandbox reaches the VPS via paramiko + `VPS_PASSWORD` from `log.env`
   (`root@72.61.15.71`). Keep SSH commands short — auth is slow under steal.
+
+### Efficiency follow-up actions (same session, June 16-17 2026)
+
+After fixing the n8n loop, did an efficiency sweep + remediation:
+- **Memory/disk/logs are fine** — 5GB RAM available, no OOM kills, disk 73%
+  (27G free), Docker logs already rotated (10m×3 via /etc/docker/daemon.json).
+  CPU is the ONLY bottleneck.
+- **jinbeh-prod "unhealthy"** is a *symptom*, not a bug — its 5s `node fetch`
+  healthcheck times out under CPU starvation, but the site serves 200 (just slow,
+  ~1.5s vs normal 0.2s). Self-recovers when steal clears. nginx routing is
+  independent of the flag.
+- **Stopped + `--restart=no`:** jinbeh-staging, wordpress-zmdr-wordpress-1,
+  wordpress-zmdr-db-1 (freed CPU; staging/WP not needed always-on). To re-enable:
+  `docker update --restart=always <c> && docker start <c>`.
+- **Applied live CPU caps** (`docker update --cpus`, survives restart but NOT a
+  compose recreate — fold into compose for permanence): n8n-n8n-1=1.0,
+  remnanode=0.5, immich-ml=0.75, immich-server=0.5. These prevent any single
+  container from monopolizing the 2 cores again (root enabler of the n8n outage).
+- **Steal stayed ~85-91% even after all the above** → confirmed host-side
+  (Hostinger fair-use throttle or noisy neighbor), NOT our workload. Load fell
+  28→12 as demand dropped, but steal didn't budge.
+- **Installed VPS-side monitor:** `/usr/local/bin/jinbeh-cpu-monitor.sh` + cron
+  `*/10 * * * *` → logs to `/var/log/jinbeh-cpu-monitor.log`, Slack-alerts
+  (#all-jinbeh-inc, max 1/hr) when steal ≥ 40%.
+- **Hostinger ticket drafted:** `HOSTINGER_TICKET_CPU_STEAL.md` (repo root).
+- **Recommended optimal footprint for a 2-vCPU box:** keep only business-critical
+  (jinbeh-prod + nginx, n8n + postgres, espocrm + db). Move Immich (photos),
+  Remnawave VPN node (remnanode/rw-core), and redundant jinbeh copies (staging/
+  archive) to a separate box, OR upgrade to a 4-vCPU plan. 15 containers on 2
+  vCPUs is the structural overcommit behind the fragility.
+
+### Paused Immich + Remnawave (June 17 2026) — lean to 7 containers
+
+Per owner request, stopped the discretionary stacks so business-critical services
+get CPU reliably. Now RUNNING (7): jinbeh-prod, jinbeh-archive, n8n-n8n-1,
+n8n-postgres-1, espocrm, espocrm-db, hermes-agent. STOPPED w/ `--restart=no`:
+jinbeh-staging, wordpress-zmdr-wordpress-1, wordpress-zmdr-db-1,
+immich-uejn-{immich-server,database,immich-machine-learning,redis}-1, remnanode.
+- **remnanode gotcha:** `docker stop`/`kill` failed — "container PID 2207 is
+  zombie and can not be killed" (image has no init to reap). Fix: kill the worker
+  directly on the host: `pkill -9 -f rw-core` (auto-restart already disabled, so
+  it doesn't come back; the zombie container then reaps and exits).
+- **To bring any back:** `docker update --restart=always <c> && docker start <c>`
+  (Immich: start database + redis first, then server + ML).
+- **Result:** load 28→~5-8, jinbeh-prod response 1.5s→0.30s, n8n /healthz ok,
+  espocrm 200. **BUT steal stayed ~90%** with our CPU use ~10% and load low →
+  conclusively host-side (Hostinger throttle/noisy neighbor), not our workload.
+  Ticket `HOSTINGER_TICKET_CPU_STEAL.md` + monitor cron are the remaining levers.
+
+### RESOLVED — Hostinger reset the CPU throttle (June 17 2026)
+
+Submitted the CPU-steal request via hPanel → Ask AI (Kodee) chat, VPS category,
+asking to check/reset a fair-use CPU throttle + verify host health. **Kodee
+confirmed: "I found a CPU restriction on srv1144987 and sent the reset"** —
+validating the host-side-throttle diagnosis exactly. Within minutes:
+- **CPU steal 89% → 0.0%** (monitor logged 89.3% at 10:40, then 0% after reset).
+- **Load avg 28 (peak) → ~2.4.**
+- **jinbeh-prod response 1.5s → 0.0146s.** n8n /healthz ok, espocrm 200.
+Chat is saved in hPanel → Ask AI → History. Lesson: Hostinger's Kodee chat agent
+can directly find AND reset a VPS fair-use CPU throttle — the fastest path when
+steal is high but guest CPU use is low. Root trigger was the days-long n8n
+task-runner 403 loop pegging a core (fixed first); the throttle was the
+after-effect, cleared via the ticket.

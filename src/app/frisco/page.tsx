@@ -40,6 +40,21 @@ export const metadata: Metadata = {
     description: location.seo.description,
     url: "https://jinbeh.com/frisco",
     type: "website",
+    siteName: "Jinbeh Japanese Restaurant",
+    images: [
+      {
+        url: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinbeh Japanese Restaurant in Frisco, TX — hibachi and sushi since 1988",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: location.seo.title,
+    description: location.seo.description,
+    images: ["https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg"],
   },
 };
 

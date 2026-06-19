@@ -40,6 +40,21 @@ export const metadata: Metadata = {
     description: location.seo.description,
     url: "https://jinbeh.com/lewisville",
     type: "website",
+    siteName: "Jinbeh Japanese Restaurant",
+    images: [
+      {
+        url: "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hibachi flame show at Jinbeh Japanese Restaurant in Lewisville, TX",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: location.seo.title,
+    description: location.seo.description,
+    images: ["https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp"],
   },
 };
 

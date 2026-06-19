@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: jinbeh-elite:latest
     container_name: jinbeh-staging
     restart: unless-stopped
     ports:
@@ -22,6 +23,45 @@ services:
       - PGDATABASE=${PGDATABASE:-jinbeh_forms}
       - PGUSER=${PGUSER:-jinbeh}
       - PGPASSWORD=${PGPASSWORD:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - web
+
+  # Production — serves jinbeh.com on port 3002.
+  # Starts ONLY with the prod profile, so existing `docker compose up -d`
+  # (staging-only) keeps working unchanged:
+  #   docker compose --profile prod up -d --build
+  # Shares the same built image (jinbeh-elite:latest) as staging.
+  jinbeh-prod:
+    profiles: ["prod"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jinbeh-elite:latest
+    container_name: jinbeh-prod
+    restart: unless-stopped
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
+      # SMTP — from .env
+      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-465}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_FROM=${SMTP_FROM:-noreply@jinbeh.com}
+      # PostgreSQL — from .env
+      - DATABASE_URL=${DATABASE_URL:-}
+      - PGHOST=${PGHOST:-host.docker.internal}
+      - PGPORT=${PGPORT:-5433}
+      - PGDATABASE=${PGDATABASE:-jinbeh_forms}
+      - PGUSER=${PGUSER:-jinbeh}
+      - PGPASSWORD=${PGPASSWORD:-}
+      # Google Sheets — PROD ONLY (the extra env the standalone prod carried).
+      # Store the key single-line with \n escapes in .env (the app un-escapes it).
+      - GOOGLE_SHEETS_CLIENT_EMAIL=${GOOGLE_SHEETS_CLIENT_EMAIL:-}
+      - GOOGLE_SHEETS_PRIVATE_KEY=${GOOGLE_SHEETS_PRIVATE_KEY:-}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:

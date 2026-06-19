@@ -61,3 +61,10 @@ public/.archived
 
 # Build/scratch helpers that should never ship in the image
 _genresp.js
+
+# Unreferenced image originals & backups — NOT served by the site, but they
+# bloat the Docker build context (~441 MB) and are a primary cause of slow /
+# stuck deploys. They remain on disk for re-processing; just don't ship them.
+public/images/catalog-originals
+public/images/*.tar.gz
+public/images/*.tar
