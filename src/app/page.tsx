@@ -15,22 +15,22 @@ import HeroSection from "@/components/HeroSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jinbeh Hibachi & Sushi | Since 1988 | Frisco & Lewisville TX",
-  description: "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake in Frisco (near Stonebriar) and Lewisville (off I-35E). Reserve tonight.",
+  title: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Since 1988",
+  description: "Searching for hibachi near you in DFW? Jinbeh has served dinner and a show since 1988, authentic hibachi, hand-crafted sushi, and premium sake in Frisco (near Stonebriar) and Lewisville (off I-35E). Reserve your table tonight.",
   alternates: {
     canonical: "https://jinbeh.com",
   },
   openGraph: {
-    title: "Jinbeh Hibachi & Sushi | Since 1988 | Frisco & Lewisville TX",
-    description: "Dinner and a show since 1988. Jinbeh serves authentic hibachi, hand-crafted sushi, and premium sake in Frisco and Lewisville, TX.",
+    title: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Since 1988",
+    description: "Searching for hibachi near you in DFW? Jinbeh has served dinner and a show since 1988, authentic hibachi, hand-crafted sushi, and premium sake in Frisco and Lewisville, TX.",
     url: "https://jinbeh.com",
     type: "website",
     siteName: "Jinbeh Japanese Restaurant",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jinbeh Hibachi & Sushi | Frisco & Lewisville TX",
-    description: "Dinner and a show since 1988. Authentic hibachi, hand-crafted sushi, premium sake.",
+    title: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Since 1988",
+    description: "Hibachi near you in DFW since 1988. Authentic hibachi, hand-crafted sushi, premium sake in Frisco & Lewisville.",
   },
 };
 
@@ -1019,31 +1019,62 @@ export default function HomePage() {
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               <ScrollReveal delay={0}>
-                <Link href="/blog/types-of-sushi" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
-                  <span className="text-3xl mb-3 block">🍣</span>
-                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Types of Sushi Guide</h3>
-                  <p className="text-sm text-charcoal/70">From nigiri to specialty rolls, discover every style of sushi we serve.</p>
+                <Link href="/blog/best-hibachi-near-me-dfw" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🔥</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Best Hibachi Near Me in DFW</h3>
+                  <p className="text-sm text-charcoal/70">Your guide to the top hibachi restaurants in Dallas-Fort Worth, and why Jinbeh leads the pack.</p>
                 </Link>
               </ScrollReveal>
               <ScrollReveal delay={100}>
-                <Link href="/blog/hibachi-dining-experience" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
-                  <span className="text-3xl mb-3 block">🔥</span>
-                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">The Hibachi Experience</h3>
-                  <p className="text-sm text-charcoal/70">What to expect at a Jinbeh hibachi table, the show, the food, the fun.</p>
+                <Link href="/blog/japanese-food-near-me-frisco" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🍱</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Japanese Food Near Me in Frisco</h3>
+                  <p className="text-sm text-charcoal/70">Exploring Japanese cuisine in Frisco? Here&apos;s where to find the best hibachi and sushi.</p>
                 </Link>
               </ScrollReveal>
               <ScrollReveal delay={200}>
-                <Link href="/blog/hibachi-birthday-party-ideas" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
-                  <span className="text-3xl mb-3 block">🎂</span>
-                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Birthday Party Ideas</h3>
-                  <p className="text-sm text-charcoal/70">Plan an unforgettable hibachi birthday celebration for any age.</p>
+                <Link href="/blog/corporate-event-catering-dfw" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🏢</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Corporate Event Catering</h3>
+                  <p className="text-sm text-charcoal/70">Impress clients and celebrate your team with Jinbeh&apos;s Japanese catering in DFW.</p>
                 </Link>
               </ScrollReveal>
               <ScrollReveal delay={300}>
-                <Link href="/blog/sake-pairing-guide" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
-                  <span className="text-3xl mb-3 block">🍶</span>
-                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Sake Pairing Guide</h3>
-                  <p className="text-sm text-charcoal/70">Perfect sake matches for every dish, from sushi to hibachi steak.</p>
+                <Link href="/blog/sushi-platter-for-party" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🍣</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Sushi Platters for Any Party</h3>
+                  <p className="text-sm text-charcoal/70">From office lunches to celebrations, our sushi platters make every gathering special.</p>
+                </Link>
+              </ScrollReveal>
+            </div>
+            {/* Second row — more popular guides */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mt-6">
+              <ScrollReveal delay={0}>
+                <Link href="/blog/kid-friendly-japanese-restaurants-dfw" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">👨‍👩‍👧‍👦</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Kid-Friendly Japanese Dining</h3>
+                  <p className="text-sm text-charcoal/70">Family restaurants in DFW where kids love the hibachi show and the food.</p>
+                </Link>
+              </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <Link href="/blog/hibachi-vs-teppanyaki-explained" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🥩</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Hibachi vs. Teppanyaki</h3>
+                  <p className="text-sm text-charcoal/70">What&apos;s the difference? Our guide explains the history, cooking styles, and what to expect.</p>
+                </Link>
+              </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <Link href="/blog/unique-kids-birthday-party-places" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🎂</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Unique Birthday Party Venues</h3>
+                  <p className="text-sm text-charcoal/70">Skip the usual spots. A hibachi birthday party is the celebration kids never forget.</p>
+                </Link>
+              </ScrollReveal>
+              <ScrollReveal delay={300}>
+                <Link href="/blog/gluten-free-japanese-food-frisco-lewisville" className="group block bg-warm-ivory rounded-2xl p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="text-3xl mb-3 block">🌿</span>
+                  <h3 className="font-heading font-bold text-charcoal group-hover:text-accent-red transition-colors mb-2">Gluten-Free Japanese Food</h3>
+                  <p className="text-sm text-charcoal/70">Dining gluten-free in Frisco and Lewisville? See what Jinbeh offers for every dietary need.</p>
                 </Link>
               </ScrollReveal>
             </div>

@@ -3,6 +3,9 @@
 import RespImage from "@/components/RespImage";
 import SocialProofBar from "@/components/SocialProofBar";
 import { useState, useEffect } from "react";
+// VIDEO TEMPORARILY DISABLED — static hero image only for faster load & lower bounce rate.
+// TODO: Re-enable once we have a shorter/faster video edit optimized for web.
+// See Obsidian note: "Homepage Video Optimization" for details.
 import ScrollReveal from "@/components/ScrollReveal";
 import WordRotate from "@/components/ui/WordRotate";
 import { BorderBeam } from "@/components/ui/BorderBeam";
@@ -23,57 +26,21 @@ function getReservationCTA(): string {
 
 export default function HeroSection() {
     const [reservationCTA, setReservationCTA] = useState("Reserve for This Weekend");
-    const [videoLoaded, setVideoLoaded] = useState(false);
-
     // Update reservation CTA based on day of week (client-side only)
     useEffect(() => {
         setReservationCTA(getReservationCTA());
     }, []);
 
-    // Load Vimeo iframe after first scroll OR 4 seconds (whichever is first)
-    useEffect(() => {
-        let loaded = false;
-        const loadVideo = () => {
-            if (!loaded) {
-                loaded = true;
-                setVideoLoaded(true);
-            }
-        };
-
-        const timer = setTimeout(loadVideo, 4000);
-        const onScroll = () => { loadVideo(); };
-        window.addEventListener("scroll", onScroll, { passive: true, once: true });
-
-        return () => {
-            clearTimeout(timer);
-            window.removeEventListener("scroll", onScroll);
-        };
-    }, []);
-
     return (
         <section className="relative flex items-center justify-center overflow-hidden min-h-[90vh] md:min-h-screen py-16 sm:py-24 md:py-32 w-full max-w-[100vw]">
-            {/* Background Video - Vimeo embed - deferred until scroll or 4s */}
-            {videoLoaded && (
-                <div className="absolute inset-0 w-full h-full z-[1]">
-                    <iframe
-                        src="https://player.vimeo.com/video/681592941?autoplay=1&loop=1&muted=1&background=1&autopause=0&portrait=0&byline=0&title=0&badge=0&quality=720p"
-                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover pointer-events-none"
-                        style={{ aspectRatio: '16/9', width: '177.78vh', height: '100vh' }}
-                        allow="autoplay; fullscreen"
-                        title="Jinbeh Hibachi and Sushi Experience"
-                        loading="lazy"
-                    />
-                </div>
-            )}
-
-            {/* Fallback Image - always visible until video loads - Professional Studio Quality */}
+            {/* Hero Image - static for fast load, no video until optimized version is ready */}
             <RespImage
                 src="/images/hero/jinbeh-hero-poster.jpg"
                 alt="Jinbeh Japanese Restaurant — hibachi chef performing with flames alongside a premium sushi spread with nigiri, specialty rolls, and sashimi"
                 fill
                 priority
                 sizes="100vw"
-                className={`object-cover object-center z-0 transition-opacity duration-1000 ${videoLoaded ? 'opacity-0' : 'opacity-100'}`}
+                className="object-cover object-center z-0"
             />
 
             {/* Dark Overlay for text contrast */}
@@ -143,9 +110,14 @@ export default function HeroSection() {
                                 <h2 className="text-xl font-heading font-semibold text-white mb-0.5 drop-shadow-lg">
                                     Frisco
                                 </h2>
-                                <p className="text-warm-ivory/70 text-xs mb-3">
+                                <p className="text-warm-ivory/70 text-xs mb-1.5">
                                     Near Stonebriar Centre
                                 </p>
+                                <div className="flex items-center justify-center gap-1.5 mb-3 text-xs">
+                                    <span className="text-soft-gold tracking-tight" aria-hidden="true">★★★★★</span>
+                                    <span className="font-semibold text-white">4.6</span>
+                                    <span className="text-warm-ivory/70">· 601 OpenTable reviews</span>
+                                </div>
                                 <OpenTableWidget
                                     restaurantId={locationsData.locations.frisco.reservation.rid}
                                     location="frisco"
@@ -189,9 +161,14 @@ export default function HeroSection() {
                                 <h2 className="text-xl font-heading font-semibold text-white mb-0.5 drop-shadow-lg">
                                     Lewisville
                                 </h2>
-                                <p className="text-warm-ivory/70 text-xs mb-3">
+                                <p className="text-warm-ivory/70 text-xs mb-1.5">
                                     Easy access from I-35E
                                 </p>
+                                <div className="flex items-center justify-center gap-1.5 mb-3 text-xs">
+                                    <span className="text-soft-gold tracking-tight" aria-hidden="true">★★★★★</span>
+                                    <span className="font-semibold text-white">4.7</span>
+                                    <span className="text-warm-ivory/70">· 427 OpenTable reviews</span>
+                                </div>
                                 <OpenTableWidget
                                     restaurantId={locationsData.locations.lewisville.reservation.rid}
                                     location="lewisville"

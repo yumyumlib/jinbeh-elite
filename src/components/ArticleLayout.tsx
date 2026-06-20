@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ReadingProgress, ArticleReveal } from "@/components/ArticleEnhancements";
 import { ShimmerCTA, ShinyBadge } from "@/components/MagicUI";
 import { BorderBeam } from "@/components/ui/BorderBeam";
+import ShareButtons from "@/components/ShareButtons";
 
 interface FAQItem {
   question: string;
@@ -222,6 +223,11 @@ export default function ArticleLayout({
                   </div>
                 </section>
               )}
+
+              {/* Social Share — diversify traffic sources */}
+              <ArticleReveal>
+                <ShareButtons url={`https://jinbeh.com/blog/${slug}`} title={title} />
+              </ArticleReveal>
 
               {/* CTA Section */}
               <ArticleReveal delay={100}>

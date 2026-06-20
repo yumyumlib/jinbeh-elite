@@ -228,7 +228,7 @@ export default function HibachiLewisvillePage() {
               <div className="px-4 md:border-x md:border-soft-gold/30">
                 <div className="text-2xl mb-1">⭐</div>
                 <p className="text-charcoal font-heading font-bold text-base leading-tight">
-                  4.7-star average across 426+ reviews
+                  4.7-star average across 427+ reviews
                 </p>
                 <p className="text-charcoal/60 text-xs mt-1">verified OpenTable diners</p>
               </div>

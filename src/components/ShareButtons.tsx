@@ -1,0 +1,123 @@
+"use client";
+
+import { useState } from "react";
+
+interface ShareButtonsProps {
+  /** Full canonical URL of the page being shared, e.g. https://jinbeh.com/blog/best-sushi-frisco */
+  url: string;
+  /** Title used as the share text */
+  title: string;
+  /** Optional override label */
+  label?: string;
+}
+
+/**
+ * Lightweight social share row for blog articles and shareable pages.
+ * Diversifies traffic sources (rec #4) by making content easy to pass along.
+ * Uses the native Web Share API on mobile when available, with explicit
+ * Facebook / X / LinkedIn / Email / Copy-link fallbacks everywhere else.
+ * No third-party scripts — keeps the page fast and tracker-free.
+ */
+export default function ShareButtons({ url, title, label = "Share this story" }: ShareButtonsProps) {
+  const [copied, setCopied] = useState(false);
+
+  const encodedUrl = encodeURIComponent(url);
+  const encodedTitle = encodeURIComponent(title);
+
+  const targets = [
+    {
+      name: "Facebook",
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      icon: (
+        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+      ),
+    },
+    {
+      name: "X",
+      href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+      icon: (
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      ),
+    },
+    {
+      name: "LinkedIn",
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+      icon: (
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+      ),
+    },
+    {
+      name: "Email",
+      href: `mailto:?subject=${encodedTitle}&body=${encodedTitle}%0A%0A${encodedUrl}`,
+      icon: (
+        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+      ),
+    },
+  ];
+
+  async function handleNativeShare() {
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title, url });
+      } catch {
+        /* user dismissed — no-op */
+      }
+    }
+  }
+
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* clipboard blocked — no-op */
+    }
+  }
+
+  return (
+    <div className="not-prose mt-12 md:mt-16 pt-6 border-t border-warm-ivory flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+      <span className="font-heading font-semibold text-charcoal text-sm uppercase tracking-wider">
+        {label}
+      </span>
+      <div className="flex flex-wrap items-center gap-2">
+        {/* Native share — only meaningfully useful on mobile, shown everywhere as a graceful enhancement */}
+        <button
+          type="button"
+          onClick={handleNativeShare}
+          aria-label="Share"
+          className="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-charcoal text-white hover:bg-accent-red transition-colors"
+        >
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z" />
+          </svg>
+        </button>
+        {targets.map((t) => (
+          <a
+            key={t.name}
+            href={t.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Share on ${t.name}`}
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-warm-ivory/60 text-charcoal hover:bg-accent-red hover:text-white transition-colors"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              {t.icon}
+            </svg>
+          </a>
+        ))}
+        <button
+          type="button"
+          onClick={handleCopy}
+          aria-label="Copy link"
+          className="inline-flex items-center gap-1.5 h-10 px-3 rounded-full bg-warm-ivory/60 text-charcoal hover:bg-accent-red hover:text-white transition-colors text-sm font-medium"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 010 5.656l-3 3a4 4 0 11-5.656-5.656l1.5-1.5M10.172 13.828a4 4 0 010-5.656l3-3a4 4 0 115.656 5.656l-1.5 1.5" />
+          </svg>
+          {copied ? "Copied!" : "Copy link"}
+        </button>
+      </div>
+    </div>
+  );
+}

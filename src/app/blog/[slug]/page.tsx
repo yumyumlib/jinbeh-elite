@@ -7,6 +7,7 @@ import { injectContextualLinks } from "@/components/ContextualLinks";
 import { BorderBeam } from "@/components/ui/BorderBeam";
 import { MagicCard } from "@/components/ui/magic-card";
 import blogData from "@/data/blog-posts.json";
+import ShareButtons from "@/components/ShareButtons";
 
 interface BlogPost {
     slug: string;
@@ -303,6 +304,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                         </Link>
                                     </div>
                                 </div>
+
+                                {/* Social Share — diversify traffic sources */}
+                                <ShareButtons url={`https://jinbeh.com/blog/${post.slug}`} title={post.title} />
                             </div>
                         </article>
 

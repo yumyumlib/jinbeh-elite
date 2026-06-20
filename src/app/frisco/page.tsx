@@ -680,6 +680,23 @@ export default function FriscoPage() {
               <Link href="/nearby/mckinney" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near McKinney</Link>
               <Link href="/nearby/allen" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Allen</Link>
             </div>
+
+            {/* Popular Frisco guides — internal links to help these pages get indexed */}
+            <div className="mt-10 max-w-3xl mx-auto">
+              <h3 className="text-center text-sm font-heading font-semibold text-charcoal/60 uppercase tracking-wider mb-4">
+                Popular Frisco Guides
+              </h3>
+              <div className="flex flex-wrap justify-center gap-3 text-sm">
+                <Link href="/blog/best-hibachi-near-me-dfw" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Best Hibachi Near Me</Link>
+                <Link href="/blog/best-sushi-frisco" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Best Sushi in Frisco</Link>
+                <Link href="/blog/japanese-food-near-me-frisco" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Japanese Food Near Me</Link>
+                <Link href="/blog/top-frisco-restaurants" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Top Frisco Restaurants</Link>
+                <Link href="/blog/best-restaurants-stonebriar" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Dining Near Stonebriar</Link>
+                <Link href="/blog/restaurants-near-universal-kids-resort-frisco" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Universal Kids Resort</Link>
+                <Link href="/blog/hibachi-birthday-party-frisco" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Birthday Parties</Link>
+                <Link href="/world-cup-2026" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">World Cup 2026 in DFW</Link>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -745,11 +762,17 @@ export default function FriscoPage() {
             </div>
           </div>
 
-          <p className="mt-4 text-sm">
-            <a href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">
-              Related: Things to Do in Frisco TX: Your Ultimate Guide →
-            </a>
-          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-2 text-sm">
+            <a href="/blog/things-to-do-frisco" className="text-accent-red hover:underline">Things to Do in Frisco</a>
+            <span className="text-charcoal/40">|</span>
+            <a href="/blog/best-restaurants-stonebriar" className="text-accent-red hover:underline">Best Restaurants Near Stonebriar</a>
+            <span className="text-charcoal/40">|</span>
+            <a href="/blog/best-hibachi-near-me-dfw" className="text-accent-red hover:underline">Best Hibachi Near Me</a>
+            <span className="text-charcoal/40">|</span>
+            <a href="/blog/japanese-food-near-me-frisco" className="text-accent-red hover:underline">Japanese Food Near Me Frisco</a>
+            <span className="text-charcoal/40">|</span>
+            <a href="/blog/gluten-free-japanese-food-frisco-lewisville" className="text-accent-red hover:underline">Gluten-Free Japanese Food</a>
+          </div>
         </section>
 
       </main >

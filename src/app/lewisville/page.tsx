@@ -700,6 +700,22 @@ export default function LewisvillePage() {
               <Link href="/nearby/highland-village" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Highland Village</Link>
               <Link href="/nearby/carrollton" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Near Carrollton</Link>
             </div>
+
+            {/* Popular Lewisville guides — internal links to help these pages get indexed */}
+            <div className="mt-10 max-w-3xl mx-auto">
+              <h3 className="text-center text-sm font-heading font-semibold text-charcoal/60 uppercase tracking-wider mb-4">
+                Popular Lewisville Guides
+              </h3>
+              <div className="flex flex-wrap justify-center gap-3 text-sm">
+                <Link href="/blog/best-hibachi-lewisville" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Best Hibachi in Lewisville</Link>
+                <Link href="/blog/best-sushi-lewisville" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Best Sushi in Lewisville</Link>
+                <Link href="/blog/japanese-restaurants-lewisville-tx" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Japanese Restaurants Lewisville</Link>
+                <Link href="/blog/best-steakhouses-lewisville" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Best Steakhouses Lewisville</Link>
+                <Link href="/blog/date-night-restaurants-lewisville" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Date Night in Lewisville</Link>
+                <Link href="/blog/hibachi-catering-lewisville" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">Hibachi Catering</Link>
+                <Link href="/world-cup-2026" className="px-4 py-2 bg-warm-ivory rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">World Cup 2026 in DFW</Link>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -762,6 +778,17 @@ export default function LewisvillePage() {
               <a href="/lewisville/castle-hills" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Castle Hills</a>
               <a href="/lewisville/vista-ridge" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Vista Ridge</a>
               <a href="/lewisville/kids-menu" className="px-5 py-2 bg-white rounded-full text-charcoal/80 hover:bg-accent-red hover:text-white transition-colors text-sm shadow-sm">Kids Menu</a>
+            </div>
+            <div className="mt-6 flex flex-wrap justify-center gap-2 text-sm">
+              <a href="/blog/best-steakhouses-lewisville" className="text-accent-red hover:underline">Best Steakhouses in Lewisville</a>
+              <span className="text-charcoal/40">|</span>
+              <a href="/blog/best-hibachi-near-me-dfw" className="text-accent-red hover:underline">Best Hibachi Near Me</a>
+              <span className="text-charcoal/40">|</span>
+              <a href="/blog/sushi-catering-lewisville" className="text-accent-red hover:underline">Sushi Catering Lewisville</a>
+              <span className="text-charcoal/40">|</span>
+              <a href="/blog/japanese-delivery-frisco-lewisville" className="text-accent-red hover:underline">Japanese Delivery</a>
+              <span className="text-charcoal/40">|</span>
+              <a href="/blog/best-seafood-dallas" className="text-accent-red hover:underline">Best Seafood in Dallas</a>
             </div>
           </div>
         </section>
