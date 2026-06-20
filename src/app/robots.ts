@@ -57,6 +57,7 @@ export default function robots(): MetadataRoute.Robots {
         sitemap: [
             "https://jinbeh.com/sitemap.xml",
             "https://jinbeh.com/image-sitemap.xml",
+            "https://jinbeh.com/sitemap-priority.xml",
         ],
         host: "https://jinbeh.com",
     };

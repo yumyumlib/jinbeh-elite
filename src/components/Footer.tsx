@@ -256,20 +256,23 @@ export default function Footer() {
                   <Link href="/blog" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
                     All Articles
                   </Link>
-                  <Link href="/blog?category=sushi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Sushi Guides
+                  <Link href="/blog/best-hibachi-near-me-dfw" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Best Hibachi Near Me
                   </Link>
-                  <Link href="/blog?category=hibachi" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Hibachi Guides
+                  <Link href="/blog/japanese-food-near-me-frisco" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Japanese Food Near Me
                   </Link>
-                  <Link href="/blog?category=celebrations" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Celebration Tips
+                  <Link href="/blog/corporate-event-catering-dfw" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Corporate Catering
                   </Link>
-                  <Link href="/blog?category=local-guide" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Local DFW Guides
+                  <Link href="/blog/sushi-platter-for-party" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Sushi Platters for Parties
                   </Link>
-                  <Link href="/blog?category=cuisine" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
-                    Japanese Cuisine
+                  <Link href="/blog/kid-friendly-japanese-restaurants-dfw" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Kid-Friendly Dining
+                  </Link>
+                  <Link href="/blog/group-dining-venues" className="block text-warm-ivory/70 hover:text-warm-ivory transition-colors">
+                    Group Dining Venues
                   </Link>
                 </nav>
               </div>

@@ -219,6 +219,26 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // /families — legacy page, redirect to family gatherings celebration page
+      {
+        source: "/families",
+        destination: "/celebrations/family-gatherings",
+        permanent: true,
+      },
+
+      // Old WordPress spam/hack artifacts — return 301 to homepage
+      // (these are pharmacy spam pages from an old WordPress hack)
+      {
+        source: "/main/wp-content/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/main/:path*",
+        destination: "/",
+        permanent: true,
+      },
+
       // World Cup 2026 — alias slugs route to canonical pillar
       {
         source: "/world-cup",

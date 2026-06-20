@@ -702,6 +702,21 @@ export default function CelebrationsPage() {
               <Link href="/blog/thanksgiving-dining-guide" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
                 Thanksgiving Guide
               </Link>
+              <Link href="/blog/unique-kids-birthday-party-places" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Unique Birthday Venues
+              </Link>
+              <Link href="/blog/kid-friendly-japanese-restaurants-dfw" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Kid-Friendly Restaurants
+              </Link>
+              <Link href="/celebrations/corporate-events" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Corporate Events
+              </Link>
+              <Link href="/celebrations/date-night" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Date Night
+              </Link>
+              <Link href="/celebrations/rehearsal-dinner" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
+                Rehearsal Dinners
+              </Link>
               <Link href="/nearby/plano" className="px-4 py-2 bg-white rounded-full text-charcoal hover:bg-accent-red hover:text-white transition-colors">
                 Near Plano
               </Link>

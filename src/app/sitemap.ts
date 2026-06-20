@@ -16,12 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const routes: MetadataRoute.Sitemap = [];
 
     // Accurate lastmod dates per content section
-    const coreLastMod = new Date('2026-03-29');      // Last major update
-    const menuLastMod = new Date('2026-03-29');       // Menu items stable
-    const celebrationsLastMod = new Date('2026-02-18'); // Celebration pages last batch
+    const coreLastMod = new Date('2026-06-20');      // Freshness signal boost for indexing
+    const menuLastMod = new Date('2026-06-20');       // Freshness signal boost for indexing
+    const celebrationsLastMod = new Date('2026-06-20'); // Freshness signal boost for indexing
     const nearbyLastMod = new Date('2026-01-30');      // Nearby city pages created
-    const blogLastMod = new Date('2026-03-29');        // Blog hub updated
-    const paaLastMod = new Date('2026-05-12');         // PAA pages launched
+    const blogLastMod = new Date('2026-06-20');        // Freshness signal boost for indexing
+    const paaLastMod = new Date('2026-06-20');         // Freshness signal boost for indexing
 
     // 1. Core Pages
     const corePages = [
@@ -251,6 +251,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             '/world-cup', '/fifa-2026', '/samurai-blue', '/japan-world-cup',
             '/blog/sushi-platters-near-me', '/blog/japanese-restaurants-lewisville',
             '/blog/best-hibachi-dallas', '/blog/types-of-sushi-rolls', '/blog/what-is-hibachi',
+            '/families',
         ].map((p) => `${baseUrl}${p}`)
     );
 

@@ -336,7 +336,7 @@ export default function CateringPage() {
 
         {/* Related Blog Articles */}
         <RelatedBlogPosts
-          slugs={["hibachi-catering-dfw", "large-group-dining", "restaurants-private-rooms"]}
+          slugs={["hibachi-catering-dfw", "corporate-event-catering-dfw", "sushi-platter-for-party", "sushi-catering-lewisville", "large-group-dining", "group-dining-venues"]}
           title="Catering Ideas & Inspiration"
           subtitle="Planning an event? These guides will help you create an unforgettable experience."
           layout="grid"
