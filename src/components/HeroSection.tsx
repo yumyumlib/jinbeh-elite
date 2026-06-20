@@ -33,15 +33,44 @@ export default function HeroSection() {
 
     return (
         <section className="relative flex items-center justify-center overflow-hidden min-h-[90vh] md:min-h-screen py-16 sm:py-24 md:py-32 w-full max-w-[100vw]">
-            {/* Hero Image - static for fast load, no video until optimized version is ready */}
-            <RespImage
-                src="/images/hero/jinbeh-hero-poster.jpg"
-                alt="Jinbeh Japanese Restaurant — hibachi chef performing with flames alongside a premium sushi spread with nigiri, specialty rolls, and sashimi"
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover object-center z-0"
-            />
+            {/* Hero Image - static for fast load, no video until optimized version is ready.
+                Responsive art-direction via <picture>: a portrait hibachi-fire photo on
+                phones/tablets (where a tall image fills the viewport far better than a
+                cropped landscape), and the existing landscape poster on desktop. Only ONE
+                resource downloads per viewport (the browser picks the first matching
+                <source>, else the <img>/RespImage desktop srcset). Eager + high priority
+                because the hero is above the fold on every viewport (lazy-loading an LCP
+                image is a Lighthouse anti-pattern). */}
+            <picture>
+                {/* Mobile (< 768px): portrait fire photo — webp, jpeg fallback */}
+                <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcSet="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-750.webp 750w, /images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp 1500w"
+                    sizes="100vw"
+                />
+                <source
+                    media="(max-width: 767px)"
+                    srcSet="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-750.jpg 750w"
+                    sizes="100vw"
+                />
+                {/* Tablet (768px–1024px): same portrait photo, larger variant */}
+                <source
+                    media="(min-width: 768px) and (max-width: 1024px)"
+                    type="image/webp"
+                    srcSet="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1200.webp 1200w"
+                    sizes="100vw"
+                />
+                {/* Desktop (> 1024px): unchanged landscape hero with its responsive webp srcset */}
+                <RespImage
+                    src="/images/hero/jinbeh-hero-poster.jpg"
+                    alt="Jinbeh hibachi chef creating a towering flame show while grilling steak, shrimp, and vegetables at the teppanyaki grill in Frisco TX"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover object-center z-0"
+                />
+            </picture>
 
             {/* Dark Overlay for text contrast */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 z-[2]" />
