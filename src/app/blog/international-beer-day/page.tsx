@@ -102,8 +102,8 @@ export default function InternationalBeerDay() {
             <h1>🍺 What Is International Beer Day?</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/beverages/LewisvilleBar.webp"
-                alt="Japanese beer selection at Jinbeh restaurant"
+                src="/images/drinks/SpicyMargaritaBeverageDrink.jpg"
+                alt="International Beer Day at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

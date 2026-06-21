@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BlogSeoBoost from "@/components/BlogSeoBoost";
 
 export default function BlogLayout({
     children,
@@ -10,6 +11,7 @@ export default function BlogLayout({
         <>
             <Header />
             {children}
+            <BlogSeoBoost />
             <Footer />
         </>
     );

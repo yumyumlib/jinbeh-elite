@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/menu",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        url: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Menu",
@@ -170,6 +171,7 @@ export default function MenuPage() {
             </p>
 </section>
             </main>
+            <OnlineOrderCTA />
             <Footer />
         </>
     );

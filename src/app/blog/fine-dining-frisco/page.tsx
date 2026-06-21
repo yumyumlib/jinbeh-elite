@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         title: "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh",
         description:
             "Explore the finest dining experiences in Frisco. From Jinbeh's authentic Japanese cuisine to contemporary American fare.",
-        images: ["/images/blog/7-C060324-6447.jpg"],
+        images: ["/images/photoshoot/hibachi-steak.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/fine-dining-frisco",
@@ -35,7 +35,7 @@ const articleSchema = {
     headline: "Top Fine Dining Spots in Frisco, TX: Discover Jinbeh",
     description:
         "Comprehensive guide to fine dining restaurants in Frisco, Texas, featuring Japanese and international cuisine.",
-    image: "https://jinbeh.com/images/blog/7-C060324-6447.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
     datePublished: "2026-01-22",
     dateModified: "2026-03-11",
     author: {
@@ -182,8 +182,8 @@ export default function FineDiningFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/7-C060324-6447.jpg"
-                    alt="Fine dining experience at Jinbeh Frisco"
+                    src="/images/photoshoot/hibachi-steak.jpg"
+                    alt="Fine Dining Frisco Tx at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

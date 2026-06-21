@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
+import CateringPackages from "@/components/CateringPackages";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -248,7 +250,7 @@ export default function WeddingCateringPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
+            poster="/images/instagram/sushi-feast-flatlay.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/wedding-celebration.mp4"
@@ -602,8 +604,8 @@ export default function WeddingCateringPage() {
               <div className="rounded-2xl overflow-hidden shadow-lg group">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
-                    alt="Bridal shower with Japanese appetizers"
+                    src="/images/instagram/sushi-feast-flatlay.jpg"
+                    alt="Wedding Catering Japanese at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -780,6 +782,8 @@ export default function WeddingCateringPage() {
           </div>
         </section>
       </main>
+      <CateringPackages />
+      <PageSeoBoost route="/catering/wedding" />
       <Footer />
     </>
   );

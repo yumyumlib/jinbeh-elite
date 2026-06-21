@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -519,6 +520,7 @@ Pricing is listed on our current menu. Browse the full menu for details.
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/appetizers" />
       <Footer />
     </>
   );

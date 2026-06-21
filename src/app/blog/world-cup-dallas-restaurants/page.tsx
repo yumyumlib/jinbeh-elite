@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/blog/world-cup-dallas-restaurants",
         images: [
             {
-                url: "https://jinbeh.com/images/celebrations/jinbeh_group.jpg",
+                url: "https://jinbeh.com/images/celebrations/world-cup-watch-party.webp",
                 width: 1200,
                 height: 630,
                 alt: "Group celebrating at Jinbeh Japanese Restaurant during the FIFA World Cup 2026 in Dallas",
@@ -77,7 +77,7 @@ const articleSchema = {
     headline: "World Cup 2026 Dallas: Where to Eat, Watch & Cheer Japan in DFW",
     description:
         "A local's guide to the FIFA World Cup 2026 in Dallas-Fort Worth — AT&T Stadium matches, the Japan base camp at Toyota Stadium in Frisco, the Fair Park Fan Festival, and the best places to eat and celebrate during the 39-day tournament.",
-    image: "https://jinbeh.com/images/celebrations/jinbeh_group.jpg",
+    image: "https://jinbeh.com/images/celebrations/world-cup-watch-party.webp",
     datePublished: "2026-05-11",
     dateModified: "2026-05-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
@@ -208,8 +208,8 @@ export default function WorldCupDallasRestaurantsPost() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/celebrations/jinbeh_group.jpg"
-                    alt="DFW fans celebrating during the FIFA World Cup 2026 at Jinbeh Japanese Restaurant in Frisco and Lewisville"
+                    src="/images/celebrations/world-cup-watch-party.webp"
+                    alt="World Cup Dallas Restaurants at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

@@ -98,8 +98,8 @@ export default function HibachiCatering() {
                     <h1 className="text-4xl md:text-5xl font-heading font-bold text-white hero-headline">Hibachi Catering DFW</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-1200w.webp"
-                alt="Professional hibachi chef cooking at Jinbeh for catering events"
+                src="/images/photoshoot/hibachi-flame-action.jpg"
+                alt="Hibachi Catering at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

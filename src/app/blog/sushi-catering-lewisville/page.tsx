@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Sushi Catering Lewisville TX | Jinbeh",
         description: "Drop-off sushi platters catered across Lewisville. Signature rolls, sashimi, party trays. Family-owned since 1988.",
         url: "https://jinbeh.com/blog/sushi-catering-lewisville",
-        images: [{ url: "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp", width: 1200, height: 630, alt: "Sushi catering Lewisville TX — Jinbeh fresh sushi presentation" }],
+        images: [{ url: "https://jinbeh.com/images/instagram/sushi-feast-flatlay.jpg", width: 1200, height: 630, alt: "Sushi catering Lewisville TX — Jinbeh fresh sushi presentation" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Sushi Catering Lewisville TX | Jinbeh", description: "Drop-off sushi platters catered across Lewisville." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Sushi Catering Lewisville TX: Platters & Delivery",
     description: "Jinbeh's drop-off sushi catering for Lewisville, TX — platters, signature rolls, sashimi options, lead times, and pricing.",
-    image: "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp",
+    image: "https://jinbeh.com/images/instagram/sushi-feast-flatlay.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function SushiCateringLewisvillePost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp" alt="Sushi catering Lewisville TX — fresh sushi presentation at Jinbeh" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/instagram/sushi-feast-flatlay.jpg" alt="Sushi Catering Lewisville at Jinbeh Lewisville Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
         description:
             "FIFA World Cup 2026 at Jinbeh Frisco — hibachi, sushi, and screens 3 miles from Toyota Stadium, the Japan base camp.",
         url: "https://jinbeh.com/frisco/world-cup",
-        images: [{ url: "https://jinbeh.com/images/og-image.jpg", width: 1200, height: 630, alt: "World Cup 2026 watch party at Jinbeh Frisco" }],
+        images: [{ url: "https://jinbeh.com/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg", width: 1200, height: 630, alt: "World Cup 2026 watch party at Jinbeh Frisco" }],
     },
     alternates: { canonical: "https://jinbeh.com/frisco/world-cup" },
 };
@@ -187,6 +188,7 @@ export default function FriscoWorldCupPage() {
                     </div>
                 </section>
             </main>
+            <PageSeoBoost route="/frisco/world-cup" />
             <Footer />
         </>
     );

@@ -133,8 +133,8 @@ export default function CorporateEventsPage() {
 
 <section className="relative min-h-[60vh] flex items-center text-white py-20">
           <Image
-            src="/images/celebrations/jinbeh_group.jpg"
-            alt="Corporate team dinner at Jinbeh Japanese Restaurant hibachi table"
+            src="/images/about/chef-choo-choo.jpg"
+            alt="Corporate Dinner Frisco at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority

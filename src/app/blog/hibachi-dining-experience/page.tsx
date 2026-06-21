@@ -80,7 +80,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Hibachi Restaurant Menu: Discover Flavor & Fun | Jinbeh",
   "description": "Discover the exciting world of hibachi restaurant menus, from sizzling delights to vegetarian options. Experience culinary art and entertainment at its finest w",
-  "image": "https://jinbeh.com/images/catalog/homemade-sauces.jpg",
+  "image": "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
   "datePublished": "2026-01-30",
   "dateModified": "2026-03-24",
   "author": {
@@ -213,8 +213,8 @@ export default function HibachiDiningExperiencePage() {
       <div className="my-8 max-w-2xl mx-auto">
         <div className="rounded-2xl overflow-hidden shadow-lg border-2 border-soft-gold/20">
           <Image
-            src="/images/catalog/homemade-sauces.jpg"
-            alt="Jinbeh house-made dipping sauces — spicy chili sauce and signature yum yum sauce made fresh daily from scratch"
+            src="/images/photoshoot/hibachi-flame-action.jpg"
+            alt="Hibachi Dining Experience at Jinbeh Japanese restaurant"
             width={800}
             height={533}
             className="w-full h-auto"

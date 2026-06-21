@@ -131,8 +131,8 @@ export default function JapaneseTakeoutNearMe() {
             <h1>Why Japanese Takeout Is Booming in DFW</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/food/BentoBoxLunchSet.jpg"
-                alt="Jinbeh takeout bento box with fresh sushi and sides"
+                src="/images/photoshoot/hibachi-chicken.jpg"
+                alt="Japanese Takeout Near Me at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

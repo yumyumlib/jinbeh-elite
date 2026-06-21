@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/nearby/highland-village",
     images: [
       {
-        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        url: "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Nearby Highland Village",
@@ -182,7 +182,7 @@ export default function HighlandVillageNearbyPage() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/interior/FriscoLocation_Bar_Front.jpg')",
+              backgroundImage: "url('/images/photoshoot/hibachi-plate-shrimp.jpg')",
             }}
           />
           <div className="hero-overlay" />

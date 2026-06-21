@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Things to Do in Frisco TX: Top Activities & Dining",
         description: "Your ultimate guide to Frisco's best attractions, activities, and restaurants.",
-        images: ["/images/blog/15-C060324-6663.jpg"],
+        images: ["/images/photoshoot/hibachi-chicken.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/things-to-do-frisco",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Things to Do in Frisco TX: Top Activities & Dining",
     description: "Complete guide to Frisco, Texas attractions, family activities, and the best places to eat.",
-    image: "https://jinbeh.com/images/blog/15-C060324-6663.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-chicken.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -140,8 +140,8 @@ export default function ThingsToDoFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/15-C060324-6663.jpg"
-                    alt="Vibrant dining experience at Jinbeh Japanese Restaurant in Frisco TX"
+                    src="/images/photoshoot/hibachi-chicken.jpg"
+                    alt="Things To Do In Frisco Tx at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

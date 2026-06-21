@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -189,8 +190,8 @@ export default function FriscoSpecialsPage() {
         <section id="hibachi-for-two" className="py-20 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image
-              src="/images/food/hibachi-grill.jpg"
-              alt=""
+              src="/images/photoshoot/hibachi-onion-volcano-flame.jpg"
+              alt="Frisco Specials at Jinbeh Frisco Japanese restaurant"
               fill
               sizes="100vw"
               className="object-cover"
@@ -659,6 +660,7 @@ export default function FriscoSpecialsPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/specials" />
       <Footer />
     </>
   );

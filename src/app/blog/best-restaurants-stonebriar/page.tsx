@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Best Restaurants Near Stonebriar Mall Frisco TX",
         description: "Your complete guide to the best dining near Stonebriar Centre in Frisco, Texas.",
-        images: ["/images/blog/1-C060324-6328.jpg"],
+        images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-restaurants-stonebriar",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Best Restaurants Near Stonebriar Mall Frisco TX",
     description: "Comprehensive guide to the best restaurants near Stonebriar Centre in Frisco, Texas.",
-    image: "https://jinbeh.com/images/blog/1-C060324-6328.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -140,8 +140,8 @@ export default function BestRestaurantsStonebriar() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/1-C060324-6328.jpg"
-                    alt="Beautifully plated hibachi dinner at Jinbeh near Stonebriar Mall Frisco"
+                    src="/images/photoshoot/hibachi-plate-shrimp.jpg"
+                    alt="Restaurants Near Stonebriar Mall at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

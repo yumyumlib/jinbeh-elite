@@ -28,7 +28,7 @@ export const appetizers: MenuItem[] = [
             { question: 'Is edamame healthy?', answer: 'Extremely! Edamame is packed with plant-based protein (about 17g per serving), fiber, and essential amino acids. It\'s naturally gluten-free, dairy-free, and one of the most nutritious appetizers on any menu.' },
         ],
         proTip: 'Upgrade to Spicy Garlic Edamame. the chili garlic oil version is addictive and worth every penny.',
-        heroImage: '/images/food/seaweedsalad.png',
+        heroImage: '/images/photoshoot/jinbeh-tuna-tower-sashimi-frisco.jpg',
         jinbehStory: "Edamame is the number-one appetizer at both Jinbeh locations. The Spicy Garlic upgrade is wildly popular. Our kitchen tosses the pods in chili garlic oil with fresh minced garlic the moment they leave the steamer.",
         origin: "Edamame has been eaten in Japan for over 1,000 years. The word means \"stem beans\" because they were originally sold still attached to the stalk. In modern izakaya culture, edamame and beer is as iconic as chips and salsa.",
         nutritionHighlight: "Edamame is a nutritional powerhouse: 17g protein per cup with all nine essential amino acids. It is one of the few plant foods that qualify as a complete protein.",

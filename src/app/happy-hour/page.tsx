@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import { HeroSection, RevealSection, AnimatedGradientText } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,7 +9,7 @@ import Link from "next/link";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: "Happy Hour | Jinbeh Japanese Restaurant | Frisco & Lewisville TX",
+  title: "Happy Hour Frisco & Lewisville TX | $4 Beer $5 Sake $6 Wine | Jinbeh",
   description:
     "Jinbeh Happy Hour: Mon-Fri 5-6:30pm. $4 Japanese draft beer, $5 small hot sake, $6 wine. Frisco and Lewisville locations.",
   keywords: [
@@ -21,8 +22,7 @@ export const metadata: Metadata = {
     "happy hour specials frisco tx",
     "sushi happy hour near me",
     "happy hour near me open now",
-    " beer happy hour frisco",
-    " sake happy hour",
+    "beer happy hour frisco",
     "happy hour 5pm frisco tx",
     "cheap sake near me",
     "japanese beer specials frisco",
@@ -143,7 +143,7 @@ const eventSchema = {
   "url": "https://jinbeh.com/happy-hour",
   "image": "https://jinbeh.com/images/drinks/JinbehPunchBeverageDrink.jpg",
   "startDate": "2026-05-19T17:00:00-05:00",
-  "endDate": "2026-12-31T18:30:00-06:00",
+  "endDate": "2027-12-31T18:30:00-06:00",
   "performer": {
     "@type": "Organization",
     "name": "Jinbeh Japanese Restaurant",
@@ -354,8 +354,8 @@ export default function HappyHourPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto">
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/catalog/23-C060324-6842.jpg"
-                  alt="Jinbeh signature lychee martini with tropical garnish"
+                  src="/images/beverages/JinbehPunch.jpg"
+                  alt="Happy Hour Frisco at Jinbeh Japanese restaurant"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -585,6 +585,7 @@ export default function HappyHourPage() {
           </p>
         </section>
       </main>
+      <PageSeoBoost route="/happy-hour" />
       <Footer />
     </>
   );

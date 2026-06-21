@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import { RevealSection, HeroSection, ShinyBadge, NumberTickerInline as NumberTicker, AnimatedGradientText } from "@/components/MagicUI";
 import { MagicCard } from "@/components/ui/magic-card";
 import { Marquee } from "@/components/ui/Marquee";
@@ -772,6 +773,7 @@ export default function AboutPage() {
           </p>
         </section>
       </main>
+      <PageSeoBoost route="/about" />
       <Footer />
     </>
   );

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/nearby/richardson",
     images: [
       {
-        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        url: "https://jinbeh.com/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Nearby Richardson",

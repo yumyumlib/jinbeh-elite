@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Date Night Restaurants Lewisville TX | Jinbeh",
         description: "Sushi bar or hibachi table — how to plan a date night at Jinbeh Lewisville. Happy hour, reservation tips, and the move that works best.",
         url: "https://jinbeh.com/blog/date-night-restaurants-lewisville",
-        images: [{ url: "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp", width: 1200, height: 630, alt: "Date night at Jinbeh Lewisville — warm interior, sushi bar, hibachi tables" }],
+        images: [{ url: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg", width: 1200, height: 630, alt: "Date night at Jinbeh Lewisville — warm interior, sushi bar, hibachi tables" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Date Night Restaurants Lewisville TX | Jinbeh", description: "Sushi bar or hibachi table — how to plan a date night at Jinbeh Lewisville." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Date Night Restaurants Lewisville TX: Sushi & Hibachi",
     description: "How to plan a date night at Jinbeh Lewisville — sushi bar vs. hibachi table, happy hour timing, and reservation strategy.",
-    image: "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function DateNightLewisvillePost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp" alt="Date night at Jinbeh Lewisville — warm interior, sushi bar, hibachi tables" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/hibachi-onion-volcano-flame.jpg" alt="Date Night Restaurants Lewisville at Jinbeh Lewisville Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

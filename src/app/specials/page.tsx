@@ -327,8 +327,8 @@ export default function SpecialsPage() {
         <section id="hibachi-for-two" className="py-20 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image
-              src="/images/food/hibachi-grill.jpg"
-              alt=""
+              src="/images/instagram/sushi-feast-overhead.jpg"
+              alt="Specials at Jinbeh Japanese restaurant"
               fill
               sizes="100vw"
               className="object-cover"

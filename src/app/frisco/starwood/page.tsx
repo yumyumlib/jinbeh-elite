@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -247,8 +248,8 @@ export default function StarwoodPage() {
                 <div className="relative">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
-                      src="/images/about/chef-flames.jpg"
-                      alt="Hibachi chef at Jinbeh Frisco near Starwood"
+                      src="/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp"
+                      alt="Japanese Restaurant Starwood Frisco at Jinbeh Frisco Japanese restaurant"
                       fill
                       className="object-cover"
                     />
@@ -458,6 +459,7 @@ export default function StarwoodPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/starwood" />
       <Footer />
     </>
   );

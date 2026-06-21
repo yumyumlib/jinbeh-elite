@@ -108,8 +108,8 @@ export default function WorldCupPage() {
         <section className="relative h-[60vh] min-h-[480px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-deep-indigo to-charcoal" />
           <Image
-            src="/images/celebrations/jinbeh_group.jpg"
-            alt="Group of friends celebrating at Jinbeh Japanese Restaurant in Frisco and Lewisville TX"
+            src="/images/celebrations/world-cup-watch-party.webp"
+            alt="World Cup 2026 Frisco at Jinbeh Japanese restaurant"
             fill
             className="object-cover opacity-40"
             priority

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -150,7 +151,7 @@ export default function LewisvilleMenuPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/lewisville/IMG_1910.jpg"
+            poster="/images/photoshoot/hibachi-flame-action.jpg"
           >
             <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
           </video>
@@ -275,6 +276,7 @@ export default function LewisvilleMenuPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/lewisville/menu" />
       <Footer />
     </>
   );}

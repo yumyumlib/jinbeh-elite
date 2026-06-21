@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Private Dining Rooms Frisco TX | Jinbeh",
         description: "Private hibachi and sushi dining for groups at Jinbeh Frisco, near Stonebriar. Birthdays, rehearsal dinners, corporate events.",
         url: "https://jinbeh.com/blog/private-dining-rooms-frisco",
-        images: [{ url: "https://jinbeh.com/images/interior/JinbehFriscoTables.jpg", width: 1200, height: 630, alt: "Private dining at Jinbeh Frisco — hibachi tables and group dining setup near Stonebriar" }],
+        images: [{ url: "https://jinbeh.com/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp", width: 1200, height: 630, alt: "Private dining at Jinbeh Frisco — hibachi tables and group dining setup near Stonebriar" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Private Dining Rooms Frisco TX | Jinbeh", description: "Private hibachi and sushi dining for groups at Jinbeh Frisco." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Private Dining Rooms Frisco TX: Hibachi & Sushi Groups",
     description: "Private dining and group event hosting at Jinbeh Frisco — hibachi for groups, semi-private setups, booking process, and what works for which event.",
-    image: "https://jinbeh.com/images/interior/JinbehFriscoTables.jpg",
+    image: "https://jinbeh.com/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function PrivateDiningFriscoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/interior/JinbehFriscoTables.jpg" alt="Private dining Frisco TX — Jinbeh hibachi tables and group dining setup near Stonebriar" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp" alt="Private Dining Rooms Frisco at Jinbeh Frisco Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Top Steakhouses in Lewisville TX: Best Steak Spots",
         description: "Your guide to the best steak restaurants in Lewisville, Texas.",
-        images: ["/images/blog/5-C060324-6397.jpg"],
+        images: ["/images/photoshoot/hibachi-flame-action.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-steakhouses-lewisville",
@@ -32,7 +32,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Top Steakhouses in Lewisville TX: Best Steak Spots",
     description: "Comprehensive guide to the best steakhouses and steak dining in Lewisville, Texas.",
-    image: "https://jinbeh.com/images/blog/5-C060324-6397.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
     datePublished: "2026-02-18",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -140,8 +140,8 @@ export default function BestSteakhousesLewisville() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/5-C060324-6397.jpg"
-                    alt="Sizzling hibachi steak being prepared tableside at Jinbeh Lewisville"
+                    src="/images/photoshoot/hibachi-flame-action.jpg"
+                    alt="Steakhouses Lewisville Tx at Jinbeh Lewisville Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/blog/japanese-restaurants-frisco-tx",
         images: [
             {
-                url: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg",
+                url: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Japanese restaurants in Frisco TX — guide to the local landscape from Jinbeh",
@@ -60,7 +60,7 @@ const articleSchema = {
     headline: "Japanese Restaurants in Frisco TX: The Local Guide",
     description:
         "A local guide to Japanese restaurants in Frisco, TX, written by a family-owned Japanese restaurant that has called the city home since 1988.",
-    image: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg",
     datePublished: "2026-05-12",
     dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
@@ -154,8 +154,8 @@ export default function JapaneseRestaurantsFriscoPost() {
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/hq/sushi-rolls-2026.jpg"
-                    alt="Sushi rolls at Jinbeh — local guide to Japanese restaurants in Frisco TX"
+                    src="/images/photoshoot/hibachi-onion-volcano-flame.jpg"
+                    alt="Japanese Restaurants In Frisco Tx at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

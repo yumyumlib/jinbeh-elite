@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -254,8 +255,8 @@ export default function CastleHillsPage() {
                 <div className="relative">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
-                      src="/images/about/chef-choo-choo.jpg"
-                      alt="Hibachi chef cooking at Jinbeh Lewisville near Castle Hills"
+                      src="/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg"
+                      alt="Japanese Restaurant Castle Hills Lewisville at Jinbeh Lewisville Japanese restaurant"
                       fill
                       className="object-cover"
                     />
@@ -433,6 +434,7 @@ export default function CastleHillsPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/lewisville/castle-hills" />
       <Footer />
     </>
   );

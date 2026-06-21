@@ -163,8 +163,8 @@ export default function HibachiMenuGuidePage() {
       </h1>
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
         <Image
-          src="/images/food/HibachiComboNYStripAndColossalShrimp.jpg"
-          alt="Jinbeh hibachi steak and chicken dinner"
+          src="/images/photoshoot/hibachi-flame-action.jpg"
+          alt="Hibachi Menu at Jinbeh Japanese restaurant"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 800px"

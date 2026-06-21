@@ -28,7 +28,7 @@ export const cocktails: MenuItem[] = [
             { question: 'Should I drink sake warm or cold?', answer: 'It depends on the style! Premium daiginjo sakes are best served chilled to preserve their delicate aromatics. More robust junmai styles can be wonderful warm. Our flight is typically served chilled, but ask your server for warm options.' },
         ],
         proTip: 'Ask your server which sake pairs best with what you\'re ordering. they can customize your flight around your meal.',
-        heroImage: '/images/food/cocktail.jpg',
+        heroImage: '/images/food/MuleSummerSignatureCocktail.jpg',
         jinbehStory: "Jinbeh curates its sake flight from carefully selected Japanese breweries. Our staff trains on sake varieties to recommend pairings based on your entrée. The flight changes seasonally.",
         origin: "Sake has been brewed in Japan for over 2,000 years. It is made from rice, water, yeast, and koji mold. The brewing process is closer to beer than wine.",
         nutritionHighlight: "Sake contains approximately 130 calories per 5oz serving. It is naturally free of sulfites and has lower acidity than wine.",

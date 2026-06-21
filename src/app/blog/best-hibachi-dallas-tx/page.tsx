@@ -117,7 +117,7 @@ export default function BestHibachiDallas() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/photoshoot/hibachi-plate-shrimp.jpg"
+                    poster="/images/photoshoot/hibachi-flame-action.jpg"
                 >
                     <source src="/videos/LOCAL-FRI-HIBACHI-chef-cooking-fire-family-01.mp4" type="video/mp4" />
                 </video>

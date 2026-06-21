@@ -96,8 +96,8 @@ export default function GiftCardsPage() {
             <HeroSection className="relative py-20 bg-gradient-to-br from-deep-indigo to-charcoal text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <Image
-                        src="/images/blog/7-C060324-6447.jpg"
-                        alt="Sushi"
+                        src="/images/instagram/sushi-feast-flatlay.jpg"
+                        alt="Jinbeh Gift Card at Jinbeh Japanese restaurant"
                         fill
                         className="object-cover"
                     />

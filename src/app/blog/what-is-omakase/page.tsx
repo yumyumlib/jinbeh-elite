@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         title: "What is Omakase? The Ultimate Japanese Sushi Experience",
         description:
             "Complete guide to omakase: meaning, history, what to expect, and etiquette for an unforgettable sushi dinner.",
-        images: ["/images/blog/15-C060324-6663.jpg"],
+        images: ["/images/photoshoot/specialty-roll.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/what-is-omakase",
@@ -47,7 +47,7 @@ const articleSchema = {
     headline: "What is Omakase? A Complete Guide to the Japanese Sushi Experience",
     description:
         "Comprehensive guide to omakase dining, including meaning, history, etiquette, and what to expect.",
-    image: "https://jinbeh.com/images/blog/15-C060324-6663.jpg",
+    image: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
     datePublished: "2026-01-29",
     dateModified: "2026-03-11",
     author: {
@@ -202,8 +202,8 @@ export default function WhatIsOmakase() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/15-C060324-6663.jpg"
-                    alt="Omakase sushi experience at Jinbeh"
+                    src="/images/photoshoot/specialty-roll.jpg"
+                    alt="What Is Omakase at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

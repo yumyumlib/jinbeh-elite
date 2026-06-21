@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Hibachi Birthday Party Frisco TX | Jinbeh",
         description: "Plan a hibachi birthday party at Jinbeh Frisco — chef show, group seating, kids' menu, and reservations near Stonebriar.",
         url: "https://jinbeh.com/blog/hibachi-birthday-party-frisco",
-        images: [{ url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg", width: 1200, height: 630, alt: "Hibachi birthday party at Jinbeh Frisco TX — chef performing onion volcano for celebration table" }],
+        images: [{ url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg", width: 1200, height: 630, alt: "Hibachi birthday party at Jinbeh Frisco TX — chef performing onion volcano for celebration table" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Hibachi Birthday Party Frisco TX | Jinbeh", description: "Plan a hibachi birthday at Jinbeh Frisco — chef show, group seating, kids' menu." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Hibachi Birthday Party Frisco TX: How to Plan It",
     description: "A practical guide to planning a hibachi birthday party at Jinbeh Frisco — group sizes, booking timeline, kids' menus, chef show, and night-of expectations.",
-    image: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function HibachiBirthdayPartyFriscoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg" alt="Hibachi birthday party Frisco TX — Jinbeh chef performing onion volcano for celebration table" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/hibachi-flame-action.jpg" alt="Hibachi Birthday Party Frisco at Jinbeh Frisco Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

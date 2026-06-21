@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import { RevealSection, ShinyBadge } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -132,8 +133,8 @@ export default function DeliveryPage() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/food/FreshSushiAndDessertsAtSushiBar.jpg"
-            alt="Fresh sushi delivery from Jinbeh Japanese restaurant in Frisco and Lewisville"
+            src="/images/instagram/sushi-feast-overhead.jpg"
+            alt="Jinbeh Delivery at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority
@@ -719,6 +720,7 @@ export default function DeliveryPage() {
             </p>
 </section>
       </main>
+      <OnlineOrderCTA />
       <Footer />
     </>
   );

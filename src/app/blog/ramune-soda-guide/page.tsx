@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Ramune Soda: Unique Flavors & Marble Magic Guide",
         description: "Experience Ramune soda. Learn about flavors, the iconic marble seal, and where to find it.",
-        images: ["/images/beverages/RamuneSoda.webp"],
+        images: ["/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/ramune-soda-guide",
@@ -64,8 +64,8 @@ export default function RamuneSodaGuide() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden bg-charcoal">
                 <Image
-                    src="/images/beverages/RamuneSoda.webp"
-                    alt="Ramune soda bottles with iconic marble seal"
+                    src="/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png"
+                    alt="Ramune Soda at Jinbeh Japanese restaurant"
                     fill
                     sizes="100vw"
                     className="object-cover"
@@ -89,7 +89,7 @@ export default function RamuneSodaGuide() {
 
                             <figure className="my-8 rounded-2xl overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/beverages/RamuneSoda.webp"
+                                    src="/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png"
                                     alt="Colorful Ramune soda bottles showing the iconic glass marble seal"
                                     width={1600}
                                     height={1530}

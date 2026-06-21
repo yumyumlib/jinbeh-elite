@@ -207,8 +207,8 @@ export default function HowToEatSushi() {
                     </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/food/SamaraiRollCloseup.jpg"
-                alt="Close-up of artfully crafted samurai sushi roll at Jinbeh"
+                src="/images/photoshoot/specialty-roll.jpg"
+                alt="How To Eat Sushi at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

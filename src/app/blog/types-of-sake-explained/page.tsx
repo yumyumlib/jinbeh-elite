@@ -145,8 +145,8 @@ export default function TypesOfSakeExplained() {
                     </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/beverages/NigoriSparklingSake.webp"
-                alt="Traditional sake serving at Jinbeh Japanese Restaurant"
+                src="/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png"
+                alt="Types Of Sake at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

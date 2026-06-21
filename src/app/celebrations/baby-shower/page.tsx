@@ -123,8 +123,8 @@ export default function BabyShowerPage() {
 
 <section className="relative min-h-[60vh] flex items-center text-white py-20">
         <Image
-          src="/images/celebrations/jinbeh_group.jpg"
-          alt="Happy group celebration at Jinbeh Japanese Restaurant - perfect venue for baby showers"
+          src="/images/about/chef-flames.jpg"
+          alt="Baby Shower Venues Frisco at Jinbeh Japanese restaurant"
           fill
           className="object-cover"
           priority

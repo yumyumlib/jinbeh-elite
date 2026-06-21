@@ -124,8 +124,8 @@ export default function AnniversaryPage() {
 
 <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/food/nigiri.jpg"
-            alt="Elegant sushi platter for a romantic anniversary dinner at Jinbeh"
+            src="/images/about/chef-flames.jpg"
+            alt="Anniversary Dinner Frisco at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority

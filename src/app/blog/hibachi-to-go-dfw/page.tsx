@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     title: "Hibachi To Go DFW: Takeout from Jinbeh | Frisco & Lewisville",
     description: "Hibachi to go from Jinbeh — Frisco and Lewisville. Steak, chicken, shrimp, salmon, and vegetables packaged for takeout or delivery via Grubhub and Uber Eats.",
     keywords: ["hibachi to go","hibachi takeout dfw","hibachi to go near me","hibachi takeout frisco","hibachi takeout lewisville","hibachi delivery dfw","steak hibachi to go","chicken hibachi to go","shrimp hibachi to go","japanese steakhouse to go","jinbeh hibachi takeout"],
-    openGraph: { title: "Hibachi To Go DFW: Takeout from Jinbeh | Frisco & Lewisville", description: "Hibachi to go from Jinbeh — steak, chicken, shrimp, salmon takeout from Frisco and Lewisville. Pickup or Grubhub/Uber Eats delivery.", url: "https://jinbeh.com/blog/hibachi-to-go-dfw", images: [{ url: "https://jinbeh.com/images/hq/cooking-on-grill.jpg", width: 1200, height: 630, alt: "Hibachi to go DFW — Jinbeh hibachi proteins packaged for takeout" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
+    openGraph: { title: "Hibachi To Go DFW: Takeout from Jinbeh | Frisco & Lewisville", description: "Hibachi to go from Jinbeh — steak, chicken, shrimp, salmon takeout from Frisco and Lewisville. Pickup or Grubhub/Uber Eats delivery.", url: "https://jinbeh.com/blog/hibachi-to-go-dfw", images: [{ url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg", width: 1200, height: 630, alt: "Hibachi to go DFW — Jinbeh hibachi proteins packaged for takeout" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
     twitter: { card: "summary_large_image", title: "Hibachi To Go DFW | Jinbeh", description: "Hibachi takeout from Jinbeh Frisco and Lewisville. Pickup or delivery." },
     alternates: { canonical: "https://jinbeh.com/blog/hibachi-to-go-dfw" },
 };
 
-const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Hibachi To Go DFW: Takeout from Jinbeh", description: "How to order hibachi to go in DFW from Jinbeh — pickup, Grubhub, Uber Eats. What's included, what travels well.", image: "https://jinbeh.com/images/hq/cooking-on-grill.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/hibachi-to-go-dfw" } };
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Hibachi To Go DFW: Takeout from Jinbeh", description: "How to order hibachi to go in DFW from Jinbeh — pickup, Grubhub, Uber Eats. What's included, what travels well.", image: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/hibachi-to-go-dfw" } };
 
 const faqs = [
     { question: "Does Jinbeh do hibachi to go?", answer: "Yes. Jinbeh hibachi is cooked on the grill in our kitchen, packaged in to-go containers, and ready for pickup at our Frisco or Lewisville location. Order by phone for pickup, or through Grubhub or Uber Eats for delivery. Note: 'hibachi to go' means takeout of the food — Jinbeh does not send a hibachi chef to your home." },
@@ -45,7 +45,7 @@ export default function HibachiToGoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hq/cooking-on-grill.jpg" alt="Hibachi to go DFW — Jinbeh hibachi steak and shrimp packaged for takeout" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/hibachi-flame-action.jpg" alt="Hibachi To Go at Jinbeh Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

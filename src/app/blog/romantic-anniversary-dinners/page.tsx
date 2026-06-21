@@ -229,8 +229,8 @@ export default function RomanticAnniversaryDinnersPage() {
       </h1>
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
         <Image
-          src="/images/interior/FriscoLocation_Bar_Front.jpg"
-          alt="Romantic ambiance at Jinbeh Frisco bar for anniversary dinners"
+          src="/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg"
+          alt="Romantic Anniversary Dinner at Jinbeh Japanese restaurant"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 800px"

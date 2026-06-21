@@ -144,7 +144,7 @@ export default function SakeSushiMenuPairings() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/10-C060324-6501.jpg"
+                    poster="/images/beverages/NigoriSparklingSake.webp"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>
@@ -365,7 +365,7 @@ export default function SakeSushiMenuPairings() {
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/beverages/NigoriSparklingSake.webp" alt="Sake Sushi Pairing at Jinbeh Japanese restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>
@@ -575,7 +575,7 @@ export default function SakeSushiMenuPairings() {
                                 <div className="space-y-4">
                                     <Link href="/blog/sake-pairing-guide" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/beverages/NigoriSparklingSake.webp" alt="Sake pairing" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍶 Beverages</span>

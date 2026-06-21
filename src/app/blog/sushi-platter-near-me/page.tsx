@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     title: "Sushi Platter Near Me DFW: Order from Jinbeh",
     description: "Sushi platter near me in Frisco, Lewisville, Plano, Flower Mound. Jinbeh sushi platters for parties, offices, events — pickup or drop-off across DFW.",
     keywords: ["sushi platter near me","sushi platter dfw","sushi tray near me","sushi platter frisco","sushi platter lewisville","sushi platter plano","sushi platter flower mound","sushi party platter","sushi tray for party","sushi platter delivery","large sushi platter near me","jinbeh sushi platter"],
-    openGraph: { title: "Sushi Platter Near Me DFW | Jinbeh", description: "Sushi platters from Jinbeh — Frisco, Lewisville, Plano, Flower Mound. Pickup or drop-off for parties, offices, events.", url: "https://jinbeh.com/blog/sushi-platter-near-me", images: [{ url: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", width: 1200, height: 630, alt: "Sushi platter near me DFW — Jinbeh sushi tray for parties and offices" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
+    openGraph: { title: "Sushi Platter Near Me DFW | Jinbeh", description: "Sushi platters from Jinbeh — Frisco, Lewisville, Plano, Flower Mound. Pickup or drop-off for parties, offices, events.", url: "https://jinbeh.com/blog/sushi-platter-near-me", images: [{ url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg", width: 1200, height: 630, alt: "Sushi platter near me DFW — Jinbeh sushi tray for parties and offices" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
     twitter: { card: "summary_large_image", title: "Sushi Platter Near Me DFW | Jinbeh", description: "Sushi platters from Jinbeh — pickup or drop-off across DFW." },
     alternates: { canonical: "https://jinbeh.com/blog/sushi-platter-near-me" },
 };
 
-const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Sushi Platter Near Me DFW: Order from Jinbeh", description: "How to order a sushi platter near you in DFW from Jinbeh — Frisco, Lewisville, and surrounding cities. Pickup or drop-off.", image: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/sushi-platter-near-me" } };
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Sushi Platter Near Me DFW: Order from Jinbeh", description: "How to order a sushi platter near you in DFW from Jinbeh — Frisco, Lewisville, and surrounding cities. Pickup or drop-off.", image: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/sushi-platter-near-me" } };
 
 const faqs = [
     { question: "Where can I order a sushi platter near me in DFW?", answer: "Jinbeh does sushi platters from two locations: Frisco (2693 Preston Rd, near Stonebriar) and Lewisville (2440 S Stemmons Fwy, Vista Ridge). Pickup is available at both. Drop-off delivery covers Frisco, Plano, McKinney, The Colony, Little Elm, Lewisville, Flower Mound, Highland Village, Coppell, Carrollton, and Castle Hills." },
@@ -45,7 +45,7 @@ export default function SushiPlatterNearMePost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hq/sushi-rolls-2026.jpg" alt="Sushi platter near me DFW — Jinbeh sushi tray for parties and offices" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/sashimi-platter.jpg" alt="Sushi Platter Near Me at Jinbeh Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

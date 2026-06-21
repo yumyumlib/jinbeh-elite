@@ -31,7 +31,7 @@ const faqs = [
 ];
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Unique Kids Birthday Party Places", datePublished: "2026-01-25", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" }, image: "https://jinbeh.com/images/celebrations/jinbeh_group.jpg" },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Unique Kids Birthday Party Places", datePublished: "2026-01-25", dateModified: "2026-03-12", author: { "@type": "Organization", name: "Jinbeh" }, image: "https://jinbeh.com/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(faq => ({
             "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer }
@@ -60,7 +60,7 @@ export default function KidsBirthdayPlaces() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/celebrations/jinbeh_group.jpg" alt="Birthday celebration at Jinbeh hibachi restaurant" fill className="object-cover" priority />
+                <Image src="/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg" alt="Kids Birthday Party Places at Jinbeh Japanese restaurant" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

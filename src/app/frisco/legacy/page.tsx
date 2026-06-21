@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -246,8 +247,8 @@ export default function LegacyPage() {
                 <div className="relative">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
-                      src="/images/about/chef-flames.jpg"
-                      alt="Hibachi chef at Jinbeh Frisco near Legacy West"
+                      src="/images/interior/JinbehFriscoTables.jpg"
+                      alt="Japanese Restaurant Near Legacy West at Jinbeh Frisco Japanese restaurant"
                       fill
                       className="object-cover"
                     />
@@ -432,6 +433,7 @@ export default function LegacyPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/legacy" />
       <Footer />
     </>
   );

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     title: "Sushi Takeout Lewisville TX: Order from Jinbeh",
     description: "Sushi takeout in Lewisville, TX from Jinbeh — signature rolls, sashimi, classic rolls packaged for pickup or delivery via Grubhub and Uber Eats.",
     keywords: ["sushi takeout lewisville","sushi takeout near me lewisville","sushi to go lewisville","sushi delivery lewisville","sushi pickup lewisville","japanese takeout lewisville","sushi near me lewisville","grubhub sushi lewisville","uber eats sushi lewisville","sushi delivery flower mound","sushi takeout vista ridge"],
-    openGraph: { title: "Sushi Takeout Lewisville TX | Jinbeh", description: "Sushi takeout from Jinbeh Lewisville — signature rolls, sashimi, classic rolls. Pickup or Grubhub/Uber Eats delivery.", url: "https://jinbeh.com/blog/sushi-takeout-lewisville", images: [{ url: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", width: 1200, height: 630, alt: "Sushi takeout Lewisville TX — Jinbeh signature rolls packaged for pickup or delivery" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
+    openGraph: { title: "Sushi Takeout Lewisville TX | Jinbeh", description: "Sushi takeout from Jinbeh Lewisville — signature rolls, sashimi, classic rolls. Pickup or Grubhub/Uber Eats delivery.", url: "https://jinbeh.com/blog/sushi-takeout-lewisville", images: [{ url: "https://jinbeh.com/images/food/RoyalFlameRoll.jpg", width: 1200, height: 630, alt: "Sushi takeout Lewisville TX — Jinbeh signature rolls packaged for pickup or delivery" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
     twitter: { card: "summary_large_image", title: "Sushi Takeout Lewisville TX | Jinbeh", description: "Sushi takeout from Jinbeh Lewisville — pickup or Grubhub/Uber Eats delivery." },
     alternates: { canonical: "https://jinbeh.com/blog/sushi-takeout-lewisville" },
 };
 
-const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Sushi Takeout Lewisville TX: Order from Jinbeh", description: "How to order sushi takeout in Lewisville from Jinbeh — pickup, Grubhub, Uber Eats. What travels well and what to order.", image: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/sushi-takeout-lewisville" } };
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Sushi Takeout Lewisville TX: Order from Jinbeh", description: "How to order sushi takeout in Lewisville from Jinbeh — pickup, Grubhub, Uber Eats. What travels well and what to order.", image: "https://jinbeh.com/images/food/RoyalFlameRoll.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/sushi-takeout-lewisville" } };
 
 const faqs = [
     { question: "How do I order sushi takeout from Jinbeh Lewisville?", answer: "Three options. Call (214) 488-2224 for pickup at 2440 S Stemmons Fwy. Order through Grubhub by searching 'Jinbeh' in the app. Order through Uber Eats the same way. Pickup is faster and lower-cost than delivery." },
@@ -45,7 +45,7 @@ export default function SushiTakeoutLewisvillePost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hq/sushi-rolls-2026.jpg" alt="Sushi takeout Lewisville TX — Jinbeh signature rolls packaged" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/food/RoyalFlameRoll.jpg" alt="Sushi Takeout Lewisville at Jinbeh Lewisville Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

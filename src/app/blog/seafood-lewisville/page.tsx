@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         title: "Best Seafood in Lewisville TX: Top Restaurants to Try",
         description:
             "Explore the finest seafood restaurants in Lewisville. Fresh fish, sushi, and authentic Japanese cuisine await.",
-        images: ["/images/blog/10-C060324-6501.jpg"],
+        images: ["/images/photoshoot/sizzling-plate.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/seafood-lewisville",
@@ -42,7 +42,7 @@ const articleSchema = {
     headline: "Best Seafood in Lewisville TX: Top Restaurants to Try",
     description:
         "Your guide to the best seafood restaurants in Lewisville, Texas.",
-    image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
+    image: "https://jinbeh.com/images/photoshoot/sizzling-plate.jpg",
     datePublished: "2026-01-19",
     dateModified: "2026-03-11",
     author: {
@@ -209,8 +209,8 @@ export default function SeafoodLewisville() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/10-C060324-6501.jpg"
-                    alt="Fresh seafood platter in Lewisville"
+                    src="/images/photoshoot/sizzling-plate.jpg"
+                    alt="Seafood Restaurants Lewisville at Jinbeh Lewisville Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

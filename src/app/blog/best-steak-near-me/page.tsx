@@ -129,7 +129,7 @@ export default function BestSteakNearMe() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/blog/8-C060324-6462.jpg" alt="Best Steak" fill className="object-cover" priority />
+                <Image src="/images/photoshoot/hibachi-steak.jpg" alt="Best Steak Near Me at Jinbeh Japanese restaurant" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -301,7 +301,7 @@ export default function BestSteakNearMe() {
                                 <h3 className="font-heading font-bold mb-4">Related Articles</h3>
                                 <div className="space-y-3">
                                     {[
-                                        { t: " Best Hibachi Dallas", s: "/blog/best-hibachi-dallas-tx", i: "/images/blog/8-C060324-6462.jpg" },
+                                        { t: " Best Hibachi Dallas", s: "/blog/best-hibachi-dallas-tx", i: "/images/photoshoot/hibachi-steak.jpg" },
                                         { t: "Best Asian Food Dallas", s: "/blog/best-asian-food-dallas", i: "/images/blog/7-C060324-6447.jpg" },
                                         { t: "Discover Teppanyaki", s: "/blog/discover-teppanyaki", i: "/images/blog/12-C060324-6551.jpg" }
                                     ].map(r => (

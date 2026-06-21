@@ -19,7 +19,7 @@ const categories = {
     ],
     relatedCategories: ["hibachi", "local-guide", "cuisine"],
     articles: [
-      { slug: "best-sushi-frisco", title: "Best Sushi in Frisco", image: "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg", excerpt: "Where to find the freshest sushi rolls and nigiri near Stonebriar Centre." },
+      { slug: "best-sushi-frisco", title: "Best Sushi in Frisco", image: "/images/photoshoot/hibachi-flame-action.jpg", excerpt: "Where to find the freshest sushi rolls and nigiri near Stonebriar Centre." },
       { slug: "best-sushi-dallas", title: "Best Sushi in Dallas", image: "/images/food/SamaraiRollCloseup.jpg", excerpt: "A guide to the top-rated sushi spots across the DFW metroplex." },
       { slug: "types-of-sushi", title: "Types of Sushi: Complete Guide", image: "/images/hq/sushi-rolls-2026.jpg", excerpt: "Nigiri, maki, temaki, and more, learn every sushi style." },
       { slug: "beginner-sushi-tips", title: "Sushi for Beginners", image: "/images/instagram/salmon-roll-closeup.jpg", excerpt: "New to sushi? Start here for your first Japanese dining adventure." },
@@ -184,7 +184,7 @@ const categories = {
     ],
     relatedCategories: ["sushi", "hibachi", "local-guide"],
     articles: [
-      { slug: "best-sushi-frisco", title: "Best Sushi in Frisco", image: "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg", excerpt: "Our pick for the freshest sushi near Stonebriar Centre." },
+      { slug: "best-sushi-frisco", title: "Best Sushi in Frisco", image: "/images/photoshoot/hibachi-flame-action.jpg", excerpt: "Our pick for the freshest sushi near Stonebriar Centre." },
       { slug: "best-sushi-dallas", title: "Best Sushi in Dallas", image: "/images/food/SamaraiRollCloseup.jpg", excerpt: "Top sushi restaurants across the Dallas metroplex." },
       { slug: "best-hibachi-dallas-tx", title: "Best Hibachi in Dallas", image: "/images/photoshoot/hibachi-plate-shrimp.jpg", excerpt: "Where to find the most entertaining hibachi experience in DFW." },
       { slug: "best-happy-hour-frisco-tx", title: "Best Happy Hour in Frisco", image: "/images/drinks/MuleSummerSignatureCocktail.jpg", excerpt: "Happy hour deals you don't want to miss near Stonebriar." },
@@ -281,7 +281,7 @@ const categories = {
     articles: [
       { slug: "hibachi-calories-guide", title: "Hibachi Calories Guide", image: "/images/photoshoot/hibachi-chicken.jpg", excerpt: "Calorie counts for popular hibachi dishes and healthier swaps." },
       { slug: "hibachi-lunch-ideas", title: "Hibachi Lunch Ideas", image: "/images/food/BentoBoxLunchSet.jpg", excerpt: "Quick, balanced hibachi lunches for weekday dining." },
-      { slug: "sushi-lunch-specials", title: "Sushi Lunch Specials", image: "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg", excerpt: "Affordable lunch combos with fresh sushi rolls." },
+      { slug: "sushi-lunch-specials", title: "Sushi Lunch Specials", image: "/images/photoshoot/hibachi-flame-action.jpg", excerpt: "Affordable lunch combos with fresh sushi rolls." },
       { slug: "sashimi-vs-sushi", title: "Sashimi vs Sushi Explained", image: "/images/photoshoot/sashimi-platter.jpg", excerpt: "Which is healthier? Comparing nutrition of sashimi and sushi." },
       { slug: "best-salmon-sashimi", title: "Best Salmon Sashimi", image: "/images/food/SmokedSalmonCloseup.jpg", excerpt: "Omega-3 rich salmon sashimi, one of the healthiest menu picks." },
     ],

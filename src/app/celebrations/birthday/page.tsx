@@ -7,9 +7,9 @@ import VipClubForm from "@/components/VipClubForm";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: { absolute: "Birthday Parties | Jinbeh Japanese Restaurant | Hibachi Birthday Celebration" },
+  title: { absolute: "Birthday Dinner Frisco TX | Hibachi Birthday Party at Jinbeh" },
   description:
-    "Celebrate your birthday at Jinbeh! Hibachi entertainment, the famous onion volcano, and unforgettable moments for all ages. Book your birthday dinner.",
+    "Celebrate your birthday at Jinbeh in Frisco and Lewisville. Hibachi entertainment, the famous onion volcano, and unforgettable moments for all ages. Book your birthday dinner at DFW's favorite Japanese restaurant.",
   keywords: [
     "birthday dinner frisco",
     "hibachi birthday party",
@@ -178,7 +178,7 @@ export default function BirthdayPage() {
                 </p>
               </div>
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-              Birthday Parties
+              Hibachi Birthday Parties at Jinbeh
             </h1>
             <p className="text-xl text-warm-ivory/90 max-w-2xl mx-auto mb-8">
               Make it a birthday to remember! Hibachi entertainment, delicious food,

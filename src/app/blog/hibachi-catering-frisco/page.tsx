@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         description:
             "Drop-off hibachi catering trays for events in Frisco, TX. Weddings, corporate, birthdays, office lunches. Family-owned since 1988.",
         url: "https://jinbeh.com/blog/hibachi-catering-frisco",
-        images: [{ url: "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg", width: 1200, height: 630, alt: "Hibachi catering tray from Jinbeh Frisco — drop-off trays with proteins, fried rice, vegetables" }],
+        images: [{ url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg", width: 1200, height: 630, alt: "Hibachi catering tray from Jinbeh Frisco — drop-off trays with proteins, fried rice, vegetables" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Hibachi Catering Frisco TX | Jinbeh", description: "Drop-off hibachi catering trays for Frisco events." },
@@ -41,7 +41,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Hibachi Catering Frisco TX: Drop-Off Trays",
     description: "Jinbeh's drop-off hibachi catering for Frisco, TX — what's on the trays, pricing patterns, lead times, and what to ask before you book.",
-    image: "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -78,7 +78,7 @@ export default function HibachiCateringFriscoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/photoshoot/hibachi-plate-shrimp.jpg" alt="Hibachi catering in Frisco TX — Jinbeh drop-off tray with shrimp, rice, and vegetables" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/hibachi-flame-action.jpg" alt="Hibachi Catering Frisco at Jinbeh Frisco Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

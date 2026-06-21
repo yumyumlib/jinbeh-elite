@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -248,8 +249,8 @@ export default function SushiRollsFriscoPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/menu-photos/Dragon_Roll.jpg"
-                    alt="Dragon Roll, eel and cucumber topped with avocado and eel sauce"
+                    src="/images/photoshoot/specialty-roll.jpg"
+                    alt="Sushi Rolls Frisco at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -843,6 +844,7 @@ Pricing is listed on our current menu. Browse the full menu for details.
             </p>
 </section>
       </main>
+      <PageSeoBoost route="/frisco/sushi-rolls" />
       <Footer />
     </>
   );

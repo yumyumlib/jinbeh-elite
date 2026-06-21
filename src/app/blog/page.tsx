@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         description: "Your guide to hibachi, sushi, sake and Japanese cuisine from Jinbeh in Frisco & Lewisville.",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
+        url: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Blog — Japanese Dining Guides & Tips",

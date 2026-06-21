@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import { HeroSection, RevealSection, CuisineRotator } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -855,6 +856,7 @@ export default function BarPage() {
             </p>
 </section>
       </main>
+      <PageSeoBoost route="/bar" />
       <Footer />
     </>
   );

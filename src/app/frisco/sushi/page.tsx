@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -47,7 +48,7 @@ const restaurantSchema = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   name: "Jinbeh Frisco Sushi Bar",
-  image: "https://jinbeh.com/images/frisco/JinbehFrisco_SushiBar.jpg",
+  image: "https://jinbeh.com/images/instagram/branded-sushi-plate.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: `${location.address.street} ${location.address.suite}`,
@@ -131,8 +132,8 @@ export default function FriscoSushiPage() {
         <section className="relative py-20 bg-gradient-to-br from-charcoal via-deep-indigo to-charcoal text-white overflow-hidden">
           <div className="absolute inset-0 opacity-15">
             <Image
-              src="/images/frisco/JinbehFrisco_SushiBar.jpg"
-              alt="Jinbeh Frisco premium sushi bar with chef-crafted nigiri and signature rolls"
+              src="/images/instagram/branded-sushi-plate.jpg"
+              alt="Sushi Frisco at Jinbeh Frisco Japanese restaurant"
               fill
               className="object-cover"
               sizes="100vw"
@@ -370,6 +371,7 @@ export default function FriscoSushiPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/sushi" />
       <Footer />
     </>
   );

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     title: "Sushi Takeout Frisco TX: Order from Jinbeh | Near Stonebriar",
     description: "Sushi takeout in Frisco, TX from Jinbeh — signature rolls, sashimi, and classic rolls packaged for pickup or delivery via Grubhub and Uber Eats. Near Stonebriar.",
     keywords: ["sushi takeout frisco","sushi takeout near me frisco","sushi to go frisco","sushi delivery frisco","sushi pickup frisco","japanese takeout frisco","sushi near me frisco","take out sushi near me","sushi to go menu frisco","grubhub sushi frisco","uber eats sushi frisco","sushi delivery near stonebriar"],
-    openGraph: { title: "Sushi Takeout Frisco TX | Jinbeh", description: "Sushi takeout from Jinbeh Frisco — signature rolls, sashimi, classic rolls. Pickup or Grubhub/Uber Eats delivery.", url: "https://jinbeh.com/blog/sushi-takeout-frisco", images: [{ url: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", width: 1200, height: 630, alt: "Sushi takeout Frisco TX — Jinbeh signature rolls packaged for pickup or delivery" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
+    openGraph: { title: "Sushi Takeout Frisco TX | Jinbeh", description: "Sushi takeout from Jinbeh Frisco — signature rolls, sashimi, classic rolls. Pickup or Grubhub/Uber Eats delivery.", url: "https://jinbeh.com/blog/sushi-takeout-frisco", images: [{ url: "https://jinbeh.com/images/frisco/JinbehFrisco_SushiBar.jpg", width: 1200, height: 630, alt: "Sushi takeout Frisco TX — Jinbeh signature rolls packaged for pickup or delivery" }], type: "article", siteName: "Jinbeh Japanese Restaurant" },
     twitter: { card: "summary_large_image", title: "Sushi Takeout Frisco TX | Jinbeh", description: "Sushi takeout from Jinbeh Frisco — pickup or Grubhub/Uber Eats delivery." },
     alternates: { canonical: "https://jinbeh.com/blog/sushi-takeout-frisco" },
 };
 
-const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Sushi Takeout Frisco TX: Order from Jinbeh", description: "How to order sushi takeout in Frisco from Jinbeh — pickup, Grubhub, Uber Eats. What travels well and what to order.", image: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/sushi-takeout-frisco" } };
+const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: "Sushi Takeout Frisco TX: Order from Jinbeh", description: "How to order sushi takeout in Frisco from Jinbeh — pickup, Grubhub, Uber Eats. What travels well and what to order.", image: "https://jinbeh.com/images/frisco/JinbehFrisco_SushiBar.jpg", datePublished: "2026-05-12", dateModified: "2026-05-12", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" }, publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://jinbeh.com/blog/sushi-takeout-frisco" } };
 
 const faqs = [
     { question: "How do I order sushi takeout from Jinbeh Frisco?", answer: "Three options. Call (214) 619-1200 to order for pickup at our 2693 Preston Rd location. Order through Grubhub by searching 'Jinbeh' in the app. Order through Uber Eats the same way. Pickup is usually faster and lower-cost than delivery." },
@@ -45,7 +45,7 @@ export default function SushiTakeoutFriscoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hq/sushi-rolls-2026.jpg" alt="Sushi takeout Frisco TX — Jinbeh signature rolls packaged" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/frisco/JinbehFrisco_SushiBar.jpg" alt="Sushi Takeout Frisco at Jinbeh Frisco Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

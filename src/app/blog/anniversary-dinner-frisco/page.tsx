@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Anniversary Dinner Frisco TX | Jinbeh",
         description: "Anniversary dinner at Jinbeh Frisco — sushi bar or hibachi table, sake pairings, reservations. Family-owned since 1988.",
         url: "https://jinbeh.com/blog/anniversary-dinner-frisco",
-        images: [{ url: "https://jinbeh.com/images/frisco/JinbehFrisco_SushiBar.jpg", width: 1200, height: 630, alt: "Anniversary dinner Frisco TX — Jinbeh sushi bar and hibachi tables near Stonebriar" }],
+        images: [{ url: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg", width: 1200, height: 630, alt: "Anniversary dinner Frisco TX — Jinbeh sushi bar and hibachi tables near Stonebriar" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Anniversary Dinner Frisco TX | Jinbeh", description: "Anniversary dinner at Jinbeh Frisco — sushi bar or hibachi, sake pairings." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Anniversary Dinner Frisco TX: Sushi Bar or Hibachi",
     description: "How to plan an anniversary dinner at Jinbeh Frisco — sushi bar vs. hibachi seating, sake pairings, reservation timing, and milestone anniversary tips.",
-    image: "https://jinbeh.com/images/frisco/JinbehFrisco_SushiBar.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-onion-volcano-flame.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function AnniversaryDinnerFriscoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/frisco/JinbehFrisco_SushiBar.jpg" alt="Anniversary dinner Frisco TX — Jinbeh sushi bar and hibachi tables near Stonebriar" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/hibachi-onion-volcano-flame.jpg" alt="Anniversary Dinner Frisco at Jinbeh Frisco Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

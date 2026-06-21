@@ -209,8 +209,8 @@ export default function PickleballRestaurantsLewisvillePage() {
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp"
-                alt="Warm interior of Jinbeh Japanese Restaurant near pickleball courts in Lewisville"
+                src="/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg"
+                alt="Restaurants Near Pickleball Lewisville at Jinbeh Lewisville Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

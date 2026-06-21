@@ -203,8 +203,8 @@ export default function WorldCupWatchPartyPage() {
         <section className="relative h-[64vh] min-h-[520px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-deep-indigo to-charcoal" />
           <Image
-            src="/images/celebrations/jinbeh_group.jpg"
-            alt="Fans celebrating the World Cup at Jinbeh Japanese Restaurant in Frisco and Lewisville TX"
+            src="/images/celebrations/world-cup-watch-party.webp"
+            alt="World Cup Watch Party Frisco at Jinbeh Japanese restaurant"
             fill
             sizes="100vw"
             className="object-cover opacity-30"

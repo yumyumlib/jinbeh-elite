@@ -214,7 +214,7 @@ export default function AdultBirthdayPartyIdeas() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/celebrations/jinbeh_group.jpg"
+                    poster="/images/instagram/lobster-spread-overhead.jpg"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>

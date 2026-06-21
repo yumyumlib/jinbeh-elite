@@ -382,8 +382,8 @@ export default function CareersPage() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/food/OnionVolcanoDemo.jpg"
-            alt="Jinbeh hibachi chef performing with flames - exciting career opportunities await"
+            src="/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp"
+            alt="Jinbeh Careers at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority

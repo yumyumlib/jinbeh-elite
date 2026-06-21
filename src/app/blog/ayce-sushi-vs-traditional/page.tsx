@@ -165,8 +165,8 @@ y different kinds of restaurants: all-you-can-eat (AYCE) spots and traditional s
             <h1>How AYCE Sushi Restaurants Work</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/food/FreshSushiAndDessertsAtSushiBar.jpg"
-                alt="Fresh sushi selection at Jinbeh Japanese Restaurant sushi bar"
+                src="/images/food/RoyalFlameRoll.jpg"
+                alt="Ayce Sushi Vs Traditional at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

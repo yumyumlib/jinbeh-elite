@@ -218,8 +218,8 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/celebrations/jinbeh_group.jpg"
-                alt="Group celebration at Jinbeh Japanese Restaurant"
+                src="/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg"
+                alt="Baby Shower Venues at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

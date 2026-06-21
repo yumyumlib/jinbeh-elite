@@ -35,7 +35,7 @@ const articleSchema = {
     headline: "Best Date Night Restaurants Frisco TX: Create Unforgettable Memories",
     description:
         "Your complete guide to the best romantic date night restaurants in Frisco, including Jinbeh's intimate hibachi experience.",
-    image: "https://jinbeh.com/images/exterior/JinbehFriscoStorefrontSign.jpg",
+    image: "https://jinbeh.com/images/pickleball_and_jinbeh_hibachi celebrations.webp",
     datePublished: "2026-01-29",
     dateModified: "2026-03-11",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -233,8 +233,8 @@ export default function DateNightRestaurantsFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/exterior/JinbehFriscoStorefrontSign.jpg"
-                    alt="Jinbeh Japanese Restaurant Frisco storefront for romantic date night dining"
+                    src="/images/pickleball_and_jinbeh_hibachi celebrations.webp"
+                    alt="Date Night Restaurants Frisco at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

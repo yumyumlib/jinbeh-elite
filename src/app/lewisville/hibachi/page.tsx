@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/lewisville/hibachi",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        url: "https://jinbeh.com/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Lewisville Hibachi",
@@ -262,8 +263,8 @@ export default function HibachiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/photoshoot/hibachi-steak.jpg"
-                    alt="Filet mignon searing on the teppan grill at Jinbeh Lewisville"
+                    src="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp"
+                    alt="Hibachi Lewisville at Jinbeh Lewisville Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -774,6 +775,7 @@ export default function HibachiLewisvillePage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/lewisville/hibachi" />
       <Footer />
     </>
   );

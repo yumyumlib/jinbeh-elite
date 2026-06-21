@@ -121,8 +121,8 @@ export default function ValentinesDayPage() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-warm-ivory" />
           <Image
-            src="/images/food/nigiri.jpg"
-            alt="Romantic sushi dinner for Valentine's Day at Jinbeh"
+            src="/images/food/HappyValentinesDay.jpg"
+            alt="Valentines Day Dinner Frisco at Jinbeh Japanese restaurant's Day at Jinbeh"
             fill
             className="object-cover"
             priority

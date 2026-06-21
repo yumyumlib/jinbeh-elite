@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -475,6 +476,7 @@ export default function CocktailsLewisvillePage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/lewisville/cocktails" />
       <Footer />
     </>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -8,7 +9,7 @@ import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: { absolute: "Best Hibachi Restaurant in Frisco TX | Jinbeh Since 1988" },
-  description: "Jinbeh Frisco's hibachi menu features land and ocean teppanyaki entrées plus combo selections, served with soup, salad, steamed rice, shrimp appetizer, and hibachi vegetables. Tableside fire shows, onion volcano, and premium cuts near Stonebriar Centre. Family-owned since 1988.",
+  description: "Best hibachi in Frisco, TX. Teppanyaki land and ocean entrees plus combos with tableside fire shows and onion volcano. Family-owned since 1988, near Stonebriar Centre.",
   keywords: ["hibachi frisco", "best hibachi frisco", "hibachi menu frisco", "jinbeh hibachi", "japanese hibachi frisco", "hibachi", "teppanyaki", "japanese steakhouse", "hibachi grill"],
   openGraph: {
     title: "Hibachi Menu | Jinbeh Frisco",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/frisco/hibachi",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/hibachi-steak.jpg",
+        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Frisco Hibachi",
@@ -333,7 +334,7 @@ export default function HibachiFriscoPage() {
                 Jinbeh Frisco Menu
               </p>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                Hibachi Menu, Frisco
+                Best Hibachi in Frisco, TX
               </h1>
               <p className="text-xl text-warm-ivory/90 mb-8 max-w-2xl mx-auto">
                 Entertainment, fire show, family fun, onion volcano. Explore our hibachi menu,
@@ -643,6 +644,7 @@ export default function HibachiFriscoPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/hibachi" />
       <Footer />
     </>
   );

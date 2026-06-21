@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         title: "Top 10 Frisco Restaurants: Must-Try Dining Spots",
         description:
             "Your guide to Frisco's best restaurants. From Japanese hibachi to Southern comfort food, discover where locals eat.",
-        images: ["/images/blog/8-C060324-6462.jpg"],
+        images: ["/images/photoshoot/hibachi-plate-shrimp.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/top-frisco-restaurants",
@@ -34,7 +34,7 @@ const articleSchema = {
     headline: "Top 10 Frisco Restaurants: Must-Try Dining Spots",
     description:
         "Comprehensive guide to the best restaurants near me Frisco, Texas, featuring diverse cuisines and dining experiences.",
-    image: "https://jinbeh.com/images/blog/8-C060324-6462.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg",
     datePublished: "2026-01-20",
     dateModified: "2026-03-11",
     author: {
@@ -181,8 +181,8 @@ export default function TopFriscoRestaurants() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/8-C060324-6462.jpg"
-                    alt="Top restaurants in Frisco"
+                    src="/images/photoshoot/hibachi-plate-shrimp.jpg"
+                    alt="Top Frisco Restaurants at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority
@@ -616,7 +616,7 @@ export default function TopFriscoRestaurants() {
 
                                     <Link href="/blog/best-sushi-frisco" className="flex gap-4 group">
                                         <div className="relative w-20 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-warm-ivory">
-                                            <Image src="/images/blog/8-C060324-6462.jpg" alt="Best sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                            <Image src="/images/photoshoot/hibachi-plate-shrimp.jpg" alt="Best sushi" fill className="object-cover group-hover:scale-105 transition-transform" />
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <span className="text-xs font-medium text-deep-indigo">🍣 Cuisine</span>

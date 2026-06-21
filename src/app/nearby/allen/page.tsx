@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/nearby/allen",
     images: [
       {
-        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        url: "https://jinbeh.com/images/about/chef-flames.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Nearby Allen",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -246,8 +247,8 @@ export default function TakeoutPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-deep-indigo via-charcoal to-deep-indigo" />
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="/images/photoshoot/sashimi-platter.jpg"
-              alt="Sushi"
+              src="/images/instagram/sushi-feast-flatlay.jpg"
+              alt="Takeout at Jinbeh Japanese restaurant"
               fill
               className="object-cover"
             />
@@ -641,6 +642,7 @@ export default function TakeoutPage() {
             </p>
 </section>
       </main>
+      <OnlineOrderCTA />
       <Footer />
     </>
   );

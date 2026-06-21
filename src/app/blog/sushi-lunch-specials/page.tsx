@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         title: "Best Sushi Lunch Specials Near You Today",
         description:
             "Find the best sushi lunch specials with affordable pricing and variety. Discover deals at your favorite sushi restaurants.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/instagram/tuna-tower-bar-bokeh.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/sushi-lunch-specials",
@@ -33,7 +33,7 @@ const articleSchema = {
     headline: "Best Sushi Lunch Specials Near You Today",
     description:
         "Guide to finding delicious and affordable sushi lunch specials in your area.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/instagram/tuna-tower-bar-bokeh.jpg",
     datePublished: "2026-01-22",
     dateModified: "2026-01-30",
     author: {
@@ -160,8 +160,8 @@ export default function SushiLunchSpecials() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/12-C060324-6551.jpg"
-                    alt="Sushi lunch special platter"
+                    src="/images/instagram/tuna-tower-bar-bokeh.jpg"
+                    alt="Sushi Lunch Specials at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

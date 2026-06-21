@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Popular Japanese Beverages: Complete Drinks Guide",
         description: "Explore iconic Japanese beverages and their cultural significance. From traditional sake to modern Ramune.",
-        images: ["/images/beverages/LewisvilleBar.jpg"],
+        images: ["/images/beverages/JapaneseWhiskey.webp"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/japanese-beverages-guide",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Beverages: Iconic Drinks Guide", datePublished: "2026-01-24", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/LewisvilleBar.jpg" },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Popular Japanese Beverages: Iconic Drinks Guide", datePublished: "2026-01-24", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/JapaneseWhiskey.webp" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What are the most popular Japanese beverages?", acceptedAnswer: { "@type": "Answer", text: "Japan's most beloved beverages include matcha tea, sake, shochu, Japanese whisky, ramune soda, calpis, pocari sweat, and various bottled teas. Each reflects Japan's dedication to quality, tradition, and innovation." } },
@@ -93,7 +93,7 @@ export default function JapaneseBeveragesGuide() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/beverages/LewisvilleBar.jpg" alt="Japanese Beverages" fill className="object-cover" priority />
+                <Image src="/images/beverages/JapaneseWhiskey.webp" alt="Japanese Beverages at Jinbeh Japanese restaurant" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

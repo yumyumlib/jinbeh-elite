@@ -82,7 +82,7 @@ export default function DiscoverTeppanyaki() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster="/images/blog/3-C060324-6364.jpg">
+                <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster="/images/photoshoot/hibachi-onion-volcano-flame.jpg">
                     <source src="/videos/LOCAL-FRI-HIBACHI-chef-red-hat-grill-prep-01.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
@@ -138,7 +138,7 @@ export default function DiscoverTeppanyaki() {
                             </div>
 
                             <div className="grid grid-cols-3 gap-3 my-8">
-                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/3-C060324-6364.jpg" alt="Chef" fill className="object-cover" /></div>
+                                <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/photoshoot/hibachi-onion-volcano-flame.jpg" alt="Teppanyaki at Jinbeh Japanese restaurant" fill className="object-cover" /></div>
                                 <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/4-C060324-6380.jpg" alt="Fire" fill className="object-cover" /></div>
                                 <div className="relative aspect-square rounded-xl overflow-hidden"><Image src="/images/blog/5-C060324-6397.jpg" alt="Grill" fill className="object-cover" /></div>
                             </div>

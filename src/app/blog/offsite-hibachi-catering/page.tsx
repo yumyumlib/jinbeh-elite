@@ -136,8 +136,8 @@ export default function OffsiteHibachiCateringPage({ params }: { params: { slug:
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/food/OnionVolcanoDemo.jpg"
-                alt="Jinbeh hibachi chef performing onion volcano for offsite events"
+                src="/images/photoshoot/hibachi-flame-action.jpg"
+                alt="Hibachi Catering Near Me at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

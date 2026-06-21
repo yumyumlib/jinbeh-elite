@@ -179,8 +179,8 @@ export default function JinbehGiftCardsGuidePage() {
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/frisco/JinbehFrisco_SushiBar.jpg"
-                alt="Jinbeh Frisco sushi bar — the perfect gift card experience"
+                src="/images/hero/jinbeh-hibachi-chef-flames-frisco-lewisville.jpg"
+                alt="Jinbeh Gift Card at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -7,7 +8,7 @@ import { HeroSection, RevealSection } from "@/components/MagicUI";
 import { MagicCard } from "@/components/ui/magic-card";
 
 export const metadata: Metadata = {
-  title: "Private Dining at Jinbeh | Exclusive Events in Frisco & Lewisville",
+  title: "Private Dining Frisco TX | Japanese Restaurant Events | Jinbeh",
   description:
     "Host your private event at Jinbeh Japanese Restaurant. Exclusive private dining rooms, hibachi entertainment, and custom menus for celebrations.",
   keywords: [
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     "corporate dining frisco",
   ],
   openGraph: {
-    title: "Private Dining at Jinbeh | Exclusive Events in Frisco & Lewisville",
+    title: "Private Dining Frisco TX | Japanese Restaurant Events | Jinbeh",
     description:
       "Host your private event at Jinbeh. Exclusive private dining rooms, hibachi entertainment, and custom menus for unforgettable celebrations.",
     url: "https://jinbeh.com/private-dining",
@@ -52,23 +53,15 @@ const faqSchema = {
       name: "What is the minimum spend for private dining at Jinbeh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Minimum spend requirements vary based on the size of your group and the space you reserve. Please contact us directly for specific details. For groups of 8-10, we can often accommodate you at a private hibachi table with a reasonable per-person minimum.",
+        text: "Minimum spend requirements vary based on the size of your group and which private space you book. We offer flexible options to accommodate different budgets. Please contact us directly to discuss pricing for your specific event.",
       },
     },
     {
       "@type": "Question",
-      name: "How many people can Jinbeh accommodate for private events?",
+      name: "How do I book a private dining experience?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our private dining spaces can accommodate groups from 8 to 60+ guests. We have multiple private hibachi tables and exclusive dining areas at both our Frisco and Lewisville locations. Contact us to discuss your specific group size.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I book a private dining experience at Jinbeh?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "To book a private event, please call our events team directly. Frisco: (214) 619-1200, Lewisville: (214) 488-2224. We'll discuss your date, group size, menu preferences, and special requirements to create the perfect experience.",
+        text: "Simply call our events team at Frisco: (214) 619-1200 or Lewisville: (214) 488-2224. We'll discuss your date, group size, preferences, and special requirements to create the perfect experience.",
       },
     },
     {
@@ -76,47 +69,31 @@ const faqSchema = {
       name: "Can we customize the menu for our private event?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! We offer custom menu options for private dining events. Our culinary team can work with you to create a personalized menu featuring your favorite sushi, hibachi, and specialty dishes tailored to your event.",
+        text: "Absolutely! We work with our culinary team to design personalized menus featuring your favorite sushi, hibachi dishes, and specialty items. Dietary restrictions and preferences are always accommodated.",
       },
     },
     {
       "@type": "Question",
-      name: "Are hibachi chefs included in private dining experiences?",
+      name: "Are hibachi chefs included with private dining?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! Private hibachi tables include our skilled chefs who perform tableside cooking with entertainment. For larger private dining areas, we can arrange additional entertainment options based on your preferences.",
+        text: "Yes! Private hibachi tables include our skilled chefs who cook tableside with entertainment. For larger private dining areas, we can discuss additional entertainment and service options.",
       },
     },
     {
       "@type": "Question",
-      name: "What types of events can we host at Jinbeh?",
+      name: "What is the maximum group size you can accommodate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We host a variety of events including birthday parties, anniversary celebrations, corporate dinners, team building events, graduation celebrations, wedding rehearsal dinners, and intimate gatherings. Each event is customized to meet your specific needs.",
+        text: "We can host groups from 8 to 60+ guests depending on your preferences. Contact us to discuss your specific group size and we'll recommend the best private dining option.",
       },
     },
     {
       "@type": "Question",
-      name: "Does Jinbeh have private dining spaces?",
+      name: "How far in advance should we book?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer private booths in our sushi area and a secluded dining area with dividers in the back of our Frisco hibachi space, perfect for VIP gatherings, celebrations, and intimate events. Both our Frisco and Lewisville locations have semi-private spaces that can be customized for groups from 8 to 60+ guests. Contact us to learn more.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the minimum for private dining at Jinbeh?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Minimum requirements vary based on your group size and the private space you select. We offer flexible group dining options with advance reservations to accommodate different party sizes and budgets. Please contact us directly to discuss specifics for your event.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I book a private hibachi table?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely! Our private hibachi tables seat 7–8 guests (larger groups accommodated by joining tables with advance notice) guests and feature a dedicated hibachi chef for tableside cooking and entertainment. This is perfect for group seating and a private hibachi experience. We recommend booking at least 2-3 weeks in advance to secure your preferred date.",
+        text: "We recommend booking at least 2-3 weeks in advance for the best availability. For large groups or special requirements, booking further ahead ensures we can perfectly customize your experience.",
       },
     },
   ],
@@ -129,7 +106,7 @@ const localBusinessSchema = {
   name: "Jinbeh Japanese Restaurant - Private Dining",
   description: "Exclusive private dining and event spaces for celebrations and corporate gatherings",
   url: "https://jinbeh.com/private-dining",
-  image: "/images/food/hibachi-grill.jpg",
+  image: "/images/photoshoot/hibachi-flame-action.jpg",
   areaServed: ["Frisco, TX", "Lewisville, TX", "Dallas, TX"],
   priceRange: "$$",
 };
@@ -347,7 +324,7 @@ export default function PrivateDiningPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/food/hibachi-grill.jpg"
+            poster="/images/photoshoot/hibachi-flame-action.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -378,7 +355,7 @@ export default function PrivateDiningPage() {
                   Perfect for Every Occasion
                 </h2>
                 <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                  As a premier private party venue Frisco and private event space Japanese-style, we welcome groups looking for restaurants with private rooms. From a private hibachi party to corporate dining Frisco celebrations, private event Frisco Texas, we create unforgettable experiences with a private celebration venue for every occasion.
+                  Jinbeh&apos;s private dining spaces in Frisco and Lewisville are perfect for celebrations, corporate events, and group gatherings of any size.
                 </p>
               </RevealSection>
             </div>
@@ -807,6 +784,7 @@ export default function PrivateDiningPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/private-dining" />
       <Footer />
     </>
   );

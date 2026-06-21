@@ -194,8 +194,8 @@ export default function RestaurantsNearUniversalKidsResortPage() {
 
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
         <Image
-          src="/images/food/OnionVolcanoDemo.jpg"
-          alt="Jinbeh Japanese Restaurant hibachi chef cooking for a family in Frisco TX near Universal Kids Resort"
+          src="/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg"
+          alt="Restaurant Near Universal Kids Resort Frisco at Jinbeh Frisco Japanese restaurant"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 800px"

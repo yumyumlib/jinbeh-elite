@@ -42,7 +42,7 @@ const breadcrumbSchema = {
     "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jinbeh.com" },
         { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jinbeh.com/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://jinbeh.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "Group Dining Venues", "item": "https://jinbeh.com/blog/group-dining-venues" },
         { "@type": "ListItem", "position": 4, "name": "Best Group Dining Venues in DFW" },
     ],
 };
@@ -56,7 +56,7 @@ const itemListSchema = {
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "{x.t}"
+      "name": "Jinbeh Japanese Restaurant"
     },
     {
       "@type": "ListItem",
@@ -105,7 +105,7 @@ export default function GroupDiningVenues() {
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
-                <Image src="/images/blog/2-C060324-6341.jpg" alt="Jinbeh Japanese Restaurant group dining room" fill className="object-cover" priority />
+                <Image src="/images/photoshoot/jinbeh-hibachi-feast-group-dining-dfw.jpg" alt="Group Dining Dfw at Jinbeh Japanese restaurant" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">
@@ -130,7 +130,7 @@ export default function GroupDiningVenues() {
                             <h2 className="text-2xl font-heading font-bold text-charcoal mt-10 mb-4">🎯 Why Hibachi Works for Groups</h2>
 
                             <DidYouKnow
-                                fact="Group dining accounts for 35% of all restaurant revenue in the United States, with parties of 8+ spending an average of per person, 40% more than individual diners. Restaurants with interactive or communal dining formats like hibachi see 60% higher guest satisfaction scores for group events compared to traditional sit-down restaurants."
+                                fact="Hibachi group dining creates a shared experience that traditional restaurant seating cannot match. Restaurants with interactive or communal dining formats like hibachi see 60% higher guest satisfaction scores for group events compared to traditional sit-down restaurants."
                                 source="National Restaurant Association & Technomic"
                             />
                             <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -160,11 +160,11 @@ export default function GroupDiningVenues() {
                             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md my-6">
                                 <thead className="bg-charcoal text-white"><tr><th className="p-3 text-left">Venue Type</th><th className="p-3 text-left">Per Person</th><th className="p-3 text-left">Entertainment</th><th className="p-3 text-left">Private Space</th></tr></thead>
                                 <tbody className="text-charcoal/80">
-                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Hibachi (Jinbeh)</td><td className="p-3">Chef show included</td><td className="p-3">Semi-private</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">Casual Dining</td><td className="p-3">None</td><td className="p-3">Varies</td></tr>
+                                    <tr className="border-b bg-soft-gold/10"><td className="p-3 font-semibold">⭐ Hibachi (Jinbeh)</td><td className="p-3">See menu</td><td className="p-3">Chef show included</td><td className="p-3">Semi-private</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">Casual Dining</td><td className="p-3">$$</td><td className="p-3">None</td><td className="p-3">Varies</td></tr>
  <tr className="border-b bg-warm-ivory/30"><td className="p-3 font-semibold">Fine Dining</td><td className="p-3">+</td><td className="p-3">None</td><td className="p-3">Private rooms</td></tr>
-                                    <tr className="border-b"><td className="p-3 font-semibold">BBQ / Buffet</td><td className="p-3">Self-serve</td><td className="p-3">Varies</td></tr>
-                                    <tr><td className="p-3 font-semibold">Food Hall</td><td className="p-3">None</td><td className="p-3">Open seating</td></tr>
+                                    <tr className="border-b"><td className="p-3 font-semibold">BBQ / Buffet</td><td className="p-3">$</td><td className="p-3">Self-serve</td><td className="p-3">Varies</td></tr>
+                                    <tr><td className="p-3 font-semibold">Food Hall</td><td className="p-3">$</td><td className="p-3">None</td><td className="p-3">Open seating</td></tr>
                                 </tbody>
                             </table>
 

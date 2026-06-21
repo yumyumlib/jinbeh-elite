@@ -154,7 +154,7 @@ export default function SakeTasteProfile() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/blog/10-C060324-6501.jpg"
+                    poster="/images/beverages/NigoriSparklingSake.webp"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>
@@ -352,7 +352,7 @@ export default function SakeTasteProfile() {
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
                                         <BlurFade delay={0.1}>
                                             <div className="relative aspect-square rounded-xl overflow-hidden group">
-                                                <Image src="/images/blog/10-C060324-6501.jpg" alt="Sake tasting" fill className="object-cover group-hover:scale-105 transition-transform" />
+                                                <Image src="/images/beverages/NigoriSparklingSake.webp" alt="Sake Taste at Jinbeh Japanese restaurant" fill className="object-cover group-hover:scale-105 transition-transform" />
                                             </div>
                                         </BlurFade>
                                         <BlurFade delay={0.2}>

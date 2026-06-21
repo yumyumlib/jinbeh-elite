@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Best Happy Hour Frisco TX: Deals & Top Spots",
         description: "Your guide to the best happy hour deals in Frisco, Texas.",
-        images: ["/images/blog/10-C060324-6501.jpg"],
+        images: ["/images/food/MuleSummerSignatureCocktail.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/best-happy-hour-frisco-tx",
@@ -31,7 +31,7 @@ const articleSchema = {
     "@type": "Article",
     headline: "Best Happy Hour Frisco TX: Top Spots to Visit",
     description: "Guide to the best happy hour deals and spots in Frisco, Texas.",
-    image: "https://jinbeh.com/images/blog/10-C060324-6501.jpg",
+    image: "https://jinbeh.com/images/food/MuleSummerSignatureCocktail.jpg",
     datePublished: "2026-01-19",
     dateModified: "2026-04-30",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" },
@@ -107,8 +107,8 @@ export default function BestHappyHourFrisco() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/10-C060324-6501.jpg"
-                    alt="Happy hour drinks at Jinbeh"
+                    src="/images/food/MuleSummerSignatureCocktail.jpg"
+                    alt="Happy Hour Frisco Tx at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

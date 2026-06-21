@@ -112,7 +112,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             name: "Jinbeh Japanese Restaurant",
             logo: {
                 "@type": "ImageObject",
-                url: "https://jinbeh.com/images/logos/jinbeh-logo.png",
+                url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
             },
         },
         mainEntityOfPage: {

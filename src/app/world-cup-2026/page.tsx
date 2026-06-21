@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -32,13 +33,18 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/world-cup-2026",
     images: [
       {
-        url: "https://jinbeh.com/images/food/hibachi-grill.jpg",
+        url: "https://jinbeh.com/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — World Cup 2026 — Japan's Table in Texas",
       },
     ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FIFA World Cup 2026 Watch Parties at Jinbeh | Frisco & Lewisville TX",
+    description: "Catch every World Cup match at Jinbeh. Japanese food, drinks, and the best atmosphere in DFW for the FIFA World Cup 2026.",
   },
   alternates: {
     canonical: "https://jinbeh.com/world-cup-2026",
@@ -126,7 +132,7 @@ const articleSchema = {
     },
   },
   datePublished: "2026-05-30",
-  dateModified: "2026-05-30",
+  dateModified: "2026-06-20",
   mainEntityOfPage: "https://jinbeh.com/world-cup-2026",
 };
 
@@ -203,8 +209,8 @@ export default function WorldCup2026Page() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-800 via-deep-indigo to-charcoal" />
           <div className="absolute inset-0 opacity-15">
             <Image
-              src="/images/food/hibachi-grill.jpg"
-              alt="Hibachi grill"
+              src="/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg"
+              alt="Japan World Cup 2026 Dallas at Jinbeh Japanese restaurant"
               fill
               className="object-cover"
             />
@@ -884,6 +890,7 @@ export default function WorldCup2026Page() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/world-cup-2026" />
       <Footer />
     </>
   );

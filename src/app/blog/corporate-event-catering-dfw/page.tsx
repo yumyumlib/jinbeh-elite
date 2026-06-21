@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Corporate Event Catering DFW | Jinbeh",
         description: "Drop-off Japanese catering for DFW offices and corporate events. Frisco and Lewisville delivery zones. Family-owned since 1988.",
         url: "https://jinbeh.com/blog/corporate-event-catering-dfw",
-        images: [{ url: "https://jinbeh.com/images/business_corporate_events_jinbeh_celebration.jpeg", width: 1200, height: 630, alt: "Corporate event catering DFW — Jinbeh drop-off Japanese spread for offices" }],
+        images: [{ url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg", width: 1200, height: 630, alt: "Corporate event catering DFW — Jinbeh drop-off Japanese spread for offices" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Corporate Event Catering DFW | Jinbeh", description: "Drop-off Japanese catering for DFW offices and corporate events." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Corporate Event Catering DFW: Japanese Catering for Offices",
     description: "Jinbeh's drop-off Japanese catering for DFW corporate events — office lunches, client dinners, team builds. What's on the trays, pricing, lead times, dietary accommodation.",
-    image: "https://jinbeh.com/images/business_corporate_events_jinbeh_celebration.jpeg",
+    image: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function CorporateCateringDFWPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/business_corporate_events_jinbeh_celebration.jpeg" alt="Corporate event catering DFW — Jinbeh drop-off Japanese spread for offices" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/photoshoot/sushi-tower.jpg" alt="Corporate Event Catering Dfw at Jinbeh Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

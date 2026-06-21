@@ -1,0 +1,1597 @@
+[
+ {
+  "route": "/accessibility",
+  "mechanism": "page_src",
+  "file": "src/app/accessibility/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/interior/JinbehFriscoTables.jpg",
+  "alt": "Jinbeh Accessibility at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/allergy-friendly-dining",
+  "mechanism": "page_src",
+  "file": "src/app/allergy-friendly-dining/page.tsx",
+  "old": "/images/photoshoot/sashimi-platter.jpg",
+  "new": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+  "alt": "Allergy Friendly Restaurant Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/[slug]",
+  "mechanism": "page_src",
+  "file": "src/app/blog/[slug]/page.tsx",
+  "old": "/images/logos/jinbeh-logo.png",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Blog/[Slug] at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/adult-birthday-party-ideas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/adult-birthday-party-ideas/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/instagram/lobster-spread-overhead.jpg",
+  "alt": "Adult Birthday Party Ideas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/anniversary-dinner-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/anniversary-dinner-frisco/page.tsx",
+  "old": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Anniversary Dinner Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/asian-cuisine-dallas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/asian-cuisine-dallas/page.tsx",
+  "old": "/images/blog/8-C060324-6462.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Asian Cuisine Dallas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/asian-food-catering-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/asian-food-catering-dfw/page.tsx",
+  "old": "/images/business_corporate_events_jinbeh_celebration.jpeg",
+  "new": "/images/instagram/lobster-spread-overhead.jpg",
+  "alt": "Asian Food Catering Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/ayce-sushi-vs-traditional",
+  "mechanism": "page_src",
+  "file": "src/app/blog/ayce-sushi-vs-traditional/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/food/RoyalFlameRoll.jpg",
+  "alt": "Ayce Sushi Vs Traditional at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/baby-shower-venues",
+  "mechanism": "page_src",
+  "file": "src/app/blog/baby-shower-venues/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg",
+  "alt": "Baby Shower Venues at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/bachelorette-restaurants-dallas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/bachelorette-restaurants-dallas/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg",
+  "alt": "Bachelorette Restaurants Dallas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-asian-food-dallas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-asian-food-dallas/page.tsx",
+  "old": "/images/blog/8-C060324-6462.jpg",
+  "new": "/images/photoshoot/hibachi-steak.jpg",
+  "alt": "Best Asian Food Dallas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-asian-restaurants-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-asian-restaurants-frisco/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/photoshoot/hibachi-chicken.jpg",
+  "alt": "Best Asian Restaurants Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-happy-hour-frisco-tx",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-happy-hour-frisco-tx/page.tsx",
+  "old": "/images/blog/10-C060324-6501.jpg",
+  "new": "/images/food/MuleSummerSignatureCocktail.jpg",
+  "alt": "Happy Hour Frisco Tx at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-hibachi-dallas-tx",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-hibachi-dallas-tx/page.tsx",
+  "old": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Best Hibachi Dallas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-restaurants-stonebriar",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-restaurants-stonebriar/page.tsx",
+  "old": "/images/blog/1-C060324-6328.jpg",
+  "new": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "alt": "Restaurants Near Stonebriar Mall at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-sake-bar-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-sake-bar-dfw/page.tsx",
+  "old": "/images/drinks/cocktail.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Bar Dfw at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-salmon-sashimi",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-salmon-sashimi/page.tsx",
+  "old": "/images/blog/7-C060324-6447.jpg",
+  "new": "/images/menu-photos/Fresh_Salmon_Sashimi.jpg",
+  "alt": "Salmon Sashimi Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-seafood-dallas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-seafood-dallas/page.tsx",
+  "old": "/images/blog/8-C060324-6462.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-flames-frisco-lewisville.jpg",
+  "alt": "Best Seafood Dallas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-steak-near-me",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-steak-near-me/page.tsx",
+  "old": "/images/blog/8-C060324-6462.jpg",
+  "new": "/images/photoshoot/hibachi-steak.jpg",
+  "alt": "Best Steak Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/best-steakhouses-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/best-steakhouses-lewisville/page.tsx",
+  "old": "/images/blog/5-C060324-6397.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Steakhouses Lewisville Tx at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/birthday-celebration-restaurants",
+  "mechanism": "page_src",
+  "file": "src/app/blog/birthday-celebration-restaurants/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/kids_birthday_jinbeh_celebration.webp",
+  "alt": "Birthday Celebration Restaurants at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/bridal-shower-venues",
+  "mechanism": "page_src",
+  "file": "src/app/blog/bridal-shower-venues/page.tsx",
+  "old": "/images/interior/JinbehFriscoTables.jpg",
+  "new": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+  "alt": "Bridal Shower Venues at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/category/[category]",
+  "mechanism": "page_src",
+  "file": "src/app/blog/category/[category]/page.tsx",
+  "old": "/images/food/SpicyTunaAndCaliforniaRollCloseups.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Blog/Category/[Category] at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/corporate-event-catering-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/corporate-event-catering-dfw/page.tsx",
+  "old": "/images/business_corporate_events_jinbeh_celebration.jpeg",
+  "new": "/images/photoshoot/sushi-tower.jpg",
+  "alt": "Corporate Event Catering Dfw at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/date-night-restaurants-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/date-night-restaurants-frisco/page.tsx",
+  "old": "/images/exterior/JinbehFriscoStorefrontSign.jpg",
+  "new": "/images/pickleball_and_jinbeh_hibachi celebrations.webp",
+  "alt": "Date Night Restaurants Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/date-night-restaurants-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/date-night-restaurants-lewisville/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Date Night Restaurants Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/discover-teppanyaki",
+  "mechanism": "page_src",
+  "file": "src/app/blog/discover-teppanyaki/page.tsx",
+  "old": "/images/blog/3-C060324-6364.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Teppanyaki at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/fast-casual-dining-jinbeh",
+  "mechanism": "page_src",
+  "file": "src/app/blog/fast-casual-dining-jinbeh/page.tsx",
+  "old": "/images/food/BentoBoxLunchSet.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Fast Casual Japanese at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/fine-dining-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/fine-dining-frisco/page.tsx",
+  "old": "/images/blog/7-C060324-6447.jpg",
+  "new": "/images/photoshoot/hibachi-steak.jpg",
+  "alt": "Fine Dining Frisco Tx at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/gluten-free-japanese-food-frisco-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/gluten-free-japanese-food-frisco-lewisville/page.tsx",
+  "old": "/images/food/SmokedSalmonCloseup.jpg",
+  "new": "/images/photoshoot/hibachi-chicken.jpg",
+  "alt": "Gluten Free Japanese Food Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/group-dining-venues",
+  "mechanism": "page_src",
+  "file": "src/app/blog/group-dining-venues/page.tsx",
+  "old": "/images/blog/2-C060324-6341.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-feast-group-dining-dfw.jpg",
+  "alt": "Group Dining Dfw at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-birthday-party-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-birthday-party-frisco/page.tsx",
+  "old": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Birthday Party Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-birthday-party-ideas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-birthday-party-ideas/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-hibachi-flame-show-lewisville-010-orig-IMG_1852-1200w.webp",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Birthday Party at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-calories-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-calories-guide/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Calories at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-catering-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-catering-dfw/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-1200w.webp",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Catering at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-catering-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-catering-frisco/page.tsx",
+  "old": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Catering Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-catering-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-catering-lewisville/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-hibachi-dinner-plate-lewisville-002-orig-IMG_2002-1200w.webp",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Catering Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-dining-experience",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-dining-experience/page.tsx",
+  "old": "/images/catalog/homemade-sauces.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Dining Experience at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-lunch-ideas",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-lunch-ideas/page.tsx",
+  "old": "/images/food/BentoBoxLunchSet.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Lunch Ideas at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-menu-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-menu-guide/page.tsx",
+  "old": "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Menu at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-to-go-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-to-go-dfw/page.tsx",
+  "old": "/images/hq/cooking-on-grill.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi To Go at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/hibachi-vs-teppanyaki-explained",
+  "mechanism": "page_src",
+  "file": "src/app/blog/hibachi-vs-teppanyaki-explained/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-hibachi-fried-rice-art-lewisville-014-orig-IMG_1904-1200w.webp",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Vs Teppanyaki at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/how-to-eat-sushi-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/how-to-eat-sushi-guide/page.tsx",
+  "old": "/images/food/SamaraiRollCloseup.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "How To Eat Sushi at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/international-beer-day",
+  "mechanism": "page_src",
+  "file": "src/app/blog/international-beer-day/page.tsx",
+  "old": "/images/beverages/LewisvilleBar.webp",
+  "new": "/images/drinks/SpicyMargaritaBeverageDrink.jpg",
+  "alt": "International Beer Day at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-beverages-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-beverages-guide/page.tsx",
+  "old": "/images/beverages/LewisvilleBar.jpg",
+  "new": "/images/beverages/JapaneseWhiskey.webp",
+  "alt": "Japanese Beverages at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-cocktails",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-cocktails/page.tsx",
+  "old": "/images/beverages/JinbehPunch.jpg",
+  "new": "/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png",
+  "alt": "Japanese Cocktails at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-delivery-frisco-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-delivery-frisco-lewisville/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "alt": "Japanese Delivery Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-food-near-me-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-food-near-me-frisco/page.tsx",
+  "old": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Japanese Food Near Me Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-restaurants-frisco-tx",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-restaurants-frisco-tx/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Japanese Restaurants In Frisco Tx at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-restaurants-lewisville-tx",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-restaurants-lewisville-tx/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Japanese Restaurants In Lewisville Tx at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-restaurants-near-me",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-restaurants-near-me/page.tsx",
+  "old": "/images/blog/1-C060324-6328.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Japanese Restaurants Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-steakhouse-near-me-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-steakhouse-near-me-dfw/page.tsx",
+  "old": "/images/hq/cooking-on-grill.jpg",
+  "new": "/images/photoshoot/sizzling-plate.jpg",
+  "alt": "Japanese Steakhouse Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-takeout-near-me",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-takeout-near-me/page.tsx",
+  "old": "/images/food/BentoBoxLunchSet.jpg",
+  "new": "/images/photoshoot/hibachi-chicken.jpg",
+  "alt": "Japanese Takeout Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/japanese-whiskey-bar-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/japanese-whiskey-bar-frisco/page.tsx",
+  "old": "/images/drinks/JinbehPunchBeverageDrink.jpg",
+  "new": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "alt": "Japanese Whiskey Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/jinbeh-catering-services",
+  "mechanism": "page_src",
+  "file": "src/app/blog/jinbeh-catering-services/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-1200w.webp",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Jinbeh Catering at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/jinbeh-gift-cards-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/jinbeh-gift-cards-guide/page.tsx",
+  "old": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-flames-frisco-lewisville.jpg",
+  "alt": "Jinbeh Gift Card at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/kid-friendly-japanese-restaurants-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/kid-friendly-japanese-restaurants-dfw/page.tsx",
+  "old": "/images/food/OnionVolcanoDemo.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg",
+  "alt": "Kid Friendly Japanese Restaurants Dfw at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/large-group-dining",
+  "mechanism": "page_src",
+  "file": "src/app/blog/large-group-dining/page.tsx",
+  "old": "/images/blog/9-C060324-6484.jpg",
+  "new": "/images/photoshoot/sushi-tower.jpg",
+  "alt": "Large Group Dining at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/offsite-hibachi-catering",
+  "mechanism": "page_src",
+  "file": "src/app/blog/offsite-hibachi-catering/page.tsx",
+  "old": "/images/food/OnionVolcanoDemo.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Catering Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/omakase-dining-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/omakase-dining-guide/page.tsx",
+  "old": "/images/blog/20-C060324-6766.jpg",
+  "new": "/images/photoshoot/sushi-tower.jpg",
+  "alt": "Omakase at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog",
+  "mechanism": "page_src",
+  "file": "src/app/blog/page.tsx",
+  "old": "/images/photoshoot/sushi-tower.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Japanese Food Blog at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/pickleball-restaurants-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/pickleball-restaurants-lewisville/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+  "new": "/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg",
+  "alt": "Restaurants Near Pickleball Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/popular-japanese-culture",
+  "mechanism": "page_src",
+  "file": "src/app/blog/popular-japanese-culture/page.tsx",
+  "old": "/images/blog/8-C060324-6462.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Popular Japanese Culture at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/premium-sushi-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/premium-sushi-frisco/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/instagram/sushi-feast-overhead.jpg",
+  "alt": "Premium Sushi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/private-dining-rooms-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/private-dining-rooms-frisco/page.tsx",
+  "old": "/images/interior/JinbehFriscoTables.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Private Dining Rooms Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/ramune-soda-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/ramune-soda-guide/page.tsx",
+  "old": "/images/beverages/RamuneSoda.webp",
+  "new": "/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png",
+  "alt": "Ramune Soda at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/restaurants-near-universal-kids-resort-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/restaurants-near-universal-kids-resort-frisco/page.tsx",
+  "old": "/images/food/OnionVolcanoDemo.jpg",
+  "new": "/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg",
+  "alt": "Restaurant Near Universal Kids Resort Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/restaurants-private-rooms",
+  "mechanism": "page_src",
+  "file": "src/app/blog/restaurants-private-rooms/page.tsx",
+  "old": "/images/blog/12-C060324-6551.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Restaurants With Private Rooms at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/romantic-anniversary-dinners",
+  "mechanism": "page_src",
+  "file": "src/app/blog/romantic-anniversary-dinners/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg",
+  "alt": "Romantic Anniversary Dinner at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sake-alcohol-strength",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sake-alcohol-strength/page.tsx",
+  "old": "/images/beverages/LewisvilleBar.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Alcohol Content at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sake-pairing-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sake-pairing-guide/page.tsx",
+  "old": "/images/beverages/NigoriSparklingSake.webp",
+  "new": "/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png",
+  "alt": "Sake Pairing Guide at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sake-sushi-menu-pairings",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sake-sushi-menu-pairings/page.tsx",
+  "old": "/images/blog/10-C060324-6501.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Sushi Pairing at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sake-taste-profile",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sake-taste-profile/page.tsx",
+  "old": "/images/blog/10-C060324-6501.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Taste at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sashimi-vs-sushi",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sashimi-vs-sushi/page.tsx",
+  "old": "/images/blog/17-C060324-6708.jpg",
+  "new": "/images/photoshoot/sashimi-platter.jpg",
+  "alt": "Sashimi Vs Sushi at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/seafood-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/seafood-lewisville/page.tsx",
+  "old": "/images/blog/10-C060324-6501.jpg",
+  "new": "/images/photoshoot/sizzling-plate.jpg",
+  "alt": "Seafood Restaurants Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-catering-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-catering-frisco/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/instagram/sushi-feast-overhead.jpg",
+  "alt": "Sushi Catering Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-catering-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-catering-lewisville/page.tsx",
+  "old": "/images/hibachi-lewisville-2026/jinbeh-sushi-presentation-lewisville-001-orig-IMG_1870-1200w.webp",
+  "new": "/images/instagram/sushi-feast-flatlay.jpg",
+  "alt": "Sushi Catering Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-cooking-classes",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-cooking-classes/page.tsx",
+  "old": "/images/blog/12-C060324-6551.jpg",
+  "new": "/images/instagram/branded-sushi-plate.jpg",
+  "alt": "Sushi Cooking Classes Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-identification-chart",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-identification-chart/page.tsx",
+  "old": "/images/blog/16-C060324-6670.jpg",
+  "new": "/images/instagram/lobster-spread-overhead.jpg",
+  "alt": "Sushi Identification Chart at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-lunch-specials",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-lunch-specials/page.tsx",
+  "old": "/images/blog/12-C060324-6551.jpg",
+  "new": "/images/instagram/tuna-tower-bar-bokeh.jpg",
+  "alt": "Sushi Lunch Specials at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-platter-near-me",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-platter-near-me/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/photoshoot/sashimi-platter.jpg",
+  "alt": "Sushi Platter Near Me at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-takeout-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-takeout-frisco/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+  "alt": "Sushi Takeout Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/sushi-takeout-lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/blog/sushi-takeout-lewisville/page.tsx",
+  "old": "/images/hq/sushi-rolls-2026.jpg",
+  "new": "/images/food/RoyalFlameRoll.jpg",
+  "alt": "Sushi Takeout Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/blog/thanksgiving-dining-guide",
+  "mechanism": "page_src",
+  "file": "src/app/blog/thanksgiving-dining-guide/page.tsx",
+  "old": "/images/blog/24-C060324-6852.jpg",
+  "new": "/images/photoshoot/hibachi-steak.jpg",
+  "alt": "Thanksgiving Catering Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/things-to-do-frisco",
+  "mechanism": "page_src",
+  "file": "src/app/blog/things-to-do-frisco/page.tsx",
+  "old": "/images/blog/15-C060324-6663.jpg",
+  "new": "/images/photoshoot/hibachi-chicken.jpg",
+  "alt": "Things To Do In Frisco Tx at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/top-frisco-restaurants",
+  "mechanism": "page_src",
+  "file": "src/app/blog/top-frisco-restaurants/page.tsx",
+  "old": "/images/blog/8-C060324-6462.jpg",
+  "new": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "alt": "Top Frisco Restaurants at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/blog/types-of-sake-explained",
+  "mechanism": "page_src",
+  "file": "src/app/blog/types-of-sake-explained/page.tsx",
+  "old": "/images/beverages/NigoriSparklingSake.webp",
+  "new": "/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png",
+  "alt": "Types Of Sake at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/unique-kids-birthday-party-places",
+  "mechanism": "page_src",
+  "file": "src/app/blog/unique-kids-birthday-party-places/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/celebrations/jinbeh-kids-hibachi-birthday-dfw.jpg",
+  "alt": "Kids Birthday Party Places at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/vegetarian-japanese-food-dfw",
+  "mechanism": "page_src",
+  "file": "src/app/blog/vegetarian-japanese-food-dfw/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-flames-frisco-lewisville.jpg",
+  "alt": "Vegetarian Japanese Food Dfw at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/what-is-omakase",
+  "mechanism": "page_src",
+  "file": "src/app/blog/what-is-omakase/page.tsx",
+  "old": "/images/blog/15-C060324-6663.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "What Is Omakase at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/blog/world-cup-dallas-restaurants",
+  "mechanism": "page_src",
+  "file": "src/app/blog/world-cup-dallas-restaurants/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/celebrations/world-cup-watch-party.webp",
+  "alt": "World Cup Dallas Restaurants at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/careers",
+  "mechanism": "page_src",
+  "file": "src/app/careers/page.tsx",
+  "old": "/images/food/OnionVolcanoDemo.jpg",
+  "new": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+  "alt": "Jinbeh Careers at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/catering/corporate",
+  "mechanism": "page_src",
+  "file": "src/app/catering/corporate/page.tsx",
+  "old": "/images/photoshoot/hibachi-flame-action.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Corporate Catering Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/catering",
+  "mechanism": "page_src",
+  "file": "src/app/catering/page.tsx",
+  "old": "/images/photoshoot/hibachi-flame-action.jpg",
+  "new": "/images/photoshoot/sushi-tower.jpg",
+  "alt": "Japanese Catering Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/catering/party",
+  "mechanism": "page_src",
+  "file": "src/app/catering/party/page.tsx",
+  "old": "/images/photoshoot/hibachi-flame-action.jpg",
+  "new": "/images/instagram/sushi-feast-overhead.jpg",
+  "alt": "Party Catering Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/catering/wedding",
+  "mechanism": "page_src",
+  "file": "src/app/catering/wedding/page.tsx",
+  "old": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+  "new": "/images/instagram/sushi-feast-flatlay.jpg",
+  "alt": "Wedding Catering Japanese at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/anniversary",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/anniversary/page.tsx",
+  "old": "/images/food/nigiri.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Anniversary Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/asian-restaurant-month",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/asian-restaurant-month/page.tsx",
+  "old": "/images/food/SamaraiRollCloseup.jpg",
+  "new": "/images/photoshoot/sizzling-plate.jpg",
+  "alt": "Asian Restaurant Month at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/baby-shower",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/baby-shower/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Baby Shower Venues Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/christmas",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/christmas/page.tsx",
+  "old": "/images/food/OnionVolcanoDemo.jpg",
+  "new": "/images/photoshoot/sizzling-plate.jpg",
+  "alt": "Christmas Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/corporate-events",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/corporate-events/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/about/chef-choo-choo.jpg",
+  "alt": "Corporate Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/date-night",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/date-night/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/food/OnionVolcanoDemo.jpg",
+  "alt": "Date Night Restaurant Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/family-gatherings",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/family-gatherings/page.tsx",
+  "old": "/images/food/jinbeh_group.jpg",
+  "new": "/images/celebrations/jinbeh-hibachi-chef-flames-family-dfw.jpg",
+  "alt": "Family Restaurant Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/lunar-new-year",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/lunar-new-year/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/food/HappyNewYear.jpg",
+  "alt": "Lunar New Year Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/mid-autumn-festival",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/mid-autumn-festival/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/hq/onion-volcano.jpg",
+  "alt": "Mid Autumn Festival Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/mothers-day",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/mothers-day/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/food/HappyValentinesDay.jpg",
+  "alt": "Mothers Day Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/valentines-day",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/valentines-day/page.tsx",
+  "old": "/images/food/nigiri.jpg",
+  "new": "/images/food/HappyValentinesDay.jpg",
+  "alt": "Valentines Day Dinner Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/world-cup-watch-party",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/world-cup-watch-party/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/celebrations/world-cup-watch-party.webp",
+  "alt": "World Cup Watch Party Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/celebrations/world-cup",
+  "mechanism": "page_src",
+  "file": "src/app/celebrations/world-cup/page.tsx",
+  "old": "/images/celebrations/jinbeh_group.jpg",
+  "new": "/images/celebrations/world-cup-watch-party.webp",
+  "alt": "World Cup 2026 Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/contact",
+  "mechanism": "page_src",
+  "file": "src/app/contact/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/interior/JinbehFriscoTables.jpg",
+  "alt": "Jinbeh Contact at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/delivery",
+  "mechanism": "page_src",
+  "file": "src/app/delivery/page.tsx",
+  "old": "/images/food/FreshSushiAndDessertsAtSushiBar.jpg",
+  "new": "/images/instagram/sushi-feast-overhead.jpg",
+  "alt": "Jinbeh Delivery at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/events",
+  "mechanism": "page_src",
+  "file": "src/app/events/page.tsx",
+  "old": "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+  "new": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "alt": "Event Venue Frisco Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/faq/[slug]",
+  "mechanism": "page_src",
+  "file": "src/app/faq/[slug]/page.tsx",
+  "old": "",
+  "new": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "alt": "Jinbeh at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/faq",
+  "mechanism": "page_src",
+  "file": "src/app/faq/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/interior/JinbehFriscoTables.jpg",
+  "alt": "Jinbeh Faq at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/feedback/frisco",
+  "mechanism": "page_src",
+  "file": "src/app/feedback/frisco/page.tsx",
+  "old": "",
+  "new": "/images/exterior/JinbehFriscoStorefrontSign.jpg",
+  "alt": "Feedback/Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/feedback/lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/feedback/lewisville/page.tsx",
+  "old": "",
+  "new": "/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg",
+  "alt": "Feedback/Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/frisco/appetizers/edamame",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-appetizers.ts",
+  "slug": "edamame",
+  "old": "/images/food/seaweedsalad.png",
+  "new": "/images/menu-photos/Gyoza_Potstickers.jpg",
+  "alt": "Edamame Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/appetizers/seared-tuna",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-appetizers.ts",
+  "slug": "seared-tuna",
+  "old": "/images/menu-photos/Beef_Tataki.jpg",
+  "new": "/images/photoshoot/jinbeh-tuna-tower-sashimi-frisco.jpg",
+  "alt": "Seared Ahi Tuna Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/cocktails/jinbeh-punch",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "jinbeh-punch",
+  "old": "/images/food/MuleSummerSignatureCocktail.jpg",
+  "new": "/images/beverages/JinbehPunch.jpg",
+  "alt": "Jinbeh Punch Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/cocktails/lychee-martini",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "lychee-martini",
+  "old": "/images/food/JinbehPunchBeverageDrink.jpg",
+  "new": "/images/beverages/HanaSakeLycheeFlavored.webp",
+  "alt": "Lychee Martini Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/cocktails",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/cocktails/page.tsx",
+  "old": "/images/drinks/SpicyMargaritaBeverageDrink.jpg",
+  "new": "/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png",
+  "alt": "Cocktails & Sake Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/cocktails/sake-bomb",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "sake-bomb",
+  "old": "/images/food/jinbeh_food_closeup.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Bomb Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/cocktails/sake-flight",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "sake-flight",
+  "old": "/images/food/cocktail.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Flight Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/cocktails/tokyo-mule",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "tokyo-mule",
+  "old": "/images/food/SpicyMargaritaBeverageDrink.jpg",
+  "new": "/images/food/MuleSummerSignatureCocktail.jpg",
+  "alt": "Tokyo Mule Cocktail Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/hibachi/combo-seafood",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "combo-seafood",
+  "old": "/images/menu-photos/Sea_Lovers_Paradise.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-lobster-chicken-combo.jpg",
+  "alt": "Seafood Trio Hibachi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/hibachi/combo-steak-chicken",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "combo-steak-chicken",
+  "old": "/images/photoshoot/hibachi-flame-action.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-lobster-chicken-combo.jpg",
+  "alt": "Steak Chicken Combo Hibachi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/hibachi",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/hibachi/page.tsx",
+  "old": "/images/photoshoot/hibachi-steak.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Hibachi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/hibachi/scallops",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "scallops",
+  "old": "/images/hq/cooking-on-grill.jpg",
+  "new": "/images/hq/onion-volcano.jpg",
+  "alt": "Hibachi Scallops Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/kids-menu",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/kids-menu/page.tsx",
+  "old": "/images/food/BentoBoxLunchSet.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Kids Menu Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/legacy",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/legacy/page.tsx",
+  "old": "/images/about/chef-flames.jpg",
+  "new": "/images/interior/JinbehFriscoTables.jpg",
+  "alt": "Japanese Restaurant Near Legacy West at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/menu",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/menu/page.tsx",
+  "old": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Jinbeh Frisco Menu at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sashimi/chirashi",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sashimi.ts",
+  "slug": "chirashi",
+  "old": "/images/food/jinbeh_sushi_photo.jpg",
+  "new": "/images/photoshoot/sashimi-platter.jpg",
+  "alt": "Chirashi Bowl Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sashimi",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/sashimi/page.tsx",
+  "old": "/images/menu-photos/Fresh_Salmon_Sashimi.jpg",
+  "new": "/images/photoshoot/sashimi-platter.jpg",
+  "alt": "Sashimi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sashimi/yellowtail-sashimi",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sashimi.ts",
+  "slug": "yellowtail-sashimi",
+  "old": "/images/menu-photos/Yelllow_Tail_Sashimi.jpg",
+  "new": "/images/menu-photos/Yellowtail_Heaven.jpg",
+  "alt": "Yellowtail Sashimi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/specials",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/specials/page.tsx",
+  "old": "/images/food/hibachi-grill.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Frisco Specials at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/starwood",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/starwood/page.tsx",
+  "old": "/images/about/chef-flames.jpg",
+  "new": "/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
+  "alt": "Japanese Restaurant Starwood Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/stonebriar",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/stonebriar/page.tsx",
+  "old": "/images/about/chef-flames.jpg",
+  "new": "/images/interior/JinbehFriscoTables.jpg",
+  "alt": "Japanese Restaurant Near Stonebriar at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sushi-rolls/caterpillar-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "caterpillar-roll",
+  "old": "/images/menu-photos/Catepiller_Roll.jpg",
+  "new": "/images/menu-photos/Caterpillar_Roll.jpg",
+  "alt": "Caterpillar Roll Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sushi-rolls",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/sushi-rolls/page.tsx",
+  "old": "/images/menu-photos/Dragon_Roll.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Sushi Rolls Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sushi-rolls/philly-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "philly-roll",
+  "old": "/images/menu-photos/Philadelphia_Roll.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Philadelphia Roll Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sushi-rolls/tiger-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "tiger-roll",
+  "old": "/images/menu-photos/Fire_Cracker_Roll.jpg",
+  "new": "/images/menu-photos/Golden_Tiger_Roll.jpg",
+  "alt": "Tiger Roll Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sushi-rolls/vegas-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "vegas-roll",
+  "old": "/images/menu-photos/Jinbeh_Special_Roll.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Vegas Roll Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/sushi",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/sushi/page.tsx",
+  "old": "/images/frisco/JinbehFrisco_SushiBar.jpg",
+  "new": "/images/instagram/branded-sushi-plate.jpg",
+  "alt": "Sushi Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/frisco/world-cup",
+  "mechanism": "page_src",
+  "file": "src/app/frisco/world-cup/page.tsx",
+  "old": "/images/og-image.jpg",
+  "new": "/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg",
+  "alt": "World Cup Frisco at Jinbeh Frisco Japanese restaurant"
+ },
+ {
+  "route": "/gallery",
+  "mechanism": "page_src",
+  "file": "src/app/gallery/page.tsx",
+  "old": "/images/food/OnionVolcanoDemo.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Jinbeh Photos at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/gift-cards",
+  "mechanism": "page_src",
+  "file": "src/app/gift-cards/page.tsx",
+  "old": "/images/blog/7-C060324-6447.jpg",
+  "new": "/images/instagram/sushi-feast-flatlay.jpg",
+  "alt": "Jinbeh Gift Card at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/happy-hour",
+  "mechanism": "page_src",
+  "file": "src/app/happy-hour/page.tsx",
+  "old": "/images/catalog/23-C060324-6842.jpg",
+  "new": "/images/beverages/JinbehPunch.jpg",
+  "alt": "Happy Hour Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/happy-hour/specials",
+  "mechanism": "page_src",
+  "file": "src/app/happy-hour/specials/page.tsx",
+  "old": "/images/photoshoot/sashimi-platter.jpg",
+  "new": "/images/drinks/cocktail.jpg",
+  "alt": "Happy Hour at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/appetizers/edamame",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-appetizers.ts",
+  "slug": "edamame",
+  "old": "/images/food/seaweedsalad.png",
+  "new": "/images/menu-photos/Shrimp_Tempura.jpg",
+  "alt": "Edamame Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/appetizers/seared-tuna",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-appetizers.ts",
+  "slug": "seared-tuna",
+  "old": "/images/menu-photos/Beef_Tataki.jpg",
+  "new": "/images/photoshoot/jinbeh-tuna-tower-sashimi-frisco.jpg",
+  "alt": "Seared Ahi Tuna Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/castle-hills",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/castle-hills/page.tsx",
+  "old": "/images/about/chef-choo-choo.jpg",
+  "new": "/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg",
+  "alt": "Japanese Restaurant Castle Hills Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/cocktails/jinbeh-punch",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "jinbeh-punch",
+  "old": "/images/food/MuleSummerSignatureCocktail.jpg",
+  "new": "/images/beverages/JinbehPunch.jpg",
+  "alt": "Jinbeh Punch Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/cocktails/lychee-martini",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "lychee-martini",
+  "old": "/images/food/JinbehPunchBeverageDrink.jpg",
+  "new": "/images/beverages/HanaSakeLycheeFlavored.webp",
+  "alt": "Lychee Martini Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/cocktails/sake-bomb",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "sake-bomb",
+  "old": "/images/food/jinbeh_food_closeup.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Bomb Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/cocktails/sake-flight",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "sake-flight",
+  "old": "/images/food/cocktail.jpg",
+  "new": "/images/beverages/NigoriSparklingSake.webp",
+  "alt": "Sake Flight Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/cocktails/tokyo-mule",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-cocktails.ts",
+  "slug": "tokyo-mule",
+  "old": "/images/food/SpicyMargaritaBeverageDrink.jpg",
+  "new": "/images/food/MuleSummerSignatureCocktail.jpg",
+  "alt": "Tokyo Mule Cocktail Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/hibachi/combo-seafood",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "combo-seafood",
+  "old": "/images/menu-photos/Sea_Lovers_Paradise.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-lobster-chicken-combo.jpg",
+  "alt": "Seafood Trio Hibachi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/hibachi/combo-steak-chicken",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "combo-steak-chicken",
+  "old": "/images/photoshoot/hibachi-flame-action.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-lobster-chicken-combo.jpg",
+  "alt": "Steak Chicken Combo Hibachi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/hibachi",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/hibachi/page.tsx",
+  "old": "/images/photoshoot/hibachi-steak.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Hibachi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/hibachi/ribeye",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "ribeye",
+  "old": "/images/food/HibachiComboNYStripAndColossalShrimp.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Ribeye Hibachi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/hibachi/scallops",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-hibachi.ts",
+  "slug": "scallops",
+  "old": "/images/hq/cooking-on-grill.jpg",
+  "new": "/images/photoshoot/sizzling-plate.jpg",
+  "alt": "Hibachi Scallops Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/kids-menu",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/kids-menu/page.tsx",
+  "old": "/images/food/BentoBoxLunchSet.jpg",
+  "new": "/images/about/chef-choo-choo.jpg",
+  "alt": "Kids Menu Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/menu",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/menu/page.tsx",
+  "old": "/images/lewisville/IMG_1910.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Jinbeh Lewisville Menu at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/page.tsx",
+  "old": "/images/lewisville/IMG_1910.jpg",
+  "new": "/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg",
+  "alt": "Hibachi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sashimi/chirashi",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sashimi.ts",
+  "slug": "chirashi",
+  "old": "/images/food/jinbeh_sushi_photo.jpg",
+  "new": "/images/photoshoot/sashimi-platter.jpg",
+  "alt": "Chirashi Bowl Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sashimi",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/sashimi/page.tsx",
+  "old": "/images/menu-photos/Fresh_Salmon_Sashimi.jpg",
+  "new": "/images/photoshoot/sashimi-platter.jpg",
+  "alt": "Sashimi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sashimi/yellowtail-sashimi",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sashimi.ts",
+  "slug": "yellowtail-sashimi",
+  "old": "/images/menu-photos/Yelllow_Tail_Sashimi.jpg",
+  "new": "/images/menu-photos/Yellowtail_Heaven.jpg",
+  "alt": "Yellowtail Sashimi Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/specials",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/specials/page.tsx",
+  "old": "/images/food/hibachi-grill.jpg",
+  "new": "/images/food/OnionVolcanoDemo.jpg",
+  "alt": "Lewisville Specials at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sushi-rolls/caterpillar-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "caterpillar-roll",
+  "old": "/images/menu-photos/Catepiller_Roll.jpg",
+  "new": "/images/menu-photos/Caterpillar_Roll.jpg",
+  "alt": "Caterpillar Roll Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sushi-rolls",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/sushi-rolls/page.tsx",
+  "old": "/images/menu-photos/Dragon_Roll.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Sushi Rolls Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sushi-rolls/philly-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "philly-roll",
+  "old": "/images/menu-photos/Philadelphia_Roll.jpg",
+  "new": "/images/photoshoot/specialty-roll.jpg",
+  "alt": "Philadelphia Roll Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sushi-rolls/tiger-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "tiger-roll",
+  "old": "/images/menu-photos/Fire_Cracker_Roll.jpg",
+  "new": "/images/menu-photos/Golden_Tiger_Roll.jpg",
+  "alt": "Tiger Roll Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/sushi-rolls/vegas-roll",
+  "mechanism": "menu_items",
+  "file": "src/data/menu-items-sushi-rolls.ts",
+  "slug": "vegas-roll",
+  "old": "/images/menu-photos/Jinbeh_Special_Roll.jpg",
+  "new": "/images/food/RoyalFlameRoll.jpg",
+  "alt": "Vegas Roll Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/vista-ridge",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/vista-ridge/page.tsx",
+  "old": "/images/about/chef-flames.jpg",
+  "new": "/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg",
+  "alt": "Japanese Restaurant Near Vista Ridge Mall at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lewisville/world-cup",
+  "mechanism": "page_src",
+  "file": "src/app/lewisville/world-cup/page.tsx",
+  "old": "/images/og-image.jpg",
+  "new": "/images/interior/JinbehFriscoTables.jpg",
+  "alt": "World Cup Lewisville at Jinbeh Lewisville Japanese restaurant"
+ },
+ {
+  "route": "/lunch-specials",
+  "mechanism": "page_src",
+  "file": "src/app/lunch-specials/page.tsx",
+  "old": "/images/food/hibachi-grill.jpg",
+  "new": "/images/instagram/branded-sushi-plate.jpg",
+  "alt": "Lunch Specials at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/menu",
+  "mechanism": "page_src",
+  "file": "src/app/menu/page.tsx",
+  "old": "/images/photoshoot/sushi-tower.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Jinbeh Menu at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/allen",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/allen/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Japanese Restaurant Allen Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/carrollton",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/carrollton/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/about/chef-flames.jpg",
+  "alt": "Japanese Restaurant Carrollton Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/coppell",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/coppell/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/sizzling-plate.jpg",
+  "alt": "Hibachi Coppell Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/denton",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/denton/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/hibachi-steak.jpg",
+  "alt": "Hibachi Denton Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/flower-mound",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/flower-mound/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/hibachi-steak.jpg",
+  "alt": "Japanese Restaurant Flower Mound Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/grapevine",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/grapevine/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/hibachi-chicken.jpg",
+  "alt": "Sushi Grapevine Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/highland-village",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/highland-village/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/hibachi-plate-shrimp.jpg",
+  "alt": "Japanese Restaurant Highland Village Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/little-elm",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/little-elm/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-flames-frisco-lewisville.jpg",
+  "alt": "Japanese Food Little Elm Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/mckinney",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/mckinney/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Japanese Restaurant Mckinney Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/plano",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/plano/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/photoshoot/hibachi-onion-volcano-flame.jpg",
+  "alt": "Japanese Restaurant Plano Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/richardson",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/richardson/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
+  "alt": "Sushi Richardson Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/nearby/the-colony",
+  "mechanism": "page_src",
+  "file": "src/app/nearby/the-colony/page.tsx",
+  "old": "/images/interior/FriscoLocation_Bar_Front.jpg",
+  "new": "/images/about/chef-choo-choo.jpg",
+  "alt": "Japanese Restaurant The Colony Tx at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/order-online",
+  "mechanism": "gradient_skip",
+  "file": "src/app/order-online/page.tsx",
+  "new": "/images/instagram/lobster-spread-overhead.jpg"
+ },
+ {
+  "route": "/private-dining",
+  "mechanism": "page_src",
+  "file": "src/app/private-dining/page.tsx",
+  "old": "/images/food/hibachi-grill.jpg",
+  "new": "/images/photoshoot/hibachi-flame-action.jpg",
+  "alt": "Private Dining Frisco at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/reservations",
+  "mechanism": "gradient_skip",
+  "file": "src/app/reservations/page.tsx",
+  "new": "/images/photoshoot/sushi-tower.jpg"
+ },
+ {
+  "route": "/specials",
+  "mechanism": "page_src",
+  "file": "src/app/specials/page.tsx",
+  "old": "/images/food/hibachi-grill.jpg",
+  "new": "/images/instagram/sushi-feast-overhead.jpg",
+  "alt": "Specials at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/takeout",
+  "mechanism": "page_src",
+  "file": "src/app/takeout/page.tsx",
+  "old": "/images/photoshoot/sashimi-platter.jpg",
+  "new": "/images/instagram/sushi-feast-flatlay.jpg",
+  "alt": "Takeout at Jinbeh Japanese restaurant"
+ },
+ {
+  "route": "/vip",
+  "mechanism": "gradient_skip",
+  "file": "src/app/vip/page.tsx",
+  "new": "/images/instagram/branded-sushi-plate.jpg"
+ },
+ {
+  "route": "/world-cup-2026",
+  "mechanism": "page_src",
+  "file": "src/app/world-cup-2026/page.tsx",
+  "old": "/images/food/hibachi-grill.jpg",
+  "new": "/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg",
+  "alt": "Japan World Cup 2026 Dallas at Jinbeh Japanese restaurant"
+ }
+]

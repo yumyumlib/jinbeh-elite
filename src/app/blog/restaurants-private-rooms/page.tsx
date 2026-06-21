@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         title: "Best Restaurants with Private Rooms Near Me",
         description:
             "Find exclusive private dining rooms perfect for corporate events, celebrations, and intimate gatherings. Professional service and customizable menus.",
-        images: ["/images/blog/12-C060324-6551.jpg"],
+        images: ["/images/about/chef-flames.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/restaurants-private-rooms",
@@ -35,7 +35,7 @@ const articleSchema = {
     headline: "Best Restaurants with Private Rooms Near Me",
     description:
         "Comprehensive guide to restaurants with private dining rooms for exclusive events and intimate gatherings.",
-    image: "https://jinbeh.com/images/blog/12-C060324-6551.jpg",
+    image: "https://jinbeh.com/images/about/chef-flames.jpg",
     datePublished: "2026-01-18",
     dateModified: "2026-03-11",
     author: {
@@ -207,8 +207,8 @@ export default function RestaurantsPrivateRooms() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/12-C060324-6551.jpg"
-                    alt="Private dining room at upscale restaurant"
+                    src="/images/about/chef-flames.jpg"
+                    alt="Restaurants With Private Rooms at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

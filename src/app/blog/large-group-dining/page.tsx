@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         title: "Top Restaurants for Large Group Dining: Best Big Party Venues",
         description:
             "Find the perfect restaurant for your large group. Seamless reservations, diverse menus, and professional service for celebrations and gatherings.",
-        images: ["/images/blog/9-C060324-6484.jpg"],
+        images: ["/images/photoshoot/sushi-tower.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/large-group-dining",
@@ -44,7 +44,7 @@ const articleSchema = {
     headline: "Top Restaurants for Large Group Dining: Best Big Party Venues",
     description:
         "Comprehensive guide to restaurants that excel at serving large groups with diverse menus and professional service.",
-    image: "https://jinbeh.com/images/blog/9-C060324-6484.jpg",
+    image: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
     datePublished: "2026-01-25",
     dateModified: "2026-03-11",
     author: {
@@ -221,8 +221,8 @@ export default function LargeGroupDining() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/blog/9-C060324-6484.jpg"
-                    alt="Large group dining party at restaurant"
+                    src="/images/photoshoot/sushi-tower.jpg"
+                    alt="Large Group Dining at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

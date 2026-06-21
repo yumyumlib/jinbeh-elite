@@ -130,8 +130,8 @@ export default function HibiachiLunchIdeasPage({ params }: { params: { slug: str
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/food/BentoBoxLunchSet.jpg"
-                alt="Jinbeh bento box lunch featuring hibachi favorites"
+                src="/images/photoshoot/hibachi-flame-action.jpg"
+                alt="Hibachi Lunch Ideas at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

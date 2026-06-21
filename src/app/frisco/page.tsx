@@ -1,4 +1,7 @@
 import Link from "next/link";
+import PageSeoBoost from "@/components/PageSeoBoost";
+import HoursReserve from "@/components/HoursReserve";
+import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
@@ -775,7 +778,34 @@ export default function FriscoPage() {
           </div>
         </section>
 
+        {/* Google Maps Embed */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-6 text-center">Find Jinbeh Frisco</h2>
+            <div className="rounded-xl overflow-hidden shadow-lg border border-warm-ivory">
+              <iframe
+                src="https://www.google.com/maps?q=Jinbeh+Japanese+Restaurant,+2693+Preston+Rd,+Frisco,+TX+75034&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Jinbeh Japanese Restaurant Frisco - Map"
+              />
+            </div>
+            <p className="text-center text-charcoal/70 mt-4 text-sm">
+              2693 Preston Road, Suite 1040, Frisco, TX 75034 · <a href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Frisco+TX" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Get Directions</a>
+            </p>
+          </div>
+        </section>
+
       </main >
+
+      <OnlineOrderCTA />
+        <HoursReserve location="frisco" />
+
+      <PageSeoBoost route="/frisco" />
 
       <Footer />
     </>

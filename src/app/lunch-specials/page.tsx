@@ -172,8 +172,8 @@ export default function LunchSpecialsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-accent-red via-deep-indigo to-charcoal" />
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="/images/food/hibachi-grill.jpg"
-              alt="Hibachi grill"
+              src="/images/instagram/branded-sushi-plate.jpg"
+              alt="Lunch Specials at Jinbeh Japanese restaurant"
               fill
               className="object-cover"
             />

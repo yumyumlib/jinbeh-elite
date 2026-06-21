@@ -102,8 +102,8 @@ export default function FastCasualDiningJinbeh() {
             <h1>Japanese Dining on Your Schedule</h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/food/BentoBoxLunchSet.jpg"
-                alt="Jinbeh bento box lunch set for quick dining"
+                src="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp"
+                alt="Fast Casual Japanese at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

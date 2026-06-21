@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         title: "Best Bachelorette Restaurants Dallas: Top Picks for Celebrations",
         description:
             "Plan an unforgettable bachelorette celebration in Dallas. Discover top restaurants perfect for your party.",
-        images: ["/images/celebrations/jinbeh_group.jpg"],
+        images: ["/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/bachelorette-restaurants-dallas",
@@ -185,8 +185,8 @@ export default function BacheloretteRestaurantsDallas() {
             {/* Hero */}
             <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/celebrations/jinbeh_group.jpg"
-                    alt="Birthday celebration at Jinbeh hibachi restaurant"
+                    src="/images/photoshoot/jinbeh-hibachi-sushi-feast-frisco-lewisville.jpg"
+                    alt="Bachelorette Restaurants Dallas at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

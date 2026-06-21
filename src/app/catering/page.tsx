@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
+import CateringPackages from "@/components/CateringPackages";
 import { HeroSection, RevealSection, AnimatedGradientText } from "@/components/MagicUI";
 import { MagicCard } from "@/components/ui/magic-card";
 import Header from "@/components/Header";
@@ -10,9 +12,9 @@ import CateringForm from "@/components/CateringForm";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
-  title: { absolute: "Catering | Jinbeh Japanese Restaurant | Hibachi & Sushi Catering DFW" },
+  title: { absolute: "Sushi & Hibachi Catering Frisco TX | Jinbeh Japanese Restaurant" },
   description:
-    "Bring Jinbeh to your event! Japanese catering for corporate events, weddings, private parties, and special occasions in Frisco, Lewisville, and the.",
+    "Bring Jinbeh to your event. Japanese catering for corporate events, weddings, and parties in Frisco, Lewisville, and DFW. Hibachi and sushi platters with one week lead time.",
   keywords: [
     "japanese catering frisco",
     "sushi catering dallas",
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/catering",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+        url: "https://jinbeh.com/images/photoshoot/sushi-tower.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Catering",
@@ -369,6 +371,8 @@ export default function CateringPage() {
           </div>
         </section>
       </main>
+      <CateringPackages />
+      <PageSeoBoost route="/catering" />
       <Footer />
     </>
   );

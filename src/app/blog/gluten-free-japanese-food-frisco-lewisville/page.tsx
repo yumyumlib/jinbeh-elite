@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/blog/gluten-free-japanese-food-frisco-lewisville",
         images: [
             {
-                url: "https://jinbeh.com/images/food/SmokedSalmonCloseup.jpg",
+                url: "https://jinbeh.com/images/photoshoot/hibachi-chicken.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Fresh sashimi at Jinbeh — naturally gluten-free Japanese food in Frisco and Lewisville TX",
@@ -58,7 +58,7 @@ const articleSchema = {
     headline: "Gluten-Free Japanese Food in Frisco & Lewisville TX",
     description:
         "Jinbeh's working guide to eating gluten-free at our hibachi and sushi tables — what works, what to swap, what to ask for.",
-    image: "https://jinbeh.com/images/food/SmokedSalmonCloseup.jpg",
+    image: "https://jinbeh.com/images/photoshoot/hibachi-chicken.jpg",
     datePublished: "2026-05-12",
     dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
@@ -147,8 +147,8 @@ export default function GlutenFreeJapanesePost() {
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
                 <Image
-                    src="/images/food/SmokedSalmonCloseup.jpg"
-                    alt="Fresh salmon sashimi at Jinbeh — naturally gluten-free Japanese food in Frisco and Lewisville TX"
+                    src="/images/photoshoot/hibachi-chicken.jpg"
+                    alt="Gluten Free Japanese Food Frisco at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover"
                     priority

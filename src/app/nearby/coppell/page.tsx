@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/nearby/coppell",
     images: [
       {
-        url: "https://jinbeh.com/images/interior/FriscoLocation_Bar_Front.jpg",
+        url: "https://jinbeh.com/images/photoshoot/sizzling-plate.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Nearby Coppell",

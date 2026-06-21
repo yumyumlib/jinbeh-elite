@@ -11,6 +11,7 @@ import JinbehExperience from "@/components/JinbehExperience";
 import OpenTableWidget from "@/components/OpenTableWidget";
 import locationsData from "@/data/locations.json";
 import HeroSection from "@/components/HeroSection";
+import TrustStrip from "@/components/TrustStrip";
 
 import type { Metadata } from "next";
 
@@ -176,6 +177,7 @@ export default function HomePage() {
         />
 
         <HeroSection />
+        <TrustStrip />
 
         {/* Jinbeh Experience - Merged Section with Best Elements */}
         <JinbehExperience />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -245,8 +246,8 @@ export default function VistaRidgePage() {
                 <div className="relative">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
-                      src="/images/about/chef-flames.jpg"
-                      alt="Hibachi chef at Jinbeh Lewisville near Vista Ridge Mall"
+                      src="/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg"
+                      alt="Japanese Restaurant Near Vista Ridge Mall at Jinbeh Lewisville Japanese restaurant"
                       fill
                       className="object-cover"
                     />
@@ -451,6 +452,7 @@ export default function VistaRidgePage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/lewisville/vista-ridge" />
       <Footer />
     </>
   );

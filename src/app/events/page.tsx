@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/events",
     images: [
       {
-        url: "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+        url: "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg",
         width: 1200,
         height: 630,
         alt: "Private event dining at Jinbeh Japanese Restaurant",
@@ -49,7 +50,7 @@ const eventSchema = {
   "name": "Jinbeh Japanese Restaurant - Event Venue",
   "url": "https://jinbeh.com/events",
   "description": "Premium event hosting and private dining venue in Frisco and Lewisville, TX",
-  "image": "https://jinbeh.com/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg",
+  "image": "https://jinbeh.com/images/photoshoot/hibachi-plate-shrimp.jpg",
   "priceRange": "$$$",
   "areaServed": "DFW Metroplex",
   "availableLanguage": "en",
@@ -306,8 +307,8 @@ export default function EventsPage() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
-            alt="Private event dining at Jinbeh Japanese Restaurant - celebrations and gatherings"
+            src="/images/photoshoot/hibachi-plate-shrimp.jpg"
+            alt="Event Venue Frisco Tx at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority
@@ -717,7 +718,7 @@ export default function EventsPage() {
             {/* Gallery Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                { src: "/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg", alt: "Birthday celebration at Jinbeh" },
+                { src: "/images/photoshoot/hibachi-plate-shrimp.jpg", alt: "Birthday celebration at Jinbeh" },
                 { src: "/images/food/OnionVolcanoDemo.jpg", alt: "Hibachi onion volcano entertainment" },
                 { src: "/images/food/HibachiComboNYStripAndColossalShrimp.jpg", alt: "Hibachi cooked meal" },
                 { src: "/images/photoshoot/sushi-tower.jpg", alt: "Fresh sushi tower" },
@@ -918,6 +919,7 @@ export default function EventsPage() {
           </div>
         </section >
       </main >
+      <PageSeoBoost route="/events" />
       <Footer />
     </>
   );

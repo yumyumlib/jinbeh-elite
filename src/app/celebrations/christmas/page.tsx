@@ -114,8 +114,8 @@ export default function ChristmasPage() {
 <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-warm-ivory" />
           <Image
-            src="/images/food/OnionVolcanoDemo.jpg"
-            alt="Christmas hibachi dinner at Jinbeh"
+            src="/images/photoshoot/sizzling-plate.jpg"
+            alt="Christmas Dinner Frisco at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority

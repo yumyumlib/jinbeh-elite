@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "https://jinbeh.com/allergy-friendly-dining",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/sashimi-platter.jpg",
+        url: "https://jinbeh.com/images/hibachi-lewisville-2026/jinbeh-japanese-restaurant-interior-lewisville-002-orig-IMG_1830-1200w.webp",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Allergy Friendly Dining",

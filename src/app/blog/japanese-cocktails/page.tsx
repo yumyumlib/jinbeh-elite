@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Japanese Cocktails: Art, Recipes & Mixology Guide",
         description: "Master the art of Japanese cocktails. Learn recipes, techniques, and traditions from expert mixologists.",
-        images: ["/images/beverages/JinbehPunch.jpg"],
+        images: ["/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png"],
     },
     alternates: {
         canonical: "https://jinbeh.com/blog/japanese-cocktails",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const schemas = [
-    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Cocktails: Art, Recipes & Mixology", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/JinbehPunch.jpg" },
+    { "@context": "https://schema.org", "@type": "Article", headline: "Japanese Cocktails: Art, Recipes & Mixology", datePublished: "2026-01-30", dateModified: "2026-03-11", author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant" }, image: "https://jinbeh.com/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png" },
     {
         "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
             { "@type": "Question", name: "What is Japanese mixology?", acceptedAnswer: { "@type": "Answer", text: "Japanese mixology blends science and art, focusing on harmony of flavors, precise measurements, and aesthetic presentation. It emphasizes the overall experience of the consumer." } },
@@ -53,7 +53,7 @@ export default function JapaneseCocktails() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             {schemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
             <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
-                <Image src="/images/beverages/JinbehPunch.jpg" alt="Japanese cocktails with artistic presentation" fill className="object-cover" priority />
+                <Image src="/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png" alt="Japanese Cocktails at Jinbeh Japanese restaurant" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex gap-2 text-sm text-warm-ivory/70 mb-4">

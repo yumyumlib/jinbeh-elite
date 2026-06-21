@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -193,8 +194,8 @@ export default function SashimiLewisvillePage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/menu-photos/Fresh_Salmon_Sashimi.jpg"
-                    alt="Salmon Sashimi, fresh Atlantic salmon sliced to perfection"
+                    src="/images/photoshoot/sashimi-platter.jpg"
+                    alt="Sashimi Lewisville at Jinbeh Lewisville Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -505,6 +506,7 @@ Pricing is listed on our current menu. Browse the full menu for details.
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/lewisville/sashimi" />
       <Footer />
     </>
   );

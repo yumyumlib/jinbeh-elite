@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
+import CateringPackages from "@/components/CateringPackages";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/catering/corporate",
     images: [
       {
-        url: "https://jinbeh.com/images/photoshoot/hibachi-flame-action.jpg",
+        url: "https://jinbeh.com/images/photoshoot/specialty-roll.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Catering Corporate",
@@ -602,6 +604,8 @@ export default function CorporateCateringPage() {
           </div>
         </section>
       </main>
+      <CateringPackages />
+      <PageSeoBoost route="/catering/corporate" />
       <Footer />
     </>
   );

@@ -250,7 +250,7 @@ export default function FamilyGatheringsPage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/food/jinbeh_group.jpg"
+            poster="/images/celebrations/jinbeh-hibachi-chef-flames-family-dfw.jpg"
           >
             <source
               src="https://jinbeh.com/wp-content/uploads/2023/01/hibachi-hero.mp4"
@@ -484,8 +484,8 @@ export default function FamilyGatheringsPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/food/jinbeh_group.jpg"
-                    alt="Happy family dining at hibachi table at Jinbeh"
+                    src="/images/celebrations/jinbeh-hibachi-chef-flames-family-dfw.jpg"
+                    alt="Family Restaurant Frisco at Jinbeh Japanese restaurant"
                     fill
                     className="object-cover"
                   />

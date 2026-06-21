@@ -202,7 +202,7 @@ export default function BirthdayCelebrationRestaurants() {
                 <video
                     autoPlay muted loop playsInline
                     className="absolute inset-0 w-full h-full object-cover"
-                    poster="/images/celebrations/jinbeh_group.jpg"
+                    poster="/images/kids_birthday_jinbeh_celebration.webp"
                 >
                     <source src="/videos/LOCAL-LEW-SUSHI-sashimi-carpaccio-prep-chef-hands-01.mp4" type="video/mp4" />
                 </video>

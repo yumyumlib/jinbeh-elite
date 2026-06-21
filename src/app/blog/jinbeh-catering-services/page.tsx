@@ -135,8 +135,8 @@ export default function JinbehCateringServicesPage() {
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/hibachi-lewisville-2026/jinbeh-hibachi-chef-cooking-lewisville-001-orig-IMG_1876-1200w.webp"
-                alt="Jinbeh catering chef preparing hibachi for private events"
+                src="/images/photoshoot/specialty-roll.jpg"
+                alt="Jinbeh Catering at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

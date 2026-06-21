@@ -4,6 +4,275 @@ This file tracks notable findings, decisions, and tribal knowledge for the
 jinbeh-elite-phase1 Next.js website. Add new entries at the top with a
 date and short title.
 
+## 2026-06-21 — DEPLOYED nightly SEO content batch 2 (25 pages: catering + neighborhood + category)
+
+Scheduled `nightly-seo-content-batch` run. Generated + deployed the next 25 unique
+PageSeoBoost entries (heading + 2 paragraphs + 3 FAQs each) into
+`src/data/page-seo-content.ts`. Clean build, no abort, no rollback.
+
+### Pages covered this run (25, all non-blog)
+catering: `/catering/corporate`, `/catering/party`, `/catering/wedding`.
+neighborhood_loc: `/frisco/legacy`, `/frisco/starwood`, `/frisco/stonebriar`,
+`/frisco/world-cup`, `/lewisville/castle-hills`, `/lewisville/vista-ridge`,
+`/lewisville/world-cup`. category: `/frisco/{appetizers,cocktails,hibachi,kids-menu,
+menu,specials,sushi-rolls}`, `/happy-hour/specials`, `/lewisville/{appetizers,cocktails,
+hibachi,kids-menu,menu,specials,sushi-rolls}`.
+
+### Coverage tracker
+- Before: 13 routes covered. After: **38 routes covered** (13 + 25).
+- Injectable pages total: **276** (incl. 100 blogs). **Remaining eligible: 238.**
+- At 25/night this completes in ~10 more nightly runs, then self-disables.
+- NOTE: this batch had **no blog routes**, so the task's "QA at least one blog"
+  step was N/A; blog batches come later (blogs render via the shared
+  `blog/layout.tsx` <BlogSeoBoost/>, no per-page injection).
+
+### Content notes (brand rules applied)
+- Each entry targets its primary_keyword, weaves secondaries, and works in its
+  feature_adds: "Serving DFW since 1988 / longest-running family-owned" authority,
+  reservations+hours, easy online ordering / to-go, landmark proximity (Stonebriar,
+  The Star, Vista Ridge, Legacy West), kid-friendly tableside show + training
+  chopsticks, premium hibachi cuts (filet mignon, NY strip, Black Angus ribeye,
+  chateaubriand, twin lobster), fresh-fish-cut-to-order sourcing, sake/whiskey
+  (Dassai/Yamazaki/Hibibi → Hibiki) + flights.
+- Specials pages feature the **$35 Mon-Fri lunch Hibachi-for-Two** and the **Happy
+  Hour** $4 draft / $5 small hot sake / $6 wine (Mon-Fri 5:00-6:30) — the only
+  allowed prices (written as "35 dollars / 4 dollar / 5 dollar / 6 dollar" to match
+  the file's existing happy-hour style).
+- Sushi-rolls pages use the **Fuji-san** chef-craft angle (head sushi chef since
+  1993; original Jinbeh Special Roll his signature) within guardrails (no
+  every-roll claim; ramen/kaiseki/toro/uni/abalone NOT presented as current; no
+  "never frozen"). PageSeoBoost renders paragraphs as plain text (no anchor tags),
+  so his /blog/fuji-san-jinbeh-sushi-chef-dfw profile is referenced descriptively,
+  not linked. No AYCE, no omakase, no em-dashes (validated programmatically).
+
+### Deploy mechanics
+- Pre-flight: **CPU steal 0.0%, load 0.08, 19 GB free**, prod healthy (well under
+  abort guards steal>40 / load>12 / disk<8GB).
+- `apply_hero_upgrades.py` injected the 25 `<PageSeoBoost route=.../>` anchors before
+  `<Footer>` (idempotent; hero-swap portion produced 0 new writes — exactly 25
+  page.tsx touched this run). page-seo-content.ts verified: 38 top-level routes,
+  braces balanced, still ends `export default seoContent;`.
+- rsync `src/` (ephemeral ed25519 key, removed after). `docker build` candidate
+  **4.39 GB**: compiled 40s, **TypeScript clean 37.6s**, 398 static pages.
+- QA (temp :3009): `/catering/wedding`, `/frisco/hibachi`, `/lewisville/sushi-rolls`,
+  `/frisco/world-cup`, `/happy-hour/specials` all 200 with new content marker
+  present; /, /frisco, /lewisville 200. Promote → rollback tag
+  **`jinbeh-elite:rollback-20260621-0852-pre-content`** (kept); candidate→latest;
+  prod recreated, **healthy**. Live re-verify on :3002 (Host: jinbeh.com): batch
+  pages 200 + content present, core pages 200.
+- **IndexNow:** 25 batch URLs POSTed to api.indexnow.org → **HTTP 200** (keyfile 200).
+
+### Notes
+- 3003 archive NOT rebuilt this run (still serves prior content as failover);
+  rebuild when convenient.
+- Local changes remain UNCOMMITTED (sandbox can't clear `.git/index.lock`); deployed
+  via working-tree rsync. Commit from the real Mac for history. Scratchpad ephemeral
+  key files persist in the session outputs dir but are inert (VPS-side key removed).
+
+## 2026-06-21 — DEPLOYED the hero-image + UI + catering/content upgrade to prod (scheduled off-peak run)
+
+Unattended scheduled run (`deploy-staged-hero-images`) executed the full
+HERO_UPGRADE_MANIFEST_2026-06-20 plan end-to-end. Clean run, no abort, no rollback.
+
+### What shipped (live on `jinbeh-prod` / `jinbeh-elite:latest`)
+- **182 hero swaps + keyword-rich alt text** across page.tsx, menu-items data, and
+  3 former gradient pages — applied deterministically by `scripts/apply_hero_upgrades.py`
+  (idempotent; logged old→new per file in `HERO_SWAP_CHANGELOG_2026-06-20.md`).
+- **159 responsive WebP variants** (768/1280/1920w) generated for the new heroes
+  (`convert` present in the Cowork sandbox, so variants generated locally then rsynced).
+- **TrustStrip ("Serving DFW since 1988 / #1-Rated Hibachi · Frisco & Lewisville")**
+  wired BELOW the homepage hero (hero itself untouched — still the fire-show poster,
+  verified `/images/hero/jinbeh-hibachi-chef-fire-show-*` on prod).
+- **BlogSeoBoost** in the shared blog layout + **13 PageSeoBoost** unique per-page SEO
+  content sections (batch 1: frisco, lewisville, catering, happy-hour, bar, world-cup,
+  private-dining, events, frisco/sushi, lewisville/sushi, etc.) from `page-seo-content.ts`.
+- Already-committed-by-earlier-session pieces that rode along: CateringPackages/
+  OnlineOrderCTA/HoursReserve components + `src/data/catering-program.ts`; the flagship
+  blog `/blog/fuji-san-jinbeh-sushi-chef-dfw` (in blog-posts.json); new
+  `public/images/about/fuji-san-*` portrait files + variants.
+
+### Deploy mechanics
+- **Pre-flight:** load 0.00, **CPU steal 0.0%**, 32 GB free, prod healthy (well under
+  the abort guards: steal>40% / load>12 / disk<8GB).
+- **rsync:** `src/` with `--delete`; `public/images/` WITHOUT `--delete` (191 files /
+  ~22.7 MB = the 12 new heroes + variants + fuji-san portraits only — speedup 50.9x).
+- **Build:** candidate image, compile 48s, **TypeScript clean 38.8s**, 398 static pages,
+  4.39 GB. Load peaked ~2.2 (nowhere near 12).
+- **QA (temp :3009):** all key pages + the new blog 200; 6 new image URLs 200; homepage
+  hero confirmed still the fire-show poster + TrustStrip present. Temp container removed.
+- **Promote:** rollback tag **`jinbeh-elite:rollback-20260621-0809-pre-heroupgrade`** (kept);
+  candidate→latest; prod recreated. Live verify on :3002 (Host: jinbeh.com): /, /frisco,
+  /lewisville, /menu, /catering, /order-online, /blog/fuji-san-jinbeh-sushi-chef-dfw all
+  200; new images 200; prod healthy (home 200 in ~0.02s).
+
+### Post-deploy
+- **IndexNow:** 198 changed URLs (hero-swap routes + page-seo-content keys + the new blog)
+  POSTed to api.indexnow.org → **HTTP 200**; keyfile live (200).
+- **3003 archive failover rebuilt** (`snapshot.sh` → `jinbeh-archive:20260621-081008`,
+  swapped; serves the new blog + images, 200). NOTE: confirmed the known step-6 bug —
+  `snapshot.sh` hangs/doesn't print "complete" after the container swap, but the swap
+  itself succeeds; `pkill -f snapshot.sh` to clear the lingering process.
+- **Ephemeral ed25519 key** added for rsync then removed (0 remaining in authorized_keys).
+
+### Notes / lessons
+- `/tmp` in the Cowork sandbox is **shared across sessions** — a pre-existing `/tmp/vps.py`
+  owned by another session blocked overwrite ("Permission denied"). Put paramiko helper
+  scripts in the session's own outputs dir, not bare `/tmp`.
+- The local `git commit` is again blocked by a stale `.git/index.lock` (sandbox can't
+  unlink) — changes are deployed via working-tree rsync but remain UNCOMMITTED locally;
+  clear the lock + commit from the real Mac for history. New untracked deliverables this
+  session: HERO_UPGRADE_MANIFEST, HERO_SWAP_CHANGELOG, Jinbeh_Hero_Image_Audit xlsx,
+  SEO_COMPETITIVE_ANALYSIS, STRUCTURED_DATA_IMPROVEMENTS, OUTREACH_DRAFTS, PROGRESS_REPORT.
+- **Skipped by design:** the homepage hero (locked 10/10), ~92 pages whose current hero
+  already wins, and the 2 scaffolded-only items (fire-show video hero + Google review
+  carousel) which await owner-controlled assets/feeds. Remaining PageSeoBoost batches
+  (category/nearby/celebrations/blog) follow in later reviewed runs.
+
+## 2026-06-20 — Hot-swapped the 4 location menu PDFs (June-15-2026 versions) — no rebuild
+
+Owner provided refreshed lunch/dinner menu PDFs for both locations. The
+website links + filenames were ALREADY correct (`/menus/{frisco,lewisville}/{lunch,dinner}-menu.pdf`,
+referenced in `frisco/menu/page.tsx`, `lewisville/menu/page.tsx`, `menu/MenuClient.tsx`),
+so this was purely a static-file content swap — no source change, no Docker rebuild.
+
+### What shipped
+- Replaced 4 PDFs in local repo `public/menus/` (sushi-menu.pdf left untouched).
+  New files are the larger, higher-res June-15-2026 exports (F-lunch 1858473,
+  F-dinner 1971768, L-lunch 1925058, L-dinner 1969874 bytes; all 2-page, valid).
+- **Hot-swap deploy (chosen over rebuild):** uploaded via SFTP, then for each of
+  the 4 files: `cp` into `/opt/jinbeh-elite/public/menus/...` (disk source of
+  truth, so the next normal rebuild bakes them in) AND `docker cp` into BOTH
+  `jinbeh-prod:/app/public/menus/...` and `jinbeh-archive:/app/public/menus/...`
+  (live update, no restart). Next standalone serves `/public` from the container
+  FS each request, so no restart/rebuild needed.
+
+### Verified
+- Pre-flight: load 0.06, **steal 0.0%**, prod healthy, 23G free.
+- prod :3002 direct → all 4 new sizes, http 200.
+- Public via Cloudflare → all 4 canonical URLs return new content-length +
+  `last-modified: Sat, 20 Jun 2026 22:18` + `cf-cache-status: EXPIRED` (edge
+  auto-revalidated against origin — **no manual Cloudflare purge needed** for PDFs).
+
+### Notes / lessons
+- **Hot-swap is the right tool for static-asset-only changes.** A full image
+  rebuild (compile 397 pages + TS check + prod restart) is overkill to change 4
+  PDFs. `docker cp` into prod+archive + updating `/opt/.../public` is instant,
+  zero CPU spike, and durable through the next code rebuild. Caveat: a bare
+  `docker rm+run` recreate from the CURRENT image (without a rebuild) before the
+  next rebuild would revert the cp'd files — acceptable since deploys rebuild
+  public anyway.
+- `docker cp` lands files as root:root 644 inside the container; the `nextjs`
+  runtime user reads them fine.
+- `log.env` `VPS_PASSWORD` is **single-quoted** (`'Brighter100?'`) — strip quotes
+  after the regex or paramiko auth fails.
+- Direct-origin curl to nginx returns **403 by design** (origin blocks
+  non-Cloudflare); verify via prod :3002 directly + the public Cloudflare URL.
+
+## 2026-06-20 — DEPLOYED SEO competitive analysis fixes + new content + Google Maps embeds
+
+Second deploy of the day. All changes from the competitive SERP analysis session.
+
+### Changes deployed
+1. **New blog article:** `/blog/best-hibachi-frisco` — 476-line article targeting
+   "best hibachi frisco", "japanese steakhouse frisco", "teppanyaki near me frisco".
+   Article + FAQPage + BreadcrumbList schema. Registered in `blog-posts.json`
+   (along with `best-hibachi-lewisville` which was also missing from the JSON).
+2. **Google Maps embeds:** Added embedded Google Maps iframes to `/frisco` and
+   `/lewisville` location pages ("Find Jinbeh Frisco/Lewisville" sections with
+   interactive map + "Get Directions" link).
+3. **P0 bug fixes:** Truncated meta description on `/catering`; broken ItemList
+   schema + BreadcrumbList + missing table cells on `/blog/group-dining-venues`;
+   em-dashes + prices removed from `/blog/japanese-steakhouse-near-me-dfw`;
+   generic H1 on `/celebrations/birthday` replaced with keyword-rich version.
+4. **P1 improvements:** Happy Hour FoodEvent endDate extended to 2027-12-31;
+   `/private-dining` FAQ schema trimmed from 9 to 6 (matching rendered);
+   `/world-cup-2026` got Twitter card metadata; `/frisco/hibachi` H1 updated
+   to "Best Hibachi in Frisco, TX".
+
+### Deploy details
+- **Pre-flight:** load 0.24, 21G disk free, prod healthy.
+- **Build:** npm ci CACHED, compile 39.7s, TypeScript 42s, 397 static pages.
+  Total build ~2 min. Load peaked ~1.96 (well under 12 threshold).
+- **QA:** All key pages 200 on :3009, Google Maps embeds confirmed on both
+  location pages, new blog articles accessible.
+- **Rollback tag:** `jinbeh-elite:rollback-20260620-1725-pre-seo2`.
+- **Ephemeral SSH key:** added via ssh-keygen + paramiko, removed after deploy.
+- **IndexNow:** 13 URLs submitted (new articles + all edited pages). HTTP 200.
+
+### Outreach drafts created
+- `OUTREACH_DRAFTS_2026-06-20.md` — two ready-to-send emails:
+  1. **CultureMap Dallas** (Stephanie Allmon Merry) — pitch for inclusion in
+     their World Cup dining roundup (they're the #1 result for "world cup
+     restaurants frisco" and actively growing the list). Angle: Samurai Blue
+     Special + Chioma Ubogagu connection.
+  2. **Visit Frisco CVB** (info@visitfrisco.com) — business directory listing
+     submission for visitfrisco.com/directory.
+
+### Pending
+- Submit remaining 7 GSC indexing URLs from yesterday's quota (Jun 21).
+- Send the two outreach emails (owner action).
+- Rebuild 3003 archive container from updated source.
+
+## 2026-06-20 — DEPLOYED SEO indexing fixes + GSC indexing requests (8 of 15 submitted, quota hit)
+
+Deployed the Priority 1-3 SEO fixes and began requesting indexing via GSC URL
+Inspection. Deploy was clean; GSC daily quota capped us at 8 requests today.
+
+### Deploy details
+- **Pre-flight:** load 2.69, steal 26% (acceptable), 15G disk free.
+- **Files rsynced:** `src/` (712 files, `--delete`), `next.config.ts` (new redirects:
+  `/families` → `/celebrations/family-gatherings`, `/main/wp-content/:path*` → `/`,
+  `/main/:path*` → `/`), `public/sitemap-priority.xml` (60 unindexed URLs, priority
+  1.0, changefreq daily).
+- **Build:** near-instant (cached layers from Jun 19 deploy). QA passed on all key
+  pages (/, /frisco, /lewisville, /menu — all 200 with correct content).
+- **Rollback tag:** `jinbeh-elite:rollback-20260620-1105-pre-indexfix`.
+- **Prod promoted** via standard procedure (tag candidate → latest, rm + run).
+
+### Changes deployed
+1. **Priority sitemap** (`public/sitemap-priority.xml`) — static XML with 60
+   "Discovered – currently not indexed" URLs at priority 1.0, changefreq daily.
+   Submitted in GSC → Status: Success, 60 pages discovered.
+2. **404 fixes** — `next.config.ts` redirects for `/families`, `/main/wp-content/*`,
+   `/main/*` (legacy WordPress paths).
+3. **410 Gone responses** — 12 spam/pharma 404 URLs now return proper 410 via
+   `next.config.ts` rewrites + `src/app/gone/page.tsx`.
+4. **Internal linking blitz** — added contextual cross-links to top unindexed blog
+   posts from high-authority indexed pages (location pages, celebrations, catering,
+   blog hub).
+
+### GSC indexing requests (8 of 15 — quota exceeded)
+Successfully requested indexing for:
+1. `/blog/best-hibachi-near-me-dfw`
+2. `/blog/japanese-food-near-me-frisco`
+3. `/blog/corporate-event-catering-dfw`
+4. `/blog/sushi-platter-for-party`
+5. `/blog/kid-friendly-japanese-restaurants-dfw`
+6. `/blog/hibachi-vs-teppanyaki-explained`
+7. `/blog/unique-kids-birthday-party-places`
+8. `/blog/gluten-free-japanese-food-frisco-lewisville`
+
+**Quota exceeded** on #9 (`/blog/best-restaurants-stonebriar`). Remaining 7 URLs
+to submit tomorrow:
+- `/blog/best-restaurants-stonebriar`
+- `/blog/best-sake-bar-dfw`
+- `/blog/best-seafood-dallas`
+- `/blog/best-steakhouses-lewisville`
+- `/blog/group-dining-venues`
+- `/blog/japanese-delivery-frisco-lewisville`
+- `/blog/sushi-catering-lewisville`
+
+### Method used for GSC submissions
+Navigate to GSC Overview → use JavaScript to set URL in search bar via
+`Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set`
++ dispatch `input` + `keydown Enter` events → wait for inspection → click
+REQUEST INDEXING → wait for "Indexing requested" confirmation (~30s per URL).
+
+### Pending
+- Submit remaining 7 URLs tomorrow (Jun 21).
+- Rebuild 3003 archive container from updated source.
+- Local git commit (stale `.git/index.lock` persists in sandbox).
+
 ## 2026-06-19 — FIXED "Review has multiple aggregate ratings" — review snippets now eligible (deployed)
 
 Resolved the duplicate-`aggregateRating` critical issue the Rich Results Test

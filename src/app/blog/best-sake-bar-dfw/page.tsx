@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Sake Bar DFW: Jinbeh Frisco & Lewisville",
         description: "A real sake program in DFW — sake by the glass, flights, and bottles at Jinbeh Frisco and Lewisville. Family-owned since 1988.",
         url: "https://jinbeh.com/blog/best-sake-bar-dfw",
-        images: [{ url: "https://jinbeh.com/images/drinks/cocktail.jpg", width: 1200, height: 630, alt: "Sake bar DFW — Jinbeh sake selection and Japanese bar program" }],
+        images: [{ url: "https://jinbeh.com/images/beverages/NigoriSparklingSake.webp", width: 1200, height: 630, alt: "Sake bar DFW — Jinbeh sake selection and Japanese bar program" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Sake Bar DFW | Jinbeh", description: "A real sake program in DFW — flights, glasses, bottles at Jinbeh Frisco and Lewisville." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Where to Find a Real Sake Bar in DFW",
     description: "A guide to drinking sake properly in Dallas-Fort Worth — sake categories, how to order, food pairings, and where Jinbeh fits in DFW's sake scene.",
-    image: "https://jinbeh.com/images/drinks/cocktail.jpg",
+    image: "https://jinbeh.com/images/beverages/NigoriSparklingSake.webp",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function SakeBarDFWPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/drinks/cocktail.jpg" alt="Sake bar DFW — Jinbeh sake selection and Japanese bar program" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/beverages/NigoriSparklingSake.webp" alt="Sake Bar Dfw at Jinbeh Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">

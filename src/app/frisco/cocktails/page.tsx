@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -188,8 +189,8 @@ export default function CocktailsFriscoPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/drinks/SpicyMargaritaBeverageDrink.jpg"
-                    alt="Sake Bomb, classic sake dropped into cold beer"
+                    src="/images/beverages/jinbeh-sakura-cocktail-sake-frisco.png"
+                    alt="Cocktails & Sake Frisco at Jinbeh Frisco Japanese restaurant"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -475,6 +476,7 @@ export default function CocktailsFriscoPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/cocktails" />
       <Footer />
     </>
   );

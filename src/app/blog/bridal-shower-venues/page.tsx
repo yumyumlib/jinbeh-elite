@@ -181,8 +181,8 @@ export default function BridalShowerVenuesPage({ params }: { params: { slug: str
       </h1>
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden my-8">
               <Image
-                src="/images/interior/JinbehFriscoTables.jpg"
-                alt="Elegant dining tables at Jinbeh Frisco for private events"
+                src="/images/celebrations/CelebrateYourBirthdayAtJinbeh.jpg"
+                alt="Bridal Shower Venues at Jinbeh Japanese restaurant"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/gallery",
     images: [
       {
-        url: "https://jinbeh.com/images/food/OnionVolcanoDemo.jpg",
+        url: "https://jinbeh.com/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
         width: 1200,
         height: 630,
         alt: "Hibachi chef performing the famous onion volcano at Jinbeh",
@@ -48,7 +48,7 @@ const gallerySchema = {
   "image": [
     {
       "@type": "ImageObject",
-      "url": "https://jinbeh.com/images/food/OnionVolcanoDemo.jpg",
+      "url": "https://jinbeh.com/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
       "name": "Hibachi Chef Onion Volcano",
       "description": "Hibachi chef performing the famous onion volcano",
     },
@@ -83,7 +83,7 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   // Hibachi Action
   {
-    src: "/images/food/OnionVolcanoDemo.jpg",
+    src: "/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp",
     alt: "Hibachi chef performing the famous onion volcano",
     category: "Hibachi Action",
     title: "Onion Volcano",
@@ -288,8 +288,8 @@ export default function GalleryPage() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/food/OnionVolcanoDemo.jpg"
-            alt="Hibachi chef performing the famous onion volcano - gallery hero image"
+            src="/images/hero/jinbeh-hibachi-chef-fire-show-mobile-1500.webp"
+            alt="Jinbeh Photos at Jinbeh Japanese restaurant"
             fill
             className="object-cover"
             priority

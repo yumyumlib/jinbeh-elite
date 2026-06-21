@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://jinbeh.com/lewisville/kids-menu",
     images: [
       {
-        url: "https://jinbeh.com/images/food/BentoBoxLunchSet.jpg",
+        url: "https://jinbeh.com/images/about/chef-choo-choo.jpg",
         width: 1200,
         height: 630,
         alt: "Jinbeh Japanese Restaurant — Lewisville Kids Menu",
@@ -733,6 +734,7 @@ export default function KidsMenuLewisvillePage() {
         <CategoryLocationSEO locationId="lewisville" category="kids-menu" />
 
       </main>
+      <PageSeoBoost route="/lewisville/kids-menu" />
       <Footer />
     </>
   );

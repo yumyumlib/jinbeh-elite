@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -145,8 +146,8 @@ export default function FriscoMenuPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/frisco/JinbehFrisco_SushiBar.jpg"
-            alt="Jinbeh Frisco Sushi Bar"
+            src="/images/photoshoot/hibachi-onion-volcano-flame.jpg"
+            alt="Jinbeh Frisco Menu at Jinbeh Frisco Japanese restaurant"
             fill
             sizes="100vw"
             className="object-cover"
@@ -273,6 +274,7 @@ export default function FriscoMenuPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/frisco/menu" />
       <Footer />
     </>
   );

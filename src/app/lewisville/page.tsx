@@ -1,4 +1,7 @@
 import Link from "next/link";
+import PageSeoBoost from "@/components/PageSeoBoost";
+import HoursReserve from "@/components/HoursReserve";
+import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
@@ -210,7 +213,7 @@ export default function LewisvillePage() {
       </div>
 
       <main id="main-content" className="min-h-screen">
-        <link rel="preload" href="/images/lewisville/IMG_1910.jpg" as="image" />
+        <link rel="preload" href="/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg" as="image" />
 
         {/* JSON-LD Schemas */}
         <script
@@ -240,7 +243,7 @@ export default function LewisvillePage() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/lewisville/IMG_1910.jpg"
+            poster="/images/exterior/jinbeh-japanese-restaurant-lewisville-tx-sunset.jpg"
             aria-label="Hibachi chef performing fire show at Jinbeh Lewisville"
           >
             <source src="/videos/lewisville/hibachi-fire-02.mp4" type="video/mp4" />
@@ -793,7 +796,34 @@ export default function LewisvillePage() {
           </div>
         </section>
 
+        {/* Google Maps Embed */}
+        <section className="py-16 bg-warm-ivory">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 className="text-3xl font-heading font-bold text-charcoal mb-6 text-center">Find Jinbeh Lewisville</h2>
+            <div className="rounded-xl overflow-hidden shadow-lg border border-warm-ivory">
+              <iframe
+                src="https://www.google.com/maps?q=Jinbeh+Japanese+Restaurant,+1535+E+State+Hwy+121,+Lewisville,+TX+75056&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Jinbeh Japanese Restaurant Lewisville - Map"
+              />
+            </div>
+            <p className="text-center text-charcoal/70 mt-4 text-sm">
+              1535 East State Highway 121, Suite 300, Lewisville, TX 75056 · <a href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville+TX" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Get Directions</a>
+            </p>
+          </div>
+        </section>
+
       </main >
+
+      <OnlineOrderCTA />
+        <HoursReserve location="lewisville" />
+
+      <PageSeoBoost route="/lewisville" />
 
       <Footer />
     </>

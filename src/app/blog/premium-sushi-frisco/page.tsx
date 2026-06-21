@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Premium Sushi in Frisco TX | Jinbeh",
         description: "Premium sushi at Jinbeh Frisco — signature rolls, sashimi, daily fresh fish at our sushi bar near Stonebriar.",
         url: "https://jinbeh.com/blog/premium-sushi-frisco",
-        images: [{ url: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg", width: 1200, height: 630, alt: "Premium sushi Frisco TX — Jinbeh signature rolls and sashimi at the sushi bar" }],
+        images: [{ url: "https://jinbeh.com/images/instagram/sushi-feast-overhead.jpg", width: 1200, height: 630, alt: "Premium sushi Frisco TX — Jinbeh signature rolls and sashimi at the sushi bar" }],
         type: "article", siteName: "Jinbeh Japanese Restaurant",
     },
     twitter: { card: "summary_large_image", title: "Premium Sushi in Frisco TX | Jinbeh", description: "Signature rolls and sashimi at the Jinbeh Frisco sushi bar." },
@@ -40,7 +40,7 @@ const articleSchema = {
     "@context": "https://schema.org", "@type": "Article",
     headline: "Premium Sushi in Frisco TX: Signature Rolls & Sashimi",
     description: "A guide to the premium sushi experience at Jinbeh Frisco — signature rolls, sashimi, daily fresh fish, and what to order.",
-    image: "https://jinbeh.com/images/hq/sushi-rolls-2026.jpg",
+    image: "https://jinbeh.com/images/instagram/sushi-feast-overhead.jpg",
     datePublished: "2026-05-12", dateModified: "2026-05-12",
     author: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", url: "https://jinbeh.com" },
     publisher: { "@type": "Organization", name: "Jinbeh Japanese Restaurant", logo: { "@type": "ImageObject", url: "https://jinbeh.com/images/logos/JinbehLogo.png" } },
@@ -77,7 +77,7 @@ export default function PremiumSushiFriscoPost() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="relative h-[55vh] min-h-[460px] flex items-end overflow-hidden">
-                <Image src="/images/hq/sushi-rolls-2026.jpg" alt="Premium sushi Frisco TX — Jinbeh signature rolls and sashimi at the sushi bar near Stonebriar" fill className="object-cover" priority sizes="100vw" />
+                <Image src="/images/instagram/sushi-feast-overhead.jpg" alt="Premium Sushi Frisco at Jinbeh Frisco Japanese restaurant" fill className="object-cover" priority sizes="100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-transparent" />
                 <div className="relative z-10 container mx-auto px-6 pb-12">
                     <nav className="flex items-center gap-2 text-sm text-warm-ivory/70 mb-4">
