@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SocialProofVideo from "@/components/SocialProofVideo";
@@ -540,22 +542,22 @@ export default function FamilyGatheringsPage() {
               to ensure we arrange the perfect seating for your family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve at Frisco
-              </a>
-              <a
+              </ReserveLink>
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-lewisville"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve at Lewisville
-              </a>
+              </ReserveLink>
             </div>
             <p className="text-white/70 text-sm">
               For large family groups (10+), call us directly:<br />
@@ -649,6 +651,7 @@ export default function FamilyGatheringsPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/celebrations/family-gatherings" />
       <Footer />
     </>
   );

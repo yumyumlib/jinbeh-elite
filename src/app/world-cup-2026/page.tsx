@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
 import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -234,18 +235,18 @@ export default function WorldCup2026Page() {
               and celebrate together. This is Japan&apos;s table in Texas.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                 className="inline-flex items-center gap-2 bg-soft-gold text-charcoal font-semibold px-6 py-3 rounded-full hover:bg-soft-gold/90 transition"
               >
                 🇯🇵 Reserve Frisco
-              </Link>
-              <Link
+              </ReserveLink>
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                 className="inline-flex items-center gap-2 bg-white/15 backdrop-blur text-white font-semibold px-6 py-3 rounded-full hover:bg-white/25 transition border border-white/30"
               >
                 Reserve Lewisville
-              </Link>
+              </ReserveLink>
             </div>
           </div>
         </section>
@@ -352,8 +353,8 @@ export default function WorldCup2026Page() {
               </div>
             </div>
             <div className="flex flex-wrap justify-center gap-3 mt-8">
-              <Link href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" className="btn bg-accent-red text-white hover:bg-deep-indigo px-6 py-3 font-semibold rounded-full transition-colors">Reserve Frisco</Link>
-              <Link href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" className="btn bg-charcoal text-white hover:bg-deep-indigo px-6 py-3 font-semibold rounded-full transition-colors">Reserve Lewisville</Link>
+              <ReserveLink href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" className="btn bg-accent-red text-white hover:bg-deep-indigo px-6 py-3 font-semibold rounded-full transition-colors">Reserve Frisco</ReserveLink>
+              <ReserveLink href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" className="btn bg-charcoal text-white hover:bg-deep-indigo px-6 py-3 font-semibold rounded-full transition-colors">Reserve Lewisville</ReserveLink>
               <Link href="/catering" className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/80 px-6 py-3 font-semibold rounded-full transition-colors">Catering for Watch Parties</Link>
             </div>
           </div>
@@ -480,12 +481,12 @@ export default function WorldCup2026Page() {
                     Available dine-in · Both locations · No reservation required
                     to order
                   </p>
-                  <Link
+                  <ReserveLink
                     href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                     className="inline-flex items-center gap-2 text-accent-red font-semibold text-sm hover:gap-3 transition-all"
                   >
                     Reserve a table →
-                  </Link>
+                  </ReserveLink>
                 </div>
               </div>
             </div>
@@ -588,18 +589,18 @@ export default function WorldCup2026Page() {
                 history.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link
+                <ReserveLink
                   href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                   className="inline-flex items-center gap-2 bg-accent-red text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-red/90 transition"
                 >
                   Reserve Frisco →
-                </Link>
-                <Link
+                </ReserveLink>
+                <ReserveLink
                   href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                   className="inline-flex items-center gap-2 bg-white text-charcoal font-semibold px-6 py-3 rounded-full hover:bg-warm-ivory transition border border-charcoal/15"
                 >
                   Reserve Lewisville →
-                </Link>
+                </ReserveLink>
                 <a
                   href="tel:2146191200"
                   className="inline-flex items-center gap-2 text-accent-red font-semibold px-6 py-3"
@@ -863,18 +864,18 @@ export default function WorldCup2026Page() {
               from June 11 through July 19.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US"
                 className="inline-flex items-center gap-2 bg-soft-gold text-charcoal font-semibold px-6 py-3 rounded-full hover:bg-soft-gold/90 transition"
               >
                 Reserve Frisco →
-              </Link>
-              <Link
+              </ReserveLink>
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US"
                 className="inline-flex items-center gap-2 bg-white text-charcoal font-semibold px-6 py-3 rounded-full hover:bg-warm-ivory transition"
               >
                 Reserve Lewisville →
-              </Link>
+              </ReserveLink>
             </div>
             <p className="mt-8 text-white/70 text-sm">
               Questions? Call{" "}

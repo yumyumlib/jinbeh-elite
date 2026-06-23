@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -138,22 +140,22 @@ export default function ValentinesDayPage() {
               An unforgettable evening of romance, flavor, and fire
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Frisco
-              </a>
-              <a
+              </ReserveLink>
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-lewisville"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Reserve Lewisville
-              </a>
+              </ReserveLink>
             </div>
           </div>
         </section>
@@ -456,6 +458,7 @@ export default function ValentinesDayPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/celebrations/valentines-day" />
       <Footer />
     </>
   );

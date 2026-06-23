@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
 import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -710,12 +711,12 @@ export default function KidsMenuFriscoPage() {
               <p className="text-lg mb-4">📍 4701 W Park Blvd, Plano, TX 75093</p>
               <p className="text-lg mb-8">Near Stonebriar Centre & Legacy West</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
+                <ReserveLink
                   href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" target="_blank" rel="noopener noreferrer"
                   className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all font-heading"
                 >
                   Make a Reservation
-                </Link>
+                </ReserveLink>
                 <a
                   href="tel:2146191200"
                   className="btn bg-white/20 backdrop-blur border-2 border-white text-white hover:bg-white hover:text-accent-red px-8 py-4 text-lg font-semibold rounded-xl transition-all font-heading"

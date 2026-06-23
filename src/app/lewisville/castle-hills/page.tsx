@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
 import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -172,12 +173,12 @@ export default function CastleHillsPage() {
               your premier destination for Japanese cuisine in the Castle Hills area!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" target="_blank" rel="noopener noreferrer"
                 className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Your Table
-              </Link>
+              </ReserveLink>
               <Link
                 href="/lewisville/menu"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 text-lg font-semibold rounded-xl"
@@ -376,12 +377,12 @@ export default function CastleHillsPage() {
               Reserve your table at Jinbeh Lewisville near Castle Hills today. Experience hibachi, sushi, and Japanese excellence!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188461&lang=en-US" target="_blank" rel="noopener noreferrer"
                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Make a Reservation
-              </Link>
+              </ReserveLink>
               <a
                 href="tel:2144882224"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"

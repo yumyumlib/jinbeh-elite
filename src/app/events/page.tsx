@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
 import PageSeoBoost from "@/components/PageSeoBoost";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
@@ -345,9 +346,9 @@ export default function EventsPage() {
               </p>
               <p className="text-base text-charcoal/70 mt-5 max-w-3xl mx-auto leading-relaxed">
                 <strong>Why DFW groups choose Jinbeh for events:</strong> nearly four decades of family hospitality, premium hibachi steak and fresh sushi, a built-in tableside show that keeps guests engaged, and a team that&apos;s coordinated thousands of birthdays, corporate events, and celebrations. Each location can comfortably host groups of 100+ when seating is coordinated across hibachi tables and the dining room. Easy way to book: reserve your event through OpenTable for{" "}
-                <a href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Frisco</a>
+                <ReserveLink href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Frisco</ReserveLink>
                 {" "}or{" "}
-                <a href="https://www.opentable.com/jinbeh-lewisville" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Lewisville</a>
+                <ReserveLink href="https://www.opentable.com/jinbeh-lewisville" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Lewisville</ReserveLink>
                 .
               </p>
             </div>

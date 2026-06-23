@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
 import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
@@ -164,12 +165,12 @@ export default function AppetizersFriscoPage() {
                 Shareability, group dining, perfect starters. Explore our 6 appetizers options,
                 each crafted with care and the finest ingredients.
               </p>
-              <Link
+              <ReserveLink
                 href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" target="_blank" rel="noopener noreferrer"
                 className="inline-block bg-accent-red hover:bg-accent-red/90 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
               >
                 Reserve Your Table
-              </Link>
+              </ReserveLink>
             </div>
           </div>
         </section>
@@ -352,12 +353,12 @@ export default function AppetizersFriscoPage() {
                 The heart of Frisco's restaurant scene. Ample parking in the shopping center lot.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
+                <ReserveLink
                   href="https://www.opentable.com/booking/restref/availability?rid=188458&lang=en-US" target="_blank" rel="noopener noreferrer"
                   className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 font-semibold rounded-xl shadow-lg transition-colors"
                 >
                   Reserve a Table
-                </Link>
+                </ReserveLink>
                 <a
                   href="tel:2146191200"
                   className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"

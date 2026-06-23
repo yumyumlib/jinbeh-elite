@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ReserveLink from "@/components/ReserveLink";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -118,22 +120,22 @@ export default function DFWMomsPage() {
               whole family remembers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-accent-red hover:bg-accent-red/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Frisco
-              </a>
-              <a
+              </ReserveLink>
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-lewisville"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-white text-deep-indigo hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg"
               >
                 Reserve Lewisville
-              </a>
+              </ReserveLink>
             </div>
           </div>
         </section>
@@ -335,22 +337,22 @@ export default function DFWMomsPage() {
               ahead so the kids can lock in those front-row hibachi seats.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-japanese-restaurant-reservations-frisco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-soft-gold text-charcoal hover:bg-soft-gold/90 px-8 py-3 rounded-xl font-semibold"
               >
                 Reserve Frisco
-              </a>
-              <a
+              </ReserveLink>
+              <ReserveLink
                 href="https://www.opentable.com/jinbeh-lewisville"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-3 rounded-xl font-semibold"
               >
                 Reserve Lewisville
-              </a>
+              </ReserveLink>
               <Link
                 href="/vip"
                 className="btn bg-white text-charcoal hover:bg-warm-ivory px-8 py-3 rounded-xl font-semibold"
@@ -361,6 +363,7 @@ export default function DFWMomsPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/celebrations/dfw-moms" />
       <Footer />
     </>
   );
