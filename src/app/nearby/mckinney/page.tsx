@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -718,6 +719,8 @@ export default function McKinneyNearbyPage() {
           </a>
         </div>
       </main>
+
+      <PageSeoBoost route="/nearby/mckinney" />
 
       <Footer />
     </>

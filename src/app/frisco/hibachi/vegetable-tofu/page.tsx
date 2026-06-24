@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
@@ -117,6 +118,7 @@ export default function VegetableTofuFriscoPage() {
           </p>
         </div>
       </div>
+      <PageSeoBoost route="/frisco/hibachi/vegetable-tofu" />
       <Footer />
     </>
   );

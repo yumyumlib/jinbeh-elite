@@ -469,8 +469,8 @@
       "question": "How much does hibachi cost at Jinbeh?",
       "cluster": "menu-cuisine",
       "primaryKeyword": "jinbeh hibachi price",
-      "answer": "Hibachi dinner entrées at Jinbeh range from approximately $25 to $50 per person depending on the protein you choose. Family-friendly options like chicken teriyaki and shrimp are on the lower end. Premium cuts like filet mignon, ribeye, NY strip, scallops, and lobster tail are at the higher end. Combination platters (steak and chicken, steak and shrimp, steak and lobster, seafood combo) and the Imperial Dinner fall between. Every hibachi entree includes Japanese onion soup, ginger-dressing salad, hibachi vegetables, fried or steamed rice, and the signature sauces. The best value is the Hibachi-for-Two lunch special: $35 for two hibachi entrees with all the courses, available Monday through Friday from 11 AM to 2 PM as a limited-time weekday offer. Jinbeh does not offer all-you-can-eat dining.",
-      "expandedContent": "For current pricing, call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224, or view the latest menu on the website. Add-ons that can extend the total per-person cost include sashimi or sushi rolls from the sushi bar, premium sake, Japanese whisky, hand-crafted cocktails, and dessert. Happy Hour (Monday through Friday, 5:00 to 6:30 PM) offers $4 draft beer, $5 sake, and $6 wine, which can offset the cost of beverages for couples or small groups. Private dining and group reservations have different pricing structures, so for groups of 10 or more, contact the catering team for a custom quote.",
+      "answer": "Hibachi dinner entrées at Jinbeh generally range from about $25 to $50 per person, depending on the protein. Family-friendly options like chicken and shrimp sit at the lower end of that range, while premium cuts such as filet mignon, ribeye, NY strip, scallops, and lobster tail are toward the higher end, with combination platters and the Imperial Dinner in between. Every hibachi entree is a full meal that includes Japanese onion soup, a ginger-dressing salad, hibachi vegetables, steamed or fried rice, and the signature sauces, all cooked on the teppanyaki grill right at your table. For the best value, the Hibachi-for-Two lunch special runs about $35 for two entrees with all the courses, Monday through Friday from 11 AM to 2 PM. Jinbeh does not offer all-you-can-eat dining.",
+      "expandedContent": "Lunch hibachi generally falls below dinner pricing, and the weekday Hibachi-for-Two special is the most economical way to try the teppanyaki experience. Optional add-ons such as sashimi or sushi rolls from the sushi bar, premium sake, Japanese whisky, hand-crafted cocktails, and dessert will raise the per-person total, and Happy Hour offers discounted beer, sake, and wine on weekday evenings. For exact, up-to-date pricing, view the latest menu on this site or call Frisco at (214) 619-1200 or Lewisville at (214) 488-2224. Groups of 10 or more and private dining have separate pricing, so contact the catering team for a custom quote.",
       "relatedQuestionSlugs": [
         "what-is-hibachi-at-jinbeh",
         "what-comes-with-hibachi-dinner",
@@ -484,7 +484,7 @@
         },
         {
           "label": "Hibachi for Two lunch",
-          "url": "/hibachi-for-two"
+          "url": "/specials#hibachi-for-two"
         },
         {
           "label": "Make a reservation",
@@ -562,7 +562,7 @@
       "internalLinks": [
         {
           "label": "Hibachi-for-Two details",
-          "url": "/hibachi-for-two"
+          "url": "/specials#hibachi-for-two"
         },
         {
           "label": "Lunch menu",
@@ -846,7 +846,7 @@
         },
         {
           "label": "Hibachi-for-Two",
-          "url": "/hibachi-for-two"
+          "url": "/specials#hibachi-for-two"
         },
         {
           "label": "Make a reservation",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -643,6 +644,7 @@ export default function TakeoutPage() {
 </section>
       </main>
       <OnlineOrderCTA />
+      <PageSeoBoost route="/takeout" />
       <Footer />
     </>
   );

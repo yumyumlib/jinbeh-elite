@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import { RevealSection, HeroSection } from "@/components/MagicUI";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -653,6 +654,7 @@ export default function GalleryPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/gallery" />
       <Footer />
     </>
   );

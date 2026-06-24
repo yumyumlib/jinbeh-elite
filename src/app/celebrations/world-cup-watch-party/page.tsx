@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -460,6 +461,7 @@ export default function WorldCupWatchPartyPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/celebrations/world-cup-watch-party" />
       <Footer />
     </>
   );

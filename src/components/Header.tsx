@@ -140,8 +140,8 @@ export default function Header({ location }: HeaderProps) {
         {/* Blur background — z-[-1] ensures it sits behind all header children including dropdowns */}
         <div
           className={`absolute inset-0 z-[-1] transition-all duration-300 ${scrolled
-            ? "bg-charcoal/90 backdrop-blur-xl shadow-lg border-b border-white/10"
-            : "bg-charcoal/30 backdrop-blur-md border-b border-white/5"
+            ? "bg-black/65 backdrop-blur-xl backdrop-saturate-150 border-b border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_28px_rgba(0,0,0,0.45)]"
+            : "bg-black/35 backdrop-blur-lg backdrop-saturate-150 border-b border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
             }`}
           aria-hidden="true"
         />
@@ -302,13 +302,13 @@ export default function Header({ location }: HeaderProps) {
 
             {/* Mobile Menu Button */}
             <button
-              className="xl:hidden p-2.5 rounded-lg hover:bg-white/10 transition-colors"
+              className="xl:hidden p-2.5 rounded-lg bg-black/30 backdrop-blur-md ring-1 ring-white/20 hover:bg-black/45 active:scale-95 transition-all"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={mobileMenuOpen}
             >
               <svg
-                className="w-6 h-6 text-white drop-shadow-md"
+                className="w-6 h-6 text-white [filter:drop-shadow(0_1px_2px_rgba(31,31,31,0.85))]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

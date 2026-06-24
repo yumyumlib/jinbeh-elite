@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -810,6 +811,7 @@ export default function SpecialsPage() {
             </p>
 </section>
       </main>
+      <PageSeoBoost route="/specials" />
       <Footer />
     </>
   );

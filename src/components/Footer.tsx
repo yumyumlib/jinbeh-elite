@@ -23,11 +23,11 @@ export default function Footer() {
             <div className="lg:col-span-4">
               <Link href="/" className="inline-block mb-6">
                 <Image
-                  src="/images/logos/jinbeh-logo-dark.png"
-                  alt="Jinbeh Japanese Restaurant"
-                  width={180}
-                  height={80}
-                  className="h-14 w-auto"
+                  src="/images/logos/jinbeh-logo-white-mark.webp"
+                  alt="Jinbeh — Japanese Steak, Seafood & Sushi Restaurant"
+                  width={96}
+                  height={96}
+                  className="h-24 w-24 rounded-xl ring-1 ring-white/10"
                 />
               </Link>
               <p className="text-warm-ivory/80 text-sm leading-relaxed mb-6 max-w-xs">
@@ -323,6 +323,46 @@ export default function Footer() {
                 <Link href="/nearby/highland-village" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Highland Village</Link>
                 <Link href="/nearby/little-elm" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Little Elm</Link>
                 <Link href="/nearby/richardson" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Richardson</Link>
+              </div>
+            </div>
+
+            {/* Popular Questions - site-wide internal links to FAQ pages */}
+            <div className="mt-10 pt-8 border-t border-warm-ivory/10">
+              <p className="text-xs text-warm-ivory/80 font-medium mb-3">Popular Questions</p>
+              <div className="flex flex-wrap gap-2 text-xs">
+                <Link href="/faq/is-frisco-or-lewisville-better" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Frisco or Lewisville?</Link>
+                <Link href="/faq/how-much-does-hibachi-cost-at-jinbeh" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Hibachi Pricing</Link>
+                <Link href="/faq/what-comes-with-hibachi-dinner" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">What Comes With Hibachi</Link>
+                <Link href="/faq/can-children-enjoy-hibachi" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Hibachi With Kids</Link>
+                <Link href="/faq/is-jinbeh-good-for-anniversary" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Good for Anniversaries</Link>
+                <Link href="/faq/is-jinbeh-open-on-sunday" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Open on Sunday?</Link>
+                <Link href="/faq/how-long-is-the-wait-at-jinbeh" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Wait Times</Link>
+                <Link href="/faq/is-jinbeh-wheelchair-accessible" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Wheelchair Accessible</Link>
+                <Link href="/faq/what-makes-jinbeh-different-from-benihana" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Jinbeh vs Benihana</Link>
+                <Link href="/faq/is-jinbeh-a-chain-restaurant" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Family-Owned Story</Link>
+                <Link href="/faq/is-jinbeh-near-stonebriar" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Near Stonebriar</Link>
+                <Link href="/faq/is-jinbeh-near-toyota-stadium" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Near Toyota Stadium</Link>
+                <Link href="/faq/does-jinbeh-have-gift-cards" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Gift Cards</Link>
+                <Link href="/faq/what-does-jinbeh-mean" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">What Jinbeh Means</Link>
+                <Link href="/faq/is-jinbeh-worth-it" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Is It Worth It?</Link>
+                <Link href="/faq" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-soft-gold rounded-full transition-colors font-medium">All FAQs →</Link>
+              </div>
+            </div>
+
+            {/* Explore the Menu - site-wide internal links to menu categories & occasions */}
+            <div className="mt-8 pt-8 border-t border-warm-ivory/10">
+              <p className="text-xs text-warm-ivory/80 font-medium mb-3">Explore the Menu &amp; Occasions</p>
+              <div className="flex flex-wrap gap-2 text-xs">
+                <Link href="/frisco/appetizers" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Frisco Appetizers</Link>
+                <Link href="/frisco/cocktails" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Frisco Cocktails</Link>
+                <Link href="/frisco/sashimi" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Frisco Sashimi</Link>
+                <Link href="/lewisville/appetizers" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Lewisville Appetizers</Link>
+                <Link href="/lewisville/sushi-rolls" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Lewisville Sushi Rolls</Link>
+                <Link href="/lewisville/sashimi" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Lewisville Sashimi</Link>
+                <Link href="/lewisville/cocktails" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Lewisville Cocktails</Link>
+                <Link href="/lewisville/kids-menu" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Lewisville Kids Menu</Link>
+                <Link href="/celebrations/date-night" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Date Night</Link>
+                <Link href="/celebrations/rehearsal-dinner" className="px-3 py-1.5 bg-warm-ivory/10 hover:bg-warm-ivory/20 text-warm-ivory/90 rounded-full transition-colors">Rehearsal Dinners</Link>
               </div>
             </div>
           </div>

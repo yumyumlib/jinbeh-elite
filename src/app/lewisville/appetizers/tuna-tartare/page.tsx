@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
@@ -109,6 +110,7 @@ export default function TunaTartareLewisvillePage() {
           </p>
         </div>
       </div>
+      <PageSeoBoost route="/lewisville/appetizers/tuna-tartare" />
       <Footer />
     </>
   );

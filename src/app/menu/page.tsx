@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
@@ -172,6 +173,7 @@ export default function MenuPage() {
 </section>
             </main>
             <OnlineOrderCTA />
+            <PageSeoBoost route="/menu" />
             <Footer />
         </>
     );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import OnlineOrderCTA from "@/components/OnlineOrderCTA";
 import { RevealSection, ShinyBadge } from "@/components/MagicUI";
 import Header from "@/components/Header";
@@ -721,6 +722,7 @@ export default function DeliveryPage() {
 </section>
       </main>
       <OnlineOrderCTA />
+      <PageSeoBoost route="/delivery" />
       <Footer />
     </>
   );

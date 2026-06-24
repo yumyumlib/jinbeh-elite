@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MenuItemTemplate from "@/components/MenuItemTemplate";
@@ -97,6 +98,7 @@ export default function LycheeMartiniLewisvillePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <MenuItemTemplate item={item} location={location} />
       </div>
+      <PageSeoBoost route="/lewisville/cocktails/lychee-martini" />
       <Footer />
     </>
   );

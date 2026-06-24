@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { QuoteStrip } from "@/components/CustomerVoice";
@@ -762,6 +763,7 @@ export default function AllergyFriendlyDiningPage() {
                     </div>
                 </section>
             </main>
+            <PageSeoBoost route="/allergy-friendly-dining" />
             <Footer />
         </>
     );

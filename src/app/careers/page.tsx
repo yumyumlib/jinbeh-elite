@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -804,6 +805,7 @@ export default function CareersPage() {
           </div>
         </section>
       </main>
+      <PageSeoBoost route="/careers" />
       <Footer />
     </>
   );

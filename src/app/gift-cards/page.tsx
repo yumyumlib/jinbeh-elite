@@ -5,6 +5,7 @@ import { RevealSection, HeroSection, AnimatedGradientText } from "@/components/M
 import { MagicCard } from "@/components/ui/magic-card";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import PageSeoBoost from "@/components/PageSeoBoost";
 
 // JSON-LD Schema for Gift Cards
 const productSchema = {
@@ -253,6 +254,7 @@ export default function GiftCardsPage() {
                     </Link>
                 </div>
             </section>
+            <PageSeoBoost route="/gift-cards" />
         </main>
     );
 }

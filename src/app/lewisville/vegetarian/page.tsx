@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -359,6 +360,7 @@ export default function LewisvilleVegetarianPage() {
                     </div>
                 </section>
             </main>
+            <PageSeoBoost route="/lewisville/vegetarian" />
             <Footer />
         </>
     );

@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import RespImage from "@/components/RespImage";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -1346,6 +1347,8 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+
+      <PageSeoBoost route="/" />
 
       <Footer />
     </>

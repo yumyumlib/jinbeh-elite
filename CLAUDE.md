@@ -4,6 +4,668 @@ This file tracks notable findings, decisions, and tribal knowledge for the
 jinbeh-elite-phase1 Next.js website. Add new entries at the top with a
 date and short title.
 
+## 2026-06-24 — Progress review: n8n task runner BROKEN (REP1/R1 down), World Cup TOMORROW, Keru Tomeru Friday
+
+Automated progress review (`project-progress` scheduled task). Key findings:
+
+### CRITICAL: n8n task runner rejecting ALL tasks
+All 4 active workflows (REP1, R1, VIP1, Rating Handler) are registered as active but
+the task runner logs show continuous `"Offer expired - not accepted within validity
+window"` rejections. This is the same task-runner subsystem issue from Jun 7/16 — n8n
+2.6.4's mandatory runner subsystem is failing again. **REP1 is NOT responding to Google
+reviews. R1 daily revenue briefs may not be sending.** Fix: restart external runner
+container, or if gone, recreate per Jun 7 entry (ghcr.io/n8n-io/runners:2.6.4).
+
+### 6 Google reviews unanswered (last 7 days)
+Cheryl (Frisco), Brad (Frisco), Nsgslim (Lewisville), Joshua (Lewisville), Xolotlakatl
+Fuentes (5-star), Kevin Manning (5-star). REP1 is down so these are likely unresponded.
+If runner can't be fixed quickly, respond manually using Gracious Host voice.
+
+### World Cup — Japan vs Sweden TOMORROW Jun 25
+Content drafted but NOT published (Chrome MCP gate). FOX 4 segment status still
+unclear (Melinda Thomas 👍 Jun 18, no firm booking). Chioma event logistics unconfirmed.
+Publish social content TODAY.
+
+### Keru Tomeru Japanese TV filming CONFIRMED Friday Jun 26
+Ruriko Akasaka confirmed (Jun 23 email: "looking forward to visiting on Friday").
+Discussed takeout orders for crew. No reply needed — restaurant prep required.
+
+### VPS health
+CPU steal oscillating 33–60% (same sawtooth). Prod healthy (200/10ms), load 0.16,
+7 containers running. Needs another Kodee chat reset via hPanel.
+
+### Email follow-ups
+- **IRS 4506-T:** "check up on" email needs status reply
+- **LightHouse/Matsuda:** Draft reply exists, needs completion and sending
+- **Lincoln Moore:** "jinbeh july proof" PDF received — review/approve
+- **Revenue:** Jun 23 $8,343; Jun 22 $8,031. Frisco Monday 23% below normal ($1,821)
+- **Grizzly Star:** $1,836.63 now 25+ days overdue (6th consecutive report)
+
+### Stalled items (6+ consecutive reports, no movement)
+Southern Glazer's reply, Grizzly Star $1,836.63, chef recruitment (25 candidates,
+0 replies), journalist outreach (17 ready, none sent), Dream 100 (123 comments ready),
+STR outreach (8 emails drafted), energy contract (TXU reply to Nichole Knapik), Dallas
+Trinity FC pitch. Pattern: most are "ready to send" outreach blocked on owner bandwidth.
+World Cup window makes journalist/Dream 100 outreach time-critical.
+
+Full report: `PROGRESS_REPORT_2026-06-24.md`.
+
+## 2026-06-24 — DEPLOYED nightly SEO content batch 6 (25 pages: 3 Frisco sashimi + 14 Frisco sushi rolls + 6 Lewisville appetizers + 2 Lewisville cocktails)
+
+Scheduled `nightly-seo-content-batch` run. Generated + deployed the next 25 unique
+PageSeoBoost entries (heading + 2 paragraphs + 3 FAQs each) into
+`src/data/page-seo-content.ts`. Clean build, TypeScript clean, no abort, no rollback.
+
+### Pages covered this run (25, all non-blog)
+sashimi (3): `/frisco/sashimi/{sashimi-deluxe,tuna-sashimi,yellowtail-sashimi}`.
+sushi-rolls (14): `/frisco/sushi-rolls/{ahi-tower,butterfly-kiss,california-roll,
+caterpillar-roll,dragon-roll,philly-roll,rainbow-roll,shrimp-tempura-roll,spicy-tuna-roll,
+spider-roll,tiger-roll,vegas-roll,volcano-roll,yellowtail-jalapeno}`.
+lewisville appetizers (6): `/lewisville/appetizers/{edamame,gyoza,seared-tuna,
+soft-shell-crab,tempura,tuna-tartare}`. lewisville cocktails (2):
+`/lewisville/cocktails/{jinbeh-punch,lychee-martini}`.
+
+### Coverage tracker
+- Before: 113 routes covered. After: **138 routes covered** (113 + 25).
+- Injectable pages total: **276** (incl. 100 blogs). **Remaining eligible: 140.**
+- At 25/night this completes in ~6 more nightly runs, then self-disables.
+- NO blog routes in this batch (blogs render via shared `blog/layout.tsx`
+  `<BlogSeoBoost/>`), so the "QA a blog" step was N/A.
+
+### Content notes (brand rules applied)
+- Each entry targets its primary_keyword, weaves secondaries (best/fancy/platter
+  sushi near me; japanese appetizers lewisville; sake set/sake near me; sushi happy
+  hour), and naturally incorporates feature_adds. Guarded programmatically before
+  insert: **no em-dashes, no AYCE, no omakase, no "never frozen"**, and no prices
+  except the Happy Hour 4/5/6 dollar wording (in the 2 cocktail pages). Paragraph
+  word counts all within ~40-70.
+- Sushi/sashimi pages use the **freshness/cut-to-order** angle and weave **Fuji-san**
+  chef-craft (head sushi chef since 1993; original Jinbeh Special Roll his signature)
+  in select entries (sashimi-deluxe, yellowtail-sashimi, butterfly-kiss, dragon-roll)
+  to avoid templating across 17 sushi entries. PageSeoBoost renders plain text (no
+  anchors), so his /blog/fuji-san profile is referenced descriptively, NOT linked.
+  Guardrails honored: no claim he created every roll; no ramen/kaiseki/toro/uni/abalone
+  as current offerings.
+- Lewisville appetizers/cocktails are twins of already-covered Frisco pages, so each
+  was written with a distinct Lewisville-first angle, different hooks, and varied FAQ
+  wording (not copies of the Frisco entries).
+
+### Deploy mechanics
+- Pre-flight: **CPU steal 0.0%, load 0.00, 30 GB free**, prod healthy (200/13ms) —
+  well under abort guards (steal>40 / load>12 / disk<8GB).
+- `apply_hero_upgrades.py` injected exactly **25** `<PageSeoBoost route=.../>` anchors
+  for the new routes (138 total now); also re-applied 18 idempotent hero swaps +
+  TrustStrip (local tree trails VPS, already on prod). page-seo-content.ts verified:
+  138 top-level keys (unique), **braces balanced (552/552)**, ends
+  `export default seoContent;`; isolated `tsc --noEmit --strict` on the file = clean.
+- rsync `src/` via ephemeral ed25519 key, `--delete` (confirmed local tree has
+  world-cup-2026, faq/[slug], frisco/world-cup, lewisville/vegetarian, menu, 101 blogs).
+  `docker build` candidate **4.41 GB**: compiled 37.5s, **TypeScript clean**, 398 static
+  pages. Load peaked ~1.8.
+- QA (temp :3009): sashimi-deluxe, dragon-roll, lewisville gyoza, lewisville lychee-martini
+  all 200 + new heading markers present; /, /frisco, /lewisville 200. Promote → rollback
+  tag **`jinbeh-elite:rollback-20260624-085159-pre-content`** (kept); candidate→latest;
+  **prod recreated WITH `--env-file /tmp/prodenv.txt`** (19 env vars preserved). Live
+  re-verify on :3002: /, /frisco, /lewisville, /menu, sashimi-deluxe, tuna-tartare,
+  volcano-roll all 200 + content present; prod **healthy**.
+- **IndexNow:** 25 batch URLs POSTed to api.indexnow.org → **HTTP 200** (keyfile 200).
+- **ROLLBACK:** `docker rm -f jinbeh-prod && docker run -d --name jinbeh-prod --restart
+  unless-stopped -p 0.0.0.0:3002:3000 --env-file <recaptured-env>
+  jinbeh-elite:rollback-20260624-085159-pre-content` (re-capture env via
+  `docker inspect jinbeh-prod` before rollback; /tmp/prodenv.txt cleaned post-deploy).
+
+### Notes
+- 3003 archive NOT rebuilt this run (serves prior content on failover only).
+- Local changes remain UNCOMMITTED (sandbox `.git/index.lock` blocker) — commit from
+  the Mac for history. Ephemeral SSH key removed from VPS (1 key remaining = Mac).
+
+## 2026-06-24 — DEPLOYED the staged FAQ-ranges + footer internal-link blocks (scheduled 2:30 AM off-peak run)
+
+Executed the `jinbeh-deploy-faq-ranges-internal-links` scheduled task: shipped the two
+staged changes from the 2026-06-23 entry below. Clean run, no abort, no rollback.
+
+### What shipped (live on `jinbeh-prod` / `jinbeh-elite:latest`)
+- **`src/data/paa-content.json`** — FAQ `how-much-does-hibachi-cost-at-jinbeh` now presents
+  pricing as RANGES ("$25 to $50 per person", "~$35 Hibachi-for-Two"); granular $4/$5/$6
+  happy-hour figures removed (now "discounted beer, sake, and wine"). All 3 broken
+  `/hibachi-for-two` links repointed to `/specials#hibachi-for-two`. JSON validates;
+  `grep -c '"/hibachi-for-two"'` = 0.
+- **`src/components/Footer.tsx`** — two site-wide pill rows after "Also Serving":
+  **Popular Questions** (15 `/faq/[slug]` pages) + **Explore the Menu & Occasions**
+  (frisco/lewisville menu-category pages + celebrations/date-night + rehearsal-dinner).
+  Gives the never-crawled FAQ/menu pages site-wide referring links (the GSC
+  "Discovered – not indexed / no referring page" fix).
+
+### Deploy mechanics
+- **Pre-flight (paramiko):** CPU steal 4.3%, load 0.05, 21 GB free, prod healthy (200/11ms)
+  — well under abort guards (steal>40 / load>12 / disk<8GB).
+- rsync `src/` only (ephemeral ed25519 key) with `--delete` (verified local tree has
+  world-cup-2026, faq/[slug], frisco/world-cup, lewisville/vegetarian, menu, 104 blogs).
+  `docker build` candidate via nohup: npm ci CACHED, **compiled 39.9s, TypeScript clean
+  38.7s**, 398 static pages, image **2.04 GB** (leaner than recent 4.39 GB builds).
+- **QA (temp :3009):** /, /menu, /frisco, /lewisville, /faq/how-much-does-hibachi-cost-at-jinbeh
+  all 200; FAQ shows "range from about $25 to $50" + NO $4/$5/$6 figures; footer
+  "Popular Questions" + faq/is-frisco-or-lewisville-better on /; "Explore the Menu" +
+  faq/what-comes-with-hibachi-dinner on /menu. Temp container removed.
+- **Promote:** rollback tag **`jinbeh-elite:rollback-20260624-073748-pre-faqlinks`** (kept);
+  prod env captured (`docker inspect` → 18 vars, SMTP/DB/Sheets — never printed);
+  candidate→latest; `docker rm -f jinbeh-prod && docker run -d ... --env-file /tmp/prodenv.txt`.
+  Live re-verify on :3002: /, /menu, /faq/how-much-does-hibachi-cost-at-jinbeh, /frisco,
+  /lewisville all 200; range wording "$25 to $50 per person" live; footer present; prod
+  **healthy**. prodenv.txt deleted post-deploy (re-capture via docker inspect before rollback).
+- **ROLLBACK:** `docker rm -f jinbeh-prod && docker run -d --name jinbeh-prod --restart
+  unless-stopped -p 0.0.0.0:3002:3000 --env-file <recaptured-env>
+  jinbeh-elite:rollback-20260624-073748-pre-faqlinks`.
+
+### Post-deploy
+- **IndexNow:** 25 URLs (the hibachi-cost FAQ + 14 other footer-linked FAQ pages + 8
+  menu-category pages + celebrations/date-night + rehearsal-dinner) POSTed to
+  api.indexnow.org → **HTTP 200** (keyfile 200).
+- **GSC (sc-domain:jinbeh.com):** URL Inspection → Request Indexing for
+  /faq/how-much-does-hibachi-cost-at-jinbeh → **"Indexing requested" (priority crawl
+  queue)**. Inspection still showed the STALE pre-deploy record (Not found 404, last
+  crawl May 16) — expected; the live page now serves 200 + range-compliant copy and will
+  self-clear on re-crawl.
+- Ephemeral SSH key removed from VPS (1 key remaining = Mac). Local `faqkey*` files in
+  session outputs couldn't be deleted (sandbox restriction) — inert.
+
+### Notes
+- 3003 archive NOT rebuilt (serves prior footer on failover only). Local `git` changes
+  remain UNCOMMITTED (sandbox `.git/index.lock` blocker) — commit from the Mac for history.
+
+## 2026-06-23 — Indexing follow-ups: FAQ price→ranges, footer internal-link blocks, dead sitemap removed (deploy scheduled 2:30 AM)
+
+Follow-up to the GSC analysis entry below. Three owner-requested fixes:
+
+### 1. Hibachi-cost FAQ → ranges (NOT redirect)
+Owner approved keeping `/faq/how-much-does-hibachi-cost-at-jinbeh` with pricing
+shown as RANGES. Rewrote its `answer`+`expandedContent` in `paa-content.json`
+(~line 472): keeps "$25 to $50 per person" range + "~$35 Hibachi-for-Two", removed
+the granular $4/$5/$6 happy-hour figures (now "discounted beer, sake, and wine").
+Only $ values remaining: $25/$35/$50 (ranges). JSON re-validated.
+Also fixed a **pre-existing broken link**: 3 FAQ entries linked `/hibachi-for-two`
+(no route → 404) → repointed all to `/specials#hibachi-for-two`.
+
+### 2. Stronger internal links (Footer.tsx — site-wide)
+`/faq` hub + FAQ pages already cross-link, but high-authority pages didn't link the
+never-crawled FAQ/menu pages, so GSC reported "no referring page." Added two pill-row
+blocks to `Footer.tsx` (after "Also Serving") so EVERY page links:
+- **Popular Questions:** 15 `/faq/[slug]` pages (how-much-does-hibachi-cost,
+  is-frisco-or-lewisville-better, what-comes-with-hibachi-dinner, can-children-enjoy-
+  hibachi, is-jinbeh-good-for-anniversary, is-jinbeh-open-on-sunday, how-long-is-the-
+  wait, is-jinbeh-wheelchair-accessible, what-makes-jinbeh-different-from-benihana,
+  is-jinbeh-a-chain-restaurant, is-jinbeh-near-stonebriar, is-jinbeh-near-toyota-
+  stadium, does-jinbeh-have-gift-cards, what-does-jinbeh-mean, is-jinbeh-worth-it) +
+  "All FAQs".
+- **Explore the Menu & Occasions:** frisco/{appetizers,cocktails,sashimi},
+  lewisville/{appetizers,sushi-rolls,sashimi,cocktails,kids-menu},
+  celebrations/{date-night,rehearsal-dinner}.
+Covers the bulk of the 60 "Discovered – not indexed" URLs with site-wide referring
+links from all ~300 indexed pages.
+
+### 3. Dead 2024 sitemap removed (GSC)
+Removed `https://jinbeh.com/sitemap_index.xml` (2024 WP, "Couldn't fetch") via the
+sitemap detail page -> kebab -> Remove (the LIST-level kebab only offers "See page
+indexing"; open the sitemap's drilldown page to get "Remove sitemap"). Sitemaps now:
+sitemap.xml (Success/376) + sitemap-priority.xml (Success/60) only.
+
+### Deploy
+Changes 1 & 2 are CODE -> staged in local working tree, UNCOMMITTED, NOT yet live.
+Pre-flight ~6:30 PM CT was green (CPU steal 0.0%, load 0.01, 21 GB free) but scheduled
+a dedicated one-time off-peak deploy `jinbeh-deploy-faq-ranges-internal-links` for
+**2:30 AM CT Jun 24** (rollback-safe, env-file preserved, then GSC Request-Indexing for
+the FAQ). Did NOT piggyback the 3:40 AM nightly content batch (self-disables when content
+complete -> fragile). That task appends its own deploy entry on success.
+
+## 2026-06-23 — DEPLOYED mobile header black-glass + new white-text footer logo (square enso mark)
+
+Owner-requested visual polish, deployed to prod. Two surgical component changes only —
+no content/section changes anywhere on the site.
+
+### Changes (live on `jinbeh-prod` / `jinbeh-elite:latest`)
+- **Footer logo** (`src/components/Footer.tsx`): swapped the black-text wordmark
+  `jinbeh-logo-dark.png` → new **`public/images/logos/jinbeh-logo-white-mark.webp`**
+  (square red-enso "Jinbeh" mark w/ white brush text + red kanji seal, on its own near-black
+  bg). Owner saved the source as `JinbehLogoWithWhiteText.png` (1024², 1.34MB) in repo root;
+  optimized with ImageMagick `convert -resize 512x512 -quality 85` → **16KB webp** (+324KB png
+  fallback). Rendered as a 96px rounded tile (`h-24 w-24 rounded-xl ring-1 ring-white/10`).
+  Alt text upgraded to full name "Jinbeh — Japanese Steak, Seafood & Sushi Restaurant" (SEO).
+  NOTE: the logo art has a baked-in near-black bg (~rgb 8-13), slightly darker than the footer
+  charcoal (#1F1F1F), so it reads as a subtle dark badge. To float it transparently, the bg
+  would need knocking out (not done — owner approved the tile look).
+- **Mobile header** (`src/components/Header.tsx`): per owner, made the top bar a **true-black
+  translucent frosted-glass** band (was charcoal): unscrolled `bg-black/35 backdrop-blur-lg
+  backdrop-saturate-150` + inset top highlight; scrolled `bg-black/65 backdrop-blur-xl
+  backdrop-saturate-150` + `shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_28px_rgba(0,0,0,0.45)]`.
+  Mobile hamburger button → translucent black glass `bg-black/30 backdrop-blur-md ring-1
+  ring-white/20`, white dashes with a soft (not-quite-black) drop shadow
+  `[filter:drop-shadow(0_1px_2px_rgba(31,31,31,0.85))]` so it stays legible over any photo.
+  (Earlier tried accent-red button; owner preferred black glass.) Desktop header inherits the
+  same black-glass band — an upgrade, no regression. Header logo SVG + "JINBEH" text unchanged.
+
+### Deploy mechanics (clean, standard procedure)
+- Pre-flight: **CPU steal 0.0%, load 1.23, 32GB free**, prod healthy (home 200/16ms).
+- rsync `src/` (`--delete`, guarded: verified local has world-cup-2026, faq/[slug],
+  frisco/world-cup, lewisville/vegetarian, 104 blogs first) + the 2 new logo files into
+  `public/images/logos/` (NO `--delete` on public) via ephemeral ed25519 key.
+- `docker build` candidate **4.39GB**: compiled 49s, **TypeScript clean**, 398 pages, export
+  ~18s. QA on temp :3009 → /,/frisco,/lewisville,/menu all 200 + logo/button markers present.
+- Promote: `/root/prodenv.txt` from `docker inspect jinbeh-prod` (**18 env lines** — SMTP/DB/
+  Sheets), rollback tag **`jinbeh-elite:rollback-20260623-232055-pre-headerfooter`** (kept),
+  candidate→latest, `docker rm -f jinbeh-prod && docker run -d ... --env-file /root/prodenv.txt`.
+  Prod healthy, all pages 200. **prodenv.txt deleted post-deploy** (re-capture via docker
+  inspect before any rollback). **IndexNow** home/frisco/lewisville → HTTP 200. Ephemeral key
+  removed (1 key remaining = Mac). Temp container removed.
+- Public re-verify via Cloudflare (web_fetch jinbeh.com): footer now serves
+  `jinbeh-logo-white-mark.webp` with the new alt text. ✔
+- **NOT done:** 3003 archive NOT rebuilt (serves prior footer/header on failover only); local
+  `git` changes UNCOMMITTED (sandbox `.git/index.lock` blocker) — commit from the Mac for
+  history. Stray `JinbehLogoWithWhiteText.png` + preview HTMLs are working files, not deployed.
+- **ROLLBACK:** `docker rm -f jinbeh-prod && docker run -d --name jinbeh-prod --restart
+  unless-stopped -p 0.0.0.0:3002:3000 --env-file <recaptured-env> jinbeh-elite:rollback-20260623-232055-pre-headerfooter`.
+
+## 2026-06-23 — GSC "120 not indexed" analysis: stale data + crawl budget (NOT broken pages); 6 indexing requests + sitemap resubmit
+
+Investigated GSC Page Indexing for `sc-domain:jinbeh.com` (report data last updated
+**6/11/26**, 12 days stale). State: **311 indexed / 120 not indexed (6 reasons)**;
+Performance trending UP (1,910 clicks, spike Jun 16-20). Full write-up:
+`GSC_INDEXING_ANALYSIS_2026-06-23.md`.
+
+### The 120 enumerated (every bucket pulled + categorized)
+- **Discovered – currently not indexed: 60** — ALL "Last crawled: N/A" (never
+  crawled). 17 FAQ `/faq/[slug]`, 20 menu item/category (9 frisco + 11 lewisville),
+  16 blog (incl. thin `/blog/category/cuisine`), 4 celebrations (corporate-events,
+  date-night, rehearsal-dinner, world-cup), 3 standalone (careers, specials, takeout).
+- **Not found (404): 21** — ~14 pharma/WP spam (correct 404); 6 already-redirected
+  legacy URLs (stale: /families, /main/*, /blog/types-of-sushi-rolls,
+  /blog/what-is-hibachi, /lewisville.htm, old Lewisville lunch PDF — all redirects
+  confirmed present in next.config.ts); 1 special case (below).
+- **Page with redirect: 18** + **Alternate canonical: 7** — benign by design.
+- **Crawled – currently not indexed: 13** — thin templated pages + 3 non-page assets
+  (/sitemap.xml, a _next/static .woff2 font, a .pdf).
+- **Server error (5xx): 1** — transient (nginx failover already deployed).
+
+### KEY finding: the report is STALE; the deployed site is ahead of it
+Live-tested proof via URL Inspection:
+- `/celebrations/world-cup` is listed under Discovered but is **already INDEXED**.
+- `/faq/how-much-does-hibachi-cost-at-jinbeh` is listed as **404** (last crawl
+  May 16) but **TEST LIVE URL = "URL is available to Google / can be indexed"** —
+  it serves 200 now. The 404 is a stale pre-deploy record.
+So a chunk of the 120 will self-clear on re-crawl. Root cause of the genuine ~70
+thin pages = **crawl budget + authority**, not a technical defect.
+
+### Verified NOT a bug: sitemap is complete
+Live `sitemap.xml` = ~375 `<loc>` incl. /specials, /takeout, /careers,
+/lewisville/hibachi, /frisco/appetizers, FAQ pages. GSC Sitemaps: sitemap.xml
+Success/373, sitemap-priority.xml Success/60, sitemap_index.xml (2024 WP) "Couldn't
+fetch" (dead, remove it). The per-URL "No referring sitemaps detected" in URL
+Inspection is **Google association lag, not a missing-sitemap bug** — confirmed by
+fetching the live sitemap and grepping for the URLs.
+
+### Actions taken (GSC only, no deploy)
+- **Resubmitted sitemap.xml** (fresh fetch of all 373; it was last read Jun 19,
+  before the recent content batches).
+- **Requested indexing** (priority crawl queue) for 6 high-value never-crawled
+  pages: /specials, /takeout, /lewisville/hibachi, /frisco/appetizers,
+  /celebrations/corporate-events, /faq/is-frisco-or-lewisville-better.
+- Did NOT request /faq/how-much-does-hibachi-cost-at-jinbeh — see policy flag.
+
+### Open items / recommendations
+- **POLICY FLAG:** `/faq/how-much-does-hibachi-cost-at-jinbeh` is LIVE but its
+  answer contains `$` prices ($25-50, $35, $4/$5/$6) — violates the no-price policy
+  (paa-content.json line ~468). Rewrite compliant (keeps "jinbeh hibachi price"
+  keyword) OR 301 → /specials, then index. Not indexed yet on purpose.
+- Next deploy (low risk): strengthen internal links to /faq/[slug] pages (Google
+  reports "no referring page" for them despite the /faq hub list); consider
+  `noindex` on /blog/category/* taxonomy pages.
+- GSC: remove dead `sitemap_index.xml`; re-check Page Indexing in 1-2 weeks
+  (counts should drop as re-crawl clears stale 404s + never-crawled pages).
+- URL-Inspection UI tip: the top inspect bar drops focus while a prior live-test
+  modal/toast is up. Dismiss the toast (or reload to a clean state) BEFORE typing
+  the next URL, else the Enter re-fires the previous page's test.
+
+## 2026-06-23 — Progress review: IRS follow-up urgent, Grizzly Star 24 days overdue, CPU steal recurring
+
+Automated progress review (`project-progress` scheduled task). Key findings:
+
+### Urgent email items (YumYumJinbeh@gmail.com, 136 unread)
+- **IRS Form 4506-T / Transcript Request** (Alec, D, Curt — 17 messages): "Just wanted
+  to check up on..." — needs reply with status update.
+- **LightHouse/Matsuda Case Status** (Jose — starred, has Draft reply in progress): POP
+  filed + Citation PDFs received. Complete and send the draft.
+- **Grizzly Star overdue invoices** (Todd Lewis): INV-7381 ($367.51) + INV-7380
+  ($1,469.12) = **$1,836.63 total, 24 days overdue** since May 30. Flagged in 4
+  consecutive progress reports with no resolution.
+- **Japanese Media Request to film at Jinbeh** (Ruriko/Inggrid — 30 messages, starred):
+  Likely Keru Tomeru Japanese TV segment **Jun 26 (3 days away)**. Filming logistics
+  need confirmation ASAP.
+- **3+ Google reviews unanswered** (Nsgslim, Joshua, Cheryl) — verify REP1 is handling
+  or respond manually.
+- **Canva Pro subscription ended** — affects content creation workflow.
+
+### VPS health
+- CPU steal oscillating 12–68% (sawtooth, same pattern as Jun 17). Prod responds in
+  15ms despite steal — workload is fine, host-side throttle. Another Kodee chat reset
+  would clear it.
+- Disk 65% (34 GB free), memory healthy, n8n healthy, all 7 expected containers running.
+- **jinbeh-staging was unexpectedly running** — stopped it + set restart=no (saves CPU).
+- **Cleaned 2 stale ephemeral SSH keys** from authorized_keys (down to 1 key: Mac only).
+
+### Stalled items (5+ consecutive reports, no movement)
+Southern Glazer's reply, Grizzly Star $1,836.63, chef recruitment (25 candidates, 0
+replies), journalist outreach (17 ready, none sent), Dream 100 (123 comments ready),
+STR outreach (8 emails drafted), energy contract (TXU reply to Nichole Knapik), Dallas
+Trinity FC pitch. Pattern: most are "ready to send" outreach blocked on owner bandwidth.
+
+### World Cup — Japan vs Sweden Jun 25 (2 days)
+Content drafted but not published (Chrome MCP gate). FOX 4 segment status unclear
+(Melinda Thomas 👍 but no firm booking). Chioma event logistics need confirmation.
+
+Full report: `PROGRESS_REPORT_2026-06-23.md`.
+
+## 2026-06-23 — DEPLOYED nightly SEO content batch 5 (25 pages: home + 7 cocktails + 14 hibachi items + appetizers + sashimi)
+
+Scheduled `nightly-seo-content-batch` run. Generated + deployed the next 25 unique
+PageSeoBoost entries (heading + 2 paragraphs + 3 FAQs each) into
+`src/data/page-seo-content.ts`. Clean build, TypeScript clean, no abort, no rollback.
+
+### Pages covered this run (25, all non-blog)
+home (1): `/`. appetizers (2): `/frisco/appetizers/{tempura,tuna-tartare}`.
+cocktails (5): `/frisco/cocktails/{jinbeh-punch,lychee-martini,sake-bomb,sake-flight,tokyo-mule}`.
+hibachi (14): `/frisco/hibachi/{chicken-teriyaki,combo-seafood,combo-steak-chicken,
+combo-steak-lobster,combo-steak-shrimp,filet-mignon,imperial-dinner,lobster-tail,
+ny-strip,ribeye,salmon,scallops,shrimp,vegetable-tofu}`. sashimi (3):
+`/frisco/sashimi/{chirashi,octopus-sashimi,salmon-sashimi}`.
+
+### Coverage tracker
+- Before: 88 routes covered. After: **113 routes covered** (88 + 25).
+- Injectable pages total: **276** (incl. 100 blogs). **Remaining eligible: 165.**
+- At 25/night this completes in ~7 more nightly runs, then self-disables.
+- NO blog routes in this batch (blogs render via shared `blog/layout.tsx`
+  `<BlogSeoBoost/>`; blog batches come later), so the "QA a blog" step was N/A.
+
+### Content notes (brand rules applied)
+- Each entry targets its primary_keyword, weaves secondaries, and works in its
+  feature_adds naturally. Guarded programmatically before insert: **no em-dashes,
+  no prices (except Happy Hour 4/5/6 dollar written as words), no AYCE, no omakase,
+  no "never frozen", no `$` signs** (all clean).
+- Home `/`: leads with "Serving DFW since 1988, longest running family owned
+  Japanese restaurant" authority + both locations + hibachi/teppanyaki/sushi near me.
+- All 14 hibachi items name the premium cuts (filet mignon, NY strip, Black Angus
+  ribeye, chateaubriand, twin lobster) and specify the **Frisco gas teppanyaki grill**.
+- Cocktail pages weave the Happy Hour callout (Mon-Fri 5:00-6:30, 4 dollar draft /
+  5 dollar small hot sake / 6 dollar wine) + sake set/sake near me secondaries.
+- The 3 sashimi items use the freshness/cut-to-order angle + **Fuji-san** chef-craft
+  (head sushi chef since 1993; original Jinbeh Special Roll his signature) within
+  guardrails. PageSeoBoost renders plain text (no anchors), so his /blog/fuji-san
+  profile is referenced descriptively, NOT linked with a raw URL.
+
+### Deploy mechanics
+- Pre-flight: **CPU steal 0.0%, load 1.12, 37 GB free**, prod healthy (well under
+  abort guards steal>40 / load>12 / disk<8GB).
+- `apply_hero_upgrades.py` injected exactly **25** `<PageSeoBoost route=.../>` anchors
+  (24 item page.tsx + home page.tsx; all before `<Footer>`). The script also re-applied
+  18 deterministic hero swaps + TrustStrip because the LOCAL working tree trails the VPS
+  (prior nightly runs rsync but never commit) — these are idempotent and already on prod.
+  page-seo-content.ts verified: 113 top-level routes, **braces balanced (452/452)**, ends
+  `export default seoContent;`.
+- rsync `src/` (8.0M) via ephemeral ed25519 key, `--delete` (confirmed local tree
+  contains all VPS-critical pages: world-cup-2026, faq, frisco/lewisville world-cup,
+  menu, 104 blogs — so --delete is safe). `docker build` candidate **4.39 GB**: compiled
+  69s, **TypeScript clean 50s**, 398 static pages, exported clean. Load peaked ~3.6.
+- QA (temp :3009): /, /frisco/hibachi/filet-mignon, /frisco/sashimi/salmon-sashimi,
+  /frisco/cocktails/sake-flight all 200 with new heading markers present; /, /frisco,
+  /lewisville 200. Promote -> rollback tag **`jinbeh-elite:rollback-20260623-085754-pre-content`**
+  (kept); candidate->latest; **prod recreated WITH `--env-file /tmp/prodenv.txt`** (19
+  env lines preserved per the OpenTable-entry warning — Google Sheets/SMTP/DB vars).
+  Live re-verify on :3002: batch pages 200 (0.02-0.04s) + content present, core pages +
+  /menu 200, prod **healthy**.
+- **IndexNow:** 25 batch URLs POSTed to api.indexnow.org -> **HTTP 200**.
+- **ROLLBACK:** `docker rm -f jinbeh-prod && docker run -d --name jinbeh-prod --restart
+  unless-stopped -p 0.0.0.0:3002:3000 --env-file /tmp/prodenv.txt
+  jinbeh-elite:rollback-20260623-085754-pre-content` (note: /tmp/prodenv.txt was cleaned
+  post-deploy; re-capture via `docker inspect` before rollback if needed).
+
+### Notes
+- 3003 archive NOT rebuilt this run (still serves prior content as failover).
+- Local changes remain UNCOMMITTED (sandbox can't clear `.git/index.lock`); deployed via
+  working-tree rsync. Commit from the real Mac for history. Ephemeral key removed from VPS
+  (0 matches, auth denied); inert local key files persist in session outputs.
+
+## 2026-06-22 — DEPLOYED OpenTable→Google Ads conversion tracking + discovered VPS↔origin divergence
+
+Goal: get Google Ads conversions firing for OpenTable reservations. Built/created:
+- **Google Ads (acct 278-359-1446 / `AW-18150861653`):** confirmed an EXISTING reservation
+  click conversion already wired in `src/lib/gtag.ts` (`fireConversionAndOpen`, label
+  `fFK4CJ7bm7UcENXWgM9D`) powering nav/hero/sticky CTAs since 2026-05-28. Created a NEW
+  conversion **"OpenTable Reservation"** (label `W4VzCPnC28McENXWgM9D`, Book appointment,
+  $25, one-per-click) to be the **completed-booking** conversion fired server-side by
+  OpenTable's account-manager integration (separate from the click one). TODO: OpenTable
+  support (support.opentable.com / 1-800-673-6822) to load Conversion ID + label so
+  COMPLETED bookings report back; then set the click conversion to Secondary to avoid
+  double-count, and bump completed value to ~$120.
+- **Customer Match:** uploaded two hashed customer lists from GuestCenter exports —
+  "Jinbeh Customers - Frisco OpenTable (28,608)" + "Lewisville (21,219)". GOTCHA: must
+  upload the **2-column hashed CSV (Email,Phone Number)**, NOT the raw 22-col GuestCenter
+  export (raw → "unrecognized column" errors). Only ~17% are Marketing Opt-In=true; we
+  uploaded all reachable diners (first-party).
+- **Website:** the 41 SEO pages (`celebrations/* frisco/* lewisville/* world-cup-2026
+  menu takeout events`) used PLAIN `<a>`/`<Link>` OpenTable buttons with NO conversion
+  (nav/hero already fired it — a static-HTML scan misses JS onClick handlers, don't be
+  fooled). Added `src/components/ReserveLink.tsx` (client drop-in) and converted all **93
+  links across 41 files** to fire the reservation conversion.
+
+### CRITICAL: VPS working tree has diverged from origin/main — deploys are NOT clean
+`/opt/jinbeh-elite` on the VPS was ~12 commits behind origin AND had **279 modified +
+644 untracked files** (596 untracked are already in origin; 48 are VPS-ONLY incl. whole
+new live pages: world-cup-2026, frisco/lewisville world-cup, lewisville/vegetarian,
+faq/[slug], ~10 blog posts). Prior agent sessions deployed by **rsync of the working
+tree** (per older entries) and never committed on the VPS, so the live tree ≠ origin.
+A plain `git pull` ABORTS ("untracked/local changes would be overwritten"). A 3-way
+trial merge showed **~28 true content conflicts** (the menu/category pages) — and neither
+side is a superset (origin adds ReserveLink; VPS has PageSeoBoost on /menu etc. origin
+lacks). So mass pull/reset is unsafe; reconciliation = keep-both per file.
+- **Safety snapshot:** committed the entire live tree to branch **`vps-live-snapshot`**
+  (commit `a2207c4`, later `418b7d0`) so nothing can be lost. (Couldn't push it offsite —
+  the VPS git remote has no token and I won't enter creds; it's local-only on the VPS.)
+- **How conversion tracking actually shipped (surgical keep-both):** rather than hand-merge
+  28 files, applied the ReserveLink transform DIRECTLY to the VPS live tree (wrote
+  ReserveLink.tsx + transform via base64 to dodge the flaky web console; VPS `gtag.ts`
+  already had the helper+label). Result preserves ALL live content (verified PageSeoBoost
+  still on /menu) and adds tracking (93/93 balanced, 0 leftover links).
+- **Prod deploy mechanics (IMPORTANT):** `docker compose --profile prod up -d --build`
+  ONLY rebuilt **staging** — `jinbeh-prod` is a **hand-run container (NOT compose-managed)**,
+  so compose ignored it. Canonical prod swap = build produced `jinbeh-elite-jinbeh-staging:latest`
+  → `docker tag jinbeh-elite:latest jinbeh-elite:rollback-<ts>-pre-reservelink` →
+  `docker tag jinbeh-elite-jinbeh-staging:latest jinbeh-elite:latest` → **preserve prod env**
+  (`docker inspect jinbeh-prod --format '{{range .Config.Env}}...' > /tmp/prodenv.txt`, 18
+  vars incl. Google Sheets/SMTP/DB — never print them) → `docker rm -f jinbeh-prod && docker
+  run -d --name jinbeh-prod --restart unless-stopped -p 0.0.0.0:3002:3000 --env-file
+  /tmp/prodenv.txt jinbeh-elite:latest`. Build: compiled 59s, **TypeScript clean**, pages
+  generated, image 137s. Live verify: /, /world-cup-2026, /menu, /lewisville/sushi-rolls all
+  200, prod healthy. **ROLLBACK:** `docker rm -f jinbeh-prod && docker run -d --name
+  jinbeh-prod --restart unless-stopped -p 0.0.0.0:3002:3000 --env-file /tmp/prodenv.txt
+  jinbeh-elite:rollback-20260623-040151-pre-reservelink`.
+
+### STILL OPEN (real dev work)
+- **Full VPS↔origin reconciliation NOT done** — the live site got conversion tracking
+  surgically, but origin's other ~11 commits (Hero photo, SEO batches, schema fixes, the
+  Mac's own `d498453` ReserveLink commit) are NOT merged, and the 28-file keep-both merge
+  + the 48 VPS-only pages should be reconciled into git properly in an editor (the web
+  console is too fragile for it). Branch `vps-live-snapshot` captures the live state to
+  start from.
+- Lessons: Hostinger **web console is fragile** — `git`/`diff` open `less` (set
+  `core.pager cat`); write files via **base64 single-line** decode; screenshots time out
+  (use `get_page_text`). The Mac repo's git remote has an **exposed PAT in the URL** —
+  rotate it.
+
+## 2026-06-22 — VPS disk reclaim + n8n execution retention (srv1144987)
+
+Investigated elevated CPU / disk on the Hostinger VPS (KVM 2, 2 vCPU, 96 GB disk).
+
+### Findings
+- CPU was bursty, not constant: `docker stats` showed all containers near-idle
+  (<0.5% total) at snapshot; load avg ~1.1 on 2 cores = periodic jobs, not a leak.
+  Containers running: jinbeh-prod, jinbeh-archive, n8n-n8n-1, n8n-postgres-1,
+  hermes-agent, espocrm, espocrm-db.
+- **Disk was the real issue (73% used).** Dominated by Docker **build cache (24 GB)**
+  from repeated `jinbeh-elite` image builds — NOT n8n data.
+- **n8n uses SQLite**, not Postgres. Data dir is a bind mount at `/opt/n8n/data`
+  (`database.sqlite`, ~234 MB). The `n8n-postgres-1` container is GOV1-only
+  (`gov1_orchestrator`, user `gov1`) — leave it alone for n8n disk work.
+- n8n retention env lives in **`/opt/n8n/.env`** (compose at `/opt/n8n/docker-compose.yml`,
+  image `n8nio/n8n:2.6.4`). Was saving ALL successes for 168h.
+- ~1 GB of stale `database.sqlite.bak-*/.preclean-*` files left in `/opt/n8n/data`
+  from a June 6–7 cleanup.
+
+### Actions taken
+- `docker builder prune -f` → reclaimed 24 GB. Disk 73% → 52%.
+- Removed stale sqlite `.bak-*/.preclean-*` files → ~1 GB. Disk → 51% (48 GB used).
+- Edited `/opt/n8n/.env` (backed up to `.env.bak-<ts>`): `SAVE_ON_SUCCESS=none`,
+  `SAVE_MANUAL_EXECUTIONS=false`, added `SAVE_ON_PROGRESS=false` and
+  `PRUNE_MAX_COUNT=10000`; kept `SAVE_ON_ERROR=all`, `PRUNE=true`, `MAX_AGE=168`.
+  Recreated n8n via `docker compose up -d n8n`; all 4 active workflows reactivated cleanly.
+
+### Notes / gotchas
+- Postgres superuser on `n8n-postgres-1` is `gov1` (not `postgres`); default DB
+  `gov1_orchestrator`. `psql -U postgres` fails.
+- Did NOT prune stopped containers — they're separate self-hosted apps the user
+  may resume: Immich (photos), WordPress, EspoCRM daemon, a Remnawave node.
+- Sandbox→VPS access works via paramiko, password `VPS_PASSWORD` in `log.env`.
+- Runbook saved to Cowork outputs: `n8n-retention-runbook.md`.
+
+## 2026-06-22 — DEPLOYED nightly SEO content batch 4 (25 pages: 12 nearby + 8 standalone + 1 celebration + 4 appetizer items)
+
+Scheduled `nightly-seo-content-batch` run. Generated + deployed the next 25 unique
+PageSeoBoost entries (heading + 2 paragraphs + 3 FAQs each) into
+`src/data/page-seo-content.ts`. Clean build, TypeScript clean, no abort, no rollback.
+
+### Pages covered this run (25, all non-blog)
+nearby (12): `/nearby/allen`, `/nearby/carrollton`, `/nearby/coppell`, `/nearby/denton`,
+`/nearby/flower-mound`, `/nearby/grapevine`, `/nearby/highland-village`, `/nearby/little-elm`,
+`/nearby/mckinney`, `/nearby/plano`, `/nearby/richardson`, `/nearby/the-colony`.
+standalone (8): `/allergy-friendly-dining`, `/careers`, `/delivery`, `/gallery`,
+`/gift-cards`, `/lunch-specials`, `/takeout`, `/specials`.
+celebration (1): `/celebrations/world-cup-watch-party`.
+item (4): `/frisco/appetizers/edamame`, `/frisco/appetizers/gyoza`,
+`/frisco/appetizers/seared-tuna`, `/frisco/appetizers/soft-shell-crab`.
+
+### Coverage tracker
+- Before: 63 routes covered. After: **88 routes covered** (63 + 25).
+- Injectable pages total: **276** (incl. 100 blogs). **Remaining eligible: 188.**
+- At 25/night this completes in ~8 more nightly runs, then self-disables.
+- NO blog routes in this batch (blogs render via the shared `blog/layout.tsx`
+  `<BlogSeoBoost/>`; blog batches come later).
+
+### Content notes (brand rules applied)
+- Each entry targets its primary_keyword, weaves secondaries, and addresses the
+  page's serp_gap. Guarded programmatically: **no em-dashes, no prices (except
+  Happy Hour and Hibachi for Two written as words), no AYCE, no omakase** (clean).
+- Nearby pages use the landmark/highway proximity angle (US 75, 121 corridor,
+  I-35E, Preston Road, 423 corridor) with drive-time estimates for each city.
+  Frisco-adjacent cities (Allen, Little Elm, McKinney, Plano, Richardson) route
+  to Jinbeh Frisco; Lewisville-adjacent (Carrollton, Coppell, Denton, Flower Mound,
+  Grapevine, Highland Village) route to Jinbeh Lewisville; The Colony notes
+  equidistance to both.
+- `/gift-cards` page had no `<Footer>` import (uses layout footer), so
+  `apply_hero_upgrades.py` skipped it. Manually injected `PageSeoBoost` import +
+  component before `</main>`.
+- `/specials` and `/lunch-specials` include the approved Hibachi for Two price
+  written as "35 dollars" and Happy Hour prices as "4 dollar / 5 dollar / 6 dollar"
+  per the existing specials-page style convention.
+- `/careers` mentions Frisco=gas, Lewisville=electric grill distinction for chef
+  applicants. `/allergy-friendly-dining` uses celiac-friendly language with
+  appropriate disclaimers about shared cooking surfaces.
+
+### Deploy mechanics
+- Pre-flight: **CPU steal 1.0%, load 1.07, 28 GB free**, prod healthy (well under
+  abort guards steal>40 / load>12 / disk<8GB).
+- `apply_hero_upgrades.py` injected 24 `<PageSeoBoost route=.../>` anchors before
+  `<Footer>` (idempotent); `/gift-cards` manually injected (no Footer in page).
+  Exactly 26 files changed: 25 new-route page.tsx + page-seo-content.ts. 88
+  top-level routes in page-seo-content.ts, braces balanced, ends
+  `export default seoContent;`.
+- rsync `src/` (ephemeral ed25519 key, removed after; remaining=9). `docker build`
+  candidate **4.39 GB**: compiled 81s, **TypeScript clean**, pages generated.
+- QA (temp :3009): all batch pages + core pages 200 with new heading markers
+  present. Promote -> rollback tag
+  **`jinbeh-elite:rollback-20260622-1232-pre-content`** (kept); candidate->latest;
+  prod recreated, **healthy**. Live re-verify on :3002: batch pages 200
+  (0.02-0.05s) + content present, core pages 200.
+- **IndexNow:** 25 batch URLs POSTed to api.indexnow.org -> **HTTP 200**.
+
+### Notes
+- 3003 archive NOT rebuilt this run (still serves prior content as failover).
+- Local changes remain UNCOMMITTED (sandbox can't clear `.git/index.lock`);
+  deployed via working-tree rsync. Commit from the real Mac for history.
+
+## 2026-06-22 — DEPLOYED nightly SEO content batch 3 (25 pages: 1 category + /menu + 23 celebration)
+
+Scheduled `nightly-seo-content-batch` run. Generated + deployed the next 25 unique
+PageSeoBoost entries (heading + 2 paragraphs + 3 FAQs each) into
+`src/data/page-seo-content.ts`. Clean build, TypeScript clean, no abort, no rollback.
+
+### Pages covered this run (25, all non-blog)
+category: `/lewisville/vegetarian`. menu: `/menu`. celebration (23):
+`/celebrations`, `/celebrations/anniversary`, `/celebrations/asian-restaurant-month`,
+`/celebrations/baby-shower`, `/celebrations/birthday`, `/celebrations/christmas`,
+`/celebrations/corporate-events`, `/celebrations/date-night`, `/celebrations/dfw-moms`,
+`/celebrations/diwali`, `/celebrations/family-gatherings`, `/celebrations/fathers-day`,
+`/celebrations/graduation`, `/celebrations/holiday-parties`, `/celebrations/lunar-new-year`,
+`/celebrations/mid-autumn-festival`, `/celebrations/mothers-day`,
+`/celebrations/national-fried-rice-day`, `/celebrations/rehearsal-dinner`,
+`/celebrations/team-building`, `/celebrations/thanksgiving`, `/celebrations/valentines-day`,
+`/celebrations/world-cup`.
+
+### Coverage tracker
+- Before: 38 routes covered. After: **63 routes covered** (38 + 25).
+- Injectable pages total: **276** (incl. 100 blogs). **Remaining eligible: 213.**
+- At 25/night this completes in ~9 more nightly runs, then self-disables.
+- NO blog routes in this batch, so the task's "QA at least one blog" step was N/A
+  (blogs render via the shared `blog/layout.tsx` <BlogSeoBoost/>; blog batches come later).
+
+### Content notes (brand rules applied)
+- Each entry targets its primary_keyword, weaves secondaries, addresses the serp_gap,
+  and works in its feature_adds naturally. Guarded programmatically: **no em-dashes, no
+  prices, no AYCE, no omakase** (clean). Paragraph word counts 44-63 (target ~40-70).
+- Celebration angles used: romantic/interactive date positioning vs steakhouses
+  (anniversary/date-night/valentines), "open on holiday + to-go family meal + holiday
+  hours" (christmas/thanksgiving/holiday-parties), kid-friendly tableside show +
+  training chopsticks + VIP Birthday Club (birthday/dfw-moms/family-gatherings/graduation),
+  group capacity 100+ + group menus + inquiry (corporate-events/team-building), private
+  dining + seat-together (baby-shower/rehearsal/diwali/lunar-new-year/mid-autumn/
+  asian-restaurant-month/national-fried-rice-day). `/menu`: Since-1988 authority +
+  premium cuts + fresh-cut-to-order + easy online ordering/to-go. `/lewisville/vegetarian`:
+  labeled GF/vegetarian + celiac-friendly language + tofu hibachi + veggie sushi.
+  `/celebrations/world-cup`: World Cup 2026 watch party + Samurai Blue Special sashimi +
+  complimentary edamame (price intentionally omitted from the SeoBoost copy).
+
+### Deploy mechanics
+- Pre-flight: **CPU steal 0.0%, load 0.01, 30 GB free**, prod healthy (well under abort
+  guards steal>40 / load>12 / disk<8GB).
+- `apply_hero_upgrades.py` injected exactly **25** `<PageSeoBoost route=.../>` anchors
+  before `<Footer>` (idempotent; hero-swap portion produced 0 new writes). Exactly 26
+  files changed: 25 new-route page.tsx + page-seo-content.ts. Isolated `tsc --noEmit` on
+  page-seo-content.ts = clean; 63 top-level routes, braces balanced, ends
+  `export default seoContent;`.
+- rsync `src/` (ephemeral ed25519 key, removed after; remaining=0). `docker build`
+  candidate **4.39 GB**: compiled 41s, **TypeScript clean (~102s page-gen)**, image
+  unpacked. Load peaked ~2.3.
+- QA (temp :3009): /, /frisco, /lewisville, /menu, /lewisville/vegetarian,
+  /celebrations/birthday, /celebrations/world-cup, /celebrations/thanksgiving all 200 with
+  new heading markers present. Promote → rollback tag
+  **`jinbeh-elite:rollback-20260622-0854-pre-content`** (kept); candidate→latest; prod
+  recreated, **healthy**. Live re-verify on :3002: batch pages 200 (0.02-0.18s) + content
+  present, core pages 200.
+- **IndexNow:** 25 batch URLs POSTed to api.indexnow.org → **HTTP 200** (keyfile 200).
+
+### Notes
+- 3003 archive NOT rebuilt this run (still serves prior content as failover); rebuild
+  when convenient.
+- Local changes remain UNCOMMITTED (sandbox can't clear `.git/index.lock`); deployed via
+  working-tree rsync. Commit from the real Mac for history. Ephemeral key files persist in
+  the session outputs dir but are inert (VPS-side key removed; sandbox blocks their delete).
+
 ## 2026-06-21 — DEPLOYED nightly SEO content batch 2 (25 pages: catering + neighborhood + category)
 
 Scheduled `nightly-seo-content-batch` run. Generated + deployed the next 25 unique

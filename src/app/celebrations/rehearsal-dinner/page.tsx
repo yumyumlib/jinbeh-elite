@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -484,6 +485,7 @@ export default function RehearsalDinnerPage() {
         </section>
 
         </main>
+      <PageSeoBoost route="/celebrations/rehearsal-dinner" />
       <Footer />
     </>
   );

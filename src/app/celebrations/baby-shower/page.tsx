@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -487,6 +488,7 @@ export default function BabyShowerPage() {
         </section>
 
         </main>
+      <PageSeoBoost route="/celebrations/baby-shower" />
       <Footer />
     </>
   );

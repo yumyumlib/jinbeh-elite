@@ -73,7 +73,17 @@
       "mcp__Claude_in_Chrome__navigate",
       "mcp__Claude_in_Chrome__resize_window",
       "mcp__Claude_in_Chrome__computer",
-      "mcp__Claude_in_Chrome__javascript_tool"
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "Bash(curl -s \"https://jinbeh.com/\")",
+      "Bash(cat)",
+      "Bash(python3 /tmp/jb_vps_check.py)",
+      "Bash(cp d-magazine-logo.png /tmp/d-magazine-logo.broken.bak)",
+      "Bash(sips -s format png d-magazine-logo.png --out d-magazine-logo.png)",
+      "Bash(python3 /tmp/jb_hotswap.py)",
+      "Bash(python3 /tmp/jb_cleanup.py)",
+      "Bash(rm -f /tmp/jb_vps_check*.py /tmp/jb_hotswap.py /tmp/jb_edge.py /tmp/jb_cleanup.py /tmp/d-magazine-logo.broken.bak)"
     ]
   }
 }
