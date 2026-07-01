@@ -73,10 +73,10 @@ const articleSchema = {
             name: "Jinbeh Japanese Restaurant Lewisville",
             address: {
                 "@type": "PostalAddress",
-                streetAddress: "1535 E State Hwy 121",
+                streetAddress: "2440 S Stemmons Fwy #A",
                 addressLocality: "Lewisville",
                 addressRegion: "TX",
-                postalCode: "75056",
+                postalCode: "75067",
             },
         },
         performer: {
@@ -348,7 +348,7 @@ export default function Fox4GoodDayPage() {
                                 match times, making it the perfect way to kick off a soccer night.
                             </p>
 
-                            <DidYouKnow fact="Jinbeh Frisco is located near Stonebriar Centre on Preston Road, and Jinbeh Lewisville is right off Highway 121 near Vista Ridge Mall. Both locations are a short drive from AT&T Stadium in Arlington, where many of the North Texas matches are being played." />
+                            <DidYouKnow fact="Jinbeh Frisco is located near Stonebriar Centre on Preston Road, and Jinbeh Lewisville is right off I-35E near Vista Ridge Mall. Both locations are a short drive from AT&T Stadium in Arlington, where many of the North Texas matches are being played." />
 
                             <h2 className="text-3xl font-heading font-bold text-charcoal mt-12 mb-6">
                                 📰 Watch the FOX 4 Segment

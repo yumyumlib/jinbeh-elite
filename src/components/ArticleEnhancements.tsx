@@ -372,7 +372,7 @@ export function LocationCTA({ location = "frisco" }: { location?: "frisco" | "le
         },
         lewisville: {
             name: "Jinbeh Lewisville",
-            address: "1543 E Hwy 121, Lewisville, TX 75056",
+            address: "2440 S Stemmons Fwy #A, Lewisville, TX 75067",
             landmark: "Easy access from I-35E",
             phone: "(214) 488-2224",
             rating: "4.4",

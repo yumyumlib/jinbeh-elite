@@ -802,7 +802,7 @@ export default function LewisvillePage() {
             <h2 className="text-3xl font-heading font-bold text-charcoal mb-6 text-center">Find Jinbeh Lewisville</h2>
             <div className="rounded-xl overflow-hidden shadow-lg border border-warm-ivory">
               <iframe
-                src="https://www.google.com/maps?q=Jinbeh+Japanese+Restaurant,+1535+E+State+Hwy+121,+Lewisville,+TX+75056&output=embed"
+                src="https://www.google.com/maps?q=Jinbeh+Japanese+Restaurant,+2440+S+Stemmons+Fwy+%23A,+Lewisville,+TX+75067&output=embed"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -813,7 +813,7 @@ export default function LewisvillePage() {
               />
             </div>
             <p className="text-center text-charcoal/70 mt-4 text-sm">
-              1535 East State Highway 121, Suite 300, Lewisville, TX 75056 · <a href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville+TX" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Get Directions</a>
+              2440 S Stemmons Fwy #A, Lewisville, TX 75067 · <a href="https://maps.google.com/?q=Jinbeh+Japanese+Restaurant+Lewisville+TX" target="_blank" rel="noopener noreferrer" className="text-accent-red hover:underline">Get Directions</a>
             </p>
           </div>
         </section>
