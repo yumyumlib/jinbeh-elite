@@ -5,6 +5,7 @@ import "./globals.css";
 import { OrganizationSchema, WebSiteSchema, LocalBusinessSchemaFrisco, LocalBusinessSchemaLewisville, MenuSchema } from "@/components/schema/AllSchemas";
 import SmartStickyCTA from "@/components/SmartStickyCTA";
 import AttributionCapture from "@/components/AttributionCapture";
+import PhoneCallTracker from "@/components/PhoneCallTracker";
 
 // Google Ads conversion tracking. Set in Google Ads account 278-359-1446.
 // Override via NEXT_PUBLIC_GOOGLE_ADS_ID on the VPS if it ever changes.
@@ -179,6 +180,7 @@ export default function RootLayout({
             Persists to localStorage 90 days. Surfaces via @/lib/attribution
             for downstream consumers like OpenTableWidget. */}
         <AttributionCapture />
+        <PhoneCallTracker />
         {children}
         <SmartStickyCTA />
 
