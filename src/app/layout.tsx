@@ -198,7 +198,11 @@ export default function RootLayout({
                 function gtag(){dataLayer.push(arguments);}
                 window.gtag = window.gtag || gtag;
                 gtag('js', new Date());
-                gtag('config', '${GOOGLE_ADS_ID}');
+                // allow_enhanced_conversions lets gtag attach hashed first-party
+                // data (email/phone) to conversions — improves match rate and
+                // recovers conversions lost to cookie/ITP restrictions. Requires
+                // "Enhanced conversions for leads" to be turned ON in Google Ads.
+                gtag('config', '${GOOGLE_ADS_ID}', { 'allow_enhanced_conversions': true });
                 ${GA4_ENABLED ? `gtag('config', '${GA4_ID}');` : ""}
               `}
             </Script>

@@ -60,7 +60,13 @@ const DEFAULT_VALUES: Record<ConversionAction, number> = {
   reservation: 120,
   opentable_reservation: 25,
   phone_call: 120,
-  catering: 120,
+  // catering = $400: a catering event is worth far more than one dinner
+  // (avg event in the low-$thousands × a conservative lead→booked rate).
+  // Pricing it above a dinner reservation tells value-based Smart Bidding to
+  // pursue catering leads harder — that's where the revenue is. Owner-tunable.
+  // (reservation/phone_call = $120 ≈ real avg dinner check per party, per the
+  // R1 revenue warehouse: trailing-180-day avg_ticket ~$118–126.)
+  catering: 400,
   directions: 25,
   vip: 25,
   event_inquiry: 120,
@@ -110,6 +116,7 @@ export function fireConversion(
   action: ConversionAction,
   value?: number,
   currency: string = "USD",
+  transactionId?: string,
 ): void {
   if (typeof window === "undefined") return;
   if (!window.gtag) return;
@@ -131,6 +138,10 @@ export function fireConversion(
     send_to: `${GOOGLE_ADS_ID}/${label}`,
     value: conversionValue,
     currency,
+    // transaction_id lets Google de-duplicate a conversion that fires more than
+    // once (double-click, success-state re-render, ret/refire). Pass a stable id
+    // per real conversion (e.g. one per successful form submit).
+    ...(transactionId ? { transaction_id: transactionId } : {}),
   });
 
   // Fire any companion conversions (e.g. opentable_reservation alongside reservation).

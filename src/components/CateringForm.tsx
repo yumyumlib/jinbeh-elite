@@ -30,7 +30,12 @@ export default function CateringForm() {
                     email: data.email as string,
                     phone: data.phone as string,
                 });
-                fireConversion("catering");
+                // Unique id per successful submit so Google de-dupes any refire.
+                const txnId =
+                    typeof crypto !== "undefined" && crypto.randomUUID
+                        ? crypto.randomUUID()
+                        : `catering-${Date.now()}`;
+                fireConversion("catering", undefined, "USD", txnId);
                 setStatus("success");
             } else {
                 const result = await response.json();
