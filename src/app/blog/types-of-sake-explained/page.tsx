@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, IngredientSpotlight, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Types of Sake Explained: Junmai vs Daiginjo & Sake Varieties | Jinbeh",
     description:
@@ -973,7 +974,7 @@ export default function TypesOfSakeExplained() {
 
                                     <div className="mt-12">
                                         <ProTip variant="chef">
-                                            <strong>Sake exploration tip from our team:</strong> The fastest way to discover your sake preference is to order a "sake flight" during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>,you'll taste 3-4 varieties side-by-side and immediately understand the differences between Junmai, Ginjo, and Daiginjo. Ask our bartender to arrange them light-to-bold for the best tasting experience. Temperature matters enormously: try the same Junmai both warm and chilled to experience how it transforms. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                            <strong>Sake exploration tip from our team:</strong> The fastest way to discover your sake preference is to order a "sake flight" during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link>,you'll taste 3-4 varieties side-by-side and immediately understand the differences between Junmai, Ginjo, and Daiginjo. Ask our bartender to arrange them light-to-bold for the best tasting experience. Temperature matters enormously: try the same Junmai both warm and chilled to experience how it transforms. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</CallLink> or <CallLink href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</CallLink>
                                         </ProTip>
 
                                         <PillarCTA type="catering" />

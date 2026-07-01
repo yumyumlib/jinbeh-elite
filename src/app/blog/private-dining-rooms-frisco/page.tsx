@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { ProTip } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title: "Private Dining Rooms Frisco TX: Hibachi & Sushi Groups | Jinbeh",
@@ -171,7 +172,7 @@ export default function PrivateDiningFriscoPost() {
                                         <div className="flex flex-wrap gap-3">
                                             <Link href="/private-dining" className="btn btn-primary bg-accent-red hover:bg-accent-red/90">Private Dining Page</Link>
                                             <Link href="/reservations" className="btn btn-primary bg-deep-indigo hover:bg-deep-indigo/90">Reserve a Table</Link>
-                                            <a href="tel:2146191200" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call (214) 619-1200</a>
+                                            <CallLink href="tel:2146191200" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call (214) 619-1200</CallLink>
                                         </div>
                                     </div>
                                 </div>

@@ -5,6 +5,7 @@
 'use client';
 
 import Link from 'next/link';
+import CallLink from "@/components/CallLink";
 
 interface FAQItem {
   icon: string;
@@ -126,7 +127,7 @@ export default function FirstTimerFAQ() {
             Our gracious hosts are here to help. Give us a call or stop by—we'd love to welcome you!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <CallLink
               href="tel:2146191200"
               aria-label="Call Jinbeh Frisco" className="inline-flex items-center justify-center gap-2 bg-soft-gold hover:bg-soft-gold/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105"
             >
@@ -134,8 +135,8 @@ export default function FirstTimerFAQ() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Call Frisco: (214) 619-1200
-            </a>
-            <a
+            </CallLink>
+            <CallLink
               href="tel:2144882224"
               aria-label="Call Jinbeh Lewisville" className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white hover:text-charcoal text-white px-6 py-3 rounded-lg font-semibold transition-all border border-white/40"
             >
@@ -143,7 +144,7 @@ export default function FirstTimerFAQ() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Call Lewisville: (214) 488-2224
-            </a>
+            </CallLink>
           </div>
         </div>
       </div>

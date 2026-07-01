@@ -5,6 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Free Birthday Food Deals: Where to Get Treats | Jinbeh",
   description:
@@ -398,15 +399,15 @@ export default function FreeBirthdayFoodDealsPage() {
       <ul>
         <li>
           <strong>Frisco:</strong>{" "}
-          <a href="tel:2146191200" className="text-accent-red hover:underline">
+          <CallLink href="tel:2146191200" className="text-accent-red hover:underline">
             (214) 619-1200
-          </a>
+          </CallLink>
         </li>
         <li>
           <strong>Lewisville:</strong>{" "}
-          <a href="tel:2144882224" className="text-accent-red hover:underline">
+          <CallLink href="tel:2144882224" className="text-accent-red hover:underline">
             (214) 488-2224
-          </a>
+          </CallLink>
         </li>
       </ul>
 

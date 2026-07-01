@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "National Fried Rice Day | September 20th | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description: "Celebrate National Fried Rice Day at Jinbeh! Watch our hibachi chefs make the best fried rice in Frisco and Lewisville TX. Famous hibachi fried rice prepared tableside.",
@@ -160,13 +161,13 @@ export default function NationalFriedRiceDayPage() {
             <p className="font-medium">
               <span>🍚 The unofficial holiday for fried rice lovers! 🍚</span>{" "}
               <span className="font-bold">Join us September 20th.</span>{" "}
-              <a href="tel:2146191200" className="underline hover:no-underline">
+              <CallLink href="tel:2146191200" className="underline hover:no-underline">
                 Frisco (214) 619-1200
-              </a>{" "}
+              </CallLink>{" "}
               |{" "}
-              <a href="tel:2144882224" className="underline hover:no-underline">
+              <CallLink href="tel:2144882224" className="underline hover:no-underline">
                 Lewisville (214) 488-2224
-              </a>
+              </CallLink>
             </p>
           </div>
         </section>
@@ -351,18 +352,18 @@ export default function NationalFriedRiceDayPage() {
                 Reserve your table and get ready for a feast!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
                   <span>📞</span> Frisco: (214) 619-1200
-                </a>
-                <a
+                </CallLink>
+                <CallLink
                   href="tel:2144882224"
                   className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
                   <span>📞</span> Lewisville: (214) 488-2224
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

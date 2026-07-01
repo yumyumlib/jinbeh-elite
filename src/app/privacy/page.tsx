@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Privacy Policy | Jinbeh Japanese Restaurant",
   description: "Privacy policy for Jinbeh Japanese Restaurant. Learn how we collect, use, and protect your personal information.",
@@ -73,8 +74,8 @@ export default function PrivacyPolicyPage() {
               <p className="mt-4">
                 <strong>Always confirm specific prices, hours, and availability by calling us
                 directly</strong> before making a decision based on information you read on
-                this website. Frisco: <a href="tel:+12146191200" className="text-accent-red hover:underline">(214) 619-1200</a>.
-                Lewisville: <a href="tel:+12144882224" className="text-accent-red hover:underline">(214) 488-2224</a>.
+                this website. Frisco: <CallLink href="tel:+12146191200" className="text-accent-red hover:underline">(214) 619-1200</CallLink>.
+                Lewisville: <CallLink href="tel:+12144882224" className="text-accent-red hover:underline">(214) 488-2224</CallLink>.
                 See our <Link href="/terms#ai-assisted-content" className="text-accent-red hover:underline">Terms of Service</Link>
                 {" "}for the full AI &amp; accuracy disclaimer.
               </p>

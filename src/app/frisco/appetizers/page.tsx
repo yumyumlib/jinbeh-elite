@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Appetizers Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Browse Jinbeh Frisco's appetizer menu: crispy gyoza, edamame, tempura, seared tuna, soft shell crab, and tuna tartare. Perfect starters for your hibachi.",
@@ -359,12 +360,12 @@ export default function AppetizersFriscoPage() {
                 >
                   Reserve a Table
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Terms of Service | Jinbeh Japanese Restaurant",
   description: "Terms of Service for Jinbeh Japanese Restaurant website and services. Review our reservation policies, allergen information, and website usage guidelines.",
@@ -99,8 +100,8 @@ export default function TermsOfServicePage() {
                 please call the restaurant to confirm:</strong>
               </p>
               <ul className="list-disc pl-6 mt-2 space-y-2">
-                <li>Frisco: <a href="tel:+12146191200" className="text-accent-red hover:underline">(214) 619-1200</a></li>
-                <li>Lewisville: <a href="tel:+12144882224" className="text-accent-red hover:underline">(214) 488-2224</a></li>
+                <li>Frisco: <CallLink href="tel:+12146191200" className="text-accent-red hover:underline">(214) 619-1200</CallLink></li>
+                <li>Lewisville: <CallLink href="tel:+12144882224" className="text-accent-red hover:underline">(214) 488-2224</CallLink></li>
               </ul>
               <p className="mt-4">
                 Pricing displayed on our official in-restaurant menus and on our official

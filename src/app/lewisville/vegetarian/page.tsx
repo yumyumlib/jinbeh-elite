@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { QuoteStrip } from "@/components/CustomerVoice";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title:
@@ -159,12 +160,12 @@ export default function LewisvilleVegetarianPage() {
                             tofu, prepared with the same care as our steak and seafood.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-                            <a
+                            <CallLink
                                 href="tel:214-488-2224"
                                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold transition-all"
                             >
                                 Call Lewisville: (214) 488-2224
-                            </a>
+                            </CallLink>
                             <Link
                                 href="/reservations"
                                 className="btn bg-white/15 backdrop-blur text-white border-2 border-white/50 hover:bg-white/25 px-8 py-4 text-lg font-semibold transition-all"
@@ -344,12 +345,12 @@ export default function LewisvilleVegetarianPage() {
                             since 1988.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
+                            <CallLink
                                 href="tel:214-488-2224"
                                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold transition-all"
                             >
                                 Call (214) 488-2224
-                            </a>
+                            </CallLink>
                             <Link
                                 href="/lewisville/menu"
                                 className="btn bg-white/15 backdrop-blur text-white border-2 border-white/50 hover:bg-white/25 px-8 py-4 text-lg font-semibold transition-all"

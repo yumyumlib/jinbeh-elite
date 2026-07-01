@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { ProTip } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title: "Sushi Catering Lewisville TX: Platters & Delivery | Jinbeh",
@@ -185,7 +186,7 @@ export default function SushiCateringLewisvillePost() {
                                         <p className="text-warm-ivory/80 mb-4">Tell us the date, headcount, and venue. We&apos;ll send a platter menu and price the same day.</p>
                                         <div className="flex flex-wrap gap-3">
                                             <Link href="/catering" className="btn btn-primary bg-accent-red hover:bg-accent-red/90">Catering Page</Link>
-                                            <a href="tel:2144882224" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call (214) 488-2224</a>
+                                            <CallLink href="tel:2144882224" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call (214) 488-2224</CallLink>
                                         </div>
                                     </div>
                                 </div>

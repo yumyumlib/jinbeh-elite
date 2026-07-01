@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import locations from "@/data/locations.json";
+import CallLink from "@/components/CallLink";
 
 const location = locations.locations.frisco;
 
@@ -164,12 +165,12 @@ export default function FriscoSushiPage() {
                 >
                   Reserve Your Table
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

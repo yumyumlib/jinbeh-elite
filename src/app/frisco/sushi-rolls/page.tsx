@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Sushi Rolls Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Fresh sushi rolls at Jinbeh Frisco, Dragon Roll, Rainbow Roll, Spicy Tuna, and house specialties. Hand-crafted daily near Stonebriar Centre. Family-owned since 1988.",
@@ -692,12 +693,12 @@ export default function SushiRollsFriscoPage() {
                 >
                   Reserve a Table
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 import Image from "next/image";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Kids Menu | Jinbeh Frisco Japanese Restaurant",
   description:
@@ -717,12 +718,12 @@ export default function KidsMenuFriscoPage() {
                 >
                   Make a Reservation
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="btn bg-white/20 backdrop-blur border-2 border-white text-white hover:bg-white hover:text-accent-red px-8 py-4 text-lg font-semibold rounded-xl transition-all font-heading"
                 >
                   Call (214) 619-1200
-                </a>
+                </CallLink>
               </div>
             </div>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import RelatedArticles from "@/components/RelatedArticles";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title: "Sushi Takeout Lewisville TX: Order from Jinbeh",
@@ -132,7 +133,7 @@ export default function SushiTakeoutLewisvillePost() {
                                         <h3 className="font-heading text-2xl font-bold mb-3">Order Jinbeh Lewisville sushi takeout</h3>
                                         <p className="text-warm-ivory/80 mb-4">Call to order pickup, or use Grubhub or Uber Eats for delivery.</p>
                                         <div className="flex flex-wrap gap-3">
-                                            <a href="tel:2144882224" className="btn btn-primary bg-accent-red hover:bg-accent-red/90">Call (214) 488-2224</a>
+                                            <CallLink href="tel:2144882224" className="btn btn-primary bg-accent-red hover:bg-accent-red/90">Call (214) 488-2224</CallLink>
                                             <Link href="/order-online" className="btn btn-primary bg-deep-indigo hover:bg-deep-indigo/90">Order Online</Link>
                                             <Link href="/lewisville" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Jinbeh Lewisville</Link>
                                         </div>

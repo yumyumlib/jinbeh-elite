@@ -8,6 +8,7 @@ import Link from "next/link";
 import SocialProofVideo from "@/components/SocialProofVideo";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Gallery | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
@@ -633,9 +634,9 @@ export default function GalleryPage() {
                   </p>
                   <p className="text-white/80 text-sm">
                     Near Stonebriar Centre<br />
-                    <a href="tel:+12146970989" className="hover:text-soft-gold transition-colors">
+                    <CallLink href="tel:+12146970989" className="hover:text-soft-gold transition-colors">
                       (214) 697-0989
-                    </a>
+                    </CallLink>
                   </p>
                 </div>
                 <div>
@@ -644,9 +645,9 @@ export default function GalleryPage() {
                   </p>
                   <p className="text-white/80 text-sm">
                     Off I-35E Near Vista Ridge<br />
-                    <a href="tel:+12144882224" className="hover:text-soft-gold transition-colors">
+                    <CallLink href="tel:+12144882224" className="hover:text-soft-gold transition-colors">
                       (214) 488-2224
-                    </a>
+                    </CallLink>
                   </p>
                 </div>
               </div>

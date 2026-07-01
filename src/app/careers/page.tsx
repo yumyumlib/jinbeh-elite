@@ -7,6 +7,7 @@ import Image from "next/image";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Careers at Jinbeh | Join Our Family - Frisco & Lewisville, TX",
   description:
@@ -605,21 +606,21 @@ export default function CareersPage() {
                 <div className="space-y-3">
                   <div>
                     <p className="text-sm text-charcoal/80 uppercase mb-1">Frisco</p>
-                    <a
+                    <CallLink
                       href="tel:2146191200"
                       className="text-accent-red hover:text-accent-red/80 font-bold text-lg"
                     >
                       (214) 619-1200
-                    </a>
+                    </CallLink>
                   </div>
                   <div>
                     <p className="text-sm text-charcoal/80 uppercase mb-1">Lewisville</p>
-                    <a
+                    <CallLink
                       href="tel:2144882224"
                       className="text-accent-red hover:text-accent-red/80 font-bold text-lg"
                     >
                       (214) 488-2224
-                    </a>
+                    </CallLink>
                   </div>
                 </div>
               </div>
@@ -751,23 +752,23 @@ export default function CareersPage() {
                 <p className="text-white/70 text-sm uppercase tracking-wide mb-3">
                   Frisco
                 </p>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="inline-block text-2xl font-bold text-soft-gold hover:text-soft-gold/80 transition-colors"
                 >
                   (214) 619-1200
-                </a>
+                </CallLink>
               </div>
               <div>
                 <p className="text-white/70 text-sm uppercase tracking-wide mb-3">
                   Lewisville
                 </p>
-                <a
+                <CallLink
                   href="tel:2144882224"
                   className="inline-block text-2xl font-bold text-soft-gold hover:text-soft-gold/80 transition-colors"
                 >
                   (214) 488-2224
-                </a>
+                </CallLink>
               </div>
             </div>
             <a

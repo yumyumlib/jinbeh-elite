@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Best Restaurants with Private Rooms Near Me: Exclusive Dining Venues | Jinbeh",
     description:
@@ -254,8 +255,8 @@ export default function RestaurantsPrivateRooms() {
                         <h3 className="font-heading text-xl font-bold text-charcoal mb-2">Need a Private Space for Your Group?</h3>
                         <p className="text-sm text-charcoal/80">Jinbeh offers semi-private hibachi tables and full private dining for groups of all sizes. Birthday parties, corporate events, rehearsal dinners&mdash;call to discuss your needs and we&apos;ll customize the experience.</p>
                         <div className="flex flex-wrap gap-3 mt-3">
-                            <a href="tel:2146191200" className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-accent-red/90 transition-colors">Frisco: (214) 619-1200</a>
-                            <a href="tel:2144882224" className="inline-flex items-center gap-1.5 px-4 py-2 bg-charcoal text-white text-sm font-medium rounded-lg hover:bg-charcoal/90 transition-colors">Lewisville: (214) 488-2224</a>
+                            <CallLink href="tel:2146191200" className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-accent-red/90 transition-colors">Frisco: (214) 619-1200</CallLink>
+                            <CallLink href="tel:2144882224" className="inline-flex items-center gap-1.5 px-4 py-2 bg-charcoal text-white text-sm font-medium rounded-lg hover:bg-charcoal/90 transition-colors">Lewisville: (214) 488-2224</CallLink>
                             <Link href="/reservations" className="inline-flex items-center gap-1.5 px-4 py-2 bg-soft-gold/20 text-charcoal text-sm font-medium rounded-lg hover:bg-soft-gold/30 transition-colors">Reserve Online &rarr;</Link>
                         </div>
                     </div>

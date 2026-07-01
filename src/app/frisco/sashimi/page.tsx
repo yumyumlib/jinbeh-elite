@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Sashimi Menu | Jinbeh Frisco Japanese Restaurant",
   description: "Jinbeh Frisco's sashimi menu features fresh salmon, tuna, yellowtail, octopus, and chef's selections. Premium cuts daily near Stonebriar Centre.",
@@ -360,12 +361,12 @@ export default function SashimiFriscoPage() {
                 >
                   Reserve a Table
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 619-1200
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

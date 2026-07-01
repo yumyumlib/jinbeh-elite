@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { fireConversion, setEnhancedConversionData } from "@/lib/gtag";
+import CallLink from "@/components/CallLink";
 
 export default function CateringForm() {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -20,6 +22,15 @@ export default function CateringForm() {
             });
 
             if (response.ok) {
+                // Fire the Google Ads "Catering lead form" conversion only on a
+                // confirmed successful submission (not on validation/network errors).
+                // Enhanced Conversions: hash + send email/phone first so they
+                // attach to the conversion below.
+                await setEnhancedConversionData({
+                    email: data.email as string,
+                    phone: data.phone as string,
+                });
+                fireConversion("catering");
                 setStatus("success");
             } else {
                 const result = await response.json();
@@ -45,13 +56,13 @@ export default function CateringForm() {
                     Thank you for your catering inquiry. We&apos;ll review your details and get back to you within 1 business day.
                 </p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center text-sm">
-                    <a href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+                    <CallLink href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
                         📞 Frisco: (214) 619-1200
-                    </a>
+                    </CallLink>
                     <span className="hidden sm:inline text-white/30">|</span>
-                    <a href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+                    <CallLink href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
                         📞 Lewisville: (214) 488-2224
-                    </a>
+                    </CallLink>
                 </div>
             </div>
         );
@@ -233,12 +244,12 @@ export default function CateringForm() {
                     </button>
                     <div className="flex flex-col sm:flex-row gap-3 text-sm text-warm-ivory/60">
                         <span>Or call us:</span>
-                        <a href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors underline decoration-soft-gold/30">
+                        <CallLink href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors underline decoration-soft-gold/30">
                             Frisco (214) 619-1200
-                        </a>
-                        <a href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors underline decoration-soft-gold/30">
+                        </CallLink>
+                        <CallLink href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors underline decoration-soft-gold/30">
                             Lewisville (214) 488-2224
-                        </a>
+                        </CallLink>
                     </div>
                 </div>
             </form>

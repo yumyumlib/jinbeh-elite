@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { QuoteStrip } from "@/components/CustomerVoice";
 import Link from "next/link";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title:
@@ -602,19 +603,19 @@ export default function AllergyFriendlyDiningPage() {
                                 restaurant kitchen. For life-threatening allergies, please
                                 discuss your specific needs with your server and chef before
                                 ordering. Call ahead for severe allergies:{" "}
-                                <a
+                                <CallLink
                                     href="tel:2146191200"
                                     className="underline font-semibold"
                                 >
                                     Frisco (214) 619-1200
-                                </a>{" "}
+                                </CallLink>{" "}
                                 or{" "}
-                                <a
+                                <CallLink
                                     href="tel:2144882224"
                                     className="underline font-semibold"
                                 >
                                     Lewisville (214) 488-2224
-                                </a>
+                                </CallLink>
                                 .
                             </p>
                         </div>
@@ -686,18 +687,18 @@ export default function AllergyFriendlyDiningPage() {
                             locations accommodate food allergies.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
+                            <CallLink
                                 href="tel:2146191200"
                                 className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg inline-flex items-center justify-center gap-2"
                             >
                                 <span>📞</span> Frisco: (214) 619-1200
-                            </a>
-                            <a
+                            </CallLink>
+                            <CallLink
                                 href="tel:2144882224"
                                 className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl inline-flex items-center justify-center gap-2"
                             >
                                 <span>📞</span> Lewisville: (214) 488-2224
-                            </a>
+                            </CallLink>
                         </div>
                         <div className="mt-8">
                             <Link

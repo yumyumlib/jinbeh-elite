@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Diwali Dinner Frisco & Lewisville | Festival of Lights Celebration | Jinbeh Japanese Restaurant",
   description: "Celebrate Diwali at Jinbeh! Mark the Festival of Lights with hibachi flames and family dining in Frisco and Lewisville TX. Gather with loved ones for a festive meal!",
@@ -160,13 +161,13 @@ export default function DiwaliPage() {
             <p className="font-medium">
               <span>🪔 Celebrate Diwali with family! 🪔</span>{" "}
               <span className="font-bold">Reserve your table now.</span>{" "}
-              <a href="tel:2146191200" className="underline hover:no-underline">
+              <CallLink href="tel:2146191200" className="underline hover:no-underline">
                 Frisco (214) 619-1200
-              </a>{" "}
+              </CallLink>{" "}
               |{" "}
-              <a href="tel:2144882224" className="underline hover:no-underline">
+              <CallLink href="tel:2144882224" className="underline hover:no-underline">
                 Lewisville (214) 488-2224
-              </a>
+              </CallLink>
             </p>
           </div>
         </section>
@@ -333,18 +334,18 @@ export default function DiwaliPage() {
                 Gather your family for a festive meal! Reserve your Diwali celebration table today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="btn bg-accent-red text-white hover:bg-accent-red/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
                   <span>📞</span> Frisco: (214) 619-1200
-                </a>
-                <a
+                </CallLink>
+                <CallLink
                   href="tel:2144882224"
                   className="btn bg-deep-indigo text-white hover:bg-deep-indigo/90 px-8 py-4 rounded-xl font-semibold shadow-lg inline-flex items-center justify-center gap-2"
                 >
                   <span>📞</span> Lewisville: (214) 488-2224
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

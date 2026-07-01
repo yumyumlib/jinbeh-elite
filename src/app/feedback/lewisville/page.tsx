@@ -3,6 +3,7 @@ import Link from "next/link";
 import FeedbackForm from "@/components/FeedbackForm";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { RevealSection } from "@/components/MagicUI";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
   title: {
@@ -59,12 +60,12 @@ export default function LewisvilleFeedbackPage() {
               Prefer to talk to someone directly?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <CallLink
                 href="tel:2144882224"
                 className="inline-flex items-center gap-2 text-accent-red font-semibold hover:underline"
               >
                 <span>📞</span> Call Lewisville: (214) 488-2224
-              </a>
+              </CallLink>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 text-charcoal font-semibold hover:text-accent-red transition-colors"

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import { DidYouKnow, ProTip, LocationCTA } from "@/components/ArticleEnhancements";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
   title: "Best Restaurant Near Universal Kids Resort | Jinbeh Frisco",
@@ -383,9 +384,9 @@ export default function RestaurantsNearUniversalKidsResortPage() {
         3902 Legacy Drive, Frisco, TX 75034
         <br />
         Phone:{" "}
-        <a href="tel:2146191200" className="text-accent-red hover:underline">
+        <CallLink href="tel:2146191200" className="text-accent-red hover:underline">
           (214) 619-1200
-        </a>
+        </CallLink>
         <br />
         <Link href="/frisco" className="text-accent-red hover:underline">
           View Frisco Location
@@ -398,9 +399,9 @@ export default function RestaurantsNearUniversalKidsResortPage() {
         2440 S Stemmons Fwy #A, Lewisville, TX 75067
         <br />
         Phone:{" "}
-        <a href="tel:2144882224" className="text-accent-red hover:underline">
+        <CallLink href="tel:2144882224" className="text-accent-red hover:underline">
           (214) 488-2224
-        </a>
+        </CallLink>
         <br />
         <Link href="/lewisville" className="text-accent-red hover:underline">
           View Lewisville Location

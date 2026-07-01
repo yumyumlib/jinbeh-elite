@@ -6,6 +6,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import { Accordion } from "@/components/ui/accordion";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "What is Omakase? A Complete Guide to the Japanese Sushi Experience | Jinbeh",
     description:
@@ -677,7 +678,7 @@ export default function WhatIsOmakase() {
 
                                 <div className="mt-16">
                                     <ProTip variant="chef">
-                                        <strong>First-time omakase tip from our sushi chefs:</strong> For the best omakase experience at Jinbeh, sit at the sushi bar and let our chef know it's your first time, they'll pace the experience perfectly and explain each piece as it's served. Avoid wearing strong cologne/perfume (it interferes with the delicate aromas). Come on an empty stomach for the full 12+ piece journey. If you're nervous about raw fish, mention it, our chefs can include some lightly torched or cooked pieces while maintaining the omakase spirit. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                        <strong>First-time omakase tip from our sushi chefs:</strong> For the best omakase experience at Jinbeh, sit at the sushi bar and let our chef know it's your first time, they'll pace the experience perfectly and explain each piece as it's served. Avoid wearing strong cologne/perfume (it interferes with the delicate aromas). Come on an empty stomach for the full 12+ piece journey. If you're nervous about raw fish, mention it, our chefs can include some lightly torched or cooked pieces while maintaining the omakase spirit. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</CallLink> or <CallLink href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</CallLink>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

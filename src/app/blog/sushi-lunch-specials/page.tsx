@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Best Sushi Lunch Specials Near You Today | Jinbeh",
     description:
@@ -463,7 +464,7 @@ export default function SushiLunchSpecials() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Jinbeh lunch insider tip:</strong> Visit between 11:30 AM and noon for the freshest lunch prep, our chefs prepare a new batch of rice and slice fish specifically for the lunch rush. Ask about the "lunch bento special" which isn't always on the printed menu. For groups of 4+, call ahead and we can have a custom lunch platter ready when you arrive. Pair with a midday <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">sake</Link> for a true Japanese lunch experience. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+                                        <strong>Jinbeh lunch insider tip:</strong> Visit between 11:30 AM and noon for the freshest lunch prep, our chefs prepare a new batch of rice and slice fish specifically for the lunch rush. Ask about the "lunch bento special" which isn't always on the printed menu. For groups of 4+, call ahead and we can have a custom lunch platter ready when you arrive. Pair with a midday <Link href="/blog/sake-alcohol-strength" className="text-accent-red hover:underline">sake</Link> for a true Japanese lunch experience. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</CallLink>
                                     </ProTip>
 
                                     <PillarCTA type="reservations" />

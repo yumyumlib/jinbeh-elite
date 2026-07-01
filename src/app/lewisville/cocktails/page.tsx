@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CategoryLocationSEO from "@/components/CategoryLocationSEO";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Cocktails & Sake Menu | Jinbeh Lewisville Japanese Restaurant",
   description: "Jinbeh Lewisville's cocktail & sake menu, sake flights, Tokyo Mules, Lychee Martinis, and Japanese whisky. Full bar near Vista Ridge Mall.",
@@ -330,12 +331,12 @@ export default function CocktailsLewisvillePage() {
                 >
                   Reserve a Table
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2144882224"
                   className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-charcoal px-8 py-4 font-semibold rounded-xl transition-colors"
                 >
                   Call (214) 488-2224
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

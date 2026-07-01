@@ -15,6 +15,7 @@ import HeroSection from "@/components/HeroSection";
 import TrustStrip from "@/components/TrustStrip";
 
 import type { Metadata } from "next";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
   title: "Hibachi & Sushi in Frisco & Lewisville TX | Jinbeh Since 1988",
@@ -639,7 +640,7 @@ export default function HomePage() {
                       </Link>
                     </div>
                     <p className="mt-4 text-xs text-white/60">
-                      Or call <a href="tel:2146191200" className="text-soft-gold font-semibold hover:underline">(214) 619-1200</a> for Frisco • <a href="tel:2144882224" className="text-soft-gold font-semibold hover:underline">(214) 488-2224</a> for Lewisville
+                      Or call <CallLink href="tel:2146191200" className="text-soft-gold font-semibold hover:underline">(214) 619-1200</CallLink> for Frisco • <CallLink href="tel:2144882224" className="text-soft-gold font-semibold hover:underline">(214) 488-2224</CallLink> for Lewisville
                     </p>
                   </div>
                 </div>
@@ -1128,7 +1129,7 @@ export default function HomePage() {
             <ScrollReveal delay={500}>
               <div className="text-center mt-12">
                 <p className="text-charcoal/60 text-sm">
-                  Have another question? <Link href="/contact" className="text-accent-red font-semibold hover:underline">Contact us</Link> or call <a href="tel:2146191200" className="text-accent-red font-semibold hover:underline">(214) 619-1200</a>
+                  Have another question? <Link href="/contact" className="text-accent-red font-semibold hover:underline">Contact us</Link> or call <CallLink href="tel:2146191200" className="text-accent-red font-semibold hover:underline">(214) 619-1200</CallLink>
                 </p>
               </div>
             </ScrollReveal>
@@ -1218,12 +1219,12 @@ export default function HomePage() {
                     </a>
 
                     {/* Phone */}
-                    <a href="tel:2146191200" aria-label="Call Jinbeh Frisco at (214) 619-1200" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-5 py-2.5 transition-all group">
+                    <CallLink href="tel:2146191200" aria-label="Call Jinbeh Frisco at (214) 619-1200" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-5 py-2.5 transition-all group">
                       <svg className="w-4 h-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <span className="text-lg font-bold text-soft-gold group-hover:text-white transition-colors">(214) 619-1200</span>
-                    </a>
+                    </CallLink>
 
                     {/* Reserve CTA */}
                     <div className="mt-auto">
@@ -1309,12 +1310,12 @@ export default function HomePage() {
                     </a>
 
                     {/* Phone */}
-                    <a href="tel:2144882224" aria-label="Call Jinbeh Lewisville at (214) 488-2224" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-5 py-2.5 transition-all group">
+                    <CallLink href="tel:2144882224" aria-label="Call Jinbeh Lewisville at (214) 488-2224" className="flex items-center justify-center gap-3 mb-4 bg-soft-gold/15 hover:bg-soft-gold/25 border border-soft-gold/30 rounded-xl px-5 py-2.5 transition-all group">
                       <svg className="w-4 h-4 text-soft-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <span className="text-lg font-bold text-soft-gold group-hover:text-white transition-colors">(214) 488-2224</span>
-                    </a>
+                    </CallLink>
 
                     {/* Reserve CTA */}
                     <div className="mt-auto">

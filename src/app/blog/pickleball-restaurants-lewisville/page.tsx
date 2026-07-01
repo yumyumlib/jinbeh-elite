@@ -6,6 +6,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Best Restaurants Near Pickleball in Lewisville TX | Post-Game Dining | Jinbeh",
   description:
@@ -343,7 +344,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       </ul>
 
       <p>
-        Call <a href="tel:2144882224" className="text-accent-red font-semibold hover:underline">(214) 488-2224</a> to book your team dinner at Jinbeh Lewisville.
+        Call <CallLink href="tel:2144882224" className="text-accent-red font-semibold hover:underline">(214) 488-2224</CallLink> to book your team dinner at Jinbeh Lewisville.
       </p>
 
       <h2>Why The Picklr + Jinbeh Works</h2>
@@ -380,7 +381,7 @@ export default function PickleballRestaurantsLewisvillePage() {
 
       <ol className="list-decimal list-inside space-y-2 text-charcoal/80 mb-8">
         <li>Book a court at <strong>The Picklr Lewisville</strong></li>
-        <li>Call Jinbeh at <a href="tel:2144882224" className="text-accent-red font-semibold hover:underline">(214) 488-2224</a> to reserve your table</li>
+        <li>Call Jinbeh at <CallLink href="tel:2144882224" className="text-accent-red font-semibold hover:underline">(214) 488-2224</CallLink> to reserve your table</li>
         <li>Show up, play hard, eat well</li>
         <li>Leave with an amazing story</li>
       </ol>
@@ -397,12 +398,12 @@ export default function PickleballRestaurantsLewisvillePage() {
           >
             Visit Jinbeh Lewisville
           </Link>
-          <a
+          <CallLink
             href="tel:2144882224"
             className="inline-flex items-center gap-2 bg-white border-2 border-accent-red text-accent-red px-6 py-3 rounded-xl font-semibold hover:bg-accent-red/5 transition-colors"
           >
             Call (214) 488-2224
-          </a>
+          </CallLink>
         </div>
       </div>
       {/* AI-assisted nutrition disclaimer */}
@@ -421,7 +422,7 @@ export default function PickleballRestaurantsLewisvillePage() {
       <RelatedArticles currentSlug={slug} />
 
       <ProTip variant="insider">
-        <strong>Post-pickleball dining tip:</strong> Mention to your server that you just came from The Picklr, our staff loves hearing about your game! For the fastest post-game meal, try our lunch bento boxes (ready in 10-15 minutes). For a celebration after a tournament win, book a hibachi table, it's the ultimate team reward. Call <a href="tel:2144882224" className="text-accent-red hover:underline">(214) 488-2224</a> to reserve before your match!
+        <strong>Post-pickleball dining tip:</strong> Mention to your server that you just came from The Picklr, our staff loves hearing about your game! For the fastest post-game meal, try our lunch bento boxes (ready in 10-15 minutes). For a celebration after a tournament win, book a hibachi table, it's the ultimate team reward. Call <CallLink href="tel:2144882224" className="text-accent-red hover:underline">(214) 488-2224</CallLink> to reserve before your match!
       </ProTip>
 
       <PillarCTA type="hub" />

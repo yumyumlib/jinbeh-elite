@@ -9,6 +9,7 @@ import Link from "next/link";
 import locations from "@/data/locations.json";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Jinbeh Delivery | Japanese Food Delivery Frisco & Lewisville TX",
   description:
@@ -689,12 +690,12 @@ export default function DeliveryPage() {
                   <p className="text-charcoal/70 mb-4">
                     Near Stonebriar Centre
                   </p>
-                  <a
+                  <CallLink
                     href="tel:+12146191200"
                     className="text-accent-red hover:text-accent-red-hover font-semibold"
                   >
                     (214) 619-1200
-                  </a>
+                  </CallLink>
                 </div>
                 <div className="bg-white rounded-xl p-6">
                   <h4 className="font-heading font-bold text-charcoal mb-3">
@@ -703,12 +704,12 @@ export default function DeliveryPage() {
                   <p className="text-charcoal/70 mb-4">
                     Off I-35E near Vista Ridge
                   </p>
-                  <a
+                  <CallLink
                     href="tel:+12144882224"
                     className="text-accent-red hover:text-accent-red-hover font-semibold"
                   >
                     (214) 488-2224
-                  </a>
+                  </CallLink>
                 </div>
               </div>
             </div>

@@ -6,6 +6,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import { Accordion } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Sushi Cooking Classes Near Me | Learn Sushi Making Today",
     description:
@@ -390,7 +391,7 @@ export default function SushiCookingClasses() {
 
                                 <div className="mt-16">
                                     <ProTip variant="chef">
-                                        <strong>Sushi class tip from our chefs:</strong> The most important skill isn't cutting fish, it's making perfect rice. Practice the rice first: use short-grain Japanese rice, rinse until water runs clear, and season with rice vinegar while still warm. At Jinbeh, watch our sushi bar chefs in action during your visit, they're happy to explain techniques. Our <Link href="/events" className="text-accent-red hover:underline">events page</Link> has info on special dining experiences. For private group events, <a href="tel:2146191200" className="text-accent-red hover:underline">call Frisco: (214) 619-1200</a>
+                                        <strong>Sushi class tip from our chefs:</strong> The most important skill isn't cutting fish, it's making perfect rice. Practice the rice first: use short-grain Japanese rice, rinse until water runs clear, and season with rice vinegar while still warm. At Jinbeh, watch our sushi bar chefs in action during your visit, they're happy to explain techniques. Our <Link href="/events" className="text-accent-red hover:underline">events page</Link> has info on special dining experiences. For private group events, <CallLink href="tel:2146191200" className="text-accent-red hover:underline">call Frisco: (214) 619-1200</CallLink>
                                     </ProTip>
 
                                     <PillarCTA type="vip" />

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
   title: "Corporate Catering | Jinbeh Japanese Restaurant | Frisco, Dallas, DFW",
@@ -440,7 +441,7 @@ export default function CorporateCateringPage() {
                         </svg>
                         <div>
                           <p className="text-sm text-warm-ivory/80">Frisco Location</p>
-                          <a href="tel:2146191200" className="text-white hover:text-soft-gold font-semibold">(214) 619-1200</a>
+                          <CallLink href="tel:2146191200" className="text-white hover:text-soft-gold font-semibold">(214) 619-1200</CallLink>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
@@ -449,7 +450,7 @@ export default function CorporateCateringPage() {
                         </svg>
                         <div>
                           <p className="text-sm text-warm-ivory/80">Lewisville Location</p>
-                          <a href="tel:2144882224" className="text-white hover:text-soft-gold font-semibold">(214) 488-2224</a>
+                          <CallLink href="tel:2144882224" className="text-white hover:text-soft-gold font-semibold">(214) 488-2224</CallLink>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
@@ -594,12 +595,12 @@ export default function CorporateCateringPage() {
               >
                 Request a Quote
               </a>
-              <a
+              <CallLink
                 href="tel:2146191200"
                 className="btn bg-white/20 text-white border border-white/50 hover:bg-white hover:text-accent-red px-8 py-4 font-semibold rounded-xl"
               >
                 Call Frisco: (214) 619-1200
-              </a>
+              </CallLink>
             </div>
           </div>
         </section>

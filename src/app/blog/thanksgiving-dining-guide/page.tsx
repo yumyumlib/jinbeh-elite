@@ -6,6 +6,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import { Accordion } from "@/components/ui/accordion";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Thanksgiving Dining Guide | Japanese Catering Frisco, DFW | Jinbeh",
     description:
@@ -763,7 +764,7 @@ export default function ThanksgivingDiningGuide() {
 
                                     <div className="mt-8">
                                         <ProTip variant="insider">
-                                            <strong>Thanksgiving planning insider tip:</strong> Book your table 2-3 weeks early. Our hibachi tables fill up first. For groups of 10+, we can often set up a dedicated hibachi table where your whole party dines together. Mix sushi platters as appetizers with hibachi as the main course for the ultimate Thanksgiving feast. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+                                            <strong>Thanksgiving planning insider tip:</strong> Book your table 2-3 weeks early. Our hibachi tables fill up first. For groups of 10+, we can often set up a dedicated hibachi table where your whole party dines together. Mix sushi platters as appetizers with hibachi as the main course for the ultimate Thanksgiving feast. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</CallLink>
                                         </ProTip>
 
                                         <PillarCTA type="vip" />

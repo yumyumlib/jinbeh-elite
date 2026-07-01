@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Vista Ridge Mall | Jinbeh Lewisville | Hibachi & Sushi",
   description:
@@ -374,12 +375,12 @@ export default function VistaRidgePage() {
               >
                 Make a Reservation
               </ReserveLink>
-              <a
+              <CallLink
                 href="tel:2144882224"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Call (214) 488-2224
-              </a>
+              </CallLink>
             </div>
             <p className="text-white/70 text-sm">
               2440 S Stemmons Fwy #A, Lewisville, TX 75067

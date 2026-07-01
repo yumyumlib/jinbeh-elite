@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Japanese Restaurant Near Stonebriar Mall | Jinbeh Frisco | Hibachi & Sushi",
   description:
@@ -374,12 +375,12 @@ export default function StonebriarPage() {
               >
                 Make a Reservation
               </ReserveLink>
-              <a
+              <CallLink
                 href="tel:2146191200"
                 className="btn bg-white/20 backdrop-blur text-white border border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 Call (214) 619-1200
-              </a>
+              </CallLink>
             </div>
             <p className="text-white/70 text-sm">
               2693 Preston Rd, Suite 1040, Frisco, TX 75034

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CallLink from "@/components/CallLink";
 
 // "Order Online" module — matches the prominent ordering CTA every top competitor leads with.
 // Primary button routes to /order-online (which holds the real, current platform links), names the
@@ -23,8 +24,8 @@ export default function OnlineOrderCTA() {
           </Link>
         </div>
         <p className="text-sm text-white/70 mt-5">
-          Large order (15+ items)? Call Frisco <a className="underline" href="tel:2146191200">(214) 619-1200</a> or
-          Lewisville <a className="underline" href="tel:2144882224">(214) 488-2224</a> for the best pricing.
+          Large order (15+ items)? Call Frisco <CallLink className="underline" href="tel:2146191200">(214) 619-1200</CallLink> or
+          Lewisville <CallLink className="underline" href="tel:2144882224">(214) 488-2224</CallLink> for the best pricing.
         </p>
       </div>
     </section>

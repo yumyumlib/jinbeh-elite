@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import paaData from "@/data/paa-content.json";
+import CallLink from "@/components/CallLink";
 
 const paaClusters = paaData.clusters as { id: string; name: string; icon?: string }[];
 const paaQuestions = paaData.questions as { slug: string; question: string; cluster: string }[];
@@ -527,23 +528,23 @@ export default function FAQPage() {
                 <p className="text-white/70 text-sm uppercase tracking-wide mb-3">
                   Frisco
                 </p>
-                <a
+                <CallLink
                   href="tel:2146191200"
                   className="inline-block text-2xl font-bold text-soft-gold hover:text-soft-gold/80 transition-colors"
                 >
                   (214) 619-1200
-                </a>
+                </CallLink>
               </div>
               <div>
                 <p className="text-white/70 text-sm uppercase tracking-wide mb-3">
                   Lewisville
                 </p>
-                <a
+                <CallLink
                   href="tel:2144882224"
                   className="inline-block text-2xl font-bold text-soft-gold hover:text-soft-gold/80 transition-colors"
                 >
                   (214) 488-2224
-                </a>
+                </CallLink>
               </div>
             </div>
             <Link

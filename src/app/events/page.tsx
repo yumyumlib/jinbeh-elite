@@ -10,6 +10,7 @@ import Link from "next/link";
 import { EventInquiryForm } from "@/components/ContactForm";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Private Events | Jinbeh Japanese Restaurant Frisco & Lewisville",
   description:
@@ -460,12 +461,12 @@ export default function EventsPage() {
                   </div>
                 </div>
 
-                <a
+                <CallLink
                   href="tel:+1-214-619-1200"
                   className="block text-center w-full bg-accent-red hover:bg-accent-red/90 text-white py-3 rounded-xl font-semibold transition-colors"
                 >
                   Contact Frisco Location
-                </a>
+                </CallLink>
               </div>
 
               {/* Lewisville Location */}
@@ -527,12 +528,12 @@ export default function EventsPage() {
                   </div>
                 </div>
 
-                <a
+                <CallLink
                   href="tel:+1-214-488-2224"
                   className="block text-center w-full bg-deep-indigo hover:bg-deep-indigo/90 text-white py-3 rounded-xl font-semibold transition-colors"
                 >
                   Contact Lewisville Location
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>
@@ -904,18 +905,18 @@ export default function EventsPage() {
               Whether it's an intimate gathering or a grand celebration, Jinbeh has everything you need to create unforgettable memories with the people who matter most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <CallLink
                 href="tel:+1-214-619-1200"
                 className="inline-block bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
                 Call Frisco (214) 619-1200
-              </a>
-              <a
+              </CallLink>
+              <CallLink
                 href="tel:+1-214-488-2224"
                 className="inline-block bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl transition-all"
               >
                 Call Lewisville (214) 488-2224
-              </a>
+              </CallLink>
             </div>
           </div>
         </section >

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
 import { MagicCard } from "@/components/ui/magic-card";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
   title: "Private Dining Frisco TX | Japanese Restaurant Events | Jinbeh",
@@ -683,21 +684,21 @@ export default function PrivateDiningPage() {
               <div className="flex flex-col items-center gap-3 sm:gap-6 sm:flex-row">
                 <div>
                   <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Frisco</p>
-                  <a
+                  <CallLink
                     href="tel:2146191200"
                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-8 py-4 text-lg font-semibold rounded-xl shadow-lg block"
                   >
                     (214) 619-1200
-                  </a>
+                  </CallLink>
                 </div>
                 <div>
                   <p className="text-white/80 text-sm uppercase tracking-wide mb-2">Lewisville</p>
-                  <a
+                  <CallLink
                     href="tel:2144882224"
                     className="btn bg-white/20 backdrop-blur text-white border-2 border-white/50 hover:bg-white hover:text-deep-indigo px-8 py-4 text-lg font-semibold rounded-xl block"
                   >
                     (214) 488-2224
-                  </a>
+                  </CallLink>
                 </div>
               </div>
             </div>

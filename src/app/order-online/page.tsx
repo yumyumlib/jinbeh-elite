@@ -1,11 +1,13 @@
 'use client';
 
 import Link from "next/link";
+import PageSeoBoost from "@/components/PageSeoBoost";
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { HeroSection, RevealSection } from "@/components/MagicUI";
+import CallLink from "@/components/CallLink";
 
 // Note: Metadata is defined at the bottom after the component for proper export
 
@@ -475,13 +477,13 @@ export default function OrderOnlinePage() {
                                             <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
                                                 <span className="text-2xl">☎️</span> Phone Ordering
                                             </h4>
-                                            <a
+                                            <CallLink
                                                 href="tel:214-619-1200"
                                                 className="inline-flex items-center gap-2 bg-deep-indigo text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal transition-colors w-full justify-center mb-2"
                                             >
                                                 <span>📱</span>
                                                 Call (214) 619-1200
-                                            </a>
+                                            </CallLink>
                                             <p className="text-sm text-charcoal/80 mt-3">
                                                 Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
                                             </p>
@@ -551,13 +553,13 @@ export default function OrderOnlinePage() {
                                             <h4 className="font-heading font-semibold text-charcoal mb-4 text-lg flex items-center gap-2">
                                                 <span className="text-2xl">☎️</span> Phone Ordering
                                             </h4>
-                                            <a
+                                            <CallLink
                                                 href="tel:214-488-2224"
                                                 className="inline-flex items-center gap-2 bg-deep-indigo text-white px-6 py-3 rounded-xl font-semibold hover:bg-charcoal transition-colors w-full justify-center mb-2"
                                             >
                                                 <span>📱</span>
                                                 Call (214) 488-2224
-                                            </a>
+                                            </CallLink>
                                             <p className="text-sm text-charcoal/80 mt-3">
                                                 Lunch: 11am - 2:30pm | Dinner: 5pm - 10pm
                                             </p>
@@ -765,20 +767,20 @@ export default function OrderOnlinePage() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a
+                                <CallLink
                                     href="tel:214-619-1200"
                                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-10 py-4 text-lg font-semibold transition-all"
                                 >
                                     <span className="mr-2">📱</span>
                                     Call Frisco: (214) 619-1200
-                                </a>
-                                <a
+                                </CallLink>
+                                <CallLink
                                     href="tel:214-488-2224"
                                     className="btn bg-white text-accent-red hover:bg-warm-ivory px-10 py-4 text-lg font-semibold transition-all"
                                 >
                                     <span className="mr-2">📱</span>
                                     Call Lewisville: (214) 488-2224
-                                </a>
+                                </CallLink>
                             </div>
 
                             <p className="text-white/80 mt-8 text-sm">
@@ -794,6 +796,7 @@ export default function OrderOnlinePage() {
             </p>
 </section>
             </main>
+            <PageSeoBoost route="/order-online" />
             <Footer />
         </>
     );

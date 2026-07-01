@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { ProTip } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title: "Corporate Event Catering DFW: Japanese Catering for Offices | Jinbeh",
@@ -177,8 +178,8 @@ export default function CorporateCateringDFWPost() {
                                         <p className="text-warm-ivory/80 mb-4">Tell us the date, headcount, dietary mix, and event type. We&apos;ll send a menu and price the same day.</p>
                                         <div className="flex flex-wrap gap-3">
                                             <Link href="/catering" className="btn btn-primary bg-accent-red hover:bg-accent-red/90">Catering Page</Link>
-                                            <a href="tel:2146191200" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Frisco</a>
-                                            <a href="tel:2144882224" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Lewisville</a>
+                                            <CallLink href="tel:2146191200" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Frisco</CallLink>
+                                            <CallLink href="tel:2144882224" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Lewisville</CallLink>
                                         </div>
                                     </div>
                                 </div>

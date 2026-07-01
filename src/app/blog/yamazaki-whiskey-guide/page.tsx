@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Find Yamazaki Whiskey Nearby: Your Complete Guide | Jinbeh",
     description: "Discover where to find Yamazaki whiskey nearby with our expert guide. Explore local stores, online options, and visit Jinbeh in Dallas for authentic Japanese whiskey.",
@@ -292,7 +293,7 @@ export default function YamazakiWhiskeyGuide() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Japanese whiskey tasting tip:</strong> The best way to appreciate Yamazaki is the Japanese "mizuwari" style, mix one part whiskey with two parts water and a single large ice cube. This is how most Japanese drink their premium whiskey, and it opens up delicate flavors you'd miss drinking it neat. At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, ask our bartender to prepare a mizuwari or try our whiskey flight to compare expressions. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                    <strong>Japanese whiskey tasting tip:</strong> The best way to appreciate Yamazaki is the Japanese "mizuwari" style, mix one part whiskey with two parts water and a single large ice cube. This is how most Japanese drink their premium whiskey, and it opens up delicate flavors you'd miss drinking it neat. At Jinbeh's <Link href="/bar" className="text-accent-red hover:underline">bar</Link>, ask our bartender to prepare a mizuwari or try our whiskey flight to compare expressions. Visit during <Link href="/happy-hour" className="text-accent-red hover:underline">happy hour</Link> for special pricing on Japanese spirits. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</CallLink> or <CallLink href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</CallLink>
                                 </ProTip>
 
                                 <PillarCTA type="catering" />

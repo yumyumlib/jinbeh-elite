@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Unique Kids Birthday Party Places DFW | Jinbeh",
     description: "Find unique kids birthday party places in DFW! Hibachi restaurants make unforgettable celebrations with fire, food, and entertainment. Book Jinbeh today!",
@@ -132,7 +133,7 @@ export default function KidsBirthdayPlaces() {
 
                             <div className="mt-12">
                                 <ProTip variant="insider">
-                                    <strong>Birthday party planning pro tip:</strong> Book your hibachi birthday party for a Saturday or Sunday lunch slot for better availability and shorter wait times. Ask about our birthday surprise: we can arrange a special chef performance just for the birthday child. For groups of 10+, we can often reserve adjacent hibachi tables so the whole party watches the show together. Mention any food allergies when booking. Our kitchen prepares allergen-safe alternatives for every guest. <a href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</a> or <a href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</a>
+                                    <strong>Birthday party planning pro tip:</strong> Book your hibachi birthday party for a Saturday or Sunday lunch slot for better availability and shorter wait times. Ask about our birthday surprise: we can arrange a special chef performance just for the birthday child. For groups of 10+, we can often reserve adjacent hibachi tables so the whole party watches the show together. Mention any food allergies when booking. Our kitchen prepares allergen-safe alternatives for every guest. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Frisco: (214) 619-1200</CallLink> or <CallLink href="tel:2144882224" className="text-accent-red hover:underline">Lewisville: (214) 488-2224</CallLink>
                                 </ProTip>
 
                                 <PillarCTA type="hub" />

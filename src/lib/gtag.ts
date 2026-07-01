@@ -37,19 +37,65 @@ const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18150861653";
 // recreate it under Goals → Conversions and paste the new Label here.
 export const CONVERSION_LABELS = {
   reservation: "fFK4CJ7bm7UcENXWgM9D", // Submit lead form — Reservation – OpenTable click ($120)
+  // OpenTable Reservation conversion (created 2026-06-22, "Book appointment", $25).
+  // Fires alongside `reservation` on every OpenTable "Reserve" click — see
+  // COMPANION_CONVERSIONS below. Was created in Google Ads but never installed
+  // on the site ("Untitled tag"); wiring it here installs it.
+  opentable_reservation: "W4VzCPnC28McENXWgM9D",
   phone_call: "i2vVCKTbm7UcENXWgM9D",  // Phone call lead — Phone call – click ($120)
   catering: "UT9WCKHbm7UcENXWgM9D",    // Submit lead form — Catering lead form ($120)
   directions: "vr0UCKfbm7UcENXWgM9D",  // Get directions — Get Directions click ($25)
+  // Lead-form conversions for Enhanced Conversions for Leads (added 2026-06-29).
+  // For each: create the conversion action in Google Ads (Goals → Conversions →
+  // New → "Submit lead form"), turn on "Enhanced conversions for leads" and
+  // accept the customer-data terms, then paste the Label here. Until a real
+  // label is pasted these safely no-op (see the `_PLACEHOLDER` guard below).
+  vip: "VIP_LABEL_PLACEHOLDER",            // VIP Club sign-up (email only)
+  event_inquiry: "EVENT_LABEL_PLACEHOLDER", // Event / contact inquiry lead
 } as const;
 
 export type ConversionAction = keyof typeof CONVERSION_LABELS;
 
 const DEFAULT_VALUES: Record<ConversionAction, number> = {
   reservation: 120,
+  opentable_reservation: 25,
   phone_call: 120,
   catering: 120,
   directions: 25,
+  vip: 25,
+  event_inquiry: 120,
 };
+
+/**
+ * Some user actions should record more than one Google Ads conversion. An
+ * OpenTable "Reserve" click fires BOTH the original "Reservation – OpenTable
+ * click" action and the newer "OpenTable Reservation" (Book appointment)
+ * action, so both stay populated and either can be promoted to Primary later
+ * without re-instrumenting every CTA.
+ *
+ * Companion conversions are fired fire-and-forget; only the PRIMARY action
+ * gates navigation in fireConversionAndOpen(). Companions must not themselves
+ * declare companions (no recursion).
+ */
+const COMPANION_CONVERSIONS: Partial<Record<ConversionAction, ConversionAction[]>> = {
+  reservation: ["opentable_reservation"],
+};
+
+/** Internal: send one conversion ping, fire-and-forget. No-op if not configured. */
+function sendConversion(
+  action: ConversionAction,
+  value: number | undefined,
+  currency: string,
+): void {
+  if (typeof window === "undefined" || !window.gtag) return;
+  const label = CONVERSION_LABELS[action];
+  if (!label || label.endsWith("_PLACEHOLDER")) return;
+  window.gtag("event", "conversion", {
+    send_to: `${GOOGLE_ADS_ID}/${label}`,
+    value: value ?? DEFAULT_VALUES[action],
+    currency,
+  });
+}
 
 /**
  * Fire a Google Ads conversion event.
@@ -86,6 +132,11 @@ export function fireConversion(
     value: conversionValue,
     currency,
   });
+
+  // Fire any companion conversions (e.g. opentable_reservation alongside reservation).
+  for (const companion of COMPANION_CONVERSIONS[action] ?? []) {
+    sendConversion(companion, undefined, currency);
+  }
 }
 
 /**
@@ -163,12 +214,94 @@ export function fireConversionAndOpen(
   // more than 1 second.
   window.setTimeout(navigateOnce, 1000);
 
+  // Fire companion conversions first (fire-and-forget) so they're queued
+  // before navigation; only the PRIMARY action below gates the open.
+  for (const companion of COMPANION_CONVERSIONS[action] ?? []) {
+    sendConversion(companion, undefined, currency);
+  }
+
   window.gtag("event", "conversion", {
     send_to: `${GOOGLE_ADS_ID}/${label}`,
     value: conversionValue,
     currency,
     event_callback: navigateOnce,
   });
+}
+
+/* -------------------------------------------------------------------------- *
+ * Enhanced Conversions for Leads
+ *
+ * Sends a HASHED copy of the lead's email/phone alongside the conversion so
+ * Google can match the lead back to the originating ad click (improves match
+ * rates and lets form leads be measured even when the booking/CRM step is
+ * off-site). We hash client-side with SHA-256 (Web Crypto) so raw PII never
+ * leaves the browser.
+ *
+ * ONE-TIME GOOGLE ADS SETUP (required, or the hashed data is ignored):
+ *   Goals → Settings → "Enhanced conversions for leads" → turn on, choose the
+ *   Google tag method, and accept the customer-data terms.
+ *
+ * Usage — call BEFORE firing the conversion, on a confirmed form submit:
+ *   await setEnhancedConversionData({ email, phone });
+ *   fireConversion("catering");
+ * -------------------------------------------------------------------------- */
+
+/** Normalize an email per Google's rules: trim + lowercase. */
+function normalizeEmail(email: string): string {
+  return email.trim().toLowerCase();
+}
+
+/** Normalize a phone to E.164 (+1XXXXXXXXXX for 10-digit US numbers). */
+function normalizePhone(phone: string): string {
+  const digits = phone.replace(/\D/g, "");
+  if (!digits) return "";
+  if (digits.length === 10) return `+1${digits}`;
+  if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
+  return `+${digits}`;
+}
+
+/** SHA-256 → lowercase hex. Returns null if Web Crypto is unavailable (http). */
+async function sha256Hex(value: string): Promise<string | null> {
+  if (typeof crypto === "undefined" || !crypto.subtle) return null;
+  const bytes = new TextEncoder().encode(value);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+/**
+ * Hash the lead's email/phone and hand them to gtag for Enhanced Conversions.
+ * Safe anywhere: no-ops without gtag, without Web Crypto (non-HTTPS), or when
+ * both fields are empty. MUST run before the conversion event fires so the
+ * user_data is attached to it.
+ */
+export async function setEnhancedConversionData(input: {
+  email?: string | null;
+  phone?: string | null;
+}): Promise<void> {
+  if (typeof window === "undefined" || !window.gtag) return;
+
+  const userData: { sha256_email_address?: string; sha256_phone_number?: string } = {};
+
+  const email = (input.email ?? "").toString();
+  if (email.trim()) {
+    const hashed = await sha256Hex(normalizeEmail(email));
+    if (hashed) userData.sha256_email_address = hashed;
+  }
+
+  const phone = (input.phone ?? "").toString();
+  if (phone.trim()) {
+    const normalized = normalizePhone(phone);
+    if (normalized) {
+      const hashed = await sha256Hex(normalized);
+      if (hashed) userData.sha256_phone_number = hashed;
+    }
+  }
+
+  if (!userData.sha256_email_address && !userData.sha256_phone_number) return;
+
+  window.gtag("set", "user_data", userData);
 }
 
 /**

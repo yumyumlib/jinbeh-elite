@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { ProTip } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
     title: "Sushi Platter for a Party: How to Order Right | Jinbeh DFW",
@@ -178,8 +179,8 @@ export default function SushiPlatterForPartyPost() {
                                         <p className="text-warm-ivory/80 mb-4">Delivery across DFW from our Frisco and Lewisville locations. Tell us date, headcount, and roll preferences.</p>
                                         <div className="flex flex-wrap gap-3">
                                             <Link href="/catering" className="btn btn-primary bg-accent-red hover:bg-accent-red/90">Catering Page</Link>
-                                            <a href="tel:2146191200" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Frisco (214) 619-1200</a>
-                                            <a href="tel:2144882224" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Lewisville (214) 488-2224</a>
+                                            <CallLink href="tel:2146191200" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Frisco (214) 619-1200</CallLink>
+                                            <CallLink href="tel:2144882224" className="btn btn-outline border-white text-white hover:bg-white hover:text-charcoal">Call Lewisville (214) 488-2224</CallLink>
                                         </div>
                                     </div>
                                 </div>

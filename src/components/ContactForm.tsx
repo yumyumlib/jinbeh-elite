@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { fireConversion, setEnhancedConversionData } from "@/lib/gtag";
+import CallLink from "@/components/CallLink";
 
 export function EventInquiryForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -22,6 +24,14 @@ export function EventInquiryForm() {
       });
 
       if (response.ok) {
+        // Enhanced Conversions: hash + send email/phone, then fire the event
+        // inquiry lead conversion (label is a placeholder until the conversion
+        // action is created in Google Ads — see src/lib/gtag.ts).
+        await setEnhancedConversionData({
+          email: data.email as string,
+          phone: data.phone as string,
+        });
+        fireConversion("event_inquiry");
         setStatus("success");
       } else {
         const result = await response.json();
@@ -47,13 +57,13 @@ export function EventInquiryForm() {
           Thank you for your event inquiry! Our team will contact you shortly to plan your event.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center text-sm">
-          <a href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+          <CallLink href="tel:2146191200" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
             📞 Frisco: (214) 619-1200
-          </a>
+          </CallLink>
           <span className="hidden sm:inline text-white/30">|</span>
-          <a href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
+          <CallLink href="tel:2144882224" className="text-soft-gold hover:text-soft-gold/80 transition-colors">
             📞 Lewisville: (214) 488-2224
-          </a>
+          </CallLink>
         </div>
       </div>
     );

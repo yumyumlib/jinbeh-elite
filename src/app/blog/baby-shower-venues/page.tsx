@@ -6,6 +6,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Top Baby Shower Venues: Best Places to Host | Jinbeh",
   description:
@@ -511,15 +512,15 @@ export default function BabyShowerVenuesPage({ params }: { params: { slug: strin
       <ul>
         <li>
           <strong>Frisco (near Stonebriar):</strong>{" "}
-          <a href="tel:2146191200" className="text-accent-red hover:underline">
+          <CallLink href="tel:2146191200" className="text-accent-red hover:underline">
             (214) 619-1200
-          </a>
+          </CallLink>
         </li>
         <li>
           <strong>Lewisville (off I-35E):</strong>{" "}
-          <a href="tel:2144882224" className="text-accent-red hover:underline">
+          <CallLink href="tel:2144882224" className="text-accent-red hover:underline">
             (214) 488-2224
-          </a>
+          </CallLink>
         </li>
       </ul>
 

@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import locations from "@/data/locations.json";
+import CallLink from "@/components/CallLink";
 
 const location = locations.locations.lewisville;
 
@@ -164,12 +165,12 @@ export default function LewisvilleSushiPage() {
                 >
                   Reserve Your Table
                 </ReserveLink>
-                <a
+                <CallLink
                   href="tel:2144882224"
                   className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-xl transition-colors"
                 >
                   Call (214) 488-2224
-                </a>
+                </CallLink>
               </div>
             </div>
           </div>

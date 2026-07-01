@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import CallLink from "@/components/CallLink";
 
 export const metadata: Metadata = {
   title: "Wedding Catering | Jinbeh Japanese Restaurant | Sushi & Hibachi Wedding Catering Frisco",
@@ -643,9 +644,9 @@ export default function WeddingCateringPage() {
                     </svg>
                     <div className="text-left">
                       <p className="text-sm text-white/70">Frisco</p>
-                      <a href="tel:2146191200" className="text-white font-semibold hover:text-soft-gold transition-colors">
+                      <CallLink href="tel:2146191200" className="text-white font-semibold hover:text-soft-gold transition-colors">
                         (214) 619-1200
-                      </a>
+                      </CallLink>
                     </div>
                   </div>
                 </div>
@@ -657,9 +658,9 @@ export default function WeddingCateringPage() {
                     </svg>
                     <div className="text-left">
                       <p className="text-sm text-white/70">Lewisville</p>
-                      <a href="tel:2144882224" className="text-white font-semibold hover:text-soft-gold transition-colors">
+                      <CallLink href="tel:2144882224" className="text-white font-semibold hover:text-soft-gold transition-colors">
                         (214) 488-2224
-                      </a>
+                      </CallLink>
                     </div>
                   </div>
                 </div>

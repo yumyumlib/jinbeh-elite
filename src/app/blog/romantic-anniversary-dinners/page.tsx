@@ -6,6 +6,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/ArticleEnhancements";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
   title: "Romantic Anniversary Dinners Near Me: Top Spots | Jinbeh",
   description:
@@ -483,15 +484,15 @@ export default function RomanticAnniversaryDinnersPage() {
       <ul>
         <li>
           <strong>Frisco (near Stonebriar):</strong>{" "}
-          <a href="tel:2146191200" className="text-accent-red hover:underline">
+          <CallLink href="tel:2146191200" className="text-accent-red hover:underline">
             (214) 619-1200
-          </a>
+          </CallLink>
         </li>
         <li>
           <strong>Lewisville (off I-35E):</strong>{" "}
-          <a href="tel:2144882224" className="text-accent-red hover:underline">
+          <CallLink href="tel:2144882224" className="text-accent-red hover:underline">
             (214) 488-2224
-          </a>
+          </CallLink>
         </li>
       </ul>
 
@@ -536,7 +537,7 @@ export default function RomanticAnniversaryDinnersPage() {
       <p>Here's to a wonderful anniversary celebration and many more to come!</p>
 
       <ProTip variant="insider">
-        <strong>Anniversary dinner insider tip:</strong> At Jinbeh, request "Table 7" in Frisco or "Booth 3" in Lewisville for the most intimate seating. Mention your anniversary when booking, our team will prepare special touches including a complimentary dessert presentation. For milestone anniversaries (5th, 10th, 25th), ask about our private dining packages with champagne service. Book 3 weeks ahead for weekends. <a href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</a>
+        <strong>Anniversary dinner insider tip:</strong> At Jinbeh, request "Table 7" in Frisco or "Booth 3" in Lewisville for the most intimate seating. Mention your anniversary when booking, our team will prepare special touches including a complimentary dessert presentation. For milestone anniversaries (5th, 10th, 25th), ask about our private dining packages with champagne service. Book 3 weeks ahead for weekends. <CallLink href="tel:2146191200" className="text-accent-red hover:underline">Call Frisco: (214) 619-1200</CallLink>
       </ProTip>
 
       <PillarCTA type="hub" />

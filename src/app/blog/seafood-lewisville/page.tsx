@@ -6,6 +6,7 @@ import { DidYouKnow, ProTip, LocationCTA, PillarCTA } from "@/components/Article
 import { Accordion } from "@/components/ui/accordion";
 
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import CallLink from "@/components/CallLink";
 export const metadata: Metadata = {
     title: "Best Seafood in Lewisville TX: Top Restaurants to Try | Jinbeh",
     description:
@@ -469,7 +470,7 @@ export default function SeafoodLewisville() {
 
                                 <div className="mt-16">
                                     <ProTip variant="insider">
-                                        <strong>Lewisville seafood insider tip:</strong> At Jinbeh Lewisville, ask for the "chef's selection sashimi",our chefs pick the freshest fish of the day and you'll get varieties you might not see on the regular menu. Tuesday and Wednesday evenings tend to be less crowded, giving you more time to chat with the sushi chefs. Pair your seafood with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for the ultimate experience. <a href="tel:2144882224" className="text-accent-red hover:underline">Call Lewisville: (214) 488-2224</a>
+                                        <strong>Lewisville seafood insider tip:</strong> At Jinbeh Lewisville, ask for the "chef's selection sashimi",our chefs pick the freshest fish of the day and you'll get varieties you might not see on the regular menu. Tuesday and Wednesday evenings tend to be less crowded, giving you more time to chat with the sushi chefs. Pair your seafood with a <Link href="/blog/sake-pairing-guide" className="text-accent-red hover:underline">sake pairing</Link> for the ultimate experience. <CallLink href="tel:2144882224" className="text-accent-red hover:underline">Call Lewisville: (214) 488-2224</CallLink>
                                     </ProTip>
 
                                     <PillarCTA type="catering" />
