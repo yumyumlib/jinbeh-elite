@@ -36,7 +36,7 @@ export async function POST(request: Request) {
             const pool = getPool();
             await pool.query(
                 `INSERT INTO newsletter_signups (email, source)
- VALUES (, )
+ VALUES ($1, $2)
  ON CONFLICT (email, source) DO NOTHING`,
                 [emailStr, sourceStr]
             );

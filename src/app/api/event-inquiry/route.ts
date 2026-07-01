@@ -34,7 +34,7 @@ export async function POST(request: Request) {
             const pool = getPool();
             await pool.query(
                 `INSERT INTO event_inquiries (name, email, phone, event_date, event_type, guest_count, details)
- VALUES (,,,,,, )`,
+ VALUES ($1, $2, $3, $4, $5, $6, $7)`,
                 [
                     String(name).trim(),
                     emailStr,
